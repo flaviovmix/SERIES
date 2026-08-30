@@ -1,0 +1,146 @@
+Inicie dizendo: As Primeiras Maquinas Que Ligaram
+---------------
+
+Este e o primeiro episodio da etapa O PRIMEIRO COMPUTADOR MODERNO, a setima etapa da serie Como Reinventar o Computador do Zero. A etapa anterior, O COMPUTADOR NO PAPEL, montou um computador inteiro sem ligar nada: porta logica, somador, memoria, maquina universal de Turing e conjunto de instrucoes. Este episodio e o que liga na tomada.
+
+ESTE EPISODIO COBRE DE 1936 A 1946. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que pedir "aperte o Proximo" exatamente 7 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio tem quatro personagens com ficha: Konrad Zuse, Howard Aiken, Presper Eckert e John Mauchly. A ficha de cada um entra na primeira vez que ele e citado e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu. Os dados estao escritos tela a tela abaixo: usar exatamente esses. Quem so aparece de passagem nao ganha ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_As Primeiras Maquinas Que Ligaram.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O rele como uma porta que alguem precisa empurrar pra abrir, contra a valvula como uma porta que abre sozinha assim que a luz acende. Serve so pra explicar por que a valvula e mais rapida: uma tem peca que se mexe, a outra nao.
+- Programar o ENIAC comparado a trocar a fiacao de uma casa inteira pra mudar de lampada. Serve so pra dar o tamanho do trabalho de recabear.
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: AS PRIMEIRAS MAQUINAS QUE LIGARAM)
+
+Retomar em uma frase onde a serie parou: nos ultimos episodios a gente montou um computador inteiro no papel. Porta logica, somador, memoria com endereco, a maquina universal do Turing, o conjunto de instrucoes. Estava tudo projetado e nada estava ligado.
+
+Dizer o que este episodio faz: liga. Sao as tres primeiras maquinas que existiram de verdade, funcionaram, e fizeram conta. Dizer o intervalo em voz alta: este episodio cobre de 1936 a 1946, dez anos que comecam num apartamento em Berlim e terminam num salao do Exercito americano.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto sao as tres primeiras maquinas programaveis que funcionaram. Z3, na Alemanha, em 1941. Mark I, nos Estados Unidos, em 1944. ENIAC, tambem nos Estados Unidos, terminado em 1945 e apresentado em 1946.
+
+Motivacao, e aqui tem uma coisa que vale dizer com todas as letras: as tres nasceram de gente cansada de fazer conta na mao. Nenhuma nasceu de alguem querendo inventar o computador. Zuse era engenheiro civil e estava de saco cheio de calcular estrutura de predio. Aiken era doutorando de fisica e estava de saco cheio de resolver equacao diferencial na calculadora de mesa. O ENIAC foi encomendado porque o Exercito americano precisava de tabela de tiro de artilharia e as contas nao saiam no ritmo da guerra.
+
+Ficha humana de Konrad Zuse, que abre o episodio. Nasceu em 22 de junho de 1910 em Berlim, na Prussia, hoje Alemanha. Aos dois anos a familia se mudou pra Braunsberg, na Prussia Oriental, cidade que hoje se chama Braniewo e fica na Polonia. O pai era funcionario dos correios. Zuse estudou no Collegium Hosianum em Braunsberg e depois se formou em engenharia civil na Technische Hochschule de Berlim, em 1935. Morreu em 18 de dezembro de 1995, aos 85 anos, em Hunfeld, na Alemanha.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (Z3, BERLIM, 1941)
+
+Zuse se formou em 1935 e foi trabalhar numa fabrica de avioes fazendo calculo de estrutura. O trabalho era o mesmo tipo de conta, repetida centenas de vezes, com tabela e calculadora de mesa. Ele largou o emprego em 1936 pra construir uma maquina que fizesse aquilo por ele, e montou a oficina na casa dos pais.
+
+As duas primeiras tentativas nao deram certo direito. A terceira deu. O Z3 ficou pronto em 1941 e foi apresentado em 12 de maio daquele ano, em Berlim.
+
+Descrever a maquina com numero: 2600 reles. O rele e aquela peca do episodio do telegrafo, uma bobina que puxa um contatinho de metal e fecha outro circuito. O Z3 era binario, trabalhava com numero de virgula flutuante de 22 bits, e lia o programa de uma fita perfurada. Ele somava em menos de um segundo e multiplicava em cerca de tres.
+
+Dizer o que isso significa em relacao ao que a serie ja montou: o Z3 e o primeiro computador que funcionou e que pode ser considerado universal, no sentido do Turing. Zuse nao sabia disso na epoca, e isso so foi demonstrado decadas depois.
+
+E o final da historia, que vale contar sem drama: o Z3 foi destruido num bombardeio aereo sobre Berlim no fim de 1943. Zuse trabalhava isolado, em guerra, sem contato com os americanos e os ingleses. Quase ninguem la fora ficou sabendo. A maquina que existe hoje e uma reconstrucao que o proprio Zuse fez nos anos 60.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (MARK I, HARVARD, 1944)
+
+Do outro lado do Atlantico, quase ao mesmo tempo, alguem tinha o mesmo problema. Ficha humana de Howard Aiken: nasceu em 8 de marco de 1900 em Hoboken, Nova Jersey, e cresceu em Indianapolis. A familia do pai era uma familia estabelecida de Indiana, mas a casa nao foi tranquila: o pai saiu, e o menino trabalhava a noite instalando e cuidando de equipamento eletrico pra sustentar a mae enquanto estudava de dia na Arsenal Technical High School. Formou-se em engenharia eletrica na Universidade de Wisconsin em Madison, em 1923, e depois fez mestrado e doutorado em fisica em Harvard, em 1937 e 1939. Morreu em 14 de marco de 1973, aos 73 anos, em Saint Louis, no Missouri.
+
+O que aconteceu no doutorado: as equacoes que ele precisava resolver so saiam por metodo numerico, o que virava um mundo de conta repetida na calculadora de mesa. Reclamando disso, ele descobriu que no sotao do departamento havia pedacos de latao de uma maquina antiga. Eram partes da maquina diferencial de Charles Babbage, aquela do episodio da etapa 3, que tinha sido abandonada cem anos antes por falta de dinheiro.
+
+Aiken projetou entao uma maquina que fizesse o que Babbage queria, com a tecnologia que existia em 1937. A IBM construiu e pagou. A maquina se chamava Automatic Sequence Controlled Calculator e ficou conhecida como Harvard Mark I. Foi instalada em Harvard em fevereiro de 1944.
+
+Descrever: quinze metros de comprimento, quase cinco toneladas, feita de rele como o Z3, mas decimal em vez de binario, ou seja, contando de dez em dez como a gente conta, e nao de dois em dois. O programa entrava por uma fita de papel perfurada. Ela era barulhenta e lenta: uma multiplicacao levava cerca de seis segundos.
+
+Vale dizer o encontro que isso fecha na serie: as rodas de latao que Babbage abandonou em 1830 e poucos foram usadas no primeiro projeto de Aiken. A ideia esperou cem anos por uma tecnologia que desse conta dela.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O RELE E A VALVULA, TELA INTERATIVA)
+
+Z3 e Mark I sao maquinas de rele. E o rele tem um limite fisico que nao tem jeito: ele tem uma pecinha de metal que precisa se mexer. Fisicamente se mexer, encostar, voltar. Isso leva alguns milesimos de segundo, faz barulho, esquenta e desgasta.
+
+A valvula faz a mesma coisa sem nada se mexer. Ela e um bulbo de vidro com o ar tirado de dentro, onde um filamento esquenta e solta eletron, e um pedacinho de metal no meio deixa passar ou barra essa passagem. E o mesmo servico do rele, ligar e desligar corrente, so que quem faz o trabalho e o eletron, que nao tem peso pra mover.
+
+Usar aqui a analogia autorizada e deixar claro que e analogia: o rele e uma porta que alguem precisa empurrar pra abrir; a valvula e uma porta que abre sozinha assim que a luz acende. A segunda nao e mais esperta, ela so nao precisa esperar nada se mexer.
+
+Dar o numero pra fixar: um rele faz da ordem de dezenas de operacoes por segundo. Uma valvula faz milhares. E uma diferenca de umas mil vezes.
+
+Dizer o preco disso, porque nao e de graca: valvula queima. Ela tem filamento igual lampada, esquenta muito, gasta muita eletricidade e uma hora estoura. Numa maquina com milhares delas, sempre tem alguma queimada.
+
+Avisar: a tela tem as duas tecnologias lado a lado fazendo a mesma conta. Convide o ouvinte a disparar e ver a diferenca de velocidade enquanto escuta.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (ENIAC, 1945)
+
+O ENIAC e o que acontece quando alguem faz uma maquina inteira de valvula. Ele foi construido na Moore School, na Universidade da Pensilvania, com dinheiro do Exercito americano, pra calcular tabela de tiro de artilharia. Tabela de tiro e uma folha que diz pro artilheiro em que angulo apontar o canhao considerando distancia, vento e temperatura, e cada uma exigia milhares de contas.
+
+Ficha humana dos dois responsaveis. Presper Eckert nasceu em 9 de abril de 1919 na Filadelfia, Pensilvania. O pai era um incorporador imobiliario rico, de origem sui-alema e alsaciana, e a mae vinha de uma familia quacre antiga da Filadelfia. Ele estudou na William Penn Charter School, entrou na Wharton e trocou pra escola de engenharia eletrica da propria Universidade da Pensilvania em 1937. Era o engenheiro-chefe do projeto com pouco mais de vinte anos. Morreu em 3 de junho de 1995, em Bryn Mawr, na Pensilvania.
+
+John Mauchly nasceu em 30 de agosto de 1907 em Cincinnati, Ohio, e cresceu em Chevy Chase, em Maryland, pra onde a familia se mudou quando o pai virou chefe da secao de eletricidade terrestre da Carnegie Institution de Washington. Estudou na Johns Hopkins, onde entrou em engenharia, mudou pra fisica e tirou o doutorado em 1932 sem nunca ter concluido a graduacao. Antes do ENIAC era o chefe do departamento de fisica do Ursinus College, onde era tambem o unico professor do departamento. Morreu em 8 de janeiro de 1980, em Ambler, na Pensilvania.
+
+Os numeros da maquina: 18 mil valvulas, mais de trinta toneladas, uns trinta metros de comprimento, e um consumo de 150 mil watts. Construcao terminada em 1945, apresentacao publica em 15 de fevereiro de 1946.
+
+E o detalhe que amarra este episodio inteiro: o ENIAC calculava rapido, mas nao guardava programa nenhum. Programar era mudar cabo de lugar em painel de tomada e girar chave. Usar a analogia autorizada: era como trocar a fiacao de uma casa inteira pra mudar de lampada. Planejar levava semanas, e a troca fisica levava dias.
+
+Quem fazia esse trabalho: seis mulheres, Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas e Ruth Lichterman. Elas descobriram na pratica como programar uma maquina que nao tinha manual e conheciam o ENIAC por dentro como pouca gente. Por muito tempo foram tratadas como operadoras, e nao como programadoras, o que e uma injustica que hoje esta corrigida.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: PROGRAME O ENIAC)
+
+Convidar a pausar o audio e resolver na tela: tem um pedaco do painel do ENIAC, com tomadas, cabos e chaves, e uma conta simples pra deixar a maquina fazendo.
+
+O objetivo e sentir o custo, nao acertar rapido. Ligar os cabos na ordem certa faz a conta sair. Depois disso, a tela pede uma conta DIFERENTE, e a unica forma de conseguir e desmontar a ligacao e refazer tudo de novo.
+
+Dizer o que a pratica ensina antes de mandar voltar: e isso que significa o programa morar fora da maquina. A conta esta na fiacao, nao na memoria. Trocar de conta e trabalho de eletricista, nao de quem faz conta.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: em 1941 o Z3 de Zuse mostrou que dava pra fazer uma maquina universal com 2600 reles, e ninguem ficou sabendo porque ela virou entulho num bombardeio em 1943. Em 1944 o Mark I de Aiken realizou em Harvard o projeto que Babbage tinha abandonado cem anos antes, com rele e em decimal. Em 1945 o ENIAC trocou o rele pela valvula e ficou mil vezes mais rapido, ao preco de 18 mil valvulas queimando de vez em quando.
+
+Dizer onde o episodio para: 1946, com o ENIAC apresentado ao mundo. E dizer o que ficou faltando, que e o gancho: nas tres maquinas o programa mora FORA da memoria. Em fita, em cabo, em chave. Os numeros ficam dentro da maquina e as ordens ficam do lado de fora. Enquanto for assim, trocar de tarefa e trabalho bracal.
+
+Gancho: no proximo episodio um matematico hungaro escreve um rascunho de relatorio em 1945 propondo uma coisa simples de dizer e dificil de aceitar na epoca, que e guardar as ordens no mesmo lugar onde estao os numeros. Tres anos depois, em Manchester, uma maquina do tamanho de um armario roda o primeiro programa que morava na propria memoria. E vai ser a briga de credito mais conhecida da historia da computacao.

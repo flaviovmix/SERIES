@@ -1,0 +1,15 @@
+MONTANDO O COMPUTADOR COMPLETO - CONTEXTO
+=========================================
+Documento curto de contexto para uso com NotebookLM.
+
+Quinto e ultimo episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1936 a 1945.
+
+O episodio anterior, Turing E A Maquina Universal, cobriu de 1928 a 1936 e terminou com a maquina universal: uma unica maquina que le a tabela de regras escrita na propria fita faz o trabalho de todas as outras. A maquina no papel ja tem portas logicas, unidade de aritmetica e memoria com endereco. Falta ensinar ela a ler codigos.
+
+Este episodio fecha a etapa montando o resto. Cobre o acumulador, que junta a unidade de aritmetica com uma celula de memoria e soma ou subtrai cada numero que chega sobre o que ja esta guardado. Cobre a memoria organizada como uma fita de celulas de 4 bits, cada uma com endereco de 4 bits contado a partir do zero, e o contador, que guarda o endereco da proxima celula a ser lida e sabe somar 1. Cobre os cinco codigos de 4 bits: ADD 1100, que soma ao acumulador o valor do endereco que vem na celula seguinte; SUB 1101, que subtrai; SAVE 0010, que guarda o acumulador no endereco seguinte; LIMP 0011, que zera o acumulador; e MPR 1010, mudar para, que, se o acumulador estiver em zero, troca o contador pelo endereco seguinte. Cobre como a maquina descobre qual codigo esta lendo, com um funil de portas E, OU e NAO sincronizado por um relogio, e o que cada codigo dispara.
+
+Cobre os codigos compostos: LOAD, que e LIMP seguido de ADD; GOTO, que e LIMP seguido de MPR; e o primeiro programa de verdade, que carrega 12, subtrai 1, guarda, testa se chegou a zero e volta, repetindo ate acabar. Com isso fica clara a diferenca entre hardware, que sao os reles, as portas e os circuitos, e software, que sao os codigos combinados de varios jeitos sem mexer em circuito nenhum. A arquitetura e inspirada no Intel 8080 e num artigo de Raul Rojas sobre computadores universais.
+
+Ao final o ouvinte entende que a maquina no papel e equivalente a maquina de Turing, fora a memoria finita, e portanto universal: tao capaz quanto qualquer computador moderno. E entende que nada disso foi ligado ainda. Isso fecha a etapa e abre a proxima, sobre as primeiras maquinas que ligaram de verdade.
+
+Use este contexto apenas como apoio.

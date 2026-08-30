@@ -1,0 +1,150 @@
+/* Base dos modelos 3D da serie — chrome comum (header, HUD, botoes, aviso).
+   Cada maquina pode sobrescrever pontualmente num <style> local. */
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase; z-index:2; background:var(--bg);
+}
+header .dot{color:var(--accent)}
+
+main{position:relative; flex:1; min-height:0}
+#cena{position:absolute; inset:0}
+#cena canvas{display:block; touch-action:none}
+
+/* Painel na LATERAL ESQUERDA (23/08): antes era uma barra no rodape do meio, e ela
+   comia justamente a faixa onde a mecanica das maquinas costuma viver (o Predio da
+   Agua chegou a ficar com registro, bico e balde escondidos atras dela). Na lateral
+   ele briga com muito menos coisa, e o palco fica com a largura util maior. */
+.hud{
+  position:absolute; left:18px; top:50%; transform:translateY(-50%);
+  width:min(330px, calc(100% - 36px));
+  /* ocupa quase toda a altura do palco e espalha as secoes: painel curto no meio de
+     uma coluna alta ficava perdido, e o slider (que estica com ele) tinha pouco curso */
+  height:80%; max-height:calc(100% - 36px); overflow-y:auto;
+  display:flex; flex-direction:column; justify-content:space-between;
+  z-index:2;
+  background:color-mix(in srgb, var(--card) 88%, transparent);
+  backdrop-filter:blur(4px);
+  border:1px solid var(--line); border-radius:14px; padding:14px 18px;
+  box-shadow:0 1px 0 var(--line), 0 18px 40px -22px rgba(0,0,0,.35);
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  letter-spacing:.03em; line-height:1.5; text-align:center; min-height:20px;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* Slider em pe, numa FAIXA PROPRIA na direita do painel. Ele fica fora do fluxo de
+   proposito: no fluxo, a altura dele mandava na altura do painel e abria um vao
+   enorme no meio. Fora do fluxo, quem manda na altura e o conteudo, e o slider
+   estica pra acompanhar. writing-mode e o jeito atual; slider-vertical fica de
+   reserva pro Chromium mais velho. */
+.hud:has(.seletor){padding-right:62px}
+.seletor{
+  position:absolute; right:12px; top:14px; bottom:14px; width:42px; margin:0;
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+.seletor input{
+  accent-color:var(--accent);
+  writing-mode:vertical-lr; direction:rtl;
+  -webkit-appearance:slider-vertical;
+  width:auto; flex:1 1 auto; min-height:90px;
+}
+.seletor .digito{font-size:22px; font-weight:600; color:var(--accent); min-width:26px; text-align:center}
+
+/* Leitura da maquina num card emoldurado (mesma linguagem das medidas do Predio da
+   Agua): no painel alto uma linha solta com um risquinho em cima ficava perdida. */
+.linha-total{
+  display:flex; align-items:baseline; justify-content:space-between; gap:12px;
+  margin-top:10px; padding:10px 14px;
+  border:1px solid var(--line); border-radius:10px;
+  background:color-mix(in srgb, var(--bg2) 45%, transparent);
+}
+.linha-total .num{font-family:'IBM Plex Mono',Consolas,monospace; font-size:30px; font-weight:600}
+.linha-total .meta{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; color:var(--sub); letter-spacing:.12em}
+.linha-total .meta.win{color:var(--ok); font-weight:600}
+.linha-total .casas{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; color:var(--sub); letter-spacing:.12em}
+
+/* Grade de 2 colunas em vez de flex-wrap: no painel estreito o wrap deixava linha
+   com 2 botoes, linha com 1 e um sobrando sozinho no meio. Na grade todos tem a
+   mesma largura e a mesma altura; botao impar no fim ocupa a linha inteira. */
+.botoes{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:12px; align-items:stretch}
+.botoes .btn-mini:last-child:nth-child(odd), .botoes .btn-mini.largo{grid-column:1 / -1}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 14px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+  white-space:normal; line-height:1.35;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+.aviso{
+  position:absolute; inset:0; display:none; align-items:center; justify-content:center;
+  text-align:center; padding:30px; color:var(--sub); font-size:15px; line-height:1.6;
+}
+
+/* No painel alto da lateral o numero principal ganha corpo: e a leitura da maquina,
+   e sobra espaco de sobra. Na barra de rodape ele volta ao tamanho antigo. */
+@media (min-width:701px){
+  .linha-total .num{font-size:38px}
+}
+
+/* Na tela estreita o painel lateral cobriria a maquina inteira: volta a ser a barra
+   do rodape, com o slider deitado. */
+@media (max-width:700px){
+  header{padding:10px 12px; font-size:9px}
+  .hud{
+    left:50%; top:auto; bottom:10px; transform:translateX(-50%);
+    width:min(600px, calc(100% - 20px));
+    height:auto; max-height:none; overflow:visible; display:block;
+    padding:10px 12px;
+  }
+  .hud:has(.seletor){padding-right:12px}
+  .seletor{
+    position:static; width:auto; margin-top:10px;
+    flex-direction:row; gap:12px; align-items:center;
+  }
+  .seletor input{
+    writing-mode:horizontal-tb; direction:ltr; -webkit-appearance:auto;
+    width:auto; height:auto; flex:1; min-height:0;
+  }
+  .botoes{gap:6px}
+  .legenda{font-size:11px}
+  .linha-total .num{font-size:24px}
+  .linha-total .meta{font-size:10px}
+  .linha-total .casas{font-size:10px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+}
+
+/* Estreito E baixo: e o modelo embutido na capa de um episodio, visto no telefone
+   (iframe de uns 425px). Ali a barra do rodape cobria metade da maquina, e a legenda
+   dela ja esta escrita embaixo do iframe: some, e o resto encolhe. Em tela cheia
+   (lightbox) a altura passa de 520px e nada disso vale. */
+@media (max-width:700px) and (max-height:520px){
+  .hud{padding:6px 10px; bottom:6px}
+  .hud .legenda{display:none}
+  .linha-total .num{font-size:20px}
+  .botoes{margin-top:6px}
+  .btn-mini{padding:5px 10px; font-size:9px}
+}

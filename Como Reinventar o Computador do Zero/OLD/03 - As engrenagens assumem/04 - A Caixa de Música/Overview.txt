@@ -1,0 +1,13 @@
+A CAIXA DE MUSICA - CONTEXTO
+============================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o oitavo episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard e os automatos. Este cobre a caixa de musica de pente metalico, inventada pelo relojoeiro Antoine Favre em Genebra, em 1796: um cilindro de pinos que dedilha laminas de aco afinadas, a versao barata e de bolso do roteiro gravado que os automatos faziam em cames de luxo.
+
+O episodio acompanha uma PAGINA DE ANIMACAO COM SOM (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir, e a pagina TOCA NOTAS DE VERDADE (avisar de ligar o som do aparelho). Ha uma tela interativa do pente (clicar nas laminas e ouvir: lamina mais curta, nota mais aguda), uma demonstracao do cilindro girando e tocando Frei Martinho, uma demonstracao de troca de cilindro (mesma maquina tocando Frei Martinho ou Ode a Alegria) e uma pratica (colocar os pinos na grade pra gravar Brilha Brilha Estrelinha e conferir de ouvido). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: a linhagem (carrilhoes de torre com cilindros gigantes, relogios musicais, e a sacada de Favre de trocar sinos por laminas afinadas), as duas metades da maquina (o pente, que e o teclado; o cilindro, que e a musica gravada em pinos, cada pino dizendo quando e qual lamina dedilhar), e a consequencia de trocar o cilindro pra trocar a musica, que virou industria: em 1885 as caixas de disco (Polyphon, Symphonion) prensavam discos de metal aos milhares, a primeira midia popular vendida separada da maquina.
+
+Por que importa: pino e furo guardam informacao que uma maquina le e executa. A caixa de musica popularizou essa ideia como nenhuma outra maquina antes. A limitacao (ela toca sempre igual e nao decide nada; ninguem tinha juntado a informacao gravada com uma maquina que calcula) e o gancho pro proximo episodio: a Maquina Analitica de Charles Babbage.
+
+Use este contexto apenas como apoio.

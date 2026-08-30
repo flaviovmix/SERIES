@@ -1,0 +1,44 @@
+/* base
+   Reset, tipografia do corpo, link, foco e a moldura de qualquer pagina. Depende de tokens.css. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); }
+
+/* quem chega pelo Tab precisa enxergar onde esta */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* quem pediu menos movimento recebe a duracao quase zero, nunca "sem animacao":
+   um reveal por opacidade com animation:none ficaria invisivel pra sempre */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* a moldura: a coluna central que segura o conteudo de qualquer pagina */
+.wrap {
+  max-width: var(--largura-pagina);
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 64px) clamp(18px, 4vw, 40px) 96px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(36px, 5vw, 56px);
+}

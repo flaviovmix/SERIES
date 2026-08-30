@@ -1,0 +1,36 @@
+Inicie dizendo: A Pascalina
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Pascalina.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA de uma animacao que acompanha o audio.
+
+Este e o quarto episodio da serie EQUIPAMENTOS (projeto Como Reinventar o Computador do Zero); os anteriores cobriram o abaco, o sistema de numeracao com o zero e as maquinas do hiato.
+
+FOCO: a Pascalina, a primeira calculadora mecanica (Blaise Pascal, 19 anos, Rouen, 1642, ajudando o pai a somar impostos): somar girando rodas com janelas de digitos, o sautoir fazendo o vai-um sozinho pela gravidade (inclusive em cascata no 99 + 1), a subtracao por complemento em rodas que so giram pra frente (35 - 12 vira 35 + 988, o milhar cai fora), e o que ficou (cerca de 20 construidas, 9 em museus, cara demais pra popularizar).
+
+REGRAS DA CONDUCAO COM A ANIMACAO:
+- No fim de cada tela, pedir claramente: "aperte o Proximo".
+- Na tela interativa (somar e girar) e nas DEMONSTRACOES (o 9 + 1 do sautoir; o 35 - 12 por complemento), avisar que tem um botao na tela.
+- Na tela de PRATICA (montar 28 e somar 35 por cima, meta 63), convidar a pausar o audio, resolver na tela e voltar.
+- Avisar na abertura que da pra acompanhar so pelo audio, sem a pagina.
+- Seguir a ordem das 8 telas do roteiro, sem pular nem juntar telas.
+
+NAO explicar a roda de Leibniz nem Babbage: sao dos proximos episodios. So citar Leibniz no gancho final.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

@@ -1,0 +1,7 @@
+Titulo: Como circuitos elétricos somam e subtraem
+Notebook: 06-02-Circuitos que calculam
+
+Descricao:
+Os textos apresentam o conteúdo de um episódio da série "Como Reinventar o Computador do Zero", focado na evolução tecnológica entre 1937 e 1945. O material detalha como circuitos eletrônicos evoluíram de simples portas lógicas para sistemas capazes de realizar operações matemáticas. Através de componentes como o meio somador e o somador completo, explica-se a lógica binária necessária para somar e subtrair números. O conteúdo destaca o conceito de complemento de dois e o uso do transbordo para lidar com valores negativos em processadores. Por fim, as fontes descrevem uma dinâmica interativa que guia o ouvinte na construção de uma unidade de aritmética. O encerramento prepara o terreno para o próximo tema da série, que abordará a criação da memória digital.
+
+Link: https://notebook.google.com/notebook/422c20cb-8ade-49b2-85ce-7b1f9ec4994a

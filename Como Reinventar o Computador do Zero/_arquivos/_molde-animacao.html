@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__NOME__ — Equipamento __NN__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- MOLDE DE ANIMACAO (Etapa 2, 30/08/2026)
+     Copie este arquivo pra pasta do episodio como animacao.html e troque os __X__.
+     A base mora em site/css/animacao/ e site/js/animacao/: nao copie nada de outro
+     episodio. O que e deste episodio (pratica interativa, desenho) entra em css/js
+     proprios ao lado, carregados por ultimo. Os caminhos abaixo valem pra pasta
+     <serie>/<NN - Etapa>/<NN - Episodio>/; um nivel a mais ou a menos muda os ../.
+     Como consumidor de referencia, veja "01 - Contar antes das maquinas/01 - O Abaco". -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/modelo-3d.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<!-- <link rel="stylesheet" href="minha-pratica.css"> -->
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/etapas/etapa-__EE__.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <!-- data-duracao em segundos: vale ate o navegador ler o metadata do mp3 -->
+    <audio preload="metadata" src="__AUDIO__.mp3" data-duracao="__SEGUNDOS__"></audio>
+    <img class="tocador__capa" src="img/capa-tocador.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">__TITULO_DO_AUDIO__</div>
+      <div class="tocador__fonte">Série Equipamentos · __NN__ · __NOME__</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="__SEGUNDOS__" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">__MM:SS__</span></div>
+  </div>
+  <div class="acoes">
+    <!-- so faz sentido se a capa tiver o iframe do modelo; senao, apague os dois -->
+    <button class="btn-cabecalho" data-abre="modelo3d">🧊 abrir modelo 3D</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 · capa: texto a esquerda, modelo 3D a direita -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">equipamento __NN__ · série equipamentos</div>
+      <h1 class="reveal">__NOME__</h1>
+      <p class="lede reveal">__O CONVITE DA ABERTURA.__ Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>Como ele funciona.</b> __QUATRO LINHAS, NO MAXIMO.__</p>
+      </div>
+      <button class="btn-mini cheio clicavel capa-botao reveal" data-abre="modelo3d">abrir modelo 3D</button>
+    </div>
+    <figure class="capa-modelo reveal">
+      <!-- data-src, nao src: o modelo so liga enquanto a capa esta em cena -->
+      <iframe data-src="../../_arquivos/modelos-3d/__MODELO__.html" title="Modelo tridimensional de __NOME__"></iframe>
+      <figcaption>Arraste pra girar · role pra aproximar</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 · cena: uma ou duas fotos lado a lado (cena--uma quando for uma so).
+       Foto gerada: selo "ilustracao" e legenda terminando em "reconstituicao,
+       nao e foto de epoca". Foto de acervo: selo "imagem real" e o credito. -->
+  <section class="step step--cena">
+    <div class="kicker reveal">__~ANO__ · __CONTEXTO__</div>
+    <h2 class="reveal">__TITULO DA CENA__</h2>
+    <div class="cena reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="__LEGENDA DO LIGHTBOX__ · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/__FOTO__.jpg" alt="__O QUE SE VE NA FOTO__">
+        <figcaption>__LEGENDA CURTA__</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 3 · ficha: nome, data e lugar, motivacao + uma foto de acervo -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a ficha do equipamento</div>
+      <h2 class="reveal">Nome, data e motivação</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">nome</div><div class="texto">__</div></div>
+        <div class="item reveal"><div class="rotulo">data e lugar</div><div class="texto">__</div></div>
+        <div class="item reveal"><div class="rotulo">motivação</div><div class="texto">__</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="__ · foto: __AUTOR__, __LICENCA__">
+        <span class="selo">🔍 ampliar</span>
+        <img src="img/__ACERVO__.jpg" alt="__">
+        <figcaption>__ · foto: __AUTOR__, __LICENCA__</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 · pratica ou demonstracao: o painel e da base, o miolo e do episodio -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">__O QUE FAZER__</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">__A INSTRUCAO__</div>
+      <div id="miolo"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica">0</span>
+        <span class="meta" id="metaPratica">meta: __</span>
+      </div>
+      <div class="botoes"><button class="btn-mini" id="limpar">limpar</button></div>
+    </div>
+  </section>
+
+  <!-- 5 · fechamento: os cards do "pelo mundo", a limitacao e o gancho do proximo -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">__NOME__ pelo mundo</div>
+    <h2 class="reveal">__TITULO DO FECHO__</h2>
+    <div class="mundo">
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="__">
+        <img class="foto" src="img/__.jpg" alt="__">
+        <div class="nome">__</div>
+        <div class="desc">__</div>
+      </div>
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="__ · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img class="foto" src="img/__.jpg" alt="__">
+        <div class="nome">A limitação</div>
+        <div class="desc">__ … que é o próximo episódio.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<!-- a base, nesta ordem; depois o que e deste episodio -->
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/modelo-3d.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<!-- <script src="minha-pratica.js"></script> -->
+<script>
+// os marcadores do audio: o segundo em que o apresentador pede "aperte o Proximo"
+// e a tela (contando de 1) que esse pedido abre. Lidos do _telas.md, nunca digitados.
+Animacao.tocador.monta({
+  marcadores: [
+    { segundo: 0, tela: 2 },
+  ],
+  atraso: 2,
+});
+</script>
+</body>
+</html>

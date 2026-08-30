@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Máquina Analítica — Equipamento 09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(34px,6.5vw,66px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:760px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:620px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ficha do equipamento */
+.ficha{
+  display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:880px;
+}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:270px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+
+/* painel padrao */
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:780px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5;
+  text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* tabela de diferencas */
+.tab-dif{display:flex; flex-direction:column; gap:6px; align-items:center}
+.tab-dif .linha-d{display:flex; gap:6px; align-items:center}
+.tab-dif .rotulo-d{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.1em; color:var(--sub); width:110px; text-align:right; padding-right:4px}
+.tab-dif .cel{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:16px; font-weight:600;
+  width:52px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center;
+  background:var(--bg2); border:1px solid var(--line); color:var(--line);
+}
+.tab-dif .cel.tem{color:var(--ink); background:var(--card)}
+.tab-dif .cel.nova{color:var(--bg); background:var(--accent); border-color:var(--accent); animation:pop .45s var(--ease)}
+@keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.12)}100%{transform:scale(1)}}
+
+/* anatomia da analitica */
+.anatomia{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:6px}
+.orgao{
+  background:var(--bg2); border:2px solid var(--accent2); border-radius:12px;
+  padding:14px 18px; min-width:150px; cursor:pointer; transition:all .25s; text-align:center;
+}
+.orgao:hover{border-color:var(--accent)}
+.orgao.on{background:var(--accent); border-color:var(--accent)}
+.orgao.on .titulo, .orgao.on .sub{color:var(--bg)}
+.orgao .titulo{font-weight:900; font-size:17px}
+.orgao .sub{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--sub); margin-top:4px}
+
+/* cartoes de programa */
+.prog{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; min-height:52px; align-items:center}
+.cartao-p{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11.5px; font-weight:600;
+  padding:10px 12px; border-radius:8px; background:#e8d9b8; border:1.5px solid var(--accent2);
+  color:var(--ink); letter-spacing:.04em;
+}
+.cartao-p.vazio{border-style:dashed; color:var(--line); background:transparent}
+.cartao-p.exec{background:var(--accent); color:var(--bg); border-color:var(--accent)}
+.registros{display:flex; gap:12px; justify-content:center; margin-top:14px; flex-wrap:wrap}
+.reg{
+  font-family:'IBM Plex Mono',Consolas,monospace; text-align:center;
+  background:#241a10; color:#f3dfae; border:2px solid var(--accent2); border-radius:10px;
+  padding:8px 14px; min-width:76px;
+}
+.reg .nome-r{font-size:9px; letter-spacing:.18em; color:var(--accent2)}
+.reg .val{font-size:24px; font-weight:600}
+.reg.flash{animation:flashreg .55s var(--ease)}
+@keyframes flashreg{0%{background:#241a10}35%{background:var(--accent)}100%{background:#241a10}}
+.paleta{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:10px}
+.paleta button{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; font-weight:600;
+  padding:9px 12px; border-radius:8px; cursor:pointer; letter-spacing:.04em;
+  background:none; border:1.5px dashed var(--line); color:var(--sub); transition:all .2s;
+}
+.paleta button:hover{border-color:var(--accent); color:var(--accent)}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+.mundo{display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; justify-content:center; max-width:920px}
+.mundo .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; width:250px; text-align:left;
+}
+.mundo .nome{font-size:18px; font-weight:600}
+.mundo .desc{font-size:13px; color:var(--sub); line-height:1.5; margin-top:6px}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600;
+  transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 10px}
+  .tab-dif .cel{width:38px; height:30px; font-size:13px}
+  .tab-dif .rotulo-d{width:84px; font-size:8.5px}
+  .cartao-p{font-size:10px; padding:8px 9px}
+  .reg .val{font-size:19px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 09 <span class="dot">·</span> A MÁQUINA ANALÍTICA</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 09 · série equipamentos</div>
+    <h1 class="reveal">A Máquina Analítica</h1>
+    <p class="lede reveal">O cartão que obedece + a engrenagem que calcula: Charles Babbage juntou
+    as duas pontas da série e desenhou um computador — <b>100 anos antes da hora</b>. E Ada Lovelace
+    escreveu o primeiro programa pra ele. Quando o áudio pedir, aperte <b>Próximo</b>. Na prática, pause e brinque.</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">Duas máquinas de Charles Babbage: a Máquina Diferencial (tabelas por somas) e a Máquina Analítica (o computador geral).</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Londres. Diferencial proposta em 1822; a Analítica ocupou Babbage de 1834 até a morte, em 1871.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Tabelas de navegação e logaritmos calculadas à mão, cheias de erros que custavam navios. Babbage, conferindo uma delas: "queria que esses cálculos tivessem sido feitos a vapor".</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · a diferencial -->
+  <section class="step">
+    <div class="kicker reveal">a primeira máquina</div>
+    <h2 class="reveal">Tabelas inteiras só com SOMAS</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legDif">O truque das diferenças: pra tabelar x², a máquina nunca multiplica. Aperte "passo" e veja.</div>
+      <div class="tab-dif" id="tabDif"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnPassoDif">passo →</button>
+        <button class="btn-mini" id="btnZeraDif">reiniciar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · a obra inacabada -->
+  <section class="step">
+    <div class="kicker reveal">o que aconteceu com ela</div>
+    <h2 class="reveal">Cara demais pro século dela</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">O dinheiro acabou</div>
+        <div class="desc">O governo inglês investiu 17 mil libras (dava pra fazer dois navios de guerra) e a máquina não ficou pronta: brigas com o construtor e uma engenharia no limite da época.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">Outros terminaram</div>
+        <div class="desc">Os suecos Scheutz, pai e filho, leram sobre a ideia e construíram em 1853 uma diferencial que funcionava e IMPRIMIA as tabelas.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O projeto era bom</div>
+        <div class="desc">Em 1991 o Museu de Ciência de Londres construiu a Diferencial nº 2 seguindo os desenhos originais, com a precisão da época. Funciona até hoje.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · a analitica -->
+  <section class="step">
+    <div class="kicker reveal">o salto</div>
+    <h2 class="reveal">A anatomia de um computador (1834)</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legAnat">Clique em cada parte. Se os nomes parecem familiares, é porque o seu computador tem as mesmas.</div>
+      <div class="anatomia">
+        <button class="orgao" data-info="O MOINHO (mill): onde as contas acontecem. Soma, subtrai, multiplica e divide. Hoje voce chama de processador."><div class="titulo">O Moinho</div><div class="sub">calcula</div></button>
+        <button class="orgao" data-info="O ARMAZEM (store): prateleiras de engrenagens guardando ate 1000 numeros de 40 digitos, esperando a vez. Hoje voce chama de memoria."><div class="titulo">O Armazém</div><div class="sub">guarda</div></button>
+        <button class="orgao" data-info="OS CARTOES: direto do tear de Jacquard. Cartoes de OPERACAO dizem o que fazer; cartoes de VARIAVEL dizem com quais numeros. Hoje voce chama de programa."><div class="titulo">Os Cartões</div><div class="sub">mandam</div></button>
+        <button class="orgao" data-info="A IMPRESSORA: o resultado sai estampado no papel, sem copista humano pra errar. A saida da maquina."><div class="titulo">A Impressora</div><div class="sub">entrega</div></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · o programa -->
+  <section class="step">
+    <div class="kicker reveal">como ela obedece</div>
+    <h2 class="reveal">Cartões de operação, números no armazém</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legProg">Um programinha de 3 cartões: somar o que está em V1 e V2 e guardar em V3. Aperte executar.</div>
+      <div class="prog" id="progDemo"></div>
+      <div class="registros" id="regDemo"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnExecDemo">executar os cartões</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Sua vez: programe (A + B) × C</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">Pause o áudio. Com A=2, B=3 e C=4, monte a fila de cartões que calcula <b>(A + B) × C</b> e guarda o resultado. Depois execute.</div>
+      <div class="prog" id="progPratica"></div>
+      <div class="paleta" id="paletaPratica"></div>
+      <div class="registros" id="regPratica"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnExecPratica">executar</button>
+        <button class="btn-mini" id="btnTiraCartao">tirar o último cartão</button>
+        <button class="btn-mini" id="btnLimpaProg">limpar a fila</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">O computador que nasceu em texto</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">Ada Lovelace</div>
+        <div class="desc">Em 1843 traduziu um artigo sobre a Analítica e triplicou o tamanho com as próprias Notas. Na Nota G: o passo a passo pra máquina calcular os números de Bernoulli — o primeiro programa publicado da história.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A visão dela</div>
+        <div class="desc">Ada viu além das contas: se símbolos podem representar qualquer coisa, a máquina "tece padrões de álgebra como o tear de Jacquard tece flores e folhas" — e poderia até compor música. Era o computador de hoje, descrito em 1843.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">Um acerto com a história</div>
+        <div class="desc">Registro que a série devia: antes da Pascalina, Wilhelm Schickard já tinha projetado uma calculadora (1623). Ela queimou, e o mundo só redescobriu em 1957, nas cartas dele pro astrônomo Kepler.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A limitação</div>
+        <div class="desc">A Analítica nunca saiu do papel: engrenagem e vapor eram lentos e caros demais pro tamanho do sonho. O próximo salto não é uma máquina de calcular — é a informação virando eletricidade. Próximo equipamento: o telégrafo.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- tela 3: tabela de diferencas (x^2 so com somas) ----------
+// linhas: n, x2 (valores), D1, D2. Seeds: x2[0]=1, D1[0]=3, D2 = 2 constante.
+const N = 6;
+const tabDif = document.getElementById('tabDif');
+const legDif = document.getElementById('legDif');
+const linhasDif = [
+  { rotulo: 'n', vals: [1, 2, 3, 4, 5, 6] },
+  { rotulo: 'x² (a tabela)', vals: [1, 4, 9, 16, 25, 36] },
+  { rotulo: '1ª diferença', vals: [3, 5, 7, 9, 11, null] },
+  { rotulo: '2ª diferença', vals: [2, 2, 2, 2, 2, null] },
+];
+const celDif = [];
+linhasDif.forEach((l, li) => {
+  const linha = document.createElement('div');
+  linha.className = 'linha-d';
+  const rot = document.createElement('span');
+  rot.className = 'rotulo-d';
+  rot.textContent = l.rotulo;
+  linha.appendChild(rot);
+  const cels = [];
+  for (let c = 0; c < N; c++) {
+    const cel = document.createElement('span');
+    cel.className = 'cel';
+    cel.textContent = '·';
+    linha.appendChild(cel);
+    cels.push(cel);
+  }
+  tabDif.appendChild(linha);
+  celDif.push(cels);
+});
+// roteiro de passos: cada passo revela celulas e explica
+let passoDif = 0;
+const roteiroDif = [
+  () => { poe(0, 0, 1); poe(0, 1, 2); poe(0, 2, 3); poe(0, 3, 4); poe(0, 4, 5); poe(0, 5, 6);
+    legDif.innerHTML = 'queremos a tabela de <b>x²</b> pra n de 1 a 6'; },
+  () => { poe(3, 0, 2); poe(3, 1, 2); poe(3, 2, 2); poe(3, 3, 2); poe(3, 4, 2);
+    legDif.innerHTML = 'o segredo: pra x², a <b>2ª diferença é sempre 2</b>. Constante. Isso a máquina ganha de graça'; },
+  () => { poe(1, 0, 1); poe(2, 0, 3);
+    legDif.innerHTML = 'sementes: primeiro valor <b>1</b>, primeira diferença <b>3</b>. Agora é só somar'; },
+  () => { poe(2, 1, 5, true); poe(1, 1, 4, true);
+    legDif.innerHTML = '3 + 2 = <b>5</b> · 1 + 3 = <b>4</b> = 2² ✓. Só somas'; },
+  () => { poe(2, 2, 7, true); poe(1, 2, 9, true);
+    legDif.innerHTML = '5 + 2 = <b>7</b> · 4 + 5 = <b>9</b> = 3² ✓. Só somas'; },
+  () => { poe(2, 3, 9, true); poe(1, 3, 16, true);
+    legDif.innerHTML = '7 + 2 = <b>9</b> · 9 + 7 = <b>16</b> = 4² ✓'; },
+  () => { poe(2, 4, 11, true); poe(1, 4, 25, true);
+    legDif.innerHTML = '9 + 2 = <b>11</b> · 16 + 9 = <b>25</b> = 5² ✓'; },
+  () => { poe(1, 5, 36, true);
+    legDif.innerHTML = '25 + 11 = <b>36</b> = 6² ✓. A tabela inteira <b>sem multiplicar nada</b>: é isso que a Diferencial faz, em engrenagem'; },
+];
+function poe(li, c, v, nova) {
+  const cel = celDif[li][c];
+  cel.textContent = v;
+  cel.classList.add('tem');
+  if (nova) { cel.classList.add('nova'); setTimeout(() => cel.classList.remove('nova'), 600); }
+}
+const btnPassoDif = document.getElementById('btnPassoDif');
+btnPassoDif.addEventListener('click', () => {
+  if (passoDif < roteiroDif.length) {
+    roteiroDif[passoDif]();
+    passoDif++;
+    if (passoDif === roteiroDif.length) btnPassoDif.disabled = true;
+  }
+});
+document.getElementById('btnZeraDif').addEventListener('click', () => {
+  passoDif = 0;
+  btnPassoDif.disabled = false;
+  celDif.flat().forEach((c) => { c.textContent = '·'; c.classList.remove('tem', 'nova'); });
+  legDif.innerHTML = 'O truque das diferenças: pra tabelar x², a máquina nunca multiplica. Aperte "passo" e veja.';
+});
+
+// ---------- tela 5: anatomia ----------
+const legAnat = document.getElementById('legAnat');
+document.querySelectorAll('.orgao').forEach((o) => {
+  o.addEventListener('click', () => {
+    document.querySelectorAll('.orgao').forEach((x) => x.classList.toggle('on', x === o));
+    legAnat.innerHTML = '<b>' + o.dataset.info + '</b>';
+  });
+});
+
+// ---------- fabrica: fila de cartoes + registros ----------
+function criaRegistros(elId, defs) {
+  const raiz = document.getElementById(elId);
+  const regs = {};
+  defs.forEach((d) => {
+    const r = document.createElement('div');
+    r.className = 'reg';
+    r.innerHTML = '<div class="nome-r">' + d.nome + '</div><div class="val">' + d.val + '</div>';
+    raiz.appendChild(r);
+    regs[d.nome] = r;
+  });
+  function set(nome, v) {
+    regs[nome].querySelector('.val').textContent = v;
+    regs[nome].classList.add('flash');
+    setTimeout(() => regs[nome].classList.remove('flash'), 600);
+  }
+  return { set };
+}
+function pintaProg(el, cartoes, minimo) {
+  el.innerHTML = '';
+  cartoes.forEach((c) => {
+    const s = document.createElement('span');
+    s.className = 'cartao-p';
+    s.textContent = c;
+    el.appendChild(s);
+  });
+  for (let i = cartoes.length; i < (minimo || 0); i++) {
+    const s = document.createElement('span');
+    s.className = 'cartao-p vazio';
+    s.textContent = '· · ·';
+    el.appendChild(s);
+  }
+  return [...el.querySelectorAll('.cartao-p')];
+}
+
+// ---------- tela 6: demo V1+V2->V3 ----------
+const CARTOES_DEMO = ['PEGA V1', 'SOMA V2', 'GUARDA EM V3'];
+const chipsDemo = pintaProg(document.getElementById('progDemo'), CARTOES_DEMO);
+const regDemo = criaRegistros('regDemo', [
+  { nome: 'V1', val: 7 }, { nome: 'V2', val: 5 }, { nome: 'V3', val: '·' }, { nome: 'MOINHO', val: '·' },
+]);
+const legProg = document.getElementById('legProg');
+const btnExecDemo = document.getElementById('btnExecDemo');
+btnExecDemo.addEventListener('click', () => {
+  btnExecDemo.disabled = true;
+  const acoes = [
+    () => { regDemo.set('MOINHO', 7); legProg.innerHTML = 'o moinho pega o <b>7</b> do armazém (V1)'; },
+    () => { regDemo.set('MOINHO', 12); legProg.innerHTML = 'soma o <b>5</b> de V2: o moinho marca <b>12</b>'; },
+    () => { regDemo.set('V3', 12); regDemo.set('MOINHO', '·'); legProg.innerHTML = 'guarda o 12 na prateleira <b>V3</b>. Cartões mandaram, moinho calculou, armazém guardou'; },
+  ];
+  acoes.forEach((a, i) => setTimeout(() => {
+    chipsDemo.forEach((c, ci) => c.classList.toggle('exec', ci === i));
+    a();
+    if (i === acoes.length - 1) setTimeout(() => {
+      chipsDemo.forEach((c) => c.classList.remove('exec'));
+      btnExecDemo.disabled = false;
+    }, 900);
+  }, 1300 * (i + 1)));
+});
+
+// ---------- tela 7: pratica (A+B)xC ----------
+const ALVO_PROG = ['PEGA A', 'SOMA B', 'MULTIPLICA C', 'GUARDA'];
+const PALETA = ['PEGA A', 'PEGA B', 'SOMA B', 'SOMA C', 'MULTIPLICA C', 'GUARDA'];
+let filaProg = [];
+const progPratica = document.getElementById('progPratica');
+const legPratica = document.getElementById('legPratica');
+const regPratica = criaRegistros('regPratica', [
+  { nome: 'A', val: 2 }, { nome: 'B', val: 3 }, { nome: 'C', val: 4 }, { nome: 'MOINHO', val: '·' }, { nome: 'SAÍDA', val: '·' },
+]);
+const paletaEl = document.getElementById('paletaPratica');
+PALETA.forEach((c) => {
+  const b = document.createElement('button');
+  b.textContent = c;
+  b.addEventListener('click', () => {
+    if (filaProg.length >= 6) return;
+    filaProg.push(c);
+    pintaProg(progPratica, filaProg, 4);
+  });
+  paletaEl.appendChild(b);
+});
+pintaProg(progPratica, filaProg, 4);
+document.getElementById('btnTiraCartao').addEventListener('click', () => {
+  filaProg.pop();
+  pintaProg(progPratica, filaProg, 4);
+});
+document.getElementById('btnLimpaProg').addEventListener('click', () => {
+  filaProg = [];
+  pintaProg(progPratica, filaProg, 4);
+  regPratica.set('MOINHO', '·'); regPratica.set('SAÍDA', '·');
+  legPratica.classList.remove('ok');
+  legPratica.innerHTML = 'Pause o áudio. Com A=2, B=3 e C=4, monte a fila de cartões que calcula <b>(A + B) × C</b> e guarda o resultado. Depois execute.';
+});
+const VALORES = { A: 2, B: 3, C: 4 };
+document.getElementById('btnExecPratica').addEventListener('click', () => {
+  if (!filaProg.length) return;
+  const chips = [...progPratica.querySelectorAll('.cartao-p')];
+  let moinho = null, saida = null, erro = null;
+  const acoes = filaProg.map((c, i) => () => {
+    chips.forEach((ch, ci) => ch.classList.toggle('exec', ci === i));
+    const [op, arg] = c.split(' ');
+    if (op === 'PEGA') { moinho = VALORES[arg]; }
+    else if (op === 'SOMA') { if (moinho === null) { erro = 'SOMA sem ter pego um número antes'; } else moinho += VALORES[arg]; }
+    else if (op === 'MULTIPLICA') { if (moinho === null) { erro = 'MULTIPLICA sem ter pego um número antes'; } else moinho *= VALORES[arg]; }
+    else if (op === 'GUARDA') { if (moinho === null) { erro = 'GUARDA com o moinho vazio'; } else { saida = moinho; regPratica.set('SAÍDA', saida); } }
+    if (op !== 'GUARDA') regPratica.set('MOINHO', moinho === null ? '·' : moinho);
+  });
+  acoes.forEach((a, i) => setTimeout(() => {
+    a();
+    if (i === acoes.length - 1) setTimeout(() => {
+      chips.forEach((ch) => ch.classList.remove('exec'));
+      const certo = filaProg.join('|') === ALVO_PROG.join('|');
+      if (certo && saida === 20) {
+        legPratica.classList.add('ok');
+        legPratica.innerHTML = '<b>20! (2+3)×4 na ordem certa: você programou a Analítica. Pode voltar o áudio e apertar o Próximo.</b>';
+      } else if (erro) {
+        legPratica.classList.remove('ok');
+        legPratica.innerHTML = 'a máquina travou: <b>' + erro + '</b>. Ajuste a fila e execute de novo.';
+      } else {
+        legPratica.classList.remove('ok');
+        legPratica.innerHTML = 'saiu <b>' + (saida === null ? 'nada guardado' : saida) + '</b>, o alvo era 20 com 4 cartões. Ajuste a fila e execute de novo.';
+      }
+    }, 700);
+  }, 1000 * (i + 1)));
+});
+</script>
+</body>
+</html>

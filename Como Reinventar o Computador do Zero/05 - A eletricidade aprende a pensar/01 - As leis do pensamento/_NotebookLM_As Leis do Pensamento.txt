@@ -1,0 +1,155 @@
+Inicie dizendo: As Leis do Pensamento
+---------------
+
+Este e o primeiro episodio da etapa A ELETRICIDADE APRENDE A PENSAR, a quinta etapa da serie Como Reinventar o Computador do Zero. A etapa anterior domesticou a eletricidade: corrente que dura, corrente que vira forca, corrente que vira sinal. Esta etapa da significado a ela. E comeca num lugar que nao tem fio nenhum: dentro da cabeca das pessoas.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas (4 e 5), avisar que tem chave na tela pra mexer enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_As Leis do Pensamento.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A contratacao do lobo-guara: uma vaga com requisitos combinados por E, OU e NAO, e candidatos que atendem ou nao atendem. E o exemplo que atravessa o episodio inteiro, das telas 4 a 7. Usar sempre esse, nunca trocar por outro.
+- A receita de bolo com ingredientes obrigatorios e opcionais, SE precisar reforcar a diferenca entre E e OU numa frase. Nada alem disso.
+- O abaco de uma pedra so, uma vez so, no fecho da tela 7: e callback do primeiro episodio da serie, nao imagem nova.
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: AS LEIS DO PENSAMENTO)
+
+Retomar em uma frase o que a serie ja construiu: a etapa passada domou a eletricidade, e agora existe corrente que dura, corrente que faz forca e corrente que corre por um fio a distancia. So que corrente sozinha nao decide nada. Ela e so energia andando.
+
+Dizer o que este episodio faz: vai atras da outra metade do computador, que nao e eletrica nem mecanica. E a pergunta de como saber se um raciocinio esta certo, e o que acontece quando alguem descobre que da pra responder isso com conta de somar e multiplicar.
+
+Avisar o pulo temporal, porque ele e grande e o ouvinte precisa saber: este episodio comeca em 350 antes de Cristo e termina em 1854. Nenhum fio vai aparecer no meio do caminho. O encontro entre essa historia e a eletricidade fica pros proximos episodios da etapa.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: o assunto e a logica virando algebra, e o resultado disso e a algebra booleana. A data principal e 1854, na Irlanda, na cidade de Cork. O nome e George Boole, e antes dele, dois mil anos antes, Aristoteles.
+
+Motivacao: e a mais estranha desta serie inteira, e vale dizer com todas as letras. Nao tinha nenhuma. Boole nao estava tentando construir maquina nenhuma, nem resolver problema de industria, nem atender encomenda de ninguem. Ele queria entender como o pensamento humano funciona por dentro, e achou que matematica era o jeito. Morreu em 1864 sem imaginar maquina eletrica alguma.
+
+O problema pratico que fica pra tras: raciocinar da trabalho, e da trabalho toda vez de novo. Se a resposta depende de conferir dez condicoes, alguem precisa sentar e conferir as dez, uma a uma, com atencao, sempre que a pergunta voltar. Uma pessoa cansada erra. E ate 1854 nao existia jeito de passar essa conferencia pra outra coisa que nao fosse uma cabeca humana.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (ARISTOTELES E A FORMA DO ARGUMENTO)
+
+Por volta de 350 antes de Cristo, Aristoteles tenta responder uma pergunta simples: como saber se o que alguem te disse esta certo ou errado. Dessa pergunta sai a logica, a disciplina que separa o discurso correto do incorreto.
+
+Vale a ressalva: nao e que as pessoas fossem irracionais antes dele. Tales ja escrevia argumento matematico duzentos anos antes, e Platao ja falava em usar o metodo dos matematicos pra investigar outras questoes. O que Aristoteles fez de novo foi tentar achar as pecas pequenas da racionalidade e escrever como elas se encaixam.
+
+O exemplo classico do silogismo, que vale dizer devagar, e este (a formulacao com Socrates e de comentadores posteriores, mas serve): todo homem e mortal; Socrates e um homem; portanto Socrates e mortal. Se as duas primeiras frases forem verdade, a terceira nao tem escolha, e verdade tambem.
+
+Agora a sacada, que e a parte que importa pra serie. Aristoteles nao ficou colecionando argumentos bons. Ele trocou as palavras por letras: todo X e Y, Z e X, portanto Z e Y. Trocando homem, mortal e Socrates por letra, sobra o esqueleto. E o esqueleto continua funcionando com qualquer palavra que voce enfiar no lugar das letras.
+
+Dizer o que isso significa: a partir dali, a correcao de um raciocinio nao depende do assunto. Depende so da FORMA. Isso e o primeiro passo pra sair da cabeca de alguem, porque assunto exige entender do assunto, e forma nao exige nada. Forma qualquer um confere. E, mais pra frente na serie, qualquer coisa confere.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (E, OU, NAO: A VAGA DO LOBO-GUARA, TELA INTERATIVA)
+
+Sair da Grecia e ir pra um problema com cara de vida real. Imagine que voce vai contratar um lobo-guara pra apresentar o seu canal. Nao serve qualquer um, tem requisito.
+
+A vaga, dita de uma vez so, complicada de proposito: o lobo-guara mora em Sao Paulo E sabe latim, OU sabe calculo 3, OU nao mora no Rio de Janeiro E sabe japones E sabe algebra linear, OU ele sabe dancar.
+
+Reparar que a frase inteira e feita de pedacos pequenos, e cada pedaco e uma afirmacao que so pode ser verdadeira ou falsa: sabe latim, sabe japones, sabe calculo 3, sabe algebra linear, mora em Sao Paulo, mora no Rio, sabe dancar. Sao sete.
+
+Fazendo o mesmo movimento de Aristoteles, cada uma vira uma letra. L de latim, J de japones, C de calculo, A de algebra, P de Sao Paulo, R de Rio, D de dancar. A vaga inteira vira uma linha de letras amarradas por tres palavrinhas: E, OU e NAO.
+
+Explicar as tres com calma, porque o episodio inteiro depende delas:
+- E exige as duas coisas. Se uma falhar, a frase toda falha.
+- OU se contenta com uma. Se qualquer uma valer, a frase vale. E se as duas valerem, vale tambem.
+- NAO vira do avesso. Se e verdade que ele mora no Rio, entao e falso que ele nao mora no Rio.
+
+Reforcar com a receita de bolo, so nessa hora: farinha E ovo e obrigatorio, faltou um nao tem bolo; cobertura de chocolate OU de morango basta escolher uma.
+
+Avisar: a tela tem os sete requisitos com uma chave em cada um. Convide o ouvinte a ligar e desligar as chaves e ver a frase da vaga se montando com as letras enquanto ouve.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (VERDADEIRO OU FALSO: O CANDIDATO NA, TELA INTERATIVA)
+
+Chega um candidato. O nome dele e Na, e o curriculo diz assim: sou um lobo-guara paulista, nao sei calculo 3, sei falar latim, nao sei japones, sei algebra linear e nao sei dancar.
+
+Contratado ou nao? Da pra descobrir sem pensar muito, e esse e o ponto. Basta marcar cada afirmacao como verdadeira ou falsa, conforme o curriculo. Seis vem escritas nele; a setima, nao mora no Rio, sai de graca do paulista. Depois disso e so resolver a frase de fora pra dentro, um E e um OU de cada vez.
+
+Ir devagar aqui, dizendo pelo menos: mora em Sao Paulo, verdadeiro. Sabe latim, verdadeiro. Entao o primeiro pedaco, que pede as duas com E, ja e verdadeiro. E se um pedaco ligado por OU ja e verdadeiro, a frase inteira e verdadeira, nem precisa conferir o resto.
+
+Resultado: o Na passa. Entra pra equipe, a nao ser que nao tope o salario.
+
+Agora a observacao que muda o jogo, e vale dizer com calma: repare no que a gente acabou de fazer. Ninguem precisou saber o que e calculo 3, nem o que e algebra linear, nem onde fica o Rio de Janeiro. So precisou saber, pra cada afirmacao, se ela era verdadeira ou falsa, e depois aplicar tres regrinhas. E isso e trabalho burro. E exatamente o tipo de trabalho que da pra passar pra outra coisa fazer.
+
+Avisar: a tela tem o curriculo do Na e a frase da vaga com as chaves. Convide o ouvinte a virar as chaves e ver o resultado final mudar de verdadeiro pra falso e de volta.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O AUTODIDATA)
+
+Vale contar quem foi Boole, porque tambem nao e um cientista de familia rica.
+
+Nasceu em 1815 na Inglaterra, filho de sapateiro, familia pobre. Largou a escola aos 16 anos pra ajudar em casa e continuou estudando matematica sozinho, com os livros que conseguia. Aos 23 anos mandou um manuscrito pro Jornal Matematico de Cambridge, recem-fundado. O editor viu que o texto tinha jeito de amador em alguns pontos, mas viu tambem que a ideia era boa, e publicou.
+
+Parte da comunidade matematica britanica torceu o nariz pra um sujeito sem diploma nenhum. O trabalho falou por si: Boole continuou publicando, virou professor de matematica na Irlanda, no Queen's College de Cork, e em 1854, uns quinze anos depois daquela primeira carta, lancou a obra pela qual ele e lembrado ate hoje, chamada As Leis do Pensamento. A algebra da logica dele ja tinha aparecido antes, num livro de 1847; o de 1854 e a versao redonda, a que ficou.
+
+E aqui vale ligar com o resto da serie: o que Boole fez foi olhar pros dois mil anos de logica de Aristoteles e pros tres seculos de sucesso da algebra, e perguntar por que essas duas coisas estao em salas separadas. Se argumento tem forma, e forma se escreve com letra, e letra e o que a algebra manipula, entao raciocinio deveria dar pra fazer no papel, com conta.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: A CONTA QUE PENSA)
+
+Aqui esta a ideia de 1854, e ela cabe em quatro linhas.
+
+Primeiro, trocar verdadeiro e falso por numero: verdadeiro vira 1, falso vira 0. So esses dois valores existem, nao tem 2, nao tem meio.
+
+Depois, trocar as tres palavrinhas por conta:
+- E vira multiplicacao. 1 vezes 1 da 1, e qualquer coisa vezes 0 da 0. Que e exatamente o E: basta uma parte falsa pra derrubar tudo.
+- OU vira soma. Com um ajuste que o proprio Boole nao fez, e vale ser honesto nisso: no sistema dele de 1854 somar duas coisas que se sobrepoem nem era permitido. Quem arrumou isso foi William Jevons, dez anos depois, dizendo que 1 mais 1 da 1, porque nada pode ser mais verdadeiro do que verdadeiro. E a versao de Jevons que ficou e que a gente usa hoje.
+- NAO vira 1 menos o valor. Se o valor era 1, vira 0. Se era 0, vira 1.
+
+Dizer o resultado com todas as letras: a vaga do lobo-guara, aquela frase enrolada com sete requisitos, agora e uma expressao de multiplicar e somar zeros e uns. E o veredito da contratacao e o numero que sai no fim. Se der 1, contrata.
+
+Duas coisas ficaram provadas, e essas duas justificam o episodio existir na serie. A primeira: raciocinio virou conta tao simples que caberia num abaco de uma pedra so. A segunda, que e a que interessa: organizando direitinho, a conta quase se faz sozinha, porque nao sobrou julgamento nenhum pra fazer, so regra mecanica.
+
+Convidar a pausar o audio e resolver na tela: tem a expressao do lobo-guara e um candidato novo, com os requisitos vindo como 1 e 0. O objetivo e resolver a conta e dizer se contrata ou nao, multiplicando pro E, somando pro OU, e lembrando que 1 mais 1 continua sendo 1.
+
+Quando terminar, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: Aristoteles trocou as palavras por letras e mostrou que o que faz um argumento estar certo e a forma dele, nao o assunto. Dois mil anos depois, um autodidata filho de sapateiro trocou as letras por 1 e 0 e as palavras E, OU e NAO por multiplicar, somar e inverter. No fim, decidir se uma frase e verdadeira virou uma conta com dois algarismos.
+
+Dizer o que a serie ganhou: agora existe uma linguagem de duas posicoes. Verdadeiro e falso, 1 e 0, e tres operacoes que combinam isso. Guardar essa frase, porque ela e a ponte da etapa: com alguma coisa que so tem duas posicoes, e que sabe ficar parada em uma delas, ja da pra representar isso. Um interruptor tem duas posicoes.
+
+Deixar claro o que ainda NAO aconteceu, pra ninguem sair com a historia errada: Boole nao ligou isso em eletricidade, nao pensou em maquina, e morreu dez anos depois da obra sem nenhuma suspeita do que ia virar. A algebra dele ficou parada num canto da matematica, sem aplicacao pratica, por quase um seculo.
+
+Gancho: no proximo episodio, um funcionario do censo americano precisa contar sessenta milhoes de pessoas antes que a proxima contagem comece, e resolve o problema com cartao furado, agulha e um copinho de mercurio. E a primeira vez que um dado sobre gente vira circuito fechando. As maquinas de Hollerith.

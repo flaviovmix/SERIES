@@ -1,0 +1,32 @@
+COMO REINVENTAR O COMPUTADOR DO ZERO - CONTEXTO
+================================================
+Documento curto de contexto para uso com NotebookLM.
+
+Esta e uma serie sobre a historia e o funcionamento do computador, contada na ordem em que as pecas foram inventadas: da logica de Aristoteles ate o Transformer de 2017, a arquitetura que tornou possiveis as IAs atuais. A pergunta que atravessa a serie inteira: como pedras que a gente move com a mao viraram maquinas que conversam? Ao final da serie o ouvinte entende cada camada de um computador moderno e sabe de onde cada uma veio.
+
+Este primeiro episodio e o piloto e apresenta a serie. Ele acompanha uma PAGINA DE ANIMACAO (animacao.html) com 10 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir, e duas telas sao praticas interativas (montar um numero no abaco e acender uma lampada com portas logicas E e OU). Quem estiver so ouvindo, sem a pagina, consegue acompanhar normalmente.
+
+Os episodios da serie, nesta ordem:
+
+01 - Do Abaco Ao Transformer (este, a apresentacao da serie, com animacao)
+02 - Antes da eletricidade: abaco, Pascal, Babbage e Ada Lovelace
+03 - As leis do pensamento: Aristoteles, proposicoes e a algebra de Boole
+04 - Enganando a eletricidade a pensar: gerador, interruptores, rele
+05 - Portas logicas e o mundo binario: AND, OR, NOT, bits e bytes
+06 - Circuitos que calculam: somadores, negativos e overflow
+07 - Como a maquina lembra: flip-flop, RAM e ASCII
+08 - Turing e a maquina universal
+09 - Montando o computador completo: instrucoes, hardware e software
+10 - Do rele ao transistor: Mark I, Z3, valvulas e a Lei de Moore
+11 - O chip e o microprocessador (1958-1971)
+12 - O computador chega em casa (1975-1990)
+13 - Conectando tudo: a internet (1969-1995)
+14 - IA: a promessa e os invernos (1950-2010)
+15 - Deep learning: a virada (2012-2016)
+16 - 2017: Attention is All You Need, o Transformer
+
+A primeira metade da serie (ate o episodio 10) segue o video Como Reinventar o Computador do Zero, do canal Infinitamente. Os episodios 11 a 16 estendem a historia por conta propria ate 2017.
+
+Por que importa: tudo o que a gente usa hoje, do celular as IAs, roda em cima dessas camadas. Entender como elas surgiram e entender que nada dentro de um computador e magica: e uma pilha de ideias simples empilhadas com cuidado ao longo de 2500 anos.
+
+Use este contexto apenas como apoio.

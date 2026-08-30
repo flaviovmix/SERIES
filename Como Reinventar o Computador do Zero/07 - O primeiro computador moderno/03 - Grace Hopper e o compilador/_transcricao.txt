@@ -1,0 +1,329 @@
+# Transcricao automatica (faster-whisper small) - 16.6 min
+# Fonte: Grace Hopper e o primeiro compilador.mp3
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Grace Hopper e o Compilador.
+[00:02] Isso aí.
+[00:03] Bom, sejam todos bem-vindos a mais uma análise detalhada das nossas fontes.
+[00:08] Eu sou o seu Anfitrião e nós estamos começando hoje o terceiro e último episódio da etapa
+[00:15] o primeiro computador moderno.
+[00:17] Que no caso é a sétima etapa da nossa série como reivindar o computador do zero.
+[00:21] Exatamente. E para a gente se localizar no tempo, este episódio cobre de 1944 a 1959.
+[00:29] Mas antes da gente mergulhar no assunto de hoje, vale a pena dar um passo para trás.
+[00:35] Com certeza. O nosso episódio anterior terminou ali por volta de 1949, né?
+[00:41] O computador moderno já estava totalmente definido naquela época.
+[00:44] Sim, o EDESAC já estava funcionando bonitinho em serviço regular.
+[00:49] E o mais importante, o programa já morava na memória junto com os números.
+[00:54] Aham, um avanço gigantesco. Mas ainda tinha um problema bem sério ali.
+[00:58] Pois é, o gargalo. O código ainda era escrito totalmente à mão e em binário.
+[01:03] Tudo em zeros e uns na unha.
+[01:06] É. Então, a nossa missão hoje é justamente resolver o problema dessa pessoa.
+[01:12] A pessoa que escreve esse programa.
+[01:14] É, tirar esse peso das costas do programador.
+[01:17] Exato. Ah, e um aviso rápido sobre o formato de hoje.
+[01:21] Esse episódio tem uma animação de nove telas que acompanha o nosso áudio.
+[01:26] Mas, olha, se você não tiver com a página aberta agora, não tem problema nenhum.
+[01:30] Isso. Dá para acompanhar apenas pelo áudio super de boa.
+[01:33] A mecânica de navegação é bem simples.
+[01:36] Quando for a hora de mudar a tela, a gente vai avisar.
+[01:39] É só seguir o nosso comando.
+[01:41] Então, para a gente começar, de fato, aperte o próximo.
+[01:44] Bom, a gente precisa entender o tamanho da dor de cabeça que era lidar com o binário naquela época.
+[01:49] Era algo terrível, né?
+[01:50] Muito. Escrever o programa em binário era muito caro e quase sempre dava errado.
+[01:55] Você tinha uma tabela de código de máquina com dezenas de instruções diferentes.
+[02:00] Aham.
+[02:01] E cada endereço, na memória, era um número exato.
+[02:05] E a pessoa precisava acompanhar tudo isso de cabeça.
+[02:09] Cara, mas me tira uma dúvida prática.
+[02:11] O que acontecia no dia a dia se a pessoa precisasse mudar alguma coisa no código?
+[02:15] Tipo, adicionar um comando no meio.
+[02:18] Ah, isso era um pesadelo.
+[02:20] Se você trocasse uma simples linha de lugar, você era obrigado a recalcular manualmente
+[02:26] os endereços de todo o resto do programa.
+[02:29] Nossa, tudo de novo?
+[02:30] Tudo.
+[02:31] Porque você empurrava os comandos para as gavetas seguintes da memória, sabe?
+[02:36] E o pior é que um dígito errado no meio de centenas de números
+[02:41] não era visível na hora que você liu o papel.
+[02:43] Passava batido, né?
+[02:44] Passava totalmente.
+[02:46] Você descobriu o erro muito depois quando a máquina começava a fazer besteira no meio da conta.
+[02:51] Entendi.
+[02:52] Então a solução para isso e a nossa personagem principal de hoje entram bem aí.
+[02:57] O assunto central é o compilador.
+[03:00] Isso, um programa que lê texto escrito por gente, né?
+[03:04] Com palavras e produz sozinho o código que a máquina executa.
+[03:07] O primeiro deles foi o A0.
+[03:10] Isso aconteceu em 1952, lá nos Estados Unidos.
+[03:14] E a mente por trás disso é simplesmente brilhante.
+[03:17] É, a gente precisa passar a ficha humana obrigatória da criadora dele, a Grace Hopper.
+[03:22] Vamos lá.
+[03:23] Ela nasceu Grace Brewster Murray em 9 de dezembro de 1906.
+[03:28] Nasceu lá em Nova York, nos Estados Unidos.
+[03:30] O pai dela, Walter Fletcher Murray, era corretor de seguros.
+[03:34] Aham.
+[03:35] E a família vinha de uma origem escocesa e holandesa.
+[03:38] Ela era a mais velha de três irmãos.
+[03:41] E a formação acadêmica dela é muito forte.
+[03:43] Muito.
+[03:44] Ela estudou no Vassar College e se formou em matemática e física em 1928.
+[03:50] Logo depois, ela foi para Yale.
+[03:52] Certo.
+[03:53] Fez o mestrado em 1930 e o doutorado em matemática em 1934.
+[03:58] Inclusive, ela deu aula de matemática em Vassar a partir de 1931.
+[04:03] Até a guerra mudar os planos, né?
+[04:05] Pois é.
+[04:06] Ela entrou na Reserva da Marinha Americana em 1943.
+[04:09] E ela precisou pedir uma dispensa especial.
+[04:12] Por causa do peso, né?
+[04:14] Exato.
+[04:15] Ela estava abaixo do peso mínimo exigido.
+[04:17] Mas ela entrou, se formou em primeiro lugar na turma de treinamento em 1944.
+[04:22] Caramba.
+[04:23] É.
+[04:24] E foi designada, já como tenente, para o projeto de computação da marinha lá em Harvard.
+[04:30] Uma carreira e tanto.
+[04:31] Muito longa.
+[04:32] Ela morreu em 1 de janeiro de 1992, aos 85 anos, em Arlington, na Virgínia.
+[04:39] E foi enterrada com honras militares.
+[04:42] Uma história de vida incrível.
+[04:44] Bom, para a gente ver o cenário que ela encontrou em Harvard, aperte o próximo.
+[04:48] Voltando um pouco no tempo por contexto de 1944.
+[04:52] Como era o trabalho dela lá em Harvard, na prática?
+[04:55] Então, ela chegou para trabalhar com o Mark I.
+[04:58] E vale lembrar que o chefe lá era o Howard Iken.
+[05:02] Sim, a gente já falou dele antes.
+[05:03] Isso.
+[05:04] E programar o Mark I significava, basicamente, escrever toda a sequência de operações numa folha de papel.
+[05:10] Tudo no papel, primeiro?
+[05:12] Aham.
+[05:13] Aí você pegava esse papel, convertia cada operação num código numérico, controlando as posições de memória de cabeça.
+[05:20] Meu Deus!
+[05:21] E depois furava tudo isso, furinho por furinho, numa fita de papel.
+[05:26] Mas, qual era o custo real, se a pessoa furasse um único dígito errado nessa fita toda?
+[05:31] O custo era perrível, a máquina não reclamava de nada, sabe?
+[05:35] Ela lia o furo errado, somava o número errado e continuava trabalhando.
+[05:40] Não tinha nenhum tipo de aviso?
+[05:41] Nenhum.
+[05:42] Ela apenas entregava um resultado no final, que até parecia plausível, mas estava errado.
+[05:47] Achar esse erro significava pegar a fita inteira e conferir buraco por buraco à mão.
+[05:53] Dias de trabalho jogados fora.
+[05:55] Isso me lembra aquela história super famosa de 1947, já no Mark II.
+[06:00] Ah, história da mariposa.
+[06:02] Essa mesma.
+[06:03] A equipe dela estava trabalhando e a máquina deu problema.
+[06:06] Eles foram procurar e encontraram uma mariposa presa num relé.
+[06:10] Um inseto de verdade.
+[06:12] É, eles tiraram o bicho de lá, colaram a mariposa no caderno de registro e anotaram que era o primeiro bug real encontrado.
+[06:20] Essa história é ótima.
+[06:22] Mas, a gente precisa fazer uma ressalva histórica bem honesta aqui.
+[06:27] Qual?
+[06:28] A palavra bug já era usada muito antes na engenharia para descrever qualquer defeito de equipamento.
+[06:34] Eles não inventaram a palavra ali.
+[06:37] Ah, entendi.
+[06:38] É, a graça da história toda é que, dessa vez, o defeito era, literalmente, um inseto, um bug de verdade.
+[06:44] Não foi ali que a palavra nasceu.
+[06:47] Feita a ressalva.
+[06:48] Bom, vamos ver como eles resolveram essa trabalheira toda de furafita.
+[06:52] Aperte o próximo.
+[06:53] Pessoal, um aviso sobre essa tela.
+[06:55] Tem um botão interativo nela para você acompanhar o nosso raciocínio visualmente.
+[06:59] A tela está mostrando uma tabela de instruções de um lado e a memória da máquina do outro.
+[07:05] O convite é simples.
+[07:06] Escolha uma palavra na tela e veja qual o número sai.
+[07:09] E, enquanto você clica aí, olha bem como funciona a estrutura de uma instrução de máquina.
+[07:15] Ela é, basicamente, um número dividido em duas partes.
+[07:18] Aham, explica melhor.
+[07:19] Um pedaço do número diz para a máquina o que fazer, tipo o comando para somar.
+[07:24] O outro pedaço diz com quem ela deve fazer essa soma.
+[07:27] Que seria o endereço do número na memória.
+[07:30] Exatamente.
+[07:31] Sabe o que eu acho que é o ponto principal aqui desse episódio?
+[07:35] É que essa conversão de uma palavra para o número, ela segue sempre a mesma regra.
+[07:40] Sem tirar nem por.
+[07:41] Pois é, não exige julgamento humano.
+[07:43] Não exige nenhuma criatividade.
+[07:45] É só olhar a tabela e trocar.
+[07:47] E a gente já viu isso várias vezes na nossa série.
+[07:50] Trabalho totalmente mecânico e repetitivo.
+[07:54] É exatamente o que a gente vem passando para a máquina desde a época do hábaco.
+[07:58] Faz todo sentido.
+[08:00] Se a regra é fixa, a máquina faz.
+[08:02] Sim, a máquina é perfeita para isso.
+[08:04] E para ver como a Grace Hopper aplicou essa lógica, aperte o próximo.
+[08:08] Então, a ideia dela foi exatamente essa, né?
+[08:11] Foi.
+[08:12] Ela percebeu que, se a conversão é puramente mecânica,
+[08:16] a gente só precisa escrever um programa que faça essa conversão pela gente.
+[08:20] E foi assim que nasceu o A0.
+[08:22] Exato.
+[08:23] Ela terminou o A0 lá em 1952.
+[08:26] Na época, ela já estava trabalhando na empresa que construiu o Univec.
+[08:29] O programa simplesmente recebia o texto em palavras e devolviu o pródito de máquina pronto.
+[08:35] E aqui a gente precisa usar a nossa única analogia permitida para explicar o A0 direito.
+[08:40] O compilador funciona como um tradutor de um livro.
+[08:44] Boa comparação.
+[08:45] Imagina que você contrata um tradutor.
+[08:48] Ele pega o texto em inglês, trabalha em cima dele inteiro de uma vez, antes da leitura,
+[08:53] e te entrega o livro todo traduzido em português.
+[08:56] Tudo pronto de uma vez só.
+[08:57] Isso.
+[08:58] Ele não é como um intérprete de conferência, sabe?
+[09:00] O intérprete vai traduzindo frase por frase enquanto a conversa está acontecendo.
+[09:04] O compilador faz o serviço pesado antes.
+[09:07] É, e no caso do A0, ele era mais como um montador de bloco, sabe?
+[09:10] Ele pegava trechos de código que já estavam prontos e ia colando um no outro mais do que traduzindo frases muito complexas.
+[09:17] Entendi.
+[09:18] Ele montava o quebra-cabeça.
+[09:20] Mas me diz uma coisa.
+[09:21] Como que uma ideia tão boa e tão óbvia foi recebida na época?
+[09:25] Ah, com muita resistência.
+[09:27] A resistência é super documentada na história.
+[09:29] Sério?
+[09:30] Mas por quê?
+[09:31] As pessoas diziam que computador não entende inglês.
+[09:33] Falavam que computador era máquina de fazer aritmética e pronto.
+[09:37] Não devia ler texto.
+[09:38] Mas tinha algum motivo financeiro legítimo por trás dessa resistência,
+[09:43] ou era só teimosia de engenheiro?
+[09:45] Tinha, tinha sim.
+[09:47] Era um fundo técnico bem legítimo.
+[09:49] Você tem que lembrar que essas máquinas eram absurdamente caras.
+[09:53] Custavam fortunas.
+[09:54] E gastar o tempo precioso da máquina só para ficar traduzindo o texto de humano
+[09:58] parecia um luxo inaceitável.
+[10:00] Claro, a hora da máquina era mais cara que a hora do humano.
+[10:04] Exatamente.
+[10:05] Esse argumento de que era um desperdício só perdeu a força quando o salário,
+[10:09] quando o tempo das pessoas passou a ser mais caro que o tempo de uso da máquina.
+[10:13] A balança financeira virou.
+[10:15] Virou totalmente.
+[10:17] E para a gente entender os benefícios que fizeram todo mundo aceitar o compilador,
+[10:21] aperte o próximo.
+[10:22] Bom, a gente sabe que colocar um tradutor no meio do caminho mudou tudo.
+[10:27] Mudou.
+[10:28] E tem três benefícios práticos gigantescos aí.
+[10:31] Vamos listar um de cada vez.
+[10:32] O primeiro é que o programador agora dá um nome para a posição de memória.
+[10:37] O tradutor é quem decide onde essa posição fica fisicamente.
+[10:40] Ah, então isso acaba com aquele pesadelo de ter que recalcular os endereços numéricos
+[10:45] toda vez que você move uma linha.
+[10:47] Isso mesmo.
+[10:48] Fim do pesadelo.
+[10:49] O segundo benefício é que surge a ideia de biblioteca.
+[10:52] Como assim?
+[10:53] Rotinas prontas passam a ser chamadas só pelo nome.
+[10:56] Você podia pedir para o compilador usar uma rotina de raiz quadrada, por exemplo,
+[11:00] sem precisar saber como ela foi escrita originalmente.
+[11:03] Você só pede e ele puxa da prateleira.
+[11:06] Isso.
+[11:07] Ele injeta o código lá.
+[11:08] E o terceiro benefício acho que é o mais útil no dia a dia.
+[11:11] O tradutor confere o texto inteiro.
+[11:13] Se você digitar alguma coisa errada, que não existe na tadela de comandos,
+[11:17] ele avisa você antes de rodar o programa na máquina de verdade.
+[11:21] Ele barra o erro na porta.
+[11:23] Exato.
+[11:24] Evitando que a máquina perca tempo e de aqueles resultados errados e silenciosos no final.
+[11:29] É a salvação do programador.
+[11:32] Mas tudo tem um custo, né?
+[11:35] Pois é, a qual foi o preço de colocar esse tradutor no meio do circuito.
+[11:38] Sendo bem honesta, o código gerado por um tradutor automático costuma ser um pouquinho pior.
+[11:45] Mas lento.
+[11:46] É um pouco menos otimizado do que o código escrito à mão por um programador superexperiente.
+[11:52] E além disso, a pessoa acaba perdendo aquele contato direto com hardware por dentro.
+[11:57] A pessoa fica mais distante da máquina física.
+[12:00] Sim, ela lida mais com o texto agora.
+[12:03] E para a gente ver para onde essa história de texto foi parar, aperte o próximo.
+[12:07] A gente avança agora para o meio dos anos 50.
+[12:10] E aí surge uma linguagem chamada FlowMatic.
+[12:13] Um marco importante.
+[12:15] Com certeza.
+[12:16] Foi a primeira linguagem que usava palavras de inglês de negócios.
+[12:21] Os comandos pareciam frases estruturadas,
+[12:24] pensadas para quem trabalha com folha de pagamento, com finanças.
+[12:28] Tirou a computação só da mão dos físicos.
+[12:30] Isso.
+[12:31] Abriu para a área administrativa.
+[12:33] E esse FlowMatic preparou o terreno para o que veio logo depois.
+[12:37] Em 1959, um comitê chamado Codaceu se reuniu para criar uma linguagem comum de negócios
+[12:44] para os Estados Unidos inteiros.
+[12:46] E a Grace Hopper estava lá, né?
+[12:47] Tava sim.
+[12:48] Ela participou como consultora técnica desse comitê.
+[12:51] E o que saiu dali foi o famosíssimo Cobol.
+[12:54] Que herdou quase tudo do FlowMatic.
+[12:56] E um dado assustador é que o Cobol continua rodando até hoje.
+[13:00] Firme e forte.
+[13:01] Sim, se você for em um banco hoje, ou olhar sistemas de governo,
+[13:05] as operações mais pesadas ainda estão rodando em cima de Cobol.
+[13:08] Isso mostra o impacto absurdo do que eles criaram ali.
+[13:12] E se a gente for resumir o efeito disso tudo,
+[13:15] dá para dizer que a partir desse momento, a torre de abstração nunca mais parou de crescer.
+[13:20] Como assim?
+[13:21] Torre de abstração.
+[13:22] É que cada linguagem nova que inventam se apoia na anterior.
+[13:26] Elas vão escondendo cada vez mais a máquina.
+[13:29] Forma um monte de camadas de tradução.
+[13:31] Mas lá no fundo?
+[13:32] Lá no fundo essas camadas descem até chegar no binário original.
+[13:36] A fundação de tudo ainda é zeros e uns.
+[13:39] E a gente vai colocar isso em prática agora.
+[13:41] Aperte o próximo.
+[13:42] Chegamos na tela de prática.
+[13:44] Então eu vou fazer um convite.
+[13:46] Pause o áudio rapidinho.
+[13:48] Use o editor de texto que está aí na tela para escrever três linhas
+[13:52] usando palavras de comando e depois aperte o botão de traduzir.
+[13:56] E eu vou dar uma sugestão extra.
+[13:58] Escreva uma linha errada de propósito no meio.
+[14:01] Boa ideia.
+[14:02] Digite algo que não existe.
+[14:04] Só para você ver o tradutor reclamar e apontar o seu erro na hora
+[14:07] antes da máquina tentar rodar.
+[14:09] Vamos dar um segundinho para você pausar.
+[14:13] Bom, depois de ver isso funcionando, a grande lição da tela fica clara.
+[14:18] Ninguém apagou o binário.
+[14:20] Ele continua vivinho da Silva.
+[14:22] Pois é.
+[14:23] O binário continua lá embaixo recebendo pulsos elétricos e operando o hardware.
+[14:29] A única mudança real é que agora a gente tem um programa
+[14:32] fazendo aquele trabalho repetitivo de conversão por nós.
+[14:35] E para a gente amarrar essa história toda aperte o próximo.
+[14:39] Chegamos ao fim da jornada.
+[14:41] Fazendo uma recapitulação rápida do nosso arco, a gente começou lá em 1944.
+[14:47] A programação era feita em papel e vita, onde um errinho de nada custava sua tarde inteira.
+[14:52] Um sofrimento.
+[14:53] Aí em 1952 o A0 apareceu e provou que a gente podia usar um programa
+[14:59] para montar outro programa.
+[15:01] Depois, no meio dos anos 50, o Flowmatic trouxe as palavras do mundo dos negócios.
+[15:06] Até que, em 1959, o comitê Kodassil criou o Kobol,
+[15:11] que abraçou o mercado e não largou mais por décadas.
+[15:14] E com esse resumo, nós fechamos oficialmente a etapa
+[15:18] o primeiro computador moderno.
+[15:21] Foram três episódios cobrindo muita coisa.
+[15:24] A gente viu o computador sair dos projetos de papel
+[15:27] para virar uma máquina real de metal.
+[15:29] Sim.
+[15:30] A gente viu o programa indo morar dentro da memória
+[15:33] e por fim hoje o abandono da escrita direta na mão em código binário.
+[15:37] O que fecha conta exatamente no ano de 1959.
+[15:41] Esse é o onem que a nossa etapa para.
+[15:43] E para preparar o terreno para o que vem pela frente, a gente deixa um último pensamento.
+[15:47] Apesar de todo esse avanço mental lógico no software,
+[15:51] a máquina física ainda era um monstro.
+[15:53] Gigantesca, né?
+[15:55] Um salão enorme, forrado de válvulas de vidro que esquentavam, gastavam muita energia
+[16:00] e queimavam o tempo todo.
+[16:02] Era o limite físico batendo na porta.
+[16:05] Sim.
+[16:06] Mas a boa notícia é que na nossa próxima etapa o cenário muda.
+[16:10] Três pessoas no laboratório de telefonia vão mostrar um pedacinho minúsculo de material sólido
+[16:16] e esse pedacinho faz exatamente o serviço da válvula.
+[16:20] Só que melhor.
+[16:21] Muito melhor.
+[16:22] Sem filamento, sem vidro e sem gerar aquele calor infernal.
+[16:26] É a partir desse dia que a máquina para de crescer e só encole.
+[16:31] E é com essa promessa que a gente encerra por hoje.
+[16:33] Obrigado por acompanhar e até a próxima etapa.

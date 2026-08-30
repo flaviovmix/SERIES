@@ -1,0 +1,7 @@
+Titulo: O nascimento do computador universal no papel
+Notebook: 06-05-Montando o computador completo
+
+Descricao:
+Montando o Computador Completo descreve o encerramento de uma fase teórica que reconstrói a evolução da computação entre 1936 e 1945. O conteúdo detalha como transformar conceitos abstratos de Turing em componentes lógicos práticos, como o acumulador, o contador e uma memória organizada. As fontes explicam o funcionamento de um conjunto básico de cinco códigos binários que permitem à máquina executar operações e tomar decisões. O texto enfatiza a distinção fundamental entre hardware, os circuitos físicos de relés, e software, as instruções programáveis armazenadas. Ao final, demonstra-se que essa arquitetura no papel é um computador universal, possuindo a mesma capacidade lógica das máquinas modernas. Este material serve como roteiro para uma experiência multimídia que conecta a teoria matemática ao nascimento dos primeiros computadores reais.
+
+Link: https://notebook.google.com/notebook/ee75a056-57ef-4879-b6a7-1941804e8795

@@ -1,0 +1,758 @@
+# Transcricao automatica (faster-whisper small) - 27.4 min
+# Fonte: c:\src\PODCAST\01 - SÉRIE\Como Reinventar o Computador do Zero\04 - Domesticando o raio\01 - A faísca\Do âmbar ao raio de Benjamin Franklin.mp3
+
+[00:00] Inicia dizendo a faísca.
+[00:02] Imagina a seguinte cena, tipo no pátio de um mosteiro na França.
+[00:06] Tá, tô imaginando.
+[00:07] 200 monges estão de pé ali e formando um círculo humano gigantesco de quase 2 quilômetros.
+[00:14] Nossa, 2 quilômetros de monges.
+[00:17] Isso.
+[00:18] E eles estão de mãos dadas num silêncio absoluto.
+[00:21] Aí no centro tem um homem segurando um frasco de vidro.
+[00:24] Um frasco com água e um pedaço de metal.
+[00:27] Ele conecta as pontas desse arranjo aos monges das duas pontas da fila.
+[00:32] E tipo no exato mesmo milisegundo, todos os 200 homens dão um grito e pulam no ar com torcidos de dor.
+[00:39] Caramba.
+[00:40] Pois é.
+[00:41] E olha, não foi feitiçaria, não foi um milagre e não teve nenhum truque de espelhos.
+[00:45] Foi apenas uma força invisível atravessando 200 corpos ao mesmo tempo.
+[00:51] É uma cena muito louca de se pensar.
+[00:53] Muito.
+[00:54] E com isso a gente acabou de fechar uma fase muito longa da nossa série sobre como reinventar o computador do zero.
+[01:00] Onde tudo era bem palpável.
+[01:02] A gente falou de hábacos, de engrenagens de metal, de alavancas.
+[01:06] Sim, a gente terminou lá na máquina analítica de Bebed.
+[01:09] Exato.
+[01:10] Mas agora a mecânica fica para trás de vez.
+[01:14] Fica mesmo.
+[01:15] Nós vamos abrir um capítulo totalmente novo na nossa investigação hoje.
+[01:19] Essa é a nova etapa da nossa série e nós a chamamos de Domesticando Raio.
+[01:24] Domesticando Raio, adorei.
+[01:26] Serão sete partes no total e a mudança aqui é drástica.
+[01:30] O nosso material de trabalho não é mais madeira ou latão, sabe?
+[01:35] Nós vamos começar olhando para essa exata força invisível que fez os monjes pularem.
+[01:40] Uma força que durante séculos ninguém no mundo inteiro sabia como usar.
+[01:45] E para você que está acompanhando a gente, essa etapa tem uma mecânica especial para ajudar nessa visualização.
+[01:52] Este roteiro acompanha uma página interativa de oito telas.
+[01:57] Isso mesmo.
+[01:58] A lógica de navegação é bem simples.
+[02:00] Para a gente manter a sincronia sempre que for a hora certa nós vamos pedir
+[02:05] e aí você deve apertar o botão próximo na sua tela.
+[02:08] Até um momento de prática no meio do caminho.
+[02:10] Sim, um momento onde você vai poder testar o que aprendeu.
+[02:13] E olha, eu já quero deixar todo mundo muito tranquilo logo de cara.
+[02:17] Se você não estiver com a página aberta agora, se estiver, sei lá, camunhando, lavando louça,
+[02:22] não tenho menor problema.
+[02:24] Nem um problema.
+[02:25] Dá para acompanhar os conceitos e a física por trás de tudo perfeitamente,
+[02:29] apenas ouvindo o nosso áudio.
+[02:31] Com certeza.
+[02:32] Tudo o que importa vai ser explicado em detalhes aqui.
+[02:35] É uma investigação conjunta sobre como a humanidade aprendeu a enxergar o invisível.
+[02:40] Perfeito.
+[02:41] Então, para a gente dar o nosso primeiro passo oficial nessa história,
+[02:45] por favor, aperte o próximo.
+[02:47] Bom, para começar, nós precisamos definir as bases físicas e históricas
+[02:51] do que vamos investigar hoje, né?
+[02:53] A nossa ficha técnica foca em um assunto muito específico.
+[02:56] Que é a eletricidade estática.
+[02:59] Exato. A eletricidade estática.
+[03:01] O período que nós vamos cobrir vai do ano de 1600
+[03:05] com a publicação do livro do pesquisador inglês,
+[03:08] William Gilbert, até o ano de 1752.
+[03:12] Que termina com aquele famoso experimento da pipa do Benjamin Franklin, certo?
+[03:16] Isso, exatamente.
+[03:18] Olha, eu preciso confessar que essa janela de tempo
+[03:21] me causou um choque de realidade gigante quando eu li as nossas fontes.
+[03:26] É, o tempo é longo.
+[03:27] Muito longo.
+[03:29] A gente está falando de 150 anos.
+[03:32] É um século e meio inteiro de pessoas brilhantes dedicando a vida
+[03:37] o tempo e o dinheiro delas para estudar eletricidade
+[03:41] mas sem ter absolutamente nenhuma aplicação prática no final do dia.
+[03:45] Nenhuma mesmo. Zero aplicação comercial.
+[03:47] Eu fiquei pensando, se a gente pensar na lógica do mundo
+[03:50] não tinha nenhuma indústria esperando por essas descobertas?
+[03:53] Não, não tinha.
+[03:55] Não existia uma fábrica encomendando pesquisa para melhorar um produto?
+[03:59] Não tinha nenhum rei exigindo uma arma nova para ganhar uma guerra?
+[04:03] Como que você sustenta 150 anos de pesquisa sobre algo que na prática
+[04:08] não servia para nada?
+[04:10] Essa pergunta é excelente.
+[04:12] E essa é a essência do início da ciência moderna, sabe?
+[04:15] A resposta curta é
+[04:17] por e simples curiosidade sobre um efeito estranho que eles viam.
+[04:21] Curiosidade pura.
+[04:23] Eles notaram que uma força invisível
+[04:25] aparecia donada ao esfregar certos materiais.
+[04:28] Hoje nós chamamos isso de física, né?
+[04:30] Mas na época eles chamavam de filosofia natural.
+[04:33] Filosofia natural. Acho chique.
+[04:35] Eles queriam entender as regras secretas da natureza.
+[04:39] A base absoluta de toda tecnologia moderna,
+[04:42] a energia que move o mundo de hoje,
+[04:45] nasceu literalmente de pessoas em salas escuras
+[04:48] esfregando pedras amarelas e pedaços de vidro.
+[04:51] Documentando cada pequena faísca.
+[04:53] Isso.
+[04:54] Eles estavam brincando de catalogar o universo
+[04:56] sem saber para onde aquilo ia dar.
+[04:58] Exatamente.
+[04:59] A ciência básica muitas vezes
+[05:01] não tem o objetivo comercial imediato.
+[05:03] O objetivo ali era apenas o conhecimento em si.
+[05:06] Nossa, muito bom.
+[05:07] E para entender como essa busca pelo conhecimento começou, aperte o próximo.
+[05:11] Então, para entender o primeiro sinal dessa força,
+[05:13] a gente precisa voltar muito do tempo.
+[05:15] Bem antes de 1600.
+[05:17] Bem antes.
+[05:18] Precisamos ir até o primeiro material que provou para a humanidade
+[05:22] que existia algo invisível atuando no mundo.
+[05:27] Nós voltamos para o ano 600 a.C.
+[05:30] Grécia antiga, né?
+[05:32] Isso, na Grécia, com tales de mileto.
+[05:35] A história começa quando ele reparou que o âmbar
+[05:38] tem uma propriedade oculta.
+[05:40] E o âmbar, só para lembrar,
+[05:42] é uma resina de árvore fossilizada.
+[05:44] Exato.
+[05:45] Uma pedra amarela e meio-translúcida.
+[05:47] O tales percebeu que quando essa pedra é esfregada vigorosamente
+[05:52] num pedaço de pano ou pele de animal,
+[05:55] ela atrai coisas leves para perto dela.
+[05:58] Tipo palha seca e fiapos de tecido.
+[06:01] Isso.
+[06:02] E o mais estranho de tudo isso,
+[06:04] a investigação humana praticamente parou por aí.
+[06:07] Isso me deixou chocada.
+[06:09] Dois mil anos se passaram.
+[06:11] Ninguém avançou um milímetro além do que o talho de mileto viu.
+[06:14] Nada.
+[06:15] O efeito do âmbar era tratado como um mero truque de salão.
+[06:19] Você pegava a pega amarela, esfregava, puxava um pedaço de palha
+[06:22] e os convidados aplaudiam achando graça.
+[06:24] Exatamente.
+[06:25] A mudança só acontece de verdade no ano de mil seiscentos na Inglaterra.
+[06:29] Aí sim entra o William Gilbert.
+[06:31] Isso.
+[06:32] William Gilbert era o médico pessoal da rainha Elizabeth
+[06:36] e ele publicou um livro muito influente chamado The Magnet.
+[06:40] Que era sobre magnetismo.
+[06:41] Sim.
+[06:42] O foco do livro era o magnetismo.
+[06:44] Mas o Gilbert fez uma separação crucial ali
+[06:46] que destravou o estudo da eletricidade de vez.
+[06:49] Ele provou que um imã comum e o âmbar esfregado
+[06:53] operam sobre regras físicas completamente diferentes.
+[06:56] Mas espera, como que ele provou isso?
+[06:58] Porque, sei lá, para um observador casual daquela época
+[07:01] os dois parecem fazer a mesma coisa, né?
+[07:03] O imã puxa coisas e o âmbar puxa coisas.
+[07:06] Era muito fácil achar que era tudo a mesma força invisível agindo.
+[07:10] Faz sentido pensar assim, mas o Gilbert foi muito metódico
+[07:13] e observou os mecanismos dessa atração.
+[07:16] Ele documentou que o imã atrai exclusivamente metais específicos, tipo o ferro.
+[07:22] E ele não precisa ser estimulado.
+[07:24] A força magnética está sempre lá.
+[07:26] Pronta.
+[07:27] Já o âmbar tem regras bem diferentes.
+[07:29] Ele exige atrito para funcionar, né?
+[07:31] Isso.
+[07:32] Sem esfregar, nada acontece.
+[07:34] É só uma pedra.
+[07:35] Além disso, o âmbar atrai qualquer material leve,
+[07:38] não apenas metal.
+[07:39] Ele puxa cabelo, papel, fiapo.
+[07:42] Entendi.
+[07:43] E o detalhe mais importante de todos,
+[07:45] o âmbar perde o efeito rapidamente.
+[07:48] A força meio que se dissipa no ar
+[07:50] e a pedra volta a ser apenas uma pedra comum.
+[07:53] Olha, tem um detalhe no trabalho do Gilbert
+[07:55] que moldou o nosso vocabulário para sempre.
+[07:58] A palavra âmbar em grego clássico é eléctron.
+[08:01] E como o Gilbert estava escrevendo
+[08:04] para descrever esse efeito específico
+[08:07] de atrair coisas após o atrito,
+[08:09] ele chamou o efeito de elétrico.
+[08:12] É genial.
+[08:13] A palavra que a gente usa hoje o tempo todo
+[08:15] para falar de rede de alta tensão,
+[08:17] chuveiros dos nossos computadores,
+[08:19] ela significa, de forma literal e direta,
+[08:22] tipo, coisa de âmbar.
+[08:24] Toda a nossa era da informação
+[08:26] carrega o nome de uma resira de árvore.
+[08:28] É, e o Gilbert não parou apenas em dar o nome.
+[08:31] Ele precisava de uma forma padronizada
+[08:33] de medir esse efeito elétrico.
+[08:35] Então, ele montou o primeiro detector da história.
+[08:38] Sério?
+[08:39] Como era isso?
+[08:40] Ele chamou de versório.
+[08:42] Era tipo uma agulha de metal muito leve,
+[08:44] equilibrada num pino central,
+[08:46] livre para girar para os lados.
+[08:48] Quando ele aproximava algo eletrizado dessa agulha,
+[08:51] ela girava rapidamente na direção do objeto.
+[08:54] Ah, entendi.
+[08:55] Funcionava como uma bússola de eletricidade.
+[08:58] Mais ou menos isso.
+[09:00] E usando esse detector,
+[09:01] ele testou vários materiais
+[09:03] e provoquiu vidro e o enxofre
+[09:05] quando esfregados criavam
+[09:07] exatamente o mesmo campo de atração que o âmbar.
+[09:10] Ou seja, a força não morava
+[09:12] apenas dentro da pedra amarela.
+[09:14] Não.
+[09:15] Ela era uma propriedade oculta
+[09:16] que podia ser acordada em vários materiais diferentes.
+[09:19] Bastava aplicar atrito neles.
+[09:21] Exato.
+[09:22] Mas, mesmo sabendo disso,
+[09:24] eles ainda tinham um problema.
+[09:25] Qual?
+[09:26] A força aparecia,
+[09:27] mas ela ficava presa no exato lugar
+[09:29] onde o material tinha sido esfregado.
+[09:31] Ela não se movia.
+[09:32] Nossa!
+[09:33] E para ver como eles resolveram isso,
+[09:35] aperte o próximo.
+[09:36] Bom, com a ciência ciente
+[09:38] de que o efeito elétrico existia em vários materiais,
+[09:42] a dúvida passou a ser sobre
+[09:44] a mobilidade dessa coisa toda.
+[09:46] Essa energia fica sempre parada
+[09:48] no ponto de atrito?
+[09:49] E a resposta para isso
+[09:50] demorou mais um século para chegar.
+[09:52] Demorou.
+[09:53] Nós avançamos para o ano de 1729 agora
+[09:56] com o pesquisador inglês chamado Stephen Gray.
+[09:59] A grande descoberta física do Gray
+[10:02] foi provar que a eletricidade viaja.
+[10:04] É, nossa!
+[10:05] O mecanismo que ele usou para provar isso
+[10:07] é muito engenhoso.
+[10:09] Ele pegou um tubo de vidro comprido,
+[10:11] mas ele não esfregou o tubo inteiro.
+[10:13] Ele eletrizou apenas uma das pontas do tubo.
+[10:16] Isso.
+[10:17] Aí ele amarrou um fio bem longo nessa ponta eletrizada
+[10:20] e percebeu que o efeito de atrair as palhas
+[10:22] surgia lá na outra ponta do fio,
+[10:24] há muitos metros de distância
+[10:26] de onde ele tinha aplicado o atrito.
+[10:28] A força tipo escorreu pelo material.
+[10:30] Escorreu perfeitamente.
+[10:32] O Gray percebeu que tinha tropeçado
+[10:34] em uma nova propriedade física
+[10:36] e começou a testar exaustivamente material por material
+[10:39] para ver por onde essa força passava
+[10:42] e por onde ela não passava de jeito nenhum.
+[10:44] E o que ele achou?
+[10:46] Ele descobriu que o efeito atravessava lindamente
+[10:48] pedaços de metal e até barbantes úmidos.
+[10:51] Mas a força parava instantaneamente
+[10:53] se ele colocasse ceda ou vidro no meio do caminho.
+[10:56] Caramba!
+[10:57] A diferença técnica e física
+[10:59] entre um condutor e um isolante
+[11:01] foi mapeada bem ali, né?
+[11:03] Isso dá um peso enorme para a palavra fio.
+[11:05] Com certeza.
+[11:06] Fio deixou de ser algo usado
+[11:08] apenas para amarrar pacotes em carroças
+[11:10] ou fazer roupas.
+[11:11] Um fio se tornou um caminho
+[11:13] construído de propósito
+[11:15] para transportar uma força invisível
+[11:17] de um ponto A para um ponto B.
+[11:19] E o que acontece fisicamente ali
+[11:21] só para esclarecer
+[11:22] é que os materiais condutores
+[11:24] permitem que essa perturbação elétrica
+[11:26] se propague pela estrutura interna
+[11:28] deles livremente.
+[11:29] Tá. E os isolantes?
+[11:30] Os materiais isolantes
+[11:32] são uma estrutura interna
+[11:34] que bloqueia essa propagação.
+[11:36] O atrito no vidro criava
+[11:38] o desequilíbrio elétrico
+[11:40] e o fio de metal oferecia uma estrada livre
+[11:42] para esse desequilíbrio tentar se espalhar.
+[11:44] Olha, as fontes mencionam uma
+[11:46] demonstração visual muito bizarra
+[11:48] que o Stephen Gray fazia para provar isso.
+[11:50] Ah, do menino?
+[11:51] Sim, do menino.
+[11:53] Ele literalmente pegava um menino,
+[11:55] uma criança mesmo,
+[11:57] e suspendia o garoto no ar
+[11:59] usando cordas de ceda presas no teto.
+[12:01] Ele ficava lá deitado, flutuando, pendurado.
+[12:03] Imagina a cena.
+[12:05] Aí o Gray esfregava o seu tubo de vidro
+[12:07] para criar a carga elétrica
+[12:09] e encostava o tubo no pé do menino.
+[12:11] Qual era o papel do menino nisso tudo?
+[12:13] Então, porque a ceda e porque o menino, né?
+[12:15] A ceda era o isolante.
+[12:17] Ela servia para segurar o corpo no ar
+[12:19] sem deixar a eletricidade escapar
+[12:21] e se dissipar em direção ao chão da sala
+[12:23] o que estragaria o teste.
+[12:25] Ah, entendi.
+[12:26] O corpo humano do menino atuava
+[12:28] como o próprio fio condutor.
+[12:30] Ele atuava pelo pé dele,
+[12:32] viajava através do corpo
+[12:34] e saía pelas mãos,
+[12:36] gerando pequenas faíscas
+[12:38] que atraíam folhas finas de metal
+[12:40] que o Gray soltava no ar
+[12:42] bem perto dos dedos da criança.
+[12:44] Que loucura.
+[12:46] Se você olhar para nossa tela interativa agora,
+[12:48] você vai ver botões de teste ali.
+[12:50] Nós convidamos você a testar
+[12:52] o envio dessa carga elétrica pelo caminho.
+[12:54] Tenta apertar o botão para usar o fio de metal
+[12:56] e depois tenta usar a corda de ceda.
+[12:58] Você visualmente na tela
+[13:00] acaba passando livremente pelo condutor
+[13:02] e parando imediatamente
+[13:04] quando encontra o isolante.
+[13:06] E essa distinção exata
+[13:08] entre conduzir e isolar
+[13:10] é basicamente o coração
+[13:12] de todos os circuitos elétricos
+[13:14] e eletrônicos que existem hoje, né?
+[13:16] É a fundação de tudo.
+[13:18] Sem isso, nada feito.
+[13:20] Quando terminar de testar os dois materiais
+[13:22] aí na tela, aperte o próximo.
+[13:24] Nós vimos que a eletricidade viaja
+[13:26] através de condutores,
+[13:28] mas havia um defeito grave
+[13:30] limitando qualquer avanço real na época.
+[13:32] Qual?
+[13:34] Essa força só existia enquanto alguém
+[13:36] estivesse ativamente suando
+[13:38] e esfregando o material de vidro.
+[13:40] Assim que a pessoa cansava
+[13:42] e parava de esfregar, a força desaparecia.
+[13:44] Não tinha como guardar o trabalho feito?
+[13:46] Sim. O próximo passo lógico
+[13:48] para a ciência era descobrir
+[13:50] como estocar isso de alguma forma.
+[13:52] E a invenção para resolver isso
+[13:54] foi realmente por duas pessoas
+[13:56] quase ao mesmo tempo, entre 1745
+[13:58] e 1746.
+[14:00] Sim, o EWald von Kleist
+[14:02] na Alemanha e o Peter van Muchenbroek
+[14:04] na cidade de Leiden, na Holanda.
+[14:06] O aparelho que eles criaram
+[14:08] parecia simples demais para o que fazia, né?
+[14:10] Eles pegaram um frasco de vidro
+[14:12] encheram parcialmente com a água
+[14:14] tamparam com uma rola de cortiça
+[14:16] e atravessaram um prego de metal longo
+[14:18] pela rola até a ponta mergulhar na água.
+[14:20] É uma montagem bem caseira.
+[14:22] Muito. O processo era o seguinte
+[14:24] o pesquisador segurava o vidro
+[14:26] por fora com uma das mãos
+[14:28] com a outra mão
+[14:30] ele encostava o prego
+[14:32] em uma máquina de vidro giratória
+[14:34] que estava sendo constantemente esfregada
+[14:36] para gerar carga
+[14:38] a carga entrava pelo prego
+[14:40] e ia direto para a água.
+[14:42] Mas como um vidro com água
+[14:44] guarda eletricidade?
+[14:46] A gente sabe que a seda
+[14:48] isola, então por que a carga
+[14:50] simplesmente não fugia do vidro?
+[14:52] Então o segreto está na física dos materiais
+[14:54] que eles escolheram ali
+[14:56] A água dentro do vidro
+[14:58] é um condutor. Certo?
+[15:00] A mão do pesquisador suada segurando
+[15:02] o lado de fora também é um condutor
+[15:04] mas o vidro que fica
+[15:06] bem entre a água e a mão
+[15:08] é um isolante perfeito
+[15:10] A carga elétrica
+[15:12] entrava na água e tentava
+[15:14] desesperadamente chegar até a mão do
+[15:16] pesquisador do lado de fora
+[15:18] mas o vidro não deixava a carga passar
+[15:20] Ah, entendi!
+[15:22] Isso criava uma tensão elétrica imensa
+[15:24] preso ali no meio. A energia ficava
+[15:26] estocada sob extrema pressão física
+[15:28] dentro da garrafa.
+[15:30] E o momento da liberação dessa pressão era brutal, né?
+[15:32] O experimento terminava quando
+[15:34] o pesquisador tirava a máquina de atrito
+[15:36] e encostava a mão livre dele
+[15:38] diretamente no prego de metal
+[15:40] que estava ligado na água.
+[15:42] Ao fazer isso, o próprio corpo do pesquisador
+[15:44] servia de ponte, permitido
+[15:46] que a carga retida na água
+[15:48] finalmente encontrasse um caminho livre
+[15:50] O resultado era um choque violento
+[15:52] Nossa!
+[15:54] Uma pancada no corpo todo capaz de derrubar
+[15:56] um homem adulto no chão tremendo de dor
+[15:58] O mochembruque ficou tão assustado
+[16:00] com a convulsão que ele sofreu
+[16:02] que escreveu numa carta aos colegas
+[16:04] que não repetiria a dose
+[16:06] nem que dessem a ele todo reino da França
+[16:08] Eu não culpo ele, Deus me livre
+[16:10] Esse frasco perigoso ficou famoso
+[16:12] em toda a Europa como a garrafa
+[16:14] de Leiden
+[16:16] Pensa na garrafa exatamente como um balde
+[16:18] Você coloca a mangueira ali
+[16:20] e o balde enche de vagar
+[16:22] Gota a gota
+[16:24] A água vai subindo bem aos poucos
+[16:26] Mas na hora que você precisa esvaziar
+[16:28] o balde vira e derruba
+[16:30] absolutamente tudo de uma vez só
+[16:32] no chão
+[16:34] Num instalo muito alto
+[16:36] Não! Não existe a menor possibilidade
+[16:38] de abrir uma torneirinha e deixar a eletricidade
+[16:40] escorrer devagarinho de forma contínua
+[16:42] e controlada
+[16:44] A garrafa acumula lentamente
+[16:46] mas devolve tudo no mesmo milisegundo
+[16:48] É tudo ou nada
+[16:50] E foi exatamente essa liberação instantânea
+[16:52] e maciça
+[16:54] que permitiu o experimento do abade
+[16:56] Janto Ainolet
+[16:58] em 1746
+[17:00] que nós mencionamos no início de tudo
+[17:02] O dos monges
+[17:04] Esse mesmo, ele enfilerou os 200 monges
+[17:06] no pátio, todos de mãos dadas
+[17:08] e descarregou uma garrafa de Leiden
+[17:10] O fato de todos pularem juntos
+[17:12] no mesmo instante
+[17:14] provou publicamente que a eletricidade
+[17:16] estocada viaja em frações de segundo
+[17:18] por longas distâncias
+[17:20] quando encontra um caminho condutor e ininterrupto
+[17:22] E, voltando para nossa tela interativa
+[17:24] você vai ver o aparelho desenhado lá
+[17:26] Nós convidamos você a testar
+[17:28] a carga e a descarga da garrafa
+[17:30] apertando os botões na tela
+[17:32] para ver a fila de personagens
+[17:34] reagir a esse choque coletivo
+[17:36] Observe ali como o carregamento exige tempo
+[17:38] mas a descarga é completamente imediata
+[17:40] Depois de ver a fila pular na sua tela
+[17:42] aperte o próximo
+[17:44] Com essas faíscas fortes instalando nos laboratórios europeus
+[17:46] cheirando a queimado
+[17:48] e derrubando pessoas no chão
+[17:50] era só uma questão de tempo até alguém
+[17:52] com o olhar analítico
+[17:54] olhar para o céu durante uma tempestade forte
+[17:56] e somar dois mais dois, né?
+[17:58] Com certeza! E quem fez essa soma foi Benjamin Franklin
+[18:00] do outro lado do oceano
+[18:02] lá nos Estados Unidos
+[18:04] O Franklin foi muito criterioso na observação física
+[18:06] Ele listou os paralelos exatos
+[18:08] entre a faísca que saía da garrafa de Leiden
+[18:10] e o raio natural das tempestades
+[18:12] O que ele notou de igual
+[18:14] Ele apontou a emissão de luz brilhante
+[18:16] o som de estalo intenso
+[18:18] em diferentes escalas
+[18:20] o cheiro peculiar que fica no ar depois do choque
+[18:22] e a tendência muito nítida
+[18:24] que as duas coisas tinham de procurar
+[18:26] e atingir pontas de metal
+[18:28] Faz todo sentido
+[18:30] Baseado nessa física compartilhada
+[18:32] ele propôs um teste radical
+[18:34] colocar uma haste comprida de metal
+[18:36] apontada diretamente para o céu
+[18:38] carregado durante uma tempestade
+[18:40] e ver se o metal puxava a mesma faísca
+[18:42] E um francês chamado Thomas François
+[18:44] d'Alibar
+[18:46] leu os textos do Franklin
+[18:48] e executou a ideia primeiro
+[18:50] em maio de 1752
+[18:52] na França
+[18:54] Ele montou a haste, esperou o tempo fechar
+[18:56] e conseguiu extrair faíscas reais
+[18:58] de uma nuvem passando por cima dele
+[19:00] funcionou mesmo
+[19:02] A sequência o próprio Franklin fez
+[19:04] a sua versão do teste usando a famosa
+[19:06] pipa com uma chave de metal
+[19:08] amarrada na linha durante a chuva
+[19:10] Ficou definitivamente provado
+[19:12] sem sombra de dúvida
+[19:14] que o raio violento da natureza
+[19:16] é a mesmíssima força
+[19:18] contida na garrafa de Leiden
+[19:20] O fenômeno é idêntico
+[19:22] apenas a escala muda
+[19:24] Me diz uma coisa, quais foram os impactos
+[19:26] diretos e práticos dessa descoberta?
+[19:28] Tiveram duas consequências principais
+[19:30] A primeira foi prática mesmo
+[19:32] a invenção do para-raios
+[19:34] para proteger prédios e navios
+[19:36] foi o primeiro uso verdadeiramente útil
+[19:38] da eletricidade pela humanidade
+[19:40] Ah claro, e a segunda?
+[19:42] A segunda é de vocabulário
+[19:44] O Franklin propôs a teoria
+[19:46] de que a eletricidade não era apenas
+[19:48] um atrito mágico
+[19:50] mas sim um fluido único presente na natureza
+[19:52] ele argumentou que
+[19:54] quando você esfrega algo
+[19:56] você está empurrando esse fluido
+[19:58] sobra, do outro lado, o fluido falta
+[20:00] e ele batizou o estado
+[20:02] onde o fluido sobra de positivo
+[20:04] e o estado onde o fluido falta
+[20:06] de negativo
+[20:08] Positivo e negativo, os exatos termos
+[20:10] que nós lembramos na lateral
+[20:12] de qualquer pilha até hoje
+[20:14] mas olha
+[20:16] lidando com os raios reais das tempestades
+[20:18] os testes ultrapassaram os limites
+[20:20] da segurança muito rápido
+[20:22] demais! A eletricidade mostrou
+[20:24] seu poder letal
+[20:26] de 1753
+[20:28] um cientista chamado George Richmond
+[20:30] estava na Rússia com uma montagem
+[20:32] bem semelhante a do Franklin
+[20:34] tentando isolar e medir a eletricidade
+[20:36] vinda das novas pesadas
+[20:38] Nossa, que houve!
+[20:40] Durante o teste, um raio atingiu
+[20:42] a haste dele e uma faísca
+[20:44] imensa viajou pelo equipamento
+[20:46] e atingiu o Richmond diretamente
+[20:48] na cabeça
+[20:50] Ele morreu instantaneamente
+[20:52] A eletricidade que, por milênios
+[20:54] foi uma brincadeira para puxar fiapos de palha
+[20:56] cobrou seu preço ao revelar
+[20:58] que era uma força da natureza
+[21:00] capaz de matar
+[21:02] Deixou de ser uma brincadeira de salão
+[21:04] eles provaram de onde a força
+[21:06] vinha e entenderam os riscos
+[21:08] enormes
+[21:10] Para ver como eles lidaram com as regras de segurança
+[21:12] e os materiais agora, aperte o próximo
+[21:14] Bom, nós chegamos agora
+[21:16] na nossa tela de prática
+[21:18] nós queremos que você pause este áudio
+[21:20] agora mesmo para interagir
+[21:22] o que está montado aí na sua tela
+[21:24] É um cenário de laboratório histórico
+[21:26] baseado nas regras físicas que nós discutimos aqui
+[21:28] A missão é a seguinte
+[21:30] A fila dos monges do Abad Nolet
+[21:32] está ali na tela, esperando
+[21:34] O seu trabalho é escolher o material
+[21:36] que vai ligar as mãos de um personagem
+[21:38] ao outro
+[21:40] Você tem os botões para selecionar fio
+[21:42] de metal ou corda de sida
+[21:44] Você precisa preencher as conexões
+[21:46] da fila inteira
+[21:48] E depois que os materiais estiverem
+[21:50] certo, você deve carregar a garrafa
+[21:52] de Leiden na máquina e acionar a descarga
+[21:54] Lembre da física envolvida
+[21:56] O objetivo
+[21:58] é fazer o choque chegar até o último monge
+[22:00] A carga retida na garrafa
+[22:02] precisa de um caminho desobstruído
+[22:04] para tentar neutralizar
+[22:06] o seu desequilíbrio elétrico
+[22:08] Exato, se você colocar uma corda de sida
+[22:10] em qualquer lugar no meio do caminho
+[22:12] a física dita que o choque
+[22:14] para exatamente ali
+[22:16] Ele não consegue atravessar o isolante
+[22:18] e apenas os primeiros monges da fila
+[22:20] vão sentir o efeito e pular
+[22:22] Se você errar na montagem, não precisa se preocupar, tá?
+[22:24] Basta trocar a ligação
+[22:26] clicando novamente no material
+[22:28] e tentar carregar e descarregar a garrafa
+[22:30] mais uma vez
+[22:32] Faça os testes aí
+[22:34] Entenda onde a carga flui
+[22:36] e onde ela é bloqueada de vez
+[22:38] Assim que você conseguir fazer a fila
+[22:40] inteira pular junta
+[22:42] exatamente ao mesmo tempo
+[22:44] você volta aqui e dá play no áudio
+[22:46] pode pausar
+[22:48] Muito bem, agora que você completou o caminho
+[22:50] com sucesso e entendeu
+[22:52] o fluxo da carga na prática
+[22:54] aperte o próximo
+[22:56] O nosso exercício prático
+[22:58] demonstrou perfeitamente como o mundo
+[23:00] dominou as regras de trânsito dessa força
+[23:02] Sim, e para amarrar tudo o que aconteceu
+[23:04] nesse longo período histórico
+[23:06] a evolução é muito lógica de acompanhar
+[23:08] O âmbar esfregado
+[23:10] mostra a atração inicial
+[23:12] Aí o Gilbert batiza isso de elétrico
+[23:14] e separa de vez do ímã natural
+[23:16] O Gray descobre que a força
+[23:18] flui e classifica o mundo
+[23:20] entre materiais condutores
+[23:22] que deixam a carga passar
+[23:24] livremente e isolantes
+[23:26] que bloqueiam a passagem
+[23:28] A garrafa de Leiden
+[23:30] domina a física de criar tensão
+[23:32] entre dois condutores separados por um
+[23:34] isolante, conseguindo finalmente
+[23:36] guardar a carga
+[23:38] E o Franklin olha pro céu e prova
+[23:40] que o raio é apenas uma garrafa
+[23:42] de Leiden do tamanho de uma nuvem gigante
+[23:44] nos dando de presente os termos
+[23:46] positivo e negativo
+[23:48] Nós mapeamos a eletricidade
+[23:50] Nós sabemos como prendê-la
+[23:52] num frasco e sabemos como guiar
+[23:54] ela por um filme etálico
+[23:56] Sucesso total, certo?
+[23:58] Quase, porque a gente
+[24:00] esbarrou num problema prático
+[24:02] gigantesco no fim das contas
+[24:04] Lembra da nossa regra do Baldi?
+[24:06] Do Baldi que eixe devagar
+[24:08] e vira tudo de uma vez?
+[24:10] A garrafa de Leiden, por mais útil que seja
+[24:12] é um Baldi que só sabe despejar
+[24:14] tudo no chão num estalo
+[24:16] Tudo que eles construíram nesse século e meio
+[24:18] funciona exclusivamente na base
+[24:20] do estalo, da explosão repentina
+[24:22] Não dá pra manter energia acesa
+[24:24] Não dá pra regular a intensidade
+[24:26] e não dá pra malar por um fio de forma continua
+[24:28] Você gasta energia física
+[24:30] suando e esfregando o vidro
+[24:32] A garrafa enche bem devagar
+[24:34] e a liberação dura um único millisecondo
+[24:36] A energia desaparece tão rápido
+[24:38] quanto surgiu ali
+[24:40] E essa é um bloqueio absoluto pra engenharia, né?
+[24:42] Sem dúvida. Uma sociedade
+[24:44] não avança baseada em um choque instantâneo
+[24:46] Sem a capacidade de manter um fluxo
+[24:48] de energia constante e irregular
+[24:50] não existe como construir um telégrafo
+[24:52] que fique ligado pra transmitir mensagens
+[24:54] Claro! Não tem como
+[24:56] alimentar um motor pra girar as engrenagens
+[24:58] de uma fábrica de forma continua
+[25:00] E claro, não tem como
+[25:02] manter um circuito lógico fechado
+[25:04] pra processar dados de um computador
+[25:06] Ou seja, no final de
+[25:08] 1752 a eletricidade
+[25:10] era real, era amplamente estudada
+[25:12] e catalogada, mas
+[25:14] ainda era fisicamente impossível
+[25:16] de ser usada pra alimentar uma máquina de verdade
+[25:18] Era completamente
+[25:20] útil pra criar máquinas que precisassem
+[25:22] trabalhar sem parar
+[25:24] A humanidade domou a faísca
+[25:26] Mas, como nós vimos,
+[25:28] a faísca em si não constrói a modernidade
+[25:30] Ela apenas assusta
+[25:32] monges e queima pesquisadores
+[25:34] É, mas a boa notícia é que
+[25:36] nós não vamos ficar parados no estalo pra sempre
+[25:38] Eu vou deixar uma semente plantada
+[25:40] pro futuro aqui
+[25:42] Na próxima etapa da nossa investigação
+[25:44] a solução pra transformar esse choque
+[25:46] rápido em uma fonte perene
+[25:48] de energia vai chegar
+[25:50] através das mãos de um cientista italiano
+[25:52] O famoso Alessandro Volta
+[25:54] Ele mesmo, esse inventor
+[25:56] vai ignorar o atrito
+[25:58] vai empilhar discos de dois metais
+[26:00] diferentes com um pano molhado
+[26:02] no meio e
+[26:04] pela primeira vez na história
+[26:06] através da química
+[26:08] vai forçar a eletricidade a fluir
+[26:10] sem interrupção
+[26:12] É a chegada da pilha de volta
+[26:14] Exato, o momento em que a eletricidade
+[26:16] deixa de ser um relâmpago assustador
+[26:18] e passa a ser um rio calmo
+[26:20] e contínuo
+[26:22] E é exatamente a chegada desse fluxo químico
+[26:24] contínuo que vai permitir
+[26:26] que a ciência comece a substituir
+[26:28] de vez as manivelas pesadas
+[26:30] e as engrenagens de madeira
+[26:32] pelo silêncio eficiente
+[26:34] dos circuitos elétricos e dos computadores
+[26:36] Mas olhem, enquanto nós preparamos os fios
+[26:38] para a pilha de volta na nossa próxima parada
+[26:40] eu quero deixar uma provocação
+[26:42] para você que está ouvindo
+[26:44] levar com você hoje
+[26:46] Nós vimos que a humanidade
+[26:48] passou mais de dois mil anos
+[26:50] olhando para a pedra de âmbar, puxando palha
+[26:52] achando que aquilo era apenas um truque
+[26:54] de mágica, de salão inofensivo
+[26:56] sem perceber que ali dentro
+[26:58] a pista para força
+[27:00] queria redesenhar o planeta inteiro
+[27:02] É verdade
+[27:04] Isso faz a gente olhar em volta hoje
+[27:06] e pensar quais são as forças invisíveis
+[27:08] que estão ao nosso redor neste exato minuto
+[27:10] que nós tratamos apenas como pequenas curiosidades
+[27:12] ou ignoramos completamente
+[27:14] esperando pacientemente
+[27:16] por alguém capaz de dar o nome a elas
+[27:18] e iniciar a próxima era da humanidade
+[27:20] Pensa nisso, a gente se encontra
+[27:22] na próxima etapa da nossa investigação

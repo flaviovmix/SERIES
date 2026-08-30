@@ -1,0 +1,441 @@
+# Transcricao automatica (faster-whisper small) - 20.3 min
+# Fonte: Nascimento do Z3, Mark I e ENIAC.mp3
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] As primeiras máquinas que ligaram, imagina a seguinte cena, você está no meio de uma
+[00:04] guerra ou tentando construir um prédio, e tudo depende de matemática, só que a sua
+[00:11] equipe inteira trabalha apenas com lápis e papel.
+[00:14] Nossa, um pesadelo.
+[00:15] Pois é, e por mais que as pessoas se esforçem, sabe, o cérebro humano cansa, a mão dói
+[00:21] e, bom, o erro fatalmente acontece.
+[00:24] Sim, é natural.
+[00:25] Então, o limite da tecnologia, até ali os anos 30, era literalmente o limite do cansaço
+[00:30] humano.
+[00:31] Exatamente.
+[00:32] Nas partes anteriores da nossa série, a gente desenhou uma solução para isso.
+[00:35] A gente montou um computador inteiro no papel, né?
+[00:38] Sim, peça por peça.
+[00:39] Passamos pela porta lógica, pelo somador, a gente viu a memória com endereço, entendemos
+[00:45] a máquina universal de Turing e montamos o conjunto de instruções.
+[00:48] E estava tudo projetado bonitinho.
+[00:50] Tudo no papel.
+[00:51] Mas nada estava ligado na tomada ainda.
+[00:53] Pois é.
+[00:54] Foi a eletricidade.
+[00:55] Exatamente.
+[00:56] Hoje, a gente liga tudo.
+[00:59] Esta nossa etapa cobre exatamente o intervalo de tempo de 1936 a 1946.
+[01:06] Uma década bem intensa.
+[01:08] Muito intensa.
+[01:09] A gente começa num apartamento em Berlim e termina dentro do exército americano.
+[01:14] Sim.
+[01:15] E vale um aviso bem importante sobre como a gente vai navegar hoje por aqui.
+[01:20] Esta nossa análise acompanha uma página de animação visual, sabe?
+[01:24] Bom, oito telas.
+[01:25] Legal.
+[01:26] Mas se você estiver só no áudio, lavando louça ou no trânsito, não tem problema nenhum.
+[01:31] Você vai conseguir acompanhar apenas pelo áudio sem perder nada.
+[01:35] Com certeza.
+[01:36] Mas para quem está com a página aberta, a gente vai avisar a hora certa de avançar.
+[01:39] Isso aí.
+[01:40] Então, para a gente começar e conhecer de perto estas máquinas, aperte o próximo.
+[01:45] Bom, o nosso assunto principal de hoje foca nas três primeiras máquinas programáveis
+[01:50] que funcionaram de verdade.
+[01:52] A gente vai falar do Z3, construído lá na Alemanha, em 1941.
+[01:57] Certo.
+[01:58] Depois do Mark I, feita nos Estados Unidos em 1944 e o famoso ENIAC, também nos Estados
+[02:06] Unidos, que foi terminado em 1945 e apresentado ao público mesmo em 1946.
+[02:14] E tem um ponto aí, uma motivação que é muito curiosa.
+[02:17] Qual?
+[02:18] Essas máquinas nasceu porque alguém acordou e disse, ah, eu quero inventar o computador
+[02:22] moderno da humanidade.
+[02:24] Assim, verdade.
+[02:25] Longe disso.
+[02:26] Elas nasceram de pessoas que estavam puramente cansadas de fazer contas na mão, sabe?
+[02:31] Totalmente.
+[02:32] Era fadiga pura.
+[02:33] Os USI calculavam estruturas de prédios e tava exausto.
+[02:36] O IKIN resolvia equações diferenciais na calculadora e não aguentava mais.
+[02:40] E o ENIAC foi feito simplesmente para calcular tabelas de tiro de artilharia,
+[02:44] né?
+[02:45] Essa cidade ali, batendo na porta e a gente precisa falar de quem era o USI.
+[02:51] Vamos lá.
+[02:52] O Conga de USI, ele nasceu no dia 22 de junho de 1910.
+[02:57] Tá.
+[02:58] Em Berlim, na Prússia, que, bom, hoje é Alemanha.
+[03:02] E, aos dois anos de idade, a família dele se mudou para Brownsburg, na Prússia Oriental.
+[03:07] E onde fica isso hoje?
+[03:08] Então, essa cidade hoje se chama Branievo e fica lá na Polônia.
+[03:12] Ah, entendi.
+[03:13] E o pai dele era funcionário dos Correios, uma família normal.
+[03:17] O USI estudou no colégio um rossiano lá em Brunsberg.
+[03:21] Depois ele foi se formar em engenharia civil na Technichê-Schollschule de Berlim, isso
+[03:28] em 1935.
+[03:29] Um ano antes de tudo começar.
+[03:32] Exato.
+[03:33] E ele viveu bastante, sabe?
+[03:35] Ele morreu só em 18 de dezembro de 1995, aos 85 anos, na cidade de Ruhmfeld, na
+[03:43] Alemanha.
+[03:44] Nossa, ele viu quase toda a evolução da computação, então, né?
+[03:49] Viu sim.
+[03:50] Viu tudo acontecer.
+[03:51] Em 1935, ele se formou, né?
+[03:54] Isso.
+[03:55] E ele foi trabalhar direto numa fábrica de aviões.
+[03:58] Imagina a quantidade de cálculo.
+[03:59] Nossa, a rotina dele era exatamente fazer cálculo estrutural, sabe?
+[04:04] Ele pegou um ódio gigantesco daquela repetição infinita de cálculos, com tabelas
+[04:08] e calculadoras de mesa.
+[04:10] Era um trabalho bem braçal, né?
+[04:12] E ele não aguentou.
+[04:14] Em 1936, ele largou o emprego.
+[04:16] Pediu as contas?
+[04:17] Pediu as contas, voltou para a casa dos pais e montou uma oficina no meio da sala deles.
+[04:23] Imagina, paciente a dos pais dele com isso.
+[04:27] Pois é, tudo isso depois de passar raiva no trabalho.
+[04:30] Ele só queria automatizador de cabeça dele.
+[04:32] E não foi de primeira que ele conseguiu, né?
+[04:34] Não mesmo.
+[04:35] Ele fez duas tentativas, duas máquinas que, assim, não deram muito certo.
+[04:40] Mas o Z3, a terceira tentativa dele, ficou pronto e foi apresentado no dia 12 de maio
+[04:46] de 1941 lá em Berlim.
+[04:49] E como era essa máquina por dentro?
+[04:51] Era impressionante para a época.
+[04:53] A máquina usava 2.600 relés.
+[04:56] Caramba!
+[04:57] Sim.
+[04:58] E ela era binária.
+[04:59] Trabalhava com um número de vírgula flutuante de 22-bit, sabe?
+[05:03] E ele mía os programas por meio de uma fita perfurada.
+[05:06] E era rápida?
+[05:07] Para a época, sim.
+[05:08] Para somar, a máquina levava menos de 1 segundo.
+[05:11] Para multiplicar, demorava cerca de 3 segundos.
+[05:14] Espera aí.
+[05:15] Oi.
+[05:16] Você falou que ele usava relés.
+[05:17] A gente viu o relé no episódio do telégrafo.
+[05:20] Exato.
+[05:21] A mesma peça.
+[05:22] Mas como é que uma máquina feita de peças de telégrafo montada na sala de casa pode
+[05:26] ser considerada um computador de verdade?
+[05:29] É que o grande lance não era a peça em si, sabe?
+[05:32] Mas como ele organizou essas peças?
+[05:36] O fim do Z3 é o primeiro computador funcional que pode ser considerado universal no sentido
+[05:42] de Turing.
+[05:43] Ah, aquela ideia de que ele consegue rodar qualquer coisa se tiver memória.
+[05:47] Isso, sim.
+[05:48] Embora, olha só que ironia, o próprio Zuse não soubesse disso na época.
+[05:53] Mentira!
+[05:54] Ele não sabia!
+[05:55] Não sabia.
+[05:56] Ele era engenheiro, não teórico da matemática.
+[05:58] Eles só queria fazer as contas mais rápido, né?
+[06:00] Nossa, ele criou algo universal sem nem perceber a grandeza teórica daquilo.
+[06:05] Pois é.
+[06:06] O fim do Z3 é bem direto, é até meio triste, né?
+[06:09] Muito.
+[06:10] A gente não tem como enrolar.
+[06:11] O Z3 foi completamente destruído num bombardeio aéreo sobre Berlim no final de 1943.
+[06:17] É, virou poeira.
+[06:18] Sim.
+[06:19] E como o Zuse trabalhava totalmente isolado por causa da guerra, quase ninguém fora
+[06:24] da Alemanha ficou sabendo do trabalho dele.
+[06:26] A máquina que a gente vê em museu hoje é só uma reconstrução que ele mesmo
+[06:30] fez lá nos anos recentes.
+[06:32] É, a história apagou o original.
+[06:36] Então, pra gente ver o que estava acontecendo do outro lado do mundo na mesma época, aperte
+[06:42] o próximo.
+[06:43] Do outro lado do Atlântico, né, quase no mesmo instante, alguém tinha exatamente o
+[06:47] mesmo problema de fadiga matemática.
+[06:49] E aqui entra a nossa segunda ficha de hoje, o Howard Aiken.
+[06:54] O Iken.
+[06:55] Sim.
+[06:56] E os dados dele são bem específicos também.
+[06:58] Ele nasceu no dia 8 de março de 1900, em Hoboken, Nova Jersey, mas ele cresceu
+[07:05] em Indianápolis.
+[07:07] A família do pai dele era superestabelecida lá em Indiana.
+[07:11] Mas sabe, a situação em casa não era tranquila.
+[07:14] Por quê?
+[07:15] O que houve?
+[07:16] O pai saiu de casa, abandonou a família e o menino Howard teve que trabalhar à noite.
+[07:21] Ele instalava e cuidava de equipamento elétrico pra sustentar a mãe.
+[07:25] Nossa, menino ainda.
+[07:26] E estudava quando?
+[07:28] Ele estudava de dia, na Arsenal Technical High School, um esforço tremendo.
+[07:34] E deu certo.
+[07:35] Porque ele se formou em engenharia elétrica na Universidade de Wisconsin em Madison, isso
+[07:39] em 1923.
+[07:41] Legal.
+[07:42] Depois ele engatou um mestrado e um doutorado em física, lá em Harvard, sabe, terminados
+[07:47] em 1937 e 1939.
+[07:50] Ele morreu no dia 14 de março de 1973 aos 73 anos, lá em St. Louis, no Missouri.
+[07:57] E a história dele se conectando com o projeto é um daqueles acasos gigantescos da
+[08:02] vida, né?
+[08:03] Porque durante o doutorado, o Iken também estava por aqui de resolver equações por métodos
+[08:08] numéricos usando calculadoras de mesa.
+[08:11] Aquelas de manivela, né?
+[08:12] Isso.
+[08:13] E ele ficava reclamando disso pelos corredores de Harvard.
+[08:16] Até que um dia ele encontrou no sótão do departamento, olha isso, pedaços de latão
+[08:22] jogados lá.
+[08:23] Não acredito.
+[08:24] Sim, peças da máquina diferencial do Charles Babbage, aquela mesma máquina da nossa
+[08:28] etapa 3, lembra?
+[08:29] Claro.
+[08:30] O projeto que tinha sido abandonado 100 anos antes.
+[08:33] Estava lá, no sótão.
+[08:35] Nossa, o passado batendo na porta dele.
+[08:37] E aí o Iken projetou uma máquina elétrica, justamente para fazer aquilo que o Babbage
+[08:41] queria ter feito, só que agora usando a tecnologia ali de 1937.
+[08:45] E quem comprou a ideia?
+[08:46] A gigante da época, a IBM.
+[08:49] Eles construíram e pagaram tudo.
+[08:51] A máquina chamava automatic sequence controlled calculator, mas ela ficou conhecida mesmo
+[08:56] como Harvard Mark 1 e foi instalada lá em fevereiro de 1944.
+[09:01] O tamanho disso era um absurdo, gente.
+[09:03] A gente tá falando de um equipamento com 15 metros de comprimento, quase 5 toneladas.
+[09:09] Caramba.
+[09:10] E também feita de relês, igualzinho os E3 lá da Alemanha.
+[09:14] Ah, sim.
+[09:15] Mas tinha uma diferença fundamental.
+[09:17] O Mark 1 era uma máquina decimal em vez de binária.
+[09:21] Ah, operava de 0 a 9.
+[09:23] Exatamente.
+[09:24] O programa entrava por fita de papel perfurada, igual.
+[09:28] Mas olha, era uma máquina superbarulhenta, lenta, sabe?
+[09:32] Uma simples multiplicação levava cerca de seis segundos.
+[09:35] Seis segundos para multiplicar?
+[09:37] Mas pensa bem na conexão mágica disso com a nossa série.
+[09:40] As rodas de latão do Babbage esperaram literalmente 100 anos no escuro por uma tecnologia
+[09:46] que desce conta do recado, sabe?
+[09:48] E a eletricidade finalmente deu essa vida.
+[09:51] É de arrepiar.
+[09:52] Para entender o que veio depois e o gargalo disso tudo, aperte próximo.
+[09:56] Então, o problema do Relê.
+[09:58] Porque ele tem um limite físico muito claro, tanto nos E3 quanto no Mark 1.
+[10:03] Explica isso melhor.
+[10:04] O Relê é uma pecinha de metal, sabe?
+[10:06] E ela precisa fisicamente se mexer.
+[10:09] Ela bate de um lado, encosta, fecha o circuito e depois tem que voltar.
+[10:14] E isso leva tempo, né?
+[10:15] Sim.
+[10:16] Leva milésimos de segundo.
+[10:18] Além disso, faz um barulho imenso, esquenta e sofre desgaste mecânico.
+[10:23] Uma hora quebra.
+[10:24] Fatalmente quebra.
+[10:25] A inércia da peça de metal era a grande vilã da velocidade da época.
+[10:29] E aí a solução chega com a válvula, né?
+[10:32] Sim.
+[10:33] A válvula eletrônica.
+[10:34] Para quem nunca viu, a válvula parece um bulbo de vidro de uma lâmpada sem nenhum ar
+[10:38] dentro.
+[10:39] É um vácuo.
+[10:40] Isso.
+[10:41] E lá dentro, um filamento esquenta e solta elétrons.
+[10:44] No meio do caminho tem um pedacinho de metal que funciona como um porteiro.
+[10:48] Ele deixa passar a corrente ou barra tudo.
+[10:51] Perfeito.
+[10:53] Quem faz o trabalho de ligar e desligar a corrente agora é o próprio elétron.
+[10:57] E o elétron não tem peso para se mover.
+[11:00] Não tem massa física batendo, né?
+[11:01] A nossa fonte traz uma analogia autorizada que clarifica tudo de forma brilhante.
+[11:07] Como é?
+[11:08] Pensa no relê como uma porta pesada que alguém precisa empurrar fisicamente para
+[11:12] abrir.
+[11:13] Tem que fazer força.
+[11:14] Certo.
+[11:15] A válvula é como aquelas portas automáticas que abrem sozinhas assim que o sensor
+[11:19] de luz acende.
+[11:20] A válvula não é mais inteligente que o relê.
+[11:23] Tá.
+[11:24] Ela apenas não precisa esperar nenhuma peça física e pesada se mexer.
+[11:28] O caminho se abre e pronto.
+[11:30] E quando a gente compara os números, a diferença gritante, sabe?
+[11:33] Um relê com sorte faz dezenas de operações por segundo.
+[11:37] Uma válvula faz milhares.
+[11:39] É simplesmente mil vezes mais rápido.
+[11:41] Mil vezes.
+[11:42] É muita coisa.
+[11:43] Mas tem um custo alto para essa velocidade toda.
+[11:46] Qual?
+[11:47] A válvula queima.
+[11:48] Lembra que ela tem um filamento igual de uma lâmpada antiga, né?
+[11:51] Sim.
+[11:52] E esquenta.
+[11:53] Exato, ela gasta muita eletricidade, esquenta horrores e quando você tem uma máquina com
+[11:58] milhares delas trabalhando juntas...
+[12:00] Alguma vai queimar.
+[12:01] Sempre tem alguma válvula queimada precisando ser trocada.
+[12:04] Era um pesadelo logístico.
+[12:06] Nossa.
+[12:07] Mas olha, para você que está acompanhando a página tem um botão na tela com as
+[12:10] duas tecnologias, o relê e a válvula, lado a lado fazendo a exata mesma conta.
+[12:16] Um racha de velocidade.
+[12:18] Exato.
+[12:19] Então te convido a clicar no botão agora e ver essa diferença visual de velocidade
+[12:23] na animação enquanto a gente continua.
+[12:25] E depois de ver essa corrida aperte o próximo.
+[12:28] Bom, depois de provar que a válvula era mil vezes mais rápida, era só questão
+[12:32] de tempo até alguém tentar construir uma máquina gigante usando só válvulas.
+[12:37] E essa máquina foi o ENIAC.
+[12:39] O famoso ENIAC.
+[12:41] Ele nasceu ali no final do conflito na Moscow, que é a parte da Universidade
+[12:45] da Pensilvânia.
+[12:46] E com o dinheiro de quem?
+[12:48] Do exército americano, claro.
+[12:51] Tudo isso para calcular tabelas de tiro.
+[12:53] Pois é.
+[12:54] As benditas tabelas de tiro.
+[12:56] E, sabe, para quem não é da artilheria, cada tabela dessas dizia o ângulo exato
+[13:02] do canhão baseado no monte de variáveis.
+[13:05] Tipo o quê?
+[13:06] Tinha que calcular baseado na distância do alvo, na força do vento e até na temperatura
+[13:11] do dia.
+[13:12] Caramba.
+[13:14] Qualquer mudança de temperatura mudava a densidade do ar e, por consequência, onde
+[13:18] a bala ia cair.
+[13:20] Isso exigia milhares e milhares de contas para cada linha da tabela.
+[13:24] Um esforço absurdo.
+[13:26] E os dois caras que lideraram esse projeto são o Presper Eckhart e o John Moutley.
+[13:32] Vamos às fichas deles.
+[13:33] Manda.
+[13:34] O Presper Eckhart nasceu em 9 de abril de 1919, lá na Filadélfia, na Pensilvânia.
+[13:40] Tá.
+[13:41] Ele era incorporador imobiliário, bem rico, de origem suíço, alemã e alçaciana.
+[13:46] E a mãe vinha de uma família quáquer antiga e muito tradicional ali da Filadélfia.
+[13:51] Família estruturada, então.
+[13:52] Muito.
+[13:53] Ele estudou na William Penn Charter School, depois entrou na Wharton, que é famosíssima,
+[13:57] mas acabou trocando para a escola de engenharia elétrica da Universidade da Pensilvânia,
+[14:01] ali em 1937.
+[14:04] Ele era super jovem no projeto, né?
+[14:06] Demais.
+[14:07] Ele era o engenheiro-chefe de tudo com um pouco mais de 20 anos de idade.
+[14:10] Uau.
+[14:11] E ele morreu em 3 de junho de 1995, na cidade de Bryn Mauer, também na Pensilvânia.
+[14:17] Uma trajetória bem linear já.
+[14:19] Já o John Malkley, o parceiro dele de projeto, teve um caminho diferente.
+[14:23] Ele nasceu em 30 de agosto de 1907.
+[14:25] Certo.
+[14:26] Lá em Cincinnati, Ohio, mas ele cresceu em Chevy Chase, Maryland, porque o pai dele
+[14:31] virou chefe da sessão de eletricidade terrestre da Carnegie Institution em
+[14:35] Washington.
+[14:36] Nosso pai já era da área, praticamente.
+[14:38] Exato.
+[14:39] O Malkley foi estudar na Johns Hopkins, começou na engenharia, mudou para física e tirou
+[14:45] o doutorado logo de cara, em 1932, sem concluir a graduação.
+[14:50] Pulou etapas.
+[14:51] Pulou.
+[14:52] E antes de entrar na história do Enique, ele era o único professor e também o chefe
+[14:57] do Departamento de Física do Ursinus College.
+[15:00] Ele era o Departamento inteiro, então?
+[15:02] Exatamente.
+[15:03] Ele era equipe toda, né?
+[15:04] Ele faleceu em 8 de janeiro de 1980, em Ambler, na Pensilvânia.
+[15:10] E juntando esses dois caras, a gente chega nos números do Enique, que são um absurdo.
+[15:16] 18 mil válvulas.
+[15:18] 18 mil.
+[15:20] Mais de 30 toneladas, 30 metros de comprimento e consumia, assim, brincando 150 mil
+[15:28] vatos de energia.
+[15:30] Era uma usina elétrica, quase.
+[15:31] O ENIA, que foi dado como terminado em 1945, mas só foi apresentado oficialmente ao público
+[15:38] no dia 15 de fevereiro de 1946.
+[15:41] Usa internamente.
+[15:42] Para programar, você precisava mudar cabos de lugar em painéis gigantes de tomadas
+[15:47] e ficar girando chaves.
+[15:49] Eu lembro da analogia autorizada na nossa fonte, que é perfeita para entender isso.
+[15:53] Como era?
+[15:54] Programar o ENIA, que era como ter que trocar a fiação de uma casa inteira apenas
+[15:58] para poder mudar de lâmpada.
+[15:59] Imagina o trabalho.
+[16:00] Pois é.
+[16:01] Para qual cabo ia, para qual tomada, levava semanas desenhando no papel.
+[16:05] E a troca física dos cabos lá na máquina levava dias.
+[16:09] Dias só para configurar.
+[16:10] E a gente precisa dar o crédito de quem fazia esse trabalho pesadíssimo.
+[16:14] Com certeza.
+[16:15] Eram seis mulheres.
+[16:17] A K-Mechanate, a Beth Jennings, Beth Snyder, Marilyn Westcoff, Fran Bielas e a Ruth Lichterman.
+[16:25] As seis pioneiras.
+[16:26] Exato.
+[16:27] O detalhe é que elas descobriram como programar essa máquina gigantesca sem nenhum manual
+[16:33] de instrução, sabe?
+[16:35] Sério?
+[16:36] Sem manual?
+[16:37] Sem nada.
+[16:38] E elas conheciam a máquina por dentro melhor que quase todo mundo no projeto.
+[16:43] Só que, por muito tempo, sabe o que aconteceu?
+[16:46] Elas foram chamadas de apenas operadoras pela história.
+[16:50] Nossa, que desmerecimento.
+[16:51] Total.
+[16:52] Uma injustiça enorme que só hoje em dia está sendo corrigida, né?
+[16:57] Conhecendo que elas foram as verdadeiras primeiras programadoras do ENIAC.
+[17:01] Muito merecido.
+[17:02] Então, para a gente entender exatamente a dor de cabeça que essas mulheres resolviam
+[17:07] todos os dias, aperte o próximo.
+[17:09] Agora, a gente preparou um pequeno desafio para você.
+[17:12] Eu convido você a pausar o áudio agora mesmo, olhar para a tela da animação e tentar
+[17:16] resolver o desafio interativo que está aí.
+[17:18] O que tem lá?
+[17:19] A tela mostra um pedaço do painel do ENIAC, cheio de tomadas, cabos e chaves,
+[17:24] com o objetivo de você fazer uma conta simples.
+[17:27] Tenta conectar os cabos, brincar um pouco, quando você terminar e a conta bater,
+[17:31] volta da play aqui que a gente conversa.
+[17:32] Pode pausar.
+[17:34] E aí, conseguiu?
+[17:35] Bom, lição da prática aqui é o que esse exercício acabou de mostrar, né?
+[17:40] Ligar os cabos na ordem certa resolve a conta, beleza?
+[17:42] Certo.
+[17:43] Mas a tela pede uma conta diferente logo em seguida.
+[17:46] E a única forma que você tem de resolver a segunda conta é simplesmente desmontar
+[17:50] todas as ligações que você acabou de fazer e refazer tudo de novo.
+[17:54] Do zero.
+[17:55] Do zero.
+[17:56] A conclusão simples disso é que a conta, a matemática do negócio, estava fisicamente
+[18:00] na fiação da máquina, não estava numa memória abstrata.
+[18:04] Era física pura.
+[18:06] Então mudar a conta, ser feita na prática era um trabalho de eletricista, sabe?
+[18:09] Não era um trabalho de matemático.
+[18:11] Perfeito.
+[18:12] Para a gente ver o impacto disso.
+[18:13] E para onde a gente vai, aperte o próximo.
+[18:16] Bom, vamos fazer um resumo direto para amarrar tudo o que a gente viu lá em 1941,
+[18:21] O Z3 do Zuzi provou ser totalmente possível fazer uma máquina universal com 2.600 relés.
+[18:28] Mas infelizmente virou entulho em um bombardeio em 1943.
+[18:33] Trágico.
+[18:34] Em 1944, o Mark I do Iken construiu também com relés, mas em formato decimal, o antigo
+[18:41] projeto abandonado pelo Bebed, um século antes.
+[18:44] E funcionou.
+[18:45] Funcionou.
+[18:46] E enfim, em 1945, o Enia que trocou o relé, que se mexia e atrasava tudo pela válvula
+[18:52] eletrônica, ganhando mil vezes mais velocidade.
+[18:56] E claro, pagando o preço de ter suas 18 mil válvulos queimando direto.
+[19:00] Sim, o preço do calor é absurdo.
+[19:02] E o ano em que a gente para essa nossa etapa é 1946, sabe?
+[19:07] Logo depois que o Enia que foi apresentado ao mundo.
+[19:09] Isso, exatamente.
+[19:10] E tem um gancho perfeito para a gente deixar para ouvir e te pensar.
+[19:14] Qual?
+[19:15] Pazenados.
+[19:16] Em um cálculo, o programa em si, o que dava inteligência para coisa, morava do lado de
+[19:20] fora da memória.
+[19:21] Seja naquela fita perfurada, num cabo plugado ou numa chave manual.
+[19:26] Tudo externo.
+[19:27] E trocar de tarefa, como a gente viu, era um trabalho braçal, físico e super demorado.
+[19:31] E aí que o jogo muda completamente de figura.
+[19:35] Porque bem nessa época, em 1945, um matemático húngaro escreveu o rascunho de um relatório
+[19:41] sugerindo algo muito inovador.
+[19:43] O que ele sugeriu?
+[19:45] Ele sugeriu guardar o programa, as próprias ordens da máquina, dentro da mesma memória
+[19:50] que guardava os números, os dados.
+[19:52] Tudo no mesmo lugar.
+[19:53] Nossa, genial!
+[19:54] E sabe o que acontece?
+[19:56] Três anos depois, lá em Manchester, uma máquina do tamanho de um armário roda o primeiro
+[20:01] programa da história que morava na sua própria memória.
+[20:05] O programa armazenado.
+[20:06] Exato.
+[20:07] E esse evento vai simplesmente gerar a briga de crédito mais conhecida e
+[20:12] intensa de toda a história da computação.
+[20:14] Nossa, o clima vai esquentar na nossa próxima etapa, então a gente se vê lá.

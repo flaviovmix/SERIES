@@ -1,0 +1,13 @@
+OS AUTOMATOS - CONTEXTO
+=======================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o setimo episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz e o tear de Jacquard. Este episodio e um desvio proposital ANTES do tear na linha do tempo: os automatos do seculo 18, bonecos e bichos mecanicos que nao calculam nada mas executam um roteiro gravado em pecas de metal (os cames). Cobre o pato e o flautista de Jacques de Vaucanson (Paris, anos 1730-40), o Escritor da familia Jaquet-Droz (Suica, anos 1770, reprogramavel pra escrever qualquer frase curta) e os precursores diretos dos cartoes do tear: Bouchon (1725, rolo de papel furado), Falcon (1728, cartoes em corrente) e o tear automatico de Vaucanson (1745), que decadas depois Jacquard encontrou num deposito e aperfeicoou.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma tela interativa do came (girar o disco de borda recortada e ver a borda virar movimento, trocando o perfil), uma demonstracao do Escritor (trocar a fila de cames e a mesma maquina escrever SIM ou NAO) e uma pratica (montar a fila de cames pra maquina escrever ADA). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: o que eram os automatos e por que a Europa pagava ingresso pra ver, como o came guarda um roteiro na borda recortada de um disco (o apalpador segue a borda e vira movimento), por que o Escritor de Jaquet-Droz e um marco (a frase mora na fila de cames, nao no boneco: trocar a fila e reprogramar), e como o mesmo mundo inventava os furos no papel e nos cartoes que o tear de Jacquard consagraria.
+
+Por que importa: e o roteiro saindo do corpo de uma pessoa e virando peca fisica que a maquina executa sozinha. O came e o avo do programa gravado. A limitacao (cravar cames em metal e caro e de luxo) prepara o proximo episodio: a caixa de musica, a versao barata e de bolso da musica gravada, nascida no mesmo mundo dos relojoeiros suicos.
+
+Use este contexto apenas como apoio.

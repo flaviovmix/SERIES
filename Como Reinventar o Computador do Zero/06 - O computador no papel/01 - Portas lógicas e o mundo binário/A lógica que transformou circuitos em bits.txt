@@ -1,0 +1,7 @@
+Titulo: A lógica que transformou circuitos em bits
+Notebook: 06-01-Portas lógicas e o mundo binário
+
+Descricao:
+Os textos descrevem um episódio educativo da série "Como Reinventar o Computador do Zero", focado no período entre 1937 e 1950. O material detalha a transição da teoria lógica para a prática, demonstrando como portas lógicas básicas e circuitos de relés materializam a álgebra de Boole. Além de apresentar figuras históricas como Claude Shannon, as fontes explicam o funcionamento do sistema binário e a origem de termos como bit e byte. A narrativa utiliza uma abordagem didática e interativa para mostrar que a computação moderna nasce da combinação desses componentes simples. Por fim, o conteúdo estabelece as bases para os próximos estágios da série, que tratarão de cálculos matemáticos e memória.
+
+Link: https://notebook.google.com/notebook/9a25dbec-b423-43a9-8a5b-1dc46ae306cd

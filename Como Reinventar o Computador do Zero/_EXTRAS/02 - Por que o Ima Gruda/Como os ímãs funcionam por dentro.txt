@@ -1,0 +1,7 @@
+Titulo: Como os ímãs funcionam por dentro
+Notebook: EX-02-Por que o Ima Gruda
+
+Descricao:
+Estes documentos detalham a estrutura de um episódio educativo focado em explicar o funcionamento dos ímãs permanentes de maneira simples e acessível. A narrativa utiliza a analogia central de pequenas agulhas de bússola para descrever como a organização interna do ferro determina suas propriedades magnéticas. O conteúdo responde a dúvidas comuns, como o motivo de ímãs não grudarem em alumínio e por que manter sua força não consome energia. O roteiro é estritamente autocontido, proibindo menções a datas, cientistas ou episódios anteriores para garantir que qualquer ouvinte compreenda o tema de imediato. Além disso, o material orienta uma experiência interativa, conectando a explicação em áudio a uma animação visual que demonstra processos de imantação e desmagnetização. Por fim, o texto conecta o comportamento físico dessas "agulhinhas" à tecnologia de armazenamento de dados em dispositivos eletrônicos.
+
+Link: https://notebook.google.com/notebook/6428d7e0-1042-4b3c-8c18-e89809dd8ada

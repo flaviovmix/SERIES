@@ -1,0 +1,13 @@
+O TEAR DE JACQUARD - CONTEXTO
+=============================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o sexto episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o sistema de numeracao com o zero, as maquinas do hiato, a Pascalina e a roda de Leibniz. Este cobre o tear de Jacquard (Joseph-Marie Jacquard, Lyon, Franca; demonstrado em 1801 e aperfeicoado ate 1804): a primeira maquina que obedece instrucoes gravadas em cartoes furados. Ela nao calcula nada, e mesmo assim e uma das maquinas mais importantes da serie.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma tela interativa de furar um cartao e passar pela maquina (furo = fio sobe), duas demonstracoes com botao (a corrente de 5 cartoes tecendo um losango linha por linha, e a troca de corrente: mesma maquina tecendo losango ou xadrez) e uma pratica (furar 5 cartoes pra reproduzir um alvo no tecido). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: o problema do tecido estampado (um ajudante levantava os fios certos um a um, a cada passada; Jacquard fez esse trabalho quando crianca), a mecanica do cartao (furo deixa a agulha passar e o fio sobe; sem furo o fio fica embaixo), a corrente de cartoes carregando o desenho inteiro (cada cartao e uma linha do tecido), e a consequencia que muda a historia: trocar os cartoes troca o tecido, sem mexer na maquina. O desenho virou uma coisa separada da maquina que o executa.
+
+Por que importa: e a primeira vez que instrucoes moram fora da cabeca de uma pessoa, gravadas num suporte que a maquina le e obedece. O cartao furado saiu do tecido e durou ate o seculo 20 (censo americano de 1890 com Hollerith, origem da IBM; computadores rodaram em cartao ate os anos 1970). E o tear inspirou diretamente o proximo equipamento da serie: a Maquina Analitica de Babbage, que juntou o cartao que obedece com a engrenagem que calcula.
+
+Use este contexto apenas como apoio.

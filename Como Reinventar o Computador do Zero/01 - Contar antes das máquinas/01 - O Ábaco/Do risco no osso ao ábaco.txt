@@ -1,0 +1,7 @@
+Titulo: Do risco no osso ao ábaco
+Notebook: 01-01-O Ábaco
+
+Descricao:
+Este conjunto de documentos serve como base para o primeiro episódio de uma série que reconstrói a história da computação, focando especificamente na trajetória do abaco. O conteúdo detalha a evolução da contagem humana, partindo de registros em ossos há 20 mil anos e passando pelo uso de fichas de argila na Mesopotâmia. O texto esclarece que a escrita surgiu da necessidade contábil antes de se tornar literatura, culminando na criação do ábaco por volta de 2700 a.C. como uma ferramenta para realizar cálculos complexos. Além do contexto histórico, as fontes descrevem o funcionamento de uma animação interativa que ensina conceitos como valor posicional e o movimento de transporte numérico. O material destaca que, embora o ábaco tenha externalizado o pensamento matemático, ele ainda dependia da manipulação humana para operar. O encerramento prepara o terreno para o próximo tema da série, que abordará a importância do zero no sistema de numeração.
+
+Link: https://notebook.google.com/notebook/00113ae5-13a7-4501-ba57-c9e36ff5d539

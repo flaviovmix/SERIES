@@ -1,0 +1,352 @@
+# Transcricao automatica (faster-whisper small) - 19.5 min
+# Fonte: Como o ábaco virou o computador.mp3
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O hábaco. Imagina ter um rebanho de umas 50 ovelhas e precisa segurar todas elas na palma da mão para não perder a conta.
+[00:07] Pois é, isso foi o primeiro problema técnico real que a humanidade precisou resolver.
+[00:15] E para entender como essa pedrinha na mão de um pastor lá no passado virou o computador que a gente usa hoje em dia,
+[00:22] a nossa jornada vai viajar de 8 mil antes de Cristo, até mais ou menos 2.700 antes de Cristo.
+[00:30] É uma janela de tempo gigante.
+[00:32] E sejam bem-vindos à etapa Contar Antes das Máquinas.
+[00:37] Exato. Essa é a primeira fase da nossa série como reinventar o computador do zero.
+[00:42] A premissa aqui é bem simples. A gente vai reconstruir o computador peça por peça, do zero mesmo.
+[00:49] E a gente começa com a coisa mais simples do mundo. Uma pedra.
+[00:52] É, porque a história não começa direto no hábaco. A gente vai voltar uns 5 mil anos antes dele.
+[00:59] Pra entender o contexto, né?
+[01:00] Isso. Focando na doresata que ele veio curar no mundo.
+[01:05] E lá no encerramento a gente vai dar um salto direto pro presente porque, por incrível que pareça,
+[01:11] tem gente usando essa mesmíssimo lógica até hoje.
+[01:14] Nossa, muito bom.
+[01:15] E pra quem tá acompanhando a animação interativa com as 13 telas, a mecânica é a seguinte.
+[01:21] É só seguir com a gente e avançar as telas apertando o botão próximo.
+[01:25] Exatamente quando o áudio pedir.
+[01:27] Uhum, tem os momentos certos.
+[01:29] Isso. E nas telas de prática, o convite vai ser pra pausar o áudio, resolver o exercício e depois voltar.
+[01:35] Mas se alguém tiver só ouvindo o áudio, lavando louça ou no trânsito sem a página aberta,
+[01:41] fica tranquilo que dá pra acompanhar o conteúdo perfeitamente só pela nossa descrição.
+[01:46] Com certeza.
+[01:47] Então, vamos começar? Aperte o próximo.
+[01:49] Bom, o ano é por volta de 8 mil antes de Cristo.
+[01:52] Bem lá atrás.
+[01:54] Sim, na região do crescente fértil é exatamente o mesmo momento em que surge a agricultura.
+[02:00] Ah, e vale dar um recado rápido de contexto visual pra quem tá com a tela aberta?
+[02:05] As imagens das cenas históricas que aparecem a partir de agora são reconstituições realistas.
+[02:10] Elas foram geradas pra ilustrar o período, tá?
+[02:13] Não são fotografias de época, claro.
+[02:15] É, não tinha câmera em 8 mil antes de Cristo.
+[02:18] Pois é.
+[02:18] E descrevendo a cena da esquerda da tela, a gente tem um pastor anônimo.
+[02:23] Ele tá na saída de um curral segurando umas fichas pequenas de argila, em formas geométricas.
+[02:28] Isso, tipo cone, esfera, disco.
+[02:31] Exato. E pra cada ovelha que sai do curral, vai uma ficha dessas pra mão dele.
+[02:36] O nome técnico disso é correspondência um a um.
+[02:40] Esse pastor aí, ele não tá contando.
+[02:42] Como assim não tá contando?
+[02:44] Ele não precisa saber contar.
+[02:46] O conceito de número nem precisa existir na cabeça dele pra coisa funcionar.
+[02:52] A conta é puramente física, sabe?
+[02:54] Cada ficha é equivalha ao movê-la real.
+[02:57] Entendi.
+[02:57] Então se sobrar a ficha na mão dele no fim do dia, significa que faltou o bicho, o lobo pegou.
+[03:02] Perfeito. É bem isso.
+[03:04] Só que aí a gente olha pra cena da direita e vê a limitação prática desse sistema.
+[03:09] É, o rebanho cresceu demais, as mãos do pastor tão transbordando, com ficha caindo por entre os dedos, uma bagonça.
+[03:16] Aí que tá. O sistema de correspondência um a um, ele funciona muito bem pra sete ovelhas.
+[03:23] Mas ele falha miserávelmente pra cinquenta.
+[03:25] Porque não cabe na mão, né?
+[03:27] Exato. As fichas não cabem.
+[03:29] E, além disso, ninguém consegue bater olho no monte de argilha espalhado no chão e saber a quantidade exata logo de cara.
+[03:36] É escala. A ideia central que move a nossa série inteira já aparece aqui, que é tirar a conta de dentro da cabeça e colocar em um objeto do lado de fora.
+[03:48] E a ideia era excelente, funcionou logo de cara. O problema real era só escala mesmo.
+[03:54] Então, vamos ver como eles resolveram. Aperte o próximo.
+[03:57] A gente avança agora no tempo pra cerca de três mil e quinhentos antes de Cristo, lá na mesopotâmia.
+[04:04] A cena mostra uma bola aoca de argilha, mais ou menos do tamanho de uma laranja.
+[04:08] Isso.
+[04:09] E, por fora dela, tem umas marcas com os formatos daquelas mesmas fichas que a gente viu antes.
+[04:15] E tem também um selo de pedra apertado na argila mole. O que é isso, exatamente?
+[04:20] Houve uma mudança de processo aí. As fichas deixaram de ficar soltas na mão e passaram a ser guardadas dentro dessas bolas ocas lacradas.
+[04:29] Elas são chamadas de bulei.
+[04:31] Bulei, tá.
+[04:32] É. E antes de lacrar a bola, as fichas eram pressionadas do lado de fora. Isso deixava a marca de cada uma na superfície.
+[04:41] E aí, por cima de tudo, ia o selo do dono do rebanho.
+[04:45] Mas qual o motivo de fazer isso? Parecia mais fácil só deixar na mão.
+[04:48] O problema é que a mercadoria começou a viajar.
+[04:51] Esse é um exemplo real da época.
+[04:53] Imagina que um homem leva o rebanho de um outro dono para uma cidade vizinha.
+[04:57] Ah, entendi.
+[04:58] Ele precisa prestar conta na chegada, né?
+[05:00] O envelope lacrado de argila, essa bula, atua como um contrato.
+[05:05] A pessoa que recebe os animais lá na outra cidade confere as marcas externas.
+[05:10] E se der problema?
+[05:11] Se quiser tirar a prova, se desconfiar, ela simplesmente quebra a bola de argila e contas fichas lá de dentro.
+[05:18] É impossível para quem está transportando adulterar o conteúdo no meio do caminho sem quebrar o lacre.
+[05:23] Que sistema inteligente a conta deixou de ser só um punhado de pedras na mão de alguém
+[05:28] e se transformou num registro, né?
+[05:31] Algo que dura, que viaja e que pode ser conferido depois com segurança.
+[05:36] Aperte o próximo.
+[05:38] Agora a gente move a linha do tempo para aproximadamente 3.100 a.C.
+[05:44] A gente está vendo a mesa de trabalho de um inscribanônimo.
+[05:47] Tem uma tábua de argila mole e ele está com caniço cortado fazendo umas marcas em forma de cunha.
+[05:54] E aquelas fichas velhas de conta estão jogadas de lado na cena já sem uso nenhum.
+[05:59] A imagem também mostra uma tábua real do período de Uruk de um acervo de museu.
+[06:03] Isso é porque alguém na época chegou numa conclusão muito óbvia.
+[06:06] Qual?
+[06:07] Olha só, se os formatos das fichas já estão carimbados do lado de fora daquela bola de argila,
+[06:13] as fichas lá dentro não servem para nada.
+[06:16] A marca externa já entrega toda a informação que a pessoa precisa.
+[06:19] Nossa, é verdade!
+[06:21] Não precisa do objeto físico lá dentro.
+[06:24] Exato.
+[06:25] E foi assim que a coisa evoluiu.
+[06:27] Aquela bola tridimensional de argila virou uma placa chatada.
+[06:31] E depois restou apenas a marca nela.
+[06:34] A ficha deixou de ser um objeto físico de segurar na mão e virou um desenho.
+[06:39] Só informação pura.
+[06:40] Sim.
+[06:41] E isso é de uma importância gigantesca.
+[06:44] Porque é exatamente assim que nasce a escrita Coneiforme.
+[06:47] Mentira!
+[06:48] A escrita nasceu de conta.
+[06:50] Totalmente.
+[06:51] Ela surge da contabilidade, não da literatura.
+[06:55] Os primeiros textos da humanidade não foram poemas, nem orações, foram recibos, listas
+[07:02] de cabeça de gado e notas de entrega.
+[07:05] Isso amarra um conceito muito forte para nossa série.
+[07:07] O número finalmente se soltou da coisa contada.
+[07:11] Porque antes a ficha de argila inteira era a ovelha, agora existe uma marca que significa
+[07:16] ovelha e uma marca completamente separada, que significa a quantidade.
+[07:22] Aperte o próximo.
+[07:23] E aí a gente chega na data principal do nosso episódio de hoje.
+[07:26] Cerca de 2700 a.C. lá na Suméria.
+[07:30] A cena agora tem uma tábua grande, cheia de sucos retos que dividem a superfície
+[07:34] em várias colunas.
+[07:36] E tem umas pedrinhas lisas organizadas nesses sucos com a mão do escriba empurrando
+[07:41] uma pedra de uma coluna para outra.
+[07:43] Mas pera, se escrever números já não era mais problema com a escrita conenforme, o que
+[07:47] faltava resolver?
+[07:48] Então, você tem que lembrar que a escrita conenforme é uns quatro séculos mais velha
+[07:52] que essa tábua aí da tela.
+[07:54] O problema deles não era registrar, o problema era calcular.
+[07:58] Ah, claro, fazer a conta em si.
+[08:01] Imagina somar dois números enormes escritos numa tábua de argila.
+[08:04] A pessoa precisava refazer a conta inteira mentalmente na cabeça dela e só no final
+[08:09] escrever a resposta na argila.
+[08:11] A escrita não ajudava no processo só, guardava o resultado final.
+[08:14] Exato.
+[08:15] E aí aparece essa solução lá na Suméria.
+[08:18] Alguém riskou colunas numa tábua e voltou a usar aquelas antigas pedras físicas.
+[08:23] Só que a diferença é enorme, porque a pedra ganhou um novo emprego.
+[08:27] Ela não é mais uma ovelha fixa, né?
+[08:30] Não é.
+[08:31] Ela passa a valer o que a coluna dela determinar.
+[08:34] Se a mesma pedrinha for movida a uma coluna para a esquerda, ela passa a valer
+[08:38] muito mais.
+[08:39] É a posição que dita a regra.
+[08:41] E esse equipamento é o hábaco, surgido ali entre 2700 e 2300 a.C.
+[08:48] Só fazer uma ressalva rápida de honestidade histórica aqui.
+[08:51] Manda.
+[08:52] Dez em dez foi a que continuou viva nas escolas e é esse o modelo exato que a gente
+[08:57] usa na animação daqui em diente.
+[08:59] Aperte o próximo.
+[09:00] Pra quem tá vendo, a gente tem um resumo rápido do equipamento em três cartões
+[09:04] com uma foto de um modelo chinês e um modelo tridimensional que dá pra gerar
+[09:08] na tela.
+[09:09] Vamos repassar esses dados.
+[09:10] O nome hábaco vem do crego abax, que significa literalmente tá boa.
+[09:16] E na prática do dia a dia, ele é só isso mesmo.
+[09:19] São pedras deslizando em astes ou em sucos.
+[09:22] A data e o local apontam pra Suméria, lá por volta de 2700 a.C.
+[09:28] Como a gente falou.
+[09:29] E um políquio importante é que não existe um inventor conhecido, ninguém foi lá
+[09:33] e patenteou a ideia.
+[09:35] O negócio simplesmente nasceu do uso contínuo.
+[09:38] Lembrando que o hábito de usar pedras pra contar já existia desde 8000 a.C.
+[09:44] Pois é.
+[09:45] E a motivação deles era muito clara.
+[09:47] Era preciso contar o rebanho, registrar a colheita e principalmente calcular o imposto.
+[09:53] Tudo isso sem chance de erro.
+[09:55] Nossa, enrar conta de imposto sempre foi um problema grave.
+[09:58] Escrever um número grande já era possível, mas o que faltava era justamente um jeito
+[10:03] confiável de calcular com ele.
+[10:06] Aperte o próximo.
+[10:07] Agora a gente convida quem está acompanhando com a tela aberta a interagir um pouco com
+[10:12] a demonstração.
+[10:13] A tela mostra um hábaco de quatro astes.
+[10:16] Isso.
+[10:17] Elas representam a unidade, a desena, a centena e o milhar.
+[10:21] E tem um botão de demonstração aí.
+[10:23] Pode apertar pra ver a animação rodar enquanto a gente explica.
+[10:26] O que está acontecendo na tela é bem visual.
+[10:29] A mesma pedra acende em casas diferentes.
+[10:33] Primeira ela acende valendo um, depois ela pula e vale dez, depois ela vale cem e por
+[10:39] fim ela vale mil.
+[10:40] Depende só de onde ela está.
+[10:42] Exato.
+[10:43] O hábaco ele não guarda o desenho daquele número, o que ele guarda são posições.
+[10:49] Cada haste do aparelho vale dez vezes a haste de baixo.
+[10:52] Isso faz a ponte direta com o nosso dia a dia hoje.
+[10:55] Esse é exatamente o princípio do valor posicional, é a mesmíssima lógica
+[10:59] que a gente usa pra escrever qualquer número no papel hoje em dia.
+[11:03] O hábaco já fazia isso milhares de anos antes sequer da existência dos algarismos modernos
+[11:07] que a gente conhece.
+[11:08] É tipo uma promoção de valor que a pedra ganha só por entrar na coluna do lado.
+[11:13] Aperte o próximo.
+[11:14] O aviso agora é que a tela está mostrando o movimento mais importante do hábaco.
+[11:19] É legal apertar o botão na tela pra ver esse movimento acontecer bem devagar.
+[11:23] É tem que prestar muita atenção nos números aqui.
+[11:26] Um detalhe crucial, cada fio tem nove contas, nove.
+[11:31] Nove não dez, né?
+[11:32] Isso não são dez.
+[11:34] Com as nove contas empurradas pra cima, o fio da unidade está marcando o número nove.
+[11:39] E ele está totalmente cheio, não cabe mais nada.
+[11:42] Tá.
+[11:43] E o que acontece quando chega mais uma unidade pra entrar na conta?
+[11:46] Ela não tem onde ficar, e é nesse momento crucial que a mágica toda acontece.
+[11:52] As nove contas caem e voltam pro lugar de origem delas lá embaixo.
+[11:56] E nasce uma nova conta na haste de cima.
+[11:59] A haste das dezenas.
+[12:01] Ou seja, nove mais um dá dez.
+[12:04] Esse salto é genial, e é exatamente o famoso vai-um que a gente aprende nas continhas de
+[12:09] escola.
+[12:10] Só que aqui ele é feito de forma puramente física, lidando com madeira e pedra.
+[12:14] E já antecipando uma coisa do futuro da nossa série.
+[12:18] Lá na frente, nos próximos episódios, esse mesmíssimo movimento mecânico vai
+[12:23] ser reencontrado lá dentro dos circuitos eletrônicos de um computador.
+[12:27] Sério, a mesma lógica?
+[12:28] A mesma.
+[12:29] Só que a engenharia batizou isso de carry, que é o transporte.
+[12:33] Muito bom saber que a raiz de tudo está numa pecinha de argila à perte o próximo.
+[12:37] Pessoal, agora é o nosso primeiro convite prático.
+[12:40] A gente pede pra quem tá ouvindo pausar o áudio rapidinho e resolveu o desafio lá
+[12:44] na tela.
+[12:45] A tarefa é representar três números no hábaco, um de cada vez.
+[12:49] Primeiro sete, depois o vinte e três, e depois o cento e cinco.
+[12:53] E vai uma dica falada antes de vocês pausarem.
+[12:57] No caso do número cento e cinco, existe um zero na casa das dezenas.
+[13:02] O que isso quer dizer no hábaco?
+[13:04] Significa que a haste do meio fica vazia mesmo.
+[13:07] Uma haste vazia no hábaco também é informação, ela faz parte estrutural do número.
+[13:12] Então beleza, assim que vocês fecharem os três números na tela, é só voltar o
+[13:17] áudio e apertar o botão de avançar.
+[13:19] Vai lá.
+[13:20] Prontinho, então aperte o próximo.
+[13:22] Agora a gente vai pra nossa primeira conta real no hábaco.
+[13:26] Usando o mesmo exemplo do piloto da série, a gente vai calcular o valor de dois pratos
+[13:31] de vinte e quatro reais num restaurante.
+[13:33] E tem um botão de passo a passo na tela, viu?
+[13:35] É bom ir apertando ele junto com a nossa explicação.
+[13:38] E isso, como a gente começa?
+[13:40] Primeiro entra o número vinte e quatro no hábaco.
+[13:42] Isso significa empurrar duas dezenas e quatro unidades.
+[13:46] Em seguida, chegam as duas dezenas referentes ao segundo prato.
+[13:50] A gente empurra e o hábaco passa a marcar quarenta e quatro.
+[13:54] Até aí tudo bem suave.
+[13:55] Sim, e por fim, entram as quatro unidades do segundo prato.
+[13:59] A gente sobe elas e o total fecha bonitinho em quarenta e oito.
+[14:03] A grande lição prática que a gente tira desse processo é que multiplicar por dois
+[14:07] no hábaco é simplesmente somar o mesmo número duas vezes.
+[14:12] Exatamente, o instrumento em si ele não sabe multiplicar.
+[14:16] Quem sabe a matemática de verdade é a pessoa que está operando ali com a mão.
+[14:20] O hábaco tem uma função bem restrita e exclusiva.
+[14:22] Que é segurar o número.
+[14:24] Isso, ele segura o resultado parcial de forma segura enquanto a pessoa foca em pensar no próximo passo da conta.
+[14:31] Essa divisão de trabalho é maravilhosa.
+[14:33] A pessoa pensa, gasta energia mental e o instrumento apenas lembra.
+[14:37] E esse é o ponto de partido absoluto de tudo que a gente vai ver nessa série.
+[14:41] E só uma observação final sobre essa conta.
+[14:44] Nada estourou o limite, né?
+[14:46] Nenhuma haste ficou cheia no processo.
+[14:49] Aperte o próximo.
+[14:50] Mas aí o garçom traz mais um prato de vinte e quatro para a mesa do restaurante.
+[14:54] É a mesma conta de antes, só que com um prato adicional.
+[14:58] E eu já aviso que aquele movimento do Va1, que a gente viu na tela oito,
+[15:02] vai aparecer naturalmente bem no meio desse cálculo.
+[15:05] Tem botão de passo na tela de novo, então podem ir acompanhando o clique com a nossa voz.
+[15:09] O hábaco já está marcando o resultado anterior, que era quarenta e oito.
+[15:13] O terceiro prato começa a ser somado pelas unidades.
+[15:16] Então entra uma unidade lá e a haste chega na nona pedra.
+[15:19] Fica cheia, marca nove.
+[15:21] Lotou o espaço físico.
+[15:23] Lotou.
+[15:24] E aí entra a próxima unidade e ela não tem onde entrar.
+[15:27] Nesse exato momento ocorre o movimento.
+[15:30] As pedras das unidades descem todas, o fio zera,
+[15:33] e sobe uma pedra lá na haste da dezena, fazendo o hábaco marcar cinquenta.
+[15:37] Tá, mas pera aí.
+[15:38] Eram quatro unidades do terceiro prato para somar.
+[15:41] A gente botou duas e estourou.
+[15:43] Faltam mais duas.
+[15:45] Exato.
+[15:46] Aí essas duas que faltam entram tranquilamente na haste da unidade que acabou de ser esvaziada.
+[15:52] E o total ali vai para cinquenta e dois.
+[15:54] Em seguida, para fechar a conta do prato, entram as duas dezenas na segunda haste.
+[16:00] E a resposta final fecha em setenta e dois.
+[16:03] A conta foi a mesma de antes.
+[16:05] A única diferença real foi a presença desse transporte físico no meio do caminho.
+[16:10] Três pratos de vinte e quatro dão setenta e dois.
+[16:13] Aperte o próximo.
+[16:14] Agora a gente lança o segundo convite prático.
+[16:17] De novo, pause o áudio e tenta fazer a conta completa sozinho lá na tela interativa.
+[16:22] Montar um vinte e quatro e depois ir somando outros dois por cima.
+[16:27] Até o painel marcal total de setenta e dois.
+[16:29] E um aviso prévio muito importante para quem vai operar o hábaco agora.
+[16:33] A haste da unidade vai encher bem na metade do caminho.
+[16:36] E é bem nesse momento de sufoco que você mesmo terá que fazer o movimento do
+[16:41] vai um com a sua própria mão.
+[16:43] Ah, a animação não faz automático dessa vez?
+[16:46] Não.
+[16:47] Em vez de só assistir a animação fazer sozinha, agora é o usuário que precisa limpar as unidades
+[16:53] e subir a dezena.
+[16:55] Olhe o desafio extra aí.
+[16:56] Tentem realizar todo o processo de cabeça sem olhar a demonstração da tela anterior,
+[17:02] puxando pela memória mesmo.
+[17:03] E assim que conseguirem chegar no setenta e dois, voltem o áudio.
+[17:08] Ah, prontos.
+[17:09] Aperte o próximo.
+[17:11] Para fechar a gente descreve o que a tela treze está mostrando.
+[17:14] Ela apresenta algumas das variantes vivas desse equipamento, que não morreram até hoje.
+[17:19] E tem muita variação incrível.
+[17:21] Tem o hábaco romano de bolso numa gravura bem antiga, que mostra aquele mesmo princípio,
+[17:26] só que aplicada em metal para poder caber na mão do cidadão.
+[17:30] Mostra o sua empanhe chinês, que é grandão, com duas contas na parte de cima valendo
+[17:34] cinco cada uma e cinco contas embaixo.
+[17:37] E mostra também o soroban japonês.
+[17:39] Isso.
+[17:40] Ele é muito mais enxuto.
+[17:41] Fica só uma conta em cima e quatro embaixo.
+[17:44] E a precisão é tão boa que esse equipamento é ensinado nas escolas do Japão até hoje.
+[17:49] Mas tem um detalhe muito curioso nessa imagem aí.
+[17:52] Qual?
+[17:52] Tem uma fotografia dos anos setenta mostrando um soroban de plástico,
+[17:56] grudado fisicamente na carcaça de uma calculadora eletrônica.
+[17:59] No mesmíssimo aparelho é o retrato de um equipamento antigo,
+[18:02] que simplesmente se recusou a ser aposentado pela modernidade.
+[18:05] Eles convivendo ali lado a lado?
+[18:08] Lado a lado.
+[18:09] E isso demarca muito bem o fim da linha do tempo do nosso episódio.
+[18:12] Lá em 2700 antes de Cristo o equipamento já estava pronto,
+[18:16] funcionando tão perfeitamente que ele atravessou quase 5 mil anos de história sem precisar
+[18:21] de um substituto.
+[18:22] Só que tem uma limitação que é justamente o que vai puxar o nosso próximo capítulo
+[18:26] da série.
+[18:27] Porque, por melhor e mais útil que o abaco seja,
+[18:31] alguém ainda precisa ficar movendo as pedras com as mãos o tempo todo.
+[18:35] Ele lembra muito bem a conta sim, mas ele não anda sozinho.
+[18:39] E esse é o gancho perfeito.
+[18:40] O próximo equipamento da série vai ser o primeiro a tentar resolver exatamente essa
+[18:45] coceira aí.
+[18:46] É a famosa Pascalina.
+[18:48] Ah, a calculadora de engrenagens.
+[18:50] Exato.
+[18:51] Que o Blais Pascalgum tolá em 1642.
+[18:54] E o mais engraçado é que ele fez isso apenas para tentar escapar da tortura que era fazer
+[18:59] as enormes somas de imposto do pai dele.
+[19:02] O imposto assombrando de novo, né?
+[19:04] Sempre.
+[19:05] Então o nosso foco vai para essa necessidade urgente de movimento autônomo, preparando
+[19:10] o terreno para a próxima grande invenção da história da computação.
+[19:13] A humanidade tirou a conta da cabeça e jogou para a pedra.
+[19:17] E o próximo passo é fazer a máquina girar sozinha.
+[19:20] E é com esse pensamento sobre o custo do esforço humano que a gente encerra
+[19:23] por aqui.
+[19:24] Vão pensando nisso e nos vemos na próxima etapa.

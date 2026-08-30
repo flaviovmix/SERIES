@@ -1,0 +1,7 @@
+Titulo: Como a caixa de música virou software
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-09 - Equipamentos 08 - A Caixa de Música
+
+Descricao:
+Este material descreve o oitavo episódio da série Equipamentos, que detalha a evolução tecnológica da caixa de música a partir de sua invenção por Antoine Favre em 1796. O conteúdo explica como esse dispositivo miniaturizou mecanismos complexos ao utilizar um cilindro de pinos e um pente de lâminas afinadas para reproduzir sons de forma automática. O roteiro é acompanhado por uma animação interativa que permite ao usuário experimentar a criação de melodias e entender a troca de cilindros como precursora das mídias modernas. Através dessa análise, o texto estabelece a importância da informação gravada que uma máquina pode ler e executar. Por fim, a lição conecta essa automação musical ao desenvolvimento da Máquina Analítica de Charles Babbage, que uniria o cálculo à programação.
+
+Link: https://notebook.google.com/notebook/d408dd87-cf28-4dd8-9c8e-8f8ad26e0a1b

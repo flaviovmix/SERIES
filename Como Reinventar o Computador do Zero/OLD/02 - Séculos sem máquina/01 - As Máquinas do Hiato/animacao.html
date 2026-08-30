@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As Máquinas do Hiato — Equipamento 03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a; --ruim:#a04b3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink); overflow:hidden; display:flex; flex-direction:column}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(32px,6vw,62px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:780px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:640px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+.ficha{display:flex; gap:14px; margin-top:18px; flex-wrap:wrap; justify-content:center; max-width:920px}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:280px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14px; line-height:1.5}
+.ficha .texto b{font-weight:600}
+
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:16px; max-width:700px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5; text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+.legenda.erro{color:var(--ruim)}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+.resposta{display:flex; gap:10px; justify-content:center; align-items:center; margin-top:10px}
+.resposta input{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:22px; font-weight:600;
+  width:140px; text-align:center; padding:8px 10px; color:var(--ink);
+  background:var(--bg); border:1px solid var(--line); border-radius:10px; outline:none;
+}
+.resposta input:focus{border-color:var(--accent)}
+
+/* ossos de napier */
+.ossos{display:flex; gap:10px; justify-content:center; align-items:flex-end; margin:8px 0 4px}
+.osso{display:flex; flex-direction:column; align-items:center; gap:6px}
+.osso .titulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; color:var(--sub)}
+.osso .titulo b{color:var(--accent); font-size:16px}
+.osso-cel{
+  position:relative; width:74px; height:74px; border:2px solid var(--line); border-radius:8px;
+  background:var(--bg); font-family:'IBM Plex Mono',Consolas,monospace; font-weight:600; font-size:20px;
+  transition:all .3s;
+}
+.osso-cel::before{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(to top right, transparent 49.4%, var(--line) 49.4% 50.6%, transparent 50.6%);
+}
+.osso-cel .dez{position:absolute; top:8px; left:12px}
+.osso-cel .uni{position:absolute; bottom:8px; right:12px}
+.osso-cel.hl-dez .dez, .osso-cel.hl-uni .uni{color:var(--accent); text-shadow:0 0 12px rgba(140,90,34,.4)}
+.osso-cel.hl-cel{border-color:var(--accent); box-shadow:0 0 0 3px rgba(140,90,34,.15)}
+.diagonais{
+  display:flex; gap:14px; justify-content:center; margin-top:10px;
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; color:var(--sub);
+}
+.diagonais span b{color:var(--accent)}
+
+/* regua de calculo */
+.regua-wrap{margin:6px 0 2px}
+.regua-svg{width:100%; max-width:560px; display:block; margin:0 auto}
+.regua-slider{width:100%; max-width:560px; margin:12px auto 0; display:block; accent-color:var(--accent)}
+.leitura{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub); margin-top:8px;
+}
+.leitura b{color:var(--accent)}
+
+/* svg anims */
+svg{overflow:visible}
+.gear{transform-box:fill-box; transform-origin:center; animation:spin 12s linear infinite}
+.gear.rev{animation-direction:reverse; animation-duration:8s}
+.gear.lento{animation-duration:20s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rete{transform-box:fill-box; transform-origin:center; animation:spin 16s linear infinite}
+.lua{transform-box:fill-box; transform-origin:60px 60px; animation:spin 10s linear infinite}
+
+.linha-tempo{width:min(640px,94%); margin:16px auto 0}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600; transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 12px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  .osso-cel{width:58px; height:58px; font-size:16px}
+  .osso-cel .dez{top:6px; left:9px}
+  .osso-cel .uni{bottom:6px; right:9px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 03 <span class="dot">·</span> AS MÁQUINAS DO HIATO</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 03 · série equipamentos</div>
+    <h1 class="reveal">As Máquinas<br>do Hiato</h1>
+    <p class="lede reveal">Entre o ábaco e a Pascalina existem 5 mil anos. O caminho não ficou vazio:
+    quatro máquinas engenhosas moram nesse intervalo. Quando o áudio pedir, aperte <b>Próximo</b>.
+    Nas práticas, pause e resolva.</p>
+  </section>
+
+  <!-- 2 · a linha do tempo -->
+  <section class="step">
+    <div class="kicker reveal">onde estamos</div>
+    <h2 class="reveal">5 mil anos entre duas máquinas</h2>
+    <div class="linha-tempo reveal">
+      <svg viewBox="0 0 640 120" aria-label="linha do tempo do hiato">
+        <line x1="20" y1="60" x2="620" y2="60" stroke="var(--line)" stroke-width="3"/>
+        <g font-family="IBM Plex Mono,monospace" font-size="10" fill="var(--sub)" text-anchor="middle">
+          <circle cx="40" cy="60" r="7" fill="var(--ok)"/>
+          <text x="40" y="34">ÁBACO</text><text x="40" y="90">3500 a.C.</text>
+          <circle cx="205" cy="60" r="6" fill="var(--accent)"/>
+          <text x="205" y="34">ANTICÍTERA</text><text x="205" y="90">~100 a.C.</text>
+          <circle cx="330" cy="60" r="6" fill="var(--accent)"/>
+          <text x="330" y="34">ASTROLÁBIO</text><text x="330" y="90">séc. 8-10</text>
+          <circle cx="480" cy="60" r="6" fill="var(--accent)"/>
+          <text x="480" y="34">NAPIER · RÉGUA</text><text x="480" y="90">1614-1622</text>
+          <circle cx="600" cy="60" r="7" fill="var(--line)"/>
+          <text x="600" y="34">PASCALINA</text><text x="600" y="90">1642</text>
+        </g>
+      </svg>
+    </div>
+    <p class="lede reveal">Enquanto a Europa medieval brigava até com os algarismos (episódio anterior),
+    gregos antigos e o mundo islâmico construíam máquinas de calcular o céu. E na virada pro século 17,
+    dois escoceses e um inglês atacaram a conta mais cansativa de todas: a multiplicação.</p>
+  </section>
+
+  <!-- 3 · anticitera -->
+  <section class="step">
+    <div class="kicker reveal">máquina 1 de 4</div>
+    <h2 class="reveal">O Mecanismo de Anticítera</h2>
+    <div class="reveal" style="margin-top:14px">
+      <svg width="220" height="130" viewBox="0 0 220 130" aria-label="engrenagens de anticitera">
+        <g class="gear lento"><circle cx="70" cy="65" r="42" fill="none" stroke="var(--accent)" stroke-width="10" stroke-dasharray="7 8"/><circle cx="70" cy="65" r="14" fill="var(--accent)"/></g>
+        <g class="gear rev"><circle cx="138" cy="45" r="26" fill="none" stroke="var(--accent2)" stroke-width="8" stroke-dasharray="5 6"/><circle cx="138" cy="45" r="8" fill="var(--accent2)"/></g>
+        <g class="gear"><circle cx="176" cy="92" r="20" fill="none" stroke="var(--sub)" stroke-width="7" stroke-dasharray="4 5"/><circle cx="176" cy="92" r="6" fill="var(--sub)"/></g>
+        <circle class="lua" cx="60" cy="20" r="6" fill="var(--ink)"/>
+      </svg>
+    </div>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">ficha</div>
+        <div class="texto"><b>Grécia, ~100 a.C.</b> Achado em 1901 por mergulhadores, num naufrágio perto da ilha de Anticítera. Mais de 30 engrenagens de bronze numa caixa do tamanho de um livro.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Prever o céu: posição do Sol e da Lua, eclipses e até o calendário dos jogos gregos. Você girava uma manivela e a máquina "adiantava" o universo.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">por que impressiona</div>
+        <div class="texto">Nada tão complexo aparece de novo por <b>~1.400 anos</b>. É um computador analógico: as engrenagens não contam dígitos, elas IMITAM as proporções do céu.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · astrolabio -->
+  <section class="step">
+    <div class="kicker reveal">máquina 2 de 4</div>
+    <h2 class="reveal">O Astrolábio</h2>
+    <div class="reveal" style="margin-top:14px">
+      <svg width="170" height="150" viewBox="0 0 170 150" aria-label="astrolabio">
+        <circle cx="85" cy="80" r="62" fill="none" stroke="var(--sub)" stroke-width="5"/>
+        <circle cx="85" cy="80" r="50" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <circle cx="85" cy="80" r="32" fill="none" stroke="var(--line)" stroke-width="2"/>
+        <g class="rete">
+          <line x1="85" y1="22" x2="85" y2="138" stroke="var(--accent)" stroke-width="3"/>
+          <line x1="30" y1="80" x2="140" y2="80" stroke="var(--accent2)" stroke-width="3"/>
+          <circle cx="85" cy="34" r="6" fill="var(--accent)"/>
+          <circle cx="122" cy="80" r="4.5" fill="var(--accent2)"/>
+        </g>
+        <circle cx="85" cy="80" r="5" fill="var(--ink)"/>
+        <rect x="79" y="6" width="12" height="10" rx="3" fill="none" stroke="var(--sub)" stroke-width="3"/>
+      </svg>
+    </div>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">ficha</div>
+        <div class="texto">Ideia grega antiga, <b>aperfeiçoado no mundo islâmico entre os séculos 8 e 10</b>. Um disco de latão que cabia na mão, com placas giratórias imitando o céu.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Medir a altura de uma estrela e, girando o disco, descobrir <b>a hora, a latitude e a direção de Meca</b>. Navegação, astronomia e religião no mesmo aparelho.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">o truque</div>
+        <div class="texto">Como Anticítera: calcular <b>por analogia</b>. Você não faz conta; você gira a miniatura do céu até ela combinar com o céu de verdade, e lê a resposta.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · napier: ficha + demo -->
+  <section class="step">
+    <div class="kicker reveal">máquina 3 de 4 · john napier, escócia</div>
+    <h2 class="reveal">Os Ossos de Napier (1617)</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legOssosDemo">Napier inventou os logaritmos (1614) e estes bastões (1617) pra ninguém mais sofrer multiplicando. Aperte "passo" e veja o <b>17 × 4</b> se resolver sozinho.</div>
+      <div class="ossos">
+        <div class="osso">
+          <div class="titulo">bastão do <b>1</b></div>
+          <div class="osso-cel" id="cel1"><span class="dez">0</span><span class="uni">4</span></div>
+        </div>
+        <div class="osso">
+          <div class="titulo">bastão do <b>7</b></div>
+          <div class="osso-cel" id="cel7"><span class="dez">2</span><span class="uni">8</span></div>
+        </div>
+        <div class="osso">
+          <div class="titulo mono" style="opacity:.8">linha do × <b>4</b></div>
+          <div class="mono" style="font-size:30px; font-weight:600; padding:18px 6px" id="resDemo">?</div>
+        </div>
+      </div>
+      <div class="diagonais" id="diagDemo"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnOssoPasso">passo →</button>
+        <button class="btn-mini" id="btnOssoReinicia">reiniciar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · pratica 1: ossos -->
+  <section class="step">
+    <div class="kicker reveal">pratique · ossos de napier</div>
+    <h2 class="reveal">Sua vez: 23 × 6</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legOssosPratica">Pause o áudio. Cada bastão mostra dezena/unidade da tabuada na linha do 6. Some pelas <b>diagonais</b>, da direita pra esquerda, e escreva o resultado.</div>
+      <div class="ossos">
+        <div class="osso">
+          <div class="titulo">bastão do <b>2</b></div>
+          <div class="osso-cel"><span class="dez">1</span><span class="uni">2</span></div>
+        </div>
+        <div class="osso">
+          <div class="titulo">bastão do <b>3</b></div>
+          <div class="osso-cel"><span class="dez">1</span><span class="uni">8</span></div>
+        </div>
+      </div>
+      <div class="diagonais"><span>unidade = <b>8</b></span><span>dezena = 2 + 1 = <b>?</b></span><span>centena = <b>?</b></span></div>
+      <div class="resposta">
+        <input type="number" id="respOssos" inputmode="numeric" placeholder="23×6">
+        <button class="btn-mini cheio" id="confereOssos">conferir</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · regua de calculo -->
+  <section class="step">
+    <div class="kicker reveal">máquina 4 de 4 · william oughtred, 1622</div>
+    <h2 class="reveal">A Régua de Cálculo</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legRegua">Duas escalas onde a DISTÂNCIA é o logaritmo: deslizar = somar distâncias = <b>multiplicar</b>. Arraste a escala de cima até o <b>1</b> dela ficar sobre o <b>2</b> de baixo.</div>
+      <div class="regua-wrap">
+        <svg class="regua-svg" viewBox="0 0 600 130" id="reguaSvg" aria-label="regua de calculo">
+          <defs><clipPath id="clipTopo"><rect x="8" y="4" width="584" height="58"/></clipPath></defs>
+          <rect x="8" y="10" width="584" height="52" rx="6" fill="var(--bg)" stroke="var(--line)" stroke-width="2"/>
+          <g clip-path="url(#clipTopo)"><g id="escalaTopo"></g></g>
+          <rect x="8" y="66" width="584" height="52" rx="6" fill="var(--bg)" stroke="var(--line)" stroke-width="2"/>
+          <g id="escalaBase"></g>
+          <line id="cursorLinha" x1="0" y1="4" x2="0" y2="126" stroke="var(--ruim)" stroke-width="2" opacity="0"/>
+        </svg>
+        <input type="range" class="regua-slider" id="reguaSlider" min="0" max="240" value="0" step="1" aria-label="deslizar a escala de cima">
+      </div>
+      <div class="leitura" id="leituraRegua">o 1 de cima está sobre: <b>1.00</b></div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">recapitulando</div>
+    <h2 class="reveal">Engenhosas, mas nenhuma<br>faz a conta sozinha</h2>
+    <p class="lede reveal">Anticítera e o astrolábio calculam por analogia: imitam o céu em miniatura.
+    Os ossos e a régua encurtam o trabalho, mas quem soma as diagonais e lê as escalas é você.
+    Nenhuma delas pega dois números e devolve a soma, dígito por dígito, com vai-um e tudo.</p>
+    <p class="lede reveal">Vinte anos depois da régua, em 1642, um francês de 19 anos, entediado
+    de somar impostos pro pai, resolve exatamente isso. No próximo episódio: <b>a Pascalina</b>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- tela 5: demo ossos 17 x 4 ----------
+const cel1 = document.getElementById('cel1');
+const cel7 = document.getElementById('cel7');
+const resDemo = document.getElementById('resDemo');
+const diagDemo = document.getElementById('diagDemo');
+const legOssosDemo = document.getElementById('legOssosDemo');
+const passosOsso = [
+  () => {
+    cel1.classList.add('hl-cel'); cel7.classList.add('hl-cel');
+    legOssosDemo.innerHTML = 'Pego os bastões do <b>1</b> e do <b>7</b> (o 17) e olho a linha da tabuada do <b>4</b>: 1×4 = 04 e 7×4 = 28, cada célula com dezena/unidade separadas pela diagonal.';
+  },
+  () => {
+    cel7.classList.add('hl-uni');
+    diagDemo.innerHTML = '<span>diagonal da direita: só o 8 → unidade = <b>8</b></span>';
+    legOssosDemo.innerHTML = 'Leio pelas <b>diagonais</b>, da direita pra esquerda. A primeira só tem o 8.';
+  },
+  () => {
+    cel1.classList.add('hl-uni'); cel7.classList.add('hl-dez');
+    diagDemo.innerHTML = '<span>unidade = <b>8</b></span><span>diagonal do meio: 4 + 2 = <b>6</b></span>';
+    legOssosDemo.innerHTML = 'A diagonal do meio junta o 4 (do bastão 1) com o 2 (do bastão 7): 4 + 2 = 6.';
+  },
+  () => {
+    resDemo.textContent = '68';
+    resDemo.style.color = 'var(--accent)';
+    legOssosDemo.innerHTML = '<b>17 × 4 = 68.</b> Nenhuma multiplicação de cabeça: só olhar tabuada pronta e somar diagonais.';
+    legOssosDemo.className = 'legenda ok';
+  },
+];
+let passoOsso = 0;
+document.getElementById('btnOssoPasso').addEventListener('click', () => {
+  if (passoOsso >= passosOsso.length) return;
+  passosOsso[passoOsso]();
+  passoOsso++;
+  if (passoOsso === passosOsso.length) document.getElementById('btnOssoPasso').disabled = true;
+});
+document.getElementById('btnOssoReinicia').addEventListener('click', () => {
+  passoOsso = 0;
+  cel1.className = 'osso-cel'; cel7.className = 'osso-cel';
+  resDemo.textContent = '?'; resDemo.style.color = '';
+  diagDemo.innerHTML = '';
+  legOssosDemo.className = 'legenda';
+  legOssosDemo.innerHTML = 'Aperte "passo" e veja o <b>17 × 4</b> se resolver sozinho.';
+  document.getElementById('btnOssoPasso').disabled = false;
+});
+
+// ---------- tela 6: pratica ossos 23 x 6 = 138 ----------
+const legOssosPratica = document.getElementById('legOssosPratica');
+document.getElementById('confereOssos').addEventListener('click', () => {
+  const v = parseInt(document.getElementById('respOssos').value, 10);
+  if (v === 138) {
+    legOssosPratica.innerHTML = '<b>138! Unidade 8, dezena 2+1=3, centena 1. Pode voltar o audio.</b>';
+    legOssosPratica.className = 'legenda ok';
+  } else {
+    legOssosPratica.textContent = 'Quase. Some pelas diagonais: unidade = 8; dezena = 2 + 1; o 1 que sobra na esquerda e a centena.';
+    legOssosPratica.className = 'legenda erro';
+  }
+});
+
+// ---------- tela 7: regua de calculo ----------
+// escala logaritmica: x(v) = log10(v) * LARG; topo desliza; alinhar 1-do-topo sobre o alvo
+const LARG = 560; // px svg de 1 a 10
+const marcas = [1, 1.5, 2, 2.5, 3, 4, 5, 6, 7, 8, 9, 10];
+function montaEscala(gId, yTexto, yT1, yT2) {
+  const g = document.getElementById(gId);
+  let html = '';
+  marcas.forEach((v) => {
+    const x = 16 + Math.log10(v) * LARG;
+    html += `<line x1="${x}" y1="${yT1}" x2="${x}" y2="${yT2}" stroke="var(--sub)" stroke-width="2"/>`;
+    html += `<text x="${x}" y="${yTexto}" text-anchor="middle" font-size="13" font-family="IBM Plex Mono,monospace" fill="var(--ink)" font-weight="600">${v}</text>`;
+  });
+  g.innerHTML = html;
+}
+montaEscala('escalaTopo', 30, 40, 56);
+montaEscala('escalaBase', 108, 72, 88);
+
+const slider = document.getElementById('reguaSlider');
+const topo = document.getElementById('escalaTopo');
+const leitura = document.getElementById('leituraRegua');
+const legRegua = document.getElementById('legRegua');
+const cursorLinha = document.getElementById('cursorLinha');
+const alvos = [
+  { a: 2, b: 3, txt: 'Arraste até o 1 de cima ficar sobre o 2 de baixo.' },
+  { a: 2.5, b: 4, txt: 'Agora o desafio: 1 de cima sobre o 2.5 de baixo.' },
+];
+let alvoIdx = 0;
+slider.addEventListener('input', () => {
+  const off = parseFloat(slider.value); // px de deslocamento
+  topo.setAttribute('transform', `translate(${off},0)`);
+  const sob = Math.pow(10, off / LARG);
+  leitura.innerHTML = 'o 1 de cima está sobre: <b>' + sob.toFixed(2) + '</b>';
+  if (alvoIdx >= alvos.length) return;
+  const alvo = alvos[alvoIdx];
+  const offAlvo = Math.log10(alvo.a) * LARG;
+  if (Math.abs(off - offAlvo) < 3.5) {
+    const xRes = 16 + offAlvo + Math.log10(alvo.b) * LARG;
+    cursorLinha.setAttribute('x1', xRes); cursorLinha.setAttribute('x2', xRes);
+    cursorLinha.setAttribute('opacity', '1');
+    const produto = alvo.a * alvo.b;
+    legRegua.innerHTML = `<b>Alinhou! Olhe embaixo do ${alvo.b} de cima (linha vermelha): ${produto}. Ou seja, ${alvo.a} × ${alvo.b} = ${produto}, sem fazer conta.</b>`;
+    legRegua.className = 'legenda ok';
+    alvoIdx++;
+    if (alvoIdx < alvos.length) {
+      setTimeout(() => {
+        legRegua.innerHTML = alvos[alvoIdx].txt;
+        legRegua.className = 'legenda';
+        cursorLinha.setAttribute('opacity', '0');
+      }, 3800);
+    } else {
+      setTimeout(() => {
+        legRegua.innerHTML = '<b>Fechou as duas! Essa regua guiou engenheiros por 350 anos, ate as missoes Apollo. Pode voltar o audio.</b>';
+        legRegua.className = 'legenda ok';
+      }, 3800);
+    }
+  }
+});
+</script>
+</body>
+</html>

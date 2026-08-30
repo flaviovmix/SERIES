@@ -1,0 +1,7 @@
+Titulo: A Máquina Analítica de Babbage e Ada
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-10 - Equipamentos 09 - A Máquina Analítica
+
+Descricao:
+Os textos descrevem o nono episódio da série EQUIPAMENTOS, que explora a transição tecnológica entre dispositivos de cálculo mecânico e a lógica dos computadores modernos. O foco central é a obra de Charles Babbage, que projetou a Máquina Diferencial para automatizar tabelas matemáticas e a Máquina Analítica, precursora do computador de uso geral com divisões entre processamento e memória. As fontes destacam o papel fundamental de Ada Lovelace, reconhecida como a primeira programadora por criar o primeiro software da história e prever que tais máquinas poderiam processar símbolos além de números. O conteúdo é estruturado para acompanhar uma animação interativa de oito telas, permitindo que o público visualize o funcionamento das engrenagens e pratique conceitos básicos de programação. Além disso, os documentos fazem uma reparação histórica ao mencionar Wilhelm Schickard e concluem que o vapor e as peças mecânicas limitaram a execução desses projetos na época. Por fim, o material prepara o terreno para o surgimento da eletricidade na computação através do telégrafo.
+
+Link: https://notebook.google.com/notebook/11e73b53-59fc-449e-b480-5e0f95f238e8

@@ -1,0 +1,11 @@
+ANTES DA ELETRICIDADE - CONTEXTO
+=================================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o segundo episodio da serie Como Reinventar o Computador do Zero, que reconstroi o computador peca por peca, na ordem da historia, do abaco ate o Transformer de 2017. O primeiro episodio apresentou a serie; este comeca a construcao de verdade, cobrindo as maquinas de calcular de antes da eletricidade: o abaco, a calculadora mecanica de Blaise Pascal, a maquina analitica de Charles Babbage e o primeiro programa da historia, escrito por Ada Lovelace.
+
+Ao final o ouvinte entende: como o abaco representa calculo abstrato com pecas fisicas, o que a calculadora de Pascal automatizou, por que a maquina analitica de Babbage era diferente de tudo que veio antes (podia ser programada, como o tear de Jacquard), e por que as notas de Ada Lovelace fazem dela a autora do primeiro codigo de computador publicado.
+
+Por que importa: essa linha de instrumentos de contagem e o comeco da linha que leva direto ao computador moderno. A pergunta que o episodio deixa armada (o que exatamente diferencia a maquina de Babbage de um abaco?) e a pergunta que o resto da serie responde.
+
+Use este contexto apenas como apoio.

@@ -1,0 +1,7 @@
+Titulo: Nascimento do Z3, Mark I e ENIAC
+Notebook: 07-01-As primeiras máquinas que ligaram
+
+Descricao:
+Estes materiais apresentam o início da era da computação moderna entre 1936 e 1946, focando na transição das teorias de papel para máquinas reais. O conteúdo detalha o funcionamento do Z3 alemão, do Mark I de Harvard e do ENIAC americano, destacando a evolução técnica dos relés mecânicos para as rápidas válvulas eletrônicas. Os textos descrevem as motivações dos inventores e o trabalho fundamental das mulheres que programavam o ENIAC manualmente através de cabos e painéis. Um ponto central da narrativa é que, embora essas máquinas já realizassem cálculos complexos, as instruções de programação ainda eram armazenadas externamente. Essa limitação prepara o terreno para a futura inovação de guardar dados e comandos em uma mesma memória unificada.
+
+Link: https://notebook.google.com/notebook/82ce3e3e-5057-437f-bcb8-76d9b065ce18

@@ -1,0 +1,7 @@
+Titulo: Eletricidade explicada como água num prédio
+Notebook: EX-01-Volt Ampere e Watt
+
+Descricao:
+Estes documentos detalham a estrutura de um guia educativo projetado para explicar as unidades de medida da eletricidade de forma acessível e prática. O conteúdo utiliza a analogia de um prédio com caixa d'água para traduzir conceitos complexos, como volt, ampere e watt, em elementos visuais compreensíveis, como pressão e vazão. O roteiro é estritamente focado na utilidade cotidiana, evitando termos acadêmicos, nomes de cientistas ou contextos históricos para manter o foco no entendimento direto do ouvinte. Através de oito telas interativas, o material ensina a diferenciar o consumo de energia de aparelhos comuns e explica por que componentes como disjuntores e fiações possuem especificações diferentes. Ao final, o objetivo é capacitar qualquer pessoa a interpretar etiquetas de aparelhos e contas de luz sem confusão.
+
+Link: https://notebook.google.com/notebook/1a5d9594-f67d-4fb5-af84-12c9b78b11cf

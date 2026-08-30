@@ -1,0 +1,31 @@
+Inicie dizendo: A Agulha Que Se Mexeu
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Agulha Que Se Mexeu.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o terceiro episodio da etapa DOMESTICANDO O RAIO, a quarta etapa da serie Como Reinventar o Computador do Zero. Os anteriores cobriram a eletricidade estatica ate 1752 e a pilha de Volta de 1800.
+
+FOCO: a eletricidade virando forca mecanica, de 1820 a 1825. A descoberta de Orsted de que a agulha da bussola vira perto de um fio com corrente, o fato de a forca girar em volta do fio em vez de apontar pra ele, os dois fios paralelos e a bobina de Ampere, e o eletroima de Sturgeon em 1825 com o aperfeicoamento de Joseph Henry. O ponto central e que o eletroima obedece a um interruptor, a distancia.
+
+NAO explicar inducao, gerador, dinamo, motor eletrico comercial, rele, telegrafo nem lampada: sao os proximos episodios desta etapa. So citar no gancho final a pergunta se ima em movimento produz corrente, que e o episodio do Faraday.
+
+A pagina tem 8 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo". Nas telas interativas, avisar que tem botao na tela. Na tela de pratica, convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_A Agulha Que Se Mexeu.txt. NAO invente analogias novas. As unicas autorizadas sao os circulos de agua em volta da pedra que caiu no lago, pra explicar a forca girando em volta do fio, e as voltas da bobina como empurroes somados no mesmo lugar.
+
+Use tambem o Overview.txt como contexto curto.

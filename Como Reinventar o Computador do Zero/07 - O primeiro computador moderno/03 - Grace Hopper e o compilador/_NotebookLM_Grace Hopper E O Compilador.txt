@@ -1,0 +1,141 @@
+Inicie dizendo: Grace Hopper E O Compilador
+---------------
+
+Este e o terceiro e ultimo episodio da etapa O PRIMEIRO COMPUTADOR MODERNO, a setima etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, O Programa Que Mora Na Memoria, cobriu de 1945 a 1949 e terminou com o EDSAC em servico regular em Cambridge, com o programa ja morando na memoria e ainda assim sendo escrito na mao, em binario.
+
+ESTE EPISODIO COBRE DE 1944 A 1959. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pra fechar a etapa.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (4), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+FICHA HUMANA. Este episodio tem uma personagem com ficha: Grace Hopper. A ficha entra na primeira vez que ela e citada e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu. Os dados estao escritos na tela 2: usar exatamente esses. Howard Aiken ja teve ficha no primeiro episodio desta etapa e nao repete; basta lembrar em uma frase quem ele e.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Grace Hopper E O Compilador.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O compilador como um tradutor que trabalha uma vez e entrega o texto pronto, e nao como um interprete que traduz frase por frase enquanto a conversa acontece. Serve so pra dizer o que o compilador faz e quando ele faz.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: GRACE HOPPER E O COMPILADOR)
+
+Retomar em uma frase onde o episodio passado parou: em 1949 o computador moderno ja estava definido. O programa mora na memoria junto com os numeros, a maquina consegue olhar pro proprio programa, e o EDSAC ja atendia pesquisador em fila.
+
+Dizer o que este episodio faz: resolve quem escreve esse programa. Ate aqui, quem escreve e uma pessoa, na mao, em binario, com tabela do lado. Dizer o intervalo em voz alta: este episodio cobre de 1944 a 1959, da guerra ate o COBOL.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o compilador, um programa cujo trabalho e ler texto escrito por gente e produzir o codigo que a maquina executa. Data do primeiro: 1952, o A-0. Lugar: Estados Unidos, primeiro em Harvard e depois na industria.
+
+Motivacao: escrever programa em binario e caro e da errado. Nao e questao de gosto. Uma tabela de codigo tem dezenas de instrucoes, cada endereco e um numero que a pessoa tem que acompanhar de cabeca, e trocar uma linha de lugar obriga a recalcular endereco. Um digito errado no meio de centenas nao aparece na leitura, so aparece quando a maquina faz besteira.
+
+Ficha humana de Grace Hopper. Nasceu Grace Brewster Murray em 9 de dezembro de 1906 em Nova York, nos Estados Unidos. O pai, Walter Fletcher Murray, era corretor de seguros, e a familia vinha de origem escocesa e holandesa; ela era a mais velha de tres irmaos. Estudou no Vassar College, onde se formou em matematica e fisica em 1928, e depois em Yale, com mestrado em 1930 e doutorado em matematica em 1934. Deu aula de matematica em Vassar a partir de 1931. Entrou na reserva da Marinha americana em 1943, precisando de uma dispensa porque estava abaixo do peso minimo exigido, formou-se em primeiro lugar na turma de treinamento em 1944 e foi designada, como tenente, pro projeto de computacao da Marinha em Harvard. Morreu em 1 de janeiro de 1992, aos 85 anos, em Arlington, na Virginia, e foi enterrada com honras militares.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (COMO SE PROGRAMAVA DE VERDADE)
+
+Descrever o trabalho dela em 1944. A maquina era o Mark I, aquela de quinze metros e rele do primeiro episodio desta etapa, e o chefe era Howard Aiken, o mesmo que achou as rodas de latao de Babbage no sotao.
+
+Programar era isto: escrever em folha de papel a sequencia de operacoes, converter cada operacao no codigo numerico que a maquina entendia, controlar de cabeca em que posicao cada numero estava guardado, e furar tudo isso numa fita de papel. Depois rodar e torcer.
+
+Dizer o custo do erro com um exemplo concreto: um digito trocado no endereco faz a maquina somar o numero errado. Ela nao reclama. Ela responde com um resultado que parece plausivel. Achar isso significava conferir a mao a fita inteira.
+
+Contar aqui a historia da mariposa, com a ressalva honesta: em 1947, trabalhando no Mark II, a equipe encontrou uma mariposa presa num rele, tirou o bicho e colou ele no caderno de registro com uma anotacao dizendo que era o primeiro caso real de um bug encontrado. A palavra bug ja era usada por engenheiro antes disso pra defeito de equipamento; a graca do episodio e que dessa vez o bug era um inseto de verdade. Nao dizer que a palavra nasceu ali.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (A TRADUCAO NA MAO, TELA INTERATIVA)
+
+Mostrar concretamente o que significa converter. Uma instrucao de maquina e um numero. Uma parte desse numero diz o que fazer, e a outra parte diz com quem fazer. Por exemplo, um pedaco que significa somar e um pedaco que significa o endereco onde esta o numero a somar. A pessoa que programa precisa saber a tabela de cor ou consultar toda vez.
+
+Dizer o ponto que abre o resto do episodio: essa conversao e mecanica. Ela e sempre a mesma regra, sem julgamento, sem criatividade. Toda vez que alguem escreve somar, sai o mesmo pedaco de codigo. Trabalho mecanico e repetitivo e exatamente o tipo de coisa que a serie inteira vem passando pra maquina desde o abaco.
+
+Avisar: a tela tem uma tabelinha de instrucoes de um lado e a memoria do outro. Convide o ouvinte a escolher uma palavra e ver o numero que sai, e depois fazer o caminho contrario, escolher um numero e descobrir que instrucao era aquela.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O A-0, 1952)
+
+A ideia de Hopper foi essa: se a conversao e mecanica, escreve um programa que faca a conversao. O programa recebe o texto escrito por uma pessoa e devolve o codigo de maquina pronto. Ela terminou o A-0 em 1952, trabalhando ja na industria, na empresa que tinha construido o UNIVAC.
+
+Explicar o que o A-0 fazia sem inflar: ele nao era uma linguagem parecida com as de hoje. O programador escrevia uma sequencia de chamadas com um numero e alguns parametros, e o A-0 montava o programa final juntando trechos de codigo ja escritos e guardados em fita. Era mais um montador de pecas do que um tradutor de frases. Mas o principio e o que interessa: um programa produzindo outro programa.
+
+Usar a analogia autorizada e deixar claro que e analogia: o compilador e um tradutor que trabalha uma vez, antes, e entrega o texto todo pronto pra maquina executar depois. Nao e um interprete traduzindo frase por frase enquanto a conversa acontece.
+
+Contar a resistencia, que e bem documentada e vale contar sem exagero: ela ouviu que computador nao entende ingles, que computador so faz aritmetica, e que aquilo era desperdicio de maquina. E tinha um fundo tecnico legitimo: maquina era carissima e gastar tempo dela traduzindo texto, em vez de calcular, parecia luxo. O argumento perdeu quando ficou claro que o tempo de gente era mais caro que o tempo de maquina.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (POR QUE ISSO PEGOU)
+
+Listar o que muda quando existe um tradutor no meio, com calma, uma coisa de cada vez.
+
+Primeiro, o endereco deixa de ser problema da pessoa. Quem escreve da um nome pra posicao e o tradutor decide onde ela fica. Mexer uma linha de lugar deixa de obrigar a recalcular tudo.
+
+Segundo, aparece a biblioteca. O trecho pronto que a serie viu nascer no EDSAC, com as sub-rotinas de Cambridge, passa a poder ser chamado pelo nome. Uma pessoa usa raiz quadrada sem saber como aquilo foi escrito.
+
+Terceiro, e esse e o mais util no dia a dia: o tradutor confere. Se o texto disser uma coisa que nao existe na tabela, ele reclama antes de rodar. Uma parte dos erros que antes so apareciam com a maquina fazendo besteira passa a aparecer na hora de traduzir.
+
+Dizer o preco, pra ser honesto: o codigo que sai do tradutor costuma ser um pouco pior que o codigo que um bom programador escreveria na mao, e a pessoa perde contato com o que a maquina faz de fato. A serie ja mostrou cada peca por dentro, entao vale dizer: dai pra frente, quase ninguem mais olha pra elas.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (FLOW-MATIC E COBOL)
+
+O A-0 abriu caminho e ela nao parou nele. No meio dos anos 50 veio o FLOW-MATIC, a primeira linguagem que usava palavra de ingles de negocio pra descrever o que fazer, com comando parecido com uma frase, pensada pra quem trabalha com folha de pagamento e estoque, e nao pra quem faz fisica.
+
+Em 1959 um comite chamado CODASYL se reuniu pra criar uma linguagem comum de negocios, e ela entrou como consultora tecnica. Saiu dali o COBOL, que herdou muito do FLOW-MATIC. Vale dizer o dado que espanta: o COBOL continua rodando hoje em banco e em sistema de governo, quase setenta anos depois.
+
+Dizer o efeito geral, que fecha a ideia do episodio: a partir daqui a torre nao parou mais de crescer. Cada linguagem nova e escrita apoiada na anterior, e cada uma esconde um pouco mais da maquina. A pessoa que escreve hoje uma linha numa linguagem moderna esta em cima de camadas que descem ate o binario que a serie montou na etapa 6.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA: ESCREVA EM PALAVRA)
+
+Convidar a pausar o audio e resolver na tela: tem um editorzinho onde da pra escrever tres linhas usando palavras, do tipo somar, guardar e mostrar, e um botao que traduz.
+
+O objetivo e ver as duas coisas ao mesmo tempo: o que a pessoa escreveu e o que a maquina recebeu. Escrever uma linha errada de proposito tambem faz parte: o tradutor reclama e diz onde, em vez de deixar a maquina rodar e dar resultado errado.
+
+Dizer o que a pratica ensina antes de mandar voltar: ninguem apagou o binario. Ele continua ali embaixo, igualzinho. O que mudou e que agora tem um programa fazendo a parte chata da conversao.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular: em 1944 programar era escrever em papel, converter na mao pra numero e furar fita, e um digito errado custava uma tarde. Em 1952 o A-0 mostrou que um programa pode montar outro programa. No meio dos anos 50 o FLOW-MATIC deixou a pessoa escrever em palavra de negocio, e em 1959 o COBOL saiu do comite CODASYL e ficou rodando por decadas.
+
+Fechar a etapa inteira: nesta etapa o computador saiu do papel. As maquinas ligaram, o programa passou a morar na memoria junto com os numeros, e depois deixou de precisar ser escrito em binario. Dizer onde a etapa para: 1959.
+
+Gancho: o que continua enorme e a maquina em si. Ela ainda e um salao cheio de valvula que esquenta, gasta luz e queima. Na proxima etapa, tres pessoas num laboratorio de telefonia mostram um pedacinho de material que faz o servico da valvula sem filamento, sem vidro e sem calor. A partir dali a maquina so encolhe.

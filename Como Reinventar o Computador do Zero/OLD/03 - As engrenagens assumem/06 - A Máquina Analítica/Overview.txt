@@ -1,0 +1,15 @@
+A MAQUINA ANALITICA - CONTEXTO
+==============================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o nono episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard, os automatos e a caixa de musica. Este e o episodio em que as duas linhas da serie se encontram: o cartao que obedece (tear) e a engrenagem que calcula (Pascalina, Leibniz). Charles Babbage desenhou, em Londres, as duas maquinas: a Maquina Diferencial (proposta em 1822, tabelas matematicas so com somas) e a Maquina Analitica (de 1834 ate a morte dele em 1871, o projeto de um computador de uso geral, 100 anos antes da tecnologia dar conta). E Ada Lovelace escreveu em 1843, nas Notas da traducao dela, o primeiro programa publicado da historia.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma demonstracao passo a passo do metodo das diferencas (tabelar x ao quadrado so com somas), uma tela interativa da anatomia da Analitica (moinho, armazem, cartoes, impressora, com o paralelo processador/memoria/programa/saida), uma demonstracao de um programinha de 3 cartoes (pega V1, soma V2, guarda em V3) e uma pratica (montar a fila de cartoes que calcula (A + B) x C e executa na tela). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: o problema das tabelas com erros (e a frase do Babbage de querer os calculos feitos a vapor), o truque das diferencas que troca multiplicacao por soma, por que a Diferencial nao ficou pronta (17 mil libras do governo, brigas, engenharia no limite; os Scheutz construiram em 1853 e o Museu de Ciencia de Londres provou em 1991 que o projeto funcionava), a anatomia da Analitica e o paralelo direto com o computador de hoje, e o papel de Ada Lovelace: o primeiro programa (numeros de Bernoulli, Nota G) e a visao de que a maquina podia manipular simbolos, nao so numeros.
+
+O episodio tambem faz um acerto de contas com a historia: antes da Pascalina, Wilhelm Schickard ja tinha projetado uma calculadora mecanica (1623), que se perdeu num incendio e so foi redescoberta em 1957 nas cartas dele pro astronomo Kepler.
+
+Por que importa: a Analitica e o computador descrito em texto um seculo antes de existir, e Ada e a primeira pessoa a enxergar o que ele significaria. A limitacao (engrenagem e vapor lentos e caros demais) prepara o proximo episodio: a informacao virando eletricidade, com o telegrafo.
+
+Use este contexto apenas como apoio.

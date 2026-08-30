@@ -1,0 +1,10 @@
+# O que nao vai pro git (P1 do plano, fechado em 30/08/2026): audio e video sao
+# insubstituiveis mas pesados demais (2 GB; o GitHub recusa arquivo acima de 100 MB)
+# e moram no backup da Etapa 1, nao no repo. Texto, codigo, imagem e animacao entram.
+*.mp3
+*.mp4
+*.wav
+*.m4a
+__pycache__/
+Thumbs.db
+.DS_Store

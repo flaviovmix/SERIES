@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ábaco 3D — protótipo de estilo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+<style>
+/* O que este modelo tem e os outros nao: um valor montado nas hastes, que e o
+   assunto do episodio. Ele ocupa o miolo do painel, e as casas viram a faixa de
+   apoio embaixo. Fica aqui, e nao na base, pra nao mexer nos outros modelos. */
+.leitura{
+  flex:1; min-height:0; display:flex; align-items:center; justify-content:center;
+  container-type:inline-size;
+}
+/* dois tetos ao mesmo tempo: a altura do painel e a largura que sobra depois de
+   dividir a caixa pelos caracteres do valor (o passo 0.62em e a largura do
+   caractere na IBM Plex Mono). Sem o segundo, "9.999" saia pela borda. */
+.leitura .num{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-weight:600;
+  font-size:min(17vh, 170px, calc(100cqw / (var(--digitos, 1) * 0.62)));
+  line-height:1; color:var(--ink); font-variant-numeric:tabular-nums;
+}
+.hud .linha-total{justify-content:center}
+/* na faixa das casas, a letra pesa e o numero nao: uma diz qual casa, o
+   outro diz quanto tem nela */
+.hud .casas b{font-weight:600; color:var(--ink)}
+
+/* no rodape estreito o painel e uma barra baixa: o numero volta ao tamanho de linha */
+@media (max-width:700px){
+  .leitura{flex:none; margin-top:8px}
+  .leitura .num{font-size:44px}
+}
+/* embutido na capa e visto no telefone: barra curta (ver _base-modelo-3d.css) */
+@media (max-width:700px) and (max-height:520px){
+  .leitura{margin-top:0}
+  .leitura .num{font-size:26px}
+  .hud .casas{font-size:10px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> ÁBACO 3D</div>
+  <div>PROTÓTIPO DE ESTILO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">Clique nas contas pra mover. Arraste fora delas pra <b>girar</b>, role pra aproximar.</div>
+    <div class="leitura"><span class="num mono" id="total">0</span></div>
+    <div class="linha-total">
+      <span class="casas mono" id="casas">M 0 · C 0 · D 0 · U 0</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio" id="btnExemplo">monta 1.234</button>
+      <button class="btn-mini" id="btnLimpar">limpar</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elTotal = document.getElementById('total');
+const elCasas = document.getElementById('casas');
+
+const palco = montaPalco({
+  alvo: [0, 2.5, 0],
+  camPos: [0, 4.0, 11.5],
+  meiaLarguraDesktop: 6.8,
+  meiaLarguraMobile: 4.9,
+  distMin: 10.5,
+  orbitaMin: 6,
+});
+const { scene, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+
+// contas laqueadas (material proprio da maquina)
+const matContaA = new THREE.MeshPhysicalMaterial({ color: 0xb07b31, roughness: 0.3, clearcoat: 0.6, clearcoatRoughness: 0.25, envMapIntensity: 0.45 });
+const matContaB = new THREE.MeshPhysicalMaterial({ color: 0x8c5a22, roughness: 0.3, clearcoat: 0.6, clearcoatRoughness: 0.25, envMapIntensity: 0.45 });
+
+// ---------- moldura ----------
+const LARG = 7;          // vao interno entre as laterais
+const HASTES_Y = [4.5, 3.45, 2.4, 1.35];   // milhar em cima, unidade embaixo
+const abaco = new THREE.Group();
+scene.add(abaco);
+
+const topo = bloco(LARG + 1.1, 0.5, 0.55, materiais.madeira, 0.09);      topo.position.y = 5.3;
+const base = bloco(LARG + 1.1, 0.5, 0.55, materiais.madeira, 0.09);      base.position.y = 0.55;
+const ladoE = bloco(0.5, 5.6, 0.55, materiais.madeiraEscura, 0.09);      ladoE.position.set(-(LARG / 2 + 0.3), 2.92, 0);
+const ladoD = bloco(0.5, 5.6, 0.55, materiais.madeiraEscura, 0.09);      ladoD.position.set(LARG / 2 + 0.3, 2.92, 0);
+const peE = bloco(1.6, 0.3, 1.4, materiais.madeiraEscura, 0.09);         peE.position.set(-(LARG / 2 + 0.3), 0.15, 0);
+const peD = bloco(1.6, 0.3, 1.4, materiais.madeiraEscura, 0.09);         peD.position.set(LARG / 2 + 0.3, 0.15, 0);
+abaco.add(topo, base, ladoE, ladoD, peE, peD);
+
+// ---------- hastes ----------
+const geoHaste = new THREE.CylinderGeometry(0.05, 0.05, LARG + 0.4, 16);
+geoHaste.rotateZ(Math.PI / 2);
+HASTES_Y.forEach((y) => {
+  const h = new THREE.Mesh(geoHaste, materiais.latao);
+  h.position.y = y;
+  h.castShadow = true;
+  abaco.add(h);
+});
+
+// ---------- contas ----------
+// perfil de conta classica (bicone achatado), torneado ao redor do eixo Y
+const perfil = [
+  new THREE.Vector2(0.10, -0.26),
+  new THREE.Vector2(0.34, -0.14),
+  new THREE.Vector2(0.42, 0),
+  new THREE.Vector2(0.34, 0.14),
+  new THREE.Vector2(0.10, 0.26),
+];
+const geoConta = new THREE.LatheGeometry(perfil, 48);
+geoConta.rotateZ(Math.PI / 2);   // eixo do furo deitado, pra deslizar na haste
+geoConta.computeVertexNormals();
+
+const PASSO = 0.56;              // espaco que cada conta ocupa no fio
+const MEIA = LARG / 2 - 0.35;    // primeira posicao encostada na lateral
+const CASAS = ['M', 'C', 'D', 'U'];
+const estado = [0, 0, 0, 0];     // contas ativas (encostadas a esquerda) por haste
+const contas = [];               // meshes clicaveis
+
+HASTES_Y.forEach((y, hi) => {
+  for (let i = 0; i < 9; i++) {
+    const m = new THREE.Mesh(geoConta, hi % 2 ? matContaB : matContaA);
+    m.castShadow = true; m.receiveShadow = true;
+    m.position.set(alvoX(hi, i), y, 0);
+    m.userData = { haste: hi, idx: i };
+    contas.push(m);
+    abaco.add(m);
+  }
+});
+
+// posicao alvo da conta i da haste hi: ativas empacotam a esquerda, inativas a direita
+function alvoX(hi, i) {
+  return i < estado[hi]
+    ? -MEIA + i * PASSO
+    : MEIA - (8 - i) * PASSO;
+}
+
+// ---------- rotulos das casas ----------
+const rotulos = ['MILHAR', 'CENTENA', 'DEZENA', 'UNIDADE'];
+document.fonts.ready.then(() => {
+  rotulos.forEach((r, hi) => {
+    const sp = criaRotulo(r, 1.1, 'right');
+    sp.position.set(-(LARG / 2 + 1.9), HASTES_Y[hi], 0);
+    abaco.add(sp);
+  });
+  redimensiona();   // reaplica visibilidade dos rotulos no viewport atual
+});
+
+// ---------- estado e HUD ----------
+const VALORES = [1000, 100, 10, 1];
+function total() { return estado.reduce((s, n, i) => s + n * VALORES[i], 0); }
+function pintaHud() {
+  elTotal.textContent = total().toLocaleString('pt-BR');
+  // quantos caracteres o valor tem: e o que decide o teto de largura da leitura
+  elTotal.style.setProperty('--digitos', elTotal.textContent.length);
+  elCasas.innerHTML = CASAS
+    .map((c, i) => '<b>' + c + '</b> ' + estado[i])
+    .join(' · ');
+}
+pintaHud();
+
+// ---------- clique nas contas ----------
+aoClicar(contas, (hit) => {
+  const { haste, idx } = hit.object.userData;
+  estado[haste] = idx < estado[haste] ? idx : idx + 1;
+  pintaHud();
+  legenda.innerHTML = 'Casa <b>' + rotulos[haste] + '</b> com <b>' + estado[haste] + '</b> conta' + (estado[haste] === 1 ? '' : 's') + ' no fio.';
+});
+
+// ---------- botoes ----------
+document.getElementById('btnLimpar').addEventListener('click', () => {
+  estado.fill(0);
+  pintaHud();
+  legenda.innerHTML = 'Zerado. Sua vez: clique nas contas.';
+});
+document.getElementById('btnExemplo').addEventListener('click', () => {
+  palco.controls.autoRotate = false;
+  estado.fill(0);
+  pintaHud();
+  const meta = [1, 2, 3, 4];
+  meta.forEach((n, hi) => {
+    setTimeout(() => {
+      estado[hi] = n;
+      pintaHud();
+      legenda.innerHTML = '<b>' + rotulos[hi] + '</b>: ' + n + ' conta' + (n === 1 ? '' : 's') + ' → vale ' + (n * VALORES[hi]).toLocaleString('pt-BR');
+      if (hi === 3) setTimeout(() => legenda.innerHTML = '<b>1.234</b> montado: mesma pedra, casa diferente.', 900);
+    }, 800 * (hi + 1));
+  });
+});
+
+// ---------- animacao ----------
+inicia((dt) => {
+  // contas deslizam suave ate o alvo, com um giro leve enquanto andam
+  for (const m of contas) {
+    const alvo = alvoX(m.userData.haste, m.userData.idx);
+    const dist = alvo - m.position.x;
+    if (Math.abs(dist) > 0.001) {
+      const passo = dist * Math.min(1, dt * 7);
+      m.position.x += passo;
+      m.rotation.x += passo * 1.5;
+    }
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+Inicie dizendo: A Pilha de Volta
+---------------
+
+Este e o segundo episodio da etapa DOMESTICANDO O RAIO, a quarta etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, A Faisca, cobriu de 1600 a 1752 e terminou num impasse: a eletricidade era conhecida, dava choque, viajava por fio, mas era tudo estalo curto. Nao dava pra manter aceso nem regular. Este episodio e o que conserta isso.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas (4 e 5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A garrafa de Leiden como balde que vira de uma vez so, contra a pilha como torneira que fica aberta. E a analogia que amarra o episodio anterior com este.
+- Agua no cano pras tres grandezas do circuito: a pressao da agua e a tensao, a quantidade de agua passando por segundo e a corrente, e um cano estreito e a resistencia. Usar so pra isso.
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A PILHA DE VOLTA)
+
+Retomar em uma frase onde o episodio passado parou: em 1752 a humanidade sabia que eletricidade existe, que ela anda por fio, que da pra guardar numa garrafa e que o raio la de cima e a mesma faisca daqui de baixo. E nao servia pra nada, porque era tudo estalo. Carrega devagar, solta num instante, acabou.
+
+Dizer o que este episodio faz: resolve isso. Em 1800 aparece a primeira eletricidade que dura. Nao e estalo, e fluxo. E a partir dela tudo que vem depois nesta serie fica possivel.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: o assunto e a pilha voltaica, a primeira fonte de corrente continua. Data: 1800, na carta que Alessandro Volta mandou pra Royal Society de Londres. O lugar e o norte da Italia, entre as universidades de Bolonha e Pavia.
+
+Motivacao: e aqui que a historia fica engracada. A pilha nao nasceu de alguem querendo inventar uma fonte de energia. Nasceu de uma briga cientifica de dez anos sobre uma perna de ra que se mexia sozinha. Volta queria provar que o colega dele estava errado, e no meio da discussao construiu o aparelho que ligou o mundo.
+
+Vale registrar o tamanho do salto: antes de 1800 a eletricidade era um instante. Depois de 1800 ela e um estado que da pra manter pelo tempo que quiser. Todo o resto da serie depende dessa mudanca.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A PERNA DE RA)
+
+Bolonha, anos 1780. Luigi Galvani e anatomista, estuda musculo e nervo. Ele repara que perna de ra dissecada se contrai quando encosta metal nela, mesmo com o animal morto ha horas. Publica isso em 1791 e da uma explicacao: existiria uma eletricidade animal, produzida pelo proprio bicho e guardada no musculo. O metal so estaria liberando.
+
+Alessandro Volta, professor de fisica em Pavia, repete o experimento e discorda. Ele nota um detalhe: a contracao forte aparece quando se usam DOIS metais diferentes encostados um no outro, por exemplo cobre e ferro, fechando o caminho pela perna. Com um metal so, quase nada acontece.
+
+A conclusao de Volta: a eletricidade nao vem da ra. Vem do contato entre os dois metais diferentes. A perna nao e a fonte, e o medidor. Um medidor muito sensivel, que estremece com uma corrente fraca demais pra qualquer instrumento da epoca detectar.
+
+Dizer que os dois estavam parcialmente certos, e que isso e honesto com a historia: existe sim eletricidade em nervo e musculo, Galvani nao estava inventando, e a bioeletricidade e um campo de verdade ate hoje. Mas naquele experimento especifico, quem produzia a corrente eram os metais, e nisso Volta acertou.
+
+E a briga rendeu uma coisa boa: pra provar o ponto dele, Volta precisava mostrar eletricidade dos metais SEM ra nenhuma no meio. Precisava de um aparelho.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (A PILHA, TELA INTERATIVA)
+
+O aparelho e simples de descrever, e por isso e tao bonito. Um disco de zinco, um disco de cobre, e entre eles um pedaco de pano ou papelao encharcado em agua salgada. Esse trio e um par. Um par sozinho da uma tensao pequena, cerca de um volt, quase nada.
+
+A ideia de Volta foi empilhar. Zinco, pano molhado, cobre. Zinco, pano molhado, cobre. Dezenas de vezes, uma torre. Cada par soma a sua parte, e a torre inteira entrega a soma. Por isso o nome pilha: e literalmente uma pilha de discos. Com trinta pares da pra sentir um formigamento continuo nos dedos molhados, e nao um estalo.
+
+Volta descreveu isso numa carta a Joseph Banks, presidente da Royal Society, em 1800. Ele descreveu tambem uma versao alternativa, a coroa de tacas: em vez de empilhar, uma fileira de copinhos com agua salgada, ligados por arcos de metal com uma perna de zinco e outra de cobre em cada copo. Mesma coisa, deitada.
+
+E aqui esta a diferenca que importa pra serie inteira: a garrafa de Leiden do episodio passado era um balde. Enche devagar e vira de uma vez so. A pilha e uma torneira. Fica aberta enquanto o circuito estiver ligado. A eletricidade deixou de ser um evento e virou um fornecimento.
+
+Avisar: a tela tem a pilha pra montar. Convide o ouvinte a ir empilhando os pares e ver a tensao subir conforme a torre cresce.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O CIRCUITO FECHADO, TELA INTERATIVA)
+
+Um detalhe que parece burocracia e nao e: corrente so anda em caminho fechado. Se o fio sai de uma ponta da pilha, passa pelo que voce quer ligar e volta na outra ponta, tem corrente. Se o caminho estiver cortado em qualquer ponto, nao tem corrente nenhuma. Nao existe meia corrente, nao existe corrente que sai e nao volta.
+
+Isso e o circuito. Ida e volta. E foi isso que a garrafa de Leiden nunca teve: la a carga ficava guardada esperando um caminho, e quando o caminho aparecia ela ia toda de uma vez.
+
+E daqui sai a peca mais importante do resto da serie, e vale falar em voz alta: se corrente so passa em circuito fechado, entao QUEBRAR o circuito e uma forma de comandar. Um pedacinho de metal que aproxima ou afasta, e a corrente liga ou desliga. Isso e o interruptor. Guardem essa ideia, porque daqui a alguns episodios ela vira porta logica, e porta logica e do que computador e feito.
+
+Vale dizer o que a pilha destravou logo de cara. Poucas semanas depois da carta de Volta, ainda em 1800, dois ingleses, William Nicholson e Anthony Carlisle, meteram os dois fios de uma pilha num copo de agua e viram bolha de gas saindo de cada fio: hidrogenio de um lado, oxigenio do outro. Tinham acabado de separar a agua com eletricidade. Poucos anos depois Humphry Davy usou pilhas gigantes pra isolar sodio e potassio, elementos que ninguem tinha visto puros. A pilha nao serviu so pra ligar coisa: virou ferramenta de descobrir quimica.
+
+Avisar: a tela tem o circuito com uma chave. Convide o ouvinte a abrir e fechar e ver a corrente aparecer e sumir.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (TENSAO, CORRENTE E RESISTENCIA)
+
+Agora as tres palavras que descrevem qualquer circuito, do chuveiro ao processador. Usar a analogia da agua no cano e deixar claro que e so uma analogia.
+
+Tensao e o empurrao. E a pressao da agua no cano. Mede em volt, nome dado em homenagem ao Volta. Uma pilha comum de controle remoto tem um volt e meio; a tomada de casa tem cento e vinte e sete ou duzentos e vinte.
+
+Corrente e o quanto passa por segundo. E a quantidade de agua que sai. Mede em ampere, nome dado em homenagem ao Andre-Marie Ampere, que aparece no proximo episodio.
+
+Resistencia e o quanto o caminho atrapalha. E um cano estreito no meio. Mede em ohm, nome dado em homenagem ao Georg Simon Ohm.
+
+Em 1827 esse Ohm, professor alemao, publicou a relacao entre as tres, e ela e de uma simplicidade que assusta: a corrente e a tensao dividida pela resistencia. Mais empurrao, mais corrente. Mais atrapalho, menos corrente. So isso.
+
+Duas notas que valem. Primeira: o trabalho de Ohm foi ignorado e ate ridicularizado por anos na Alemanha antes de ser aceito. Segunda: resistencia nao e so estorvo. Quando a corrente forca passagem por um caminho estreito, o material esquenta e as vezes chega a acender. Chuveiro, torradeira e lampada de filamento sao resistencia usada de proposito. Guardem essa tambem, porque a lampada volta no ultimo episodio desta etapa.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: ACENDA A LAMPADA)
+
+Convidar a pausar o audio e resolver na tela: tem uma lampadinha, uma pilha que o ouvinte monta com o numero de pares que quiser, um fio e uma chave.
+
+O objetivo e acender sem queimar. Poucos pares, a lampada nem acende, falta empurrao. Pares demais, ela acende forte e queima, corrente demais pro filamento. E se a chave estiver aberta, nao acontece nada, por mais alta que esteja a torre, porque circuito aberto nao tem corrente.
+
+Achar o ponto certo, deixar aceso, e ai voltar o audio e apertar o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: a briga da perna de ra levou Volta a mostrar que dois metais diferentes com um meio molhado no meio produzem eletricidade. Empilhar esses pares soma o efeito, e isso deu a primeira corrente continua da historia, em 1800. Corrente exige circuito fechado, e quebrar o circuito e uma forma de comandar. E tres grandezas descrevem tudo: tensao, corrente e resistencia, amarradas pela lei de Ohm.
+
+O que ficou faltando, e esse e o gancho: a gente agora tem eletricidade que dura, mas ainda so sabe fazer ela dar choque, esquentar fio e separar agua. Ela ainda nao MEXE em nada. Nao empurra, nao levanta, nao puxa. Pra ter maquina eletrica, a corrente precisa virar forca mecanica.
+
+Gancho: no proximo episodio, um professor dinamarques esta dando aula em 1820, liga um fio numa pilha, e a agulha de uma bussola esquecida na mesa vira de lado sozinha. Ninguem tinha ligado eletricidade com magnetismo antes. A agulha que se mexeu.

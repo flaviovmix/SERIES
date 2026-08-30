@@ -1,0 +1,36 @@
+Inicie dizendo: Os Automatos
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Os Automatos.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA de uma animacao que acompanha o audio.
+
+Este e o setimo episodio da serie EQUIPAMENTOS (projeto Como Reinventar o Computador do Zero); os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz e o tear de Jacquard. ATENCAO: este episodio e um desvio proposital na linha do tempo, voltando pro seculo 18, ANTES do tear; a abertura do roteiro explica isso e deve ser respeitada.
+
+FOCO: os automatos do seculo 18: o pato e o flautista de Vaucanson (Paris, anos 1730-40), o Escritor de Jaquet-Droz (Suica, anos 1770, reprogramavel trocando a fila de cames, ate 40 caracteres), o came como roteiro gravado na borda de um disco, e os precursores dos cartoes do tear (Bouchon 1725 com rolo de papel furado, Falcon 1728 com cartoes em corrente, o tear automatico de Vaucanson de 1745 que Jacquard encontrou num deposito decadas depois).
+
+REGRAS DA CONDUCAO COM A ANIMACAO:
+- No fim de cada tela, pedir claramente: "aperte o Proximo".
+- Na tela interativa (o came de borda recortada) e na DEMONSTRACAO (o Escritor escrevendo SIM ou NAO trocando a fila de cames), avisar que tem um botao na tela.
+- Na tela de PRATICA (montar a fila de cames pra escrever ADA), convidar a pausar o audio, resolver na tela e voltar.
+- Avisar na abertura que da pra acompanhar so pelo audio, sem a pagina.
+- Seguir a ordem das 8 telas do roteiro, sem pular nem juntar telas.
+
+NAO explicar a caixa de musica nem Babbage e Ada Lovelace: sao dos proximos episodios. So citar a caixa de musica no gancho final; o nome ADA aparece na pratica so como semente, sem explicar quem e.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

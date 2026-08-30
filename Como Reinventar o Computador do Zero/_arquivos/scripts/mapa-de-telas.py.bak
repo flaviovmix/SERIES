@@ -1,0 +1,281 @@
+# mapa-de-telas.py — transcreve o audio de um episodio e devolve o mapa das telas.
+#
+# Serve pro processo novo da serie (22/08): o audio vem ANTES da animacao, e a animacao
+# se ajusta ao que o NotebookLM realmente falou (inclusive as instrucoes que ele inventa
+# na hora, tipo "aperte o botao do fio de metal").
+#
+# USO
+#   python mapa-de-telas.py "<pasta do episodio>"
+#       transcreve o mp3 da pasta, salva _transcricao.txt (com timestamps),
+#       corta nas falas "aperte o proximo", salva _telas.md com o mapa e o texto de cada tela,
+#       lista nomes proprios e datas pra segunda passada, e confronta o audio com o roteiro
+#       (numero de telas, janela temporal declarada, anos e protagonistas).
+#
+#       OBRIGATORIO desde 27/08: sem este passo ninguem compara o que o NotebookLM falou
+#       com o que o roteiro pediu. Foi assim que passou "George Richmond" no ep 04-01.
+#
+#   python mapa-de-telas.py "<pasta do episodio>" --confere 20:20,6:30
+#       reouve so esses trechos com um modelo MAIOR (medium) e imprime no terminal.
+#       E a segunda passada obrigatoria: o modelo pequeno inventa nome proprio
+#       (ja escreveu "Bebed" pra Babbage), entao erro achado na transcricao so vira
+#       erro de verdade depois de reouvir aqui.
+#
+# Requisitos: faster-whisper e ffmpeg (ja instalados nesta maquina).
+
+import os
+import re
+import subprocess
+import sys
+import glob
+import unicodedata
+
+FFMPEG = r"C:\Users\ASUS\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1.2-full_build\bin\ffmpeg.exe"
+GATILHO = re.compile(r"aperte o pr[oó]ximo", re.IGNORECASE)
+JANELA_CONFERE = 45  # segundos reouvidos por trecho no --confere
+
+
+def mmss(s):
+    return f"{int(s)//60:02d}:{int(s)%60:02d}"
+
+
+def acha_mp3(pasta):
+    mp3s = [f for f in glob.glob(os.path.join(pasta, "*.mp3")) if not os.path.basename(f).startswith("_")]
+    if not mp3s:
+        sys.exit(f"nenhum .mp3 em {pasta}")
+    if len(mp3s) > 1:
+        print("mais de um mp3; usando o primeiro:")
+        for m in mp3s:
+            print("   ", os.path.basename(m))
+    return mp3s[0]
+
+
+def carrega(tamanho):
+    from faster_whisper import WhisperModel
+    print(f"carregando modelo {tamanho}...")
+    return WhisperModel(tamanho, device="cpu", compute_type="int8")
+
+
+def transcreve(pasta):
+    mp3 = acha_mp3(pasta)
+    print("audio:", os.path.basename(mp3))
+    model = carrega("small")
+    print("transcrevendo (pode levar alguns minutos)...")
+    segments, info = model.transcribe(mp3, language="pt", vad_filter=True, beam_size=5)
+
+    segs = []
+    for s in segments:
+        segs.append((s.start, s.text.strip()))
+        if len(segs) % 50 == 0:
+            print(f"  {len(segs)} segmentos... ({mmss(s.start)})")
+    dur = info.duration
+    print(f"pronto: {len(segs)} segmentos, {dur/60:.1f} min")
+
+    saida = os.path.join(pasta, "_transcricao.txt")
+    with open(saida, "w", encoding="utf-8") as f:
+        f.write(f"# Transcricao automatica (faster-whisper small) - {dur/60:.1f} min\n")
+        f.write(f"# Fonte: {os.path.basename(mp3)}\n")
+        f.write("# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.\n\n")
+        f.write("\n".join(f"[{mmss(t)}] {txt}" for t, txt in segs))
+    print("salvo:", saida)
+    return segs, dur
+
+
+def corta_em_telas(segs, dur):
+    """Cada 'aperte o proximo' fecha uma tela. Devolve lista de (inicio, fim, linhas)."""
+    cortes = [t for t, txt in segs if GATILHO.search(txt)]
+    # o primeiro gatilho costuma ser a EXPLICACAO da mecanica na capa, nao uma troca de tela.
+    # regra: gatilho a menos de 40s de outro gatilho posterior e explicacao, nao corte.
+    limpos = []
+    for i, t in enumerate(cortes):
+        if i + 1 < len(cortes) and cortes[i + 1] - t < 60:
+            continue
+        limpos.append(t)
+
+    telas = []
+    inicio = 0.0
+    for corte in limpos:
+        linhas = [(t, txt) for t, txt in segs if inicio <= t <= corte]
+        telas.append((inicio, corte, linhas))
+        inicio = corte
+    telas.append((inicio, dur, [(t, txt) for t, txt in segs if t >= inicio]))
+    return telas
+
+
+def coisas_pra_conferir(segs):
+    """Nome proprio no meio da frase + ano de 4 digitos. Entrada da segunda passada."""
+    comuns = {"A", "O", "E", "Nao", "Sim", "Mas", "Ele", "Ela", "Eu", "Nos", "Se", "Ja",
+              "Isso", "Aí", "Ai", "Entao", "Então", "Exato", "Que", "Como", "Quando", "Pra", "Para",
+              "Nossa", "Olha", "Caramba", "Bom", "Sao", "São", "Voce", "Você", "Tem", "Foi", "De", "Da", "Do"}
+    achados = {}
+    for t, txt in segs:
+        for ano in re.findall(r"\b1[0-9]{3}\b", txt):
+            achados.setdefault(ano, t)
+        palavras = txt.split()
+        for p in palavras[1:]:
+            limpa = p.strip(".,;:!?()\"'")
+            if len(limpa) > 3 and limpa[0].isupper() and limpa not in comuns:
+                achados.setdefault(limpa, t)
+    return sorted(achados.items(), key=lambda kv: kv[1])
+
+
+ANO = re.compile(r"\b(?:1[0-9]{3}|20[0-2][0-9])\b")
+CAIXA_ALTA = re.compile(r"^[A-Z]+$")
+
+
+def sem_acento(s):
+    return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
+
+
+def acha_roteiro(pasta):
+    alvos = glob.glob(os.path.join(pasta, "_NotebookLM_*.txt"))
+    return alvos[0] if alvos else None
+
+
+def protagonistas(roteiro_limpo):
+    """Nome proprio citado 3+ vezes no roteiro. Quem aparece uma vez so e figurante."""
+    ignora = {"Tela", "Pedir", "Proximo", "Avisar", "Convidar", "Dizer", "Explicar", "Retomar",
+              "Ficha", "Gancho", "Este", "Nesta", "Nesse", "Quando", "Porque", "Entao", "Depois",
+              "Antes", "Agora", "Ainda", "Sobre", "Serie", "Episodio", "Etapa", "Motivacao"}
+    cont = {}
+    for p in re.findall(r"\b[A-Z][a-zA-Z]{3,}\b", roteiro_limpo):
+        if CAIXA_ALTA.match(p) or p in ignora:
+            continue
+        cont[p] = cont.get(p, 0) + 1
+    return sorted([n for n, c in cont.items() if c >= 3])
+
+
+def confronta_roteiro(pasta, segs, telas):
+    """Compara o que o roteiro PEDIA com o que o audio FALOU: numero de telas, janela
+    temporal, anos e protagonistas. Nao decide nada; devolve as divergencias pra conferencia."""
+    caminho = acha_roteiro(pasta)
+    if not caminho:
+        return None
+    with open(caminho, encoding="utf-8", errors="ignore") as f:
+        roteiro = f.read()
+    roteiro_limpo = sem_acento(roteiro)
+    audio = " ".join(txt for _, txt in segs)
+    audio_limpo = sem_acento(audio).lower()
+
+    r = {"arquivo": os.path.basename(caminho)}
+    r["telas_roteiro"] = len(re.findall(r"^TELA\s+\d+", roteiro_limpo, re.M))
+    r["telas_audio"] = len(telas)
+
+    janela = re.search(r"cobre de\s+(\d{4})\s+a\s+(\d{4})", roteiro_limpo, re.I)
+    r["janela"] = (janela.group(1), janela.group(2)) if janela else None
+    if janela:
+        capa = sem_acento(" ".join(t for _, t in telas[0][2])).lower()
+        fecho = sem_acento(" ".join(t for _, t in telas[-1][2])).lower()
+        r["janela_na_capa"] = [a for a in janela.groups() if a in capa]
+        r["ano_no_fecho"] = bool(ANO.search(fecho))
+
+    anos_roteiro, anos_audio = set(ANO.findall(roteiro)), set(ANO.findall(audio))
+    r["anos_perdidos"] = sorted(anos_roteiro - anos_audio)
+    r["anos_novos"] = sorted(anos_audio - anos_roteiro)
+
+    r["nomes"] = [(n, sem_acento(n).lower() in audio_limpo) for n in protagonistas(roteiro_limpo)]
+    return r
+
+
+def escreve_confronto(f, r):
+    if r is None:
+        f.write("\n## Conferencia contra o roteiro\n\nNenhum `_NotebookLM_*.txt` na pasta; nao deu pra confrontar.\n")
+        return
+    f.write("\n## Conferencia contra o roteiro\n\n")
+    f.write(f"Roteiro: `{r['arquivo']}`. Divergencia aqui nao e erro automatico: o NotebookLM resume,\n")
+    f.write("troca a ordem e as vezes diz o ano por extenso. Cada linha abaixo e pra ouvir e decidir.\n\n")
+
+    marca = "OK" if r["telas_roteiro"] == r["telas_audio"] else "DIVERGE"
+    f.write(f"- **Telas:** roteiro pedia {r['telas_roteiro']}, audio entregou {r['telas_audio']}. {marca}\n")
+
+    if r["janela"]:
+        ini, fim = r["janela"]
+        faltou = [a for a in (ini, fim) if a not in r["janela_na_capa"]]
+        f.write(f"- **Janela temporal ({ini} a {fim}):** ")
+        f.write("declarada na capa. " if not faltou else f"NAO falou na capa: {', '.join(faltou)}. ")
+        f.write("Fecho cita ano.\n" if r["ano_no_fecho"] else "Fecho NAO cita ano nenhum.\n")
+    else:
+        f.write("- **Janela temporal:** o roteiro nao declara \"cobre de X a Y\". Regra de 26/08 nao cumprida no texto.\n")
+
+    if r["anos_perdidos"]:
+        f.write(f"- **Anos do roteiro que o audio nao falou:** {', '.join(r['anos_perdidos'])}\n")
+    if r["anos_novos"]:
+        f.write(f"- **Anos que o audio falou e nao estao no roteiro:** {', '.join(r['anos_novos'])} (conferir com `--confere`)\n")
+
+    faltando = [n for n, achou in r["nomes"] if not achou]
+    citados = [n for n, achou in r["nomes"] if achou]
+    if citados:
+        f.write(f"- **Protagonistas citados no audio:** {', '.join(citados)}\n")
+    if faltando:
+        f.write(f"- **Protagonistas do roteiro AUSENTES no audio:** {', '.join(faltando)} (ou o audio pulou, ou o modelo pequeno escreveu errado)\n")
+
+
+def escreve_mapa(pasta, telas, pendentes, dur, confronto=None):
+    destino = os.path.join(pasta, "_telas.md")
+    if os.path.exists(destino):
+        destino = os.path.join(pasta, "_telas-auto.md")
+        print("_telas.md ja existe; escrevendo em _telas-auto.md pra nao sobrescrever o seu")
+
+    with open(destino, "w", encoding="utf-8") as f:
+        f.write(f"# Mapa das telas (gerado do audio, {dur/60:.1f} min)\n\n")
+        f.write("O audio ja existe: a `animacao.html` tem que servir ao que foi falado, nao o contrario.\n")
+        f.write("Cada tela abaixo termina num \"aperte o proximo\" do audio.\n\n")
+        f.write("| Tela | Entra em | Dura | Tem instrucao de interagir? |\n|---|---|---|---|\n")
+        for i, (ini, fim, linhas) in enumerate(telas, 1):
+            texto = " ".join(t for _, t in linhas).lower()
+            # "botao proximo" e a mecanica de navegacao, nao interacao da tela
+            texto = re.sub(r"bot[aã]o pr[oó]ximo", "", texto)
+            interage = "**Sim**" if ("bot" in texto or "pause" in texto or "clic" in texto) else "-"
+            f.write(f"| {i} | {mmss(ini)} | {mmss(fim-ini)} | {interage} |\n")
+
+        f.write("\n## O que o audio fala em cada tela\n")
+        for i, (ini, fim, linhas) in enumerate(telas, 1):
+            f.write(f"\n### Tela {i} ({mmss(ini)} a {mmss(fim)}, {mmss(fim-ini)})\n\n")
+            f.write(" ".join(t for _, t in linhas) + "\n")
+
+        f.write("\n## Segunda passada: conferir no audio\n\n")
+        f.write("Nomes e datas que o modelo pequeno pode ter inventado. Rodar:\n\n")
+        f.write("```\npython mapa-de-telas.py \"<pasta>\" --confere <mm:ss>,<mm:ss>\n```\n\n")
+        for termo, t in pendentes:
+            f.write(f"- `{mmss(t)}` {termo}\n")
+
+        escreve_confronto(f, confronto)
+    print("salvo:", destino)
+
+
+def confere(pasta, marcas):
+    mp3 = acha_mp3(pasta)
+    model = carrega("medium")
+    for marca in marcas:
+        partes = [int(x) for x in marca.split(":")]
+        seg = partes[0] * 60 + partes[1] if len(partes) == 2 else partes[0]
+        ini = max(0, seg - 5)
+        wav = os.path.join(pasta, "_trecho.wav")
+        subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-ss", str(ini), "-t", str(JANELA_CONFERE),
+                        "-i", mp3, "-ar", "16000", "-ac", "1", wav], check=True)
+        segs, _ = model.transcribe(wav, language="pt", beam_size=5)
+        print(f"\n===== {marca} (reouvido do {mmss(ini)}) =====")
+        for s in segs:
+            print("  ", s.text.strip())
+        os.remove(wav)
+
+
+def main():
+    if len(sys.argv) < 2:
+        sys.exit(__doc__ or "uso: python mapa-de-telas.py \"<pasta do episodio>\" [--confere mm:ss,mm:ss]")
+    pasta = sys.argv[1].rstrip("\\/")
+    if not os.path.isdir(pasta):
+        sys.exit(f"pasta nao encontrada: {pasta}")
+
+    if "--confere" in sys.argv:
+        marcas = sys.argv[sys.argv.index("--confere") + 1].split(",")
+        confere(pasta, [m.strip() for m in marcas if m.strip()])
+        return
+
+    segs, dur = transcreve(pasta)
+    telas = corta_em_telas(segs, dur)
+    print(f"telas detectadas: {len(telas)}")
+    escreve_mapa(pasta, telas, coisas_pra_conferir(segs), dur, confronta_roteiro(pasta, segs, telas))
+
+
+if __name__ == "__main__":
+    main()

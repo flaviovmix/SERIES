@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Tear de Jacquard — Equipamento 06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(36px,7vw,72px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:760px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:620px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ficha do equipamento */
+.ficha{
+  display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:880px;
+}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:270px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+
+/* painel padrao */
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:760px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5;
+  text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* cartao furado */
+.cartoes{display:flex; flex-direction:column; gap:6px; align-items:center}
+.cartao{
+  display:flex; gap:6px; align-items:center; padding:7px 12px;
+  background:#e8d9b8; border:1.5px solid var(--accent2); border-radius:8px;
+  box-shadow:0 1px 0 var(--line);
+}
+.cartao.atual{outline:2px solid var(--accent); outline-offset:2px}
+.cartao .num{font-family:'IBM Plex Mono',Consolas,monospace; font-size:9px; color:var(--sub); width:22px; text-align:right}
+.furo{
+  width:22px; height:22px; border-radius:50%; border:2px solid var(--accent2);
+  background:transparent; cursor:pointer; flex:none; transition:all .2s;
+}
+.furo.on{background:var(--ink); border-color:var(--ink)}
+.cartoes.travado .furo{cursor:default}
+
+/* fios da urdidura */
+.fios{display:flex; gap:6px; justify-content:center; margin:10px 0 4px}
+.fio{
+  width:22px; height:34px; border-radius:4px; flex:none;
+  background:linear-gradient(90deg, transparent 42%, var(--line) 42% 58%, transparent 58%);
+  transition:all .3s var(--ease);
+}
+.fio.sobe{background:linear-gradient(90deg, transparent 42%, var(--accent) 42% 58%, transparent 58%); transform:translateY(-7px)}
+
+/* tecido */
+.tecido{display:flex; flex-direction:column; gap:3px; align-items:center; margin-top:8px}
+.tecido .linha-t{display:flex; gap:3px}
+.tecido .ponto{
+  width:25px; height:16px; border-radius:3px; background:var(--bg2); border:1px solid var(--line);
+  transition:background .3s;
+}
+.tecido .ponto.cheio{background:var(--accent); border-color:var(--accent)}
+.tecido.mini .ponto{width:14px; height:9px; border-radius:2px}
+.tecido-rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--sub); margin-top:8px}
+
+.lado-a-lado{display:flex; gap:26px; justify-content:center; align-items:flex-start; flex-wrap:wrap}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+.mundo{display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; justify-content:center; max-width:880px}
+.mundo .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; width:250px; text-align:left;
+}
+.mundo .nome{font-size:18px; font-weight:600}
+.mundo .desc{font-size:13px; color:var(--sub); line-height:1.5; margin-top:6px}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600;
+  transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 12px}
+  .furo{width:17px; height:17px}
+  .fio{width:17px; height:26px}
+  .tecido .ponto{width:19px; height:12px}
+  .cartao{gap:4px; padding:5px 8px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 06 <span class="dot">·</span> O TEAR DE JACQUARD</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 06 · série equipamentos</div>
+    <h1 class="reveal">O Tear de Jacquard</h1>
+    <p class="lede reveal">Até aqui, máquinas que fazem conta. Esta aqui não calcula nada,
+    e mesmo assim é uma das mais importantes da série: é a primeira máquina que
+    <b>obedece instruções</b> gravadas em cartões furados. Quando o áudio pedir, aperte <b>Próximo</b>.
+    Na prática, pause e brinque.</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">Tear de Jacquard: um mecanismo de cartões furados acoplado em cima do tear de tecer.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Joseph-Marie Jacquard, Lyon, França. Demonstrado em 1801, aperfeiçoado até 1804.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Tecido estampado exigia um ajudante levantando fio por fio, o dia inteiro. Jacquard fez esse trabalho quando criança e não esqueceu.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · a virada -->
+  <section class="step">
+    <div class="kicker reveal">o que muda aqui</div>
+    <h2 class="reveal">O desenho sai da cabeça e vira cartão</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">No tear antigo</div>
+        <div class="desc">O desenho morava na cabeça do mestre e nas mãos do ajudante, que levantava os fios certos a cada passada. Lento e cheio de erro.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A ideia de Jacquard</div>
+        <div class="desc">Gravar o desenho em cartões furados. A cada passada, um cartão diz quais fios sobem. A máquina lê e obedece, sem ajudante.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A virada</div>
+        <div class="desc">As máquinas até aqui faziam conta. Esta segue <b>instruções</b>. Furo ou não-furo: a decisão gravada fora da cabeça de alguém.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · o cartao furado -->
+  <section class="step">
+    <div class="kicker reveal">como funciona</div>
+    <h2 class="reveal">Furo = fio sobe. Sem furo = fio fica.</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legCartao">Clique nos círculos pra furar o cartão, depois passe ele pela máquina.</div>
+      <div class="cartoes" id="cartaoUm"></div>
+      <div class="fios" id="fiosUm"></div>
+      <div class="tecido" id="tecidoUm"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnPassar">passar o cartão</button>
+        <button class="btn-mini" id="btnLimpaUm">recomeçar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · a corrente de cartoes -->
+  <section class="step">
+    <div class="kicker reveal">o desenho inteiro</div>
+    <h2 class="reveal">Uma corrente de cartões, linha por linha</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legCorrente">Cada cartão tece UMA linha. Costurados em corrente, eles carregam o desenho inteiro. Aperte e veja.</div>
+      <div class="lado-a-lado">
+        <div>
+          <div class="cartoes travado" id="correnteCartoes"></div>
+          <div class="tecido-rotulo">a corrente</div>
+        </div>
+        <div>
+          <div class="tecido" id="correnteTecido"></div>
+          <div class="tecido-rotulo">o tecido</div>
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnTecerCorrente">tecer a corrente</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · trocar o programa -->
+  <section class="step">
+    <div class="kicker reveal">a consequência</div>
+    <h2 class="reveal">Troca os cartões, troca o tecido</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legTroca">A MESMA máquina. Só muda a corrente de cartões. Teça com uma, depois com a outra.</div>
+      <div class="tecido" id="trocaTecido"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnTrocaA">tecer corrente A (losango)</button>
+        <button class="btn-mini cheio" id="btnTrocaB">tecer corrente B (xadrez)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Sua vez: programe o tecido</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">Pause o áudio. Fure os 5 cartões pra tecer o alvo ao lado, depois aperte tecer.</div>
+      <div class="lado-a-lado">
+        <div>
+          <div class="cartoes" id="praticaCartoes"></div>
+          <div class="tecido-rotulo">seus cartões</div>
+        </div>
+        <div>
+          <div class="tecido mini" id="praticaAlvo"></div>
+          <div class="tecido-rotulo">o alvo</div>
+        </div>
+        <div>
+          <div class="tecido" id="praticaTecido"></div>
+          <div class="tecido-rotulo">seu tecido</div>
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnTecerPratica">tecer</button>
+        <button class="btn-mini" id="btnLimpaPratica">limpar cartões</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">O cartão furado durou até o século 20</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">A escala</div>
+        <div class="desc">Tecelões chegaram a queimar as máquinas com medo do desemprego; em 1812 Lyon já tinha milhares delas. Um retrato de Jacquard foi tecido com cerca de 24 mil cartões.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A herança</div>
+        <div class="desc">O cartão furado saiu do tecido e foi contar gente e dinheiro: o censo americano de 1890 (Hollerith, origem da IBM) e os computadores até os anos 1970 rodavam em cartões.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A limitação</div>
+        <div class="desc">O tear obedece, mas não calcula. A calculadora calcula, mas não obedece. Quem sonhou juntar os dois numa máquina só foi um inglês. Próximo equipamento: a Máquina Analítica de Babbage.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- pecas do tear ----------
+const COLUNAS = 7;
+
+// cartao: uma linha de furos; editavel ou fixo
+function criaCartao(pai, numero, furosIniciais, editavel) {
+  const linha = document.createElement('div');
+  linha.className = 'cartao';
+  const num = document.createElement('span');
+  num.className = 'num';
+  num.textContent = numero;
+  linha.appendChild(num);
+  const estado = furosIniciais.slice();
+  const botoes = [];
+  estado.forEach((on, i) => {
+    const b = document.createElement('button');
+    b.className = 'furo' + (on ? ' on' : '');
+    b.setAttribute('aria-label', 'furo ' + (i + 1));
+    if (editavel) {
+      b.addEventListener('click', () => {
+        estado[i] = estado[i] ? 0 : 1;
+        b.classList.toggle('on', !!estado[i]);
+      });
+    }
+    linha.appendChild(b);
+    botoes.push(b);
+  });
+  pai.appendChild(linha);
+  return { el: linha, estado, botoes };
+}
+
+// tecido: grade de pontos que recebe linhas
+function criaTecido(elId, linhas, colunas) {
+  const raiz = document.getElementById(elId);
+  const pontos = [];
+  for (let l = 0; l < linhas; l++) {
+    const linha = document.createElement('div');
+    linha.className = 'linha-t';
+    const cels = [];
+    for (let c = 0; c < colunas; c++) {
+      const p = document.createElement('span');
+      p.className = 'ponto';
+      linha.appendChild(p);
+      cels.push(p);
+    }
+    raiz.appendChild(linha);
+    pontos.push(cels);
+  }
+  function pintaLinha(l, padrao) {
+    padrao.forEach((on, c) => pontos[l][c].classList.toggle('cheio', !!on));
+  }
+  function limpa() {
+    pontos.flat().forEach((p) => p.classList.remove('cheio'));
+  }
+  function igualA(matriz) {
+    return matriz.every((lin, l) =>
+      lin.every((on, c) => pontos[l][c].classList.contains('cheio') === !!on));
+  }
+  return { pintaLinha, limpa, igualA };
+}
+
+const LOSANGO = [
+  [0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 1, 1, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0],
+];
+const XADREZ = [
+  [1, 0, 1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0, 1, 0],
+  [1, 0, 1, 0, 1, 0, 1],
+  [0, 1, 0, 1, 0, 1, 0],
+  [1, 0, 1, 0, 1, 0, 1],
+];
+
+// ---------- tela 4: um cartao ----------
+const legCartao = document.getElementById('legCartao');
+const cartaoUm = criaCartao(document.getElementById('cartaoUm'), 1, [0, 0, 0, 0, 0, 0, 0], true);
+const fiosUm = document.getElementById('fiosUm');
+const fiosEls = [];
+for (let i = 0; i < COLUNAS; i++) {
+  const f = document.createElement('span');
+  f.className = 'fio';
+  fiosUm.appendChild(f);
+  fiosEls.push(f);
+}
+const tecidoUm = criaTecido('tecidoUm', 1, COLUNAS);
+document.getElementById('btnPassar').addEventListener('click', () => {
+  const furos = cartaoUm.estado;
+  fiosEls.forEach((f, i) => f.classList.toggle('sobe', !!furos[i]));
+  setTimeout(() => {
+    tecidoUm.pintaLinha(0, furos);
+    const qtd = furos.filter(Boolean).length;
+    legCartao.innerHTML = qtd === 0
+      ? 'cartão sem furo: nenhum fio subiu, linha lisa. Fure alguns círculos e passe de novo.'
+      : '<b>' + qtd + ' furos = ' + qtd + ' fios de pé</b>. A linha do tecido saiu exatamente como o cartão mandou.';
+  }, 400);
+});
+document.getElementById('btnLimpaUm').addEventListener('click', () => {
+  cartaoUm.estado.fill(0);
+  cartaoUm.botoes.forEach((b) => b.classList.remove('on'));
+  fiosEls.forEach((f) => f.classList.remove('sobe'));
+  tecidoUm.limpa();
+  legCartao.innerHTML = 'Clique nos círculos pra furar o cartão, depois passe ele pela máquina.';
+});
+
+// ---------- tela 5: a corrente ----------
+const legCorrente = document.getElementById('legCorrente');
+const paiCorrente = document.getElementById('correnteCartoes');
+const cartoesCorrente = LOSANGO.map((lin, i) => criaCartao(paiCorrente, i + 1, lin, false));
+const tecidoCorrente = criaTecido('correnteTecido', 5, COLUNAS);
+const btnTecerCorrente = document.getElementById('btnTecerCorrente');
+btnTecerCorrente.addEventListener('click', () => {
+  btnTecerCorrente.disabled = true;
+  tecidoCorrente.limpa();
+  cartoesCorrente.forEach((c) => c.el.classList.remove('atual'));
+  LOSANGO.forEach((lin, l) => {
+    setTimeout(() => {
+      cartoesCorrente.forEach((c, i) => c.el.classList.toggle('atual', i === l));
+      tecidoCorrente.pintaLinha(l, lin);
+      legCorrente.innerHTML = 'cartão <b>' + (l + 1) + '</b> passou: linha ' + (l + 1) + ' tecida';
+      if (l === LOSANGO.length - 1) {
+        setTimeout(() => {
+          cartoesCorrente.forEach((c) => c.el.classList.remove('atual'));
+          legCorrente.innerHTML = '<b>desenho pronto</b>: 5 cartões, 5 linhas, um losango. O desenho mora na corrente.';
+          btnTecerCorrente.disabled = false;
+        }, 900);
+      }
+    }, 900 * (l + 1));
+  });
+});
+
+// ---------- tela 6: trocar o programa ----------
+const legTroca = document.getElementById('legTroca');
+const tecidoTroca = criaTecido('trocaTecido', 5, COLUNAS);
+function teceTroca(matriz, nome, btn) {
+  btn.disabled = true;
+  tecidoTroca.limpa();
+  matriz.forEach((lin, l) => {
+    setTimeout(() => {
+      tecidoTroca.pintaLinha(l, lin);
+      if (l === matriz.length - 1) {
+        legTroca.innerHTML = '<b>corrente ' + nome + '</b> tecida. Mesma máquina, outro desenho: só os cartões mudaram.';
+        btn.disabled = false;
+      }
+    }, 550 * (l + 1));
+  });
+}
+const btnTrocaA = document.getElementById('btnTrocaA');
+const btnTrocaB = document.getElementById('btnTrocaB');
+btnTrocaA.addEventListener('click', () => teceTroca(LOSANGO, 'A', btnTrocaA));
+btnTrocaB.addEventListener('click', () => teceTroca(XADREZ, 'B', btnTrocaB));
+
+// ---------- tela 7: pratica ----------
+// alvo: a letra T (facil de enxergar e de furar)
+const ALVO = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0],
+];
+const legPratica = document.getElementById('legPratica');
+const paiPratica = document.getElementById('praticaCartoes');
+const cartoesPratica = ALVO.map((_, i) => criaCartao(paiPratica, i + 1, [0, 0, 0, 0, 0, 0, 0], true));
+const alvoTecido = criaTecido('praticaAlvo', 5, COLUNAS);
+ALVO.forEach((lin, l) => alvoTecido.pintaLinha(l, lin));
+const tecidoPratica = criaTecido('praticaTecido', 5, COLUNAS);
+let praticaFeita = false;
+document.getElementById('btnTecerPratica').addEventListener('click', () => {
+  cartoesPratica.forEach((c, l) => tecidoPratica.pintaLinha(l, c.estado));
+  if (tecidoPratica.igualA(ALVO)) {
+    if (!praticaFeita) praticaFeita = true;
+    legPratica.innerHTML = '<b>Tecido igual ao alvo! Você programou a máquina. Pode voltar o áudio e apertar o Próximo.</b>';
+    legPratica.classList.add('ok');
+  } else {
+    legPratica.classList.remove('ok');
+    legPratica.innerHTML = 'saiu diferente do alvo: compare linha por linha, ajuste os furos e teça de novo.';
+  }
+});
+document.getElementById('btnLimpaPratica').addEventListener('click', () => {
+  cartoesPratica.forEach((c) => {
+    c.estado.fill(0);
+    c.botoes.forEach((b) => b.classList.remove('on'));
+  });
+  tecidoPratica.limpa();
+  legPratica.classList.remove('ok');
+  legPratica.innerHTML = 'Pause o áudio. Fure os 5 cartões pra tecer o alvo ao lado, depois aperte tecer.';
+});
+</script>
+</body>
+</html>

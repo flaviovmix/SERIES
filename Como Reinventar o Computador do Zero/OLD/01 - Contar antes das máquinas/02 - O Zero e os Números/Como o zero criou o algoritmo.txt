@@ -1,0 +1,7 @@
+Titulo: Como o zero criou o algoritmo
+Notebook: Como Reinventar o Computador do Zero-EQUIPAMENTOS-02 - O ZERO E OS NUMEROS
+
+Descricao:
+Os textos apresentam o segundo episódio da série Equipamentos, intitulado O Zero e os Números, que explora a transição histórica do ábaco para o sistema de numeração posicional. A narrativa destaca como o zero atua como um marcador de posição essencial, permitindo que cálculos complexos sejam realizados diretamente no papel, superando as limitações dos algarismos romanos. O conteúdo detalha a trajetória desses símbolos da Índia até a Europa, mencionando figuras como Brahmagupta, al-Khwarizmi e Fibonacci. Além de explicar a origem de termos como algoritmo e álgebra, o material oferece uma experiência interativa com nove telas de animação e exercícios práticos. O objetivo central é demonstrar que o sistema numérico atual é a ferramenta fundamental que possibilita a existência de qualquer computador.
+
+Link: https://notebook.google.com/notebook/9dd5c1f9-aba1-41d3-ae0f-22fef2440457

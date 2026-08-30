@@ -1,0 +1,213 @@
+Inicie dizendo: O Abaco
+---------------
+
+Este e o primeiro episodio da etapa CONTAR ANTES DAS MAQUINAS, a primeira etapa da serie Como Reinventar o Computador do Zero. E o comeco de tudo: a serie reconstroi o computador do zero, uma peca por episodio, e a primeira peca e uma pedra.
+
+ESTE EPISODIO COBRE DE 8000 a.C. A 2700 a.C., e no fecho salta pro presente porque o equipamento continua em uso. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ponto o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 13 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas de DEMONSTRACAO (7, 8, 10 e 11), avisar que tem um botao na tela pra rodar a animacao enquanto ouve.
+- Nas telas de PRATICA (9 e 12), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 13 telas. O audio TEM que pedir "aperte o Proximo" exatamente 12 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 2, 3, 4 e 5. Sao quatro cenas curtas de linha do tempo, uma data cada, e a tentacao de juntar todas num bloco historico e grande. Nao juntar. Cada uma tem o seu pedido de Proximo.
+
+SEM FICHA HUMANA. Este episodio nao tem inventor. O abaco nao foi inventado por ninguem em particular: nasceu do uso. NAO atribuir a invencao a nenhuma pessoa, nao citar nome de arqueologo e nao inventar personagem com nome. O pastor e o escriba das telas 2 a 5 sao pessoas anonimas, exemplos, nao personagens historicos.
+
+AS IMAGENS DAS TELAS 2 A 5 SAO RECONSTITUICOES. Sao cenas geradas, realistas mas nao fotograficas de epoca. Avisar isso UMA VEZ, na tela 2, em uma frase, e nao repetir nas telas seguintes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas neste arquivo. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- Sem analogias. Explicar direto. Os exemplos concretos do roteiro (o pastor com as fichas, os pratos de 24 no restaurante, contar rebanho e imposto) sao exemplos reais, nao analogias, e podem ser usados a vontade.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O ABACO)
+
+Abrir a serie: a partir de agora, cada equipamento da historia do computador ganha um episodio so dele, sempre com nome, data, motivacao, como funciona e uma pratica na tela. O primeiro e o abaco, e ele e o unico equipamento da serie inteira que da pra aprender a operar de verdade, aqui mesmo na animacao.
+
+Dizer o intervalo do episodio: a gente vai de uns 8000 anos antes de Cristo ate uns 2700 antes de Cristo, e no fim da uma esticada ate hoje, porque esse equipamento nunca foi aposentado.
+
+Avisar que o episodio nao comeca no abaco. Comeca cinco mil anos antes dele, no problema que ele veio resolver.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas praticas, pause o audio e resolva com calma. Sem a pagina aberta, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (UMA OVELHA, UMA PEDRA)
+
+Data: por volta de 8000 antes de Cristo, no Crescente Fertil, junto com a agricultura.
+
+A tela mostra duas cenas lado a lado. Avisar aqui, uma unica vez, que as cenas historicas deste episodio sao reconstituicoes: imagens feitas pra ilustrar, realistas, mas nao fotografia de epoca. Nao repetir esse aviso nas proximas telas.
+
+Cena da esquerda: um pastor na saida do curral, com fichinhas de argila na mao. Sao pecinhas pequenas em formas geometricas, cone, esfera, disco, cada uma do tamanho de uma unha. Uma ovelha sai, uma ficha vai pra mao. Explicar o que isso e: correspondencia um a um. Ele nao esta contando. Ele nem precisa saber contar, e nem precisa existir numero. Cada ficha e uma ovelha. Se no fim do dia sobrar ficha na mao, faltou bicho.
+
+Cena da direita: o mesmo homem, o rebanho maior, as duas maos cheias e transbordando fichas caindo entre os dedos. Explicar o limite: com sete ovelhas funciona, com cinquenta nao. As fichas nao cabem, e olhando o monte ninguem sabe quantas sao.
+
+O ponto que importa pra serie inteira: aqui nasce a ideia que atravessa todos os episodios, que e tirar a conta de dentro da cabeca e botar num objeto do lado de fora. A ideia funciona de primeira. O problema nunca foi a ideia, foi a escala.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A CONTA QUE NINGUEM ADULTERA)
+
+Data: por volta de 3500 antes de Cristo, na Mesopotamia.
+
+A tela mostra uma bola oca de argila do tamanho de uma laranja, com as formas das fichas marcadas por fora, um punhado de fichas soltas do lado esperando pra entrar, e uma mao apertando um selo de pedra na argila mole.
+
+Explicar o que aconteceu: as fichas passaram a ser guardadas dentro dessa bola oca, que os arqueologos chamam de bulla. Lacrada. E antes de lacrar, as fichas eram apertadas na parte de fora, deixando a marca de cada uma, e por cima ia o selo do dono.
+
+Explicar por que alguem faria isso: porque a mercadoria comecou a viajar. Um homem leva o rebanho de outro dono pra outra cidade, e no fim tem que prestar conta. O envelope de argila lacrado e o contrato. Quem recebe confere as marcas de fora, e se quiser tirar a prova quebra a bola e conta as fichas de dentro. Mexer no meio do caminho, sem quebrar o lacre, nao da.
+
+O ponto: a conta deixou de ser um monte de pedra na mao de alguem e virou registro. Uma coisa que dura, que viaja e que da pra conferir depois.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (A MARCA VENCE A FICHA)
+
+Data: por volta de 3100 antes de Cristo.
+
+A tela mostra a mesa de trabalho de um escriba, com uma tabua de argila mole, um canico cortado apertando marcas em forma de cunha na argila, e do lado um punhado de fichas velhas largadas, fora de uso. Do lado tem tambem uma tabua de verdade, de acervo de museu, com numeros arcaicos do periodo de Uruk.
+
+Explicar o pulo: alguem reparou numa bobagem obvia. Se as formas das fichas ja estao carimbadas do lado de fora da bola, pra que as fichas de dentro? A marca ja diz tudo. Entao a bola vira uma placa achatada, e depois so a marca. A ficha, que era um objeto que voce segurava, virou um desenho.
+
+Dizer com todas as letras de onde a escrita veio: e isso a escrita cuneiforme nascendo, e ela nasce da contabilidade, nao da literatura. Os primeiros textos escritos da humanidade nao sao poema nem oracao. Sao recibo, lista de cabeca de gado e nota de entrega.
+
+O ponto pra serie: aqui o numero se solta da coisa contada. Antes, a ficha era a ovelha. Agora tem uma marca que quer dizer ovelha, e outra marca que quer dizer quantas.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A PEDRA GANHA LUGAR)
+
+Data: por volta de 2700 antes de Cristo, na Sumeria. E a data do equipamento deste episodio.
+
+A tela mostra uma tabua grande com sulcos retos dividindo a superficie em colunas, pedrinhas lisas nos sulcos, quantidades diferentes em cada coluna, e a mao de um escriba empurrando uma pedra de uma coluna pra outra.
+
+Explicar o problema que sobrou: escrever numero ja dava. A cuneiforme e mais velha que o abaco, tem quatro seculos de vantagem. Escrever nao era o problema. Calcular era. Pra somar dois numeros grandes escritos numa tabua, voce tem que refazer a conta inteira na cabeca, e so no fim escrever a resposta. A escrita guarda o resultado, ela nao ajuda a chegar nele.
+
+Explicar a solucao: alguem risca colunas numa tabua e volta a usar pedra. So que a pedra mudou de emprego. Ela nao vale mais uma ovelha. Ela vale o que a coluna dela disser. A mesma pedrinha, uma coluna pra esquerda, passa a valer muito mais.
+
+Dizer que isso e o abaco, e que ele aparece na Sumeria entre 2700 e 2300 antes de Cristo.
+
+Fazer uma ressalva de honestidade, em uma frase: o abaco sumerio contava de sessenta em sessenta, que e a mesma heranca que ficou nos nossos minutos e segundos. O de dez em dez e a versao que sobreviveu nas escolas, e e essa que a animacao usa daqui pra frente.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (A FICHA DO EQUIPAMENTO)
+
+A tela mostra a ficha em tres cartoes, e ao lado uma foto de um abaco chines de verdade e o modelo tridimensional do abaco que da pra girar.
+
+- Nome: abaco, do grego abax, que quer dizer tabua. Na pratica: pedras deslizando em hastes ou sulcos.
+- Data e lugar: Sumeria, por volta de 2700 antes de Cristo. Sem inventor conhecido: ninguem patenteou, ele nasceu do uso. E lembrar que as pedras de contar sao bem mais velhas que ele, de uns 8000 antes de Cristo, que e onde este episodio comecou.
+- Motivacao: contar rebanho, colheita e imposto sem errar. Escrever numero ja dava. O que nao existia era jeito de calcular com numero grande. Errar conta de imposto sempre foi problema serio.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (COMO ELE E: O VALOR POSICIONAL)
+
+A tela tem um abaco de 4 hastes (unidade, dezena, centena, milhar) e um botao que roda a demonstracao: a mesma pedra acende em casas diferentes valendo 1, 10, 100 e 1000. Convidar o ouvinte a apertar o botao da tela enquanto ouve.
+
+Explicar a ideia: o abaco nao guarda o numero desenhado, ele guarda posicoes. Cada haste vale dez vezes a de baixo. Uma pedra na unidade vale 1. A mesma pedra, uma haste acima, vale 10. E o valor posicional, a mesma ideia do numero que a gente escreve hoje, e o abaco fazia isso milhares de anos antes de existir o algarismo que a gente usa.
+
+Amarrar com a tela anterior: e exatamente a promocao que a pedra ganhou quando entrou na coluna.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (O VAI-UM)
+
+A tela demonstra o movimento mais importante do abaco, com um botao pra ver acontecer devagar. Convidar a apertar.
+
+Explicar o movimento com cuidado, porque o numero aqui importa: cada fio tem NOVE contas. Nao dez, nove. Com as nove empurradas, o fio da unidade esta marcando 9 e esta cheio. Chega mais uma unidade e ela nao tem onde ficar. Entao as nove voltam pro lugar de origem e nasce uma conta na haste de cima, a das dezenas. Nove mais um da dez.
+
+Explicar por que isso importa: esse movimento e o vai-um da conta de escola, so que fisico, feito de madeira e pedra. E la na frente da serie a gente vai reencontrar exatamente ele dentro dos circuitos do computador, com o nome de carry.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (PRATICA 1: REPRESENTE OS NUMEROS)
+
+Convidar a pausar o audio e resolver na tela: ela pede pra representar tres numeros no abaco, um de cada vez, 7, depois 23, depois 105. Dica falada: o 105 tem zero dezenas, entao a haste do meio fica vazia mesmo, e a haste vazia tambem e informacao.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 10 (DEMONSTRACAO: 2 X 24 PASSO A PASSO)
+
+Agora uma conta de verdade, a mesma que aparece no piloto da serie: dois pratos de 24 num restaurante. A tela tem um botao de passo. Convidar a ir apertando junto com a explicacao.
+
+Os passos: primeiro entra o 24, que e 2 dezenas e 4 unidades. Depois entram as 2 dezenas do segundo prato, e o abaco marca 44. Depois as 4 unidades do segundo prato, e fecha em 48.
+
+O ponto: multiplicar por 2 no abaco e somar o numero duas vezes. O instrumento nao sabe multiplicar. Quem sabe e a pessoa. O abaco so segura o resultado parcial enquanto ela pensa. Essa divisao de trabalho, pessoa pensa e instrumento lembra, e o comeco de tudo nesta serie.
+
+Reparar em voz alta que nessa conta nada estourou: nenhuma haste encheu.
+
+Pedir: aperte o Proximo.
+
+TELA 11 (DEMONSTRACAO: 3 X 24, E O VAI-UM APARECE)
+
+Chegou mais um prato de 24 na mesa. Mesma conta, um prato a mais, e agora o vai-um da tela 8 aparece sozinho no meio do caminho. Tem botao de passo tambem, convidar a acompanhar.
+
+Os passos: 24 no fio. Segundo prato, chega em 48. Comeca o terceiro prato pelas unidades: entra uma e a haste chega em 9, cheia. Entra a proxima e ela nao cabe: sobe e vira 1 dezena, o abaco marca 50. Faltavam 2 das 4 unidades do terceiro prato, da 52. E as 2 dezenas dele, da 72.
+
+O ponto: e a mesma conta de antes, so que com um transporte no meio. Tres pratos de 24 dao 72.
+
+Pedir: aperte o Proximo.
+
+TELA 12 (PRATICA 2: SUA VEZ DE FAZER O 3 X 24)
+
+Convidar a pausar e fazer a conta sozinho: montar um 24 e somar mais dois por cima, ate o total marcar 72. Avisar que a haste da unidade vai encher no meio do caminho, e que e ai que a pessoa vai fazer o vai-um com a propria mao, em vez de assistir.
+
+Quem quiser desafio extra: tentar sem olhar a demonstracao anterior.
+
+Quando fechar o 72, volte o audio e aperte o Proximo.
+
+TELA 13 (ENCERRAMENTO: O ABACO PELO MUNDO)
+
+A tela mostra as variantes: o abaco romano de bolso, numa gravura antiga, que e o mesmo principio em metal e cabendo na mao; o suanpan chines, com 2 contas em cima valendo 5 cada e 5 embaixo; o soroban japones, mais enxuto, com 1 em cima e 4 embaixo, ensinado em escola ate hoje. Contar que existe foto dos anos 70 de um soroban de plastico grudado numa calculadora eletronica, no mesmo aparelho, que e o retrato de um equipamento que se recusou a ser aposentado.
+
+Dizer onde o episodio parou: em 2700 antes de Cristo o equipamento estava pronto, e ele atravessou quase cinco mil anos sem precisar de substituto.
+
+Fechar com a limitacao que move a serie: por melhor que o abaco seja, alguem precisa mover as pedras. Ele lembra, mas nao anda sozinho. O proximo equipamento e o primeiro que tenta atacar exatamente essa coceira: a Pascalina, a calculadora de engrenagens que Blaise Pascal montou em 1642 pra escapar das somas de imposto do pai.
+
+Nao explicar a Pascalina aqui. So deixar o gancho.
+
+=== CORRECAO 29/08 - LER ANTES DE GERAR ESTE EPISODIO DE NOVO ===
+
+O ultimo paragrafo da TELA 13 esta errado, e o audio de 29/08 saiu com o erro (18:40).
+A Pascalina NAO e o proximo equipamento da serie: ela e a etapa 3, episodio 1, seis
+episodios adiante. Antes dela vem O Zero e os Numeros (etapa 1), As Maquinas do Hiato e
+O Relogio de Schickard (etapa 2). E o Schickard, de 1623, e anterior a Pascalina de 1642,
+entao nem "a primeira que tenta" esta certo.
+
+Numa proxima geracao, trocar aquele paragrafo por este:
+
+Fechar com a limitacao que move a serie: por melhor que o abaco seja, alguem precisa mover
+as pedras. Ele lembra, mas nao anda sozinho. Dizer que essa coceira demora a passar: antes
+das engrenagens ainda falta o numero certo, e e disso que trata o proximo episodio, o zero
+e o sistema posicional. Nao citar Pascalina, Schickard nem Babbage aqui.
+
+A pagina ja foi corrigida: o card "A limitacao" da tela 13 fala do proximo episodio e a
+imagem da Pascalina saiu. O texto acima do separador fica como esta, porque e o registro
+do que foi narrado.

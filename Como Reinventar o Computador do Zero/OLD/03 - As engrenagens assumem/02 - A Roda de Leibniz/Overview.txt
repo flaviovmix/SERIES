@@ -1,0 +1,13 @@
+A RODA DE LEIBNIZ - CONTEXTO
+============================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o quinto episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o sistema de numeracao com o zero, as maquinas do hiato e a Pascalina. Este cobre a calculadora de Gottfried Leibniz (modelo de madeira apresentado em Londres em 1673, versao de latao nos anos 1690): a primeira maquina pensada pra multiplicar, construida em torno da roda escalonada, um tambor com 9 dentes de comprimentos crescentes.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma tela interativa do tambor escalonado (clicar nos dentes e girar), duas demonstracoes com botao (o 35 x 4 em 4 voltas de manivela e o 35 x 24 em 6 voltas com o deslocamento do carro) e uma pratica (fazer 23 x 13 com voltas de manivela e o carro, meta 299). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: por que a Pascalina nao bastava (ela soma mas nao lembra o numero; cada soma exige discar tudo de novo), a ideia central de Leibniz de separar marcar de somar (o numero fica gravado e cada volta de manivela soma ele inteiro), como o tambor escalonado grava um digito (quanto maior o digito, mais dentes alcancam a engrenagem), e o papel do carro deslizante (deslocar uma casa faz cada volta valer dez vezes mais, entao 35 x 24 sai em 6 voltas em vez de 24).
+
+Por que importa: a roda escalonada virou o coracao das calculadoras mecanicas por 300 anos, do aritmometro de 1820 ate a Curta de bolso dos anos 1970. E o mesmo Leibniz descreveu a aritmetica binaria de 0 e 1, que volta com forca mais adiante na serie. A limitacao que fica (a maquina so faz conta, nao segue instrucoes) e o gancho pro proximo equipamento, o tear de Jacquard.
+
+Use este contexto apenas como apoio.

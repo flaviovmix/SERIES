@@ -1,0 +1,107 @@
+Inicie dizendo: Os Automatos
+---------------
+
+Este e o setimo episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz e o tear de Jacquard. IMPORTANTE PRA CONDUCAO: este episodio e um desvio proposital na linha do tempo. O episodio da roda de Leibniz prometeu o tear como proximo; antes dele, a serie volta pro seculo 18 pra visitar as maquinas que prepararam o tear: os automatos. Quem ja ouviu o episodio do tear vai reconhecer as pontas; quem esta ouvindo na ordem ainda vai chegar la.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Na tela interativa (4) e na DEMONSTRACAO (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O roteiro de teatro: o came como o roteiro que o ator mecanico segue, gravado na borda do disco.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: OS AUTOMATOS)
+
+Abrir explicando o desvio com clareza: o episodio da roda de Leibniz prometeu o tear de Jacquard como proximo, mas antes de chegar nele a serie precisa visitar o seculo 18, porque o tear nao nasceu do nada. Este episodio e sobre os automatos: bonecos e bichos mecanicos que comiam, tocavam flauta e escreviam cartas. Maquinas que nao calculam nada, e mesmo assim empurram a historia: elas executam um roteiro gravado.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: automatos, bonecos mecanicos movidos a corda e programados por cames, discos de metal com a borda recortada. Dois nomes e dois lugares: Jacques de Vaucanson em Paris, nos anos 1730 e 1740; e a familia de relojoeiros Jaquet-Droz na Suica, nos anos 1770.
+
+Motivacao: assombrar as cortes da Europa e vender relogios de luxo. Mas tinha uma tese embutida, que era o assunto quente da epoca: sera que movimento que parece vivo pode ser so mecanismo? Os automatos eram o argumento andando.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (AS ESTRELAS DO SECULO 18)
+
+A tela mostra os tres mais famosos. O pato de Vaucanson: comia, bebia, batia as asas (mais de 400 pecas so numa asa) e fingia digerir a comida. A Europa inteira pagou ingresso. O flautista, do mesmo Vaucanson: um boneco em tamanho real que soprava uma flauta de verdade, com foles fazendo o papel de pulmao, labios e dedos mecanicos.
+
+E o mais importante pra nossa historia: o Escritor, da familia Jaquet-Droz. Um menino de madeira que molha a pena no tinteiro, escreve uma frase e acompanha a propria escrita com os olhos. O pulo do gato: da pra trocar a frase que ele escreve, ate uns 40 caracteres. Guardem essa ideia pra tela 5.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O CAME, TELA INTERATIVA)
+
+A peca que guarda o roteiro: o came. Um disco com a borda recortada, montado num eixo que gira. Uma haste (o apalpador) fica apoiada na borda: quando o disco gira, a haste sobe e desce seguindo o recorte. Borda alta, haste sobe; borda baixa, haste desce. Esse sobe-e-desce vira o movimento do dedo, do braco, da pena.
+
+Ou seja: o movimento esta GRAVADO na borda do disco. O came e o roteiro de teatro do ator mecanico: ele nao improvisa nada, so segue o que esta escrito na borda.
+
+Avisar: a tela tem um came interativo. Convide o ouvinte a girar o came, ver o movimento que sai, e trocar o perfil da borda pra ver o movimento mudar.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (DENTRO DO ESCRITOR, COM DEMONSTRACAO)
+
+Dentro do Escritor de Jaquet-Droz, cada letra e um conjunto de cames: os recortes que guiam a pena pra desenhar aquela letra. E a frase que ele escreve e uma FILA de cames montada na maquina. Quer outra frase? Nao mexe no boneco: troca a fila.
+
+Isso e o mesmo padrao que a serie viu no tear, so que anos antes e em metal caro: a mensagem mora na fila trocavel, nao na maquina.
+
+Avisar que a tela tem a demonstracao: dois botoes fazem a mesma maquina escrever SIM ou NAO, trocando a fila de cames.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O MESMO MUNDO INVENTANDO OS FUROS)
+
+Enquanto os automatos encantavam as cortes, os teceloes de Lyon atacavam o mesmo problema por outro caminho, mais barato: em 1725, Bouchon, filho de organeiro, usou um rolo de papel furado pra escolher os fios do tear. Em 1728, Falcon trocou o rolo por cartoes amarrados em corrente, mais resistentes e faceis de trocar.
+
+E em 1745 o proprio Vaucanson, o homem do pato, montou um tear automatico juntando essas ideias. Os teceloes odiaram, e a maquina acabou num deposito. Decadas depois, um certo Joseph-Marie Jacquard encontrou esse tear guardado, estudou, e terminou o servico. O tear que a serie ja visitou nasceu dai.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: MONTE A FILA DE CAMES)
+
+Convidar a pausar o audio e resolver na tela: montar a fila de cames pra maquina escrever ADA, escolhendo as letras na ordem certa, e mandar escrever. Errou, ajusta a fila e manda de novo.
+
+Quando a maquina escrever ADA, dizer: guarde esse nome, ele volta com forca daqui a pouco na serie. Volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: o came guarda um roteiro na borda de um disco; o Escritor mostra a mensagem morando numa fila trocavel de pecas; e o mesmo mundo ja furava papel e cartao pra comandar tear.
+
+O que ficou: os tres bonecos de Jaquet-Droz (o Escritor, o Desenhista e a Musicista) funcionam ate hoje, num museu em Neuchatel, na Suica. O pato se perdeu num incendio no seculo 19.
+
+A limitacao, que e o gancho: cravar cames em metal e trabalho de relojoeiro, caro, lento, coisa de corte e colecionador. A ideia do roteiro gravado precisava de uma versao barata e de bolso pra chegar em todo mundo. Ela nasceu no mesmo mundo dos relojoeiros suicos, em 1796.
+
+Gancho: no proximo episodio, a caixa de musica.

@@ -1,0 +1,7 @@
+Titulo: Como a eletricidade ganhou músculos
+Notebook: 04-03-A agulha que se mexeu
+
+Descricao:
+A Agulha Que Se Mexeu é o terceiro episódio da fase "Domesticando o Raio" da série Como Reinventar o Computador do Zero, focando na unificação da eletricidade com o magnetismo. O conteúdo detalha a descoberta de Hans Christian Orsted em 1820, que observou como uma corrente elétrica é capaz de desviar a agulha de uma bússola. As fontes explicam as contribuições de Ampère, que demonstrou o poder das bobinas, e de Sturgeon e Henry, que criaram o eletroímã moderno. Este componente é fundamental por permitir o controle da força magnética à distância através de um interruptor, transformando energia em movimento mecânico. O roteiro é acompanhado por uma animação interativa que auxilia o ouvinte a visualizar conceitos como a força circular em volta do fio e o impacto do núcleo de ferro. Por fim, o material estabelece a base para as próximas invenções da série, como o telégrafo e o motor elétrico.
+
+Link: https://notebook.google.com/notebook/fa12cffa-5ae3-482d-ac10-fe83d1ac27b9

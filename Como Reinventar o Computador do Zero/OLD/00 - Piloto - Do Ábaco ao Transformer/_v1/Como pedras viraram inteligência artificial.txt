@@ -1,0 +1,7 @@
+Titulo: Como pedras viraram inteligência artificial
+Notebook: Como Reinventar o Computador do Zero-01 - DO ABACO AO TRANSFORMER
+
+Descricao:
+Esta série documental intitulada Do Ábaco ao Transformer propõe reconstruir a história da computação desde suas raízes mais simples até a inteligência artificial moderna. O conteúdo utiliza a premissa de um cenário pós-apocalíptico onde seria necessário recriar a tecnologia do zero para explicar como conceitos básicos se tornaram máquinas complexas. Através de dezesseis episódios, o roteiro detalha a transição de ferramentas mecânicas e lógica aristotélica para circuitos elétricos e microprocessadores. O objetivo central é demonstrar que o computador não funciona por mágica, mas sim através de uma pilha de ideias simples acumuladas ao longo de milênios. Ao conectar invenções como a álgebra de Boole e a arquitetura Transformer, a obra oferece uma visão clara das camadas tecnológicas que sustentam os dispositivos atuais.
+
+Link: https://notebook.google.com/notebook/1c902176-0312-43e8-aec5-d74301f6a555

@@ -1,0 +1,17 @@
+O CHIP E O MICROPROCESSADOR - CONTEXTO
+======================================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo e ultimo episodio da etapa A ERA DOS TRANSISTORES, a oitava etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1958 a 1971.
+
+O episodio anterior, O Transistor, cobriu de 1947 a 1965 e terminou com a Lei de Moore: o numero de transistores por chip dobrando todo ano. Este episodio volta a 1958 pra contar como os transistores foram parar dentro de um chip so. O problema que ele resolve e a tirania dos numeros, expressao de Jack Morton, dos Bell Labs, em 1957: o transistor era bom e barato, mas cada ligacao entre um e outro era uma solda feita na mao, e um computador com dezenas de milhares de transistores tinha centenas de milhares de soldas, cada uma podendo falhar.
+
+Cobre Jack Kilby, engenheiro recem-contratado pela Texas Instruments em Dallas, sozinho na fabrica no verao de 1958 porque nao tinha direito a ferias, e a ideia dele: se resistor, capacitor e transistor podem todos ser feitos de semicondutor, fazer tudo do mesmo pedaco. Em 12 de setembro de 1958 ele ligou um oscilador feito numa lasca de germanio e a onda apareceu no osciloscopio. Patente pedida em 6 de fevereiro de 1959. Cobre Robert Noyce, na Fairchild Semiconductor, que em janeiro de 1959 juntou o processo planar de Jean Hoerni com a ideia de desenhar as ligacoes em metal por cima da camada de oxido, sem fio nenhum: o circuito monolitico, patente pedida em 30 de julho de 1959. A disputa de patentes entre as duas empresas terminou em licenca cruzada em 1966. Os primeiros chips comerciais, a linha Micrologic da Fairchild em 1961, foram comprados pelo missil Minuteman e pelo programa Apollo, que foi o maior comprador de chips do mundo entre 1961 e 1965.
+
+Cobre a corrida dos dez anos seguintes: a integracao em pequena, media e grande escala, o transistor MOS de Mohamed Atalla e Dawon Kahng (1959 e 1960) e o primeiro chip MOS da RCA em 1962, a fotolitografia que imprime o chip como uma foto e faz o preco nao subir com o numero de transistores, a Intel fundada por Noyce e Gordon Moore em julho de 1968, e a memoria Intel 1103 de 1970.
+
+Cobre o Intel 4004: a Busicom, fabricante japonesa de calculadoras, pediu em abril de 1969 uma familia de sete chips sob medida; Ted Hoff propos em vez disso um processador generico, programado por uma memoria de instrucoes; Federico Faggin chegou a Intel em abril de 1970 trazendo a porta de silicio e desenhou o chip, com Masatoshi Shima, terminando em janeiro de 1971; a Intel recomprou da Busicom o direito de vender o chip pra outros em maio de 1971; e em 15 de novembro de 1971 o anuncio saiu na Electronic News: 2.300 transistores, 4 bits, 740 quilohertz, uns 12 milimetros quadrados, 60 dolares. O computador inteiro da etapa 7, unidade aritmetica, controle, memoria, entrada e saida, cabia agora numa unha.
+
+Ao final o ouvinte entende a diferenca entre transistor, chip e microprocessador, e por que imprimir o circuito de uma vez, em vez de montar peca por peca, e o que faz a Lei de Moore ser possivel. Isso fecha a etapa e abre a proxima, sobre o computador entrar em casa.
+
+Use este contexto apenas como apoio.

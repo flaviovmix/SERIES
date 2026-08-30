@@ -1,0 +1,115 @@
+=== APAGAR ESTE BLOCO AO COPIAR ===
+
+Molde do _NotebookLM_<Nome>.txt dos episodios da serie.
+
+COPIAR DAQUI, NUNCA DO EPISODIO ANTERIOR. Copiar do anterior e o que fez todos os
+episodios sairem com 8 telas: o cabecalho ja vinha com o numero pronto e o conteudo
+era espremido ou esticado pra caber nele.
+
+Ordem: _planta.md primeiro (molde em _arquivos\_molde-planta.md), depois este roteiro.
+O {N} do cabecalho e a contagem de linhas da planta. Os blocos TELA sao um por linha
+da planta, com o mesmo tipo e a mesma ordem.
+
+Arquivo inteiro SEM ACENTO. Nada de travessao (em-dash).
+{chaves} = preencher. Os blocos de linguagem proibida sao LITERAIS: copiar sem mexer.
+
+=== FIM DO BLOCO A APAGAR ===
+
+Inicie dizendo: {Nome do episodio, sem acento}
+---------------
+
+Este e o {N}o episodio da etapa {NOME DA ETAPA}, a {N}a etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, {Nome do anterior}, cobriu de {ano} a {ano} e terminou em {onde parou}. {Uma frase dizendo o que este episodio conserta.}
+
+ESTE EPISODIO COBRE DE {ANO} A {ANO}. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com {N} telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O {N} vem da contagem do _planta.md deste episodio. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas ({numeros}), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA ({numero}), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem {N} telas. O audio TEM que pedir "aperte o Proximo" exatamente {N-1} vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Cada protagonista do episodio, mais quem o roteiro julgar importante, ganha uma ficha curta na primeira vez que e citado: onde nasceu, com o nome do lugar na epoca E o que e aquilo hoje; de que familia veio, o oficio do pai, a condicao; onde estudou; quando morreu E DE QUE. A causa da morte entra sempre que for conhecida, em poucas palavras, dita direto, sem rodeio e sem drama; quando a fonte nao disser, falar que nao se sabe, nunca inventar. Quem so aparece de passagem numa frase fica sem ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- {Analogia 1, e pra que ela serve.}
+- {Analogia 2, e pra que ela serve.}
+Fora essas, sem analogias. Explicar direto.
+
+{Se o episodio nao usa nenhuma: escrever "Sem analogias - explicar direto." e apagar a lista.}
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: {NOME DO EPISODIO})
+
+{Retomar em uma frase onde o episodio passado parou.}
+
+{Dizer o que este episodio faz, e o intervalo de anos que ele cobre.}
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+{Ficha do assunto: o que e, data, lugar.}
+
+{Ficha humana do protagonista: nascimento com nome de entao e de hoje, familia, escola, morte com a causa.}
+
+{Motivacao: por que alguem se deu ao trabalho de resolver isso.}
+
+Pedir: aperte o Proximo.
+
+TELA {n} ({TITULO DA TELA})
+
+{Conteudo da tela, na linguagem do bloco acima.}
+
+Pedir: aperte o Proximo.
+
+TELA {n} ({TITULO DA TELA}, TELA INTERATIVA)
+
+{Conteudo.}
+
+Avisar: {o que tem na tela pra mexer e o que o ouvinte deve reparar enquanto mexe}.
+
+Pedir: aperte o Proximo.
+
+TELA {n} (PRATICA: {O QUE FAZER})
+
+Convidar a pausar o audio e resolver na tela: {o que tem na tela}.
+
+{O objetivo, e o que acontece quando erra pra cada lado.}
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA {N} (ENCERRAMENTO)
+
+{Recapitular o episodio em poucas frases.}
+
+{Dizer em que ano o episodio parou e o que ficou faltando.}
+
+Gancho: {a cena de abertura do proximo episodio, sem entregar a resposta}.

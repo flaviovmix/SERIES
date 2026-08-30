@@ -1,0 +1,7 @@
+Titulo: Do âmbar ao raio de Benjamin Franklin
+Notebook: 04-01-A faísca
+
+Descricao:
+Estes documentos apresentam o episódio "A Faísca", que integra a série "Como Reinventar o Computador do Zero" e foca na transição do mundo mecânico para o elétrico. O conteúdo explora a trajetória da eletricidade entre os séculos XVII e XVIII, partindo da simples observação de materiais como o âmbar até a prova de que o raio é um fenômeno laboratorial. Os textos detalham descobertas fundamentais sobre condutores e isolantes, além da invenção da Garrafa de Leiden, o primeiro dispositivo capaz de armazenar carga. O material também serve como roteiro para uma experiência multimídia, utilizando animações interativas para ilustrar conceitos científicos de forma acessível. Por fim, as fontes ressaltam que, embora a força elétrica já fosse conhecida, ela ainda carecia de um fluxo contínuo para ser verdadeiramente útil.
+
+Link: https://notebook.google.com/notebook/33f4bc53-bafd-41a1-907e-f3dd643c49ac

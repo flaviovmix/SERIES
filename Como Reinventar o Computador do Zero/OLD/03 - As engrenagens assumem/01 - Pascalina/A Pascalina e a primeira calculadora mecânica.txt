@@ -1,0 +1,7 @@
+Titulo: A Pascalina e a primeira calculadora mecânica
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-05 - Equipamentos 04 - Pascalina
+
+Descricao:
+Os textos apresentam um roteiro educacional e contextual sobre a Pascalina, a primeira calculadora mecânica criada por Blaise Pascal em 1642. A obra detalha como esse dispositivo revolucionou o cálculo ao automatizar a regra do "vai-um" por meio de um sistema de engrenagens e alavancas chamado sautoir. O conteúdo faz parte de uma série sobre a história da computação e descreve uma experiência interativa composta por oito telas de animação que ensinam operações de soma e subtração. Os documentos explicam que a máquina permitiu, de forma inédita, que parte do raciocínio lógico fosse transferido do cérebro humano para um mecanismo físico. Além do funcionamento técnico, as fontes abordam as motivações de Pascal e as limitações da época, preparando o terreno para futuras inovações na área.
+
+Link: https://notebook.google.com/notebook/0a40e50a-0580-45b8-a895-56470e152fdd

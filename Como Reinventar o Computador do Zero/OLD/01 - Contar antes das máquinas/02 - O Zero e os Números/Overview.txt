@@ -1,0 +1,13 @@
+O ZERO E OS NUMEROS - CONTEXTO
+===============================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o segundo episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Cada episodio cobre um equipamento da historia da computacao com nome, data, motivacao e pratica interativa. O anterior foi o abaco; este cobre um equipamento que nao e de madeira nem de metal: o proprio sistema de numeracao. Sem ele, nenhuma maquina de calcular teria como existir.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 9 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma demonstracao animada (o algarismo 4 mudando de casa e o zero segurando a casa vazia) e duas praticas (decifrar numeros romanos e executar a soma armada 27 + 15 com vai-um). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: por que os numeros romanos sao bons de registrar e pessimos de calcular (nao sao posicionais), como o sistema posicional indiano com o zero resolveu isso, quem trouxe os algarismos ate a gente (Brahmagupta define o zero em 628; al-Khwarizmi ensina o calculo hindu em Bagda por volta de 825, dando origem as palavras algoritmo e algebra; Fibonacci traz tudo pra Europa em 1202 no Liber Abaci), por que a Europa resistiu por seculos (abacistas contra algoristas, Florenca proibindo os algarismos em 1299 por medo de fraude) e por que os algarismos venceram (conta escrita se confere e se audita).
+
+Por que importa: o valor posicional com zero e o mesmo truque das hastes do abaco, agora em simbolos. E o passo a passo da soma armada e um algoritmo, a ideia que da nome a tudo que um computador executa.
+
+Use este contexto apenas como apoio.

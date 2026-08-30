@@ -1,0 +1,15 @@
+COMO A MAQUINA LEMBRA - CONTEXTO
+================================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1918 a 1963.
+
+O episodio anterior, Circuitos Que Calculam, cobriu de 1937 a 1945 e terminou com a unidade de aritmetica: a maquina no papel soma e subtrai numeros de 4 bits. Mas o resultado aparece nas lampadas e some no instante em que as chaves mudam. A maquina calcula e nao lembra de nada.
+
+Este episodio resolve isso. Cobre o flip-flop, o circuito que guarda um bit: dois OU e dois NAO ligados com um fio que volta pra tras, onde apertar um botao acende a lampada e ela fica acesa, e apertar o outro apaga e ela fica apagada. A primeira versao foi patenteada em 21 de junho de 1918 por William Eccles e F. W. Jordan, na Inglaterra, com duas valvulas. Cobre a celula de memoria, que troca os dois botoes por uma entrada de informacao e uma de permissao pra modificar, e a memoria de 4 bits feita de quatro celulas ligada na saida da unidade de aritmetica.
+
+Cobre o seletor, que usa 2 bits pra escolher uma entre 4 saidas, e o endereco: com o seletor e algumas portas E da pra escrever ou ler um unico bit da memoria sem mexer nos outros. Esse conjunto e o que se chama de memoria de acesso aleatorio, RAM. E cobre a ideia de que tudo vira 0 e 1: o codigo ASCII de 1963, que da a cada letra um numero de 7 bits, e o tamanho das memorias, de gigabytes de hoje ao computador da Apollo, com uns 4 mil bytes de memoria de trabalho.
+
+Ao final o ouvinte entende que memoria e um circuito que fica parado num estado ate alguem mandar mudar, que endereco e um numero que escolhe uma celula, e que texto, imagem e som sao numeros guardados nessas celulas. Isso abre o proximo episodio, que pergunta se e preciso reabrir a maquina toda vez que se quer um programa novo.
+
+Use este contexto apenas como apoio.

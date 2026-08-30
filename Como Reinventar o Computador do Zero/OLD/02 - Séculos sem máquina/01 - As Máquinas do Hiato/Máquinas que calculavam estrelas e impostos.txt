@@ -1,0 +1,7 @@
+Titulo: Máquinas que calculavam estrelas e impostos
+Notebook: Como Reinventar o Computador do Zero-EQUIPAMENTOS-03 - AS MAQUINAS DO HIATO
+
+Descricao:
+As fontes descrevem As Máquinas do Hiato, o terceiro episódio de uma série sobre a história da computação que explora o intervalo de cinco milênios entre o ábaco e a Pascalina. O material detalha o funcionamento de quatro dispositivos fundamentais: o Mecanismo de Anticitera, o astrolábio, os ossos de Napier e a régua de cálculo. O conteúdo é estruturado para acompanhar uma animação interativa de oito telas, alternando entre explicações históricas e exercícios práticos de cálculo. O texto destaca que essas ferramentas operavam por analogia ou simplificação de processos manuais, como a transformação de multiplicações em somas. O objetivo central é mostrar como esses inventos prepararam o terreno para o surgimento das primeiras máquinas de calcular automáticas no século XVII. Por fim, as fontes ressaltam a importância técnica desses instrumentos, que foram essenciais desde a navegação antiga até as missões espaciais modernas.
+
+Link: https://notebook.google.com/notebook/572d4bc4-3b7d-4713-acf0-a9e08337f0ba

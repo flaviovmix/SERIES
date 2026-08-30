@@ -1,0 +1,116 @@
+Inicie dizendo: A Roda De Leibniz
+---------------
+
+Este e o quinto episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o sistema de numeracao com o zero, as maquinas do hiato e a Pascalina; o anterior terminou com uma coceira: a Pascalina soma e subtrai sozinha, mas multiplicar ainda e somar um monte de vezes, na mao. Este episodio e sobre a maquina que atacou exatamente isso: a calculadora de Leibniz, construida em torno da roda escalonada.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Na tela interativa (4) e nas DEMONSTRACOES (5 e 6), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O carimbo: marcar o numero uma vez e bater quantas vezes quiser (a sacada de separar marcar de somar).
+- A escada de dentes: o tambor escalonado como uma escadinha de 9 degraus de tamanhos crescentes.
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A RODA DE LEIBNIZ)
+
+Retomar em uma frase: a Pascalina fez a maquina somar sozinha, mas multiplicar continuava sendo somar um monte de vezes, na mao de quem discava. Trinta anos depois dela, um alemao resolveu isso com uma peca nova de engrenagem: a roda escalonada.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: Gottfried Leibniz, alemao, um dos grandes matematicos e filosofos da historia (inventou o calculo na mesma epoca que Newton, cada um por conta propria). A calculadora dele: modelo de madeira apresentado na Royal Society, em Londres, em 1673; a versao de latao ficou pronta nos anos 1690.
+
+Motivacao, nas palavras do proprio Leibniz: e indigno que homens capazes percam horas como escravos do trabalho de calcular, quando uma maquina poderia fazer isso. Ele conhecia a Pascalina e queria dar o proximo passo: uma maquina que multiplicasse.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (POR QUE A PASCALINA NAO BASTAVA)
+
+A tela compara as duas ideias. Na Pascalina, pra somar 35 quatro vezes voce disca o 35 inteiro de novo a cada vez. A maquina soma, mas nao lembra o numero que acabou de receber.
+
+A ideia de Leibniz: separar MARCAR de SOMAR. Voce marca o 35 uma vez so, e ele fica gravado na maquina. Dai cada volta de manivela soma o 35 inteiro de novo. E o carimbo: voce prepara o carimbo uma vez e bate quantas vezes quiser.
+
+A consequencia: multiplicar virou dar voltas. 35 x 4 sao so 4 voltas de manivela. A repeticao, que era a parte chata, agora e da maquina.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O TAMBOR DE DENTES DESIGUAIS, TELA INTERATIVA)
+
+Como a maquina grava um numero: a roda escalonada e um tambor com 9 dentes de comprimentos crescentes, uma escada de dentes. Uma engrenagem desliza ao lado do tambor, e a posicao dela marca o digito: quanto maior o digito, mais dentes alcancam a engrenagem. Quando o tambor da uma volta, a engrenagem anda exatamente aquele tanto de dentes.
+
+Marcou 6? Cada volta empurra 6. Marcou 2? Cada volta empurra 2. O digito fica gravado na posicao da engrenagem, e a volta do tambor entrega o digito quantas vezes for preciso. Um tambor desses por casa (unidade, dezena, centena) e o numero inteiro fica marcado.
+
+Avisar: a tela tem o tambor interativo. Convide o ouvinte a clicar nos dentes pra marcar um digito e girar o tambor vendo o contador andar.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (MARCA UMA VEZ, SOMA QUANTAS QUISER, COM DEMONSTRACAO)
+
+Juntar as pecas: com o 35 marcado nos tambores, cada volta da manivela soma 35 no acumulador. Primeira volta: 35. Segunda: 70. Terceira: 105. Quarta: 140. Pronto, 35 x 4, sem discar nada de novo, so girando.
+
+Avisar que a tela tem o botao "ver o 35 x 4", que roda essa conta na frente do ouvinte, volta a volta.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (DESLOCAR O CARRO, COM DEMONSTRACAO)
+
+E quando o multiplicador tem dezena? 35 x 24 seriam 24 voltas. Leibniz resolveu com o carro deslizante: deslocar o carro uma casa faz cada volta valer dez vezes mais.
+
+A conta vira: 35 x 24 = 35 x 4 + 35 x 20. Quatro voltas nas unidades (140), desloca o carro (agora cada volta vale 350), duas voltas (490, depois 840). Seis voltas no total, em vez de vinte e quatro. E do jeito que a gente ja faz multiplicacao no papel, casa por casa, so que em manivela.
+
+E a divisao? As mesmas voltas, so que subtraindo: a maquina conta quantas vezes o numero cabe.
+
+Avisar que a tela tem o botao "ver o 35 x 24", passo a passo.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: 23 X 13)
+
+Convidar a pausar o audio e resolver na tela: o 23 ja esta marcado na maquina. 23 x 13 = 23 x 3 + 23 x 10. Primeiro 3 voltas de manivela (deve fechar 69). Depois deslocar o carro (cada volta passa a valer 230) e dar 1 volta: 299.
+
+Avisar: se passar do valor, e apertar limpar e recomecar; a maquina nao desanda.
+
+Quando fechar o 299, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: a roda escalonada grava um digito em dentes de tamanhos diferentes; marcar e somar viraram coisas separadas; a manivela repete a soma e o carro desloca as casas. Multiplicacao e divisao viraram trabalho de maquina.
+
+O que ficou: da maquina de Leibniz mesmo, pouquissimas foram construidas, e o vai-um em cascata dela nem sempre completava sozinho (o operador dava uma ajudinha). Mas a ideia valeu mais que o acabamento: o tambor escalonado virou o coracao das calculadoras mecanicas por 300 anos, do aritmometro de 1820, a primeira calculadora de sucesso comercial, ate a Curta de bolso, usada por engenheiros ate os anos 1970. Uma das maquinas originais de Leibniz passou seculos perdida e foi achada num sotao em 1879.
+
+E um detalhe pra guardar: o mesmo Leibniz descreveu a aritmetica binaria, de 0 e 1. Ninguem deu bola na epoca. Essa ideia volta com tudo mais adiante na serie.
+
+A limitacao: somar, subtrair, multiplicar, dividir. Numeros, sempre numeros. A maquina faz conta, mas nao segue instrucoes.
+
+Gancho: e se os furos de um cartao pudessem mandar numa maquina? No proximo episodio: o tear de Jacquard.

@@ -1,0 +1,15 @@
+O TRANSISTOR - CONTEXTO
+=======================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa A ERA DOS TRANSISTORES, a oitava etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1947 a 1965.
+
+A etapa anterior, O Primeiro Computador Moderno, terminou em 1959 com o COBOL saindo do comite CODASYL. A essa altura o computador ja estava definido por dentro: memoria unica com ordem e numero, programa escrito em palavra e traduzido por compilador. O que continuava enorme era a maquina em si: um salao cheio de valvula que esquenta, gasta luz e queima.
+
+Este episodio resolve isso. Cobre a valvula por dentro, o filamento aquecido dentro do vidro com vacuo e a grade que controla a corrente, e o custo dela: o ENIAC tinha 17.468 valvulas, gastava 150 quilowatts e queimava valvula toda hora. Cobre o semicondutor, o silicio e o germanio, materiais que ficam em cima do muro entre condutor e isolante e que, com uma pitada de impureza, viram tipo n ou tipo p. Cobre o grupo de estado solido dos Bell Labs, em Murray Hill, New Jersey, chefiado por William Shockley, e o experimento de John Bardeen e Walter Brattain: uma lamina de germanio, uma folha de ouro cortada com gilete num triangulo de plastico, e a corrente grande controlada por uma corrente pequena, que funcionou em 16 de dezembro de 1947 e foi demonstrada a chefia em 23 de dezembro. Cobre o nome, dado por John Pierce em maio de 1948, e o anuncio publico de 30 de junho de 1948, que quase ninguem notou.
+
+Cobre a saida do laboratorio: o transistor de juncao de Shockley, provado em 1949 e apresentado em 1951, a producao na Western Electric em outubro de 1951, o transistor de silicio da Texas Instruments em 1954, o radio de bolso Regency TR-1 de outubro de 1954, o TRADIC dos Bell Labs em 1954 e o IBM 7090 de 1959, quando a valvula sai de vez do computador. O Nobel de Fisica de 1956 pros tres. E cobre a mudanca de Shockley pra Mountain View em 1956, a saida de oito engenheiros em 1957 pra fundar a Fairchild, e o artigo de Gordon Moore de 19 de abril de 1965 na revista Electronics, observando que o numero de componentes por chip dobrava a cada ano, previsao que ele revisou pra cada dois anos em 1975 e que ficou conhecida como Lei de Moore.
+
+Ao final o ouvinte entende o que o transistor faz: e um interruptor sem peca que se mexe e sem filamento, onde uma tensao pequena controla uma corrente grande, e por isso ele e menor, mais barato e dura mais que tudo que veio antes. Isso abre o proximo episodio, sobre como por mais de um transistor no mesmo pedaco de silicio.
+
+Use este contexto apenas como apoio.

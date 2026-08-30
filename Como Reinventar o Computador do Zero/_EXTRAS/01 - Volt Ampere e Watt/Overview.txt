@@ -1,0 +1,17 @@
+VOLT AMPERE E WATT - CONTEXTO
+=============================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio avulso, que se explica sozinho. Nao depende de nada ouvido antes e nao continua em lugar nenhum. Quem apertar o play sabendo zero sobre eletricidade tem que sair entendendo.
+
+Ele existe pra tirar uma duvida que quase todo mundo tem e quase ninguem resolve, que e o que significam as unidades da eletricidade.
+
+A duvida e concreta. A lampada diz 9 W. O chuveiro diz 5500 W. O carregador de celular diz 5 V e 2 A. O disjuntor do quadro diz 20 A. A bateria do celular diz 5000 mAh. E a conta de luz cobra em kWh. Sao seis medidas diferentes, ninguem explica a diferenca entre elas, e a pessoa fica achando que e tudo a mesma coisa.
+
+O episodio inteiro se passa dentro de uma unica analogia, um predio com caixa dagua no telhado. A altura da caixa e a tensao, os litros por segundo que passam no cano sao a corrente, o cano fino e comprido e a resistencia, a mangueira de bico fino que o zelador usa pra tirar lodo da calcada e a potencia, e os litros que passaram no mes sao a conta. A ultima parte mostra onde essa analogia quebra, pra ninguem sair com uma ideia errada na cabeca.
+
+Regras duras deste episodio. Primeira: NAO tem cientista, NAO tem data, NAO tem invencao historica e NAO tem nome de pessoa. As unidades sao tratadas so como medidas. Segunda: NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio, e nao usar frases tipo "como a gente viu antes". Este audio pode ser ouvido sozinho, fora de qualquer ordem, por alguem que nunca ouviu mais nada.
+
+Ao final o ouvinte consegue olhar a etiqueta de qualquer aparelho, entender o que cada numero quer dizer, saber por que o fio do chuveiro e grosso, por que o disjuntor desarma e por que o chuveiro de dez minutos pesa mais na conta que a lampada acesa o dia inteiro.
+
+Use este contexto apenas como apoio.

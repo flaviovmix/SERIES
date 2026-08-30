@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plano SEIRES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="plano-estilo.css">
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <header class="head">
+    <p class="eyebrow">Plano do molde &middot; gerado em 27.08.2026</p>
+    <h1>SEIRES: as 6 etapas</h1>
+    <div class="bars" aria-hidden="true"><i style="background:#b9b9b9"></i><i style="background:#b9b900"></i><i style="background:#00b9b9"></i><i style="background:#00b900"></i><i style="background:#b900b9"></i><i style="background:#b90000"></i><i style="background:#0000b9"></i></div>
+    <p class="lede">Site de conteúdo: série de podcast com animação HTML e modelos 3D, publicada como notas no Nexus. Sem backend, sem banco, sem login, sem servidor próprio.</p>
+    <p class="note">Cada etapa abre em p&aacute;gina pr&oacute;pria, que &eacute; como o plano manda trabalhar: uma por vez. Pra buscar no plano todo de uma vez, use <a href="plano-completo.html">o plano inteiro numa p&aacute;gina s&oacute;</a>. Status, decis&otilde;es e pend&ecirc;ncias saem do <code>plano.md</code>: esta p&aacute;gina n&atilde;o guarda c&oacute;pia de nada.</p>
+  </header>
+
+  <dl class="vitals"><div class="vital"><dt>Implementadas</dt><dd>0 <small>de 6</small></dd></div><div class="vital"><dt>Em andamento</dt><dd>0 <small>falta fechar o crit&eacute;rio</small></dd></div><div class="vital"><dt>N&atilde;o iniciadas</dt><dd>6 <small>de 6</small></dd></div><div class="vital"><dt>Decis&otilde;es travadas</dt><dd>0 <small>&mdash;</small></dd></div><div class="vital"><dt>Pend&ecirc;ncias abertas</dt><dd>4 <small>P1 &middot; P2 &middot; P3 &middot; P4</small></dd></div><div class="vital"><dt>Pend&ecirc;ncias resolvidas</dt><dd>0 <small>ficam registradas</small></dd></div></dl>
+
+  <section>
+    <h2>As 6 etapas <span class="count">clique na etapa pra abrir o detalhe completo</span></h2>
+    <div class="legend">
+      <span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>implementado</span> crit&eacute;rio cumprido e conferido pelo dono</span>
+      <span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>em parte</span> come&ccedil;ou, falta fechar o crit&eacute;rio</span>
+      <span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span> nada feito ainda</span>
+    </div>
+    <div class="scroller"><table><thead><tr><th>N&ordm;</th><th>Etapa e o que ela entrega</th><th class="crit">Pronto quando</th><th class="obs">Onde est&aacute; hoje</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">00</td><td class="etapa"><a class="ir" href="plano-etapas/etapa-00.html"><b>Decisões travadas e esqueleto do repo</b><em>Nenhum episódio novo antes de as decisões estruturais estarem escritas e o repositório existir com o primeiro commit limpo.</em></a></td><td class="crit">Alguém que nunca viu o projeto entende como um episódio nasce lendo só o README, as decisões <code>D*</code> estão escritas no plano, e o repositório remoto tem o primeiro commit sem nenhum áudio ou vídeo dentro (<code>git ls-files</code> prova), com a branch de trabalho criada.</td><td class="obs"><p>não iniciada</p><b class="tag">trava: P1 &middot; P2</b></td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">01</td><td class="etapa"><a class="ir" href="plano-etapas/etapa-01.html"><b>Arquivos pesados e backup</b><em>Nada da série existe em um lugar só. O que não vai pro git tem cópia fora desta máquina, e a cópia já foi restaurada uma vez.</em></a></td><td class="crit">Um mp3 apagado de propósito volta do backup pelo caminho, o script de conferência diz &quot;nada faltando&quot; depois disso, <code>git ls-files</code> não lista nenhum áudio ou vídeo, e o inventário está escrito com o destino de cada tipo.</td><td class="obs"><p>não iniciada</p></td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">02</td><td class="etapa"><a class="ir" href="plano-etapas/etapa-02.html"><b>A base da animação, sem clonar</b><em>Um episódio novo nasce da base, não da cópia do episódio anterior, e o arquivo construído sai por um comando.</em></a></td><td class="crit">Um episódio novo é montado da base sem copiar nada de outro episódio, <code>node constroi-animacao.js &quot;&lt;pasta&gt;&quot;</code> gera o construído que abre igual no navegador, mudar o lightbox é edição em um arquivo só, e uma animação da base passa com nota 100 de acessibilidade no Lighthouse com o peso dentro do orçamento escrito.</td><td class="obs"><p>não iniciada</p><b class="tag">trava: P4</b></td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">03</td><td class="etapa"><a class="ir" href="plano-etapas/etapa-03.html"><b>A rede de testes das animações e dos modelos</b><em>Um comando só confere todos os episódios e todos os modelos, e falha quando algo quebra.</em></a></td><td class="crit">O comando roda verde em todos os episódios publicados e em todos os modelos, quebrar de propósito uma tela (apagar o botão Próximo de uma) faz ele falhar apontando a pasta, e a lista do que o script não cobre está escrita nesta etapa.</td><td class="obs"><p>não iniciada</p></td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">04</td><td class="etapa"><a class="ir" href="plano-etapas/etapa-04.html"><b>Publicação</b><em>Um episódio vai ao ar por procedimento escrito e conferido por script, não de memória.</em></a></td><td class="crit">Um episódio é publicado seguindo só o texto do README, a conferência pós-publicação roda verde contra a nota real, o <code>plano-da-serie.md</code> e a visão HTML foram atualizados na mesma sessão, e a P3 virou decisão escrita.</td><td class="obs"><p>não iniciada</p><b class="tag">trava: P3</b></td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">05</td><td class="etapa"><a class="ir" href="plano-etapas/etapa-05.html"><b>Operação e evolução</b><em>A série sobrevive a um dia ruim e a seis meses parada, e o plano vira histórico enquanto a evolução vira fila.</em></a></td><td class="crit">O backup de ontem restaura numa pasta vazia, um link de nota quebrado de propósito aparece no relatório do ritual, toda etapa fechada tem <code>✅ + data</code> no título e na tabela, e o README ensina a produzir e publicar um episódio do zero na versão que está no ar.</td><td class="obs"><p>não iniciada</p></td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Decis&otilde;es travadas <span class="count">uma vez escritas, n&atilde;o se rep&otilde;e</span></h2>
+    <p class="note">Se a realidade derrubar uma, a nova entra com data e o motivo da virada, e a antiga fica registrada.</p>
+    <div class="scroller"><table><thead><tr><th>N&ordm;</th><th>Decis&atilde;o</th><th class="crit">O que ela diz</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Pend&ecirc;ncias <span class="count">cada uma diz em que etapa trava</span></h2>
+    <p class="note">Pend&ecirc;ncia sem etapa dona vira esquecimento. As riscadas j&aacute; foram resolvidas e ficam aqui como hist&oacute;rico.</p>
+    <div class="scroller"><table><thead><tr><th>N&ordm;</th><th>O que est&aacute; em aberto</th><th class="crit">Detalhe</th><th>Trava</th></tr></thead><tbody><tr data-st="zero" id="p1"><td class="num">P1</td><td class="etapa"><b>Fechar o <code>.gitignore</code> do repo antes de qualquer <code>git add</code></b></td><td class="crit">Áudio, vídeo e o que mais for decidido como &quot;fora do git&quot; (o <code>video.mp4</code> tem 382 MB; o GitHub recusa arquivo acima de 100 MB). <strong>Trava a Etapa 0.</strong></td><td class="sit"><a class="trava" href="plano-etapas/etapa-00.html">Etapa 0</a></td></tr><tr data-st="zero" id="p2"><td class="num">P2</td><td class="etapa"><b>Escrever no <code>plano-da-serie.md</code> o que conta como 🟢 (só a nota no ar, ou nota com áudio <strong>e</strong> animação)</b></td><td class="crit">Hoje o ep <code>01</code> da etapa 5 está 🟠 na tabela e listado como publicado no acervo, e o placar do texto diz 15 enquanto as tabelas somam 14. <strong>Trava a Etapa 0.</strong></td><td class="sit"><a class="trava" href="plano-etapas/etapa-00.html">Etapa 0</a></td></tr><tr data-st="zero" id="p3"><td class="num">P3</td><td class="etapa"><b>O three.js dos modelos 3D vem de CDN</b></td><td class="crit">A animação embutida na nota depende de um servidor de terceiro estar no ar. Embutir ou continuar assim é decisão. <strong>Trava a Etapa 4.</strong></td><td class="sit"><a class="trava" href="plano-etapas/etapa-04.html">Etapa 4</a></td></tr><tr data-st="zero" id="p4"><td class="num">P4</td><td class="etapa"><b>Em <code>04 - Domesticando o raio\01 - A faísca</code> os dois <code>_animacao-fonte*.html</code> estão velhos e a fonte de verdade virou o arquivo construído</b></td><td class="crit">Decidir qual é a fonte e apagar o outro. <strong>Trava a Etapa 2.</strong> ---</td><td class="sit"><a class="trava" href="plano-etapas/etapa-02.html">Etapa 2</a></td></tr></tbody></table></div>
+  </section>
+
+  <footer>
+    <span>C:\src\PROJETOS\SEIRES\plano</span>
+    <span>gerado de plano.md + etapas/*.md</span>
+    <span>regras congeladas: 1 a 6</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

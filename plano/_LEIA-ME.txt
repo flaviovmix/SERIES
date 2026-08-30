@@ -1,0 +1,48 @@
+COMO USAR ESTA PASTA
+
+O QUE É ISTO
+O plano da casa onde as séries de podcast são produzidas: repositório,
+backup, base comum das animações, testes, publicação e operação. Nasceu do
+molde /projeto-novo-humanizado-seguro e foi podado em 27/08/2026 para um
+projeto de conteúdo: sem backend, sem banco, sem login, sem servidor.
+
+São 6 etapas, na ordem: decisões e repo, arquivos pesados e backup, a base
+da animação, a rede de testes, publicação, operação.
+
+O plano do CONTEÚDO (o que produzir, os episódios, as regras de roteiro) é
+outro arquivo: "Como Reinventar o Computador do Zero\plano\plano-da-serie.md".
+Um não repete o outro.
+
+
+O DIA A DIA
+Uma etapa por vez, na ordem. Cada etapa tem um "pronto quando", que é um
+critério que dá para clicar, medir ou rodar. Quem diz que a etapa acabou é
+você, olhando funcionar. Não o Claude.
+
+Ao fechar uma etapa, marca-se um visto e a data em dois lugares: no arquivo
+da etapa e na linha dela na tabela do plano.md.
+
+O Claude carrega o plano.md e só o arquivo da etapa atual.
+
+
+O QUE É CADA ARQUIVO
+
+  plano.md      O índice. Decisões travadas, pendências e a tabela de status
+                das 6 etapas. É o único arquivo lido sempre.
+
+  erros.md      A fila de erros. Começa vazia e nunca termina.
+
+  etapas/       O trabalho. Um arquivo por etapa, da 00 até a 05.
+
+  1 a 5         As regras: como o plano se escreve (1, como veio do molde),
+                como o Claude se comporta executando (2), as 7 réguas de
+                validação (3), os anti-padrões (4) e o checklist do dia 1 (5).
+                As de 2 a 5 foram podadas junto com as etapas.
+
+  saude-do-projeto.md
+                Nota de saúde de 0 a 10. Não faz parte do caminho, é um exame.
+
+  plano-visao.html
+                A visão em HTML, gerada por
+                PROJETOS\_plano-html\gerar-plano.py "C:\src\PROJETOS\SEIRES\plano".
+                Rodar de novo sempre que o plano mudar.

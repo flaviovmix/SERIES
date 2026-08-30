@@ -1,0 +1,33 @@
+/* Player do episódio, dentro do card do capítulo.
+   Nativo de propósito: o controle do sistema já sabe fazer seek, velocidade e
+   segundo plano, e um player escrito à mão só ia reimplementar isso pior. */
+
+.audio {
+  margin: 0 0 16px;
+}
+
+.audio audio {
+  display: block;
+  width: 100%;
+  height: 38px;
+  border-radius: 99px;
+  /* o Chrome pinta o fundo do controle nativo; esta é a cor que combina */
+  background: var(--surface-alt);
+}
+
+.audio audio:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.audio__ficha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 8px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}

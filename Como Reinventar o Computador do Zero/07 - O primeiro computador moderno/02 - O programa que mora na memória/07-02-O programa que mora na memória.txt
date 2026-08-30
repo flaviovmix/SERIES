@@ -1,0 +1,35 @@
+Inicie dizendo: O Programa Que Mora Na Memoria
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Programa Que Mora Na Memoria.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o segundo episodio da etapa O PRIMEIRO COMPUTADOR MODERNO, a setima etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, As Primeiras Maquinas Que Ligaram, cobriu de 1936 a 1946 e terminou com o ENIAC apresentado ao mundo, calculando em segundos o que levava dias pra ser preparado no painel de cabos.
+
+ESTE EPISODIO COBRE DE 1945 A 1949. Dizer esse intervalo logo na abertura e, no encerramento, dizer em que ano o episodio para.
+
+FOCO: o programa armazenado. O problema de ter numero dentro da maquina e ordem fora dela. O First Draft of a Report on the EDVAC, escrito por von Neumann e distribuido em 30 de junho de 1945, com as partes da maquina e a memoria unica guardando ordem e numero no mesmo formato. A briga de credito com Presper Eckert e John Mauchly, que diziam que a ideia vinha das reunioes da Moore School, e a patente que caiu por causa da divulgacao publica. O Manchester Baby de 21 de junho de 1948, com tubo Williams, 32 palavras de 32 bits, 17 instrucoes, 52 minutos e o maior divisor proprio de 262144. E o EDSAC de 6 de maio de 1949, com linhas de mercurio, servico regular, sub-rotina e biblioteca de rotinas.
+
+FICHA HUMANA obrigatoria de John von Neumann, Freddie Williams, Tom Kilburn e Maurice Wilkes, com os dados exatos que estao no roteiro: onde nasceu com o nome do lugar na epoca e o de hoje, familia, escola e morte. Nao inventar nenhum dado biografico que nao esteja no roteiro. Herman Goldstine, David Wheeler e Geoff Tootill aparecem de passagem e nao ganham ficha.
+
+NAO explicar compilador, Grace Hopper, linguagem de programacao, transistor nem circuito integrado: sao os proximos episodios. So citar o compilador no gancho final.
+
+A pagina tem 9 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo". Na tela interativa, avisar que tem botao na tela. Na tela de pratica, convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Programa Que Mora Na Memoria.txt. NAO invente analogias novas. A unica autorizada e a receita e os ingredientes na mesma prateleira, pra explicar ordem e numero na mesma memoria.
+
+Use tambem o Overview.txt como contexto curto.

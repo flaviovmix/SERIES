@@ -1,0 +1,75 @@
+Inicie dizendo: Antes Da Eletricidade
+---------------
+
+Este e o segundo episodio da serie Como Reinventar o Computador do Zero. O primeiro apresentou a serie inteira; este comeca a construcao: as maquinas de calcular de antes da eletricidade.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- Apenas na abertura, pode retomar em uma frase a imagem de partida da serie: reconstruir a tecnologia do zero comecando pelo computador.
+- Fora isso, sem analogias. Explicar direto. Os exemplos concretos do roteiro (como a conta no abaco) sao exemplos, nao analogias, e podem ser usados.
+
+---
+
+ROTEIRO DO EPISODIO
+
+ABERTURA
+
+Retomar em uma frase: no primeiro episodio a gente apresentou a jornada de reconstruir o computador do zero. Agora a construcao comeca, e ela comeca sem eletricidade nenhuma: pedras, madeira, engrenagens e manivelas. Este episodio cobre o abaco, a calculadora de Pascal e a maquina analitica de Babbage, que Ada Lovelace programou no papel.
+
+POR QUE IMPORTA
+
+A pergunta escondida nessas maquinas antigas: como algo abstrato, como uma multiplicacao, pode ser representado por pecas fisicas se mexendo? Essa e a semente do computador. E o episodio termina com uma segunda pergunta, ainda maior: o que faz uma maquina deixar de ser uma calculadora e virar um computador de verdade?
+
+O ABACO
+
+O abaco e um instrumento de contagem inventado provavelmente na Mesopotamia, ha uns 5500 anos, pra permitir calculos aritmeticos de forma rapida e mecanica. Pedras e madeira, so isso.
+
+Como funciona uma conta nele: pra multiplicar 2 vezes 24, voce vai passando pedras de um lado pro outro, contando, e quando dez pedras de baixo se juntam voce troca por uma pedra de cima. No fim, a posicao das pedras mostra o resultado, 48. O ponto central: a multiplicacao, que e uma ideia abstrata, virou movimento fisico de pecas. O abaco e o primeiro de uma linha de instrumentos de contagem que leva direto ate o computador que voce usa.
+
+A limitacao: por mais pratico que seja, o abaco exige que alguem passe as pedrinhas manualmente. A maquina nao faz nada sozinha.
+
+A CALCULADORA DE PASCAL
+
+Na Renascenca, varios dispositivos tentaram melhorar isso, sem sucesso completo, ate 1642. Um jovem frances de 19 anos foi obrigado pelo pai a ajudar no trabalho monotono de supervisionar a coleta de impostos de uma cidade. Entediado com a tarefa repetitiva, ele inventou a primeira calculadora mecanica: somas, subtracoes, multiplicacoes e divisoes, tudo automatico, com viradas de manivela. O nome dele: Blaise Pascal, que mais tarde faria outras contribuicoes importantes pra matematica, pra fisica e pra filosofia.
+
+O avanco em relacao ao abaco: a conta agora anda sozinha, a engrenagem faz o trabalho que antes era da mao. Mas ainda e so manipulacao de numeros. Nao parece razoavel que alguma quantidade de engrenagens conseguisse, por exemplo, rodar um jogo de videogame. Ou parece?
+
+BABBAGE, ADA LOVELACE E A MAQUINA ANALITICA
+
+Charles Babbage tinha projetado uma maquina de calcular funcoes (a maquina diferencial), financiada pelo governo britanico, mas so conseguiu construir parte dela por falta de fundos. Quando o governo comecou a desconfiar da capacidade dele de terminar, a resposta de Babbage foi projetar algo ainda mais ambicioso: a maquina analitica.
+
+A inspiracao veio do tear de Jacquard, uma maquina de 1800 que lia cartoes furados e costurava padroes no tecido conforme os furos. Ou seja: o tear podia ser programado trocando os cartoes, sem mexer na maquina. A maquina analitica de Babbage seria assim: capaz de mudar o proprio funcionamento pra executar qualquer tarefa que o usuario quisesse. Programavel, como os computadores modernos.
+
+Em 1843, Ada Lovelace, filha do poeta Lord Byron, publicou a traducao de um artigo cientifico sobre a maquina analitica. Insegura de publicar as proprias ideias num artigo dela, adicionou as ideias como notas da tradutora. Essas notas ficaram mais famosas e importantes que o proprio artigo. Nelas, Ada descreveu que a maquina poderia manipular palavras, logica, musica e qualquer coisa que precise de simbolos pra ser transmitida. E escreveu a sequencia de instrucoes que permitiria a maquina calcular os numeros de Bernoulli. Isso faz dela a autora do primeiro codigo de computador publicado da historia.
+
+A maquina analitica nunca foi construida em vida de Babbage. Mas os planos eram detalhados o suficiente pra gente saber: se tivesse sido construida, teria sido o primeiro computador universal. Lenta, com memoria bem limitada, mas capaz de executar qualquer programa de computador.
+
+AS PERGUNTAS QUE FICAM
+
+O que diferencia a maquina de Babbage do abaco? Se algo mudou que permitiu que calculadoras mecanicas se tornassem tao gerais quanto computadores modernos, o que foi que mudou? E como simples movimento de pecas consegue dar vida a inteligencia que a gente ve nos computadores? Essas perguntas moram no coracao do que e um computador, e a serie inteira persegue elas.
+
+ONDE ISSO APARECE NA VIDA REAL
+
+A ideia de Ada esta viva em tudo: quando voce abre um app diferente no mesmo celular, esta usando exatamente o que a maquina analitica prometia, uma maquina so que troca de tarefa trocando o programa, sem trocar de peca. E o cartao furado do tear de Jacquard e o tataravo do arquivo de programa que voce baixa hoje.
+
+ENCERRAMENTO
+
+Recapitular: o abaco mostrou que calculo abstrato vira movimento fisico; Pascal fez a conta andar sozinha; Babbage projetou uma maquina programavel e Ada escreveu o primeiro programa dela. Mas pra entender o que torna uma maquina dessas realmente geral, a gente precisa primeiro de outra materia-prima: a logica. No proximo episodio a gente volta 2300 anos, ate Aristoteles, e segue ate George Boole, que transformou o pensamento em conta de somar e multiplicar.

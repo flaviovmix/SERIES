@@ -1,0 +1,7 @@
+Titulo: O tear que programava com cartões furados
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-07 - Equipamentos 06 - O Tear de Jacquard
+
+Descricao:
+As fontes detalham a história e o funcionamento do tear de Jacquard, a primeira máquina capaz de executar instruções armazenadas externamente em cartões perfurados. Criado por Joseph-Marie Jacquard no início do século XIX, esse mecanismo permitia automatizar desenhos complexos em tecidos, substituindo o trabalho manual exaustivo por um sistema onde o furo no cartão determinava o movimento dos fios. Os textos explicam que essa inovação permitiu separar o desenho da máquina, possibilitando a troca de padrões apenas substituindo a sequência de cartões. Esse conceito de programação influenciou diretamente o futuro da computação, inspirando a Máquina Analítica de Babbage e o uso de cartões na IBM até a década de 1970. O material serve como roteiro para uma experiência educativa que utiliza áudio e animações interativas para ensinar esses princípios.
+
+Link: https://notebook.google.com/notebook/48d30e84-004a-4047-9545-ab532b94aa9b

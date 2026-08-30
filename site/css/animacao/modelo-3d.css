@@ -1,0 +1,39 @@
+/* modelo-3d
+   O modelo tridimensional embutido na capa: o iframe, o teto de largura dele e a legenda. Depende de animacao/tokens.css e de telas.css (mora dentro de .step--capa). O modelo em tela cheia e o lightbox.
+
+   O iframe e quem tem o teto (1060px) e centraliza dentro da figure, que segue
+   ocupando toda a sobra: assim o texto fica ancorado na margem e o modelo no meio
+   do espaco que resta. So vale de ~1500px pra cima; abaixo o modelo encosta. */
+
+.capa-modelo {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.capa-modelo iframe {
+  width: 100%;
+  max-width: 1060px;
+  height: min(66vh, 600px);
+  border: 0;
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--sombra-alta);
+}
+.capa-modelo figcaption {
+  font-family: var(--fonte-mono);
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* estreito: a capa empilha e o modelo encolhe */
+@media (max-width: 820px) {
+  .capa-modelo { width: 100%; }
+  /* alto o bastante pra barra de leitura do modelo (rodape dele) nao cobrir a maquina */
+  .capa-modelo iframe { height: min(64vh, 460px); }
+}

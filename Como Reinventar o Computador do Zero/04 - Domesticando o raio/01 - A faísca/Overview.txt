@@ -1,0 +1,11 @@
+A FAISCA - CONTEXTO
+===================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa DOMESTICANDO O RAIO, dentro da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. As etapas anteriores foram todas mecanicas: contar com o abaco e escrever numero com o zero, os instrumentos do hiato, e as maquinas de engrenagem de Pascal, Leibniz, Jacquard e Babbage.
+
+Esta etapa muda o material. Antes de qualquer computador eletrico existir, alguem precisou descobrir o que e eletricidade, como prender ela num fio e como faze-la obedecer. Este primeiro episodio cobre o periodo em que a eletricidade ja era conhecida e ainda nao servia pra nada: o ambar de Tales de Mileto, o livro de William Gilbert de 1600 que separou ima de ambar e inventou a palavra eletrico, a descoberta de Stephen Gray em 1729 de que a eletricidade viaja por alguns materiais e para em outros, a garrafa de Leiden de 1745 que guardou o choque pela primeira vez, e a prova de Benjamin Franklin em 1752 de que o raio do ceu e a mesma coisa que a faisca do laboratorio.
+
+Ao final o ouvinte entende tres coisas: que eletricidade ja era estudada seculos antes de virar util, que a diferenca entre condutor e isolante foi uma descoberta e nao uma obviedade, e por que nada disso ainda dava pra usar: era tudo estalo curto, faisca de um instante, e nao um fluxo constante que da pra ligar e desligar. Essa falta e o que abre o proximo episodio, a pilha de Volta.
+
+Use este contexto apenas como apoio.

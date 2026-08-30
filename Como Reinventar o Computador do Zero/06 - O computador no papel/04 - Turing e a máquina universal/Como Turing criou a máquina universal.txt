@@ -1,0 +1,7 @@
+Titulo: Como Turing criou a máquina universal
+Notebook: 06-04-Turing e a máquina universal
+
+Descricao:
+Estes documentos detalham um episódio da série Como Reinventar o Computador do Zero, focado na transição da computação física para a matemática pura entre 1928 e 1936. O texto explora como Alan Turing respondeu ao "problema da decisão" de Hilbert ao definir o conceito de algoritmo através de sua máquina teórica de fita e regras. A narrativa destaca a Máquina Universal, uma inovação que provou ser possível usar uma única máquina para executar qualquer tarefa apenas lendo instruções da memória. O conteúdo utiliza uma estrutura de roteiro interativo para explicar a Tese de Church-Turing e a equivalência entre diferentes definições de computação. Ao final, as fontes estabelecem a base para o surgimento do software, demonstrando que o hardware não precisa ser alterado fisicamente para realizar funções distintas.
+
+Link: https://notebook.google.com/notebook/f55ce447-9486-434c-bee6-d2c5216d2e11

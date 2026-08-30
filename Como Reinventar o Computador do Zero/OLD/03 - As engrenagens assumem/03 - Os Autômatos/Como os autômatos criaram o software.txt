@@ -1,0 +1,7 @@
+Titulo: Como os autômatos criaram o software
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-08 - Equipamentos 07 - Os Autômatos
+
+Descricao:
+As fontes descrevem o sétimo episódio de uma série sobre a história da computação, focado nos autômatos do século 18. Esses bonecos mecânicos, criados por inventores como Vaucanson e a família Jaquet-Droz, utilizavam discos de metal recortados chamados cames para executar movimentos programados. O conteúdo destaca o Escritor como um marco tecnológico, pois permitia a troca de frases através da substituição de sua fila de cames. O material também conecta essas máquinas de luxo aos precursores do tear de Jacquard, que utilizavam cartões perfurados para automatizar processos. Acompanhado por uma página de animação interativa, o episódio explica como o roteiro de uma ação saiu do corpo humano para se tornar uma peça física. Por fim, o texto estabelece o came como o ancestral do programa gravado, preparando o terreno para a popularização dessa tecnologia nas caixas de música.
+
+Link: https://notebook.google.com/notebook/e38ae13c-7e6a-4525-89be-6b6b123e5f0e

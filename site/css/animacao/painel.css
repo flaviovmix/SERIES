@@ -1,0 +1,148 @@
+/* painel
+   A moldura de qualquer pratica ou demonstracao: o painel branco, a legenda que conta o passo, o total embaixo, a fileira de botoes e a trilha de desafios. Depende de animacao/tokens.css.
+
+   O que vai DENTRO do painel (o abaco, o risco) e de cada episodio e mora no css
+   dele. Quem quer uma pratica nova comeca por aqui e so desenha o miolo. */
+
+.painel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px 34px;
+  margin-top: 18px;
+  max-width: 1020px;
+  width: 100%;
+}
+
+/* a legenda: o que esta acontecendo, em uma ou duas linhas */
+.legenda {
+  font-family: var(--fonte-mono);
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  min-height: 38px;
+  margin-bottom: 18px;
+  letter-spacing: .03em;
+  line-height: 1.5;
+  text-align: center;
+}
+.legenda b { color: var(--accent); }
+.legenda.ok { color: var(--ok); font-weight: 600; }
+
+/* o total: o numero grande e a meta ao lado */
+.painel__total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 14px;
+  border-top: 1px dashed var(--line);
+  padding-top: 10px;
+}
+.painel__total .num { font-family: var(--fonte-mono); font-size: 46px; font-weight: 600; }
+.painel__total .meta { font-family: var(--fonte-mono); font-size: 13.5px; color: var(--ink-soft); }
+.painel__total .meta.win { color: var(--ok); font-weight: 600; animation: pop .5s var(--ease); }
+@keyframes pop {
+  0% { transform: scale(.7); }
+  70% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* a fileira de botoes */
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-mini {
+  font-family: var(--fonte-mono);
+  font-size: 12px;
+  letter-spacing: .1em;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  border-radius: 99px;
+  padding: 9px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .25s;
+}
+.btn-mini:hover { border-color: var(--accent); color: var(--accent); }
+.btn-mini.cheio { background: var(--accent); color: var(--ground); border-color: var(--accent); font-weight: 600; }
+.btn-mini.cheio:hover { color: var(--ground); }
+.btn-mini:disabled { opacity: .3; cursor: default; }
+
+/* um traco fino separando dois grupos de botoes na mesma fileira (ex.: a contagem e a pratica) */
+.botoes__sep { width: 1px; align-self: stretch; margin: 4px 8px; background: var(--line); }
+
+/* variante de lado: legenda em cima, total a esquerda, o miolo (.painel__miolo) no
+   centro e os botoes empilhados a direita, com uma linha tracejada fechando embaixo.
+   Serve pra miolo alto, como o suanpan em pe: empilhado, sobrava espaco nas laterais
+   e faltava embaixo. Pedido do Flavio em 30/08, desenhado a partir de um print dele. */
+.painel--lado {
+  display: grid;
+  /* laterais com largura fixa: o rotulo de um botao ou a meta do total mudando de
+     tamanho ("praticar" -> "parar de praticar", "monte o 79") nao pode mexer no miolo */
+  grid-template-columns: 150px 1fr 200px;
+  grid-template-areas: "legenda legenda legenda" "total miolo botoes" "linha linha linha";
+  column-gap: 24px;
+  align-items: center;
+}
+.painel--lado .legenda { grid-area: legenda; }
+.painel--lado .painel__miolo { grid-area: miolo; min-width: 0; }
+.painel--lado .painel__total {
+  grid-area: total;
+  flex-direction: column-reverse;   /* a meta ("monte o 79") em cima do numero */
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 0;
+}
+.painel--lado .botoes { grid-area: botoes; flex-direction: column; align-items: stretch; margin-top: 0; }
+.painel--lado .botoes .btn-mini { padding-left: 10px; padding-right: 10px; white-space: nowrap; }
+.painel--lado .botoes__sep { width: auto; height: 1px; margin: 6px 0; }
+.painel--lado::after { content: ''; grid-area: linha; border-top: 1px dashed var(--line); margin-top: 14px; }
+
+/* a trilha de desafios: o atual, os feitos e os que faltam */
+.trilha { display: flex; gap: 8px; justify-content: center; margin-bottom: 12px; }
+.trilha .alvo {
+  font-family: var(--fonte-mono);
+  font-size: 12px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 5px 14px;
+  color: var(--ink-soft);
+}
+.trilha .alvo.atual { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.trilha .alvo.feito { border-color: var(--ok); color: var(--ok); }
+
+/* desenho em svg dentro do painel pode passar da caixa sem cortar */
+svg { overflow: visible; }
+
+/* ---- apertos, no fim da folha de proposito ---- */
+
+/* telefone: a variante de lado volta a empilhar, nao cabe tres colunas */
+@media (max-width: 700px) {
+  .painel--lado { display: block; }
+  .painel--lado .painel__total { flex-direction: row; align-items: baseline; justify-content: space-between; margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 10px; }
+  .painel--lado .botoes { flex-direction: row; margin-top: 14px; }
+  .botoes__sep { display: none; }   /* os botoes quebram linha, o traco perde o sentido */
+  .painel--lado::after { display: none; }
+  .painel { padding: 14px 12px; }
+  .painel__total .num { font-size: 24px; }
+  .legenda { font-size: 11px; min-height: 32px; }
+  .btn-mini { padding: 6px 12px; font-size: 10px; }
+}
+
+/* tela baixa */
+@media (max-height: 820px) {
+  .painel { padding: 16px 20px; margin-top: 12px; }
+  .legenda { min-height: 30px; margin-bottom: 10px; }
+  .painel__total { margin-top: 10px; padding-top: 8px; }
+  .painel__total .num { font-size: 30px; }
+  .botoes { margin-top: 10px; }
+  .trilha { margin-bottom: 8px; }
+  .trilha .alvo { padding: 5px 12px; font-size: 12px; }
+}

@@ -1,0 +1,113 @@
+Inicie dizendo: O Tear De Jacquard
+---------------
+
+Este e o sexto episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o sistema de numeracao com o zero, as maquinas do hiato, a Pascalina e a roda de Leibniz; o anterior terminou com uma provocacao: as calculadoras fazem conta, mas nao seguem ordens. Este episodio e sobre a maquina que inverteu isso: o tear de Jacquard nao calcula nada, mas e a primeira maquina que obedece instrucoes gravadas em cartoes furados.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Na tela interativa (4) e nas DEMONSTRACOES (5 e 6), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A partitura: a corrente de cartoes como a partitura que a maquina executa; troca a partitura, troca a musica.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O TEAR DE JACQUARD)
+
+Retomar em uma frase: ate aqui a serie so viu maquinas de fazer conta, e o episodio passado terminou lembrando que elas calculam mas nao seguem ordens. A maquina de hoje e o contrario: o tear de Jacquard nao faz conta nenhuma, e mesmo assim e uma das mais importantes da serie inteira, porque e a primeira maquina que obedece instrucoes gravadas em cartoes furados.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: Joseph-Marie Jacquard, Lyon, Franca, a capital da seda. O mecanismo foi demonstrado em 1801 e aperfeicoado ate 1804. Nao e um tear inteiro: e uma cabeca de cartoes furados que se acopla em cima do tear comum.
+
+Motivacao: tecido estampado (flores, desenhos, brocado) exigia levantar os fios certos da urdidura a cada passada. Quem fazia isso era um ajudante, muitas vezes crianca, puxando cordinha por cordinha o dia inteiro, num trabalho lento e cheio de erro. Jacquard fez exatamente esse trabalho quando crianca, na oficina do pai, e nao esqueceu.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O QUE MUDA AQUI)
+
+A tela compara os dois mundos. No tear antigo, o desenho morava na cabeca do mestre e nas maos do ajudante: a cada passada, alguem decidia quais fios subiam.
+
+A ideia de Jacquard: gravar essas decisoes em cartoes furados. A cada passada, um cartao diz quais fios sobem. A maquina le o cartao e obedece, sem ajudante.
+
+A virada, e vale enfatizar: as maquinas anteriores da serie faziam conta. Esta segue INSTRUCOES. Furo ou nao-furo, sobe ou nao sobe: uma decisao gravada fora da cabeca de alguem, num suporte fisico que a maquina entende.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O CARTAO FURADO, TELA INTERATIVA)
+
+Como funciona a leitura: o cartao e prensado contra uma fileira de agulhas. Onde tem furo, a agulha passa e o gancho levanta aquele fio da urdidura. Onde nao tem furo, a agulha e empurrada pra tras e o fio fica embaixo. Quando a lancadeira passa com o fio da trama, os fios levantados aparecem no desenho e os abaixados somem.
+
+Resumindo a regra inteira da maquina: furo = fio sobe, sem furo = fio fica. So isso, repetido muitas vezes, tece qualquer desenho.
+
+Avisar: a tela tem um cartao interativo. Convide o ouvinte a clicar nos circulos pra furar o cartao e apertar o botao de passar, vendo os fios subirem e a linha do tecido sair do jeito que o cartao mandou.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A CORRENTE DE CARTOES, COM DEMONSTRACAO)
+
+Um cartao tece UMA linha do tecido. O desenho inteiro e uma corrente: os cartoes sao costurados um no outro, formando um colar que gira e passa um cartao por vez, a cada batida do tear. Acabou a corrente, o desenho recomeca do primeiro cartao.
+
+E a partitura da maquina: o desenho inteiro escrito, cartao por cartao, linha por linha.
+
+Avisar que a tela tem o botao "tecer a corrente": 5 cartoes passam um a um e um losango aparece no tecido, linha por linha.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (TROCAR O PROGRAMA, COM DEMONSTRACAO)
+
+A consequencia que muda a historia: quer outro tecido? NAO mexe na maquina. Troca a corrente de cartoes. Mesma maquina, mesmo tear, mesmos fios: com a corrente A sai um losango, com a corrente B sai um xadrez. Troca a partitura, troca a musica.
+
+Pela primeira vez, o desenho e uma coisa separada da maquina que o executa. Da pra guardar o desenho na gaveta, copiar, emprestar, vender. Um desenho famoso podia ser tecido identico em qualquer tear de Jacquard do mundo.
+
+Avisar que a tela tem os dois botoes, corrente A e corrente B, pra tecer os dois desenhos na mesma maquina.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: PROGRAME O TECIDO)
+
+Convidar a pausar o audio e resolver na tela: tem um alvo desenhado (uma letra T) e 5 cartoes em branco. Furar os cartoes de modo que, tecendo os 5, o tecido saia igual ao alvo. Furou, aperta tecer e compara; saiu diferente, ajusta os furos e tece de novo, quantas vezes precisar.
+
+Dizer com todas as letras: isso que o ouvinte esta fazendo e programar. Escrever instrucoes num suporte que a maquina le e executa.
+
+Quando o tecido bater com o alvo, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: furo = fio sobe; um cartao por linha; a corrente carrega o desenho inteiro; e trocar a corrente troca o tecido sem mexer na maquina. Instrucao gravada fora da cabeca, executada por uma maquina.
+
+O que ficou: os teceloes de Lyon chegaram a queimar as maquinas com medo do desemprego, mas em 1812 a cidade ja tinha milhares delas. A prova do alcance: um retrato do proprio Jacquard foi tecido com cerca de 24 mil cartoes, tao detalhado que parecia gravura. E o cartao furado saiu do tecido e foi contar gente e dinheiro: o censo americano de 1890 usou cartoes (Hollerith, a empresa que virou a IBM) e os computadores rodaram em cartao furado ate os anos 1970.
+
+A limitacao, que e o gancho: o tear obedece, mas nao calcula. A roda de Leibniz calcula, mas nao obedece. Um ingles olhou pros dois e sonhou a maquina que junta as duas coisas: engrenagens que calculam, comandadas por cartoes furados.
+
+Gancho: no proximo episodio, a Maquina Analitica de Charles Babbage, e a primeira programadora da historia, Ada Lovelace.

@@ -1,0 +1,138 @@
+Inicie dizendo: Turing E A Maquina Universal
+---------------
+
+Este e o quarto episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, Como A Maquina Lembra, cobriu de 1918 a 1963 e terminou com a RAM: a maquina no papel calcula e guarda, mas so faz a conta pra qual foi montada. Este episodio sai da bancada e vai atras de uma ideia de matematica pura que responde se vai ser sempre assim.
+
+ESTE EPISODIO COBRE DE 1928 A 1936. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (6), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 9 telas. O audio TEM que pedir "aperte o Proximo" exatamente 8 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio tem dois personagens com ficha: David Hilbert e Alan Turing. A ficha de cada um entra na primeira vez que ele e citado e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu. Os dados estao escritos nas telas 2 e 4: usar exatamente esses, sem inventar nenhum dado biografico. Wilhelm Ackermann, Max Newman, Alonzo Church, Kurt Godel e Martin Davis aparecem de passagem e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Turing E A Maquina Universal.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+Sem analogias - explicar direto. A pessoa fazendo conta com lapis e papel nao e analogia: e o modelo que o proprio Turing usou, e deve ser apresentado assim.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: TURING E A MAQUINA UNIVERSAL)
+
+Retomar em uma frase onde o episodio passado parou: em 1963 a maquina no papel ja calculava e guardava, com memoria de endereco. Mas ela so faz a conta pra qual os circuitos dela foram montados: pra fazer outra coisa, alguem abre a maquina e liga os fios de outro jeito.
+
+Fazer a pergunta do episodio: vai ser sempre assim? Vai ser preciso montar circuito novo toda vez que aparecer um programa novo, um jogo novo? Dizer que a resposta veio de um lugar improvavel, uma pergunta de matematica pura, e que este episodio volta um pouco no tempo pra conta-la. Dizer o intervalo em voz alta: este episodio cobre de 1928 a 1936, de uma pergunta feita num congresso de matematica ate um artigo de um rapaz de 23 anos.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o problema da decisao, em alemao Entscheidungsproblem. Data: 1928, quando foi formulado com todas as letras num congresso em Bolonha, na Italia, e num livro do mesmo ano, por David Hilbert e Wilhelm Ackermann. A pergunta: existe um metodo que, recebendo qualquer afirmacao matematica escrita em simbolos, responda sim ou nao, se ela pode ser provada?
+
+Motivacao: Hilbert queria por a matematica inteira em cima de um alicerce seguro, um conjunto de regras a partir do qual toda verdade fosse demonstravel por procedimento, sem depender de genio nem de intuicao. Se o metodo existisse, provar teorema viraria trabalho de execucao: bastaria aplicar o procedimento e esperar a resposta. A frase dele, que esta na lapide, era: nos temos que saber, nos vamos saber.
+
+Ficha humana de David Hilbert. Nasceu em 23 de janeiro de 1862 em Konigsberg, no Reino da Prussia, cidade que hoje se chama Kaliningrado e fica na Russia. O pai, Otto Hilbert, era juiz de comarca. Estudou na Universidade de Konigsberg, onde tirou o doutorado em 1885, e a partir de 1895 foi professor em Gottingen, na Alemanha, que ele transformou no centro da matematica do mundo. Em 1900, em Paris, apresentou a lista de 23 problemas que ocupou o seculo. Morreu em 14 de fevereiro de 1943, aos 81 anos, em Gottingen, com menos de doze pessoas no enterro.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O QUE E UM ALGORITMO)
+
+Dizer que a pergunta de Hilbert tem uma palavra escondida que ninguem sabia definir: metodo. Hoje a gente chama de algoritmo. Dar quatro exemplos: a sequencia de passos pra multiplicar dois numeros no abaco; a conta de multiplicar que se aprende na escola; o jeito de ordenar um baralho de cartas; e qualquer programa de computador que a pessoa ja tenha usado. Os quatro sao a mesma coisa: uma sequencia finita de instrucoes que, seguida ao pe da letra, de forma mecanica, leva a um resultado previsivel.
+
+Dizer o problema da palavra mecanica. Algoritmo existe desde as civilizacoes mais antigas, a serie viu varios, mas ate 1936 ninguem tinha conseguido dizer com precisao o que e um passo mecanico e o que nao e. E sem isso a pergunta de Hilbert nao tem resposta: pra provar que nenhum metodo resolve alguma coisa, e preciso antes saber o que conta como metodo.
+
+Dizer o que ja tinha acontecido: em 1931 Kurt Godel tinha mostrado que existem afirmacoes verdadeiras que nao podem ser provadas dentro do sistema, um golpe no plano de Hilbert. Mas o problema da decisao, se existe um metodo que pelo menos diga quais afirmacoes podem ser provadas, continuava em aberto.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O RAPAZ DE 23 ANOS)
+
+Ficha humana de Alan Turing. Nasceu em 23 de junho de 1912 em Maida Vale, um bairro de Londres, na Inglaterra, que continua com o mesmo nome. O pai, Julius Turing, era funcionario do servico civil britanico na India, e a mae, Ethel Sara Stoney, vinha de familia de engenheiros; os pais passavam a maior parte do tempo na India, e ele e o irmao cresceram na Inglaterra na casa de um casal aposentado. Estudou na escola de Sherborne, onde os professores nao davam valor a matematica e um deles chegou a avisar os pais do risco de o menino virar um mero especialista cientifico. Entrou no King's College, em Cambridge, em 1931, e se formou em matematica com a nota maxima em 1934, aos 22 anos. Morreu em 7 de junho de 1954, aos 41 anos, em Wilmslow, na Inglaterra, envenenado por cianeto, dois anos depois de ser condenado pela justica britanica por ser homossexual e obrigado a um tratamento hormonal. O governo britanico pediu desculpas em 2009.
+
+A cena: em 1935 ele assistiu a um curso de Max Newman sobre fundamentos da matematica, em Cambridge, e ouviu falar do problema da decisao. Poucos meses depois entregou na mesa de Newman o rascunho de um artigo chamado Sobre os Numeros Computaveis, com uma aplicacao ao problema da decisao. A data: 28 de maio de 1936, quando o artigo foi submetido. Ele foi publicado em novembro daquele ano.
+
+Dizer a resposta e o aviso: a resposta e nao. Nao existe metodo geral que decida se qualquer afirmacao matematica pode ser provada. Mas, como acontece bastante na historia da ciencia, a parte que ficou nao foi a resposta, foi o jeito de chegar nela. Pra provar que nenhum metodo resolve, Turing teve que definir o que e um metodo. E fez isso com uma maquina imaginaria.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A MAQUINA DE TURING)
+
+Contar de onde a maquina veio: Turing imaginou uma pessoa fazendo uma multiplicacao numa folha de papel, coisa que todo mundo concordava que e mecanica, e perguntou o que e absolutamente necessario pra fazer aquilo. Papel dividido em quadradinhos. Um simbolo por quadradinho. Olhar um quadradinho por vez. Escrever ou apagar. Mudar de quadradinho. E um estado de cabeca, que muda conforme o que se ve. So isso.
+
+Descrever a maquina. Uma fita que se estende sem fim, dividida em quadradinhos, cada um com 0, 1 ou em branco. Uma cabeca que esta sempre em cima de um quadradinho e le o simbolo que esta ali. Uma tabela de regras: dado o estado atual e o simbolo lido, a regra diz o que escrever no quadradinho, pra que lado andar, uma casa por vez, e pra qual estado mudar. E um estado especial de parar.
+
+Dar o exemplo da maquina que soma 1. A fita tem o 27 escrito em binario, 11011, com a casa das unidades do lado da cabeca e a cabeca num quadradinho em branco antes do numero. As regras, faladas devagar: no estado comecar, ve branco, anda pra direita e muda pro estado mover. No estado mover, ve 1, troca por 0 e anda pra direita. Ve outro 1, troca por 0 e anda pra direita. Ve 0, troca por 1, muda pro estado voltar e anda pra esquerda. No estado voltar, cada 0 que ve, continua pra esquerda, ate chegar no branco; ai muda pro estado parar. A fita agora diz 11100, que e 28.
+
+Dizer os nomes: isso e a maquina de Turing, embora ele chamasse so de maquina; quem escreveu maquina de Turing pela primeira vez foi Alonzo Church, numa resenha do artigo publicada em 1937. E a versao com 0, 1 e branco nao e exatamente a do artigo, e uma versao equivalente, inspirada num livro do matematico Martin Davis, de 1958.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (A MAQUINA NA FITA, TELA INTERATIVA)
+
+Dizer o que vale reparar enquanto a maquina roda: ela nunca sabe o numero inteiro. So ve um quadradinho e o proprio estado. Toda a inteligencia esta na tabela de regras, e a tabela e pequena. Mesmo assim ela fez uma conta, e com outra tabela faria outra.
+
+Dizer a afirmacao forte, a que Turing propos: tudo que a gente chama de algoritmo, tudo que uma pessoa faz de forma mecanica com lapis e papel, essa maquina consegue fazer. Nao existe processo mecanico que ela nao execute. Isso nao e teorema, e uma definicao proposta: a intuicao de metodo, que os matematicos tinham ha milenios, capturada por uma maquina de fita.
+
+Avisar: a tela tem a fita com o 27, a cabeca e a tabela de regras. Convide o ouvinte a avancar um passo de cada vez com o botao e acompanhar o estado mudando de comecar pra mover, de mover pra voltar e de voltar pra parar, ate a fita dizer 28.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (CHURCH, A TESE E A MAQUINA UNIVERSAL)
+
+Dizer a pista de que Turing acertou: sem ele saber, do outro lado do oceano, o matematico americano Alonzo Church tinha publicado em abril de 1936, um mes antes, outra definicao de algoritmo, feita com um sistema de funcoes chamado calculo lambda, e tinha chegado ao mesmo nao pro problema de Hilbert. Logo se viu que o calculo lambda e a maquina de Turing sao equivalentes: tudo que um faz o outro faz. Duas pessoas, dois caminhos, a mesma fronteira. A ideia de que a maquina de Turing, e tudo que e equivalente a ela, define o que e computar se chama tese de Church-Turing. Turing foi fazer o doutorado com Church em Princeton logo depois.
+
+Dizer o problema que sobra: ate aqui e uma maquina por tarefa. A do mais 1 so faz mais 1. Isso e o mesmo problema da maquina no papel, que precisa ser reaberta pra cada funcao.
+
+Dar o salto, que esta no mesmo artigo de 1936: Turing provou que existe uma maquina que simula qualquer outra maquina de Turing. O jeito: cada regra de uma maquina pode ser escrita como um numero binario. O estado mover vira um numero de alguns bits; a instrucao de andar pra direita vira outro; a de trocar 1 por 0, outro. Entao a tabela de regras inteira cabe na fita, escrita em 0 e 1, do lado do numero que vai ser processado. A maquina universal le essa tabela na fita e se comporta como a maquina descrita ali. Uma maquina so, e o que muda e o que esta escrito na fita.
+
+Dizer o nome e a consequencia: um sistema que consegue imitar qualquer maquina de Turing e chamado de Turing completo. Se a maquina no papel da serie for Turing completa, desconsiderando que a memoria dela e finita e a fita nao, ela executa qualquer algoritmo, e portanto qualquer programa que existe ou que ainda vai ser escrito. Sem abrir a tampa.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA: RODE A MAQUINA COM OUTRA FITA)
+
+Convidar a pausar o audio e resolver na tela: tem a mesma maquina do mais 1, com a mesma tabela de regras, e uma fita nova com 0111, que e o 7.
+
+O objetivo e rodar na mao e chegar em 1000, que e o 8. O que vale reparar: no estado mover a cabeca vai trocar tres 1 por 0 antes de achar o 0 e trocar por 1, e e a mesma tabela de antes, sem mudar nenhuma regra. Quem parar cedo provavelmente esqueceu de continuar andando no estado mover; quem errar o resultado provavelmente trocou o 0 por 1 sem mudar pro estado voltar.
+
+Dizer o que a pratica ensina antes de mandar voltar: a tabela nao mudou e a resposta mudou. O programa e a tabela; o dado e a fita. Separar os dois e o que permite que a mesma maquina sirva pra numeros diferentes, e a maquina universal leva isso ate o fim, pondo a propria tabela na fita.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular: em 1928 Hilbert perguntou se existe um metodo que decida qualquer afirmacao matematica. Pra responder, em 1936 Turing definiu o que e metodo com uma maquina de fita, cabeca e tabela de regras, e mostrou que a resposta e nao. Church chegou ao mesmo por outro caminho e os dois caminhos se mostraram iguais. E no mesmo artigo Turing provou que uma unica maquina, lendo a tabela de regras escrita na propria fita, faz o trabalho de todas as outras.
+
+Dizer onde o episodio para: 1936. E dizer o que a serie ganhou, que e o gancho: nao e preciso uma maquina por programa. Basta uma maquina que leia codigos da propria memoria e faca uma coisa diferente pra cada codigo. A maquina no papel ja tem portas, somador e memoria com endereco. Falta ensinar ela a ler.
+
+Gancho: no proximo episodio a serie fecha a etapa montando o resto: um acumulador, um contador e cinco codigos de quatro bits, e com eles escreve o primeiro programa de verdade, que repete uma conta ate um numero chegar a zero.

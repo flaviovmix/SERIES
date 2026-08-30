@@ -1,0 +1,15 @@
+GRACE HOPPER E O COMPILADOR - CONTEXTO
+======================================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro e ultimo episodio da etapa O PRIMEIRO COMPUTADOR MODERNO, a setima etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1944 a 1959.
+
+O episodio anterior, O Programa Que Mora Na Memoria, cobriu de 1945 a 1949 e terminou com o EDSAC em servico regular em Cambridge. A essa altura o computador moderno ja estava definido: memoria unica guardando ordem e numero, a maquina capaz de ler e alterar o proprio programa. O que sobrou de problema e que esse programa continuava sendo escrito por pessoas, na mao, em codigo binario, com tabela ao lado.
+
+Este episodio resolve isso. Cobre como se programava o Mark I em Harvard durante a guerra, em folha de papel, e o custo de errar um digito. Cobre Grace Hopper, matematica que entrou na reserva da Marinha americana em 1943 e foi designada em 1944 pro projeto de computacao de Harvard, onde programou o Mark I ao lado de Howard Aiken. Cobre o A-0, terminado em 1952, um programa cujo trabalho era pegar notacao escrita por pessoa e produzir codigo de maquina, e a resistencia que ela ouviu na epoca, de que computador nao entende ingles e so faz aritmetica. Cobre o FLOW-MATIC, do meio dos anos 50, primeira linguagem que usava palavra de negocio em ingles, e o COBOL de 1959, feito pelo comite CODASYL com ela como consultora tecnica.
+
+Cobre tambem, como nota historica honesta, a mariposa encontrada presa num rele do Mark II em 1947 e colada no caderno de registro: o termo bug ja existia antes na engenharia, e o episodio nao vende a mariposa como a origem da palavra.
+
+Ao final o ouvinte entende o que e um compilador: um programa que le texto escrito por gente e escreve o programa que a maquina executa. E entende que foi essa torre de traducao que permitiu que programar deixasse de ser trabalho de especialista em binario. Isso fecha a etapa e abre a proxima, sobre a maquina encolher da valvula pro transistor.
+
+Use este contexto apenas como apoio.

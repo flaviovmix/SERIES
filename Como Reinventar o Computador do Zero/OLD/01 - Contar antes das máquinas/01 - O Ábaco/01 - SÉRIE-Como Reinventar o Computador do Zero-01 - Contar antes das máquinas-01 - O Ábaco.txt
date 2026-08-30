@@ -1,0 +1,36 @@
+Inicie dizendo: O Abaco
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Abaco.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA de uma animacao que acompanha o audio.
+
+Este e o primeiro episodio da serie EQUIPAMENTOS (dentro do projeto Como Reinventar o Computador do Zero): cada equipamento da historia da computacao ganha um episodio proprio.
+
+FOCO: o abaco de ponta a ponta: nome, data e motivacao (Mesopotamia, ~3500 a.C., contar sem errar), o valor posicional (cada haste vale 10x a de baixo), o vai-um (10 contas viram 1 na casa de cima), a conta real 2 x 24 passo a passo, as variantes vivas (suanpan e soroban) e a limitacao que puxa o proximo equipamento (alguem precisa mover as pedras).
+
+REGRAS DA CONDUCAO COM A ANIMACAO:
+- No fim de cada tela, pedir claramente: "aperte o Proximo".
+- Nas telas de DEMONSTRACAO (valor das casas e vai-um), avisar que tem um botao na tela pra rodar a animacao enquanto ouve.
+- Nas telas de PRATICA (representar 7, 23 e 105; fazer o 2 x 24 ate o 48), convidar a pausar o audio, resolver na tela e voltar.
+- Avisar na abertura que da pra acompanhar so pelo audio, sem a pagina.
+- Seguir a ordem das 8 telas do roteiro, sem pular nem juntar telas.
+
+NAO explicar a Pascalina, Babbage, eletricidade nem Turing: sao dos proximos episodios. So citar a Pascalina no gancho final.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

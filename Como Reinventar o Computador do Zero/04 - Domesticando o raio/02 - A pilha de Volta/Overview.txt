@@ -1,0 +1,13 @@
+A PILHA DE VOLTA - CONTEXTO
+===========================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa DOMESTICANDO O RAIO, dentro da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. As tres primeiras etapas foram mecanicas e terminaram na Maquina Analitica de Babbage. A quarta etapa e sobre eletricidade, e sao sete episodios.
+
+O episodio anterior, A Faisca, terminou num impasse: em 1752 ja se sabia que eletricidade existe, que ela anda por alguns materiais e para em outros, que da pra guardar numa garrafa de Leiden e que o raio do ceu e a mesma coisa. Mas era tudo estalo. Carrega devagar, solta num instante, acabou. Sem fluxo constante nao da pra ligar nada.
+
+Este episodio resolve exatamente isso. Cobre a briga entre Luigi Galvani e Alessandro Volta sobre a perna de ra que se mexia, a conclusao de Volta de que quem produzia eletricidade eram os dois metais diferentes e nao o animal, e a carta de 1800 pra Royal Society descrevendo a pilha: discos de zinco e cobre empilhados com pano molhado em agua salgada no meio. Pela primeira vez, eletricidade que dura. Cobre tambem o que essa corrente exige pra funcionar, o circuito fechado, e as tres grandezas que descrevem qualquer circuito ate hoje: tensao, corrente e resistencia, com a lei de Ohm de 1827.
+
+Ao final o ouvinte entende a diferenca entre carga guardada e corrente que flui, por que a corrente precisa de um caminho de ida e volta, e o que significam volt, ampere e ohm. Isso abre o proximo episodio: com corrente que dura, da pra descobrir o que ela faz no mundo, e em 1820 uma agulha de bussola se mexe do lado de um fio.
+
+Use este contexto apenas como apoio.

@@ -1,0 +1,15 @@
+O PROGRAMA QUE MORA NA MEMORIA - CONTEXTO
+=========================================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa O PRIMEIRO COMPUTADOR MODERNO, a setima etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1945 a 1949.
+
+O episodio anterior, As Primeiras Maquinas Que Ligaram, cobriu de 1936 a 1946 e terminou com o ENIAC apresentado ao mundo. As tres maquinas daquele episodio, Z3, Mark I e ENIAC, calculavam sozinhas, mas nenhuma guardava o programa na memoria. Os numeros ficavam dentro da maquina; as ordens ficavam fora, em fita, cabo ou chave. Trocar de tarefa no ENIAC era mudar cabo de painel, trabalho de dias.
+
+Este episodio resolve isso. Cobre o First Draft of a Report on the EDVAC, o rascunho escrito por John von Neumann e distribuido por Herman Goldstine em 30 de junho de 1945, que descreveu uma maquina com unidade aritmetica, unidade de controle, memoria, entrada, saida e armazenamento externo, e sobretudo com uma memoria unica guardando tanto os numeros quanto as ordens. Cobre a briga de credito que veio junto: o documento circulou com o nome de von Neumann apenas, e Presper Eckert e John Mauchly sustentavam que a ideia tinha nascido das reunioes da Moore School antes dele entrar no projeto. A divulgacao publica acabou derrubando a patente deles anos depois na justica.
+
+Cobre tambem as duas primeiras maquinas que fizeram isso funcionar. O Manchester Baby, que em 21 de junho de 1948 rodou um programa de 17 instrucoes guardado na propria memoria, num tubo Williams de 32 palavras de 32 bits, levando cerca de 52 minutos e 3 milhoes e meio de operacoes pra achar o maior divisor proprio de 262144. E o EDSAC de Cambridge, que rodou em 6 de maio de 1949 usando linhas de atraso de mercurio, entrou em servico regular e trouxe a sub-rotina e a primeira biblioteca de rotinas prontas.
+
+Ao final o ouvinte entende por que guardar a ordem junto do numero muda tudo: o computador passa a poder mudar de tarefa em segundos, e passa a poder ler e alterar o proprio programa. Isso abre o proximo episodio, sobre parar de escrever esse programa em binario na mao.
+
+Use este contexto apenas como apoio.

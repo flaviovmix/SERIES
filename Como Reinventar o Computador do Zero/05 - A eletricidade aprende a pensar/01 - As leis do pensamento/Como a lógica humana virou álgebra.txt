@@ -1,0 +1,7 @@
+Titulo: Como a lógica humana virou álgebra
+Notebook: 05-01-As leis do pensamento
+
+Descricao:
+As fontes apresentam o episódio As Leis do Pensamento, parte de uma série que reconstrói a história da computação ao explicar como a lógica humana foi transformada em operações matemáticas. O texto destaca a transição do pensamento de Aristóteles, que isolou a forma dos argumentos usando letras, para o trabalho de George Boole, que no século XIX converteu conceitos de verdadeiro e falso nos números 1 e 0. Por meio de exemplos práticos como a contratação de um lobo-guará, demonstra-se que conectivos lógicos podem ser substituídos por somas e multiplicações mecânicas. Embora Boole tenha morrido sem aplicar sua álgebra à eletricidade, sua descoberta criou a linguagem binária essencial para o funcionamento dos futuros computadores. O conteúdo serve como roteiro para uma experiência educativa que une áudio e animações interativas sobre o tema.
+
+Link: https://notebook.google.com/notebook/f048f5f8-28a9-40ff-88e3-c64ee230372b

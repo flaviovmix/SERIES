@@ -1,0 +1,186 @@
+/* pranchas
+   As pecas com foto ou texto que as telas mostram: a cena (uma ou duas fotos lado a lado), o retrato, o selo no canto, os cards da ficha, os cards do fechamento e o "clicavel" que abre o lightbox. Depende de animacao/tokens.css.
+
+   Toda foto gerada leva o selo "ilustracao" e a legenda diz que e reconstituicao:
+   e obrigacao de honestidade, nao de licenca. Foto de acervo leva o credito na legenda. */
+
+/* o que abre no lightbox levanta ao passar o mouse */
+.clicavel {
+  cursor: pointer;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+}
+.clicavel:hover { transform: translateY(-3px); box-shadow: var(--sombra-flutua); }
+
+/* o selo no canto: "ilustracao", "imagem real", "ampliar" */
+.selo {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+  font-family: var(--fonte-mono);
+  font-size: 9px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, var(--ink) 78%, transparent);
+  color: var(--ground);
+  border-radius: 99px;
+  padding: 4px 10px;
+}
+
+/* ---- cena: uma ou duas fotos lado a lado, a imagem manda na tela ---- */
+.cena {
+  display: flex;
+  gap: clamp(14px, 2vw, 26px);
+  margin-top: 18px;
+  width: 100%;
+  max-width: 1180px;
+  justify-content: center;
+}
+.cena--uma { max-width: 880px; }
+.cena figure {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 10px 8px;
+  box-shadow: var(--sombra-alta);
+}
+.cena img {
+  display: block;
+  width: 100%;
+  height: clamp(170px, 46vh, 480px);
+  object-fit: cover;
+  border-radius: 8px;
+  filter: sepia(.10);
+}
+.cena figcaption {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .04em;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  text-align: center;
+  line-height: 1.55;
+}
+
+/* ---- retrato: a foto de acervo com credito, em card ---- */
+.retratos {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.retrato {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 10px 8px;
+  margin: 0;
+  box-shadow: var(--sombra-card);
+}
+.retrato-l { width: 280px; }
+.retrato img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  filter: sepia(.12);
+}
+.retrato figcaption {
+  font-family: var(--fonte-mono);
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ---- ficha: os cards de texto (nome, data e lugar, motivacao) ---- */
+.ficha {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 880px;
+}
+.ficha .item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 20px;
+  min-width: 200px;
+  max-width: 270px;
+  text-align: left;
+  box-shadow: var(--sombra-card);
+}
+.ficha .rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.ficha .texto { font-size: 14.5px; line-height: 1.5; }
+
+/* ---- mundo: os cards do fechamento dividem a largura util, com foto e texto
+   de leitura ---- */
+.mundo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1400px;
+}
+.mundo .item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px 24px;
+  width: auto;
+  text-align: left;
+  box-shadow: var(--sombra-alta);
+}
+.mundo .foto {
+  display: block;
+  width: 100%;
+  height: clamp(130px, 19vh, 190px);
+  object-fit: cover;
+  border-radius: 8px;
+  filter: sepia(.12);
+  margin-bottom: 14px;
+}
+.mundo .selo { top: 30px; right: 32px; }
+.mundo .nome { font-size: 21px; font-weight: 600; }
+.mundo .desc { font-size: 14.5px; color: var(--ink-soft); line-height: 1.6; margin-top: 8px; }
+
+/* ---- apertos, no fim da folha de proposito ---- */
+
+/* estreito: a cena empilha, o mundo vira coluna */
+@media (max-width: 820px) {
+  .cena { flex-direction: column; }
+  .cena img { height: clamp(150px, 26vh, 240px); }
+  .mundo { grid-template-columns: minmax(0, 1fr); gap: 16px; max-width: 520px; }
+  .mundo .nome { font-size: 20px; }
+  .mundo .desc { font-size: 14px; }
+}
+
+/* tela baixa */
+@media (max-height: 820px) {
+  .retrato figcaption, .cena figcaption { margin-top: 6px; }
+  .mundo { margin-top: 10px; gap: 11px; }
+  .mundo .item { padding: 12px; }
+  .mundo .foto { height: clamp(84px, 11vh, 120px); margin-bottom: 10px; }
+  .mundo .desc { font-size: 12px; }
+}

@@ -1,0 +1,7 @@
+Titulo: Como o flip-flop virou memória RAM
+Notebook: 06-03-Como a máquina lembra
+
+Descricao:
+Os textos fornecem um roteiro e um contexto detalhados para o sexto estágio de uma série educativa que reconstrói a história da computação, focando especificamente na evolução da memória digital entre 1918 e 1963. O conteúdo explica a transição de máquinas que apenas calculavam para sistemas capazes de armazenar informações através do flip-flop, um circuito que mantém seu estado elétrico. As fontes detalham o funcionamento técnico da memória de acesso aleatório (RAM), demonstrando como seletores e endereços permitem organizar e modificar dados individualmente. Além de abordar componentes eletrônicos, o material conecta a lógica binária à representação de textos via código ASCII e contextualiza a escala dessas tecnologias em missões espaciais históricas. O material serve como um guia para uma experiência multimídia, orientando o uso de animações interativas que auxiliam na compreensão de conceitos abstratos de hardware. Por fim, o panorama prepara o terreno para a introdução da programação moderna, questionando como as máquinas podem executar diferentes tarefas sem alterações físicas em seus fios.
+
+Link: https://notebook.google.com/notebook/c4c2f54f-12ba-44d7-95aa-3f8bf88d6197

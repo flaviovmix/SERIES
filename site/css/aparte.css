@@ -1,0 +1,16 @@
+/* aparte
+   O bloco de nota ao lado do assunto: contexto que nao cabe no corpo. Depende de tokens.css. */
+
+.aparte {
+  margin: 0;
+  padding: 15px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--raio) var(--raio) 0;
+  box-shadow: var(--shadow);
+  font-size: .9rem;
+  color: var(--ink-soft);
+}
+
+.aparte strong { color: var(--ink); }

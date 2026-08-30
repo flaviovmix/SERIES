@@ -1,0 +1,15 @@
+CIRCUITOS QUE CALCULAM - CONTEXTO
+=================================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1937 a 1945.
+
+O episodio anterior, Portas Logicas E O Mundo Binario, cobriu de 1937 a 1950 e terminou com o byte: a maquina no papel ja tem portas E, OU, NAO, NAND e XOR, e ja sabe escrever numero como fileira de 1 e 0. Mas nao sabe fazer conta. Nem chegou no abaco.
+
+Este episodio resolve isso. Cobre a soma binaria feita na mao, igual a da escola, onde 1 com 1 da 0 e sobe 1. Cobre a ideia de separar cada casa da conta em duas saidas, o que fica embaixo e o que vai pra proxima casa, e a descoberta de que o vai-um e exatamente uma porta E e a casa e exatamente uma porta XOR: o meio somador. Cobre o somador completo, que recebe tres entradas contando o que veio da casa anterior, montado com dois meio somadores e um OU, e a fila de quatro somadores que soma numeros de 4 bits. A tese de Shannon de 1937 ja trazia um somador binario de reles como exemplo.
+
+Cobre o transbordo, quando a soma nao cabe nas casas e volta pro zero, e o uso dele pra subtrair: o negativo de um numero e o numero que somado a ele da zero, e em binario esse numero e o original com os bits invertidos mais 1, o complemento de dois. Cobre o inversor feito com quatro XOR e um sinal comum, e a unidade de aritmetica, que soma ou subtrai conforme um unico fio de controle. O relatorio de 1945 que definiu a maquina moderna adotou o complemento de dois, que e o que todo processador usa ate hoje.
+
+Ao final o ouvinte entende que somar e um circuito de portas, que subtrair e o mesmo circuito com um truque, e que o resultado sai e some: a maquina ainda nao lembra de nada. Isso abre o proximo episodio, sobre memoria.
+
+Use este contexto apenas como apoio.

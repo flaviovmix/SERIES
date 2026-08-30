@@ -1,0 +1,98 @@
+Inicie dizendo: O Abaco
+---------------
+
+Este e o primeiro episodio da serie EQUIPAMENTOS: cada equipamento da historia da computacao ganha um episodio proprio, com nome, data, motivacao e pratica. O piloto (Do Abaco Ao Transformer) apresentou a jornada; agora a gente mergulha no primeiro equipamento.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Nas telas de DEMONSTRACAO (3 e 4), avisar que tem um botao na tela pra rodar a animacao enquanto ouve.
+- Nas telas de PRATICA (5 e 7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- Sem analogias. Explicar direto. Os exemplos concretos do roteiro (a conta dos dois pratos de 24, contar rebanho e imposto) sao exemplos reais, nao analogias, e podem ser usados.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O ABACO)
+
+Abrir a serie EQUIPAMENTOS: a partir de agora, cada equipamento da historia do computador ganha um episodio so dele, sempre com nome, data, motivacao, como funciona e uma pratica na tela. O primeiro e o abaco, o unico equipamento da serie que da pra aprender a operar de verdade, aqui mesmo na animacao.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas praticas, pause o audio e resolva. Sem a pagina aberta, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA DO EQUIPAMENTO)
+
+A tela mostra a ficha em tres cartoes:
+
+- Nome: abaco, do grego abax, que significa tabua. Na pratica: pedras deslizando em hastes ou sulcos.
+- Data e lugar: Mesopotamia, por volta de 3500 antes de Cristo, uns 5500 anos atras. Sem inventor conhecido: ninguem patenteou, ele nasceu do uso, provavelmente de mercadores contando mercadoria.
+- Motivacao: contar rebanho, colheita e imposto sem errar, numa epoca em que nem existia um jeito bom de escrever numeros grandes. Errar conta de imposto sempre foi problema serio.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (COMO ELE E: O VALOR POSICIONAL)
+
+A tela tem um abaco de 4 hastes (unidade, dezena, centena, milhar) e um botao que roda a demonstracao: a mesma conta acende em casas diferentes valendo 1, 10, 100 e 1000. Convidar o ouvinte a apertar o botao da tela enquanto ouve.
+
+Explicar a ideia: o abaco nao guarda o numero desenhado, guarda POSICOES. Cada haste vale dez vezes a de baixo. Uma pedra na unidade vale 1; a mesma pedra na dezena vale 10. E o valor posicional, a mesma ideia do numero que a gente escreve hoje. O abaco fazia isso milhares de anos antes de existir o algarismo.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O VAI-UM)
+
+A tela demonstra o movimento mais importante do abaco: o fio da unidade cheio com 9 contas, chega mais 1, nao cabe; as 10 saem todas e viram UMA conta na dezena. 9 mais 1 igual a 10. Convidar a apertar o botao da tela pra ver acontecer devagar.
+
+Explicar por que isso importa: esse movimento e o vai-um da conta de escola, so que fisico. E la na frente da serie a gente vai reencontrar exatamente ele dentro dos circuitos do computador, com o nome de carry.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (PRATICA 1: REPRESENTE OS NUMEROS)
+
+Convidar a pausar o audio e resolver: a tela pede pra representar tres numeros no abaco, um de cada vez: 7, depois 23, depois 105. Dica falada: o 105 tem zero dezenas, a haste da dezena fica vazia mesmo.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 6 (DEMONSTRACAO: 2 X 24 PASSO A PASSO)
+
+Agora uma conta de verdade, a mesma do video que inspirou a serie: dois pratos de 24 num restaurante. A tela tem um botao de passo: primeiro entra o 24 (2 dezenas e 4 unidades), depois entram as 2 dezenas do segundo prato (da 44), depois as 4 unidades (da 48). Convidar a ir apertando o passo junto com a explicacao.
+
+O ponto: multiplicar por 2 no abaco e somar o numero duas vezes. O instrumento nao sabe multiplicar; quem sabe e a pessoa, o abaco so segura o resultado parcial pra ela. Essa divisao de trabalho (pessoa pensa, instrumento lembra) e o comeco de tudo nesta serie.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA 2: SUA VEZ DE FAZER O 2 X 24)
+
+Convidar a pausar e fazer a mesma conta sozinho: montar o primeiro 24 e somar o segundo por cima, ate o total marcar 48. Quem quiser desafio extra: tentar sem olhar a tela anterior.
+
+Quando fechar o 48, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO: O ABACO PELO MUNDO)
+
+A tela mostra as variantes vivas: o suanpan chines (duas contas em cima valendo 5, cinco embaixo) e o soroban japones (uma em cima, quatro embaixo), ensinado em escolas ate hoje, com direito a campeonatos de velocidade. Um instrumento de 5500 anos que nunca aposentou.
+
+Fechar com a limitacao que move a serie: por melhor que o abaco seja, alguem precisa mover as pedras. A maquina nao anda sozinha. No proximo episodio, o equipamento que atacou exatamente essa coceira: a Pascalina, a calculadora de engrenagens que Blaise Pascal inventou em 1642 pra escapar das somas de imposto do pai.

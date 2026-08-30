@@ -1,0 +1,33 @@
+Inicie dizendo: As Leis do Pensamento
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_As Leis do Pensamento.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o primeiro episodio da etapa A ELETRICIDADE APRENDE A PENSAR, a quinta etapa da serie Como Reinventar o Computador do Zero. A etapa anterior domesticou a eletricidade: corrente que dura, corrente que vira forca, corrente que vira sinal.
+
+FOCO: a logica virando conta. Aristoteles por volta de 350 antes de Cristo trocando as palavras de um argumento por letras, o que mostra que a correcao depende da forma e nao do assunto. Depois as tres operacoes E, OU e NAO, explicadas com a vaga de contratacao de um lobo-guara e o candidato Na. E entao George Boole, autodidata filho de sapateiro, que em 1854 publica As Leis do Pensamento e traduz tudo pra algebra: verdadeiro e 1, falso e 0, E e multiplicacao, OU e soma (o 1 mais 1 igual a 1 e conserto de Jevons dez anos depois, nao do Boole de 1854), NAO e 1 menos o valor. O ponto central e que decidir se uma frase e verdadeira deixa de ser julgamento e vira conta mecanica.
+
+Este episodio nao tem eletricidade nenhuma, e isso deve ficar claro pro ouvinte: Boole nao pensou em maquina e morreu em 1864 sem saber pra que aquilo serviria.
+
+NAO explicar rele, porta logica, circuito, transistor, binario de computador, Shannon nem Hollerith: sao episodios seguintes. So citar Hollerith no gancho final.
+
+A pagina tem 8 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo". Nas telas interativas, avisar que tem chave na tela pra mexer. Na tela de pratica, convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_As Leis do Pensamento.txt. NAO invente analogias novas. As autorizadas sao tres: a contratacao do lobo-guara, que atravessa o episodio; a receita de bolo, so pra reforcar a diferenca entre E e OU; e o abaco de uma pedra so, uma unica vez, no fecho da tela de pratica.
+
+Use tambem o Overview.txt como contexto curto.

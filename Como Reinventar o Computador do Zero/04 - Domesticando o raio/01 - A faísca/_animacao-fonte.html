@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Faísca Interativa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,600;1,6..72,400&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F1F2F0; --surface:#E4E7E3; --fg:#191C1F; --muted:#5C625E;
+  --rule:#C7CBC5; --accent:#1F5E82; --flag:#8A5E12; --ok:#3F7048; --stop:#9A3B25;
+  --sombra:0 1px 2px rgba(25,28,31,.10), 0 6px 18px rgba(25,28,31,.07);
+  --ease:cubic-bezier(.22,1,.36,1);
+  /* altura real do palco (o main, ja sem topo e rodape). o JS mede e regrava; isto e so o chute inicial */
+  --palco:80vh;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14171A; --surface:#1D2225; --fg:#E9EBE7; --muted:#98A09B;
+    --rule:#2E3538; --accent:#79B6D8; --flag:#D2A044; --ok:#7FB68A; --stop:#D98C74;
+    --sombra:0 1px 2px rgba(0,0,0,.5), 0 8px 22px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14171A; --surface:#1D2225; --fg:#E9EBE7; --muted:#98A09B;
+  --rule:#2E3538; --accent:#79B6D8; --flag:#D2A044; --ok:#7FB68A; --stop:#D98C74;
+  --sombra:0 1px 2px rgba(0,0,0,.5), 0 8px 22px rgba(0,0,0,.35);
+}
+*{margin:0; padding:0; box-sizing:border-box}
+html,body{height:100%; min-height:100vh}
+body{
+  background:var(--bg); color:var(--fg);
+  font-family:"Source Sans 3", system-ui, sans-serif; font-size:17px; line-height:1.55;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+.mono{font-family:"IBM Plex Mono", ui-monospace, monospace}
+
+/* barra de topo */
+header.topo{
+  flex:none; display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:14px 26px; border-bottom:1px solid var(--rule);
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+}
+header.topo .marca{color:var(--accent)}
+.dica{display:flex; align-items:center; gap:8px}
+.dica .pulso{width:8px; height:8px; border-radius:50%; background:var(--accent); animation:pulso 1.8s infinite}
+@keyframes pulso{0%,100%{opacity:.25}50%{opacity:1}}
+
+/* palco */
+main{flex:1; position:relative; overflow:hidden}
+.tela{
+  position:absolute; inset:0; overflow-y:auto; padding:34px 40px 30px;
+  opacity:0; visibility:hidden; transition:opacity .4s var(--ease), visibility 0s .4s;
+}
+.tela.ativa{opacity:1; visibility:visible; transition-delay:0s}
+.folha{
+  margin:0; display:grid; gap:26px;
+  min-height:100%; align-content:center;   /* sobra de altura vai metade em cima, metade embaixo */
+}
+@media (min-width:900px){
+  /* texto colado na borda esquerda, estreito; o resto da largura inteira e das imagens */
+  .folha{grid-template-columns:minmax(230px,270px) minmax(0,1fr); gap:52px; align-items:center}
+  .cabeca{grid-column:1}
+  /* so a prancha FILHA da folha vira coluna do miolo; as aninhadas seguem o fluxo */
+  .folha > .pranchas{grid-column:2; width:100%}
+}
+
+/* coluna da esquerda */
+.rotulo{display:flex; flex-direction:column; gap:2px; margin-bottom:12px}
+.num{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-weight:500; font-size:12px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
+}
+.tempo{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px;
+  color:var(--muted); font-variant-numeric:tabular-nums;
+}
+.cabeca h2{
+  font-family:Newsreader, Georgia, serif; font-weight:600; font-size:clamp(26px,3.4vw,34px);
+  line-height:1.1; margin:0 0 10px; text-wrap:balance; letter-spacing:-.01em;
+}
+.cabeca p{color:var(--muted); font-size:16px; margin:0}
+.cabeca p + p{margin-top:10px}
+.cabeca b{color:var(--fg); font-weight:600}
+
+/* ficha */
+.ficha{display:grid; gap:10px; margin-top:16px}
+.ficha .linha{border-top:1px solid var(--rule); padding-top:8px}
+.ficha .rot{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:10px;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:3px;
+}
+.ficha .txt{font-size:15px; line-height:1.45}
+
+/* pranchas (imagens) */
+.pranchas{display:grid; gap:22px}
+@media (min-width:620px){
+  .p2{grid-template-columns:repeat(2,1fr)}
+  .p3{grid-template-columns:repeat(3,1fr)}
+  .p4{grid-template-columns:repeat(4,1fr); gap:16px}
+  /* as quatro do fecho em 2x2: numa linha so elas ficam pequenas e sobra tela em cima e embaixo */
+  .p2x2{grid-template-columns:repeat(2,1fr); gap:16px}
+}
+/* painel e imagem lado a lado em vez de empilhados: em tela larga, empilhado sobra
+   metade da largura vazia e espreme os dois na altura */
+@media (min-width:1100px){
+  .com-painel{grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:40px}
+  /* margin-inline:auto encolhe o painel pro tamanho do conteudo: aqui ele tem que
+     preencher a coluna inteira e ficar da altura da imagem do lado */
+  .com-painel .painel{
+    max-width:none; margin-inline:0; width:100%; padding:34px 30px;
+    min-height:calc(var(--palco) - 64px);
+    display:flex; flex-direction:column; justify-content:space-evenly;
+  }
+  .com-painel .caminho{max-width:100%}
+  .com-painel .legenda{font-size:15px; min-height:44px; margin-bottom:0}
+  .com-painel .botoes{margin-top:0; gap:12px}
+  .com-painel .btn{font-size:12px; padding:12px 20px}
+}
+/* tela sem imagem nenhuma: o painel e o conteudo, entao cresce pra valer.
+   so acima de 1400px: mais estreito que isso a fila aumentada quebraria em duas linhas */
+@media (min-width:1400px){
+  /* garrafa e fila lado a lado: o painel cresce na largura, que e o que sobra,
+     em vez de na altura, que e disputada com as tres fotos embaixo */
+  .painel-largo .painel{max-width:1240px}
+  .painel-largo .duo{grid-template-columns:auto minmax(0,1fr); align-items:center; gap:48px}
+  .painel-largo .jarra{width:340px}
+  /* o monge sai da largura da propria fila (o que sobra depois da garrafa), pra ela
+     nunca quebrar em duas linhas: 9 monges e 8 vaos de 10px */
+  .painel-largo .fila{gap:10px; margin-top:0; flex-wrap:nowrap}
+  .painel-largo .fila .monge{width:min(74px, calc((100% - 80px) / 9)); height:auto; aspect-ratio:32/52}
+  .painel-largo .fila .monge.pula{transform:translateY(-26px)}
+  /* o monge sai da largura da PROPRIA fila (nao de vw): 7 monges + 6 ligacoes + os vaos.
+     516px e o que as 6 ligacoes escritas METAL e os 12 vaos ocupam no pior caso.
+     o % de dentro do var resolve na fila, que e o pai tanto do monge quanto da ligacao */
+  .so-painel{--m:min(132px, calc((100% - 516px) / 7))}
+  .so-painel .monge{width:var(--m); height:auto; aspect-ratio:32/52}
+  .so-painel .monge.pula{transform:translateY(calc(var(--m) * -.38))}
+  /* o painel ocupa o palco inteiro (largura e altura), com o conteudo espalhado dentro */
+  .so-painel .painel{
+    max-width:none; padding:56px 34px; min-height:calc(var(--palco) - 64px);
+    display:flex; flex-direction:column; justify-content:space-evenly;
+  }
+  .so-painel .legenda{font-size:16px; min-height:46px; margin-bottom:30px}
+  .so-painel .jarra{width:280px}
+  .so-painel .pratica-fila{gap:8px; flex-wrap:nowrap}
+  /* .44 = a altura das maos do monge (27% de 1.625 de altura por largura) */
+  .so-painel .elo{font-size:13px; padding:9px 14px; margin-bottom:calc(var(--m) * .44)}
+  .so-painel .placar{font-size:14px; margin-top:30px}
+  .so-painel .botoes{margin-top:30px; gap:14px}
+  .so-painel .btn{font-size:13px; padding:13px 24px}
+}
+figure.prancha{margin:0 auto; width:fit-content; max-width:100%; display:flex; flex-direction:column; gap:10px}
+.moldura{
+  background:var(--surface); border:1px solid var(--rule); border-radius:2px;
+  padding:12px; box-shadow:var(--sombra); display:flex; justify-content:center; cursor:zoom-in;
+  width:fit-content; max-width:100%;
+}
+.moldura:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+/* a imagem cresce ate onde a coluna deixa; a altura e que segura, nunca o contrario
+   (width:auto + max-width:100% = sem esticar acima do tamanho original e sem distorcer) */
+.moldura img{width:auto; max-width:100%; height:auto; display:block;
+  max-height:max(140px, calc(var(--palco) - 175px));   /* 175 = padding da tela + moldura + legenda */
+}
+figcaption{display:flex; flex-direction:column; gap:3px}
+.arquivo{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; color:var(--accent)}
+.legenda-img{font-size:15px}
+.fonte{font-size:13px; color:var(--muted)}
+.selo{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:10.5px; letter-spacing:.06em;
+  text-transform:uppercase; padding:2px 7px; border-radius:2px; border:1px solid var(--flag);
+  color:var(--flag); align-self:flex-start; margin-top:2px;
+}
+.p2x2 .legenda-img, .p2x2 .fonte{display:none}
+/* a capa tem um selo a mais na legenda, entao desconta um pouco mais de altura */
+.p1 .moldura img{max-height:max(140px, calc(var(--palco) - 196px))}
+/* a p2x2 sao duas linhas de duas: cada imagem cabe em metade do palco, menos moldura e rotulo */
+.p2x2 .moldura img{max-height:max(90px, calc((var(--palco) - 80px) / 2 - 60px))}
+/* tres numa linha: teto mais baixo pra uma foto em pe nao virar o dobro das deitadas do lado */
+.p3 .moldura img{max-height:max(140px, calc(var(--palco) - 320px))}
+/* telas que dividem a altura com um painel interativo: desconta o painel inteiro */
+.com-painel .moldura img{max-height:max(110px, calc(var(--palco) - 175px))}
+.painel-largo .moldura img{max-height:max(80px, calc(var(--palco) - 540px))}
+
+/* lightbox */
+.lb{
+  position:fixed; inset:0; z-index:60; background:rgba(10,12,14,.86);
+  display:flex; align-items:center; justify-content:center; padding:30px; cursor:zoom-out;
+  opacity:0; visibility:hidden; transition:opacity .26s var(--ease), visibility 0s .26s;
+}
+.lb.on{opacity:1; visibility:visible; transition-delay:0s}
+.quadro{
+  position:relative; cursor:default; background:var(--surface);
+  border:1px solid var(--rule); border-radius:2px; padding:14px;
+  box-shadow:0 24px 70px rgba(0,0,0,.55);
+  width:fit-content; max-width:min(1000px,92vw);
+  display:flex; flex-direction:column; align-items:center; gap:12px;
+}
+/* a altura e quem manda: em imagem em pe, a largura sai da proporcao */
+.lb img{max-width:min(1000px,86vw); max-height:74vh; width:auto; height:auto; display:block; border-radius:1px}
+.lb figure{margin:0; display:flex; flex-direction:column; align-items:center; gap:12px; max-width:100%}
+.lb figcaption{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12.5px; color:var(--muted);
+  text-align:center; line-height:1.6; display:block;
+}
+.fechar{
+  position:absolute; top:-15px; right:-15px; width:36px; height:36px; border-radius:50%;
+  background:var(--surface); border:1px solid var(--rule); color:var(--fg); cursor:pointer;
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:17px; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.35); transition:transform .2s var(--ease), color .2s, border-color .2s;
+}
+.fechar:hover{transform:scale(1.1); color:var(--accent); border-color:var(--accent)}
+.fechar:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* painel interativo */
+.painel{
+  background:var(--surface); border:1px solid var(--rule); border-radius:2px;
+  padding:20px 22px; box-shadow:var(--sombra);
+  /* o painel nao acompanha a largura toda: o SVG cresce junto e come a altura da imagem */
+  max-width:880px; margin-inline:auto;
+}
+.legenda{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12.5px; color:var(--muted);
+  line-height:1.5; min-height:36px; text-align:center; margin-bottom:14px;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok)}
+.legenda.para{color:var(--stop)}
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; background:none; border:1px solid var(--rule); color:var(--muted);
+  border-radius:2px; padding:8px 16px; cursor:pointer; transition:all .2s;
+}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn.cheio{background:var(--accent); border-color:var(--accent); color:var(--bg); font-weight:500}
+.btn:disabled{opacity:.35; cursor:default}
+.btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+.caminho{display:block; margin:0 auto; max-width:min(100%, 620px)}
+.trilho{stroke:var(--rule); stroke-width:4; fill:none}
+.mat-metal{fill:#8D9095}
+.mat-seda{fill:#B792B2}
+.jarra{display:block; margin:0 auto; width:230px; max-width:100%}
+/* a garrafa e a fila: empilhadas por padrao, lado a lado em tela larga (ver @media abaixo) */
+.duo{display:grid; gap:8px; justify-items:center; margin-top:10px}
+.fila{display:flex; gap:6px; justify-content:center; align-items:flex-end; margin-top:14px; flex-wrap:wrap}
+.monge{width:32px; height:52px; transition:transform .18s var(--ease)}
+.monge.pula{transform:translateY(-16px)}
+.monge svg{width:100%; height:100%; display:block}
+.corpo{fill:var(--muted)}
+.corpo.tocado{fill:var(--accent)}
+
+.pratica-fila{display:flex; align-items:flex-end; justify-content:center; gap:2px; flex-wrap:wrap}
+.elo{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:9px; letter-spacing:.06em;
+  text-transform:uppercase; border:1px dashed var(--rule); background:none; color:var(--muted);
+  border-radius:2px; padding:4px 7px; margin-bottom:14px; cursor:pointer; transition:all .2s;
+}
+.elo:hover{border-color:var(--accent); color:var(--accent)}
+.elo:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.elo.metal{border-style:solid; border-color:#8D9095; color:var(--fg)}
+.elo.seda{border-style:solid; border-color:#B792B2; color:#8A5E85}
+.placar{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px; letter-spacing:.1em;
+  color:var(--muted); text-align:center; margin-top:12px;
+}
+
+/* rodape de navegacao */
+footer.nav{
+  flex:none; display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:14px 26px 16px; border-top:1px solid var(--rule);
+}
+.nav-btn{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; letter-spacing:.12em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:1px solid var(--accent); border-radius:2px; padding:12px 26px; font-weight:500;
+  transition:transform .2s var(--ease), opacity .2s;
+}
+.nav-btn:hover{transform:translateY(-1px)}
+.nav-btn.ghost{background:none; color:var(--muted); border-color:var(--rule)}
+.nav-btn:disabled{opacity:.3; cursor:default; transform:none}
+.nav-btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.meio{display:flex; flex-direction:column; align-items:center; gap:8px}
+.pontos{display:flex; gap:7px}
+.pontos button{width:8px; height:8px; border-radius:50%; border:none; background:var(--rule); cursor:pointer; transition:all .3s; padding:0}
+.pontos button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px;
+  letter-spacing:.14em; color:var(--muted); font-variant-numeric:tabular-nums;
+}
+
+@media (max-width:899px){
+  .tela{padding:22px 16px 24px}
+  .cabeca h2{font-size:25px}
+  header.topo{padding:11px 14px; font-size:9.5px}
+  .dica{display:none}
+  footer.nav{padding:11px 12px 14px; gap:10px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .painel{padding:14px 12px}
+  .monge{width:26px; height:44px}
+  .pontos{gap:5px}
+  .pontos button{width:7px; height:7px}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important; transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div><span class="marca">Etapa 04 · Domesticando o raio</span> · 01 · A faísca</div>
+  <div class="dica"><span class="pulso"></span> acompanhe com o áudio</div>
+</header>
+
+<main>
+
+  <!-- TELA 1 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 1</span><span class="tempo">00:00 · 2:45</span></p>
+        <h2>A faísca</h2>
+        <p>Até aqui foi tudo engrenagem e madeira, e terminou na Máquina Analítica. Agora o material
+        muda: começa a etapa da <b>eletricidade</b>, em sete episódios.</p>
+        <p>Ela não começa com um computador. Começa com uma força que ninguém sabia usar.</p>
+      </div>
+      <div class="pranchas p1">
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="Duzentos monges de mãos dadas no instante da descarga, no experimento do abade Nollet, 1746."
+               data-cred="reconstituição · gerada no Google Flow · não é gravura de época">
+            <img src="__MONGES2__" alt="Círculo de monges pulando ao mesmo tempo no pátio de um mosteiro">
+          </div>
+          <figcaption>
+            <span class="arquivo">monges-02</span>
+            <span class="legenda-img">Os 200 monges no instante da descarga</span>
+            <span class="fonte">gerada no Google Flow · Nano Banana 2</span>
+            <span class="selo">reconstituição</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 2 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 2</span><span class="tempo">02:47 · 2:20</span></p>
+        <h2>A ficha</h2>
+        <div class="ficha">
+          <div class="linha"><span class="rot">nome</span><span class="txt">Eletricidade estática: a força que aparece ao esfregar certos materiais.</span></div>
+          <div class="linha"><span class="rot">data</span><span class="txt">De 1600, o livro de Gilbert, a 1752, a pipa de Franklin. Século e meio.</span></div>
+          <div class="linha"><span class="rot">motivação</span><span class="txt">Nenhuma. Sem indústria esperando, sem encomenda de rei. Curiosidade pura.</span></div>
+        </div>
+      </div>
+      <div class="pranchas p2">
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="William Gilbert, médico da rainha Elizabeth. Foi ele quem inventou a palavra elétrico, em 1600."
+               data-cred="Wikimedia Commons · domínio público">
+            <img id="imgGilbert" src="__GILBERT__" alt="Retrato de William Gilbert">
+          </div>
+          <figcaption>
+            <span class="arquivo">gilbert</span>
+            <span class="legenda-img">1600 · William Gilbert</span>
+            <span class="fonte">Wikimedia Commons · domínio público</span>
+          </figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="Franklin e a pipa na tempestade, 1752: o fim do período coberto por este episódio."
+               data-cred="Currier &amp; Ives · domínio público">
+            <img id="imgFranklin" src="__FRANKLIN__" alt="Franklin empinando a pipa durante a tempestade">
+          </div>
+          <figcaption>
+            <span class="arquivo">franklin-pipa</span>
+            <span class="legenda-img">1752 · Franklin e a pipa</span>
+            <span class="fonte">Currier &amp; Ives · domínio público</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 3 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 3</span><span class="tempo">05:11 · 4:24</span></p>
+        <h2>O âmbar, e a palavra que ficou</h2>
+        <p>Tales viu o âmbar esfregado atrair palha, e a investigação parou ali por dois mil anos.</p>
+        <p>Gilbert separou <b>ímã</b> de <b>âmbar esfregado</b>, mostrou que são coisas diferentes e
+        chamou o efeito de elétrico. Âmbar em grego é <b>elektron</b>.</p>
+      </div>
+      <div class="pranchas p3">
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="Tales de Mileto esfregando o âmbar num pano de lã, por volta de 600 a.C. A palha e os fiapos saltam da mesa e grudam na pedra. Não existe gravura de época da cena: esta é uma reconstituição."
+               data-cred="reconstituição · gerada no Google Flow · não é gravura de época">
+            <img src="__TALES__" alt="Tales de Mileto esfregando âmbar num pano enquanto palhas voam na direção da pedra">
+          </div>
+          <figcaption>
+            <span class="arquivo">tales-ambar</span>
+            <span class="legenda-img">600 a.C. · Tales esfrega o âmbar</span>
+            <span class="fonte">gerada no Google Flow · Nano Banana 2</span>
+            <span class="selo">reconstituição</span>
+          </figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="Âmbar báltico: resina de árvore fossilizada, com insetos presos dentro. É a pedra que começa a história."
+               data-cred="foto: Brocken Inaglory · CC BY-SA 3.0">
+            <img id="imgAmbar" src="__AMBAR__" alt="Pedaços de âmbar báltico com insetos fossilizados dentro">
+          </div>
+          <figcaption>
+            <span class="arquivo">ambar</span>
+            <span class="legenda-img">Âmbar báltico</span>
+            <span class="fonte">foto: Brocken Inaglory · CC BY-SA 3.0</span>
+          </figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="O versório de Gilbert: uma agulha leve equilibrada num pino, que gira quando algo eletrizado chega perto. O primeiro detector."
+               data-cred="Silvanus P. Thompson · domínio público">
+            <img id="imgVersorio" src="__VERSORIO__" alt="Diagrama do versório, agulha equilibrada num pino">
+          </div>
+          <figcaption>
+            <span class="arquivo">versorio</span>
+            <span class="legenda-img">O versório, o primeiro detector</span>
+            <span class="fonte">domínio público</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 4 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 4</span><span class="tempo">09:36 · 3:46</span></p>
+        <h2>Ela viaja, mas não por tudo</h2>
+        <p>Gray eletrizou uma ponta e o efeito apareceu na outra, metros adiante. Testando material
+        por material, achou a divisão que sustenta todo circuito até hoje.</p>
+        <p><b>Condutor</b> deixa passar. <b>Isolante</b> barra. Escolha o material e mande a carga.</p>
+      </div>
+      <div class="pranchas com-painel">
+        <div class="painel">
+          <p class="legenda" id="leg4">Escolha o material do meio do caminho e mande a carga.</p>
+          <svg class="caminho" id="svg4" viewBox="0 0 620 120" role="img" aria-label="Caminho da carga entre a fonte e a mão, com um material no meio">
+            <text x="46" y="24" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".6" text-anchor="middle">tubo</text>
+            <text x="574" y="24" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".6" text-anchor="middle">mão</text>
+            <path class="trilho" d="M46 64 H274"></path>
+            <path class="trilho" d="M346 64 H574"></path>
+            <rect class="mat-metal" id="mat4" x="274" y="46" width="72" height="36" rx="3"></rect>
+            <circle cx="46" cy="64" r="13" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="2"></circle>
+            <circle cx="574" cy="64" r="13" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="2"></circle>
+            <circle id="carga4" cx="46" cy="64" r="8" fill="#D2A044" opacity="0"></circle>
+            <text x="310" y="104" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".6" text-anchor="middle" id="nomeMat4">fio de metal</text>
+          </svg>
+          <div class="botoes">
+            <button class="btn cheio" id="btnMetal">fio de metal</button>
+            <button class="btn" id="btnSeda">corda de seda</button>
+            <button class="btn" id="btnManda">mandar a carga</button>
+          </div>
+        </div>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="O menino suspenso em cordas de seda, o tubo de vidro encostado no pé dele, e faíscas saindo das mãos que atraem folhinhas de metal. A seda isola, o corpo do menino é o fio."
+               data-cred="gravura de Jean-Antoine Nollet · domínio público">
+            <img src="__MENINO__" alt="Gravura do menino suspenso por cordas de seda numa demonstração de eletricidade">
+          </div>
+          <figcaption>
+            <span class="arquivo">menino-eletrico</span>
+            <span class="legenda-img">O menino que virou fio</span>
+            <span class="fonte">gravura de época · domínio público</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 5 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 5</span><span class="tempo">13:24 · 4:18</span></p>
+        <h2>Guardar o choque</h2>
+        <p>Até aqui a força só existia enquanto alguém esfregava. A garrafa de Leiden foi o primeiro
+        aparelho que <b>guardou</b> carga.</p>
+        <p>É um balde: enche gota a gota e devolve tudo num estalo. Não tem torneirinha.</p>
+      </div>
+      <div class="pranchas painel-largo">
+        <div class="painel">
+          <p class="legenda" id="leg5">Carregue a garrafa e depois descarregue na fila.</p>
+          <div class="duo">
+            <svg class="jarra" id="svg5" viewBox="0 0 260 150" role="img" aria-label="Garrafa de Leiden com nível de carga">
+              <rect x="112" y="14" width="10" height="34" rx="2" fill="#8D9095"></rect>
+              <rect x="100" y="44" width="34" height="10" rx="2" fill="#A98356"></rect>
+              <path d="M96 54 H138 V132 Q138 140 130 140 H104 Q96 140 96 132 Z" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="2"></path>
+              <rect id="nivel5" x="98" y="138" width="38" height="0" fill="#D2A044" opacity=".8"></rect>
+              <circle id="faisca5" cx="117" cy="30" r="0" fill="#F0C775"></circle>
+            </svg>
+            <div class="fila" id="fila5"></div>
+          </div>
+          <div class="botoes">
+            <button class="btn cheio" id="btnCarrega5">carregar</button>
+            <button class="btn" id="btnDescarrega5" disabled>descarregar</button>
+          </div>
+        </div>
+        <div class="pranchas p4">
+          <figure class="prancha">
+            <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+                 data-cap="O choque que ficou famoso: Musschenbroek com uma mão no prego da garrafa e a outra no vidro, jogado pra trás pela descarga. Foi depois disso que ele escreveu que não repetiria a dose nem por todo o reino da França. Reconstituição."
+                 data-cred="reconstituição · gerada no Google Flow · não é gravura de época">
+              <img src="__CHOQUE__" alt="Cena do choque em Leiden: o pesquisador jogado para trás ao encostar no prego da garrafa">
+            </div>
+            <figcaption>
+              <span class="arquivo">choque-leiden</span>
+              <span class="legenda-img">1746 · o choque</span>
+              <span class="fonte">gerada no Google Flow · Nano Banana 2</span>
+              <span class="selo">reconstituição</span>
+            </figcaption>
+          </figure>
+          <figure class="prancha">
+            <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+                 data-cap="Uma garrafa de Leiden de verdade, do Musée d'histoire des sciences. Vidro, metal por dentro e por fora: dois condutores separados por um isolante."
+                 data-cred="foto: Rama · CC BY-SA 3.0 fr">
+              <img id="imgGarrafa" src="__GARRAFA__" alt="Garrafa de Leiden original de museu">
+            </div>
+            <figcaption>
+              <span class="arquivo">garrafa-leiden</span>
+              <span class="legenda-img">A garrafa real</span>
+              <span class="fonte">foto: Rama · CC BY-SA 3.0 fr</span>
+            </figcaption>
+          </figure>
+          <figure class="prancha">
+            <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+                 data-cap="Pieter van Musschenbroek levou o choque em Leiden e escreveu que não repetiria aquilo nem pelo reino da França."
+                 data-cred="Rijksmuseum · CC0">
+              <img src="__MUSSCHENBROEK__" alt="Retrato gravado de Pieter van Musschenbroek">
+            </div>
+            <figcaption>
+              <span class="arquivo">musschenbroek</span>
+              <span class="legenda-img">Quem levou o choque</span>
+              <span class="fonte">Rijksmuseum · CC0</span>
+            </figcaption>
+          </figure>
+          <figure class="prancha">
+            <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+                 data-cap="A máquina eletrostática: um globo de vidro girando contra a mão ou um pano. Era ela que enchia a garrafa, e alguém tinha que suar girando."
+                 data-cred="Jean-Antoine Nollet · domínio público">
+              <img src="__MAQUINA__" alt="Gravura de uma máquina eletrostática de atrito">
+            </div>
+            <figcaption>
+              <span class="arquivo">maquina-de-atrito</span>
+              <span class="legenda-img">A máquina de atrito</span>
+              <span class="fonte">domínio público</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 6 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 6</span><span class="tempo">17:44 · 3:28</span></p>
+        <h2>O raio é a mesma coisa</h2>
+        <p>Mesma luz, mesmo estalo, mesmo cheiro, mesma mania de procurar ponta de metal. Dalibard
+        tirou faísca de uma nuvem em maio de 1752; Franklin fez a versão dele com a pipa.</p>
+        <p>Vieram dois presentes: o <b>para-raios</b> e as palavras <b>positivo</b> e <b>negativo</b>.</p>
+      </div>
+      <div class="pranchas p3">
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="Marly-la-Ville, maio de 1752: a barra de ferro apontada pro céu, apoiada em garrafas de vidro pra ficar isolada do chão, e o operador tirando faísca dela com um arame de latão enquanto a tempestade passa. Foi Dalibard quem fez primeiro, antes da pipa. Reconstituição."
+               data-cred="reconstituição · gerada no Google Flow · não é gravura de época">
+            <img src="__MARLY__" alt="A barra de ferro de Marly soltando faísca durante a tempestade">
+          </div>
+          <figcaption>
+            <span class="arquivo">marly-dalibard</span>
+            <span class="legenda-img">maio de 1752 · a barra de Marly</span>
+            <span class="fonte">gerada no Google Flow · Nano Banana 2</span>
+            <span class="selo">reconstituição</span>
+          </figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="A pipa com a chave de metal amarrada na linha. Confirmado: o raio é a mesma força da garrafa de Leiden, só que numa escala absurda."
+               data-cred="Currier &amp; Ives · domínio público">
+            <img data-reusa="imgFranklin" alt="Franklin e a pipa durante a tempestade">
+          </div>
+          <figcaption>
+            <span class="arquivo">franklin-pipa</span>
+            <span class="legenda-img">A pipa, 1752</span>
+            <span class="fonte">domínio público</span>
+          </figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem"
+               data-cap="Georg Richmann morreu em 1753, na Rússia, repetindo o experimento com uma montagem parecida com a de Franklin. Não era brincadeira segura."
+               data-cred="gravura de época · domínio público">
+            <img src="__RICHMANN__" alt="Gravura da morte de Georg Richmann atingido por um raio">
+          </div>
+          <figcaption>
+            <span class="arquivo">richmann-morte</span>
+            <span class="legenda-img">O preço, 1753</span>
+            <span class="fonte">domínio público</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 7 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 7</span><span class="tempo">21:14 · 1:40</span></p>
+        <h2>Faça a fila inteira pular</h2>
+        <p>A fila do abade Nollet está montada. Clique em cada ligação pra escolher entre
+        <b>fio de metal</b> e <b>corda de seda</b>, carregue a garrafa e descarregue.</p>
+        <p>Onde tiver seda, o choque para ali.</p>
+      </div>
+      <div class="pranchas so-painel">
+        <div class="painel">
+          <p class="legenda" id="leg7">Clique nas ligações entre os monges pra trocar o material.</p>
+          <!-- mesma garrafa da tela 5. se aparecer uma terceira, vale extrair um componente -->
+          <svg class="jarra" id="svg7" viewBox="0 0 260 150" role="img" aria-label="Garrafa de Leiden com o nível de carga">
+            <rect x="112" y="14" width="10" height="34" rx="2" fill="#8D9095"></rect>
+            <rect x="100" y="44" width="34" height="10" rx="2" fill="#A98356"></rect>
+            <path d="M96 54 H138 V132 Q138 140 130 140 H104 Q96 140 96 132 Z" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="2"></path>
+            <rect id="nivel7" x="98" y="138" width="38" height="0" fill="#D2A044" opacity=".8"></rect>
+            <circle id="faisca7" cx="117" cy="30" r="0" fill="#F0C775"></circle>
+          </svg>
+          <div class="pratica-fila" id="fila7"></div>
+          <p class="placar" id="placar7"></p>
+          <div class="botoes">
+            <button class="btn cheio" id="btnCarrega7">carregar a garrafa</button>
+            <button class="btn" id="btnDescarrega7" disabled>descarregar</button>
+            <button class="btn" id="btnLimpa7">tudo de metal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 8 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 8</span><span class="tempo">22:56 · 4:26</span></p>
+        <h2>Domaram a faísca. E a faísca não constrói nada.</h2>
+        <p>Âmbar atrai. Gilbert dá o nome. Gray descobre condutor e isolante. A garrafa guarda.
+        Franklin prova que o raio é o mesmo.</p>
+        <p>Só que tudo isso é <b>estalo</b>: carrega devagar, solta num instante, acabou. Sem fluxo
+        constante não tem telégrafo, não tem motor, não tem circuito.</p>
+        <p>No próximo episódio, um italiano empilha discos de dois metais com pano molhado no meio e
+        consegue, pela primeira vez, eletricidade que dura: <b>a pilha de Volta</b>.</p>
+      </div>
+      <div class="pranchas p2x2">
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem" data-cap="O âmbar: onde tudo começou." data-cred="foto: Brocken Inaglory · CC BY-SA 3.0">
+            <img data-reusa="imgAmbar" alt="Âmbar báltico">
+          </div>
+          <figcaption><span class="arquivo">o âmbar</span></figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem" data-cap="O versório: o primeiro jeito de medir o efeito." data-cred="domínio público">
+            <img data-reusa="imgVersorio" alt="Versório">
+          </div>
+          <figcaption><span class="arquivo">o versório</span></figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem" data-cap="A garrafa de Leiden: guardar a carga." data-cred="foto: Rama · CC BY-SA 3.0 fr">
+            <img data-reusa="imgGarrafa" alt="Garrafa de Leiden">
+          </div>
+          <figcaption><span class="arquivo">a garrafa</span></figcaption>
+        </figure>
+        <figure class="prancha">
+          <div class="moldura" tabindex="0" role="button" aria-label="ampliar a imagem" data-cap="A pipa: o raio é a mesma coisa." data-cred="domínio público">
+            <img data-reusa="imgFranklin" alt="Franklin e a pipa">
+          </div>
+          <figcaption><span class="arquivo">a pipa</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="nav">
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div class="meio">
+    <div class="pontos" id="dots"></div>
+    <div class="contador" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="imagem ampliada">
+  <div class="quadro" id="quadro">
+    <button class="fechar" id="btnFecha" aria-label="fechar a imagem" title="fechar (Esc)">✕</button>
+    <figure>
+      <img id="lbImg" alt="">
+      <figcaption><span id="lbCap"></span><br><span id="lbCred" style="opacity:.7"></span></figcaption>
+    </figure>
+  </div>
+</div>
+
+<script>
+// ---------- reuso de imagem: o base64 entra uma vez so ----------
+document.querySelectorAll('img[data-reusa]').forEach((img) => {
+  const dona = document.getElementById(img.dataset.reusa);
+  if (dona) img.src = dona.src;
+});
+
+// ---------- altura do palco ----------
+// vh mede a JANELA inteira, e o topo e o rodape comem uma parte fixa dela. medindo o
+// <main> de verdade, o teto das imagens acompanha qualquer tamanho de tela.
+const palco = document.querySelector('main');
+function medePalco() {
+  document.documentElement.style.setProperty('--palco', palco.clientHeight + 'px');
+}
+medePalco();
+window.addEventListener('resize', medePalco);
+
+// ---------- navegacao ----------
+const telas = [...document.querySelectorAll('.tela')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+telas.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pra tela ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(telas.length - 1, i));
+  telas.forEach((t, j) => {
+    t.classList.toggle('ativa', j === atual);
+    if (j === atual) t.scrollTop = 0;
+  });
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === telas.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === telas.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + telas.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+
+// ---------- lightbox ----------
+const lb = document.getElementById('lb');
+const quadro = document.getElementById('quadro');
+const lbImg = document.getElementById('lbImg');
+const lbCap = document.getElementById('lbCap');
+const lbCred = document.getElementById('lbCred');
+const btnFecha = document.getElementById('btnFecha');
+let origem = null;   // a miniatura de onde a imagem saiu, pra devolver o foco ao fechar
+
+function fechaLb() {
+  if (!lb.classList.contains('on')) return;
+  lb.classList.remove('on');
+  if (origem) origem.focus();
+  // so tira o src depois do fade, senao a imagem some antes de escurecer
+  setTimeout(() => { if (!lb.classList.contains('on')) lbImg.removeAttribute('src'); }, 280);
+}
+lb.addEventListener('click', fechaLb);
+quadro.addEventListener('click', (e) => e.stopPropagation());
+btnFecha.addEventListener('click', fechaLb);
+
+document.querySelectorAll('.moldura').forEach((m) => {
+  const abre = () => {
+    const img = m.querySelector('img');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCap.textContent = m.dataset.cap || '';
+    lbCred.textContent = m.dataset.cred || '';
+    origem = m;
+    quadro.style.width = '';
+    lb.classList.add('on');
+    // a moldura abraça a imagem: mede a largura que ela ficou e fixa a do quadro
+    const ajusta = () => {
+      const larg = lbImg.getBoundingClientRect().width;
+      if (larg) quadro.style.width = (larg + 28) + 'px';   // 28 = os dois lados do padding
+    };
+    if (lbImg.complete) requestAnimationFrame(ajusta);
+    else lbImg.addEventListener('load', ajusta, { once: true });
+    btnFecha.focus();
+  };
+  m.addEventListener('click', abre);
+  m.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abre(); } });
+});
+document.addEventListener('keydown', (e) => {
+  if (lb.classList.contains('on')) { if (e.key === 'Escape') fechaLb(); return; }
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+
+// ---------- monge ----------
+function monge(i) {
+  const el = document.createElement('div');
+  el.className = 'monge';
+  el.innerHTML = '<svg viewBox="0 0 34 56" aria-hidden="true">'
+    + '<path class="corpo" d="M17 4c-5 0-8 4-8 9 0 3 1 5 2 6l-4 6c-2 3-3 7-3 11v18h26V36c0-4-1-8-3-11l-4-6c1-1 2-3 2-6 0-5-3-9-8-9z"></path>'
+    + '<circle class="corpo" cx="17" cy="13" r="5"></circle></svg>';
+  el.dataset.i = i;
+  return el;
+}
+function pula(el, atraso) {
+  setTimeout(() => {
+    el.classList.add('pula');
+    el.querySelector('.corpo').classList.add('tocado');
+    setTimeout(() => {
+      el.classList.remove('pula');
+      el.querySelector('.corpo').classList.remove('tocado');
+    }, 420);
+  }, atraso);
+}
+
+// ---------- tela 4 ----------
+const mat4 = document.getElementById('mat4');
+const carga4 = document.getElementById('carga4');
+const leg4 = document.getElementById('leg4');
+const nomeMat4 = document.getElementById('nomeMat4');
+const btnMetal = document.getElementById('btnMetal');
+const btnSeda = document.getElementById('btnSeda');
+const btnManda = document.getElementById('btnManda');
+let material4 = 'metal';
+let animando4 = false;
+
+function trocaMaterial(qual) {
+  material4 = qual;
+  mat4.setAttribute('class', qual === 'metal' ? 'mat-metal' : 'mat-seda');
+  nomeMat4.textContent = qual === 'metal' ? 'fio de metal' : 'corda de seda';
+  btnMetal.classList.toggle('cheio', qual === 'metal');
+  btnSeda.classList.toggle('cheio', qual === 'seda');
+  leg4.className = 'legenda';
+  leg4.innerHTML = qual === 'metal'
+    ? 'Metal é <b>condutor</b>. Mande a carga e veja até onde ela vai.'
+    : 'Seda é <b>isolante</b>. Mande a carga e veja o que acontece.';
+  carga4.setAttribute('opacity', '0');
+}
+btnMetal.addEventListener('click', () => trocaMaterial('metal'));
+btnSeda.addEventListener('click', () => trocaMaterial('seda'));
+btnManda.addEventListener('click', () => {
+  if (animando4) return;
+  animando4 = true;
+  const limite = material4 === 'metal' ? 574 : 274;
+  const dur = material4 === 'metal' ? 1400 : 700;
+  const inicio = performance.now();
+  carga4.setAttribute('opacity', '1');
+  leg4.className = 'legenda';
+  leg4.textContent = 'mandando...';
+  function passo(t) {
+    // o carimbo que o rAF entrega e o do INICIO do quadro, que pode ser anterior ao
+    // performance.now() de dois passos atras. sem o max(0,...), o progresso comeca negativo.
+    const p = Math.max(0, Math.min(1, (t - inicio) / dur));
+    carga4.setAttribute('cx', String(46 + (limite - 46) * p));
+    if (p < 1) { requestAnimationFrame(passo); return; }
+    animando4 = false;
+    if (material4 === 'metal') {
+      leg4.className = 'legenda ok';
+      leg4.textContent = 'Passou. A carga atravessou o metal e chegou na mão.';
+    } else {
+      leg4.className = 'legenda para';
+      leg4.textContent = 'Parou na seda. O isolante barra, e do outro lado não chega nada.';
+    }
+  }
+  requestAnimationFrame(passo);
+});
+trocaMaterial('metal');
+
+// ---------- tela 5 ----------
+const nivel5 = document.getElementById('nivel5');
+const faisca5 = document.getElementById('faisca5');
+const leg5 = document.getElementById('leg5');
+const fila5 = document.getElementById('fila5');
+const btnCarrega5 = document.getElementById('btnCarrega5');
+const btnDescarrega5 = document.getElementById('btnDescarrega5');
+const monges5 = [];
+for (let i = 0; i < 9; i++) { const m = monge(i); fila5.appendChild(m); monges5.push(m); }
+
+let carga5 = 0, carregando5 = false;
+const ALTURA5 = 84;
+function desenhaNivel() {
+  const h = ALTURA5 * carga5;
+  nivel5.setAttribute('height', String(h));
+  nivel5.setAttribute('y', String(138 - h));
+}
+btnCarrega5.addEventListener('click', () => {
+  if (carregando5) return;
+  carregando5 = true;
+  leg5.className = 'legenda';
+  leg5.textContent = 'carregando... gota a gota, e demora';
+  const inicio = performance.now();
+  function passo(t) {
+    carga5 = Math.max(0, Math.min(1, (t - inicio) / 3200));   // rAF pode vir com carimbo anterior: sem o max, altura negativa
+    desenhaNivel();
+    if (carga5 < 1) { requestAnimationFrame(passo); return; }
+    carregando5 = false;
+    btnDescarrega5.disabled = false;
+    btnDescarrega5.classList.add('cheio');
+    leg5.className = 'legenda';
+    leg5.innerHTML = 'Cheia. Levou <b>três segundos</b> pra encher. Agora descarregue.';
+  }
+  requestAnimationFrame(passo);
+});
+btnDescarrega5.addEventListener('click', () => {
+  if (carga5 < 1) return;
+  carga5 = 0; desenhaNivel();
+  faisca5.setAttribute('r', '9');
+  setTimeout(() => faisca5.setAttribute('r', '0'), 160);
+  monges5.forEach((m, i) => pula(m, i * 18));
+  btnDescarrega5.disabled = true;
+  btnDescarrega5.classList.remove('cheio');
+  leg5.className = 'legenda ok';
+  leg5.innerHTML = 'Esvaziou <b>de uma vez</b>, e a fila inteira pulou junta. Encher é devagar, soltar é instantâneo.';
+});
+
+// ---------- tela 7 ----------
+const fila7 = document.getElementById('fila7');
+const leg7 = document.getElementById('leg7');
+const placar7 = document.getElementById('placar7');
+const btnCarrega7 = document.getElementById('btnCarrega7');
+const btnDescarrega7 = document.getElementById('btnDescarrega7');
+const btnLimpa7 = document.getElementById('btnLimpa7');
+const nivel7 = document.getElementById('nivel7');
+const faisca7 = document.getElementById('faisca7');
+const QTD7 = 7;
+const elos = [];
+const monges7 = [];
+let carregada7 = false, enchendo7 = false;
+
+for (let i = 0; i < QTD7; i++) {
+  const m = monge(i);
+  fila7.appendChild(m);
+  monges7.push(m);
+  if (i < QTD7 - 1) {
+    const b = document.createElement('button');
+    b.className = 'elo';
+    b.dataset.i = i;
+    b.addEventListener('click', () => {
+      elos[i].mat = elos[i].mat === 'metal' ? 'seda' : 'metal';
+      pintaElos();
+    });
+    fila7.appendChild(b);
+    elos.push({ el: b, mat: 'seda' });
+  }
+}
+function pintaElos() {
+  elos.forEach((e) => {
+    e.el.className = 'elo ' + e.mat;
+    e.el.textContent = e.mat === 'metal' ? 'metal' : 'seda';
+  });
+  placar7.textContent = elos.filter((e) => e.mat === 'metal').length + ' de ' + elos.length + ' ligações em metal';
+}
+// mesma mecanica da garrafa da tela 5, so que mais rapida: aqui o assunto e o material
+// da ligacao, nao o tempo de enchimento. duas copias e ok; na terceira, extrair.
+const ALTURA7 = 84;
+function desenhaNivel7(carga) {
+  nivel7.setAttribute('height', String(ALTURA7 * carga));
+  nivel7.setAttribute('y', String(138 - ALTURA7 * carga));
+}
+function reseta7() {
+  carregada7 = false;
+  desenhaNivel7(0);
+  btnDescarrega7.disabled = true;
+  btnDescarrega7.classList.remove('cheio');
+  btnCarrega7.classList.add('cheio');
+}
+btnLimpa7.addEventListener('click', () => {
+  elos.forEach((e) => { e.mat = 'metal'; });
+  pintaElos();
+  leg7.className = 'legenda';
+  leg7.textContent = 'Fila toda de metal. Carregue e descarregue.';
+});
+btnCarrega7.addEventListener('click', () => {
+  if (enchendo7 || carregada7) return;
+  enchendo7 = true;
+  btnCarrega7.classList.remove('cheio');
+  leg7.className = 'legenda';
+  leg7.textContent = 'enchendo a garrafa...';
+  const inicio = performance.now();
+  function passo(t) {
+    const carga = Math.max(0, Math.min(1, (t - inicio) / 1200));   // idem tela 5
+    desenhaNivel7(carga);
+    if (carga < 1) { requestAnimationFrame(passo); return; }
+    enchendo7 = false;
+    carregada7 = true;
+    btnDescarrega7.disabled = false;
+    btnDescarrega7.classList.add('cheio');
+    leg7.className = 'legenda';
+    leg7.innerHTML = 'Garrafa cheia. Agora <b>descarregue</b> na fila.';
+  }
+  requestAnimationFrame(passo);
+});
+btnDescarrega7.addEventListener('click', () => {
+  if (!carregada7) return;
+  faisca7.setAttribute('r', '9');
+  setTimeout(() => faisca7.setAttribute('r', '0'), 160);
+  let ate = monges7.length - 1;
+  for (let i = 0; i < elos.length; i++) {
+    if (elos[i].mat === 'seda') { ate = i; break; }
+  }
+  for (let i = 0; i <= ate; i++) pula(monges7[i], i * 90);
+  reseta7();
+  setTimeout(() => {
+    if (ate === monges7.length - 1) {
+      leg7.className = 'legenda ok';
+      leg7.innerHTML = 'A fila inteira pulou junta. Volte o áudio e aperte <b>Próximo</b>.';
+    } else {
+      leg7.className = 'legenda para';
+      leg7.textContent = 'Parou na ' + (ate + 1) + 'ª ligação, onde tem seda. Só ' + (ate + 1)
+        + (ate === 0 ? ' monge sentiu' : ' monges sentiram') + '. Troque a seda por metal e tente de novo.';
+    }
+  }, ate * 90 + 260);
+});
+pintaElos();
+
+mostra(0);
+</script>
+</body>
+</html>

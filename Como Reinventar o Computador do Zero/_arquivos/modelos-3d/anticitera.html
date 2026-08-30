@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anticítera 3D — protótipo de estilo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+<style>
+/* ajustes locais: dois contadores lado a lado */
+.linha-total{justify-content:space-around}
+.linha-total .bloco{display:flex; flex-direction:column; align-items:center; gap:2px}
+.linha-total .num{font-size:26px}
+/* dois contadores lado a lado: crescem menos que o numero unico das outras */
+@media (min-width:701px){ .linha-total .num{font-size:30px} }
+.linha-total .rot{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; color:var(--sub); letter-spacing:.18em; text-transform:uppercase}
+@media (max-width:700px){ .linha-total .num{font-size:20px} }
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> ANTICÍTERA</div>
+  <div>PROTÓTIPO DE ESTILO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">O trem de engrenagens real do mecanismo: <b>64·48·127</b> dentes contra <b>38·24·32</b>. Gire e observe sol e lua.</div>
+    <div class="linha-total">
+      <div class="bloco"><span class="num mono" id="anos">0,00</span><span class="rot">anos (sol)</span></div>
+      <div class="bloco"><span class="num mono" id="luas">0,00</span><span class="rot">voltas da lua</span></div>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio" id="btnMes">+1 mês</button>
+      <button class="btn-mini cheio" id="btnAno">+1 ano</button>
+      <button class="btn-mini" id="btnMeton">ciclo de Metón: 19 anos</button>
+      <button class="btn-mini" id="btnZerar">zerar</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco, mergeGeometries } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elAnos = document.getElementById('anos');
+const elLuas = document.getElementById('luas');
+
+const palco = montaPalco({
+  alvo: [0, 3.3, 0],
+  camPos: [0, 4.6, 11.5],
+  meiaLarguraDesktop: 4.6,
+  meiaLarguraMobile: 3.6,
+  distMin: 9.5,
+  orbitaMin: 5,
+});
+const { scene, camera, controls, materiais, bloco, criaRotulo, redimensiona, inicia } = palco;
+const bronzeVerde = materiais.metal(0x9c8544, { roughness: 0.45 });
+const bronzeEscuro = materiais.metal(0x8a6a2e, { roughness: 0.5 });
+
+const maquina = new THREE.Group();
+scene.add(maquina);
+
+// ---------- engrenagens: o trem sideral da lua (Freeth et al. 2006) ----------
+// b2(64) -> c1(38) | c2(48) -> d1(24) | d2(127) -> e2(32)
+// razao = (64*48*127)/(38*24*32) = 254/19 = 13,368421... voltas da lua por ano
+const MOD = 0.032;                 // "modulo" da engrenagem: raio = dentes*MOD/2
+function raio(N) { return N * MOD / 2; }
+
+function engrenagem(N, esp, mat) {
+  const geos = [];
+  const corpo = new THREE.CylinderGeometry(raio(N) - 0.045, raio(N) - 0.045, esp, 48);
+  corpo.rotateX(Math.PI / 2);      // eixo da engrenagem em z (de frente pro observador)
+  geos.push(corpo);
+  for (let i = 0; i < N; i++) {
+    const dente = new THREE.BoxGeometry(0.055, 0.11, esp * 0.9);
+    dente.translate(0, raio(N), 0);
+    dente.rotateZ(i * Math.PI * 2 / N);
+    geos.push(dente);
+  }
+  const m = new THREE.Mesh(mergeGeometries(geos), mat);
+  m.castShadow = true; m.receiveShadow = true;
+  return m;
+}
+
+// centro do sol (e da lua: no mecanismo real o eixo da lua atravessa o do sol)
+const O = new THREE.Vector2(-0.3, 5.1);   // alto o bastante pra roda de 127 dentes nao tocar o piso da caixa
+
+// roda de retorno entre c2 e d1: devolve o sentido do giro, como o trem completo do mecanismo real
+// (sem ela, a roda da lua giraria ao contrario do ponteiro; a razao nao muda, ela se cancela)
+const RETORNO = 20;
+
+// posicoes exatas: c engata em b2; c2->retorno->d1 em linha; d2 engata em e2 (que fica no centro O)
+const distBC = raio(64) + raio(38);                          // 1.632
+const distCD = raio(48) + 2 * raio(RETORNO) + raio(24);      // 1.792
+const distOD = raio(127) + raio(32);                         // 2.544
+const angC = THREE.MathUtils.degToRad(-45);
+const angOD = angC - Math.acos((distBC * distBC + distOD * distOD - distCD * distCD) / (2 * distBC * distOD));
+const posC = new THREE.Vector2(O.x + Math.cos(angC) * distBC, O.y + Math.sin(angC) * distBC);
+const posD = new THREE.Vector2(O.x + Math.cos(angOD) * distOD, O.y + Math.sin(angOD) * distOD);
+const dirCD = posD.clone().sub(posC).normalize();
+const posI = posC.clone().add(dirCD.clone().multiplyScalar(raio(48) + raio(RETORNO)));
+
+// planos em z: par b-c no fundo, c2-retorno-d1 no meio, d2-e2 na frente
+const Z1 = -0.30, Z2 = -0.06, Z3 = 0.22;
+
+const gB2 = engrenagem(64, 0.16, bronzeVerde);   gB2.position.set(O.x, O.y, Z1);
+const gC1 = engrenagem(38, 0.16, bronzeEscuro);  gC1.position.set(posC.x, posC.y, Z1);
+const gC2 = engrenagem(48, 0.16, bronzeVerde);   gC2.position.set(posC.x, posC.y, Z2);
+const gI = engrenagem(RETORNO, 0.16, bronzeEscuro); gI.position.set(posI.x, posI.y, Z2);
+const gD1 = engrenagem(24, 0.16, bronzeEscuro);  gD1.position.set(posD.x, posD.y, Z2);
+const gD2 = engrenagem(127, 0.16, bronzeVerde);  gD2.position.set(posD.x, posD.y, Z3);
+const gE2 = engrenagem(32, 0.16, bronzeEscuro);  gE2.position.set(O.x, O.y, Z3);
+maquina.add(gB2, gC1, gC2, gI, gD1, gD2, gE2);
+
+// eixos
+function eixo(x, y, z0, z1, r = 0.05) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, z1 - z0, 16), materiais.latao);
+  m.geometry.rotateX(Math.PI / 2);
+  m.position.set(x, y, (z0 + z1) / 2);
+  m.castShadow = true;
+  return m;
+}
+maquina.add(eixo(O.x, O.y, -0.6, 0.75, 0.06), eixo(posC.x, posC.y, -0.6, 0.35), eixo(posI.x, posI.y, -0.6, 0.15, 0.04), eixo(posD.x, posD.y, -0.6, 0.55));
+
+// manivela decorativa no eixo do sol, saindo por tras da caixa
+const manivela = new THREE.Group();
+manivela.position.set(O.x, O.y, -0.72);
+const bracoM = bloco(0.12, 0.55, 0.12, materiais.latao);
+bracoM.position.y = -0.27;
+const caboM = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.09, 0.4, 16), materiais.madeiraEscura);
+caboM.geometry.rotateX(Math.PI / 2);
+caboM.position.set(0, -0.55, -0.25);
+caboM.castShadow = true;
+manivela.add(bracoM, caboM);
+maquina.add(manivela);
+
+// ---------- caixa de madeira (aberta na frente e atras, tipo as reconstrucoes) ----------
+const CX = { esq: -2.75, dir: 2.35, baixo: 0.25, cima: 6.3 };
+const fundo = bloco(CX.dir - CX.esq + 0.7, 0.35, 2.0, materiais.madeira, 0.09);
+fundo.position.set((CX.esq + CX.dir) / 2, CX.baixo - 0.18, 0);
+const topo = bloco(CX.dir - CX.esq + 0.7, 0.35, 2.0, materiais.madeira, 0.09);
+topo.position.set((CX.esq + CX.dir) / 2, CX.cima + 0.18, 0);
+maquina.add(fundo, topo);
+[CX.esq, CX.dir].forEach((x) => {
+  const lado = bloco(0.35, CX.cima - CX.baixo, 1.8, materiais.madeiraEscura, 0.09);
+  lado.position.set(x, (CX.baixo + CX.cima) / 2, 0);
+  maquina.add(lado);
+});
+[[CX.esq - 0.15, 0.7], [CX.dir + 0.15, 0.7], [CX.esq - 0.15, -0.7], [CX.dir + 0.15, -0.7]].forEach(([x, z]) => {
+  const pe = bloco(0.45, 0.25, 0.45, materiais.madeiraEscura, 0.06);
+  pe.position.set(x, -0.06, z);
+  maquina.add(pe);
+});
+
+// ---------- mostrador da frente: zodiaco + ponteiros ----------
+function texturaZodiaco() {
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = 512;
+  const cx = cv.getContext('2d');
+  cx.fillStyle = '#d9c79e';
+  cx.beginPath(); cx.arc(256, 256, 254, 0, Math.PI * 2); cx.fill();
+  cx.strokeStyle = '#6d5b42'; cx.lineWidth = 3;
+  cx.beginPath(); cx.arc(256, 256, 178, 0, Math.PI * 2); cx.stroke();
+  const signos = ['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'].map((s) => s + '︎');   // forca glifo de texto, nao emoji
+  cx.fillStyle = '#2b2016';
+  cx.font = '44px serif';
+  cx.textAlign = 'center'; cx.textBaseline = 'middle';
+  for (let s = 0; s < 12; s++) {
+    const a = -Math.PI / 2 + s * Math.PI * 2 / 12 + Math.PI / 12;
+    cx.fillText(signos[s], 256 + Math.cos(a) * 216, 256 + Math.sin(a) * 216);
+    const at = -Math.PI / 2 + s * Math.PI * 2 / 12;
+    cx.strokeStyle = '#8c5a22'; cx.lineWidth = 2;
+    cx.beginPath();
+    cx.moveTo(256 + Math.cos(at) * 180, 256 + Math.sin(at) * 180);
+    cx.lineTo(256 + Math.cos(at) * 252, 256 + Math.sin(at) * 252);
+    cx.stroke();
+  }
+  const tx = new THREE.CanvasTexture(cv);
+  tx.anisotropy = 8;
+  return tx;
+}
+const PLACA_Z = 0.52;
+const placa = new THREE.Mesh(
+  new THREE.CylinderGeometry(1.45, 1.45, 0.06, 64),
+  [bronzeEscuro, new THREE.MeshStandardMaterial({ map: texturaZodiaco(), roughness: 0.55, metalness: 0.2 }), bronzeEscuro]
+);
+placa.geometry.rotateX(Math.PI / 2);
+placa.position.set(O.x, O.y, PLACA_Z);
+placa.castShadow = true;
+maquina.add(placa);
+
+// ponteiro do sol (disco dourado na ponta) e da lua (bola de fase na ponta)
+const pontSol = new THREE.Group();
+pontSol.position.set(O.x, O.y, PLACA_Z + 0.09);
+const hasteSol = bloco(0.07, 1.1, 0.035, materiais.latao);
+hasteSol.position.y = 0.55;
+const discoSol = new THREE.Mesh(new THREE.SphereGeometry(0.11, 16, 12), materiais.latao);
+discoSol.position.y = 1.02;
+discoSol.castShadow = true;
+pontSol.add(hasteSol, discoSol);
+maquina.add(pontSol);
+
+const pontLua = new THREE.Group();
+pontLua.position.set(O.x, O.y, PLACA_Z + 0.17);
+const hasteLua = bloco(0.05, 0.95, 0.03, bronzeEscuro);
+hasteLua.position.y = 0.475;
+const lua = new THREE.Group();
+lua.position.y = 0.86;
+const luaClara = new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 12, 0, Math.PI), new THREE.MeshStandardMaterial({ color: 0xf3ead2, roughness: 0.5 }));
+const luaEscura = new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 12, Math.PI, Math.PI), new THREE.MeshStandardMaterial({ color: 0x3a3126, roughness: 0.8 }));
+lua.add(luaClara, luaEscura);
+pontLua.add(hasteLua, lua);
+maquina.add(pontLua);
+
+// ---------- rotulos ----------
+document.fonts.ready.then(() => {
+  [['SOL 64', O.x - 1.6, O.y + 1.2, -0.3],
+   ['38 · 48', posC.x + 1.15, posC.y, -0.1],
+   ['24 · 127', posD.x + 1.0, posD.y - 1.2, 0.25],
+   ['LUA 32', O.x + 1.4, O.y + 0.6, 0.3]].forEach(([t, x, y, z]) => {
+    const sp = criaRotulo(t, 0.72);
+    sp.position.set(x, y, z);
+    maquina.add(sp);
+  });
+  redimensiona();
+});
+
+// ---------- cinematica ----------
+// Y = angulo do ano (2*pi = 1 volta do sol). Sol horario visto de frente; razoes reais do trem.
+const R_BC = 64 / 38, R_CD = 48 / 24, R_DE = 127 / 32;
+const RAZAO_LUA = R_BC * R_CD * R_DE;          // 13.368421... (a roda de retorno se cancela na razao)
+let Y = 0;          // posicao atual
+let alvoY = 0;      // pra onde estamos girando
+let velocidade = Math.PI * 2 / 2.2;            // rad de ano por segundo (modo normal)
+
+// chaveamento dos dentes: cada roda movida ganha um giro fixo pra que, no ponto de
+// contato, dente de uma caia no VAO da outra (a razao exata congela essa fase pra sempre)
+function frac(v) { return v - Math.floor(v); }
+function chaveia(psi, rotA, NA, rotB, NB) {
+  const fA = frac((psi - rotA) * NA / (Math.PI * 2));
+  const fB = frac((psi + Math.PI - rotB) * NB / (Math.PI * 2));
+  return (fB - fA - 0.5) * Math.PI * 2 / NB;
+}
+const angCD = Math.atan2(dirCD.y, dirCD.x);
+const angDO = Math.atan2(O.y - posD.y, O.x - posD.x);
+const K = {};
+K.c1 = chaveia(angC, 0, 64, 0, 38);
+K.i  = chaveia(angCD, 0, 48, 0, RETORNO);
+K.d1 = chaveia(angCD, K.i, RETORNO, 0, 24);
+K.e2 = chaveia(angDO, 0, 127, 0, 32);
+
+function aplica() {
+  gB2.rotation.z = -Y;
+  manivela.rotation.z = -Y;
+  const rotC = Y * R_BC;
+  gC1.rotation.z = rotC + K.c1;
+  gC2.rotation.z = rotC;
+  gI.rotation.z = -rotC * 48 / RETORNO + K.i;  // roda de retorno inverte...
+  const rotD = rotC * R_CD;                    // ...e devolve: d gira no sentido de c
+  gD1.rotation.z = rotD + K.d1;
+  gD2.rotation.z = rotD;
+  gE2.rotation.z = -rotD * R_DE + K.e2;        // = -Y*RAZAO: mesmo sentido do ponteiro da lua
+  pontSol.rotation.z = -Y;
+  pontLua.rotation.z = -Y * RAZAO_LUA;
+  lua.rotation.y = Math.PI + Y * (RAZAO_LUA - 1);   // PI: conjuncao (Y=0) = lua NOVA pro observador
+  elAnos.textContent = (Y / (Math.PI * 2)).toFixed(2).replace('.', ',');
+  elLuas.textContent = (Y * RAZAO_LUA / (Math.PI * 2)).toFixed(2).replace('.', ',');
+}
+aplica();
+
+function gira(anos, msg) {
+  if (!Number.isFinite(anos) || Math.abs(anos) > 100) return;   // gancho de QA nao pode por a maquina em giro eterno
+  alvoY = Y + anos * Math.PI * 2;
+  velocidade = anos >= 19 ? Math.PI * 2 * 2.6 : Math.PI * 2 / 2.2;   // Meton acelera senao demora
+  controls.autoRotate = false;
+  if (msg) legenda.innerHTML = msg;
+}
+
+document.getElementById('btnMes').addEventListener('click', () =>
+  gira(1 / 12, 'Um <b>mês</b> de manivela: o sol anda um signo, a lua dá mais de uma volta.'));
+document.getElementById('btnAno').addEventListener('click', () =>
+  gira(1, 'Um <b>ano</b>: o sol fecha o zodíaco e a lua dá <b>13,37</b> voltas — repare nos contadores.'));
+document.getElementById('btnMeton').addEventListener('click', () =>
+  gira(19, 'Girando <b>19 anos</b>... os gregos esconderam a fração 254/19 nos dentes: o 127 é metade de 254, o 38 é o dobro de 19.'));
+document.getElementById('btnZerar').addEventListener('click', () => {
+  Y = 0; alvoY = 0;
+  aplica();
+  legenda.className = 'legenda';
+  legenda.innerHTML = 'Zerado. Gire um mês, um ano, ou o ciclo inteiro de Metón.';
+});
+
+// gancho de teste (QA via Playwright)
+window.__anticitera = {
+  gira: (anos) => gira(anos),
+  anos: () => Y / (Math.PI * 2),
+  luas: () => Y * RAZAO_LUA / (Math.PI * 2),
+  parado: () => Math.abs(alvoY - Y) < 1e-9,
+  zera: () => { Y = 0; alvoY = 0; aplica(); },
+  vista: (x, y, z) => { controls.autoRotate = false; camera.position.set(x, y, z); },   // QA: posiciona a camera
+};
+
+// ---------- animacao ----------
+inicia((dt) => {
+  if (Y !== alvoY) {
+    const falta = alvoY - Y;
+    const passo = Math.sign(falta) * Math.min(Math.abs(falta), velocidade * dt * Math.min(1, Math.abs(falta) * 2 + 0.15));
+    Y += passo;
+    if (Math.abs(alvoY - Y) < 1e-6) {
+      Y = alvoY;
+      const luasN = Y * RAZAO_LUA / (Math.PI * 2);
+      if (Math.abs(luasN - 254) < 0.01) {
+        legenda.className = 'legenda ok';
+        legenda.innerHTML = '19 anos = <b>254 voltas da lua</b>, exatas. Um calendário de bronze, 2.000 anos atrás. 🎉';
+      }
+    }
+    aplica();
+  }
+});
+</script>
+</body>
+</html>

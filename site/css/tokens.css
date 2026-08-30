@@ -1,0 +1,82 @@
+/* tokens
+   As variaveis de cor e medida do site inteiro. Nao depende de nada e carrega primeiro.
+
+   Esta e a identidade nova da serie: as animacoes nasceram em creme e serao
+   trazidas pra ca uma a uma, comecando pelo abaco. Enquanto a migracao nao
+   termina, site e episodio antigo nao combinam, e isso e esperado. */
+
+:root {
+  /* superficie e texto */
+  --ground:      #f4f6f8;
+  --surface:     #ffffff;
+  --surface-alt: #eceff3;
+  --line:        #d3dae1;
+  --line-soft:   #e3e8ed;
+  --ink:         #14191d;
+  --ink-soft:    #4b5760;
+  --ink-faint:   #77848d;
+
+  /* destaque */
+  --accent:      #0e5a6e;
+  --accent-soft: #e0eef1;
+  --accent-edge: #a8ccd6;
+
+  /* a fita do topo: as sete barras de teste da TV, na ordem classica */
+  --fita-1: #b9b9b9;
+  --fita-2: #b9b900;
+  --fita-3: #00b9b9;
+  --fita-4: #00b900;
+  --fita-5: #b900b9;
+  --fita-6: #b90000;
+  --fita-7: #0000b9;
+
+  /* a arte do card nao inverte com o tema: foto nao vira negativo */
+  --arte-de:  #16455a;
+  --arte-ate: #0b2a38;
+  --arte-ink: #dceef4;
+
+  /* tipografia */
+  --fonte-titulo: Archivo, ui-sans-serif, system-ui, sans-serif;
+  --fonte-serif:  Lora, Georgia, "Times New Roman", serif;
+  --fonte-texto:  "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fonte-mono:   "IBM Plex Mono", ui-monospace, Consolas, monospace;
+
+  /* medida */
+  --largura-pagina: 1120px;
+  --raio: 10px;
+  --shadow: 0 1px 2px rgba(20, 25, 29, .06), 0 8px 24px -16px rgba(20, 25, 29, .28);
+}
+
+/* o tema escuro do sistema, quando o visitante nao escolheu nada */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:      #11161a;
+    --surface:     #171e23;
+    --surface-alt: #1e262c;
+    --line:        #2c363d;
+    --line-soft:   #232c33;
+    --ink:         #e6ecf0;
+    --ink-soft:    #a3b0b9;
+    --ink-faint:   #77858e;
+    --accent:      #57b6ca;
+    --accent-soft: #12333c;
+    --accent-edge: #2c5d68;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
+  }
+}
+
+/* o tema escuro escolhido na mao, que precisa ganhar do sistema */
+:root[data-theme="dark"] {
+  --ground:      #11161a;
+  --surface:     #171e23;
+  --surface-alt: #1e262c;
+  --line:        #2c363d;
+  --line-soft:   #232c33;
+  --ink:         #e6ecf0;
+  --ink-soft:    #a3b0b9;
+  --ink-faint:   #77858e;
+  --accent:      #57b6ca;
+  --accent-soft: #12333c;
+  --accent-edge: #2c5d68;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
+}

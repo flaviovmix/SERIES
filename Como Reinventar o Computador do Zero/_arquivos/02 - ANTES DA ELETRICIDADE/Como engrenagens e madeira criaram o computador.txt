@@ -1,0 +1,7 @@
+Titulo: Como engrenagens e madeira criaram o computador
+Notebook: Como Reinventar o Computador do Zero-02 - ANTES DA ELETRICIDADE
+
+Descricao:
+Antes Da Eletricidade é o foco deste material, que detalha o segundo episódio de uma série sobre a reconstrução histórica dos computadores. Os textos narram a evolução do cálculo, começando pelo abaco como ferramenta de representação física de conceitos matemáticos. Em seguida, apresentam a calculadora mecânica de Pascal, que automatizou as operações aritméticas através de engrenagens e manivelas. O destaque final recai sobre a máquina analítica de Charles Babbage, inspirada nos teares programáveis para permitir diferentes tarefas em um único hardware. As fontes ressaltam o papel de Ada Lovelace, que escreveu o primeiro código de computador ao perceber que máquinas poderiam processar símbolos além de números. Assim, o conteúdo explora como peças físicas em movimento deram origem à lógica dos dispositivos modernos.
+
+Link: https://notebook.google.com/notebook/9f91bc20-748c-4634-aae1-23432a9961b3

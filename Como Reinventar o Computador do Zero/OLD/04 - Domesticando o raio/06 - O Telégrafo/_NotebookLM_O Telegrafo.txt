@@ -1,0 +1,107 @@
+Inicie dizendo: O Telegrafo
+---------------
+
+Este e o decimo episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard, os automatos, a caixa de musica e a Maquina Analitica; o anterior terminou com a Analitica presa no papel, porque engrenagem e vapor eram lentos e caros demais. Este episodio e sobre o salto que veio em vez dela: a informacao largando as engrenagens e virando eletricidade. O telegrafo.
+
+ESTE EPISODIO TEM UMA ANIMACAO COM SOM QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo, e que TOCA DE VERDADE (bipes de telegrafo) nas telas interativas. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar duas coisas: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema; e quem estiver com a pagina, ligue o som do aparelho, porque o telegrafo desta pagina apita de verdade.
+- Na tela interativa (4) e nas DEMONSTRACOES (5 e 6), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A internet vitoriana: a rede mundial de telegrafo como uma internet de pontos e tracos, 130 anos antes da nossa.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O TELEGRAFO)
+
+Retomar em uma frase: a Maquina Analitica ficou no papel porque engrenagem e vapor nao davam conta do sonho. O salto seguinte da historia veio por outro caminho: a informacao largou as engrenagens e virou eletricidade, atravessando paises num piscar. Este episodio e sobre o telegrafo.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo. E o aviso deste episodio: quem estiver com a pagina aberta, LIGUE O SOM, porque o telegrafo da pagina apita de verdade.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: o telegrafo eletrico. Dois times chegaram quase juntos: Cooke e Wheatstone na Inglaterra, em 1837, instalando telegrafo pras ferrovias; e, nos Estados Unidos, o pintor Samuel Morse com o mecanico Alfred Vail: demonstracao em 1838 e a linha de Washington a Baltimore funcionando em 1844.
+
+Motivacao: mensagem viajava na velocidade do cavalo ou do navio, semanas pra cruzar um oceano. E o trem, recem-nascido, escancarou o problema: pra avisar que um trem estava vindo, precisava de um aviso MAIS RAPIDO que o proprio trem. Nenhum cavalo resolve isso.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (ANTES DO FIO)
+
+A informacao ja tentava correr antes. Franca, 1794: as torres de Chappe, o telegrafo otico. Torres com bracos mecanicos articulados no alto, cada posicao dos bracos era um sinal, e o operador da torre seguinte copiava olhando de luneta. Paris a Lille em minutos: pra epoca, uma revolucao.
+
+O problema: dependia de olho. De noite, com chuva ou neblina, a rede inteira saia do ar. A ideia nova: e se a mensagem viajasse por um FIO, como corrente eletrica? Sem noite, sem neblina, na velocidade do raio.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (COMO FUNCIONA, TELA INTERATIVA COM SOM)
+
+O circuito e simples de falar: uma tecla, um fio comprido, e na outra ponta um eletroima. Aperta a tecla, a corrente fecha, o eletroima puxa um martelinho e faz CLIQUE do outro lado. Solta a tecla, a corrente abre. So isso.
+
+E dai vem a primeira sacada: toque curto e toque longo ja sao duas coisas diferentes. Com dois simbolos, da pra combinar o que quiser.
+
+Avisar: a tela tem a tecla de verdade. Convide o ouvinte a segurar e soltar, curto e longo, e ver o eletroima bater.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O CODIGO MORSE, COM DEMONSTRACAO COM SOM)
+
+O idioma do fio: o codigo Morse. Toque curto e ponto, toque longo e traco, e cada letra e uma receita dos dois. E tem economia embutida: Vail contou as letras mais usadas e deu pra elas os codigos mais curtos. O E, letra mais comum, e um ponto so. O T e um traco so. Codigo esperto gasta menos fio e menos tempo.
+
+Avisar que a tela tem o botao que transmite o S O S, com a colinha de algumas letras acendendo enquanto toca.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O RELE, COM DEMONSTRACAO)
+
+O problema pratico: em fios muito longos o sinal chega fraquinho, sem forca pra bater o martelinho. A solucao virou a peca mais importante do resto da serie: o RELE. O sinal fraco so precisa de forca pra puxar um eletroima pequeno, que fecha um circuito NOVO, com bateria nova. O sinal renasce inteiro e segue viagem. De rele em rele, a mensagem atravessa um continente.
+
+E aqui o recado pro resto da serie: o rele e eletricidade apertando um interruptor. Uma corrente controlando outra corrente. Guarde essa peca: e com ela que os primeiros computadores eletromecanicos vao ser construidos, mais adiante.
+
+Avisar que a tela tem o botao que manda um sinal pela linha, passando pelo rele.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: TRANSMITA A-D-A)
+
+Convidar a pausar o audio e resolver na tela: transmitir a palavra ADA em Morse. Montar cada letra com os botoes de ponto e traco, fechar a letra no botao, e conferir a palavra se formando. A colinha das letras esta na tela. Errou, limpa e transmite de novo.
+
+Quando a palavra ADA fechar, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: tecla, fio e eletroima; ponto e traco com economia nas letras comuns; e o rele fazendo o sinal renascer de estacao em estacao.
+
+O que ficou: em 1858 um cabo cruzou o Atlantico (durou semanas e queimou); em 1866, cruzou de vez. Europa e America passaram de semanas de navio pra minutos de fio. O planeta virou rede: estacoes, operadores, noticias e mercados pulsando em codigo. A internet vitoriana, de pontos e tracos, 130 anos antes da nossa.
+
+A limitacao, que e o gancho: o telegrafo transmite, mas nao calcula nem lembra nada. E enquanto a informacao corria pelos fios, os escritorios afundavam em dados parados: os Estados Unidos levaram quase a decada inteira pra contar o proprio censo. Um funcionario desse censo resolveu juntar o cartao furado com a eletricidade.
+
+Gancho: no proximo episodio, as maquinas de Hollerith e o censo de 1890.

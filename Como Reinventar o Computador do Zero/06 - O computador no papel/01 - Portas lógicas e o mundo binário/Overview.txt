@@ -1,0 +1,15 @@
+PORTAS LOGICAS E O MUNDO BINARIO - CONTEXTO
+===========================================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1937 a 1950.
+
+A etapa anterior, A Eletricidade Aprende A Pensar, terminou em 1937: Boole tinha mostrado em 1854 que raciocinar com E, OU e NAO e uma conta com 1 e 0, e Claude Shannon mostrou que um circuito de interruptores faz exatamente essa conta. Nesta etapa a serie para de contar historia de maquina e passa a montar uma, no papel, peca por peca, sem ligar nada: este episodio faz as pecas mais basicas, e os quatro seguintes empilham somador, memoria, a maquina universal de Turing e o conjunto de instrucoes.
+
+Este episodio cobre as tres portas logicas feitas com reles: o E, que e dois reles em serie e so acende quando os dois fecham; o OU, que e dois reles em paralelo e acende com qualquer um; e o NAO, que e um rele que interrompe um circuito que estava fechado. Cobre o NAO-E, chamado NAND, que sozinho reproduz qualquer outra porta, e o OU-exclusivo, chamado XOR, que acende so quando as entradas sao diferentes. Cobre o rato Teseu, que Shannon construiu em 1950 com reles e que aprendia o caminho de um labirinto errando.
+
+Cobre tambem como representar numero com so duas posicoes: risquinhos, o sistema decimal, onde cada casa vale dez vezes mais que a anterior, e o binario, onde cada casa vale duas vezes mais. Cobre o vai-um binario, a palavra bit, de binary digit, que apareceu publicada em 1948 e foi inventada pelo estatistico John Tukey, e o byte de 8 bits, que representa 256 coisas diferentes.
+
+Ao final o ouvinte entende que porta logica e um circuito com entradas e saida em 1 e 0, que qualquer computador de hoje e feito das mesmas portas com outro material no lugar do rele, e que numero, pra essas portas, e uma fileira de 1 e 0. Isso abre o proximo episodio, que faz as portas somarem.
+
+Use este contexto apenas como apoio.

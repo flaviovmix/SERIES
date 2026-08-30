@@ -1,0 +1,123 @@
+Inicie dizendo: A Faisca
+---------------
+
+Este e o primeiro episodio da etapa DOMESTICANDO O RAIO, a quarta etapa da serie Como Reinventar o Computador do Zero. As etapas anteriores foram mecanicas: o abaco e o zero, os instrumentos do hiato, e as maquinas de engrenagem que terminaram na Maquina Analitica de Babbage, grande demais pra ser construida. Esta etapa troca o material: sao sete episodios pra entender a eletricidade do zero, e este primeiro cobre o periodo em que ela ja era conhecida e ainda nao servia pra nada.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas (4 e 5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A garrafa de Leiden como um balde que enche e vira de uma vez so: enche devagar, esvazia num estalo, e nao da pra deixar escorrendo.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A FAISCA)
+
+Retomar em uma frase: ate aqui a serie inteira foi de metal e madeira, engrenagem girando, e terminou na Maquina Analitica de Babbage, que era boa demais pro material que existia. Avisar que a serie agora abre uma etapa nova, chamada Domesticando o Raio, com sete episodios, e que ela nao comeca com computador nenhum: comeca com uma forca que ninguem sabia usar.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: o assunto e a eletricidade estatica, e o periodo vai de 1600, com o livro de William Gilbert, ate 1752, com a pipa de Benjamin Franklin. Um seculo e meio de gente estudando eletricidade sem nenhuma aplicacao pratica.
+
+Motivacao: essa e a parte estranha. Ninguem estava tentando resolver um problema. Nao tinha industria esperando, nao tinha encomenda de rei. Era curiosidade pura sobre um efeito esquisito que aparecia quando se esfregava certos materiais. Vale dizer isso com todas as letras: a peca mais importante do resto da serie nasceu de gente brincando com pedra amarela e vidro, sem saber pra que servia.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O AMBAR E A PALAVRA)
+
+Comecar por Tales de Mileto, por volta de 600 antes de Cristo: ele reparou que ambar esfregado num pano atrai palha e fiapo. Ambar e resina de arvore fossilizada, aquela pedra amarela translucida. E so isso: esfrega e atrai. Ficou nessa por dois mil anos, como curiosidade.
+
+Em 1600, o ingles William Gilbert, medico da rainha Elizabeth, publica o livro De Magnete e faz a primeira separacao importante: ima e ambar esfregado NAO sao a mesma coisa. O ima atrai so metal, sempre, sem precisar esfregar. O ambar precisa ser esfregado, atrai qualquer coisinha leve e depois perde a graca. Sao dois fenomenos diferentes.
+
+E Gilbert deu nome ao segundo. Ambar em grego e elektron. Ele chamou o efeito de eletrico. A palavra que a gente usa hoje pra rede, motor, chuveiro e computador nasceu ali, e quer dizer literalmente "coisa de ambar".
+
+Gilbert tambem montou o primeiro detector: uma agulha leve equilibrada num pino, que gira quando algo eletrizado chega perto. Serviu pra descobrir que varios outros materiais fazem o mesmo que o ambar, vidro e enxofre entre eles. Deixou de ser esquisitice de uma pedra so.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (ELA VIAJA, TELA INTERATIVA)
+
+1729, Inglaterra, Stephen Gray. Ele descobre uma coisa que hoje parece obvia e na epoca nao era: a eletricidade nao fica parada onde foi criada. Ela ANDA.
+
+Gray eletrizou um tubo de vidro numa ponta e viu o efeito aparecer na outra ponta de um fio comprido, longe dali. E foi testando material por material: por alguns o efeito passa, por outros nao passa de jeito nenhum. Metal e barbante umido passam. Seda e vidro nao passam. Estava descoberta a diferenca entre condutor e isolante, e a palavra fio ganhou sentido.
+
+A demonstracao dele virou espetaculo de salao: pendurou um menino em cordas de seda, na horizontal, eletrizou o pe do menino, e da mao dele saiam faiscas que atraiam folhinhas de metal. A seda segurava o menino sem deixar a eletricidade escapar pro chao. O menino nao era o experimento, era o fio.
+
+Avisar: a tela tem os dois caminhos pra testar. Convide o ouvinte a mandar o efeito pelo fio de metal e depois pela corda de seda, e ver onde ele passa e onde ele para.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (GUARDAR O CHOQUE, TELA INTERATIVA)
+
+Ate aqui a eletricidade so existia enquanto alguem estava esfregando. Parou de esfregar, acabou. O passo seguinte foi conseguir GUARDAR.
+
+1745 e 1746, quase ao mesmo tempo, dois lugares diferentes: Ewald von Kleist na Alemanha e Pieter van Musschenbroek na cidade de Leiden, na Holanda. Um vidro com agua, um prego atravessando a rolha, e o experimentador segurando o vidro com a outra mao. Carrega o prego com a maquina de esfregar, encosta a mao no prego, e leva um choque forte o bastante pra derrubar um adulto. Musschenbroek escreveu que nao repetiria aquilo nem pelo reino da Franca.
+
+O nome pegou pela cidade: garrafa de Leiden. Era o primeiro aparelho que guardava carga eletrica e devolvia tudo de uma vez. Comparar com um balde: enche devagar e vira de uma vez so. Nao da pra deixar escorrendo devagarinho, e essa limitacao vai ser o problema do episodio inteiro.
+
+E virou moda. Em 1746 o abade Jean-Antoine Nollet fez a demonstracao mais famosa da historia da eletricidade: enfileirou cerca de duzentos monges cartuxos de maos dadas, num circulo de quase dois quilometros, e descarregou uma garrafa de Leiden na fila. Todos pularam no mesmo instante. Foi a prova publica de que aquilo viaja praticamente na hora, e por distancia grande.
+
+Avisar: a tela tem a garrafa. Convide o ouvinte a carregar e descarregar, e ver a fila reagir.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O RAIO E A MESMA COISA)
+
+A pergunta que sobrou: essa faisca de laboratorio tem alguma coisa a ver com o raio do ceu?
+
+Benjamin Franklin, nos Estados Unidos, listou as semelhancas: luz, estalo, cheiro, e a mania de procurar ponta de metal. Propos um teste com uma haste de ferro apontada pro ceu. Em maio de 1752, na Franca, Thomas-Francois Dalibard executou a ideia e tirou faisca de uma nuvem de tempestade. Pouco depois Franklin fez a versao dele, com a pipa e uma chave amarrada na linha.
+
+Confirmado: e a mesma coisa. Raio e a mesma eletricidade da garrafa de Leiden, so que numa escala absurda.
+
+Duas consequencias. A primeira e pratica: o para-raios, que e a primeira vez que a humanidade usa eletricidade pra alguma coisa util. A segunda e de vocabulario: Franklin propos que a eletricidade era um fluido unico, que sobra num lado e falta no outro, e chamou os dois lados de positivo e negativo. Os sinais mais e menos das nossas pilhas vem dali.
+
+E vale o aviso que a epoca aprendeu do jeito ruim: em 1753, na Russia, Georg Richmann morreu atingido enquanto repetia o experimento. Nao era brincadeira segura.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: FAZ A FILA PULAR)
+
+Convidar a pausar o audio e resolver na tela: a fila dos monges esta montada, e entre uma pessoa e outra o ouvinte escolhe o que vai ligar, fio de metal ou corda de seda. Depois carrega a garrafa e descarrega.
+
+O objetivo e fazer o choque chegar ate o fim da fila. Onde entrar seda, o choque para ali e so os primeiros pulam. Errou, troca a ligacao e descarrega de novo.
+
+Quando a fila inteira pular junta, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: ambar esfregado atrai coisa leve, e Gilbert deu o nome eletrico e separou isso de ima. Gray descobriu que a eletricidade anda, e que alguns materiais deixam passar e outros nao. A garrafa de Leiden guardou carga pela primeira vez. E Franklin provou que o raio la de cima e a mesma faisca daqui de baixo.
+
+O que ficou faltando, e esse e o gancho: tudo isso e estalo. Carrega devagar, solta num instante, e acabou. Nao da pra manter aceso, nao da pra regular, nao da pra mandar por um fio de forma continua. Sem fluxo constante nao tem telegrafo, nao tem motor, nao tem circuito, nao tem computador. A eletricidade ja era conhecida e ainda era inutil.
+
+Gancho: no proximo episodio, um italiano empilha discos de dois metais com pano molhado no meio e consegue, pela primeira vez, eletricidade que dura. A pilha de Volta.

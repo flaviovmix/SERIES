@@ -1,0 +1,7 @@
+Titulo: A Roda de Leibniz e a multiplicação
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-06 - Equipamentos 05 - A Roda de Leibniz
+
+Descricao:
+Estes textos apresentam a Roda de Leibniz, uma calculadora mecânica revolucionária que superou as limitações da Pascalina ao introduzir a capacidade de multiplicar de forma eficiente. O equipamento utiliza um tambor escalonado com dentes de diferentes tamanhos para gravar dígitos, permitindo que um número seja registrado uma única vez e somado repetidamente através de uma manivela. O material detalha o funcionamento de um carro deslizante que agiliza cálculos complexos e descreve uma experiência interativa composta por áudio e animações. Além de explicar a mecânica do invento, as fontes destacam seu legado histórico, já que essa tecnologia fundamentou calculadoras mecânicas por três séculos. O conteúdo conecta as contribuições de Leibniz à aritmética binária e prepara o terreno para a evolução da computação com o tear de Jacquard.
+
+Link: https://notebook.google.com/notebook/1fcd9765-8d74-4c96-a9a6-e581a428ae57

@@ -1,0 +1,43 @@
+/* modelo3d
+   A moldura do modelo tridimensional embutido na pagina. Depende de tokens.css.
+
+   O modelo tem paleta propria, de objeto, e nao acompanha o tema do site: e
+   uma peca exposta, nao um pedaco da interface. */
+
+.modelo {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--raio);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.modelo iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 380px;
+  border: 0;
+}
+
+.modelo figcaption {
+  padding: 12px 16px;
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--fonte-mono);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* foto de reserva: entra quando a página abre sem servidor (o modelo ao vivo
+   depende de módulo ES e do three.js de CDN, e file:// recusa os dois) */
+.modelo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 380px;
+  object-fit: contain;
+  background: var(--surface);
+}

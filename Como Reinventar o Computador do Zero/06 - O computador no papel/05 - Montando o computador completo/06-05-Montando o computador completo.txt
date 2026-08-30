@@ -1,0 +1,35 @@
+Inicie dizendo: Montando O Computador Completo
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Montando O Computador Completo.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o quinto e ultimo episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, Turing E A Maquina Universal, cobriu de 1928 a 1936 e terminou com a maquina universal: uma unica maquina que le a tabela de regras escrita na propria fita faz o trabalho de todas as outras.
+
+ESTE EPISODIO COBRE DE 1936 A 1945. Dizer esse intervalo logo na abertura e, no encerramento, dizer em que ano o episodio para.
+
+FOCO: o conjunto de instrucoes e o computador completo. O acumulador (unidade de aritmetica mais celula, somando ou subtraindo sobre o que ja tem). A memoria como fita de celulas de 4 bits com endereco de 4 bits contado do zero. O contador que aponta a proxima celula e soma 1. Os cinco codigos: ADD 1100, SUB 1101, SAVE 0010, LIMP 0011, MPR 1010, com o que cada um faz e o endereco na celula seguinte. Como a maquina le um codigo: relogio, celula da vez, funil de E, OU e NAO, e o que cada codigo dispara; MPR so salta com acumulador em zero. Atencao: a dupla de portas mostrada no exemplo separa ADD de SUB; os outros tres saem do mesmo funil com OUTRAS combinacoes de portas, e nao com essa mesma dupla, porque SAVE e LIMP so se separam pelo ultimo bit. LOAD igual a LIMP mais ADD, GOTO igual a LIMP mais MPR, o programa que conta de 12 ate 0. Hardware e circuito, software e codigo. A maquina e equivalente a de Turing fora a memoria finita, portanto universal. Nada foi ligado ainda. Inspiracao no Intel 8080 e num artigo de Raul Rojas, so de passagem.
+
+FICHA HUMANA: este episodio nao tem protagonista humano, e um episodio de bancada onde o personagem e a maquina inteira. Nao inventar biografia de ninguem. Raul Rojas e o Intel 8080 aparecem so como inspiracao.
+
+NAO explicar Z3, Zuse, Mark I, ENIAC, valvula nem o relatorio de 1945 por dentro: sao a proxima etapa. So citar no fecho que o desenho foi escrito num relatorio em 1945, e no gancho o apartamento em Berlim com 2.600 reles.
+
+A pagina tem 9 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo": sao exatamente 8 pedidos, um por tela, sem juntar duas telas num bloco. Na tela interativa (6), avisar que tem botao na tela. Na tela de pratica (8), convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Montando O Computador Completo.txt. NAO invente analogias novas. A unica autorizada e o funil, pra explicar a decodificacao do codigo.
+
+Use tambem o Overview.txt como contexto curto.

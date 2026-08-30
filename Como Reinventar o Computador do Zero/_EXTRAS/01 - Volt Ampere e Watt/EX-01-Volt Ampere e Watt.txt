@@ -1,0 +1,33 @@
+Inicie dizendo: Volt Ampere e Watt
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Volt Ampere e Watt.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e um episodio avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM: NAO citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. NAO contar de onde veio o nome das unidades nem quem descobriu o que. As unidades entram so como medidas. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado" nem "mais pra frente a gente fala disso". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois.
+
+FOCO: o que significam as medidas da eletricidade, explicado inteiro dentro de UMA analogia, um predio com caixa dagua no telhado. Altura da caixa e o volt, litros por segundo sao o ampere, o cano e o ohm, a mangueira de bico fino que tira lodo da calcada e o watt, os litros do mes sao o quilowatt-hora, e o tamanho da caixa e o mAh da bateria. Fecha com farad, hertz, os prefixos mili/quilo/mega e com os quatro pontos onde a analogia quebra.
+
+A pagina tem 8 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo". Nas telas interativas, avisar que tem botao na tela. Na tela de pratica, convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita no _NotebookLM_Volt Ampere e Watt.txt, que e o predio com caixa dagua. NAO invente analogias novas e NAO troque o pareamento no meio do episodio. Nada de transito, formiga, autoestrada nem exercito.
+
+Use tambem o Overview.txt como contexto curto.

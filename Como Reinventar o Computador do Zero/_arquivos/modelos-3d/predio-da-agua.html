@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Prédio da Água 3D — volt, ampère e watt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+<style>
+  /* tres medidas lado a lado no lugar do numero unico das outras maquinas */
+  .medidas{
+    display:flex; gap:8px; margin-top:10px;
+    border-top:1px dashed var(--line); padding-top:10px;
+  }
+  .medida{
+    flex:1; text-align:center; border:1px solid var(--line); border-radius:10px;
+    padding:6px 4px; background:color-mix(in srgb, var(--bg2) 45%, transparent);
+  }
+  .medida .val{
+    display:block; font-family:'IBM Plex Mono',Consolas,monospace;
+    font-size:20px; font-weight:600; line-height:1.15;
+  }
+  .medida .un{
+    display:block; font-family:'IBM Plex Mono',Consolas,monospace;
+    font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--sub); margin-top:2px;
+  }
+  .medida.zero .val{color:var(--sub); opacity:.45}
+  .barras{display:flex; gap:14px; margin-top:10px; font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--sub)}
+  .barra{flex:1}
+  .barra .trilho{height:6px; margin-top:4px; border-radius:99px; background:var(--bg2); overflow:hidden; border:1px solid var(--line)}
+  .barra .cheio2{height:100%; width:0; border-radius:99px; transition:width .18s linear}
+  .barra.lodo .cheio2{background:#4d6b32}
+  .barra.balde .cheio2{background:#3f88b5}
+  .grupo-btn{display:flex; gap:6px; align-items:center; margin-top:8px}
+  .grupo-btn .btn-mini{flex:1; padding:7px 4px}
+  .rot{
+    font-family:'IBM Plex Mono',Consolas,monospace; font-size:9.5px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--sub); width:38px; flex:none; text-align:right;
+  }
+  @media (max-width:700px){
+    .medida .val{font-size:16px}
+    .medida .un{font-size:8.5px}
+    .barras{font-size:9px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> O PRÉDIO DA ÁGUA</div>
+  <div>EXTRA · VOLT AMPERE E WATT</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">Suba a <b>caixa d'água</b>, escolha o <b>cano</b> e abra o <b>registro</b>. A calçada tem lodo pra tirar.</div>
+
+    <div class="seletor">
+      <span>altura</span>
+      <input type="range" id="slider" min="1" max="10" value="6" step="1">
+      <span class="digito" id="andar">6</span>
+    </div>
+
+    <div class="medidas">
+      <div class="medida" id="mV"><span class="val mono" id="vVolt">132</span><span class="un">volt · pressão</span></div>
+      <div class="medida zero" id="mA"><span class="val mono" id="vAmp">0</span><span class="un">ampère · vazão</span></div>
+      <div class="medida zero" id="mW"><span class="val mono" id="vWatt">0</span><span class="un">watt · trabalho</span></div>
+    </div>
+
+    <div class="barras">
+      <div class="barra lodo"><span>lodo na calçada</span><div class="trilho"><div class="cheio2" id="bLodo" style="width:100%"></div></div></div>
+      <div class="barra balde"><span>balde</span><div class="trilho"><div class="cheio2" id="bBalde"></div></div></div>
+    </div>
+
+    <div class="grupo-btn">
+      <span class="rot">cano</span>
+      <button class="btn-mini" data-cano="fino">fino</button>
+      <button class="btn-mini cheio" data-cano="medio">médio</button>
+      <button class="btn-mini" data-cano="grosso">grosso</button>
+    </div>
+    <div class="grupo-btn">
+      <span class="rot">bico</span>
+      <button class="btn-mini" data-bico="aberto">aberto</button>
+      <button class="btn-mini cheio" data-bico="fino">fino</button>
+    </div>
+
+    <div class="botoes">
+      <button class="btn-mini cheio" id="btnRegistro">abrir o registro</button>
+      <button class="btn-mini" id="btnPressao">só pressão</button>
+      <button class="btn-mini" id="btnDesafio">desafio: limpar</button>
+      <button class="btn-mini" id="btnZerar">zerar</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const slider = document.getElementById('slider');
+const elAndar = document.getElementById('andar');
+const elVolt = document.getElementById('vVolt');
+const elAmp = document.getElementById('vAmp');
+const elWatt = document.getElementById('vWatt');
+const mA = document.getElementById('mA'), mW = document.getElementById('mW');
+const bLodo = document.getElementById('bLodo'), bBalde = document.getElementById('bBalde');
+const btnRegistro = document.getElementById('btnRegistro');
+
+// Enquadramento: o alvo e o centro real da maquina (predio a esquerda, calcada a
+// direita). Quem tira ela de tras do painel lateral e a propria base, que desloca a
+// projecao — nao precisa mais torcer o alvo pra isso. O QA projeta cada peca em
+// pixels e falha se alguma cair atras do painel ou fora da borda.
+const palco = montaPalco({
+  alvo: [1.5, 2.9, 0],
+  camPos: [6.0, 6.4, 15],
+  meiaLarguraDesktop: 5.4,
+  meiaLarguraMobile: 6.0,
+  distMin: 14,
+  orbitaMin: 9,
+});
+const { scene, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+const met = materiais.metal;
+
+// ---------- numeros: a mecanica inteira do modelo ----------
+// A altura da caixa e a tensao (22 V por andar), o cano e a resistencia,
+// e a vazao sai da lei de Ohm. Potencia = tensao x vazao.
+const CANOS = {
+  fino:   { raio: 0.085, ohms: 60 },
+  medio:  { raio: 0.150, ohms: 20 },
+  grosso: { raio: 0.235, ohms: 8 },
+};
+const VOLTS_POR_ANDAR = 22;
+// Andar baixo de proposito: com 0.9 o predio ficava 9 unidades alto e espremia a
+// mecanica do chao (registro, bico, lodo) numa faixa fina atras do HUD.
+const ALTURA_ANDAR = 0.55;
+
+const estado = { andar: 6, cano: 'medio', bico: 'fino', aberto: false, lodo: 1, balde: 0 };
+let desafio = null;   // { t } enquanto o desafio esta rodando
+
+const volts = () => estado.andar * VOLTS_POR_ANDAR;
+const amperes = () => (estado.aberto ? volts() / CANOS[estado.cano].ohms : 0);
+const watts = () => volts() * amperes();
+const trava = (v, a, b) => Math.min(b, Math.max(a, v));
+
+// ---------- materiais ----------
+const mReboco = met(0xdfcda6, { metalness: 0.04, roughness: 0.9 });
+const mFaixa = met(0xc9b083, { metalness: 0.05, roughness: 0.85 });
+const mJanela = met(0x8fa9b6, { metalness: 0.25, roughness: 0.25 });
+const mTanque = met(0x4f7f95, { metalness: 0.15, roughness: 0.55 });
+const mAgua = met(0x3f88b5, { metalness: 0.1, roughness: 0.18, transparent: true, opacity: 0.8 });
+// opacidade 0.34 deixava o cano invisivel e as gotas pareciam soltas no ar
+const mTubo = met(0xbcd3cb, { metalness: 0.12, roughness: 0.14, transparent: true, opacity: 0.55, depthWrite: false });
+const mLodo = met(0x4d6b32, { metalness: 0.0, roughness: 0.95, transparent: true, opacity: 0.9 });
+const mCalcada = met(0xcabfa4, { metalness: 0.03, roughness: 0.95 });
+const mJato = met(0x6fb6dd, { metalness: 0.05, roughness: 0.2, transparent: true, opacity: 0.55, depthWrite: false });
+
+// ---------- predio ----------
+const PREDIO_X = -1.9, PREDIO_L = 3.2, PREDIO_P = 2.2, ANDARES = 10;
+const PREDIO_H = ANDARES * ALTURA_ANDAR;   // 9.0
+
+const predio = bloco(PREDIO_L, PREDIO_H, PREDIO_P, mReboco, 0.06);
+predio.position.set(PREDIO_X, PREDIO_H / 2, 0);
+scene.add(predio);
+
+// laje de cobertura, so pra fechar o topo com uma sombra propria
+const laje = bloco(PREDIO_L + 0.24, 0.18, PREDIO_P + 0.24, mFaixa, 0.05);
+laje.position.set(PREDIO_X, PREDIO_H + 0.09, 0);
+scene.add(laje);
+
+// janelas: 3 por andar na fachada da frente, 2 na lateral direita.
+// Sao a regua de altura da caixa — cada fileira e um andar.
+const geoJanela = new THREE.BoxGeometry(0.5, 0.3, 0.05);
+for (let a = 0; a < ANDARES; a++) {
+  const y = a * ALTURA_ANDAR + ALTURA_ANDAR / 2;
+  for (const dx of [-0.95, 0, 0.95]) {
+    const j = new THREE.Mesh(geoJanela, mJanela);
+    j.position.set(PREDIO_X + dx, y, PREDIO_P / 2 + 0.01);
+    scene.add(j);
+  }
+  for (const dz of [-0.6, 0.6]) {
+    const j = new THREE.Mesh(geoJanela, mJanela);
+    j.rotation.y = Math.PI / 2;
+    j.position.set(PREDIO_X + PREDIO_L / 2 + 0.01, y, dz);
+    scene.add(j);
+  }
+}
+
+// calcada + meio-fio, onde mora o lodo
+const calcada = bloco(7.4, 0.12, 3.6, mCalcada, 0.03);
+calcada.position.set(3.5, 0.06, 0);
+scene.add(calcada);
+
+// ---------- mastro e caixa d'agua ----------
+const CANO_X = 0.55;          // eixo do cano vertical (encostado na lateral do predio)
+const CANO_Y_BAIXO = 0.62;    // altura do cano horizontal
+const BICO_X = 4.05;
+
+// Angulo do jato: com rotation.z = A, o eixo local +Y vira (-sin A, cos A).
+// Pra apontar pra baixo e pra direita (o lodo esta la), A e negativo.
+const ANG_JATO = -Math.PI * 0.60;
+const EIXO_JATO = new THREE.Vector2(-Math.sin(ANG_JATO), Math.cos(ANG_JATO)); // (0.951, -0.309)
+
+const mastro = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, PREDIO_H + 1.7, 12), materiais.latao);
+mastro.position.set(CANO_X, (PREDIO_H + 1.7) / 2, -0.35);
+mastro.castShadow = true;
+scene.add(mastro);
+
+const caixa = new THREE.Group();
+scene.add(caixa);
+const TANQUE_L = 1.5, TANQUE_A = 1.0, TANQUE_P = 1.3;
+// casco translucido: o nivel de agua dentro e que conta a historia da pressao
+mTanque.transparent = true; mTanque.opacity = 0.55; mTanque.depthWrite = false;
+const casco = bloco(TANQUE_L, TANQUE_A, TANQUE_P, mTanque, 0.12);
+caixa.add(casco);
+const aguaTanque = bloco(TANQUE_L - 0.16, TANQUE_A - 0.3, TANQUE_P - 0.16, mAgua, 0.06);
+aguaTanque.position.y = -0.09;
+caixa.add(aguaTanque);
+const tampa = bloco(TANQUE_L + 0.1, 0.09, TANQUE_P + 0.1, materiais.latao, 0.04);
+tampa.position.y = TANQUE_A / 2 + 0.045;
+caixa.add(tampa);
+// sapata que abraca o mastro, pra caixa nao parecer flutuando
+const sapata = bloco(0.34, 0.34, 0.9, materiais.latao, 0.06);
+sapata.position.set(0, -TANQUE_A / 2 - 0.1, -0.35);
+caixa.add(sapata);
+
+const rotCaixa = criaRotulo("caixa d'água = pressão", 1.05);
+scene.add(rotCaixa);
+
+// ---------- canos ----------
+// Cilindros de raio 1 escalados: trocar de cano e so mexer no scale, sem recriar geometria.
+const geoTuboUn = new THREE.CylinderGeometry(1, 1, 1, 24, 1, true);
+
+const tuboV = new THREE.Mesh(geoTuboUn, mTubo);
+tuboV.position.x = CANO_X;
+scene.add(tuboV);
+
+const tuboH = new THREE.Mesh(geoTuboUn, mTubo);
+tuboH.rotation.z = Math.PI / 2;
+tuboH.position.set((CANO_X + BICO_X) / 2, CANO_Y_BAIXO, 0);
+scene.add(tuboH);
+
+// cotovelo e flanges de latao: dao a leitura de "cano de verdade" e escondem as emendas
+const cotovelo = new THREE.Mesh(new THREE.SphereGeometry(1, 20, 14), materiais.latao);
+cotovelo.position.set(CANO_X, CANO_Y_BAIXO, 0);
+cotovelo.castShadow = true;
+scene.add(cotovelo);
+
+// registro: roda de latao no cano horizontal, bem pra direita pra sair de tras do HUD
+const REGISTRO_X = 3.25;
+const registro = new THREE.Group();
+registro.position.set(REGISTRO_X, CANO_Y_BAIXO, 0);
+scene.add(registro);
+const corpoReg = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 0.42, 16), materiais.latao);
+corpoReg.rotation.z = Math.PI / 2;
+corpoReg.castShadow = true;
+registro.add(corpoReg);
+const haste = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 0.42, 10), materiais.latao);
+haste.position.y = 0.21;
+registro.add(haste);
+const volante = new THREE.Group();
+volante.position.y = 0.44;
+registro.add(volante);
+const aroReg = new THREE.Mesh(new THREE.TorusGeometry(0.26, 0.045, 10, 24), materiais.latao);
+aroReg.rotation.x = Math.PI / 2;
+aroReg.castShadow = true;
+volante.add(aroReg);
+for (let i = 0; i < 4; i++) {
+  const raio = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.04, 0.05), materiais.latao);
+  raio.rotation.y = (i * Math.PI) / 4;
+  volante.add(raio);
+}
+const rotRegistro = criaRotulo('registro = interruptor', 1.0);
+rotRegistro.position.set(REGISTRO_X + 0.9, CANO_Y_BAIXO + 1.25, 0);
+scene.add(rotRegistro);
+
+// bico: cone curto na ponta, apontando pra calcada (ponta fina no +Y local)
+const bico = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.19, 0.5, 16), materiais.latao);
+bico.position.set(BICO_X + EIXO_JATO.x * 0.22, CANO_Y_BAIXO + EIXO_JATO.y * 0.22, 0);
+bico.rotation.z = ANG_JATO;
+bico.castShadow = true;
+scene.add(bico);
+const rotBico = criaRotulo('bico = watt', 0.95);
+rotBico.position.set(BICO_X + 1.3, CANO_Y_BAIXO + 0.55, 0);
+scene.add(rotBico);
+
+// ---------- gotas dentro do cano ----------
+// Uma so fila de gotas percorre o caminho inteiro (desce e vira pro bico).
+// O parametro s anda ao longo do comprimento total; a posicao sai dele.
+const N_GOTAS = 16;
+const geoGota = new THREE.SphereGeometry(1, 10, 8);
+const gotas = [];
+for (let i = 0; i < N_GOTAS; i++) {
+  const g = new THREE.Mesh(geoGota, mAgua);
+  g.userData.s = i / N_GOTAS;
+  scene.add(g);
+  gotas.push(g);
+}
+
+// ---------- jato, respingo, lodo e balde ----------
+// O jato sai da ponta do bico e vai ate a calcada: o comprimento nao e "chute
+// vezes forca", e a distancia real ate o chao. A potencia mexe na grossura e na
+// opacidade — assim ele nunca para no ar nem atravessa o piso.
+const Y_CALCADA = 0.14;
+const PONTA = new THREE.Vector2(BICO_X + EIXO_JATO.x * 0.5, CANO_Y_BAIXO + EIXO_JATO.y * 0.5);
+const COMP_JATO = (PONTA.y - Y_CALCADA) / -EIXO_JATO.y;
+const IMPACTO_X = PONTA.x + EIXO_JATO.x * COMP_JATO;
+
+const jato = new THREE.Mesh(new THREE.CylinderGeometry(1, 0.55, 1, 12, 1, true), mJato);
+jato.rotation.z = ANG_JATO;
+jato.position.set(PONTA.x + EIXO_JATO.x * COMP_JATO / 2, PONTA.y + EIXO_JATO.y * COMP_JATO / 2, 0);
+scene.add(jato);
+
+const respingo = new THREE.Mesh(new THREE.TorusGeometry(0.3, 0.05, 8, 20), mJato);
+respingo.rotation.x = -Math.PI / 2;
+respingo.position.set(IMPACTO_X, Y_CALCADA + 0.02, 0);
+scene.add(respingo);
+
+const lodo = new THREE.Mesh(new THREE.CylinderGeometry(0.92, 0.92, 0.03, 28), mLodo);
+lodo.position.set(IMPACTO_X, Y_CALCADA + 0.005, 0);
+lodo.receiveShadow = true;
+scene.add(lodo);
+
+const balde = new THREE.Group();
+balde.position.set(3.6, 0.12, 1.35);
+scene.add(balde);
+const cascoBalde = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.27, 0.6, 20, 1, true), materiais.latao);
+cascoBalde.position.y = 0.3;
+cascoBalde.castShadow = true;
+cascoBalde.material = materiais.latao.clone();
+cascoBalde.material.side = THREE.DoubleSide;
+balde.add(cascoBalde);
+const aguaBalde = new THREE.Mesh(new THREE.CylinderGeometry(0.31, 0.26, 1, 20), mAgua);
+balde.add(aguaBalde);
+
+// ---------- estado -> cena ----------
+function yBaseCaixa() { return estado.andar * ALTURA_ANDAR + 0.28; }
+
+function aplicaGeometria() {
+  const r = CANOS[estado.cano].raio;
+  const yb = yBaseCaixa();
+
+  caixa.position.set(CANO_X, yb + TANQUE_A / 2 + 0.22, -0.35 + TANQUE_P / 2 - 0.15);
+  // rotulo pra direita: pra esquerda ele cai por cima da fachada e some atras dela
+  rotCaixa.position.set(CANO_X + 1.95, caixa.position.y + 0.1, 0.35);
+
+  const compV = yb - CANO_Y_BAIXO;
+  tuboV.scale.set(r, compV, r);
+  tuboV.position.y = CANO_Y_BAIXO + compV / 2;
+
+  const compH = BICO_X - CANO_X;
+  tuboH.scale.set(r, compH, r);
+
+  cotovelo.scale.setScalar(r * 1.18);
+}
+
+function atualizaHud() {
+  const V = volts(), A = amperes(), W = watts();
+  elAndar.textContent = estado.andar;
+  elVolt.textContent = Math.round(V);
+  elAmp.textContent = A ? A.toFixed(1) : '0';
+  elWatt.textContent = W >= 1000 ? (W / 1000).toFixed(1) + 'k' : Math.round(W);
+  mA.classList.toggle('zero', A === 0);
+  mW.classList.toggle('zero', W === 0);
+  bLodo.style.width = (estado.lodo * 100).toFixed(1) + '%';
+  bBalde.style.width = (estado.balde * 100).toFixed(1) + '%';
+  btnRegistro.textContent = estado.aberto ? 'fechar o registro' : 'abrir o registro';
+  btnRegistro.classList.toggle('cheio', !estado.aberto);
+  document.querySelectorAll('[data-cano]').forEach((b) => b.classList.toggle('cheio', b.dataset.cano === estado.cano));
+  document.querySelectorAll('[data-bico]').forEach((b) => b.classList.toggle('cheio', b.dataset.bico === estado.bico));
+}
+
+function diz(txt, ok = false) {
+  legenda.innerHTML = txt;
+  legenda.classList.toggle('ok', ok);
+}
+
+// ---------- acoes ----------
+function setAndar(n) {
+  estado.andar = trava(Math.round(n), 1, 10);
+  slider.value = estado.andar;
+  aplicaGeometria(); atualizaHud();
+  if (!estado.aberto) diz(`Caixa no <b>${estado.andar}º andar</b>: ${volts()} volts de pressão parados no cano. Com o registro fechado a vazão é zero, e a pressão continua lá.`);
+  else diz(`Subiu a caixa: mais pressão empurrando pelo mesmo cano, então passa <b>mais água</b>.`);
+}
+function setCano(k) {
+  if (!CANOS[k]) return;
+  estado.cano = k;
+  aplicaGeometria(); atualizaHud();
+  const nome = { fino: 'fino', medio: 'médio', grosso: 'grosso' }[k];
+  diz(`Cano <b>${nome}</b>: ${CANOS[k].ohms} ohms de atrapalho. Mesma pressão, o cano é que decide quanta água passa.`);
+}
+function setBico(k) {
+  estado.bico = k;
+  atualizaHud();
+  diz(k === 'fino'
+    ? 'Bico <b>fino</b>: mesma potência concentrada num jato violento. É o que risca o lodo.'
+    : 'Bico <b>aberto</b>: a mesma potência sai mansa e espalhada. Enche o balde rápido e não tira o lodo.');
+}
+function setRegistro(v) {
+  estado.aberto = v;
+  atualizaHud();
+  diz(v ? `Registro aberto: agora tem <b>vazão</b>. ${volts()} volts empurrando por ${CANOS[estado.cano].ohms} ohms.`
+        : `Registro fechado: vazão zero, mas o cano continua cheio e sob <b>${volts()} volts</b> de pressão. É a tomada sem nada plugado.`);
+}
+
+btnRegistro.addEventListener('click', () => setRegistro(!estado.aberto));
+slider.addEventListener('input', () => setAndar(+slider.value));
+document.querySelectorAll('[data-cano]').forEach((b) => b.addEventListener('click', () => setCano(b.dataset.cano)));
+document.querySelectorAll('[data-bico]').forEach((b) => b.addEventListener('click', () => setBico(b.dataset.bico)));
+
+document.getElementById('btnPressao').addEventListener('click', () => {
+  desafio = null;
+  setAndar(10); setRegistro(false);
+  diz('Caixa no alto, cano cheio, <b>220 volts</b> de pressão, e nada acontecendo. Pressão não é o mesmo que corrente: sem caminho aberto, a vazão é zero.');
+});
+
+document.getElementById('btnDesafio').addEventListener('click', () => {
+  estado.lodo = 1; estado.balde = 0;
+  setRegistro(false);
+  desafio = { t: 0 };
+  atualizaHud();
+  diz('<b>Desafio:</b> tire todo o lodo da calçada. Escolha altura, cano e bico, e abra o registro.');
+});
+
+document.getElementById('btnZerar').addEventListener('click', () => {
+  desafio = null;
+  estado.lodo = 1; estado.balde = 0;
+  setAndar(6); setCano('medio'); setBico('fino'); setRegistro(false);
+  diz("Suba a <b>caixa d'água</b>, escolha o <b>cano</b> e abra o <b>registro</b>. A calçada tem lodo pra tirar.");
+});
+
+// clique direto nas pecas: o registro e o bico respondem sem passar pelo HUD
+aoClicar([corpoReg, aroReg, bico, casco], (hit) => {
+  if (hit.object === bico) setBico(estado.bico === 'fino' ? 'aberto' : 'fino');
+  else if (hit.object === casco) setAndar(estado.andar >= 10 ? 1 : estado.andar + 1);
+  else setRegistro(!estado.aberto);
+});
+
+// ---------- loop ----------
+let giroVolante = 0;
+aplicaGeometria(); atualizaHud();
+
+inicia((dt) => {
+  const V = volts(), A = amperes(), W = watts();
+  const r = CANOS[estado.cano].raio;
+  const yb = yBaseCaixa();
+  const compV = yb - CANO_Y_BAIXO;
+  const compH = BICO_X - CANO_X;
+  const total = compV + compH;
+
+  // gotas: andam so quando ha vazao; paradas, mostram o cano cheio
+  const vel = A * 0.055;
+  for (const g of gotas) {
+    g.userData.s = (g.userData.s + (vel * dt) / total) % 1;
+    const d = g.userData.s * total;
+    if (d < compV) g.position.set(CANO_X, yb - d, 0);
+    else g.position.set(CANO_X + (d - compV), CANO_Y_BAIXO, 0);
+    g.scale.setScalar(r * 0.58);
+  }
+
+  // volante gira enquanto esta aberto (so pra dar vida ao registro)
+  if (estado.aberto) { giroVolante += dt * 1.2; volante.rotation.y = giroVolante; }
+
+  // jato: o caminho e fixo (bico -> calcada); potencia e bico mexem em grossura e opacidade
+  const forca = trava(W / 6000, 0, 1);
+  if (W > 0) {
+    const raioBase = estado.bico === 'fino' ? 0.055 : 0.2;
+    const g = raioBase * (0.55 + forca * 0.75);
+    jato.visible = true;
+    jato.scale.set(g, COMP_JATO, g);
+    jato.material.opacity = 0.25 + forca * 0.45;
+    respingo.visible = true;
+    respingo.scale.setScalar(0.45 + forca * 1.15);
+    respingo.material.opacity = 0.15 + forca * 0.3;
+  } else {
+    jato.visible = false;
+    respingo.visible = false;
+  }
+
+  // trabalho: potencia acima do minimo tira lodo (bico fino) ou enche balde (bico aberto)
+  const util = Math.max(0, W - 400);
+  if (estado.bico === 'fino') {
+    estado.lodo = trava(estado.lodo - (util / 9000) * dt, 0, 1);
+    estado.balde = trava(estado.balde + (W / 40000) * dt, 0, 1);
+  } else {
+    estado.balde = trava(estado.balde + (W / 9000) * dt, 0, 1);
+    estado.lodo = trava(estado.lodo - (util / 90000) * dt, 0, 1);
+  }
+
+  lodo.visible = estado.lodo > 0.002;
+  lodo.scale.setScalar(0.35 + estado.lodo * 0.65);
+  lodo.material.opacity = 0.25 + estado.lodo * 0.65;
+  aguaBalde.scale.y = Math.max(0.001, estado.balde * 0.55);
+  aguaBalde.position.y = (estado.balde * 0.55) / 2 + 0.02;
+  aguaBalde.visible = estado.balde > 0.004;
+
+  if (desafio) {
+    desafio.t += dt;
+    if (estado.lodo <= 0.002) {
+      const seg = desafio.t.toFixed(1);
+      desafio = null;
+      diz(`Calçada limpa em <b>${seg}s</b>, com ${Math.round(W)} watts. Potência é pressão vezes vazão: precisa das duas.`, true);
+    } else if (estado.aberto && W > 0 && desafio.t > 6 && estado.lodo > 0.7) {
+      diz('Está saindo água, e o lodo mal saiu do lugar. Falta <b>watt</b>: ou sobe a caixa, ou abre o cano, ou os dois.');
+    }
+  }
+
+  atualizaHud();
+});
+
+// gancho de QA
+window.__predio = {
+  estado,
+  setAndar, setCano, setBico, setRegistro,
+  volts, amperes, watts,
+  cam: () => ({
+    pos: palco.camera.position.toArray().map((n) => +n.toFixed(2)),
+    alvo: palco.controls.target.toArray(),
+    dist: +palco.camera.position.distanceTo(palco.controls.target).toFixed(2),
+    fov: palco.camera.fov,
+    aspect: +palco.camera.aspect.toFixed(3),
+  }),
+  // onde cada peca cai na tela, em pixels — e o que deixa o QA provar que nenhuma
+  // delas ficou escondida atras do HUD (foi assim que o defeito apareceu)
+  pixels() {
+    const pecas = {
+      caixa: caixa.position, registro: registro.position,
+      bico: bico.position, lodo: lodo.position, balde: balde.position,
+      rotCaixa: rotCaixa.position, rotRegistro: rotRegistro.position, rotBico: rotBico.position,
+    };
+    const r = palco.renderer.domElement.getBoundingClientRect();
+    const v = new THREE.Vector3();
+    const saida = {};
+    for (const [nome, pos] of Object.entries(pecas)) {
+      v.copy(pos).project(palco.camera);
+      saida[nome] = [
+        Math.round(r.left + (v.x * 0.5 + 0.5) * r.width),
+        Math.round(r.top + (0.5 - v.y * 0.5) * r.height),
+      ];
+    }
+    return saida;
+  },
+  // screenshot deterministico: trava o autoRotate e poe a camera num ponto fixo
+  vista(x = 6.5, y = 7.0, z = 14) {
+    palco.controls.autoRotate = false;
+    palco.camera.position.set(x, y, z);
+    palco.controls.update();
+    redimensiona();
+  },
+  desafio: () => document.getElementById('btnDesafio').click(),
+  zerar: () => document.getElementById('btnZerar').click(),
+  soPressao: () => document.getElementById('btnPressao').click(),
+  limpo: () => estado.lodo <= 0.002,
+};
+
+document.fonts.ready.then(() => { aplicaGeometria(); redimensiona(); });
+</script>
+</body>
+</html>

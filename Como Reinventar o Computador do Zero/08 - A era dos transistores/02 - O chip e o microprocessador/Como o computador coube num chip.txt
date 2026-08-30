@@ -1,0 +1,7 @@
+Titulo: Como o computador coube num chip
+Notebook: 08-02-O chip e o microprocessador
+
+Descricao:
+Os documentos narram a evolução tecnológica entre 1958 e 1971, detalhando a transição fundamental dos transistores individuais para o surgimento do microprocessador. O texto explica como o circuito integrado surgiu para solucionar a "tirania dos números", eliminando a necessidade de milhares de soldas manuais que tornavam os computadores antigos propensos a falhas. As fontes destacam as contribuições de Jack Kilby, que criou o primeiro chip de germânio, e de Robert Noyce, que desenvolveu o processo monolítico de fabricação que permitiu a produção em larga escala. É apresentada a importância da fotolitografia e do transistor MOS como motores da Lei de Moore, reduzindo custos enquanto aumentava a densidade de componentes. O relato culmina no lançamento do Intel 4004 em 1971, o primeiro processador a condensar toda a arquitetura de um computador em uma pequena lâmina de silício. Por fim, o material contextualiza como essa miniaturização extrema pavimentou o caminho para a futura revolução da computação pessoal.
+
+Link: https://notebook.google.com/notebook/7620b6ec-e9f3-44d3-b692-862d320983d6

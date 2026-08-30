@@ -1,0 +1,1780 @@
+[000.0] Imagina que você é mais uma das vítimas das viagens no tempo acidentais
+[000.1] e acabou voltando para uma época anterior às grandes descobertas da ciência.
+[000.2] Ou talvez você seja um dos poucos sobreviventes de um apocalipse
+[000.2] que destruiu toda a tecnologia da Terra.
+[000.3] E já que você não pode voltar para o mundo que você vivia,
+[000.3] sua única opção vai ser recriar o mundo moderno.
+[000.4] Se você vai encarar esse desafio sozinho,
+[000.4] a melhor estratégia é desenvolver primeiro uma ferramenta
+[000.5] que te ajude a recriar todas as outras.
+[000.5] Uma que acelere o desenvolvimento da tecnologia e do conhecimento humano.
+[000.6] Sim, acho que é melhor a gente começar com a ferramenta mais poderosa já criada.
+[000.7] Está na hora de reinventar o computador do zero.
+[000.8] Nós vamos fazer uma viagem por 2.500 anos de história,
+[000.9] passando por gênios incompreendidos, questionamentos filosóficos,
+[001.0] experimentos fracassados e invenções mirabolantes.
+[001.0] Também vamos olhar para as partes físicas mais fundamentais de um computador
+[001.1] e entender como elas se combinam.
+[001.1] Para gerar funções tão inteligentes, a ponto de revolucionar a civilização humana.
+[001.2] Mas...
+[001.2] O que é mesmo um computador?
+[001.3] E foi por causa dessa segunda invenção de Pascal
+[001.3] que o Papa resolveu trocar o nome de feriado para...
+[001.4] Trocar o nome?
+[001.4] Trocou o nome do feriado para Páscoa.
+[001.4] Era nada mais, nada menos que Alan Turing.
+[001.5] Alan Turing na rua?
+[001.5] Alan Turing, o pai da ciência da computação, tá valendo?
+[001.6] Deixa que eu passo.
+[001.6] Não!
+[001.6] Espera aí que eu preciso conferir essa coisa.
+[001.6] Eu não tenho conta.
+[001.6] Usando isso aqui.
+[001.7] Pedras e madeira.
+[001.7] Junte tudo isso e você tem um ábaco.
+[001.8] Ele é um instrumento de contagem inventado provavelmente na Mesopotâmia
+[001.8] há uns 5.500 anos para permitir a execução de cálculos aritméticos
+[001.9] de forma rápida e mecânica.
+[002.0] A gente comeu dois pratos de 24.
+[002.0] Então eu vou precisar multiplicar duas vezes 24 aqui.
+[002.0] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.1] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.1] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.1] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.1] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.1] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.1] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.2] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.2] No ábaco, com multiplicação, ele funciona de forma espelhada, sendo que essa parte vai apresentar um número que dá 24.
+[002.2] primeiro passar duas pedras pra cá e depois começar a contar 24 dessas aqui.
+[002.3] Uma, duas, três, quatro, cinco, seis, dez. Agora eu troco por uma de cima. Três, quatro, cinco, seis, sete, uma, duas, três,
+[002.5] pronto, vinte e quatro. Agora eu troco e agora eu preciso fazer de novo. De novo? Uma, duas, três, quatro, cinco, quarenta e oito.
+[002.8] Tá certo, então.
+[002.9] É interessante notar como o Abaco dá pra gente algumas pistas de como algo abstrato, como a multiplicação, pode ser representado no mundo físico.
+[003.1] Afinal, ele é um dos primeiros numa linha de instrumentos de contagem que eventualmente levou ao computador que você usa.
+[003.2] Só que por mais prático.
+[003.2] O que ele seja, o Abaco ainda exige que alguém passe as pedrinhas manualmente de um lado pro outro.
+[003.3] Na Renascença, alguns novos dispositivos tentaram resolver ou melhorar essa inconveniência, mas nenhum teve sucesso absoluto até 1642,
+[003.5] quando um jovem de 19 anos foi obrigado pelo pai a ajudar com o monótono trabalho de supervisionar a coleta de impostos de uma cidade francesa.
+[003.6] Ele ficou muito entediado com a natureza repetitiva da tarefa.
+[003.7] E aí, é claro que, como qualquer um de nós, ele foi lá e inventou a primeira calculadora mecânica,
+[003.8] que era capaz de executar somas, subtrações, multiplicações e divisões, tudo automaticamente, apenas com a ajuda de algumas viradinhas de manivela.
+[003.9] O nome desse jovem era Blaise Pascal, que mais tarde, inclusive, faria outras contribuições tão importantes quanto essa pra matemática, física e filosofia.
+[004.1] O funcionamento da calculadora de Pascal é bem impressionante.
+[004.2] Mas, no fundo, a gente ainda tá falando apenas...
+[004.2] da manipulação de números!
+[004.2] Não parece razoável que alguma quantidade de engrenagens, mecanismos, engenhocas...
+[004.3] conseguisse, por exemplo, rodar um jogo de videogame?
+[004.4] Certo?
+[004.4] Em 1843, Adalove Lassie publicou em francês a tradução de um artigo científico sobre o projeto de uma nova máquina de calcular.
+[004.5] Usando engrenagens, dispositivos e manivelas,
+[004.6] a máquina seria capaz de manipular palavras,
+[004.6] lógica,
+[004.6] música
+[004.7] música e qualquer outra coisa que precise de símbolos para ser transmitida.
+[004.7] Sentindo-se um pouco insegura de publicar suas ideias em um artigo próprio,
+[004.8] Ada resolveu adicioná-las apenas como notas da tradutora.
+[004.9] Anos depois, os comentários da Ada acabariam se tornando muito mais famosos e importantes que o artigo em si,
+[004.9] que só é sequer lembrado por causa dela.
+[005.0] Charles Babbage, o criador dessa máquina maravilhosa,
+[005.1] havia impressionado a Condessa anos antes com a demonstração de sua invenção anterior,
+[005.1] uma máquina de calcular funções que Babbage projetou por inteira,
+[005.2] mas só conseguiu construir parcialmente por falta de fundos.
+[005.2] O governo britânico, que financiou o projeto inicialmente,
+[005.3] começou a desconfiar da capacidade de Babbage de finalizar sua invenção.
+[005.4] Em resposta, ele decidiu criar planos de uma máquina ainda mais complicada e ambiciosa,
+[005.4] a máquina analítica.
+[005.5] Babbage havia se inspirado no tear de jacar,
+[005.6] uma máquina inventada em 1800 que conseguia ler papéis furados
+[005.6] e costurar padrões em fios dinâmicos.
+[005.7] A máquina poderia ser programada de acordo com esses furos.
+[005.7] Assim como o tear, a nova geringonça de Babbage seria capaz de alterar o seu funcionamento
+[005.8] para executar qualquer tarefa sonhada pelo seu usuário.
+[005.8] Ou seja, a máquina poderia ser programada assim como os computadores modernos.
+[005.9] Nos seus comentários, Ada adicionou a sequência de instruções
+[006.0] que permitiria à máquina analítica calcular números de Bernoulli.
+[006.0] Isso fez dela a programadora do primeiro código de computador publicado da história.
+[006.1] Ela, que era filha do famoso poeta Lorde,
+[006.2] e talvez tenha herdado parte da inclinação romântica do pai,
+[006.2] concluiu
+[006.2] Hoje nós sabemos que a Ada estava certa
+[006.4] e que a máquina analítica era realmente diferente de todos os outros instrumentos de contagem já feitos.
+[006.5] A invenção de Babbage acabou nunca sendo construída durante sua vida.
+[006.6] Mas os planos eram detalhados o suficiente para a gente saber
+[006.6] que se ela tivesse sido construída naquela época,
+[006.7] ela teria sido o primeiro computador universal.
+[006.7] Isso quer dizer que, descontando ali a lentidão e a memória que seria bem limitada,
+[006.8] mesmo assim ela seria capaz de executar qualquer programa de computador.
+[006.9] Isso traz algumas perguntas importantes.
+[007.0] O que diferencia o computador de Babbage do Abaco?
+[007.0] E se algo mudou que permitiu com que aquelas calculadoras mecânicas
+[007.1] se tornassem tão gerais quanto os computadores modernos,
+[007.1] o que foi que mudou?
+[007.1] E como que esse simples movimento...
+[007.2] esse movimento de peças conseguiria dar vida a toda a complexidade e a inteligência
+[007.2] que a gente nota nos computadores que a gente usa?
+[007.3] Eu tive perguntas parecidas com essa por bastante tempo.
+[007.3] Desde criança eu tinha aprendido a abrir o computador,
+[007.4] olhar o que tinha dentro, trocar alguma peça ou outra,
+[007.4] ou limpar algo que precisasse ser limpado.
+[007.5] E tinham me falado que o processador era essa parte super inteligente,
+[007.5] era o cérebro do computador.
+[007.6] E que de algum jeito, usando eletricidade,
+[007.6] ele conseguia processar qualquer código que alguém escrevesse.
+[007.7] Mas eu nunca entendi de verdade como que isso era possível.
+[007.7] E como que aqueles uns e zeros que me falaram tanto
+[007.8] se manifestam de fato no mundo físico?
+[007.8] No resto desse vídeo, a gente vai perseguir justamente essas perguntas
+[007.9] que moram bem no coração do que é um computador.
+[007.9] E a primeira dessas pistas vai nos levar a investigar um instrumento um tanto diferente.
+[008.0] A racionalidade humana.
+[008.0] Como é que a gente faz pra saber se algo que alguém te disse por si só
+[008.1] tá certo ou errado?
+[008.2] Por volta de 350 anos antes de Cristo,
+[008.2] Aristóteles, tentando responder essa mesma pergunta,
+[008.3] criou a lógica, a disciplina que separa o discurso correto do discurso incorreto.
+[008.3] O Aristóteles é considerado o pai da lógica,
+[008.4] mas isso não significa que as pessoas eram irracionais antes dele aparecer.
+[008.5] Na própria Grécia, 200 anos antes de Aristóteles nascer,
+[008.5] o Tales já escrevia argumentos matemáticos sobre o mundo da geometria plana.
+[008.6] E alguns anos antes de Aristóteles começar o seu trabalho,
+[008.6] Platão já falava sobre usar os mesmos métodos que os matemáticos
+[008.7] pra investigar questões de matemática.
+[008.7] De qualquer forma, até onde a gente sabe,
+[008.8] o Aristóteles foi a primeira pessoa a tentar entender quais são as pequenas peças
+[008.8] e engrenagens da racionalidade humana.
+[008.9] Não só isso, mas também tentar sistematizar a forma como essas partes
+[008.9] se combinam no discurso e no pensamento.
+[009.0] Aristóteles estudava argumentos como esse aqui.
+[009.1] Todo homem é mortal.
+[009.1] Sócrates é um homem.
+[009.1] Portanto, Sócrates é mortal.
+[009.2] Bom, se for mesmo verdade que todo homem é mortal,
+[009.3] Sócrates é um homem, é inescapável que Sócrates é mortal.
+[009.3] Mas Aristóteles fez mais do que simplesmente listar argumentos corretos.
+[009.4] Substituindo as particularidades por uma letra,
+[009.4] ele conseguiu observar as particularidades por trás de cada argumento.
+[009.5] A gente pode trocar o XYZ por qualquer outra coisa.
+[009.6] E se as duas primeiras frases forem verdade,
+[009.6] a terceira não tem outra escolha, se não ser verdade também.
+[009.7] Anos depois, outras pessoas contribuíram com o projeto de Aristóteles
+[009.8] pra contemplar outros tipos de problemas,
+[009.8] incluindo alguns mais práticos e realistas.
+[009.9] Imagine que você quer, pra ser apresentador do seu novo canal no YouTube,
+[009.9] contratar um Lobo-Guará.
+[010.0] Mas, evidentemente, não pode ser qualquer Lobo-Guará.
+[010.0] Você teria alguns requisitos profissionais.
+[010.1] Ele teria que ser qualificado de certas formas.
+[010.1] Por exemplo,
+[010.1] O Lobo-Guará deve morar em São Paulo, saber falar latim, ou saber cálculo 3,
+[010.2] ou o Lobo-Guará deve saber japonês, morar em qualquer lugar, menos no Rio de Janeiro,
+[010.2] e saber aljubanear.
+[010.2] Ou qualquer Lobo-Guará que se candidate, desde que ele saiba dançar.
+[010.2] A frase complicadona com os requisitos que a gente tem pra contratar esse Lobo-Guará,
+[010.3] são feitos da combinação dessas sete frases aqui.
+[010.4] O Lobo-Guará sabe falar latim, sabe falar japonês, sabe cálculo 3, sabe álgebra linear,
+[010.5] mora em São Paulo, mora no Rio de Janeiro, sabe dançar.
+[010.6] Da mesma forma que antes nós usamos símbolos pra representar proposições,
+[010.7] nós vamos escolher uma letra pra representar cada um desses requisitos.
+[010.7] No caso, o L vai representar sabe falar latim,
+[010.8] o J, sabe falar japonês,
+[010.8] o C, sabe cálculo 3,
+[010.8] o A, sabe álgebra linear,
+[010.8] o P, vai representar que mora em São Paulo,
+[010.8] o R, mora no Rio de Janeiro,
+[010.8] e por último, o D,
+[010.9] sabe dançar.
+[010.9] Usando cada um desses símbolos, nós podemos reconstruir toda aquela frase complicada
+[011.0] e cada uma das afirmações que tinha ali dentro.
+[011.0] O Lobo-Guará mora em São Paulo,
+[011.1] E, sabe falar latim,
+[011.1] O, sabe cálculo 3,
+[011.1] O, não mora no Rio de Janeiro,
+[011.2] E, sabe falar japonês,
+[011.2] E, sabe álgebra linear,
+[011.2] O, ele sabe dançar.
+[011.3] Escrevendo essa frase assim, nós conseguimos notar que o E, o OU e o NÃO,
+[011.4] eles têm certas funções especiais,
+[011.4] que aparecem de novo e de novo na língua.
+[011.4] Elas servem para combinar proposições lógicas simples, como as que nós vimos,
+[011.5] em proposições lógicas cada vez mais e mais complexas.
+[011.6] As regras pelas quais elas fazem essa combinação,
+[011.6] seguem o que a gente já entende intuitivamente da língua.
+[011.7] Por exemplo,
+[011.7] Suponha que um dos seus candidatos se chame NÁ,
+[011.7] e envie no currículo essa declaração.
+[011.8] Ahem.
+[011.8] Sou um Lobo-Guará paulista,
+[011.8] não sei cálculo 3,
+[011.9] sei falar latim,
+[011.9] não sei falar japonês,
+[011.9] sei álgebra linear
+[011.9] e não sei dançar.
+[012.0] E aí, ele vai ser contratado?
+[012.0] Baseado nas autodeclarações do Lobo-Guará na,
+[012.1] podemos verificar se cada uma das proposições que mencionamos
+[012.1] é verdadeira ou falsa.
+[012.2] Vamos lá.
+[012.2] P,
+[012.2] é verdadeira,
+[012.2] L,
+[012.2] é verdadeira,
+[012.3] e D,
+[012.3] é falsa.
+[012.4] Como pra gente, o que interessa mesmo, é,
+[012.4] como pra gente, o que interessa mesmo, é,
+[012.4] é o resultado final, se a expressão toda é verdadeira ou falsa,
+[012.5] a gente não precisa preservar essas letras.
+[012.5] A gente pode ir trocando elas por V e F conforme elas forem verdadeiras ou falsas.
+[012.6] E aí depois no resultado a gente vai ter a nossa resposta final.
+[012.6] O que é que a nossa intuição diz sobre combinar frases verdadeiras e falsas?
+[012.7] Bom, isso depende de qual operação a gente está aplicando.
+[012.7] E, ou e não.
+[012.8] Por exemplo, intuitivamente, parece que a expressão que diz
+[012.8] que o Lobo Guará sabe falar latim e sabe cálculo 3
+[012.9] só vai ser verdadeira inteirinha se as duas expressões
+[012.9] o Lobo Guará sabe falar latim e o Lobo Guará sabe cálculo 3
+[013.0] forem ambas verdadeiras.
+[013.1] Agora que sabemos de tudo isso, a gente pode checar cada uma das operações
+[013.2] para descobrir se o resultado final é verdadeiro ou é falso.
+[013.2] No caso do ou, a operação vai ser verdadeira se pelo menos uma das proposições for verdade.
+[013.4] Inclusive se as duas forem verdade também.
+[013.4] Já o não.
+[013.4] Então, inverte o valor verdade de qualquer proposição.
+[013.5] Se é verdadeiro que o Lobo Guará mora no Rio de Janeiro,
+[013.5] é falso que o Lobo Guará não mora no Rio de Janeiro.
+[013.6] A boa notícia é que o Ná satisfaz todos os nossos requisitos e vai entrar pra equipe
+[013.9] a não ser que ele não tope o salário.
+[013.9] Parece que a nossa tentativa de codificar parte do pensamento humano está dando certo.
+[014.0] Mas deu muito trabalho.
+[014.0] Será que a gente vai precisar repetir tudo isso
+[014.0] cada vez que a gente quiser contratar um Lobo Guará diferente?
+[014.1] Em 1838,
+[014.1] o editor do recém-fundado Jornal Matemático de Cambridge
+[014.2] recebeu uma carta de um remetente não muito usual.
+[014.2] O manuscrito se intitulava Teoria das Transformações Analíticas
+[014.3] e havia sido escrito por um então desconhecido jovem de 23 anos,
+[014.3] o qual, após abandonar a escola aos 16 para ajudar financeiramente os pais,
+[014.4] continuou estudando matemática apenas na companhia silenciosa de seus livros.
+[014.5] Apesar de certas particularidades que revelavam a inexperiência do escritor,
+[014.5] o editor do jornal percebeu ali uma faísca de genialidade
+[014.6] e decidiu aceitar a publicação.
+[014.6] Assim começou a carreira científica do inglês George Boole,
+[014.7] que é um dos matemáticos e lógicos mais importantes do século XIX.
+[014.7] Após ter o seu primeiro artigo aceito,
+[014.8] o Boole continuou escrevendo de forma prolífica em diversas áreas da matemática.
+[014.9] Alguns membros da comunidade de matemática britânica
+[014.9] trataram com certa resistência considerar o trabalho de alguém
+[015.0] que não possuía nem ao menos um diploma,
+[015.0] mas o trabalho do Boole falou por si só.
+[015.0] 16 anos após o seu primeiro artigo em um jornal matemático,
+[015.1] o Boole continuou escrevendo.
+[015.1] Ele publicou a sua obra-prima, pela qual ele seria lembrado até hoje,
+[015.2] As Leis do Pensamento.
+[015.2] A grande inovação aqui, a que seria essencial no desenvolvimento de um computador,
+[015.3] foi a de trazer as leis do pensamento de Aristóteles
+[015.3] para dentro das leis da matemática.
+[015.4] A matemática havia passado por três séculos de extremo sucesso
+[015.4] investigando as leis da álgebra,
+[015.5] o que resultou em avanços nas ciências naturais igualmente importantes.
+[015.5] Inspirado por isso,
+[015.5] o George Boole encontrou uma forma de expressar frases lógicas em frases algébricas,
+[015.6] fazendo com que ele conseguisse calcular com facilidade
+[015.7] se uma afirmação é verdade ou não.
+[015.7] Voltando à contratação de Lobos Guarás,
+[015.8] dessa vez nós vamos considerar o V como 1 e o F como 0.
+[015.9] A grande inovação de Boole foi notar como as operações lógicas que nós vimos antes
+[015.9] podem ser substituídas por certas operações aritméticas.
+[016.0] Nesse caso, por exemplo, o E pode ser substituído pela multiplicação,
+[016.1] o O pela adição,
+[016.1] e o NÃO,
+[016.1] que é um pouquinho mais complicado,
+[016.1] na verdade vira 1 menos o valor que a gente tinha antes,
+[016.2] que eu vou chamar de X aqui.
+[016.2] Na lógica de Boole, a multiplicação funciona igual à multiplicação normal,
+[016.3] só que usando só 1 e 0.
+[016.3] Já a adição vai continuar igualzinho antes,
+[016.5] com a exceção de que 1 mais 1,
+[016.5] nesse caso aqui, vai ser igual a 1.
+[016.5] Isso é porque algo não pode ser mais verdade do que já é.
+[016.6] Então, traduzindo a expressão que a gente tinha antes,
+[016.6] a gente vai ter algo do tipo.
+[016.7] Nós mostramos duas coisas aqui,
+[017.0] Nós mostramos duas coisas aqui,
+[017.0] A primeira é que, de alguma forma,
+[017.0] nós conseguimos reduzir as investigações da racionalidade humana de Aristóteles
+[017.1] a cálculos tão simples que poderiam ser feitos em um ábaco de apenas uma pedra.
+[017.2] A segunda coisa é que, organizando as coisas direitinho,
+[017.2] o cálculo quase se faz sozinho.
+[017.3] Quase se faz sozinho.
+[017.4] A ideia de babagem foi boa,
+[017.4] mas já deu para notar que vai ser meio difícil rodar um jogo, por exemplo,
+[017.5] usando um computador mecânico.
+[017.5] Por isso, vamos utilizar algo que gere mais energia,
+[017.6] por isso, vamos utilizar algo que gere mais energia,
+[017.6] e que não force ninguém a ficar parado girando uma manivela.
+[017.6] A eletricidade.
+[017.7] As fontes mais acessíveis para serem transformadas em eletricidade
+[017.7] são o fogo, o vento e a água.
+[017.8] E na dúvida, escolhe a água.
+[017.8] Porque ela é abundante, renovável,
+[017.8] e o gerador que é usado é relativamente simples de fazer,
+[017.9] afinal, as primeiras versões datam de mais de 2 mil anos.
+[017.9] Para construir o nosso gerador,
+[018.0] a gente vai precisar basicamente de madeira, cobre e ímãs.
+[018.0] Só que a gente tem alguns probleminhas, né?
+[018.0] Só que a gente tem alguns probleminhas, né?
+[018.1] Só que a gente tem alguns problemas com a nossa lista de materiais.
+[018.1] Madeira, a gente tem de sobra.
+[018.1] E o cobre também é simples,
+[018.2] porque ele é um material abundante,
+[018.2] ele é o primeiro material a ser dominado amplamente pelas civilizações antigas,
+[018.3] justamente por ele ser encontrado na natureza,
+[018.3] já pronto para ser moldado,
+[018.3] sem precisar passar por processos complexos de purificação, por exemplo.
+[018.4] E o esforço para o cobre vai compensar em dobro,
+[018.4] porque a gente vai usar ele depois também para fazer os nossos fios.
+[018.5] Agora, para achar os ímãs,
+[018.5] vai ser um pouquinho mais complicado,
+[018.6] eles já eram conhecidos há milhares de anos,
+[018.6] mas isso não quer dizer que eles eram fáceis de ser encontrados,
+[018.7] pelo contrário.
+[018.7] E mesmo que você desse sorte e encontrasse um ímã,
+[018.7] provavelmente ele não ia ter força suficiente para ser usado aqui no nosso gerador
+[018.8] e conseguir gerar eletricidade.
+[018.8] Portanto, meu amigo, a sua jornada atrás dessas pedrinhas magnéticas
+[018.9] vai ser longa e bastante trabalhosa,
+[018.9] cheia de obstáculos e desafios.
+[019.0] Mas quem é que disse que fazer um gerador do zero ia ser fácil, né?
+[019.0] Juntou tudo?
+[019.0] Então vamos começar a montar.
+[019.1] Vamos começar a montar o nosso gerador.
+[019.1] Primeiro, você vai fazer uma roda de madeira
+[019.1] e conectar espátulas por toda a circunferência.
+[019.2] Essa roda vai ser movimentada pela correnteza da água,
+[019.2] que vai movimentar algumas engrenagens,
+[019.3] que lá no fim vai fazer com que o nosso ímã
+[019.3] entre e saia de uma bobina de cobre.
+[019.3] O campo magnético do nosso ímã entrando e saindo de uma bobina de cobre,
+[019.4] como Michael Faraday descobriu em 1832,
+[019.5] vai gerar uma corrente elétrica.
+[019.5] Agora é simples.
+[019.5] Basta você elevar essa corrente elétrica através de um fio,
+[019.6] até o nosso computador e pronto.
+[019.6] Achou fácil?
+[019.6] Pois é, você acabou de inventar a eletricidade.
+[019.6] Agora que a gente já tem eletricidade disponível,
+[019.7] vamos aproveitar para falar melhor das limitações da máquina de babagem.
+[019.7] Mais tarde, a gente vai ver exatamente o porquê dessa máquina,
+[019.8] apesar da velocidade e da memória,
+[019.8] conseguir executar todos os programas que os computadores modernos conseguem.
+[019.9] Mas todo mundo que já usou um computador para algo importante,
+[019.9] como jogar Minecraft, sabe que a velocidade é fundamental.
+[020.0] E para a gente entender o longo caminho que temos pela frente
+[020.0] usando essa eletricidade que a gente aprendeu,
+[020.1] que a gente acabou de inventar para melhorar a máquina analítica,
+[020.1] vamos compará-la com um dos processadores mais poderosos do mercado,
+[020.2] o Intel Core i9-13900K.
+[020.2] Como referência para essa disputa,
+[020.2] a gente vai usar uma versão da máquina diferencial de babagem
+[020.3] que é mantida pelo Museu da História da Computação
+[020.3] e que teria mecanismos de edição muito similares ao da máquina analítica.
+[020.4] Essa geringonça de babagem conseguiria fazer, em média,
+[020.4] uma operação por segundo.
+[020.5] Para fazer a quantidade de operações que o nosso i9 aqui faz em um minuto,
+[020.5] a gente precisaria de mais de 10 bits.
+[020.6] Milhões de máquinas de babagem operando lado a lado.
+[020.6] Mas se você acha que essa comparação é um tanto injusta,
+[020.7] que tal um supercomputador que em 1985 custava 32 milhões de dólares?
+[020.8] O Cray-2, no ano do seu lançamento,
+[020.8] era o computador mais poderoso que a humanidade já tinha construído.
+[020.8] Ocupando a área de um armário inteiro e pesando tanto quanto um elefante,
+[020.9] ele era 150 mil vezes mais rápido que o computador guia da Apollo 11.
+[021.0] Impressionante, vai?
+[021.0] Mas mesmo assim,
+[021.0] nós precisaríamos de mais de 20 mil desses supercomputadores rodando ao mesmo tempo
+[021.1] para chegar na velocidade desse processador aqui que cabe na sua mão.
+[021.2] E tem muito mais do que simplesmente velocidade num processador moderno como esse i9 aqui.
+[021.3] Existem diversos outros fatores da arquitetura desses chips,
+[021.3] alcançados depois de décadas de evolução,
+[021.4] que tornam eles capazes de rodar até os jogos e programas mais pesados.
+[021.4] E olha que a gente nem está falando da 14ª geração da Intel,
+[021.5] que acabou de chegar no Brasil.
+[021.5] Vai ser liderada pelo i9-14900K.
+[021.6] E além de ter um poder bruto de computação muito maior,
+[021.6] vai contar com diversos sistemas de inteligência artificial que se adaptam às tarefas mais pesadas.
+[021.7] Ainda bem que você não precisa reinventar o computador para ter um processador desses.
+[021.8] Quer saber mais sobre os novos processadores da Intel?
+[021.8] Os links estão na descrição.
+[021.8] Para conseguir controlar diferentes partes da nossa nova rede elétrica,
+[021.9] a gente vai precisar de um interruptor.
+[021.9] Uma forma de impedir ou liberar a passagem elétrica.
+[022.0] Uma passagem de energia para o nosso circuito.
+[022.0] Como, por exemplo, se a gente precisar ligar ou desligar uma lâmpada.
+[022.1] Mas pensa comigo.
+[022.1] Parece que tem uma ideia sutilmente escondida aqui.
+[022.2] As proposições lógicas que a gente viu antes podem ser verdadeiras ou falsas, 1 ou 0.
+[022.2] E esse nosso circuito parece ter uma característica similar.
+[022.3] Ou o interruptor está fechado ou aberto.
+[022.3] Ou a lâmpada está ligada ou desligada.
+[022.4] Isso nos sugere uma forma nova de representar o valor verdade de uma proposição.
+[022.5] Ou seja, se ela é verdadeira ou falsa.
+[022.5] Mas dessa vez usando eletricidade.
+[022.6] Mas será que poderíamos combiná-los com outros circuitos para representar aquelas proposições compostas?
+[022.7] Como foi no caso lá do recrutamento dos nossos funcionários?
+[022.7] A resposta é sim!
+[022.7] Esse circuito aqui, com dois interruptores em sequência, só acende a lâmpada quando os dois estão fechados.
+[022.9] Análogo àquele e lógico que só é verdadeiro quando as duas proposições ali sendo combinadas também são verdadeiras.
+[023.0] Já esse circuito aqui.
+[023.0] Com os dois interruptores em paralelo.
+[023.0] E vai ser verdadeiro quando pelo menos um dos interruptores estiver fechado.
+[023.1] Já se os dois estiverem abertos, aí o circuito fica desligado.
+[023.2] E sem surpresa nenhuma, esse circuito aqui se comporta como aquele nosso ou lógico.
+[023.3] Já esse circuito aqui é um pouco diferente.
+[023.3] A gente tem dois caminhos que a energia pode passar.
+[023.4] Esse de cima tendo uma resistência maior e sendo que a energia passa pela lâmpada.
+[023.4] O de baixo tem uma resistência menor.
+[023.5] Então, se o interruptor for fechado, a energia vai preferir passar pelo interruptor de baixo desligando a lâmpada.
+[023.6] Assim, a gente tem a funcionalidade do não lógico.
+[023.6] Quando o interruptor fecha, a lâmpada desliga.
+[023.7] O contrário do que a gente estava acostumado.
+[023.7] É claro que a próxima etapa é tentar usar isso na contratação de Lobos Guarás.
+[023.8] Cada uma das proposições que a gente viu antes está representada aqui com interruptores.
+[023.9] A gente tem aqui três caminhos diferentes e cada um deles representa um ou.
+[023.9] Isso quer dizer que se a energia passasse por qualquer um desses caminhos,
+[024.0] já seria o suficiente para ligar a nossa lâmpada, ou seja, o nosso Lobo Guará ser contratado.
+[024.1] Por exemplo, se o Lobo Guará souber dançar, olha só, ele já vai ser contratado.
+[024.2] Para a energia conseguir passar por esse outro caminho aqui, por exemplo,
+[024.2] o nosso Lobo Guará tem que saber japonês e tem que saber álgebra linear.
+[024.3] Só quando ele cumpre esses dois requisitos que ele pode ser contratado.
+[024.4] Porém, ele não pode ser do Rio de Janeiro.
+[024.4] Se ele for do Rio de Janeiro, olha só o que acontece.
+[024.4] Ele não é contratado.
+[024.5] Então aqui nós temos o exemplo de um note funcionando ao vivo, olha só.
+[024.5] Contratado.
+[024.6] E se for carioca, não contratado.
+[024.6] Para a energia passar pelo último caminho, ele tem que ser de São Paulo.
+[024.7] Então vou até colocar o P que não estava aqui.
+[024.7] Então ele tem que ser de São Paulo, a gente tem que fechar aqui o contato.
+[024.8] Mas não basta ser só de São Paulo.
+[024.8] Ele tem que saber ou cálculo 3 ou tem que saber latim.
+[024.9] Olha só que legal.
+[024.9] Se ele souber latim, ele já é contratado.
+[024.9] Não precisa saber cálculo 3.
+[025.0] E se ele souber só cálculo 3, ele também já é contratado.
+[025.1] Não precisa saber os dois.
+[025.1] Se ele souber os dois também não tem problema.
+[025.1] Se eu fechar os dois aqui está tudo certo.
+[025.1] Mas é ou um ou outro.
+[025.2] Vamos ver se o Na, o nosso lobo que estava concorrendo à vaga, passaria ou não aqui segundo o nosso circuito de teste e verificação de candidatos.
+[025.3] O P é verdadeiro, o L é verdadeiro, o C é falso, está certo.
+[025.4] O R é falso.
+[025.5] O A é verdadeiro.
+[025.5] O J é falso.
+[025.5] E o D é falso.
+[025.6] E o L é verdadeiro.
+[025.6] E está aqui confirmado mais uma vez que o Na vai entrar para a equipe.
+[025.7] Agora eu quero que você pare um pouco e pense sobre o que a gente acabou de fazer.
+[025.7] Que foi simplesmente enganar a eletricidade para pensar logicamente por nós.
+[025.8] É surreal.
+[025.8] A pessoa acreditada com a descoberta da relação entre a lógica booleana,
+[025.9] e circuitos elétrons foi Claude Shannon,
+[026.0] que em 1937 publicou sua descoberta na tese de mestrado mais famosa de todos os tempos.
+[026.1] Uma análise simbólica de relés e circuitos de comutação.
+[026.1] Shannon não sabia, mas o cientista japonês Akira Nakashima havia chegado à mesma conclusão dois anos antes.
+[026.2] Essa não vai ser a única vez nesse vídeo que a gente vai ver dois cientistas separados por um oceano inteiro
+[026.3] chegarem na mesma descoberta com poucos anos de diferença.
+[026.4] E um outro detalhe.
+[026.4] Anos mais tarde, Shannon seria o criador da teoria da informação.
+[026.5] Uma área da matemática que foi fundamental na invenção da internet.
+[026.5] A gente viu que a gente consegue representar muita coisa só com interruptores.
+[026.6] Mas, espera aí.
+[026.6] Quem que vai ficar abrindo e fechando os interruptores dentro do computador?
+[026.7] Bom, claro que não tem ninguém lá dentro.
+[026.7] Né?
+[026.8] Espero que não.
+[026.8] Não do meu.
+[026.8] Fique tranquilo que a gente não vai ferir o direito dos gnomos nem das fadas,
+[026.8] porque tem uma forma muito mais eficiente de otimizar.
+[026.9] Com uma tecnologia que a gente já usou para gerar eletricidade.
+[026.9] O eletromagnetismo.
+[027.0] Como a gente viu quando a gente gerou eletricidade usando um moinho,
+[027.0] mover um imã dentro de um cilindro de fios gera uma corrente elétrica nesses fios.
+[027.1] Mas se ao invés da gente mover um imã no centro da nossa bobina,
+[027.2] a gente aplicar uma corrente nesse fio,
+[027.2] a gente vai criar um campo eletromagnético aqui que vai poder afastar ou atrair objetos.
+[027.3] O que a gente acabou de fazer é criar um eletroimã.
+[027.4] Um imã que pode ser ligado e desligado quando a gente quiser.
+[027.4] E se a gente usar o eletroimã que a gente acabou de criar
+[027.5] para construir uma engenhoca dessa aqui,
+[027.5] a gente vai ser capaz de fechar ou abrir o interruptor apenas usando eletricidade.
+[027.6] Olha só.
+[027.6] Nós acabamos de reinventar o relé,
+[027.7] que foi criado no início do século 19
+[027.7] para servir como um amplificador de sinais para o telégrafo.
+[027.8] Mas essa invenção tão importante só seria patenteada em 1840
+[027.8] pelo inventor do código morse,
+[027.9] Samuel Morse.
+[027.9] Essa invenção utiliza um eletroimã igual àquele que a gente reinventou.
+[028.0] Ele está bem aqui.
+[028.0] E ele é utilizado para ao invés de transformar energia mecânica em energia elétrica,
+[028.1] fazer o inverso.
+[028.1] Transformar energia elétrica em energia mecânica.
+[028.2] Aqui no caso, quando ele está ligado ele atrai
+[028.2] e quando ele está desligado ele solta.
+[028.3] Quando energiza o nosso eletroimã
+[028.4] e ele atrai esse ferro aqui de cima,
+[028.4] ele fecha o circuito
+[028.4] que está vindo aqui dessas duas pilhas do outro lado
+[028.5] e permite com que a energia chegue até o nosso LED acendendo ele.
+[028.5] O relé pode não parecer uma inovação tão grande assim,
+[028.6] mas na verdade ele traz uma mudança muito importante.
+[028.7] Porque agora é possível com que o próprio circuito
+[028.7] abra ou feche interruptores.
+[028.8] Ou seja, além de pensar por nós,
+[028.8] eles também se movem por nós.
+[028.8] E aos poucos as nossas geringonças se tornam cada vez mais independentes.
+[028.9] Um detalhe.
+[028.9] A partir de agora,
+[028.9] nós vamos chamar as operações lógicas pelos seus nomes em inglês,
+[029.0] seguindo a convenção internacional.
+[029.0] Mas calma que você não precisa ser bilíngue para entender.
+[029.1] São só essas três palavras.
+[029.1] A gente vai chamar o E de END,
+[029.1] o OU de OR
+[029.2] e o NÃO de NOT.
+[029.2] Conectando a entrada de energia de um relé
+[029.3] com a entrada de energia do outro relé,
+[029.3] a gente vai ter uma situação onde o circuito
+[029.3] só vai ficar completamente fechado
+[029.4] quando os dois relés estão fechados.
+[029.4] Por exemplo, se eu fechar só o meu relé aqui,
+[029.4] nada acontece.
+[029.5] Nem se só o do Bruno fica fechado.
+[029.5] Mas se os dois estão fechados ao mesmo tempo,
+[029.5] o LED acende.
+[029.6] Esse é o comportamento da porta END,
+[029.6] que é representada com esse símbolo aqui.
+[029.6] Mas olha só.
+[029.7] Se eu criar um circuito independente para cada um dos relés
+[029.7] que liga a pilha na lâmpada,
+[029.8] eu vou ter uma situação onde ligar apenas um dos relés
+[029.8] já é o suficiente para fechar o circuito e acender o LED.
+[029.9] Por exemplo, se só eu fechar,
+[029.9] só o Bruno fechar.
+[030.0] E claro, se os dois fecham, também funciona.
+[030.0] E mais uma vez a gente tem o comportamento da porta OR,
+[030.1] que tem um símbolo parecidinho com o END,
+[030.1] só um pouquinho mais rock and roll.
+[030.2] E por último, a gente vai ter uma situação
+[030.2] onde o circuito está sempre completo
+[030.2] e o LED está sempre ligado,
+[030.3] exceto quando o relé é ativado,
+[030.3] o que interrompe o circuito.
+[030.3] E esse é o comportamento do NOT,
+[030.4] que é representado com esse símbolo aqui.
+[030.4] Em 1950,
+[030.5] se você visitasse o escritório de Shannon,
+[030.5] ele não deixaria você ir embora
+[030.5] sem antes te apresentar o Teseu,
+[030.6] um rato mecânico que ele inventou
+[030.6] e que era capaz de aprender aonde ficavam as paredes de um labirinto.
+[030.6] Bastava deixar o roedor navegar pelo labirinto
+[030.7] errando várias vezes o caminho,
+[030.7] e aí quando o treinamento acabava,
+[030.8] era possível colocar o ratinho em qualquer lugar
+[030.8] e ele iria até o final sem errar uma única vez.
+[030.8] O segredo desse Mecha Mickey
+[030.9] estava justamente no uso de portões lógicos
+[030.9] feito com relés como esses nossos, né?
+[031.0] E esses circuitos lógicos conseguiam se adaptar
+[031.0] a cada configuração do labirinto,
+[031.0] demonstrando o potencial dos nossos relés
+[031.1] quando são usados para formar portões lógicos.
+[031.1] Mesmo usando materiais diferentes no lugar dos relés,
+[031.1] o computador que você está usando nesse momento
+[031.2] também é feito a partir dos mesmos portões lógicos.
+[031.2] Nos próximos minutos a gente vai mostrar
+[031.3] exatamente como isso é possível.
+[031.3] A primeira tarefa será tornar o nosso computador
+[031.4] pelo menos tão capaz quanto o ábaco,
+[031.4] ou seja, que ele consiga realizar operações aritméticas.
+[031.4] Isso é bem importante,
+[031.5] porque quase todos os programas, principalmente os jogos,
+[031.5] dependem de cálculos acontecendo dentro do computador.
+[031.6] Para isso, a gente vai precisar pensar em
+[031.6] como a gente representa números no nosso dia a dia.
+[031.7] A forma mais antiga de representar números de forma escrita
+[031.7] é simplesmente fazer uma quantidade de riscos
+[031.7] igual ao número que você quer representar.
+[031.8] Assim, o número um é um risco,
+[031.8] o dois são dois riscos,
+[031.8] o três são três riscos, e assim por diante.
+[031.9] Dá para ver que essa estratégia não é tão boa
+[031.9] quando a gente tenta escrever um número como 128,
+[032.0] por exemplo, que precisaria de 128 marcas no papel.
+[032.0] A forma que a gente aprende a representar números na escola
+[032.1] já é muito mais eficiente.
+[032.1] Basicamente, a gente tem 10 símbolos
+[032.2] que representam as quantidades de 0 a 9.
+[032.2] Só para ninguém se confundir, vamos lembrar que
+[032.2] o número e a representação de um número
+[032.3] são coisas diferentes.
+[032.3] Isso aqui é um símbolo que representa o número 3,
+[032.3] mas não é o número em si.
+[032.4] O número 3 é um conceito abstrato.
+[032.4] Por exemplo, outro símbolo que representa o número 3
+[032.5] seria isso aqui.
+[032.5] No sistema decimal é diferente,
+[032.6] porque cada uma dessas casas aqui
+[032.6] vale 10 vezes mais
+[032.7] do que a anterior.
+[032.7] Isso quer dizer que a cada dígito adicionado
+[032.8] a gente consegue representar uma quantidade 10 vezes maior.
+[032.8] Imagina se eu tivesse que escrever esse número aqui usando riscos, né?
+[032.9] É uma economia muito grande de espaço.
+[032.9] Mas no caso dos nossos circuitos,
+[032.9] nós não temos 10 símbolos diferentes.
+[033.0] Temos apenas 2, ligado e desligado.
+[033.0] De qualquer forma, podemos usar as ideias do caso decimal,
+[033.1] só que com uns e zeros.
+[033.1] No caso do 0 e do 1, continua tudo igual.
+[033.2] Já no 2, a gente vai usar a casa esquerda,
+[033.2] que vale 2 vezes mais que a anterior.
+[033.3] Para fazer o 3, é só ligar novamente a unidade.
+[033.4] O 4 vai usar a casa que vale 4 vezes mais.
+[033.4] E assim por diante.
+[033.4] Isso é o que chamamos de sistema binário.
+[033.5] Fazendo uma comparação entre os sistemas,
+[033.5] isso aqui é como se fosse o 99 no sistema decimal.
+[033.6] As duas casas já estão cheias.
+[033.6] Então, se eu quiser somar mais 1 ao 99,
+[033.7] eu vou ter que liberar essas casas aqui,
+[033.7] que seriam 0 e 0, e passar 1 para cá.
+[033.9] Mas por que números binários?
+[033.9] Bom, em primeiro lugar, não tem nada de especial
+[033.9] com o sistema decimal.
+[034.0] Ele é só uma convenção que surgiu há muito tempo atrás
+[034.0] e provavelmente por conta desses 10 dedos aqui.
+[034.1] Muito úteis para contar.
+[034.1] Já o sistema binário é realmente especial.
+[034.1] Ele é o sistema mais simples que é capaz de expressar
+[034.2] tudo o que a gente está acostumado no sistema decimal.
+[034.2] Como o Quine disse uma vez,
+[034.2] tudo o que se vale a pena dizer
+[034.3] pode ser dito com apenas 2 caracteres.
+[034.3] E é do sistema binário que surgiu a palavra bit,
+[034.4] que vem de binary digit,
+[034.4] tão conhecida aí no mundo da computação.
+[034.4] É uma medida de quantos dígitos binários
+[034.5] a gente tem disponível para guardar informação.
+[034.5] Imagina um trem chegando em uma intersecção
+[034.5] em que ele pode virar à direita ou à esquerda.
+[034.6] Ou seja, ele tem duas possibilidades de caminho.
+[034.6] Agora, se em cada um desses caminhos
+[034.7] ele puder virar à esquerda ou à direita de novo,
+[034.7] então ele tem 4 caminhos possíveis.
+[034.7] Repetindo isso, ele tem 8 caminhos possíveis.
+[034.8] É exatamente assim com os bits.
+[034.8] Adicionar 1 dígito significa dobrar a quantidade
+[034.9] de informação que a gente consegue armazenar.
+[034.9] Por isso, com 8 bits, nós temos o que é chamado de 1 byte.
+[035.0] E um único byte pode representar 256 coisas dígitas.
+[035.1] Nós ainda vamos ver exatamente como esses bytes
+[035.1] estão relacionados com a quantidade de memória do seu computador.
+[035.2] Mas antes, a gente precisa encontrar uma forma
+[035.2] de usar os nossos portões lógicos
+[035.3] para calcular somas e subtrações.
+[035.3] Vamos voltar para a época da escola
+[035.3] onde você aprendeu a somar números desse jeito.
+[035.4] 1 com 3 é 4.
+[035.4] 9 com 2 dá 11.
+[035.4] A gente deixa um aqui, sobe o outro,
+[035.5] e aí temos o resultado 114.
+[035.5] Esse mesmo processo aqui pode ser feito com números binários.
+[035.5] A gente só precisa mudar um pouquinho as coisas.
+[035.6] 1 com 1 é 0 e sobe 1.
+[035.6] E 1 com 1 é 0 e sobe 1.
+[035.7] Temos o nosso resultado.
+[035.7] Mas como que a gente pode representar essa soma
+[035.8] com os nossos circuitos?
+[035.8] Sempre que temos um problema complicado,
+[035.8] é legal a gente tentar encontrar como ele pode ser reduzido
+[035.9] a partes mais simples.
+[035.9] Olhando com atenção para apenas uma das linhas aqui da nossa soma,
+[036.0] a gente só precisa se preocupar com duas coisas.
+[036.0] Qual número fica embaixo da casa sendo somada
+[036.0] e se um número vai ser carregado, ou seja,
+[036.1] passar para a próxima casa ou não.
+[036.1] Nessa tabela aqui a gente consegue ver o que acontece
+[036.1] na casa do resultado,
+[036.2] depois daquele traço que a gente coloca na nossa soma.
+[036.2] No caso da soma de números binários,
+[036.2] quando a gente soma 1 com 1,
+[036.3] o resultado lá embaixo,
+[036.3] depois do nosso traço, é 0.
+[036.3] E vai ter um 1 que vai ser carregado para a próxima casa.
+[036.4] E a gente vai ver nessa outra tabela aqui
+[036.4] que trata dos valores carregados apenas.
+[036.5] Quando a gente está somando 1 com 1,
+[036.5] como a gente está fazendo aqui,
+[036.5] o resultado embaixo da nossa linha do resultado é 0,
+[036.6] como mostra nessa tabela aqui.
+[036.6] E a gente vai ter um 1 que vai ser carregado
+[036.7] para a próxima linha,
+[036.7] que é o que diz aqui,
+[036.7] quando a gente soma 1 com 1,
+[036.7] um valor vai ser carregado
+[036.8] para a próxima linha aqui da nossa operação.
+[036.8] A estratégia do Rolandinho de separar o valor que fica embaixo da casa
+[036.9] e o valor que é carregado,
+[036.9] nos sugere tentar criar um circuito para cada um desses casos.
+[037.0] Para evitar que a gente precise ficar conectando um relé no outro,
+[037.0] a gente vai usar essa representação aqui a partir de agora.
+[037.0] Parece que a tabela do valor carregado
+[037.1] se encaixa direitinho com o comportamento de um portão AND.
+[037.1] Cada um desses botões brancos aqui
+[037.2] é uma entrada de energia que vai representar o 1
+[037.2] quando estiver ligada e o 0 quando estiver desligado.
+[037.2] Como a gente já sabe, no caso do AND,
+[037.3] o valor de saída só vai ser 1
+[037.3] quando os dois valores de entrada também forem 1.
+[037.4] Já o comportamento de escolher o que fica embaixo da casa
+[037.4] parece quase um OR,
+[037.5] com a diferença de que quando os dois valores de entrada
+[037.5] são iguais a 1, o valor da casa deveria ser 0.
+[037.6] Para resolver isso, primeiro a gente vai combinar
+[037.6] um AND e um NOT para formar um NAND.
+[037.6] Uma curiosidade é que o portão NAND é considerado bem especial
+[037.7] porque combinando ele de diferentes formas,
+[037.7] a gente conseguiria replicar qualquer outro portão.
+[037.8] O que não seria possível só usando um AND,
+[037.8] ou só um OR, ou só um NOT, por exemplo.
+[037.8] Agora, unindo um OR, um AND e um NAND,
+[037.9] conseguimos obter exatamente o comportamento que queríamos.
+[037.9] Quando os dois estão ligados ou quando os dois estão desligados,
+[038.0] o resultado agora é 0.
+[038.0] Esse circuito também tem um nome próprio
+[038.0] e é chamado de SHOR,
+[038.1] e finalmente vamos colocar tudo isso para fazer somas.
+[038.1] Lembrando, nós vamos receber dois valores e devolver dois valores.
+[038.2] O SHOR vai responder qual o valor da casa abaixo da soma
+[038.2] e o AND qual o valor que precisa ser carregado.
+[038.3] Então vamos testar o que a gente tem aqui.
+[038.3] 1 mais 0 está sendo igual a 1,
+[038.3] 0 mais 1 também está sendo igual a 1,
+[038.4] mas se eu somo 1 mais 1,
+[038.4] fica 0 no valor da casa e um valor é carregado.
+[038.5] Esse circuito é meio somador,
+[038.5] mas ele ainda tem um problema.
+[038.5] Quando estamos somando dois bits separados,
+[038.6] ele funciona muito bem,
+[038.6] mas e se a gente precisar lidar com os bits
+[038.7] que ficam nas casas do meio de uma soma de números maiores?
+[038.7] Nesse caso, talvez a gente precise lidar com três bits de entrada,
+[038.8] sendo um deles o que veio carregado lá da soma anterior.
+[038.8] Para fazer isso, nós vamos adicionar um segundo meio somador,
+[038.9] que vai receber o valor da casa do primeiro meio somador
+[038.9] e o possível valor carregado que veio lá da soma anterior.
+[039.0] Aqui, a primeira saída do nosso segundo meio somador
+[039.1] já é o resultado da casa.
+[039.1] Mas e os valores que podem ter sobrado
+[039.1] nessas segundas saídas dos dois meios somadores?
+[039.2] Como em um meio somador nunca acontece
+[039.2] das saídas da casa e do carregamento serem em um ao mesmo tempo,
+[039.3] também nunca vai acontecer dessas duas saídas
+[039.3] sobrando em cada meio somador estarem ligadas ao mesmo tempo.
+[039.4] Por isso, a gente só precisa ligá-las em um OR,
+[039.4] que vai nos dizer se temos um valor carregado
+[039.5] para a próxima casa ou não.
+[039.5] E o nome desse circuito é somador completo,
+[039.6] ou só somador.
+[039.6] Agora, se a gente precisar somar dois números de quatro bits,
+[039.6] a gente só precisa alinhar quatro somadores.
+[039.7] A gente pode ver que está funcionando direitinho.
+[039.7] 1 mais 1 vai dar igual a 2,
+[039.8] 1 mais 2 vai dar igual a 3,
+[039.8] e assim por diante.
+[039.9] Aqui vai um aviso.
+[039.9] Se quisermos manter
+[039.9] apenas essas quatro saídas,
+[039.9] as coisas podem dar muito errado.
+[040.0] No caso em que a nossa soma for maior que quatro bits,
+[040.0] o resultado transborda
+[040.1] e começa a contar de novo a partir do zero.
+[040.1] É como se a gente estivesse contando os valores em torno de uma roda
+[040.2] que deu a volta completa e voltou para o zero.
+[040.2] No nosso caso aqui, parece fácil de resolver.
+[040.2] É só adicionar mais uma casa de carregamento.
+[040.3] Mas e se a gente pegar esse resultado
+[040.3] e tentar somar ele com outro valor de quatro bits bem grande?
+[040.4] Não importa quão poderoso seja o seu computador,
+[040.4] sempre vai existir um limite físico
+[040.4] no quão grande podem ser esses números somados.
+[040.5] Há males que vêm para o bem,
+[040.5] porque é justamente o transbordo,
+[040.5] o artifício que a gente vai usar
+[040.6] para trabalhar com subtração em circuitos.
+[040.6] A definição do negativo de um número,
+[040.6] o menos nove, por exemplo,
+[040.7] é justamente um número que,
+[040.7] somado ao original,
+[040.7] vai dar zero.
+[040.8] Menos nove mais nove igual a zero.
+[040.8] Vamos transferir essa lógica para os números binários
+[040.9] e vamos usar o nove em binário.
+[040.9] A estratégia para a gente encontrar uma forma
+[040.9] de representar o negativo em um circuito
+[041.0] é encontrar um número que,
+[041.0] se somado a esse aqui,
+[041.0] vai resultar zero.
+[041.0] Vamos começar invertendo ele aqui então.
+[041.1] Está aqui invertido
+[041.1] e depois de somar isso aqui,
+[041.1] a gente vai receber um em todas as casas.
+[041.1] Somando mais um,
+[041.2] a gente vai ter zero em todas as casas
+[041.2] com um um sobrando,
+[041.2] que passaria para a próxima casa.
+[041.3] Mas se a gente tiver limitado só a quatro dígitos,
+[041.3] esse um vai acabar ficando de fora dos quatro dígitos
+[041.3] e vai se perder no transbordo.
+[041.4] E esses são os nossos números negativos
+[041.4] quando estamos usando circuitos.
+[041.4] É basicamente um número em questão
+[041.5] com os seus dígitos invertidos
+[041.5] e depois acrescido de um.
+[041.5] Pode parecer estranho,
+[041.6] mas vai funcionar com qualquer número
+[041.6] que caiba nos nossos quatro bits disponíveis.
+[041.6] Executando nosso plano mirabolante,
+[041.7] nós precisamos de alguma forma
+[041.7] de inverter os números do segundo bit
+[041.7] que estamos somando.
+[041.7] A gente poderia usar o NOT,
+[041.8] que funciona exatamente assim,
+[041.8] invertendo os valores.
+[041.8] O problema é que ele deixa
+[041.8] o nosso circuito rígido,
+[041.9] sem nos dar uma forma de escolher
+[041.9] quando queremos somar ou subtrair.
+[041.9] A alternativa é usar o SHORE.
+[042.0] Se liga só,
+[042.0] quando a segunda entrada do SHORE for igual a 1,
+[042.0] ele sempre vai inverter o que vier na primeira.
+[042.1] Já se ela for zero,
+[042.1] ele não vai alterar a primeira em nada.
+[042.1] Alinhando quatro portas SHORE
+[042.2] e unindo a primeira entrada de cada um
+[042.2] ao respectivo bit que queremos inverter
+[042.2] e todas as segundas unidas em um único sinal,
+[042.3] temos um novo circuito chamado INVERSOR,
+[042.3] que recebe quatro bits
+[042.3] e um sinal que indica se queremos ou não
+[042.4] inverter cada um desses bits.
+[042.4] Agora, vamos posicionar esse inversor
+[042.5] para receber o segundo número
+[042.5] que queremos operar no nosso somador de quatro bits
+[042.6] e colocar mais essa entrada extra,
+[042.6] que vai sinalizar se queremos somar ou subtrair.
+[042.7] Quando quisermos subtrair,
+[042.7] esse sinal vai ser 1,
+[042.7] o que vai ativar o inversor.
+[042.7] Como o Rolandinho explicou agora há pouco,
+[042.8] para tornar esses números negativos,
+[042.8] além de inverter os bits,
+[042.8] ainda vai faltar somar 1.
+[042.9] Por isso, vamos aproveitar esse mesmo sinal
+[042.9] para adicionar 1
+[042.9] lá na entrada de dígito carregado
+[043.0] desse primeiro somador,
+[043.0] que claro, não estava sendo usado para nada.
+[043.0] E juntando tudo isso,
+[043.1] nós temos uma unidade de aritmética.
+[043.1] Se a gente somar 1 mais 1,
+[043.1] a gente ainda obtém 2,
+[043.2] mas se eu ligar o sinal de subtração,
+[043.2] aí eu tenho 0.
+[043.2] Se eu subtrair de 2, 1,
+[043.3] aí eu tenho 1.
+[043.3] E se eu subtrair de 3, aí eu tenho 2.
+[043.3] Se eu subtrair de 8,
+[043.4] 3.
+[043.4] Eu tenho que ter 5.
+[043.5] Tudo muito bonito,
+[043.5] mas todas essas contas precisam ir para algum lugar, né?
+[043.5] Está na hora de responder como computadores
+[043.6] conseguem se lembrar das coisas.
+[043.6] Conectando dois portões OR
+[043.7] e dois portões NOT
+[043.7] de uma forma bem estranha,
+[043.8] nós temos um dos circuitos mais importantes
+[043.8] da história do computador.
+[043.8] Se eu apertar o botão de SETAR,
+[043.9] o que vai acontecer é que esse OR aqui
+[043.9] vai ligar,
+[043.9] o que vai fazer com que esse NOT
+[043.9] receba um sinal ligado.
+[044.0] E ele vai inverter esse sinal, desligando ele,
+[044.0] passando um sinal desligado para esse OR,
+[044.0] que agora vai passar um sinal desligado
+[044.1] para o seu respectivo NOT,
+[044.1] o que vai inverter esse sinal ligando a lâmpada.
+[044.2] Mas tem algo curioso aqui.
+[044.2] Esse fio aqui volta lá para o primeiro OR,
+[044.2] fazendo com que ele permaneça ligado,
+[044.3] ou seja, enviando um sinal ligado para o NOT,
+[044.3] que daí inverte o sinal
+[044.3] e leva um sinal desligado para o OR,
+[044.3] que continua desligado,
+[044.4] e, portanto, o segundo NOT continua ligado.
+[044.4] E agora não importa quantas vezes eu apertar o botão de SETAR,
+[044.4] a lâmpada vai continuar ligada.
+[044.5] Agora, olha só.
+[044.5] Se eu apertar o botão de RESETAR,
+[044.6] esse OR aqui, que estava desligado,
+[044.6] vai ligar,
+[044.6] o que vai fazer com que ele envie um sinal ligado para o NOT,
+[044.7] que vai desligar esse sinal,
+[044.7] desligando a lâmpada.
+[044.7] Mas, de novo,
+[044.7] esse fio que volta lá no primeiro OR
+[044.8] vai fazer com que esse OR agora desligue
+[044.8] o que antes estava ligado,
+[044.8] ou seja, esse primeiro NOT vai continuar passando um sinal
+[044.9] ligado para o OR,
+[044.9] e agora não importa quantas vezes eu aperte o botão de RESETAR,
+[044.9] o sinal continua desligado.
+[045.0] Parece que esse circuito, de alguma forma,
+[045.0] consegue se lembrar qual foi o último botão que eu apertei.
+[045.0] O nome desse circuito é FLIP-FLOP,
+[045.1] e ele é a parte mais básica da memória de um computador.
+[045.1] Podemos manter essa mesma ideia em um formato um pouco mais útil.
+[045.2] Vamos usar dois ANDs para substituir os botões de SET e RESET
+[045.3] por um botão que eu vou chamar de INFO e o outro de MODIFICAR.
+[045.3] O botão INFO me diz qual informação queremos salvar no FLIP-FLOP.
+[045.4] Isso é, se é 1 ou 2.
+[045.4] Ou 0.
+[045.4] Já o MODIFICAR permite ou não que o que já estava no FLIP-FLOP mude.
+[045.5] Se o MODIFICAR está desligado,
+[045.6] não importa o que eu aperte, o valor salvo no FLIP-FLOP não muda.
+[045.6] Já se ele está ligado, aí o FLIP-FLOP vai assumir o valor vindo do botão INFO.
+[045.7] E esse novo formato nos permite combinar vários FLIP-FLOPs com uma certa facilidade.
+[045.8] Por exemplo, juntando 4 desses lado a lado
+[045.8] e unindo os 4 sinais de MODIFICAR deles em uma só entrada,
+[045.9] nós temos uma memória de 4 bits.
+[046.0] Quando esse valor de MODIFICAR das 4 está ligado,
+[046.0] então eu consigo salvar um número de 4 bits nessa memória.
+[046.1] Já quando ele está desligado,
+[046.1] não importa o que eu envie para essa memória,
+[046.1] ela continua intacta,
+[046.2] mantendo a informação que a gente queria que ela conservasse.
+[046.2] E agora nós finalmente conseguimos conectar essa memória
+[046.3] lá na saída da nossa unidade aritmética
+[046.3] e ter uma forma de salvar esses números.
+[046.4] Mas ainda falta uma coisa muito importante
+[046.4] presente em todas as memórias de computadores modernos.
+[046.5] Uma forma de ler ou alterar apenas 1 bit da célula
+[046.5] sem precisar mudar todos os outros na volta.
+[046.5] Começamos criando um seletor,
+[046.6] que é uma forma de usar 2 bits para selecionar 4 saídas diferentes.
+[046.6] E isso funciona porque existem 4 formas diferentes
+[046.7] de combinar esses 2 bits de entrada.
+[046.7] 00, 01, 10 ou 11.
+[046.8] Depois, nós vamos usar o seletor e alguns portões AND
+[046.8] para acessar especificamente uma entrada da memória por vez.
+[046.9] Dependendo do valor de entrada do seletor.
+[046.9] Esse valor do seletor vai ser o que chamamos de
+[047.0] endereço do bit de memória.
+[047.0] Passando o endereço de um bit específico no seletor,
+[047.0] nós conseguimos alterar apenas aquele bit,
+[047.1] mantendo todos os outros intactos.
+[047.1] Agora, se quisermos ler apenas 1 bit do nosso chip de memória,
+[047.2] usamos novamente o seletor,
+[047.2] mas dessa vez nos bits de saída.
+[047.3] Assim, só o portão AND correspondente ao endereço do seletor
+[047.3] vai estar recebendo um sinal ligado na segunda entrada.
+[047.4] E, portanto, deixamos o seletor.
+[047.4] Deixando esse sinal passar.
+[047.4] A combinação da memória com os circuitos de endereço
+[047.5] que nos permitem ler ou alterar apenas 1 bit por vez
+[047.5] é chamado na computação de Random Access Memory.
+[047.6] E é desse nome que vem a famosa sigla RAM,
+[047.6] ou, como é coloquialmente chamada, memória RAM.
+[047.7] Pode não parecer, mas circuitos como esse
+[047.7] são suficientes para guardar todo tipo de informação.
+[047.7] E isso quer dizer todo texto, imagem, conhecimento,
+[047.8] toda arte em áudio e vídeo produzida pelo ser humano,
+[047.9] tudo isso pode ser representado no computador com uns e zeros.
+[047.9] No caso de texto, por exemplo,
+[048.0] a gente pode usar o código ASCII,
+[048.0] que vai associar para cada letra do alfabeto ou cada símbolo
+[048.1] um número de 7 bits,
+[048.1] perfeito para o computador que a gente está reinventando.
+[048.1] É claro que para vídeos, fotos, músicas,
+[048.2] a gente vai precisar de códigos mais complicados e muito mais espaço.
+[048.2] A memória que você tem no seu PC
+[048.3] provavelmente tem pelo menos 4 gigabytes,
+[048.3] o que significa que o seu computador tem pelo menos
+[048.4] 4 bilhões de vezes o 1 byte de memória que a gente acabou de fazer.
+[048.5] Só para você ter uma ideia,
+[048.5] o computador que levou a humanidade pela primeira vez à Lua
+[048.5] só precisou de 8 mil bytes,
+[048.6] ou seja, o equivalente a 32 mil flip flops,
+[048.6] como os nossos aqui.
+[048.6] É, meu amigo, o nosso computador
+[048.7] infelizmente vai ter que comer muito feijão
+[048.7] antes de lançar um foguete,
+[048.7] mas todo mundo precisa começar em algum lugar, não é mesmo?
+[048.8] Ok, a gente pode guardar todas essas informações,
+[048.8] todas essas coisas,
+[048.8] mas e os programas, os jogos, os editores de vídeo,
+[048.9] tudo aquilo que a gente sonhava em rodar?
+[048.9] Será que a gente vai mesmo precisar abrir o computador
+[049.0] e criar novos circuitos toda vez que lançarem um Call of Duty novo?
+[049.0] Para responder essa pergunta,
+[049.0] nós vamos ter que conhecer um pouco mais do trabalho
+[049.1] de um jovem inglês bem pouco conhecido.
+[049.2] Alan Madison Turing nasceu em 1912 em Londres,
+[049.3] filho de pais ausentes que viviam lá na Índia,
+[049.3] enquanto ele e o irmão moravam com um casal aposentado na Inglaterra.
+[049.4] Na infância, Alan Turing já demonstrava sinais do seu interesse em ciência e matemática,
+[049.5] mas isso não impressionou seus professores.
+[049.5] Matemática não era muito valorizado na sua escola,
+[049.6] e em uma ocasião um professor alertou os pais de Alan Turing
+[049.6] que existia o risco que ele se tornasse um mero especialista científico.
+[049.7] Mesmo sem nenhum incentivo,
+[049.7] Turing ingressou na Universidade King's College em Cambridge
+[049.8] para estudar matemática,
+[049.8] onde se graduou com honras com 22 anos de idade.
+[049.8] No ano seguinte, Turing participou de uma aula sobre fundações da matemática,
+[049.9] na qual Max Newman explicou sobre o problema da decidibilidade.
+[050.0] Esse mesmo problema havia sido selecionado por David Hilbert
+[050.0] como um dos problemas mais importantes do novo século.
+[050.1] O problema da decidibilidade era a tarefa de criar um algoritmo
+[050.1] que sempre conseguisse dizer se uma proposição matemática pode ou não ser provada.
+[050.2] Mas, afinal, o que é um algoritmo?
+[050.2] São algoritmos.
+[050.3] Uma sequência de instruções que permite multiplicar dois números com um ábaco,
+[050.3] o método de multiplicação que você aprendeu na escola,
+[050.4] o processo que você segue para ordenar um baralho de cartas
+[050.4] e todos os programas de computador que você já usou na vida.
+[050.5] Esses quatro são apenas sequências de instruções finitas
+[050.5] que, se seguidas de forma mecânica e à risca,
+[050.6] levam a um resultado previsível.
+[050.6] Mas o que significa exatamente esse de forma mecânica?
+[050.7] Apesar de algoritmos já serem usados desde as civilizações mais antigas da história,
+[050.8] até Alan Turing tentar resolver o problema da decidibilidade,
+[050.8] ninguém tinha conseguido dizer exatamente o que era um algoritmo.
+[050.9] Poucos meses depois daquelas aulas,
+[050.9] o Turing entregou na mesa de Max Neumann
+[051.0] o primeiro esboço do artigo chamado Sobre os Números Computáveis,
+[051.0] que demonstrava ser impossível desenvolver um algoritmo
+[051.1] que sempre conseguisse dizer se uma proposição matemática é verdade ou não.
+[051.2] Mas sabe o que é engraçado e que acontece bastante na história da ciência?
+[051.2] A parte mais relevante do artigo nem é a solução do problema,
+[051.3] mas sim a forma como Turing demonstrou essa solução.
+[051.3] Para responder se um dia seria possível criar um algoritmo
+[051.4] capaz de decidir a verdade ou falsidade de qualquer afirmação matemática,
+[051.5] Turing teve que primeiro definir o que exatamente é um algoritmo.
+[051.6] Para isso, ele imaginou uma pessoa fazendo uma multiplicação simples em uma folha de papel,
+[051.6] o que todo mundo na época concordava que era um tipo de algoritmo.
+[051.7] E aí veio a pergunta.
+[051.7] Quais são os elementos absolutamente necessários para executar essa tarefa?
+[051.8] Capturando só o que era essencial,
+[051.8] Turing visionou essa máquina imaginária,
+[051.9] que seria capaz de executar qualquer algoritmo
+[051.9] usando apenas operações muito básicas
+[052.0] que qualquer pessoa concordaria que são evidentemente mecânicas.
+[052.0] A máquina atua em uma fita que se estende infinitamente.
+[052.1] Essa fita seria dividida em pequenos segmentos,
+[052.1] cada um podendo conter um ou zero ou ficar em branco.
+[052.2] Então ela se moveria por essa fita parando em um quadradinho por vez
+[052.3] e reconhecendo o símbolo que está ali inscrito.
+[052.3] Dependendo desse símbolo e de uma regra interna da máquina,
+[052.3] ela poderia trocar o símbolo ou deixá-lo intacto.
+[052.4] E depois disso, se mover para a esquerda ou para a direita.
+[052.4] Apenas uma casa por vez.
+[052.5] Como exemplo, nós vamos ver uma máquina bem simples
+[052.5] que tem a única função de adicionar 1 ao número que ela recebe na fita.
+[052.6] Nesse caso, a fita que a gente está usando tem o número 27 escrito em binário.
+[052.6] O resultado que a máquina tem que nos devolver
+[052.7] é o número 28, também escrito em binário.
+[052.7] Agora a gente vai entender quais são as regras
+[052.7] que a máquina tem que seguir para conseguir executar essa tarefa.
+[052.8] Primeiro, ela está no estado começar,
+[052.9] e encontra um espaço em branco.
+[052.9] Isso faz com que ela se mova para a direita
+[053.0] e troque para o estado mover.
+[053.0] Depois, no estado mover, ela encontra o 1
+[053.0] o que faz com que ela troque esse 1 por 0
+[053.1] e se mova para a direita.
+[053.1] Continuando no estado mover, ela encontra outro 1
+[053.1] e por isso ela troca esse 1 por 0
+[053.2] e se move para a direita de novo.
+[053.2] Finalmente, continuando no estado mover,
+[053.2] ela encontra um 0, troca esse 0 por 1,
+[053.3] troca o estado para voltar
+[053.3] e agora se move para a esquerda.
+[053.3] No estado voltar, toda vez que ela encontrar um 0
+[053.4] ela vai continuar indo para a esquerda
+[053.4] até que ela chegue no final da fita onde tem um espaço em branco.
+[053.4] E lá, vendo o espaço em branco,
+[053.5] ela troca para o estado parar
+[053.5] que encerra o funcionamento da máquina.
+[053.5] Esse objeto matemático que descrevemos
+[053.6] é conhecido hoje como máquina de Turing.
+[053.6] Que o Turing, claro, chamou
+[053.6] só de máquina. Essa descrição em particular
+[053.7] não é exatamente a que foi feita por Turing
+[053.7] no artigo, mas é uma versão equivalente
+[053.7] inspirada num livro
+[053.8] de Martin Davis. Inclusive foi ele
+[053.8] que usou o termo máquina de Turing pela primeira vez.
+[053.8] Pode parecer que a máquina de Turing
+[053.9] é simples demais,
+[053.9] mas como Turing e outros matemáticos
+[053.9] demonstraram, ela é suficiente
+[054.0] para executar todos os algoritmos
+[054.0] que são conhecidos. Um algoritmo então
+[054.0] seria tudo aquilo que a máquina de Turing
+[054.1] consegue executar. Ó, esse ponto
+[054.1] ele é sutil e super importante.
+[054.1] Porque no fundo, o Turing propôs
+[054.2] que a nossa intuição de algoritmo
+[054.2] pode ser totalmente capturada
+[054.2] pela máquina que ele imaginou. Não existe
+[054.3] nenhum processo que a gente poderia chamar de
+[054.3] mecânico que ela não consegue fazer.
+[054.3] Olha só,
+[054.4] essa proposta de definição de Turing
+[054.4] não é algo que pode ser provado matematicamente.
+[054.4] Como o que ela promete é capturar
+[054.5] as noções intuitivas de um algoritmo
+[054.5] que matemáticos já tinham por milênios,
+[054.5] o melhor que a gente pode fazer
+[054.6] é verificar que ela de fato consegue executar
+[054.6] tudo aquilo que a gente já entende
+[054.6] por um algoritmo. Uma pista
+[054.7] de que Turing estava realmente certo
+[054.7] é que menos de um ano antes de ele entregar
+[054.7] o seu artigo na mesa de Newman,
+[054.8] do outro lado do oceano, um matemático americano
+[054.8] chamado Alonzo Church
+[054.8] tinha oferecido uma nova definição de algoritmo
+[054.9] com seu cálculo lambda.
+[054.9] Algo que Turing não tinha como saber.
+[054.9] Foi observado com facilidade
+[055.0] que o cálculo lambda de Church
+[055.0] e a máquina de Turing são equivalentes.
+[055.0] Ou seja, oferecem exatamente
+[055.1] a mesma definição de algoritmo.
+[055.1] Essa ideia de que a máquina de Turing
+[055.1] e todas as outras construções equivalentes
+[055.2] capturam o que é
+[055.2] computação, se chama
+[055.2] Tese de Church-Turing. Algo que pode parecer
+[055.3] um pouco surpreendente é que alguns cientistas
+[055.3] defendem a versão expandida dessa tese.
+[055.3] Que diz que todo o universo
+[055.4] é computável. Ou seja,
+[055.4] que poderia ser simulado
+[055.4] com uma máquina de Turing como
+[055.5] essa aqui.
+[055.5] Ok, mas até aqui
+[055.5] o Turing nos mostrou que há uma máquina
+[055.6] para cada algoritmo escolhido.
+[055.6] Não é o mesmo problema que descobrimos
+[055.6] com o nosso computador, já que nós
+[055.7] tínhamos que modificá-lo a cada nova função?
+[055.7] É aí que entra uma das ideias
+[055.7] mais bonitas da matemática
+[055.8] e da ciência da computação.
+[055.8] A máquina universal. Acontece que
+[055.8] o Turing também provou em seu artigo
+[055.9] a existência de uma máquina capaz
+[055.9] de simular qualquer outra máquina
+[055.9] de Turing. Ou seja, não seria necessário
+[056.0] mudar a máquina para cada nova
+[056.0] aplicação. Para ver como isso funciona
+[056.0] vamos voltar para o exemplo que a gente viu
+[056.1] agora há pouco. Para construir uma máquina
+[056.1] universal, a gente vai precisar codificar
+[056.1] cada uma das regras possíveis que uma máquina
+[056.2] de Turing pode ter em números
+[056.2] binários. Por exemplo,
+[056.2] o estado mover poderia se tornar um número de 4 bits
+[056.3] como esse. A própria seta
+[056.3] de passagem que a gente estava usando,
+[056.3] daria outro número binário. A mesma coisa
+[056.4] valeria para os comandos de ir para a esquerda
+[056.4] ou para a direita. Dessa forma, a gente consegue
+[056.4] colocar em uma fita só, não só o número
+[056.5] que vai ser processado, como também em forma
+[056.5] numérica os comandos que a máquina vai
+[056.5] seguir para processar esse número.
+[056.6] Fingindo ser outra máquina.
+[056.6] O estado de mover que a gente viu antes estaria
+[056.6] na fita escrito assim, por exemplo.
+[056.7] E essa é essencialmente a prova do porquê
+[056.7] que existe uma máquina universal.
+[056.7] A chave está que eu consigo codificar qualquer
+[056.8] máquina de Turing na própria fita
+[056.8] que vai ser processada por essa outra máquina.
+[056.8] Um sistema que consegue replicar
+[056.9] qualquer máquina de Turing,
+[056.9] assim como a máquina universal, é chamado
+[056.9] de Turing completo. Se conseguirmos
+[057.0] mostrar que o nosso computador é capaz
+[057.0] de fazer as mesmas coisas que a máquina
+[057.0] de Turing, só desconsiderando a memória
+[057.1] finita, vamos ter certeza de que ele
+[057.1] é capaz de executar qualquer algoritmo
+[057.1] e, por consequência, todos
+[057.2] os programas que existem ou que ainda
+[057.2] serão criados. Felizmente, nós já
+[057.2] temos todos os ingredientes principais
+[057.3] para tornar isso possível.
+[057.3] Agora, a gente só precisa preparar
+[057.3] os acompanhamentos.
+[057.4] Para que o nosso computador consiga executar
+[057.5] todo tipo de programa, sem que a gente
+[057.5] precise ficar ligando e desligando circuitos,
+[057.5] nós vamos nos inspirar na máquina
+[057.6] de Turing universal e fazer
+[057.6] com que o nosso computador consiga ler códigos.
+[057.6] E de bônus, você vai finalmente
+[057.7] entender a diferença entre hardware
+[057.7] e software. Pensa comigo,
+[057.7] a máquina de Turing tinha estados e
+[057.8] dependendo de qual era esse estado, ela
+[057.8] tratava o número que estava sendo lido
+[057.8] de forma diferente. Nós vamos fazer algo
+[057.9] parecido, criando circuitos
+[057.9] que executam funções diferentes
+[057.9] que são equivalentes aos estados
+[058.0] da máquina de Turing. Depois,
+[058.0] nós vamos representar cada uma dessas
+[058.0] funções por um código que vai indicar
+[058.1] para o computador quando elas devem
+[058.1] ser executadas. Beleza, mas quantas
+[058.1] funções diferentes nós vamos
+[058.2] precisar para criar um computador
+[058.2] universal? Mil? Duas mil?
+[058.2] Cem mil? Na verdade,
+[058.3] apenas essas cinco aqui são
+[058.3] bem mais do que suficientes. Essa
+[058.3] arquitetura que eu vou mostrar foi inspirada no
+[058.4] cenário Intel 8080 e em um
+[058.4] artigo do pesquisador Raul Rojas
+[058.4] sobre computadores universais. O primeiro passo
+[058.5] vai ser combinar a unidade de aritmética
+[058.5] com uma célula de memória
+[058.5] para formar um acumulador.
+[058.6] A diferença é
+[058.6] que em vez da unidade de aritmética receber dois
+[058.6] números e devolver um resultado,
+[058.7] ela vai receber apenas um número por vez
+[058.7] e ir somando ou subtraindo esse
+[058.7] valor do valor que fica acumulado,
+[058.8] ou seja, salvo nessa memória
+[058.8] especial. Por isso o nome.
+[058.8] Além disso, de uma forma inspirada lá
+[058.9] na fita da máquina de Turing, a gente vai combinar
+[058.9] várias memórias de quatro bits
+[058.9] e juntar elas lado a lado, como está
+[059.0] representado aqui, onde cada um desses
+[059.0] blocos é uma memória diferente de quatro bits.
+[059.0] Outra coisa, vamos dar um
+[059.1] endereço para cada uma dessas células
+[059.1] de memória, que também vai ser um número de
+[059.1] quatro bits, contando a partir
+[059.2] do zero. Então aqui, zero, um,
+[059.2] dois, três e assim por diante. A
+[059.2] forma com que o computador vai processar esses
+[059.3] endereços vai ser bem parecida com o que a gente
+[059.3] mostrou lá na parte sobre memória,
+[059.3] usando um seletor. Com a diferença,
+[059.4] de que agora, o endereço não leva
+[059.4] apenas para um bit do chip de memória,
+[059.4] mas para uma célula inteira dessas.
+[059.5] Como nosso objetivo secreto é conseguir
+[059.5] escrever um programa nessa memória,
+[059.5] vamos também precisar de um novo circuito
+[059.6] chamado contador, que vai controlar
+[059.6] qual a próxima célula de memória
+[059.6] que o computador precisa ler.
+[059.8] Internamente, ele é feito com uma memória
+[059.8] de quatro bits e mais alguns circuitos
+[059.8] espertos que permitem com que ele adicione
+[059.9] um ao valor do endereço. Agora,
+[059.9] lembra daqueles códigos que a gente mostrou? Como a memória
+[059.9] só consegue lembrar de números binários,
+[060.0] nós vamos escolher um número de quatro bits
+[060.0] para cada um deles. O ADD, que adiciona
+[060.0] um número ao acumulador, vai ser representado
+[060.1] por 1100. O SUB,
+[060.1] que subtrai um número do acumulador,
+[060.1] vai ser o 1101.
+[060.2] O SAVE, que serve para salvar um número
+[060.2] do acumulador, na memória, vai ser
+[060.2] representado pelo 0010.
+[060.3] O LIMP, que zera o acumulador,
+[060.3] vai ser o 0011. E o MPR,
+[060.3] que vem de mudar para,
+[060.4] vai ser o 1010.
+[060.4] Mas como que tudo isso funciona
+[060.4] junto para permitir que o computador
+[060.5] leia códigos? Como ele vai saber o que
+[060.5] fazer quando lê um? Seria um pouco
+[060.5] complicado e bem entediante
+[060.6] mostrar cada circuito de controle
+[060.6] que seria necessário para essa tarefa.
+[060.6] Mas como a gente já explicou os princípios de como
+[060.7] criar novos circuitos antes no vídeo,
+[060.7] nós vamos te falar apenas o principal,
+[060.7] para que você entenda como os códigos
+[060.8] realmente são lidos na máquina
+[060.8] e possa replicar esse feito em
+[060.8] caso de emergência. Sincronizado por
+[060.9] um relógio, o computador vai levar energia
+[060.9] lá para o endereço de memória da vez.
+[060.9] Esses 4 bits guardados na célula
+[061.0] então vão controlar a passagem
+[061.0] de energia por uma série de portões
+[061.0] AND, OR e NOT, que vão descobrir
+[061.1] qual o código exato que está sendo lido.
+[061.1] As opções vão ir afunilando cada vez
+[061.1] mais até que só sobre energia
+[061.2] no circuito correspondente ao código
+[061.2] certo. Lembra comigo que cada
+[061.2] um desses valores aqui é
+[061.3] um ponto onde a energia está ligada ou
+[061.3] desligada. No 1 a energia está ligada,
+[061.3] no 0 a energia está desligada. Se eu passar
+[061.4] os dois primeiros bits de um código
+[061.4] por um portão AND e o resultado
+[061.4] for 1, isso me garante que esses dois
+[061.5] bits eram 1. E portanto, só com essa
+[061.5] informação a gente sabe que o código precisa
+[061.5] ser um ADD ou um SUB,
+[061.6] porque eles são os únicos códigos que começam
+[061.6] com dois 1s em sequência.
+[061.6] Agora, passando um OR pelos últimos dois
+[061.7] bits e recebendo um resultado positivo,
+[061.7] a gente vai saber que pelo menos
+[061.7] um deles precisa ser 1.
+[061.8] E portanto, o único código
+[061.8] que satisfaz isso é o SUB.
+[061.8] É algo muito similar que o computador vai fazer para
+[061.9] cada um desses códigos, até que ele
+[061.9] encontre exatamente qual é o circuito
+[061.9] que precisa receber energia.
+[062.0] Acompanha comigo. Se o código for ADD,
+[062.0] o computador vai ser ativado para ler o valor
+[062.0] da próxima célula como um endereço
+[062.1] de memória. Esse endereço
+[062.1] que estava aqui nessa célula vai ir para o
+[062.1] seletor. O seletor então vai enviar energia
+[062.2] para esse novo endereço, que nesse caso
+[062.2] vai ser essa célula aqui. Mas dessa
+[062.2] vez com um sinal que diz que
+[062.3] esse valor deve ser lido como um número
+[062.3] e somado ao acumulador.
+[062.4] Algo bem similar acontece com o SUB,
+[062.4] só que dessa vez um sinal é
+[062.4] enviado para o acumulador
+[062.5] informando a unidade de aritmética que
+[062.5] a operação que ela deve fazer é subtração
+[062.5] em vez de adição.
+[062.6] O SAVE também vai ler a célula
+[062.6] seguinte depois dele como um
+[062.6] endereço de memória. Ele vai então ativar
+[062.7] uma série de circuitos que
+[062.7] ativa o botão de salvar naquele endereço
+[062.7] permitindo com que o que estava lá
+[062.8] seja trocado pelo valor que fica
+[062.8] salvo no acumulador.
+[062.9] Já o LIMP é o mais simples
+[062.9] de todos os nossos códigos. Tudo que ele faz
+[062.9] é ativar um circuito que fica
+[063.0] pré-programado aqui no acumulador
+[063.0] que vai zerar tudo que está salvo
+[063.0] na memória.
+[063.1] Já o MUDARPARA é o mais complicado
+[063.1] de todos. Primeiro ele checa se o
+[063.1] acumulador está sinalizando que está vazio
+[063.2] usando uma série de portões AND
+[063.2] e depois se o acumulador estava realmente
+[063.2] vazio, ele então vai ler o valor da
+[063.3] próxima célula como um endereço
+[063.3] de memória e trocar
+[063.3] o valor que está no contador
+[063.4] por esse novo endereço. Assim enganando
+[063.4] o contador a pensar que ele estava
+[063.4] prestes a ler esse novo endereço que acabou
+[063.5] de entrar aqui. O MPR pode parecer um pouco
+[063.5] sem sentido, mas na verdade ele é essencial
+[063.5] porque vai permitir ao computador saltar
+[063.6] para diferentes partes da fita
+[063.6] ao invés de sempre processá-la
+[063.6] na mesma ordem. Agora vem a parte
+[063.7] legal mesmo. Combinando esses
+[063.7] códigos podemos fazer coisas bem
+[063.7] complicadas. Agora a gente vai fazer coisas
+[063.8] bem complicadas, tu acredita?
+[063.9] Um dos primeiros que vai ser muito útil pra gente
+[063.9] é o código LOAD, que carrega o valor
+[064.0] do endereço no acumulador. Nós podemos
+[064.0] formar ele com dois códigos básicos assim
+[064.0] um código LIMP, um código ADD
+[064.1] seguido de um endereço. Primeiro ele vai limpar
+[064.1] o acumulador, depois ele vai adicionar o valor
+[064.1] que fica salvo no endereço
+[064.2] que está na célula de baixo, ou seja, aqui
+[064.2] seria esse 1010, lá no acumulador.
+[064.2] Portanto dando o LOAD do que estava
+[064.3] nesse endereço no acumulador. Outro exemplo
+[064.3] simples é o clássico GO TO, que é
+[064.3] bem conhecido na área da programação. Ele pode
+[064.4] ser feito com um LIMP seguido de MPR.
+[064.4] Como o LIMP já zerou
+[064.4] o acumulador, esse código sempre
+[064.5] vai trocar o contador para o
+[064.5] endereço que está na célula seguinte
+[064.5] que nesse caso seria essa daqui. Por isso
+[064.6] o nome, porque ele faz o computador ir automaticamente
+[064.6] para aquela célula. E agora a gente vai tentar criar
+[064.6] um exemplo daqueles loops que a gente conhece
+[064.7] lá da programação.
+[064.7] Esse programa vai funcionar assim. Primeiro ele vai dar
+[064.8] LOAD no valor que está nesse endereço aqui
+[064.8] ou seja, esse número
+[064.8] que vai aqui para o acumulador
+[064.9] depois ele vai dar
+[064.9] SUB, ou seja, ele vai subtrair
+[064.9] o valor que está nesse endereço do acumulador
+[065.0] que no caso aqui é só 1
+[065.0] ou seja, em vez de 12 em binário, esse valor
+[065.0] vai virar 11 em binário
+[065.1] depois ele vai salvar o valor que está
+[065.1] no acumulador no mesmo endereço de antes
+[065.1] que é esse aqui. Então agora o valor
+[065.2] que fica aqui nesse lugar
+[065.2] é o 11. Quando chegar no MUDARPARA
+[065.2] ele vai conferir se o valor do acumulador é 0
+[065.3] como a gente acabou de ver ele é 11
+[065.3] então o que vai acontecer é que ele vai ir direto
+[065.3] para essa parte aqui do GO TO que vai fazer o programa
+[065.4] voltar para o 0, ou seja
+[065.4] dar LOAD de novo no valor que estava aqui nesse endereço
+[065.4] que agora é 11
+[065.5] subtrair 1 desse valor
+[065.5] depois salvar o valor subtraído nesse
+[065.5] endereço, depois tentar mudar
+[065.6] para um endereço que pula o GO TO
+[065.6] o que não vai dar certo e então
+[065.6] voltar para o começo, ou seja
+[065.7] esse programa vai repetir de novo e de novo
+[065.7] até que o valor que estava aqui no começo
+[065.7] for a 0. E a gente poderia usar essa mesma
+[065.8] estrutura para repetir qualquer outro
+[065.8] processo de programação que a gente queira
+[065.8] que aconteceria aqui no meio
+[065.9] entre o MPR e o GO TO. E como prometemos
+[065.9] agora você entende a diferença
+[065.9] entre hardware e software. Hardware
+[066.0] são os relés, portões lógicos e todos
+[066.0] os circuitos que fizemos. Software são esses
+[066.0] códigos que podemos combinar de
+[066.1] múltiplas formas para fazer os mais variados
+[066.1] programas sem mexer em nenhum circuito.
+[066.1] E finalmente dá para ver com bastante
+[066.2] facilidade que qualquer programa que poderia
+[066.2] rodar na máquina de Turing, também
+[066.2] poderia rodar no nosso computador. Como você
+[066.3] lembra, a máquina de Turing conseguia para a
+[066.3] esquerda e para a direita uma casa por vez
+[066.3] e trocar o valor que estava lá de 1
+[066.4] para 0 ou de 0 para 1. Já o nosso
+[066.4] computador consegue saltar pela fita
+[066.4] quantas vezes ele quiser, somar e subtrair
+[066.5] números de 4 bits e de quebra salvar eles
+[066.5] em qualquer lugar da fita. Mas também não vai achando
+[066.5] que o nosso computador é mais poderoso que a
+[066.6] máquina de Turing por causa disso. Na verdade eles
+[066.6] são equivalentes, com exceção de que um é bem
+[066.6] mais apto que o outro e do fato de que a máquina
+[066.7] de Turing tem memória ilimitada.
+[066.7] E portanto, nós realmente conseguimos.
+[066.7] O computador que projetamos, se
+[066.8] fosse construído de fato, seria
+[066.8] universal. Tão poderoso quanto qualquer
+[066.8] computador moderno.
+[066.9] Mas pera, os computadores são realmente feitos
+[066.9] dessa forma? Bom, sim
+[066.9] e não. A forma de construir
+[067.0] um computador mudou muito durante as últimas
+[067.0] décadas, mas os princípios que a gente
+[067.0] viu até aqui continuam os mesmos.
+[067.1] No mesmo ano que o Turing publicou seu
+[067.1] artigo tão importante, um estudante
+[067.1] de doutorado de física de Harvard
+[067.2] estava indignado com a
+[067.2] necessidade de fazer longos cálculos
+[067.2] repetitivos em uma calculadora mecânica
+[067.3] de mesa. E aí reclamando sobre isso
+[067.3] ele acabou descobrindo que no sótão
+[067.3] do departamento haviam algumas rodas
+[067.4] de latão que foram construídas
+[067.4] anos antes para ajudar com cálculos
+[067.4] similares ao que ele estava precisando resolver.
+[067.5] E foi assim que Howard Hawking
+[067.5] reencontrou partes da primeira invenção
+[067.5] de babage. Isso 100 anos
+[067.6] após o inventor ter abandonado o projeto
+[067.6] por falta de fundos. E exatamente as mesmas
+[067.6] rodas de latão foram usadas
+[067.7] no primeiro projeto computacional do
+[067.7] Hawking que foi construído com relés
+[067.7] como nosso computador. E chegou muito
+[067.8] perto de finalmente alcançar
+[067.8] o sonho de babage. Esse feito, no entanto,
+[067.8] ficou para o Z3, um projeto
+[067.9] construído por Konrad Suse na Alemanha
+[067.9] em 1941.
+[067.9] O Z3, usando 2.600
+[068.0] relés, foi o primeiro computador
+[068.0] funcional que pôde ser considerado
+[068.0] universal. Desde então as coisas
+[068.1] mudaram muito. O relé foi
+[068.1] substituído por outras tecnologias
+[068.1] que conseguem representar zeros e uns
+[068.2] de uma forma muito mais rápida.
+[068.2] A primeira substituição foi por
+[068.2] tubos a vácuo. E depois veio
+[068.3] a maior invenção de todas, o transistor.
+[068.3] A invenção de engenharia
+[068.3] mais importante do século passado
+[068.4] foi a de transformar isso
+[068.4] nisso.
+[068.4] O silício é um dos elementos mais
+[068.5] comuns do planeta Terra e compõe em torno
+[068.5] de 25% da areia que você encontra
+[068.5] na praia. E além disso, o silício é um
+[068.6] semicondutor, um elemento que fica tanto
+[068.6] em cima do muro quanto a livre
+[068.6] passagem de elétrons. A chave dessa
+[068.7] invenção foi modificar o silício
+[068.7] para que a condutividade dele
+[068.7] pudesse ser controlada com a aplicação
+[068.8] de uma pequena voltagem positiva.
+[068.8] Dessa forma, o transistor consegue funcionar
+[068.8] como um interruptor, que ao contrário
+[068.9] dos relés, não precisa de nenhuma
+[068.9] peça abrindo e fechando para
+[068.9] impedir ou permitir a passagem
+[069.0] de eletricidade. E é exatamente por isso
+[069.0] que comparado a qualquer outra forma de
+[069.0] apresentar uns e zeros que veio
+[069.1] antes, o transistor em pouquíssimo
+[069.1] tempo se tornou mais barato,
+[069.1] mais duradouro e
+[069.2] principalmente muito menor.
+[069.2] O que possibilitou que computadores
+[069.2] fossem produzidos em massa e
+[069.3] por consequência, transformassem
+[069.3] o mundo.
+[069.3] Em 1965, o pesquisador
+[069.4] e engenheiro Gordon Moore, que foi um
+[069.4] dos fundadores da Intel, observou
+[069.4] que o número de transistores por microchip
+[069.5] tende a dobrar a cada ano.
+[069.5] Algum tempo depois, ele corrigiu essa
+[069.5] previsão para cada dois anos,
+[069.6] que na sua forma final, ficou conhecida
+[069.6] como a Lei de Moore.
+[069.6] Por exemplo,
+[069.7] em 1971, o primeiro
+[069.7] microprocessador comercial da história,
+[069.7] que foi o Intel 4004,
+[069.8] possuía uma densidade de 188
+[069.8] transistores por milímetro quadrado.
+[069.8] Pouco mais de dois anos depois,
+[069.9] com o Intel 8080, a densidade
+[069.9] subiu para 300.
+[069.9] Oito anos depois, o Intel 80286
+[070.0] tinha uma densidade
+[070.0] de 2.730 transistores.
+[070.0] Nove vezes maior.
+[070.1] E as mudanças foram cada vez
+[070.1] mais drásticas.
+[070.1] Em 2008, o valor já era de quase
+[070.2] 2.800.000 com o Core i7.
+[070.2] E hoje, com o Core i9
+[070.2] 14.900K,
+[070.3] o valor é absurdo, gente.
+[070.3] É mais de 100 milhões
+[070.3] de transistores por milímetro quadrado.
+[070.4] Alguns interpretam que a Lei de Moore
+[070.4] se refere a um inevitável progresso
+[070.4] da tecnologia. Outros acham que a Lei de Moore
+[070.5] chegou ao seu limite no ano desse vídeo aqui,
+[070.5] devido aos problemas quânticos
+[070.5] que vão surgir ao se tentar produzir
+[070.6] transistores ainda menores.
+[070.6] Eu pessoalmente prefiro uma terceira visão.
+[070.6] A de que a Lei de Moore não é uma previsão,
+[070.7] mas ela é um objetivo. A cada ano,
+[070.7] muito esforço é colocado em alcançar essa meta
+[070.7] e se não for possível diminuir
+[070.8] o tamanho de transistores, nós vamos sim
+[070.8] encontrar outra forma de aumentar
+[070.8] o poder computacional da humanidade.
+[070.9] Nos primeiros computadores, como foi o caso
+[070.9] lá do Mark I, os programas eram escritos
+[070.9] à mão, em folhas de papel mesmo.
+[071.0] Para que eles sequer conseguissem entender
+[071.0] o que eles estavam fazendo, os programadores
+[071.0] escreviam palavras-chave que representavam
+[071.1] aquelas funções do computador,
+[071.1] de forma bem parecida com o que a gente estava fazendo agora há pouco.
+[071.1] O programa em texto, então, seria traduzido
+[071.2] para código binário e só então
+[071.2] colocado no computador. Mais tarde,
+[071.2] foram inventados programas que automaticamente
+[071.3] conseguiam fazer essa tradução.
+[071.3] Lá no começo dos anos 50, uma programadora
+[071.3] chamada Grace Hopper, que foi muitas vezes
+[071.4] comparada com a Condessa de Lovelace,
+[071.4] escreveu um desses primeiros tradutores
+[071.4] e cunhou o termo compiladores.
+[071.5] Não demorou nada para alguém usar
+[071.5] o trabalho de Hopper e de outras pessoas
+[071.5] como base para criar linguagens ainda mais
+[071.6] amigáveis. E isso nunca parou.
+[071.6] Linguagens de programação cada vez
+[071.6] mais parecidas com o discurso cotidiano
+[071.7] foram lançadas todos os anos desde então.
+[071.7] Mesmo que abandonar o código binário
+[071.7] tenha feito a gente perder um pouquinho de intimidade
+[071.8] com o computador, foi esse castelo de abstração
+[071.8] que permitiu que pessoas por todo o mundo
+[071.8] seguissem os passos de Lovelace
+[071.9] e escrevessem programas cada vez
+[071.9] mais complexos e incríveis.
+[071.9] Durante essa jornada
+[072.0] a gente investigou os estranhos
+[072.1] computadores à manivela, enganamos
+[072.1] a eletricidade a pensar por nós
+[072.1] e criamos um computador usando relés
+[072.2] que apesar de ser um pouco lerdinho
+[072.2] é capaz de simular qualquer computador
+[072.2] moderno. E se você está assistindo
+[072.3] isso aqui em um futuro pós-apocalíptico
+[072.3] e se perguntando se esse esforço
+[072.3] todo valeu a pena por um computador
+[072.4] tão simples, pense em como agora
+[072.4] você tem mais poder de computação
+[072.4] do que uma sala cheia de pessoas que
+[072.5] nunca se cansam. E como a gente aprendeu com Turing
+[072.5] ter mais poder de computação
+[072.5] não é só uma questão de resolver contas maiores
+[072.6] também tem a ver com a capacidade
+[072.6] que a humanidade tem de resolver problemas em geral
+[072.6] pisar na lua, investigar as estrelas
+[072.7] mapear o genoma humano
+[072.7] a internet, todos
+[072.7] esses acontecimentos só foram possíveis
+[072.8] com um computador. E se um dia
+[072.8] a humanidade for capaz de curar o câncer
+[072.8] domar o poder do sol e tomar
+[072.9] seu lugar entre as estrelas, pode
+[072.9] ter certeza que participando de todas
+[072.9] essas conquistas, de alguma
+[073.0] forma, vai haver um computador
+[073.0] e você acabou de inventar um
+[073.1] e esse foi o primeiro
+[073.1] vídeo do infinitamente
+[073.2] um projeto novo, um canal do youtube
+[073.2] que vai falar sobre ciência de uma forma
+[073.2] aprofundada, mas sempre divertida
+[073.3] interessante, sem subestimar
+[073.3] quem tá assistindo. Se você ainda não é inscrito
+[073.3] se inscreve, mas se você já era inscrito
+[073.4] não fica assustado, esse era o meu canal
+[073.4] pessoal, mas os vídeos que estavam aqui
+[073.4] estão salvos em outro canal que eu vou deixar o link
+[073.5] na descrição. Mas não vai embora não, continue
+[073.5] inscrito porque esse projeto aqui tá sendo feito
+[073.5] com super carinho e você vai ser muito importante
+[073.6] pro futuro desse projeto. Ah, e eu preciso
+[073.6] apresentar o Adrian pra vocês, que é o meu parceiro
+[073.6] nessa jornada nova, ele gosta
+[073.7] muito de computação, matemática
+[073.7] todos os temas envolvendo ciência
+[073.7] se apresenta pra galera. E aí pessoal, beleza?
+[073.8] Fazer esse canal se tornar possível tem sido
+[073.8] a realização de um sonho, pra nós dois
+[073.8] pra nós dois, de poder trabalhar
+[073.9] aprendendo e
+[073.9] divulgando ciência. Então eu espero
+[073.9] muito que vocês tenham gostado desse vídeo tanto
+[074.0] quanto a gente gostou de fazer ele. Foi uma loucura
+[074.0] Foi uma loucura. Ó, fazer
+[074.0] vídeos como esse que você acabou de assistir
+[074.1] dá muito trabalho, exige muito
+[074.1] carinho e dedicação. Esse vídeo, por exemplo
+[074.1] ele levou mais de 4 meses
+[074.2] um arquivo de pesquisa de mais de 40 mil palavras
+[074.2] inteira de gravações
+[074.2] e a gente queria muito poder continuar
+[074.3] fazendo vídeos como esse. A gente tem
+[074.3] ideias de vídeos sobre astrobiologia, sobre
+[074.3] neurociência, inteligência artificial
+[074.4] inteligência artificial. É, muitos temas legais
+[074.4] gente. Se você curte essa ideia e quer ajudar nessa
+[074.4] missão, você pode, por exemplo, comprar
+[074.5] as camisetas exclusivas do canal que estão
+[074.5] na loja. Muito maneiro. Tem até um
+[074.5] que é exclusiva desse vídeo aqui
+[074.6] que a gente fez especialmente para esse vídeo.
+[074.6] Faz referência. É, vocês
+[074.6] assistiram o vídeo? Se vocês assistiram o vídeo
+[074.7] estão entendendo. Entenderam tudo, ó.
+[074.7] A máquina de Turing, Transistor
+[074.7] Tem tudo aí, ó. E foi essa
+[074.8] invenção que fez o Papa trocar
+[074.8] o nome do feriado para Páscoa. Para Páscoa
+[074.8] Percebi. E você também
+[074.9] pode virar assinante desse canal aqui
+[074.9] e receber conteúdos de backstage,
+[074.9] material extra sobre os vídeos que a gente faz
+[075.0] E a minha parte preferida, você vai poder fazer
+[075.0] perguntas que a gente vai responder em um
+[075.0] podcast sobre o vídeo que a gente fez.
+[075.1] Muito da hora. Interagir com a gente de forma direta.
+[075.1] E a ideia desse podcast vai ser justamente
+[075.1] expandir sobre todos os temas
+[075.2] que surgiram na pesquisa, mas a gente não
+[075.2] teve tempo de colocar no vídeo. Impressionantemente.
+[075.2] E ó, esse vídeo só
+[075.3] foi possível com a ajuda de pessoas muito
+[075.3] especiais. Tem várias para a gente agradecer, né? Tem várias.
+[075.3] Começar agradecendo ao Biscoitado, que é o editor
+[075.4] que editou esse vídeo maravilhoso. Os Zerbs e a
+[075.4] Aline, que foram super parceiros. Eles são os
+[075.4] responsáveis pela arte e também as animações
+[075.5] aqui do canal. E por último, mas não menos
+[075.5] importante, os nossos queridos amigos da
+[075.5] Tropical Game Lab, que nos ajudaram com aquele
+[075.6] software de simulação que a gente usou
+[075.6] para mostrar os circuitos. E o mais importante
+[075.6] é ajudar a gente a divulgar esse
+[075.7] conteúdo. Passar esse material para quem gosta
+[075.7] de computação, quer saber como o computador
+[075.7] funciona, curte ciência, manda para todo mundo.
+[075.8] Siga as nossas redes sociais que estão
+[075.8] todas na descrição e nos vemos
+[075.8] no próximo vídeo. Até lá. Tchau.
+[075.9] Ficou bom, né? Nossa, que isso. Simpatia.

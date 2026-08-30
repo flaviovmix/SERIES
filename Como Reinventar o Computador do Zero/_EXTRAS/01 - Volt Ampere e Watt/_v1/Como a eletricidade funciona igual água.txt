@@ -1,0 +1,7 @@
+Titulo: Como a eletricidade funciona igual água
+Notebook: 04-08-Volt Ampere e Watt
+
+Descricao:
+Estes documentos detalham um episódio especial da série "Como Reinventar o Computador do Zero", focado em esclarecer as principais unidades de medida da eletricidade de forma prática e acessível. O conteúdo utiliza uma única analogia central baseada em um prédio com caixa-d'água para traduzir conceitos complexos, relacionando a altura da caixa à tensão, o fluxo no cano à corrente e o trabalho da mangueira à potência. O roteiro impõe diretrizes rigorosas, como a proibição de termos técnicos rebuscados ou referências históricas, focando exclusivamente na utilidade cotidiana das medidas para o ouvinte. Além da explicação teórica, o material descreve uma animação interativa que auxilia na visualização de como aparelhos domésticos impactam o consumo e o valor da fatura de energia. O objetivo final é capacitar o público a interpretar etiquetas de eletrônicos e entender o funcionamento de componentes como disjuntores e baterias sem a necessidade de fórmulas matemáticas.
+
+Link: https://notebook.google.com/notebook/14e2f679-db38-4e8f-8ede-0e36b298100b

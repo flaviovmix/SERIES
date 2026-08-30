@@ -1,0 +1,147 @@
+Inicie dizendo: O Chip E O Microprocessador
+---------------
+
+Este e o segundo e ultimo episodio da etapa A ERA DOS TRANSISTORES, a oitava etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, O Transistor, cobriu de 1947 a 1965 e terminou com a Lei de Moore: o numero de transistores por chip dobrando todo ano. Este episodio volta um pouco no tempo pra contar como e que varios transistores foram parar dentro de um pedaco so, e termina com o computador inteiro cabendo numa unha.
+
+ESTE EPISODIO COBRE DE 1958 A 1971. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 9 telas. O audio TEM que pedir "aperte o Proximo" exatamente 8 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio tem tres personagens com ficha: Jack Kilby, Robert Noyce e Federico Faggin. A ficha de cada um entra na primeira vez que ele e citado e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu, ou que esta vivo. Os dados estao escritos tela a tela abaixo: usar exatamente esses, sem inventar nenhum dado biografico. Jack Morton, Jean Hoerni, Mohamed Atalla, Dawon Kahng, Gordon Moore, Ted Hoff, Stanley Mazor e Masatoshi Shima aparecem de passagem e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Chip E O Microprocessador.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A foto: o chip e impresso de uma vez, como uma fotografia revelada, e revelar uma foto com mil detalhes custa o mesmo que revelar uma foto com dez. Serve so pra explicar a fotolitografia e por que o preco do chip nao sobe com o numero de transistores.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O CHIP E O MICROPROCESSADOR)
+
+Retomar em uma frase onde o episodio passado parou: em 1965 Gordon Moore reparou que o numero de transistores dentro de um chip vinha dobrando todo ano. So que o episodio passado nao explicou o que e um chip, nem como varios transistores foram parar dentro de um.
+
+Dizer o que este episodio faz: volta um pouco no tempo e conta isso. Dizer o intervalo em voz alta: este episodio cobre de 1958 a 1971, de uma lasca de germanio com fios de ouro por cima ate um pedaco de silicio do tamanho de uma unha com um computador inteiro dentro.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o circuito integrado, que todo mundo chama de chip: um circuito inteiro, com varios transistores e as ligacoes entre eles, feito num unico pedaco de semicondutor. Data: 12 de setembro de 1958, dia em que o primeiro funcionou. Lugar: a Texas Instruments, em Dallas, no Texas.
+
+Motivacao: o transistor tinha resolvido o tamanho da peca, mas nao o numero de pecas. Em 1957 Jack Morton, dos Bell Labs, deu nome ao problema: a tirania dos numeros. Um computador tinha dezenas de milhares de transistores, resistores e capacitores, e cada um precisava ser ligado ao vizinho por um fio soldado a mao. Centenas de milhares de soldas. Cada solda custa tempo de uma pessoa, e cada solda e um lugar que pode falhar. A partir de um certo tamanho, a maquina fica impossivel de montar e impossivel de manter, nao por falta de transistor, mas por excesso de fio.
+
+Ficha humana de Jack Kilby. Nasceu em 8 de novembro de 1923 em Jefferson City, capital do estado de Missouri, nos Estados Unidos, que continua com o mesmo nome. Cresceu em Great Bend, no Kansas, onde o pai tocava uma pequena companhia de energia eletrica que atendia o interior do estado; foi vendo o pai consertar a rede depois de uma nevasca, com radioamador, que ele se interessou por eletronica. Estudou engenharia eletrica na Universidade de Illinois, formado em 1947, e fez mestrado na Universidade de Wisconsin, em Milwaukee, em 1950. Morreu em 20 de junho de 2005, aos 81 anos, em Dallas. Ganhou o Nobel de Fisica em 2000 por esta historia.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O VERAO DE 1958)
+
+Contar a cena. Kilby entrou na Texas Instruments em maio de 1958. Como era novo na empresa, nao tinha direito as ferias coletivas de julho, e ficou quase sozinho na fabrica vazia. A empresa queria que ele trabalhasse em miniaturizar circuito montando pecas menores; ele achou que isso era atacar o problema errado.
+
+A ideia dele, dita direto: resistor e capacitor normalmente sao feitos de outros materiais, mas da pra fazer os dois de semicondutor tambem, so que pior e mais caro. E se todas as pecas puderem ser feitas do mesmo material, entao da pra fazer todas no mesmo pedaco, uma do lado da outra, ja ligadas por dentro, sem ninguem soldar nada. Um circuito inteiro numa lasca so.
+
+Em 12 de setembro de 1958 ele mostrou a chefia: uma lasca de germanio de pouco mais de um centimetro, com um transistor, resistores e um capacitor feitos nela mesma, montando um oscilador. Ligou, e na tela do osciloscopio apareceu a onda subindo e descendo. Funcionava. Ele pediu a patente em 6 de fevereiro de 1959.
+
+Dizer a limitacao com honestidade: as ligacoes entre as pecas ainda eram fios de ouro finissimos, soldados por cima da lasca, um por um. O chip de Kilby provou a ideia, mas ainda nao dava pra fabricar em quantidade. Isso quem resolveu foi outra empresa, na California.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (NOYCE E O CIRCUITO SEM FIO)
+
+Ficha humana de Robert Noyce. Nasceu em 12 de dezembro de 1927 em Burlington, no estado de Iowa, nos Estados Unidos, que continua com o mesmo nome. O pai, Ralph Brewster Noyce, era pastor de uma igreja congregacional, e a familia se mudou de cidade em cidade ate parar em Grinnell, no mesmo estado, onde ele cresceu. Estudou fisica e matematica no Grinnell College, formado em 1949, e fez doutorado em fisica no MIT em 1953. Morreu em 3 de junho de 1990, aos 62 anos, de ataque do coracao, em Austin, no Texas.
+
+Lembrar de onde ele vem: Noyce era um dos oito que sairam da empresa de Shockley em 1957 pra fundar a Fairchild Semiconductor. La, um colega dele, o fisico suico Jean Hoerni, tinha inventado em 1959 o processo planar: em vez de um transistor com relevo, um transistor chato, protegido por uma camada de oxido de silicio, um vidro finissimo que cresce em cima do proprio silicio.
+
+A ideia de Noyce, de janeiro de 1959: se o chip e chato e coberto de vidro, da pra abrir buraquinhos nesse vidro nos lugares certos e depositar uma camada de aluminio por cima, com as ligacoes desenhadas nela. Nenhum fio. Nenhuma solda. As ligacoes sao feitas junto com as pecas, no mesmo processo. Esse e o circuito monolitico, e e assim que todo chip e feito ate hoje. Ele pediu a patente em 30 de julho de 1959.
+
+As duas empresas brigaram na justica por quem tinha inventado o chip, e a briga durou anos. Em 1966 Texas Instruments e Fairchild assinaram uma licenca cruzada, cada uma usando a patente da outra, e a historia registrou os dois como inventores: Kilby teve a ideia primeiro, Noyce fez o chip que da pra fabricar.
+
+Quem comprou. Em 1961 a Fairchild lancou a linha Micrologic, os primeiros chips a venda. Eram caros demais pra qualquer uso normal, e os primeiros clientes foram dois: o missil Minuteman, da Forca Aerea americana, e o programa Apollo, da NASA, que precisava de um computador leve e confiavel pra ir a Lua e foi o maior comprador de chips do mundo entre 1961 e 1965. Foi esse dinheiro que pagou pra industria aprender a fabricar chip barato.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (SOLDAS, TELA INTERATIVA)
+
+Explicar a conta que faz a tirania dos numeros ser tirania. Um circuito com poucas pecas tem poucas ligacoes. Mas as ligacoes crescem mais rapido que as pecas: dobrar o numero de componentes mais que dobra o numero de fios, porque cada peca nova se liga a varias que ja existem. Com dez pecas da pra soldar numa tarde. Com dez mil, e uma fabrica inteira soldando por meses, e cada solda que falha para a maquina.
+
+Dizer o que o chip monolitico faz com essa conta: zera. Nao importa se sao dez pecas ou dez mil, as ligacoes sao desenhadas junto com as pecas, no mesmo passo. Ninguem solda nada. A quantidade de trabalho humano deixa de depender do numero de pecas.
+
+Avisar: a tela tem dois circuitos lado a lado, um montado com fio e outro monolitico, e um controle pra aumentar o numero de componentes. Convide o ouvinte a subir o numero e reparar no contador de soldas de cada lado: um dispara, o outro fica em zero.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (A CORRIDA DOS DEZ ANOS)
+
+Contar o que aconteceu entre 1959 e 1969 em passos. Os primeiros chips tinham menos de dez transistores; a industria chamou isso de integracao em pequena escala. Por volta de 1964 vieram chips com dezenas e depois centenas, a media escala. No fim dos anos 60, milhares: a grande escala. Cada salto desses e uma dobra da Lei de Moore.
+
+Dizer o que mudou no transistor pra caber tanto. Em 1959 e 1960 Mohamed Atalla e Dawon Kahng, nos Bell Labs, fizeram funcionar um tipo diferente de transistor, o MOS, onde o controle e uma placa de metal separada do silicio pela camada de oxido, sem encostar. Ele e mais lento que o de juncao, mas e mais simples de fabricar, gasta muito menos energia e ocupa muito menos espaco. O primeiro chip MOS foi da RCA, em 1962, com 16 transistores. E esse tipo de transistor que esta em todo chip de hoje, aos bilhoes.
+
+Explicar a fotolitografia, que e o segredo do preco. Usar a analogia autorizada e deixar claro que e analogia: o chip e feito como uma fotografia revelada. Desenha-se o circuito grande, em cima de uma mascara; projeta-se a luz atraves da mascara sobre a lamina de silicio coberta de um material sensivel a luz; onde a luz bate, o material muda e deixa o passo seguinte, o acido ou a impureza, agir so ali. Repete-se isso camada por camada. O ponto e: revelar uma foto com mil detalhes custa o mesmo que revelar uma com dez. Por isso por mais transistor no chip nao deixa o chip mais caro; deixa cada transistor mais barato. A Lei de Moore e uma consequencia disso.
+
+Fechar a tela com a Intel. Em julho de 1968 Noyce e Gordon Moore sairam da Fairchild e fundaram a Intel, com a ideia de fazer memoria de chip pra substituir a memoria de nucleos magneticos dos computadores. Em 1970 saiu a Intel 1103, a primeira memoria de chip vendida em quantidade, com mil bits. A empresa que ia fazer o proximo passo estava montada.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (O COMPUTADOR INTEIRO NUM CHIP)
+
+A cena vem de fora. Em abril de 1969 uma fabricante japonesa de calculadoras, a Busicom, encomendou a Intel uma familia de sete chips sob medida pra uma calculadora de mesa, cada chip fazendo uma funcao. Um engenheiro da Intel, Ted Hoff, o funcionario numero 12 da empresa, achou aquilo desperdicio: sete projetos diferentes pra uma calculadora so. Ele propos, com Stanley Mazor, outra coisa: um unico chip generico, que faz o que a etapa 7 chamou de unidade aritmetica e de controle, e que le as instrucoes de uma memoria. Pra virar calculadora, e so gravar o programa da calculadora nessa memoria. Pra virar outra coisa, troca-se o programa. Em outubro de 1969 a Busicom aceitou.
+
+Dizer o que isso e, na linguagem da serie: e o computador de programa armazenado da etapa 7, o mesmo desenho do rascunho de von Neumann, so que agora o processador inteiro e um chip. O nome disso e microprocessador.
+
+Ficha humana de Federico Faggin, quem desenhou o chip. Nasceu em 1 de dezembro de 1941 em Vicenza, no norte da Italia, que continua com o mesmo nome. O pai, Giuseppe Faggin, era professor de filosofia e tradutor de textos gregos antigos. Estudou numa escola tecnica industrial de Vicenza e depois fisica na Universidade de Padua, formado em 1965. Esta vivo. Na Fairchild, em 1968, ele tinha desenvolvido a porta de silicio, um jeito de fazer o transistor MOS com o controle de silicio em vez de metal, mais rapido, mais confiavel e que cabe mais apertado.
+
+A execucao. Faggin entrou na Intel em abril de 1970 e pegou o projeto, que estava parado. Com a porta de silicio dele e com Masatoshi Shima, o engenheiro que a Busicom mandou pra acompanhar, o chip ficou pronto em janeiro de 1971. Em maio de 1971 a Intel devolveu a Busicom 60 mil dolares de custo de projeto em troca do direito de vender o chip pra qualquer um. E em 15 de novembro de 1971 saiu o anuncio na revista Electronic News: um computador num chip, uma nova era da eletronica integrada.
+
+Os numeros do Intel 4004: 2.300 transistores, palavras de 4 bits, 740 mil ciclos por segundo, uns 92 mil instrucoes por segundo, um pedaco de silicio de uns 12 milimetros quadrados, 3 por 4, dentro de uma capsula de 16 pinos, vendido a 60 dolares. Dizer a comparacao: o ENIAC, com 17.468 valvulas ocupando um salao, fazia umas 5 mil somas por segundo. Esse chip do tamanho de uma unha fazia mais, gastando menos de um watt.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA: QUANTO MEDE O 4004)
+
+Convidar a pausar o audio e resolver na tela: tem o numero de transistores do 4004, 2.300, e a densidade que o video de origem desta serie deu pra ele, 188 transistores por milimetro quadrado.
+
+O objetivo e descobrir a area do chip: dividir 2.300 por 188. Da um pouco mais de 12 milimetros quadrados, um quadradinho de uns 3 milimetros por 4, a unha do dedo minimo. Quem errar pra mais provavelmente multiplicou em vez de dividir; quem errar pra muito menos provavelmente dividiu ao contrario.
+
+Dizer o que a pratica ensina antes de mandar voltar: o ENIAC ocupava 167 metros quadrados de chao. O 4004 ocupa 12 milimetros quadrados. E a mesma ideia de maquina, com as mesmas partes da etapa 7, em uma area dez milhoes de vezes menor. E a Lei de Moore diz que isso ainda vai dobrar de novo, e de novo.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular: em 1958 Jack Kilby, sozinho na fabrica no verao, fez um circuito inteiro numa lasca de germanio. Em 1959 Robert Noyce desenhou as ligacoes por cima do oxido, sem fio, e nasceu o chip que da pra fabricar. Apollo e Minuteman pagaram a conta dos primeiros anos. O transistor MOS e a fotolitografia fizeram o chip encolher e baratear a cada ano. Em 1968 nasceu a Intel, e em 1971 o 4004 pos o computador inteiro da etapa 7 num pedaco de silicio de 12 milimetros quadrados.
+
+Fechar a etapa inteira: nesta etapa a maquina encolheu. A valvula virou transistor, o transistor virou chip, o chip virou processador. Nenhuma ideia do computador mudou; mudou o tamanho, o preco e o consumo. Dizer onde a etapa para: 1971.
+
+Gancho: em 1971 o computador cabe numa mesa, mas ainda e coisa de empresa, de universidade e de governo, e ninguem imagina uma pessoa comum querendo um em casa. Na proxima etapa, quatro anos depois, uma revista de eletronica poe na capa um kit pra montar, vendido pelo correio por 397 dolares, e a fila de pedidos afoga a empresa pequena que fazia o kit.

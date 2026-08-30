@@ -1,0 +1,7 @@
+Titulo: Quando o programa entrou na memória
+Notebook: 07-02-O programa que mora na memória
+
+Descricao:
+Os textos detalham a transição tecnológica ocorrida entre 1945 e 1949, quando surgiu o conceito de programa armazenado na memória. Esta etapa resolveu a limitação de máquinas anteriores, como o ENIAC, que exigiam mudanças físicas de cabos para alternar entre tarefas. O conteúdo destaca o influente relatório de John von Neumann, que propôs unificar ordens e números em uma mesma memória, gerando conflitos de autoria com os criadores do ENIAC. São descritos marcos históricos como o Manchester Baby, o primeiro a rodar um programa internamente, e o EDSAC, que introduziu sub-rotinas e bibliotecas de código. Ao permitir que o computador altere suas próprias instruções em segundos, essa arquitetura estabeleceu as bases da computação moderna. O material serve como roteiro educativo, utilizando analogias e fichas biográficas para explicar como essa evolução facilitou a automação e o reuso de software.
+
+Link: https://notebook.google.com/notebook/b78903b4-d02a-445b-81f8-33f728849ce9

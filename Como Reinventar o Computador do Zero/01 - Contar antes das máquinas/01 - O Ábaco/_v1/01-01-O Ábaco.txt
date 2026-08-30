@@ -1,0 +1,43 @@
+Inicie dizendo: O Abaco
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Abaco.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o primeiro episodio da etapa CONTAR ANTES DAS MAQUINAS, a primeira etapa da serie Como Reinventar o Computador do Zero. E o comeco da serie: nao ha episodio anterior pra retomar.
+
+ESTE EPISODIO COBRE DE 8000 a.C. A 2700 a.C. Dizer esse intervalo logo na abertura e, no encerramento, dizer em que ponto o episodio para. No fecho ele estica ate o presente, porque o equipamento continua em uso.
+
+FOCO: de onde o abaco veio e como ele funciona. A linha comeca cinco mil anos antes dele. Por volta de 8000 a.C., fichas de argila em formas geometricas no Crescente Fertil, uma ficha por coisa contada, correspondencia um a um que funciona sem existir numero, e o limite dela quando o rebanho cresce. Por volta de 3500 a.C., as bullae: bolas ocas de argila lacradas, com a marca das fichas por fora e o selo do dono, a conta virando registro que viaja e nao da pra adulterar. Por volta de 3100 a.C., a marca substitui a ficha e nasce a escrita cuneiforme, da contabilidade e nao da literatura. Por volta de 2700 a.C., na Sumeria, a tabua com colunas: escrever numero ja dava, calcular e que nao, e a pedra passa a valer o que a coluna disser. Isso e o abaco. Depois: nome (do grego abax, tabua), data e motivacao; o valor posicional, cada haste valendo dez vezes a de baixo; o vai-um; a conta real 2 x 24 sem transporte e a 3 x 24 com transporte; as variantes vivas (abaco romano de bolso, suanpan, soroban); e a limitacao que puxa o proximo equipamento, que e alguem precisar mover as pedras.
+
+SEM FICHA HUMANA. O abaco nao tem inventor: nasceu do uso. NAO atribuir a invencao a ninguem, nao citar nome de arqueologo e nao criar personagem com nome. O pastor e o escriba das telas 2 a 5 sao pessoas anonimas.
+
+CUIDADO COM DOIS NUMEROS, que estavam errados na versao anterior deste episodio e nao podem voltar:
+1. A data do abaco e 2700 a.C., nao 3500 a.C. O 3500 a.C. e a data das bullae, que e outra coisa.
+2. Cada haste tem NOVE contas, nao dez. O vai-um e: o fio marca 9 e esta cheio, chega mais um, as nove voltam e nasce uma conta na casa de cima. Nove mais um da dez. NAO dizer "dez contas viram uma".
+
+Uma ressalva de honestidade, uma frase so, na tela 5: o abaco sumerio contava de sessenta em sessenta, e a versao de dez em dez e a que sobreviveu nas escolas e a que a animacao usa.
+
+As imagens das telas 2 a 5 sao reconstituicoes realistas, nao fotografia de epoca. Avisar isso UMA vez, na tela 2.
+
+NAO explicar a Pascalina, Babbage, eletricidade nem Turing: sao dos proximos episodios. So citar a Pascalina no gancho final.
+
+A pagina tem 13 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo": sao exatamente 12 pedidos, um por tela, sem juntar duas telas num bloco. As telas 2, 3, 4 e 5 sao quatro cenas curtas de linha do tempo e precisam ficar separadas, uma data cada, com o seu pedido de Proximo. Nas telas de demonstracao (7, 8, 10 e 11), avisar que tem botao na tela. Nas telas de pratica (9 e 12), convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Abaco.txt. NAO invente analogias novas. Neste episodio nao ha analogia autorizada: explicar direto. Os exemplos concretos (o pastor com as fichas, os pratos de 24, rebanho e imposto) sao exemplos reais e podem ser usados.
+
+Use tambem o Overview.txt como contexto curto.

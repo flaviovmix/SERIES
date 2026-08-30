@@ -1,0 +1,112 @@
+Inicie dizendo: O Zero E Os Numeros
+---------------
+
+Este e o segundo episodio da serie EQUIPAMENTOS. O anterior cobriu o abaco; este cobre o equipamento mais usado da historia, que nao e de madeira nem de metal: o proprio numero.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Na tela de DEMONSTRACAO (5), avisar que tem um botao na tela pra rodar a animacao enquanto ouve.
+- Nas telas de PRATICA (4 e 8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- Uma so: o zero como a cadeira vazia que segura o lugar (a casa vazia do numero). Fora essa, sem analogias. Explicar direto. Exemplos concretos (contar imposto, contratos de banqueiros) sao exemplos reais, nao analogias.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O ZERO E OS NUMEROS)
+
+Retomar em uma frase: no episodio anterior, o abaco mostrou que conta abstrata pode virar peca fisica. So que as pecas do abaco nao deixam rastro: mexeu, o numero anterior sumiu. Este episodio conta a historia do equipamento que resolveu isso: o sistema de numeracao que voce usa todo dia, com direito ao personagem principal, o zero.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas praticas, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA DO EQUIPAMENTO)
+
+Tres cartoes na tela:
+
+- Nome: sistema de numeracao indo-arabico com o zero, os dez algarismos de hoje.
+- Data e lugar: os algarismos nascem na India nos primeiros seculos depois de Cristo; o zero vira numero de verdade com Brahmagupta, na India, em 628; a Europa so adota a partir de 1202.
+- Motivacao: calcular direto nos simbolos, no papel, sem depender do abaco. Pra isso o simbolo precisava carregar a posicao, e a posicao vazia precisava de um simbolo proprio.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O PROBLEMA: OS ROMANOS)
+
+A tela mostra XXVII decomposto: X vale 10, X vale 10, V vale 5, I vale 1, I vale 1, total 27. Cada simbolo tem valor fixo; a posicao nao vale nada (so a regra do menor antes do maior, que subtrai). Isso e otimo pra registrar em monumento e pessimo pra calcular: tente multiplicar XXVII por XV olhando so pros simbolos.
+
+O detalhe que poucos sabem: os proprios romanos nao calculavam nessa escrita. Faziam a conta no abaco e so ANOTAVAM o resultado em romanos. Numero era etiqueta, nao instrumento.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (PRATICA 1: DECIFRE OS ROMANOS)
+
+Convidar a pausar o audio e resolver: a tela mostra tres numeros romanos pra traduzir, um de cada vez: XVI, depois XLII, depois MMXXVI. Dica falada: menor antes de maior subtrai (IV e 4, XL e 40). O ultimo e um ano bem conhecido do ouvinte.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 5 (A VIRADA: POSICAO E ZERO)
+
+A tela tem tres casas (centena, dezena, unidade) e um botao que roda a demonstracao: o MESMO algarismo 4 valendo 4, depois 40, e por fim 400 dentro do numero 404, conforme a casa. Convidar a apertar o botao enquanto ouve.
+
+Explicar: no sistema posicional, o lugar do algarismo carrega valor, exatamente como as hastes do abaco. E ai aparece o problema que os romanos nunca tiveram: como escrever uma casa vazia? A resposta e o zero: um simbolo que nao vale nada, mas segura a cadeira. Sem ele, 44 e 404 seriam iguais no papel.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (A VIAGEM DOS ALGARISMOS)
+
+Tres cartoes, tres personagens:
+
+- Brahmagupta (India, 628): o primeiro a tratar o zero como numero de verdade, com regras proprias de somar, subtrair e multiplicar. O nada vira coisa que se opera.
+- al-Khwarizmi (Bagda, por volta de 825): na Casa da Sabedoria, escreveu o livro que ensinou o mundo a calcular com os numeros hindus. Do nome dele, latinizado, vem a palavra ALGORITMO; do titulo de outro livro dele (al-jabr) vem ALGEBRA. O nome do que todo computador executa e uma homenagem a esse matematico.
+- Fibonacci (Italia, 1202): filho de mercador, aprendeu os algarismos no norte da Africa e publicou o Liber Abaci apresentando tudo a Europa: com nove simbolos e o sinal 0, qualquer numero pode ser escrito.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (A RESISTENCIA: O GRANDE HIATO)
+
+Tres cartoes:
+
+- Abacistas contra algoristas: de um lado os contadores de abaco com algarismos romanos, do outro quem calculava no papel com os simbolos novos. A disputa durou seculos e virou ate gravura famosa de duelo de calculistas.
+- Florenca, 1299: a cidade dos banqueiros proibiu os algarismos arabes nos registros. Medo de fraude (um zero vira 9 ou 6 com um risquinho) e desconfianca do que vinha de fora.
+- Quem venceu: o papel barato e o comercio. Conta escrita se confere, se guarda e se audita; o abaco nao deixa rastro. Na Renascenca os algarismos ja tinham vencido, e sem eles nem Pascal nem computador nenhum existiria.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA 2: O ALGORITMO DA SOMA)
+
+Convidar a pausar e resolver a soma armada 27 + 15 na tela, casa por casa, comecando pela unidade: 7 mais 5 da 12, fica o 2 e o 1 sobe (o mesmo vai-um que era fisico no abaco); na dezena, 2 mais 1 mais o 1 que subiu da 4. Resultado 42.
+
+O ponto: esse passo a passo que funciona pra QUALQUER soma, sem pensar, e um algoritmo. A palavra que batiza tudo que um computador faz nasceu exatamente aqui, no calculo com esses numeros.
+
+Quando fechar o 42, volte o audio e aperte o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular: posicao valendo, zero segurando a casa vazia e um algoritmo pra cada operacao. Agora a humanidade tem numeros que calculam. Mas calcular no papel ainda cansa e ainda se erra.
+
+Gancho: no proximo episodio, as maquinas engenhosas que apareceram nesse meio do caminho: as engrenagens gregas de Anticitera, o astrolabio, os ossos de Napier e a regua de calculo. As ultimas paradas antes da Pascalina.

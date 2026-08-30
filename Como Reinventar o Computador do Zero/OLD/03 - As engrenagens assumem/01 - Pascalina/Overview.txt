@@ -1,0 +1,13 @@
+A PASCALINA - CONTEXTO
+======================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o quarto episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o sistema de numeracao com o zero e as maquinas do hiato (Anticitera, astrolabio, ossos de Napier e regua de calculo). Este cobre a Pascalina: a primeira calculadora mecanica, construida por Blaise Pascal a partir de 1642, em Rouen, na Franca, quando ele tinha 19 anos e ajudava o pai a somar impostos.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma tela interativa com rodas clicaveis (somar e girar), duas demonstracoes com botao (o 9 + 1 do sautoir e a subtracao 35 - 12 por complemento) e uma pratica (somar 28 + 35 e ver o vai-um automatico acontecer). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: por que o abaco nao bastava (a regra do vai-um morava na cabeca da pessoa), como a Pascalina soma girando rodas dentadas com janelas de digitos, o que e o sautoir (a alavanca que cai com o proprio peso e empurra a casa vizinha, fazendo o vai-um sem ajuda humana, inclusive em cascata no 99 + 1), e o truque do complemento pra subtrair numa maquina cujas rodas so giram pra frente (35 - 12 vira 35 + 988; o milhar nao tem janela e cai fora, sobrando 23).
+
+Por que importa: e a primeira vez na historia que um pedaco do raciocinio sai da cabeca e vira mecanismo. A maquina recebe digitos e devolve o resultado sozinha, digito por digito, com vai-um e tudo. A limitacao dela (multiplicar ainda e somar varias vezes na mao) e exatamente o que a roda de Leibniz ataca no episodio seguinte.
+
+Use este contexto apenas como apoio.

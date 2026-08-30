@@ -1,0 +1,7 @@
+Titulo: Do transistor à Lei de Moore
+Notebook: 08-01-O transistor
+
+Descricao:
+Os textos fornecem uma visão detalhada sobre o surgimento e a evolução do transistor, marcando a transição da era das válvulas para a computação moderna entre 1947 e 1965. As fontes descrevem o experimento pioneiro de Bardeen e Brattain no Bell Labs, além do aperfeiçoamento técnico e da liderança de William Shockley. O material destaca como esse componente de estado sólido substituiu dispositivos frágeis e ineficientes por interruptores menores, mais duráveis e econômicos. Além de listar marcos industriais, como a fundação da Fairchild Semiconductor, os documentos introduzem a Lei de Moore, que previu o crescimento exponencial da densidade de componentes em chips. Por fim, o conteúdo serve como base para uma série educativa que explora o impacto dessas inovações na arquitetura dos computadores.
+
+Link: https://notebook.google.com/notebook/a1fb7580-7676-4cff-8869-04f7a9823f68

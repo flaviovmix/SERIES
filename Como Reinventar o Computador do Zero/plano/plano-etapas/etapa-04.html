@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 04 &middot; Como Reinventar o Computador do Zero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../plano-estilo.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../plano-visao.html">&larr; Plano Como Reinventar o Computador do Zero</a> &middot; etapa 04 de 10</p>
+    <h1>Domesticando o raio</h1>
+  </header>
+
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>parcial: alguns episódios publicados</span> <p class="note"><b>1</b> de 7 publicado &middot; 4 em produ&ccedil;&atilde;o</p></div>
+    <p class="lede">De fenômeno do céu a corrente no fio <em>&middot; 1600–1880</em></p>
+
+    <section>
+      <h2>Os 7 epis&oacute;dios</h2>
+      <div class="scroller"><table><thead><tr><th>Pasta</th><th>Episódio</th><th>Ano</th><th>O que cobre</th><th class="status">Status</th></tr></thead><tbody><tr data-st="parte"><td class="num">01</td><td class="etapa"><b>A faísca</b></td><td class="obs">1600–1752</td><td class="obs">âmbar e Gilbert (a palavra &quot;elétrico&quot;), Gray e a descoberta de condutor vs isolante, garrafa de Leiden, a pipa de Franklin: existe, dá choque, e ainda não serve pra nada</td><td class="status"><span class="ponto ponto--parte" role="img" aria-label="parcial: alguns episódios publicados" title="parcial: alguns episódios publicados"></span></td></tr><tr data-st="parte"><td class="num">02</td><td class="etapa"><b>A pilha de Volta</b></td><td class="obs">1800</td><td class="obs">a primeira eletricidade que *dura*; circuito fechado e lei de Ohm (tensão, corrente, resistência)</td><td class="status"><span class="ponto ponto--parte" role="img" aria-label="parcial: alguns episódios publicados" title="parcial: alguns episódios publicados"></span></td></tr><tr data-st="parte"><td class="num">03</td><td class="etapa"><b>A agulha que se mexeu</b></td><td class="obs">1820–25</td><td class="obs">Ørsted, Ampère e o eletroímã de Sturgeon: corrente vira força mecânica</td><td class="status"><span class="ponto ponto--parte" role="img" aria-label="parcial: alguns episódios publicados" title="parcial: alguns episódios publicados"></span></td></tr><tr data-st="parte"><td class="num">04</td><td class="etapa"><b>Faraday e o gerador</b></td><td class="obs">1831</td><td class="obs">indução — movimento vira eletricidade; de onde vem a energia de tudo que veio depois</td><td class="status"><span class="ponto ponto--parte" role="img" aria-label="parcial: alguns episódios publicados" title="parcial: alguns episódios publicados"></span></td></tr><tr data-st="zero"><td class="num">05</td><td class="etapa"><b>O relé</b></td><td class="obs">1835</td><td class="obs">um circuito comandando outro: amplificação, distância, e a peça que na etapa 5 vira porta lógica</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="feito"><td class="num">06</td><td class="etapa"><b>O Telégrafo</b></td><td class="obs">1837</td><td class="obs">8 telas COM SOM: ficha, torres de Chappe, tecla segurar/soltar, Morse S O S, o relé, prática transmitir ADA</td><td class="status"><span class="ponto ponto--feito" role="img" aria-label="tudo publicado" title="tudo publicado"></span></td></tr><tr data-st="zero"><td class="num">07</td><td class="etapa"><b>A lâmpada e a rede</b></td><td class="obs">1880</td><td class="obs">Edison, Tesla e a corrente alternada: o mundo eletrificado que torna tudo o que vem depois possível</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr></tbody></table></div>
+    </section>
+
+    <article class="corpo">
+<p>A etapa que a série inteira depende e que quase todo mundo pula. Aqui a eletricidade é o assunto, <strong>explicada em detalhe</strong>: o que é, como se prende num fio, como vira força, como vira sinal e como um circuito passa a comandar outro. Sem essa peça, nada da etapa 5 em diante faz sentido.</p>
+<p><strong>Estado do ep <code>01</code> (22/08):</strong> trio escrito e aprovado pelo verificador, <strong>áudio pronto</strong> (27,4 min, título que o NotebookLM deu: &quot;Do âmbar ao raio de Benjamin Franklin&quot;), mapa das 8 telas em <code>_telas.md</code>, 11 ilustrações em <code>img\</code> e <strong><code>animacao.html</code> montada e testada</strong> (Playwright: 8 telas, as 3 interativas, lightbox, console limpo, 360px sem estouro). Falta só a publicação. A página tokenizada fica em <code>_animacao-fonte.html</code>: é nela que se edita, porque a <code>animacao.html</code> já tem os base64 dentro. Há também um <code>_imagens.html</code> na pasta, que é só o catálogo das ilustrações, não faz parte do episódio.</p>
+<p>⚠️ <strong>Dois bugs corrigidos no <code>embute-imagens.js</code> (22/08):</strong> ele trocava só a <strong>primeira</strong> ocorrência de cada token (as outras ficavam com o token cru e a imagem quebrava) e embutia tudo como <code>image/jpeg</code>, inclusive PNG. Agora usa <code>replaceAll</code> e deduz o mime pela extensão. Como cada ocorrência carrega uma cópia do base64, imagem que aparece em mais de uma tela é declarada <strong>uma vez</strong> com <code>id</code> e reusada por JS via <code>data-reusa=&quot;&lt;id&gt;&quot;</code> (padrão que o ep do Ábaco já usava na mão). Uma decisão aberta: aos <strong>20:28 o áudio fala &quot;George Richmond&quot;</strong>, e o certo é <strong>Georg Richmann</strong> (o roteiro estava certo, o NotebookLM anglicizou) — regravar ou deixar passar. Também diz &quot;De Magnet&quot; em vez de &quot;De Magnete&quot; aos 06:36, que passa despercebido.</p>
+<p><strong>Estado dos eps <code>02</code>, <code>03</code> e <code>04</code> (23/08):</strong> os três trios escritos, conferidos no checklist do verificador e com <strong>áudio pronto e baixado</strong> na pasta de cada um. Títulos que o NotebookLM deu: <code>02</code> = &quot;Como a rã criou a pilha&quot;, <code>03</code> = &quot;Como a eletricidade ganhou músculos&quot;, <code>04</code> = &quot;Como Faraday criou o gerador elétrico&quot;. Notebooks: <code>a8a9026d…</code>, <code>fa12cffa…</code>, <code>54c13ef1…</code>. Falta a conferência do Flávio; mapa de telas, animação e publicação ficam pra depois da aprovação. Os ganchos encadeiam 02→03→04→relé.</p>
+<p>Fonte: os quatro primeiros e a lâmpada precisam de <strong>pesquisa própria</strong> (o vídeo só toca em Faraday e no relé, min 17.5–29). O ep do relé pode reaproveitar a tela do relé que já existe no <code>06 - O Telégrafo</code>, aprofundando.</p>
+    </article>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>tudo publicado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>parcial: alguns episódios publicados</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>não iniciado</span></span></div>
+
+  <nav class="passo"><a class="nav-ir" href="etapa-03.html"><span>anterior</span>Etapa 03 &middot; As engrenagens assumem</a><a class="nav-ir nav-ir--fim" href="etapa-05.html"><span>pr&oacute;xima</span>Etapa 05 &middot; A eletricidade aprende a pensar</a></nav>
+
+  <footer>
+    <span>plano-da-serie.md &middot; se&ccedil;&atilde;o &ldquo;Domesticando o raio&rdquo;</span>
+    <span>27.08.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Zero e os Números — Equipamento 02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a; --ruim:#a04b3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink); overflow:hidden; display:flex; flex-direction:column}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(34px,6.4vw,66px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:780px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:640px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+.ficha{display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:920px}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:280px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+.ficha .texto b{font-weight:600}
+
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:680px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5; text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+.legenda.erro{color:var(--ruim)}
+
+.romano-grande{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:clamp(28px,5vw,44px);
+  font-weight:600; letter-spacing:.12em; margin:8px 0 4px;
+}
+.romano-valores{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-bottom:6px}
+.romano-valores span{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub);
+  border:1px solid var(--line); border-radius:99px; padding:3px 10px;
+}
+
+.trilha{display:flex; gap:8px; justify-content:center; margin-bottom:12px}
+.trilha .alvo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; border:1px solid var(--line); border-radius:99px; padding:5px 14px; color:var(--sub)}
+.trilha .alvo.atual{border-color:var(--accent); color:var(--accent); font-weight:600}
+.trilha .alvo.feito{border-color:var(--ok); color:var(--ok)}
+
+.resposta{display:flex; gap:10px; justify-content:center; align-items:center; margin-top:10px}
+.resposta input{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:22px; font-weight:600;
+  width:140px; text-align:center; padding:8px 10px; color:var(--ink);
+  background:var(--bg); border:1px solid var(--line); border-radius:10px; outline:none;
+}
+.resposta input:focus{border-color:var(--accent)}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+/* casas posicionais */
+.casas{display:flex; gap:10px; justify-content:center; margin:10px 0 4px}
+.casa{
+  width:64px; height:80px; border:2px dashed var(--line); border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:36px; font-weight:600;
+  transition:all .4s var(--ease); position:relative; background:var(--bg);
+}
+.casa .etq{
+  position:absolute; bottom:-20px; font-size:9px; letter-spacing:.15em; color:var(--sub);
+  font-family:'IBM Plex Mono',Consolas,monospace;
+}
+.casa.zero{color:var(--accent); border-color:var(--accent); border-style:solid; box-shadow:0 0 0 3px rgba(140,90,34,.12)}
+.casa.vazia{color:var(--line)}
+
+/* soma armada */
+.armada{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:34px; font-weight:600;
+  display:inline-grid; grid-template-columns:repeat(3, 44px); text-align:center; line-height:1.5;
+  margin:6px 0;
+}
+.armada .vai{
+  font-size:14px; color:var(--accent); height:22px;
+  animation:pop .5s var(--ease);
+}
+.armada .linha{grid-column:1/-1; border-top:3px solid var(--ink); margin:4px 0}
+.armada .slot{
+  border-bottom:3px dashed var(--line); min-height:50px; color:var(--accent);
+}
+.armada .slot.cheio{border-bottom-color:transparent}
+@keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+.pad{display:flex; gap:6px; justify-content:center; flex-wrap:wrap; margin-top:12px}
+.pad button{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:17px; font-weight:600;
+  width:42px; height:42px; border-radius:10px; border:1px solid var(--line);
+  background:var(--bg); color:var(--ink); cursor:pointer; transition:all .2s;
+}
+.pad button:hover{border-color:var(--accent); color:var(--accent)}
+
+svg{overflow:visible}
+.desliza{animation:desliza 3.2s var(--ease) infinite}
+@keyframes desliza{0%,15%{transform:translateX(0)}45%,70%{transform:translateX(-72px)}100%{transform:translateX(-144px)}}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600; transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 12px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  .casa{width:50px; height:64px; font-size:28px}
+  .armada{grid-template-columns:repeat(3, 36px); font-size:27px}
+  .pad button{width:38px; height:38px; font-size:15px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 02 <span class="dot">·</span> O ZERO E OS NÚMEROS</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 02 · série equipamentos</div>
+    <h1 class="reveal">O Zero<br>e os Números</h1>
+    <p class="lede reveal">O equipamento desta vez não é de madeira nem de bronze: é o próprio número.
+    A tecnologia mais usada da história, e a que demorou mais pra ficar pronta.
+    Quando o áudio pedir, aperte <b>Próximo</b>. Nas práticas, pause e resolva.</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">Sistema de numeração <b>indo-arábico</b> + o <b>zero</b>: os dez algarismos que você usa todo dia.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Algarismos: Índia, primeiros séculos d.C. Zero como número de verdade: Brahmagupta, Índia, <b>628 d.C.</b> Chegada à Europa: 1202.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Calcular <b>direto nos símbolos</b>, no papel, sem depender do ábaco. Pra isso o número precisava carregar a posição, e a posição vazia precisava de um símbolo.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · o problema romano -->
+  <section class="step">
+    <div class="kicker reveal">o problema</div>
+    <h2 class="reveal">Romanos: bons de escrever,<br>péssimos de calcular</h2>
+    <div class="painel reveal">
+      <div class="romano-grande">X X V I I</div>
+      <div class="romano-valores">
+        <span>X = 10</span><span>X = 10</span><span>V = 5</span><span>I = 1</span><span>I = 1</span><span class="mono" style="color:var(--accent)">= 27</span>
+      </div>
+      <div class="legenda">Cada símbolo tem valor fixo: a posição não vale nada. Somar, multiplicar ou dividir NESSA escrita é um pesadelo. Os próprios romanos não tentavam: faziam a conta no ábaco e só ANOTAVAM o resultado em romanos.</div>
+    </div>
+  </section>
+
+  <!-- 4 · pratica 1: decifre o romano -->
+  <section class="step">
+    <div class="kicker reveal">pratique · parte 1</div>
+    <h2 class="reveal">Decifre os romanos</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilhaRom"></div>
+      <div class="romano-grande" id="romAlvo"></div>
+      <div class="legenda" id="legRom">Pause o áudio e traduza pro nosso número. Lembre: símbolo menor ANTES de um maior, subtrai (IV = 4, XL = 40).</div>
+      <div class="resposta">
+        <input type="number" id="respRom" inputmode="numeric" placeholder="?">
+        <button class="btn-mini cheio" id="confereRom">conferir</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · a virada: posicao + zero -->
+  <section class="step">
+    <div class="kicker reveal">a virada</div>
+    <h2 class="reveal">A posição vale, e o zero<br>segura a cadeira vazia</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legCasas">Aperte o botão: o MESMO algarismo 4 muda de valor conforme a casa. E repare no que segura as casas vazias.</div>
+      <div class="casas">
+        <div class="casa" id="c2"><span class="etq">CENTENA</span></div>
+        <div class="casa" id="c1"><span class="etq">DEZENA</span></div>
+        <div class="casa" id="c0"><span class="etq">UNIDADE</span></div>
+      </div>
+      <div class="botoes" style="margin-top:30px">
+        <button class="btn-mini cheio" id="btnCasas">ver o 4 mudar de casa</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · quem trouxe -->
+  <section class="step">
+    <div class="kicker reveal">a viagem dos algarismos</div>
+    <h2 class="reveal">Da Índia até você</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">Brahmagupta · Índia · 628</div>
+        <div class="texto"><b>Motivação:</b> tratar o zero como número de verdade, com regras próprias (somar, subtrair, multiplicar com ele). O nada vira coisa.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">al-Khwarizmi · Bagdá · ~825</div>
+        <div class="texto"><b>Motivação:</b> ensinar o cálculo com os números hindus na Casa da Sabedoria. Do nome dele vem a palavra <b>algoritmo</b>; do livro dele (al-jabr), a palavra <b>álgebra</b>.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">Fibonacci · Itália · 1202</div>
+        <div class="texto"><b>Motivação:</b> filho de mercador, aprendeu os algarismos no norte da África e trouxe tudo pra Europa no Liber Abaci: "com estes nove símbolos, e com o sinal 0, qualquer número pode ser escrito".</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · a resistencia -->
+  <section class="step">
+    <div class="kicker reveal">o grande hiato</div>
+    <h2 class="reveal">A Europa disse não<br>por 300 anos</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">abacistas vs algoristas</div>
+        <div class="texto">De um lado, os contadores de ábaco e algarismos romanos. Do outro, quem calculava no papel com os símbolos novos. A briga durou séculos, e virou até gravura de duelo.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">Florença · 1299</div>
+        <div class="texto">A cidade dos banqueiros <b>proibiu</b> os algarismos árabes nos registros: medo de fraude (um 0 vira 9 com um risquinho) e desconfiança do que era estrangeiro.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">quem venceu</div>
+        <div class="texto">O papel barato e o comércio. Conta escrita se confere, se guarda e se audita; o ábaco não deixa rastro. Na Renascença, os algarismos tinham vencido, e sem eles nem Pascal nem computador nenhum existiria.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · pratica 2: soma armada -->
+  <section class="step">
+    <div class="kicker reveal">pratique · parte 2</div>
+    <h2 class="reveal">O algoritmo da soma</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legArmada">A mesma conta que era um pesadelo em romanos: <b>27 + 15</b>. Pause e preencha o resultado, casa por casa, começando pela unidade.</div>
+      <div class="armada" id="armada">
+        <div class="vai" id="vaiCent"></div><div class="vai" id="vaiDez"></div><div class="vai"></div>
+        <div></div><div>2</div><div>7</div>
+        <div>+</div><div>1</div><div>5</div>
+        <div class="linha"></div>
+        <div></div><div class="slot" id="slotDez"></div><div class="slot" id="slotUni"></div>
+      </div>
+      <div class="pad" id="pad"></div>
+    </div>
+  </section>
+
+  <!-- 9 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">recapitulando</div>
+    <h2 class="reveal">Agora temos números<br>que calculam</h2>
+    <p class="lede reveal">Valor posicional, zero segurando a casa vazia e um passo a passo que qualquer pessoa (ou máquina) consegue seguir: um algoritmo.
+    Mas calcular no papel ainda cansa, e errar ainda é fácil.</p>
+    <p class="lede reveal">No próximo episódio: as máquinas engenhosas que apareceram no meio desse caminho, das engrenagens gregas de Anticítera aos ossos de Napier e à régua de cálculo, as últimas paradas antes da Pascalina.</p>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- pratica 1: decifre o romano ----------
+const desafiosRom = [
+  { r: 'XVI', v: 16 },
+  { r: 'XLII', v: 42 },
+  { r: 'MMXXVI', v: 2026 },
+];
+let romAtual = 0;
+const trilhaRom = document.getElementById('trilhaRom');
+const romAlvo = document.getElementById('romAlvo');
+const legRom = document.getElementById('legRom');
+const respRom = document.getElementById('respRom');
+desafiosRom.forEach((d) => {
+  const s = document.createElement('span');
+  s.className = 'alvo';
+  s.textContent = d.r;
+  trilhaRom.appendChild(s);
+});
+function pintaRom() {
+  [...trilhaRom.children].forEach((s, i) => {
+    s.classList.toggle('feito', i < romAtual);
+    s.classList.toggle('atual', i === romAtual);
+  });
+  if (romAtual < desafiosRom.length) {
+    romAlvo.textContent = desafiosRom[romAtual].r.split('').join(' ');
+  } else {
+    romAlvo.textContent = '✔';
+    legRom.innerHTML = '<b>Fechou os tres! Pode voltar o audio.</b>';
+    legRom.className = 'legenda ok';
+    respRom.disabled = true;
+    document.getElementById('confereRom').disabled = true;
+  }
+}
+document.getElementById('confereRom').addEventListener('click', () => {
+  if (romAtual >= desafiosRom.length) return;
+  const d = desafiosRom[romAtual];
+  if (parseInt(respRom.value, 10) === d.v) {
+    romAtual++;
+    respRom.value = '';
+    legRom.innerHTML = '<b>✔ ' + d.r + ' = ' + d.v + '</b>' + (romAtual < desafiosRom.length ? ' — proximo!' : '');
+    legRom.className = 'legenda ok';
+    pintaRom();
+  } else {
+    legRom.textContent = 'Ainda nao. Dica: some da esquerda pra direita; menor antes de maior subtrai.';
+    legRom.className = 'legenda erro';
+  }
+});
+pintaRom();
+
+// ---------- tela 5: o 4 mudando de casa ----------
+const casas = [document.getElementById('c2'), document.getElementById('c1'), document.getElementById('c0')];
+const legCasas = document.getElementById('legCasas');
+function poeCasas(digitos, zeroIdx, msg) {
+  casas.forEach((c, i) => {
+    const etq = c.querySelector('.etq');
+    c.textContent = digitos[i];
+    c.appendChild(etq);
+    c.classList.toggle('zero', i === zeroIdx || (Array.isArray(zeroIdx) && zeroIdx.includes(i)));
+    c.classList.toggle('vazia', digitos[i] === '');
+  });
+  legCasas.innerHTML = msg;
+}
+poeCasas(['', '', '4'], -1, 'Aperte o botão: o MESMO algarismo 4 muda de valor conforme a casa. E repare no que segura as casas vazias.');
+document.getElementById('btnCasas').addEventListener('click', () => {
+  const roteiro = [
+    { d: ['', '', '4'], z: -1, m: '<b>4</b> na unidade: vale quatro' },
+    { d: ['', '4', '0'], z: 2, m: '<b>40</b>: o 4 andou uma casa e vale dez vezes mais. Quem segura a unidade vazia? O <b>zero</b>' },
+    { d: ['4', '0', '4'], z: 1, m: '<b>404</b>: sem o zero no meio, isso viraria 44. O zero nao vale nada, mas SEGURA a casa' },
+    { d: ['4', '0', '4'], z: 1, m: 'Essa e a mesma ideia das hastes do abaco, agora em simbolos: <b>posicao e valor</b>' },
+  ];
+  let i = 0;
+  const anda = () => {
+    if (i >= roteiro.length) return;
+    const p = roteiro[i];
+    poeCasas(p.d, p.z, p.m);
+    i++;
+    setTimeout(anda, 2100);
+  };
+  anda();
+});
+
+// ---------- pratica 2: soma armada 27 + 15 ----------
+const slotUni = document.getElementById('slotUni');
+const slotDez = document.getElementById('slotDez');
+const vaiDez = document.getElementById('vaiDez');
+const legArmada = document.getElementById('legArmada');
+const pad = document.getElementById('pad');
+let etapa = 0; // 0 = espera unidade (2), 1 = espera dezena (4), 2 = feito
+for (let n = 0; n <= 9; n++) {
+  const b = document.createElement('button');
+  b.textContent = n;
+  b.addEventListener('click', () => digita(n));
+  pad.appendChild(b);
+}
+function digita(n) {
+  if (etapa === 0) {
+    if (n === 2) {
+      slotUni.textContent = '2';
+      slotUni.classList.add('cheio');
+      vaiDez.textContent = '1';
+      legArmada.innerHTML = '7 + 5 = 12: fica o <b>2</b> e o <b>vai 1</b> sobe pra dezena (o mesmo vai-um do abaco!). Agora a dezena: 2 + 1 + 1?';
+      legArmada.className = 'legenda ok';
+      etapa = 1;
+    } else {
+      legArmada.textContent = 'Comece pela unidade: 7 + 5 = 12. Qual algarismo fica na casa da unidade?';
+      legArmada.className = 'legenda erro';
+    }
+  } else if (etapa === 1) {
+    if (n === 4) {
+      slotDez.textContent = '4';
+      slotDez.classList.add('cheio');
+      legArmada.innerHTML = '<b>42! Voce acabou de executar um algoritmo: o mesmo passo a passo, casa por casa, que vale pra QUALQUER soma. Pode voltar o audio.</b>';
+      legArmada.className = 'legenda ok';
+      etapa = 2;
+    } else {
+      legArmada.textContent = 'Dezena: 2 + 1, mais o 1 que subiu = 4.';
+      legArmada.className = 'legenda erro';
+    }
+  }
+}
+</script>
+</body>
+</html>

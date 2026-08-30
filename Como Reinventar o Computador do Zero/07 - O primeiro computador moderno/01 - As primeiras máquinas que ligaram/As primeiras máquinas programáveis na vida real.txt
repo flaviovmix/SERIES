@@ -1,0 +1,7 @@
+Titulo: As primeiras máquinas programáveis na vida real
+Notebook: 07-01-As primeiras máquinas que ligaram
+
+Descricao:
+As fontes introduzem o início da era dos computadores modernos, destacando a transição entre projetos teóricos e as primeiras máquinas funcionais construídas entre 1936 e 1946. O texto detalha o funcionamento do Z3, do Mark I e do ENIAC, explorando como a tecnologia evoluiu dos relés mecânicos para as válvulas eletrônicas de alta velocidade. Além de descrever as especificações técnicas e as motivações de seus inventores, o material ressalta o papel fundamental das mulheres programadoras no ENIAC. Um ponto central é a limitação dessas máquinas, que ainda armazenavam instruções externamente através de cabos e fitas perfuradas. Essa análise prepara o terreno para a próxima etapa da computação, focada na integração de programas dentro da memória digital.
+
+Link: https://notebook.google.com/notebook/02480c83-53e9-4aaa-8f38-ce86abc974ab

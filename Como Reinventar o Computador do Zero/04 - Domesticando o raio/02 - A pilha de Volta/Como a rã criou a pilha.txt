@@ -1,0 +1,7 @@
+Titulo: Como a rã criou a pilha
+Notebook: 04-02-A pilha de Volta
+
+Descricao:
+Os textos descrevem o segundo episódio da fase Domesticando o Raio, pertencente a uma série sobre a evolução histórica da computação. O conteúdo aborda a transição da eletricidade estática para a corrente contínua, destacando a disputa científica entre Galvani e Volta sobre a origem da energia em tecidos biológicos. A narrativa detalha a invenção da pilha voltaica em 1800, que permitiu um fluxo constante de energia por meio de metais e soluções salinas. O material explica conceitos fundamentais como circuito fechado, tensão, corrente e resistência, utilizando analogias hidráulicas para facilitar a compreensão. Por fim, as fontes apresentam como essa inovação transformou a eletricidade de um evento momentâneo em uma ferramenta controlável para a ciência.
+
+Link: https://notebook.google.com/notebook/a8a9026d-7704-49cf-93a0-9fd1305979d4

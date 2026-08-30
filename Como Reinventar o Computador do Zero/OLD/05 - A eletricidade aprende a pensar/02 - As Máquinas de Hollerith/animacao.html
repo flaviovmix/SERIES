@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As Máquinas de Hollerith — Equipamento 11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(32px,6vw,60px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:760px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:620px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ficha do equipamento */
+.ficha{
+  display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:880px;
+}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:270px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+
+/* painel padrao */
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:780px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5;
+  text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* cartao censo */
+.cartao-censo{
+  display:inline-block; background:#e8d9b8; border:1.5px solid var(--accent2); border-radius:10px;
+  padding:12px 16px; margin:0 auto;
+}
+.cartao-censo .titulo-c{font-family:'IBM Plex Mono',Consolas,monospace; font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--sub); margin-bottom:8px}
+.campo{display:flex; align-items:center; gap:10px; margin-top:6px}
+.campo .rotulo-c{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; width:86px; text-align:right; color:var(--sub)}
+.furo-c{
+  width:24px; height:24px; border-radius:50%; border:2px solid var(--accent2);
+  background:transparent; cursor:pointer; flex:none; transition:all .2s;
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:8px; color:var(--sub);
+}
+.furo-c.on{background:var(--ink); border-color:var(--ink); color:transparent}
+.cartao-censo.travado .furo-c{cursor:default}
+
+/* relogios contadores */
+.relogios{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:14px}
+.relogio{
+  font-family:'IBM Plex Mono',Consolas,monospace; text-align:center;
+  border:2px solid var(--accent2); border-radius:12px; padding:8px 14px; min-width:88px;
+  background:var(--bg2);
+}
+.relogio .nome-rel{font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--sub)}
+.relogio .val{font-size:26px; font-weight:600; color:var(--ink)}
+.relogio.flash{animation:pop .45s var(--ease)}
+@keyframes pop{0%{transform:scale(.8)}70%{transform:scale(1.1)}100%{transform:scale(1)}}
+.relogio.btn{cursor:pointer; transition:border-color .2s}
+.relogio.btn:hover{border-color:var(--accent)}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+.mundo{display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; justify-content:center; max-width:880px}
+.mundo .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; width:250px; text-align:left;
+}
+.mundo .nome{font-size:18px; font-weight:600}
+.mundo .desc{font-size:13px; color:var(--sub); line-height:1.5; margin-top:6px}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600;
+  transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 10px}
+  .furo-c{width:20px; height:20px}
+  .campo .rotulo-c{width:70px; font-size:9px}
+  .relogio .val{font-size:20px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 11 <span class="dot">·</span> AS MÁQUINAS DE HOLLERITH</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 11 · série equipamentos</div>
+    <h1 class="reveal">As Máquinas de Hollerith</h1>
+    <p class="lede reveal">O telégrafo pôs a informação no fio; faltava alguém pôr os <b>dados</b> na
+    eletricidade. Um engenheiro juntou o cartão furado do tear com o eletroímã do telégrafo —
+    e contou um país inteiro. Quando o áudio pedir, aperte <b>Próximo</b>. Na prática, pause e brinque.</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">A tabuladora de Herman Hollerith: cartões furados lidos por agulhas elétricas, contados em relógios.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Estados Unidos, censo de 1890. Hollerith era engenheiro e tinha trabalhado no próprio departamento do censo.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">O censo de 1880 levou quase 8 anos pra ser apurado à mão. O de 1890, com o país crescendo, ia levar MAIS de 10: os números nasceriam já vencidos.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · a inspiracao -->
+  <section class="step">
+    <div class="kicker reveal">de onde veio a ideia</div>
+    <h2 class="reveal">Um furo pode descrever uma pessoa</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">O bilhete de trem</div>
+        <div class="desc">Condutores furavam o bilhete marcando o passageiro: alto, baixo, barba, óculos. Uma "foto furada" contra fraude. Hollerith viu e guardou.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">Um cartão por pessoa</div>
+        <div class="desc">A tradução pro censo: cada morador do país vira UM cartão, e cada furo é uma resposta — idade, sexo, profissão, estado. O cartão é a pessoa, em furos.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A herança do tear</div>
+        <div class="desc">O furo que carrega informação a série já conhece desde Jacquard. A novidade de Hollerith: quem vai LER o furo não é uma agulha de tecer — é a eletricidade.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · como funciona -->
+  <section class="step">
+    <div class="kicker reveal">como funciona</div>
+    <h2 class="reveal">A prensa de agulhas e os relógios</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPrensa">Fure o cartão como quiser e baixe a prensa: onde tem furo, a agulha passa, fecha o circuito e o relógio daquela resposta avança 1.</div>
+      <div class="cartao-censo" id="cartaoDemo">
+        <div class="titulo-c">CARTÃO DO CENSO · 1 PESSOA</div>
+        <div class="campo"><span class="rotulo-c">SEXO</span><button class="furo-c" data-rel="HOMENS">H</button><button class="furo-c" data-rel="MULHERES">M</button></div>
+        <div class="campo"><span class="rotulo-c">TRABALHO</span><button class="furo-c" data-rel="LAVOURA">L</button><button class="furo-c" data-rel="FÁBRICA">F</button></div>
+      </div>
+      <div class="relogios" id="relogiosDemo"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnPrensa">baixar a prensa</button>
+        <button class="btn-mini" id="btnZeraDemo">zerar os relógios</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · em escala -->
+  <section class="step">
+    <div class="kicker reveal">agora em escala</div>
+    <h2 class="reveal">Um cartão atrás do outro</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legEscala">Cada pessoa é um cartão; a máquina prensa um atrás do outro e os relógios acumulam o país. Rode um lote.</div>
+      <div class="relogios" id="relogiosEscala"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnLote">passar 20 cartões</button>
+        <button class="btn-mini" id="btnZeraEscala">zerar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · o resultado -->
+  <section class="step">
+    <div class="kicker reveal">o placar</div>
+    <h2 class="reveal">De 8 anos pra 6 semanas</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">A contagem</div>
+        <div class="desc">A contagem bruta do censo de 1890 saiu em cerca de 6 semanas: 62,9 milhões de pessoas. A apuração completa, que antes levava a década, fechou em uma fração do tempo — economizando milhões de dólares.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A classificadora</div>
+        <div class="desc">Além de contar, a máquina separava: a caixa certa abria a tampa sozinha pro operador guardar o cartão. Dava pra ordenar e cruzar os dados do país inteiro.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O que nasceu aqui</div>
+        <div class="desc">Não é um computador: ela não segue um programa. Mas é o nascimento do PROCESSAMENTO DE DADOS: informação em massa, lida e somada por eletricidade.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Sua vez: seja a tabuladora</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">Pause o áudio. Leia o furo de cada cartão e clique no relógio certo. São só 6 pessoas — o censo tinha 63 milhões.</div>
+      <div class="cartao-censo travado" id="cartaoPratica">
+        <div class="titulo-c" id="tituloPratica">CARTÃO 1 DE 6</div>
+        <div class="campo"><span class="rotulo-c">SEXO</span><button class="furo-c" id="furoH">H</button><button class="furo-c" id="furoM">M</button></div>
+      </div>
+      <div class="relogios" id="relogiosPratica"></div>
+      <div class="botoes">
+        <button class="btn-mini" id="btnReiniciaPratica">recomeçar</button>
+        <button class="btn-mini cheio" id="btnMaquina" disabled>agora veja a máquina fazer 60</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">Do censo nasceu uma gigante</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">A empresa</div>
+        <div class="desc">Hollerith abriu a Tabulating Machine Company em 1896. Fusões depois, em 1924 ela ganhou o nome que você conhece: IBM.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O reinado do cartão</div>
+        <div class="desc">O cartão furado virou A mídia dos dados: bancos, folhas de pagamento, governos. O cartão de 80 colunas da IBM mandou nos escritórios até os anos 1970.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A limitação</div>
+        <div class="desc">Contar não é pensar. As tabuladoras somavam milhões, mas não seguiam uma receita nem decidiam nada. Pra isso, a eletricidade ainda precisava aprender LÓGICA — e é pra lá que a série vai: o século 20, os relés e as primeiras máquinas que calculam com eletricidade.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- fabrica de relogios ----------
+function criaRelogios(elId, nomes, clicavel, aoClicar) {
+  const raiz = document.getElementById(elId);
+  const rels = {};
+  nomes.forEach((n) => {
+    const r = document.createElement('div');
+    r.className = 'relogio' + (clicavel ? ' btn' : '');
+    r.innerHTML = '<div class="nome-rel">' + n + '</div><div class="val">0</div>';
+    if (clicavel) r.addEventListener('click', () => aoClicar(n));
+    raiz.appendChild(r);
+    rels[n] = { el: r, v: 0 };
+  });
+  function soma(nome, quanto) {
+    rels[nome].v += (quanto || 1);
+    rels[nome].el.querySelector('.val').textContent = rels[nome].v;
+    rels[nome].el.classList.add('flash');
+    setTimeout(() => rels[nome].el.classList.remove('flash'), 500);
+  }
+  function zera() {
+    Object.values(rels).forEach((r) => { r.v = 0; r.el.querySelector('.val').textContent = '0'; });
+  }
+  function valor(nome) { return rels[nome].v; }
+  return { soma, zera, valor };
+}
+
+// ---------- tela 4: prensa ----------
+const relDemo = criaRelogios('relogiosDemo', ['HOMENS', 'MULHERES', 'LAVOURA', 'FÁBRICA']);
+const legPrensa = document.getElementById('legPrensa');
+const furosDemo = [...document.querySelectorAll('#cartaoDemo .furo-c')];
+furosDemo.forEach((f) => f.addEventListener('click', () => f.classList.toggle('on')));
+document.getElementById('btnPrensa').addEventListener('click', () => {
+  const ativos = furosDemo.filter((f) => f.classList.contains('on'));
+  if (!ativos.length) {
+    legPrensa.innerHTML = 'cartão sem furo: nenhuma agulha passou, nenhum relógio andou. Fure algo primeiro.';
+    return;
+  }
+  ativos.forEach((f, i) => setTimeout(() => relDemo.soma(f.dataset.rel), 250 * i));
+  legPrensa.innerHTML = 'a prensa desceu: <b>' + ativos.length + ' agulha(s)</b> passaram pelos furos, fecharam o circuito e os relógios andaram.';
+});
+document.getElementById('btnZeraDemo').addEventListener('click', () => {
+  relDemo.zera();
+  furosDemo.forEach((f) => f.classList.remove('on'));
+  legPrensa.innerHTML = 'Fure o cartão como quiser e baixe a prensa: onde tem furo, a agulha passa, fecha o circuito e o relógio daquela resposta avança 1.';
+});
+
+// ---------- tela 5: lote ----------
+const relEscala = criaRelogios('relogiosEscala', ['PESSOAS', 'HOMENS', 'MULHERES', 'LAVOURA', 'FÁBRICA']);
+const legEscala = document.getElementById('legEscala');
+const btnLote = document.getElementById('btnLote');
+btnLote.addEventListener('click', () => {
+  btnLote.disabled = true;
+  let i = 0;
+  // lote fixo (soma 20): 11 mulheres, 9 homens; 8 lavoura, 12 fabrica
+  const lote = 'MHMFMLHFMLHMFMHLMFHM';
+  const setores = 'LFLFFLFLFFLLFFLFFLFL';
+  (function passa() {
+    if (i >= 20) {
+      legEscala.innerHTML = '20 cartões, 4 segundos. Agora imagine <b>63 milhões</b>: era exatamente isso, em salões cheios de máquinas.';
+      btnLote.disabled = false;
+      return;
+    }
+    relEscala.soma('PESSOAS');
+    relEscala.soma(lote[i] === 'M' ? 'MULHERES' : 'HOMENS');
+    relEscala.soma(setores[i] === 'L' ? 'LAVOURA' : 'FÁBRICA');
+    legEscala.innerHTML = 'cartão <b>' + (i + 1) + '</b> prensado...';
+    i++;
+    setTimeout(passa, 200);
+  })();
+});
+document.getElementById('btnZeraEscala').addEventListener('click', () => relEscala.zera());
+
+// ---------- tela 7: pratica ----------
+const PESSOAS = ['M', 'H', 'M', 'M', 'H', 'M']; // 4 mulheres, 2 homens
+let cartaoAtual = 0;
+let erros = 0;
+const legPratica = document.getElementById('legPratica');
+const tituloPratica = document.getElementById('tituloPratica');
+const furoH = document.getElementById('furoH');
+const furoM = document.getElementById('furoM');
+const btnMaquina = document.getElementById('btnMaquina');
+const relPratica = criaRelogios('relogiosPratica', ['HOMENS', 'MULHERES'], true, (nome) => {
+  if (cartaoAtual >= PESSOAS.length) return;
+  const certo = PESSOAS[cartaoAtual] === 'H' ? 'HOMENS' : 'MULHERES';
+  if (nome === certo) {
+    relPratica.soma(nome);
+    cartaoAtual++;
+    if (cartaoAtual >= PESSOAS.length) {
+      tituloPratica.textContent = 'FIM DA PILHA';
+      furoH.classList.remove('on'); furoM.classList.remove('on');
+      legPratica.classList.add('ok');
+      legPratica.innerHTML = '<b>6 cartões: 2 homens, 4 mulheres. Você foi a máquina. Agora veja a máquina de verdade no botão.</b>';
+      btnMaquina.disabled = false;
+    } else {
+      mostraCartao();
+    }
+  } else {
+    erros++;
+    legPratica.classList.remove('ok');
+    legPratica.innerHTML = 'olhe o furo de novo: esse cartão é de ' + (certo === 'HOMENS' ? '<b>homem</b>' : '<b>mulher</b>') + '.';
+  }
+});
+function mostraCartao() {
+  tituloPratica.textContent = 'CARTÃO ' + (cartaoAtual + 1) + ' DE 6';
+  furoH.classList.toggle('on', PESSOAS[cartaoAtual] === 'H');
+  furoM.classList.toggle('on', PESSOAS[cartaoAtual] === 'M');
+}
+mostraCartao();
+document.getElementById('btnReiniciaPratica').addEventListener('click', () => {
+  cartaoAtual = 0; erros = 0;
+  relPratica.zera();
+  btnMaquina.disabled = true;
+  legPratica.classList.remove('ok');
+  legPratica.innerHTML = 'Pause o áudio. Leia o furo de cada cartão e clique no relógio certo. São só 6 pessoas — o censo tinha 63 milhões.';
+  mostraCartao();
+});
+btnMaquina.addEventListener('click', () => {
+  btnMaquina.disabled = true;
+  let i = 0;
+  const seq = 'MHMMHMHMMMHHMMHMMHMMMHMHMMHMMMHMMHMMHMMMHMHMMHMMMHMMHMMHMMMH';
+  (function roda() {
+    if (i >= 60) {
+      legPratica.classList.add('ok');
+      legPratica.innerHTML = '<b>60 cartões em 5 segundos, sem errar nenhum. Pode voltar o áudio e apertar o Próximo.</b>';
+      return;
+    }
+    relPratica.soma(seq[i] === 'H' ? 'HOMENS' : 'MULHERES');
+    i++;
+    setTimeout(roda, 80);
+  })();
+});
+</script>
+</body>
+</html>

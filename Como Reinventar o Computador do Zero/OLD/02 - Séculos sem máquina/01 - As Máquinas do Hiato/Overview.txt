@@ -1,0 +1,13 @@
+AS MAQUINAS DO HIATO - CONTEXTO
+================================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o terceiro episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco e o sistema de numeracao com o zero. Este cobre as quatro maquinas engenhosas que moram no intervalo de 5 mil anos entre o abaco e a Pascalina: o Mecanismo de Anticitera, o astrolabio, os ossos de Napier e a regua de calculo.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma demonstracao com botao de passo (os ossos de Napier resolvendo 17 x 4) e duas praticas (multiplicar 23 x 6 nos ossos e alinhar a regua de calculo pra multiplicar deslizando). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: o que era o Mecanismo de Anticitera (Grecia, ~100 a.C., engrenagens de bronze prevendo Sol, Lua e eclipses, achado num naufragio em 1901), o astrolabio (ideia grega aperfeicoada no mundo islamico entre os seculos 8 e 10, medindo os astros pra achar hora, latitude e a direcao de Meca), os logaritmos e os ossos de Napier (John Napier, 1614 e 1617, transformando multiplicacao em consulta de tabuada e soma de diagonais) e a regua de calculo (William Oughtred, 1622, onde deslizar escalas soma distancias logaritmicas e portanto multiplica; usada por engenheiros por 350 anos, ate as missoes Apollo).
+
+Por que importa: essas maquinas calculam por analogia ou encurtam o trabalho, mas nenhuma pega dois numeros e devolve o resultado sozinha, digito por digito. Essa lacuna e exatamente o que a Pascalina ataca em 1642, vinte anos depois da regua.
+
+Use este contexto apenas como apoio.

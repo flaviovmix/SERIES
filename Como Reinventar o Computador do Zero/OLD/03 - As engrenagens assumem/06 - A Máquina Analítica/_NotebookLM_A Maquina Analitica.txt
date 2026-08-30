@@ -1,0 +1,110 @@
+Inicie dizendo: A Maquina Analitica
+---------------
+
+Este e o nono episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard, os automatos e a caixa de musica; o anterior terminou com as pontas soltas: pino e furo guardam informacao, a roda calcula mas nao obedece, o tear obedece mas nao calcula. Este episodio e sobre o ingles que juntou as pontas: Charles Babbage e a Maquina Analitica, com a primeira programadora da historia, Ada Lovelace.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Nas DEMONSTRACOES (3 e 6) e na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O moinho e o armazem: os nomes que o proprio Babbage deu (mill e store) ja sao a analogia da fabrica: numeros esperam na prateleira do armazem e vao pro moinho ser processados.
+- A citacao de Ada (declarar como frase dela): a maquina "tece padroes de algebra como o tear de Jacquard tece flores e folhas".
+Fora essas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A MAQUINA ANALITICA)
+
+Retomar em uma frase: a serie chegou com duas pontas soltas: maquinas que calculam mas nao obedecem (Pascalina, roda de Leibniz) e maquinas que obedecem mas nao calculam (tear, caixa de musica). Este episodio e sobre o homem que desenhou a juncao das duas: Charles Babbage. E sobre a mulher que entendeu, antes de todo mundo, o que essa juncao significava: Ada Lovelace.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: duas maquinas de Charles Babbage, matematico ingles, em Londres. A Maquina Diferencial, proposta em 1822: uma maquina pra calcular e imprimir tabelas matematicas. E a Maquina Analitica, que ocupou Babbage de 1834 ate a morte dele, em 1871: um computador de uso geral, em engrenagens.
+
+Motivacao: na epoca, navegacao, engenharia e banco dependiam de tabelas calculadas a mao por gente, e gente erra. Erro de tabela custava navio. Babbage, conferindo uma tabela cheia de erros, soltou a frase que resume tudo: queria que aqueles calculos tivessem sido feitos a vapor.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A DIFERENCIAL: TABELAS SO COM SOMAS, COM DEMONSTRACAO)
+
+O truque da Diferencial e o metodo das diferencas: pra tabelar x ao quadrado, a maquina nunca multiplica. Olhando a tabela 1, 4, 9, 16, 25: a diferenca entre vizinhos e 3, 5, 7, 9; e a diferenca DESSAS diferencas e sempre 2, constante. Entao da pra construir a tabela inteira de tras pra frente, so somando: soma o 2 na primeira diferenca, soma a primeira diferenca no valor, e a proxima linha da tabela aparece.
+
+Somar, a serie ja sabe desde a Pascalina, engrenagem faz bem. Uma maquina que so soma, repetindo o mesmo gesto, cospe a tabela inteira sem errar nunca. E imprime, sem copista humano pra estragar no final.
+
+Avisar que a tela tem a tabela passo a passo, no botao de passo: cada aperto revela uma soma.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O QUE ACONTECEU COM ELA)
+
+A Diferencial nao ficou pronta. O governo ingles investiu 17 mil libras, o preco de dois navios de guerra, e o projeto afundou em brigas com o construtor e numa engenharia no limite do que a epoca fabricava.
+
+Mas a ideia estava certa, e duas provas mostram isso. Os suecos Scheutz, pai e filho, leram sobre a maquina e construiram em 1853 uma versao que funcionava e imprimia tabelas. E em 1991 o Museu de Ciencia de Londres construiu a Diferencial numero 2 seguindo os desenhos originais de Babbage, com a precisao de fabricacao da epoca dele: funciona ate hoje, exposta no museu.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A ANALITICA: A ANATOMIA, TELA INTERATIVA)
+
+No meio da briga com a Diferencial, Babbage teve a ideia maior: em vez de uma maquina pra UMA conta, uma maquina pra QUALQUER conta. A Maquina Analitica, projetada a partir de 1834. A anatomia dela, com os nomes que o proprio Babbage deu, de fabrica: o MOINHO, onde as contas acontecem; o ARMAZEM, prateleiras de engrenagens guardando ate mil numeros de 40 digitos esperando a vez; os CARTOES FURADOS, vindos direto do tear de Jacquard, que dizem o que fazer e com quais numeros; e a IMPRESSORA, que entrega o resultado no papel.
+
+Dizer na cara: moinho e processador. Armazem e memoria. Cartoes sao o programa. Impressora e a saida. A anatomia do computador que voce esta usando agora, desenhada em 1834.
+
+Avisar que a tela tem as quatro partes clicaveis, cada uma com a explicacao e o paralelo de hoje.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (COMO ELA OBEDECE, COM DEMONSTRACAO)
+
+Como um programa dela funcionava: cartoes de OPERACAO dizem a acao (somar, multiplicar), cartoes de VARIAVEL dizem de qual prateleira do armazem pegar e em qual guardar. O plano dela previa ate repetir um bloco de cartoes varias vezes e mudar o caminho conforme o resultado: o que hoje se chama de laco e de decisao.
+
+Avisar que a tela tem um programinha de 3 cartoes rodando: pega o numero de V1, soma o de V2, guarda em V3. Os cartoes acendem um a um enquanto o moinho e o armazem trabalham.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: PROGRAME A ANALITICA)
+
+Convidar a pausar o audio e resolver na tela: com A valendo 2, B valendo 3 e C valendo 4, montar a fila de cartoes que calcula (A mais B) vezes C e guarda o resultado. As cartas certas estao na paleta, misturadas com cartas erradas; a ordem importa. Montou, executa e ve o moinho trabalhar; errou, ajusta a fila e executa de novo.
+
+Quando a saida marcar 20, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: a Diferencial tabelava so com somas; a Analitica juntou moinho, armazem, cartoes e impressora num computador de uso geral, um seculo antes da tecnologia dar conta.
+
+Ada Lovelace: matematica, filha do poeta Byron, conheceu Babbage aos 17 anos numa demonstracao da Diferencial. Em 1843 traduziu um artigo sobre a Analitica e triplicou o tamanho com as proprias Notas. Na Nota G, o passo a passo pra maquina calcular os numeros de Bernoulli: o primeiro programa publicado da historia. E a visao dela foi alem das contas: se simbolos podem representar qualquer coisa, a maquina, nas palavras dela, tece padroes de algebra como o tear de Jacquard tece flores e folhas; poderia ate compor musica. O computador de hoje, descrito em 1843.
+
+Um acerto de contas que a serie devia: la atras, o episodio da Pascalina a chamou de primeira calculadora mecanica. Antes dela, em 1623, Wilhelm Schickard ja tinha projetado e comecado a construir uma calculadora. Ela se perdeu num incendio, e o mundo so redescobriu em 1957, nas cartas dele pro astronomo Kepler. A Pascalina segue sendo a primeira que o mundo conheceu; a de Schickard foi a primeira que existiu.
+
+A limitacao, que e o gancho: a Analitica nunca saiu do papel. Engrenagem e vapor eram lentos e caros demais pro tamanho do sonho. O proximo salto da historia nao e uma maquina de calcular: e a informacao deixando as engrenagens e virando eletricidade.
+
+Gancho: no proximo episodio, o telegrafo.

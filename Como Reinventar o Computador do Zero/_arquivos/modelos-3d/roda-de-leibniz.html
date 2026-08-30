@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roda de Leibniz 3D — protótipo de estilo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> RODA DE LEIBNIZ</div>
+  <div>PROTÓTIPO DE ESTILO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">Escolha o <b>dígito</b> deslizando a roda, gire a <b>manivela</b> e conte os dentes que pegam.</div>
+    <div class="seletor">
+      <span>dígito</span>
+      <input type="range" id="slider" min="0" max="9" value="3" step="1">
+      <span class="digito" id="digito">3</span>
+    </div>
+    <div class="linha-total">
+      <span class="num mono" id="resultado">0</span>
+      <span class="meta mono" id="voltas">0 voltas</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio" id="btnGira">gira a manivela</button>
+      <button class="btn-mini" id="btnDesafio">desafio: 3 × 4</button>
+      <button class="btn-mini" id="btnLimpar">zerar</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elResultado = document.getElementById('resultado');
+const elVoltas = document.getElementById('voltas');
+const elDigito = document.getElementById('digito');
+const slider = document.getElementById('slider');
+const btnGira = document.getElementById('btnGira');
+
+const palco = montaPalco({
+  alvo: [0, 2.5, 0],
+  camPos: [0, 4.6, 11.5],
+  meiaLarguraDesktop: 6.4,
+  meiaLarguraMobile: 4.9,
+  distMin: 10.5,
+  orbitaMin: 6,
+});
+const { scene, controls, materiais, bloco, criaRotulo, redimensiona, inicia } = palco;
+const bronzeOu = materiais.metal;
+
+// ---------- bancada ----------
+const maquina = new THREE.Group();
+scene.add(maquina);
+const base = bloco(8.8, 0.35, 2.6, materiais.madeira, 0.09); base.position.y = 0.18;
+const torreE = bloco(0.5, 4.6, 0.7, materiais.madeiraEscura, 0.09); torreE.position.set(-3.1, 2.45, 0);
+const torreD = bloco(0.5, 4.6, 0.7, materiais.madeiraEscura, 0.09); torreD.position.set(3.1, 2.45, 0);
+maquina.add(base, torreE, torreD);
+
+// ---------- tambor escalonado ----------
+// 9 dentes de comprimento crescente, todos rentes a ponta esquerda do tambor.
+// A roda (pinhao) desliza no eixo: na fatia onde ela esta, so os dentes
+// compridos o bastante alcancam — e por volta ela avanca exatamente d dentes.
+const TAMBOR_Y = 2.0, TAMBOR_R = 1.1, TAMBOR_LEN = 5.4;
+const DENTE_UN = 0.5;                    // cada "degrau" de comprimento
+const tambor = new THREE.Group();
+tambor.position.y = TAMBOR_Y;
+maquina.add(tambor);
+
+const corpo = new THREE.Mesh(new THREE.CylinderGeometry(TAMBOR_R, TAMBOR_R, TAMBOR_LEN, 48), bronzeOu(0xa87d3c));
+corpo.geometry.rotateZ(Math.PI / 2);
+corpo.castShadow = true; corpo.receiveShadow = true;
+tambor.add(corpo);
+
+// aneis de acabamento nas bordas do cilindro
+const geoAnel = new THREE.CylinderGeometry(TAMBOR_R + 0.05, TAMBOR_R + 0.05, 0.14, 48);
+geoAnel.rotateZ(Math.PI / 2);
+[-1, 1].forEach((lado) => {
+  const anel = new THREE.Mesh(geoAnel, materiais.latao);
+  anel.position.x = lado * (TAMBOR_LEN / 2 - 0.03);
+  anel.castShadow = true;
+  tambor.add(anel);
+});
+
+// dente k (1..9): comprimento k*0.5, encostado na ponta esquerda, no angulo k*36°
+for (let k = 1; k <= 9; k++) {
+  const L = k * DENTE_UN;
+  const suporte = new THREE.Group();
+  suporte.rotation.x = k * Math.PI * 2 / 10;             // o dente k cresta sob a roda quando o tambor girou k*36°
+  const dente = bloco(L, 0.26, 0.16, materiais.latao);   // fino o bastante pra caber no vao da roda no fundo do engate
+  dente.position.set(-TAMBOR_LEN / 2 + L / 2, TAMBOR_R + 0.13, 0);
+  suporte.add(dente);
+  tambor.add(suporte);
+}
+
+// eixo e manivela (giram junto com o tambor)
+const eixoTambor = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.09, 7.4, 16), materiais.latao);
+eixoTambor.geometry.rotateZ(Math.PI / 2);
+tambor.add(eixoTambor);
+const braco = bloco(0.14, 0.9, 0.14, materiais.latao); braco.position.set(3.85, 0.45, 0);
+const cabo = new THREE.Mesh(new THREE.CylinderGeometry(0.11, 0.11, 0.55, 16), materiais.madeiraEscura);
+cabo.geometry.rotateZ(Math.PI / 2);
+cabo.position.set(4.15, 0.9, 0);
+cabo.castShadow = true;
+tambor.add(braco, cabo);
+
+// ---------- roda que desliza + eixo quadrado + mostrador ----------
+const RODA_Y = TAMBOR_Y + TAMBOR_R + 0.13 + 0.62;   // engrena por cima do dente
+const conjRoda = new THREE.Group();                  // tudo que gira junto: eixo, roda, mostrador
+conjRoda.position.y = RODA_Y;
+maquina.add(conjRoda);
+
+const eixoQuadrado = bloco(7.4, 0.16, 0.16, materiais.latao);
+conjRoda.add(eixoQuadrado);
+
+const roda = new THREE.Group();                      // desliza no eixo quadrado
+const miolo = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, 0.34, 32), bronzeOu(0x96702f));
+miolo.geometry.rotateZ(Math.PI / 2);
+miolo.castShadow = true;
+roda.add(miolo);
+for (let t = 0; t < 10; t++) {                       // 10 dentes na roda; sem defasagem: com a janela de
+  const sup = new THREE.Group();                     // empurrao centrada na crista, o VAO entre o dente que sai
+  sup.rotation.x = t * Math.PI * 2 / 10;             // e o que entra acompanha o dente do tambor a passagem toda
+  const d = bloco(0.3, 0.34, 0.14, materiais.latao);
+  d.position.set(0, 0.55, 0);
+  sup.add(d);
+  roda.add(sup);
+}
+conjRoda.add(roda);
+
+// mostrador: disco com 0-9 na ponta direita do eixo quadrado
+function texturaMostrador() {
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = 256;
+  const cx = cv.getContext('2d');
+  cx.fillStyle = '#f7efdd';
+  cx.beginPath(); cx.arc(128, 128, 128, 0, Math.PI * 2); cx.fill();
+  cx.fillStyle = '#6d5b42';
+  cx.font = '600 40px "IBM Plex Mono", monospace';
+  cx.textAlign = 'center'; cx.textBaseline = 'middle';
+  for (let n = 0; n < 10; n++) {
+    const a = -n * Math.PI * 2 / 10 + Math.PI / 2;   // sentido casado com o giro da roda
+    cx.fillText(n, 128 + Math.cos(a) * 92, 128 - Math.sin(a) * 92);
+  }
+  const tx = new THREE.CanvasTexture(cv);
+  tx.anisotropy = 4;
+  return tx;
+}
+const mostrador = new THREE.Mesh(
+  new THREE.CylinderGeometry(0.75, 0.75, 0.12, 48),
+  [bronzeOu(0x96702f), new THREE.MeshStandardMaterial({ map: texturaMostrador(), roughness: 0.6 }), bronzeOu(0x96702f)]
+);
+mostrador.geometry.rotateZ(-Math.PI / 2);            // tampa com numeros virada pra +x
+mostrador.position.x = 3.95;
+mostrador.castShadow = true;
+conjRoda.add(mostrador);
+
+// ponteiro fixo em cima do mostrador (nao gira)
+const ponteiro = new THREE.Mesh(new THREE.ConeGeometry(0.09, 0.3, 12), materiais.madeiraEscura);
+ponteiro.position.set(3.95, RODA_Y + 0.95, 0);
+ponteiro.rotation.z = Math.PI;
+maquina.add(ponteiro);
+
+document.fonts.ready.then(() => { mostrador.material[1].map = texturaMostrador(); mostrador.material[1].needsUpdate = true; });
+
+// ---------- rotulos ----------
+document.fonts.ready.then(() => {
+  [['TAMBOR ESCALONADO', -1.4, 0.6], ['A RODA DESLIZA', 0, RODA_Y + 1.5], ['MOSTRADOR', 3.95, RODA_Y + 1.5]].forEach(([t, x, y]) => {
+    const sp = criaRotulo(t, 1.2);
+    sp.position.set(x, y, 0);
+    maquina.add(sp);
+  });
+  redimensiona();
+});
+
+// ---------- mecanica ----------
+// digito d => a roda fica na fatia onde exatamente d dentes alcancam:
+// dente k cobre x de -2.7 ate -2.7+0.5k; com a roda em t do comeco, pegam os dentes k > t/0.5
+let digito = 3;
+let ticksBase = 0;       // dentes ja entregues (acumulador)
+let voltas = 0;
+let girando = null;      // estado da volta em andamento
+let desafio = false;
+
+function xDaRoda(d) {
+  const t = (9 - d + 0.5) * DENTE_UN;
+  return -TAMBOR_LEN / 2 + t;
+}
+let rodaAlvoX = xDaRoda(digito);
+
+// durante a volta, o dente k (se engatado) passa pela roda quando o tambor girou k*36°
+const JANELA = Math.PI * 2 / 20;   // arco em que o dente empurra a roda, centrado na crista
+function ticksNaVolta(fi) {
+  let s = 0;
+  for (let k = 10 - digito; k <= 9; k++) {
+    const centro = k * Math.PI * 2 / 10;
+    s += THREE.MathUtils.clamp((fi - centro + JANELA / 2) / JANELA, 0, 1);
+  }
+  return s;
+}
+
+function pintaHud(ticksVivos) {
+  const total = Math.floor(ticksVivos !== undefined ? ticksVivos : ticksBase);
+  elResultado.textContent = total.toLocaleString('pt-BR');
+  elVoltas.textContent = voltas + (voltas === 1 ? ' volta' : ' voltas');
+  elVoltas.className = 'meta mono';
+}
+pintaHud();
+
+slider.addEventListener('input', () => {
+  digito = +slider.value;
+  elDigito.textContent = digito;
+  rodaAlvoX = xDaRoda(digito);
+  legenda.innerHTML = digito === 0
+    ? 'No <b>0</b> a roda foge de todos os dentes: a volta passa em branco.'
+    : 'Na fatia do <b>' + digito + '</b>, ' + digito + ' dente' + (digito === 1 ? ' alcanca' : 's alcancam') + ' a roda por volta.';
+});
+
+btnGira.addEventListener('click', () => {
+  if (girando) return;
+  controls.autoRotate = false;
+  girando = { t: 0, dur: 2.4 };
+  btnGira.disabled = true;
+  slider.disabled = true;
+});
+
+document.getElementById('btnLimpar').addEventListener('click', () => {
+  if (girando) return;
+  ticksBase = 0; voltas = 0; desafio = false;
+  conjRoda.rotation.x = 0;
+  pintaHud();
+  legenda.className = 'legenda';
+  legenda.innerHTML = 'Zerado. Escolha o dígito e gire a manivela.';
+});
+
+document.getElementById('btnDesafio').addEventListener('click', () => {
+  if (girando) return;
+  ticksBase = 0; voltas = 0; desafio = true;
+  conjRoda.rotation.x = 0;
+  pintaHud();
+  legenda.className = 'legenda';
+  legenda.innerHTML = 'Multiplicar é repetir: ponha o dígito no <b>3</b> e gire a manivela <b>4 vezes</b>.';
+});
+
+function fimDaVolta() {
+  ticksBase += digito;
+  voltas++;
+  girando = null;
+  btnGira.disabled = false;
+  slider.disabled = false;
+  pintaHud();
+  if (desafio && ticksBase === 12 && voltas === 4) {
+    legenda.className = 'legenda ok';
+    legenda.innerHTML = '3 × 4 = 12, sem somar de cabeça: a máquina repetiu o 3 quatro vezes. 🎉';
+    desafio = false;
+  } else if (desafio && (ticksBase > 12 || voltas > 4)) {
+    legenda.className = 'legenda';
+    legenda.innerHTML = 'Passou do alvo — aperte <b>desafio</b> pra recomeçar.';
+  } else {
+    legenda.innerHTML = 'Volta completa: <b>+' + digito + '</b> no acumulador.';
+  }
+}
+
+// ---------- animacao ----------
+inicia((dt) => {
+  // roda deslizando ate a fatia do digito
+  const dx = rodaAlvoX - roda.position.x;
+  if (Math.abs(dx) > 0.001) roda.position.x += dx * Math.min(1, dt * 6);
+
+  // volta da manivela: tambor gira 360° e a roda avanca so nos dentes engatados
+  if (girando) {
+    girando.t = Math.min(girando.t + dt, girando.dur);
+    const p = girando.t / girando.dur;
+    const suave = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;   // easeInOutQuad
+    const fi = suave * Math.PI * 2;
+    tambor.rotation.x = -fi;
+    const ticks = ticksBase + ticksNaVolta(fi);
+    conjRoda.rotation.x = ticks * Math.PI * 2 / 10;
+    pintaHud(ticks);
+    if (girando.t >= girando.dur) { tambor.rotation.x = 0; fimDaVolta(); }
+  }
+});
+</script>
+</body>
+</html>

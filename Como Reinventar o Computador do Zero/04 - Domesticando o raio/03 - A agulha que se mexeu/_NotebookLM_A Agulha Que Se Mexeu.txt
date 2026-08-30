@@ -1,0 +1,136 @@
+Inicie dizendo: A Agulha Que Se Mexeu
+---------------
+
+Este e o terceiro episodio da etapa DOMESTICANDO O RAIO, a quarta etapa da serie Como Reinventar o Computador do Zero. Os dois anteriores cobriram a eletricidade estatica de 1600 a 1752, que era so estalo, e a pilha de Volta de 1800, que deu corrente continua pela primeira vez. Agora existe eletricidade que dura, e ela ainda nao move nada. Este episodio conserta isso.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas (4 e 5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A forca em volta do fio como circulos de agua em volta de uma pedra que caiu no lago, so pra explicar por que a agulha fica atravessada em vez de apontar pro fio.
+- Enrolar o fio como somar empurroes no mesmo lugar: cada volta empurra de novo o mesmo pedaco de ferro.
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A AGULHA QUE SE MEXEU)
+
+Retomar em uma frase: no episodio passado a pilha de Volta deu, pela primeira vez, eletricidade que dura. E ate aqui essa eletricidade so sabe fazer tres coisas: dar choque, esquentar fio e separar agua em bolha de gas. Nenhuma maquina pode funcionar com isso, porque nada disso empurra nada.
+
+Dizer o que este episodio faz: e o episodio em que a eletricidade ganha musculo. Uma descoberta de 1820 mostra que corrente eletrica produz forca magnetica, e cinco anos depois isso vira um aparelho que levanta peso e obedece a um interruptor.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: o assunto e o eletromagnetismo, a descoberta de que corrente eletrica produz magnetismo. Periodo: de 1820, com Hans Christian Orsted em Copenhague, a 1825, com o eletroima de William Sturgeon na Inglaterra. Cinco anos, e nesses cinco anos nasce metade da tecnologia do seculo seguinte.
+
+Motivacao: durante seculos, eletricidade e magnetismo eram assuntos separados. Lembrar que no primeiro episodio desta etapa foi justamente Gilbert, em 1600, quem separou os dois: o ima atrai metal sempre, o ambar esfregado atrai qualquer coisinha leve e so depois de esfregado. Eram fenomenos diferentes, e ficou assim por duzentos e vinte anos.
+
+O que muda em 1820 e que essa parede cai. Nao sao dois assuntos, sao dois lados da mesma coisa. E o mais importante pra nossa serie: dessa juncao sai a primeira forca eletrica que da pra ligar e desligar por comando.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A AULA DE 1820)
+
+Copenhague, vinte e um de abril de 1820. Hans Christian Orsted e professor e esta numa demonstracao pra alunos. Na mesa tem uma pilha voltaica, um fio, e uma bussola que estava ali por outro motivo.
+
+Ele fecha o circuito, a corrente comeca a passar pelo fio, e a agulha da bussola vira. Solta o fio, a agulha volta. O efeito era fraco, e por isso ninguem tinha tropecado nele antes, mesmo com pilhas espalhadas pela Europa havia vinte anos.
+
+Vale contar uma coisa honesta sobre isso, porque muita gente conta essa historia como acaso puro e nao foi bem assim. Orsted vinha de uma tradicao filosofica alema que acreditava que as forcas da natureza sao todas manifestacoes de uma coisa so, e ele ja procurava uma ligacao entre eletricidade e magnetismo havia anos. Foi sorte no momento e preparo na cabeca.
+
+Ele nao publicou correndo. Passou tres meses testando: fio mais grosso, pilha mais forte, tabua de madeira entre o fio e a agulha, agua, vidro, metal. Descobriu que o efeito atravessa qualquer coisa que se ponha no meio. Em julho de 1820 publica um folheto de quatro paginas em latim e manda pras sociedades cientificas da Europa inteira. A reacao foi imediata: era o primeiro elo entre os dois mundos.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O JEITO ESTRANHO QUE ELA VIRA, TELA INTERATIVA)
+
+Aqui esta o detalhe que deixou todo mundo confuso na epoca, e que vale a pena entender direito.
+
+Se o fio simplesmente atraisse a agulha, ela apontaria pro fio, que e o que a gente espera de atracao. Nao foi isso que aconteceu. A agulha se poe ATRAVESSADA, perpendicular ao fio. E se a corrente for invertida, ela vira atravessada pro outro lado. E se o fio for passado por baixo da bussola em vez de por cima, ela tambem inverte.
+
+Isso nao se parecia com nenhuma forca conhecida. Toda forca que a fisica conhecia ate ali puxava ou empurrava em linha reta, na direcao da coisa. Essa aqui gira em volta.
+
+E essa e a explicacao: a forca magnetica de um fio com corrente nao aponta pro fio, ela faz circulos em volta dele. Como circulos de agua em volta de uma pedra que caiu no lago, so que em pe, cercando o fio. A agulha nao aponta pro fio porque ela esta so se alinhando com esses circulos. Inverteu a corrente, os circulos giram pro outro lado, e a agulha acompanha.
+
+Avisar: a tela tem o fio e a bussola. Convide o ouvinte a ligar a corrente, ver a agulha virar, e depois inverter o sentido pra ver ela virar pro lado contrario.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (AMPERE E A BOBINA, TELA INTERATIVA)
+
+Paris, setembro de 1820. A noticia de Copenhague chega, e Andre-Marie Ampere reage numa velocidade que ate hoje impressiona: em cerca de uma semana ja estava apresentando resultados novos na Academia de Ciencias.
+
+O primeiro: dois fios paralelos, cada um com corrente. Se as duas correntes vao no mesmo sentido, os fios se atraem. Se vao em sentidos contrarios, os fios se afastam. Repare no que isso significa: nao tem ima nenhum nessa experiencia. Corrente sozinha, sem ima nenhum, produz forca sobre corrente. Ampere chamou esse assunto novo de eletrodinamica.
+
+O segundo, e o que interessa pra construir coisa: enrolar. Se o fio e enrolado em espiral, em voltas coladas uma na outra, cada volta contribui com o seu pedacinho de forca no mesmo lugar. Cada volta empurra de novo o mesmo pedaco de espaco, e o efeito soma. Uma bobina com corrente se comporta igualzinho a um ima de barra: tem um lado norte e um lado sul, atrai e repele outro ima, e vira a bussola de longe.
+
+Ampere ainda foi mais longe e propos uma coisa que se confirmou depois: se corrente faz magnetismo, talvez todo magnetismo seja corrente. O ima permanente da geladeira seria feito de correntinhas circulando dentro do material. Ele acertou em espirito, e hoje se sabe que o magnetismo dos imas vem do movimento dos eletrons dentro dos atomos.
+
+Avisar: a tela tem o fio pra enrolar. Convide o ouvinte a ir aumentando o numero de voltas e ver a forca crescer.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O ELETROIMA QUE LIGA E DESLIGA)
+
+1825, Inglaterra. William Sturgeon, que era professor sem formacao formal, ex-soldado e ex-sapateiro, junta as pecas e monta o primeiro eletroima.
+
+A receita e simples: uma barra de ferro dobrada em ferradura, envernizada pra isolar, e dezoito voltas de fio de cobre por fora. Liga numa unica celula de bateria e o troco, que pesava duzentos gramas, levanta quatro quilos de ferro. Vinte vezes o proprio peso.
+
+O ferro no meio e o que multiplica. A bobina sozinha ja tem efeito magnetico, mas o ferro dentro dela responde e reforca, e o conjunto fica muito mais forte que o fio sozinho.
+
+E agora a frase mais importante deste episodio, pra dizer com calma: um ima comum, de pedra ou de metal imantado, esta sempre ligado. Nao tem como desligar um ima de geladeira. O eletroima nao. Ele so e ima enquanto a corrente estiver passando. Corta o circuito e ele vira um pedaco de ferro morto, e larga o que estava segurando.
+
+Isso e forca sob comando. E, melhor, forca sob comando a distancia, porque quem manda e um interruptor que pode estar do outro lado do fio, longe dali. Guardem isso: e o coracao do rele e do telegrafo, que sao os proximos episodios.
+
+Poucos anos depois, nos Estados Unidos, Joseph Henry melhora a receita com uma ideia simples: em vez de fio nu com poucas voltas, fio isolado com seda, que pode ser enrolado colado, camada sobre camada, com centenas ou milhares de voltas. Os eletroimas dele passaram a levantar centenas de quilos, e chegaram a uma tonelada. E Henry tambem foi quem entendeu que o formato da bobina precisa combinar com o tipo de bateria usada, o que fez a diferenca quando o telegrafo precisou funcionar em fio longo.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: LEVANTE O MAIOR PESO)
+
+Convidar a pausar o audio e resolver na tela: tem um prego, um fio pra enrolar, uma pilha com numero de pares ajustavel, e uma pilha de clipes pra levantar.
+
+O ouvinte escolhe tres coisas: quantas voltas de fio, quanta pilha, e se o nucleo e de ferro ou so ar. O objetivo e levantar o maior numero de clipes.
+
+O que a tela vai mostrar: mais voltas levanta mais, mais corrente levanta mais, e o nucleo de ferro faz uma diferenca enorme. E, no fim, desligar a chave larga tudo, que e o ponto do episodio.
+
+Quando conseguir levantar a pilha inteira, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: em 1820 Orsted viu a agulha da bussola virar quando passou corrente num fio, e com isso eletricidade e magnetismo deixaram de ser assuntos separados. A forca nao aponta pro fio, ela gira em volta dele. Ampere mostrou que dois fios com corrente se atraem ou se repelem sem ima nenhum, e que enrolar o fio numa bobina cria um ima. E em 1825 Sturgeon poe uma barra de ferro dentro da bobina e cria o eletroima, o ima que obedece a um interruptor.
+
+Fechar dizendo o que a serie ganhou: agora existe corrente que dura e existe forca que aparece e some por comando, a distancia, pelo fio. Isso ja da motor, ja da campainha, ja da guindaste de ferro velho.
+
+O que ficou faltando, e esse e o gancho: toda essa forca sai de pilha, e pilha acaba. Pra eletrificar um pais nao da pra empilhar zinco e cobre pra sempre. E tem uma pergunta obvia que ninguem tinha respondido ainda: se corrente faz ima, sera que ima faz corrente? O caminho de volta.
+
+Gancho: no proximo episodio, um ex-encadernador de livros passa dez anos atras dessa pergunta e descobre que a resposta e sim, com uma condicao: o ima tem que estar se mexendo. Dessa condicao nasce o gerador, e e dele que vem praticamente toda a eletricidade que existe no mundo hoje. Faraday e o gerador.

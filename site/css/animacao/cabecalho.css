@@ -1,0 +1,59 @@
+/* cabecalho
+   A barra de cima da animacao: o caminho de volta a esquerda, o tocador no meio e o botao do modelo 3D a direita. Depende de animacao/tokens.css; o tocador em si e tocador.css.
+
+   E a unica faixa que nao troca junto com a tela. Por isso o modelo 3D mora aqui,
+   sempre a um clique, sem precisar de painel em toda tela. */
+
+.topo {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  border-bottom: 1px solid var(--line);
+  /* o conteudo alinha com a coluna do palco; o fundo vai de ponta a ponta */
+  padding: 6px max(18px, calc((100% - var(--largura)) / 2));
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.topo > :first-child { flex: 0 1 auto; min-width: 0; }
+
+/* o caminho de volta pro site: discreto, do tamanho do resto da barra */
+.voltar {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.voltar:hover { border-bottom-color: var(--accent); }
+.voltar:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.acoes { display: flex; align-items: center; gap: 16px; }
+
+.btn-cabecalho {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  background: var(--accent);
+  color: var(--ground);
+  border: 1px solid var(--accent);
+  border-radius: 99px;
+  padding: 7px 16px;
+  font-weight: 600;
+  transition: all .25s;
+}
+.btn-cabecalho:hover { filter: brightness(1.18); }
+.btn-cabecalho:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* telefone */
+@media (max-width: 700px) {
+  .topo { padding: 10px 12px; font-size: 9px; }
+  .btn-cabecalho { font-size: 9px; padding: 5px 10px; }
+}

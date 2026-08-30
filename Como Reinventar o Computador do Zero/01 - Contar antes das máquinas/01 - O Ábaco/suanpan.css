@@ -1,0 +1,119 @@
+/* suanpan (deste episodio)
+   O abaco com barra da tela 8, desenhado pra explicar como se le o da foto: em cada casa, duas contas de um lado da barra valem 5 e cinco do outro valem 1; conta encostada na barra conta. Depende de abaco.css (herda .abaco, .haste, .rotulo, .valor e o desenho da conta) e mora dentro de .painel.
+
+   As casas ficam EM PE, como no suanpan de verdade e como o audio descreve: a barra
+   deitada cruza o meio de cada fio, o deck do 5 fica em cima dela e o do 1 embaixo.
+   A conta "encosta" com translateY, andando a folga ate a barra. O botao "virar de
+   lado" (episodio.js) poe a classe .suanpan--deitado, que devolve o desenho deitado. */
+
+.suanpan {
+  --conta: 46px;   /* o tamanho da conta: manda no desenho e na medida dos decks */
+  --folga: 34px;   /* o quanto a conta anda ate encostar na barra */
+  --vao: 4px;      /* o espaco entre duas contas do mesmo deck */
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 34px;
+  max-width: none;
+}
+/* a conta e medida daqui, nao de abaco.css: o deck e a folga dependem do mesmo numero */
+.suanpan .conta { width: var(--conta); height: var(--conta); }
+.suanpan .haste { flex-direction: column; gap: 8px; }
+.suanpan .haste .rotulo { width: auto; text-align: center; }
+.suanpan .haste .valor { width: auto; text-align: center; }
+
+/* o fio em pe: a linha do meio vira vertical e a altura e a soma dos dois decks */
+.suanpan .haste .fio {
+  flex: none;
+  flex-direction: column;
+  width: calc(var(--conta) + 14px);
+  height: auto;
+  padding: 0;
+  gap: 0;
+  justify-content: flex-start;
+  background: linear-gradient(90deg, transparent 46%, var(--line) 46% 54%, transparent 54%);
+}
+.suanpan .haste.destaque .fio { background: linear-gradient(90deg, transparent 46%, var(--accent-vivo) 46% 54%, transparent 54%); }
+
+.suanpan .deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--vao);
+  padding: 6px 0;
+}
+/* o deck do 5 descansa encostado no topo e desce ate a barra; o do 1 descansa no pe e sobe */
+.suanpan .deck--cinco { height: calc(2 * var(--conta) + var(--vao) + var(--folga) + 12px); justify-content: flex-start; }
+.suanpan .deck--um { height: calc(5 * var(--conta) + 4 * var(--vao) + var(--folga) + 12px); justify-content: flex-end; }
+
+.suanpan .barra {
+  flex: none;
+  width: 100%;
+  height: 7px;
+  border-radius: 4px;
+  background: var(--ink);
+}
+.suanpan .haste.destaque .barra { background: var(--accent); }
+
+/* de cima (vale 5): desce ao encostar. De baixo (vale 1): sobe ao encostar */
+.suanpan .deck--cinco .conta { opacity: .26; transform: translateY(0) scale(.88); }
+.suanpan .deck--cinco .conta.on { opacity: 1; transform: translateY(var(--folga)) scale(1); }
+.suanpan .deck--um .conta { opacity: .26; transform: translateY(0) scale(.88); }
+.suanpan .deck--um .conta.on { opacity: 1; transform: translateY(calc(-1 * var(--folga))) scale(1); }
+
+/* ---- deitado: o botao "virar de lado" poe as casas uma embaixo da outra, como o
+   abaco simples, com a barra em pe no meio do fio; o deck do 5 a esquerda anda pra
+   direita ao encostar e o do 1 a direita anda pra esquerda. Mesmas variaveis de tamanho.
+   As regras levam a classe dobrada de proposito: ganham das medidas dos blocos de
+   altura la embaixo, que sao mais fracas. ---- */
+.suanpan.suanpan--deitado { flex-direction: column; align-items: stretch; gap: 14px; max-width: 760px; margin: 0 auto; }
+.suanpan.suanpan--deitado .haste { flex-direction: row; gap: 18px; }
+.suanpan.suanpan--deitado .haste .rotulo { width: 88px; text-align: right; }
+.suanpan.suanpan--deitado .haste .valor { width: 34px; text-align: left; }
+.suanpan.suanpan--deitado .haste .fio {
+  flex: 1;
+  flex-direction: row;
+  width: auto;
+  height: calc(var(--conta) + 14px);
+  background: linear-gradient(0deg, transparent 46%, var(--line) 46% 54%, transparent 54%);
+}
+.suanpan.suanpan--deitado .haste.destaque .fio { background: linear-gradient(0deg, transparent 46%, var(--accent-vivo) 46% 54%, transparent 54%); }
+.suanpan.suanpan--deitado .deck { flex-direction: row; height: auto; padding: 0 6px; }
+.suanpan.suanpan--deitado .deck--cinco { width: calc(2 * var(--conta) + var(--vao) + var(--folga) + 12px); flex: none; justify-content: flex-start; }
+.suanpan.suanpan--deitado .deck--um { width: auto; flex: 1; justify-content: flex-start; }
+.suanpan.suanpan--deitado .barra { width: 7px; height: auto; align-self: stretch; }
+.suanpan.suanpan--deitado .deck--cinco .conta { transform: translateX(0) scale(.88); }
+.suanpan.suanpan--deitado .deck--cinco .conta.on { transform: translateX(var(--folga)) scale(1); }
+.suanpan.suanpan--deitado .deck--um .conta { transform: translateX(var(--folga)) scale(.88); }
+.suanpan.suanpan--deitado .deck--um .conta.on { transform: translateX(0) scale(1); }
+
+/* ---- apertos, no fim da folha de proposito: acompanham os tamanhos de abaco.css ---- */
+/* tela media (1600x900, 1440x900): em pe o suanpan e alto, e com a conta cheia a tela rola */
+@media (max-height: 960px) {
+  .suanpan { --conta: 40px; --folga: 24px; --vao: 3px; gap: 28px; }
+  .suanpan .haste { gap: 5px; }
+  .suanpan .haste .fio { width: calc(var(--conta) + 12px); }
+  .suanpan .deck { padding: 3px 0; }
+  .suanpan .deck--cinco { height: calc(2 * var(--conta) + var(--vao) + var(--folga) + 6px); }
+  .suanpan .deck--um { height: calc(5 * var(--conta) + 4 * var(--vao) + var(--folga) + 6px); }
+  .suanpan .barra { height: 6px; }
+}
+@media (max-height: 820px) {
+  .suanpan { --conta: 34px; --folga: 20px; --vao: 2px; gap: 26px; }
+  .suanpan .haste { gap: 4px; }
+  .suanpan .haste .fio { width: calc(var(--conta) + 10px); }
+  .suanpan .deck { padding: 3px 0; }
+  .suanpan .deck--cinco { height: calc(2 * var(--conta) + var(--vao) + var(--folga) + 6px); }
+  .suanpan .deck--um { height: calc(5 * var(--conta) + 4 * var(--vao) + var(--folga) + 6px); }
+  .suanpan .barra { height: 5px; }
+}
+/* telefone por ultimo: 844px de altura tambem casa com os blocos de altura acima, e o telefone manda */
+@media (max-width: 700px) {
+  .suanpan { --conta: 18px; --folga: 10px; --vao: 2px; gap: 16px; }
+  .suanpan .haste { gap: 6px; }
+  .suanpan .haste .fio { width: calc(var(--conta) + 8px); }
+  .suanpan .deck { padding: 4px 0; }
+  .suanpan .deck--cinco { height: calc(2 * var(--conta) + var(--vao) + var(--folga) + 8px); }
+  .suanpan .deck--um { height: calc(5 * var(--conta) + 4 * var(--vao) + var(--folga) + 8px); }
+  .suanpan .barra { height: 4px; }
+}

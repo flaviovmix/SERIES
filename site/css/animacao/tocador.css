@@ -1,0 +1,173 @@
+/* tocador
+   O tocador do episodio, desenhado por cima de um <audio> sem controles: capa, titulo, saltos de 15s, play, a barra com uma marca por tela e o tempo. Depende de animacao/tokens.css e mora dentro de .topo (cabecalho.css).
+
+   A caixa branca e o que separa o tocador da barra. A barra tem as marcas das
+   telas, que um tocador comum nao pode ter: aqui a gente sabe onde a tela vira. */
+
+.tocador {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 1 420px;
+  max-width: 820px;
+  margin: 0 auto;
+  /* a barra de cima impoe caixa alta espacada; o tocador nao e barra */
+  text-transform: none;
+  letter-spacing: normal;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 4px 12px 4px 4px;
+  box-shadow: 0 1px 0 var(--line), 0 10px 26px -20px rgba(0, 0, 0, .35);
+}
+.tocador__capa {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  object-fit: cover;
+  flex: none;
+  border: 1px solid var(--line);
+}
+.tocador__id { min-width: 0; flex: 0 1 240px; }
+.tocador__titulo {
+  font-family: var(--fonte-animacao);
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tocador__fonte {
+  font-family: var(--fonte-mono);
+  font-size: 9.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* os saltos de 15s e o play */
+.tocador__salto {
+  flex: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px;
+  border-radius: 8px;
+  transition: color .2s, background .2s;
+}
+.tocador__salto b { font-family: var(--fonte-mono); font-size: 9px; font-weight: 600; }
+.tocador__salto:hover { color: var(--accent); background: var(--surface-alt); }
+.tocador__play {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--accent);
+  color: var(--ground);
+  font-size: 15px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  transition: transform .2s var(--ease), filter .2s;
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, .5);
+}
+.tocador__play.tocando { padding-left: 0; font-size: 13px; letter-spacing: 1px; }
+.tocador__play:hover { transform: scale(1.06); filter: brightness(1.15); }
+
+/* a barra: o indice do episodio, com uma marca por tela. A barra e o alvo de
+   clique e de teclado (role=slider); as marcas sao so desenho, e clicar em cima
+   de uma leva pro trecho dela porque a barra sabe onde ela esta */
+.tocador__barra {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 80px;
+  height: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.tocador__barra::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 6px;
+  border-radius: 99px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+}
+.tocador__cheio {
+  position: absolute;
+  left: 0;
+  height: 6px;
+  width: 0;
+  border-radius: 99px;
+  background: var(--accent);
+  pointer-events: none;
+}
+.tocador__marcas { position: absolute; inset: 0; }
+.tocador__marca {
+  position: absolute;
+  top: 0;
+  width: 14px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+.tocador__marca::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--line);
+  transition: background .2s, height .2s;
+}
+.tocador__marca:hover::after { background: var(--accent-vivo); height: 16px; }
+.tocador__marca.aqui::after { background: var(--ink); height: 16px; }
+.tocador__tempo {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  flex: none;
+  letter-spacing: .04em;
+}
+
+/* ---- apertos, no fim da folha de proposito ---- */
+
+/* sem largura pras tres partes da barra, o titulo e o primeiro a sair */
+@media (max-width: 1000px) {
+  .tocador__id { display: none; }
+  .tocador { gap: 10px; }
+}
+
+/* mais estreito, o tocador desce sozinho pra segunda linha da barra */
+@media (max-width: 820px) {
+  .tocador { order: 3; flex: 1 1 100%; max-width: none; margin: 2px 0 0; }
+}
+
+/* tela baixa */
+@media (max-height: 820px) {
+  .tocador { padding: 3px 10px 3px 3px; gap: 9px; }
+  .tocador__capa { width: 28px; height: 28px; }
+  .tocador__play { width: 29px; height: 29px; font-size: 12px; }
+  .tocador__titulo { font-size: 12.5px; }
+}

@@ -1,0 +1,515 @@
+# Transcricao automatica (faster-whisper small) - 19.8 min
+# Fonte: Quando o programa entrou na memória.mp3
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O programa que mora na memória.
+[00:02] Imagine construir a máquina de cálculo mais rápida da história da humanidade.
+[00:08] Um projeto gigante, cheio de válvulas, luzes, que promete resolver um monte de equação complexa
+[00:16] num piscar de olhos.
+[00:18] Sim, que ele sonha o tecnológico da época.
+[00:20] Exato. Mas aí você liga a máquina e percebe uma coisa.
+[00:24] Bom, uma coisa bem frustrante.
+[00:26] Que ela passa quase o tempo todo completamente parada.
+[00:29] Parada. E é esperando os humanos fazerem o trabalho braçal.
+[00:34] Exatamente.
+[00:35] Nós encerramos a nossa última conversa no ano de 1946.
+[00:39] Isso mesmo.
+[00:40] Naquele momento a gente tinha o Z3, o Mark 1 e o famoso ENIAC.
+[00:45] Aham, os pioneiros.
+[00:47] E o ENIAC era tipo o incrivelmente rápido no processamento.
+[00:50] Muito rápido. Mas tinha um gargalo, né?
+[00:52] Sim, um gargalo que hoje parece uma piada.
+[00:56] Ele fazer uma conta diferente, as pessoas precisavam passar dia, sabe?
+[01:00] Puxando e conectando cabos grossos.
+[01:02] Nossa.
+[01:03] Reconfigurando a máquina inteira na mão.
+[01:05] O cérebro eletrônico era rápido, mas as pernas dos operadores
+[01:09] eram o verdadeiro limite de velocidade da coisa.
+[01:12] Pois é. O número morava lá dentro, mas a ordem, o comando do que fazer
+[01:16] morava do lado de fora.
+[01:18] E o nosso objetivo na análise de hoje
+[01:20] é justamente entender como o engenharia resolveu isso.
+[01:24] Tá.
+[01:25] Acompanhar a jornada para colocar o número e a ordem
+[01:30] exatamente no mesmo lugar.
+[01:32] Maravilha. E só para situar todo mundo na linha do tempo,
+[01:35] este conteúdo cobra um período bem específico.
+[01:38] De 1945 a 1949.
+[01:41] São quatro anos fundamentais.
+[01:43] Sim.
+[01:44] Nós vamos de um simples rascunho de relatório em papel
+[01:47] até a primeira máquina rodando um programa guardado na própria memória.
+[01:51] Um salto gigantesco, né?
+[01:53] Com certeza. E antes de mergulhar na história,
+[01:56] eu tenho um aviso sobre a mecânica do nosso encontro.
+[01:58] Ah, sim, sobre a tela.
+[02:00] Isso. Nós temos uma animação que acompanha o áudio.
+[02:03] Mas se você estiver no trânsito ou lavando a louça, fique tranquilo.
+[02:07] Pode só escutar, né?
+[02:08] Pode acompanhar apenas pelo áudio sem problema.
+[02:10] Nós vamos descrever tudo o que está acontecendo.
+[02:13] E quando chegar a hora de mudar a tela da animação,
+[02:15] a gente vai dar o comando claro para você apertar o botão de avançar.
+[02:19] E na tela de prática, faremos uma pausa.
+[02:21] Combinado. Então, aperte o próximo.
+[02:23] Para entender o salto que a gente deu,
+[02:25] precisamos falar sobre o conceito de programa armazenado.
+[02:29] Tá. E o que seria isso, exatamente?
+[02:31] O nome já entrega quase tudo.
+[02:33] É a ideia de guardar as ordens do que a máquina deve fazer
+[02:37] na mesma memória onde já estão os dados e os números.
+[02:41] Tudo junto.
+[02:42] Tudo junto.
+[02:43] E a certidão de nascimento dessa ideia
+[02:45] é um documento datado de 30 de junho de 1945.
+[02:50] Ele foi criado na Moore School, na Universidade da Penn Silvânia.
+[02:53] Espera aí, a Moore School não era o lugar
+[02:55] onde eles estavam construindo o ENIAC?
+[02:57] Esse é o exato mesmo lugar.
+[02:59] E bom, isso explica muita coisa, sabe?
+[03:02] Sério?
+[03:03] O motivo para eles pensarem um modelo novo
+[03:05] não foi uma busca filosófica, sabe, de acadêmicos.
+[03:08] Tá.
+[03:09] Foi pressa, pura.
+[03:10] Pressa.
+[03:11] Necessidade prática.
+[03:12] O ENIAC nem tinha sido mostrado para o público ainda
+[03:15] e a equipe de dinheiro já estava projetando o sucessor dele.
+[03:18] Ah, que ganhou o nome de Edwack, né?
+[03:20] Isso, o Edwack.
+[03:21] Então eles já sabiam que o método dos cabos era,
+[03:24] bom, totalmente insustentável.
+[03:26] Sem dúvida.
+[03:27] Todos ali sabiam que calcular em segundos
+[03:30] algo que exigia 2 ou 3 dias de preparação humana
+[03:33] era um problema muito sério.
+[03:35] Imagina a frustração.
+[03:37] Eles precisavam de uma saída.
+[03:39] E é nesse ambiente de urgência
+[03:41] que entra um personagem central.
+[03:43] Que, aliás, nos leva a nossa primeira ficha humana de hoje.
+[03:47] John F. Neumann.
+[03:49] Ah, o F. Neumann.
+[03:50] Deixa eu abrir os dados exatos dele aqui para a gente ler.
+[03:53] Manda ver.
+[03:54] Ele nasceu Neumann de Annus Lyles em 28 de dezembro de 1903.
+[03:58] Lá em Budapeste.
+[03:59] Certo.
+[04:00] Isso, em Budapeste, no reino da Hungria.
+[04:02] Que na época era parte do Império Austro-Húngaro
+[04:05] e hoje é Hungria, né?
+[04:06] E a família dele.
+[04:07] O pai dele, Max Neumann, era banqueiro
+[04:09] e tinha doutorado em direito.
+[04:11] E olha que detalhe.
+[04:12] Em 1913, o Imperador Francisco José
+[04:16] deu a família um título de nobreza.
+[04:19] Ah, é Bahí que vem o Vom, então.
+[04:21] Exatamente.
+[04:22] É daí que vem o Vom que ele zoou depois na Alemanha.
+[04:24] Entendi e onde ele estudou.
+[04:26] Ele estudou no ginásio luterano Fazori em Budapeste.
+[04:30] Aham.
+[04:31] Um colégio que, bom, na mesma época formou
+[04:33] outros matemáticos húngaros conhecidos.
+[04:35] O celeiro de talentos, né?
+[04:36] Pois é.
+[04:37] Depois ele fez engenharia química no ETH de Zurich
+[04:41] e se formou em 1926.
+[04:43] Bem cedo.
+[04:44] Sim.
+[04:45] No mesmo ano, ele tirou doutorado e matemática
+[04:47] na Universidade de Budapeste.
+[04:48] Caramba.
+[04:49] No mesmo ano.
+[04:50] No mesmo ano.
+[04:51] Ele morreu em 8 de fevereiro de 1957
+[04:54] aos 53 anos, no hospital militar Walter Reed
+[04:57] em Washington.
+[04:59] Ter dois diplomas pesados
+[05:01] desses antes dos 25 anos já mostra
+[05:03] o nível da capacidade desse cara.
+[05:05] Realmente uma mente brilhante.
+[05:07] Mas para entender o que o Fom Neumann
+[05:09] ajudou a consertar, aperte o próximo.
+[05:12] Vamos lá.
+[05:13] Vamos detalhar o que estava quebrado.
+[05:14] Você chamou de separação física, né?
+[05:16] Isso.
+[05:17] Nas máquinas daquela geração,
+[05:19] a regra era bem clara.
+[05:21] Os números ficavam do lado de dentro.
+[05:24] A máquina podia ler e alterar esses números
+[05:27] durante o cálculo sem pedir ajuda nenhuma.
+[05:29] Tá.
+[05:30] Mas as ordens, o programa em si,
+[05:32] o passo a passo ficavam do lado de fora.
+[05:35] E isso variava de máquina para máquina?
+[05:37] Variava sim.
+[05:38] Nos E3 e no Mark I,
+[05:40] as ordens entravam na máquina
+[05:42] através de uma fita de papel perfurada.
+[05:44] Aqueles furinhos.
+[05:46] Isso.
+[05:47] A máquina lia um furo, executava.
+[05:49] Liou o próximo furo, executava.
+[05:51] Já no NAC, bom, não tinha fita.
+[05:53] Era só cabo, né?
+[05:54] As ordens moravam naquela teia caótica de cabo
+[05:57] e chave física.
+[05:59] E essa separação criava dois problemas
+[06:02] que travavam tudo.
+[06:03] Quais eram?
+[06:04] O primeiro é o trabalho físico mesmo,
+[06:06] de trocar de tarefa.
+[06:07] O operador virava parte da máquina.
+[06:09] Trabalho de eletricista, quase.
+[06:11] Exato.
+[06:12] Mas o segundo é o que realmente
+[06:14] puxava tecnologia para trás.
+[06:16] Por quê?
+[06:17] A máquina não conseguia olhar para o próprio programa.
+[06:20] Sem fazer umas gambiarras terríveis de fiação,
+[06:23] não dava para pular uma ordem.
+[06:24] Tipo, dependendo de um resultado,
+[06:26] ela não podia decidir pular?
+[06:27] Não.
+[06:28] Ela não conseguia repetir um pedaço
+[06:30] ou montar uma ordem nova enquanto trabalhava.
+[06:32] Tudo era rígido.
+[06:34] Sabe que eu tenho uma analogia autorizada
+[06:36] aqui que ajuda muito a visualizar isso?
+[06:38] Legal, qual é?
+[06:39] Pense numa cozinha.
+[06:40] Uma cozinha de um restaurante.
+[06:42] Tá.
+[06:43] Os ingredientes, que seriam os números,
+[06:45] ficam bem organizados ali na bancada,
+[06:47] perto do fogão.
+[06:48] Certo.
+[06:49] Mas a receita, que é o nosso programa,
+[06:51] fica pregada na parede lá da sala de estar,
+[06:53] longe da cozinha.
+[06:54] Imaginador de cabeça.
+[06:56] Então, para trocar o prato que está sendo feito,
+[06:59] alguém tem que largar a parela,
+[07:01] ir até a sala,
+[07:02] tirar a folha da parede
+[07:04] e pregar uma outra receita.
+[07:05] É um vai-vem que acabou com a produção, né?
+[07:07] Acaba mesmo.
+[07:08] Agora, se a receita estiver na mesma prateleira dos ingredientes,
+[07:12] tudo muda.
+[07:13] A própria cozinha alcança a receita.
+[07:15] O cozinheiro escolhe uma página,
+[07:17] pula uma linha se precisar
+[07:19] e até, sei lá, escreve uma anotação ali na hora.
+[07:21] Bem melhor.
+[07:22] E claro, isso é só uma analogia
+[07:24] para explicar programa e dado
+[07:26] convivendo na mesma memória, tá?
+[07:28] Sim, sim.
+[07:29] E a base técnica para colocar a receita
+[07:31] nessa prateleira já estava pronta.
+[07:33] Já?
+[07:34] A memória com o endereço,
+[07:35] onde você sabe exatamente em qual lugar guardou as coisas,
+[07:38] já tinha sido criada.
+[07:39] Aham.
+[07:40] A máquina universal de Turing também já mostrava no papel
+[07:43] que uma fita podia conter tanto dado quanto a instrução.
+[07:47] Ah, então as peças do quebra-cabeça já estavam soltas por aí.
+[07:51] Exatamente.
+[07:52] Faltava só alguém formalizar
+[07:55] que a máquina de verdade deveria ser construída assim.
+[07:58] E foi aí que o documento de 45 entrou.
+[08:01] Aperte o próximo.
+[08:02] Então o texto ganhou o nome de
+[08:04] First Draft of a Report on the Edvec.
+[08:07] O primeiro rascunho de um relatório sobre o Edvec.
+[08:10] Isso mesmo.
+[08:11] Von Neumann escreveu esse primeiro rascunho
+[08:14] e ele foi distribuído por um colega,
+[08:16] o Herman Goldstein.
+[08:18] Em que data?
+[08:19] 30 de junho de 1945.
+[08:22] Sendo que umas 24 cópias
+[08:24] já tinham circulado internamente
+[08:26] cinco dias antes dessa data oficial.
+[08:28] Mas o que tinha de tão especial nesse texto?
+[08:31] Ele listava e definia as partes da máquina.
+[08:34] Ele quebrava o computador assim.
+[08:36] Primeiro, uma unidade eritmética para fazer as contas.
+[08:39] Tá.
+[08:40] Segundo, uma unidade de controle,
+[08:42] que é quem manda ali no tráfego,
+[08:44] depois memória, entrada, saída e armazenamento externo.
+[08:49] E o núcleo de tudo isso?
+[08:51] O núcleo era uma memória uniforme,
+[08:53] guardando números e ordens no mesmo formato
+[08:56] e usando os mesmos endereços.
+[08:58] O que a gente chama de arquitetura de Von Neumann hoje, né?
+[09:01] Isso mesmo.
+[09:02] Mas, peraí, você falou que a ideia já rolava nas reuniões lá da Morskul antes.
+[09:07] Como o nome do Von Neumann ficou com todo o crédito?
+[09:10] Não deu briga?
+[09:11] Deu muita briga.
+[09:12] O rascunho tinha apenas um nome na capa.
+[09:15] O do Von Neumann.
+[09:16] Nossa!
+[09:17] Presper Eckert e o John Malkley, que eram lá do Endiac,
+[09:20] ficaram revoltados com isso.
+[09:22] Por quê?
+[09:23] Eles diziam que a ideia do programa armazenado nasceu nas reuniões
+[09:26] lá na Morskul, antes mesmo da chegada do Von Neumann.
+[09:29] Ah, entendi.
+[09:30] Segundo eles, o Von Neumann só pegou e organizou em linguagem formal
+[09:34] o que eles já debatiam há tempos.
+[09:36] Mas o Von Neumann não contribuiu também?
+[09:38] Sim, ele era um matemático de primeira linha.
+[09:41] Ele deu uma forma lógica blindada e fez o documento existir no papel, sabe?
+[09:46] Tá, e no fim isso gerou algum problema prático?
+[09:49] Um problema enorme legalmente.
+[09:52] Como o rascunho foi distribuído publicamente,
+[09:55] a justiça americana entendeu, anos depois,
+[09:58] que houve uma divulgação pública, sabe?
+[10:01] Mais de um ano antes do pedido de patente deles.
+[10:04] Vixi!
+[10:05] A consequência?
+[10:06] A patente de Eckert e Malkley caiu.
+[10:08] Eles perderam?
+[10:09] Caramba!
+[10:10] E olhando de forma imparcial pra isso hoje, qual é o veredito?
+[10:14] O consenso assim é que o crédito acabou ficando com quem escreveu
+[10:18] e não com quem só discutiu a ideia.
+[10:20] O nome Von Neumann está grudado pra sempre e uma obra que foi de um grupo.
+[10:25] Ficou pra história.
+[10:26] Bom, aperte o próximo.
+[10:28] Agora vamos ver os impactos diretos na prática dessa ideia de uma memória só.
+[10:32] O que muda no dia a dia da máquina?
+[10:34] O primeiro impacto é a velocidade.
+[10:36] Trocar de programa deixa de ser aquele trabalho manual de eletricista
+[10:40] e vira pura escrita.
+[10:42] Escrever na memória.
+[10:43] Isso!
+[10:44] Como memória eletrônica se inscreve em microsegundos,
+[10:47] e eles dias inteiros de preparação do ENIAC viram apenas o tempo de carregar a memória.
+[10:52] Uma diferença absurda, mas tem um segundo ponto, né?
+[10:55] Tem.
+[10:56] Esse é o pulo do gato que abre a computação real.
+[10:59] A máquina agora pode tratar o próprio programa como dado.
+[11:02] Como assim?
+[11:03] Ela lê uma ordem, compara alguma coisa e decide pular pra outro endereço sozinha.
+[11:08] Ah, entendi.
+[11:10] Ela pode repetir trechos mudando só um númerozinho ali
+[11:13] ou até escrever ordens novas em cima de endereços pra fazer laços de repetição.
+[11:16] Mas vem cá, isso não dá um efeito colateral físico.
+[11:19] Se tudo tá no mesmo lugar...
+[11:21] Você tocou no ponto fraco.
+[11:22] Com uma memória só, não existe diferença física entre ordem e número.
+[11:26] Nenhuma diferença.
+[11:28] Nenhuma?
+[11:29] A mesma sequência exata de bits pode ser o número 4
+[11:32] ou pode ser um comando pra apagar tudo.
+[11:35] Depende só se a máquina acha que está buscando uma ordem
+[11:38] ou um dado naquele momento.
+[11:40] Nossa, mas isso cria uma família inteira de erros e ataques de segurança, né?
+[11:45] E que dura até os dias de hoje com os hackers.
+[11:48] Exatamente.
+[11:49] A falha de segurança moderna nasceu junto com a solução.
+[11:52] E pra quem tá com a animação aberta,
+[11:54] nós temos um botão nesta tela de agora.
+[11:56] A tela tem uma memória com poucos endereços
+[11:59] guardando algumas sequências de bits.
+[12:01] Se você apontar pra uma célula na tela,
+[12:03] você pode alternar a eleitura
+[12:05] e ver o mesmo conteúdo virar um número
+[12:08] e depois virar uma ordem do programa.
+[12:10] É a mesma sequência, virando duas coisas diferentes.
+[12:13] Brinquei um pouco e depois aperte um próximo.
+[12:16] Bom, a gente falou do papel.
+[12:18] Mas do papel pra máquina levou três anos.
+[12:21] E curiosamente, a Inglaterra chegou primeiro nessa corrida prática.
+[12:24] Ah, é? Onde?
+[12:25] Lá em Manchester.
+[12:26] Um grupo queria testar-se um tubo de raios catódicos
+[12:30] de radar funcionava como memória de verdade.
+[12:33] Tubo de radar?
+[12:34] Sim, escrevendo e lendo pontinhos de carga na tela do tubo.
+[12:38] Isso ficou conhecido como Tubo Williams.
+[12:41] Ou Tubo Williams-Cuburn.
+[12:43] O que nos traz a duas fichas humanas.
+[12:45] Ficha humana 2, Freddie Williams.
+[12:48] Fala os dados dele.
+[12:49] Nasceu em 26 de junho de 1911
+[12:52] em Homoley, perto de Stockport, na Inglaterra.
+[12:56] Ele estudou engenharia em Manchester e depois em Oxford
+[12:59] e trabalhou com radar durante a guerra
+[13:01] e morreu em 11 de agosto de 1977.
+[13:04] E o colega dele, ficha humana 3, é o Tom Cubern.
+[13:08] Tem os dados dele aqui também.
+[13:10] Lere esses.
+[13:11] Ele nasceu em 11 de agosto de 1921
+[13:14] em Earl Sheaton, perto de Dewsbury,
+[13:17] lá em Yorkshire, na Inglaterra.
+[13:19] O pai era escriturário de uma fábrica de LAN
+[13:22] e depois virou secretário da empresa.
+[13:24] Legal.
+[13:25] Ele estudou na Will Wright Grammar School
+[13:27] e depois no Sydney Sussex College, em Cambridge,
+[13:30] entre 1940 e 1942.
+[13:34] Morreu em 17 de janeiro de 2001 em Manchester.
+[13:38] Entendi.
+[13:39] E a máquina que eles fizeram em volta dessa memória?
+[13:42] Como era?
+[13:43] Eles chamaram de Manchester Baby.
+[13:45] Era bem pequena.
+[13:46] Tinha 32 palavras de 32 bits.
+[13:49] Isso dá 1.024 bits no total, né?
+[13:52] Só isso.
+[13:53] E tinha apenas 7 instruções no catálogo.
+[13:56] 7.
+[13:57] 7.
+[13:58] Sem soma direta, sem multiplicação.
+[14:00] Apenas subtração e desvio.
+[14:03] E aí, no dia 21 de junho de 1948,
+[14:07] a máquina rodou um programa
+[14:09] de quantas instruções?
+[14:10] 17 instruções.
+[14:12] Escrito pelo Kilborn,
+[14:13] guardado lá na própria memória
+[14:15] para achar o maior divisor próprio de um número,
+[14:18] 262.144,
+[14:21] que é 2 elevado a 18.
+[14:24] E como ela fez isso só com subtração?
+[14:26] O programa testou todos os números
+[14:28] por subtração repetida.
+[14:30] Levou 52 minutos
+[14:32] e cerca de 3 milhões e meio de operações.
+[14:35] 72 minutos para achar a resposta.
+[14:37] Sim.
+[14:38] E a resposta foi 131.072.
+[14:41] Mas o engraçado é que a resposta já era conhecida.
+[14:44] Era exatamente a metade do número.
+[14:46] Então para que rodar?
+[14:47] O que importava ali não era matemática.
+[14:49] Era provar o marco de que o programa
+[14:51] podia morar na memória e ser executado
+[14:53] de lá de dentro sem apagar.
+[14:55] E funcionou.
+[14:56] Que marco incrível.
+[14:58] Aperte o próximo.
+[14:59] O Baby provou o conceito,
+[15:00] mas ele era de laboratório.
+[15:02] Foi lá em Cambridge,
+[15:03] e ele criou uma primeira máquina para serviço diário.
+[15:05] Ah, o pessoal de Cambridge.
+[15:07] Ficha humana 4 para eles.
+[15:09] Maurice Wilkes.
+[15:10] Conta um pouco do Wilkes.
+[15:11] Ele nasceu em 26 de junho de 1913
+[15:14] em Dudley, na Inglaterra.
+[15:16] O pai dele, o Vincent Wilkes,
+[15:19] era escriturário da contabilidade
+[15:21] da propriedade do Conde de Dudley.
+[15:23] Tá.
+[15:24] Ele estudou na King Edward VI,
+[15:26] em Stolbridge,
+[15:27] depois fez matemática no Stol Jones College,
+[15:30] em Cambridge,
+[15:31] e tirou o doutorado em física em 1936.
+[15:35] Ele morreu em 29 de novembro de 2010,
+[15:38] aos 97 anos, lá em Cambridge.
+[15:41] Uma vida longa, né?
+[15:42] O Wilkes leu aquele rascunho de 1945 do von Neumann,
+[15:46] e foi ao curso lá na Moore School, em 1946.
+[15:50] E lá, ele decidiu que ia construir a máquina.
+[15:53] Essa máquina seria o EDSAC, né?
+[15:55] Isso.
+[15:56] O EDSAC rodou a primeira tarefa
+[15:58] em 6 de maio de 1949.
+[16:00] E usava tubo de radar também.
+[16:02] Não usava linhas de atraso de mercúrio.
+[16:04] Era um tubo onde o dado circulava como um pulso sonoro,
+[16:08] que era relido e reescrito sem parar.
+[16:11] Eles começaram com 512 palavras de memória ali.
+[16:15] E qual foi o grande avanço de software que veio com ele?
+[16:18] Foi fato de entrar em serviço regular.
+[16:20] Ele tinha uma fila de tarefas
+[16:22] para os pesquisadores da universidade
+[16:24] usarem todo dia.
+[16:25] E, junto com isso, veio a invenção da subroutina.
+[16:28] Subroutina?
+[16:29] Uma ideia do David Wheeler.
+[16:31] Em vez de reescrever os mesmos trechos de código sempre,
+[16:34] eles guardavam um trecho pronto e só chamavam.
+[16:37] Isso gerou a primeira biblioteca de rutinas prontas do mundo.
+[16:41] Nossa, quantas?
+[16:43] Em 1951 já tinham 87 delas.
+[16:46] E é ali que nasce a base de tudo o que a gente tem hoje no software.
+[16:50] O reaproveitamento de código de outras pessoas.
+[16:53] Você não escreve do zero.
+[16:54] Você usa o bloquinho do outro.
+[16:56] Perfeito.
+[16:57] Aperte o próximo.
+[16:58] Agora temos um desafio para você que está acompanhando a tela.
+[17:01] Isso.
+[17:02] Eu convido você a pausar o áudio,
+[17:04] resolver a prática que está aí na tela e voltar depois.
+[17:07] A tela tem uma memória pequena, um acumulador
+[17:10] e poucas instruções simulando o ambiente do baby.
+[17:13] A sua meta é achar o maior divisor próprio de um número pequeno
+[17:17] usando apenas as instruções de subtração e desvio,
+[17:21] igual ao programa de 48.
+[17:23] E qual é a lógica para conseguir fazer isso?
+[17:25] É subtrair o candidato do número repetido às vezes.
+[17:29] Se no final sobrar zero, ele divide.
+[17:31] Se passar de zero e ficar negativo, ele não divide.
+[17:35] Aí você pula para o próximo candidato. Tente aí.
+[17:37] E se você já pausou e voltou,
+[17:39] olha que lição legal a gente tira da tela.
+[17:42] Nenhuma instrução que você usou ali sabe dividir.
+[17:46] A divisão acontece porque o programa olha o próprio resultado no acumulador
+[17:51] e decide se repete ou se pula a linha.
+[17:54] E essa decisão só ocorre porque o programa divide espaço na memória com os números.
+[18:00] É brilhante!
+[18:01] Ache o ponto certo na tela,
+[18:03] certifique-se de que o áudio está sincronizado e, claro, aperte o próximo.
+[18:07] Vamos recapitular rapidamente nossa linha do tempo hoje.
+[18:10] Vamos!
+[18:11] Em junho de 1945 teve aquele rascunho, né?
+[18:15] Que definiu a máquina de memória única.
+[18:17] Para ordem e número?
+[18:18] O que acabou gerando a disputa que derrubou a patente do ENIAC.
+[18:21] Isso.
+[18:22] Depois, em junho de 1948, o baby rodou 17 instruções naquele tubo Williams lá de radar
+[18:29] provando o conceito na prática.
+[18:31] Em maio de 1949, o Ed Sack virou um serviço regular
+[18:38] já usando as bibliotecas de subroutinas.
+[18:41] E com isso, o nosso episódio encerra.
+[18:43] Este conteúdo para exatamente no ano de 1949.
+[18:48] Paramos aí.
+[18:49] Mas, veja, a gente resolveu a máquina guardar o programa.
+[18:52] Porém, tem um novo problema enorme na mesa.
+[18:55] Qual?
+[18:56] O trabalho de colocar esse programa lá dentro ainda é feito por humanos,
+[18:59] escrevendo números binários à mão, sabe?
+[19:02] Olhando tadelas.
+[19:03] Imaginador de cabeça.
+[19:05] Um dígito zero, em vez de um que você erra ali,
+[19:08] costuma tarde inteira perdida para Shalbug.
+[19:11] Se a programação continuar assim, manual,
+[19:14] quase ninguém vai querer programar no mundo.
+[19:16] Realmente.
+[19:17] E isso é o que planta a semente do nosso próximo passo.
+[19:20] Uma matemática da marinha americana,
+[19:22] que inclusive já programava o Mark I lá na guerra,
+[19:25] resolve escrever um programa diferente.
+[19:28] Ah, ela teve uma ideia meio maluca para a época.
+[19:31] Mas que era impossível.
+[19:33] Mas ela fez assim mesmo e chamou isso de compilador.
+[19:37] Como fazer a máquina entender palavras, isso muda toda a história.
+[19:41] Abre o caminho para o futuro.
+[19:43] Fica essa pergunta no ar para vocês pensarem.
+[19:45] Até a próxima.

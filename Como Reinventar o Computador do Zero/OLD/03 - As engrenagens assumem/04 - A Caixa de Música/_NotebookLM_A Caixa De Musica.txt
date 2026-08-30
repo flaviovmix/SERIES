@@ -1,0 +1,105 @@
+Inicie dizendo: A Caixa De Musica
+---------------
+
+Este e o oitavo episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard e os automatos; o anterior terminou com uma limitacao: cravar cames em metal e coisa de relojoeiro de corte, caro e de luxo. Este episodio e sobre a versao barata e de bolso do roteiro gravado: a caixa de musica, nascida em 1796 no mesmo mundo dos relojoeiros suicos.
+
+ESTE EPISODIO TEM UMA ANIMACAO COM SOM QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo, e que TOCA NOTAS DE VERDADE nas telas interativas. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar duas coisas: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema; e quem estiver com a pagina, ligue o som do aparelho, porque a caixa de musica desta pagina toca de verdade.
+- Na tela interativa (4) e nas DEMONSTRACOES (5 e 6), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O teclado e a partitura: o pente de laminas como o teclado da maquina, e o cilindro de pinos como a partitura enrolada que toca o teclado sozinha.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A CAIXA DE MUSICA)
+
+Retomar em uma frase: os automatos gravavam roteiros em cames de metal, mas aquilo era luxo de corte, caro e lento de fabricar. Em 1796, um relojoeiro de Genebra encolheu a ideia da musica gravada ate caber no bolso: a caixa de musica.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo. E o aviso especial deste episodio: quem estiver com a pagina aberta, LIGUE O SOM, porque a caixa de musica desta pagina toca de verdade.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: caixa de musica de pente metalico: um cilindro de pinos que dedilha laminas de aco afinadas. Antoine Favre, relojoeiro de Genebra, 1796, o mesmo mundo suico dos relojoeiros Jaquet-Droz do episodio passado.
+
+Motivacao: fazer relogios e caixinhas de luxo tocarem musica sem sinos e sem martelos, que ocupavam espaco demais. A meta era miniaturizar: musica gravada cabendo numa caixa de rape, dessas de bolso de casaco.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (DE ONDE ELA VEM)
+
+A linhagem, em tres passos. Seculos antes, torres de igreja ja tocavam melodias sozinhas: o carrilhao, com um cilindro de pinos GIGANTE acionando os martelos dos sinos. Musica gravada em tamanho de predio. Depois os relojoeiros encolheram o cilindro pra dentro de relogios musicais, menores mas ainda caros: cada nota exigia um sino ou um apito.
+
+A sacada de Favre: trocar sinos e martelos por um pente de laminas de aco afinadas. O pino so precisa dedilhar a lamina de leve. Sem sino, sem martelo, sem fole: a musica gravada coube no bolso.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O PENTE, TELA INTERATIVA COM SOM)
+
+Metade da maquina: o pente. Uma fileira de laminas de aco, cada uma afinada num tom: quanto mais curta a lamina, mais aguda a nota. E o teclado da maquina, esperando alguem tocar.
+
+Avisar: a tela tem o pente interativo. Convide o ouvinte a clicar nas laminas e OUVIR cada nota, e a tocar a escala inteira no botao.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O CILINDRO, COM DEMONSTRACAO COM SOM)
+
+A outra metade: o cilindro de pinos. Cada pino esta cravado numa posicao que diz duas coisas: QUANDO tocar (a volta do cilindro e a linha do tempo) e QUAL lamina dedilhar (a posicao ao longo do eixo). O cilindro e a partitura enrolada: a musica inteira gravada em pinos de metal, tocando o teclado sozinha.
+
+Avisar que a tela tem o botao de girar o cilindro: os pinos passam, as laminas tocam, e sai uma melodia conhecida (Frei Martinho, o Irmao Jorge das aulas de musica).
+
+Pedir: aperte o Proximo.
+
+TELA 6 (TROCAR O CILINDRO, COM DEMONSTRACAO COM SOM)
+
+A mesma consequencia que a serie viu no tear, agora em musica: quer outra cancao? Nao mexe na maquina, troca o cilindro. Mesma caixa, mesmo pente: com um cilindro sai Frei Martinho, com outro sai a Ode a Alegria de Beethoven.
+
+Avisar que a tela tem os dois botoes, cilindro A e cilindro B, pra ouvir a mesma maquina tocar as duas.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: GRAVE A MELODIA)
+
+Convidar a pausar o audio e resolver na tela: tem uma grade de pinos vazia (o cilindro aberto) e um alvo: Brilha Brilha Estrelinha. Colocar os pinos na posicao certa (qual lamina, qual tempo), girar o cilindro e conferir DE OUVIDO. Tem o botao de ouvir o alvo quantas vezes quiser. Errou, ajusta os pinos e gira de novo.
+
+Dizer com todas as letras: gravar uma musica em pinos e o mesmo gesto de furar um cartao do tear. Informacao gravada num objeto, executada por uma maquina.
+
+Quando a melodia sair igual ao alvo, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: pente afinado (o teclado) + cilindro de pinos (a partitura enrolada); trocar o cilindro troca a musica; e gravar pinos e o mesmo gesto de furar cartao.
+
+O que ficou: de 1830 a 1860 a caixa de musica virou industria na Suica, com mecanismos maiores e musicas mais longas; vilarejos inteiros, como Sainte-Croix, viviam disso. E em 1885 vieram as caixas de DISCO (Polyphon, Symphonion): discos de metal prensados aos milhares, baratos, vendidos separados da maquina. Compre a maquina uma vez, compre musicas pra sempre: a primeira midia popular da historia.
+
+A limitacao, que e o gancho: a caixa toca sempre igual e nao decide nada. Pino e furo guardam informacao que a maquina executa; a roda de Leibniz calcula mas nao obedece; o tear obedece mas nao calcula. Faltava alguem juntar as pontas numa maquina so.
+
+Gancho: no proximo episodio, o ingles que sonhou essa juncao: Charles Babbage e a Maquina Analitica, com a primeira programadora da historia, Ada Lovelace.

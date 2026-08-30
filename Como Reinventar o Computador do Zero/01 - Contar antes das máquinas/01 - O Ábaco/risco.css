@@ -1,0 +1,32 @@
+/* risco (deste episodio)
+   A contagem desenhada a mao da tela 2: um traco por bicho, com o corte de cinco em cinco. Depende de animacao/tokens.css e mora dentro de .painel. O desenho e feito por risco.js.
+
+   O corte sai na cor de destaque de proposito: e ele o assunto da tela. */
+
+.riscos {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  margin: 4px auto 2px;
+  overflow: visible;
+}
+.risco { fill: none; stroke: var(--ink); stroke-width: 5; stroke-linecap: round; }
+.risco--corte { stroke: var(--accent); stroke-width: 5.5; }
+
+/* o painel e a foto do osso lado a lado: o painel manda na largura, a foto
+   ocupa o que sobra e a legenda dela e a mesma das cenas (pranchas.css) */
+.risco-duplo { max-width: 1400px; align-items: flex-start; }
+.risco-duplo .painel { flex: 1 1 620px; min-width: 0; margin-top: 0; }
+.risco-duplo figure { flex: 0 1 460px; }
+
+/* ---- apertos, no fim da folha de proposito ---- */
+@media (max-width: 820px) {
+  /* empilhado, o flex-basis de 620px viraria ALTURA: o painel ficava um bloco branco */
+  .risco-duplo .painel { flex: 0 0 auto; }
+  .risco-duplo figure { flex: 1 1 auto; width: 100%; }
+}
+@media (max-height: 820px) {
+  .riscos { max-width: 660px; }
+  .risco-duplo figure { flex: 0 1 380px; }
+}

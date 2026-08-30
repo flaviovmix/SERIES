@@ -1,0 +1,35 @@
+Inicie dizendo: O Transistor
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Transistor.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o primeiro episodio da etapa A ERA DOS TRANSISTORES, a oitava etapa da serie Como Reinventar o Computador do Zero. A etapa anterior, O Primeiro Computador Moderno, terminou em 1959 com o COBOL saindo do comite CODASYL: o computador ja estava pronto por dentro, mas por fora continuava um salao de valvulas que esquentavam, gastavam luz e queimavam.
+
+ESTE EPISODIO COBRE DE 1947 A 1965. Dizer esse intervalo logo na abertura e, no encerramento, dizer em que ano o episodio para.
+
+FOCO: o transistor. A valvula por dentro (filamento, vacuo, grade) e o custo dela no ENIAC (17.468 valvulas, 150 quilowatts, queima). O semicondutor: silicio e germanio, impureza fazendo tipo n e tipo p. O grupo de estado solido dos Bell Labs em Murray Hill, New Jersey, chefiado por Shockley. O experimento de Bardeen e Brattain: lamina de germanio, folha de ouro cortada com gilete num triangulo de plastico, corrente pequena controlando corrente grande, funcionou em 16 de dezembro de 1947 e foi demonstrado em 23 de dezembro de 1947. O nome dado por John Pierce em maio de 1948 e o anuncio de 30 de junho de 1948 que quase ninguem notou. O transistor de juncao de Shockley (1949, apresentado em 1951), a producao na Western Electric em outubro de 1951, o silicio na Texas Instruments em 1954, o radio Regency TR-1 de outubro de 1954, o TRADIC de 1954 e o IBM 7090 de 1959. O Nobel de 1956. Shockley em Mountain View em 1956, os oito que sairam em 1957 pra fundar a Fairchild. O artigo de Gordon Moore de 19 de abril de 1965 na Electronics, dobrando a cada ano, revisado pra dois anos em 1975, e as tres leituras da Lei de Moore.
+
+FICHA HUMANA obrigatoria de William Shockley, John Bardeen, Walter Brattain e Gordon Moore, com os dados exatos que estao no roteiro: onde nasceu com o nome do lugar na epoca e o de hoje, familia, escola e morte. Nao inventar nenhum dado biografico que nao esteja no roteiro. John Pierce, Gordon Teal e Jack Morton aparecem de passagem e nao ganham ficha.
+
+NAO explicar circuito integrado, Kilby, Noyce, processo planar, Intel nem microprocessador: sao o proximo episodio. So citar no gancho final o engenheiro sem ferias no verao de 1958.
+
+A pagina tem 9 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo": sao exatamente 8 pedidos, um por tela, sem juntar duas telas num bloco. Na tela interativa (5), avisar que tem botao na tela. Na tela de pratica (8), convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Transistor.txt. NAO invente analogias novas. As duas autorizadas sao: em cima do muro, pra explicar o semicondutor; e a torneira, pra explicar controle pequeno e corrente grande no rele, na valvula e no transistor.
+
+Use tambem o Overview.txt como contexto curto.

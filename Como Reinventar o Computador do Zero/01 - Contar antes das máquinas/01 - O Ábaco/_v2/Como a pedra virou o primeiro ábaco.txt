@@ -1,0 +1,7 @@
+Titulo: Como a pedra virou o primeiro ábaco
+Notebook: 01-01-O Ábaco
+
+Descricao:
+Os textos apresentam o primeiro episódio de uma série documental chamada Como Reinventar o Computador do Zero, focada na história e no funcionamento do ábaco. A narrativa traça uma linha do tempo que começa há 20 mil anos com o osso de Ishango e evolui para as fichas de argila e a escrita cuneiforme, culminando na criação do aparelho na Suméria em 2700 a.C. O conteúdo detalha como o instrumento utiliza o valor posicional para realizar cálculos complexos através do movimento físico de contas em hastes. Além da cronologia histórica, o material serve como guia para uma página de animação interativa com quinze telas, onde o público aprende a operar versões como o suanpan chinês e o soroban japonês. O objetivo central é demonstrar que o ábaco foi a primeira tentativa bem-sucedida de transferir o processamento mental para um suporte externo. Esse conceito fundamental estabelece a base para o desenvolvimento futuro da computação moderna, destacando a transição da contagem manual para o registro sistemático.
+
+Link: https://notebook.google.com/notebook/7e049668-b950-47ff-a923-3433d5c88d3f

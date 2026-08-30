@@ -1,0 +1,7 @@
+Titulo: A Máquina de Hollerith e a IBM
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-12 - Equipamentos 11 - As Máquinas de Hollerith
+
+Descricao:
+As fontes descrevem o décimo primeiro episódio da série Equipamentos, focado na invenção da tabuladora de Herman Hollerith para o censo americano de 1890. O texto detalha como Hollerith utilizou cartões furados e eletricidade para acelerar drasticamente a contagem de dados, transformando anos de trabalho manual em poucas semanas de processamento. O conteúdo é acompanhado por uma animação interativa de oito telas que permite ao público simular o funcionamento das prensas e dos relógios contadores. A narrativa destaca esse momento como o nascimento do processamento de dados, unindo conceitos do tear de Jacquard e do telégrafo. Por fim, explica-se que a empresa de Hollerith deu origem à IBM, consolidando o uso de cartões perfurados na administração pública e privada por décadas. O material conclui diferenciando a capacidade de contagem elétrica da verdadeira computação lógica, que seria o próximo passo da evolução tecnológica.
+
+Link: https://notebook.google.com/notebook/2f4e0981-308d-4214-b420-5fc3786c112a

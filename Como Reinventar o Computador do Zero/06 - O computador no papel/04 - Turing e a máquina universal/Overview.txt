@@ -1,0 +1,15 @@
+TURING E A MAQUINA UNIVERSAL - CONTEXTO
+=======================================
+Documento curto de contexto para uso com NotebookLM.
+
+Quarto episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1928 a 1936.
+
+O episodio anterior, Como A Maquina Lembra, cobriu de 1918 a 1963 e terminou com a RAM: a maquina no papel calcula e guarda. Mas ela so faz a conta pra qual os circuitos dela foram montados. Pra fazer outra coisa, alguem abre a maquina e liga os fios de outro jeito. A pergunta deste episodio e se vai ser sempre assim.
+
+Este episodio responde com uma historia de matematica pura. Cobre o problema da decisao, colocado por David Hilbert e Wilhelm Ackermann em 1928: existe um metodo que, recebendo qualquer afirmacao matematica, diga se ela pode ser provada? Cobre o que e um algoritmo, uma sequencia finita de instrucoes que, seguida de forma mecanica, leva a um resultado previsivel, e o fato de que ate 1936 ninguem tinha conseguido dizer o que "mecanico" significa. Cobre Alan Turing, que aos 23 anos, depois de uma aula de Max Newman em Cambridge, escreveu o artigo Sobre os Numeros Computaveis, entregue em maio de 1936, provando que esse metodo nao existe.
+
+Cobre a maquina que ele imaginou pra provar isso: uma fita sem fim dividida em quadradinhos com 0, 1 ou branco, uma cabeca que le um quadradinho por vez, pode trocar o simbolo e anda uma casa pra esquerda ou pra direita, e uma tabela de estados e regras. Cobre o exemplo da maquina que soma 1, levando 27 em binario a 28. Cobre a tese de Church-Turing: Alonzo Church, em abril de 1936, tinha chegado a outra definicao de algoritmo com o calculo lambda, e as duas se mostraram equivalentes; foi Church, numa resenha de 1937, quem escreveu maquina de Turing pela primeira vez. E cobre a maquina universal, que Turing tambem provou existir no mesmo artigo: codificando as regras de qualquer maquina em binario na propria fita, uma unica maquina faz o trabalho de todas as outras.
+
+Ao final o ouvinte entende que algoritmo e o que uma maquina de Turing consegue fazer, que nao e preciso uma maquina por tarefa, e que a maquina no papel so precisa aprender a ler codigos da propria memoria pra ser universal. Isso abre o proximo episodio, que monta exatamente isso.
+
+Use este contexto apenas como apoio.

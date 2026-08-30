@@ -1,0 +1,13 @@
+A AGULHA QUE SE MEXEU - CONTEXTO
+================================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro episodio da etapa DOMESTICANDO O RAIO, dentro da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. As tres primeiras etapas foram mecanicas e terminaram na Maquina Analitica de Babbage. A quarta etapa e sobre eletricidade, e sao sete episodios.
+
+Os dois episodios anteriores desta etapa cobriram a eletricidade estatica de 1600 a 1752, que era so estalo, e a pilha de Volta de 1800, que deu pela primeira vez corrente continua. Depois da pilha existe eletricidade que dura, mas ela ainda so da choque, esquenta fio e separa agua. Nao move nada.
+
+Este episodio e o que faz a eletricidade virar forca mecanica. Cobre a descoberta de Hans Christian Orsted em 1820, em Copenhague, de que a agulha de uma bussola vira de lado quando passa corrente num fio proximo, o que ligou eletricidade e magnetismo pela primeira vez. Cobre o detalhe estranho dessa descoberta, que a agulha nao aponta pro fio e sim se poe atravessada, porque a forca gira em volta do fio. Cobre o trabalho de Andre-Marie Ampere em Paris, poucas semanas depois, com dois fios que se atraem ou se repelem conforme o sentido da corrente e com a bobina que se comporta como um ima. E termina no eletroima de William Sturgeon em 1825 e no aperfeicoamento de Joseph Henry, com fio isolado e muitas voltas.
+
+Ao final o ouvinte entende que corrente eletrica produz magnetismo, que enrolar o fio concentra esse efeito, e principalmente que um eletroima obedece a um interruptor: e um ima que liga e desliga por comando, a distancia, por um fio. Essa e a peca que nos episodios seguintes vira rele e telegrafo.
+
+Use este contexto apenas como apoio.

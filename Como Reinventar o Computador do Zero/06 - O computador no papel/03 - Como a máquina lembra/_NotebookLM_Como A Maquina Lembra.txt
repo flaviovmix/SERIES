@@ -1,0 +1,143 @@
+Inicie dizendo: Como A Maquina Lembra
+---------------
+
+Este e o terceiro episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, Circuitos Que Calculam, cobriu de 1937 a 1945 e terminou com a unidade de aritmetica somando e subtraindo, com um resultado que some assim que as chaves mudam. Este episodio faz a maquina lembrar.
+
+ESTE EPISODIO COBRE DE 1918 A 1963. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (4), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 9 telas. O audio TEM que pedir "aperte o Proximo" exatamente 8 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio tem um personagem com ficha: William Eccles. A ficha entra na primeira vez que ele e citado e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu. Os dados estao escritos na tela 2: usar exatamente esses, sem inventar nenhum dado biografico. F. W. Jordan e Bob Bemer aparecem de passagem e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Como A Maquina Lembra.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A rua de casas numeradas: a memoria e uma rua onde cada casa tem um numero na porta, e o carteiro acha a casa certa pelo numero sem bater nas outras. Serve so pra explicar o endereco.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: COMO A MAQUINA LEMBRA)
+
+Retomar em uma frase onde o episodio passado parou: em 1945 a maquina no papel ja somava e subtraia numeros de 4 bits, mas o resultado aparecia nas lampadas e sumia na hora em que as chaves mudavam. Ela calcula e esquece.
+
+Dizer o que este episodio faz: monta a memoria, do circuito que guarda um bit ate a memoria com endereco. Dizer o intervalo em voz alta: este episodio cobre de 1918 a 1963, de uma patente inglesa com duas valvulas ate a tabela que deu um numero pra cada letra do alfabeto.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o flip-flop, um circuito que tem dois estados e fica parado no ultimo em que foi posto ate alguem mandar trocar. E a peca mais basica de toda memoria de computador. Data: 21 de junho de 1918, dia em que a patente foi pedida na Inglaterra, com o circuito feito de duas valvulas e um fio de realimentacao. Lugar: Londres.
+
+Motivacao: nao foi computador, foi radio e telegrafia. Em 1918 se queria um circuito que, recebendo um pulso, trocasse de estado e ficasse la, sem precisar de corrente continuada pra segurar, coisa que o rele fazia com peca se mexendo e desgastando.
+
+Ficha humana de William Eccles. Nasceu em 23 de agosto de 1875 em Barrow-in-Furness, no condado de Lancashire, na Inglaterra; hoje a cidade fica no condado de Cumbria. Sobre a familia dele os registros consultados nao dizem o oficio do pai, e a serie prefere nao inventar. Estudou no Royal College of Science, em Londres, formado em 1898, e la mesmo fez o doutorado em 1901; logo depois de formado foi assistente de Guglielmo Marconi nos primeiros anos do radio. Morreu em 29 de abril de 1966, aos 90 anos, em Oxford. O parceiro da patente, F. W. Jordan, e uma figura de quem quase nada se sabe, e aparece aqui so pelo nome.
+
+Dizer o que vem a seguir: a serie vai montar o mesmo circuito, so que com as portas da etapa, em vez de valvula.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (DOIS OU, DOIS NAO E UM FIO QUE VOLTA)
+
+Montar o circuito devagar, porque ele e esquisito de proposito. Dois OU e dois NAO. A saida do primeiro OU entra no primeiro NAO; a saida desse NAO entra no segundo OU; a saida do segundo OU entra no segundo NAO; e a saida do segundo NAO, alem de acender a lampada, volta por um fio ate a entrada do primeiro OU. Cada OU tem uma segunda entrada livre: uma e o botao SETAR, a outra e o botao RESETAR.
+
+Apertar SETAR: o primeiro OU liga; o primeiro NAO inverte e manda 0 pro segundo OU; o segundo OU manda 0 pro segundo NAO; o segundo NAO inverte e manda 1, a lampada acende. E o 1 volta pelo fio pro primeiro OU, que agora continua ligado sem precisar do botao. Soltar SETAR, apertar de novo, nada muda: a lampada fica acesa.
+
+Apertar RESETAR: o segundo OU liga por essa entrada; o segundo NAO manda 0, a lampada apaga; o 0 volta pelo fio pro primeiro OU, que apaga; o primeiro NAO manda 1 pro segundo OU, que continua ligado sozinho. Soltar RESETAR, nada muda: a lampada fica apagada.
+
+Dizer o que aconteceu: o circuito lembra qual foi o ultimo botao apertado. Nao tem nenhuma peca se mexendo e nenhum lugar onde o bit esta escrito; ele existe como um circuito que se segura sozinho, girando em volta daquele fio que volta.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O FLIP-FLOP NA MAO, TELA INTERATIVA)
+
+Dizer o que tem pra sentir: memoria nao e uma caixinha onde alguem guarda um numero; e um circuito que fica num estado ate ser empurrado pro outro. Enquanto a energia estiver ligada, ele segura. Isso vale pro flip-flop de 1918 e vale pra memoria de trabalho de todo computador de hoje, que por isso esvazia quando a energia cai.
+
+Dizer o nome e a escala: flip-flop, e um bit por circuito. Guardar um byte sao oito desses. Guardar um gigabyte sao oito bilhoes.
+
+Avisar: a tela tem o circuito com os dois botoes e a lampada. Convide o ouvinte a apertar SETAR varias vezes, depois RESETAR varias vezes, e reparar que so o ultimo botao diferente conta, e que a lampada nao pisca enquanto o mesmo botao e repetido.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (DA MEMORIA DE UM BIT PRA CELULA DE QUATRO)
+
+Deixar o circuito mais util. Dois botoes separados sao ruins pra ligar em outros circuitos. Entao dois E na entrada trocam SETAR e RESETAR por duas entradas com outro sentido: INFO, que diz qual valor a gente quer guardar, 1 ou 0; e MODIFICAR, que diz se pode ou nao trocar o que esta guardado. Com MODIFICAR em 0, nao importa o que chegue em INFO, o valor nao muda. Com MODIFICAR em 1, o flip-flop assume o valor de INFO. Isso e uma celula de memoria de um bit.
+
+Juntar quatro celulas lado a lado, cada uma com o seu INFO, e ligar os quatro MODIFICAR num fio so. Com o fio em 1, um numero de 4 bits inteiro entra de uma vez. Com o fio em 0, a memoria fica intacta, receba o que receber. Isso e uma memoria de 4 bits.
+
+Ligar na maquina: a saida da unidade de aritmetica do episodio passado entra nos quatro INFO. Agora o resultado da conta tem onde ficar. A maquina calcula e guarda.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O ENDERECO E A RAM)
+
+Dizer o que ainda falta, e que toda memoria moderna tem: um jeito de ler ou trocar um bit so, sem mexer nos outros da volta.
+
+Montar o seletor: um circuito que recebe 2 bits e liga uma entre 4 saidas. Funciona porque 2 bits tem exatamente quatro combinacoes, 00, 01, 10 e 11, e cada combinacao acende uma saida diferente. Com o seletor e uma porta E na frente de cada celula, so a celula escolhida recebe o MODIFICAR. O numero que entra no seletor e o endereco daquela celula.
+
+Ler funciona igual, com o seletor do lado da saida: uma porta E por celula, e so a do endereco escolhido deixa o valor passar.
+
+Usar a analogia autorizada e deixar claro que e analogia: a memoria e uma rua de casas numeradas, e o carteiro acha a casa certa pelo numero da porta sem bater nas outras. O endereco e o numero da porta.
+
+Dizer o nome: memoria com circuito de endereco, onde da pra ir direto a qualquer bit, se chama memoria de acesso aleatorio, Random Access Memory, a RAM. E a mesma palavra que aparece na caixa de qualquer computador.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (TUDO VIRA 0 E 1)
+
+Dizer a consequencia que parece exagero e nao e: circuito desses, em quantidade, guarda qualquer informacao que existe. Todo texto, toda imagem, toda musica, todo video feito por gente pode ser escrito como 0 e 1 e guardado em flip-flop.
+
+Dar o exemplo do texto. Em 1963 um comite de padroes americano publicou uma tabela chamada ASCII, que da a cada letra, algarismo e sinal um numero de 7 bits. Sao 128 codigos. A letra A maiuscula e o 65, que em binario e 1000001; o algarismo 0 e o 48. Dizer o detalhe de projeto: escolheram 7 bits e nao 8 pra economizar na transmissao, e a letra minuscula, que entrou em 1967, difere da maiuscula em um unico bit, de proposito. Sete bits cabem folgado num byte, o que serve direitinho pra maquina que a serie esta montando.
+
+Dar a escala. Imagem, som e video precisam de codigos mais compridos e de muito mais espaco. A memoria de um computador comum hoje tem pelo menos 4 gigabytes, ou seja, 4 bilhoes de vezes o byte que a serie acabou de montar. E o computador que guiou a nave da Apollo ate a Lua tinha uns 4 mil bytes de memoria de trabalho, o que da uns 32 mil flip-flops como os desta tela. A maquina no papel ainda vai ter que crescer muito antes de lancar foguete.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA: TROQUE UM BIT SO)
+
+Convidar a pausar o audio e resolver na tela: e a memoria de 4 bits que a serie montou, quatro celulas de um bit, cada uma com o seu endereco de 2 bits, mais o seletor, a chave de INFO e a de MODIFICAR.
+
+O objetivo tem duas partes. Primeiro, guardar 1011 na memoria inteira de uma vez, que e o jeito da tela 5: por os quatro valores nas entradas e ligar o MODIFICAR geral. Depois, a parte que importa: trocar so o bit do endereco 2, de 1 pra 0, deixando os outros tres como estao. Pra isso e o seletor: por 10 no endereco, que e o 2 em binario, por 0 no INFO e ligar o MODIFICAR. O resultado tem que ser 1001. Quem errar o endereco provavelmente contou a partir de 1, e as celulas contam do zero; quem mudar tudo provavelmente ligou o MODIFICAR geral em vez de passar pelo seletor.
+
+Dizer o que a pratica ensina antes de mandar voltar: e por isso que memoria tem endereco. Sem ele, guardar uma coisa nova significaria reescrever tudo. E lembrar a escala: a letra A da tela passada, que e 1000001, precisa de sete celulas dessas, e a memoria que a gente acabou de mexer tem quatro. E onde a maquina no papel esta, por enquanto.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular: em 1918 Eccles e Jordan patentearam o circuito de dois estados com um fio que volta; a serie montou o mesmo com dois OU e dois NAO, o flip-flop, que lembra o ultimo botao apertado. Dois E viraram os botoes em INFO e MODIFICAR, quatro celulas viraram uma memoria de 4 bits, o seletor deu endereco a cada celula, e isso e a RAM. E em 1963 uma tabela de 7 bits mostrou que ate letra e numero guardado.
+
+Dizer onde o episodio para: 1963. E dizer o que ficou faltando, que e o gancho: a maquina calcula e guarda, mas so faz a conta que os circuitos dela foram montados pra fazer. Pra fazer outra coisa, alguem abre a maquina e liga fio de outro jeito.
+
+Gancho: no proximo episodio a serie para de montar por um momento e vai atras de um jovem ingles de 23 anos que, em 1936, tentando responder uma pergunta de matematica pura, imaginou uma maquina que le uma fita, e descobriu que uma unica maquina pode fazer o trabalho de todas as outras.

@@ -1,0 +1,135 @@
+Inicie dizendo: Faraday e o Gerador
+---------------
+
+Este e o quarto episodio da etapa DOMESTICANDO O RAIO, a quarta etapa da serie Como Reinventar o Computador do Zero. Os anteriores desta etapa cobriram a eletricidade estatica ate 1752, a pilha de Volta de 1800 e a descoberta de 1820 de que corrente produz magnetismo, que terminou no eletroima. Este episodio faz o caminho de volta e descobre de onde vem toda a eletricidade que o mundo usa.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas (4 e 5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O gerador como um pedagio: a eletricidade nao aparece de graca, ela e paga em esforco de girar. Quanto mais corrente sai, mais duro fica de girar.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: FARADAY E O GERADOR)
+
+Retomar em uma frase: no episodio passado ficou provado que corrente eletrica produz magnetismo, e disso saiu o eletroima, um ima que liga e desliga por comando. E ficou uma pergunta pendurada, que qualquer um faz depois de ouvir aquilo: se corrente faz ima, sera que ima faz corrente?
+
+Dizer o que este episodio faz: responde essa pergunta, e a resposta muda o mundo mais do que qualquer outra coisa desta etapa. Avisar que quem responde e um sujeito que nao tinha estudo formal, e que a resposta explica de onde vem a eletricidade da tomada de casa de quem esta ouvindo agora.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: o assunto e a inducao eletromagnetica, e dela sai o gerador. A data principal e 1831, em Londres, na Royal Institution. O nome e Michael Faraday.
+
+Motivacao: essa e clara e vale dizer com todas as letras. Depois de 1820 todo mundo sabia fazer ima com eletricidade. A pergunta ao contrario ficou aberta por dez anos e varios pesquisadores tentaram sem sucesso, inclusive gente boa, porque estavam procurando errado. Punham um ima parado perto de um fio, esperavam corrente, e nao vinha nada. Concluiam que nao funcionava.
+
+O problema pratico por tras: em 1831 toda eletricidade do mundo saia de pilha. Pilha e cara, acaba, precisa de metal e acido, e nao serve pra alimentar uma cidade. Sem uma fonte que nao acabe, eletricidade continuaria sendo coisa de laboratorio.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O ENCADERNADOR)
+
+Vale contar quem era Faraday, porque a historia dele nao e a de um cientista de familia rica.
+
+Nasceu em 1791, filho de ferreiro, familia pobre em Londres. Aos treze anos foi trabalhar numa encadernacao, e ali fez a coisa mais inteligente possivel: leu os livros que estava encadernando. Um deles era um verbete de eletricidade de uma enciclopedia. Comecou a fazer experimento em casa com o que dava.
+
+Aos vinte assistiu a uma serie de palestras de Humphry Davy, um dos quimicos mais famosos da epoca, aquele mesmo que usou as pilhas gigantes de que a gente falou no episodio da pilha. Faraday tomou nota de tudo, encadernou as notas num livro caprichado e mandou pro Davy pedindo emprego. Em 1813 foi contratado como assistente de laboratorio. Comecou lavando vidro.
+
+Ele nunca teve formacao em matematica. Pensava por imagem e por experimento, e isso importa aqui: como nao conseguia escrever equacao, ele desenvolveu a ideia de que o espaco em volta do ima esta cheio de linhas de forca, uma coisa fisica que preenche o espaco. Muito matematico da epoca achou isso ingenuo. Trinta anos depois, James Clerk Maxwell pegou essas linhas de forca e escreveu a matematica delas, que e a base de toda a fisica de eletricidade e ondas ate hoje. A intuicao do encadernador estava certa.
+
+Uma coisa que ele fez em 1821, dez anos antes do gerador, e que vale citar: montou um fio pendurado que ficava girando em volta de um ima, num copo com mercurio. Era a primeira vez que eletricidade produzia movimento continuo em vez de um puxao. E o ancestral do motor eletrico.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O ANEL DE INDUCAO, TELA INTERATIVA)
+
+Vinte e nove de agosto de 1831. Faraday monta um anel de ferro e enrola dois fios separados nele, um de cada lado, sem contato eletrico entre os dois. O primeiro fio vai numa bateria com uma chave. O segundo fio vai num medidor de corrente, uma agulha que desvia se passar corrente.
+
+Ele fecha a chave. A agulha do outro lado da um pulo. E logo volta pro zero, mesmo com a bateria ainda ligada e a corrente ainda passando no primeiro fio. Fica tudo parado. Ele abre a chave, e a agulha da outro pulo, agora pro lado contrario.
+
+Esse resultado e o episodio inteiro. Dizer com calma: corrente constante do outro lado nao produz nada. O que produz e a MUDANCA. No instante em que liga, e no instante em que desliga. Enquanto esta tudo estavel, nada acontece.
+
+E era isso que estava derrubando todo mundo nos dez anos anteriores. As pessoas punham um ima parado perto de um fio e esperavam. Parado nao da corrente. Nunca ia dar.
+
+Vale registrar que esse anel tambem e a primeira demonstracao do transformador, o aparelho que muda a tensao da eletricidade e que hoje esta naquela caixa cinza no poste da rua e dentro de todo carregador de celular. Faraday fez isso sem estar procurando.
+
+Avisar: a tela tem o anel com a chave. Convide o ouvinte a ligar e desligar e reparar que a agulha so reage no instante da mudanca.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O IMA QUE ENTRA NA BOBINA, TELA INTERATIVA)
+
+Dezessete de outubro de 1831. Faraday tira o ferro e a bateria da historia e faz a versao mais limpa possivel: uma bobina de fio ligada so no medidor, sem bateria nenhuma, e um ima de barra na mao.
+
+Ima parado dentro da bobina: nada. Ima entrando: a agulha desvia. Ima saindo: a agulha desvia pro outro lado. Ima entrando mais rapido: desvia mais. E se em vez de mexer o ima ele mexer a bobina, tambem funciona, porque o que importa e o movimento relativo entre os dois.
+
+Esta ali, inteira, a regra: mexer ima perto de fio produz eletricidade. Nao precisa de bateria, nao precisa de acido, nao precisa de zinco. Precisa de movimento.
+
+E ai vem a pergunta que transforma isso em maquina: se movimento produz corrente, e um movimento que nao para, uma roda girando sem parar, produz corrente que nao para?
+
+Avisar: a tela tem o ima e a bobina. Convide o ouvinte a empurrar e puxar o ima, mais devagar e mais rapido, e ver o ponteiro responder ao movimento e morrer quando o ima para.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O DISCO: O PRIMEIRO GERADOR)
+
+Vinte e oito de outubro de 1831, poucos dias depois. Faraday monta um disco de cobre girando entre os dois polos de um ima em ferradura, com um contato encostado no eixo e outro na borda do disco. Gira a manivela e sai corrente continua, pelo tempo que ele continuar girando.
+
+Esse e o primeiro gerador eletrico da historia. Ficou conhecido como disco de Faraday. Deu pouca corrente e era desajeitado, e nem por isso deixa de ser a coisa mais importante desta etapa inteira: pela primeira vez existe eletricidade que vem de movimento, e nao de reacao quimica que se esgota.
+
+Agora a parte que a maioria das pessoas nunca parou pra pensar, e vale dizer devagar. Praticamente toda eletricidade do planeta hoje e esse disco em escala grande. Hidreletrica: agua empurra turbina que gira bobina perto de ima. Termeletrica a carvao ou gas: queima combustivel pra ferver agua, o vapor gira a turbina, que gira a bobina. Usina nuclear: quebra atomo pra ferver agua, pra girar a turbina, pra girar a bobina. Eolica: vento gira a helice que gira a bobina.
+
+Ou seja: usina nuclear e um jeito muito caro de ferver agua pra girar um ima perto de um fio. A unica fonte grande que foge disso e o painel solar, que faz eletricidade direto da luz, sem nada girando.
+
+E falta explicar de onde vem a energia, porque nao e de graca. Em 1834 Heinrich Lenz mostrou uma regra: a corrente que aparece sempre se opoe a mudanca que a criou. Na pratica, quanto mais corrente o gerador esta entregando, mais duro fica de girar a manivela. E um pedagio: a eletricidade que sai e paga em esforco de quem gira. Por isso a usina precisa de agua, de vento ou de combustivel. A energia nao esta sendo criada, esta sendo trocada de forma.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: ACENDA A LAMPADA GIRANDO)
+
+Convidar a pausar o audio e resolver na tela: tem uma manivela, um ima, uma bobina e uma lampadinha.
+
+O objetivo e acender e manter aceso. Parar de girar apaga na hora, porque sem movimento nao tem corrente. Girar devagar demais nao acende. Girar mais rapido acende mais forte. E reparar no detalhe que a tela mostra: quando a lampada esta acesa, girar fica mais pesado, que e a regra de Lenz aparecendo.
+
+Quando conseguir manter aceso, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: Faraday era encadernador e virou assistente de laboratorio; em 1821 fez a primeira rotacao continua com eletricidade, o ancestral do motor. Em 1831 descobriu que ima e fio so trocam energia quando alguma coisa MUDA: no anel, a agulha so pula no instante de ligar e de desligar; com o ima na mao, so tem corrente enquanto ele esta se mexendo. E o disco girando entre os polos deu o primeiro gerador. A lei de Lenz explica o preco: a corrente que sai custa esforco pra girar.
+
+Fechar dizendo o que a serie ganhou: agora existe eletricidade abundante e barata, que nao acaba junto com uma pilha. Isso e a condicao pra tudo que vem depois, porque nenhuma maquina eletrica de verdade poderia funcionar consumindo pilha de zinco e agua salgada.
+
+O que ficou faltando, e esse e o gancho: ja tem corrente que dura, ja tem forca que liga e desliga por um interruptor, e ja tem fonte que nao acaba. Falta uma coisa so, e e a mais importante de todas pra esta serie: um circuito conseguir comandar OUTRO circuito. Ou seja, uma chave que nao e apertada por um dedo, e sim por outra corrente.
+
+Gancho: no proximo episodio, um eletroima puxa uma lamina de metal que fecha um segundo circuito. Parece bobagem e nao e: essa peca amplifica sinal fraco, manda comando pra longe e, daqui a algumas etapas, vira porta logica, que e do que computador e feito. O rele.

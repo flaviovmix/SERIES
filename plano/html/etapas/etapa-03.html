@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 3 &middot; Plano SEIRES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="etapa.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../index.html">&larr; Plano SEIRES</a> &middot; etapa 03</p>
+    <h1>A rede de testes das animações e dos modelos</h1>
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span> <p class="note">não iniciada</p></div>
+    <p class="lede"><strong>Objetivo.</strong> Um comando só confere todos os episódios e todos os modelos, e falha quando algo quebra.</p>
+  </header>
+
+  <div class="criterio">
+    <p class="rotulo">Pronto quando</p>
+    <p>O comando roda verde em todos os episódios publicados e em todos os modelos, quebrar de propósito uma tela (apagar o botão Próximo de uma) faz ele falhar apontando a pasta, e a lista do que o script não cobre está escrita nesta etapa.</p>
+  </div>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>implementado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>em parte</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span></span></div>
+
+  <article class="corpo">
+<p>O teste já existe na série, mas de forma solta: cada episódio foi conferido com Playwright na hora de publicar, e o QA dos modelos passou 27/27 com metade da máquina escondida atrás do painel. Isso é o que <code>1-formato-do-plano</code> chama de fila invisível: ninguém repete aquele clique na mudança seguinte, e a base da Etapa 2 vai mudar todos os episódios de uma vez.</p>
+<h3>Tarefas</h3>
+<div class="scroller"><table><thead><tr><th>N&ordm;</th><th>Tarefa</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">01</td><td><strong>Um executor, um comando</strong>: <code>node testa-serie.js</code> (ou <code>python</code>), em <code>_arquivos\scripts\</code>, que percorre toda pasta de episódio com <code>animacao.html</code> e todo modelo em <code>modelos-3d\</code>. Playwright, não patchright (o patchright roda <code>page.evaluate</code> em mundo isolado e o gancho <code>window.__&lt;maquina&gt;</code> some), com <code>channel: 'msedge'</code>.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">02</td><td><strong>Por episódio, o que se afirma:</strong></td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">03</td><td>o número de telas da animação é o número de telas do <code>_telas.md</code> (o que o áudio realmente pede), nem uma a mais;</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">04</td><td>toda tela que o <code>_telas.md</code> marca como interativa tem o botão ou a peça que o áudio manda apertar;</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">05</td><td>console limpo (nenhum erro de JS, nenhuma imagem quebrada, nenhum token <code>__X__</code> cru);</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">06</td><td>régua de 4 tamanhos: nenhum estouro horizontal, medido elemento por elemento (<code>3-reguas-de-validacao</code>, régua 1);</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">07</td><td>régua de sobreposição: <code>elementFromPoint</code> no centro do botão Próximo e do primeiro card devolve o próprio alvo (régua 2);</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">08</td><td>as setas do teclado trocam de tela, inclusive com o ponteiro dentro do modelo embutido;</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">09</td><td>peso do construído dentro do orçamento da Etapa 2.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">10</td><td><strong>Por modelo 3D, o que se afirma:</strong> o gancho <code>window.__&lt;maquina&gt;</code> existe, <code>pixels()</code> projeta cada peça pra dentro do palco e fora do painel (a asserção que faltava quando o registro e o balde do Prédio da Água sumiram atrás do HUD), os botões do painel mudam o estado, e o postMessage das setas chega ao pai quando embutido.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">11</td><td><strong>Relatório por episódio</strong>, com o nome da pasta e o que falhou, pra o dono abrir só o que quebrou.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">12</td><td><strong>Erro da fila nasce com o teste que o reproduz</strong> (<code>1-formato-do-plano</code>, item 4): o &quot;George Richmond&quot; do ep <code>04-01</code> teria virado uma linha na conferência de nomes próprios do <code>_telas.md</code>. A partir daqui, <code>erros.md</code> só fecha com a linha de teste correspondente.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">13</td><td>A rede é <strong>parametrizada</strong>: episódio novo custa zero linhas de teste, porque o executor descobre as pastas sozinho. Se custar mais que isso, a rede não ficou parametrizada e se conserta agora.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">14</td><td>O que fica <strong>fora</strong> do script, escrito: sincronia de áudio com tela (o ouvido do dono), qualidade da ilustração, e gesto no aparelho real. É a régua 7: quem fecha é o dono.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr></tbody></table></div>
+<hr>
+  </article>
+
+  
+
+  <section>
+    <h2>Desvios registrados</h2>
+    <div class="desvios">
+<p>(nenhum ainda. Aqui entra o que a realidade mudou no plano, com data e motivo, inclusive desvio de método: &quot;executado direto, a pedido do dono&quot;.)</p>
+    </div>
+  </section>
+
+  <nav class="passo"><a class="nav-ir" href="etapa-02.html"><span>anterior</span>Etapa 2 &middot; A base da animação, sem clonar</a><a class="nav-ir nav-ir--fim" href="etapa-04.html"><span>pr&oacute;xima</span>Etapa 4 &middot; Publicação</a></nav>
+
+  <footer>
+    <span>etapas/03-rede-de-testes.md</span>
+    <span>27.08.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

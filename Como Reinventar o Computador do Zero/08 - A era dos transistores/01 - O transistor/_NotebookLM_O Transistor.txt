@@ -1,0 +1,152 @@
+Inicie dizendo: O Transistor
+---------------
+
+Este e o primeiro episodio da etapa A ERA DOS TRANSISTORES, a oitava etapa da serie Como Reinventar o Computador do Zero. A etapa anterior, O Primeiro Computador Moderno, terminou em 1959 com o COBOL saindo do comite CODASYL: o computador ja tinha memoria unica, programa guardado e compilador, mas continuava sendo um salao cheio de valvula que esquenta, gasta luz e queima. Este episodio troca a peca que faz a maquina ser grande.
+
+ESTE EPISODIO COBRE DE 1947 A 1965. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 9 telas. O audio TEM que pedir "aperte o Proximo" exatamente 8 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio tem quatro personagens com ficha: William Shockley, John Bardeen, Walter Brattain e Gordon Moore. A ficha de cada um entra na primeira vez que ele e citado e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu. Os dados estao escritos tela a tela abaixo: usar exatamente esses, sem inventar nenhum dado biografico. John Pierce, Gordon Teal e Jack Morton aparecem de passagem e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Transistor.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- Em cima do muro: o semicondutor nao e condutor nem isolante, fica em cima do muro entre os dois, e uma pitada de impureza empurra ele pra um lado ou pro outro. Serve so pra explicar o que e semicondutor.
+- A torneira: a mao que gira a torneira faz pouca forca, e a agua que passa e muita. Serve pra explicar controle pequeno, corrente grande, e vale pro rele, pra valvula e pro transistor, que sao tres jeitos de fazer a mesma torneira.
+Fora essas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O TRANSISTOR)
+
+Retomar em uma frase onde a etapa passada parou: em 1959 o computador ja estava pronto por dentro, com memoria unica, programa guardado e compilador traduzindo palavra em binario, mas por fora continuava sendo um salao de valvulas que esquentavam, gastavam luz e queimavam.
+
+Dizer o que este episodio faz: troca a peca. Dizer o intervalo em voz alta: este episodio cobre de 1947 a 1965, de um experimento com uma lamina de germanio num laboratorio de telefonia ate um artigo de revista dizendo que a maquina ia dobrar de capacidade todo ano.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o transistor, um pedaco de material solido que faz o servico da valvula, sem vidro, sem vacuo e sem filamento. Data: funcionou pela primeira vez em 16 de dezembro de 1947 e foi mostrado a chefia em 23 de dezembro de 1947. Lugar: os Bell Labs, o laboratorio de pesquisa da companhia telefonica americana, em Murray Hill, no estado de New Jersey.
+
+Motivacao: nao foi computador, foi telefone. A rede telefonica americana funcionava com dois tipos de peca que a serie ja montou: o rele, que fazia a chave nas centrais, e a valvula, que amplificava o sinal fraco nas linhas longas. O rele e lento e desgasta, porque tem peca se mexendo. A valvula esquenta, gasta energia e queima. Logo depois da guerra, em 1945, a diretoria dos Bell Labs montou um grupo so pra procurar uma peca de estado solido, sem nada se mexendo e sem nada esquentando, que fizesse os dois servicos.
+
+Ficha humana de William Shockley, o chefe desse grupo. Nasceu em 13 de fevereiro de 1910 em Londres, na Inglaterra, filho de pais americanos que moravam la; Londres continua com o mesmo nome. O pai, William Hillman Shockley, era engenheiro de minas, e a mae, May Bradford, foi a primeira mulher a trabalhar como agrimensora de minas nos Estados Unidos. A familia voltou pros Estados Unidos e ele cresceu em Palo Alto, na California. Estudou fisica no Caltech, formado em 1932, e fez doutorado no MIT em 1936, entrando nos Bell Labs logo em seguida. Morreu em 12 de agosto de 1989, aos 79 anos, em Stanford, na California.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A VALVULA E O MATERIAL EM CIMA DO MURO)
+
+Explicar a valvula por dentro, porque o transistor so faz sentido contra ela. Um tubo de vidro fechado com vacuo. Dentro, um filamento que e aquecido ate ficar vermelho, e esse calor solta eletrons. Do outro lado, uma placa que recebe esses eletrons. E no meio do caminho uma grade, uma telinha de metal: uma tensao pequena na grade decide se a corrente grande passa do filamento pra placa ou nao. Usar a analogia autorizada e deixar claro que e analogia: a grade e a mao na torneira, faz pouca forca e controla muita agua. Isso serve pra amplificar sinal de telefone e serve pra ser interruptor de zero e um, que foi o uso dela na etapa 7.
+
+Dizer o custo. O filamento precisa ficar quente o tempo todo, entao gasta energia so pra existir. Vidro com vacuo e grande e fragil. E filamento quente queima, igual lampada. O ENIAC tinha 17.468 valvulas e gastava 150 quilowatts, o consumo de um bairro pequeno. Com essa quantidade, alguma valvula queimava toda hora, e a maquina parava ate alguem achar qual.
+
+Apresentar o semicondutor. Metal deixa a corrente passar. Vidro e borracha nao deixam. Existe uma familia de materiais que fica no meio: o germanio e o silicio, e o silicio e um dos elementos mais comuns da Terra, esta na areia da praia. Usar a analogia autorizada: eles ficam em cima do muro entre condutor e isolante. O que faz esse material servir pra alguma coisa e a impureza. Misturando uma pitada de outro elemento, uma parte em milhoes, da pra fazer o material ficar com eletron sobrando, que se chama tipo n, ou com eletron faltando, que se chama tipo p. Onde um pedaco tipo n encosta num pedaco tipo p, a corrente passa facil num sentido e nao passa no outro. Esse encontro e a base de tudo que vem a seguir.
+
+Dizer o que o grupo dos Bell Labs tentou primeiro: Shockley queria controlar a corrente dentro do semicondutor com um campo eletrico por fora, sem encostar. Nao funcionou. Foi um teorico do grupo quem explicou por que, e a explicacao levou ao experimento da proxima tela.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (DEZEMBRO DE 1947)
+
+Ficha humana de John Bardeen, o teorico da dupla. Nasceu em 23 de maio de 1908 em Madison, no estado de Wisconsin, nos Estados Unidos; a cidade continua com o mesmo nome. O pai, Charles Russell Bardeen, era medico e foi o primeiro diretor da faculdade de medicina da Universidade de Wisconsin. Estudou engenharia eletrica na Universidade de Wisconsin, formado em 1928, e fez doutorado em fisica matematica em Princeton em 1936. Entrou nos Bell Labs em outubro de 1945. Morreu em 30 de janeiro de 1991, aos 82 anos, em Boston. E a unica pessoa que ganhou dois Nobel de Fisica: o de 1956, por esta historia, e o de 1972, pela teoria da supercondutividade.
+
+Ficha humana de Walter Brattain, o experimental da dupla. Nasceu em 10 de fevereiro de 1902 em Amoy, na China, cidade que hoje se chama Xiamen, na provincia de Fujian. O pai, Ross Brattain, era professor numa escola de la; a familia voltou pros Estados Unidos em 1903 e em 1911 foi tocar uma fazenda de gado perto de Tonasket, no estado de Washington, onde ele cresceu. Estudou fisica e matematica no Whitman College, formado em 1924, fez mestrado na Universidade de Oregon em 1926 e doutorado na Universidade de Minnesota em 1929, entrando nos Bell Labs em agosto de 1929. Morreu em 13 de outubro de 1987, aos 85 anos, em Seattle.
+
+Contar o experimento com calma, porque ele e simples de imaginar. Uma lamina de germanio tipo n. Um triangulo de plastico com uma folha de ouro colada em volta da ponta. Brattain cortou a folha de ouro com uma gilete bem na ponta do triangulo, deixando dois contatos de ouro separados por uma fresta finissima, e apoiou essa ponta no germanio com uma mola. Um contato manda uma corrente pequena pra dentro do germanio; o outro contato, do ladinho, recebe uma corrente maior, e a corrente pequena controla a grande. E a torneira de novo, so que sem filamento, sem vacuo, sem calor e sem nada se mexendo.
+
+As datas: em 16 de dezembro de 1947 a montagem funcionou pela primeira vez na bancada. Em 23 de dezembro de 1947 os dois mostraram pra chefia dos Bell Labs, amplificando a voz de uma pessoa falando num microfone. Esse e o dia que ficou como o nascimento do transistor.
+
+Dizer as duas coisas que vieram depois e que costumam ser esquecidas. O nome: em maio de 1948 um engenheiro dos Bell Labs, John Pierce, juntou as palavras transferencia e resistor e sugeriu transistor. E o anuncio: em 30 de junho de 1948 os Bell Labs mostraram a peca pra imprensa em Nova York, e quase ninguem deu bola. O jornal de maior circulacao do pais deu umas poucas linhas la no fim, na coluna de noticias de radio. Ninguem ali sabia que estava olhando pra peca que ia trocar o mundo.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O INTERRUPTOR SEM PECA QUE SE MEXE, TELA INTERATIVA)
+
+Amarrar o que o transistor e, na linguagem da serie: e a terceira versao da mesma torneira. O rele, da etapa 4, e uma torneira com peca de metal se mexendo: um ima puxa uma armadura que fecha o contato. A valvula e uma torneira com filamento quente e grade. O transistor e uma torneira feita so de material parado: uma tensao pequena num contato decide se a corrente grande passa entre os outros dois.
+
+Dizer por que isso muda tudo, ponto por ponto. Nao tem peca se mexendo, entao nao desgasta e liga e desliga milhoes de vezes por segundo, enquanto o rele fazia dezenas. Nao tem filamento, entao nao esquenta e nao gasta energia so pra existir. Nao tem vidro nem vacuo, entao pode ser do tamanho de um grao. E e feito do material mais comum da Terra. Menor, mais barato, mais rapido e dura mais: tudo ao mesmo tempo.
+
+E lembrar o que a serie ja sabe: o computador da etapa 5 e da etapa 6 foi montado com interruptor. Porta logica e interruptor combinado. Memoria e interruptor que segura. Se o interruptor encolhe e para de esquentar, a maquina inteira encolhe e para de esquentar, sem mudar nenhuma ideia do projeto.
+
+Avisar: a tela tem os tres interruptores lado a lado, o rele, a valvula e o transistor, cada um com o seu controle. Convide o ouvinte a ligar e desligar o controle de cada um e reparar no que se mexe, no que esquenta e no que so muda de estado sem nada acontecer por fora.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (DO LABORATORIO PRA FABRICA)
+
+O transistor de dezembro de 1947 era uma montagem de bancada: contato de ouro apoiado com mola em cima de germanio, dificil de fabricar igual duas vezes. Shockley, que tinha ficado de fora do experimento e nao gostou disso, passou as semanas seguintes desenhando uma versao sem contato de ponta: um sanduiche de tres camadas, n, p, n, onde a camada do meio, finissima, e o controle. E o transistor de juncao. A prova de principio foi em abril de 1949 e ele foi apresentado em 1951. Era mais robusto, mais previsivel e dava pra fabricar em serie. E o desenho que venceu.
+
+As datas da saida pro mundo, em ordem. Em outubro de 1951 a Western Electric, a fabrica da companhia telefonica, comecou a produzir transistores em serie. Em 1954 a Texas Instruments, com Gordon Teal, fez o primeiro transistor de silicio, que aguenta mais calor que o germanio; e a partir dai que o silicio toma conta. Em outubro de 1954 chegou as lojas o Regency TR-1, o primeiro radio de bolso a transistor, por 49 dolares e 95, e foi assim que a maioria das pessoas ouviu a palavra transistor pela primeira vez.
+
+E o computador. Em 1954 os Bell Labs montaram o TRADIC, o primeiro computador feito com transistor em vez de valvula: perto de 700 transistores, gastando menos de 100 watts, uma lampada forte, onde o ENIAC gastava 150 mil. Em 1959 a IBM lancou o 7090, um computador grande inteiro a transistor, e a partir dai a valvula saiu do computador pra nao voltar.
+
+Fechar a tela com o reconhecimento: em 1956 o Nobel de Fisica foi pros tres, Shockley, Bardeen e Brattain, pela descoberta do efeito transistor. E dizer, sem escolher lado, que a relacao entre eles ja tinha azedado: Bardeen e Brattain fizeram o experimento; Shockley chefiava, ficou de fora da bancada e desenhou a versao que se fabricou. Os tres nomes ficaram, e a briga tambem.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (A MAQUINA SO ENCOLHE: A LEI DE MOORE)
+
+Contar o que Shockley fez com a fama, porque disso nasce o resto da etapa. Em 1956 ele saiu dos Bell Labs e abriu a propria empresa em Mountain View, na California, perto de onde tinha crescido, numa regiao que na epoca era pomar de ameixa. Contratou os jovens mais brilhantes que achou. Em 1957, oito deles nao aguentaram o jeito dele de chefiar e sairam juntos pra fundar a Fairchild Semiconductor. Um desses oito era Gordon Moore.
+
+Ficha humana de Gordon Moore. Nasceu em 3 de janeiro de 1929 em Pescadero, uma cidadezinha do litoral da California, nos Estados Unidos, que continua com o mesmo nome. O pai, Walter Harold Moore, era policial, vice-xerife do condado de San Mateo. Cresceu em Redwood City. Estudou quimica em Berkeley, formado em 1950, e fez doutorado em quimica no Caltech em 1954. Morreu em 24 de marco de 2023, aos 94 anos, em Waimea, no Havai.
+
+O artigo. Em 19 de abril de 1965 a revista Electronics publicou um texto dele com um titulo sem graca, algo como "espremendo mais componentes dentro dos circuitos integrados". Nele, Moore olhou pros poucos anos anteriores e reparou que o numero de componentes que cabia num mesmo chip vinha dobrando a cada ano, e apostou que isso ia continuar por pelo menos dez anos. Em 1975 ele revisou a conta: dobrando a cada dois anos. Foi assim que a observacao ficou conhecida como a Lei de Moore. Nao e lei de fisica, e uma regra de bolso que a industria passou a perseguir.
+
+Dizer os numeros do video que deu origem a esta serie, pra dar o tamanho da coisa: em 1971 o primeiro microprocessador tinha 188 transistores por milimetro quadrado; hoje um processador comum passa de 100 milhoes de transistores por milimetro quadrado.
+
+E dar as tres leituras, sem escolher: uns dizem que a Lei de Moore e um progresso inevitavel da tecnologia; outros dizem que ela chegou no limite, porque transistor pequeno demais esbarra em efeito quantico; e uma terceira leitura diz que ela nunca foi previsao, foi meta: todo ano a industria se organiza pra bater esse numero, e quando nao der pra encolher mais, vai aparecer outro jeito de aumentar a capacidade.
+
+Avisar que o proximo episodio explica como e que varios transistores foram parar dentro de um chip so. Aqui, a gente so fica com a regra.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA: DOBRE NA MAO)
+
+Convidar a pausar o audio e resolver na tela: tem um chip com 64 componentes em 1965 e um botao de avancar um ano.
+
+O objetivo e aplicar a regra original de Moore, dobrar a cada ano, e descobrir quantos componentes o mesmo chip teria em 1970. Sao cinco dobras: 64, 128, 256, 512, 1.024, 2.048. Quem errar pra menos provavelmente somou em vez de dobrar; quem errar pra mais dobrou seis vezes em vez de cinco.
+
+Dizer o que a pratica ensina antes de mandar voltar: dobrar parece pouco no comeco e vira absurdo em poucos anos. Cinco anos deram 32 vezes. Dez anos dao mil vezes.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular: em 1947, num laboratorio de telefonia em New Jersey, Bardeen e Brattain apoiaram dois contatos de ouro numa lamina de germanio e uma corrente pequena controlou uma grande, sem filamento, sem vacuo e sem peca se mexendo. Shockley desenhou a versao de juncao que dava pra fabricar. Em 1951 a producao em serie comecou, em 1954 veio o silicio e o radio de bolso, em 1959 a valvula saiu do computador. Em 1965 Gordon Moore reparou que o numero de transistores por chip dobrava todo ano.
+
+Dizer onde o episodio para: 1965. E dizer o que ficou faltando, que e o gancho: o transistor resolveu o tamanho de cada peca, mas nao resolveu o numero de pecas. Um computador dos anos 50 tinha dezenas de milhares de transistores, e cada um era soldado a mao no outro, fio por fio. Quanto mais transistor, mais solda, e cada solda e um lugar pra dar defeito.
+
+Gancho: no proximo episodio, um engenheiro recem-contratado numa empresa do Texas, sem direito a ferias no verao de 1958, fica sozinho na fabrica vazia e resolve fazer todas as pecas do circuito do mesmo material, no mesmo pedaco, de uma vez so.

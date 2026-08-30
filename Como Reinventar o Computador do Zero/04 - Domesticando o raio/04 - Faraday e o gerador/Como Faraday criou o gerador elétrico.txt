@@ -1,0 +1,7 @@
+Titulo: Como Faraday criou o gerador elétrico
+Notebook: 04-04-Faraday e o gerador
+
+Descricao:
+Este material apresenta um panorama histórico sobre Michael Faraday e sua contribuição fundamental para a eletricidade, integrando uma série sobre a reinvenção do computador. O conteúdo detalha como o cientista, um antigo aprendiz de encadernador, descobriu em 1831 que o magnetismo só gera corrente elétrica por meio do movimento ou de variações no campo magnético. Através de experimentos como o anel de indução e o disco de Faraday, as fontes explicam a origem do primeiro gerador e do transformador. O texto destaca que quase toda a energia moderna é uma conversão de movimento em eletricidade, regida pelo esforço mecânico descrito pela Lei de Lenz. Por fim, a narrativa conecta essas descobertas à viabilização de fontes de energia constantes, preparando o terreno para o surgimento do relé e dos circuitos lógicos.
+
+Link: https://notebook.google.com/notebook/54c13ef1-91c4-4c5c-8e5d-6a516eeb24ff

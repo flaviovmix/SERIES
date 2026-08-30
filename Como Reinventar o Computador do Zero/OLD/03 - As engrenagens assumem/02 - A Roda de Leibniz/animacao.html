@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Roda de Leibniz — Equipamento 05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(36px,7vw,72px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:760px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:620px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ficha do equipamento */
+.ficha{
+  display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:880px;
+}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:270px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+
+/* painel padrao (maquina + demos + praticas) */
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:700px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5;
+  text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* tambor escalonado (tela 4) */
+.tambor{display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap}
+.tambor svg{display:block}
+.tambor .dente{fill:var(--bg2); stroke:var(--line); stroke-width:1.5; cursor:pointer; transition:fill .25s}
+.tambor .dente.pega{fill:var(--accent2); stroke:var(--accent)}
+.tambor .dente.flash{fill:var(--accent)}
+.tambor-placar{
+  font-family:'IBM Plex Mono',Consolas,monospace; text-align:left;
+  display:flex; flex-direction:column; gap:8px;
+}
+.tambor-placar .rotulo{font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--sub)}
+.tambor-placar .valor{font-size:30px; font-weight:600; color:var(--accent)}
+
+/* maquina de leibniz (telas 5-7) */
+.leibniz{display:flex; flex-direction:column; gap:12px; align-items:center}
+.leibniz .linha{display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center}
+.leibniz .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--sub); width:120px; text-align:right}
+.janela{
+  min-width:120px; height:58px; border-radius:10px; padding:0 16px;
+  background:#241a10; color:#f3dfae; border:3px solid var(--accent2);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:30px; font-weight:600;
+  box-shadow:inset 0 6px 14px rgba(0,0,0,.55);
+}
+.janela.menor{min-width:90px; height:46px; font-size:22px}
+.janela.flash{animation:flash .55s var(--ease)}
+@keyframes flash{0%{background:#241a10}35%{background:var(--accent)}100%{background:#241a10}}
+.carro{display:flex; gap:8px}
+.carro .pos{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  border:1px solid var(--line); border-radius:99px; padding:5px 14px; color:var(--sub);
+  text-transform:uppercase; transition:all .3s;
+}
+.carro .pos.atual{border-color:var(--accent); color:var(--accent); font-weight:600}
+.voltas{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; color:var(--sub)}
+.voltas b{color:var(--accent)}
+
+/* placar das praticas */
+.placar{
+  display:flex; align-items:baseline; justify-content:space-between; width:100%;
+  margin-top:14px; border-top:1px dashed var(--line); padding-top:10px;
+}
+.placar .num{font-family:'IBM Plex Mono',Consolas,monospace; font-size:30px; font-weight:600}
+.placar .meta{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; color:var(--sub)}
+.placar .meta.win{color:var(--ok); font-weight:600; animation:pop .5s var(--ease)}
+@keyframes pop{0%{transform:scale(.7)}70%{transform:scale(1.12)}100%{transform:scale(1)}}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+/* trilha de desafios */
+.trilha{display:flex; gap:8px; justify-content:center; margin-bottom:12px}
+.trilha .alvo{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px;
+  border:1px solid var(--line); border-radius:99px; padding:5px 14px; color:var(--sub);
+}
+.trilha .alvo.atual{border-color:var(--accent); color:var(--accent); font-weight:600}
+.trilha .alvo.feito{border-color:var(--ok); color:var(--ok)}
+
+svg{overflow:visible}
+
+.mundo{display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; justify-content:center; max-width:880px}
+.mundo .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; width:250px; text-align:left;
+}
+.mundo .nome{font-size:18px; font-weight:600}
+.mundo .desc{font-size:13px; color:var(--sub); line-height:1.5; margin-top:6px}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600;
+  transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 12px}
+  .leibniz .rotulo{width:100%; text-align:center}
+  .janela{min-width:96px; height:48px; font-size:24px; border-width:2px}
+  .janela.menor{min-width:74px; height:40px; font-size:18px}
+  .placar .num{font-size:24px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 05 <span class="dot">·</span> A RODA DE LEIBNIZ</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 05 · série equipamentos</div>
+    <h1 class="reveal">A Roda de Leibniz</h1>
+    <p class="lede reveal">A Pascalina somava; esta aqui multiplica. O segredo é uma peça nova,
+    um tambor com dentes de tamanhos diferentes, que deixou herdeiros por 300 anos.
+    Quando o áudio pedir, aperte <b>Próximo</b>. Nas práticas, pause e brinque.</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">Calculadora de Leibniz ("stepped reckoner"), construída em torno da roda escalonada, o tambor de dentes desiguais.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Gottfried Leibniz, alemão. Modelo de madeira apresentado em Londres em 1673; a versão de latão ficou pronta nos anos 1690.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Nas palavras dele: é indigno perder horas como escravo da conta, trabalho que uma máquina faria. A Pascalina somava; ele queria multiplicar.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · o limite da pascalina -->
+  <section class="step">
+    <div class="kicker reveal">por que a pascalina não bastava</div>
+    <h2 class="reveal">A máquina que esquece o número</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">Na Pascalina</div>
+        <div class="desc">Pra somar 35 quatro vezes, você disca o 35 inteiro de novo a cada vez. A máquina soma, mas <b>não lembra</b> o que acabou de receber.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A ideia de Leibniz</div>
+        <div class="desc">Separar <b>marcar</b> de <b>somar</b>: você marca o 35 uma vez só, e cada volta de manivela soma o 35 inteiro de novo. O número fica gravado na máquina.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A consequência</div>
+        <div class="desc">Multiplicar virou dar voltas: 35 × 4 são só 4 voltas de manivela. A repetição, que era o trabalho chato, agora é da máquina.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · o tambor escalonado -->
+  <section class="step">
+    <div class="kicker reveal">a peça nova</div>
+    <h2 class="reveal">O tambor de dentes desiguais</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legTambor">Clique nos dentes pra marcar um dígito: quanto maior o dígito, mais dentes alcançam a engrenagem.</div>
+      <div class="tambor">
+        <svg id="svgTambor" width="300" height="230" viewBox="0 0 300 230"></svg>
+        <div class="tambor-placar">
+          <div><div class="rotulo">dígito marcado</div><div class="valor" id="digTambor">6</div></div>
+          <div><div class="rotulo">contador</div><div class="valor" id="contTambor">0</div></div>
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnTambor">girar o tambor</button>
+        <button class="btn-mini" id="btnTamborZera">zerar contador</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · marcar uma vez, somar varias -->
+  <section class="step">
+    <div class="kicker reveal">a grande sacada</div>
+    <h2 class="reveal">Marca uma vez, soma quantas quiser</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legMarcar">Aperte o botão e veja o <b>35 × 4</b> virar 4 voltas de manivela.</div>
+      <div id="maqMarcar"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnMarcar">ver o 35 × 4</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · o carro que desloca -->
+  <section class="step">
+    <div class="kicker reveal">o passo final</div>
+    <h2 class="reveal">Deslocar o carro: as dezenas de uma vez</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legCarro">E o 35 × 24? Aperte o botão: 4 voltas nas unidades, desloca o carro, 2 voltas nas dezenas.</div>
+      <div id="maqCarro"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnCarro">ver o 35 × 24</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Sua vez: 23 × 13</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilhaPratica"></div>
+      <div class="legenda" id="legPratica"></div>
+      <div id="maqPratica"></div>
+      <div class="placar">
+        <span class="num mono" id="totalPratica">0</span>
+        <span class="meta" id="metaPratica">meta: 69</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnGirar">girar manivela</button>
+        <button class="btn-mini" id="btnDeslocar">deslocar o carro</button>
+        <button class="btn-mini" id="btnLimpar">limpar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">Um tambor que durou 300 anos</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">A herança</div>
+        <div class="desc">O tambor escalonado virou o coração das calculadoras: o aritmômetro de 1820 (a primeira de sucesso comercial) e até a Curta de bolso, usada até os anos 1970.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O outro sonho de Leibniz</div>
+        <div class="desc">O mesmo homem descreveu a aritmética de 0 e 1: o binário. Ninguém deu bola na época. Guarde essa: ela volta com tudo mais pra frente na série.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A limitação</div>
+        <div class="desc">Somar, subtrair, multiplicar, dividir: números, sempre números. E se os furos de um cartão pudessem dar <b>instruções</b> a uma máquina? É o próximo equipamento: o tear de Jacquard.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- tela 4: tambor escalonado ----------
+// 9 dentes de comprimentos crescentes; o digito marcado decide quantos
+// alcancam a engrenagem. Uma volta move o contador em <digito> dentes.
+const svgTambor = document.getElementById('svgTambor');
+const digTambor = document.getElementById('digTambor');
+const contTambor = document.getElementById('contTambor');
+const legTambor = document.getElementById('legTambor');
+let digito = 6;
+let contagem = 0;
+const dentes = [];
+const NS = 'http://www.w3.org/2000/svg';
+
+// eixo do tambor + linha da engrenagem
+const eixo = document.createElementNS(NS, 'rect');
+eixo.setAttribute('x', '10'); eixo.setAttribute('y', '10');
+eixo.setAttribute('width', '18'); eixo.setAttribute('height', '210');
+eixo.setAttribute('rx', '6'); eixo.setAttribute('fill', 'var(--accent)');
+svgTambor.appendChild(eixo);
+const linhaEng = document.createElementNS(NS, 'line');
+linhaEng.setAttribute('x1', '236'); linhaEng.setAttribute('y1', '4');
+linhaEng.setAttribute('x2', '236'); linhaEng.setAttribute('y2', '226');
+linhaEng.setAttribute('stroke', 'var(--sub)'); linhaEng.setAttribute('stroke-width', '3');
+linhaEng.setAttribute('stroke-dasharray', '6 5');
+svgTambor.appendChild(linhaEng);
+const rotEng = document.createElementNS(NS, 'text');
+rotEng.setAttribute('x', '244'); rotEng.setAttribute('y', '118');
+rotEng.setAttribute('fill', 'var(--sub)'); rotEng.setAttribute('font-size', '11');
+rotEng.setAttribute('font-family', 'IBM Plex Mono, monospace');
+rotEng.setAttribute('writing-mode', 'tb');
+rotEng.textContent = 'ENGRENAGEM';
+svgTambor.appendChild(rotEng);
+
+for (let i = 1; i <= 9; i++) {
+  const dente = document.createElementNS(NS, 'rect');
+  const comprimento = 40 + i * 19; // dente i alcanca mais longe
+  dente.setAttribute('x', '28');
+  dente.setAttribute('y', String(10 + (i - 1) * 23));
+  dente.setAttribute('width', String(comprimento));
+  dente.setAttribute('height', '17');
+  dente.setAttribute('rx', '5');
+  dente.setAttribute('class', 'dente');
+  dente.addEventListener('click', () => { digito = i; pintaTambor(); });
+  svgTambor.appendChild(dente);
+  dentes.push(dente);
+}
+function pintaTambor() {
+  // o dente i alcanca a engrenagem quando o digito marcado e >= 10 - i:
+  // visual simplificado: os <digito> dentes mais compridos pegam
+  dentes.forEach((d, idx) => d.classList.toggle('pega', idx >= 9 - digito));
+  digTambor.textContent = digito;
+  legTambor.innerHTML = 'dígito marcado: <b>' + digito + '</b>. Os ' + digito + ' dentes mais compridos alcançam a engrenagem.';
+}
+pintaTambor();
+document.getElementById('btnTambor').addEventListener('click', () => {
+  contagem += digito;
+  contTambor.textContent = contagem;
+  dentes.forEach((d, idx) => {
+    if (idx >= 9 - digito) {
+      d.classList.add('flash');
+      setTimeout(() => d.classList.remove('flash'), 450);
+    }
+  });
+  legTambor.innerHTML = 'uma volta: a engrenagem andou <b>' + digito + '</b> dentes. O contador somou ' + digito + '.';
+});
+document.getElementById('btnTamborZera').addEventListener('click', () => {
+  contagem = 0;
+  contTambor.textContent = '0';
+});
+
+// ---------- fabrica da maquina de leibniz (telas 5-7) ----------
+// marcado fixo; girar() soma marcado * 10^carro no acumulador.
+function criaLeibniz(elId, marcado, opts = {}) {
+  const raiz = document.getElementById(elId);
+  raiz.className = 'leibniz';
+  let acumulador = 0, voltas = 0, carro = 0;
+
+  raiz.innerHTML =
+    '<div class="linha"><span class="rotulo">número marcado</span>' +
+    '<div class="janela menor mono" data-ref="marcado">' + marcado + '</div>' +
+    '<div class="carro"><span class="pos atual" data-ref="pos0">unidades</span>' +
+    '<span class="pos" data-ref="pos1">dezenas</span></div></div>' +
+    '<div class="linha"><span class="rotulo">acumulador</span>' +
+    '<div class="janela mono" data-ref="acc">0</div>' +
+    '<span class="voltas">voltas: <b data-ref="voltas">0</b></span></div>';
+
+  const el = (ref) => raiz.querySelector('[data-ref="' + ref + '"]');
+
+  function pinta() {
+    el('marcado').textContent = marcado * Math.pow(10, carro);
+    el('acc').textContent = acumulador;
+    el('voltas').textContent = voltas;
+    el('pos0').classList.toggle('atual', carro === 0);
+    el('pos1').classList.toggle('atual', carro === 1);
+  }
+
+  function girar() {
+    acumulador += marcado * Math.pow(10, carro);
+    voltas++;
+    pinta();
+    el('acc').classList.add('flash');
+    setTimeout(() => el('acc').classList.remove('flash'), 550);
+    if (opts.aoMudar) opts.aoMudar(acumulador);
+  }
+
+  function deslocar() {
+    if (carro >= 1) return false;
+    carro = 1;
+    pinta();
+    el('marcado').classList.add('flash');
+    setTimeout(() => el('marcado').classList.remove('flash'), 550);
+    return true;
+  }
+
+  function reset() {
+    acumulador = 0; voltas = 0; carro = 0;
+    pinta();
+    if (opts.aoMudar) opts.aoMudar(acumulador);
+  }
+
+  pinta();
+  return { girar, deslocar, reset, total: () => acumulador };
+}
+
+// ---------- tela 5: 35 x 4 ----------
+const maqMarcar = criaLeibniz('maqMarcar', 35);
+const legMarcar = document.getElementById('legMarcar');
+const btnMarcar = document.getElementById('btnMarcar');
+btnMarcar.addEventListener('click', () => {
+  btnMarcar.disabled = true;
+  maqMarcar.reset();
+  legMarcar.innerHTML = 'o 35 está marcado. Agora é só dar voltas...';
+  const falas = ['1ª volta: <b>35</b>', '2ª volta: <b>70</b>', '3ª volta: <b>105</b>', '4ª volta: <b>140</b>. Quatro voltas, nenhuma discagem repetida'];
+  falas.forEach((fala, i) => {
+    setTimeout(() => {
+      maqMarcar.girar();
+      legMarcar.innerHTML = fala;
+      if (i === falas.length - 1) btnMarcar.disabled = false;
+    }, 1100 * (i + 1));
+  });
+});
+
+// ---------- tela 6: 35 x 24 ----------
+const maqCarro = criaLeibniz('maqCarro', 35);
+const legCarro = document.getElementById('legCarro');
+const btnCarro = document.getElementById('btnCarro');
+btnCarro.addEventListener('click', () => {
+  btnCarro.disabled = true;
+  maqCarro.reset();
+  legCarro.innerHTML = '35 × 24 = 35 × 4 + 35 × 20. Primeiro as unidades: 4 voltas...';
+  const passosDemo = [
+    () => { maqCarro.girar(); legCarro.innerHTML = '1ª volta: <b>35</b>'; },
+    () => { maqCarro.girar(); legCarro.innerHTML = '2ª volta: <b>70</b>'; },
+    () => { maqCarro.girar(); legCarro.innerHTML = '3ª volta: <b>105</b>'; },
+    () => { maqCarro.girar(); legCarro.innerHTML = '4ª volta: <b>140</b>. Feito o 35 × 4'; },
+    () => { maqCarro.deslocar(); legCarro.innerHTML = 'desloca o carro: agora cada volta vale <b>350</b>'; },
+    () => { maqCarro.girar(); legCarro.innerHTML = '5ª volta: 140 + 350 = <b>490</b>'; },
+    () => { maqCarro.girar(); legCarro.innerHTML = '6ª volta: <b>840</b>. 35 × 24 em 6 voltas, em vez de 24'; },
+  ];
+  passosDemo.forEach((passo, i) => {
+    setTimeout(() => {
+      passo();
+      if (i === passosDemo.length - 1) btnCarro.disabled = false;
+    }, 1300 * (i + 1));
+  });
+});
+
+// ---------- tela 7: pratica 23 x 13 ----------
+const desafios = [69, 299];
+let desafioAtual = 0;
+const trilhaPratica = document.getElementById('trilhaPratica');
+const legPratica = document.getElementById('legPratica');
+const metaPratica = document.getElementById('metaPratica');
+['23 × 3 → 69', 'carro + 1 volta → 299'].forEach((t) => {
+  const s = document.createElement('span');
+  s.className = 'alvo';
+  s.textContent = t;
+  trilhaPratica.appendChild(s);
+});
+function pintaTrilha() {
+  [...trilhaPratica.children].forEach((s, i) => {
+    s.classList.toggle('feito', i < desafioAtual);
+    s.classList.toggle('atual', i === desafioAtual);
+  });
+  if (desafioAtual === 0) {
+    legPratica.innerHTML = 'Pause o áudio. 23 × 13 = 23 × 3 + 23 × 10. Comece pelas unidades: <b>3 voltas</b> de manivela.';
+    metaPratica.textContent = 'meta: 69';
+    metaPratica.className = 'meta';
+  } else if (desafioAtual === 1) {
+    legPratica.innerHTML = '✔ 69! Agora <b>desloque o carro</b> (cada volta passa a valer 230) e dê <b>1 volta</b>. Passou do valor? Aperte limpar.';
+    metaPratica.textContent = '✔ 69! meta: 299';
+    metaPratica.className = 'meta win';
+  } else {
+    legPratica.innerHTML = '<b>299! Quatro voltas no total. Pode voltar o áudio e apertar o Próximo.</b>';
+    metaPratica.textContent = '🎉 completo';
+    metaPratica.className = 'meta win';
+  }
+}
+const maqPratica = criaLeibniz('maqPratica', 23, {
+  aoMudar: (total) => {
+    document.getElementById('totalPratica').textContent = total;
+    if (desafioAtual < desafios.length && total === desafios[desafioAtual]) {
+      desafioAtual++;
+      pintaTrilha();
+    }
+  },
+});
+document.getElementById('btnGirar').addEventListener('click', () => maqPratica.girar());
+document.getElementById('btnDeslocar').addEventListener('click', () => maqPratica.deslocar());
+document.getElementById('btnLimpar').addEventListener('click', () => maqPratica.reset());
+pintaTrilha();
+</script>
+</body>
+</html>

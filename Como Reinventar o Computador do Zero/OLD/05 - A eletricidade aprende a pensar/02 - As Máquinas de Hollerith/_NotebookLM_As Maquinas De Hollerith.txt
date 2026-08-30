@@ -1,0 +1,111 @@
+Inicie dizendo: As Maquinas De Hollerith
+---------------
+
+Este e o decimo primeiro episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard, os automatos, a caixa de musica, a Maquina Analitica e o telegrafo; o anterior terminou com os escritorios afundando em dados parados enquanto a informacao corria pelos fios. Este episodio e sobre quem resolveu isso: Herman Hollerith, juntando o cartao furado do tear com o eletroima do telegrafo pra contar um pais inteiro.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Na tela interativa (4) e na DEMONSTRACAO (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A foto furada: o cartao como um retrato da pessoa feito de furos (a expressao vem do proprio Hollerith, inspirado no bilhete de trem).
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: AS MAQUINAS DE HOLLERITH)
+
+Retomar em uma frase: o telegrafo pos a informacao no fio, mas nos escritorios os dados continuavam parados, esperando gente contar a mao. Este episodio e sobre o engenheiro que juntou duas pecas que a serie ja conhece, o cartao furado do tear e o eletroima do telegrafo, e com elas contou um pais inteiro: Herman Hollerith e o censo americano de 1890.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: a tabuladora de Herman Hollerith. Estados Unidos, censo de 1890. Hollerith era engenheiro e tinha trabalhado no proprio departamento do censo, entao conhecia a dor de perto. O sistema dele venceu um concurso oficial do governo pra apurar o censo, com folga sobre os metodos manuais.
+
+Motivacao: o censo de 1880 levou quase 8 anos pra ser apurado a mao. O pais crescia tao rapido que o de 1890 ia levar MAIS de 10: os numeros ficariam prontos ja vencidos, com o censo seguinte batendo na porta.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (DE ONDE VEIO A IDEIA)
+
+A inspiracao veio do trem: condutores furavam o bilhete marcando a descricao do passageiro, alto ou baixo, com barba ou sem, pra ninguem viajar com bilhete dos outros. Uma foto furada, nas palavras do proprio Hollerith.
+
+A traducao pro censo: cada morador do pais vira UM cartao, e cada furo e uma resposta: idade, sexo, profissao, estado. O cartao e a pessoa, escrita em furos.
+
+E a ligacao com a serie: o furo carregando informacao a gente conhece desde o tear de Jacquard. A novidade de Hollerith esta em quem le o furo: nao e uma agulha de tecer, e a eletricidade.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (A PRENSA E OS RELOGIOS, TELA INTERATIVA)
+
+Como funciona a leitura: o operador poe o cartao na prensa e baixa uma tampa cheia de agulhas, uma agulha por posicao possivel de furo. Onde tem furo, a agulha passa e toca um copinho de mercurio embaixo: o circuito fecha, o eletroima puxa, e um ponteiro de relogio avanca uma unidade no contador daquela resposta. Onde nao tem furo, a agulha e barrada pelo papel e nada acontece.
+
+Um gesto (baixar a prensa) le o cartao INTEIRO de uma vez: todos os furos, todos os contadores certos andando juntos.
+
+Avisar: a tela tem um cartao pra furar e a prensa pra baixar, com os relogios andando conforme os furos.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (EM ESCALA, COM DEMONSTRACAO)
+
+Agora o segredo da velocidade: repeticao. Um operador treinado prensava milhares de cartoes por dia. Cartao entra, prensa desce, relogios andam, cartao sai, proximo. Os saloes do censo viraram fileiras de maquinas com relogios acumulando o pais, resposta por resposta.
+
+Avisar que a tela tem o botao de passar um lote de 20 cartoes, com os relogios acumulando pessoas, homens, mulheres, lavoura e fabrica.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O PLACAR)
+
+O resultado: a contagem bruta do censo de 1890 saiu em cerca de 6 semanas: 62,9 milhoes de pessoas. A apuracao completa, que no censo anterior tinha levado quase a decada, fechou numa fracao do tempo, economizando milhoes de dolares.
+
+E tinha mais: a classificadora. Alem de contar, a maquina separava os cartoes: conforme o furo, a tampa da caixa certa abria sozinha pro operador guardar. Com isso dava pra ordenar e cruzar os dados do pais inteiro: quantas mulheres na lavoura em tal estado, quantos estrangeiros em tal cidade.
+
+Deixar claro o que isso e e o que nao e: nao e um computador, ela nao segue um programa. Mas e o nascimento do PROCESSAMENTO DE DADOS: informacao em massa, lida e somada por eletricidade.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: SEJA A TABULADORA)
+
+Convidar a pausar o audio e resolver na tela: fazer o papel da maquina. A tela mostra 6 cartoes, um por vez; e ler o furo do sexo e clicar no relogio certo, homens ou mulheres. Errou, a tela avisa e espera o clique certo.
+
+Quando fechar os 6, tem um botao extra: ver a maquina fazer 60 cartoes em poucos segundos, sem errar nenhum. E a diferenca entre voce e a tabuladora, sentida na mao.
+
+Depois disso, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: um cartao por pessoa, a foto furada; a prensa de agulhas fechando circuitos no mercurio; relogios acumulando um pais; e a classificadora ordenando os cartoes.
+
+O que ficou: Hollerith abriu a Tabulating Machine Company em 1896. Depois de fusoes, em 1924 a empresa ganhou o nome que todo mundo conhece: IBM. E o cartao furado virou A midia dos dados: bancos, folhas de pagamento, governos; o cartao de 80 colunas da IBM mandou nos escritorios ate os anos 1970.
+
+A limitacao, que aponta o rumo da serie: contar nao e pensar. As tabuladoras somavam milhoes, mas nao seguiam receita nem decidiam nada. Pra maquina decidir, a eletricidade ainda precisava aprender logica.
+
+Gancho: e pra la que a serie vai daqui pra frente: o seculo 20, os reles virando interruptores de logica e as primeiras maquinas que calculam com eletricidade.

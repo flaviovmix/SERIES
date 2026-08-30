@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Ábaco — Equipamento 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- a base da animacao mora no site; o que e deste episodio vem por ultimo -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/modelo-3d.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="abaco.css">
+<link rel="stylesheet" href="risco.css">
+<link rel="stylesheet" href="suanpan.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/etapas/etapa-01.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Do%20risco%20no%20osso%20ao%20%C3%A1baco.mp3" data-duracao="1605"></audio>
+    <img class="tocador__capa" src="img/capa-tocador.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Do risco no osso ao ábaco</div>
+      <div class="tocador__fonte">Série Equipamentos · 01 · O Ábaco</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1605" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">26:45</span></div>
+  </div>
+  <div class="acoes">
+    <button class="btn-cabecalho" data-abre="modelo3d">🧊 abrir modelo 3D</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">equipamento 01 · série equipamentos</div>
+      <h1 class="reveal">O Ábaco</h1>
+      <p class="lede reveal">O primeiro instrumento de calcular da humanidade, e o único desta série
+      que você vai aprender a operar de verdade, aqui na tela. Quando o áudio pedir, aperte <b>Próximo</b>.
+      Nas práticas, pause e brinque.</p>
+      <div class="capa-como reveal">
+        <p><b>Como ele funciona.</b> Cada haste é uma casa: unidade embaixo, depois dezena,
+        centena e milhar, cada uma valendo dez vezes a de baixo. Empurrar conta soma, puxar tira.
+        Quando a haste chega em 9 e vem mais um, ela esvazia e nasce uma conta na casa de cima.
+        Esse é o vai-um.</p>
+        <p>As práticas e demonstrações daqui usam <b>este</b> modelo, o mais simples:
+        uma conta vale uma unidade. O chinês e o japonês que aparecem nas fotos têm uma barra,
+        e a conta de cima vale cinco. Lê mais rápido, custa uma regra a mais.</p>
+      </div>
+      <button class="btn-mini cheio clicavel capa-botao reveal" data-abre="modelo3d">abrir modelo 3D</button>
+    </div>
+    <figure class="capa-modelo reveal">
+      <iframe data-src="../../_arquivos/modelos-3d/abaco.html" title="Modelo tridimensional do ábaco, com as contas móveis"></iframe>
+      <figcaption>Arraste pra girar · role pra aproximar · clique nas contas pra mover</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 · o risco: o registro mais velho de todos -->
+  <section class="step">
+    <div class="kicker reveal">antes de qualquer ficha · há uns 20 mil anos</div>
+    <h2 class="reveal">Um risco por bicho</h2>
+    <div class="cena risco-duplo reveal">
+    <div class="painel">
+      <div class="legenda" id="legRisco">Clique em <b>passou um</b>: cada bicho que sai do curral vira um risco.</div>
+      <svg class="riscos" id="riscos" viewBox="0 0 900 210" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Riscos de contagem agrupados de cinco em cinco"></svg>
+      <div class="painel__total">
+        <div class="num" id="riscoNum">0</div>
+        <div class="meta" id="riscoMeta">nenhum risco ainda</div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnRisco">passou um</button>
+        <button class="btn-mini" id="btnRisco5">passaram cinco</button>
+        <button class="btn-mini" id="btnCorte">tirar o corte de 5</button>
+        <button class="btn-mini" id="btnRiscoLimpar">limpar</button>
+      </div>
+    </div>
+    <figure class="clicavel" data-abre="foto" data-legenda="Um risco por bicho, no osso · reconstituição, não é foto de época">
+      <span class="selo">ilustração</span>
+      <img src="img/risco-no-osso.jpg" alt="Mão segurando uma lasca de pedra e gravando riscos agrupados num osso escuro, sobre uma pedra">
+      <figcaption>A lasca de pedra grava o risco seguinte. Os grupos já estão lá: é assim que se lê de relance.</figcaption>
+    </figure>
+    </div>
+    <div class="nota-cena reveal">o osso de Ishango, do Congo, tem uns 20 mil anos e traz riscos agrupados · o corte de cinco em cinco é convenção bem mais nova, mas é o primeiro agrupamento — e é ele que volta no fim valendo 5</div>
+  </section>
+
+  <!-- 3 · ~8000 a.C.: uma ovelha, uma pedra -->
+  <section class="step step--cena">
+    <div class="kicker reveal">~8000 a.C. · antes de existir número</div>
+    <h2 class="reveal">Uma ovelha, uma pedra</h2>
+    <div class="cena reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma ficha de argila por ovelha · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/pastor-fichas.jpg" alt="Pastor com fichas de argila na palma da mão, ovelhas saindo do curral atrás">
+        <figcaption>Uma ovelha sai do curral, uma ficha vai pra mão. Ninguém está contando: cada ficha é um bicho.</figcaption>
+      </figure>
+      <figure class="clicavel" data-abre="foto" data-legenda="O limite da ideia: rebanho grande, mão cheia · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/pastor-maos-cheias.jpg" alt="O mesmo pastor com as duas mãos transbordando de fichas de argila">
+        <figcaption>Com sete funciona. Com cinquenta, não: as fichas caem e ninguém sabe quantas são só de olhar.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 4 · ~3500 a.C.: a bulla -->
+  <section class="step step--cena">
+    <div class="kicker reveal">~3500 a.C. · a conta que viaja</div>
+    <h2 class="reveal">Lacrada dentro da argila</h2>
+    <div class="cena reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A bulla: o envelope de argila lacrado · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/bulla.jpg" alt="Bola oca de argila com formas impressas, fichas soltas ao lado e um selo cilíndrico">
+        <figcaption>A bola oca guarda as fichas e traz a marca delas por fora, com o selo do dono por cima. Pra conferir, quebra.</figcaption>
+      </figure>
+      <figure class="clicavel" data-abre="foto" data-legenda="O rebanho vai pela estrada e a bola lacrada vai junto: é o contrato · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/entregador-ovelhas.jpg" alt="Pastor tocando um rebanho de ovelhas por uma estrada de terra rumo a uma cidade de tijolo cru, com a bola de argila lacrada pendurada ao lado do corpo">
+        <figcaption>Um homem leva o rebanho de outro dono pra outra cidade, e a bola lacrada vai junto: é o contrato da entrega.</figcaption>
+      </figure>
+      <figure class="clicavel" data-abre="foto" data-legenda="O entregador entrega a bulla: a conta viaja como documento · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/entregador-bulla.jpg" alt="Entregador de túnica entregando a bola de argila lacrada a um homem sentado à mesa, com fichas e um selo cilíndrico sobre a madeira">
+        <figcaption>A bola viaja na mão do entregador como documento: o que está dentro ninguém muda sem quebrar o selo, e quem recebe confere.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 · ~3100 a.C.: nasce a escrita -->
+  <section class="step step--cena">
+    <div class="kicker reveal">~3100 a.C. · e nasce a escrita</div>
+    <h2 class="reveal">A marca vence a ficha</h2>
+    <div class="cena reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A impressão substitui a ficha · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/nasce-a-escrita.jpg" alt="Tabuleta de argila mole recebendo marcas em cunha, com fichas velhas largadas ao lado">
+        <figcaption>Se a marca já diz tudo, a ficha de dentro sobra. A escrita começa como recibo.</figcaption>
+      </figure>
+      <figure class="clicavel" data-abre="foto" data-legenda="Tábua com números arcaicos, Uruk Tardio (~3300 a.C.) · British Museum, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/tabua-uruk-numeros.jpg" alt="Tábua de gesso com números arcaicos do período de Uruk">
+        <figcaption>Tábua de gesso com números arcaicos, Uruk Tardio · British Museum, CC0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 · ~2700 a.C.: a pedra ganha lugar -->
+  <section class="step step--cena">
+    <div class="kicker reveal">~2700 a.C. · o equipamento aparece</div>
+    <h2 class="reveal">A pedra ganha lugar</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A tábua com colunas: aqui nasce o ábaco · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/tabua-colunas.jpg" alt="Tábua de contar com sulcos em colunas e pedrinhas, uma mão movendo uma delas">
+        <figcaption>Sulcos, colunas e pedra. A mesma pedrinha, uma coluna à esquerda, passa a valer muito mais.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">o ábaco sumério contava de sessenta em sessenta · o de dez em dez é o que sobreviveu nas escolas, e é o desta animação</div>
+  </section>
+
+  <!-- 7 · ~2560 a.C.: a pergunta das piramides -->
+  <section class="step step--cena">
+    <div class="kicker reveal">~2560 a.C. · mesma época, outro rio</div>
+    <h2 class="reveal">E as pirâmides do Egito?</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Gizé em obra: o escriba conta os blocos que sobem a rampa · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/piramide-em-obra.jpg" alt="Pirâmide pela metade, equipes puxando um bloco de calcário num trenó pela rampa, e um escriba de lado com o papiro aberto anotando">
+        <figcaption>Estamos falando de contar, e mais ou menos na mesma época. Alguma dessas tecnologias subiu com as pirâmides?</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">a pirâmide de Quéops tem uns 2,3 milhões de blocos, e as equipes recebiam pão e cerveja contados · alguém tinha que contar tudo isso</div>
+  </section>
+
+  <!-- 8 · a resposta: o risco foi, o abaco nao -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a resposta · o risco, no papiro</div>
+    <h2 class="reveal">O risco foi, o ábaco não</h2>
+    <div class="cena reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O número egípcio é risco agrupado: um traço por unidade, um sinal pra cada dez · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/escriba-papiro.jpg" alt="Mãos de um escriba egípcio escrevendo no papiro com pincel de junco, fileiras de traços curtos em grupos, paleta de tinta ao lado">
+        <figcaption>O número egípcio é o risco agrupado: um traço por unidade, um sinal pra cada dez. É a tela 2, no papiro.</figcaption>
+      </figure>
+      <figure class="clicavel" data-abre="foto" data-legenda="O Diário de Merer (~2560 a.C.): a equipe que levava calcário de barco pra Gizé, viagem por viagem · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/barcos-calcario.jpg" alt="Dois barcos de madeira carregados de blocos de calcário chegando a um cais no Nilo, com a pirâmide inacabada ao fundo e um homem no cais contando com um papiro">
+        <figcaption>O Diário de Merer (~2560 a.C.), o papiro escrito mais antigo que se conhece: a equipe que levava calcário de barco pra Gizé, viagem por viagem, tudo contado.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">ficha, bulla e ábaco são linha da Mesopotâmia · o Egito calculava escrevendo, e só aparece contando com pedrinhas uns dois mil anos depois</div>
+  </section>
+
+  <!-- 9 · ficha -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a ficha do equipamento</div>
+      <h2 class="reveal">Nome, data e motivação</h2>
+      <div class="ficha">
+        <div class="item reveal">
+          <div class="rotulo">nome</div>
+          <div class="texto">Ábaco, do grego <i>abax</i> (tábua). Pedras deslizando em hastes ou sulcos.</div>
+        </div>
+        <div class="item reveal">
+          <div class="rotulo">data e lugar</div>
+          <div class="texto">Suméria, por volta de 2700 a.C. Sem inventor conhecido: nasceu do uso. As pedras de contar são bem mais velhas, de uns 8000 a.C.</div>
+        </div>
+        <div class="item reveal">
+          <div class="rotulo">motivação</div>
+          <div class="texto">Contar rebanho, colheita e imposto sem errar. Escrever número já dava, a cuneiforme é mais antiga que ele: o que não existia era jeito de <i>calcular</i> com número grande.</div>
+        </div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um suanpan de verdade — o ábaco chinês · foto: Felix Winkelnkemper, CC BY-SA 4.0">
+        <span class="selo">🔍 ampliar</span>
+        <img src="img/abaco-real.jpg" alt="Suanpan, o ábaco chinês">
+        <figcaption>Um suanpan de verdade — o ábaco chinês, ainda em uso · foto: Felix Winkelnkemper, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 · o da foto: como se le o suanpan -->
+  <section class="step">
+    <div class="kicker reveal">o da foto · com barra</div>
+    <h2 class="reveal">Como se lê o suanpan</h2>
+    <div class="painel painel--lado reveal">
+      <div class="legenda" id="legSuanpan">Conta encostada na barra conta. Em cima vale <b>5</b>, embaixo vale <b>1</b>. Aperte <b>começar</b> e veja as contas encherem.</div>
+      <div class="painel__miolo"><div id="suanpan"></div></div>
+      <div class="painel__total">
+        <span class="num" id="totalSuanpan">0</span>
+        <span class="meta" id="metaSuanpan"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="btnSuanpanVirar" aria-pressed="false">virar de lado</button>
+        <span class="botoes__sep" aria-hidden="true"></span>
+        <button class="btn-mini" id="btnSuanpanVoltar">← voltar</button>
+        <button class="btn-mini" id="btnSuanpanPausar">pausar</button>
+        <button class="btn-mini cheio" id="btnSuanpanContinuar">começar →</button>
+        <span class="botoes__sep" aria-hidden="true"></span>
+        <button class="btn-mini" id="btnSuanpanPraticar">praticar</button>
+        <button class="btn-mini" id="btnSuanpanLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">lê mais rápido, custa uma regra a mais · as práticas e demonstrações daqui pra frente usam o modelo simples, em que cada conta vale 1</div>
+  </section>
+
+  <!-- 11 · como ele e -->
+  <section class="step">
+    <div class="kicker reveal">como ele é</div>
+    <h2 class="reveal">Cada haste vale 10× a de baixo</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legEstrutura">Observe: o áudio vai acender as hastes uma a uma.</div>
+      <div id="abacoEstrutura"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnEstrutura">ver as casas acenderem</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · o vai-um -->
+  <section class="step">
+    <div class="kicker reveal">o movimento mais importante</div>
+    <h2 class="reveal">O vai-um: o fio enche e sobe 1</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legVaium">Aperte o botão e veja o 9 + 1 acontecer devagar.</div>
+      <div id="abacoVaium"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnVaium">ver o 9 + 1</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">aqui cada conta vale 1: é isso que deixa o vai-um óbvio sem precisar de outra regra</div>
+  </section>
+
+  <!-- 13 · pratica 1 -->
+  <section class="step">
+    <div class="kicker reveal">pratique · parte 1</div>
+    <h2 class="reveal">Represente os números</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilha1"></div>
+      <div class="legenda" id="legPratica1"></div>
+      <div id="abacoPratica1"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica1">0</span>
+        <span class="meta" id="metaPratica1"></span>
+      </div>
+      <div class="botoes"><button class="btn-mini" id="limpar1">limpar</button></div>
+    </div>
+  </section>
+
+  <!-- 14 · demo 2x24 -->
+  <section class="step">
+    <div class="kicker reveal">agora uma conta de verdade</div>
+    <h2 class="reveal">2 × 24, passo a passo</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legDemo">A mesma conta do restaurante: dois pratos de 24. Aperte "passo" e acompanhe.</div>
+      <div id="abacoDemo"></div>
+      <div class="painel__total">
+        <span class="num" id="totalDemo">0</span>
+        <span class="meta" id="passoDemo"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnPasso">passo →</button>
+        <button class="btn-mini" id="btnReiniciaDemo">reiniciar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 · demo 3x24, com vai-um -->
+  <section class="step">
+    <div class="kicker reveal">e quando a haste enche?</div>
+    <h2 class="reveal">3 × 24, e o vai-um aparece</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legDemo3">Mais um prato na mesa. Agora as unidades não cabem todas no fio: é aí que o vai-um entra.</div>
+      <div id="abacoDemo3"></div>
+      <div class="painel__total">
+        <span class="num" id="totalDemo3">0</span>
+        <span class="meta" id="passoDemo3"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnPasso3">passo →</button>
+        <button class="btn-mini" id="btnReiniciaDemo3">reiniciar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 · pratica 2 -->
+  <section class="step">
+    <div class="kicker reveal">pratique · parte 2</div>
+    <h2 class="reveal">Sua vez: faça o 3 × 24</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica2">Monte um 24 e some mais dois por cima. Quando a unidade encher, lembre do vai-um. Chegou em <b>72</b>, fechou a conta.</div>
+      <div id="abacoPratica2"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica2">0</span>
+        <span class="meta" id="metaPratica2">meta: 72</span>
+      </div>
+      <div class="botoes"><button class="btn-mini" id="limpar2">limpar</button></div>
+    </div>
+  </section>
+
+  <!-- 17 · encerramento -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">o ábaco pelo mundo</div>
+    <h2 class="reveal">Ainda vivo, quase 5.000 anos depois</h2>
+    <div class="mundo">
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="O ábaco romano de mão, em gravura da Encyclopædia Britannica, 9ª edição · domínio público">
+        <img class="foto" src="img/abaco-romano-gravura.jpg" alt="Gravura do ábaco romano de mão">
+        <div class="nome">Ábaco romano 🏛️</div>
+        <div class="desc">O mesmo princípio em metal, do tamanho da palma da mão. Séculos depois da Suméria, e já cabendo no bolso.</div>
+      </div>
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="Um suanpan de verdade — o ábaco chinês · foto: Felix Winkelnkemper, CC BY-SA 4.0">
+        <img class="foto" src="img/abaco-real.jpg" alt="Suanpan de verdade">
+        <div class="nome">Suanpan 🇨🇳</div>
+        <div class="desc">O ábaco chinês, com 2 contas em cima (valem 5 cada) e 5 embaixo. Usado no comércio por séculos.</div>
+      </div>
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="Um soroban de verdade, com a mão movendo as contas · foto: Kowloonese, CC BY-SA 3.0">
+        <img class="foto" src="img/soroban.jpg" alt="Soroban de verdade em uso">
+        <div class="nome">Soroban 🇯🇵</div>
+        <div class="desc">O japonês, mais enxuto: 1 conta em cima (vale 5), 4 embaixo. Ensinado em escolas até hoje; campeonatos de velocidade existem.</div>
+      </div>
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="Quem faz a conta andar é a mão · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img class="foto" src="img/abaco-em-uso.jpg" alt="Mãos movendo as contas de um ábaco de madeira">
+        <div class="nome">A limitação</div>
+        <div class="desc">Por melhor que seja, alguém precisa mover as pedras: a máquina não anda sozinha. E essa coceira demora a passar. Antes das engrenagens ainda falta o número certo — o zero e o sistema posicional, que é o próximo episódio.</div>
+      </div>
+    </div>
+    <div class="nota-cena reveal">a conta que vale 5 do suanpan e do soroban é o mesmo corte de cinco em cinco do risco da tela 2: agrupar pra ler de relance é bem mais velho que o equipamento</div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<!-- a base, na ordem de dependencia; depois o que e deste episodio -->
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/modelo-3d.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="abaco.js"></script>
+<script src="risco.js"></script>
+<script src="suanpan.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

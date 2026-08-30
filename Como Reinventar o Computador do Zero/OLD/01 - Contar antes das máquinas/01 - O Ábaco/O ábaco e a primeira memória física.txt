@@ -1,0 +1,7 @@
+Titulo: O ábaco e a primeira memória física
+Notebook: Como Reinventar o Computador do Zero-EQUIPAMENTOS-01 - O ABACO
+
+Descricao:
+Estes documentos apresentam o episódio de estreia da série Equipamentos, focada na história da computação, que explora o Ábaco como o primeiro grande marco dessa jornada. O conteúdo detalha as origens do instrumento na Mesopotâmia e explica conceitos fundamentais como o valor posicional e o movimento do vai-um por meio de uma experiência interativa. O roteiro é estruturado para guiar o público através de uma animação digital de oito telas, unindo explicações históricas com exercícios práticos de representação numérica e cálculos. Ao final, o material destaca a relevância do ábaco como a primeira materialização física de cálculos abstratos, mencionando suas variantes modernas como o soroban. A narrativa prepara o terreno para o próximo avanço tecnológico, a Pascalina, ao apontar que o ábaco ainda dependia totalmente da manipulação humana para funcionar.
+
+Link: https://notebook.google.com/notebook/9a649e24-8b7f-4bd5-9c3d-6513347656b9

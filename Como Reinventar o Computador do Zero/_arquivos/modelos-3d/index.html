@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modelos 3D — Como Reinventar o Computador do Zero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+<style>
+  /* a base é feita pro palco (tela cheia, sem rolagem); aqui é uma lista, então volta a rolar */
+  body{overflow:auto; display:block}
+  main{padding:34px 22px 60px; max-width:1180px; margin:0 auto}
+  .intro{max-width:640px; margin-bottom:30px}
+  .intro h1{font-size:31px; font-weight:900; letter-spacing:-.01em; line-height:1.15}
+  .intro p{margin-top:12px; color:var(--sub); font-size:15.5px; line-height:1.6}
+  .grupo{
+    font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--sub); margin:34px 0 14px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .grupo::after{content:''; flex:1; height:1px; background:var(--line)}
+  .grade{display:grid; gap:20px; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr))}
+  .card{
+    display:block; text-decoration:none; color:inherit; background:var(--card);
+    border:1px solid var(--line); border-radius:14px; overflow:hidden;
+    box-shadow:0 1px 0 var(--line), 0 18px 40px -30px rgba(0,0,0,.4);
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+  }
+  .card:hover, .card:focus-visible{transform:translateY(-3px); box-shadow:0 1px 0 var(--line), 0 26px 50px -28px rgba(0,0,0,.5)}
+  .card:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+  .card img{display:block; width:100%; height:auto; border-bottom:1px solid var(--line); background:var(--bg2)}
+  .txt{padding:16px 18px 18px}
+  .ep{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent)}
+  .nome{font-size:20px; font-weight:600; margin:5px 0 7px}
+  .faz{font-size:14px; line-height:1.55; color:var(--sub)}
+  /* a fazer: mesmo card, sem thumb e sem link — o buraco é o mapa do que falta */
+  .card.vazio{opacity:.62; cursor:default}
+  .card.vazio .txt{padding-top:18px}
+  .card.vazio:hover{transform:none; box-shadow:0 1px 0 var(--line), 0 18px 40px -30px rgba(0,0,0,.4)}
+  .nota{margin-top:34px; font-size:13px; color:var(--sub); line-height:1.6; max-width:640px}
+  .nota code{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; background:var(--bg2); padding:1px 5px; border-radius:3px}
+</style>
+</head>
+<body>
+
+<header>
+  <div>COMO REINVENTAR O COMPUTADOR DO ZERO <span class="dot">·</span> LAB <span class="dot">·</span> MODELOS 3D</div>
+  <div>ÍNDICE</div>
+</header>
+
+<main>
+  <div class="intro">
+    <h1>As máquinas, pra girar na mão</h1>
+    <p>Cada máquina histórica da série é um HTML próprio em three.js que monta a geometria e a
+    mecânica dela em cima de um palco comum. Arraste pra girar, use o HUD pra operar.</p>
+  </div>
+
+  <div class="grupo">prontas</div>
+  <div class="grade">
+    <a class="card" href="./abaco.html">
+      <img src="./thumbs/abaco.jpg" alt="Ábaco 3D, contas de madeira na moldura">
+      <div class="txt">
+        <div class="ep">Etapa 01 · O Ábaco</div>
+        <div class="nome">Ábaco</div>
+        <div class="faz">Contas clicáveis que sobem e descem na haste; monta o 1.234 e mostra a leitura por casa.</div>
+      </div>
+    </a>
+    <a class="card" href="./pascalina.html">
+      <img src="./thumbs/pascalina.jpg" alt="Pascalina 3D, três rodas de pinos e os visores">
+      <div class="txt">
+        <div class="ep">Etapa 03 · Pascalina</div>
+        <div class="nome">Pascalina</div>
+        <div class="faz">Rodas de pinos e visores de odômetro, com o sautoir levando o vai-um: demos de 9+1 e 99+1 e o desafio 28+35.</div>
+      </div>
+    </a>
+    <a class="card" href="./roda-de-leibniz.html">
+      <img src="./thumbs/roda-de-leibniz.jpg" alt="Roda de Leibniz 3D, tambor escalonado e manivela">
+      <div class="txt">
+        <div class="ep">Etapa 03 · A Roda de Leibniz</div>
+        <div class="nome">Roda de Leibniz</div>
+        <div class="faz">O tambor escalonado: escolhe o dígito, gira a manivela e conta os dentes que pegam. Desafio 3 × 4.</div>
+      </div>
+    </a>
+    <a class="card" href="./garrafa-de-leiden.html">
+      <img src="./thumbs/garrafa-de-leiden.jpg" alt="Garrafa de Leiden 3D em corte, com os sinais de carga nas duas folhas">
+      <div class="txt">
+        <div class="ep">Etapa 04 · A faísca</div>
+        <div class="nome">Garrafa de Leiden</div>
+        <div class="faz">O corte mostra o sanduíche metal-vidro-metal: carrega em degraus, os sinais se juntam nas duas folhas e o prego descarrega tudo num estalo.</div>
+      </div>
+    </a>
+    <a class="card" href="./anticitera.html">
+      <img src="./thumbs/anticitera.jpg" alt="Mecanismo de Antikythera 3D, trem de engrenagens e mostrador do zodíaco">
+      <div class="txt">
+        <div class="ep">Etapa 02 · As Máquinas do Hiato</div>
+        <div class="nome">Mecanismo de Antikythera</div>
+        <div class="faz">Trem sideral real (64→38, 48→24, 127→32): ponteiros de sol e lua, fase da lua e o ciclo de Metón.</div>
+      </div>
+    </a>
+    <a class="card" href="./predio-da-agua.html">
+      <img src="./thumbs/predio-da-agua.jpg" alt="Prédio 3D com caixa d'água no alto, cano descendo com água, registro e mangueira na calçada">
+      <div class="txt">
+        <div class="ep">Extra · Volt Ampere e Watt</div>
+        <div class="nome">O Prédio da Água</div>
+        <div class="faz">A analogia inteira virando máquina: a altura da caixa é a tensão, o cano é a resistência, o registro é o interruptor, e o jato que tira o lodo da calçada é a potência. Desafio: limpe a calçada.</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grupo">a fazer</div>
+  <div class="grade">
+    <div class="card vazio">
+      <div class="txt">
+        <div class="ep">Etapa 04 · O relé</div>
+        <div class="nome">Relé</div>
+        <div class="faz">A armadura sendo puxada pelo eletroímã e fechando o contato do outro circuito.</div>
+      </div>
+    </div>
+    <div class="card vazio">
+      <div class="txt">
+        <div class="ep">Etapa 04 · Faraday e o gerador</div>
+        <div class="nome">Disco de Faraday</div>
+        <div class="faz">O disco de cobre girando entre os polos do ímã, com as escovas tirando corrente da borda.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="nota">Os modelos precisam de WebGL e de internet (o three.js vem de CDN) e têm que ser servidos
+  por HTTP: <code>npx live-server --port=5500</code> nesta pasta. Manual do palco comum em
+  <code>.claude/components/modelo-3d.md</code>.</p>
+</main>
+
+</body>
+</html>

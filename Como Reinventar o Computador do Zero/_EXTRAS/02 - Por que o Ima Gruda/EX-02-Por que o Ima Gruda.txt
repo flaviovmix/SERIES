@@ -1,0 +1,35 @@
+Inicie dizendo: Por que o Ima Gruda
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Por que o Ima Gruda.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e um episodio avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM: NAO citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. NAO contar quem descobriu o que nem de onde veio o nome de nada.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado" nem "mais pra frente a gente fala disso". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois.
+
+REGRA DURA NUMERO TRES: o assunto e o ima permanente, aquele que ja e ima sozinho. Ima feito passando eletricidade num fio fica de fora; no maximo uma frase dizendo que existe, sem explicar como funciona.
+
+FOCO: as perguntas sobre ima que todo mundo ja fez. Por que gruda em ferro e nao em aluminio, cobre ou ouro; por que dois imas as vezes se empurram; por que quebrar um ima ao meio da dois imas completos; o que e o campo em volta e por que a forca cai tao rapido com a distancia; como se fabrica um ima esfregando e como pancada e calor estragam; por que o ima de geladeira so gruda de um lado; e por que ele segura um papel por dez anos sem gastar energia. Tudo explicado dentro de UMA analogia: o ferro e feito de milhoes de agulhinhas de bussola, baguncadas no ferro comum e alinhadas no ima.
+
+A pagina tem 8 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo". Nas telas interativas, avisar que tem botao na tela. Na tela de pratica, convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita no _NotebookLM_Por que o Ima Gruda.txt, que sao as agulhinhas de bussola dentro do ferro. NAO invente analogias novas e NAO troque o pareamento no meio do episodio. Nada de torcida de estadio, fila, trem nem abraco.
+
+Use tambem o Overview.txt como contexto curto.

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Caixa de Música — Equipamento 08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(36px,7vw,72px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:760px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:620px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ficha do equipamento */
+.ficha{
+  display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:880px;
+}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:270px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+
+/* painel padrao */
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:780px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5;
+  text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* pente de laminas */
+.pente{display:flex; gap:8px; justify-content:center; align-items:flex-start}
+.lamina{display:flex; flex-direction:column; align-items:center; gap:6px; cursor:pointer; border:none; background:none}
+.lamina .haste{
+  width:22px; border-radius:0 0 6px 6px; background:linear-gradient(180deg, var(--accent2), var(--accent));
+  box-shadow:inset 0 -3px 0 rgba(0,0,0,.15); transition:transform .1s;
+}
+.lamina.vibra .haste{animation:vibra .35s linear}
+@keyframes vibra{0%{transform:translateX(0)}20%{transform:translateX(-2.5px)}40%{transform:translateX(2.5px)}60%{transform:translateX(-1.5px)}80%{transform:translateX(1.5px)}100%{transform:translateX(0)}}
+.lamina .nota{font-family:'IBM Plex Mono',Consolas,monospace; font-size:9px; letter-spacing:.06em; color:var(--sub)}
+.pente-base{height:14px; border-radius:6px; background:var(--accent); max-width:300px; margin:0 auto}
+
+/* cilindro (grade tempo x nota) */
+.cilindro-wrap{display:flex; gap:10px; justify-content:center; align-items:flex-start}
+.cilindro-notas{display:flex; flex-direction:column; gap:3px; padding-top:0}
+.cilindro-notas span{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:9px; color:var(--sub);
+  height:22px; display:flex; align-items:center; justify-content:flex-end; padding-right:4px; width:34px;
+}
+.cilindro{display:flex; flex-direction:column; gap:3px}
+.cilindro .linha-c{display:flex; gap:3px}
+.cilindro .celula{
+  width:26px; height:22px; border-radius:6px; background:var(--bg2); border:1px solid var(--line);
+  cursor:pointer; padding:0; transition:background .2s;
+}
+.cilindro.travado .celula{cursor:default}
+.cilindro .celula.pino{background:var(--accent); border-color:var(--accent)}
+.cilindro .celula.varre{outline:2px solid var(--ink); outline-offset:1px}
+.cilindro.mini .celula{width:14px; height:11px; border-radius:3px; cursor:default}
+.cilindro-rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--sub); margin-top:8px; text-align:center}
+.lado-a-lado{display:flex; gap:26px; justify-content:center; align-items:flex-start; flex-wrap:wrap}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+.mundo{display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; justify-content:center; max-width:880px}
+.mundo .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; width:250px; text-align:left;
+}
+.mundo .nome{font-size:18px; font-weight:600}
+.mundo .desc{font-size:13px; color:var(--sub); line-height:1.5; margin-top:6px}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600;
+  transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 10px}
+  .cilindro .celula{width:18px; height:16px; border-radius:4px}
+  .cilindro-notas span{height:16px; font-size:8px; width:26px}
+  .lamina .haste{width:16px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 08 <span class="dot">·</span> A CAIXA DE MÚSICA</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 08 · série equipamentos</div>
+    <h1 class="reveal">A Caixa de Música</h1>
+    <p class="lede reveal">Os autômatos gravavam roteiros em cames de luxo. Em 1796, um relojoeiro
+    de Genebra encolheu essa ideia até caber no bolso — e ela <b>toca de verdade aqui na tela</b>.
+    Quando o áudio pedir, aperte <b>Próximo</b>. Na prática, pause e brinque (com o som ligado!).</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">Caixa de música de pente metálico: um cilindro de pinos tocando lâminas de aço afinadas.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Antoine Favre, relojoeiro de Genebra, 1796 — o mesmo mundo suíço dos Jaquet-Droz.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Fazer relógios e caixinhas de luxo tocarem música sem sinos nem martelos — miniaturizar o carrilhão até caber numa caixa de rapé.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · a linhagem -->
+  <section class="step">
+    <div class="kicker reveal">de onde ela vem</div>
+    <h2 class="reveal">Do sino da torre ao bolso</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">O carrilhão de torre</div>
+        <div class="desc">Séculos antes, torres de igreja já tocavam melodias sozinhas: um cilindro de pinos GIGANTE acionava os martelos dos sinos. Música gravada, em tamanho de prédio.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O relógio musical</div>
+        <div class="desc">Os relojoeiros encolheram o cilindro pra dentro de relógios de mesa e de igreja. Menor, mas ainda caro e complicado: cada nota exigia sino ou apito.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A sacada de Favre</div>
+        <div class="desc">Trocar sinos e martelos por um <b>pente de lâminas de aço afinadas</b>: o pino só precisa dedilhar a lâmina. De repente, a música gravada coube no bolso.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · o pente -->
+  <section class="step">
+    <div class="kicker reveal">metade da máquina</div>
+    <h2 class="reveal">O pente: cada lâmina, uma nota</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPente">Ligue o som e clique nas lâminas: quanto mais curta a lâmina, mais aguda a nota.</div>
+      <div class="pente" id="pente"></div>
+      <div class="pente-base" style="width:300px"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnEscala">tocar a escala inteira</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · o cilindro -->
+  <section class="step">
+    <div class="kicker reveal">a outra metade</div>
+    <h2 class="reveal">O cilindro: a música gravada em pinos</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legCilindro">Cada pino diz QUANDO e QUAL lâmina dedilhar. Gire o cilindro e ouça a melodia gravada.</div>
+      <div class="cilindro-wrap">
+        <div class="cilindro-notas" id="notasCilindro"></div>
+        <div id="cilindroDemo"></div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnGirarDemo">girar o cilindro</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · trocar o cilindro -->
+  <section class="step">
+    <div class="kicker reveal">a consequência</div>
+    <h2 class="reveal">Troca o cilindro, troca a música</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legTroca">A MESMA máquina, o MESMO pente. Só muda o cilindro de pinos. Ouça as duas.</div>
+      <div class="cilindro-wrap">
+        <div class="cilindro-notas" id="notasTroca"></div>
+        <div id="cilindroTroca"></div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnMelodiaA">cilindro A (Frei Martinho)</button>
+        <button class="btn-mini cheio" id="btnMelodiaB">cilindro B (Ode à Alegria)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Sua vez: grave a melodia no cilindro</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">Pause o áudio. Coloque os pinos pra gravar o alvo (Brilha Brilha Estrelinha) e gire pra conferir de ouvido.</div>
+      <div class="lado-a-lado">
+        <div>
+          <div class="cilindro-wrap">
+            <div class="cilindro-notas" id="notasPratica"></div>
+            <div id="cilindroPratica"></div>
+          </div>
+          <div class="cilindro-rotulo">seu cilindro</div>
+        </div>
+        <div>
+          <div id="alvoPratica"></div>
+          <div class="cilindro-rotulo">o alvo</div>
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnGirarPratica">girar o meu cilindro</button>
+        <button class="btn-mini" id="btnOuvirAlvo">ouvir o alvo</button>
+        <button class="btn-mini" id="btnLimparPratica">tirar todos os pinos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">A primeira mídia de bolso</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">A febre suíça</div>
+        <div class="desc">De 1830 a 1860 a caixa de música virou indústria na Suíça, com mecanismos cada vez maiores e músicas mais longas. Vilarejos inteiros, como Sainte-Croix, viviam disso.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O disco trocável</div>
+        <div class="desc">Em 1885 vieram as caixas de DISCO (Polyphon, Symphonion): discos de metal prensados aos milhares, baratos, vendidos separados. Compre a máquina uma vez, compre músicas pra sempre.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A limitação</div>
+        <div class="desc">Ela toca sempre igual e não decide nada. Pino e furo guardam informação — mas ninguém ainda tinha juntado isso com uma máquina que CALCULA. O inglês que sonhou essa junção é o próximo episódio: a Máquina Analítica de Babbage.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- som de caixa de musica (Web Audio) ----------
+// notas do pente, da grave pra aguda
+const NOTAS = [
+  { nome: 'DO', freq: 523.25 },
+  { nome: 'RE', freq: 587.33 },
+  { nome: 'MI', freq: 659.25 },
+  { nome: 'FA', freq: 698.46 },
+  { nome: 'SOL', freq: 783.99 },
+  { nome: 'LA', freq: 880.00 },
+  { nome: 'SI', freq: 987.77 },
+  { nome: 'DO+', freq: 1046.50 },
+];
+let ctxAudio = null;
+function audio() {
+  if (!ctxAudio) ctxAudio = new (window.AudioContext || window.webkitAudioContext)();
+  if (ctxAudio.state === 'suspended') ctxAudio.resume();
+  return ctxAudio;
+}
+function tocaNota(freq) {
+  const ctx = audio();
+  const agora = ctx.currentTime;
+  const ganho = ctx.createGain();
+  ganho.gain.setValueAtTime(0.001, agora);
+  ganho.gain.exponentialRampToValueAtTime(0.35, agora + 0.008);
+  ganho.gain.exponentialRampToValueAtTime(0.0001, agora + 1.1);
+  ganho.connect(ctx.destination);
+  // fundamental + um harmonico metalico fraco: timbre de lamina dedilhada
+  const osc1 = ctx.createOscillator();
+  osc1.type = 'sine';
+  osc1.frequency.value = freq;
+  osc1.connect(ganho);
+  const ganho2 = ctx.createGain();
+  ganho2.gain.setValueAtTime(0.12, agora);
+  ganho2.gain.exponentialRampToValueAtTime(0.0001, agora + 0.35);
+  ganho2.connect(ctx.destination);
+  const osc2 = ctx.createOscillator();
+  osc2.type = 'sine';
+  osc2.frequency.value = freq * 4;
+  osc2.connect(ganho2);
+  osc1.start(agora); osc2.start(agora);
+  osc1.stop(agora + 1.2); osc2.stop(agora + 0.4);
+}
+
+// ---------- tela 4: o pente ----------
+const pente = document.getElementById('pente');
+const legPente = document.getElementById('legPente');
+const laminas = [];
+NOTAS.forEach((n, i) => {
+  const b = document.createElement('button');
+  b.className = 'lamina';
+  const haste = document.createElement('span');
+  haste.className = 'haste';
+  haste.style.height = (86 - i * 7) + 'px';
+  const rot = document.createElement('span');
+  rot.className = 'nota';
+  rot.textContent = n.nome;
+  b.append(haste, rot);
+  b.addEventListener('click', () => plange(i));
+  pente.appendChild(b);
+  laminas.push(b);
+});
+function plange(i) {
+  tocaNota(NOTAS[i].freq);
+  laminas[i].classList.add('vibra');
+  setTimeout(() => laminas[i].classList.remove('vibra'), 380);
+}
+const btnEscala = document.getElementById('btnEscala');
+btnEscala.addEventListener('click', () => {
+  btnEscala.disabled = true;
+  NOTAS.forEach((_, i) => setTimeout(() => {
+    plange(i);
+    if (i === NOTAS.length - 1) {
+      btnEscala.disabled = false;
+      legPente.innerHTML = 'oito lâminas afinadas: o <b>teclado</b> da caixa. Falta quem toque: o cilindro.';
+    }
+  }, 300 * i));
+});
+
+// ---------- fabrica de cilindros (grade nota x tempo) ----------
+// linhas na tela: da aguda (topo) pra grave (base) -> indice de nota invertido
+function rotulosNotas(elId) {
+  const raiz = document.getElementById(elId);
+  for (let l = NOTAS.length - 1; l >= 0; l--) {
+    const s = document.createElement('span');
+    s.textContent = NOTAS[l].nome;
+    raiz.appendChild(s);
+  }
+}
+function criaCilindro(elId, colunas, opts = {}) {
+  const raiz = document.getElementById(elId);
+  raiz.className = 'cilindro' + (opts.travado ? ' travado' : '') + (opts.mini ? ' mini' : '');
+  const celulas = []; // celulas[notaIdx][col]
+  for (let n = 0; n < NOTAS.length; n++) celulas.push(new Array(colunas).fill(null));
+  for (let l = NOTAS.length - 1; l >= 0; l--) {
+    const linha = document.createElement('div');
+    linha.className = 'linha-c';
+    for (let c = 0; c < colunas; c++) {
+      const cel = document.createElement('button');
+      cel.className = 'celula';
+      cel.setAttribute('aria-label', NOTAS[l].nome + ' tempo ' + (c + 1));
+      if (!opts.travado && !opts.mini) {
+        cel.addEventListener('click', () => cel.classList.toggle('pino'));
+      }
+      linha.appendChild(cel);
+      celulas[l][c] = cel;
+    }
+    raiz.appendChild(linha);
+  }
+  function poePinos(melodia) { // melodia: array de colunas -> notaIdx ou null
+    celulas.flat().forEach((c) => c.classList.remove('pino'));
+    melodia.forEach((notaIdx, col) => {
+      if (notaIdx !== null && notaIdx !== undefined) celulas[notaIdx][col].classList.add('pino');
+    });
+  }
+  function limpa() { celulas.flat().forEach((c) => c.classList.remove('pino', 'varre')); }
+  function gira(aoFim, ritmo) {
+    const passo = ritmo || 430;
+    for (let c = 0; c < colunas; c++) {
+      setTimeout(() => {
+        celulas.forEach((linha) => linha.forEach((cel, cc) => cel.classList.toggle('varre', cc === c)));
+        for (let n = 0; n < NOTAS.length; n++) {
+          if (celulas[n][c].classList.contains('pino')) tocaNota(NOTAS[n].freq);
+        }
+        if (c === colunas - 1) setTimeout(() => {
+          celulas.flat().forEach((cel) => cel.classList.remove('varre'));
+          if (aoFim) aoFim();
+        }, passo);
+      }, passo * c);
+    }
+  }
+  function melodiaAtual() {
+    const m = [];
+    for (let c = 0; c < colunas; c++) {
+      let achou = null;
+      for (let n = 0; n < NOTAS.length; n++) {
+        if (celulas[n][c].classList.contains('pino')) { achou = n; break; }
+      }
+      m.push(achou);
+    }
+    return m;
+  }
+  function conta() { return celulas.flat().filter((c) => c.classList.contains('pino')).length; }
+  return { poePinos, limpa, gira, melodiaAtual, conta };
+}
+
+// melodias (indices em NOTAS): DO=0 RE=1 MI=2 FA=3 SOL=4 LA=5 SI=6 DO+=7
+const FREI_MARTINHO = [0, 1, 2, 0, 0, 1, 2, 0];
+const ODE_ALEGRIA = [2, 2, 3, 4, 4, 3, 2, 1];
+const BRILHA = [0, 0, 4, 4, 5, 5, 4, null];
+
+// ---------- tela 5: cilindro demo ----------
+rotulosNotas('notasCilindro');
+const cilDemo = criaCilindro('cilindroDemo', 8, { travado: true });
+cilDemo.poePinos(FREI_MARTINHO);
+const legCilindro = document.getElementById('legCilindro');
+const btnGirarDemo = document.getElementById('btnGirarDemo');
+btnGirarDemo.addEventListener('click', () => {
+  btnGirarDemo.disabled = true;
+  legCilindro.innerHTML = 'o cilindro gira; cada pino dedilha a lâmina da sua linha, no seu tempo...';
+  cilDemo.gira(() => {
+    legCilindro.innerHTML = 'reconheceu? <b>Frei Martinho</b>, gravado em 8 pinos. Pino = nota gravada em QUANDO e QUAL.';
+    btnGirarDemo.disabled = false;
+  });
+});
+
+// ---------- tela 6: trocar o cilindro ----------
+rotulosNotas('notasTroca');
+const cilTroca = criaCilindro('cilindroTroca', 8, { travado: true });
+cilTroca.poePinos(FREI_MARTINHO);
+const legTroca = document.getElementById('legTroca');
+const btnMelodiaA = document.getElementById('btnMelodiaA');
+const btnMelodiaB = document.getElementById('btnMelodiaB');
+function trocaEToca(melodia, nome, btn) {
+  btnMelodiaA.disabled = true; btnMelodiaB.disabled = true;
+  cilTroca.poePinos(melodia);
+  legTroca.innerHTML = 'cilindro trocado: <b>' + nome + '</b> entrou na máquina...';
+  setTimeout(() => cilTroca.gira(() => {
+    legTroca.innerHTML = 'mesma máquina, mesmo pente, outra música: só o <b>cilindro</b> mudou.';
+    btnMelodiaA.disabled = false; btnMelodiaB.disabled = false;
+  }), 700);
+}
+btnMelodiaA.addEventListener('click', () => trocaEToca(FREI_MARTINHO, 'Frei Martinho', btnMelodiaA));
+btnMelodiaB.addEventListener('click', () => trocaEToca(ODE_ALEGRIA, 'Ode à Alegria', btnMelodiaB));
+
+// ---------- tela 7: pratica ----------
+rotulosNotas('notasPratica');
+const cilPratica = criaCilindro('cilindroPratica', 8, {});
+const alvoPratica = criaCilindro('alvoPratica', 8, { mini: true, travado: true });
+alvoPratica.poePinos(BRILHA);
+const legPratica = document.getElementById('legPratica');
+const btnGirarPratica = document.getElementById('btnGirarPratica');
+const btnOuvirAlvo = document.getElementById('btnOuvirAlvo');
+btnGirarPratica.addEventListener('click', () => {
+  btnGirarPratica.disabled = true;
+  cilPratica.gira(() => {
+    btnGirarPratica.disabled = false;
+    const minha = cilPratica.melodiaAtual().join(',');
+    const alvo = BRILHA.join(',');
+    if (minha === alvo && cilPratica.conta() === BRILHA.filter((n) => n !== null).length) {
+      legPratica.classList.add('ok');
+      legPratica.innerHTML = '<b>Brilha Brilha Estrelinha! Você gravou uma música numa máquina. Pode voltar o áudio e apertar o Próximo.</b>';
+    } else {
+      legPratica.classList.remove('ok');
+      legPratica.innerHTML = 'ainda não é o alvo: compare com a grade ao lado (ou ouça o alvo de novo), ajuste os pinos e gire.';
+    }
+  });
+});
+btnOuvirAlvo.addEventListener('click', () => {
+  btnOuvirAlvo.disabled = true;
+  alvoPratica.gira(() => { btnOuvirAlvo.disabled = false; });
+});
+document.getElementById('btnLimparPratica').addEventListener('click', () => {
+  cilPratica.limpa();
+  legPratica.classList.remove('ok');
+  legPratica.innerHTML = 'Pause o áudio. Coloque os pinos pra gravar o alvo (Brilha Brilha Estrelinha) e gire pra conferir de ouvido.';
+});
+</script>
+</body>
+</html>

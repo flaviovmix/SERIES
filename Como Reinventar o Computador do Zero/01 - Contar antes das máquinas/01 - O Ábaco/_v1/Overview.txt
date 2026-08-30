@@ -1,0 +1,25 @@
+O ABACO - CONTEXTO
+===================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa CONTAR ANTES DAS MAQUINAS, a primeira etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de aproximadamente 8000 a.C. a 2700 a.C., e no fim salta pro presente, porque o equipamento continua em uso.
+
+O episodio nao comeca no abaco. Comeca cinco mil anos antes dele, com o problema que ele veio resolver, e mostra a linha inteira ate o objeto aparecer.
+
+Por volta de 8000 a.C., com a agricultura, aparecem no Crescente Fertil pequenas fichas de argila em formas geometricas: cone, esfera, disco. Cada ficha vale uma coisa contada. Uma ovelha sai do curral, uma ficha vai pra mao. Isso e correspondencia um a um: funciona sem que exista numero, e sem que a pessoa saiba contar. O limite aparece quando o rebanho cresce: cinquenta fichas nao cabem na mao, e ninguem sabe quantas sao so de olhar.
+
+Por volta de 3500 a.C., as fichas passam a ser guardadas dentro de bullae, bolas ocas de argila lacradas, com as formas das fichas impressas por fora e o selo do dono por cima. A conta vira registro: dura, viaja com a mercadoria e nao da pra adulterar sem quebrar o lacre.
+
+Por volta de 3100 a.C., alguem repara que, se as formas ja estao impressas por fora, as fichas de dentro sobram. A impressao passa pra argila plana e a ficha vira marca. E dai que nasce a escrita cuneiforme: da contabilidade, nao da literatura. Os primeiros textos da humanidade sao recibos.
+
+Por volta de 2700 a.C., na Sumeria, aparece o abaco: uma tabua com colunas riscadas onde as pedras voltam a ser usadas, so que agora a pedra nao vale mais uma ovelha. Ela vale o que a coluna disser. Escrever numero ja dava, a cuneiforme e mais antiga que o abaco: o que nao existia era jeito de calcular com numero grande. O abaco sumerio contava de sessenta em sessenta; a versao de dez em dez e a que sobreviveu nas escolas, e e a que a animacao usa.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 13 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. As telas 2 a 5 sao cenas ilustradas da linha do tempo (reconstituicao realista, nao fotografia de epoca). Duas telas sao demonstracoes animadas (o valor das casas e o vai-um), duas sao demonstracoes passo a passo de contas (2 x 24 e 3 x 24) e duas sao praticas em que o ouvinte mexe no abaco da tela. Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Detalhe importante do equipamento: cada haste da animacao tem NOVE contas, nao dez. O vai-um acontece justamente porque a decima unidade nao cabe: as nove voltam pro lugar e nasce uma conta na casa de cima. Nove mais um da dez.
+
+Ao final o ouvinte entende de onde o abaco veio (uma linha de cinco mil anos que comeca em ficha de argila e passa pela invencao da escrita), o que ele e e por que nasceu, como o valor posicional funciona (cada haste vale dez vezes a de baixo), o movimento do vai-um, como fazer uma conta real nele com e sem transporte, as variantes que existem ate hoje (abaco romano de bolso, suanpan chines, soroban japones) e a limitacao que motiva o proximo equipamento: alguem precisa mover as pedras.
+
+Por que importa: o abaco e a primeira vez que a humanidade tirou uma conta da cabeca e botou em pecas fisicas que andam. Essa mesma ideia, levada ao extremo, e o computador moderno.
+
+Use este contexto apenas como apoio.

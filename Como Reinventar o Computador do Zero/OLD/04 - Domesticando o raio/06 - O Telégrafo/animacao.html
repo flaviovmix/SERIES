@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Telégrafo — Equipamento 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(36px,7vw,72px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:760px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:620px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ficha do equipamento */
+.ficha{
+  display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:880px;
+}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:270px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+
+/* painel padrao */
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:780px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5;
+  text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* circuito do telegrafo */
+.circuito svg{display:block; margin:0 auto}
+.fio{stroke:var(--line); stroke-width:3; fill:none}
+.fio.ligado{stroke:var(--accent); stroke-width:4}
+.martelo{transition:transform .08s linear; transform-origin:16px 4px}
+.martelo.bate{transform:rotate(14deg)}
+
+/* morse */
+.morse-linha{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:30px; font-weight:600;
+  min-height:44px; letter-spacing:.16em; color:var(--accent); display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap;
+}
+.morse-letras{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:26px; font-weight:600; letter-spacing:.3em;
+  min-height:38px; color:var(--ink);
+}
+.tabela-morse{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:8px}
+.tabela-morse .tm{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px;
+  border:1px solid var(--line); border-radius:8px; padding:6px 12px; color:var(--sub);
+}
+.tabela-morse .tm b{color:var(--accent); font-weight:600}
+.tabela-morse .tm.on{border-color:var(--accent); color:var(--accent)}
+
+/* rele */
+.rele-svg{display:block; margin:0 auto}
+.sinal-fraco{opacity:.35}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+.btn-tecla{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:14px; font-weight:600; letter-spacing:.08em;
+  background:var(--accent); color:var(--bg); border:none; border-radius:12px;
+  padding:16px 26px; cursor:pointer; text-transform:uppercase; box-shadow:0 4px 0 #5e3b14;
+  transition:transform .06s, box-shadow .06s;
+}
+.btn-tecla:active{transform:translateY(3px); box-shadow:0 1px 0 #5e3b14}
+
+.mundo{display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; justify-content:center; max-width:880px}
+.mundo .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; width:250px; text-align:left;
+}
+.mundo .nome{font-size:18px; font-weight:600}
+.mundo .desc{font-size:13px; color:var(--sub); line-height:1.5; margin-top:6px}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600;
+  transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 10px}
+  .morse-linha{font-size:22px}
+  .morse-letras{font-size:20px}
+  .tabela-morse .tm{font-size:11px; padding:5px 8px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  .btn-tecla{padding:12px 18px; font-size:12px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 10 <span class="dot">·</span> O TELÉGRAFO</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 10 · série equipamentos</div>
+    <h1 class="reveal">O Telégrafo</h1>
+    <p class="lede reveal">A Analítica ficou no papel porque engrenagem é lenta. O salto seguinte
+    da história foi outro: a informação largou as engrenagens e virou <b>eletricidade</b> —
+    atravessando países num piscar. Ligue o som: aqui você vai <b>transmitir de verdade</b>.
+    Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">Telégrafo elétrico: uma tecla, um fio, um eletroímã — e um código pra virar mensagem.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Cooke e Wheatstone na Inglaterra (1837); Samuel Morse e Alfred Vail nos EUA — demonstração em 1838, linha Washington-Baltimore em 1844.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Mensagem viajava na velocidade do cavalo ou do navio. E o trem, recém-nascido, precisava de avisos MAIS rápidos que o próprio trem.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · antes dele -->
+  <section class="step">
+    <div class="kicker reveal">antes do fio</div>
+    <h2 class="reveal">A informação já tentava correr</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">O telégrafo de torres</div>
+        <div class="desc">França, 1794: as torres de Chappe, com braços mecânicos articulados, repetiam sinais de torre em torre. Paris a Lille em minutos — uma revolução.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O problema dele</div>
+        <div class="desc">Dependia de um operador OLHANDO a torre vizinha com luneta. De noite, com chuva ou neblina: rede fora do ar.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A ideia nova</div>
+        <div class="desc">E se, em vez de luz e olho, a mensagem viajasse por um FIO, como corrente elétrica? Sem noite, sem neblina, na velocidade do raio.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · como funciona -->
+  <section class="step">
+    <div class="kicker reveal">como funciona</div>
+    <h2 class="reveal">Uma tecla, um fio, um eletroímã</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legTecla">Segure a tecla: a corrente fecha, o eletroímã do outro lado puxa o martelinho. Toque curto e toque longo já são duas coisas diferentes.</div>
+      <div class="circuito">
+        <svg width="480" height="120" viewBox="0 0 480 120">
+          <path id="fioCircuito" class="fio" d="M60,80 L60,50 L420,50 L420,72"/>
+          <rect x="30" y="80" width="60" height="16" rx="5" fill="var(--accent2)"/>
+          <text x="60" y="112" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--sub)">A TECLA</text>
+          <rect x="396" y="72" width="48" height="22" rx="4" fill="var(--accent)"/>
+          <g id="martelo" class="martelo" transform="translate(404,58)">
+            <rect x="0" y="0" width="32" height="7" rx="3" fill="var(--ink)"/>
+          </g>
+          <text x="420" y="112" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--sub)">O ELETROÍMÃ</text>
+        </svg>
+      </div>
+      <div class="botoes">
+        <button class="btn-tecla" id="teclaMorse">segure e solte</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · o codigo -->
+  <section class="step">
+    <div class="kicker reveal">o idioma do fio</div>
+    <h2 class="reveal">Morse: pontos e traços</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legCodigo">Toque curto = ponto. Toque longo = traço. Cada letra é uma receita dos dois. Aperte e ouça o clássico.</div>
+      <div class="morse-linha" id="morseDemo">&nbsp;</div>
+      <div class="tabela-morse" id="tabelaDemo"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnSOS">transmitir S O S</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · o rele -->
+  <section class="step">
+    <div class="kicker reveal">a peça que ninguém esperava</div>
+    <h2 class="reveal">O relé: o sinal que renasce</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legRele">Em fios longos o sinal chega fraquinho. A solução gerou a peça mais importante do resto da série. Aperte e veja.</div>
+      <svg class="rele-svg" width="560" height="120" viewBox="0 0 560 120">
+        <text x="60" y="30" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--sub)">ESTAÇÃO A</text>
+        <rect x="30" y="40" width="60" height="24" rx="5" fill="var(--accent2)"/>
+        <path id="fioA" class="fio" d="M90,52 L250,52"/>
+        <g id="releG">
+          <rect x="250" y="36" width="60" height="34" rx="6" fill="none" stroke="var(--accent)" stroke-width="3"/>
+          <text x="280" y="30" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--accent)">O RELÉ</text>
+          <circle id="bobina" cx="268" cy="53" r="8" fill="var(--line)"/>
+          <rect id="chave" x="284" y="48" width="18" height="6" rx="2" fill="var(--ink)" transform="rotate(-18 284 51)"/>
+        </g>
+        <path id="fioB" class="fio" d="M310,52 L470,52"/>
+        <rect x="470" y="40" width="60" height="24" rx="5" fill="var(--accent2)"/>
+        <text x="500" y="30" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--sub)">ESTAÇÃO B</text>
+        <text id="rotFraco" x="170" y="76" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="var(--sub)">sinal fraquinho</text>
+        <text id="rotForte" x="390" y="76" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="var(--sub)">bateria nova, sinal forte</text>
+      </svg>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnRele">mandar um sinal pela linha</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Sua vez: transmita A-D-A</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">Pause o áudio. Transmita <b>ADA</b>: monte cada letra com ponto e traço, e feche a letra no botão. A colinha está aí embaixo.</div>
+      <div class="morse-linha" id="morseAtual">&nbsp;</div>
+      <div class="morse-letras" id="letrasPratica">&nbsp;</div>
+      <div class="tabela-morse" id="tabelaPratica"></div>
+      <div class="botoes">
+        <button class="btn-tecla" id="btnPonto">· ponto</button>
+        <button class="btn-tecla" id="btnTraco">− traço</button>
+        <button class="btn-mini cheio" id="btnFechaLetra">fechar a letra</button>
+        <button class="btn-mini" id="btnLimparMorse">limpar tudo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">O mundo ficou pequeno</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">O cabo no oceano</div>
+        <div class="desc">1858: um cabo cruzou o Atlântico (durou semanas). 1866: cruzou de vez. Europa e América passaram de semanas de navio pra minutos de fio.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A rede vitoriana</div>
+        <div class="desc">Estações, operadores, notícias e mercados pulsando em código pelo planeta: uma internet de pontos e traços, 130 anos antes da nossa.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A limitação</div>
+        <div class="desc">O telégrafo transmite, mas não calcula nem lembra. E do outro lado do fio, os escritórios afundavam em dados: um censo inteiro esperando alguém contar. Próximo equipamento: as máquinas de Hollerith.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- som (Web Audio): tom de telegrafo ----------
+let ctxAudio = null;
+let oscSeguro = null, ganhoSeguro = null;
+function audio() {
+  if (!ctxAudio) ctxAudio = new (window.AudioContext || window.webkitAudioContext)();
+  if (ctxAudio.state === 'suspended') ctxAudio.resume();
+  return ctxAudio;
+}
+function bip(duracaoMs) {
+  const ctx = audio();
+  const agora = ctx.currentTime;
+  const g = ctx.createGain();
+  g.gain.setValueAtTime(0.0001, agora);
+  g.gain.exponentialRampToValueAtTime(0.3, agora + 0.006);
+  g.gain.setValueAtTime(0.3, agora + duracaoMs / 1000 - 0.01);
+  g.gain.exponentialRampToValueAtTime(0.0001, agora + duracaoMs / 1000);
+  g.connect(ctx.destination);
+  const o = ctx.createOscillator();
+  o.type = 'sine';
+  o.frequency.value = 620;
+  o.connect(g);
+  o.start(agora);
+  o.stop(agora + duracaoMs / 1000 + 0.02);
+}
+function ligaTom() {
+  const ctx = audio();
+  ganhoSeguro = ctx.createGain();
+  ganhoSeguro.gain.setValueAtTime(0.0001, ctx.currentTime);
+  ganhoSeguro.gain.exponentialRampToValueAtTime(0.3, ctx.currentTime + 0.008);
+  ganhoSeguro.connect(ctx.destination);
+  oscSeguro = ctx.createOscillator();
+  oscSeguro.type = 'sine';
+  oscSeguro.frequency.value = 620;
+  oscSeguro.connect(ganhoSeguro);
+  oscSeguro.start();
+}
+function desligaTom() {
+  if (!oscSeguro) return;
+  const ctx = audio();
+  ganhoSeguro.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.02);
+  oscSeguro.stop(ctx.currentTime + 0.04);
+  oscSeguro = null; ganhoSeguro = null;
+}
+
+// ---------- tela 4: a tecla ----------
+const tecla = document.getElementById('teclaMorse');
+const martelo = document.getElementById('martelo');
+const fioCircuito = document.getElementById('fioCircuito');
+const legTecla = document.getElementById('legTecla');
+let apertadaEm = 0;
+function aperta() {
+  if (oscSeguro) return;
+  apertadaEm = Date.now();
+  ligaTom();
+  martelo.classList.add('bate');
+  fioCircuito.classList.add('ligado');
+}
+function solta() {
+  if (!oscSeguro) return;
+  desligaTom();
+  martelo.classList.remove('bate');
+  fioCircuito.classList.remove('ligado');
+  const dur = Date.now() - apertadaEm;
+  legTecla.innerHTML = dur < 220
+    ? 'toque curto: um <b>PONTO</b> viajou pelo fio'
+    : 'toque longo: um <b>TRAÇO</b> viajou pelo fio';
+}
+tecla.addEventListener('mousedown', aperta);
+tecla.addEventListener('mouseup', solta);
+tecla.addEventListener('mouseleave', solta);
+tecla.addEventListener('touchstart', (e) => { e.preventDefault(); aperta(); });
+tecla.addEventListener('touchend', (e) => { e.preventDefault(); solta(); });
+
+// ---------- morse ----------
+const MORSE = { A: '.-', D: '-..', E: '.', T: '-', N: '-.', O: '---', S: '...' };
+function tocaSequencia(simbolos, aoCada, aoFim) {
+  let t = 0;
+  const eventos = [];
+  simbolos.split('').forEach((s, i) => {
+    eventos.push({ em: t, s, i });
+    t += (s === '.' ? 140 : 400) + 160;
+  });
+  eventos.forEach((ev) => setTimeout(() => {
+    bip(ev.s === '.' ? 120 : 360);
+    if (aoCada) aoCada(ev.s, ev.i);
+  }, ev.em));
+  setTimeout(() => { if (aoFim) aoFim(); }, t + 150);
+}
+
+// ---------- tela 5: SOS ----------
+const morseDemo = document.getElementById('morseDemo');
+const tabelaDemo = document.getElementById('tabelaDemo');
+[['E', '·'], ['T', '−'], ['S', '· · ·'], ['O', '− − −'], ['A', '· −'], ['N', '− ·']].forEach(([l, c]) => {
+  const s = document.createElement('span');
+  s.className = 'tm';
+  s.innerHTML = l + ' <b>' + c + '</b>';
+  s.dataset.letra = l;
+  tabelaDemo.appendChild(s);
+});
+const legCodigo = document.getElementById('legCodigo');
+const btnSOS = document.getElementById('btnSOS');
+btnSOS.addEventListener('click', () => {
+  btnSOS.disabled = true;
+  morseDemo.textContent = '';
+  const letras = ['S', 'O', 'S'];
+  let li = 0;
+  const proximaLetra = () => {
+    if (li >= letras.length) {
+      legCodigo.innerHTML = '<b>S O S</b> transmitido. Repare na economia: E, a letra mais comum, e um ponto so. Codigo esperto gasta menos fio.';
+      btnSOS.disabled = false;
+      [...tabelaDemo.children].forEach((c) => c.classList.remove('on'));
+      return;
+    }
+    const letra = letras[li];
+    [...tabelaDemo.children].forEach((c) => c.classList.toggle('on', c.dataset.letra === letra));
+    tocaSequencia(MORSE[letra], (s) => {
+      morseDemo.textContent += (s === '.' ? '·' : '−');
+    }, () => {
+      morseDemo.textContent += '   ';
+      li++;
+      setTimeout(proximaLetra, 350);
+    });
+  };
+  proximaLetra();
+});
+
+// ---------- tela 6: o rele ----------
+const legRele = document.getElementById('legRele');
+const btnRele = document.getElementById('btnRele');
+const fioA = document.getElementById('fioA');
+const fioB = document.getElementById('fioB');
+const bobina = document.getElementById('bobina');
+const chave = document.getElementById('chave');
+btnRele.addEventListener('click', () => {
+  btnRele.disabled = true;
+  fioA.classList.add('ligado'); fioA.classList.add('sinal-fraco');
+  legRele.innerHTML = 'o sinal sai da estação A ja cansado, fraquinho...';
+  setTimeout(() => {
+    bobina.setAttribute('fill', 'var(--accent)');
+    chave.setAttribute('transform', 'rotate(0 284 51)');
+    bip(140);
+    legRele.innerHTML = 'mas ele so precisa de forca pra puxar o ELETROIMA do rele, que fecha um circuito NOVO, com bateria nova';
+  }, 1500);
+  setTimeout(() => {
+    fioB.classList.add('ligado');
+    legRele.innerHTML = 'e o sinal segue <b>renascido</b> pra estação B. De rele em rele, atravessa um continente';
+  }, 3200);
+  setTimeout(() => {
+    bip(140);
+    legRele.innerHTML = '<b>guarde o rele</b>: eletricidade apertando um interruptor. Uma maquina que aperta os proprios botoes... isso volta JA JA na serie';
+    fioA.classList.remove('ligado', 'sinal-fraco');
+    fioB.classList.remove('ligado');
+    bobina.setAttribute('fill', 'var(--line)');
+    chave.setAttribute('transform', 'rotate(-18 284 51)');
+    btnRele.disabled = false;
+  }, 5200);
+});
+
+// ---------- tela 7: pratica ADA ----------
+const ALVO = 'ADA';
+const morseAtual = document.getElementById('morseAtual');
+const letrasPratica = document.getElementById('letrasPratica');
+const legPratica = document.getElementById('legPratica');
+const tabelaPratica = document.getElementById('tabelaPratica');
+[['A', '· −'], ['D', '− · ·'], ['E', '·'], ['T', '−'], ['N', '− ·'], ['O', '− − −']].forEach(([l, c]) => {
+  const s = document.createElement('span');
+  s.className = 'tm';
+  s.innerHTML = l + ' <b>' + c + '</b>';
+  tabelaPratica.appendChild(s);
+});
+let simbolosAtuais = '';
+let letrasFeitas = '';
+function pintaPratica() {
+  morseAtual.textContent = simbolosAtuais.split('').map((s) => s === '.' ? '·' : '−').join(' ') || ' ';
+  letrasPratica.textContent = letrasFeitas || ' ';
+}
+document.getElementById('btnPonto').addEventListener('click', () => {
+  bip(120); simbolosAtuais += '.'; pintaPratica();
+});
+document.getElementById('btnTraco').addEventListener('click', () => {
+  bip(360); simbolosAtuais += '-'; pintaPratica();
+});
+document.getElementById('btnFechaLetra').addEventListener('click', () => {
+  if (!simbolosAtuais) return;
+  const letra = Object.keys(MORSE).find((l) => MORSE[l] === simbolosAtuais);
+  letrasFeitas += letra || '?';
+  simbolosAtuais = '';
+  pintaPratica();
+  if (letrasFeitas === ALVO) {
+    legPratica.classList.add('ok');
+    legPratica.innerHTML = '<b>A-D-A no fio! Você é operador de telégrafo. Pode voltar o áudio e apertar o Próximo.</b>';
+  } else if (!ALVO.startsWith(letrasFeitas)) {
+    legPratica.classList.remove('ok');
+    legPratica.innerHTML = 'saiu <b>' + letrasFeitas + '</b>... o alvo é ADA. Aperte limpar e transmita de novo.';
+  } else {
+    legPratica.innerHTML = 'letra fechada: <b>' + letrasFeitas + '</b>. Continue.';
+  }
+});
+document.getElementById('btnLimparMorse').addEventListener('click', () => {
+  simbolosAtuais = ''; letrasFeitas = '';
+  pintaPratica();
+  legPratica.classList.remove('ok');
+  legPratica.innerHTML = 'Pause o áudio. Transmita <b>ADA</b>: monte cada letra com ponto e traço, e feche a letra no botão. A colinha está aí embaixo.';
+});
+pintaPratica();
+</script>
+</body>
+</html>

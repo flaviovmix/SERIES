@@ -1,0 +1,15 @@
+POR QUE O IMA GRUDA - CONTEXTO
+==============================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio avulso, que se explica sozinho. Nao depende de nada ouvido antes e nao continua em lugar nenhum. Quem apertar o play sabendo zero sobre o assunto tem que sair entendendo.
+
+Ele existe pra responder as perguntas sobre ima que todo mundo ja fez e ninguem respondeu direito: por que ima gruda em ferro e nao gruda em aluminio, cobre nem ouro; por que as vezes um ima empurra outro em vez de atrair; por que quebrar um ima ao meio nao separa os dois lados e sim cria dois imas completos; por que o ima de geladeira so gruda de um lado; por que um ima perde forca depois de cair ou de esquentar; e por que um ima consegue segurar um papel na geladeira por dez anos sem consumir energia nenhuma.
+
+O episodio inteiro se passa dentro de uma unica analogia: o ferro e feito de milhoes de agulhinhas de bussola. Quando elas estao baguncadas, cada uma cancela a outra e o ferro e ferro comum. Quando estao todas viradas pro mesmo lado, aquilo virou um ima. Todas as respostas do episodio saem dessa imagem, inclusive a da quebra ao meio, e a ultima parte mostra onde a analogia quebra.
+
+Regras duras deste episodio. Primeira: NAO tem cientista, NAO tem data, NAO tem invencao historica e NAO tem nome de pessoa. Segunda: NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio, e nao usar frases tipo "como a gente viu antes". Este audio pode ser ouvido sozinho, fora de qualquer ordem, por alguem que nunca ouviu mais nada. Terceira: o assunto e o ima permanente, aquele que ja e ima sozinho. Ima feito com eletricidade fica de fora, no maximo uma frase dizendo que existe.
+
+Ao final o ouvinte entende o que e um ima por dentro, sabe explicar por que ele gruda em umas coisas e em outras nao, e entende que virar uma agulhinha pra um lado ou pro outro e um jeito de guardar informacao.
+
+Use este contexto apenas como apoio.

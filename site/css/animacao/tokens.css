@@ -1,0 +1,49 @@
+/* tokens da animacao
+   O que a animacao precisa alem dos tokens do site. Depende de css/tokens.css e carrega logo depois dele.
+
+   A paleta e a do site: fundo, superficie, texto, linha e destaque vem de la,
+   inclusive o tema escuro. Aqui fica so o que nenhuma pagina do site usa: a curva
+   das transicoes, o teto de largura do palco, os dois selos, o destaque vivo, a
+   fonte das telas e as sombras dos cards. */
+
+:root {
+  /* movimento */
+  --ease: cubic-bezier(.22, 1, .36, 1);
+
+  /* teto do palco: acima disso a tela centraliza em vez de esticar. 1920 e a
+     largura da tela em que os episodios sao aprovados */
+  --largura: 1920px;
+
+  /* destaque vivo: hover, fio em foco, a conta acesa. 4,7:1 sobre a superficie */
+  --accent-vivo: #157e99;
+
+  /* os dois selos: acerto (meta batida, desafio feito) e alerta (reservado, nenhum
+     episodio usa ainda). Medidos sobre --surface: 5,4:1 e 5,6:1, AA em texto pequeno */
+  --ok:   #177a42;
+  --flag: #b0470b;
+
+  /* a fonte das telas; a mono vem do site (--fonte-mono) */
+  --fonte-animacao: Fraunces, Georgia, "Times New Roman", serif;
+
+  /* sombras, da mais baixa pra mais alta: card parado, card grande, card levantando */
+  --sombra-card:   0 1px 0 var(--line), 0 14px 30px -18px rgba(0, 0, 0, .3);
+  --sombra-alta:   0 1px 0 var(--line), 0 18px 40px -22px rgba(0, 0, 0, .35);
+  --sombra-flutua: 0 1px 0 var(--line), 0 22px 44px -18px rgba(0, 0, 0, .42);
+}
+
+/* o tema escuro do sistema, quando o visitante nao escolheu nada: os selos e o
+   destaque vivo clareiam pra continuar legiveis (7:1 ou mais sobre --surface) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --accent-vivo: #6cc7db;
+    --ok:   #4fc07d;
+    --flag: #f0a060;
+  }
+}
+
+/* o tema escuro escolhido na mao, que precisa ganhar do sistema */
+:root[data-theme="dark"] {
+  --accent-vivo: #6cc7db;
+  --ok:   #4fc07d;
+  --flag: #f0a060;
+}

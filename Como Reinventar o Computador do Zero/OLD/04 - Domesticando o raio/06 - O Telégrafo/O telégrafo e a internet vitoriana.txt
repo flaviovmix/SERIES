@@ -1,0 +1,7 @@
+Titulo: O telégrafo e a internet vitoriana
+Notebook: 01 - SÉRIE-Como Reinventar o Computador do Zero-11 - Equipamentos 10 - O Telégrafo
+
+Descricao:
+Estes documentos apresentam o décimo episódio da série EQUIPAMENTOS, que explora a transição da computação mecânica para a era da eletricidade por meio do telégrafo. O conteúdo detalha as inovações de Cooke, Wheatstone, Morse e Vail, destacando como a informação passou a viajar na velocidade da luz através de fios e do código Morse. As fontes descrevem uma experiência interativa composta por áudio e uma animação em oito telas que ensina conceitos como o funcionamento de eletroímãs, a lógica de economia de sinais e a importância crucial do relé. Essa peça é identificada como o componente fundamental que permitiu a regeneração de sinais em longas distâncias e que futuramente possibilitaria a construção de computadores. O material contextualiza o telégrafo como a internet vitoriana, conectando o mundo em rede décadas antes da tecnologia digital moderna. Por fim, o texto estabelece uma ponte para o próximo tema da série ao apontar que, embora transmitisse dados rapidamente, o sistema ainda não era capaz de processar ou armazenar cálculos.
+
+Link: https://notebook.google.com/notebook/9e6dd8a1-c396-48da-b508-4d20fb693d93

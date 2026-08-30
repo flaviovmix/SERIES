@@ -1,0 +1,7 @@
+Titulo: Grace Hopper e o primeiro compilador
+Notebook: 07-03-Grace Hopper e o compilador
+
+Descricao:
+Os textos apresentam o conteúdo de um episódio da série "Como Reinventar o Computador do Zero", focado na trajetória de Grace Hopper e na invenção do compilador. Entre 1944 e 1959, a computação evoluiu da programação manual em código binário para a criação de ferramentas que traduzem linguagem humana em instruções de máquina. O material destaca marcos como o A-0, o FLOW-MATIC e o surgimento do COBOL, demonstrando como essas inovações tornaram o desenvolvimento de softwares mais acessível e menos suscetível a erros. Além disso, a fonte detalha a biografia de Hopper e esclarece a origem histórica do termo bug na engenharia. O encerramento conecta essa evolução de software à futura transição física das máquinas, que passariam das válvulas para os transistores.
+
+Link: https://notebook.google.com/notebook/14611583-9932-4fb6-8809-41898f821ede

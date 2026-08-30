@@ -1,0 +1,147 @@
+Inicie dizendo: Montando O Computador Completo
+---------------
+
+Este e o quinto e ultimo episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, Turing E A Maquina Universal, cobriu de 1928 a 1936 e terminou com a maquina universal: uma unica maquina que le a tabela de regras escrita na propria fita faz o trabalho de todas as outras. Este episodio fecha a etapa: ensina a maquina no papel a ler codigos.
+
+ESTE EPISODIO COBRE DE 1936 A 1945. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (6), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 9 telas. O audio TEM que pedir "aperte o Proximo" exatamente 8 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio nao tem protagonista humano: e um episodio de bancada, o personagem e a maquina inteira. Ninguem ganha ficha. Raul Rojas e o Intel 8080 aparecem de passagem, como inspiracao, e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Montando O Computador Completo.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O funil: as portas que descobrem qual codigo esta sendo lido vao afunilando as opcoes, cada porta elimina metade, ate sobrar uma. Serve so pra explicar a decodificacao.
+Fora essa, sem analogias. Explicar direto. A fita e o termo do proprio Turing e nao conta como analogia.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: MONTANDO O COMPUTADOR COMPLETO)
+
+Retomar em uma frase onde o episodio passado parou: em 1936 Turing mostrou que uma maquina que le a tabela de regras escrita na propria fita faz o trabalho de todas as outras. Nao precisa de uma maquina por programa.
+
+Dizer o que este episodio faz: fecha a etapa. A maquina no papel ja tem portas, unidade de aritmetica e memoria com endereco; agora ela ganha o resto, aprende a ler codigos e roda o primeiro programa. Dizer o intervalo em voz alta: este episodio cobre de 1936 a 1945, da maquina universal ate o ano em que esse desenho foi escrito com todas as letras num relatorio.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o conjunto de instrucoes, a lista de codigos que a maquina sabe ler e o circuito que faz cada um acontecer. Data: 1936, o ano da ideia de por as regras na fita; o desenho que a serie vai seguir foi escrito com todas as letras em 1945. Lugar: o papel, de novo. Este e um episodio de bancada, sem inventor com ficha: a arquitetura que a serie monta e inspirada num processador dos anos 70, o Intel 8080, e num artigo do pesquisador Raul Rojas sobre computadores universais, e e a menor que da pra explicar inteira.
+
+Motivacao: a pergunta que abriu o episodio passado. Sera que e preciso abrir a maquina e montar circuito novo toda vez que sair um jogo novo? Turing disse que nao, se a maquina souber ler codigos. Entao a motivacao aqui e uma so: fazer a maquina no papel ler codigos da propria memoria e fazer uma coisa diferente pra cada um.
+
+Dizer o plano em uma frase: os estados da maquina de Turing viram circuitos que fazem funcoes diferentes; cada funcao ganha um codigo em binario; o codigo vai pra memoria; e um circuito de controle le o codigo e liga a funcao certa. Quantas funcoes? Cinco bastam.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (AS PECAS NOVAS)
+
+Montar tres pecas.
+
+O acumulador: a unidade de aritmetica do episodio 2 ligada a uma celula de memoria do episodio 3. Em vez de receber dois numeros e devolver a soma, ela recebe um numero por vez e soma ou subtrai esse numero do valor que ja esta guardado na celula. O resultado vai acumulando ali, por isso o nome.
+
+A memoria como fita: varias memorias de 4 bits lado a lado, cada bloco sendo uma celula. Cada celula ganha um endereco, tambem de 4 bits, contado do zero: 0, 1, 2, 3 e assim por diante, ate 15. O endereco funciona com o seletor do episodio 3, so que agora ele escolhe uma celula inteira, nao um bit.
+
+O contador: uma memoria de 4 bits com uns circuitos a mais que sabem somar 1 nela. Ele guarda o endereco da proxima celula que a maquina vai ler. Toda vez que a maquina termina uma leitura, o contador avanca uma casa. Dizer por que ele existe: a ideia secreta e escrever o programa nessa memoria, e alguem precisa apontar em que linha a maquina esta.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (OS CINCO CODIGOS)
+
+Dizer a regra: a memoria so guarda numero binario, entao cada funcao vira um numero de 4 bits. Falar os cinco com calma, com o numero e o que faz.
+
+ADD, 1100: soma ao acumulador o valor guardado num endereco. O endereco vem escrito na celula seguinte a do codigo.
+
+SUB, 1101: a mesma coisa, subtraindo.
+
+SAVE, 0010: guarda o valor do acumulador num endereco, que tambem vem na celula seguinte.
+
+LIMP, 0011: zera o acumulador. Nao precisa de endereco.
+
+MPR, 1010, de mudar para: se o acumulador estiver em zero, troca o valor do contador pelo endereco que vem na celula seguinte, ou seja, faz a maquina pular pra outra linha do programa. Se o acumulador nao estiver em zero, nao faz nada e a maquina segue.
+
+Dizer o que parece pouco e nao e: nao tem multiplicar, nao tem comparar, nao tem imprimir. E com essas cinco a maquina faz tudo que a maquina de Turing faz, como a tela 9 vai mostrar. E reparar num detalhe dos numeros: ADD e SUB comecam com dois 1; SAVE e LIMP comecam com dois 0. Isso nao e por acaso e vai servir na proxima tela.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (COMO A MAQUINA LE UM CODIGO)
+
+Contar o ciclo. Um relogio marca o compasso. A cada batida, a maquina manda energia pra celula cujo endereco esta no contador. Os 4 bits que estao nessa celula saem e entram num conjunto de portas E, OU e NAO cuja unica funcao e descobrir qual dos cinco codigos e aquele.
+
+Usar a analogia autorizada e deixar claro que e analogia: e um funil. Cada porta elimina metade das opcoes ate sobrar uma. Exemplo falado: passando os dois primeiros bits por uma porta E, se a saida for 1 os dois eram 1, e so ADD e SUB comecam assim. Passando os dois ultimos bits por um OU, se a saida for 1 pelo menos um deles era 1, e entre ADD, que termina em 00, e SUB, que termina em 01, so o SUB serve. Duas portas, e o codigo esta identificado. Os outros tres saem do mesmo funil, so que com outras combinacoes de portas: SAVE e LIMP comecam os dois com 00 e se separam pelo ultimo bit, e o MPR, que comeca com 1 e 0, se identifica por essa dupla. No fim, so o circuito da funcao certa recebe energia.
+
+Dizer o que acontece em seguida, codigo por codigo. No ADD, a maquina le a celula seguinte como endereco, manda esse endereco pro seletor, e o seletor puxa o valor daquela celula com um sinal que diz: isso e um numero, soma no acumulador. No SUB, igual, mas o sinal mandado pra unidade de aritmetica e o de subtrair, o mesmo fio do episodio 2. No SAVE, a celula seguinte tambem e endereco, e a maquina liga o MODIFICAR daquela celula pra receber o acumulador. No LIMP, um circuito ja pronto dentro do acumulador zera a celula dele. No MPR, umas portas E conferem se o acumulador esta todo em zero; se estiver, a celula seguinte e lida como endereco e escrita dentro do contador, e o contador acredita que aquela era a proxima linha o tempo todo.
+
+Dizer por que o MPR importa: sem ele a maquina so leria a memoria de cima pra baixo, uma vez. Com ele, o programa pula, e pular condicionado a um resultado e o que separa uma calculadora de um computador.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (UM ADD PASSO A PASSO, TELA INTERATIVA)
+
+Dizer o que vale reparar: um ADD ocupa duas celulas, o codigo e o endereco. O contador avanca duas vezes. E a mesma memoria guarda o codigo, o endereco e o numero que vai ser somado, tudo em 4 bits, sem etiqueta dizendo qual e qual. O que decide se uma celula e codigo ou numero e so o momento em que a maquina chega nela.
+
+Avisar: a tela tem a memoria com um programa curto, o contador, o acumulador e um botao de dar uma batida do relogio. Convide o ouvinte a avancar batida por batida e acompanhar o contador apontando, o codigo sendo reconhecido, a celula seguinte virando endereco e o valor entrando no acumulador.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (LOAD, GOTO E O PRIMEIRO PROGRAMA)
+
+Montar dois codigos a partir dos cinco. LOAD, carregar: um LIMP seguido de um ADD com endereco. Primeiro zera o acumulador, depois soma o valor daquele endereco; resultado, o acumulador fica com uma copia do que estava la. GOTO, va para: um LIMP seguido de um MPR. Como o acumulador acabou de ser zerado, o MPR sempre pula. E o salto incondicional, conhecido de quem programa.
+
+Escrever o primeiro programa de verdade, linha por linha, e dizer que ele e uma repeticao, o que a programacao chama de laco. Linha 0: LOAD do valor guardado num endereco la no fim da memoria, onde esta o 12. Depois: SUB do valor de outro endereco, onde esta o 1; o acumulador vira 11. Depois: SAVE no endereco do 12, que agora passa a guardar 11. Depois: MPR pra um endereco depois do fim do programa; como o acumulador esta em 11, nao e zero, o MPR nao faz nada. Depois: GOTO pra linha 0. E la vai de novo: carrega 11, subtrai 1, guarda 10, testa, volta. Na decima segunda volta o acumulador chega a zero, o MPR finalmente pula, e o programa acaba. Dizer que entre o SAVE e o MPR poderia estar qualquer outro trecho de programa, e ele seria repetido doze vezes.
+
+Dizer a diferenca prometida desde o comeco da etapa. Hardware sao os reles, as portas, o acumulador, o contador, todos os circuitos que a serie montou. Software sao esses codigos, que se combinam de jeitos diferentes pra fazer programas diferentes sem mexer em circuito nenhum. Trocar de programa e escrever outros numeros na memoria.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA: ESCREVA CINCO MENOS DOIS)
+
+Convidar a pausar o audio e resolver na tela: tem a memoria vazia com enderecos, os cinco codigos e dois numeros ja guardados no fim, o 5 num endereco e o 2 em outro.
+
+O objetivo e escrever o programa que faz 5 menos 2 e guarda o resultado num terceiro endereco. Sao quatro codigos: LIMP; ADD e o endereco do 5; SUB e o endereco do 2; SAVE e o endereco do resultado. Contando com os tres enderecos que acompanham, o programa ocupa sete celulas. Quem esquecer o LIMP vai somar o 5 em cima do que tinha antes; quem escrever o numero 5 no lugar do endereco do 5 vai somar o que estiver guardado na celula de numero 5, que e outra coisa.
+
+Dizer o que a pratica ensina antes de mandar voltar: escrever programa e escrever numero na memoria. Nao existe diferenca fisica entre 1100 sendo o codigo ADD e 1100 sendo o numero 12; a maquina trata cada celula conforme a vez em que chega nela. E a fita de Turing de novo, com regra e dado no mesmo lugar.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular a etapa inteira, porque este e o fecho dela: portas E, OU e NAO feitas de rele, e o numero binario; o somador e a unidade de aritmetica que soma e subtrai; o flip-flop, a celula e a memoria com endereco; a maquina de Turing e a prova de que uma maquina que le regras da fita faz o trabalho de todas; e agora o acumulador, o contador, cinco codigos e o primeiro programa com laco.
+
+Fechar a conta com Turing: a maquina de Turing anda uma casa por vez e troca 0 por 1. A maquina no papel salta pela memoria, soma e subtrai numeros de 4 bits e guarda onde quiser. Parece mais forte, mas nao e: as duas sao equivalentes, com uma diferenca so, a fita de Turing e infinita e a memoria daqui e finita. Fora isso, qualquer programa que rode numa roda na outra. A maquina no papel e universal. Se fosse construida, seria tao capaz quanto qualquer computador de hoje, so que mais lenta.
+
+Dizer onde a etapa para: 1945, o ano em que esse desenho, memoria unica guardando codigo e numero, unidade de aritmetica, controle, entrada e saida, foi escrito com todas as letras num relatorio que a proxima etapa vai contar. E dizer o que nao existe ainda: nada disso foi ligado. Nenhum rele fechou. E um computador inteiro no papel.
+
+Gancho: na proxima etapa a serie liga. Em 1941, num apartamento em Berlim, um engenheiro que odiava fazer conta a mao termina uma maquina de 2.600 reles que faz exatamente isso que a serie acabou de desenhar. Quase ninguem fica sabendo, e dois anos depois uma bomba destroi ela.

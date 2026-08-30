@@ -1,0 +1,120 @@
+Inicie dizendo: Do Abaco Ao Transformer
+---------------
+
+Este e o primeiro episodio da serie Como Reinventar o Computador do Zero. Ele nao explica nenhum conceito a fundo: apresenta a serie inteira, o caminho que vem pela frente e onde a historia termina.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 10 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Nas duas telas de PRATICA, convidar o ouvinte a pausar o audio, brincar na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta consegue acompanhar so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A imagem de partida da serie: imaginar que voce voltou no tempo, ou sobreviveu a um apocalipse que destruiu a tecnologia, e precisa reconstruir o mundo moderno. A melhor estrategia e comecar pela ferramenta que ajuda a recriar todas as outras: o computador.
+- Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA)
+
+Apresentar a serie com a imagem de partida: voce perdeu toda a tecnologia e precisa reconstruir tudo do zero. Por onde comecar? Pelo computador, a ferramenta que acelera todas as outras. Esta serie reconstroi o computador peca por peca, na ordem em que as pecas foram inventadas de verdade, e segue ate 2017, quando surgiu o Transformer, a peca que tornou possiveis as IAs de hoje.
+
+Explicar a mecanica do episodio: este audio acompanha uma pagina de animacao com 10 telas. Quando a gente pedir, aperte o botao Proximo. Nas telas de pratica, pause o audio e brinque. Quem nao estiver com a pagina aberta acompanha normal, so ouvindo.
+
+Fechar a tela pedindo: aperte o Proximo.
+
+TELA 2 (A PERGUNTA DA SERIE)
+
+A pergunta central que atravessa a serie inteira: como pedras que a gente move com a mao viraram maquinas que conversam? Nada dentro de um computador e magica: e uma pilha de ideias simples, empilhadas com cuidado ao longo de 2500 anos. Quem acompanhar a serie ate o fim vai entender cada camada dessa pilha e de onde cada uma veio.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (BLOCO 1: O MUNDO ANTES DA ELETRICIDADE)
+
+A tela mostra tres cartoes, cada um com nome, data e motivacao. Apresentar os tres:
+
+- Abaco (Mesopotamia, uns 5500 anos atras). Motivacao: contar rebanho, colheita e imposto sem errar. E a primeira vez que uma conta abstrata vira peca fisica que anda.
+- Pascalina (Blaise Pascal, 1642). Motivacao: um jovem de 19 anos entediado de somar impostos pro pai. A engrenagem passou a fazer o vai-um sozinha.
+- Maquina Analitica (Charles Babbage e Ada Lovelace, 1837 a 1843). Motivacao: trocar a tarefa sem trocar a maquina, usando cartoes furados, ideia emprestada do tear de Jacquard. Ada escreveu o primeiro programa da historia.
+
+Avisar que cada um desses equipamentos ainda vai ganhar episodio proprio na serie. Pedir: aperte o Proximo.
+
+TELA 4 (PRATICA: O ABACO)
+
+Convidar o ouvinte a pausar o audio e praticar: a tela tem um abaco de verdade pra clicar. O desafio e formar o numero 48. Cada haste vale dez vezes a de baixo: unidade, dezena, centena, milhar. Dica falada: 48 sao 4 dezenas e 8 unidades.
+
+Quando terminar de brincar, volte o audio e aperte o Proximo.
+
+TELA 5 (BLOCO 2: A ELETRICIDADE APRENDE A PENSAR)
+
+Tres cartoes na tela:
+
+- Gerador (principio de Faraday, 1832). Motivacao: energia sem braco girando manivela. Ima entra e sai da bobina e nasce a corrente.
+- Rele (patente de Samuel Morse, 1840). Motivacao: o sinal do telegrafo morria na distancia. Virou o interruptor que a propria eletricidade aciona.
+- Portas logicas (Claude Shannon, 1937). Motivacao: a descoberta de que circuito eletrico consegue fazer logica. E, OU e NAO viram pecas de montar.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (PRATICA: ACENDA A LAMPADA)
+
+Convidar a pausar e brincar de novo: duas chaves e uma lampada. No modo E, a lampada so acende com as duas chaves fechadas. No modo OU, uma chave basta. E a logica que vai aparecer de verdade nos episodios 3 e 5.
+
+Quando terminar, volte o audio e aperte o Proximo.
+
+TELA 7 (BLOCO 3: A IDEIA QUE FALTAVA)
+
+A tela mostra uma fita de zeros e uns passando por uma cabeca de leitura. Tres cartoes:
+
+- Maquina de Turing (Alan Turing, 1936). Motivacao: definir o que e um algoritmo. De brinde, provou que UMA maquina pode rodar qualquer programa: a maquina universal.
+- Z3 (Konrad Zuse, 1941). Motivacao: cansado das contas de engenharia, montou com 2600 reles o primeiro computador universal que funcionou de verdade.
+- Transistor (Bell Labs, 1947). Motivacao: um interruptor sem peca se mexendo, silicio que liga e desliga so com voltagem. Menor, mais barato, quase eterno.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (BLOCO 4: O COMPUTADOR SAI DO LABORATORIO)
+
+Tres cartoes:
+
+- Chip e microprocessador (circuito integrado de Kilby e Noyce em 1958; Intel 4004 em 1971). Motivacao: ligar milhoes de transistores a mao era impossivel; a solucao foi gravar tudo numa pastilha so.
+- Computador pessoal (Altair 1975, Apple II 1977, IBM PC 1981). Motivacao: hobbistas querendo o proprio computador em casa, sem pedir hora no mainframe da empresa.
+- Internet (ARPANET 1969, web de Tim Berners-Lee 1991). Motivacao: maquinas distantes conversando entre si; depois, qualquer pessoa publicando pra qualquer pessoa.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (BLOCO 5: A MAQUINA APRENDE)
+
+A tela mostra uma frase com linhas de atencao ligando as palavras. Tres cartoes:
+
+- Redes neurais (perceptron em 1958, invernos nos anos 70 e 80). Motivacao: imitar neuronios pra maquina aprender com exemplos. Prometeu demais, congelou duas vezes.
+- Deep learning (AlexNet, 2012). Motivacao: GPUs de videogame mais uma montanha de dados; a rede finalmente enxerga e a IA descongela de vez.
+- Transformer (paper Attention is All You Need, 2017). Motivacao: ler tudo de uma vez, pesando o que importa (a atencao), em vez de palavra por palavra na fila. Daqui descendem as IAs que conversam, e e aqui que a serie termina.
+
+Pedir: aperte o Proximo.
+
+TELA 10 (ENCERRAMENTO: O MAPA DA SERIE)
+
+A tela mostra o mapa dos 16 episodios. Recapitular em poucas frases: a serie vai da pedra do abaco ao peso da rede neural, na ordem da historia. Cada equipamento vai ganhar o proprio episodio, sempre com nome, data, motivacao e uma pratica como as deste piloto.
+
+Gancho: no proximo episodio a gente comeca do comeco de verdade, Antes da Eletricidade: o abaco, a calculadora de Pascal e a maquina que Ada Lovelace programou no papel.

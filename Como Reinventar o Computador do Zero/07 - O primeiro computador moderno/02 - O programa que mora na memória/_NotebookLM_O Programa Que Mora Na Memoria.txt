@@ -1,0 +1,153 @@
+Inicie dizendo: O Programa Que Mora Na Memoria
+---------------
+
+Este e o segundo episodio da etapa O PRIMEIRO COMPUTADOR MODERNO, a setima etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, As Primeiras Maquinas Que Ligaram, cobriu de 1936 a 1946 e terminou com o ENIAC apresentado ao mundo, calculando rapido e ainda assim precisando de dias de recabeamento pra trocar de conta.
+
+ESTE EPISODIO COBRE DE 1945 A 1949. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 9 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (8), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+FICHA HUMANA. Este episodio tem quatro personagens com ficha: John von Neumann, Freddie Williams, Tom Kilburn e Maurice Wilkes. A ficha de cada um entra na primeira vez que ele e citado e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu. Os dados estao escritos tela a tela abaixo: usar exatamente esses. Herman Goldstine, David Wheeler e Geoff Tootill aparecem de passagem e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Programa Que Mora Na Memoria.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A receita e os ingredientes na mesma prateleira: antes, os ingredientes ficavam na cozinha e a receita ficava pregada na parede da sala; agora os dois ficam na mesma prateleira, e por isso a cozinha consegue trocar de receita sozinha, e ate rasurar a receita enquanto cozinha. Serve so pra explicar programa e dado na mesma memoria.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O PROGRAMA QUE MORA NA MEMORIA)
+
+Retomar em uma frase onde o episodio passado parou: em 1946 ja existiam tres maquinas que faziam conta sozinhas, e a mais rapida delas, o ENIAC, precisava de dias de gente trocando cabo de lugar pra mudar de tarefa. O numero morava dentro da maquina, a ordem morava fora.
+
+Dizer o que este episodio faz: junta os dois no mesmo lugar. Dizer o intervalo em voz alta: este episodio cobre de 1945 a 1949, quatro anos entre um rascunho de relatorio e a primeira maquina que rodou um programa guardado na propria memoria.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o programa armazenado, a ideia de guardar as ordens na mesma memoria onde estao os numeros. Data do documento que descreveu isso: 30 de junho de 1945. Lugar: a Moore School, na Universidade da Pensilvania, a mesma casa do ENIAC.
+
+Motivacao: nao foi filosofia, foi pressa. O ENIAC ainda nem tinha sido apresentado e o pessoal ja estava projetando o sucessor, o EDVAC, porque todo mundo que trabalhava com a maquina sabia do problema: ela calculava em segundos uma coisa que levava dias pra ser preparada.
+
+Ficha humana de John von Neumann. Nasceu Neumann Janos Lajos em 28 de dezembro de 1903 em Budapeste, no Reino da Hungria, que era parte do Imperio Austro-Hungaro e hoje e a Hungria. O pai, Max Neumann, era banqueiro e tinha doutorado em direito; em 1913 o imperador Francisco Jose deu a familia um titulo de nobreza, e e dai que vem o "von" que ele usou depois na Alemanha. Estudou no ginasio luterano Fasori, em Budapeste, um colegio que na mesma epoca formou outros matematicos hungaros conhecidos. Depois fez engenharia quimica no ETH de Zurique, formado em 1926, e no mesmo ano tirou o doutorado em matematica na Universidade de Budapeste. Morreu em 8 de fevereiro de 1957, aos 53 anos, no hospital militar Walter Reed, em Washington.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O PROBLEMA: ORDEM DE UM LADO, NUMERO DO OUTRO)
+
+Explicar o problema com calma, porque o episodio inteiro depende dele. Em qualquer maquina daquela geracao existiam duas coisas separadas. Os numeros, que ficavam guardados dentro da maquina e podiam ser trocados a qualquer momento. E as ordens, ou seja, o programa, que ficavam fora: em fita perfurada no Z3 e no Mark I, em cabo e chave no ENIAC.
+
+Dizer por que isso trava tudo. Primeiro, mudar de tarefa vira trabalho fisico, e nao trabalho de calculo. Segundo, e mais importante, a maquina nao consegue olhar pro proprio programa. Ela nao consegue pular uma ordem dependendo de um resultado sem uma gambiarra de fiacao, nao consegue repetir um pedaco, nao consegue montar uma ordem nova.
+
+Usar a analogia autorizada e deixar claro que e analogia: e como uma cozinha onde os ingredientes ficam na bancada e a receita fica pregada na parede da sala. Pra trocar de prato alguem tem que ir ate a sala, tirar a folha e pregar outra. Se a receita estiver na mesma prateleira dos ingredientes, a propria cozinha alcanca a receita, escolhe uma, pula uma linha, e ate escreve uma linha nova.
+
+Dizer o que a serie ja preparou pra isso: na etapa 6 a memoria com endereco ja foi montada, e a maquina universal do Turing ja tinha mostrado que uma fita pode conter tanto dado quanto instrucao. O que faltava era alguem dizer com todas as letras que a maquina de verdade devia ser construida assim.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O RASCUNHO DE 1945 E A BRIGA DE CREDITO)
+
+O documento se chama First Draft of a Report on the EDVAC, ou seja, primeiro rascunho de um relatorio sobre o EDVAC. Foi escrito por von Neumann e distribuido por Herman Goldstine em 30 de junho de 1945, com 24 copias circulando cinco dias antes.
+
+O que ele descreve: uma maquina em partes bem definidas. Uma unidade aritmetica que faz conta. Uma unidade de controle que manda. Uma memoria. Entrada. Saida. E armazenamento externo. E o ponto central: uma memoria uniforme que guarda tanto os numeros quanto as ordens, no mesmo formato, misturados nos mesmos enderecos. Isso e o que hoje se chama arquitetura de von Neumann, e e como praticamente todo computador que existe funciona ate hoje.
+
+Agora a parte incomoda, que vale contar direito porque a serie ja fez isso com Galvani e Volta. O rascunho circulou com um nome so na capa. Presper Eckert e John Mauchly, os dois do ENIAC, diziam que a ideia do programa armazenado tinha nascido nas reunioes da Moore School antes de von Neumann entrar no projeto, e que ele tinha organizado e escrito numa linguagem formal o que ja estava sendo discutido ali. Von Neumann, do lado dele, era um matematico de primeira linha que de fato deu forma logica a coisa toda e fez o documento existir.
+
+E teve consequencia pratica: como o rascunho foi distribuido publicamente, anos depois a justica americana entendeu que aquilo era divulgacao publica feita mais de um ano antes do pedido de patente, e a patente de Eckert e Mauchly caiu por causa disso.
+
+Dizer o veredito honesto, sem escolher lado: o credito ficou com quem escreveu, e nao com quem discutiu. Isso acontece com frequencia na historia da ciencia. E hoje o nome von Neumann esta grudado numa arquitetura que foi obra de um grupo.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (UMA MEMORIA SO, TELA INTERATIVA)
+
+Explicar o que muda na pratica quando ordem e numero moram juntos.
+
+Primeiro: como tudo esta na memoria e memoria eletronica se escreve em microssegundos, trocar de programa deixa de ser trabalho de eletricista e vira uma escrita. O ENIAC levava dias; uma maquina de programa armazenado leva o tempo de carregar a memoria.
+
+Segundo, e esse e o que abre a computacao de verdade: a maquina pode tratar o proprio programa como dado. Ela pode ler uma ordem, comparar, e decidir pular pra outro endereco. Pode repetir um trecho mudando so um numero. E pode escrever uma ordem nova em cima de um endereco, o que e como os primeiros programas faziam laco antes de existir indice.
+
+Dizer a consequencia estranha, que e verdade: com uma memoria so, nao existe diferenca fisica entre uma ordem e um numero. A mesma sequencia de bits e uma coisa ou outra dependendo apenas de a maquina estar buscando ali uma ordem ou um dado. Isso e poderoso e e tambem a origem de uma familia inteira de erros e de ataques que existem ate hoje.
+
+Avisar: a tela tem uma memoria com poucos enderecos, e cada um guarda uma sequencia de bits. Convide o ouvinte a apontar uma celula e alternar entre ler aquilo como numero e como ordem, e ver o mesmo conteudo virar duas coisas.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (MANCHESTER BABY, 21 DE JUNHO DE 1948)
+
+Do papel pra maquina levou tres anos, e quem chegou primeiro nao foi a Pensilvania, foi a Inglaterra. Em Manchester, um grupo pequeno queria testar se dava pra usar um tubo de raios catodicos, do tipo que ja se usava em radar, como memoria de verdade. A ideia era escrever pontinhos de carga na tela do tubo e ler eles de volta. Isso ficou conhecido como tubo Williams, ou tubo Williams-Kilburn.
+
+Ficha humana de Freddie Williams: nasceu em 26 de junho de 1911 em Romiley, perto de Stockport, na Inglaterra, estudou engenharia em Manchester e depois em Oxford, e trabalhou com radar durante a guerra. Morreu em 11 de agosto de 1977.
+
+Ficha humana de Tom Kilburn: nasceu em 11 de agosto de 1921 em Earlsheaton, perto de Dewsbury, em Yorkshire, na Inglaterra. O pai era escriturario de uma fabrica de la e depois virou secretario da empresa. Estudou na Wheelwright Grammar School e depois no Sidney Sussex College, em Cambridge, entre 1940 e 1942. Morreu em 17 de janeiro de 2001, em Manchester.
+
+Pra provar que a memoria funcionava, eles construiram a menor maquina possivel em volta dela, e por isso ela ficou conhecida como Baby, bebe. Numeros: 32 palavras de 32 bits, o que da mil e vinte e quatro bits de memoria no total. Um conjunto de sete instrucoes. Nada de multiplicacao, nem de soma direta: ela so sabia subtrair e desviar.
+
+Em 21 de junho de 1948 ela rodou um programa de 17 instrucoes escrito por Kilburn, guardado na propria memoria. O programa procurava o maior divisor proprio de 262144, que e dois elevado a 18, testando todos os numeros de cima pra baixo por subtracao repetida. Ele levou cerca de 52 minutos e umas 3 milhoes e meio de operacoes pra responder 131072.
+
+Dizer por que esse resultado bobo importa: a resposta era conhecida de antemao, metade do numero. O que estava sendo testado nao era a matematica, era se um programa podia morar na memoria e ser executado dali. Podia. Esse e o marco.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (EDSAC, 6 DE MAIO DE 1949)
+
+O Baby provou o conceito, mas era uma experiencia de laboratorio. Quem transformou isso em maquina de trabalho foi Cambridge.
+
+Ficha humana de Maurice Wilkes: nasceu em 26 de junho de 1913 em Dudley, na Inglaterra. O pai, Vincent Wilkes, era escriturario da contabilidade da propriedade do Conde de Dudley. Estudou na King Edward VI, em Stourbridge, e depois matematica no St John's College, em Cambridge, onde tirou o doutorado em fisica em 1936. Morreu em 29 de novembro de 2010, aos 97 anos, em Cambridge.
+
+Wilkes leu o rascunho de 1945, foi a um curso na Moore School em 1946 e voltou pra Inglaterra decidido a construir a maquina. O EDSAC rodou pela primeira vez em 6 de maio de 1949. A memoria dele nao era tubo de imagem, era linha de atraso de mercurio: um tubo cheio de mercurio onde o dado circula como pulso sonoro, dando voltas, e vai sendo relido e reescrito. Comecou com 512 palavras.
+
+O que o EDSAC trouxe de novo, e isso pesa mais que a maquina: ele entrou em servico regular, ou seja, virou um servico da universidade que outros pesquisadores usavam pro trabalho deles, com fila de tarefas. Junto veio a sub-rotina, ideia trabalhada por David Wheeler: em vez de reescrever o mesmo trecho de programa toda vez, guardar aquele trecho uma vez e chamar. E veio a primeira biblioteca de rotinas prontas, que ja tinha 87 delas em 1951.
+
+Dizer o que isso significa pra serie: aqui nasce a ideia de reaproveitar codigo escrito por outra pessoa, que e a base de tudo que veio depois.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (PRATICA: RODE O PROGRAMA DO BABY)
+
+Convidar a pausar o audio e resolver na tela: tem uma memoria pequena, um acumulador e um conjunto de poucas instrucoes, do mesmo tipo que o Baby tinha.
+
+O objetivo e achar o maior divisor proprio de um numero pequeno usando so subtracao e desvio, que e exatamente o que o programa de 1948 fazia. Subtrair o candidato do numero repetidas vezes; se sobrar zero, ele divide; se passar do zero, nao divide e passa pro proximo candidato.
+
+Dizer o que a pratica ensina antes de mandar voltar: nenhuma das instrucoes usadas sabe dividir. A divisao aparece porque o programa consegue olhar o proprio resultado e decidir se repete ou se pula. Essa decisao so e possivel porque o programa esta na memoria junto com os numeros.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 9 (ENCERRAMENTO)
+
+Recapitular: em junho de 1945 um rascunho descreveu uma maquina com unidade aritmetica, controle, memoria, entrada e saida, e com uma memoria unica guardando ordem e numero no mesmo formato. O documento saiu com um nome so na capa e isso rendeu uma briga de credito que derrubou a patente do ENIAC. Em junho de 1948 o Baby, em Manchester, rodou 17 instrucoes guardadas num tubo Williams e provou que a ideia funcionava. Em maio de 1949 o EDSAC, em Cambridge, virou servico de verdade e trouxe a sub-rotina e a biblioteca.
+
+Dizer onde o episodio para: 1949. E dizer o que ficou faltando, que e o gancho: a maquina agora guarda o programa, mas esse programa continua sendo escrito por gente, na mao, em numero binario, olhando tabela. Um erro de um digito e uma tarde perdida. Enquanto programar for isso, poucas pessoas no mundo vao programar.
+
+Gancho: no proximo episodio uma matematica da Marinha americana, que ja tinha programado o Mark I durante a guerra, resolve escrever um programa cujo trabalho e traduzir palavra em binario. Ouviram dela que computador nao entende ingles. Ela fez assim mesmo, e chamou aquilo de compilador.

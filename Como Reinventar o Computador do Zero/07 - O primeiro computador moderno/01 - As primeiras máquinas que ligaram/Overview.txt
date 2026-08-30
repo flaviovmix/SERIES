@@ -1,0 +1,15 @@
+AS PRIMEIRAS MAQUINAS QUE LIGARAM - CONTEXTO
+============================================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa O PRIMEIRO COMPUTADOR MODERNO, a setima etapa da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1936 a 1946.
+
+As tres primeiras etapas foram mecanicas e terminaram na Maquina Analitica de Babbage. A quarta domou a eletricidade. A quinta ensinou a eletricidade a representar logica. A sexta montou um computador inteiro no papel: porta logica, somador, memoria, maquina universal de Turing e o conjunto de instrucoes. Tudo isso sem ligar nada na tomada.
+
+Este episodio liga. Cobre as tres primeiras maquinas que existiram de verdade e funcionaram. O Z3, terminado por Konrad Zuse em Berlim em 1941 com 2600 reles, binario, o primeiro computador funcional que pode ser considerado universal, destruido num bombardeio em 1943 sem que quase ninguem tivesse ouvido falar dele. O Mark I, instalado em Harvard em fevereiro de 1944, projetado por Howard Aiken depois de encontrar no sotao do departamento pedacos de latao da maquina abandonada de Babbage cem anos antes, construido e pago pela IBM, decimal, quinze metros de comprimento. E o ENIAC, pronto em 1945 e apresentado em fevereiro de 1946, feito por Presper Eckert e John Mauchly na Universidade da Pensilvania, com 18 mil valvulas no lugar dos reles, trinta toneladas, encomendado pelo Exercito americano pra calcular tabelas de tiro de artilharia.
+
+Cobre tambem a troca de tecnologia que separa as duas primeiras da terceira: o rele e uma peca que se mexe e leva alguns milesimos de segundo pra fechar; a valvula faz a mesma coisa sem peca movel e milhares de vezes mais rapido. E cobre como se programava o ENIAC, que era mudando fio de lugar em painel de tomada, trabalho de dias, feito por seis mulheres que hoje se sabe que entendiam a maquina por dentro melhor que quase todo mundo.
+
+Ao final o ouvinte entende que as maquinas dessa geracao ja calculavam sozinhas mas ainda guardavam o programa FORA da memoria, em cabo, chave ou fita. Isso abre o proximo episodio, que e sobre o programa passar a morar na mesma memoria dos dados.
+
+Use este contexto apenas como apoio.

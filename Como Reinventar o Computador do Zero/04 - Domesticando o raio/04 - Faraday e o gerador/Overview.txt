@@ -1,0 +1,15 @@
+FARADAY E O GERADOR - CONTEXTO
+==============================
+Documento curto de contexto para uso com NotebookLM.
+
+Quarto episodio da etapa DOMESTICANDO O RAIO, dentro da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. As tres primeiras etapas foram mecanicas e terminaram na Maquina Analitica de Babbage. A quarta etapa e sobre eletricidade, e sao sete episodios.
+
+Os episodios anteriores desta etapa cobriram a eletricidade estatica de 1600 a 1752, que era so estalo; a pilha de Volta de 1800, que deu corrente continua; e a descoberta de Orsted em 1820 de que corrente produz magnetismo, que terminou no eletroima de Sturgeon em 1825. Sobrou uma pergunta obvia: se corrente faz ima, ima faz corrente?
+
+Este episodio responde. Cobre quem foi Michael Faraday, filho de ferreiro e aprendiz de encadernador que virou assistente de Humphry Davy na Royal Institution, a rotacao eletromagnetica de 1821 que e o ancestral do motor, e sobretudo o ano de 1831: o anel de inducao de agosto, em que a agulha so se mexe no instante em que a corrente liga ou desliga, o ima empurrado dentro da bobina em outubro, e o disco de Faraday no fim de outubro, que e o primeiro gerador da historia.
+
+O conceito central e que ima parado nao produz nada. O que produz corrente e a MUDANCA: o ima precisa estar se mexendo, ou o campo precisa estar variando. Dessa condicao saem o gerador e o transformador. Cobre tambem a lei de Lenz de 1834, que explica por que girar um gerador da trabalho, e o fato de que praticamente toda a eletricidade do mundo hoje vem de girar bobina perto de ima: usina hidreletrica, termica, nuclear e eolica sao todas variacoes do disco de Faraday, e a excecao e o painel solar.
+
+Ao final o ouvinte entende de onde vem a eletricidade que ele usa, e que energia eletrica nao e criada e sim convertida a partir de movimento.
+
+Use este contexto apenas como apoio.

@@ -1,0 +1,102 @@
+Inicie dizendo: As Maquinas Do Hiato
+---------------
+
+Este e o terceiro episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco e o sistema de numeracao com o zero; este cobre as quatro maquinas que moram no intervalo entre o abaco e a Pascalina.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Na tela de DEMONSTRACAO (5), avisar que tem um botao de passo na tela pra acompanhar enquanto ouve.
+- Nas telas de PRATICA (6 e 7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- Uma so: a miniatura do ceu (Anticitera e o astrolabio como miniaturas mecanicas do ceu que voce gira ate combinar com o ceu de verdade). Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: AS MAQUINAS DO HIATO)
+
+Retomar em uma frase: ja temos o abaco e os numeros que calculam. Entre o abaco e a Pascalina existem 5 mil anos, e o caminho nao ficou vazio: quatro maquinas engenhosas moram nesse intervalo, e este episodio visita as quatro.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas praticas, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A LINHA DO TEMPO)
+
+A tela mostra a linha do tempo: abaco (3500 a.C.), Anticitera (~100 a.C.), astrolabio (seculos 8 a 10), Napier e a regua (1614 a 1622), Pascalina (1642). Enquanto a Europa medieval brigava ate com os algarismos (episodio anterior), gregos antigos e o mundo islamico construiam maquinas de calcular o ceu. E na virada pro seculo 17, a conta mais cansativa de todas, a multiplicacao, virou alvo.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (MAQUINA 1: O MECANISMO DE ANTICITERA)
+
+A tela mostra engrenagens girando. Ficha: Grecia, por volta de 100 antes de Cristo. Achado em 1901 por mergulhadores de esponja, num naufragio perto da ilha de Anticitera. Mais de 30 engrenagens de bronze numa caixa do tamanho de um livro.
+
+Motivacao: prever o ceu. Girando uma manivela, a maquina adiantava a posicao do Sol e da Lua, previa eclipses e ate o calendario dos jogos gregos. E um computador analogico: as engrenagens nao contam digitos, elas imitam as proporcoes do ceu, uma miniatura mecanica do universo.
+
+O espanto: nada tao complexo aparece de novo no registro historico por uns 1400 anos.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (MAQUINA 2: O ASTROLABIO)
+
+A tela mostra o disco com ponteiros girando. Ficha: ideia da Grecia antiga, aperfeicoado no mundo islamico entre os seculos 8 e 10. Um disco de latao que cabia na mao, com placas giratorias imitando o ceu.
+
+Motivacao: medir a altura de uma estrela e, girando o disco ate a miniatura combinar com o ceu de verdade, ler a hora, a latitude e ate a direcao de Meca. Navegacao, astronomia e religiao no mesmo aparelho.
+
+Mesmo truque de Anticitera: calcular por analogia. Voce nao faz conta; voce alinha a miniatura e le a resposta.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (MAQUINA 3: OS OSSOS DE NAPIER, COM DEMONSTRACAO)
+
+Ficha: John Napier, Escocia. Em 1614 ele publica os logaritmos, a descoberta de que da pra transformar multiplicacao em soma. Em 1617, os bastoes que ficaram conhecidos como ossos de Napier: cada bastao carrega a tabuada de um algarismo, com dezena e unidade separadas por uma diagonal.
+
+Convidar a apertar o botao de passo da tela e acompanhar o 17 x 4: pega os bastoes do 1 e do 7, olha a linha do 4 (04 e 28), le pelas diagonais da direita pra esquerda: unidade 8, depois 4 mais 2 igual a 6. Resultado 68, sem multiplicar nada de cabeca, so tabuada pronta e soma de diagonais.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (PRATICA 1: 23 X 6 NOS OSSOS)
+
+Convidar a pausar o audio e resolver: a tela mostra os bastoes do 2 e do 3 na linha do 6 (12 e 18). Ler pelas diagonais: unidade 8; dezena 2 mais 1; o 1 que sobra na esquerda vira a centena. Escrever o resultado e conferir.
+
+Quando fechar o 138, volte o audio e aperte o Proximo.
+
+TELA 7 (MAQUINA 4: A REGUA DE CALCULO, COM PRATICA)
+
+Ficha: William Oughtred, Inglaterra, 1622. Ele pegou os logaritmos de Napier e gravou em duas escalas deslizantes: nelas, a DISTANCIA e o logaritmo. Deslizar uma escala sobre a outra soma distancias, e somar logaritmos e multiplicar.
+
+Convidar a pausar e praticar na tela: arrastar a escala de cima ate o 1 dela ficar sobre o 2 de baixo, e ler o resultado embaixo do 3 de cima: 6. Depois o desafio seguinte: alinhar sobre o 2.5 e conferir 2.5 x 4 igual a 10.
+
+Fechar com o alcance dessa ferramenta: a regua de calculo guiou engenheiros por 350 anos, projetou pontes, avioes e foguetes, e ainda voava no bolso dos astronautas nas missoes Apollo.
+
+Quando fechar as duas multiplicacoes, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: Anticitera e o astrolabio calculam por analogia, imitando o ceu em miniatura; os ossos e a regua encurtam o trabalho da multiplicacao. Mas em todas elas quem le, soma diagonais e interpreta e a pessoa. Nenhuma pega dois numeros e devolve o resultado sozinha, digito por digito, com vai-um e tudo.
+
+Gancho: vinte anos depois da regua, em 1642, um frances de 19 anos, entediado de somar impostos pro pai, constroi exatamente essa maquina. No proximo episodio: a Pascalina.

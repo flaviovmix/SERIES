@@ -1,0 +1,15 @@
+AS LEIS DO PENSAMENTO - CONTEXTO
+================================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa A ELETRICIDADE APRENDE A PENSAR, dentro da serie Como Reinventar o Computador do Zero. A serie reconstroi o computador do zero, da pedra do abaco ate a inteligencia artificial, uma peca por episodio. As tres primeiras etapas foram mecanicas e terminaram na Maquina Analitica de Babbage. A quarta domesticou a eletricidade, de fenomeno do ceu a corrente que dura, que faz forca e que corre num fio.
+
+Esta quinta etapa e sobre dar significado a essa corrente, e tem tres episodios: as leis do pensamento com Boole em 1854, as maquinas de Hollerith no censo de 1890, e Shannon em 1937 provando que um interruptor e uma proposicao logica.
+
+Este episodio nao tem fio nenhum. Cobre dois momentos separados por dois mil anos. O primeiro e Aristoteles, por volta de 350 antes de Cristo, criando a logica e descobrindo que da pra trocar as palavras de um argumento por letras: o que faz o raciocinio estar certo e a forma dele, nao o assunto. O segundo e George Boole, ingles nascido em 1815, filho de sapateiro, que largou a escola aos 16 anos, estudou matematica sozinho, publicou o primeiro artigo aos 23 e em 1854, ja professor em Cork, na Irlanda, lancou As Leis do Pensamento.
+
+O conceito central e a traducao: verdadeiro vira 1, falso vira 0, o E vira multiplicacao, o OU vira soma (com a regra de que 1 mais 1 e 1, que na verdade e um conserto de Jevons dez anos depois), e o NAO vira 1 menos o valor. Com isso, decidir se uma frase complicada e verdadeira deixa de ser julgamento humano e vira conta mecanica. O exemplo que atravessa o episodio e a contratacao de um lobo-guara para um canal, com requisitos combinados por E, OU e NAO, e um candidato chamado Na cujo curriculo e conferido requisito por requisito.
+
+Boole nao pensou em maquina, nem em eletricidade, e morreu em 1864 sem saber pra que aquilo serviria. A algebra dele ficou quase um seculo sem aplicacao pratica. Ao final o ouvinte entende que existe uma linguagem de duas posicoes, verdadeiro e falso, e que qualquer coisa com duas posicoes estaveis, como um interruptor, poderia representar isso.
+
+Use este contexto apenas como apoio.

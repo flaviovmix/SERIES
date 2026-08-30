@@ -1,0 +1,35 @@
+Inicie dizendo: Do Abaco Ao Transformer
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Do Abaco Ao Transformer.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA de uma animacao que acompanha o audio.
+
+Este e o primeiro episodio da serie Como Reinventar o Computador do Zero.
+
+FOCO: apresentar a serie inteira conduzindo o ouvinte pelas 10 telas da animacao: a pergunta central (como pedras que a gente move viraram maquinas que conversam), os cinco blocos da jornada e onde a historia termina, no Transformer de 2017.
+
+REGRAS DA CONDUCAO COM A ANIMACAO:
+- No fim de cada tela, pedir claramente: "aperte o Proximo".
+- Nas duas telas de PRATICA (o abaco do 48 e a lampada com portas E e OU), convidar o ouvinte a pausar o audio, brincar na tela e voltar quando terminar.
+- Avisar na abertura que da pra acompanhar so pelo audio, sem a pagina.
+- Seguir a ordem das telas do roteiro, sem pular nem juntar telas.
+
+NAO explicar nenhum conceito a fundo. Este episodio e so a apresentacao; os detalhes ficam para os proximos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

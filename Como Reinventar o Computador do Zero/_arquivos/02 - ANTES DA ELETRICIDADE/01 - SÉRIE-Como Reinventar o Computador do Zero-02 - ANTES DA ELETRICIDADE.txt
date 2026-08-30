@@ -1,0 +1,29 @@
+Inicie dizendo: Antes Da Eletricidade
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Antes Da Eletricidade.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio.
+
+Este e o segundo episodio da serie Como Reinventar o Computador do Zero.
+
+FOCO: as maquinas de calcular de antes da eletricidade: o abaco (calculo abstrato virando movimento fisico), a calculadora de Pascal (a conta anda sozinha), a maquina analitica de Babbage (programavel como o tear de Jacquard) e Ada Lovelace (o primeiro codigo publicado da historia).
+
+NAO explicar logica de Aristoteles nem algebra de Boole (assunto do proximo). NAO explicar eletricidade, circuitos, portas logicas nem Turing (episodios seguintes).
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

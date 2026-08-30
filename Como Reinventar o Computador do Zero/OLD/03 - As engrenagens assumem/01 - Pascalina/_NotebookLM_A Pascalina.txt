@@ -1,0 +1,116 @@
+Inicie dizendo: A Pascalina
+---------------
+
+Este e o quarto episodio da serie EQUIPAMENTOS. Os anteriores cobriram o abaco, o sistema de numeracao com o zero e as quatro maquinas do hiato; o anterior terminou dizendo que nenhuma daquelas maquinas pegava dois numeros e devolvia o resultado sozinha, digito por digito. Este episodio e sobre a maquina que fez exatamente isso: a Pascalina.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Na tela interativa (4) e nas DEMONSTRACOES (5 e 6), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Logo na abertura, avisar: quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O domino de vai-uns: no 99 + 1, um vai-um derruba o seguinte, casa por casa, como pecas de domino.
+- A roda de discar do telefone antigo: a roda de entrada da Pascalina girava com um estilete, furo a furo, como quem discava um numero.
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A PASCALINA)
+
+Retomar em uma frase: o episodio passado terminou com uma lacuna, nenhuma maquina ate ali devolvia o resultado sozinha, digito por digito, com vai-um e tudo. Em 1642, um frances de 19 anos constroi exatamente essa maquina: a Pascalina, a primeira calculadora mecanica.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha: Rouen, Franca, 1642. Blaise Pascal, 19 anos. O pai dele reorganizava a coleta de impostos da regiao e afogava o filho em somas repetitivas, todas feitas a mao. Do tedio nasceu a maquina: rodas e engrenagens numa caixa de latao, capaz de somar sozinha.
+
+Pascal passou anos refinando o projeto, com dezenas de prototipos, ate ganhar em 1649 um privilegio real, o direito exclusivo de fabricar a maquina, um antepassado da patente. Esse mesmo Pascal depois ficaria famoso na matematica, na fisica e na filosofia. Mas aos 19, o problema dele era tedio de conta.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (POR QUE O ABACO NAO BASTAVA)
+
+A tela compara os dois. No abaco, a pedra guarda o numero, mas a regra mora na sua cabeca: e voce quem ve o fio cheio, tira as dez pedras e sobe uma na casa seguinte. O abaco lembra; quem pensa e voce.
+
+Na Pascalina, voce so gira as rodas. O vai-um acontece dentro da caixa, engrenagem empurrando engrenagem, sem voce nem perceber.
+
+A virada: pela primeira vez, um pedaco do raciocinio sai da cabeca de uma pessoa e vira mecanismo. Essa transferencia, de regra pra maquina, e o fio que costura a serie inteira daqui pra frente.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (SOMAR E GIRAR, TELA INTERATIVA)
+
+Como e a maquina: uma caixa de latao com janelas em cima, mostrando um digito cada, e rodas de entrada embaixo. Na maquina real cada roda girava com um estilete, furo a furo, como a roda de discar do telefone antigo.
+
+Cada volta de casa soma 1 na janela de cima. Pra somar 35, voce gira 3 na roda da dezena e 5 na roda da unidade. Somar e girar; o mostrador acumula.
+
+Avisar: a tela tem um botao que soma 5 na unidade sozinho, e as rodas sao clicaveis. Convide o ouvinte a clicar e ver as janelas mudarem enquanto escuta.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O SAUTOIR: O VAI-UM AUTOMATICO, COM DEMONSTRACAO)
+
+O problema dificil: o que acontece quando uma janela esta no 9 e chega mais 1? E pior: no 99 + 1, o empurrao precisa atravessar duas casas de uma vez. Se as engrenagens fossem todas ligadas direto, girar a unidade teria que arrastar a maquina inteira, e ela travava.
+
+A solucao de Pascal e uma peca chamada sautoir: uma alavanca que a roda vai levantando aos poucos e que, na passagem do 9 pro 0, cai com o proprio peso e empurra a casa vizinha em um passo. Vai-um pela gravidade. No 99 + 1, vira o domino de vai-uns: a unidade derruba a dezena, a dezena derruba a centena, casa por casa.
+
+Avisar que a tela tem o botao "ver o 9 + 1", que mostra o vai-um simples e depois o 99 + 1 em cascata.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (SUBTRAIR GIRANDO PRA FRENTE, COM DEMONSTRACAO)
+
+As rodas da Pascalina so giram num sentido; o mecanismo do vai-um nao funciona ao contrario. Entao como subtrair?
+
+O truque e o complemento. Pra fazer 35 - 12, em vez de tirar 12, voce soma 988, que e o que falta pro 12 completar 1000. Da 1023. So que a maquina tem tres janelas: o 1 do milhar nao tem onde aparecer e cai fora sozinho. Sobra 23, que e a resposta certa. Subtracao feita girando so pra frente.
+
+Na maquina real esse truque ja vinha pronto: as janelas tinham uma segunda linha de numeros, o complemento, e uma barra deslizante escolhia se voce estava vendo a linha da soma ou a da subtracao.
+
+Avisar que a tela tem o botao "ver o 35 - 12", que faz essa conta girando as rodas na frente do ouvinte.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: 28 + 35)
+
+Convidar a pausar o audio e resolver na tela: primeiro montar o 28 clicando nas rodas (2 na dezena, 8 na unidade). Depois somar 35 por cima (3 na dezena, 5 na unidade) e reparar no momento em que a unidade passa do 9: o vai-um acontece sozinho, e quem faz e a maquina. A meta e chegar em 63.
+
+Avisar: se passar do valor, nao tem como girar pra tras; e apertar limpar e recomecar, igualzinho na maquina real.
+
+Quando fechar o 63, volte o audio e aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: a Pascalina e a primeira maquina que recebe digitos e devolve o resultado sozinha, com vai-um mecanico feito pelo sautoir, e que subtrai pelo truque do complemento, girando so pra frente.
+
+O que ficou dela: cerca de 20 maquinas construidas, das quais 9 sobrevivem em museus. Era cara demais, custava meses de salario, e virou objeto de luxo de gabinete em vez de ferramenta do povo. Havia modelos adaptados pro dinheiro frances da epoca, com casas de base 12 e 20, exatamente a conta de imposto que o pai de Pascal sofria pra fazer.
+
+A limitacao: ela soma e subtrai, mas multiplicar ainda e somar um monte de vezes, na mao. E se uma maquina pudesse multiplicar de verdade?
+
+Gancho: trinta anos depois, um alemao chamado Leibniz ataca exatamente essa coceira, com uma peca nova de engrenagem. No proximo episodio: a roda de Leibniz.

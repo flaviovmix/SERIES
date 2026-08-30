@@ -1,0 +1,137 @@
+Inicie dizendo: Portas Logicas E O Mundo Binario
+---------------
+
+Este e o primeiro episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. A etapa anterior, A Eletricidade Aprende A Pensar, terminou em 1937, com a prova de que um circuito de interruptores faz a conta de 1 e 0 do Boole. Esta etapa para de contar historia de maquina e monta uma no papel, peca por peca, sem ligar nada. Este episodio faz as pecas mais basicas: as portas logicas e o numero binario.
+
+ESTE EPISODIO COBRE DE 1937 A 1950. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (4), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que pedir "aperte o Proximo" exatamente 7 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio tem um personagem com ficha: Claude Shannon. A ficha entra na primeira vez que ele e citado e diz onde nasceu, com o nome do lugar na epoca e o que e aquilo hoje, de que familia veio, onde estudou e quando morreu. Os dados estao escritos na tela 2: usar exatamente esses, sem inventar nenhum dado biografico. George Boole, Willard Quine e John Tukey aparecem de passagem e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Portas Logicas E O Mundo Binario.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O trem na bifurcacao: um trem chega numa bifurcacao e pode ir pra esquerda ou pra direita, dois caminhos; se cada caminho bifurca de novo, quatro; de novo, oito. Serve so pra explicar por que cada bit a mais dobra a quantidade de coisas que da pra representar.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: PORTAS LOGICAS E O MUNDO BINARIO)
+
+Retomar em uma frase onde a etapa passada parou: em 1937 ficou provado que um circuito de interruptores faz a conta de 1 e 0 que Boole tinha inventado em 1854. Interruptor fechado e 1, aberto e 0, e E, OU e NAO viram jeitos de ligar interruptor.
+
+Dizer o que esta etapa faz, porque ela e diferente das anteriores: a serie para de contar a historia das maquinas dos outros e monta uma maquina propria, no papel, peca por peca, sem ligar nada na tomada. Sao cinco episodios que se empilham: este faz as pecas basicas, os proximos fazem o somador, a memoria, a maquina universal e o conjunto de instrucoes. Dizer o intervalo em voz alta: este episodio cobre de 1937 a 1950, de uma tese de mestrado ate um rato de brinquedo que aprendia labirinto.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e a porta logica, um circuito pequeno com uma ou duas entradas e uma saida, onde entrada e saida so podem estar ligadas ou desligadas, 1 ou 0. Data: 1937, a tese de mestrado que provou que reles ligados de certos jeitos fazem exatamente as tres operacoes de Boole. Lugar: o MIT, em Cambridge, no estado de Massachusetts.
+
+Motivacao: ate ali, quem projetava central telefonica montava os circuitos de rele no chute e na experiencia, sem um metodo. A tese mostrou que da pra escrever o circuito como uma expressao de algebra, simplificar no papel e so depois montar. E o inverso tambem: qualquer expressao de E, OU e NAO vira circuito.
+
+Ficha humana de Claude Shannon. Nasceu em 30 de abril de 1916 em Petoskey, no estado de Michigan, nos Estados Unidos, cidade que continua com o mesmo nome; cresceu na cidade vizinha de Gaylord. O pai, Claude Shannon, era comerciante e juiz de inventarios da cidade; a mae, Mabel Wolf Shannon, era professora de linguas e diretora da escola secundaria de Gaylord. Estudou engenharia eletrica e matematica na Universidade de Michigan, formado em 1936, e fez o mestrado no MIT em 1937, com a tese que da a data deste episodio, e o doutorado em matematica em 1940. Morreu em 24 de fevereiro de 2001, aos 84 anos, em Medford, Massachusetts, depois de anos com Alzheimer.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (AS TRES PORTAS FEITAS DE RELE)
+
+Montar as tres portas com o rele da etapa 4, que e um interruptor que fecha quando recebe corrente. Duas pessoas, cada uma com um rele, uma pilha e uma lampada.
+
+O E: ligar a saida do primeiro rele na entrada do segundo, em serie. O circuito so fecha inteiro quando os dois reles estao fechados. Se so um fecha, nada. Se os dois fecham, a lampada acende. Essa e a porta E, que em ingles se chama AND.
+
+O OU: dar a cada rele um caminho proprio da pilha ate a lampada, em paralelo. Fechar qualquer um dos dois ja acende. Fechar os dois tambem. Essa e a porta OU, em ingles OR.
+
+O NAO: um circuito que esta sempre fechado, com a lampada sempre acesa, e um rele montado pra interromper. Quando o rele e ativado, o circuito abre e a lampada apaga. Essa e a porta NAO, em ingles NOT: ela devolve o contrario do que recebe.
+
+Dizer a regra que vale pro resto da etapa: a partir daqui a serie deixa de desenhar rele e usa um simbolo pra cada porta, com as entradas de um lado e a saida do outro. Cada entrada e cada saida e um fio que esta com energia, 1, ou sem, 0.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (A MESA DAS PORTAS, TELA INTERATIVA)
+
+Amarrar as tres numa tabela falada, porque e ela que o ouvinte precisa carregar: no E, a saida so e 1 quando as duas entradas sao 1. No OU, a saida e 1 quando pelo menos uma entrada e 1. No NAO, a saida e o inverso da entrada.
+
+Dizer por que isso importa: essa tabela e a conta do Boole da etapa 5, so que agora feita por corrente eletrica, sem ninguem pensando. A porta nao sabe o que 1 e 0 significam; ela so obedece a tabela. E o que a serie vai fazer nos proximos episodios e escolher significados pra esses 1 e 0.
+
+Avisar: a tela tem as tres portas com as entradas viradas pra cima. Convide o ouvinte a ligar e desligar as entradas de cada uma e reparar em qual combinacao acende a saida, conferindo a tabela que a gente acabou de falar.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (NAND, XOR E O RATO TESEU)
+
+Apresentar duas portas montadas com as tres. A primeira e o NAO-E, em ingles NAND: um E com um NAO na saida, entao ela da 0 so quando as duas entradas sao 1, e 1 em todo o resto. Dizer o que ela tem de especial: combinando so portas NAND, de jeitos diferentes, da pra reproduzir qualquer outra porta, o E, o OU e o NAO. Isso nao acontece com o E sozinho, nem com o OU sozinho. Na pratica, muita fabrica de chip faz tudo com uma porta so por causa disso.
+
+A segunda e o OU-exclusivo, em ingles XOR: a saida e 1 quando as entradas sao diferentes, e 0 quando sao iguais. Ela se monta com um OU, um E e um NAND. Guardar essa porta: ela e a que vai somar no proximo episodio.
+
+Contar o rato Teseu. Em 1950, quem visitava a sala de Shannon nos Bell Labs saia de la tendo visto um rato mecanico num labirinto de paredes moveis. O rato andava, batia nas paredes, errava, e embaixo do tabuleiro um circuito de uns 75 reles ia guardando o que ele tinha aprendido. Quando o treino acabava, dava pra por o rato em qualquer ponto e ele ia ate o fim sem errar. Se alguem mudava as paredes, ele reaprendia. Dizer o ponto: era feito com as mesmas portas desta tela, montadas com rele, e e considerado o primeiro aparelho que aprende por tentativa.
+
+Fechar dizendo o que a serie ainda nao tem: porta logica sabe responder sim e nao. Nao sabe contar. Pra contar, primeiro e preciso decidir como escrever numero so com 1 e 0.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O MUNDO BINARIO: BIT E BYTE)
+
+Comecar do jeito mais antigo de escrever numero: um risco pra cada unidade. Um risco e 1, dois riscos e 2. Funciona ate uns 20; pra escrever 128 seriam 128 riscos. Depois o jeito da escola: dez simbolos, de 0 a 9, e a regra que cada casa pra esquerda vale dez vezes mais que a anterior. Lembrar a diferenca entre o numero e o simbolo dele: o 3 e uma ideia, o desenho do 3 e so um jeito de escrever essa ideia, e a etapa 1 ja tinha mostrado isso com o abaco.
+
+Dizer o problema: o circuito nao tem dez simbolos. Tem dois, ligado e desligado. Entao a regra fica a mesma, so que cada casa pra esquerda vale duas vezes mais. 0 e 0, 1 e 1. O 2 nao cabe numa casa so, entao vai pra casa da esquerda, que vale 2: escreve-se 10. O 3 e 11. O 4 usa a casa que vale 4: 100. E assim por diante. Isso e o sistema binario.
+
+Mostrar o vai-um: em decimal, 99 esta com as duas casas cheias, e somar 1 zera as duas e passa 1 pra esquerda, 100. Em binario, 11 esta com as duas casas cheias, e somar 1 da 100, que e o 4. Mesma regra, so que a casa enche mais rapido.
+
+Dizer por que binario e nao decimal: nao tem nada de especial no dez, a gente conta de dez em dez por causa dos dez dedos. O binario e o sistema mais simples que ainda consegue expressar tudo que o decimal expressa, e cada casa dele cabe num interruptor. Citar Quine de passagem: tudo que vale a pena dizer pode ser dito com dois caracteres.
+
+Definir bit: e a palavra binary digit encurtada, uma casa binaria, um interruptor. A palavra apareceu publicada em 1948, num artigo de Shannon, que fez questao de dizer que nao era dele: quem inventou a palavra foi um colega dos Bell Labs, o estatistico John Tukey. Usar a analogia autorizada e deixar claro que e analogia: um trem chega numa bifurcacao e pode ir pra esquerda ou pra direita, dois caminhos; se cada caminho bifurca de novo, quatro; de novo, oito. Cada bit a mais dobra a quantidade de coisas que da pra representar. Com 8 bits sao 256 combinacoes, e 8 bits tem nome: byte.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: ESCREVA 27 EM BINARIO)
+
+Convidar a pausar o audio e resolver na tela: tem cinco casas binarias, valendo 16, 8, 4, 2 e 1, cada uma com um interruptor.
+
+O objetivo e escrever o numero 27 ligando as casas certas. O jeito de pensar: 27 tem 16? Tem, liga a casa do 16 e sobram 11. Cabe 8? Cabe, liga e ficam 3. Cabe 4? Nao cabe, deixa desligado. Cabe 2? Cabe, liga e sobra 1. Liga o 1. O resultado e 1 1 0 1 1. Quem errar provavelmente ligou o 4 ou esqueceu o 1.
+
+Depois o caminho de volta: a tela mostra 1 0 1 0 e pede o numero. E somar as casas ligadas, 8 e 2, que da 10.
+
+Dizer o que a pratica ensina antes de mandar voltar: escrever numero em binario nao e um truque de computador, e a mesma regra da escola com uma base menor. E cada casa dessas e uma porta logica que esta ligada ou desligada.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: com reles em serie, em paralelo e interrompendo, a serie montou o E, o OU e o NAO, que sao a conta do Boole feita por corrente. Com elas veio o NAND, que sozinho faz todas as outras, e o XOR, que acende quando as entradas sao diferentes. Em 1950 um rato de reles aprendeu um labirinto com essas portas. E numero, pra elas, e uma fileira de 1 e 0 onde cada casa vale o dobro da anterior: o bit, e o byte de 8 bits.
+
+Dizer onde o episodio para: 1950. E dizer o que ficou faltando, que e o gancho: a maquina ja sabe representar numero e sabe responder sim e nao, mas ainda nao sabe fazer conta. Ela nem chegou no abaco.
+
+Gancho: no proximo episodio a serie pega duas portas desta tela, o E e o XOR, e monta com elas um circuito que soma. Depois descobre que, com um truque de transbordar, o mesmo circuito subtrai.

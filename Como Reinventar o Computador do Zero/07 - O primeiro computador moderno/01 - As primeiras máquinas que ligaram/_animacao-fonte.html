@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As primeiras máquinas que ligaram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,600;1,6..72,400&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F1F2F0; --surface:#E4E7E3; --fg:#191C1F; --muted:#5C625E;
+  --rule:#C7CBC5; --accent:#1F5E82; --flag:#8A5E12; --ok:#3F7048; --stop:#9A3B25;
+  --sombra:0 1px 2px rgba(25,28,31,.10), 0 6px 18px rgba(25,28,31,.07);
+  --ease:cubic-bezier(.22,1,.36,1);
+  /* altura real do palco (o main, ja sem topo e rodape). o JS mede e regrava; isto e so o chute inicial */
+  --palco:80vh;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14171A; --surface:#1D2225; --fg:#E9EBE7; --muted:#98A09B;
+    --rule:#2E3538; --accent:#79B6D8; --flag:#D2A044; --ok:#7FB68A; --stop:#D98C74;
+    --sombra:0 1px 2px rgba(0,0,0,.5), 0 8px 22px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14171A; --surface:#1D2225; --fg:#E9EBE7; --muted:#98A09B;
+  --rule:#2E3538; --accent:#79B6D8; --flag:#D2A044; --ok:#7FB68A; --stop:#D98C74;
+  --sombra:0 1px 2px rgba(0,0,0,.5), 0 8px 22px rgba(0,0,0,.35);
+}
+*{margin:0; padding:0; box-sizing:border-box}
+html,body{height:100%; min-height:100vh}
+body{
+  background:var(--bg); color:var(--fg);
+  font-family:"Source Sans 3", system-ui, sans-serif; font-size:17px; line-height:1.55;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+.mono{font-family:"IBM Plex Mono", ui-monospace, monospace}
+
+/* barra de topo */
+header.topo{
+  flex:none; display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:14px 26px; border-bottom:1px solid var(--rule);
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+}
+header.topo .marca{color:var(--accent)}
+.dica{display:flex; align-items:center; gap:8px}
+.dica .pulso{width:8px; height:8px; border-radius:50%; background:var(--accent); animation:pulso 1.8s infinite}
+@keyframes pulso{0%,100%{opacity:.25}50%{opacity:1}}
+
+/* palco */
+main{flex:1; position:relative; overflow:hidden}
+.tela{
+  position:absolute; inset:0; overflow-y:auto; padding:34px 40px 30px;
+  opacity:0; visibility:hidden; transition:opacity .4s var(--ease), visibility 0s .4s;
+}
+.tela.ativa{opacity:1; visibility:visible; transition-delay:0s}
+.folha{
+  margin:0; display:grid; gap:26px;
+  min-height:100%; align-content:center;   /* sobra de altura vai metade em cima, metade embaixo */
+}
+@media (min-width:900px){
+  /* texto colado na borda esquerda, estreito; o resto da largura inteira e das imagens */
+  .folha{grid-template-columns:minmax(230px,270px) minmax(0,1fr); gap:52px; align-items:center}
+  .cabeca{grid-column:1}
+  /* so a prancha FILHA da folha vira coluna do miolo; as aninhadas seguem o fluxo */
+  .folha > .pranchas{grid-column:2; width:100%}
+}
+
+/* coluna da esquerda */
+.rotulo{display:flex; flex-direction:column; gap:2px; margin-bottom:12px}
+.num{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-weight:500; font-size:12px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
+}
+.tempo{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px;
+  color:var(--muted); font-variant-numeric:tabular-nums;
+}
+.cabeca h2{
+  font-family:Newsreader, Georgia, serif; font-weight:600; font-size:clamp(26px,3.4vw,34px);
+  line-height:1.1; margin:0 0 10px; text-wrap:balance; letter-spacing:-.01em;
+}
+.cabeca p{color:var(--muted); font-size:16px; margin:0}
+.cabeca p + p{margin-top:10px}
+.cabeca b{color:var(--fg); font-weight:600}
+
+/* ficha */
+.ficha{display:grid; gap:10px; margin-top:16px}
+.ficha .linha{border-top:1px solid var(--rule); padding-top:8px}
+.ficha .rot{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:10px;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:3px;
+}
+.ficha .txt{font-size:15px; line-height:1.45}
+
+/* pranchas (imagens) */
+.pranchas{display:grid; gap:22px}
+@media (min-width:620px){
+  .p2{grid-template-columns:repeat(2,1fr)}
+  .p3{grid-template-columns:repeat(3,1fr)}
+  .p4{grid-template-columns:repeat(4,1fr); gap:16px}
+  /* as quatro do fecho em 2x2: numa linha so elas ficam pequenas e sobra tela em cima e embaixo */
+  .p2x2{grid-template-columns:repeat(2,1fr); gap:16px}
+}
+/* painel e imagem lado a lado em vez de empilhados: em tela larga, empilhado sobra
+   metade da largura vazia e espreme os dois na altura */
+@media (min-width:1100px){
+  .com-painel{grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:40px}
+  /* margin-inline:auto encolhe o painel pro tamanho do conteudo: aqui ele tem que
+     preencher a coluna inteira e ficar da altura da imagem do lado */
+  .com-painel .painel{
+    max-width:none; margin-inline:0; width:100%; padding:34px 30px;
+    min-height:calc(var(--palco) - 64px);
+    display:flex; flex-direction:column; justify-content:space-evenly;
+  }
+  .com-painel .caminho{max-width:100%}
+  .com-painel .legenda{font-size:15px; min-height:44px; margin-bottom:0}
+  .com-painel .botoes{margin-top:0; gap:12px}
+  .com-painel .btn{font-size:12px; padding:12px 20px}
+}
+/* tela sem imagem nenhuma: o painel e o conteudo, entao cresce pra valer.
+   so acima de 1400px: mais estreito que isso a fila aumentada quebraria em duas linhas */
+@media (min-width:1400px){
+  /* garrafa e fila lado a lado: o painel cresce na largura, que e o que sobra,
+     em vez de na altura, que e disputada com as tres fotos embaixo */
+  .painel-largo .painel{max-width:1240px}
+  .painel-largo .duo{grid-template-columns:auto minmax(0,1fr); align-items:center; gap:48px}
+  .painel-largo .jarra{width:340px}
+  /* o monge sai da largura da propria fila (o que sobra depois da garrafa), pra ela
+     nunca quebrar em duas linhas: 9 monges e 8 vaos de 10px */
+  .painel-largo .fila{gap:10px; margin-top:0; flex-wrap:nowrap}
+  .painel-largo .fila .monge{width:min(74px, calc((100% - 80px) / 9)); height:auto; aspect-ratio:32/52}
+  .painel-largo .fila .monge.pula{transform:translateY(-26px)}
+  /* o monge sai da largura da PROPRIA fila (nao de vw): 7 monges + 6 ligacoes + os vaos.
+     516px e o que as 6 ligacoes escritas METAL e os 12 vaos ocupam no pior caso.
+     o % de dentro do var resolve na fila, que e o pai tanto do monge quanto da ligacao */
+  .so-painel{--m:min(132px, calc((100% - 516px) / 7))}
+  .so-painel .monge{width:var(--m); height:auto; aspect-ratio:32/52}
+  .so-painel .monge.pula{transform:translateY(calc(var(--m) * -.38))}
+  /* o painel ocupa o palco inteiro (largura e altura), com o conteudo espalhado dentro */
+  .so-painel .painel{
+    max-width:none; padding:56px 34px; min-height:calc(var(--palco) - 64px);
+    display:flex; flex-direction:column; justify-content:space-evenly;
+  }
+  .so-painel .legenda{font-size:16px; min-height:46px; margin-bottom:30px}
+  .so-painel .jarra{width:280px}
+  .so-painel .pratica-fila{gap:8px; flex-wrap:nowrap}
+  /* .44 = a altura das maos do monge (27% de 1.625 de altura por largura) */
+  .so-painel .elo{font-size:13px; padding:9px 14px; margin-bottom:calc(var(--m) * .44)}
+  .so-painel .placar{font-size:14px; margin-top:30px}
+  .so-painel .botoes{margin-top:30px; gap:14px}
+  .so-painel .btn{font-size:13px; padding:13px 24px}
+}
+figure.prancha{margin:0 auto; width:fit-content; max-width:100%; display:flex; flex-direction:column; gap:10px}
+.moldura{
+  background:var(--surface); border:1px solid var(--rule); border-radius:2px;
+  padding:12px; box-shadow:var(--sombra); display:flex; justify-content:center; cursor:zoom-in;
+  width:fit-content; max-width:100%;
+}
+.moldura:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+/* a imagem cresce ate onde a coluna deixa; a altura e que segura, nunca o contrario
+   (width:auto + max-width:100% = sem esticar acima do tamanho original e sem distorcer) */
+.moldura img{width:auto; max-width:100%; height:auto; display:block;
+  max-height:max(140px, calc(var(--palco) - 175px));   /* 175 = padding da tela + moldura + legenda */
+}
+figcaption{display:flex; flex-direction:column; gap:3px}
+.arquivo{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; color:var(--accent)}
+.legenda-img{font-size:15px}
+.fonte{font-size:13px; color:var(--muted)}
+.selo{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:10.5px; letter-spacing:.06em;
+  text-transform:uppercase; padding:2px 7px; border-radius:2px; border:1px solid var(--flag);
+  color:var(--flag); align-self:flex-start; margin-top:2px;
+}
+.p2x2 .legenda-img, .p2x2 .fonte{display:none}
+/* a capa tem um selo a mais na legenda, entao desconta um pouco mais de altura */
+.p1 .moldura img{max-height:max(140px, calc(var(--palco) - 196px))}
+/* a p2x2 sao duas linhas de duas: cada imagem cabe em metade do palco, menos moldura e rotulo */
+.p2x2 .moldura img{max-height:max(90px, calc((var(--palco) - 80px) / 2 - 60px))}
+/* tres numa linha: teto mais baixo pra uma foto em pe nao virar o dobro das deitadas do lado */
+.p3 .moldura img{max-height:max(140px, calc(var(--palco) - 320px))}
+/* telas que dividem a altura com um painel interativo: desconta o painel inteiro */
+.com-painel .moldura img{max-height:max(110px, calc(var(--palco) - 175px))}
+.painel-largo .moldura img{max-height:max(80px, calc(var(--palco) - 540px))}
+
+/* lightbox */
+.lb{
+  position:fixed; inset:0; z-index:60; background:rgba(10,12,14,.86);
+  display:flex; align-items:center; justify-content:center; padding:30px; cursor:zoom-out;
+  opacity:0; visibility:hidden; transition:opacity .26s var(--ease), visibility 0s .26s;
+}
+.lb.on{opacity:1; visibility:visible; transition-delay:0s}
+.quadro{
+  position:relative; cursor:default; background:var(--surface);
+  border:1px solid var(--rule); border-radius:2px; padding:14px;
+  box-shadow:0 24px 70px rgba(0,0,0,.55);
+  width:fit-content; max-width:min(1000px,92vw);
+  display:flex; flex-direction:column; align-items:center; gap:12px;
+}
+/* a altura e quem manda: em imagem em pe, a largura sai da proporcao */
+.lb img{max-width:min(1000px,86vw); max-height:74vh; width:auto; height:auto; display:block; border-radius:1px}
+.lb figure{margin:0; display:flex; flex-direction:column; align-items:center; gap:12px; max-width:100%}
+.lb figcaption{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12.5px; color:var(--muted);
+  text-align:center; line-height:1.6; display:block;
+}
+.fechar{
+  position:absolute; top:-15px; right:-15px; width:36px; height:36px; border-radius:50%;
+  background:var(--surface); border:1px solid var(--rule); color:var(--fg); cursor:pointer;
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:17px; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.35); transition:transform .2s var(--ease), color .2s, border-color .2s;
+}
+.fechar:hover{transform:scale(1.1); color:var(--accent); border-color:var(--accent)}
+.fechar:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* painel interativo */
+.painel{
+  background:var(--surface); border:1px solid var(--rule); border-radius:2px;
+  padding:20px 22px; box-shadow:var(--sombra);
+  /* o painel nao acompanha a largura toda: o SVG cresce junto e come a altura da imagem */
+  max-width:880px; margin-inline:auto;
+}
+.legenda{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12.5px; color:var(--muted);
+  line-height:1.5; min-height:36px; text-align:center; margin-bottom:14px;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok)}
+.legenda.para{color:var(--stop)}
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; background:none; border:1px solid var(--rule); color:var(--muted);
+  border-radius:2px; padding:8px 16px; cursor:pointer; transition:all .2s;
+}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn.cheio{background:var(--accent); border-color:var(--accent); color:var(--bg); font-weight:500}
+.btn:disabled{opacity:.35; cursor:default}
+.btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+.caminho{display:block; margin:0 auto; max-width:min(100%, 620px)}
+.trilho{stroke:var(--rule); stroke-width:4; fill:none}
+.mat-metal{fill:#8D9095}
+.mat-seda{fill:#B792B2}
+.jarra{display:block; margin:0 auto; width:230px; max-width:100%}
+/* a garrafa e a fila: empilhadas por padrao, lado a lado em tela larga (ver @media abaixo) */
+.duo{display:grid; gap:8px; justify-items:center; margin-top:10px}
+.fila{display:flex; gap:6px; justify-content:center; align-items:flex-end; margin-top:14px; flex-wrap:wrap}
+.monge{width:32px; height:52px; transition:transform .18s var(--ease)}
+.monge.pula{transform:translateY(-16px)}
+.monge svg{width:100%; height:100%; display:block}
+.corpo{fill:var(--muted)}
+.corpo.tocado{fill:var(--accent)}
+
+.pratica-fila{display:flex; align-items:flex-end; justify-content:center; gap:2px; flex-wrap:wrap}
+.elo{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:9px; letter-spacing:.06em;
+  text-transform:uppercase; border:1px dashed var(--rule); background:none; color:var(--muted);
+  border-radius:2px; padding:4px 7px; margin-bottom:14px; cursor:pointer; transition:all .2s;
+}
+.elo:hover{border-color:var(--accent); color:var(--accent)}
+.elo:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.elo.metal{border-style:solid; border-color:#8D9095; color:var(--fg)}
+.elo.seda{border-style:solid; border-color:#B792B2; color:#8A5E85}
+.placar{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px; letter-spacing:.1em;
+  color:var(--muted); text-align:center; margin-top:12px;
+}
+
+/* rodape de navegacao */
+footer.nav{
+  flex:none; display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:14px 26px 16px; border-top:1px solid var(--rule);
+}
+.nav-btn{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; letter-spacing:.12em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:1px solid var(--accent); border-radius:2px; padding:12px 26px; font-weight:500;
+  transition:transform .2s var(--ease), opacity .2s;
+}
+.nav-btn:hover{transform:translateY(-1px)}
+.nav-btn.ghost{background:none; color:var(--muted); border-color:var(--rule)}
+.nav-btn:disabled{opacity:.3; cursor:default; transform:none}
+.nav-btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.meio{display:flex; flex-direction:column; align-items:center; gap:8px}
+.pontos{display:flex; gap:7px}
+.pontos button{width:8px; height:8px; border-radius:50%; border:none; background:var(--rule); cursor:pointer; transition:all .3s; padding:0}
+.pontos button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px;
+  letter-spacing:.14em; color:var(--muted); font-variant-numeric:tabular-nums;
+}
+
+@media (max-width:899px){
+  .tela{padding:22px 16px 24px}
+  .cabeca h2{font-size:25px}
+  header.topo{padding:11px 14px; font-size:9.5px}
+  .dica{display:none}
+  footer.nav{padding:11px 12px 14px; gap:10px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .painel{padding:14px 12px}
+  .monge{width:26px; height:44px}
+  .pontos{gap:5px}
+  .pontos button{width:7px; height:7px}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important; transition-duration:.01ms !important}
+}
+</style>
+
+<style>
+/* --- pecas desta etapa --- */
+.corrida{display:grid; gap:14px; margin-top:6px}
+.pista{display:grid; gap:6px}
+.pista .rot{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; color:var(--muted); display:flex; justify-content:space-between}
+.barra{height:16px; border:1px solid var(--rule); border-radius:99px; overflow:hidden; background:var(--surface)}
+.barra i{display:block; height:100%; width:0; background:var(--accent); transition:width .12s linear}
+.pista.lento .barra i{background:var(--flag)}
+
+.painel-eniac{display:grid; gap:10px; margin-top:4px}
+.tomadas{display:flex; gap:8px; justify-content:center; flex-wrap:wrap}
+.tom{width:54px; height:54px; border-radius:50%; border:2px solid var(--rule); background:var(--surface);
+     font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:13px; color:var(--muted); cursor:pointer}
+.tom:hover{border-color:var(--accent); color:var(--accent)}
+.tom.lig{border-color:var(--ok); color:var(--ok); font-weight:600}
+.tom.erro{border-color:var(--stop); color:var(--stop)}
+.cabos{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; color:var(--muted); text-align:center; min-height:18px}
+
+.memoria{display:grid; gap:6px; margin-top:4px}
+.cel{display:grid; grid-template-columns:52px 1fr auto; gap:10px; align-items:center;
+     border:1px solid var(--rule); border-radius:6px; padding:7px 10px; background:var(--surface); cursor:pointer}
+.cel:hover{border-color:var(--accent)}
+.cel.sel{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent)}
+.cel .end{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; color:var(--muted)}
+.cel .bits{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:14px; letter-spacing:.08em}
+.cel .lido{font-size:13px; color:var(--accent); text-align:right; min-width:130px}
+
+.linhas-cod{display:grid; gap:6px; margin-top:4px}
+.linha-cod{display:grid; grid-template-columns:1fr 1fr; gap:10px; align-items:center}
+.linha-cod select, .linha-cod input{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:13px; padding:6px 8px;
+  border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--fg); width:100%}
+.saida-cod{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:13px; color:var(--muted);
+  border:1px dashed var(--rule); border-radius:6px; padding:8px 10px; min-height:34px; text-align:left}
+.saida-cod b{color:var(--accent)}
+.saida-cod .ruim{color:var(--stop)}
+
+.placeholder{
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:11px; letter-spacing:.08em;
+  color:var(--flag); border:1px dashed var(--flag); border-radius:99px; padding:2px 10px; display:inline-block}
+.card3d{
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface); padding:16px;
+  display:grid; gap:8px; justify-items:center; cursor:pointer; text-align:center}
+.card3d:hover{border-color:var(--accent)}
+.card3d .selo3d{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px; color:var(--accent)}
+.card3d .desc{font-size:13px; color:var(--muted)}
+.lb .quadro iframe{width:92vw; height:82vh; border:1px solid var(--rule); border-radius:6px; background:var(--bg); display:none}
+.lb .quadro.modo3d iframe{display:block}
+.lb .quadro.modo3d figure{display:none}
+</style>
+
+</head>
+<body>
+
+<header class="topo">
+  <div><span class="marca">Etapa 07 · O primeiro computador moderno</span> · 01 · As primeiras máquinas que ligaram</div>
+  <div class="dica"><span class="pulso"></span> acompanhe com o áudio</div>
+</header>
+
+<main>
+
+  <!-- TELA 1 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 1</span><span class="tempo">de 7</span></p>
+        <h2>As primeiras máquinas que ligaram</h2>
+        <p>Nos últimos episódios a série montou um computador inteiro <b>no papel</b>: porta lógica,
+        somador, memória com endereço, a máquina universal de Turing, o conjunto de instruções.
+        Estava tudo projetado e nada estava ligado.</p>
+        <p><b>Este episódio cobre de 1936 a 1946.</b> Dez anos que começam numa oficina em Berlim e
+        terminam num salão do Exército americano.</p>
+        <div class="ficha">
+          <div class="linha"><span class="rot">assunto</span><span class="txt">As três primeiras máquinas programáveis que funcionaram: Z3, Mark I e ENIAC.</span></div>
+          <div class="linha"><span class="rot">datas</span><span class="txt">1941 na Alemanha, 1944 e 1945 nos Estados Unidos.</span></div>
+          <div class="linha"><span class="rot">motivação</span><span class="txt">Gente cansada de fazer conta na mão. Nenhuma delas nasceu de alguém querendo inventar o computador.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 2 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 2</span><span class="tempo">de 7</span></p>
+        <h2>Konrad Zuse e o Z3 · Berlim · 1941</h2>
+        <p><b>Konrad Zuse</b> nasceu em 22 de junho de 1910 em <b>Berlim</b>, na Prússia, hoje Alemanha.
+        Aos dois anos a família se mudou pra <b>Braunsberg</b>, na Prússia Oriental, cidade que hoje se chama
+        <b>Braniewo</b> e fica na Polônia. O pai era funcionário dos correios. Estudou no Collegium Hosianum e
+        se formou em engenharia civil na Technische Hochschule de Berlim, em 1935. Morreu em 18 de dezembro
+        de 1995, aos 85 anos, em Hünfeld.</p>
+        <p>Ele largou o emprego de calcular estrutura de avião em 1936 e montou oficina na casa dos pais. As
+        duas primeiras tentativas não deram certo. A terceira deu.</p>
+        <p><b>2600 relés.</b> Binário, número de vírgula flutuante de 22 bits, programa lido de fita
+        perfurada. Somava em menos de um segundo, multiplicava em cerca de três.</p>
+        <p>É o primeiro computador que funcionou e que pode ser considerado <b>universal</b>, no sentido de
+        Turing. Zuse não sabia disso na época.</p>
+        <p>Um bombardeio sobre Berlim destruiu o Z3 no fim de <b>1943</b>. Ele trabalhava isolado, em guerra:
+        quase ninguém lá fora ficou sabendo. A máquina que existe hoje é uma reconstrução feita pelo próprio
+        Zuse nos anos 60.</p>
+      </div>
+      <div class="pranchas com-painel">
+        <div class="painel">
+        <div class="card3d" tabindex="0" role="button" aria-label="abrir o modelo 3D">
+          <span class="selo3d">🧊 3d · girar</span>
+          <span class="desc">A máquina desta tela, pra girar e olhar por dentro</span>
+          <span class="placeholder">modelo provisório: ábaco</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 3 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 3</span><span class="tempo">de 7</span></p>
+        <h2>Mark I · Harvard · 1944</h2>
+        <p><b>Howard Aiken</b> nasceu em 8 de março de 1900 em Hoboken, Nova Jersey, e cresceu em
+        Indianápolis. O pai saiu de casa, e o menino trabalhava à noite com equipamento elétrico pra
+        sustentar a mãe enquanto estudava de dia na Arsenal Technical High School. Formou-se em engenharia
+        elétrica em Wisconsin, em 1923, e fez mestrado e doutorado em física em Harvard, em 1937 e 1939.
+        Morreu em 14 de março de 1973, em Saint Louis.</p>
+        <p>No doutorado, reclamando das contas repetidas, ele descobriu no sótão do departamento pedaços de
+        latão de uma máquina antiga: eram partes da <b>Máquina Diferencial de Babbage</b>, abandonada cem
+        anos antes por falta de dinheiro.</p>
+        <p>A IBM construiu e pagou. Quinze metros de comprimento, quase cinco toneladas, feita de relé como
+        o Z3, mas <b>decimal</b>. Programa em fita de papel. Uma multiplicação levava seis segundos.</p>
+        <p>A ideia de Babbage esperou <b>cem anos</b> por uma tecnologia que desse conta dela.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 4 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 4</span><span class="tempo">de 7</span></p>
+        <h2>O relé e a válvula</h2>
+        <p>O relé tem uma pecinha de metal que precisa <b>se mexer</b>: encostar e voltar. Isso leva
+        milésimos de segundo, faz barulho, esquenta e desgasta.</p>
+        <p>A válvula faz o mesmo serviço sem nada se mexer: quem trabalha é o elétron, que não tem peso pra
+        mover. O relé é uma porta que alguém precisa empurrar; a válvula é uma porta que abre sozinha quando
+        a luz acende.</p>
+        <p>O preço: válvula tem filamento igual lâmpada. Esquenta, gasta muita luz, e uma hora estoura.</p>
+      </div>
+      <div class="pranchas com-painel">
+        <div class="painel">
+          <p class="legenda" id="leg5">Dispare a mesma conta nas duas tecnologias e veja a diferença.</p>
+          <div class="corrida">
+            <div class="pista lento">
+              <div class="rot"><span>relé · ~50 operações por segundo</span><span id="c5rele">0</span></div>
+              <div class="barra"><i id="b5rele"></i></div>
+            </div>
+            <div class="pista">
+              <div class="rot"><span>válvula · ~5.000 operações por segundo</span><span id="c5valv">0</span></div>
+              <div class="barra"><i id="b5valv"></i></div>
+            </div>
+          </div>
+          <div class="botoes">
+            <button class="btn cheio" id="btn5go">disparar 5.000 operações</button>
+            <button class="btn" id="btn5reset">zerar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 5 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 5</span><span class="tempo">de 7</span></p>
+        <h2>ENIAC · 1945</h2>
+        <p><b>Presper Eckert</b> nasceu em 9 de abril de 1919 na Filadélfia. O pai era um incorporador
+        imobiliário rico e a mãe vinha de família quacre antiga da cidade. Estudou na William Penn Charter
+        School, entrou na Wharton e trocou pra engenharia elétrica na Universidade da Pensilvânia em 1937.
+        Era o engenheiro-chefe do projeto com pouco mais de vinte anos. Morreu em 3 de junho de 1995.</p>
+        <p><b>John Mauchly</b> nasceu em 30 de agosto de 1907 em Cincinnati e cresceu em Chevy Chase, quando
+        o pai virou chefe da seção de eletricidade terrestre da Carnegie Institution. Estudou na Johns
+        Hopkins, entrou em engenharia, mudou pra física e tirou o doutorado em 1932 sem ter concluído a
+        graduação. Antes do ENIAC chefiava o departamento de física do Ursinus College, onde era o único
+        professor do departamento. Morreu em 8 de janeiro de 1980.</p>
+        <p><b>18 mil válvulas</b>, trinta toneladas, trinta metros, 150 mil watts. Encomendado pelo Exército
+        pra calcular tabela de tiro de artilharia.</p>
+        <p>Construção terminada em <b>1945</b>, apresentação pública em <b>15 de fevereiro de 1946</b>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 6 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 6</span><span class="tempo">de 7</span></p>
+        <h2>Quem programava, e como</h2>
+        <p>Com válvula no lugar do relé, o ENIAC processava numa velocidade que ninguém tinha visto. Só que
+        programar era mudar cabo de lugar em painel de tomada e girar chave: <b>como trocar a fiação de uma
+        casa inteira pra mudar de lâmpada</b>. Planejar levava semanas, a troca física levava dias.</p>
+        <p>Quem fazia esse trabalho: <b>Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Wescoff, Fran Bilas
+        e Ruth Lichterman</b>. Elas descobriram na prática como programar uma máquina que não tinha manual e
+        conheciam o ENIAC por dentro como pouca gente. Por muito tempo foram tratadas como operadoras, e não
+        como programadoras.</p>
+        <p>Pause o áudio e resolva aqui: ligue os cabos <b>na ordem</b> que a conta pede. Quando ela rodar, a
+        tela vai pedir uma conta diferente.</p>
+      </div>
+      <div class="pranchas com-painel">
+        <div class="painel">
+          <p class="legenda" id="leg7">Conta pedida: <b id="alvo7">A → B → C</b>. Clique nas tomadas nessa ordem.</p>
+          <div class="painel-eniac">
+            <div class="tomadas" id="toms7"></div>
+            <div class="cabos" id="cabos7">nenhum cabo ligado</div>
+          </div>
+          <div class="botoes">
+            <button class="btn" id="btn7limpa">desmontar tudo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 7 -->
+  <section class="tela">
+    <div class="folha">
+      <div class="cabeca">
+        <p class="rotulo"><span class="num">Tela 7</span><span class="tempo">de 7</span></p>
+        <h2>O que ficou faltando</h2>
+        <p>Em <b>1941</b> o Z3 mostrou que dava pra fazer uma máquina universal com 2600 relés, e virou
+        entulho num bombardeio. Em <b>1944</b> o Mark I realizou em Harvard o projeto que Babbage abandonou
+        cem anos antes. Em <b>1945</b> o ENIAC trocou o relé pela válvula e ficou mil vezes mais rápido.</p>
+        <p><b>O episódio para em 1946</b>, com o ENIAC apresentado ao mundo.</p>
+        <p>Nas três, o programa mora <b>fora</b> da memória: em fita, em cabo, em chave. Os números ficam
+        dentro da máquina e as ordens ficam do lado de fora. Enquanto for assim, trocar de tarefa é trabalho
+        braçal.</p>
+        <p class="mono" style="color:var(--accent)">a seguir · o programa que mora na memória</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="nav">
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div class="meio">
+    <div class="pontos" id="dots"></div>
+    <div class="contador" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="imagem ampliada">
+  <div class="quadro" id="quadro">
+    <button class="fechar" id="btnFecha" aria-label="fechar" title="fechar (Esc)">✕</button>
+    <figure>
+      <img id="lbImg" alt="">
+      <figcaption><span id="lbCap"></span><br><span id="lbCred" style="opacity:.7"></span></figcaption>
+    </figure>
+    <iframe id="lbFrame" title="Modelo 3D"></iframe>
+  </div>
+</div>
+
+<script>
+// ---------- reuso de imagem: o base64 entra uma vez so ----------
+document.querySelectorAll('img[data-reusa]').forEach((img) => {
+  const dona = document.getElementById(img.dataset.reusa);
+  if (dona) img.src = dona.src;
+});
+
+// ---------- altura do palco ----------
+// vh mede a JANELA inteira, e o topo e o rodape comem uma parte fixa dela. medindo o
+// <main> de verdade, o teto das imagens acompanha qualquer tamanho de tela.
+const palco = document.querySelector('main');
+function medePalco() {
+  document.documentElement.style.setProperty('--palco', palco.clientHeight + 'px');
+}
+medePalco();
+window.addEventListener('resize', medePalco);
+
+// ---------- navegacao ----------
+const telas = [...document.querySelectorAll('.tela')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+telas.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pra tela ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(telas.length - 1, i));
+  telas.forEach((t, j) => {
+    t.classList.toggle('ativa', j === atual);
+    if (j === atual) t.scrollTop = 0;
+  });
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === telas.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === telas.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + telas.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+
+// ---------- lightbox ----------
+const lb = document.getElementById('lb');
+const quadro = document.getElementById('quadro');
+const lbImg = document.getElementById('lbImg');
+const lbCap = document.getElementById('lbCap');
+const lbCred = document.getElementById('lbCred');
+const btnFecha = document.getElementById('btnFecha');
+let origem = null;   // a miniatura de onde a imagem saiu, pra devolver o foco ao fechar
+
+function fechaLb() {
+  if (!lb.classList.contains('on')) return;
+  lb.classList.remove('on');
+  if (origem) origem.focus();
+  // so tira o src depois do fade, senao a imagem some antes de escurecer
+  setTimeout(() => { if (!lb.classList.contains('on')) lbImg.removeAttribute('src'); }, 280);
+}
+lb.addEventListener('click', fechaLb);
+quadro.addEventListener('click', (e) => e.stopPropagation());
+btnFecha.addEventListener('click', fechaLb);
+
+document.querySelectorAll('.moldura').forEach((m) => {
+  const abre = () => {
+    const img = m.querySelector('img');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCap.textContent = m.dataset.cap || '';
+    lbCred.textContent = m.dataset.cred || '';
+    origem = m;
+    quadro.style.width = '';
+    lb.classList.add('on');
+    // a moldura abraça a imagem: mede a largura que ela ficou e fixa a do quadro
+    const ajusta = () => {
+      const larg = lbImg.getBoundingClientRect().width;
+      if (larg) quadro.style.width = (larg + 28) + 'px';   // 28 = os dois lados do padding
+    };
+    if (lbImg.complete) requestAnimationFrame(ajusta);
+    else lbImg.addEventListener('load', ajusta, { once: true });
+    btnFecha.focus();
+  };
+  m.addEventListener('click', abre);
+  m.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abre(); } });
+});
+document.addEventListener('keydown', (e) => {
+  if (lb.classList.contains('on')) { if (e.key === 'Escape') fechaLb(); return; }
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+
+// ---------- card 3D (modelo embutido em base64; o iframe so ganha src ao abrir) ----------
+// PROVISORIO: enquanto nao existe modelo proprio desta maquina, o token carrega o ABACO.
+const MODELO3D_B64 = '__MODELO3D__';
+const lbFrame = document.getElementById('lbFrame');
+document.querySelectorAll('.card3d').forEach((c) => {
+  c.addEventListener('click', () => {
+    quadro.classList.add('modo3d');
+    quadro.style.width = '';
+    lbFrame.src = 'data:text/html;base64,' + MODELO3D_B64;
+    lb.classList.add('on');
+    btnFecha.focus();
+  });
+});
+const fechaOriginal = fechaLb;
+function fechaTudo() {
+  if (quadro.classList.contains('modo3d')) {
+    lbFrame.removeAttribute('src');   // encerra o loop de render do WebGL
+    quadro.classList.remove('modo3d');
+    lb.classList.remove('on');
+    return;
+  }
+  fechaOriginal();
+}
+lb.removeEventListener('click', fechaOriginal);
+btnFecha.removeEventListener('click', fechaOriginal);
+lb.addEventListener('click', fechaTudo);
+btnFecha.addEventListener('click', fechaTudo);
+// captura: o listener de Escape da base roda no bubble e fecharia a lightbox SEM tirar
+// o src do iframe, deixando o WebGL do modelo rodando atras. Aqui a gente chega antes.
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && quadro.classList.contains('modo3d')) {
+    e.stopPropagation();
+    fechaTudo();
+  }
+}, true);
+
+
+// ---------- tela 4: corrida rele x valvula ----------
+(() => {
+  const TOTAL = 5000;
+  const cRele = document.getElementById('c5rele'), cValv = document.getElementById('c5valv');
+  const bRele = document.getElementById('b5rele'), bValv = document.getElementById('b5valv');
+  const leg = document.getElementById('leg5');
+  let anim = null;
+
+  function pinta(nRele, nValv) {
+    cRele.textContent = Math.round(nRele).toLocaleString('pt-BR');
+    cValv.textContent = Math.round(nValv).toLocaleString('pt-BR');
+    bRele.style.width = (nRele / TOTAL * 100) + '%';
+    bValv.style.width = (nValv / TOTAL * 100) + '%';
+  }
+  function zera() {
+    if (anim) cancelAnimationFrame(anim);
+    anim = null;
+    pinta(0, 0);
+    leg.innerHTML = 'Dispare a mesma conta nas duas tecnologias e veja a diferença.';
+  }
+  document.getElementById('btn5reset').addEventListener('click', zera);
+  document.getElementById('btn5go').addEventListener('click', () => {
+    if (anim) cancelAnimationFrame(anim);
+    // 1 segundo de tela = 1 segundo real da valvula; o rele anda 100x mais devagar
+    const t0 = performance.now();
+    let avisou = false;
+    (function passo(t) {
+      const s = (t - t0) / 1000;
+      const nValv = Math.min(TOTAL, 5000 * s);
+      const nRele = Math.min(TOTAL, 50 * s);
+      pinta(nRele, nValv);
+      if (nValv >= TOTAL && !avisou) {
+        avisou = true;
+        leg.innerHTML = 'A válvula terminou as 5.000. O relé vai levar <b>100 segundos</b> pra chegar no mesmo lugar.';
+      }
+      if (nRele < TOTAL) anim = requestAnimationFrame(passo);
+      else { leg.innerHTML = 'Os dois chegaram. A diferença foi de <b>cerca de mil vezes</b>.'; anim = null; }
+    })(t0);
+  });
+  zera();
+})();
+
+// ---------- tela 6: painel do ENIAC ----------
+(() => {
+  const LETRAS = ['A', 'B', 'C', 'D'];
+  const CONTAS = [['A', 'B', 'C'], ['C', 'A', 'D'], ['D', 'B', 'A'], ['B', 'D', 'C']];
+  const toms = document.getElementById('toms7');
+  const cabos = document.getElementById('cabos7');
+  const leg = document.getElementById('leg7');
+  let conta = 0, feito = [];
+
+  LETRAS.forEach((l) => {
+    const b = document.createElement('button');
+    b.className = 'tom';
+    b.textContent = l;
+    b.addEventListener('click', () => liga(l, b));
+    toms.appendChild(b);
+  });
+
+  function pinta() {
+    cabos.textContent = feito.length ? 'cabos ligados: ' + feito.join(' → ') : 'nenhum cabo ligado';
+    [...toms.children].forEach((b) => {
+      b.classList.toggle('lig', feito.includes(b.textContent));
+      b.classList.remove('erro');
+    });
+  }
+  function limpa() {
+    feito = [];
+    pinta();
+    leg.innerHTML = 'Conta pedida: <b>' + CONTAS[conta].join(' → ') + '</b>. Clique nas tomadas nessa ordem.';
+  }
+  function liga(l, b) {
+    const esperado = CONTAS[conta][feito.length];
+    if (l !== esperado) {
+      b.classList.add('erro');
+      leg.innerHTML = 'Essa não. A conta pede <b>' + esperado + '</b> agora. Recomece o cabo.';
+      feito = [];
+      setTimeout(pinta, 700);
+      return;
+    }
+    feito.push(l);
+    pinta();
+    if (feito.length === CONTAS[conta].length) {
+      conta = (conta + 1) % CONTAS.length;
+      leg.innerHTML = 'Rodou. Agora a máquina precisa de <b>outra conta</b>: ' + CONTAS[conta].join(' → ') +
+                      '. Repare que não deu pra aproveitar nada: você tem que desmontar e refazer.';
+      feito = [];
+      setTimeout(pinta, 100);
+    }
+  }
+  document.getElementById('btn7limpa').addEventListener('click', limpa);
+  limpa();
+})();
+
+mostra(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Titulo: Como o ábaco virou o computador
+Notebook: 01-01-O Ábaco
+
+Descricao:
+Estes documentos apresentam o episódio inaugural de uma série educativa intitulada Como Reinventar o Computador do Zero, focada na trajetória histórica do ábaco. O conteúdo explora a evolução da contagem desde 8000 a.C., quando fichas de argila eram usadas para controle agrícola, até o surgimento da escrita e do cálculo posicional na Suméria. Através de um roteiro estruturado em treze telas de animação, o material ensina o funcionamento prático do instrumento, destacando conceitos como o valor das hastes e o movimento do vai-um. A narrativa enfatiza que o ábaco representa a primeira vez que a humanidade externalizou o raciocínio matemático para um objeto físico. O texto conclui ligando essa tecnologia milenar aos computadores modernos, apontando que a necessidade de automatizar o movimento das pedras levaria à criação de máquinas futuras.
+
+Link: https://notebook.google.com/notebook/83704201-978f-4abf-81fa-c2e36d3d5c8c

@@ -1,0 +1,7 @@
+Titulo: Como pedras viraram máquinas que conversam
+Notebook: Como Reinventar o Computador do Zero-01 - DO ABACO AO TRANSFORMER
+
+Descricao:
+Os textos descrevem uma série educativa intitulada "Como Reinventar o Computador do Zero", que detalha a evolução tecnológica desde a lógica antiga até a inteligência artificial contemporânea. O conteúdo serve como um guia para um podcast ou curso interativo, utilizando uma página de animação para ilustrar conceitos complexos de forma visual e prática. A narrativa percorre dezesseis episódios organizados cronologicamente, abrangendo marcos como o ábaco, a máquina de Turing e a arquitetura Transformer de 2017. O objetivo central é demonstrar que computadores modernos são construídos sobre camadas de ideias simples acumuladas ao longo de milênios. A abordagem utiliza uma linguagem casual e direta, evitando termos rebuscados para tornar o aprendizado acessível a qualquer interessado. Essa estrutura visa desmistificar a tecnologia atual ao conectá-la diretamente às suas origens históricas e mecânicas.
+
+Link: https://notebook.google.com/notebook/184bad13-8dc3-4cb6-9759-5f885be670cc

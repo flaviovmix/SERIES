@@ -1,0 +1,13 @@
+O TELEGRAFO - CONTEXTO
+======================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o decimo episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard, os automatos, a caixa de musica e a Maquina Analitica de Babbage. Este cobre o telegrafo eletrico: Cooke e Wheatstone na Inglaterra (1837) e Samuel Morse com Alfred Vail nos EUA (demonstracao em 1838, linha Washington-Baltimore em 1844). E o salto da serie pra era eletrica: a informacao deixa as engrenagens e passa a viajar por um fio, na velocidade do raio.
+
+O episodio acompanha uma PAGINA DE ANIMACAO COM SOM (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir, e a pagina TOCA DE VERDADE (avisar de ligar o som). Ha uma tela interativa da tecla (segurar e soltar: toque curto e toque longo, com o eletroima batendo do outro lado), uma demonstracao do codigo Morse transmitindo S O S, uma demonstracao do RELE (o sinal fraco renascendo com bateria nova) e uma pratica (transmitir a palavra ADA em Morse, com a colinha das letras na tela). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: o que existia antes (as torres de Chappe de 1794, semaforos oticos que paravam de noite e na neblina), o circuito basico do telegrafo (tecla fecha a corrente, eletroima bate do outro lado), o codigo Morse (ponto e traco, com as letras mais comuns ganhando os codigos mais curtos, como o E que e um ponto so), o rele (o eletroima que fecha um circuito novo com bateria nova, fazendo o sinal renascer de estacao em estacao) e o cabo transatlantico (1858 por semanas, 1866 de vez).
+
+Por que importa: e a informacao virando sinal eletrico e o mundo virando rede, uma internet de pontos e tracos 130 anos antes da nossa. E o rele, inventado pra repetir sinal, e a peca que vai construir os primeiros computadores eletromecanicos mais adiante. A limitacao (o telegrafo transmite mas nao calcula nem lembra) e o gancho pro proximo episodio: as maquinas de cartao de Hollerith e o censo de 1890.
+
+Use este contexto apenas como apoio.

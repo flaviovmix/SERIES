@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Os Autômatos — Equipamento 07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ease:cubic-bezier(.22,1,.36,1);
+  --bg:#efe4cd; --bg2:#e5d6b8; --ink:#2b2016; --sub:#6d5b42;
+  --accent:#8c5a22; --accent2:#b07b31; --card:#f7efdd; --line:#c9b58f;
+  --ok:#4a7a3a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Fraunces',Georgia,serif; background:var(--bg); color:var(--ink);
+  overflow:hidden; display:flex; flex-direction:column;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background:
+    radial-gradient(ellipse at 50% 120%, var(--bg2) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.025) 3px 4px);
+}
+.mono{font-family:'IBM Plex Mono',Consolas,monospace}
+
+header{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:14px 22px; border-bottom:1px solid var(--line);
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.14em;
+  color:var(--sub); text-transform:uppercase;
+}
+header .dot{color:var(--accent)}
+.audio-hint{display:flex; align-items:center; gap:8px}
+.audio-hint .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+main{position:relative; z-index:1; flex:1; overflow:hidden}
+.step{
+  position:absolute; inset:0; padding:24px 30px 16px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transform:translateY(18px); text-align:center; overflow-y:auto;
+  transition:opacity .5s var(--ease), transform .5s var(--ease), visibility 0s .5s;
+}
+.step.active{opacity:1; visibility:visible; transform:none; transition-delay:0s}
+
+.kicker{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin-bottom:12px}
+h1{font-size:clamp(36px,7vw,72px); font-weight:900; line-height:1.02}
+h2{font-size:clamp(24px,4vw,38px); font-weight:900; line-height:1.05; max-width:760px}
+.lede{font-size:clamp(14px,1.8vw,18px); color:var(--sub); max-width:620px; margin-top:12px; line-height:1.55}
+
+.step .reveal{opacity:0; transform:translateY(14px)}
+.step.active .reveal{animation:rise .6s var(--ease) forwards}
+.step.active .reveal:nth-of-type(1){animation-delay:.05s}
+.step.active .reveal:nth-of-type(2){animation-delay:.18s}
+.step.active .reveal:nth-of-type(3){animation-delay:.31s}
+.step.active .reveal:nth-of-type(4){animation-delay:.44s}
+@keyframes rise{to{opacity:1; transform:none}}
+
+/* ficha do equipamento */
+.ficha{
+  display:flex; gap:14px; margin-top:22px; flex-wrap:wrap; justify-content:center; max-width:880px;
+}
+.ficha .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 20px; min-width:200px; max-width:270px; text-align:left;
+  box-shadow:0 1px 0 var(--line), 0 14px 30px -18px rgba(0,0,0,.3);
+}
+.ficha .rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:6px}
+.ficha .texto{font-size:14.5px; line-height:1.5}
+
+/* painel padrao */
+.painel{
+  background:var(--card); border:1px solid var(--line); border-radius:14px;
+  padding:20px 24px; margin-top:18px; max-width:760px; width:100%;
+}
+.legenda{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:12.5px; color:var(--sub);
+  min-height:38px; margin-bottom:12px; letter-spacing:.03em; line-height:1.5;
+  text-align:center;
+}
+.legenda b{color:var(--accent)}
+.legenda.ok{color:var(--ok); font-weight:600}
+
+/* came */
+.came-wrap{display:flex; gap:20px; justify-content:center; align-items:center; flex-wrap:wrap}
+.traco-rotulo{font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--sub); margin-top:6px}
+
+/* escritor */
+.fila-cames{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; min-height:44px; align-items:center}
+.came-chip{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:15px; font-weight:600;
+  width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background:var(--bg2); border:2px solid var(--accent2); color:var(--ink);
+  box-shadow:inset 0 -3px 0 rgba(0,0,0,.08);
+}
+.came-chip.vazio{border-style:dashed; color:var(--line); background:transparent}
+.papel{
+  margin:14px auto 0; max-width:420px; min-height:64px; border-radius:8px;
+  background:#faf4e4; border:1px solid var(--line); box-shadow:0 2px 0 var(--line);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Fraunces',Georgia,serif; font-style:italic; font-weight:600;
+  font-size:38px; letter-spacing:.08em; color:#3d2c17; padding:10px 18px;
+}
+.paleta{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:6px}
+.paleta button{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:15px; font-weight:600;
+  width:40px; height:40px; border-radius:50%; cursor:pointer;
+  background:none; border:2px solid var(--line); color:var(--sub); transition:all .2s;
+}
+.paleta button:hover{border-color:var(--accent); color:var(--accent)}
+
+.botoes{display:flex; gap:10px; margin-top:14px; justify-content:center; flex-wrap:wrap}
+.btn-mini{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; letter-spacing:.1em;
+  background:none; border:1px solid var(--line); color:var(--sub); border-radius:99px;
+  padding:7px 16px; cursor:pointer; text-transform:uppercase; transition:all .25s;
+}
+.btn-mini:hover{border-color:var(--accent); color:var(--accent)}
+.btn-mini.cheio{background:var(--accent); color:var(--bg); border-color:var(--accent); font-weight:600}
+.btn-mini.cheio:hover{color:var(--bg)}
+.btn-mini:disabled{opacity:.3; cursor:default}
+
+.mundo{display:flex; gap:16px; margin-top:20px; flex-wrap:wrap; justify-content:center; max-width:880px}
+.mundo .item{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; width:250px; text-align:left;
+}
+.mundo .nome{font-size:18px; font-weight:600}
+.mundo .desc{font-size:13px; color:var(--sub); line-height:1.5; margin-top:6px}
+
+footer{
+  position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:14px 22px 18px; border-top:1px solid var(--line);
+}
+.nav-btn{
+  font-family:'IBM Plex Mono',Consolas,monospace; font-size:13px; letter-spacing:.14em;
+  text-transform:uppercase; cursor:pointer; background:var(--accent); color:var(--bg);
+  border:none; border-radius:99px; padding:13px 30px; font-weight:600;
+  transition:transform .2s var(--ease);
+}
+.nav-btn:hover{transform:translateY(-2px)}
+.nav-btn:disabled{opacity:.25; cursor:default; transform:none}
+.nav-btn.ghost{background:none; color:var(--sub); border:1px solid var(--line)}
+.dots{display:flex; gap:8px; align-items:center}
+.dots button{width:9px; height:9px; border-radius:50%; border:none; cursor:pointer; background:var(--line); transition:all .3s}
+.dots button.cur{background:var(--accent); transform:scale(1.5)}
+.contador{font-family:'IBM Plex Mono',Consolas,monospace; font-size:11px; color:var(--sub); letter-spacing:.14em}
+
+@media (max-width:700px){
+  .step{padding:18px 14px 12px}
+  .painel{padding:14px 12px}
+  .papel{font-size:28px; min-height:52px}
+  .came-chip,.paleta button{width:34px; height:34px; font-size:13px}
+  .legenda{font-size:11px; min-height:32px}
+  .btn-mini{padding:6px 12px; font-size:10px}
+  footer{padding:10px 10px 14px; gap:8px}
+  .nav-btn{padding:10px 14px; font-size:10px; letter-spacing:.06em}
+  .dots{gap:5px}
+  .dots button{width:7px; height:7px}
+  .contador{font-size:9px}
+  header{padding:10px 12px; font-size:9px}
+  .audio-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> 07 <span class="dot">·</span> OS AUTÔMATOS</div>
+  <div class="audio-hint"><span class="pulse"></span> ACOMPANHE COM O ÁUDIO</div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">equipamento 07 · série equipamentos</div>
+    <h1 class="reveal">Os Autômatos</h1>
+    <p class="lede reveal">Antes do tear prometido, um desvio pelo século 18: bonecos mecânicos
+    que comiam, tocavam flauta e escreviam cartas — máquinas que não calculam nada,
+    mas executam um <b>roteiro gravado</b>. Quando o áudio pedir, aperte <b>Próximo</b>.
+    Na prática, pause e brinque.</p>
+  </section>
+
+  <!-- 2 · ficha -->
+  <section class="step">
+    <div class="kicker reveal">a ficha do equipamento</div>
+    <h2 class="reveal">Nome, data e motivação</h2>
+    <div class="ficha">
+      <div class="item reveal">
+        <div class="rotulo">nome</div>
+        <div class="texto">Autômatos: bonecos e bichos mecânicos movidos a corda, programados por cames (discos de bordas recortadas).</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">data e lugar</div>
+        <div class="texto">Jacques de Vaucanson, Paris, anos 1730-40. Família Jaquet-Droz, Suíça relojoeira, anos 1770.</div>
+      </div>
+      <div class="item reveal">
+        <div class="rotulo">motivação</div>
+        <div class="texto">Assombrar as cortes da Europa, vender relógios de luxo — e provar uma tese: movimento que parece vivo pode ser só mecanismo.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · as estrelas -->
+  <section class="step">
+    <div class="kicker reveal">as estrelas do século 18</div>
+    <h2 class="reveal">Máquinas fingindo estar vivas</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">O pato de Vaucanson</div>
+        <div class="desc">Comia, bebia, batia as asas (mais de 400 peças só numa asa) e até "digeria" a comida. A Europa inteira pagou ingresso pra ver.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O flautista</div>
+        <div class="desc">Do mesmo Vaucanson: um boneco em tamanho real que soprava uma flauta DE VERDADE, com pulmões de fole, lábios e dedos mecânicos.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">O Escritor</div>
+        <div class="desc">De Jaquet-Droz: um menino de madeira que molha a pena no tinteiro e escreve. E o pulo do gato: dá pra <b>trocar a frase</b> que ele escreve.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · o came -->
+  <section class="step">
+    <div class="kicker reveal">a peça que guarda o roteiro</div>
+    <h2 class="reveal">O came: movimento gravado na borda</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legCame">Um disco de borda recortada gira; um apalpador segue a borda e vira movimento. Troque o perfil e gire.</div>
+      <div class="came-wrap">
+        <div>
+          <svg id="svgCame" width="200" height="200" viewBox="0 0 200 200"></svg>
+          <div class="traco-rotulo">o came</div>
+        </div>
+        <div>
+          <svg id="svgTraco" width="260" height="140" viewBox="0 0 260 140"></svg>
+          <div class="traco-rotulo">o movimento que sai</div>
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnGiraCame">girar o came</button>
+        <button class="btn-mini" id="btnPerfil">trocar o perfil da borda</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · o escritor por dentro -->
+  <section class="step">
+    <div class="kicker reveal">dentro do escritor</div>
+    <h2 class="reveal">Uma pilha de cames por letra</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legEscritor">Cada letra é um conjunto de cames. A frase é a FILA de cames montada na máquina. Troque a fila e mande escrever.</div>
+      <div class="fila-cames" id="filaDemo"></div>
+      <div class="papel" id="papelDemo">&nbsp;</div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnFraseA">escrever com a fila S-I-M</button>
+        <button class="btn-mini cheio" id="btnFraseB">escrever com a fila N-A-O</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · os furos antes do tear -->
+  <section class="step">
+    <div class="kicker reveal">o mesmo mundo inventando os furos</div>
+    <h2 class="reveal">Do came ao papel furado</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">Bouchon (1725)</div>
+        <div class="desc">Tecelão de Lyon, filho de organeiro: usou um <b>rolo de papel furado</b> pra escolher os fios do tear. A ideia dos furos nasceu aqui.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">Falcon (1728)</div>
+        <div class="desc">Trocou o rolo por <b>cartões amarrados</b> em corrente: mais resistentes, fáceis de trocar e de emendar. O formato que o Jacquard herdaria.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">Vaucanson (1745)</div>
+        <div class="desc">O homem do pato fez um <b>tear automático</b>. Os tecelões odiaram e a máquina foi pro depósito — onde, décadas depois, um certo Jacquard a encontrou e terminou o serviço.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Sua vez: monte a fila de cames</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">Pause o áudio. Monte a fila pra máquina escrever <b>ADA</b>, depois mande escrever.</div>
+      <div class="fila-cames" id="filaPratica"></div>
+      <div class="paleta" id="paleta"></div>
+      <div class="papel" id="papelPratica">&nbsp;</div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnEscrever">escrever</button>
+        <button class="btn-mini" id="btnTiraUm">tirar o último came</button>
+        <button class="btn-mini" id="btnLimparFila">limpar a fila</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · encerramento -->
+  <section class="step">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">O roteiro saiu do corpo e virou peça</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">Ainda funcionam</div>
+        <div class="desc">Os três bonecos de Jaquet-Droz (o Escritor, o Desenhista e a Musicista) tocam e escrevem até hoje, num museu em Neuchâtel, na Suíça. O pato se perdeu num incêndio.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A ideia</div>
+        <div class="desc">Um roteiro inteiro gravado em metal, executado sem ninguém: o came é o avô do programa. E os furos de Bouchon e Falcon já esperavam a vez deles.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">A limitação</div>
+        <div class="desc">Cravar cames em metal é caro, lento e de luxo. No mesmo mundo dos relojoeiros suíços, nascia a versão barata e de bolso do roteiro gravado. Próximo equipamento: a caixa de música.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <button class="nav-btn ghost" id="btnPrev">← Anterior</button>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+    <div class="dots" id="dots"></div>
+    <div class="contador mono" id="contador"></div>
+  </div>
+  <button class="nav-btn" id="btnNext">Próximo →</button>
+</footer>
+
+<script>
+// ---------- navegacao ----------
+const passos = [...document.querySelectorAll('.step')];
+const dots = document.getElementById('dots');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const contador = document.getElementById('contador');
+let atual = 0;
+
+passos.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.setAttribute('aria-label', 'ir pro passo ' + (i + 1));
+  d.addEventListener('click', () => mostra(i));
+  dots.appendChild(d);
+});
+function mostra(i) {
+  atual = Math.max(0, Math.min(passos.length - 1, i));
+  passos.forEach((p, j) => p.classList.toggle('active', j === atual));
+  [...dots.children].forEach((d, j) => d.classList.toggle('cur', j === atual));
+  btnPrev.disabled = atual === 0;
+  btnNext.textContent = atual === passos.length - 1 ? 'Fim ✦' : 'Próximo →';
+  btnNext.disabled = atual === passos.length - 1;
+  contador.textContent = (atual + 1) + ' / ' + passos.length;
+}
+btnPrev.addEventListener('click', () => mostra(atual - 1));
+btnNext.addEventListener('click', () => mostra(atual + 1));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') mostra(atual + 1);
+  if (e.key === 'ArrowLeft') mostra(atual - 1);
+});
+mostra(0);
+
+// ---------- tela 4: o came ----------
+const NS = 'http://www.w3.org/2000/svg';
+const svgCame = document.getElementById('svgCame');
+const svgTraco = document.getElementById('svgTraco');
+const legCame = document.getElementById('legCame');
+
+// perfis: raio em funcao do angulo (0..2pi)
+const PERFIS = [
+  { nome: 'ondulado', f: (a) => 55 + 22 * Math.sin(a * 3) },
+  { nome: 'rampa', f: (a) => 40 + 38 * (a / (2 * Math.PI)) },
+  { nome: 'circulo', f: () => 62 },
+];
+let perfilAtual = 0;
+let anguloCame = 0;
+
+const gCame = document.createElementNS(NS, 'g');
+gCame.setAttribute('transform', 'translate(100,100)');
+svgCame.appendChild(gCame);
+const caminhoCame = document.createElementNS(NS, 'path');
+caminhoCame.setAttribute('fill', 'var(--bg2)');
+caminhoCame.setAttribute('stroke', 'var(--accent)');
+caminhoCame.setAttribute('stroke-width', '3');
+gCame.appendChild(caminhoCame);
+const eixoCame = document.createElementNS(NS, 'circle');
+eixoCame.setAttribute('r', '8');
+eixoCame.setAttribute('fill', 'var(--accent)');
+gCame.appendChild(eixoCame);
+// apalpador: haste vertical apoiada no topo do came
+const apalpador = document.createElementNS(NS, 'rect');
+apalpador.setAttribute('x', '96'); apalpador.setAttribute('width', '8');
+apalpador.setAttribute('rx', '3'); apalpador.setAttribute('fill', 'var(--accent2)');
+svgCame.appendChild(apalpador);
+
+function desenhaCame() {
+  const f = PERFIS[perfilAtual].f;
+  let d = '';
+  for (let i = 0; i <= 72; i++) {
+    const a = (i / 72) * 2 * Math.PI;
+    const r = f(a);
+    const x = r * Math.cos(a + anguloCame);
+    const y = r * Math.sin(a + anguloCame);
+    d += (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1);
+  }
+  caminhoCame.setAttribute('d', d + 'Z');
+  // altura do apalpador = raio do came na direcao "pra cima" (-90 graus)
+  const rTopo = f(((-Math.PI / 2 - anguloCame) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI));
+  const topoY = 100 - rTopo;
+  apalpador.setAttribute('y', String(topoY - 46));
+  apalpador.setAttribute('height', '46');
+  return rTopo;
+}
+
+// traco do movimento
+const linhaTraco = document.createElementNS(NS, 'polyline');
+linhaTraco.setAttribute('fill', 'none');
+linhaTraco.setAttribute('stroke', 'var(--accent)');
+linhaTraco.setAttribute('stroke-width', '3');
+linhaTraco.setAttribute('stroke-linecap', 'round');
+svgTraco.appendChild(linhaTraco);
+const baseTraco = document.createElementNS(NS, 'line');
+baseTraco.setAttribute('x1', '0'); baseTraco.setAttribute('y1', '130');
+baseTraco.setAttribute('x2', '260'); baseTraco.setAttribute('y2', '130');
+baseTraco.setAttribute('stroke', 'var(--line)'); baseTraco.setAttribute('stroke-width', '2');
+svgTraco.appendChild(baseTraco);
+let pontosTraco = [];
+
+desenhaCame();
+let girando = false;
+document.getElementById('btnGiraCame').addEventListener('click', () => {
+  if (girando) return;
+  girando = true;
+  pontosTraco = [];
+  linhaTraco.setAttribute('points', '');
+  let passo = 0;
+  const total = 96;
+  const tick = () => {
+    anguloCame += (2 * Math.PI) / total * 2;
+    const r = desenhaCame();
+    const x = (passo / total) * 260;
+    const y = 130 - (r - 35) * 1.05;
+    pontosTraco.push(x.toFixed(1) + ',' + y.toFixed(1));
+    linhaTraco.setAttribute('points', pontosTraco.join(' '));
+    passo++;
+    if (passo <= total) {
+      requestAnimationFrame(tick);
+    } else {
+      girando = false;
+      legCame.innerHTML = 'perfil <b>' + PERFIS[perfilAtual].nome + '</b>: a borda virou esse movimento. A borda E o roteiro.';
+    }
+  };
+  tick();
+});
+document.getElementById('btnPerfil').addEventListener('click', () => {
+  if (girando) return;
+  perfilAtual = (perfilAtual + 1) % PERFIS.length;
+  pontosTraco = [];
+  linhaTraco.setAttribute('points', '');
+  desenhaCame();
+  legCame.innerHTML = 'perfil trocado pra <b>' + PERFIS[perfilAtual].nome + '</b>. Gire e veja o movimento mudar.';
+});
+
+// ---------- tela 5: escritor demo ----------
+const filaDemo = document.getElementById('filaDemo');
+const papelDemo = document.getElementById('papelDemo');
+const legEscritor = document.getElementById('legEscritor');
+function pintaFila(el, letras, vazios) {
+  el.innerHTML = '';
+  letras.forEach((l) => {
+    const c = document.createElement('span');
+    c.className = 'came-chip';
+    c.textContent = l;
+    el.appendChild(c);
+  });
+  for (let i = 0; i < (vazios || 0); i++) {
+    const c = document.createElement('span');
+    c.className = 'came-chip vazio';
+    c.textContent = '·';
+    el.appendChild(c);
+  }
+}
+function escreve(papel, letras, aoFim) {
+  papel.textContent = '';
+  letras.forEach((l, i) => {
+    setTimeout(() => {
+      papel.textContent += l;
+      if (i === letras.length - 1 && aoFim) aoFim();
+    }, 600 * (i + 1));
+  });
+}
+pintaFila(filaDemo, ['S', 'I', 'M']);
+const btnFraseA = document.getElementById('btnFraseA');
+const btnFraseB = document.getElementById('btnFraseB');
+function demoEscreve(letras) {
+  btnFraseA.disabled = true; btnFraseB.disabled = true;
+  pintaFila(filaDemo, letras);
+  legEscritor.innerHTML = 'fila trocada: os cames de <b>' + letras.join('-') + '</b> entraram na máquina...';
+  escreve(papelDemo, letras, () => {
+    legEscritor.innerHTML = 'mesma máquina, outra fila de cames, outra palavra. O texto mora na FILA, não no boneco.';
+    btnFraseA.disabled = false; btnFraseB.disabled = false;
+  });
+}
+btnFraseA.addEventListener('click', () => demoEscreve(['S', 'I', 'M']));
+btnFraseB.addEventListener('click', () => demoEscreve(['N', 'A', 'O']));
+
+// ---------- tela 7: pratica ADA ----------
+const ALVO = ['A', 'D', 'A'];
+const filaPratica = document.getElementById('filaPratica');
+const papelPratica = document.getElementById('papelPratica');
+const legPratica = document.getElementById('legPratica');
+const paleta = document.getElementById('paleta');
+let fila = [];
+['A', 'B', 'C', 'D', 'E', 'O'].forEach((l) => {
+  const b = document.createElement('button');
+  b.textContent = l;
+  b.addEventListener('click', () => {
+    if (fila.length >= 5) return;
+    fila.push(l);
+    pintaFilaPratica();
+  });
+  paleta.appendChild(b);
+});
+function pintaFilaPratica() {
+  pintaFila(filaPratica, fila, Math.max(0, 3 - fila.length));
+}
+pintaFilaPratica();
+document.getElementById('btnTiraUm').addEventListener('click', () => {
+  fila.pop();
+  pintaFilaPratica();
+});
+document.getElementById('btnLimparFila').addEventListener('click', () => {
+  fila = [];
+  papelPratica.innerHTML = '&nbsp;';
+  legPratica.classList.remove('ok');
+  legPratica.innerHTML = 'Pause o áudio. Monte a fila pra máquina escrever <b>ADA</b>, depois mande escrever.';
+  pintaFilaPratica();
+});
+document.getElementById('btnEscrever').addEventListener('click', () => {
+  if (!fila.length) return;
+  escreve(papelPratica, fila, () => {
+    if (fila.join('') === ALVO.join('')) {
+      legPratica.classList.add('ok');
+      legPratica.innerHTML = '<b>ADA! Você programou o Escritor. Guarde esse nome: ele volta na série. Pode voltar o áudio e apertar o Próximo.</b>';
+    } else {
+      legPratica.classList.remove('ok');
+      legPratica.innerHTML = 'a máquina escreveu <b>' + fila.join('') + '</b>, o alvo era ADA: ajuste a fila e escreva de novo.';
+    }
+  });
+});
+</script>
+</body>
+</html>

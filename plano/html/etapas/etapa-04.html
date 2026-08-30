@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 4 &middot; Plano SEIRES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="etapa.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../index.html">&larr; Plano SEIRES</a> &middot; etapa 04</p>
+    <h1>Publicação</h1>
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span> <p class="note">não iniciada</p></div>
+    <p class="lede"><strong>Objetivo.</strong> Um episódio vai ao ar por procedimento escrito e conferido por script, não de memória.</p>
+  </header>
+
+  <div class="criterio">
+    <p class="rotulo">Pronto quando</p>
+    <p>Um episódio é publicado seguindo só o texto do README, a conferência pós-publicação roda verde contra a nota real, o <code>plano-da-serie.md</code> e a visão HTML foram atualizados na mesma sessão, e a P3 virou decisão escrita.</p>
+  </div>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>implementado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>em parte</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span></span></div>
+
+  <article class="corpo">
+<p>A publicação já aconteceu quinze vezes, e o caminho vive em três lugares: a seção Produção do <code>plano-da-serie.md</code>, a memória da sessão que publicou e a cabeça de quem publicou. Cada vez que um pedaço foi esquecido (capa não apagada da coleção, título da pasta no lugar do título do podcast, faixa fora da tabela do acervo) o plano ganhou um aviso em negrito. Esta etapa transforma os avisos em procedimento e em conferência.</p>
+<h3>Tarefas</h3>
+<div class="scroller"><table><thead><tr><th>N&ordm;</th><th>Tarefa</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">01</td><td><strong>Procedimento de publicação escrito no README, passo a passo, copiável</strong>: mapa de telas obrigatório (<code>mapa-de-telas.py</code>) e a segunda passada com <code>--confere</code>; animação construída pelo script da Etapa 2 e verde na rede da Etapa 3; nota no Nexus (page certa, título = nome que o NotebookLM deu ao áudio, capa via <code>coverAttachmentId</code>, bloco de podcast com a faixa, animação como anexo); <code>_publicado.json</code> na pasta; linha na tabela &quot;Publicados no acervo&quot; e status na tabela da etapa do <code>plano-da-serie.md</code>; visão HTML do plano regerada (<code>gerar-plano-serie.py</code>).</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">02</td><td><strong>Conferência pós-publicação como script versionado</strong>, rodando contra a nota real depois de cada subida: a URL da nota responde, o player está lá com a faixa certa, o anexo abre e é a <code>animacao.html</code> da versão construída (comparar um hash), a capa carrega, e a nota é pública sem login (a régua dos três papéis virou uma: anônimo).</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">03</td><td><strong>O que é público é público por decisão, não por link escondido</strong>: escrever quais rotas do Nexus a nota usa e conferir que a página pública não expõe nada além do episódio.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">04</td><td><strong>Créditos de imagem na nota</strong>: toda prancha com selo <code>imagem real</code> de licença CC BY ou CC BY-SA precisa do crédito visível na legenda; o script confere que <code>img\CREDITOS.md</code> não lista imagem sem crédito na animação.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">05</td><td><strong>Resolver a P3</strong>: three.js via CDN dentro de um anexo publicado. Medir o custo de embutir (tamanho do construído) contra o risco de o CDN sumir, e travar como <code>D*</code>.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">06</td><td><strong>Refazer um episódio publicado tem procedimento próprio</strong>: o que acontece com a nota antiga (editar no lugar, mantendo a faixa, ou nota nova e a antiga arquivada), onde vai a versão anterior (<code>OLD\</code>, <code>_v1\</code>) e como a tabela do acervo registra a troca. Sem isso o refazer de boa parte dos publicados, já decidido na série, vira bagunça de faixa.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">07</td><td>Título e descrição da nota como o cartão de link vai mostrar em aplicativo de mensagem, e a capa leve o bastante pra virar miniatura.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr></tbody></table></div>
+<hr>
+  </article>
+
+  <section><h2>O que trava esta etapa hoje</h2><ul class="pend"><li><b class="tag">P3</b> <strong>O three.js dos modelos 3D vem de CDN</strong>. A animação embutida na nota depende de um servidor de terceiro estar no ar. Embutir ou continuar assim é decisão. <strong>Trava a Etapa 4.</strong></li></ul></section>
+
+  <section>
+    <h2>Desvios registrados</h2>
+    <div class="desvios">
+<p>(nenhum ainda. Aqui entra o que a realidade mudou no plano, com data e motivo, inclusive desvio de método: &quot;executado direto, a pedido do dono&quot;.)</p>
+    </div>
+  </section>
+
+  <nav class="passo"><a class="nav-ir" href="etapa-03.html"><span>anterior</span>Etapa 3 &middot; A rede de testes das animações e dos modelos</a><a class="nav-ir nav-ir--fim" href="etapa-05.html"><span>pr&oacute;xima</span>Etapa 5 &middot; Operação e evolução</a></nav>
+
+  <footer>
+    <span>etapas/04-publicacao.md</span>
+    <span>27.08.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+Inicie dizendo: Por que o Ima Gruda
+---------------
+
+Este e um episodio avulso, que se explica sozinho. Ele existe pra responder as perguntas sobre ima que todo mundo ja fez e ninguem respondeu direito.
+
+REGRA DURA NUMERO UM, VALE PRO ROTEIRO INTEIRO: nao citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. Nada de contar quem descobriu o que nem de onde veio o nome de nada. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS, IGUALMENTE OBRIGATORIA: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado", "mais pra frente a gente fala disso" nem "na proxima vez". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois, e tem que sair entendendo do mesmo jeito.
+
+REGRA DURA NUMERO TRES: o assunto e o ima permanente, aquele que ja e ima sozinho. Ima feito passando eletricidade num fio fica de fora; no maximo uma frase dizendo que existe, sem explicar como funciona.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas (3 e 4), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIA AUTORIZADA PARA ESTE EPISODIO
+
+Este episodio e feito de UMA analogia so, e ela sustenta as 8 telas. O ferro e feito de milhoes de agulhinhas de bussola, pequenas demais pra enxergar. O pareamento e fixo e nao pode mudar no meio do episodio:
+
+- Cada pedacinho do ferro e uma AGULHINHA DE BUSSOLA, com um lado que puxa e outro que empurra.
+- Ferro comum, aquele que nao e ima: as agulhinhas estao BAGUNCADAS, cada uma apontando pra um lado, e o efeito de uma cancela o da outra. Somando tudo, da zero.
+- Ima: as agulhinhas estao TODAS VIRADAS PRO MESMO LADO, e ai os efeitos somam em vez de cancelar.
+- Imantar alguma coisa e ORGANIZAR as agulhinhas. Desimantar e BAGUNCAR de novo.
+- Material que nao gruda, tipo aluminio, cobre e ouro: simplesmente NAO TEM essas agulhinhas pra organizar.
+
+Nenhuma outra analogia. Nada de comparar com torcida de estadio, com fila, com trem, com abraco nem com nada. So as agulhinhas.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: POR QUE O IMA GRUDA)
+
+Comecar pelas perguntas, rapidas, uma atras da outra, porque sao as que a pessoa realmente tem:
+
+Por que ima gruda na porta de ferro e nao gruda na panela de aluminio, no fio de cobre nem numa alianca de ouro? Por que as vezes voce encosta dois imas e eles se empurram, e ai voce vira um deles e eles se grudam? Se um ima tem dois lados, por que quebrar ele no meio nao separa os dois lados? Por que o ima de geladeira so gruda de um lado e do outro nao gruda de jeito nenhum? Por que um ima que caiu no chao ou foi pro forno fica fraco? E a melhor de todas: como e que um ima segura um papel na porta da geladeira por dez anos, dia e noite, sem gastar energia nenhuma e sem descarregar?
+
+Avisar o que este episodio nao e: nao tem cientista, nao tem data e nao tem invencao. E so como a coisa funciona por dentro. E dizer que uma unica imagem responde todas essas perguntas, uma imagem so, e ela vem na proxima tela.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A SALA DE AGULHINHAS)
+
+Apresentar a imagem que sustenta o episodio inteiro, com calma.
+
+Imagine que um pedaco de ferro, por dentro, e feito de milhoes de agulhinhas de bussola, pequenas demais pra enxergar. Cada uma delas tem um lado que puxa e um lado que empurra, igual a agulha de uma bussola de verdade.
+
+Num prego comum, essas agulhinhas estao baguncadas. Uma aponta pra cima, a vizinha pra baixo, a outra pro lado. Cada uma esta fazendo o efeito dela, mas como estao viradas pra todo lado, uma cancela a outra e o resultado somado e zero. Por isso o prego nao gruda em outro prego.
+
+Num ima, essas mesmas agulhinhas estao todas viradas pro mesmo lado. Ninguem cancela ninguem, e ai os efeitos somam. E so isso a diferenca entre ferro comum e ima: nao e um material diferente, e a mesma coisa organizada.
+
+Dar a consequencia mais importante disso agora, porque ela explica meia duzia das perguntas da abertura: imantar nao e colocar nada dentro do ferro. Nao e injetar magnetismo. E so virar as agulhinhas que ja estavam la. E desimantar e baguncar de novo. Nada entra e nada sai.
+
+E dizer por que aluminio, cobre e ouro nao grudam: nao e que eles estejam baguncados. E que eles nao tem essas agulhinhas pra organizar. Nao adianta esfregar ima em panela de aluminio a vida inteira: nao tem o que alinhar ali dentro. Os materiais que tem sao poucos, e o principal, disparado, e o ferro.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (POR QUE ELE GRUDA NO PREGO, TELA INTERATIVA)
+
+Agora a pergunta mais direta de todas: por que o ima gruda num prego, se o prego nao e ima?
+
+A resposta e boa: ele vira ima na hora. Quando o ima chega perto, as agulhinhas do prego, que estavam baguncadas, sentem a puxada e se viram pro mesmo lado. O prego vira um ima temporario. E ai sao dois imas com os lados certos um pro outro, e eles se atraem.
+
+Afastou o ima, as agulhinhas do prego se baguncam de novo e ele volta a ser prego comum. Por isso o prego nao fica grudando nas outras coisas depois.
+
+E isso explica um brinquedo que todo mundo ja fez: pendurar um clipe no ima, e no primeiro clipe pendurar um segundo, e um terceiro, formando uma correntinha. Cada clipe vira ima enquanto esta na fila, e por isso segura o de baixo. Solta o de cima e a corrente inteira cai junto, porque todo mundo volta a ser clipe comum no mesmo instante.
+
+E aproveitar pra matar uma duvida chata de casa: geladeira de inox que nao segura ima. Nao e que o ima esteja fraco. Existem varios tipos de aco inox, e alguns deles sao feitos de um jeito que nao tem as agulhinhas pra organizar. Naquele tipo de porta, nenhum ima do mundo vai grudar.
+
+Avisar: a tela tem o ima e o prego com as agulhinhas a mostra. Convide o ouvinte a aproximar e afastar o ima e ver as agulhinhas do prego se organizarem e se baguncarem de novo.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (OS DOIS LADOS E A QUEBRA, TELA INTERATIVA)
+
+Todo ima tem dois lados diferentes. Costuma-se chamar de norte e sul, e o nome nao importa muito; o que importa e que sao lados opostos.
+
+A regra e curta: lados diferentes se atraem, lados iguais se empurram. E por isso que voce encosta dois imas e eles fogem um do outro, vira um deles e eles se colam. Nao tem ima quebrado nisso, e o comportamento normal.
+
+E agora a pergunta boa. Se o ima tem um lado de cada tipo, o que acontece se eu quebrar ele exatamente no meio? Fico com um lado num pedaco e o outro lado no outro?
+
+Nao. Voce fica com dois imas completos, cada um com os seus dois lados. Quebre de novo e sao quatro imas completos. Quebre ate virar po e cada graozinho de po e um ima completo.
+
+E a analogia das agulhinhas explica isso sem esforco: o ima nao tem um lado guardado numa ponta e o outro na outra. Ele e feito de milhoes de agulhinhas, e cada agulhinha ja tem os dois lados dela. Quebrar so separa um monte de agulhinhas de outro monte. Nunca vai existir um pedaco que tenha so um lado, porque nem a menor peca de dentro dele tem so um lado.
+
+Avisar: a tela tem o ima pra quebrar. Convide o ouvinte a ir partindo ao meio quantas vezes quiser e ver que sempre saem dois imas inteiros.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O QUE TEM EM VOLTA)
+
+Aqui entra a coisa que nao da pra ver e que e metade do assunto: o ima age a distancia, sem encostar.
+
+Descrever a experiencia classica: um papel em cima do ima e limalha de ferro jogada por cima. Os graozinhos nao ficam espalhados de qualquer jeito, eles se organizam em linhas que saem de um lado do ima e entram no outro, desenhando um formato de laco em volta dele. Cada graozinho e uma agulhinha se alinhando, e o desenho todo mostra pra onde a forca aponta em cada ponto do espaco.
+
+Dizer com todas as letras: o ima nao termina na superficie dele. Em volta dele existe uma regiao onde ele consegue mandar, e o desenho da limalha e o mapa dessa regiao.
+
+E dar o detalhe pratico que todo mundo ja sentiu na mao: essa forca cai muito rapido conforme voce afasta. Nao e proporcional, e muito pior que isso. Um ima que arranca um clipe da mesa encostado nao consegue nem mexer o mesmo clipe a dois dedos de distancia. E por isso que ima gruda com um estalo quando chega perto: o ultimo milimetro e onde quase toda a forca aparece.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (COMO SE FAZ E COMO SE ESTRAGA)
+
+Se ser ima e so ter as agulhinhas organizadas, entao fabricar um e organizar, e estragar um e baguncar. E e exatamente isso.
+
+Pra fabricar: pegue um prego e esfregue um ima nele, sempre no mesmo sentido, do comeco ao fim, umas trinta ou quarenta vezes. Sempre no mesmo sentido, esse detalhe e o que importa: ir e voltar esfregando desorganiza de novo. Depois disso o prego levanta clipes sozinho. Voce nao colocou nada nele; so virou as agulhinhas que ja estavam ali.
+
+Pra estragar tem dois jeitos, e os dois sao coisas que todo mundo ja fez sem querer. O primeiro e pancada: bater com forca ou deixar cair no chao duro sacode as agulhinhas e parte delas se desalinha. O segundo e calor: quanto mais quente o material, mais as coisinhas la dentro se agitam, e passando de certa temperatura elas se baguncam de vez e o ima morre. Nao volta sozinho quando esfria; tem que imantar de novo.
+
+E fechar com o ima de geladeira, que e uma pergunta que todo mundo tem: por que aquela plaquinha preta e mole gruda de um lado e do outro lado nao gruda nada?
+
+Porque ele nao e um ima so. Naquela face que gruda existem varias faixas estreitas, uma do lado da outra, com os lados alternados: uma faixa com um lado pra fora, a vizinha com o lado contrario pra fora, e assim por diante. Isso concentra a forca bem rentinha a superficie, o que e otimo pra segurar um papel numa porta lisa, e faz a forca praticamente sumir do outro lado da plaquinha. Da pra sentir isso: encoste dois imas de geladeira de frente um com o outro e deslize um deles devagar. Voce sente as faixas passando, tipo ondulacao.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: FABRIQUE E DESTRUA UM IMA)
+
+Convidar a pausar o audio e resolver na tela: tem um prego com as agulhinhas baguncadas, um ima pra esfregar, uma pilha de clipes pra testar e, do lado, um martelo e uma chama.
+
+O objetivo e organizar o prego a ponto de ele levantar o maior numero de clipes. Esfregar sempre no mesmo sentido organiza mais. Esfregar de ida e volta atrapalha, e da pra ver isso acontecendo nas agulhinhas.
+
+Depois de conseguir, o convite e destruir: bater com o martelo ou aquecer, e ver as agulhinhas se baguncando e os clipes caindo.
+
+Quando terminar de brincar, volte o audio e aperte o Proximo.
+
+TELA 8 (ONDE A ANALOGIA QUEBRA E FECHAMENTO)
+
+Comecar avisando com honestidade: a imagem das agulhinhas resolve quase tudo, mas ela nao e literal, e e melhor saber onde ela deixa de valer. Sao tres pontos, e depois duas curiosidades que fecham o assunto.
+
+Primeiro: nao tem agulhinha de metal nenhuma dentro do ferro. Nao adianta serrar e procurar. Aquilo e uma propriedade dos pedacinhos mais basicos que formam o material, e nao uma pecinha separada que da pra tirar de dentro.
+
+Segundo: elas nao estao soltas uma da outra. Elas se organizam em bairros, regioes inteiras onde todo mundo ja aponta pro mesmo lado. Num prego comum existem varios bairros apontando pra lados diferentes, e o que muda quando voce imanta e que um bairro cresce e vai dominando os outros. E menos "virar agulha por agulha" e mais "um bairro engolindo o resto".
+
+Terceiro: dizer que existe tambem outro jeito de ter ima, que e passando eletricidade num fio enrolado. Isso e um assunto inteiro por si so e nao cabe aqui; fica so o registro de que o ima que a gente descreveu neste episodio e o que ja e ima sozinho, sem nada ligado nele.
+
+E as duas curiosidades pra fechar.
+
+A primeira responde a pergunta da abertura: por que o ima segura um papel na geladeira por dez anos sem gastar energia? Porque segurar parado nao gasta nada. Gasto acontece quando alguma coisa se move ou muda, e ali nada esta se movendo. As agulhinhas ja estao organizadas e ficam organizadas; nao tem bateria nem consumo. E o mesmo motivo de um prego numa parede segurar um quadro pra sempre sem se cansar.
+
+A segunda: a Terra inteira se comporta como um ima gigante, e e por isso que a agulha da bussola sempre se vira pro mesmo lado. Tem uma pegadinha divertida nisso: como lados iguais se empurram e lados diferentes se atraem, o ponto pro qual o lado norte da agulha aponta e, magneticamente falando, um lado SUL. Ou seja, o polo norte magnetico do planeta e, tecnicamente, um sul.
+
+Recapitular em quatro frases: ferro comum e ima sao a mesma coisa, muda so a organizacao. Ferro perto de ima vira ima temporario, e por isso gruda. Quebrar um ima da dois imas completos, porque cada pedacinho ja tinha os dois lados. E pancada e calor baguncam tudo de novo.
+
+E fechar com o que isso permite, que e maior do que parece: uma agulhinha pode estar virada pra um lado ou pro outro, e da pra escolher qual. Isso e um jeito de guardar uma informacao, e uma informacao que fica guardada mesmo com tudo desligado. E assim que fita magnetica, tarja de cartao e disco rigido de computador guardam o que guardam: milhoes de agulhinhas viradas, cada uma segurando um pedacinho da resposta.

@@ -1,0 +1,181 @@
+Inicie dizendo: Volt Ampere e Watt
+---------------
+
+Este e um episodio avulso, que se explica sozinho. Ele existe pra resolver uma duvida pratica que quase todo mundo tem, que e o que significam volt, ampere, watt e as outras medidas da eletricidade.
+
+REGRA DURA NUMERO UM, VALE PRO ROTEIRO INTEIRO: nao citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. Nada de contar de onde veio o nome das unidades nem quem descobriu o que. As unidades entram so como medidas. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS, IGUALMENTE OBRIGATORIA: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado", "mais pra frente a gente fala disso" nem "na proxima vez". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois, e tem que sair entendendo do mesmo jeito.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas interativas (3 e 4), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIA AUTORIZADA PARA ESTE EPISODIO
+
+Este episodio e feito de UMA analogia so, e ela sustenta as 8 telas. E um predio com caixa dagua no telhado. O pareamento e fixo e nao pode mudar no meio do episodio:
+
+- A agua em si e a carga eletrica, medida em coulomb. E o que corre por dentro.
+- A ALTURA da caixa dagua, ou seja a pressao que ela faz, e a TENSAO, medida em volt.
+- Os LITROS POR SEGUNDO que passam num cano sao a CORRENTE, medida em ampere.
+- O CANO, mais fino ou mais grosso, mais curto ou mais comprido, e a RESISTENCIA, medida em ohm.
+- O REGISTRO que abre e fecha e o interruptor.
+- A MANGUEIRA DE BICO FINO que o zelador usa pra tirar lodo da calcada e a POTENCIA, medida em watt: e pressao vezes vazao, o trabalho que a agua faz por segundo.
+- Os LITROS QUE PASSARAM NO MES sao a ENERGIA, medida em quilowatt-hora, que e o que a conta cobra.
+- O TAMANHO DA CAIXA, quantos litros cabem nela, e a capacidade da bateria, medida em mAh.
+- Uma CAIXINHA que enche e esvazia rapido e o capacitor, medido em farad.
+- Um CANO ARREBENTADO e o curto-circuito, e a VALVULA DE SEGURANCA que fecha sozinha quando passa agua demais e o disjuntor.
+
+Nenhuma outra analogia. Nada de comparar com transito, com formiga, com autoestrada, com exercito nem com nada. So o predio.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: VOLT AMPERE E WATT)
+
+Comecar pela duvida, com exemplos concretos e rapidos: a lampada da sala diz 9 W. O chuveiro diz 5500 W. O carregador do celular diz 5 V e 2 A. O disjuntor do quadro diz 20 A. A bateria do celular diz 5000 mAh. E a conta de luz vem cobrando kWh.
+
+Dizer o obvio: sao seis medidas diferentes, ninguem nunca explicou a diferenca, e a maioria das pessoas acha que e tudo sinonimo de eletricidade. Nao e. Cada uma mede uma coisa distinta, e depois de entender uma vez nunca mais se esquece.
+
+Avisar o que este episodio nao e: nao tem cientista, nao tem data e nao tem invencao. E so o que cada medida quer dizer, na pratica, com exemplo de casa. O episodio inteiro se passa dentro de um predio com caixa dagua.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (O PREDIO)
+
+Montar a cena inteira com calma, porque o resto do episodio mora dentro dela.
+
+Um predio. No telhado, uma caixa dagua cheia. Dela desce um cano grosso pelo meio do predio. De cada andar sai um cano mais fino que vai pra cada apartamento, e em cada ponto tem um registro que abre e fecha. La embaixo, na calcada, o zelador esta com uma mangueira de bico fino tirando o lodo verde do piso, e o jato sai com forca de riscar o chao.
+
+Agora dar o pareamento inteiro de uma vez, devagar, porque e o mapa do episodio:
+
+A agua e a eletricidade que corre. A altura da caixa e o volt, que e o empurrao. Os litros por segundo passando num cano sao o ampere, que e o quanto esta passando de verdade. O cano, mais fino ou mais grosso, e o ohm, que e o quanto o caminho atrapalha. O registro e o interruptor. E a mangueira do lodo e o watt, que e o trabalho feito por segundo.
+
+Dizer que a partir daqui e so olhar o predio. Toda pergunta sobre eletricidade vira uma pergunta sobre agua.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (VOLT: A ALTURA DA CAIXA, TELA INTERATIVA)
+
+Volt e a pressao, e no predio a pressao vem da altura da caixa.
+
+Caixa no segundo andar: a agua sai molenga na torneira do terreo. Caixa no decimo andar: sai forte. Mesma agua, mesmo cano, so mudou a altura. Volt e isso: o tamanho do empurrao.
+
+Repetir a frase que arruma a cabeca de quem esta ouvindo: volt NAO e quanta eletricidade tem. Volt e quanto ela empurra.
+
+E agora o detalhe que quase ninguem entende e que e o mais util deste episodio: a pressao existe mesmo com o registro fechado. O cano do predio esta cheio de agua sob pressao vinte e quatro horas por dia, e ninguem ve nada acontecendo porque nada esta aberto. A tomada da parede e igual: ela tem cento e vinte e sete volts esperando ali dentro o dia inteiro, mesmo sem nada plugado. Nao esta passando corrente, mas o empurrao esta la. E por isso que fio sem nada ligado ainda da choque.
+
+Alguns numeros pra dar tamanho: uma pilha de controle remoto tem um volt e meio, que e uma caixa quase no chao. A tomada de casa tem cento e vinte e sete ou duzentos e vinte. E as linhas de transmissao que cruzam o pais tem centenas de milhares de volts, que seria uma caixa dagua no alto de uma montanha.
+
+Avisar: a tela tem a caixa dagua pra subir e descer. Convide o ouvinte a mexer na altura e ver a forca do jato mudar la embaixo.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (AMPERE E OHM: A VAZAO E O CANO, TELA INTERATIVA)
+
+Ampere e o quanto passa. No predio, litros por segundo saindo pelo cano. Nao e o empurrao, e o resultado: o que efetivamente esta correndo.
+
+E quem decide isso, junto com a altura da caixa, e o cano. Cano grosso e curto deixa passar muita agua. Cano fino e comprido deixa passar pouca. Esse atrapalho do cano e o ohm.
+
+Juntar as duas ideias, sem formula nenhuma: com a mesma caixa, se voce troca pra um cano mais fino, passa menos agua. Com o mesmo cano, se voce sobe a caixa, passa mais agua. So isso. Empurrao maior, mais vazao. Caminho mais apertado, menos vazao.
+
+Tres consequencias praticas, e vale dar as tres porque sao coisas que a pessoa ja viu na vida:
+
+Primeira: cano apertado esquenta. A agua forcando passagem por um lugar estreito aquece o material. E por isso que fio fino esquenta quando puxa muita corrente, e por isso que chuveiro e torradeira funcionam, porque ali o esquentar e o objetivo.
+
+Segunda: extensao velha, fininha e comprida, faz o aparelho reclamar. Cano fino demais nao entrega vazao suficiente.
+
+Terceira: o disjuntor do quadro que diz vinte amperes esta falando de VAZAO, nao de pressao. Ele nao liga pra quanto empurrao tem, ele desarma quando esta passando agua demais por aquele cano.
+
+Avisar: a tela tem canos de espessuras diferentes pra trocar. Convide o ouvinte a manter a caixa na mesma altura, ir trocando o cano e ver a vazao mudar.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (WATT: A MANGUEIRA DO LODO)
+
+Agora a medida que confunde todo mundo, e que e a mais util de todas: o watt.
+
+Watt e pressao vezes vazao. E o trabalho que a agua faz por segundo. Nao e o empurrao sozinho, nao e a quantidade sozinha, e os dois multiplicados.
+
+Usar as duas mangueiras do zelador pra deixar isso claro. A primeira e uma mangueira grossa de boca aberta: sai um montao de agua, enche um balde num instante, e nao tira o lodo do chao, porque ela e mansa. Vazao alta, pressao baixa. A segunda e a de bico fino: sai pouca agua, demora pra encher o mesmo balde, e risca o lodo da calcada, porque o jato e violento. Vazao baixa, pressao alta.
+
+E aqui esta a sacada: as duas podem estar fazendo a mesma quantidade de trabalho por segundo, porque uma compensa na pressao o que perde na vazao. Watt e essa conta ja feita. Quando o aparelho diz quantos watts ele tem, ele ja juntou empurrao e quantidade num numero so.
+
+Aterrissar nos aparelhos de casa: uma lampada de nove watts e um pinguinho de trabalho por segundo. Um chuveiro de cinco mil e quinhentos watts e seiscentas vezes isso. Como a pressao da casa e a mesma pros dois, cento e vinte e sete ou duzentos e vinte volts, a unica forma de o chuveiro ter todo esse watt e puxando MUITA vazao. E por isso que o chuveiro tem fio proprio, mais grosso que o do resto da casa, e disjuntor so dele. Nao e frescura: e cano largo porque vai passar muita agua.
+
+E o carregador do celular fecha a conta: cinco volts vezes dois amperes da dez watts. Pouca pressao, pouca vazao, pouquissimo trabalho por segundo.
+
+Fechar com a regra: watt diz o quanto o aparelho trabalha por segundo, e nao diz nada sobre por quanto tempo ele vai ficar ligado. Quem cuida do tempo e a proxima tela.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (KWH E O RESTO DO PAINEL)
+
+A conta de luz nao cobra pressao e nao cobra watt. Ela cobra o TOTAL que passou no mes, que no predio seria o total de litros que desceram da caixa.
+
+Isso e o quilowatt-hora. E potencia vezes tempo. Um aparelho de mil watts ligado por uma hora gasta um quilowatt-hora. E dai sai a comparacao que resolve a briga la de casa: o chuveiro de cinco mil e quinhentos watts, dez minutos por dia, gasta quase um quilowatt-hora por banho. A lampada de nove watts, acesa vinte e quatro horas seguidas, gasta cerca de um quinto disso. A lampada esquecida acesa o dia inteiro custa menos que um banho.
+
+Guardar a frase: watt e o quao forte. Quilowatt-hora e o quanto no total. Sao perguntas diferentes.
+
+Dai fica facil entender o mAh da bateria do celular: e o tamanho da caixa dagua, quantos litros cabem nela. Nao diz nada sobre a forca do jato, so sobre quanto tempo dura antes de acabar. Duas baterias do mesmo tamanho duram diferente conforme o aparelho abrir mais ou menos o registro.
+
+E sobram tres medidas pra fechar o painel, rapidinho:
+
+O farad mede uma caixinha que enche e esvazia muito rapido. E o capacitor. Ele nao produz agua nenhuma, so guarda um tantinho e devolve de uma vez quando precisa. E o que faz o flash do celular disparar forte num aparelho de bateria fraquinha: enche devagar e solta tudo num piscar.
+
+O hertz conta quantas vezes por segundo alguma coisa se repete. Na tomada de casa, a agua nao faz o caminho inteiro num sentido so: ela balanca pra frente e pra tras sessenta vezes por segundo. Isso e sessenta hertz.
+
+E os prefixos, que assustam mais que o assunto: mili e um milesimo, quilo e mil e mega e um milhao. Entao cinco mil e quinhentos watts e cinco virgula cinco quilowatts, e mil miliamperes e um ampere. E so tamanho, nao e medida nova.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: MONTE A SUA CONTA DE LUZ)
+
+Convidar a pausar o audio e resolver na tela: tem uma lista de aparelhos de casa, cada um com os watts dele, e o ouvinte escolhe quantas horas por dia cada um fica ligado.
+
+A tela vai somando os quilowatt-hora do mes e mostrando o valor em reais.
+
+O que ele deve descobrir mexendo: o que pesa na conta e sempre aparelho que ESQUENTA agua ou ar, mesmo ligado poucos minutos, e quase nunca aparelho eletronico ligado muitas horas. Chuveiro, ferro de passar, secador e forno pesam. Lampada, televisao, celular e computador quase nao aparecem.
+
+Depois de montar a sua, volte o audio e aperte o Proximo.
+
+TELA 8 (ONDE A ANALOGIA QUEBRA E FECHAMENTO)
+
+Comecar avisando com honestidade: toda analogia tem um ponto onde ela deixa de funcionar, e e melhor saber onde e do que sair com uma ideia errada. Sao quatro pontos.
+
+Primeiro, o mais importante: a agua do predio cai, molha o chao e acabou. Eletricidade nao. Ela precisa voltar pra de onde saiu. Todo circuito e ida E volta, e se o caminho de volta estiver cortado nao passa nada, por mais empurrao que tenha. Ou seja: o aparelho nao consome a agua, ele consome o EMPURRAO. A mesma eletricidade vai e volta o dia inteiro; o que se gasta e a pressao.
+
+Segundo: na tomada de casa a agua nem faz caminho de verdade. Ela sacode pra frente e pra tras sessenta vezes por segundo, e o trabalho e feito pelo sacolejo. No predio isso nao existe.
+
+Terceiro: o cano arrebentado. Se os dois lados se encostam sem nada no meio, e como arrancar o cano da parede: desce agua numa vazao absurda, nao faz trabalho nenhum de util e esquenta tudo no caminho. Isso e o curto-circuito. E pra isso existe a valvula que fecha sozinha quando passa agua demais, que e o disjuntor. Ele nao esta ali por causa da pressao, esta por causa da vazao.
+
+Quarto, e esse e o que importa pra saude: o que machuca uma pessoa e a VAZAO que passa por dentro dela, e nao a altura da caixa. A pressao alta importa porque e ela que consegue empurrar vazao atraves do corpo, ainda mais com a pele molhada, que e um cano bem mais largo que a pele seca. E por isso que tomada e agua nao se misturam.
+
+Recapitular as cinco medidas numa frase cada, na ordem: volt e o empurrao, ampere e o quanto esta passando, ohm e o quanto o caminho atrapalha, watt e o trabalho por segundo, e quilowatt-hora e o total do mes.
+
+Fechar dizendo que com essas cinco palavras entendidas qualquer etiqueta de aparelho e qualquer conta de luz ficam legiveis, e que da pra voltar nesse predio sempre que aparecer um numero novo pela frente.

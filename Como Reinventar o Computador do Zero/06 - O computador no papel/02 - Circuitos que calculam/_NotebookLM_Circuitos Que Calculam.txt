@@ -1,0 +1,133 @@
+Inicie dizendo: Circuitos Que Calculam
+---------------
+
+Este e o segundo episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, Portas Logicas E O Mundo Binario, cobriu de 1937 a 1950 e terminou com o byte: a maquina no papel ja tem portas e ja escreve numero em 1 e 0, mas nao faz conta nenhuma. Este episodio faz ela somar e subtrair.
+
+ESTE EPISODIO COBRE DE 1937 A 1945. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (7), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que pedir "aperte o Proximo" exatamente 7 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Este episodio nao tem protagonista humano: e um episodio de bancada, o personagem e o circuito. Ninguem ganha ficha. Claude Shannon e o relatorio de 1945 aparecem de passagem, como data, e nao ganham ficha.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Circuitos Que Calculam.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A roda que da a volta: contar em volta de uma roda com poucas casas, que quando enche volta pro zero. Serve so pra explicar o transbordo.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: CIRCUITOS QUE CALCULAM)
+
+Retomar em uma frase onde o episodio passado parou: em 1950 a maquina no papel tinha portas que respondem sim e nao, e sabia escrever qualquer numero como fileira de 1 e 0. So que nao somava. Nem chegou no abaco da etapa 1.
+
+Dizer o que este episodio faz: monta o circuito que soma e, com um truque, descobre que o mesmo circuito subtrai. Dizer o intervalo em voz alta: este episodio cobre de 1937 a 1945, do primeiro somador de reles desenhado numa tese ate o relatorio que fixou o jeito de escrever numero negativo que todo processador usa ate hoje.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
+
+Ficha do episodio: o assunto e o somador, o circuito de portas que recebe dois numeros em binario e devolve a soma. Data: 1937, porque a mesma tese de mestrado do episodio passado ja trazia, como exemplo, um somador binario feito de reles. Lugar: o papel. Este episodio nao tem laboratorio nem inventor; e um episodio de bancada, e o personagem e o circuito.
+
+Motivacao: quase tudo que um computador faz depende de conta acontecendo la dentro, inclusive os jogos. E a serie tem uma divida desde a etapa 1: o abaco somava. A maquina no papel ainda nao. A primeira tarefa e deixar ela pelo menos tao capaz quanto o abaco.
+
+Dizer o metodo que vale pra etapa inteira: problema complicado se quebra em pedaco simples. Somar dois numeros grandes parece muita coisa; somar uma casa so e pouca coisa. Entao a gente resolve uma casa e depois enfileira.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (UMA CASA SO: O MEIO SOMADOR)
+
+Lembrar a soma da escola: 1 com 3 e 4; 9 com 2 e 11, deixa o 1 embaixo e sobe o outro. Em binario e a mesma coisa com menos simbolos: 0 com 0 e 0; 0 com 1 e 1; 1 com 0 e 1; e 1 com 1 e 0 embaixo e sobe 1.
+
+Fazer a observacao que resolve tudo: olhando uma casa so, a gente precisa de duas respostas. O que fica embaixo da casa, e se sobe 1 pra proxima ou nao. Sao duas saidas a partir de duas entradas.
+
+Mostrar que as duas ja existem. A saida que sobe so e 1 quando as duas entradas sao 1. Isso e a tabela da porta E, exatamente. A saida de baixo e 1 quando uma entrada e 1 e a outra e 0, e 0 quando as duas sao iguais. Isso e a tabela do XOR, exatamente. Entao uma porta E e uma porta XOR, recebendo as mesmas duas entradas, somam uma casa. O nome desse par e meio somador.
+
+Testar em voz alta: 1 mais 0, o XOR da 1 e o E da 0, resultado 1 sem subir nada. 1 mais 1, o XOR da 0 e o E da 1, resultado 0 e sobe 1. Funciona.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O SOMADOR COMPLETO E A FILA)
+
+Dizer por que meio: ele resolve a primeira casa, mas as casas do meio recebem tres coisas, os dois bits da casa e o que veio subindo da casa anterior. Precisa de um circuito com tres entradas.
+
+Montar: um segundo meio somador pega a saida de baixo do primeiro e o que veio subindo. A saida de baixo desse segundo ja e o resultado da casa. Sobram as duas saidas de subir, uma de cada meio somador. Explicar por que da pra juntar as duas num OU: num meio somador nunca acontece de a saida de baixo e a de subir serem 1 ao mesmo tempo, entao as duas saidas de subir nunca estao ligadas juntas, e um OU basta pra dizer se sobe 1 pra proxima casa ou nao. Isso e o somador completo, ou so somador.
+
+Enfileirar: pra somar dois numeros de 4 bits, quatro somadores lado a lado, com a saida de subir de cada um entrando no seguinte. 1 mais 1 da 2, 1 mais 2 da 3, e assim vai.
+
+Dizer o aviso: a fila tem quatro saidas. Se a soma precisar de cinco casas, a quinta nao existe. Isso vai ser assunto da tela 6.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O SOMADOR DE 4 BITS, TELA INTERATIVA)
+
+Fazer o ouvinte ver a fila funcionando. Dois numeros de 4 bits entram por chaves, um em cima do outro, e o resultado sai embaixo, casa por casa. O que vale reparar e o vai-um correndo da direita pra esquerda: a casa da direita soma primeiro, e se sobe 1, a casa seguinte so fica certa depois que esse 1 chega.
+
+Dizer o que isso significa na maquina de verdade: o somador de 4 bits que a serie acabou de montar e, em ideia, o mesmo que esta dentro de qualquer processador, so que la sao 64 casas e as portas sao de transistor. A regra e a mesma.
+
+Avisar: a tela tem as chaves dos dois numeros e o resultado. Convide o ouvinte a montar 3 mais 2, que e 0011 mais 0010, e conferir que sai 0101, que e 5; e depois tentar 1 mais 1 e reparar no 1 correndo pra casa da esquerda.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O TRANSBORDO E O NUMERO NEGATIVO)
+
+Voltar ao aviso da tela 4. Com quatro casas, o maior numero e 1111, que e 15. Somar 1 a isso daria 10000, mas a quinta casa nao existe, entao o que aparece e 0000. A conta transbordou e voltou pro zero. Usar a analogia autorizada e deixar claro que e analogia: e como contar em volta de uma roda com poucas casas, que quando enche volta pro comeco. Dizer a regra geral: nao importa quao grande seja o computador, sempre existe um limite fisico pro tamanho do numero que ele soma de uma vez.
+
+Dizer a reviravolta: e justamente o transbordo que vai servir pra subtrair. Comecar pela definicao: o negativo de um numero, menos 9 por exemplo, e o numero que somado ao original da zero. Em binario com quatro casas, entao, o negativo de 9, que e 1001, e o numero que somado a 1001 da 0000.
+
+Achar esse numero em dois passos. Primeiro inverter cada bit: 1001 vira 0110. Somar os dois da 1111, tudo 1. Segundo, somar mais 1: 1111 mais 1 da 10000, e o 1 da frente cai no transbordo, sobra 0000. Entao o negativo de 1001 e 0110 mais 1, que e 0111. Dizer o nome: complemento de dois. E dizer que funciona pra qualquer numero que caiba nas quatro casas.
+
+Montar o circuito. Inverter bit e coisa de porta NAO, mas o NAO inverte sempre, e a gente quer escolher quando inverter. Usar o XOR: quando a segunda entrada dele e 1, ele inverte a primeira; quando e 0, deixa passar igual. Quatro XOR, um por bit, com as segundas entradas ligadas num fio so, formam um inversor com um sinal de liga e desliga. Esse inversor entra no caminho do segundo numero antes do somador, e o mesmo fio que liga o inversor tambem entra como vai-um na primeira casa, que estava sobrando, e e ele que soma o mais 1. Com o fio em 0, a fila soma. Com o fio em 1, a fila subtrai. Isso e a unidade de aritmetica.
+
+Dizer a data que fecha a janela: o complemento de dois foi adotado no relatorio de 1945 que definiu a maquina moderna, e e assim que todo processador guarda numero negativo ate hoje. Testar: 1 mais 1 da 2; com o fio ligado, 1 menos 1 da 0; 8 menos 3 da 5.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (PRATICA: OITO MENOS TRES)
+
+Convidar a pausar o audio e resolver na tela: tem o somador de 4 bits com o fio de subtrair, e a conta 8 menos 3 pra montar.
+
+O objetivo e fazer na mao o que o circuito faz. 8 e 1000. 3 e 0011; invertido fica 1100; mais 1 fica 1101. Somar 1000 com 1101 da 10101; a quinta casa cai no transbordo e sobra 0101, que e 5. Quem esquecer o mais 1 vai achar 4; quem esquecer de jogar fora a quinta casa vai achar 21.
+
+Dizer o que a pratica ensina antes de mandar voltar: o circuito nunca aprendeu a subtrair. Ele so soma. O que mudou foi o jeito de escrever o segundo numero, e o transbordo, que parecia defeito, e o que faz a conta fechar.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: uma casa de soma tem duas saidas, e elas sao um E e um XOR, o meio somador. Dois meio somadores e um OU fazem o somador completo, e quatro em fila somam numeros de 4 bits. A fila transborda, e o transbordo virou o truque do numero negativo: inverter e somar 1. Um inversor de XOR e um fio de controle transformam o somador numa unidade de aritmetica que soma ou subtrai.
+
+Dizer onde o episodio para: 1945. E dizer o que ficou faltando, que e o gancho: o resultado sai nas quatro lampadas e some no instante em que as chaves mudam. A maquina calcula, mas nao lembra de nada. Nem do numero que acabou de calcular.
+
+Gancho: no proximo episodio dois OU e dois NAO ligados de um jeito esquisito, com um fio que volta pra tras, formam um circuito que lembra qual botao foi apertado por ultimo. E a parte mais basica de toda memoria de computador.

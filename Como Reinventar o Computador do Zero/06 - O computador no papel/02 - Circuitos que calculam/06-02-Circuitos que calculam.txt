@@ -1,0 +1,35 @@
+Inicie dizendo: Circuitos Que Calculam
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Circuitos Que Calculam.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o segundo episodio da etapa O COMPUTADOR NO PAPEL, a sexta etapa da serie Como Reinventar o Computador do Zero. O episodio anterior, Portas Logicas E O Mundo Binario, cobriu de 1937 a 1950 e terminou com o byte: a maquina no papel tem portas e escreve numero em 1 e 0, mas nao faz conta.
+
+ESTE EPISODIO COBRE DE 1937 A 1945. Dizer esse intervalo logo na abertura e, no encerramento, dizer em que ano o episodio para.
+
+FOCO: o somador e a unidade de aritmetica. A soma binaria na mao (1 com 1 da 0 e sobe 1). Separar cada casa em duas saidas: a de subir e uma porta E, a de baixo e um XOR, o meio somador. O somador completo com tres entradas, feito de dois meio somadores e um OU, e a fila de quatro que soma numeros de 4 bits. O transbordo e o limite fisico. O negativo como o numero que somado da zero; o complemento de dois, inverter e somar 1; o inversor de quatro XOR com um fio comum e o mesmo fio entrando como vai-um: a unidade de aritmetica que soma ou subtrai. A tese de 1937 com o somador de reles e o relatorio de 1945 que adotou o complemento de dois, so como datas.
+
+FICHA HUMANA: este episodio nao tem protagonista humano, e um episodio de bancada onde o personagem e o circuito. Nao inventar biografia de ninguem. Shannon e o relatorio de 1945 aparecem so como data.
+
+NAO explicar memoria, flip-flop, endereco, Turing nem instrucao: sao os proximos episodios. So citar no gancho final o circuito de dois OU e dois NAO com o fio que volta.
+
+A pagina tem 8 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo": sao exatamente 7 pedidos, um por tela, sem juntar duas telas num bloco. Na tela interativa (5), avisar que tem botao na tela. Na tela de pratica (7), convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Circuitos Que Calculam.txt. NAO invente analogias novas. A unica autorizada e a roda que da a volta, pra explicar o transbordo.
+
+Use tambem o Overview.txt como contexto curto.

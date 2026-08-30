@@ -1,0 +1,197 @@
+/* capitulo
+   A grade e o card de uma etapa da serie: arte, periodo, nome, frase e resumo. Depende de tokens.css e base.css. */
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* etapa com poucos episodios: duas colunas, pra nao sobrar buraco na fila */
+.grade--dupla { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.cap {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--raio);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.cap:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(20, 25, 29, .08), 0 16px 34px -18px rgba(20, 25, 29, .4);
+}
+
+/* a arte: enquanto a imagem do episodio nao existe, entra o fundo marcado
+   como provisorio, com o numero da etapa como marca d'agua */
+.cap__arte {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background:
+    radial-gradient(circle at 72% 22%, rgba(87, 182, 202, .28), transparent 55%),
+    linear-gradient(150deg, var(--arte-de), var(--arte-ate));
+  overflow: hidden;
+}
+
+/* a trama de pontos por cima do gradiente */
+.cap__arte::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(220, 238, 244, .16) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.cap__num {
+  position: absolute;
+  left: 16px;
+  bottom: 2px;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: rgba(220, 238, 244, .22);
+}
+
+.cap__tag {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-family: var(--fonte-mono);
+  font-size: .56rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--arte-ink);
+  background: rgba(11, 42, 56, .55);
+  border: 1px solid rgba(220, 238, 244, .5);
+  border-radius: 4px;
+  padding: 4px 9px;
+}
+
+/* episodio com arte propria: a imagem cobre o card, o gradiente e a trama saem
+   de cena e o numero vai pro canto vazio da ilustracao */
+.cap__arte--arte::before { display: none; }
+
+.cap__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cap__arte--arte .cap__num {
+  left: auto;
+  right: 22px;
+  bottom: 6px;
+  color: rgba(220, 238, 244, .34);
+}
+
+.cap__corpo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 22px 22px;
+}
+
+/* o periodo historico que a etapa cobre */
+.cap__periodo {
+  margin: 0;
+  font-family: var(--fonte-mono);
+  font-size: .63rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.cap h3 {
+  margin: 7px 0 4px;
+  font-family: var(--fonte-serif);
+  font-size: 1.42rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.005em;
+}
+
+/* a frase que resume a etapa numa linha */
+.cap__frase {
+  margin: 0 0 10px;
+  font-family: var(--fonte-serif);
+  font-style: italic;
+  font-size: .98rem;
+  color: var(--ink);
+}
+
+.cap__resumo {
+  margin: 0 0 16px;
+  font-size: .86rem;
+  color: var(--ink-soft);
+}
+
+/* o pe do card: quantos episodios a etapa tem, o estado dela e o botao.
+   No card estreito o botao desce sozinho pra linha de baixo, sempre a direita. */
+.cap__pe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin: auto 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--fonte-mono);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* o estado da etapa: contorno leve, porque e informacao, nao acao.
+   Vai encostado na direita, no lugar que o botao ocuparia se houvesse. */
+.cap__selo {
+  margin-left: auto;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-edge);
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+/* quantos episodios da etapa ja dao pra ouvir: texto solto, sem caixa,
+   pra nao competir com o selo de estado que vem antes */
+.cap__disponivel {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* a acao do card: cheia, pra nao se confundir com o selo ao lado */
+.cap__botao {
+  margin-left: auto;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: filter .15s ease;
+}
+
+.cap__botao::after { content: " →"; }
+
+.cap__botao:hover { filter: brightness(1.15); }
+
+@media (max-width: 980px) {
+  .grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .grade { grid-template-columns: minmax(0, 1fr); }
+}

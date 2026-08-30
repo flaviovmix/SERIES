@@ -1,0 +1,13 @@
+AS MAQUINAS DE HOLLERITH - CONTEXTO
+===================================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o decimo primeiro episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Os anteriores cobriram o abaco, o zero, as maquinas do hiato, a Pascalina, a roda de Leibniz, o tear de Jacquard, os automatos, a caixa de musica, a Maquina Analitica e o telegrafo. Este cobre a tabuladora de Herman Hollerith e o censo americano de 1890: cartoes furados (um por pessoa) lidos por agulhas eletricas, contados em relogios. E o encontro do cartao do tear com o eletroima do telegrafo, e o nascimento do processamento de dados.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Ha uma tela interativa da prensa (furar um cartao de censo e baixar a prensa: onde tem furo a agulha passa, fecha o circuito e o relogio daquela resposta avanca), uma demonstracao em escala (20 cartoes prensados em sequencia, com os relogios acumulando) e uma pratica em dois tempos (o ouvinte faz o papel da tabuladora contando 6 cartoes na mao, e depois ve a maquina fazer 60 em segundos). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: o problema (o censo de 1880 levou quase 8 anos pra apurar a mao; o de 1890 ia levar mais de 10, nascendo vencido), a inspiracao (o bilhete de trem furado pelo condutor com a descricao do passageiro), o sistema (um cartao por pessoa, cada furo uma resposta; a prensa de agulhas fechando circuitos; os relogios contadores; a classificadora que abria a caixa certa) e o resultado (contagem bruta em cerca de 6 semanas, 62,9 milhoes de pessoas, economia de milhoes de dolares).
+
+Por que importa: nao e um computador (nao segue programa), mas e o nascimento do processamento de dados: informacao em massa lida e somada por eletricidade. A empresa de Hollerith (Tabulating Machine Company, 1896) virou, depois de fusoes, a IBM em 1924, e o cartao furado de 80 colunas mandou nos escritorios ate os anos 1970. A limitacao (contar nao e pensar; a tabuladora nao segue receita nem decide) e o gancho pro rumo da serie: o seculo 20, os reles e as maquinas que calculam com eletricidade.
+
+Use este contexto apenas como apoio.

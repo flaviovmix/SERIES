@@ -1,0 +1,13 @@
+O ABACO - CONTEXTO
+===================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o primeiro episodio da serie EQUIPAMENTOS, dentro do projeto Como Reinventar o Computador do Zero. Nesta serie, cada equipamento da historia da computacao ganha um episodio proprio, sempre com nome, data, motivacao, como funciona e uma pratica interativa. O piloto do projeto (Do Abaco Ao Transformer) apresentou a jornada inteira; agora comeca o mergulho, equipamento por equipamento, e o primeiro e o abaco.
+
+O episodio acompanha uma PAGINA DE ANIMACAO (animacao.html) com 8 telas: o ouvinte avanca apertando o botao Proximo quando o audio pedir. Duas telas sao demonstracoes animadas (o valor das casas e o vai-um) e duas sao praticas (representar numeros e fazer a conta 2 x 24 ate chegar no 48). Quem estiver so ouvindo, sem a pagina, acompanha normalmente.
+
+Ao final o ouvinte entende: o que e o abaco e por que ele nasceu (Mesopotamia, ~3500 a.C., contar sem errar), como o valor posicional funciona (cada haste vale 10 vezes a de baixo), o movimento do vai-um (10 contas viram 1 na casa de cima), como fazer uma conta real nele, as variantes que existem ate hoje (suanpan chines, soroban japones) e a limitacao que motiva o proximo equipamento: alguem precisa mover as pedras.
+
+Por que importa: o abaco e a primeira vez que a humanidade transformou uma conta abstrata em pecas fisicas que andam. Essa mesma ideia, levada ao extremo, e o computador moderno.
+
+Use este contexto apenas como apoio.
