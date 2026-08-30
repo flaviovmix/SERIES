@@ -174,8 +174,18 @@ Pasta `_EXTRAS\` na raiz da série. São episódios **fora da linha do tempo e a
 |---|---|---|---|---|
 | `01` | **Volt Ampere e Watt** | prédio com caixa d'água (altura=volt, vazão=ampère, cano=ohm, mangueira do lodo=watt, litros do mês=kWh, tamanho da caixa=mAh) | Eletricidade explicada como água num prédio | 🟠 |
 | `02` | **Por que o Ima Gruda** | ferro = milhões de agulhinhas de bússola (bagunçadas=ferro comum, alinhadas=ímã); eletroímã fica de fora (é o ep `03` da etapa 4) | Como os ímãs funcionam por dentro | 🟠 |
+| `03` | **O Sistema Binário** | a definir quando o roteiro for escrito (candidatas: interruptor liga/desliga; contar com uma mão só de dois dedos) | — | 🔴 próximo |
 
 O `01` teve uma v1 gerada ainda com amarras de série ("primeiro episodio desta etapa", "o resto da serie") — regravado em 23/08 já autocontido; a v1 está em `_v1\` dentro da pasta. Desde então os roteiros de extra carregam uma **REGRA DURA nº 2** proibindo explicitamente citar série/etapa/episódio vizinho, além da nº 1 (sem pessoa/data) — usar esses dois blocos como modelo pros próximos extras.
+
+**A fila de extras vai crescer (30/08):** decisão do dono — "vamos fazer vários extras", começando pelo Sistema Binário, com muitos outros depois. Antes de produzir em série, **pensar e decidir o que a esteira de extras precisa** (nada disso existe hoje):
+
+1. **Onde o extra mora no site** — as páginas de etapa contam a linha do tempo; extra é avulso. Uma página `site/extras.html` com os cards (mesmo formato da etapa), ou uma seção "Extras" no índice? Decidir antes do primeiro extra com animação nova entrar no ar.
+2. **Extra tem animação?** O `01` já tem telas + modelo do Prédio da Água; o `02` é só áudio. Regra proposta: animação quando houver o que mexer (o binário pede — contar, somar e o vai-um em base 2 são interativos por natureza, e o ábaco da base já faz quase isso); só áudio quando for conversa.
+3. **O que o binário reusa da base** — `criaAbaco`/`criaSuanpan` são decimais; um ábaco binário (1 conta por haste) é variação pequena do `abaco.js`. Ver antes de escrever do zero.
+4. **Numeração e naming continuam** `EX-NN` com prompt `EX-NN-<Nome>.txt`, REGRAS DURAS nº 1 (sem pessoa/data) e nº 2 (sem citar série/etapa/vizinho) copiadas do `01`.
+5. **Publicar extra = mesmo deploy** (pasta em `~/serie` no servidor, tar+scp), mas o card de onde ele é achado depende do item 1.
+6. **Gancho a manter**: o extra do binário NÃO substitui o ep `01-02` (O Zero e os Números) nem os eps de lógica/circuito da etapa 6 — ele é o "como funciona a base 2" sem história, e os episódios continuam donos da linha do tempo.
 
 ## Publicados no acervo
 
