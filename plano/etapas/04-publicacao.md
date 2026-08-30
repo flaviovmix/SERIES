@@ -19,5 +19,4 @@ Tarefas:
 
 **Desvios registrados:**
 
-(nenhum ainda. Aqui entra o que a realidade mudou no plano, com data e motivo,
-inclusive desvio de método: "executado direto, a pedido do dono".)
+- (30/08/2026) **Executado direto, a pedido do dono ("commit e deploy"), antes das Etapas 1 e 3, e pro site, não pro Nexus** (D1 tirou o Nexus do caminho; as tarefas acima que falam em nota, anexo e acervo estão obsoletas e esta etapa precisa ser reescrita pro site). O que subiu: pasta `~/serie` no servidor `afx.art.br` (98 MB: `site/`, o ep 01-01 sem `_v1/_v2`, `_arquivos/modelos-3d/`, o `OLD/.../02 - O Zero` que a etapa-01 linka, e um `index.html` na raiz que manda pra `site/`), container `serie` (nginx:alpine, rede `web`, bind-mount só leitura) e bloco `serie.afx.art.br { reverse_proxy serie:80 }` no Caddyfile, recarregado. Testado por dentro da rede: a página da etapa responde e o mp3 sai com `Accept-Ranges: bytes` (o seek do tocador depende disso). **Falta o DNS**: `serie.afx.art.br` não existe no Cloudflare (não há wildcard; `podcast.` tem registro próprio); até o dono criar o A pra `200.139.74.173`, o Caddy não consegue o certificado e o site não abre por fora. Procedimento de atualização = o padrão da memória `reference_afx_server`: trocar arquivos em `~/serie`, sem reiniciar nada.

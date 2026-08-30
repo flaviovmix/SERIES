@@ -25,7 +25,7 @@ Decisões **travadas**. Uma vez escritas, não se repropõe. Se a realidade derr
 
 Cada uma diz **em que etapa trava**. Pendência sem etapa dona vira esquecimento.
 
-- P1. Fechar o `.gitignore` do repo antes de qualquer `git add`: áudio, vídeo e o que mais for decidido como "fora do git" (o `video.mp4` tem 382 MB; o GitHub recusa arquivo acima de 100 MB). **Trava a Etapa 0.**
+- ✅ P1 (resolvida em 30/08, a pedido: "commit e deploy"). `.gitignore` com `*.mp3 *.mp4 *.wav *.m4a __pycache__/`; primeiro commit `1d1fe35` com 473 arquivos e zero mídia (provado por `git ls-files`), enviado pra `origin/main`. Os 2 GB de áudio e vídeo continuam só nesta máquina até a Etapa 1 (backup).
 - P2. Escrever no `plano-da-serie.md` o que conta como 🟢 (só a nota no ar, ou nota com áudio **e** animação): hoje o ep `01` da etapa 5 está 🟠 na tabela e listado como publicado no acervo, e o placar do texto diz 15 enquanto as tabelas somam 14. **Trava a Etapa 0.**
 - P3. O three.js dos modelos 3D vem de CDN: a animação embutida na nota depende de um servidor de terceiro estar no ar. Embutir ou continuar assim é decisão. **Trava a Etapa 4.**
 - ~~P4. Em `04 - Domesticando o raio\01 - A faísca` os dois `_animacao-fonte*.html` estão velhos e a fonte de verdade virou o arquivo construído. Decidir qual é a fonte e apagar o outro. **Trava a Etapa 2.**~~ **Resolvida em 30/08/2026 pelo desvio da Etapa 2:** não existe mais construído; a fonte de cada episódio é o próprio `animacao.html`. Nos episódios antigos a fonte de verdade é o `animacao.html` publicado, e os `_animacao-fonte*.html` (faísca e os três da etapa 7) são lixo a apagar **quando cada episódio for refeito na base**, não antes (apagar é do dono).
