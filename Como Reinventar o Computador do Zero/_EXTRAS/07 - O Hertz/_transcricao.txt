@@ -1,0 +1,301 @@
+# Transcricao automatica (faster-whisper small) - 15.1 min
+# Fonte: O que o Hertz realmente mede.mp3
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O Hertz.
+[00:01] Pois é.
+[00:02] Hoje a nossa missão é olhar para uma pilha de anotações, manuais técnicos e textos sobre
+[00:08] as especificações dos aparelhos eletrônicos que ficam cercando a gente o tempo todo.
+[00:13] Hum, tem muita etiqueta por aí.
+[00:15] Exato.
+[00:16] O objetivo do nosso mergulho nesse material é entender um conceito que está em todo
+[00:20] lugar, assim, na nossa cara, mas que quase ninguém para para pensar o que ele significa
+[00:25] de verdade.
+[00:26] Ninguém mesmo.
+[00:27] A gente só aceita.
+[00:28] É, pensa bem, se a gente entra no carro e liga o rádio, o painel marca lá o 89,1.
+[00:34] Certo.
+[00:35] Aí a gente chega em casa, vai configurar o roteador do wi-fi e a caixinha diz 2,4.
+[00:42] Depois, na hora de pesquisar as peças para montar um computador novo, a propaganda fala
+[00:47] que o processador marca 3.0.
+[00:50] Parecem coisas totalmente diferentes, né?
+[00:52] Sim.
+[00:53] Um aparelho toca a música, o outro distribui internet sem fio, o outro faz uns
+[00:58] cálculos matemáticos super complexos.
+[01:01] É.
+[01:02] Mas o sobrenome impresso na etiqueta técnica é sempre o mesmíssimo, é sempre Hertz.
+[01:08] Às vezes, claro, esse nome vem vestido com prefixo na frente, tipo Mega ou Giga.
+[01:13] Então, a grande pergunta que Guia conversa de hoje é tentar entender de uma vez por
+[01:18] todas o que esse número realmente conta.
+[01:21] E a resposta para isso é muito mais simples do que o nome sugere, sabe?
+[01:25] É.
+[01:26] A explicação logo de cara.
+[01:28] A gente pode cravar que esse número conta apenas quantas vezes por segundo alguma coisa
+[01:33] vai e volta.
+[01:34] Sério?
+[01:35] Só isso?
+[01:36] Só isso.
+[01:37] É pura e simplesmente a medida de uma repetição no tempo.
+[01:39] Brumba.
+[01:40] Quem está acompanhando o áudio com a nossa página aberta, a primeira tela, que é
+[01:44] a capa da nossa análise, mostra justamente uma fileira de balanços de parque em movimento.
+[01:51] E é importante avisar em apenas uma frase e somente aqui que as imagens das cenas desse
+[01:59] episódio são reconstituições geradas por computador, tá?
+[02:03] Não são fotografias.
+[02:04] É bom deixar claro.
+[02:06] Isso.
+[02:07] E a regra de ouro do nosso formato de hoje é que tudo será explicado usando apenas
+[02:12] uma única analogia.
+[02:14] Que é o balanço do parque.
+[02:15] Exatamente.
+[02:16] O balanço do parque é nada mais.
+[02:19] Agora, só para explicar a mecânica de navegação para quem está com a página aberta.
+[02:23] Quando a gente pedir, a pessoa deve apertar o botão escrito próximo.
+[02:27] Vai ter uma tela de demonstração também, né?
+[02:29] Sim.
+[02:30] Teremos telas com botões interativos e uma delas até toca som.
+[02:34] Na nossa tela de prática, a orientação será pausar o áudio e resolver com calma.
+[02:39] Mas olha quem estiver apenas ouvindo, sem a página na frente, não tem problema
+[02:43] nenhum.
+[02:44] Dá para entender tudo perfeitamente só pelo áudio.
+[02:47] Com certeza.
+[02:48] Então, para a gente começar de verdade, aperte o próximo.
+[02:51] Bom, o primeiro passo é construir a base, a fundação da nossa conversa.
+[02:56] A cena dessa tela 2 mostra uma criança sentada num balanço clássico de praça, sabe?
+[03:01] Ela está parada bem no ponto mais alto do movimento, lá na frente.
+[03:04] E tem um adulto posicionado atrás, pronto para empurrar.
+[03:07] É.
+[03:08] E essa imagem tem a definição da medida.
+[03:10] Vamos olhar para isso com muita calma, porque é a fundação de tudo.
+[03:15] Se esse balanço vai até a frente e volta para o ponto exato de partida, completando o
+[03:19] trajeto inteiro uma vez a cada segundo, a gente diz que ele balança a 1 Hz.
+[03:25] 1 ciclo inteiro, 1 Hz.
+[03:27] Isso.
+[03:28] Se o movimento for um pouco mais rápido e o balanço conseguir dar duas idas e voltas
+[03:33] em 1 segundo, são 2 Hz.
+[03:36] Simples assim.
+[03:37] Mas, peraí, deixa eu testar uma dúvida muito comum sobre isso.
+[03:41] E se o adulto decide dar um empurrão com muita força?
+[03:45] Tipo, a criança vai parar lá no alto fazendo um arco enorme no ar.
+[03:49] Como o movimento ficou muito maior e mais bruto, o número de Hz aumenta?
+[03:54] O Hz mede a força do empurrão ou, sei lá, o tamanho do balanço?
+[03:58] Não.
+[03:59] De jeito nenhum.
+[04:00] Essa é uma confusão que a gente precisa tirar do caminho agora.
+[04:03] O Hz não mede tamanho.
+[04:05] Ele não mede a força e também não mede a velocidade.
+[04:08] Tá.
+[04:09] Ele mede apenas repetição por segundo.
+[04:12] Só quer saber quantos ciclos completos cabem dentro de um segundo.
+[04:16] Não importa a força.
+[04:18] Entendi.
+[04:19] Então, se a medida foca só na repetição e ignora o resto, quer dizer que dá pra aplicar
+[04:23] isso em outras coisas reais, né?
+[04:25] Sim.
+[04:26] Qualquer coisa real que se repita pode ser medida, sim.
+[04:29] Um coração batendo, por exemplo.
+[04:31] O coração contrae e relaxa.
+[04:33] Se bate uma vez por segundo, é um Hz.
+[04:35] Uma gota pingando de uma torneira, um martelo batendo num prego.
+[04:39] É só colocar um cronômetro e contar quantas vezes a ação cabe em um segundo.
+[04:43] Interessante.
+[04:44] Fica muito mais fácil pensar assim.
+[04:46] Fica mesmo.
+[04:47] Então, com a base feita, aperte o próximo.
+[04:50] Bom, essa tela 3 agora avisa que é uma demonstração.
+[04:53] Tem botões interativos de ritmo ali na tela, marcando 1, 2 e 4 Hz.
+[04:59] Também tem um contador numérico de Vivem e um relógio normal de segundos.
+[05:03] É, o teste prático aqui é bem direto.
+[05:05] A gente convida quem está com a página a deixar o botão em 2 Hz e olhar o relógio por 10 segundos
+[05:11] inteiros.
+[05:12] Certo.
+[05:13] Aí o contador vai registrar os movimentos, se a pessoa esperar os 10 segundos, o contador
+[05:16] vai fechar ali perto de 20 Vivem.
+[05:19] Exato.
+[05:20] E a matemática simples por trás disso é o seguinte, 20 Vivem divididos por 10 segundos,
+[05:26] dá 2 por segundo, ou seja, 2 Hz.
+[05:29] A frequência é puramente essa divisão, as repetições divididas pelo tempo.
+[05:34] E chamando a atenção por que acontece, ao clicar no botão de 4 Hz, o visual muda bastante.
+[05:39] O balanço fica visivelmente apressado.
+[05:42] Chega a ser meio cômico.
+[05:43] O número na tela e o ritmo do movimento são rigorosamente a mesma coisa, né?
+[05:47] São.
+[05:48] É a tradução física do número.
+[05:50] Ele tem que ser rápido bastante, para cumprir todas as cotas daquele ciclo dentro de um
+[05:54] único segundo.
+[05:55] O ritmo puro.
+[05:56] Tá.
+[05:57] Aperte o próximo.
+[05:58] Bom, aqui a gente entra na parte do ritmo próprio das coisas.
+[06:02] A cena da tela 4 descreve dois balanços no mesmo pórtico.
+[06:06] Um tem cordas bem compridas e o outro tem cordas curtas.
+[06:09] Dá para ver claramente que o balanço de corda curta é visivelmente mais rápido que o outro.
+[06:14] É.
+[06:15] E o que a gente está vendo aí é a física do tamanho.
+[06:18] Acontece que o ritmo de um balanço não é uma escolha de quem está atrás empurrando.
+[06:23] Não.
+[06:24] Não.
+[06:25] O ritmo vem do tamanho.
+[06:26] Corda comprida, balança devagar, corda curta, balança depressa.
+[06:31] Cada balanço tem a sua própria frequência natural.
+[06:34] E se a pessoa que empurra for teimosa, tipo, tentar forçar um ritmo super acelerado num
+[06:39] balanço de corda comprida?
+[06:41] Aí o movimento desmorona.
+[06:43] Empurrar fora desse ritmo só atrapalha o movimento.
+[06:47] O sistema perde o compasso todo.
+[06:48] Caramba.
+[06:49] E isso revela uma coisa tão importante.
+[06:52] A gente pede para quem está ouvindo guardar uma frase fundamental agora que vai voltar
+[06:56] no final da conversa.
+[06:57] Tem que anotar essa.
+[06:58] Sim.
+[06:59] A frase é, quanto menor a coisa, mais rápido ela consegue ir e voltar.
+[07:04] Essa é a regra estrutural da natureza.
+[07:06] Não tem como fugir.
+[07:07] Bom, aperte o próximo.
+[07:09] Chegamos na nova tela interativa, a tela 5.
+[07:13] Aquela que tem as letras que assustam o pessoal nas lojas.
+[07:16] Tem um número grande, quatro botões para subir uma escada.
+[07:20] H, Z, K, HZ, M, HZ e GHZ.
+[07:27] Cada degrau tem um exemplo do dia a dia.
+[07:29] Para tirar o medo dessas etiquetas, a gente vai subir essas escadas juntos.
+[07:33] O primeiro degrau é só o Hz, que a gente já conhece, um vai e vem por segundo.
+[07:39] Por exemplo, a tomada de casa ela balança a 60 Hz.
+[07:43] 60 repetições num segundo.
+[07:45] Isso.
+[07:46] Aí subindo um degrau, a gente tem o quilo Hz, que significa mil por segundo.
+[07:52] Esse quilo é tipo o quilo do arroz que a gente compra no mercado?
+[07:56] É o mesmíssimo quilo.
+[07:58] O quilo quer dizer mil, seja para peso, para distância ou para repetição.
+[08:03] E se a gente sobe mais um pouco, chega no mega Hz, que representa um milhão por segundo.
+[08:09] Um milhão de vezes indo e voltando em um segundo.
+[08:12] Nossa.
+[08:13] E no topo tem o gigahertz, que chega a um bilhão por segundo.
+[08:18] É muito zero.
+[08:20] Mas assim, por que usar esses nomes complicados?
+[08:23] A regra existe só para facilitar a vida.
+[08:26] O prefixo não muda a medida de jeito nenhum.
+[08:29] Ele apenas encurta o tamanho do número na hora de escrever.
+[08:32] Falar 2,4 GHz ou falar 2 bilhões e 400 milhões de Hz é exatamente a mesma frase dita de
+[08:40] dois jeitos diferentes.
+[08:42] Ah, é só uma preguiça útil para não encher o papel de zero.
+[08:46] Bom, tirar do medo dos números aperte o próximo.
+[08:50] Agora a gente vai ligar essa ideia do Hz ao nosso próprio corpo.
+[08:53] O cenário da tela 6 mostra o ambiente de uma oficina e tem um sino de bronze enorme, muito
+[09:00] pesado do lado de um sininho de mão bem pequena.
+[09:04] A ligação com o corpo é direta, porque o som nada mais é do que o ar indo e voltando.
+[09:09] O som é ar balançando.
+[09:11] Grave.
+[09:12] Já o sininho de mão sacode o ar milhares de vezes por segundo e o ouvido entende
+[09:17] isso como um som agudo.
+[09:19] Tipo, a nota musical, então, é apenas a frequência desse empurre-empurra do ar em volta da gente.
+[09:25] Exatamente.
+[09:26] Mas e os limites disso para a nossa audição?
+[09:28] A gente escuta tudo?
+[09:30] Não, a gente tem um limite bem claro.
+[09:32] O ser humano ouve de 20 Hz até mais ou menos 20 mil Hz ou 20 kHz.
+[09:38] E o que tem abaixo de 20?
+[09:40] Abaixo de 20 o som vira só um tremor que a gente sente no peito, sabe?
+[09:45] Aquela batida que treme tudo.
+[09:47] Sei.
+[09:48] E acima de 20 mil Hz?
+[09:49] Acima de 20 mil, a gente simplesmente não escuta nada, vira silêncio total.
+[09:54] Entendi, então, a nossa janela é essa.
+[09:57] Aperte o próximo.
+[09:58] Chegou a hora da gente brincar com o áudio real nessa tela 7.
+[10:02] Sim, a tela interativa de agora tem cinco botões que tocam um segundo de som cada.
+[10:07] Os números marcam 110, 220, 440, 880 e 1.760 Hz.
+[10:17] É importante avisar que quem está na página pode apertar os botões por cima da nossa
+[10:21] fala sem problemas ou pausar o áudio do episódio por um instante se quiser ouvir o som bem
+[10:27] limpo, tá?
+[10:28] A ideia é começar do grave e subir.
+[10:30] O agarão que a gente nota aí é que cada botão tem exatamente o dobro da frequência
+[10:35] do botão anterior.
+[10:36] O dobro.
+[10:37] Sim.
+[10:38] E ouvir do humano escuta esse dobro como se fosse a mesma nota musical, só que mais aguda.
+[10:43] É assim que funciona a oitava na música.
+[10:46] Que incrível!
+[10:47] E tem um detalhe.
+[10:48] O botão no meio de 440 Hz é o famoso lado afinador.
+[10:53] É a referência que uma orquestra inteira usa para se acertar antes de tocar.
+[10:58] Só para amarrar o conceito bem forte.
+[11:00] Se eu aperto o botão de 880, isso não significa que o som é maior ou mais forte
+[11:05] que o de 440, né?
+[11:07] De jeito nenhum.
+[11:08] Significa, unicamente, que o ar está ainda e voltando duas vezes mais de pressa.
+[11:13] Perfeito.
+[11:14] É só a repetição do ar.
+[11:15] Ficou muito claro, aperte o próximo.
+[11:18] Agora vamos fechar a ideia das etiquetas da primeira tela.
+[11:21] A cena da tela 8 mostra uma mão girando aquele botão redondo de sintonia de um rádio
+[11:26] antigo de madeira, o visor tem pequenos traços vermelhos.
+[11:30] Esse rádio antigo explica tudo.
+[11:32] Essa estação de rádio transmite balançando no seu ritmo próprio.
+[11:36] Lembra da estação dos 89,1 MHz?
+[11:39] Lembra do painel do carro.
+[11:40] Então, ela vai e volta 89,1 milhões de vezes por segundo.
+[11:46] O ato de girar o botão de sintonia é, na verdade, escolher qual balanço o rádio
+[11:50] vai acompanhar e, ao mesmo tempo, ignorando completamente todos os outros balanços
+[11:56] que estão no ar.
+[11:57] É exatamente por isso que dezenas de estações convivem no mesmo ar da sala
+[12:01] sem virar uma bagunça absurda.
+[12:03] Sim, é o ordem no caos.
+[12:05] Cada uma balança num ritmo exclusivo e o aparelho de rádio só consegue acompanhar
+[12:10] um ritmo por vez.
+[12:12] Exatamente isso, uma sintonia limpa.
+[12:14] Entendido, aperte o próximo.
+[12:16] Bom, agora é o momento prático do nosso encontro.
+[12:19] A tela 9 é para quem está na página montar por conta própria.
+[12:22] O desafio é pausar o áudio agora e montar três frequências, uma de cada vez.
+[12:27] Três quilohertz, dois megahertz e cinco gigahertz.
+[12:32] Para montar, é preciso clicar no algarismo numérico
+[12:35] e depois escolher o prefixo correspondente na tela.
+[12:38] Eu posso dar uma dica falada para ajudar sem entregar o gabarito?
+[12:42] Os três alvos exigem o mesmo gesto da pessoa,
+[12:46] apenas em degraus diferentes daquela escada.
+[12:49] O algarismo faz a contagem pura e o prefixo dito o tamanho do grupo.
+[12:54] Ótima dica.
+[12:56] Então, quando fechar os três desafios na tela, volte a dar pleno áudio com a gente, tá?
+[13:00] Estamos esperando.
+[13:01] Pronto, aperte o próximo.
+[13:02] E para fechar a nossa tela final.
+[13:04] Sim, a tela 10 traz três cartões de conclusão para amarrar tudo.
+[13:09] O primeiro cartão retoma que é uma essa frase guardada lá na tela 4.
+[13:13] Quanto menor a coisa, mais rápido ela consegue ir e voltar.
+[13:16] A gente precisa voltar nessa frase para explicar por que o giga mora no minúsculo.
+[13:20] Como assim?
+[13:21] Para alguma coisa conseguir se repetir bilhões de vezes em um único segundo,
+[13:25] ela precisa ser pequena demais para os nossos olhos verem.
+[13:29] É fisicamente impossível um balanço de parque real
+[13:32] balançar bilhões de vezes no segundo.
+[13:34] Ele desmancharia todo, né?
+[13:36] Viraria fumaça.
+[13:37] É por isso que o giga vive dentro de peças minúsculas de computador
+[13:42] nos processadores e nunca nas coisas do nosso tamanho.
+[13:45] Ah, faz todo sentido.
+[13:47] O segundo cartão agora ele fala sobre os nomes.
+[13:51] Escrever dois bilhões e quatrocentos milhões
+[13:54] toda vez com um monte de zeros cansa demais.
+[13:57] Então um quilo é mil, mega é milhão, giga é bilhão.
+[14:01] O prefixo é só um apelido para o tamanho do grupo, sabe?
+[14:05] Não é uma medida nova.
+[14:06] É só um apelido para economizar papel e tempo.
+[14:09] E o terceiro cartão ele traz uma honestidade total sobre a nossa conversão.
+[14:13] Sim, a gente precisa mostrar onde a analogia do parque quebra.
+[14:17] Porque o sinal de rádio e a luz do wi-fi não são feitos de madeira ou de ar
+[14:22] balançando, como no som do sino.
+[14:24] O vai-vém deles é de um campo sem nenhum material físico de verdade se mexendo
+[14:29] de lá para cá. Tem um limite na comparação.
+[14:31] Tem. E o giga do processador do computador,
+[14:35] ele não é um balanço solto no tempo também.
+[14:38] Ele funciona como um relógio de tiques precisos,
+[14:41] mandando cada passo do computador acontecer na hora certinha.
+[14:45] Incrível.
+[14:46] Então, para resumir toda a nossa jornada em três frases limpas,
+[14:51] Hertz é repetição por segundo.
+[14:54] O prefixo só muda o tamanho do número.
+[14:57] E quanto menor a coisa, mais rápido ela vai e volta.
+[15:00] Esse é o resumo perfeito de tudo que a gente viu hoje.
+[15:03] E contar bilhões de tiques por segundo sem se perder nenhum,
+[15:06] isso rende outra conversa.

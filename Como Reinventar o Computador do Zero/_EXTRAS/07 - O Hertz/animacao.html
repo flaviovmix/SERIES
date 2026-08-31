@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Hertz — Extra 07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Nascido do molde da base (Etapa 2). Audio gravado em 31/08: o tocador esta
+     no cabecalho e os marcadores do episodio.js saem do _telas.md, como nos
+     episodios. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="hertz.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/extras/index.html">← voltar pros extras</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="O%20que%20o%20Hertz%20realmente%20mede.mp3" data-duracao="908"></audio>
+    <img class="tocador__capa" src="img/balancos-do-parque.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">O que o Hertz realmente mede</div>
+      <div class="tocador__fonte">Extras · 07 · O Hertz</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="908" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">15:08</span></div>
+  </div>
+  <div class="acoes"></div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">extra 07 · fora da linha do tempo</div>
+    <h1 class="reveal">O Hertz</h1>
+    <p class="lede reveal">A rádio diz 89,1, o roteador diz 2,4, o processador diz 3 — e o sobrenome é sempre o mesmo: <b>hertz</b>, mega, giga. Este extra mostra o que esse número conta: quantas vezes <b>por segundo</b> alguma coisa vai e volta. Avance apertando <b>Próximo</b>.</p>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Cada balanço no seu ritmo: é isso que o hertz conta · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/balancos-do-parque.jpg" alt="Fileira de balanços de madeira vazios num parque antigo, cada um pego num ponto diferente do movimento">
+        <figcaption>Uma fileira de balanços, cada um no seu ritmo. O hertz é o número que diz o ritmo: quantos vai-e-véns cabem num segundo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2 · uma repeticao por segundo -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a peça · uma repetição por segundo</div>
+    <h2 class="reveal">Um vai-e-vem por segundo</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Foi até lá e voltou dentro de um segundo: 1 Hz · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/crianca-no-balanco.jpg" alt="Criança num balanço de madeira no ponto mais alto do movimento, com um adulto atrás pronto pra empurrar">
+        <figcaption>Se o balanço vai até lá e volta <b>uma vez a cada segundo</b>, ele balança a 1 hertz. Duas idas e voltas por segundo, 2 Hz. O hertz não mede tamanho nem força: mede <b>repetição por segundo</b>.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">serve pra qualquer coisa que se repete: coração batendo, gota pingando, martelo batendo — conta-se quantas vezes num segundo</div>
+  </section>
+
+  <!-- 3 · conte os vai-e-vens -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · o balanço na tela</div>
+    <h2 class="reveal">Conte os vai-e-véns</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legBalanco">O balanço está em <b>1 Hz</b>: um vai-e-vem por segundo. Troque o ritmo e compare o contador com o relógio.</div>
+      <div id="balanco"></div>
+      <div class="painel__total">
+        <span class="num" id="totalVaiVens">0</span>
+        <span class="meta" id="metaBalanco"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" data-freq="1">1 Hz</button>
+        <button class="btn-mini" data-freq="2">2 Hz</button>
+        <button class="btn-mini" data-freq="4">4 Hz</button>
+        <span class="botoes__sep" role="presentation"></span>
+        <button class="btn-mini" id="btnBalancoZerar">zerar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">deixe contar dez segundos em 2 Hz: o contador fecha perto de 20 — vinte vai-e-véns em dez segundos são dois por segundo</div>
+  </section>
+
+  <!-- 4 · cada balanco tem seu ritmo -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o ritmo próprio · corda curta, corda comprida</div>
+    <h2 class="reveal">Cada balanço tem seu ritmo</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Corda comprida balança devagar; corda curta, depressa · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/dois-balancos.jpg" alt="Dois balanços no mesmo pórtico: um de cordas bem compridas quase encostando no chão e um de cordas curtas, o curto visivelmente mais rápido">
+        <figcaption>O ritmo não é escolha: é do <b>tamanho</b>. Corda comprida balança devagar; corda curta, depressa. Cada balanço tem a frequência <b>dele</b> — e empurrar fora desse ritmo só atrapalha.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">guarde essa: quanto menor a coisa, mais rápido ela consegue ir e voltar — isso explica o fecho do episódio</div>
+  </section>
+
+  <!-- 5 · quilo, mega, giga -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · a escada dos prefixos</div>
+    <h2 class="reveal">Quilo, mega, giga</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legEscada"><b>1 Hz</b> = 1 vai-e-vém por segundo.</div>
+      <div class="freq-grande" id="valorDaEscada">1</div>
+      <div class="freq-exemplo" id="exemploDaEscada"></div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" data-degrau>Hz</button>
+        <button class="btn-mini" data-degrau>kHz</button>
+        <button class="btn-mini" data-degrau>MHz</button>
+        <button class="btn-mini" data-degrau>GHz</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">o prefixo não muda a medida, só o tamanho do número: 2.400.000.000 Hz e 2,4 GHz são exatamente a mesma coisa escrita de dois jeitos</div>
+  </section>
+
+  <!-- 6 · o som e balanco de ar -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o som · balanço de ar</div>
+    <h2 class="reveal">Grave é lento, agudo é rápido</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O sino grande balança o ar devagar; o sininho, depressa · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/sino-grande-e-sininho.jpg" alt="Sino de bronze enorme pendurado ao lado de um sininho de mão numa bancada de oficina, com um martelo entre eles">
+        <figcaption>Som é ar indo e voltando. O sino grande sacode o ar poucas centenas de vezes por segundo: <b>grave</b>. O sininho sacode milhares de vezes: <b>agudo</b>. A nota é só a frequência do empurra-empurra.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">o ouvido humano vai mais ou menos de 20 Hz a 20.000 Hz (20 kHz) — abaixo vira tremor, acima a gente simplesmente não escuta</div>
+  </section>
+
+  <!-- 7 · ouca a frequencia -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · ouça a frequência</div>
+    <h2 class="reveal">Aperte e ouça</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legSom">Cada botão toca um segundo de som na frequência escrita nele. Comece do grave e suba.</div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" data-hz="110">110 Hz</button>
+        <button class="btn-mini cheio" data-hz="220">220 Hz</button>
+        <button class="btn-mini cheio" data-hz="440">440 Hz</button>
+        <button class="btn-mini cheio" data-hz="880">880 Hz</button>
+        <button class="btn-mini cheio" data-hz="1760">1.760 Hz</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">repare no padrão: cada botão tem o DOBRO do anterior, e o ouvido escuta o dobro como "a mesma nota, mais aguda" — é a oitava da música</div>
+  </section>
+
+  <!-- 8 · a sintonia -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a sintonia · escolher o balanço</div>
+    <h2 class="reveal">O botão do rádio</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Sintonizar é escolher qual balanço acompanhar · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/radio-antigo.jpg" alt="Mão girando o botão redondo de sintonia de um rádio antigo de madeira, com o visor âmbar aceso">
+        <figcaption>Cada estação transmite balançando no ritmo próprio: a dos <b>89,1 MHz</b> vai e volta 89,1 <b>milhões</b> de vezes por segundo. Girar o botão é escolher <b>qual balanço acompanhar</b> — e ignorar todos os outros.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">é por isso que dezenas de estações convivem no mesmo ar sem se misturar: cada uma num ritmo, e o rádio só acompanha um por vez</div>
+  </section>
+
+  <!-- 9 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">sua vez · três frequências</div>
+    <h2 class="reveal">Monte você</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilhaHertz"></div>
+      <div class="legenda" id="legPratica">Monte a frequência pedida.</div>
+      <div class="montagem">
+        <button class="algarismo" id="freqAlgarismo" aria-label="algarismo da frequência">1</button>
+        <div class="botoes">
+          <button class="btn-mini cheio" data-mult="1">Hz</button>
+          <button class="btn-mini" data-mult="1000">kHz</button>
+          <button class="btn-mini" data-mult="1000000">MHz</button>
+          <button class="btn-mini" data-mult="1000000000">GHz</button>
+        </div>
+      </div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica">1 Hz</span>
+        <span class="meta" id="metaPratica"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="btnPraticaLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">os três alvos são o mesmo gesto em degraus diferentes da escada: o algarismo conta, o prefixo diz o tamanho do grupo</div>
+  </section>
+
+  <!-- 10 · fecho -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o fecho · o balanço que não se vê</div>
+      <h2 class="reveal">Por que o giga mora no minúsculo</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o minúsculo</div><div class="texto">Lembra da corda curta? Quanto menor a coisa, mais rápido ela vai e volta. Pra alguma coisa se repetir <b>bilhões</b> de vezes por segundo, ela precisa ser pequena demais pra se ver — é por isso que o giga vive dentro de peças minúsculas, e nunca num balanço de parque.</div></div>
+        <div class="item reveal"><div class="rotulo">o apelido</div><div class="texto">Escrever 2.400.000.000 toda vez cansa: <b>quilo</b> é mil, <b>mega</b> é milhão, <b>giga</b> é bilhão. O prefixo é só tamanho, não é medida nova — 2,4 GHz e 2.400.000.000 Hz são a mesma frase.</div></div>
+        <div class="item reveal"><div class="rotulo">onde a analogia quebra</div><div class="texto">O rádio e a luz não são madeira nem ar balançando: o vai-e-vem deles é de um <b>campo</b>, sem material nenhum se mexendo de lá pra cá. E o giga do processador não é um balanço solto — é um <b>relógio de tiques</b> mandando cada passo acontecer na hora certa. Contar bilhões de tiques por segundo sem se perder… rende outra conversa.</div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/trilha.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="hertz.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

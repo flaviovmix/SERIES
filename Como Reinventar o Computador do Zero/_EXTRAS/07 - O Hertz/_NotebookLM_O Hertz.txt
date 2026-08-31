@@ -1,0 +1,160 @@
+Inicie dizendo: O Hertz
+---------------
+
+Este e um episodio avulso, que se explica sozinho. Ele existe pra decifrar um sobrenome que aparece em tudo quanto e etiqueta: a radio diz 89,1, o roteador diz 2,4, o processador diz 3, e o nome que acompanha e sempre hertz, mega, giga. O episodio mostra o que esse numero conta: quantas vezes POR SEGUNDO alguma coisa vai e volta.
+
+REGRA DURA NUMERO UM, VALE PRO ROTEIRO INTEIRO: nao citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. NAO contar de onde veio o nome da unidade nem quem descobriu o que. O hertz entra so como medida. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS, IGUALMENTE OBRIGATORIA: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado", "mais pra frente a gente fala disso" nem "na proxima vez". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois, e tem que sair entendendo do mesmo jeito.
+
+REGRA DURA NUMERO TRES, DESTE EPISODIO: radio, wi-fi, processador e celular PODEM entrar como coisas do dia a dia que a pessoa ve na etiqueta, mas SEM abrir nenhum deles por dentro. NAO explicar como radio transmite, como processador calcula nem o que e onda eletromagnetica em detalhe. O maximo permitido e o fecho dizer que contar bilhoes de tiques por segundo sem se perder "rende outra conversa", sem dizer qual.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 10 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas de DEMONSTRACAO (3, 5 e 7), avisar que tem botao na tela pra mexer enquanto ouve. Na tela 7 os botoes TOCAM SOM: avisar que da pra apertar por cima da nossa fala, ou pausar um instante se quiser ouvir limpo.
+- Na tela de PRATICA (9), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 10 telas. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela, na ordem, e a tela 10 encerra sem pedir. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+AS IMAGENS DAS CENAS SAO RECONSTITUICOES. Sao cenas geradas, realistas mas nao fotograficas. Avisar isso UMA VEZ, na tela 1, em uma frase, e nao repetir nas telas seguintes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita neste arquivo. NAO invente analogias novas.
+
+---
+
+ANALOGIA AUTORIZADA PARA ESTE EPISODIO
+
+Este episodio e feito de UMA analogia so, e ela sustenta as 10 telas: O BALANCO DO PARQUE. O pareamento e fixo e nao pode mudar no meio do episodio:
+
+- UM VAI-E-VEM COMPLETO do balanco e uma repeticao. Um vai-e-vem por segundo e 1 hertz.
+- Cada balanco tem o RITMO PROPRIO, que vem do tamanho: corda comprida balanca devagar, corda curta balanca depressa. Quanto menor, mais rapido.
+- O SOM e o ar balancando: sino grande sacode o ar devagar (grave), sininho sacode depressa (agudo).
+- A SINTONIA do radio e escolher QUAL balanco acompanhar: cada estacao balanca no ritmo proprio.
+- Os PREFIXOS quilo, mega e giga sao apelidos de tamanho: mil, um milhao e um bilhao de vai-e-vens por segundo.
+
+O sino, o coracao batendo e a gota pingando sao exemplos reais de repeticao, nao analogias novas, e podem ser usados. Nenhuma outra analogia. Nada de corrida, motor, coracao de cidade nem batida de musica eletronica.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O HERTZ)
+
+Abrir com as etiquetas do dia a dia: a radio diz 89,1, o roteador do wi-fi diz 2,4, o processador do computador diz 3. Unidades diferentes na aparencia, mas o sobrenome e sempre o mesmo: hertz, as vezes vestido de mega ou de giga. A pergunta do episodio: o que esse numero conta?
+
+Adiantar a resposta em uma frase, sem explicar ainda: ele conta quantas vezes POR SEGUNDO alguma coisa vai e volta.
+
+A capa mostra uma fileira de balancos de parque, cada um pego num ponto diferente do movimento. Dizer em uma frase que as imagens das cenas deste episodio sao reconstituicoes geradas, nao fotografias. E apresentar a analogia que sustenta o episodio inteiro: o balanco.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas demonstracoes tem botao na tela, e uma delas toca som. Na pratica, pause o audio e resolva com calma. Sem a pagina aberta, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A PECA: UMA REPETICAO POR SEGUNDO)
+
+A cena: uma crianca num balanco, no ponto mais alto do movimento, com um adulto atras pronto pra empurrar.
+
+Definir a medida com calma, porque ela e o episodio inteiro: se o balanco vai ate la e volta UMA vez a cada segundo, ele balanca a um hertz. Duas idas e voltas por segundo, dois hertz. So isso.
+
+Deixar claro o que o hertz NAO mede: nao e tamanho, nao e forca, nao e velocidade. E REPETICAO por segundo. E serve pra qualquer coisa que se repete: coracao batendo, gota pingando, martelo batendo. Conta-se quantas vezes cabem num segundo, e esse numero e a frequencia.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (DEMONSTRACAO: CONTE OS VAI-E-VENS)
+
+A tela tem um balanco desenhado que balanca de verdade, um contador de vai-e-vens, um relogio de segundos e botoes de ritmo: 1, 2 e 4 hertz. Convidar a trocar o ritmo e olhar o contador enquanto ouve.
+
+O que fazer: deixar em 2 hertz e contar dez segundos no relogio da tela. O contador fecha perto de vinte. Vinte vai-e-vens em dez segundos sao dois por segundo: dois hertz. A frequencia e so essa divisao, repeticoes divididas pelo tempo.
+
+Reparar tambem no que muda de um botao pro outro: em 4 hertz o balanco fica visivelmente apressado. O numero e o ritmo sao a mesma coisa.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O RITMO PROPRIO: CORDA CURTA, CORDA COMPRIDA)
+
+A cena: dois balancos no mesmo portico, um de cordas bem compridas, outro de cordas curtas, o curto visivelmente mais rapido.
+
+O ponto da tela: o ritmo de um balanco nao e escolha de quem empurra. E do TAMANHO. Corda comprida balanca devagar; corda curta, depressa. Cada balanco tem a frequencia DELE, e empurrar fora desse ritmo so atrapalha.
+
+Pedir pro ouvinte guardar uma frase, porque ela volta no fim do episodio: quanto menor a coisa, mais rapido ela consegue ir e voltar.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (DEMONSTRACAO: A ESCADA DOS PREFIXOS)
+
+A tela tem um numero grande e quatro botoes: Hz, kHz, MHz e GHz. Cada botao mostra quanto aquele degrau vale e um exemplo do dia a dia. Convidar a subir a escada botao por botao enquanto ouve.
+
+Subir junto, degrau por degrau: um hertz e um vai-e-vem por segundo, e a tomada de casa balanca a sessenta. Um quilohertz sao MIL por segundo, e o quilo e o mesmo quilo de sempre. Um megahertz e um MILHAO por segundo. Um gigahertz e um BILHAO por segundo.
+
+Fechar com a regra que tira o medo: o prefixo nao muda a medida, so o tamanho do numero. Dois virgula quatro gigahertz e dois bilhoes e quatrocentos milhoes de hertz sao exatamente a mesma frase, escrita de dois jeitos.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O SOM: BALANCO DE AR)
+
+A cena: um sino de bronze enorme ao lado de um sininho de mao, numa oficina.
+
+Ligar o hertz ao ouvido: som e ar indo e voltando. O sino grande sacode o ar poucas centenas de vezes por segundo, e o ouvido escuta isso como GRAVE. O sininho sacode milhares de vezes por segundo: AGUDO. A nota musical e so a frequencia do empurra-empurra do ar.
+
+Dar os limites do ouvido humano: mais ou menos de vinte hertz a vinte mil hertz, que e vinte quilohertz. Abaixo disso vira tremor no corpo; acima, a gente simplesmente nao escuta.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (DEMONSTRACAO: APERTE E OUCA)
+
+A tela tem cinco botoes que TOCAM um segundo de som cada: 110, 220, 440, 880 e 1760 hertz. Avisar que da pra apertar por cima da nossa fala, ou pausar um instante se quiser ouvir limpo. Convidar a comecar do grave e subir.
+
+O que reparar: cada botao tem o DOBRO da frequencia do anterior, e o ouvido escuta o dobro como a mesma nota, so que mais aguda. E a oitava da musica. O 440, no meio, e o la do afinador, o som que orquestra inteira usa pra acertar antes de tocar.
+
+Fechar amarrando: apertar esses botoes e apertar o proprio numero. 880 nao e um som "maior" que o 440; e o ar indo e voltando duas vezes mais depressa.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (A SINTONIA: ESCOLHER O BALANCO)
+
+A cena: uma mao girando o botao redondo de sintonia de um radio antigo de madeira, com o visor marcado so por tracos.
+
+Fechar a analogia com a etiqueta da capa: cada estacao de radio transmite balancando no ritmo proprio. A estacao dos 89,1 megahertz vai e volta 89,1 MILHOES de vezes por segundo. Girar o botao de sintonia e escolher QUAL balanco acompanhar, e ignorar todos os outros.
+
+E responder a pergunta que fica: e por isso que dezenas de estacoes convivem no mesmo ar sem virar bagunca. Cada uma num ritmo, e o radio so acompanha um ritmo por vez.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (PRATICA: MONTE VOCE)
+
+Convidar a pausar o audio e resolver na tela: ela pede tres frequencias, uma de cada vez, tres quilohertz, dois megahertz e cinco gigahertz. Monta-se clicando no algarismo, que avanca de um em um, e escolhendo o prefixo certo.
+
+Dica falada, sem entregar tudo: os tres alvos sao o mesmo gesto em degraus diferentes da escada. O algarismo conta; o prefixo diz o tamanho do grupo.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 10 (FECHO: POR QUE O GIGA MORA NO MINUSCULO)
+
+A tela mostra tres cartoes: o minusculo, o apelido e onde a analogia quebra.
+
+Primeiro cartao, retomando a frase guardada na tela 4: quanto menor, mais rapido. Pra alguma coisa se repetir BILHOES de vezes por segundo, ela precisa ser pequena demais pra se ver. E por isso que o giga vive dentro de pecas minusculas, e nunca num balanco de parque.
+
+Segundo cartao, o apelido: escrever dois bilhoes e quatrocentos milhoes toda vez cansa. Quilo e mil, mega e milhao, giga e bilhao. O prefixo e so tamanho, nao e medida nova.
+
+Terceiro cartao, onde a analogia quebra, dito com honestidade: o radio e a luz nao sao madeira nem ar balancando. O vai-e-vem deles e de um campo, sem nenhum material se mexendo de la pra ca. E o giga do processador nao e um balanco solto: e um relogio de tiques, mandando cada passo acontecer na hora certa.
+
+Recapitular em tres frases: hertz e repeticao por segundo. O prefixo so muda o tamanho do numero. E quanto menor a coisa, mais rapido ela vai e volta.
+
+Fechar com o gancho, sem apontar pra lugar nenhum: e contar bilhoes de tiques por segundo sem se perder nenhum, isso rende outra conversa.

@@ -1,0 +1,35 @@
+Inicie dizendo: O Hertz
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Hertz.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e um episodio avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM: NAO citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. NAO contar de onde veio o nome da unidade. O hertz entra so como medida. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado" nem "mais pra frente a gente fala disso". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois.
+
+REGRA DURA NUMERO TRES: radio, wi-fi, processador e celular entram so como coisas do dia a dia vistas na etiqueta, SEM abrir nenhum por dentro. NAO explicar transmissao de radio nem onda eletromagnetica em detalhe. O fecho pode dizer que contar bilhoes de tiques por segundo rende outra conversa, sem dizer qual.
+
+FOCO: o que o hertz conta, explicado inteiro dentro de UMA analogia, o balanco do parque. Um vai-e-vem por segundo e 1 Hz; o ritmo e do tamanho (corda curta balanca depressa; quanto menor, mais rapido); o som e ar balancando (grave lento, agudo rapido, ouvido de 20 Hz a 20 kHz); a sintonia e escolher qual balanco acompanhar; quilo, mega e giga sao apelidos de mil, milhao e bilhao. Fecha com por que o giga mora no minusculo, o apelido dos prefixos e onde a analogia quebra.
+
+A pagina tem 10 telas e o ouvinte avanca no botao Proximo. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela; a tela 10 encerra sem pedir. Nas telas de demonstracao (3, 5 e 7), avisar que tem botao na tela; na 7 os botoes TOCAM som, e da pra apertar por cima da fala ou pausar um instante. Na tela de pratica (9), convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita no _NotebookLM_O Hertz.txt, que e o balanco do parque. NAO invente analogias novas e NAO troque o pareamento no meio do episodio. O sino, o coracao batendo e a gota pingando sao exemplos reais de repeticao, nao analogias, e podem ser usados. Nada de corrida, motor nem batida de musica.
+
+Use tambem o Overview.txt como contexto curto.

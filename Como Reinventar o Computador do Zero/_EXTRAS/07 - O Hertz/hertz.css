@@ -1,0 +1,128 @@
+/* hertz (deste extra)
+   As pecas do EX-07: o BALANCO (pendulo desenhado que balanca no ritmo pedido),
+   o mostrador da ESCADA de prefixos, os botoes de OUVIR e a montagem da pratica.
+   Depende de animacao/tokens.css e mora dentro de .painel (animacao/painel.css). */
+
+/* o balanco: barra em cima, corda e bola, balancando por keyframes; o ritmo
+   (animation-duration) e o contador de vai-e-vens ficam no hertz.js */
+.balanco {
+  position: relative;
+  height: 190px;
+  width: 240px;
+  margin: 0 auto;
+}
+.balanco::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  height: 6px;
+  border-radius: 99px;
+  background: var(--line);
+}
+.balanco .pendulo {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 0;
+  height: 160px;
+  transform-origin: top center;
+  animation: balanca 1s ease-in-out infinite;
+}
+.balanco .corda {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 2px;
+  height: 132px;
+  background: var(--ink-soft);
+}
+.balanco .bola {
+  position: absolute;
+  top: 128px;
+  left: -14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--accent-vivo), var(--accent));
+  box-shadow: 0 0 18px -6px var(--accent-vivo);
+}
+@keyframes balanca {
+  0% { transform: rotate(26deg); }
+  50% { transform: rotate(-26deg); }
+  100% { transform: rotate(26deg); }
+}
+
+/* o numero grande da escada de prefixos e da pratica */
+.freq-grande {
+  font-family: var(--fonte-mono);
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--accent);
+}
+.freq-exemplo {
+  font-family: var(--fonte-mono);
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-align: center;
+  min-height: 18px;
+  margin-top: 6px;
+}
+
+/* a montagem da pratica: o algarismo clicavel e os prefixos ao lado */
+.montagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.montagem .algarismo {
+  font-family: var(--fonte-mono);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1;
+  min-width: 84px;
+  padding: 12px 10px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--accent);
+  background: var(--surface);
+  cursor: pointer;
+  transition: border-color .25s, box-shadow .25s;
+}
+.montagem .algarismo:hover { border-color: var(--accent); }
+.montagem .botoes { margin-top: 0; }
+
+/* ---- apertos, no fim da folha de proposito ---- */
+
+/* tela baixa: cabe em 1366x768 sem rolar */
+@media (max-height: 820px) {
+  .balanco { height: 150px; }
+  .balanco .pendulo { height: 124px; }
+  .balanco .corda { height: 100px; }
+  .balanco .bola { top: 96px; }
+  .freq-grande { font-size: 34px; }
+  .montagem .algarismo { font-size: 40px; min-width: 64px; padding: 8px; }
+}
+
+/* telefone, por ultimo de proposito: os 844px de altura do aparelho tambem casam
+   com bloco de max-height que viesse depois e desfazem o aperto */
+@media (max-width: 700px) {
+  .balanco { width: 180px; }
+  .freq-grande { font-size: 26px; }
+  .montagem { gap: 10px; }
+  .montagem .algarismo { font-size: 32px; min-width: 52px; padding: 6px; }
+}
+
+/* com o tocador no cabecalho, a capa (h1 + lede + cena) estoura ~17px em
+   1366x768: a cena encolhe um pouco em tela baixa. So fora do telefone, pra
+   nao passar por cima da medida de 26vh do bloco estreito da base. */
+@media (max-height: 820px) and (min-width: 821px) {
+  .cena img { height: clamp(170px, 42vh, 480px); }
+}

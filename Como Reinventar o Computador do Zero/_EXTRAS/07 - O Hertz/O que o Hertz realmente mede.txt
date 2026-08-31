@@ -1,0 +1,7 @@
+Titulo: O que o Hertz realmente mede
+Notebook: EX-07-O Hertz
+
+Descricao:
+Estes documentos detalham a estrutura e as diretrizes conceituais de um episódio educativo focado na definição de hertz como unidade de medida de frequência. O conteúdo utiliza a analogia de um balanço de parque para explicar de forma simples que o termo representa a quantidade de repetições por segundo, desmistificando nomenclaturas comuns em eletrônicos. O roteiro é acompanhado por uma animação interativa de dez telas, que guia o público através de demonstrações práticas, sons reais e a escada de prefixos como quilo, mega e giga. As instruções estabelecem regras rígidas de comunicação, proibindo referências históricas ou termos técnicos complexos para garantir que o material seja totalmente autossuficiente e acessível. Ao final, o objetivo é que o ouvinte compreenda o funcionamento de etiquetas de rádio e processadores sob a lógica de que coisas menores vibram mais rapidamente.
+
+Link: https://notebook.google.com/notebook/57e0a213-6698-43c1-858c-3bd3a0c49260

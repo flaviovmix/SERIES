@@ -1,0 +1,17 @@
+O HERTZ - CONTEXTO
+==================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio avulso, que se explica sozinho. Nao depende de nada ouvido antes e nao continua em lugar nenhum. Quem apertar o play sem saber nada de fisica tem que sair entendendo.
+
+Ele existe pra decifrar o sobrenome que aparece em toda etiqueta: a radio diz 89,1, o roteador diz 2,4, o processador diz 3, e o nome e sempre hertz, mega, giga. O episodio mostra o que esse numero conta: quantas vezes POR SEGUNDO alguma coisa vai e volta. Repeticao por segundo, nao tamanho nem forca.
+
+O episodio inteiro se passa dentro de uma unica analogia, o balanco do parque. Um vai-e-vem por segundo e 1 hertz. Cada balanco tem o ritmo proprio, que vem do tamanho: corda comprida devagar, corda curta depressa, e quanto menor a coisa mais rapido ela vai e volta. O som e o ar balancando (sino grande grave, sininho agudo; o ouvido vai de uns 20 Hz a uns 20 kHz). A sintonia do radio e escolher qual balanco acompanhar. E os prefixos quilo, mega e giga sao apelidos de tamanho: mil, um milhao e um bilhao de vai-e-vens por segundo.
+
+Regras duras deste episodio. Primeira: NAO tem cientista, NAO tem data e NAO se conta de onde veio o nome da unidade; o hertz entra so como medida. Segunda: NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. Este audio pode ser ouvido sozinho, fora de qualquer ordem. Terceira: radio, wi-fi e processador entram so como coisas do dia a dia vistas na etiqueta, sem abrir nenhum por dentro.
+
+A pagina da animacao tem 10 telas e o ouvinte avanca apertando Proximo. Tres telas sao demonstracoes com botao: o balanco desenhado com contador de vai-e-vens (1, 2 e 4 Hz), a escada dos prefixos com exemplo do dia a dia por degrau, e os cinco botoes que TOCAM som de verdade (110, 220, 440, 880 e 1760 Hz, cada um o dobro do anterior, mostrando a oitava). Uma e pratica: montar 3 kHz, 2 MHz e 5 GHz com um algarismo e um prefixo.
+
+Ao final o ouvinte consegue ler qualquer etiqueta com hertz (89,1 MHz = 89,1 milhoes de vai-e-vens por segundo), explicar grave e agudo como frequencia do ar, converter prefixo sem medo (2,4 GHz = 2.400.000.000 Hz) e defender o fecho: o giga mora em coisas minusculas porque quanto menor, mais rapido vai e volta.
+
+Use este contexto apenas como apoio.
