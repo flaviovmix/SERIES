@@ -1,0 +1,75 @@
+/* sessenta (deste extra)
+   As pecas do EX-06: o RELOGIO (o tempo escrito grande, com as partes que a
+   leitura destaca) e as PEDRAS da divisao (os grupos e a sobra). Depende de
+   animacao/tokens.css e mora dentro de .painel (animacao/painel.css). */
+
+.relogio {
+  font-family: var(--fonte-mono);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .04em;
+  text-align: center;
+  color: var(--accent);
+}
+.relogio .sep { color: var(--ink-soft); }
+.relogio .parte {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: border-color .25s, box-shadow .25s;
+}
+.relogio .parte.destaque { border-color: var(--accent); box-shadow: 0 0 24px -8px var(--accent-vivo); }
+
+/* os grupos da divisao: pedras de 5 em 5 por linha, sobra em moldura de alerta */
+.grupos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.grupo {
+  display: grid;
+  grid-template-columns: repeat(5, 12px);
+  gap: 5px;
+  align-content: start;
+  padding: 8px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+}
+.pedra {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--accent-vivo), var(--accent));
+}
+.grupo--sobra { border-color: var(--flag); }
+.grupo--sobra .pedra { background: var(--flag); }
+
+/* ---- apertos, no fim da folha de proposito ---- */
+
+/* tela baixa: cabe em 1366x768 sem rolar */
+@media (max-height: 820px) {
+  .relogio { font-size: 44px; }
+  .grupo { grid-template-columns: repeat(5, 10px); gap: 4px; padding: 6px; }
+  .pedra { width: 10px; height: 10px; }
+}
+
+/* telefone, por ultimo de proposito: os 844px de altura do aparelho tambem casam
+   com bloco de max-height que viesse depois e desfazem o aperto */
+@media (max-width: 700px) {
+  .relogio { font-size: 32px; }
+  .relogio .parte { padding: 4px 6px; }
+  .grupos { gap: 8px; }
+  .grupo { grid-template-columns: repeat(5, 8px); gap: 3px; padding: 5px; }
+  .pedra { width: 8px; height: 8px; }
+}
+
+/* com o tocador no cabecalho, a capa (h1 + lede + cena) estourava ~17px em
+   1366x768: a cena encolhe um pouco em tela baixa. So fora do telefone, pra
+   nao passar por cima da medida de 26vh do bloco estreito da base. */
+@media (max-height: 820px) and (min-width: 821px) {
+  .cena img { height: clamp(170px, 42vh, 480px); }
+}

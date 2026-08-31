@@ -1,0 +1,35 @@
+Inicie dizendo: O Sistema Hexadecimal
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Sistema Hexadecimal.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e um episodio avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM: NAO citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado" nem "mais pra frente a gente fala disso". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois.
+
+REGRA DURA NUMERO TRES: NAO usar as palavras bit e byte, e NAO explicar computador por dentro. Cor de tela, endereco de rede e etiqueta de equipamento entram so como coisas do dia a dia que a pessoa ve, sem abrir o capo. O fecho pode dizer que a origem dos sim-ou-naos rende outra conversa, sem dizer qual.
+
+FOCO: o sistema que conta ate quinze num desenho so, explicado inteiro dentro de UMA analogia, o armario de dezesseis gavetas e o estojo de carimbos. Os algarismos sao carimbos, faltam seis e pegam-se emprestados do alfabeto (A vale dez ate F valendo quinze), a gaveta cheia e o grupo de dezesseis, duas casas contam do 00 ao FF, e o coracao e o encaixe exato: um algarismo de dezesseis e o apelido de quatro sim-ou-naos. Fecha com o tamanho certo, o preco (letra assusta mas 2A e so quarenta e dois) e onde a analogia quebra.
+
+A pagina tem 10 telas e o ouvinte avanca no botao Proximo. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela; a tela 10 encerra sem pedir. Nas telas de demonstracao (4, 6 e 8), avisar que tem botao na tela. Na tela de pratica (9), convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita no _NotebookLM_O Sistema Hexadecimal.txt, que e o armario de dezesseis gavetas e o estojo de carimbos. NAO invente analogias novas e NAO troque o pareamento no meio do episodio. Nada de time, bau, alfabeto secreto nem senha. Comparar com o jeito comum de contar (o vai-um da conta armada, a casa que enche no 9) pode, porque e conhecimento de escola.
+
+Use tambem o Overview.txt como contexto curto.

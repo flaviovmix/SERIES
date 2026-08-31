@@ -1,0 +1,158 @@
+Inicie dizendo: O Sistema Binario
+---------------
+
+Este e um episodio avulso, que se explica sozinho. Ele existe pra responder uma pergunta simples de fazer e boa de responder: da pra contar QUALQUER numero usando so duas posicoes, aceso e apagado? Da, e este episodio mostra como, e mostra por que o grupo de dois nao e uma esquisitice, e uma escolha esperta.
+
+REGRA DURA NUMERO UM, VALE PRO ROTEIRO INTEIRO: nao citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS, IGUALMENTE OBRIGATORIA: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado", "mais pra frente a gente fala disso" nem "na proxima vez". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois, e tem que sair entendendo do mesmo jeito.
+
+REGRA DURA NUMERO TRES, DESTE EPISODIO: NAO usar as palavras "bit", "byte", "computador", "circuito", "chip", "processador" nem "digital". O episodio e sobre CONTAR com dois estados, e para ai. O maximo permitido e o fecho dizer que empilhar sim-e-nao "rende outra conversa", sem dizer qual.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 10 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas de DEMONSTRACAO (4, 6 e 8), avisar que tem botao na tela pra rodar ou dar o passo enquanto ouve.
+- Na tela de PRATICA (9), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 10 telas. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela, na ordem, e a tela 10 encerra sem pedir. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+AS IMAGENS DAS CENAS SAO RECONSTITUICOES. Sao cenas geradas, realistas mas nao fotograficas. Avisar isso UMA VEZ, na tela 1, em uma frase, e nao repetir nas telas seguintes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita neste arquivo. NAO invente analogias novas.
+
+---
+
+ANALOGIA AUTORIZADA PARA ESTE EPISODIO
+
+Este episodio e feito de UMA analogia so, e ela sustenta as 10 telas: A LAMPADA E O INTERRUPTOR. O pareamento e fixo e nao pode mudar no meio do episodio:
+
+- Uma LAMPADA so tem dois jeitos: acesa ou apagada. Acesa e o algarismo 1, apagada e o algarismo 0.
+- Uma FILEIRA DE CINCO LAMPADAS e um numero de cinco casas. Cada lampada e uma casa.
+- Cada casa vale o DOBRO da anterior: 1, 2, 4, 8, 16. O valor do numero e a soma das lampadas acesas.
+- O INTERRUPTOR sem meio-termo e o motivo da escolha: leitura a prova de erro.
+- A lampada APAGADA no meio da fileira e o zero segurando a casa dela.
+
+Nenhuma outra analogia. Nada de moeda, chave de carro, semaforo nem dedo. So lampadas e interruptores. Comparar com o jeito comum de contar (o sistema de dez, o vai-um da conta armada, o estouro do 99 pra 100) e permitido e bem-vindo, porque e conhecimento de escola, nao outra analogia.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O SISTEMA BINARIO)
+
+Abrir com a imagem da capa: um galpao escuro, uma viga de madeira, cinco lampadas penduradas, umas acesas e outras apagadas. Dizer em uma frase que as imagens das cenas deste episodio sao reconstituicoes geradas, nao fotografias.
+
+Lancar a provocacao: tudo o que uma lampada sabe dizer e aceso ou apagado. E mesmo assim aquela fileira da capa ja e um numero. So falta combinar como ler, e e isso que este episodio ensina: contar, somar e fazer o vai-um usando so dois estados.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas demonstracoes tem botao na tela. Na pratica, pause o audio e resolva com calma. Sem a pagina aberta, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A PECA: SO DOIS JEITOS)
+
+A cena: uma mao empurrando uma chave de alavanca de latao num painel escuro.
+
+O ponto da tela: o interruptor nao tem meio-termo. Ou fechou, ou nao fechou. E isso, que parece pobreza, e a forca dele: de longe, no escuro, com pressa, com a lampada velha e fraca, ninguem confunde aceso com apagado. E uma leitura A PROVA DE ERRO.
+
+Comparar com o custo de ter dez estados: pra ler dez niveis diferentes de brilho numa lampada, precisaria de olho bom, luz controlada e boa vontade. Dois estados se leem de relance, sempre.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A REGRA: ENCHEU O GRUPO DE DOIS, SOBE UM)
+
+A cena: duas lampadas lado a lado numa tabua, uma acesa e uma apagada, cada uma com seu interruptor.
+
+Ensinar a regra com calma, porque ela e o episodio inteiro: uma lampada conta ate UM. Apagada e zero, acesa e um. Veio mais um? Ela encheu: apaga e acende a vizinha da esquerda.
+
+Amarrar com o que todo mundo ja sabe: e a mesma regra de sempre do contar, a do "encheu, sobe um" da conta armada. Com dez algarismos a casa enche no 9. Aqui, com dois, ela enche ja no 1. A regra nao mudou, o grupo e que e menor, entao o vai-um chega muito mais cedo.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (DEMONSTRACAO: DEIXA CONTAR)
+
+A tela tem cinco lampadas e um botao comecar: a contagem anda sozinha, somando um de cada vez, ate trinta e um, e a legenda narra cada vai-um. Convidar a apertar comecar e deixar rodar enquanto ouve.
+
+O que reparar, em ordem: no um, a primeira lampada acende e JA esta cheia. No dois, ela apaga e a vizinha acende: primeiro vai-um. E o momento de ouro e a passagem do sete pro oito: TRES lampadas viram de uma vez, tudo apaga e uma acende. E o mesmo estouro do 99 pra 100 da contagem comum, so que aqui ele acontece a toda hora, porque casa de dois enche rapido.
+
+Fechar com o teto: com cinco lampadas a fileira enche no trinta e um. Pra seguir, precisaria de uma sexta lampada.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A ESCADA: CADA CASA DOBRA)
+
+A cena: cinco lampadas na parede de uma oficina, cada uma com o dobro do tamanho da anterior.
+
+Explicar o valor das casas: no sistema de dez, cada casa vale dez vezes a anterior, porque o grupo fecha com dez. Aqui o grupo fecha com dois, entao cada casa vale so o DOBRO: um, dois, quatro, oito, dezesseis.
+
+Fazer a conta de cabeca junto com o ouvinte: com essas cinco casas, acendendo as certas, da pra escrever qualquer numero de zero a trinta e um. Sao trinta e duas combinacoes possiveis, uma pra cada numero. Nao sobra, nao falta.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (DEMONSTRACAO: O VALOR MORA NA CASA)
+
+A tela tem as cinco lampadas e um botao de passo chamado dobra: cada apertada move a MESMA lampada acesa uma casa pra esquerda. Convidar a ir apertando junto com a explicacao.
+
+Os passos: uma lampada acesa na casa do 1 vale um. A mesma lampada, uma casa a esquerda, vale dois. De novo: quatro. De novo: oito. De novo: dezesseis. A lampada nao mudou, a CASA mudou.
+
+O ultimo passo do botao monta um numero qualquer: o treze, que e oito mais quatro mais um, com tres lampadas acesas. Ler junto: 01101. E fechar a ponte com o papel: um numero escrito so com uns e zeros se le assim, casa por casa. 101 nao e cento e um: e quatro mais um, cinco.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (A APAGADA NO MEIO)
+
+A cena: cinco lampadas iguais penduradas, quatro acesas e SO a do meio apagada.
+
+O ponto: a apagada nao esta sobrando nem quebrada. Ela esta trabalhando: guarda a casa dela. Se ela fosse retirada da fileira, as vizinhas escorregariam de posicao e mudariam de valor sem ninguem tocar nelas.
+
+Amarrar com o que o ouvinte ja conhece: e o mesmo servico do algarismo zero na escrita comum. No 101, o apagado do meio e o que separa o cinco do tres. Apagada tambem e informacao.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (DEMONSTRACAO: SOMAR E EMPURRAR)
+
+A tela comeca com o numero cinco montado nas lampadas (a do 4 e a do 1 acesas) e tem um botao soma 1. Convidar a apertar junto, um empurrao de cada vez.
+
+Acompanhar os primeiros empurroes: cinco vira seis, a primeira encheu e subiu. Seis vira sete, coube na primeira. E ai o empurrao do sete pro oito: a fileira inteira vira, tres apagam e uma acende, sozinhas. O ouvinte nao fez conta nenhuma: so empurrou UM, e o vai-um fez o resto em cascata.
+
+O ponto da tela: somar qualquer coisa e isso. Somar tres e empurrar um tres vezes. Toda soma grande e feita desses empurroes pequenos, e a regra do encheu-sobe-um cuida de todo o transporte.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (PRATICA: ACENDA VOCE)
+
+Convidar a pausar o audio e resolver na tela: ela pede pra montar tres numeros clicando nas lampadas, um de cada vez, 5, depois 10, depois 21.
+
+Dica falada, sem entregar tudo: o dez deixa a casa do 1 apagada, e o vinte e um acende casa sim, casa nao. Montar o apagado tambem e decisao.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 10 (FECHO: POR QUE LOGO DOIS?)
+
+A tela mostra tres cartoes: o meio-termo, o preco e onde a analogia quebra.
+
+Primeiro cartao: podia existir a lampada meio acesa valendo meio? Podia, mas qualquer oscilacao viraria leitura errada. Com dois estados, mesmo velha, fraca e piscando, a lampada ainda se le certo. Dois e o grupo a prova de erro.
+
+Segundo cartao, o preco: so ter dois algarismos custa comprimento. Trezentos e quarenta e sete, que na escrita comum ocupa tres casas, vira 101011011, nove casas. Troca-se papel por seguranca, e essa troca compensa sempre que errar sai caro.
+
+Terceiro cartao, onde a analogia quebra, dito com honestidade: a lampada e so o exemplo. Qualquer coisa com dois jeitos conta exatamente igual: chave aberta ou fechada, furo ou liso, cheio ou vazio. O sistema nao precisa de luz nenhuma; precisa de um SIM e um NAO combinados entre quem escreve e quem le. E a lampada de verdade ate tem meio-termo, queimada ou fraca; o sistema funciona porque a gente COMBINA ler so dois estados.
+
+Recapitular em tres frases: dois estados se leem sem erro. Cada casa vale o dobro. E o vai-um continua o mesmo de sempre, so que trabalhando o tempo todo.
+
+Fechar com o gancho, sem apontar pra lugar nenhum: e o que da pra construir empilhando esses sim-e-nao, um em cima do outro, rende outra conversa.

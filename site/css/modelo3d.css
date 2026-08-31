@@ -41,3 +41,8 @@
   object-fit: contain;
   background: var(--surface);
 }
+/* a reserva nasce com [hidden], mas o display acima ganharia do atributo e a foto
+   aparecia SEMPRE, embaixo do iframe (bug achado em 30/08 na pagina do extra 01;
+   a etapa 01 tinha o mesmo vazamento) */
+.modelo img[hidden] { display: none; }
+

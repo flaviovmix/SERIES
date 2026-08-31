@@ -1,0 +1,17 @@
+O SISTEMA BINARIO - CONTEXTO
+============================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio avulso, que se explica sozinho. Nao depende de nada ouvido antes e nao continua em lugar nenhum. Quem apertar o play sabendo so a conta armada da escola tem que sair entendendo.
+
+Ele existe pra responder uma pergunta simples: da pra contar qualquer numero usando so dois estados, aceso e apagado? O episodio mostra que da, e que a regra e a mesma que todo mundo ja usa, o "encheu, sobe um", so que com o grupo enchendo no um em vez de encher no nove.
+
+O episodio inteiro se passa dentro de uma unica analogia, a lampada e o interruptor. Lampada acesa e o algarismo 1, apagada e o 0. Uma fileira de cinco lampadas e um numero de cinco casas, e cada casa vale o dobro da anterior: 1, 2, 4, 8, 16. O interruptor sem meio-termo e o motivo da escolha (leitura a prova de erro), e a lampada apagada no meio da fileira e o zero guardando a casa dela.
+
+Regras duras deste episodio. Primeira: NAO tem cientista, NAO tem data, NAO tem invencao historica e NAO tem nome de pessoa. Segunda: NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio, e nao usar frases tipo "como a gente viu antes". Este audio pode ser ouvido sozinho, fora de qualquer ordem. Terceira, especifica deste tema: NAO usar as palavras bit, byte, computador, circuito, chip, processador nem digital. O assunto e contar com dois estados, e o maximo que o fecho pode dizer e que empilhar sim-e-nao rende outra conversa.
+
+A pagina da animacao tem 10 telas e o ouvinte avanca apertando Proximo. Tres telas sao demonstracoes com botao (a contagem ate 31 narrando cada vai-um, a lampada mudando de casa e dobrando de valor, e o somar-e-empurrar que comeca no 5 e estoura a fileira no 7 mais 1) e uma e pratica (montar 5, 10 e 21 clicando nas lampadas).
+
+Ao final o ouvinte consegue ler um numero escrito so com uns e zeros (101 e cinco, nao cento e um), contar nos dedos da fileira ate 31, explicar por que a passagem do 7 pro 8 derruba tres casas de uma vez, e defender a escolha do dois: e o grupo a prova de erro, e o preco dele e o comprimento.
+
+Use este contexto apenas como apoio.

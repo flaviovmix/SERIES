@@ -1,0 +1,154 @@
+Inicie dizendo: O Sistema Decimal
+---------------
+
+Este e um episodio avulso, que se explica sozinho. Ele existe pra resolver uma pergunta que ninguem faz em voz alta: por que a gente conta de dez em dez, o que o "vai um" da conta de escola realmente faz, e por que a POSICAO de um algarismo vale mais que o desenho dele.
+
+REGRA DURA NUMERO UM, VALE PRO ROTEIRO INTEIRO: nao citar nenhum cientista, nenhum povo especifico, nenhuma data, nenhum pais e nenhuma invencao historica. Nao contar a historia dos algarismos nem de onde eles vieram. O quadro de contas que aparece nas demonstracoes e so um objeto da tela, sem historia, sem nome proprio e sem biografia. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS, IGUALMENTE OBRIGATORIA: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado", "mais pra frente a gente fala disso" nem "na proxima vez". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois, e tem que sair entendendo do mesmo jeito.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 10 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas de DEMONSTRACAO (4, 6 e 8), avisar que tem botao na tela pra rodar enquanto ouve.
+- Na tela de PRATICA (9), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 10 telas. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela, na ordem, e a tela 10 encerra sem pedir. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+AS IMAGENS DAS CENAS SAO RECONSTITUICOES. Sao cenas geradas, realistas mas nao fotograficas. Avisar isso UMA VEZ, na tela 1, em uma frase, e nao repetir nas telas seguintes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita neste arquivo. NAO invente analogias novas.
+
+---
+
+ANALOGIA AUTORIZADA PARA ESTE EPISODIO
+
+Este episodio e feito de UMA analogia so, e ela sustenta as 10 telas: OS DEZ DEDOS E O "ENCHEU A MAO, SOBE UM". O pareamento e fixo e nao pode mudar no meio do episodio:
+
+- Os DEZ DEDOS sao o motivo do grupo ser de dez.
+- Encheu as duas maos, larga tudo e guarda UMA PEDRINHA NA TIGELA: a pedrinha e o grupo fechado de dez. E o vai-um.
+- Dez pedrinhas enchem um SAQUINHO, dez saquinhos enchem uma CAIXA: unidade, dezena, centena, milhar sao grupos de grupos.
+- A PRATELEIRA com um compartimento vazio e o zero: o vazio de proposito e informacao.
+- O QUADRO DE CONTAS das demonstracoes (quatro hastes, nove contas por fio) e essa mesma regra virada em objeto: cada haste e uma casa, e a conta que sobe de haste e a pedrinha indo pra tigela.
+
+Nenhuma outra analogia. Nada de comparar com dinheiro, transito, predio, corrida nem com nada. So os dedos, as pedrinhas e a prateleira.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O SISTEMA DECIMAL)
+
+Abrir com a provocacao: voce conta de dez em dez a vida inteira, e provavelmente ninguem nunca te perguntou por que. Este episodio responde tres coisas: de onde o dez vem, o que o "vai um" realmente faz, e por que a posicao de um algarismo vale mais que o desenho dele.
+
+A capa mostra um vendedor de feira contando nos dedos. Dizer em uma frase que as imagens das cenas deste episodio sao reconstituicoes geradas, nao fotografias.
+
+Apresentar a calculadora mais antiga do mundo: a mao. Dez dedos, sempre com voce, sem bateria. E dela que o sistema inteiro sai.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas demonstracoes tem botao na tela. Na pratica, pause o audio e resolva com calma. Sem a pagina aberta, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (POR QUE LOGO DEZ?)
+
+A tela mostra as maos do vendedor em close, tres dedos levantados.
+
+Responder a pergunta do titulo sem romantizar: nao tem nada de especial no numero dez, alem disto: e quantos dedos vem de fabrica. Grupos de outros tamanhos existiram e alguns funcionam ate melhor pra certas tarefas, mas a mao estava sempre disponivel, e a mao ganhou.
+
+O ponto que fica: o dez e um COSTUME que deu certo, nao uma lei da natureza. Guardar essa frase, porque ela volta no fim do episodio.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A REGRA: ENCHEU A MAO, SOBE UM)
+
+A cena: um pastor com as duas maos abertas, dez dedos esticados, e um ajudante pondo UMA pedrinha numa tigela de barro.
+
+Explicar a troca com calma, porque ela e o episodio inteiro: as duas maos encheram? Larga tudo, guarda uma pedrinha e comeca de novo do zero dedo. A pedrinha NAO vale um: vale UM GRUPO DE DEZ inteiro.
+
+Dizer com todas as letras: essa troca, dez de uma coisa virando UMA da coisa seguinte, E o sistema decimal. Tudo o que vem nas proximas telas e consequencia dela.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (DEMONSTRACAO: A POSICAO MANDA)
+
+A tela tem um quadro de contas (quatro hastes: unidade, dezena, centena, milhar) e um botao que roda a demonstracao sozinha. Convidar a apertar o botao enquanto ouve.
+
+O que a demonstracao mostra: as MESMAS tres contas valendo 3, depois 30, depois 300, depois 3000. A pedra nao mudou. A CASA mudou.
+
+Amarrar com o papel: no 347 escrito acontece exatamente isso. O 3 nao vale tres, vale trezentos, so por estar duas casas a esquerda. O algarismo diz quantos; a posicao diz quantos DE QUE. E por isso que a posicao vale mais que o desenho.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (GRUPO DE GRUPOS)
+
+A cena: uma mesa de armazem com pedrinhas soltas, saquinhos de pano cheios e caixas de madeira empilhadas.
+
+Subir a escada: dez pedrinhas enchem um saquinho. Dez saquinhos enchem uma caixa. Dez caixas, um caixote. Ninguem inventou quatro regras diferentes: e a MESMA troca da tela 3, aplicada em cima dela mesma.
+
+Dar nome aos degraus: unidade, dezena, centena, milhar. Cada casa e um grupo de grupos, e cada casa vale dez vezes a anterior.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (DEMONSTRACAO: DEIXA CONTAR)
+
+A tela tem o quadro de contas e um botao comecar: a contagem anda sozinha, somando um de cada vez, e a legenda avisa toda vez que uma casa enche. Convidar a apertar comecar e deixar rodar enquanto ouve.
+
+O que reparar: cada haste tem NOVE contas. A decima nao cabe. E e exatamente POR nao caber que ela sobe: as nove voltam pro comeco e nasce UMA conta na casa de cima. Esse movimento, que a tela faz sozinha a cada dez, e o famoso "vai um" da conta armada. Ele nao e um truque de escola: e a pedrinha da tigela acontecendo de novo e de novo.
+
+Convidar a deixar contar pelo menos ate passar de dez pra ver o primeiro vai-um, e avisar que quem tiver paciencia de esperar o cem ve DUAS casas encherem quase juntas.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (O ZERO GUARDA O LUGAR)
+
+A cena: uma prateleira de feira dividida em compartimentos cheios de frutas, com UM compartimento vazio no meio.
+
+O ponto: aquele vazio nao e falta de fruta. E informacao. O compartimento vazio diz "esta posicao existe e esta desocupada". Se ele fosse removido, os vizinhos escorregariam de lugar, e mudariam de valor sem ninguem mexer neles.
+
+Fechar a ideia: o zero e o jeito de ESCREVER esse compartimento vazio. Ele nao vale nada, e por isso mesmo ele vale muito: segura a casa.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (DEMONSTRACAO: 305 SEM VIRAR 35)
+
+A tela tem o quadro de contas marcando trezentos e cinco e um botao que roda a demonstracao. Convidar a apertar enquanto ouve.
+
+O que a demonstracao mostra: no 305, a haste da dezena fica VAZIA. Se a gente fingisse que casa vazia nao existe e encostasse tudo, o 305 virava 35. Outra quantia, so por perder o lugar.
+
+Fechar: a haste vazia tambem e informacao, e o algarismo 0 e o desenho dela no papel. Sem ele, 305 e 35 seriam o mesmo rabisco.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (PRATICA: MONTE VOCE)
+
+Convidar a pausar o audio e resolver na tela: ela pede pra representar tres numeros no quadro de contas, um de cada vez, 47, depois 90, depois 305.
+
+Dica falada, sem entregar tudo: o 90 deixa a casa da unidade vazia, e o 305 deixa a da dezena vazia. Montar o vazio tambem e decisao.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 10 (FECHO: DEZ E COSTUME, NAO LEI)
+
+A tela mostra tres cartoes: o relogio, a duzia e o interruptor.
+
+Retomar a frase da tela 2: o dez e costume, nao lei. A prova esta no dia a dia. O relogio conta de SESSENTA em sessenta: sessenta segundos viram um minuto, sessenta minutos viram uma hora. Mesma regra do encheu-sobe-um, so muda o tamanho do grupo. A duzia agrupa de DOZE em doze, e tem um motivo pratico: doze divide por dois, por tres, por quatro e por seis sem sobrar, coisa que o dez nao faz. E da pra contar ate com um grupo de DOIS, so liga e desliga: parece pouco, mas a mesma regra do sobe-um funciona inteira, e isso rende outra conversa.
+
+Recapitular o episodio em tres frases: encheu o grupo, sobe um. A casa multiplica, o algarismo conta. E o vazio tambem e informacao.
+
+Fechar: da proxima vez que fizer uma conta armada e subir um numerinho, voce sabe o que esta fazendo: guardando uma pedrinha na tigela.

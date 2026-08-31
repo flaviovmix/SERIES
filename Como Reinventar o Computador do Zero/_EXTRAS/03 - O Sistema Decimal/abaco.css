@@ -1,0 +1,84 @@
+/* abaco (deste episodio)
+   O abaco desenhado em HTML: quatro hastes, nove contas por fio e o valor de cada casa. Depende de animacao/tokens.css e mora dentro de .painel (animacao/painel.css); o total embaixo e o .painel__total da base.
+
+   Cada conta vale 1 e cada haste enche em 9: e o modelo sem barra, que deixa o
+   vai-um obvio sem regra extra. A conta fora do fio fica deslocada em pixel
+   (translateX) e esse valor cresce junto com o tamanho da conta: a proporcao e
+   ~1,6 vezes o passo do fio (conta + gap). */
+
+.abaco {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.haste { display: flex; align-items: center; gap: 18px; }
+.haste .rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 12.5px;
+  width: 88px;
+  text-align: right;
+  color: var(--ink-soft);
+  letter-spacing: .08em;
+}
+.haste.destaque .rotulo { color: var(--accent); font-weight: 600; }
+.haste .fio {
+  position: relative;
+  flex: 1;
+  height: 54px;
+  border-radius: 99px;
+  background: linear-gradient(0deg, transparent 46%, var(--line) 46% 54%, transparent 54%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 6px;
+}
+.haste.destaque .fio { background: linear-gradient(0deg, transparent 46%, var(--accent-vivo) 46% 54%, transparent 54%); }
+.conta {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  flex: none;
+  background: radial-gradient(circle at 35% 30%, var(--accent-vivo), var(--accent));
+  opacity: .26;
+  transform: translateX(70px) scale(.88);
+  transition: transform .3s var(--ease), opacity .3s var(--ease);
+}
+.conta.on { opacity: 1; transform: translateX(0) scale(1); }
+.abaco.travado .conta { cursor: default; }
+.haste .valor {
+  font-family: var(--fonte-mono);
+  font-size: 19px;
+  width: 34px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---- apertos, no fim da folha de proposito ---- */
+
+/* telefone */
+@media (max-width: 700px) {
+  .haste { gap: 6px; }
+  .haste .rotulo { width: 46px; font-size: 8.5px; }
+  .haste .fio { height: 24px; gap: 2px; padding: 0 4px; }
+  .conta { width: 16px; height: 16px; transform: translateX(12px) scale(.85); }
+  .conta.on { transform: translateX(0) scale(1); }
+  .haste .valor { width: 16px; font-size: 11px; }
+}
+
+/* tela baixa: o abaco volta perto do tamanho antigo, senao nao cabe em 1366x768 */
+@media (max-height: 820px) {
+  .abaco { gap: 8px; max-width: 520px; }
+  .haste .fio { height: 34px; }
+  .conta { width: 26px; height: 26px; transform: translateX(48px) scale(.88); }
+}
+
+/* com o tocador no cabecalho, a capa (h1 + lede + cena) estourava ~17px em
+   1366x768: a cena encolhe um pouco em tela baixa. So fora do telefone, pra
+   nao passar por cima da medida de 26vh do bloco estreito da base. */
+@media (max-height: 820px) and (min-width: 821px) {
+  .cena img { height: clamp(170px, 42vh, 480px); }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Sistema de 60 — Extra 06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Nascido do molde da base (Etapa 2). Audio gravado em 31/08: o tocador esta
+     no cabecalho e os marcadores do episodio.js saem do _telas.md, como nos
+     episodios. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="sessenta.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/extras/index.html">← voltar pros extras</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Por%20que%20a%20hora%20tem%20sessenta%20minutos.mp3" data-duracao="1431"></audio>
+    <img class="tocador__capa" src="img/relogio-de-estacao.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Por que a hora tem sessenta minutos</div>
+      <div class="tocador__fonte">Extras · 06 · O Sistema de 60</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1431" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">23:51</span></div>
+  </div>
+  <div class="acoes"></div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">extra 06 · fora da linha do tempo</div>
+    <h1 class="reveal">O Sistema de 60</h1>
+    <p class="lede reveal">Toda vez que você lê as horas está contando num grupo de <b>sessenta</b> — e nem percebe. Este extra mostra de onde esse grupo estranho veio, por que ele sobreviveu milhares de anos e o que o relógio tem de conta armada. Avance apertando <b>Próximo</b>.</p>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O contador de base sessenta pendurado na parede · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/relogio-de-estacao.jpg" alt="Grande relógio antigo de estação pendurado num suporte de ferro sob um teto de vidro, com o mostrador marcado só por traços">
+        <figcaption>Sessenta segundos viram um minuto; sessenta minutos, uma hora. O relógio é um contador de base sessenta pendurado na parede.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2 · por que sessenta -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a pergunta · por que logo sessenta?</div>
+    <h2 class="reveal">O número amigo de dividir</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Repartir sem sobra é o superpoder do sessenta · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/feira-da-divisao.jpg" alt="Mãos de um vendedor de feira repartindo uma pilha grande de laranjas em montes iguais sobre o balcão de madeira">
+        <figcaption>Sessenta divide por <b>2, 3, 4, 5, 6</b>, 10, 12, 15, 20 e 30 sem deixar resto. Pra repartir mercadoria, pagar diária e partir o dia, isso vale ouro. O cem, tão redondo, tropeça já no três.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 3 · a escrita -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a escrita · sem sessenta desenhos</div>
+    <h2 class="reveal">Cada casa é um compartimento</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um compartimento pros minutos, outro pros segundos · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/relogio-de-bolso.jpg" alt="Relógio de bolso antigo aberto sobre couro envelhecido, mostrador marcado só por traços finos, engrenagens à mostra por uma janelinha">
+        <figcaption>Ninguém inventou sessenta desenhos: dentro de cada casa conta-se de 0 a 59 com os algarismos de sempre. O dois-pontos do <b>2:35</b> é a parede entre as casas — um compartimento pros minutos, outro pros segundos.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">é um sistema dentro do outro: casas de sessenta, escritas em algarismos de dez — e funciona</div>
+  </section>
+
+  <!-- 4 · deixa o relogio contar -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · o vai-um dos sessenta</div>
+    <h2 class="reveal">Deixa o relógio contar</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legContagem">Aperte <b>começar</b> (acelerado: cada piscada é um segundo) e repare no vai-um dos sessenta.</div>
+      <div class="relogio" id="relogioContagem">0:00</div>
+      <div class="painel__total">
+        <span class="num" id="totalSegundos">0</span>
+        <span class="meta">segundos contados</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnContagemComecar">começar →</button>
+        <button class="btn-mini" id="btnContagemPausar">pausar</button>
+        <button class="btn-mini" id="btnContagemQuase">quase no estouro</button>
+        <button class="btn-mini" id="btnContagemLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">em 59:59 as duas casas estão cheias: o próximo segundo derruba tudo de uma vez — 1:00:00, a mesma cascata do 99 pra 100</div>
+  </section>
+
+  <!-- 5 · sessenta numa mao -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a mão que conta · doze ossinhos</div>
+    <h2 class="reveal">Sessenta numa mão só</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O polegar conta os ossinhos: doze por mão · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/mao-das-falanges.jpg" alt="Mão aberta com a palma pra cima, o polegar tocando um dos ossinhos dos dedos, como quem conta">
+        <figcaption>Cada dedo tem <b>três ossinhos</b>; sem o polegar, são doze — e o polegar aponta e conta. Doze numa mão, e cada dedo da outra guarda uma dúzia completa: 5 × 12 = <b>sessenta</b>. Há quem conte assim até hoje.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 6 · reparta as pedras -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · dividir sem sobra</div>
+    <h2 class="reveal">Reparta os sessenta</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPedras">Escolha por quantos dividir e repare na sobra.</div>
+      <div class="grupos" id="pedras"></div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini" data-divisor="2">÷ 2</button>
+        <button class="btn-mini" data-divisor="3">÷ 3</button>
+        <button class="btn-mini" data-divisor="4">÷ 4</button>
+        <button class="btn-mini" data-divisor="5">÷ 5</button>
+        <button class="btn-mini" data-divisor="6">÷ 6</button>
+        <span class="botoes__sep" role="presentation"></span>
+        <button class="btn-mini" data-pedras="60">60 pedras</button>
+        <button class="btn-mini" data-pedras="100">100 pedras</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">troque pra 100 e divida por 3 ou por 6: fica pedrinha na mão — a sobra é briga na feira, e o sessenta quase nunca briga</div>
+  </section>
+
+  <!-- 7 · o circulo -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o irmão do sessenta · o círculo</div>
+    <h2 class="reveal">Trezentos e sessenta graus</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O círculo que corta bonito: seis grupos de sessenta · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/compasso-no-papel.jpg" alt="Compasso de latão em pé sobre papel envelhecido com um círculo recém-traçado, dividido em fatias iguais por linhas finas de lápis">
+        <figcaption>O círculo inteiro tem <b>360</b> graus — seis grupos de sessenta. Por isso ele corta bonito: metade, terço, quarto, quinto e sexto do círculo caem todos em número inteiro de graus.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 8 · o 2:35 por dentro -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · lendo o relógio como número</div>
+    <h2 class="reveal">O 2:35 por dentro</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legLeitura">Quantos segundos tem <b>2:35</b>? Aperte <b>lê</b> e desmonte o relógio.</div>
+      <div class="relogio" id="relogioLeitura"><span class="parte" id="leMin">2</span><span class="sep">:</span><span class="parte" id="leSeg">35</span></div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnLeitura">lê →</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">a casa dos minutos multiplica por sessenta, a dos segundos conta os soltos: casa multiplica, algarismo conta — como em qualquer base</div>
+  </section>
+
+  <!-- 9 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">sua vez · três tempos</div>
+    <h2 class="reveal">Monte o tempo</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilhaSessenta"></div>
+      <div class="legenda" id="legPratica">Monte o tempo com os botões.</div>
+      <div class="relogio" id="relogioPratica">0:00</div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica">0</span>
+        <span class="meta" id="metaPratica"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnMaisMinuto">+ 1 minuto</button>
+        <button class="btn-mini cheio" id="btnMaisSegundo">+ 1 segundo</button>
+        <button class="btn-mini" id="btnPraticaLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">o 65 mostra que 1:05 não é 105; o 600 deixa a casa dos segundos vazia — dez minutos cravados, e o vazio de novo é informação</div>
+  </section>
+
+  <!-- 10 · fecho -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o fecho · o sobrevivente</div>
+      <h2 class="reveal">Sessenta é o grupo que reparte</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">onde ele vive</div><div class="texto">No tempo (60 segundos, 60 minutos) e nos ângulos (360 graus). Sobreviveu milhares de anos porque <b>dividir bem</b> importa mais ali do que escrever curto — hora, mapa e círculo vivem sendo repartidos.</div></div>
+        <div class="item reveal"><div class="rotulo">o preço</div><div class="texto">Sessenta desenhos ninguém decora: cada casa se escreve com DOIS algarismos de dez e uma parede no meio (2:35). É um sistema dentro do outro — e funciona há muito tempo.</div></div>
+        <div class="item reveal"><div class="rotulo">onde a analogia quebra</div><div class="texto">O relógio não é outra matemática: é o mesmo <b>encheu, sobe um</b> com grupo de sessenta. E ele para nas horas — dali pra cima o grupo muda (24 horas, 7 dias, 12 meses): o dia a dia mistura bases sem pedir licença. Qual grupo ganha depende do que se precisa: repartir, encurtar… ou só ligar e desligar. Rende outra conversa.</div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/trilha.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="sessenta.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

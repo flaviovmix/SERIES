@@ -1,0 +1,7 @@
+Titulo: Por que o hexadecimal usa letras
+Notebook: EX-05-O Sistema Hexadecimal
+
+Descricao:
+O conteúdo apresenta as diretrizes e o roteiro de um episódio educativo focado no sistema hexadecimal, utilizando uma abordagem visual e prática. Através da analogia de um armário de dezesseis gavetas e um estojo de carimbos, o material explica como as letras de A a F funcionam como algarismos para contar além do número nove sem mudar de casa decimal. As fontes estabelecem regras rigorosas para simplificar o tema, proibindo termos técnicos complexos como "bit" ou "byte" e evitando contextos históricos ou cronológicos. O objetivo central é demonstrar que o agrupamento de dezesseis é ideal para rotular combinações de quatro respostas sim-ou-não, tornando-se um apelido eficiente para dados em dispositivos digitais e códigos de cores. A estrutura do episódio é dividida em dez telas interativas, conduzindo o ouvinte desde a identificação dos novos símbolos até a aplicação prática em situações cotidianas.
+
+Link: https://notebook.google.com/notebook/808704bc-a4e4-4442-9ac1-5335ebe3b7f5

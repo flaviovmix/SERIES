@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Sistema Decimal — Extra 03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Nascido do molde da base (Etapa 2). Audio gravado em 31/08: o tocador esta
+     no cabecalho e os marcadores do episodio.js saem do _telas.md, como nos
+     episodios. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="abaco.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/extras/index.html">← voltar pros extras</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Por%20que%20contamos%20de%20dez%20em%20dez.mp3" data-duracao="772"></audio>
+    <img class="tocador__capa" src="img/maos-contando.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Por que contamos de dez em dez</div>
+      <div class="tocador__fonte">Extras · 03 · O Sistema Decimal</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="772" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">12:52</span></div>
+  </div>
+  <div class="acoes"></div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">extra 03 · fora da linha do tempo</div>
+    <h1 class="reveal">O Sistema Decimal</h1>
+    <p class="lede reveal">Você conta de dez em dez a vida inteira e nunca ninguém te perguntou por quê. Este extra mostra de onde o dez vem, o que o <b>vai-um</b> realmente faz e por que a <b>posição</b> do algarismo vale mais que o desenho dele. Avance apertando <b>Próximo</b>.</p>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A calculadora mais antiga do mundo: a mão · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/maos-contando.jpg" alt="Mãos de um vendedor de feira contando nos dedos diante de um freguês, com cestas de laranjas ao redor">
+        <figcaption>A calculadora que todo mundo carrega: dez dedos. É dela que o sistema inteiro sai.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2 · por que dez? -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a pergunta · por que logo dez?</div>
+    <h2 class="reveal">Porque a mão veio junto</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Contar nos dedos: o hábito que virou sistema · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/maos-contando.jpg" alt="Close nas mãos do vendedor com três dedos levantados, negociando">
+        <figcaption>Não tem nada de especial no dez, além disto: é quantos dedos vêm de fábrica. Povos que contavam de outro jeito existiram, mas a mão ganhou.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 3 · encheu a mao, sobe um -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a regra · encheu a mão, sobe um</div>
+    <h2 class="reveal">Dez vira um</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Dez dedos cheios viram uma pedrinha na tigela: um grupo fechado · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/encheu-a-mao.jpg" alt="Pastor com as duas mãos abertas mostrando os dez dedos enquanto um ajudante põe uma pedrinha numa tigela de barro">
+        <figcaption>As duas mãos encheram? Larga tudo, guarda <b>uma pedrinha</b> e começa de novo. A pedrinha não vale um: vale <b>um grupo de dez</b>.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">essa troca — dez de uma coisa virando uma da coisa seguinte — é o sistema decimal inteiro; o resto é consequência</div>
+  </section>
+
+  <!-- 4 · a posicao manda no valor -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · a posição manda</div>
+    <h2 class="reveal">A mesma pedra, outra casa</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPosicao">A pedrinha da tigela é isto aqui: uma conta que mudou de casa. Aperte <b>ver como funciona</b>.</div>
+      <div id="abacoPosicao"></div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnPosicao">ver como funciona</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">no 347 escrito no papel acontece o mesmo: o 3 não vale três, vale trezentos, só por estar duas casas à esquerda</div>
+  </section>
+
+  <!-- 5 · dez em dez em dez -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a escada · dez em dez em dez</div>
+    <h2 class="reveal">Grupo de grupos</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Dez pedrinhas no saquinho, dez saquinhos na caixa: cada casa é um grupo de grupos · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/sacos-e-caixas.jpg" alt="Mesa de armazém com pedrinhas soltas, fileira de saquinhos de pano cheios e caixas de madeira empilhadas atrás">
+        <figcaption>Dez pedrinhas enchem um saquinho. Dez saquinhos enchem uma caixa. Dez caixas, um caixote. Unidade, dezena, centena, milhar: é só a mesma regra aplicada em cima dela mesma.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 6 · contar sem parar -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · o vai-um trabalhando</div>
+    <h2 class="reveal">Deixa contar</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legContagem">Aperte <b>começar</b> e deixe contar: repare no que acontece toda vez que uma casa enche.</div>
+      <div id="abacoContagem"></div>
+      <div class="painel__total">
+        <span class="num" id="totalContagem">0</span>
+        <span class="meta"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnContagemComecar">começar →</button>
+        <button class="btn-mini" id="btnContagemPausar">pausar</button>
+        <button class="btn-mini" id="btnContagemLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">cada haste tem nove contas: a décima não cabe, e é por não caber que ela sobe — o "vai um" da conta armada é isso acontecendo no papel</div>
+  </section>
+
+  <!-- 7 · o zero (cena) -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o detalhe que faltava · o lugar vazio</div>
+    <h2 class="reveal">O zero guarda o lugar</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O compartimento vazio no meio da prateleira: vazio de propósito · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/prateleira-do-zero.jpg" alt="Prateleira de feira dividida em compartimentos cheios de maçãs, com um compartimento vazio no meio">
+        <figcaption>O compartimento vazio não é falta de fruta: é informação. Sem ele, os vizinhos mudariam de lugar — e de valor.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 8 · o zero (demonstracao) -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · 305 sem virar 35</div>
+    <h2 class="reveal">Casa vazia é informação</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legZero">Trezentos e cinco: a dezena fica <b>vazia</b>. Aperte <b>ver por quê</b>.</div>
+      <div id="abacoZero"></div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnZero">ver por quê</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">o algarismo 0 é o jeito de escrever "esta casa está vazia" — sem ele, 305 e 35 seriam o mesmo desenho</div>
+  </section>
+
+  <!-- 9 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">sua vez · três números</div>
+    <h2 class="reveal">Monte você</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilhaDecimal"></div>
+      <div class="legenda" id="legPratica">Clique nas contas e represente o número.</div>
+      <div id="abacoPratica"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica">0</span>
+        <span class="meta" id="metaPratica"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="btnPraticaLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">o 90 deixa a unidade vazia e o 305 deixa a dezena vazia: repare que montar o vazio também é decisão</div>
+  </section>
+
+  <!-- 10 · fecho: onde o dez nao manda -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o fecho · onde o dez não manda</div>
+      <h2 class="reveal">Dez é costume, não lei</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o relógio</div><div class="texto">Conta de <b>sessenta</b> em sessenta: 60 segundos viram 1 minuto, 60 minutos viram 1 hora. Mesma regra do "encheu, sobe um" — só muda o tamanho do grupo.</div></div>
+        <div class="item reveal"><div class="rotulo">a dúzia</div><div class="texto">Ovo, banana e parafuso se vendem de <b>doze</b> em doze há séculos: doze divide por 2, 3, 4 e 6 sem sobrar, coisa que o dez não faz.</div></div>
+        <div class="item reveal"><div class="rotulo">o interruptor</div><div class="texto">E dá pra contar com um grupo de <b>dois</b>: só liga e desliga. Parece pouco, mas a mesma regra do sobe-um funciona inteira — e isso rende outra conversa.</div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/trilha.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="abaco.js"></script>
+<script src="decimal.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Titulo: Por que contamos de dez em dez
+Notebook: EX-03-O Sistema Decimal
+
+Descricao:
+Estes documentos detalham a estrutura de um roteiro educativo sobre o sistema decimal, projetado para ser consumido de forma independente e visual. O conteúdo evita deliberadamente fatos históricos ou nomes de cientistas para focar na mecânica prática da contagem e do valor posicional. Através da analogia central de pedras e tigelas, o material explica que o número dez é apenas uma convenção baseada em nossos dedos, e não uma regra universal. As fontes descrevem dez telas de animação que ensinam conceitos como o "vai um", a função do zero como marcador de lugar e a lógica de agrupamentos sucessivos. O objetivo final é que o ouvinte compreenda por que a posição de um algarismo altera seu valor e como essa lógica se aplica a outros sistemas, como o relógio.
+
+Link: https://notebooklm.google.com/notebook/442484d1-383b-4eac-b03a-05109fed5cfb

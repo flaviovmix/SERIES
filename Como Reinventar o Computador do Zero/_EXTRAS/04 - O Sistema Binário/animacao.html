@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Sistema Binário — Extra 04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Nascido do molde da base (Etapa 2). Audio gravado em 31/08: o tocador esta
+     no cabecalho e os marcadores do episodio.js saem do _telas.md, como nos
+     episodios. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="binario.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/extras/index.html">← voltar pros extras</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20contar%20qualquer%20n%C3%BAmero%20apenas%20com%20l%C3%A2mpadas.mp3" data-duracao="1765"></audio>
+    <img class="tocador__capa" src="img/galpao-de-lampadas.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como contar qualquer número apenas com lâmpadas</div>
+      <div class="tocador__fonte">Extras · 04 · O Sistema Binário</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1765" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">29:25</span></div>
+  </div>
+  <div class="acoes"></div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">extra 04 · fora da linha do tempo</div>
+    <h1 class="reveal">O Sistema Binário</h1>
+    <p class="lede reveal">Tudo o que uma lâmpada sabe dizer é <b>aceso</b> ou <b>apagado</b>. Este extra mostra como só isso conta qualquer número — e o que o <b>vai-um</b> faz quando o grupo enche com dois. Avance apertando <b>Próximo</b>.</p>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Acesas e apagadas numa viga: a fileira já é um número · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/galpao-de-lampadas.jpg" alt="Fileira de cinco lâmpadas de filamento penduradas numa viga de madeira, algumas acesas e outras apagadas, num galpão escuro">
+        <figcaption>Cinco lâmpadas numa viga: as acesas e as apagadas já são um número. Só falta combinar como ler.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2 · so dois jeitos -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a peça · só dois jeitos</div>
+    <h2 class="reveal">Aceso ou apagado</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A chave sem meio-termo: ou fechou, ou não fechou · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/interruptor-de-alavanca.jpg" alt="Mão empurrando uma chave de alavanca de latão num painel escuro, com o brilho de uma lâmpada refletido no metal">
+        <figcaption>O interruptor não tem meio-termo: ou fechou, ou não fechou. De longe, no escuro, com pressa — ninguém confunde aceso com apagado. É uma leitura à prova de erro.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 3 · encheu o grupo de dois, sobe um -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a regra · encheu o grupo de dois, sobe um</div>
+    <h2 class="reveal">Dois vira um</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma lâmpada conta até 1; veio mais um, apaga e acende a vizinha · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/duas-lampadas.jpg" alt="Duas lâmpadas lado a lado numa tábua de madeira, uma acesa e uma apagada, com um interruptor pequeno embaixo de cada uma">
+        <figcaption>Uma lâmpada conta até 1: apagada é zero, acesa é um. Veio mais um? Ela <b>encheu</b>: apaga e acende a vizinha. A mesma troca de sempre — dez de uma coisa virando uma da seguinte — só que aqui o grupo enche com <b>dois</b>.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">com dez algarismos a casa enche no 9; com dois, ela enche no 1 — o vai-um só chega mais cedo</div>
+  </section>
+
+  <!-- 4 · deixa contar -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · o vai-um trabalhando</div>
+    <h2 class="reveal">Deixa contar</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legContagem">Aperte <b>começar</b> e repare: aqui a casa enche com UMA lâmpada só — o vai-um dispara o tempo todo.</div>
+      <div id="lampContagem"></div>
+      <div class="painel__total">
+        <span class="num" id="totalContagem">0</span>
+        <span class="meta" id="metaContagem"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnContagemComecar">começar →</button>
+        <button class="btn-mini" id="btnContagemPausar">pausar</button>
+        <button class="btn-mini" id="btnContagemLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">de 7 pra 8, três lâmpadas viram de uma vez: é o mesmo estouro do 99 pra 100 — só que aqui ele acontece a toda hora</div>
+  </section>
+
+  <!-- 5 · cada casa dobra -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a escada · cada casa dobra</div>
+    <h2 class="reveal">Um, dois, quatro, oito</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Cada casa vale o dobro da anterior: 1, 2, 4, 8, 16 · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/escada-que-dobra.jpg" alt="Cinco lâmpadas montadas numa parede de oficina, cada uma com o dobro do tamanho da anterior, todas acesas">
+        <figcaption>No sistema de dez, cada casa vale dez vezes a anterior. Aqui a casa enche muito mais rápido, então ela vale só o <b>dobro</b>: 1, 2, 4, 8, 16. Cinco lâmpadas já contam até 31.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 6 · a mesma lampada, outra casa -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · a mesma lâmpada, outra casa</div>
+    <h2 class="reveal">O valor mora na casa</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legDobra">Uma lâmpada acesa na casa do <b>1</b>. Aperte <b>dobra</b> e veja o valor mudar de casa.</div>
+      <div id="lampDobra"></div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnDobra">dobra →</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">no papel é igual: 101 não é "cento e um" — é 4 + 1 = 5, porque cada casa dobra</div>
+  </section>
+
+  <!-- 7 · a apagada no meio -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o detalhe que faltava · a apagada no meio</div>
+    <h2 class="reveal">Apagada também é informação</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A lâmpada apagada guarda a casa dela · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/apagada-no-meio.jpg" alt="Fileira de cinco lâmpadas iguais penduradas numa viga, quatro acesas e a do meio apagada">
+        <figcaption>A apagada no meio da fileira não está sobrando: ela <b>guarda a casa dela</b>. Sem ela, as vizinhas escorregariam de posição — e mudariam de valor.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">é o mesmo serviço do algarismo 0: escrever "esta casa está vazia" — em 101, o apagado do meio é o que separa o 5 do 3</div>
+  </section>
+
+  <!-- 8 · somar e empurrar -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · o empurrão em cascata</div>
+    <h2 class="reveal">Somar é empurrar</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legSoma">Cinco: 4 + 1 acesas. Somar é empurrar <b>UM</b> de cada vez — o vai-um faz o resto. Aperte <b>soma 1</b>.</div>
+      <div id="lampSoma"></div>
+      <div class="painel__total">
+        <span class="num" id="totalSoma">5</span>
+        <span class="meta" id="metaSoma"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnSomaUm">soma 1 →</button>
+        <button class="btn-mini" id="btnSomaRecomecar">recomeçar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">preste atenção no 7 + 1: a fileira inteira vira de uma vez — toda soma grande é feita desses empurrões</div>
+  </section>
+
+  <!-- 9 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">sua vez · três números</div>
+    <h2 class="reveal">Acenda você</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilhaBinaria"></div>
+      <div class="legenda" id="legPratica">Clique nas lâmpadas e monte o número.</div>
+      <div id="lampPratica"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica">0</span>
+        <span class="meta" id="metaPratica"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="btnPraticaLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">o 10 deixa a casa do 1 apagada e o 21 acende casa sim, casa não: repare que montar o apagado também é decisão</div>
+  </section>
+
+  <!-- 10 · fecho: por que logo dois -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o fecho · por que logo dois?</div>
+      <h2 class="reveal">Dois é o grupo à prova de erro</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o meio-termo</div><div class="texto">Podia existir a lâmpada meio acesa valendo meio? Podia — mas aí qualquer oscilação vira leitura errada. Com <b>dois</b> estados, mesmo velha, fraca e piscando, a lâmpada ainda se lê certo: aceso ou apagado.</div></div>
+        <div class="item reveal"><div class="rotulo">o preço</div><div class="texto">Só ter dois algarismos custa comprimento: trezentos e quarenta e sete vira <b>101011011</b>, nove casas. Troca-se papel por segurança — e a troca compensa sempre que errar sai caro.</div></div>
+        <div class="item reveal"><div class="rotulo">onde a analogia quebra</div><div class="texto">A lâmpada é só o exemplo: qualquer coisa com dois jeitos conta igual — chave aberta ou fechada, furo ou liso, cheio ou vazio. O sistema não precisa de luz nenhuma; precisa de um <b>sim</b> e um <b>não</b> combinados. E o que dá pra construir empilhando sim-e-não… rende outra conversa.</div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/trilha.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="lampadas.js"></script>
+<script src="binario.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

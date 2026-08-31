@@ -1,0 +1,209 @@
+# Transcricao automatica (faster-whisper small) - 10.6 min
+# Fonte: Por que o hexadecimal usa letras.mp3
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O sistema hexadecimal.
+[00:01] Aham.
+[00:02] Tem uma coisa muito familiar na forma que a gente aprende a contar na escola desde cedo, sabe?
+[00:07] É, a regra é clara, tipo, quase reconfortante.
+[00:10] Sim.
+[00:10] A gente vai do zero ao nove e quando o espaço acaba, pega o que sobrou e joga pra casa do lado.
+[00:15] Exato!
+[00:16] É o famoso vai-um da conta armada.
+[00:18] A casa é enche no nove, o balde transborta e a gente sobe pra próxima casa matemática.
+[00:23] É, é um limite totalmente visível no dia a dia, né?
+[00:26] Bateu no nove, a unidade vira dezena.
+[00:29] Aham.
+[00:29] Bateu no noventa e nove, a dezena vira centena.
+[00:32] A gente tá tão acostumado com essa virada que parece uma lei da natureza.
+[00:36] Algo que não pode ser alterado de jeito nenhum.
+[00:39] Mas a nossa análise de hoje muda totalmente essa regra.
+[00:42] Com certeza.
+[00:43] A pergunta que guia o nosso material de origem é simples, mas quase ninguém faz.
+[00:47] Depois do nove, dá pra continuar contando sem subir de casa.
+[00:51] E nós temos em mãos um guia interativo visual que distrinche exatamente isso,
+[00:56] mostrando que a resposta é sim.
+[00:58] Sim, é perfeitamente possível desde que a gente tenha mais algarismos à disposição.
+[01:04] E existe um sistema inteiro construído com essa lógica.
+[01:07] Um sistema onde cabe muito mais coisa em cada casa,
+[01:10] antes de precisar pular pra próxima.
+[01:12] A nossa missão de hoje é entender esse sistema de ponta a ponta, né?
+[01:16] O objetivo é sair daqui compreendendo por que a letra A vale 10 e o F vale 15.
+[01:23] Isso, e a gente vai aprender a ler um número que parece uma senha tipo 2A sem medo.
+[01:28] E no final, descobrir por que o grupo de 16 tem o tamanho exato.
+[01:33] Olha, pra quem tá acompanhando a página na tela junto com o áudio, vale um aviso sobre o formato, tá?
+[01:38] As imagens das cenas são reconstruções geradas por computador, não são fotografias.
+[01:43] Bom, aviso, a gente avisa isso uma vez só.
+[01:45] O áudio vai guiar o caminho por 10 telas.
+[01:48] Nas demonstrações, existem botões na tela.
+[01:51] Na tela de prática, a gente vai sugerir pausar o áudio.
+[01:54] E quem estiver apenas ouvindo lavando a louça sem a página aberta
+[01:58] vai conseguir entender tudo perfeitamente da mesma forma.
+[02:01] Com certeza.
+[02:02] Maravilha, então, aperte o próximo.
+[02:04] A cena que temos aqui na tela 2 é um estojo de madeira,
+[02:07] daqueles antigos de Guarda Carimbo.
+[02:09] De borracha e madeira, né?
+[02:10] Isso.
+[02:11] Dentro dele tem uma fileira com 10 carimbos comuns, enfileirados do 0 ao 9.
+[02:17] E no final, tem 6 encaixes vazios na madeira.
+[02:20] Nossos algarismos de sempre são esses carimbos.
+[02:23] Imagina que cada casa de um número é a marca de um único carimbo.
+[02:27] Mas aí surgiu obstáculo.
+[02:28] Qual?
+[02:29] Se cada casa é a batida de um único carimbo,
+[02:32] e a casa agora só enche com 16,
+[02:35] precisamos de 16 desenhos diferentes.
+[02:39] E faltam 6 desenhos nos buracos do estojo.
+[02:41] Esse é o detalhe crítico.
+[02:43] Tá, é aí que muita gente trava.
+[02:46] A dúvida natural é pensar o motivo da gente não usar logo o 10 ali no buraco.
+[02:50] Pois é, bota o 10 ali e pronto.
+[02:53] Mas não dá, porque o 10 é feito de dois carimbos, o 1 e o 0.
+[02:57] E a casa é o lugar de apenas um carimbo por vez.
+[03:01] Ah, entendi.
+[03:02] A gente precisa de símbolos únicos.
+[03:05] Porque se eu carimbar 1 e 0 juntos, eu ocupo duas casas no papel.
+[03:09] Exato.
+[03:10] A regra da matemática posicional não muda.
+[03:13] O objetivo inteiro do sistema é adiar o vai 1,
+[03:17] manter a contagem numa casa só.
+[03:19] Perfeito, precisamos de um pedaço único de madeira por 10,
+[03:23] outro por 11, até o 15.
+[03:25] Saquei o problema do estojo.
+[03:27] Precisamos de carimbos novos.
+[03:29] Aperta o próximo.
+[03:30] A solução prática aparece agora na tela 3.
+[03:33] Vemos mãos encaixando seis carimbos novos de madeira clara no estojo.
+[03:38] Em vez de inventar desenhos malucos que ninguém conhece,
+[03:41] a saída foi pegar seis emprestados do alfabeto.
+[03:44] O ar validez, o B11, C12, D13, E14 e F15.
+[03:50] É, misturar letra com um número costuma sustar na matemática.
+[03:54] Sim, porque não desenhar uma estrela em vez de confundir o A com o 10.
+[03:58] A mudança de perspectiva que distrava tudo
+[04:02] é perceber que o A aqui não é uma letra de escrever texto.
+[04:06] Ele é um algarismo comum, igual ao 7, apenas vestindo outra roupa.
+[04:11] Se inventassem símbolos novos, ninguém ia lembrar a ordem.
+[04:14] O alfabeto resolve isso de cara, porque a ordem já está decorada.
+[04:18] Ah, verdade, o B vem depois do A.
+[04:19] Popa um esforço gigante de memória.
+[04:22] Contando em voz alta para ilustráfica, 8, 9, A, B, C, D, E, F.
+[04:28] E a casa só enche no F, que é o 15.
+[04:30] Somente depois de carimbar o F é que a casa enche de verdade.
+[04:33] Pede o vai 1. Aperta o próximo.
+[04:35] Na tela 4, temos uma demonstração.
+[04:38] Quem está com a tela pode apertar o botão começar e deixar rodar.
+[04:42] É um mostrador grande com dois algarismos, né?
+[04:45] O lance aqui é observar a passagem do 9 para o A.
+[04:48] No sistema da escola, passa do 9, sobe 1 para a casa do lado.
+[04:53] Aqui, quando virar A, nada sobe.
+[04:55] A casa da esquerda continua igual.
+[04:57] A casa ainda tem 6 algalismos de folga.
+[05:00] O famoso vai 1 fica adiado.
+[05:03] E a consequência matemática prática disso é enorme, sabe?
+[05:06] Aham.
+[05:07] Somente depois do F, a casa enche, sobe 1 e o 16 se escreve como um zero.
+[05:13] Aqui, se lhe é 16.
+[05:14] E adiando vai 1, os números ficam mais curtos no papel.
+[05:18] Sim. É o mesmo total de objetos contado, mas escrito com muito menos casas.
+[05:23] Exige bem menos espaço físico.
+[05:26] Maravilha. Aperte o próximo.
+[05:28] Na tela 5, vamos ver uma analogia nova.
+[05:31] Uma gaveta de madeira aberta, cheia de caixinhas de papel idênticas.
+[05:36] Tá. Para imaginar o tamanho real disso.
+[05:38] É sim, quando a casa enche no F, sobe 1.
+[05:41] Lembra?
+[05:42] Aham.
+[05:43] Esse 1 que sobe vale um grupo fechado de 16.
+[05:46] Esse 1 representa a própria gaveta.
+[05:48] Construindo em cima dessa ideia, a casa seguinte funciona como um armário inteiro de gavetas.
+[05:54] Exato.
+[05:55] Com apenas duas casas, a gente conta 16 vezes 16.
+[05:59] Ou seja, 256 números no total, indo do 00 ao FF.
+[06:05] Comparando com a conta da escola, a base 10, duas casas, só contam até o 99, né?
+[06:10] Bate no teto muito rápido.
+[06:12] No hexadecimal, as mesmas duas casas vão até 255.
+[06:16] Uma casa maior rende muito mais.
+[06:19] É muita economia visual. Aperte próximo.
+[06:22] Na tela 6, chegamos no coração do sistema.
+[06:25] Quem tá na página pode clicar nas quatro luzes de dois estados
+[06:28] e reparar no rótulo ao lado.
+[06:30] Tem botões na tela pra interagir, o rótulo muda junto.
+[06:33] Aí vem a dúvida, por que o 16?
+[06:36] O motivo da base existir é a matemática do encaixe.
+[06:39] 16 é 2 vezes 2 vezes 2 vezes 2.
+[06:44] Quatro escolhas de sim ou não geram exatamente 16 combinações diferentes.
+[06:49] É, e 16 algarismos dão exatamente um rótulo exato pra cada combinação.
+[06:55] O apelido perfeito.
+[06:56] Não sobra nem falta rótulo no nosso estojo pra cobrir as luzes.
+[07:00] De forma direta, um algarismo de 16 é apenas um apelido pra quatro sim ou não.
+[07:05] E sempre que é necessário anotar muitas respostas de sim ou não em pouco espaço,
+[07:10] esse sistema é usado.
+[07:11] É o encaixe ideal. Aperte o próximo.
+[07:13] Na tela 7, a gente vê isso no dia a dia.
+[07:16] Tem um leque de amostras de cores na bancada.
+[07:18] E trazendo a teoria pra tela do celular,
+[07:21] toda a cor de tela tem um nome de seis algarismos, tipo FF6B35.
+[07:26] A lógica do código é bem simples.
+[07:29] São três pares, um pro vermelho, um pro verde e um pro azul.
+[07:34] Cada par vai do 0,0 ao FF.
+[07:37] De 0 a 255, tamanho máximo do armário lá.
+[07:42] Sim, e seis pequenos desenhos conseguem nomear 16 milhões de cores.
+[07:47] Nossa, muito compacto.
+[07:49] E se entra em detalhes técnicos,
+[07:51] a gente vê isso no endereço de um aparelho na rede
+[07:54] ou na etiqueta colada atrás de um equipamento na sala.
+[07:57] Situações onde se quer escrever muito em pouco espaço, né?
+[08:01] Aperte o próximo.
+[08:02] Tela 8, tem um aviso de interação.
+[08:05] A pessoa pode usar o botão de passo pro mostrador grande do número 2A.
+[08:09] É hora de desmistificar a leitura passo a passo.
+[08:13] O 2A aparece código de cofre, mas é um número.
+[08:17] Lendo 2A por dentro.
+[08:19] O 2 está na casa do 16, representando duas gavetas cheias.
+[08:23] O que dá 32.
+[08:25] Isso.
+[08:26] E o A está na casa do 1, representando 10 soltos.
+[08:30] Fazendo a conta básica, 32 mais 10 dá 42.
+[08:34] A conclusão é que a letra não muda a regra matemática básica da escola.
+[08:39] A casa multiplica e o algarismo conta.
+[08:42] Exato.
+[08:43] A leitura é a mesma do 42, normal.
+[08:46] Apenas lidando com um grupo de outro tamanho.
+[08:48] Entendi perfeitamente.
+[08:50] Aperte o próximo.
+[08:51] A tela 9 é a prática dos carimbos.
+[08:54] Convidamos quem está acompanhando a tela a pausar o áudio e resolver o desafio de montar 3 números.
+[09:00] O 26, o 42 e o 240.
+[09:03] Clicando no algarismo, ele avança e depois do F, ele volta pro 0.
+[09:08] Dando uma dica que sem spoiler pra ajudar, o 26 e o 42 obrigam a usar a letra A na casa do 1.
+[09:16] Já o 240 pede a letra F na casa do 16.
+[09:20] Isso aí.
+[09:21] Quando fechar os 3, volte o áudio e aperte o próximo.
+[09:24] E aí se encaixa exato.
+[09:25] Ficharia quebrado.
+[09:26] Uhum.
+[09:27] O segundo cartão comenta o preço do sistema, né?
+[09:30] O susto inicial.
+[09:32] Letra no meio de número assusta mesmo, parece secreto.
+[09:35] Mas dois A são apenas duas gavetas e 10 soltos, 42.
+[09:38] A estranheza é pura falta de costume visual, a regra é a mesma.
+[09:42] E o terceiro cartão traz a honestidade de onde a analogia quebra.
+[09:46] O armário para nas gavetas, gaveta de madeira de verdade não faz o vai um sozinha.
+[09:51] A base 16 não existe pra substituir a base 10 na conta da padaria.
+[09:55] Não.
+[09:56] Não é um idioma novo, é um jeito compacto de escrever.
+[09:59] Um apelido prático pra muita informação.
+[10:01] Isso.
+[10:02] Fazendo uma recapitulação rápida pra fechar.
+[10:05] Depois do 9 vem ABCDEF.
+[10:09] E só no F, a casa enche.
+[10:11] A casa multiplica por 16, o algarismo conta.
+[10:15] E um algarismo desses é o apelido exato de 4 sim ou não.
+[10:20] Pra encerrar fica a provocação, sabe?
+[10:22] Qual?
+[10:23] De onde vem tanta resposta de sim ou não?
+[10:26] Precisando de apelido no nosso dia a dia.
+[10:28] Desde a cor da tela até a etiqueta.
+[10:31] Boa pergunta.
+[10:32] Essa origem com certeza rende outra conversa.

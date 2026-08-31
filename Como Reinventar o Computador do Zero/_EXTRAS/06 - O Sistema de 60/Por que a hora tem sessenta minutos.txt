@@ -1,0 +1,7 @@
+Titulo: Por que a hora tem sessenta minutos
+Notebook: EX-06-O Sistema de 60
+
+Descricao:
+O Sistema de 60 consiste em um roteiro educativo e contextual para um episódio interativo projetado para ensinar o funcionamento da base sexagesimal através do relógio. O conteúdo evita deliberadamente fatos históricos ou nomes científicos para focar na utilidade prática do número sessenta, destacando sua superioridade em divisões exatas em comparação ao sistema decimal. Através de uma analogia central, o material explica como cada casa do cronômetro funciona como um compartimento que, ao atingir o limite, gera um efeito cascata idêntico ao sistema de centenas. A experiência é complementada por uma animação interativa de dez telas, que guia o público por demonstrações visuais, como a contagem manual usando as falanges dos dedos e a partilha de mercadorias. Ao final, as fontes buscam desmistificar a leitura das horas, mostrando que convivemos naturalmente com diferentes agrupamentos numéricos no cotidiano.
+
+Link: https://notebook.google.com/notebook/75bd8310-4dd4-41f3-94c1-1e311a407f4a

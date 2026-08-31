@@ -1,0 +1,143 @@
+# Transcricao automatica (faster-whisper small) - 12.9 min
+# Fonte: Por que contamos de dez em dez.mp3
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O sistema decimal. Hoje é, a gente tem em mãos um gui interativo visual que propõe
+[00:07] uma missão muito curiosa pra gente. A ideia aqui é meio que desconstruir a matemática
+[00:12] básica, sabe? Aquela que todo mundo usa no piloto automático
+[00:15] todo santo dia. Exatamente. Quem escuta a gente agora provavelmente
+[00:19] passou a vida inteira contando de 10 em 10. Sim, a gente faz isso sem nem pensar.
+[00:24] Pois é. Mas a nossa missão de hoje, acompanhando essas telas, é responder a uma pergunta
+[00:29] que quase ninguém faz em voz alta. Tipo, por que a gente conta de 10 em 10?
+[00:35] É uma boa pergunta. E o que aquele famoso vai-o-um da conta armada de escola?
+[00:40] O que ele realmente faz nos bastidores? E por que a posição de um número escrito
+[00:45] num papel vale muito mais do que o próprio desenho dele? É como se a gente fosse
+[00:49] fazer a engenharia reversa de um código muito antigo.
+[00:53] E pra começar a entender esse código é quem tá acompanhando com a página aberta
+[00:57] já consegue ver a primeira imagem na tela, né? Temos um vendedor de feira contando nos
+[01:03] dedos. Ah, e um aviso rápido aqui, tá? As imagens das cenas deste áudio são
+[01:08] reconstituições geradas e não fotografias reais. Ah, legal, avisar.
+[01:13] Mas o ponto principal olhando pras mãos desse vendedor é perceber algo muito
+[01:18] físico. A mão é a ferramenta original de contagem, é a base de tudo.
+[01:23] É meio bizarro, né? Pensar que toda a estrutura, toda a engenharia moderna roda em
+[01:30] cima de uma limitação puramente biológica. A calculadora mais antiga do mundo é a
+[01:35] nossa mão. Ela vem com 10 dedos, não precisa de bateria e tá sempre junto com a
+[01:41] pessoa. É literalmente o das nossas mãos que sai o sistema inteiro de como a gente
+[01:45] entende as quantidades. Concordo plenamente. A gente tende a achar que a
+[01:50] prática é uma, sei lá, uma entidade que flutua no universo, mas ela nasceu dessa
+[01:55] ferramenta prática. Bom, antes da gente mergulhar nos detalhes, eu só preciso
+[02:00] explicar rapidinho como a navegação deste nosso áudio funciona. Ao longo da
+[02:04] nossa conversa, quando a gente pedir, quem nos ouve deve apertar o botão próximo
+[02:09] na tela. Isso aí. Em algumas demonstrações mais pra frente, vão ter
+[02:12] botões na própria tela pra apertar e ver a coisa rodando. E tem também uma
+[02:17] tela lá no finalzinho que vai pedir pra pausa o áudio. Mas quem não tiver com a
+[02:20] tela aberta, não precisa se preocupar, né? Não, imagina. Quem tiver só com o fone de
+[02:24] ouvido, caminhando, lavando a louça, dá pra acompanhar toda a lógica só
+[02:28] ouvindo sem problema nenhum. Então, pra começar a questionar essa estrutura de
+[02:32] verdade, aperte o próximo. Bom, agora a tela foca bem de perto nas mãos do
+[02:38] vendedor. Ele tá tipo com três dedos levantados. E essa imagem simples serve
+[02:43] para responder aquela nossa primeira pergunta de forma bem direta, sem
+[02:47] romantizar. Não tem nada de especial do número 10. Não tem? Não. A gente cresce
+[02:53] achando que o 10 é o número perfeito da matemática, mas não tem nenhuma magia
+[02:56] nele. O único fato é que essa é a quantidade de dedos que vêm de fábrica
+[03:01] nas nossas mãos. Pera aí, se a gente for pensar friamente, a gente não
+[03:05] poderia contar de outra forma? Hmm, como assim? Sei lá, não seria mais fácil
+[03:09] contar outros tamanhos de grupos para basear contagem em vez de ficar preso só
+[03:13] no 10. Eu, pelo menos, sempre achei que o 10 era um método mais eficiente que existia.
+[03:18] É, muita gente confunde isso. E a resposta é sim. A gente poderia contar de outra
+[03:22] forma. Grupos de outros tamanhos existiram e, olha, funcionam até melhor para
+[03:27] certas tarefas. Sério? Sim. O problema é que a mão tava sempre lá. Fácil de
+[03:33] usar, pronta para fechar um negócio rápido numa feira ou contar um rebanho.
+[03:37] Por estar acoplada no corpo, a mão acabou ganhando a disputa.
+[03:40] Entendi. Então, no fim das contas, não é uma lei imutável. A gente usa o 10 por
+[03:46] puro costume. Exatamente isso. O 10 é um costume que deu certo. Não é uma lei da
+[03:51] natureza. E é importante que quem escuta a gente guarde muito bem essa frase hoje.
+[03:55] O 10 é um costume. Tá, guardado. O 10 é um costume que deu certo.
+[04:01] Mas, sabendo que é um costume, baseado nas mãos, como a gente saiu dos
+[04:06] dedos da mão para os números gigantes. Para ver isso, aperte o próximo. É, a gente
+[04:11] precisa entender o mecanismo exato para transformar esses dedos num sistema
+[04:15] infinito, né? A imagem agora muda. Mostra um pastor no campo com as duas mãos
+[04:21] abertas. 10 dedos esticados. Tô vendo. E tem um ajudante do lado dele.
+[04:25] Isso. E o ajudante está colocando uma única pedrinha dentro de uma tigela de
+[04:30] barro. E essa cena da pedrinha na tigela é meio que o coração do
+[04:34] sistema, certo? Sim, é a regra central bem aí. Vamos olhar para a mecânica. Bem
+[04:39] pausado. O pastor vai contando as ovelhas. 1, 2, 3. Quando ele enche as duas mãos, a
+[04:46] regra entra em ação. Encheu as duas mãos? O que acontece? Você solta tudo, guarda uma
+[04:52] pedrinha na tigela e recomeça contar do zero dedo. Peraí, eu tô confusa e acho
+[04:56] que quem ouve também pode travar aqui. Visualmente é uma pedra só. Se eu olhar
+[05:01] para a tigela, eu vejo 1. Mas pela lógica, essa pedra não vale 1, né? Ela vale 10.
+[05:07] Com todas as letras, sim. Essa troca onde 10 coisas soltas viram uma coisa nova do nível
+[05:14] seguinte é o próprio sistema decimal. A pedrinha vale um grupo inteiro de 10.
+[05:19] Nossa, é uma abstração muito forte. A pedra é uma só, mas a gente tem que ler 10.
+[05:24] Exato. E o resto inteiro do áudio é só consequência direta dessa única
+[05:30] regra da pedrinha na tigela. Caramba, é a criação de uma memória externa. Bom,
+[05:37] para ver isso funcionando e dando valor aos números, aperte o próximo. Agora vamos ver a
+[05:43] prática, né? A tela mostra um quadro de contas. Ele tem 4 astes, unidade, dezena, centena e milhar.
+[05:51] Quem tiver na tela pode apertar o botão de demonstração agora. A tela mostra as mesmas
+[05:58] contas de marcação valendo 3. E aí elas pulam de hache e passam a valer 30. E depois pulam de
+[06:05] novo e valem 300. E depois 3 mil. A peça física não mudou nada. Não mudou absolutamente nada.
+[06:11] O que mudou foi a casa onde ela está. É igualzinho o número 347 escrito no papel. O
+[06:18] número 3 não vale 3, vale 300, simplesmente por estar duas casas para a esquerda. Entendi.
+[06:25] O algarismo serve para dizer a quantidade, mas a posição serve para dizer quantidade de que?
+[06:31] Por isso a posição tem muito mais poder que o desenho. Perfeito. A posição manda no valor.
+[06:37] Tá, mas se a posição manda, como essas casas vão crescendo juntas? Para ver isso, aperte o próximo.
+[06:44] A imagem agora vai para uma mesa de armazém. Tem pedrinhas soltas, saquinhos de pano cheios
+[06:50] e caixas de madeira empilhadas. É uma escalada, né? 10 pedrinhas enchem um saquinho e 10 saquinhos
+[06:58] enchem uma caixa e 10 caixas enchem um cachote maior. Isso mesmo. Mas vem cá, a pessoa teve que inventar
+[07:05] quatro regras diferentes para fazer pedra, saquinha e caixa funcionarem juntos? Não. E essa é a
+[07:10] beleza da coisa. É exata a mesma regra que a gente viu lá na tigela do pastor,
+[07:15] só que aplicada em cima dela mesma repetidas vezes. Ah, então é tipo recursivo? Exato. A gente dá
+[07:23] os nomes de unidade, dezenas, centena e milhar. Mas toda casa nova é apenas um grupo de grupos
+[07:29] menores, valendo dez vezes mais que anterior. Sabendo que as casas são grupos, eu estou curiosa
+[07:34] para ver o que acontece fisicamente na hora que transborda. Para ver isso, aperte o próximo.
+[07:39] Voltamos para o quadro de contas na tela. Tem um botão escrito começar. Quem puder
+[07:45] entrar aí e deixa a tela contando sozinha. A legenda avisa toda vez que encher. Observando
+[07:50] as hastes. Cara, tem um limite físico muito claro aí. Cada haste tem espaço para exatamente
+[07:57] nove contas, né? A décima simplesmente não cabe. E é justamente por não caber que ela é forçada
+[08:03] a subir. Quando chega na décima, as nove contas voltam para o começo, esvaziando tudo e nasce
+[08:09] uma nova conta na casa do Lave Esquerdo. Nossa, trazendo para vida real. Esse movimento
+[08:14] é o famoso vai um que a gente faz na conta armada no colégio? Ele mesmo. Não é um truque invisível.
+[08:21] É a pedrinha indo para a tigela de novo e de novo. Muito legal. E quem estiver vendo a tela tem um
+[08:28] pouquinho de paciência para ver passado dez e presenciar o primeiro vai um. E quem esperar até
+[08:35] o cem vai ver duas casas enchendo e esvaziando quase juntas. Bom, a gente viu as casas
+[08:42] enchendo e passando a bola. Mas e se uma casa for pulada e não tiver nada dentro?
+[08:48] Para entender esse perigo, aperte o próximo. Pois é, esse é um problema sério. Até agora
+[08:54] mostra uma prateleira de feira com vários compartimentos cheios de frutas. Mas tem um
+[09:00] compartimento totalmente vazio, bem no meio. A primeira impressão é que só faltou mercadoria,
+[09:05] né? Parece, né? Mas aquele buraco vazio não é uma simples falta de fruta. Ele é uma
+[09:11] impressão muito clara. Ele está gritando. Esta posição existe, mas está desocupada no momento.
+[09:17] Se a gente remover o pedaço de madeira da prateleira, os compartimentos vizinhos vão escorregar e
+[09:23] grudar uns nos outros. Exato. E no nosso sistema, eles mudarem um de lugar e de valor sem ninguém
+[09:29] ter tocado neles. É a ameaça do deslizamento. Sim. E é por isso que a gente tem o zero.
+[09:35] O zero é o nosso jeito de desenhar esse compartimento vazio no papel. O zero não
+[09:40] tem valor nenhum de quantidade. E é por não ter quantidade que ele tem esse valor
+[09:44] enorme de estrutura, né? Ele segura a casa no lugar. Matou a charada. Então vamos testar essa
+[09:50] função estrutural do zero na prática. Aperte o próximo. De volta ao quadro de contas. A
+[09:56] tela marca o número 305. Tem um botão de demonstração aí pra apertar também. Olhando
+[10:01] 305 dá pra ver que a haste do meio, a da dezena, fica totalmente vazia. Sim. E olha o
+[10:08] visual se a gente fingisse que a casa vazia não existe. Se a gente encosta os números no papel
+[10:14] sem o zero, o 305 encole e vira 35. Exatamente. Uma quantia totalmente diferente. Apenas por ter
+[10:22] perdido o próprio lugar. A haste sem nada também é informação. E o desenho dela é o zero.
+[10:28] Sem o zero, 305 e 35 seriam o mesmo rabisco. É muito louco. É o zero salva tudo. Bom,
+[10:36] com tanta teoria, chegou a hora de quem escuta a gente colocar a mão na massa. Aperte o próximo.
+[10:42] É o momento de provar que a lógica fez sentido. Olha só, quem tiver com a tela aberta pausa o
+[10:47] nosso áudio rapidinho pra resolver o desacio. A tela pede pra representar três números no quadro.
+[10:54] Um de cada vez. O 47, depois o 90 e depois o 305. E vou dar uma dica falada só pra ajudar,
+[11:02] mas sem dar a resposta pronta, tá? O número 90 deixa a casa da unidade vazia. E o 305 deixa a
+[11:09] casa da dezena vazia. Lembrem que montar o vazio no quadro também é uma decisão ativa. Fica o
+[11:15] desafio. Podem pausar, montar os números e quando terminarem os três, voltem a dar o play no áudio
+[11:21] e aperte o próximo. Legal. Estamos de volta. A gente resolveu o sistema decimal inteiro. Mas
+[11:26] pra provar que a regra da troca é universal, vamos olhar pra fora do número 10 agora. Sim,
+[11:32] a tela mostra três cartões. Um relógio, uma dúzia e um interruptor. Lembra daquela nossa frase lá do
+[11:38] início? O 10 é um costure, não é uma lei. O nosso dia a dia prova isso o tempo todo. O relógio
+[11:44] é a prova perfeita. Ele é a grupa de 60 em 60. 60 segundos viram um minuto. É a mesma regra de encher
+[11:51] e subir um só mudou o tamanho da caixa. Ahá. E a dúzia também. A grupa de 12 em 12. E o 12
+[11:58] muito prático. Ele divide fácil por 2, 3, 4 e 6 sem sobrar restos. Coisa que o 10 é incapaz de fazer.
+[12:06] É verdade. O 10 é meio ruim pra dividir. E o interruptor, que a grupa de 2 em 2 liga e desliga,
+[12:13] prova que a regra inteira funciona mesmo com o limite minúsculo de opções. Sim, rende uma
+[12:19] conversa inteira só pra ele em outra hora. Mas pra resumir todo esse nosso mergulho em três
+[12:24] frases curtas, tipo um mantra mesmo, enche o grupo, sobe um. Aham. A casa multiplica, o
+[12:31] algarismo conta. Tá. E a terceira, o vazio também é informação. É um alívio entender a lógica
+[12:38] em vez de só decorar regras. E olha, da próxima vez que quem tá ouvindo a gente for fazer uma
+[12:44] conta armada no papel e subir um numerinho lá em cima da linha, vai saber exatamente o que
+[12:49] tá fazendo. Tá apenas guardando uma pedrinha na tigela.

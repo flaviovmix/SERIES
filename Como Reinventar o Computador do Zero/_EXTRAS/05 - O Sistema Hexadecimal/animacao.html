@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Sistema Hexadecimal — Extra 05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Nascido do molde da base (Etapa 2). Audio gravado em 31/08: o tocador esta
+     no cabecalho e os marcadores do episodio.js saem do _telas.md, como nos
+     episodios. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="hexa.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/extras/index.html">← voltar pros extras</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Por%20que%20o%20hexadecimal%20usa%20letras.mp3" data-duracao="635"></audio>
+    <img class="tocador__capa" src="img/armario-de-boticario.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Por que o hexadecimal usa letras</div>
+      <div class="tocador__fonte">Extras · 05 · O Sistema Hexadecimal</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="635" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">10:35</span></div>
+  </div>
+  <div class="acoes"></div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step">
+    <div class="kicker reveal">extra 05 · fora da linha do tempo</div>
+    <h1 class="reveal">O Sistema Hexadecimal</h1>
+    <p class="lede reveal">Depois do 9, dá pra <b>continuar contando sem subir de casa</b>? Dá — desde que existam mais algarismos. Este extra apresenta o sistema que conta até quinze num desenho só, e mostra por que o grupo de <b>dezesseis</b> não é capricho. Avance apertando <b>Próximo</b>.</p>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Dezesseis gavetas: cabe mais em cada casa antes de precisar da próxima · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/armario-de-boticario.jpg" alt="Armário antigo de boticário com dezesseis gavetinhas de madeira em grade de quatro por quatro, cada uma com puxador de latão">
+        <figcaption>Um armário de dezesseis gavetas: cabe mais coisa em cada "casa" antes de precisar da próxima. É a ideia inteira deste extra.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2 · os desenhos acabam no 9 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o problema · os desenhos acabam no 9</div>
+    <h2 class="reveal">Dez carimbos só</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Dez carimbos e seis buracos: faltam algarismos · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/estojo-de-carimbos.jpg" alt="Estojo de madeira com uma fileira de dez carimbos e seis encaixes vazios no fim, com almofada de tinta ao lado">
+        <figcaption>Nossos algarismos são dez carimbos: 0 a 9. Pra contar em grupos de <b>dezesseis</b>, cada casa precisa de dezesseis desenhos — e faltam seis. São os buracos do estojo.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 3 · as letras viram algarismos -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a solução · pegar emprestado</div>
+    <h2 class="reveal">As letras viram algarismos</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Seis carimbos emprestados do alfabeto completam o estojo · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/carimbos-novos.jpg" alt="Mãos encaixando seis carimbos novos, de madeira mais clara, nos espaços vazios de um estojo onde dez carimbos escuros já estão">
+        <figcaption>Em vez de inventar desenho novo, pegam-se seis emprestados do alfabeto: <b>A vale dez</b>, B onze, C doze, D treze, E quatorze, <b>F quinze</b>. O A é um algarismo como o 7 — só veste outra roupa.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">contando: … 8, 9, A, B, C, D, E, F — e SÓ no F a casa enche</div>
+  </section>
+
+  <!-- 4 · o contador que passa pelo A -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · contando com dezesseis algarismos</div>
+    <h2 class="reveal">Deixa contar</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legContagem">Aperte <b>começar</b> e repare no que acontece depois do 9 — e no que só acontece depois do F.</div>
+      <div id="mostradorContagem"></div>
+      <div class="painel__total">
+        <span class="num" id="totalContagem">0</span>
+        <span class="meta" id="metaContagem"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnContagemComecar">começar →</button>
+        <button class="btn-mini" id="btnContagemPausar">pausar</button>
+        <button class="btn-mini" id="btnContagemLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">no 9 → A não sobe nada: a casa ainda tem seis algarismos de folga. O vai-um só chega no F — por isso os números ficam mais curtos</div>
+  </section>
+
+  <!-- 5 · a casa vale dezesseis -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a escada · a casa vale dezesseis</div>
+    <h2 class="reveal">Uma gaveta guarda dezesseis</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A gaveta cheia: um grupo fechado de dezesseis · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/gaveta-de-dezesseis.jpg" alt="Gaveta de madeira aberta, vista de cima, cheia de caixinhas de papel idênticas arrumadas em fileiras">
+        <figcaption>Quando a casa enche (no F), sobe UM — e esse um vale um grupo de <b>dezesseis</b>. Com duas casas contam-se 16 × 16 = <b>256</b> números: do 00 ao FF.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 6 · quatro sim-ou-naos, um rotulo -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · por que logo dezesseis?</div>
+    <h2 class="reveal">Quatro sim-ou-nãos, um rótulo</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legMapa">Clique nas lâmpadas e repare no rótulo.</div>
+      <div class="mapa-do-apelido">
+        <div id="lampMapa"></div>
+        <span class="seta" aria-hidden="true">→</span>
+        <div id="mostradorMapa"></div>
+      </div>
+      <div class="painel__total"></div>
+    </div>
+    <div class="nota-cena reveal">dezesseis é 2×2×2×2: cada combinação de quatro sim-ou-nãos ganha um rótulo EXATO — nem sobra, nem falta. É por isso que essa base existe: ela é apelido de grupo de quatro</div>
+  </section>
+
+  <!-- 7 · onde voce esbarra nele -->
+  <section class="step step--cena">
+    <div class="kicker reveal">no dia a dia · a cor da tela</div>
+    <h2 class="reveal">O tal do FF6B35</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Toda cor de tela tem um nome de seis algarismos de dezesseis · ilustração">
+        <span class="selo">ilustração</span>
+        <img src="img/leque-de-cores.jpg" alt="Leque de amostras de cores aberto sobre a bancada de um pintor, com potes de pigmento e pincéis ao redor">
+        <figcaption>Todo código de cor de tela é isto: três pares de algarismos de dezesseis — quanto de vermelho, quanto de verde, quanto de azul, cada um de 00 a FF. <b>Seis desenhos</b> nomeiam dezesseis milhões de cores.</figcaption>
+      </figure>
+    </div>
+    <div class="nota-cena reveal">aparece também em endereço de rede e etiqueta de equipamento — sempre que se quer escrever MUITO em pouco espaço</div>
+  </section>
+
+  <!-- 8 · o 2A por dentro -->
+  <section class="step">
+    <div class="kicker reveal">demonstração · lendo um número de dezesseis</div>
+    <h2 class="reveal">O 2A por dentro</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legLeitura"><b>2A</b> parece senha, mas é um número. Aperte <b>lê</b> e desmonte ele.</div>
+      <div id="mostradorLeitura"></div>
+      <div class="painel__total"></div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="btnLeitura">lê →</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">é a mesma leitura do 42 de todo dia: casa multiplica, algarismo conta — só muda o tamanho do grupo</div>
+  </section>
+
+  <!-- 9 · pratica -->
+  <section class="step">
+    <div class="kicker reveal">sua vez · três números</div>
+    <h2 class="reveal">Carimbe você</h2>
+    <div class="painel reveal">
+      <div class="trilha" id="trilhaHexa"></div>
+      <div class="legenda" id="legPratica">Monte o número clicando nos algarismos.</div>
+      <div id="mostradorPratica"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica">0</span>
+        <span class="meta" id="metaPratica"></span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="btnPraticaLimpar">limpar</button>
+      </div>
+    </div>
+    <div class="nota-cena reveal">o 26 e o 42 obrigam o A na casa do um; o 240 pede o F na casa do dezesseis</div>
+  </section>
+
+  <!-- 10 · fecho -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o fecho · por que dezesseis?</div>
+      <h2 class="reveal">O apelido de grupo de quatro</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o tamanho certo</div><div class="texto">16 = 2×2×2×2: um algarismo carrega <b>exatamente</b> quatro respostas de sim-ou-não, nem mais nem menos. O dez não consegue esse encaixe — o grupo fecharia sempre errado.</div></div>
+        <div class="item reveal"><div class="rotulo">o preço</div><div class="texto">Letra no meio do número assusta: <b>2A</b> parece código secreto, mas é só "duas gavetas e dez soltos" = 42. O que estranha é o costume; a regra é a mesma de sempre.</div></div>
+        <div class="item reveal"><div class="rotulo">onde a analogia quebra</div><div class="texto">O armário para nas gavetas: gaveta de verdade não faz vai-um sozinha, e a base dezesseis não substitui a de dez — ela é um jeito <b>compacto</b> de escrever, apelido e não idioma novo. E de onde vêm os tais sim-ou-nãos que ela resume… rende outra conversa.</div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/trilha.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="lampadas.js"></script>
+<script src="hexa.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

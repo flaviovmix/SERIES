@@ -1,0 +1,17 @@
+O SISTEMA HEXADECIMAL - CONTEXTO
+================================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio avulso, que se explica sozinho. Nao depende de nada ouvido antes e nao continua em lugar nenhum. Quem apertar o play sabendo so a conta armada da escola tem que sair entendendo.
+
+Ele existe pra tirar o susto das letras no meio dos numeros: por que existe um sistema em que A vale dez e F vale quinze, o que o codigo de cor FF6B35 esta dizendo, e por que o grupo de dezesseis e exatamente do tamanho certo.
+
+O episodio inteiro se passa dentro de uma unica analogia, o armario de dezesseis gavetas e o estojo de carimbos. Os algarismos sao carimbos: o estojo comum tem dez, e pra contar em grupos de dezesseis pegam-se seis emprestados do alfabeto (A ate F, valendo dez ate quinze). A gaveta que guarda dezesseis e o grupo fechado, e duas casas contam 256 numeros, do 00 ao FF. O coracao do episodio e a tela em que quatro luzes de sim-ou-nao geram dezesseis combinacoes e cada combinacao ganha um rotulo exato: um algarismo de dezesseis e um apelido de quatro sim-ou-naos.
+
+Regras duras deste episodio. Primeira: NAO tem cientista, NAO tem data e NAO tem invencao historica. Segunda: NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. Este audio pode ser ouvido sozinho, fora de qualquer ordem. Terceira, especifica deste tema: NAO usar as palavras bit e byte e NAO explicar computador por dentro; cor de tela, endereco de rede e etiqueta entram so como coisas do dia a dia que a pessoa ve.
+
+A pagina da animacao tem 10 telas e o ouvinte avanca apertando Proximo. Tres telas sao demonstracoes com botao (o contador que passa pelo A sem subir casa, as quatro luzes com o rotulo, e a leitura do 2A) e uma e pratica (montar 26, 42 e 240 clicando nos algarismos).
+
+Ao final o ouvinte consegue contar oito, nove, A, B, C ate o F sem achar estranho, ler 2A como quarenta e dois (duas gavetas e dez soltos), entender o FF6B35 da cor como tres pares de 00 a FF, e explicar por que dezesseis: e dois vezes dois vezes dois vezes dois, o apelido perfeito de quatro respostas de sim-ou-nao.
+
+Use este contexto apenas como apoio.

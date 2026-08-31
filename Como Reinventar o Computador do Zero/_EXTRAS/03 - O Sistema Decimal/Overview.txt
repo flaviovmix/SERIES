@@ -1,0 +1,17 @@
+O SISTEMA DECIMAL - CONTEXTO
+============================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio avulso, que se explica sozinho. Nao depende de nada ouvido antes e nao continua em lugar nenhum. Quem apertar o play sabendo so contar nos dedos tem que sair entendendo.
+
+Ele existe pra responder uma pergunta que ninguem faz em voz alta: por que a gente conta de dez em dez, o que o "vai um" da conta armada realmente faz, e por que a posicao de um algarismo vale mais que o desenho dele.
+
+O episodio inteiro se passa dentro de uma unica analogia, os dez dedos e o "encheu a mao, sobe um". Encheu as duas maos, guarda-se UMA pedrinha na tigela, e a pedrinha vale um grupo de dez. Dez pedrinhas enchem um saquinho, dez saquinhos uma caixa: unidade, dezena, centena e milhar sao grupos de grupos. A prateleira com um compartimento vazio no meio e o zero: o vazio de proposito e informacao, nao falta. As demonstracoes rodam num quadro de contas de quatro hastes com nove contas por fio, onde o vai-um acontece na frente do ouvinte.
+
+Regras duras deste episodio. Primeira: NAO tem cientista, NAO tem data, NAO tem povo nomeado, NAO tem historia dos algarismos e NAO tem nome de pessoa. O quadro de contas e so um objeto de tela, sem historia. Segunda: NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio, e nao usar frases tipo "como a gente viu antes". Este audio pode ser ouvido sozinho, fora de qualquer ordem, por alguem que nunca ouviu mais nada.
+
+A pagina da animacao tem 10 telas e o ouvinte avanca apertando Proximo. Tres telas sao demonstracoes com botao (a posicao mandando no valor, a contagem continua com o vai-um, e o 305 que nao pode virar 35) e uma e pratica (montar 47, 90 e 305).
+
+Ao final o ouvinte consegue explicar por que contamos de dez em dez (costume dos dedos, nao lei), fazer o vai-um sabendo o que ele significa, ler qualquer numero entendendo que a casa multiplica e o algarismo conta, e defender o zero como a informacao "esta casa esta vazia". O fecho mostra que o grupo de dez e escolha: o relogio agrupa de sessenta, a duzia de doze, e o interruptor prova que ate com dois estados a mesma regra funciona.
+
+Use este contexto apenas como apoio.

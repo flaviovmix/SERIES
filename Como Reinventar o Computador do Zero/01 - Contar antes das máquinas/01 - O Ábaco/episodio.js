@@ -220,48 +220,23 @@
   });
 
   // ---------- tela 13: pratica 1 (7, 23, 105) ----------
-  const desafios = [7, 23, 105];
-  let desafioAtual = 0;
-  const trilha = document.getElementById('trilha1');
-  const legPratica1 = document.getElementById('legPratica1');
-  const metaPratica1 = document.getElementById('metaPratica1');
-  desafios.forEach((n) => {
-    const alvo = document.createElement('span');
-    alvo.className = 'alvo';
-    alvo.textContent = n;
-    trilha.appendChild(alvo);
+  // trilha de desafios da base (animacao/trilha.js) — nasceu aqui e foi extraida
+  // em 30/08/2026, na terceira copia (EX-03 -> EX-04), pela regra do terceiro clone
+  const trilha1 = Animacao.criaTrilha({
+    trilha: 'trilha1',
+    legenda: 'legPratica1',
+    meta: 'metaPratica1',
+    desafios: [7, 23, 105],
+    pede: (n) => 'Pause o áudio e represente o número <b>' + n + '</b>.',
+    fim: '<b>Fechou os tres! Pode voltar o audio.</b>',
   });
-
-  function pintaTrilha() {
-    [...trilha.children].forEach((alvo, i) => {
-      alvo.classList.toggle('feito', i < desafioAtual);
-      alvo.classList.toggle('atual', i === desafioAtual);
-    });
-    if (desafioAtual < desafios.length) {
-      legPratica1.innerHTML = 'Pause o áudio e represente o número <b>' + desafios[desafioAtual] + '</b>.';
-      metaPratica1.textContent = 'meta: ' + desafios[desafioAtual];
-      metaPratica1.className = 'meta';
-    } else {
-      legPratica1.innerHTML = '<b>Fechou os tres! Pode voltar o audio.</b>';
-      metaPratica1.textContent = '🎉 completo';
-      metaPratica1.className = 'meta win';
-    }
-  }
-
   const abPratica1 = Animacao.criaAbaco('abacoPratica1', {
     aoMudar: (total) => {
       document.getElementById('totalPratica1').textContent = total;
-      if (desafioAtual >= desafios.length || total !== desafios[desafioAtual]) return;
-      desafioAtual++;
-      pintaTrilha();
-      if (desafioAtual < desafios.length) {
-        metaPratica1.textContent = '✔ agora o ' + desafios[desafioAtual];
-        metaPratica1.className = 'meta win';
-      }
+      trilha1.confere(total);
     },
   });
   document.getElementById('limpar1').addEventListener('click', () => abPratica1.set([0, 0, 0, 0]));
-  pintaTrilha();
 
   // ---------- demonstracao passo a passo (telas 14 e 15) ----------
   // cada passo diz o estado das quatro hastes, qual delas destacar e o que a

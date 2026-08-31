@@ -1,0 +1,7 @@
+Titulo: Como contar qualquer número apenas com lâmpadas
+Notebook: EX-04-O Sistema Binario
+
+Descricao:
+O Sistema Binário é o tema central deste episódio educacional independente, que utiliza uma abordagem simplificada para explicar como qualquer número pode ser representado usando apenas dois estados. Através da analogia de lâmpadas e interruptores, o conteúdo demonstra que a lógica binária segue a mesma regra matemática de "subir um" utilizada no sistema decimal, embora os grupos se completem muito mais rápido. O roteiro é estruturado em dez telas de uma animação interativa, focando na leitura à prova de erros e na progressão de valores onde cada casa decimal dobra a anterior. Para manter a clareza absoluta, o material proíbe termos técnicos como bits ou processadores, além de evitar qualquer contexto histórico ou nomes de inventores. O objetivo final é que o ouvinte compreenda a eficiência da escolha pelo número dois, reconhecendo que a extensão maior dos números escritos é o preço pago pela segurança na transmissão da informação.
+
+Link: https://notebook.google.com/notebook/cfa9ea48-ca45-400e-bd2b-7ab4f79321a8

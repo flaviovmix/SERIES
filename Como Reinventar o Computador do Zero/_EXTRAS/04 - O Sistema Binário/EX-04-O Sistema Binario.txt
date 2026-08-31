@@ -1,0 +1,35 @@
+Inicie dizendo: O Sistema Binario
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Sistema Binario.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e um episodio avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM: NAO citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado" nem "mais pra frente a gente fala disso". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois.
+
+REGRA DURA NUMERO TRES: NAO usar as palavras bit, byte, computador, circuito, chip, processador nem digital. O episodio e sobre CONTAR com dois estados, e para ai. O maximo permitido e o fecho dizer que empilhar sim-e-nao "rende outra conversa", sem dizer qual.
+
+FOCO: contar, somar e fazer o vai-um usando so dois estados, explicado inteiro dentro de UMA analogia, a lampada e o interruptor. Acesa e 1, apagada e 0, a fileira de cinco lampadas e um numero de cinco casas, cada casa vale o dobro da anterior (1, 2, 4, 8, 16), o interruptor sem meio-termo e o motivo da escolha e a apagada no meio e o zero guardando a casa. Fecha com o meio-termo (por que dois e a prova de erro), o preco (numeros compridos) e onde a analogia quebra.
+
+A pagina tem 10 telas e o ouvinte avanca no botao Proximo. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela; a tela 10 encerra sem pedir. Nas telas de demonstracao (4, 6 e 8), avisar que tem botao na tela. Na tela de pratica (9), convidar a pausar o audio, resolver e voltar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita no _NotebookLM_O Sistema Binario.txt, que e a lampada e o interruptor. NAO invente analogias novas e NAO troque o pareamento no meio do episodio. Nada de moeda, semaforo, chave de carro nem dedo. Comparar com o jeito comum de contar (o vai-um da conta armada, o estouro do 99 pro 100) pode, porque e conhecimento de escola.
+
+Use tambem o Overview.txt como contexto curto.

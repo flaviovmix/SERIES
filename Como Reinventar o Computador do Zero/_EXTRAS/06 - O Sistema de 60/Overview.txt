@@ -1,0 +1,17 @@
+O SISTEMA DE 60 - CONTEXTO
+==========================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio avulso, que se explica sozinho. Nao depende de nada ouvido antes e nao continua em lugar nenhum. Quem apertar o play sabendo so ler as horas tem que sair entendendo.
+
+Ele existe pra mostrar uma coisa que todo mundo faz sem perceber: ler as horas e contar num grupo de sessenta. Sessenta segundos viram um minuto, sessenta minutos viram uma hora, e a virada do 59:59 pro 1:00:00 e um vai-um em cascata igualzinho ao estouro do 99 pro 100.
+
+O episodio inteiro se passa dentro de uma unica analogia, o relogio: um contador de base sessenta pendurado na parede, em que cada casa e um compartimento que conta de 0 a 59 e o dois-pontos e a parede entre as casas. A razao de ser do sessenta e pratica, nao historica: ele divide por 2, 3, 4, 5, 6, 10, 12, 15, 20 e 30 sem deixar resto, e repartir sem sobra vale ouro; o cem, tao redondo, tropeca ja no tres. Entram como exemplos reais a feira repartindo em montes iguais, a mao que conta ate sessenta pelos ossinhos dos dedos (doze falanges numa mao, cinco dedos na outra) e o circulo de 360 graus, que corta em metade, terco, quarto, quinto e sexto sem quebrado.
+
+Regras duras deste episodio. Primeira: NAO tem cientista, NAO tem povo nomeado, NAO tem data e NAO tem historia de origem; o episodio mostra os motivos praticos do sessenta, nao quem o inventou. Segunda: NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. Este audio pode ser ouvido sozinho, fora de qualquer ordem.
+
+A pagina da animacao tem 10 telas e o ouvinte avanca apertando Proximo. Tres telas sao demonstracoes com botao (o relogio acelerado com o botao "quase no estouro" que mostra a cascata do 59:59, a divisao de 60 e de 100 pedrinhas com a sobra aparecendo, e a leitura do 2:35) e uma e pratica (montar 65, 125 e 600 segundos com botoes de mais um minuto e mais um segundo).
+
+Ao final o ouvinte consegue explicar por que o grupo de sessenta existe (divisao sem sobra), ler 2:35 como cento e cinquenta e cinco segundos, entender a virada do 59:59 como o vai-um de sempre em cascata, e enxergar que o dia a dia mistura tamanhos de grupo: sessenta no relogio, 360 no circulo, vinte e quatro no dia, doze no ano.
+
+Use este contexto apenas como apoio.

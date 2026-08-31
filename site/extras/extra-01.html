@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extra 01 · Volt, Ampère e Watt</title>
+<meta name="description" content="As seis medidas da eletricidade (volt, ampère, ohm, watt, kWh e mAh) explicadas dentro de uma única analogia: um prédio com caixa d'água no telhado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/cabecalho.css">
+<link rel="stylesheet" href="../css/secao.css">
+<link rel="stylesheet" href="../css/capitulo.css">
+<link rel="stylesheet" href="../css/audio.css">
+<link rel="stylesheet" href="../css/aparte.css">
+<link rel="stylesheet" href="../css/modelo3d.css">
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <header class="head">
+    <p class="eyebrow"><a href="index.html">&larr; Extras</a> &middot; Extra 01 &middot; fora da linha do tempo</p>
+    <h1>Volt, Ampère e Watt</h1>
+    <p class="lede">A lâmpada diz 9 W, o chuveiro 5.500 W, o carregador 5 V e 2 A, o disjuntor 20 A, a bateria 5.000 mAh e a conta de luz cobra em kWh. O extra inteiro se passa dentro de <strong>um prédio com caixa d'água no telhado</strong>, e as seis medidas saem dele.</p>
+    <div class="bars" role="presentation"></div>
+  </header>
+
+  <section>
+    <header class="secao">
+      <p class="secao__contexto">O áudio</p>
+      <h2>O que o extra cobre.</h2>
+      <p class="secao__nota">Autocontido: dá pra ouvir sem ter escutado nada da série, em qualquer ordem. No fim, o episódio mostra onde a analogia quebra.</p>
+    </header>
+
+    <div class="grade grade--dupla">
+
+      <article class="cap">
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">01</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">analogia única: o prédio com caixa d'água</p>
+          <h3>Volt, Ampère e Watt</h3>
+          <p class="cap__frase">Eletricidade explicada como água num prédio.</p>
+          <p class="cap__resumo">A altura da caixa é o volt, os litros por segundo no cano são o ampère, o cano fino e comprido é o ohm, a mangueira de bico fino que tira o lodo da calçada é o watt, os litros que passaram no mês são o kWh, e o tamanho da caixa é o mAh. Seis medidas, um prédio.</p>
+          <div class="audio">
+            <audio controls preload="none" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_EXTRAS/01%20-%20Volt%20Ampere%20e%20Watt/Eletricidade%20explicada%20como%20água%20num%20prédio.mp3">
+              Seu navegador não toca áudio aqui.
+            </audio>
+            <p class="audio__ficha"><span>Áudio do extra</span><span>27 min</span></p>
+          </div>
+          <div class="cap__pe">
+            <span class="cap__eps">só áudio + modelo abaixo</span>
+            <span class="cap__selo">no ar</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <header class="secao">
+      <p class="secao__contexto">Pra mexer</p>
+      <h2>O prédio da água em três dimensões.</h2>
+      <p class="secao__nota">Aqui o modelo <em>é</em> a analogia: mude o andar da caixa (volt), troque o cano (ohm) e veja a vazão (ampère) e a potência (watt) responderem de verdade, pela lei de Ohm. Tem até o desafio de limpar a calçada.</p>
+    </header>
+
+    <figure class="modelo">
+      <iframe id="modelo3d" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_arquivos/modelos-3d/predio-da-agua.html" title="Modelo tridimensional do prédio com caixa d'água, com andares, canos e registro" loading="lazy"></iframe>
+      <img id="modelo3dReserva" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_arquivos/modelos-3d/thumbs/predio-da-agua.jpg" alt="O modelo tridimensional do prédio da água" hidden>
+      <figcaption id="modelo3dLegenda">Prédio da Água 3D &middot; arraste pra girar &middot; mexa no andar, no cano e no registro</figcaption>
+    </figure>
+
+    <script>
+      // O modelo usa módulo ES e o three.js de CDN, e o navegador recusa isso
+      // quando a página abre como arquivo solto. Sem servidor, fica o aviso.
+      if (location.protocol === "file:") {
+        document.getElementById("modelo3d").hidden = true;
+        document.getElementById("modelo3dReserva").hidden = false;
+        document.getElementById("modelo3dLegenda").textContent =
+          "Prédio da Água 3D · pra mexer, abra esta página por um servidor local";
+      }
+    </script>
+  </section>
+
+  <aside>
+    <p class="aparte"><strong>Onde a analogia quebra</strong> o áudio conta no fim, pra ninguém levar a imagem longe demais: água escorre sozinha e elétron precisa de circuito fechado, e a "velocidade" da eletricidade não é a do elétron no fio.</p>
+  </aside>
+
+</div>
+
+</body>
+</html>

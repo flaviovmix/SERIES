@@ -1,0 +1,161 @@
+Inicie dizendo: O Sistema Hexadecimal
+---------------
+
+Este e um episodio avulso, que se explica sozinho. Ele existe pra responder uma pergunta que quase ninguem pensa em fazer: depois do 9, da pra CONTINUAR contando sem subir de casa? Da, desde que existam mais algarismos. Este episodio apresenta o sistema que conta ate quinze num desenho so, explica por que as letras A ate F viram numeros, e mostra por que o grupo de dezesseis nao e capricho.
+
+REGRA DURA NUMERO UM, VALE PRO ROTEIRO INTEIRO: nao citar nenhum cientista, nenhum inventor, nenhuma data, nenhum pais e nenhuma invencao historica. Nao contar quem criou essa base nem quando. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS, IGUALMENTE OBRIGATORIA: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado", "mais pra frente a gente fala disso" nem "na proxima vez". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois, e tem que sair entendendo do mesmo jeito.
+
+REGRA DURA NUMERO TRES, DESTE EPISODIO: NAO usar as palavras "bit" e "byte", e NAO explicar computador por dentro. Coisas do dia a dia de hoje PODEM entrar como exemplos (a cor na tela do celular, o codigo de cor de um site, etiqueta de equipamento), tratadas como coisas que a pessoa VE, sem abrir o capo delas. Os "sim-ou-naos" da tela 6 sao so luzes de dois estados, e o fecho pode dizer que a origem deles rende outra conversa, sem dizer qual.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 10 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas de DEMONSTRACAO (4, 6 e 8), avisar que tem botao na tela pra rodar ou dar o passo enquanto ouve.
+- Na tela de PRATICA (9), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 10 telas. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela, na ordem, e a tela 10 encerra sem pedir. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+AS IMAGENS DAS CENAS SAO RECONSTITUICOES. Sao cenas geradas, realistas mas nao fotograficas. Avisar isso UMA VEZ, na tela 1, em uma frase, e nao repetir nas telas seguintes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita neste arquivo. NAO invente analogias novas.
+
+---
+
+ANALOGIA AUTORIZADA PARA ESTE EPISODIO
+
+Este episodio e feito de UMA analogia so, e ela sustenta as 10 telas: O ARMARIO DE DEZESSEIS GAVETAS E O ESTOJO DE CARIMBOS. O pareamento e fixo e nao pode mudar no meio do episodio:
+
+- Os ALGARISMOS sao CARIMBOS num estojo. O estojo comum tem DEZ carimbos, do 0 ao 9.
+- Pra contar em grupos de dezesseis, cada casa precisa de DEZESSEIS carimbos: pegam-se SEIS EMPRESTADOS do alfabeto. A vale dez, B onze, C doze, D treze, E quatorze, F quinze.
+- A GAVETA que guarda dezesseis e o grupo fechado: quando a casa enche (no F), sobe UM, e esse um vale dezesseis.
+- O ARMARIO de dezesseis gavetas e a casa seguinte: duas casas contam 16 vezes 16, 256 numeros, do 00 ao FF.
+
+O mostrador de algarismos e a fileira de quatro luzes de sim-ou-nao que aparecem nas demonstracoes sao objetos de tela, nao analogias novas. Comparar com o jeito comum de contar (o vai-um da conta armada, a casa que enche no 9) e permitido e bem-vindo, porque e conhecimento de escola.
+
+Nenhuma outra analogia. Nada de time de futebol, bau, alfabeto secreto nem senha.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O SISTEMA HEXADECIMAL)
+
+Abrir com a imagem da capa: um armario antigo de botica com dezesseis gavetinhas, quatro por quatro. Dizer em uma frase que as imagens das cenas deste episodio sao reconstituicoes geradas, nao fotografias.
+
+Lancar a pergunta do episodio: depois do 9, da pra continuar contando SEM subir de casa? A resposta e sim, desde que existam mais algarismos, e existe um sistema inteiro construido assim: cabe mais coisa em cada casa antes de precisar da proxima. E o sistema hexadecimal, o das dezesseis gavetas.
+
+Prometer o que sai do episodio: entender por que A vale dez e F vale quinze, ler um numero como 2A sem medo, e descobrir por que o grupo de dezesseis e exatamente do tamanho certo.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas demonstracoes tem botao na tela. Na pratica, pause o audio e resolva com calma. Sem a pagina aberta, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (O PROBLEMA: DEZ CARIMBOS SO)
+
+A cena: um estojo de madeira com uma fileira de dez carimbos e seis encaixes vazios no fim.
+
+Montar o problema com calma: nossos algarismos sao dez carimbos, do 0 ao 9. Cada casa de um numero e uma batida de carimbo. Se a casa so enche com dezesseis, precisamos de dezesseis desenhos diferentes pra ela, e faltam seis. Sao os buracos do estojo.
+
+Deixar claro o porque: nao da pra usar "10" dentro de uma casa, porque 10 sao DOIS carimbos, e casa e lugar de UM carimbo so.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A SOLUCAO: AS LETRAS VIRAM ALGARISMOS)
+
+A cena: maos encaixando seis carimbos novos, de madeira mais clara, nos espacos vazios do estojo.
+
+Apresentar a solucao pelo lado pratico: em vez de inventar seis desenhos novos, pegam-se seis emprestados do alfabeto, que todo mundo ja sabe desenhar. A vale dez, B vale onze, C doze, D treze, E quatorze, F quinze.
+
+Insistir no ponto que destrava tudo: o A e um ALGARISMO como o 7. So veste outra roupa. Contar em voz alta pra mostrar: oito, nove, A, B, C, D, E, F. E SO no F, que vale quinze, a casa enche.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (DEMONSTRACAO: DEIXA CONTAR)
+
+A tela tem um mostrador com dois algarismos grandes e um botao comecar: a contagem anda sozinha e mostra, ao mesmo tempo, o total no jeito comum e como ele se escreve com os dezesseis carimbos. Convidar a apertar comecar e deixar rodar enquanto ouve.
+
+O que reparar, em ordem: na passagem do 9 pro A, NADA sobe. A casa ainda tem seis algarismos de folga, entao o vai-um que aconteceria no dez fica adiado. Depois do F, que e quinze, ai sim: a casa encheu, sobe um, e o dezesseis se escreve 10, um-zero, que aqui se le "dezesseis".
+
+Fechar com a consequencia: adiando o vai-um, os numeros ficam mais CURTOS. E o mesmo total, escrito com menos casas.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A ESCADA: UMA GAVETA GUARDA DEZESSEIS)
+
+A cena: uma gaveta de madeira aberta, cheia de caixinhas de papel identicas.
+
+Subir a escada: quando a casa enche no F, sobe UM, e esse um vale um grupo de DEZESSEIS. E a gaveta fechada. A casa seguinte e o armario: com DUAS casas contam-se dezesseis vezes dezesseis numeros, 256, do 00 ao FF.
+
+Comparar com o de sempre: no sistema de dez, duas casas contam ate 99. Aqui, ate 255. Casa maior rende mais.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (DEMONSTRACAO: QUATRO SIM-OU-NAOS, UM ROTULO)
+
+A tela tem quatro luzes de dois estados, que o ouvinte pode clicar, e ao lado um rotulo com UM algarismo que muda junto. Convidar a clicar nas luzes enquanto ouve e reparar no rotulo.
+
+Agora o motivo do dezesseis, que e o coracao do episodio: dezesseis e dois vezes dois vezes dois vezes dois. Quatro escolhas de sim-ou-nao dao exatamente dezesseis combinacoes. E dezesseis algarismos dao exatamente um rotulo pra cada combinacao. Nem sobra rotulo, nem falta.
+
+Dizer com todas as letras: e por isso que essa base existe. Um algarismo de dezesseis e um APELIDO de quatro sim-ou-naos. Onde alguem precisa anotar montes de respostas de sim-ou-nao em pouco espaco, ela aparece.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (NO DIA A DIA: O TAL DO FF6B35)
+
+A cena: um leque de amostras de cores aberto numa bancada de pintor.
+
+Trazer pro dia a dia de hoje: toda cor de tela tem um nome de seis algarismos de dezesseis. Sao tres pares: quanto de vermelho, quanto de verde e quanto de azul, cada par indo de 00 a FF, que e de zero a 255. Seis desenhos nomeiam dezesseis milhoes de cores.
+
+Dar mais um exemplo rapido, sem abrir o capo de nada: endereco de aparelho na rede e etiqueta de equipamento tambem usam esses algarismos, sempre que se quer escrever muito em pouco espaco.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (DEMONSTRACAO: O 2A POR DENTRO)
+
+A tela mostra o numero 2A num mostrador grande e tem um botao de passo. Convidar a ir apertando junto com a explicacao.
+
+Os passos: 2A parece senha, mas e um numero. O 2 esta na casa do dezesseis: duas gavetas cheias, trinta e dois. O A esta na casa do um: dez soltos. Trinta e dois mais dez, quarenta e dois.
+
+O ponto: a letra nao muda a regra. A casa multiplica, o algarismo conta. E a mesma leitura do 42 de todo dia, so que com um grupo de outro tamanho.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (PRATICA: CARIMBE VOCE)
+
+Convidar a pausar o audio e resolver na tela: ela pede pra montar tres numeros no mostrador, um de cada vez, 26, depois 42, depois 240. Clicando num algarismo ele avanca, e do F ele volta pro 0.
+
+Dica falada, sem entregar tudo: o 26 e o 42 obrigam o A na casa do um, e o 240 pede o F na casa do dezesseis.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 10 (FECHO: O APELIDO DE GRUPO DE QUATRO)
+
+A tela mostra tres cartoes: o tamanho certo, o preco e onde a analogia quebra.
+
+Primeiro cartao: dezesseis e dois vezes dois vezes dois vezes dois. Um algarismo carrega EXATAMENTE quatro respostas de sim-ou-nao, nem mais nem menos. O dez nao consegue esse encaixe, o grupo fecharia sempre errado.
+
+Segundo cartao, o preco: letra no meio de numero assusta. 2A parece codigo secreto, mas e so duas gavetas e dez soltos, quarenta e dois. O que estranha e o costume; a regra e a mesma de sempre.
+
+Terceiro cartao, onde a analogia quebra, dito com honestidade: o armario para nas gavetas. Gaveta de verdade nao faz vai-um sozinha, e a base dezesseis nao veio pra substituir a de dez no mercado e na conta de padaria: ela e um jeito COMPACTO de escrever. Apelido, nao idioma novo.
+
+Recapitular em tres frases: depois do 9 vem A, B, C, D, E, F, e so no F a casa enche. A casa multiplica por dezesseis, o algarismo conta. E um algarismo desses e o apelido de quatro sim-ou-naos.
+
+Fechar com o gancho, sem apontar pra lugar nenhum: e de onde vem tanta resposta de sim-ou-nao precisando de apelido, isso rende outra conversa.

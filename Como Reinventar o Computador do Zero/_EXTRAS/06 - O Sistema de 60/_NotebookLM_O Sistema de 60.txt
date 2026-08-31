@@ -1,0 +1,156 @@
+Inicie dizendo: O Sistema de 60
+---------------
+
+Este e um episodio avulso, que se explica sozinho. Ele existe pra mostrar uma coisa que o ouvinte faz todo dia sem perceber: toda vez que le as horas, esta contando num grupo de SESSENTA. O episodio explica por que esse grupo estranho existe, por que ele sobreviveu tanto tempo, e o que o relogio tem de conta armada.
+
+REGRA DURA NUMERO UM, VALE PRO ROTEIRO INTEIRO: nao citar nenhum cientista, nenhum povo especifico, nenhuma data e nenhuma invencao historica. NAO contar quem inventou o grau, o minuto nem o grupo de sessenta, e nao localizar nada no mapa nem no tempo. O episodio mostra os MOTIVOS praticos do sessenta (a divisao sem sobra), nao a historia dele. Frases como "ha quem conte assim ate hoje" podem, desde que sem nomear povo nem lugar. Se der vontade de contar uma historinha de origem, nao conte.
+
+REGRA DURA NUMERO DOIS, IGUALMENTE OBRIGATORIA: este audio e autocontido. NAO citar serie, temporada, etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu", "no episodio passado", "mais pra frente a gente fala disso" nem "na proxima vez". NAO mencionar nenhum assunto que dependa de outro audio pra fazer sentido. Quem esta ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois, e tem que sair entendendo do mesmo jeito.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 10 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas de DEMONSTRACAO (4, 6 e 8), avisar que tem botao na tela pra rodar ou dar o passo enquanto ouve.
+- Na tela de PRATICA (9), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 10 telas. O audio TEM que pedir "aperte o Proximo" exatamente 9 vezes, uma no fim de cada tela, na ordem, e a tela 10 encerra sem pedir. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+AS IMAGENS DAS CENAS SAO RECONSTITUICOES. Sao cenas geradas, realistas mas nao fotograficas. Avisar isso UMA VEZ, na tela 1, em uma frase, e nao repetir nas telas seguintes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE a analogia descrita neste arquivo. NAO invente analogias novas.
+
+---
+
+ANALOGIA AUTORIZADA PARA ESTE EPISODIO
+
+Este episodio e feito de UMA analogia so, e ela sustenta as 10 telas: O RELOGIO. O pareamento e fixo e nao pode mudar no meio do episodio:
+
+- O relogio e um CONTADOR DE BASE SESSENTA pendurado na parede: sessenta segundos viram um minuto, sessenta minutos viram uma hora.
+- Cada casa (segundos, minutos) e um COMPARTIMENTO que conta de 0 a 59, e o DOIS-PONTOS e a parede entre as casas.
+- A virada do 59:59 pro 1:00:00 e o vai-um em cascata: as duas casas viram no mesmo segundo.
+
+A feira repartindo em montes iguais, a mao contando ossinhos dos dedos e o circulo de 360 graus NAO sao analogias novas: sao exemplos reais de divisao e de contagem, e podem ser usados a vontade. Nenhuma outra analogia alem do relogio. Nada de dinheiro, corrida nem campeonato.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O SISTEMA DE 60)
+
+Abrir com a imagem da capa: um relogio grande de estacao, pendurado num suporte de ferro, com o mostrador marcado so por tracos. Dizer em uma frase que as imagens das cenas deste episodio sao reconstituicoes geradas, nao fotografias.
+
+Lancar a provocacao: toda vez que voce le as horas, esta contando num grupo de sessenta, e nem percebe. Sessenta segundos viram um minuto; sessenta minutos, uma hora. O relogio e um contador de base sessenta pendurado na parede.
+
+Prometer o que sai do episodio: de onde vem esse grupo esquisito, por que ele sobreviveu tanto tempo, e como se conta nele sem precisar de sessenta desenhos diferentes.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Nas demonstracoes tem botao na tela. Na pratica, pause o audio e resolva com calma. Sem a pagina aberta, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A PERGUNTA: POR QUE LOGO SESSENTA?)
+
+A cena: uma feira, com as maos de um vendedor repartindo uma pilha de laranjas em montes iguais.
+
+Responder pelo lado pratico: sessenta e o numero amigo de dividir. Ele divide por dois, por tres, por quatro, por cinco, por seis, e ainda por dez, doze, quinze, vinte e trinta, tudo sem deixar resto. Pra repartir mercadoria, pagar diaria e partir o dia em pedacos, isso vale ouro.
+
+Fazer a comparacao que abre o olho: o cem, tao redondo, tropeca ja no tres. Cem dividido por tres deixa sobra, e sobra e briga na feira.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A ESCRITA: CADA CASA E UM COMPARTIMENTO)
+
+A cena: um relogio de bolso antigo aberto, com o mostrador marcado so por tracos.
+
+Resolver o susto de cara: ninguem inventou sessenta desenhos diferentes. Dentro de cada casa conta-se de 0 a 59 com os algarismos de sempre, os mesmos dez da escola.
+
+Explicar a escrita do 2:35: o dois-pontos e a PAREDE entre as casas. Um compartimento pros minutos, outro pros segundos. E um sistema dentro do outro: casas de sessenta, escritas por dentro com algarismos de dez. E funciona.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (DEMONSTRACAO: DEIXA O RELOGIO CONTAR)
+
+A tela tem um relogio grande e botoes: comecar poe a contagem pra andar acelerada (cada piscada e um segundo), pausar segura, e tem um botao chamado "quase no estouro". Convidar a apertar comecar enquanto ouve.
+
+O que reparar primeiro: toda vez que os segundos chegam em 59, o proximo enche a casa: os segundos zeram e sobe UM minuto. E o mesmo encheu-sobe-um de sempre, so que o grupo fecha com sessenta.
+
+Ai convidar pro momento de ouro: aperte o botao "quase no estouro". Ele leva o relogio pra 59:45, quinze segundos do fim. Olhar as duas casas: minutos cheios, segundos enchendo. No 59:59 mais um, as DUAS casas viram no mesmo instante e aparece 1:00:00. E a cascata, o mesmo estouro do 99 pro 100 da contagem comum.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A MAO QUE CONTA: DOZE OSSINHOS)
+
+A cena: uma mao aberta, com o polegar tocando um dos ossinhos dos dedos.
+
+Mostrar o truque: cada dedo tem TRES ossinhos. Sem contar o polegar, sao quatro dedos vezes tres, doze ossinhos, e o polegar vai apontando um por um. Doze numa mao. E cada dedo da OUTRA mao guarda uma duzia completa: cinco dedos vezes doze, sessenta.
+
+Fechar a conta: da pra contar ate sessenta com as duas maos, sem ferramenta nenhuma. Ha quem conte assim ate hoje.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (DEMONSTRACAO: REPARTA OS SESSENTA)
+
+A tela tem sessenta pedrinhas e botoes de divisao: dividir por dois, por tres, por quatro, por cinco e por seis, e da pra trocar as sessenta pedras por cem. Convidar a ir apertando os botoes enquanto ouve.
+
+O que fazer: dividir as sessenta por cada botao e reparar que a sobra e sempre ZERO. Todo mundo recebe igual, nao sobra pedrinha na mao.
+
+Depois, o teste que prova o ponto: trocar pra cem pedras e dividir por tres. Sobra uma, e a tela mostra a sobra destacada. Dividir por seis: sobra de novo. O cem e otimo pra escrever, mas pra REPARTIR o sessenta ganha dele.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (O IRMAO DO SESSENTA: O CIRCULO)
+
+A cena: um compasso de latao sobre um papel com um circulo tracado, dividido em fatias iguais.
+
+Apresentar o irmao: o circulo inteiro tem 360 graus, que e seis grupos de sessenta. Por isso ele corta bonito: metade sao 180, um terco sao 120, um quarto 90, um quinto 72 e um sexto 60. Tudo numero inteiro, sem quebrado.
+
+Amarrar com a tela anterior: e o mesmo motivo da feira. Angulo vive sendo repartido, e o 360 reparte sem sobra.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (DEMONSTRACAO: O 2:35 POR DENTRO)
+
+A tela mostra 2:35 num relogio grande e tem um botao de passo. Convidar a ir apertando junto com a explicacao.
+
+Os passos: o 2 dos minutos sao dois grupos de sessenta, cento e vinte segundos. Mais os 35 segundos soltos. Cento e vinte mais trinta e cinco, cento e cinquenta e cinco segundos.
+
+O ponto: o relogio e um numero de base sessenta com uma parede no meio. A casa multiplica, o algarismo conta, como em qualquer jeito de contar.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (PRATICA: MONTE O TEMPO)
+
+Convidar a pausar o audio e resolver na tela: ela pede tres tempos, um de cada vez, 65 segundos, depois 125, depois 600, montados com os botoes de mais um minuto e mais um segundo.
+
+Dica falada, sem entregar tudo: 65 segundos NAO se escrevem 65 no relogio; e um minuto e alguma coisa. E o 600 deixa a casa dos segundos completamente vazia, e o vazio tambem e informacao.
+
+Quando fechar os tres, volte o audio e aperte o Proximo.
+
+TELA 10 (FECHO: O SOBREVIVENTE)
+
+A tela mostra tres cartoes: onde ele vive, o preco e onde a analogia quebra.
+
+Primeiro cartao: o sessenta vive no tempo (sessenta segundos, sessenta minutos) e nos angulos (360 graus). Sobreviveu porque nesses dois lugares REPARTIR bem importa mais do que escrever curto: hora, mapa e circulo vivem sendo divididos.
+
+Segundo cartao, o preco: sessenta desenhos ninguem decora. Cada casa se escreve por dentro com DOIS algarismos de dez e uma parede no meio, como no 2:35. E um sistema dentro do outro, e funciona ha muito tempo.
+
+Terceiro cartao, onde a analogia quebra, dito com honestidade: o relogio nao e outra matematica. E o mesmo encheu-sobe-um de sempre, com grupo de sessenta. E ele para nas horas: dali pra cima o grupo muda, vinte e quatro horas num dia, sete dias numa semana, doze meses num ano. O dia a dia mistura tamanhos de grupo sem pedir licenca.
+
+Recapitular em tres frases: sessenta e o grupo que reparte sem sobra. Cada casa conta ate 59 e o dois-pontos e a parede. E a virada do 59:59 e o mesmo vai-um de sempre, em cascata.
+
+Fechar: qual tamanho de grupo ganha depende do que se precisa. Repartir bem, escrever curto, ou so ligar e desligar. E isso rende outra conversa.
