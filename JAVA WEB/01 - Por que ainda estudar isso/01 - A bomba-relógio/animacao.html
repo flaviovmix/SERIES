@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A bomba-relógio — Java Web 1.1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Animação do episódio 1.1 da série JAVA WEB, montada em 04/09/2026 a partir do
+     _telas.md (o corte real do áudio), não do roteiro: o áudio já existe e é ele que
+     manda. 8 telas, 7 pedidos de "aperte o Próximo". Este episódio não tem foto nem
+     modelo 3D, então a base de pranchas e de modelo-3d não entra; o desenho das telas
+     mora em episodio.css e o que responde à mão, em episodio.js. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/javaweb.html">← voltar pra série</a></div>
+  <div class="tocador">
+    <!-- data-duracao em segundos: vale até o navegador ler o metadata do áudio -->
+    <audio preload="metadata" src="Código de IA é uma bomba relógio.m4a" data-duracao="872"></audio>
+    <img class="tocador__capa" src="../../../site/img/serie-java-web.webp" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Código de IA é uma bomba relógio</div>
+      <div class="tocador__fonte">Java Web · etapa 1 · episódio 1</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="872" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">14:32</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 · capa (00:00) -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">java web · etapa 1 · episódio 1</div>
+      <h1 class="reveal">A bomba-relógio</h1>
+      <p class="lede reveal">Se dá pra pedir pra uma inteligência artificial e receber a aplicação pronta em minutos, por que alguém montaria na mão? Este episódio não tem uma linha de código: ele responde essa pergunta.</p>
+      <div class="capa-como reveal">
+        <p><b>Como acompanhar.</b> Quando o áudio pedir, aperte <b>Próximo</b>. Na tela da prática, pause o áudio, resolva e volte. Sem a página aberta dá pra ouvir tudo, sem perder nada.</p>
+      </div>
+    </div>
+    <figure class="capa-arte reveal">
+      <!-- o desenho da série: um programa entregue, funcionando, com um prazo dentro -->
+      <svg viewBox="0 0 320 220" role="img" aria-label="Uma caixa de programa entregue, com um relógio marcando por dentro">
+        <rect class="arte-caixa" x="40" y="46" width="240" height="140" rx="14"/>
+        <rect class="arte-barra" x="40" y="46" width="240" height="26" rx="14"/>
+        <circle class="arte-ponto" cx="60" cy="59" r="4"/>
+        <circle class="arte-ponto" cx="74" cy="59" r="4"/>
+        <circle class="arte-ponto" cx="88" cy="59" r="4"/>
+        <rect class="arte-linha" x="62" y="94" width="118" height="7" rx="3.5"/>
+        <rect class="arte-linha" x="62" y="112" width="86" height="7" rx="3.5"/>
+        <rect class="arte-linha" x="62" y="130" width="132" height="7" rx="3.5"/>
+        <rect class="arte-linha" x="62" y="148" width="70" height="7" rx="3.5"/>
+        <circle class="arte-relogio" cx="228" cy="132" r="34"/>
+        <line class="arte-ponteiro arte-ponteiro--hora" x1="228" y1="132" x2="228" y2="112"/>
+        <line class="arte-ponteiro arte-ponteiro--minuto" x1="228" y1="132" x2="246" y2="140"/>
+        <circle class="arte-pino" cx="228" cy="132" r="3.5"/>
+      </svg>
+      <figcaption>funcionando hoje, com um prazo lá dentro</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 · o que mudou de verdade (02:35) -->
+  <section class="step">
+    <div class="kicker reveal">o que mudou de verdade</div>
+    <h2 class="reveal">Pedir ficou fácil. Entender, não.</h2>
+    <p class="lede reveal">A facilidade é real, e esta série não é contra ela. Ninguém aqui vai pedir pra você parar de usar.</p>
+    <div class="duo reveal">
+      <div class="duo__lado">
+        <div class="duo__rotulo">o que você faz</div>
+        <p class="duo__texto">Descreve em português o que quer. "Um sistema de cadastro de clientes."</p>
+      </div>
+      <div class="duo__seta" aria-hidden="true">→</div>
+      <div class="duo__lado duo__lado--forte">
+        <div class="duo__rotulo">o que volta</div>
+        <p class="duo__texto">Um programa rodando de verdade. Com banco, tela de login e painel. Em segundos.</p>
+      </div>
+    </div>
+    <p class="destaque reveal">O programa funciona. Você sabe dizer o que ele faz <b>por dentro</b>, quando ninguém está olhando?</p>
+  </section>
+
+  <!-- 3 · a definição (03:55) -->
+  <section class="step">
+    <div class="kicker reveal">a definição</div>
+    <h2 class="reveal">Código que funciona e que você não entende é uma bomba-relógio.</h2>
+    <p class="lede reveal">O ponto da comparação é um só: <b>o atraso</b>. O defeito já existe no dia da entrega. Ele só não aparece nele.</p>
+    <div class="kicker kicker--meio reveal">por que o dia do teste não prova nada</div>
+    <div class="ficha reveal">
+      <div class="item">
+        <div class="rotulo">o dado é mínimo</div>
+        <div class="texto">Quem testa cadastra dois ou três registros, só pra ver se salva.</div>
+      </div>
+      <div class="item">
+        <div class="rotulo">o caminho é o feliz</div>
+        <div class="texto">Clica onde deve, com a informação certa, na ordem certa.</div>
+      </div>
+      <div class="item">
+        <div class="rotulo">só você está usando</div>
+        <div class="texto">Uma pessoa, sem pressa, sem ninguém procurando falha.</div>
+      </div>
+    </div>
+    <p class="destaque reveal">Nessas condições de laboratório, <b>código bom e código ruim se comportam igual</b>. E a culpa não é da máquina: um humano experiente entrega a mesma bomba se quem recebe não entende.</p>
+  </section>
+
+  <!-- 4 · os quatro pavios (05:34) — tela interativa -->
+  <section class="step">
+    <div class="kicker reveal">acenda um de cada vez</div>
+    <h2 class="reveal">Os quatro pavios</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPavios">Cada pavio é um jeito de a bomba estourar. Acenda um e veja onde ele chega.</div>
+      <div class="pavios" id="pavios"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPavios">0</span>
+        <span class="meta" id="metaPavios">acesos: 0 de 4</span>
+      </div>
+      <div class="botoes"><button class="btn-mini" id="apagarPavios">apagar todos</button></div>
+    </div>
+    <p class="destaque reveal">Nenhum dos quatro é erro de digitação. O código roda. Os quatro são falta de entendimento cobrando juros.</p>
+  </section>
+
+  <!-- 5 · a hora do estouro (07:42) -->
+  <section class="step">
+    <div class="kicker reveal">a hora do estouro</div>
+    <h2 class="reveal">Você pede o conserto e trava na primeira frase.</h2>
+    <p class="lede reveal">Pra ela consertar, você precisa descrever o defeito. E descrever é vocabulário, que é justamente o que não se ganha aceitando sem ler.</p>
+    <div class="compara reveal">
+      <div class="compara__lado compara__lado--fraco">
+        <div class="compara__rotulo">o que você consegue dizer</div>
+        <p class="compara__fala">"Está dando erro."</p>
+      </div>
+      <div class="compara__lado">
+        <div class="compara__rotulo">o que ela precisa ouvir</div>
+        <ul class="compara__lista">
+          <li>que parte falhou</li>
+          <li>com que dado</li>
+          <li>depois de qual ação</li>
+          <li>o que era pra ter acontecido</li>
+        </ul>
+      </div>
+    </div>
+    <p class="destaque reveal">É a parede sem planta hidráulica: a casa é sua, a furadeira é boa, e cada furo é uma aposta. O cano só avisa meses depois. Se colar a resposta e consertar, você não sabe por quê. Se quebrar mais, também não. Nos dois casos a dependência aumenta.</p>
+  </section>
+
+  <!-- 6 · a régua de três perguntas (09:38) — tela de prática -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">A régua de três perguntas</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legRegua">Pause o áudio. Leia o pedaço abaixo e responda as três com as suas palavras, antes de abrir a resposta.</div>
+      <div class="pedaco">
+        <div class="pedaco__rotulo">o pedaço, descrito em português</div>
+        <p class="pedaco__texto">Ele pega o que a pessoa digitou no campo de busca e usa esse texto pra procurar no banco de dados.</p>
+      </div>
+      <div class="perguntas" id="perguntas"></div>
+      <div class="painel__total">
+        <span class="num" id="totalRegua">0</span>
+        <span class="meta" id="metaRegua">respondidas: 0 de 3</span>
+      </div>
+      <div class="botoes"><button class="btn-mini" id="fecharRegua">fechar as respostas</button></div>
+    </div>
+  </section>
+
+  <!-- 7 · a saída que a série propõe (11:25) -->
+  <section class="step">
+    <div class="kicker reveal">a saída</div>
+    <h2 class="reveal">Montar na mão uma vez.</h2>
+    <p class="lede reveal">Não por sofrimento e não por saudosismo. É que cada peça montada na mão vira uma pergunta que você sabe fazer depois.</p>
+    <ol class="caminho reveal">
+      <li class="caminho__passo"><span class="caminho__num">1</span><span class="caminho__nome">o terminal</span></li>
+      <li class="caminho__passo"><span class="caminho__num">2</span><span class="caminho__nome">o navegador</span></li>
+      <li class="caminho__passo"><span class="caminho__num">3</span><span class="caminho__nome">o banco de dados</span></li>
+      <li class="caminho__passo"><span class="caminho__num">4</span><span class="caminho__nome">no ar, na internet</span></li>
+    </ol>
+    <p class="destaque reveal">Depois disso a IA continua escrevendo o código. Só que agora ela escreve pra alguém que lê, que pergunta e que percebe a peça faltando. Ela deixa de ser fornecedor e vira ferramenta.</p>
+    <p class="lede reveal">E a série passa de propósito pelas partes chatas: preparar ambiente, guardar histórico, testar. É exatamente lá que a bomba costuma se esconder.</p>
+  </section>
+
+  <!-- 8 · fecho (13:00) -->
+  <section class="step">
+    <div class="kicker reveal">o que fica</div>
+    <h2 class="reveal">Antes de aceitar, pergunte.</h2>
+    <div class="regua-fecho reveal">
+      <div class="regua-fecho__item"><span class="regua-fecho__num">1</span> O que esse pedaço faz?</div>
+      <div class="regua-fecho__item"><span class="regua-fecho__num">2</span> O que acontece se o dado vier errado?</div>
+      <div class="regua-fecho__item"><span class="regua-fecho__num">3</span> Onde isso quebra?</div>
+    </div>
+    <p class="destaque reveal"><b>O que transfere:</b> nada disso é sobre Java. Vale igual em Python, em JavaScript, em qualquer banco. Java aqui é só o veículo, porque a gente precisa montar alguma coisa de verdade pra aprender.</p>
+    <div class="gancho reveal">
+      <div class="gancho__rotulo">no próximo episódio</div>
+      <p class="gancho__texto">Se a saída não é largar a IA, então é usar de outro jeito. E esse jeito muda com uma coisa pequena: o que você pede <b>antes</b> de pedir o código.</p>
+      <a class="btn-mini cheio gancho__botao" href="../02 - Estudar com a IA do lado/animacao.html">Estudar com a IA do lado →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<!-- a base, nesta ordem; depois o que é deste episódio -->
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

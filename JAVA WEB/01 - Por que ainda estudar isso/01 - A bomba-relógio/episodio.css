@@ -1,0 +1,358 @@
+/* episódio 1.1 · A bomba-relógio
+   O que é só deste episódio: o desenho da capa, o par pedido/resposta, o destaque de fecho de tela, os quatro pavios, o comparativo do estouro, a régua de três perguntas, o caminho da série e o gancho. Depende de css/tokens.css, animacao/tokens.css, animacao/telas.css e animacao/painel.css.
+
+   Este episódio não tem foto nem modelo 3D: tudo o que aparece na tela é desenho ou
+   texto. As media queries ficam no fim da folha de propósito. */
+
+/* ---- capa: o desenho no lugar em que os outros episódios põem o modelo 3D ---- */
+.capa-arte {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.capa-arte svg {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  max-height: min(56vh, 420px);
+}
+.capa-arte figcaption {
+  font-family: var(--fonte-mono);
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.arte-caixa { fill: var(--surface); stroke: var(--line); stroke-width: 2; }
+.arte-barra { fill: var(--surface-alt); }
+.arte-ponto { fill: var(--ink-faint); }
+.arte-linha { fill: var(--line); }
+.arte-relogio { fill: var(--surface); stroke: var(--accent); stroke-width: 3; }
+.arte-ponteiro { stroke: var(--accent); stroke-width: 3; stroke-linecap: round; }
+.arte-ponteiro--minuto { transform-origin: 228px 132px; animation: gira-ponteiro 6s linear infinite; }
+.arte-pino { fill: var(--accent); }
+@keyframes gira-ponteiro { to { transform: rotate(360deg); } }
+
+/* ---- o fecho de cada tela: a frase que amarra o assunto ---- */
+.destaque {
+  max-width: 780px;
+  margin-top: 18px;
+  font-size: clamp(13.5px, 1.7vw, 17px);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.destaque b { color: var(--ink); }
+
+/* o kicker que separa um bloco no meio da tela, e não abre ela */
+.kicker--meio { margin-top: 22px; }
+
+/* ---- tela 2: o que você pede e o que volta ---- */
+.duo {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+.duo__lado {
+  flex: 1 1 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  text-align: left;
+}
+.duo__lado--forte { border-color: var(--accent-edge); background: var(--accent-soft); }
+.duo__rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.duo__texto { font-size: 14.5px; line-height: 1.55; }
+.duo__seta {
+  align-self: center;
+  font-size: 24px;
+  color: var(--ink-faint);
+}
+
+/* ---- tela 4: os quatro pavios ---- */
+.pavios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  text-align: left;
+}
+.pavio {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 16px 18px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.pavio:hover { border-color: var(--accent); transform: translateY(-2px); }
+.pavio__topo { display: flex; align-items: center; gap: 8px; }
+/* o fio: cinza apagado, laranja quando o pavio acende */
+.pavio__fio {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line);
+  position: relative;
+  overflow: hidden;
+}
+.pavio__fio::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0;
+  background: var(--flag);
+  transition: width .8s var(--ease);
+}
+.pavio__chama { font-size: 15px; opacity: .2; transition: opacity .3s; }
+.pavio__nome {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 12px 0 6px;
+}
+.pavio__titulo { font-size: 16px; font-weight: 600; line-height: 1.25; }
+.pavio__texto {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height .5s var(--ease), opacity .4s var(--ease), margin-top .5s var(--ease);
+}
+.pavio.aceso { border-color: var(--flag); }
+.pavio.aceso .pavio__fio::after { width: 100%; }
+.pavio.aceso .pavio__chama { opacity: 1; }
+.pavio.aceso .pavio__titulo { color: var(--flag); }
+.pavio.aceso .pavio__texto { max-height: 320px; opacity: 1; }
+
+/* ---- tela 5: o que você diz contra o que ela precisa ouvir ---- */
+.compara {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  max-width: 860px;
+  width: 100%;
+  align-items: stretch;
+}
+.compara__lado {
+  flex: 1 1 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  text-align: left;
+}
+.compara__lado--fraco { background: var(--surface-alt); }
+.compara__rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 10px;
+}
+.compara__fala {
+  font-family: var(--fonte-mono);
+  font-size: 18px;
+  color: var(--ink-soft);
+}
+.compara__lista { margin: 0; padding-left: 20px; }
+.compara__lista li { font-size: 14.5px; line-height: 1.7; }
+
+/* ---- tela 6: o pedaço e as três perguntas ---- */
+.pedaco {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-edge);
+  border-radius: 12px;
+  padding: 16px 20px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.pedaco__rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.pedaco__texto { font-size: 15px; line-height: 1.55; }
+
+.perguntas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: left; }
+.pergunta {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 18px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.pergunta:hover { border-color: var(--accent); transform: translateY(-2px); }
+.pergunta__num {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  color: var(--accent);
+}
+.pergunta__texto { font-size: 15.5px; font-weight: 600; line-height: 1.3; margin-top: 8px; }
+.pergunta__abre {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 12px;
+}
+.pergunta__resposta {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height .5s var(--ease), opacity .4s var(--ease), margin-top .5s var(--ease);
+}
+.pergunta.aberta { border-color: var(--ok); }
+.pergunta.aberta .pergunta__resposta { max-height: 320px; opacity: 1; margin-top: 10px; }
+.pergunta.aberta .pergunta__abre { color: var(--ok); }
+
+/* ---- tela 7: o caminho da série ---- */
+.caminho {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+  max-width: 860px;
+  width: 100%;
+}
+.caminho__passo {
+  flex: 1 1 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.caminho__num {
+  font-family: var(--fonte-mono);
+  font-size: 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--ground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.caminho__nome { font-size: 14px; line-height: 1.3; }
+
+/* ---- tela 8: a régua repetida e o gancho ---- */
+.regua-fecho { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; max-width: 620px; width: 100%; }
+.regua-fecho__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 12px 20px;
+  font-size: 15.5px;
+  text-align: left;
+}
+.regua-fecho__num {
+  font-family: var(--fonte-mono);
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--ground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.gancho {
+  margin-top: 22px;
+  max-width: 680px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-edge);
+  border-radius: 14px;
+  padding: 18px 22px 20px;
+  text-align: left;
+}
+.gancho__rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.gancho__texto { font-size: 14.5px; line-height: 1.6; }
+.gancho__botao { display: inline-block; margin-top: 14px; text-decoration: none; }
+
+/* ---- apertos de tela: no fim da folha de propósito. Media query não aumenta
+   especificidade, e com a mesma especificidade quem vem depois ganha ---- */
+
+@media (max-width: 820px) {
+  .duo { flex-direction: column; }
+  .duo__seta { transform: rotate(90deg); }
+  .compara { flex-direction: column; }
+  .pavios { grid-template-columns: repeat(2, 1fr); }
+  .perguntas { grid-template-columns: 1fr; }
+  .caminho { flex-wrap: wrap; }
+  .caminho__passo { flex: 1 1 40%; }
+}
+
+@media (max-width: 700px) {
+  .pavios { grid-template-columns: 1fr; }
+  .pavio { padding: 12px 14px 14px; }
+  .pavio__titulo { font-size: 15px; }
+  .regua-fecho__item { font-size: 14px; padding: 10px 16px; }
+  .compara__fala { font-size: 16px; }
+  .capa-arte svg { max-height: min(30vh, 220px); }
+}
+
+/* tela baixa (notebook 768px): quem cede é o respiro, não o texto */
+@media (max-height: 820px) {
+  .destaque { margin-top: 12px; font-size: 13px; }
+  .duo, .compara, .caminho { margin-top: 14px; }
+  .duo__lado, .compara__lado { padding: 14px 16px; }
+  .pavio { padding: 12px 14px 14px; }
+  .pavio__nome { margin: 8px 0 4px; }
+  .regua-fecho { gap: 7px; margin-top: 14px; }
+  .gancho { margin-top: 14px; padding: 14px 18px 16px; }
+}
