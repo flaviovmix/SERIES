@@ -1,0 +1,7 @@
+Titulo: A máquina que aprendeu a traduzir código
+Notebook: 06-04-O compilador
+
+Descricao:
+O conteúdo apresenta o roteiro de O Compilador, episódio que encerra uma etapa da série documental sobre a evolução da computação entre 1949 e 1959. O texto detalha a transição histórica da programação manual em binário para o uso de ferramentas que automatizam a tradução de instruções. São explicados conceitos como o assembler, que substituiu números por palavras, e o surgimento de linguagens pioneiras como FORTRAN e COBOL. O material enfatiza como a criação do compilador permitiu que softwares se tornassem independentes do hardware e transformou a programação em uma tarefa intelectual, não mais eletrônica. As fontes também estabelecem diretrizes rígidas de narração, proibindo termos rebuscados e exigindo comandos específicos para a interação com telas de animação. Por fim, o roteiro conecta esse progresso à próxima fase da série, que abordará a redução física das máquinas.
+
+Link: https://notebook.google.com/notebook/7a8eb8d5-722e-49a9-890d-4d2661b72b3d

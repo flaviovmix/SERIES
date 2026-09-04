@@ -1,0 +1,51 @@
+/* episodio 06-04
+   So o que e deste episodio: o quadro de duas colunas que poe lado a lado o mesmo pedaco de programa escrito na lingua da maquina e escrito na lingua da pessoa. Depende de animacao/tokens.css. */
+
+.codigo {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.codigo__lado {
+  flex: 1 1 280px;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--linha);
+  border-radius: 16px;
+  background: var(--papel-alto, rgba(255, 255, 255, .03));
+}
+
+.codigo__lado--forte { border-color: var(--realce, #c98b3a); }
+
+.codigo__rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.codigo__linhas {
+  margin-top: 12px;
+  font-family: var(--fonte-mono);
+  font-size: 13.5px;
+  line-height: 1.85;
+  color: var(--ink);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.codigo__pe {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px) {
+  .codigo { gap: 12px; }
+  .codigo__lado { padding: 16px; }
+  .codigo__linhas { font-size: 12.5px; }
+}

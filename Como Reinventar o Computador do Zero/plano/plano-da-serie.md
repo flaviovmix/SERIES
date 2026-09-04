@@ -193,6 +193,161 @@ O `01` teve uma v1 gerada ainda com amarras de série ("primeiro episodio desta 
 5. **Publicar extra = mesmo deploy** (pasta em `~/serie` no servidor, tar+scp), mas o card de onde ele é achado depende do item 1.
 6. **Gancho a manter**: os extras de base NÃO substituem o ep `01-02` (O Zero e os Números) nem os eps de lógica/circuito da etapa 6 — ele é o "como funciona a base 2" sem história, e os episódios continuam donos da linha do tempo.
 
+**Encomenda do dono (02/09): dois extras de peça, com modelo 3D.** Ele quer um extra **só sobre o relé** e outro **só sobre a válvula**, cada um com um **modelo tridimensional pra mexer**, no mesmo espírito do ábaco 3D da etapa 01: girar a peça, ver por dentro, entender o que se move (ou o que não se move, na válvula) e por que isso muda a velocidade. O escopo pedido é o da peça inteira: como funciona, quem inventou, de onde veio.
+
+Três consequências registradas junto:
+
+- ⚠️ **Eles quebram a REGRA DURA nº 1 dos extras** (sem pessoa, sem data), porque "quem inventou" é parte do pedido. É o mesmo caso do extra `08 - O Zero e os Números`, que veio da linha do tempo com nome e data. A trilha de extras passou a ter **duas famílias**: *conceito* (sem nome nem data, a regra atual) e *peça e figura* (com nome e data). O lede do hub ainda promete só a primeira e precisa ser reescrito.
+- **A trilha principal continua dona do elo.** O episódio `06-01` explica relé e válvula no que a próxima peça precisa (uma tem contato que se mexe, a outra não, e é por isso que ela é mais rápida) e aponta o gancho. O extra é o aprofundamento, nunca o pré-requisito.
+- **Os dois modelos 3D entram no backlog** de `_arquivos/modelos-3d/_a-fazer.md`, na seção `_EXTRAS`.
+
+**Candidatos a extra (03/09), pra deixar o gancho já no áudio da trilha principal — aguardando aprovação do dono.** Agrupados pela etapa da espinha nova (7 etapas) onde o gancho é dito. Tipo: *conceito* (sem nome nem data), *peça* (o objeto por dentro, com modelo 3D) ou *figura* (a pessoa). Situação: 🟢 já no ar · 🟠 modelo 3D pronto, falta o episódio · 🔴 do zero.
+
+| # | Extra | Tipo | Gancho na etapa | Situação |
+|---|---|---|---|---|
+| 1 | O Zero e os Números | figura | 1 Contar | 🟢 EX-08 |
+| 2 | O Sistema Decimal | conceito | 1 Contar | 🟢 EX-03 |
+| 3 | O Sistema Binário | conceito | 1 Contar / 5 Papel | 🟢 EX-04 |
+| 4 | O Sistema Hexadecimal | conceito | 5 Papel | 🟢 EX-05 |
+| 5 | O Sistema de 60 | conceito | 1 Contar | 🟢 EX-06 |
+| 6 | A Anticítera | peça | 1 Contar | 🟠 `anticitera.html` |
+| 7 | A Pascalina por dentro | peça | 2 Mecânica | 🟠 `pascalina.html` |
+| 8 | A Roda de Leibniz | peça | 2 Mecânica | 🟠 `roda-de-leibniz.html` |
+| 9 | Os autômatos (o Escritor) | peça | 2 Mecânica | 🔴 |
+| 10 | A caixa de música | peça | 2 Mecânica | 🔴 |
+| 11 | O tear de Jacquard | peça | 2 Mecânica | 🔴 |
+| 12 | Babbage e Ada | figura | 2 Mecânica | 🔴 |
+| 13 | Volt, Ampère e Watt | conceito | 3 Raio | 🟢 EX-01 |
+| 14 | Por que o ímã gruda | conceito | 3 Raio | 🟢 EX-02 |
+| 15 | A garrafa de Leiden | peça | 3 Raio | 🟠 `garrafa-de-leiden.html` |
+| 16 | Volta e a pilha | figura | 3 Raio | 🔴 |
+| 17 | Faraday | figura | 3 Raio | 🔴 |
+| 18 | O relé | peça | 3 Raio / 6 Liga | 🟠 `rele.html` |
+| 19 | O telégrafo e o Morse | peça | 3 Raio | 🔴 (ep 04-06 publicado pode virar extra) |
+| 20 | Edison, Tesla e a corrente alternada | figura | 3 Raio | 🔴 |
+| 21 | Boole | figura | 4 Lógica | 🔴 |
+| 22 | Hollerith e o cartão furado | figura | 4 Lógica | 🔴 (ep 05-02 publicado pode virar extra) |
+| 23 | Shannon | figura | 4 Lógica | 🔴 |
+| 24 | O Hertz | conceito | 4 Lógica / 6 Liga | 🟢 EX-07 |
+| 25 | Turing | figura | 5 Papel | 🔴 |
+| 26 | Como a letra vira número (ASCII) | conceito | 5 Papel | 🔴 |
+| 27 | Número negativo na máquina (complemento de dois) | conceito | 5 Papel | 🔴 |
+| 28 | A válvula | peça | 6 Liga | 🟠 `valvula.html` |
+| 29 | O Z3 e Konrad Zuse | peça + figura | 6 Liga | 🔴 |
+| 30 | As seis programadoras do ENIAC | figura | 6 Liga | 🔴 |
+| 31 | Von Neumann e a briga do rascunho | figura | 6 Liga | 🔴 |
+| 32 | Grace Hopper e o compilador | figura | 6 Liga | 🔴 (ep 07-03 publicado vira extra) |
+| 33 | O transistor | peça | 7 Encolher | 🟠 `transistor.html` |
+| 34 | Kilby, Noyce e o circuito integrado | figura | 7 Encolher | 🔴 |
+| 35 | A lei de Moore | conceito | 7 Encolher | 🔴 |
+| 36 | Como um pacote atravessa a internet | conceito | 7 Encolher | 🔴 |
+| 37 | O Perceptron | peça | 7 Encolher | 🔴 |
+| 38 | O que é treinar uma rede | conceito | 7 Encolher | 🔴 |
+| 39 | Portas lógicas na mão | conceito | 6 Liga (A planta) | 🔴 |
+| 40 | O somador e o número negativo | conceito | 6 Liga (A planta) | 🔴 |
+| 41 | Como a máquina lembra (flip-flop e endereço) | conceito | 6 Liga (A planta) | 🔴 |
+| 42 | Turing e a máquina universal | figura | 6 Liga (A planta) | 🔴 (era o #25, gancho mudou de etapa) |
+| 43 | O conjunto de instruções | conceito | 6 Liga (A planta) | 🔴 |
+| 44 | A IBM e o Mark I, a máquina que contava em decimal | peça + figura | 6 Liga | 🔴 |
+| 45 | O ENIAC | peça | 6 Liga | 🔴 |
+
+**Aprovados pelo dono (03/09): os seis extras com gancho no episódio `06-02`.** São 18 O relé · 28 A válvula · 29 O Z3 e Konrad Zuse · 44 A IBM e o Mark I · 45 O ENIAC · 30 As seis programadoras do ENIAC. O trio do `06-02` já foi atualizado com os ganchos: relé e válvula saem juntos numa frase só, e os outros quatro têm uma frase cada, somando **seis momentos de gancho** no episódio (contando o Hertz e o decimal, que já estavam lá e continuam). ⚠️ **O filme que ele lembrou, *Estrelas Além do Tempo* (2016), não é dessa história:** ele conta as calculistas da NASA nos anos 1960 (Katherine Johnson e as outras), que são material da série da Lua, não do ENIAC. As seis do ENIAC são outro grupo, outro lugar e vinte anos antes; o registro em vídeo delas é *Top Secret Rosies* (2010) e o livro de referência é o *Proving Ground*, da Kathy Kleiman, que foi quem achou as seis nas fotos.
+
+**Ideia do dono (03/09): o botão foto real ↔ ilustração.** Ouvindo o teste do `06-02` ele decidiu que a etapa merece **telas**, e mais: nas telas em que a máquina tem fotografia de época, um **botão que troca entre a foto real e a ilustração**. A ilustração não é enfeite, é o que a foto não mostra (a peça em corte, o que se mexe, a cena que ninguém fotografou). Isso resolve um incômodo antigo: até o ábaco o áudio tinha que avisar "estas cenas são reconstituições, não são fotos" (tela 3 do `01-01`); daqui pra frente a página mostra as duas e quem escolhe é quem assiste. ⚠️ **O componente ainda NÃO foi implementado, por decisão dele:** primeiro ele aprova ouvindo o áudio escrito com as telas. A planta de telas do `06-02` (12 telas, 11 pedidos de Próximo, com a foto real e a ilustração anotadas uma a uma) está em `_REFAZER/06 - A máquina que liga/02 - As primeiras máquinas que ligaram/_telas.md`. As versões anteriores do áudio ficaram em `_v1` (episódio antigo) e `_v2` (versão áudio puro, de 18:27).
+
+Regra que vale pra todos: o áudio da trilha principal só diz "tem um extra sobre isso" pro que estiver aprovado nesta lista; genérico, sem nome. Os de *figura* e *peça* seguem a família nova (com nome e data); os de *conceito* seguem as REGRAS DURAS nº 1 e 2 de sempre.
+
+**Decisão do dono (03/09): a etapa "O computador no papel" sai da espinha.** Motivo: as etapas 5 e 6 do desenho de 7 acontecem ao mesmo tempo (1936–1949), e "primeiro o papel, depois a máquina" confundia até quem escreveu. O conteúdo não some: vira **um episódio só, "A planta"**, que passa a abrir a etapa **A máquina que liga** (agora com três episódios: 01 A planta · 02 As primeiras máquinas que ligaram · 03 O programa que mora na memória), e os cinco assuntos de hoje viram **cinco extras** com gancho nesse episódio: 39 Portas lógicas na mão · 40 O somador · 41 Como a máquina lembra (flip-flop e endereço) · 42 Turing e a máquina universal · 43 O conjunto de instruções. A espinha nova fica com **6 etapas**. O trio de "A planta" está em `_REFAZER/06 - A máquina que liga/01 - A planta/` (áudio de teste, como os outros dois).
+
+## Etapa 6 refeita com telas (03/09) — a primeira no método novo
+
+**O que ficou pronto e está no ar:** os três episódios da etapa *A máquina que liga*, cada
+um com áudio novo, planta de telas e página de animação, em
+`https://series.afx.art.br/site/etapas/etapa-06.html`.
+
+| # | Episódio | Título do áudio | Duração | Telas | Página |
+|---|---|---|---|---|---|
+| 6.01 | A planta | Como a lógica matemática criou o computador | 12:53 | 12 | ✅ |
+| 6.02 | As primeiras máquinas que ligaram | A construção do Z3 ao ENIAC | 14:19 | 12 | ✅ |
+| 6.03 | O programa que mora na memória | Quando o programa entrou na memória | 14:37 | 11 | ✅ |
+
+Os três passaram na conferência obrigatória (`mapa-de-telas.py`): os pedidos de "aperte o
+Próximo" batem com o roteiro (11, 11 e 10), e os marcadores do tocador saíram da
+transcrição pelo `marcadores-do-mapa.py`, nunca digitados.
+
+**O componente novo: `troca-imagem`.** Nasceu do pedido do dono de ver a mesma coisa nas
+duas versões. A figura guarda a foto de época e a ilustração, e uma barra embaixo troca
+entre elas; o selo do canto e a legenda acompanham, e a legenda da ilustração já avisa
+que é reconstituição. Mora na base (`site/css/animacao/troca-imagem.css` e
+`site/js/animacao/troca-imagem.js`), estreou no 6.02 (6 pares) e o 6.03 usa em 2. ⚠️ Dois
+defeitos achados e corrigidos na estreia: clicar no botão abria o lightbox junto
+(faltava `stopPropagation`), e o lightbox ampliava sempre a foto real — agora ele segue a
+imagem marcada com `data-em-cena`. O 6.01 não usa: é o episódio do papel, tudo ilustração.
+
+**Outro componente pra base: `ordens.css`.** A lista de ordens numeradas com o dedo na da
+vez, que o 6.01 monta na tela 11 e o 6.03 reusa em três telas (salto, laço e sub-rotina).
+Foi direto pra base em vez de virar clone, pela regra do terceiro clone.
+
+**As imagens.** Fotos de época do Wikimedia Commons com crédito na legenda (relés do Z3,
+válvula triodo, réplica do Z3, Mark I, ENIAC, o painel sendo recabeado, as programadoras,
+o First Draft, von Neumann, o Baby, o EDSAC). Ilustrações geradas no Flow, 16:9, uma por
+tela que precisava mostrar o que a foto não mostra. ⚠️ A página do artigo de 1936 **não
+existe no Commons**: a tela 9 do 6.01 ficou só com ilustração.
+
+**Pendências que sobraram desta rodada:**
+
+- ⚠️ **A espinha ainda está numerada como o desenho antigo.** O card 06 de `computador.html`
+  já aponta pra etapa nova, mas os cards 07 a 10 continuam na numeração de 10 etapas e
+  agora se sobrepõem a esta. Renumerar depende da palavra do dono.
+- Os seis extras aprovados pro 6.02 (relé, válvula, Z3/Zuse, IBM/Mark I, ENIAC, as seis
+  programadoras) têm gancho no áudio mas ainda não existem.
+- Nada desta rodada foi commitado.
+
+## 04/09: a etapa 6 fecha com quatro e a etapa 7 abre
+
+**A espinha foi renumerada e tem 9 etapas.** A antiga etapa 7 (*O primeiro computador
+moderno*) foi absorvida pela 6; o encolhimento, que era a 8, virou a **etapa 7 (O
+computador encolhe)**, e as duas ultimas passaram a 8 (*Da sala pro mundo*) e 9 (*A
+maquina que aprende*). A pagina `computador.html` ja esta assim.
+
+**Dois episodios novos, no ar:**
+
+| # | Episódio | Título do áudio | Duração | Telas |
+|---|---|---|---|---|
+| 6.04 | O compilador | A máquina que aprendeu a traduzir código | 12:34 | 11 |
+| 7.01 | O transistor | Como o transistor encolheu o computador | 13:34 | 11 |
+
+O 6.04 responde a pergunta que o 6.03 deixou no ar (por que a propria maquina nao
+traduz?) e fecha a etapa. O 7.01 abre a etapa nova e **estreia o modelo 3D dentro da
+animacao**: a capa carrega o `transistor.html` do backlog de modelos, com o HUD de
+ligar a base e bater 8, 100 e um milhao de vezes por segundo.
+
+⚠️ **O 6.04 foi regravado.** A primeira versao juntou o FORTRAN no bloco da
+resistencia (o apresentador disse "vamos para o proximo" em vez de "aperte o
+proximo", e o cortador nao separa) e o ano do COBOL saiu ininteligivel: dois modelos
+de transcricao ouviram 1859 e 1559. O trio ganhou duas regras novas que valem pra
+todos os proximos:
+
+- **A frase do pedido e sempre "aperte o Proximo"**, sem variacao. Qualquer outra
+  forma faz duas telas virarem uma.
+- **Os anos sao ditos por extenso e devagar** (mil novecentos e cinquenta e nove),
+  senao saem embolados e viram outro numero.
+
+Na v2 os dois defeitos sumiram: 11 telas, 10 pedidos, FORTRAN em 1957 e COBOL em
+1959, ditos certo.
+
+**O modelo 3D no celular (04/09).** Na tela estreita o painel deixa a lateral e vira
+barra no rodape, POR CIMA da maquina: no telefone ela sumia atras dele. O conserto
+foi no `_base-modelo-3d.js`, entao vale pros quatro modelos de uma vez: em vez de
+empurrar a maquina, o **palco encolhe** (`#cena` termina onde a barra comeca) e a
+maquina se recentra sozinha no que sobra, com a conta saindo da altura real da barra,
+que muda de modelo pra modelo. O abaco entrou junto, entao a animacao da etapa 01 que
+ja estava publicada melhorou tambem. No desktop nada muda.
+
+**Pegadinha do Flow que voltou:** a primeira geracao do lote baixou **nove** imagens
+em vez de uma, puxando ilustracoes velhas do feed como se fossem novas. Conferir a
+imagem baixada continua sendo obrigatorio.
+
 ## Publicados no acervo
 
 A pasta guarda o nome do episódio; o card no Nexus guarda o **título do podcast** (o que o NotebookLM deu ao áudio). Esta tabela é o que amarra os dois — os números de faixa vêm do `_publicado.json` de cada pasta.

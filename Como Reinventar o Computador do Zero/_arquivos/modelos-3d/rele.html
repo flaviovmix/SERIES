@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relé 3D — um circuito comandando outro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+<style>
+/* A leitura deste modelo e o estado do contato (ABERTO/FECHADO) com a bobina
+   embaixo: uma palavra de 7 letras nao cabe ao lado da meta na largura do
+   painel, entao as duas empilham. So aqui, pra nao mexer nos outros modelos. */
+.linha-total.estado{flex-direction:column; align-items:flex-start; gap:2px}
+.linha-total.estado .num{font-size:30px}
+.linha-total .casas b{font-weight:600; color:var(--ink)}
+.linha-total .casas.acesa b{color:#b8741a}
+@media (max-width:700px){
+  .linha-total.estado{flex-direction:row; align-items:baseline}
+  .linha-total.estado .num{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> RELÉ 3D</div>
+  <div>EXTRA · A PEÇA POR DENTRO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">Clique na <b>chave</b> (ou no botão) pra ligar a bobina. Arraste fora pra <b>girar</b>, role pra aproximar.</div>
+    <div class="linha-total estado">
+      <span class="num mono" id="contato">ABERTO</span>
+      <span class="meta mono" id="bobina">bobina desligada</span>
+    </div>
+    <div class="linha-total">
+      <span class="casas mono" id="lampada"><b>LÂMPADA</b> apagada</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio largo" id="btnBobina">ligar a bobina</button>
+      <button class="btn-mini" id="btnLento">bater 4× por segundo</button>
+      <button class="btn-mini" id="btnRapido">bater 8× por segundo</button>
+      <button class="btn-mini largo" id="btnDentro">ver por dentro</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elContato = document.getElementById('contato');
+const elBobina = document.getElementById('bobina');
+const elLampada = document.getElementById('lampada');
+const btnBobina = document.getElementById('btnBobina');
+
+const palco = montaPalco({
+  alvo: [0.2, 1.9, 0],
+  camPos: [1.5, 3.8, 10],
+  meiaLarguraDesktop: 4.7,
+  meiaLarguraMobile: 3.7,
+  distMin: 9,
+  orbitaMin: 4.5,
+});
+const { scene, camera, renderer, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+
+// ---------- materiais proprios da peca ----------
+const ferro = materiais.metal(0x8e9298, { roughness: 0.5 });
+const cobre = materiais.metal(0xb5642b, { roughness: 0.45, metalness: 0.85 });
+const molaMat = materiais.metal(0xb9bdc2, { roughness: 0.4 });
+const baquelite = new THREE.MeshStandardMaterial({ color: 0x2a2320, roughness: 0.55, envMapIntensity: 0.3 });
+const pilhaMat = new THREE.MeshStandardMaterial({ color: 0x33353a, roughness: 0.6, envMapIntensity: 0.3 });
+// fio encapado de pano: o circuito de comando e o comandado tem cores diferentes,
+// e cada um acende quando esta com corrente
+const fioComando = new THREE.MeshStandardMaterial({ color: 0x8a3d2c, roughness: 0.85, emissive: 0xff5a3c, emissiveIntensity: 0 });
+const fioCarga = new THREE.MeshStandardMaterial({ color: 0x3a5a3f, roughness: 0.85, emissive: 0x4cff7a, emissiveIntensity: 0 });
+
+// a bobina e um cilindro com textura de fio enrolado: listras de cobre em dois tons
+function texturaEnrolada() {
+  const cv = document.createElement('canvas');
+  cv.width = 64; cv.height = 256;
+  const cx = cv.getContext('2d');
+  for (let y = 0; y < cv.height; y += 4) {
+    cx.fillStyle = (y / 4) % 2 ? '#b8672c' : '#9a5222';
+    cx.fillRect(0, y, cv.width, 4);
+  }
+  const tx = new THREE.CanvasTexture(cv);
+  tx.wrapS = tx.wrapT = THREE.RepeatWrapping;
+  tx.repeat.set(6, 3);
+  return tx;
+}
+const bobinaMat = new THREE.MeshStandardMaterial({ map: texturaEnrolada(), color: 0xd4b08a, metalness: 0.5, roughness: 0.5, envMapIntensity: 0.5, transparent: true, opacity: 1 });
+
+const rele = new THREE.Group();
+scene.add(rele);
+
+function cilindro(r, h, mat, x, y, z, eixo = 'y', rTop = r) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(rTop, r, h, 32), mat);
+  if (eixo === 'x') m.rotation.z = Math.PI / 2;
+  if (eixo === 'z') m.rotation.x = Math.PI / 2;
+  m.position.set(x, y, z);
+  m.castShadow = true; m.receiveShadow = true;
+  return m;
+}
+
+// ---------- base e circuito magnetico (o ferro que fecha o caminho do ima) ----------
+const base = bloco(7.4, 0.4, 3.4, materiais.madeiraEscura, 0.08);
+base.position.y = 0.2;
+rele.add(base);
+
+const PIVO = new THREE.Vector3(-1.6, 2.9, 0);
+const suporte = bloco(0.3, 2.55, 1.2, ferro, 0.03);       // o L de ferro que segura tudo
+suporte.position.set(-1.6, 1.675, 0);
+const calco = bloco(1.9, 0.22, 1.0, ferro, 0.03);          // liga o pe do suporte ao pe do nucleo
+calco.position.set(-0.95, 0.51, 0);
+const nucleo = cilindro(0.3, 2.0, ferro, -0.3, 1.68, 0);   // topo em 2.68: a armadura para a 0.02 dele
+const dobradica = cilindro(0.13, 1.3, materiais.latao, PIVO.x, PIVO.y, 0, 'z');
+rele.add(suporte, calco, nucleo, dobradica);
+
+// ---------- bobina ----------
+const bobina = cilindro(0.85, 1.55, bobinaMat, -0.3, 1.55, 0);
+const flangeBaixo = cilindro(0.98, 0.1, baquelite, -0.3, 0.775, 0);
+const flangeCima = cilindro(0.98, 0.1, baquelite, -0.3, 2.325, 0);
+rele.add(bobina, flangeBaixo, flangeCima);
+
+// ---------- armadura: a lamina que o ima puxa, articulada no topo do suporte ----------
+const THETA = 0.092;                                       // angulo em que o contato encosta
+const CURSO_S = 0.09;                                      // segundos pra armadura ir de um extremo ao outro (esticado)
+const armadura = new THREE.Group();
+armadura.position.copy(PIVO);
+const lamina = bloco(3.9, 0.16, 0.7, ferro, 0.03);
+lamina.position.set(1.75, 0, 0);
+const contatoMovel = cilindro(0.09, 0.28, materiais.latao, 3.55, -0.22, 0);
+const aba = bloco(0.36, 0.16, 0.6, ferro, 0.03);           // onde a mola prende, atras da lamina
+aba.position.set(2.2, 0, -0.5);
+armadura.add(lamina, contatoMovel, aba);
+rele.add(armadura);
+
+// ---------- contato fixo: o outro circuito espera aqui ----------
+const poste = cilindro(0.1, 1.75, materiais.latao, 1.95, 1.275, 0);
+const botaoContato = cilindro(0.16, 0.06, materiais.latao, 1.95, 2.18, 0);
+rele.add(poste, botaoContato);
+
+// ---------- mola de retorno: quando o ima solta, ela devolve a armadura ----------
+const posteMola = cilindro(0.06, 3.4, materiais.latao, 0.6, 2.1, -0.8);
+rele.add(posteMola);
+const MOLA_TOPO = new THREE.Vector3(0.6, 3.75, -0.8);
+function geometriaHelice(voltas, raio) {
+  const pontos = [];
+  const N = voltas * 16;
+  for (let i = 0; i <= N; i++) {
+    const t = i / N;
+    const a = t * voltas * Math.PI * 2;
+    pontos.push(new THREE.Vector3(Math.cos(a) * raio, -t, Math.sin(a) * raio));   // comprimento 1, pra baixo
+  }
+  return new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pontos), N * 2, 0.022, 6, false);
+}
+const mola = new THREE.Mesh(geometriaHelice(9, 0.11), molaMat);
+mola.position.copy(MOLA_TOPO);
+mola.castShadow = true;
+rele.add(mola);
+
+// ---------- terminais e pilhas ----------
+function terminal(x, z) {
+  const t = bloco(0.22, 0.2, 0.22, materiais.latao, 0.03);
+  t.position.set(x, 0.5, z);
+  return t;
+}
+rele.add(terminal(-0.95, 1.25), terminal(0.35, 1.25));
+
+function pilha(x, z, poloParaDireita) {
+  const g = new THREE.Group();
+  g.add(cilindro(0.24, 0.95, pilhaMat, 0, 0, 0, 'x'));
+  const polo = cilindro(0.1, 0.08, materiais.latao, poloParaDireita ? 0.515 : -0.515, 0, 0, 'x');
+  g.add(polo);
+  g.position.set(x, 0.64, z);
+  return g;
+}
+rele.add(pilha(-2.5, -1.05, true), pilha(2.3, -1.05, false));
+
+// ---------- chave: o circuito de comando comeca aqui ----------
+const chave = new THREE.Group();
+const placaChave = bloco(1.0, 0.08, 0.55, baquelite, 0.02);
+placaChave.position.set(-2.55, 0.44, 1.05);
+const clipe = bloco(0.14, 0.18, 0.2, materiais.latao, 0.02);
+clipe.position.set(-2.2, 0.57, 1.05);
+const alavanca = new THREE.Group();
+alavanca.position.set(-2.95, 0.52, 1.05);
+const braco = bloco(0.75, 0.06, 0.14, materiais.latao, 0.02);
+braco.position.set(0.375, 0, 0);
+const cabo = new THREE.Mesh(new THREE.SphereGeometry(0.09, 20, 16), baquelite);
+cabo.position.set(0.72, 0.09, 0);
+cabo.castShadow = true;
+alavanca.add(braco, cabo);
+// as pecas da chave sao finas: um bloco invisivel em volta delas e o que recebe o clique
+const alvoChave = new THREE.Mesh(new THREE.BoxGeometry(1.3, 0.7, 0.8), new THREE.MeshBasicMaterial({ visible: false }));
+alvoChave.position.set(-2.55, 0.7, 1.05);
+chave.add(placaChave, clipe, alavanca, alvoChave);
+rele.add(chave);
+
+// ---------- lampada: o circuito comandado termina aqui ----------
+const LAMPADA = new THREE.Vector3(2.55, 1.15, 1.0);
+const soquete = cilindro(0.22, 0.4, materiais.latao, 2.55, 0.6, 1.0);
+const vidroMat = new THREE.MeshPhysicalMaterial({ color: 0xfff1d6, roughness: 0.15, transmission: 0.55, thickness: 0.3, transparent: true, opacity: 0.7, emissive: 0xffb347, emissiveIntensity: 0 });
+const vidro = new THREE.Mesh(new THREE.SphereGeometry(0.32, 32, 24), vidroMat);
+vidro.position.copy(LAMPADA);
+vidro.castShadow = true;
+const filamentoMat = new THREE.MeshStandardMaterial({ color: 0x4a3a2a, emissive: 0xffc46a, emissiveIntensity: 0 });
+const filamento = new THREE.Mesh(new THREE.TorusGeometry(0.09, 0.014, 8, 24), filamentoMat);
+filamento.position.set(LAMPADA.x, LAMPADA.y - 0.03, LAMPADA.z);
+const luzLampada = new THREE.PointLight(0xffd39a, 0, 7, 2);
+luzLampada.position.copy(LAMPADA);
+rele.add(soquete, vidro, filamento, luzLampada);
+
+// ---------- fios ----------
+function fio(pontos, mat, raio = 0.035) {
+  const curva = new THREE.CatmullRomCurve3(pontos.map((p) => new THREE.Vector3(...p)));
+  const m = new THREE.Mesh(new THREE.TubeGeometry(curva, 48, raio, 8, false), mat);
+  m.castShadow = true;
+  return m;
+}
+// comando: pilha da esquerda -> chave -> bobina -> volta pra pilha
+rele.add(
+  fio([[-2.0, 0.64, -1.05], [-1.9, 0.5, -0.3], [-3.0, 0.5, 0.6], [-2.95, 0.5, 1.0]], fioComando),
+  fio([[-2.2, 0.5, 1.2], [-1.6, 0.5, 1.45], [-0.95, 0.5, 1.25]], fioComando),
+  fio([[0.35, 0.5, 1.25], [0.8, 0.5, 0.85], [0.8, 0.5, -0.85], [-0.9, 0.5, -1.45], [-3.2, 0.55, -1.3], [-3.0, 0.64, -1.05]], fioComando),
+  fio([[-0.6, 0.8, 0.7], [-0.95, 0.5, 1.25]], cobre, 0.02),
+  fio([[0.0, 0.8, 0.7], [0.35, 0.5, 1.25]], cobre, 0.02),
+);
+// carga: pilha da direita -> contato fixo ... armadura (pelo suporte) -> lampada -> volta
+rele.add(
+  fio([[1.825, 0.64, -1.05], [1.9, 0.5, -0.5], [1.95, 0.5, 0]], fioCarga),
+  fio([[-1.6, 0.5, 0.75], [-1.3, 0.5, 1.5], [0.6, 0.5, 1.55], [2.0, 0.5, 1.4], [2.4, 0.5, 1.0]], fioCarga),
+  fio([[2.75, 0.5, 1.0], [3.1, 0.5, 0.4], [3.05, 0.55, -0.7], [2.8, 0.64, -1.05]], fioCarga),
+);
+
+// ---------- rotulos ----------
+const rotulos = [
+  ['BOBINA', -1.35, 1.35, 1.15],
+  ['ARMADURA', -0.6, 3.45, 0.3],
+  ['CONTATO', 2.75, 2.55, 0.3],
+  ['MOLA', 0.6, 4.25, -0.8],
+  ['LÂMPADA', 2.55, 1.95, 1.0],
+  ['CHAVE', -2.6, 1.1, 1.15],
+];
+const sprites = [];
+document.fonts.ready.then(() => {
+  rotulos.forEach(([t, x, y, z]) => {
+    const sp = criaRotulo(t, 0.9);
+    sp.position.set(x, y, z);
+    sprites.push(sp);
+    rele.add(sp);
+  });
+  redimensiona();
+});
+
+// ---------- estado e mecanica ----------
+const estado = { bobina: false, angulo: 0, fechado: false, lampada: 0, dentro: false, fechouAlguma: false };
+// os toques na bobina entram numa fila com a hora exata: o quadro integra a
+// armadura pedaco por pedaco, e o resultado nao depende de quantos quadros por
+// segundo a maquina de quem abriu consegue desenhar
+const fila = [];
+let bobinaSim = false;
+let ultimoTick = performance.now();
+let batendo = null;
+
+function pintaHud() {
+  elContato.textContent = estado.fechado ? 'FECHADO' : 'ABERTO';
+  elBobina.textContent = estado.bobina ? 'bobina ligada' : 'bobina desligada';
+  elLampada.innerHTML = '<b>LÂMPADA</b> ' + (estado.fechado ? 'acesa' : 'apagada');
+  elLampada.classList.toggle('acesa', estado.fechado);
+  btnBobina.textContent = estado.bobina ? 'desligar a bobina' : 'ligar a bobina';
+}
+
+function ligaBobina(liga, falar = true) {
+  if (estado.bobina === liga) return;
+  estado.bobina = liga;
+  fila.push({ t: performance.now(), ligada: liga });
+  palco.controls.autoRotate = false;
+  pintaHud();
+  if (!falar) return;
+  legenda.innerHTML = liga
+    ? 'Bobina ligada: o núcleo virou <b>ímã</b>, puxou a armadura e o contato fechou. A lâmpada acende num circuito que a chave <b>nunca tocou</b>.'
+    : 'Bobina desligada: o ímã some, a <b>mola</b> devolve a armadura e o contato abre.';
+}
+
+// bater N vezes por segundo: a peca tem que ir e voltar a tempo, e a partir de um
+// ritmo ela nao chega mais no contato. E o limite mecanico do rele, com o tempo
+// esticado pra dar pra ver (o de verdade e uns milesimos de segundo por batida).
+// Os toques seguem uma linha do tempo calculada, consumida pelo quadro: um timer
+// do navegador atrasaria nos quadros lentos e esticaria o tempo ligado.
+function pulsar(porSegundo, duracaoMs = 3000) {
+  paraDeBater();
+  palco.controls.autoRotate = false;
+  estado.fechouAlguma = false;
+  legenda.innerHTML = 'Batendo <b>' + porSegundo + ' vezes por segundo</b> (tempo esticado pra dar pra ver)…';
+  const agora = performance.now();
+  batendo = { inicio: agora, meioPeriodo: 1000 / (porSegundo * 2), proximo: 1, fim: agora + duracaoMs, porSegundo };
+}
+function paraDeBater() {
+  batendo = null;
+}
+// chamado pelo quadro: dispara os toques vencidos e encerra a batida na hora
+function avancaBatida(agora) {
+  if (!batendo) return;
+  while (batendo && batendo.inicio + batendo.proximo * batendo.meioPeriodo <= Math.min(agora, batendo.fim)) {
+    const hora = batendo.inicio + batendo.proximo * batendo.meioPeriodo;
+    estado.bobina = !estado.bobina;
+    fila.push({ t: hora, ligada: estado.bobina });
+    batendo.proximo++;
+  }
+  if (agora >= batendo.fim) {
+    const { porSegundo } = batendo;
+    paraDeBater();
+    if (estado.bobina) { estado.bobina = false; fila.push({ t: agora, ligada: false }); }
+    pintaHud();
+    legenda.innerHTML = estado.fechouAlguma
+      ? 'A <b>' + porSegundo + ' por segundo</b> a armadura ainda chega no contato: a lâmpada piscou junto.'
+      : 'A <b>' + porSegundo + ' por segundo</b> a armadura <b>não chega</b> no contato antes de ser solta: a lâmpada nem acende. É o teto do relé, e é por isso que a válvula ganhou.';
+  }
+}
+
+function verPorDentro(liga) {
+  estado.dentro = liga;
+  bobinaMat.opacity = liga ? 0.28 : 1;
+  flangeBaixo.visible = flangeCima.visible = !liga;
+  document.getElementById('btnDentro').textContent = liga ? 'fechar a bobina' : 'ver por dentro';
+  legenda.innerHTML = liga
+    ? 'Por dentro da bobina tem só um <b>núcleo de ferro</b>. Com corrente no fio enrolado, ele vira ímã; sem corrente, volta a ser ferro comum.'
+    : 'Bobina fechada de novo.';
+}
+
+// ---------- controles ----------
+btnBobina.addEventListener('click', () => { paraDeBater(); ligaBobina(!estado.bobina); });
+document.getElementById('btnLento').addEventListener('click', () => pulsar(4));
+document.getElementById('btnRapido').addEventListener('click', () => pulsar(8));
+document.getElementById('btnDentro').addEventListener('click', () => verPorDentro(!estado.dentro));
+aoClicar([alvoChave], () => { paraDeBater(); ligaBobina(!estado.bobina); });
+window.addEventListener('keydown', (e) => {
+  if (e.key === ' ') { e.preventDefault(); paraDeBater(); ligaBobina(!estado.bobina); }
+});
+
+// ---------- animacao ----------
+inicia((dt) => {
+  // armadura: curso em tempo fixo, integrado trecho a trecho entre os toques da
+  // bobina; e a lentidao dela que o "bater" expoe
+  let fechouNoQuadro = false;
+  function anda(ms, ligada) {
+    if (ms <= 0) return;
+    const alvo = ligada ? THETA : 0;
+    const passo = (ms / 1000) * (THETA / CURSO_S);
+    estado.angulo += Math.sign(alvo - estado.angulo) * Math.min(Math.abs(alvo - estado.angulo), passo);
+    if (estado.angulo >= THETA * 0.9) { fechouNoQuadro = true; estado.fechouAlguma = true; }
+  }
+  const agora = performance.now();
+  avancaBatida(agora);
+  let t = ultimoTick;
+  for (const toque of fila) { anda(toque.t - t, bobinaSim); bobinaSim = toque.ligada; t = toque.t; }
+  fila.length = 0;
+  anda(agora - t, bobinaSim);
+  ultimoTick = agora;
+  armadura.rotation.z = -estado.angulo;
+
+  const fechadoAgora = estado.angulo >= THETA * 0.9;
+  if (fechadoAgora !== estado.fechado) {
+    estado.fechado = fechadoAgora;
+    pintaHud();
+  }
+  // fechou e ja abriu dentro do mesmo quadro: a lampada ainda da o piscar
+  if (fechouNoQuadro && !estado.fechado) estado.lampada = Math.max(estado.lampada, 0.8);
+
+  // mola: estica quando a aba desce (comprimento = distancia do topo ate a aba)
+  const abaTopo = new THREE.Vector3(2.2, 0.08, -0.5).applyMatrix4(armadura.matrixWorld);
+  mola.scale.y = Math.max(0.3, MOLA_TOPO.y - abaTopo.y);
+
+  // chave acompanha a bobina; lampada e fios acendem com a corrente
+  const alavancaAlvo = estado.bobina ? 0 : 0.55;
+  alavanca.rotation.z += (alavancaAlvo - alavanca.rotation.z) * Math.min(1, dt * 14);
+
+  const luzAlvo = estado.fechado ? 1 : 0;
+  estado.lampada += (luzAlvo - estado.lampada) * Math.min(1, dt * 12);
+  vidroMat.emissiveIntensity = estado.lampada * 2.2;
+  filamentoMat.emissiveIntensity = estado.lampada * 3;
+  luzLampada.intensity = estado.lampada * 5;
+  fioCarga.emissiveIntensity = estado.lampada * 0.55;
+  fioComando.emissiveIntensity += ((estado.bobina ? 0.6 : 0) - fioComando.emissiveIntensity) * Math.min(1, dt * 12);
+});
+
+// ---------- gancho de QA ----------
+function pixelDe(v3) {
+  const p = v3.clone().project(camera);
+  const r = renderer.domElement.getBoundingClientRect();
+  return { x: (p.x + 1) / 2 * r.width + r.left, y: (1 - p.y) / 2 * r.height + r.top };
+}
+window.__rele = {
+  liga: () => ligaBobina(true),
+  desliga: () => ligaBobina(false),
+  alterna: () => ligaBobina(!estado.bobina),
+  pulsar: (hz) => pulsar(hz),
+  dentro: (liga) => verPorDentro(liga),
+  estado: () => ({ ...estado, batendo: !!batendo }),
+  parado: () => !batendo && Math.abs(estado.angulo - (estado.bobina ? THETA : 0)) < 0.002,
+  pixels: () => {
+    const hud = document.querySelector('.hud').getBoundingClientRect();
+    const pecas = {
+      bobina: pixelDe(new THREE.Vector3(-0.3, 1.55, 0)),
+      contato: pixelDe(new THREE.Vector3(1.95, 2.2, 0)),
+      lampada: pixelDe(LAMPADA),
+      chave: pixelDe(alvoChave.position),
+      mola: pixelDe(new THREE.Vector3(0.6, 3.3, -0.8)),
+    };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = pixelDe(s.position); });
+    return { pecas, hud: { left: hud.left, top: hud.top, right: hud.right, bottom: hud.bottom }, tela: { w: innerWidth, h: innerHeight } };
+  },
+};
+
+pintaHud();
+</script>
+</body>
+</html>

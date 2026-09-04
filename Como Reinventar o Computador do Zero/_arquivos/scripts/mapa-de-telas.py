@@ -40,9 +40,15 @@ def mmss(s):
 
 
 def acha_mp3(pasta):
-    mp3s = [f for f in glob.glob(os.path.join(pasta, "*.mp3")) if not os.path.basename(f).startswith("_")]
+    # O NotebookLM entregava .mp3 e desde 03/09 entrega .m4a; os dois valem.
+    mp3s = [
+        f
+        for padrao in ("*.mp3", "*.m4a")
+        for f in glob.glob(os.path.join(pasta, padrao))
+        if not os.path.basename(f).startswith("_")
+    ]
     if not mp3s:
-        sys.exit(f"nenhum .mp3 em {pasta}")
+        sys.exit(f"nenhum audio (.mp3/.m4a) em {pasta}")
     if len(mp3s) > 1:
         print("mais de um mp3; usando o primeiro:")
         for m in mp3s:

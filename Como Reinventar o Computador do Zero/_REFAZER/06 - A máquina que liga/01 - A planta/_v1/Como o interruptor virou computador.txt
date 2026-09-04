@@ -1,0 +1,7 @@
+Titulo: Como o interruptor virou computador
+Notebook: 06-01-A planta
+
+Descricao:
+Os textos apresentam o roteiro e o contexto de um episódio da série Como Reinventar o Computador do Zero, focado no período entre 1936 e 1948. O conteúdo detalha a planta teórica que transforma interruptores elétricos em uma máquina funcional através de cinco etapas fundamentais. Entre os conceitos abordados estão as portas lógicas, o funcionamento da memória e a distinção crucial entre hardware e software. O material enfatiza que essas definições matemáticas e lógicas ocorreram simultaneamente à construção física dos primeiros computadores. O objetivo central é explicar como a álgebra de Boole e as ideias de Alan Turing permitiram a criação de máquinas universais capazes de executar instruções programáveis.
+
+Link: https://notebooklm.google.com/notebook/bf900460-0f9b-463c-8304-3319d9492748

@@ -1,0 +1,276 @@
+# Transcricao automatica (faster-whisper small) - 13.6 min
+# Fonte: Como o transistor encolheu o computador.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O transistor.
+[00:01] Ah, o ponto de virada.
+[00:03] Exatamente.
+[00:04] Imagina só, tentar construir um cérebro eletrônico gigante, mas aí, pra cada peça
+[00:11] nova de raciocínio que entra na conta, a temperatura da sala sobe um grau inteiro.
+[00:17] É um beco sem saída térmico, né?
+[00:19] A engenharia tinha chegado num limite puramente físico mesmo.
+[00:23] Pois é.
+[00:24] Nas nossas análises anteriores, a gente viu a máquina evoluir tipo de um jeito
+[00:27] absurdo.
+[00:29] A etapa anterior terminou ali por volta de 1959, sabe?
+[00:33] E naquele momento, o computador já guardava a própria ordem na memória.
+[00:37] Uhum.
+[00:38] E já recebia comandos na nossa língua.
+[00:40] Exato.
+[00:41] Ele ficou muito esperto, mas aí entra o problema.
+[00:43] Ele continua sendo uma sala inteira lotada de válvulas quentes.
+[00:48] E por isso, a gente precisa dar um passo atrás na cronologia.
+[00:52] Verdade.
+[00:53] Claro, a nossa análise de hoje cobre especificamente o período de 1947 a 1955.
+[00:59] A gente volta um pouco no tempo de propósito, né?
+[01:03] Fazemos isso porque a peça que vai finalmente encolher o computador nasceu e já estava sendo
+[01:08] testada enquanto aquela etapa anterior do software ainda estava acontecendo.
+[01:12] As duas histórias estavam correndo juntas ali.
+[01:15] Correndo em paralelo, exato.
+[01:16] E, um... antes da gente mergulhar de vez, um aviso sobre as regras da animação
+[01:21] de hoje.
+[01:22] A explicação desta etapa acompanha uma página dividida em 11 telas.
+[01:26] Isso.
+[01:27] Quem está só ouvindo pelo áudio, não se preocupa.
+[01:29] Dá pra acompanhar normalmente sem perder nada.
+[01:32] Agora, quem está com a página aberta, a regra é dura, só vira a tela quando ouvir o
+[01:36] pedido exato aqui no áudio.
+[01:39] Nada de pula pra frente.
+[01:40] De jeito nenhum.
+[01:42] Ah, e a capa dessa página tem um modelo tridimensional da nova peça que dá pra girar e abrir.
+[01:47] A gente avisa o momento de usar ele daqui a pouco.
+[01:50] Então, pra começar de verdade e entender qual é o custo real da válvula, aperte o próximo.
+[01:55] Então, pra entender porque o computador ensinava tanto de uma peça nova, a gente tem que olhar
+[02:00] pra válvula de vidro.
+[02:02] Ela opera, hum, com calor extremo.
+[02:04] Calor como o princípio ativo, né?
+[02:07] Exato.
+[02:08] Ela tem um filamento incandescente no vácuo.
+[02:10] Quando ele esquenta, até fica brilhante, ele solta elétrons.
+[02:14] Esquentar não é um defeito de fabricação.
+[02:16] É tipo o princípio básico de funcionamento dela.
+[02:20] Sem o calor, ela não funciona.
+[02:21] De jeito em um.
+[02:23] Sem gerar esse calor extremo, não tem elétron viajando pelo vácuo, logo não tem corrente
+[02:27] controlada.
+[02:28] O que nos leva pra aquela analogia clássica, né?
+[02:31] Cada válvula é mais ou menos o tamanho de um dedo humano e ela gasta energia do
+[02:35] jeito muito parecido com uma lâmpada comum.
+[02:38] E assim como o filamento da lâmpada de casa, uma hora essa válvula simplesmente
+[02:44] queima.
+[02:45] É inevitável.
+[02:46] Por causa disso, a máquina vive em manutenção, parada o tempo todo.
+[02:50] Imagina uma máquina daquela época com 18 mil válvulas ligadas.
+[02:54] Nossa, 18 mil filamentos fervendo.
+[02:57] Pois é, com 18 mil peças operando, a matemática é muito cruel.
+[03:01] Sempre tem alguma válvula queimando em algum lugar.
+[03:04] E achar qual delas queimou dá um trabalho enorme.
+[03:06] O tamanho gigante vem junto com esse calor e consumo, é um limite físico.
+[03:10] É o limite físico barrando o avanço.
+[03:13] Não adianta querer uma máquina com 1 milhão de válvulas porque o limite ali, um, não é
+[03:18] o dinheiro.
+[03:19] É energia e manutenção.
+[03:20] A máquina ia derreter de tão quente.
+[03:22] Ia virar um forno.
+[03:24] Então, pra conhecer o material exata que resolve isso, aperte o próximo.
+[03:28] A resposta estava num lugar que a engenharia elétrica nem olhava muito na época.
+[03:33] A gente tem materiais que conduzam eletricidade bem, tipo metal, o cobre.
+[03:37] Uhum, os condutores.
+[03:38] Isso e tens que não conduzem nada, tipo vidro ou a borracha.
+[03:43] Mas existe um grupo bem no meio do caminho.
+[03:47] Eles conduzem ou não conduzem dependendo estritamente do que a gente faz com eles.
+[03:53] São os semicondutores.
+[03:55] Exato.
+[03:55] O primeiro que usaram com sucesso foi o germânio.
+[03:59] E depois passaram pro silício, que falando de um jeito direto, é basicamente areia
+[04:04] purificada.
+[04:05] É louco pensar nisso.
+[04:07] Trocaram tubos de vidro complexos por areia.
+[04:10] Mas a lógica faz sentido.
+[04:12] Se um material decide se conduz ou não, ele é um interruptor impotencial.
+[04:18] Com certeza.
+[04:19] E a nossa jornada inteira na série está atrás de um interruptor cada vez melhor.
+[04:25] E olha, existe um material extra inteirinho apenas sobre esse material e como a areia
+[04:30] vira peça pronta.
+[04:32] Para quem quiserem mais fundo, tá?
+[04:34] Mas seguindo a nossa lógica física agora, para ver o truque que faz o material obedecer,
+[04:39] aperte o próximo.
+[04:40] O desafio é que o silício puro não faz muita coisa sozinho.
+[04:45] Ele é só um cristal.
+[04:47] Para ele virar uma peça útil, eles usaram um truque químico chamado dopagem.
+[04:52] Dopagem de colocar uma impureza ali.
+[04:54] Isso mesmo.
+[04:56] A gente mistura uma quantidade minúscula de outro elemento no cristal.
+[05:00] E dependendo do que você mistura, o cristal fica com elétrons sobrando.
+[05:05] Isso cria o silício tipo N de negativo.
+[05:08] Ah, entendi.
+[05:10] E se usar outro elemento?
+[05:11] Aí o efeito é o oposto.
+[05:13] Ele fica com falta de elétrons, tipo os buracos vazios.
+[05:17] Esse é o tipo P de positivo.
+[05:19] E é bom lembrar que é uma impureza muito, muito controlada.
+[05:22] São pouquíssimos átomos de diferença em milhões de átomos de silício, né?
+[05:27] Exato.
+[05:28] O controle ali é altíssimo.
+[05:30] E o detalhe importante de frisar de um jeito simples é que nos dois casos,
+[05:34] seja o tipo N ou o tipo P, a gente está lidando com exatamente a mesma pedra de silício.
+[05:41] A base é idêntica.
+[05:42] O que muda é só o comportamento elétrico.
+[05:44] Isso.
+[05:46] E isso é escolhido na hora da fabricação.
+[05:48] Então, para ver o que acontece quando a gente encosta um tipo no outro, aperte o próximo.
+[05:54] É aí que a coisa fica boa para a máquina.
+[05:56] Se você encosta um pedaço, tipo N, que tem elétrons sobrando,
+[06:00] num tipo P, que tem os buracos, a fronteira entre eles vira uma barreira elétrica especial.
+[06:06] A corrente passa livremente em um sentido, mas não passa no outro.
+[06:11] Os elétrons sobram de um lado e caem no outro.
+[06:13] Vira literalmente um caminho de mão única para a eletricidade.
+[06:17] Perfeito.
+[06:18] Ele deixa fluir para frente e bloqueia a volta.
+[06:21] E o mais importante de tudo faz isso sem nenhuma peça se mexendo
+[06:25] e sem esquentar filamento nenhum, tudo na estrutura da própria pedra.
+[06:30] O que resolve o problema gigante do calor da válvula.
+[06:34] Mas tem uma questão essencial de lógica aqui.
+[06:38] Isso ainda não é exatamente o que a gente procura, né?
+[06:40] Não mesmo.
+[06:41] Porque um caminho de mão única, por si só, não obedece a ninguém.
+[06:46] Ele é fixo.
+[06:47] A eletricidade sempre vai para lá e nunca volta.
+[06:51] A gente precisa de controle ativamente comandado.
+[06:54] Para conseguir isso, empilhando mais uma camada, aperte o próximo.
+[06:58] Para ganhar esse controle, eles montaram um sanduíço de três camadas coladas.
+[07:03] Uma camada N, uma P bem no meio e outra N do outro lado.
+[07:08] A montagem NPN.
+[07:10] Isso.
+[07:11] E o segredo desse componente novo, que a gente chama de transistor,
+[07:15] está nessa camada do meio.
+[07:17] Ela é fabricada para ser bem fina e vira o comando de todo o sistema.
+[07:21] Funciona assim, uma corrente muito pequena nessa camada do meio
+[07:25] decide se a corrente grande consegue atravessar a peça inteira.
+[07:29] É a velha analogia da torneira, certo?
+[07:32] A corrente grande é com uma água forte dentro do cano.
+[07:35] E a camada do meio é a nossa torneira.
+[07:37] Perfeito, uma força bem pequena girando o registro.
+[07:40] Isso.
+[07:41] Um esforço pequeno decide se vai passar um rio de água
+[07:44] ou se não vai passar nada.
+[07:46] E, conectando com as nossas análises lá de trás,
+[07:49] é a mesmíssima função daquela porta que abre sozinha.
+[07:52] A mesmíssima função do relé mecânico e da válvula.
+[07:56] É um interruptor comandado por eletricidade.
+[07:58] O que mudou de verdade foi só o material.
+[08:01] Saiu o vitro que ferve, entra a pedra sólida.
+[08:03] Exatamente.
+[08:05] E para quem está na página, chegou a hora.
+[08:07] Dá para girar e abrir o modelo tridimensional do transistor
+[08:10] que está lá na capa agora mesmo.
+[08:12] Dá para ver essas camadas.
+[08:14] E para dizer quando isso aconteceu no mundo real, aperte o próximo.
+[08:18] O mais curioso é que o primeiro transistor que funcionou de verdade,
+[08:21] ali em dezembro de 1947,
+[08:24] não foi feito pensando em computador.
+[08:26] Não.
+[08:27] Não, foi num laboratório nos Estados Unidos no Bell Labs.
+[08:31] Um grupo pequeno fez a peça funcionar usando o germânio,
+[08:34] mas eles queriam melhorar os amplificadores da linha telefônica.
+[08:38] As centrais usavam válvulas que davam muita manutenção, sabe?
+[08:42] Elas viviam queimando.
+[08:43] Olha como a história dá voltas.
+[08:45] A peça que muda o futuro do computador,
+[08:48] que reduz o tamanho de tudo,
+[08:50] nasceu para resolver um problema superprático de telefone.
+[08:53] E, ah, só mencionando,
+[08:55] tem um episódio extra inteirinho sobre as pessoas
+[08:57] que estavam nesse laboratório e as funções de cada um lá.
+[09:00] Para quem quiser e fundo nisso.
+[09:02] Sim, é uma história bem humana, né?
+[09:03] Totalmente.
+[09:04] Então, para comparar o peso dessa inovação,
+[09:07] colocando as duas peças de frente, aperte o próximo.
+[09:09] Quando a gente compara direto, o salto é gigante.
+[09:13] A válvula precisa do filamento aceso o tempo todo.
+[09:15] O transistor, não.
+[09:17] A válvula esquenta muito, transforma a máquina em um forno.
+[09:20] O transistor quase não esquenta.
+[09:22] E consome muito menos.
+[09:24] Exato.
+[09:25] A válvula gasta muita energia.
+[09:27] E, por causa do calor extremo, queima com o tempo de uso diário.
+[09:31] É como uma lâmpada velha.
+[09:33] Já o transistor gasta muito pouco e dura por muitos anos.
+[09:38] E o tamanho também.
+[09:39] A válvula é do tamanho de um dedo.
+[09:41] E o transistor inicial já cabia numa unha.
+[09:44] E tinha o potencial para ficar ainda menor, o que é o mais louco.
+[09:47] É por isso que tem uma frase que define aceitar a penteira.
+[09:51] Pela primeira vez na história, a peça principal do computador
+[09:55] pode ficar cada vez menor sem parar de funcionar.
+[09:59] É o fino do limite térmico que a gente falou no início.
+[10:02] Exato.
+[10:02] É redução drástica de tamanho que muda o resto da história agora.
+[10:06] Não a velocidade de cálculo em si.
+[10:08] Para entender por que essa peça demorou a chegar nas lojas, aperte o próximo.
+[10:12] Como acontece quase sempre, tem um abismo entre uma peça funcionar no laboratório
+[10:17] e ela aparecer barata na prateleira.
+[10:20] O transistor funcionou na teoria em 1947.
+[10:24] Mas o cristal precisava ser puríssimo para ir para a fábrica.
+[10:27] Qualquer sujeira estragava tudo.
+[10:29] Qualquer átomo fora do lugar.
+[10:31] E a dopagem química tinha que ser perfeitamente exata.
+[10:35] Então no começo era muito difícil controlar isso na fábrica.
+[10:39] Muitas peças saíam erradas e iam direto para o lixo.
+[10:42] O custo era muito alto.
+[10:44] E a gente vê que isso é um padrão enorme na série.
+[10:46] A ideia genial sempre aparece anos antes.
+[10:49] Da peça ficar barata para todo mundo.
+[10:51] Quem resolve mesmo o problema da fabricação em massa
+[10:54] é quem realmente muda o mundo, não apenas quem teve a ideia primeira no laboratório.
+[10:58] Com certeza, a produção em massa é a chava de tudo.
+[11:01] É ela que faz chegar no público para ver onde o transistor apareceu primeiro.
+[11:05] Aperte o próximo.
+[11:06] Chegando no meio dos anos 1950, a barreira do preço finalmente cai.
+[11:11] É aí que surgem os primeiros computadores feitos totalmente com transistores,
+[11:15] sem nenhuma válvula.
+[11:17] E na indústria comum surge o rádio de bolso.
+[11:20] O rádio de bolso, claro.
+[11:21] Foi esse produto que fez o público de casa, as pessoas comuns,
+[11:25] descobrirem a nova peça.
+[11:27] Era pequeno, rodava com pilha, não esquentava.
+[11:30] E voltando para os computadores, o efeito prático é um alívio gigante.
+[11:34] O computador que ocupava um salão inteiro, de repente passa a caber num armário normal.
+[11:38] E o principal, né, roda sem precisar daquela manutenção diária infernal
+[11:42] de ficar trocando válvula queimada no meio de expediente.
+[11:45] Sim, o sistema parava de dar tanta dor de cabeça.
+[11:48] Máquina menor e muito mais confiável começa a caber em lugares que antes não dava.
+[11:53] Hospitais, empresas menores...
+[11:55] E para dizer exatamente onde a história de hoje para, aperte o próximo.
+[11:59] Bom, a nossa jornada temporal de hoje para por aqui.
+[12:03] Em meados dos anos 1950.
+[12:06] É quando o transistor finalmente ganha escala de fábrica
+[12:10] e começa a substituir a velha válvula.
+[12:13] O limite do calor foi rompido de vez.
+[12:16] Ele melhorou tudo, o tamanho, o calor, a manutenção.
+[12:19] Mas na engenharia, um problema resolvido sempre abre a porta para um problema novo.
+[12:25] O transistor é maravilhoso, mas cada um deles ainda é uma peça totalmente solta.
+[12:30] Uma unidade separada.
+[12:31] Exatamente, cada um tem que ser comprado separadamente.
+[12:34] Cada um precisa ser segurado e soldado à mão humana numa placa, um por um.
+[12:38] E cada perna de metal dele exige um fio físico ligando ele ao outro.
+[12:42] Imagina uma máquina de cálculo lógico avançada
+[12:45] que precisa de dezenas de milhares de transistores juntos.
+[12:48] Ela vira um emaranhado impossível de fio e solda.
+[12:51] E cada pequeno pingo de solda feito à mão
+[12:55] é um lugar onde a placa inteira pode falhar.
+[12:58] Um fio quebra e a máquina toda trava.
+[13:01] A gente trocou o filamento que queimava pelas soldas infinitas que quebram.
+[13:06] Pois é.
+[13:07] E isso levanta a grande pergunta.
+[13:09] Se a gente faz centenas de milhares de pecinhas de silício
+[13:14] e tem que ligar todas elas com fios à mão depois,
+[13:17] a gente não poderia tentar fazer algo melhor?
+[13:19] E se, em vez de fazer essas peças totalmente separadas,
+[13:23] a gente fizesse todas elas juntas, já ligadas de fábrica,
+[13:27] escavadas no mesmo pedaço de cristal?
+[13:29] Essa pergunta muda tudo.
+[13:31] Mas a resposta fica para a próxima.
+[13:34] Até mais.

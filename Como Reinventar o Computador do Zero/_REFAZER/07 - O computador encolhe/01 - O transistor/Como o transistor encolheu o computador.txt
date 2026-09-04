@@ -1,0 +1,7 @@
+Titulo: Como o transistor encolheu o computador
+Notebook: 07-01-O transistor
+
+Descricao:
+Os documentos detalham o roteiro e o contexto de um episódio da série Como Reinventar o Computador do Zero, focado na transição tecnológica das válvulas para o transistor entre 1947 e 1955. O conteúdo explana como a substituição de componentes grandes, quentes e frágeis por dispositivos de semicondutores permitiu que o computador começasse a encolher sem perder funcionalidade. Através de etapas como a dopagem de materiais e a criação de junções elétricas, explica-se o surgimento de um interruptor mais eficiente e durável que o seu antecessor. O texto orienta uma narrativa didática e casual, utilizando analogias como a de uma torneira para descrever o controle da corrente elétrica. Por fim, as fontes destacam que essa inovação não apenas resolveu problemas de manutenção e energia, mas estabeleceu a base para a confiabilidade e a miniaturização das máquinas modernas.
+
+Link: https://notebook.google.com/notebook/125f5505-0e30-436f-aa7d-a4e27345e3c0

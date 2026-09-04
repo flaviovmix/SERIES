@@ -1,0 +1,7 @@
+Titulo: Quando o programa entrou na memória
+Notebook: 06-03-O programa que mora na memoria
+
+Descricao:
+Os textos fornecem um roteiro e o contexto histórico para o episódio O Programa Que Mora Na Memoria, integrante de uma série que reconstrói a trajetória da computação. O conteúdo foca na transição tecnológica ocorrida entre 1945 e 1949, quando as instruções das máquinas passaram a ser armazenadas na memória interna junto aos dados. Essa inovação, descrita inicialmente por John von Neumann, permitiu que os computadores alterassem tarefas em segundos e utilizassem recursos como laços e sub-rotinas. As fontes detalham o funcionamento de marcos pioneiros como o Manchester Baby e o EDSAC, destacando como essa mudança de arquitetura definiu o computador moderno. O material também serve como guia técnico para uma apresentação multimídia, estabelecendo regras de narração e ganchos para conteúdos extras sobre os inventores.
+
+Link: https://notebook.google.com/notebook/289a6620-5a71-4e3f-8592-3490b41518df

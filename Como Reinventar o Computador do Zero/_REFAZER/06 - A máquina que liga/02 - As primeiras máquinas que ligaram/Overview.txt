@@ -1,0 +1,47 @@
+AS PRIMEIRAS MAQUINAS QUE LIGARAM - CONTEXTO
+============================================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do
+abaco ate a inteligencia artificial, uma peca por episodio. Este episodio cobre
+de 1936 a 1946.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega
+o que a proxima peca precisa. Tudo que e aprofundamento (a vida de um inventor,
+um sistema de numeracao, uma ferramenta por dentro) mora numa trilha separada de
+episodios extras, avulsos, que a pessoa ouve se quiser. Este episodio e da trilha
+principal: ele nao para pra contar a biografia de ninguem.
+
+Onde a serie estava: o episodio anterior desta mesma etapa, A PLANTA, montou um
+computador inteiro no papel. Porta logica, somador, memoria com endereco, a
+maquina universal de Turing, o conjunto de instrucoes. Estava tudo projetado e
+nada estava ligado na tomada. Este episodio e o canteiro, e ele acontece no MESMO
+periodo da planta: as duas coisas correm em paralelo, e vários dos construtores
+nunca leram o que os teoricos escreviam.
+
+Este episodio liga. Ele cobre a peca que faltava (um interruptor que abre e fecha
+sozinho, aos milhares) e as tres primeiras maquinas programaveis que existiram de
+verdade e funcionaram:
+
+- O Z3, terminado por Konrad Zuse em Berlim em 1941, com 2600 reles, binario,
+  destruido num bombardeio em 1943 sem que quase ninguem tivesse ouvido falar
+  dele.
+- O Harvard Mark I, instalado em fevereiro de 1944, projetado por Howard Aiken,
+  construido e pago pela IBM, decimal, quinze metros de comprimento.
+- O ENIAC, pronto em 1945 e apresentado em fevereiro de 1946, feito por Presper
+  Eckert e John Mauchly na Universidade da Pensilvania, com 18 mil valvulas no
+  lugar dos reles, trinta toneladas, encomendado pelo Exercito americano pra
+  calcular tabela de tiro de artilharia.
+
+Cobre tambem a troca de tecnologia que separa as duas primeiras da terceira. O
+rele e uma peca que se mexe e leva alguns milesimos de segundo pra fechar. A
+valvula faz a mesma coisa sem peca movel e milhares de vezes mais rapido. E
+cobre como se programava o ENIAC: mudando fio de lugar em painel de tomada,
+trabalho de dias.
+
+Ao final o ouvinte entende que essa geracao de maquinas ja calculava sozinha, mas
+ainda guardava o programa FORA da memoria, em cabo, chave ou fita. E isso que
+abre o proximo episodio.
+
+Use este contexto apenas como apoio.

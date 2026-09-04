@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O transistor — Etapa 07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 07-01. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. A capa carrega o modelo
+     3D do transistor, que mora em _arquivos/modelos-3d/. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/modelo-3d.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-07.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20o%20transistor%20encolheu%20o%20computador.m4a" data-duracao="815"></audio>
+    <img class="tocador__capa" src="img/transistor-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como o transistor encolheu o computador</div>
+      <div class="tocador__fonte">O computador encolhe · 01 · O transistor</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="815" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">13:35</span></div>
+  </div>
+  <div class="acoes">
+    <button class="btn-cabecalho" data-abre="modelo3d">🧊 abrir modelo 3D</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">o computador encolhe · episódio 01</div>
+      <h1 class="reveal">O transistor</h1>
+      <p class="lede reveal">De <b>1947 a 1955</b>. A máquina já é esperta: guarda a própria ordem e entende a nossa língua. Só que ainda é uma sala inteira de válvulas quentes. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>Por que voltamos no tempo.</b> A peça que resolve isso nasceu em 1947, enquanto a etapa anterior ainda acontecia. Ela faz a mesma função de sempre, um interruptor comandado por eletricidade: o que muda é do que ela é feita.</p>
+      </div>
+      <button class="btn-mini cheio clicavel capa-botao reveal" data-abre="modelo3d">abrir modelo 3D</button>
+    </div>
+    <figure class="capa-modelo reveal">
+      <!-- data-src, nao src: o modelo so liga enquanto a capa esta em cena -->
+      <iframe data-src="../../../_arquivos/modelos-3d/transistor.html" title="Modelo tridimensional de um transistor"></iframe>
+      <figcaption>Arraste pra girar · role pra aproximar</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o problema</div>
+    <h2 class="reveal">O que a válvula cobra</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma válvula triodo · foto: Mister rf, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/valvula-real.jpg" alt="Uma válvula eletrônica triodo, o bulbo de vidro com os eletrodos dentro">
+        <figcaption>Uma válvula triodo · foto: Mister rf, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Ela funciona porque um filamento <b>incandescente</b> solta elétrons no vácuo. Esquentar não é defeito: é o princípio. Daí vem o calor, o consumo, e o filamento que um dia queima igual ao de uma lâmpada.</p>
+    <div class="nota-cena reveal">não adianta querer uma máquina com um milhão de válvulas: não é dinheiro, é calor, energia e manutenção</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 1</div>
+    <h2 class="reveal">O material do meio</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Silício purificado · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/semicondutor-ilustra.jpg" alt="Close de um cristal de silício purificado, cinza metálico e brilhante">
+        <figcaption>Nem condutor nem isolante: conduz ou não, dependendo do que a gente fizer com ele</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Metal conduz, vidro não conduz. E existe um grupo no meio do caminho. Um material que <b>decide</b> se conduz é, por definição, um interruptor em potencial. E a série inteira está atrás de um interruptor melhor.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 2</div>
+    <h2 class="reveal">A dopagem</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Poucos átomos diferentes no meio da rede mudam tudo · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/dopagem-ilustra.jpg" alt="Rede cristalina de esferas cinzas com duas esferas de cor diferente ocupando lugares na grade">
+        <figcaption>Uns poucos átomos em milhões: sobra elétron (tipo N) ou falta elétron (tipo P)</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">É a <b>mesma pedra</b> nos dois casos. O que muda é o comportamento elétrico, e isso se escolhe na fabricação.</p>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 3</div>
+    <h2 class="reveal">A junção</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Encostando N em P, a corrente passa num sentido só · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/juncao-ilustra.jpg" alt="Dois blocos de cristal encostados, com setas de luz atravessando só num sentido">
+        <figcaption>Caminho de mão única para a eletricidade, sem nada se mexendo</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Já é um componente útil, mas ainda não é o que a série procura: um caminho de mão única <b>não obedece a ninguém</b>. Ele só tem um lado.</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step">
+    <div class="kicker reveal">passo 4 · a peça</div>
+    <h2 class="reveal">Três camadas, e a do meio manda</h2>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">as camadas</div><div class="texto">N, P e N. A do meio é fina e vira o comando</div></div>
+      <div class="item"><div class="rotulo">o que ela faz</div><div class="texto">uma corrente pequena nela decide se a corrente grande atravessa</div></div>
+      <div class="item"><div class="rotulo">a torneira</div><div class="texto">a corrente grande é a água no cano; a camada do meio é a torneira</div></div>
+      <div class="item"><div class="rotulo">o ponto</div><div class="texto">é a <b>mesma função</b> do relé e da válvula. Mudou do que é feito</div></div>
+    </div>
+    <p class="episodio__acao reveal" style="text-align:center;margin-top:22px">
+      <button class="btn-mini cheio clicavel" data-abre="modelo3d">abrir o modelo 3D e ver por dentro</button>
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">dezembro de 1947</div>
+    <h2 class="reveal">Num laboratório de telefonia</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Réplica do primeiro transistor · foto: Mister rf, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/transistor-real.jpg" alt="Réplica do primeiro transistor de contato de ponta, com um triângulo de material sobre o cristal">
+        <figcaption>Réplica do primeiro transistor que funcionou · foto: Mister rf, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">O objetivo declarado nem era computador: era melhorar amplificador de <b>linha telefônica</b>, porque válvula em central telefônica dava manutenção demais. A peça que muda o computador nasceu resolvendo um problema de telefone.</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">de frente</div>
+    <h2 class="reveal">Lado a lado</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A válvula e o transistor na mesma escala · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/ladoalado-ilustra.jpg" alt="Uma válvula de vidro e um transistor de metal com três pernas, lado a lado numa bancada">
+        <figcaption>Sem filamento, esquenta pouco, gasta uma fração da energia, dura, e cabe numa unha</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Pela primeira vez a peça pode <b>ficar menor sem parar de funcionar</b>. É isso, e não a velocidade, o que muda o resto da história.</p>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">por que demorou</div>
+    <h2 class="reveal">Do laboratório à loja</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O cristal precisa ser puríssimo e a dopagem controlada · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/fabricacao-ilustra.jpg" alt="Interior de uma fábrica de componentes dos anos 1950, com bancadas, lupas e bandejas de cristais">
+        <figcaption>No começo, muita peça saía fora do ponto e ia pro lixo</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">É um padrão que a série já viu e vai ver de novo: a ideia aparece anos antes da peça barata, e <b>quem resolve a fabricação</b> é quem muda o mundo, não quem teve a ideia primeiro.</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">meados dos anos 1950</div>
+    <h2 class="reveal">As primeiras máquinas sem válvula</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O primeiro rádio de bolso a transistor · foto: Cmglee, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/radio-real.jpg" alt="Um rádio portátil pequeno dos anos 1950, com dial circular">
+        <figcaption>O rádio de bolso: foi ele que apresentou a peça ao público · foto: Cmglee, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Um computador que ocupava um salão passa a caber num armário e a rodar <b>sem a manutenção diária</b> de trocar válvula queimada. Não é que ficou mais rápido de cara: ficou confiável e menor. E máquina confiável e menor cabe em mais lugar.</p>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">Meados dos anos 1950</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o que mudou</div>
+        <div class="desc">a peça que decide o tamanho de tudo trocou de material, e agora pode encolher</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que ainda incomoda</div>
+        <div class="desc">cada transistor é uma peça solta, soldada à mão, com fio ligando cada perna. Milhares deles viram um emaranhado de solda, e cada solda é um lugar onde pode falhar</div>
+      </div>
+    </div>
+    <p class="lede reveal">E se, em vez de fazer as peças separadas e ligar depois, a gente fizesse <b>todas juntas, já ligadas</b>, no mesmo pedaço de cristal?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/modelo-3d.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

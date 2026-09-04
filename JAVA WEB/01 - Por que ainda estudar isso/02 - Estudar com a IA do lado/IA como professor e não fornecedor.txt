@@ -1,0 +1,7 @@
+Titulo: IA como professor e não fornecedor
+Notebook: 01-02-Estudar com a IA do lado
+
+Descricao:
+Os textos descrevem as diretrizes de um método de estudo voltado para o aprendizado de tecnologia, especificamente dentro de uma série sobre Java Web. O conteúdo diferencia o uso da inteligência artificial como fornecedora, que apenas entrega o código pronto, da função de professora, que prioriza o entendimento dos processos. Para garantir o aprendizado real, o material estabelece regras como buscar a explicação antes do código, digitar manualmente em vez de copiar e prever o resultado antes de executar o programa. As fontes detalham que a ferramenta é valiosa para traduzir erros ou lidar com tarefas repetitivas, mas pode prejudicar o estudante se substituir o esforço mental necessário para a formação de conceitos. O objetivo central é ensinar o aluno a formular perguntas abertas que gerem conhecimento duradouro em vez de apenas soluções imediatas. Esse modelo de ensino busca evitar a dependência excessiva e a falta de vocabulário técnico que surgem quando a máquina trabalha sozinha.
+
+Link: https://notebook.google.com/notebook/5460e7f0-3346-4c48-90fa-3bd7b43e555c

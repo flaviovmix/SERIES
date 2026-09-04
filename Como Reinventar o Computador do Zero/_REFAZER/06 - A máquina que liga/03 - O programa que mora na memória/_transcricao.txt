@@ -1,0 +1,327 @@
+# Transcricao automatica (faster-whisper small) - 14.6 min
+# Fonte: Quando o programa entrou na memória.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O programa que mora na memória.
+[00:02] Quando a gente pensa em computação nos dias de hoje, tipo,
+[00:05] a imagem que vem na cabeça é sempre uma tela limpa, né?
+[00:08] Um teclado ou aquele vidro liso do celular?
+[00:11] Sim, é tudo muito leve, quase invisível.
+[00:14] Exato.
+[00:15] Mas para entender o salto tecnológico que a gente vai dar agora,
+[00:18] a gente precisa voltar para uma realidade física bem brutal,
+[00:22] lá em 1946.
+[00:24] Concertar ou reprogramar uma máquina de calcular naquela época
+[00:27] envolvia suor, sabe?
+[00:29] Muito suor.
+[00:30] Era ferramenta pesada, esforço braçal mesmo.
+[00:33] A troca de função da máquina era um trabalho totalmente tátil
+[00:36] e bem cansativo, né?
+[00:37] Nossa, com certeza.
+[00:39] E, bom, para contextualizar, este é o terceiro episódio da etapa
+[00:42] A máquina que liga, que faz parte da sexta etapa da nossa série
+[00:46] como reinventar o computador do zero.
+[00:49] Vamos recapitular de forma direta
+[00:51] onde a gente parou no nosso último encontro?
+[00:54] É bom lembrar porque a gente falou de máquinas enormes.
+[00:56] Verdade.
+[00:57] O nosso cenário anterior cobriu o período de 1936 a 1946
+[01:03] e terminou com a apresentação do ENIAC.
+[01:05] Máquinas como o Z3, o Mark I e o próprio ENIAC
+[01:09] já faziam algo bem notável.
+[01:11] Elas já calculavam sozinhas, né?
+[01:13] De forma automática.
+[01:14] Isso.
+[01:15] Mas tipo, elas deixaram o limite prático gigantesco de herança.
+[01:20] Os números que iam ser calculados moravam dentro da máquina.
+[01:23] Porém, as ordens de como calcular esses números,
+[01:26] ou seja, os programas moravam do lado de fora.
+[01:30] É, as ordens ficavam em fita de papel perfurado
+[01:33] ou naqueles painéis cheios de cabos, sabe?
+[01:35] Até em chaves metálicas.
+[01:37] O peso físico disso no dia a dia da equipe era gigante.
+[01:40] Caramba, e no caso do ENIAC, isso era pior, né?
+[01:43] Nossa, muito pior.
+[01:45] Trocar de tarefa no ENIAC significava literalmente
+[01:48] mudar um monte de cabos grossos de lugar
+[01:51] num painel que tipo, cobria paredes inteiras.
+[01:55] Eram dias inteiros de trabalho braçal puro,
+[01:57] só pulgar e desplugar a conector.
+[01:59] Tudo isso só para a máquina fazer uma conta diferente.
+[02:02] Exato.
+[02:04] Toda aquela velocidade que os circuitos ganhavam no cálculo
+[02:08] sumia completamente nesse tempo absurdo de preparação física.
+[02:12] Pois é.
+[02:13] E é justamente para resolver essa barreira
+[02:15] que este nosso mergulho cobre o período exato de 1945 a 1949.
+[02:21] O foco da nossa conversa de hoje está numa única peça.
+[02:24] Apenas uma.
+[02:25] Mas é a peça que muda tudo.
+[02:26] É a virada de chave do computador moderno.
+[02:29] Com certeza.
+[02:30] E antes da gente avançar para ela,
+[02:32] eu tenho que dar um aviso rápido sobre as telas.
+[02:34] A explicação de hoje acompanha uma página de animação
+[02:37] e ela tem 11 telas no total.
+[02:38] Mas quem está só no áudio não precisa se preocupar, né?
+[02:41] Isso, perfeito.
+[02:42] É crucial deixar claro que quem está só escutando no trânsito
+[02:46] ou na academia vai acompanhar o conteúdo normalmente, sabe?
+[02:49] Não perde nada.
+[02:50] Já quem está com a página aberta só deve virar a tela
+[02:53] quando ouvir o meu pedido específico aqui no áudio.
+[02:55] Tá, recado dado.
+[02:56] Bom, feito o aviso, a gente pode encarar o problema dos cabos.
+[03:00] Quem estiver na página aperte o próximo
+[03:02] para a gente ver a peça que resolveu essa lentidão.
+[03:05] Então, a solução para isso não exigiu inventar um material novo
+[03:09] ou um circuito mágico de outro mundo.
+[03:11] A saída veio de uma mudança de perspectiva.
+[03:14] Tipo uma sacada lógica.
+[03:16] Exatamente.
+[03:17] A memória da máquina já era construída
+[03:19] como uma fileira de posições numeradas.
+[03:22] Cada posição dessas guardava um punhado de zeros e uns.
+[03:25] Tá, zeros e uns normais.
+[03:27] Isso.
+[03:28] O grande pulo lógico da equipe foi pensar,
+[03:30] olha, nada impede que uma dessas posições
+[03:34] guarde uma ordem para a máquina executar
+[03:36] em vez de guardar só um número para uma conta.
+[03:38] Ah, faz-se total sentido.
+[03:41] Porque ambos cabem no mesmíssimo formato.
+[03:43] Perfeito, cabem no mesmo formato binário.
+[03:45] A mesma caixa serve para as duas coisas.
+[03:47] Cara, é como uma prateleira cheia de caixas numeradas
+[03:50] e todas iguaizinhas por fora.
+[03:52] O que define se o conteúdo é uma ordem ou um número
+[03:55] não é a caixa em si.
+[03:57] É o momento que a máquina abre a caixa
+[03:59] e o que ela está procurando.
+[04:00] É exatamente isso.
+[04:02] Se ela abre procurando uma ordem,
+[04:04] ela trata o conteúdo como ordem.
+[04:06] Mas se ela procura um número, trata como número.
+[04:08] A estrutura de hardware é a mesma.
+[04:10] Ela atende aos dois propósitos perfeitamente.
+[04:13] Muito bom.
+[04:15] Quem está com a gente na página
+[04:16] aperte o próximo para ver o que isso muda no dia a dia.
+[04:19] O impacto imediato disso é enorme.
+[04:22] Trocar a tarefa da máquina deixa de ser aquele trabalho físico
+[04:26] de arrancar cabos pesados, sabe?
+[04:27] Mostro alívio para a equipe deve ter sido imenso.
+[04:30] Muito.
+[04:31] A reprogramação passa-se apenas o ato
+[04:34] de carregar um novo conteúdo nessa mesma memória.
+[04:37] O tempo de preparo despenca de dias para mero segundos.
+[04:41] É uma mudança de paradigma.
+[04:43] Para ilustrar bem, antes, tipo, era como uma cozinha
+[04:46] onde a receita do prato ficava pregada na parede.
+[04:50] Para trocar de prato, a equipe tinha que arrancar a folha da parede.
+[04:54] Dava um trabalho gigante toda vez.
+[04:56] Sim.
+[04:57] Aí, agora, a receita sai da parede e entra no armário,
+[05:01] guardada no mesmo lugarzinho junto com os ingredientes.
+[05:04] Nossa, ótima comparação.
+[05:06] Tudo flui pelo mesmo sistema interno agora.
+[05:08] Legal, né?
+[05:09] Quem está com a página visual aberta,
+[05:11] aperte o próximo para descobrir
+[05:13] onde isso foi escrito pela primeira vez.
+[05:15] Essa ideia começou a circular num documento histórico importante.
+[05:20] Foi no dia 30 de junho de 1945.
+[05:24] Eles soltaram um rascunho chamado First Draft of a Report
+[05:28] on the EDVAC.
+[05:30] Então era só um rascunho.
+[05:32] Era um rascunho, mas ele virou a planta do computador moderno.
+[05:35] Ele descrevia uma máquina completinha.
+[05:38] Tinha unidade aritmética, unidade de controle, entrada, saída
+[05:42] e, claro, a memória.
+[05:43] Ah, aquela memória única que a gente acabou de falar.
+[05:45] Essa mesma.
+[05:47] Uma memória única guardando os números e as ordens misturadas.
+[05:50] Era o mapa do que a gente chama de computador até hoje.
+[05:53] Caramba.
+[05:54] Mas esse documento trouxe uma complicação daquelas, né?
+[05:57] Quem está na página aperte o próximo
+[05:59] para entender o problema jurídico que veio junto com esse rascunho.
+[06:02] Pois é, gerou uma disputa de crédito bem chata.
+[06:06] O documento circulou com apenas um nome impresso nele,
+[06:08] o do John Von Neumann.
+[06:10] E ele não estava sozinho nessa, né?
+[06:11] De jeito nenhum, o Presbyr Eckert e o John Mousley
+[06:15] estavam no projeto muito antes da chegada do Von Neumann.
+[06:18] Eles sustentavam que a ideia inteira tinha nascido
+[06:21] das reuniões longas do grupo todo lá na Moore School.
+[06:24] Porque se imagina a dor de cabeça e deu problema legal, não deu?
+[06:27] Deu sim.
+[06:28] Como o documento se tornou público muito rápido e rodou de mão em mão,
+[06:33] o governo usou isso contra eles.
+[06:35] Isso derrubou na justiça a patente que o Eckert
+[06:39] e o Mousley tentaram registrar depois.
+[06:41] Olha só, é aquela coisa, né?
+[06:43] A ideia era de um grupo, mas o nome que ficou na história foi de um só.
+[06:48] E isso vai se repetir outras vezes nessa série, com certeza.
+[06:51] Aliás, tem um episódio extra só sobre isso.
+[06:53] Os bastidores de quem estava naquela sala para quem quiser ir fundo.
+[06:57] É uma história cheia de detalhes.
+[06:59] Verdade.
+[07:00] Mas voltando para a peça em si,
+[07:02] quem está visualizando as telas aperte o próximo
+[07:04] para ver a primeira coisa que só ficou possível
+[07:06] depois da criação dessa memória unificada.
+[07:09] A primeira grande consequência lógica disso é o salto condicional.
+[07:13] Pensa comigo.
+[07:14] Se a ordem agora é apenas um número guardado numa caixa da memória,
+[07:19] a máquina consegue se fazer contas matemáticas usando a própria ordem.
+[07:23] Ah, usar a matemática na ordem, não sono dado.
+[07:26] Isso mesmo.
+[07:27] Com isso, a máquina consegue calcular sozinha para onde ela deve ir seguir.
+[07:32] É a lógica de decisão.
+[07:34] Tipo, se der este resultado, vá para lá e desvi o caminho.
+[07:38] Quebra o trilho fixo.
+[07:39] Tença numa lista de ordens numeradas, né?
+[07:42] E aí você tem um dedo apontando para a ordem da vez.
+[07:46] O dedo desce linha por linha.
+[07:48] O dedo seria o contador do sistema, né?
+[07:50] Exato.
+[07:51] Pular, nesse caso, significa mover esse dedo para uma linha diferente, bem longe.
+[07:57] E quem decide para qual linha o dedo vai
+[08:00] é o resultado da conta que acabou de acontecer.
+[08:02] Aliás, quem está com a página aberta,
+[08:05] se quiser, pode dar uma mexida rápida no dedo da lista e na tela para ver como ele pula.
+[08:10] É bem visual mesmo.
+[08:11] E essa liberdade de pular muda o jogo.
+[08:14] Com certeza.
+[08:14] Quem está na página aperte o próximo para a gente olhar para a segunda consequência.
+[08:18] A segunda consequência vem de carona no salto.
+[08:21] É o laço.
+[08:22] Porque se a máquina pode calcular o endereço da próxima ordem,
+[08:26] ela pode muito bem usar essa matemática para pular para trás.
+[08:30] A pular de volta para um lugar que já passou.
+[08:32] Exatamente.
+[08:33] Ela volta a um pedaço do programa que já executou.
+[08:37] Nasce a capacidade de repetir a mesma tarefa várias e várias vezes,
+[08:42] mudando apenas um númerozinho a cada volta.
+[08:45] Nossa, muito brático.
+[08:46] E quem está na página consegue ver o dedo voltando na lista de ordens
+[08:50] e o número mudando a cada repetição agora.
+[08:52] Fica fácil de entender vendo.
+[08:54] Isso economiza um tempo enorme na hora de escrever o programa.
+[08:57] Verdade.
+[08:58] Bom, quem está com a gente visualmente
+[09:00] aperte o próximo para ver a terceira consequência dessa memória.
+[09:03] A terceira coisa é a subrotina.
+[09:06] Isso é puro alívio para quem programa.
+[09:08] Imagina um trecho de programa que é muito útil
+[09:11] e você usa em várias tarefas diferentes.
+[09:13] Em vez de escrever ele do zero toda vez,
+[09:16] ele fica guardado num canto da memória.
+[09:18] Aí é só chamar quando precisar.
+[09:20] Perfeito.
+[09:21] Nasce a ideia de uma rotina pronta.
+[09:23] Você só chama aquele pedaço isolado e volta para o principal.
+[09:26] Gerial.
+[09:27] Então temos o salto, o laço e a subrotina.
+[09:30] Isso.
+[09:31] E essas três coisas juntas, trabalhando na mesma máquina,
+[09:34] são exatamente a linha que separa uma calculadora automática
+[09:38] de um verdadeiro computador moderno.
+[09:40] Demais.
+[09:41] E a teoria é linda, mas botar isso para rodar é outra história.
+[09:45] Quem está na tela aperte o próximo para conhecer a primeira máquina
+[09:48] que conseguiu fazer isso funcionar na prática.
+[09:51] O marco histórico dessa prática aconteceu em 21 de junho de 1948.
+[09:56] Com uma máquina pequena chamada Manchester Baby.
+[09:58] Uma máquina pequena.
+[10:00] E ela era usada para o dia a dia mesmo.
+[10:03] Não, não. Ela foi criada só para testar agressivamente um tipo novo de memória.
+[10:08] Eles queriam validar um tubo de raios catódicos
+[10:10] que ficou conhecido como Tubo Williams.
+[10:13] Ah, tubo de raios catódicos é tipo aquelas telas de TV antiga, não é?
+[10:18] E falando nisso, quem está na página pode clicar no botão no cantinho
+[10:22] para trocar a entre a foto da réplica do museu
+[10:25] e a ilustração desse tubo por dentro.
+[10:27] Mas me diz, cabia muita coisa nesse vidro?
+[10:30] Quase nada.
+[10:32] O tubo do Manchester Baby guardava apenas 32 palavras de 32 bits cada.
+[10:37] Era super apertado.
+[10:39] Caramba, bem pouco espaço.
+[10:41] E o que eles rodaram nele?
+[10:43] Eles rodaram um programa minúsculo de apenas 17 instruções
+[10:46] que já estava guardado na própria memória da máquina.
+[10:49] Ele tinha que procurar o maior divisor próprio do número 2.062.144.
+[10:56] Só 17 instruções? E quanto tempo levou?
+[10:59] Levou cerca de 52 minutos.
+[11:02] Nossa, 52 minutos.
+[11:04] Mas aí a vitória não foi o tempo, né?
+[11:06] A vitória foi que pela primeira vez no mundo
+[11:09] uma máquina executou um programa que estava morando dentro dela mesma
+[11:12] e não numa fita pendurada.
+[11:14] Exatamente.
+[11:15] Foi a prova de que a ideia do rasconho de 45 funcionava no metal e no vidro.
+[11:20] Legal demais.
+[11:21] Bom, quem está com a página aperte o próximo para ver a máquina
+[11:24] que transformou esse teste em um serviço de verdade.
+[11:26] Porque depois do teste do baby, a evolução continuou.
+[11:30] Em 6 de maio de 1949, lá em Cambridge, ligaram o EdSec.
+[11:35] E o EdSec guardava os bits de um jeito diferente
+[11:38] usando linhas de atraso de mercúrio.
+[11:40] Peraí, mercúrio líquido mesmo?
+[11:42] Líquido mesmo.
+[11:43] A informação virava pulsos acústicos viajando pelo mercúrio
+[11:47] um projeto super ingenioso.
+[11:49] Mas a grande diferença do EdSec não foi só memória diferente.
+[11:52] Foi o uso real que deram para ele.
+[11:54] Ele não era só de teste, então?
+[11:56] Não.
+[11:57] O EdSec entrou em serviço regular, bem rotineiro.
+[12:01] Pessoas de outros departamentos da universidade vinham lá
+[12:05] cruzar o corredor para usar a máquina nas pesquisas reais deles.
+[12:09] Olha só.
+[12:09] Então eles usavam muita máquina.
+[12:11] Muito.
+[12:11] E foi justamente no uso diário do EdSec,
+[12:14] que é aquela nossa terceira consequência, a subroutina,
+[12:17] apareceu firme na prática.
+[12:19] O EdSec ganhou a primeira biblioteca de rutinas prontas da história.
+[12:23] Ah, tipo um catálogo de pedaços de código.
+[12:26] Isso.
+[12:27] O programador sentava lá e podia apenas chamar um pedaço de programa testado
+[12:32] em vez de escrever toda aquela matemática do zero de novo.
+[12:35] Que economia de trabalho, o absurdo.
+[12:38] Bom, quem está navegando com a gente aperte o próximo para a gente dizer
+[12:41] onde essa história toda para por hoje.
+[12:43] Bom, a estrutura estava toda montada.
+[12:45] Sim.
+[12:46] E para amarrar tudo o que vimos, a partir dessa jornada,
+[12:50] a máquina passa a guardar a ordem no mesmo lugarzinho que o número.
+[12:53] Ela não precisa mais de dias trocando cabos.
+[12:57] Ela troca de tarefa em segundos.
+[13:00] Ela salta lógicas, ela repete passos usando o laço
+[13:04] e re usa pedaços prontos com a subroutina.
+[13:07] A estrutura principal do computador, moderno, como a gente usa hoje, está de pé.
+[13:12] E o ano em que a gente encerra a cronologia deste capítulo, exatamente esse, 1949.
+[13:19] É, o hardware atingiu um formato excelente.
+[13:22] Mas a gente não pode ignorar que ficou um desconforto enorme no ar.
+[13:27] Um problema para quem operava, né?
+[13:28] Gigante!
+[13:30] O computador tem o formato certo agora,
+[13:32] só que o programa ainda precisa ser escrito inteiramente na mão.
+[13:36] E pior, instrução por instrução, puramente em código binário, numérico e direto.
+[13:42] É lidar com zeros e uns puros o dia todo.
+[13:46] Para a máquina entender o pedido, o ser humano ainda era obrigado a abandonar o próprio idioma
+[13:51] e aprender a falar ou melhor, a escrever na língua nativa e rigorosa da máquina.
+[13:57] Isso cansa, gera erro, atrasa tudo.
+[14:00] O que deixa a gente com uma provocação bem clara para o nosso próximo passo nessa evolução lógica.
+[14:05] Se traduzir coisas no fundo também é apenas uma longa tarefa baseada em regras condicionais
+[14:11] e matemática, por que a própria máquina não traduz os programas para nós?
+[14:16] Fico o questionamento.
+[14:17] Ah, e tem um episódio extra interior, dedicado à pessoa que decidiu atacar exatamente
+[14:22] esse problema de escrever na língua nativa da máquina, para quem quiser procurar
+[14:26] depois.
+[14:27] O desafio agora é a comunicação e não mais os cabos.
+[14:31] Um grande abraço a todos que acompanharam essa etapa física e lógica e a gente continua
+[14:36] jornada em breve.
+[14:37] Até lá!

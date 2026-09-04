@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Mão que Conta 3D — protótipo de estilo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> A MÃO QUE CONTA</div>
+  <div>PROTÓTIPO DE ESTILO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">Cada dedo levantado vale <b>1</b>. Clique num dedo pra levantar ou abaixar.</div>
+    <div class="linha-total">
+      <span class="num mono" id="numero">0</span>
+      <span class="meta mono" id="detalhe">nenhum dedo levantado</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio" id="btnConta">conta até 10</button>
+      <button class="btn-mini" id="btnSoma">soma 1</button>
+      <button class="btn-mini" id="btnTira">tira 1</button>
+      <button class="btn-mini" id="btnZera">zerar</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+// A malha da mao e a "generic hand" do WebXR (a mao que os navegadores mostram em
+// VR): humana, rigada com um osso por falange, 92 KB, servida pelo mesmo CDN do three.
+const URL_MAO = 'https://cdn.jsdelivr.net/npm/@webxr-input-profiles/assets@1.0.11/dist/profiles/generic-hand/';
+
+const legenda = document.getElementById('legenda');
+const elNumero = document.getElementById('numero');
+const elDetalhe = document.getElementById('detalhe');
+
+const palco = montaPalco({
+  alvo: [0, 3.0, 0],
+  camPos: [0, 4.6, 12],
+  meiaLarguraDesktop: 5.2,
+  meiaLarguraMobile: 4.4,
+  distMin: 10.5,
+  orbitaMin: 6,
+});
+const { scene, controls, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+
+const matPele = new THREE.MeshStandardMaterial({ color: 0xc98f6d, roughness: 0.62, envMapIntensity: 0.25 });
+const matLuz = new THREE.MeshStandardMaterial({
+  color: 0xffc972, emissive: 0xcf7a10, emissiveIntensity: 0.85,
+  transparent: true, opacity: 0.62, roughness: 0.3, depthWrite: false,
+});
+
+// ---------- bancada ----------
+const maquina = new THREE.Group();
+scene.add(maquina);
+const base = bloco(8.6, 0.35, 2.8, materiais.madeira, 0.09);
+base.position.y = 0.18;
+maquina.add(base);
+
+function pedestal(x) {
+  const pe = bloco(1.5, 0.28, 1.5, materiais.madeiraEscura, 0.12);
+  pe.position.set(x, 0.49, 0);
+  const anel = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.48, 0.5, 24), materiais.madeiraEscura);
+  anel.position.set(x, 0.85, 0);
+  anel.castShadow = true;
+  maquina.add(pe, anel);
+}
+pedestal(-2.35);
+pedestal(2.35);
+
+// ---------- ossos por dedo ----------
+const NOME_DEDO = ['index-finger', 'middle-finger', 'ring-finger', 'pinky-finger'];
+const SEGMENTOS = ['phalanx-proximal', 'phalanx-intermediate', 'phalanx-distal'];
+const DOBRA_DEDO = [1.35, 1.45, 0.75];
+const DOBRA_POLEGAR = [0.45, 0.55, 0.7];           // metacarpo, proximal, distal
+
+const juntasVivas = [];                             // todo osso animado persegue o alvo dele
+
+function achaOssos(raiz) {
+  const porNome = {};
+  raiz.traverse((o) => { if (o.isBone || o.type === 'Bone') porNome[o.name] = o; });
+  return porNome;
+}
+
+// O esqueleto do WebXR vem chato: toda junta e filha direta do Armature, entao girar
+// a proximal nao arrastaria o resto do dedo. Re-parenta em cadeias (attach preserva a
+// pose) pra junta dobrada levar as falanges seguintes junto, como num dedo de verdade.
+function encadeia(ossos) {
+  const cadeias = [
+    ...NOME_DEDO.map((n) => [n + '-metacarpal', n + '-phalanx-proximal', n + '-phalanx-intermediate', n + '-phalanx-distal', n + '-tip']),
+    ['thumb-metacarpal', 'thumb-phalanx-proximal', 'thumb-phalanx-distal', 'thumb-tip'],
+  ];
+  cadeias.forEach((nomes) => {
+    let pai = ossos['wrist'];
+    nomes.forEach((nome) => { pai.attach(ossos[nome]); pai = ossos[nome]; });
+  });
+}
+
+// Cada rig tem eixo local proprio (e a mao espelhada inverte o sinal): em vez de
+// chutar, gira a junta de teste 0.6 rad em cada um dos 6 eixos e fica com o que
+// mais empurra a ponta na direcao pedida (a palma, pros dedos; o outro lado, pro polegar).
+const qAux = new THREE.Quaternion();
+const vA = new THREE.Vector3(), vB = new THREE.Vector3();
+function calibraParte(grupo, parte, direcao) {
+  const junta = parte.juntas[parte.juntas.length > 2 ? 0 : 1] || parte.juntas[0];
+  const antes = parte.tip.getWorldPosition(new THREE.Vector3());
+  let melhor = { eixo: new THREE.Vector3(1, 0, 0), ganho: -Infinity };
+  [[1, 0, 0], [0, 1, 0], [0, 0, 1], [-1, 0, 0], [0, -1, 0], [0, 0, -1]].forEach((v) => {
+    const eixo = new THREE.Vector3(...v);
+    junta.quaternion.copy(junta.userData.qBase).multiply(qAux.setFromAxisAngle(eixo, 0.6));
+    grupo.updateMatrixWorld(true);
+    const ganho = parte.tip.getWorldPosition(vA).sub(antes).dot(direcao);
+    if (ganho > melhor.ganho) melhor = { eixo, ganho };
+  });
+  junta.quaternion.copy(junta.userData.qBase);
+  grupo.updateMatrixWorld(true);
+  parte.juntas.forEach((j) => { j.userData.eixo = melhor.eixo; });
+}
+
+function preparaJunta(osso) {
+  osso.userData.qBase = osso.quaternion.clone();
+  osso.userData.ang = 0;
+  osso.userData.alvo = 0;
+  juntasVivas.push(osso);
+  return osso;
+}
+
+// luz do dedo levantado: capsula emissiva vestida em cada falange, apontando pro filho
+function vesteLuz(osso, filho) {
+  const alvo = filho.position.clone();
+  const len = alvo.length();
+  const luz = new THREE.Mesh(new THREE.SphereGeometry(1, 14, 14), matLuz);
+  luz.scale.set(len * 0.42, len * 0.62, len * 0.42);
+  luz.position.copy(alvo).multiplyScalar(0.5);
+  luz.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), alvo.clone().normalize());
+  luz.visible = false;
+  osso.add(luz);
+  return luz;
+}
+
+// De que lado fica a palma. O produto vetorial indicador->minimo x punho->dedos da a
+// reta certa, mas o sentido depende de qual mao e — e quem resolve isso e a geometria,
+// nao um chute. Com a palma virada pro visitante (+Z) e os dedos pra cima (+Y), na mao
+// ESQUERDA o minimo fica em -X, entao o produto da -Z e a palma e o negativo dele; na
+// DIREITA o minimo fica em +X e o produto ja aponta pra palma. Dai o sinal por mao.
+// (Tentar desempatar pelo polegar nao funciona: neste modelo ele descansa pro lado do
+// dorso, e as duas maos acabavam de costas, com os dedos fechando pro lado errado.)
+const SINAL_DA_PALMA = { esquerda: -1, direita: 1 };
+
+function normalDaPalma(ossos, mao) {
+  const pega = (nome) => ossos[nome].getWorldPosition(new THREE.Vector3());
+  const punho = pega('wrist');
+  const lado = pega('pinky-finger-phalanx-proximal').sub(pega('index-finger-phalanx-proximal'));
+  const dedos = pega('middle-finger-phalanx-proximal').sub(punho);
+  return new THREE.Vector3().crossVectors(lado, dedos).normalize().multiplyScalar(SINAL_DA_PALMA[mao]);
+}
+
+// Poe a mao de pe olhando pra camera: alinha wrist->ponta do medio com +Y,
+// depois gira em volta de Y ate a palma apontar pra +Z.
+function alinhaMao(grupo, ossos, mao) {
+  const w = new THREE.Vector3(), t = new THREE.Vector3();
+  grupo.updateMatrixWorld(true);
+
+  ossos['wrist'].getWorldPosition(w);
+  ossos['middle-finger-tip'].getWorldPosition(t);
+  const q1 = new THREE.Quaternion().setFromUnitVectors(t.sub(w).normalize(), new THREE.Vector3(0, 1, 0));
+  grupo.quaternion.premultiply(q1);
+  grupo.updateMatrixWorld(true);
+
+  const normal = normalDaPalma(ossos, mao);
+  grupo.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), -Math.atan2(normal.x, normal.z));
+  grupo.updateMatrixWorld(true);
+}
+
+const loader = new GLTFLoader();
+
+async function criaMao(qual, x) {
+  const gltf = await loader.loadAsync(URL_MAO + (qual === 'esquerda' ? 'left.glb' : 'right.glb'));
+  const ossos = achaOssos(gltf.scene);
+
+  gltf.scene.traverse((o) => {
+    if (o.isMesh || o.isSkinnedMesh) {
+      o.material = matPele;
+      o.castShadow = true; o.receiveShadow = true;
+      o.frustumCulled = false;      // a caixa da malha rigada fica pra tras quando os dedos dobram
+    }
+  });
+
+  const grupo = new THREE.Group();
+  grupo.add(gltf.scene);
+  maquina.add(grupo);
+  grupo.updateMatrixWorld(true);
+  encadeia(ossos);
+
+  // escala: do tamanho real (metros) pro palco, wrist->ponta do medio = 3.4
+  const w = new THREE.Vector3(), t = new THREE.Vector3();
+  grupo.updateMatrixWorld(true);
+  ossos['wrist'].getWorldPosition(w);
+  ossos['middle-finger-tip'].getWorldPosition(t);
+  const escala = 3.4 / w.distanceTo(t);
+  grupo.scale.setScalar(escala);
+
+  alinhaMao(grupo, ossos, qual);
+
+  // pulso descansando em cima do anel do pedestal
+  grupo.updateMatrixWorld(true);
+  ossos['wrist'].getWorldPosition(w);
+  grupo.position.add(new THREE.Vector3(x - w.x, 1.35 - w.y, 0 - w.z));
+
+  // juntas que dobram + luz de cada falange
+  const dedos = NOME_DEDO.map((nome) => {
+    const juntas = SEGMENTOS.map((s) => preparaJunta(ossos[nome + '-' + s]));
+    const cadeia = [...juntas, ossos[nome + '-tip']];
+    const luzes = juntas.map((j, i) => vesteLuz(j, cadeia[i + 1]));
+    return { juntas, luzes, tip: ossos[nome + '-tip'], dobras: DOBRA_DEDO };
+  });
+  const ossosPolegar = [ossos['thumb-metacarpal'], ossos['thumb-phalanx-proximal'], ossos['thumb-phalanx-distal']];
+  const polegar = {
+    juntas: ossosPolegar.map(preparaJunta),
+    luzes: [
+      vesteLuz(ossos['thumb-phalanx-proximal'], ossos['thumb-phalanx-distal']),
+      vesteLuz(ossos['thumb-phalanx-distal'], ossos['thumb-tip']),
+    ],
+    tip: ossos['thumb-tip'],
+    dobras: DOBRA_POLEGAR,
+  };
+
+  // sentido de dobra: dedos fecham pro lado da palma (+z), o polegar cruza pro meio da mao
+  grupo.updateMatrixWorld(true);
+  dedos.forEach((d) => calibraParte(grupo, d, new THREE.Vector3(0, 0, 1)));
+  const cruzaPalma = ossos['middle-finger-phalanx-proximal'].getWorldPosition(vA)
+    .sub(ossos['thumb-tip'].getWorldPosition(vB)).setY(0).normalize().add(new THREE.Vector3(0, 0, 0.6)).normalize();
+  calibraParte(grupo, polegar, cruzaPalma);
+
+  return { qual, grupo, ossos, dedos, polegar };
+}
+
+const [esquerda, direita] = await Promise.all([
+  criaMao('esquerda', -2.35),
+  criaMao('direita', 2.35),
+]);
+
+// ---------- os dez dedos, na ordem em que a gente conta ----------
+// Contar de gente: comeca no indicador da primeira mao e termina no polegar da segunda.
+// A ordem so vale pros botoes; no clique, quem manda e quantos dedos estao de pe.
+const DEDOS = [];
+[esquerda, direita].forEach((mao) => {
+  mao.dedos.forEach((d) => DEDOS.push(d));   // indicador, medio, anelar, minimo
+  DEDOS.push(mao.polegar);                   // e o polegar por ultimo
+});
+const levantado = DEDOS.map(() => false);
+
+const rotulos = [];                          // o numero que flutua na ponta do dedo levantado
+
+// no viewport estreito a base esconde os rotulos dela; os numeros dos dedos seguem
+// a mesma regra, e por isso o pinta() precisa rodar de novo a cada redimensionamento
+function palcoEstreito() {
+  const el = palco.renderer.domElement;
+  return el.clientWidth / el.clientHeight < 0.9;
+}
+
+function mira(parte, fator) {
+  parte.juntas.forEach((j, i) => { j.userData.alvo = parte.dobras[i] * fator; });
+}
+
+function pinta() {
+  let conta = 0;
+  DEDOS.forEach((dedo, i) => {
+    const cima = levantado[i];
+    mira(dedo, cima ? 0.08 : 1);             // levantado com uma curvinha, nao vareta
+    dedo.luzes.forEach((l) => { l.visible = cima; });
+    if (cima) conta++;
+    const r = rotulos[i];
+    if (r) {
+      // sprite escondido some de vez: com opacity 0 ele continua gravando
+      // profundidade e recorta o rotulo grande que estiver atras
+      r.sprite.visible = cima && !palcoEstreito();
+      if (cima) r.mostra(conta);             // o dedo mostra a posicao dele na contagem
+    }
+  });
+  elNumero.textContent = conta;
+  elDetalhe.textContent = conta === 0 ? 'nenhum dedo levantado'
+    : conta === 1 ? '1 dedo levantado' : conta + ' dedos levantados';
+  return conta;
+}
+
+function total() {
+  return levantado.reduce((s, v) => s + (v ? 1 : 0), 0);
+}
+
+function poeNumero(n) {
+  DEDOS.forEach((d, i) => { levantado[i] = i < n; });
+  pinta();
+}
+
+// ---------- rotulos ----------
+// Dois ajustes em todo rotulo desta tela, os dois por conta de como o sprite e feito:
+// 1. o retangulo do sprite tem fundo transparente, mas o pedaco vazio tambem grava
+//    profundidade e recortaria o que estiver atras;
+// 2. o canvas 2D do Chrome executa os comandos de desenho em lote, e o three manda a
+//    textura pra placa antes desse lote sair — o texto ia pela metade (o "6 A 10"
+//    aparecia com o A comido). Ler um pixel obriga o canvas a terminar o desenho.
+function flutua(sprite) {
+  sprite.material.depthWrite = false;
+  const cv = sprite.material.map.image;
+  cv.getContext('2d').getImageData(0, 0, 1, 1);
+  sprite.material.map.needsUpdate = true;
+  return sprite;
+}
+
+// fonts.ready sozinho nao basta: ele espera as fontes que a PAGINA usa, e o peso
+// 600 da mono so e pedido aqui dentro do canvas. Desenhar antes dele chegar sai com
+// glifo mordido (o "6 A 10" vinha com o A comido). Pede o peso e so entao desenha.
+Promise.all([document.fonts.ready, document.fonts.load('600 44px "IBM Plex Mono"')]).then(() => {
+  const tEsq = flutua(criaRotulo('1 A 5', 1.0));
+  tEsq.position.set(-2.35, 6.6, 0);
+  const tDir = flutua(criaRotulo('6 A 10', 1.0));
+  tDir.position.set(2.35, 6.6, 0);
+  maquina.add(tEsq, tDir);
+
+  // os dez numeros sao desenhados uma vez so e emprestados pra quem estiver naquela
+  // posicao da contagem (abaixar um dedo do meio renumera os de cima)
+  const textoDoNumero = [];
+  for (let n = 1; n <= 10; n++) textoDoNumero[n] = criaRotulo(String(n), 0.5).material.map;
+
+  DEDOS.forEach((dedo, i) => {
+    const sp = flutua(criaRotulo(String(i + 1), 0.5));
+    sp.visible = false;
+    maquina.add(sp);
+    rotulos[i] = {
+      sprite: sp, tip: dedo.tip, desenhado: null,
+      mostra(n) {
+        if (this.desenhado === n) return;
+        this.sprite.material.map = textoDoNumero[n];
+        this.sprite.material.needsUpdate = true;
+        this.desenhado = n;
+      },
+    };
+  });
+  pinta();
+  redimensiona();
+  new ResizeObserver(() => pinta()).observe(document.getElementById('cena'));
+});
+
+// ---------- mecanica ----------
+let contando = null;        // contagem automatica de 1 a 10
+
+function zera() {
+  contando = null;
+  poeNumero(0);
+  legenda.className = 'legenda';
+  legenda.innerHTML = 'Zerado. Clique num dedo ou solte a contagem.';
+}
+pinta();
+
+document.getElementById('btnZera').addEventListener('click', zera);
+
+document.getElementById('btnSoma').addEventListener('click', () => {
+  if (contando) return;
+  controls.autoRotate = false;
+  const n = total();
+  if (n >= 10) {
+    legenda.className = 'legenda';
+    legenda.innerHTML = 'As duas mãos estão cheias: acabaram os dedos no <b>10</b>.';
+    return;
+  }
+  poeNumero(n + 1);
+  legenda.className = 'legenda';
+  legenda.innerHTML = 'Mais um dedo de pé: <b>' + (n + 1) + '</b>.';
+});
+
+document.getElementById('btnTira').addEventListener('click', () => {
+  if (contando) return;
+  controls.autoRotate = false;
+  const n = total();
+  if (n === 0) return;
+  poeNumero(n - 1);
+  legenda.className = 'legenda';
+  legenda.innerHTML = 'Abaixou um dedo: sobra <b>' + (n - 1) + '</b>.';
+});
+
+document.getElementById('btnConta').addEventListener('click', () => {
+  controls.autoRotate = false;
+  poeNumero(0);
+  contando = { espera: 0.9 };
+  legenda.className = 'legenda';
+  legenda.innerHTML = 'Contando: um dedo de cada vez, do indicador da primeira mão até o polegar da segunda.';
+});
+
+// clique numa das maos: o dedo mais perto do ponto clicado levanta ou abaixa
+const malhas = [];
+[esquerda, direita].forEach((m) => m.grupo.traverse((o) => { if (o.isMesh || o.isSkinnedMesh) malhas.push(o); }));
+const vAux = new THREE.Vector3();
+function dedoMaisPerto(ponto) {
+  let melhor = { i: -1, d: Infinity };
+  DEDOS.forEach((dedo, i) => {
+    [...dedo.juntas, dedo.tip].forEach((osso) => {
+      const d = ponto.distanceTo(osso.getWorldPosition(vAux));
+      if (d < melhor.d) melhor = { i, d };
+    });
+  });
+  return melhor.i;
+}
+aoClicar(malhas, (hit) => {
+  if (contando) return;
+  const i = dedoMaisPerto(hit.point);
+  if (i < 0) return;
+  levantado[i] = !levantado[i];
+  const n = pinta();
+  legenda.className = 'legenda';
+  legenda.innerHTML = n === 0
+    ? 'Todos abaixados: <b>zero</b>.'
+    : 'Dedos de pé: <b>' + n + '</b>.';
+});
+
+// ---------- animacao ----------
+const qGiro = new THREE.Quaternion();
+inicia((dt) => {
+  juntasVivas.forEach((j) => {
+    const dr = j.userData.alvo - j.userData.ang;
+    if (Math.abs(dr) > 0.0005) {
+      j.userData.ang += dr * Math.min(1, dt * 7);
+      qGiro.setFromAxisAngle(j.userData.eixo, j.userData.ang);
+      j.quaternion.copy(j.userData.qBase).multiply(qGiro);
+    }
+  });
+
+  // os numeros seguem as pontas dos dedos
+  rotulos.forEach((r) => {
+    if (!r) return;
+    r.tip.getWorldPosition(vAux);
+    r.sprite.position.set(vAux.x, vAux.y + 0.4, vAux.z);
+  });
+
+  if (contando) {
+    contando.espera -= dt;
+    if (contando.espera <= 0) {
+      const n = total() + 1;
+      poeNumero(n);
+      if (n >= 10) {
+        contando = null;
+        legenda.className = 'legenda ok';
+        legenda.innerHTML = 'Dez dedos, <b>dez</b> — e é por isso que a gente conta de dez em dez. 🎉';
+      } else contando = { espera: 0.9 };
+    }
+  }
+});
+
+// ---------- gancho de QA ----------
+window.__maos = {
+  cena: scene,
+  camera: palco.camera,
+  orbita: controls,
+  numero(n) { poeNumero(n); },
+  dedo(i) { levantado[i] = !levantado[i]; pinta(); },
+  estado() { return { n: total(), levantado: [...levantado] }; },
+  // prova por numero (e nao por print) que a palma esta virada pro visitante e que
+  // o dedo fecha pro lado dela: dobrado.z tem que ser MAIOR que esticado.z nas duas maos
+  diagnostico() {
+    const fora = {};
+    [['esquerda', esquerda], ['direita', direita]].forEach(([nome, mao]) => {
+      const normal = normalDaPalma(mao.ossos, mao.qual);
+      const juntas = mao.dedos[0].juntas;
+      const poe = (angulos) => {
+        juntas.forEach((j, i) => {
+          j.quaternion.copy(j.userData.qBase).multiply(qAux.setFromAxisAngle(j.userData.eixo, angulos[i]));
+        });
+        mao.grupo.updateMatrixWorld(true);
+        return mao.dedos[0].tip.getWorldPosition(new THREE.Vector3());
+      };
+      const esticado = poe([0, 0, 0]);
+      const dobrado = poe(DOBRA_DEDO);
+      poe(juntas.map((j) => j.userData.ang));         // devolve o dedo pra pose que estava
+      // quiralidade: com a palma pra frente e os dedos pra cima, o polegar da mao
+      // esquerda sai pra +X e o da direita pra -X. E o teste que nao depende de olhar.
+      const punho = mao.ossos['wrist'].getWorldPosition(new THREE.Vector3());
+      const polegar = mao.ossos['thumb-tip'].getWorldPosition(new THREE.Vector3()).sub(punho);
+      fora[nome] = {
+        palmaOlhaPraFrente: +normal.z.toFixed(2),
+        // esperado: +X na mao esquerda, -X na direita (palma pro visitante)
+        polegarPraLado: +polegar.normalize().x.toFixed(2),
+        indicadorEsticadoZ: +esticado.z.toFixed(2),
+        indicadorDobradoZ: +dobrado.z.toFixed(2),
+        fechaPraPalma: dobrado.z > esticado.z,
+      };
+    });
+    return fora;
+  },
+  parado() {
+    return !contando && juntasVivas.every((j) => Math.abs(j.userData.alvo - j.userData.ang) < 0.01);
+  },
+  pixels() {
+    const meio = { w: palco.renderer.domElement.clientWidth / 2, h: palco.renderer.domElement.clientHeight / 2 };
+    const px = {};
+    const poe = (nome, p) => { p.project(palco.camera); px[nome] = { x: (p.x + 1) * meio.w, y: (1 - p.y) * meio.h }; };
+    poe('baseEsq', new THREE.Vector3(-4.3, 0.3, 0));
+    poe('baseDir', new THREE.Vector3(4.3, 0.3, 0));
+    poe('pontaMedioEsq', esquerda.dedos[1].tip.getWorldPosition(new THREE.Vector3()).add(new THREE.Vector3(0, 0.4, 0)));
+    poe('pontaMedioDir', direita.dedos[1].tip.getWorldPosition(new THREE.Vector3()).add(new THREE.Vector3(0, 0.4, 0)));
+    return px;
+  },
+};
+</script>
+</body>
+</html>

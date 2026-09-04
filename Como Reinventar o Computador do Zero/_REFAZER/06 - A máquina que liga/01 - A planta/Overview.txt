@@ -1,0 +1,47 @@
+A PLANTA - CONTEXTO
+===================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa A MAQUINA QUE LIGA, a sexta e ultima etapa antes do
+computador encolher, da serie Como Reinventar o Computador do Zero. A serie
+reconstroi o computador do zero, do abaco ate a inteligencia artificial, uma peca
+por episodio. Este episodio cobre de 1936 a 1948, mas nao conta maquina nenhuma:
+ele conta a PLANTA.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega o
+que a proxima peca precisa. Todo aprofundamento (uma peca por dentro, a vida de um
+inventor, um conceito esmiucado) mora numa trilha separada de episodios extras,
+avulsos. Este episodio e da trilha principal e nao conta biografia de ninguem.
+
+Onde a serie estava: a etapa anterior ensinou a eletricidade a representar logica.
+Um interruptor fechado e "sim", aberto e "nao", e Shannon mostrou que interruptores
+ligados em serie e em paralelo fazem a algebra de Boole. Ficou faltando o resto: como
+se vai de um punhado de interruptores ate uma maquina que faz conta e obedece ordem.
+
+Este episodio percorre esse caminho inteiro, sem ligar nada, em cinco passos:
+
+1. Porta logica: E, OU e NAO, feitas de interruptores. Tudo o que vem depois e
+   combinacao dessas tres. O binario entra aqui: com so dois estados, "sim" e
+   "nao" viram 1 e 0, e qualquer numero pode ser escrito so com eles.
+2. Somador: um meio somador de duas portas soma dois bits e guarda o vai-um; varios
+   emendados somam numeros inteiros. Subtrair, multiplicar e dividir sao somas
+   arrumadas.
+3. Memoria: duas portas de saida cruzada seguram um bit enquanto tiver energia (o
+   flip-flop). Uma fileira delas e uma palavra; um seletor com endereco escolhe qual
+   palavra ler ou gravar. Numeros, letras e ordens, tudo vira 0 e 1 guardado ali.
+4. Maquina universal: em 1936 Alan Turing mostrou, no papel, que uma maquina bem
+   simples, lendo e escrevendo simbolos numa fita e seguindo uma tabela de regras,
+   faz qualquer conta que uma pessoa faca com lapis e papel, e que UMA maquina pode
+   imitar todas as outras se receber a tabela delas como dado. E a ideia que separa
+   uma calculadora de um computador.
+5. Conjunto de instrucoes: um acumulador que guarda o resultado, um contador que
+   diz qual e a proxima ordem, e um punhado de ordens com codigo (somar, subtrair,
+   guardar, carregar, pular pra outro endereco). A lista de ordens e o programa;
+   o metal que as executa e a maquina. Nasce a fronteira entre hardware e
+   software.
+
+O ponto que o episodio precisa deixar claro: tudo isso estava sendo escrito
+ENQUANTO gente construia maquina de verdade. A planta e o canteiro sao da mesma
+epoca, e o proximo episodio e o canteiro.
+
+Use este contexto apenas como apoio.

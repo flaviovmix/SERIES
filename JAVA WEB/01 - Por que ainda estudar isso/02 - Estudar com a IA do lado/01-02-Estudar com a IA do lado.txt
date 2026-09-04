@@ -1,0 +1,35 @@
+Inicie dizendo: Estudar Com A IA Do Lado
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Estudar Com A IA Do Lado.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o segundo episodio da etapa POR QUE AINDA ESTUDAR ISSO, a primeira etapa da serie JAVA WEB. O episodio anterior, A Bomba-Relogio, mostrou que codigo que funciona e que ninguem entende cobra caro depois, e terminou dizendo que a saida nao e largar a inteligencia artificial, e sim usar de outro jeito.
+
+ESTE EPISODIO NAO TEM CODIGO. Nenhuma linha, nenhuma sintaxe, nenhum comando. Ele fala de metodo de estudo. Nao antecipar Java, VS Code, servidor nem banco de dados.
+
+FOCO: qual e esse outro jeito. A mesma ferramenta em dois lugares, fornecedor ou professor, e o que cada um deixa em quem pediu. As tres regras do metodo da serie: explicacao antes do codigo, digitar em vez de colar, dizer o que se espera antes de rodar. O mesmo pedido escrito dos dois jeitos e a resposta que cada um puxa, com a frase "nao me mostre o codigo ainda". Onde a IA ajuda de verdade: o repetitivo depois que a peca ja foi entendida, o erro obscuro, a segunda opiniao sobre codigo que a pessoa ja escreveu, e a traducao do jargao. Onde ela atrapalha: pula o erro que ensina, erra com confianca, e deixa quem aprende sem o nome das pecas. E a pratica de reescrever um pedido do modo fornecedor pro modo professor.
+
+TOM: nada de sermao e nada de nostalgia. A tela sobre o que ela faz bem vale tanto quanto a tela sobre o que atrapalha, e nao pode soar como concessao de cortesia antes da critica.
+
+A pagina tem 8 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 7 vezes, sem juntar duas telas num bloco so. Na tela interativa (4), avisar que tem botao na tela. Na tela de pratica (7), convidar a pausar o audio, resolver e voltar.
+
+No encerramento, dizer que a etapa 1 acabou sem uma linha de codigo de proposito, dizer o que transfere pra outras linguagens e outras ferramentas, e fechar com o gancho pra etapa seguinte, sobre onde a gente escreve o codigo, sem citar o nome de nenhum programa.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Estudar Com A IA Do Lado.txt. NAO invente analogias novas. As duas autorizadas sao a academia com o peso levantado por outra pessoa, pra explicar por que receber pronto resolve a tarefa e nao treina quem recebeu, e o GPS que leva ao endereco sem ensinar o caminho, pra explicar dependencia sem aprendizado. As duas tem o limite dito em voz alta no roteiro: ninguem trapaceou e ninguem precisa devolver o GPS.
+
+Use tambem o Overview.txt como contexto curto.

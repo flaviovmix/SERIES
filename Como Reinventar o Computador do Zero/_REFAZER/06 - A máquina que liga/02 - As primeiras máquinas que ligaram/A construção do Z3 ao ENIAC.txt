@@ -1,0 +1,7 @@
+Titulo: A construção do Z3 ao ENIAC
+Notebook: 06-02-As primeiras maquinas que ligaram
+
+Descricao:
+As fontes tratam do episódio "As Primeiras Máquinas Que Ligaram", integrante de uma série que reconstrói a história da computação. O texto descreve a transição dos projetos teóricos para a construção prática de computadores entre 1936 e 1946, destacando a evolução técnica dos relés para as válvulas. São apresentados três marcos fundamentais da época: o Z3 alemão, o Harvard Mark I da IBM e o ENIAC americano. O conteúdo explora como essas máquinas operavam e as dificuldades de sua programação, que exigia intervenções físicas manuais em vez de comandos digitais internos. Por fim, o material enfatiza que, embora esses sistemas realizassem cálculos complexos, eles ainda não conseguiam armazenar instruções em suas próprias memórias.
+
+Link: https://notebook.google.com/notebook/c0c3cd58-3f93-437b-8301-6f3bbd057881

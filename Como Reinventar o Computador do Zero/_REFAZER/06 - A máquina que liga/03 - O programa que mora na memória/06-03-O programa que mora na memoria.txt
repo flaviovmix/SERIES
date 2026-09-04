@@ -1,0 +1,76 @@
+Inicie dizendo: O Programa Que Mora Na Memoria
+---------------
+
+Siga exatamente as instrucoes do arquivo
+_NotebookLM_O Programa Que Mora Na Memoria.txt enviado como fonte. Esse arquivo
+contem o roteiro completo do episodio, dividido por tela.
+
+Este e o terceiro episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da serie Como
+Reinventar o Computador do Zero. O episodio anterior terminou em 1946, com tres
+maquinas programaveis funcionando e o programa morando FORA delas: na fita, no cabo,
+na chave.
+
+ESTE EPISODIO COBRE DE 1945 A 1949. Dizer esse intervalo logo na abertura e, no
+encerramento, dizer em que ano o episodio para.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 11 telas.
+O audio TEM que pedir "aperte o Proximo" exatamente 10 vezes, uma no fim de cada
+tela, na ordem do roteiro. NAO juntar duas telas num bloco so e NAO seguir adiante
+sem pedir. Avisar na tela 1 que a pagina tem 11 telas e que quem esta so ouvindo
+acompanha normalmente.
+
+FOCO: uma peca so, mas a que define o computador moderno. Guardar a ordem na mesma
+memoria onde ja moram os numeros. O rascunho de 30 de junho de 1945 (First Draft of
+a Report on the EDVAC) e a briga do nome. As tres coisas que so ficam possiveis
+depois disso: salto condicional, laco e sub-rotina. E as duas primeiras maquinas que
+rodaram programa guardado na propria memoria: o Manchester Baby, em 21 de junho de
+1948, com 32 palavras de 32 bits e um programa de 17 instrucoes que levou 52
+minutos, e o EDSAC, em 6 de maio de 1949, que virou servico de verdade e ganhou a
+primeira biblioteca de rotinas prontas.
+
+TELAS DE DEMONSTRACAO. Nas telas 6, 7 e 8 tem a lista de ordens pra mexer enquanto
+a explicacao corre. Convidar numa frase curta, sem esperar resposta e sem mandar
+pausar o audio.
+
+O BOTAO DE FOTO REAL E ILUSTRACAO ja foi explicado no episodio anterior. NAO
+explicar de novo; no maximo meia frase na tela 9.
+
+SEM BIOGRAFIA. Esta e a trilha principal da serie, que so carrega o que a proxima
+peca precisa. Von Neumann, Eckert e Mauchly entram so com o que fizeram e por que.
+NAO contar onde nasceram, onde estudaram nem quando morreram.
+
+GANCHOS DE EXTRA. Em dois momentos o roteiro marca GANCHO DE EXTRA: quem estava na
+sala do rascunho (tela 5) e a pessoa que atacou o problema de escrever na lingua da
+maquina (tela 11). Em cada um, dizer em UMA frase que existe um episodio extra so
+sobre aquilo, pra quem quiser ir fundo, e seguir na hora. NAO dizer o nome nem o
+numero do extra e NAO explicar o assunto dele.
+
+NAO explicar compilador, Grace Hopper, transistor nem linguagem de programacao: sao
+os proximos episodios. A pergunta final fica sem resposta, de proposito.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As
+unicas autorizadas sao a prateleira de caixas numeradas iguais, a receita e o
+ingrediente no mesmo armario, e a lista de ordens numeradas com um dedo apontando a
+da vez.
+
+Use tambem o Overview.txt como contexto curto.

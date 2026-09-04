@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A planta — Etapa 06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 06-01. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. Este episodio e o do
+     papel: nao tem foto de epoca e nao usa o componente troca-imagem. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/ordens.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-06.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20a%20l%C3%B3gica%20matem%C3%A1tica%20criou%20o%20computador.m4a" data-duracao="773"></audio>
+    <img class="tocador__capa" src="img/capa-ilustra.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como a lógica matemática criou o computador</div>
+      <div class="tocador__fonte">A máquina que liga · 01 · A planta</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="773" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">12:53</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que liga · episódio 01</div>
+      <h1 class="reveal">A planta</h1>
+      <p class="lede reveal">Do interruptor até uma máquina que faz conta e obedece ordem, <b>sem ligar nada</b>. De 1936 a 1948, tudo no papel. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>Isto é a planta, não o canteiro.</b> Enquanto estas ideias eram escritas, já tinha gente montando máquina de verdade em Berlim, em Harvard e na Pensilvânia. O canteiro é o próximo episódio.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal clicavel" data-abre="foto" data-legenda="A planta na bancada · reconstituição, não é foto de época">
+      <span class="selo">ilustração</span>
+      <img src="img/capa-ilustra.jpg" alt="Uma planta técnica aberta numa bancada, entre interruptores de porcelana e fios de cobre">
+      <figcaption>A planta na bancada · reconstituição, não é foto de época</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 1 · a primeira peça</div>
+    <h2 class="reveal">As três portas</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Dois em série é E, dois em paralelo é OU, um que inverte é NÃO · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/portas-ilustra.jpg" alt="Três circuitos com interruptores e lampadinhas, montados lado a lado numa placa de madeira">
+        <figcaption>Dois em série é E · dois em paralelo é OU · um que inverte é NÃO</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Tudo o que vem daqui pra frente, não importa o tamanho da máquina, é <b>combinação dessas três</b>.</p>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 1 · o número</div>
+    <h2 class="reveal">Um fio é um bit</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Oito fios, oito lampadinhas: aceso é 1, apagado é 0 · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/bits-ilustra.jpg" alt="Oito fios de cobre lado a lado, cada um terminando numa lampadinha, algumas acesas">
+        <figcaption>Aceso é 1, apagado é 0 · oito fios escrevem qualquer número até 255</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Casa a casa, <b>dobrando</b> em vez de multiplicar por dez: 1, 2, 4, 8, 16, 32, 64. O valor cresce rápido, e por isso poucos fios já dão conta de número grande.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="step">
+    <div class="kicker reveal">passo 2 · a primeira conta</div>
+    <h2 class="reveal">O meio somador</h2>
+    <div class="casos reveal">
+      <div class="casos__linha casos__linha--cabeca"><span>a</span><span>b</span><span>resultado</span><span>vai-um</span></div>
+      <div class="casos__linha"><span>0</span><span>0</span><span>0</span><span>0</span></div>
+      <div class="casos__linha"><span>0</span><span>1</span><span>1</span><span>0</span></div>
+      <div class="casos__linha"><span>1</span><span>0</span><span>1</span><span>0</span></div>
+      <div class="casos__linha casos__linha--forte"><span>1</span><span>1</span><span>0</span><span>1</span></div>
+    </div>
+    <p class="lede reveal">Somar dois bits dá quatro casos, e <b>duas portas resolvem</b>: um OU exclusivo dá o resultado da casa, um E dá o vai-um. Só falta uma coisa: ele não sabe receber o vai-um de quem veio antes.</p>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 2 · emendando</div>
+    <h2 class="reveal">Oito na fileira</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Oito somadores emendados, o vai-um subindo de um pro outro · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/somador-ilustra.jpg" alt="Uma fileira de oito módulos idênticos ligados em cadeia numa placa metálica">
+        <figcaption>O vai-um sai de um e entra no próximo · oito deles somam números de oito bits</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Com uma entrada a mais pro vai-um que chega de trás, o meio somador vira <b>somador completo</b>. Emenda oito e soma oito bits; emenda mais e soma o que quiser.</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step">
+    <div class="kicker reveal">passo 2 · o que mais ela faz</div>
+    <h2 class="reveal">Tudo é soma arrumada</h2>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">multiplicar</div><div class="texto">é somar repetido</div></div>
+      <div class="item"><div class="rotulo">dividir</div><div class="texto">é subtrair repetido</div></div>
+      <div class="item"><div class="rotulo">subtrair</div><div class="texto">é somar com o número escrito de outro jeito</div></div>
+    </div>
+    <p class="lede reveal">Nenhuma dessas contas pede <b>peça nova</b>. Pedem mais somas e um jeito de escrever número negativo.</p>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 3 · a peça que lembra</div>
+    <h2 class="reveal">O flip-flop</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Duas portas com as saídas cruzadas seguram um bit · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/flipflop-ilustra.jpg" alt="Dois circuitos frente a frente com as saídas cruzadas por dois fios, formando um laço">
+        <figcaption>A saída de uma na entrada da outra · um pulso grava, outro apaga</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Todos os circuitos até aqui entregam o resultado e esquecem. Este <b>segura um bit</b> enquanto tiver energia. É a primeira peça que não calcula: lembra.</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 3 · a memória</div>
+    <h2 class="reveal">A prateleira de caixas numeradas</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Caixas iguais por fora; o número da caixa é o endereço · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/prateleira-ilustra.jpg" alt="Uma prateleira com dezenas de caixinhas de metal iguais, uma puxada pra fora e iluminada">
+        <figcaption>O número da caixa é o endereço · o seletor acende uma só</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Uma fileira de flip-flops é uma <b>palavra</b>. Número, letra e ordem, tudo vira 0 e 1 guardado ali dentro, e a máquina não sabe qual é qual: quem sabe é quem lê.</p>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">passo 4 · 1936</div>
+    <h2 class="reveal">A máquina de fita</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A fita, o cabeçote e a tabela de regras · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/turing-ilustra.jpg" alt="Uma fita de papel dividida em quadradinhos correndo por um cabeçote de metal sobre uma mesa">
+        <figcaption>Lê e escreve símbolos numa fita, seguindo uma tabela de regras</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Em 1936, no papel, Alan Turing mostrou que uma máquina bem simples faz <b>qualquer conta</b> que uma pessoa faça com lápis e papel, desde que a conta tenha passo a passo.</p>
+    <div class="nota-cena reveal">esta máquina nunca foi construída: o desenho é reconstituição</div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step">
+    <div class="kicker reveal">passo 4 · a maior de todas</div>
+    <h2 class="reveal">Uma máquina que imita todas</h2>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">calculadora</div><div class="texto">faz o que foi construída pra fazer</div></div>
+      <div class="item"><div class="rotulo">computador</div><div class="texto">faz o que a tabela mandar, e a tabela é só mais um dado</div></div>
+    </div>
+    <p class="lede reveal">UMA máquina dessas pode imitar <b>qualquer outra</b>, se receber a tabela da outra como dado na fita. É a ideia que separa uma coisa da outra, e ela vale até hoje.</p>
+    <div class="nota-cena reveal">no mesmo ano, em Berlim, alguém começava a montar uma máquina de relés sem ter lido nada disso</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step">
+    <div class="kicker reveal">passo 5 · a máquina completa</div>
+    <h2 class="reveal">A lista de ordens</h2>
+    <div class="ordens reveal">
+      <div class="ordens__linha"><span class="ordens__num">01</span><span class="ordens__texto">carregar o número do endereço 40</span></div>
+      <div class="ordens__linha ordens__linha--vez"><span class="ordens__num">02</span><span class="ordens__texto">somar o número do endereço 41</span><span class="ordens__dedo">← o dedo está aqui</span></div>
+      <div class="ordens__linha"><span class="ordens__num">03</span><span class="ordens__texto">guardar o resultado no endereço 42</span></div>
+      <div class="ordens__linha"><span class="ordens__num">04</span><span class="ordens__texto">pular pra ordem 01</span></div>
+    </div>
+    <p class="lede reveal">Um <b>acumulador</b>, onde o resultado mora. Um <b>contador</b>, que diz qual é a próxima ordem. E um punhado de ordens com código. Pular pra outro endereço é mover o dedo, e é isso que faz o laço e a decisão.</p>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">o que nasce aqui</div>
+    <h2 class="reveal">A fronteira</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o programa</div>
+        <div class="desc">a lista de ordens, que mora na memória e pode ser trocada</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a máquina</div>
+        <div class="desc">o metal que executa as ordens, e que não muda quando a tarefa muda</div>
+      </div>
+    </div>
+    <p class="lede reveal">Interruptor vira porta, porta vira somador, somador e memória viram uma máquina que lê ordem, e a ordem é só mais um dado na memória. A planta está pronta: estamos em <b>1948</b>.</p>
+    <div class="nota-cena reveal">o próximo episódio volta pra 1936 e vai pro canteiro: as três primeiras máquinas que ligaram de verdade</div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

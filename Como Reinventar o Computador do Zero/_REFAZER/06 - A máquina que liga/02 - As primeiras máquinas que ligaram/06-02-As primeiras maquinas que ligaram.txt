@@ -1,0 +1,100 @@
+Inicie dizendo: As Primeiras Maquinas Que Ligaram
+---------------
+
+Siga exatamente as instrucoes do arquivo
+_NotebookLM_As Primeiras Maquinas Que Ligaram.txt enviado como fonte. Esse arquivo
+contem o roteiro completo do episodio, dividido por tela.
+
+Este e o segundo episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior desta mesma etapa, A
+PLANTA, montou um computador inteiro no papel, sem ligar nada. Este episodio e o
+canteiro: as maquinas que ligaram de verdade, no MESMO periodo em que a planta
+estava sendo escrita, em boa parte por gente que nem tinha visto a planta. Dizer
+isso na abertura, com todas as letras.
+
+ESTE EPISODIO COBRE DE 1936 A 1946. Dizer esse intervalo logo na abertura e, no
+encerramento, dizer em que ano o episodio para.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas.
+O audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada
+tela, na ordem do roteiro. NAO juntar duas telas num bloco so e NAO seguir adiante
+sem pedir. Avisar na tela 1 que a pagina tem 12 telas e que quem esta so ouvindo
+acompanha normalmente.
+
+O BOTAO DE FOTO REAL E ILUSTRACAO. Nas telas que tem as duas versoes existe um
+botao que troca entre a foto de epoca e o desenho, que mostra o que a foto nao
+mostra. Avisar isso em UMA frase, na tela 1, e nunca mais. NAO mandar apertar.
+
+FOCO: a peca que faltava pra sair do papel (um interruptor que abre e fecha
+sozinho, aos milhares) e as tres primeiras maquinas programaveis que funcionaram
+de verdade. O Z3 de Konrad Zuse, Berlim, 1941, 2600 reles, binario, destruido num
+bombardeio em 1943. O Harvard Mark I de Howard Aiken, 1944, feito e pago pela IBM,
+decimal, quinze metros, nascido do reencontro com o latao da maquina inacabada de
+Babbage. A troca do rele pela valvula, muito mais rapida porque nao tem peca que
+se mexe. E o ENIAC de Presper Eckert e John Mauchly, 1945 e 1946, 18 mil valvulas,
+trinta toneladas, encomendado pra calcular tabela de tiro, programado mudando cabo
+de painel, trabalho de dias feito por seis mulheres.
+
+DAR OS NUMEROS DE CADA MAQUINA, sempre que o roteiro pedir. Velocidade: o rele leva
+de cinco a dez milesimos de segundo por chaveamento (no maximo umas cem a duzentas
+vezes por segundo, e as maquinas da epoca andavam em cinco a dez), a valvula
+chaveia em milionesimos e passa de um milhao de vezes por segundo, mas o ENIAC ficou
+segurado em cem mil. Contas por segundo: o Mark I fazia tres somas por segundo, o
+ENIAC cinco mil. Memoria: 64 palavras de 22 bits no Z3, 72 numeros de 23 casas
+decimais no Mark I (mais 60 fixos na chave), 20 numeros de dez casas no ENIAC.
+Armazenamento nao existia em nenhuma: entrada por fita ou cartao, saida impressa ou
+perfurada de volta em cartao, e a maquina esquecia tudo ao desligar. Amarrar isso
+com a prateleira de caixas numeradas que o episodio anterior explicou.
+
+SEPARAR AS DUAS HISTORIAS DE MULHERES. A tela 10 existe pra isso. Depois de falar
+das seis do ENIAC, dizer em duas ou tres frases que elas NAO sao as calculistas
+negras da NASA que ficaram conhecidas por um filme: outro estado, quase vinte anos
+depois, corrida espacial, e nao a construcao do computador. NAO citar nome de
+filme, de pessoa nem de agencia. So deixar claro que sao dois grupos diferentes,
+porque a troca e comum.
+
+SEM BIOGRAFIA. Esta e a trilha principal da serie, que so carrega o que a proxima
+peca precisa. NAO contar onde cada pessoa nasceu, de que familia veio, onde
+estudou nem quando morreu. Cada pessoa entra so com o que fez e por que fez. A
+vida delas e assunto da trilha de extras.
+
+GANCHOS DE EXTRA. Em seis momentos o roteiro marca GANCHO DE EXTRA: o rele e a
+valvula (os dois numa frase so, na tela 4), a medida de quantas vezes por segundo a
+peca liga e desliga (tela 5), o Z3 e quem montou ele (tela 6), o sistema decimal e a
+empresa que fabricou o Mark I (uma frase so, tela 7), o ENIAC (tela 8) e as seis
+programadoras (tela 10). Em cada um, dizer em UMA frase que existe um episodio
+extra so sobre aquilo, pra quem quiser ir fundo, e seguir na hora. NAO dizer o nome
+nem o numero do extra e NAO explicar o assunto dele. O gancho e um convite de uma
+frase, nunca um desvio.
+
+NAO explicar programa armazenado, von Neumann, Manchester Baby, EDSAC, compilador,
+Grace Hopper nem transistor: sao os proximos episodios. So citar o programa
+armazenado na ultima tela.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As
+unicas autorizadas sao o rele como porta que alguem empurra contra a valvula como
+porta que abre sozinha quando a luz acende, programar o ENIAC como trocar a fiacao
+de uma casa inteira pra mudar de lampada, e a prateleira de caixas numeradas do
+episodio anterior.
+
+Use tambem o Overview.txt como contexto curto.

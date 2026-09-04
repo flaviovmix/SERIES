@@ -88,7 +88,7 @@ Etapa inteira de **conceito** — não há máquina histórica pra copiar, o mod
 
 | Objeto | Episódio | Status |
 |---|---|---|
-| Transistor de ponto de contato de 1947, em corte, ao lado da válvula | `01 - O transistor` | 🔴 |
+| Transistor de ponto de contato de 1947, em corte, ao lado da válvula | `01 - O transistor` | 🟢 `transistor.html` (02/09; feito o de junção em corte, ampliado, com o de tamanho real ao lado, não o de ponto de contato) |
 | Wafer → die → encapsulamento, e o 4004 ampliado | `02 - O chip` | 🔴 |
 
 ## Etapa 9 — Da sala pro mundo
@@ -112,6 +112,8 @@ Etapa inteira de **conceito** — não há máquina histórica pra copiar, o mod
 |---|---|---|
 | Prédio com caixa d'água (V, A, Ω, W) | `01 - Volt Ampere e Watt` | 🟢 `predio-da-agua.html` |
 | **conceito** Domínios magnéticos (agulhinhas bagunçadas → alinhadas) | `02 - Por que o Ima Gruda` | 🔴 |
+| Relé por dentro: bobina, armadura e o contato que se fecha (pedido do dono, 02/09) | extra do relé, a criar | 🟢 `rele.html` (02/09) |
+| Válvula por dentro: filamento, grade e placa, sem peça que se mexe (pedido do dono, 02/09) | extra da válvula, a criar | 🟢 `valvula.html` (02/09) |
 
 ---
 

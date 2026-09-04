@@ -1,0 +1,76 @@
+/* episodio
+   O episódio aberto na própria página da etapa, quando a etapa tem um só e não há
+   lista pra escolher: arte, áudio e a ação de abrir a animação. Depende de tokens.css,
+   base.css e do botão que vem de capitulo.css. */
+
+.episodio__capa {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+
+.episodio__capa img {
+  display: block;
+  width: 100%;
+}
+
+/* o botão do card nasce encostado à direita do pé; solto na página, começa na margem */
+.episodio__acao {
+  margin: 18px 0 0;
+}
+
+.episodio__acao .cap__botao {
+  display: inline-block;
+  margin-left: 0;
+  font-family: var(--fonte-mono);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+/* a ficha do episódio no lugar onde o player ficava: quanto dura e quantas telas */
+.episodio__ficha {
+  margin: 14px 0 0;
+  font-family: var(--fonte-mono);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* o texto do episódio: leitura corrida, num corpo maior que a nota da seção,
+   porque aqui é o conteúdo da página e não uma legenda */
+.episodio__texto {
+  max-width: 68ch;
+  margin: 20px 0 0;
+}
+
+.episodio__texto p {
+  margin: 0 0 16px;
+  font-size: 1.06rem;
+  line-height: 1.68;
+  color: var(--ink-soft);
+}
+
+.episodio__texto p:last-child {
+  margin-bottom: 0;
+}
+
+.episodio__texto strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* no telefone o botão vira faixa: alvo grande e no lugar onde o polegar está */
+@media (max-width: 640px) {
+  .episodio__acao .cap__botao {
+    display: block;
+    width: 100%;
+    padding: 15px 16px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: .74rem;
+  }
+}

@@ -55,7 +55,9 @@
     if (!galeria.length) return;
     fotoAtual = (i + galeria.length) % galeria.length;   // da a volta nas duas pontas
     const foto = galeria[fotoAtual];
-    const original = foto.querySelector('img');
+    // Numa figura com duas versoes (troca-imagem), a que esta em cena leva o
+    // data-em-cena; nas outras figuras existe uma imagem so.
+    const original = foto.querySelector('img[data-em-cena]') || foto.querySelector('img');
     img.src = original.src;
     img.alt = original.alt;
     const cap = foto.querySelector('figcaption');

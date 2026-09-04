@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O programa que mora na memória — Etapa 06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 06-03. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. A lista de ordens das
+     telas 6, 7 e 8 e o componente ordens.css, que nasceu no 06-01. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/troca-imagem.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/ordens.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-06.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Quando%20o%20programa%20entrou%20na%20mem%C3%B3ria.m4a" data-duracao="877"></audio>
+    <img class="tocador__capa" src="img/eniac-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Quando o programa entrou na memória</div>
+      <div class="tocador__fonte">A máquina que liga · 03 · O programa que mora na memória</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="877" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">14:37</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que liga · episódio 03</div>
+      <h1 class="reveal">O programa que mora na memória</h1>
+      <p class="lede reveal">De <b>1945 a 1949</b>. Uma peça só, mas é a peça que separa uma calculadora automática de um computador. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>Onde a gente parou.</b> Z3, Mark I e ENIAC já calculavam sozinhos, mas o programa morava fora: na fita, no cabo, na chave. Trocar de tarefa era trabalho braçal de dias.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal clicavel" data-abre="foto" data-legenda="O ENIAC na Universidade da Pensilvânia · foto: TexasDex, CC BY-SA 3.0">
+      <span class="selo">imagem real</span>
+      <img src="img/eniac-real.jpg" alt="Os painéis do ENIAC do chão ao teto, com cabos e mostradores">
+      <figcaption>O ENIAC, 1946 · foto: TexasDex, CC BY-SA 3.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a peça</div>
+    <h2 class="reveal">A mesma caixa serve pras duas coisas</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Caixas iguais por fora: numa mora um número, na outra uma ordem · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/peca-ilustra.jpg" alt="Duas caixinhas iguais abertas numa prateleira, uma guardando um número e a outra uma ordem">
+        <figcaption>O que decide se aquilo é ordem ou número não é a caixa: é o momento em que a máquina abre</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Não precisou inventar material novo. A memória já era uma fileira de posições numeradas guardando zeros e uns, e <b>ordem e número cabem no mesmo formato</b>.</p>
+    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o que muda no dia a dia</div>
+    <h2 class="reveal">Dias viram segundos</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A receita sai da parede e entra no armário, junto dos ingredientes · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/armario-ilustra.jpg" alt="Um armário de cozinha aberto com potes de mantimento e um caderno de receitas na mesma prateleira">
+        <figcaption>Antes, a receita ficava pregada na parede e trocar de prato era arrancar a folha</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Trocar de tarefa deixa de ser arrancar cabo e vira <b>carregar outro conteúdo na memória</b>. Toda a velocidade que os circuitos ganhavam sumia na preparação: agora não some mais.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">30 de junho de 1945</div>
+      <h2 class="reveal">O rascunho</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">nome</div><div class="texto">First Draft of a Report on the EDVAC</div></div>
+        <div class="item reveal"><div class="rotulo">o que descrevia</div><div class="texto">unidade aritmética, unidade de controle, memória, entrada e saída</div></div>
+        <div class="item reveal"><div class="rotulo">a novidade</div><div class="texto">uma memória única guardando os números <b>e</b> as ordens</div></div>
+        <div class="item reveal"><div class="rotulo">o que ficou</div><div class="texto">a planta do que a gente chama de computador até hoje</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A capa do First Draft, 1945 · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/rascunho-real.jpg" alt="A primeira página datilografada do First Draft of a Report on the EDVAC">
+        <figcaption>A capa do rascunho, 1945 · domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o problema que veio junto</div>
+      <h2 class="reveal">O nome que ficou</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que aconteceu</div><div class="texto">o rascunho circulou com um nome só na capa</div></div>
+        <div class="item reveal"><div class="rotulo">o que diziam os outros</div><div class="texto">Eckert e Mauchly, no projeto desde antes, sustentavam que a ideia nasceu das reuniões do grupo</div></div>
+        <div class="item reveal"><div class="rotulo">a consequência</div><div class="texto">o documento virou público, e ser público derrubou na justiça a patente que eles tentaram sustentar</div></div>
+      </div>
+      <p class="lede reveal">A ideia era do grupo, o nome que ficou foi de um só. Isso vai acontecer de novo mais de uma vez nesta série.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="John von Neumann · foto: Los Alamos Laboratory">
+        <span class="selo">imagem real</span>
+        <img src="img/vonneumann-real.jpg" alt="Foto de crachá de John von Neumann no laboratório de Los Alamos">
+        <figcaption>John von Neumann · foto: Los Alamos Laboratory</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step">
+    <div class="kicker reveal">a primeira consequência</div>
+    <h2 class="reveal">Salto condicional</h2>
+    <div class="ordens reveal">
+      <div class="ordens__linha"><span class="ordens__num">01</span><span class="ordens__texto">somar o número do endereço 40</span></div>
+      <div class="ordens__linha ordens__linha--vez"><span class="ordens__num">02</span><span class="ordens__texto">se o resultado for zero, ir pra ordem 04</span><span class="ordens__dedo">← o dedo está aqui</span></div>
+      <div class="ordens__linha"><span class="ordens__num">03</span><span class="ordens__texto">guardar o resultado no endereço 42</span></div>
+      <div class="ordens__linha ordens__linha--alvo"><span class="ordens__num">04</span><span class="ordens__texto">parar</span><span class="ordens__seta">destino do pulo</span></div>
+    </div>
+    <p class="lede reveal">Se a ordem é um número na memória, a máquina pode <b>fazer conta com a própria ordem</b>, e calcular pra onde ir. É daí que sai o "se der isso, vá pra lá".</p>
+  </section>
+
+  <!-- 7 -->
+  <section class="step">
+    <div class="kicker reveal">a segunda consequência</div>
+    <h2 class="reveal">Laço</h2>
+    <div class="ordens reveal">
+      <div class="ordens__linha ordens__linha--alvo"><span class="ordens__num">01</span><span class="ordens__texto">somar 1 ao número do endereço 40</span><span class="ordens__seta">volta pra cá</span></div>
+      <div class="ordens__linha"><span class="ordens__num">02</span><span class="ordens__texto">guardar no endereço 40</span></div>
+      <div class="ordens__linha ordens__linha--vez"><span class="ordens__num">03</span><span class="ordens__texto">se ainda não chegou em 100, ir pra ordem 01</span><span class="ordens__dedo">← o dedo está aqui</span></div>
+      <div class="ordens__linha"><span class="ordens__num">04</span><span class="ordens__texto">parar</span></div>
+    </div>
+    <p class="lede reveal">Se ela calcula o endereço da próxima ordem, ela pode <b>voltar num pedaço que já executou</b>. Repetir a mesma coisa mudando um número: é o laço.</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="step">
+    <div class="kicker reveal">a terceira consequência</div>
+    <h2 class="reveal">Sub-rotina</h2>
+    <div class="ordens reveal">
+      <div class="ordens__linha"><span class="ordens__num">01</span><span class="ordens__texto">chamar o trecho do endereço 90</span><span class="ordens__seta">→ 90</span></div>
+      <div class="ordens__linha"><span class="ordens__num">02</span><span class="ordens__texto">chamar o trecho do endereço 90</span><span class="ordens__seta">→ 90</span></div>
+      <div class="ordens__linha"><span class="ordens__num">03</span><span class="ordens__texto">chamar o trecho do endereço 90</span><span class="ordens__seta">→ 90</span></div>
+      <div class="ordens__linha ordens__linha--alvo"><span class="ordens__num">90</span><span class="ordens__texto">o trecho, escrito uma vez só</span></div>
+    </div>
+    <p class="lede reveal">Um trecho que serve pra várias tarefas pode ser <b>guardado e chamado de novo</b>, em vez de reescrito. Salto, laço e rotina pronta, juntos, são o que separa uma calculadora automática de um computador.</p>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">Manchester · 21 de junho de 1948</div>
+      <h2 class="reveal">O Baby</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">pra que servia</div><div class="texto">testar um tipo novo de memória: um tubo que guardava 32 palavras de 32 bits</div></div>
+        <div class="item reveal"><div class="rotulo">o que rodou</div><div class="texto">17 instruções guardadas na própria memória, procurando o maior divisor próprio de 262144</div></div>
+        <div class="item reveal"><div class="rotulo">quanto levou</div><div class="texto">cerca de 52 minutos</div></div>
+        <div class="item reveal"><div class="rotulo">por que importa</div><div class="texto">foi a primeira vez que uma máquina executou um programa que estava dentro dela</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="troca retrato clicavel reveal" data-ver="real" data-abre="foto" data-legenda="Réplica do Manchester Baby · foto: Logg Tandy, CC BY 4.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/baby-real.jpg" alt="A réplica do Manchester Baby, armários de válvulas e uma tela redonda">
+          <img class="troca__img" src="img/baby-ilustra.jpg" alt="Ilustração: um tubo de raios catódicos aceso mostrando uma grade de pontos luminosos">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Réplica do Baby, no museu · foto: Logg Tandy, CC BY 4.0</span>
+          <span class="troca__aviso">A memória por dentro: um tubo de raios catódicos guardando os bits como pontos na tela · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">Cambridge · 6 de maio de 1949</div>
+      <h2 class="reveal">O EDSAC</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a memória</div><div class="texto">linhas de atraso de mercúrio, os bits circulando dentro do tubo</div></div>
+        <div class="item reveal"><div class="rotulo">a diferença</div><div class="texto">entrou em serviço de verdade, pra gente de outros departamentos usar</div></div>
+        <div class="item reveal"><div class="rotulo">o que nasceu ali</div><div class="texto">a sub-rotina na prática e a primeira biblioteca de rotinas prontas</div></div>
+      </div>
+      <p class="lede reveal">O Baby provou que dá. O EDSAC transformou aquilo em <b>serviço de todo dia</b>.</p>
+    </div>
+    <div class="retratos">
+      <figure class="troca retrato clicavel reveal" data-ver="real" data-abre="foto" data-legenda="O EDSAC em Cambridge · foto: Wikimedia Commons, CC BY 2.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/edsac-real.jpg" alt="O EDSAC em Cambridge, armários altos cheios de válvulas e fios">
+          <img class="troca__img" src="img/edsac-ilustra.jpg" alt="Ilustração: tubos de mercúrio montados em fileiras numa estrutura de aço">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">O EDSAC em Cambridge · foto: Wikimedia Commons, CC BY 2.0</span>
+          <span class="troca__aviso">As linhas de atraso de mercúrio, onde os bits ficavam circulando · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1949</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o que a máquina já faz</div>
+        <div class="desc">guarda a ordem junto com o número, troca de tarefa em segundos, salta, repete e reusa pedaço pronto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que ainda incomoda</div>
+        <div class="desc">o programa continua sendo escrito na mão, em binário, instrução por instrução</div>
+      </div>
+    </div>
+    <p class="lede reveal">A forma do computador moderno está de pé. Falta a pergunta que abre o próximo passo: <b>por que a própria máquina não traduz</b>, se traduzir também é uma tarefa?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="../../../../site/js/animacao/troca-imagem.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

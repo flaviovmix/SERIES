@@ -1,0 +1,44 @@
+O TRANSISTOR - CONTEXTO
+=======================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco
+ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1947 a
+1955.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega o
+que a proxima peca precisa. Todo aprofundamento (uma peca por dentro, a vida de um
+inventor, um conceito esmiucado) mora numa trilha separada de episodios extras,
+avulsos. Este episodio e da trilha principal e nao conta biografia de ninguem.
+
+Onde a serie estava: a etapa anterior terminou em 1959. O computador ja guarda a
+propria ordem na memoria e ja aceita ordem escrita na nossa lingua, traduzida por um
+compilador. Ele ficou esperto. Mas continua sendo uma sala inteira de valvulas que
+esquentam, gastam energia e queimam. Ele nao ficou menor.
+
+Este episodio troca a peca que decide o tamanho de tudo, em cinco passos:
+
+1. O que a valvula custa: ela funciona porque um filamento incandescente solta
+   eletrons no vacuo. Isso significa calor, consumo alto e um filamento que um dia
+   queima, como o de uma lampada. Numa maquina com dezoito mil delas, sempre tem
+   alguma queimando, e o tamanho vem junto: cada uma e do tamanho de um dedo.
+2. O material do meio: existe uma classe de material que nao e nem condutor nem
+   isolante, o semicondutor, e que conduz ou nao conduz dependendo do que a gente
+   fizer com ele. Germanio primeiro, silicio depois.
+3. A dopagem: misturando uma quantidade minuscula de outro elemento no cristal, ele
+   fica com eletrons sobrando (tipo N) ou faltando (tipo P). E a mesma pedra, com
+   comportamento eletrico diferente.
+4. A juncao: encostando um pedaco N num pedaco P, a corrente passa num sentido e nao
+   passa no outro, sem nenhuma peca se mexendo. Empilhando tres camadas, N-P-N, a
+   camada do meio vira um comando: uma corrente pequena nela decide se a corrente
+   grande atravessa. E o transistor, e ele faz o que a valvula fazia.
+5. O que muda na pratica: nao tem filamento, entao nao esquenta do mesmo jeito, gasta
+   uma fracao da energia, dura muito mais e e muito menor. E, o mais importante pra
+   serie, ele pode ficar cada vez menor sem parar de funcionar.
+
+O episodio precisa deixar claro que a peca e a MESMA funcao de sempre, o interruptor
+comandado por eletricidade que a etapa da maquina que liga procurava. O que muda e
+do que ele e feito, e e isso que abre o encolhimento que vem nos proximos episodios.
+
+Use este contexto apenas como apoio.

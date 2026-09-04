@@ -1,0 +1,44 @@
+O COMPILADOR - CONTEXTO
+=======================
+Documento curto de contexto para uso com NotebookLM.
+
+Quarto e ultimo episodio da etapa A MAQUINA QUE LIGA, da serie Como Reinventar o
+Computador do Zero. A serie reconstroi o computador do zero, do abaco ate a
+inteligencia artificial, uma peca por episodio. Este episodio cobre de 1949 a 1959.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega o
+que a proxima peca precisa. Todo aprofundamento (uma peca por dentro, a vida de um
+inventor, um conceito esmiucado) mora numa trilha separada de episodios extras,
+avulsos. Este episodio e da trilha principal e nao conta biografia de ninguem.
+
+Onde a serie estava: o episodio anterior terminou em 1949, com a maquina guardando
+a ordem na mesma memoria dos numeros. Ela ja salta, repete e reusa pedaco pronto. O
+que ficou incomodando: esse programa continua sendo escrito na mao, em binario,
+instrucao por instrucao. Escrever pra maquina e falar a lingua da maquina, e a
+pergunta que ficou no ar foi: por que a propria maquina nao traduz, se traduzir
+tambem e uma tarefa?
+
+Este episodio responde essa pergunta, em cinco passos:
+
+1. Como era escrever em binario: cada instrucao e um numero, cada endereco e um
+   numero, tudo anotado a mao em papel quadriculado e depois furado em cartao ou
+   fita. Um numero errado no meio quebra tudo, e achar o erro e ler numero.
+2. O assembler: em vez do numero da instrucao, uma palavra curta (somar, carregar,
+   guardar) e um nome no lugar do endereco. Um programa pequeno troca palavra por
+   numero, uma por uma. E a primeira vez que a maquina trabalha pra quem escreve.
+3. A ideia grande: se traduzir e uma tarefa com passo a passo, entao a maquina pode
+   fazer isso tambem. Em 1952 aparece o A-0, que monta um programa juntando pedacos
+   prontos guardados em fita. Houve resistencia sincera: a ideia de que so gente
+   escreve programa era o consenso da epoca.
+4. FORTRAN, 1957: escrever a formula do jeito que ela e escrita no papel, e o
+   tradutor gera o codigo. Foi feito pra convencer quem duvidava, entao o objetivo
+   declarado era gerar codigo tao bom quanto o escrito a mao.
+5. COBOL, 1959: escrever em ingles, com frases, pra quem trabalha com dado e nao
+   com formula. E a mesma ideia levada pro outro lado do escritorio.
+
+O ponto que o episodio precisa deixar claro: quando a traducao vira tarefa da
+maquina, o programa deixa de pertencer a uma maquina so. O que estava escrito na
+lingua de um computador especifico passa a poder rodar em outro, e o trabalho de
+programar deixa de ser trabalho de eletronica.
+
+Use este contexto apenas como apoio.

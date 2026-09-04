@@ -1,0 +1,7 @@
+Titulo: Z3 Mark I e ENIAC na tomada
+Notebook: 06-02-As primeiras maquinas que ligaram
+
+Descricao:
+As fontes detalham o roteiro e o contexto de um episódio de podcast focado na transição dos computadores teóricos para as primeiras máquinas físicas operacionais entre 1936 e 1946. O texto descreve o funcionamento do Z3, do Harvard Mark I e do ENIAC, destacando a evolução tecnológica dos relés eletromecânicos para as válvulas eletrônicas. Um ponto central da narrativa é a distinção entre a velocidade de processamento e a dificuldade de programação, que na época exigia intervenções físicas como a troca de cabos e fitas. O conteúdo também ressalta o papel fundamental das mulheres programadoras do ENIAC e as limitações de memória dessas máquinas pioneiras. Por fim, o material estabelece a base para o próximo estágio da computação, onde as instruções passariam a ser armazenadas internamente junto aos dados.
+
+Link: https://notebook.google.com/notebook/e4fa56be-4817-4792-ab8f-03647e6d4a65

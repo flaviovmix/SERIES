@@ -1,0 +1,7 @@
+Titulo: Código de IA é uma bomba relógio
+Notebook: 01-01-A bomba-relógio
+
+Descricao:
+O primeiro episódio da série Java Web, intitulado A Bomba-Relógio, discute os riscos de utilizar inteligência artificial na programação sem a devida compreensão técnica. Embora reconheça a utilidade da automação, o conteúdo alerta que aceitar códigos prontos sem entender sua lógica interna cria problemas latentes que surgirão apenas no futuro. O texto detalha quatro formas comuns de falhas, como a dificuldade em alterar regras de negócio ou a vulnerabilidade a brechas de segurança desconhecidas. Para evitar que o sistema se torne uma "caixa preta" impossível de consertar, o autor propõe uma régua de três perguntas essenciais sobre o funcionamento e os limites do código. O objetivo central é incentivar o desenvolvimento manual de uma aplicação completa para transformar a IA em uma ferramenta controlada pelo programador, em vez de uma fonte de dependência. Essa abordagem pedagógica utiliza o Java como base, mas reforça que os princípios de entendimento e clareza técnica valem para qualquer linguagem de programação.
+
+Link: https://notebook.google.com/notebook/c7d7ee5b-78b9-46a8-aebb-8d16e5b5dfae

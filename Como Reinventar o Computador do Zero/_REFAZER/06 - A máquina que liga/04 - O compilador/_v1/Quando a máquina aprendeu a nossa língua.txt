@@ -1,0 +1,7 @@
+Titulo: Quando a máquina aprendeu a nossa língua
+Notebook: 06-04-O compilador
+
+Descricao:
+Estes documentos detalham o episódio final da série Como Reinventar o Computador do Zero, intitulado O Compilador, que explora a evolução da programação entre 1949 e 1959. O roteiro descreve a transição crucial do código binário manual para ferramentas de tradução como o assembler e as primeiras linguagens de alto nível, como FORTRAN e COBOL. Através de uma narrativa técnica e causal, as fontes explicam como a própria máquina assumiu a tarefa de traduzir instruções humanas, permitindo que os programas se tornassem independentes do hardware. O material também aborda as resistências da época e o impacto histórico de transformar a programação em uma atividade lógica em vez de eletrônica. Por fim, o texto estabelece as diretrizes de produção para o conteúdo, garantindo que a explicação mantenha um foco prático sem distrações biográficas.
+
+Link: https://notebook.google.com/notebook/b0285eb3-00cc-443d-bb63-ae43fc9b2d30

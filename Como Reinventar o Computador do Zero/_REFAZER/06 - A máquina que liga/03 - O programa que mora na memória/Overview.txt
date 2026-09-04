@@ -1,0 +1,45 @@
+O PROGRAMA QUE MORA NA MEMORIA - CONTEXTO
+=========================================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco
+ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1945
+a 1949.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega o
+que a proxima peca precisa. Todo aprofundamento (a vida de um inventor, um sistema
+de numeracao, uma ferramenta por dentro) mora numa trilha separada de episodios
+extras, avulsos. Este episodio e da trilha principal: ele nao para pra contar a
+biografia de ninguem.
+
+O episodio anterior, As Primeiras Maquinas Que Ligaram, cobriu de 1936 a 1946 e
+terminou com o ENIAC apresentado ao mundo. As tres maquinas daquele episodio, Z3,
+Mark I e ENIAC, calculavam sozinhas, mas nenhuma guardava o programa na memoria.
+Os numeros ficavam dentro da maquina; as ordens ficavam fora, em fita, cabo ou
+chave. Trocar de tarefa no ENIAC era mudar cabo de painel, trabalho de dias.
+
+Este episodio resolve isso com uma peca so: guardar a ordem no mesmo lugar onde ja
+moram os numeros.
+
+Cobre o First Draft of a Report on the EDVAC, rascunho escrito por John von
+Neumann e distribuido em 30 de junho de 1945, que descreveu uma maquina com
+unidade aritmetica, unidade de controle, memoria, entrada e saida, e sobretudo com
+uma memoria unica guardando tanto os numeros quanto as ordens. Cobre tambem a
+briga de credito que veio junto: o documento circulou so com o nome de von
+Neumann, e Presper Eckert e John Mauchly sustentavam que a ideia tinha nascido das
+reunioes da Moore School antes dele entrar no projeto.
+
+Cobre as duas primeiras maquinas que fizeram isso funcionar. O Manchester Baby,
+que em 21 de junho de 1948 rodou um programa de 17 instrucoes guardado na propria
+memoria, num tubo Williams de 32 palavras de 32 bits, levando cerca de 52 minutos
+pra achar o maior divisor proprio de 262144. E o EDSAC de Cambridge, que rodou em
+6 de maio de 1949 usando linhas de atraso de mercurio, entrou em servico regular e
+trouxe a sub-rotina e a primeira biblioteca de rotinas prontas.
+
+Ao final o ouvinte entende por que guardar a ordem junto do numero muda tudo: a
+maquina passa a trocar de tarefa em segundos, em vez de dias, e passa a poder ler
+e alterar o proprio programa. E entende o que ainda falta: esse programa continua
+sendo escrito em binario, na mao.
+
+Use este contexto apenas como apoio.

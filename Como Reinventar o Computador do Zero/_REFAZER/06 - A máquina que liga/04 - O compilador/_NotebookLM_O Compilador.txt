@@ -1,0 +1,233 @@
+Inicie dizendo: O Compilador
+---------------
+
+Este e o quarto e ultimo episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da
+serie Como Reinventar o Computador do Zero. O episodio anterior terminou em 1949,
+com a maquina guardando a ordem na mesma memoria dos numeros, saltando, repetindo e
+reusando pedaco pronto. E terminou com uma pergunta no ar: por que a propria
+maquina nao traduz, se traduzir tambem e uma tarefa?
+
+ESTE EPISODIO COBRE DE 1949 A 1959. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou.
+
+REGRA DURA DAS TELAS. Este episodio tem 11 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 10 vezes, uma no fim de cada tela, na ordem. NAO juntar o
+conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte e NAO
+seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela
+quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela
+errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 6, 7 e 8. Sao tres linguagens diferentes, de anos
+diferentes, e a tentacao de despachar as tres num bloco so de "linguagens de
+programacao" e grande. Nao juntar: a 6 e o A-0 e a resistencia que veio junto, a 7 e
+o FORTRAN, a 8 e o COBOL, cada uma com o seu pedido de Proximo.
+
+O BOTAO DE FOTO REAL E ILUSTRACAO ja foi explicado nesta etapa. NAO explicar de
+novo.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de
+extras. A principal so carrega o que a proxima peca precisa. Todo aprofundamento
+mora num extra avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. Nada de onde nasceu, de que familia veio, onde
+  estudou, patente militar ou quando morreu. Cada pessoa entra so com o que fez e
+  por que fez.
+- Onde o roteiro escrever GANCHO DE EXTRA, dizer de forma curta e generica que
+  existe um episodio extra so sobre aquilo, pra quem quiser ir fundo, e seguir em
+  frente na hora. NAO dizer o nome nem o numero do extra e NAO explicar o assunto
+  dele.
+
+A FRASE DO PEDIDO E SEMPRE A MESMA: "aperte o Proximo". NAO usar "vamos para o
+proximo", "vamos pro proximo", "seguimos" nem nenhuma outra forma. O cortador que
+monta a animacao procura essa frase exata: qualquer variacao faz duas telas virarem
+uma, e quem esta com a pagina aberta fica olhando a tela errada.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: mil novecentos e cinquenta e dois, mil
+novecentos e cinquenta e sete, mil novecentos e cinquenta e nove. NAO dizer o ano
+corrido, porque sai embolado e vira outro numero.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O dicionario: o assembler troca palavra por numero consultando uma lista, uma de
+  cada vez, sem entender nada do que esta traduzindo.
+- O tradutor: o compilador le a frase inteira, entende o que ela pede e escreve o
+  texto equivalente na outra lingua. Traduzir palavra a palavra e uma coisa;
+  traduzir a intencao e outra.
+- A lista de ordens numeradas, que os episodios anteriores desta etapa ja usaram.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A PERGUNTA QUE FICOU
+
+Retomar em duas frases: no episodio anterior a ordem entrou na memoria, junto com
+os numeros. A maquina passou a saltar, repetir e chamar pedaco pronto.
+
+Dizer o que ainda incomodava, com todas as letras: esse programa era escrito na
+mao, em binario, instrucao por instrucao. Falar com a maquina era falar a lingua
+dela.
+
+Dizer o intervalo em voz alta: este episodio cobre de 1949 a 1959, e ele responde
+aquela pergunta do fim do episodio passado.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 11 telas, que quem
+esta so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a
+tela quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra ver como era escrever assim.
+
+TELA 2 - ESCREVER EM BINARIO
+
+Descrever o trabalho, sem drama: cada instrucao e um numero, cada endereco e um
+numero. A pessoa escreve tudo em papel quadriculado, confere na mao e depois fura
+cartao ou fita.
+
+Dizer o custo real: trocar uma ordem de lugar muda todos os enderecos depois dela.
+Um digito errado no meio nao avisa nada, so da resultado errado, e procurar o erro
+e ler numero, linha por linha.
+
+Fechar pedindo o Proximo pra ver o primeiro alivio.
+
+TELA 3 - O ASSEMBLER
+
+Explicar: em vez do numero da instrucao, uma palavra curta que a pessoa lembra, tipo
+somar, carregar, guardar. E em vez do numero do endereco, um nome. Um programa
+pequeno le isso e troca cada palavra pelo numero certo.
+
+Usar a analogia do dicionario: ele troca palavra por numero consultando uma lista,
+uma de cada vez, sem entender nada do que esta traduzindo. E pouco, mas e a primeira
+vez que a maquina faz trabalho pra quem escreve, e nao so pra quem calcula.
+
+Dizer a limitacao, porque ela arma o resto do episodio: uma palavra continua virando
+uma instrucao. O trabalho de pensar continua todo com a pessoa.
+
+Fechar pedindo o Proximo pra ver a ideia que muda isso.
+
+TELA 4 - SE TRADUZIR E UMA TAREFA
+
+Explicar a virada devagar, porque e o coracao do episodio: traduzir tem passo a
+passo. Ler um texto, procurar cada pedaco numa tabela, escrever o resultado. E
+qualquer coisa com passo a passo, este mesmo episodio ja mostrou, a maquina faz.
+
+Dizer o que isso significa: se a maquina pode traduzir, entao a pessoa pode escrever
+numa lingua confortavel pra ela, e a maquina se vira pra chegar na lingua dela.
+
+Usar a analogia do tradutor: nao e trocar palavra por palavra, e ler o que foi
+pedido e escrever o equivalente do outro lado.
+
+Fechar pedindo o Proximo pra ver a primeira vez que isso rodou.
+
+TELA 5 - O A-0, 1952
+
+Contar o que era: um programa que montava outro programa. A pessoa escrevia uma
+lista de chamadas, cada uma apontando pra uma rotina pronta guardada em fita, e o
+A-0 juntava tudo naquela ordem e entregava o programa completo.
+
+Dizer por que isso conta como o comeco do compilador: a maquina passou a gerar
+programa, e nao so a executar programa.
+
+GANCHO DE EXTRA: aqui, em uma frase, avisar que a pessoa que atacou esse problema
+tem um extra so pra ela, pra quem quiser ir fundo. Uma frase e seguir. NAO contar
+nome, patente, nem historia de vida.
+
+Fechar pedindo o Proximo pra ver a reacao que a ideia recebeu.
+
+TELA 6 - A RESISTENCIA
+
+Contar, sem transformar em briga: o consenso da epoca era que programa se escreve a
+mao, e que a maquina nunca escreveria codigo tao bom quanto o de uma pessoa boa. O
+argumento nao era tolice: memoria era carissima e tempo de maquina tambem, e um
+tradutor que gerasse codigo gordo custava dinheiro de verdade.
+
+Dizer como isso foi resolvido: mostrando funcionar, e mostrando que o codigo gerado
+era bom o bastante.
+
+Fechar pedindo o Proximo pra ver o que convenceu.
+
+TELA 7 - FORTRAN, 1957
+
+Contar: um tradutor feito pra que a pessoa escrevesse a formula do jeito que ela e
+escrita no papel, e a maquina gerasse o codigo. Nasceu pra calculo cientifico, e
+nasceu com uma obsessao declarada: gerar codigo tao eficiente quanto o escrito na
+mao, senao ninguem trocaria.
+
+Dizer o que muda pra quem usa: escrever uma linha em vez de dezenas, e conferir a
+formula em vez de conferir endereco.
+
+Fechar pedindo o Proximo pra ver a mesma ideia indo pro outro lado do escritorio.
+
+TELA 8 - COBOL, 1959
+
+Contar: uma linguagem pra quem trabalha com dado e nao com formula, com frases
+parecidas com ingles, feita pra que uma pessoa de negocio conseguisse ler o que o
+programa faz. E nasceu com uma exigencia nova: o mesmo programa devia rodar em
+maquinas de fabricantes diferentes.
+
+Dizer o efeito pratico: e ela que espalha o computador pra folha de pagamento, pro
+estoque, pro banco. Sai do laboratorio e entra na empresa.
+
+Fechar pedindo o Proximo pra dizer o que isso mudou de verdade.
+
+TELA 9 - O PROGRAMA DEIXA DE SER DA MAQUINA
+
+Explicar a consequencia grande: enquanto o programa era binario, ele era daquela
+maquina e de mais nenhuma. Com um tradutor pra cada maquina, o mesmo texto passa a
+rodar em qualquer uma que tenha tradutor.
+
+Dizer o que isso cria: o programa vira uma coisa em si, que se copia, se vende e
+sobrevive a maquina onde nasceu. E o trabalho de programar deixa de ser trabalho de
+eletronica.
+
+Fechar pedindo o Proximo pra dizer o preco disso.
+
+TELA 10 - O PRECO
+
+Dizer o preco, sem moralizar: aparece uma camada nova entre a pessoa e a maquina. O
+codigo que roda nao e mais o codigo que a pessoa escreveu, entao quando da errado
+tem mais de um lugar pra procurar. E o tradutor tambem e um programa, com os
+proprios defeitos.
+
+Dizer por que valeu mesmo assim: o que se ganha em quem consegue programar e maior
+do que o que se perde em controle.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre o que um tradutor
+desses faz por dentro, pra quem quiser ver o processo. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 11 - ONDE ISTO PARA
+
+Fechar a etapa inteira, nao so o episodio: em treze anos, de 1936 a 1959, o
+computador saiu do papel, ligou na tomada, guardou a propria ordem e aprendeu a
+receber ordem na nossa lingua.
+
+Dizer onde para: 1959.
+
+E dizer o que ainda nao mudou, que e o que abre a proxima etapa: essa maquina
+continua sendo uma sala inteira de valvulas que esquentam e queimam. Ela ficou
+esperta, mas nao ficou menor. A proxima etapa e sobre ela encolher.
+
+Fechar sem pedir Proximo: esta e a ultima tela.

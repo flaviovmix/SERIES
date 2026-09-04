@@ -1,0 +1,250 @@
+Inicie dizendo: A Planta
+---------------
+
+Este e o primeiro episodio da etapa A MAQUINA QUE LIGA, da serie Como Reinventar o
+Computador do Zero. A etapa anterior ensinou a eletricidade a representar logica:
+interruptor fechado e "sim", aberto e "nao", e interruptores em serie e em paralelo
+fazem a algebra de Boole. Este episodio vai desse punhado de interruptores ate uma
+maquina inteira que faz conta e obedece ordem, sem ligar nada: e a planta.
+
+ESTE EPISODIO COBRE DE 1936 A 1948. Dizer esse intervalo em voz alta logo na
+abertura. E dizer, com todas as letras, que este e um episodio de PLANTA: as ideias
+aqui foram escritas enquanto outras pessoas ja construiam maquinas de verdade, e o
+proximo episodio e o canteiro de obras, da mesma epoca.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. NAO juntar o
+conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte e NAO
+seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela
+quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela
+errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 2, 3, 4 e 5. Sao a corrente que sustenta o episodio
+(porta, bit, meio somador, somador completo) e a tentacao de juntar tudo num bloco
+de eletronica basica e grande. Nao juntar: cada uma tem o seu pedido de Proximo. O
+mesmo vale pras telas 9 e 10: a 9 e a maquina de fita, a 10 e a ideia de uma
+maquina imitar todas as outras, que e a ideia mais importante da serie e precisa da
+tela dela.
+
+TELAS DE DEMONSTRACAO. Nas telas 2, 3, 4, 5, 7, 8, 9 e 11 tem coisa pra mexer na
+pagina enquanto a explicacao corre (abrir e fechar interruptor, acender fio,
+escolher endereco, andar com o dedo na lista). Convidar a mexer numa frase curta,
+sem esperar resposta e sem mandar pausar o audio. Nao existe tela de pratica neste
+episodio.
+
+SEM FOTO DE EPOCA. Este episodio e desenho, porque quase nada aqui existiu como
+objeto. A unica tela com fotografia e a 9, a pagina do artigo de 1936. NAO falar do
+botao que troca foto e ilustracao: isso ja foi dito no outro episodio.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de extras.
+A principal so carrega o que a proxima peca precisa. Todo aprofundamento mora num
+extra avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. Turing entra so com o que fez em 1936 e por que.
+  Nada de onde nasceu, escola, guerra ou morte.
+- Onde o roteiro escrever GANCHO DE EXTRA, dizer de forma curta e generica que
+  existe um episodio extra so sobre aquilo, pra quem quiser ir fundo, e seguir na
+  hora. NAO dizer o nome nem o numero do extra e NAO explicar o assunto dele.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A planta e o canteiro: este episodio e a planta da casa; o proximo e o canteiro
+  de obras, e os dois acontecem ao mesmo tempo. Usar na abertura e no fecho.
+- A memoria como uma prateleira de caixas numeradas, todas iguais por fora. O numero
+  da caixa e o endereco.
+- O programa como uma lista de ordens numeradas, com um dedo apontando qual e a
+  ordem da vez. O dedo e o contador.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - ISTO E UMA PLANTA
+
+Retomar em duas frases onde a serie parou: a eletricidade aprendeu a representar
+logica. Interruptor fechado e sim, aberto e nao, e Shannon mostrou que interruptor
+em serie e um E, em paralelo e um OU.
+
+Dizer o intervalo em voz alta: este episodio cobre de 1936 a 1948.
+
+Dizer o que este episodio e, sem rodeio: a planta. Um caminho so, do interruptor
+ate uma maquina que faz conta e obedece ordem, tudo no papel. E avisar,
+com todas as letras, que enquanto essas ideias eram escritas ja tinha gente
+construindo maquina de verdade em Berlim, em Harvard e na Pensilvania: a planta e o
+canteiro sao da mesma epoca, e o proximo episodio e o canteiro.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem
+esta so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a
+tela quando ouvir o pedido e pode mexer nas demonstracoes enquanto a conversa corre.
+
+Fechar pedindo o Proximo pra montar a primeira peca.
+
+TELA 2 - AS TRES PORTAS
+
+Explicar as tres portas com interruptores: E (dois em serie: so passa se os dois
+fecharem), OU (dois em paralelo: passa se qualquer um fechar) e NAO (um interruptor
+que abre quando recebe corrente, invertendo).
+
+Convidar a abrir e fechar os interruptores da tela pra ver a lampada obedecer.
+
+Dizer a frase que sustenta o episodio: tudo o que vem daqui pra frente e combinacao
+dessas tres.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre montar portas
+logicas na mao. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra ver com que numero essas portas trabalham.
+
+TELA 3 - UM FIO E UM BIT
+
+Explicar o binario em poucas frases: se cada fio so tem dois estados, sim e nao
+viram 1 e 0, e qualquer numero pode ser escrito so com eles, casa a casa, como no
+decimal mas dobrando em vez de multiplicar por dez. Um fio e um bit.
+
+Convidar a acender e apagar os fios da tela pra ver o numero mudar.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre contar em base dois,
+pra quem quiser ver isso por dentro. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra fazer a primeira conta.
+
+TELA 4 - O MEIO SOMADOR
+
+Explicar que somar dois bits da quatro casos, e que duas portas resolvem: um OU
+exclusivo da o resultado da casa, um E da o vai-um. Isso e o meio somador, e ele ja
+soma, mas nao sabe receber vai-um de ninguem.
+
+Convidar a passar pelos quatro casos na tela.
+
+Fechar pedindo o Proximo pra emendar um no outro.
+
+TELA 5 - O SOMADOR COMPLETO, OITO EMENDADOS
+
+Explicar que, com uma entrada a mais pro vai-um que chega da casa anterior, o meio
+somador vira somador completo. Emenda oito deles e soma numeros de oito bits;
+emenda mais e soma o que quiser.
+
+Convidar a somar dois numeros na tela e ver o vai-um andando pela fileira.
+
+Fechar pedindo o Proximo pra ver o que mais essa mesma peca faz.
+
+TELA 6 - SUBTRAIR E MULTIPLICAR SAO SOMAS ARRUMADAS
+
+Dizer que subtrair, multiplicar e dividir nao pedem peca nova: pedem mais somas e
+um jeito de escrever numero negativo. Multiplicar e somar repetido, dividir e
+subtrair repetido, e subtrair e somar com o numero escrito de outro jeito.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre o somador e sobre
+como a maquina escreve numero negativo. Uma frase e seguir.
+
+Fechar pedindo o Proximo, porque agora falta a peca que lembra.
+
+TELA 7 - O FLIP-FLOP
+
+Explicar sem desenho: duas portas com a saida de uma ligada na entrada da outra
+seguram um bit enquanto tiver energia. Um pulso grava, outro apaga. E a primeira
+peca do episodio que nao faz conta: ela lembra.
+
+Convidar a gravar e apagar o bit na tela.
+
+Fechar pedindo o Proximo pra juntar varios deles.
+
+TELA 8 - A PRATELEIRA DE CAIXAS NUMERADAS
+
+Explicar que uma fileira de flip-flops e uma palavra, e usar a analogia da
+prateleira de caixas numeradas, todas iguais por fora: o numero da caixa e o
+endereco. Um seletor recebe o endereco e liga so aquela caixa pra ler ou gravar.
+
+Convidar a escolher um endereco na tela e ver so aquela caixa acender.
+
+Dizer o que isso tem de importante: numero, letra e ordem, tudo vira 0 e 1 guardado
+ali dentro, e a maquina nao sabe qual e qual. Quem sabe e quem le.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre como a maquina
+lembra. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra ir a 1936.
+
+TELA 9 - TURING, 1936
+
+Contar o que Alan Turing mostrou em 1936, no papel: uma maquina bem simples, que le
+e escreve simbolos numa fita e segue uma tabela de regras, faz qualquer conta que
+uma pessoa faca com lapis e papel, desde que a conta tenha passo a passo.
+
+Convidar a rodar a fita na tela e ver o cabecote obedecer a tabela.
+
+Dizer que esta e a unica tela do episodio com fotografia: a pagina do artigo. A
+maquina de fita nunca foi construida, entao o resto e desenho.
+
+Fechar pedindo o Proximo, porque ele mostrou mais uma coisa, e e a maior de todas.
+
+TELA 10 - UMA MAQUINA QUE IMITA TODAS
+
+Contar a segunda parte: UMA maquina dessas pode imitar qualquer outra, se receber a
+tabela da outra como dado na fita.
+
+Dizer por que isso e a ideia que separa uma calculadora de um computador: a
+calculadora faz o que foi construida pra fazer; o computador faz o que a tabela
+mandar, e a tabela e so mais um dado.
+
+Lembrar, em uma frase, que naquele mesmo ano alguem em Berlim comecava a montar uma
+maquina de reles sem ter lido nada disso. A planta e o canteiro, de novo.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre o Turing e a maquina
+dele. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra montar a maquina completa.
+
+TELA 11 - O CONJUNTO DE INSTRUCOES
+
+Montar a maquina em voz alta: um acumulador, que e uma palavra de memoria onde o
+resultado mora; um contador, que diz qual e a proxima ordem; e um punhado de ordens
+com codigo, como somar, subtrair, guardar, carregar e pular pra outro endereco.
+
+Usar a analogia da lista de ordens numeradas com um dedo apontando a da vez: o dedo
+e o contador. Pular pra outro endereco e mover o dedo, e e isso que faz o laco e a
+decisao.
+
+Convidar a andar com o dedo pela lista na tela.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre o conjunto de
+instrucoes e como montar a maquina completa. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra dizer o que nasceu aqui.
+
+TELA 12 - NASCE A FRONTEIRA
+
+Dizer a fronteira que nasce neste episodio: a lista de ordens e o programa, o metal
+que as executa e a maquina. Software e hardware.
+
+Fechar juntando o caminho numa frase: interruptor vira porta, porta vira somador,
+somador e memoria viram uma maquina que le ordem, e a ordem e so mais um dado na
+memoria.
+
+Dizer onde o episodio para: 1948, com a planta completa no papel. E dizer que o
+proximo episodio volta pra 1936 e vai pro canteiro: as tres primeiras maquinas que
+ligaram de verdade, feitas por gente que em boa parte nem tinha visto a planta.
+
+Fechar sem pedir Proximo: esta e a ultima tela.

@@ -1,0 +1,155 @@
+Inicie dizendo: A Bomba-Relogio
+---------------
+
+Este e o primeiro episodio da etapa POR QUE AINDA ESTUDAR ISSO, a primeira etapa da serie JAVA WEB. Nao existe episodio anterior: este abre a serie. A serie inteira monta uma aplicacao Java web do zero, peca por peca, e a etapa 1 existe pra explicar por que alguem faria isso na mao numa epoca em que da pra pedir pronto.
+
+ESTE EPISODIO NAO TEM CODIGO. Nenhuma linha, nenhuma sintaxe, nenhum comando. E a conversa que decide se vale a pena fazer o resto do jeito dificil. Nao antecipar Java, nao antecipar VS Code, nao antecipar servidor.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (4), avisar que tem botao na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (6), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que pedir "aperte o Proximo" exatamente 7 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. Este episodio NAO e contra usar inteligencia artificial pra programar, e nao pode soar como isso. A facilidade e real e o episodio reconhece ela em voz alta na tela 2. O argumento e outro: usar sem entender e que cobra caro depois. Nada de tom de sermao, nada de nostalgia do tempo em que era dificil, nada de dizer que quem usa IA nao e programador de verdade.
+
+O QUE TRANSFERE. No encerramento, dizer em uma frase o que deste episodio serve pra qualquer linguagem e qualquer banco, e nao so pra Java.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_A Bomba-Relogio.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A bomba-relogio: um aparelho que esta funcionando perfeitamente hoje e que tem um prazo dentro dele que voce nao sabe qual e. Serve pra explicar codigo que roda certo e que ninguem entende. O ponto da analogia e o atraso: o problema ja existe no dia da entrega, so nao aparece nele.
+- A parede sem planta: voce comprou a casa pronta e quer pendurar uma prateleira. Se voce nao tem a planta hidraulica, cada furo e uma aposta, e o cano so aparece depois que a agua sai. Serve pra explicar mexer em codigo que voce nao acompanhou por dentro.
+
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A BOMBA-RELOGIO)
+
+Abrir a serie. Dizer o que ela e: uma serie em que a gente monta uma aplicacao Java web do zero, peca por peca, do primeiro programa no terminal ate o site no ar. Uma lista de tarefas, que nasce simples e cresce ate ficar de pe na internet.
+
+Dizer o que este primeiro episodio faz: ele nao tem codigo nenhum. Ele responde a pergunta que qualquer pessoa faria antes de comecar. Se hoje da pra pedir pra uma inteligencia artificial e receber a aplicacao pronta em minutos, por que alguem passaria semanas montando na mao?
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na tela de pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (O QUE MUDOU DE VERDADE)
+
+Comecar reconhecendo a facilidade, sem ironia e sem ressalva. Ela e real. Hoje uma pessoa que nunca programou descreve o que quer em portugues e recebe de volta um programa que funciona. Nao um esqueleto, nao um exemplo de livro: um programa que roda, com tela, com banco de dados, com login. Isso e novo e e util, e este episodio nao vai fingir que nao e.
+
+Dizer com todas as letras: esta serie nao e contra isso. Ninguem aqui vai pedir pra voce parar de usar. O que a serie propoe e outra coisa, e ela so faz sentido depois que a gente olhar o que vem junto.
+
+Fazer a virada com uma pergunta simples: o programa chegou pronto e funcionou. Voce sabe dizer o que ele faz? Nao o que ele entrega na tela, isso da pra ver. O que ele faz por dentro, linha por linha, quando ninguem esta olhando.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A DEFINICAO: CODIGO QUE FUNCIONA E QUE VOCE NAO ENTENDE)
+
+Dar a definicao do titulo, direta: codigo que funciona e que voce nao entende e uma bomba-relogio.
+
+Usar a analogia da bomba-relogio, com o cuidado de nao dramatizar. O ponto dela e um so, e e o atraso. O aparelho esta funcionando agora. Nao tem sintoma, nao tem alarme, nao tem nada errado na tela. O prazo ja esta dentro dele desde o dia em que foi montado, e ninguem sabe qual e.
+
+Explicar por que o problema nunca aparece no dia da entrega. No dia da entrega tudo esta do jeito que a maquina imaginou quando escreveu: a quantidade de dados e pequena, quem usa e voce, e o caminho que voce testa e o caminho feliz. Codigo ruim e codigo bom se comportam igual nessas condicoes. E exatamente por isso que a entrega nao serve de prova.
+
+Deixar claro que nao e questao de confiar ou desconfiar da maquina. Um programador humano experiente entrega a mesma bomba se quem recebe nao entende o que recebeu. A diferenca e que com a IA isso ficou barato e rapido, entao acontece muito mais.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (OS QUATRO PAVIOS, TELA INTERATIVA)
+
+Avisar: tem botao na tela pra acender um pavio de cada vez, e cada um mostra onde estoura. Dar tempo pro ouvinte acompanhar enquanto escuta.
+
+Apresentar os quatro, um por um, sem pressa. Cada um e uma forma de a bomba estourar.
+
+Primeiro pavio, o comportamento muda. O programa foi escrito pra uma regra e a regra virou outra. Alguem precisa achar onde aquela regra mora. Se ninguem sabe onde ela mora, a mudanca vira tentativa: muda aqui, testa, nao foi, muda ali. E cada tentativa pode quebrar uma coisa que estava certa.
+
+Segundo pavio, o dado cresce. O que era rapido com trinta registros fica lento com trinta mil, e travado com trezentos mil. Ninguem percebeu porque na hora do teste tinha trinta. O programa nao deu erro: ele so ficou devagar, e devagar demais e a mesma coisa que quebrado pra quem esta usando.
+
+Terceiro pavio, alguem de fora acha a brecha. Este e o unico que tem outra pessoa do lado de la. Um campo que aceita o que nao devia, uma senha guardada do jeito errado, um endereco que responde pra quem nao devia. Quem escreveu nao viu, quem recebeu nao sabia o que procurar, e quem achou nao vai avisar.
+
+Quarto pavio, e o mais comum de todos. Ninguem sabe mexer naquela linha. O programa esta de pe, ninguem entende um pedaco dele, e entao esse pedaco vira area proibida. O time passa a contornar em vez de arrumar, e cada contorno e mais codigo em volta de uma coisa que ja ninguem entende.
+
+Fechar a tela amarrando: repare que nenhum dos quatro e um erro de digitacao. Nenhum deles seria pego relendo o codigo procurando erro de sintaxe. Os quatro sao a mesma coisa: falta de entendimento cobrando juros.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A HORA DO ESTOURO)
+
+Descrever a cena, que e onde este episodio quer chegar. A bomba estourou. O programa esta no ar, alguem esta reclamando, e voce vai fazer o que qualquer um faria hoje: vai pedir pra IA consertar.
+
+E ai vem o problema real. Pra ela consertar, voce precisa dizer o que esta errado. Nao "esta dando erro". Que parte, em que momento, com que dado, depois de qual acao, e o que era pra acontecer no lugar. Isso e vocabulario, e vocabulario e o que voce nao tem quando aceitou o codigo sem ler.
+
+Usar a analogia da parede sem planta. Voce mora na casa, a casa e sua, e ela funciona. Voce so quer pendurar uma prateleira. Sem a planta, cada furo e uma aposta, e o cano so aparece depois que a agua sai. Nao e falta de ferramenta: a furadeira esta na sua mao. E falta de saber o que tem atras.
+
+Dizer o efeito pratico, que e cruel e e comum: a IA responde alguma coisa, voce cola, e as vezes conserta. Quando conserta, voce nao sabe por que consertou. Quando nao conserta, voce nao sabe por que nao consertou. Nos dois casos voce fica mais dependente do que estava antes.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (PRATICA: O TESTE DO VOCE ENTENDE)
+
+Convidar a pausar o audio e fazer na tela: tem a descricao em portugues de um pedaco de programa, e tres perguntas do lado. A pessoa responde as tres com as proprias palavras antes de continuar. O pedaco esta descrito em portugues de proposito: neste episodio ainda nao existe uma linha de codigo, e a regua funciona igual.
+
+O pedaco descrito na tela e este: ele pega o que a pessoa digitou no campo de busca e usa esse texto pra procurar no banco de dados.
+
+Apresentar as tres perguntas, que sao a regua desta serie inteira e valem pra qualquer codigo que chegar pronto na sua mao:
+
+Primeira: o que esse pedaco faz? Dito em uma frase, em portugues, com as suas palavras.
+
+Segunda: o que acontece se o dado vier errado? Vazio, gigante, negativo, com acento, com aspas no meio.
+
+Terceira: onde isso quebra? Que situacao faz esse pedaco parar de funcionar.
+
+Explicar a regua, que e simples: se voce responde as tres, aceita o codigo. Se falha em qualquer uma, o codigo ainda nao e seu. Nao quer dizer jogar fora: quer dizer perguntar de novo ate a resposta existir.
+
+Dizer o que acontece nos dois lados. Quem aceita sem responder acumula pedaco que nao entende, e a area proibida do quarto pavio comeca a crescer. Quem responde as tres antes de aceitar transforma cada pedido numa aula pequena, e no fim do mes sabe mais do que sabia.
+
+Achar as tres respostas, e ai voltar o audio e apertar o Proximo.
+
+TELA 7 (O QUE ESTA SERIE FAZ COM ISSO)
+
+Explicar a saida que a serie propoe, sem prometer milagre. Montar uma vez na mao. Uma aplicacao inteira, pequena, mas inteira: uma lista de tarefas que roda no terminal, depois aparece no navegador, depois guarda no banco, depois tem login, depois sobe pra internet.
+
+Dizer por que na mao. Nao e disciplina e nao e sofrimento por esporte. E que cada peca que a gente monta vira uma pergunta que voce sabe fazer depois. Quem escreveu um servidor na mao uma vez sabe perguntar o que o framework esta fazendo naquela linha. Quem nunca escreveu aceita a linha.
+
+Dizer o que muda no dia seguinte. Depois da serie, a IA continua escrevendo o codigo. So que agora ela escreve pra alguem que le, que pergunta, que percebe a peca que ficou faltando e que sabe dizer com precisao o que quer diferente. Ela deixa de ser um fornecedor e passa a ser uma ferramenta na mao de quem entende.
+
+Avisar sem enrolar que a serie e longa e completa de proposito: preparar o ambiente, guardar o codigo no historico, testar, banco de dados, colocar no ar. Nada de pular a parte chata, porque e na parte chata que a bomba costuma estar.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular em poucas frases. Pedir codigo pronto ficou facil e util, e isso nao esta em discussao. O que cobra caro e aceitar sem entender, porque o problema chega atrasado: comportamento que muda, dado que cresce, brecha que alguem acha, linha que ninguem mexe. E quando chega, quem nao entende nao consegue nem descrever o defeito pra pedir conserto.
+
+Deixar a regua repetida, porque e o que fica do episodio: o que esse pedaco faz, o que acontece se o dado vier errado, onde isso quebra. Tres perguntas, antes de aceitar.
+
+O QUE TRANSFERE: nada disso e sobre Java. Vale igual em Python, em JavaScript, em qualquer banco de dados. Java aqui e so o veiculo, porque a gente precisa montar alguma coisa de verdade pra aprender, e essa coisa vai ser uma aplicacao web.
+
+Gancho pro proximo episodio, sem entregar a resposta: se a saida nao e parar de usar a IA, entao e usar de outro jeito. No proximo episodio a gente combina qual e esse jeito, e ele muda com uma coisa pequena, que e o que voce pede antes de pedir o codigo.

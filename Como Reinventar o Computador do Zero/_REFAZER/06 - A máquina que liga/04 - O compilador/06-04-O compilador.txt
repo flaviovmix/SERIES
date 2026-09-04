@@ -1,0 +1,79 @@
+Inicie dizendo: O Compilador
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Compilador.txt enviado como
+fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o quarto e ultimo episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da
+serie Como Reinventar o Computador do Zero. O episodio anterior terminou em 1949,
+com a ordem morando na mesma memoria dos numeros, e deixou uma pergunta no ar: por
+que a propria maquina nao traduz, se traduzir tambem e uma tarefa? Este episodio
+responde essa pergunta.
+
+ESTE EPISODIO COBRE DE 1949 A 1959. Dizer esse intervalo logo na abertura e, no
+encerramento, dizer em que ano o episodio para.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 11 telas.
+O audio TEM que pedir "aperte o Proximo" exatamente 10 vezes, uma no fim de cada
+tela, na ordem do roteiro. NAO juntar duas telas num bloco so e NAO seguir adiante
+sem pedir. Avisar na tela 1 que a pagina tem 11 telas e que quem esta so ouvindo
+acompanha normalmente.
+
+FOCO: como a maquina aprendeu a receber ordem na nossa lingua. Escrever em binario
+na mao e o custo disso. O assembler, que troca palavra por numero como um
+dicionario. A virada: traduzir tem passo a passo, entao a maquina pode traduzir. O
+A-0, de 1952, que montava um programa juntando rotinas prontas de fita. A
+resistencia sincera da epoca (memoria e tempo de maquina custavam caro). O FORTRAN,
+de 1957, que deixou escrever a formula como no papel e nasceu obcecado em gerar
+codigo tao bom quanto o feito a mao. O COBOL, de 1959, com frases parecidas com
+ingles, feito pra rodar em maquinas de fabricantes diferentes. E a consequencia
+grande: o programa deixa de pertencer a uma maquina so.
+
+SEM BIOGRAFIA. Esta e a trilha principal da serie, que so carrega o que a proxima
+peca precisa. NAO contar onde cada pessoa nasceu, onde estudou, patente militar nem
+quando morreu. Cada pessoa entra so com o que fez e por que fez.
+
+GANCHOS DE EXTRA. Em dois momentos o roteiro marca GANCHO DE EXTRA: a pessoa que
+atacou o problema (tela 5) e o que um tradutor faz por dentro (tela 10). Em cada um,
+dizer em UMA frase que existe um episodio extra so sobre aquilo, pra quem quiser ir
+fundo, e seguir na hora. NAO dizer o nome nem o numero do extra e NAO explicar o
+assunto dele.
+
+NAO explicar transistor, circuito integrado nem sistema operacional: sao as proximas
+etapas. O fecho so anuncia que a maquina ficou esperta mas nao ficou menor.
+
+A FRASE DO PEDIDO E SEMPRE A MESMA: "aperte o Proximo". NAO usar "vamos para o
+proximo", "vamos pro proximo", "seguimos" nem nenhuma outra forma. O cortador que
+monta a animacao procura essa frase exata: qualquer variacao faz duas telas virarem
+uma, e quem esta com a pagina aberta fica olhando a tela errada.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: mil novecentos e cinquenta e dois, mil
+novecentos e cinquenta e sete, mil novecentos e cinquenta e nove. NAO dizer o ano
+corrido, porque sai embolado e vira outro numero.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As
+unicas autorizadas sao o dicionario (o assembler trocando palavra por numero sem
+entender nada), o tradutor (o compilador lendo a frase inteira e escrevendo o
+equivalente) e a lista de ordens numeradas dos episodios anteriores.
+
+Use tambem o Overview.txt como contexto curto.

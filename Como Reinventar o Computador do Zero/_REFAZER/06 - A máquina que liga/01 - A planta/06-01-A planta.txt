@@ -1,0 +1,79 @@
+Inicie dizendo: A Planta
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Planta.txt enviado como
+fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o primeiro episodio da etapa A MAQUINA QUE LIGA, da serie Como Reinventar o
+Computador do Zero. A etapa anterior ensinou a eletricidade a representar logica
+(interruptor e sim ou nao; em serie e E, em paralelo e OU). Este episodio vai do
+interruptor ate uma maquina inteira que faz conta e obedece ordem, tudo no papel.
+
+ESTE EPISODIO COBRE DE 1936 A 1948. Dizer esse intervalo logo na abertura. Dizer
+tambem, com todas as letras, que este e um episodio de PLANTA: as ideias foram
+escritas enquanto outras pessoas ja construiam maquinas de verdade, e o proximo
+episodio e o canteiro, da mesma epoca.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas.
+O audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada
+tela, na ordem do roteiro. NAO juntar duas telas num bloco so e NAO seguir adiante
+sem pedir. Avisar na tela 1 que a pagina tem 12 telas e que quem esta so ouvindo
+acompanha normalmente.
+
+TELAS DE DEMONSTRACAO. Nas telas 2, 3, 4, 5, 7, 8, 9 e 11 tem coisa pra mexer
+enquanto a explicacao corre. Convidar a mexer numa frase curta, sem esperar
+resposta e sem mandar pausar o audio. Nao existe tela de pratica neste episodio.
+
+SEM FOTO DE EPOCA, com uma excecao: a tela 9, a pagina do artigo de 1936. NAO falar
+do botao que troca foto e ilustracao.
+
+FOCO: cinco passos encadeados, sem esgotar nenhum. 1) Porta
+logica (E, OU, NAO feitas de interruptor) e o binario. 2) O somador (meio somador,
+somador completo, e que subtrair e multiplicar sao somas arrumadas). 3) A memoria
+(flip-flop segura um bit; fileira vira palavra; seletor com endereco escolhe a
+caixa). 4) A maquina universal de Turing, 1936: uma maquina simples faz qualquer
+conta que tenha passo a passo, e uma pode imitar todas se receber a tabela da outra
+como dado. 5) O conjunto de instrucoes: acumulador, contador e ordens com codigo;
+programa e hardware.
+
+SEM BIOGRAFIA. Esta e a trilha principal, que so carrega o que a proxima peca
+precisa. Turing entra so com o que fez em 1936 e por que. NAO contar onde nasceu,
+escola, guerra nem morte.
+
+GANCHOS DE EXTRA. Em seis momentos o roteiro marca GANCHO DE EXTRA: portas logicas
+na mao (tela 2), contar em base dois (tela 3), o somador e o numero negativo (tela
+6), como a maquina lembra (tela 8), o Turing e a maquina dele (tela 10) e o
+conjunto de instrucoes (tela 11). Em cada um, dizer em UMA frase que existe um
+episodio extra so sobre aquele assunto, pra quem quiser ir fundo, e seguir na hora.
+NAO dizer o nome nem o numero do extra e NAO explicar o assunto dele.
+
+NAO explicar Z3, Mark I, ENIAC, rele, valvula, von Neumann nem programa armazenado
+em maquina real: sao os proximos episodios. So citar, de passagem, que o canteiro ja
+tinha comecado.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As
+unicas autorizadas sao a planta e o canteiro (este episodio e a planta, o proximo e
+o canteiro, ao mesmo tempo), a memoria como prateleira de caixas numeradas, e o
+programa como lista de ordens numeradas com um dedo apontando a da vez.
+
+Use tambem o Overview.txt como contexto curto.

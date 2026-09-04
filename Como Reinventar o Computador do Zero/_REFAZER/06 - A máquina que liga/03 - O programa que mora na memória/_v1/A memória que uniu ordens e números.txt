@@ -1,0 +1,7 @@
+Titulo: A memória que uniu ordens e números
+Notebook: 06-02-O programa que mora na memoria
+
+Descricao:
+O Programa Que Mora Na Memória é o sexto volume da série documental que reconstrói a evolução da computação, focando especificamente no período de 1945 a 1949. Os textos detalham a transição crucial de máquinas como o ENIAC, que exigiam configurações manuais externas, para sistemas que armazenam instruções e dados em uma memória unificada. Esta inovação permitiu que os computadores alterassem tarefas em segundos e executassem funções lógicas fundamentais, como saltos e repetições. As fontes descrevem marcos históricos como o relatório de John von Neumann e o sucesso prático das máquinas Manchester Baby e EDSAC. O conteúdo é estruturado para um podcast educativo, priorizando uma linguagem direta que evita biografias longas para focar no desenvolvimento técnico das peças que compõem o computador moderno. Por fim, o material estabelece a base para o próximo passo da evolução tecnológica ao destacar que, apesar desses avanços, a programação ainda era realizada manualmente em código binário.
+
+Link: https://notebooklm.google.com/notebook/de0f08c8-a69d-49d1-b4b2-669c0dc7a67f

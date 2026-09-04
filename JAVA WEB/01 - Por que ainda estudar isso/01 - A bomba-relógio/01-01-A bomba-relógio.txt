@@ -1,0 +1,35 @@
+Inicie dizendo: A Bomba-Relogio
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Bomba-Relogio.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o primeiro episodio da etapa POR QUE AINDA ESTUDAR ISSO, a primeira etapa da serie JAVA WEB, e e o primeiro episodio da serie inteira. Nao existe episodio anterior pra retomar: a abertura apresenta a serie.
+
+ESTE EPISODIO NAO TEM CODIGO. Nenhuma linha, nenhuma sintaxe, nenhum comando. Nao antecipar Java, nao antecipar VS Code, nao antecipar servidor. Banco de dados so pode ser citado como parte do que a serie vai cobrir, nunca explicado.
+
+FOCO: por que ainda vale a pena estudar programacao quando da pra pedir pronto pra uma inteligencia artificial. A tese e que codigo que funciona e que voce nao entende e uma bomba-relogio, porque o problema ja existe na entrega e so aparece depois. As quatro formas de estourar: o comportamento muda e ninguem sabe onde a regra mora; o dado cresce e o que era rapido fica lento; alguem de fora acha a brecha; e ninguem sabe mexer naquela linha, entao o time contorna em vez de arrumar. A hora do estouro, em que falta vocabulario pra descrever o defeito e pedir conserto. A regua de tres perguntas antes de aceitar codigo pronto: o que esse pedaco faz, o que acontece se o dado vier errado, onde isso quebra. Na tela de pratica o pedaco vem DESCRITO EM PORTUGUES, nunca como codigo, porque a esta altura o ouvinte ainda nao viu uma linha. E a saida da serie: montar uma aplicacao inteira na mao uma vez.
+
+TOM: o episodio NAO e contra usar inteligencia artificial pra programar, e a tela 2 reconhece a facilidade em voz alta, sem ironia. Nada de sermao, nada de nostalgia do tempo em que era dificil, nada de dizer que quem usa IA nao e programador de verdade.
+
+A pagina tem 8 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 7 vezes, sem juntar duas telas num bloco so. Na tela interativa (4), avisar que tem botao na tela. Na tela de pratica (6), convidar a pausar o audio, resolver e voltar.
+
+No encerramento, dizer o que transfere pra outras linguagens e outros bancos, e fechar com o gancho pro episodio 02, sobre o jeito de estudar com a IA do lado.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_A Bomba-Relogio.txt. NAO invente analogias novas. As duas autorizadas sao a bomba-relogio, pra explicar codigo que funciona e ninguem entende, e a parede sem planta hidraulica, pra explicar mexer em codigo que voce nao acompanhou por dentro.
+
+Use tambem o Overview.txt como contexto curto.

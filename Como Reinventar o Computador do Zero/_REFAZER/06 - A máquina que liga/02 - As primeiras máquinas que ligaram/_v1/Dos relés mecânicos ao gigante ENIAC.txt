@@ -1,0 +1,7 @@
+Titulo: Dos relés mecânicos ao gigante ENIAC
+Notebook: 06-01-As primeiras maquinas que ligaram
+
+Descricao:
+Os textos fornecem o roteiro e o contexto para um episódio de podcast sobre a transição dos computadores teóricos para as primeiras máquinas funcionais entre 1936 e 1946. O conteúdo detalha a evolução técnica do relé eletromecânico para a válvula eletrônica, explicando como essa mudança aumentou drasticamente a velocidade de processamento. São destacados três marcos históricos fundamentais: o Z3 alemão, o Harvard Mark I da IBM e o ENIAC americano, cada um com suas particularidades de construção e operação. A narrativa foca na transição prática da tecnologia, mencionando como a programação era feita externamente através de fitas ou cabos físicos. O material também estabelece diretrizes rigorosas de linguagem, proibindo termos rebuscados e focando em uma comunicação casual e direta. Por fim, o guia prepara o terreno para o próximo estágio da computação, que envolve o armazenamento de instruções dentro da própria memória da máquina.
+
+Link: https://notebooklm.google.com/notebook/dfaa2c2e-0262-4e7c-a017-ee96743a887b

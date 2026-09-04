@@ -1,0 +1,7 @@
+Titulo: Como a lógica matemática criou o computador
+Notebook: 06-01-A planta
+
+Descricao:
+Os documentos apresentam o roteiro e o contexto de um episódio da série Como Reinventar o Computador do Zero, focado no período entre 1936 e 1948. Este capítulo, intitulado A Planta, explica como conceitos teóricos transformam interruptores elétricos em máquinas lógicas capazes de realizar cálculos e seguir instruções. O conteúdo detalha componentes fundamentais como portas lógicas, somadores e memória, culminando na distinção moderna entre hardware e software. As fontes enfatizam que essas ideias surgiram no papel simultaneamente à construção física dos primeiros computadores. O texto também orienta a estrutura técnica da narração, estabelecendo analogias didáticas e ganchos para conteúdos extras sem desviar da linha do tempo principal. Através da visão de Alan Turing, o material demonstra como uma máquina universal pode executar qualquer tarefa processada passo a passo.
+
+Link: https://notebook.google.com/notebook/16348e05-c42b-401d-a2eb-ce01fe8d68eb

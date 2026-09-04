@@ -1,0 +1,21 @@
+ESTUDAR COM A IA DO LADO - CONTEXTO
+===================================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa POR QUE AINDA ESTUDAR ISSO, a primeira etapa da serie JAVA WEB. A serie monta uma aplicacao Java web do zero, peca por peca: uma lista de tarefas que nasce rodando no terminal e termina no ar, num endereco que outra pessoa consegue abrir. Pelo caminho passam ambiente de trabalho, historico de codigo, testes, servidor, banco de dados e publicacao.
+
+O episodio anterior, A Bomba-Relogio, mostrou que codigo que funciona e que ninguem entende cobra caro depois, e terminou dizendo que a saida nao e largar a inteligencia artificial, e sim usar de outro jeito. Este episodio define qual e esse jeito. Ele fecha a etapa 1 e vale como combinado pras treze etapas seguintes.
+
+Este episodio nao tem codigo nenhum. Ele fala de metodo de estudo.
+
+A ideia central e que a mesma ferramenta ocupa dois lugares diferentes. Como fornecedor, ela recebe um pedido e devolve um produto pronto: a tarefa fica feita e quem pediu sabe depois o mesmo que sabia antes. Como professor, ela recebe uma duvida e devolve entendimento: explica como aquilo costuma ser feito, por que e assim e onde da errado, e quem pediu escreve o codigo depois. Nenhum dos dois modos e proibido; o que estraga e usar o modo fornecedor justamente nas horas em que a pessoa estava tentando aprender.
+
+O metodo da serie sao tres regras. Explicacao antes do codigo, porque codigo que chega primeiro transforma a explicacao em legenda de uma coisa ja aceita. Digitar em vez de colar, porque digitar gera as duvidas que colar pula. E dizer em voz alta o que se espera antes de apertar executar, porque quando a previsao falha aparece o ponto exato em que o entendimento estava errado.
+
+O episodio separa em duas telas o que a IA faz bem e o que atrapalha, e as duas valem o mesmo. Ela ajuda de verdade no trabalho repetitivo depois que a peca ja foi entendida, na traducao de mensagens de erro obscuras, na segunda opiniao sobre um codigo que a pessoa ja escreveu, e na explicacao de jargao. Ela atrapalha quando chega antes da tentativa: pula o tempo travado, que e onde o entendimento se forma; erra com a mesma confianca com que acerta, e quem esta aprendendo nao tem como perceber; e deixa a pessoa sem o nome das pecas, o que impede a proxima pergunta de ser boa.
+
+Fecha com uma pratica de reescrever um pedido do modo fornecedor pro modo professor, e com o criterio pra conferir: a resposta que esse pedido vai puxar e uma coisa pra colar ou uma coisa pra estudar?
+
+O episodio nao adota tom de sermao nem nostalgia. O metodo vale pra aprender qualquer linguagem, qualquer banco de dados e qualquer ferramenta nova: Java e so o veiculo da serie.
+
+Use este contexto apenas como apoio.

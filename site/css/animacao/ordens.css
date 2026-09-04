@@ -1,0 +1,68 @@
+/* ordens
+   A lista de ordens numeradas com o dedo apontando a da vez: a peca visual que o episodio da planta monta e os episodios seguintes reusam pra mostrar salto, laco e sub-rotina. Depende de animacao/tokens.css.
+
+   Nasceu no 06-01 e ja e usada no 06-03; por isso mora na base, e nao na pasta de
+   um episodio. Linha da vez: .ordens__linha--vez. Linha de destino de um pulo:
+   .ordens__linha--alvo. */
+
+.ordens {
+  max-width: 640px;
+  margin: 22px auto 0;
+  border: 1px solid var(--linha);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.ordens__linha {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 18px;
+  border-top: 1px solid var(--linha);
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+.ordens__linha:first-child { border-top: 0; }
+
+.ordens__num {
+  font-family: var(--fonte-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  opacity: .7;
+}
+
+.ordens__texto { flex: 1; min-width: 0; }
+
+.ordens__dedo {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--realce, #c98b3a);
+  white-space: nowrap;
+}
+
+.ordens__linha--vez {
+  background: rgba(201, 139, 58, .12);
+  color: var(--ink);
+}
+
+
+/* o destino de um pulo, marcado com traco na lateral em vez de fundo cheio */
+.ordens__linha--alvo {
+  box-shadow: inset 3px 0 0 var(--realce, #c98b3a);
+  color: var(--ink);
+}
+
+/* o pulo desenhado ao lado da lista */
+.ordens__seta {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--realce, #c98b3a);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .ordens__linha { flex-wrap: wrap; gap: 8px; padding: 12px 14px; }
+  .ordens__dedo, .ordens__seta { width: 100%; }
+}

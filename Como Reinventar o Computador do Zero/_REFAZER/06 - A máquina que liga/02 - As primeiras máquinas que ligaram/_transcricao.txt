@@ -1,0 +1,313 @@
+# Transcricao automatica (faster-whisper small) - 14.3 min
+# Fonte: A construção do Z3 ao ENIAC.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Inicie dizendo as primeiras máquinas que ligaram.
+[00:03] Imagina só, gastar dias e dias conectando cabos grossos de eletricidade num salão gigantesco.
+[00:09] Tudo isso só para conseguir fazer uma única conta de matemática.
+[00:13] É loucura pensar nisso hoje.
+[00:15] Pois é, este é o mergulho profundo no segundo bloco da etapa A Máquina Que Liga,
+[00:20] que é a sexta etapa da nossa série Como Reinventar o Computador do Zero.
+[00:24] E eu quero deixar bem claro logo na abertura que este material cobre o período exato de 1936 a 1946.
+[00:30] Isso. Para quem acompanhou o nosso mergulho anterior, a etapa chamada A Planta,
+[00:35] nós montamos um computador inteiro.
+[00:37] Só que puramente no papel, né?
+[00:39] Exato. Desenhamos porta lógica, somador, memória, mas nada estava ligado na tomada ainda.
+[00:45] Aquele era o projeto arquitetônico.
+[00:47] Sim, e este nosso mergulho de agora é o canteiro de obras.
+[00:50] Com metal, fios e muita eletricidade.
+[00:53] E é bom lembrar que as coisas corriam em paralelo nessa época.
+[00:57] Enquanto os teóricos escreviam a ponta de um lado,
+[01:00] os construtores suavam para montar máquinas reais do outro lado.
+[01:04] E muitas vezes sem nunca ter lido os projetos teóricos deles.
+[01:07] Era pura tentativa e erro na prática.
+[01:09] Sim, na forma mais bruta.
+[01:11] Mas antes da gente entrar nas máquinas,
+[01:14] deixa um aviso logístico rápido para a nossa audiência.
+[01:17] Manda.
+[01:17] Esta nossa explicação acompanha uma página visual com 12 telas.
+[01:22] Quem está apenas ouvindo o áudio no trânsito acompanha normalmente.
+[01:25] Sem perder nada.
+[01:26] Isso. Sem perder nenhum detalhe.
+[01:28] Mas quem está com a página aberta na frente do monitor
+[01:31] só precisa avançar de tela quando a gente pedir por aqui.
+[01:33] Nas telas que possuem duas versões de imagem,
+[01:35] existe um botão para trocar entre a foto real da época
+[01:38] e a ilustração que mostra a peça por dentro.
+[01:40] Entendido.
+[01:41] O grande ponto do material de hoje é entender
+[01:44] como aquela teoria matemática ganhou um corpo físico, sabe?
+[01:48] Com certeza.
+[01:48] Qual era a peça exata que faltava para tirar tudo aquilo do papel
+[01:53] e transformar impulsos elétricos no mundo real?
+[01:55] O caminho para responder isso começa agora, então aperte o próximo.
+[01:59] Lendo as fontes, eu percebi que a grande questão técnica
+[02:02] era encontrar um componente físico muito específico, né?
+[02:05] Sim, o problema central era a necessidade de um interruptor
+[02:08] que pudesse abrir e fechar o circuito completamente sozinho.
+[02:12] Aham.
+[02:12] Esse interruptor precisava ser comandado por eletricidade.
+[02:16] E acima de tudo, precisava ser barato o suficiente
+[02:19] para existir aos milhares dentro de uma mesma estrutura.
+[02:22] Porque se não inviabiliza o curso do projeto todo, né?
+[02:25] Exato.
+[02:26] Mas, me tira uma dúvida aqui.
+[02:28] Por que não podemos usar um interruptor de luz comum, de parede?
+[02:32] Ah, a limitação do interruptor de parede
+[02:34] é que ele exige obrigatoriamente uma mão humana
+[02:37] para empurrar o botão de plástico.
+[02:38] É, faz sentido.
+[02:40] A máquina que eles estão construindo
+[02:42] precisa de um interruptor que obedeça a outro circuito elétrico.
+[02:45] Para que uma porta lógica comande a seguinte.
+[02:48] Isso mesmo.
+[02:49] Assim se cria uma reação em cadeia de cálculos
+[02:52] sem que uma pessoa precise ficar de pé
+[02:54] ali apertando botões o dia inteiro.
+[02:56] Nossa, tirar o humano da etapa mecânica
+[02:58] é o que realmente dá vida ao processo.
+[03:00] Exatamente.
+[03:01] Agora eu vejo o gargalo.
+[03:03] Para conhecer a primeira peça que conseguiu resolver esse gargalo,
+[03:06] aperte o próximo.
+[03:07] O material mostra que a primeira candidata para assumir esse papel
+[03:10] foi uma peça chamada Relé.
+[03:12] Aham, o famoso Relé.
+[03:14] A mecânica dele é bem engenhosa.
+[03:16] Tipo, existe um pequeno eletroíman
+[03:18] que puxa uma lâmina de metal
+[03:20] e o contato físico dessa lâmina fecha o circuito.
+[03:23] E era um componente muito barato na época.
+[03:25] Sim, já existia pronto desde a época
+[03:27] da expansão do telégrafo pelo mundo, né?
+[03:29] O Relé cumpria muito bem a função básica
+[03:31] de ser um interruptor controlado por eletricidade.
+[03:34] Quando a corrente entrava, o ímão ativava e puxava o metal.
+[03:38] Só que tinha um problema.
+[03:40] Um grande problema.
+[03:41] Eles barrava num limite físico.
+[03:44] Ele possuía uma peça de metal pesada
+[03:46] que precisava viajar fisicamente
+[03:47] através do espaço vazio para encostar em outra chapa.
+[03:50] E esse movimento mecânico,
+[03:52] por menor que seja, leva de 5 a 10 milésimos de segundo para bater.
+[03:57] Exato.
+[03:58] E quando há milhares de Relé está balhando juntos
+[04:00] na mesma sala para realizar uma conta,
+[04:03] o barulho de todas essas peças metálicas batendo sem parada
+[04:06] deve ser ensurdecedor.
+[04:07] Parecia uma fábrica de tecidos operando no máximo.
+[04:10] Nossa, eu convido quem está na página visual
+[04:14] a olhar a peça por dentro na ilustração
+[04:16] para anotar exatamente essa ácite de metal
+[04:19] batendo no contato elétrico repetido às vezes.
+[04:22] E peço que aperte o próximo.
+[04:23] Então, a evolução técnica precisava desesperadamente
+[04:27] eliminar essa parte mecânica.
+[04:29] Aham.
+[04:30] Se o problema era o tempo que o metal levava para viajar pelo espaço,
+[04:35] eles precisavam de algo sem peso.
+[04:37] E a solução para essa falta de peso veio com a válvula.
+[04:40] Ah, válvula.
+[04:42] Isso.
+[04:43] Ela faz o exato mesmo trabalho de abrir e fechar a passagem da corrente,
+[04:48] mas sem absolutamente nenhuma peça móvel envolvida.
+[04:52] Como que funciona na prática?
+[04:53] É tipo assim, existe um filamento de metal
+[04:56] que esquenta muito dentro de um tubo de vidro sem oxigênio.
+[04:59] Certo.
+[05:00] Esse metal quente solta elétrons soltos no váculo.
+[05:04] E uma grade no meio do caminho recebe um pulso elétrico
+[05:07] para decidir se esses elétrons passam para outro lado ou não.
+[05:10] Caramba!
+[05:11] E como não há uma lâmina de metal batendo,
+[05:13] o tempo de resposta cai absurdamente.
+[05:16] Despenca de milésimos para milionésimos de segundo.
+[05:20] Para tentar visualizar melhor no dia a dia,
+[05:22] pensa no relé como uma porta pesada
+[05:25] que alguém precisa empurrar fisicamente com força
+[05:28] toda vez que quer passar.
+[05:30] Boa.
+[05:30] Já a válvula é como aquela porta automática de vidro de supermercado, sabe?
+[05:35] Aham.
+[05:35] Que abre sozinho assim que a luz acende
+[05:38] e o sensor detecta movimento.
+[05:40] O esforço braçal simplesmente desaparece.
+[05:42] É uma ótima comparação.
+[05:43] Mas olha, essa ausência de esforço
+[05:46] cobrava um preço muito alto de outras formas.
+[05:49] Sempre tem um custo, né?
+[05:50] Pois é.
+[05:51] A válvula gasta energia elétrica demais.
+[05:54] Ele esquenta absurdamente e queima com uma frequência altíssima.
+[05:58] Que nem aquelas lâmpadas antigas.
+[06:00] Imagina um salão com milhares delas.
+[06:02] O calor gerado era intenso
+[06:04] e tinha o risco enorme de uma válvula estourar
+[06:08] bem no meio de um cálculo crítico.
+[06:10] Arruinando a conta toda.
+[06:11] Exato.
+[06:11] Existe um episódio extra inteirinho
+[06:14] detalhando o funcionamento físico
+[06:16] dessas duas peças para quem quisesse aprofundar.
+[06:19] Para entender o impacto prático
+[06:20] dessa mudança de velocidade na engenharia,
+[06:23] aperte o próximo.
+[06:24] Falar que algo é rápido ou lento
+[06:27] pode ficar um pouco abstrato só conversando assim.
+[06:29] É verdade.
+[06:30] Então acho bom a gente dar uma olhada
+[06:31] nos dados puros que as fontes trazem sobre essas tecnologias.
+[06:35] Boa.
+[06:36] Olha os números.
+[06:37] No melhor dos casos em laboratório,
+[06:39] os relés operavam em torno de 100 a 200 vezes por segundo.
+[06:43] Tá.
+[06:43] E nas máquinas reais?
+[06:45] Nas máquinas reais da época,
+[06:47] a velocidade mecânica andava entre 5 a 10 vezes por segundo.
+[06:51] Nossa, bem mais lento.
+[06:52] Muito.
+[06:54] Já a válvula, operando só com elétrons,
+[06:57] passa facilmente a marca de 1 milhão de vezes por segundo.
+[07:00] É uma diferença gritante.
+[07:02] O que chama a atenção é que a diferença não é só o dobro.
+[07:05] Estamos falando de uma peça cerca de 10 mil vezes mais rápida que a anterior.
+[07:10] Mudou tudo que era possível calcular.
+[07:13] E tem um detalhe muito familiar para nós hoje em dia nisso.
+[07:16] Essa medida de quantas vezes a peça liga e desliga por segundo
+[07:20] é a mesmíssima medida que estampa as etiquetas dos computadores modernos até hoje.
+[07:25] E nós temos um episódio extra explicando a origem
+[07:28] e o significado exato dessa medida de velocidade na tecnologia.
+[07:32] Perfeito.
+[07:32] Aperte o próximo.
+[07:34] O nosso primeiro canteiro de obras real nos leva direto para Berlim no ano de 1941.
+[07:40] Bem no meio da guerra, né?
+[07:41] Isso.
+[07:42] E o material introduz a figura de Konrad Zuse.
+[07:45] Ele era um engenheiro civil cansado de fazer contas enormes de resistência de prédios à mão.
+[07:50] Ninguém aguenta, né?
+[07:51] Pois é.
+[07:52] E ele montou uma máquina na sala da casa dos pais dele,
+[07:56] longe do esforço de guerra e totalmente longe das universidades.
+[08:00] Bem isolado mesmo.
+[08:02] E o resultado desse esforço solitário foi o Z3.
+[08:06] E quais eram as especificações?
+[08:08] O Z3 operava com cerca de 2.600 relés.
+[08:12] Rodava os cálculos em sistema binário e o programa era lido numa fita perfurada.
+[08:17] E a memória?
+[08:18] A gente pode usar a nossa analogia da prateleira de caixas numeradas para explicar?
+[08:22] Claro.
+[08:23] O Z3 tinha apenas 64 caixas nessa prateleira,
+[08:27] guardando palavras de 22 bits cada e levava quase um segundo inteiro para cada soma.
+[08:33] É, o desfecho da máquina é bem triste.
+[08:35] Foi destruída em um bombardeio em 1943.
+[08:39] Aham.
+[08:40] E como ele está isolado, o mundo demorou décadas para descobrir a existência do Z3.
+[08:45] Ou seja, o impacto no futuro foi quase nulo.
+[08:48] Sim, mesmo sendo a primeira a funcionar de verdade na história.
+[08:51] Para quem quiser conhecer os detalhes da vida dele,
+[08:54] existe um episódio extra exclusivo sobre Zuzi e a montagem do Z3.
+[08:58] Maravilha, aperte o próximo.
+[09:00] Agora a linha do tempo avança para 1944.
+[09:04] Entra em cena um projeto americano.
+[09:06] O Howard Eichen, certo?
+[09:08] Ele mesmo, um doutorando em Física em Harvard, cansado das calculadoras de mesa.
+[09:12] Ele consegue apoio da IBM e monta uma máquina decimal de 15 metros e 5 toneladas.
+[09:18] O Harvard Mark 1.
+[09:19] Em nos números, a máquina fazia 3 somas por segundo.
+[09:23] Aham.
+[09:23] A prateleira de memória tinha 72 caixas, cada uma com 23 casas decimais,
+[09:29] mais 60 fixas ajustadas por chave mecânica.
+[09:33] Tudo lido por fita de papel.
+[09:34] E olha a grande conexão histórica da nossa série aqui.
+[09:37] O Eichen encontrou pedaços de latão abandonados em Harvard.
+[09:41] Era da máquina inacabada de Charles Bobbitt.
+[09:44] Sério, caramba.
+[09:45] Pois é.
+[09:46] A eletricidade completou o trabalho que as engrenagens não conseguiram fazer 100 anos antes.
+[09:51] Motivo de usarem o sistema decimal e a história da empresa fabricante
+[09:55] estão explicados em um episódio extra.
+[09:58] Para conhecer a máquina que quebrou todas as barreiras de velocidade, aperte o próximo.
+[10:03] Agora a gente traz o peso pesado.
+[10:05] O ENIAC, o salto definitivo para a válvula.
+[10:08] Sim, encomendado pelo exército para tabelas de artilharia.
+[10:12] Construído por Press per Eckert e John Mousley
+[10:15] e apresentado em 1946 com 18 mil válvulas
+[10:19] pesando 30 toneladas...
+[10:21] E o choque dos números é absurdo.
+[10:23] 5 mil somas por segundo.
+[10:25] Mesmo limitado por questão de segurança térmica.
+[10:27] Pera, as fontes dizem que essa sala inteira de 30 toneladas
+[10:31] tinha uma prateleira de memória com apenas 20 caixas.
+[10:34] 20 números?
+[10:35] 200 algarismos no total.
+[10:37] Se somar às casas decimais.
+[10:39] Nossa, é muito pouco espaço para tanto cálculo.
+[10:42] É que não tinha onde guardar.
+[10:43] A máquina cuspiu os resultados em cartões perfurados o tempo todo
+[10:47] para liberar espaço nas caixas.
+[10:49] Existe um extra totalmente dedicado à estrutura física
+[10:53] e aos corredores desse salão imenso do ENIAC.
+[10:57] Para entender o custo operacional desse sistema, aperte o próximo.
+[11:01] A máquina calculava muito rápido, mas surgiu um novo gargalo aí, né?
+[11:06] Sim, o trabalho de programar.
+[11:08] Não tinha tela nem teclado no ENIAC.
+[11:11] E como era feito?
+[11:12] Involvia literalmente mudar cabos físicos grossos em painéis anormes
+[11:17] e girar chaves seletoras gigantes.
+[11:19] Ah, então era como precisar trocar a fiação de uma casa inteira
+[11:23] apenas para mudar de lâmpada.
+[11:25] Exatamente isso.
+[11:26] Levava dias de montagem física para configurar uma nova conta matemática.
+[11:31] O gargalo saiu do cálculo e passou a ser o comando da máquina.
+[11:35] É muito trabalho braçal para uma máquina eletrônica.
+[11:37] Demais.
+[11:38] Para conhecer a equipe responsável por essa tarefa, aperte o próximo.
+[11:43] O detalhe crucial que as fontes destacam
+[11:46] é que quem operava e programava o ENIAC na prática eram seis mulheres.
+[11:50] Sem nenhum manual de instruções, aliás.
+[11:53] Sim, elas aprenderam a máquina por dentro,
+[11:56] fuçando nos diagramas, mas por anos foram tratadas como mers ocuperadoras.
+[12:00] É, mas a gente precisa fazer uma separação histórica
+[12:03] necessária aqui com base nas fontes.
+[12:06] Qual?
+[12:07] É muito comum confundir os grupos, mas essas seis mulheres da Filadélfia
+[12:10] nos anos 1940 são um grupo completamente diferente.
+[12:15] Daquelas calculistas da NASA que trabalharam em outro estado
+[12:18] quase 20 anos depois na corrida espacial.
+[12:21] A verdade, a história exata e a contribuição técnica
+[12:26] dessas seis mulheres do ENIAC
+[12:28] formam o tema central de um episódio extra nosso.
+[12:31] Para unificar os pontos técnicos de tudo o que vimos, aperte o próximo.
+[12:36] Vamos fazer uma análise lado a lado.
+[12:38] Se a gente pegar os Z3, o Mark I e o ENIAC,
+[12:41] a gente vê que todos calculavam sozinhos
+[12:45] e todos eram programáveis.
+[12:46] Mas todos mantinham as instruções do lado de fora da máquina,
+[12:51] nos cabos, fitas e chaves.
+[12:53] E a gente tem que relembrar o tamanho minúsculo das protileiras,
+[12:57] 64 caixas, 72 caixas e apenas 20 caixas.
+[13:02] Verdade.
+[13:03] E apenas números entravam ali.
+[13:05] Nenhuma guardava dados para o dia seguinte.
+[13:08] Ao desligar energia, tudo simplesmente sumia.
+[13:11] Ou seja, o problema central é que, mantendo as ordens do lado de fora,
+[13:15] a máquina nunca consegue analisar a própria instrução.
+[13:19] Trocar de tarefa continuava sendo um esforço braçal pesado e demorado.
+[13:23] Para entendermos a solução desenhada para os próximos passos, aperte o próximo.
+[13:27] O material que a gente cobriu hoje para exatamente no ano de 1946.
+[13:32] Temos três máquinas gigantescas em operação,
+[13:35] mas nenhuma capaz de armazenar a própria ordem internamente.
+[13:39] E com base nas notas, o próximo grande desafio
+[13:41] vai ser justamente pegar a instrução que está do lado de fora
+[13:45] e colocá-la na mesma prátireira onde moram os números.
+[13:48] O conceito do programa armazenado.
+[13:50] Um jeito totalmente novo de usar a memória que já existia.
+[13:54] Exato.
+[13:55] Não era inventar uma nova peça de metal, mas mudar o uso lógico.
+[13:59] O tênus deixa um pensamento final para quem está nos ouvindo refletir.
+[14:04] Se a máquina precisa parar e esquecer de tudo quando a energia acaba,
+[14:09] até que ponto ela realmente resolve nossos problemas de forma autônoma,
+[14:14] sem a intervenção das mãos humanas a cada novo passo.
+[14:18] Fica a reflexão.

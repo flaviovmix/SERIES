@@ -1,0 +1,220 @@
+Inicie dizendo: O Programa Que Mora Na Memoria
+---------------
+
+Este e o terceiro episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da serie Como
+Reinventar o Computador do Zero. O episodio anterior cobriu de 1936 a 1946 e
+terminou com o ENIAC apresentado ao mundo: maquinas que ja calculavam sozinhas,
+mas que guardavam o programa fora da memoria.
+
+ESTE EPISODIO COBRE DE 1945 A 1949. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou.
+
+REGRA DURA DAS TELAS. Este episodio tem 11 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 10 vezes, uma no fim de cada tela, na ordem. NAO juntar o
+conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte e NAO
+seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela
+quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela
+errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 6, 7 e 8. Sao as tres consequencias que a peca abre
+(salto condicional, laco e sub-rotina) e a tentacao de despachar as tres num bloco
+so e grande. Nao juntar: cada uma tem a sua tela e o seu pedido de Proximo. O mesmo
+vale pras telas 9 e 10, que sao duas maquinas diferentes, em dois paises, com um ano
+de diferenca.
+
+O BOTAO DE FOTO REAL E ILUSTRACAO. Nas telas que tem as duas versoes existe um
+botao que troca entre a foto de epoca e o desenho. NAO explicar isso de novo: quem
+ouviu o episodio anterior ja sabe. No maximo, meia frase na tela 9.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de
+extras. A principal so carrega o que a proxima peca precisa. Todo aprofundamento
+mora num extra avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. Nada de onde nasceu, de que familia veio, onde
+  estudou ou quando morreu. Cada pessoa entra so com o que fez e por que fez.
+- Onde o roteiro escrever GANCHO DE EXTRA, dizer de forma curta e generica que
+  existe um episodio extra so sobre aquilo, pra quem quiser ir fundo, e seguir em
+  frente na hora. NAO dizer o nome nem o numero do extra e NAO explicar o assunto
+  dele.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A memoria como uma prateleira de caixas numeradas, todas iguais por fora. O que
+  muda nao e a caixa: e o momento em que a maquina abre. Se ela abre procurando
+  uma ordem, o que esta la dentro e ordem. Se abre procurando um numero, e numero.
+- A receita e o ingrediente guardados no mesmo armario da cozinha. Antes, a receita
+  ficava pregada na parede e trocar de prato era arrancar a folha da parede.
+- A lista de ordens numeradas com um dedo apontando a da vez, que o episodio da
+  planta ja usou. O dedo e o contador.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - ONDE A GENTE PAROU
+
+Retomar em duas frases: o episodio anterior ligou as tres primeiras maquinas
+programaveis. Z3, Mark I e ENIAC. Todas calculavam sozinhas.
+
+Dizer o limite que ficou de heranca: nas tres, os numeros moravam dentro da
+maquina e as ordens moravam fora, em fita, cabo ou chave. No ENIAC, trocar de
+tarefa era mudar cabo de painel: dias de trabalho.
+
+Dizer o intervalo em voz alta: este episodio cobre de 1945 a 1949, e ele tem uma
+peca so, mas e uma peca que muda tudo.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 11 telas, que quem
+esta so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a
+tela quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra ver a peca.
+
+TELA 2 - A MESMA CAIXA SERVE PRAS DUAS COISAS
+
+Explicar a ideia devagar, porque e o coracao da serie inteira: a memoria ja e uma
+fileira de posicoes numeradas, cada uma guardando um punhado de zeros e uns. Nada
+impede que uma dessas posicoes, em vez de guardar um numero pra somar, guarde uma
+ordem pra executar. Os dois cabem no mesmo formato.
+
+Usar a analogia da prateleira de caixas iguais: o que decide se aquilo e ordem ou
+numero nao e a caixa, e o momento em que a maquina abre e o que ela esta
+procurando.
+
+Esta tela tem tempo. Nao correr.
+
+Fechar pedindo o Proximo pra ver o que isso muda no dia a dia.
+
+TELA 3 - TROCAR DE TAREFA VIRA CARREGAR MEMORIA
+
+Dizer o que a peca da de imediato: trocar de tarefa deixa de ser trabalho fisico e
+vira carregar outro conteudo na memoria. Segundos em vez de dias.
+
+Usar a segunda analogia: e a receita sair da parede e entrar no armario, junto com
+os ingredientes.
+
+Fechar pedindo o Proximo pra ver onde isso foi escrito pela primeira vez.
+
+TELA 4 - O RASCUNHO DE 1945
+
+Contar o documento: em 30 de junho de 1945 circulou um rascunho chamado First
+Draft of a Report on the EDVAC. Ele descrevia uma maquina com unidade aritmetica,
+unidade de controle, memoria, entrada e saida, e com uma memoria unica guardando
+tanto os numeros quanto as ordens. Era a planta do que a gente chama ate hoje de
+computador.
+
+Fechar pedindo o Proximo, porque esse rascunho veio com um problema junto.
+
+TELA 5 - O NOME QUE FICOU
+
+Contar o incomodo, sem transformar em fofoca: o rascunho saiu com o nome de John
+von Neumann sozinho. Presper Eckert e John Mauchly, que estavam no projeto desde
+antes dele chegar, sustentavam que a ideia tinha nascido das reunioes do grupo. O
+documento virou publico, e ser publico depois derrubou na justica a patente que
+eles tentaram sustentar.
+
+Dizer a licao em uma frase, sem moral da historia: a ideia era do grupo, o nome que
+ficou foi de um so, e isso vai acontecer de novo mais de uma vez nesta serie.
+
+GANCHO DE EXTRA: avisar em uma frase que a historia de quem estava naquela sala da
+um episodio inteiro e tem um extra so pra ela. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra ver a primeira coisa que so ficou possivel depois
+dessa peca.
+
+TELA 6 - SALTO CONDICIONAL
+
+Explicar: se a ordem e um numero na memoria, a maquina pode fazer conta com a
+propria ordem, e pode calcular pra onde ir. Dai sai o salto condicional, o "se der
+isso, va pra la".
+
+Usar a lista de ordens com o dedo: pular e mover o dedo pra outra linha, e quem
+decide pra qual linha e o resultado da conta anterior.
+
+Convidar quem esta na pagina a mexer no dedo da lista enquanto a explicacao corre.
+
+Fechar pedindo o Proximo pra ver a segunda.
+
+TELA 7 - LACO
+
+Explicar: se ela pode calcular o endereco da proxima ordem, ela pode voltar num
+pedaco que ja executou. Dai sai o laco, repetir a mesma coisa mudando um numero.
+
+Convidar a ver o dedo voltando na lista e o numero mudando a cada volta.
+
+Fechar pedindo o Proximo pra ver a terceira.
+
+TELA 8 - SUB-ROTINA
+
+Explicar: um trecho de programa que serve pra varias tarefas pode ser guardado e
+chamado de novo, em vez de ser reescrito. E o comeco da ideia de rotina pronta.
+
+Dizer que essas tres coisas juntas, salto, laco e rotina pronta, sao o que separa
+uma calculadora automatica de um computador.
+
+Fechar pedindo o Proximo pra ver a primeira maquina que fez isso funcionar.
+
+TELA 9 - MANCHESTER BABY, 1948
+
+Contar: 21 de junho de 1948, uma maquina pequena, feita pra testar um tipo novo de
+memoria, um tubo que guardava 32 palavras de 32 bits. Ela rodou um programa de 17
+instrucoes guardado na propria memoria, procurando o maior divisor proprio de
+262144. Levou cerca de 52 minutos. Foi a primeira vez que uma maquina executou um
+programa que estava dentro dela.
+
+Aqui cabe meia frase lembrando que a foto e a ilustracao mostram coisas diferentes:
+a foto e a replica no museu, o desenho e o tubo de memoria por dentro.
+
+Fechar pedindo o Proximo pra ver a que virou servico de verdade.
+
+TELA 10 - EDSAC, 1949
+
+Contar: Cambridge, 6 de maio de 1949. Guardava os bits em linhas de atraso de
+mercurio e, diferente do Baby, entrou em servico de verdade, pra gente de outros
+departamentos usar. Foi ali que apareceu a sub-rotina na pratica e a primeira
+biblioteca de rotinas prontas: um pedaco de programa que voce chama em vez de
+escrever de novo.
+
+Dizer o que muda entre um e outro: o Baby provou que da; o EDSAC transformou aquilo
+em servico de todo dia.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 11 - ONDE ISTO PARA
+
+Fechar: a partir de 1949 a maquina guarda a ordem junto com o numero, troca de
+tarefa em segundos, salta, repete e reusa pedaco pronto. A forma do computador
+moderno esta de pe.
+
+Dizer o que ainda incomoda: esse programa continua sendo escrito na mao, em
+binario, instrucao por instrucao. Escrever pra maquina ainda e falar a lingua da
+maquina.
+
+Dizer onde o episodio para: 1949. E deixar a pergunta que abre o proximo passo, sem
+responder: por que a propria maquina nao traduz, se traduzir tambem e uma tarefa?
+
+GANCHO DE EXTRA: encerrar avisando em uma frase que quem quiser conhecer a pessoa
+que atacou esse problema vai encontrar isso num extra, e parar por ai.
+
+Fechar sem pedir Proximo: esta e a ultima tela.

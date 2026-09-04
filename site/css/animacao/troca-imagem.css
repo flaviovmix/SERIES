@@ -1,0 +1,79 @@
+/* troca-imagem
+   A figura que guarda duas versoes da mesma coisa e um botao que alterna entre elas: a FOTO REAL de epoca e a ILUSTRACAO, que mostra o que a foto nao mostra (a peca em corte, o que se mexe, a cena que ninguem fotografou). Depende de animacao/tokens.css e de pranchas.css (usa .selo e .clicavel).
+
+   Nasceu na etapa 6, a primeira em que quase toda maquina tem fotografia. Antes
+   dela o audio precisava avisar "isto e reconstituicao"; agora a pagina mostra as
+   duas e quem escolhe e quem assiste. Figura com uma imagem so nao ganha barra. */
+
+.troca { position: relative; margin: 0; }
+
+.troca__palco {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--raio, 14px);
+  background: var(--papel-fundo, #14110d);
+}
+
+.troca__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity .35s var(--ease);
+}
+
+/* a segunda imagem fica por cima, sumida, pra troca nao piscar o layout */
+.troca__img + .troca__img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+.troca[data-ver="ilustra"] .troca__img + .troca__img { opacity: 1; }
+
+.troca__barra {
+  display: inline-flex;
+  gap: 2px;
+  margin-top: 10px;
+  padding: 3px;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: var(--papel-alto, rgba(255, 255, 255, .04));
+}
+
+.troca__botao {
+  border: 0;
+  padding: 7px 15px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--fonte-mono);
+  font-size: 10.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .2s var(--ease), color .2s var(--ease);
+}
+.troca__botao:hover { color: var(--ink); }
+.troca__botao[aria-pressed="true"] {
+  background: var(--realce, #c98b3a);
+  color: var(--papel, #14110d);
+}
+
+.troca figcaption {
+  margin-top: 8px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* a linha de credito da foto de epoca some quando a ilustracao esta em cena */
+.troca__credito { display: block; }
+.troca[data-ver="ilustra"] .troca__credito { display: none; }
+.troca__aviso { display: none; }
+.troca[data-ver="ilustra"] .troca__aviso { display: block; }
+
+@media (max-width: 640px) {
+  .troca__barra { display: flex; width: 100%; }
+  .troca__botao { flex: 1; padding: 10px 8px; }
+}

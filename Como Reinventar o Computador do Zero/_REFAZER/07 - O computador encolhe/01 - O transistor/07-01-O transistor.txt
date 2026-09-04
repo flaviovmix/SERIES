@@ -1,0 +1,78 @@
+Inicie dizendo: O Transistor
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Transistor.txt enviado como
+fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o primeiro episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie
+Como Reinventar o Computador do Zero. A etapa anterior terminou em 1959: a maquina ja
+guarda a propria ordem e ja recebe ordem na nossa lingua. Ela ficou esperta, mas
+continua sendo uma sala inteira de valvulas quentes.
+
+ESTE EPISODIO COBRE DE 1947 A 1955. Dizer esse intervalo logo na abertura e, no
+encerramento, dizer em que ano o episodio para. Explicar que ele volta um pouco no
+tempo de proposito: a peca nasceu enquanto a etapa anterior acontecia.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 11 telas.
+O audio TEM que pedir "aperte o Proximo" exatamente 10 vezes, uma no fim de cada
+tela, na ordem do roteiro. NAO juntar duas telas num bloco so e NAO seguir adiante
+sem pedir. Avisar na tela 1 que a pagina tem 11 telas e que quem esta so ouvindo
+acompanha normalmente.
+
+O MODELO EM TRES DIMENSOES. A capa tem um transistor tridimensional pra girar e
+abrir. Avisar em UMA frase na tela 1 e convidar a mexer na tela 6, quando a peca for
+explicada. Nao repetir em outras telas.
+
+FOCO: a troca da peca que decide o tamanho de tudo. O custo da valvula (filamento
+aceso, calor, energia, queima como lampada). O semicondutor, que conduz ou nao
+dependendo do que se faz com ele. A dopagem, que faz a mesma pedra virar tipo N ou
+tipo P com pouquissimos atomos de diferenca. A juncao, caminho de mao unica sem peca
+que se mexe. O transistor, tres camadas N-P-N em que a do meio comanda a corrente
+grande. Bell Labs, dezembro de 1947, resolvendo problema de telefonia e nao de
+computador. A comparacao lado a lado com a valvula. Por que demorou a virar peca
+barata (pureza do cristal e fabricacao). E as primeiras maquinas sem valvula, no meio
+dos anos 1950, junto com o radio de bolso.
+
+O PONTO QUE NAO PODE FALTAR: e a MESMA funcao de sempre, o interruptor comandado por
+eletricidade que a etapa anterior procurava. O que muda e do que ele e feito, e e
+isso que permite ele ficar cada vez menor sem parar de funcionar.
+
+SEM BIOGRAFIA. Esta e a trilha principal da serie. As pessoas do laboratorio entram
+so com o que fizeram e por que. NAO citar onde nasceram, onde estudaram, premios nem
+brigas.
+
+GANCHOS DE EXTRA. Em dois momentos o roteiro marca GANCHO DE EXTRA: o material e
+como a areia vira peca (tela 3) e quem estava no laboratorio (tela 7). Em cada um,
+dizer em UMA frase que existe um episodio extra so sobre aquilo, pra quem quiser ir
+fundo, e seguir na hora. NAO dizer o nome nem o numero do extra e NAO explicar o
+assunto dele.
+
+NAO explicar circuito integrado, microprocessador nem lei de Moore: sao os proximos
+episodios. A ultima tela so deixa a pergunta no ar.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As
+unicas autorizadas sao a torneira (a camada do meio comandando a corrente grande), a
+porta que abre sozinha (do episodio do rele e da valvula) e a lampada queimada (o
+filamento da valvula queima igual ao de casa).
+
+Use tambem o Overview.txt como contexto curto.

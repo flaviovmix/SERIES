@@ -1,0 +1,232 @@
+Inicie dizendo: O Transistor
+---------------
+
+Este e o primeiro episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie
+Como Reinventar o Computador do Zero. A etapa anterior terminou em 1959: o
+computador ja guarda a propria ordem na memoria e ja aceita ordem escrita na nossa
+lingua. Ele ficou esperto, mas continua sendo uma sala inteira de valvulas que
+esquentam e queimam.
+
+ESTE EPISODIO COBRE DE 1947 A 1955. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou.
+
+REGRA DURA DAS TELAS. Este episodio tem 11 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 10 vezes, uma no fim de cada tela, na ordem. NAO juntar o
+conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte e NAO
+seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela
+quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela
+errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 3, 4, 5 e 6. Sao a corrente que explica a peca
+(semicondutor, dopagem, juncao, transistor) e a tentacao de juntar tudo num bloco de
+fisica e grande. Nao juntar: cada uma tem o seu pedido de Proximo, e cada uma
+adiciona uma coisa so.
+
+O MODELO EM TRES DIMENSOES. A capa da pagina tem um transistor tridimensional que da
+pra girar e abrir. Avisar isso UMA VEZ, na tela 1, em uma frase, e convidar a mexer
+nele quando a peca aparecer na tela 6. NAO ficar lembrando dele em toda tela.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de
+extras. A principal so carrega o que a proxima peca precisa. Todo aprofundamento
+mora num extra avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. As pessoas do laboratorio entram so com o que
+  fizeram e por que. Nada de onde nasceram, onde estudaram, premios ou brigas.
+- Onde o roteiro escrever GANCHO DE EXTRA, dizer de forma curta e generica que
+  existe um episodio extra so sobre aquilo, pra quem quiser ir fundo, e seguir em
+  frente na hora. NAO dizer o nome nem o numero do extra e NAO explicar o assunto
+  dele.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A torneira: a corrente grande e a agua no cano, e a camada do meio do transistor e
+  a torneira. Um esforco pequeno na torneira decide se passa muita agua ou nenhuma.
+- A porta que abre sozinha, do episodio do rele e da valvula: continua valendo pra
+  dizer que o transistor faz a MESMA funcao, sem nada se mexendo e sem esquentar.
+- A lampada queimada: o filamento da valvula queima igualzinho ao de uma lampada de
+  casa, e por isso a maquina de valvulas vive em manutencao.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - ELA FICOU ESPERTA, MAS NAO FICOU MENOR
+
+Retomar em duas frases onde a serie parou: em 1959 o computador ja guardava a
+propria ordem na memoria e ja recebia ordem na nossa lingua, com o tradutor fazendo
+o resto.
+
+Dizer o que nao mudou: ele continua sendo uma sala inteira, com milhares de valvulas
+quentes. Toda a esperteza dos ultimos episodios mora num predio.
+
+Dizer o intervalo em voz alta: este episodio cobre de 1947 a 1955, e ele volta um
+pouco no tempo de proposito, porque a peca que resolve isso nasceu enquanto a etapa
+anterior acontecia.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 11 telas, que quem esta
+so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela
+quando ouvir o pedido. Dizer tambem, em uma frase, que a capa tem um modelo
+tridimensional da peca pra girar e abrir.
+
+Fechar pedindo o Proximo pra ver o que a valvula cobra.
+
+TELA 2 - O QUE A VALVULA COBRA
+
+Explicar por que a valvula esquenta: ela funciona porque um filamento incandescente
+solta eletrons no vacuo. Esquentar nao e defeito dela, e o principio de
+funcionamento.
+
+Dar o custo em numero: cada uma e do tamanho de um dedo, gasta energia como uma
+lampadinha e um dia queima, igual a lampada de casa. Numa maquina com dezoito mil
+delas, sempre tem alguma queimada, e achar qual e trabalho.
+
+Dizer o limite que isso cria: nao adianta querer uma maquina com um milhao de
+valvulas. Nao e questao de dinheiro, e de calor, de energia e de manutencao.
+
+Fechar pedindo o Proximo pra conhecer o material que resolve isso.
+
+TELA 3 - O MATERIAL DO MEIO
+
+Explicar o semicondutor sem formula: existe material que conduz eletricidade (metal)
+e material que nao conduz (vidro, borracha). E existe um grupo no meio do caminho,
+que conduz ou nao dependendo do que a gente faz com ele. Germanio primeiro, silicio
+depois, que e areia purificada.
+
+Dizer por que isso interessa: um material que decide se conduz e, por definicao, um
+interruptor em potencial. E a serie inteira esta atras de um interruptor melhor.
+
+GANCHO DE EXTRA: avisar em uma frase que tem um extra so sobre esse material e sobre
+como a areia vira peca, pra quem quiser ver por dentro. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra ver o truque que faz o material obedecer.
+
+TELA 4 - A DOPAGEM
+
+Explicar: misturando uma quantidade minuscula de outro elemento no cristal, ele fica
+com eletrons sobrando ou com falta de eletrons. Um jeito e o tipo N, o outro e o
+tipo P. Dizer que a quantidade e realmente minuscula, uns poucos atomos em milhoes,
+e que e essa impureza controlada que faz o material servir.
+
+Dizer o ponto que importa: e a mesma pedra nos dois casos. O que muda e o
+comportamento eletrico, e isso se escolhe na fabricacao.
+
+Fechar pedindo o Proximo pra encostar um tipo no outro.
+
+TELA 5 - A JUNCAO
+
+Explicar: encostando um pedaco N num pedaco P, acontece uma coisa util. A corrente
+passa num sentido e nao passa no outro. Um caminho de mao unica pra eletricidade,
+sem nenhuma peca se mexendo e sem nada esquentar.
+
+Dizer que isso ja e um componente util, mas ainda nao e o que a serie procura: um
+caminho de mao unica nao obedece a ninguem, ele so tem um lado.
+
+Fechar pedindo o Proximo pra empilhar mais uma camada.
+
+TELA 6 - O TRANSISTOR
+
+Explicar a peca: tres camadas, N, P e N. A do meio e fina e vira o comando. Uma
+corrente pequena nessa camada do meio decide se a corrente grande atravessa a peca
+inteira, do primeiro pro terceiro pedaco.
+
+Usar a analogia da torneira: a corrente grande e a agua no cano, e a camada do meio
+e a torneira. Um esforco pequeno decide se passa muita agua ou nenhuma.
+
+Dizer o que isso significa pra serie, com todas as letras: e a MESMA funcao do rele e
+da valvula, um interruptor comandado por eletricidade. O que mudou foi do que ele e
+feito.
+
+Convidar quem esta na pagina a girar e abrir o modelo tridimensional da capa
+enquanto a explicacao corre.
+
+Fechar pedindo o Proximo pra dizer quando isso aconteceu.
+
+TELA 7 - BELL LABS, DEZEMBRO DE 1947
+
+Contar o essencial: em dezembro de 1947, num laboratorio de telefonia nos Estados
+Unidos, um grupo pequeno conseguiu fazer o primeiro desses funcionar. O objetivo
+declarado nem era computador: era melhorar amplificador de linha telefonica, porque
+valvula em central telefonica dava manutencao demais.
+
+Dizer o que isso tem de bonito, sem drama: a peca que muda o computador nasceu
+resolvendo um problema de telefone.
+
+GANCHO DE EXTRA: avisar em uma frase que quem estava naquele laboratorio da um
+episodio inteiro e tem um extra so pra elas. Uma frase e seguir. NAO citar nome nem
+premio.
+
+Fechar pedindo o Proximo pra comparar as duas pecas de frente.
+
+TELA 8 - LADO A LADO
+
+Comparar direto, item por item, sem inventar numero: a valvula precisa de filamento
+aceso, o transistor nao precisa. A valvula esquenta muito, o transistor esquenta
+pouco. A valvula gasta muito mais energia. A valvula queima com o uso, o transistor
+dura. A valvula e do tamanho de um dedo, o transistor cabe numa unha, e vai caber em
+muito menos.
+
+Dizer a frase que abre a etapa inteira: pela primeira vez a peca pode ficar menor
+sem parar de funcionar. E isso, e nao a velocidade, e o que muda o resto da historia.
+
+Fechar pedindo o Proximo pra explicar por que demorou.
+
+TELA 9 - POR QUE DEMOROU
+
+Explicar sem tecnicismo: entre existir no laboratorio e existir na loja tem um
+caminho de fabricacao. O cristal precisa ser purissimo, a dopagem precisa ser
+controlada, e no comeco muitas pecas saiam fora do ponto e iam pro lixo.
+
+Dizer que isso e um padrao que a serie ja viu e vai ver de novo: a ideia aparece
+anos antes da peca barata, e quem resolve a fabricacao e quem muda o mundo, nao quem
+teve a ideia primeiro.
+
+Fechar pedindo o Proximo pra ver onde ele apareceu primeiro.
+
+TELA 10 - AS PRIMEIRAS MAQUINAS SEM VALVULA
+
+Contar: no meio dos anos 1950 aparecem os primeiros computadores feitos so com
+transistor, e aparece tambem o radio de bolso, que e o que faz o publico comum
+descobrir a peca. Um computador que antes ocupava um salao passa a caber num armario
+e a rodar sem a manutencao diaria de trocar valvula queimada.
+
+Dizer o efeito real: nao e que ficou mais rapido de cara. E que ficou confiavel e
+menor, e maquina confiavel e menor cabe em mais lugar.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 11 - ONDE ISTO PARA
+
+Dizer onde o episodio para: meados dos anos 1950, com o transistor substituindo a
+valvula.
+
+Dizer o que ainda incomoda, que e o que abre o proximo episodio: cada transistor
+ainda e uma peca solta, comprada uma a uma, soldada a mao numa placa, com fio ligando
+cada perna. Uma maquina com milhares deles vira um emaranhado de solda, e cada solda
+e um lugar onde pode falhar.
+
+Deixar a pergunta no ar, sem responder: e se, em vez de fazer as pecas separadas e
+ligar depois, a gente fizesse todas juntas, ja ligadas, no mesmo pedaco de cristal?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

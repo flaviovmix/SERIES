@@ -158,7 +158,21 @@ export function montaPalco(opcoes = {}) {
     return (borda + 18) / 2;                    // centra a maquina no espaco que sobra
   }
 
+  // Na tela estreita o painel deixa a lateral e vira barra no rodape, POR CIMA da
+  // maquina: no telefone ela sumia atras dele. Em vez de empurrar a maquina, o palco
+  // encolhe — o canvas termina onde a barra comeca e a maquina se recentra sozinha no
+  // que sobrou. Quem manda na conta e a altura real da barra, que muda por modelo.
+  function encolhePalcoAcimaDoPainel() {
+    const painel = document.querySelector('.hud');
+    if (!painel) return;
+    const barraNoRodape = window.innerWidth <= 700;
+    const alvo = barraNoRodape ? Math.ceil(painel.getBoundingClientRect().height) + 16 : 0;
+    const atual = parseInt(cont.style.bottom || '0', 10) || 0;
+    if (atual !== alvo) cont.style.bottom = alvo ? alvo + 'px' : '';
+  }
+
   function redimensiona() {
+    encolhePalcoAcimaDoPainel();
     const w = cont.clientWidth, h = cont.clientHeight;
     const aspect = w / h;
     const estreito = aspect < 0.9;

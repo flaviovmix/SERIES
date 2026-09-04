@@ -1,0 +1,329 @@
+Inicie dizendo: As Primeiras Maquinas Que Ligaram
+---------------
+
+Este e o segundo episodio da etapa A MAQUINA QUE LIGA, a sexta etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior desta mesma etapa, A
+PLANTA, montou um computador inteiro no papel, sem ligar nada: porta logica,
+somador, memoria com endereco, a maquina universal de Turing e o conjunto de
+instrucoes. Este episodio e o canteiro de obras: as maquinas que ligaram de
+verdade, no MESMO periodo em que aquela planta estava sendo escrita, em boa parte
+por gente que nem tinha visto a planta.
+
+ESTE EPISODIO COBRE DE 1936 A 1946. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou, pro proximo pegar
+dali.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. NAO juntar o
+conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte e NAO
+seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela
+quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela
+errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 3, 4 e 5. Sao a mesma conversa (rele, valvula e a
+comparacao entre os dois) e a tentacao de juntar tudo num bloco de pecas e grande.
+Nao juntar: a 3 e o rele, a 4 e a valvula, a 5 e a corrida entre os dois, cada uma
+com o seu pedido de Proximo. O mesmo vale pras telas 8, 9 e 10, que sao todas do
+ENIAC: a 8 e a maquina, a 9 e o trabalho de programar, a 10 e quem fazia esse
+trabalho.
+
+O BOTAO DE FOTO REAL E ILUSTRACAO. Esta e a primeira etapa da serie em que quase
+toda maquina tem fotografia de epoca. Por isso as telas com as duas versoes tem um
+botao que troca entre a FOTO REAL e a ILUSTRACAO (o desenho, que mostra o que a
+foto nao mostra: a peca por dentro, o que se mexe, a cena que ninguem fotografou).
+Avisar isso UMA VEZ, em uma frase, na tela 1, e nunca mais. NAO mandar apertar esse
+botao e NAO voltar no assunto: quem quiser trocar, troca na hora que quiser.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de
+extras. A principal so carrega o que a proxima peca precisa. Todo aprofundamento
+(a vida de um inventor, um sistema de numeracao, uma peca por dentro) mora num
+extra avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. Nada de onde nasceu, de que familia veio, onde
+  estudou ou quando morreu. Cada pessoa entra so com o que ela fez e por que fez.
+- Onde o roteiro escrever GANCHO DE EXTRA, dizer de forma curta e generica que
+  existe um episodio extra so sobre aquilo, pra quem quiser ir fundo, e seguir em
+  frente na hora. NAO dizer o nome do extra, NAO dizer o numero dele e NAO
+  explicar o assunto do extra. O gancho e um convite de uma frase, nunca um
+  desvio.
+
+DURACAO: cerca de 25 minutos, umas duas por tela.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O rele como uma porta que alguem precisa empurrar pra abrir, contra a valvula
+  como uma porta que abre sozinha assim que a luz acende. Serve so pra explicar
+  por que a valvula e mais rapida: uma tem peca que se mexe, a outra nao.
+- Programar o ENIAC comparado a trocar a fiacao de uma casa inteira pra mudar de
+  lampada. Serve so pra dar o tamanho do trabalho de recabear.
+- A prateleira de caixas numeradas, que o episodio anterior ja usou pra memoria.
+  Aqui ela serve pra dizer quantas caixas cada maquina tinha.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A PLANTA E O CANTEIRO
+
+Retomar em duas frases: no episodio anterior a gente montou um computador inteiro
+no papel. Porta logica, somador, memoria com endereco, a maquina universal, o
+conjunto de instrucoes. Estava tudo projetado e nada estava ligado.
+
+Dizer, com todas as letras, que aquele episodio era a planta e este e o canteiro,
+e que os dois sao da MESMA epoca: enquanto as ideias eram escritas, ja tinha gente
+construindo. Varias dessas maquinas nasceram sem que os construtores conhecessem a
+planta.
+
+Dizer o que este episodio faz: liga. Dizer o intervalo em voz alta, este episodio
+cobre de 1936 a 1946, dez anos que comecam num apartamento em Berlim e terminam
+num salao do Exercito americano.
+
+Avisar, como sempre, que a explicacao acompanha uma pagina de animacao com 12
+telas, que quem esta so ouvindo acompanha normalmente, e que quem esta com a pagina
+aberta vira a tela quando ouvir o pedido.
+
+E AQUI, EM UMA FRASE SO, o aviso do botao: a partir desta etapa quase toda maquina
+tem fotografia de verdade, entao nas telas que tiverem as duas versoes existe um
+botao que troca entre a foto real e o desenho, que mostra o que a foto nao mostra.
+Uma frase, sem mandar apertar nada, e seguir.
+
+Fechar pedindo o Proximo pra ver qual era a peca que faltava.
+
+TELA 2 - A PECA QUE FALTAVA
+
+Dizer qual e a peca que faltava, porque e ela que decide tudo o que vem depois: um
+interruptor que abre e fecha sozinho, comandado por eletricidade, e barato o
+bastante pra existir aos milhares na mesma maquina. Sem isso o projeto do papel nao
+sai do papel.
+
+Explicar por que um interruptor de parede nao serve: alguem precisa ter a mao ali.
+O que a maquina precisa e de um interruptor que obedeca outro circuito, porque so
+assim uma porta logica pode comandar a proxima.
+
+Fechar pedindo o Proximo pra abrir a primeira candidata.
+
+TELA 3 - O RELE POR DENTRO
+
+Explicar o rele: um eletroima puxa uma lamina de metal e fecha um contato. E um
+interruptor que outro circuito aperta. Funciona, e barato, e existe pronto desde o
+telegrafo, entao nao precisou ser inventado pra isso.
+
+Dizer o custo dele: tem uma peca que se mexe, e mexer leva tempo. De cinco a dez
+milesimos de segundo por chaveamento, e o barulho de milhares deles trabalhando
+juntos.
+
+Convidar quem esta na pagina a olhar a peca por dentro enquanto a explicacao corre,
+sem esperar resposta e sem mandar parar o audio.
+
+Fechar pedindo o Proximo pra ver a peca que resolveu isso.
+
+TELA 4 - A VALVULA POR DENTRO
+
+Explicar a valvula: faz a mesma coisa, deixa ou nao deixa a corrente passar, mas
+sem nada se mexendo. Um filamento esquenta, o metal solta eletrons e uma grade no
+meio decide se eles passam. Por isso ela chaveia em milionesimos de segundo.
+
+Dizer o preco: esquenta, gasta muita energia e queima. Numa maquina com milhares
+delas, sempre tem alguma queimando.
+
+Aqui a analogia autorizada: o rele e uma porta que alguem precisa empurrar; a
+valvula e uma porta que abre sozinha assim que a luz acende.
+
+GANCHO DE EXTRA: fechada a comparacao, avisar em UMA frase que cada uma dessas duas
+pecas tem um extra so sobre ela, por dentro, pra quem quiser ver o que se mexe, o
+que nao se mexe e de onde cada uma veio. Uma frase, as duas juntas, e seguir. NAO
+adiantar nada do conteudo do extra.
+
+Fechar pedindo o Proximo pra ver a diferenca em numero.
+
+TELA 5 - A CORRIDA, EM NUMERO
+
+DAR OS NUMEROS, com calma, porque "rapido" e "lento" sozinhos nao dizem nada e o
+ouvinte precisa desse numero pro resto do episodio. O rele leva de cinco a dez
+milesimos de segundo pra fechar e abrir: no melhor caso liga e desliga umas cem,
+duzentas vezes por segundo, e as maquinas de rele desta epoca nem chegavam perto
+disso, andavam em torno de cinco a dez vezes por segundo. A valvula passa de um
+milhao de vezes por segundo, e mesmo assim o ENIAC foi segurado em cem mil vezes
+por segundo pra nao errar.
+
+Dizer que a diferenca entre as duas nao e de dobro nem de dez vezes, e de umas dez
+mil vezes. E dizer que essa medida, quantas vezes por segundo a peca liga e
+desliga, e a mesma que hoje aparece na etiqueta de qualquer computador.
+
+GANCHO DE EXTRA: avisar em uma frase que existe um extra so sobre o que essa medida
+significa, pra quem quiser entender de onde vem esse numero. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra ir ao primeiro canteiro, que e de rele.
+
+TELA 6 - Z3, BERLIM, 1941
+
+Konrad Zuse era engenheiro civil e estava cansado de calcular estrutura de predio
+na mao. Montou a maquina na sala da casa dos pais, com dinheiro emprestado de
+amigos, fora de qualquer universidade e fora de qualquer projeto de guerra
+importante.
+
+O Z3 ficou pronto em 1941, com cerca de 2600 reles. Trabalhava em binario e lia o
+programa de uma fita perfurada. Fazia soma, subtracao, multiplicacao, divisao e
+raiz quadrada. Foi a primeira maquina programavel do mundo que funcionou de
+verdade.
+
+Dar o tamanho dele por dentro, com a prateleira de caixas do episodio anterior: o
+Z3 tinha 64 caixas, cada uma guardando uma palavra de 22 bits. So isso. Uma soma
+levava quase um segundo, uma multiplicacao uns tres, porque a maquina inteira
+andava no ritmo do rele. E o programa nao morava nessa prateleira: vinha de fora,
+lido tira por tira de um filme perfurado.
+
+Dizer o desfecho sem drama: em 1943 um bombardeio destruiu a maquina e a casa. O
+mundo levou decadas pra saber que ela tinha existido, entao ela nao influenciou
+quase nada do que veio depois. Ela funcionou primeiro e mudou pouco.
+
+Ao dizer que o Z3 trabalhava em binario, lembrar em meia frase que e o mesmo
+binario do episodio anterior. NAO repetir aqui o convite de extra sobre binario:
+esse ja foi feito na planta e repetir cansa.
+
+GANCHO DE EXTRA: avisar em uma frase que essa maquina e quem montou ela na sala de
+casa tem um extra so pra elas. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra atravessar o oceano.
+
+TELA 7 - HARVARD MARK I, 1944
+
+Howard Aiken era doutorando de fisica e estava cansado de resolver equacao
+diferencial na calculadora de mesa. Procurou quem construisse a maquina que ele
+tinha em mente e acabou na IBM, que bancou e fabricou.
+
+O Mark I foi instalado em Harvard em fevereiro de 1944: quinze metros de
+comprimento, cinco toneladas, milhares de pecas, e decimal, nao binario, o que na
+pratica quer dizer que ele guardava numero do jeito que a gente escreve, com dez
+digitos possiveis em cada casa.
+
+Dar os numeros dele: uma soma em tres decimos de segundo, umas tres somas por
+segundo; uma multiplicacao em seis segundos; uma divisao em quinze. A prateleira
+tinha 72 caixas, cada uma segurando um numero de 23 casas decimais, mais 60 caixas
+de valor fixo que a pessoa escolhia girando chave na mao. E de novo: o programa
+vinha de fora, de uma fita de papel perfurado.
+
+Contar a parte que amarra a serie inteira: Aiken encontrou no departamento pedacos
+de latao da maquina que Charles Babbage tinha deixado inacabada cem anos antes. A
+etapa das engrenagens volta aqui, agora com eletricidade fazendo o trabalho que o
+metal nao conseguiu terminar.
+
+GANCHO DE EXTRA: numa frase so, avisar que tem um extra sobre por que a gente conta
+de dez em dez, e outro sobre a empresa que fabricou essa maquina. Uma frase e
+seguir.
+
+Fechar pedindo o Proximo pra chegar na maquina que trocou o rele pela valvula.
+
+TELA 8 - ENIAC, 1945 E 1946
+
+O ENIAC nao nasceu de curiosidade: nasceu porque o Exercito americano precisava de
+tabela de tiro de artilharia e as contas nao saiam no ritmo da guerra. Presper
+Eckert e John Mauchly construiram na Universidade da Pensilvania.
+
+Ficou pronto em 1945 e foi apresentado ao publico em fevereiro de 1946: cerca de
+18 mil valvulas, trinta toneladas, uma sala inteira.
+
+Fechar a comparacao com numero, ja que o episodio deu o numero das outras duas: cem
+mil pulsos por segundo e cerca de cinco mil somas por segundo, contra as tres somas
+por segundo do Mark I. Mais de mil vezes mais rapido, fazendo a mesma conta.
+
+E dizer o contraste que ninguem espera: a prateleira dele tinha vinte caixas, de
+dez casas decimais cada. Vinte. Duzentos algarismos no total, pouco mais do que
+cabe numa mensagem de texto de celular. Tinha ainda tres tabelas fixas, gravadas
+girando chave na mao, e pronto. Por isso ele cuspia resultado em cartao perfurado o
+tempo todo: nao tinha onde guardar. Uma sala inteira de maquina, e memoria pra
+quase nada.
+
+GANCHO DE EXTRA: avisar em uma frase que esse salao inteiro tem um extra so sobre
+ele. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra ver como se dava uma ordem pra essa maquina.
+
+TELA 9 - PROGRAMAR ERA RECABEAR
+
+Aqui vem o incomodo do episodio: programar o ENIAC nao era escrever nada. Era mudar
+cabo de painel de tomada e girar chave, ate a maquina ficar fisicamente montada pra
+aquela conta. Trocar de tarefa levava dias.
+
+Analogia autorizada: era como trocar a fiacao de uma casa inteira pra mudar de
+lampada.
+
+Dizer o que isso significa de verdade: a maquina fazia cinco mil somas por segundo,
+mas levava tres dias pra saber qual soma fazer. O gargalo tinha mudado de lugar,
+saiu do calculo e foi pro comando.
+
+Fechar pedindo o Proximo pra conhecer quem fazia esse trabalho.
+
+TELA 10 - AS SEIS, E AS OUTRAS
+
+Dizer que esse trabalho era feito por seis mulheres que aprenderam a maquina por
+dentro sem manual, porque manual nao existia, e que por muito tempo elas foram
+tratadas como operadoras quando eram as unicas pessoas que sabiam fazer o ENIAC
+rodar.
+
+SEPARAR AS DUAS HISTORIAS, em duas ou tres frases, porque a troca e comum e esta
+tela existe pra cortar ela. Essas seis sao do ENIAC, na Filadelfia, na Segunda
+Guerra, nos anos 1940, e o trabalho delas era fazer aquela maquina funcionar. Elas
+NAO sao as calculistas negras da NASA que ficaram conhecidas por um filme: aquelas
+trabalharam em outro estado, quase vinte anos depois, nos anos 1960, e na corrida
+espacial, nao na construcao do computador. Sao dois grupos diferentes, duas epocas
+diferentes e dois assuntos diferentes, que so tem em comum o fato de serem mulheres
+que calculavam num tempo em que ninguem contava com elas. NAO citar nome de filme,
+nome de pessoa nem nome de agencia: so deixar claro que sao coisas diferentes.
+
+GANCHO DE EXTRA: avisar em uma frase que a historia dessas seis da um episodio
+inteiro e tem um extra so pra elas. Uma frase e seguir. NAO contar nome, nem de
+onde vieram, nem o que aconteceu depois.
+
+Fechar pedindo o Proximo pra colocar as tres maquinas lado a lado.
+
+TELA 11 - O QUE AS TRES TINHAM DENTRO
+
+Fechar juntando: as tres calculavam sozinhas e as tres eram programaveis. Mas nas
+tres o programa morava FORA da maquina. Na fita, no cabo, na chave. Dentro dela so
+moravam os numeros.
+
+Juntar os tres numeros de memoria numa frase, porque e isso que arma o proximo
+episodio: 64 caixas no Z3, 72 no Mark I, 20 no ENIAC. A prateleira que o episodio
+da planta descreveu existia mesmo, mas era minuscula, e nela so cabia numero.
+
+Dizer que armazenamento, no sentido de guardar trabalho pra amanha, nao existia em
+nenhuma das tres: o que entrava vinha de fita ou de cartao, e o que saia era
+impresso ou perfurado de volta em cartao. A maquina esquecia tudo quando desligava.
+
+Dizer por que ter o programa fora e um limite de verdade e nao um detalhe: enquanto
+a ordem estiver fora, trocar de tarefa e trabalho fisico, e a maquina nunca pode
+olhar pra propria ordem.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: 1946, com o ENIAC apresentado ao mundo, tres maquinas
+funcionando e nenhuma delas capaz de guardar a propria ordem.
+
+Dizer que a peca do proximo episodio e uma so: colocar a ordem no mesmo lugar onde
+ja moram os numeros. E deixar claro que nao e peca nova de metal, e um jeito novo
+de usar a prateleira que ja existe.
+
+Fechar sem pedir Proximo: esta e a ultima tela.

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Válvula 3D — o interruptor sem peça que se mexe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+<style>
+/* A leitura e a corrente da placa (PASSA/BLOQUEADA) com a grade embaixo; a
+   palavra nao cabe ao lado da meta na largura do painel, entao as duas empilham.
+   So aqui, pra nao mexer nos outros modelos. */
+.linha-total.estado{flex-direction:column; align-items:flex-start; gap:2px}
+.linha-total.estado .num{font-size:30px}
+.linha-total .casas b{font-weight:600; color:var(--ink)}
+.linha-total .casas .quente{color:#b8741a}
+@media (max-width:700px){
+  .linha-total.estado{flex-direction:row; align-items:baseline}
+  .linha-total.estado .num{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> VÁLVULA 3D</div>
+  <div>EXTRA · A PEÇA POR DENTRO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">Primeiro o <b>filamento</b> precisa esquentar. Depois a <b>chave</b> abre e fecha a grade. Arraste fora pra <b>girar</b>.</div>
+    <div class="linha-total estado">
+      <span class="num mono" id="corrente">BLOQUEADA</span>
+      <span class="meta mono" id="grade">grade fechada</span>
+    </div>
+    <div class="linha-total">
+      <span class="casas mono" id="ficha"><b>FILAMENTO</b> frio · <b>LÂMPADA</b> apagada</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio largo" id="btnFilamento">ligar o filamento</button>
+      <button class="btn-mini" id="btnGrade">abrir a grade</button>
+      <button class="btn-mini" id="btnDentro">ver por dentro</button>
+      <button class="btn-mini" id="btnLento">bater 8× por segundo</button>
+      <button class="btn-mini" id="btnRapido">bater 100× por segundo</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elCorrente = document.getElementById('corrente');
+const elGrade = document.getElementById('grade');
+const elFicha = document.getElementById('ficha');
+const btnFilamento = document.getElementById('btnFilamento');
+const btnGrade = document.getElementById('btnGrade');
+
+const palco = montaPalco({
+  alvo: [0.2, 1.6, 0],
+  camPos: [1.5, 3.9, 10],
+  meiaLarguraDesktop: 4.7,
+  meiaLarguraMobile: 3.7,
+  distMin: 9,
+  orbitaMin: 4.5,
+});
+const { scene, camera, renderer, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+
+// ---------- materiais proprios da peca ----------
+const ferro = materiais.metal(0x8e9298, { roughness: 0.5 });
+const metalEscuro = materiais.metal(0x4a4d52, { roughness: 0.55 });
+const baquelite = new THREE.MeshStandardMaterial({ color: 0x2a2320, roughness: 0.55, envMapIntensity: 0.3 });
+const pilhaMat = new THREE.MeshStandardMaterial({ color: 0x33353a, roughness: 0.6, envMapIntensity: 0.3 });
+const micaMat = new THREE.MeshStandardMaterial({ color: 0xd9d2bf, roughness: 0.6, transparent: true, opacity: 0.7 });
+// o vidro: nao escreve profundidade, senao esconderia o que esta dentro dele
+const vidroMat = new THREE.MeshPhysicalMaterial({ color: 0xdfe9ea, roughness: 0.06, transmission: 0.7, thickness: 0.4, transparent: true, opacity: 0.45, envMapIntensity: 1.0, side: THREE.DoubleSide, depthWrite: false });
+// fio encapado de pano: o circuito da grade (comando) e o da placa (carga) tem
+// cores diferentes, e cada um acende quando esta com corrente
+const fioComando = new THREE.MeshStandardMaterial({ color: 0x8a3d2c, roughness: 0.85, emissive: 0xff5a3c, emissiveIntensity: 0 });
+const fioCarga = new THREE.MeshStandardMaterial({ color: 0x3a5a3f, roughness: 0.85, emissive: 0x4cff7a, emissiveIntensity: 0 });
+const catodoMat = new THREE.MeshStandardMaterial({ color: 0x5a4a3a, roughness: 0.6, emissive: 0xff8a2a, emissiveIntensity: 0 });
+const gradeMat = materiais.metal(0xb8a26a, { roughness: 0.45 });
+const placaMat = new THREE.MeshStandardMaterial({ color: 0x4a4d52, metalness: 0.7, roughness: 0.5, envMapIntensity: 0.6, side: THREE.DoubleSide, transparent: true, opacity: 0.78 });
+
+const valvula = new THREE.Group();
+scene.add(valvula);
+
+function cilindro(r, h, mat, x, y, z, eixo = 'y', aberto = false) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 40, 1, aberto), mat);
+  if (eixo === 'x') m.rotation.z = Math.PI / 2;
+  if (eixo === 'z') m.rotation.x = Math.PI / 2;
+  m.position.set(x, y, z);
+  m.castShadow = true; m.receiveShadow = true;
+  return m;
+}
+
+// ---------- base e soquete ----------
+const base = bloco(7.4, 0.4, 3.4, materiais.madeiraEscura, 0.08);
+base.position.y = 0.2;
+valvula.add(base);
+
+const CENTRO = new THREE.Vector3(-0.3, 0, 0);          // eixo da valvula
+const soquete = cilindro(1.0, 0.5, baquelite, CENTRO.x, 0.65, 0);
+const anel = cilindro(0.92, 0.12, materiais.latao, CENTRO.x, 0.94, 0);
+valvula.add(soquete, anel);
+
+// ---------- o que tem dentro: catodo, grade, placa ----------
+const catodo = cilindro(0.12, 1.8, catodoMat, CENTRO.x, 2.15, 0);
+const luzCatodo = new THREE.PointLight(0xff9a3a, 0, 4, 2);
+luzCatodo.position.set(CENTRO.x, 2.15, 0);
+valvula.add(catodo, luzCatodo);
+
+// a grade e uma helice de fio fino em volta do catodo
+function helice(raio, yDe, yAte, voltas, espessura) {
+  const pontos = [];
+  const N = voltas * 24;
+  for (let i = 0; i <= N; i++) {
+    const t = i / N;
+    const a = t * voltas * Math.PI * 2;
+    pontos.push(new THREE.Vector3(Math.cos(a) * raio, yDe + (yAte - yDe) * t, Math.sin(a) * raio));
+  }
+  return new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pontos), N * 2, espessura, 6, false), gradeMat);
+}
+const grade = helice(0.32, 1.3, 3.0, 14, 0.018);
+grade.position.set(CENTRO.x, 0, 0);
+grade.castShadow = true;
+valvula.add(grade);
+
+const placa = cilindro(0.62, 1.7, placaMat, CENTRO.x, 2.15, 0, 'y', true);
+const micaBaixo = cilindro(0.72, 0.04, micaMat, CENTRO.x, 1.25, 0);
+const micaCima = cilindro(0.72, 0.04, micaMat, CENTRO.x, 3.05, 0);
+const hasteE = cilindro(0.03, 2.45, metalEscuro, CENTRO.x - 0.7, 2.15, 0);
+const hasteD = cilindro(0.03, 2.45, metalEscuro, CENTRO.x + 0.7, 2.15, 0);
+const getter = new THREE.Mesh(new THREE.TorusGeometry(0.22, 0.025, 8, 32), metalEscuro);
+getter.rotation.x = Math.PI / 2;
+getter.position.set(CENTRO.x, 3.55, 0);
+valvula.add(placa, micaBaixo, micaCima, hasteE, hasteD, getter);
+
+// ---------- os eletrons: pontos que saem do catodo e correm pra placa ----------
+const N_ELETRONS = 260;
+const eletrons = [];
+const posicoes = new Float32Array(N_ELETRONS * 3);
+for (let i = 0; i < N_ELETRONS; i++) {
+  eletrons.push({ a: Math.random() * Math.PI * 2, y: 1.35 + Math.random() * 1.6, r: 0.14 + Math.random() * 0.08, v: 0.9 + Math.random() * 0.6 });
+}
+const geoEletrons = new THREE.BufferGeometry();
+geoEletrons.setAttribute('position', new THREE.BufferAttribute(posicoes, 3));
+const matEletrons = new THREE.PointsMaterial({ color: 0x9fd8ff, size: 0.09, transparent: true, opacity: 0, sizeAttenuation: true, depthWrite: false });
+const nuvem = new THREE.Points(geoEletrons, matEletrons);
+valvula.add(nuvem);
+
+// ---------- o vidro, por ultimo, pra desenhar por cima do que tem dentro ----------
+const perfilVidro = [
+  new THREE.Vector2(0.88, 0.98), new THREE.Vector2(0.96, 1.4), new THREE.Vector2(0.96, 3.3),
+  new THREE.Vector2(0.86, 3.85), new THREE.Vector2(0.56, 4.22), new THREE.Vector2(0.2, 4.4), new THREE.Vector2(0.0, 4.42),
+];
+const vidro = new THREE.Mesh(new THREE.LatheGeometry(perfilVidro, 64), vidroMat);
+vidro.position.set(CENTRO.x, 0, 0);
+vidro.renderOrder = 2;
+vidro.castShadow = true;
+valvula.add(vidro);
+
+// ---------- terminais e pilhas ----------
+function terminal(x, z) {
+  const t = bloco(0.22, 0.2, 0.22, materiais.latao, 0.03);
+  t.position.set(x, 0.5, z);
+  return t;
+}
+valvula.add(terminal(-0.95, 1.25), terminal(0.35, 1.25));
+
+function pilha(x, z, poloParaDireita) {
+  const g = new THREE.Group();
+  g.add(cilindro(0.24, 0.95, pilhaMat, 0, 0, 0, 'x'));
+  g.add(cilindro(0.1, 0.08, materiais.latao, poloParaDireita ? 0.515 : -0.515, 0, 0, 'x'));
+  g.position.set(x, 0.64, z);
+  return g;
+}
+valvula.add(pilha(-2.5, -1.05, true), pilha(2.3, -1.05, false));
+
+// ---------- chave: manda na grade ----------
+const chave = new THREE.Group();
+const placaChave = bloco(1.0, 0.08, 0.55, baquelite, 0.02);
+placaChave.position.set(-2.55, 0.44, 1.05);
+const clipe = bloco(0.14, 0.18, 0.2, materiais.latao, 0.02);
+clipe.position.set(-2.2, 0.57, 1.05);
+const alavanca = new THREE.Group();
+alavanca.position.set(-2.95, 0.52, 1.05);
+const braco = bloco(0.75, 0.06, 0.14, materiais.latao, 0.02);
+braco.position.set(0.375, 0, 0);
+const cabo = new THREE.Mesh(new THREE.SphereGeometry(0.09, 20, 16), baquelite);
+cabo.position.set(0.72, 0.09, 0);
+cabo.castShadow = true;
+alavanca.add(braco, cabo);
+// as pecas da chave sao finas: um bloco invisivel em volta delas e o que recebe o clique
+const alvoChave = new THREE.Mesh(new THREE.BoxGeometry(1.3, 0.7, 0.8), new THREE.MeshBasicMaterial({ visible: false }));
+alvoChave.position.set(-2.55, 0.7, 1.05);
+chave.add(placaChave, clipe, alavanca, alvoChave);
+valvula.add(chave);
+
+// ---------- lampada: o circuito da placa termina aqui ----------
+const LAMPADA = new THREE.Vector3(2.55, 1.15, 1.0);
+const soqueteLamp = cilindro(0.22, 0.4, materiais.latao, 2.55, 0.6, 1.0);
+const vidroLampMat = new THREE.MeshPhysicalMaterial({ color: 0xfff1d6, roughness: 0.15, transmission: 0.55, thickness: 0.3, transparent: true, opacity: 0.7, emissive: 0xffb347, emissiveIntensity: 0 });
+const vidroLamp = new THREE.Mesh(new THREE.SphereGeometry(0.32, 32, 24), vidroLampMat);
+vidroLamp.position.copy(LAMPADA);
+vidroLamp.castShadow = true;
+const filamentoLampMat = new THREE.MeshStandardMaterial({ color: 0x4a3a2a, emissive: 0xffc46a, emissiveIntensity: 0 });
+const filamentoLamp = new THREE.Mesh(new THREE.TorusGeometry(0.09, 0.014, 8, 24), filamentoLampMat);
+filamentoLamp.position.set(LAMPADA.x, LAMPADA.y - 0.03, LAMPADA.z);
+const luzLampada = new THREE.PointLight(0xffd39a, 0, 7, 2);
+luzLampada.position.copy(LAMPADA);
+valvula.add(soqueteLamp, vidroLamp, filamentoLamp, luzLampada);
+
+// ---------- fios ----------
+function fio(pontos, mat, raio = 0.035) {
+  const curva = new THREE.CatmullRomCurve3(pontos.map((p) => new THREE.Vector3(...p)));
+  const m = new THREE.Mesh(new THREE.TubeGeometry(curva, 48, raio, 8, false), mat);
+  m.castShadow = true;
+  return m;
+}
+// comando (grade): pilha da esquerda -> chave -> terminal -> soquete -> volta
+valvula.add(
+  fio([[-2.0, 0.64, -1.05], [-1.9, 0.5, -0.3], [-3.0, 0.5, 0.6], [-2.95, 0.5, 1.0]], fioComando),
+  fio([[-2.2, 0.5, 1.2], [-1.6, 0.5, 1.45], [-0.95, 0.5, 1.25]], fioComando),
+  fio([[-0.95, 0.5, 1.25], [-1.1, 0.7, 0.85], [-1.15, 0.75, 0.55]], fioComando, 0.02),
+  fio([[-0.95, 0.76, -0.6], [-1.6, 0.55, -1.3], [-3.0, 0.64, -1.05]], fioComando),
+);
+// carga (placa): pilha da direita -> soquete ... placa -> lampada -> volta
+valvula.add(
+  fio([[1.825, 0.64, -1.05], [1.2, 0.55, -0.9], [0.5, 0.75, -0.55]], fioCarga),
+  fio([[0.55, 0.75, 0.5], [0.35, 0.5, 1.25]], fioCarga, 0.02),
+  fio([[0.35, 0.5, 1.25], [1.2, 0.5, 1.5], [2.0, 0.5, 1.4], [2.4, 0.5, 1.0]], fioCarga),
+  fio([[2.75, 0.5, 1.0], [3.1, 0.5, 0.4], [3.05, 0.55, -0.7], [2.8, 0.64, -1.05]], fioCarga),
+);
+
+// ---------- rotulos ----------
+const rotulos = [
+  ['FILAMENTO', -2.1, 2.05, 0.4],
+  ['GRADE', -2.0, 2.75, 0.4],
+  ['PLACA', 1.45, 2.75, 0.3],
+  ['VIDRO', 1.2, 4.0, 0.2],
+  ['LÂMPADA', 2.55, 1.95, 1.0],
+  ['CHAVE', -2.6, 1.1, 1.15],
+];
+const sprites = [];
+document.fonts.ready.then(() => {
+  rotulos.forEach(([t, x, y, z]) => {
+    const sp = criaRotulo(t, 0.9);
+    sp.position.set(x, y, z);
+    sprites.push(sp);
+    valvula.add(sp);
+  });
+  redimensiona();
+});
+
+// ---------- estado e mecanica ----------
+// calor: 0 frio, 1 no ponto; so acima de QUENTE o catodo solta eletrons
+const QUENTE = 0.6;
+const estado = { filamento: false, calor: 0, grade: false, corrente: false, lampada: 0, dentro: false, conduziuAlguma: false };
+// os toques na grade entram numa fila com a hora exata, e o quadro integra a corrente
+// trecho a trecho: o resultado nao depende de quantos quadros por segundo a maquina desenha
+const fila = [];
+let gradeSim = false;
+let ultimoTick = performance.now();
+let batendo = null;
+
+function pintaHud() {
+  const quente = estado.calor >= QUENTE;
+  elCorrente.textContent = estado.corrente ? 'PASSA' : 'BLOQUEADA';
+  elGrade.textContent = estado.grade ? 'grade aberta' : 'grade fechada';
+  elFicha.innerHTML = '<b>FILAMENTO</b> ' + (quente ? '<span class="quente">aceso</span>' : (estado.filamento ? 'esquentando' : 'frio'))
+    + ' · <b>LÂMPADA</b> ' + (estado.corrente ? '<span class="quente">acesa</span>' : 'apagada');
+  btnFilamento.textContent = estado.filamento ? 'desligar o filamento' : 'ligar o filamento';
+  btnGrade.textContent = estado.grade ? 'fechar a grade' : 'abrir a grade';
+}
+
+function ligaFilamento(liga) {
+  if (estado.filamento === liga) return;
+  estado.filamento = liga;
+  palco.controls.autoRotate = false;
+  pintaHud();
+  legenda.innerHTML = liga
+    ? 'Filamento ligado: ele <b>esquenta</b> por alguns segundos antes de valer. Quente, o catodo solta uma <b>nuvem de elétrons</b>.'
+    : 'Filamento desligado: esfriando. Sem calor, não sai elétron nenhum.';
+}
+
+function abreGrade(abre, falar = true) {
+  if (estado.grade === abre) return;
+  estado.grade = abre;
+  fila.push({ t: performance.now(), aberta: abre });
+  palco.controls.autoRotate = false;
+  pintaHud();
+  if (!falar) return;
+  if (estado.calor < QUENTE) {
+    legenda.innerHTML = 'A grade ' + (abre ? 'abriu' : 'fechou') + ', mas o filamento ainda está <b>frio</b>: não tem elétron pra passar.';
+    return;
+  }
+  legenda.innerHTML = abre
+    ? 'Grade aberta: os elétrons atravessam e chegam na <b>placa</b>. Corrente no outro circuito, e <b>nada se mexeu</b>.'
+    : 'Grade fechada: ela <b>repele</b> os elétrons antes da placa. A corrente para na hora.';
+}
+
+// bater N vezes por segundo: aqui nao tem peca pra chegar a tempo. A linha do tempo
+// dos toques e calculada e consumida pelo quadro, como no rele, pra comparar os dois.
+function pulsar(porSegundo, duracaoMs = 3000) {
+  paraDeBater();
+  palco.controls.autoRotate = false;
+  if (estado.calor < QUENTE) {
+    legenda.innerHTML = 'Antes de bater, <b>ligue o filamento</b> e espere ele esquentar.';
+    return;
+  }
+  estado.conduziuAlguma = false;
+  legenda.innerHTML = 'Batendo <b>' + porSegundo + ' vezes por segundo</b>…';
+  const agora = performance.now();
+  batendo = { inicio: agora, meioPeriodo: 1000 / (porSegundo * 2), proximo: 1, fim: agora + duracaoMs, porSegundo };
+}
+function paraDeBater() { batendo = null; }
+function avancaBatida(agora) {
+  if (!batendo) return;
+  while (batendo && batendo.inicio + batendo.proximo * batendo.meioPeriodo <= Math.min(agora, batendo.fim)) {
+    const hora = batendo.inicio + batendo.proximo * batendo.meioPeriodo;
+    estado.grade = !estado.grade;
+    fila.push({ t: hora, aberta: estado.grade });
+    batendo.proximo++;
+  }
+  if (agora >= batendo.fim) {
+    const { porSegundo } = batendo;
+    paraDeBater();
+    if (estado.grade) { estado.grade = false; fila.push({ t: agora, aberta: false }); }
+    pintaHud();
+    legenda.innerHTML = estado.conduziuAlguma
+      ? 'A <b>' + porSegundo + ' por segundo</b> a válvula acompanhou cada toque: <b>nada precisa se mexer</b>. O relé parou em 8.'
+      : 'A grade bateu, mas não passou corrente.';
+  }
+}
+
+function verPorDentro(liga) {
+  estado.dentro = liga;
+  placaMat.opacity = liga ? 0.18 : 0.78;
+  document.getElementById('btnDentro').textContent = liga ? 'fechar a placa' : 'ver por dentro';
+  legenda.innerHTML = liga
+    ? 'A <b>placa</b> ficou transparente: no meio o filamento que esquenta, em volta dele a <b>grade</b> em espiral, e a placa por fora recolhendo o que passa. Nenhuma das três encosta na outra.'
+    : 'Placa fechada de novo.';
+}
+
+// ---------- controles ----------
+btnFilamento.addEventListener('click', () => ligaFilamento(!estado.filamento));
+btnGrade.addEventListener('click', () => { paraDeBater(); abreGrade(!estado.grade); });
+document.getElementById('btnLento').addEventListener('click', () => pulsar(8));
+document.getElementById('btnRapido').addEventListener('click', () => pulsar(100));
+document.getElementById('btnDentro').addEventListener('click', () => verPorDentro(!estado.dentro));
+aoClicar([alvoChave, vidro], (hit) => {
+  if (hit.object === vidro) ligaFilamento(!estado.filamento);
+  else { paraDeBater(); abreGrade(!estado.grade); }
+});
+window.addEventListener('keydown', (e) => {
+  if (e.key === ' ') { e.preventDefault(); paraDeBater(); abreGrade(!estado.grade); }
+});
+
+// ---------- animacao ----------
+inicia((dt) => {
+  // filamento: esquenta devagar, esfria mais devagar ainda
+  const calorAlvo = estado.filamento ? 1 : 0;
+  estado.calor += (calorAlvo - estado.calor) * Math.min(1, dt * (estado.filamento ? 1.1 : 0.7));
+  const quente = estado.calor >= QUENTE;
+  catodoMat.emissiveIntensity = estado.calor * 2.6;
+  luzCatodo.intensity = estado.calor * 1.6;
+
+  // corrente na placa: passa quando esta quente E a grade esta aberta, integrada
+  // trecho a trecho entre os toques da grade
+  const agora = performance.now();
+  avancaBatida(agora);
+  let msTotal = 0, msCom = 0, t = ultimoTick;
+  const soma = (ms, aberta) => { if (ms <= 0) return; msTotal += ms; if (quente && aberta) msCom += ms; };
+  for (const toque of fila) { soma(toque.t - t, gradeSim); gradeSim = toque.aberta; t = toque.t; }
+  fila.length = 0;
+  soma(agora - t, gradeSim);
+  ultimoTick = agora;
+  const parcela = msTotal ? msCom / msTotal : 0;     // fracao do quadro com corrente
+  if (msCom > 0) estado.conduziuAlguma = true;
+
+  const correnteAgora = quente && estado.grade;
+  const quenteAntes = elFicha.innerHTML.includes('aceso');
+  if (correnteAgora !== estado.corrente || quente !== quenteAntes) {
+    estado.corrente = correnteAgora;
+    pintaHud();
+  }
+
+  // lampada segue a parcela do tempo com corrente: batendo a 100, fica meia-acesa
+  estado.lampada += (parcela - estado.lampada) * Math.min(1, dt * 30);
+  vidroLampMat.emissiveIntensity = estado.lampada * 2.2;
+  filamentoLampMat.emissiveIntensity = estado.lampada * 3;
+  luzLampada.intensity = estado.lampada * 5;
+  fioCarga.emissiveIntensity = estado.lampada * 0.55;
+  fioComando.emissiveIntensity += ((estado.grade ? 0.6 : 0) - fioComando.emissiveIntensity) * Math.min(1, dt * 12);
+
+  // chave acompanha a grade
+  const alavancaAlvo = estado.grade ? 0 : 0.55;
+  alavanca.rotation.z += (alavancaAlvo - alavanca.rotation.z) * Math.min(1, dt * 14);
+
+  // eletrons: com a grade aberta correm do catodo pra placa; fechada, ficam em nuvem
+  // grudados no catodo; frio, somem
+  matEletrons.opacity = Math.max(0, (estado.calor - 0.25)) * 1.3;
+  const correm = quente && (estado.grade || parcela > 0.3);
+  for (let i = 0; i < N_ELETRONS; i++) {
+    const e = eletrons[i];
+    if (correm) {
+      e.r += e.v * dt * 1.4;
+      if (e.r > 0.6) { e.r = 0.14; e.a = Math.random() * Math.PI * 2; e.y = 1.35 + Math.random() * 1.6; }
+    } else {
+      e.r += ((0.16 + (i % 7) * 0.012) - e.r) * Math.min(1, dt * 5);
+      e.a += dt * 0.6;
+    }
+    posicoes[i * 3] = CENTRO.x + Math.cos(e.a) * e.r;
+    posicoes[i * 3 + 1] = e.y;
+    posicoes[i * 3 + 2] = Math.sin(e.a) * e.r;
+  }
+  geoEletrons.attributes.position.needsUpdate = true;
+});
+
+// ---------- gancho de QA ----------
+function pixelDe(v3) {
+  const p = v3.clone().project(camera);
+  const r = renderer.domElement.getBoundingClientRect();
+  return { x: (p.x + 1) / 2 * r.width + r.left, y: (1 - p.y) / 2 * r.height + r.top };
+}
+window.__valvula = {
+  ligaFilamento: (liga) => ligaFilamento(liga),
+  abreGrade: (abre) => abreGrade(abre),
+  pulsar: (hz) => pulsar(hz),
+  dentro: (liga) => verPorDentro(liga),
+  estado: () => ({ ...estado, batendo: !!batendo }),
+  parado: () => !batendo && Math.abs(estado.calor - (estado.filamento ? 1 : 0)) < 0.03,
+  pixels: () => {
+    const hud = document.querySelector('.hud').getBoundingClientRect();
+    const pecas = {
+      valvula: pixelDe(new THREE.Vector3(CENTRO.x, 2.2, 0)),
+      lampada: pixelDe(LAMPADA),
+      chave: pixelDe(alvoChave.position),
+      topo: pixelDe(new THREE.Vector3(CENTRO.x, 4.4, 0)),
+    };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = pixelDe(s.position); });
+    return { pecas, hud: { left: hud.left, top: hud.top, right: hud.right, bottom: hud.bottom }, tela: { w: innerWidth, h: innerHeight } };
+  },
+};
+
+pintaHud();
+</script>
+</body>
+</html>

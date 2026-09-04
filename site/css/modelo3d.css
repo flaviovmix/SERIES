@@ -46,3 +46,52 @@
    a etapa 01 tinha o mesmo vazamento) */
 .modelo img[hidden] { display: none; }
 
+
+/* a trava: enquanto o modelo nao foi pedido, esta camada recebe o gesto e a
+   pagina rola normalmente (o iframe ouviria o arrasto e giraria o objeto) */
+.modelo { position: relative; }
+
+.modelo__trava {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: rgba(20, 25, 29, .06);
+  cursor: pointer;
+  font: inherit;
+}
+
+.modelo__trava span {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--surface);
+  font-family: var(--fonte-mono);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+}
+
+/* destravado: a camada sai de cena e a legenda oferece o caminho de volta */
+.modelo--solto .modelo__trava { display: none; }
+
+.modelo__soltar {
+  float: right;
+  padding: 2px 9px;
+  border: 1px solid var(--accent-edge);
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}

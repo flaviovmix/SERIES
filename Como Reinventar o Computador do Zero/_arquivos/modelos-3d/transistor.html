@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transistor 3D — o interruptor de cristal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+<style>
+/* A leitura e a corrente do coletor (PASSA/BLOQUEADA) com a base embaixo; a
+   palavra nao cabe ao lado da meta na largura do painel, entao as duas empilham.
+   So aqui, pra nao mexer nos outros modelos. */
+.linha-total.estado{flex-direction:column; align-items:flex-start; gap:2px}
+.linha-total.estado .num{font-size:30px}
+.linha-total .casas b{font-weight:600; color:var(--ink)}
+.linha-total .casas .quente{color:#b8741a}
+@media (max-width:700px){
+  .linha-total.estado{flex-direction:row; align-items:baseline}
+  .linha-total.estado .num{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> TRANSISTOR 3D</div>
+  <div>EXTRA · A PEÇA POR DENTRO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">Um cristal cortado ao meio e <b>ampliado</b>: a fatia fina do meio é a <b>base</b>. Clique na chave pra ligar a base. Arraste fora pra <b>girar</b>.</div>
+    <div class="linha-total estado">
+      <span class="num mono" id="corrente">BLOQUEADA</span>
+      <span class="meta mono" id="base">base desligada</span>
+    </div>
+    <div class="linha-total">
+      <span class="casas mono" id="ficha"><b>LÂMPADA</b> apagada · <b>LIGOU</b> 0×</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio largo" id="btnBase">ligar a base</button>
+      <button class="btn-mini" id="btnLento">bater 8× por segundo</button>
+      <button class="btn-mini" id="btnMedio">bater 100× por segundo</button>
+      <button class="btn-mini largo" id="btnRapido">bater 1 milhão de vezes por segundo</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elCorrente = document.getElementById('corrente');
+const elBase = document.getElementById('base');
+const elFicha = document.getElementById('ficha');
+const btnBase = document.getElementById('btnBase');
+
+const palco = montaPalco({
+  alvo: [0.2, 1.5, 0],
+  camPos: [1.5, 3.6, 10],
+  meiaLarguraDesktop: 4.7,
+  meiaLarguraMobile: 3.7,
+  distMin: 9,
+  orbitaMin: 4.5,
+});
+const { scene, camera, renderer, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+
+// ---------- materiais proprios da peca ----------
+const metalEscuro = materiais.metal(0x4a4d52, { roughness: 0.55 });
+const baquelite = new THREE.MeshStandardMaterial({ color: 0x2a2320, roughness: 0.55, envMapIntensity: 0.3 });
+const pilhaMat = new THREE.MeshStandardMaterial({ color: 0x33353a, roughness: 0.6, envMapIntensity: 0.3 });
+// o cristal: as duas fatias N em azul-acinzentado, a fatia P do meio em rosa;
+// translucido pra deixar ver os eletrons andando la dentro
+const cristalN = new THREE.MeshPhysicalMaterial({ color: 0x7f95a8, roughness: 0.35, metalness: 0.15, transparent: true, opacity: 0.55, depthWrite: false, envMapIntensity: 0.5 });
+const cristalP = new THREE.MeshPhysicalMaterial({ color: 0xc27a5a, roughness: 0.35, metalness: 0.1, transparent: true, opacity: 0.6, depthWrite: false, envMapIntensity: 0.5 });
+const fioComando = new THREE.MeshStandardMaterial({ color: 0x8a3d2c, roughness: 0.85, emissive: 0xff5a3c, emissiveIntensity: 0 });
+const fioCarga = new THREE.MeshStandardMaterial({ color: 0x3a5a3f, roughness: 0.85, emissive: 0x4cff7a, emissiveIntensity: 0 });
+
+const transistor = new THREE.Group();
+scene.add(transistor);
+
+function cilindro(r, h, mat, x, y, z, eixo = 'y') {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 32), mat);
+  if (eixo === 'x') m.rotation.z = Math.PI / 2;
+  if (eixo === 'z') m.rotation.x = Math.PI / 2;
+  m.position.set(x, y, z);
+  m.castShadow = true; m.receiveShadow = true;
+  return m;
+}
+
+// ---------- base da montagem ----------
+const base = bloco(7.4, 0.4, 3.4, materiais.madeiraEscura, 0.08);
+base.position.y = 0.2;
+transistor.add(base);
+
+// ---------- o cristal ampliado: emissor N | base P | coletor N ----------
+// o bloco inteiro vai de x=-1.9 a x=1.15; a base P e a fatia fina do meio
+const Y0 = 0.65, ALT = 1.6, PROF = 1.2;
+const E_DE = -1.9, E_ATE = -0.5, B_ATE = -0.25, C_ATE = 1.15;
+const bandeja = bloco(3.5, 0.25, 1.7, metalEscuro, 0.03);
+bandeja.position.set((E_DE + C_ATE) / 2, 0.525, 0);
+function fatia(xDe, xAte, mat) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(xAte - xDe, ALT, PROF), mat);
+  m.position.set((xDe + xAte) / 2, Y0 + ALT / 2, 0);
+  m.castShadow = true;
+  m.renderOrder = 2;
+  return m;
+}
+const emissor = fatia(E_DE, E_ATE, cristalN);
+const baseP = fatia(E_ATE, B_ATE, cristalP);
+const coletor = fatia(B_ATE, C_ATE, cristalN);
+transistor.add(bandeja, emissor, baseP, coletor);
+
+// contatos metalicos: uma chapa em cada ponta e um pino em cima da base
+const chapaE = bloco(0.08, ALT * 0.8, PROF * 0.8, materiais.latao, 0.02);
+chapaE.position.set(E_DE - 0.04, Y0 + ALT / 2, 0);
+const chapaC = bloco(0.08, ALT * 0.8, PROF * 0.8, materiais.latao, 0.02);
+chapaC.position.set(C_ATE + 0.04, Y0 + ALT / 2, 0);
+const pinoB = cilindro(0.05, 0.5, materiais.latao, (E_ATE + B_ATE) / 2, Y0 + ALT + 0.25, 0);
+transistor.add(chapaE, chapaC, pinoB);
+
+// ---------- o transistor de tamanho real, pra dar a escala ----------
+const real = new THREE.Group();
+real.add(cilindro(0.13, 0.22, metalEscuro, 0, 0.11, 0));
+const abaReal = bloco(0.08, 0.02, 0.06, metalEscuro, 0.005);
+abaReal.position.set(0.15, 0.02, 0);
+real.add(abaReal);
+[-0.06, 0, 0.06].forEach((dz) => real.add(cilindro(0.012, 0.15, materiais.latao, 0, -0.07, dz)));
+real.position.set(1.9, 0.47, 1.2);
+transistor.add(real);
+
+// ---------- terminais e pilhas ----------
+function terminal(x, z) {
+  const t = bloco(0.22, 0.2, 0.22, materiais.latao, 0.03);
+  t.position.set(x, 0.5, z);
+  return t;
+}
+transistor.add(terminal(-0.95, 1.25), terminal(0.35, 1.25));
+
+function pilha(x, z, poloParaDireita) {
+  const g = new THREE.Group();
+  g.add(cilindro(0.24, 0.95, pilhaMat, 0, 0, 0, 'x'));
+  g.add(cilindro(0.1, 0.08, materiais.latao, poloParaDireita ? 0.515 : -0.515, 0, 0, 'x'));
+  g.position.set(x, 0.64, z);
+  return g;
+}
+transistor.add(pilha(-2.5, -1.05, true), pilha(2.3, -1.05, false));
+
+// ---------- chave: manda na base ----------
+const chave = new THREE.Group();
+const placaChave = bloco(1.0, 0.08, 0.55, baquelite, 0.02);
+placaChave.position.set(-2.55, 0.44, 1.05);
+const clipe = bloco(0.14, 0.18, 0.2, materiais.latao, 0.02);
+clipe.position.set(-2.2, 0.57, 1.05);
+const alavanca = new THREE.Group();
+alavanca.position.set(-2.95, 0.52, 1.05);
+const braco = bloco(0.75, 0.06, 0.14, materiais.latao, 0.02);
+braco.position.set(0.375, 0, 0);
+const cabo = new THREE.Mesh(new THREE.SphereGeometry(0.09, 20, 16), baquelite);
+cabo.position.set(0.72, 0.09, 0);
+cabo.castShadow = true;
+alavanca.add(braco, cabo);
+const alvoChave = new THREE.Mesh(new THREE.BoxGeometry(1.3, 0.7, 0.8), new THREE.MeshBasicMaterial({ visible: false }));
+alvoChave.position.set(-2.55, 0.7, 1.05);
+chave.add(placaChave, clipe, alavanca, alvoChave);
+transistor.add(chave);
+
+// ---------- lampada: o circuito do coletor termina aqui ----------
+const LAMPADA = new THREE.Vector3(2.55, 1.15, 1.0);
+const soqueteLamp = cilindro(0.22, 0.4, materiais.latao, 2.55, 0.6, 1.0);
+const vidroLampMat = new THREE.MeshPhysicalMaterial({ color: 0xfff1d6, roughness: 0.15, transmission: 0.55, thickness: 0.3, transparent: true, opacity: 0.7, emissive: 0xffb347, emissiveIntensity: 0 });
+const vidroLamp = new THREE.Mesh(new THREE.SphereGeometry(0.32, 32, 24), vidroLampMat);
+vidroLamp.position.copy(LAMPADA);
+vidroLamp.castShadow = true;
+const filamentoLampMat = new THREE.MeshStandardMaterial({ color: 0x4a3a2a, emissive: 0xffc46a, emissiveIntensity: 0 });
+const filamentoLamp = new THREE.Mesh(new THREE.TorusGeometry(0.09, 0.014, 8, 24), filamentoLampMat);
+filamentoLamp.position.set(LAMPADA.x, LAMPADA.y - 0.03, LAMPADA.z);
+const luzLampada = new THREE.PointLight(0xffd39a, 0, 7, 2);
+luzLampada.position.copy(LAMPADA);
+transistor.add(soqueteLamp, vidroLamp, filamentoLamp, luzLampada);
+
+// ---------- fios ----------
+function fio(pontos, mat, raio = 0.035) {
+  const curva = new THREE.CatmullRomCurve3(pontos.map((p) => new THREE.Vector3(...p)));
+  const m = new THREE.Mesh(new THREE.TubeGeometry(curva, 48, raio, 8, false), mat);
+  m.castShadow = true;
+  return m;
+}
+const yB = Y0 + ALT + 0.5, xB = (E_ATE + B_ATE) / 2;
+// comando (base): pilha da esquerda -> chave -> terminal -> pino da base; volta pelo emissor
+transistor.add(
+  fio([[-2.0, 0.64, -1.05], [-1.9, 0.5, -0.3], [-3.0, 0.5, 0.6], [-2.95, 0.5, 1.0]], fioComando),
+  fio([[-2.2, 0.5, 1.2], [-1.6, 0.5, 1.45], [-0.95, 0.5, 1.25]], fioComando),
+  fio([[-0.95, 0.5, 1.25], [-0.6, 0.9, 1.3], [-0.2, yB + 0.3, 0.9], [xB, yB + 0.05, 0]], fioComando, 0.02),
+  fio([[E_DE - 0.08, 1.0, 0.2], [-2.2, 0.6, -0.2], [-2.9, 0.55, -0.8], [-3.0, 0.64, -1.05]], fioComando),
+);
+// carga (coletor): pilha da direita -> emissor ... coletor -> lampada -> volta
+transistor.add(
+  fio([[1.825, 0.64, -1.05], [0.2, 0.55, -1.3], [-2.2, 0.6, -0.9], [E_DE - 0.08, 1.2, -0.3]], fioCarga),
+  fio([[C_ATE + 0.08, 1.1, 0.3], [0.9, 0.7, 1.0], [0.35, 0.5, 1.25]], fioCarga, 0.02),
+  fio([[0.35, 0.5, 1.25], [1.2, 0.5, 1.5], [2.0, 0.5, 1.5], [2.4, 0.5, 1.0]], fioCarga),
+  fio([[2.75, 0.5, 1.0], [3.1, 0.5, 0.4], [3.05, 0.55, -0.7], [2.8, 0.64, -1.05]], fioCarga),
+);
+
+// ---------- os eletrons ----------
+// os do caminho grande saem do emissor e, com a base ligada, atravessam a fatia fina
+// ate o coletor; com a base desligada, batem na fronteira e voltam
+const N_ELETRONS = 240;
+const eletrons = [];
+const posicoes = new Float32Array(N_ELETRONS * 3);
+for (let i = 0; i < N_ELETRONS; i++) {
+  eletrons.push({ x: E_DE + 0.1 + Math.random() * (E_ATE - E_DE - 0.2), y: Y0 + 0.1 + Math.random() * (ALT - 0.2), z: -PROF / 2 + 0.1 + Math.random() * (PROF - 0.2), v: 1.6 + Math.random() * 1.2 });
+}
+const geoEletrons = new THREE.BufferGeometry();
+geoEletrons.setAttribute('position', new THREE.BufferAttribute(posicoes, 3));
+const matEletrons = new THREE.PointsMaterial({ color: 0x9fd8ff, size: 0.09, transparent: true, opacity: 0.95, sizeAttenuation: true, depthWrite: false });
+const nuvem = new THREE.Points(geoEletrons, matEletrons);
+nuvem.renderOrder = 1;
+transistor.add(nuvem);
+// os poucos que sobem pelo pino da base: e a corrente pequena que libera a grande
+const N_BASE = 18;
+const eletronsBase = [];
+const posBase = new Float32Array(N_BASE * 3);
+for (let i = 0; i < N_BASE; i++) eletronsBase.push({ t: Math.random() });
+const geoBase = new THREE.BufferGeometry();
+geoBase.setAttribute('position', new THREE.BufferAttribute(posBase, 3));
+const nuvemBase = new THREE.Points(geoBase, new THREE.PointsMaterial({ color: 0xffb070, size: 0.08, transparent: true, opacity: 0, sizeAttenuation: true, depthWrite: false }));
+transistor.add(nuvemBase);
+
+// ---------- rotulos ----------
+const rotulos = [
+  ['EMISSOR (N)', (E_DE + E_ATE) / 2, Y0 + ALT + 0.35, 0.3],
+  ['BASE (P)', xB, Y0 + ALT + 0.95, 0.3],
+  ['COLETOR (N)', (B_ATE + C_ATE) / 2 + 0.3, Y0 + ALT + 0.35, 0.3],
+  ['AMPLIADO', E_DE - 0.55, Y0 + ALT + 0.95, 0.2],
+  ['TAMANHO REAL', 1.9, 0.95, 1.55],
+  ['LÂMPADA', 2.55, 1.95, 1.0],
+  ['CHAVE', -2.6, 1.1, 1.15],
+];
+const sprites = [];
+document.fonts.ready.then(() => {
+  rotulos.forEach(([t, x, y, z]) => {
+    const sp = criaRotulo(t, 0.9);
+    sp.position.set(x, y, z);
+    sprites.push(sp);
+    transistor.add(sp);
+  });
+  redimensiona();
+});
+
+// ---------- estado e mecanica ----------
+const estado = { base: false, corrente: false, lampada: 0, toques: 0, conduziuAlguma: false };
+// os toques na base entram numa fila com a hora exata, e o quadro integra a corrente
+// trecho a trecho: o resultado nao depende de quantos quadros por segundo a maquina desenha
+const fila = [];
+let baseSim = false;
+let ultimoTick = performance.now();
+let batendo = null;
+
+function pintaHud() {
+  elCorrente.textContent = estado.corrente ? 'PASSA' : 'BLOQUEADA';
+  elBase.textContent = estado.base ? 'base ligada' : 'base desligada';
+  elFicha.innerHTML = '<b>LÂMPADA</b> ' + (estado.corrente ? '<span class="quente">acesa</span>' : 'apagada')
+    + ' · <b>LIGOU</b> ' + Math.round(estado.toques).toLocaleString('pt-BR') + '×';
+  btnBase.textContent = estado.base ? 'desligar a base' : 'ligar a base';
+}
+
+function ligaBase(liga, falar = true) {
+  if (estado.base === liga) return;
+  estado.base = liga;
+  if (liga) estado.toques += 1;
+  fila.push({ t: performance.now(), ligada: liga });
+  palco.controls.autoRotate = false;
+  pintaHud();
+  if (!falar) return;
+  legenda.innerHTML = liga
+    ? 'Base ligada: uma corrente <b>pequena</b> entra pela base e libera uma corrente <b>grande</b> do emissor pro coletor. Liga na hora: não tem filamento pra esquentar.'
+    : 'Base desligada: a fatia do meio vira <b>barreira</b> e os elétrons param na fronteira.';
+}
+
+// bater N vezes por segundo: nada se mexe e nada esquenta, entao nao tem teto que a
+// tela alcance. Ate uns 400 por segundo os toques entram um a um na linha do tempo;
+// acima disso a conta e feita direto (metade do tempo ligado), senao o quadro
+// passaria milhoes de toques um por um.
+const TETO_TOQUE_A_TOQUE = 400;
+function pulsar(porSegundo, duracaoMs = 3000) {
+  paraDeBater();
+  palco.controls.autoRotate = false;
+  estado.conduziuAlguma = false;
+  estado.toques = 0;
+  legenda.innerHTML = 'Batendo <b>' + porSegundo.toLocaleString('pt-BR') + ' vezes por segundo</b>…';
+  const agora = performance.now();
+  batendo = { inicio: agora, meioPeriodo: 1000 / (porSegundo * 2), proximo: 1, fim: agora + duracaoMs, porSegundo, continuo: porSegundo > TETO_TOQUE_A_TOQUE, ultimo: agora };
+}
+function paraDeBater() { batendo = null; }
+function avancaBatida(agora) {
+  if (!batendo) return;
+  const ate = Math.min(agora, batendo.fim);
+  if (batendo.continuo) {
+    estado.toques += batendo.porSegundo * (ate - batendo.ultimo) / 1000;
+    batendo.ultimo = ate;
+  } else {
+    while (batendo && batendo.inicio + batendo.proximo * batendo.meioPeriodo <= ate) {
+      const hora = batendo.inicio + batendo.proximo * batendo.meioPeriodo;
+      estado.base = !estado.base;
+      if (estado.base) estado.toques += 1;
+      fila.push({ t: hora, ligada: estado.base });
+      batendo.proximo++;
+    }
+  }
+  if (agora >= batendo.fim) {
+    const { porSegundo } = batendo;
+    paraDeBater();
+    if (estado.base) { estado.base = false; fila.push({ t: agora, ligada: false }); }
+    pintaHud();
+    legenda.innerHTML = 'Ligou <b>' + Math.round(estado.toques).toLocaleString('pt-BR') + ' vezes</b> em 3 segundos e acompanhou todas. O relé parou em 8, a válvula chegava a milhares; o transistor vai a <b>bilhões</b>, e é ele que está no seu bolso.';
+  }
+}
+
+// ---------- controles ----------
+btnBase.addEventListener('click', () => { paraDeBater(); ligaBase(!estado.base); });
+document.getElementById('btnLento').addEventListener('click', () => pulsar(8));
+document.getElementById('btnMedio').addEventListener('click', () => pulsar(100));
+document.getElementById('btnRapido').addEventListener('click', () => pulsar(1_000_000));
+aoClicar([alvoChave], () => { paraDeBater(); ligaBase(!estado.base); });
+window.addEventListener('keydown', (e) => {
+  if (e.key === ' ') { e.preventDefault(); paraDeBater(); ligaBase(!estado.base); }
+});
+
+// ---------- animacao ----------
+inicia((dt) => {
+  const agora = performance.now();
+  avancaBatida(agora);
+
+  // fracao do quadro com corrente, integrada entre os toques
+  let parcela;
+  if (batendo && batendo.continuo) {
+    parcela = 0.5;
+    fila.length = 0;
+    ultimoTick = agora;
+    estado.conduziuAlguma = true;
+  } else {
+    let msTotal = 0, msCom = 0, t = ultimoTick;
+    const soma = (ms, ligada) => { if (ms <= 0) return; msTotal += ms; if (ligada) msCom += ms; };
+    for (const toque of fila) { soma(toque.t - t, baseSim); baseSim = toque.ligada; t = toque.t; }
+    fila.length = 0;
+    soma(agora - t, baseSim);
+    ultimoTick = agora;
+    parcela = msTotal ? msCom / msTotal : 0;
+    if (msCom > 0) estado.conduziuAlguma = true;
+  }
+
+  if (estado.base !== estado.corrente) {
+    estado.corrente = estado.base;
+    pintaHud();
+  }
+  if (batendo) pintaHud();
+
+  estado.lampada += (parcela - estado.lampada) * Math.min(1, dt * 30);
+  vidroLampMat.emissiveIntensity = estado.lampada * 2.2;
+  filamentoLampMat.emissiveIntensity = estado.lampada * 3;
+  luzLampada.intensity = estado.lampada * 5;
+  fioCarga.emissiveIntensity = estado.lampada * 0.55;
+  fioComando.emissiveIntensity += ((estado.base ? 0.6 : 0) - fioComando.emissiveIntensity) * Math.min(1, dt * 12);
+
+  const alavancaAlvo = estado.base ? 0 : 0.55;
+  alavanca.rotation.z += (alavancaAlvo - alavanca.rotation.z) * Math.min(1, dt * 14);
+
+  // eletrons do caminho grande
+  const passa = estado.base || parcela > 0.3;
+  for (let i = 0; i < N_ELETRONS; i++) {
+    const e = eletrons[i];
+    if (passa) {
+      e.x += e.v * dt;
+      if (e.x > C_ATE - 0.1) { e.x = E_DE + 0.1; e.y = Y0 + 0.1 + Math.random() * (ALT - 0.2); e.z = -PROF / 2 + 0.1 + Math.random() * (PROF - 0.2); }
+    } else {
+      // andam ate a fronteira do emissor com a base e voltam: a barreira
+      e.x += e.v * dt * 0.6;
+      if (e.x > E_ATE - 0.08) e.x = E_DE + 0.1 + Math.random() * 0.3;
+    }
+    posicoes[i * 3] = e.x; posicoes[i * 3 + 1] = e.y; posicoes[i * 3 + 2] = e.z;
+  }
+  geoEletrons.attributes.position.needsUpdate = true;
+
+  // os poucos da base sobem pelo pino quando a base esta ligada
+  nuvemBase.material.opacity += ((passa ? 0.95 : 0) - nuvemBase.material.opacity) * Math.min(1, dt * 8);
+  for (let i = 0; i < N_BASE; i++) {
+    const b = eletronsBase[i];
+    if (passa) { b.t += dt * 0.5; if (b.t > 1) b.t -= 1; }
+    posBase[i * 3] = xB + (Math.random() - 0.5) * 0.04;
+    posBase[i * 3 + 1] = Y0 + ALT * 0.5 + b.t * (ALT * 0.5 + 0.5);
+    posBase[i * 3 + 2] = (Math.random() - 0.5) * 0.04;
+  }
+  geoBase.attributes.position.needsUpdate = true;
+});
+
+// ---------- gancho de QA ----------
+function pixelDe(v3) {
+  const p = v3.clone().project(camera);
+  const r = renderer.domElement.getBoundingClientRect();
+  return { x: (p.x + 1) / 2 * r.width + r.left, y: (1 - p.y) / 2 * r.height + r.top };
+}
+window.__transistor = {
+  ligaBase: (liga) => ligaBase(liga),
+  pulsar: (hz) => pulsar(hz),
+  estado: () => ({ ...estado, batendo: !!batendo }),
+  parado: () => !batendo,
+  pixels: () => {
+    const hud = document.querySelector('.hud').getBoundingClientRect();
+    const pecas = {
+      cristal: pixelDe(new THREE.Vector3((E_DE + C_ATE) / 2, Y0 + ALT / 2, 0)),
+      lampada: pixelDe(LAMPADA),
+      chave: pixelDe(alvoChave.position),
+      real: pixelDe(real.position),
+    };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = pixelDe(s.position); });
+    return { pecas, hud: { left: hud.left, top: hud.top, right: hud.right, bottom: hud.bottom }, tela: { w: innerWidth, h: innerHeight } };
+  },
+};
+
+pintaHud();
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* episodio 06-02
+   So o que e deste episodio: o quadro da tela 5, que poe rele e valvula lado a lado com o numero de cada um. Depende de animacao/tokens.css. */
+
+.corrida {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.corrida__peca {
+  flex: 1 1 260px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--linha);
+  border-radius: 16px;
+  background: var(--papel-alto, rgba(255, 255, 255, .03));
+}
+
+.corrida__peca--forte { border-color: var(--realce, #c98b3a); }
+
+.corrida__nome {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.corrida__num {
+  margin-top: 10px;
+  font-family: var(--fonte-titulo, serif);
+  font-size: 30px;
+  line-height: 1.1;
+  color: var(--ink);
+}
+.corrida__num span {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--fonte-mono);
+  font-size: 11.5px;
+  letter-spacing: .06em;
+  color: var(--ink-soft);
+}
+
+.corrida__pe {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px) {
+  .corrida { gap: 12px; }
+  .corrida__peca { padding: 16px; }
+  .corrida__num { font-size: 25px; }
+}

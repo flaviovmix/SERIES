@@ -1,0 +1,34 @@
+/* episodio 06-01
+   So o que e deste episodio: a tabela dos quatro casos de somar dois bits (tela 4). A lista de ordens da tela 11 mora na base (animacao/ordens.css), porque o 06-03 tambem usa. Depende de animacao/tokens.css. */
+
+/* ---------- os quatro casos (tela 4) ---------- */
+
+.casos {
+  max-width: 560px;
+  margin: 22px auto 0;
+  border: 1px solid var(--linha);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.casos__linha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr 1fr;
+  font-family: var(--fonte-mono);
+  font-size: 15px;
+  text-align: center;
+}
+.casos__linha span { padding: 12px 6px; border-top: 1px solid var(--linha); }
+.casos__linha--cabeca span {
+  border-top: 0;
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.casos__linha--forte { background: rgba(201, 139, 58, .12); }
+.casos__linha--forte span { color: var(--ink); font-weight: 600; }
+
+@media (max-width: 640px) {
+  .casos__linha { font-size: 13.5px; }
+}

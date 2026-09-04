@@ -1,0 +1,233 @@
+# Transcricao automatica (faster-whisper small) - 12.9 min
+# Fonte: Como a lógica matemática criou o computador.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A planta é, bom, a gente precisa recapitular bem rapidinho o que rolou na etapa anterior
+[00:05] do nosso papo, né?
+[00:06] Aham, foi quando a eletricidade aprendeu a brincar de lógica matemática de verdade.
+[00:12] Exato.
+[00:13] Ficou muito claro para a gente que um interruptor fechado significa sim e um aberto significa
+[00:19] não.
+[00:20] Simples assim.
+[00:21] E quando a gente ligou esses mesmos interruptores em série e em paralelo, a gente basicamente
+[00:27] fez a álgebra de bullying e ganha a vida física na nossa frente.
+[00:30] Pode crer, a matemática ali virou circuito.
+[00:33] E hoje a gente avança bastante no tempo, sabe?
+[00:36] Sim, a gente cobre um intervalo exato de 1936 a 1948 hoje.
+[00:43] E é muito importante avisar com todas as letras que este é um episódio de planta.
+[00:48] Como assim planta?
+[00:50] A gente está olhando puramente para o desenho no papel, a planta teórica.
+[00:54] As ideias todas foram escritas enquanto outras pessoas já suavam para construir máquinas
+[00:59] de verdade no mundo físico.
+[01:01] O nosso próximo episódio vai ser justamente o canteiro de obras da mesma época.
+[01:06] É uma divisão muito necessária para entender a história toda.
+[01:09] Com certeza.
+[01:10] E um aviso prático agora.
+[01:12] A nossa explicação acompanha uma página de animação com 12 telas.
+[01:16] Quem está só ouvindo áudio no trânsito ou no fone acompanha tudo normalmente, tá?
+[01:21] Não perde nenhuma informação principal.
+[01:23] Isso aí.
+[01:24] Mas quem estiver com a página aberta só deve virar a tela quando ouvir o meu pedido específico,
+[01:28] viu?
+[01:29] E fiquem à vontade para mexer nas demonstrações durante a conversa.
+[01:33] Então vamos lá.
+[01:34] Aperte o próximo para montar a primeira peça.
+[01:36] Bom, a gente começa com as três portas lógicas básicas todas feitas só com aqueles interruptores.
+[01:42] A primeira é a porta E.
+[01:44] Pense em dois interruptores ligados em sério, um logo depois do outro no mesmo fio.
+[01:49] Tá, então a corrente elétrica só consegue passar para o outro lado se os dois fecharem
+[01:53] ao mesmo tempo, né?
+[01:54] Exatamente.
+[01:55] Os dois precisam dar sim.
+[01:57] Já a segunda é a porta O.
+[01:59] Nesse caso, a montagem dos interruptores em paralelo.
+[02:02] O caminho da energia se divide.
+[02:04] Entendi.
+[02:05] Então a corrente passa se qualquer um deles fechar, um ou o outro.
+[02:10] Perfeito.
+[02:11] Agora a terceira tem um truque, que é a porta Não.
+[02:13] A função dela é inverter completamente o sinal.
+[02:16] Para ela inverte.
+[02:17] Sim.
+[02:18] Quando ela recebe energia elétrica, essa energia empurra o mecanismo que abre
+[02:22] o circuito.
+[02:23] Ou seja, ela corta a própria corrente, ela desliga a saída quando recebe sinal na entrada.
+[02:27] Que loucura!
+[02:28] Convido quem está com a tela aberta a abrir e fechar os interruptores agora para ver a lâmpada
+[02:33] obedecer ao comando.
+[02:35] É bem imediato e olha, tem um conceito que sustenta o nosso episódio inteiro daqui
+[02:40] para frente, que é crucial.
+[02:43] Absolutamente tudo que a gente vai ver, não importa o tamanho da máquina, é só
+[02:48] uma combinação dessas três portas operando juntas.
+[02:52] Tudo é só misturar as portas e ou e não.
+[02:55] Isso, não tem mágica além disso.
+[02:57] Ficou aviso de que existe um episódio extra, só sobremontar portas lógicas na mão para
+[03:02] quem quiser e fundo.
+[03:04] Aperte o próximo para ver com que número essas portas trabalham.
+[03:07] Então, como cada fio do nosso circuito físico só tem dois estados, que é ter corrente
+[03:13] ou não ter, aqueles sim e não viram simplesmente os números um e zero.
+[03:17] O famoso sistema binário.
+[03:19] Aham, em poucas palavras é o binário.
+[03:22] Qualquer número existente pode ser escrito só com um e o zero.
+[03:26] A grande sacada é que a gente avança casa a casa dobrando o valor, em vez de multiplicar
+[03:31] por dez como a gente faz na escola.
+[03:32] Ah, e a gente define que um fio isolado é um bit, certo?
+[03:37] Isso mesmo, um fio é um bit.
+[03:39] Mas, vem cá, como é que números realmente grandes cabem num negócio tão restrito?
+[03:45] Parece que ia precisar de infinitos fios.
+[03:47] Não precisa, porque o princípio de dobrar resolve tudo.
+[03:50] O valor cresce numa velocidade absurda.
+[03:53] A primeira casa vale um, a segunda vale dois, a terceira quatro.
+[03:56] Depois vem oito, dezesseis, trinta e dois, sessenta e quatro.
+[04:00] Nossa, vai escalando muito rápido mesmo.
+[04:02] Convido quem acompanha a página acender e apagar os fios da tela para ver o número
+[04:07] final mudar de verdade.
+[04:08] É a melhor forma de entender o tamanho da coisa mexendo.
+[04:11] Com certeza.
+[04:12] E tem um extra só sobre contar em base dois para detalhar essa matemática aí.
+[04:18] Aperte o próximo para fazer a primeira conta.
+[04:20] Bom, se a gente for somar dois bit solts, a natureza só nos dá quatro casos possíveis.
+[04:26] Zero mais zero, zero mais um, um mais zero e o famoso um mais um.
+[04:31] Que seria dois no nosso mundo, né?
+[04:33] Sim.
+[04:34] E no desenho, a gente descobre que só duas portas lógicas resolvem o problema inteiro.
+[04:39] A gente usa uma porta ou exclusivo para dar o resultado imediato daquela casa e coloca
+[04:43] uma porta E do lado, só para cuidar do caso do um mais um.
+[04:47] Que é o que gera o vai um para a próxima casa, né?
+[04:50] Exatamente.
+[04:51] Esse pacotinho desenhado é o que a gente chama de meio somador.
+[04:54] Mas olhando a peça aqui, a limitação é bem clara.
+[04:57] Ele soma maravilhosamente bem, mas não sabe receber o vai um de ninguém que vem de
+[05:01] trás.
+[05:02] É, ele só se importa com a própria casa dele, ele é meio cego para o resto.
+[05:05] Quinta na página, passe pelos quatro casos na tela para conferir as saídas.
+[05:10] Aperte o próximo para emendar um no outro.
+[05:13] Aí entra a evolução do desenho.
+[05:16] Com uma entrada mais no circuito feita aí especificamente para o vai um que chega da
+[05:21] casa anterior, a peça vira um somador completo.
+[05:25] Ah, agora ela conversa com os vizinhos?
+[05:28] Isso.
+[05:29] E a maravilha disso é que se a gente emendar oito somadores completos numa fileira
+[05:34] longa, ligando a saída de um na entrada do outro, o sistema inteiro permite somar números
+[05:41] de oito bits numa tacada só.
+[05:43] Convida mexer nas entradas na tela para somar dois números e ver o vai um andando livremente
+[05:49] pela fileira inteira.
+[05:50] É bem bacana.
+[05:52] Aperte o próximo para ver o que mais essa peça faz.
+[05:54] Tem uma coisa incrível aqui.
+[05:57] Subtrair, multiplicar e dividir não precisam de peças novas de hardware.
+[06:01] Tudo se resolve com somas bem arrumadas na fila.
+[06:05] Sério, não precisa de uma calculadora de divisão separada?
+[06:09] Nada.
+[06:10] Multiplicar é só somar de forma repetida.
+[06:13] Dividir é subtrair repetido.
+[06:16] E subtrair é simplesmente somar com o número escrito de outro jeito.
+[06:20] Nossa, é muito eficiente.
+[06:22] Fica aqui o aviso de que tem um extra só sobre o somador e como a máquina escreve
+[06:27] número negativo.
+[06:28] Aperte o próximo porque agora falta a peça que lembra...
+[06:32] Todos os circuitos até agora fazem as contas e entregam o resultado na hora.
+[06:37] Mas a novidade do Flip Flop é diferente.
+[06:41] Sem usar desenhos complexos, ele tem duas portas onde a saída de uma fica ligada direto
+[06:46] na entrada da outra.
+[06:48] Peraí.
+[06:49] A energia entra numa, sai e entra na outra que joga de volta para a primeira.
+[06:53] É um círculo.
+[06:54] E essa volta constante faz as portas segurarem um bit de informação parado ali, girando enquanto
+[07:01] houver energia na tomada.
+[07:03] Fica em loop.
+[07:04] Isso fica preso.
+[07:06] Um pulso elétrico externo entra e grava informação.
+[07:10] Um outro pulso diferente vem e apaga o dado.
+[07:13] O mais legal é que essa é a primeira peça de todo o episódio que não faz conta.
+[07:18] Ela simplesmente lembra de uma coisa.
+[07:20] Quem acompanha a tela sinta-se livre para gravar e apagar o bit com os pulso.
+[07:24] Aperte o próximo para juntar vários deles.
+[07:27] Se a gente alinhar uma fileira inteira desses Flip Flops lado a lado, a gente forma uma palavra
+[07:32] de dados.
+[07:33] A melhor analogia aqui é imaginar uma prateleira cheia de caixas numeradas.
+[07:37] Tá.
+[07:38] Uma prateleira gigante.
+[07:39] Sim, e todas as caixas são perfeitamente iguais por fora.
+[07:43] O número que fica na frente da caixa é o que a gente chama de endereço.
+[07:47] Aí entra um seletor no circuito que recebe o endereço e liga só aquela caixa
+[07:51] específica para ler ou gravar o que tem dentro.
+[07:54] Convido quem está na tela a escolher um endereço e ver só aquela caixa acender.
+[07:58] E um ponto central é que número, letra e ordem viram tudo 0 e 1 guardado ali dentro das caixas.
+[08:05] Exatamente.
+[08:06] A máquina não sabe a diferença, ela não entende o contexto de nada.
+[08:09] Aquele 0 e 1 pode ser um salário ou uma letra de música.
+[08:13] Quem sabe é a pessoa ou o programa que lê.
+[08:15] Fico o aviso de que existe um extra só sobre como a máquina lembra das coisas.
+[08:21] Aperte o próximo para ir a 1936.
+[08:24] Em 1936, o Alan Turing fez algo absurdo, estritamente no papel.
+[08:29] Ele demonstrou que uma máquina muito simples conseguiria fazer qualquer conta matemática
+[08:34] que uma pessoa faria com lápis e papel.
+[08:36] Qualquer conta mesmo.
+[08:37] Sim, qualquer uma, desde que o problema tenha um passo a passo.
+[08:40] A ideia dele era uma máquina lendo e escrevendo símbolos numa fita contínua,
+[08:45] usando uma tabela de regras para saber o que fazer em cada momento.
+[08:48] Entar com a tela aberta, rode a fita aí e veja o cabeçote obedecer a tabela.
+[08:52] E vale pontuar que esta é a única tela do nosso episódio com uma fotografia real,
+[08:58] mostrando a página do artigo original do Turing.
+[09:00] É foto, porque essa máquina de fita nunca foi construída de verdade com metal e fio.
+[09:06] Todo o resto do que vimos é desenho de projeto para a fábrica,
+[09:09] mas a máquina do Turing ficou na teoria matemática.
+[09:12] E revolucionou tudo igual.
+[09:14] Aperte o próximo, porque ele mostrou mais uma coisa e a maior de todas.
+[09:18] A segunda parte do trabalho dele é impressionante.
+[09:21] Ele provou que uma única máquina dessas pode na verdade imitar o comportamento de qualquer outra máquina do mundo.
+[09:28] Como é possível?
+[09:29] Ela só precisa receber a tabela de regras da outra máquina entregue como dado puro na fita.
+[09:35] E isso aqui separa de vez uma calculadora de um computador.
+[09:38] A calculadora faz sempre aquilo para que foi construída nos fios.
+[09:42] Tá, os fios definem a função da calculadora.
+[09:45] Isso, o computador não. O computador faz o que a tabela manda.
+[09:48] E o pulo do gato é que a tabela é só mais um dado escrito junto com os números.
+[09:53] Que loucura!
+[09:54] E lembrando que a planta e o canteiro de obras aconteciam juntos, viu gente?
+[09:59] Naquele mesmo ano de 1936, alguém lá em Berlim já começava a montar uma máquina física de relês
+[10:06] sem nunca ter lido absolutamente nada disso.
+[10:09] Tem um extra só sobre o Turing e a máquina dele, para quem quiser entender melhor.
+[10:13] Aperte o próximo para montar a máquina completa.
+[10:15] Vamos montar as partes da máquina universal em voz alta agora.
+[10:19] A gente tem o acumulador, que guarda o resultado do cálculo que está sendo feito na hora.
+[10:24] E tem o contador, que é a pecinha que diz qual é a próxima ordem.
+[10:28] E as ordens em si?
+[10:29] Existe um punhado pequeno de ordens com código.
+[10:32] Coisas diretas como somar, subtrair, guardar na memória, carregar um dado para o acumulador.
+[10:38] Ou pular direto para um outro endereço da partilheira.
+[10:40] Para ficar claro na cabeça, imagina que o programa é uma lista longa de ordens numeradas,
+[10:45] com um dedo apontando qual é a ordem da vez.
+[10:48] O dedo, no caso, é o contador.
+[10:50] É uma ótima analogia.
+[10:52] E pular para outro endereço significa só mover o dedo mais para baixo ou mais para cima na lista.
+[10:57] É isso que cria os laços de repetição e permite que a máquina tome decisões lógicas.
+[11:03] Convido andar com o dedo pela lista na tela para visualizar isso rolando.
+[11:07] Essa capacidade de pular é o que dá a inteligência dinâmica para o sistema todo.
+[11:13] Aviso rápido de que tem um extra só sobre o conjunto de instruções e como montar a máquina completa, tá?
+[11:18] Aperte o próximo para dizer o que nasceu aqui.
+[11:21] O que nasce em toda essa planta que desenhamos hoje é a grande fronteira.
+[11:25] A lista de ordens armazenada é o que a gente chama de programa.
+[11:29] Já o metal puro, os fios que executam tudo isso, formam a máquina.
+[11:34] Nasce aí a divisão clássica entre software e hardware.
+[11:37] Juntando nosso caminho inteiro numa frase final, olha só como escala.
+[11:42] O interruptor básico vira a porta lógica.
+[11:45] A porta combinada vira a somador matemático.
+[11:48] O somador e a memória juntos viram uma máquina imensa que lê ordens.
+[11:53] E a ordem, por fim, é só mais um dado perdido na memória.
+[11:57] É um ciclo brilhante de abstração.
+[12:00] Chegamos a 1948 com a planta da casa totalmente completa e desenhada no papel.
+[12:06] O próximo episódio volta o relógio para 1936 e entra direto no canteiro de obras
+[12:12] para ver as três primeiras máquinas que ligaram de verdade.
+[12:15] Máquinas criadas por pessoas que, na maior parte do tempo,
+[12:19] nem tinham visto essa planta maravilhosa que a gente explorou hoje.
+[12:22] E fica no ar o pensamento mais provocativo disso tudo, sabe?
+[12:26] É uma baita ironia pensar que a maior revolução da lógica humana,
+[12:30] a sacada de que o software pode ser um dado flexível e totalmente moldável,
+[12:35] foi inteirinha resolvida no papel.
+[12:38] A matemática resolveu enigma, anos antes,
+[12:41] da engenharia física da conta de construir as peças reais para acompanhar.
+[12:45] O papel voou enquanto o metal ainda engatinhava.
+[12:48] É desplodir a cabeça.
+[12:50] Muito obrigado e até a próxima etapa do nosso papo.

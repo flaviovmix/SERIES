@@ -1,0 +1,210 @@
+# Transcricao automatica (faster-whisper small) - 12.6 min
+# Fonte: A máquina que aprendeu a traduzir código.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O compilador, sem rodeios, este é o quarto e último episódio da etapa A Máquina Que Liga,
+[00:05] que é a sexta etapa da nossa série, como reinventar o computador do zero.
+[00:09] E a gente fechou o episódio anterior, lá no ano de 1949.
+[00:15] Pois é. Naquela época, a máquina já conseguia guardar o ordem de execução na mesma memória
+[00:20] dos números, sabe?
+[00:21] Sim, ela já conseguia saltar passos e repetir pedaços de código prontos. Lembram muito
+[00:27] que é a lógica de uma lista de ordens numeradas?
+[00:30] Exatamente. Só que ficou um problema enorme no ar. O programa ainda era escrito inteirinho
+[00:35] na mão, em formato binário.
+[00:38] É, a pessoa precisava falar a língua crua da máquina pra conseguir programar.
+[00:43] E a nossa pergunta central de hoje é justamente essa. Olha, se traduzir também a uma tarefa
+[00:48] que tem regras claras, por que a própria máquina não faz isso?
+[00:51] Essa é a virada que muda tudo na história da computação.
+[00:54] Com certeza. E só pra situar todo mundo, este episódio cobre de 1949 a 1959. E a gente tem
+[01:03] uma regra visual pra hoje.
+[01:05] Ásson, a nossa explicação acompanha uma página de animação que tem 11 telas no total.
+[01:11] Isso. Quem está só ouvindo áudio pode acompanhar normalmente. Mas quem está com a página
+[01:16] aberta aí na tela só deve virar a imagem quando ouvir o nosso pedido específico.
+[01:20] Perfeito. Assim, o áudio casa direitinho com o visual.
+[01:23] Então, pra gente ver de perto como era o trabalho manual com o código binário, aperte o próximo.
+[01:28] Pra entender o tamanho do alívio que o compilador trouxe, a gente precisa lembrar da realidade
+[01:33] de escrever em binário.
+[01:35] Nossa, assim, era tudo anotado à mão num capé o quadriculado, né?
+[01:39] Tudo mesmo. Cada instrução que a máquina ia executar e cada endereço de memória
+[01:45] virava um número solto num papel.
+[01:46] É um trabalho braçal, bem pesado.
+[01:48] E só depois de conferir todas essas colunas, a pessoa ia furar os cartões ou aquelas fitas
+[01:54] de papel.
+[01:55] E tem o custaltíssimo desse método na prática. Pensa bem, se a pessoa precisasse trocar uma
+[01:59] simples ordem de lugar no meio do código, pronto.
+[02:02] Exato. Era um pesadelo.
+[02:05] Todos os endereços de memória que vinham depois daquela ordem mudavam de posição.
+[02:09] Tinha que rescrever tudo.
+[02:11] Sem contar que um número errado digitado alí não gerava um aviso, tipo, um erro
+[02:16] na tela, sabe?
+[02:17] A máquina não falava nada, né?
+[02:18] Pois é. A máquina rodava para o programa bonitinho e apenas te entregava um resultado
+[02:23] final completamente errado.
+[02:25] Caramba. E para achar um erro desse, significava ler linhas e linhas de números cruz no papel.
+[02:30] Uma agulha no palheiro de código.
+[02:32] Muito difícil.
+[02:33] Então, para revelar o primeiro alívio que o mercado encontrou para isso, aperte o próximo.
+[02:37] A primeira solução real para esse problema foi o chamado assembler.
+[02:41] Ah, e como ele mudou a rotina?
+[02:44] No lugar de usar aquele número longo e ilegível da instrução binária, a pessoa
+[02:49] começou a usar uma palavra bem curta, tipo, somar, carregar, guardar.
+[02:54] E no lugar do endereço de memória cheio de números, ela usava um nome.
+[02:57] Exatamente. Fica muito mais fácil de ler.
+[03:00] E a gente pode usar a nossa analogia autorizada do dicionário aqui. O assembler era um programa
+[03:05] pequeno que lia essas palavras curtas e trocava tudo pelos números certos.
+[03:09] Ele consultava uma lista interna e fazia a troca.
+[03:13] Só que era uma palavra de cada vez, né?
+[03:14] Ele trocava totalmente as cegas, sem entender absolutamente nada da intenção daquele código.
+[03:19] É verdade. Mas a conexão histórica aqui é muito forte.
+[03:23] O dicionário foi a primeira vez que a máquina trabalhou para quem estava escrevendo o código.
+[03:28] Ela parou de apenas calcular matemática para terceiros e ajudou o programador.
+[03:32] Exato. Mas ainda tinha uma limitação bem pesada.
+[03:36] Sim, porque uma palavra continuava virando só uma instrução.
+[03:40] O trabalho pesado de pensar na máquina passo a passo continuava todinho na cabeça da pessoa.
+[03:46] A relação ainda era de um para um.
+[03:48] Pois é. Então para mostrar a grande virada de paradigma nisso, aperte o próximo.
+[03:53] A ideia que vir o jogo de vez é focar na própria ação de traduzir.
+[03:58] Como assim?
+[03:59] Pensa bem. Traduzir texto de uma língua para outra tem um passo a passo claro.
+[04:04] Você precisa ler a entrada, procurar os pedaços numa tabela e escrever o resultado na saída.
+[04:10] Ah, e como a máquina faz qualquer coisa que tenha um passo a passo mecânico e lógico,
+[04:15] ela mesma poderia traduzir.
+[04:17] Essa é a lógica. A máquina ganha a capacidade de traduzir.
+[04:21] Então a pessoa escreve na linguagem que é mais confortável para o raciocínio dela
+[04:25] e a máquina faz o trabalho braçal de chegar no número binário.
+[04:28] E aqui entra a nossa segunda analogia autorizada, a analogia do tradutor.
+[04:34] Ele é bem diferente do dicionário simples.
+[04:36] Sim, o dicionário era palavra por palavra.
+[04:39] O tradutor não. Ele lê a frase inteira.
+[04:42] Ele entende a intenção geral do que foi pedido e aí ele escreve o texto equivalente na outra língua.
+[04:47] Não é mais uma troca burra.
+[04:49] Nossa, o compilador desmonta a lógica humana e monta a lógica da máquina do zero.
+[04:54] Exatamente. A máquina toma as rédeas da montagem.
+[04:58] Então, para apresentar o primeiro caso prático dessa teoria funcionando, aperte o próximo.
+[05:03] O primeiro grande sistema a fazer isso foi o A0, criado lá no ano de 1952.
+[05:09] E como a pessoa interagia com esse A0?
+[05:12] Em vez de programar passo a passo, a pessoa escrevia uma lista de chamadas, sabe?
+[05:17] Essa lista apontava para rotinas matemáticas que já estavam prontas e testadas numa fita.
+[05:22] Ah, como se fossem pedaços de um quebra-cabeça.
+[05:25] Isso. O A0 ia lá, juntava tudo naquela ordem que a pessoa pediu
+[05:29] e entregava um programa inteiro montadinho.
+[05:32] Olha a mudança enorme de paradigma aí.
+[05:35] Pela primeira vez, a máquina estava gerando um programa inteiro
+[05:39] e não apenas rodando um programa que o humano fez.
+[05:42] Sim, é a fundação do software moderno.
+[05:45] Existe um episódio extra só sobre a pessoa que atacou esse problema,
+[05:49] para quem quiser e fundo,
+[05:50] mas seguindo na história, a gente precisa falar sobre a aceitação disso.
+[05:54] É, não foi fácil.
+[05:56] Então, para falar sobre a recepção da ideia, aperte o próximo.
+[05:59] Fica o vestionamento bem natural agora.
+[06:02] Se a ideia do tradutor era tão boa, todo mundo aceitou a novidade super rápido?
+[06:07] Não mesmo.
+[06:08] Rolou uma resistência sincera e muito forte da época.
+[06:12] Resistência por quê?
+[06:13] A ferramenta não poupava trabalho manual?
+[06:15] Poupava, mas o consenso entre os especialistas
+[06:19] era de que humanos escreviam programas muito melhores.
+[06:22] Tinha um motivo bem prático para isso, na verdade.
+[06:25] A questão financeira?
+[06:26] Totalmente.
+[06:27] Memória de computador e tempo de máquina custavam muito caro.
+[06:31] A galera achava que um tradutor automático ia gerar código ineficiente, inchado, sabe?
+[06:36] Ah, entendi.
+[06:38] E se o programa ficasse pesado, se dignificava gastar mais tempo processando e, claro, perda de dinheiro.
+[06:43] Exato.
+[06:44] Eles não queriam arriscar o desempenho só pela facilidade de escrever.
+[06:48] Mas como foi que os pioneiros convenceram esses séticos todos?
+[06:52] A única saída foi botar na mesa e provar na prática que o código gerado pela máquina era rápido,
+[06:58] que era bom ou bastante para competir com os veteranos.
+[07:00] Mostrar o resultado no ecrua, né?
+[07:03] E para mostrar a prova real disso, aperte o próximo.
+[07:07] E quem trouxe essa prova definitiva foi a linguagem FORTRAN, lançada no ano de 1957.
+[07:13] E por que ela fez tanto sucesso?
+[07:15] O FORTRAN permitia que as pessoas escrevessem fórmulas matemáticas direto no código,
+[07:21] exatamente do mesmo jeito que elas já faziam no papel para o cálculo científico.
+[07:25] E a relação disso com o que a gente acabou de falar na tela anterior é direta.
+[07:30] O FORTRAN nasceu com a obsessão declarada de gerar um código final tão eficiente quanto o código feito à mão.
+[07:36] Sim, a meta primária deles era quebrar aquela resistência pesada dos séticos, provando velocidade.
+[07:42] E o ganho de tempo na rotina foi brutal, né?
+[07:45] Nossa, muito!
+[07:46] Quem usava a máquina agora podia focar em conferir apenas a matemática pura da fórmula.
+[07:51] Eles pararam de conferir números e endereços de memória.
+[07:54] Eles escreviam, tipo, uma única linha de código no lugar de dezenas de instruções binárias.
+[07:59] É um salto de abstração maravilhoso.
+[08:01] Com certeza!
+[08:03] E para levar essa ideia abstrata para outro setor do mercado, aperte o próximo.
+[08:08] A gente passou bastante tempo vendo matemática pesada,
+[08:12] mas agora fazemos a transição do laboratório direto para o escritório corporativo.
+[08:17] Isso!
+[08:18] E o protagonista dessa fase é o COBOL, que nasceu no ano de 1959.
+[08:24] E o foco dele não era cálculo científico, né?
+[08:27] Não.
+[08:28] O COBOL era focado em quem trabalhava com dados puros, tipo, a administração mesmo.
+[08:33] E não com equações complexas de engenharia.
+[08:37] A própria linguagem era diferente de ler.
+[08:39] Muito diferente.
+[08:41] Ela usava frases super parecidas com o inglês falado.
+[08:45] O objetivo era que pessoas de negócios conseguissem ler e entender o programa batendo o olho.
+[08:51] Então, foi isso que espalhou o computador direto para o setor de folha de pagamento?
+[08:55] Isso!
+[08:56] Folha de pagamento, controle de estoque e principalmente para dentro dos bancos.
+[09:01] Só que o COBOL trouxe uma exigência completamente nova para o ecossistema comercial.
+[09:08] O programa escrito em COBOL precisava rodar em máquinas de fabricantes diferentes.
+[09:13] O que antes era impossível.
+[09:15] Pois é.
+[09:16] Então, para explorar o impacto dessa exigência na tecnologia, aperte o próximo.
+[09:21] Essa necessidade de padronização traz a maior consequência da época.
+[09:26] Antes, todo código binário que você escrevia pertencia apenas a uma máquina específica.
+[09:31] Ficava preso no hardware daquela marca, sabe?
+[09:34] Exato.
+[09:35] Mas agora a solução foi criar um tradutor para cada modelo de máquina.
+[09:40] Assim, o mesmo texto escrito em COBOL rodava tranquilamente em qualquer computador que tivesse esse tradutor.
+[09:46] É incrível parar para refletir sobre o significado real disso.
+[09:50] O programa se descola da parte mecânica da máquina.
+[09:54] Sim, ele ganha independência.
+[09:56] O software ganha a vida própria, vira um produto independente que pode ser copiado, vendido
+[10:02] e que sobrevive muito além da vida útil do equipamento original.
+[10:06] A conclusão lógica é muito bonita.
+[10:09] Programar deixou de ser um trabalho apenas focado em engenharia e eletrônica de fios e válvulas.
+[10:16] Virou pura lógica.
+[10:17] Então, para avaliar o que se perdeu no meio desse processo todo, aperte o próximo.
+[10:22] Porque, olha, a gente tem que questionar o preço que a tecnologia cobra por tanta facilidade.
+[10:27] O mercado cresceu, mas houve um custo de controle.
+[10:30] Sim.
+[10:31] O maior problema dessa camada nova entre o humano e o computador é que a pessoa perde
+[10:36] a visibilidade.
+[10:37] O código binário que está rodando lá no fundo do processador já não é o mesmo
+[10:42] texto confortável que a pessoa escreveu na tela.
+[10:45] Isso.
+[10:46] O programa fica opaco.
+[10:47] E quando alguma coisa dá errado no sistema, há muito mais lugares diferentes para investigar.
+[10:52] Claro, você não sabe se o erro foi no seu texto ou na tradução da máquina, né?
+[10:57] Pois é.
+[10:58] E a gente tem que lembrar que o próprio tradutor ou cumpilador também é um programa de
+[11:02] computador e, consequentemente, carrega os seus próprios defeitos lógicos de fabricação.
+[11:07] Mas se a gente colocar as cartas na mesa, o saldo final foi muito positivo para a
+[11:12] humanidade.
+[11:13] Ah, sem comparação.
+[11:14] Um enorme de pessoas que ganharam a capacidade de programar rapidamente superou com folgas
+[11:19] aquela perda do controle absoluto e minucioso da máquina.
+[11:23] Existe um episódio extra só sobre o que um tradutor desses faz por dentro para quem quiser
+[11:27] ver o processo.
+[11:29] O fato é que isso permitiu que o software escalasse para o mundo inteiro.
+[11:33] Com certeza absoluta.
+[11:34] E para fechar toda essa nossa história, aperte o próximo.
+[11:38] Chegamos no final de uma longa jornada.
+[11:41] Nós amarramos hoje todo o metaca de 13 anos.
+[11:45] Pensa que desde 1936 o computador saiu do papel, ligou na tomada real, começou a guardar a
+[11:52] própria ordem lógica na memória e agora aprendeu a receber ordens diretamente na nossa
+[11:57] língua humana.
+[11:58] E o ano exato em que este nosso episódio para é 1959, o software realmente se encontrou.
+[12:06] Mas a gente não pode esquecer de olhar para o hardware.
+[12:08] E é esse o pensamento final que abre a próxima etapa da série.
+[12:11] Apesar de toda a inteligência abstrata de querida, a máquina não mudou fisicamente.
+[12:17] Ela ainda era gigante, né?
+[12:18] Gigante.
+[12:19] Ela continua sendo uma sala inteira lotada de painéis pesados e válvulas de vidro que
+[12:24] sugam uma energia tremenda, esquentam de forma absurda e queimam o tempo todo.
+[12:29] O computador ficou extremamente esperto no software, mas na vida real ele não
+[12:33] ficou menor.

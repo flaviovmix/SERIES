@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O compilador — Etapa 06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 06-04. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-06.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20m%C3%A1quina%20que%20aprendeu%20a%20traduzir%20c%C3%B3digo.m4a" data-duracao="755"></audio>
+    <img class="tocador__capa" src="img/cartao-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A máquina que aprendeu a traduzir código</div>
+      <div class="tocador__fonte">A máquina que liga · 04 · O compilador</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="755" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">12:35</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que liga · episódio 04</div>
+      <h1 class="reveal">O compilador</h1>
+      <p class="lede reveal">De <b>1949 a 1959</b>. O episódio anterior terminou perguntando: por que a própria máquina não traduz, se traduzir também é uma tarefa? Este responde. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O que ainda incomodava.</b> A ordem já morava na memória, junto com os números. Mas escrever essa ordem era escrever binário na mão, instrução por instrução: falar com a máquina era falar a língua dela.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal clicavel" data-abre="foto" data-legenda="Papel quadriculado e lápis: onde o programa nascia · reconstituição, não é foto de época">
+      <span class="selo">ilustração</span>
+      <img src="img/binario-ilustra.jpg" alt="Uma mesa dos anos 1950 com folhas de papel quadriculado cobertas de colunas de números escritos a lápis">
+      <figcaption>O programa nascia aqui, a lápis · reconstituição, não é foto de época</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">como era</div>
+    <h2 class="reveal">Escrever em binário</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um cartão perfurado · foto: Tangopaso, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/cartao-real.jpg" alt="Um cartão perfurado de computador, com colunas de furos retangulares">
+        <figcaption>Cada linha do programa virava furo no cartão · foto: Tangopaso, domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Cada instrução é um número, cada endereço é um número. Trocar uma ordem de lugar muda <b>todos os endereços depois dela</b>. E um dígito errado no meio não avisa nada: só dá resultado errado.</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o primeiro alívio</div>
+    <h2 class="reveal">O assembler</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um dicionário: troca palavra por número, uma de cada vez · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/assembler-ilustra.jpg" alt="Um dicionário grosso aberto ao lado de uma máquina de escrever e cartões perfurados">
+        <figcaption>Troca palavra por número consultando uma lista, sem entender nada</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Uma palavra curta no lugar do número da instrução, um nome no lugar do endereço. É a primeira vez que a máquina faz trabalho <b>pra quem escreve</b>. Mas uma palavra ainda vira uma instrução: pensar continua todo com a pessoa.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a virada</div>
+    <h2 class="reveal">Se traduzir é uma tarefa</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Do papel pra fita, e da fita pra máquina · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/traduzir-ilustra.jpg" alt="Uma sala de computador dos anos 1950 com uma mesa de papéis e uma fita perfurada entrando na máquina">
+        <figcaption>Ler um texto, procurar cada pedaço numa tabela, escrever o resultado</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Traduzir tem passo a passo. E qualquer coisa com passo a passo, esta etapa já mostrou, <b>a máquina faz</b>. Então a pessoa escreve numa língua confortável pra ela, e a máquina se vira pra chegar na dela.</p>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1952</div>
+    <h2 class="reveal">O A-0</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="No console do UNIVAC · foto: Wikimedia Commons, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/univac-real.jpg" alt="Uma pessoa operando o console do computador UNIVAC">
+        <figcaption>No console do UNIVAC · foto: Wikimedia Commons, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Um programa que montava outro programa: uma lista de chamadas, cada uma apontando pra uma rotina pronta guardada em fita, e ele juntava tudo naquela ordem. A máquina passou a <b>gerar</b> programa, não só a executar.</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step">
+    <div class="kicker reveal">a reação</div>
+    <h2 class="reveal">"Máquina não escreve programa"</h2>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">o consenso</div><div class="texto">programa se escreve à mão, e ninguém gera código tão bom quanto uma pessoa boa</div></div>
+      <div class="item"><div class="rotulo">por que não era tolice</div><div class="texto">memória era caríssima e tempo de máquina também: código gordo custava dinheiro de verdade</div></div>
+      <div class="item"><div class="rotulo">como se resolveu</div><div class="texto">mostrando funcionar, e mostrando que o código gerado era bom o bastante</div></div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step">
+    <div class="kicker reveal">1957</div>
+    <h2 class="reveal">FORTRAN</h2>
+    <div class="codigo reveal">
+      <div class="codigo__lado">
+        <div class="codigo__rotulo">na língua da máquina</div>
+        <div class="codigo__linhas">carregar 40
+somar 41
+multiplicar 42
+guardar 43</div>
+        <div class="codigo__pe">Cada linha, um endereço pra conferir na mão.</div>
+      </div>
+      <div class="codigo__lado codigo__lado--forte">
+        <div class="codigo__rotulo">na língua de quem calcula</div>
+        <div class="codigo__linhas">Y = (A + B) * C</div>
+        <div class="codigo__pe">A fórmula do jeito que ela é escrita no papel. O tradutor gera o resto.</div>
+      </div>
+    </div>
+    <p class="lede reveal">Nasceu pra cálculo científico e nasceu com uma obsessão declarada: gerar código <b>tão eficiente quanto o escrito à mão</b>, senão ninguém trocaria.</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="step">
+    <div class="kicker reveal">1959</div>
+    <h2 class="reveal">COBOL</h2>
+    <div class="codigo reveal">
+      <div class="codigo__lado codigo__lado--forte">
+        <div class="codigo__rotulo">frases, não fórmulas</div>
+        <div class="codigo__linhas">SUBTRACT DESCONTO FROM SALARIO
+GIVING LIQUIDO.</div>
+        <div class="codigo__pe">Feita pra quem trabalha com dado, não com fórmula: uma pessoa de negócio consegue ler o que o programa faz.</div>
+      </div>
+      <div class="codigo__lado">
+        <div class="codigo__rotulo">a exigência nova</div>
+        <div class="codigo__linhas">o mesmo programa
+rodando em máquinas
+de fabricantes
+diferentes</div>
+        <div class="codigo__pe">É ela que tira o computador do laboratório e põe na folha de pagamento, no estoque, no banco.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step">
+    <div class="kicker reveal">a consequência grande</div>
+    <h2 class="reveal">O programa deixa de ser da máquina</h2>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">antes</div><div class="texto">binário é daquela máquina e de mais nenhuma</div></div>
+      <div class="item"><div class="rotulo">depois</div><div class="texto">um tradutor por máquina, e o mesmo texto roda em qualquer uma</div></div>
+      <div class="item"><div class="rotulo">o que nasce</div><div class="texto">o programa vira uma coisa em si: se copia, se vende e sobrevive à máquina onde nasceu</div></div>
+    </div>
+    <p class="lede reveal">E o trabalho de programar deixa de ser trabalho de <b>eletrônica</b>.</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o preço</div>
+    <h2 class="reveal">Uma camada nova no meio</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A listagem: o que a máquina gerou, impresso pra conferir · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/preco-ilustra.jpg" alt="Uma pilha alta de listagens de computador em papel contínuo dobrado, com uma lupa em cima">
+        <figcaption>O código que roda não é mais o código que a pessoa escreveu</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Quando dá errado, agora tem <b>mais de um lugar pra procurar</b>. E o tradutor também é um programa, com os próprios defeitos. Valeu mesmo assim: o que se ganha em quem consegue programar é maior do que o que se perde em controle.</p>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1959</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o que a etapa fez</div>
+        <div class="desc">em treze anos o computador saiu do papel, ligou na tomada, guardou a própria ordem e aprendeu a receber ordem na nossa língua</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que não mudou</div>
+        <div class="desc">ela continua sendo uma sala inteira de válvulas que esquentam e queimam. Ficou esperta, não ficou menor</div>
+      </div>
+    </div>
+    <p class="lede reveal">A próxima etapa é sobre ela <b>encolher</b>.</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

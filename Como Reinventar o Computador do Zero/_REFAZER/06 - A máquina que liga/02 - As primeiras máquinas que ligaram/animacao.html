@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As primeiras máquinas que ligaram — Etapa 06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 06-02. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. Primeira animacao a usar
+     o componente troca-imagem (foto real x ilustracao), estreado nesta etapa. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/troca-imagem.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-06.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20constru%C3%A7%C3%A3o%20do%20Z3%20ao%20ENIAC.m4a" data-duracao="859"></audio>
+    <img class="tocador__capa" src="img/eniac-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A construção do Z3 ao ENIAC</div>
+      <div class="tocador__fonte">A máquina que liga · 02 · As primeiras máquinas que ligaram</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="859" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">14:19</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que liga · episódio 02</div>
+      <h1 class="reveal">As primeiras máquinas que ligaram</h1>
+      <p class="lede reveal">O episódio anterior montou o computador inteiro no papel. Este é o canteiro de obras: <b>1936 a 1946</b>, três máquinas que ligaram de verdade. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O botão das imagens.</b> Nas telas que têm as duas versões, a barra embaixo da foto troca entre a <b>imagem real</b> de época e a <b>ilustração</b>, que mostra o que a foto não mostra: a peça em corte, o que se mexe, a cena que ninguém fotografou.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/eniac-real.jpg" alt="O ENIAC instalado na Universidade da Pensilvânia, com painéis do chão ao teto">
+      <figcaption>O ENIAC, 1946 · foto: TexasDex, CC BY-SA 3.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step">
+    <div class="kicker reveal">a peça que faltava</div>
+    <h2 class="reveal">Um interruptor que ninguém precisa apertar</h2>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">precisa</div><div class="texto">abrir e fechar o circuito <b>sozinho</b></div></div>
+      <div class="item"><div class="rotulo">precisa</div><div class="texto">ser comandado por <b>eletricidade</b>, não por uma mão</div></div>
+      <div class="item"><div class="rotulo">precisa</div><div class="texto">ser <b>barato</b> o bastante pra existir aos milhares</div></div>
+    </div>
+    <p class="lede reveal">O interruptor de parede falha no segundo item: alguém tem que estar ali. Sem uma peça que obedeça a outro circuito, uma porta lógica nunca comanda a próxima, e o projeto do papel não sai do papel.</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a primeira candidata</div>
+    <h2 class="reveal">O relé</h2>
+    <div class="cena reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Os relés do Z3, aos milhares · foto: Dksen, CC0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/rele-real.jpg" alt="Painéis do Z3 cobertos de relés, centenas deles em fileiras">
+          <img class="troca__img" src="img/rele-ilustra.jpg" alt="Ilustracao: o rele em corte, com a bobina de cobre, o nucleo de ferro, a armadura articulada e os contatos">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Os relés do Z3, aos milhares na mesma máquina · foto: Dksen, CC0</span>
+          <span class="troca__aviso">O relé em corte: a bobina puxa a armadura e ela fecha o contato · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Um eletroímã puxa uma lâmina de metal e o contato fecha o circuito. Já existia pronto desde o telégrafo, e era barato. O problema é a lâmina: ela <b>se mexe</b>, e mexer leva de 5 a 10 milésimos de segundo.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a peça que não se mexe</div>
+    <h2 class="reveal">A válvula</h2>
+    <div class="cena reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Uma válvula triodo · foto: Mister rf, CC BY-SA 4.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/valvula-real.jpg" alt="Uma válvula eletrônica triodo, o bulbo de vidro com os eletrodos dentro">
+          <img class="troca__img" src="img/valvula-ilustra.jpg" alt="Ilustracao: a valvula em corte, com o filamento aceso, a grade de arame e os eletrons atravessando ate a placa">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Uma válvula triodo · foto: Mister rf, CC BY-SA 4.0</span>
+          <span class="troca__aviso">A válvula em corte: o filamento esquenta, o catodo solta elétrons e a grade decide se eles passam · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Faz a mesma coisa, deixa ou não deixa a corrente passar, mas <b>sem nada se mexendo</b>. Por isso chaveia em milionésimos de segundo. O preço: esquenta, gasta energia e queima.</p>
+  </section>
+
+  <!-- 5 -->
+  <section class="step">
+    <div class="kicker reveal">os números puros</div>
+    <h2 class="reveal">Dez mil vezes</h2>
+    <div class="corrida reveal">
+      <div class="corrida__peca">
+        <div class="corrida__nome">relé</div>
+        <div class="corrida__num">5 a 10 <span>milésimos de segundo</span></div>
+        <div class="corrida__pe">no máximo umas 100 a 200 vezes por segundo. As máquinas da época andavam em 5 a 10.</div>
+      </div>
+      <div class="corrida__peca corrida__peca--forte">
+        <div class="corrida__nome">válvula</div>
+        <div class="corrida__num">1 <span>milionésimo de segundo</span></div>
+        <div class="corrida__pe">passa de um milhão de vezes por segundo. O ENIAC ainda assim foi segurado em 100 mil, pra não errar.</div>
+      </div>
+    </div>
+    <p class="lede reveal">A diferença não é de dobro nem de dez vezes: é de umas <b>dez mil vezes</b>. E essa medida, quantas vezes por segundo a peça liga e desliga, é a mesma que hoje aparece na etiqueta de qualquer computador.</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">Berlim · 1941</div>
+      <h2 class="reveal">Z3</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Konrad Zuse, engenheiro civil, na sala da casa dos pais</div></div>
+        <div class="item reveal"><div class="rotulo">peças</div><div class="texto">cerca de 2600 relés · binário · programa lido de um filme perfurado</div></div>
+        <div class="item reveal"><div class="rotulo">memória</div><div class="texto">64 palavras de 22 bits · uma soma em quase 1 segundo</div></div>
+        <div class="item reveal"><div class="rotulo">fim</div><div class="texto">destruído num bombardeio em 1943; o mundo levou décadas pra saber que existiu</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="troca retrato clicavel reveal" data-ver="real" data-abre="foto" data-legenda="Réplica do Z3 no Deutsches Museum · foto: Venusianer, CC BY-SA 3.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/z3-real.jpg" alt="A réplica do computador Z3 exposta no Deutsches Museum">
+          <img class="troca__img" src="img/z3-ilustra.jpg" alt="Ilustracao: a sala de um apartamento em Berlim com os armarios de reles do Z3 na parede e uma mesa de calculo">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Réplica no Deutsches Museum · foto: Venusianer, CC BY-SA 3.0</span>
+          <span class="troca__aviso">A máquina montada na sala da casa dos pais, em Berlim · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">Harvard · 1944</div>
+      <h2 class="reveal">Harvard Mark I</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Howard Aiken, doutorando de física; a IBM bancou e fabricou</div></div>
+        <div class="item reveal"><div class="rotulo">tamanho</div><div class="texto">quinze metros · cinco toneladas · decimal, não binário</div></div>
+        <div class="item reveal"><div class="rotulo">velocidade</div><div class="texto">3 somas por segundo · multiplicação em 6s · divisão em 15s</div></div>
+        <div class="item reveal"><div class="rotulo">memória</div><div class="texto">72 números de 23 casas decimais, mais 60 fixos na chave</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="troca retrato clicavel reveal" data-ver="real" data-abre="foto" data-legenda="Harvard Mark I · foto: CC BY-SA 3.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/marki-real.jpg" alt="Um segmento do Harvard Mark I, uma parede de painéis e engrenagens">
+          <img class="troca__img" src="img/marki-ilustra.jpg" alt="Ilustracao: pecas de latao da maquina inacabada de Babbage numa caixa de madeira, sobre uma bancada dos anos 1940">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Harvard Mark I · foto: Wikimedia Commons, CC BY-SA 3.0</span>
+          <span class="troca__aviso">O latão da máquina inacabada de Babbage, reencontrado no departamento cem anos depois · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">Pensilvânia · 1945 e 1946</div>
+      <h2 class="reveal">ENIAC</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">por quê</div><div class="texto">o Exército precisava de tabela de tiro e as contas não saíam no ritmo da guerra</div></div>
+        <div class="item reveal"><div class="rotulo">tamanho</div><div class="texto">18 mil válvulas · trinta toneladas · uma sala inteira</div></div>
+        <div class="item reveal"><div class="rotulo">velocidade</div><div class="texto">100 mil pulsos por segundo · 5 mil somas por segundo</div></div>
+        <div class="item reveal"><div class="rotulo">memória</div><div class="texto">20 números de 10 casas. 200 algarismos no total, pouco mais que um SMS</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="troca retrato clicavel reveal" data-ver="real" data-abre="foto" data-legenda="O ENIAC na Universidade da Pensilvânia · foto: TexasDex, CC BY-SA 3.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/eniac-real.jpg" alt="Painéis do ENIAC do chão ao teto, com cabos e mostradores">
+          <img class="troca__img" src="img/eniac-ilustra.jpg" alt="Ilustracao: o salao do ENIAC em corte, com fileiras de milhares de valvulas acesas e cabos pelo chao">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">O ENIAC na Penn · foto: TexasDex, CC BY-SA 3.0</span>
+          <span class="troca__aviso">O salão em corte, mostrando as 18 mil válvulas acesas ao mesmo tempo · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o novo gargalo</div>
+    <h2 class="reveal">Programar era trocar a fiação</h2>
+    <div class="cena reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Programando o ENIAC no painel de tomadas · foto do Exército americano, domínio público">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/recabear-real.jpg" alt="Duas pessoas ajustando cabos e chaves nos painéis do ENIAC">
+          <img class="troca__img" src="img/recabear-ilustra.jpg" alt="Ilustracao: um painel de tomadas com dezenas de cabos coloridos ligando bornes numerados e chaves rotativas">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Programando o ENIAC no painel · foto: Exército americano, domínio público</span>
+          <span class="troca__aviso">O mapa de cabos de uma conta só: cada fio é uma ordem · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Não era escrever nada: era mudar cabo de painel e girar chave até a máquina ficar <b>fisicamente montada</b> pra aquela conta. Cinco mil somas por segundo, e três dias pra saber qual soma fazer.</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">quem fazia isso</div>
+    <h2 class="reveal">As seis</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Duas das seis operando o ENIAC · foto do Exército americano, domínio público">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/seis-real.jpg" alt="Duas mulheres operando os painéis do ENIAC">
+        </div>
+        <figcaption>
+          <span class="troca__credito">Duas das seis programadoras, no ENIAC · foto: Exército americano, domínio público</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Seis mulheres aprenderam a máquina por dentro <b>sem manual</b>, porque manual não existia, e por muito tempo foram tratadas como operadoras quando eram as únicas pessoas que sabiam fazer o ENIAC rodar.</p>
+    <div class="nota-cena reveal">Elas não são as calculistas da NASA que ficaram conhecidas por um filme: outro grupo, outro estado, quase vinte anos depois.</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">lado a lado</div>
+    <h2 class="reveal">O que as três tinham dentro</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">Z3 · 1941</div>
+        <div class="desc"><b>64</b> caixas de 22 bits<br>relés, cerca de 1 soma/s<br>programa no filme perfurado</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">Mark I · 1944</div>
+        <div class="desc"><b>72</b> caixas de 23 casas<br>decimal, 3 somas/s<br>programa na fita de papel</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">ENIAC · 1946</div>
+        <div class="desc"><b>20</b> caixas de 10 casas<br>válvulas, 5.000 somas/s<br>programa no cabo e na chave</div>
+      </div>
+    </div>
+    <p class="lede reveal">Nas três, o programa morava <b>fora</b>. Dentro só moravam os números, e a prateleira era minúscula. Armazenamento não existia: o que entrava vinha de fita ou cartão, o que saía era impresso, e a máquina esquecia tudo ao desligar.</p>
+  </section>
+
+  <!-- 12 -->
+  <section class="step">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1946</h2>
+    <p class="lede reveal">Três máquinas gigantescas funcionando, e nenhuma delas capaz de guardar a própria ordem. Enquanto a ordem estiver fora, trocar de tarefa é trabalho físico, e a máquina nunca pode olhar pra própria ordem.</p>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">a peça do próximo episódio</div><div class="texto">colocar a ordem no mesmo lugar onde já moram os números. Não é peça nova de metal: é um jeito novo de usar a prateleira que já existe.</div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="../../../../site/js/animacao/troca-imagem.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>
