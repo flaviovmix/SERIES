@@ -20,26 +20,36 @@
   // ---------- tela 4: os quatro pavios ----------
   // Cada pavio é uma forma de a bomba estourar. O texto só aparece quando o ouvinte
   // acende, porque a tela existe pra ele acompanhar o áudio um caso de cada vez.
+  // A foto entra em cinza e ganha cor quando o pavio acende: acender é o gesto da
+  // tela, e a cor é o retorno dele.
   const PAVIOS = [
     {
       nome: 'pavio 1',
       titulo: 'O comportamento muda',
       texto: 'A regra de negócio virou outra e ninguém sabe onde ela mora no código. A manutenção vira tentativa e erro, e cada tentativa pode quebrar uma coisa que estava certa.',
+      foto: 'img/pavio-1.webp',
+      alt: 'Um painel de parede com dezenas de interruptores iguais e sem etiqueta, e uma mão parada na frente sem saber qual acionar',
     },
     {
       nome: 'pavio 2',
       titulo: 'O dado cresce',
       texto: 'Rápido com trinta registros, lento com trinta mil, travado com trezentos mil. Não deu erro: só ficou devagar. E devagar demais é quebrado, pra quem está usando.',
+      foto: 'img/pavio-2.webp',
+      alt: 'Uma pilha pequena e arrumada de papel ao lado de uma torre enorme do mesmo papel, tortas e prestes a escorregar',
     },
     {
       nome: 'pavio 3',
       titulo: 'Alguém acha a brecha',
       texto: 'O único com outra pessoa do lado de lá, procurando falha de propósito. Um campo que aceita o que não devia, uma senha guardada errado. Quem achar não vai avisar.',
+      foto: 'img/pavio-3.webp',
+      alt: 'Uma porta pesada e fechada vista de dentro de um cômodo escuro, com uma fresta de correspondência aberta deixando entrar uma lâmina de luz',
     },
     {
       nome: 'pavio 4',
       titulo: 'A área proibida',
       texto: 'O mais comum de todos. Ninguém sabe mexer naquela linha, então o time contorna em vez de arrumar. Cada contorno é mais código em volta do que já ninguém entende.',
+      foto: 'img/pavio-4.webp',
+      alt: 'Um pedaço de parede de escritório isolado com plástico e fita, e as mesas empurradas em volta fazendo um desvio pelo meio da sala',
     },
   ];
 
@@ -70,6 +80,7 @@
     botao.className = 'pavio';
     botao.setAttribute('aria-pressed', 'false');
     botao.innerHTML =
+      '<img class="pavio__foto" src="' + p.foto + '" alt="' + p.alt + '">' +
       '<div class="pavio__topo"><span class="pavio__fio"></span><span class="pavio__chama">🔥</span></div>' +
       '<div class="pavio__nome">' + p.nome + '</div>' +
       '<div class="pavio__titulo">' + p.titulo + '</div>' +

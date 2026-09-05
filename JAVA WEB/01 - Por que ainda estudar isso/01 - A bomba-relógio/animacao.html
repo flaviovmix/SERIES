@@ -10,9 +10,9 @@
 
 <!-- Animação do episódio 1.1 da série JAVA WEB, montada em 04/09/2026 a partir do
      _telas.md (o corte real do áudio), não do roteiro: o áudio já existe e é ele que
-     manda. 8 telas, 7 pedidos de "aperte o Próximo". Este episódio não tem foto nem
-     modelo 3D, então a base de pranchas e de modelo-3d não entra; o desenho das telas
-     mora em episodio.css e o que responde à mão, em episodio.js. -->
+     manda. 8 telas, 7 pedidos de "aperte o Próximo". As ilustrações são do Flow, uma
+     por tela, e os prompts de cada uma moram no ilustracoes.md ao lado. O desenho das
+     telas está em episodio.css e o que responde à mão, em episodio.js. -->
 <link rel="stylesheet" href="../../../site/css/tokens.css">
 <link rel="stylesheet" href="../../../site/css/base.css">
 <link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
@@ -59,51 +59,61 @@
       </div>
     </div>
     <figure class="capa-arte reveal">
-      <img src="img/img-01.png" alt="Uma caixa de entrega aberta sobre uma mesa de vidro, e dentro dela, no lugar do produto, um despertador de metal marcando a hora">
+      <img src="img/tela-01.webp" alt="Uma caixa de entrega aberta sobre uma mesa de vidro, e dentro dela, no lugar do produto, um despertador de metal marcando a hora">
       <figcaption>ilustração · funcionando hoje, com um prazo lá dentro</figcaption>
     </figure>
   </section>
 
   <!-- 2 · o que mudou de verdade (02:35) -->
-  <section class="step">
-    <div class="kicker reveal">o que mudou de verdade</div>
-    <h2 class="reveal">Pedir ficou fácil. Entender, não.</h2>
-    <p class="lede reveal">A facilidade é real, e esta série não é contra ela. Ninguém aqui vai pedir pra você parar de usar.</p>
-    <div class="duo reveal">
-      <div class="duo__lado">
-        <div class="duo__rotulo">o que você faz</div>
-        <p class="duo__texto">Descreve em português o que quer. "Um sistema de cadastro de clientes."</p>
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">o que mudou de verdade</div>
+      <h2 class="reveal">Pedir ficou fácil. Entender, não.</h2>
+      <div class="duo reveal">
+        <div class="duo__lado">
+          <div class="duo__rotulo">o que você faz</div>
+          <p class="duo__texto">Descreve em português o que quer. "Um sistema de cadastro de clientes."</p>
+        </div>
+        <div class="duo__seta" aria-hidden="true">→</div>
+        <div class="duo__lado duo__lado--forte">
+          <div class="duo__rotulo">o que volta</div>
+          <p class="duo__texto">Um programa rodando de verdade. Com banco, tela de login e painel. Em segundos.</p>
+        </div>
       </div>
-      <div class="duo__seta" aria-hidden="true">→</div>
-      <div class="duo__lado duo__lado--forte">
-        <div class="duo__rotulo">o que volta</div>
-        <p class="duo__texto">Um programa rodando de verdade. Com banco, tela de login e painel. Em segundos.</p>
-      </div>
+      <p class="destaque reveal">A facilidade é real, e esta série não é contra ela. Mas o programa chega pronto: você sabe dizer o que ele faz <b>por dentro</b>, quando ninguém está olhando?</p>
     </div>
-    <p class="destaque reveal">O programa funciona. Você sabe dizer o que ele faz <b>por dentro</b>, quando ninguém está olhando?</p>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-02.webp" alt="Um bilhete pequeno em branco de um lado da mesa e, do outro, um pacote grande já montado com peças precisas dentro">
+      <figcaption>ilustração · pede-se pouco, volta muito, pronto</figcaption>
+    </figure>
   </section>
 
   <!-- 3 · a definição (03:55) -->
-  <section class="step">
-    <div class="kicker reveal">a definição</div>
-    <h2 class="reveal">Código que funciona e que você não entende é uma bomba-relógio.</h2>
-    <p class="lede reveal">O ponto da comparação é um só: <b>o atraso</b>. O defeito já existe no dia da entrega. Ele só não aparece nele.</p>
-    <div class="kicker kicker--meio reveal">por que o dia do teste não prova nada</div>
-    <div class="ficha reveal">
-      <div class="item">
-        <div class="rotulo">o dado é mínimo</div>
-        <div class="texto">Quem testa cadastra dois ou três registros, só pra ver se salva.</div>
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">a definição</div>
+      <h2 class="reveal">Código que funciona e que você não entende é uma bomba-relógio.</h2>
+      <p class="lede reveal">O ponto da comparação é um só: <b>o atraso</b>. O defeito já existe no dia da entrega. Ele só não aparece nele.</p>
+      <div class="ficha reveal">
+        <div class="item">
+          <div class="rotulo">o dado é mínimo</div>
+          <div class="texto">Quem testa cadastra dois ou três registros, só pra ver se salva.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">o caminho é o feliz</div>
+          <div class="texto">Clica onde deve, com a informação certa, na ordem certa.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">só você está usando</div>
+          <div class="texto">Uma pessoa, sem pressa, sem ninguém procurando falha.</div>
+        </div>
       </div>
-      <div class="item">
-        <div class="rotulo">o caminho é o feliz</div>
-        <div class="texto">Clica onde deve, com a informação certa, na ordem certa.</div>
-      </div>
-      <div class="item">
-        <div class="rotulo">só você está usando</div>
-        <div class="texto">Uma pessoa, sem pressa, sem ninguém procurando falha.</div>
-      </div>
+      <p class="destaque reveal">Nessas condições de laboratório, <b>código bom e código ruim se comportam igual</b>.</p>
     </div>
-    <p class="destaque reveal">Nessas condições de laboratório, <b>código bom e código ruim se comportam igual</b>. E a culpa não é da máquina: um humano experiente entrega a mesma bomba se quem recebe não entende.</p>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-03.webp" alt="Uma caixa branca impecável por fora, com uma janelinha de vidro na lateral por onde se vê o maquinário de engrenagens que existe dentro dela">
+      <figcaption>ilustração · perfeito por fora, maquinário por dentro</figcaption>
+    </figure>
   </section>
 
   <!-- 4 · os quatro pavios (05:34) — tela interativa -->
@@ -123,26 +133,31 @@
   </section>
 
   <!-- 5 · a hora do estouro (07:42) -->
-  <section class="step">
-    <div class="kicker reveal">a hora do estouro</div>
-    <h2 class="reveal">Você pede o conserto e trava na primeira frase.</h2>
-    <p class="lede reveal">Pra ela consertar, você precisa descrever o defeito. E descrever é vocabulário, que é justamente o que não se ganha aceitando sem ler.</p>
-    <div class="compara reveal">
-      <div class="compara__lado compara__lado--fraco">
-        <div class="compara__rotulo">o que você consegue dizer</div>
-        <p class="compara__fala">"Está dando erro."</p>
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">a hora do estouro</div>
+      <h2 class="reveal">Você pede o conserto e trava na primeira frase.</h2>
+      <div class="compara reveal">
+        <div class="compara__lado compara__lado--fraco">
+          <div class="compara__rotulo">o que você consegue dizer</div>
+          <p class="compara__fala">"Está dando erro."</p>
+        </div>
+        <div class="compara__lado">
+          <div class="compara__rotulo">o que ela precisa ouvir</div>
+          <ul class="compara__lista">
+            <li>que parte falhou</li>
+            <li>com que dado</li>
+            <li>depois de qual ação</li>
+            <li>o que era pra ter acontecido</li>
+          </ul>
+        </div>
       </div>
-      <div class="compara__lado">
-        <div class="compara__rotulo">o que ela precisa ouvir</div>
-        <ul class="compara__lista">
-          <li>que parte falhou</li>
-          <li>com que dado</li>
-          <li>depois de qual ação</li>
-          <li>o que era pra ter acontecido</li>
-        </ul>
-      </div>
+      <p class="destaque reveal">É a parede sem planta hidráulica: a casa é sua, a furadeira é boa, e cada furo é uma aposta. O cano só avisa meses depois.</p>
     </div>
-    <p class="destaque reveal">É a parede sem planta hidráulica: a casa é sua, a furadeira é boa, e cada furo é uma aposta. O cano só avisa meses depois. Se colar a resposta e consertar, você não sabe por quê. Se quebrar mais, também não. Nos dois casos a dependência aumenta.</p>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-05.webp" alt="Duas mãos com uma furadeira encostada numa parede lisa, e atrás da tinta o contorno de um cano bem no ponto em que a broca aponta">
+      <figcaption>ilustração · a furadeira é boa; a planta é que falta</figcaption>
+    </figure>
   </section>
 
   <!-- 6 · a régua de três perguntas (09:38) — tela de prática -->
@@ -152,8 +167,13 @@
     <div class="painel reveal">
       <div class="legenda" id="legRegua">Pause o áudio. Leia o pedaço abaixo e responda as três com as suas palavras, antes de abrir a resposta.</div>
       <div class="pedaco">
-        <div class="pedaco__rotulo">o pedaço, descrito em português</div>
-        <p class="pedaco__texto">Ele pega o que a pessoa digitou no campo de busca e usa esse texto pra procurar no banco de dados.</p>
+        <figure class="pedaco__arte">
+          <img src="img/tela-06.webp" alt="Três instrumentos antigos de medir em latão, lado a lado sobre uma bancada de madeira clara">
+        </figure>
+        <div class="pedaco__corpo">
+          <div class="pedaco__rotulo">o pedaço, descrito em português</div>
+          <p class="pedaco__texto">Ele pega o que a pessoa digitou no campo de busca e usa esse texto pra procurar no banco de dados.</p>
+        </div>
       </div>
       <div class="perguntas" id="perguntas"></div>
       <div class="painel__total">
@@ -165,35 +185,46 @@
   </section>
 
   <!-- 7 · a saída que a série propõe (11:25) -->
-  <section class="step">
-    <div class="kicker reveal">a saída</div>
-    <h2 class="reveal">Montar na mão uma vez.</h2>
-    <p class="lede reveal">Não por sofrimento e não por saudosismo. É que cada peça montada na mão vira uma pergunta que você sabe fazer depois.</p>
-    <ol class="caminho reveal">
-      <li class="caminho__passo"><span class="caminho__num">1</span><span class="caminho__nome">o terminal</span></li>
-      <li class="caminho__passo"><span class="caminho__num">2</span><span class="caminho__nome">o navegador</span></li>
-      <li class="caminho__passo"><span class="caminho__num">3</span><span class="caminho__nome">o banco de dados</span></li>
-      <li class="caminho__passo"><span class="caminho__num">4</span><span class="caminho__nome">no ar, na internet</span></li>
-    </ol>
-    <p class="destaque reveal">Depois disso a IA continua escrevendo o código. Só que agora ela escreve pra alguém que lê, que pergunta e que percebe a peça faltando. Ela deixa de ser fornecedor e vira ferramenta.</p>
-    <p class="lede reveal">E a série passa de propósito pelas partes chatas: preparar ambiente, guardar histórico, testar. É exatamente lá que a bomba costuma se esconder.</p>
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">a saída</div>
+      <h2 class="reveal">Montar na mão uma vez.</h2>
+      <p class="lede reveal">Não por sofrimento e não por saudosismo. É que cada peça montada na mão vira uma pergunta que você sabe fazer depois.</p>
+      <ol class="caminho reveal">
+        <li class="caminho__passo"><span class="caminho__num">1</span><span class="caminho__nome">o terminal</span></li>
+        <li class="caminho__passo"><span class="caminho__num">2</span><span class="caminho__nome">o navegador</span></li>
+        <li class="caminho__passo"><span class="caminho__num">3</span><span class="caminho__nome">o banco de dados</span></li>
+        <li class="caminho__passo"><span class="caminho__num">4</span><span class="caminho__nome">no ar, na internet</span></li>
+      </ol>
+      <p class="destaque reveal">Depois disso a IA continua escrevendo o código. Só que agora ela escreve pra alguém que lê, que pergunta e que percebe a peça faltando. E a série passa de propósito pelas partes chatas: é lá que a bomba se esconde.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-07.webp" alt="A mesma engenhoca de madeira em quatro estágios de montagem sobre a bancada, das peças soltas até o objeto pronto">
+      <figcaption>ilustração · a mesma coisa, peça por peça</figcaption>
+    </figure>
   </section>
 
   <!-- 8 · fecho (13:00) -->
-  <section class="step">
-    <div class="kicker reveal">o que fica</div>
-    <h2 class="reveal">Antes de aceitar, pergunte.</h2>
-    <div class="regua-fecho reveal">
-      <div class="regua-fecho__item"><span class="regua-fecho__num">1</span> O que esse pedaço faz?</div>
-      <div class="regua-fecho__item"><span class="regua-fecho__num">2</span> O que acontece se o dado vier errado?</div>
-      <div class="regua-fecho__item"><span class="regua-fecho__num">3</span> Onde isso quebra?</div>
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">o que fica</div>
+      <h2 class="reveal">Antes de aceitar, pergunte.</h2>
+      <div class="regua-fecho reveal">
+        <div class="regua-fecho__item"><span class="regua-fecho__num">1</span> O que esse pedaço faz?</div>
+        <div class="regua-fecho__item"><span class="regua-fecho__num">2</span> O que acontece se o dado vier errado?</div>
+        <div class="regua-fecho__item"><span class="regua-fecho__num">3</span> Onde isso quebra?</div>
+      </div>
+      <p class="destaque reveal"><b>O que transfere:</b> nada disso é sobre Java. Vale igual em Python, em JavaScript, em qualquer banco. Java aqui é só o veículo.</p>
+      <div class="gancho reveal">
+        <div class="gancho__rotulo">no próximo episódio</div>
+        <p class="gancho__texto">Se a saída não é largar a IA, então é usar de outro jeito. E esse jeito muda com uma coisa pequena: o que você pede <b>antes</b> de pedir o código.</p>
+        <a class="btn-mini cheio gancho__botao" href="../02 - Estudar com a IA do lado/animacao.html">Estudar com a IA do lado →</a>
+      </div>
     </div>
-    <p class="destaque reveal"><b>O que transfere:</b> nada disso é sobre Java. Vale igual em Python, em JavaScript, em qualquer banco. Java aqui é só o veículo, porque a gente precisa montar alguma coisa de verdade pra aprender.</p>
-    <div class="gancho reveal">
-      <div class="gancho__rotulo">no próximo episódio</div>
-      <p class="gancho__texto">Se a saída não é largar a IA, então é usar de outro jeito. E esse jeito muda com uma coisa pequena: o que você pede <b>antes</b> de pedir o código.</p>
-      <a class="btn-mini cheio gancho__botao" href="../02 - Estudar com a IA do lado/animacao.html">Estudar com a IA do lado →</a>
-    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-08.webp" alt="A mesma caixa da abertura, agora aberta, com o despertador desmontado ao lado em peças organizadas sobre um pano claro">
+      <figcaption>ilustração · a mesma caixa, agora entendida</figcaption>
+    </figure>
   </section>
 
 </main>
