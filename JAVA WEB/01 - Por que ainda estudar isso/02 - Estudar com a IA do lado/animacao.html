@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estudar com a IA do lado — Java Web 1.2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Animação do episódio 1.2 da série JAVA WEB, montada em 06/09/2026 a partir do
+     _telas.md (o corte real do áudio), não do roteiro. 8 telas, 7 pedidos de "aperte
+     o Próximo". As ilustrações são do Flow e os prompts moram no ilustracoes.md ao
+     lado. O desenho das telas está em episodio.css e o que responde à mão, em
+     episodio.js. A base de css/js vem toda de site/, nada copiado do episódio 1.1. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/javaweb.html">← voltar pra série</a></div>
+  <div class="tocador">
+    <!-- data-duracao em segundos: vale até o navegador ler o metadata do áudio -->
+    <audio preload="metadata" src="IA como professor e não fornecedor.m4a" data-duracao="877"></audio>
+    <img class="tocador__capa" src="../../../site/img/serie-java-web.webp" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">IA como professor e não fornecedor</div>
+      <div class="tocador__fonte">Java Web · etapa 1 · episódio 2</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="877" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">14:37</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 · capa (00:00) -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">java web · etapa 1 · episódio 2</div>
+      <h1 class="reveal">Estudar com a IA do lado</h1>
+      <p class="lede reveal">Um gênio na cadeira ao lado resolve todas as provas por você. O boletim fecha em dez e o aprendizado fica em zero. Este episódio combina o jeito de usar a mesma ferramenta sem cair nisso.</p>
+      <div class="capa-como reveal">
+        <p><b>Como acompanhar.</b> Quando o áudio pedir, aperte <b>Próximo</b>. Na tela da prática, pause o áudio, resolva e volte. Sem a página aberta dá pra ouvir tudo, sem perder nada.</p>
+      </div>
+    </div>
+    <figure class="capa-arte reveal">
+      <img src="img/tela-01.webp" alt="Uma escrivaninha com o caderno aberto em branco, a caneta parada ao lado e uma prova já preenchida por outra mão, com uma cadeira vazia puxada para perto">
+      <figcaption>ilustração · boletim impecável, caderno em branco</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 · fornecedor ou professor (02:05) -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">a mesma ferramenta, duas cadeiras</div>
+      <h2 class="reveal">Fornecedor ou professor.</h2>
+      <div class="duo reveal">
+        <div class="duo__lado">
+          <div class="duo__rotulo">como fornecedor</div>
+          <p class="duo__texto">Recebe um pedido, devolve um produto. A tarefa fica pronta e quem pediu sabe o mesmo que sabia antes.</p>
+        </div>
+        <div class="duo__seta" aria-hidden="true">↔</div>
+        <div class="duo__lado duo__lado--forte">
+          <div class="duo__rotulo">como professor</div>
+          <p class="duo__texto">Recebe uma dúvida, devolve entendimento. Demora mais, e o que sobra fica em você.</p>
+        </div>
+      </div>
+      <p class="destaque reveal">É a academia: se outra pessoa levanta o peso, o peso sobe de verdade e ninguém trapaceou. Só que o músculo que cresce não é o seu. <b>Chamar o fornecedor não é errado</b> quando a meta é só entregar. O que estraga é chamar ele bem na hora em que a meta era aprender.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-02.webp" alt="Alguém deitado num banco de supino com os braços relaxados enquanto outra pessoa, em pé atrás, levanta a barra inteira pelas duas mãos">
+      <figcaption>ilustração · o peso sobe; o músculo não é o seu</figcaption>
+    </figure>
+  </section>
+
+  <!-- 3 · as três regras (04:55) -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">o combinado da série</div>
+      <h2 class="reveal">Três regras pra manter ela na cadeira de professor.</h2>
+      <ol class="regras reveal">
+        <li class="regra">
+          <span class="regra__num">1</span>
+          <div class="regra__corpo">
+            <b>Explicação antes do código.</b> Se o bloco pronto chega primeiro, a explicação vira legenda de uma coisa que você já aceitou, e ninguém lê legenda.
+          </div>
+        </li>
+        <li class="regra">
+          <span class="regra__num">2</span>
+          <div class="regra__corpo">
+            <b>Digitar em vez de colar.</b> Colar leva dois segundos e não gera nenhuma pergunta. Digitar leva dois minutos e obriga a ler cada pedaço. É na lentidão que a dúvida nasce.
+          </div>
+        </li>
+        <li class="regra">
+          <span class="regra__num">3</span>
+          <div class="regra__corpo">
+            <b>Dizer o que espera antes de rodar.</b> Se a previsão falha, você achou o ponto exato em que seu entendimento estava errado. Quem roda primeiro perde essa informação pra sempre.
+          </div>
+        </li>
+      </ol>
+      <p class="destaque reveal">As três custam tempo, e esse é o preço combinado.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-03.webp" alt="Uma mão escrevendo devagar num caderno de papel com lápis, com o teclado empurrado para o lado">
+      <figcaption>ilustração · o freio que obriga a perguntar</figcaption>
+    </figure>
+  </section>
+
+  <!-- 4 · o mesmo pedido, dois jeitos (06:58) — tela interativa -->
+  <section class="step">
+    <div class="kicker reveal">troque e compare</div>
+    <h2 class="reveal">O mesmo pedido, dois jeitos</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legModo">O assunto é o mesmo. Troque o modo e veja o que cada pedido puxa de volta.</div>
+      <div class="painel__arte">
+        <figure class="arte-embutida">
+          <img src="img/tela-04.webp" alt="Uma chave de alavanca antiga de latão, de duas posições, parada no meio do caminho entre uma e outra">
+        </figure>
+        <div class="painel__corpo">
+          <div class="botoes" id="chaveModo"></div>
+          <div class="pedido" id="pedido"></div>
+        </div>
+      </div>
+      <div class="painel__total">
+        <span class="num" id="modoAtual">1</span>
+        <span class="meta" id="metaModo">modo fornecedor</span>
+      </div>
+    </div>
+    <p class="destaque reveal">A frase que vira a chave sozinha, no fim do pedido: <b>"não me mostre o código ainda"</b>.</p>
+  </section>
+
+  <!-- 5 · onde ela ajuda de verdade (08:14) -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">e isto ela faz bem</div>
+      <h2 class="reveal">Quatro momentos em que ela ajuda de verdade.</h2>
+      <div class="ficha reveal">
+        <div class="item">
+          <div class="rotulo">o repetitivo</div>
+          <div class="texto">A décima peça igual, depois que você entendeu e escreveu a primeira.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">o erro obscuro</div>
+          <div class="texto">Traduzir a mensagem de três linhas que antes custava horas de fórum.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">a segunda opinião</div>
+          <div class="texto">Você já escreveu e funciona; agora quer saber se existe jeito melhor, e por quê.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">o jargão</div>
+          <div class="texto">A palavra que assusta, explicada com um exemplo do dia a dia.</div>
+        </div>
+      </div>
+      <p class="destaque reveal">Repare no que os quatro têm em comum: <b>você continua no comando</b>. Já tentou, já escreveu, já errou ou já sabe o que quer. Ela entra depois.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-05.webp" alt="Um marceneiro numa bancada iluminada pela janela, com as duas mãos na peça de madeira e as ferramentas ao alcance, ao lado">
+      <figcaption>ilustração · as mãos continuam na peça</figcaption>
+    </figure>
+  </section>
+
+  <!-- 6 · onde ela atrapalha (09:45) -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">e isto pesa o mesmo tanto</div>
+      <h2 class="reveal">Três coisas que atrapalham quem está aprendendo.</h2>
+      <div class="ficha reveal">
+        <div class="item">
+          <div class="rotulo">pula o erro que ensina</div>
+          <div class="texto">Aprender é ficar travado e sair do travamento. Se a resposta chega antes, a tarefa anda e o aprendizado não.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">erra com confiança</div>
+          <div class="texto">O texto errado vem com a mesma segurança do certo, e quem aprende ainda não tem como perceber.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">tira o vocabulário</div>
+          <div class="texto">Sem o nome das peças, a próxima pergunta também vira pedido de produto. Vira ciclo.</div>
+        </div>
+      </div>
+      <p class="destaque reveal">É o GPS: ele te leva a qualquer endereço de primeira, e depois de dez viagens você não sabe ir sozinho. Ninguém precisa jogar o GPS fora. <b>A ordem é que importa</b>: depois da tentativa ela ensina, antes dela ela substitui.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-06.webp" alt="A vista do banco do motorista com o celular preso ao painel mostrando a seta da navegação, e a rua adiante completamente desfocada pelo para-brisa">
+      <figcaption>ilustração · chega sempre, e você nunca aprende o caminho</figcaption>
+    </figure>
+  </section>
+
+  <!-- 7 · a prática (11:28) -->
+  <section class="step">
+    <div class="kicker reveal">pratique</div>
+    <h2 class="reveal">Reescreva um pedido</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPecas">Pause o áudio e reescreva, na sua tela, um pedido do modo fornecedor no modo professor. As quatro peças estão aqui: toque em cada uma que você já colocou no seu.</div>
+      <div class="painel__arte">
+        <figure class="arte-embutida">
+          <img src="img/tela-07.webp" alt="Duas folhas sobre a mesa: à esquerda uma linha curta riscada a lápis, à direita várias linhas escritas com calma">
+        </figure>
+        <div class="painel__corpo">
+          <div class="pecas" id="pecas"></div>
+        </div>
+      </div>
+      <div class="painel__total">
+        <span class="num" id="totalPecas">0</span>
+        <span class="meta" id="metaPecas">peças no seu pedido: 0 de 4</span>
+      </div>
+      <div class="botoes"><button class="btn-mini" id="limparPecas">começar de novo</button></div>
+    </div>
+    <p class="destaque reveal">A pergunta de ouro pra conferir: a resposta que esse pedido vai puxar é <b>algo pra colar</b> ou <b>algo pra estudar</b>? Se dá pra colar, ainda é fornecedor. Curto demais volta com código; longo demais vira aula que você não pediu.</p>
+  </section>
+
+  <!-- 8 · fecho (12:48) -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">fim da etapa 1</div>
+      <h2 class="reveal">Sem uma linha de código, de propósito.</h2>
+      <p class="lede reveal">Fornecedor entrega o produto e não deixa nada; professor demora mais e deixa. As três regras: explicação antes do código, digitar em vez de colar, prever antes de rodar. Ela ajuda quando vem depois da tentativa e atrapalha quando vem antes.</p>
+      <p class="destaque reveal"><b>O que transfere:</b> o método não é sobre Java. Vale pra aprender qualquer linguagem, qualquer banco e qualquer ferramenta nova. Explicação antes do produto, mão no teclado, previsão antes de executar.</p>
+      <div class="gancho reveal">
+        <div class="gancho__rotulo">na próxima etapa</div>
+        <p class="gancho__texto">A mão vai pro teclado pela primeira vez. Mas antes da primeira linha, a série passa por onde o código é escrito, e por que o programa pesado que quase todo curso manda instalar no primeiro dia não vai ser usado aqui.</p>
+        <a class="btn-mini cheio gancho__botao" href="../../../site/javaweb.html">Ver a série →</a>
+      </div>
+      <p class="provocacao reveal">Fica a provocação: se a gente terceirizar todo esforço de resolver quebra-cabeça lógico, o que sobra da nossa capacidade de lidar com a frustração e ligar os pontos na vida real?</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-08.webp" alt="A mesma escrivaninha da abertura, agora com o caderno cheio da letra do próprio dono e a cadeira extra afastada">
+      <figcaption>ilustração · o mesmo caderno, agora escrito por você</figcaption>
+    </figure>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<!-- a base, nesta ordem; depois o que é deste episódio -->
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>
