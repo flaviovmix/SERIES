@@ -11,7 +11,7 @@
   position: relative;
   overflow: hidden;
   border-radius: var(--raio, 14px);
-  background: var(--papel-fundo, #14110d);
+  background: var(--surface-alt);
 }
 
 .troca__img {
@@ -36,9 +36,9 @@
   gap: 2px;
   margin-top: 10px;
   padding: 3px;
-  border: 1px solid var(--linha);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--papel-alto, rgba(255, 255, 255, .04));
+  background: var(--surface-alt);
 }
 
 .troca__botao {
@@ -56,8 +56,8 @@
 }
 .troca__botao:hover { color: var(--ink); }
 .troca__botao[aria-pressed="true"] {
-  background: var(--realce, #c98b3a);
-  color: var(--papel, #14110d);
+  background: var(--accent);
+  color: var(--surface);
 }
 
 .troca figcaption {

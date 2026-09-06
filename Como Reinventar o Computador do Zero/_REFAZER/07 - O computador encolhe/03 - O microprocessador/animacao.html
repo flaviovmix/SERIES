@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O microprocessador — Etapa 07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 07-03. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. A capa carrega o modelo 3D
+     do microprocessador, e a tela 5 reusa o ordens.css, que nasceu no 06-01: o
+     ciclo do processador e uma lista de ordens com o dedo. O audio nao anuncia o
+     modelo (foi gravado antes dele existir). -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/modelo-3d.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/troca-imagem.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/ordens.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-07.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="O%20chip%20que%20encolheu%20o%20computador.m4a" data-duracao="910"></audio>
+    <img class="tocador__capa" src="img/4004-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">O chip que encolheu o computador</div>
+      <div class="tocador__fonte">O computador encolhe · 03 · O microprocessador</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="910" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">15:10</span></div>
+  </div>
+  <div class="acoes">
+    <button class="btn-cabecalho" data-abre="modelo3d">🧊 abrir modelo 3D</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">o computador encolhe · episódio 03</div>
+      <h1 class="reveal">O micro&shy;processador</h1>
+      <p class="lede reveal">De <b>1969 a 1974</b>. O circuito integrado já juntou o circuito num pedaço só. Mas cada chip continua fazendo <b>uma coisa só</b>. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O que trava agora.</b> Um computador é uma placa grande lotada de chips diferentes, cada um desenhado do zero pro trabalho dele. Produto novo significa projeto de chip novo: caro, demorado, e só fecha a conta se vender milhões.</p>
+      </div>
+      <button class="btn-mini cheio clicavel capa-botao reveal" data-abre="modelo3d">abrir modelo 3D</button>
+    </div>
+    <figure class="capa-modelo reveal">
+      <!-- data-src, nao src: o modelo so liga enquanto a capa esta em cena -->
+      <iframe data-src="../../../_arquivos/modelos-3d/microprocessador.html" title="Modelo tridimensional de um microprocessador e da memória com a lista de ordens"></iframe>
+      <figcaption>Arraste pra girar · role pra aproximar</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1969</div>
+    <h2 class="reveal">A encomenda da calculadora</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A calculadora de mesa que gerou a encomenda · foto: Christian Bassow, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/calculadora-real.jpg" alt="Uma calculadora de mesa dos anos 1970, com teclado numérico e bobina de papel">
+        <figcaption>Uma família de calculadoras, cada modelo com funções diferentes · foto: Christian Bassow, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Uma fabricante japonesa procura uma empresa americana de chips: quer uma família inteira de calculadoras, e cada modelo pede um conjunto sob medida de <b>mais de dez pastilhas</b> diferentes.</p>
+    <div class="nota-cena reveal">e qualquer mudança depois, um botão a mais que fosse, obriga a jogar o chip fora e recomeçar o desenho do zero</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a contraproposta</div>
+      <h2 class="reveal">Um chip só, e a ordem na memória</h2>
+    <div class="ficha">
+      <div class="item reveal"><div class="rotulo">a virada</div><div class="texto">em vez de gravar cada função no silício, um chip genérico que saiba só o básico: somar, subtrair, comparar, mover número</div></div>
+      <div class="item reveal"><div class="rotulo">onde mora a função</div><div class="texto">a lista de ordens fica guardada numa pastilha de <b>memória separada</b></div></div>
+      <div class="item reveal"><div class="rotulo">a chave de fenda</div><div class="texto">sob medida é a chave de um parafuso só; o genérico é a chave de ponteiras trocáveis, e a ponteira é o programa</div></div>
+      <div class="item reveal"><div class="rotulo">o preço da troca</div><div class="texto">o chip genérico é mais lento que um sob medida. Compensa porque um modelo só atende o mercado inteiro</div></div>
+    </div>
+    <p class="lede reveal">O mesmo chip serve pra qualquer modelo. O que muda não é a peça: é o <b>conteúdo da memória</b>.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A chave de ponta fixa e a chave de ponteiras trocáveis · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/chave-ilustra.jpg" alt="Numa bancada, à esquerda uma chave de fenda de ponta fixa com um único parafuso; à direita uma chave com várias ponteiras trocáveis e vários parafusos">
+        <figcaption>Sempre a mesma chave. O que muda é a ponteira, que aqui é o programa</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">isso a série já viu</div>
+      <h2 class="reveal">A ideia é de 1948</h2>
+    <div class="ficha">
+      <div class="item reveal"><div class="rotulo">de onde vem</div><div class="texto">guardar a lista de ordens na memória, junto com os números, é a ideia de 1948</div></div>
+      <div class="item reveal"><div class="rotulo">o que mudou</div><div class="texto">só a escala: o que ocupava uma sala inteira agora cabe numa pastilha do tamanho de uma unha</div></div>
+      <div class="item reveal"><div class="rotulo">a cozinha</div><div class="texto">a memória guarda a receita, o processador lê linha por linha e faz. Prato novo é receita nova, não cozinha nova</div></div>
+      <div class="item reveal"><div class="rotulo">o balanço</div><div class="texto">a peça mudou três vezes: relé, válvula, transistor, chip. A ideia de como a máquina funciona <b>não muda desde 1948</b></div></div>
+    </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A receita no suporte e os ingredientes na ordem · reconstituição, não é foto de época">
+        <span class="selo">ilustração</span>
+        <img src="img/cozinha-ilustra.jpg" alt="Cozinha antiga com um caderno de receitas aberto num suporte de arame e os ingredientes já separados em tigelas na bancada">
+        <figcaption>Prato novo é receita nova. A cozinha continua a mesma</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step">
+    <div class="kicker reveal">por dentro</div>
+    <h2 class="reveal">Quatro movimentos, repetidos pra sempre</h2>
+    <div class="ordens reveal">
+      <div class="ordens__linha ordens__linha--vez"><span class="ordens__num">01</span><span class="ordens__texto">buscar a próxima ordem na memória</span><span class="ordens__dedo">← o dedo está aqui</span></div>
+      <div class="ordens__linha"><span class="ordens__num">02</span><span class="ordens__texto">entender o que a ordem manda fazer</span></div>
+      <div class="ordens__linha"><span class="ordens__num">03</span><span class="ordens__texto">fazer</span></div>
+      <div class="ordens__linha ordens__linha--alvo"><span class="ordens__num">04</span><span class="ordens__texto">avançar pra ordem seguinte, e recomeçar</span><span class="ordens__seta">volta pro 01</span></div>
+    </div>
+    <p class="lede reveal">É só isso, e ele não faz mais nada. Qualquer programa que já rodou em qualquer computador é <b>essa mesma voltinha</b>, repetida um número absurdo de vezes por segundo.</p>
+    <div class="nota-cena reveal">pra isso funcionar ele guarda o ponto onde está na lista, tem onde fazer a conta e escaninhos pra segurar os números do momento. Tudo isso já existia, espalhado pela placa: a novidade é estar tudo num pedaço só</div>
+    <p class="episodio__acao reveal" style="text-align:center;margin-top:18px">
+      <button class="btn-mini cheio clicavel" data-abre="modelo3d">abrir o modelo 3D e rodar o ciclo</button>
+    </p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1971</div>
+    <h2 class="reveal">Um processador inteiro num chip</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O primeiro microprocessador, na própria placa da calculadora · foto: MaltaGC, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/4004-real.jpg" alt="Placa de circuito da calculadora com o chip do microprocessador espetado no soquete">
+        <figcaption>Cerca de 2.300 transistores num pedaço que cabe folgado numa unha · foto: MaltaGC, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Não era vendido sozinho: vinha num pacote de <b>quatro pastilhas</b>, o processador mais as memórias. Trabalhava quatro bits por vez, o suficiente pra um algarismo decimal, porque era peça pensada pra calculadora.</p>
+    <div class="nota-cena reveal">pela primeira vez a parte que pensa deixou de ser uma placa inteira e virou um componente de prateleira, que se espeta num soquete</div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step">
+    <div class="kicker reveal">o detalhe comercial</div>
+    <h2 class="reveal">O direito de vender pra qualquer um</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">o contrato</div><div class="texto">a fabricante japonesa tinha pago pelo projeto e tinha exclusividade: a peça viveria só dentro das calculadoras dela</div></div>
+      <div class="item reveal"><div class="rotulo">o que destravou</div><div class="texto">a japonesa entra em dificuldade financeira e pede desconto no preço das peças</div></div>
+      <div class="item reveal"><div class="rotulo">o acordo</div><div class="texto">desconto dado em troca do direito de vender a peça pra outros clientes, desde que não fossem de calculadora</div></div>
+      <div class="item reveal"><div class="rotulo">por que importa</div><div class="texto">é isso que transforma um componente encomendado num <b>produto de catálogo</b> pro mundo todo</div></div>
+    </div>
+    <p class="lede reveal">Sem esse acordo, o microprocessador teria nascido e ficado preso dentro de um produto só.</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1972 e 1974</div>
+    <h2 class="reveal">A família de oito bits</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A versão de oito bits que virou padrão · foto: David290, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/8080-real.jpg" alt="Um microprocessador de oito bits em encapsulamento cerâmico, com duas fileiras de pernas">
+        <figcaption>Oito bits: números grandes de uma vez, e letra · foto: David290, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Com quatro bits a peça conta até quinze. Com oito, chega a 256 opções: já dá pra lidar com número grande de uma vez e com <b>caractere de texto</b>. É o suficiente pra rodar um computador de propósito geral.</p>
+    <div class="nota-cena reveal">e o preço despenca de milhares de dólares pra dezenas. Quando a parte que pensa custa dezenas de dólares, muda quem consegue construir um computador</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a grande inversão</div>
+      <h2 class="reveal">O valor sai do metal e entra no programa</h2>
+      <div class="ficha">
+      <div class="item reveal"><div class="rotulo">era assim</div><div class="texto">fazer um produto eletrônico novo era desenhar o circuito daquele produto</div></div>
+      <div class="item reveal"><div class="rotulo">virou assim</div><div class="texto">sai mais barato comprar o chip genérico do catálogo e <b>escrever um programa</b></div></div>
+      <div class="item reveal"><div class="rotulo">consequência 1</div><div class="texto">o hardware vira peça de prateleira: duas rivais compram a mesma, pelo mesmo preço</div></div>
+      <div class="item reveal"><div class="rotulo">consequência 2</div><div class="texto">se a peça é igual, a diferença mora no software: o programa vira o produto</div></div>
+    </div>
+      </div>
+      <p class="lede reveal">O software nasceu como tradutor, no episódio do compilador. É aqui que ele vira o lugar onde o <b>valor</b> mora.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O desenho das camadas do primeiro microprocessador · foto: Wolfgang Stief, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/layout-real.jpg" alt="O desenho das camadas do primeiro microprocessador ampliado, um mapa denso de trilhas e blocos">
+        <figcaption>O desenho que todo mundo passou a comprar pronto · foto: Wolfgang Stief, CC0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o efeito colateral</div>
+    <h2 class="reveal">Ele foi parar em tudo</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Processadores dentro de um aparelho que ninguém chama de computador · foto: Retired electrician, CC0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/embarcado-real.jpg" alt="Placa de controle de um aparelho doméstico, com chips processadores no meio dos componentes">
+          <img class="troca__img" src="img/em-tudo-ilustra.jpg" alt="Ilustração: caixa registradora, semáforo, balança, máquina de lavar e painel de carro, cada um aberto mostrando uma placa com um chip dentro">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Por fora não parece computador. Por dentro é um, rodando um programa fixo · foto: Retired electrician, CC0</span>
+          <span class="troca__aviso">Registradora, semáforo, balança, máquina de lavar, painel de carro: um computador pequeno em cada · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Genérica e barata, a peça saiu do laboratório de computador e foi parar em <b>caixa registradora, balança, semáforo, forno, máquina de lavar, painel e injeção de carro, brinquedo</b>.</p>
+    <div class="nota-cena reveal">a maior parte dos processadores já fabricados no mundo nunca esteve dentro de nada que a gente chame de computador. O uso visível é a menor parte</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1974</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o balanço da etapa</div>
+        <div class="desc">começou numa sala lotada de válvulas quentes e termina com a parte que pensa cabendo numa pastilha de dezenas de dólares. O computador inteiro cabe numa placa pequena e custa o preço de um salário, não o de um prédio</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que ainda falta</div>
+        <div class="desc">mesmo cabendo e custando pouco, ele continua sendo equipamento de empresa e de laboratório. Ninguém vende isso como objeto de casa, e ninguém sabe direito pra que uma pessoa comum usaria</div>
+      </div>
+    </div>
+    <p class="lede reveal">Se a peça já é barata e o equipamento já cabe numa mesa, <b>o que falta</b> pra essa máquina sair da sala da empresa e entrar na casa das pessoas?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/modelo-3d.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/troca-imagem.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

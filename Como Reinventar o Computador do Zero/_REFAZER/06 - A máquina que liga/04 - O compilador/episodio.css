@@ -12,12 +12,12 @@
   flex: 1 1 280px;
   min-width: 0;
   padding: 20px;
-  border: 1px solid var(--linha);
+  border: 1px solid var(--line);
   border-radius: 16px;
-  background: var(--papel-alto, rgba(255, 255, 255, .03));
+  background: var(--surface-alt);
 }
 
-.codigo__lado--forte { border-color: var(--realce, #c98b3a); }
+.codigo__lado--forte { border-color: var(--accent); }
 
 .codigo__rotulo {
   font-family: var(--fonte-mono);

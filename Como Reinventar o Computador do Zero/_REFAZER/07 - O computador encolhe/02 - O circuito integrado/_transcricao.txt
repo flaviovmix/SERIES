@@ -1,0 +1,383 @@
+# Transcricao automatica (faster-whisper small) - 17.2 min
+# Fonte: O fim da tirania dos números.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Iniciei dizendo, o circuito integrado.
+[00:02] É, esse é o nosso tema de hoje.
+[00:04] Exato.
+[00:05] Olá e bem-vindos a mais um mergulho profundo no nosso material.
+[00:09] E hoje a gente tem um recorte de tempo muito claro.
+[00:12] Muito específico mesmo.
+[00:13] Isso.
+[00:14] A gente vai cobrir exatamente de 1958 a 1965.
+[00:18] Um período curto, mais intenso.
+[00:21] Pois é.
+[00:21] Esse é o momento em que a tecnologia quase esbarrou no muro intransponível.
+[00:26] Um problema físico que quase parou tudo.
+[00:28] É, um muro bem real.
+[00:30] E para entender o peso enorme desse período,
+[00:33] a gente precisa lembrar rapidamente de onde o nosso último episódio parou.
+[00:36] Verdade, a transição das peças.
+[00:38] Sim, a gente viu a troca da velha válvula pelo transistor.
+[00:42] O transistor mudou completamente o jogo.
+[00:45] A peça ficou fria, ficou bem menor e passou a durar muito mais.
+[00:49] Muito mais tempo sem queimar.
+[00:50] Exatamente.
+[00:52] Pela primeira vez, a peça base podia encolher sem parar de funcionar.
+[00:56] A peça em si melhorou muito.
+[00:59] Mas tem um detalhe crucial que ainda limitava tudo.
+[01:04] Lembra daquela imagem da placa cheia de solda que a gente conversou da última vez?
+[01:09] Nossa, a placa cheia de solda, sim.
+[01:11] Imagina só um monte de pecinhas espetadas nessa placa.
+[01:15] Cada perna de cada peça solta exige um ponto de solda.
+[01:19] Feito à mão.
+[01:20] Feito à mão.
+[01:21] Quer dizer, o tamanho da peça encolheu muito.
+[01:24] Mas o jeito de montar continua exatamente o mesmo de antes.
+[01:27] Isso, cada transistor continuava sendo uma peça solta.
+[01:31] Sim, comprada uma a uma, tirada da caixinha com três perninhas de metal para um técnico e lá e soldar.
+[01:38] Esse é o ponto de partida perfeito.
+[01:40] A peça encolheu, mas a montagem, o trabalho físico não encolheu junto.
+[01:45] E antes da gente entrar fundo na gravidade disso,
+[01:48] a gente tem um aviso prático sobre como navegar no material de hoje.
+[01:51] Bem lembrado, a nossa explicação hoje acompanha uma página de animação que tem 11 telas no total.
+[01:58] 11 telas?
+[01:59] E isso.
+[02:00] E para quem está só ouvindo o áudio, seja no trânsito ou lavando louça, pode ficar tranquilo.
+[02:05] A conversa flui normalmente.
+[02:07] Dá para entender tudo.
+[02:08] Com certeza.
+[02:09] Mas para quem está com a página aberta na frente, a regra é simples.
+[02:12] Só vire a tela quando ouvir o meu pedido direto para fazer isso.
+[02:16] Tá legal.
+[02:17] A matemática pura mostra que esse método de montagem antigo era terrível, então aperte o próximo.
+[02:24] Um problema da solda fica insustentável quando a gente olha para os números reais, sabe?
+[02:28] Pensa em como a conta de um projeto grande fecha na fábrica.
+[02:32] Mas pera, a conta não deveria fechar mais fácil, já que os transtores novos eram tão melhores?
+[02:38] Na teoria sim.
+[02:39] Mas na prática do dia a dia, o problema era puramente a quantidade.
+[02:44] A gente precisa colocar números reais nisso.
+[02:47] Imagina um projeto de computador médio daquela época.
+[02:50] Tá, um projeto médio.
+[02:51] Isso, um que pede uns 10 mil transtores, por exemplo.
+[02:55] 10 mil peças não significam 10 mil soldas.
+[02:58] Ah, claro, tem as pernas.
+[02:59] Exato. Cada peça tem, no mínimo, três pernas.
+[03:03] E os capacitores e resistores em volta têm mais pernas ainda.
+[03:07] Nós estamos falando de tipo 30 ou 40 mil pontos de solda para uma única máquina.
+[03:12] Nossa, 40 mil e tudo feito por humanos?
+[03:15] Tudo feito por mãos humanas.
+[03:17] Um pingo de metal derretido por vez.
+[03:19] Um técnico respirando fumaça num galpão o dia inteiro.
+[03:23] E isso soa como um pesadelo logístico total.
+[03:26] A margem-dia humana nisso aí deve ser gigante.
+[03:28] Gigante.
+[03:29] E isso quebra a máquina de duas formas bem específicas.
+[03:32] Quer dizer, afeta a indústria de dois jeitos.
+[03:35] A primeira consequência é a confiabilidade.
+[03:38] A chance de quebrar.
+[03:39] Isso, uma solda sozinha feita por alguém bom, quase nunca falha.
+[03:44] Mas quando tem 40 mil soldas juntas numa mesma placa,
+[03:49] a chance estatística de todas funcionarem perfeitamente ao mesmo tempo despenga.
+[03:54] Cai muito.
+[03:56] Um fiozinho mal encostado derruba tudo, né?
+[03:58] Exatamente.
+[04:00] Um pingo de solda que solta com o tempo e a máquina paga.
+[04:03] É um defeito mecânico bobo que acaba com horas de processamento.
+[04:07] Sim.
+[04:08] E a segunda consequência é o custo.
+[04:10] A montagem passa a custar muito mais que as próprias peças.
+[04:13] Tem um limite humano óbvio.
+[04:15] Ninguém consegue soldar mil vezes mais rápido sem errar.
+[04:18] Não tem como.
+[04:18] Não tem.
+[04:19] Então o gargalo absoluto virou a mão humana.
+[04:22] Quer dizer, a época chamou isso de tirania dos números.
+[04:26] E faz sentido.
+[04:27] Quanto melhor o projeto no papel com mais peças,
+[04:30] mais impossível era de montar na vida real.
+[04:33] É, a tirania dos números.
+[04:35] Então, pra gente ver qual foi a ideia que resolveu isso, aperte o próximo.
+[04:40] Pra sair dessa tirania dos números, a engenharia teve que olhar pro material.
+[04:45] Um circuito básico tem o transistor, tem o resistor e o capacitor.
+[04:50] Cada um na sua embalagem.
+[04:51] E isso, peças soltas.
+[04:53] Deixa eu ver se a dedução lógica bate aqui.
+[04:55] O transistor, o resistor e o capacitor.
+[04:57] Todos eles podem ser feitos usando o material sem me condutar.
+[05:00] Certo.
+[05:00] Certo.
+[05:01] A base é a mesma.
+[05:02] Então, se eles usam o mesmo material, não poderiam ser fabricados no mesmo pedaço de material,
+[05:07] já ligados por dentro, sem fio nenhum separando?
+[05:10] Essa é a grande ideia.
+[05:11] E aqui a gente precisa fazer uma claração importante pra quem acompanha a gente.
+[05:15] Não se trata de colocar as peças mais perto umas das outras na placa.
+[05:20] Um é só apertar tudo num canto só.
+[05:21] De jeito nenhum.
+[05:23] É parar de ter peças separadas.
+[05:25] O circuito inteiro vira uma coisa só.
+[05:27] Bloco único.
+[05:29] E se a ligação já nasce lá dentro da estrutura, o problema é de soldar dezenas de milhares
+[05:35] de perninhas.
+[05:36] Simplesmente deixa desistir, né?
+[05:38] Deixa desistir por completo.
+[05:40] Mas me tira uma dúvida.
+[05:42] Se essa ideia parece tão óbvia agora, por que demorou tanto pra acontecer?
+[05:47] Havia alguma barreira química na época?
+[05:49] Hum, na verdade foi um bloqueio de mentalidade mesmo.
+[05:53] A engenharia achava que usar o mesmo material pra tudo ia gerar uma peça ruim.
+[05:58] Como assim?
+[05:59] Tipo, fazer um resistor com o mesmo semicondutor do transistor gerava um resistor de qualidade
+[06:04] inferior.
+[06:05] Na cabeça deles, não fazia sentido fabricar uma peça pior de propósito.
+[06:09] Me entendi.
+[06:10] Eles olhavam pra peça isolada e não pro sistema inteiro.
+[06:14] Exatamente.
+[06:15] Mas a troca compensa muito se eliminar completamente 40 mil pontos de solda manuais.
+[06:20] Com certeza compensa.
+[06:22] Pra ver quando isso tomou forma no mundo real pela primeira vez, aperte o próximo.
+[06:27] Aí a gente chega no ano de 1958.
+[06:31] O cenário é um laboratório da Texas Instruments.
+[06:35] O ano de 1958 é um marco histórico.
+[06:39] Foi lá que um circuito simples funcionou inteiro dentro de um pedacinho de germânio.
+[06:44] Isso mesmo, germânio.
+[06:46] Eles usaram uma lasca desse material e o sinal funcionou certinho lá dentro.
+[06:52] A teoria funcionava fora do papel.
+[06:54] Sim, provou que era possível.
+[06:56] Mas olha, a gente precisa olhar com cuidado pro método que eles usaram ali na bancada.
+[07:01] As partes principais nasceram no mesmo pedaço.
+[07:04] Sim.
+[07:05] Aham, nasceram juntas.
+[07:06] Mas as ligações entre essas partes ainda precisavam de uma ponte por fora.
+[07:09] E eles usaram fiozinhos de ouro finíssimos, soldados por cima.
+[07:14] A mão.
+[07:15] É, a prova de conceito funcionou, mas a solda ainda tava lá.
+[07:18] Estava lá e era ainda mais difícil de fazer, né?
+[07:22] Fios de ouro num microscópio.
+[07:23] Exato.
+[07:25] Era uma solda menor e muito mais delicada.
+[07:28] Resolveu a teoria.
+[07:29] Mas ninguém conseguiria fabricar isso aos milhares numa esteira.
+[07:33] Ninguém mesmo.
+[07:34] Pra ver como isso virou um produto comercial de verdade, aperte o próximo.
+[07:39] O avanço comercial de verdade vem no ano seguinte, em 1959, na empresa Fairchild.
+[07:45] Eles detalham dois passos que mudam tudo.
+[07:49] 1959.
+[07:50] E qual foi o primeiro passo?
+[07:51] O primeiro passo usa aquela analogia da casquinha de vidro que a gente tem no roteiro.
+[07:57] Eles notaram que aquecendo o silício, ele cria uma camada de óxido protetora.
+[08:01] E esse óxido é vidro, na prática.
+[08:04] É vidro puro e o vidro é um isolante.
+[08:07] Essa casquinha de vidro serve de chão pra construir por cima.
+[08:11] Um chão isolado.
+[08:12] E aí entra o segundo passo, né?
+[08:13] Em cima desse chão de vidro, as ligações são impressas.
+[08:18] Impressas diretamente.
+[08:19] Não tem fio de ouro, não tem pinça, não tem solda.
+[08:22] É um desenho metálico fino, impresso, ali.
+[08:26] Exatamente.
+[08:27] Nos pontos certos, o metal desce por uns buraquinhos no vidro e encosta no silício.
+[08:33] É brilhante.
+[08:34] Quer dizer que não tem solda manual.
+[08:36] O chip não é montado, ele é fabricado inteiro de uma vez só.
+[08:40] De uma vez só.
+[08:41] Na mesma fornada.
+[08:42] Pra entender o peso e a relação desses dois eventos, aperte o próximo.
+[08:46] A gente precisa analisar esses dois eventos mantendo um equilíbrio justo.
+[08:50] O primeiro evento, no laboratório, provou que o circuito inteiro funciona num pedaço
+[08:54] só.
+[08:55] Deu choque de realidade de que era possível.
+[08:57] Isso.
+[08:58] O segundo laboratório mostrou como fabricar isso aos milhares com a técnica das camadas
+[09:02] impressas.
+[09:03] E esse é o modelo que usamos hoje.
+[09:05] O modelo de impressão, mas o segundo só avançou tão rápido porque o primeiro provou
+[09:09] a viabilidade da ideia antes.
+[09:11] Com certeza.
+[09:12] Um depende do outro na linha do tempo.
+[09:14] E claro, depois disso, as empresas brigaram pesado na justiça pelas patentes.
+[09:19] Brimearam muito.
+[09:20] Mas o mercado estava pressado.
+[09:22] Eles acabaram fazendo um acordo, licenciando a tecnologia uma pra outra.
+[09:26] Sim, fizeram um acordo.
+[09:28] Até porque ter a ideia na bancada e fazê-la ser fabricável em massa são trabalhos
+[09:32] bem diferentes.
+[09:33] Isso é um sim.
+[09:34] E tem um episódio extra só sobre as pessoas por trás desses dois momentos de invenção
+[09:39] pra quem quiser ir fundo um assunto.
+[09:40] É uma história cheia de detalhes.
+[09:43] Pois é.
+[09:44] E entender como eles desenhavam coisas tão pequenas sem usar ferramentas mecânicas aperte
+[09:48] o próximo.
+[09:49] O nome desse processo é fotolitografia.
+[09:52] O nome é complicado, mas a lógica é desenhar com luz.
+[09:57] Desenhar trilhas de metal com luz.
+[09:59] Me explica isso melhor.
+[10:00] A gente pode usar a analogia do slide projetado aqui.
+[10:03] Sabe o slide projetado numa parede?
+[10:05] Sim.
+[10:06] Aquele de luz forte.
+[10:07] Isso.
+[10:08] O cristal recebe um material sensível à luz.
+[10:11] Aí o desenho do circuito inteiro é jogado ali em cima como um slide projetado.
+[10:16] Com uma luz bem forte.
+[10:17] Exato.
+[10:18] A luz muda a química de onde ela bate.
+[10:21] Depois a peça toma um banho químico que derrete só o material que a luz marcou, camada
+[10:26] por camada.
+[10:27] É como revelar uma foto.
+[10:29] O banho químico tira o que precisa sair e deixa o desenho pronto.
+[10:33] Mas, financeiramente, isso é uma virada enorme.
+[10:36] Sim, a virada econômica.
+[10:37] Porque se a gente pensar no slide projetado, projetar uma foto pequena ou grande na parede
+[10:43] não dá mais trabalho para a lâmpada.
+[10:44] Nenhum trabalho a mais.
+[10:46] E não custa mais caro.
+[10:47] Como tudo é feito de uma vez com luz e banho químico, desenhar 200 cópias menores
+[10:52] ou 20 cópias grandes no mesmo cristal dá exatamente no mesmo.
+[10:57] O custo de fabricação é o mesmo.
+[10:58] A luz faz o trabalho no mesmo instante.
+[11:01] Ou seja, encolher a peça deixou de custar mais caro.
+[11:05] A redução de tamanho ficou barata.
+[11:07] Para ver a regra que isso quebrou, aperte o próximo.
+[11:11] E quebrou uma regra histórica, viu?
+[11:13] Na época das engrenagens, criar uma peça menor era sinônimo de peça frágil e muito
+[11:18] cara.
+[11:19] Dava muito trabalho mecânico.
+[11:21] Muito.
+[11:22] Mas agora, com silício e a luz, a regra inverteu completamente.
+[11:26] A peça menor virou a melhor opção.
+[11:28] E tem três benefícios claros nisso, né?
+[11:30] Três benefícios essenciais.
+[11:32] Primeiro, o ganho de velocidade.
+[11:35] Com a peça menor, o caminho da corrente é mais curto.
+[11:38] Logo, ela fica mais rápida.
+[11:39] Faz sentido.
+[11:40] O caminho é curto, o sinal chega antes.
+[11:42] Exato.
+[11:43] Segundo o benefício, ela gasta menos energia.
+[11:46] Tem menos material físico para carregar com eletricidade, então a bateria dura mais e
+[11:51] a peça esquenta menos.
+[11:52] Menos calor é crucial para não derreter tudo.
+[11:54] E o terceiro?
+[11:55] O terceiro é o custo.
+[11:57] Se o chip é fisicamente menor, cabe muito mais chip no mesmo cristal de silício
+[12:02] que entra no forno.
+[12:03] Fica mais barato fabricar.
+[12:05] Essa é a conclusão central, quer dizer, o ponto mais vital desse episódio.
+[12:09] A peça menor fica mais rápida, gasta menos energia e fica mais barata tudo ao mesmo
+[12:15] tempo.
+[12:16] Tudo junto, sem sacrifício nenhum.
+[12:18] E é isso que explica todo o futuro da tecnologia que a série ainda vai cobrir.
+[12:22] Para a gente ver quem pagou por isso logo no início, aperte o próximo.
+[12:26] A teoria de que ficava mais barato é linda, mas a realidade financeira dos primeiros anos
+[12:31] foi um pouco diferente.
+[12:32] Eu ia te perguntar isso, se era tão bom, tão pequeno e na teoria mais barato, o mercado
+[12:38] todo comprou logo de cara, né?
+[12:40] Não mesmo.
+[12:41] A resposta é não.
+[12:43] No começo, esse processo do banho químico era caríssimo de acertar, perdia-se muito
+[12:47] material.
+[12:48] Ah, o refino demorou.
+[12:49] Demorou.
+[12:50] Então o preço final de cada chip que saía funcionando era bem alto.
+[12:55] Para uma empresa comum que fazia rádios civis, soldar a mão ainda saía muito
+[12:59] mais barato.
+[13:00] Entendi.
+[13:01] O mercado civil preferia a placa velha, mas quem foi o primeiro cliente, então?
+[13:07] Quem comprou e pagou caro no começo?
+[13:09] Foram os programas militares e espaciais.
+[13:12] Eles assinaram o cheque.
+[13:13] Nossa, faz todo sentido prático.
+[13:15] Sim, pensa num míssil ou num foguete espacial subindo para o espaço.
+[13:19] Ali o peso custa uma fortuna incombustível, né?
+[13:22] Cada grama a menos importa.
+[13:24] Exatamente.
+[13:25] E tem a questão da vibração.
+[13:27] Num lançamento, a placa antiga, com 40 mil soldas, corria o risco de rachar algum ponto
+[13:32] de solda com a trepidação.
+[13:34] E não dá para parar no ar e consertar o fio com uma pinça, né?
+[13:37] Não dá.
+[13:38] Por isso, para eles, o preço altíssimo compensava a confiabilidade e a leveza.
+[13:43] Eles precisavam da peça sólida.
+[13:45] E assim comenda militar garantida fez a indústria ter dinheiro para melhorar o processo e
+[13:51] aí o preço despencou para o resto do mundo civil.
+[13:54] O clássico é feito de escala pagando o desenvolvimento inicial.
+[13:57] Para ver o momento em que a indústria notou esse ritmo, aperte o próximo.
+[14:01] Aí nós chegamos no ano de 1965 e foi aí que alguém notou um padrão gráfico no meio de
+[14:08] tudo isso.
+[14:09] 1965.
+[14:10] O que essa pessoa notou exatamente?
+[14:13] Foi alguém muito bem posicionado na indústria.
+[14:16] Ele observou que o número de componentes que cabiam numa única pastia de silício
+[14:20] dobrava em intervalos de tempo bem regulares.
+[14:24] Isso.
+[14:25] A cada tempinho cabia o dobro de peças.
+[14:29] Mas é bom frisar.
+[14:30] Isso era só uma observação de mercado, não era uma regra da física.
+[14:34] Não tinha uma lei da natureza mandando dobrar.
+[14:37] Nenhuma lei.
+[14:38] Era só um gráfico do passado recente.
+[14:40] Mas a reação da indústria foi impressionante.
+[14:44] A observação dele virou a meta, uma profecia mesmo.
+[14:47] Virou o calendário de todo mundo.
+[14:49] Sim.
+[14:50] Féricas começaram a comprar equipamentos só para bater essa meta de dobrar e os clientes
+[14:55] passaram a exigir esse número exato nos contratos.
+[14:58] Guiou a economia do silício.
+[15:00] E a gente tem um episódio extra dedicado somente a essa curva e até quando ela funcionou no
+[15:05] mercado, em detalhes.
+[15:07] É uma dinâmica muito interessante de ver acontecer.
+[15:10] Para a gente conferir como o mundo ficou com tudo isso, aperte o próximo.
+[15:13] Chegamos no final do nosso recorte, estamos em 1965.
+[15:18] O circuito integrado já é super real.
+[15:20] Ele encola sem ficar mais caro e o mercado já entendeu essa matemática.
+[15:25] A velha tirania dos números sumiu.
+[15:28] Sumiu.
+[15:29] A solda parou de seu limite.
+[15:31] Mas a evolução da máquina do computador em si ainda tinha uma limitação bem forte
+[15:36] nessa época.
+[15:37] Qual limitação?
+[15:38] Uma limitação de flexibilidade.
+[15:40] Cada chip que sai da fábrica, nesse ano de 1965, faz apenas uma única coisa
+[15:46] ingessada.
+[15:47] Só um tipo de função.
+[15:48] Isso.
+[15:49] Um modelo de chip só faz contas de soma.
+[15:52] Você usa o outro chip diferente para guardar memória, outro diferente
+[15:55] para o relógio.
+[15:56] Entendi.
+[15:57] Então mesmo usando chips pequenos e sem soldas internas, um computador
+[16:02] continua sendo uma placa imensa cheia de dezenas de chips diferentes
+[16:05] interligados.
+[16:06] Exato.
+[16:07] Peças especialistas trabalhando juntas.
+[16:10] E se você quiser inventar uma máquina nova que faça um trabalho
+[16:13] novo?
+[16:14] Você precisa desenhar chips físicos totalmente novos para fazer aquele
+[16:17] trabalho.
+[16:18] O hardware manda no que a máquina faz.
+[16:21] O hardware ainda é chefe.
+[16:23] Isso deixa uma pergunta final muito provocativa no ar para quem está
+[16:27] acompanhando a gente.
+[16:28] Uma pergunta de arquitetura?
+[16:30] Isso.
+[16:31] A engenharia conseguiu colocar as peças todas dentro de um cristal de
+[16:34] silício.
+[16:35] Resolveu a fiação solta.
+[16:37] Mas a placa continua cheia de chips teimosos que só fazem uma
+[16:41] função cada.
+[16:43] Peças dedicadas?
+[16:44] Então.
+[16:45] E se, em vez de criar e fabricar um chip diferente para cada
+[16:48] trabalho possível no mundo, existisse um único chip.
+[16:52] Sempre o mesmo chip impresso, mas capaz de fazer absolutamente
+[16:56] qualquer trabalho, dependendo apenas da ordem escrita que a gente der para
+[17:00] ele.
+[17:01] Um chip universal.
+[17:02] Exatamente.
+[17:03] Como seria uma placa que só precisasse de um único chip ditando o
+[17:07] ritmo de tudo?
+[17:08] Pensa nessa imagem e a gente se vê na próxima etapa.
+[17:11] Até lá.

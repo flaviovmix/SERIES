@@ -1,0 +1,19 @@
+/* episodio 07-03 — o titulo que nao cabe
+
+   "Microprocessador" e uma palavra so, de dezesseis letras. O h1 da base
+   (telas.css) vai ate 72px no desktop, e nessa altura a palavra e mais larga
+   que a coluna de texto da capa: ela vazava pra cima da foto. Palavra unica nao
+   quebra sozinha.
+
+   A quebra vem de um hifen opcional (&shy;) no meio da palavra, no HTML: assim o
+   ponto de corte e escolhido por mim (micro-processador) e nao pelo navegador,
+   que aqui nao tem dicionario de portugues. O break-word e so a rede de
+   seguranca, pro caso de uma tela ainda mais estreita.
+
+   So deste episodio: os titulos curtos dos outros continuam com a regra da base. */
+
+.step--capa h1 {
+  font-size: clamp(32px, 4.4vw, 56px);
+  hyphens: manual;
+  overflow-wrap: break-word;
+}

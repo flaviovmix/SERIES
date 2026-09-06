@@ -1,0 +1,54 @@
+O MICROPROCESSADOR - CONTEXTO
+=============================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco
+ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1969 a
+1974.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega o
+que a proxima peca precisa. Todo aprofundamento (uma peca por dentro, a vida de um
+inventor, um conceito esmiucado) mora numa trilha separada de episodios extras,
+avulsos. Este episodio e da trilha principal e nao conta biografia de ninguem.
+
+Onde a serie estava: o episodio anterior juntou o circuito inteiro num pedaco so de
+cristal e mostrou que, a partir do circuito integrado, encolher ficou barato. Mas os
+chips daquela epoca eram especializados: cada um fazia uma coisa. Um computador
+continuava sendo uma placa grande com dezenas de chips diferentes, cada um desenhado
+do zero pro trabalho dele, e maquina nova pedia projeto de chip novo.
+
+Este episodio responde, em cinco passos:
+
+1. A encomenda que forcou a questao. Em 1969 uma fabricante japonesa de calculadoras
+   encomenda um conjunto de chips sob medida pra uma familia de calculadoras: cada
+   modelo com a sua funcao gravada no silicio. Era muito projeto pra pouca venda, e
+   qualquer mudanca de modelo pedia chip novo.
+2. A contraproposta: em vez de gravar a funcao no silicio, fazer UM chip que sabe
+   fazer operacoes gerais e guardar numa memoria separada a lista de ordens que diz
+   o que fazer. O mesmo chip serve pra qualquer modelo; o que muda e o conteudo da
+   memoria.
+3. Essa ideia nao e nova, e e por isso que ela funciona: e o programa que mora na
+   memoria, de 1948, so que agora inteiro dentro de uma pastilha. O que a serie
+   montou em salas inteiras cabe numa peca do tamanho de uma unha.
+4. Em 1971 sai a peca: um processador completo num unico chip, vendido junto com as
+   pastilhas de memoria que o acompanham. Ele trabalha com quatro bits de cada vez e
+   tem cerca de dois mil e trezentos transistores.
+5. O que muda em seguida: a empresa negocia o direito de vender essa peca pra
+   qualquer um, e em poucos anos aparece a familia de oito bits que vira padrao. O
+   preco cai de milhares para dezenas de dolares.
+
+O ponto que o episodio precisa deixar claro, porque inverte a economia de tudo que
+vem depois: passou a sair mais barato comprar um chip generico e ESCREVER um
+programa do que desenhar um chip novo pra cada produto. O hardware vira uma peca de
+prateleira, igual pra todo mundo, e a diferenca entre um produto e outro passa a
+morar no software. E, como a peca e generica e barata, ela vai parar em um monte de
+coisa que nao e computador: caixa registradora, semaforo, balanca, forno, painel de
+carro.
+
+O que ainda falta no fim do episodio: o computador inteiro ja cabe numa placa
+pequena e custa o preco de um salario, nao o de um predio. Mas ele continua sendo
+equipamento de empresa e de laboratorio. Ninguem ainda vende isso como objeto pra
+uma pessoa ter em casa.
+
+Use este contexto apenas como apoio.

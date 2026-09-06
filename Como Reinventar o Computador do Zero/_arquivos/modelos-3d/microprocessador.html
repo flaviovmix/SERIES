@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microprocessador 3D — busca, entende, faz, avança</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> MICROPROCESSADOR 3D</div>
+  <div>EXTRA · A PEÇA POR DENTRO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">A pastilha da esquerda é a <b>memória</b>, com a lista de ordens. A da direita é o <b>processador</b>: ele busca a ordem, entende, faz e avança. Clique nele pra dar <b>um passo</b>. Arraste fora pra girar.</div>
+    <div class="linha-total estado">
+      <span class="num mono" id="valor">1</span>
+      <span class="meta mono" id="passo">parado, esperando a primeira ordem</span>
+    </div>
+    <div class="linha-total">
+      <span class="casas mono" id="ficha"><b>RECEITA</b> somar 1 · <b>ORDENS</b> 0</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio largo" id="btnRodar">rodar sozinho</button>
+      <button class="btn-mini largo" id="btnPasso">dar um passo</button>
+      <button class="btn-mini largo" id="btnReceita">trocar a receita da memória</button>
+      <button class="btn-mini largo" id="btnZerar">começar de novo</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elValor = document.getElementById('valor');
+const elPasso = document.getElementById('passo');
+const elFicha = document.getElementById('ficha');
+const btnRodar = document.getElementById('btnRodar');
+
+const palco = montaPalco({
+  alvo: [0, 0.95, 0],
+  camPos: [0.4, 4.6, 11.5],
+  meiaLarguraDesktop: 5.2,
+  meiaLarguraMobile: 4.3,
+  distMin: 10,
+  orbitaMin: 5,
+});
+const { scene, camera, renderer, materiais, bloco, cilindro, criaRotulo, redimensiona, inicia, aoClicar, medidaDeQA } = palco;
+
+// ---------- materiais ----------
+const ceramica = new THREE.MeshStandardMaterial({ color: 0x33302e, roughness: 0.72, envMapIntensity: 0.3 });
+const ouro = materiais.metal(0xd6a544, { roughness: 0.28 });
+const lata = materiais.metal(0x9aa0a8, { roughness: 0.4 });
+// os quatro blocos do ciclo: apagados sao escuros e acendem quando e a vez deles
+const blocoMat = () => new THREE.MeshStandardMaterial({
+  color: 0x4d5a63, roughness: 0.5, metalness: 0.2,
+  emissive: 0x59d2ff, emissiveIntensity: 0,
+});
+const ordemMat = () => new THREE.MeshStandardMaterial({
+  color: 0x6c757d, roughness: 0.55,
+  emissive: 0xffb24d, emissiveIntensity: 0,
+});
+
+const bancada = bloco(9.6, 0.4, 4.4, materiais.madeiraEscura, 0.08);
+bancada.position.y = 0.2;
+scene.add(bancada);
+
+const Y = 0.4;
+function pernas(grupo, larg, prof, n) {
+  // as perninhas do encapsulamento, so pra peca parecer um chip de verdade
+  for (let i = 0; i < n; i++) {
+    const t = -larg / 2 + 0.22 + (i / (n - 1)) * (larg - 0.44);
+    [-1, 1].forEach((lado) => {
+      const p = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.16, 0.05), lata);
+      p.position.set(t, Y + 0.08, lado * (prof / 2 + 0.04));
+      p.castShadow = true;
+      grupo.add(p);
+    });
+  }
+}
+
+// ================================================================ a memoria
+// A lista de ordens mora FORA do processador: e isso que faz a mesma peca servir
+// pra qualquer produto. Trocar de tarefa e trocar o conteudo daqui.
+const X_MEM = -2.9;
+const memoria = new THREE.Group();
+memoria.position.set(X_MEM, 0, 0);
+scene.add(memoria);
+
+const corpoMem = bloco(2.6, 0.34, 2.6, ceramica, 0.04);
+corpoMem.position.y = Y + 0.17;
+memoria.add(corpoMem);
+pernas(memoria, 2.6, 2.6, 5);
+
+const N_ORDENS = 4;
+const linhasOrdem = [];
+for (let i = 0; i < N_ORDENS; i++) {
+  const barra = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.07, 0.34), ordemMat());
+  barra.position.set(0.12, Y + 0.36, -0.85 + i * 0.57);
+  barra.castShadow = true;
+  memoria.add(barra);
+  linhasOrdem.push(barra);
+}
+// o dedo que aponta a ordem da vez
+const dedo = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.3, 4), ouro);
+dedo.rotation.z = -Math.PI / 2;
+dedo.position.set(-1.05, Y + 0.38, -0.85);
+memoria.add(dedo);
+
+// ================================================================ o processador
+const X_CPU = 2.9;
+const cpu = new THREE.Group();
+cpu.position.set(X_CPU, 0, 0);
+scene.add(cpu);
+
+const corpoCpu = bloco(3.0, 0.36, 2.8, ceramica, 0.04);
+corpoCpu.position.y = Y + 0.18;
+cpu.add(corpoCpu);
+pernas(cpu, 3.0, 2.8, 8);
+
+// os quatro movimentos, um bloquinho cada, na ordem em que acontecem
+const PASSOS = [
+  { nome: 'busca', desc: 'busca a ordem na memória' },
+  { nome: 'entende', desc: 'entende o que ela manda fazer' },
+  { nome: 'faz', desc: 'faz' },
+  { nome: 'avança', desc: 'avança pra ordem seguinte' },
+];
+const blocos = PASSOS.map((p, i) => {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(0.58, 0.1, 0.58), blocoMat());
+  m.position.set(-1.0 + i * 0.68, Y + 0.41, i % 2 ? 0.42 : -0.42);
+  m.castShadow = true;
+  cpu.add(m);
+  return m;
+});
+// a trilha de ouro que costura os quatro
+for (let i = 0; i < blocos.length - 1; i++) {
+  const a = blocos[i].position, b = blocos[i + 1].position;
+  const meio = a.clone().add(b).multiplyScalar(0.5);
+  const curva = new THREE.QuadraticBezierCurve3(a.clone(), meio.setY(meio.y + 0.18), b.clone());
+  const t = new THREE.Mesh(new THREE.TubeGeometry(curva, 20, 0.035, 8, false), ouro);
+  cpu.add(t);
+}
+
+// ================================================================ o mostrador
+// O resultado da conta, pra troca de receita ficar visivel: mesma peca, numero
+// diferente. Uma textura de canvas redesenhada a cada mudanca.
+const painelCv = document.createElement('canvas');
+painelCv.width = 512; painelCv.height = 256;
+const painelCx = painelCv.getContext('2d');
+const painelTex = new THREE.CanvasTexture(painelCv);
+painelTex.anisotropy = 4;
+function pintaMostrador(valor, receita) {
+  painelCx.fillStyle = '#1b1f23';
+  painelCx.fillRect(0, 0, 512, 256);
+  painelCx.fillStyle = '#ffb24d';
+  painelCx.textAlign = 'center';
+  painelCx.font = '600 128px "IBM Plex Mono", monospace';
+  painelCx.fillText(String(valor), 256, 150);
+  painelCx.fillStyle = '#8d949b';
+  painelCx.font = '600 34px "IBM Plex Mono", monospace';
+  painelCx.fillText(receita, 256, 215);
+  painelTex.needsUpdate = true;
+}
+// A moldura e um bloco de ceramica; a tela e um plano deitado por cima dela.
+// Textura na face de cima de um Box sai espelhada, e acertar isso na base de
+// flip/rotacao e chute: no plano a orientacao e previsivel.
+const mostrador = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.14, 1.4), ceramica);
+mostrador.position.set(0, Y + 0.07, 1.25);
+mostrador.castShadow = true;
+mostrador.receiveShadow = true;
+scene.add(mostrador);
+
+const tela = new THREE.Mesh(
+  new THREE.PlaneGeometry(2.5, 1.15),
+  // fosco e quase sem reflexo do ambiente: liso demais, o fundo escuro da tela
+  // ficava cinza-claro e o numero sumia. O emissiveMap acende so o que esta
+  // desenhado, entao o texto brilha e o fundo continua preto.
+  new THREE.MeshStandardMaterial({
+    map: painelTex, roughness: 0.9, metalness: 0, envMapIntensity: 0.12,
+    emissive: 0xffffff, emissiveMap: painelTex, emissiveIntensity: 0.75,
+  }),
+);
+// so deitado: o topo do desenho fica pro fundo do palco, que e como se le um
+// papel na mesa de quem olha de frente
+tela.rotation.x = -Math.PI / 2;
+tela.position.set(0, Y + 0.145, 1.25);
+scene.add(tela);
+
+// ---------- rotulos ----------
+const rotulos = [
+  ['memória: a lista de ordens', new THREE.Vector3(X_MEM, 2.2, 0)],
+  ['processador', new THREE.Vector3(X_CPU, 2.2, 0)],
+];
+const sprites = rotulos.map(([texto, pos]) => {
+  const s = criaRotulo(texto);
+  s.position.copy(pos);
+  scene.add(s);
+  return s;
+});
+
+// ================================================================ mecanica
+// Duas receitas, o MESMO processador. E o conteudo da memoria que decide o que a
+// maquina faz: e o ponto inteiro do episodio.
+const RECEITAS = [
+  { nome: 'somar 1', ordens: ['pegar o número', 'somar 1', 'guardar', 'voltar pro começo'], aplica: (v) => v + 1 },
+  { nome: 'dobrar', ordens: ['pegar o número', 'somar ele mesmo', 'guardar', 'voltar pro começo'], aplica: (v) => v * 2 },
+];
+
+const estado = { receita: 0, valor: 1, ordem: 0, passo: -1, rodando: false, executadas: 0 };
+let relogio = 0;
+const DURACAO = 0.42; // segundos por movimento
+
+function pintaHud() {
+  elValor.textContent = String(estado.valor);
+  elPasso.textContent = estado.passo < 0
+    ? 'parado, esperando a primeira ordem'
+    : PASSOS[estado.passo].desc;
+  elFicha.innerHTML = `<b>RECEITA</b> ${RECEITAS[estado.receita].nome} · <b>ORDENS</b> ${estado.executadas}`;
+  btnRodar.textContent = estado.rodando ? 'parar' : 'rodar sozinho';
+  pintaMostrador(estado.valor, RECEITAS[estado.receita].nome);
+}
+
+function daUmPasso() {
+  estado.passo = (estado.passo + 1) % PASSOS.length;
+  if (estado.passo === 2) {
+    // "faz": e aqui que a ordem da memoria vira resultado
+    estado.valor = RECEITAS[estado.receita].aplica(estado.valor);
+    if (estado.valor > 9999) estado.valor = 1;
+  }
+  if (estado.passo === 3) {
+    estado.executadas++;
+    estado.ordem = (estado.ordem + 1) % N_ORDENS;
+  }
+  pintaHud();
+}
+
+function rodar(liga) {
+  estado.rodando = liga;
+  relogio = 0;
+  legenda.innerHTML = liga
+    ? 'É só isso, e ele não faz mais nada: <b>busca, entende, faz, avança</b>. Um computador é essa mesma voltinha, repetida um número absurdo de vezes por segundo.'
+    : 'A pastilha da esquerda é a <b>memória</b>, com a lista de ordens. A da direita é o <b>processador</b>. Clique nele pra dar <b>um passo</b>.';
+  pintaHud();
+}
+
+function trocaReceita() {
+  estado.receita = (estado.receita + 1) % RECEITAS.length;
+  estado.valor = 1;
+  estado.executadas = 0;
+  estado.ordem = 0;
+  estado.passo = -1;
+  legenda.innerHTML = `Trocou a <b>receita</b>, não a peça. O mesmo processador agora <b>${RECEITAS[estado.receita].nome}</b>: o que muda de um produto pro outro é o conteúdo da memória.`;
+  pintaHud();
+}
+
+function zerar() {
+  estado.valor = 1;
+  estado.executadas = 0;
+  estado.ordem = 0;
+  estado.passo = -1;
+  estado.rodando = false;
+  pintaHud();
+}
+
+// ---------- controles ----------
+btnRodar.addEventListener('click', () => rodar(!estado.rodando));
+document.getElementById('btnPasso').addEventListener('click', () => { rodar(false); daUmPasso(); });
+document.getElementById('btnReceita').addEventListener('click', trocaReceita);
+document.getElementById('btnZerar').addEventListener('click', zerar);
+aoClicar([corpoCpu, ...blocos], () => { rodar(false); daUmPasso(); });
+aoClicar([corpoMem, ...linhasOrdem], trocaReceita);
+window.addEventListener('keydown', (e) => {
+  if (e.key === ' ') { e.preventDefault(); rodar(!estado.rodando); }
+});
+
+// ---------- animacao ----------
+inicia((dt) => {
+  if (estado.rodando) {
+    relogio += dt;
+    if (relogio >= DURACAO) { relogio -= DURACAO; daUmPasso(); }
+  }
+
+  // o bloco da vez acende; os outros apagam
+  blocos.forEach((b, i) => {
+    const alvo = i === estado.passo ? 2.2 : 0;
+    b.material.emissiveIntensity += (alvo - b.material.emissiveIntensity) * Math.min(1, dt * 12);
+    const alturaAlvo = Y + 0.41 + (i === estado.passo ? 0.12 : 0);
+    b.position.y += (alturaAlvo - b.position.y) * Math.min(1, dt * 10);
+  });
+
+  // a ordem da vez acende na memoria, e o dedo desliza ate ela
+  linhasOrdem.forEach((l, i) => {
+    const alvo = i === estado.ordem && estado.passo >= 0 ? 1.4 : 0;
+    l.material.emissiveIntensity += (alvo - l.material.emissiveIntensity) * Math.min(1, dt * 10);
+  });
+  const zAlvo = -0.85 + estado.ordem * 0.57;
+  dedo.position.z += (zAlvo - dedo.position.z) * Math.min(1, dt * 9);
+});
+
+// ---------- gancho de QA ----------
+window.__microprocessador = {
+  rodar: (liga) => rodar(liga),
+  daUmPasso: () => daUmPasso(),
+  trocaReceita: () => trocaReceita(),
+  zerar: () => zerar(),
+  estado: () => ({ ...estado, receitaNome: RECEITAS[estado.receita].nome }),
+  parado: () => !estado.rodando,
+  pixels: () => {
+    const pecas = {
+      memoria: new THREE.Vector3(X_MEM, Y + 0.4, 0),
+      processador: new THREE.Vector3(X_CPU, Y + 0.4, 0),
+      mostrador: mostrador.position,
+      dedo: dedo.getWorldPosition(new THREE.Vector3()),
+      primeiroBloco: blocos[0].getWorldPosition(new THREE.Vector3()),
+    };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = s.position; });
+    return medidaDeQA(pecas);
+  },
+};
+
+pintaHud();
+</script>
+</body>
+</html>

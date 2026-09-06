@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
 <link rel="stylesheet" href="../../../../site/css/animacao/ordens.css">
 <link rel="stylesheet" href="episodio.css">
+<link rel="stylesheet" href="portas.css">
 </head>
 <body>
 
@@ -67,15 +68,94 @@
   <section class="step step--cena">
     <div class="kicker reveal">passo 1 · a primeira peça</div>
     <h2 class="reveal">As três portas</h2>
-    <div class="cena cena--uma reveal">
-      <figure class="clicavel" data-abre="foto" data-legenda="Dois em série é E, dois em paralelo é OU, um que inverte é NÃO · reconstituição, não é foto de época">
-        <span class="selo">ilustração</span>
-        <img src="img/portas-ilustra.jpg" alt="Três circuitos com interruptores e lampadinhas, montados lado a lado numa placa de madeira">
-        <figcaption>Dois em série é E · dois em paralelo é OU · um que inverte é NÃO</figcaption>
-      </figure>
+    <div class="portas reveal">
+
+      <div class="porta" data-porta="e">
+        <div class="porta__nome">E<span>dois em série</span></div>
+        <svg class="porta__circuito" viewBox="0 0 260 130" role="img" aria-label="Circuito com dois interruptores em série e uma lâmpada">
+          <line class="pilha" x1="12" y1="62" x2="36" y2="62"/>
+        <line class="pilha" x1="18" y1="72" x2="30" y2="72"/>
+          <path class="fio" d="M24 62 V32 H60"/>
+          <g class="porta__chave" transform="translate(60,32)" aria-label="primeiro interruptor">
+          <circle class="borne" cx="0" cy="0" r="3.5"/>
+          <line class="alavanca" x1="0" y1="0" x2="26" y2="0"/>
+          <circle class="borne" cx="30" cy="0" r="3.5"/>
+          <rect class="toque" x="-10" y="-18" width="52" height="36"/>
+        </g>
+          <path class="fio" d="M90 32 H118"/>
+          <g class="porta__chave" transform="translate(118,32)" aria-label="segundo interruptor">
+          <circle class="borne" cx="0" cy="0" r="3.5"/>
+          <line class="alavanca" x1="0" y1="0" x2="26" y2="0"/>
+          <circle class="borne" cx="30" cy="0" r="3.5"/>
+          <rect class="toque" x="-10" y="-18" width="52" height="36"/>
+        </g>
+          <path class="fio" d="M148 32 H200 V56"/>
+          <circle class="brilho" cx="200" cy="70" r="26"/>
+        <circle class="bulbo" cx="200" cy="70" r="14"/>
+        <path class="filamento" d="M194 72 l4 -6 4 6 4 -6"/>
+          <path class="fio" d="M200 84 V104 H24 V72"/>
+        </svg>
+        <div class="porta__estado">lâmpada apagada</div>
+        <div class="porta__dica">A corrente só chega se os <b>dois</b> fecharem.</div>
+      </div>
+
+      <div class="porta" data-porta="ou">
+        <div class="porta__nome">OU<span>dois em paralelo</span></div>
+        <svg class="porta__circuito" viewBox="0 0 260 130" role="img" aria-label="Circuito com dois interruptores em paralelo e uma lâmpada">
+          <line class="pilha" x1="12" y1="62" x2="36" y2="62"/>
+        <line class="pilha" x1="18" y1="72" x2="30" y2="72"/>
+          <path class="fio" d="M24 62 V26 H60"/>
+          <path class="fio" d="M40 26 V58 H60"/>
+          <g class="porta__chave" transform="translate(60,26)" aria-label="interruptor de cima">
+          <circle class="borne" cx="0" cy="0" r="3.5"/>
+          <line class="alavanca" x1="0" y1="0" x2="26" y2="0"/>
+          <circle class="borne" cx="30" cy="0" r="3.5"/>
+          <rect class="toque" x="-10" y="-18" width="52" height="36"/>
+        </g>
+          <g class="porta__chave" transform="translate(60,58)" aria-label="interruptor de baixo">
+          <circle class="borne" cx="0" cy="0" r="3.5"/>
+          <line class="alavanca" x1="0" y1="0" x2="26" y2="0"/>
+          <circle class="borne" cx="30" cy="0" r="3.5"/>
+          <rect class="toque" x="-10" y="-18" width="52" height="36"/>
+        </g>
+          <path class="fio" data-fio="ramo-a" d="M90 26 H170"/>
+          <path class="fio" data-fio="ramo-b" d="M90 58 H170"/>
+          <path class="fio" d="M170 26 V58"/>
+          <path class="fio" d="M170 42 H200 V56"/>
+          <circle class="brilho" cx="200" cy="70" r="26"/>
+        <circle class="bulbo" cx="200" cy="70" r="14"/>
+        <path class="filamento" d="M194 72 l4 -6 4 6 4 -6"/>
+          <path class="fio" d="M200 84 V104 H24 V72"/>
+        </svg>
+        <div class="porta__estado">lâmpada apagada</div>
+        <div class="porta__dica">Basta <b>um</b> dos dois fechar.</div>
+      </div>
+
+      <div class="porta" data-porta="nao">
+        <div class="porta__nome">NÃO<span>o que inverte</span></div>
+        <svg class="porta__circuito" viewBox="0 0 260 130" role="img" aria-label="Circuito com um interruptor que abre quando recebe sinal">
+          <line class="pilha" x1="12" y1="62" x2="36" y2="62"/>
+        <line class="pilha" x1="18" y1="72" x2="30" y2="72"/>
+          <path class="fio" d="M24 62 V32 H88"/>
+          <g class="porta__chave" transform="translate(88,32)" aria-label="sinal na entrada">
+          <circle class="borne" cx="0" cy="0" r="3.5"/>
+          <line class="alavanca" x1="0" y1="0" x2="26" y2="0"/>
+          <circle class="borne" cx="30" cy="0" r="3.5"/>
+          <rect class="toque" x="-10" y="-18" width="52" height="36"/>
+        </g>
+          <path class="fio" d="M118 32 H200 V56"/>
+          <circle class="brilho" cx="200" cy="70" r="26"/>
+        <circle class="bulbo" cx="200" cy="70" r="14"/>
+        <path class="filamento" d="M194 72 l4 -6 4 6 4 -6"/>
+          <path class="fio" d="M200 84 V104 H24 V72"/>
+        </svg>
+        <div class="porta__estado">lâmpada acesa</div>
+        <div class="porta__dica">Nasce fechado. Mandar <b>sinal</b> abre o contato e apaga.</div>
+      </div>
+
     </div>
+
     <p class="lede reveal">Tudo o que vem daqui pra frente, não importa o tamanho da máquina, é <b>combinação dessas três</b>.</p>
-    <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
   </section>
 
   <!-- 3 -->
@@ -232,6 +312,7 @@
 <script src="../../../../site/js/animacao/telas.js"></script>
 <script src="../../../../site/js/animacao/lightbox.js"></script>
 <script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="portas.js"></script>
 <script src="episodio.js"></script>
 </body>
 </html>

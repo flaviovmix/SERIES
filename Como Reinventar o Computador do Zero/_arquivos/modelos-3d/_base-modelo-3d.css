@@ -83,6 +83,16 @@ main{position:relative; flex:1; min-height:0}
 .linha-total .meta.win{color:var(--ok); font-weight:600}
 .linha-total .casas{font-family:'IBM Plex Mono',Consolas,monospace; font-size:12px; color:var(--sub); letter-spacing:.12em}
 
+/* Leitura em duas linhas: o numero grande em cima e a origem dele embaixo. Nasce
+   quando a palavra nao cabe ao lado do numero na largura do painel, que e o caso de
+   quase toda maquina. Estava copiada no <style> de cinco modelos. */
+.linha-total.estado{flex-direction:column; align-items:flex-start; gap:2px}
+.linha-total.estado .num{font-size:30px}
+.linha-total .casas b{font-weight:600; color:var(--ink)}
+/* a palavra em destaque dentro de .casas: dois nomes porque o rele batizou de um
+   jeito e os demais de outro, e nenhum dos dois esta errado */
+.linha-total .casas .quente, .linha-total .casas.acesa b{color:#b8741a}
+
 /* Grade de 2 colunas em vez de flex-wrap: no painel estreito o wrap deixava linha
    com 2 botoes, linha com 1 e um sobrando sozinho no meio. Na grade todos tem a
    mesma largura e a mesma altura; botao impar no fim ocupa a linha inteira. */
@@ -134,6 +144,9 @@ main{position:relative; flex:1; min-height:0}
   .linha-total .num{font-size:24px}
   .linha-total .meta{font-size:10px}
   .linha-total .casas{font-size:10px}
+  /* deitada de novo: em pe, a leitura come a altura que a barra do rodape precisa */
+  .linha-total.estado{flex-direction:row; align-items:baseline}
+  .linha-total.estado .num{font-size:22px}
   .btn-mini{padding:6px 12px; font-size:10px}
 }
 

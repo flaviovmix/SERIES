@@ -348,6 +348,219 @@ ja estava publicada melhorou tambem. No desktop nada muda.
 em vez de uma, puxando ilustracoes velhas do feed como se fossem novas. Conferir a
 imagem baixada continua sendo obrigatorio.
 
+## 04/09, tarde: o que quebrou na tela do telefone (e as regras que ficam)
+
+Ele abriu a etapa no celular e apareceram tres defeitos, todos de base. Ficam
+anotados porque nenhum era do episodio: eram da fundacao que os episodios usam.
+
+**1. Os nomes dos tokens de CSS.** Eu escrevi `--linha`, `--realce`, `--papel-alto` e
+`--papel` nos CSS dos episodios. Nenhum existe. Os nomes de verdade, em
+`site/css/tokens.css`, sao: `--line`, `--line-soft`, `--ink`, `--ink-soft`,
+`--ink-faint`, `--accent`, `--accent-soft`, `--accent-edge`, `--surface`,
+`--surface-alt`, mais `--fonte-mono` / `--fonte-titulo` / `--fonte-serif` /
+`--fonte-texto` e `--raio`. Um `var()` inventado nao "cai no padrao": a declaracao
+inteira vira invalida, entao a borda sumia e o destaque virava cor herdada. Corrigido
+nos seis arquivos. ⚠️ **Conferir o nome no tokens.css antes de usar.**
+
+**2. A foto de capa nao tinha regra nenhuma.** As regras da `.capa-modelo` moravam no
+`animacao/modelo-3d.css`, e episodio sem modelo 3D nao carrega esse arquivo: a
+imagem saia no tamanho natural do arquivo (1376px de largura num telefone de 390) e
+parecia que ja tinha sido ampliada. As regras da capa foram pro `animacao/telas.css`,
+que todo episodio carrega, com teto de um terco da tela no telefone.
+
+**3. O modelo 3D atras da barra.** Resolvido no `_base-modelo-3d.js` (ver acima).
+
+**A tela 2 do 06-01 virou interativa.** A foto das tres portas saiu e entraram tres
+circuitos clicaveis de verdade (`portas.css` + `portas.js` na pasta do episodio): E
+em serie, OU em paralelo e NAO que inverte. Clica na chave, a alavanca desce, o fio
+acende e a lampada obedece — que e exatamente o que o audio pede em 2:39. O NAO nasce
+fechado, e mandar sinal ABRE o contato. As sete combinacoes estao cobertas por um
+teste de browser (`testa-portas.js` no scratchpad).
+
+**O site nao atualizava no celular.** O nginx do container `serie` nao mandava
+`Cache-Control` nenhum, entao o Chrome inventava um e segurava a pagina velha. Agora
+o **Caddy** manda `Cache-Control: no-cache` para HTML, CSS e JS de
+`series.afx.art.br` (imagem e audio seguem com cache normal, que e o que pesa). O
+bloco esta no `~/caddy/Caddyfile` do servidor, com backup em
+`Caddyfile.bak-20260904-cache-html`.
+
+## 05/09: a etapa 7 fecha com tres
+
+Os dois episodios que faltavam foram escritos, gravados e viraram pagina na mesma
+sessao. A etapa **O computador encolhe** esta completa.
+
+| # | Episodio | Titulo do audio | Duracao | Telas |
+|---|---|---|---|---|
+| 7.02 | O circuito integrado | O fim da tirania dos numeros | 17:12 | 11 |
+| 7.03 | O microprocessador | O chip que encolheu o computador | 15:09 | 11 |
+
+O `7.02` sai da pergunta que o `7.01` deixou (a peca encolheu, a montagem nao) e para
+em 1965, com a curva ja virando meta da industria. O `7.03` responde a pergunta dele
+(um chip pra cada trabalho) com a encomenda da calculadora de 1969, e para em 1974,
+com o processador virando item de catalogo e a maquina ainda fora de casa. Os dois
+foram escritos sem citar nome de inventor: as pessoas ficam pros extras 34 e 35.
+
+**A regra dura das telas passou nos dois.** 11 telas e 10 pedidos em cada, na ordem.
+
+⚠️ **O `mapa-de-telas.py` conta tela a menos quando o transcritor quebra a frase.** Nos
+dois episodios o gatilho saiu partido em duas linhas ("aperte o" / "proximo") e o
+cortador, que casa linha a linha, perdeu o corte: acusou 10 telas onde havia 11. Os
+dois `_telas.md` foram **corrigidos a mao** e trazem o aviso no topo; regerar sem
+consertar o script desfaz a correcao. O conserto e juntar os segmentos antes de casar
+o gatilho, em vez de casar um por um.
+
+⚠️ **Dois vazamentos do roteiro no ar.** No `7.02` o apresentador disse "aquela
+analogia da casquinha de vidro **que a gente tem no roteiro**" (7:50) e abriu com
+"**Iniciei dizendo** o circuito integrado" (0:00), lendo a instrucao em voz alta. O
+roteiro do `7.03` ganhou um bloco proibindo citar as instrucoes, e mesmo assim ele
+disse "aquela nossa **analogia autorizada**" (4:04). O bloco ajuda mas nao resolve
+sozinho: vale conferir esse trecho em toda conferencia daqui pra frente.
+
+**As paginas.** Cada uma com 11 `.step`, foto real do Wikimedia com credito na legenda
+(7 telas no `7.02`, 5 no `7.03`) e nenhum modelo 3D: o chip e o processador ainda sao
+itens 🔴 no backlog de modelos, entao a capa dos dois e fotografia.
+
+**As ilustracoes entraram pelo botao de troca (05/09).** Ele pediu "bastante reais e
+ilustradas", e as paginas tinham so foto real. Sete ilustracoes novas saíram do Flow no
+estilo da casa (render fotorrealista em corte ou bancada, madeira, luz quente, 16:9, sem
+texto): `solda`, `mesmo-pedaco`, `camadas` e `luz` no `7.02`; `chave`, `cozinha` e
+`em-tudo` no `7.03`. Onde ha foto de epoca elas entraram pelo componente **`troca`** (o
+botao "foto real / ilustracao" decidido em 03/09): 4 figuras no `7.02`, 1 no `7.03`.
+Onde a tela era so ficha, a ilustracao entra sozinha como retrato ao lado dos cards
+(telas 3 e 4 do `7.03`, que viraram `step--ficha`). O Flow gera duas variantes por
+prompt; as 14 foram olhadas uma a uma e a rejeitada foi apagada.
+
+⚠️ **O Flow avisa que os creditos estao acabando.** Por isso o lote parou em sete, nas
+telas onde a ilustracao mostra o que a foto nao mostra. As demais telas seguem so com
+foto real.
+
+⚠️ **O Flow mudou de endereco.** O projeto agora abre em `flow.google.com`, e o link
+antigo de `labs.google/fx` cai na pagina publica: tem que clicar em "Create with Google
+Flow" uma vez. O `entra-flow.js` no lab faz isso. E o `flow-capa.js` passou a aceitar
+`LAB_CDP`, pra apontar pro Edge (porta 9333) enquanto o Chrome do lab esta deslogado.
+
+⚠️ **Barra de troca em tela de cena soma altura.** Com a barra (36px) mais paragrafo e
+nota, as telas 2, 5 e 7 do `7.02` cortavam a ultima linha numa janela de 1440x900 (o
+`06-02` tem a mesma barra e nao corta porque as telas dele nao tem nota). O `7.02` ganhou
+um `episodio.css` com teto de altura na PRIMEIRA imagem da figura — so nela, porque no
+`troca-imagem.css` e ela que abre o palco e a segunda entra por cima com `cover`; mexer
+nas duas deixa tarja cinza dos lados. Medido em 1440x900 e 1440x1080, e comparado com o
+`7.01` e o `06-02`, que nao cortam. O `7.03` reusa
+o `ordens.css` do `06-01` pro ciclo do processador (busca, entende, faz, avanca) e tem
+um **`episodio.css` proprio de tres linhas**: "microprocessador" e uma palavra so de
+dezesseis letras e vazava pra cima da foto no desktop, entao o titulo ganhou um hifen
+opcional (`&shy;`) e um teto de fonte menor. Regra que fica: **titulo de uma palavra
+longa nao cabe na coluna da capa** — checar antes de publicar.
+
+Testado num browser de verdade (Edge headless): 11 telas nas duas, navegacao ate a
+ultima, imagem nenhuma quebrada e zero estouro horizontal em 1440px e em 360px.
+
+Os cards 02 e 03 da `etapa-07.html` sairam de "em breve" e agora abrem as animacoes. A
+janela da etapa virou **1947 a 1974** (era 1971) na etapa e no `computador.html`.
+
+**Falta:** o Flavio ouvir os dois e decidir sobre os vazamentos; e publicar no servidor,
+que nao foi feito.
+
+⚠️ **O perfil do Chrome do lab esta deslogado** (a conta aparece como "Desconectada" na
+tela de escolher conta). A esteira baixa pelo Chrome por padrao, entao o download
+falhou nas tres tentativas nos dois episodios; os dois audios foram baixados **pelo
+Edge**, que segue logado. Ate alguem refazer o login do Chrome, baixar pelo Edge.
+
+## 06/09: os dois modelos 3D e os dois extras que faltavam
+
+O 7.02 e o 7.03 tinham ficado com duas dividas: nenhum modelo tridimensional (chip e
+processador eram itens 🔴 no backlog) e dois ganchos de extra apontando pra episodios
+que nao existiam. As duas foram pagas.
+
+**Modelos novos, no `_arquivos/modelos-3d/`:**
+
+| Arquivo | O que da pra mexer |
+|---|---|
+| `circuito-integrado.html` | contar as soldas da placa uma a uma (cada gota acende) e abrir as tres camadas do chip: cristal, casquinha de vidro, trilhas impressas |
+| `microprocessador.html` | rodar o ciclo busca/entende/faz/avanca com o dedo descendo a lista da memoria, e **trocar a receita** pra mesma peca dar outro resultado no mostrador |
+
+Os dois entraram na capa das animacoes, no desenho do `7.01`: iframe com `data-src` na
+`.capa-modelo` (e de la que o lightbox le o modelo), botao no cabecalho e outro na tela
+em que a peca e explicada. A foto que estava em cada capa nao se perdeu: migrou pra uma
+tela que era so ficha (a de 1965 pra tela 6 do `7.02`, o layout do 4004 pra tela 9 do
+`7.03`), que de quebra ganhou imagem.
+
+⚠️ **O audio dos dois nao anuncia o modelo**, porque foi gravado antes dele existir. No
+`7.01` o audio avisa na tela 1 e convida na tela 6. Aqui quem acha e quem olha a pagina.
+Se o dono quiser paridade com o `7.01`, e regravacao.
+
+⚠️ **Rotulo de modelo se controla por OPACIDADE, nao por `visible`.** Quem manda no
+`visible` de todo sprite e o `redimensiona()` da base (ele esconde rotulo na tela
+estreita). O `circuito-integrado` escondia os rotulos de grupo com `visible` e qualquer
+resize os trazia de volta por cima dos rotulos de camada. Vale pros proximos modelos.
+
+**Extras novos, no `_EXTRAS/`:** `09 - Quem Fez o Primeiro Chip` (16:13, "Como Kilby e
+Noyce inventaram o chip") e `10 - A Lei de Moore` (18:54, "A Lei de Moore nao e
+fisica"). Os dois sao da familia **peca e figura**, com nome e data, e os dois passaram
+na regra dura das telas: 10 telas e 9 pedidos cada. Os dois ganharam **pagina de animacao** com 10 telas, foto real do Wikimedia com
+credito na legenda (6 no EX-09, 5 no EX-10) e marcadores tirados do proprio `_telas.md`,
+e o card do hub abre a pagina, como os extras 03 a 07. O aparte
+do rodape do hub, que dizia que "O Zero e os Numeros" era o unico extra com nome e
+data, foi reescrito: agora sao tres.
+
+O numero 08 estava reservado pra "O Zero e os Numeros" no backlog, por isso os novos
+comecam no 09.
+
+⚠️ **O EX-09 erra o nome na hora de apresenta-lo.** Aos 3:42, exatamente onde o
+protagonista entra, o audio diz "Jack **Qube**" (e "Noyce" sai como "Noise" o episodio
+inteiro). Confirmado na segunda passada com o modelo maior, entao e do audio e nao da
+transcricao. **O dono decidiu nao regravar** e tratar nos proximos: virou regra da serie
+(nome proprio estrangeiro entra soletrado na primeira vez). Na pagina os nomes estao
+escritos certo, e e ela que corrige o ouvido.
+
+⚠️ **O `baixa-episodio.js` estava quebrado e foi consertado.** Ele ja conta com o
+browser morrer no meio (por isso baixa o arquivo por fora, com fetch), mas os listeners
+de download que ficavam armados rejeitavam uma promessa que ninguem pegava, e o Node
+derrubava o processo ANTES de gravar o audio: a URL aparecia capturada no log e o
+arquivo nao chegava no disco. Agora so o erro de "browser fechado" e engolido (o objeto
+que o patchright rejeita as vezes nem tem `message`, so `type: 'closed'`), e qualquer
+outro continua estourando.
+
+**No ar em 06/09.** Deploy pelo procedimento de sempre (tar + scp + `tar xzf` em
+`~/serie`, sem reiniciar container): 103 MB, e o servidor foi de 579 MB pra 709 MB. O
+pacote leva **so o que roda** das pastas de episodio e de extra (animacao, js, css,
+audio e img) — roteiro, prompt, Overview, transcricao e mapa de telas nao tem por que
+ficar servidos na web, e e a convencao que os episodios ja seguiam la. ⚠️ Os extras 01
+a 07 subiram inteiros em rodadas antigas e ainda servem `.txt` e `.md` publicos; nao
+mexi neles sem combinar.
+
+Conferido no ar, num navegador de verdade e nao so no HTTP: as quatro paginas novas
+montam com o numero certo de telas, nenhuma imagem quebrada, zero estouro horizontal,
+os dois modelos 3D da capa ligam, os audios respondem `206` (o seek do tocador depende
+disso), a `etapa-07` mostra os tres cards abertos e 1947→1974, e o hub de extras mostra
+os dez cards.
+
+**Limpeza de duplicacao (06/09), antes do commit.** A auditoria pediu tres extracoes e
+as tres foram feitas na base dos modelos 3D:
+
+| O que | Estava em | Agora |
+|---|---|---|
+| `pixelDe()` + o corpo do gancho de QA | **5** copias byte a byte iguais | `medidaDeQA()` na base: o modelo so diz QUAIS pecas medir |
+| Bloco `.linha-total.estado` no `<style>` local | **5** copias (4 iguais + a variante do rele) | `_base-modelo-3d.css`, com os dois seletores de destaque (`.casas .quente` e `.casas.acesa b`) |
+| `function cilindro()` | **4** copias, diferindo so em lados e dois extras | `cilindro()` na base, com `{rTopo, lados, aberto}` |
+
+Cada `<style>` local trazia o comentario "so aqui, pra nao mexer nos outros modelos" —
+uma frase que ja era falsa cinco vezes. O `rTop` do rele era **parametro morto**:
+nenhuma chamada passava ele. A valvula ficou com um embrulho de duas linhas em cima do
+`cilindro` da base, porque o bulbo dela e grande e liso e as 32 facetas padrao
+apareceriam; o circuito integrado subiu de 24 pra 32, diferenca invisivel naquele
+tamanho.
+
+Os cinco modelos foram retestados depois (cena monta, gancho responde, nenhuma peca
+fora da tela nem atras do painel, em desktop e telefone), mais a mecanica dos dois
+novos e as duas paginas que embutem modelo.
+
+**Os scripts de QA sairam do scratchpad e viraram versionados**, em
+`_arquivos/scripts/`: `qa-pagina.js`, `qa-modelos-3d.js`, `qa-producao.js` e
+`thumb-modelo.js`, com um `LEIA-ME-qa.md` que explica como rodar (precisa de http, e
+Playwright e nao patchright) e por que a checagem "atras do painel" existe. E o que a
+Etapa 4 do plano pedia desde sempre.
+
 ## Publicados no acervo
 
 A pasta guarda o nome do episódio; o card no Nexus guarda o **título do podcast** (o que o NotebookLM deu ao áudio). Esta tabela é o que amarra os dois — os números de faixa vêm do `_publicado.json` de cada pasta.
@@ -391,6 +604,7 @@ Fase antiga, fora das etapas: piloto v1 (faixa 33, em `00 - Piloto\_v1\`, decis�
 - Testar a animação com Playwright antes de publicar, **inclusive na viewport 360px**.
 - ⚠️ **Janela temporal declarada (26/08).** A abertura de todo episódio diz o intervalo que ele cobre — "este episódio vai de 1745 a 1800" — e o fechamento devolve em que ano parou, pro próximo pegar dali. Vale nos três lugares: primeira linha do bloco do Overview, abertura do roteiro e ficha da primeira tela da animação.
 - ⚠️ **Ficha humana dos protagonistas (26/08).** Todo personagem que carrega o episódio ganha uma ficha curta na primeira vez que é citado: onde nasceu (**nome do lugar na época + o que é aquilo hoje**), de que família veio (ofício do pai, condição), onde estudou, e **quando morreu e de quê** (a causa entra sempre que for conhecida, em poucas palavras e sem drama; quando a fonte não disser, o roteiro diz que não se sabe, nunca inventa). Critério de quem entra: os protagonistas, mais quem o roteiro julgar importante — coadjuvante citado de passagem numa frase só fica sem ficha. Motivo: nome solto com data de invenção do lado não gruda; ouvinte lembra de pessoa, não de sobrenome.
+- ⚠️ **Nome próprio estrangeiro entra soletrado na primeira vez (06/09).** No EX-09 o apresentador apresentou o protagonista como "Jack **Qube**" aos 3:42, exatamente onde o ouvinte aprende o nome, e só falou "Kilby" certo aos 11:38 (confirmado na segunda passada com o modelo maior: é do áudio, não da transcrição). O dono decidiu **não regravar** e tratar daqui pra frente. Então todo roteiro com sobrenome estrangeiro passa a trazer, no bloco de regras duras, a pronúncia escrita do jeito que se fala em português e o pedido de dizer devagar na primeira aparição — mesma solução que já vale pros anos por extenso. Exemplo: `Kilby (fala-se "quiu-bi")`.
 - Os 12 episódios publicados até 23/08 são anteriores às duas regras acima e não as seguem — entram nelas quando forem refeitos, sem reeditar nada por enquanto.
 
 ## Produção

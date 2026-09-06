@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O circuito integrado — Etapa 07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 07-02. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. A capa carrega o modelo 3D
+     do circuito integrado, que mora em _arquivos/modelos-3d/. O audio nao anuncia
+     o modelo (foi gravado antes dele existir): quem acha e quem olha a pagina. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/modelo-3d.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/troca-imagem.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-07.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="O%20fim%20da%20tirania%20dos%20n%C3%BAmeros.m4a" data-duracao="1032"></audio>
+    <img class="tocador__capa" src="img/ci-1965-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">O fim da tirania dos números</div>
+      <div class="tocador__fonte">O computador encolhe · 02 · O circuito integrado</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1032" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">17:12</span></div>
+  </div>
+  <div class="acoes">
+    <button class="btn-cabecalho" data-abre="modelo3d">🧊 abrir modelo 3D</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">o computador encolhe · episódio 02</div>
+      <h1 class="reveal">O circuito integrado</h1>
+      <p class="lede reveal">De <b>1958 a 1965</b>. A peça encolheu, mas a montagem não: cada transistor chega solto, numa caixinha de três perninhas, e alguém solda perna por perna. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O que trava agora.</b> O limite deixou de ser a peça e virou a <b>ligação</b> entre as peças. A época chamou isso de tirania dos números: quanto melhor o projeto, mais impossível de montar.</p>
+      </div>
+      <button class="btn-mini cheio clicavel capa-botao reveal" data-abre="modelo3d">abrir modelo 3D</button>
+    </div>
+    <figure class="capa-modelo reveal">
+      <!-- data-src, nao src: o modelo so liga enquanto a capa esta em cena -->
+      <iframe data-src="../../../_arquivos/modelos-3d/circuito-integrado.html" title="Modelo tridimensional de um circuito integrado"></iframe>
+      <figcaption>Arraste pra girar · role pra aproximar</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a tirania dos números</div>
+    <h2 class="reveal">Quarenta mil pontos de solda</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Uma placa de transistores soltos, cada perna com seu ponto de solda · foto: ArnoldReinhold, CC BY-SA 3.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/placa-solda-real.jpg" alt="Placa de circuito dos anos 1960 com transistores, resistores e capacitores soltos soldados um a um">
+          <img class="troca__img" src="img/solda-ilustra.jpg" alt="Ilustração: uma mão solda a placa ponto a ponto sob a lupa de bancada, com fileiras de bancadas iguais ao fundo">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Cada pecinha espetada na placa, cada perna com um ponto feito à mão · foto: ArnoldReinhold, CC BY-SA 3.0</span>
+          <span class="troca__aviso">Um ponto de cada vez, e são dezenas de milhares por máquina · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Dez mil transistores não são dez mil soldas. Cada peça tem no mínimo três pernas, e os resistores e capacitores em volta têm mais. São <b>trinta ou quarenta mil pontos</b> numa máquina só, um pingo de metal derretido por vez.</p>
+    <div class="nota-cena reveal">a chance de todas estarem boas ao mesmo tempo despenca, e a montagem passa a custar mais que as peças</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a ideia</div>
+      <h2 class="reveal">E se fossem do mesmo pedaço?</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a dedução</div><div class="texto">transistor, resistor e capacitor podem ser feitos do mesmo material semicondutor</div></div>
+        <div class="item reveal"><div class="rotulo">então</div><div class="texto">podem ser feitos no <b>mesmo pedaço</b>, já ligados por dentro, sem fio nenhum entre eles</div></div>
+        <div class="item reveal"><div class="rotulo">o que não é</div><div class="texto">não é aproximar as peças na placa. É parar de ter peças separadas</div></div>
+        <div class="item reveal"><div class="rotulo">por que demorou</div><div class="texto">bloqueio de mentalidade: um resistor feito do material do transistor é um resistor pior, e ninguém fabrica peça pior de propósito</div></div>
+      </div>
+      <p class="lede reveal">Se a ligação já nasce lá dentro, o problema das quarenta mil soldas não é resolvido: ele <b>deixa de existir</b>.</p>
+    </div>
+    <div class="retratos">
+      <figure class="troca retrato retrato-l clicavel reveal" data-ver="real" data-abre="foto" data-legenda="O mesmo chip com a tampa aberta: a pastilha no meio é o circuito inteiro · foto: Robert.Baruch, CC BY-SA 4.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/chip-real.jpg" alt="Um circuito integrado com a tampa de cerâmica removida, mostrando a pastilha de silício no centro">
+          <img class="troca__img" src="img/mesmo-pedaco-ilustra.jpg" alt="Ilustração: à esquerda três peças soltas soldadas numa placa; à direita as mesmas três dentro de um único bloco de cristal, já ligadas">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Por dentro: uma coisa só · foto: Robert.Baruch, CC BY-SA 4.0</span>
+          <span class="troca__aviso">Peças soltas e ligadas por fora, ou nascidas juntas no mesmo pedaço · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1958</div>
+    <h2 class="reveal">Funcionou dentro de um pedaço só</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Réplica do primeiro circuito integrado que funcionou · foto: Florian Schäffer, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/primeiro-ci-real.jpg" alt="Réplica do primeiro circuito integrado: uma lasca de material com fios finos soldados por cima">
+        <figcaption>Réplica do primeiro circuito integrado · foto: Florian Schäffer, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Num laboratório da <b>Texas Instruments</b>, um circuito simples funcionou inteiro dentro de uma lasca de germânio. A teoria saiu do papel.</p>
+    <div class="nota-cena reveal">só que as ligações ainda eram fiozinhos de ouro soldados por cima, à mão: uma solda menor e muito mais difícil, impossível de fazer aos milhares</div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1959</div>
+    <h2 class="reveal">A casquinha de vidro e as trilhas impressas</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="A pastilha vista de perto: as trilhas claras são o metal impresso por cima da camada isolante · foto: Cole L, CC BY-SA 2.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/trilhas-real.jpg" alt="Pastilha de silício ampliada, com trilhas de metal desenhadas ligando as partes do circuito">
+          <img class="troca__img" src="img/camadas-ilustra.jpg" alt="Ilustração em corte: o cristal de silício embaixo, a camada de vidro por cima, e as trilhas de metal descendo por janelas até encostar no silício">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">As ligações são desenho, não fio · foto: Cole L, CC BY-SA 2.0</span>
+          <span class="troca__aviso">Em corte: o cristal, a casquinha de vidro e o metal descendo pelas janelas · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Na <b>Fairchild</b>, dois passos juntos. Aquecendo o silício ele cria uma camada de óxido, que é vidro e não conduz. Nesse chão isolado as ligações são <b>impressas</b>: trilha fina de metal, descendo por janelinhas onde precisa encostar.</p>
+    <div class="nota-cena reveal">nenhum fio e nenhuma solda por dentro: o chip não é montado, é fabricado inteiro</div>
+    <p class="episodio__acao reveal" style="text-align:center;margin-top:10px">
+      <button class="btn-mini cheio clicavel" data-abre="modelo3d">abrir o modelo 3D</button>
+    </p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">por que os dois contam</div>
+      <h2 class="reveal">Um provou, o outro mostrou como fazer</h2>
+      <div class="ficha">
+      <div class="item reveal"><div class="rotulo">1958</div><div class="texto">um circuito inteiro funcionando num pedaço só. A ideia para em pé</div></div>
+      <div class="item reveal"><div class="rotulo">1959</div><div class="texto">camada isolante e ligação impressa. É assim que se faz até hoje</div></div>
+      <div class="item reveal"><div class="rotulo">a briga</div><div class="texto">brigaram por patente durante anos e terminaram licenciando uma para a outra</div></div>
+      <div class="item reveal"><div class="rotulo">o padrão</div><div class="texto">ter a ideia e fazer virar coisa fabricável em massa são <b>dois trabalhos</b></div></div>
+    </div>
+      </div>
+      <p class="lede reveal">O segundo só avançou rápido porque o primeiro mostrou que dava. A série não elege um inventor.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um circuito integrado de 1965 · foto: Mister rf, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/ci-1965-real.jpg" alt="Um circuito integrado de 1965 aberto, com a pastilha no centro e os fios de ouro ligando ela às pernas">
+        <figcaption>1965: o circuito inteiro numa peça só · foto: Mister rf, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">desenhar com luz</div>
+    <h2 class="reveal">Fotolitografia</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Um wafer de silício com dezenas de cópias do mesmo circuito, feitas na mesma passada · foto: Enrique Jiménez, CC BY-SA 2.0">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/wafer-real.jpg" alt="Disco de silício espelhado coberto por dezenas de retângulos iguais, as cópias do mesmo circuito">
+          <img class="troca__img" src="img/luz-ilustra.jpg" alt="Ilustração: um feixe de luz desce de uma lente e projeta o desenho do circuito sobre o disco de silício, como um slide">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão da imagem">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">foto real</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">ilustração</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">O mesmo circuito, dezenas de vezes, na mesma passada · foto: Enrique Jiménez, CC BY-SA 2.0</span>
+          <span class="troca__aviso">A luz projeta o desenho sobre o cristal, e o mesmo trabalho serve grande ou pequeno · reconstituição, não é foto de época</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">O cristal recebe um material sensível à luz. O desenho daquela camada é projetado por cima, como um <b>slide numa parede</b>. Um banho químico tira o que a luz marcou, e o que sobra manda no passo seguinte. Camada por camada, até o circuito inteiro estar lá dentro.</p>
+    <div class="nota-cena reveal">projetar o slide menor não dá mais trabalho: duzentas cópias pequenas ou vinte grandes custam o mesmo</div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step">
+    <div class="kicker reveal">a regra que quebrou</div>
+    <h2 class="reveal">Menor fica melhor em tudo ao mesmo tempo</h2>
+    <div class="ficha reveal">
+      <div class="item"><div class="rotulo">era assim</div><div class="texto">na época das engrenagens, peça menor era peça mais frágil e mais cara</div></div>
+      <div class="item"><div class="rotulo">mais rápida</div><div class="texto">caminho mais curto pra corrente, o sinal chega antes</div></div>
+      <div class="item"><div class="rotulo">gasta menos</div><div class="texto">menos material pra carregar de eletricidade, e esquenta menos</div></div>
+      <div class="item"><div class="rotulo">mais barata</div><div class="texto">cabe mais circuito no mesmo cristal que entra no forno</div></div>
+    </div>
+    <p class="lede reveal">Três ganhos ao mesmo tempo, <b>sem sacrifício no meio</b>. A partir daqui não existe motivo pra parar de encolher, e é isso que explica todo o resto da história.</p>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">quem pagou a conta</div>
+    <h2 class="reveal">Míssil e foguete</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O computador de bordo do programa espacial americano · foto: Tamorlan, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/apollo-real.jpg" alt="O computador de bordo da Apollo, uma caixa metálica com painel de comando ao lado">
+        <figcaption>Onde peso e volume custam mais que dinheiro · foto: Tamorlan, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Nos primeiros anos o chip era caro: pra quem fazia rádio civil, soldar à mão continuava saindo mais barato. Quem assinou o cheque foram os <b>programas militares e espaciais</b>, onde cada grama custa uma fortuna pra sair do chão e uma solda rachada na vibração não tem conserto no ar.</p>
+    <div class="nota-cena reveal">encomenda grande e garantida deu dinheiro pra fábrica melhorar o processo. Quando o preço caiu, o chip abriu pro resto do mundo</div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1965</div>
+    <h2 class="reveal">A curva</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A contagem de componentes por pastilha ao longo das décadas · gráfico: Our World in Data, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/curva-real.jpg" alt="Gráfico mostrando o número de transistores por chip subindo em linha reta numa escala que dobra">
+        <figcaption>Uma observação que virou calendário da indústria · gráfico: Our World in Data, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Alguém bem posicionado na indústria olha os poucos anos de chip que existiam e nota: o número de componentes que cabe numa pastilha vinha <b>dobrando em intervalos regulares</b>. Não é lei da natureza. É observação de mercado.</p>
+    <div class="nota-cena reveal">e virou meta: as fábricas passaram a planejar pra cumprir a curva e os clientes a exigir o número no contrato. Uma previsão que se cumpre porque todo mundo mira nela</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1965</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o que mudou</div>
+        <div class="desc">o circuito virou uma peça só, fabricável aos milhares, e encolher deixou de custar mais caro</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que ainda incomoda</div>
+        <div class="desc">cada chip faz uma coisa só. Um computador continua sendo uma placa grande com dezenas de chips diferentes, e máquina nova pede chip novo, desenhado do zero</div>
+      </div>
+    </div>
+    <p class="lede reveal">E se, em vez de um chip pra cada trabalho, existisse <b>um chip só</b>, sempre o mesmo, capaz de fazer qualquer trabalho dependendo da ordem que a gente der pra ele?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/modelo-3d.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/troca-imagem.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

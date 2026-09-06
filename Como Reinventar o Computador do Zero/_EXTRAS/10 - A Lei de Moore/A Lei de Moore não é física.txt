@@ -1,0 +1,7 @@
+Titulo: A Lei de Moore não é física
+Notebook: EX-10-A Lei de Moore
+
+Descricao:
+Os textos tratam da Lei de Moore, explicando que ela não é uma regra da física, mas uma observação de mercado iniciada por Gordon Moore em 1965. O conceito descreve como o setor de tecnologia se organizou para dobrar a quantidade de componentes em chips a cada dois anos, transformando um palpite inicial em uma meta industrial coletiva. As fontes esclarecem a diferença entre o aumento no número de transistores e a velocidade de processamento, destacando que esta última estagnou por volta de 2005. O conteúdo enfatiza como uma simples frase de revista serviu como um calendário global para a engenharia por quase seis décadas. Atualmente, a indústria busca novas soluções, como o empilhamento de camadas, para contornar o desaceleramento natural dessa curva exponencial. Por fim, a obra ressalta que o maior legado da lei foi a capacidade de alinhar o planejamento de diversas empresas em torno de um objetivo comum.
+
+Link: https://notebook.google.com/notebook/24319c96-d61d-4a2c-a072-348d003befeb

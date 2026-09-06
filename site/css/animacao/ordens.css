@@ -8,7 +8,7 @@
 .ordens {
   max-width: 640px;
   margin: 22px auto 0;
-  border: 1px solid var(--linha);
+  border: 1px solid var(--line);
   border-radius: 14px;
   overflow: hidden;
 }
@@ -18,7 +18,7 @@
   align-items: center;
   gap: 14px;
   padding: 13px 18px;
-  border-top: 1px solid var(--linha);
+  border-top: 1px solid var(--line);
   font-size: 14.5px;
   color: var(--ink-soft);
 }
@@ -37,19 +37,19 @@
   font-family: var(--fonte-mono);
   font-size: 11px;
   letter-spacing: .06em;
-  color: var(--realce, #c98b3a);
+  color: var(--accent);
   white-space: nowrap;
 }
 
 .ordens__linha--vez {
-  background: rgba(201, 139, 58, .12);
+  background: var(--accent-soft);
   color: var(--ink);
 }
 
 
 /* o destino de um pulo, marcado com traco na lateral em vez de fundo cheio */
 .ordens__linha--alvo {
-  box-shadow: inset 3px 0 0 var(--realce, #c98b3a);
+  box-shadow: inset 3px 0 0 var(--accent);
   color: var(--ink);
 }
 
@@ -58,7 +58,7 @@
   font-family: var(--fonte-mono);
   font-size: 11px;
   letter-spacing: .06em;
-  color: var(--realce, #c98b3a);
+  color: var(--accent);
   white-space: nowrap;
 }
 

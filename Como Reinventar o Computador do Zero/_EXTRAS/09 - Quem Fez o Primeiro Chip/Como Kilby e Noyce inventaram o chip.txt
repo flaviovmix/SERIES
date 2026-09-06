@@ -1,0 +1,7 @@
+Titulo: Como Kilby e Noyce inventaram o chip
+Notebook: EX-09-Quem Fez o Primeiro Chip
+
+Descricao:
+Os documentos descrevem a origem histórica do circuito integrado, resolvendo o dilema tecnológico conhecido como tirania dos números no final da década de 1950. A narrativa detalha como Jack Kilby, da Texas Instruments, provou a viabilidade da ideia ao criar um oscilador em um único bloco de germânio, enquanto Robert Noyce, da Fairchild Semiconductor, desenvolveu o método de fabricação em escala industrial utilizando silício e conexões impressas. O texto enfatiza que o chip moderno é fruto de ambos os esforços, unindo a prova de conceito de um à viabilidade comercial do outro. Além do contexto técnico, os arquivos relatam as disputas judiciais por patentes que culminaram em um acordo de licenciamento mútuo e o reconhecimento tardio de Kilby com o Prêmio Nobel. Por fim, a obra serve como um roteiro para um episódio informativo focado em desmistificar a figura do inventor solitário.
+
+Link: https://notebook.google.com/notebook/c1fe1108-05a2-490e-97c0-a6dcf31acc97

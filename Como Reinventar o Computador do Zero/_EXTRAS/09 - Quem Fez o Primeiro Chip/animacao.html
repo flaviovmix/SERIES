@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quem Fez o Primeiro Chip — Extra 09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Extra 09. Familia "peca e figura": este extra cita nome e data de proposito,
+     porque quem fez e quando e a propria pergunta.
+     ⚠️ O audio pronuncia "Kilby" como "Qube" aos 3:42 e "Noyce" como "Noise".
+     A pagina escreve os nomes certos: e ela que corrige o ouvido. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/extras/index.html">← voltar pros extras</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20Kilby%20e%20Noyce%20inventaram%20o%20chip.m4a" data-duracao="973"></audio>
+    <img class="tocador__capa" src="img/primeiro-ci-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como Kilby e Noyce inventaram o chip</div>
+      <div class="tocador__fonte">Extras · 09 · Quem Fez o Primeiro Chip</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="973" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">16:13</span></div>
+  </div>
+  <div class="acoes"></div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">extras · 09</div>
+      <h1 class="reveal">Quem fez o primeiro chip</h1>
+      <p class="lede reveal">A resposta honesta é <b>dois</b>, em duas empresas, com um ano de diferença. E no fim fica claro por que não dá pra escolher um. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>Como ouvir.</b> São 10 telas. Quem está só no áudio acompanha normalmente; quem está com a página aberta vira a tela quando o áudio pedir.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal clicavel" data-abre="foto" data-legenda="Réplica do primeiro circuito integrado que funcionou · foto: Florian Schäffer, CC BY-SA 4.0">
+      <span class="selo">imagem real</span>
+      <img src="img/primeiro-ci-real.jpg" alt="Réplica do primeiro circuito integrado: uma lasca de material com fios finos soldados por cima">
+      <figcaption>Réplica do primeiro circuito integrado · foto: Florian Schäffer, CC BY-SA 4.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o problema da época</div>
+    <h2 class="reveal">A tirania dos números</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma placa de peças soltas, cada perna com seu ponto de solda · foto: ArnoldReinhold, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/placa-solda-real.jpg" alt="Placa de circuito dos anos 1960 com transistores, resistores e capacitores soltos soldados um a um">
+        <figcaption>Cada peça numa embalagem, cada perna num ponto de solda · foto: ArnoldReinhold, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Um projeto com dez mil transistores não pede dez mil soldas: cada peça tem várias pernas, então são <b>dezenas de milhares de pontos</b>, todos feitos por mão humana, um de cada vez.</p>
+    <div class="nota-cena reveal">cada ponto é um lugar onde pode falhar, e a montagem passa a custar mais que as peças. Quanto melhor o projeto no papel, mais impossível de montar</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1958 · Texas Instruments</div>
+      <h2 class="reveal">O homem que ficou sozinho</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Jack Kilby, recém-contratado como engenheiro</div></div>
+        <div class="item reveal"><div class="rotulo">o acaso</div><div class="texto">novato não tinha direito às férias coletivas: a fábrica viajou e ele ficou num laboratório vazio</div></div>
+        <div class="item reveal"><div class="rotulo">a ideia</div><div class="texto">se transistor, resistor e capacitor podem ser feitos do mesmo material, podem ser feitos no <b>mesmo pedaço</b></div></div>
+        <div class="item reveal"><div class="rotulo">por que ninguém tinha feito</div><div class="texto">um resistor de semicondutor é um resistor pior, e ninguém fabrica peça pior de propósito. Só compensa se apagar as soldas junto</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jack Kilby nos anos 1960 · foto: James R. Biard, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/kilby-real.jpg" alt="Retrato de Jack Kilby nos anos 1960">
+        <figcaption>Jack Kilby · foto: James R. Biard, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step">
+    <div class="kicker reveal">12 de setembro de 1958</div>
+    <h2 class="reveal">O dia em que funcionou</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">o que ele montou</div><div class="texto">um circuito oscilador, dos que produzem um sinal que sobe e desce sozinho, dentro de uma lasca de germânio</div></div>
+      <div class="item reveal"><div class="rotulo">a prova</div><div class="texto">ligou, e a onda apareceu na tela do osciloscópio: um circuito inteiro num pedaço só de material</div></div>
+      <div class="item reveal"><div class="rotulo">o que ainda faltava</div><div class="texto">as ligações entre as partes eram fiozinhos de ouro soldados por cima, à mão, um por um</div></div>
+      <div class="item reveal"><div class="rotulo">o veredito</div><div class="texto">provou que a ideia para em pé. Não resolvia como <b>fabricar aos milhares</b></div></div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1959 · Fairchild, na Califórnia</div>
+      <h2 class="reveal">O outro caminho</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Robert Noyce, poucos meses depois, na empresa do outro lado do país</div></div>
+        <div class="item reveal"><div class="rotulo">não é cópia</div><div class="texto">o problema era público e a saída lógica era a mesma. Ele chegou nela por outro caminho</div></div>
+        <div class="item reveal"><div class="rotulo">o que ele já tinha na mão</div><div class="texto">um processo da Fairchild: aquecido do jeito certo, o silício cria por cima uma camada de óxido, que é vidro</div></div>
+        <div class="item reveal"><div class="rotulo">pra que ela servia</div><div class="texto">proteger o circuito por baixo. Era só isso que se esperava dela</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Robert Noyce em 1959 · foto: Intel Free Press, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/noyce-real.jpg" alt="Robert Noyce em 1959, ao lado de uma placa de circuito">
+        <figcaption>Robert Noyce, 1959 · foto: Intel Free Press, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a virada</div>
+    <h2 class="reveal">Imprimir em vez de soldar</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A pastilha vista de perto: as trilhas claras são metal impresso sobre a camada isolante · foto: Cole L, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/trilhas-real.jpg" alt="Pastilha de silício ampliada, com trilhas de metal desenhadas ligando as partes do circuito">
+        <figcaption>As ligações são desenho, não fio · foto: Cole L, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A casquinha de vidro não servia só pra proteger: era um <b>chão isolado</b> em cima do circuito. E num chão isolado dá pra <b>imprimir</b> as ligações, trilhas finas de metal que descem por janelinhas até encostar no silício.</p>
+    <div class="nota-cena reveal">nenhum fio e nenhuma solda por dentro. As ligações saem no mesmo processo que faz as peças: o chip não é montado, é fabricado inteiro</div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step">
+    <div class="kicker reveal">o que veio junto</div>
+    <h2 class="reveal">A briga na justiça</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">o que aconteceu</div><div class="texto">as duas empresas pediram patente e foram parar na justiça</div></div>
+      <div class="item reveal"><div class="rotulo">quanto durou</div><div class="texto">anos, com decisões em sentidos opostos ao longo do caminho</div></div>
+      <div class="item reveal"><div class="rotulo">como terminou</div><div class="texto">num acordo em que cada uma licenciava a tecnologia da outra</div></div>
+      <div class="item reveal"><div class="rotulo">o detalhe que importa</div><div class="texto">a indústria <b>não esperou</b> a justiça decidir: enquanto o processo corria, os chips já eram fabricados e vendidos</div></div>
+    </div>
+    <p class="lede reveal">Quando uma ideia está madura, ela costuma aparecer em mais de um lugar quase ao mesmo tempo. A patente vira uma discussão sobre <b>quem escreveu primeiro</b>, não sobre quem pensou sozinho.</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">depois</div>
+      <h2 class="reveal">O que veio pra cada um</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">Noyce</div><div class="texto">saiu da Fairchild em 1968 e fundou uma empresa nova de chips, com um colega</div></div>
+        <div class="item reveal"><div class="rotulo">até quando</div><div class="texto">morreu em 1990, aos 62 anos</div></div>
+        <div class="item reveal"><div class="rotulo">Kilby</div><div class="texto">seguiu na Texas Instruments e participou do projeto da calculadora eletrônica de bolso</div></div>
+        <div class="item reveal"><div class="rotulo">2000</div><div class="texto">recebeu o Nobel de Física pelo circuito integrado. O Nobel não é dado a quem já morreu, e no discurso ele falou do trabalho de Noyce</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A carta de demissão de Noyce da Fairchild, 1968 · foto: Intel Free Press, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/carta-real.jpg" alt="A primeira página da carta de demissão datilografada de Robert Noyce na Fairchild, de 1968">
+        <figcaption>A carta de demissão, 1968 · foto: Intel Free Press, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step">
+    <div class="kicker reveal">a resposta</div>
+    <h2 class="reveal">Então quem fez?</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">Kilby resolveu</div><div class="texto">provar que um circuito inteiro funciona num pedaço só, quando isso ainda era só uma ideia defensável no papel</div></div>
+      <div class="item reveal"><div class="rotulo">Noyce resolveu</div><div class="texto">como fazer isso aos milhares, sempre igual, sem ninguém soldar nada por dentro</div></div>
+      <div class="item reveal"><div class="rotulo">qual a gente usa</div><div class="texto">o chip de hoje é feito do jeito do segundo. E o segundo só foi tentado porque o primeiro mostrou que dava</div></div>
+      <div class="item reveal"><div class="rotulo">o padrão</div><div class="texto">ter a ideia e fazer virar coisa fabricável são <b>dois trabalhos</b>, e quase nunca são a mesma pessoa</div></div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">De uma lasca de germânio pra tudo</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o tamanho da consequência</div>
+        <div class="desc">aquele pedacinho de material com um circuito inteiro dentro é a peça que está hoje dentro de praticamente tudo que funciona com eletricidade</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">e o que a história tem de bom</div>
+        <div class="desc">não foi um gênio sozinho numa noite. Foi um problema que a área inteira conhecia, duas cabeças atacando ele quase ao mesmo tempo, e alguns anos de briga e de fábrica até virar coisa que se compra</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

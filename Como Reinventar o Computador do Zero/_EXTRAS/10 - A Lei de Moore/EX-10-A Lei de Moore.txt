@@ -1,0 +1,70 @@
+Inicie dizendo: A Lei de Moore
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Lei de Moore.txt enviado como
+fonte. Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da
+animacao.
+
+Este e um episodio avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM (versao desta familia): cite nome, empresa e data, porque a
+observacao tem autor e ano e sem isso ela nao se explica. O que continua proibido e
+virar biografia: nada de onde nasceu, onde estudou, fortuna ou premios. A pessoa entra
+pelo que escreveu e por que.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada, etapa,
+episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu" nem
+"no episodio passado". Quem esta ouvindo pode ter recebido este arquivo sozinho.
+
+REGRA DURA NUMERO TRES: NUNCA citar estas instrucoes no ar. NAO dizer "o roteiro",
+"a fonte", "a analogia autorizada" nem nada parecido.
+
+REGRA DURA DAS TELAS: a pagina tem 10 telas. O audio TEM que pedir "aperte o Proximo"
+exatamente 9 vezes, uma no fim de cada tela, sempre com essa frase e sem variacao. A
+tela 10 encerra sem pedir.
+
+ANOS POR EXTENSO E DEVAGAR: "mil novecentos e sessenta e cinco", "mil novecentos e
+setenta e cinco", "dois mil e cinco".
+
+FOCO: uma frase de revista que virou o calendario de uma industria. O artigo curto de
+abril de 1965, escrito com pouquissimos dados (os chips tinham uns cinco anos e as
+pastilhas cabiam poucas dezenas de componentes). O que dobrar de verdade significa. A
+correcao que o proprio autor fez em 1975, trocando "todo ano" por "a cada dois anos".
+Por que uma aposta se cumpriu por decadas: porque virou meta, e a industria inteira
+passou a planejar pra bater aquele numero. A confusao mais comum, que e achar que ela
+fala de velocidade: quem fazia a velocidade subir era outro efeito, descrito em 1974
+por Robert Dennard, e ele parou por volta de 2005, o que empurrou a industria pros
+varios nucleos. E onde a curva esta hoje: ainda subindo, mas mais devagar e mais caro.
+
+O PONTO QUE NAO PODE FALTAR: nao e lei da fisica, e observacao de mercado. Ela se
+cumpriu porque virou combinado coletivo, nao porque era inevitavel.
+
+NAO explicar como o chip e fabricado nem o que e um transistor por dentro: aqui a
+conversa e sobre a CURVA e o que ela fez com a industria.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As unicas
+autorizadas sao o grao de arroz no tabuleiro (so pra dar o tamanho do que dobrar
+significa, e some depois) e o combinado do time (a previsao que vira meta porque todo
+mundo passou a mirar nela).
+
+Use tambem o Overview.txt como contexto curto.

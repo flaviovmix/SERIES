@@ -1,0 +1,85 @@
+Inicie dizendo: O Microprocessador
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Microprocessador.txt enviado
+como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o terceiro episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie Como
+Reinventar o Computador do Zero. O episodio anterior juntou o circuito inteiro num
+pedaco so de cristal e mostrou que, a partir do circuito integrado, encolher ficou
+barato. Mas cada chip daquela epoca fazia uma coisa so, e um computador continuava
+sendo uma placa grande com dezenas de chips diferentes, cada um desenhado do zero.
+
+ESTE EPISODIO COBRE DE 1969 A 1974. Dizer esse intervalo logo na abertura e, no
+encerramento, dizer em que ano o episodio para.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 11 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 10 vezes, uma no fim de cada tela,
+na ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao.
+NAO juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1
+que a pagina tem 11 telas e que quem esta so ouvindo acompanha normalmente.
+
+ANOS POR EXTENSO E DEVAGAR. Dizer "mil novecentos e sessenta e nove", "mil novecentos
+e setenta e um", "mil novecentos e setenta e quatro". Ano dito rapido sai embolado e
+vira outro numero.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu" nem nada parecido. As analogias entram como ideia de quem esta falando,
+sem apresentar de onde vieram.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa. NAO convidar
+ninguem a mexer, girar ou abrir nada.
+
+FOCO: a troca do chip sob medida pelo chip generico comandado por programa. A
+encomenda de uma familia de calculadoras, em mil novecentos e sessenta e nove, com
+mais de dez pastilhas sob medida. A contraproposta de fazer um chip que sabe o basico
+e guardar a lista de ordens numa memoria separada. O reconhecimento de que isso e o
+programa que mora na memoria, de mil novecentos e quarenta e oito, agora dentro de uma
+pastilha. O ciclo do processador: busca a ordem, entende, faz, avanca. Mil novecentos
+e setenta e um: um processador completo num chip, quatro bits por vez, cerca de dois
+mil e trezentos transistores, vendido como um conjunto de quatro pastilhas. O acordo
+comercial que liberou a venda pra qualquer cliente. A familia de oito bits de mil
+novecentos e setenta e dois e mil novecentos e setenta e quatro, e o preco caindo de
+milhares pra dezenas de dolares. E a peca indo parar em tudo que nao e computador.
+
+O PONTO QUE NAO PODE FALTAR: a economia se inverte. Passa a sair mais barato comprar
+um chip generico de prateleira e ESCREVER um programa do que desenhar chip novo pra
+cada produto. O hardware vira peca igual pra todo mundo e a diferenca entre um produto
+e outro passa a morar no software.
+
+SEM BIOGRAFIA. Esta e a trilha principal da serie. NAO citar nome proprio de
+engenheiro, onde nasceram, onde estudaram, premios nem brigas pessoais. As empresas
+podem ser citadas; as pessoas nao.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+NAO explicar computador pessoal, interface grafica nem internet: sao a etapa seguinte.
+A ultima tela so deixa a pergunta no ar.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As unicas
+autorizadas sao a chave de fenda com ponteiras trocaveis (o chip generico contra o
+chip sob medida), a receita e a cozinha (a memoria guarda a lista de ordens, o
+processador executa linha por linha) e a placa cheia de chips diferentes, vinda do
+episodio anterior.
+
+Use tambem o Overview.txt como contexto curto.

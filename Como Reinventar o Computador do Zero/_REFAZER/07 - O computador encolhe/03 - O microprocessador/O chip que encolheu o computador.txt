@@ -1,0 +1,7 @@
+Titulo: O chip que encolheu o computador
+Notebook: 07-03-O microprocessador
+
+Descricao:
+Estes documentos detalham a transição tecnológica entre 1969 e 1974, marcando o surgimento do microprocessador como uma peça genérica e acessível. A narrativa descreve como a indústria abandonou chips especializados e caros em favor de um componente único capaz de realizar tarefas variadas através de software. Essa mudança inverteu a lógica econômica da época, tornando mais barato programar ordens em uma memória do que projetar novos hardwares para cada função. Com a chegada das versões de oito bits, o processador tornou-se um item de catálogo presente em diversos aparelhos cotidianos, além dos computadores. Os textos funcionam como um roteiro estruturado para explicar como a computação encolheu até caber em uma pastilha de silício. Ao final, a série contextualiza que, embora a tecnologia já fosse compacta e barata, ela ainda permanecia restrita a ambientes corporativos e laboratoriais.
+
+Link: https://notebook.google.com/notebook/4bbf9f24-db96-439d-9226-cbdd19d95146

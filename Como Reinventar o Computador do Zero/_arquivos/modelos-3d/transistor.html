@@ -8,19 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./_base-modelo-3d.css">
-<style>
-/* A leitura e a corrente do coletor (PASSA/BLOQUEADA) com a base embaixo; a
-   palavra nao cabe ao lado da meta na largura do painel, entao as duas empilham.
-   So aqui, pra nao mexer nos outros modelos. */
-.linha-total.estado{flex-direction:column; align-items:flex-start; gap:2px}
-.linha-total.estado .num{font-size:30px}
-.linha-total .casas b{font-weight:600; color:var(--ink)}
-.linha-total .casas .quente{color:#b8741a}
-@media (max-width:700px){
-  .linha-total.estado{flex-direction:row; align-items:baseline}
-  .linha-total.estado .num{font-size:22px}
-}
-</style>
 </head>
 <body>
 
@@ -76,7 +63,7 @@ const palco = montaPalco({
   distMin: 9,
   orbitaMin: 4.5,
 });
-const { scene, camera, renderer, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+const { scene, camera, renderer, materiais, bloco, cilindro, criaRotulo, redimensiona, inicia, aoClicar, medidaDeQA } = palco;
 
 // ---------- materiais proprios da peca ----------
 const metalEscuro = materiais.metal(0x4a4d52, { roughness: 0.55 });
@@ -92,14 +79,6 @@ const fioCarga = new THREE.MeshStandardMaterial({ color: 0x3a5a3f, roughness: 0.
 const transistor = new THREE.Group();
 scene.add(transistor);
 
-function cilindro(r, h, mat, x, y, z, eixo = 'y') {
-  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 32), mat);
-  if (eixo === 'x') m.rotation.z = Math.PI / 2;
-  if (eixo === 'z') m.rotation.x = Math.PI / 2;
-  m.position.set(x, y, z);
-  m.castShadow = true; m.receiveShadow = true;
-  return m;
-}
 
 // ---------- base da montagem ----------
 const base = bloco(7.4, 0.4, 3.4, materiais.madeiraEscura, 0.08);
@@ -408,26 +387,20 @@ inicia((dt) => {
 });
 
 // ---------- gancho de QA ----------
-function pixelDe(v3) {
-  const p = v3.clone().project(camera);
-  const r = renderer.domElement.getBoundingClientRect();
-  return { x: (p.x + 1) / 2 * r.width + r.left, y: (1 - p.y) / 2 * r.height + r.top };
-}
 window.__transistor = {
   ligaBase: (liga) => ligaBase(liga),
   pulsar: (hz) => pulsar(hz),
   estado: () => ({ ...estado, batendo: !!batendo }),
   parado: () => !batendo,
   pixels: () => {
-    const hud = document.querySelector('.hud').getBoundingClientRect();
     const pecas = {
-      cristal: pixelDe(new THREE.Vector3((E_DE + C_ATE) / 2, Y0 + ALT / 2, 0)),
-      lampada: pixelDe(LAMPADA),
-      chave: pixelDe(alvoChave.position),
-      real: pixelDe(real.position),
+      cristal: new THREE.Vector3((E_DE + C_ATE) / 2, Y0 + ALT / 2, 0),
+      lampada: LAMPADA,
+      chave: alvoChave.position,
+      real: real.position,
     };
-    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = pixelDe(s.position); });
-    return { pecas, hud: { left: hud.left, top: hud.top, right: hud.right, bottom: hud.bottom }, tela: { w: innerWidth, h: innerHeight } };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = s.position; });
+    return medidaDeQA(pecas);
   },
 };
 

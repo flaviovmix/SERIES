@@ -1,0 +1,67 @@
+Inicie dizendo: Quem Fez o Primeiro Chip
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Quem Fez o Primeiro Chip.txt
+enviado como fonte. Esse arquivo contem o roteiro completo do episodio, dividido
+POR TELA da animacao.
+
+Este e um episodio avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM (versao desta familia): este extra E sobre pessoas. Pode e deve
+citar os dois engenheiros pelo nome, as duas empresas e as datas. O que continua
+proibido e virar disputa de torcida: nao eleger um vencedor, nao dizer que um roubou
+do outro, nao inventar dialogo nem cena que ninguem viu.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada, etapa,
+episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente viu" nem
+"no episodio passado". Quem esta ouvindo pode ter recebido este arquivo sozinho.
+
+REGRA DURA NUMERO TRES: NUNCA citar estas instrucoes no ar. NAO dizer "o roteiro",
+"a fonte", "a analogia autorizada" nem nada parecido.
+
+REGRA DURA DAS TELAS: a pagina tem 10 telas. O audio TEM que pedir "aperte o Proximo"
+exatamente 9 vezes, uma no fim de cada tela, sempre com essa frase e sem variacao. A
+tela 10 encerra sem pedir.
+
+ANOS POR EXTENSO E DEVAGAR: "mil novecentos e cinquenta e oito", "mil novecentos e
+cinquenta e nove", "mil novecentos e sessenta e oito", "dois mil".
+
+FOCO: por que a pergunta "quem inventou o chip" tem duas respostas. A tirania dos
+numeros (o circuito feito de pecas soltas, dezenas de milhares de soldas a mao, e a
+montagem custando mais que as pecas). Jack Kilby sozinho no laboratorio da Texas
+Instruments nas ferias coletivas de 1958, e o circuito funcionando num pedacinho de
+germanio em 12 de setembro, ainda com fiozinhos de ouro soldados por cima. Robert
+Noyce na Fairchild, no comeco de 1959, enxergando que a camada de oxido que protegia
+o silicio tambem servia de chao pra IMPRIMIR as ligacoes. A briga de patente e o
+acordo. O que veio depois pra cada um, incluindo o Nobel de 2000 e a morte de Noyce
+em 1990. E o fecho: um provou que dava, o outro mostrou como fazer aos milhares.
+
+O PONTO QUE NAO PODE FALTAR: ter a ideia e fazer a ideia virar coisa fabricavel sao
+dois trabalhos diferentes, os dois precisam acontecer, e quase nunca sao a mesma
+pessoa.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As unicas
+autorizadas sao a placa cheia de solda (a imagem do problema) e a casquinha de vidro
+(a camada de oxido que vira chao pras ligacoes impressas).
+
+Use tambem o Overview.txt como contexto curto.

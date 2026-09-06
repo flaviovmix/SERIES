@@ -1,0 +1,291 @@
+Inicie dizendo: O Microprocessador
+---------------
+
+Este e o terceiro episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior juntou o circuito inteiro
+num pedaco so de cristal e mostrou que, dali em diante, encolher ficou barato. Mas
+cada chip daquela epoca fazia uma coisa so, e um computador continuava sendo uma
+placa grande com dezenas de chips diferentes.
+
+ESTE EPISODIO COBRE DE 1969 A 1974. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou.
+
+REGRA DURA DAS TELAS. Este episodio tem 11 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 10 vezes, uma no fim de cada tela, na ordem. A frase e sempre
+essa, "aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga
+adiante" nem nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so,
+NAO adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta
+ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um
+pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 2, 3 e 4. Sao a encomenda, a contraproposta e o
+reconhecimento de que a contraproposta e uma ideia velha da serie. As tres contam a
+mesma virada e a tentacao de junta-las e grande. Nao juntar: cada uma tem o seu
+pedido de Proximo, e cada uma adiciona uma coisa so.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e sessenta e nove",
+"mil novecentos e setenta e um", "mil novecentos e setenta e quatro". Ano dito rapido
+em digito sai embolado e o ouvinte entende outro numero.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que
+a gente recebeu", "conforme o documento" nem nada parecido. As analogias sao usadas
+como se fossem ideia de quem esta falando, sem apresentar de onde vieram. (No episodio
+anterior o apresentador disse "aquela analogia que a gente tem no roteiro" e quebrou a
+conversa.)
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir
+ou mexer em peca nenhuma na capa da pagina. As telas sao ilustracoes e fotos.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de extras.
+A principal so carrega o que a proxima peca precisa. Todo aprofundamento mora num
+extra avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. As pessoas entram so pelo que fizeram e por que.
+  Nada de nome proprio de engenheiro, onde nasceram, onde estudaram, premios ou
+  brigas. As EMPRESAS podem ser citadas; as pessoas nao.
+- NAO tem gancho de extra neste episodio. Nao anunciar episodio extra nenhum.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A ferramenta sob medida contra a ferramenta com ponteiras trocaveis: um chip
+  especializado e uma chave de fenda feita pra um parafuso so; o microprocessador e
+  a chave com ponteiras, sempre a mesma, e a ponteira e o programa.
+- A receita e a cozinha: a memoria guarda a lista de ordens, que e a receita, e o
+  processador e a cozinha que le a receita linha por linha e faz. Trocar de prato e
+  trocar a receita, nao trocar de cozinha.
+- A placa cheia de chips diferentes, que vem do episodio anterior: e a imagem do que
+  este episodio substitui.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - UM CHIP PRA CADA COISA
+
+Retomar em duas frases onde a serie parou: o circuito integrado juntou o circuito
+inteiro numa pastilha so, e a partir dele encolher ficou barato em vez de caro.
+
+Dizer o que ainda estava ruim: cada chip daquela epoca fazia uma coisa so. Um fazia
+uma conta, outro guardava um pedaco de memoria, outro contava pulso. Uma maquina era
+uma placa grande com dezenas de chips diferentes, e cada um deles precisava ser
+desenhado do zero pro trabalho que ia fazer.
+
+Dizer o custo disso em uma frase clara: produto novo significava projeto de chip
+novo, e projeto de chip e caro e demorado. So valia a pena se fosse vender muito.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e sessenta e
+nove a mil novecentos e setenta e quatro.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 11 telas, que quem esta
+so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela
+quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra ver a encomenda que forcou a questao.
+
+TELA 2 - A ENCOMENDA DA CALCULADORA
+
+Contar o pedido: em mil novecentos e sessenta e nove, uma fabricante japonesa de
+calculadoras procura uma empresa americana de chips com uma encomenda. Ela quer uma
+familia de calculadoras, cada modelo com funcoes diferentes, e pede um conjunto de
+chips sob medida, mais de dez pastilhas diferentes, cada uma com a sua funcao gravada
+no silicio.
+
+Dizer por que aquilo era um mau negocio pros dois lados: e muito projeto de chip pra
+uma venda que ninguem sabia se ia acontecer. E, pior, se o cliente quisesse mudar
+qualquer coisa num modelo, era chip novo, do comeco.
+
+Dizer o incomodo de fundo, que e o assunto do episodio: gravar a funcao no silicio
+significa que a peca so serve pra aquilo. Uma calculadora de mesa e uma balanca de
+padaria pediriam dois conjuntos de chips completamente diferentes, mesmo fazendo
+quase a mesma coisa por dentro, que e somar.
+
+Fechar pedindo o Proximo pra ouvir a contraproposta.
+
+TELA 3 - A CONTRAPROPOSTA
+
+Explicar a virada com todas as letras: em vez de gravar cada funcao no silicio, fazer
+UM chip que saiba fazer o basico, somar, subtrair, comparar, mover numero de um lugar
+pro outro, e guardar em outra pastilha, de memoria, a LISTA DE ORDENS que diz em que
+ordem fazer essas coisas.
+
+Dizer o que isso muda: o mesmo chip serve pra qualquer modelo de calculadora. O que
+muda de um produto pro outro nao e a peca, e o conteudo da memoria.
+
+Usar a analogia da chave de fenda: um chip especializado e uma chave feita pra um
+parafuso so, e nao serve pra mais nada. O chip generico e a chave com ponteiras
+trocaveis, sempre a mesma chave, e a ponteira e o programa.
+
+Dizer o custo da troca, com honestidade: um chip generico fazendo uma tarefa e mais
+lento e mais desajeitado que um chip desenhado so pra ela. A troca so compensa
+porque um serve pra tudo, e desenhar chip novo e caro.
+
+Fechar pedindo o Proximo pra ver por que essa ideia soa conhecida.
+
+TELA 4 - ISSO A SERIE JA VIU
+
+Dizer o reconhecimento direto: essa ideia nao e nova nesta serie. Ela e de mil
+novecentos e quarenta e oito, quando o computador aprendeu a guardar o proprio
+programa na mesma memoria dos numeros, e parou de ser recabeado a mao pra cada
+trabalho novo.
+
+Dizer o que mudou entao: a ideia e a mesma, o tamanho e que e outro. O que na epoca
+ocupava uma sala inteira agora cabe numa pastilha do tamanho de uma unha.
+
+Usar a analogia da receita e da cozinha: a memoria guarda a receita, e o processador
+e a cozinha que le a receita linha por linha e executa. Pra fazer outro prato, troca
+a receita, nao a cozinha.
+
+Dizer o que isso significa pra serie inteira, sem exagero: as pecas da maquina
+mudaram tres vezes, rele, valvula, transistor, chip. A ideia de como a maquina
+funciona nao mudou desde mil novecentos e quarenta e oito.
+
+Fechar pedindo o Proximo pra abrir a peca e ver o que ela faz por dentro.
+
+TELA 5 - O QUE ELE FAZ, PASSO A PASSO
+
+Explicar o ciclo do processador em quatro movimentos, devagar e na ordem: ele busca a
+proxima ordem na memoria; entende o que aquela ordem manda fazer; faz; e avanca pra
+ordem seguinte. Depois recomeca.
+
+Dizer que e so isso, e que a peca nao faz mais nada alem disso. A maquina inteira,
+qualquer programa que ja rodou em qualquer computador, e essa volta repetida um
+numero absurdo de vezes por segundo.
+
+Dizer o que precisa existir dentro dele pra essa volta acontecer: um lugar pra guardar
+por onde ele esta na lista, um lugar pra fazer a conta, e alguns escaninhos pequenos
+pra segurar os numeros do momento. Tudo isso ja existia em computador, so que
+espalhado por uma placa inteira. Aqui, tudo numa peca.
+
+Fechar pedindo o Proximo pra ver a peca aparecer.
+
+TELA 6 - MIL NOVECENTOS E SETENTA E UM
+
+Contar: em mil novecentos e setenta e um sai a peca. Um processador completo dentro
+de um unico chip, com cerca de dois mil e trezentos transistores, num pedaco de
+silicio que cabe folgado numa unha.
+
+Dizer como ele foi vendido: nao sozinho, e sim como um conjunto de quatro pastilhas,
+o processador mais as memorias que guardam o programa e as contas do momento. O
+conjunto e que faz um computadorzinho.
+
+Dizer o que ele tinha de limitado, sem depreciar: ele trabalhava com quatro bits de
+cada vez, o suficiente pra um algarismo decimal. Era uma peca feita pra calculadora,
+e nao pra rodar um computador de verdade.
+
+Dizer a frase que importa: pela primeira vez, a parte que pensa da maquina deixou de
+ser uma placa e passou a ser um componente. Uma peca que da pra comprar avulsa e
+espetar num soquete.
+
+Fechar pedindo o Proximo pra ver o que quase impediu isso de virar produto.
+
+TELA 7 - O DIREITO DE VENDER PRA QUALQUER UM
+
+Contar o detalhe comercial, que decidiu a historia: a peca tinha sido paga pela
+fabricante de calculadoras, e o contrato dava a ela o uso exclusivo. Do jeito que
+estava, aquele chip so ia existir dentro de calculadora.
+
+Contar o desfecho, sem drama: a fabricante estava com dificuldade financeira e pediu
+desconto. A empresa de chips deu o desconto em troca do direito de vender a peca pra
+qualquer outro cliente, contanto que nao fosse calculadora.
+
+Dizer por que essa e uma tela e nao uma nota de rodape: e isso que transforma um
+componente encomendado num produto de catalogo. Sem esse acordo, o microprocessador
+teria nascido e ficado preso num produto so.
+
+Fechar pedindo o Proximo pra ver o que veio logo depois.
+
+TELA 8 - A FAMILIA DE OITO BITS
+
+Contar a sequencia curta: no ano seguinte, mil novecentos e setenta e dois, sai uma
+peca que trabalha com oito bits de cada vez, o suficiente pra um caractere de texto
+inteiro. Em mil novecentos e setenta e quatro sai a versao que vira padrao, e
+concorrentes lancam as deles logo em seguida.
+
+Dizer o que muda com oito bits, em uma frase util: com quatro bits a peca conta ate
+quinze; com oito, ela ja lida com um numero grande de uma vez e com letra. E o
+suficiente pra rodar um computador de proposito geral, e nao so uma calculadora.
+
+Dizer o movimento do preco, que e o que interessa: a peca sai de custar milhares de
+dolares e chega a custar dezenas. Quando a parte que pensa custa dezenas de dolares,
+muda quem consegue construir um computador.
+
+Fechar pedindo o Proximo pra ver a conta virar do avesso.
+
+TELA 9 - A ECONOMIA SE INVERTE
+
+Dizer a inversao com todas as letras: antes, fazer um produto eletronico era desenhar
+o circuito daquele produto. Agora sai mais barato comprar um chip generico de
+prateleira e ESCREVER um programa dizendo o que ele deve fazer.
+
+Dizer as duas consequencias, uma de cada vez.
+
+Primeira: o hardware vira commodity. Duas empresas concorrentes compram a mesma peca,
+no mesmo catalogo, pelo mesmo preco.
+
+Segunda: a diferenca entre um produto e o outro passa a morar no software. Programa
+deixa de ser um detalhe de quem opera a maquina e vira o produto em si. A serie viu o
+software nascer como tradutor, no episodio do compilador; e aqui que ele vira o lugar
+onde o valor mora.
+
+Fechar dizendo que essa e a virada que mais explica o mundo de hoje, sem enfeitar
+mais que isso.
+
+Fechar pedindo o Proximo pra ver onde essa peca foi parar.
+
+TELA 10 - ELE FOI PARAR EM TUDO
+
+Contar o efeito colateral que ninguem tinha encomendado: como a peca era generica e
+barata, ela nao ficou dentro de computador. Ela foi parar em caixa registradora,
+balanca, semaforo, elevador, forno, maquina de lavar, painel e injecao de carro,
+brinquedo.
+
+Dizer o que esses aparelhos tem em comum: nenhum deles se parece com um computador, e
+todos eles sao um computador pequeno rodando um programa fixo.
+
+Dizer o numero sem inventar dado: a maior parte dos processadores fabricados no mundo
+nunca esteve dentro de nada que a gente chame de computador. O computador virou o uso
+mais visivel de uma peca que vai pra todo lugar.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 11 - ONDE ISTO PARA
+
+Dizer onde o episodio para: meados dos anos setenta, com o processador virando um
+componente de catalogo e a familia de oito bits pronta.
+
+Fazer o balanco da etapa inteira em duas frases: a etapa comecou com uma sala de
+valvulas quentes e termina com a parte que pensa cabendo numa peca de dezenas de
+dolares. O computador inteiro ja cabe numa placa pequena e custa o preco de um
+salario, e nao o de um predio.
+
+Dizer o que ainda falta, que e o que abre a etapa seguinte: mesmo cabendo e custando
+pouco, ele continua sendo equipamento de empresa e de laboratorio. Ninguem vende isso
+como objeto pra uma pessoa comum ter em casa, e ninguem sabe direito pra que uma
+pessoa comum usaria.
+
+Deixar a pergunta no ar, sem responder: se a peca ja e barata e ja cabe, o que falta
+pra essa maquina sair da sala da empresa e entrar na casa das pessoas?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

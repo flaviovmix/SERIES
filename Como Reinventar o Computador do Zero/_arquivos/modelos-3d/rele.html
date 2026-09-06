@@ -8,19 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./_base-modelo-3d.css">
-<style>
-/* A leitura deste modelo e o estado do contato (ABERTO/FECHADO) com a bobina
-   embaixo: uma palavra de 7 letras nao cabe ao lado da meta na largura do
-   painel, entao as duas empilham. So aqui, pra nao mexer nos outros modelos. */
-.linha-total.estado{flex-direction:column; align-items:flex-start; gap:2px}
-.linha-total.estado .num{font-size:30px}
-.linha-total .casas b{font-weight:600; color:var(--ink)}
-.linha-total .casas.acesa b{color:#b8741a}
-@media (max-width:700px){
-  .linha-total.estado{flex-direction:row; align-items:baseline}
-  .linha-total.estado .num{font-size:22px}
-}
-</style>
 </head>
 <body>
 
@@ -76,7 +63,7 @@ const palco = montaPalco({
   distMin: 9,
   orbitaMin: 4.5,
 });
-const { scene, camera, renderer, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+const { scene, camera, renderer, materiais, bloco, cilindro, criaRotulo, redimensiona, inicia, aoClicar, medidaDeQA } = palco;
 
 // ---------- materiais proprios da peca ----------
 const ferro = materiais.metal(0x8e9298, { roughness: 0.5 });
@@ -108,14 +95,6 @@ const bobinaMat = new THREE.MeshStandardMaterial({ map: texturaEnrolada(), color
 const rele = new THREE.Group();
 scene.add(rele);
 
-function cilindro(r, h, mat, x, y, z, eixo = 'y', rTop = r) {
-  const m = new THREE.Mesh(new THREE.CylinderGeometry(rTop, r, h, 32), mat);
-  if (eixo === 'x') m.rotation.z = Math.PI / 2;
-  if (eixo === 'z') m.rotation.x = Math.PI / 2;
-  m.position.set(x, y, z);
-  m.castShadow = true; m.receiveShadow = true;
-  return m;
-}
 
 // ---------- base e circuito magnetico (o ferro que fecha o caminho do ima) ----------
 const base = bloco(7.4, 0.4, 3.4, materiais.madeiraEscura, 0.08);
@@ -401,11 +380,6 @@ inicia((dt) => {
 });
 
 // ---------- gancho de QA ----------
-function pixelDe(v3) {
-  const p = v3.clone().project(camera);
-  const r = renderer.domElement.getBoundingClientRect();
-  return { x: (p.x + 1) / 2 * r.width + r.left, y: (1 - p.y) / 2 * r.height + r.top };
-}
 window.__rele = {
   liga: () => ligaBobina(true),
   desliga: () => ligaBobina(false),
@@ -415,16 +389,15 @@ window.__rele = {
   estado: () => ({ ...estado, batendo: !!batendo }),
   parado: () => !batendo && Math.abs(estado.angulo - (estado.bobina ? THETA : 0)) < 0.002,
   pixels: () => {
-    const hud = document.querySelector('.hud').getBoundingClientRect();
     const pecas = {
-      bobina: pixelDe(new THREE.Vector3(-0.3, 1.55, 0)),
-      contato: pixelDe(new THREE.Vector3(1.95, 2.2, 0)),
-      lampada: pixelDe(LAMPADA),
-      chave: pixelDe(alvoChave.position),
-      mola: pixelDe(new THREE.Vector3(0.6, 3.3, -0.8)),
+      bobina: new THREE.Vector3(-0.3, 1.55, 0),
+      contato: new THREE.Vector3(1.95, 2.2, 0),
+      lampada: LAMPADA,
+      chave: alvoChave.position,
+      mola: new THREE.Vector3(0.6, 3.3, -0.8),
     };
-    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = pixelDe(s.position); });
-    return { pecas, hud: { left: hud.left, top: hud.top, right: hud.right, bottom: hud.bottom }, tela: { w: innerWidth, h: innerHeight } };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = s.position; });
+    return medidaDeQA(pecas);
   },
 };
 

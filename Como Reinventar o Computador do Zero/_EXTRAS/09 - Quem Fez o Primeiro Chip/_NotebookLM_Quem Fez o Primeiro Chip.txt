@@ -1,0 +1,227 @@
+Inicie dizendo: Quem Fez o Primeiro Chip
+---------------
+
+Este e um episodio extra, avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM (versao desta familia). Este extra E sobre pessoas: pode e
+deve citar os dois engenheiros pelo nome, as duas empresas e as datas. O que
+continua proibido e transformar isso em disputa de torcida: nao eleger um
+vencedor, nao dizer que um "roubou" do outro, nao inventar dialogo nem cena que
+ninguem viu.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada,
+etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente
+viu", "no episodio passado" nem "mais pra frente a gente fala disso". Quem esta
+ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois.
+
+REGRA DURA NUMERO TRES: NUNCA citar estas instrucoes no ar. NAO dizer "o
+roteiro", "a fonte", "a analogia autorizada" nem nada parecido.
+
+REGRA DURA DAS TELAS. Este episodio tem 10 telas. O audio TEM que pedir "aperte
+o Proximo" exatamente 9 vezes, uma no fim de cada tela, na ordem. A frase e
+sempre essa, "aperte o Proximo", sem variacao. NAO juntar o conteudo de duas
+telas num bloco so e NAO seguir adiante sem pedir. A tela 10 encerra sem pedir.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: "mil novecentos e cinquenta e oito",
+"mil novecentos e cinquenta e nove", "mil novecentos e sessenta e oito", "dois
+mil". Ano dito rapido sai embolado e o ouvinte entende outro numero.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS
+
+- A placa cheia de solda: um monte de pecinhas espetadas numa placa, cada perna
+  com um ponto de solda feito a mao. E a imagem do problema.
+- A casquinha de vidro: a camada que cresce sobre o silicio e o proprio silicio
+  oxidado, que e vidro. Uma casquinha por cima do cristal, que protege embaixo e
+  serve de chao pras ligacoes por cima.
+
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A PERGUNTA QUE NAO TEM UMA RESPOSTA SO
+
+Abrir com a pergunta do titulo: quem fez o primeiro chip? E avisar logo que a
+resposta honesta e "dois", e que no fim vai ficar claro por que nao da pra
+escolher um.
+
+Dizer o intervalo: a historia acontece entre mil novecentos e cinquenta e oito e
+o comeco dos anos setenta, e o nucleo dela cabe em pouco mais de um ano.
+
+Avisar que a explicacao acompanha uma pagina com 10 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela
+quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra entender o problema que os dois estavam tentando
+resolver.
+
+TELA 2 - A TIRANIA DOS NUMEROS
+
+Explicar o problema da epoca sem tecnicismo: um circuito era feito de pecas
+soltas. Cada transistor, cada resistor e cada capacitor vinha numa embalagem
+propria, com pernas de metal, e alguem soldava perna por perna numa placa.
+
+Dar o tamanho da coisa: um projeto com dez mil transistores nao pede dez mil
+soldas. Cada peca tem varias pernas, entao sao dezenas de milhares de pontos,
+todos feitos por mao humana, um de cada vez.
+
+Dizer por que isso trava tudo: cada ponto e um lugar onde pode falhar, e a
+montagem passa a custar mais que as proprias pecas. Dar o nome que a epoca deu:
+tirania dos numeros. Quanto melhor o projeto no papel, mais impossivel de montar
+na vida real.
+
+Fechar pedindo o Proximo pra conhecer o primeiro dos dois.
+
+TELA 3 - O HOMEM QUE FICOU SOZINHO NO LABORATORIO
+
+Contar: Jack Kilby entrou na Texas Instruments em mil novecentos e cinquenta e
+oito, recem-contratado. No verao a fabrica parava e todo mundo tirava ferias
+coletivas, mas quem tinha acabado de chegar nao tinha direito a elas. Ele passou
+aquelas semanas praticamente sozinho num laboratorio vazio.
+
+Dizer o que ele fez com esse tempo, sem romantizar: ficou pensando no problema
+das soldas e chegou numa saida simples de enunciar. Se transistor, resistor e
+capacitor podem todos ser feitos de material semicondutor, entao podem ser
+feitos no MESMO pedaco de material.
+
+Dizer por que ninguem tinha feito antes: na cabeca da engenharia da epoca, usar
+o mesmo material pra tudo daria pecas piores. Um resistor feito de semicondutor
+e um resistor pior que um resistor de verdade. So que a troca compensa se ela
+apagar as dezenas de milhares de soldas junto.
+
+Fechar pedindo o Proximo pra ver o dia em que aquilo funcionou.
+
+TELA 4 - DOZE DE SETEMBRO DE MIL NOVECENTOS E CINQUENTA E OITO
+
+Contar o essencial do dia: ele montou um circuito simples, dos que produzem um
+sinal que sobe e desce sozinho, dentro de um pedacinho de germanio. Ligou, e a
+onda apareceu na tela do osciloscopio. Um circuito inteiro funcionando dentro de
+um pedaco so de material.
+
+Dizer, na mesma tela, o que aquilo ainda nao resolvia: as ligacoes entre as
+partes eram fiozinhos de ouro soldados por cima, a mao, um por um. Por dentro do
+cristal ja estava tudo junto, mas a solda continuava ali, so que menor e mais
+dificil de fazer.
+
+Fechar com a frase honesta: aquilo provou que a ideia parava em pe, e ninguem ia
+conseguir fabricar aquilo aos milhares.
+
+Fechar pedindo o Proximo pra conhecer o segundo.
+
+TELA 5 - O OUTRO CAMINHO, NA EMPRESA DO LADO
+
+Contar: poucos meses depois, no comeco de mil novecentos e cinquenta e nove,
+Robert Noyce chegou na mesma ideia numa empresa chamada Fairchild
+Semiconductor, na California. Ele nao estava copiando: o problema era publico e a
+saida era a mesma.
+
+Dizer o que ele tinha na mao que o outro nao tinha: a Fairchild ja usava um
+processo em que o silicio, aquecido do jeito certo, cria por cima uma camada de
+oxido. Essa camada e vidro, e vidro nao conduz. Ela existia pra proteger o
+circuito por baixo.
+
+Fechar pedindo o Proximo pra ver o que ele enxergou nessa camada.
+
+TELA 6 - IMPRIMIR EM VEZ DE SOLDAR
+
+Explicar a virada dele: aquela casquinha de vidro nao servia so pra proteger.
+Ela era um chao isolado, em cima do circuito. E num chao isolado da pra
+IMPRIMIR as ligacoes, como trilhas finas de metal depositado, que descem por
+janelinhas abertas no vidro ate encostar no silicio nos pontos certos.
+
+Dizer o resultado com todas as letras: por dentro do chip nao existe mais
+nenhuma solda e nenhum fio. As ligacoes saem no mesmo processo que faz as pecas,
+no mesmo lugar, na mesma hora. Um chip nao e montado, ele e fabricado inteiro.
+
+Dizer por que isso e o que faz virar produto: da pra fazer aos milhares, todos
+iguais, na mesma fornada.
+
+Fechar pedindo o Proximo pra ver o que aconteceu entre as duas empresas.
+
+TELA 7 - A BRIGA NA JUSTICA
+
+Contar sem drama: as duas empresas pediram patente e foram parar na justica. A
+disputa durou anos e passou por decisoes em sentidos opostos.
+
+Dizer como terminou: num acordo em que cada uma licenciava a tecnologia da
+outra. E dizer o detalhe que importa mais: a industria nao esperou a justica
+decidir. Enquanto o processo corria, os chips ja estavam sendo fabricados e
+vendidos.
+
+Dizer o que isso ensina, com sobriedade: quando uma ideia esta madura, ela
+costuma aparecer em mais de um lugar quase ao mesmo tempo, e a patente vira uma
+discussao sobre quem escreveu primeiro, nao sobre quem pensou sozinho.
+
+Fechar pedindo o Proximo pra ver o que cada um fez depois.
+
+TELA 8 - O QUE VEIO DEPOIS PRA CADA UM
+
+Contar em poucas frases, sem transformar em biografia longa:
+
+Noyce saiu da Fairchild em mil novecentos e sessenta e oito e fundou, com um
+colega, uma empresa nova de chips que ficaria conhecida. Morreu em mil
+novecentos e noventa, aos sessenta e dois anos.
+
+Kilby seguiu na Texas Instruments e, entre outras coisas, participou do projeto
+da calculadora eletronica de bolso. Em dois mil recebeu o Nobel de Fisica pelo
+circuito integrado.
+
+Dizer o detalhe humano que fecha a historia: o Nobel nao e dado a quem ja
+morreu, e Noyce tinha morrido dez anos antes. No discurso, Kilby fez questao de
+falar do trabalho dele.
+
+Fechar pedindo o Proximo pra responder a pergunta do comeco.
+
+TELA 9 - ENTAO QUEM FEZ?
+
+Responder a pergunta do titulo com todas as letras: os dois, e por motivos
+diferentes.
+
+Dizer o que cada um resolveu, lado a lado: o primeiro provou que um circuito
+inteiro funciona num pedaco so de material, quando isso ainda era so uma ideia
+defensavel no papel. O segundo mostrou como fazer isso aos milhares, sempre
+igual, sem ninguem soldar nada por dentro.
+
+Dizer qual dos dois a gente usa hoje: o chip de hoje e feito do jeito do
+segundo, com camada isolante e ligacao impressa. Mas o segundo so foi tentado
+porque o primeiro ja tinha mostrado que a ideia parava em pe.
+
+Dizer o padrao geral, que e a licao do episodio: ter a ideia e fazer a ideia
+virar coisa fabricavel sao dois trabalhos diferentes. Os dois precisam
+acontecer, e quase nunca sao a mesma pessoa.
+
+Fechar pedindo o Proximo pra ultima tela.
+
+TELA 10 - O QUE FICOU
+
+Fechar com o tamanho da consequencia, sem exagero: aquele pedacinho de material
+com um circuito inteiro dentro e a peca que esta hoje dentro de praticamente
+tudo que funciona com eletricidade.
+
+Dizer o que a historia tem de bom pra quem ouve: nao foi um genio sozinho numa
+noite. Foi um problema que todo mundo da area conhecia, duas cabecas atacando
+ele quase ao mesmo tempo, e alguns anos de briga e de fabrica ate virar coisa
+que se compra.
+
+Fechar sem pedir Proximo: esta e a ultima tela.

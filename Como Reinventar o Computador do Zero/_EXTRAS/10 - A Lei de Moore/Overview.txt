@@ -1,0 +1,51 @@
+A LEI DE MOORE - CONTEXTO
+=========================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio extra, avulso e autocontido. Nao faz parte de nenhuma sequencia: quem
+esta ouvindo pode ter recebido este arquivo sozinho.
+
+Este extra e da familia PECA E FIGURA: ele cita nome, empresa e data, porque a
+observacao tem autor e ano e sem isso ela nao se explica.
+
+O assunto: uma frase escrita em 1965 num artigo curto de revista, que nao era
+lei nenhuma, virou o calendario da industria inteira por quase sessenta anos.
+
+O que foi dito. Em abril de 1965, Gordon Moore, entao na Fairchild
+Semiconductor, escreveu um artigo curto pra revista Electronics. Ele tinha
+poucos anos de dados: os circuitos integrados existiam ha uns cinco anos e as
+pastilhas cabiam poucas dezenas de componentes. Olhando esses poucos pontos, ele
+notou que o numero de componentes que cabia numa pastilha vinha DOBRANDO
+todo ano, e apostou que continuaria assim por mais uma decada. Em 1975 ele
+revisou o ritmo pra cada dois anos, que e o numero que ficou.
+
+O que ela nao e. Nao e lei da fisica. Nao ha nada na natureza que obrigue nada a
+dobrar. E uma observacao de mercado e engenharia, quase um palpite bem
+informado, feita em cima de pouquissimos dados.
+
+Por que ela se cumpriu mesmo assim. Porque virou meta. As fabricas passaram a
+planejar as proximas geracoes pra cumprir aquele ritmo, os clientes passaram a
+esperar e a exigir esse ritmo nos contratos, e o dinheiro de pesquisa foi
+alocado pra bater aquele numero. Uma previsao que se realiza porque todo mundo
+passou a mirar nela. E o nome "lei" foi dado por outras pessoas, anos depois.
+
+O que vem junto e costuma ser confundido. A lei fala de QUANTIDADE de
+componentes por pastilha, nao de velocidade. A velocidade subiu junto por outro
+motivo, descrito em 1974 por Robert Dennard: transistor menor tambem e mais
+rapido e gasta menos energia, entao dava pra aumentar a frequencia sem
+esquentar mais. Esse segundo efeito parou por volta de 2005, e desde entao a
+frequencia dos processadores quase nao sobe. A saida foi por mais nucleos no
+mesmo chip em vez de fazer um nucleo mais rapido.
+
+Onde ela esta hoje. A contagem de transistores continuou subindo, mas o ritmo
+desacelerou e o custo por transistor parou de cair como caia. A industria passou
+a ganhar espaco de outros jeitos: empilhar camadas, colar varias pastilhas num
+pacote so, e desenhar chips especializados pra um tipo de conta. O proprio
+Moore, em vida, dizia que nenhuma exponencial dura pra sempre.
+
+O ponto que o episodio precisa deixar claro: o interessante nao e a curva ter
+existido, e ela ter virado um combinado coletivo. Uma frase de revista organizou
+o planejamento de uma industria inteira por decadas, porque todo mundo decidiu
+trata-la como promessa.
+
+Use este contexto apenas como apoio.

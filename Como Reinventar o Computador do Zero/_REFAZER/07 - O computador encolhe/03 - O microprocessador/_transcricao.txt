@@ -1,0 +1,151 @@
+# Transcricao automatica (faster-whisper small) - 15.2 min
+# Fonte: O chip que encolheu o computador.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] um microprocessador é um salto gigante exato e a gente vai cobrir aqui exatamente o período
+[00:06] que vai de 1969 a 1974 um intervalo curto mas bem intenso muito mas antes da gente mergulhar
+[00:16] nisso um aviso prático de funcionamento esta nossa conversa acompanha uma página de
+[00:21] animação com 11 telas isso 11 telas então quem tá apenas ouvindo no fone de ouvido
+[00:27] no trânsito pode acompanhar normalmente porque a gente explica absolutamente tudo por aqui não
+[00:33] perde nada aham e quem tá com a página aberta e na frente a regra é virar a tela apenas quando
+[00:39] ouviu o pedido exato assim ninguém toma spoiler visual do papo né fica tudo sincronizado bom
+[00:46] recapitulando a nossa última conversa o computador encolheu encolheu bastante a gente falou daquela
+[00:52] energia da placa cheia de chips diferente o circuito integrado baratiou muito o encolhimento
+[00:58] mas tinha um limite ali tinha e um limite chato cada chip daquela placa fazia uma coisa só tipo
+[01:06] um contava pulso elétrico outro vizinho dele só guardava um pedaço de memória então o computador
+[01:13] ainda era na prática uma placa bem grande lotada com dezenas de chips totalmente diferente
+[01:19] o carais um problema lógico gigantesco de custo de inovação quer dizer se cada chip novo
+[01:25] precisava ser desenhado literalmente do zero no silício lançar um produto novo no mercado era
+[01:31] caro demais muito caro e muito demorado tipo meses de projeto para uma peça só a conta só
+[01:37] fechava se a venda fosse na casa dos milhões de unidades se fosse um produto menor a empresa
+[01:42] ia falência antes de lançar e para ver como isso vai mudar aperte o próximo bom a situação
+[01:48] vai mudar num cenário bem específico no ano de 1969 o que acontece nesse ano uma fabricante
+[01:56] japonesa de calculadoras procura uma empresa americana de chips e eles chegam com uma encomenda
+[02:02] gigante eles queriam lançar uma família inteira de calculadoras novas família de
+[02:08] calculadoras tipo modelos variados para o mercado exato uma mais simples para loja outra
+[02:14] científica e o detalhe é que cada modelo teria funções completamente diferentes o que
+[02:20] exigia na época um conjunto de chips feito sob medida estamos falando de mais de 10 pastilas
+[02:27] de silício diferentes para cada modelo de calculadora nossa mais de 10 por modelo mas isso
+[02:33] não é de uma ineficiência absurda total quer dizer desenhar tantos chips novos do zero
+[02:39] para uma venda que ninguém nem sabia se é dar certo soa como um péssimo negócio para todo
+[02:45] mundo envolvido sim um risco financeiro enorme e sei lá qualquer mudança mínima que os japoneses
+[02:52] quisessem depois tipo um botão a mais no produto exigiria jogar o chip fora e recomeçar o desenho
+[02:58] do zero esse era o grande incômodo de fundo dos engenheiros americanos gravar a função direto
+[03:04] físico do silício amarrava a peça para sempre pensa sim uma calculadora e uma balança
+[03:10] eletrônica elas precisariam de chips totalmente diferentes fabricados para elas mesmo que no fundo
+[03:17] se a gente pensar bem as duas máquinas só façam contas de somar verdade mas a peça ficava
+[03:22] presa na função física e para gente ver o plano para sair dessa armadilha aperte o
+[03:27] próximo então a empresa americana percebeu que é da ruim eles decidem fazer uma mudança
+[03:32] e apresenta uma contra proposta qual foi a ideia eles falaram bom em vez de gravar cada função
+[03:39] matemática direto no silício de dezenas de chips diferentes porque a gente não faz um único chip
+[03:45] um só é um chip genérico que saiba fazer só o básico tipo somar subtrair mover os números de
+[03:53] um lado para o outro mas e as funções complexas da calculadora aí é que tá sacada a lista de
+[03:59] funções do que esse chip deve fazer ficaria guardada numa pastilha de memória totalmente
+[04:04] separada dele ah entendi deixa eu trazer aquela nossa analogia autorizada para ficar mais visual
+[04:12] manda o chip antido o sob medida é como uma daquelas chaves de fenda interissas feitas para
+[04:20] apertar um parafuso só exato já esse chip genérico novo é como uma chave de fenda com
+[04:26] trocáveis a base a força física é sempre a mesma peça o que muda a ponteira que você encaixa
+[04:33] que no caso seria o programa perfeito o mesmo chip serve para qualquer modelo a diferença mora
+[04:40] só no conteúdo que está gravado lá na memória mas tem um preço nessa troca né eu imagino que
+[04:45] não seja perfeito tem a gente precisa ser honesto um chip genérico é mais lento ele é mais
+[04:50] aceitado que um chip especializado faz sentido mas bom a troca compensa muito financeiramente
+[04:57] porque um modelo só de chip atende o mercado inteiro evita aquele custo absurdo de desenhar
+[05:02] chips novos o tempo todo é o custo benefício grita e e para a gente puxar um fio histórico que
+[05:08] conecta tudo isso aperte o próximo sabe que eu tô com uma sensação de familiaridade aqui como
+[05:14] assim essa ideia de guardar lista de ordens na memória junto com os números a gente já
+[05:19] está na série isso não é uma invenção novinha dessa época olha você tá certíssima é um
+[05:25] retorno ao passado na verdade eu sabia é a mesmíssima ideia lá do ano de 1948 a gringo de
+[05:33] diferença agora algumas décadas depois é só escala física sim o tamanho mudou completamente
+[05:39] exato o que antes ocupava uma sala inteira agora cabe numa pastilha do tamanho da unha do
+[05:45] pedinho é a nossa analogia da cozinha de novo isso a memória guarda receita e o processador é a
+[05:51] cozinha ele vai lá ler a receita linha por linha e prepara o prato justamente e se você quer mudar
+[05:57] refeição você simplesmente troca receita de papel você não precisa demolir e reconstruir a
+[06:02] cozinha inteira esse é um ótimo resumo histórico se a gente olhar para trás as peças
+[06:07] físicas mudarão três vezes sim a gente teve o relé a válvula o transistor e agora o chip
+[06:14] mas a ideia central de funcionamento não muda em nada desde 1948 é uma continuidade impressionante
+[06:20] e pra gente abrir essa peça e ver como ela trabalha lá dentro aperte o próximo então lá dentro a
+[06:28] rotina do processador acontece em quatro movimentos muito bem marcados passo a passo isso primeiro
+[06:35] ele busca a ordem lá na memória segundo ele entende essa ordem terceiro ele executa e quarto
+[06:41] lança para a próxima ordem da lista e aí recomeço e aí recomeço o ciclo todo de novo milhões de
+[06:46] vezes espera é só isso mesmo ele não faz mais absolutamente nada mais nada é uma simplicidade
+[06:54] muito escondida sério qualquer máquina ou qualquer programa da história é só essa mesma
+[06:59] voltinha repetida o tempo todo sem tirar nem por mas claro para isso funcionar tem coisas bem
+[07:05] fábricas lá dentro da peça o que tem dentro dele bom tem o lugar para marcar o ponto na lista
+[07:11] para ele não se perder tem lugar para fazer a conta de fato tá e tem os escaninhos pequenos
+[07:17] para segurar os números do momento o detalhe é que tudo isso já existia antes espalhado por
+[07:22] aquela placa grande né a verdade a grande mudança é que agora está tudo condensado em um pedaço
+[07:28] só de material e para ver quando isso finalmente ganha o mundo aperte o próximo a gente marca
+[07:34] e disse no mercado no ano de 1971 o lançamento oficial isso em 1971 a peça sai é um processador
+[07:43] completo operando num único chip o al ele tinha ali cerca de dois mil e trezentos transistores
+[07:49] num pedacinho de silício que cabia folgado numa unha mas pelo que eu li ele não era vendido
+[07:55] sozinho tipo uma peça isolada na prateleira não era ele vinha num pacote de quatro pastilhas
+[08:01] tinha o processador e as pastilhas de memória o conjunto inteiro junto é que formava o computador
+[08:06] e sobre as limitações iniciais dele porque devia ser bem básico né sim a gente explica isso sem
+[08:13] depreciar a tecnologia claro ele trabalhava mastigando só quatro bits por vez quatro bits é bem
+[08:19] pouco é mas isso bastava certinho para processar um algarismo decimal a gente tem que
+[08:25] lembrar que era uma peça pensada para calculadoras não para computadores gigantes e
+[08:30] claro faz todo sentido pro objetivo da encomenda original exatamente mas de qualquer forma a grande
+[08:36] mudança já tinha acontecido é um marco histórico com certeza porque tipo pela primeira vez a parte
+[08:42] que pensa na máquina deixou de ser uma placa inteira enorme e viram cinco as componentes de
+[08:47] prateleira que você vai lá e espeta num soquete e para ver a briga contratual que quase impidiu
+[08:52] isso aperte o próximo a gente precisa falar de um detalhe comercial crucial aqui a fabricante
+[08:57] japonesa tinha pago pelo projeto daquele chip e por isso ele tinha um contrato de exclusividade
+[09:03] da né tinha um total exclusividade o chip genérico tava legalmente condenado a viver
+[09:09] apenas dentro de calculadoras japonesas pra sempre nossa mas pelo que a gente sabe da história
+[09:15] da tecnologia isso não se manteve qual foi o acordo para destravar isso foi pura sorte do
+[09:21] destino a fabricante japonesa começou a ter dificuldades financeiras na época e eles
+[09:27] estavam na porta dos americanos pedindo um desconto no preço das peças a famosa renegociação
+[09:32] e a empresa de chips americana topou topou desconto mas exigiu algo enorme em troca eles queriam
+[09:39] o direito de vender a peça para outros clientes no mercado aberto com alguma restrição a única
+[09:44] regra era que esses outros clientes não fizessem calculadoras para não concorrer com
+[09:49] japoneses irania um aperto financeiro de uma empresa foi o que literalmente salvou o
+[09:55] ambiente transformou o negócio sob medida num produto de catálogo para o mundo todo e
+[10:02] para ver a explosão que isso causou aperte o próximo e a evolução a partir desse acordo foi
+[10:07] muito rápida muito mesmo logo no ano seguinte em 1972 já sai a peça de oito bits dobrou a
+[10:14] capacidade dobrou e aí no ano de 1974 sai a versão que vira padrão mundial de fato logo em
+[10:21] que começam a sair vários produtos de empresas concorrentes copiando a ideia mas deixa eu esclarecer
+[10:27] uma diferença prática aqui a gente falou que quatro bits só contavam até 15 isso oito bits já
+[10:34] permitem 256 opções o que permite lidar com números grandes de uma vez e até formar
+[10:41] caracteres de texto letras mesmo perfeito e isso é a chave de tudo esse salto para oito bits
+[10:49] é o suficiente para rodar um computador geral e útil e teve um detalhe que mudou a história do acesso
+[10:55] a isso não teve o preço a queda de preço foi absurda o processador despencou de milhares de
+[11:03] dólares para meras dezenas de dólares dezenas é o acesso à computação literalmente mudou de
+[11:09] mãos nessa época ficou barato isso muda tudo e para entender como essa queda de preço
+[11:15] toda lógica corporativa aperte o próximo a gente chega agora na grande inversão dessa história toda
+[11:22] a economia da engenharia se inverte completamente totalmente porque antes criar um produto eletrônico
+[11:28] novo significava desenhar um circuito novo tudo era físico agora ficou infinitamente mais barato
+[11:36] comprar o chip genérico do catálogo e focar os esforços em escrever um programa novo e a consequência
+[11:42] um disso é que o hardware virou uma comodite virou peça de prateleira exato o hardware virou uma peça
+[11:49] básica e igual para todo mundo pensa em duas empresas rivais brigando por mercado as duas vão
+[11:58] lá e compram a mesmíssima peça do mesmo catálogo pelo mesmíssimo preço o que levanta a dúvida
+[12:03] né se a peça física por dentro é igual onde fica a diferença do produto essa é a consequência
+[12:09] 2 o valor e a diferença passam a morar no software o programa ganha protagonismo o programa deixa de
+[12:16] ser uma tarefa menor sabe de quem opera a máquina no final do dia e vira o produto principal o software
+[12:24] nasceu só como um tradutor mas agora ele é onde mora todo o valor comercial da coisa incrível e
+[12:31] para a gente ver onde essa peça genérica foi parar no mundo real aperte o próximo tem um efeito
+[12:37] colateral dessa barateada toda que é muito interessante qual sendo tão genérica e tão barata
+[12:44] a peça saiu voando dos laboratórios de computadores e foi direto para o mundo real assim invadiu tudo
+[12:50] foi parar em caixa registradora de supermercado balança semáforo de rua forno máquina de lavar
+[12:57] depois em painel injeção de carro e até em brinquedo o que é um disfarce perfeito né como assim
+[13:04] nenhum desses aparelhos que você citou parece um computador por fora a máquina de lavar continua
+[13:09] parecendo uma máquina de lavar verdade mas por dentro todos eles são na verdade computadores
+[13:15] pequenos rodando um programa fixo e invisível é uma mudança de natureza por dentro né total a
+[13:20] proporção disso é maluca a esmagadora maioria dos processadores já fabricados no mundo nunca
+[13:26] esteve dentro de um aparelho chamado computador aquele com tela e teclado isso o uso visível
+[13:32] é a menor parte do mercado o grosso da produção está escondido nas coisas fascino digo é incrível
+[13:39] pensar nisso e hoje a gente amarrar tudo e saber onde a nossa história para aperte o próximo bom a
+[13:45] gente avisa desde já que o nosso episódio para exatamente aqui nos meados dos anos 70 com a
+[13:50] família de 8 bits prontinho no mercado isso o processador já se consolidou como item de
+[13:56] catálogo comercial e se a gente fizer um balanço dessa etapa inteira é uma diferença
+[14:00] absurda tudo começou com uma sala gigante lotada de válvulas quente e a gente termina com a parte
+[14:08] que pensa na máquina cabendo de uma pastilha miúda que custa dezenas de dólares o computador em si já
+[14:14] cabe numa placa pequena e o preço caiu para o equivalente a um salário não é mais o valor
+[14:20] de um prédio comercial inteiro sim o salto de miniaturização e preço está resolvido mas
+[14:25] ainda tem uma barreira final que segura as coisas não tem a máquina mesmo menor continua
+[14:30] e o equipamento restrito de empresas e laboratórios ninguém usa para a diversão ou rotina né não
+[14:36] ninguém vem de computadores soltos por aí como objetos de uso doméstico e na época não se
+[14:42] sabe o certo para que bom para que uma pessoa comum usaria uma máquina dessas em casa o que
+[14:48] deixa uma pergunta gigante no ar se a peça já é barata e o equipamento já cabe numa mesa
+[14:54] de escritório o que ainda falta para essa máquina sair da sala da grande corporação e finalmente
+[15:02] entrar na casa das pessoas comuns a gente para a história exatamente no ano de 1974 com essa
+[15:08] dúvida até a próxima

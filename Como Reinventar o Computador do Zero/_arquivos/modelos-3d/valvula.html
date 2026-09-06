@@ -8,19 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./_base-modelo-3d.css">
-<style>
-/* A leitura e a corrente da placa (PASSA/BLOQUEADA) com a grade embaixo; a
-   palavra nao cabe ao lado da meta na largura do painel, entao as duas empilham.
-   So aqui, pra nao mexer nos outros modelos. */
-.linha-total.estado{flex-direction:column; align-items:flex-start; gap:2px}
-.linha-total.estado .num{font-size:30px}
-.linha-total .casas b{font-weight:600; color:var(--ink)}
-.linha-total .casas .quente{color:#b8741a}
-@media (max-width:700px){
-  .linha-total.estado{flex-direction:row; align-items:baseline}
-  .linha-total.estado .num{font-size:22px}
-}
-</style>
 </head>
 <body>
 
@@ -78,7 +65,13 @@ const palco = montaPalco({
   distMin: 9,
   orbitaMin: 4.5,
 });
-const { scene, camera, renderer, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar } = palco;
+const { scene, camera, renderer, materiais, bloco, criaRotulo, redimensiona, inicia, aoClicar, medidaDeQA } = palco;
+
+// O bulbo de vidro desta maquina e grande e liso, e com as 32 facetas padrao da
+// base a silhueta dele fica poligonal. Este embrulho so troca esse padrao por 40;
+// no resto e o cilindro da base, e quem chamar pode continuar passando extras.
+const cilindro = (r, h, mat, x, y, z, eixo = 'y', extra = {}) =>
+  palco.cilindro(r, h, mat, x, y, z, eixo, { lados: 40, ...extra });
 
 // ---------- materiais proprios da peca ----------
 const ferro = materiais.metal(0x8e9298, { roughness: 0.5 });
@@ -99,14 +92,6 @@ const placaMat = new THREE.MeshStandardMaterial({ color: 0x4a4d52, metalness: 0.
 const valvula = new THREE.Group();
 scene.add(valvula);
 
-function cilindro(r, h, mat, x, y, z, eixo = 'y', aberto = false) {
-  const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 40, 1, aberto), mat);
-  if (eixo === 'x') m.rotation.z = Math.PI / 2;
-  if (eixo === 'z') m.rotation.x = Math.PI / 2;
-  m.position.set(x, y, z);
-  m.castShadow = true; m.receiveShadow = true;
-  return m;
-}
 
 // ---------- base e soquete ----------
 const base = bloco(7.4, 0.4, 3.4, materiais.madeiraEscura, 0.08);
@@ -140,7 +125,7 @@ grade.position.set(CENTRO.x, 0, 0);
 grade.castShadow = true;
 valvula.add(grade);
 
-const placa = cilindro(0.62, 1.7, placaMat, CENTRO.x, 2.15, 0, 'y', true);
+const placa = cilindro(0.62, 1.7, placaMat, CENTRO.x, 2.15, 0, 'y', { aberto: true });
 const micaBaixo = cilindro(0.72, 0.04, micaMat, CENTRO.x, 1.25, 0);
 const micaCima = cilindro(0.72, 0.04, micaMat, CENTRO.x, 3.05, 0);
 const hasteE = cilindro(0.03, 2.45, metalEscuro, CENTRO.x - 0.7, 2.15, 0);
@@ -433,11 +418,6 @@ inicia((dt) => {
 });
 
 // ---------- gancho de QA ----------
-function pixelDe(v3) {
-  const p = v3.clone().project(camera);
-  const r = renderer.domElement.getBoundingClientRect();
-  return { x: (p.x + 1) / 2 * r.width + r.left, y: (1 - p.y) / 2 * r.height + r.top };
-}
 window.__valvula = {
   ligaFilamento: (liga) => ligaFilamento(liga),
   abreGrade: (abre) => abreGrade(abre),
@@ -446,15 +426,14 @@ window.__valvula = {
   estado: () => ({ ...estado, batendo: !!batendo }),
   parado: () => !batendo && Math.abs(estado.calor - (estado.filamento ? 1 : 0)) < 0.03,
   pixels: () => {
-    const hud = document.querySelector('.hud').getBoundingClientRect();
     const pecas = {
-      valvula: pixelDe(new THREE.Vector3(CENTRO.x, 2.2, 0)),
-      lampada: pixelDe(LAMPADA),
-      chave: pixelDe(alvoChave.position),
-      topo: pixelDe(new THREE.Vector3(CENTRO.x, 4.4, 0)),
+      valvula: new THREE.Vector3(CENTRO.x, 2.2, 0),
+      lampada: LAMPADA,
+      chave: alvoChave.position,
+      topo: new THREE.Vector3(CENTRO.x, 4.4, 0),
     };
-    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = pixelDe(s.position); });
-    return { pecas, hud: { left: hud.left, top: hud.top, right: hud.right, bottom: hud.bottom }, tela: { w: innerWidth, h: innerHeight } };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = s.position; });
+    return medidaDeQA(pecas);
   },
 };
 

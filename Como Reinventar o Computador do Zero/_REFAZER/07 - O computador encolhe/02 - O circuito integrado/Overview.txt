@@ -1,0 +1,50 @@
+O CIRCUITO INTEGRADO - CONTEXTO
+===============================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco
+ate a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1958 a
+1965.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega o
+que a proxima peca precisa. Todo aprofundamento (uma peca por dentro, a vida de um
+inventor, um conceito esmiucado) mora numa trilha separada de episodios extras,
+avulsos. Este episodio e da trilha principal e nao conta biografia de ninguem.
+
+Onde a serie estava: o episodio anterior trocou a valvula pelo transistor. A peca
+ficou fria, pequena e durou. Mas cada transistor continuava sendo uma peca solta,
+comprada uma a uma e soldada a mao numa placa, com fio ligando cada perna. O
+episodio terminou com a pergunta: e se, em vez de fazer as pecas separadas e ligar
+depois, a gente fizesse todas juntas, ja ligadas, no mesmo pedaco de cristal?
+
+Este episodio responde, em cinco passos:
+
+1. O problema nao e mais a peca, e a LIGACAO. Um projeto com dez mil transistores
+   pede dezenas de milhares de soldas feitas a mao, uma a uma. Cada solda e um lugar
+   onde pode falhar, e a montagem custa mais que os componentes. A epoca chamou isso
+   de tirania dos numeros: quanto melhor o projeto, mais impossivel de montar.
+2. A ideia: se transistor, resistor e capacitor podem ser feitos do mesmo material,
+   entao podem ser feitos no MESMO pedaco, ja ligados, sem nenhum fio entre eles.
+3. Em 1958 sai o primeiro circuito integrado funcionando, com as pecas no mesmo
+   pedaco de material, mas ainda com as ligacoes feitas com fiozinho soldado a mao.
+   Prova que a ideia funciona.
+4. Em 1959 aparece o processo que torna isso fabricavel: uma camada isolante por
+   cima do cristal e as ligacoes IMPRESSAS nessa camada, como uma trilha de metal.
+   Nada de fio, nada de solda dentro do chip.
+5. A ferramenta que faz a peca encolher: desenhar com LUZ. O desenho do circuito e
+   projetado sobre o cristal coberto por um material sensivel a luz, e o que ficou
+   exposto e atacado quimicamente. Como se desenha com luz, o mesmo trabalho serve
+   pra um desenho grande ou pequeno: encolher deixa de custar mais caro.
+
+O ponto que o episodio precisa deixar claro, porque muda a logica de tudo que vem
+depois: a partir daqui **encolher deixa de ser um sacrificio e vira vantagem**. Peca
+menor fica mais barata, mais rapida e gasta menos energia ao mesmo tempo. Em 1965
+alguem olha essa curva e observa que o numero de pecas por pastilha vem dobrando em
+intervalos regulares, uma observacao que vira meta da industria e se cumpre por
+decadas.
+
+O que ainda falta no fim do episodio: os chips desta epoca sao especializados, cada
+um faz uma coisa. Ninguem juntou ainda o computador inteiro numa pastilha so.
+
+Use este contexto apenas como apoio.

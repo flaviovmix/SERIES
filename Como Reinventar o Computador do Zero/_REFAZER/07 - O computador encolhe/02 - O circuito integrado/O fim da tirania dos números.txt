@@ -1,0 +1,7 @@
+Titulo: O fim da tirania dos números
+Notebook: 07-02-O circuito integrado
+
+Descricao:
+Estes textos apresentam um panorama histórico e técnico sobre a evolução do circuito integrado entre os anos de 1958 e 1965. As fontes detalham a transição dos transistores individuais para componentes fabricados em um único bloco de cristal, solucionando a "tirania dos números" causada pelo excesso de soldas manuais. O conteúdo destaca marcos fundamentais como a invenção do chip funcional e o surgimento de processos de impressão fotográfica, que permitiram a miniaturização em massa. A principal mudança lógica apresentada é que encolher as peças tornou-se uma vantagem econômica, resultando em dispositivos mais rápidos, baratos e eficientes. Por fim, o material menciona a Lei de Moore como uma meta que impulsionou a indústria a dobrar a capacidade dos chips regularmente.
+
+Link: https://notebook.google.com/notebook/40a86382-4819-475b-bac8-d6eb613786bf

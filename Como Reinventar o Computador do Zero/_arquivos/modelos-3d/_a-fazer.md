@@ -2,7 +2,7 @@
 
 Levantamento de 27/08/2026, tirado episódio por episódio do `plano-da-serie.md`. Cada linha é um objeto que a animação daquele episódio pediria em 3D.
 
-**Placar: 45 objetos — 6 prontos e 39 a fazer.** Dos 39, **30 são essenciais** (o episódio é sobre aquele objeto e sem ele a tela central fica sem nada) e **9 são opcionais** (o episódio se resolve com foto do Wikimedia ou tela 2D). **11 dos 39 são de conceito**, um tipo que a gente ainda não fez nenhum.
+**Placar: 46 objetos — 8 prontos e 38 a fazer.** Dos 39, **30 são essenciais** (o episódio é sobre aquele objeto e sem ele a tela central fica sem nada) e **9 são opcionais** (o episódio se resolve com foto do Wikimedia ou tela 2D). **11 dos 39 são de conceito**, um tipo que a gente ainda não fez nenhum.
 
 Legenda: 🟢 pronto · 🔴 essencial · 🟠 opcional, decisão do Flávio · **conceito** = não existe objeto histórico, o modelo é a ideia em 3D.
 
@@ -89,7 +89,8 @@ Etapa inteira de **conceito** — não há máquina histórica pra copiar, o mod
 | Objeto | Episódio | Status |
 |---|---|---|
 | Transistor de ponto de contato de 1947, em corte, ao lado da válvula | `01 - O transistor` | 🟢 `transistor.html` (02/09; feito o de junção em corte, ampliado, com o de tamanho real ao lado, não o de ponto de contato) |
-| Wafer → die → encapsulamento, e o 4004 ampliado | `02 - O chip` | 🔴 |
+| Placa de peças soltas × as mesmas peças num pedaço só, e as camadas do chip | `02 - O circuito integrado` | 🟢 `circuito-integrado.html` (06/09) |
+| Memória com a lista de ordens + o ciclo busca/entende/faz/avança, e a receita trocável | `03 - O microprocessador` | 🟢 `microprocessador.html` (06/09; não é o 4004 ampliado do pedido original — o modelo mostra o CICLO, que é o que o episódio explica) |
 
 ## Etapa 9 — Da sala pro mundo
 

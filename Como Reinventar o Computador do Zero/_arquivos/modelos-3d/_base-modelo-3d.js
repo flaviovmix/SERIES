@@ -120,6 +120,44 @@ export function montaPalco(opcoes = {}) {
     return m;
   }
 
+  // cilindro com sombra — irma da bloco(), pra peca redonda. Os extras cobrem os
+  // tres casos que apareceram nos modelos: cone/tronco (rTopo), mais ou menos
+  // facetas (lados) e tubo sem tampa (aberto).
+  function cilindro(r, h, mat, x, y, z, eixo = 'y', extra = {}) {
+    const { rTopo = r, lados = 32, aberto = false } = extra;
+    const m = new THREE.Mesh(new THREE.CylinderGeometry(rTopo, r, h, lados, 1, aberto), mat);
+    if (eixo === 'x') m.rotation.z = Math.PI / 2;
+    if (eixo === 'z') m.rotation.x = Math.PI / 2;
+    m.position.set(x, y, z);
+    m.castShadow = true; m.receiveShadow = true;
+    return m;
+  }
+
+  // ---------- gancho de QA ----------
+  // Onde cada peca cai NA TELA. Existe porque teste de estado nao enxerga peca
+  // escondida atras do painel: em 23/08 o QA passou 27/27 com metade da maquina
+  // invisivel, e so o screenshot mostrou.
+  function pixelDe(v3) {
+    const p = v3.clone().project(camera);
+    const r = renderer.domElement.getBoundingClientRect();
+    return { x: (p.x + 1) / 2 * r.width + r.left, y: (1 - p.y) / 2 * r.height + r.top };
+  }
+
+  // O modelo passa {nome: Vector3} e recebe a medida pronta, com a caixa do painel
+  // e o tamanho da tela. Sem painel na pagina (miniatura, print sem HUD) devolve
+  // uma caixa zerada em vez de quebrar.
+  function medidaDeQA(pecas) {
+    const painel = document.querySelector('.hud');
+    const caixa = painel ? painel.getBoundingClientRect() : { left: 0, top: 0, right: 0, bottom: 0 };
+    const emPixels = {};
+    for (const [nome, ponto] of Object.entries(pecas)) emPixels[nome] = pixelDe(ponto);
+    return {
+      pecas: emPixels,
+      hud: { left: caixa.left, top: caixa.top, right: caixa.right, bottom: caixa.bottom },
+      tela: { w: window.innerWidth, h: window.innerHeight },
+    };
+  }
+
   // rotulo flutuante (some automaticamente no viewport estreito)
   const labelSprites = [];
   function criaRotulo(texto, escala = 1, alinha = 'center') {
@@ -236,5 +274,5 @@ export function montaPalco(opcoes = {}) {
     });
   }
 
-  return { scene, camera, renderer, controls, materiais, bloco, criaRotulo, labelSprites, redimensiona, inicia, aoClicar };
+  return { scene, camera, renderer, controls, materiais, bloco, cilindro, criaRotulo, labelSprites, redimensiona, inicia, aoClicar, pixelDe, medidaDeQA };
 }

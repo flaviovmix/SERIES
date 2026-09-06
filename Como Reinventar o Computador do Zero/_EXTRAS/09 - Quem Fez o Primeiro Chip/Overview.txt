@@ -1,0 +1,58 @@
+QUEM FEZ O PRIMEIRO CHIP - CONTEXTO
+===================================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio extra, avulso e autocontido. Nao faz parte de nenhuma sequencia: quem
+esta ouvindo pode ter recebido este arquivo sozinho.
+
+Este extra e da familia PECA E FIGURA: ele fala de pessoas, de empresas e de
+datas, porque a pergunta que ele responde e exatamente "quem fez". Os extras de
+conceito, que nao citam nome nem data, sao outros.
+
+O assunto: em 1958 e 1959, dois engenheiros, em duas empresas diferentes,
+resolveram o mesmo problema de dois jeitos diferentes, e os dois estao certos.
+
+O problema da epoca. Um circuito eletronico era feito de pecas soltas: cada
+transistor, cada resistor e cada capacitor vinha numa embalagem propria, com
+pernas de metal, e alguem soldava perna por perna numa placa. Um projeto com dez
+mil transistores pedia dezenas de milhares de pontos de solda feitos a mao. Cada
+ponto e um lugar onde pode falhar, e a montagem passou a custar mais que as
+pecas. A epoca chamou isso de tirania dos numeros: quanto melhor o projeto no
+papel, mais impossivel de montar na vida real.
+
+Jack Kilby, na Texas Instruments. Recem-contratado no verao de 1958, ele nao
+tinha direito as ferias coletivas da fabrica e ficou sozinho no laboratorio
+quase vazio. Foi ai que montou a ideia: se transistor, resistor e capacitor
+podem todos ser feitos de material semicondutor, entao podem ser feitos no mesmo
+pedaco de material. Em 12 de setembro de 1958 ele mostrou o primeiro circuito
+integrado funcionando, num pedacinho de germanio: um oscilador, um circuito que
+produz um sinal que sobe e desce sozinho, e a onda apareceu na tela do
+osciloscopio. As ligacoes entre as partes, porem, eram fiozinhos de ouro
+soldados por cima, a mao. Provou que dava. Nao resolvia como fabricar aos
+milhares.
+
+Robert Noyce, na Fairchild Semiconductor. Poucos meses depois, no comeco de
+1959, ele chegou na mesma ideia por outro caminho, apoiado num processo que a
+Fairchild ja tinha: uma camada de oxido crescida sobre o silicio, que e vidro e
+isola, protegendo o circuito por baixo. A contribuicao dele foi enxergar que
+essa camada tambem servia de chao pra IMPRIMIR as ligacoes por cima, como
+trilhas finas de metal, descendo por janelinhas ate encostar no silicio. Nada de
+fio, nada de solda dentro do chip. E isso que faz o chip virar produto: sai
+igual, aos milhares, na mesma fornada.
+
+A briga e o acordo. As duas empresas entraram na justica por patente e a disputa
+durou anos, ate terminarem num acordo em que cada uma licenciava a outra. A
+industria seguiu em frente antes mesmo de a justica decidir.
+
+O desfecho humano. Noyce saiu da Fairchild em 1968 e fundou a Intel com Gordon
+Moore. Morreu em 1990, aos 62 anos. Kilby recebeu o Nobel de Fisica em 2000 pelo
+circuito integrado, e no discurso lembrou o trabalho de Noyce; premio Nobel nao
+e dado a quem ja morreu.
+
+O que o episodio precisa deixar claro: nao ha um inventor unico. Um provou que a
+ideia parava em pe; o outro mostrou como fazer aos milhares. O chip de hoje e
+feito do jeito do segundo, e o segundo so foi tentado porque o primeiro mostrou
+que dava. Ter a ideia e fazer a ideia virar coisa fabricavel sao dois trabalhos
+diferentes, e os dois precisavam acontecer.
+
+Use este contexto apenas como apoio.

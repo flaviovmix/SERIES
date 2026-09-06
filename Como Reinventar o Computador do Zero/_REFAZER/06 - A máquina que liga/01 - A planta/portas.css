@@ -1,0 +1,115 @@
+/* portas
+   Os tres circuitos clicaveis da tela 2 do episodio da planta: E (dois interruptores em serie), OU (dois em paralelo) e NAO (um que inverte). Depende de animacao/tokens.css.
+
+   O audio pede em voz alta pra abrir e fechar os interruptores e ver a lampada
+   obedecer, entao aqui nao existe imagem: existe o circuito de verdade. */
+
+.portas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.porta {
+  flex: 1 1 260px;
+  max-width: 320px;
+  padding: 16px 16px 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-alt);
+  text-align: center;
+}
+
+.porta__nome {
+  font-family: var(--fonte-mono);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.porta__nome span {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  letter-spacing: .1em;
+  color: var(--ink-soft);
+}
+
+.porta__circuito { display: block; width: 100%; height: auto; margin: 10px 0 6px; }
+
+/* o fio apagado e o fio com corrente */
+.porta__circuito .fio {
+  fill: none;
+  /* o fio apagado usa a cor do texto secundario, nao a linha de card: a linha some
+     no desenho e o circuito fica parecendo quebrado */
+  stroke: var(--ink-faint);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke .18s var(--ease);
+}
+.porta__circuito .fio.is-vivo { stroke: var(--accent); }
+
+.porta__circuito .pilha { stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
+.porta__circuito .borne { fill: var(--ink-soft); }
+
+/* a chave: o pino roda quando fecha */
+.porta__chave { cursor: pointer; }
+.porta__chave .alavanca {
+  stroke: var(--ink);
+  stroke-width: 4;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: 0% 50%;
+  transform: rotate(-24deg);          /* aberta: a alavanca fica levantada */
+  transition: transform .16s var(--ease);
+}
+.porta__chave.is-fechada .alavanca { transform: none; }
+
+/* O NAO e ao contrario dos outros dois: a chave dele e o SINAL DE ENTRADA, e o
+   circuito nasce fechado. Mandar sinal ABRE o contato e apaga a lampada, que e
+   justamente o que inverter significa. */
+.porta[data-porta="nao"] .porta__chave .alavanca { transform: none; }
+.porta[data-porta="nao"] .porta__chave.is-fechada .alavanca { transform: rotate(-24deg); }
+.porta__chave .toque { fill: transparent; }
+.porta__chave:hover .alavanca { stroke: var(--accent); }
+
+/* a lampada */
+.porta__circuito .bulbo {
+  fill: var(--surface);
+  stroke: var(--ink-soft);
+  stroke-width: 2.5;
+  transition: fill .18s var(--ease), stroke .18s var(--ease);
+}
+.porta__circuito .filamento {
+  fill: none;
+  stroke: var(--ink-soft);
+  stroke-width: 2;
+  transition: stroke .18s var(--ease);
+}
+.porta.is-acesa .bulbo { fill: #f2c15c; stroke: #f2c15c; }
+.porta.is-acesa .filamento { stroke: #8a5a10; }
+.porta.is-acesa .brilho { opacity: .55; }
+.porta__circuito .brilho { fill: #f2c15c; opacity: 0; transition: opacity .2s var(--ease); }
+
+.porta__estado {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.porta.is-acesa .porta__estado { color: var(--accent); }
+
+.porta__dica {
+  margin-top: 8px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px) {
+  .portas { gap: 12px; }
+  .porta { flex: 1 1 100%; max-width: none; padding: 14px; }
+}

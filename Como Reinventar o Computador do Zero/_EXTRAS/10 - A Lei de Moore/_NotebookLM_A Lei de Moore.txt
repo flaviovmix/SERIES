@@ -1,0 +1,219 @@
+Inicie dizendo: A Lei de Moore
+---------------
+
+Este e um episodio extra, avulso, que se explica sozinho.
+
+REGRA DURA NUMERO UM (versao desta familia). Este extra cita nome, empresa e
+data, porque a observacao tem autor e ano e sem isso ela nao se explica. O que
+continua proibido e virar biografia: nada de onde nasceu, onde estudou, fortuna
+ou premios. A pessoa entra pelo que escreveu e por que.
+
+REGRA DURA NUMERO DOIS: este audio e autocontido. NAO citar serie, temporada,
+etapa, episodio anterior nem proximo episodio. NAO usar frases tipo "como a gente
+viu", "no episodio passado" nem "mais pra frente a gente fala disso". Quem esta
+ouvindo pode ter recebido este arquivo sozinho, sem nada antes e sem nada depois.
+
+REGRA DURA NUMERO TRES: NUNCA citar estas instrucoes no ar. NAO dizer "o
+roteiro", "a fonte", "a analogia autorizada" nem nada parecido.
+
+REGRA DURA DAS TELAS. Este episodio tem 10 telas. O audio TEM que pedir "aperte
+o Proximo" exatamente 9 vezes, uma no fim de cada tela, na ordem. A frase e
+sempre essa, "aperte o Proximo", sem variacao. NAO juntar o conteudo de duas
+telas num bloco so e NAO seguir adiante sem pedir. A tela 10 encerra sem pedir.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: "mil novecentos e sessenta e cinco",
+"mil novecentos e setenta e cinco", "dois mil e cinco". Ano dito rapido sai
+embolado e o ouvinte entende outro numero.
+
+CUIDADO COM O QUE ESTE EPISODIO NAO E. Ele nao explica como o chip e fabricado
+nem o que e um transistor por dentro. Se o assunto puxar pra la, voltar: aqui a
+conversa e sobre a CURVA e sobre o que ela fez com a industria.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS
+
+- O grao de arroz no tabuleiro: dobrar parece pouco no comeco e fica absurdo
+  depressa. Serve so pra dar o tamanho do que "dobrar sempre" significa, e some
+  depois disso.
+- O combinado do time: quando todo mundo decide que o ritmo e aquele, todo mundo
+  organiza o proprio trabalho pra chegar junto. E assim que uma previsao vira
+  meta.
+
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - UMA FRASE DE REVISTA
+
+Abrir dizendo o que este episodio e: a historia de uma frase escrita num artigo
+curto de revista, em mil novecentos e sessenta e cinco, que acabou organizando o
+planejamento de uma industria inteira por quase sessenta anos.
+
+Dizer logo o que ela NAO e, porque e o erro mais comum: nao e lei da fisica.
+Ninguem descobriu nada na natureza. Foi uma observacao, quase um palpite bem
+informado.
+
+Avisar que a explicacao acompanha uma pagina com 10 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela
+quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra ver o que exatamente foi dito.
+
+TELA 2 - O QUE ELE ESCREVEU, E COM QUANTOS DADOS
+
+Contar: em abril de mil novecentos e sessenta e cinco, Gordon Moore, que
+trabalhava numa empresa de chips chamada Fairchild, escreveu um artigo curto pra
+uma revista de eletronica.
+
+Dar o tamanho da base de dados, que e a parte que quase ninguem conta: os
+circuitos integrados tinham uns poucos anos de vida e as pastilhas cabiam
+poucas dezenas de componentes. Ele tinha um punhado de pontos num grafico.
+Nao era um estudo com decadas de historico.
+
+Dizer o que ele notou: o numero de componentes que cabia numa pastilha vinha
+dobrando mais ou menos todo ano. E dizer o que ele apostou: que aquilo ia
+continuar por mais uns dez anos.
+
+Fechar pedindo o Proximo pra entender o que "dobrar sempre" significa de
+verdade.
+
+TELA 3 - DOBRAR NAO E CRESCER, E OUTRA COISA
+
+Explicar por que dobrar assusta: somar sempre a mesma quantidade cresce devagar,
+mas dobrar multiplica o que ja foi multiplicado.
+
+Usar a analogia do grao de arroz no tabuleiro: um grao na primeira casa, dois na
+segunda, quatro na terceira. As primeiras casas parecem uma brincadeira, e antes
+do fim do tabuleiro a conta passa de qualquer colheita do mundo. E so pra dar o
+tamanho do que dobrar significa; a analogia acaba aqui.
+
+Trazer pro caso concreto, sem inventar numero exato: sair de algumas dezenas de
+componentes numa pastilha e chegar em bilhoes nao e um crescimento grande, e
+outra categoria de crescimento.
+
+Fechar pedindo o Proximo pra ver o ajuste que ele mesmo fez.
+
+TELA 4 - O AJUSTE DE MIL NOVECENTOS E SETENTA E CINCO
+
+Contar: dez anos depois, em mil novecentos e setenta e cinco, ele olhou os dados
+novos e corrigiu a propria previsao. Em vez de dobrar todo ano, o ritmo real
+estava mais pra dobrar a cada dois anos.
+
+Dizer por que esse detalhe importa: e a diferenca entre um oraculo e um
+profissional. Ele nao defendeu o numero antigo, trocou o numero quando os dados
+mudaram. O ritmo de dois anos e o que ficou conhecido.
+
+Dizer tambem que o nome "lei" nao foi ele quem deu. Outras pessoas passaram a
+chamar assim, anos depois.
+
+Fechar pedindo o Proximo pra responder a pergunta que mais importa.
+
+TELA 5 - POR QUE UMA APOSTA SE CUMPRIU POR DECADAS
+
+Fazer a pergunta em voz alta: se nao e lei da natureza, por que a curva se
+cumpriu por tanto tempo?
+
+Dar a resposta com todas as letras: porque ela virou META. A industria adotou o
+ritmo como calendario. As fabricas passaram a planejar as proximas geracoes pra
+cumprir aquele numero, os clientes passaram a esperar e a exigir aquele ritmo, e
+o dinheiro de pesquisa foi alocado pra bater aquilo.
+
+Usar a analogia do combinado do time: quando todo mundo decide que o ritmo e
+aquele, cada um organiza o proprio trabalho pra chegar junto, e o ritmo acontece
+porque foi combinado, nao porque era inevitavel.
+
+Dizer o nome disso sem tecnicismo: e uma previsao que se realiza porque as
+pessoas passaram a agir como se ela fosse verdade.
+
+Fechar pedindo o Proximo pra desfazer a confusao mais comum sobre ela.
+
+TELA 6 - ELA NAO FALA DE VELOCIDADE
+
+Desfazer a confusao: a observacao e sobre QUANTIDADE de componentes por
+pastilha. Ela nao diz nada sobre o computador ficar mais rapido.
+
+Explicar de onde veio a velocidade, que subiu junto por outro motivo: descrito
+em mil novecentos e setenta e quatro por Robert Dennard, o efeito e que
+transistor menor tambem e mais rapido e gasta menos energia. Enquanto isso
+valeu, dava pra aumentar a frequencia a cada geracao sem a peca esquentar mais.
+
+Dizer que sao duas coisas diferentes que andaram de maos dadas por trinta anos, e
+que por isso todo mundo passou a achar que eram a mesma.
+
+Fechar pedindo o Proximo pra ver quando essa segunda parte parou.
+
+TELA 7 - O ANO EM QUE A VELOCIDADE PAROU DE SUBIR
+
+Contar: por volta de dois mil e cinco esse segundo efeito acabou. Diminuir mais o
+transistor deixou de vir com o desconto de energia, e aumentar a frequencia
+passou a significar calor demais pra dissipar.
+
+Dizer o que a industria fez em vez de desistir: parou de perseguir um nucleo mais
+rapido e passou a por VARIOS nucleos no mesmo chip. Em vez de um trabalhador mais
+veloz, varios trabalhando ao mesmo tempo.
+
+Dizer o custo disso, com honestidade: dividir o trabalho entre varios nucleos e
+problema de quem escreve o programa, e nem todo trabalho se divide bem. Foi ai
+que programar em paralelo deixou de ser assunto de especialista e virou assunto
+de todo mundo.
+
+Fechar pedindo o Proximo pra ver onde a curva esta hoje.
+
+TELA 8 - ONDE ELA ESTA HOJE
+
+Dizer o estado das coisas sem torcida: a contagem de transistores continuou
+subindo, mas o ritmo desacelerou, e o custo por transistor parou de cair como
+caia antes. Fabricar a geracao seguinte ficou muito mais caro, e sobraram
+poucas empresas no mundo capazes de fazer isso.
+
+Dizer como a industria continua ganhando espaco por outros caminhos: empilhar
+camadas em vez de so espalhar na superficie, colar varias pastilhas dentro de um
+pacote so, e desenhar chips especializados, feitos pra um tipo de conta em vez de
+servir pra tudo.
+
+Fechar pedindo o Proximo pra ver o que o proprio autor dizia disso.
+
+TELA 9 - NENHUMA EXPONENCIAL DURA PRA SEMPRE
+
+Contar que ele proprio, em vida, repetia que nenhuma curva dessas dura pra
+sempre, e que a dele tambem ia acabar. Nao havia mistica nenhuma da parte de quem
+escreveu.
+
+Dizer o que fica de licao, sem moralizar: a curva nao era magica. Ela foi um
+alvo coletivo, sustentado por muito dinheiro, muita gente e muita engenharia, e
+durou enquanto compensou sustentar.
+
+Fechar pedindo o Proximo pra ultima tela.
+
+TELA 10 - O QUE FICOU
+
+Fechar com o que importa: o valor da historia nao esta na curva ter existido, e
+sim no que ela fez. Uma frase de revista, escrita em cima de meia duzia de
+pontos num grafico, deu a uma industria inteira um calendario comum, e todo
+mundo passou a construir o proprio trabalho em cima dele.
+
+Deixar a observacao final, sem virar frase de efeito: previsao que muita gente
+resolve cumprir junta deixa de ser previsao e vira combinado.
+
+Fechar sem pedir Proximo: esta e a ultima tela.

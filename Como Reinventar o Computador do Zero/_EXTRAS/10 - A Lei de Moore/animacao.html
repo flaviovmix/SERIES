@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Lei de Moore — Extra 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Extra 10. Familia "peca e figura": cita nome, empresa e data porque a
+     observacao tem autor e ano, e sem isso ela nao se explica. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/extras/index.html">← voltar pros extras</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20Lei%20de%20Moore%20n%C3%A3o%20%C3%A9%20f%C3%ADsica.m4a" data-duracao="1134"></audio>
+    <img class="tocador__capa" src="img/curva-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A Lei de Moore não é física</div>
+      <div class="tocador__fonte">Extras · 10 · A Lei de Moore</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1134" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">18:54</span></div>
+  </div>
+  <div class="acoes"></div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">extras · 10</div>
+      <h1 class="reveal">A lei de Moore</h1>
+      <p class="lede reveal">Uma frase escrita num artigo curto de revista, em <b>1965</b>, acabou organizando o planejamento de uma indústria inteira por quase sessenta anos. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O que ela não é.</b> Não é lei da física. Ninguém descobriu nada na natureza: foi uma observação, quase um palpite bem informado. São 10 telas.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal clicavel" data-abre="foto" data-legenda="A contagem de transistores por chip ao longo das décadas · gráfico: Our World in Data, CC BY-SA 4.0">
+      <span class="selo">imagem real</span>
+      <img src="img/curva-real.jpg" alt="Gráfico mostrando o número de transistores por chip subindo em linha reta numa escala que dobra">
+      <figcaption>A curva que virou calendário · gráfico: Our World in Data, CC BY-SA 4.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">abril de 1965</div>
+      <h2 class="reveal">O que ele escreveu</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Gordon Moore, então na Fairchild Semiconductor</div></div>
+        <div class="item reveal"><div class="rotulo">onde</div><div class="texto">um artigo curto numa revista de eletrônica</div></div>
+        <div class="item reveal"><div class="rotulo">com quantos dados</div><div class="texto">os chips tinham uns poucos anos e as pastilhas cabiam <b>poucas dezenas</b> de componentes. Era um punhado de pontos num gráfico</div></div>
+        <div class="item reveal"><div class="rotulo">o que ele notou</div><div class="texto">o número de componentes por pastilha vinha dobrando mais ou menos todo ano. E apostou que continuaria por uns dez anos</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Gordon Moore em 1978 · foto: Intel Free Press, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/moore-real.jpg" alt="Retrato de Gordon Moore em 1978">
+        <figcaption>Gordon Moore · foto: Intel Free Press, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step">
+    <div class="kicker reveal">o tamanho da coisa</div>
+    <h2 class="reveal">Dobrar não é crescer</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">somar</div><div class="texto">somar sempre a mesma quantidade cresce devagar e de forma previsível</div></div>
+      <div class="item reveal"><div class="rotulo">dobrar</div><div class="texto">multiplica o que já foi multiplicado. Um grão na primeira casa do tabuleiro, dois na segunda, quatro na terceira</div></div>
+      <div class="item reveal"><div class="rotulo">o susto</div><div class="texto">as primeiras casas parecem brincadeira, e antes do fim do tabuleiro a conta passa de qualquer colheita do mundo</div></div>
+      <div class="item reveal"><div class="rotulo">no caso real</div><div class="texto">sair de algumas dezenas de componentes e chegar em bilhões não é um crescimento grande: é <b>outra categoria</b> de crescimento</div></div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1975</div>
+      <h2 class="reveal">O ajuste que ele mesmo fez</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">dez anos depois</div><div class="texto">olhou os dados novos e corrigiu a própria previsão</div></div>
+        <div class="item reveal"><div class="rotulo">o número novo</div><div class="texto">em vez de dobrar todo ano, o ritmo real estava mais pra dobrar <b>a cada dois anos</b></div></div>
+        <div class="item reveal"><div class="rotulo">por que isso importa</div><div class="texto">é a diferença entre um oráculo e um profissional: trocou o número quando os dados mudaram</div></div>
+        <div class="item reveal"><div class="rotulo">o nome "lei"</div><div class="texto">não foi ele quem deu. Outras pessoas passaram a chamar assim, anos depois</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Robert Noyce e Gordon Moore na Intel, 1970 · foto: Intel Free Press, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/dupla-real.jpg" alt="Robert Noyce e Gordon Moore juntos numa sala da Intel, em 1970">
+        <figcaption>Noyce e Moore, 1970 · foto: Intel Free Press, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step">
+    <div class="kicker reveal">a pergunta que importa</div>
+    <h2 class="reveal">Por que uma aposta se cumpriu por décadas</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">a resposta</div><div class="texto">porque virou <b>meta</b>. A indústria adotou o ritmo como calendário</div></div>
+      <div class="item reveal"><div class="rotulo">as fábricas</div><div class="texto">passaram a planejar as próximas gerações pra cumprir aquele número</div></div>
+      <div class="item reveal"><div class="rotulo">os clientes</div><div class="texto">passaram a esperar esse ritmo, e a exigir ele nos contratos</div></div>
+      <div class="item reveal"><div class="rotulo">o combinado do time</div><div class="texto">quando todo mundo decide que o ritmo é aquele, cada um organiza o próprio trabalho pra chegar junto</div></div>
+    </div>
+    <p class="lede reveal">É uma previsão que se realiza porque as pessoas passaram a agir <b>como se ela fosse verdade</b>.</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step">
+    <div class="kicker reveal">a confusão mais comum</div>
+    <h2 class="reveal">Ela não fala de velocidade</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">o que ela diz</div><div class="texto">é sobre <b>quantidade</b> de componentes por pastilha. Nada sobre o computador ficar mais rápido</div></div>
+      <div class="item reveal"><div class="rotulo">de onde veio a velocidade</div><div class="texto">de outro efeito, descrito em 1974 por Robert Dennard</div></div>
+      <div class="item reveal"><div class="rotulo">o que ele dizia</div><div class="texto">transistor menor também é mais rápido e gasta menos energia, então dava pra subir a frequência sem esquentar mais</div></div>
+      <div class="item reveal"><div class="rotulo">por que se confunde</div><div class="texto">são duas coisas diferentes que andaram de mãos dadas por trinta anos</div></div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">por volta de 2005</div>
+    <h2 class="reveal">A velocidade parou de subir</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um processador moderno visto de perto: vários núcleos no mesmo pedaço · foto: Cole L, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/die-real.jpg" alt="Pastilha de um processador moderno ampliada, com blocos repetidos que são os vários núcleos">
+        <figcaption>Vários trabalhando ao mesmo tempo, no lugar de um mais veloz · foto: Cole L, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Diminuir mais o transistor deixou de vir com o desconto de energia, e subir a frequência passou a significar <b>calor demais pra dissipar</b>. A indústria parou de perseguir um núcleo mais rápido e passou a pôr vários no mesmo chip.</p>
+    <div class="nota-cena reveal">o custo caiu no colo de quem escreve o programa: dividir trabalho entre vários núcleos nem sempre dá certo, e programar em paralelo deixou de ser assunto de especialista</div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">hoje</div>
+    <h2 class="reveal">Ainda sobe, mais devagar e mais caro</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um wafer de silício com dezenas de cópias do mesmo circuito · foto: Enrique Jiménez, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/wafer-real.jpg" alt="Disco de silício espelhado coberto por dezenas de retângulos iguais, as cópias do mesmo circuito">
+        <figcaption>Fabricar a geração seguinte ficou muito mais caro · foto: Enrique Jiménez, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A contagem continuou subindo, mas o ritmo desacelerou e o <b>custo por transistor</b> parou de cair como caía. Sobraram poucas empresas no mundo capazes de fazer a geração seguinte.</p>
+    <div class="nota-cena reveal">o espaço passou a vir de outros caminhos: empilhar camadas, colar várias pastilhas num pacote só, e desenhar chips especializados pra um tipo de conta</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step">
+    <div class="kicker reveal">o que ele mesmo dizia</div>
+    <h2 class="reveal">Nenhuma exponencial dura pra sempre</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">em vida</div><div class="texto">ele repetia que nenhuma curva dessas dura pra sempre, e que a dele também ia acabar</div></div>
+      <div class="item reveal"><div class="rotulo">sem mística</div><div class="texto">não havia nada de mágico da parte de quem escreveu</div></div>
+      <div class="item reveal"><div class="rotulo">o que a sustentou</div><div class="texto">um alvo coletivo, muito dinheiro, muita gente e muita engenharia</div></div>
+      <div class="item reveal"><div class="rotulo">até quando</div><div class="texto">durou <b>enquanto compensou</b> sustentar</div></div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">o que ficou</div>
+    <h2 class="reveal">Previsão que vira combinado</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">o valor não está na curva</div>
+        <div class="desc">está no que ela fez: uma frase de revista, escrita em cima de meia dúzia de pontos num gráfico, deu a uma indústria inteira um calendário comum</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">e todo mundo construiu em cima dele</div>
+        <div class="desc">previsão que muita gente resolve cumprir junta deixa de ser previsão e vira combinado</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

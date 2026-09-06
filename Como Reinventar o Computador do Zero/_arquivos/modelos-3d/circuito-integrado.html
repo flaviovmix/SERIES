@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circuito integrado 3D — as peças no mesmo pedaço</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./_base-modelo-3d.css">
+</head>
+<body>
+
+<header>
+  <div>SÉRIE EQUIPAMENTOS <span class="dot">·</span> LAB <span class="dot">·</span> CIRCUITO INTEGRADO 3D</div>
+  <div>EXTRA · A PEÇA POR DENTRO</div>
+</header>
+
+<main>
+  <div id="cena"></div>
+  <div class="aviso" id="aviso">Este protótipo precisa de WebGL e internet<br>(a biblioteca 3D vem de CDN).</div>
+
+  <div class="hud">
+    <div class="legenda" id="legenda">À esquerda, as peças <b>soltas</b> numa placa: cada perna pede um ponto de solda. À direita, as mesmas peças no <b>mesmo pedaço</b> de cristal. Clique no chip pra <b>abrir as camadas</b>. Arraste fora pra girar.</div>
+    <div class="linha-total estado">
+      <span class="num mono" id="soldas">14</span>
+      <span class="meta mono" id="origem">pontos de solda, feitos à mão</span>
+    </div>
+    <div class="linha-total">
+      <span class="casas mono" id="ficha"><b>PLACA</b> 3 peças soltas · <b>CHIP</b> tudo num pedaço</span>
+    </div>
+    <div class="botoes">
+      <button class="btn-mini cheio largo" id="btnContar">contar as soldas da placa</button>
+      <button class="btn-mini largo" id="btnCamadas">abrir as camadas do chip</button>
+      <button class="btn-mini" id="btnPlaca">olhar a placa</button>
+      <button class="btn-mini" id="btnChip">olhar o chip</button>
+    </div>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import { THREE, montaPalco } from './_base-modelo-3d.js';
+
+const legenda = document.getElementById('legenda');
+const elSoldas = document.getElementById('soldas');
+const elOrigem = document.getElementById('origem');
+const elFicha = document.getElementById('ficha');
+const btnContar = document.getElementById('btnContar');
+const btnCamadas = document.getElementById('btnCamadas');
+
+const palco = montaPalco({
+  alvo: [0, 1.15, 0],
+  camPos: [0.5, 4.4, 11.5],
+  meiaLarguraDesktop: 5.2,
+  meiaLarguraMobile: 4.3,
+  distMin: 10,
+  orbitaMin: 5,
+});
+const { scene, camera, renderer, materiais, bloco, cilindro, criaRotulo, redimensiona, inicia, aoClicar, medidaDeQA } = palco;
+
+// ---------- materiais ----------
+const metalEscuro = materiais.metal(0x4a4d52, { roughness: 0.55 });
+const lata = materiais.metal(0x9aa0a8, { roughness: 0.35 });
+const ouro = materiais.metal(0xd6a544, { roughness: 0.28 });
+const placaVerde = new THREE.MeshStandardMaterial({ color: 0x2f5c3a, roughness: 0.7, envMapIntensity: 0.3 });
+const corpoResistor = new THREE.MeshStandardMaterial({ color: 0xc9a06a, roughness: 0.6 });
+const corpoCapacitor = new THREE.MeshStandardMaterial({ color: 0xb5643c, roughness: 0.6 });
+// a solda: cinza fosco parada, e acende quando a contagem passa por ela
+const soldaMat = () => new THREE.MeshStandardMaterial({
+  color: 0xb9bcc2, metalness: 0.6, roughness: 0.4,
+  emissive: 0xffa63c, emissiveIntensity: 0,
+});
+// o cristal de silicio, a casquinha de vidro (o oxido) e o metal impresso
+const cristalMat = new THREE.MeshPhysicalMaterial({
+  color: 0x8fa2b4, roughness: 0.3, metalness: 0.2,
+  transparent: true, opacity: 0.62, depthWrite: false, envMapIntensity: 0.6,
+});
+const vidroMat = new THREE.MeshPhysicalMaterial({
+  color: 0xdfeaf2, roughness: 0.08, metalness: 0,
+  transparent: true, opacity: 0.34, depthWrite: false,
+  transmission: 0.6, thickness: 0.3, envMapIntensity: 1.0,
+});
+
+const bancada = bloco(9.2, 0.4, 4.4, materiais.madeiraEscura, 0.08);
+bancada.position.y = 0.2;
+scene.add(bancada);
+
+
+// ================================================================ a placa
+// Tres pecas soltas espetadas numa placa. O que interessa aqui nao sao as
+// pecas: sao as PERNAS, e o ponto de solda que cada uma pede por baixo.
+const X_PLACA = -2.6, Y_PLACA = 0.52;
+const placa = new THREE.Group();
+placa.position.set(X_PLACA, 0, 0);
+scene.add(placa);
+
+const tabua = bloco(3.6, 0.12, 2.4, placaVerde, 0.03);
+tabua.position.y = Y_PLACA;
+placa.add(tabua);
+
+const soldas = [];
+function pernaComSolda(x, z) {
+  // A perna atravessa a placa. A gota fica em CIMA, na raiz da perna: por baixo
+  // seria mais fiel a placa de verdade, mas o modelo existe pra mostrar a
+  // contagem acendendo, e escondida embaixo ninguem ve.
+  const perna = cilindro(0.035, 0.5, lata, x, Y_PLACA - 0.02, z);
+  placa.add(perna);
+  const gota = new THREE.Mesh(new THREE.SphereGeometry(0.115, 20, 14), soldaMat());
+  gota.scale.y = 0.55;
+  gota.position.set(x, Y_PLACA + 0.09, z);
+  gota.castShadow = true;
+  placa.add(gota);
+  soldas.push(gota);
+  return perna;
+}
+
+// transistor de lata, tres pernas
+const latinha = cilindro(0.26, 0.42, lata, -1.05, Y_PLACA + 0.27, -0.55);
+placa.add(latinha);
+placa.add(cilindro(0.30, 0.06, lata, -1.05, Y_PLACA + 0.48, -0.55));
+[-0.15, 0, 0.15].forEach((d) => pernaComSolda(-1.05 + d, -0.55 + (d ? 0.12 : -0.12)));
+
+// resistor deitado, duas pernas
+const resistor = cilindro(0.11, 0.62, corpoResistor, 0.05, Y_PLACA + 0.34, 0.55, 'x');
+placa.add(resistor);
+[0x8a4b2a, 0x2f2f2f, 0xc0392b].forEach((cor, i) => {
+  const anel = cilindro(0.118, 0.06, new THREE.MeshStandardMaterial({ color: cor, roughness: 0.6 }),
+    -0.13 + i * 0.13, Y_PLACA + 0.34, 0.55, 'x');
+  placa.add(anel);
+});
+[-0.42, 0.42].forEach((d) => pernaComSolda(0.05 + d, 0.55));
+
+// capacitor de disco, duas pernas
+const disco = new THREE.Mesh(new THREE.CylinderGeometry(0.24, 0.24, 0.09, 24), corpoCapacitor);
+disco.rotation.x = Math.PI / 2;
+disco.position.set(1.15, Y_PLACA + 0.42, -0.35);
+disco.castShadow = true;
+placa.add(disco);
+[-0.12, 0.12].forEach((d) => pernaComSolda(1.15 + d, -0.35));
+
+// os fios que ligam uma peca na outra, cada ponta com a sua solda
+function fio(ax, az, bx, bz, altura) {
+  const a = new THREE.Vector3(ax, Y_PLACA + 0.06, az);
+  const b = new THREE.Vector3(bx, Y_PLACA + 0.06, bz);
+  const meio = a.clone().add(b).multiplyScalar(0.5);
+  meio.y += altura;
+  const curva = new THREE.QuadraticBezierCurve3(a, meio, b);
+  const m = new THREE.Mesh(new THREE.TubeGeometry(curva, 24, 0.03, 8, false), lata);
+  m.castShadow = true;
+  placa.add(m);
+  pernaComSolda(ax, az);
+  pernaComSolda(bx, bz);
+}
+fio(-0.75, -0.9, 1.35, -0.9, 0.55);
+fio(-1.4, 0.85, 0.6, 0.95, 0.45);
+
+// ================================================================ o chip
+// As mesmas tres pecas, feitas dentro de um pedaco so: nada pra soldar por
+// dentro. As camadas abrem pra mostrar por que isso e fabricavel.
+const X_CHIP = 2.7;
+const chip = new THREE.Group();
+chip.position.set(X_CHIP, 0, 0);
+scene.add(chip);
+
+const LARG = 3.0, PROF = 2.2;
+const camadas = {};
+
+camadas.cristal = bloco(LARG, 0.62, PROF, cristalMat, 0.03);
+camadas.cristal.position.y = Y_PLACA + 0.31;
+camadas.cristal.renderOrder = 2;
+chip.add(camadas.cristal);
+
+// dentro do cristal, as tres pecas de novo — agora sem perna e sem solda
+const dentro = new THREE.Group();
+dentro.position.y = Y_PLACA + 0.31;
+chip.add(dentro);
+const pecaDentro = (w, d, x, z, cor) => {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, 0.16, d),
+    new THREE.MeshStandardMaterial({ color: cor, roughness: 0.5, emissive: cor, emissiveIntensity: 0.15 }));
+  m.position.set(x, 0.06, z);
+  m.renderOrder = 3;
+  dentro.add(m);
+  return m;
+};
+const pDentro = [
+  pecaDentro(0.5, 0.42, -0.85, -0.45, 0x9aa0a8),
+  pecaDentro(0.62, 0.16, 0.15, 0.5, 0xc9a06a),
+  pecaDentro(0.4, 0.4, 0.95, -0.35, 0xb5643c),
+];
+
+camadas.vidro = bloco(LARG, 0.16, PROF, vidroMat, 0.02);
+camadas.vidro.position.y = Y_PLACA + 0.70;
+camadas.vidro.renderOrder = 4;
+chip.add(camadas.vidro);
+
+// as trilhas: metal impresso POR CIMA do vidro, ligando as pecas de baixo
+camadas.trilhas = new THREE.Group();
+camadas.trilhas.position.y = Y_PLACA + 0.80;
+chip.add(camadas.trilhas);
+function trilha(x, z, w, d) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, 0.05, d), ouro);
+  m.position.set(x, 0, z);
+  m.castShadow = true;
+  camadas.trilhas.add(m);
+}
+trilha(-0.35, -0.45, 1.5, 0.14);
+trilha(0.35, 0.02, 0.14, 1.1);
+trilha(0.65, 0.5, 0.75, 0.14);
+trilha(-0.85, 0.1, 0.14, 1.2);
+trilha(-0.3, 0.66, 1.2, 0.14);
+// os contatos que descem pela janela aberta no vidro ate o silicio
+[[-0.85, -0.45], [0.15, 0.5], [0.95, -0.35]].forEach(([x, z]) => {
+  const p = cilindro(0.07, 0.30, ouro, x, -0.15, z);
+  camadas.trilhas.add(p);
+});
+
+// ---------- rotulos ----------
+const rotulos = [
+  ['peças soltas', new THREE.Vector3(X_PLACA, 2.5, 0)],
+  ['um pedaço só', new THREE.Vector3(X_CHIP, 2.5, 0)],
+];
+const sprites = rotulos.map(([texto, pos]) => {
+  const s = criaRotulo(texto);
+  s.position.copy(pos);
+  scene.add(s);
+  return s;
+});
+const rotuloCamada = [
+  ['trilhas impressas', camadas.trilhas],
+  ['casquinha de vidro', camadas.vidro],
+  ['cristal de silício', camadas.cristal],
+].map(([texto, alvo]) => {
+  const s = criaRotulo(texto, 0.85);
+  s.material.opacity = 0;          // aparecem so com as camadas abertas
+  scene.add(s);
+  return { sprite: s, alvo };
+});
+
+// ================================================================ mecanica
+const SOLDAS_TOTAL = soldas.length;
+const estado = { abertas: false, contando: false, contadas: SOLDAS_TOTAL, olhando: 'tudo' };
+
+function pintaHud() {
+  if (estado.contando) {
+    elSoldas.textContent = String(estado.contadas);
+    elOrigem.textContent = 'pontos de solda, contando…';
+  } else if (estado.olhando === 'chip') {
+    elSoldas.textContent = '0';
+    elOrigem.textContent = 'soldas por dentro do chip';
+  } else {
+    elSoldas.textContent = String(SOLDAS_TOTAL);
+    elOrigem.textContent = 'pontos de solda, feitos à mão';
+  }
+  elFicha.innerHTML = estado.abertas
+    ? '<b>CRISTAL</b> as peças · <b>VIDRO</b> isola · <b>METAL</b> liga'
+    : `<b>PLACA</b> ${SOLDAS_TOTAL} soldas · <b>CHIP</b> nenhuma`;
+  btnCamadas.textContent = estado.abertas ? 'fechar as camadas do chip' : 'abrir as camadas do chip';
+  btnContar.textContent = estado.contando ? 'parar a contagem' : 'contar as soldas da placa';
+}
+
+function abreCamadas(abre) {
+  estado.abertas = abre;
+  legenda.innerHTML = abre
+    ? 'Três camadas: o <b>cristal</b> com as peças dentro, a <b>casquinha de vidro</b> que isola, e as <b>trilhas de metal</b> impressas por cima, que descem por janelinhas pra encostar no silício. Nenhum fio, nenhuma solda.'
+    : 'À esquerda, as peças <b>soltas</b> numa placa: cada perna pede um ponto de solda. À direita, as mesmas peças no <b>mesmo pedaço</b> de cristal. Clique no chip pra <b>abrir as camadas</b>.';
+  // Os dois rotulos de grupo batiam em cima dos rotulos de camada: com o chip
+  // aberto quem manda sao os das camadas.
+  //
+  // Por OPACIDADE, e nao por `visible`: quem manda no `visible` de todo sprite e o
+  // redimensiona() da base (ele esconde os rotulos na tela estreita). Mexer no
+  // mesmo campo faz o proximo resize desfazer isto e os rotulos voltarem por cima
+  // uns dos outros.
+  rotuloCamada.forEach((r) => r.sprite.material.opacity = abre ? 1 : 0);
+  sprites.forEach((s) => s.material.opacity = abre ? 0 : 1);
+  pintaHud();
+}
+
+// a contagem acende uma solda de cada vez: o custo nao e a peca, e a ligacao
+let relogioContagem = 0;
+function contaSoldas(liga) {
+  estado.contando = liga;
+  if (liga) {
+    estado.contadas = 0;
+    relogioContagem = 0;
+    soldas.forEach((s) => s.material.emissiveIntensity = 0);
+    legenda.innerHTML = 'Três peças, e cada perna pede o seu ponto. Um de cada vez, à mão.';
+  } else {
+    soldas.forEach((s) => s.material.emissiveIntensity = 0);
+    estado.contadas = SOLDAS_TOTAL;
+  }
+  pintaHud();
+}
+
+function olha(alvo) {
+  estado.olhando = alvo;
+  const destino = alvo === 'placa' ? X_PLACA : alvo === 'chip' ? X_CHIP : 0;
+  palco.controls.target.x = destino;
+  legenda.innerHTML = alvo === 'chip'
+    ? 'O mesmo circuito, num pedaço só. Por dentro não existe fio nem solda: as ligações saem no mesmo processo que faz as peças.'
+    : alvo === 'placa'
+      ? 'Cada peça vem numa caixinha, com pernas, e alguém solda perna por perna. Numa máquina de verdade isso vira dezenas de milhares de pontos.'
+      : 'À esquerda, as peças <b>soltas</b>. À direita, as mesmas peças no <b>mesmo pedaço</b>.';
+  pintaHud();
+}
+
+// ---------- controles ----------
+btnCamadas.addEventListener('click', () => abreCamadas(!estado.abertas));
+btnContar.addEventListener('click', () => contaSoldas(!estado.contando));
+document.getElementById('btnPlaca').addEventListener('click', () => olha('placa'));
+document.getElementById('btnChip').addEventListener('click', () => olha('chip'));
+aoClicar([camadas.cristal, camadas.vidro, ...camadas.trilhas.children], () => abreCamadas(!estado.abertas));
+aoClicar([tabua], () => contaSoldas(!estado.contando));
+window.addEventListener('keydown', (e) => {
+  if (e.key === ' ') { e.preventDefault(); abreCamadas(!estado.abertas); }
+});
+
+// ---------- animacao ----------
+const ALTURAS = {
+  fechado: { cristal: Y_PLACA + 0.31, vidro: Y_PLACA + 0.70, trilhas: Y_PLACA + 0.80 },
+  aberto: { cristal: Y_PLACA + 0.31, vidro: Y_PLACA + 1.55, trilhas: Y_PLACA + 2.45 },
+};
+inicia((dt) => {
+  const alvo = estado.abertas ? ALTURAS.aberto : ALTURAS.fechado;
+  const passo = Math.min(1, dt * 6);
+  ['cristal', 'vidro', 'trilhas'].forEach((nome) => {
+    camadas[nome].position.y += (alvo[nome] - camadas[nome].position.y) * passo;
+  });
+  dentro.position.y = camadas.cristal.position.y;
+  rotuloCamada.forEach((r, i) => {
+    r.sprite.position.set(X_CHIP + 2.9, r.alvo.position.y + (i === 2 ? 0.05 : 0.2), 0);
+  });
+
+  if (estado.contando) {
+    relogioContagem += dt;
+    const quantas = Math.min(SOLDAS_TOTAL, Math.floor(relogioContagem / 0.32));
+    if (quantas !== estado.contadas) {
+      estado.contadas = quantas;
+      pintaHud();
+    }
+    soldas.forEach((s, i) => {
+      const aceso = i < quantas;
+      const alvoLuz = aceso ? (i === quantas - 1 ? 1.6 : 0.5) : 0;
+      s.material.emissiveIntensity += (alvoLuz - s.material.emissiveIntensity) * Math.min(1, dt * 10);
+    });
+    if (quantas === SOLDAS_TOTAL && relogioContagem > SOLDAS_TOTAL * 0.32 + 1.2) {
+      estado.contando = false;
+      legenda.innerHTML = `<b>${SOLDAS_TOTAL} pontos</b> só nestas três peças. Numa máquina com dez mil transistores são dezenas de milhares, e cada um é um lugar onde pode falhar. No chip da direita: <b>nenhum</b>.`;
+      pintaHud();
+    }
+  } else {
+    soldas.forEach((s) => {
+      s.material.emissiveIntensity += (0 - s.material.emissiveIntensity) * Math.min(1, dt * 8);
+    });
+  }
+
+  // o cristal respira de leve pra denunciar que e translucido
+  const brilho = 0.15 + Math.sin(performance.now() / 900) * 0.05;
+  pDentro.forEach((p) => p.material.emissiveIntensity = brilho);
+});
+
+// ---------- gancho de QA ----------
+window.__circuitoIntegrado = {
+  abreCamadas: (abre) => abreCamadas(abre),
+  contaSoldas: (liga) => contaSoldas(liga),
+  olha: (alvo) => olha(alvo),
+  estado: () => ({ ...estado, soldas: SOLDAS_TOTAL }),
+  parado: () => !estado.contando,
+  pixels: () => {
+    const pecas = {
+      placa: new THREE.Vector3(X_PLACA, Y_PLACA + 0.5, 0),
+      chip: new THREE.Vector3(X_CHIP, camadas.cristal.position.y, 0),
+      vidro: new THREE.Vector3(X_CHIP, camadas.vidro.position.y, 0),
+      trilhas: new THREE.Vector3(X_CHIP, camadas.trilhas.position.y, 0),
+      primeiraSolda: soldas[0].getWorldPosition(new THREE.Vector3()),
+    };
+    sprites.forEach((s, i) => { pecas['rotulo:' + rotulos[i][0]] = s.position; });
+    return medidaDeQA(pecas);
+  },
+};
+
+pintaHud();
+</script>
+</body>
+</html>

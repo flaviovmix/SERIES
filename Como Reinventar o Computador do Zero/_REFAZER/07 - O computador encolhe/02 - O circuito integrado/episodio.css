@@ -1,0 +1,19 @@
+/* episodio 07-02 — a altura das telas de cena
+
+   As telas 2, 5 e 7 carregam tres coisas ao mesmo tempo: a foto grande com a
+   barra "foto real / ilustracao" (36px que uma figura comum nao tem), o
+   paragrafo e a nota de rodape da tela. Numa janela baixa (1440x900, que e o
+   notebook) isso somava mais que a altura util e a ultima linha saia cortada.
+   O 06-02 tem a mesma barra e nao corta porque as telas dele nao tem nota.
+
+   Em vez de jogar fora a nota, a foto cede a altura. O teto vai so na PRIMEIRA
+   imagem de proposito: no troca-imagem.css e ela que da altura ao palco, e a
+   segunda entra por cima com inset:0 e object-fit:cover justamente pra troca
+   nao pular o layout. Mexer nas duas quebraria esse contrato e deixaria tarja
+   cinza dos lados. (`:first-child` nao serve: quem abre o palco e o <span> do
+   selo. `img:nth-of-type(1)` conta so as imagens.) So deste episodio. */
+
+.step--cena .troca .troca__img:nth-of-type(1) {
+  max-height: min(34vh, 380px);
+  object-fit: cover;
+}

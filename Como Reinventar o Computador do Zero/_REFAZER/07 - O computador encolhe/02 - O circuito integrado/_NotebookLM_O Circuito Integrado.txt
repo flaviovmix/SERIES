@@ -1,0 +1,319 @@
+Inicie dizendo: O Circuito Integrado
+---------------
+
+Este e o segundo episodio da etapa O COMPUTADOR ENCOLHE, a setima etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior trocou a valvula pelo
+transistor: a peca ficou fria, pequena e passou a durar. Mas cada transistor
+continuava sendo uma peca solta, comprada uma a uma e soldada a mao numa placa, com
+fio ligando cada perna.
+
+ESTE EPISODIO COBRE DE 1958 A 1965. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou.
+
+REGRA DURA DAS TELAS. Este episodio tem 11 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 10 vezes, uma no fim de cada tela, na ordem. A frase e sempre
+essa, "aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga
+adiante" nem nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so,
+NAO adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta
+ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um
+pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 4, 5 e 6. Sao os dois momentos de invencao (1958 e
+1959) e a conclusao de por que os dois contam. A tentacao de juntar os tres num
+bloco so e grande, porque contam a mesma historia. Nao juntar: cada uma tem o seu
+pedido de Proximo, e cada uma adiciona uma coisa so.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e cinquenta e oito",
+"mil novecentos e cinquenta e nove", "mil novecentos e sessenta e cinco". Ano dito
+rapido em digito sai embolado e o ouvinte entende outro numero.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar,
+abrir ou mexer em peca nenhuma na capa da pagina. As telas sao ilustracoes e fotos.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de extras.
+A principal so carrega o que a proxima peca precisa. Todo aprofundamento mora num
+extra avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. As pessoas entram so pelo que fizeram e por que.
+  Nada de nome proprio de inventor, onde nasceram, onde estudaram, premios ou
+  brigas. As EMPRESAS e os laboratorios podem ser citados; as pessoas nao.
+- Onde o roteiro escrever GANCHO DE EXTRA, dizer de forma curta e generica que
+  existe um episodio extra so sobre aquilo, pra quem quiser ir fundo, e seguir em
+  frente na hora. NAO dizer o nome nem o numero do extra e NAO explicar o assunto
+  dele.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso
+levanta uma questao importante", "e aqui que fica realmente interessante", "a
+genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A placa cheia de solda, que vem do episodio anterior: um monte de pecinhas
+  espetadas numa placa, cada perna com um ponto de solda feito a mao. E a imagem do
+  problema que este episodio resolve.
+- O slide projetado: o desenho do circuito e jogado em cima do cristal como um slide
+  numa parede. Projetar o slide menor nao da mais trabalho que projetar ele grande,
+  e e isso que faz encolher sair de graca.
+- A casquinha de vidro: a camada isolante que cresce em cima do silicio e o proprio
+  silicio oxidado, que e vidro. Uma casquinha de vidro por cima do cristal, que
+  protege embaixo e serve de chao pras ligacoes por cima.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A PECA ENCOLHEU, A MONTAGEM NAO
+
+Retomar em duas frases onde a serie parou: em meados dos anos cinquenta o transistor
+tomou o lugar da valvula. A peca ficou fria, pequena e passou a durar, e pela
+primeira vez ela podia ficar menor sem parar de funcionar.
+
+Dizer o que nao mudou: cada transistor continua sendo uma peca solta. Vem numa
+caixinha, com tres perninhas, e alguem espeta ele numa placa e solda perna por perna,
+a mao. A peca encolheu. O jeito de montar nao.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e cinquenta e
+oito a mil novecentos e sessenta e cinco.
+
+Dar o nome do problema, que e o assunto do episodio inteiro: a epoca chamava isso de
+tirania dos numeros. E o momento em que o limite deixou de ser a peca e passou a ser
+a ligacao entre as pecas.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 11 telas, que quem esta
+so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela
+quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra ver o tamanho desse problema.
+
+TELA 2 - A TIRANIA DOS NUMEROS
+
+Dar o problema em numero, sem inventar dado: um projeto com dez mil transistores nao
+pede dez mil soldas. Pede dezenas de milhares, porque cada peca tem varias pernas e
+cada perna precisa de um ponto. E tudo isso e feito por mao humana, uma de cada vez.
+
+Explicar por que isso quebra a maquina de dois jeitos ao mesmo tempo:
+
+Primeiro, confiabilidade. Cada ponto de solda e um lugar onde pode falhar. Um ponto
+sozinho quase nunca falha, mas quando sao dezenas de milhares, a chance de todos
+estarem bons ao mesmo tempo despenca. A maquina passa a viver quebrada por um motivo
+bobo: um fio mal encostado.
+
+Segundo, custo e tempo. A montagem passa a custar mais que os componentes. E ninguem
+solda mais rapido do que ja solda: nao adianta comprar transistor mais barato, porque
+o gargalo virou a mao que liga.
+
+Fechar com o que isso tem de perverso: quanto melhor o projeto, mais impossivel de
+montar. Quem desenhava circuito nessa epoca sabia como fazer uma maquina muito melhor
+e nao tinha como monta-la.
+
+Fechar pedindo o Proximo pra ver a ideia que resolve isso.
+
+TELA 3 - E SE FOSSEM DO MESMO PEDACO
+
+Apresentar a ideia com todas as letras: um circuito tem transistor, resistor e
+capacitor. Todos os tres podem ser feitos de material semicondutor. E se podem ser
+feitos do MESMO material, entao podem ser feitos no MESMO pedaco, ja ligados, sem
+nenhum fio entre eles.
+
+Deixar claro o que isso NAO e, porque e o erro comum: nao e por as pecas mais perto
+uma da outra, nem miniaturizar a placa. E parar de ter pecas. O circuito deixa de ser
+uma montagem de coisas e vira uma coisa so.
+
+Dizer a consequencia direta: se a ligacao ja nasce junto com a peca, nao existe
+ligacao pra fazer depois. O problema da tela anterior nao e resolvido, ele deixa de
+existir.
+
+Dizer tambem por que a ideia demorou a aparecer sendo tao simples de enunciar: na
+cabeca de todo mundo, resistor era feito de um material, capacitor de outro,
+transistor de outro. Usar o material errado pra fazer um resistor e um resistor pior.
+A troca so compensa se ela apagar a solda junto.
+
+Fechar pedindo o Proximo pra ver a primeira vez que isso funcionou de verdade.
+
+TELA 4 - MIL NOVECENTOS E CINQUENTA E OITO: FUNCIONA
+
+Contar o essencial: em setembro de mil novecentos e cinquenta e oito, num laboratorio
+da Texas Instruments, nos Estados Unidos, um circuito inteiro funcionou dentro de um
+unico pedacinho de germanio. Era um circuito simples, dos que produzem um sinal que
+sobe e desce sozinho, e a prova foi ver essa onda aparecer na tela do osciloscopio.
+
+Dizer o que aquilo provou: que da pra fazer as pecas todas no mesmo pedaco de
+material e elas funcionarem juntas. Ate ali era so uma ideia defensavel no papel.
+
+Dizer, na mesma tela, o que aquilo ainda NAO resolvia: as ligacoes entre as pecas
+daquele primeiro chip eram fiozinhos de ouro, soldados por cima, a mao, um por um.
+Por dentro do pedaco de cristal ja estava tudo junto, mas a solda continuava ali,
+so que menor e mais dificil.
+
+Fechar com a frase honesta: aquilo funcionava, mas ninguem ia conseguir fazer aos
+milhares.
+
+Fechar pedindo o Proximo pra ver o que faltava.
+
+TELA 5 - MIL NOVECENTOS E CINQUENTA E NOVE: DA PRA FABRICAR
+
+Contar: menos de um ano depois, em mil novecentos e cinquenta e nove, numa empresa
+chamada Fairchild, na California, aparece o processo que faz o chip virar produto.
+Sao duas coisas juntas.
+
+A primeira e a casquinha de vidro. Aquecendo o silicio do jeito certo, ele cria uma
+camada de oxido por cima, que e vidro, e vidro nao conduz eletricidade. Essa camada
+protege o que esta embaixo e, principalmente, vira um chao isolado por cima do
+circuito.
+
+A segunda e o que se faz nesse chao: as ligacoes sao IMPRESSAS por cima da camada de
+vidro, como trilhas finas de metal depositado. Nao e fio, nao e solda. E desenho.
+Onde o desenho manda o metal encostar no cristal, tem uma janelinha aberta na camada
+de vidro.
+
+Dizer o resultado com todas as letras: por dentro do chip nao existe mais nenhuma
+solda e nenhum fio. As ligacoes saem no mesmo processo que faz as pecas, no mesmo
+lugar, na mesma hora. Um chip nao e montado, ele e fabricado inteiro.
+
+Fechar pedindo o Proximo pra entender por que os dois momentos contam.
+
+TELA 6 - UM PROVOU QUE DAVA, O OUTRO MOSTROU COMO FAZER
+
+Dizer sem escolher lado: a serie nao vai eleger um inventor do circuito integrado,
+porque foram dois trabalhos diferentes e os dois precisavam acontecer. O primeiro
+provou que um circuito inteiro funciona num pedaco so de material. O segundo mostrou
+como fazer isso aos milhares, sempre igual, sem ninguem soldar nada por dentro.
+
+Dizer qual dos dois a gente usa hoje: o chip de hoje e feito do jeito do segundo, com
+camada isolante e ligacao impressa. Mas ele so foi tentado porque o primeiro ja tinha
+mostrado que a ideia parava em pe.
+
+Contar em uma frase, sem drama, o que aconteceu depois: as duas empresas brigaram na
+justica por patente durante anos e a coisa terminou em acordo, com uma licenciando a
+outra.
+
+Dizer que isso e um padrao que a serie ja viu e vai ver de novo: ter a ideia e fazer
+a ideia virar coisa fabricavel sao dois trabalhos, e o segundo costuma ser o que muda
+o mundo.
+
+GANCHO DE EXTRA: avisar em uma frase que as pessoas por tras desses dois momentos, com
+nome e historia, tem um episodio extra so pra elas, pra quem quiser ir fundo. Uma
+frase e seguir. NAO citar nome, NAO citar numero do extra.
+
+Fechar pedindo o Proximo pra ver a ferramenta que faz a peca encolher.
+
+TELA 7 - DESENHAR COM LUZ
+
+Explicar o processo em passos curtos, sem tecnicismo: cobre o cristal com um material
+que muda quando toma luz. Projeta o desenho daquela camada do circuito por cima,
+como um slide numa parede. Onde a luz bateu, o material mudou. Um banho quimico tira
+uma das partes e deixa a outra. O que sobrou vira a mascara que manda no passo
+seguinte, seja dopar, oxidar ou depositar metal. Repete camada por camada ate o
+circuito inteiro estar la dentro.
+
+Dizer o ponto economico, que e o motivo desta tela existir: como o desenho e feito
+com luz, o mesmo trabalho serve pra um desenho grande ou pequeno. Projetar o slide
+menor nao custa mais caro nem demora mais. E como todo o processo acontece de uma vez
+em toda a superficie, fazer duzentas copias do circuito no mesmo pedaco de cristal
+custa quase o mesmo que fazer vinte.
+
+Fechar com a frase que a proxima tela vai desdobrar: pela primeira vez na historia da
+maquina, encolher deixou de custar mais caro.
+
+Fechar pedindo o Proximo pra ver o que isso faz com a logica de tudo.
+
+TELA 8 - MENOR FICA MELHOR EM TUDO AO MESMO TEMPO
+
+Lembrar como era antes, com o que a propria serie ja mostrou: nas maquinas de
+engrenagem, encolher era um sacrificio. Peca menor era mais dificil de fazer, mais
+fragil e mais cara. Encolher se pagava em outra moeda.
+
+Dizer o que muda aqui, item por item, e devagar, porque e o coracao do episodio:
+
+Peca menor tem menos caminho pra corrente percorrer, entao o sinal chega antes: fica
+mais rapida.
+
+Peca menor tem menos material pra carregar de eletricidade, entao gasta menos energia
+e esquenta menos.
+
+E peca menor deixa caber mais circuito no mesmo pedaco de cristal, que custa o mesmo:
+fica mais barata por unidade.
+
+Fechar com a conclusao inteira, com todas as letras: pela primeira vez, menor e mais
+rapido, mais barato e mais economico ao mesmo tempo, sem troca nenhuma no meio. Nao
+existe motivo pra parar de encolher. Tudo que a serie vai contar dos proximos
+episodios, o computador em cima da mesa, o telefone no bolso, a maquina que aprende,
+e consequencia desta tela.
+
+Fechar pedindo o Proximo pra ver quem pagou o preco alto no comeco.
+
+TELA 9 - QUEM PAGOU A CONTA NO COMECO
+
+Dizer a verdade incomoda do comeco: nos primeiros anos, o chip era caro. Muito mais
+caro que comprar os transistores soltos e soldar. Pra quase todo mundo, nao fazia
+sentido nenhum.
+
+Dizer quem comprou mesmo assim, e por que: os programas militares e espaciais
+americanos. Missil e nave sao lugares onde cada grama e cada centimetro custam muito
+dinheiro pra levantar do chao, e onde uma falha nao tem conserto no meio do caminho.
+Pra eles, um circuito pequeno, leve e sem solta solta valia o preco.
+
+Dizer o efeito, que e o que interessa pra serie: encomenda grande e garantida faz a
+fabrica melhorar o processo e o preco cair. Quando o preco caiu, o chip abriu pro
+resto do mundo. A conta do comeco foi paga por quem tinha um motivo pra pagar caro.
+
+Dizer que este tambem e um padrao repetido: a serie ja viu isso com o computador de
+valvula e vai ver de novo.
+
+Fechar pedindo o Proximo pra chegar em mil novecentos e sessenta e cinco.
+
+TELA 10 - MIL NOVECENTOS E SESSENTA E CINCO: A CURVA
+
+Contar: em mil novecentos e sessenta e cinco, alguem de dentro da industria escreve
+um artigo curto olhando pros poucos anos de chip que existiam. A observacao e simples:
+o numero de componentes que cabe numa pastilha vinha dobrando em intervalos regulares.
+E a aposta era que ia continuar assim por uns bons anos.
+
+Dizer com clareza o que isso e e o que nao e: nao e lei da natureza, nao e formula de
+fisica. E uma observacao de mercado, quase um palpite bem informado.
+
+Dizer o que aconteceu com ela, que e a parte interessante: a industria adotou a curva
+como meta. As fabricas passaram a planejar as proximas geracoes pra cumprir aquele
+ritmo, e os clientes passaram a esperar que fosse cumprido. Uma previsao que se
+realiza porque todo mundo passou a mirar nela. E funcionou por decadas.
+
+GANCHO DE EXTRA: avisar em uma frase que essa curva, o que ela previu e ate quando
+valeu, tem um episodio extra so sobre ela. Uma frase e seguir.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 11 - ONDE ISTO PARA
+
+Dizer onde o episodio para: mil novecentos e sessenta e cinco. O circuito integrado
+existe, e fabricavel, encolhe sem ficar mais caro, e a industria inteira ja sabe que
+vai continuar encolhendo.
+
+Dizer o que ainda incomoda, que e o que abre o proximo episodio: cada chip desta epoca
+faz uma coisa so. Um faz uma conta, outro guarda um pedaco de memoria, outro conta
+pulso. Um computador continua sendo uma placa grande com dezenas de chips diferentes,
+cada um desenhado do zero pro trabalho dele. Quem quer uma maquina nova precisa
+desenhar chip novo.
+
+Deixar a pergunta no ar, sem responder e sem citar o nome da peca que vem: e se, em
+vez de um chip pra cada trabalho, existisse um chip so, sempre o mesmo, que faz
+qualquer trabalho dependendo da ordem que a gente der pra ele?
+
+Fechar sem pedir Proximo: esta e a ultima tela.
