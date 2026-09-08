@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#10131c">
-<title>Ábaco Play — números em movimento</title>
+<title>Ábaco Binário Play — oito bits, 256 números</title>
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,13 +80,91 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
 @media(max-height:540px) and (min-width:701px){.embedded .game-layout{height:calc(100vh - 73px)}.embedded .play-column{min-height:0}.embedded .arena{height:auto;min-height:180px}.embedded .challenge{overflow-y:auto}}
 @media(max-height:540px) and (max-width:540px){.embedded .arena{height:calc(100vh - 159px)}.embedded .scoreboard{gap:7px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Chaves binárias, uma para cada conta do modelo. */
+.version-link{color:#b6a0fa;text-decoration:none}.version-link:hover{color:#d8caff}
+.binary-readout{font:500 27px 'Space Grotesk',monospace;color:#b6a0fa;letter-spacing:3px;white-space:nowrap}
+.binary-readout sub{font-size:12px;letter-spacing:0;margin-left:2px}
+.digit-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.bit-control{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;width:65px;min-height:64px;padding:7px 10px;background:#111722;border:1px solid #343a4a;border-radius:10px;color:var(--row-color)}
+.bit-control span{font-size:9px;font-weight:800;letter-spacing:1px;white-space:nowrap}.bit-control output{font:500 25px 'Space Grotesk',monospace}
+.bit-control:hover{border-color:var(--row-color);background:#242a3a}
+.bit-control[aria-pressed=true]{background:color-mix(in srgb,var(--row-color) 16%,#151a26);border-color:var(--row-color);box-shadow:inset 0 0 15px color-mix(in srgb,var(--row-color) 8%,transparent)}
+.total-wrap{gap:20px}
+@media(max-width:1100px){.bit-control{width:52px}.binary-readout{font-size:22px}.scoreboard{flex-wrap:wrap}}
+@media(max-width:540px){.bit-control{width:100%;min-height:62px}.digit-controls{gap:8px}.binary-readout{font-size:26px}.total-wrap{justify-content:space-between}}
+@media(max-height:540px) and (min-width:701px){.embedded .bit-control{width:49px;min-height:45px;padding:4px}.embedded .bit-control output{font-size:20px}.embedded .underboard p{display:none}.embedded .underboard{justify-content:flex-end}}
+@media(max-height:540px) and (max-width:700px){.embedded .bit-control{min-height:46px;padding:4px}.embedded .arena{height:calc(100vh - 168px)}}
+
+/* Oito bits num corpo estreito, com leitura completa de um byte. */
+.arena{min-height:600px}
+.scoreboard{display:grid;grid-template-columns:1fr;gap:13px}
+.total-wrap{justify-content:space-between}
+.digit-controls{grid-template-columns:repeat(8,minmax(0,1fr));gap:7px}
+.bit-control{width:100%;min-height:54px;padding:6px 4px}
+.binary-readout{font-size:26px;letter-spacing:2px}
+@media(max-width:1100px){.bit-control{width:100%}.bit-control span{font-size:8px}.binary-readout{font-size:24px}}
+@media(max-width:850px){.arena{height:580px;min-height:0}}
+@media(max-width:540px){.arena{height:490px}.digit-controls{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.bit-control{min-height:50px}.binary-readout{font-size:23px;letter-spacing:1px}}
+@media(max-height:540px) and (min-width:701px){.embedded .scoreboard{gap:5px}.embedded .bit-control{width:100%;min-height:39px;padding:2px}.embedded .bit-control span{font-size:7px}.embedded .binary-readout{font-size:20px}}
+@media(max-height:540px) and (max-width:700px){.embedded .arena{height:calc(100vh - 211px);min-height:0}.embedded .bit-control{min-height:37px;padding:2px}.embedded .bit-control output{font-size:19px}.embedded .binary-readout{font-size:20px}}
+.panel-binary{margin-top:5px;container-type:inline-size}.panel-binary .binary-readout{display:block;color:#c7f58b;font-size:clamp(14px,10cqi,36px);line-height:1.1;letter-spacing:0;font-variant-numeric:tabular-nums;text-shadow:0 0 22px #c7f58b18}.panel-binary #binaryValue{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;text-align:center}
+.bit-weights{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;margin-top:12px;text-align:center;color:#99a5bd;font:500 11px/1.4 "Space Grotesk",sans-serif;font-variant-numeric:tabular-nums}.bit-weights + .progress-dots{margin-top:3px}@media(max-width:540px){.bit-weights{font-size:9px}}
+
+/* Palco amplo e painel lateral, conforme a interface de referencia. */
+.app,.embedded .app{max-width:1600px;padding:10px 20px;margin:auto}
+.topbar,.introduction,.bottom-strip{display:none}
+.game-layout,.embedded .game-layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;grid-template-rows:auto minmax(0,1fr);gap:28px 14px;min-height:calc(100dvh - 20px);height:auto}
+.game-layout>.mode-switch{grid-column:2;grid-row:1;justify-self:end;margin:0;width:auto}
+.play-column{grid-column:1;grid-row:1 / 3;position:relative}
+.arena,.embedded .arena{height:auto;min-height:600px;flex:1;border-radius:28px}
+.challenge,.embedded .challenge{grid-column:2;grid-row:2;display:flex;padding:25px;gap:0;min-width:0}
+.challenge-content,.challenge-bottom{min-width:0}
+.underboard,.embedded .underboard{display:flex;justify-content:flex-end;margin-top:10px}
+.underboard>p{display:none}
+.scoreboard{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);padding:0;border:0;margin:0}
+.scoreboard:focus-within{position:relative;width:auto;height:auto;overflow:visible;clip-path:none;padding:12px;margin-top:10px;border:1px solid var(--line)}
+.arena-tag{display:flex}.arena-objective{display:none}
+@media(min-width:851px){.challenge-bottom{padding-top:30px}.challenge-symbol{display:grid}.challenge-copy{display:block}.session-stats{display:grid}.arena-bottom{flex-wrap:wrap}}
+@media(max-width:1100px) and (min-width:851px){.game-layout,.embedded .game-layout{grid-template-columns:minmax(0,1fr) 280px}.challenge,.embedded .challenge{padding:23px}.mode-switch button{padding:10px 12px}}
+@media(max-width:850px){.app,.embedded .app{padding:10px 12px}.game-layout,.embedded .game-layout{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;gap:12px;min-height:0}.game-layout>.mode-switch{grid-column:1;grid-row:1}.play-column{grid-column:1;grid-row:2}.arena,.embedded .arena{height:65dvh;min-height:440px;flex:none}.challenge,.embedded .challenge{grid-column:1;grid-row:3;display:flex;padding:22px}.challenge-bottom{padding-top:24px}.challenge-symbol{display:none}.challenge-copy{display:block}.challenge h2{margin-top:18px}.panel-binary .binary-readout{font-size:clamp(20px,10cqi,36px)}.bit-weights{font-size:11px}}
+
+/* Respiro do palco e modos junto ao resultado. */
+.app,.embedded .app{padding:24px clamp(20px,4vw,64px)}
+.game-layout,.embedded .game-layout{grid-template-rows:minmax(0,1fr);gap:clamp(24px,4vw,64px);min-height:calc(100dvh - 48px)}
+.play-column{grid-row:1;padding:32px 0 20px}
+.challenge,.embedded .challenge{grid-row:1}
+.challenge>.mode-switch{margin:24px 0 20px;padding:6px;gap:6px;width:100%;background:#0f1420;border:1px solid #8270bf;border-radius:15px;box-shadow:0 5px 22px #0003;flex-shrink:0}
+.challenge>.mode-switch button{flex:1;min-width:0;padding:12px 6px;font-size:12px;color:#d2c9ed;border:1px solid transparent}
+.challenge>.mode-switch button:hover{background:#342c49;color:#fff}
+.challenge>.mode-switch button[aria-pressed=true]{background:#c0a4ff;color:#211333;border-color:#ddcbff;box-shadow:0 2px 12px #b6a0fa30}
+.challenge>.mode-switch #modeFree[aria-pressed=true]{background:#c7f58b;color:#202e12;border-color:#e0ffb6;box-shadow:0 2px 12px #c7f58b30}
+.challenge-bottom{padding-top:0}
+@media(max-width:850px){.app,.embedded .app{padding:20px}.game-layout,.embedded .game-layout{grid-template-rows:auto auto;gap:24px;min-height:0}.play-column{grid-row:1;padding:8px 0}.challenge,.embedded .challenge{grid-row:2}.arena,.embedded .arena{min-height:420px}.challenge>.mode-switch{margin:22px 0}.challenge-bottom{padding-top:0}}
+
+/* Um unico destaque desliza entre os modos e interpola a cor. */
+.challenge>.mode-switch{position:relative;isolation:isolate}
+.challenge>.mode-switch::before{content:"";position:absolute;z-index:0;pointer-events:none;left:6px;top:6px;bottom:6px;width:calc((100% - 18px)/2);border-radius:9px;background:#c0a4ff;box-shadow:inset 0 0 0 1px #ddcbff,0 2px 12px #b6a0fa30;transition:transform 380ms cubic-bezier(.22,1,.36,1),background-color 380ms ease,box-shadow 380ms ease}
+.challenge>.mode-switch:has(#modeFree[aria-pressed=true])::before{transform:translateX(calc(100% + 6px));background:#c7f58b;box-shadow:inset 0 0 0 1px #e0ffb6,0 2px 12px #c7f58b30}
+.challenge>.mode-switch button{position:relative;z-index:1;flex:1 1 0;transition:color 260ms ease}
+.challenge>.mode-switch button:hover,.challenge>.mode-switch button[aria-pressed=true],.challenge>.mode-switch #modeFree[aria-pressed=true]{background:transparent;border-color:transparent;box-shadow:none}
+.challenge>.mode-switch button:active:not(:disabled){transform:none}
+@media(prefers-reduced-motion:reduce){.challenge>.mode-switch::before,.challenge>.mode-switch button{transition:none}}
+
+.running-sum{position:absolute;left:clamp(20px,4%,48px);top:110px;z-index:2;pointer-events:none;min-width:70px;text-align:right;font:500 clamp(20px,2.2vw,30px)/1.4 'Space Grotesk',sans-serif;color:#ddd1ff;font-variant-numeric:tabular-nums}
+.sum-label{display:block;font:800 9px Manrope,sans-serif;letter-spacing:1.5px;color:#9ca7be;margin-bottom:12px}
+#sumResult{display:block;border-top:1px solid #b6a0fa80;margin-top:9px;padding-top:8px;color:var(--accent)}
+.difficulty{border:0;padding:0;margin:0 0 22px;min-width:0}.difficulty legend{font-size:10px;letter-spacing:1px;color:#aab4c8;margin-bottom:9px}.difficulty>div{display:flex;gap:6px}.difficulty button{flex:1;min-width:0;background:#141925;border:1px solid #42475c;border-radius:8px;padding:9px 3px;font-size:11px;color:#b9c2d5}.difficulty button[aria-pressed=true]{background:#38304d;border-color:#b6a0fa;color:#eadfff}.difficulty p{font-size:9px;line-height:1.5;color:#96a1b8;margin-top:8px}
+.hard-challenge .bit-weights,.hard-challenge .progress-caption,.hard-challenge #btnHint{display:none}
+
+@media(max-width:540px){.running-sum{left:14px;top:90px;min-width:44px;font-size:18px}.sum-label{font-size:7px;letter-spacing:.5px}.arena-bottom{left:14px;right:14px}}
 </style>
 </head>
 <body>
 <div class="app">
   <header class="topbar">
-    <a class="brand" href="./index.html" aria-label="Ábaco Play — galeria de modelos"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>ábaco<span>PLAY</span></a>
-    <span class="top-caption">Uma ideia milenar. Infinitas possibilidades.</span>
+    <a class="brand" href="./index.html" aria-label="Ábaco Binário Play — galeria de modelos"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>binário<span>PLAY</span></a>
+    <a class="top-caption version-link" href="./index.html">Ábaco Play · Suanpan · Binário</a>
     <div class="top-actions">
       <button class="icon-btn" id="btnSound" aria-label="Ativar sons" aria-pressed="false" title="Ativar sons"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4Z"/><path id="soundWaves" d="m16 9 5 6m0-6-5 6"/></svg></button>
       <button class="icon-btn" id="btnHelp" aria-label="Como jogar" title="Como jogar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4m0 3h.01"/></svg></button>
@@ -94,38 +172,46 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
     </div>
   </header>
   <section class="introduction" aria-label="Ábaco interativo">
-    <div><p class="eyebrow"><span class="live-dot"></span>O PRIMEIRO COMPUTADOR É VOCÊ</p><h1>Números <span>em movimento.</span></h1></div>
-    <div class="mode-switch" role="group" aria-label="Modo de jogo">
-      <button id="modeChallenge" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></svg>Desafios</button>
-      <button id="modeFree" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c-3-7-10-6-10 0s7 7 10 0 10-6 10 0-7 7-10 0Z"/></svg>Modo livre</button>
-    </div>
+    <div><p class="eyebrow"><span class="live-dot"></span>ÁBACO BINÁRIO · UMA CONTA, UM BIT</p><h1>Só zero e um. <span>De 0 a 255.</span></h1></div>
+
   </section>
   <main class="game-layout">
+
     <section class="play-column" aria-label="Seu ábaco">
       <div class="arena" id="arena">
-        <div class="arena-top"><div class="arena-tag"><span></span>SEU CAMPO DE JOGO</div><div class="arena-objective" id="arenaObjective">Objetivo · 1.234</div><button class="icon-btn view-reset" id="btnCamera" aria-label="Restaurar câmera" title="Restaurar câmera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3"/></svg></button></div>
-        <div id="cena" role="img" aria-label="Ábaco 3D de quatro hastes: milhar, centena, dezena e unidade. Use também os controles de cada casa abaixo."></div>
-        <div class="scene-message" id="loading"><span class="spinner" aria-hidden="true"></span><span>Preparando seu ábaco…</span></div>
+        <div class="arena-top"><div class="arena-tag"><span></span>SEU CAMPO DE JOGO</div><div class="arena-objective" id="arenaObjective">Objetivo · 1</div><button class="icon-btn view-reset" id="btnCamera" aria-label="Restaurar câmera" title="Restaurar câmera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+        <div id="cena" role="img" aria-label="Ábaco binário com oito hastes e uma conta em cada. Pesos 128, 64, 32, 16, 8, 4, 2 e 1 de cima para baixo. À esquerda o bit é 1; à direita, 0. Use também os botões abaixo."></div>
+        <div class="scene-message" id="loading"><span class="spinner" aria-hidden="true"></span><span>Preparando seu ábaco binário…</span></div>
         <div class="scene-message" id="aviso" role="alert" hidden>Não foi possível abrir o ábaco 3D. Confira sua conexão e recarregue a página.</div>
-        <div class="arena-bottom"><span class="active-key"><i></i>Contas à esquerda = valor</span><span class="drag-guide">Arraste o fundo para girar · role para aproximar</span></div>
-        <div class="win-flash"></div><div class="celebration" aria-hidden="true">✦ Número perfeito! +100 XP</div>
+        <div class="arena-bottom"><span class="active-key"><i></i>Esquerda = 1 · Direita = 0</span><span class="drag-guide">Arraste o fundo para girar · role para aproximar</span></div>
+        <aside class="running-sum" aria-label="Soma dos pesos ligados"><span class="sum-label">SUA SOMA</span><div id="sumTerms">0</div><output id="sumResult" aria-label="Total da soma">0</output></aside><div class="win-flash"></div><div class="celebration" aria-hidden="true">✦ Número perfeito! +100 XP</div>
       </div>
-      <div class="scoreboard"><div><p class="score-label">Seu número</p><div class="total-wrap"><output id="total" aria-label="Valor total">0</output><span class="live-label">AO VIVO</span></div></div><div class="digit-controls" id="digitControls" role="group" aria-label="Ajustar as casas do ábaco"></div></div>
-      <div class="underboard"><p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></svg>Clique nas contas ou arraste-as para os lados.</p><div class="utility-buttons"><button class="text-btn" id="btnExemplo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg><span id="exampleLabel">Ver exemplo</span></button><button class="text-btn" id="btnLimpar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg>Zerar</button></div></div>
+      <div class="scoreboard"><div><p class="score-label">Decimal</p><div class="total-wrap"><output id="total" aria-label="Valor total">0</output></div></div><div class="digit-controls" id="digitControls" role="group" aria-label="Ligar ou desligar os oito bits"></div></div>
+      <div class="underboard"><p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></svg>Clique em uma conta ou em um bit para alternar 0 e 1.</p><div class="utility-buttons"><button class="text-btn" id="btnExemplo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg><span id="exampleLabel">Ver exemplo</span></button><button class="text-btn" id="btnLimpar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg>Zerar</button></div></div>
     </section>
     <aside class="challenge" aria-label="Painel de desafios">
       <div class="challenge-top"><p class="eyebrow" id="panelEyebrow">PEQUENAS GRANDES CONQUISTAS</p><span class="level-chip" id="level">01 / 08</span></div>
-      <div class="challenge-content"><div class="challenge-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></svg></div><h2 id="challengeTitle">Encontre o número.</h2><p class="challenge-copy" id="challengeCopy">Mova as contas e construa o valor abaixo. Uma casa de cada vez.</p><div class="target-box"><div class="target-top"><span id="targetLabel">SEU OBJETIVO</span><span class="xp-badge" id="xpBadge">+100 XP</span></div><strong id="target">1.234</strong><div class="progress-dots" id="progressDots" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="progress-caption"><span id="progressText">0 de 4 casas certas</span><span id="progressPercent">0%</span></div></div></div>
-      <div class="challenge-bottom"><button class="primary-btn" id="btnNext" disabled><span id="nextLabel">Monte o número</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button class="secondary-btn" id="btnHint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z"/></svg>Uma ajudinha?</button><p class="feedback" id="feedback" role="status" aria-live="polite">Sem pressa. Cada movimento é uma descoberta.</p><div class="session-stats"><div><span class="stat-label">Sua experiência</span><strong><span id="xp">0</span> <small>XP</small></strong></div><div><span class="stat-label">Concluídos</span><strong id="completed">0 <small>/ 8 desafios</small></strong></div></div></div>
+      <div class="challenge-content"><div class="challenge-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></svg></div><h2 id="challengeTitle">Encontre o número.</h2><p class="challenge-copy" id="challengeCopy">Ligue os bits certos para formar o valor abaixo. Cada conta tem seu peso.</p><div class="target-box"><div class="target-top"><span id="targetLabel">OBJETIVO DECIMAL</span><span class="xp-badge" id="xpBadge">+100 XP</span></div><strong id="target">1</strong><div class="bit-weights" aria-label="Pesos dos bits"><span>128</span><span>64</span><span>32</span><span>16</span><span>8</span><span>4</span><span>2</span><span>1</span></div><div class="progress-dots" id="progressDots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="panel-binary"><span class="binary-readout"><output id="binaryValue" aria-label="Representação binária"><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span></output></span></div><div class="progress-caption"><span id="progressText">0 de 8 bits certos</span><span id="progressPercent">0%</span></div></div></div>
+          <div class="mode-switch" role="group" aria-label="Modo de jogo">
+      <button id="modeChallenge" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></svg>Desafios</button>
+      <button id="modeFree" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c-3-7-10-6-10 0s7 7 10 0 10-6 10 0-7 7-10 0Z"/></svg>Modo livre</button>
+    </div>
+      <fieldset class="difficulty"><legend>Dificuldade</legend><div><button type="button" data-difficulty="easy" aria-pressed="true">Fácil</button><button type="button" data-difficulty="medium" aria-pressed="false">Médio</button><button type="button" data-difficulty="hard" aria-pressed="false">Difícil</button></div><p id="difficultyNote">Com dicas. Trocar o nível reinicia os 8 desafios.</p></fieldset><div class="challenge-bottom"><button class="primary-btn" id="btnNext" disabled><span id="nextLabel">Monte o número</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button class="secondary-btn" id="btnHint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z"/></svg>Uma ajudinha?</button><p class="feedback" id="feedback" role="status" aria-live="polite">Sem pressa. Cada movimento é uma descoberta.</p><div class="session-stats"><div><span class="stat-label">Sua experiência</span><strong><span id="xp">0</span> <small>XP</small></strong></div><div><span class="stat-label">Concluídos</span><strong id="completed">0 <small>/ 8 desafios</small></strong></div></div></div>
     </aside>
   </main>
-  <footer class="bottom-strip"><span><strong>Aprender também é jogar.</strong> Uma conta de cada vez.</span><span class="keys"><kbd>Tab</kbd> navegar <kbd>Enter</kbd> selecionar <span>·</span> controles + e − em cada casa</span><span>COMO REINVENTAR<br>O COMPUTADOR DO ZERO</span></footer>
+  <footer class="bottom-strip"><span><strong>Aprender também é jogar.</strong> Uma conta de cada vez.</span><span class="keys"><kbd>Tab</kbd> navegar <kbd>Enter</kbd> selecionar <span>·</span> clique em um bit para alternar</span><span>COMO REINVENTAR<br>O COMPUTADOR DO ZERO</span></footer>
 </div>
-<dialog id="helpDialog" aria-labelledby="helpTitle"><h2 id="helpTitle">Sua próxima jogada.</h2><p>Este é um ábaco decimal: cada haste tem nove contas. As que estão <b>à esquerda</b> entram na soma.</p><ol><li>De cima para baixo, cada conta vale <b>1.000, 100, 10 e 1</b>.</li><li><b>Clique</b> numa conta para movê-la com as vizinhas. Você também pode <b>arrastar para a esquerda ou direita</b>.</li><li>Construa o objetivo para ganhar XP e liberar o próximo desafio. No <b>modo livre</b>, experimente qualquer número.</li></ol><p>Você também pode jogar pelo teclado: use <b>Tab</b> para escolher os botões + e − de cada casa e <b>Enter</b> para mover as contas. Arraste o fundo para girar a câmera.</p><button class="primary-btn" id="btnCloseHelp">Vamos jogar</button></dialog>
+<dialog id="helpDialog" aria-labelledby="helpTitle">
+<h2 id="helpTitle">Uma conta. Duas posições.</h2>
+<p>Cada haste tem <b>uma única conta</b>, que funciona como um bit: à <b>esquerda = 1</b>, à <b>direita = 0</b>.</p>
+<ol><li>Os pesos, de cima para baixo, são <b>128, 64, 32, 16, 8, 4, 2 e 1</b>. Cada haste vale o dobro da anterior.</li><li>Some apenas os pesos ligados. <b>10101010₂ = 128 + 32 + 8 + 2 = 170</b>. O primeiro bit escrito corresponde à haste de cima.</li><li>Com oito bits, você representa os <b>256 valores de 0 a 255</b>. Todos à direita: 00000000. Todos à esquerda: 11111111.</li></ol>
+<p>Clique em uma conta para alternar, ou arraste na direção desejada. Os oito botões de bits também funcionam com <b>Tab</b> e <b>Enter</b>.</p>
+<p>Arraste o fundo para girar 360°. O botão nos cantos do palco restaura a câmera.</p>
+<button class="primary-btn" id="btnCloseHelp">Vamos jogar</button></dialog>
 <noscript><p style="padding:24px">Ative o JavaScript para jogar com o ábaco.</p></noscript>
 <script>
 // Também cobre falha de rede antes de o módulo conseguir inicializar.
-window.abacoLoadTimer=setTimeout(()=>{if(!window.__abaco){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},18000);
+window.abacoLoadTimer=setTimeout(()=>{if(!window.__binario){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},18000);
 if(window.parent!==window)document.body.classList.add('embedded');
 </script>
 <script type="importmap">
@@ -136,19 +222,22 @@ import { THREE, montaPalco } from './_base-modelo-3d.js';
 
 const $=(id)=>document.getElementById(id);
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
-const VALUES=[1000,100,10,1],NAMES=['Milhar','Centena','Dezena','Unidade'],SHORT=['MIL','CEN','DEZ','UNI'];
-const COLORS=[0x9562f0,0x2494ec,0xf2863e,0x45c793],CSS_COLORS=['#b79aff','#68b9ff','#ffb176','#96e6bb'];
-const TARGETS=[1234,42,307,2050,4806,7090,8642,9999],state=[0,0,0,0];
-const challengeState=[0,0,0,0];
+const VALUES=[128,64,32,16,8,4,2,1],NAMES=VALUES.map(value=>'Peso '+value);
+const COLORS=[0x9562f0,0x7067ed,0x2494ec,0x2bbecb,0xf2863e,0xe8ba43,0x45c793,0x90d367],CSS_COLORS=['#b79aff','#a2a0ff','#68b9ff','#74d9df','#ffb176','#f1d375','#96e6bb','#c1e994'];
+const LEVEL_TARGETS={easy:[1,8,16,42,85,128,170,255],medium:[37,74,109,150,173,206,231,249],hard:[93,166,117,203,182,229,157,246]};
+let difficulty="easy",TARGETS=LEVEL_TARGETS.easy;
+const state=Array(VALUES.length).fill(0);
+const challengeState=Array(VALUES.length).fill(0);
 const format=(value)=>value.toLocaleString('pt-BR');
 let mode='challenge',challengeIndex=0,solved=false,earned=0,completed=0;
 let demoTimer=null,demoRunning=false,demoIndex=0,audioContext=null,soundEnabled=false;
 let pointer=null,dragGuide=0,celebrationTime=0;
 
 // Reutiliza o palco sem mudar a aparência ou o comportamento dos outros modelos.
-const palco=montaPalco({alvo:[0,2.75,0],camPos:[1.6,6.3,14],meiaLarguraDesktop:5.8,meiaLarguraMobile:5.5,distMin:11.7,orbitaMin:9,maxPolar:1.7});
+const palco=montaPalco({alvo:[0,4.65,0],camPos:[1.2,7.4,18],meiaLarguraDesktop:2.5,meiaLarguraMobile:2.5,distMin:16.5,orbitaMin:9,maxPolar:1.7});
 const {scene,camera,renderer,controls,bloco,inicia,pixelDe}=palco;
 controls.autoRotate=false;
+controls.zoomSpeed=0.25;
 // Órbita livre: volta completa ao redor do modelo e acesso aos dois polos.
 controls.minAzimuthAngle=-Infinity;controls.maxAzimuthAngle=Infinity;
 controls.minPolarAngle=0;controls.maxPolarAngle=Math.PI;
@@ -170,70 +259,100 @@ const insetMat=new THREE.MeshStandardMaterial({color:0x111722,roughness:.65,meta
 const glowMat=new THREE.MeshStandardMaterial({color:0xc7f58b,emissive:0xa0ed58,emissiveIntensity:1.2});
 const abacus=new THREE.Group();scene.add(abacus);
 function box(w,h,d,mat,x,y,z,r=.09){const mesh=bloco(w,h,d,mat,r);mesh.position.set(x,y,z);abacus.add(mesh);return mesh;}
-box(10.15,.25,2.2,edgeMat,0,.12,0,.1);box(9.9,.045,1.94,frameMat,0,.28,0,.02);box(7.9,.026,.026,glowMat,0,.115,1.106,.01);
-box(9.6,.43,.68,frameMat,0,5.35,0,.14);box(9.6,.46,.7,frameMat,0,.61,0,.14);
-box(.5,5.1,.72,frameMat,-4.55,2.97,0,.14);box(.5,5.1,.72,frameMat,4.55,2.97,0,.14);
-box(.13,4.47,.025,insetMat,4.55,2.96,.372,.025);
-box(6.7,.025,.025,new THREE.MeshStandardMaterial({color:0xb6a0fa,emissive:0x9d80ef,emissiveIntensity:.8}),0,5.38,.353,.01);
+// Corpo estreito: oito hastes empilhadas, com curso curto para cada bit.
+const SIDE=1.63,TOP=8.85,CENTER=4.725,EDGE=1.0;
+const ROWS=VALUES.map((_,row)=>8.05-row*.95);
+box(4.1,.25,1.9,edgeMat,0,.12,0,.1);
+box(3.9,.045,1.7,frameMat,0,.28,0,.02);
+box(3.3,.026,.026,glowMat,0,.115,.956,.01);
+box(3.76,.43,.68,frameMat,0,TOP,0,.14);
+box(3.76,.46,.7,frameMat,0,.61,0,.14);
+box(.5,8.75,.72,frameMat,-SIDE,CENTER,0,.08);
+box(.5,8.75,.72,frameMat,SIDE,CENTER,0,.08);
+box(.13,7.65,.025,insetMat,SIDE,CENTER,.372,.025);
+box(2.4,.025,.025,new THREE.MeshStandardMaterial({color:0xb6a0fa,emissive:0x9d80ef,emissiveIntensity:.8}),0,TOP+.03,.353,.01);
 const screwGeo=new THREE.CylinderGeometry(.075,.075,.035,20);screwGeo.rotateX(Math.PI/2);
-[-4.55,4.55].forEach(x=>[.61,5.35].forEach(y=>{const screw=new THREE.Mesh(screwGeo,silver);screw.position.set(x,y,.368);abacus.add(screw);box(.07,.012,.012,insetMat,x,y,.392,.002);}));
-const ROWS=[4.57,3.52,2.47,1.42],STEP=.61,EDGE=3.9;
-const rodGeo=new THREE.CylinderGeometry(.042,.042,8.7,20);rodGeo.rotateZ(Math.PI/2);
+[-SIDE,SIDE].forEach(x=>[.61,TOP].forEach(y=>{
+  const screw=new THREE.Mesh(screwGeo,silver);screw.position.set(x,y,.368);abacus.add(screw);
+  box(.07,.012,.012,insetMat,x,y,.392,.002);
+}));
+const rodGeo=new THREE.CylinderGeometry(.042,.042,2.8,20);rodGeo.rotateZ(Math.PI/2);
 const collarGeo=new THREE.CylinderGeometry(.12,.12,.14,24);collarGeo.rotateZ(Math.PI/2);
-ROWS.forEach((y,row)=>{const rod=new THREE.Mesh(rodGeo,silver);rod.position.y=y;rod.castShadow=true;abacus.add(rod);[-4.23,4.23].forEach(x=>{const collar=new THREE.Mesh(collarGeo,edgeMat);collar.position.set(x,y,0);abacus.add(collar);});});
+ROWS.forEach(y=>{
+  const rod=new THREE.Mesh(rodGeo,silver);rod.position.y=y;rod.castShadow=true;abacus.add(rod);
+  [-1.33,1.33].forEach(x=>{const collar=new THREE.Mesh(collarGeo,edgeMat);collar.position.set(x,y,0);abacus.add(collar);});
+});
 
 // Perfil torneado, arredondado e vazado para as contas correrem pela haste.
 const profile=[[.074,-.245],[.23,-.245],[.32,-.216],[.385,-.15],[.42,-.06],[.424,0],[.42,.06],[.385,.15],[.32,.216],[.23,.245],[.074,.245],[.074,-.245]].map(([r,y])=>new THREE.Vector2(r,y));
 const beadGeo=new THREE.LatheGeometry(profile,48);beadGeo.rotateZ(Math.PI/2);beadGeo.computeVertexNormals();
 const beads=[];
-function positionFor(row,index){return index<state[row]?-EDGE+index*STEP:EDGE-(8-index)*STEP;}
-ROWS.forEach((y,row)=>{for(let index=0;index<9;index++){const material=new THREE.MeshPhysicalMaterial({color:COLORS[row],roughness:.23,metalness:.12,clearcoat:1,clearcoatRoughness:.17,envMapIntensity:.85,emissive:COLORS[row],emissiveIntensity:.015});const bead=new THREE.Mesh(beadGeo,material);bead.position.set(positionFor(row,index),y,0);bead.castShadow=true;bead.receiveShadow=true;bead.userData={row,index,velocity:0};beads.push(bead);abacus.add(bead);}});
+function positionFor(row){return state[row]===1 ? -EDGE : EDGE;}
+ROWS.forEach((y,row)=>{for(let index=0;index<1;index++){const material=new THREE.MeshPhysicalMaterial({color:COLORS[row],roughness:.23,metalness:.12,clearcoat:1,clearcoatRoughness:.17,envMapIntensity:.85,emissive:COLORS[row],emissiveIntensity:.015});const bead=new THREE.Mesh(beadGeo,material);bead.position.set(positionFor(row,index),y,0);bead.castShadow=true;bead.receiveShadow=true;bead.userData={row,index,velocity:0};beads.push(bead);abacus.add(bead);}});
 function label(text,x,y,color,width=.66){const canvas=document.createElement('canvas');canvas.width=512;canvas.height=128;const ctx=canvas.getContext('2d');ctx.font='600 48px Manrope, sans-serif';const size=Math.min(48,48*480/ctx.measureText(text).width);ctx.font=`600 ${size}px Manrope, sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=color;ctx.fillText(text,256,64);const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;const mesh=new THREE.Mesh(new THREE.PlaneGeometry(width,width/4),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false}));mesh.position.set(x,y,.39);abacus.add(mesh);}
 // Inscrições fixadas na face metálica esquerda, no sentido da lateral.
 function labelCasa(text,y,color){
-  const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=256;
+  const canvas=document.createElement('canvas');canvas.width=512;canvas.height=256;
   const ctx=canvas.getContext('2d');
-  const inscription=text.toUpperCase();
-  ctx.font='700 150px Manrope, sans-serif';
-  const size=Math.min(150,150*960/ctx.measureText(inscription).width);
+  const inscription=text.replace('Peso ','');
+  ctx.font='700 170px Manrope, sans-serif';
+  const size=Math.min(170,170*480/ctx.measureText(inscription).width);
   ctx.font=`700 ${size}px Manrope, sans-serif`;
   ctx.textAlign='center';ctx.textBaseline='middle';
-  ctx.fillStyle='#10131c';ctx.fillText(inscription,514,130);
-  ctx.fillStyle=color;ctx.fillText(inscription,512,128);
+  ctx.fillStyle='#10131c';ctx.fillText(inscription,258,130);
+  ctx.fillStyle=color;ctx.fillText(inscription,256,128);
   const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;
   texture.anisotropy=renderer.capabilities.getMaxAnisotropy();
   const material=new THREE.MeshStandardMaterial({map:texture,transparent:true,roughness:.65,metalness:.25,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1});
-  const inscriptionMesh=new THREE.Mesh(new THREE.PlaneGeometry(.98,.245),material);
-  inscriptionMesh.rotation.z=Math.PI/2;
-  inscriptionMesh.position.set(-4.55,y,.362);
+  const inscriptionMesh=new THREE.Mesh(new THREE.PlaneGeometry(.46,.23),material);
+  // Os pesos numéricos são inscritos horizontalmente na face do metal.
+  inscriptionMesh.position.set(-SIDE,y,.362);
   abacus.add(inscriptionMesh);
 }
 document.fonts.ready.then(()=>{
   ROWS.forEach((y,row)=>labelCasa(NAMES[row],y,CSS_COLORS[row]));
-  label('Á B A C O  /  P L A Y',0,.6,'#a3aec5',1.8);
+  label('B I N Á R I O',0,.6,'#a3aec5',1.6);
+  label('1',-1.05,.6,'#c7f58b',2.4);
+  label('0',1.05,.6,'#c5ccda',2.4);
 });
 
 // Controles equivalentes às peças, acessíveis também por toque e teclado.
-$('digitControls').innerHTML=NAMES.map((name,row)=>`<div class="digit-control" style="--row-color:${CSS_COLORS[row]}"><label id="label-${row}">${SHORT[row]}</label><button data-row="${row}" data-delta="-1" aria-label="Diminuir ${name.toLowerCase()}">−</button><output id="digit-${row}" aria-labelledby="label-${row}">0</output><button data-row="${row}" data-delta="1" aria-label="Aumentar ${name.toLowerCase()}">+</button></div>`).join('');
+$('digitControls').innerHTML=VALUES.map((weight,row)=>`
+<button class="bit-control" data-row="${row}" style="--row-color:${CSS_COLORS[row]}" aria-pressed="false" aria-label="Ativar bit de peso ${weight}">
+  <span>PESO ${weight}</span><output id="digit-${row}" aria-hidden="true">0</output>
+</button>`).join('');
 function total(){return state.reduce((sum,n,row)=>sum+n*VALUES[row],0);}
-function goalDigits(){return String(TARGETS[challengeIndex]).padStart(4,'0').split('').map(Number);}
+function bitsFor(value){return value.toString(2).padStart(VALUES.length,'0').split('').map(Number);}
+function goalDigits(){return bitsFor(TARGETS[challengeIndex]);}
+function setValue(value){bitsFor(value).forEach((bit,row)=>state[row]=bit);}
 function stopDemo(){clearTimeout(demoTimer);demoRunning=false;$('exampleLabel').textContent='Ver exemplo';}
 function playNote(row,win=false){
   if(!soundEnabled)return;
   try{audioContext||=new(window.AudioContext||window.webkitAudioContext)();if(audioContext.state==='suspended')audioContext.resume().catch(()=>{});const start=audioContext.currentTime;(win?[523.25,659.25,783.99]:[260+row*95]).forEach((frequency,i)=>{const oscillator=audioContext.createOscillator(),gain=audioContext.createGain();oscillator.type='sine';oscillator.frequency.setValueAtTime(frequency,start+i*.1);gain.gain.setValueAtTime(0,start+i*.1);gain.gain.linearRampToValueAtTime(.07,start+i*.1+.012);gain.gain.exponentialRampToValueAtTime(.001,start+i*.1+.22);oscillator.connect(gain);gain.connect(audioContext.destination);oscillator.start(start+i*.1);oscillator.stop(start+i*.1+.25);oscillator.onended=()=>{oscillator.disconnect();gain.disconnect();};});}catch{soundEnabled=false;$('btnSound').setAttribute('aria-pressed','false');}
 }
-function feedback(text,success=false){$('feedback').textContent=text;$('feedback').classList.toggle('success',success);}
+function feedback(text,success=false){$('feedback').textContent=text;$('feedback').hidden=difficulty==='hard'&&mode==='challenge'&&!success;$('feedback').classList.toggle('success',success);}
 function renderState(allowWin=true){
+  const terms=VALUES.filter((value,row)=>state[row]);
+  $('sumTerms').replaceChildren(...(terms.length?terms:[0]).map((value,index)=>{const line=document.createElement('div');line.textContent=(index?'+ ':'')+value;return line;}));
+  $('sumResult').textContent=total();
+
   $('total').textContent=format(total());
-  state.forEach((digit,row)=>{$(`digit-${row}`).textContent=digit;document.querySelector(`[data-row="${row}"][data-delta="-1"]`).disabled=digit===0;document.querySelector(`[data-row="${row}"][data-delta="1"]`).disabled=digit===9;});
+  $('binaryValue').replaceChildren(...state.map(bit=>{const digit=document.createElement('span');digit.textContent=bit;return digit;}));
+  state.forEach((digit,row)=>{
+    $(`digit-${row}`).textContent=digit;
+    const button=document.querySelector(`[data-row="${row}"]`);
+    button.setAttribute('aria-pressed',digit===1);
+    button.setAttribute('aria-label',`${digit?'Desativar':'Ativar'} bit de peso ${VALUES[row]}`);
+  });
   const matches=mode==='challenge'?goalDigits().map((digit,row)=>digit===state[row]):state.map(n=>n>0),count=matches.filter(Boolean).length;
-  [...$('progressDots').children].forEach((el,row)=>el.classList.toggle('done',matches[row]));
-  $('progressText').textContent=mode==='challenge'?`${count} de 4 casas certas`:`${count} de 4 casas em uso`;$('progressPercent').textContent=mode==='challenge'?`${count*25}%`:'LIVRE';
+  const highlightedBits=mode==='free'?state:difficulty==='hard'?Array(VALUES.length).fill(0):goalDigits();
+  [...$('progressDots').children].forEach((el,row)=>el.classList.toggle('done',highlightedBits[row]===1));
+  $('progressText').textContent=mode==='challenge'?`${count} de 8 bits certos`:`${count} de 8 bits ligados`;$('progressPercent').textContent=mode==='challenge'?`${count*100/VALUES.length}%`:'LIVRE';
   if(mode==='free')$('target').textContent=format(total());
-  if(mode==='challenge'&&count===4&&!solved&&allowWin&&!demoRunning){solved=true;earned+=100;completed++;celebrationTime=2.8;$('arena').classList.add('won');$('xp').textContent=format(earned);$('completed').innerHTML=`${completed} <small>/ 8 desafios</small>`;$('btnNext').disabled=false;$('nextLabel').textContent=challengeIndex===7?'Jogar novamente':'Próximo desafio';$('challengeTitle').textContent=challengeIndex===7?'Você zerou o jogo!':'Mandou muito bem!';feedback(challengeIndex===7?'Todos os desafios completos. Você domina as quatro casas!':'Número construído! +100 XP para sua coleção.',true);playNote(0,true);burst();}
+  if(mode==='challenge'&&count===VALUES.length&&!solved&&allowWin&&!demoRunning){solved=true;earned+=100;completed++;celebrationTime=2.8;$('arena').classList.add('won');$('xp').textContent=format(earned);$('completed').innerHTML=`${completed} <small>/ 8 desafios</small>`;$('btnNext').disabled=false;$('nextLabel').textContent=challengeIndex===7?'Jogar novamente':'Próximo desafio';$('challengeTitle').textContent=challengeIndex===7?'Você zerou o jogo!':'Mandou muito bem!';feedback(challengeIndex===7?'Todos os desafios completos. Você domina os oito bits!':'Número construído! +100 XP para sua coleção.',true);playNote(0,true);burst();}
 }
-function setDigit(row,digit){const next=Math.max(0,Math.min(9,digit));if(next===state[row])return;stopDemo();state[row]=next;playNote(row);if(!solved||mode==='free')feedback(`${NAMES[row]}: ${next} ${next===1?'conta vale':'contas valem'} ${format(next*VALUES[row])}.`);renderState();}
-$('digitControls').addEventListener('click',event=>{const btn=event.target.closest('button');if(btn)setDigit(Number(btn.dataset.row),state[Number(btn.dataset.row)]+Number(btn.dataset.delta));});
+function setDigit(row,digit){const next=Math.max(0,Math.min(1,digit));if(next===state[row])return;stopDemo();state[row]=next;playNote(row);if(!solved||mode==='free')feedback(`${NAMES[row]} ${next?'ligado':'desligado'}: ${state.join('')}₂ = ${state.filter((bit)=>bit).length?VALUES.filter((_,i)=>state[i]).join(' + '):'0'} = ${total()}.`);renderState();}
+$('digitControls').addEventListener('click',event=>{const btn=event.target.closest('button');if(btn)setDigit(Number(btn.dataset.row),1-state[Number(btn.dataset.row)]);});
 
 // Arrastar uma conta não aciona a órbita. Soltar fora ou cancelar libera a câmera.
 const raycaster=new THREE.Raycaster(),mouse=new THREE.Vector2();
@@ -253,18 +372,48 @@ renderer.domElement.addEventListener('pointerup',event=>endPointer(event));rende
 
 function setMode(nextMode){
   if(nextMode!==mode){if(mode==='challenge')state.forEach((digit,row)=>challengeState[row]=digit);else challengeState.forEach((digit,row)=>state[row]=digit);}
-  stopDemo();mode=nextMode;$('modeChallenge').setAttribute('aria-pressed',mode==='challenge');$('modeFree').setAttribute('aria-pressed',mode==='free');$('level').textContent=mode==='free'?'SEM LIMITES':`${String(challengeIndex+1).padStart(2,'0')} / 08`;$('panelEyebrow').textContent=mode==='free'?'SOLTE A CURIOSIDADE':'PEQUENAS GRANDES CONQUISTAS';$('challengeTitle').textContent=mode==='free'?'E se você tentar…':solved?'Mandou muito bem!':'Encontre o número.';$('challengeCopy').textContent=mode==='free'?'De zero a 9.999. Descubra como uma mesma conta muda de valor em cada haste.':'Mova as contas e construa o valor abaixo. Uma casa de cada vez.';$('targetLabel').textContent=mode==='free'?'SUA CRIAÇÃO':'SEU OBJETIVO';$('xpBadge').textContent=mode==='free'?'∞ possibilidades':'+100 XP';$('target').textContent=format(mode==='free'?total():TARGETS[challengeIndex]);$('nextLabel').textContent=mode==='free'?'Surpreenda-me':solved?(challengeIndex===7?'Jogar novamente':'Próximo desafio'):'Monte o número';$('btnNext').disabled=mode==='challenge'&&!solved;$('btnHint').hidden=mode==='free';$('arena').classList.remove('won');feedback(mode==='free'?'Aqui vale experimentar. O que acontece ao mover só uma conta?':'Sem pressa. Cada movimento é uma descoberta.');
+  stopDemo();mode=nextMode;$('modeChallenge').setAttribute('aria-pressed',mode==='challenge');$('modeFree').setAttribute('aria-pressed',mode==='free');$('level').textContent=mode==='free'?'SEM LIMITES':`${String(challengeIndex+1).padStart(2,'0')} / 08`;$('panelEyebrow').textContent=mode==='free'?'SOLTE A CURIOSIDADE':'PEQUENAS GRANDES CONQUISTAS';$('challengeTitle').textContent=mode==='free'?'E se você tentar…':solved?'Mandou muito bem!':'Encontre o número.';$('challengeCopy').textContent=mode==='free'?'Oito bits, 256 possibilidades. Ligue e desligue as contas para explorar de 00000000 a 11111111.':'Ligue os bits certos para formar o valor abaixo. Cada conta tem seu peso.';$('targetLabel').textContent=mode==='free'?'SUA CRIAÇÃO':'OBJETIVO DECIMAL';$('xpBadge').textContent=mode==='free'?'∞ possibilidades':'+100 XP';$('target').textContent=format(mode==='free'?total():TARGETS[challengeIndex]);$('nextLabel').textContent=mode==='free'?'Surpreenda-me':solved?(challengeIndex===7?'Jogar novamente':'Próximo desafio'):'Monte o número';$('btnNext').disabled=mode==='challenge'&&!solved;$('btnHint').hidden=mode==='free'||difficulty==='hard';document.body.classList.toggle('hard-challenge',mode==='challenge'&&difficulty==='hard');$('arena').classList.remove('won');feedback(mode==='free'?'Aqui vale experimentar. O que acontece ao mover só uma conta?':'Sem pressa. Cada movimento é uma descoberta.');
   $('arenaObjective').textContent=mode==='free'?'Modo livre · explore as contas':`Objetivo · ${format(TARGETS[challengeIndex])}`;
   if(mode==='free')$('xpBadge').textContent='∞ LIVRE';
   // O desafio retoma seu estado; a demonstração e o modo livre não concedem XP.
   renderState(false);
 }
 $('modeFree').addEventListener('click',()=>setMode('free'));$('modeChallenge').addEventListener('click',()=>setMode('challenge'));
-$('btnNext').addEventListener('click',()=>{stopDemo();if(mode==='free'){state.forEach((_,row)=>state[row]=Math.floor(Math.random()*10));renderState(false);playNote(2);feedback('Um novo número para explorar. Consegue ler cada casa?');return;}if(!solved)return;challengeIndex++;if(challengeIndex===TARGETS.length){challengeIndex=0;earned=0;completed=0;$('xp').textContent='0';$('completed').innerHTML='0 <small>/ 8 desafios</small>';}solved=false;state.fill(0);setMode('challenge');});
+document.querySelectorAll('[data-difficulty]').forEach(button=>button.addEventListener('click',()=>{
+  if(difficulty===button.dataset.difficulty)return;
+  stopDemo();difficulty=button.dataset.difficulty;TARGETS=LEVEL_TARGETS[difficulty];
+  challengeIndex=0;solved=false;earned=0;completed=0;challengeState.fill(0);state.fill(0);
+  $('xp').textContent='0';$('completed').innerHTML='0 <small>/ 8 desafios</small>';
+  document.querySelectorAll('[data-difficulty]').forEach(item=>item.setAttribute('aria-pressed',item===button));
+  $('difficultyNote').textContent=(difficulty==='easy'?'Com dicas.':difficulty==='medium'?'Contas mais complexas, com dicas.':'Contas mais complexas, sem dicas.')+' Trocar o nível reinicia os 8 desafios.';
+  setMode(mode);
+}));
+$('btnNext').addEventListener('click',()=>{stopDemo();if(mode==='free'){state.forEach((_,row)=>state[row]=Math.floor(Math.random()*2));renderState(false);playNote(2);feedback('Um novo padrão para explorar. Some os pesos dos bits ligados.');return;}if(!solved)return;challengeIndex++;if(challengeIndex===TARGETS.length){challengeIndex=0;earned=0;completed=0;$('xp').textContent='0';$('completed').innerHTML='0 <small>/ 8 desafios</small>';}solved=false;state.fill(0);setMode('challenge');});
 $('btnLimpar').addEventListener('click',()=>{stopDemo();state.fill(0);renderState(false);$('arena').classList.remove('won');feedback('Tudo zerado. Um novo começo, na ponta dos dedos.');});
-$('btnHint').addEventListener('click',()=>{const goal=goalDigits(),row=goal.findIndex((digit,i)=>digit!==state[i]);feedback(row<0?'Perfeito: todas as casas estão no lugar.':`Na casa de ${NAMES[row].toLowerCase()}, deixe ${goal[row]} ${goal[row]===1?'conta':'contas'} à esquerda. Isso vale ${format(goal[row]*VALUES[row])}.`);});
-$('btnExemplo').addEventListener('click',()=>{if(demoRunning){stopDemo();feedback('Exemplo interrompido. Agora é sua vez.');return;}setMode('free');state.fill(0);demoRunning=true;demoIndex=0;$('exampleLabel').textContent='Parar exemplo';renderState(false);const demo=()=>{state[demoIndex]=demoIndex+1;playNote(demoIndex);feedback(`${NAMES[demoIndex]}: ${demoIndex+1} ${demoIndex===0?'conta vale':'contas valem'} ${format((demoIndex+1)*VALUES[demoIndex])}.`);renderState(false);demoIndex++;if(demoIndex<4)demoTimer=setTimeout(demo,850);else{stopDemo();feedback('1.000 + 200 + 30 + 4 = 1.234. Mesma conta, valores diferentes.');}};demoTimer=setTimeout(demo,350);});
-$('btnCamera').addEventListener('click',()=>{controls.target.set(0,2.75,0);camera.position.set(1.6,6.3,14);palco.redimensiona();controls.update();});
+$('btnHint').addEventListener('click',()=>{
+  if(difficulty==='hard'&&mode==='challenge')return;
+  const goal=goalDigits(),row=goal.findIndex((bit,i)=>bit!==state[i]);
+  feedback(row<0?'Perfeito: os oito bits estão no lugar.':`${goal[row]?'Ligue':'Desligue'} o bit de peso ${VALUES[row]}. Para formar ${TARGETS[challengeIndex]}, some ${VALUES.filter((_,i)=>goal[i]).join(' + ')}.`);
+});
+$('btnExemplo').addEventListener('click',()=>{
+  if(demoRunning){stopDemo();feedback('Exemplo interrompido. Agora é sua vez.');return;}
+  setMode('free');state.fill(0);demoRunning=true;demoIndex=0;
+  $('exampleLabel').textContent='Parar exemplo';renderState(false);
+  const steps=[
+    {value:1,text:'00000001₂ = 1. Só o bit de peso 1 está ligado.'},
+    {value:2,text:'00000010₂ = 2. Ao somar mais um, o peso 1 desliga e o peso 2 liga.'},
+    {value:3,text:'00000011₂ = 2 + 1 = 3. Dois bits ligados.'},
+    {value:170,text:'10101010₂ = 128 + 32 + 8 + 2 = 170. Uma conta por haste; cada uma só pode ser 0 ou 1.'}
+  ];
+  const demo=()=>{
+    const step=steps[demoIndex++];setValue(step.value);renderState(false);playNote(3);
+    feedback(step.text);
+    if(demoIndex<steps.length)demoTimer=setTimeout(demo,1400);
+    else stopDemo();
+  };
+  demoTimer=setTimeout(demo,400);
+});
+$('btnCamera').addEventListener('click',()=>{controls.target.set(0,4.65,0);camera.position.set(1.2,7.4,18);palco.redimensiona();controls.update();});
 $('btnSound').addEventListener('click',()=>{soundEnabled=!soundEnabled;$('btnSound').setAttribute('aria-pressed',soundEnabled);$('btnSound').setAttribute('aria-label',soundEnabled?'Desativar sons':'Ativar sons');$('btnSound').title=soundEnabled?'Desativar sons':'Ativar sons';$('soundWaves').setAttribute('d',soundEnabled?'M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14':'m16 9 5 6m0-6-5 6');if(soundEnabled)playNote(1);});
 $('btnHelp').addEventListener('click',()=>$('helpDialog').showModal());$('btnCloseHelp').addEventListener('click',()=>$('helpDialog').close());
 $('helpDialog').addEventListener('click',event=>{if(event.target===$('helpDialog')){const r=$('helpDialog').getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)$('helpDialog').close();}});
@@ -279,7 +428,7 @@ inicia(dt=>{
   if(celebrationTime>0){celebrationTime-=dt;if(celebrationTime<=0)$('arena').classList.remove('won');}
 });
 // Gancho de leitura para verificar a mecânica e a posição real das peças na tela.
-window.__abaco={estado:()=>({digits:[...state],total:total(),mode,target:TARGETS[challengeIndex],challengeIndex,solved,xp:earned,completed,demoRunning}),pixels:()=>({beads:beads.map(bead=>({...pixelDe(bead.getWorldPosition(new THREE.Vector3())),row:bead.userData.row,index:bead.userData.index})),frame:[[-4.85,.3,0],[4.85,5.6,0]].map(p=>pixelDe(new THREE.Vector3(...p)))})};
+window.__binario={estado:()=>({digits:[...state],binary:state.join(''),total:total(),mode,target:TARGETS[challengeIndex],challengeIndex,solved,xp:earned,completed,demoRunning}),pixels:()=>({beads:beads.map(bead=>({...pixelDe(bead.getWorldPosition(new THREE.Vector3())),row:bead.userData.row,index:bead.userData.index})),frame:[[-2.05,.0,0],[2.05,9.1,0]].map(p=>pixelDe(new THREE.Vector3(...p)))})};
 const compactEmbed=matchMedia('(max-width:700px) and (max-height:540px)');
 function adaptEmbed(){if(window.parent!==window&&compactEmbed.matches)setMode('free');}
 compactEmbed.addEventListener('change',adaptEmbed);adaptEmbed();

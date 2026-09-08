@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#10131c">
-<title>Ábaco Play — números em movimento</title>
+<title>Suanpan Play — ábaco chinês</title>
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,13 +80,29 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
 @media(max-height:540px) and (min-width:701px){.embedded .game-layout{height:calc(100vh - 73px)}.embedded .play-column{min-height:0}.embedded .arena{height:auto;min-height:180px}.embedded .challenge{overflow-y:auto}}
 @media(max-height:540px) and (max-width:540px){.embedded .arena{height:calc(100vh - 159px)}.embedded .scoreboard{gap:7px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Somente esta versão: controles independentes para as duas famílias de contas. */
+.version-link{text-decoration:none;color:#b6a0fa}.version-link:hover{color:#d6c7ff}
+.deck-key{position:absolute;left:24px;right:24px;top:65px;z-index:2;display:flex;justify-content:center;gap:18px;pointer-events:none;font-size:10px;color:#a6adc0}
+.deck-key span{padding:5px 10px;background:#141925d9;border:1px solid #353b4b;border-radius:7px;backdrop-filter:blur(4px)}
+.deck-key b{color:#e1d5ff;margin-right:4px}
+.digit-control{grid-template-columns:minmax(22px,1fr) 34px minmax(22px,1fr);grid-template-rows:20px 32px 32px}
+.digit-control label{display:flex;align-items:center;justify-content:center;gap:8px}
+.digit-control label output{font-size:15px}.digit-control>output{font-size:11px;color:#aab5c9}
+.digit-control button{height:32px}.digit-controls{gap:6px}
+#total{font-size:clamp(25px,3vw,38px)}.scoreboard{gap:12px}
+dialog a{color:#c4b2ff}.live-label{display:none}
+@media(max-width:1100px){.digit-control{padding-left:4px;grid-template-columns:minmax(18px,1fr) 29px minmax(18px,1fr)}.digit-controls{gap:2px}.scoreboard{flex-wrap:wrap}.scoreboard>div:first-child{min-width:105px}}
+@media(max-width:540px){.digit-control{grid-template-columns:minmax(22px,1fr) 28px minmax(22px,1fr);grid-template-rows:20px 36px 36px}.digit-control button{height:36px}.deck-key{top:59px;left:12px;right:12px;gap:6px;font-size:9px}.deck-key span{padding:4px 7px}.arena{height:345px}.brand{font-size:21px}.challenge-copy{min-height:0}}
+@media(max-height:540px) and (min-width:701px){.embedded .deck-key{display:none}.embedded .digit-control{grid-template-rows:16px 25px 25px}.embedded .digit-control button{height:25px}.embedded .scoreboard{padding:7px 12px}.embedded .underboard p{display:none}.embedded .underboard{justify-content:flex-end}.embedded .arena{min-height:150px}}
+@media(max-height:540px) and (max-width:700px){.embedded .deck-key{display:none}.embedded .arena{height:calc(100vh - 187px)}.embedded .digit-control{grid-template-rows:16px 27px 27px}.embedded .digit-control button{height:27px}.embedded .scoreboard{gap:5px}}
 </style>
 </head>
 <body>
 <div class="app">
   <header class="topbar">
-    <a class="brand" href="./index.html" aria-label="Ábaco Play — galeria de modelos"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>ábaco<span>PLAY</span></a>
-    <span class="top-caption">Uma ideia milenar. Infinitas possibilidades.</span>
+    <a class="brand" href="./index.html" aria-label="Suanpan Play — galeria de modelos"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>suanpan<span>PLAY</span></a>
+    <a class="top-caption version-link" href="./abaco.html">← Abrir o Ábaco Play original</a>
     <div class="top-actions">
       <button class="icon-btn" id="btnSound" aria-label="Ativar sons" aria-pressed="false" title="Ativar sons"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4Z"/><path id="soundWaves" d="m16 9 5 6m0-6-5 6"/></svg></button>
       <button class="icon-btn" id="btnHelp" aria-label="Como jogar" title="Como jogar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4m0 3h.01"/></svg></button>
@@ -94,7 +110,7 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
     </div>
   </header>
   <section class="introduction" aria-label="Ábaco interativo">
-    <div><p class="eyebrow"><span class="live-dot"></span>O PRIMEIRO COMPUTADOR É VOCÊ</p><h1>Números <span>em movimento.</span></h1></div>
+    <div><p class="eyebrow"><span class="live-dot"></span>SUANPAN · O ÁBACO CHINÊS</p><h1>Duas famílias. <span>Um número.</span></h1></div>
     <div class="mode-switch" role="group" aria-label="Modo de jogo">
       <button id="modeChallenge" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></svg>Desafios</button>
       <button id="modeFree" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c-3-7-10-6-10 0s7 7 10 0 10-6 10 0-7 7-10 0Z"/></svg>Modo livre</button>
@@ -103,29 +119,37 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
   <main class="game-layout">
     <section class="play-column" aria-label="Seu ábaco">
       <div class="arena" id="arena">
-        <div class="arena-top"><div class="arena-tag"><span></span>SEU CAMPO DE JOGO</div><div class="arena-objective" id="arenaObjective">Objetivo · 1.234</div><button class="icon-btn view-reset" id="btnCamera" aria-label="Restaurar câmera" title="Restaurar câmera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3"/></svg></button></div>
-        <div id="cena" role="img" aria-label="Ábaco 3D de quatro hastes: milhar, centena, dezena e unidade. Use também os controles de cada casa abaixo."></div>
-        <div class="scene-message" id="loading"><span class="spinner" aria-hidden="true"></span><span>Preparando seu ábaco…</span></div>
-        <div class="scene-message" id="aviso" role="alert" hidden>Não foi possível abrir o ábaco 3D. Confira sua conexão e recarregue a página.</div>
-        <div class="arena-bottom"><span class="active-key"><i></i>Contas à esquerda = valor</span><span class="drag-guide">Arraste o fundo para girar · role para aproximar</span></div>
+        <div class="arena-top"><div class="arena-tag"><span></span>SEU CAMPO DE JOGO</div><div class="arena-objective" id="arenaObjective">Objetivo · 7</div><button class="icon-btn view-reset" id="btnCamera" aria-label="Restaurar câmera" title="Restaurar câmera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+        <div class="deck-key" aria-hidden="true"><span><b>2 contas × 5</b> → barra</span><span>barra ← <b>5 contas × 1</b></span></div>
+        <div id="cena" role="img" aria-label="Suanpan 3D horizontal. Quatro hastes: milhar, centena, dezena e unidade. Cada haste tem duas contas de cinco à esquerda e cinco contas de um à direita. Contam as próximas à divisória. Controles equivalentes abaixo."></div>
+        <div class="scene-message" id="loading"><span class="spinner" aria-hidden="true"></span><span>Preparando seu suanpan…</span></div>
+        <div class="scene-message" id="aviso" role="alert" hidden>Não foi possível abrir o suanpan 3D. Confira sua conexão e recarregue a página.</div>
+        <div class="arena-bottom"><span class="active-key"><i></i>Contas junto à barra = valor</span><span class="drag-guide">Arraste o fundo para girar · role para aproximar</span></div>
         <div class="win-flash"></div><div class="celebration" aria-hidden="true">✦ Número perfeito! +100 XP</div>
       </div>
       <div class="scoreboard"><div><p class="score-label">Seu número</p><div class="total-wrap"><output id="total" aria-label="Valor total">0</output><span class="live-label">AO VIVO</span></div></div><div class="digit-controls" id="digitControls" role="group" aria-label="Ajustar as casas do ábaco"></div></div>
-      <div class="underboard"><p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></svg>Clique nas contas ou arraste-as para os lados.</p><div class="utility-buttons"><button class="text-btn" id="btnExemplo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg><span id="exampleLabel">Ver exemplo</span></button><button class="text-btn" id="btnLimpar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg>Zerar</button></div></div>
+      <div class="underboard"><p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></svg>Aproxime da barra para somar. Afaste para tirar.</p><div class="utility-buttons"><button class="text-btn" id="btnExemplo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg><span id="exampleLabel">Ver exemplo</span></button><button class="text-btn" id="btnLimpar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg>Zerar</button></div></div>
     </section>
     <aside class="challenge" aria-label="Painel de desafios">
       <div class="challenge-top"><p class="eyebrow" id="panelEyebrow">PEQUENAS GRANDES CONQUISTAS</p><span class="level-chip" id="level">01 / 08</span></div>
-      <div class="challenge-content"><div class="challenge-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></svg></div><h2 id="challengeTitle">Encontre o número.</h2><p class="challenge-copy" id="challengeCopy">Mova as contas e construa o valor abaixo. Uma casa de cada vez.</p><div class="target-box"><div class="target-top"><span id="targetLabel">SEU OBJETIVO</span><span class="xp-badge" id="xpBadge">+100 XP</span></div><strong id="target">1.234</strong><div class="progress-dots" id="progressDots" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="progress-caption"><span id="progressText">0 de 4 casas certas</span><span id="progressPercent">0%</span></div></div></div>
+      <div class="challenge-content"><div class="challenge-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></svg></div><h2 id="challengeTitle">Encontre o número.</h2><p class="challenge-copy" id="challengeCopy">Aproxime as contas da barra. À esquerda, cada uma vale 5; à direita, vale 1.</p><div class="target-box"><div class="target-top"><span id="targetLabel">SEU OBJETIVO</span><span class="xp-badge" id="xpBadge">+100 XP</span></div><strong id="target">7</strong><div class="progress-dots" id="progressDots" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="progress-caption"><span id="progressText">0 de 4 casas certas</span><span id="progressPercent">0%</span></div></div></div>
       <div class="challenge-bottom"><button class="primary-btn" id="btnNext" disabled><span id="nextLabel">Monte o número</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button class="secondary-btn" id="btnHint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z"/></svg>Uma ajudinha?</button><p class="feedback" id="feedback" role="status" aria-live="polite">Sem pressa. Cada movimento é uma descoberta.</p><div class="session-stats"><div><span class="stat-label">Sua experiência</span><strong><span id="xp">0</span> <small>XP</small></strong></div><div><span class="stat-label">Concluídos</span><strong id="completed">0 <small>/ 8 desafios</small></strong></div></div></div>
     </aside>
   </main>
   <footer class="bottom-strip"><span><strong>Aprender também é jogar.</strong> Uma conta de cada vez.</span><span class="keys"><kbd>Tab</kbd> navegar <kbd>Enter</kbd> selecionar <span>·</span> controles + e − em cada casa</span><span>COMO REINVENTAR<br>O COMPUTADOR DO ZERO</span></footer>
 </div>
-<dialog id="helpDialog" aria-labelledby="helpTitle"><h2 id="helpTitle">Sua próxima jogada.</h2><p>Este é um ábaco decimal: cada haste tem nove contas. As que estão <b>à esquerda</b> entram na soma.</p><ol><li>De cima para baixo, cada conta vale <b>1.000, 100, 10 e 1</b>.</li><li><b>Clique</b> numa conta para movê-la com as vizinhas. Você também pode <b>arrastar para a esquerda ou direita</b>.</li><li>Construa o objetivo para ganhar XP e liberar o próximo desafio. No <b>modo livre</b>, experimente qualquer número.</li></ol><p>Você também pode jogar pelo teclado: use <b>Tab</b> para escolher os botões + e − de cada casa e <b>Enter</b> para mover as contas. Arraste o fundo para girar a câmera.</p><button class="primary-btn" id="btnCloseHelp">Vamos jogar</button></dialog>
+<dialog id="helpDialog" aria-labelledby="helpTitle">
+<h2 id="helpTitle">O encontro acontece na barra.</h2>
+<p>Este é um <b>suanpan</b>, o ábaco chinês, apresentado com as hastes deitadas. Cada haste tem <b>duas contas de cinco</b> à esquerda e <b>cinco contas de um</b> à direita.</p>
+<ol><li><b>Aproxime da barra</b> para contar; afaste para deixar de contar. As peças de cinco movem-se para a direita; as de um, para a esquerda.</li><li>Para formar <b>7</b>, encoste uma conta de cinco e duas de um: <b>5 + 2 = 7</b>.</li><li>De cima para baixo, as casas são <b>milhar, centena, dezena e unidade</b>. Uma conta de cinco na centena vale 500.</li></ol>
+<p>Uma haste pode representar de 0 a 15 antes das trocas. Cinco contas de um e uma conta de cinco representam o mesmo valor. Os desafios aceitam representações equivalentes que somem o objetivo.</p>
+<p>Use os botões <b>+ e − nas linhas ×5 e ×1</b> de cada casa para jogar pelo teclado. <b>Tab</b> navega e <b>Enter</b> seleciona.</p>
+<p><a href="https://www.si.edu/spotlight/the-abacus-the-numeral-frame-and-counters/the-chinese-abacus" target="_blank" rel="noopener noreferrer">Conheça o suanpan no Smithsonian ↗</a></p>
+<button class="primary-btn" id="btnCloseHelp">Vamos jogar</button></dialog>
 <noscript><p style="padding:24px">Ative o JavaScript para jogar com o ábaco.</p></noscript>
 <script>
 // Também cobre falha de rede antes de o módulo conseguir inicializar.
-window.abacoLoadTimer=setTimeout(()=>{if(!window.__abaco){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},18000);
+window.abacoLoadTimer=setTimeout(()=>{if(!window.__suanpan){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},18000);
 if(window.parent!==window)document.body.classList.add('embedded');
 </script>
 <script type="importmap">
@@ -138,8 +162,10 @@ const $=(id)=>document.getElementById(id);
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const VALUES=[1000,100,10,1],NAMES=['Milhar','Centena','Dezena','Unidade'],SHORT=['MIL','CEN','DEZ','UNI'];
 const COLORS=[0x9562f0,0x2494ec,0xf2863e,0x45c793],CSS_COLORS=['#b79aff','#68b9ff','#ffb176','#96e6bb'];
-const TARGETS=[1234,42,307,2050,4806,7090,8642,9999],state=[0,0,0,0];
-const challengeState=[0,0,0,0];
+const TARGETS=[7,14,58,105,507,1234,6089,9999],state=[0,0,0,0];
+const decks=Array.from({length:4},()=>({five:0,one:0}));
+const savedDecks=Array.from({length:4},()=>({five:0,one:0}));
+// O estado físico é preservado ao alternar os modos.
 const format=(value)=>value.toLocaleString('pt-BR');
 let mode='challenge',challengeIndex=0,solved=false,earned=0,completed=0;
 let demoTimer=null,demoRunning=false,demoIndex=0,audioContext=null,soundEnabled=false;
@@ -178,6 +204,9 @@ box(6.7,.025,.025,new THREE.MeshStandardMaterial({color:0xb6a0fa,emissive:0x9d80
 const screwGeo=new THREE.CylinderGeometry(.075,.075,.035,20);screwGeo.rotateX(Math.PI/2);
 [-4.55,4.55].forEach(x=>[.61,5.35].forEach(y=>{const screw=new THREE.Mesh(screwGeo,silver);screw.position.set(x,y,.368);abacus.add(screw);box(.07,.012,.012,insetMat,x,y,.392,.002);}));
 const ROWS=[4.57,3.52,2.47,1.42],STEP=.61,EDGE=3.9;
+const DIVIDER=-1.62, GAP=.39;
+box(.15,4.47,.51,frameMat,DIVIDER,2.98,.025,.045);
+box(.035,4.35,.025,silver,DIVIDER,2.98,.295,.01);
 const rodGeo=new THREE.CylinderGeometry(.042,.042,8.7,20);rodGeo.rotateZ(Math.PI/2);
 const collarGeo=new THREE.CylinderGeometry(.12,.12,.14,24);collarGeo.rotateZ(Math.PI/2);
 ROWS.forEach((y,row)=>{const rod=new THREE.Mesh(rodGeo,silver);rod.position.y=y;rod.castShadow=true;abacus.add(rod);[-4.23,4.23].forEach(x=>{const collar=new THREE.Mesh(collarGeo,edgeMat);collar.position.set(x,y,0);abacus.add(collar);});});
@@ -186,8 +215,27 @@ ROWS.forEach((y,row)=>{const rod=new THREE.Mesh(rodGeo,silver);rod.position.y=y;
 const profile=[[.074,-.245],[.23,-.245],[.32,-.216],[.385,-.15],[.42,-.06],[.424,0],[.42,.06],[.385,.15],[.32,.216],[.23,.245],[.074,.245],[.074,-.245]].map(([r,y])=>new THREE.Vector2(r,y));
 const beadGeo=new THREE.LatheGeometry(profile,48);beadGeo.rotateZ(Math.PI/2);beadGeo.computeVertexNormals();
 const beads=[];
-function positionFor(row,index){return index<state[row]?-EDGE+index*STEP:EDGE-(8-index)*STEP;}
-ROWS.forEach((y,row)=>{for(let index=0;index<9;index++){const material=new THREE.MeshPhysicalMaterial({color:COLORS[row],roughness:.23,metalness:.12,clearcoat:1,clearcoatRoughness:.17,envMapIntensity:.85,emissive:COLORS[row],emissiveIntensity:.015});const bead=new THREE.Mesh(beadGeo,material);bead.position.set(positionFor(row,index),y,0);bead.castShadow=true;bead.receiveShadow=true;bead.userData={row,index,velocity:0};beads.push(bead);abacus.add(bead);}});
+function positionFor(row,index,deck){
+  const active=index<decks[row][deck];
+  if(deck==='five')return active ? DIVIDER-GAP-index*STEP : -EDGE+(1-index)*STEP;
+  return active ? DIVIDER+GAP+index*STEP : EDGE-(4-index)*STEP;
+}
+ROWS.forEach((y,row)=>{
+  for(const [deck,count] of [['five',2],['one',5]]){
+    for(let index=0;index<count;index++){
+      const material=new THREE.MeshPhysicalMaterial({
+        color:COLORS[row],roughness:.23,metalness:.12,clearcoat:1,
+        clearcoatRoughness:.17,envMapIntensity:.85,
+        emissive:COLORS[row],emissiveIntensity:.015
+      });
+      const bead=new THREE.Mesh(beadGeo,material);
+      bead.position.set(positionFor(row,index,deck),y,0);
+      bead.castShadow=true;bead.receiveShadow=true;
+      bead.userData={row,index,deck,velocity:0};
+      beads.push(bead);abacus.add(bead);
+    }
+  }
+});
 function label(text,x,y,color,width=.66){const canvas=document.createElement('canvas');canvas.width=512;canvas.height=128;const ctx=canvas.getContext('2d');ctx.font='600 48px Manrope, sans-serif';const size=Math.min(48,48*480/ctx.measureText(text).width);ctx.font=`600 ${size}px Manrope, sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=color;ctx.fillText(text,256,64);const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;const mesh=new THREE.Mesh(new THREE.PlaneGeometry(width,width/4),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false}));mesh.position.set(x,y,.39);abacus.add(mesh);}
 // Inscrições fixadas na face metálica esquerda, no sentido da lateral.
 function labelCasa(text,y,color){
@@ -210,11 +258,26 @@ function labelCasa(text,y,color){
 }
 document.fonts.ready.then(()=>{
   ROWS.forEach((y,row)=>labelCasa(NAMES[row],y,CSS_COLORS[row]));
-  label('Á B A C O  /  P L A Y',0,.6,'#a3aec5',1.8);
+  label('S U A N P A N  /  P L A Y',0,.6,'#a3aec5',2.25);
 });
 
 // Controles equivalentes às peças, acessíveis também por toque e teclado.
-$('digitControls').innerHTML=NAMES.map((name,row)=>`<div class="digit-control" style="--row-color:${CSS_COLORS[row]}"><label id="label-${row}">${SHORT[row]}</label><button data-row="${row}" data-delta="-1" aria-label="Diminuir ${name.toLowerCase()}">−</button><output id="digit-${row}" aria-labelledby="label-${row}">0</output><button data-row="${row}" data-delta="1" aria-label="Aumentar ${name.toLowerCase()}">+</button></div>`).join('');
+$('digitControls').innerHTML=NAMES.map((name,row)=>`
+<div class="digit-control" style="--row-color:${CSS_COLORS[row]}">
+  <label id="label-${row}">${SHORT[row]} <output id="digit-${row}" aria-label="Valor da casa de ${name.toLowerCase()}">0</output></label>
+  ${[['five',5],['one',1]].map(([deck,value])=>`
+    <button data-row="${row}" data-deck="${deck}" data-delta="-1" aria-label="Afastar conta de ${value}, ${name.toLowerCase()}">−</button>
+    <output id="count-${row}-${deck}" aria-label="Contas ativas de ${value}, ${name.toLowerCase()}">0×${value}</output>
+    <button data-row="${row}" data-deck="${deck}" data-delta="1" aria-label="Aproximar conta de ${value}, ${name.toLowerCase()}">+</button>
+  `).join('')}
+</div>`).join('');
+function syncValues(){decks.forEach((deck,row)=>state[row]=deck.five*5+deck.one);}
+function clearBeads(){decks.forEach(deck=>{deck.five=0;deck.one=0;});syncValues();}
+function setRowValue(row,value){
+  decks[row].five=Math.min(2,Math.floor(value/5));
+  decks[row].one=value-decks[row].five*5;
+  syncValues();
+}
 function total(){return state.reduce((sum,n,row)=>sum+n*VALUES[row],0);}
 function goalDigits(){return String(TARGETS[challengeIndex]).padStart(4,'0').split('').map(Number);}
 function stopDemo(){clearTimeout(demoTimer);demoRunning=false;$('exampleLabel').textContent='Ver exemplo';}
@@ -224,16 +287,38 @@ function playNote(row,win=false){
 }
 function feedback(text,success=false){$('feedback').textContent=text;$('feedback').classList.toggle('success',success);}
 function renderState(allowWin=true){
+  syncValues();
   $('total').textContent=format(total());
-  state.forEach((digit,row)=>{$(`digit-${row}`).textContent=digit;document.querySelector(`[data-row="${row}"][data-delta="-1"]`).disabled=digit===0;document.querySelector(`[data-row="${row}"][data-delta="1"]`).disabled=digit===9;});
-  const matches=mode==='challenge'?goalDigits().map((digit,row)=>digit===state[row]):state.map(n=>n>0),count=matches.filter(Boolean).length;
+  state.forEach((digit,row)=>{
+    $(`digit-${row}`).textContent=digit;
+    for(const [deck,value,limit] of [['five',5,2],['one',1,5]]){
+      $(`count-${row}-${deck}`).textContent=`${decks[row][deck]}×${value}`;
+      document.querySelector(`[data-row="${row}"][data-deck="${deck}"][data-delta="-1"]`).disabled=decks[row][deck]===0;
+      document.querySelector(`[data-row="${row}"][data-deck="${deck}"][data-delta="1"]`).disabled=decks[row][deck]===limit;
+    }
+  });
+  const exactGoal=total()===TARGETS[challengeIndex];
+  const matches=mode==='challenge'?goalDigits().map((digit,row)=>exactGoal||digit===state[row]):state.map(n=>n>0),count=matches.filter(Boolean).length;
   [...$('progressDots').children].forEach((el,row)=>el.classList.toggle('done',matches[row]));
   $('progressText').textContent=mode==='challenge'?`${count} de 4 casas certas`:`${count} de 4 casas em uso`;$('progressPercent').textContent=mode==='challenge'?`${count*25}%`:'LIVRE';
   if(mode==='free')$('target').textContent=format(total());
   if(mode==='challenge'&&count===4&&!solved&&allowWin&&!demoRunning){solved=true;earned+=100;completed++;celebrationTime=2.8;$('arena').classList.add('won');$('xp').textContent=format(earned);$('completed').innerHTML=`${completed} <small>/ 8 desafios</small>`;$('btnNext').disabled=false;$('nextLabel').textContent=challengeIndex===7?'Jogar novamente':'Próximo desafio';$('challengeTitle').textContent=challengeIndex===7?'Você zerou o jogo!':'Mandou muito bem!';feedback(challengeIndex===7?'Todos os desafios completos. Você domina as quatro casas!':'Número construído! +100 XP para sua coleção.',true);playNote(0,true);burst();}
 }
-function setDigit(row,digit){const next=Math.max(0,Math.min(9,digit));if(next===state[row])return;stopDemo();state[row]=next;playNote(row);if(!solved||mode==='free')feedback(`${NAMES[row]}: ${next} ${next===1?'conta vale':'contas valem'} ${format(next*VALUES[row])}.`);renderState();}
-$('digitControls').addEventListener('click',event=>{const btn=event.target.closest('button');if(btn)setDigit(Number(btn.dataset.row),state[Number(btn.dataset.row)]+Number(btn.dataset.delta));});
+function setDeck(row,deck,count){
+  const next=Math.max(0,Math.min(deck==='five'?2:5,count));
+  if(next===decks[row][deck])return;
+  stopDemo();decks[row][deck]=next;syncValues();playNote(row);
+  if(!solved||mode==='free'){
+    feedback(`${NAMES[row]}: ${decks[row].five}×5 + ${decks[row].one}×1 = ${state[row]}. Nesta casa, vale ${format(state[row]*VALUES[row])}.`);
+  }
+  renderState();
+}
+$('digitControls').addEventListener('click',event=>{
+  const btn=event.target.closest('button');
+  if(!btn)return;
+  const row=Number(btn.dataset.row),deck=btn.dataset.deck;
+  setDeck(row,deck,decks[row][deck]+Number(btn.dataset.delta));
+});
 
 // Arrastar uma conta não aciona a órbita. Soltar fora ou cancelar libera a câmera.
 const raycaster=new THREE.Raycaster(),mouse=new THREE.Vector2();
@@ -248,22 +333,58 @@ function dragAlongRod(bead,event,x,y){
   const sx=event.clientX-x,sy=event.clientY-y;
   return {dx:(sx*ax+sy*ay)/length,dy:(-sx*ay+sy*ax)/length};
 }
-function endPointer(event,cancelled=false){if(!pointer||event.pointerId!==pointer.id)return;const{bead,x,y}=pointer;pointer=null;dragGuide=0;controls.enabled=true;if(renderer.domElement.hasPointerCapture(event.pointerId))renderer.domElement.releasePointerCapture(event.pointerId);renderer.domElement.style.cursor='default';if(cancelled)return;const{row,index}=bead.userData;const{dx,dy}=dragAlongRod(bead,event,x,y);if(Math.hypot(dx,dy)<9)setDigit(row,index<state[row]?index:index+1);else if(Math.abs(dx)>Math.abs(dy)*.65)setDigit(row,dx<0?index+1:index);}
+function endPointer(event,cancelled=false){
+  if(!pointer||event.pointerId!==pointer.id)return;
+  const {bead,x,y}=pointer;
+  pointer=null;dragGuide=0;controls.enabled=true;
+  if(renderer.domElement.hasPointerCapture(event.pointerId))renderer.domElement.releasePointerCapture(event.pointerId);
+  renderer.domElement.style.cursor='default';
+  if(cancelled)return;
+  const {row,index,deck}=bead.userData;
+  const {dx,dy}=dragAlongRod(bead,event,x,y);
+  if(Math.hypot(dx,dy)<9){
+    setDeck(row,deck,index<decks[row][deck]?index:index+1);
+  }else if(Math.abs(dx)>Math.abs(dy)*.65){
+    const towardBar=deck==='five'?dx>0:dx<0;
+    setDeck(row,deck,towardBar?index+1:index);
+  }
+}
 renderer.domElement.addEventListener('pointerup',event=>endPointer(event));renderer.domElement.addEventListener('pointercancel',event=>endPointer(event,true));renderer.domElement.addEventListener('lostpointercapture',event=>endPointer(event,true));
 
 function setMode(nextMode){
-  if(nextMode!==mode){if(mode==='challenge')state.forEach((digit,row)=>challengeState[row]=digit);else challengeState.forEach((digit,row)=>state[row]=digit);}
-  stopDemo();mode=nextMode;$('modeChallenge').setAttribute('aria-pressed',mode==='challenge');$('modeFree').setAttribute('aria-pressed',mode==='free');$('level').textContent=mode==='free'?'SEM LIMITES':`${String(challengeIndex+1).padStart(2,'0')} / 08`;$('panelEyebrow').textContent=mode==='free'?'SOLTE A CURIOSIDADE':'PEQUENAS GRANDES CONQUISTAS';$('challengeTitle').textContent=mode==='free'?'E se você tentar…':solved?'Mandou muito bem!':'Encontre o número.';$('challengeCopy').textContent=mode==='free'?'De zero a 9.999. Descubra como uma mesma conta muda de valor em cada haste.':'Mova as contas e construa o valor abaixo. Uma casa de cada vez.';$('targetLabel').textContent=mode==='free'?'SUA CRIAÇÃO':'SEU OBJETIVO';$('xpBadge').textContent=mode==='free'?'∞ possibilidades':'+100 XP';$('target').textContent=format(mode==='free'?total():TARGETS[challengeIndex]);$('nextLabel').textContent=mode==='free'?'Surpreenda-me':solved?(challengeIndex===7?'Jogar novamente':'Próximo desafio'):'Monte o número';$('btnNext').disabled=mode==='challenge'&&!solved;$('btnHint').hidden=mode==='free';$('arena').classList.remove('won');feedback(mode==='free'?'Aqui vale experimentar. O que acontece ao mover só uma conta?':'Sem pressa. Cada movimento é uma descoberta.');
+  if(nextMode!==mode){if(mode==='challenge')decks.forEach((deck,row)=>Object.assign(savedDecks[row],deck));else savedDecks.forEach((deck,row)=>Object.assign(decks[row],deck));syncValues();}
+  stopDemo();mode=nextMode;$('modeChallenge').setAttribute('aria-pressed',mode==='challenge');$('modeFree').setAttribute('aria-pressed',mode==='free');$('level').textContent=mode==='free'?'SEM LIMITES':`${String(challengeIndex+1).padStart(2,'0')} / 08`;$('panelEyebrow').textContent=mode==='free'?'SOLTE A CURIOSIDADE':'PEQUENAS GRANDES CONQUISTAS';$('challengeTitle').textContent=mode==='free'?'E se você tentar…':solved?'Mandou muito bem!':'Encontre o número.';$('challengeCopy').textContent=mode==='free'?'Duas de cinco, cinco de um. Encoste na barra para contar e explore formas diferentes de montar o mesmo valor.':'Aproxime as contas da barra. À esquerda, cada uma vale 5; à direita, vale 1.';$('targetLabel').textContent=mode==='free'?'SUA CRIAÇÃO':'SEU OBJETIVO';$('xpBadge').textContent=mode==='free'?'∞ possibilidades':'+100 XP';$('target').textContent=format(mode==='free'?total():TARGETS[challengeIndex]);$('nextLabel').textContent=mode==='free'?'Surpreenda-me':solved?(challengeIndex===7?'Jogar novamente':'Próximo desafio'):'Monte o número';$('btnNext').disabled=mode==='challenge'&&!solved;$('btnHint').hidden=mode==='free';$('arena').classList.remove('won');feedback(mode==='free'?'Aqui vale experimentar. O que acontece ao mover só uma conta?':'Sem pressa. Cada movimento é uma descoberta.');
   $('arenaObjective').textContent=mode==='free'?'Modo livre · explore as contas':`Objetivo · ${format(TARGETS[challengeIndex])}`;
   if(mode==='free')$('xpBadge').textContent='∞ LIVRE';
   // O desafio retoma seu estado; a demonstração e o modo livre não concedem XP.
   renderState(false);
 }
 $('modeFree').addEventListener('click',()=>setMode('free'));$('modeChallenge').addEventListener('click',()=>setMode('challenge'));
-$('btnNext').addEventListener('click',()=>{stopDemo();if(mode==='free'){state.forEach((_,row)=>state[row]=Math.floor(Math.random()*10));renderState(false);playNote(2);feedback('Um novo número para explorar. Consegue ler cada casa?');return;}if(!solved)return;challengeIndex++;if(challengeIndex===TARGETS.length){challengeIndex=0;earned=0;completed=0;$('xp').textContent='0';$('completed').innerHTML='0 <small>/ 8 desafios</small>';}solved=false;state.fill(0);setMode('challenge');});
-$('btnLimpar').addEventListener('click',()=>{stopDemo();state.fill(0);renderState(false);$('arena').classList.remove('won');feedback('Tudo zerado. Um novo começo, na ponta dos dedos.');});
-$('btnHint').addEventListener('click',()=>{const goal=goalDigits(),row=goal.findIndex((digit,i)=>digit!==state[i]);feedback(row<0?'Perfeito: todas as casas estão no lugar.':`Na casa de ${NAMES[row].toLowerCase()}, deixe ${goal[row]} ${goal[row]===1?'conta':'contas'} à esquerda. Isso vale ${format(goal[row]*VALUES[row])}.`);});
-$('btnExemplo').addEventListener('click',()=>{if(demoRunning){stopDemo();feedback('Exemplo interrompido. Agora é sua vez.');return;}setMode('free');state.fill(0);demoRunning=true;demoIndex=0;$('exampleLabel').textContent='Parar exemplo';renderState(false);const demo=()=>{state[demoIndex]=demoIndex+1;playNote(demoIndex);feedback(`${NAMES[demoIndex]}: ${demoIndex+1} ${demoIndex===0?'conta vale':'contas valem'} ${format((demoIndex+1)*VALUES[demoIndex])}.`);renderState(false);demoIndex++;if(demoIndex<4)demoTimer=setTimeout(demo,850);else{stopDemo();feedback('1.000 + 200 + 30 + 4 = 1.234. Mesma conta, valores diferentes.');}};demoTimer=setTimeout(demo,350);});
+$('btnNext').addEventListener('click',()=>{stopDemo();if(mode==='free'){state.forEach((_,row)=>setRowValue(row,Math.floor(Math.random()*10)));renderState(false);playNote(2);feedback('Um novo número para explorar. Consegue ler cada casa?');return;}if(!solved)return;challengeIndex++;if(challengeIndex===TARGETS.length){challengeIndex=0;earned=0;completed=0;$('xp').textContent='0';$('completed').innerHTML='0 <small>/ 8 desafios</small>';}solved=false;clearBeads();setMode('challenge');});
+$('btnLimpar').addEventListener('click',()=>{stopDemo();clearBeads();renderState(false);$('arena').classList.remove('won');feedback('Tudo zerado. Um novo começo, na ponta dos dedos.');});
+$('btnHint').addEventListener('click',()=>{
+  if(total()===TARGETS[challengeIndex]){feedback('Perfeito: o valor já está representado.');return;}
+  const goal=goalDigits(),row=goal.findIndex((digit,i)=>digit!==state[i]);
+  const five=Math.floor(goal[row]/5),one=goal[row]%5;
+  feedback(`Em ${NAMES[row].toLowerCase()}, encoste ${five} conta(s) de cinco e ${one} de um: ${five*5} + ${one} = ${goal[row]}.`);
+});
+$('btnExemplo').addEventListener('click',()=>{
+  if(demoRunning){stopDemo();feedback('Exemplo interrompido. Agora é sua vez.');return;}
+  setMode('free');clearBeads();demoRunning=true;demoIndex=0;
+  $('exampleLabel').textContent='Parar exemplo';renderState(false);
+  const steps=[
+    ()=>{decks[3].five=1;feedback('Uma conta de cinco se aproxima da barra: 5.');},
+    ()=>{decks[3].one=2;feedback('Duas contas de um se aproximam do outro lado: 5 + 2 = 7.');},
+    ()=>{decks[3].five=0;decks[3].one=5;feedback('Cinco contas de um também representam 5.');},
+    ()=>{decks[3].one=0;decks[3].five=1;feedback('Trocando cinco de um por uma de cinco: o valor continua 5.');}
+  ];
+  const demo=()=>{
+    steps[demoIndex++]();renderState(false);playNote(3);
+    if(demoIndex<steps.length)demoTimer=setTimeout(demo,1400);
+    else stopDemo();
+  };
+  demoTimer=setTimeout(demo,400);
+});
 $('btnCamera').addEventListener('click',()=>{controls.target.set(0,2.75,0);camera.position.set(1.6,6.3,14);palco.redimensiona();controls.update();});
 $('btnSound').addEventListener('click',()=>{soundEnabled=!soundEnabled;$('btnSound').setAttribute('aria-pressed',soundEnabled);$('btnSound').setAttribute('aria-label',soundEnabled?'Desativar sons':'Ativar sons');$('btnSound').title=soundEnabled?'Desativar sons':'Ativar sons';$('soundWaves').setAttribute('d',soundEnabled?'M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14':'m16 9 5 6m0-6-5 6');if(soundEnabled)playNote(1);});
 $('btnHelp').addEventListener('click',()=>$('helpDialog').showModal());$('btnCloseHelp').addEventListener('click',()=>$('helpDialog').close());
@@ -274,12 +395,12 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&$('helpDial
 const particles=[],particleGeo=new THREE.BoxGeometry(.07,.07,.025);
 function burst(){if(reducedMotion.matches)return;for(let i=0;i<36;i++){const p=new THREE.Mesh(particleGeo,new THREE.MeshBasicMaterial({color:COLORS[i%4],transparent:true}));p.position.set((Math.random()-.5)*6,4+Math.random()*1.5,.8);p.userData={vx:(Math.random()-.5)*3,vy:2+Math.random()*2,vz:Math.random(),life:1.6+Math.random()};scene.add(p);particles.push(p);}}
 inicia(dt=>{
-  for(const bead of beads){const{row,index}=bead.userData,target=positionFor(row,index)+(pointer?.bead===bead?dragGuide:0),distance=target-bead.position.x;if(reducedMotion.matches)bead.position.x=target;else{bead.userData.velocity+=(distance*180-bead.userData.velocity*23)*dt;bead.position.x+=bead.userData.velocity*dt;}const emission=index<state[row]?.1:.015;bead.material.emissiveIntensity+=(emission-bead.material.emissiveIntensity)*Math.min(1,dt*9);}
+  for(const bead of beads){const{row,index,deck}=bead.userData,target=positionFor(row,index,deck)+(pointer?.bead===bead?dragGuide:0),distance=target-bead.position.x;if(reducedMotion.matches)bead.position.x=target;else{bead.userData.velocity+=(distance*180-bead.userData.velocity*23)*dt;bead.position.x+=bead.userData.velocity*dt;}const emission=index<decks[row][deck] ? .1 : .015;bead.material.emissiveIntensity+=(emission-bead.material.emissiveIntensity)*Math.min(1,dt*9);}
   for(let i=particles.length-1;i>=0;i--){const p=particles[i],v=p.userData;v.life-=dt;v.vy-=dt*4;p.position.x+=v.vx*dt;p.position.y+=v.vy*dt;p.position.z+=v.vz*dt;p.rotation.x+=dt*3;p.rotation.z+=dt*2;p.material.opacity=Math.min(1,Math.max(0,v.life));if(v.life<=0){scene.remove(p);p.material.dispose();particles.splice(i,1);}}
   if(celebrationTime>0){celebrationTime-=dt;if(celebrationTime<=0)$('arena').classList.remove('won');}
 });
 // Gancho de leitura para verificar a mecânica e a posição real das peças na tela.
-window.__abaco={estado:()=>({digits:[...state],total:total(),mode,target:TARGETS[challengeIndex],challengeIndex,solved,xp:earned,completed,demoRunning}),pixels:()=>({beads:beads.map(bead=>({...pixelDe(bead.getWorldPosition(new THREE.Vector3())),row:bead.userData.row,index:bead.userData.index})),frame:[[-4.85,.3,0],[4.85,5.6,0]].map(p=>pixelDe(new THREE.Vector3(...p)))})};
+window.__suanpan={estado:()=>({digits:[...state],decks:decks.map(deck=>({...deck})),total:total(),mode,target:TARGETS[challengeIndex],challengeIndex,solved,xp:earned,completed,demoRunning}),pixels:()=>({beads:beads.map(bead=>({...pixelDe(bead.getWorldPosition(new THREE.Vector3())),row:bead.userData.row,index:bead.userData.index,deck:bead.userData.deck})),frame:[[-4.85,.3,0],[4.85,5.6,0]].map(p=>pixelDe(new THREE.Vector3(...p)))})};
 const compactEmbed=matchMedia('(max-width:700px) and (max-height:540px)');
 function adaptEmbed(){if(window.parent!==window&&compactEmbed.matches)setMode('free');}
 compactEmbed.addEventListener('change',adaptEmbed);adaptEmbed();

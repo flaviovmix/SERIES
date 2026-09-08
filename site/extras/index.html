@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap">
 <link rel="stylesheet" href="../css/tokens.css">
 <link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/menu.css">
 <link rel="stylesheet" href="../css/cabecalho.css">
 <link rel="stylesheet" href="../css/secao.css">
 <link rel="stylesheet" href="../css/capitulo.css">
@@ -18,6 +19,11 @@
 </head>
 
 <body>
+
+<header class="barra">
+  <button class="barra__botao" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
+  <a class="barra__marca" href="../index.html">Séries</a>
+</header>
 
 <div class="wrap">
 
@@ -32,7 +38,7 @@
     <header class="secao">
       <p class="secao__contexto">Oito extras</p>
       <h2>Dúvidas que a história não para pra resolver.</h2>
-      <p class="secao__nota">Dois no ar, cinco pra conferir e um que veio da linha do tempo, já publicado. Todo extra termina dizendo onde a analogia dele quebra, pra ninguém sair com uma ideia errada na cabeça.</p>
+      <p class="secao__nota">Três no ar, sete pra conferir e oito em produção, encomendados depois dos dois episódios da etapa em que o computador sai da sala. Todo extra termina dizendo onde a analogia dele quebra, pra ninguém sair com uma ideia errada na cabeça.</p>
     </header>
 
     <div class="grade grade--dupla">
@@ -205,14 +211,133 @@
         </div>
       </article>
 
+      <!-- 11 a 16: encomenda de 06/09, saidos do episodio 08-01. Familia "peca e
+           figura" (com nome e data). Sem audio ainda: card com foto e selo, sem
+           botao. As fotos do 8080, do Alto e do Apple II vem da pasta do 08-01,
+           que ja esta no ar; as outras tres moram em site/img/. -->
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../img/extra-11-intel.jpg" alt="" loading="lazy"><span class="cap__num">11</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1968 &rarr; hoje</p>
+          <h3>A Intel</h3>
+          <p class="cap__frase">A empresa que vendia memória e virou a peça que pensa.</p>
+          <p class="cap__resumo">Fundada em 1968 por dois engenheiros que saíram da Fairchild, vendia chip de memória. Uma encomenda de calculadora japonesa vira o 4004, o primeiro processador num chip; o 8080 vai parar no Altair e o 8088 no IBM PC. Por que o processador ficou com o nome dela, e não do computador.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">peça e figura</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../img/extra-12-ibm.jpg" alt="" loading="lazy"><span class="cap__num">12</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1911 &rarr; 1981</p>
+          <h3>A IBM</h3>
+          <p class="cap__frase">Do cartão furado ao PC, e como perdeu o padrão que criou.</p>
+          <p class="cap__resumo">Nasce das tabuladoras de Hollerith, faz o Mark I, domina o mundo com os mainframes System/360 e a frase "ninguém é demitido por comprar IBM". Em 1980 manda doze pessoas pra Boca Raton montar um PC de peças de prateleira em um ano, publica o esquema, e os clones levam o mercado.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">peça e figura</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/01%20-%20O%20computador%20chega%20em%20casa/img/8080-real.jpg" alt="" loading="lazy"><span class="cap__num">13</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1974</p>
+          <h3>O 8080 da Intel</h3>
+          <p class="cap__frase">Um processador de oito bits, e tudo que coube nele.</p>
+          <p class="cap__resumo">O que tem dentro da pastilha: os escaninhos, a unidade que faz a conta, os 64 KB que ele consegue endereçar, os dois milhões de ciclos por segundo. Como ele conversa com a memória e com o teclado, por que o Altair o escolheu, e o que muda dele pro 4004 de antes e pro 8088 de depois.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">peça</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/01%20-%20O%20computador%20chega%20em%20casa/img/alto-real.jpg" alt="" loading="lazy"><span class="cap__num">14</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1973</p>
+          <h3>O Alto da Xerox</h3>
+          <p class="cap__frase">Como a tela coube no hardware, dez anos antes.</p>
+          <p class="cap__resumo">Kay, Thacker e Lampson constroem, sem microprocessador, a máquina que já tinha janela, ícone e mouse. Cada bit da memória é um ponto da tela, e o próprio processador pinta o tubo por microcódigo porque não existia placa de vídeo. Por que custava 32 mil dólares, e por que a Xerox guardou na gaveta.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">peça e figura</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/01%20-%20O%20computador%20chega%20em%20casa/img/appleii-real.jpg" alt="" loading="lazy"><span class="cap__num">15</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1976 &rarr; 1984</p>
+          <h3>A Apple</h3>
+          <p class="cap__frase">Wozniak projeta, Jobs vende.</p>
+          <p class="cap__resumo">Do clube de garagem ao Apple I, e a engenharia do Apple II: cor na televisão sem hardware de cor, um chip fazendo o trabalho de três, o controlador de disquete com oito chips. O VisiCalc que vendeu a máquina, a visita ao PARC em troca de ações, o Lisa que fracassou e o Macintosh que fez a tela caber em 128 KB.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">peça e figura</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../img/extra-16-microsoft.jpg" alt="" loading="lazy"><span class="cap__num">16</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1975 &rarr; 1990</p>
+          <h3>A Microsoft</h3>
+          <p class="cap__frase">Software antes de ter o hardware.</p>
+          <p class="cap__resumo">Gates e Allen escrevem o BASIC do Altair num emulador, sem nunca ter visto a máquina, e fundam a empresa em Albuquerque. A mãe no conselho com o presidente da IBM, o QDOS comprado por 50 mil dólares e licenciado sem exclusividade, o Word e o Excel feitos pro Mac, e o Windows do 1.0 que falhou ao 3.0 que pegou.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">figura</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../img/extra-17-basic.png" alt="" loading="lazy"><span class="cap__num">17</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1964 &rarr; 1977</p>
+          <h3>O BASIC</h3>
+          <p class="cap__frase">A linguagem que ligava junto com o computador.</p>
+          <p class="cap__resumo">Nasce em 1964 numa faculdade, feita pra aluno que não era de exatas escrever um programa em uma aula. Dez anos depois é o primeiro software vendido pro Altair, e em 1977 já vem gravada dentro do Apple II, do PET e do TRS-80: a máquina ligava e esperava uma linha de BASIC. O que ela tinha de simples, o que tinha de ruim, e por que foi ela que ensinou uma geração a programar.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">conceito e figura</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/02%20-%20Conectando%20tudo%20-%20a%20internet/img/primeiro-servidor-real.jpg" alt="" loading="lazy"><span class="cap__num">18</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1989 &rarr; 1993</p>
+          <h3>Tim Berners-Lee e a web</h3>
+          <p class="cap__frase">Três peças e um presente.</p>
+          <p class="cap__resumo">Um físico do CERN cansado de não achar documento espalhado em máquina de país diferente. A proposta de 1989 com três peças: um endereço por documento, uma regra simples de pedir e entregar, e texto com ligação apontando pra outro. O NeXT que virou o primeiro servidor, agosto de 1991 no ar, e 30 de abril de 1993, quando o laboratório pôs tudo em domínio público de graça — a decisão que fez a web ganhar de todas as concorrentes.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">figura</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
   <aside>
-    <p class="aparte"><strong>Extra não substitui episódio.</strong> A lógica dos circuitos continua na etapa 06, e o valor posicional segue explicado dentro do episódio do ábaco. A maior parte é o "como funciona", sem a história. Três fogem disso e trazem nome e data: <em>O Zero e os Números</em>, <em>Quem Fez o Primeiro Chip</em> e <em>A Lei de Moore</em> — nesses, quem fez e quando é a própria pergunta.</p>
+    <p class="aparte"><strong>Extra não substitui episódio.</strong> A lógica dos circuitos continua na etapa 06, e o valor posicional segue explicado dentro do episódio do ábaco. A maior parte é o "como funciona", sem a história. Alguns fogem disso e trazem nome e data: <em>O Zero e os Números</em>, <em>Quem Fez o Primeiro Chip</em>, <em>A Lei de Moore</em> e os oito em produção sobre a Intel, a IBM, o 8080, o Alto, a Apple, a Microsoft, o BASIC e o Berners-Lee — nesses, quem fez e quando é a própria pergunta.</p>
   </aside>
 
 </div>
+
+<script src="../js/menu.js"></script>
 
 </body>
 </html>

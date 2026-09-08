@@ -1,0 +1,300 @@
+/* menu
+   A barra fixa do topo (hamburguer + marca) e o menu de tela cheia com a arvore das series.
+   Depende de tokens.css e base.css. A barra e escrita em cada pagina; o menu e montado por js/menu.js.
+
+   O menu ocupa tudo abaixo da barra e mostra a arvore INTEIRA de uma vez, em
+   colunas: series lado a lado, etapas listadas embaixo de cada uma. Nao ha
+   recolher nem expandir, porque nada esta escondido.
+
+   Estados que o JS liga e desliga:
+     .menu--aberto             o painel desliza pra dentro da tela
+     body.menu-aberto          a pagina atras para de rolar
+     .barra__botao--aberto     as tres barrinhas viram um X */
+
+/* medida so do menu: nao e do site inteiro, por isso mora aqui e nao em tokens.css */
+:root { --barra-altura: 52px; }
+
+/* a barra ocupa o topo, entao o corpo comeca abaixo dela */
+body { padding-top: var(--barra-altura); }
+
+/* com o menu cobrindo a tela, rolar move o menu; a pagina atras fica parada */
+body.menu-aberto { overflow: hidden; }
+
+/* ---------- a barra do topo ---------- */
+
+.barra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  height: var(--barra-altura);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+/* o hamburguer: um botao quadrado com tres barrinhas desenhadas em spans */
+.barra__botao {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.barra__botao:hover { background: var(--surface-alt); }
+
+.barra__botao span {
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background: currentColor;
+  transition: transform .25s ease, opacity .2s ease;
+}
+
+.barra__botao span:nth-child(1) { top: 13px; }
+.barra__botao span:nth-child(2) { top: 19px; }
+.barra__botao span:nth-child(3) { top: 25px; }
+
+/* aberto: a do meio some, as outras duas viram as diagonais do X */
+.barra__botao--aberto span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.barra__botao--aberto span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.barra__botao--aberto span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* a marca: o caminho de volta pra casa, sempre a vista */
+.barra__marca {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -.01em;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.barra__marca:hover { background: var(--surface-alt); color: var(--accent); }
+
+/* ---------- o menu ---------- */
+
+/* um painel do tamanho da tela que entra pela esquerda e sai por onde veio.
+   Fechado ele fica encostado fora da tela; o visibility tira os links do Tab e da
+   leitura de tela sem cortar a saida no meio (display:none cortaria).
+
+   Sai pela esquerda de proposito: sobra a direita nunca vira barra de rolagem,
+   porque estouro pro lado negativo o navegador nao oferece pra rolar. */
+.menu {
+  position: fixed;
+  top: var(--barra-altura);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 150;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--ground);
+  transform: translateX(-100%);
+  visibility: hidden;
+  /* a saida: acelera indo embora, e some antes de cansar */
+  transition: transform .24s cubic-bezier(.4, 0, 1, 1), visibility .24s;
+}
+
+/* a entrada mora no estado aberto, que e pra onde a transicao vai: desacelera
+   no fim, como coisa que chega e encosta. O visibility vira na hora (0s),
+   senao o painel entraria invisivel */
+.menu--aberto {
+  transform: none;
+  visibility: visible;
+  transition: transform .36s cubic-bezier(.22, 1, .36, 1), visibility 0s;
+}
+
+/* enquanto desliza, a sombra conta que o painel esta por cima da pagina */
+.menu--aberto { box-shadow: 0 0 60px -10px rgba(20, 25, 29, .35); }
+
+/* a mesma coluna central das paginas, pra o menu nascer alinhado com o conteudo */
+.menu__dentro {
+  max-width: var(--largura-pagina);
+  margin: 0 auto;
+  padding: clamp(22px, 4vw, 40px) clamp(18px, 4vw, 40px) clamp(28px, 4vw, 36px);
+}
+
+/* a volta pro inicio, escrita como a linha de contexto das secoes do site */
+.menu__inicio {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--fonte-mono);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.menu__inicio::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+.menu__inicio:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---------- a grade das series ---------- */
+
+/* cada serie e um bloco; a grade poe quantos couberem lado a lado e empilha o resto */
+.menu__grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: clamp(22px, 3vw, 40px);
+  align-items: start;
+  margin-top: clamp(18px, 3vw, 26px);
+}
+
+/* o nome da serie: fonte de titulo, tamanho de leitura. Em caixa alta miuda
+   (como era na gaveta estreita) um nome de seis palavras vira um bloco ilegivel */
+.menu__titulo {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--fonte-titulo);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+a.menu__titulo:hover,
+.menu__titulo[aria-current] { color: var(--accent); }
+
+/* o titulo de um bloco que nao leva a lugar nenhum (a lista do que vem por ai) */
+.menu__titulo--cinza { color: var(--ink-faint); }
+
+.menu__lista { display: flex; flex-direction: column; }
+
+/* uma etapa ou um extra. O filete da esquerda so acende no item da pagina atual;
+   o padding vale pra todos, pra o texto nao dancar de um item pro outro */
+.menu__item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 7px 8px 7px 12px;
+  border-left: 3px solid transparent;
+  border-radius: 0 6px 6px 0;
+  font-size: .92rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+a.menu__item:hover { background: var(--surface-alt); color: var(--accent); }
+
+.menu__item--ativo,
+.menu__item--ativo:hover {
+  background: var(--accent-soft);
+  border-left-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* etapa ainda em producao: fica na lista pra mostrar a forma da serie, mas nao leva a lugar nenhum */
+.menu__item--cinza {
+  color: var(--ink-faint);
+  cursor: default;
+}
+
+/* o numero da etapa, em mono, alinhado numa coluna so */
+.menu__num {
+  flex: none;
+  min-width: 2ch;
+  font-family: var(--fonte-mono);
+  font-size: .74rem;
+  font-weight: 500;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.menu__item--ativo .menu__num,
+.menu__titulo .menu__num { color: inherit; }
+
+/* ---------- a faixa do que ainda nao comecou ---------- */
+
+/* as series por vir nao entram na grade: como bloco elas caem numa segunda
+   fileira e abrem um vao do tamanho da coluna mais alta. Deitadas numa faixa
+   ocupam a sobra embaixo, que e o lugar certo pra quem ainda nao tem pagina */
+.menu__rodape {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 24px;
+  margin-top: clamp(20px, 3vw, 30px);
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.menu__rodape-titulo {
+  font-family: var(--fonte-mono);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.menu__rodape .menu__item {
+  padding: 2px 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+/* ---------- apertos, no fim da folha de proposito ---------- */
+
+/* com espaco, a lista longa (os 18 extras) ocupa duas colunas em vez de virar
+   uma tira de meio metro que obriga a rolar o menu inteiro */
+@media (min-width: 900px) {
+  .menu__bloco--largo { grid-column: span 2; }
+  .menu__bloco--largo .menu__lista {
+    display: block;
+    columns: 2;
+    column-gap: clamp(18px, 2.5vw, 32px);
+  }
+  .menu__bloco--largo .menu__item { break-inside: avoid; }
+}
+
+/* no estreito a grade vira uma coluna so. Sem mouse pra mirar, cada opcao cresce
+   e ganha respiro: o alvo de toque passa de 33 pra 46px de altura, acima dos 44
+   que o dedo pede, e a letra sobe pra ler de longe. Rola mais, e e o certo:
+   menu de telefone se percorre com o polegar */
+@media (max-width: 640px) {
+  .menu__grade { gap: 30px; }
+  .menu__inicio { font-size: .74rem; }
+  .menu__titulo { font-size: 1.14rem; padding-bottom: 12px; margin-bottom: 6px; }
+  .menu__item { padding: 12px 8px 12px 12px; font-size: 1.02rem; }
+  .menu__num { font-size: .8rem; }
+  .menu__rodape { gap: 8px 22px; }
+  .menu__rodape .menu__item { padding: 4px 0; font-size: .96rem; }
+}
+
+/* no papel, nada de barra nem menu */
+@media print {
+  .barra, .menu { display: none; }
+  body { padding-top: 0; }
+}
