@@ -1,0 +1,7 @@
+Titulo: A engenharia por trás das redes sociais
+Notebook: 10-03-As redes sociais
+
+Descricao:
+Os textos fornecem um roteiro detalhado sobre a evolução das redes sociais entre 2002 e 2012, focando nos desafios técnicos e de computação que surgiram com o aumento do volume de dados. A narrativa explora como plataformas como Friendster, MySpace, Facebook, YouTube e Twitter enfrentaram obstáculos específicos, desde a complexidade de calcular conexões entre usuários até o custo de processamento para montar feeds em tempo real. O conteúdo destaca que o crescimento dessas redes transformou decisões de produto em problemas de engenharia, exigindo a criação de novas ferramentas de hardware e software. Além de traçar o perfil cronológico dos fundadores, as fontes detalham a transição da ordem cronológica para o uso de algoritmos de seleção, como o EdgeRank, para gerenciar o excesso de informação. O relato encerra-se com o surgimento de regras de curadoria manual, preparando o terreno para a futura automação por inteligência artificial.
+
+Link: https://notebook.google.com/notebook/6c0b6027-a24b-4b9a-8de6-64bb70a71096

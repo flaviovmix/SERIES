@@ -1,0 +1,331 @@
+# Transcricao automatica (faster-whisper small) - 18.7 min
+# Fonte: Como o Google transformou links em lucro.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] a busca ver a negócio, a rede estava cheia de cano largo e de páginas, né.
+[00:05] E o episódio anterior terminou com uma pergunta bem prática sobre isso.
+[00:10] Sim, é aquela questão de que se milhões de páginas falam da mesma coisa,
+[00:14] quem decide qual delas aparece primeiro ali na tela?
+[00:17] Exatamente. E acima de tudo, como quem toma essa decisão consegue ganhar dinheiro?
+[00:23] Nosso foco hoje são as duas peças de software que mudaram isso.
+[00:28] Uma que ordena a web e outra que cobra por essa ordem.
+[00:32] E para entender o tamanho desse buraco, a gente precisa lembrar que,
+[00:35] lá em 1998, os buscadores que existiam, tipo o Alta Vista, que se pronuncia Alta Vista,
+[00:43] ordenavam as páginas de um jeito muito frágil.
+[00:45] Como assim frágil?
+[00:46] Ah, eles simplesmente contavam quantas vezes uma palavra se repetia dentro do texto da própria página.
+[00:52] Nossa, mas isso era muito fácil de enganar, né.
+[00:55] Demais. A pessoa que iria aparecer no topo,
+[00:57] ela colocava a mesma palavra mil vezes repetida no final do site, sabe.
+[01:02] Com a letra na mesma cor do fundo.
+[01:04] Ah, claro, ficava invisível para a pessoa que estava lendo.
+[01:08] Mas a máquina lia o código, via mil repetições e jogava o site lá para o topo.
+[01:13] E vale avisar logo de cara que o nosso intervalo de tempo hoje vai de 1998 a 2004.
+[01:20] Isso. E tem uma ressalva crucial aí.
+[01:22] Esses anos acontecem exatamente ao mesmo tempo que aquela bolha das empresas.com,
+[01:29] que a gente cobriu no encontro passado.
+[01:30] Então as duas histórias correm em paralelo.
+[01:33] Sim, a gente conta uma linha de cada vez, mas tudo isso estava acontecendo junto.
+[01:38] Bom aviso.
+[01:39] E outro aviso importante sobre o formato é que a nossa explicação de hoje
+[01:43] acompanha uma página com 12 telas de fotos.
+[01:46] Quem está apenas ouvindo acompanha normalmente sem perder nada.
+[01:50] Quem está com a página aberta deve virar a tela no momento em que ouvir o pedido.
+[01:55] Isso mesmo.
+[01:56] Bom, a dinâmica central era essa.
+[01:58] Como uma máquina poderia separar conteúdo real de páginas que só queriam enganar o sistema
+[02:03] repetindo palavras.
+[02:05] Para ver como dois estudantes olharam para esse problema de outro jeito, aperte o próximo.
+[02:10] Essa mudança de perspectiva começou em Stanford, que se pronuncia Stanford,
+[02:15] com alunos de doutorado.
+[02:16] Um deles queria estudar a estrutura de links da web.
+[02:20] Ele queria ver quem apontava para quem.
+[02:22] Era o Larry Page, que se pronuncia Larry Page.
+[02:26] Larry Page, nascido em 1973, tinha 25 anos, vivo em 2026.
+[02:32] Exato.
+[02:33] E o colega de projeto dele era o Sergey Brin, que se pronuncia Sergey Brin.
+[02:38] Sergey Brin, nascido em 1973, tinha 25 anos, vivo em 2026.
+[02:44] Eles não fizeram isso sozinhos, claro.
+[02:46] Tinha orientação acadêmica pesada ali.
+[02:49] Com certeza, o orientador deles era o Terry Winograd, que se pronuncia Terry Winograd.
+[02:54] Terry Winograd, nascido em 1946, tinha 52 anos, vivo em 2026.
+[03:00] E a matemática quem ajudou a organizar foi o Rajiv Motwani, que se pronuncia Rajiv Motwani.
+[03:07] Rajiv Motwani, nascido em 1962, tinha 36 anos, morreu em 2009.
+[03:13] Os professores também assinam um relatório.
+[03:15] É, o documento oficial e a virada de chave deles foi mudar a pergunta principal.
+[03:21] Em vez do software perguntar se a página fala sobre o assunto, eles começaram a perguntar se a página é importante.
+[03:28] Que tira o poder da mão de quem criou a página, né?
+[03:30] Totalmente, porque a resposta para a importância estava fora da página.
+[03:35] E o mais curioso nessa leção toda de hardware e software é que o dado que resolviu o problema, que eram os links,
+[03:42] já estava lá na web, ninguém precisou inventar uma peça nova.
+[03:45] É, a estrutura já existia e era pública. O pessoal só estava ignorando.
+[03:50] Faltava só um olhar diferente.
+[03:52] Pra ver como se mede importância sem entender o assunto da página. Aperte o próximo.
+[03:57] A melhor analogia aqui, tipo pra facilitar o entendimento, é pensar numa carta de recomendação.
+[04:02] Boa.
+[04:03] Como num currículo.
+[04:04] Isso. Pra saber quem é bom, não adianta ler o que a pessoa escreve sobre si mesma.
+[04:09] O sistema precisa olhar quem está recomendando essa pessoa.
+[04:13] Se alguém muito respeitado recomenda, tem mais peso.
+[04:16] Muito mais peso.
+[04:17] Uma recomendação de um especialista super respeitado vale muito mais do que 10 recomendações de completos desconhecidos.
+[04:24] Mas, peraí, tem um detalhe aí.
+[04:27] Quem escreve muitas cartas de recomendação acaba dividindo a própria reputação entre elas, não é?
+[04:32] Tem esse fator. Cada link funciona como um voto.
+[04:36] Mas a gente esbarra num problema matemático que é circular.
+[04:40] Hum, tipo um beco sem saída.
+[04:42] É, porque pra saber o peso do voto do site A, a máquina precisa saber o valor do site A.
+[04:48] Só que o valor do site A depende de quem votou nele.
+[04:52] E o valor de quem votou nele depende de outros votos.
+[04:55] Nossa, como que resolve um cálculo que depende do próprio resultado pra existir?
+[05:01] Através de uma coisa chamada interação, a máquina dá um chute inicial.
+[05:05] Tipo, assume que todas as páginas da rede valem a mesma coisa e faz a conta.
+[05:10] E aí dá um resultado errado, claro.
+[05:13] Dá, mas aí a máquina pega esse resultado errado e calcula de novo.
+[05:18] E de novo. Ela repete isso dezenas de vezes até que os números, hum, parem de mudar.
+[05:24] Ah, eles estabilizam.
+[05:26] O nome desse método é PageRank, que se pronuncia PageRank.
+[05:30] Brinca com a palavra página, em inglês e com o sobrenome do Larry Page.
+[05:34] Isso foi publicado no relatório de 1998.
+[05:37] A patente ficou com a universidade, com o Stanford, que acabou licenciando a tecnologia pra eles em troca de ações.
+[05:43] Ações que, aliás, a universidade vendeu depois por 336 milhões de dólares. É muito dinheiro.
+[05:51] E tem uma lição física forte aí, né?
+[05:53] Fazer essa conta maluca de ter ação exige guardar a web inteira na memória da máquina e recalcular tudo sem parar.
+[06:00] É um peso absurdo.
+[06:01] Isso só foi possível de acontecer ali, porque o hardware, o computador em si, tinha barateado muito.
+[06:07] Pra ver isso sair do ambiente da universidade, aperte o próximo.
+[06:10] Em agosto de 1998, eles decidem mostrar essa busca rodando na prática pro Andy Bactiosheim, que se pronuncia Andy Bactiosheim.
+[06:22] Ele era da Sun Microsystems, que se pronuncia Sun Microsystems.
+[06:27] Andy Bactiosheim, nascido em 1955, tinha 42 anos, vivo em 2026.
+[06:34] Ele viu a ferramenta funcionando e, assim, logo de cara, passou um cheque de 100 mil dólares.
+[06:39] E detalhe, passou o cheque pra uma empresa que nem existia ainda no papel.
+[06:44] Eles só foram registrar formalmente no dia 4 de setembro.
+[06:47] E minutos depois daquele primeiro cheque, outro professor de Stanford resolveu passar um segundo cheque, também de 100 mil dólares.
+[06:55] Já começaram com um caixa bem confortável, com dinheiro e o registro na mão, eles alugaram uma garagem Manlow Park.
+[07:02] A dona da garagem era Susan Wojcicki, que se pronuncia Susan Wojcicki.
+[07:09] Susan Wojcicki, nascida em 1968, tinha 30 anos, morreu em 2024.
+[07:15] Sim, ela alugou o espaço pra eles. Mas tem um mito aí que precisa ser quebrado.
+[07:20] É, a empresa não nancêu mais de caminhete do zero na garagem, né?
+[07:23] Não mesmo. Nancêu na estrutura caríssima da universidade.
+[07:27] Pra garagem, eles só foram depois de ter 200 mil dólares na conta.
+[07:31] E um detalhe é que eles atravessaram aquela bolha inteira da internet de portas fechadas.
+[07:36] Foram seis anos de capital fechado.
+[07:38] Mas aí, a gente entra num problema grave de hardware e software.
+[07:43] O produto era de graça. Só que busca de graça custa extremamente caro em servidor e energia elétrica.
+[07:49] Exatamente.
+[07:50] Olha paradoxo. Quanto mais as pessoas amavam e usavam software, mais perto a empresa chegava de quebrar.
+[07:57] O sucesso literalmente acelerava a falência se eles não achassem um jeito de cobrar.
+[08:04] Pra ver como se cobra por uma coisa que é de graça, aperte o próximo.
+[08:08] Naquela época, o modelo antigo da internet era baseado em portais que vendiam banners,
+[08:14] que eram tipo aqueles autodores digitais, né?
+[08:16] Eles cobravam pela quantidade de exibição. Era igual na TV.
+[08:19] Igual na TV.
+[08:20] Mas pra um buscador isso é muito ruim.
+[08:22] Porque ninguém que entra num buscador quer ficar olhando o banner.
+[08:25] A pessoa não clica.
+[08:26] E o banner muitas vezes não tem relação nenhuma com o que ela tá procurando ali.
+[08:30] Aí que entra a singularidade do negócio da busca.
+[08:33] Diferente de um portal de notícias,
+[08:35] na busca a pessoa digita com as próprias palavras exatamente o que ela quer no exato momento.
+[08:41] Isso é muito raro.
+[08:43] A informação não é extraída à força, nem espionada.
+[08:46] A pessoa entrega de graça pra poder usar o produto.
+[08:49] É tipo assim, pensa na cena.
+[08:51] É como se alguém entrasse correndo num shopping center gritando pra todo mundo ouvir
+[08:55] exatamente o que quer comprar naquele segundo.
+[08:58] Seria loucura não usar essa informação comercialmente, né?
+[09:01] Pra ver quem percebeu isso primeiro.
+[09:03] E spoiler não foi o Google aperte o próximo.
+[09:07] Pois é, em fevereiro de 1998 quem teve a ideia pioneira foi um cara chamado Bill Gross.
+[09:13] Que se pronuncia Bill Gross.
+[09:16] Bill Gross, nascido em 1958, tinha 39 ou 40 anos, vivo em 2026.
+[09:23] E ele lançou uma ferramenta chamada GoTo.com.
+[09:27] Que se pronuncia GoTo.com.
+[09:30] E isso, a grande ideia dele foi permitir que os anunciantes dessem lances,
+[09:33] tipo num leilão, por palavras específicas.
+[09:36] E o detalhe é que eles pagavam por clique.
+[09:39] Mas a plateia não curtiu muito a ideia não, né?
+[09:41] Nossa, quando ele apresentou isso num evento foi super vaiado.
+[09:45] O pessoal achava que misturar a busca orgânica com anúncio pago
+[09:49] era quase uma traição aos princípios da rede.
+[09:51] Gerou um desconforto imenso, mas a empresa vingou.
+[09:55] Verou a Overture, que se pronuncia Overture.
+[09:58] E a Yahoo, que se pronuncia Yahoo, comprou a operação em 2003.
+[10:02] E pagaram mais de um bilhão e meio de dólares por ela.
+[10:06] A analogia aqui, autorizada pelo mercado, é a vitrine de uma loja.
+[10:10] Vem deposição não era novidade nenhuma, né?
+[10:13] Jornal e supermercado já faziam isso.
+[10:15] A novidade foi leiloar esse espaço em tempo real,
+[10:18] cada vez que alguém chegava na vitrine.
+[10:20] Mas a gente viu que a peça de software tinha um defeito grave.
+[10:24] Qual era o erro?
+[10:25] O erro é que eles ordenavam os anúncios só pelo dinheiro.
+[10:28] Quem pagava mais aparecia primeiro, independentemente de ser bom ou ruim.
+[10:32] Exato.
+[10:33] E se o anúncio é ruim e relevante para a pessoa, ela não clica.
+[10:37] E o acordo era pagar por clique.
+[10:39] Ou seja, se não há clique, ninguém ganha nada,
+[10:42] mesmo com lances altas.
+[10:44] A ideia central estava certa,
+[10:45] mas o desenho do software estava capenga, estava incompleto.
+[10:49] Faltou refinar.
+[10:50] Para ver a primeira tentativa do Google,
+[10:52] que, curiosamente, também não foi essa, aperte o próximo.
+[10:55] Aí a gente chega em outubro do ano de 2000.
+[10:58] O Google, que se pronuncia Google,
+[11:01] resolve lançar o seu próprio sistema.
+[11:03] E nasce o Edwards, que se pronuncia Edwards.
+[11:07] E o nome quer dizer literalmente isso.
+[11:09] Palavras de anúncio.
+[11:10] Eles eram blocos de textos separados do resultado principal.
+[11:14] Só que, e aqui, tal problema,
+[11:16] eles eram cobrados por exibição
+[11:18] num valor mensal combinado com o anunciante.
+[11:21] Tinha prós e contras.
+[11:22] O lado bom é que era em formato de texto, ficava discreto na tela.
+[11:26] Não era um banner gigante piscando.
+[11:28] Mas o lado ruim, né?
+[11:29] O lado ruim é que todo o risco ficava na mão do anunciante.
+[11:33] A empresa pagava mensalidade.
+[11:35] E o buscador não tinha nenhum incentivo para melhorar a qualidade daquele anúncio,
+[11:40] porque já ia receber de qualquer jeito.
+[11:42] Mesmo com esses problemas,
+[11:44] eles faturaram bastante.
+[11:45] Foram 19 milhões de dólares no ano de 2000.
+[11:49] Um dinheiro bom, mais pouco para o tamanho do tráfico.
+[11:52] Tanto que para liderar e escalar isso,
+[11:54] entra o Eric Schmidt, que se pronuncia Eric Schmidt.
+[11:59] Ele entrou no Conselho em março de 2001.
+[12:01] Eric Schmidt, nascido em 1955,
+[12:05] tinha 45 anos, vivo em 2026.
+[12:08] Ele virou executivo-chefe logo depois, em agosto.
+[12:11] O produto que eles tinham em mãos era muito bom,
+[12:14] só que o modelo de cobrança simplesmente estava errado para a escala da internet.
+[12:19] Sim, e mudar a cobrança não era uma questão de treinar e equipe para vender melhor.
+[12:23] Era necessário mudar o software por baixo.
+[12:26] Tinha que reescrever a base de tudo.
+[12:29] Para ver a troca que mudou as regras do jogo, aperte o próximo.
+[12:33] Essa virada aconteceu em fevereiro de 2002, com o lançamento do Edward Select.
+[12:38] Aí sim, o pagamento passou a ser exclusivamente por clique,
+[12:41] com um leilão automático, sem depender de um vendedor humano no meio.
+[12:46] Pera aí, detalha para mim essa engenharia do leilão, porque tem duas partes aí.
+[12:50] Tem. A primeira peça resolve a questão do preço.
+[12:53] E o nome técnico disso é leilão de segundo preço generalizado.
+[12:57] É um nome complexo. Como funciona na prática?
+[13:00] Imagina que você ganhou o leilão.
+[13:02] Você não paga o valor inteiro do seu próprio lance.
+[13:04] O sistema cobra só o mínimo necessário
+[13:07] para você bater o anunciante que ficou embaixo de você, na segunda posição.
+[13:11] Ah, então impede aquela fluturação maluca de lances de ficar ajustando centavos toda hora?
+[13:16] Exato. É o valor mínimo justo.
+[13:20] Essa é a primeira peça.
+[13:22] E a segunda, que é o pulo do gato total, resolve a posição na tela.
+[13:27] A posição não é mais definida só pelo dinheiro.
+[13:30] Depende do que, então?
+[13:31] É o lance financeiro multiplicado pela chance de clique.
+[13:35] Entendi. Um anúncio que paga menos, mas é muito bom.
+[13:38] E as pessoas clicam. Vence de um anúncio caro, mas ruim.
+[13:41] Exatamente isso.
+[13:43] Gente, mas para a máquina multiplicar o lance pela chance de clique,
+[13:46] o software precisa prever se a pessoa vai clicar ou não,
+[13:49] baseada no histórico de dados passados.
+[13:52] Sim, é a primeira vez que uma máquina, nessa escala toda,
+[13:55] precisa adivinhar comportamento humano para poder funcionar direito.
+[13:59] Adivinhar precisa de dado histórico.
+[14:01] E guardar dado histórico em massa precisa de máquina.
+[14:04] O software vira um adivinhador para ver o tamanho que isso tomou nos cofres.
+[14:09] Aperte o próximo.
+[14:10] A escala financeira foi agressiva.
+[14:12] Eles faturaram 19 milhões de dólares no ano de 2000.
+[14:16] Aí subiu para 439 milhões de dólares em 2002.
+[14:20] E chegou em 3 bilhões e 200 milhões de dólares no ano de 2004.
+[14:25] E um detalhe que choca.
+[14:27] 99% desse dinheiro todo vinha de anúncio.
+[14:31] E a realidade, que é a empresa mais usada do mundo,
+[14:35] não vendia nada para quem usava ela.
+[14:37] Quem pagava a conta inteira era quem queria ser achado.
+[14:40] E eles não pararam na página de busca.
+[14:43] A Susamo Chique virou gerente em 2003
+[14:46] e ela comandou o movimento de levar esses anúncios para fora,
+[14:49] para sites de terceiros com programa AdSense.
+[14:52] O ciclo é quase assustador quando a gente olha de cima.
+[14:55] O anúncio gera dinheiro que paga compra de novas máquinas,
+[14:59] as máquinas novas guardam mais dados
+[15:02] e com mais dados a capacidade de prever cliques melhora,
+[15:06] deixando o anúncio ainda mais rentável.
+[15:08] É um ciclo sem fim de hardware financiando software e vice-versa.
+[15:12] Para ver quem estava do outro lado dessa briga
+[15:15] e tentou parar isso, aperte o próximo.
+[15:17] É claro que o Virtua, aquela empresa lá do Bill Glowes,
+[15:20] não ia ficar assistindo a isso em silêncio.
+[15:22] Em abril de 2002, eles processam o Google.
+[15:25] Dizendo que a patente do Leilão era deles.
+[15:28] Isso mesmo.
+[15:29] Essa briga correu até agosto de 2004
+[15:32] quando eles fecharam um acordo judicial.
+[15:35] O Google entregou 2 milhões e 700 mil ações deles
+[15:38] para Yahoo, que agora era a dona da Alverture,
+[15:41] e em troca ficou com a licença da patente para sempre.
+[15:45] Uma licença vitalícia.
+[15:47] É importante pontuar a verdade aqui.
+[15:49] A ideia original do Leilão, aquele conceito bruto,
+[15:52] não foi do Google.
+[15:53] O que eles fizeram foi criar o Leilão ordenado por qualidade.
+[15:57] E claro, escalaram a máquina ou hardware
+[15:59] para rodar isso o tempo todo sem travar.
+[16:01] Essa é a grande diferença técnica.
+[16:04] A distância entre ter uma ideia brilhante no papel
+[16:06] e fazer uma peça funcionar para bilhões de pessoas
+[16:10] é uma distância enorme.
+[16:12] E ela é feita inteiramente de hardware.
+[16:15] Para ver essa empresa, abriu a capital, aperte o próximo.
+[16:18] Tudo isso comina no dia 19 de agosto de 2004.
+[16:22] Acontece a abertura de capital na bolsa.
+[16:24] O preço saiu a US$ 85 por ação,
+[16:27] o que deu para a empresa um valor de quase US$ 23 bilhões logo na largada.
+[16:33] E o formato dessa venda de ações foi inovador também.
+[16:35] Foi um leilão aberto.
+[16:37] Qualquer pessoa interessada podia dar lance para comprar.
+[16:40] E não só aqueles grandes bancos escolhidos a dedo pelo mercado.
+[16:43] E o volume de operação que sustentava isso tudo.
+[16:46] Eles já estavam lidando com mais de 200 milhões de buscas por dia.
+[16:50] Se a gente refletir sobre a evolução da rede
+[16:53] em um espaço curtíssimo de 9 anos,
+[16:55] a internet saiu daquela dúvida angustiante de
+[16:58] quem é que vai pagar o cano para a informação passar
+[17:01] para um sistema extremamente afiado.
+[17:04] Onde quem paga sabe exatamente o que a pessoa do outro lado quer
+[17:07] naquele milisegundo.
+[17:09] Para dizer onde isso para, aperte o próximo.
+[17:12] A nossa história para aqui, no ano de 2004,
+[17:15] com a busca ordenada pela importância dos links
+[17:18] e paga efetivamente por clique.
+[17:20] É bom a gente fazer um balanço rápido
+[17:22] e dar nome aos bois na ordem certa,
+[17:24] porque ninguém planejou a obra inteira desde o começo, né?
+[17:27] Ninguém sentou e desenhou tudo sozinho.
+[17:30] O Pedro Breen foram os que trocaram a pergunta lá no início,
+[17:34] mudando-o de a página fala disso para a página importante.
+[17:38] O InnoGuard e o Antoine são os acadêmicos que assinaram
+[17:42] e ajudaram a embasar o método matemático.
+[17:44] O Backstoolsheim foi quem passou aquele primeiro cheque crucial.
+[17:48] O Groose teve a ideia primária do leilão
+[17:50] e apanhou do mercado por isso.
+[17:52] O Schmidt entrou depois para organizar a bagunça do negócio
+[17:55] e o modelo de cobrança.
+[17:57] E a Wozinski foi quem pegou tudo isso
+[17:59] e levou o anúncio para fora da busca.
+[18:01] A lição final que a gente tira de toda essa estrutura
+[18:04] é que, no mar de páginas caóticas,
+[18:07] ordenar informação virou de longe o negócio mais valioso da rede.
+[18:12] E para conseguir cobrar por essa ordem de um jeito eficiente,
+[18:15] a máquina teve que começar a prever o comportamento humano.
+[18:19] É, o software virou uma máquina de antecipar a intenção.
+[18:22] Mas pensa no seguinte,
+[18:24] a busca só funciona e a máquina só responde
+[18:27] quando alguém tem uma dúvida e faz uma pergunta ativamente.
+[18:31] Mas e se a pessoa não estiver procurando absolutamente nada?
+[18:34] E mesmo assim quiser continuar conectada ali,
+[18:37] olhando para a tela do celular ou do computador?
+[18:40] O que a rede vai mostrar?
+[18:41] Para quem chega sem pergunta nenhuma na cabeça.

@@ -1,0 +1,154 @@
+Inicie dizendo: A Busca Vira Negócio
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Busca Vira Negocio.txt enviado como
+fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o segundo episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero.
+
+RETOMADA NA TELA 1: o episodio anterior terminou perguntando quem decide qual pagina voce
+ve primeiro, e como quem decide isso ganha dinheiro. A primeira frase depois do titulo
+retoma essa pergunta. Sem cena inventada e sem chamada com fato de tela posterior.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Este episodio tem dinheiro no titulo, e por isso a
+regra vale mais aqui: o assunto e a peca de software que ordena a web e a peca de software
+que cobra por isso. Receita e valor de mercado entram so pra dar tamanho. NAO virar
+historia de empresario de sucesso.
+
+ESTE EPISODIO COBRE DE 1998 A 2004, EM ORDEM. Dizer o intervalo na abertura e, no fim,
+dizer em que ano o episodio para. Os anos se sobrepoem com o episodio anterior, que foi
+ate 2002: dizer numa frase, na tela 1, que as duas historias acontecem ao mesmo tempo e a
+serie conta uma linha de cada vez. NAO chamar de "voltar no tempo".
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a ficha
+dela, uma frase so, no formato: nome, ano de nascimento, idade naquele momento, e se esta
+viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler todas, sem
+pular, sem inventar dado e sem comentar. Sao oito, nesta ordem de aparicao: Page, Brin,
+Winograd, Motwani, Bechtolsheim, Wojcicki, Gross e Schmidt. A PALAVRA "FICHA" NAO E DITA EM VOZ ALTA, e a
+palavra "CENA" tambem nao: emendar direto no nome.
+
+DUAS PESSOAS ESTAO MORTAS E SE FALA DELAS NO PASSADO: Rajeev Motwani (morreu em 2009) e
+Susan Wojcicki (morreu em 2024). NAO dizer que elas "sao" alguma coisa hoje.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O audio
+TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem do
+roteiro. A frase e sempre essa, "aperte o Proximo", COM o "o", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 3 e 4 (o metodo, e a empresa nascendo),
+5 e 6 (o problema do dinheiro, e o leilao do Bill Gross), 7 e 8 (cobrar por exibicao, e
+cobrar por clique), 11 e 12 (a abertura de capital, e o balanco). Um pedido de Proximo
+entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+
+ANOS E DINHEIRO POR EXTENSO E DEVAGAR: "mil novecentos e noventa e oito", "dois mil",
+"dois mil e dois", "dois mil e quatro", "cem mil dolares", "dezenove milhoes de dolares",
+"quatrocentos e trinta e nove milhoes de dolares", "tres bilhoes e duzentos milhoes de
+dolares", "oitenta e cinco dolares por acao", "vinte e tres bilhoes de dolares", "duzentos
+milhoes de buscas por dia", "noventa e nove por cento". NAO trocar milhao por bilhao.
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: dizer sempre "abertura de capital", NUNCA "IPO";
+Google ("gú-gol"); Larry Page ("lé-ri pêidj"); Sergey Brin ("sér-guei brín"); Stanford
+("stén-ford"); PageRank ("pêidj-renk", e dizer que o nome brinca com o sobrenome do Page e
+com a palavra pagina); Terry Winograd ("té-ri uí-no-grad"); Rajeev Motwani ("ra-djív
+mot-uá-ni"); Andy Bechtolsheim ("ândi béc-tols-raim"); Sun Microsystems ("sân
+mai-cro-sís-tems"); AltaVista ("áuta-vísta"); Yahoo ("ia-rú"); Bill Gross ("bil grós");
+GoTo.com ("gou tú ponto com"); Overture ("ó-ver-tchur"); AdWords ("éd-uôrds", e dizer que
+quer dizer "palavras de anuncio"); Eric Schmidt ("é-ric chímit"); Susan Wojcicki ("sú-zan
+uo-djís-qui").
+
+O NOME DO LEILAO TEM QUE SAIR COMPLETO: "leilao de segundo preco GENERALIZADO", com a
+palavra generalizado. NAO dizer "leilao de Vickrey", NAO usar a sigla "GSP" e NAO dizer so
+"leilao de segundo preco" sem o generalizado, porque e outro mecanismo. Explicar em uma
+frase: quem ganha a posicao paga o minimo pra nao perder ela pro anunciante de baixo, e
+nao o proprio lance.
+
+⚠️ A LISTA DE PRONUNCIA ACIMA E INSTRUCAO PRA VOCE, NAO E FALA, E ESTE E O DEFEITO QUE
+DERRUBOU A GRAVACAO ANTERIOR. NUNCA dizer "que se pronuncia", "que se le", "pronuncia-se"
+nem nada parecido no ar. Na gravacao anterior saiu, mais de dez vezes, coisa como "o Larry
+Page, que se pronuncia Larry Page" e "a Susan Wojcicki, que se pronuncia Susan Wojcicki".
+Isso nao pode acontecer de novo: falar o nome do jeito certo, uma vez, e seguir em frente
+como se nada tivesse sido explicado.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. As telas sao fotos.
+
+FOCO, EM ORDEM: pagina demais e o buscador que se deixava enganar; dois estudantes trocando
+a pergunta; o PageRank e a carta de recomendacao; o cheque de cem mil dolares e a empresa
+registrada; como se cobra por uma busca de graca; fevereiro de noventa e oito, o leilao do
+Bill Gross e a plateia que nao gostou; outubro de dois mil, o anuncio cobrado por exibicao; fevereiro de dois
+mil e dois, o pagamento por clique e a maquina tendo que prever; o tamanho da conta; o
+processo da Overture; dezenove de agosto de dois mil e quatro, a abertura de capital; o
+balanco e a pergunta.
+
+O PONTO QUE NAO PODE FALTAR: pra ordenar o anuncio pelo lance multiplicado pela chance de
+clique, a maquina precisa PREVER se voce vai clicar, olhando o que aconteceu antes. E a
+primeira vez nesta serie que uma maquina precisa adivinhar comportamento humano pra
+funcionar. Dizer com todas as letras que isso ainda NAO e a rede que aprende sozinha.
+
+CUIDADOS DE FATO:
+- A ideia do leilao de anuncio NAO foi do Google, foi do Bill Gross. O Google chegou
+  depois, com uma variacao, e pagou num acordo em dois mil e quatro. NAO dizer que o
+  Google inventou, e tambem NAO dizer que ele copiou: o acordo nao teve admissao de culpa.
+  O que foi do Google e a ordenacao por lance vezes chance de clique.
+- O AdWords nasceu em vinte e tres de outubro de dois mil cobrando por EXIBICAO, e so
+  virou pagamento por clique em vinte de fevereiro de dois mil e dois, com o nome AdWords
+  Select. Sao duas coisas, em telas diferentes: nao juntar.
+- Eric Schmidt entrou em MARCO de dois mil e um como presidente do conselho e so virou
+  executivo-chefe em AGOSTO. Dois momentos, nao um.
+- Winograd e Motwani assinam o relatorio do PageRank, com Page e Brin. O outro artigo do
+  mesmo ano, o que descreve o buscador inteiro, tem so dois autores: Brin e Page. NAO
+  trocar os dois.
+- A patente do PageRank nunca foi do Google: ficou com Stanford, que licenciou em troca de
+  acoes.
+- A empresa NAO nasceu numa garagem: foi pra garagem alugada da Susan Wojcicki em setembro
+  de mil novecentos e noventa e oito, depois de ja ter nome, dinheiro e registro.
+- Naquele mesmo dia de agosto houve DOIS cheques de cem mil dolares, nao um. O segundo
+  investidor nao e nomeado neste episodio.
+- NAO dizer quanto a empresa levantou na abertura de capital: parte das acoes era de
+  socios. Dizer o preco por acao e o valor de mercado, so.
+- As buscas por dia sao ordem de grandeza: "passavam de duzentos milhoes por dia".
+- ⚠️ OS DEZENOVE MILHOES DE DOLARES SAO DO ANO DE DOIS MIL, e o numero aparece DUAS vezes
+  no episodio (na tela 7 e na tela 9). Nas duas o ano e DOIS MIL. NAO dizer dois mil e um:
+  o faturamento de dois mil e um foi outro e nao entra neste episodio. Um ano diferente nas
+  duas telas faz o episodio se contradizer sozinho.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO NAO FECHA A SERIE NEM A ETAPA: e o segundo de quatro.
+Na ultima tela, balanco das pessoas nome por nome, a licao, e a pergunta que abre o
+proximo episodio. NAO dizer "ultima da serie", "ate o proximo", "proximo mergulho" nem
+"proximo encontro".
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+Use SOMENTE as duas analogias descritas no roteiro: a carta de recomendacao (pro PageRank)
+e a vitrine da loja (so na tela do leilao). NAO invente analogias novas. Lance, clique,
+leilao e abertura de capital sao explicados direto, sem comparacao.
+
+Use tambem o Overview.txt como contexto curto.

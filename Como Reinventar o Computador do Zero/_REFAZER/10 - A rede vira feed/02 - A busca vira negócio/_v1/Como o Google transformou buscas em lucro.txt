@@ -1,0 +1,7 @@
+Titulo: Como o Google transformou buscas em lucro
+Notebook: 10-02-A busca vira negocio
+
+Descricao:
+O texto detalha o desenvolvimento técnico e comercial da busca na internet entre 1998 e 2004, destacando a transição da rede para um modelo de alimentação de dados. A narrativa foca em duas inovações fundamentais: o algoritmo PageRank, que organiza a web medindo a importância das páginas através de links, e o sistema de leilão de anúncios, que viabilizou financeiramente o serviço. O conteúdo enfatiza que a publicidade paga por clique, iniciada pela Overture e aprimorada pelo Google, introduziu a necessidade de as máquinas preverem o comportamento humano. Através de uma cronologia de doze etapas, as fontes apresentam as figuras-chave, como Larry Page e Sergey Brin, e explicam como o software e o hardware evoluíram conjuntamente. O relato encerra com a abertura de capital da empresa em 2004, consolidando a organização da informação como o modelo de negócio mais valioso da rede. Por fim, o material prepara o terreno para discussões futuras sobre como as plataformas retêm usuários que não possuem uma pergunta específica.
+
+Link: https://notebook.google.com/notebook/7481ffad-a830-43ab-81d8-28c64df5a2bd

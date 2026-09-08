@@ -1,0 +1,172 @@
+Inicie dizendo: As Redes Sociais
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_As Redes Sociais.txt enviado como
+fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o terceiro episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero.
+
+RETOMADA NA TELA 1: o episodio anterior terminou perguntando o que a rede mostra pra quem
+chega sem pergunta nenhuma. A primeira frase depois do titulo retoma isso. Sem cena
+inventada e sem chamada com fato de tela posterior.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. O assunto e o PROBLEMA DE COMPUTACAO que aparece quando
+gente demais publica ao mesmo tempo, e as pecas inventadas pra resolver ele. NAO fazer piada
+de quem quebrou e NAO virar historia de fundador de sucesso.
+
+A TESE, DITA COM ESSAS PALAVRAS: o volume de gente publicando virou um problema de
+computacao. E sao DOIS problemas diferentes: MONTAR o que cada pessoa ve custa caro, e
+ninguem consegue LER tudo. O primeiro se resolve com maquina; o segundo obriga alguem a
+escolher. A tela 8 e o primeiro, a tela 11 e o segundo: nao juntar os dois.
+
+ESTE EPISODIO COBRE DE 2002 A 2012, EM ORDEM. Dizer o intervalo na abertura e, no fim, dizer
+em que ano o episodio para. Os anos se sobrepoem com os dois episodios anteriores desta
+etapa: dizer numa frase, na tela 1. NAO chamar de "voltar no tempo".
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a ficha
+dela, uma frase so, no formato: nome, ano de nascimento, idade naquele momento, e se esta
+viva. As fichas estao no roteiro, marcadas com FICHA. Ler todas, sem pular, sem inventar
+dado e sem comentar. Sao dez: Abrams, Anderson, Zuckerberg, Hurley, Chen, Karim, Dorsey,
+Williams, Stone e Sanghvi. A PALAVRA "FICHA" NAO E DITA EM VOZ ALTA, e a palavra "CENA"
+tambem nao: emendar direto no nome.
+
+TODAS AS DEZ PESSOAS ESTAO VIVAS EM 2026. Foi conferido uma por uma. NAO dizer que alguem
+morreu.
+
+⚠️ JONATHAN ABRAMS NAO TEM DATA DE NASCIMENTO PUBLICA. A ficha dele diz isso com todas as
+letras e segue em frente, sem explicar e sem pedir desculpa. NAO inventar um ano pra ele e
+NAO dar idade a ele.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O audio
+TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem do
+roteiro. A frase e sempre essa, "aperte o Proximo", COM o "o", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a pagina
+tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a frase "aperte
+o Proximo" como exemplo nesse aviso.
+
+⚠️ A GRAVACAO ANTERIOR ENTREGOU 10 TELAS EM VEZ DE 12 E DUROU SO 11 MINUTOS. Ela juntou
+DOIS pares: as telas 2 e 3 (o Friendster existindo, e por que ficou lento) e as telas 8 e 9
+(o problema de montar, e o mural de novidades do Facebook). Esses dois pares sao o risco
+principal desta gravacao:
+  - a tela 2 PARA no Google oferecendo trinta milhoes e sendo recusado. As palavras "lento"
+    e "minuto" so aparecem na tela 3.
+  - a tela 8 PARA na solucao misturada pras contas gigantes. Facebook, mural de novidades,
+    protesto e Ruchi Sanghvi so aparecem na tela 9.
+Cada tela precisa de mais ou menos um minuto e meio de fala. O episodio inteiro tem que dar
+perto de DEZOITO minutos: se sair em doze ou treze, alguma tela foi espremida.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (o Friendster existindo, e por que
+ficou lento), 7 e 8 (o Twitter caindo, e a explicacao tecnica), 10 e 11 (as pecas novas, e a
+lista que nao cabe), 11 e 12 (a escolha, e o balanco). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR: "dois mil e dois", "dois mil e tres", "dois mil e
+quatro", "dois mil e cinco", "dois mil e seis", "dois mil e dez", "dois mil e doze", "tres
+milhoes de pessoas", "quinhentos e oitenta milhoes de dolares", "cento e quinze milhoes de
+visitantes por mes", "duzentos terabytes por dia", "um bilhao e seiscentos e cinquenta
+milhoes de dolares", "oitenta e quatro horas", "quatro mil e seiscentas por segundo",
+"trezentas mil por segundo", "trezentas e quarenta e cinco mil escritas por segundo",
+"setenta e cinco vezes", "mil e quinhentas historias", "trezentas". NAO trocar milhao por
+bilhao.
+
+NOMES, NA PRIMEIRA VEZ, devagar: Friendster ("frénd-ster"); Jonathan Abrams ("djô-na-than
+êi-brams"); MySpace ("mai-spêis"); Tom Anderson ("tom ân-der-son"); Facebook ("fêis-buc");
+Mark Zuckerberg ("márc zâ-quer-berg"); YouTube ("iú-tiúb"); Chad Hurley ("tchéd rârli");
+Steve Chen ("stív tchén"); Jawed Karim ("djá-ued ka-rím"); Twitter ("tuí-ter"); Jack Dorsey
+("djéc dór-si"); Evan Williams ("évan uí-liams"); Biz Stone ("biz stôun"); Ruchi Sanghvi
+("rú-tchi sân-vi"); News Feed ("niús fíd", e dizer que quer dizer "o mural de novidades");
+EdgeRank ("édj-renk"); Redis ("ré-dis"); Hadoop ("ra-dúp"); memcached ("mem-quéch-d"); HBase
+("agá-bêis").
+
+⚠️ A LISTA DE PRONUNCIA ACIMA E INSTRUCAO, NAO E FALA. NAO dizer "que se pronuncia", "que
+se le" nem nada parecido no ar: falar o nome do jeito certo e seguir. No episodio anterior
+saiu "a Susan Wojcicki, que se pronuncia Susan Wojcicki".
+
+⚠️ NAO USAR AS PALAVRAS "PUSH" E "PULL", em nenhum momento. Elas significam coisas opostas
+dependendo de quem conta. Dizer sempre em portugues: "escrever na hora de publicar" e
+"montar na hora de ler".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. As telas sao fotos.
+
+FOCO, EM ORDEM: quem chega sem pergunta; dois mil e tres, o Friendster guardando ligacao
+entre pessoas; por que ele ficou lento, com as tres versoes da historia; agosto de dois mil
+e tres, o MySpace ganhando por fazer menos conta; fevereiro de dois mil e quatro, o Facebook
+crescendo por pedaco; dois mil e cinco, o video enchendo o cano da bolha; marco de dois mil
+e seis, o Twitter e a baleia; o problema de montar a lista, com os numeros; cinco de
+setembro de dois mil e seis, o mural de novidades e o protesto; as pecas que nasceram
+disso; dois mil e dez, a lista que nao cabe e a regra escrita a mao; dois mil e doze, o
+fecho.
+
+O PONTO QUE NAO PODE FALTAR: o EdgeRank de dois mil e dez e uma REGRA ESCRITA A MAO, com
+tres fatores escolhidos por pessoas e multiplicados. Ninguem aprendeu nada; alguem decidiu.
+Essa frase e o gancho do proximo episodio e nao pode sair do ar.
+
+CUIDADOS DE FATO:
+- ⚠️ A versao de que o Friendster recalculava a rede a cada carregamento de pagina vem de
+  RELATO DE EX-FUNCIONARIO SEM NOME. Dizer que e plausivel e nao documentado. O que ESTA
+  publicado e que ele mantinha a rede ate varios graus de distancia (uma fonte diz quatro),
+  e que a pagina levava mais de um minuto.
+- ⚠️ Contar as TRES versoes de por que o Friendster morreu: um executivo diz que foi
+  lentidao, o fundador discorda e culpa a forma de tocar a empresa, e um estudo de
+  universidade conclui que foram as duas coisas. NAO escolher uma.
+- ⚠️ Os cento e quinze milhoes do MySpace sao VISITANTES POR MES NO MUNDO, em dois mil e
+  oito. Nao confundir com os numeros dos Estados Unidos.
+- ⚠️ NAO dizer que o MySpace afundou por ter trocado a base tecnica: a troca foi no comeco
+  de dois mil e cinco, melhorou o desempenho, e o site cresceu tres anos depois.
+- ⚠️ NAO dizer que a baleia provou que a linguagem de programacao nao escalava: o
+  arquiteto-chefe do proprio Twitter desmente. O problema era banco de dados e divisao de
+  dados entre maquinas.
+- ⚠️ NAO dizer a HORA do primeiro tuite: as fontes divergem. So a data, vinte e um de marco
+  de dois mil e seis.
+- ⚠️ O mural de novidades NUNCA mostrou tudo: sempre escolheu um pedaco. Mas em dois mil e
+  seis a escolha era ajustada na mao, nao por um sistema que aprende. Dizer as duas coisas.
+- ⚠️ Os numeros do protesto: duzentos e oitenta e quatro mil em vinte e quatro horas e mais
+  de setecentas mil em tres dias. NAO dizer "um milhao": esse numero era de outro grupo.
+- ⚠️ O Facebook so abriu pra qualquer pessoa em vinte e seis de setembro de dois mil e seis,
+  TRES SEMANAS DEPOIS do mural. A ordem importa e e contraintuitiva.
+- ⚠️ As mil e quinhentas historias pra trezentas entregues sao de uma medida de DOIS MIL E
+  TREZE. Dizer o ano.
+- ⚠️ memcached, Hadoop e HBase NAO nasceram no Facebook. Nasceram no Facebook: Cassandra e
+  Hive. Nasceram no Twitter: Gizzard, FlockDB e Snowflake.
+- ⚠️ A conta de trafego do YouTube (perto de um milhao de dolares por mes) e ESTIMATIVA DE
+  FORA: a empresa nunca confirmou. Dizer isso.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO NAO FECHA A SERIE NEM A ETAPA: e o terceiro de quatro.
+Na ultima tela, balanco das pessoas nome por nome, a licao, e a pergunta que abre o proximo
+episodio. NAO dizer "ultima da serie", "ate o proximo", "proximo mergulho" nem "proximo
+encontro".
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+Use SOMENTE as duas analogias descritas no roteiro: a caixa de correio do predio (os dois
+jeitos de entregar o jornal, so nas telas 8 e 9) e a caixa de correio cheia (mil e
+quinhentas cartas pra trezentas lidas, so na tela 11). NAO invente analogias novas.
+Servidor, banco de dados e fila sao explicados direto, sem comparacao.
+
+Use tambem o Overview.txt como contexto curto.

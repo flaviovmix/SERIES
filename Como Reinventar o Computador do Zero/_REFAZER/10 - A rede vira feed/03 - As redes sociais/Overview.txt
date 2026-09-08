@@ -1,0 +1,63 @@
+AS REDES SOCIAIS - CONTEXTO
+===========================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como Reinventar o
+Computador do Zero. A serie reconstroi o computador do zero, do abaco em diante, uma peca
+por episodio. Este episodio cobre de 2002 a 2012, em ORDEM CRONOLOGICA, e conta a historia
+PELAS PESSOAS, com nome e ficha, usando cada passo pra mostrar como o hardware e o software
+melhoram um empurrando o outro.
+
+Por que este episodio existe: o anterior montou uma maquina que responde, mas ela so
+funciona quando alguem pergunta. Este conta o que a rede passou a mostrar pra quem chega sem
+pergunta nenhuma, e o que isso fez com a maquina.
+
+A TESE: o volume de gente publicando virou um problema de computacao, e sao DOIS problemas
+diferentes. Primeiro, MONTAR o que cada pessoa ve custa caro (o fan-out). Segundo, mesmo
+montado, ninguem consegue LER tudo. O primeiro se resolve com maquina. O segundo nao: ele
+obriga alguem a escolher, e e ai que o episodio para.
+
+O fio, em doze passos:
+
+1. Quem chega sem pergunta. A resposta da rede: mostrar o que os outros andaram fazendo. O
+   intervalo 2002-2012, sobreposto com os episodios anteriores.
+2. 2003: o Friendster, de Jonathan Abrams. A novidade nao era guardar pagina, era guardar
+   LIGACAO ENTRE PESSOAS, e mostrar a distancia de cada um ate voce. 3 milhoes de pessoas
+   no fim de 2003; recusou 30 milhoes de dolares do Google.
+3. Por que ficou lento: a rede mantida a varios graus de distancia (uma fonte publicada diz
+   quatro), a pagina levando mais de um minuto, e a base tecnica trocada so em junho de
+   2004. As tres versoes da morte: o executivo, o fundador e o estudo academico.
+4. Agosto de 2003: o MySpace, com Tom Anderson, ganhando por TIRAR a conta de distancia do
+   caminho. Comprado em 2005 por 580 milhoes; pico em 2008 com 115 milhoes de visitantes
+   por mes no mundo.
+5. Fevereiro de 2004: o Facebook, de Mark Zuckerberg, 19 anos. Cresce fechado, uma
+   universidade por vez, o que e tambem uma decisao de maquina. Abre pra qualquer pessoa so
+   em 26/09/2006.
+6. 2005: o YouTube, de Hurley, Chen e Karim. Video e outro problema: 40 milhoes de videos e
+   200 terabytes por dia em abril de 2006. Aqui o cano enterrado na bolha (episodio 10.01)
+   finalmente e usado. Comprado pelo Google em outubro de 2006.
+7. Marco de 2006: o Twitter, de Dorsey, Williams e Stone. Seguir sem pedir licenca e uma
+   decisao de produto que vira problema de computacao. A baleia: 84 horas fora do ar em
+   2008.
+8. O problema de MONTAR. Os dois jeitos (escrever na hora de publicar, montar na hora de
+   ler) e os numeros do Twitter: 4.600 publicacoes por segundo viram 345 mil escritas por
+   segundo, e a leitura e 75 vezes maior que a escrita. Onde quebra: quem tem 30 milhoes de
+   seguidores.
+9. 05/09/2006: o mural de novidades do Facebook, anunciado por Ruchi Sanghvi. O protesto:
+   284 mil em 24 horas, mais de 700 mil em tres dias. E o ponto: ele nunca mostrou tudo.
+10. As pecas que nasceram disso: Cassandra e Hive no Facebook, Gizzard, FlockDB e Snowflake
+   no Twitter. E o que NAO nasceu la: memcached, Hadoop, HBase.
+11. Quando ninguem consegue mais ler tudo: 1.500 coisas disponiveis pra 300 mostradas
+   (medida do Facebook, de 2013). O EdgeRank, apresentado em abril de 2010, com tres
+   fatores multiplicados. E o ponto que entrega o proximo episodio: isso e uma REGRA
+   ESCRITA A MAO.
+12. Onde para: 2012. Balanco das pessoas. Pergunta: e se ninguem escrever a regra? E se a
+   maquina descobrir sozinha, olhando o que voce fez antes?
+
+CUIDADOS: todas as dez pessoas estao vivas em 2026. Jonathan Abrams nao tem data de
+nascimento publica e a ficha dele diz isso. Nao usar as palavras "push" e "pull", que
+significam coisas opostas conforme a fonte. Nao dizer a hora do primeiro tuite. Nao dizer
+que a baleia provou que a linguagem nao escalava. Nao dizer "um milhao" no protesto do
+mural.
+
+Use este contexto apenas como apoio.

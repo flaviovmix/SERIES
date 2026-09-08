@@ -1,0 +1,124 @@
+Inicie dizendo: A Bolha
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Bolha.txt enviado como fonte. Esse
+arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o primeiro episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero.
+
+COSTURA OBRIGATORIA NA TELA 1: o episodio anterior que foi ao ar terminou dizendo que
+fechava a serie. A serie NAO fechou. A tela 1 assume isso em UMA frase, com naturalidade,
+sem pedir desculpa e sem repetir: o episodio passado fechou o arco da maquina, e agora a
+serie volta pra contar a outra linha da mesma historia, a da rede.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Este episodio fala de bolsa e de dinheiro, e por isso a
+regra vale mais aqui: o assunto e o que aquele dinheiro CONSTRUIU e deixou no chao, nunca
+quem ficou rico. NAO fazer piada de quem perdeu dinheiro e NAO dar conselho de
+investimento.
+
+ESTE EPISODIO COBRE DE 1995 A 2002, EM ORDEM. Dizer o intervalo logo na abertura e, no
+encerramento, dizer em que ano o episodio para. NAO chamar de "voltar no tempo": e
+continuar de onde a rede tinha parado na etapa 8, enquanto a etapa 9 contava a linha das
+pecas.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a ficha
+dela, uma frase so, no formato: nome, ano de nascimento, idade naquele momento, e se esta
+viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler todas, sem
+pular, sem inventar dado e sem comentar. Sao nove: Clark, Andreessen, Bezos, Omidyar,
+Greenspan, Meeker, Blodget, Ebbers e Wainwright. A PALAVRA "FICHA" NAO E DITA EM VOZ
+ALTA, e a palavra "CENA" tambem nao ("naquela cena" e marcador do roteiro, nao e fala):
+emendar direto no nome. O socio da Kozmo e os fundadores originais da Pets.com nao tem ano
+de nascimento publico e NAO sao nomeados.
+
+⚠️ ALAN GREENSPAN MORREU EM JUNHO DE DOIS MIL E VINTE E SEIS. Falar dele no passado, e a
+ficha diz "morreu em dois mil e vinte e seis".
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O audio
+TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem do
+roteiro. A frase e sempre essa, "aperte o Proximo", COM o "o", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (a Netscape, e a regra nova), 5
+e 6 (o auge do dinheiro, e a fibra), 7 e 8 (o pico, e as quedas), 10 e 11 (o que ficou, e
+a licao), 11 e 12 (a licao, e o balanco). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+A ABERTURA E DIRETA, sem cena inventada e sem chamada com fato de tela posterior.
+
+ANOS E DINHEIRO POR EXTENSO E DEVAGAR: "mil novecentos e noventa e cinco", "dois mil",
+"dois mil e dois", "vinte e oito dolares por acao", "cinquenta e oito dolares e vinte e
+cinco centavos", "dois bilhoes e novecentos milhoes de dolares", "dois milhoes e duzentos
+mil dolares", "cinco mil e quarenta e oito pontos", "mil cento e quatorze pontos",
+"setenta e oito por cento", "cinco trilhoes de dolares". NAO trocar milhao por bilhao.
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: dizer sempre "abertura de capital", NUNCA "IPO";
+Nasdaq ("nézdec", a bolsa de tecnologia); Netscape ("nét-squêip"); Jim Clark ("djim
+clárc"); Marc Andreessen ("márc an-drí-ssen"); Mosaic ("mo-zêi-ic"); Yahoo ("ia-rú");
+Amazon ("á-ma-zon"); eBay ("i-bêi"); Bezos ("bê-zos"); Pierre Omidyar ("pi-ér
+o-mi-di-ár"); Greenspan ("grínspan"); Mary Meeker ("méri mí-quer"); Morgan Stanley
+("mórgan stân-li"); Henry Blodget ("blód-djet"); Merrill Lynch ("mé-ril lintch"); Super
+Bowl ("súper bôul", a final do futebol americano, explicar em tres palavras); Pets.com
+("péts ponto com"); Webvan ("uéb-van"); Kozmo ("cóz-mo"); boo.com ("bu ponto com");
+WorldCom ("uôrld-com"); Ebbers ("é-bers"); Julie Wainwright ("djú-li uêin-rait"); Google
+("gú-gol"). Explicar fibra otica em uma frase na primeira vez.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. As telas sao fotos.
+
+FOCO, EM ORDEM: a costura e a analogia da estrada; nove de agosto de noventa e cinco, a
+Netscape sem lucro valendo bilhoes; noventa e seis a noventa e oito, crescer primeiro e
+cobrar depois, e o aviso de Greenspan; os analistas e a medida quebrada; noventa e nove e
+dois mil, o auge, o Super Bowl e a Pets.com; o cano, Ebbers e a fibra apagada; dez de
+marco de dois mil, o pico e a queda de setenta e oito por cento; as empresas fechando; quem
+atravessou, com o Google de capital fechado; o que ficou no chao; a licao da estrada; dois
+mil e dois, o fecho.
+
+O PONTO QUE NAO PODE FALTAR: a bolha construiu na frente do uso e quebrou, e mesmo assim
+deixou enterrado o cano que a decada seguinte usou por quase nada. Aqui a promessa do
+software fez o hardware ser construido cedo demais, ao contrario do resto da serie.
+
+CUIDADOS DE FATO: foram QUATORZE empresas ponto com no Super Bowl. NAO cravar um
+percentual unico de fibra apagada: dizer que as estimativas vao de oitenta e cinco a
+noventa e cinco por cento. E dizer com todas as letras que nao da pra creditar a fibra da
+bolha por tudo o que barateou depois.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO NAO FECHA A SERIE NEM A ETAPA: e o primeiro de quatro.
+Na ultima tela, balanco das pessoas nome por nome, a licao, e a pergunta que abre o
+proximo episodio. NAO dizer "ultima da serie", "ate o proximo", "proximo mergulho" nem
+"proximo encontro".
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+Use SOMENTE a analogia descrita no roteiro, a estrada de dez pistas (obra grande demais
+pra cidade pequena; quem pagou quebra; a estrada fica e a cidade usa vinte anos depois; a
+bolha e a obra, a fibra e o asfalto). NAO invente analogias novas. Bolsa, acao e valor de
+mercado sao explicados direto, sem comparacao, e NAO comparar o mercado com cassino, febre
+ou doenca.
+
+Use tambem o Overview.txt como contexto curto.

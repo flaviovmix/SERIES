@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A busca vira negócio — Etapa 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 10-02 (roteiro de 07/09, 12 telas, cronologico, com pessoas). Mesma receita
+     do 10-01: pasta em _REFAZER (quatro ../), sem modelo 3D, sem CSS local, fichas curtas,
+     fotos do Commons com credito. O texto de cada tela segue o que o audio REALMENTE
+     falou (_telas.md, gravacao v3), nao o roteiro. Os __PLACEHOLDERS__ do tocador sao
+     preenchidos pelo preenche-10.py. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-10.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20engenharia%20que%20transformou%20buscas%20em%20bilh%C3%B5es.m4a" data-duracao="815"></audio>
+    <img class="tocador__capa" src="img/pagerank-real.png" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A engenharia que transformou buscas em bilhões</div>
+      <div class="tocador__fonte">A rede vira feed · 02 · A busca vira negócio</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="815" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">13:35</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a rede vira feed · episódio 02 · quem decide a ordem</div>
+      <h1 class="reveal">A busca vira negócio</h1>
+      <p class="lede reveal">De <b>1998 a 2004</b>, em ordem e com as pessoas. Em 1998 os buscadores ordenavam contando quantas vezes a palavra aparecia na própria página, e quem repetia mil vezes no rodapé subia. São <b>duas invenções, não uma</b>: a que ordena a web, e a que cobra por essa ordem. Estes anos correm ao mesmo tempo que a bolha do episódio anterior. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>A carta de recomendação.</b> Para saber quem é bom numa área que você não entende, não adianta ler o que cada um escreveu sobre si mesmo. Você olha quem recomenda quem. E uma recomendação vinda de alguém que todo mundo recomenda vale mais que dez de gente que ninguém conhece. Um detalhe fecha a ideia: quem escreve muitas cartas divide a própria reputação entre elas.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/stanford-real.jpg" alt="Prédio de tijolo claro do departamento de computação de Stanford, visto de fora num dia de sol">
+      <figcaption>Onde os dois estudavam · foto: KhanVic, domínio público</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1998 · Stanford</div>
+      <h2 class="reveal">A pergunta trocada</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Larry Page e Sergey Brin, dois alunos de doutorado. Page queria estudar a estrutura de links da web: quem aponta pra quem</div></div>
+        <div class="item reveal"><div class="rotulo">os professores</div><div class="texto">Terry Winograd orientava, e Rajeev Motwani ajudou na matemática. Os dois assinam o relatório do método, junto com os alunos</div></div>
+        <div class="item reveal"><div class="rotulo">a virada</div><div class="texto">os outros perguntavam <b>esta página fala do assunto?</b>. Eles perguntaram <b>esta página é importante?</b>. E a resposta não estava dentro da página</div></div>
+      </div>
+      <p class="lede reveal">A web já tinha o dado que resolvia o problema, os links, e ninguém usava. <b>Não faltava peça; faltava olhar.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Larry Page · foto: Stansfield PL, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/page-real.jpg" alt="Larry Page de terno escuro, cabelo castanho curto, olhando de lado">
+        <figcaption>Larry Page · foto: Stansfield PL, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Sergey Brin · foto: Joi Ito, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/brin-real.jpg" alt="Sergey Brin de camisa clara, barba curta, sorrindo levemente">
+        <figcaption>Sergey Brin · foto: Joi Ito, CC BY 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Rajeev Motwani em 2006 · foto: Dr Ona, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/motwani-real.jpg" alt="Rajeev Motwani de camisa clara, cabelo escuro, num ambiente interno">
+        <figcaption>Rajeev Motwani, 2006 · foto: Dr Ona, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o método</div>
+    <h2 class="reveal">O PageRank</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Cada bola é uma página e o tamanho dela é o peso que recebe dos links que apontam pra ela · diagrama: 345Kai e Stannered, domínio público">
+        <img src="img/pagerank-real.png" alt="Diagrama com bolas de tamanhos diferentes ligadas por setas, cada bola com um percentual dentro">
+        <figcaption>Cada link é um voto, e o voto vale o peso de quem votou · diagrama: 345Kai e Stannered, domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Um link é um voto, e o voto de quem recebe muitos votos vale mais. <b>O problema é circular:</b> pra saber quanto vale A, você precisa saber quanto valem os que apontam pra A. A saída é chutar que todas valem o mesmo e recalcular até os números pararem de mudar.</p>
+    <div class="nota-cena reveal">a patente ficou com Stanford, que licenciou em troca de ações e as vendeu por 336 milhões de dólares</div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">agosto e setembro de 1998</div>
+      <h2 class="reveal">Dois cheques e uma garagem</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o cheque</div><div class="texto">Andy Bechtolsheim, que tinha fundado a Sun Microsystems, assiste à demonstração e escreve <b>100 mil dólares</b> em nome de uma empresa que ainda não existia. Minutos depois, outro professor de Stanford passou um segundo cheque igual</div></div>
+        <div class="item reveal"><div class="rotulo">o registro</div><div class="texto">a empresa é registrada em 4 de setembro de 1998, e só então aluga a garagem da casa de Susan Wojcicki, em Menlo Park</div></div>
+        <div class="item reveal"><div class="rotulo">o problema</div><div class="texto">a busca era boa e era de graça, e cada busca custava máquina e energia. <b>Quanto mais gente usava, mais caro ficava</b></div></div>
+      </div>
+      <p class="lede reveal">A empresa não nasceu numa garagem: nasceu no laboratório da universidade e foi pra garagem <b>depois</b> de ter nome, dinheiro e registro. <b>E um software grátis e muito usado é um problema de hardware.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Andy Bechtolsheim · foto: Norbert Stuhrmann, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/bechtolsheim-real.jpg" alt="Andy Bechtolsheim de camisa clara e óculos, cabelo grisalho, falando">
+        <figcaption>Andy Bechtolsheim · foto: Norbert Stuhrmann, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Susan Wojcicki · foto: TechCrunch, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/wojcicki-real.jpg" alt="Susan Wojcicki de blazer escuro, cabelo castanho comprido, falando num palco">
+        <figcaption>Susan Wojcicki · foto: TechCrunch, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o problema do dinheiro</div>
+    <h2 class="reveal">Como se paga uma busca de graça</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O primeiro servidor de produção do Google, montado em prateleira de peças soltas · foto: Takuya Oikawa, CC BY-SA 2.0">
+        <img src="img/servidor-google.jpg" alt="Armação aberta com placas de computador empilhadas em prateleiras improvisadas e fios à mostra, numa vitrine de museu">
+        <figcaption>Cada busca custa máquina e energia · foto: Takuya Oikawa, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Os portais vendiam banner por exibição, do jeito da televisão. Não servia: o banner incomoda, quase ninguém clica, e não tem nada a ver com o que a pessoa quer naquele segundo. <b>Numa busca, a pessoa diz o que quer, com as próprias palavras, na hora.</b></p>
+    <div class="nota-cena reveal">o dado mais valioso não foi coletado: a pessoa entregou de graça, porque precisava dele pra usar o produto</div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">fevereiro de 1998 · e não foi o Google</div>
+      <h2 class="reveal">O leilão do Bill Gross</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a ideia</div><div class="texto">um buscador onde o anunciante dá um lance pra aparecer numa palavra e paga só quando alguém clica. Quem paga mais aparece primeiro</div></div>
+        <div class="item reveal"><div class="rotulo">a reação</div><div class="texto">a plateia não gostou: misturar anúncio com resultado parecia traição. Ele conta que ouviu vaia; quem estava lá descreve uma sala mais incomodada que hostil</div></div>
+        <div class="item reveal"><div class="rotulo">o defeito</div><div class="texto">ordenar só pelo maior lance enche a primeira posição de quem tem mais dinheiro, e não de quem responde melhor. Se o anúncio não interessa, ninguém clica e ninguém ganha</div></div>
+      </div>
+      <p class="lede reveal">Vender posição na prateleira não era novidade: o supermercado e o jornal já faziam. <b>O novo era leiloar essa posição em tempo real, a cada pessoa que chega.</b> A empresa virou Overture e a Yahoo comprou em 2003.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Bill Gross · foto: Loic Le Meur, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/gross-real.jpg" alt="Bill Gross de camisa escura, cabelo grisalho curto, gesticulando enquanto fala">
+        <figcaption>Bill Gross · foto: Loic Le Meur, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">23 de outubro de 2000</div>
+      <h2 class="reveal">O anúncio cobrado por exibição</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que saiu</div><div class="texto">o AdWords nasce com uns <b>350 anunciantes</b>. Texto simples, sem imagem, do lado direito, marcado como anúncio. E cobrado <b>por exibição</b></div></div>
+        <div class="item reveal"><div class="rotulo">o que estava errado</div><div class="texto">cobrar por exibição põe o risco no anunciante, que paga mesmo quando ninguém se interessa. E deixa o buscador sem motivo pra melhorar o anúncio, porque ganha igual</div></div>
+        <div class="item reveal"><div class="rotulo">quem chegou</div><div class="texto">Eric Schmidt entra em <b>março de 2001</b> como presidente do conselho, e só em agosto assume como executivo-chefe. São dois momentos, com cinco meses de distância</div></div>
+      </div>
+      <p class="lede reveal">Naquele ano a empresa faturou <b>19 milhões de dólares</b>, pouco pro tanto de gente que já usava a busca. <b>Trocar o modelo de cobrança não é vender melhor: é mudar o software.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Eric Schmidt em 2005 · foto: Charles Haynes, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/schmidt-real.jpg" alt="Eric Schmidt de óculos e camisa clara, olhando para a esquerda">
+        <figcaption>Eric Schmidt, 2005 · foto: Charles Haynes, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">20 de fevereiro de 2002 · a virada</div>
+    <h2 class="reveal">Pagar só por clique</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Corredor de um centro de dados do Google, com fileiras de máquinas e tubulação colorida · foto: Visitor7, CC BY-SA 3.0">
+        <img src="img/datacenter-real.jpg" alt="Corredor comprido de centro de dados com racks dos dois lados e tubos coloridos no teto">
+        <figcaption>Prever clique exige guardar o que aconteceu antes · foto: Visitor7, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal"><b>O preço:</b> quem ganha paga o mínimo pra não perder pro anunciante de baixo, e não o próprio lance: é o leilão de segundo preço <b>generalizado</b>. <b>A posição:</b> sai do lance vezes a chance de alguém clicar. Anúncio bom e barato passa na frente de um ruim e caro.</p>
+    <div class="nota-cena reveal">a primeira vez nesta série que uma máquina precisa adivinhar comportamento humano pra funcionar</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o tamanho da conta</div>
+      <h2 class="reveal">De 19 milhões a 3 bilhões</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a receita</div><div class="texto">19 milhões de dólares em 2000, <b>439 milhões</b> em 2002, e <b>3 bilhões e 200 milhões</b> em 2004. Noventa e nove por cento disso vinha de anúncio</div></div>
+        <div class="item reveal"><div class="rotulo">quem paga</div><div class="texto">a ferramenta que mais gente no mundo usava pra achar qualquer coisa não vendia nada pra quem usava. Quem paga é quem quer aparecer</div></div>
+        <div class="item reveal"><div class="rotulo">fora da busca</div><div class="texto">em 2003 Susan Wojcicki, agora funcionária da casa, vira a primeira gerente do produto que leva o anúncio pros sites dos outros</div></div>
+      </div>
+      <p class="lede reveal">O anúncio pagou as máquinas, as máquinas permitiram guardar mais dado, e mais dado deixou o anúncio melhor. <b>É um ciclo que se alimenta, e ele não para mais.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A sede do Google em Mountain View · foto: Grendelkhan, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/googleplex-real.jpg" alt="Prédios baixos de vidro da sede do Google, com gramado e bicicletas coloridas na frente">
+        <figcaption>A sede, anos depois · foto: Grendelkhan, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">abril de 2002 a agosto de 2004</div>
+    <h2 class="reveal">A briga pela patente</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Bill Gross, cuja empresa processou o Google alegando que o leilão de anúncio era invenção dela · foto: Loic Le Meur, CC BY 2.0">
+        <img src="img/gross-real.jpg" alt="Bill Gross de camisa escura, gesticulando enquanto fala">
+        <figcaption>A ideia do leilão foi dele, e ele cobrou por isso · foto: Loic Le Meur, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A Overture processa o Google dizendo que o leilão era invenção dela. A briga se resolve dias antes da abertura de capital: o Google entrega <b>2 milhões e 700 mil ações</b> pra Yahoo, dona da Overture, e fica com a licença pra sempre. O mesmo pagamento fechou uma segunda disputa.</p>
+    <div class="nota-cena reveal">a ideia do leilão não foi do Google. Dele foi o leilão ordenado por qualidade, e a máquina pra rodar isso pra todo mundo, o tempo todo</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">19 de agosto de 2004</div>
+    <h2 class="reveal">A abertura de capital</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O prédio da Nasdaq na Times Square, a bolsa onde o Google abriu o capital · foto: ajay_suresh, CC BY 2.0">
+        <img src="img/nasdaq-predio.jpg" alt="Fachada curva e telão da Nasdaq na Times Square, coberta de painéis luminosos">
+        <figcaption>A mesma bolsa que despencou quatro anos antes · foto: ajay_suresh, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A <b>85 dólares por ação</b>, valendo perto de <b>23 bilhões</b>, quatro anos depois do estouro do episódio anterior. E em vez do banco escolher quem compra antes, usaram um leilão aberto: leilão de novo. Por essa época passavam de 200 milhões de buscas por dia.</p>
+    <div class="nota-cena reveal">em nove anos a rede saiu de "quem paga o cano?" pra "quem paga sabe o que você quer"</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2004</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Page e Brin trocaram a pergunta, de "esta página fala disso" pra "esta página é importante". Winograd e Motwani assinaram o método com eles. Bechtolsheim assinou o cheque antes de a empresa existir. Gross teve a ideia do leilão e foi mal recebido por ela. Schmidt fez o negócio caber de pé. Wojcicki levou o anúncio pra fora da busca. Ninguém planejou o conjunto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição</div>
+        <div class="desc">ordenar a informação virou o negócio mais valioso da rede. E, pra cobrar por essa ordem, a máquina teve que começar a prever comportamento humano</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">onde para</div>
+        <div class="desc">2004, com a busca ordenada por links e paga por clique</div>
+      </div>
+    </div>
+    <p class="lede reveal">A busca só responde quando você pergunta. <b>Mas e se a pessoa não estiver procurando nada, e mesmo assim quiser ficar ali? O que a rede mostra pra quem chegou sem pergunta nenhuma?</b></p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+Inicie dizendo: O Algoritmo de Recomendação
+---------------
+
+Este e o quarto e ultimo episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero. O anterior contou as redes sociais: gente demais publicando
+ao mesmo tempo, e o feed deixando de mostrar tudo em ordem de hora. Ele terminou com uma
+pergunta: em dois mil e dez quem escolhia era uma regra de tres fatores, escrita por
+pessoas. E se ninguem escrever a regra? E se a maquina descobrir sozinha, olhando o que voce
+fez antes?
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. NAO transformar em historia de empresa que deu certo, e
+NAO fazer sermao sobre vicio em tela. O assunto e uma PECA DE SOFTWARE que aprende, e o dado
+que alimenta ela.
+
+ESTE EPISODIO COBRE DE 2006 A 2016, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. Os anos se sobrepoem com a
+etapa 9 e com os episodios anteriores desta etapa: dizer isso na tela 1, em uma frase.
+
+A TESE, E ELA TEM QUE SER DITA COM ESSAS PALAVRAS: esta foi a primeira maquina que aprendeu
+e que mexeu com todo mundo. Nao foi a que conversa. E o que ela aprendeu nao veio de nota
+que alguem deu de proposito: veio do RASTRO que as pessoas deixaram sem perceber.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome, em ordem cronologica. Dizer quem fez,
+onde estava e por que fez.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a ficha
+dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha naquele
+momento, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Reed Hastings,
+nascido em mil novecentos e sessenta, tinha quarenta e cinco anos; vivo em dois mil e vinte
+e seis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE SO, dita e seguida
+em frente. Sao SETE fichas: Hastings, Hinton, Pariser, Zuckerberg, Kamangar, Wojcicki e
+Jeff Dean.
+
+⚠️ VARIAS PESSOAS IMPORTANTES DESTE EPISODIO NAO TEM ANO DE NASCIMENTO PUBLICO, e por isso
+entram SEM FICHA. Sao elas: quem publicou o metodo da fatoracao em dois mil e seis, os tres
+pesquisadores que ganharam o premio, os dois que quebraram o anonimato da base, e os tres
+engenheiros que assinaram o trabalho do YouTube em dois mil e dezesseis. Falar deles pelo
+nome quando o roteiro mandar, sem inventar idade. Na tela 12 vale dizer numa frase que boa
+parte de quem fez isso nao tem nem data de nascimento publica, ao contrario dos donos das
+empresas.
+
+UMA PESSOA ESTA MORTA E SE FALA DELA NO PASSADO: Susan Wojcicki, que morreu em dois mil e
+vinte e quatro.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer "ficha",
+"deixa eu ler a ficha" nem nada parecido: emendar direto no nome. A PALAVRA "CENA" TAMBEM E
+MARCADOR: NAO dizer "naquela cena" nem "na cena".
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o Proximo"
+exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa, "aperte o
+Proximo", COM o "o", sem variacao. NAO juntar o conteudo de duas telas num bloco so, NAO
+adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO. Dizer
+so "quando ouvir o pedido".
+
+ATENCAO ESPECIAL COM AS TELAS 6 e 7. A tela 6 e a vitoria do premio. A tela 7 e a Netflix
+contando o que fez com o resultado. Duas telas, dois pedidos. NAO adiantar na tela 6 que o
+campeao nao foi usado.
+
+ATENCAO ESPECIAL COM AS TELAS 10 e 11. A tela 10 e a troca de objetivo (dois mil e doze). A
+tela 11 e a troca de motor (dois mil e dezesseis). Sao quatro anos de distancia e sao coisas
+diferentes: NAO juntar.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 12 e OUTRA COISA: o balanco das pessoas, a
+licao da etapa inteira e a pergunta que abre a proxima etapa. Um pedido entre as duas. Em
+episodios anteriores desta serie essas duas ultimas telas ja sairam emendadas: NAO repetir.
+
+⚠️ ESTE EPISODIO FECHA A ETAPA, MAS NAO FECHA A SERIE. A serie continua. Na ultima tela NAO
+dizer "ultima da serie", "fim da serie", "ate o proximo", "proximo mergulho" nem "proximo
+encontro". So o balanco, a licao e a pergunta.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: "dois mil e seis", "dois mil e sete", "dois mil e
+oito", "dois mil e nove", "dois mil e dez", "dois mil e onze", "dois mil e doze", "dois mil
+e catorze", "dois mil e dezesseis".
+
+NUMEROS DEVAGAR, SEMPRE COM A UNIDADE: "um milhao de dolares", "dez por cento", "cem milhoes
+de notas", "quatrocentas e oitenta mil pessoas", "dezessete mil setecentos e setenta
+filmes", "vinte minutos", "cinco bilhoes de notas", "cento e sete algoritmos", "oito notas",
+"noventa e nove por cento", "cem mil pesos", "mil e quinhentas historias", "um bilhao de
+pessoas", "um bilhao de numeros ajustaveis", "centenas de bilhoes de exemplos". NAO trocar
+milhao por bilhao.
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar:
+
+- Netflix: fala-se "nét-flics". Reed Hastings: fala-se "rid rêis-tings".
+- Cinematch: fala-se "sine-métch"; era o nome do sistema de recomendacao que a Netflix ja
+  tinha.
+- Simon Funk: fala-se "sái-mon fânk"; e um apelido, nao o nome de registro dele.
+- Geoffrey Hinton: fala-se "djé-fri rin-ton". YouTube: fala-se "iú-tiúb".
+- Eli Pariser: fala-se "í-lai pá-ri-ser". Salar Kamangar: fala-se "sa-lár ka-man-gár".
+- Susan Wojcicki: fala-se "sú-zan uo-djís-qui". Jeff Dean: fala-se "djéf dín".
+- Facebook: fala-se "fêis-buc". Mark Zuckerberg: fala-se "márc zâ-quer-berg".
+- Rede neural: dizer em portugues, "rede neural". NAO dizer "deep learning": dizer "rede
+  neural profunda".
+
+⚠️ A LISTA DE PRONUNCIA ACIMA E INSTRUCAO PRA VOCE, NAO E FALA. NUNCA dizer "que se
+pronuncia", "que se le" nem "pronuncia-se" no ar. Falar o nome do jeito certo, uma vez, e
+seguir em frente como se nada tivesse sido explicado.
+
+⚠️ DOIS DEFEITOS DA GRAVACAO ANTERIOR, E OS DOIS SAO FACEIS DE EVITAR:
+
+1. Ela disse "a sacada GENIAL do Hastings" e "a GENIALIDADE do metodo". As duas palavras
+   estao na lista de proibidas mais abaixo. NAO usar "genial", "genialidade" nem "genio",
+   nem pra elogiar pessoa nem pra elogiar metodo. O jeito da serie e dizer o que a coisa
+   FAZ, e deixar o ouvinte achar bonito sozinho.
+
+2. As fichas fecharam com "vivo hoje". O fecho da ficha e sempre "VIVO EM DOIS MIL E VINTE
+   E SEIS" (ou "viva em dois mil e vinte e seis"), com o ano dito. "Vivo hoje" nao serve:
+   daqui a alguns anos vira mentira, e os outros episodios desta etapa dizem o ano.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o apresentador
+dizendo so o titulo, "O Algoritmo de Recomendação".
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. Depois do titulo, a
+primeira frase e a retomada da pergunta que o episodio anterior deixou.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A planilha quase toda vazia, so pras telas 3 e 4: imagine uma tabela com quatrocentas e
+  oitenta mil linhas, uma por pessoa, e dezessete mil colunas, uma por filme. Quase toda
+  vazia: so uma celula em cada cem esta preenchida. O metodo nao tenta adivinhar celula por
+  celula. Ele troca a tabela gigante por duas tabelas magras, e a nota prevista sai
+  multiplicando uma linha da primeira por uma coluna da segunda. E a maquina descobre
+  sozinha o que cada coluna magra significa. Ninguem disse pra ela o que e acao, o que e
+  drama, nem o que e filme antigo.
+- O caixa do mercado, so pra tela 10: se voce paga o caixa por quantas pessoas passam pela
+  fila, ele vai empurrar a fila. Se voce paga por quanto cada pessoa levou de compra, ele
+  passa a se importar com o carrinho. Trocar o que se mede muda o que a maquina faz, mesmo
+  sem trocar a maquina.
+
+Fora essas duas, sem analogias. Rede neural e nota de filme sao explicados direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - E SE NINGUEM ESCREVER A REGRA
+
+Retomar a pergunta que ficou: no fim do episodio passado, quem escolhia o que aparecia na
+sua tela era uma regra de tres fatores, escrita por pessoas, que cabia num slide. E se
+ninguem escrever a regra?
+
+Dizer o que este episodio conta: a peca que descobre a regra sozinha, olhando o que as
+pessoas fizeram antes. E dizer onde ela apareceu primeiro, porque nao foi onde todo mundo
+pensa: apareceu num concurso pra adivinhar nota de filme.
+
+Dizer a tese, com essas palavras: esta foi a primeira maquina que aprendeu e que mexeu com
+todo mundo. Nao foi a que conversa. E o que ela aprendeu nao veio de nota que alguem deu de
+proposito: veio do rastro que as pessoas deixaram sem perceber.
+
+Dizer que os anos se sobrepoem, em uma frase: enquanto isso acontecia, a mesma serie ja
+contou o que estava acontecendo com as placas de video e com as redes sociais. Sao linhas
+paralelas.
+
+Dizer o fio: pessoas em ordem, e em cada passo o hardware e o software empurrando um ao
+outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de dois mil e seis a dois mil e
+dezesseis.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando ouvir
+o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver o concurso.
+
+TELA 2 - DOIS DE OUTUBRO DE DOIS MIL E SEIS: UM MILHAO DE DOLARES
+
+Contar a pessoa e o dia: em dois de outubro de dois mil e seis, Reed Hastings, que tocava a
+Netflix, anuncia um concurso publico com um premio de um milhao de dolares.
+
+FICHA: Reed Hastings, nascido em mil novecentos e sessenta, tinha quarenta e cinco anos;
+vivo em dois mil e vinte e seis.
+
+LEMBRAR O QUE A NETFLIX ERA NAQUELE MOMENTO, porque quase todo mundo esquece: nao era
+streaming. Era DVD pelo correio. Voce montava uma fila de filmes num site, e os discos
+chegavam e voltavam pelos Correios. O streaming so comeca em janeiro de dois mil e sete,
+tres meses depois.
+
+Dizer a tarefa, com precisao: a empresa ja tinha um sistema que adivinhava quanto voce ia
+gostar de um filme, chamado Cinematch. Ele errava, em media, quase uma estrela pra cima ou
+pra baixo. O desafio era simples de enunciar: quem conseguisse errar dez por cento menos
+levava o milhao.
+
+Dizer o tamanho da base, devagar: cem milhoes de notas, dadas por quatrocentas e oitenta
+mil pessoas, sobre dezessete mil setecentos e setenta filmes.
+
+Dizer por que isso foi novo, porque e o ponto da tela: ate ali, quem tinha dado grande
+guardava pra si. A Netflix soltou o dado no mundo e deixou qualquer pessoa tentar. E a
+pergunta que ela fez nao pedia entender de cinema: pedia acertar um numero.
+
+Dizer a licao de hardware e software: quando o dado fica publico, o gargalo deixa de ser
+acesso e passa a ser metodo. Foi a primeira vez nesta serie que um problema de software foi
+resolvido por gente de fora da empresa.
+
+Fechar pedindo o Proximo pra ver quem mudou o rumo do concurso, dois meses depois.
+
+TELA 3 - DEZEMBRO DE DOIS MIL E SEIS: O METODO SAI DE GRACA
+
+Contar o que aconteceu, sem ficha: em onze de dezembro de dois mil e seis, alguem que
+competia sob o apelido Simon Funk, e que estava em terceiro lugar, publicou num diario na
+internet exatamente como o metodo dele funcionava. Publicou de graca, no meio de uma
+competicao de um milhao de dolares. Dizer que o ano de nascimento dele nao e publico, e por
+isso ele nao tem ficha aqui.
+
+Usar a analogia da planilha quase toda vazia, inteira, aqui.
+
+Explicar os fatores latentes, que e a parte bonita: cada coluna magra e um numero que a
+maquina inventou pra descrever cada filme, e o mesmo numero descreve cada pessoa. Depois de
+treinado, alguem pode olhar e dizer "esse eixo parece separar acao de drama". Mas isso e
+interpretacao humana DEPOIS. A maquina nunca soube o nome de nenhum filme, nem o genero, nem
+quem atuou. Ela so viu quem votou o que.
+
+Dizer o efeito, curto: em poucas semanas quase todo mundo na competicao estava usando
+alguma versao dessa ideia.
+
+DESFAZER DUAS COISAS, sem enrolar: essa tecnica nao foi inventada ali, ja existia. O que ele
+fez foi publicar uma receita simples e que funcionava, no meio de uma disputa por dinheiro.
+E o apelido dela ficou errado pra sempre: chamam de um nome de tecnica classica que exige a
+tabela completa, e essa aqui funciona justamente por so olhar as celulas preenchidas.
+
+Dizer a licao de hardware e software: ajustar esses numeros e repetir a conta milhares de
+vezes. E software que so existe porque a maquina em cima da mesa ja aguentava fazer isso
+sozinha, sem sala de computador.
+
+Fechar pedindo o Proximo pra ver a outra peca entrar, e ela vem da etapa anterior desta
+serie.
+
+TELA 4 - DOIS MIL E SETE: A REDE NEURAL APARECE
+
+Contar a costura com a etapa 9, porque e o momento mais importante do episodio: a segunda
+peca que a competicao produziu nao era estatistica. Era rede neural. Em dois mil e sete, um
+grupo em Toronto publicou como usar um tipo de rede neural pra fazer a mesma tarefa de
+adivinhar nota.
+
+FICHA: Geoffrey Hinton, nascido em mil novecentos e quarenta e sete, tinha cinquenta e nove
+anos; vivo em dois mil e vinte e seis.
+
+Lembrar quem e ele em uma frase, sem repetir a etapa 9: e a mesma pessoa que, cinco anos
+depois, esta por tras da rede que enxerga imagem e vira a chave da etapa anterior desta
+serie. Aqui ele aparece antes disso, e num problema bem mais modesto.
+
+Dizer o resultado da competicao naquele primeiro ano: em novembro de dois mil e sete, a
+equipe que estava na frente levou o premio de progresso, com uma melhora de oito por cento
+e pouco. A solucao deles era a fatoracao mais essa rede neural, misturadas.
+
+GUARDAR ESTA FRASE PRA TELA 7, mas ja plantar aqui: essas duas pecas, e so essas duas, sao
+as que a Netflix realmente pos pra rodar.
+
+Dizer a licao de hardware e software: rede neural nao nasceu em dois mil e doze. Ela ja
+estava rodando em coisa util em dois mil e sete, so que pequena, e ninguem chamava de nada
+especial.
+
+Fechar pedindo o Proximo pra ver o problema que ninguem tinha previsto.
+
+TELA 5 - O DADO ANONIMO QUE NAO ERA ANONIMO
+
+Contar o que aconteceu, e a data importa: dezesseis dias depois de o concurso comecar, dois
+pesquisadores de uma universidade do Texas puseram no ar um rascunho mostrando que a base
+"anonima" nao era anonima. Eles nao tem ano de nascimento publico e entram sem ficha.
+
+Explicar o metodo deles em palavras simples: a Netflix tinha tirado o nome das pessoas. Mas
+tinha deixado quais filmes cada pessoa avaliou, que nota deu, e mais ou menos quando. Eles
+pegaram avaliacoes que gente publicava de proprio nome em outro site, e cruzaram.
+
+Dar o numero que assusta, devagar: com oito notas, sendo que duas podiam estar completamente
+erradas, e datas com margem de duas semanas, dava pra identificar unicamente noventa e nove
+por cento dos registros da base.
+
+Dizer a frase que resume, e ela vale pra serie inteira: tirar o nome nao e anonimizar. O
+padrao de comportamento e uma impressao digital. A Netflix tinha trocado o nome por um
+numero e deixado a impressao digital inteira no lugar.
+
+Contar o desfecho, curto e sem drama: uma acao judicial em dois mil e nove, uma consulta do
+orgao de defesa do consumidor americano, e em marco de dois mil e dez a Netflix cancela o
+segundo concurso, que ja estava anunciado.
+
+Dizer a licao de hardware e software: quanto mais fino o dado que o software precisa pra
+aprender, mais ele identifica a pessoa. Nao da pra separar as duas coisas: a mesma finura
+que faz a recomendacao funcionar e a que denuncia quem voce e.
+
+Fechar pedindo o Proximo pra ver quem ganhou o milhao.
+
+TELA 6 - VINTE E SEIS DE JULHO DE DOIS MIL E NOVE: O EMPATE
+
+Contar o desfecho da competicao: quase tres anos depois, a marca de dez por cento e batida.
+A equipe vencedora chamava-se BellKor's Pragmatic Chaos, e nao era uma equipe: eram tres
+grupos que estavam competindo separados e se juntaram, de tres paises diferentes. Nao dar
+ficha de ninguem: os anos de nascimento nao sao publicos.
+
+Contar a coisa mais bonita do concurso, devagar, porque ninguem conhece: no placar publico,
+quem estava na frente era OUTRA equipe. Quando abriram a nota que valia, calculada num
+conjunto escondido, as duas equipes EMPATARAM. E o desempate estava escrito na regra desde o
+comeco: ganha quem enviou primeiro. A outra equipe tinha enviado VINTE MINUTOS depois.
+
+Dizer o que isso mostra, sem moral da historia: um milhao de dolares foi decidido por vinte
+minutos de relogio, e nao por precisao. E as duas solucoes eram, na pratica, igualmente boas.
+
+Dizer o que a solucao campea era por dentro: nao era um algoritmo. Era uma mistura de cento
+e sete algoritmos diferentes, combinados. Guardar esse numero, porque ele explica a tela
+seguinte.
+
+Fechar pedindo o Proximo pra ver o que a empresa fez com isso.
+
+TELA 7 - DOIS MIL E DOZE: A EMPRESA CONTA O QUE FEZ
+
+Dizer a virada da tela logo: tres anos depois, num texto tecnico publicado pela propria
+Netflix, os engenheiros contaram uma coisa que quase ninguem esperava. A mistura de cento e
+sete algoritmos que ganhou o milhao NUNCA foi colocada pra rodar.
+
+DIZER IMEDIATAMENTE O QUE FOI USADO, porque a lenda de que "nao usaram nada" e falsa: as
+duas pecas do primeiro ano, a fatoracao e a rede neural, essas SIM foram reescritas pra
+aguentar escala e ficaram anos no sistema. O que ficou na prateleira foi so a mistura
+campea.
+
+Dar as tres razoes, na ordem em que eles deram: primeira, o ganho a mais nao pagava o
+trabalho de engenharia pra por aquilo de pe. Segunda, a escala tinha mudado: os algoritmos
+foram feitos pra cem milhoes de notas, e a empresa ja tinha mais de cinco bilhoes. Terceira,
+e a mais interessante, o produto tinha mudado: de DVD pelo correio pra streaming. Prever a
+NOTA que voce daria deixou de ser o problema. O problema virou prever o que voce vai ASSISTIR
+agora.
+
+Dizer a frase que muda o episodio: e essa terceira razao que empurra a recomendacao pro
+resto da rede. Porque prever consumo, e nao nota, e uma coisa que qualquer servico pode
+fazer sem pedir nada pra voce.
+
+Dizer a licao de hardware e software: um algoritmo melhor no papel pode ser inutil na
+maquina real. E a maquina real muda mais rapido que o concurso.
+
+Fechar pedindo o Proximo pra ver a mesma ideia chegar no feed.
+
+TELA 8 - DOIS MIL E ONZE: O FEED PARA DE SEGUIR REGRA
+
+Retomar de onde o episodio anterior parou, sem repetir: a regra de tres fatores que o
+Facebook mostrou em dois mil e dez era escrita a mao.
+
+FICHA: Mark Zuckerberg, nascido em mil novecentos e oitenta e quatro, tinha vinte e sete
+anos; vivo em dois mil e vinte e seis.
+
+Contar a troca, com o cuidado da fonte: por volta de dois mil e onze a regra escrita a mao
+sai e entra um sistema que aprende. Em dois mil e treze, um engenheiro de ranqueamento da
+casa disse em entrevista que o modelo tinha ate cem mil pesos diferentes. Dizer com cuidado:
+nao existe anuncio oficial com data pra essa troca, e o que se sabe vem dessa entrevista.
+Dizer "por volta de dois mil e onze", e nao cravar.
+
+Explicar a diferenca com uma frase so, que e o que importa: numa regra escrita a mao, uma
+pessoa decide que comentario vale mais que curtida. Num sistema que aprende, ninguem decide:
+a maquina olha o que voce fez com as coisas que ja te mostraram e ajusta os pesos sozinha.
+
+Dizer o que isso significa pra quem esta do outro lado: a partir dai, nem quem construiu o
+sistema consegue dizer em uma frase por que aquele post apareceu pra voce. Nao por segredo:
+porque a resposta sao cem mil numeros.
+
+Dizer a licao de hardware e software: guardar cem mil pesos e reajustar eles a cada
+interacao de um bilhao de pessoas so e possivel com galpao de maquina. O feed que aprende e
+filho direto da infraestrutura da tela dez do episodio passado.
+
+Fechar pedindo o Proximo pra ver a primeira critica publica aparecer.
+
+TELA 9 - MARCO DE DOIS MIL E ONZE: A BOLHA DE FILTRO
+
+Contar a pessoa e o momento: em marco de dois mil e onze, num palestra que virou muito
+conhecida, e depois num livro, Eli Pariser deu nome a um incomodo: se cada pessoa ve uma
+selecao feita sob medida pra ela, cada uma passa a viver num recorte diferente do mundo. Ele
+chamou isso de bolha de filtro.
+
+FICHA: Eli Pariser, nascido em mil novecentos e oitenta, tinha trinta anos; vivo em dois mil
+e vinte e seis.
+
+⚠️ SEPARAR AFIRMACAO DE PESQUISA, COM TODAS AS LETRAS, PORQUE ESTA E A TELA MAIS FACIL DE
+ERRAR: "bolha de filtro" e um conceito de debate publico, nao um resultado de laboratorio. E
+o numero mais repetido do mundo sobre isso, o de que a maior parte do que se assiste na
+internet vem de recomendacao, saiu de uma declaracao de um executivo num evento, sem
+metodologia publicada.
+
+Dizer o que a pesquisa achou, e ela veio muito depois: estudos grandes, de dois mil e vinte
+e um pra ca, mediram e encontraram o contrario do senso comum: a maior parte de quem chega
+em conteudo extremo chega por busca direta, por inscricao em canal e por link de fora, e nao
+pela recomendacao.
+
+DIZER O CUIDADO, QUE E A PARTE HONESTA: esses estudos sao dez anos posteriores ao que este
+episodio conta, e mediram um sistema que ja tinha mudado. Eles nao servem pra afirmar nada
+sobre o sistema de dois mil e onze. O que da pra dizer com seguranca e o que foi decidido, e
+nao qual foi o efeito nas pessoas.
+
+Dizer a licao de hardware e software: a maquina passou a decidir o que bilhoes de pessoas
+veem antes de existir qualquer jeito de medir o efeito disso. A engenharia chegou primeiro
+que a medida.
+
+Fechar pedindo o Proximo pra ver uma decisao que mudou tudo, e que nao foi tecnica.
+
+TELA 10 - DOIS MIL E DOZE: TROCAR O QUE SE MEDE
+
+Contar a decisao: em agosto de dois mil e doze o YouTube anuncia que para de otimizar
+CLIQUE e passa a otimizar TEMPO ASSISTIDO. Em outubro a mesma troca chega na busca de
+videos.
+
+FICHA: Salar Kamangar, nascido em mil novecentos e setenta e sete, tinha trinta e quatro ou
+trinta e cinco anos; vivo em dois mil e vinte e seis. (O dia do aniversario dele nao e
+publico: dizer as duas idades assim mesmo, sem explicar.)
+
+Dizer o diagnostico deles, quase com as palavras deles: o sistema antigo premiava video bom
+em atrair clique, e nao video que segurava quem assistia. Ou seja, premiava a capa, e nao o
+filme.
+
+Usar a analogia do caixa do mercado, curta, aqui.
+
+Dizer por que isso e uma mudanca TECNICA e nao so de gestao, porque e o ponto da tela: o que
+mudou foi o ROTULO que a maquina tenta acertar. Clique e sim ou nao, e e barato de enganar
+com uma capa chamativa. Tempo assistido e um numero continuo, e mede uma coisa que so
+acontece DEPOIS do clique. Trocar o rotulo obriga a reescrever como o modelo e treinado.
+
+Dizer a licao de hardware e software: nenhuma peca de hardware mudou nesse dia, e nenhum
+algoritmo novo foi inventado. Mudou o que se mede, e isso mudou o comportamento do sistema
+inteiro. Software e o que voce manda ele perseguir.
+
+Fechar pedindo o Proximo pra ver o motor ser trocado, quatro anos depois.
+
+TELA 11 - SETEMBRO DE DOIS MIL E DEZESSEIS: A REDE NEURAL ASSUME
+
+Contar o marco: em setembro de dois mil e dezesseis, tres engenheiros do Google publicam
+num congresso como a recomendacao do YouTube passou a ser feita por rede neural profunda.
+Nenhum dos tres tem ano de nascimento publico, e por isso nao tem ficha: sao Paul Covington,
+Jay Adams e Emre Sargin.
+
+Dizer quem estava por perto, com ficha, porque sao dois nomes que a serie ja conhece:
+
+FICHA: Susan Wojcicki, nascida em mil novecentos e sessenta e oito, tinha quarenta e cinco
+anos quando assumiu o YouTube em dois mil e catorze; morreu em dois mil e vinte e quatro.
+
+FICHA: Jeff Dean, nascido em mil novecentos e sessenta e oito, tinha quarenta e oito anos;
+vivo em dois mil e vinte e seis. Dizer que a base de software que roda isso e do grupo dele.
+
+Explicar a arquitetura em duas frases, porque e simples e bonita: sao duas redes, em funil.
+A primeira pega o acervo inteiro, milhoes de videos, e escolhe umas CENTENAS que talvez
+interessem a voce. A segunda pega essas centenas e ordena as DEZENAS que vao aparecer na
+tela. A primeira e barata e grosseira; a segunda e cara e caprichada. Ninguem consegue rodar
+a cara em milhoes de videos.
+
+Dizer o que ela aprende COM O QUE, porque e a tese do episodio: ela nao e treinada em nota
+que alguem deu, nem em curtida. E treinada no que voce assistiu ate o fim. No rastro.
+
+Dar a escala, devagar: mais de um bilhao de pessoas, cerca de um bilhao de numeros
+ajustaveis, e centenas de bilhoes de exemplos de treino.
+
+⚠️ DIZER O QUE NAO DA PRA AFIRMAR, porque e mais interessante que o exagero: NAO foi a
+primeira rede neural em producao, e nem a primeira em escala de bilhoes. A propria rede
+neural da Netflix, da tela quatro, ja rodava em producao desde dois mil e oito. E o
+reconhecimento de voz do Google, em dois mil e doze, e a busca do Google, em dois mil e
+quinze, ja usavam rede neural pra bilhoes de pessoas. O que ESTE trabalho tem de especial e
+outra coisa: foram os proprios engenheiros publicando, em detalhe, como uma recomendacao por
+rede neural funciona nessa escala. Ate ali, isso era segredo de casa.
+
+Dizer o detalhe que fecha o arco com a etapa 9: o trabalho fala o tempo todo em economizar
+processador. Nao menciona chip especial nenhum. A conta ainda estava sendo espremida pra
+caber.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e dezesseis, com a recomendacao feita por rede neural,
+treinada no rastro de mais de um bilhao de pessoas.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: Hastings soltou
+o dado no mundo e deixou qualquer um tentar. Quem competia sob o apelido Simon Funk publicou
+o metodo de graca no meio da disputa. Hinton trouxe a rede neural pra dentro do problema,
+cinco anos antes de ela virar assunto. Dois pesquisadores mostraram que o dado nao era
+anonimo. Tres grupos se juntaram e ganharam por vinte minutos de relogio. Os engenheiros da
+Netflix decidiram nao usar o campeao, e explicaram por que. Zuckerberg trocou a regra
+escrita a mao por um sistema que aprende. Pariser deu nome ao incomodo. Kamangar trocou o
+que a maquina mede. Wojcicki estava no comando quando o motor foi trocado, e Jeff Dean fez a
+base que rodava isso. Ninguem planejou o conjunto.
+
+DIZER UMA COISA SOBRE AS FICHAS, em uma frase: e vale notar que boa parte de quem escreveu
+essas pecas nao tem nem data de nascimento publica. Quem tem ficha nesta historia sao os
+donos das empresas.
+
+Dizer a licao da ETAPA INTEIRA, em tres frases: a rede abriu pro comercio e o dinheiro
+chegou antes do uso, e deixou cano enterrado. Depois veio um jeito de ordenar a web e cobrar
+por isso, que obrigou a maquina a comecar a adivinhar gente. Depois gente demais publicando
+matou a ordem de hora. E no fim quem escolhe o que voce ve nao e mais uma regra que alguem
+escreveu: e um modelo que aprendeu com o que voce fez.
+
+Deixar a pergunta no ar, sem responder: essa maquina aprendeu a adivinhar o que voce quer
+sem voce pedir nada. Ela le o seu rastro. Mas em nenhum momento voce conversa com ela. E se
+desse pra simplesmente pedir, com as suas palavras, e a maquina responder?
+
+Fechar sem pedir Proximo: esta e a ultima tela deste episodio.

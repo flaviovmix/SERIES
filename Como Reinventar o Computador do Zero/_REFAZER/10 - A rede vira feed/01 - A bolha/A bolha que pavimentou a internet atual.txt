@@ -1,0 +1,7 @@
+Titulo: A bolha que pavimentou a internet atual
+Notebook: 10-01-A bolha
+
+Descricao:
+A Bolha é o episódio inaugural da fase "A Rede Vira Feed" na série Como Reinventar o Computador do Zero, abrangendo o período entre 1995 e 2002. O conteúdo detalha como o otimismo excessivo do mercado financeiro impulsionou o crescimento da internet, culminando na ascensão e queda de empresas icônicas e na expansão massiva da infraestrutura de fibra óptica. A narrativa destaca que, embora muitos investidores tenham quebrado, a construção antecipada desse hardware permitiu o surgimento de serviços digitais modernos anos depois. O roteiro utiliza fichas biográficas de figuras centrais e uma analogia com estradas para explicar como a promessa do software forçou a evolução física da rede. Por fim, o material estabelece as bases para discutir como a organização da informação e a monetização de acessos se tornaram os próximos grandes desafios tecnológicos.
+
+Link: https://notebook.google.com/notebook/6d584fff-d262-4af4-b116-f1f604b4a234

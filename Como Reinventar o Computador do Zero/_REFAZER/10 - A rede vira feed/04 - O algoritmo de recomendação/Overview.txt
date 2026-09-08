@@ -1,0 +1,62 @@
+O ALGORITMO DE RECOMENDACAO - CONTEXTO
+======================================
+Documento curto de contexto para uso com NotebookLM.
+
+Quarto e ultimo episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como Reinventar
+o Computador do Zero. A serie reconstroi o computador do zero, do abaco em diante, uma peca
+por episodio. Este episodio cobre de 2006 a 2016, em ORDEM CRONOLOGICA, e conta a historia
+PELAS PESSOAS, com nome e ficha, usando cada passo pra mostrar como o hardware e o software
+melhoram um empurrando o outro.
+
+Por que este episodio existe: o anterior terminou com o feed escolhendo o que mostrar por
+uma regra de tres fatores escrita a mao. Este conta o que acontece quando ninguem escreve a
+regra e a maquina descobre sozinha.
+
+A TESE: esta foi a primeira maquina que aprendeu e que mexeu com todo mundo. Nao foi a que
+conversa. E o que ela aprendeu nao veio de nota que alguem deu de proposito: veio do RASTRO
+que as pessoas deixaram sem perceber.
+
+O fio, em doze passos:
+
+1. E se ninguem escrever a regra? O intervalo 2006-2016, sobreposto com a etapa 9 e com os
+   episodios anteriores desta etapa.
+2. 02/10/2006: Reed Hastings anuncia um premio de 1 milhao de dolares pra quem melhorar em
+   10% o sistema de recomendacao da Netflix. A base: 100 milhoes de notas, 480 mil pessoas,
+   17.770 filmes. A Netflix ainda era DVD pelo correio; o streaming so comeca em 2007.
+3. 11/12/2006: quem competia sob o apelido Simon Funk publica o metodo de graca, no meio da
+   disputa. A fatoracao de matrizes: a tabela quase toda vazia trocada por duas tabelas
+   magras, e os fatores latentes que a maquina inventa sozinha.
+4. 2007: a segunda peca e uma REDE NEURAL, num paper de Toronto com Geoffrey Hinton, cinco
+   anos antes de ele virar assunto na etapa 9. Essas duas pecas ganham o premio de progresso
+   e sao as unicas que a Netflix realmente poe pra rodar.
+5. O dado "anonimo" que nao era anonimo: com 8 notas e datas aproximadas dava pra
+   identificar 99% dos registros. Tirar o nome nao e anonimizar. O segundo premio e
+   cancelado em marco de 2010.
+6. 26/07/2009: a vitoria. Tres grupos que se juntaram. No placar publico, a outra equipe
+   estava na frente; no conjunto que valia, EMPATARAM, e o desempate foi por ordem de
+   chegada: 20 minutos. A solucao campea era uma mistura de 107 algoritmos.
+7. 2012: a propria Netflix conta que NAO usou a mistura campea, e explica por que: o ganho
+   nao pagava o esforco, a escala tinha mudado (100 milhoes contra mais de 5 bilhoes de
+   notas), e o produto tinha virado streaming, entao prever NOTA deixou de ser o problema.
+8. Por volta de 2011: o feed do Facebook troca a regra escrita a mao por um sistema que
+   aprende, com ate 100 mil pesos. Nem quem construiu explica em uma frase por que um post
+   apareceu.
+9. Marco de 2011: Eli Pariser da nome ao incomodo, a bolha de filtro. ⚠️ Separar o que e
+   afirmacao publica do que e pesquisa: a pesquisa grande e de 2021 pra ca e aponta o
+   contrario do senso comum, mas mediu outro sistema, dez anos depois.
+10. 2012: o YouTube troca CLIQUE por TEMPO ASSISTIDO. Nenhum hardware mudou e nenhum
+   algoritmo novo foi inventado: mudou o que se mede, e isso mudou o sistema inteiro.
+11. Setembro de 2016: tres engenheiros do Google publicam como a recomendacao virou rede
+   neural profunda. Duas redes em funil: uma escolhe centenas entre milhoes, a outra ordena
+   as dezenas que aparecem. Treinada no que a pessoa assistiu ate o fim. Mais de 1 bilhao de
+   pessoas, cerca de 1 bilhao de numeros ajustaveis.
+12. Onde para: 2016. Balanco das pessoas, a licao da etapa inteira, e a pergunta que abre a
+   proxima: essa maquina adivinha o que voce quer sem voce pedir. E se desse pra pedir, com
+   as suas palavras?
+
+CUIDADOS: a Netflix USOU parte do premio (a fatoracao e a rede neural do primeiro ano); so a
+mistura campea de 107 algoritmos ficou na prateleira. O trabalho de 2016 NAO foi a primeira
+rede neural em producao nem a primeira em escala de bilhoes. Varias pessoas centrais nao tem
+ano de nascimento publico e entram sem ficha.
+
+Use este contexto apenas como apoio.

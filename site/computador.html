@@ -4,12 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Como Reinventar o Computador do Zero</title>
-<meta name="description" content="Uma série em 9 etapas sobre como pedras que a gente move viraram máquinas que conversam: do ábaco ao Transformer, cada episódio com áudio e animação.">
+<meta name="description" content="Uma série em 10 etapas sobre como pedras que a gente move viraram máquinas que conversam: do ábaco ao Transformer, cada episódio com áudio e animação.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="css/cabecalho.css">
 <link rel="stylesheet" href="css/secao.css">
 <link rel="stylesheet" href="css/capitulo.css">
@@ -17,10 +18,15 @@
 
 <body>
 
+<header class="barra">
+  <button class="barra__botao" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
+  <a class="barra__marca" href="index.html">Séries</a>
+</header>
+
 <div class="wrap">
 
   <header class="head">
-    <p class="eyebrow"><a href="index.html">&larr; Séries</a> &middot; Série em 9 etapas &middot; do ábaco ao Transformer</p>
+    <p class="eyebrow"><a href="index.html">&larr; Séries</a> &middot; Série em 10 etapas &middot; do ábaco ao Transformer</p>
     <h1>Como Reinventar o Computador do Zero</h1>
     <p class="lede">Como <strong>pedras que a gente move</strong> viraram <strong>máquinas que conversam</strong>? A resposta começa num risco no osso e vem uma peça de cada vez. Cada episódio traz uma, com áudio pra ouvir e uma animação pra mexer.</p>
     <div class="bars" role="presentation"></div>
@@ -28,7 +34,7 @@
 
   <section>
     <header class="secao">
-      <p class="secao__contexto">A história em nove etapas</p>
+      <p class="secao__contexto">A história em dez etapas</p>
       <h2>Cada etapa acrescenta uma peça.</h2>
       <p class="secao__nota">Contar, instrumento, engrenagem, eletricidade, lógica, a máquina que liga, miniaturização, conexão, aprendizado. Nenhuma etapa faz sentido sozinha, e nenhuma pula a anterior.</p>
     </header>
@@ -134,29 +140,43 @@
       </article>
 
       <article class="cap">
-        <div class="cap__arte" aria-hidden="true"><span class="cap__num">08</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/01%20-%20O%20computador%20chega%20em%20casa/img/altair-real.jpg" alt="" loading="lazy"><span class="cap__num">08</span></div>
         <div class="cap__corpo">
           <p class="cap__periodo">1975 &ndash; 1995</p>
           <h3>Da sala pro mundo</h3>
           <p class="cap__frase">Entra em casa e depois vira rede.</p>
           <p class="cap__resumo">O computador deixa de ser equipamento de instituição e vira objeto de casa. Depois deixa de ser objeto sozinho e vira rede.</p>
           <div class="cap__pe">
-            <span class="cap__eps">2 episódios</span>
-            <span class="cap__selo">em produção</span>
+            <span class="cap__eps">3 episódios</span>
+            <a class="cap__botao" href="etapas/etapa-08.html" aria-label="Ver os episódios da etapa Da sala pro mundo">Ver episódios</a>
           </div>
         </div>
       </article>
 
       <article class="cap">
-        <div class="cap__arte" aria-hidden="true"><span class="cap__num">09</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/09%20-%20A%20m%C3%A1quina%20que%20aprende/01%20-%20A%20corrida%20do%20processador/img/pentium-die-real.jpg" alt="" loading="lazy"><span class="cap__num">09</span></div>
         <div class="cap__corpo">
-          <p class="cap__periodo">1950 &ndash; 2017</p>
+          <p class="cap__periodo">1993 &ndash; 2017</p>
           <h3>A máquina que aprende</h3>
-          <p class="cap__frase">O fecho do arco.</p>
-          <p class="cap__resumo">A última peça: em vez de instruir a máquina passo a passo, deixar ela ajustar os próprios números até acertar. Fecha o arco aberto no piloto.</p>
+          <p class="cap__frase">Primeiro as peças correm. Depois o programa deixa de ser escrito.</p>
+          <p class="cap__resumo">A máquina já está em toda casa. O processador corre e bate na parede do calor, a placa de vídeo feita pra jogo vira a peça da era seguinte, uma ideia de 1958 sai da gaveta, e em 2017 o programa passa a ser achado, não escrito.</p>
           <div class="cap__pe">
-            <span class="cap__eps">3 episódios</span>
-            <span class="cap__selo">em produção</span>
+            <span class="cap__eps">4 episódios</span>
+            <a class="cap__botao" href="etapas/etapa-09.html" aria-label="Ver os episódios da etapa A máquina que aprende">Ver episódios</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/10%20-%20A%20rede%20vira%20feed/01%20-%20A%20bolha/img/estrada-real.jpg" alt="" loading="lazy"><span class="cap__num">10</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1995 &ndash; 2016</p>
+          <h3>A rede vira feed</h3>
+          <p class="cap__frase">Primeiro virou dinheiro, depois virou gente, no fim virou escolha.</p>
+          <p class="cap__resumo">A rede abriu pro comércio e o dinheiro chegou antes do uso: a bolha estourou e deixou fibra barata enterrada. Depois veio um jeito de ordenar a web e cobrar por isso, gente demais publicando ao mesmo tempo, e um modelo escolhendo o que cada um vê.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">4 episódios</span>
+            <a class="cap__botao" href="etapas/etapa-10.html" aria-label="Ver os episódios da etapa A rede vira feed">Ver episódios</a>
           </div>
         </div>
       </article>
@@ -180,7 +200,7 @@
           <p class="cap__frase">O "como funciona", sem a história.</p>
           <p class="cap__resumo">Volt, ampère e watt explicados como água num prédio; o ímã por dentro; e a dupla que vem aí: o sistema decimal e o binário. Todo extra termina dizendo onde a própria analogia quebra.</p>
           <div class="cap__pe">
-            <span class="cap__eps">8 extras</span>
+            <span class="cap__eps">18 extras</span>
             <a class="cap__botao" href="extras/index.html" aria-label="Ver os extras da série">Ver extras</a>
           </div>
         </div>
@@ -189,6 +209,8 @@
   </section>
 
 </div>
+
+<script src="js/menu.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,352 @@
+# Transcricao automatica (faster-whisper small) - 16.0 min
+# Fonte: A bolha que pavimentou a internet atual.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Abulha. O episódio passado fechou o arco da máquina, do hábaco ao programa que achado.
+[00:05] Agora a série volta pra contar a outra linha da mesma história, a da rede.
+[00:09] Exatamente. E o nosso marco inicial é 1995.
+[00:13] Aham.
+[00:14] Esse é o momento exato em que a internet sai daquele ambiente restrito, sabe, das universidades,
+[00:19] dos laboratórios militares, e aí ela abre as portas de vez pro comércio.
+[00:24] É, o grande catalisador disso foi o navegador, né?
+[00:26] Isso. Ele tinha acabado de colocar a web na tela de qualquer pessoa que tivesse um computador em casa.
+[00:32] É, e o foco da nossa conversa hoje é entender o que rolou quando o dinheiro, tipo,
+[00:36] volumes absurdos de dinheiro, descobriu essa rede aberta.
+[00:40] Nossa, e foi muito dinheiro mesmo.
+[00:42] Pois é, o intervalo de tempo que a gente vai cobrir vai de 1995 a 2002.
+[00:47] São só seis anos, mas o mercado jogou uma verdadeira fortuna na internet
+[00:51] tentando adivinhar o futuro.
+[00:52] E a matemática da coisa não encontrou respaldo no mundo físico, né?
+[00:56] A conta não fechou e muita coisa quebrou.
+[00:59] Sim, e a lente que a gente vai usar pra olhar pra isso é bem específica.
+[01:03] O assunto aqui não é falar de quem enriqueceu da noite pro dia,
+[01:06] ou fazer piada com quem perdeu tudo.
+[01:08] Com certeza, o foco é totalmente no que aquele dinheiro construiu,
+[01:12] no que ele deixou no chão, sabe?
+[01:14] Mesmo que ninguém tivesse planejado esse resultado no fim das contas.
+[01:18] Tipo, alguém tem uma visão super otimista
+[01:21] e resolve construir uma estrada de 10 pistas
+[01:24] pra uma cidade que hoje só tem mil carros.
+[01:26] Uma obra imensa pra pouquíssimo tráfego.
+[01:28] Exato. Obviamente, quem pagou a obra vai quebrar.
+[01:31] Não tem carro suficiente pra pagar pedágio e bancar o custo.
+[01:35] Mas a estrada não some no ar, ela fica lá.
+[01:38] Asfaltada e vazia.
+[01:40] Isso. E aí, 20 anos depois, a cidade cresce,
+[01:43] passa a ter 1 milhão de carros
+[01:45] e começa a usar toda aquela obra que já estava pronta por quase nada.
+[01:49] A bolha da internet é tipo essa obra da estrada.
+[01:52] E a fibra ótica é o asfalto, né?
+[01:54] Exatamente.
+[01:55] E a dinâmica por trás disso segue aquela mesma lógica que a gente já vinha vendo.
+[01:59] O hardware e o software um forçando o outro a avançar.
+[02:02] Só que dessa vez...
+[02:03] A ordem natural se inverteu, né?
+[02:05] Inverteu de um jeito muito peculiar.
+[02:07] Bom, antes de avançar, um aviso rápido.
+[02:10] A explicação de hoje acompanha uma página com 12 telas.
+[02:13] Quem está só escutando a gente no áudio pode acompanhar normal, não muda nada.
+[02:17] Mas para quem está com a página aberta, vira a tela no momento em que eu pedi.
+[02:21] Então, para a gente ver o exato dia em que a bolsa descobriu a internet, aperte o próximo.
+[02:26] Vamos lá para o dia 9 de agosto de 1995.
+[02:31] A empresa da vez é a Netscape.
+[02:34] Eles tinham só 16 meses de vida.
+[02:36] O que no mundo corporativo tradicional é praticamente um recém-nascido.
+[02:40] Não é nada?
+[02:41] É, não é nada.
+[02:42] A empresa foi montada pelo Jim Clark.
+[02:44] Ele já era um veterano do Vale do Silício, tinha fundado a Silicon Graphics, aquela das placas de vídeo caríssimas.
+[02:51] Jim Clark, nascido em 1944, tinha 51 anos, vive em 2026.
+[02:58] Aham.
+[02:59] E o outro fundador era o Mark Andreessen.
+[03:02] Ele representava bem aquela nova geração.
+[03:05] Aos 22 anos, ele escreveu o Mosaic, o primeiro navegador com interface gráfico intuitiva.
+[03:11] Andreessen, nascido em 1971, tinha 24 anos, vive em 2026.
+[03:17] Então, nesse dia 9 de agosto, a Netscape faz a sua abertura de capital na bolsa.
+[03:23] A expectativa já estava bem alta.
+[03:25] E eles até dobraram o preço, né?
+[03:27] Sim, na véspera o preço por ação foi ajustado para 28 dólares.
+[03:32] Mas quando o sino toca e o mercado abre, o negócio sai do controle.
+[03:36] A ação dispara para 71 dólares, muito rápido.
+[03:39] Caramba.
+[03:40] E termina aquele primeiro dia valendo 58 dólares e 25 centavos.
+[03:44] Ou seja, no fim do dia, uma empresa de 16 meses estava avaliada em quase 2,9 bilhões de dólares.
+[03:51] Exato.
+[03:52] Mas o mais doido não era a idade da empresa, era um modelo de negócios.
+[03:56] A Netscape simplesmente não dava lucro.
+[03:58] O produto deles, o navegador, era de graça.
+[04:01] Isso quebrou todos os paradigmas.
+[04:03] A Bolsa de Valores comprou a ideia da base de usuários, não à receita.
+[04:07] O software estava pronto, criou usuário e o mercado comprou isso.
+[04:10] Foi a primeira vez que o dinheiro olhou para a atenção das pessoas e não para o balanço contável.
+[04:15] Bom, se a Netscape fez isso acontecer, o que o mercado aprendeu no fim das contas?
+[04:21] Para ver qual era a nova regra do jogo, aperte o próximo.
+[04:24] A regra nova que o mercado engoliu entre 1996 e 1998 era clara.
+[04:31] Crescer primeiro, cobrar depois.
+[04:33] Dominação de território a qualquer custo.
+[04:35] Exatamente.
+[04:36] O mercado começou a recompensar isso de forma absurda.
+[04:39] Por exemplo, o Yahoo, que na época era só um diretório de links feito à mão para o pessoal,
+[04:44] faz a abertura de capital em 1996 e explode.
+[04:48] Aí logo depois vem a Amazon.
+[04:50] Eles faziam só venda de livros no começo e a abertura de capital foi em 15 de maio de 1997.
+[04:57] Jeff Bezos, nascido em 1964, tinha 33 anos, vivo em 2026.
+[05:04] E o ritmo não diminuía.
+[05:06] O eBay faz a abertura de capital deles em 24 de setembro de 1998.
+[05:12] Pierre Romidiard, nascido em 1967, tinha 31 anos, vive em 2026.
+[05:19] Mas tinha gente grauda vendo perigo nisso, né?
+[05:22] Ah, sim.
+[05:23] Em dezembro de 1996, o Banco Central Americano resolve dar um aviso claro.
+[05:28] Alan Greenspan, nascido em 1926, tinha 70 anos, morreu em 2026.
+[05:35] Ele alertou sobre exuberância irracional do mercado.
+[05:39] Mas ninguém ouveu pelo jeito.
+[05:40] O dinheiro já estava apostando muito além.
+[05:42] O cano de internet das casas ainda era super estreito.
+[05:45] As pessoas usavam linha telefônica para conectar.
+[05:48] Mas o mercado já apostava no mundo todo de banda larga.
+[05:51] E apostava com força.
+[05:53] E já que não tinha lucro para basear essas apostas,
+[05:56] alguém precisava dizer quanto essas empresas valiam, certo?
+[06:00] Para entender quem mediu tudo isso, aperte o próximo.
+[06:04] É aí que entram os analistas.
+[06:06] Eles eram as pessoas que ditavam as regras nesse novo jogo.
+[06:10] E duas seguras ganharam muito poder.
+[06:13] A primeira foi a Mary Meeker.
+[06:15] Ela fez um relatório gigante em fevereiro de 1996 chamado The Internet Reports.
+[06:21] Mary Meeker, nascida em 1959, tinha 36 anos, viva em 2026.
+[06:28] O outro nome de peso foi o Henry Blodgett.
+[06:31] Ele previo em dezembro de 1998 que a Amazon chegaria a 400 dólares por ação.
+[06:38] E chegou.
+[06:39] Henry Blodgett, nascido em 1966, tinha 32 anos, vivo em 2026.
+[06:46] Mas tinha um problema bem sério nessa estrutura, né?
+[06:49] E anos depois, a conta chegou.
+[06:51] Em 2003, o Blodgett foi proibido de atuar o mercado.
+[06:55] Eles descobriram que ele recomendava as ações daquelas empresas de tecnologia para o público,
+[07:00] mas detonava elas em mensagens internas lá no banco.
+[07:04] Quer dizer, a medida do valor estava toda quebrada.
+[07:07] Simples assim.
+[07:08] Completamente corrompida.
+[07:09] Isso abriu a porta para um exagero gigante.
+[07:12] Para ver o auge dessa loucura, aperte o próximo.
+[07:15] Em 1999, 476 empresas abriram o capital.
+[07:20] Em 2000, foram 380 empresas.
+[07:23] O mercado financeiro perdeu a noção de limite.
+[07:26] E o retrato mais claro disso rolou em janeiro de 2000, naquele intervalo do Super Bowl.
+[07:31] Foram 14 empresas.com comprando anúncio.
+[07:34] 30 segundos lá custavam 2 milhões e 200 mil dólares.
+[07:38] É um dinheiro absurdo para empresas que mal existiam.
+[07:41] Pois é.
+[07:42] E o grande símbolo desse delílio logístico foi a pets.com.
+[07:47] A ideia deles era vender comida de bicho online,
+[07:50] só que o frete para mandar um saco gigante de ração cruzando o país
+[07:54] era mais caro que o próprio produto.
+[07:56] E a conta de entrega não fecha assim.
+[07:58] Julie Wayne Wright nascinda em 1958 tinha 41 anos, viva em 2026.
+[08:05] Ela estava no comando e precisava escalar a empresa.
+[08:08] Mas o software até prometia entregar tudo fácil,
+[08:11] só que o mundo real, o caminhão, a caixa, a gasolina, isso não ficou mais barato.
+[08:16] A infraestrutura física não mudou só porque a internet existia.
+[08:19] E falando em físico, para a gente ver o hardware que foi enterrado
+[08:23] por causa do delívio do software, aperte o próximo.
+[08:26] Toda essa empolgação gerou um pânico nas empresas de infra.
+[08:29] Se todo mundo fosse usar rede desse jeito e a faltar cano,
+[08:33] faltar espaço para os dados passarem
+[08:35] e aí começou uma corrida insana para enterrar fibra ótica.
+[08:39] Só para ficar claro, a fibra ótica é tipo um fio de vidro bem fino, né?
+[08:44] Ele leva luz de um lado para o outro.
+[08:46] E essa luz carrega as informações de uma velocidade gigante.
+[08:49] Isso mesmo.
+[08:51] E o cara que mais liderou essa correria de comprar empresa
+[08:54] e enterrar cabo foi o CEO da Worldcom.
+[08:57] Bernard Ebers, nascido em 1941, tinha 58 anos, morreu em 2020.
+[09:04] Ele fez estudo comprando acréditos, se endividando horrores.
+[09:08] E o resultado disso?
+[09:10] Eles enterraram dezenas de milhões de quilômetros de fibra.
+[09:14] Só que entre 85 a 95% desse cabo todo, nunca nem foi aceso.
+[09:19] Foi a tal da fibra apagada.
+[09:22] É muito louco pensar nisso.
+[09:24] Essa é a única parte inteiramente física de toda a bolha.
+[09:28] É a primeira vez na história da computação
+[09:30] que o software prometeu um uso que não existia
+[09:33] e o hardware teve que ser construído na frente, esperando o futuro chegar.
+[09:37] E isso deu muito ruim para quem assinou o cheque.
+[09:40] Para ver o momento exato em que o mercado despencou, aperte o próximo.
+[09:43] Tudo combina no dia 10 de março de 2000.
+[09:46] A NASDAQ, que é a Bolsa das Empresas de Tecnologia,
+[09:49] bate um recorde impressionante.
+[09:52] 5.048 pontos.
+[09:55] O pico.
+[09:56] O topo absoluto.
+[09:57] E logo depois, despenca.
+[09:59] O fundo do poço chegou em outubro de 2002.
+[10:03] O índice foi lá para baixo, marcou 1114 pontos.
+[10:07] Isso dá uma queda de 78%.
+[10:10] 5 trilhões de dólares simplesmente evaporaram do mercado.
+[10:14] Nossa, e por que caiu tão rápido?
+[10:16] Porque aquele preço inflado
+[10:18] dependia de sempre ter dinheiro novo entrando, sabe?
+[10:21] Quando a taxa de juros mexeu
+[10:23] e o próximo comprador não apareceu, tudo ruiu.
+[10:26] Não tinha lucro para segurar a operação.
+[10:28] E o detalhe é, nada técnico quebrou.
+[10:31] A rede continuou funcionando.
+[10:33] Os canos intactos.
+[10:34] O que quebrou foi só a matemática mesmo.
+[10:36] A realidade venceu.
+[10:38] Para ver o estrago que isso fez das empresas do mundo real,
+[10:41] aperte o próximo.
+[10:42] A demolição foi em sério.
+[10:44] A Bu.com, que tentava rodar a animação pesada
+[10:46] em conexão de escada, queimou o dinheiro e sumiu.
+[10:49] A Pets.com durou apenas 268 dias
+[10:52] depois da abertura de capital.
+[10:54] A Cosmo, que entregava fita de vídeo e sorvete
+[10:57] na casa das pessoas sem cobra-frete,
+[10:59] faliu em 2001.
+[11:01] A Webvan também torrou centenas de milhões em galpões
+[11:05] e quebrou.
+[11:06] Para você ter noção do volume,
+[11:07] 210 empresas de internet fecharam em 2000.
+[11:11] No ano seguinte, 537 empresas encerraram as atividades.
+[11:15] E a Word.com do Bernard Ebers
+[11:17] pediu falência revelando uma fraude contábil
+[11:19] de 11 bilhões de dólares.
+[11:21] 11 bilhões.
+[11:22] O que matou essa galera toda
+[11:24] não foi erro no código, né?
+[11:26] Foi o custo básico de entregar uma caixa na casa da pessoa
+[11:30] por menos do que a operação custava.
+[11:32] Bom, para descobrir quem saiu vivo dos destroços,
+[11:34] aperte o próximo.
+[11:36] No meio dessa carne e fiscina, algumas empresas se seguraram.
+[11:39] A Amazon, por exemplo, viu as ações derreter
+[11:42] e perderem 90% do valor.
+[11:44] Mas ela não faliu.
+[11:46] O Bezos tinha construído depósitos reais,
+[11:48] a logística existia
+[11:50] e o foco era o crescimento da estrutura
+[11:52] não só aparecer.
+[11:53] O eBay também se deu bem porque já dava lucro,
+[11:55] já que eles não precisavam ter estoque de produtos, né?
+[11:58] Exato.
+[11:59] Mas a grande surpresa foi uma empresa
+[12:01] que atravessou tudo isso quase em silêncio.
+[12:03] O Google.
+[12:04] Eles foram fundados em setembro de 1998,
+[12:07] bem no ódio do furacão.
+[12:09] Pois é.
+[12:10] Eles atravessaram a bolha inteira
+[12:13] sem abrir o capital na bolsa.
+[12:15] A abertura de capital deles
+[12:17] só foi acontecer em 2004.
+[12:20] Enquanto estava todo mundo gastando
+[12:22] com festa e outdoor,
+[12:24] o Google estava trancado
+[12:26] resolvendo um problema técnico real
+[12:28] de ciência da computação.
+[12:30] Não estavam focando em marketing.
+[12:32] Tavam focando em utilidade.
+[12:34] No fim, sobreviveu
+[12:36] quem tinha um uso de verdade
+[12:38] embaixo da promessa do software.
+[12:40] Para entender o que as empresas falidas
+[12:42] deixaram como herança para o futuro,
+[12:44] aperte o próximo.
+[12:46] A poeira baixou e a gente ficou
+[12:48] com três grandes legados, sabe?
+[12:50] O primeiro, lógico, é a fibra
+[12:52] enterrada e depois acabou sendo
+[12:54] vendida a preço de banana no mercado.
+[12:56] O asfalto da nossa estrada inicial.
+[12:58] Isso. E a segunda, eu não sei, foi em Uana.
+[13:00] Uma geração inteira de profissionais
+[13:02] aprendeu a montar redes,
+[13:04] otimizar servidores e fazer
+[13:06] comércio eletrônico. As empresas
+[13:08] sumiram, mas a habilidade deles ficou.
+[13:10] E a terceira foi o hábito.
+[13:12] Milhões de pessoas perderam medo
+[13:14] e aprenderam a buscar informação
+[13:16] e a comprar com cartão de crédito pela rede.
+[13:18] E a conexão de longo prazo
+[13:20] disso é incrível, porque foi justamente
+[13:22] aquele cano superlargo da bolha
+[13:24] que permitiu o que veio depois.
+[13:26] Coisas tipo
+[13:28] vídeo rodando online sem travar,
+[13:30] grandes mega stories entregando rápido
+[13:32] e a ideia de computação em nuvem
+[13:34] de guardar os seus arquivos
+[13:36] no servidor longe da sua casa.
+[13:38] Nossa, com certeza.
+[13:40] Quem pagou a conta de tudo isso
+[13:42] foi um investidor empolgado lá de 1999.
+[13:44] Mas tem um detalhe
+[13:46] de infraestrutura que é Bom.A.
+[13:48] Toda aquela fibra da bolha
+[13:50] baratiou as conexões
+[13:52] pesadas entre as cidades,
+[13:54] mas ela não resolveu o problema do último
+[13:56] quilômetro. Aquele cabo da rua
+[13:58] até dentro da casa das pessoas.
+[14:00] Isso foi outro desafio depois.
+[14:02] Perfeito. Pra gente amarrar essa lição
+[14:04] da estrada com o restante da série,
+[14:06] aperte o próximo.
+[14:08] Lembra de como a gente falou que nas outras épocas
+[14:10] o hardware abria o caminho
+[14:12] e aí o software avançava pra preencher o espaço?
+[14:14] A máquina sempre puxando a fila.
+[14:16] Aqui foi o inverso.
+[14:18] A promessa sedutora do software
+[14:20] forçou o mercado a construir
+[14:22] o hardware de rede muito antes
+[14:24] da hora certa. E aí a obra
+[14:26] foi feita cedo demais, quem pagou a conta
+[14:28] faliu, mas a infraestrutura ficou
+[14:30] lá prontinha pro próximo ciclo
+[14:32] aproveitar. Ficou lá parada
+[14:34] esperando o software
+[14:36] finalmente alcançar a capacidade dela.
+[14:38] Só que ter essa infraestrutura
+[14:40] pronta e de graça preparou
+[14:42] o terreno pra um problema totalmente
+[14:44] novo no internet.
+[14:46] Pra ver onde a gente para e qual é a grande
+[14:48] pergunta que fica, aperte o próximo.
+[14:50] A nossa história congela agora
+[14:52] no ano de 2002.
+[14:54] O fundo absoluto do poço.
+[14:56] Com a fibra toda no chão? Isso.
+[14:58] E o balanço das figuras que desenharam
+[15:00] esse cenário é muito claro.
+[15:02] O Clarke e o Andressen acenderam o pavio
+[15:04] no começo, o Bezos e o Omidiar
+[15:06] construíram utilidade que se sustentou.
+[15:08] O Greenspan até avisou,
+[15:10] mas não teve como frear.
+[15:12] A Mickey e o Blodget erraram totalmente
+[15:14] na medida do valor.
+[15:16] Webers enterrou a cano
+[15:18] pendurado em dívida e a Wainwright
+[15:20] fechou a operação que virou
+[15:22] o maior símbolo desse exagero todo.
+[15:24] A verdade nua e crua
+[15:26] que não dá pra esquecer, é que
+[15:28] a bolha construiu na frente do uso
+[15:30] e quebrou. Mas deixou o cano
+[15:32] que a década seguinte usou por
+[15:34] quase nada. É o alicerce
+[15:36] do que vem pela frente, né? Exato.
+[15:38] Porque agora existe um cano
+[15:40] largo, dezenas de milhões
+[15:42] de pessoas conectadas
+[15:44] e um volume absurdo de páginas
+[15:46] novas surgindo a cada minuto.
+[15:48] Páginas demais até. Pois é.
+[15:50] Se existem milhões de páginas
+[15:52] falando sobre a exata mesma coisa,
+[15:54] quem decide qual página
+[15:56] a pessoa vê primeiro quando busca
+[15:58] e como quem decide isso
+[16:00] consegue ganhar dinheiro.

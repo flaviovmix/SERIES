@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A bolha — Etapa 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 10-01 (roteiro de 07/09, 12 telas, cronologico, com pessoas). Mesma receita
+     do 09-04: pasta em _REFAZER (quatro ../), sem modelo 3D, sem CSS local, fichas curtas,
+     fotos do Commons com credito. O texto de cada tela segue o que o audio REALMENTE
+     falou (_telas.md), nao o roteiro. Os __PLACEHOLDERS__ do tocador sao preenchidos pelo
+     preenche-9.py. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-10.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20bolha%20que%20pavimentou%20a%20internet%20atual.m4a" data-duracao="962"></audio>
+    <img class="tocador__capa" src="img/estrada-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A bolha que pavimentou a internet atual</div>
+      <div class="tocador__fonte">A rede vira feed · 01 · A bolha</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="962" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">16:02</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a rede vira feed · episódio 01 · a outra linha da mesma história</div>
+      <h1 class="reveal">A bolha</h1>
+      <p class="lede reveal">De <b>1995 a 2002</b>, em ordem e com as pessoas. O episódio anterior fechou o arco da máquina, do ábaco ao programa que passou a ser achado. Aqui a série volta pra rede, no ano em que ela abriu pro comércio e o dinheiro chegou antes do uso. <b>Pela primeira vez a promessa do software mandou construir o hardware cedo demais.</b> Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>A estrada de dez pistas.</b> Alguém otimista demais asfalta dez pistas pra uma cidade de mil carros. Quem pagou a obra quebra, porque não há pedágio que cubra. Mas a estrada não some: fica ali, vazia. Vinte anos depois a cidade tem um milhão de carros e usa a obra pronta por quase nada. A bolha é a obra. A fibra é o asfalto.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/estrada-real.jpg" alt="Vista aérea de um entroncamento de rodovias com muitas pistas paralelas e alças curvas, cercado de campo">
+      <figcaption>Uma obra grande demais para o tráfego do dia em que foi feita · foto: Ken Lund, CC BY-SA 2.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">9 de agosto de 1995 · a Netscape abre o capital</div>
+      <h2 class="reveal">Uma empresa de dezesseis meses</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Jim Clark tinha fundado a Silicon Graphics, a das placas caríssimas. Marc Andreessen escreveu o Mosaic aos 22, o primeiro navegador fácil de usar</div></div>
+        <div class="item reveal"><div class="rotulo">o dia</div><div class="texto">o preço foi dobrado na véspera, pra 28 dólares. Abriu a 71 e fechou a <b>58 dólares e 25 centavos</b>: quase 2,9 bilhões de valor</div></div>
+        <div class="item reveal"><div class="rotulo">o que quebrou a regra</div><div class="texto">a empresa não dava lucro e o navegador era de graça. A bolsa comprou a base de usuários, não a receita</div></div>
+      </div>
+      <p class="lede reveal">O dinheiro olhou pra atenção das pessoas em vez do balanço. <b>O software criou usuário, e o mercado aceitou isso como valor.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jim Clark · foto: Knnkanda, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/clark-real.jpg" alt="Jim Clark de terno escuro e camisa clara, cabelo grisalho, olhando pra frente">
+        <figcaption>Jim Clark · foto: Knnkanda, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Marc Andreessen · foto: Brian Solis, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/andreessen-real.jpg" alt="Marc Andreessen de camisa escura, cabeça raspada, falando com as mãos à frente">
+        <figcaption>Marc Andreessen · foto: Brian Solis, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1996 a 1998 · a regra nova</div>
+      <h2 class="reveal">Crescer primeiro, cobrar depois</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem abriu o capital</div><div class="texto">o Yahoo em 1996, então um diretório de links feito à mão. A Amazon em maio de 1997, vendendo livros. O eBay em setembro de 1998</div></div>
+        <div class="item reveal"><div class="rotulo">o aviso</div><div class="texto">em dezembro de 1996 o banco central americano falou em <b>exuberância irracional</b>. O mercado subiu mais três anos</div></div>
+        <div class="item reveal"><div class="rotulo">o descompasso</div><div class="texto">o cano dentro das casas ainda era a linha telefônica. O mercado apostava num mundo de banda larga que ainda não existia</div></div>
+      </div>
+      <p class="lede reveal">Sem lucro pra medir, o valor virou promessa. <b>E alguém precisava dizer quanto ela valia.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jeff Bezos · foto: Steve Jurvetson, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/bezos-real.jpg" alt="Jeff Bezos rindo de boca aberta, careca, de camisa escura">
+        <figcaption>Jeff Bezos · foto: Steve Jurvetson, CC BY 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Pierre Omidyar · foto: Joi Ito, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/omidyar-real.jpg" alt="Pierre Omidyar de óculos e camisa clara, cabelo escuro curto, num ambiente interno">
+        <figcaption>Pierre Omidyar · foto: Joi Ito, CC BY 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Alan Greenspan em 2000 · foto: Fundo Monetário Internacional, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/greenspan-real.jpg" alt="Alan Greenspan de terno escuro e óculos de armação grossa, sentado diante de um microfone">
+        <figcaption>Alan Greenspan em 2000 · foto: FMI, domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1996 a 2003 · quem media o valor</div>
+      <h2 class="reveal">A régua quebrada</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o relatório</div><div class="texto">em fevereiro de 1996 Mary Meeker publica um estudo grosso sobre a internet, e ele vira a referência de quanto valia cada empresa nova</div></div>
+        <div class="item reveal"><div class="rotulo">a previsão</div><div class="texto">em dezembro de 1998 Henry Blodget crava a Amazon a 400 dólares por ação. Chegou lá em três semanas, e o acerto virou autoridade</div></div>
+        <div class="item reveal"><div class="rotulo">o que apareceu depois</div><div class="texto">em 2003 Blodget é proibido de atuar no mercado: recomendava em público as ações que criticava nas mensagens internas do banco</div></div>
+      </div>
+      <p class="lede reveal">O instrumento que dizia quanto as coisas valiam estava com defeito, e ninguém tinha outro. <b>Sem régua, o exagero não encontra parede.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Mary Meeker numa conferência · foto: autor não informado, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/meeker-real.jpg" alt="Mary Meeker de blazer escuro falando ao microfone num palco de conferência">
+        <figcaption>Mary Meeker · foto: autor não informado, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1999 e 2000 · o auge</div>
+      <h2 class="reveal">Dinheiro sem freio</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o volume</div><div class="texto"><b>476</b> empresas abriram o capital em 1999 e <b>380</b> em 2000</div></div>
+        <div class="item reveal"><div class="rotulo">o retrato</div><div class="texto">no Super Bowl de janeiro de 2000, <b>14</b> empresas ponto com compraram anúncio, a 2 milhões e 200 mil dólares por 30 segundos, sendo que quase nenhuma tinha operação de pé</div></div>
+        <div class="item reveal"><div class="rotulo">o símbolo</div><div class="texto">a Pets.com abre o capital em fevereiro de 2000 pra vender comida de bicho pela internet. O frete de um saco de ração cruzando o país custava mais que a ração</div></div>
+      </div>
+      <p class="lede reveal">O software prometia entregar qualquer coisa em qualquer lugar. <b>O caminhão, a caixa e a gasolina não ficaram mais baratos porque a internet existia.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O prédio da Nasdaq na Times Square · foto: ajay_suresh, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/nasdaq-predio.jpg" alt="Fachada curva e telão da Nasdaq na Times Square, coberta de painéis luminosos">
+        <figcaption>A bolsa que embalou tudo isso · foto: ajay_suresh, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1998 a 2000 · o cano</div>
+      <h2 class="reveal">A fibra apagada</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o medo</div><div class="texto">se todo mundo usasse a rede assim, ia faltar cano. Começou a corrida pra enterrar fibra óptica, o fio de vidro que leva luz</div></div>
+        <div class="item reveal"><div class="rotulo">quem correu, e no que deu</div><div class="texto">Bernard Ebbers, na WorldCom, se endividou pra enterrar cabo. Foram dezenas de milhões de km, e <b>entre 85 e 95%</b> nunca foi aceso</div></div>
+      </div>
+      <p class="lede reveal"><b>O software prometeu um uso que não existia, e o hardware saiu na frente.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Bernard Ebbers · foto: U.S. National Communications System, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/ebbers-real.jpg" alt="Bernard Ebbers de terno e gravata, barba grisalha, em foto oficial">
+        <figcaption>Bernard Ebbers · foto: U.S. NCS, domínio público</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Uma fita de fibra óptica aberta, com as fibras coloridas à mostra · foto: Infestor, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/fibra-real.jpg" alt="Corte de um cabo de fibra óptica mostrando dezenas de fios de vidro coloridos lado a lado">
+        <figcaption>Foto: Infestor, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">10 de março de 2000</div>
+    <h2 class="reveal">O pico, e a queda</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O índice Nasdaq entre 1994 e 2005: a subida, o pico de março de 2000 e o fundo de 2002 · gráfico: Lalala666, domínio público">
+        <img src="img/nasdaq-grafico.png" alt="Gráfico de linha do índice Nasdaq subindo até um pico agudo em 2000 e despencando até 2002">
+        <figcaption>A subida, o pico e o fundo · gráfico: Lalala666, domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">O índice fecha em <b>5.048 pontos</b> e começa a cair. O fundo chega em outubro de 2002, com <b>1.114 pontos</b>: queda de 78 por cento e mais de 5 trilhões de dólares evaporados.</p>
+    <div class="nota-cena reveal">nada técnico quebrou: a rede continuou funcionando e os canos ficaram intactos. O que quebrou foi a conta</div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2000 a 2002 · o estrago</div>
+      <h2 class="reveal">As empresas fechando</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">as quedas</div><div class="texto">a boo.com rodava animação pesada em conexão discada. A Pets.com durou 268 dias depois de abrir o capital. A Kozmo entregava fita e sorvete sem cobrar frete. A Webvan torrou centenas de milhões em galpões</div></div>
+        <div class="item reveal"><div class="rotulo">o volume</div><div class="texto"><b>210</b> empresas de internet fecharam em 2000, e <b>537</b> no ano seguinte</div></div>
+        <div class="item reveal"><div class="rotulo">a maior</div><div class="texto">a WorldCom pede falência em 2002, revelando uma fraude contábil de 11 bilhões de dólares</div></div>
+      </div>
+      <p class="lede reveal">O que matou essa turma não foi erro de código. <b>Foi entregar uma caixa por menos do que a entrega custa.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Uma van de entrega da Webvan · foto: Mark Coggins, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/webvan-real.jpg" alt="Van de entrega branca da Webvan estacionada numa rua">
+        <figcaption>A frota que consumiu o dinheiro · foto: Mark Coggins, CC BY 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A sede da Webvan em Foster City, na Califórnia, em setembro de 2001 · foto: Pal Danyi, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/webvan-sede.jpg" alt="Prédio de escritórios de vidro visto de fora, com estacionamento vazio à frente">
+        <figcaption>A sede, dois meses depois da falência · foto: Pal Danyi, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">quem atravessou</div>
+      <h2 class="reveal">Sobreviveu quem tinha uso embaixo da promessa</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a Amazon</div><div class="texto">viu a ação perder mais de 90 por cento do valor e não caiu: os depósitos existiam de verdade e a logística estava construída</div></div>
+        <div class="item reveal"><div class="rotulo">o eBay</div><div class="texto">dava lucro cedo, porque não precisava manter estoque de nada</div></div>
+        <div class="item reveal"><div class="rotulo">a surpresa</div><div class="texto">o Google, fundado em setembro de 1998, no olho do furacão, atravessou a bolha inteira <b>sem abrir o capital</b>. Só abriu em 2004</div></div>
+      </div>
+      <p class="lede reveal">Enquanto o dinheiro comprava outdoor, esses estavam resolvendo um problema técnico de verdade. <b>O que segurou não foi marketing, foi utilidade.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O primeiro servidor de produção do Google, montado em prateleira de peças soltas, no Computer History Museum · foto: Takuya Oikawa, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/servidor-google.jpg" alt="Armação aberta com placas de computador empilhadas em prateleiras improvisadas e fios à mostra, numa vitrine de museu">
+        <figcaption>O primeiro servidor do Google, feito de peças baratas · foto: Takuya Oikawa, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">o que ficou no chão</div>
+      <h2 class="reveal">Três heranças</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a fibra</div><div class="texto">a capacidade enterrada ficou ociosa e foi vendida por quase nada. É o asfalto da estrada</div></div>
+        <div class="item reveal"><div class="rotulo">as pessoas</div><div class="texto">uma geração inteira aprendeu a montar rede, cuidar de servidor e fazer comércio eletrônico. As empresas sumiram; a habilidade ficou</div></div>
+        <div class="item reveal"><div class="rotulo">o hábito</div><div class="texto">milhões de pessoas perderam o medo de buscar informação e de comprar com cartão pela rede</div></div>
+      </div>
+      <p class="lede reveal">Foi esse cano largo que permitiu o vídeo sem travar, a loja grande entregando rápido e a ideia de guardar seus arquivos num galpão longe de você. <b>Mas ele não resolveu o último quilômetro</b>, o cabo da rua até dentro da casa: esse foi outro problema, depois.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Marco de sinalização de cabo de fibra enterrado, num campo na Virgínia · foto: Emw, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/marco-fibra.jpg" alt="Poste laranja baixo de sinalização de cabo enterrado, cravado na grama de um campo aberto">
+        <figcaption>O aviso de que há cabo ali embaixo · foto: Emw, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Dutos coloridos por onde a fibra é soprada · foto: The1james, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/duto-real.jpg" alt="Feixe de dutos plásticos coloridos saindo de uma vala, prontos pra receber cabo">
+        <figcaption>O cano, esperando o uso chegar · foto: The1james, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a lição da estrada</div>
+    <h2 class="reveal">A ordem se inverteu</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A obra pronta antes do tráfego que a justifica · foto: Ken Lund, CC BY-SA 2.0">
+        <img src="img/estrada-real.jpg" alt="Vista aérea de um entroncamento de rodovias com muitas pistas paralelas e alças curvas">
+        <figcaption>A obra fica, mesmo quando quem pagou não fica · foto: Ken Lund, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Em toda a série o hardware abriu o caminho e o software cresceu pra ocupar o espaço. <b>Aqui foi o contrário:</b> a promessa do software mandou construir a rede antes da hora. A obra saiu cedo, quem pagou faliu, e a infraestrutura ficou esperando o software alcançar o tamanho dela.</p>
+    <div class="nota-cena reveal">infraestrutura pronta e quase de graça prepara o terreno pra um problema novo</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2002</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Clark e Andreessen acenderam o pavio. Bezos e Omidyar construíram utilidade que se sustentou sozinha. Greenspan avisou e não teve como frear. Meeker e Blodget erraram a medida do valor. Ebbers enterrou cano pendurado em dívida. Wainwright tocou a operação que virou o símbolo do exagero. Ninguém planejou o resultado</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a verdade nua</div>
+        <div class="desc">a bolha construiu na frente do uso e quebrou. E mesmo assim deixou enterrado o cano que a década seguinte usou por quase nada</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">onde para</div>
+        <div class="desc">2002, o fundo do poço, com a fibra toda no chão e o hábito de usar a rede já formado</div>
+      </div>
+    </div>
+    <p class="lede reveal">Agora existe cano largo, dezenas de milhões de pessoas conectadas e página nova surgindo a cada minuto. Página demais. <b>Se milhões delas falam da mesma coisa, quem decide qual você vê primeiro, e como quem decide isso ganha dinheiro?</b></p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+A BOLHA - CONTEXTO
+==================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como Reinventar o
+Computador do Zero. A serie reconstroi o computador do zero, do abaco em diante, uma peca
+por episodio. Este episodio cobre de 1995 a 2002, em ORDEM CRONOLOGICA, e conta a
+historia PELAS PESSOAS, com nome e ficha, usando cada passo pra mostrar como o hardware e
+o software melhoram um empurrando o outro.
+
+COSTURA: o episodio anterior que foi ao ar terminou dizendo que fechava a serie. A serie
+nao fechou: ela volta pra contar a outra linha, a da rede. A tela 1 assume isso em uma
+frase e segue.
+
+Por que este episodio existe: a etapa 8 deixou a rede aberta pro comercio em 1995 e parou
+ali. Este episodio conta o que aconteceu quando o dinheiro descobriu isso, e o que sobrou
+no chao depois que a conta nao fechou.
+
+A TESE: a bolha construiu na frente do uso e quebrou, mas deixou enterrado o cano que a
+decada seguinte usou por quase nada. E o contrario do resto da serie: aqui a promessa do
+software fez o hardware ser construido cedo demais, e o hardware ficou esperando o
+software chegar no tamanho dele.
+
+O fio, em doze passos:
+
+1. A rede aberta e o dinheiro chegando. Costura, a analogia da estrada de dez pistas, o
+   intervalo 1995-2002.
+2. 9 de agosto de 1995: a Netscape abre o capital. Jim Clark e Marc Andreessen; preco
+   dobrado pra 28 dolares, fecha a 58,25; 2,9 bilhoes de valor; sem lucro e com o produto
+   de graca.
+3. 1996-1998: a regra nova, crescer primeiro e cobrar depois. Yahoo (1996), Amazon
+   (15/05/1997), eBay (24/09/1998). Greenspan e a "exuberancia irracional" em 05/12/1996;
+   o mercado sobe mais tres anos.
+4. Os analistas: Mary Meeker e o relatorio de fevereiro de 1996; Henry Blodget e a Amazon
+   a 400 dolares (dez/1998); em 2003 ele e proibido de atuar no mercado. A medida do valor
+   estava quebrada.
+5. 1999-2000, o auge: 476 aberturas de capital em 1999 e 380 em 2000; 14 empresas ponto
+   com no Super Bowl de 30/01/2000, a 2,2 milhoes por 30 segundos; a Pets.com abre em
+   10/02/2000 (82,5 milhoes) com Julie Wainwright no comando.
+6. O cano: as telefonicas e as novatas enterram fibra pelo pais. Bernard Ebbers e a
+   WorldCom comprando dezenas de empresas a credito. Dezenas de milhoes de quilometros de
+   fibra, e a maior parte (as estimativas vao de 85% a 95%) nunca foi acesa: fibra apagada.
+7. 10 de marco de 2000: o Nasdaq fecha em 5.048 pontos e comeca a cair. Fundo em
+   09/10/2002, com 1.114 pontos: queda de 78%, mais de 5 trilhoes de dolares.
+8. As quedas: boo.com (mai/2000), Pets.com (07/11/2000, 268 dias depois de abrir), Kozmo
+   (abr/2001), Webvan (jul/2001). 210 empresas fecharam em 2000 e ao menos 537 em 2001. A
+   WorldCom pede falencia em julho de 2002.
+9. Quem atravessou: Amazon (perdeu mais de 90% do valor e ficou de pe), eBay (dava lucro
+   cedo) e o Google, fundado em 04/09/1998, que atravessou sem abrir o capital e so abriu
+   em 2004.
+10. O que ficou no chao: a fibra apagada vendida quase de graca, uma geracao que aprendeu
+   a montar site e servidor, e o habito das pessoas. Quem usou o cano depois foi o video,
+   a loja grande e a ideia de guardar tudo num galpao longe de voce.
+11. A licao da estrada: a obra veio cedo demais, quem pagou quebrou, e a peca ficou pronta
+   pro proximo.
+12. Onde para: 2002. Balanco das pessoas. Pergunta que abre o proximo episodio: com cano
+   largo e pagina demais, quem decide qual pagina voce ve primeiro, e como quem decide
+   isso ganha dinheiro?
+
+CUIDADOS DE FATO (conferidos em 07/09/2026): Alan Greenspan morreu em 22/06/2026, entao
+fala-se dele no passado. Foram 14 empresas ponto com anunciando no Super Bowl, nao 17. O
+percentual de fibra apagada diverge entre fontes (85% a 95%): nao cravar um numero. E nao
+existe estudo que ligue a fibra da bolha a todo o barateamento da banda larga depois: o
+que se afirma e que a capacidade ficou ociosa e barata, e foi reaproveitada.
+
+Use este contexto apenas como apoio.

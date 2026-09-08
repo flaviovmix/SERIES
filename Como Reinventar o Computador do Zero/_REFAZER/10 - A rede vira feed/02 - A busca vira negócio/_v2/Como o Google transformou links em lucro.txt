@@ -1,0 +1,7 @@
+Titulo: Como o Google transformou links em lucro
+Notebook: 10-02-A busca vira negocio
+
+Descricao:
+O título A Busca Vira Negócio descreve o décimo episódio de uma série documental que reconstrói a evolução da computação, focando na trajetória do Google entre 1998 e 2004. O texto detalha a criação do algoritmo PageRank, que organizou a internet ao priorizar a importância das páginas através de links externos, e a implementação do sistema de leilão de anúncios. A narrativa destaca que o sucesso financeiro veio da capacidade da máquina em prever o comportamento humano, transformando a busca em um modelo de publicidade por clique. O conteúdo enfatiza o papel de figuras centrais como Larry Page, Sergey Brin e Bill Gross, tratando o software e o hardware como engrenagens que se impulsionam mutuamente. Por fim, o roteiro conecta o fim da bolha das empresas pontocom ao surgimento de um modelo de negócio bilionário baseado na ordenação da informação.
+
+Link: https://notebook.google.com/notebook/72f30fbd-fb4a-4fc1-b0cd-9d265b3f6848

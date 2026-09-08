@@ -1,0 +1,468 @@
+Inicie dizendo: A Bolha
+---------------
+
+Este e o primeiro episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero.
+
+ATENCAO, COSTURA COM O EPISODIO ANTERIOR: o episodio anterior que foi ao ar, o quarto da
+etapa nove, terminou dizendo que fechava a serie. A serie NAO fechou: ela volta pra
+contar outra linha, a da rede. A tela 1 assume isso em UMA frase, com naturalidade, sem
+pedir desculpa e sem repetir depois. A frase e mais ou menos esta: "o episodio passado
+fechou o arco da maquina, do abaco ao programa que e achado; agora a serie volta pra
+contar a outra linha da mesma historia, a da rede".
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Este episodio fala de bolsa, de dinheiro e de empresa
+quebrando, e por isso a regra vale MAIS aqui, nao menos: o assunto e o que aquele dinheiro
+CONSTRUIU e deixou no chao, nao quem ficou rico. Preco de acao, valor de mercado e
+falencia entram pra dizer o que foi construido ou destruido, nunca como fofoca de mercado.
+NAO fazer piada de quem perdeu dinheiro e NAO dar conselho de investimento.
+
+ESTE EPISODIO COBRE DE 1995 A 2002, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. ATENCAO: a etapa oito
+deixou a rede aberta pro comercio em mil novecentos e noventa e cinco e parou ali. Este
+episodio pega exatamente esse ponto. NAO chamar isso de "voltar no tempo": e continuar de
+onde a rede tinha parado, enquanto a etapa nove contava a linha das pecas.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome. Dizer quem fez, onde estava e por
+que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Marc
+Andreessen, nascido em mil novecentos e setenta e um, tinha vinte e quatro anos; vivo em
+dois mil e vinte e seis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE
+SO, dita e seguida em frente: sem comentario, sem contar mais nada da vida da pessoa. NAO
+pular ficha de ninguem e NAO inventar dado que nao esteja na ficha. Sao nove fichas:
+Clark, Andreessen, Bezos, Omidyar, Greenspan, Meeker, Blodget, Ebbers e Wainwright.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer
+"ficha", "deixa eu ler a ficha", "olha a ficha dele" nem nada parecido: emendar direto no
+nome. A PALAVRA "CENA" TAMBEM E MARCADOR: NAO dizer "naquela cena" nem "na cena".
+
+QUEM NAO TEM FICHA: o socio da Kozmo e os fundadores originais da Pets.com nao tem ano de
+nascimento publico e por isso NAO sao nomeados; falar deles como o roteiro escreve. NAO
+inventar ano de nascimento pra ninguem.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", COM o "o", sem variacao: NAO dizer "aperte proximo", "vamos para o
+proximo" nem "siga adiante". NAO juntar o conteudo de duas telas num bloco so, NAO
+adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com
+a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa
+fica olhando a tela errada pelo resto do episodio.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido". A frase so pode ser dita nos onze pedidos de verdade,
+porque a pagina corta o audio em cada vez que ela aparece.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. A tela 2 e a abertura de capital da Netscape. A tela
+3 e o que a bolsa passou a comprar depois dela. Duas telas, um pedido entre elas.
+
+ATENCAO ESPECIAL COM AS TELAS 5 e 6. A tela 5 e o auge do dinheiro (as aberturas de
+capital, o Super Bowl, a Pets.com). A tela 6 e OUTRA COISA: o cano, a fibra sendo
+enterrada. Duas telas, dois pedidos. NAO falar de fibra na tela 5.
+
+ATENCAO ESPECIAL COM AS TELAS 7 e 8. A tela 7 e o pico de dez de marco de dois mil e a
+virada. A tela 8 sao as empresas fechando, uma a uma. Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 10 e 11. A tela 10 e o que ficou no chao e quem usou
+depois. A tela 11 e a licao de hardware e software, com a analogia da estrada fechando.
+Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 12 e OUTRA COISA: o balanco das pessoas, a
+licao da etapa ate aqui e a pergunta que abre o proximo episodio. Um pedido entre as duas.
+Em episodios anteriores desta serie essas duas ultimas telas ja sairam emendadas: NAO
+repetir.
+
+ESTE EPISODIO NAO FECHA A SERIE E NAO FECHA A ETAPA. E o primeiro de quatro. Na ultima
+tela NAO dizer "ultima tela da serie", NAO dizer "ate o proximo", "proximo mergulho" nem
+"proximo encontro": so o balanco e a pergunta.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e noventa e quatro", "mil
+novecentos e noventa e cinco", "mil novecentos e noventa e seis", "mil novecentos e
+noventa e sete", "mil novecentos e noventa e oito", "mil novecentos e noventa e nove",
+"dois mil", "dois mil e um", "dois mil e dois", "dois mil e quatro". Ano dito rapido em
+digito sai embolado.
+
+NUMEROS E DINHEIRO DEVAGAR, E SEMPRE COM A UNIDADE: "vinte e oito dolares por acao",
+"cinquenta e oito dolares e vinte e cinco centavos", "dois bilhoes e novecentos milhoes de
+dolares" (BILHOES, com B), "dois milhoes e duzentos mil dolares", "cinco mil e quarenta e
+oito pontos", "mil cento e quatorze pontos", "setenta e oito por cento", "cinco trilhoes
+de dolares", "quatrocentas e setenta e seis empresas", "quinhentas e trinta e sete
+empresas". NAO trocar milhao por bilhao: numa gravacao anterior desta serie o
+apresentador disse "cinco bilhoes e quatrocentos bilhoes".
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar quando
+indicado, porque em portugues eles embolam:
+
+- Abertura de capital: dizer sempre "abertura de capital" ou "a empresa abriu o capital".
+  NAO dizer "IPO", nem soletrado.
+- Nasdaq: fala-se "nézdec", a bolsa de tecnologia americana. Dizer "o indice Nasdaq".
+- Netscape: fala-se "nét-squêip". Jim Clark: fala-se "djim clárc". Silicon Graphics:
+  fala-se "sí-li-con gráfics". Marc Andreessen: fala-se "márc an-drí-ssen". Mosaic:
+  fala-se "mo-zêi-ic".
+- Yahoo: fala-se "ia-rú". Amazon: fala-se "á-ma-zon". eBay: fala-se "i-bêi". Jeff Bezos:
+  fala-se "djéf bê-zos". Pierre Omidyar: fala-se "pi-ér o-mi-di-ár".
+- Alan Greenspan: fala-se "âlan grínspan". Federal Reserve: dizer "o banco central
+  americano" na primeira vez.
+- Mary Meeker: fala-se "méri mí-quer". Morgan Stanley: fala-se "mórgan stân-li". Henry
+  Blodget: fala-se "rén-ri blód-djet". Merrill Lynch: fala-se "mé-ril lintch".
+- Super Bowl: fala-se "súper bôul", a final do futebol americano; explicar em tres
+  palavras o que e, porque nem todo mundo sabe.
+- Pets.com: dizer "péts ponto com". Webvan: fala-se "uéb-van". Kozmo: fala-se "cóz-mo".
+  boo.com: dizer "bu ponto com".
+- WorldCom: fala-se "uôrld-com". Bernard Ebbers: fala-se "ber-nárd é-bers".
+- Julie Wainwright: fala-se "djú-li uêin-rait".
+- Google: fala-se "gú-gol".
+- Fibra otica: dizer "fibra otica" na primeira vez e depois so "fibra". Explicar em uma
+  frase o que e: um fio de vidro fino que leva luz, e a luz leva a informacao.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu", "conforme o documento", "a analogia autorizada" nem nada
+parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "A Bolha". As palavras "inicie dizendo" NUNCA sao ditas
+em voz alta.
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. NAO abrir com
+"imagina a seguinte cena" e NAO abrir com um fato de tela posterior como isca. Depois do
+titulo, a primeira frase e a retomada de mil novecentos e noventa e cinco e a costura com
+o episodio anterior.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+DURACAO: cerca de 18 minutos. Nao esticar, nao repetir, nao comentar cada fato duas
+vezes. E nao encurtar pulando as datas e as fichas do roteiro: numa gravacao anterior
+desta serie o episodio saiu com onze minutos porque cortou metade do conteudo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A estrada de dez pistas: alguem se anima e constroi uma estrada de dez pistas pra uma
+  cidade que tem mil carros. Quem pagou a obra quebra, porque nao havia pedagio pra tanta
+  pista. Mas a estrada nao some: ela fica la, asfaltada e vazia. Vinte anos depois a
+  cidade tem um milhao de carros e usa a estrada que ja estava pronta, por quase nada. A
+  bolha e a obra; a fibra otica e o asfalto.
+
+Fora essa, sem analogias. Bolsa, acao e valor de mercado sao explicados direto, em
+palavra simples, sem comparacao. NAO comparar o mercado com cassino, com febre nem com
+doenca.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A REDE ABERTA, E O DINHEIRO CHEGANDO
+
+Fazer a costura, em uma frase: o episodio passado fechou o arco da maquina, do abaco ao
+programa que e achado; a serie agora volta pra contar a outra linha da mesma historia, a
+da rede. Sem pedir desculpa, sem repetir depois.
+
+Retomar em duas frases onde a rede tinha parado: em mil novecentos e noventa e cinco a
+internet deixou de ser coisa de universidade e abriu pro comercio, e o navegador tinha
+acabado de por a web na tela de qualquer pessoa. Foi ali que a serie deixou a rede.
+
+Dizer o que este episodio conta: o que aconteceu quando o dinheiro descobriu isso. Em
+seis anos o mercado despejou uma fortuna em cima da rede, quebrou, e deixou no chao uma
+coisa que ninguem tinha planejado deixar.
+
+Dizer a regra do episodio, que e a regra da serie: aqui se fala de dinheiro, mas o assunto
+e o que esse dinheiro construiu. Nao e sobre quem ficou rico.
+
+Usar a analogia da estrada de dez pistas, inteira, aqui, uma vez.
+
+Dizer o fio: como nos anteriores, pessoas em ordem, e em cada passo o hardware e o
+software empurrando um ao outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e noventa e cinco a
+dois mil e dois.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver o dia em que a bolsa descobriu a internet.
+
+TELA 2 - NOVE DE AGOSTO DE MIL NOVECENTOS E NOVENTA E CINCO: A NETSCAPE
+
+Contar as pessoas: a Netscape tinha dezesseis meses de vida. Foi montada por Jim Clark,
+que ja tinha fundado a Silicon Graphics, a empresa das estacoes caras que apareceram no
+episodio da placa de video, e por Marc Andreessen, que aos vinte e dois anos tinha
+escrito o Mosaic, o primeiro navegador que qualquer pessoa conseguia usar.
+
+FICHA: Jim Clark, nascido em mil novecentos e quarenta e quatro, tinha cinquenta e um
+anos; vivo em dois mil e vinte e seis. Marc Andreessen, nascido em mil novecentos e
+setenta e um, tinha vinte e quatro anos; vivo em dois mil e vinte e seis.
+
+Contar o dia: em nove de agosto de mil novecentos e noventa e cinco a Netscape abre o
+capital. O preco tinha sido dobrado na vespera, pra vinte e oito dolares por acao. A acao
+abriu a setenta e um e fechou o primeiro dia a cinquenta e oito dolares e vinte e cinco
+centavos. No fim do dia a empresa valia perto de dois bilhoes e novecentos milhoes de
+dolares.
+
+Dizer o que e estranho nisso, com todas as letras: a empresa nao dava lucro. E o produto
+dela, o navegador, era distribuido de graca. Pela primeira vez a bolsa comprou uma coisa
+que nao vendia nada; comprou a ideia de que um dia venderia.
+
+Dizer a licao de hardware e software: o software estava pronto e era gratis, e foi
+justamente o gratis que criou o usuario. O dinheiro veio atras do usuario, nao atras da
+receita.
+
+Fechar pedindo o Proximo pra ver o que a bolsa passou a comprar depois desse dia.
+
+TELA 3 - MIL NOVECENTOS E NOVENTA E SEIS A NOVENTA E OITO: A REGRA NOVA
+
+Dizer a regra que nasceu ali: crescer primeiro, cobrar depois. Quem tivesse usuario
+subindo rapido valia dinheiro, mesmo perdendo em cada venda. E quem cobrasse cedo demais
+era considerado sem ambicao.
+
+Contar os exemplos, em ordem: o Yahoo, que era um diretorio feito a mao de sites, abre o
+capital em mil novecentos e noventa e seis. A Amazon, fundada em mil novecentos e noventa
+e quatro pra vender livro, abre em quinze de maio de mil novecentos e noventa e sete. O
+eBay, que era um site de leilao entre pessoas comuns, abre em vinte e quatro de setembro
+de mil novecentos e noventa e oito.
+
+FICHA: Jeff Bezos, nascido em mil novecentos e sessenta e quatro, tinha trinta e tres
+anos; vivo em dois mil e vinte e seis. Pierre Omidyar, nascido em mil novecentos e
+sessenta e sete, tinha trinta e um anos; vivo em dois mil e vinte e seis.
+
+Contar o aviso que ninguem ouviu: em cinco de dezembro de mil novecentos e noventa e seis
+Alan Greenspan, que presidia o banco central americano, faz um discurso e pergunta em voz
+alta como se sabe quando a "exuberancia irracional" ja inflou demais o preco das coisas.
+A frase virou famosa. O mercado subiu por mais tres anos depois dela.
+
+FICHA: Alan Greenspan, nascido em mil novecentos e vinte e seis, tinha setenta anos;
+morreu em dois mil e vinte e seis.
+
+Dizer a licao de hardware e software: o cano ainda era estreito, a maioria das casas
+entrava na rede por linha telefonica, e mesmo assim o dinheiro ja estava apostando no
+mundo em que o cano seria largo.
+
+Fechar pedindo o Proximo pra conhecer quem dizia pro mercado onde por o dinheiro.
+
+TELA 4 - OS ANALISTAS
+
+Explicar o papel, sem julgamento: analista e quem estuda uma empresa e diz ao mercado
+quanto ela vale. Na bolha, dois nomes mandavam mais que os outros.
+
+Contar a primeira: Mary Meeker, do banco Morgan Stanley, publica em fevereiro de mil
+novecentos e noventa e seis um relatorio grosso chamado "The Internet Report", que virou
+leitura obrigatoria. Ela ganhou o apelido de rainha da internet.
+
+FICHA: Mary Meeker, nascida em mil novecentos e cinquenta e nove, tinha trinta e seis
+anos; viva em dois mil e vinte e seis.
+
+Contar o segundo: Henry Blodget, do banco Merrill Lynch, fica famoso em dezembro de mil
+novecentos e noventa e oito ao dizer que a acao da Amazon chegaria a quatrocentos dolares.
+Chegou em tres semanas.
+
+FICHA: Henry Blodget, nascido em mil novecentos e sessenta e seis, tinha trinta e dois
+anos; vivo em dois mil e vinte e seis.
+
+Contar o que se descobriu depois, sem drama e sem moral da historia: em dois mil e tres a
+comissao de valores americana mostrou que Blodget recomendava publicamente acoes que
+criticava em mensagens internas. Ele foi proibido de trabalhar no mercado e pagou quatro
+milhoes de dolares.
+
+Dizer a licao de hardware e software: nao ha uma. Esta tela e sobre quem media o valor, e
+a medida estava quebrada. Dizer isso assim mesmo, em uma frase.
+
+Fechar pedindo o Proximo pra ver o auge.
+
+TELA 5 - MIL NOVECENTOS E NOVENTA E NOVE E DOIS MIL: O AUGE
+
+Dar o tamanho com numeros, devagar: em mil novecentos e noventa e nove, quatrocentas e
+setenta e seis empresas de internet abriram capital nos Estados Unidos. Em dois mil, mais
+trezentas e oitenta.
+
+Contar a cena do Super Bowl, que e verdadeira: em trinta de janeiro de dois mil, na final
+do futebol americano, o programa mais visto da televisao do pais, quatorze empresas ponto
+com compraram anuncio. Cada trinta segundos custava perto de dois milhoes e duzentos mil
+dolares. Muitas delas nao existiam dois anos depois.
+
+Contar o caso que virou simbolo: a Pets.com vendia comida de animal pela internet, com
+frete que custava mais que o produto. Abriu o capital em dez de fevereiro de dois mil e
+levantou oitenta e dois milhoes e meio de dolares. Quem tocava a empresa era Julie
+Wainwright.
+
+FICHA: Julie Wainwright, nascida em mil novecentos e cinquenta e oito, tinha quarenta e
+um anos; viva em dois mil e vinte e seis.
+
+Dizer a licao de hardware e software: o software prometia entregar qualquer coisa em
+qualquer lugar, e o mundo fisico embaixo dele, caminhao, deposito e caixa de papelao, nao
+tinha ficado nem um pouco mais barato. A conta nao fechava, e o mercado nao estava
+olhando pra conta.
+
+Fechar pedindo o Proximo pra ver a outra metade da bolha, a que ficou enterrada.
+
+TELA 6 - O CANO: A FIBRA QUE FOI ENTERRADA
+
+Explicar o raciocinio da epoca: se todo mundo ia entrar na rede, ia faltar cano. Entao as
+empresas de telefonia e as novatas de telecomunicacao sairam enterrando fibra otica pelo
+pais inteiro. Explicar o que e fibra otica em uma frase: um fio de vidro fino que leva
+luz, e a luz leva a informacao.
+
+Contar a pessoa: Bernard Ebbers, que comandava a WorldCom, comprou dezenas de empresas de
+telefonia a credito pra montar a maior rede do pais.
+
+FICHA: Bernard Ebbers, nascido em mil novecentos e quarenta e um, tinha cinquenta e oito
+anos; morreu em dois mil e vinte.
+
+Dar o tamanho, SEM cravar um numero unico, porque as fontes divergem: entre mil novecentos
+e noventa e cinco e dois mil enterraram dezenas de milhoes de quilometros de fibra nos
+Estados Unidos. E a maior parte nunca foi acesa: as estimativas variam, mas falam em algo
+entre oitenta e cinco e noventa e cinco por cento parada, esperando alguem ligar a luz do
+outro lado. Ficou conhecida como fibra apagada.
+
+Dizer por que isso importa, e guardar a frase: essa e a unica parte da bolha que era
+fisica. Acao vira po; asfalto, nao.
+
+Dizer a licao de hardware e software: pela primeira vez na serie, o software prometeu um
+uso que ainda nao existia e o hardware foi construido assim mesmo, na frente. Deu errado
+pra quem pagou.
+
+Fechar pedindo o Proximo pra ver o dia em que a conta chegou.
+
+TELA 7 - DEZ DE MARCO DE DOIS MIL: O PICO
+
+Contar o dia: em dez de marco de dois mil o indice Nasdaq, que e a bolsa onde as empresas
+de tecnologia sao negociadas, fecha em cinco mil e quarenta e oito pontos. E o recorde. A
+partir dali ele so cai.
+
+Explicar por que virou, em palavra simples e sem teoria economica: o dinheiro que entrava
+dependia de outro dinheiro entrando atras. Quando o proximo comprador deixou de aparecer,
+o preco nao tinha em que se segurar, porque quase nenhuma dessas empresas tinha lucro pra
+sustentar o valor.
+
+Dizer o tamanho da queda, com os numeros: o fundo veio em nove de outubro de dois mil e
+dois, com mil cento e quatorze pontos. Uma queda de setenta e oito por cento. Mais de
+cinco trilhoes de dolares de valor de mercado sumiram.
+
+Dizer a licao de hardware e software: nada tecnico quebrou naquele dia. A rede continuou
+funcionando, os canos continuaram no chao, o software continuou rodando. O que quebrou foi
+a conta.
+
+Fechar pedindo o Proximo pra ver as empresas fechando, uma a uma.
+
+TELA 8 - DOIS MIL E DOIS MIL E UM: AS QUEDAS
+
+Contar em ordem, rapido, sem se demorar em nenhuma: a boo.com, uma loja de roupa europeia,
+foi liquidada em maio de dois mil depois de queimar cento e trinta e cinco milhoes de
+dolares em dezoito meses. A Pets.com anunciou o fim em sete de novembro de dois mil,
+duzentos e sessenta e oito dias depois de abrir o capital. A Kozmo, que prometia entregar
+um filme e um sorvete em uma hora sem cobrar frete, fechou em abril de dois mil e um. A
+Webvan, que entregava supermercado, parou em julho de dois mil e um, com mais de
+oitocentos milhoes de dolares gastos.
+
+Dar o numero do conjunto: duzentas e dez empresas de internet fecharam em dois mil, e
+pelo menos quinhentas e trinta e sete em dois mil e um.
+
+Contar a queda do cano tambem: em julho de dois mil e dois a WorldCom pede falencia,
+depois de uma fraude contabil de onze bilhoes de dolares. Ebbers foi condenado.
+
+Dizer a licao de hardware e software: o que matou quase todas foi a mesma coisa, e nao era
+tecnologia. Era entregar caixa no mundo real por menos do que custava.
+
+Fechar pedindo o Proximo pra ver quem atravessou.
+
+TELA 9 - QUEM ATRAVESSOU
+
+Contar os que ficaram, e por que: a Amazon perdeu mais de noventa por cento do valor da
+acao e continuou de pe, porque tinha deposito, entrega e cliente de verdade, e porque
+Bezos gastava com proposito de crescer, nao pra aparecer. O eBay dava lucro desde cedo,
+porque nao guardava nem entregava nada: so ficava com uma parte do negocio dos outros.
+
+Contar o terceiro, que e o gancho do proximo episodio: o Google, fundado em quatro de
+setembro de mil novecentos e noventa e oito, atravessou a bolha inteira sem abrir o
+capital. So abriu em dois mil e quatro, quatro anos depois do estouro. Enquanto todo mundo
+gastava pra aparecer, ele estava resolvendo um problema de computacao.
+
+Dizer a licao de hardware e software: sobreviveu quem tinha um uso real embaixo do
+software, e nao uma promessa.
+
+Fechar pedindo o Proximo pra ver o que sobrou no chao.
+
+TELA 10 - O QUE FICOU NO CHAO
+
+Dizer as tres coisas que a bolha deixou, em ordem: primeiro, a fibra. Ela continuou
+enterrada, e por anos foi vendida quase de graca por quem precisava de dinheiro. Segundo,
+gente: uma geracao inteira aprendeu a montar site, servidor e rede, e essa gente nao
+desapareceu com as empresas. Terceiro, o habito: milhoes de pessoas tinham aprendido a
+comprar, procurar e se comunicar pela rede, e isso nao voltou atras.
+
+Dizer quem usou o cano depois, com nome: o video pela internet, a loja que vende pro pais
+inteiro, e a ideia de guardar o programa e o arquivo num galpao longe de voce, em vez do
+seu computador. Tudo isso precisava de cano largo e barato, e o cano ja estava la.
+
+Dizer a frase que fecha o raciocinio: quem pagou a conta foram os investidores de mil
+novecentos e noventa e nove; quem usou o cano foram os servicos que apareceram dez anos
+depois.
+
+Dizer o cuidado, porque a serie nao inventa numero: nao da pra dizer que a fibra da bolha
+explica tudo o que barateou depois. A ligacao da rua ate a casa continuou sendo um
+problema a parte, resolvido por outro caminho.
+
+Fechar pedindo o Proximo pra dizer o que isso ensina sobre construir.
+
+TELA 11 - A LICAO DA ESTRADA
+
+Retomar a analogia da estrada, agora fechando: a obra foi feita cedo demais, quem pagou
+quebrou, e a estrada ficou. Isso nao e um acidente da internet; e um jeito de a
+infraestrutura aparecer. Alguem paga cedo demais e erra a conta, e a peca fica pronta pro
+proximo.
+
+Dizer a licao de hardware e software com todas as letras, que e a tese do episodio: em
+toda a serie, o hardware novo abriu o que o software podia fazer. Aqui aconteceu ao
+contrario: a promessa do software fez o hardware ser construido antes da hora, muito alem
+do necessario, e ele ficou parado esperando o software chegar no tamanho dele.
+
+Dizer o que isso prepara, sem adiantar o proximo episodio: a rede ficou grande, barata e
+cheia de gente e de pagina, e com isso apareceu um problema novo, que nao e de cano nem de
+dinheiro.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e dois, com a bolsa no fundo, as empresas fechadas e
+a fibra apagada no chao.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: Clark e
+Andreessen abriram o capital da Netscape e comecaram tudo. Bezos e Omidyar construiram
+coisa que dava pra usar e atravessaram. Greenspan avisou e nao freou. Meeker e Blodget
+mediram, e a medida estava quebrada. Ebbers enterrou o cano com dinheiro emprestado.
+Wainwright fechou a empresa que virou simbolo. Ninguem planejou o conjunto.
+
+Dizer a licao do episodio em duas frases: a bolha construiu na frente do uso e quebrou.
+Mas o que ela deixou enterrado no chao foi o cano que a decada seguinte usou por quase
+nada.
+
+Deixar a pergunta no ar, sem responder e sem falar de rede social nem de algoritmo: agora
+a rede tem cano largo, tem gente e tem pagina demais. Se existem milhoes de paginas
+falando da mesma coisa, quem decide qual delas voce ve primeiro? E como e que quem decide
+isso ganha dinheiro?
+
+Fechar sem pedir Proximo: esta e a ultima tela deste episodio.

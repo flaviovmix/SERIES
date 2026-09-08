@@ -1,0 +1,525 @@
+Inicie dizendo: As Redes Sociais
+---------------
+
+Este e o terceiro episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero. O anterior contou a busca virando negocio: o PageRank
+ordenou a web pelos links, e o leilao de anuncio pagou a conta. Ele terminou com uma
+pergunta: a busca so responde quando voce pergunta; o que a rede mostra pra quem chegou sem
+pergunta nenhuma?
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Este episodio fala de empresas que ficaram enormes e de
+empresas que morreram, e por isso a regra vale mais aqui: o assunto e o PROBLEMA DE
+COMPUTACAO que aparece quando gente demais publica ao mesmo tempo, e as pecas que foram
+inventadas pra resolver ele. NAO fazer piada de quem quebrou e NAO transformar em historia
+de fundador de sucesso.
+
+ESTE EPISODIO COBRE DE 2002 A 2012, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. Os anos se sobrepoem com os
+dois episodios anteriores desta etapa e com a etapa 9: dizer isso na tela 1, em uma frase.
+
+A TESE, E ELA TEM QUE SER DITA COM ESSAS PALAVRAS: o volume de gente publicando virou um
+problema de computacao. E sao DOIS problemas diferentes, nao um: primeiro, MONTAR o que cada
+pessoa ve custa caro; segundo, ninguem consegue LER tudo. O primeiro e resolvido com
+maquina; o segundo obriga alguem a escolher.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome, na ordem em que aparecem na historia.
+Dizer quem fez, onde estava e por que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a ficha
+dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha naquele
+momento, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Mark Zuckerberg,
+nascido em mil novecentos e oitenta e quatro, tinha dezenove anos; vivo em dois mil e vinte
+e seis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE SO, dita e seguida
+em frente. NAO pular ficha de ninguem e NAO inventar dado que nao esteja na ficha.
+
+TODAS AS PESSOAS DESTE EPISODIO ESTAO VIVAS. Foi conferido uma por uma. Nao dizer que
+alguem morreu.
+
+⚠️ UMA PESSOA NAO TEM DATA DE NASCIMENTO PUBLICA: Jonathan Abrams. A ficha dele diz isso com
+todas as letras e segue em frente, sem explicar e sem pedir desculpa. NAO inventar um ano
+pra ele.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer "ficha",
+"deixa eu ler a ficha" nem nada parecido: emendar direto no nome. A PALAVRA "CENA" TAMBEM E
+MARCADOR: NAO dizer "naquela cena" nem "na cena".
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o Proximo"
+exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa, "aperte o
+Proximo", COM o "o", sem variacao. NAO juntar o conteudo de duas telas num bloco so, NAO
+adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO. Dizer
+so "quando ouvir o pedido".
+
+⚠️ A GRAVACAO ANTERIOR ENTREGOU 10 TELAS EM VEZ DE 12, E FICOU SEIS MINUTOS CURTA. Ela
+juntou dois pares, e sao exatamente estes dois que precisam de atencao redobrada:
+
+  - TELAS 2 e 3 saiu tudo num bloco so. A tela 2 termina no Google oferecendo trinta
+    milhoes de dolares e sendo recusado, E PARA ALI, com o pedido. A palavra "lento" e a
+    palavra "minuto" NAO podem aparecer na tela 2: elas sao da tela 3.
+  - TELAS 8 e 9 tambem sairam num bloco so. A tela 8 termina na solucao misturada pras
+    contas gigantes, E PARA ALI, com o pedido. O Facebook, o mural de novidades, o protesto
+    e a Ruchi Sanghvi sao TODOS da tela 9 e NAO podem aparecer na tela 8.
+
+CADA UMA DAS 12 TELAS PRECISA DE FOLEGO PROPRIO, de mais ou menos um minuto e meio de fala.
+NAO resumir tela pra caber: o episodio inteiro tem que dar perto de dezoito minutos. Se o
+resultado ficar em doze ou treze minutos, alguma tela foi espremida.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. A tela 2 e o Friendster existindo e crescendo. A tela
+3 e POR QUE ele ficou lento. Duas telas, um pedido entre elas. NAO adiantar a lentidao na
+tela 2.
+
+ATENCAO ESPECIAL COM AS TELAS 7 e 8. A tela 7 e o Twitter nascendo e caindo. A tela 8 e a
+EXPLICACAO tecnica de por que cair era tao facil (o fan-out). Duas telas, dois pedidos. NAO
+explicar o fan-out na tela 7.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 e o feed passando a escolher. A tela 12 e
+OUTRA COISA: o balanco das pessoas, a licao e a pergunta que abre o proximo episodio. Um
+pedido entre as duas. Em episodios anteriores desta serie essas duas ultimas telas ja
+sairam emendadas: NAO repetir.
+
+ESTE EPISODIO NAO FECHA A SERIE E NAO FECHA A ETAPA. E o terceiro de quatro. Na ultima tela
+NAO dizer "ultima tela da serie", NAO dizer "ate o proximo", "proximo mergulho" nem "proximo
+encontro": so o balanco e a pergunta.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: "dois mil e dois", "dois mil e tres", "dois mil e
+quatro", "dois mil e cinco", "dois mil e seis", "dois mil e oito", "dois mil e nove", "dois
+mil e dez", "dois mil e doze".
+
+NUMEROS DEVAGAR, SEMPRE COM A UNIDADE: "tres milhoes de pessoas", "quinhentos e oitenta
+milhoes de dolares", "cento e quinze milhoes de visitantes por mes", "duzentos terabytes por
+dia", "um bilhao e seiscentos e cinquenta milhoes de dolares", "oitenta e quatro horas",
+"quatro mil e seiscentos por segundo", "trezentos mil por segundo", "trezentas e quarenta e
+cinco mil escritas por segundo", "setenta e cinco vezes", "mil e quinhentas historias",
+"trezentas". NAO trocar milhao por bilhao.
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar:
+
+- Friendster: fala-se "frénd-ster". Jonathan Abrams: fala-se "djô-na-than êi-brams".
+- MySpace: fala-se "mai-spêis". Tom Anderson: fala-se "tom ân-der-son".
+- Facebook: fala-se "fêis-buc". Mark Zuckerberg: fala-se "márc zâ-quer-berg".
+- YouTube: fala-se "iú-tiúb". Chad Hurley: fala-se "tchéd rârli". Steve Chen: fala-se
+  "stív tchén". Jawed Karim: fala-se "djá-ued ka-rím".
+- Twitter: fala-se "tuí-ter". Jack Dorsey: fala-se "djéc dór-si". Evan Williams: fala-se
+  "évan uí-liams". Biz Stone: fala-se "biz stôun".
+- Ruchi Sanghvi: fala-se "rú-tchi sân-vi".
+- News Feed: dizer "niús fíd" e explicar na primeira vez que quer dizer "o mural de
+  novidades".
+- EdgeRank: fala-se "édj-renk"; dizer que quer dizer mais ou menos "nota da interacao".
+- Redis: fala-se "ré-dis"; e um jeito de guardar dado na memoria, pra ler rapido.
+- Cassandra, Hive, Hadoop ("ra-dúp"), memcached ("mem-quéch-d"), HBase ("agá-bêis"),
+  FlockDB, Gizzard, Snowflake: dizer devagar e so uma vez cada.
+
+A LISTA DE PRONUNCIA ACIMA E SO PRA VOCE: NAO DIZER "que se pronuncia" NO AR. Falar o
+nome do jeito certo e seguir em frente. No episodio anterior desta etapa saiu "a Susan
+Wojcicki, que se pronuncia Susan Wojcicki", e isso nao pode se repetir.
+
+⚠️ NAO USAR AS PALAVRAS "PUSH" E "PULL". Elas significam coisas opostas dependendo de quem
+conta, e por isso este episodio nao usa nenhuma das duas. Dizer sempre em portugues:
+"escrever na hora de publicar" e "montar na hora de ler".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o apresentador
+dizendo so o titulo, "As Redes Sociais".
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. Depois do titulo, a
+primeira frase e a retomada da pergunta que o episodio anterior deixou.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A caixa de correio do predio, so pras telas 8 e 9: tem dois jeitos de entregar o jornal do
+  predio. Um: quando o jornal sai, o porteiro sobe e poe uma copia na caixa de cada morador.
+  Dar trabalho na hora de publicar, e o morador so abre a caixa e le. Dois: nao entregar
+  nada, e quando o morador desce, o porteiro corre atras de cada jornal que aquele morador
+  assina e monta a pilha na hora. Sem trabalho ao publicar, e trabalho toda vez que alguem
+  desce. Como as pessoas descem muito mais vezes do que sai jornal novo, compensa o
+  porteiro subir. O problema aparece quando um jornal tem trinta milhoes de assinantes: o
+  porteiro leva minutos subindo, e tem morador que recebe a carta de resposta antes do
+  jornal.
+- A caixa de correio cheia, so pra tela 11: se chegam mil e quinhentas cartas por dia e voce
+  so consegue ler trezentas, alguem vai escolher quais trezentas. Ou voce, ou o porteiro.
+  Nao existe a opcao de ler as mil e quinhentas.
+
+Fora essas duas, sem analogias. Servidor, banco de dados e fila sao explicados direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - QUEM CHEGA SEM PERGUNTA
+
+Retomar a pergunta que ficou: o episodio passado montou uma maquina que responde. Mas ela
+so funciona quando alguem digita alguma coisa. E se a pessoa nao esta procurando nada, e
+mesmo assim quer ficar ali?
+
+Dizer a resposta que a rede deu, em uma frase: em vez de responder, mostrar o que as outras
+pessoas andaram fazendo.
+
+Dizer o que este episodio conta: o que acontece com a maquina quando isso da certo demais.
+Porque a partir de um certo tamanho, "mostrar o que os outros andaram fazendo" deixa de ser
+uma ideia de produto e vira um problema de computacao.
+
+Dizer a tese, com essas palavras: sao dois problemas diferentes. Montar o que cada pessoa ve
+custa caro. E, mesmo montado, ninguem consegue ler tudo.
+
+Dizer que os anos se sobrepoem com os episodios anteriores, em uma frase: enquanto a busca
+virava negocio, esta outra coisa crescia ao lado.
+
+Dizer o fio: pessoas em ordem, e em cada passo o hardware e o software empurrando um ao
+outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de dois mil e dois a dois mil e doze.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando ouvir
+o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver a primeira que tentou.
+
+TELA 2 - DOIS MIL E TRES: O FRIENDSTER
+
+Contar a pessoa e a ideia: Jonathan Abrams monta o Friendster na California, fundado em dois
+mil e dois e aberto ao publico em marco de dois mil e tres.
+
+FICHA: Jonathan Abrams nao tem data de nascimento publica, e por isso e o unico deste
+episodio sem idade na ficha; vivo em dois mil e vinte e seis.
+
+Dizer o que era novo, porque e o coracao da tela: antes disso, quem estava na rede usava
+apelido. O Friendster pediu o nome de verdade, a foto de verdade, e a lista de quem voce
+conhece de verdade. Ele nao guardava paginas: guardava LIGACOES ENTRE PESSOAS.
+
+Dizer qual era o produto de fato, porque e o que explica a tela seguinte: o Friendster nao
+mostrava so os seus amigos. Ele mostrava os amigos dos seus amigos, e os amigos deles, e
+dizia a que distancia voce estava de cada pessoa. Essa distancia era a graca do negocio.
+
+Dizer o tamanho: oitocentos e trinta e cinco mil pessoas em junho de dois mil e tres, e tres
+milhoes no fim daquele ano, entrando a nove mil e quinhentas por dia. Naquele mesmo ano o
+Google ofereceu trinta milhoes de dolares e eles recusaram.
+
+Dizer a licao de hardware e software: ate aqui, tudo que a rede guardava era pagina.
+Guardar ligacao entre pessoas e outro tipo de coisa, e ninguem tinha feito isso nessa escala.
+
+Fechar pedindo o Proximo pra ver o que aconteceu com a maquina.
+
+TELA 3 - POR QUE FICOU LENTO
+
+Dizer o sintoma primeiro, porque e concreto: a pagina inicial de quem entrava levava mais de
+um minuto pra abrir. Um ex-executivo falou em quarenta segundos como coisa normal.
+
+Explicar a causa mais contada, COM O CUIDADO DE DIZER O QUE E CERTO E O QUE E RELATO: o
+Friendster mantinha atualizada a rede de cada pessoa a varios graus de distancia, e ha fonte
+publicada dizendo que iam ate quatro graus. Quanto mais gente entra, mais essa conta cresce,
+e ela cresce muito mais rapido do que o numero de pessoas. Dizer com cuidado: a versao de
+que essa conta era refeita a cada carregamento de pagina vem de relato de ex-funcionario
+sem nome, entao ela e plausivel mas nao esta documentada. Dizer assim mesmo, sem cravar.
+
+Contar a parte melhor documentada e quase nunca contada: uma boa parte do problema era a
+propria fundacao do sistema. Eles reescreveram partes e as reescritas pioraram, e so em
+junho de dois mil e quatro trocaram a base inteira por outra. Depois a propria equipe
+apresentou o que consertou: parar de manter conexao aberta com o banco, arrumar os indices,
+tirar do banco a tarefa de ordenar, e trocar poucas maquinas caras por muitas maquinas
+baratas.
+
+Dizer o desfecho sem drama: o Friendster foi perdendo os Estados Unidos, mudou de dono em
+dois mil e nove por vinte e seis milhoes de dolares, menos do que a oferta que tinha
+recusado seis anos antes.
+
+DIZER AS TRES VERSOES, PORQUE A HISTORIA E DISPUTADA: um executivo diz que morreu por
+lentidao, e essa virou a versao repetida em todo lugar. O proprio fundador discorda e culpa
+a forma como a empresa era tocada. E um estudo de universidade modela a saida das pessoas e
+conclui que foram as duas coisas juntas, mudanca de produto e problema tecnico. Dizer as
+tres e nao escolher.
+
+Dizer a licao de hardware e software: essa e a primeira vez nesta serie que uma ideia de
+software morre por nao caber na maquina da epoca. Nao foi ideia errada; foi conta cara
+demais pra hora.
+
+Fechar pedindo o Proximo pra ver quem ganhou por fazer menos conta.
+
+TELA 4 - AGOSTO DE DOIS MIL E TRES: O MYSPACE
+
+Contar a pessoa e a data: o MySpace abre em primeiro de agosto de dois mil e tres, e o rosto
+publico dele e Tom Anderson, que aparecia como amigo automatico de todo mundo que entrava.
+
+FICHA: Tom Anderson, nascido em mil novecentos e setenta, tinha trinta e dois anos; vivo em
+dois mil e vinte e seis.
+
+Dizer a decisao tecnica que fez a diferenca, e ela e o oposto da tela anterior: o MySpace
+tirou a conta de distancia do caminho. Nao interessava a quantos graus voce estava de
+alguem: voce entrava e circulava pelo site inteiro. Menos conta, pagina mais rapida.
+
+Dizer o que mais eles deixaram fazer: deixaram cada pessoa mexer no proprio perfil, com cor,
+fundo e musica. Ficou feio e ficou pessoal, e as pessoas gostaram.
+
+Dizer o tamanho e a compra: uma empresa de midia comprou o MySpace em dois mil e cinco por
+quinhentos e oitenta milhoes de dolares, e o pico foi em dois mil e oito, com cento e quinze
+milhoes de visitantes por mes no mundo.
+
+DESFAZER UMA LENDA, com uma frase: dizem por ai que o MySpace afundou porque trocou a base
+tecnica dele. A conta nao fecha: a troca foi no comeco de dois mil e cinco, melhorou o
+desempenho, e o site ainda cresceu tres anos depois disso.
+
+Dizer a licao de hardware e software: a peca que o Friendster tinha de mais bonito, a
+distancia entre pessoas, era exatamente a peca que a maquina nao aguentava. Quem cortou a
+peca ganhou.
+
+Fechar pedindo o Proximo pra ver quem chegou depois e fez as duas coisas.
+
+TELA 5 - FEVEREIRO DE DOIS MIL E QUATRO: O FACEBOOK
+
+Contar a pessoa e a data: em quatro de fevereiro de dois mil e quatro um aluno de segundo
+ano em Harvard poe no ar um site fechado, so pra quem tinha e-mail daquela universidade.
+
+FICHA: Mark Zuckerberg, nascido em mil novecentos e oitenta e quatro, tinha dezenove anos;
+vivo em dois mil e vinte e seis.
+
+Dizer a decisao de desenho que importa aqui, sem elogio: o site abria uma universidade por
+vez. Isso e uma decisao de produto e tambem uma decisao de maquina: rede pequena e fechada
+e barata de servir, e cresce sozinha, uma cidade por vez, sem precisar aguentar o mundo
+inteiro no primeiro dia.
+
+Dizer a data da abertura, e prestar atencao na ordem, porque ela e contraintuitiva: o
+Facebook so abriu pra qualquer pessoa com um e-mail em vinte e seis de setembro de dois mil e
+seis. Guardar essa data: ela e TRES SEMANAS DEPOIS da coisa que a tela nove vai contar.
+
+Dizer a licao de hardware e software: crescer devagar de proposito foi o que deixou a
+maquina acompanhar. O Friendster abriu pro mundo e quebrou; este abriu por pedaco.
+
+Fechar pedindo o Proximo pra ver o problema mudar de tamanho.
+
+TELA 6 - DOIS MIL E CINCO: O VIDEO
+
+Contar as pessoas e a data: em fevereiro de dois mil e cinco tres pessoas que tinham
+trabalhado juntas montam o YouTube. O primeiro video sobe em vinte e tres de abril de dois
+mil e cinco, tem dezenove segundos, e e um deles falando na frente dos elefantes de um
+zoologico.
+
+FICHA: Chad Hurley, nascido em mil novecentos e setenta e sete, tinha vinte e oito anos;
+vivo em dois mil e vinte e seis. Steve Chen, nascido em mil novecentos e setenta e oito,
+tinha vinte e seis anos; vivo em dois mil e vinte e seis. Jawed Karim, nascido em mil
+novecentos e setenta e nove, tinha vinte e cinco anos; vivo em dois mil e vinte e seis.
+
+Dizer por que video e outro problema, e essa e a tela inteira: texto e foto sao pequenos.
+Video e grande, e nao adianta ter o arquivo se voce nao consegue empurrar ele pela rede na
+velocidade em que a pessoa assiste. Em abril de dois mil e seis o YouTube ja estava
+entregando quarenta milhoes de videos por dia, e duzentos terabytes por dia saindo pela
+rede. So a conta de trafego era estimada em perto de um milhao de dolares por mes. Dizer que
+esse numero e estimativa de fora, porque a empresa nunca confirmou.
+
+AMARRAR COM O PRIMEIRO EPISODIO DESTA ETAPA, e essa e a frase que fecha o arco: esse cano
+todo existia porque foi enterrado na bolha e depois vendido quase de graca. O video e o
+primeiro uso grande que finalmente encheu a fibra que estava apagada desde dois mil.
+
+Contar a compra, curto: em outubro de dois mil e seis o Google compra o YouTube por um
+bilhao e seiscentos e cinquenta milhoes de dolares, menos de dois anos depois do primeiro
+video.
+
+Dizer a licao de hardware e software: aqui o software finalmente alcancou o tamanho do
+hardware que tinha sido construido cedo demais. A promessa de dois mil virou uso em dois mil
+e seis.
+
+Fechar pedindo o Proximo pra ver o problema aparecer de vez.
+
+TELA 7 - MARCO DE DOIS MIL E SEIS: O TWITTER, E A BALEIA
+
+Contar as pessoas e a data: em vinte e um de marco de dois mil e seis sai a primeira
+mensagem de um servico novo, feito pra mandar recado curto. A mensagem, em ingles, e "so
+configurando o meu twttr", e quem escreveu foi Jack Dorsey.
+
+FICHA: Jack Dorsey, nascido em mil novecentos e setenta e seis, tinha vinte e nove anos;
+vivo em dois mil e vinte e seis. Evan Williams, nascido em mil novecentos e setenta e dois,
+tinha trinta e tres anos; vivo em dois mil e vinte e seis. Biz Stone, nascido em mil
+novecentos e setenta e quatro, tinha trinta e dois anos; vivo em dois mil e vinte e seis.
+
+Dizer a diferenca do desenho, porque ela e o que quebra a maquina: no Friendster e no
+Facebook, amizade era de mao dupla, os dois tinham que aceitar. Aqui nao. Voce segue quem
+quiser, sem pedir licenca, e a pessoa nao precisa seguir voce de volta. Parece um detalhe de
+produto. E o comeco de um problema de computacao, porque agora uma pessoa pode ter milhoes
+de seguidores e outra pode ter tres.
+
+Contar a baleia, sem drama e sem piada: quando o servico caia, aparecia um desenho de uma
+baleia branca sendo erguida por passarinhos. A imagem nem era deles: acharam num banco de
+imagens, feita por uma ilustradora, com outro nome. Ela virou o simbolo do servico fora do
+ar. Em dois mil e oito o Twitter ficou oitenta e quatro horas fora do ar no ano, o pior
+entre quinze servicos parecidos que foram medidos.
+
+DESFAZER UMA LENDA, curto: ficou famosa a explicacao de que a culpa era da linguagem de
+programacao que eles usavam. O proprio arquiteto-chefe deles diz que nao: trocar de
+linguagem daria dez ou vinte por cento, e o que deu cem vezes foi mudar a arquitetura. O
+problema estava no banco de dados e em como dividir os dados entre as maquinas.
+
+Fechar pedindo o Proximo pra entender por que era tao facil cair.
+
+TELA 8 - O PROBLEMA DE MONTAR
+
+Dizer o problema com todas as letras: quando voce abre a tela e ve o que as pessoas que
+voce segue escreveram, alguem teve que MONTAR essa lista. E ha so dois jeitos de montar.
+
+Usar a analogia da caixa de correio do predio, inteira, aqui: os dois jeitos de entregar o
+jornal, e a conta de por que compensa o porteiro subir.
+
+Dar os numeros do Twitter, devagar, porque sao eles que provam a escolha: publicar mensagem
+eram quatro mil e seiscentas por segundo, chegando a doze mil no pico. Ler a propria tela
+eram trezentas mil por segundo. Uma mensagem chega em media a setenta e cinco seguidores,
+entao quatro mil e seiscentas mensagens por segundo viram trezentas e quarenta e cinco mil
+escritas por segundo. E mesmo assim compensa, porque a leitura e setenta e cinco vezes maior
+que a escrita.
+
+Dizer o detalhe que mostra o cuidado: o que fica guardado na memoria rapida nao e o texto da
+mensagem. E so o numero dela, e no maximo umas oitocentas por pessoa. O texto e buscado
+depois.
+
+Dizer onde o desenho quebra, que e a parte boa: quem tem trinta milhoes de seguidores. Uma
+mensagem dessas leva MINUTOS pra terminar de ser entregue, e chega a acontecer de a resposta
+de alguem chegar antes da mensagem original. A saida foi misturar os dois jeitos: escrever
+na hora de publicar pra gente comum, e montar na hora de ler pras contas gigantes.
+
+Dizer a licao de hardware e software: o formato do produto (seguir sem pedir licenca) virou
+o formato do problema de maquina. Software desenhado assim obriga hardware desenhado assado.
+
+Fechar pedindo o Proximo pra ver o outro problema, que e maior.
+
+TELA 9 - CINCO DE SETEMBRO DE DOIS MIL E SEIS: O MURAL DE NOVIDADES
+
+Contar o dia e a pessoa: em cinco de setembro de dois mil e seis, a noite, o Facebook liga
+uma coisa nova pra uns dez milhoes de pessoas. Em vez de voce ter que visitar o perfil de
+cada amigo pra ver se mudou alguma coisa, o site passa a te mostrar sozinho o que mudou. O
+anuncio foi assinado por Ruchi Sanghvi, engenheira da casa.
+
+FICHA: Ruchi Sanghvi, nascida em mil novecentos e oitenta e dois, tinha vinte e quatro anos;
+viva em dois mil e vinte e seis.
+
+Contar a reacao, com os numeros certos e com cuidado: as pessoas odiaram. Em vinte e quatro
+horas um grupo de protesto tinha duzentos e oitenta e quatro mil membros, e em tres dias
+passava de setecentas mil. Teve gente indo protestar na porta do escritorio. Dizer o motivo
+do incomodo, que e o ponto: nada tinha ficado publico que ja nao fosse. O que mudou foi que
+antes era preciso procurar, e agora chegava sozinho.
+
+Contar as duas respostas, porque a diferenca entre elas e boa: no mesmo dia, o texto foi
+"calma, respira, a gente ouviu voces", e nao mudou nada, e caiu mal. Tres dias depois veio
+outro, comecando com "a gente errou feio nessa", junto com os controles de quem ve o que.
+
+Dizer uma coisa que quase todo mundo erra: esse mural NUNCA mostrou tudo. Desde o primeiro
+dia ele escolhia um pedaco. O documento de patente, depositado tres semanas antes de ligar,
+ja fala em ordenar por proximidade entre as pessoas e mostrar so as dez coisas de maior
+peso. Dizer com cuidado: mas quem trabalhava la conta que, na pratica, essa escolha era
+ajustada na mao, girando botao, e nao por um sistema que aprende.
+
+LEMBRAR A ORDEM, que e o detalhe que ninguem espera: isso aconteceu TRES SEMANAS ANTES de o
+Facebook abrir pra qualquer pessoa. O mural veio primeiro, a abertura veio depois.
+
+Fechar pedindo o Proximo pra ver o que essa escala obrigou a inventar.
+
+TELA 10 - AS PECAS QUE NASCERAM DISSO
+
+Dizer a ideia da tela em uma frase: quando o problema fica grande o suficiente e nao existe
+peca pronta pra ele, as empresas passam a fabricar a propria peca, e algumas dessas pecas
+viram ferramenta de todo mundo.
+
+Contar o que nasceu no Facebook: em dois mil e oito eles fizeram o Cassandra, um jeito novo
+de guardar dado espalhado por muitas maquinas, feito pra buscar dentro das mensagens; e
+abriram pra qualquer um usar no mesmo ano. Em dois mil e nove fizeram o Hive, que deixa
+fazer pergunta em linguagem de banco de dados em cima de uma montanha de arquivo.
+
+Contar o que nasceu no Twitter, em dois mil e dez: o Gizzard, pra dividir dado entre
+maquinas; o FlockDB, um banco feito so pra guardar quem segue quem, que chegou a treze
+bilhoes de ligacoes; e o Snowflake, um gerador de numero de identificacao, que precisou
+existir porque numero em sequencia so funciona quando ha um banco so, e ali nao havia mais.
+
+DESFAZER TRES ATRIBUICOES ERRADAS, porque sao repetidas em todo lugar: o memcached, que
+guarda coisa na memoria pra ler rapido, NAO nasceu no Facebook: nasceu em dois mil e tres
+num site de diarios, porque o programador percebeu que tinha memoria sobrando espalhada
+pelos servidores. O Hadoop NAO nasceu no Facebook: e de dois mil e seis, de outra dupla, e o
+nome e o do elefante de pelucia do filho de um deles. E o HBase tambem nao.
+
+Contar a ironia, curto e sem deboche: em dois mil e dez o Facebook precisou escolher em que
+guardar as mensagens, testou tres coisas e NAO escolheu o Cassandra, que era invencao da
+propria casa. Escolheu o HBase, que era de fora.
+
+Dizer a licao de hardware e software: quando o software cresce mais rapido que as
+ferramentas, ele passa a fabricar ferramenta. E boa parte do que a industria usa hoje saiu
+desse aperto.
+
+Fechar pedindo o Proximo pra ver o momento em que a lista deixa de caber.
+
+TELA 11 - QUANDO NINGUEM CONSEGUE MAIS LER TUDO
+
+Dizer o segundo problema, que e diferente do da tela oito: a tela oito era sobre CUSTAR caro
+montar a lista. Esta e sobre a lista ficar grande demais pra qualquer pessoa ler.
+
+Dar o numero, dizendo o ano: numa medida que o proprio Facebook divulgou em dois mil e
+treze, cada vez que alguem abria o mural havia em media mil e quinhentas coisas disponiveis
+pra mostrar, e o sistema mostrava umas trezentas. Dizer que o numero e de dois mil e treze,
+sete anos depois do mural existir.
+
+Usar a analogia da caixa de correio cheia, curta: se chegam mil e quinhentas cartas e voce
+le trezentas, alguem escolhe quais trezentas. Nao existe a opcao de ler as mil e quinhentas.
+
+Contar o EdgeRank: em abril de dois mil e dez, numa conferencia pra programadores, o
+Facebook explicou em publico como escolhia. Eram tres coisas multiplicadas: o quanto voce
+interage com aquela pessoa, o quanto aquele tipo de acao pesa (comentar pesa mais que
+curtir), e ha quanto tempo aquilo aconteceu.
+
+Dizer o que isso e e o que isso nao e, porque essa frase entrega o proximo episodio: isso e
+uma REGRA ESCRITA A MAO. Tres fatores, escolhidos por pessoas, multiplicados. Ninguem
+aprendeu nada; alguem decidiu. Por volta de dois mil e onze essa regra e trocada por um
+sistema com dezenas de milhares de pesos, e ai o nome cai em desuso.
+
+Dizer a licao de hardware e software: enquanto a rede era pequena, mostrar tudo em ordem de
+hora funcionava e era barato. O volume de gente matou a ordem de hora. Nao foi decisao de
+gosto: foi aritmetica.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e doze, com a ordem de hora ja substituida por uma
+regra que alguem escreveu.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: Abrams guardou
+ligacao entre pessoas primeiro, e a conta dele nao coube na maquina da epoca. Anderson
+ganhou tirando essa conta do caminho. Zuckerberg cresceu por pedaco, uma universidade por
+vez, e por isso a maquina acompanhou. Hurley, Chen e Karim puseram video na rede e encheram
+o cano que estava vazio desde a bolha. Dorsey, Williams e Stone deixaram seguir sem pedir
+licenca, e com isso criaram o problema de montar. Sanghvi anunciou a coisa que juntou tudo
+isso numa tela so. Ninguem planejou o conjunto.
+
+Dizer a licao do episodio em duas frases: o volume de gente publicando virou um problema de
+computacao, e ele tem duas metades. Montar o que cada um ve foi resolvido com maquina; mas
+escolher o que cabe na tela nao tem solucao de maquina, tem que escolher.
+
+Deixar a pergunta no ar, sem responder e sem falar de rede neural: em dois mil e dez quem
+escolhia era uma regra de tres fatores, escrita por pessoas, que dava pra ler num slide. Mas
+e se ninguem escrever a regra? E se, em vez de decidir o que importa, a maquina descobrir
+sozinha, olhando o que voce fez antes?
+
+Fechar sem pedir Proximo: esta e a ultima tela deste episodio.

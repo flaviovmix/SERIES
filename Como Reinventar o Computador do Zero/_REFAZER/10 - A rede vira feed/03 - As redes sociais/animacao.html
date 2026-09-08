@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As redes sociais — Etapa 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 10-03 (roteiro de 07/09, 12 telas, cronologico, com pessoas). Mesma receita
+     do 10-01 e 10-02. O texto de cada tela segue o que o audio REALMENTE falou (_telas.md,
+     gravacao v2), com UMA correcao deliberada: o audio diz "13 bilhoes de ligacoes
+     simultaneas" na tela 10, e o certo e 13 bilhoes de ligacoes GUARDADAS. A pagina diz o
+     certo. Os __PLACEHOLDERS__ do tocador sao preenchidos pelo preenche-10.py. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-10.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20engenharia%20por%20tr%C3%A1s%20das%20redes%20sociais.m4a" data-duracao="1318"></audio>
+    <img class="tocador__capa" src="img/grafo-real.png" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A engenharia por trás das redes sociais</div>
+      <div class="tocador__fonte">A rede vira feed · 03 · As redes sociais</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1318" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">21:58</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a rede vira feed · episódio 03 · gente demais ao mesmo tempo</div>
+      <h1 class="reveal">As redes sociais</h1>
+      <p class="lede reveal">De <b>2002 a 2012</b>, em ordem e com as pessoas. A busca do episódio anterior só responde a quem pergunta. Aqui a rede passa a mostrar o que os outros andaram fazendo, e a partir de um certo tamanho isso deixa de ser ideia de produto e vira <b>problema de computação</b>. São dois problemas, não um: montar o que cada pessoa vê custa caro, e ninguém consegue ler tudo. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>A caixa de correio do prédio.</b> Há dois jeitos de entregar o jornal. Ou o porteiro sobe e põe uma cópia na caixa de cada morador, dando trabalho na hora de publicar. Ou não entrega nada e monta a pilha quando o morador desce, dando trabalho toda vez que alguém lê. Como as pessoas descem muito mais do que sai jornal, compensa o porteiro subir. Até um jornal ter trinta milhões de assinantes.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/grafo-real.png" alt="Diagrama de rede com dezenas de pontos coloridos ligados por linhas, formando grupos">
+      <figcaption>Guardar ligação entre pessoas é outro tipo de problema · diagrama: Martin Grandjean, CC BY-SA 3.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">março de 2003 · Califórnia</div>
+      <h2 class="reveal">O Friendster</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Jonathan Abrams, o único deste episódio <b>sem data de nascimento pública</b>. Fundou em 2002 e abriu ao público em março de 2003</div></div>
+        <div class="item reveal"><div class="rotulo">o que era novo</div><div class="texto">até ali se usava apelido na rede. Ele pediu o nome de verdade, a foto de verdade e a lista de quem você conhece de verdade. E não guardava páginas: guardava <b>ligações entre pessoas</b></div></div>
+        <div class="item reveal"><div class="rotulo">o produto</div><div class="texto">não mostrava só os seus amigos. Mostrava os amigos deles, e os amigos dos amigos, e a que distância você estava de cada pessoa. Essa distância era a graça</div></div>
+      </div>
+      <p class="lede reveal">3 milhões de pessoas no fim de 2003, entrando a 9.500 por dia. Naquele ano o Google ofereceu 30 milhões de dólares e eles recusaram. <b>Guardar ligação entre pessoas era um tipo de coisa que ninguém tinha feito nessa escala.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A marca do Friendster · arte: Basavarajtalwar, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/friendster-logo.png" alt="Símbolo circular azul e laranja do Friendster">
+        <figcaption>A marca do Friendster · arte: Basavarajtalwar, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a conta que não coube</div>
+      <h2 class="reveal">Por que ficou lento</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o sintoma</div><div class="texto">a página inicial levava <b>mais de um minuto</b> pra abrir. Um ex-executivo falou em 40 segundos como coisa normal</div></div>
+        <div class="item reveal"><div class="rotulo">o que está publicado</div><div class="texto">o sistema mantinha a rede de cada pessoa atualizada a vários graus de distância, e há fonte publicada dizendo que iam até quatro. Essa conta cresce muito mais rápido que o número de pessoas</div></div>
+        <div class="item reveal"><div class="rotulo">o que é só relato</div><div class="texto">que a conta era refeita a cada carregamento de página vem de ex-funcionário <b>sem nome</b>. É plausível e não está documentado</div></div>
+      </div>
+      <p class="lede reveal">A parte melhor documentada quase nunca é contada: boa parte do problema era a própria fundação do sistema, trocada inteira só em junho de 2004. <b>Não foi ideia errada; foi conta cara demais pra hora.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Fiação de servidores num centro de dados de 2007 · foto: Midom, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/cabos-real.jpg" alt="Emaranhado de cabos de rede coloridos ligando servidores num rack">
+        <figcaption>Fiação de servidores em 2007 · foto: Midom, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1 de agosto de 2003</div>
+      <h2 class="reveal">O MySpace ganha por fazer menos conta</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Tom Anderson era o rosto público, e aparecia como amigo automático de todo mundo que entrava</div></div>
+        <div class="item reveal"><div class="rotulo">a decisão</div><div class="texto">o oposto do Friendster: tiraram a conta de distância do caminho. Não interessava a quantos graus você estava de alguém. Menos conta, página mais rápida</div></div>
+        <div class="item reveal"><div class="rotulo">o tamanho</div><div class="texto">comprado em 2005 por <b>580 milhões de dólares</b>. Pico em 2008: 115 milhões de visitantes por mês no mundo</div></div>
+      </div>
+      <p class="lede reveal">Dizem que o MySpace afundou por ter trocado a base técnica. A conta não fecha: a troca foi em 2005, melhorou o desempenho, e o site cresceu mais três anos. <b>A peça mais bonita do Friendster era a que a máquina não aguentava, e quem cortou a peça ganhou.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Tom Anderson · foto: Robert Scoble, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/anderson-real.jpg" alt="Tom Anderson de camisa escura, cabelo curto, sorrindo de lado">
+        <figcaption>Tom Anderson · foto: Robert Scoble, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">4 de fevereiro de 2004</div>
+      <h2 class="reveal">O Facebook cresce por pedaço</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Mark Zuckerberg, aluno de segundo ano, põe no ar um site fechado, só pra quem tinha e-mail daquela universidade</div></div>
+        <div class="item reveal"><div class="rotulo">a decisão</div><div class="texto">abrir uma universidade por vez é decisão de produto <b>e</b> de máquina: rede pequena e fechada é barata de servir, e cresce sozinha, uma cidade por vez</div></div>
+        <div class="item reveal"><div class="rotulo">a data pra guardar</div><div class="texto">só abriu pra qualquer pessoa com um e-mail em <b>26 de setembro de 2006</b>, três semanas depois da coisa que a tela 9 vai contar</div></div>
+      </div>
+      <p class="lede reveal">Crescer devagar de propósito foi o que deixou a máquina acompanhar. <b>O Friendster abriu pro mundo e quebrou; este abriu por pedaço.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Mark Zuckerberg em 2005 · foto: Elaine Chan e Priscilla Chan, CC BY 2.5">
+        <span class="selo">imagem real</span>
+        <img src="img/zuckerberg-real.jpg" alt="Mark Zuckerberg jovem, de camiseta, cabelo encaracolado, olhando pra câmera">
+        <figcaption>Zuckerberg em 2005 · foto: Elaine e Priscilla Chan, CC BY 2.5</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2005 · o vídeo</div>
+      <h2 class="reveal">O cano da bolha finalmente enche</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Chad Hurley, Steve Chen e Jawed Karim montam o YouTube em fevereiro de 2005. O primeiro vídeo sobe em 23 de abril: 19 segundos, um deles na frente dos elefantes de um zoológico</div></div>
+        <div class="item reveal"><div class="rotulo">por que vídeo é outro problema</div><div class="texto">texto e foto são pequenos. Não adianta ter o arquivo se você não empurra ele pela rede na velocidade em que a pessoa assiste</div></div>
+        <div class="item reveal"><div class="rotulo">a conta</div><div class="texto">em abril de 2006, <b>40 milhões de vídeos e 200 terabytes por dia</b>. Só o tráfego era estimado em perto de 1 milhão de dólares por mês, e a empresa nunca confirmou</div></div>
+      </div>
+      <p class="lede reveal"><b>O vídeo é o primeiro uso grande que encheu a fibra enterrada na bolha e apagada desde 2000.</b> Em outubro de 2006 o Google compra o YouTube por 1 bilhão e 650 milhões.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Chad Hurley em 2007 · foto: World Economic Forum, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/hurley-real.jpg" alt="Chad Hurley de terno escuro, cabelo castanho, falando num painel">
+        <figcaption>Chad Hurley, 2007 · foto: World Economic Forum, CC BY-SA 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jawed Karim, autor do primeiro vídeo · foto: Jawed, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/karim-real.jpg" alt="Jawed Karim de camisa clara, cabelo escuro, olhando pra frente">
+        <figcaption>Jawed Karim · foto: Jawed, domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">21 de março de 2006</div>
+      <h2 class="reveal">O Twitter, e a baleia</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Jack Dorsey escreve a primeira mensagem, ao lado de Evan Williams e Biz Stone</div></div>
+        <div class="item reveal"><div class="rotulo">a diferença que quebra a máquina</div><div class="texto">nas outras redes amizade era de mão dupla. Aqui você segue sem pedir licença: <b>uma pessoa pode ter milhões de seguidores e outra, três</b></div></div>
+        <div class="item reveal"><div class="rotulo">a queda</div><div class="texto">quando saía do ar aparecia uma baleia erguida por passarinhos, achada num banco de imagens. Em 2008 foram <b>84 horas fora do ar</b></div></div>
+      </div>
+      <p class="lede reveal">Ficou famoso culpar a linguagem de programação, e o arquiteto-chefe deles diz que não: isso daria uns 10 por cento. <b>O problema era o banco de dados.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jack Dorsey · foto: cellanr, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/dorsey-real.jpg" alt="Jack Dorsey de camisa escura e barba curta, falando">
+        <figcaption>Jack Dorsey · foto: cellanr, CC BY-SA 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Biz Stone em 2006 · foto: Evan Williams, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/stone-real.jpg" alt="Biz Stone de camiseta, cabelo curto, num escritório">
+        <figcaption>Biz Stone, 2006 · foto: Evan Williams, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o primeiro problema</div>
+    <h2 class="reveal">Montar o que cada um vê</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Fileiras de servidores: é aqui que a lista de cada pessoa é montada · foto: NOIRLab, CC BY 4.0">
+        <img src="img/racks-real.jpg" alt="Corredor com racks de servidores altos, luzes acesas nos equipamentos">
+        <figcaption>Onde a lista de cada pessoa é montada · foto: NOIRLab, CC BY 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Publicar eram <b>4.600 mensagens por segundo</b>; ler a própria tela, <b>300 mil</b>. Cada mensagem chega a 75 seguidores em média, então publicar vira <b>345 mil escritas por segundo</b>. E compensa, porque a leitura é 75 vezes maior.</p>
+    <div class="nota-cena reveal">quebra em quem tem 30 milhões de seguidores: a mensagem leva minutos pra ser entregue, e a resposta chega antes dela</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">5 de setembro de 2006, à noite</div>
+      <h2 class="reveal">O mural de novidades</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que ligaram</div><div class="texto">em vez de visitar o perfil de cada amigo pra ver se mudou algo, o site passa a mostrar sozinho. Pra uns 10 milhões de pessoas. O anúncio foi assinado por <b>Ruchi Sanghvi</b></div></div>
+        <div class="item reveal"><div class="rotulo">a reação</div><div class="texto">as pessoas odiaram. Em 24 horas um grupo de protesto tinha <b>284 mil</b> membros, e em três dias passava de 700 mil. Teve gente protestando na porta do escritório</div></div>
+        <div class="item reveal"><div class="rotulo">por que incomodou</div><div class="texto">nada ficou público que já não fosse. Mudou que antes era preciso procurar, e agora chegava sozinho</div></div>
+      </div>
+      <p class="lede reveal">No mesmo dia o texto foi "calma, respira, a gente ouviu vocês", e não mudou nada. Três dias depois veio outro, começando com <b>"a gente errou feio nessa"</b>. E o que quase todo mundo erra: <b>esse mural nunca mostrou tudo</b>, só que o ajuste era feito na mão.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Ruchi Sanghvi · foto: TechCrunch, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/sanghvi-real.jpg" alt="Ruchi Sanghvi de blusa clara, cabelo escuro comprido, falando">
+        <figcaption>Ruchi Sanghvi · foto: TechCrunch, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2008 a 2010</div>
+      <h2 class="reveal">As peças que nasceram do aperto</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">no Facebook</div><div class="texto">o <b>Cassandra</b> em 2008, pra guardar dado espalhado por muitas máquinas; e o <b>Hive</b> em 2009, que deixa perguntar em linguagem de banco em cima de uma montanha de arquivo</div></div>
+        <div class="item reveal"><div class="rotulo">no Twitter, em 2010</div><div class="texto">o <b>Gizzard</b>, pra dividir dado entre máquinas; o <b>FlockDB</b>, só pra guardar quem segue quem, com 13 bilhões de ligações; e o <b>Snowflake</b>, gerador de identificador, porque número em sequência precisa de um banco só</div></div>
+        <div class="item reveal"><div class="rotulo">o que não nasceu lá</div><div class="texto">memcached é de 2003; Hadoop, de 2006; HBase também veio de fora</div></div>
+      </div>
+      <p class="lede reveal">A ironia: em 2010 o Facebook escolheu onde guardar as mensagens e <b>não escolheu o Cassandra</b>. <b>Quando o software cresce mais rápido que as ferramentas, ele passa a fabricar ferramenta.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Fiação de servidores · foto: Midom, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/cabos-real.jpg" alt="Emaranhado de cabos de rede coloridos ligando servidores num rack">
+        <figcaption>Ferramenta feita em casa, por falta de opção · foto: Midom, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">abril de 2010 · o segundo problema</div>
+    <h2 class="reveal">Quando ninguém consegue ler tudo</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Parede de caixas de correio: se chegam mil e quinhentas cartas e você lê trezentas, alguém escolhe quais · foto: Dwight Burdette, CC BY 3.0">
+        <img src="img/caixas-real.jpg" alt="Painel metálico com dezenas de caixas de correio numeradas, lado a lado">
+        <figcaption>Alguém escolhe quais cartas você lê · foto: Dwight Burdette, CC BY 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Numa medida do próprio Facebook, <b>de 2013</b>, cada vez que alguém abria o mural havia em média <b>1.500 coisas</b> e o sistema mostrava umas <b>300</b>. Em 2010 eles explicaram como escolhiam: afinidade, peso da ação e tempo, multiplicados.</p>
+    <div class="nota-cena reveal">isso é uma REGRA ESCRITA A MÃO: três fatores, escolhidos por pessoas. Ninguém aprendeu nada; alguém decidiu</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2012</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Abrams guardou ligação entre pessoas primeiro, e a conta dele não coube na máquina da época. Anderson ganhou tirando essa conta do caminho. Zuckerberg cresceu por pedaço, uma universidade por vez, e por isso a máquina acompanhou. Hurley, Chen e Karim puseram vídeo na rede e encheram o cano que estava vazio desde a bolha. Dorsey, Williams e Stone deixaram seguir sem pedir licença, e criaram o problema de montar. Sanghvi anunciou a coisa que juntou tudo numa tela só. Ninguém planejou o conjunto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição</div>
+        <div class="desc">o volume de gente publicando virou um problema de computação, e ele tem duas metades. Montar o que cada um vê foi resolvido com máquina. Escolher o que cabe na tela não tem solução de máquina: exige escolha</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">onde para</div>
+        <div class="desc">2012, com a ordem de hora já substituída por uma regra que alguém escreveu</div>
+      </div>
+    </div>
+    <p class="lede reveal">Em 2010 quem escolhia era uma regra de três fatores, escrita por pessoas, que cabia num slide. <b>Mas e se ninguém escrever a regra? E se a máquina descobrir sozinha, olhando o que você fez antes?</b></p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

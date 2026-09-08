@@ -10,11 +10,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="css/cabecalho.css">
 <link rel="stylesheet" href="css/capitulo.css">
 </head>
 
 <body>
+
+<header class="barra">
+  <button class="barra__botao" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
+  <a class="barra__marca" href="index.html">Séries</a>
+</header>
 
 <div class="wrap">
 
@@ -36,7 +42,7 @@
           <p class="cap__frase">Do risco no osso à máquina que conversa.</p>
           <p class="cap__resumo">Como <em>pedras que a gente move</em> viraram <em>máquinas que conversam</em>. Contar, instrumento, engrenagem, eletricidade, lógica, memória, miniaturização, rede e aprendizado: uma peça por episódio.</p>
           <div class="cap__pe">
-            <span class="cap__eps">10 etapas &middot; 8 extras</span>
+            <span class="cap__eps">10 etapas &middot; 10 extras</span>
             <a class="cap__botao" href="computador.html" aria-label="Ver a série Construindo um Computador do Zero">Ver a série</a>
           </div>
         </div>
@@ -102,6 +108,8 @@
   </section>
 
 </div>
+
+<script src="js/menu.js"></script>
 
 </body>
 </html>

@@ -4,14 +4,57 @@
 **Extensão da série:** depois do vídeo, a história continua por conta própria até **2017**, quando o paper *Attention is All You Need* apresentou o **Transformer** — a arquitetura que tornou possível as IAs atuais.
 **Formato:** episódios NotebookLM via `/criar-podcast` (trio Overview.txt + _NotebookLM_ + prompt por episódio), cada um com sua `animacao.html`.
 
+## Analogias oficiais da série (decisões do Flávio, 07/09/2026)
+
+Duas analogias que ele escolheu e quer usadas daqui em diante, com os reforços que ele
+autorizou. Elas respondem perguntas diferentes e podem aparecer no mesmo episódio, mas
+**nunca fundidas numa imagem só**. **Nada já gravado será regravado por causa delas** (os
+áudios 9.01 a 9.04 ficam como estão).
+
+**1. Processador contra placa de vídeo: o físico e a turma de quinta série.** *(o que tem
+dentro)*
+
+- O processador é **um físico muito bom**: faz conta difícil, faz rápido e ainda decide
+  sozinho a ordem de fazer as coisas. A placa de vídeo é **uma turma de quinta série**:
+  cada aluno só faz continha simples, mas eram 128 em 2006 e são milhares hoje, e ganham
+  no volume.
+- O detalhe que deixa a analogia certa: **a professora dita uma continha e a turma inteira
+  faz ao mesmo tempo, cada aluno com os seus números.** Não é cada um numa coisa; é todo
+  mundo na mesma coisa.
+- Onde o físico ganha: quando o passo 2 depende do passo 1. Isso não se reparte entre
+  quinhentos alunos, e é por isso que o texto em fila não cabia na placa (9.04).
+- Onde a turma perde tempo: se metade precisa de outra continha, a outra metade fica
+  parada. E a turma é barata: duas placas de jogo num quarto treinaram a AlexNet (9.03).
+- Onde quebra: aluno de quinta série aprende e cansa; o núcleo não faz nem uma coisa nem
+  outra. O físico não é mais inteligente, é mais completo.
+- A analogia dos pintores (parede de azulejos) fica só pra dizer o que a **tela** é: um
+  azulejo = um ponto.
+
+**2. Camadas de abstração: o restaurante.** *(quem tem acesso a quê)*
+
+- O computador é um restaurante: o usuário come no salão e **nunca entra na cozinha, que é
+  o processador**.
+- **O cardápio é o conjunto de instruções** (o x86): a lista fixa de pratos que aquela
+  cozinha sabe fazer. Dá pra abrir outra cozinha com o mesmo cardápio, e é por isso que
+  dois fabricantes competem; trocar o cardápio inteiro foi o que o Itanium tentou, e
+  ninguém sabia mais pedir (9.01).
+- Os primeiros programadores entravam na cozinha e mexiam no zero e um na mão. Hoje
+  **quem entra é o compilador**: pega o pedido em linguagem de gente e escreve a comanda
+  nos termos do cardápio.
+- Por que ninguém mais entra: a cozinha reordena pedidos sozinha, tem várias bancadas
+  trabalhando juntas e guarda ingrediente perto do fogão. Quem entrasse atrapalharia.
+- Onde quebra: o **sistema operacional não entra aqui** (ele já tem o síndico do prédio,
+  do 8.03); e da rede neural em diante a receita não foi escrita, foi achada provando
+  milhões de pratos. O Flávio ressalvou que não sabe se cabe sempre: usar onde couber.
+
 ## Arco da série
 
 Uma pergunta única atravessa tudo: **como pedras que a gente move viraram máquinas que conversam?**
 Cada episódio adiciona uma peça: contar → instrumento → engrenagem → eletricidade → lógica → memória → universalidade → miniaturização → conexão → aprendizado → atenção.
 
-A série é dividida em **10 etapas** (reorganização de 22/08). A etapa é a unidade de planejamento e de leitura da página: cada uma tem um tema, um período e um punhado de episódios. Antes disso o plano vivia em duas listas paralelas (os 16 episódios da transcrição e os 11 de Equipamentos) que se sobrepunham — as etapas são a espinha única que substituiu as duas.
+A série é dividida em **10 etapas** (a 10 entrou em 07/09; a 11 que chegou a ser proposta virou extra no mesmo dia) (reorganização de 22/08 em 10; renumerada em 04/09 pra 9, quando a antiga 7 foi absorvida pela 6; a tabela abaixo segue a numeração de 04/09, mas os títulos das seções mais antigas deste arquivo ainda trazem a numeração velha). A etapa é a unidade de planejamento e de leitura da página: cada uma tem um tema, um período e um punhado de episódios. Antes disso o plano vivia em duas listas paralelas (os 16 episódios da transcrição e os 11 de Equipamentos) que se sobrepunham — as etapas são a espinha única que substituiu as duas.
 
-## As 10 etapas
+## As etapas (9 fechadas, a 10 aprovada em 07/09)
 
 | # | Etapa | Complemento | Período | Eps | Status |
 |---|---|---|---|---|---|
@@ -20,11 +63,11 @@ A série é dividida em **10 etapas** (reorganização de 22/08). A etapa é a u
 | 3 | **As engrenagens assumem** | a mecânica calcula sozinha | 1642–1837 | 6 | 🟢 |
 | 4 | **Domesticando o raio** | de fenômeno do céu a corrente no fio | 1600–1880 | 7 | 🟠 |
 | 5 | **A eletricidade aprende a pensar** | quando o interruptor virou lógica | 1854–1937 | 3 | 🟠 |
-| 6 | **O computador no papel** | de porta lógica a máquina universal | 1936–1948 | 5 | 🔴 |
-| 7 | **O primeiro computador moderno** | válvula, cartão e a primeira máquina que ligou | 1936–1959 | 3 | 🟢 |
-| 8 | **A era dos transistores** | a máquina encolhe até caber num chip | 1947–1971 | 2 | 🔴 |
-| 9 | **Da sala pro mundo** | entra em casa e depois vira rede | 1975–1995 | 2 | 🔴 |
-| 10 | **A máquina que aprende** | o fecho do arco | 1950–2017 | 3 | 🔴 |
+| 6 | **A máquina que liga** | do papel à tomada, e da tomada à nossa língua | 1936–1959 | 4 | 🟢 |
+| 7 | **O computador encolhe** | a mesma máquina, cabendo numa pastilha | 1947–1974 | 3 | 🟢 |
+| 8 | **Da sala pro mundo** | entra em casa, vira rede, e o sistema que roda os outros | 1961–1997 | 3 | 🟢 (01 e 02 no ar em 06/09, 03 em 07/09) |
+| 9 | **A máquina que aprende** | as peças da corrida e o programa que é achado, não escrito | 1993–2017 | 4 | 🔴 (espinha aprovada em 06/09) |
+| 10 | **A rede vira feed** | a bolha, as redes sociais e o algoritmo que escolhe por você | 1995–2016 | 4 | 🔴 (aprovada em 07/09, a última da série) |
 
 Status: 🔴 não iniciado · 🟠 parcial (alguns episódios publicados) · 🟢 tudo publicado
 **Placar (27/08):** 15 episódios publicados + piloto (a etapa 7 inteira entrou em 27/08) · **20 pela frente** (fora os candidatos) · 6 áudios prontos aguardando conferência (eps `01`-`04` da etapa 4 + 2 extras). Fora das etapas existe também a pasta **`_EXTRAS\`** (episódios avulsos autocontidos — ver seção própria).
@@ -110,7 +153,7 @@ As imagens deste episódio estreiam o **padrão dos dois selos**: 3 reais do Com
 
 **Por que Hollerith está aqui e não na etapa 3:** a tabuladora do censo é elétrica de verdade (eletroímã e copinho de mercúrio fechando circuito), não puramente mecânica — e com ela nesta etapa a linha do tempo fica limpa, sem o card de 1890 voltando pra trás depois do telégrafo de 1837.
 
-## Etapa 6 — O computador no papel
+## Etapa 6 — O computador no papel (numeração antiga; desde 04/09 a etapa 6 é "A máquina que liga", em `_REFAZER/06`, e absorveu a 7 abaixo)
 
 *1936–1948.* A série para de contar máquinas e passa a **montar uma** — no papel, peça por peça, sem ligar nada. É a etapa mais conceitual e a mais densa: cinco episódios que se empilham na ordem.
 
@@ -122,7 +165,7 @@ As imagens deste episódio estreiam o **padrão dos dois selos**: 3 reais do Com
 | `04` | **Turing e a máquina universal** | min 49–57.3 | algoritmo, decidibilidade (Hilbert), máquina de Turing, máquina universal, tese de Church-Turing | 🔴 |
 | `05` | **Montando o computador completo** | min 57.4–66.9 | acumulador, contador, códigos de instrução (ADD, SUB, SAVE, LIMP, MPR), LOAD/GOTO/loop, hardware vs software | 🔴 |
 
-## Etapa 7 — O primeiro computador moderno
+## Etapa 7 — O primeiro computador moderno (numeração antiga; absorvida pela 6 em 04/09)
 
 *1941–1952.* O que a etapa 6 montou no papel agora **liga na tomada**: relé, cartão e válvula viram máquinas de verdade, e no fim delas nasce a ideia que define o computador moderno — o programa morando na mesma memória que os dados.
 
@@ -136,7 +179,7 @@ As imagens deste episódio estreiam o **padrão dos dois selos**: 3 reais do Com
 
 ⚠️ **A conferência contra o roteiro pagou o próprio custo na estreia.** Nos três episódios o NotebookLM pediu "aperte o Proximo" menos vezes que o roteiro mandava, e as animações, montadas antes do áudio existir, ficariam fora de sincronia. No ep `01` a v1 juntou Z3, Mark I, a corrida e o ENIAC num bloco de 10min44: foi **regravada** com um bloco novo no roteiro, a **REGRA DURA DAS TELAS** (diz quantas telas são e quantas vezes o áudio TEM que pedir Proximo, sem juntar duas telas num bloco), e a v2 saiu com 7 blocos em vez de 5 (a v1 está em `_v1\`). Nos eps `02` e `03` a diferença era de uma tela e as animações foram refeitas pro corte real. Números finais: **7, 8 e 8 telas**, iguais ao que o áudio realmente pede. Lição pros próximos: a REGRA DURA vale a pena no roteiro, e montar animação antes do áudio custa retrabalho. ⚠️ **O modelo 3D das três é o ábaco, de propósito**, com selo laranja de provisório, até existir o modelo certo de cada máquina (backlog em `_arquivos\modelos-3d\_a-fazer.md`, itens 33 a 36). São os primeiros episódios escritos já sob as regras de 26/08: janela temporal declarada e ficha humana dos protagonistas, todas conferidas na fonte antes de escrever. A planta de telas mandou no número e deu **8, 9 e 9**, não 8 nos três. Detalhe e o que conferir: `_HANDOFF-2026-08-27.md` na pasta da etapa.
 
-## Etapa 8 — A era dos transistores
+## Etapa 8 — A era dos transistores (numeração antiga; desde 04/09 é a etapa 7, "O computador encolhe", em `_REFAZER/07`, com 3 episódios no ar)
 
 *1947–1971.* A mesma máquina da etapa 7, encolhendo: válvula → transistor → circuito integrado. Termina com o computador inteiro dentro de uma pastilha.
 
@@ -145,26 +188,130 @@ As imagens deste episódio estreiam o **padrão dos dois selos**: 3 reais do Com
 | `01` | **O transistor** | transcrição min 66.9–72 (parte) | Bell Labs (1947), o fim da válvula, Lei de Moore (1965) | 🔴 |
 | `02` | **O chip e o microprocessador** | pesquisa nova | circuito integrado (Kilby/Noyce, 1958), corrida da miniaturização, Intel 4004 (1971) | 🔴 |
 
-## Etapa 9 — Da sala pro mundo
+## Etapa 8 — Da sala pro mundo (numeração de 04/09; era a 9)
 
-*1975–1995.* O computador deixa de ser equipamento de instituição e vira objeto de casa — e depois deixa de ser objeto sozinho e vira rede.
+*1975–1995.* O computador deixa de ser equipamento de instituição e vira objeto de casa; depois deixa de ser objeto sozinho e vira rede; e no fim a série explica a peça de software que estava sendo usada sem nome desde o `08-01`: o sistema operacional. Pasta: `_REFAZER/08 - Da sala pro mundo/`. Página: `site/etapas/etapa-08.html`.
 
-| Pasta | Episódio | Fonte | O que cobre | Status |
+**A virada de 06/09, que vale pra toda a trilha principal daqui em diante:** o dono ouviu a primeira gravação do `01` e detestou: "achei que íamos trabalhar em como construir o computador, e o áudio seguiu pra como vender". A partir daí o episódio da trilha principal (a) é sobre **construir, não vender**; (b) segue **as pessoas pelo nome, em ordem cronológica estrita**, com **ficha em voz alta** na primeira menção (nascimento, idade na cena, vivo ou ano da morte); e (c) usa cada passo pra mostrar **o hardware e o software empurrando um ao outro**. A regra antiga "sem biografia" da trilha principal morreu. Custou cinco gravações do `01` (v1 vendia; v2 idem; v3 sem ficha; v4 emendou telas e passou de 30 min; v5 passou) e uma do `02`. Regras que entraram no molde do roteiro por causa disso: avisos de costura em cada par de telas que já emendou, "Inicie dizendo" não é fala, abertura sem cena inventada, ficha é uma frase, e a tela 1 explica a página sem dizer a frase "aperte o Próximo".
+
+| Pasta | Episódio | Áudio | Duração | Telas | Status |
+|---|---|---|---|---|---|
+| `01` | **O computador chega em casa** | Como o computador pessoal chegou em casa (v5) | 24:28 | 12 | 🟢 no ar 06/09 · 1973→1990: Intel 8080, Xerox PARC (Kay, Thacker, Lampson, o Alto por dentro), Roberts e o Altair, Gates e Allen sem a máquina, Wozniak e o Apple II, Bricklin e o VisiCalc, Jobs no PARC, a IBM em Boca Raton, a mãe do Gates e o QDOS, o Mac cabendo em 128 KB, Gates e o Windows · v1–v4 em `_v1..._v4/` |
+| `02` | **Conectando tudo: a internet** | Da ARPANET ao surgimento da web (v2) | 18:07 | 11 | 🟢 no ar 06/09 · 1962→1995: Licklider, Kleinrock/Baran/Davies/Roberts e o pacote, o IMP da BBN e o "LO" do Kline, Tomlinson e a arroba, Cerf e Kahn e o envelope, Postel e o dia da virada, Mockapetris e o DNS, Berners-Lee e a web, Andreessen e o Mosaic · v1 (sem pessoas) em `_v1/` |
+| `03` | **O sistema operacional** | A história do síndico dos computadores | 16:26 | 12 | 🟢 no ar 07/09, aprovado de primeira na conferência (12 telas, 11 pedidos, 10 fichas). Espinha aprovada em 06/09, pesquisa nova. 1964→1997: (1) o que é um sistema operacional, o programa que roda os outros: quem usa o processador agora, onde cada um mora na memória, o disco como arquivos, teclado e tela como peças trocáveis; (2) Unix e C, Thompson e Ritchie na Bell Labs, 1969–73, o sistema que sai de uma máquina e roda em outra, software solto do hardware pela primeira vez; (3) CP/M e DOS, Kildall, 1974–81, o que o `01` já contou agora por dentro; (4) Mac × Windows, 1984–95, o processo de 1988 a 1994, o Windows 95, a Apple quase quebrando; (5) GNU e Linux, Stallman 1983 e Torvalds 1991, a licença livre e o núcleo que ninguém vende (Tanenbaum e o Minix no meio); (6) onde foi parar: todo servidor da web, o Android, cada máquina que treina IA, e a Apple comprando o NeXT em 1997, o Mac virando Unix por baixo. Fio hardware ↔ software: o sistema operacional é a camada que deixa o mesmo software rodar em hardware diferente. É a terceira e última vez que a série volta no tempo (1964) |
+
+## Etapa 9 — A máquina que aprende (numeração de 04/09; era a 10)
+
+*1993–2017.* A última etapa, **reescrita em 06/09 com o pedido do dono: "lembra que estamos construindo o computador, queremos saber das peças"**. Antes eram três episódios só de ideia (invernos da IA, deep learning, Transformer). Agora são quatro, e os dois primeiros são de peça: a corrida do processador e a placa de vídeo, que é a peça feita pra jogo que virou a máquina de treinar rede. Só depois vem a máquina que aprende, e ela chega como o Alto chegou: uma ideia na gaveta desde 1958 esperando o hardware baratear. Fecha o arco aberto no piloto. Molde igual ao da etapa 8: pessoas com ficha, ordem estrita, fio hardware ↔ software, 12 telas. Pasta a criar: `_REFAZER/09 - A máquina que aprende/`.
+
+| Pasta | Episódio | Período | O que cobre | Status |
 |---|---|---|---|---|
-| `01` | **O computador chega em casa** | pesquisa nova | Altair, Apple, IBM PC, interface gráfica (Xerox PARC → Mac/Windows) | 🔴 |
-| `02` | **Conectando tudo: a internet** | pesquisa nova | ARPANET (1969), TCP/IP, e-mail, a web de Tim Berners-Lee (1991) | 🔴 |
+| `01` | **A corrida do processador** | 1993–2006 | Pentium (1993); a AMD, nascida em 1969 como segunda fonte do 8086 (Jerry Sanders), vira concorrente com o Athlon (1999) e chega primeiro a 1 GHz (2000); Pentium III e 4; a **parede do calor** por volta de 2004, quando a frequência para de subir; o AMD64 (2003) que a Intel teve que copiar; a saída: dois núcleos em vez de um mais rápido (Core 2 Duo, 2006). Lição: a Lei de Moore continua dando transistor, mas para de dar velocidade, e o software vai ter que virar paralelo | 🟠 07/09: trio no molde novo; v1 (telas 11 e 12 emendadas) e v2 ("um milhão" no 1 GHz, "ficha" lida em voz alta) rejeitadas e guardadas em `_v1/` e `_v2/`; **v3 gravada e conferida** ("A Batalha Que Quase Derreteu os Processadores", 13:45, 11 pedidos, 9 fichas certas), página de 12 telas com 18 fotos do Commons, `etapa-09.html` e QA local verdes; falta o dono ouvir e mandar subir (deploy, card 09 e menu preparados em scripts) |
+| `02` | **A placa de vídeo** | 1996–2007 | por que o processador é ruim em pintar pixel (uma conta por vez, milhões de pontos); 3dfx Voodoo (1996) pra jogo; NVIDIA (Jensen Huang, 1993) e a GeForce 256 (1999), a primeira chamada de GPU; ATI Radeon (2000) e a AMD comprando a ATI (2006); a GPU como milhares de núcleos pequenos fazendo a mesma conta em números diferentes; CUDA (2007), a placa aberta pra conta que não é jogo. Lição: uma peça feita pra jogo vira a peça mais importante da era seguinte | 🟠 07/09: trio no molde novo (7 fichas); v1 sem estrutura e v2 com "400 bilhões" descartadas (em `_v1/` e `_v2/`); **v3 gravada** ("Como a placa de vídeo virou matemática", 12:25, 11 pedidos, 7 fichas, valor da compra da ATI certo), página de 12 telas com 15 fotos, marcadores e QA local verdes; ressalva: 12 min e nomes ditos duas vezes; falta o dono ouvir |
+| `03` | **A máquina que aprende** | 1958–2012 | McCulloch e Pitts (1943) em uma frase; Rosenblatt e o perceptron (1958); Minsky e Papert (1969) e o primeiro inverno; Hinton, Rumelhart e Williams e o backpropagation (1986); LeCun lendo cheque (1989–98); o segundo inverno; Fei-Fei Li e o ImageNet (2009); 2012: o AlexNet de Krizhevsky, Sutskever e Hinton treinado em **duas placas de vídeo de jogo**, e o erro caindo pela metade. Lição: a ideia estava na gaveta desde 1958, como o Alto; a GPU é que ficou barata | 🟠 07/09: trio no molde novo (14 fichas; Krizhevsky nomeado sem ficha); v1 descartada (25 min, nenhum Próximo); **v2 gravada e conferida** ("Como as GPUs destravaram as redes neurais", 15:40, 11 pedidos, 14 fichas certas), página de 12 telas com 15 fotos, marcadores e QA local verdes; falta o dono ouvir |
+| `04` | **2017: Attention is All You Need** | 2014–2017 | o gargalo das redes que leem uma palavra por vez (não aproveitam a GPU, que quer tudo ao mesmo tempo); a atenção (Bahdanau, 2014); o Transformer (Vaswani e mais sete, Google, 2017), desenhado pra ser paralelo: software com a forma do hardware; a TPU (2016); GPT e BERT (2018). Fecho do arco: da pedra do ábaco ao peso da rede, a máquina ainda é Boole mais Von Neumann mais um programa, só que agora o programa é **achado, não escrito** | 🟠 07/09: trio no molde novo (8 fichas; os oito autores sem ficha); v1 (11 min) e v3 ("naquela cena", "William") descartadas; **v2 é a boa** ("Como o Transformer matou a fila", 16:53, 11 pedidos, 8 fichas, fecha a série), página de 12 telas, marcadores e QA local verdes; ⚠️ ressalva: diz que o autor do BERT "não tem nome público" (falso) e Boole sai "bully"; falta o dono ouvir e decidir se regrava |
 
-## Etapa 10 — A máquina que aprende
+*Pessoas com ficha a conferir na hora de escrever (vivos em 2026 pelo que se sabe em 06/09): Jensen Huang (n. 1963), Geoffrey Hinton (n. 1947), Yann LeCun (n. 1960), Fei-Fei Li (n. 1976), Alex Krizhevsky e Ilya Sutskever (n. 1986); mortos: Andy Grove (1936–2016), **Jerry Sanders (1936–2024, conferido em 07/09: o plano de 06/09 o tinha como vivo)**, Frank Rosenblatt (1928–1971), Marvin Minsky (1927–2016), Seymour Papert (1928–2016), David Rumelhart (1942–2011). As fichas conferidas do 9.01 (nove pessoas, com fontes) estão em `_REFAZER/09 - A máquina que aprende/01 - A corrida do processador/_pesquisa.md`.*
 
-*1950–2017.* A última peça: em vez de instruir a máquina passo a passo, deixar ela **ajustar os próprios números** até acertar. Fecha o arco aberto no piloto.
+## Etapa 10 — A rede vira feed (aprovada em 07/09)
 
-| Pasta | Episódio | Fonte | O que cobre | Status |
+*1995–2016.* Nasceu de um pedido dele em 07/09: **redes sociais fazendo a internet bombar,
+a crise das ponto com, e as inteligências artificiais dos algoritmos de recomendação**.
+Ele aprovou esta etapa e, no mesmo dia, decidiu que **a série não fecha**: segue sem ideia
+de fim. Então o `10.04` NÃO é fim de série, é fim de etapa.
+
+Onde encaixa: a etapa 8 deixou a rede aberta pro comércio em 1995 e parou ali. Esta etapa
+pega exatamente esse ponto e conta o que a rede virou: primeiro dinheiro, depois gente,
+depois um modelo escolhendo o que cada um vê. Os anos se sobrepõem com as etapas 9 e 11,
+como já aconteceu entre a 8 e a 9; a série conta uma linha de cada vez.
+
+Por que ela vem antes da 11 na numeração: **é o algoritmo de recomendação que dá o dado, o
+dinheiro e as placas que a etapa seguinte vai gastar.** A primeira máquina que aprendeu
+mexendo com todo mundo não foi a que conversa, foi a que escolhe o próximo vídeo.
+
+| Pasta | Episódio | Período | O que cobre | Status |
 |---|---|---|---|---|
-| `01` | **IA: a promessa e os invernos** | pesquisa nova | teste de Turing, Dartmouth 1956, perceptron, invernos da IA, backpropagation | 🔴 |
-| `02` | **Deep learning: a virada** | pesquisa nova | ImageNet/AlexNet (2012), GPUs treinando redes, word embeddings, seq2seq e o gargalo das RNNs | 🔴 |
-| `03` | **2017: Attention is All You Need** | pesquisa nova | o Transformer: atenção no lugar de recorrência, por que destravou GPT/BERT. Fechamento: da pedra do ábaco ao peso da rede neural | 🔴 |
+| `01` | **A bolha** | 1995–2002 | a abertura da bolsa da Netscape em agosto de 1995 e o dinheiro entrando; Amazon e eBay; empresa sem receita valendo bilhões; o estouro em março de 2000 e o que sobrou no chão: fibra ótica enterrada e barata, e gente treinada. Lição: a bolha pagou a infraestrutura que a década seguinte usou quase de graça | 🟢 **NO AR desde 08/09** (v1, 16:02) |
+| `02` | **A busca vira negócio** | 1998–2004 | o PageRank e a busca que ordena a web por quem aponta pra quem; o anúncio ao lado do resultado como o modelo que sustentou a rede inteira; o primeiro algoritmo que ordena o que bilhões de pessoas veem. Lição: quando o software ordena, alguém decide a ordem | 🟢 **NO AR desde 08/09** (v3, 13:35) |
+| `03` | **As redes sociais** | 2002–2012 | de Friendster e MySpace ao Facebook, Twitter e YouTube; o feed cronológico enquanto dá, e a hora em que não dá mais: gente demais publicando, e a máquina passa a escolher. Lição: o volume de gente virou um problema de computação | 🟢 **NO AR desde 08/09** (v2, 21:58) |
+| `04` | **O algoritmo de recomendação** | 2006–2016 | o prêmio da Netflix (2006–2009) e a conta que descobre gosto sem entender de filme; o feed ordenado por modelo; o YouTube trocando a recomendação por rede neural em 2016, quatro anos depois da AlexNet. Lição: a primeira máquina que aprendeu e tocou todo mundo, e o dado que ela gerou é o combustível da etapa seguinte | 🟠 **v1 reprovada (usou "genial"); v2 travada na fila do NotebookLM. Único card ainda "em produção"** |
 
----
+*Pessoas a conferir na hora de escrever (ficha só com ano de nascimento público). Andreessen
+já apareceu no 8.02 com ficha: relembrar sem repetir a ficha.*
+
+### Deploy de 08/09: etapas 9 e 10 no ar
+
+Ele mandou subir com o `10.04` ainda gravando, então foram ao ar **a etapa 9 inteira e três
+dos quatro episódios da etapa 10**. O card do `10.04` continua "em produção" na
+`etapa-10.html`, que é o mesmo padrão que o site já usa.
+
+O que o deploy mexeu no site, além dos episódios: o card 09 do `computador.html` virou link
+e ganhou foto, o card 10 foi inserido, três textos que passariam a mentir foram corrigidos
+("9 etapas" → "10 etapas", nos dois lugares e no contexto da seção), o `menu.js` ganhou as
+duas entradas, e a contagem de extras do `index.html` foi de 8 para 10 (já estava defasada
+antes desta etapa).
+
+⚠️ **Antes de sobrescrever, os três arquivos compartilhados do site foram comparados com o
+que estava no ar** (`index.html`, `computador.html`, `menu.js`): estavam idênticos ao disco,
+então o patch não apagou trabalho de ninguém. Roteiro em
+`scratchpad/confere-antes-do-deploy.sh`.
+
+⚠️ **O `qa-producao.js` não basta**: ele só olha as animações, e passaria mesmo com o card
+ou o menu quebrados. Foi escrito um segundo verificador para os hubs
+(`scratchpad/qa-hubs-producao.js`), que confere os cards, os links, o menu, as contagens e
+o selo "em produção" restante. Os dois deram verde.
+
+### O que já está feito na etapa 10 (07/09)
+
+**`10.01` — "A bolha que pavimentou a internet atual", 16:02, v1 aprovada.** Passou de
+primeira, o que não aconteceu com nenhum episódio da etapa 9: 12 telas, 11 pedidos de
+Próximo, as nove fichas lidas e os três números de risco corretos (14 empresas no Super
+Bowl, a faixa de 85 a 95 por cento da fibra apagada, e o último quilômetro não creditado à
+bolha). A costura com o `9.04` saiu na primeira frase. Detalhe da conferência em
+`10 - A rede vira feed/01 - A bolha/_pesquisa.md`.
+
+**Texto do `9.04` corrigido junto**, sem regravar áudio: o kicker dizia "o último da série"
+e o fecho dizia "a série reconstruiu"; agora dizem que ali fecha o *arco da máquina* e que
+a etapa 10 volta pra linha da rede. É exatamente o que a regra 2 abaixo manda fazer.
+
+**`10.02` — trio escrito com pesquisa em fonte primária** (SEC, press releases do Google,
+os papers, a patente). Sete correções entraram no roteiro antes de gravar, e as três que
+mais salvaram o episódio:
+
+- o **AdWords de 2000 era cobrado por exibição**, não por clique; o clique só chega em
+  fevereiro de 2002, com o AdWords Select;
+- o leilão é **de segundo preço generalizado**, e não leilão de Vickrey nem segundo preço
+  puro (o paper que batizou o mecanismo existe justamente pra mostrar a diferença);
+- **Winograd e Motwani assinam o relatório do PageRank**, não o artigo que descreve o
+  buscador (esse tem só Brin e Page).
+
+A ficha da Wojcicki mudou de tela: ela entra na história em setembro de 1998, alugando a
+garagem, e não em 2003. Ordem cronológica estrita manda a ficha ir pra tela 4.
+
+## A série não fecha (decisão de 07/09, e o que ela muda)
+
+O dono decidiu em 07/09 que **a série segue sem ideia de fim**, e que **o `9.04` não será
+regravado**. Duas consequências, que valem pra tudo que for escrito daqui pra frente:
+
+1. **Nenhum episódio termina como fim de série.** A última tela de uma etapa faz o balanço
+   das pessoas, a lição da etapa e a pergunta que abre a próxima. A fórmula "esta é a
+   última da série" fica proibida.
+2. **A costura do `9.04` é resolvida no `10.01`, não regravando o `9.04`.** O áudio do
+   `9.04` diz que fecha a série; a tela 1 do `10.01` assume isso em uma frase, do mesmo
+   jeito que o `9.01` assumiu que os anos se sobrepõem com o `8.03`: *a série fechou o arco
+   da máquina em 2018 e agora volta pra contar a outra linha, a da rede*. Uma frase, sem
+   pedir desculpa e sem repetir.
+
+**Etapas previstas depois da 10** (espinhas de 07/09, ainda sem pesquisa):
+
+| # | Etapa | Período | O que cobre | Risco |
+|---|---|---|---|---|
+| 11 | **A máquina que conversa** | 2018–2022 | a escala do Transformer; o galpão (memória empilhada, placas ligadas, energia); ensinar a responder (exemplo e preferência humana); o ChatGPT em novembro de 2022 | baixo: fatos fechados |
+| 12 | **(sem título ainda)** | 2023–2026 | a corrida das placas e a NVIDIA virando a maior; o modelo que vê e ouve; o peso aberto contra o fechado; o agente que usa ferramenta | ⚠️ alto: papéis ainda mudam. Um dos oito autores do Transformer saiu do Google, voltou em 2024 e saiu de novo em 2026, tudo dentro do intervalo que a etapa contaria |
+
+Os candidatos a extra 67 a 70 (escala, galpão, ensinar a responder, ChatGPT) nasceram
+quando a etapa 11 tinha virado extra; com a série aberta eles voltam a ser **episódios da
+etapa 11**, e a lista de extras fica com eles só como reserva.
 
 ## _EXTRAS — episódios avulsos (23/08)
 
@@ -238,8 +385,8 @@ Três consequências registradas junto:
 | 31 | Von Neumann e a briga do rascunho | figura | 6 Liga | 🔴 |
 | 32 | Grace Hopper e o compilador | figura | 6 Liga | 🔴 (ep 07-03 publicado vira extra) |
 | 33 | O transistor | peça | 7 Encolher | 🟠 `transistor.html` |
-| 34 | Kilby, Noyce e o circuito integrado | figura | 7 Encolher | 🔴 |
-| 35 | A lei de Moore | conceito | 7 Encolher | 🔴 |
+| 34 | Kilby, Noyce e o circuito integrado | figura | 7 Encolher | 🟢 EX-09 (06/09) |
+| 35 | A lei de Moore | conceito | 7 Encolher | 🟢 EX-10 (06/09) |
 | 36 | Como um pacote atravessa a internet | conceito | 7 Encolher | 🔴 |
 | 37 | O Perceptron | peça | 7 Encolher | 🔴 |
 | 38 | O que é treinar uma rede | conceito | 7 Encolher | 🔴 |
@@ -250,6 +397,33 @@ Três consequências registradas junto:
 | 43 | O conjunto de instruções | conceito | 6 Liga (A planta) | 🔴 |
 | 44 | A IBM e o Mark I, a máquina que contava em decimal | peça + figura | 6 Liga | 🔴 |
 | 45 | O ENIAC | peça | 6 Liga | 🔴 |
+| 46 | A Intel, a empresa | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
+| 47 | O 8080 da Intel, a peça | peça | 8 Sala pro mundo | 🔴 pedido 06/09 |
+| 48 | O Alto da Xerox: como a tela coube no hardware (bitmap, microcódigo, mouse) | peça + figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
+| 49 | A IBM, do mainframe ao PC (não confundir com o 44, que é o Mark I) | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
+| 50 | A Apple: Wozniak e Jobs | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
+| 51 | A Microsoft: Gates e Allen | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
+| 52 | O BASIC: a linguagem que veio junto com o computador de casa (Dartmouth 1964 → Altair 1975 → o BASIC que ligava junto no Apple II, PET e TRS-80) | conceito + figura | 8 Sala pro mundo / 6 Liga (O compilador) | 🔴 pedido 06/09 |
+| 53 | Tim Berners-Lee e a web (o CERN, as três peças, o domínio público de 1993) | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
+| 54 | O Pentium, a peça (o que mudou por dentro do 486 pro Pentium: dois caixas, o barramento de 64 bits, o erro da divisão) | peça | 9 Máquina que aprende (9.01) | 🔴 pedido 07/09 |
+| 55 | A AMD, a empresa que briga em duas frentes (CPU contra a Intel desde 1969, placa de vídeo contra a NVIDIA desde a compra da ATI em 2006) | figura | 9 Máquina que aprende (9.01 e 9.02) | 🔴 pedido 07/09 |
+| 56 | A NVIDIA e os núcleos de processamento (Jensen Huang, 1993; da GeForce ao CUDA: por que milhares de núcleos pequenos) | peça + figura | 9 Máquina que aprende (9.02) | 🔴 pedido 07/09 |
+| 57 | NVIDIA contra AMD: a corrida das placas de vídeo (3dfx, ATI, GeForce, Radeon) | conceito | 9 Máquina que aprende (9.02) | 🔴 pedido 07/09 |
+| 58 | A história dos videogames (do Pong ao console, e por que o jogo puxou a placa de vídeo) | conceito | 9 Máquina que aprende (9.02) | 🔴 pedido 07/09 |
+| 59 | O que é uma bolha, e por que a das ponto com estourou em março de 2000 | conceito | 10 A rede vira feed (10.01) | 🔴 pedido 07/09 |
+| 60 | A fibra enterrada na bolha: a infraestrutura barata que sobrou no chão | peça | 10 A rede vira feed (10.01) | 🔴 pedido 07/09 |
+| 61 | O PageRank: ordenar a web por quem aponta pra quem | conceito | 10 A rede vira feed (10.02) | 🔴 pedido 07/09 |
+| 62 | O leilão do anúncio: como a rede inteira passou a se pagar | conceito | 10 A rede vira feed (10.02) | 🔴 pedido 07/09 |
+| 63 | O feed: cronológico contra ordenado por modelo | conceito | 10 A rede vira feed (10.03) | 🔴 pedido 07/09 |
+| 64 | O prêmio da Netflix: como a máquina descobre gosto sem entender de filme | conceito | 10 A rede vira feed (10.04) | 🔴 pedido 07/09 |
+| 65 | 2016: quando a recomendação do YouTube virou rede neural | conceito | 10 A rede vira feed (10.04) | 🔴 pedido 07/09 |
+| 66 | O que o algoritmo de recomendação faz com quem assiste (a bolha de conteúdo) | conceito | 10 A rede vira feed (10.04) | 🔴 pedido 07/09 |
+| 67 | A escala: por que o mesmo desenho de 2017 ficou mil vezes maior | conceito | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
+| 68 | O galpão: memória empilhada, placas ligadas entre si, energia e refrigeração | peça | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
+| 69 | Ensinar a responder: do texto que completa ao que responde pergunta | conceito | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
+| 70 | Novembro de 2022: a máquina que conversa chega na mão de todo mundo | figura | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
+
+**Encomenda do dono (06/09): oito extras da etapa 8** (46 a 53 acima; o BASIC e o Berners-Lee entraram por último, ouvindo o `08-01` e o `08-02`). ✅ **O `08-02` foi refeito no molde do `08-01`** (pessoas com ficha, fio hardware ↔ software) em 06/09, v2 "Da ARPANET ao surgimento da web", 18:07, 11 telas, aprovado de primeira na conferência (o "1999" da transcrição era o Whisper pequeno; o modelo maior ouve "1998" pro Postel). A v1 está em `_v1/` na pasta do episódio. O dono tinha ouvido a v1 e apontado o mesmo defeito da v1 do `08-01`: sem nome e sem ficha, porque foi escrita antes da virada. Pra levar ao extra do Alto (44): o que saiu do PARC saiu por padrão publicado (Ethernet, 1980), por livro (Smalltalk-80, 1983) e por gente que mudou de empresa (Tesler → Apple 1980, Simonyi → Microsoft 1981); ninguém levou planta. Vieram de ele ouvir o `08-01` refeito com as pessoas pelo nome: cada empresa e peça que o episódio só toca de passagem ganha o próprio extra, da família *peça e figura* (com nome e data). ⚠️ O áudio do `08-01` já está gravado com "SEM GANCHO DE EXTRA", então esses seis não são anunciados no ar: quem chega neles é pelo hub de extras e pelo card da etapa. Ordem entre eles ainda não decidida.
 
 **Aprovados pelo dono (03/09): os seis extras com gancho no episódio `06-02`.** São 18 O relé · 28 A válvula · 29 O Z3 e Konrad Zuse · 44 A IBM e o Mark I · 45 O ENIAC · 30 As seis programadoras do ENIAC. O trio do `06-02` já foi atualizado com os ganchos: relé e válvula saem juntos numa frase só, e os outros quatro têm uma frase cada, somando **seis momentos de gancho** no episódio (contando o Hertz e o decimal, que já estavam lá e continuam). ⚠️ **O filme que ele lembrou, *Estrelas Além do Tempo* (2016), não é dessa história:** ele conta as calculistas da NASA nos anos 1960 (Katherine Johnson e as outras), que são material da série da Lua, não do ENIAC. As seis do ENIAC são outro grupo, outro lugar e vinte anos antes; o registro em vídeo delas é *Top Secret Rosies* (2010) e o livro de referência é o *Proving Ground*, da Kathy Kleiman, que foi quem achou as seis nas fotos.
 

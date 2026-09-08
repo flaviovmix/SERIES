@@ -1,0 +1,65 @@
+A BUSCA VIRA NEGOCIO - CONTEXTO
+===============================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como Reinventar o
+Computador do Zero. A serie reconstroi o computador do zero, do abaco em diante, uma peca
+por episodio. Este episodio cobre de 1998 a 2004, em ORDEM CRONOLOGICA, e conta a
+historia PELAS PESSOAS, com nome e ficha, usando cada passo pra mostrar como o hardware e
+o software melhoram um empurrando o outro.
+
+Por que este episodio existe: o anterior terminou com a rede cheia de cano largo e de
+pagina, e com uma pergunta: se milhoes de paginas falam da mesma coisa, quem decide qual
+delas voce ve primeiro, e como quem decide isso ganha dinheiro? Este episodio responde as
+duas.
+
+OS ANOS SE SOBREPOEM COM O EPISODIO ANTERIOR (que foi ate 2002). Nao e voltar no tempo: as
+duas historias acontecem ao mesmo tempo, e a serie conta uma linha de cada vez. Dizer isso
+na tela 1, em uma frase.
+
+A TESE: sao DUAS invencoes, nao uma. A primeira ordena a web olhando pra fora da pagina,
+pros links que apontam pra ela. A segunda cobra por essa ordem leiloando posicao em tempo
+real. E a segunda invencao e que obriga a maquina, pela primeira vez nesta serie, a
+PREVER comportamento humano pra funcionar: pra ordenar o anuncio ela precisa estimar se
+voce vai clicar. Nao e ainda a rede que aprende sozinha; e o degrau anterior.
+
+O fio, em doze passos:
+
+1. Pagina demais. Os buscadores ordenavam pelo que a pagina dizia de si mesma, contando
+   repeticao de palavra, e por isso eram faceis de enganar. O intervalo 1998-2004.
+2. Dois estudantes em Stanford: Larry Page e Sergey Brin, com Terry Winograd e Rajeev
+   Motwani. A virada de pergunta: nao "esta pagina fala do assunto?", e sim "esta pagina e
+   importante?". A resposta estava fora da pagina.
+3. O PageRank (1998): cada link e um voto, o voto de quem recebe muitos votos vale mais, e
+   quem aponta pra muita gente divide o proprio voto. O problema circular resolvido por
+   iteracao. A patente ficou com Stanford, licenciada em troca de acoes.
+4. Agosto de 1998: Andy Bechtolsheim assiste a demonstracao e escreve um cheque de 100 mil
+   dolares pra uma empresa que ainda nao existia. Registro em 04/09/1998. Em plena bolha,
+   ficaram seis anos de capital fechado.
+5. Como se paga uma busca que e de graca. O banner vendido por exibicao nao servia. O que
+   a busca tem de unico: a pessoa DIZ o que quer, com as proprias palavras, na hora.
+6. Fevereiro de 1998: Bill Gross apresenta o GoTo.com, um buscador onde o anunciante da
+   lance por palavra e paga por clique. Foi criticado no palco. A empresa vira Overture e a
+   Yahoo compra em 2003. O defeito do desenho: ordenar so pelo maior lance.
+7. Outubro de 2000: o AdWords nasce cobrando por EXIBICAO, com cerca de 350 anunciantes.
+   Receita de 19 milhoes de dolares no ano. Eric Schmidt chega em 2001.
+8. Fevereiro de 2002: a virada pro pagamento por CLIQUE, em leilao automatico. Duas pecas:
+   o leilao de segundo preco, e a posicao saindo do lance multiplicado pela chance de
+   clique. Essa segunda peca obriga a maquina a prever comportamento.
+9. O tamanho da conta: 19 milhoes (2000), 439 milhoes (2002), 3,2 bilhoes de dolares
+   (2004), 99% vindo de anuncio. Susan Wojcicki leva o anuncio pra fora da busca.
+10. 2002-2004: a Overture processa o Google dizendo que o leilao era invencao dela. Acordo
+   em agosto de 2004, com acoes entregues pra Yahoo. A ideia do leilao nao foi do Google.
+11. 19 de agosto de 2004: abertura de capital a 85 dolares por acao, perto de 23 bilhoes
+   de valor, feita por leilao aberto. Cerca de 200 milhoes de buscas por dia.
+12. Onde para: 2004. Balanco das pessoas nome por nome. A licao: ordenar informacao virou
+   o negocio mais valioso da rede, e pra cobrar por essa ordem a maquina teve que comecar
+   a adivinhar gente. Pergunta que abre o proximo episodio: a busca so responde quando
+   voce pergunta; o que a rede mostra pra quem chegou sem pergunta nenhuma?
+
+CUIDADOS: dizer sempre "abertura de capital", nunca "IPO". Nao usar as palavras Vickrey
+nem GSP: dizer "leilao de segundo preco" em portugues. Nao dizer que o leilao de anuncio
+foi invencao do Google. Nao transformar isso em historia de empresario de sucesso: o
+assunto e a peca de software.
+
+Use este contexto apenas como apoio.

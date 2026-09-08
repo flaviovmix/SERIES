@@ -1,0 +1,7 @@
+Titulo: A engenharia que transformou buscas em bilhões
+Notebook: 10-02-A busca vira negocio
+
+Descricao:
+Os textos descrevem o surgimento do Google e a transformação da busca em um modelo de negócios bilionário entre mil novecentos e noventa e oito e dois mil e quatro. A narrativa detalha como Larry Page e Sergey Brin criaram o PageRank, um software capaz de medir a relevância de páginas através de links, diferenciando-se de buscadores que apenas contavam palavras. A obra explica que o sucesso financeiro veio com a implementação de leilões de anúncios por clique, uma ideia de Bill Gross que o Google refinou ao introduzir a previsão de comportamento humano para ordenar publicidade. O relato enfatiza que a inovação tecnológica e o hardware barateado permitiram que a empresa escalasse sua infraestrutura para organizar a web. Por fim, as fontes destacam que a abertura de capital em dois mil e quatro consolidou a ideia de que o dado fornecido pelo usuário é o ativo mais valioso da rede. Esse processo transformou a máquina em uma ferramenta preditiva, preparando o terreno para o futuro da internet como um feed contínuo de informações.
+
+Link: https://notebook.google.com/notebook/1e4b0d68-be48-4977-80fb-4d394376977e

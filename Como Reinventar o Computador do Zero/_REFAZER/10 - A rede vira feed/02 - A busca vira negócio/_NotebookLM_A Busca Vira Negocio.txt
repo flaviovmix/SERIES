@@ -1,0 +1,498 @@
+Inicie dizendo: A Busca Vira Negócio
+---------------
+
+Este e o segundo episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero. O anterior contou a bolha das ponto com: o dinheiro
+chegou antes do uso, quebrou em dois mil, e deixou enterrado no chao o cano que a decada
+seguinte usaria por quase nada. Ele terminou com uma pergunta: se existem milhoes de
+paginas falando da mesma coisa, quem decide qual delas voce ve primeiro, e como quem
+decide isso ganha dinheiro?
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Este episodio tem dinheiro no titulo, e por isso a
+regra vale mais aqui: o assunto e a PECA DE SOFTWARE que ordena a web e a peca de software
+que cobra por isso. Receita e valor de mercado entram pra dizer o que aquilo permitiu
+construir, nunca como assunto em si. NAO transformar em historia de empresario de sucesso.
+
+ESTE EPISODIO COBRE DE 1998 A 2004, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. Os anos se sobrepoem com o
+episodio anterior, que foi ate dois mil e dois: os dois acontecem ao mesmo tempo, e a
+serie conta uma linha de cada vez. Dizer isso na tela 1, em uma frase.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome. Dizer quem fez, onde estava e por
+que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquele momento, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Larry
+Page, nascido em mil novecentos e setenta e tres, tinha vinte e cinco anos; vivo em dois
+mil e vinte e seis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE SO,
+dita e seguida em frente: sem comentario, sem contar mais nada da vida da pessoa. NAO
+pular ficha de ninguem e NAO inventar dado que nao esteja na ficha. Sao oito fichas, nesta ordem de
+aparicao: Page, Brin, Winograd, Motwani, Bechtolsheim, Wojcicki, Gross e Schmidt.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer
+"ficha", "deixa eu ler a ficha" nem nada parecido: emendar direto no nome. A PALAVRA
+"CENA" TAMBEM E MARCADOR: NAO dizer "naquela cena" nem "na cena".
+
+DUAS PESSOAS ESTAO MORTAS E SE FALA DELAS NO PASSADO: Rajeev Motwani, que morreu em dois
+mil e nove, e Susan Wojcicki, que morreu em dois mil e vinte e quatro. NAO dizer que
+alguem "e" alguma coisa hoje se a ficha disser que morreu.
+
+QUEM NAO TEM FICHA E NAO E NOMEADO: o segundo investidor daquele mesmo dia de agosto de
+mil novecentos e noventa e oito (um professor de Stanford que passou outro cheque de cem
+mil dolares minutos depois), os engenheiros que desenharam o leilao, Salar Kamangar e
+Sheryl Sandberg. Falar deles como o roteiro escreve, sem nome, quando aparecer.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", COM o "o", sem variacao. NAO juntar o conteudo de duas telas num bloco
+so, NAO adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta
+ouvindo com a pagina aberta so vira a tela quando esse pedido acontece.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido".
+
+ATENCAO ESPECIAL COM AS TELAS 3 e 4. A tela 3 e o PageRank, a ideia de ordenar por quem
+aponta. A tela 4 e a empresa nascendo. Duas telas, um pedido entre elas. NAO falar da
+fundacao da empresa na tela 3.
+
+ATENCAO ESPECIAL COM AS TELAS 5 e 6. A tela 5 e o problema do dinheiro: como se paga uma
+busca que e de graca. A tela 6 e a resposta do Bill Gross, o leilao de posicao. Duas
+telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 7 e 8. A tela 7 e o anuncio por exibicao (dois mil). A tela
+8 e a virada pro pagamento por clique (dois mil e dois) e o que ela obriga a maquina a
+fazer. Duas telas, dois pedidos. NAO falar de clique na tela 7.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 e dois mil e quatro, a abertura de
+capital. A tela 12 e OUTRA COISA: o balanco das pessoas, a licao e a pergunta que abre o
+proximo episodio. Um pedido entre as duas. Em episodios anteriores desta serie essas duas
+ultimas telas ja sairam emendadas: NAO repetir.
+
+ESTE EPISODIO NAO FECHA A SERIE E NAO FECHA A ETAPA. E o segundo de quatro. Na ultima
+tela NAO dizer "ultima tela da serie", NAO dizer "ate o proximo", "proximo mergulho" nem
+"proximo encontro": so o balanco e a pergunta.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: "mil novecentos e noventa e oito", "mil novecentos
+e noventa e nove", "dois mil", "dois mil e um", "dois mil e dois", "dois mil e tres",
+"dois mil e quatro".
+
+NUMEROS E DINHEIRO DEVAGAR, SEMPRE COM A UNIDADE: "cem mil dolares", "dezenove milhoes de
+dolares", "quatrocentos e trinta e nove milhoes de dolares", "tres bilhoes e duzentos
+milhoes de dolares" (BILHOES, com B), "oitenta e cinco dolares por acao", "vinte e tres
+bilhoes de dolares", "duzentos milhoes de buscas por dia", "noventa e nove por cento".
+NAO trocar milhao por bilhao.
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar:
+
+- Abertura de capital: dizer sempre "abertura de capital". NAO dizer "IPO".
+- Google: fala-se "gú-gol". Larry Page: fala-se "lé-ri pêidj". Sergey Brin: fala-se
+  "sér-guei brín". Stanford: fala-se "stén-ford".
+- PageRank: fala-se "pêidj-renk"; dizer na primeira vez que o nome brinca com o sobrenome
+  do Page e com a palavra pagina.
+- Terry Winograd: fala-se "té-ri uí-no-grad". Rajeev Motwani: fala-se "ra-djív
+  mot-uá-ni". Andy Bechtolsheim: fala-se "ândi béc-tols-raim". Sun Microsystems: fala-se
+  "sân mai-cro-sís-tems".
+- AltaVista: fala-se "áuta-vísta", o buscador grande antes do Google. Yahoo: fala-se
+  "ia-rú".
+- Bill Gross: fala-se "bil grós". GoTo.com: dizer "gou tú ponto com". Overture: fala-se
+  "ó-ver-tchur".
+- AdWords: fala-se "éd-uôrds"; dizer na primeira vez que quer dizer "palavras de anuncio".
+- Eric Schmidt: fala-se "é-ric chímit". Susan Wojcicki: fala-se "sú-zan uo-djís-qui".
+- O leilao do anuncio: dizer em portugues, "leilao de segundo preco GENERALIZADO", com a
+  palavra generalizado junto. NAO dizer "leilao de Vickrey" e NAO dizer so "segundo preco"
+  sem o generalizado: sao mecanismos diferentes, e a diferenca e o assunto da tela 8. NAO
+  usar a sigla GSP.
+
+CUIDADOS DE FATO. A ideia do leilao de anuncio NAO foi do Google: foi do Bill Gross, e o
+Google pagou por ela num acordo em dois mil e quatro. O AdWords nasceu cobrando por
+EXIBICAO em dois mil e so virou pagamento por clique em dois mil e dois: sao duas coisas
+diferentes, em telas diferentes, e nao podem ser juntadas.
+
+⚠️ A LISTA DE PRONUNCIA ACIMA E INSTRUCAO PRA VOCE, NAO E FALA, E ESTE E O DEFEITO QUE
+DERRUBOU A GRAVACAO ANTERIOR. NUNCA dizer "que se pronuncia", "que se le", "pronuncia-se"
+nem nada parecido no ar. Na gravacao anterior saiu, mais de dez vezes, coisa como "o Larry
+Page, que se pronuncia Larry Page" e "a Susan Wojcicki, que se pronuncia Susan Wojcicki".
+Isso nao pode acontecer de novo: falar o nome do jeito certo, uma vez, e seguir em frente
+como se nada tivesse sido explicado.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "A Busca Vira Negocio".
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. Depois do titulo,
+a primeira frase e a retomada da pergunta que o episodio anterior deixou.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A carta de recomendacao: pra saber quem e bom numa area onde voce nao entende nada, voce
+  nao le o que cada um escreveu sobre si mesmo. Voce olha quem recomenda quem. E uma
+  recomendacao vinda de alguem que todo mundo recomenda vale mais que dez de gente que
+  ninguem conhece. O PageRank e isso: cada link e uma carta de recomendacao, e o peso da
+  carta depende de quem assinou. Um detalhe fecha a ideia: quem escreve muitas cartas
+  divide a propria reputacao entre elas.
+- A vitrine da loja, so pra tela 6: a posicao na prateleira sempre foi vendida, no
+  supermercado e no jornal. O que era novo era leiloar essa posicao em tempo real, a cada
+  pessoa que chega.
+
+Fora essas duas, sem analogias. Leilao, lance e clique sao explicados direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - PAGINA DEMAIS
+
+Retomar a pergunta que ficou: o episodio passado terminou com a rede cheia de cano largo,
+de gente e de pagina. Se milhoes de paginas falam da mesma coisa, quem decide qual voce ve
+primeiro?
+
+Dizer o tamanho do problema em uma frase concreta: em mil novecentos e noventa e oito, os
+buscadores existentes ordenavam pelo que a propria pagina dizia de si mesma, contando
+quantas vezes a palavra aparecia no texto. Quem repetia a palavra mil vezes escondida no
+fundo da pagina subia. O resultado era ruim de proposito, e todo mundo sabia.
+
+Dizer o que este episodio conta: a peca de software que resolveu isso, e a segunda peca de
+software que fez essa solucao se pagar. Sao duas invencoes, nao uma.
+
+Dizer que os anos se sobrepoem com o episodio anterior, em uma frase: enquanto a bolha
+inflava e estourava, esta outra historia acontecia ao lado.
+
+Dizer o fio: pessoas em ordem, e em cada passo o hardware e o software empurrando um ao
+outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e noventa e oito a
+dois mil e quatro.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver dois estudantes olharem o problema de outro jeito.
+
+TELA 2 - DOIS ESTUDANTES E UMA PERGUNTA DIFERENTE
+
+Contar as pessoas: Larry Page e Sergey Brin eram alunos de doutorado em Stanford. Page
+queria estudar a estrutura de links da web: quem aponta pra quem.
+
+FICHA: Larry Page, nascido em mil novecentos e setenta e tres, tinha vinte e cinco anos;
+vivo em dois mil e vinte e seis. Sergey Brin, nascido em mil novecentos e setenta e tres,
+tinha vinte e cinco anos; vivo em dois mil e vinte e seis.
+
+Contar os dois professores, rapido: o orientador de Page era Terry Winograd, e quem
+ajudou na parte matematica foi Rajeev Motwani. Os dois assinam o relatorio do metodo,
+junto com os alunos.
+
+FICHA: Terry Winograd, nascido em mil novecentos e quarenta e seis, tinha cinquenta e dois
+anos; vivo em dois mil e vinte e seis. Rajeev Motwani, nascido em mil novecentos e
+sessenta e dois, tinha trinta e seis anos; morreu em dois mil e nove.
+
+Dizer a virada de pergunta, que e o coracao da tela: os outros perguntavam "esta pagina
+fala do assunto?". Eles perguntaram "esta pagina e importante?". E a resposta pra segunda
+pergunta nao estava dentro da pagina; estava fora dela, no que as outras paginas faziam.
+
+Dizer a licao de hardware e software: a web ja tinha o dado que resolvia o problema, os
+links, e ninguem estava usando. Nao faltava peca; faltava olhar.
+
+Fechar pedindo o Proximo pra ver como se mede importancia sem entender do assunto.
+
+TELA 3 - O PAGERANK
+
+Usar a analogia da carta de recomendacao, inteira, aqui.
+
+Explicar o metodo em palavra simples, sem formula: cada link que uma pagina faz pra outra
+conta como um voto. Mas os votos nao valem igual: o voto de uma pagina que recebe muitos
+votos vale mais. E quem aponta pra muita gente divide o proprio voto entre todas.
+
+Dizer o problema circular e como se resolve, porque e a parte bonita: pra saber quanto
+vale o voto de A voce precisa saber quanto vale A, e pra saber quanto vale A voce precisa
+dos votos que A recebeu. Parece nao ter comeco. A saida e comecar chutando que todas as
+paginas valem o mesmo, recalcular tudo, e repetir varias vezes ate os numeros pararem de
+mudar. O nome disso e iteracao.
+
+Dizer o nome e a data com cuidado: o metodo se chama PageRank, e o relatorio que descreve
+ele, assinado pelos quatro, e de mil novecentos e noventa e oito. Nao confundir com o
+outro artigo do mesmo ano, o que descreve o buscador inteiro: esse tem so dois autores,
+Brin e Page.
+
+Dizer o que aconteceu com a patente, porque termina bem: a patente ficou com a
+universidade Stanford, com o Page como inventor, e Stanford licenciou pros dois em troca
+de acoes. Anos depois, Stanford vendeu essas acoes por trezentos e trinta e seis milhoes
+de dolares.
+
+Dizer a licao de hardware e software: fazer essa conta exige guardar a web inteira e
+recalcular tudo muitas vezes. E software que pede maquina, e por isso ele so podia
+aparecer agora, com maquina barata em cima da mesa.
+
+Fechar pedindo o Proximo pra ver isso sair da universidade.
+
+TELA 4 - A EMPRESA NASCE
+
+Contar a cena, que e verdadeira: em agosto de mil novecentos e noventa e oito, os dois
+mostram o buscador pra Andy Bechtolsheim, que tinha fundado a Sun Microsystems. Ele
+assiste, olha o relogio e escreve um cheque de cem mil dolares em nome de uma empresa que
+ainda nao existia. O cheque ficou na gaveta ate a empresa ser registrada, em quatro de
+setembro de mil novecentos e noventa e oito.
+
+FICHA: Andy Bechtolsheim, nascido em mil novecentos e cinquenta e cinco, tinha quarenta e
+dois anos; vivo em dois mil e vinte e seis.
+
+Contar o que quase todo mundo esquece, em uma frase e SEM NOMEAR: minutos depois, na
+varanda daquela mesma casa, um professor de Stanford passou um segundo cheque do mesmo
+valor. O comeco teve dois cheques, nao um.
+
+Contar onde a empresa se instalou, porque ja apresenta uma pessoa que volta no fim: em
+setembro de mil novecentos e noventa e oito eles alugaram a garagem da casa de Susan
+Wojcicki, em Menlo Park, por mil e setecentos dolares por mes. Ela ainda nao trabalhava
+com eles; virou funcionaria numero dezesseis no ano seguinte.
+
+FICHA: Susan Wojcicki, nascida em mil novecentos e sessenta e oito, tinha trinta anos;
+morreu em dois mil e vinte e quatro.
+
+Dizer, pra desfazer a lenda: a empresa nao nasceu numa garagem. Nasceu em quarto de
+alojamento e em laboratorio de Stanford, e so foi pra garagem depois de ter nome, dinheiro
+e registro.
+
+Lembrar o episodio anterior em uma frase: era o auge da bolha, quando qualquer empresa de
+internet abria o capital em meses. Esses dois nao abriram. Ficaram seis anos de capital
+fechado, atravessaram o estouro inteiro, e so abriram em dois mil e quatro.
+
+Dizer o problema que eles tinham, e que e a tela seguinte: a busca era boa e era de graca.
+E cada busca custava dinheiro em maquina e em energia. Quanto mais gente usava, mais caro
+ficava.
+
+Dizer a licao de hardware e software: um software gratis e muito usado e um problema de
+hardware. Sem uma resposta pra isso, quanto melhor o produto, mais rapido a empresa
+quebra.
+
+Fechar pedindo o Proximo pra ver como se cobra por uma coisa que e de graca.
+
+TELA 5 - COMO SE PAGA UMA BUSCA
+
+Explicar o que ja existia e nao servia: os portais da epoca enchiam a pagina de banner,
+aquele retangulo colorido no topo, vendido por quantidade de exibicao. Era o mesmo modelo
+da televisao: paga-se por quantas pessoas passaram os olhos, mais ou menos.
+
+Dizer por que nao servia pra busca, com o argumento certo: banner incomoda e quase ninguem
+clica. E, principalmente, ele nao tem nada a ver com o que a pessoa quer naquele segundo.
+
+Dizer o que a busca tem de diferente de tudo que veio antes, e guardar essa frase: numa
+busca, a pessoa DIZ o que ela quer, com as proprias palavras, no momento em que ela quer.
+Nenhum outro meio tinha isso. O jornal sabe quem assina; a televisao sabe quem esta
+assistindo. Só a busca sabe o que a pessoa esta procurando agora.
+
+Dizer a licao de hardware e software: o dado mais valioso nao foi coletado por ninguem; a
+propria pessoa entregou, de graca, porque precisava dele pra usar o produto.
+
+Fechar pedindo o Proximo pra ver quem percebeu isso primeiro, e nao foi o Google.
+
+TELA 6 - MIL NOVECENTOS E NOVENTA E OITO: O LEILAO DO BILL GROSS
+
+Contar a pessoa: Bill Gross, que tocava uma incubadora de empresas na California, apresenta
+em fevereiro de mil novecentos e noventa e oito uma ideia num evento: um buscador em que o
+anunciante da um lance pra aparecer numa palavra, e paga so quando alguem clica. Quem paga
+mais aparece primeiro. A plateia nao gostou: misturar anuncio com resultado parecia uma
+traicao. Ele conta que ouviu vaia; quem estava la descreve uma sala mais incomodada do que
+hostil. Dizer das duas formas, sem cravar.
+
+FICHA: Bill Gross, nascido em mil novecentos e cinquenta e oito, tinha trinta e nove ou
+quarenta anos; vivo em dois mil e vinte e seis. (O dia do aniversario dele nao e publico:
+dizer as duas idades assim mesmo, sem explicar.)
+
+Usar a analogia da vitrine, curta: vender posicao na prateleira nao era novidade; o
+supermercado e o jornal ja faziam. O que era novo era leiloar essa posicao em tempo real,
+a cada pessoa que chega.
+
+Contar o que aconteceu com a empresa, em duas frases: chamava-se GoTo.com, depois virou
+Overture, e a Yahoo comprou em dois mil e tres por mais de um bilhao e meio de dolares.
+
+Dizer o defeito do desenho dele, porque e o que o proximo passo conserta: ordenar so pelo
+maior lance enche a primeira posicao de quem tem mais dinheiro, e nao de quem responde
+melhor. Se o anuncio nao interessa, ninguem clica, e ninguem ganha nada.
+
+Dizer a licao de hardware e software: a ideia estava certa e o desenho estava incompleto. E
+a peca que faltava e software puro.
+
+Fechar pedindo o Proximo pra ver a primeira tentativa do Google, que tambem nao era essa.
+
+TELA 7 - OUTUBRO DE DOIS MIL: O ANUNCIO POR EXIBICAO
+
+Contar o que saiu: em vinte e tres de outubro de dois mil o Google lanca o AdWords, com uns
+trezentos e cinquenta anunciantes. Texto simples, sem imagem, do lado direito, separado do resultado.
+E cobrado por exibicao, com um valor combinado por mes.
+
+Dizer o que estava bom nisso: o anuncio era texto e nao atrapalhava, e vinha marcado como
+anuncio.
+
+Dizer o que estava ruim: cobrar por exibicao poe o risco no anunciante, que paga pra
+aparecer mesmo quando ninguem se interessa. E deixa o buscador sem motivo nenhum pra
+melhorar a qualidade do anuncio, porque ele ganha do mesmo jeito.
+
+Dizer o numero pra dar tamanho, E O ANO TEM QUE SAIR CERTO: a empresa faturou dezenove
+milhoes de dolares no ano de DOIS MIL. Dois mil, e nao dois mil e um. (Em dois mil e um o
+faturamento ja foi outro, e esse numero nao entra no episodio.) Era pouco pro tanto de
+gente que ja usava a busca. Esse mesmo numero volta na tela 9, e nas duas vezes o ano e
+dois mil: se sair um ano diferente nas duas telas, o episodio se contradiz.
+
+Contar quem chegou junto, nas duas etapas certas: em marco de dois mil e um Eric Schmidt,
+um executivo experiente, entra como presidente do conselho. So em agosto do mesmo ano ele
+assume como executivo-chefe, no lugar do Page, que tinha vinte e oito anos. Sao dois
+momentos, com quase cinco meses de distancia: nao juntar num so.
+
+FICHA: Eric Schmidt, nascido em mil novecentos e cinquenta e cinco, tinha quarenta e cinco
+anos; vivo em dois mil e vinte e seis.
+
+Dizer a licao de hardware e software: o produto era bom e o modelo de cobranca estava
+errado. Trocar o modelo de cobranca nao e vender melhor: e mudar o software.
+
+Fechar pedindo o Proximo pra ver a troca que mudou tudo.
+
+TELA 8 - FEVEREIRO DE DOIS MIL E DOIS: PAGAR SO POR CLIQUE
+
+Contar a mudanca: em vinte de fevereiro de dois mil e dois sai o AdWords Select, que passa
+a cobrar por clique, em leilao automatico, sem vendedor no meio. O anunciante escreve o anuncio, diz quanto paga
+por clique, e a maquina resolve o resto.
+
+Explicar as duas pecas do desenho, devagar, porque sao o centro do episodio:
+
+Primeira, o preco: quem ganha uma posicao nao paga o proprio lance. Paga o minimo que
+precisa pra nao perder aquela posicao pro anunciante de baixo. Isso se chama leilao de
+segundo preco generalizado, e serve pra tirar o incentivo de ficar chutando o lance pra
+cima e pra baixo o tempo todo. Dizer a palavra generalizado: sem ela o nome fica errado,
+porque existe um leilao de segundo preco classico que se comporta de outro jeito.
+
+Segunda, e a mais importante: a posicao nao sai so do lance. Sai do lance multiplicado
+pela chance de alguem clicar naquele anuncio. Um anuncio bom e barato pode ficar na frente
+de um ruim e caro.
+
+Dizer o que essa segunda peca obriga a maquina a fazer, e essa e a frase que liga o
+episodio inteiro ao resto da serie: pra multiplicar pela chance de clique, a maquina
+precisa PREVER se voce vai clicar. E pra prever, ela olha o que aconteceu antes: quais
+anuncios foram clicados, por quem, depois de qual palavra. E a primeira vez, nesta serie,
+que uma maquina precisa adivinhar um comportamento humano pra funcionar. Nao e ainda a
+rede que aprende sozinha; e um sistema medindo e ajustando com o dado que voce deixa.
+
+Dizer a licao de hardware e software: pra cobrar direito, o software precisou virar um
+adivinhador. E adivinhar precisa de dado, e dado precisa de maquina pra guardar.
+
+Fechar pedindo o Proximo pra ver o tamanho que isso tomou.
+
+TELA 9 - O TAMANHO DA CONTA
+
+Dar os numeros, devagar, em ordem: dezenove milhoes de dolares em dois mil; quatrocentos e
+trinta e nove milhoes em dois mil e dois; tres bilhoes e duzentos milhoes de dolares em
+dois mil e quatro. E noventa e nove por cento disso vinha de anuncio.
+
+Dizer o que isso significa em uma frase: a empresa que mais gente usava no mundo pra achar
+qualquer coisa nao vendia nada pra quem usava. Quem paga e quem quer aparecer.
+
+Contar quem organizou a maquina de anuncio, sem inflar: quem desenhou o leilao foi um time
+pequeno de engenheiros dentro da empresa, e quem cuidou de fazer o negocio caber no resto
+foi gente contratada nessa epoca. Nomear so quem tem ficha.
+
+Retomar a pessoa da garagem, JA COM A FICHA LIDA LA NA TELA 4 (nao ler de novo, nao
+repetir data de nascimento nem idade): Susan Wojcicki, agora funcionaria da casa, vira em
+dois mil e tres a primeira gerente do produto que leva o anuncio pra fora da busca, pros
+sites dos outros. O produto ganha o nome AdSense em junho daquele ano, e o nome veio junto
+com uma empresa comprada, nao dela.
+
+Dizer a licao de hardware e software: o anuncio pagou as maquinas, e as maquinas
+permitiram guardar mais dado, e mais dado deixou o anuncio melhor. Isso e um ciclo que se
+alimenta, e ele nao para mais.
+
+Fechar pedindo o Proximo pra ver quem estava do outro lado dessa briga.
+
+TELA 10 - DOIS MIL E DOIS A DOIS MIL E TRES: A BRIGA
+
+Contar, sem drama: em abril de dois mil e dois a Overture, a empresa do Bill Gross,
+processa o Google dizendo que o leilao de anuncio era invencao dela e estava patenteado.
+
+Contar o desfecho: a briga foi resolvida em agosto de dois mil e quatro, dias antes da
+abertura de capital. O Google entregou dois milhoes e setecentas mil acoes pra Yahoo, que
+ja tinha comprado a Overture, e ficou com a licenca da patente pra sempre. Dizer com
+cuidado: esse mesmo pagamento fechou tambem uma segunda briga entre as duas empresas, nao
+so a da patente.
+
+Dizer o que isso mostra, sem moral: a ideia do leilao nao foi do Google. O que foi dele
+foi o leilao ordenado por qualidade e o tamanho da maquina pra rodar isso pra todo mundo,
+o tempo todo.
+
+Dizer a licao de hardware e software: entre a ideia e a peca que funciona pra bilhoes de
+pessoas ha uma distancia enorme, e ela quase sempre e feita de hardware.
+
+Fechar pedindo o Proximo pra ver a empresa abrir o capital.
+
+TELA 11 - DEZENOVE DE AGOSTO DE DOIS MIL E QUATRO
+
+Contar o dia: em dezenove de agosto de dois mil e quatro o Google abre o capital, quatro
+anos depois do estouro que o episodio anterior contou. A oitenta e cinco dolares por acao,
+valendo perto de vinte e tres bilhoes de dolares.
+
+Dizer o que era diferente: em vez do jeito tradicional, em que o banco escolhe quem compra
+antes, eles usaram um leilao aberto, pra que qualquer pessoa pudesse dar lance. Coerente
+com a empresa: leilao de novo. NAO dizer quanto a empresa levantou nesse dia: parte das
+acoes vendidas era de socios, nao da empresa, e o numero que circula por ai mistura as
+duas coisas.
+
+Dar o tamanho do uso, como ordem de grandeza e nao como numero exato: por volta dessa
+epoca passavam de duzentos milhoes de buscas por dia.
+
+Dizer onde isso deixa a rede, sem adiantar o proximo episodio: agora existe uma maquina
+que ordena a web inteira e uma maquina que cobra por posicao, e as duas ficam melhores
+quanto mais gente usa.
+
+Dizer a licao de hardware e software: em nove anos a rede saiu de "quem paga o cano?" pra
+"quem paga sabe exatamente o que voce quer". O dinheiro deixou de vir de quem navega e
+passou a vir de quem quer ser achado.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e quatro, com a busca ordenada por links e paga por
+clique.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: Page e Brin
+trocaram a pergunta, de "esta pagina fala disso" pra "esta pagina e importante". Winograd
+e Motwani assinaram o metodo com eles. Bechtolsheim assinou o cheque antes de a empresa
+existir. Gross teve a ideia do leilao e foi mal recebido por ela. Schmidt fez o negocio caber de
+pe. Wojcicki levou o anuncio pra fora da busca. Ninguem planejou o conjunto.
+
+Dizer a licao do episodio em duas frases: ordenar a informacao virou o negocio mais
+valioso da rede. E, pra cobrar por essa ordem, a maquina teve que comecar a prever
+comportamento humano.
+
+Deixar a pergunta no ar, sem responder e sem falar de rede social: a busca so responde
+quando voce pergunta. Mas e se a pessoa nao estiver procurando nada, e mesmo assim quiser
+ficar ali? O que a rede mostra pra quem chegou sem pergunta nenhuma?
+
+Fechar sem pedir Proximo: esta e a ultima tela deste episodio.

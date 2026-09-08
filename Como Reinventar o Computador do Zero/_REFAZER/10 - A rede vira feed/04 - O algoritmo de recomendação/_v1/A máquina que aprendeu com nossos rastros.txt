@@ -1,0 +1,7 @@
+Titulo: A máquina que aprendeu com nossos rastros
+Notebook: 10-04-O algoritmo de recomendacao
+
+Descricao:
+Os textos detalham a evolução técnica e histórica dos algoritmos de recomendação entre 2006 e 2016, destacando a transição de regras manuais para sistemas de aprendizado de máquina. A narrativa foca em marcos como o Prêmio Netflix, que popularizou a fatoração de matrizes, e a implementação de redes neurais profundas para processar o comportamento dos usuários em plataformas como YouTube e Facebook. O conteúdo enfatiza que essas máquinas aprenderam a prever desejos não por comandos diretos, mas através do rastro digital deixado pelas pessoas. Além do aspecto técnico, as fontes discutem questões de privacidade, a dificuldade de anonimizar dados e como a mudança no que se mede altera o funcionamento de todo o ecossistema digital. O relato humaniza a tecnologia ao listar os nomes e perfis dos especialistas e executivos que moldaram essa infraestrutura. Por fim, o material estabelece que essa era preparou o terreno para a próxima fase da computação, onde a interação se torna verbal e direta.
+
+Link: https://notebook.google.com/notebook/3024a93e-dd43-4682-9a4c-0d4330e66d0b

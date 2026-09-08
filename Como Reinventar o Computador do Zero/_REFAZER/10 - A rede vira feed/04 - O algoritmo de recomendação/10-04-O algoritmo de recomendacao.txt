@@ -1,0 +1,167 @@
+Inicie dizendo: O Algoritmo de Recomendação
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Algoritmo de Recomendacao.txt enviado
+como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o quarto e ultimo episodio da etapa A REDE VIRA FEED, a decima etapa da serie Como
+Reinventar o Computador do Zero.
+
+RETOMADA NA TELA 1: o episodio anterior terminou dizendo que quem escolhia o que aparecia na
+sua tela era uma regra de tres fatores escrita por pessoas, e perguntando o que acontece se
+ninguem escrever a regra. A primeira frase depois do titulo retoma isso.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. NAO virar historia de empresa de sucesso e NAO fazer
+sermao sobre vicio em tela. O assunto e uma peca de software que aprende, e o dado que
+alimenta ela.
+
+A TESE, DITA COM ESSAS PALAVRAS: esta foi a primeira maquina que aprendeu e que mexeu com
+todo mundo. Nao foi a que conversa. E o que ela aprendeu nao veio de nota que alguem deu de
+proposito: veio do RASTRO que as pessoas deixaram sem perceber.
+
+ESTE EPISODIO COBRE DE 2006 A 2016, EM ORDEM. Dizer o intervalo na abertura e, no fim, dizer
+em que ano o episodio para. Os anos se sobrepoem com a etapa 9 e com os episodios anteriores
+desta etapa: dizer numa frase, na tela 1.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a ficha
+dela, uma frase so, no formato: nome, ano de nascimento, idade naquele momento, e se esta
+viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Sao SETE:
+Hastings, Hinton, Zuckerberg, Pariser, Kamangar, Wojcicki e Jeff Dean. A PALAVRA "FICHA" NAO
+E DITA EM VOZ ALTA, e a palavra "CENA" tambem nao: emendar direto no nome.
+
+⚠️ VARIAS PESSOAS DESTE EPISODIO NAO TEM ANO DE NASCIMENTO PUBLICO E ENTRAM SEM FICHA: quem
+publicou o metodo da fatoracao sob o apelido Simon Funk, os pesquisadores que ganharam o
+premio, os dois que quebraram o anonimato da base, e os tres engenheiros do trabalho do
+YouTube (Paul Covington, Jay Adams e Emre Sargin). Falar deles pelo nome, sem inventar
+idade. E na tela 12 dizer, em uma frase, que boa parte de quem fez isso nao tem nem data de
+nascimento publica, ao contrario dos donos das empresas.
+
+UMA PESSOA ESTA MORTA E SE FALA DELA NO PASSADO: Susan Wojcicki, que morreu em 2024.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O audio
+TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem do
+roteiro. A frase e sempre essa, "aperte o Proximo", COM o "o", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a pagina
+tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a frase "aperte
+o Proximo" como exemplo nesse aviso.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 6 e 7 (a vitoria do premio, e o que a
+empresa fez com ele), 10 e 11 (a troca do que se mede em 2012, e a troca do motor em 2016 —
+sao quatro anos de distancia e coisas diferentes), 11 e 12 (o marco, e o balanco). Um pedido
+de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR: "dois mil e seis", "dois mil e sete", "dois mil e
+nove", "dois mil e onze", "dois mil e doze", "dois mil e dezesseis", "um milhao de dolares",
+"dez por cento", "cem milhoes de notas", "quatrocentas e oitenta mil pessoas", "dezessete mil
+setecentos e setenta filmes", "vinte minutos", "cinco bilhoes de notas", "cento e sete
+algoritmos", "oito notas", "noventa e nove por cento", "cem mil pesos", "um bilhao de
+pessoas", "centenas de bilhoes de exemplos". NAO trocar milhao por bilhao.
+
+NOMES, NA PRIMEIRA VEZ, devagar: Netflix ("nét-flics"); Reed Hastings ("rid rêis-tings");
+Cinematch ("sine-métch", o sistema que a Netflix ja tinha); Simon Funk ("sái-mon fânk", e um
+apelido); Geoffrey Hinton ("djé-fri rin-ton"); YouTube ("iú-tiúb"); Eli Pariser ("í-lai
+pá-ri-ser"); Salar Kamangar ("sa-lár ka-man-gár"); Susan Wojcicki ("sú-zan uo-djís-qui");
+Jeff Dean ("djéf dín"); Facebook ("fêis-buc"); Mark Zuckerberg ("márc zâ-quer-berg"). Dizer
+"rede neural" e "rede neural profunda" em portugues, NUNCA "deep learning".
+
+⚠️ A LISTA DE PRONUNCIA ACIMA E INSTRUCAO PRA VOCE, NAO E FALA. NUNCA dizer "que se
+pronuncia", "que se le" nem "pronuncia-se" no ar. Numa gravacao anterior desta etapa saiu,
+mais de dez vezes, coisa como "o Larry Page, que se pronuncia Larry Page". Falar o nome do
+jeito certo, uma vez, e seguir em frente.
+
+⚠️ DOIS DEFEITOS DA GRAVACAO ANTERIOR, E OS DOIS SAO FACEIS DE EVITAR:
+
+1. Ela disse "a sacada GENIAL do Hastings" e "a GENIALIDADE do metodo". As duas palavras
+   estao na lista de proibidas mais abaixo. NAO usar "genial", "genialidade" nem "genio",
+   nem pra elogiar pessoa nem pra elogiar metodo. O jeito da serie e dizer o que a coisa
+   FAZ, e deixar o ouvinte achar bonito sozinho.
+
+2. As fichas fecharam com "vivo hoje". O fecho da ficha e sempre "VIVO EM DOIS MIL E VINTE
+   E SEIS" (ou "viva em dois mil e vinte e seis"), com o ano dito. "Vivo hoje" nao serve:
+   daqui a alguns anos vira mentira, e os outros episodios desta etapa dizem o ano.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. As telas sao fotos.
+
+FOCO, EM ORDEM: e se ninguem escrever a regra; outubro de dois mil e seis, o premio de um
+milhao de dolares e a Netflix que ainda era DVD pelo correio; dezembro de dois mil e seis, o
+metodo publicado de graca no meio da disputa; dois mil e sete, a rede neural entrando pela
+porta dos fundos; o dado anonimo que nao era anonimo; julho de dois mil e nove, o empate
+decidido por vinte minutos; dois mil e doze, a empresa contando o que usou e o que nao usou;
+por volta de dois mil e onze, o feed trocando regra por aprendizado; marco de dois mil e
+onze, a bolha de filtro; dois mil e doze, trocar clique por tempo assistido; setembro de dois
+mil e dezesseis, a rede neural assumindo a recomendacao; o balanco da etapa inteira.
+
+O PONTO QUE NAO PODE FALTAR: a recomendacao do YouTube nao e treinada em nota nem em
+curtida. E treinada no que a pessoa assistiu ate o fim, ou seja, no RASTRO. Essa frase e a
+tese do episodio.
+
+CUIDADOS DE FATO:
+- ⚠️ A NETFLIX USOU SIM parte do resultado do premio. Foram pra producao a fatoracao de
+  matrizes e a rede neural do primeiro ano, reescritas pra escala. O que NAO foi usado foi a
+  mistura campea de cento e sete algoritmos. Dizer as duas coisas: a lenda de que "pagaram
+  um milhao e nao usaram nada" e falsa pela metade.
+- ⚠️ As tres razoes que a propria Netflix deu: o ganho nao pagava o esforco de engenharia; a
+  escala tinha mudado (cem milhoes de notas contra mais de cinco bilhoes); e o produto tinha
+  virado streaming, entao prever NOTA deixou de ser o problema.
+- ⚠️ NAO dizer que o trabalho de dois mil e dezesseis foi "a primeira rede neural em
+  producao" nem "a primeira em escala de bilhoes". Nao foi: a rede neural da propria Netflix
+  ja rodava desde dois mil e oito, e o Google ja usava rede neural pra bilhoes de pessoas no
+  reconhecimento de voz (dois mil e doze) e na busca (dois mil e quinze). O que se pode
+  dizer e que foram os proprios engenheiros publicando, em detalhe, como isso funciona nessa
+  escala.
+- ⚠️ NAO dizer que o YouTube de dois mil e dezesseis rodava em chip especial pra rede
+  neural. O trabalho fala em economizar PROCESSADOR comum.
+- ⚠️ O premio foi decidido por EMPATE mais ordem de chegada, e nao por precisao: no placar
+  publico a outra equipe estava na frente, e no conjunto que valia elas empataram. A outra
+  enviou vinte minutos depois.
+- ⚠️ Tirar o nome NAO e anonimizar: a Netflix pseudonimizou. Com oito notas e datas
+  aproximadas dava pra identificar noventa e nove por cento dos registros.
+- ⚠️ A troca da regra escrita a mao pelo sistema que aprende, no feed, e "POR VOLTA de dois
+  mil e onze": nao existe anuncio oficial com data, e o que se sabe vem de uma entrevista de
+  dois mil e treze. NAO cravar a data.
+- ⚠️ "Bolha de filtro" e conceito de debate publico, NAO resultado de pesquisa. E o numero
+  de que a maior parte do que se assiste vem de recomendacao saiu de declaracao de executivo
+  em evento, sem metodologia. A pesquisa grande que existe e de dois mil e vinte e um pra
+  ca, aponta o contrario do senso comum, e NAO serve pra falar do sistema de dois mil e onze
+  porque mediu outro sistema, dez anos depois. Dizer isso com todas as letras.
+- ⚠️ Salar Kamangar so tem o ANO de nascimento publico: dizer "trinta e quatro ou trinta e
+  cinco anos", sem explicar.
+
+⚠️ ESTE EPISODIO FECHA A ETAPA, MAS NAO FECHA A SERIE. Na ultima tela: balanco das pessoas
+nome por nome, a licao da ETAPA INTEIRA (os quatro episodios), e a pergunta que abre a etapa
+seguinte. NAO dizer "ultima da serie", "fim da serie", "ate o proximo", "proximo mergulho"
+nem "proximo encontro".
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+Use SOMENTE as duas analogias descritas no roteiro: a planilha quase toda vazia (so nas
+telas 3 e 4) e o caixa do mercado (so na tela 10). NAO invente analogias novas. Rede neural
+e nota de filme sao explicados direto, sem comparacao.
+
+Use tambem o Overview.txt como contexto curto.

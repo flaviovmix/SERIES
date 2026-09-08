@@ -1,0 +1,395 @@
+# Transcricao automatica (faster-whisper small) - 22.0 min
+# Fonte: A engenharia por trás das redes sociais.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] As redes sociais. Bom, na nossa última análise, a gente viu como a busca virou um negócio
+[00:06] gigantesco, né?
+[00:07] Uhum, o negócio perfeito.
+[00:09] Exato. Criaram, basicamente, uma máquina que responde perguntas. Só que isso levantou
+[00:15] uma questão fundamental, o que a rede mostra para quem chega ali sem nenhuma pergunta,
+[00:20] sabe? Aquela pessoa que quer apenas ficar por ali passando o tempo.
+[00:24] Bom, a resposta que a rede encontrou para isso pode ser explicada em uma única
+[00:28] frase. É mostrar o que as outras pessoas andaram fazendo.
+[00:32] E é exatamente essa história que a gente vai cobrir hoje. Um período que vai de 2002
+[00:37] a 2012. E um detalhe, esse interno alo se sobrepõe aos dois episódios anteriores dessa
+[00:43] nossa etapa. Enquanto a busca virava aquele negócio todo, essa outra coisa crescia ali
+[00:48] do lado, ao mesmo tempo.
+[00:49] Isso mesmo. Mas olha, o nosso foco aqui não é falar sobre o sucesso de vendas
+[00:53] ou modelo de negócios. O assunto é o problema de computação que aparece quando isso dá
+[00:59] certo até demais.
+[01:00] Exatamente. Porque a nossa tese central de hoje é a seguinte. O volume de gente publicando
+[01:06] virou um problema de computação. E são dois problemas diferentes. Montar o que cada pessoa
+[01:12] vê custa caro e ninguém consegue ler tudo. O primeiro se resolve com máquina, o segundo
+[01:18] briga alguém é escolher.
+[01:19] Perfeito. Essa divisão é o coração de tudo que a gente vai discutir.
+[01:23] Bom, e um aviso prático para quem acompanha a gente? A explicação de hoje acompanha
+[01:27] uma página de animação com 12 telas. Quem ouve apenas o áudio claro, acompanha normalmente.
+[01:34] Mas quem está com a página aberta, basta virar a tela quando ouvir o pedido. Então,
+[01:39] aperte o prósigo.
+[01:40] A gente começa pela primeira grande tentativa que surgiu na Califórnia, o Friendster.
+[01:45] Ele foi fundado em 2002 e abriu as portas em março de 2003.
+[01:50] Isso. E o fundador é o Jonathan Abrams. Não tem data de nascimento pública, vivo em
+[01:55] 2026?
+[01:56] O interessante do Friendster foi o que ele trouxe de novo para a mesa. Antes dele,
+[02:01] as pessoas usavam muito apelido na internet, sabe? Avatares falsos. O Friendster pediu
+[02:06] o nome de verdade, pediu foto de verdade e a lista de conhecidos reais. Então, ele
+[02:12] não guardava sua página soltas da web. Ele guardava ligações entre pessoas.
+[02:17] E tem um ponto técnico crucial aí. O produto real não mostrava só os seus
+[02:22] amigos diretos, mas os amigos dos amigos, até vários graus. E ficava calculando a
+[02:28] distância matemática de cada um até o usuário.
+[02:31] Nossa, e os números estouraram rápido. Em junho de 2003 já eram 835 mil pessoas.
+[02:38] Caramba.
+[02:39] E no final daquele mesmo ano, 3 milhões. Chegou a entrar 9.500 pessoas por dia.
+[02:45] Eles estavam tão bem que recusaram uma oferta de 30 milhões de dólares do Google.
+[02:50] 30 milhões, né? Pouca coisa.
+[02:52] Pois é. Mas eles são o principal de hardware software que fica. É que guardar
+[02:56] essas conexões entre pessoas em larga escala era algo inédito. A indústria não
+[03:01] sabia como fazer isso.
+[03:03] Era pesado demais, né? E para ver exatamente o problema que isso gerou,
+[03:07] aperte o próximo. O sintoma mais óbvio era direto na tela. A página
+[03:12] inicial levava mais de um minuto para abrir.
+[03:15] Um minuto inteiro.
+[03:17] Sim, e tem um detalhe absurdo. Um ex-executivo deles chegou a dizer que considerava
+[03:22] 40 segundos como um tempo normal de carregamento.
+[03:26] O que para o web é uma eternidade.
+[03:28] Bom, a causa mais famosa dessa lentidão tem a ver com aquele cálculo de distância.
+[03:33] O sistema tentava manter a rede atualizada a vários graus de distância.
+[03:37] Há relatos de que iam até quatro graus.
+[03:40] Nossa, muita gente.
+[03:41] Sim, e dizem que essa conta era refeita a cada clique. A gente precisa fazer a ressalva
+[03:46] de que esse relato vende ex-funcionários.
+[03:50] É totalmente plausível, mas não é um dado oficial da empresa.
+[03:53] O fato indiscutível é que a conta matemática cresce muito mais rápido que o número de pessoas.
+[03:58] É uma explosão exponencial.
+[04:00] Mas olha, tem uma causa documentada que o pessoal fala pouco.
+[04:04] A base do sistema deles era ruim mesmo.
+[04:07] Eles tentaram reescrever algumas partes e o desempenho até piorou.
+[04:10] Sério?
+[04:11] Pois é, só lá em junho de 2004 que eles realmente trocaram a base.
+[04:17] Eles pararam de manter as conexões abertas o tempo todo com o banco de dados.
+[04:21] Eles arrumaram os índices, tiraram aquela ordenação pesada de dentro do banco de dados
+[04:26] e trocaram poucas máquinas caras por muitas máquinas baratas.
+[04:30] Mas aí já era tarde, né?
+[04:32] O desfecho foi que o Friendster perdeu o mercado nos Estados Unidos.
+[04:35] Eles mudaram de dono em 2009 por 26 milhões de dólares.
+[04:39] Menos do que o Google tinha oferecido lá atrás.
+[04:42] Exato.
+[04:43] E hoje tem três versões que tentam explicar essa queda.
+[04:46] O executivo diz que a culpa foi da lentidão.
+[04:48] O fundador põe a culpa na gestão da empresa.
+[04:51] E um estudo acadêmico aponta que foi a mistura das duas coisas, né?
+[04:54] O problema técnico com a falha de produto.
+[04:57] Mas a gente não precisa escolher um lado aqui.
+[04:59] Não.
+[05:00] A grande lição é que essa foi a primeira vez que uma ideia incrível de software
+[05:04] morreu simplesmente por não caber na máquina daquela época.
+[05:07] Era uma conta cara demais para hora.
+[05:10] E para ver quem ganhou o jogo justamente por fazer menos conta, aperte o próximo.
+[05:15] Essa resposta chegou logo em 1 de agosto de 2003 com o MySpace.
+[05:20] E a cara da plataforma era o Tom Anderson.
+[05:22] Nascido em 1970, tinha 32 anos, vive em 2026.
+[05:28] Era ele que aparecia como amigo automático de todo mundo.
+[05:31] Isso.
+[05:32] E a grande decisão técnica do MySpace foi fazer exatamente o oposto do Friendster.
+[05:37] Ele simplesmente tiraram a conta de distância do caminho.
+[05:40] Cortaram um problema pela raiz.
+[05:41] Exato.
+[05:42] Não importava a quantos graus as pessoas estavam umas das outras.
+[05:46] A circulação era totalmente livre.
+[05:49] Menos conta matemática significa uma página muito mais rápida.
+[05:52] E teve outro diferencial enorme, né?
+[05:55] Eles deixaram os usuários customizarem os perfis com cor,
+[05:59] imagem de fundo, música tocando sozinha.
+[06:02] Virou uma bagunça visual.
+[06:05] Total, ficou feio, mas ficou pessoal.
+[06:08] As pessoas amaram.
+[06:09] E os números mostram isso.
+[06:10] Eles foram comprados em 2005 por 580 milhões de dólares.
+[06:16] O pico de acesso deles foi em 2008, chegando a 115 milhões de visitantes por mês.
+[06:22] E aqui a gente precisa desfazer uma lenda muito comum.
+[06:26] Tem gente que diz que o MySpace afundou porque eles tentaram trocar a base técnica do site.
+[06:31] Mas isso é falso.
+[06:32] Ahá, é o contrário.
+[06:34] Isso, a troca da arquitetura que eles fizeram em 2005, na verdade melhorou o desempenho.
+[06:39] E o site continuou crescendo muito por mais 3 anos.
+[06:42] A lição técnica desse momento é fascinante.
+[06:45] A parte mais bonita do produto do Frendster, que era calcular a distância entre os amigos,
+[06:51] era exatamente o que a máquina não aguentava processar.
+[06:54] Quem cortou essa peça fora levou o mercado.
+[06:56] É, o menos virou mais.
+[06:58] E para ver quem conseguiu fazer as duas coisas, aperte o próximo.
+[07:01] Bom, a gente chega agora no dia 4 de fevereiro de 2004.
+[07:05] É quando entra no ar um site totalmente fechado, só para e-mails de uma universidade específica.
+[07:11] E o nome por trás disso é o Mark Zuckerberg, nascido em 1984, tinha 19 anos, vivo em 2026.
+[07:18] O Facebook e a decisão de máquina deles, que foi brilhante,
+[07:22] foi a de crescer abrindo apenas uma universidade por vez.
+[07:25] Exatamente, porque manter uma rede pequena e fechada é muito barato para os servidores.
+[07:31] Você consegue crescer à base sem precisar que o sistema aguente o tráfego do mundo inteiro logo no primeiro dia.
+[07:36] E tem uma data importante aqui.
+[07:38] A data de abertura total para o público geral só aconteceu em 26 de setembro de 2006.
+[07:45] É bom prestar atenção nessa ordem do tempo.
+[07:48] Sim, porque isso aconteceu exatas três semanas depois de um evento enorme que a gente vai ver lá na tela 9.
+[07:55] A grande lição aqui foi o ritmo.
+[07:57] Crescer devagar e de propósito permitiu que a máquina sempre acompanhasse o tamanho do software.
+[08:03] O Friendster tentou abraçar o mundo inteiro de uma vez e quebrou.
+[08:06] O Facebook foi dominando por pedaço.
+[08:09] Até que a internet começou a mudar o tipo de arquivo que as pessoas postavam.
+[08:13] E para ver o problema mudar de tamanho, aperte o próximo.
+[08:17] Voltamos um pouquinho no tempo, para fevereiro de 2005.
+[08:20] Foi quando trezeis colegas se juntaram para montar o YouTube.
+[08:24] Há o vídeo, mudou tudo.
+[08:26] Mudo, o primeiro vídeo dele sobe no dia 23 de abril de 2005.
+[08:31] São meros 19 segundos gravados no unsoológico.
+[08:34] E os responsáveis são o Chad Hurley, nascido em 1977, tinha 28 anos, vivo em 2026.
+[08:41] O Steve Chan, nascido em 1978, tinha 26 anos, vivo em 2026.
+[08:47] E o Jared Karin, nascido em 1979, tinha 25 anos, vivo em 2026.
+[08:53] A mudança na computação aqui é gigantesca.
+[08:56] Até esse ponto, a web era baseada em texto e foto, que são arquivos pequenos.
+[09:01] O vídeo não, o vídeo é enorme.
+[09:03] E ele exige que o servidor consiga empurrar esses dados pela rede
+[09:07] exatamente na mesma velocidade em que a pessoa assiste do outro lado.
+[09:10] Tem que ser um fluxo perfeito, né?
+[09:12] Sim, sem travar.
+[09:13] E olha os números deles em abril de 2006.
+[09:16] Eram 40 milhões de vídeos rodando por dia.
+[09:20] Isso dava um tráfego de 200 terabytes por dia.
+[09:24] É um absurdo de dado.
+[09:25] A estimativa não oficial da época é que a conta de rede deles
+[09:29] batia a casa de um milhão de dólares por mês.
+[09:32] E isso amarra com o que a gente conversou no episódio passado.
+[09:36] Toda essa capacidade, toda essa banda de rede,
+[09:38] ela só existia porque a fibra ótica tinha sido enterrada pelo mundo afora
+[09:42] lá na época da bolha da internet.
+[09:44] A infraestrutura estava lá esperando.
+[09:46] Pois é, o vídeo finalmente encheu aqueles tubos enormes
+[09:50] que estavam apagados desde os anos 2000.
+[09:52] E a recompensa veio logo.
+[09:53] O Google compra o YouTube em outubro de 2006
+[09:56] por um bilhão e 650 milhões de dólares.
+[09:59] A lição dessa fase é que o software finalmente
+[10:01] alcançou a estrutura física de hardware
+[10:05] que tinha sido construída cedo demais lá atrás.
+[10:07] E para ver o problema de verdade aparecer na rede, aperte o próximo.
+[10:12] A gente avança agora para o dia 21 de março de 2006.
+[10:16] É o lançamento do Twitter.
+[10:18] Aquele serviço de recados curtos com aquela primeira mensagem.
+[10:22] Abre aspas.
+[10:23] Só configurando o meu Twitter, Aerta.
+[10:25] Fecha aspas.
+[10:26] Um clássico.
+[10:27] E as fichas são o Jack Dorsey, nascido em 1976,
+[10:31] tinha 29 anos, vivo em 2026.
+[10:34] O Evan Williams, nascido em 1972, tinha 33 anos,
+[10:39] vivo em 2026.
+[10:41] E o Bees Stone, nascido em 1974,
+[10:45] tinha 32 anos, vivo em 2026.
+[10:48] O que quebra a máquina nesse serviço é um detalhe muito sutil.
+[10:51] A amizade deixou de ser uma via de mão dupla.
+[10:54] Como assim?
+[10:54] O ato de você poder seguir alguém sem precisar pedir licença
+[10:58] é uma decisão fantástica de produto,
+[11:01] mas ela vira um pesadelo de máquina.
+[11:03] Você acaba criando um cenário com contas gigantescos
+[11:06] com milhões de seguidores
+[11:08] convivendo com contas comuns que têm, sei lá, três seguidores.
+[11:12] Não, desequilíbrio gigante.
+[11:14] E o símbolo máximo de quando isso dava errado
+[11:17] ficou famoso no mundo todo.
+[11:18] A Baleia.
+[11:19] A ilustração da Baleia Branca,
+[11:21] que eles acharam, por acaso,
+[11:23] num banco de imagens.
+[11:25] Ela parecia sempre que o site caia.
+[11:27] E caia muito, viu?
+[11:29] Só no ano de 2008,
+[11:30] foram 84 horas com o serviço totalmente fora do ar.
+[11:34] E tem outra lenda do mercado que a gente precisa desfazer aqui.
+[11:38] Dizem que a culpa dessas quedas
+[11:40] era da linguagem de programação, o Ruby.
+[11:42] Mas não é verdade.
+[11:44] Trocar linguagem de programação
+[11:45] teria ajudado, tipo, em os 10%.
+[11:48] E o que resolveu, então?
+[11:49] Foi a mudança de arquitetura.
+[11:51] Eles mexeram pesado no banco de dados
+[11:54] e na forma de fazer a divisão desses dados entre os servidores
+[11:57] e isso melhorou a desempenho em 100 vezes.
+[12:00] Para entender por que cair era uma coisa tão fácil nessa época,
+[12:04] aperte o próximo.
+[12:05] A gente entra agora no primeiro grande problema
+[12:08] que a gente apontou na nossa tese.
+[12:10] Toda vez que a gente abra a tela,
+[12:12] alguém tem que montar a lista do que as outras pessoas escreveram.
+[12:15] Vamos usar a analogia da caixa de correio de um prédio.
+[12:18] O engenheiro tem duas opções aqui.
+[12:20] A primeira é o porteiro entregar o jornal na caixa de correio
+[12:24] de cada morador, assim que a edição chega da rua.
+[12:26] Isso dá muito trabalho na hora de publicar, né?
+[12:29] O porteiro tem que andar muito.
+[12:30] Dá muito trabalho.
+[12:31] A segunda opção é o porteiro não entregar nada.
+[12:34] Ele deixa os jornais ali numa pilha
+[12:37] e só se apara o que é do morador
+[12:39] quando o morador desce até a portaria.
+[12:42] Essa opção dá um trabalho enorme na hora que o morador quer ler
+[12:45] porque ele tem que ficar esperando o porteiro procurar.
+[12:48] E nas redes sociais, as pessoas descem para ver se tem novidade
+[12:51] muito mais vezes do que os jornais chegam.
+[12:55] Então, compensa bem mais usar a primeira opção.
+[12:57] Certo. Sim.
+[12:58] Compensa o porteiro trabalhar na hora em que o conteúdo chega.
+[13:01] Vamos ver os números do Twitter devagar para entender a escala disso.
+[13:05] A taxa de publicação era de 4.600 mensagens por segundo.
+[13:11] Já a taxa de leitura era de 300 mil por segundo.
+[13:16] A diferença é brutal.
+[13:18] E como uma mensagem atinge em média uns 75 seguidores,
+[13:23] aquelas 4.600 publicações originais se multiplicavam
+[13:28] e viravam 345 mil escritas por segundo do Banco de Dados.
+[13:33] E, incrivelmente, ainda assim compensava escrever tudo na hora de publicar, sabe por quê?
+[13:38] Por causa da taxa de leitura.
+[13:40] Exato, porque a leitura é 75 vezes maior.
+[13:43] E eles ainda usavam um truque excelente de engenharia.
+[13:46] A memória rápida do sistema guardava só o número de identificação da mensagem.
+[13:51] Umas 800 identificações por pessoa.
+[13:53] O texto da mensagem mesmo era buscado só depois.
+[13:57] Genial. Só que aí a gente tem que apontar onde esse desenho todo quebra.
+[14:02] Ele quebra exatamente quando aparece um morador daquele prédio
+[14:06] que tem 30 milhões de assinantes no jornal dele.
+[14:09] O porteiro virtual do sistema passa minutos inteiros subindo e descendo a andar para entregar mensagem.
+[14:15] E o bizarro é que a resposta de alguém pode chegar para alguns
+[14:19] antes mesmo da mensagem original terminada de ser entregue para todo mundo.
+[14:23] E a solução para isso foi misturar as duas abordagens da portaria.
+[14:27] Eles mantiveram a estratégia de escrever na hora de publicar para quem é um usuário comum.
+[14:32] Mas passaram a montar a lista só na hora de ler para essas contas gigantes.
+[14:36] A grande lição técnica aqui é que o formato do produto obriga o formato do hardware.
+[14:40] E para ver o outro problema que é ainda maior que esse, aperte o próximo.
+[14:45] A gente retorna ao Facebook agora.
+[14:48] Noite do dia 5 de setembro de 2006.
+[14:52] Até esse dia, para saber das novidades, você precisava visitar o perfil de cada amigo, um por um.
+[14:59] De repente o site passa a mostrar sozinho numa página central.
+[15:03] Tudo que mudou.
+[15:04] O mural de novidades.
+[15:06] A famosa timeline inicial.
+[15:08] E quem assinou o anúncio foi a Ruth Sangvi.
+[15:11] Nascida em 1982, tinha 24 anos.
+[15:16] Viva em 2026.
+[15:17] A reação dos usuários a isso foi imediata.
+[15:20] E foi um ódio generalizado.
+[15:22] É revoltante para eles, né?
+[15:24] Muito.
+[15:25] Teve 284 mil pessoas num grupo de protesto nas primeiras 24 horas.
+[15:30] Em três dias passou de 700 mil.
+[15:34] Chegou até protesto físico, gente, na rua.
+[15:37] O mais louco é que o motivo do ódio não era vazamento.
+[15:40] A informação que aparecia ali já era pública.
+[15:42] O grande incômodo foi que de repente ela chegava sozinha na sua cara.
+[15:47] E as duas respostas que a empresa deu mostram bem o susto.
+[15:50] No primeiro dia eles soltaram um calma, a gente ouviu vocês.
+[15:53] Mas não mudaram absolutamente nada no código.
+[15:57] Já no terceiro dia o tom mudou para a gente errou feio.
+[16:01] E isso foi seguido por uma liberação rápida de controles de privacidade.
+[16:05] E tem um erro comum que o pessoal repete sobre isso.
+[16:08] Precisamos esclarecer.
+[16:09] Esse mural nunca mostrou tudo de forma crua e cronológica.
+[16:14] A patente dessa ferramenta, que foi feita semanas antes do lançamento,
+[16:17] já falava em ordenar os posts por proximidade
+[16:20] e mostra só as dez coisas de maior peso.
+[16:23] Ah, então já tinha um filtro desenhado.
+[16:25] Tinha.
+[16:26] Só que na prática quem trabalhava lá naquela época
+[16:29] diz que esse ajuste inicial de peso era feito na mão pelos engenheiros.
+[16:35] Entendi.
+[16:36] E é bom gente lembrar daquela ordem do tempo que mencionamos antes.
+[16:39] Toda esse estresse e esses protestos
+[16:42] aconteceram três semanas antes de eles abrir o site
+[16:45] para qualquer pessoa de fora das universidades.
+[16:47] Foi um teste de fogo antes da massa chegar.
+[16:50] E para ver o que toda essa escala gigantesca
+[16:52] obrigou eles a inventarem.
+[16:54] Aperte o próximo.
+[16:56] Tem uma regra de mercado muito interessante aqui.
+[16:58] Quando o problema é tão novo que não tem peça pronta para comprar na prateleira,
+[17:02] a empresa vai lá e fabrica sua própria peça.
+[17:04] Que depois acaba virando o padrão para todos, né?
+[17:07] Exatamente.
+[17:08] Vamos ver as invenções?
+[17:09] Olha o que o Facebook teve que criar.
+[17:11] Eles fizeram o caçandra em 2008,
+[17:15] que servia para guardar dados espalhados
+[17:17] e conseguir fazer buscas no meio daquelas milhões de mensagens.
+[17:21] E em 2009, eles criaram o Hive,
+[17:24] feito para rodar consultas em montanhas gigantescas de arquivos sem travar tudo.
+[17:29] O Twitter também não ficou para trás.
+[17:31] Em 2010, eles criaram o Gizzard para dividir dados.
+[17:35] Criaram o FlockDB, um banco focado só em guardar quem segue quem,
+[17:40] suportando 13 bilhões de ligações simultâneas.
+[17:43] E o Snowflake, para gerar números de identificação em ordem,
+[17:47] quando já não tinha mais um banco central único.
+[17:50] Mas a gente precisa aproveitar para desfazer umas atribuições erradas
+[17:53] que rodam o mercado por aí.
+[17:55] Opa, manto.
+[17:56] Sabe o memcast?
+[17:57] Não nasceu no Facebook.
+[17:59] É de 2003, foi criado por um site de diários virtuais.
+[18:03] O Hadoop também não nasceu no Facebook.
+[18:06] É de 2006 e foi batizado com o nome do elefante de pelúcia do filho do criador.
+[18:11] Legal.
+[18:12] E o banco 8Base também não é deles.
+[18:14] E a ironia deliciosa da história é exatamente sobre isso.
+[18:18] Em 2010, na hora de modernizar como guardar mensagens,
+[18:22] o Facebook avaliou e decidiu não usar o seu próprio Cassandra.
+[18:26] Pois é.
+[18:27] Eles escolheram usar o 8Base, que era uma tecnologia de fora.
+[18:31] A lição desse período é que a necessidade extrema de software
+[18:34] acabou fabricando as ferramentas pesadas que a indústria inteira de tecnologia usa até hoje.
+[18:40] E para ver o exato momento em que essa lista gigantesca deixa de caber, aperte o próximo.
+[18:46] Entramos agora no segundo grande problema apontado lá na nossa tese.
+[18:50] A tela 8 era sobre o custo absurdo de montar essa lista.
+[18:54] O problema aqui é que a lista montada ficou grande demais para ser lida por um ser humano.
+[19:00] O número oficial deles deixa isso bem claro.
+[19:03] Em 2013, o Facebook divulgou que cada abertura de mural
+[19:07] tinha, em média, 1.500 histórias disponíveis para aquela pessoa.
+[19:11] Mas o sistema mostrava só umas 300.
+[19:14] É só voltar na analogia da caixa de correio cheia.
+[19:18] Imagina que chega 1.500 cartas por dia para você.
+[19:21] E você só tem tempo físico de ler 300.
+[19:25] A opção matemática de ler tudo simplesmente deixa de existir.
+[19:29] Alguém, ou alguma coisa, vai ter que escolher essas 300 para você.
+[19:33] E eles explicaram como faziam essa escolha.
+[19:36] Foi o Ed Rank, que eles revelaram ao público em abril de 2010.
+[19:41] Era uma fórmula baseada em três fatores que se multiplicavam.
+[19:45] Quais eram?
+[19:46] O primeiro era o quanto há de interação prévia com aquela pessoa.
+[19:50] O segundo era o peso do tipo de ação,
+[19:53] porque um comentário sempre pesa mais do que uma cortida simples, né.
+[19:58] E o terceiro era o tempo que passou desde a publicação.
+[20:01] E esse é o tom que entrega o que vem pela frente na série.
+[20:04] Esse cálculo matemático era uma regra escrita à mão.
+[20:08] Eram fatores escolhidos de forma deliberada por pessoas.
+[20:11] O volume puramente eritmético de postagens matou de vez a velha ordem cronológica simples.
+[20:17] E para dizer onde toda essa loucura para, aperte o próximo.
+[20:21] Bom, chegamos ao ano de 2012, que é o ponto em que o nosso episódio de hoje para.
+[20:25] Nesse ano, a simples ordem de hora das publicações
+[20:28] já tinha sido engolida e substituída por uma regra escrita.
+[20:31] E é impressionante olhar o balanço consolidado pessoa por pessoa do que aconteceu até aqui.
+[20:39] Olha só, o Ebrams guardou ligações reais e não coube na máquina.
+[20:43] O Anderson ganhou muito mercado tirando-se exata conta do caminho dele.
+[20:47] O Zuckerberg cresceu devagar por pedaço e a máquina dele acompanhou.
+[20:53] O Hurley, o Chan e o Carim colocaram um vídeo na rede e encheram a tubulação de fibra ótica.
+[20:59] Aí vem o Dorsey, o Williams e o Stoning.
+[21:02] Eles deixaram seguir os outros sempre de licença e criaram aquele pesadelo.
+[21:06] O problema é de montar os feeds.
+[21:08] E a Sangvi foi lá e anunciou a tela que juntou todo esse caos.
+[21:13] Ninguém lá no começo planejou esse conjunto.
+[21:15] Ninguém.
+[21:16] E a lição final de tudo isso, voltando à tese, é que o volume gerou dois problemas.
+[21:21] Montar o feed foi algo que se resolveu com engenharia de máquina.
+[21:25] Mas escolher o que, de fato, cabe na tela não tem uma solução puramente técnica.
+[21:30] Exige escolha.
+[21:32] Exige um juízo de valor.
+[21:33] O que deixa uma reflexão forte solta no ar, né?
+[21:36] A gente viu que em 2010, quem escolhia o que aparecia
+[21:40] era uma regra matemática de três fatores, minuciosamente escrita por pessoas.
+[21:46] Mas e se amanhã ninguém escreve a regra?
+[21:49] E se, no lugar disso, a própria máquina descobrir sozinha o que mostrar?
+[21:53] Apenas olhando obcecadamente o que foi feito antes pelas pessoas.

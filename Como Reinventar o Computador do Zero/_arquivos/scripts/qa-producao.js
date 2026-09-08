@@ -10,6 +10,16 @@ const PAGINAS = [
   ['7.03', S + '/_REFAZER/07%20-%20O%20computador%20encolhe/03%20-%20O%20microprocessador/animacao.html', 11, 'microprocessador'],
   ['EX-09', S + '/_EXTRAS/09%20-%20Quem%20Fez%20o%20Primeiro%20Chip/animacao.html', 10, null],
   ['EX-10', S + '/_EXTRAS/10%20-%20A%20Lei%20de%20Moore/animacao.html', 10, null],
+  ['8.01', S + '/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/01%20-%20O%20computador%20chega%20em%20casa/animacao.html', 12, null],
+  ['8.02', S + '/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/02%20-%20Conectando%20tudo%20-%20a%20internet/animacao.html', 11, null],
+  ['8.03', S + '/_REFAZER/08%20-%20Da%20sala%20pro%20mundo/03%20-%20O%20sistema%20operacional/animacao.html', 12, null],
+  ['9.01', S + '/_REFAZER/09%20-%20A%20m%C3%A1quina%20que%20aprende/01%20-%20A%20corrida%20do%20processador/animacao.html', 12, null],
+  ['9.02', S + '/_REFAZER/09%20-%20A%20m%C3%A1quina%20que%20aprende/02%20-%20A%20placa%20de%20v%C3%ADdeo/animacao.html', 12, null],
+  ['9.03', S + '/_REFAZER/09%20-%20A%20m%C3%A1quina%20que%20aprende/03%20-%20A%20m%C3%A1quina%20que%20aprende/animacao.html', 12, null],
+  ['9.04', S + '/_REFAZER/09%20-%20A%20m%C3%A1quina%20que%20aprende/04%20-%202017%20-%20Attention%20is%20All%20You%20Need/animacao.html', 12, null],
+  ['10.01', S + '/_REFAZER/10%20-%20A%20rede%20vira%20feed/01%20-%20A%20bolha/animacao.html', 12, null],
+  ['10.02', S + '/_REFAZER/10%20-%20A%20rede%20vira%20feed/02%20-%20A%20busca%20vira%20neg%C3%B3cio/animacao.html', 12, null],
+  ['10.03', S + '/_REFAZER/10%20-%20A%20rede%20vira%20feed/03%20-%20As%20redes%20sociais/animacao.html', 12, null],
 ];
 
 (async () => {

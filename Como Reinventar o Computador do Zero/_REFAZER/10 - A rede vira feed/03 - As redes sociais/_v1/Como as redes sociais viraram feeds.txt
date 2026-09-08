@@ -1,0 +1,7 @@
+Titulo: Como as redes sociais viraram feeds
+Notebook: 10-03-As redes sociais
+
+Descricao:
+Estes documentos detalham a evolução das redes sociais entre 2002 e 2012, focando em como o crescimento explosivo de usuários transformou o design de produtos em complexos problemas de computação. O conteúdo narra a trajetória de plataformas como Friendster, MySpace, Facebook, YouTube e Twitter, destacando as soluções técnicas criadas para lidar com o volume massivo de dados e conexões. A tese central divide esse desafio em dois eixos: o alto custo de processamento para montar o que cada usuário visualiza e a impossibilidade humana de consumir todo o conteúdo disponível. O relato prioriza a história das pessoas por trás das inovações, apresentando fichas biográficas dos fundadores e engenheiros que moldaram a web moderna. Por fim, o material explica a transição dos murais cronológicos para os algoritmos de seleção, como o EdgeRank, preparando o terreno para o surgimento da inteligência artificial.
+
+Link: https://notebook.google.com/notebook/0634adf5-21f7-40ba-909d-c1927202ac0c
