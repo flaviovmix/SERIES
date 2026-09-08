@@ -1,0 +1,501 @@
+Inicie dizendo: A Placa de Vídeo
+---------------
+
+Este e o segundo episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da
+serie Como Reinventar o Computador do Zero. O episodio anterior contou a corrida do
+processador de 1993 a 2006: o relogio subiu, bateu na parede do calor em 2004, e a saida
+foi dois nucleos, que so o software escrito em paralelo aproveita. Ele terminou com uma
+pergunta: se agora o jeito de ir mais rapido e fazer muitas contas ao mesmo tempo, que
+peca do computador ja fazia exatamente isso ha dez anos, e pra que? Este episodio
+responde: a placa de video, e pra jogo.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram a placa de video, EM
+ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o software melhoram
+um empurrando o outro. Quando aparecer preco, compra de empresa, falencia ou "quem
+ganhou", e pra dizer o que aquilo permitiu ou impediu de construir.
+
+ESTE EPISODIO COBRE DE 1985 A 2007, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. ATENCAO: o episodio
+anterior parou em dois mil e seis e este comeca em mil novecentos e oitenta e cinco. NAO
+chamar isso de "voltar no tempo": a corrida da placa de video correu AO LADO da corrida
+do processador, e a serie conta uma de cada vez. Dizer isso na tela 1, em uma frase.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome. Dizer quem fez, onde estava e por
+que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Jensen
+Huang, nascido em mil novecentos e sessenta e tres, tinha trinta anos; vivo em dois mil
+e vinte e seis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE SO, dita
+e seguida em frente: sem comentario, sem contar mais nada da vida da pessoa. NAO pular
+ficha de ninguem e NAO inventar dado que nao esteja na ficha. Sao sete fichas: Ho,
+Carmack, Huang, Malachowsky, Kirk, Ruiz e Orton.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer
+"ficha", "deixa eu ler a ficha", "olha a ficha dele" nem nada parecido: emendar direto
+no nome: "K.Y. Ho, nascido em mil novecentos e cinquenta, tinha trinta e cinco anos;
+vivo em dois mil e vinte e seis."
+
+QUEM NAO E PERSONAGEM: o terceiro fundador da NVIDIA, os tres fundadores da 3dfx e o
+doutorando de Stanford que fez o Brook e o CUDA NAO tem ano de nascimento publico, e por
+isso NAO sao nomeados neste episodio. Falar deles como o roteiro escreve ("um terceiro
+engenheiro", "tres engenheiros vindos da Silicon Graphics", "um doutorando de
+Stanford"). NAO inventar nome nem ficha pra ninguem que o roteiro nao nomeie.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido". A frase so pode ser dita nos onze pedidos de verdade,
+porque a pagina corta o audio em cada vez que ela aparece.
+
+A PRIMEIRA GRAVACAO DESTE EPISODIO IGNOROU A ESTRUTURA INTEIRA: nao pediu "aperte o
+Proximo" NENHUMA vez, nao avisou das 12 telas, nao leu NENHUMA das sete fichas, chamou o
+pintor de "genio" (palavra proibida) e disse "aquela nossa analogia classica" (citar a
+instrucao). Foi descartada. NAO REPETIR: sao ONZE pedidos de "aperte o Proximo", um no
+fim de cada tela de 1 a 11, e SETE fichas lidas no formato, e o aviso das 12 telas na
+tela 1. Sem isso o episodio nao serve.
+
+A SEGUNDA GRAVACAO acertou a estrutura (onze pedidos, sete fichas) mas: disse que a compra
+da ATI custou "cinco bilhoes e quatrocentos BILHOES de dolares". E CINCO BILHOES E
+QUATROCENTOS MILHOES: bilhoes primeiro, milhoes depois, como em "cinco virgula quatro
+bilhoes". Tambem chamou o processador de "cerebro" duas vezes (proibido: nao comparar com
+cerebro) e disse "virada genial" (proibido, junto com "genio"). NAO REPETIR.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. A tela 2 e a placa antes do 3D (a ATI e o Doom). A
+tela 3 e a NVIDIA nascendo e errando no NV1. Duas telas, um pedido de Proximo entre elas.
+NAO falar de NVIDIA na tela 2.
+
+ATENCAO ESPECIAL COM AS TELAS 4 e 5. A tela 4 e o Voodoo e o GLQuake. A tela 5 e a briga
+das linguas (Glide contra Direct3D) e a NVIDIA renascendo com o RIVA. Duas telas, dois
+pedidos. NAO falar de RIVA na tela 4.
+
+ATENCAO ESPECIAL COM AS TELAS 6 e 7. A tela 6 e a GeForce 256, a primeira GPU. A tela 7
+e a Radeon, o fim da 3dfx e a GeForce 3 programavel. Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 9, 10 e 11. Sao tres telas de dois mil e seis e dois mil e
+sete: a tela 9 e a AMD comprando a ATI (julho de dois mil e seis); a tela 10 e a GeForce
+8800 (novembro de dois mil e seis); a tela 11 e o CUDA (fevereiro de dois mil e sete).
+Tres telas, tres pedidos. NAO falar de CUDA na tela 10, mesmo que ele tenha sido
+anunciado no mesmo dia da 8800: neste roteiro o CUDA e a tela 11.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 e o CUDA e TERMINA nos primeiros usos
+fora de jogo. A tela 12 e OUTRA COISA: o balanco das pessoas, nome por nome, a licao e a
+pergunta que abre o proximo episodio. Um pedido de Proximo entre as duas. Na primeira
+gravacao do episodio anterior essas duas telas sairam emendadas: NAO repetir.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e oitenta e cinco", "mil
+novecentos e oitenta e sete", "mil novecentos e noventa e tres", "mil novecentos e
+noventa e cinco", "mil novecentos e noventa e seis", "mil novecentos e noventa e sete",
+"mil novecentos e noventa e oito", "mil novecentos e noventa e nove", "dois mil", "dois
+mil e um", "dois mil e dois", "dois mil e quatro", "dois mil e seis", "dois mil e sete".
+Ano dito rapido em digito sai embolado.
+
+NUMEROS GRANDES DEVAGAR: "trezentos e sete mil pontos", "nove milhoes de pontos por
+segundo", "vinte milhoes de transistores", "seiscentos e oitenta e um milhoes de
+transistores", "cinco bilhoes e quatrocentos milhoes de dolares" (BILHOES, com B).
+"Seiscentos e quarenta por quatrocentos e oitenta" e a resolucao da tela.
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar quando
+indicado, porque em portugues eles embolam:
+
+- Placa de video: dizer sempre "placa de video". GPU: soletrar, "ge, pe, u", e dizer
+  que quer dizer "unidade de processamento grafico". VGA: soletrar, "ve, ge, a".
+- ATI: soletrar, "a, te, i". Markham: fala-se "már-cam", perto de Toronto, no Canada.
+  K.Y. Ho: dizer "cá, uai, rô". Hong Kong: fala-se "rong cong".
+- Doom: fala-se "dum". Quake: fala-se "quêic". id Software: dizer "íd sóft-uer". John
+  Carmack: fala-se "djón cár-mac".
+- NVIDIA: fala-se "en-ví-dia". Jensen Huang: fala-se "djén-sen ruâng". Chris
+  Malachowsky: fala-se "cris ma-la-cóvs-qui". Denny's: fala-se "dénis", uma lanchonete.
+  NV1: dizer "ene ve um". Sega Saturn: fala-se "sê-ga sá-turn".
+- 3dfx: dizer "tres de efe xis". Voodoo: fala-se "vu-dú". Silicon Graphics: fala-se
+  "sí-li-con gráfics". GLQuake: dizer "ge ele quêic".
+- Glide: fala-se "glaid". Direct3D: dizer "dai-réct tres de". OpenGL: dizer "ôpen ge
+  ele". RIVA: fala-se "rí-va". TNT: soletrar, "te, ene, te".
+- GeForce: fala-se "dji-fórs". GeForce 256: dizer "dji-fórs duzentos e cinquenta e
+  seis". David Kirk: fala-se "dêi-vid quérc".
+- Radeon: fala-se "rêi-dion". Xbox: fala-se "écs-bócs".
+- Stanford: fala-se "stén-ford". Brook: fala-se "bruc".
+- Hector Ruiz: fala-se "réc-tor ru-íz". Dave Orton: fala-se "dêiv ór-ton". Fusion:
+  fala-se "fiú-jon".
+- GeForce 8800: dizer "dji-fórs oito mil e oitocentos". CUDA: fala-se "cú-da".
+- A linguagem C: dizer "a linguagem cê".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "as fontes", "conforme o documento", "a analogia autorizada" nem nada
+parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "A Placa de Video". As palavras "inicie dizendo"
+NUNCA sao ditas em voz alta.
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. NAO abrir com
+"imagina a seguinte cena", NAO abrir com um fato de tela posterior como isca, e NAO abrir
+com comparacao nenhuma. Depois do titulo, a primeira frase e a retomada de dois mil e
+seis.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir ou
+mexer em peca nenhuma na capa da pagina. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+ESTE EPISODIO E O SEGUNDO DE QUATRO. Na ultima tela, balanco das pessoas, a licao do
+episodio e a pergunta que abre o proximo. NAO explicar rede neural, NAO falar em
+"inteligencia artificial" nem em "aprender": sao os episodios seguintes. A pergunta
+final so aponta.
+
+DURACAO: cerca de 18 minutos. Nao esticar, nao repetir, nao comentar cada fato duas
+vezes. Nao encurtar demais tambem: a terceira gravacao do episodio anterior ficou em
+quatorze minutos porque pulou datas; aqui, dizer as datas que o roteiro traz.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, lendario,
+revolucionario. E "cerebro" em qualquer comparacao com processador ou placa.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A equipe de pintores: a tela do computador e uma parede com trezentos mil azulejos, e
+  precisa ser repintada trinta vezes por segundo. O processador e um pintor so, muito
+  rapido e muito esperto, que pinta um azulejo de cada vez. A placa de video e uma
+  equipe de centenas de pintores simples, cada um com um azulejo, todos pintando ao
+  mesmo tempo com a mesma instrucao. O pintor esperto decide o que pintar; a equipe
+  pinta.
+- O caixa do mercado, herdado do episodio anterior, pode ser lembrado em UMA frase pra
+  dizer o que o processador e (um caixa que atende um cliente por vez e reordena a fila
+  sozinho). Nao desenvolver.
+
+Fora essas, sem analogias. Explicar direto. NAO comparar placa de video com cerebro,
+motor, carro ou musculo.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A PECA FEITA PRA JOGO
+
+Retomar em duas frases onde a serie parou: em dois mil e seis o processador tem dois
+nucleos e o relogio parou perto de tres giga-hertz; ir mais rapido virou fazer muitas
+contas ao mesmo tempo, e isso virou problema de software. A pergunta que ficou: que peca
+do computador ja fazia exatamente isso ha dez anos, e pra que?
+
+Responder direto: a placa de video, e pra jogo.
+
+Explicar por que pintar a tela e um problema diferente, com numeros: uma tela de mil
+novecentos e noventa e seis tem seiscentos e quarenta por quatrocentos e oitenta pontos,
+trezentos e sete mil pontos. Pra parecer movimento, tem que repintar trinta vezes por
+segundo: nove milhoes de pontos por segundo. E a conta e a MESMA em todos os pontos: que
+cor este ponto tem, dada a luz e a textura. O processador faz uma conta de cada vez; ele
+e o pintor esperto que pinta um azulejo por vez. Pra nove milhoes de azulejos por
+segundo, precisa de outra coisa.
+
+Usar a analogia da equipe de pintores, inteira, aqui, uma vez.
+
+Avisar que o episodio anterior parou em dois mil e seis e este comeca em mil novecentos
+e oitenta e cinco: a corrida da placa de video correu ao lado da corrida do processador,
+e a serie conta uma de cada vez.
+
+Dizer o fio: como nos anteriores, pessoas em ordem, e em cada passo o hardware e o
+software empurrando um ao outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e oitenta e cinco a
+dois mil e sete.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver o que a placa de video era antes de saber pintar em tres
+dimensoes.
+
+TELA 2 - MIL NOVECENTOS E OITENTA E CINCO A NOVENTA E TRES: A PLACA BURRA E O JOGO ESPERTO
+
+Explicar o que a placa de video era: um pedaco de memoria onde o processador escrevia a
+cor de cada ponto, e um circuito que lia essa memoria sessenta vezes por segundo e
+mandava pro monitor. Em mil novecentos e oitenta e sete a IBM padroniza isso no PC como
+VGA: seiscentos e quarenta por quatrocentos e oitenta, dezesseis cores. A placa nao
+pensava. Quem pintava era o processador.
+
+Contar a pessoa e a empresa: em vinte de agosto de mil novecentos e oitenta e cinco, em
+Markham, perto de Toronto, K.Y. Ho, nascido na China e vindo de Hong Kong, funda a ATI
+com dois outros engenheiros de Hong Kong, pra fazer placas de video pros PCs e clones.
+Placas boas de memoria e conversor, sem nada de tres dimensoes.
+
+FICHA: K.Y. Ho, nascido em mil novecentos e cinquenta, tinha trinta e cinco anos; vivo
+em dois mil e vinte e seis.
+
+Contar o jogo, e a pessoa: em dezembro de mil novecentos e noventa e tres sai o Doom, da
+id Software, um jogo em que o jogador anda por corredores em tres dimensoes. Quem fez a
+engine foi John Carmack.
+
+FICHA: John Carmack, nascido em mil novecentos e setenta, tinha vinte e tres anos; vivo
+em dois mil e vinte e seis.
+
+Dizer como o Doom pintava: tudo no processador, um 386 ou 486, com truques pra nao
+calcular o que nao aparece: paredes so verticais, chao so horizontal, sem olhar pra cima
+nem pra baixo. Trinta e cinco quadros por segundo, um pintor so, esperto.
+
+Dizer a licao de hardware e software: o jogo e o software que vai puxar a peca nova. Em
+mil novecentos e noventa e tres o software ja queria tres dimensoes e o hardware que
+sabia fazer isso custava dezenas de milhares de dolares, nas estacoes da Silicon
+Graphics.
+
+Fechar pedindo o Proximo pra ver tres engenheiros fundando uma empresa numa lanchonete.
+
+TELA 3 - MIL NOVECENTOS E NOVENTA E TRES A NOVENTA E CINCO: A NVIDIA ERRA A LINGUA
+
+Contar a cena, que e verdadeira: em cinco de abril de mil novecentos e noventa e tres,
+numa lanchonete Denny's na California, tres engenheiros fundam a NVIDIA: Jensen Huang,
+que vinha da LSI Logic e da AMD, Chris Malachowsky, da Sun, e um terceiro engenheiro
+tambem da Sun. A aposta: o PC ia querer pintar em tres dimensoes e ninguem fazia um chip
+barato pra isso.
+
+FICHA: Jensen Huang, nascido em mil novecentos e sessenta e tres, tinha trinta anos; vivo
+em dois mil e vinte e seis. Chris Malachowsky, nascido em mil novecentos e cinquenta e
+nove, tinha trinta e tres anos; vivo em dois mil e vinte e seis.
+
+Contar o primeiro chip e o erro: o NV1, de mil novecentos e noventa e cinco, desenhava
+superficies curvas em vez de triangulos, e trazia junto som e uma entrada pro controle
+do console Sega Saturn. Em junho de mil novecentos e noventa e seis a Microsoft lanca o
+Direct3D, a lingua comum que os jogos de Windows iam falar com a placa, e ela e feita de
+triangulos. O NV1 nao falava a lingua. Vendeu pouco. A NVIDIA demitiu metade da equipe e
+quase fechou.
+
+Dizer a licao de hardware e software: o hardware pode ser bom e morrer se nao falar a
+lingua que o software escolheu. E a mesma licao do Itanium, do episodio anterior, dez
+anos antes.
+
+Fechar pedindo o Proximo pra ver a placa que fez o jogo ficar liso.
+
+TELA 4 - MIL NOVECENTOS E NOVENTA E SEIS E NOVENTA E SETE: O VOODOO E O GLQUAKE
+
+Contar a empresa sem nomear as pessoas: tres engenheiros que vinham da Silicon Graphics,
+onde as maquinas de tres dimensoes custavam o preco de um carro, fundam a 3dfx em mil
+novecentos e noventa e quatro pra fazer a mesma coisa cabendo numa placa de PC.
+
+Contar a peca: o Voodoo Graphics, nas lojas entre outubro e novembro de mil novecentos e
+noventa e seis. Uma placa que so fazia tres dimensoes: nao tinha nem saida pra area de
+trabalho do Windows; ligava em cascata na placa de video normal e so assumia a tela
+quando o jogo comecava. Pintava triangulos com textura, seiscentos e quarenta por
+quatrocentos e oitenta, trinta quadros por segundo, com a equipe de pintores em vez do
+pintor unico.
+
+Contar o software que vendeu a peca: em junho de mil novecentos e noventa e seis Carmack
+tinha lancado o Quake, o primeiro jogo dele todo em tres dimensoes de verdade, ainda
+pintado pelo processador. Em vinte e dois de janeiro de mil novecentos e noventa e sete
+ele solta o GLQuake, o mesmo jogo pintado pela placa. Quem tinha um Voodoo via o jogo
+liso, com luz e textura suave; quem nao tinha, nao via. A placa virou obrigatoria.
+
+Dizer a licao de hardware e software: um programa vendeu uma peca, como o VisiCalc
+vendeu o Apple II na etapa anterior. E a peca nasceu especializada: so sabia fazer uma
+coisa, e por isso fazia rapido.
+
+Fechar pedindo o Proximo pra ver a briga das linguas.
+
+TELA 5 - MIL NOVECENTOS E NOVENTA E SETE E NOVENTA E OITO: A BRIGA DAS LINGUAS
+
+Explicar o problema: cada placa falava a sua lingua. A 3dfx tinha a Glide, so dela, e os
+jogos escritos pra Glide so rodavam em Voodoo. Do outro lado, duas linguas de todo
+mundo: o OpenGL, que veio das estacoes da Silicon Graphics, e o Direct3D, da Microsoft,
+que vinha junto com o Windows. Jogo escrito pra elas rodava em qualquer placa que as
+falasse.
+
+Contar a NVIDIA renascendo: em agosto de mil novecentos e noventa e sete a NVIDIA lanca
+o RIVA 128, que fala Direct3D, e faz duas e tres dimensoes na mesma placa, sem cascata.
+Em mil novecentos e noventa e oito o RIVA TNT, duas vezes mais rapido. A 3dfx responde
+com o Voodoo2, em fevereiro de mil novecentos e noventa e oito, ainda so tres dimensoes,
+ainda Glide primeiro.
+
+Dizer o que decidiu: os estudios de jogo pararam de escrever pra uma placa so. Escrever
+pra lingua comum e rodar em todas exige menos deles. A Glide comeca a morrer ali.
+
+Dizer a licao de hardware e software: pela quarta vez na serie, ganhou quem exigiu menos
+do software. A peca que fala a lingua comum sobrevive; a peca melhor com lingua propria,
+nao.
+
+Fechar pedindo o Proximo pra ver a placa ganhar um nome novo.
+
+TELA 6 - MIL NOVECENTOS E NOVENTA E NOVE: A PRIMEIRA GPU
+
+Explicar o que ainda faltava: mesmo com Voodoo ou RIVA, o processador continuava
+fazendo a geometria, isto e, calculando onde cada canto de cada triangulo cai na tela
+quando a camera se mexe, e como a luz bate nele. So depois a placa pintava. Com milhoes
+de triangulos, o processador virou o gargalo.
+
+Contar a peca: em trinta e um de agosto de mil novecentos e noventa e nove a NVIDIA
+anuncia a GeForce 256, a venda em onze de outubro. A geometria e a luz saem do
+processador e entram na placa. Uns vinte milhoes de transistores, mais que o dobro do
+Pentium III da epoca. A NVIDIA inventa um nome pra isso e chama de GPU, unidade de
+processamento grafico. O nome pegou.
+
+Contar a pessoa: David Kirk, cientista-chefe da NVIDIA desde mil novecentos e noventa e
+sete, e quem desenha o rumo dos chips dali em diante.
+
+FICHA: David Kirk, nascido em mil novecentos e sessenta, tinha trinta e nove anos; vivo
+em dois mil e vinte e seis.
+
+Dizer a licao de hardware e software: o hardware tira do processador um trabalho
+inteiro, e o software (o jogo) ganha o processador de volta pra fazer o resto: a fisica,
+os inimigos, o som.
+
+Fechar pedindo o Proximo pra ver a placa aceitar programa.
+
+TELA 7 - DOIS MIL A DOIS MIL E DOIS: RADEON, O FIM DA 3DFX E A PLACA PROGRAMAVEL
+
+Contar a ATI voltando: em abril de dois mil a ATI anuncia a Radeon, a primeira placa
+dela no nivel da GeForce. Dali em diante a corrida da placa de video tem dois
+corredores, como a do processador.
+
+Contar o fim da 3dfx em duas frases: em quinze de dezembro de dois mil a 3dfx vende o
+que tem pra NVIDIA e fecha em dois mil e dois. A Glide morreu antes.
+
+Contar a virada, que e o centro da tela: em vinte e sete de fevereiro de dois mil e um a
+GeForce 3 traz uma coisa nova: em vez de uma sequencia fixa de operacoes por ponto, o
+programador escreve um programinha curto que roda em cada vertice e em cada ponto da
+tela. A placa que so sabia fazer uma coisa passa a aceitar programa. Em novembro de dois
+mil e um o Xbox, o console da Microsoft, sai com um chip da NVIDIA dentro. Em dois mil e
+dois a Radeon 9700, da ATI, leva os programinhas mais longe.
+
+Dizer a licao de hardware e software: a peca nasceu especializada pra ser rapida, e
+agora ganha de volta um pouco de generalidade. Cada pintor da equipe passa a seguir um
+programinha em vez de uma instrucao fixa. Isso vai ser a porta.
+
+Fechar pedindo o Proximo pra olhar a placa por dentro.
+
+TELA 8 - DOIS MIL E TRES A DOIS MIL E CINCO: O QUE A PLACA E POR DENTRO
+
+Explicar a placa por dentro, com a analogia: o processador do episodio anterior e um
+caixa so, enorme, esperto, que atende um cliente por vez e reordena a fila sozinho. A
+placa de video e o oposto: dezenas, depois centenas de pintores pequenos e simples, cada
+um sem esperteza nenhuma, todos executando a MESMA instrucao em numeros diferentes ao
+mesmo tempo. Um pinta o azulejo um, o outro o azulejo dois, todos com a mesma tinta.
+
+Dizer o que isso significa fora do jogo: qualquer conta que e "a mesma operacao em
+muitos numeros" cabe ali. Multiplicar duas tabelas grandes de numeros, simular o calor
+numa peca, ondas, fluidos. Pesquisadores de universidade percebem isso por volta de dois
+mil e tres e comecam a fingir que a conta deles e um jogo: guardam numeros como se
+fossem cores de textura e mandam a placa pintar.
+
+Contar o passo seguinte sem nomear: em dois mil e quatro um doutorando de Stanford
+apresenta o Brook, uma linguagem pra escrever essa conta em C e mandar pra placa sem
+fingir que e imagem. A NVIDIA contrata ele no mesmo ano.
+
+Dizer a licao de hardware e software: o software achou um uso novo pro hardware que o
+hardware nao previu. A peca feita pra jogo comeca a virar outra coisa, pelas maos de quem
+programa.
+
+Fechar pedindo o Proximo pra ver a AMD comprar uma empresa de placa de video.
+
+TELA 9 - JULHO DE DOIS MIL E SEIS: A AMD COMPRA A ATI
+
+Contar o fato: em vinte e quatro de julho de dois mil e seis a AMD anuncia a compra da
+ATI por cinco bilhoes e quatrocentos MILHOES de dolares (cinco virgula quatro bilhoes;
+NAO dizer "quatrocentos bilhoes"). A compra fecha em vinte e cinco
+de outubro. E a mesma semana em que a Intel lancou o Core 2 Duo, no episodio anterior.
+
+Contar as pessoas: Hector Ruiz, presidente da AMD, que veio da Motorola e desde dois mil
+e dois brigava com a Intel no processador; e Dave Orton, presidente da ATI, engenheiro
+que tinha vindo da Silicon Graphics.
+
+FICHA: Hector Ruiz, nascido em mil novecentos e quarenta e cinco, tinha sessenta anos;
+vivo em dois mil e vinte e seis. Dave Orton, nascido em mil novecentos e cinquenta e
+cinco, tinha cinquenta e um anos; vivo em dois mil e vinte e seis.
+
+Dizer o motivo, que e de construcao: a AMD queria as duas pecas da era seguinte na mesma
+empresa, o processador e a placa, e anunciou no mesmo dia um plano de por as duas na
+mesma pastilha, que chamou de Fusion. A partir dali a AMD briga em duas frentes: contra a
+Intel no processador e contra a NVIDIA na placa de video.
+
+Dizer a licao de hardware e software: o processador de dois nucleos e a placa de
+centenas de pintores sao dois jeitos de fazer muitas contas ao mesmo tempo, e em dois
+mil e seis a industria decide que os dois vao viver juntos.
+
+Fechar pedindo o Proximo pra ver a placa que virou um computador de pintores iguais.
+
+TELA 10 - NOVEMBRO DE DOIS MIL E SEIS: A GEFORCE 8800
+
+Contar a peca: em oito de novembro de dois mil e seis a NVIDIA lanca a GeForce 8800,
+seiscentos e oitenta e um milhoes de transistores, mais que o dobro do Core 2 Duo
+lancado tres meses antes.
+
+Explicar a mudanca por dentro: ate ali a placa tinha pintores especializados, uns so pra
+geometria, outros so pra cor do ponto, e quando um grupo estava parado o outro nao podia
+ajudar. A 8800 tem cento e vinte e oito processadores iguais, que fazem qualquer das
+duas coisas conforme a necessidade. Kirk chama de unificados.
+
+Dizer o que isso quer dizer: cento e vinte e oito pintores iguais, todos programaveis,
+todos fazendo a mesma instrucao em numeros diferentes. Deixou de ser uma placa de pintar
+e virou um computador de muitos pintores iguais, que por acaso ainda pinta jogo.
+
+Dizer a licao de hardware e software: o hardware foi desenhado pra ser geral. A porta
+que a GeForce 3 abriu virou um portao. Falta a lingua pra entrar por ele.
+
+Fechar pedindo o Proximo pra ver essa lingua.
+
+TELA 11 - FEVEREIRO DE DOIS MIL E SETE: O CUDA
+
+Contar a peca de software: em quinze de fevereiro de dois mil e sete a NVIDIA solta o
+CUDA. E um jeito de escrever, na linguagem C, um programa que roda direto nos cento e
+vinte e oito processadores da placa, sem fingir que e jogo, sem textura, sem triangulo.
+Quem liderou foi o mesmo doutorando de Stanford do Brook, contratado em dois mil e
+quatro, com Kirk empurrando por cima.
+
+Dizer o que muda pra quem programa: o programador diz "faca esta conta em cada um destes
+um milhao de numeros" e a placa distribui pelos pintores. Um programa que levava horas
+no processador leva minutos na placa, se a conta for a mesma em muitos numeros.
+
+Dizer os primeiros usos, que ainda nao sao os deste episodio: simulacao de fisica,
+quimica, petroleo, financas. Universidades compram placa de jogo pra fazer ciencia. A
+NVIDIA passa a vender a mesma placa com outro nome pra servidor.
+
+Dizer a licao de hardware e software, que e o centro do episodio: uma linguagem, que e
+software, mudou o destino de uma peca. A placa feita pra jogo em mil novecentos e noventa
+e seis e, em dois mil e sete, uma maquina de fazer a mesma conta em milhoes de numeros
+ao mesmo tempo, aberta pra qualquer programa.
+
+Fechar pedindo o Proximo pra dizer onde isto para. ESTE PEDIDO E OBRIGATORIO: a tela 11
+acaba aqui. O balanco e a tela 12.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e sete, com a placa de video programavel em C, cento
+e vinte e oito processadores iguais, e a AMD dona da ATI.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: Ho fundou em
+Markham a empresa que virou a Radeon. Carmack fez o jogo que vendeu a placa. Huang e
+Malachowsky erraram a lingua no NV1 e acertaram no RIVA. Kirk pos a geometria na placa,
+depois pos programa nela, depois abriu ela pra tudo. Ruiz e Orton juntaram processador e
+placa na mesma empresa. Ninguem planejou o conjunto.
+
+Dizer a licao do episodio em duas frases: uma peca feita pra jogo virou a peca mais
+importante da era seguinte. E virou porque o software, primeiro o jogo, depois uma
+linguagem, foi mudando o que se pedia dela.
+
+Deixar a pergunta no ar, sem responder, e SEM dizer "inteligencia artificial" nem "rede
+neural": agora existe uma maquina barata que faz a mesma conta em milhoes de numeros ao
+mesmo tempo. Sera que existe algum problema que a gente nao sabe escrever como programa,
+mas que da pra resolver so com muita conta repetida? E se a resposta pra isso estivesse
+guardada numa gaveta desde mil novecentos e cinquenta e oito?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

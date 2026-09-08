@@ -1,0 +1,556 @@
+Inicie dizendo: O Computador Chega em Casa
+---------------
+
+Este e o primeiro episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie Como
+Reinventar o Computador do Zero. A etapa anterior encolheu a maquina ate ela caber
+numa pastilha, e terminou com a Intel vendendo o 8080, um processador completo de
+oito bits, pra quem quisesse comprar. A peca esta pronta. Ninguem sabe o que fazer com
+ela, e ninguem tem um computador em casa.
+
+O ASSUNTO DESTE EPISODIO E CONSTRUIR, NAO VENDER. A serie e sobre como o computador foi
+construido, uma peca por vez. Este episodio segue as PESSOAS que pegaram a peca pronta
+e o que cada uma construiu com ela, EM ORDEM CRONOLOGICA, e usa cada passo pra mostrar
+uma coisa so: como o hardware e o software melhoram um empurrando o outro. NAO
+transformar em historia de negocios, de marketing ou de "como vender computador".
+Quando aparecer preco ou venda, e pra dizer o que aquilo permitiu construir em
+seguida, nao como assunto em si.
+
+ESTE EPISODIO COBRE DE 1973 A 1990, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. NAO pular pra frente e
+voltar: cada tela e mais tarde que a anterior.
+
+COM PESSOAS E COM NOME. Diferente dos episodios anteriores da trilha principal, aqui as
+pessoas entram pelo nome, porque a historia deste trecho E as pessoas. Dizer quem fez,
+onde estava e por que fez. Mas sem fofoca e sem julgamento: contar o que aconteceu,
+inclusive a mae do Gates e o sistema operacional comprado, como fato, sem moralizar.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Chuck
+Thacker, nascido em mil novecentos e quarenta e tres, tinha trinta anos; morreu em dois
+mil e dezessete." Onde o roteiro escrever FICHA, ler a ficha. Anos por extenso. NAO
+pular ficha de ninguem e NAO inventar dado que nao esteja na ficha. A FICHA E UMA FRASE
+SO, dita e seguida em frente: sem comentario, sem "que curioso", sem contar mais nada
+da vida da pessoa. Na gravacao anterior as fichas viraram paragrafos e o episodio
+dobrou de tamanho.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. NA GRAVACAO ANTERIOR ELAS FORAM EMENDADAS numa
+tela so de quase seis minutos. A tela 2 e a Xerox e o Alto, e TERMINA na licao de
+hardware e software da Xerox. A tela 3 e o Ed Roberts e o Altair, dois anos depois.
+Entre as duas tem um pedido de Proximo. NAO comecar a falar do Altair na tela 2.
+
+ATENCAO ESPECIAL COM AS TELAS 3 e 4. A tela 3 e o Altair e o Ed Roberts. A tela 4 e o
+Gates e o Allen escrevendo o BASIC pra ele. Sao duas telas, com um pedido de Proximo
+entre elas. NAO contar o BASIC na tela 3.
+
+ATENCAO ESPECIAL COM AS TELAS 4 e 5. NA GRAVACAO ANTERIOR ELAS FORAM EMENDADAS. A tela 4
+e Gates e Allen, e TERMINA na fundacao da Microsoft em Albuquerque. A tela 5 e o
+Homebrew, Wozniak e o Apple II. Entre as duas tem um pedido de Proximo. NAO falar de
+Wozniak, de clube nem de Apple na tela 4.
+
+ATENCAO ESPECIAL COM AS TELAS 8 e 9. A tela 8 e o que a IBM era e o grupo de Boca
+Raton montando a maquina. A tela 9 e o sistema operacional: a mae do Gates, o Kildall,
+o QDOS e a licenca. Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 termina no Windows 3.0 pegando e no
+numero de casas com computador. A tela 12 e OUTRA COISA: o balanco, a licao de
+hardware e software e a pergunta que abre o proximo episodio. Numa gravacao anterior
+deste episodio essas duas foram emendadas e a pagina inteira saiu errada. ENTRE AS
+DUAS TEM UM PEDIDO DE PROXIMO.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e setenta e tres", "mil
+novecentos e setenta e cinco", "mil novecentos e setenta e sete", "mil novecentos e
+setenta e nove", "mil novecentos e oitenta e um", "mil novecentos e oitenta e quatro",
+"mil novecentos e noventa". Ano dito rapido em digito sai embolado e o ouvinte entende
+outro numero. Precos tambem por extenso.
+
+UM ANO JA SAIU ERRADO NUMA GRAVACAO ANTERIOR. O VisiCalc e de mil novecentos e SETENTA
+e nove, dois anos depois do Apple II de setenta e sete. O apresentador disse "sessenta
+e nove". Na tela 6, dizer o ano devagar e separando: "setenta e nove".
+
+NOMES ESTRANGEIROS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar
+quando indicado, porque em portugues eles embolam:
+
+- Intel: fala-se "in-tel".
+- Xerox: fala-se "xé-rox". PARC e soletrado, "pe, a, erre, ce".
+- Alan Kay: fala-se "quei". Chuck Thacker: fala-se "tá-quer". Butler Lampson: fala-se
+  "lâmp-son". Douglas Engelbart: fala-se "ên-guel-bart".
+- Ed Roberts: fala-se "ró-berts". MITS e soletrado, "eme, i, te, esse". Altair: fala-se
+  "au-ta-ir", como a estrela. Popular Electronics: fala-se "pó-piu-lar e-lec-trô-nics".
+- Bill Gates: fala-se "guêits". Paul Allen: fala-se "álen". Microsoft: fala-se
+  "mai-cro-sóft".
+- Steve Wozniak: fala-se "vóz-ni-ac". Steve Jobs: fala-se "djóbs". Homebrew: fala-se
+  "rôum-bru". Apple: fala-se "é-pol".
+- VisiCalc: fala-se "vi-si-cauc". Dan Bricklin: fala-se "brí-clin". Bob Frankston:
+  fala-se "frânks-ton".
+- Don Estridge: fala-se "és-tridj". Boca Raton: fala-se "bô-ca ra-tón".
+- Gary Kildall: fala-se "kíl-dol". CP/M e soletrado, "ce, pe, barra, eme". Mary Gates:
+  "mé-ri guêits". John Opel: fala-se "ô-pel". Tim Paterson: fala-se "pá-ter-son".
+  QDOS: fala-se "quiu-dós". MS-DOS: fala-se "eme-esse-dós".
+- Macintosh: fala-se "me-quin-toch". Lisa: fala-se "li-sa". Bill Atkinson: fala-se
+  "át-quin-son". Burrell Smith: fala-se "bâ-rel smif". QuickDraw: fala-se "quic-dró".
+- Windows: fala-se "uín-dous".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "conforme o documento", "a analogia autorizada" nem nada parecido.
+(Isso ja escapou duas vezes em episodios anteriores e quebrou a conversa.)
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "O Computador Chega em Casa". As palavras "inicie
+dizendo" NUNCA sao ditas em voz alta. Na gravacao anterior o apresentador abriu falando
+"Inicie dizendo, o computador chega em casa".
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA. NAO abrir com "imagina a seguinte cena", NAO
+comparar o processador com motor, carro, coracao nem nada. Na gravacao anterior o
+apresentador abriu com uma entrega de motor V8, que nao esta em lugar nenhum aqui. As
+unicas duas imagens permitidas estao na secao ANALOGIAS, la embaixo.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir
+ou mexer em peca nenhuma na capa da pagina. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+NAO explicar rede, internet nem web: sao o episodio seguinte. A ultima tela so deixa
+a pergunta no ar.
+
+DURACAO: cerca de 18 minutos. A gravacao anterior passou de 30 e ficou arrastada: nao
+esticar, nao repetir o que ja foi dito, nao comentar cada fato duas vezes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+ANALOGIAS. Este episodio quase nao usa analogia: as historias carregam sozinhas. So
+duas imagens sao autorizadas, e as duas sao literais:
+
+- A foto guardada na memoria: na tela do Alto, cada bit da memoria e um ponto da tela.
+  Nao e comparacao, e o que acontece de verdade.
+- A gaveta: a Xerox construiu a interface em mil novecentos e setenta e tres e guardou
+  na gaveta por dez anos, ate alguem de fora entrar e levar.
+
+Fora essas duas, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A PECA ESTA PRONTA
+
+Retomar em duas frases onde a serie parou: a etapa anterior encolheu o computador ate
+ele caber numa pastilha, e em mil novecentos e setenta e quatro a Intel poe a venda o
+8080, um processador completo de oito bits, pra quem quiser comprar.
+
+Dizer o que isso significa e o que nao significa: a peca que pensa esta pronta e custa
+pouco. Mas um processador sozinho nao e um computador. Nao tem memoria, nao tem
+teclado, nao tem tela, e nao tem programa nenhum que rode nele. Ninguem sabe o que
+fazer com aquilo, e ninguem tem um computador em casa.
+
+Dizer o que este episodio vai fazer, com todas as letras: seguir, em ordem, as pessoas
+que pegaram essa peca e o que cada uma construiu com ela. E dizer o fio que atravessa
+todas: em cada passo, ou o hardware libera um software novo, ou um software novo
+exige um hardware melhor. Um empurra o outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e setenta e tres
+a mil novecentos e noventa, em ordem.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta
+so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela
+quando ouvir o pedido. ATENCAO: ao explicar isso, NAO dizer a frase "aperte o Proximo"
+como exemplo. Dizer so "quando ouvir o pedido". A frase "aperte o Proximo" so pode ser
+dita nos onze pedidos de verdade, porque a pagina corta o audio em cada vez que ela
+aparece. (Na gravacao anterior o apresentador citou a frase ao explicar e criou um
+corte falso.)
+
+Fechar pedindo o Proximo pra ver que, um ano ANTES do 8080 existir, alguem ja tinha
+construido a tela que a gente usa ate hoje.
+
+TELA 2 - MIL NOVECENTOS E SETENTA E TRES: A XEROX CONSTROI A TELA
+
+Situar: a Xerox, rica com as copiadoras, montou um centro de pesquisa na California,
+o PARC, e deu dinheiro e liberdade pra um grupo construir a maquina que eles achavam
+que devia existir, sem se preocupar com preco. Tres nomes: Alan Kay, que tinha a ideia
+de um computador pessoal com tela grafica; Chuck Thacker, que projetou a maquina; e
+Butler Lampson, que escreveu o memorando pedindo ela.
+
+FICHA: Alan Kay, nascido em mil novecentos e quarenta, tinha trinta e tres anos; vivo
+em dois mil e vinte e seis. Chuck Thacker, nascido em mil novecentos e quarenta e
+tres, tinha trinta anos; morreu em dois mil e dezessete. Butler Lampson, nascido em
+mil novecentos e quarenta e tres, tinha trinta anos; vivo em dois mil e vinte e seis.
+
+Dizer o que a maquina tinha, e por que era montada do jeito que era: chamava Alto. Em
+mil novecentos e setenta e tres nao existia microprocessador capaz de fazer aquilo,
+entao ela foi montada com centenas de chips pequenos, um processador proprio de
+dezesseis bits. Tinha 128 quilobytes de memoria, que era um absurdo pra epoca. Tinha um
+mouse de tres botoes, que Douglas Engelbart tinha mostrado em mil novecentos e sessenta
+e oito. E tinha uma tela em pe, do tamanho de uma folha de papel.
+
+FICHA: Douglas Engelbart, nascido em mil novecentos e vinte e cinco, tinha quarenta e
+tres anos quando mostrou o mouse; morreu em dois mil e treze.
+
+Explicar o segredo da tela, devagar, porque e a peca deste episodio: um terminal comum
+da epoca guardava so o codigo de cada letra e usava um chip fixo pra desenhar. O Alto
+nao. Ele reservou um pedaco da memoria onde CADA BIT E UM PONTO DA TELA. A tela e
+literalmente uma foto guardada na memoria. Pra desenhar qualquer coisa, letra em
+qualquer formato, janela, cursor, e so escrever bits ali. O preco disso: 606 por 808
+pontos dao 61 quilobytes, quase metade da memoria da maquina, so pra segurar a imagem.
+
+Explicar como o processador pintava a tela, que e a parte que ninguem conta: o tubo da
+tela nao tem memoria, precisa ser repintado sessenta vezes por segundo, e nao existia
+placa de video pra comprar. Thacker fez o proprio processador pintar: deu a ele
+dezesseis tarefas de microcodigo com prioridade, trocando entre elas a cada ciclo, e a
+tarefa de pintar a tela tinha prioridade sobre a que rodava o programa. Toda vez que a
+tela precisava dos proximos pontos, o processador largava o programa, buscava, mandava
+pro tubo e voltava. O programa ficava mais lento porque o processador era a propria
+placa de video.
+
+Dizer o preco e o destino: cada Alto custava uns trinta e dois mil dolares. A Xerox
+fez uns dois mil pra uso interno e guardou a ideia na gaveta. Fica no ar que alguem de
+fora vai entrar nessa gaveta daqui a alguns anos.
+
+Dizer a licao de hardware e software desta tela: o software que eles queriam (janela,
+fonte, mouse) exigia mais memoria e mais processador do que o mundo tinha. A Xerox
+pagou o preco. O resto do mundo ia esperar a memoria baratear.
+
+Fechar pedindo o Proximo pra ver o que o resto do mundo tinha enquanto isso, que era
+quase nada.
+
+TELA 3 - JANEIRO DE MIL NOVECENTOS E SETENTA E CINCO: ED ROBERTS E O ALTAIR
+
+Situar o resto do mundo em duas frases: computador era um mainframe numa sala
+refrigerada ou um minicomputador do tamanho de uma geladeira, dividido por um
+departamento, com teletipo de papel ou terminal de texto verde. Em casa, nada.
+
+Contar a pessoa: Ed Roberts, ex-oficial da Forca Aerea, dono da MITS, uma empresa
+pequena de Albuquerque, no Novo Mexico, que vendia kit de calculadora pelo correio. Em
+mil novecentos e setenta e quatro o preco das calculadoras despencou e a empresa
+estava quebrando. Roberts resolveu apostar tudo num computador em kit, montado em
+volta do 8080 da Intel, que ele conseguiu comprar barato em lote.
+
+FICHA: Ed Roberts, nascido em mil novecentos e quarenta e um, tinha trinta e tres
+anos; morreu em dois mil e dez.
+
+Descrever a maquina sem enfeitar: o Altair 8800. Uns quatrocentos dolares em kit,
+seiscentos montado. Duzentos e cinquenta e seis bytes de memoria. Sem teclado, sem
+tela, sem onde guardar nada. Uma fileira de interruptores na frente e uma fileira de
+luzinhas. Programar era subir e descer interruptor, bit por bit.
+
+Contar a capa: a revista Popular Electronics pos o Altair na capa de janeiro de mil
+novecentos e setenta e cinco. Roberts precisava vender duzentos pra empatar. Em tres
+meses tinha quatro mil pedidos e nao dava conta de entregar.
+
+Dizer a licao de hardware e software: o hardware minimo existe e e barato. Mas nao tem
+NENHUM software pra ele. Quem comprou recebeu uma caixa que nao faz nada ate alguem
+escrever um programa. E e isso que a tela seguinte resolve.
+
+Fechar pedindo o Proximo pra ver quem viu essa capa numa banca de jornal e largou tudo.
+
+TELA 4 - MIL NOVECENTOS E SETENTA E CINCO: GATES E ALLEN SEM A MAQUINA
+
+Contar a cena: Paul Allen passa por uma banca em Harvard Square, ve a capa da revista,
+compra e corre mostrar pro amigo Bill Gates, que era aluno de Harvard. Os dois ja
+programavam juntos desde a escola. E entenderam na hora: aquela caixa precisava de um
+BASIC, uma linguagem simples pra pessoa escrever ordem em vez de mexer interruptor.
+
+FICHA: Bill Gates, nascido em mil novecentos e cinquenta e cinco, tinha dezenove anos;
+vivo em dois mil e vinte e seis. Paul Allen, nascido em mil novecentos e cinquenta e
+tres, tinha vinte e dois anos; morreu em dois mil e dezoito.
+
+Contar COMO eles fizeram, porque e a parte que importa pra serie: eles nao tinham um
+Altair, e nao tinham nem um 8080. Entao escreveram primeiro um EMULADOR: um programa,
+rodando no PDP-10 da universidade, que fingia ser um 8080. E programaram o BASIC em
+cima desse fingimento. Oito semanas. O BASIC inteiro coube em quatro quilobytes.
+
+Contar o teste: Allen voa pra Albuquerque com o programa numa fita de papel perfurado.
+No aviao percebe que esqueceu de escrever o carregador, o programinha que le a fita, e
+escreve ele no voo, em codigo de maquina. Chega na MITS, entra o carregador pelos
+interruptores, poe a fita, e o BASIC roda de primeira, numa maquina que ele nunca tinha
+visto e num chip em que aquele codigo nunca tinha rodado.
+
+Dizer o que nasce: Gates larga Harvard, os dois se mudam pra Albuquerque e fundam a
+Microsoft, ali, pra vender esse BASIC. A primeira coisa vendida pro Altair nao foi peca,
+foi programa.
+
+Dizer a licao de hardware e software: da pra escrever software pra um hardware que voce
+nao tem, se voce imitar o hardware por software. E o BASIC de quatro quilobytes fez
+todo mundo querer comprar mais memoria: o software puxou o hardware.
+
+Fechar pedindo o Proximo pra ver um clube de garagem na California onde estava sentado
+o melhor projetista de hardware desta historia.
+
+TELA 5 - MIL NOVECENTOS E SETENTA E CINCO A SETENTA E SETE: WOZNIAK E O APPLE II
+
+Contar o clube: em marco de mil novecentos e setenta e cinco comeca o Homebrew Computer
+Club, numa garagem em Menlo Park, na California. Uns trinta entusiastas, o primeiro
+encontro foi pra olhar um Altair. Um deles era Steve Wozniak, engenheiro da HP, que
+ia la mostrar o que construia.
+
+FICHA: Steve Wozniak, nascido em mil novecentos e cinquenta, tinha vinte e cinco anos;
+vivo em dois mil e vinte e seis.
+
+Contar o Apple I em duas frases: Wozniak projeta um computador pra mostrar no clube,
+uma placa so, com teclado e saida pra televisao, que ja era mais que o Altair. O amigo
+Steve Jobs convence uma loja a comprar cinquenta. Vendem, e montam a Apple.
+
+FICHA: Steve Jobs, nascido em mil novecentos e cinquenta e cinco, tinha vinte e um
+anos; morreu em dois mil e onze.
+
+Contar o Apple II, em mil novecentos e setenta e sete, e dizer POR QUE ele era bom, que
+e engenharia e nao marketing: Wozniak fez cor na televisao sem ter hardware de cor,
+enganando o sinal de video, mandando os pontos no ritmo certo pra televisao achar que
+estava vendo cor; os engenheiros de televisao nao acreditaram ate ver. E ele fazia com
+um chip o que o projeto normal fazia com tres: menos peca, mais barato, mais
+confiavel. A maquina vinha montada, com teclado, ligava na tomada e na televisao, e ja
+sabia BASIC quando ligava.
+
+Dizer, em uma frase, que no mesmo ano saem o Commodore PET e o TRS-80 da Radio Shack,
+e que os tres juntos sao o fim do kit: computador vira coisa que se compra pronta.
+
+Dizer a licao de hardware e software: hardware bem projetado e fazer mais com menos
+peca. O Apple II e o exemplo desta serie. Mas mesmo pronto e bonito, a pessoa ligava e
+via um cursor piscando: faltava um motivo.
+
+Fechar pedindo o Proximo pra ver o programa que deu o motivo.
+
+TELA 6 - MIL NOVECENTOS E SETENTA E NOVE: O VISICALC
+
+Contar a pessoa: Dan Bricklin, aluno de administracao em Harvard, cansado de refazer
+orcamento inteiro no papel toda vez que um numero mudava, imagina uma calculadora com
+tela onde a tabela se refaz sozinha. Chama o amigo Bob Frankston pra programar.
+
+FICHA: Dan Bricklin, nascido em mil novecentos e cinquenta e um, tinha vinte e oito
+anos; vivo em dois mil e vinte e seis. Bob Frankston, nascido em mil novecentos e
+quarenta e nove, tinha trinta anos; vivo em dois mil e vinte e seis.
+
+Dizer o ano devagar e separando: mil novecentos e SETENTA e nove, dois anos depois do
+Apple II. (Este ano ja saiu como "sessenta e nove" numa gravacao anterior.)
+
+Explicar o que o programa faz, porque quem nunca viu planilha nascer nao entende o
+tamanho: uma tabela de linhas e colunas onde cada quadradinho pode guardar um numero ou
+uma CONTA feita com os outros. Muda um numero, tudo se refaz na hora. Chama VisiCalc,
+custa cem dolares, roda no Apple II.
+
+Dizer o efeito: pela primeira vez a pessoa entra na loja pedindo a maquina que roda um
+programa. Gente comprava o Apple II de mil e trezentos dolares pra usar o programa de
+cem. Jobs disse depois que nada vendeu mais Apple II do que o VisiCalc.
+
+Dizer a licao de hardware e software, com todas as letras: o software justifica o
+hardware. Ate aqui o hardware puxava; a partir daqui o programa e que diz qual maquina
+comprar.
+
+Fechar pedindo o Proximo pra ver Jobs entrar na gaveta da Xerox.
+
+TELA 7 - DEZEMBRO DE MIL NOVECENTOS E SETENTA E NOVE: JOBS NO PARC
+
+Contar o acordo: a Apple ia abrir capital, e Jobs oferece a Xerox um negocio: a Xerox
+compra cem mil acoes da Apple antes da abertura, a dez dolares cada, e em troca os
+engenheiros da Apple passam alguns dias dentro do PARC olhando o que tem la.
+
+Contar a visita: em dezembro de mil novecentos e setenta e nove Jobs e os engenheiros
+entram e veem o Alto funcionando: janelas, icones, menus, o mouse, texto em varias
+fontes na tela. A pesquisadora responsavel pelo Smalltalk, Adele Goldberg, nao queria
+mostrar, achou que a Apple ia levar; a diretoria da Xerox mandou mostrar.
+
+FICHA: Adele Goldberg, nascida em mil novecentos e quarenta e cinco, tinha trinta e
+quatro anos; viva em dois mil e vinte e seis.
+
+Dizer o detalhe que vale: eles mostraram tres coisas naquele dia, a interface grafica,
+a linguagem Smalltalk e a rede Ethernet ligando todos os Altos. Jobs ficou tao tomado
+pela primeira que quase nao viu as outras duas. Saiu dali decidido a por aquela tela
+numa maquina de loja.
+
+Dizer a licao de hardware e software: a ideia estava pronta havia seis anos. O que
+faltava nao era inventar, era fazer caber num hardware que uma pessoa pudesse pagar.
+Isso vai levar mais quatro anos.
+
+Fechar pedindo o Proximo pra ver o que a maior empresa de computador do mundo estava
+fazendo enquanto tudo isso acontecia.
+
+TELA 8 - MIL NOVECENTOS E OITENTA: O QUE A IBM ESTAVA FAZENDO
+
+Dizer o que a IBM era: a dona do computador serio. Mainframes de milhoes de dolares,
+vendidos pra banco, governo e empresa grande, com contrato de manutencao e vendedor
+de terno. A frase da epoca era "ninguem e demitido por comprar IBM". E a IBM nao
+levava micro a serio: era brinquedo de entusiasta.
+
+Contar a virada: em mil novecentos e oitenta um executivo, Bill Lowe, convence a
+diretoria de que a IBM precisava de um computador pessoal e que, do jeito normal da
+empresa, ia levar quatro anos. Ganha um ano. O projeto vai pra Boca Raton, na
+Florida, longe da sede, comandado por Don Estridge, com uma equipe de doze pessoas.
+
+FICHA: Bill Lowe, nascido em mil novecentos e quarenta e um, tinha trinta e nove anos;
+morreu em dois mil e treze. Don Estridge, nascido em mil novecentos e trinta e sete,
+tinha quarenta e tres anos; morreu em mil novecentos e oitenta e cinco, num acidente
+de aviao.
+
+Contar como fizeram em um ano, que e a parte de engenharia: em vez de projetar tudo
+por dentro, como a IBM sempre fez, montaram a maquina com pecas de prateleira, que
+qualquer um comprava no catalogo. O processador foi o 8088 da Intel, primo mais
+barato do 8086, de dezesseis bits por dentro e oito por fora. E publicaram o esquema
+completo da maquina, pra quem quisesse fabricar placa e acessorio.
+
+Dizer o que faltava e que eles nao tinham: a IBM nao tinha sistema operacional pra
+aquele chip, e nao tinha tempo de escrever um. Deixar pra tela seguinte.
+
+Dizer a licao de hardware e software: quando o hardware vira peca de prateleira, igual
+pra todo mundo, o que diferencia uma maquina da outra deixa de ser o metal.
+
+Fechar pedindo o Proximo pra ver de onde veio o sistema operacional.
+
+TELA 9 - MIL NOVECENTOS E OITENTA E UM: A MAE DO GATES E O DOS
+
+Contar a sequencia, na ordem, sem pular: a IBM procura a Microsoft porque queria o
+BASIC. Pergunta de sistema operacional. A Microsoft nao tinha; Gates indica Gary
+Kildall, da Digital Research, dono do CP/M, que era o sistema mais usado nos micros de
+oito bits. O negocio entre a IBM e Kildall nao fecha.
+
+FICHA: Gary Kildall, nascido em mil novecentos e quarenta e dois, tinha trinta e oito
+anos; morreu em mil novecentos e noventa e quatro.
+
+Contar a mae: Mary Gates, mae de Bill, estava no conselho nacional da United Way, uma
+entidade de caridade, junto com John Opel, presidente da IBM. Ela fala do filho e da
+empresa dele. Opel comenta com a equipe do projeto. A IBM volta na Microsoft, agora
+pedindo o sistema operacional. Contar como fato, sem julgar.
+
+FICHA: Mary Gates, nascida em mil novecentos e vinte e nove, tinha cinquenta e um anos;
+morreu em mil novecentos e noventa e quatro. John Opel, nascido em mil novecentos e
+vinte e cinco, tinha cinquenta e cinco anos; morreu em dois mil e onze.
+
+Contar de onde veio o sistema: a Microsoft nao tinha nenhum. Paul Allen sabia que Tim
+Paterson, numa empresa pequena de Seattle, tinha escrito um sistema pro 8086 chamado
+QDOS, que quer dizer "sistema operacional rapido e sujo". A Microsoft licencia, depois
+compra por cinquenta mil dolares, adapta e entrega pra IBM como PC-DOS. Gates nao fez
+o sistema que vendeu; comprou e adaptou.
+
+FICHA: Tim Paterson, nascido em mil novecentos e cinquenta e seis, tinha vinte e quatro
+anos; vivo em dois mil e vinte e seis.
+
+Dizer a clausula que decidiu tudo: a Microsoft licenciou o DOS pra IBM SEM
+EXCLUSIVIDADE. Podia vender o mesmo sistema pra qualquer outro fabricante.
+
+Contar o lancamento e a consequencia: em doze de agosto de mil novecentos e oitenta e
+um sai o IBM PC, mil quinhentos e sessenta e cinco dolares. Como o esquema era publico
+e as pecas de prateleira, outras empresas fizeram maquinas iguais, mais baratas, os
+clones. E todos os clones precisavam do mesmo DOS pra rodar os mesmos programas. O
+padrao passou a ser da Microsoft, nao da IBM.
+
+Dizer a licao de hardware e software: quando o hardware e igual pra todo mundo, quem
+manda e quem tem o software que roda em todos. A IBM abriu o mercado e perdeu ele pro
+sistema operacional.
+
+Fechar pedindo o Proximo pra voltar a Apple, que estava tentando fazer a tela da Xerox
+caber numa maquina de loja.
+
+TELA 10 - MIL NOVECENTOS E OITENTA E QUATRO: O MACINTOSH
+
+Contar a primeira tentativa em duas frases: em mil novecentos e oitenta e tres a Apple
+lanca o Lisa, a primeira maquina de loja com janelas e mouse. Quase dez mil dolares.
+Fracassa: caro demais e lento.
+
+Contar o Macintosh e as pessoas: um projeto menor dentro da Apple, que Jobs assume. Em
+vinte e quatro de janeiro de mil novecentos e oitenta e quatro sai o Macintosh, dois
+mil quatrocentos e noventa e cinco dolares, com 128 quilobytes de memoria, a mesma
+quantidade do Alto de dez anos antes, por um decimo do preco.
+
+Explicar COMO coube, porque e a engenharia da tela: dois truques. Bill Atkinson
+escreveu as rotinas que desenham tudo na tela, chamadas QuickDraw, tao enxutas que
+couberam em 64 quilobytes de memoria fixa, ROM, e por isso nao gastavam a memoria de
+trabalho. E Burrell Smith projetou a placa de um jeito em que o processador divide a
+memoria com o circuito de video: o video pega um ciclo, o processador pega o outro. E a
+mesma ideia do Alto, o processador cedendo tempo pra tela, so que agora com um chip
+de prateleira, o Motorola 68000, e memoria dez vezes mais barata.
+
+FICHA: Bill Atkinson, nascido em mil novecentos e cinquenta e um, tinha trinta e dois
+anos; morreu em dois mil e vinte e cinco. Burrell Smith, nascido em mil novecentos e
+cinquenta e cinco, tinha vinte e oito anos; vivo em dois mil e vinte e seis.
+
+Dizer o que o Mac mostrou, em uma frase: a tela da Xerox cabia numa maquina de dois
+mil dolares. A partir dali nao tinha volta.
+
+Dizer a licao de hardware e software: fazer caber e engenharia de software tanto quanto
+de hardware. O QuickDraw na ROM e o hardware sendo economizado por software.
+
+Fechar pedindo o Proximo pra ver a mesma tela chegar no PC, e a briga que deu.
+
+TELA 11 - MIL NOVECENTOS E OITENTA E TRES A NOVENTA: GATES PEGA A INTERFACE
+
+Contar de onde Gates viu a interface: a Microsoft foi contratada pela Apple pra
+escrever programas pro Macintosh antes dele sair, o Word e depois o Excel. Os
+programadores da Microsoft trabalharam com protótipos do Mac e viram a interface por
+dentro, por mais de um ano.
+
+Contar o anuncio: em novembro de mil novecentos e oitenta e tres, dois meses ANTES do
+Macintosh ser lancado, Gates anuncia o Windows, uma interface de janelas pra rodar
+em cima do DOS no PC.
+
+Contar a briga, sem drama e com a frase: Jobs chama Gates e acusa a Microsoft de
+roubar a interface do Mac. Gates responde que os dois tinham um vizinho rico chamado
+Xerox, que ele entrou na casa pra roubar a televisao e descobriu que Jobs ja tinha
+levado.
+
+Contar a sequencia honesta: o Windows 1.0 sai em novembro de mil novecentos e oitenta
+e cinco e e fraco, lento, com janelas que nao se sobrepoem, e quase ninguem usa. O
+Excel sai primeiro no Mac, nesse mesmo ano. O Windows 3.0, de mil novecentos e noventa,
+pega: roda nos PCs clones baratos, que agora tinham memoria de sobra, e a partir dali a
+maquina passa a ser vendida ja com ele.
+
+Dar o numero, devagar: em mil novecentos e oitenta e quatro, oito por cento das casas
+americanas tinham computador. Em mil novecentos e noventa e tres, vinte e dois. Em mil
+novecentos e noventa e sete, trinta e seis.
+
+Dizer a licao de hardware e software: o Windows 1.0 falhou porque o PC de mil
+novecentos e oitenta e cinco nao dava conta dele. O Windows 3.0 pegou porque o hardware
+alcancou o software. O mesmo programa, cinco anos de memoria barata depois.
+
+Fechar pedindo o Proximo pra dizer onde isto para. ESTE PEDIDO E OBRIGATORIO E JA FOI
+ESQUECIDO UMA VEZ: a tela 11 acaba aqui, no numero das casas. O balanco e a tela 12.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: mil novecentos e noventa. O computador esta na casa das
+pessoas, com a tela que a Xerox construiu em mil novecentos e setenta e tres.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem: Kay, Thacker e Lampson
+construiram a tela sem se importar com preco. Roberts fez o hardware minimo. Gates e
+Allen escreveram o primeiro software sem ter o hardware. Wozniak fez o hardware bem
+feito. Bricklin e Frankston fizeram o software que deu motivo. Jobs levou a tela da
+gaveta pra loja. Estridge montou a maquina de prateleira e Gates ficou com o padrao.
+Atkinson e Smith fizeram a tela caber. Ninguem planejou o conjunto.
+
+Dizer a licao da serie, que e o motivo deste episodio existir: em cada passo, ou o
+hardware liberou o software, como o 8080 permitindo o BASIC e a memoria barata
+permitindo a interface, ou o software puxou o hardware, como o VisiCalc vendendo o
+Apple II e o Windows exigindo um PC mais forte. Hardware e software melhoram um
+empurrando o outro. Nao existe um sem o outro puxar.
+
+Dizer o que ainda falta, que e o que abre o proximo episodio: existem milhoes dessas
+maquinas espalhadas pelo mundo, quase todas iguais por dentro, e cada uma e uma ilha.
+O que uma sabe, so ela sabe. Passar um arquivo de uma pra outra e gravar num disquete
+e atravessar a sala com ele na mao.
+
+Deixar a pergunta no ar, sem responder: se ja existem milhoes de maquinas iguais
+espalhadas pelo mundo, o que falta pra elas conversarem entre si?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

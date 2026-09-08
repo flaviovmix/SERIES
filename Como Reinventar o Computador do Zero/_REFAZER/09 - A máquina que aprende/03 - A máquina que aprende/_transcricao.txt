@@ -1,0 +1,263 @@
+# Transcricao automatica (faster-whisper small) - 15.7 min
+# Fonte: Como as GPUs destravaram as redes neurais.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A máquina que aprende. O nosso último mergulho parou lá no ano de 2007.
+[00:05] Foi quando aquela placa de vídeo, que era uma peça feita só pra jogo,
+[00:09] ficou aberta pra rodar qualquer conta.
+[00:11] Exato. Desde que fosse a mesma conta repetida em milhões de números.
+[00:16] Isso. E a gente deixou a pergunta no ar.
+[00:18] Existe algum problema que a gente não sabe escrever como programa,
+[00:22] mas que se resolve só com muita conta repetida e mais.
+[00:26] E se a resposta tiver numa gaveta desde 1958?
+[00:30] Pois é. A resposta é a máquina que aprende. É uma mudança total na lógica.
+[00:34] Em vez de escrever regras exatas sobre o que faz um gato ser um gato,
+[00:38] a gente dá pra máquina milhares de exemplos.
+[00:41] Então o programa não é escrito, ele é achado.
+[00:43] Perfeitamente. Pensando o conceito do neurônio artificial.
+[00:47] Ele soma entradas e cada uma dessas entradas passa por um botão giratório.
+[00:51] O peso, que aumenta ou diminui o valor.
+[00:54] Tipo um botão de volume mesmo.
+[00:56] Isso. Um botão de volume.
+[00:58] Se a soma passa de um certo limite, o neurônio dispara.
+[01:02] E aprender é só girar cada botão um pouquinho na direção que diminui o erro milhares de vezes.
+[01:09] Bom, a nossa missão hoje é seguir as pessoas que construíram isso.
+[01:13] Tudo em ordem cronológica de 1943 até 2012.
+[01:18] A gente volta no tempo pra buscar uma ideia, não uma peça de hardware.
+[01:23] Essa ideia esperou quase 50 anos o hardware ficar barato.
+[01:27] É muito tempo numa gaveta.
+[01:28] Demais!
+[01:29] Ah, e um aviso importante.
+[01:31] A nossa explicação acompanha uma página com 12 telas.
+[01:34] Quem só escuta acompanha normal.
+[01:36] Quem está com a página aberta vira a tela quando ouvir o pedido.
+[01:40] Então pra ver o neurônio virar conta e a conta virar máquina aperte próximo.
+[01:45] A gente começa lá no ano de 1943, na cidade de Chicago.
+[01:50] Com Warren McCulloch, nascido em 1898, tinha 45 anos.
+[01:56] Morreu em 1969.
+[01:59] E Voltor Pkitts, nascido em 1923, tinha 20 anos.
+[02:04] Morreu em 1969.
+[02:06] É.
+[02:07] Eles descreviram o neurônio biológico como se fosse uma porta lógica de computador.
+[02:13] Ele soma as entradas e dispara num limite.
+[02:16] E a coisa avançou no ano de 1957, na Universidade Cornell, com Frank Rosenblatt.
+[02:23] Nascido em 1928, tinha 29 anos.
+[02:28] Morreu em 1971.
+[02:29] O Rosenblatt criou Perceptrum.
+[02:32] Ele simulou isso num computador enorme, o IBM 704.
+[02:37] E a mídia da época ficou maluca.
+[02:39] O jornal New York Times publicou uma manchete em 1958 dizendo
+[02:44] que era um embrião de computador que ia andar, falar e ver.
+[02:49] Nossa, que exagero.
+[02:50] E entre 1959 e 1960, ele construiu o Mark-1 Perceptrum de verdade.
+[02:58] Tinha 400 fotosselmas e botões físicos reais girados por motores elétricos.
+[03:04] Mas peraí, vão entender isso direito.
+[03:06] Pode falar.
+[03:06] O algoritmo era tão novo e cru que ele teve que construir o hardware com motores físicos do zero.
+[03:13] Mas a promessa do jornal era mil vezes maior que a realidade da máquina.
+[03:18] Exatamente, a realidade era bem mais dura que a promessa absurda do jornal.
+[03:23] Pra ver dois professores provarem que essa máquina não consegue fazer, aperte o próximo.
+[03:28] Aí veio a queda.
+[03:29] O ano era 1969, dentro do laboratório do MIT.
+[03:33] Com Marvin Minsky, nascido em 1927, tinha 41 anos.
+[03:38] Morreu em 2016.
+[03:40] E Seymour Pappert, nascido em 1928, tinha 41 anos.
+[03:45] Morreu em 2016.
+[03:46] Juntos eles publicam o famoso livro Perceptrums.
+[03:50] E esse livro prova, matematicamente, que um Perceptrum de uma camada só
+[03:55] não aprende a função lógica do ou exclusivo.
+[03:58] O famoso problema do XOR.
+[03:59] Isso mesmo.
+[04:01] Colocar mais camadas resolveria isso.
+[04:03] Mas eles não sabiam como ajustar os botões dessas camadas do meio
+[04:07] e o hardware da época também não aguentava testar.
+[04:10] O tombo foi feio, né?
+[04:12] Eles cortaram a verba de pesquisa toda.
+[04:14] É o que o pessoal chama de primeiro inverno.
+[04:16] A ideia foi direto pra gaveta.
+[04:18] E o Rosenblas acabou morrendo num acidente de barco aos 43 anos, em 1971.
+[04:24] É uma pena.
+[04:25] A lição pesada aqui é que uma crítica correta,
+[04:29] feita num tempo sem hardware pra testar além da teoria, enterrou a ideia por 15 anos.
+[04:35] A gaveta fechou de vez.
+[04:36] Pra ver a chave ser escrita duas vezes, aperte o próximo.
+[04:39] Sabe a primeira vez que escreveram a chave?
+[04:41] Ninguém ligou muito.
+[04:42] Foi em 1974, em Harvard, com o Paul Werbals.
+[04:47] Nascido em 1947, tinha 27 anos, vivo em 2026.
+[04:54] O Werbals escreveu na tese dele como ajustar aquelas camadas do meio.
+[04:59] A ideia era calcular o erro final e girar os botões de trás pra frente.
+[05:04] Mas a comunidade não leu.
+[05:05] Até que chegou o dia 9 de outubro de 1986.
+[05:10] Nas páginas da revista Nature, David Rummelherd, nascido em 1942, tinha 44 anos, morreu em 2011.
+[05:19] Joffrey Hinton, nascido em 1947, tinha 38 anos, vivo em 2026.
+[05:26] E Ronald Williams, nascido em 1945, tinha 41 anos, morreu em 2024.
+[05:33] O trio detalhou o que chamamos de retro-propagação do erro.
+[05:37] Como isso funciona na prática mesmo?
+[05:39] A hit erra, a resposta e esse erro medido é repartido de trás pra frente.
+[05:45] Cada botão leva sua parcela exata de culpa e gira um pouquinho pra corrigir.
+[05:49] Milhares de vezes.
+[05:51] Com isso redes de várias camadas finalmente conseguem aprender.
+[05:54] Mas olha que ponto interessante.
+[05:56] A ideia abriu a gaveta, o hardware da época rodava isso, mas era muito devagar.
+[06:01] Então a ideia voltou, mas só pra problemas bem pequenos, certo?
+[06:05] Correto.
+[06:06] A matemática estava certa, mas o hardware era um gargalo gigante.
+[06:10] Pra ver a rede e ler um código postal, aperte o próximo.
+[06:13] Um caso muito prático disso rolou na Bell Labs, lá no ano de 1989.
+[06:18] Conduzido por Ian Lecum, nascido em 1960, tinha 29 anos, vive em 2026.
+[06:24] Ele trouxe uma grande inovação, a rede convulucional.
+[06:27] Em vez de olhar a imagem inteira de uma vez, pequenos filtros varrem a imagem.
+[06:32] Eles procuram traços simples, depois juntam em partes, até achar o dígito completo.
+[06:38] Exige bem menos botões pra gerar.
+[06:40] A rede amadurecida, a Lennet 5, saiu em 1998.
+[06:45] E o impacto no mundo real foi rápido.
+[06:47] As máquinas industriais da ATI e da NCR já estavam lendo cheques bancários desde 1996.
+[06:56] Exato, foi bem prático.
+[06:58] E por volta do ano de 2001, cerca de 10% de todos os cheques dos Estados Unidos já passavam
+[07:04] por uma rede neural num chip próprio.
+[07:06] Mas repara na lição principal de novo.
+[07:08] O problema era comercialmente pequeno.
+[07:11] A imagem do cheque era pequena e ainda precisou de um chip fabricado só pra isso.
+[07:16] Pra processar uma imagem grande e rica de verdade, não tinha hardware no mundo.
+[07:21] Faltava motor.
+[07:22] Pra ver a ideia voltar pra gaveta escura, aperte o próximo.
+[07:26] E aí surgiu um rival forte no ano de 1995.
+[07:31] A máquina de vetores de suporte.
+[07:34] Sim, com Vladimir Vapnik, nascido em 1936, tinha 58 anos, vivo em 2026.
+[07:41] O método do Vapnik garantia resultados claros, com fronteiras matemáticas exatas
+[07:47] e treinava incrivelmente rápido nos computadores da época.
+[07:51] Com isso, as redes neurais acabaram saindo de moda de novo.
+[07:54] E a verba sumiu de novo.
+[07:56] É o nosso segundo inverno.
+[07:58] Mas o Hinton, lá em Toronto, persistiu.
+[08:01] No ano de 2004, o Instituto CIFR apoiou a pesquisa dele
+[08:06] e em 2006 surgiu o termo Aprendizado Profundo.
+[08:10] Isso ajudou a dar uma sobrevida pro grupo focado em redes.
+[08:13] Mas olha que ironia maluca.
+[08:15] O algoritmo de Hinton funcionava na teoria, mas faltava o combustível, sabe?
+[08:20] Dado o suficiente e hardware potente.
+[08:23] E o mais bizarro é que estava tudo sendo criado naquele momento em outro lugar.
+[08:27] Perfeito. A tecnologia que a rede precisava estava fervendo em outras indústrias.
+[08:33] Pra ver a placa de jogo entrar na sala de pesquisa, aperte o próximo.
+[08:36] A gente precisa voltar pro ano de 2007.
+[08:39] Foi quando a tecnologia CUDA abriu a placa de vídeo pra uso geral.
+[08:43] Tem uma conexão matemática oculta aí, né?
+[08:45] Total.
+[08:46] Treinar uma rede neural é basicamente multiplicar tabelas gigantes,
+[08:50] camada por camada.
+[08:52] E a placa de vídeo é estruturada internamente pra fazer exatamente
+[08:56] a mesma conta matemática repetida milhares de vezes.
+[08:59] Lembra da equipe de milhares de pintores esperando o trabalho?
+[09:02] Sim, a equipe agora ia pintar tabelas infinitas de números.
+[09:06] E a fusão disso aconteceu em junho de 2009, lá em Stanford.
+[09:10] Pelas mãos de Andrew Andy, nascido em 1976, tinha 33 anos, vivo em 2026.
+[09:19] O Andy e seus alunos provaram que treinar essas redes na placa de vídeo
+[09:23] era até 70 vezes mais rápido.
+[09:26] O que antes amarrava um computador por semanas passou a levar só um dia.
+[09:31] A peça de videogame encontrou algo ítimo de 86.
+[09:34] O hardware alcançou a ideia.
+[09:36] Pra ver a metade da equação que faltava,
+[09:39] o dado aperte o próximo.
+[09:41] A gente ainda precisava ensinar a rede com exemplos ricos, imagens do mundo real.
+[09:46] E o problema estava na falta de imagens.
+[09:48] E isso começou em Princeton e depois foi pra Stanford.
+[09:51] Liderado pela Fei-Fei Li, nascida em 1976, tinha 32 anos,
+[09:58] viva em 2026.
+[10:00] Ela percebeu que faltavam exemplos bons.
+[10:03] Então ela monta o projeto ImageNet.
+[10:06] São 14 milhões de imagens pegas da internet,
+[10:10] divididas em 22 mil categorias rigorosas.
+[10:13] Tudo isso foi rotulado por humanos usando o serviço da Amazon, o MechanicalTorque.
+[10:18] E ela apresentou esse banco de dados gigante em junho de 2009.
+[10:23] A partir do ano de 2010, o ImageNet vira um campeonato anual de acerto de imagens.
+[10:29] Os sistemas melhores de 2010 e 2011 erravam 28,25,8% respectivamente.
+[10:37] Detalhe, sem usar rede neural.
+[10:40] Mas olha as peças alinhadas na mesa no ano de 2011.
+[10:43] O algoritmo de 86 estava lá.
+[10:46] A placa rápida, destravada de 2007 estava lá.
+[10:49] O dado gigante rotulado de 2009 estava pronto.
+[10:52] Só faltava alguém juntar tudo.
+[10:55] Pra ver duas placas de jogo operando num quarto em Toronto, aperte o próximo.
+[10:58] No campeonato de imagens de 2012, a equipe do Hinton decidiu entrar.
+[11:03] Com o aluno Alex Krzewebski,
+[11:06] e o Ilha Sudskever, nascido em 1986, tinha 25 anos, vivo em 2026.
+[11:12] Eles montam a máquina que chamaram de AlexNet.
+[11:16] Uma estrutura pesada com oito camadas e espantosos 60 milhões de botões,
+[11:21] os pesos pra ajustar.
+[11:23] E tudo treinado em apenas duas placas de videogame de mesa,
+[11:26] a GeForce GTX 580.
+[11:30] Placas normais de jogar no computador.
+[11:32] Placas comuns esquentando no quarto.
+[11:34] Elas rodaram por 5 a 6 dias consecutivos sem parar.
+[11:39] O código em CUDA foi escrito todinho à mão pelo Krzewebski.
+[11:42] E o resultado chocou todo mundo em 30 de setembro de 2012.
+[11:46] Eles conseguiram um erro de apenas 15,3%.
+[11:50] Eles simplesmente massacraram o segundo colocado, que teve 26,2% de erro.
+[11:55] A grande lição técnica é inegável.
+[11:58] O hardware de entretenimento fez em uma semaninha
+[12:01] o que era fisicamente impossível na época em que a ideia estava trancada na gaveta.
+[12:06] Pra tentar ver o que aconteceu dentro daquela rede, aperte o próximo.
+[12:10] Aqui a gente chega num ponto de inflexão brutal pra ciência da computação.
+[12:15] Pode falar.
+[12:16] Nenhuma linha daquele código que a equipe escreveu
+[12:19] tem uma regra dizendo o que é um gato ou um cachorro.
+[12:23] O Krzewebski só descreveu a arquitetura e a regra matemática de girar os pesos.
+[12:29] Os 60 milhões de números.
+[12:31] Isso.
+[12:32] Esses 60 milhões de números ajustados sozinhos punindo erro,
+[12:36] eles são o programa final.
+[12:38] E o mais incômodo é que ninguém sabe ler esse programa.
+[12:42] Não dá pra olhar os números soltos e explicar o que cada um deles faz.
+[12:46] Pera aí.
+[12:47] Deixa eu ver se eu entendi a gravidade e o peso disso.
+[12:51] Desde a etapa 5 da nossa série, programa era uma lista escrita por uma pessoa passo a passo.
+[12:57] Aqui a pessoa escreve o método, mas o programa pronto é achado.
+[13:02] Exatamente isso. É um programa achado.
+[13:05] Quando a força bruta da conta fica barata,
+[13:08] a gente troca o escrever pelo procurar a regra.
+[13:12] Pra ver o que aconteceu na indústria nos três anos seguintes, aperte o próximo.
+[13:17] Aconteceu uma migração em massa.
+[13:19] Todo mundo mudou as ferramentas.
+[13:21] Em março de 2013, o Google já compra a empresa deles.
+[13:25] Em dezembro de 2013, o Facebook contrata o lecom.
+[13:28] O mercado inteiro migra rápido pra redes e placas.
+[13:32] E com esse dinheiro todo, o erro despenca.
+[13:34] No ano de 2015, construindo redes com 152 camadas,
+[13:39] o erro na classificação cai pra meros 3,6%.
+[13:43] Esse já é bem melhor que um humano treinado olhando a foto.
+[13:47] E a própria NVIDIA percebe essa febre e muda.
+[13:50] Eles começam a desenhar placas direto pra treinar a rede.
+[13:53] Chegando a fazer placas sem saída de vídeo,
+[13:55] afinal, ninguém usa a tela naquilo.
+[13:58] É o ponto em que o software de rede mudou a fábrica de hardware.
+[14:02] Quem manda na demanda da placa de vídeo de ponta
+[14:04] não é mais o jogador em casa, é a rede.
+[14:07] O software ditou o formato do metal.
+[14:10] Pra dizer onde isso tudo para, aperte o próximo.
+[14:13] O limite temporal do nosso mergulho é 2012.
+[14:16] A AlexNet vem sendo nas placas de jogo.
+[14:19] O conceito do programa achado no erro.
+[14:22] Olha como o fio é cheio de acasos.
+[14:24] McCulloch e Pitts fizeram a lógica.
+[14:27] Rosenblatt botões de verdade.
+[14:30] Minsky e Puppert provaram o limite.
+[14:33] Verbals, Rumelhardt, Hinton e Williams
+[14:36] escreveram a chave do erro.
+[14:38] Lacun leu o cheque.
+[14:40] Wapnick dominou os anos 90.
+[14:42] Eng usou a placa de jogo.
+[14:45] Lee fez os exemplos.
+[14:47] Icrijewski e Sootskiver juntaram tudo em duas placas rodando sem parar.
+[14:52] E o detalhe crucial, ninguém agendou e planejou o conjunto desde o começo.
+[14:57] A grande lição é que a ideia da gaveta de 1958
+[15:02] esperou pacientemente até a placa de vídeo ficar brata.
+[15:05] Exatamente como o alto da Cherox esperou o Mac.
+[15:09] A mesma dinâmica histórica atuando de novo.
+[15:11] Isso tudo nos deixa o compensamento bem complexo para o nosso próximo encontro.
+[15:16] A rede da AlexNet tem um jeito que a placa ama.
+[15:20] Ela olha a imagem inteira de uma vez e processa tudo junto.
+[15:23] Mas texto não é assim.
+[15:25] A nossa linguagem, o texto, é uma fila indiana de palavras.
+[15:29] E o sentido de uma palavra lá na frente depende totalmente das palavras que vieram antes no contexto.
+[15:35] Como é que uma máquina que adora fazer tudo ao mesmo tempo consegue ler uma fila indiana?

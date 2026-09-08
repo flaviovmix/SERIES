@@ -1,0 +1,134 @@
+Inicie dizendo: 2017: Attention is All You Need
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Attention is All You Need.txt
+enviado como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por
+tela.
+
+Este e o quarto e ultimo episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa
+da serie Como Reinventar o Computador do Zero, e o ultimo episodio da serie. O anterior
+terminou em 2012 na AlexNet e perguntou como uma maquina que gosta de fazer tudo ao mesmo
+tempo le texto, que e uma fila de palavras. A resposta: em 2017, tirando a fila.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS, EM ORDEM CRONOLOGICA, e usar cada
+passo pra mostrar como o hardware e o software melhoram um empurrando o outro. A tese: o
+Transformer e um software desenhado com a FORMA do hardware.
+
+ESTE EPISODIO COBRE DE 1997 A 2018, EM ORDEM. Dizer esse intervalo logo na abertura e,
+no encerramento, dizer em que ano o episodio para. O anterior parou em 2012 e este
+comeca em 1997: NAO chamar isso de "voltar no tempo"; a fila do texto correu ao lado da
+fila da imagem. A tela 1 diz isso em uma frase.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a
+ficha dela, uma frase so, no formato: nome, ano de nascimento, idade naquela cena, e se
+esta viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler
+todas, sem pular, sem inventar dado e sem comentar. Sao oito: Hochreiter, Schmidhuber,
+Sutskever, Vinyals, Le, Cho, Bengio e Radford. A PALAVRA "FICHA" NAO E DITA EM VOZ ALTA:
+emendar direto no nome. OS OITO AUTORES DO TRANSFORMER SAO NOMEADOS NA TELA 6 E NAO TEM
+FICHA (a maioria nao tem ano de nascimento publico): dizer so o que o roteiro traz sobre
+eles em conjunto, NAO inventar ano, NAO comentar a falta. Tambem sem nome: o doutorando
+de Bengio que escreveu a atencao, o engenheiro da TPU e o autor principal do BERT.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+A PRIMEIRA GRAVACAO DESTE EPISODIO FOI DESCARTADA: onze minutos (cortou metade do
+conteudo); fichas com a palavra "cena" ("trinta anos naquela cena") e sem "em dois mil e
+vinte e seis"; "William" em vez de Ilya Sutskever; os oito autores ditos duas vezes cada
+(leu a pronuncia entre parenteses como repeticao); "genial" tres vezes e "a pergunta de
+um milhao de dolares"; Boole dito "bully"; pulou o balanco da tela 12, inventou uma
+pergunta final e fechou com "ate o proximo mergulho". NAO REPETIR: cerca de dezoito
+minutos dizendo tudo que o roteiro traz; ficha exatamente "Nome, nascido em ANO, tinha N
+anos; vivo em dois mil e vinte e seis"; cada nome UMA vez; a ultima frase da serie e a do
+roteiro e depois dela nao vem nada. A SEGUNDA GRAVACAO acertou quase tudo, mas disse que
+"o autor principal do BERT nao tem nome publico" (falso: dizer so "uma equipe de
+engenheiros do Google") e pronunciou Boole como "bully" (e "búl", uma silaba).
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 3 e 4 (o gargalo, e a atencao), 5 e
+6 (o tradutor e a TPU, e o artigo), 6, 7 e 8 (o artigo, a palavra vira numero, a atencao
+como multiplicacao: tres telas, tres pedidos), 9 e 10 (GPT e BERT, e a receita cresce),
+11 e 12 (o arco da serie, e o fecho). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo,
+"Dois mil e dezessete: Attention is All You Need". A ABERTURA E DIRETA, sem cena
+inventada, sem comparacao e sem chamada com fato de tela posterior: depois do titulo, a
+primeira frase e a retomada de 2012.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR. "Mil novecentos e noventa e sete", "dois mil e
+doze", "dois mil e quatorze", "dois mil e quinze", "dois mil e dezesseis", "dois mil e
+dezessete", "dois mil e dezoito", "dois mil e dezenove", "dois mil e vinte", "dois mil e
+vinte e tres". "Sessenta e cinco milhoes", "cento e dezessete milhoes", "trezentos e
+quarenta milhoes", "um bilhao e meio" (bilhao, com B), "cento e setenta e cinco bilhoes".
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: o titulo em ingles ("a-tén-chon is ól iu níd",
+e traduzir uma vez), Transformer ("trans-fór-mer"), Hochreiter ("rôr-rai-ter"),
+Schmidhuber ("chmít-ru-ber"), LSTM (soletrar e traduzir "memoria de curto e longo
+prazo"), Sutskever ("sút-ske-ver"), Vinyals ("vi-niáls"), Quoc Le ("cuóc lê"), Bengio
+("bên-jio"), Cho ("tchô"), Montreal ("mon-tre-ál"), TPU (soletrar), os oito autores na
+tela 6 (Vaswani "vas-uá-ni", Shazeer "cha-zír", Parmar "par-már", Uszkoreit
+"ús-co-rait", Llion Jones "lí-on djôns", Gomez "gô-mes", Kaiser "cái-zer", Polosukhin
+"po-lo-sú-quin"), P100 ("pe cem"), NVIDIA ("en-ví-dia"), pergunta/etiqueta/conteudo (em
+portugues, NAO query/key/value), GPT (soletrar), OpenAI ("ôpen-ei-ái"), Radford
+("réd-ford"), BERT ("bért"), Boole ("búl"), Von Neumann ("fon nói-man").
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu", "a analogia autorizada" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa.
+
+FOCO, EM ORDEM: a fila e a mesa de reuniao; noventa e sete, Hochreiter e Schmidhuber dao
+memoria a fila; dois mil e quatorze, Sutskever, Vinyals e Le traduzem com duas filas e
+acham o gargalo do vetor unico; dois mil e quatorze e quinze, Bengio e Cho com um
+doutorando, a atencao; dois mil e dezesseis, o tradutor do Google em producao, seis dias
+em noventa e seis placas, e a TPU de duzentos e cinquenta e seis por duzentos e cinquenta
+e seis; doze de junho de dois mil e dezessete, os oito autores tiram a fila, sessenta e
+cinco milhoes de botoes, oito placas P100, o software com a forma do hardware; a palavra
+vira numero e o carimbo de posicao; a atencao como tres multiplicacoes de tabela e oito
+cabecas; dois mil e dezoito, Radford e o GPT, e o BERT; a receita cresce ate cento e
+setenta e cinco bilhoes e os oito saem do Google; o arco da serie; dois mil e dezoito, o
+fecho da serie.
+
+O PONTO QUE NAO PODE FALTAR: por vinte anos o software tentou lembrar melhor dentro da
+fila; em dois mil e dezessete ele desistiu da fila pra caber na peca, e tudo virou
+multiplicacao de tabela, a conta da placa e da TPU. A maquina de dois mil e dezoito
+ainda e Boole mais Von Neumann mais um programa; o que mudou e que o programa e achado.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO FECHA A ETAPA E A SERIE: na tela 11 o arco inteiro
+da serie, na tela 12 o balanco das pessoas, o balanco da etapa e a ultima frase da
+serie, SEM prometer proximo episodio e SEM pergunta pra outro episodio.
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade,
+lendario, revolucionario. E "cerebro" em qualquer comparacao com a rede.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica
+realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa",
+"advogado do diabo", "mudou o mundo pra sempre", "revolucionou tudo", "o resto e
+historia", "ate o proximo", "proximo mergulho", "proximo encontro".
+
+---------------
+
+Use SOMENTE a analogia descrita no roteiro, a mesa de reuniao (fila = fileira em que cada
+palavra passa um bilhete que se apaga; atencao = mesa redonda em que todas as palavras
+olham pra todas ao mesmo tempo; carimbo de posicao = crachá com o numero da cadeira), e
+lembre em uma frase cada os botoes (do episodio anterior) e a equipe de pintores (do
+episodio da placa de video). NAO invente analogias novas. NAO comparar a rede com cerebro
+nem a atencao com atencao humana alem do nome.
+
+Use tambem o Overview.txt como contexto curto.

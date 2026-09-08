@@ -1,0 +1,62 @@
+2017: ATTENTION IS ALL YOU NEED - CONTEXTO
+==========================================
+Documento curto de contexto para uso com NotebookLM.
+
+Quarto e ultimo episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da serie
+Como Reinventar o Computador do Zero, e o ultimo episodio da serie. A serie reconstroi o
+computador do zero, do abaco ate a inteligencia artificial, uma peca por episodio. Este
+episodio cobre de 1997 a 2018, em ORDEM CRONOLOGICA, e conta a historia PELAS PESSOAS,
+com nome e ficha, usando cada passo pra mostrar como o hardware e o software melhoram um
+empurrando o outro.
+
+Por que este episodio existe: o anterior terminou em 2012 com a AlexNet, uma rede que
+olha a imagem inteira de uma vez, e perguntou como uma maquina que gosta de fazer tudo
+ao mesmo tempo le texto, que e uma fila de palavras. A resposta: por vinte anos, lendo em
+fila mesmo; em 2017, tirando a fila. Os anos se sobrepoem com o anterior porque a fila
+do texto correu ao lado da fila da imagem.
+
+A TESE: o Transformer (2017) e um software desenhado com a FORMA do hardware. Tudo nele e
+multiplicacao de tabelas de numeros, a conta que a placa de video e a TPU fazem em
+paralelo; nada nele espera o passo anterior.
+
+O fio, em doze passos:
+
+1. A fila. Retomada de 2012, o problema do texto em fila, a analogia da mesa de reuniao,
+   a tese, o intervalo 1997-2018, ultimo episodio da serie.
+2. 1997. A LSTM de Hochreiter e Schmidhuber (Munique): portoes que guardam e esquecem;
+   o resumo para de se apagar tao rapido, mas a leitura continua em fila.
+3. 2014. Traducao com duas LSTM (Sutskever, Vinyals e Le, Google, setembro de 2014):
+   uma le e resume num vetor fixo, a outra escreve; frases longas perdem; o gargalo do
+   vetor unico.
+4. 2014-2015. A atencao (um doutorando de Bengio, com Cho, Montreal; arXiv setembro de
+   2014, conferencia maio de 2015): a rede que escreve olha pra todas as palavras da
+   entrada e pesa cada uma; frases longas param de perder; leitura ainda em fila.
+5. 2016. O tradutor neural do Google em producao (27/09/2016 chines-ingles; 15/11 oito
+   linguas): 8+8 camadas de LSTM com atencao, ~6 dias em 96 placas; a TPU (usada desde
+   2015, anunciada em 18/05/2016): grade 256x256 de multiplicadores, so multiplica
+   tabelas; o engenheiro lider veio da DEC.
+6. 12/06/2017. "Attention is All You Need", oito autores do Google (Vaswani, Shazeer,
+   Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin; sem ficha: ano nao publico):
+   tirar a fila, so atencao, todas as palavras ao mesmo tempo; base 65 milhoes de pesos,
+   12 horas em 8 placas P100 (o grande, 3,5 dias); melhor traducao da epoca.
+7. Como a palavra vira numero (lista de centenas de numeros, tambem aprendida) e o
+   carimbo de posicao que devolve a ordem sem devolver a fila.
+8. A atencao por dentro: pergunta, etiqueta e conteudo; comparar todas as perguntas com
+   todas as etiquetas e multiplicar tabelas; oito cabecas em paralelo; tudo e a conta da
+   placa.
+9. 2018. GPT (OpenAI, 11/06/2018, Radford com Sutskever): so a metade que escreve, prever
+   a proxima palavra, 117 milhoes de pesos, 7 mil livros. BERT (Google, 11/10/2018): so a
+   metade que le, 340 milhoes. A mesma peca cortada ao meio, treinada em texto cru.
+10. A receita cresce: 65 milhoes (2017), 117 milhoes (2018), 1,5 bilhao (fev/2019), 175
+   bilhoes (mai/2020); o que muda e texto e placa; a NVIDIA vira a empresa mais valiosa da
+   industria; ate 2023 os oito autores tinham saido do Google.
+11. O arco inteiro da serie: do abaco a rede; a maquina de 2018 ainda e Boole mais Von
+   Neumann mais um programa, so que o programa e achado.
+12. Onde para: 2018. Balanco das pessoas, balanco da etapa em quatro frases, ultima frase
+   da serie: a maquina e a mesma; o que mudou foi quem escreve o programa.
+
+O fio hardware e software: a fila da LSTM nao aproveita a placa; a atencao poe mais conta
+em paralelo; a TPU e hardware sob medida puxado pelo software; o Transformer desiste da
+fila pra caber na peca; e daqui em diante o tamanho do hardware e ditado pelo programa.
+
+Use este contexto apenas como apoio.

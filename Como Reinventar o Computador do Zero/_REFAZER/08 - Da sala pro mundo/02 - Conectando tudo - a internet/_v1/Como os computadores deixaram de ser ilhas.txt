@@ -1,0 +1,7 @@
+Titulo: Como os computadores deixaram de ser ilhas
+Notebook: 08-02-Conectando tudo - a internet
+
+Descricao:
+Estes documentos descrevem o desenvolvimento técnico e histórico da internet entre os anos de 1969 e 1995, servindo como guia para um episódio de uma série sobre a evolução da computação. O texto explica como a comutação de pacotes e a criação de um "envelope" comum (TCP/IP) permitiram que redes diferentes se conectassem sem a necessidade de um comando central. A narrativa detalha marcos fundamentais, como o surgimento do e-mail, a implementação do sistema de nomes (DNS) e a transição para a World Wide Web. O material enfatiza que o sucesso da rede mundial não se deu por uma superioridade técnica absoluta, mas por ser um padrão aberto que exigia o mínimo de seus participantes. Ao final, a trajetória mostra como o computador deixou de ser uma ferramenta isolada para se tornar parte de um sistema global, preparando o terreno para a era dos grandes dados e da inteligência artificial.
+
+Link: https://notebook.google.com/notebook/084e471c-4bb8-4838-a1d1-b8eaa378f945

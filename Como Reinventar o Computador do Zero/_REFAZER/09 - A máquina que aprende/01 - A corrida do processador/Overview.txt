@@ -1,0 +1,83 @@
+A CORRIDA DO PROCESSADOR - CONTEXTO
+===================================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco ate
+a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1993 a 2006,
+em ORDEM CRONOLOGICA. Como os tres da etapa anterior, conta a historia PELAS PESSOAS,
+com nome e ficha, e usa cada passo pra mostrar como o hardware e o software melhoram um
+empurrando o outro.
+
+Por que este episodio existe: a etapa anterior terminou em 1997 com a maquina em toda
+casa, ligada em rede, com sistema operacional, e perguntou o que ainda falta pra ela
+fazer o que a gente nao sabe escrever. A etapa final responde em tres partes, e a
+primeira e esta: antes de qualquer coisa, as pecas vao correr. O processador primeiro.
+Os anos se sobrepoem com o episodio anterior (1993 contra 1997) porque a corrida ja
+corria por baixo enquanto o sistema era refeito.
+
+O QUE E "CORRER": duas coisas. Quantas vezes por segundo o relogio do chip bate
+(hertz) e quanto o chip faz em cada batida. De 1993 a 2004 os dois subiram; em 2004 o
+relogio bateu numa parede fisica (calor por vazamento dos transistores) e a saida foi
+por mais de um nucleo, que so o software escrito em paralelo aproveita.
+
+O fio, em doze passos:
+
+1. A maquina pronta e a pergunta. Retomada, o que e correr, o intervalo 1993-2006.
+2. 1993. O Pentium, chefiado por Vinod Dham: 3,1 milhoes de transistores, 60 e 66 MHz,
+   e dois caixas (superescalar): o chip faz duas instrucoes do programa por batida
+   quando elas nao dependem uma da outra. O nome vem de uma decisao judicial de 1991
+   (numero nao e marca).
+3. 1994. Thomas Nicely, professor de matematica em Lynchburg, acha um erro na divisao
+   do Pentium (cinco entradas faltando numa tabela gravada no chip). A noticia anda
+   pela internet. Andy Grove primeiro resiste, a IBM para de vender em 12 de
+   dezembro, a Intel troca pra todo mundo em 20 de dezembro: 475 milhoes de dolares.
+4. 1995-1997. O Pentium Pro executa fora de ordem (o hardware desmancha a fila do
+   programa e remonta). O Pentium MMX (janeiro de 1997) traz 57 instrucoes que fazem a
+   mesma conta em varios numeros de uma vez, desenhado em Haifa pela equipe de Mooly
+   Eden. O Pentium II (maio de 1997) junta os dois.
+5. 1969-1997. A AMD: Jerry Sanders sai da Fairchild em 1969 e funda uma fabrica de
+   segunda fonte; em 1982 a IBM exige dois fabricantes por peca e a Intel licencia o
+   8086/8088/286 pra AMD; em 1987 a Intel nao passa o 386, briga na justica, a AMD
+   ganha em marco de 1991; o K5 (1996) e fraco; a AMD compra a NexGen (janeiro de
+   1996), onde Vinod Dham era diretor de operacoes, e o desenho vira o K6 (abril de
+   1997), no soquete do Pentium. A competicao so existe porque o software e o mesmo.
+6. 1999-2000. Dirk Meyer, vindo da DEC (Alpha), faz o Athlon (junho/agosto de 1999),
+   mais rapido que o Pentium III. Em 6 de marco de 2000 a AMD chega a 1 GHz; a Intel
+   responde em 8 de marco. Em 20 de novembro de 2000 sai o Pentium 4: fila de 20 passos
+   (contra 10), feito pra subir o relogio; a Intel promete 10 GHz.
+7. 2001. Pat Gelsinger avisa numa conferencia (fevereiro de 2001): no ritmo atual, o
+   calor por area do chip chega ao de um reator nuclear em 2005, ao bico de um foguete
+   em 2010, a superficie do Sol em 2015. A regra de Dennard (1974): transistor menor e
+   mais rapido e gasta menos, na mesma proporcao, entao dobrar transistores nao
+   esquenta mais. Ela acaba porque a tensao chegou ao minimo e o transistor vaza.
+8. 2003. Sessenta e quatro bits: a Intel tenta o Itanium (junho de 2001), conjunto de
+   instrucoes novo que nao roda o software antigo direito; a AMD estica o x86 pra 64
+   bits mantendo tudo rodando (Opteron em 22 de abril de 2003, Athlon 64 em 23 de
+   setembro) e poe o controlador de memoria dentro do chip. Em Haifa, o Pentium M pra
+   notebook (marco de 2003). A Intel adota o AMD64 em 28 de junho de 2004.
+9. 2004. A parede: o Pentium 4 de 90 nanometros (fevereiro de 2004, 125 milhoes de
+   transistores, 31 passos) esquenta e nao acelera. A Intel cancela o sucessor de 7 GHz
+   (7 de maio) e o Pentium 4 de 4 GHz (14 de outubro). O Pentium 4 para em 3,8 GHz. A
+   Intel anuncia dois nucleos.
+10. 2005. "O almoco gratis acabou" (marco de 2005): programa so fica mais rapido se for
+   escrito em paralelo. Paul Otellini vira presidente da Intel (18 de maio). Pentium D
+   (25 de maio, dois Pentium 4 lado a lado) e Athlon 64 X2 (31 de maio, dois nucleos na
+   mesma pastilha). O que e nucleo e por que um programa em fila usa um so.
+11. 2006. O Core 2 Duo (27 de julho de 2006), do desenho de notebook de Haifa: 65
+   nanometros, quase 300 milhoes de transistores, fila de 14 passos, dois nucleos,
+   2,66 GHz e mais rapido que o Pentium 4 de 3,8, gastando 65 watts contra 130. Na
+   mesma semana a AMD anuncia a compra de uma empresa de placa de video.
+12. Onde para: 2006. Balanco das pessoas. Licao: a lei de Moore continua dando
+   transistor, mas parou de dar velocidade; ir mais rapido virou problema de software.
+   Pergunta que abre o proximo episodio: que peca ja fazia muitas contas ao mesmo
+   tempo ha dez anos, e pra que?
+
+O fio hardware e software: o programa velho rodava mais rapido no chip novo sem mudar
+uma linha (Pentium, Pentium Pro, Pentium II), porque o hardware passou a ler o programa
+e a reordenar sozinho; a competicao AMD-Intel so existe porque o software e o mesmo; o
+numero do relogio dobrou o desenho do hardware (Pentium 4); a fisica parou o relogio em
+2004; e a saida por nucleos devolve a conta pro software, que precisa virar paralelo.
+Ganhou de novo quem exigiu menos do software (AMD64 contra Itanium).
+
+Use este contexto apenas como apoio.

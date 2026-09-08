@@ -1,0 +1,632 @@
+Inicie dizendo: A Corrida do Processador
+---------------
+
+Este e o primeiro episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da
+serie Como Reinventar o Computador do Zero. A etapa anterior, DA SALA PRO MUNDO, levou
+o computador pra dentro de casa, ligou as casas em rede e explicou o sistema
+operacional, e terminou em mil novecentos e noventa e sete com uma pergunta no ar: se a
+maquina ja esta em toda casa e ja fala com todas as outras, o que ainda falta pra ela
+fazer o que a gente nao sabe escrever? Esta etapa responde em quatro episodios, e a
+primeira parte da resposta e este episodio: antes de qualquer coisa, as pecas vao
+correr. O processador primeiro.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram o processador de
+mil novecentos e noventa e tres a dois mil e seis, EM ORDEM CRONOLOGICA, e usar cada
+passo pra mostrar como o hardware e o software melhoram um empurrando o outro. Quando
+aparecer preco, briga na justica, participacao de mercado ou "quem ganhou", e pra dizer
+o que aquilo permitiu ou impediu de construir, nao como assunto em si.
+
+ESTE EPISODIO COBRE DE 1993 A 2006, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. ATENCAO: o episodio
+anterior parou em mil novecentos e noventa e sete e este comeca em mil novecentos e
+noventa e tres. NAO chamar isso de "voltar no tempo": os anos se sobrepoem porque a
+corrida do processador ja estava acontecendo por baixo enquanto o sistema operacional
+era refeito. Dizer isso na tela 1, em uma frase, e seguir.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome. Dizer quem fez, onde estava e por
+que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Andy
+Grove, nascido em mil novecentos e trinta e seis, tinha cinquenta e oito anos; morreu em
+dois mil e dezesseis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE
+SO, dita e seguida em frente: sem comentario, sem contar mais nada da vida da pessoa.
+NAO pular ficha de ninguem e NAO inventar dado que nao esteja na ficha. Sao nove
+fichas: Dham, Nicely, Grove, Eden, Sanders, Meyer, Gelsinger, Dennard e Otellini.
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer
+"ficha", "deixa eu ler a ficha", "olha a ficha dele", "tem a ficha aqui" nem nada
+parecido: a segunda gravacao fez isso nove vezes. Emendar direto no nome: "Vinod Dham,
+nascido em mil novecentos e cinquenta, tinha quarenta e tres anos; vivo em dois mil e
+vinte e seis."
+
+QUEM NAO E PERSONAGEM: a lei de Moore e citada como regra ja contada na etapa sete;
+Gordon Moore NAO e personagem deste episodio, NAO ler ficha dele. O artigo "O almoco
+gratis acabou" e citado pelo titulo e por "um programador da Microsoft", SEM dizer o
+nome do autor. NAO inventar nome nem ficha pra ninguem que o roteiro nao nomeie.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido". A frase so pode ser dita nos onze pedidos de verdade,
+porque a pagina corta o audio em cada vez que ela aparece.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. A tela 2 e o Pentium nascendo (Dham). A tela 3 e o
+erro dentro do chip (Nicely e Grove). Duas telas, um pedido de Proximo entre elas. NAO
+falar do erro na tela 2.
+
+ATENCAO ESPECIAL COM AS TELAS 4 e 5. A tela 4 e o chip que reordena o programa (Pentium
+Pro, MMX, Pentium II). A tela 5 e a AMD, contada desde mil novecentos e sessenta e nove.
+Duas telas, dois pedidos. NAO falar de AMD na tela 4, mesmo quando aparecer a NexGen:
+a NexGen entra na tela 5.
+
+ATENCAO ESPECIAL COM AS TELAS 6 e 7. A tela 6 e a corrida dos mega-hertz e o Pentium 4.
+A tela 7 e o aviso do calor (Gelsinger e Dennard). Duas telas, dois pedidos. NAO falar
+de calor na tela 6.
+
+ATENCAO ESPECIAL COM AS TELAS 8 e 9. A tela 8 e os sessenta e quatro bits, em dois mil e
+tres. A tela 9 e a parede do calor, em dois mil e quatro. Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 9 e 10. A tela 9 TERMINA na Intel anunciando que vai
+fazer dois nucleos. A tela 10 e o que o software fez com isso e os primeiros chips de
+dois nucleos. NAO explicar o que e nucleo na tela 9.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 e o Core 2 Duo e TERMINA na frase
+sobre a AMD e a placa de video, seguida do pedido de Proximo. A tela 12 e OUTRA COISA:
+o balanco das pessoas, nome por nome, a licao e a pergunta que abre o proximo episodio.
+UMA GRAVACAO ANTERIOR DESTE EPISODIO EMENDOU AS DUAS: falou do Core 2 Duo, da AMD e
+emendou direto no fecho sem pedir o Proximo, e ficou com dez pedidos em vez de onze.
+NAO REPETIR: depois da frase da AMD e da placa de video, pedir o Proximo, e so entao
+comecar o balanco.
+
+O QUE MAIS SAIU ERRADO NA GRAVACAO ANTERIOR, E NAO PODE SE REPETIR:
+
+- Abriu com o aviso de 2001 (a tela 7) como chamada, antes de retomar 1997. A ORDEM E
+  ESTRITA: a primeira coisa depois do titulo e a retomada de mil novecentos e noventa e
+  sete. NENHUM fato de tela posterior aparece na tela 1.
+- Disse "o nosso ultimo mergulho la nas fontes". NAO falar em "fontes", "material",
+  "documento" nem "roteiro". Dizer "o episodio anterior".
+- Comparou o Pentium 4 com "um motor que so gritava alto no painel". NAO comparar
+  processador com motor, carro, coracao ou cerebro, em nenhuma tela, nem no pedido de
+  Proximo.
+- Pulou o balanco das pessoas da tela 12 e falou em "humanos brilhantes" no lugar. LER O
+  BALANCO NOME POR NOME, na ordem do roteiro.
+- Disse que Otellini nasceu em mil novecentos e cinquenta e cinco. Ele nasceu em MIL
+  NOVECENTOS E CINQUENTA. Ler a ficha como esta escrita.
+- Falou de Haifa e do Pentium M na tela 9 (a parede). Na tela 9 NAO se fala de Haifa
+  nem de Pentium M: a tela 9 TERMINA na Intel anunciando dois nucleos. Haifa volta so na
+  tela 11.
+- Juntou os dois cancelamentos de dois mil e quatro num so numero ("quatro virgula sete
+  giga-hertz"). Sao DOIS cancelamentos, ditos separados: o sucessor planejado pra SETE
+  giga-hertz, em maio, e o Pentium 4 de QUATRO giga-hertz, em outubro.
+
+O QUE SAIU ERRADO NA SEGUNDA GRAVACAO, E NAO PODE SE REPETIR:
+
+- Disse que um giga-hertz e "um MILHAO de batidas por segundo". E UM BILHAO: mil
+  milhoes. Na tela 6, dizer "um bilhao de batidas por segundo", com B.
+- Disse a palavra "ficha" em voz alta antes de cada pessoa ("ficha, Vinod Dham..."). A
+  palavra e um marcador do roteiro, nao e fala. Ler direto o nome e os dados.
+- Disse "Paulo Otellini". O nome e Paul, fala-se "pól", NAO "Paulo".
+- Abriu com "e, o coracao, quer dizer, a base fisica". NAO comparar processador com
+  coracao nem na primeira frase. Depois do titulo, a primeira frase e a retomada de mil
+  novecentos e noventa e sete, sem comparacao nenhuma.
+- Disse "cinco entradas, cinco transistores" na tabela da divisao. Sao cinco ENTRADAS
+  de uma tabela; nao falar em transistores ai.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e noventa e tres", "mil
+novecentos e noventa e quatro", "mil novecentos e noventa e cinco", "mil novecentos e
+noventa e sete", "mil novecentos e sessenta e nove", "mil novecentos e oitenta e dois",
+"mil novecentos e noventa e um", "mil novecentos e noventa e seis", "mil novecentos e
+noventa e nove", "dois mil", "dois mil e um", "mil novecentos e setenta e quatro", "dois
+mil e tres", "dois mil e quatro", "dois mil e cinco", "dois mil e seis". Ano dito rapido
+em digito sai embolado.
+
+NUMEROS GRANDES DEVAGAR: "tres milhoes e cem mil transistores", "um bilhao de batidas
+por segundo" (BILHAO, com B: um giga-hertz sao mil milhoes de batidas; a segunda
+gravacao disse "um milhao", que e mil vezes menos), "quatrocentos e setenta e cinco
+milhoes de dolares". Frequencia sempre
+com a unidade por extenso: "sessenta mega-hertz", "um giga-hertz", "tres giga-hertz e
+oitocentos mega-hertz".
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar quando
+indicado, porque em portugues eles embolam:
+
+- Pentium: fala-se "pên-tium". x86: dizer "xis oitenta e seis". 486: dizer "quatro
+  oito seis". Intel: fala-se "in-tél".
+- Vinod Dham: fala-se "vi-nód dâm". Windows: fala-se "uín-dous".
+- Thomas Nicely: fala-se "tó-mas nái-sli". Lynchburg: fala-se "líntch-berg", cidade
+  do estado da Virginia. Andy Grove: fala-se "ândi grôuv". IBM: soletrar, "i, be,
+  eme".
+- Pentium Pro: dizer "pên-tium pró". MMX: soletrar, "eme, eme, xis". Mooly Eden:
+  fala-se "mú-li é-den". Haifa: fala-se "rái-fa", cidade de Israel.
+- AMD: soletrar, "a, eme, de". Jerry Sanders: fala-se "djé-ri sân-ders". Fairchild:
+  fala-se "fér-tchaild". NexGen: fala-se "nécs-djen". K5, K6, K7: dizer "cá cinco",
+  "cá seis", "cá sete".
+- Athlon: fala-se "át-lon", com T no meio, NUNCA "éflon" (a gravacao anterior disse
+  "éflon" as duas vezes). Dirk Meyer: fala-se "dírk mái-er". DEC: fala-se "déc".
+  Alpha: fala-se "álfa". Pentium III: dizer "pên-tium tres". Pentium 4: dizer
+  "pên-tium quatro".
+- Pat Gelsinger: fala-se "pét guél-sin-guer". Robert Dennard: fala-se "ró-bert
+  dé-nard".
+- Itanium: fala-se "i-tâ-nium". Opteron: fala-se "óp-te-ron". Athlon 64: dizer
+  "át-lon sessenta e quatro". Pentium M: dizer "pên-tium éme".
+- Paul Otellini: fala-se "pól o-te-lí-ni"; o primeiro nome e Paul, "pól", NUNCA
+  "Paulo" (a segunda gravacao disse "Paulo"). Pentium D: dizer "pên-tium dê". Athlon 64
+  X2: dizer "át-lon sessenta e quatro xis dois". Core 2 Duo: fala-se "cór tu dú-o".
+- Nanometro: e um milionesimo de milimetro; dizer "noventa nanometros", "sessenta e
+  cinco nanometros".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "conforme o documento", "a analogia autorizada" nem nada parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "A Corrida do Processador". As palavras "inicie
+dizendo" NUNCA sao ditas em voz alta.
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA E SEM CHAMADA. NAO abrir com "imagina a
+seguinte cena", NAO abrir com um fato de tela posterior como isca (a gravacao anterior
+abriu com o aviso de dois mil e um, que e a tela 7), e NAO abrir com comparacao que nao
+esteja na secao ANALOGIAS. Depois do titulo, a primeira frase e a retomada de mil
+novecentos e noventa e sete.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir ou
+mexer em peca nenhuma na capa da pagina. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+ESTE EPISODIO ABRE A ETAPA E NAO A FECHA. Na ultima tela, balanco das pessoas, a licao
+do episodio e a pergunta que abre o proximo episodio. NAO explicar o que e uma placa de
+video, NAO explicar rede neural e NAO falar de inteligencia artificial: sao os
+episodios seguintes.
+
+DURACAO: cerca de 18 minutos. Nao esticar, nao repetir, nao comentar cada fato duas
+vezes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O caixa do mercado: cada instrucao do programa e um cliente na fila, e o relogio do
+  chip e o ritmo em que o caixa passa um item. Dividir o atendimento em passos
+  pequenos (passa o produto, pesa, cobra, empacota) deixa cada passo mais curto, entao
+  o ritmo pode ser mais rapido, mas cada cliente passa por mais passos. Abrir dois
+  caixas ao mesmo tempo e atender dois clientes por vez (o Pentium). Chamar da fila
+  quem ja esta com o dinheiro na mao, em vez de esperar o da frente achar a carteira,
+  e atender fora de ordem (o Pentium Pro). Dois nucleos sao dois mercados inteiros,
+  lado a lado, com o mesmo estoque atras (a memoria).
+
+Fora essa, sem analogias. Calor, tensao e vazamento sao explicados literalmente, nao
+por comparacao. NAO comparar processador com motor, carro, coracao ou cerebro.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A MAQUINA PRONTA, E A PERGUNTA
+
+Retomar em duas frases onde a serie parou: em mil novecentos e noventa e sete o
+computador esta em toda casa, ligado em toda outra, com um sistema operacional por
+baixo. A etapa anterior deixou uma pergunta no ar: se a maquina ja esta em toda casa
+e ja fala com todas as outras, o que ainda falta pra ela fazer o que a gente nao sabe
+escrever?
+
+Dizer como a etapa final responde, em tres partes, em ordem: primeiro as pecas vao
+correr; depois uma peca feita pra jogo vai virar outra coisa; depois o programa vai
+deixar de ser escrito a mao. Este episodio e a primeira parte: o processador.
+
+Dizer onde o processador estava: a etapa sete encolheu o computador ate caber num
+chip, e a etapa oito pos esse chip, o oito zero oito oito da Intel, dentro do PC da
+IBM em mil novecentos e oitenta e um. De la ate mil novecentos e noventa e tres o mesmo
+desenho, que se chama xis oitenta e seis, ganhou tres geracoes, o dois oito seis, o
+tres oito seis e o quatro oito seis, cada uma com mais transistores e um relogio mais
+rapido, e cada uma rodando o mesmo software da anterior.
+
+Explicar o que e "correr", que e o assunto do episodio inteiro: duas coisas. Quantas
+vezes por segundo o relogio do chip bate, que se mede em hertz, e quanto o chip
+consegue fazer em cada batida. Nos proximos treze anos os dois vao subir, um deles vai
+bater numa parede, e o jeito de contornar a parede vai mudar como se escreve programa.
+
+Usar a analogia do caixa do mercado, inteira, aqui, uma vez.
+
+Avisar que o episodio anterior parou em mil novecentos e noventa e sete e este comeca
+em mil novecentos e noventa e tres: os anos se sobrepoem porque a corrida do
+processador ja estava acontecendo por baixo enquanto o sistema operacional era
+refeito.
+
+Dizer o fio: como nos tres anteriores, pessoas em ordem, e em cada passo o hardware e
+o software empurrando um ao outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e noventa e tres a
+dois mil e seis.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver o chip que ganhou um nome em vez de um numero.
+
+TELA 2 - MIL NOVECENTOS E NOVENTA E TRES: O PENTIUM
+
+Contar por que o nome: o proximo chip da Intel ia se chamar cinco oito seis, na
+sequencia. Em mil novecentos e noventa e um a justica americana decidiu que tres oito
+seis era um numero, nao uma marca, e que qualquer fabricante podia usar. Um numero nao
+protege nada. A Intel entao contratou um nome: Pentium, de penta, cinco.
+
+Contar a pessoa: Vinod Dham, engenheiro nascido na India, entrou na Intel em mil
+novecentos e setenta e nove, trabalhou em memoria e passou a chefiar o projeto do chip
+de quinta geracao.
+
+FICHA: Vinod Dham, nascido em mil novecentos e cinquenta, tinha quarenta e tres anos;
+vivo em dois mil e vinte e seis.
+
+Contar a peca, em vinte e dois de marco de mil novecentos e noventa e tres: tres
+milhoes e cem mil transistores, quase tres vezes o quatro oito seis; relogio de sessenta
+e sessenta e seis mega-hertz; e a novidade que importa: dois caixas abertos. O chip
+pega duas instrucoes seguidas do programa e, quando uma nao depende da outra, faz as
+duas na mesma batida. O programa foi escrito em fila, uma instrucao por linha, e o
+hardware descobre sozinho, em tempo real, quais duas linhas dao pra fazer juntas.
+
+Dizer o que puxou isso: o Windows com janelas, som e video, os jogos com imagem em
+movimento e o CD-ROM. O programa de mil novecentos e noventa e tres pedia mais do que
+o quatro oito seis dava.
+
+Dizer a licao de hardware e software, que e o centro do episodio: o programa nao
+mudou uma linha e ficou mais rapido, porque o hardware passou a ler o programa e a
+achar sozinho o que da pra fazer ao mesmo tempo. Guardar essa frase: o programa nao
+mudou e ficou mais rapido. Ela vai valer por onze anos e depois vai parar de valer.
+
+Fechar pedindo o Proximo pra ver um professor de matematica achar um erro dentro do
+chip.
+
+TELA 3 - MIL NOVECENTOS E NOVENTA E QUATRO: O ERRO DENTRO DO CHIP
+
+Contar a pessoa e a cena, que e verdadeira: Thomas Nicely, professor de matematica
+numa faculdade pequena em Lynchburg, na Virginia, usava varios computadores pra somar
+numeros primos. Em junho de mil novecentos e noventa e quatro ele poe um Pentium na
+fila de maquinas e o resultado dele sai diferente do das outras. Leva quatro meses
+eliminando toda outra causa. Em outubro tem certeza: e o chip. Escreve pra Intel em
+vinte e quatro de outubro. A Intel ja sabia e nao tinha contado.
+
+FICHA: Thomas Nicely, nascido em mil novecentos e quarenta e tres, tinha cinquenta e um
+anos; morreu em dois mil e dezenove.
+
+Explicar o erro, sem formula: a divisao de numeros com virgula, dentro do Pentium,
+consultava uma tabela gravada no chip, e faltavam cinco entradas nessa tabela. Em casos
+raros a divisao saia errada depois da quarta casa decimal. Um erro de tabela, do tipo
+que um programa tem. So que aqui a tabela era hardware, e nao dava pra corrigir com
+uma atualizacao: tinha que trocar a peca.
+
+Contar como a noticia andou: Nicely escreve pra alguns colegas por e-mail, alguem posta
+num grupo de discussao da internet, e em semanas o assunto esta em jornal. E a rede do
+episodio anterior fazendo o que ela faz.
+
+Contar a decisao: Andy Grove, presidente da Intel, primeiro diz que so troca o chip de
+quem provar que faz conta pesada. Em doze de dezembro a IBM para de vender computador
+com Pentium. Em vinte de dezembro de mil novecentos e noventa e quatro a Intel troca pra
+qualquer pessoa que pedir, sem perguntar. Custou quatrocentos e setenta e cinco milhoes
+de dolares.
+
+FICHA: Andy Grove, nascido em mil novecentos e trinta e seis, tinha cinquenta e oito
+anos; morreu em dois mil e dezesseis.
+
+Dizer a licao de hardware e software: o chip ficou tao grande, tres milhoes de
+transistores, que passou a ter erro do jeito que software tem erro. A partir daqui um
+processador e testado como um programa, antes de sair da fabrica, e uma parte grande
+do trabalho de fazer chip vira escrever software pra testar chip.
+
+Fechar pedindo o Proximo pra ver o chip que muda a ordem do programa sozinho.
+
+TELA 4 - MIL NOVECENTOS E NOVENTA E CINCO A NOVENTA E SETE: O CHIP QUE REORDENA
+
+Contar a peca: em primeiro de novembro de mil novecentos e noventa e cinco sai o Pentium
+Pro, feito pra servidor. A novidade: executar fora de ordem. O chip le varias
+instrucoes a frente, faz primeiro as que ja tem tudo pronto, e guarda os resultados pra
+entregar na ordem que o programa esperava. O caixa chamando da fila quem ja esta com o
+dinheiro na mao.
+
+Dizer o que isso significa: o programa foi escrito em fila, e o hardware desmancha a
+fila, faz o que da, e remonta. O programador nao sabe e nao precisa saber. Todo
+processador de hoje faz isso.
+
+Contar a segunda peca e a pessoa: em janeiro de mil novecentos e noventa e sete sai o
+Pentium MMX, com cinquenta e sete instrucoes novas pra som e imagem. A ideia: uma
+instrucao so que faz a mesma conta em varios numeros de uma vez, porque numa imagem sao
+milhoes de pontos e a conta e a mesma em todos. Foi desenhado em Haifa, em Israel, a
+primeira vez que a Intel deixou um chip principal ser feito fora dos Estados Unidos,
+por uma equipe chefiada por Mooly Eden.
+
+FICHA: Mooly Eden, nascido em mil novecentos e cinquenta e tres, tinha quarenta e tres
+anos; vivo em dois mil e vinte e seis.
+
+Contar em uma frase: em maio de mil novecentos e noventa e sete o Pentium II junta as
+duas coisas, o fora de ordem do Pro e as instrucoes do MMX, num chip pra casa.
+
+Dizer a licao de hardware e software, nas duas direcoes: o fora de ordem e o hardware
+fazendo um trabalho que o programador nao fez, e o MMX e o software (som, video, jogo)
+puxando instrucoes novas pra dentro do hardware. E de novo: o programa velho rodou mais
+rapido no chip novo sem mudar uma linha.
+
+Fechar pedindo o Proximo pra conhecer, desde o comeco, a empresa que passou vinte anos
+copiando a Intel.
+
+TELA 5 - MIL NOVECENTOS E SESSENTA E NOVE A NOVENTA E SETE: A AMD, DE COPIA A CONCORRENTE
+
+Avisar em uma frase que esta tela conta um segundo personagem desde o comeco dele, em
+ordem, ate ele encontrar a historia principal em mil novecentos e noventa e sete.
+
+Contar a pessoa e a empresa: Jerry Sanders era vendedor da Fairchild, a empresa de onde
+a etapa sete viu sair a Intel. Em maio de mil novecentos e sessenta e nove ele sai com
+um grupo de colegas e funda a AMD. A AMD nao desenha chip proprio: fabrica o chip dos
+outros sob licenca, o que se chama segunda fonte.
+
+FICHA: Jerry Sanders, nascido em mil novecentos e trinta e seis, tinha trinta e dois
+anos quando fundou a AMD em mil novecentos e sessenta e nove; morreu em dois mil e vinte
+e quatro.
+
+Ligar com a etapa oito: quando a IBM montou o PC com pecas de prateleira, exigiu que
+cada peca tivesse dois fabricantes, pra nao ficar na mao de um so. Em fevereiro de mil
+novecentos e oitenta e dois a Intel assina com a AMD: a AMD fabrica o oito zero oito
+seis, o oito zero oito oito e depois o dois oito seis, com a planta da Intel. Foi assim
+que a AMD aprendeu a fazer xis oitenta e seis.
+
+Contar a briga, sem drama: em mil novecentos e oitenta e sete a Intel nao passa o tres
+oito seis pra AMD. A AMD faz o dela por conta e vai pra justica. Em marco de mil
+novecentos e noventa e um a AMD ganha e vende o tres oito seis dela. E a mesma decisao,
+"numero nao e marca", que fez a Intel inventar o nome Pentium na tela 2.
+
+Contar o primeiro desenho proprio: em mil novecentos e noventa e seis sai o K5, o
+primeiro processador que a AMD desenhou do zero. Chega atrasado e mais lento que o
+Pentium. Em janeiro de mil novecentos e noventa e seis a AMD compra uma empresa pequena,
+a NexGen, que tinha um desenho melhor pronto, e cujo diretor de operacoes era Vinod
+Dham, o mesmo do Pentium, que tinha saido da Intel em mil novecentos e noventa e cinco.
+O desenho da NexGen vira o K6, em abril de mil novecentos e noventa e sete, e ele encaixa
+no mesmo soquete do Pentium.
+
+Dizer a licao de hardware e software, que e o motivo de a corrida existir: dois
+fabricantes so conseguem competir porque o software e o mesmo. Quem executa as
+instrucoes do xis oitenta e seis roda o Windows e tudo que roda em cima dele. O padrao
+aberto do PC, que a etapa oito contou, prendeu o hardware num molde, e dentro do molde
+dois fabricantes correm.
+
+Fechar pedindo o Proximo pra ver a corrida virar um numero: mega-hertz.
+
+TELA 6 - MIL NOVECENTOS E NOVENTA E NOVE A DOIS MIL: A CORRIDA DOS MEGA-HERTZ
+
+Contar a pessoa: Dirk Meyer tinha desenhado na DEC o Alpha, o processador mais rapido
+dos anos noventa, e a AMD contratou ele e parte da equipe em mil novecentos e noventa e
+seis pra fazer um chip do zero. Em junho de mil novecentos e noventa e nove a AMD
+apresenta o Athlon, que chega as lojas em agosto, a quinhentos mega-hertz.
+
+FICHA: Dirk Meyer, nascido em mil novecentos e sessenta e um, tinha trinta e sete anos;
+vivo em dois mil e vinte e seis.
+
+Dizer o que o Athlon era: um desenho novo, com o barramento do Alpha, tres caixas de
+numero com virgula, e mais rapido que o Pentium III, lancado em fevereiro do mesmo
+ano, no mesmo relogio. Primeira vez que a AMD faz um chip mais rapido que o da Intel.
+
+Contar a marca do giga: em seis de marco de dois mil a AMD vende o primeiro processador
+de PC a um giga-hertz, UM BILHAO de batidas por segundo (bilhao, com B: mil milhoes;
+NAO dizer "um milhao"). Em oito de marco a Intel
+responde com um Pentium III a um giga-hertz. Dois dias.
+
+Contar a resposta da Intel, em vinte de novembro de dois mil: o Pentium 4, um desenho
+feito pra numero. A fila de atendimento do chip passa de dez passos pra vinte. Cada
+passo faz menos, entao a batida pode ser mais curta, e o relogio sobe: sai a um giga e
+quatrocentos e um giga e quinhentos mega-hertz. Mas cada instrucao agora passa por
+vinte passos em vez de dez, entao em cada batida o chip faz menos. A Intel diz que o
+desenho vai chegar a dez giga-hertz.
+
+Dizer a licao de hardware e software: na loja, o numero do relogio virou a medida de
+tudo, e o desenho do hardware se dobrou ao numero. Enquanto isso o software, que
+continua nao mudando, ganha velocidade de graca a cada geracao. Ninguem esta contando
+quanto esquenta.
+
+Fechar pedindo o Proximo pra ouvir um engenheiro da Intel avisar que aquilo ia acabar.
+O pedido e so esse: SEM comparacao com motor, carro ou painel.
+
+TELA 7 - DOIS MIL E UM: O AVISO
+
+Contar a cena, que e verdadeira: em fevereiro de dois mil e um, numa conferencia de
+engenheiros de chip, Pat Gelsinger, diretor de tecnologia da Intel, mostra um grafico
+com o calor por centimetro quadrado dos processadores subindo ano a ano. Se continuar
+assim, ele diz, em dois mil e cinco o chip tem o calor por area de um reator nuclear,
+em dois mil e dez o do bico de um foguete, em dois mil e quinze o da superficie do Sol.
+
+FICHA: Pat Gelsinger, nascido em mil novecentos e sessenta e um, tinha trinta e nove
+anos; vivo em dois mil e vinte e seis.
+
+Explicar por que tinha dado certo ate ali, e aqui entra uma regra escrita vinte e sete
+anos antes: em mil novecentos e setenta e quatro Robert Dennard, engenheiro da IBM que
+tinha inventado a memoria dinamica, publicou uma regra de escala: quando o transistor
+encolhe, ele fica mais rapido e gasta menos energia, na mesma proporcao. Entao dobrar
+o numero de transistores no mesmo pedaco de chip nao esquenta mais. A lei de Moore, que
+a etapa sete contou, da transistor; a regra de Dennard dava velocidade de graca em
+cima disso.
+
+FICHA: Robert Dennard, nascido em mil novecentos e trinta e dois, tinha quarenta e dois
+anos quando escreveu a regra em mil novecentos e setenta e quatro; morreu em dois mil e
+vinte e quatro.
+
+Explicar por que ia parar, literalmente: pra gastar menos, cada geracao baixava a
+tensao eletrica do chip. So que o transistor precisa de uma tensao minima pra separar
+o zero do um, e a tensao chegou perto desse minimo. Abaixo disso o transistor vaza:
+deixa passar corrente mesmo desligado. Um transistor vazando e nada; cem milhoes
+vazando e calor. A regra de Dennard estava acabando, e Gelsinger estava dizendo isso
+com quatro anos de antecedencia.
+
+Dizer a licao de hardware e software: e o primeiro limite desta serie que nao e dinheiro
+nem engenharia, e fisica. E o software ainda nao sabe: em dois mil e um todo programa
+do mundo esta sendo escrito como se o relogio fosse subir pra sempre.
+
+Fechar pedindo o Proximo pra ver a AMD dobrar o tamanho do numero sem quebrar o
+programa.
+
+TELA 8 - DOIS MIL E TRES: SESSENTA E QUATRO BITS SEM QUEBRAR O PROGRAMA
+
+Explicar o problema, que e de memoria: o xis oitenta e seis enderecava memoria com
+trinta e dois bits, e trinta e dois bits alcancam quatro gigabytes. Em dois mil e tres
+os servidores estavam batendo nesse teto.
+
+Contar a resposta da Intel primeiro, porque veio antes: em junho de dois mil e um a
+Intel lanca o Itanium, um processador de sessenta e quatro bits com um conjunto de
+instrucoes novo, desenhado do zero, que nao e xis oitenta e seis. O software antigo
+roda nele devagar, por emulacao, e o software novo tem que ser reescrito. Vendeu
+poucos milhares.
+
+Contar a resposta da AMD: em vez de um conjunto novo, esticar o xis oitenta e seis pra
+sessenta e quatro bits, mantendo todo o software de trinta e dois rodando igual, no
+mesmo chip. A equipe que veio da DEC com Meyer desenha isso. Anunciado em mil
+novecentos e noventa e nove, sai em vinte e dois de abril de dois mil e tres pra
+servidor, o Opteron, e em vinte e tres de setembro pra casa, o Athlon 64. De quebra, a
+AMD tira o controlador de memoria da placa-mae e poe dentro do processador, e o
+caminho ate a memoria encurta.
+
+Contar uma coisa em Haifa no mesmo ano, em uma frase, pra guardar: em marco de dois mil
+e tres a equipe de Mooly Eden lanca o Pentium M, um chip feito pra notebook, onde o
+limite nao e o relogio, e a bateria. Fila mais curta, mais trabalho por batida,
+desliga o que nao esta usando.
+
+Contar o desfecho: em vinte e oito de junho de dois mil e quatro a Intel lanca
+processadores com o conjunto de sessenta e quatro bits da AMD. Pela primeira vez a Intel
+copia a AMD. Ate hoje, o nome tecnico do que roda em quase todo PC e AMD64.
+
+Dizer a licao de hardware e software, que e a mesma da etapa oito: ganhou quem exigiu
+menos do software. O hardware melhor com software novo perdeu pro hardware bom com o
+software velho rodando igual.
+
+Fechar pedindo o Proximo pra ver a parede.
+
+TELA 9 - DOIS MIL E QUATRO: A PAREDE DO CALOR
+
+Contar a peca: em fevereiro de dois mil e quatro sai o Pentium 4 novo, feito com
+transistores de noventa nanometros, cento e vinte e cinco milhoes deles, e uma fila de
+atendimento de trinta e um passos. Ele esquenta mais que o anterior e nao fica mais
+rapido. O vazamento que Gelsinger previu chegou: a noventa nanometros, uma parte grande
+da energia do chip virou calor sem fazer conta nenhuma.
+
+Contar os cancelamentos, em ordem, como DOIS fatos separados: em sete de maio de dois
+mil e quatro a Intel cancela o sucessor do Pentium 4, que estava planejado pra SETE
+giga-hertz. Em quatorze de outubro cancela o Pentium 4 de QUATRO giga-hertz, que ja
+tinha sido prometido. NAO juntar os dois numeros num so. O Pentium 4 para em tres
+giga-hertz e oitocentos mega-hertz. A promessa de dez giga-hertz morreu ali.
+
+Dizer o tamanho disso: vinte anos depois, o processador de uma casa ainda bate entre
+quatro e seis bilhoes de vezes por segundo. Nao dez. Nao trinta. O relogio parou de
+subir em dois mil e quatro e nunca mais voltou a subir do jeito que subia.
+
+Dizer o que a Intel anunciou junto com o cancelamento, e terminar a tela nisso: em vez
+de um nucleo mais rapido, dois nucleos no mesmo chip. NESTA TELA NAO SE FALA DE HAIFA
+NEM DE PENTIUM M: isso e a tela 11.
+
+Dizer a licao de hardware e software: pela primeira vez desde o comeco deste episodio,
+o programa velho NAO roda mais rapido no chip novo. A frase da tela 2 parou de valer. O
+hardware parou de dar velocidade de graca.
+
+Fechar pedindo o Proximo pra ver o que o software fez com isso.
+
+TELA 10 - DOIS MIL E CINCO: DOIS NUCLEOS E O FIM DO ALMOCO GRATIS
+
+Contar o artigo: em marco de dois mil e cinco um programador da Microsoft publica um
+artigo que ficou famoso entre programadores, com o titulo "O almoco gratis acabou". O
+argumento: por trinta anos o programa ficou mais rapido sem que o programador fizesse
+nada, porque o relogio subia. Isso acabou. Daqui em diante um programa so fica mais
+rapido se for escrito pra fazer varias coisas ao mesmo tempo.
+
+Contar a pessoa e as pecas: em dezoito de maio de dois mil e cinco Paul Otellini vira
+presidente da Intel. Uma semana depois, em vinte e cinco de maio, sai o Pentium D: dois
+Pentium 4 lado a lado no mesmo chip, que conversam entre si pela placa-mae. Em trinta e
+um de maio a AMD lanca o Athlon 64 X2: dois nucleos desenhados juntos, na mesma
+pastilha, conversando por dentro.
+
+FICHA: Paul Otellini, nascido em mil novecentos e cinquenta, tinha cinquenta e quatro
+anos; morreu em dois mil e dezessete. (Nascido em CINQUENTA, nao em cinquenta e cinco.)
+
+Explicar o que e nucleo, com a analogia: dois mercados inteiros, lado a lado, com o
+mesmo estoque atras. Cada nucleo e um processador completo, com seus caixas e sua fila,
+e os dois dividem a mesma memoria. Um programa escrito em fila, do jeito que todo
+programa era escrito, usa um nucleo so; o outro fica parado. O sistema operacional, o
+sindico do episodio anterior, ja sabia repartir e poe outro programa no segundo
+nucleo. Mas pra UM programa usar os dois, o programador tem que dividir o trabalho dele
+em partes que rodam ao mesmo tempo. Isso e dificil, e ninguem estava acostumado.
+
+Dizer a licao de hardware e software, que e a virada do episodio: pela primeira vez na
+serie o hardware devolve a conta pro software. A lei de Moore continua dando o dobro de
+transistores, mas eles vem em forma de mais nucleos, nao de relogio mais rapido, e so
+o programa escrito em paralelo aproveita.
+
+Fechar pedindo o Proximo pra ver o chip que ganhou a corrida abaixando o relogio.
+
+TELA 11 - DOIS MIL E SEIS: O CORE 2 DUO
+
+Retomar Haifa em uma frase: enquanto o Pentium 4 corria pra dez giga-hertz, a equipe de
+Eden tinha feito o chip de notebook da tela 8, que fazia mais por batida e gastava
+menos, porque o limite dele era a bateria.
+
+Contar a decisao: Otellini escolhe esse desenho pra virar o processador principal da
+Intel, de mesa e de servidor, no lugar do Pentium 4.
+
+Contar a peca, em vinte e sete de julho de dois mil e seis: o Core 2 Duo. Transistores de
+sessenta e cinco nanometros, quase trezentos milhoes deles, quase cem vezes o primeiro
+Pentium. Fila de quatorze passos, onde o Pentium 4 tinha trinta e um. Dois nucleos. O
+relogio: dois giga e seiscentos e sessenta mega-hertz, mais baixo que os tres giga e
+oitocentos do Pentium 4. E mais rapido que ele em tudo, gastando sessenta e cinco
+watts onde o Pentium D gastava cento e trinta.
+
+Dizer o que aconteceu com a corrida: a Intel retoma a frente, que tinha perdido pra
+AMD em dois mil e tres. E na mesma semana, em vinte e quatro de julho, a AMD anuncia
+que vai comprar uma empresa que faz placa de video. Nao explicar o que e placa de
+video: isso e o proximo episodio.
+
+Dizer a licao de hardware e software: o hardware desistiu do numero e voltou a fazer
+mais por batida, e a velocidade nova, daqui em diante, vem em nucleos, que so o
+software paralelo aproveita. Um chip pensado pra bateria acabou sendo o desenho certo
+pra parede do calor.
+
+Fechar pedindo o Proximo pra dizer onde isto para. ESTE PEDIDO E OBRIGATORIO: a tela 11
+acaba aqui. O balanco e a tela 12.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e seis, com dois nucleos em todo processador novo,
+sessenta e quatro bits no molde da AMD, e o relogio parado perto de tres giga-hertz.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME (a gravacao
+anterior pulou isto e disse so "humanos brilhantes"; nao pular): Dham fez o Pentium e
+depois deu a AMD o desenho do K6. Nicely achou o erro; Grove pagou a troca. Eden fez o MMX em
+Haifa e, dez anos depois, o chip que venceu abaixando o relogio. Sanders fundou a copia
+que virou concorrente. Meyer fez o Athlon e chegou primeiro ao giga. Gelsinger avisou
+do calor. Dennard escreveu a regra que deu velocidade de graca por trinta anos, e a
+regra acabou. Otellini virou a Intel pra dois nucleos. Ninguem planejou o conjunto.
+
+Dizer a licao do episodio em duas frases: a lei de Moore continua dando transistor,
+mas parou de dar velocidade. Daqui em diante, ir mais rapido e fazer muitas contas ao
+mesmo tempo, e isso e um problema de software, nao de hardware.
+
+Deixar a pergunta no ar, sem responder: se agora o jeito de ir mais rapido e fazer
+muitas contas ao mesmo tempo, que peca do computador ja fazia exatamente isso ha dez
+anos, e pra que?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

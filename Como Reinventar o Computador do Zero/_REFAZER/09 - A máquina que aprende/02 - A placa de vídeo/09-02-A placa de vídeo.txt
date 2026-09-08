@@ -1,0 +1,130 @@
+Inicie dizendo: A Placa de Vídeo
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Placa de Video.txt enviado como
+fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o segundo episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da
+serie Como Reinventar o Computador do Zero. O anterior contou a corrida do processador
+ate 2006 e perguntou que peca ja fazia muitas contas ao mesmo tempo ha dez anos. A
+resposta: a placa de video, feita pra jogo.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram a placa de video,
+EM ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o software
+melhoram um empurrando o outro.
+
+ESTE EPISODIO COBRE DE 1985 A 2007, EM ORDEM. Dizer esse intervalo logo na abertura e,
+no encerramento, dizer em que ano o episodio para. O anterior parou em 2006 e este
+comeca em 1985: NAO chamar isso de "voltar no tempo"; as duas corridas correram lado a
+lado e a serie conta uma de cada vez. A tela 1 diz isso em uma frase.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a
+ficha dela, uma frase so, no formato: nome, ano de nascimento, idade naquela cena, e se
+esta viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler
+todas, sem pular, sem inventar dado e sem comentar. Sao sete: Ho, Carmack, Huang,
+Malachowsky, Kirk, Ruiz e Orton. A PALAVRA "FICHA" NAO E DITA EM VOZ ALTA: emendar
+direto no nome. O terceiro fundador da NVIDIA, os tres da 3dfx e o doutorando de
+Stanford do Brook e do CUDA NAO tem ano de nascimento publico e NAO sao nomeados:
+falar deles como o roteiro escreve.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+A PRIMEIRA GRAVACAO DESTE EPISODIO NAO PEDIU "aperte o Proximo" NENHUMA VEZ, nao avisou
+das 12 telas, nao leu nenhuma das sete fichas, disse "genio" e disse "aquela nossa
+analogia classica". Foi descartada. Sao ONZE pedidos, uma vez no fim de cada tela de 1 a
+11, SETE fichas no formato, e o aviso das 12 telas na tela 1.
+
+A SEGUNDA GRAVACAO acertou a estrutura mas disse "cinco bilhoes e quatrocentos BILHOES de
+dolares" (e cinco bilhoes e quatrocentos MILHOES), chamou o processador de "cerebro" e
+disse "virada genial". Nao repetir.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (a ATI e o Doom, e a NVIDIA),
+4 e 5 (o Voodoo, e a briga das linguas), 6 e 7 (a GeForce 256, e a Radeon e a GeForce
+3), 9, 10 e 11 (a compra da ATI, a GeForce 8800 e o CUDA: tres telas, tres pedidos, o
+CUDA so na 11), 11 e 12 (o CUDA e o fecho). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+A ABERTURA E DIRETA, sem cena inventada, sem comparacao e sem chamada com fato de tela
+posterior: depois do titulo, a primeira frase e a retomada de 2006.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR. "Mil novecentos e oitenta e cinco", "mil
+novecentos e oitenta e sete", "mil novecentos e noventa e tres", "mil novecentos e
+noventa e cinco", "mil novecentos e noventa e seis", "mil novecentos e noventa e sete",
+"mil novecentos e noventa e oito", "mil novecentos e noventa e nove", "dois mil", "dois
+mil e um", "dois mil e dois", "dois mil e quatro", "dois mil e seis", "dois mil e
+sete". "Cinco bilhoes e quatrocentos milhoes de dolares" (bilhoes, com B). "Seiscentos
+e oitenta e um milhoes de transistores".
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: GPU (soletrar "ge, pe, u"), VGA (soletrar),
+ATI (soletrar), Markham ("már-cam"), K.Y. Ho ("cá, uai, rô"), Doom ("dum"), Quake
+("quêic"), Carmack ("cár-mac"), NVIDIA ("en-ví-dia"), Jensen Huang ("djén-sen ruâng"),
+Malachowsky ("ma-la-cóvs-qui"), Denny's ("dénis"), NV1 ("ene ve um"), Sega Saturn, 3dfx
+("tres de efe xis"), Voodoo ("vu-dú"), Silicon Graphics ("sí-li-con gráfics"), GLQuake
+("ge ele quêic"), Glide ("glaid"), Direct3D ("dai-réct tres de"), OpenGL ("ôpen ge
+ele"), RIVA ("rí-va"), TNT (soletrar), GeForce ("dji-fórs"), Kirk ("quérc"), Radeon
+("rêi-dion"), Xbox ("écs-bócs"), Stanford ("stén-ford"), Brook ("bruc"), Hector Ruiz
+("réc-tor ru-íz"), Dave Orton ("dêiv ór-ton"), Fusion ("fiú-jon"), CUDA ("cú-da"). A
+linguagem C e "a linguagem ce".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu", "a analogia autorizada" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa.
+
+FOCO, EM ORDEM: o que e pintar uma tela (trezentos e sete mil pontos, trinta vezes por
+segundo, a mesma conta em todos) e os pintores; oitenta e cinco a noventa e tres, a
+placa burra, Ho funda a ATI, Carmack pinta o Doom no processador; noventa e tres a
+noventa e cinco, Huang e Malachowsky fundam a NVIDIA num Denny's, o NV1 erra a lingua;
+noventa e seis e noventa e sete, o Voodoo so tres dimensoes e o GLQuake que vendeu a
+placa; noventa e sete e noventa e oito, Glide contra Direct3D e OpenGL, o RIVA e o TNT,
+ganha a lingua comum; noventa e nove, a GeForce 256 tira a geometria do processador e
+ganha o nome GPU, Kirk; dois mil a dois mil e dois, a Radeon, o fim da 3dfx, a GeForce 3
+programavel, o Xbox; dois mil e tres a dois mil e cinco, a placa por dentro e o Brook;
+julho de dois mil e seis, Ruiz e Orton, a AMD compra a ATI; novembro de dois mil e seis,
+a GeForce 8800 com cento e vinte e oito processadores iguais; fevereiro de dois mil e
+sete, o CUDA; dois mil e sete, o fecho.
+
+O PONTO QUE NAO PODE FALTAR: a placa nasceu especializada pra jogo e por isso rapida;
+a lingua comum decidiu quem sobreviveu; a GeForce 3 devolveu programa a peca; o CUDA, que
+e software, abriu a peca pra qualquer conta que seja a mesma em muitos numeros. Uma peca
+feita pra jogo virou a peca mais importante da era seguinte.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO E O SEGUNDO DE QUATRO: na ultima tela, balanco das
+pessoas nome por nome, a licao, e a pergunta que abre o proximo episodio, SEM dizer
+"inteligencia artificial", "rede neural" nem "aprender".
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas do roteiro.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, lendario,
+revolucionario. E "cerebro" em qualquer comparacao com processador ou placa.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+Use SOMENTE a analogia descrita no roteiro, a equipe de pintores (tela = parede de
+trezentos mil azulejos repintada trinta vezes por segundo; processador = um pintor
+esperto, um azulejo por vez; placa de video = centenas de pintores simples, todos com a
+mesma instrucao ao mesmo tempo), e lembre o caixa do mercado do episodio anterior em
+uma frase so. NAO invente analogias novas. NAO comparar placa de video com cerebro,
+motor, carro ou musculo.
+
+Use tambem o Overview.txt como contexto curto.

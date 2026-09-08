@@ -1,0 +1,105 @@
+Inicie dizendo: Conectando Tudo, a Internet
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Conectando Tudo a Internet.txt
+enviado como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por
+tela.
+
+Este e o segundo e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior levou o computador pra dentro
+de casa seguindo as pessoas que construiram cada peca, e terminou perguntando: se ja
+existem milhoes de maquinas iguais espalhadas pelo mundo, o que falta pra elas
+conversarem entre si? Este episodio inteiro e a resposta.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram a rede, EM ORDEM
+CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o software melhoram um
+empurrando o outro.
+
+ESTE EPISODIO COBRE DE 1962 A 1995, EM ORDEM. Dizer esse intervalo logo na abertura e,
+no encerramento, dizer em que ano o episodio para. O anterior parou em 1990 e este
+comeca em 1962: a serie VOLTA NO TEMPO de proposito, e a tela 1 avisa isso em uma frase.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a
+ficha dela, uma frase so, no formato: nome, ano de nascimento, idade naquela cena, e se
+esta viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler
+todas, sem pular, sem inventar dado e sem comentar.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 11 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 10 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 11 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (o problema do telefone e a
+ideia do pacote), 6 e 7 (o envelope e o dia da virada), 9 e 10 (a web e o Mosaic), 10 e
+11 (o Mosaic e o fecho). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+A ABERTURA E DIRETA, sem cena inventada.
+
+ANOS POR EXTENSO E DEVAGAR. "Mil novecentos e sessenta e dois", "mil novecentos e
+sessenta e nove", "mil novecentos e setenta e um", "mil novecentos e setenta e quatro",
+"mil novecentos e oitenta e tres", "mil novecentos e oitenta e nove", "mil novecentos e
+noventa e um", "mil novecentos e noventa e tres", "mil novecentos e noventa e cinco".
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: Licklider ("li-cli-der"), Kleinrock
+("clain-roc"), Baran ("ba-ran"), Davies ("dei-vis"), Larry Roberts ("ro-berts", e NAO e
+o Ed Roberts do Altair), Kline ("clain"), Tomlinson ("tom-lin-son"), Cerf ("serf"), Kahn
+("can"), Postel ("pos-tel"), Mockapetris ("mo-ca-pe-tris"), Berners-Lee ("ber-ners-li"),
+Andreessen ("an-dri-sen"), Mosaic ("mo-zeic"). Siglas SEMPRE soletradas: ARPA, MIT, BBN,
+IMP, UCLA, SRI, TCP/IP, DNS, CERN ("ce, e, erre, ene", e por extenso na primeira vez:
+o laboratorio europeu de fisica de particulas), NCSA.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "a analogia autorizada" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa.
+
+FOCO, EM ORDEM: a rede telefonica reserva caminho e nao serve pra computador; Licklider
+na ARPA em sessenta e dois decide pagar uma rede; o pacote, com Kleinrock (a teoria,
+sessenta e um), Baran (a rede sem centro, sessenta e quatro), Davies (o nome, sessenta e
+cinco) e Larry Roberts (o desenho da ARPANET, sessenta e sete); o IMP construido pela
+BBN e a primeira mensagem, L, O, do Charley Kline em vinte e nove de outubro de sessenta
+e nove; Tomlinson e o correio eletronico com a arroba em setenta e um; as redes que nao
+se entendem e o envelope TCP/IP de Cerf e Kahn em setenta e quatro; Postel e o dia da
+virada, primeiro de janeiro de oitenta e tres; Mockapetris e o DNS no mesmo ano;
+Berners-Lee no CERN em oitenta e nove, as tres pecas, o NeXT, agosto de noventa e um no
+ar e trinta de abril de noventa e tres em dominio publico; Andreessen e o Mosaic em
+noventa e tres, imagem junto com o texto no PC de casa; noventa e cinco, a rede abre pro
+comercio.
+
+O PONTO QUE NAO PODE FALTAR: a internet nao venceu por ser a melhor rede. Venceu por nao
+exigir que ninguem trocasse de rede. E a rede e quase toda software em cima de hardware
+que ja existia: o unico hardware novo foi o IMP, o resto foi acordo.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO FECHA A ETAPA: na ultima tela, balanco das pessoas,
+licao da etapa e a pergunta que abre a etapa final (e se a maquina achasse a regra
+sozinha, olhando os dados?), SEM explicar aprendizado de maquina.
+
+DURACAO: cerca de 18 minutos. Nao esticar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "conectou o mundo", "o resto e historia".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As unicas
+autorizadas sao a ligacao telefonica contra a mudanca em caixas numeradas, o conteiner e
+a lista telefonica que nao mora em lugar nenhum.
+
+Use tambem o Overview.txt como contexto curto.

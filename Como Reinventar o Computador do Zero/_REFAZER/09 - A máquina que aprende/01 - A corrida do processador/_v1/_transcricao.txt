@@ -1,0 +1,330 @@
+# Transcricao automatica (faster-whisper small) - 17.6 min
+# Fonte: O dia que os processadores quase derreteram.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A corrida do processador.
+[00:02] Em 2001, um dos diretores da Intel subiu ao palco de uma conferência
+[00:06] e deu um aviso bem apocalíptico para a indústria.
+[00:10] Nossa, ele definitivamente não estava brincando, né?
+[00:13] Nem um pouco.
+[00:14] Ele projetou um gráfico mostrando que se a gente continuasse construindo processadores
+[00:18] daquele jeito, focando só na frequência bruta,
+[00:22] logo o computador ia gerar o calor de um reator nuclear.
+[00:25] Pois é, a própria física estava prestes a intervir
+[00:28] quebrar as pernas de uma indústria que, sabe, dependia cegamente da velocidade.
+[00:32] E esse aviso é o ponto de partida perfeito.
+[00:35] A nossa análise de hoje abre a etapa a máquina que aprende,
+[00:39] que é a nona e última da série sobre como reinventar o computador do zero.
+[00:44] Aham, o nosso último mergulho lá nas fontes parou em 1997.
+[00:49] A máquina já estava em toda casa, ligada em rede e já com o sistema operacional.
+[00:53] Isso. Aí ficou aquela dúvida no ar, né?
+[00:56] O que que ainda falta para ela fazer, o que a gente ainda não sabe escrever?
+[01:01] E a resposta, ahm, vem em três partes.
+[01:05] Mas a primeira delas é superfísica.
+[01:07] Antes de qualquer coisa, as peças vão correr.
+[01:10] E o processador, claro, foi o primeiro a puxar essa fila.
+[01:13] Exato.
+[01:14] O assunto hoje é construir, tá?
+[01:16] Não vender.
+[01:17] Nós vamos seguir cronologicamente, de 1993, até 2006.
+[01:22] E olha, os anos se sobrepõem, né?
+[01:24] Então não é voltar no tempo em relação à etapa passada.
+[01:27] Porque essa corrida do hardware já corria solta por baixo dos panos.
+[01:30] Perfeito.
+[01:31] Ah, e um aviso rápido para quem está ouvindo a gente.
+[01:34] Essa página de animação que acompanha análise tem 12 telas, tá?
+[01:38] Mas quem está só no áudio acompanha normalmente.
+[01:40] Com certeza, não se preocupem.
+[01:42] Eu vou só guiar as trocas de tela aqui no sistema.
+[01:45] Então, voltando.
+[01:47] O que exatamente significa correr para um processador?
+[01:50] Basicamente, a velocidade dele é medida de duas formas.
+[01:54] O relógio interno que bate numa frequência medida em hertz
+[01:58] e o tanto de trabalho útil que ele consegue fazer a cada batida desse relógio.
+[02:02] Para ficar mais claro, imagina a fila do caixa de um supermercado.
+[02:06] Aham, boa analogia.
+[02:07] Cada instrução de um programa, tipo abrir um arquivo, é um cliente na fila.
+[02:12] O relógio é o ritmo em que o caixa trabalha.
+[02:15] Se a gente divide o atendimento em vários pequenos passos,
+[02:18] passar o produto, pesar, cobrar, empacotar,
+[02:22] a fila consegue andar muito mais rápido.
+[02:24] Exato, o fluxo fica constante e não trava.
+[02:26] Mesmo que cada pessoa passe por mais etapas, né?
+[02:29] Bom, aperte o próximo.
+[02:30] E foi exatamente com essa ideia de revolucionar o caixa do mercado
+[02:35] que em 1993, a Intel lançou o chip de quinta geração.
+[02:39] E o projeto foi chefeado pelo Vinod Daim.
+[02:42] O grande nome por trás dessa peça.
+[02:44] Sim, Vinod Vam, nascido em 1950, 43 anos na época,
+[02:50] continuou vivo em 2026.
+[02:52] Ele comandou a criação de um verdadeiro monstro para a época, não foi?
+[02:55] Total! Era um chip com um impressionante 3 milhões e 100 mil transistores,
+[03:01] operando a 60 e 66 megahertz.
+[03:04] Caramba! E eles queriam batizar o chip de 586, né?
+[03:08] Para seguir a tradição de sucesso do 386 e do 486.
+[03:12] Isso, mas teve um obstáculo jurídico pesado.
+[03:15] Em 1991, a justiça americana disse que a Intel não poderia registrar
+[03:20] só um número como marca.
+[03:21] Aí eles tiveram que usar o grego clássico, o prefixo Penta de 5,
+[03:25] e criaram o famoso Pentium.
+[03:28] Exatamente, mas o Vam fez bem mais do que inventar o nome bonito.
+[03:32] Voltando lá para o seu supermercado, o Pentium fez uma mágica.
+[03:36] Ele abriu logo dois caixas lado a lado.
+[03:39] A famosa arquitetura super escalar.
+[03:41] Isso.
+[03:42] Isso permitia fazer duas instruções por batida do relógio,
+[03:46] de forma simultânea.
+[03:47] E o pulo do gato aqui é que os programadores
+[03:49] não precisavam mudar uma vírgula do código antigo.
+[03:53] O próprio hardware lia e encontrava o que podia ser feito ao mesmo tempo,
+[03:57] foi um almoço grátis gigante para o software.
+[03:59] Perto o próximo.
+[04:00] Só que esse presente da engenharia veio com um defeito escondido.
+[04:03] Lá em 1994, um professor de matemática de Lynchburg na Virgília,
+[04:08] Thomas Nicely.
+[04:10] Esse mesmo.
+[04:11] Thomas Nicely, nascido em 1943,
+[04:13] 51 anos na época, falecido em 2019.
+[04:16] Aham.
+[04:17] Ele estava forçando o Pentium ao limite com umas divisões super complexas
+[04:22] e acabou achando um erro matemático lá longe, na quinta casa decimal.
+[04:26] Espera aí.
+[04:28] Um erro físico gravado no silício.
+[04:31] Como se fosse um bang de software.
+[04:33] Pois é.
+[04:34] Faltavam só cinco entradas numa tabela física
+[04:37] que estava literalmente gravada no processador.
+[04:40] A Intel, tipo, até já sabia da falha,
+[04:42] mas calculou que um usuário comum só ia esbarrar no erro a cada 27 mil anos.
+[04:48] Nossa, uma arrogância daquelas.
+[04:50] Mas o Nicely botou problema na internet e a coisa explodiu rápido.
+[04:54] E o Andy Grove, que presidia, então, na época.
+[04:57] Andy Grove, nascido em 1936, 58 anos na época, falecido em 2016.
+[05:04] Exato. Ele bateu o pé e inicialmente não queria trocar as peças de todo mundo.
+[05:08] Dizia que só trocaria de quem provasse que precisava daquela matemática exata, né?
+[05:12] Isso.
+[05:13] Mas aí, a gigante BM decidiu parar de vender qualquer computador
+[05:17] que tivesse o Pentium dentro.
+[05:18] É a faca no pescoço.
+[05:19] Total.
+[05:20] A Intel cedeu e teve que gastar astronômicos 475 milhões de dólares
+[05:26] para trocar tudo.
+[05:27] É, o processador virou um software duro.
+[05:30] Aperte o próximo.
+[05:31] E depois dessa crise doida, eles precisavam continuar acelerando a fila.
+[05:35] Em 1995, eles lançaram o Pentium Pro.
+[05:39] E o que ele trouxe para a mesa?
+[05:41] Uma sacada genial chamada execução fora de ordem.
+[05:45] Imagina aquele cliente que chega no caixa,
+[05:47] resolve procurar moedas no fundo da bolsa e trava tudo.
+[05:50] Sei bem, o pesadelo da fila.
+[05:53] Pois é, o Pentium Pro não ficava parado esperando.
+[05:56] Ele desmanchava a fila do programa
+[05:58] e começava a atender quem estava lá atrás já com dinheiro na mão.
+[06:01] Caramba, garantindo que não pertesse nenhuma batida de relógio.
+[06:04] Exato.
+[06:05] E no final, ele organizava as entregas na ordem certa.
+[06:09] Logo depois, no começo de 1997, uma equipe bem específica entrou no jogo.
+[06:16] A equipe lá de Raifah, em Israel, chefeada pelo Muli Idem.
+[06:20] Muli Idem, massido em 1953, 43 anos na época, vivo hoje.
+[06:26] Eles desenharam o Pentium MMX, que foi revolucionário.
+[06:31] Injetou 57 novas instruções para o chip pegar uma única conta matemática
+[06:38] e fazer em vários números de uma vez só.
+[06:41] O que era essencial para mexer com imagens pesadas e som que estavam explodindo na época, né?
+[06:46] Com certeza, o famoso Pentium II, que saiu um pouco depois,
+[06:50] essencialmente juntou essas duas coisas.
+[06:53] A execução fora de ordem do PRO com a mágica multimídia do MMX de Israel.
+[06:59] Uma máquina incrível.
+[07:01] Aperte o cróximo.
+[07:02] Mas olha, a Intel nunca pôde correr sozinha e tranquila.
+[07:06] Tinha uma pedra eterna no sapato deles, que era a AMD.
+[07:10] A empresa fundada pelo Jerry Sanders lá no passado.
+[07:13] Isso, Jerry Sanders, nascido em 1936, 32 anos na fundação em 1969, falecido em 2024.
+[07:22] A AMD começou operando como uma segunda fonte, né?
+[07:25] Só fabricando chips que outros desenhavam.
+[07:27] Aham, e a culpa de colocar a AMD nessa briga foi da IBM.
+[07:32] Quando eles desenharam o primeiro PC, eles exigiram que toda peça tivesse dois fabricantes diferentes.
+[07:38] Medo de faltar peça no mercado.
+[07:39] Exato.
+[07:41] Com essa exigência, a Intel foi obrigada a licenciar seus projetos para a AMD em 1982.
+[07:47] Só que em 1987, a Intel se recusou a passar o desenho do novíssimo 386.
+[07:53] E aí, virou uma briga na justiça pesadíssima.
+[07:56] Sim, que se arrastou até 1991, quando a AMD finalmente venceu e garantiu o direito de competir.
+[08:03] Só que o primeiro processador próprio deles, o K5, foi bem fraco, né?
+[08:07] Foi decepcionante.
+[08:09] Mas eles deram uma cartada de mestre em 1996 e compraram uma pequena empresa chamada Next Gen.
+[08:15] E aqui entra aquela ironia absurda.
+[08:18] Demais.
+[08:18] Sabe quem era o executivo chefe dessa Next Gen?
+[08:21] O próprio Vinod Jam.
+[08:23] O engenheiro que desenhou o Pentium Original.
+[08:25] Ele mesmo.
+[08:26] O projeto da equipe dele virou o processador K6 da AMD.
+[08:30] E o mais maluco é que ele encaixava no mesmíssimo soquete do Pentium Original, na placa mãe.
+[08:35] Isso só escancar a um detalhe fascinante, né?
+[08:38] A AMD e a Intel só estavam se matando desse jeito porque ambas precisavam obedecer o mesmo molde de software.
+[08:46] Sem Windows e os programas antigos servindo de pista, a corrida nem existia.
+[08:50] Aperte o próximo.
+[08:52] E essa disputa empurrou todo mundo para uma obsessão doentia pelos megahertz.
+[08:57] Para vencer a briga, em 1999, a AMD trouxe o Dirk Meyer.
+[09:02] Dirk Meyer, nascido em 1961, 37 anos na época, vivo hoje.
+[09:07] Ele veio lá da empresa DC e liderou a criação do formidável Eflon.
+[09:12] O Eflon virou uma lenda.
+[09:14] Fez história.
+[09:15] Em março do ano 2000, eles atingiram a marca de 1 GHz, 1 bilhão de batidas por segundo.
+[09:22] E o tapa na cara foi que eles conseguiram isso meros dois dias antes da Intel.
+[09:28] Imagino ter remoto lá nos escritórios da Intel.
+[09:31] Para dar o troco na guerra dos números, no final daquele ano eles lançaram o Pentium 4.
+[09:36] Que foi um chip totalmente construído para raipar a velocidade do relógio, né?
+[09:40] Totalmente.
+[09:41] Sabe a analogia da nossa fila do supermercado de 10 passos?
+[09:45] Eles esticaram a esteira para 20 pequenos passos.
+[09:48] Assim cada passo dava muito menos trabalho e o relógio podia bater muito mais, muito mais rápido.
+[09:54] Exatamente.
+[09:56] A aposta era tão focada nisso que eles prometeram chegar nos 10 GHz no futuro.
+[10:01] Vendendo um motor que só gritava alto no painel, aperte o próximo.
+[10:05] Mas focar cegamente no relógio acordou um monstro físico.
+[10:09] E o aviso severo veio em fevereiro de 2001 com o diretor de tecnologia da Intel.
+[10:14] O Pat Gelsinger.
+[10:16] Isso.
+[10:17] Pat Gelsinger, nascido em 1961, 39 anos na época.
+[10:22] Vivo hoje.
+[10:23] Foi ele que alertou que a barreira do calor ia ser fatal, né?
+[10:26] Sim, ele avisou que o calor no chip chegaria ao nível de um reator nuclear em 2005,
+[10:33] de um bico de foguete em 2010 e da superfície do sol em 2015.
+[10:38] E tudo isso porque o hardware bateu de frente no limite da regra de Denard?
+[10:42] Exato.
+[10:43] Uma regra criada pelo Robert Denard.
+[10:46] Nascido em 1932, 42 anos ao criar a regra em 1974, falecido em 2024.
+[10:53] E pelo que eu entendo, essa regra maravilhosa dizia que,
+[10:56] ao encolher o transistor, ele ficava mais rápido e ainda por cima gastava menos energia?
+[11:01] Era o cenário perfeito.
+[11:04] Mas quando chegamos nos meados dos anos 2000, a tensão elétrica bateu num limite mínimo absoluto.
+[11:11] Como não dava pra baixar mais a energia, os transistores começaram a vazar corrente.
+[11:17] Então mesmo supostamente desligado, a eletricidade escapava e virava puro calor?
+[11:22] E um calor imenso sem fazer nenhuma conta pra você.
+[11:26] Ou seja, o Pentium 4 não tava andando mais rápido de verdade.
+[11:30] Ele só tava esquentando até derreter.
+[11:32] Aperte o próximo.
+[11:33] E enquanto os computadores de casa pegavam fogo lutando por megahertz,
+[11:37] os servidores estavam esmagados contra outra parede totalmente diferente.
+[11:41] A memória.
+[11:42] O velho gargalo dos 32 bits, né?
+[11:45] Exato.
+[11:46] Físicamente, um processador de 32 bits só consegue acessar 4 gigabytes de memória RAM.
+[11:52] E em 2003, isso já era inaceitável pros servidores.
+[11:56] E a forma como as duas empresas lidaram com isso mostra muito sobre elas.
+[12:01] A Intel apostou tudo na arrogância e criou o Itânio em 2001.
+[12:05] Um chip incrivelmente sofisticado, 64 bits nativos, mas com uma falha fatal.
+[12:11] Ele quebrou a compatibilidade retroativa.
+[12:13] Pois é, os programas antigos do mercado rodavam de forma superlenta nele.
+[12:17] E a AMD Super Pragmática viu a chance e atacou de forma brilhante.
+[12:22] Eles pegaram a arquitetura clássica e esticaram ela para 64 bits,
+[12:26] lançaram o Atom 64 e o Hopteron em 2003.
+[12:30] Mantendo todos os programas antigos rodando maravilhosamente bem.
+[12:34] Resultado.
+[12:35] Em 2004, a Intel engoliu o orgulho e foi obrigada a copiar e adotar o padrão criado pela AMD.
+[12:40] Lição dura sobre respeitar a biblioteca de Código do Passado, né?
+[12:44] Aperte o próximo.
+[12:45] Duríssima.
+[12:46] Mas...
+[12:48] Voltando à guerra térmica, em 2004 aquele aviso do Gelsinger virou realidade.
+[12:53] A colisão aconteceu quando tentaram fabricar o Pentium 4 a 90 nanometros.
+[12:58] A barreira térmica foi atingida em cheio.
+[13:01] O vazamento de corrente ficou insustentável.
+[13:04] Insustentável.
+[13:06] A Intel simplesmente cancelou todos os projetos dos sucessores que rodariam a 4,7 GHz.
+[13:13] Eles pararam definitivamente em 3 GHz e 800 MHz.
+[13:18] A corrida cega do relógio morreu ali.
+[13:20] Só que, ironicamente, a solução para eles não veio da matriz na Califórnia.
+[13:25] Veio lá do refúgio em Haifa.
+[13:28] A equipe do Mully Eden em Israel.
+[13:30] Em 2003 eles tinham desenhado o Pentium M, que era um chip focado em Outbooks,
+[13:35] onde a bateria era a prioridade.
+[13:37] Eles não estavam nem aí para os megahertz na caixa, né?
+[13:40] Em preocupação com isso, eles encurtaram a fila de processamento
+[13:44] e o chip desligava de forma inteligente as áreas que estavam ociosas para economizar a bateria.
+[13:49] O foco virou fazer muito mais trabalho em cada batida
+[13:53] em vez de só bater o relógio mais rápido,
+[13:56] ignorando o marketing do relógio altíssimo.
+[13:59] Aperte o próximo.
+[14:00] Essa mudança de ventos trouxe uma crise feia para o outro lado da indústria.
+[14:04] Em março de 2005, um texto escrito por um programador da Microsoft
+[14:09] simplesmente viralizou no mundo todo.
+[14:11] O famoso artigo O Almoço Grátis Acabou.
+[14:14] Esse mesmo.
+[14:15] Durante 30 anos, o programador só esperava o hardware ficar mais rápido
+[14:20] e rodar o código pesado de graça.
+[14:22] Isso acabou ali.
+[14:24] E foi exatamente o que aconteceu na Intel, em maio de 2005,
+[14:28] quando entrou o novo presidente.
+[14:30] O Paul Atelini.
+[14:31] Paul Atelini, nascido em 1955, 54 anos na época,
+[14:36] falecido em 2017.
+[14:38] Ele subiu logo depois dos cristalamento dos chips
+[14:40] e empurrou a indústria para era dos núcleos duplos, né?
+[14:43] Sim, então rapidamente lançou o Pentium D
+[14:46] e a AMD trouxe o Atlon 64X2.
+[14:49] Só que isso devolveu o problema para o colo do programador, né?
+[14:52] Aperte o próximo.
+[14:54] Um pesadelo de engenharia para o software.
+[14:56] Pensa na nossa analogia.
+[14:57] Agora a gente não tinha só um caixa mais rápido.
+[14:59] A gente tinha dois supermercados inteiros lado a lado.
+[15:02] E o drama era que eles dividiam o mesmo estoque lá atrás,
+[15:05] que era a memória.
+[15:06] Um programa antigo entrava em um supermercado.
+[15:09] Exato. E o outro ficava completamente vazio sem fazer nada.
+[15:12] O programa não sabia se dividir em duas filas.
+[15:14] Exato.
+[15:15] Para tirar qualquer vantagem da velocidade nova,
+[15:18] os programadores tinham que reaprender tudo
+[15:20] e reescrever os programas para executar coisas em paralelo.
+[15:24] E o vencedor no lado do hardware foi inesperado.
+[15:27] O Atelini pegou o design superfocado em eficiência da equipe de Haifa
+[15:31] e transformou na linha principal de tudo.
+[15:34] O que deu luz, em julho de 2006, ao brilhante Core 2 Duo.
+[15:40] Um triunfo.
+[15:41] Transistores incrivelmente minúsculos de 65 nanômetros,
+[15:45] dois núcleos gastando quase metade da energia.
+[15:48] E operando num relógio super tranquilo,
+[15:51] com 2 GHz e 660 MHz,
+[15:54] ele estilhaçou em desempenho aquele Pentium 4 antigo
+[15:58] que fervia tentando bater os 3 GHz e 800.
+[16:02] Foi um massacre técnico.
+[16:04] E na mesma época, a AMD, que estava farejando que o futuro
+[16:07] seria uma loucura de processamentos paralelos,
+[16:10] anuncia a compra gigantesca de uma empresa de placas de vídeo.
+[16:17] Então, fechando esse arco,
+[16:19] até 2006 a gente nota o quanto dessa evolução monumental
+[16:24] foi guiada por humanos brilhantes,
+[16:27] lutando contra erros na base da cópia
+[16:30] e batendo de frente com a física.
+[16:32] É quase épico.
+[16:33] E a maior lição que a gente tira
+[16:35] é que a Lei de Mour continuou garantindo transistores menores
+[16:38] e mais baratos.
+[16:40] Mas a partir de 2004,
+[16:42] ela parou de dar a tal velocidade de graça.
+[16:44] Acelerar a máquina virou o desafio
+[16:46] de processar um monte de coisas simultaneamente.
+[16:49] O que transformou a evolução do computador
+[16:52] em um gigantesco problema de engenharia de software também.
+[16:55] Aham, os dois lados correndo de mãos dadas, finalmente.
+[16:58] E é com isso que eu deixo um mistério fascinante
+[17:01] para vocês que estão ouvindo a gente.
+[17:03] Ah, se nós acabamos de descobrir
+[17:06] que a única via para a máquina continuar ficando rápida
+[17:09] é realizar milhões de tarefas
+[17:11] de forma absurdamente paralela e simultânea...
+[17:14] Certo.
+[17:15] Pensa em isso.
+[17:16] Qual peça dentro do PC,
+[17:18] quase 10 anos antes de toda essa crise estourar,
+[17:22] já era hiperespecialista
+[17:24] em fazer milhões de cálculos matemáticos
+[17:27] idênticos e paralelos de uma vez só.
+[17:29] Nossa.
+[17:30] E exatamente para criar qual tipo de universo ela tinha sido feita.
+[17:33] Bom, fica aí a provocação para o nosso próximo encontro.
+[17:37] Até mais.

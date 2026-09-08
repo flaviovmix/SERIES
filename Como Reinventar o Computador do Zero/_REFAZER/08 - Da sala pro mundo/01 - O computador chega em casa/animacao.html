@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O computador chega em casa — Etapa 08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 08-01, versao com pessoas (roteiro de 06/09, 12 telas, cronologico).
+     A pasta esta em _REFAZER, um nivel mais fundo que o normal: por isso os
+     caminhos tem quatro ../ em vez de tres. Sem modelo 3D. A tela 5 usa a cena de
+     tres fotos do episodio.css local; a tela 11 usa o troca-imagem (Windows 1.0
+     contra 3.0). Os quatro __PLACEHOLDERS__ do tocador sao preenchidos pelo
+     preenche-8-01.py depois que a esteira baixa o audio aprovado. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/troca-imagem.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-08.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20o%20computador%20pessoal%20chegou%20em%20casa.m4a" data-duracao="1468"></audio>
+    <img class="tocador__capa" src="img/8080-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como o computador pessoal chegou em casa</div>
+      <div class="tocador__fonte">Da sala pro mundo · 01 · O computador chega em casa</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1468" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">24:28</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">da sala pro mundo · episódio 01</div>
+      <h1 class="reveal">O compu&shy;tador chega em casa</h1>
+      <p class="lede reveal">De <b>1973 a 1990</b>, em ordem. A peça que pensa está pronta e custa pouco. Este episódio segue <b>as pessoas</b> que a pegaram e o que cada uma construiu com ela. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O fio.</b> Um processador sozinho não é um computador: não tem memória, tela, teclado nem programa. Em cada passo daqui pra frente, ou o hardware libera um software novo, ou um software novo exige um hardware melhor. Um empurra o outro.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/8080-real.jpg" alt="Dois chips Intel 8080 em cerâmica branca com pernas douradas; o de baixo está aberto e mostra a pastilha de silício no centro">
+      <figcaption>O 8080 de 1974, fechado e aberto: a peça pronta, esperando alguém saber o que fazer com ela · foto: The Science Museum UK, CC BY 4.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1973 · Xerox PARC</div>
+    <h2 class="reveal">A tela é uma foto guardada na memória</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O Alto: tela em pé, teclado, o teclado de acordes e o mouse de três botões · foto: The wub, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/alto-real.jpg" alt="Um computador bege com o monitor em pé, no formato de uma folha de papel, teclado, um teclado pequeno de cinco teclas à esquerda e um mouse de três botões à direita">
+        <figcaption>Kay, Thacker e Lampson. Sem microprocessador que desse conta: centenas de chips, 128 KB e o mouse do Engelbart · foto: The wub, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Cada <b>bit da memória é um ponto da tela</b>: 606 por 808 pontos, 61 KB só pra segurar a imagem. E como não existia placa de vídeo, o próprio processador pintava o tubo 60 vezes por segundo, roubando ciclos do programa por microcódigo.</p>
+    <div class="nota-cena reveal">32 mil dólares. A Xerox fez uns dois mil pra uso interno e guardou a ideia na gaveta por dez anos</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">janeiro de 1975 · Albuquerque</div>
+    <h2 class="reveal">Ed Roberts e a caixa de interruptores</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O Altair 8800 na capa da Popular Electronics de janeiro de 1975 · foto: Maksym Kozlenko, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/altair-real.jpg" alt="O painel frontal do Altair 8800 visto de perto: duas fileiras de interruptores e uma fileira de luzes vermelhas numa caixa azul e cinza">
+        <figcaption>Um 8080, 256 bytes, nenhum teclado, nenhuma tela. Uns 400 dólares em kit · foto: Maksym Kozlenko, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A MITS vendia kit de calculadora e estava quebrando. Roberts apostou tudo num computador em volta do 8080 e pôs na capa da revista. Precisava vender <b>200</b> pra empatar. Em três meses tinha <b>4 mil pedidos</b>.</p>
+    <div class="nota-cena reveal">o hardware mínimo existe e é barato. Mas não tem nenhum software: a caixa não faz nada até alguém escrever um programa</div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1975 · Harvard → Albuquerque</div>
+      <h2 class="reveal">Gates e Allen, sem a máquina</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a banca</div><div class="texto">Paul Allen vê a capa numa banca e corre mostrar pro Bill Gates: aquela caixa precisa de um BASIC</div></div>
+        <div class="item reveal"><div class="rotulo">o truque</div><div class="texto">não tinham Altair nem 8080. Escreveram um <b>emulador</b> do chip no PDP-10 de Harvard e programaram em cima dele</div></div>
+        <div class="item reveal"><div class="rotulo">a fita</div><div class="texto">oito semanas, 4 KB. Allen escreve o carregador no avião, e o BASIC roda de primeira num chip que nunca tinha visto</div></div>
+        <div class="item reveal"><div class="rotulo">o que nasce</div><div class="texto">Gates larga Harvard. Os dois fundam a Microsoft em Albuquerque pra vender esse BASIC</div></div>
+      </div>
+      <p class="lede reveal">Dá pra escrever software pra um hardware que você não tem, imitando o hardware por software. E o BASIC fez todo mundo comprar memória: <b>o software puxou o hardware</b>.</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1975 a 1977 · Menlo Park</div>
+    <h2 class="reveal">Wozniak, o clube e o Apple II</h2>
+    <div class="cena cena--tres reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O convite do primeiro encontro do Homebrew, 5 de março de 1975, com “Steve” escrito à mão: “vai ter outros construtores de Altair lá” · foto: Gotanero, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/homebrew-convite-real.jpg" alt="Convite datilografado de 1975 para o primeiro encontro do Homebrew Computer Club, com o nome Steve escrito à mão no alto">
+        <figcaption>O convite do primeiro Homebrew, com “Steve” a caneta · Gotanero, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="clicavel" data-abre="foto" data-legenda="O Apple I, uma placa só, que Wozniak levou pra mostrar no clube em 1976 · foto: The wub, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/apple1-real.jpg" alt="Uma placa de circuito verde cheia de chips pretos, montada numa caixa de madeira, com dois capacitores azuis grandes">
+        <figcaption>Apple I, 1976: uma placa pra mostrar no clube · The wub, CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="clicavel" data-abre="foto" data-legenda="O Apple II de 1977: cor na televisão sem hardware de cor, e um chip fazendo o trabalho de três · foto: The wub, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/appleii-real.jpg" alt="Um computador bege com o teclado embutido na frente e o logotipo Apple II colorido na tampa">
+        <figcaption>Apple II, 1977: engenharia de menos peça · The wub, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Wozniak fez <b>cor na televisão sem hardware de cor</b>, enganando o sinal de vídeo, e fez com um chip o que os outros faziam com três. Jobs vendeu. No mesmo ano saem o PET e o TRS-80: é o fim do kit.</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1979</div>
+      <h2 class="reveal">Bricklin, Frankston e o VisiCalc</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a pergunta</div><div class="texto">Dan Bricklin, aluno de administração, cansado de refazer o orçamento inteiro no papel quando um número muda</div></div>
+        <div class="item reveal"><div class="rotulo">o programa</div><div class="texto">uma tabela onde cada quadradinho guarda um número ou uma <b>conta</b> com os outros. Muda um, tudo se refaz</div></div>
+        <div class="item reveal"><div class="rotulo">cem dólares</div><div class="texto">gente comprava o Apple II de 1.300 pra rodar o programa de 100. Um quarto das vendas daquele ano</div></div>
+        <div class="item reveal"><div class="rotulo">a inversão</div><div class="texto">pela primeira vez a pessoa entra na loja pedindo <b>a máquina que roda um programa</b></div></div>
+      </div>
+      <p class="lede reveal">Até aqui o hardware puxava. A partir daqui <b>o software justifica o hardware</b>.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O VisiCalc na tela do Apple II: a coluna de custo, o subtotal, o imposto e o total, cada um uma conta · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/visicalc-real.png" alt="Tela verde e preta de uma planilha com colunas A a D, itens, quantidades, preço unitário e custo, com subtotal, imposto e total">
+        <figcaption>A primeira planilha, em fósforo verde · domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">dezembro de 1979</div>
+      <h2 class="reveal">Jobs entra na gaveta da Xerox</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o acordo</div><div class="texto">a Xerox compra 100 mil ações da Apple antes da abertura de capital, a 10 dólares; em troca, os engenheiros da Apple entram no PARC</div></div>
+        <div class="item reveal"><div class="rotulo">a visita</div><div class="texto">o Alto funcionando: janelas, ícones, menus, mouse. Adele Goldberg não queria mostrar; a diretoria mandou</div></div>
+        <div class="item reveal"><div class="rotulo">três coisas</div><div class="texto">a interface, o Smalltalk e a Ethernet. Jobs ficou tão tomado pela primeira que quase não viu as outras duas</div></div>
+        <div class="item reveal"><div class="rotulo">a lição</div><div class="texto">a ideia estava pronta havia seis anos. Faltava fazer caber num hardware que uma pessoa pudesse pagar</div></div>
+      </div>
+      <p class="lede reveal">Ele sai decidido a pôr aquela tela numa máquina de loja. Vai levar <b>mais quatro anos</b>.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O que Jobs viu: o Alto, com a tela em pé e o mouse · foto: The wub, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/alto-real.jpg" alt="O computador Alto da Xerox, com monitor em pé, teclado e mouse de três botões">
+        <figcaption>Seis anos na gaveta · The wub, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1980 · Boca Raton</div>
+    <h2 class="reveal">O que a IBM estava fazendo</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O IBM PC de 1981: peças de prateleira, Intel 8088 e o esquema publicado · foto: Ruben de Rijcke, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/ibmpc-real.jpg" alt="Um computador bege da IBM com dois drives de disquete na frente, monitor monocromático em cima e teclado à frente">
+        <figcaption>Doze pessoas, um ano, longe da sede · foto: Ruben de Rijcke, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A IBM era o mainframe de milhões, vendido de terno: “ninguém é demitido por comprar IBM”. Micro era brinquedo. Bill Lowe convence a diretoria e ganha <b>um ano</b>; Don Estridge monta a máquina com <b>peças de prateleira</b>, o Intel 8088, e publica o esquema.</p>
+    <div class="nota-cena reveal">quando o hardware vira peça de prateleira, igual pra todo mundo, o que diferencia uma máquina da outra deixa de ser o metal. E a IBM não tinha sistema operacional pra aquele chip</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1980 a 1981</div>
+      <h2 class="reveal">A mãe do Gates e o DOS</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">não fechou</div><div class="texto">a IBM procura a Microsoft pelo BASIC e pergunta de sistema. Gates indica Gary Kildall, do CP/M. Não fecha</div></div>
+        <div class="item reveal"><div class="rotulo">a mãe</div><div class="texto">Mary Gates está no conselho da United Way com John Opel, presidente da IBM. A IBM volta</div></div>
+        <div class="item reveal"><div class="rotulo">o QDOS</div><div class="texto">a Microsoft não tinha sistema. Compra o de Tim Paterson por <b>50 mil dólares</b> e entrega como PC-DOS</div></div>
+        <div class="item reveal"><div class="rotulo">a cláusula</div><div class="texto">licenciado <b>sem exclusividade</b>. Cada clone precisa do mesmo DOS: o padrão vira da Microsoft</div></div>
+      </div>
+      <p class="lede reveal">12 de agosto de 1981. Quando o hardware é igual pra todo mundo, <b>manda quem tem o software que roda em todos</b>.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O que a pessoa via ao ligar: tela preta, um cursor, e o comando que ela precisava saber de cor · foto: Gvtyhbiju, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/dos-real.jpg" alt="Tela preta com texto branco: a listagem de arquivos de um sistema de linha de comando e o cursor piscando">
+        <figcaption>O sistema que a Microsoft comprou · Gvtyhbiju, CC0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">24 de janeiro de 1984</div>
+    <h2 class="reveal">Fazer a tela do Alto caber em 128 KB</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Jobs com o Macintosh em janeiro de 1984, o MacPaint na tela · foto: Bernard Gotfryd, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/jobs-mac-real.jpg" alt="Steve Jobs de terno, debruçado sobre um Macintosh que mostra um desenho em preto e branco na tela, com teclado e mouse à frente">
+        <figcaption>A mesma memória do Alto, um décimo do preço · foto: Bernard Gotfryd, domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">O Lisa de 1983 custou quase 10 mil e fracassou. O Mac custou 2.495, com dois truques: Bill Atkinson pôs o <b>QuickDraw</b> em 64 KB de ROM, sem gastar RAM; e Burrell Smith fez <b>o processador dividir a memória com o vídeo</b>, a ideia do Alto num chip de prateleira.</p>
+    <div class="nota-cena reveal">fazer caber é engenharia de software tanto quanto de hardware</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1983 a 1990</div>
+    <h2 class="reveal">Gates pega a interface</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="troca clicavel" data-ver="real" data-abre="foto" data-legenda="Windows 1.0, 1985: janelas que não se sobrepõem, num PC que não dava conta · captura: Rezonansowy / Microsoft, domínio público">
+        <div class="troca__palco">
+          <span class="selo">imagem real</span>
+          <img class="troca__img" src="img/win10-real.jpg" alt="Tela azul e amarela do Windows 1.0 com várias janelas lado a lado: um relógio, uma lista de arquivos, uma planilha e um gráfico de barras">
+          <img class="troca__img" src="img/win30-real.png" alt="Uma janela cinza do Windows 3.0 com barra de título azul e o menu File, Options, Window, Help">
+        </div>
+        <div class="troca__barra" role="group" aria-label="versão do Windows">
+          <button class="troca__botao" data-ver="real" aria-pressed="true">1.0, 1985</button>
+          <button class="troca__botao" data-ver="ilustra" aria-pressed="false">3.0, 1990</button>
+        </div>
+        <figcaption>
+          <span class="troca__credito">Windows 1.0: fraco, lento, janelas lado a lado. Quase ninguém usou · captura: Rezonansowy / Microsoft, domínio público</span>
+          <span class="troca__aviso">Windows 3.0: o mesmo programa, cinco anos de memória barata depois · captura: Panther, domínio público</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A Microsoft escrevia Word e Excel pro Mac e viu a interface por dentro. Gates anuncia o Windows antes do Mac sair. Jobs acusa; Gates responde que os dois tinham <b>um vizinho rico chamado Xerox</b>.</p>
+    <div class="nota-cena reveal">8% das casas com computador em 1984, 22% em 1993, 36% em 1997. O 1.0 falhou porque o PC não dava conta; o 3.0 pegou porque o hardware alcançou o software</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1990</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Kay, Thacker e Lampson construíram a tela sem se importar com preço. Roberts fez o hardware mínimo. Gates e Allen escreveram software sem ter o hardware. Wozniak fez o hardware bem feito. Bricklin e Frankston deram o motivo. Jobs levou a tela da gaveta pra loja. Estridge montou a máquina de prateleira e Gates ficou com o padrão. Atkinson e Smith fizeram caber. Ninguém planejou o conjunto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição da série</div>
+        <div class="desc">ou o hardware liberou o software (o 8080 permitiu o BASIC; a memória barata permitiu a interface), ou o software puxou o hardware (o VisiCalc vendeu o Apple II; o Windows exigiu um PC mais forte). <b>Um empurra o outro.</b></div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que ainda falta</div>
+        <div class="desc">milhões dessas máquinas, quase todas iguais por dentro, e cada uma é uma ilha. Passar um arquivo é gravar num disquete e atravessar a sala</div>
+      </div>
+    </div>
+    <p class="lede reveal">Se já existem milhões de máquinas iguais espalhadas pelo mundo, <b>o que falta</b> pra elas conversarem entre si?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/troca-imagem.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

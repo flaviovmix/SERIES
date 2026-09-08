@@ -1,0 +1,66 @@
+O SISTEMA OPERACIONAL - CONTEXTO
+================================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco ate
+a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1961 a 1997,
+em ORDEM CRONOLOGICA, e e a terceira e ultima vez que a serie volta no tempo. Como os
+dois anteriores, conta a historia PELAS PESSOAS, com nome e ficha, e usa cada passo pra
+mostrar como o hardware e o software melhoram um empurrando o outro.
+
+Por que este episodio existe: os dois anteriores usaram a palavra "sistema operacional"
+varias vezes (o DOS que a Microsoft comprou, o Windows por cima do DOS) sem nunca dizer
+o que e um. Este episodio paga essa divida.
+
+O QUE E: o sistema operacional e o programa que roda os outros programas. Ele decide
+quem usa o processador agora, onde cada programa mora na memoria, transforma o disco em
+arquivos com nome, e faz teclado, tela e impressora virarem pecas trocaveis que os
+outros programas usam sem saber a marca. E a camada entre o hardware e todo o resto.
+
+O fio, em doze passos:
+
+1. A palavra sem explicacao. Retomada, a volta no tempo, o que e o sistema.
+2. 1961-1964. Antes dele: um programa por vez, com um operador humano trocando os
+   cartoes. Fernando Corbato, no MIT, faz o CTSS em 1961: o processador troca de
+   programa tao rapido que cada usuario acha que a maquina e so dele (tempo
+   compartilhado). Em 1964 comeca o Multics, com MIT, General Electric e Bell Labs:
+   tudo e arquivo, memoria protegida, o sistema grande demais.
+3. 1969. Ken Thompson e Dennis Ritchie, na Bell Labs, saem do Multics e Thompson
+   escreve num PDP-7 abandonado um sistema pequeno, o Unix, pra rodar um jogo. A
+   filosofia: programas pequenos, cada um faz uma coisa, ligados em fila.
+4. 1972-1973. Ritchie cria a linguagem C e o Unix e reescrito em C. Pela primeira vez
+   um sistema sai de uma maquina e roda em outra: software solto do hardware.
+5. 1974-1981. Gary Kildall escreve o CP/M pro 8080, com o pedaco que fala com o
+   hardware separado do resto. O DOS de 1981, que o episodio 01 contou, copia a cara do
+   CP/M. O que o DOS fazia por dentro: um programa por vez, arquivos, e so.
+6. 1984-1990. O sistema ganha cara: o Mac de 1984 e o Windows por cima do DOS. Por
+   dentro, varias janelas sao varios programas ao mesmo tempo, e o micro precisa de
+   volta do tempo compartilhado e da memoria protegida que o Multics tinha em 1964.
+7. 1988-1995. A briga: a Apple processa a Microsoft em 1988 pela cara do Windows e
+   perde em 1994. O Windows 95 sai em agosto de 1995 e esmaga. A Apple quase quebra.
+8. 1983. Richard Stallman, no MIT, nao consegue consertar o programa de uma
+   impressora porque o codigo e fechado, e funda o projeto GNU: um sistema livre, de
+   codigo aberto. Em 1989 escreve a licenca GPL, que obriga quem copia a repassar a
+   liberdade. Falta o nucleo.
+9. 1987-1991. Andrew Tanenbaum escreve o Minix, um Unix de brinquedo pra ensinar, com
+   o codigo no livro. Linus Torvalds, estudante de 21 anos em Helsinque, aprende com
+   o Minix e escreve um nucleo pro seu 386; em agosto de 1991 posta na internet
+   dizendo que e so um hobby, nada grande e profissional. GNU mais Linux.
+10. 1993-1997. Os dois lados refazem a base: Dave Cutler faz o Windows NT (1993), o
+   Windows por dentro de verdade, com memoria protegida; a Apple compra o NeXT em
+   dezembro de 1996, Jobs volta, e o Mac vai virar Unix por baixo. Todo sistema
+   moderno tem as ideias do Multics de 1964.
+11. Onde foi parar. O Linux roda quase todo servidor da web que o episodio 02 contou,
+   vira o Android em 2008, e esta em cada maquina que treina inteligencia artificial.
+   O sistema que ninguem vende sustenta a rede.
+12. Onde para: 1997. Balanco das pessoas e da etapa. Gancho pra etapa final.
+
+O fio hardware e software: o sistema operacional nasce porque o hardware era caro
+demais pra ficar parado (tempo compartilhado); o C e o Unix soltam o software do
+hardware; o CP/M separa o pedaco que fala com a maquina; a interface grafica exige do
+micro o que o Multics ja fazia; e a licenca livre e o que deixa o mesmo sistema ser
+copiado em milhoes de maquinas sem pedir licenca, o "exigir o minimo" das duas viradas
+anteriores da etapa.
+
+Use este contexto apenas como apoio.

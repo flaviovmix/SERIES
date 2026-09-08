@@ -1,0 +1,7 @@
+Titulo: Como as GPUs despertaram as redes neurais
+Notebook: 09-03-A máquina que aprende
+
+Descricao:
+A Máquina que Aprende narra a evolução histórica da inteligência artificial, destacando como o desenvolvimento do hardware e do software se impulsionaram mutuamente entre 1943 e 2012. O texto detalha a trajetória do neurônio artificial e do perceptron, revelando como ideias fundamentais ficaram guardadas por décadas aguardando tecnologias capazes de processá-las. A narrativa percorre os períodos de estagnação conhecidos como invernos da IA e o surgimento de algoritmos cruciais, como a retropropagação do erro e as redes convolucionais. O ponto de virada ocorre quando a computação paralela das placas de vídeo e grandes bases de dados, como o ImageNet, permitiram o sucesso da AlexNet. Essa convergência transformou a natureza da programação, que deixou de ser uma escrita manual de regras para se tornar um processo de descoberta automatizada. Por fim, as fontes demonstram que o barateamento do hardware foi o fator determinante para que conceitos antigos finalmente revolucionassem o campo tecnológico.
+
+Link: https://notebook.google.com/notebook/9398218a-b0a8-45cd-bda4-f4cbc44e4b7e

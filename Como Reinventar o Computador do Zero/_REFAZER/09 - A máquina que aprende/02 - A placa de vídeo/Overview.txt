@@ -1,0 +1,66 @@
+A PLACA DE VIDEO - CONTEXTO
+===========================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco ate
+a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1985 a 2007, em
+ORDEM CRONOLOGICA, e conta a historia PELAS PESSOAS, com nome e ficha, usando cada passo
+pra mostrar como o hardware e o software melhoram um empurrando o outro.
+
+Por que este episodio existe: o anterior terminou em 2006 com o processador parado perto
+de 3 GHz e a saida por nucleos, e perguntou que peca ja fazia muitas contas ao mesmo
+tempo ha dez anos. A resposta e a placa de video, feita pra jogo. Os anos se sobrepoem
+com o episodio anterior porque as duas corridas correram lado a lado.
+
+O QUE E: pintar a tela e fazer a MESMA conta em cada um de centenas de milhares de
+pontos, trinta vezes por segundo. O processador faz uma conta de cada vez (um pintor
+esperto, um azulejo por vez); a placa de video e uma equipe de centenas de pintores
+simples, todos executando a mesma instrucao em numeros diferentes ao mesmo tempo.
+
+O fio, em doze passos:
+
+1. A peca feita pra jogo. Retomada de 2006, o que e pintar uma tela (640x480 = 307 mil
+   pontos, 30 vezes por segundo), a analogia dos pintores, o intervalo 1985-2007.
+2. 1985-1993. A placa burra: memoria de tela mais conversor (VGA, IBM, 1987). K.Y. Ho
+   funda a ATI em Markham (20/08/1985). O 3D era todo no processador: Doom (dez/1993),
+   engine de John Carmack, truques pra um 386 pintar corredores.
+3. 1993-1995. NVIDIA fundada em 05/04/1993 num Denny's por Jensen Huang, Chris
+   Malachowsky e um terceiro engenheiro. O NV1 (1995) aposta em curvas e no Sega Saturn;
+   o Direct3D da Microsoft (junho de 1996) escolhe triangulos; o NV1 fracassa e a
+   empresa quase fecha.
+4. 1996-1997. Tres engenheiros vindos da Silicon Graphics fundam a 3dfx; o Voodoo
+   Graphics (out/nov 1996) so faz 3D, em cascata com a placa normal. Quake (jun/1996) no
+   processador; GLQuake (22/01/1997) na placa: a placa vira obrigatoria.
+5. 1997-1998. A briga das linguas: Glide (so 3dfx) contra Direct3D e OpenGL. A NVIDIA
+   renasce com o RIVA 128 (ago/1997), 2D e 3D juntos, falando Direct3D; RIVA TNT (1998);
+   Voodoo2 (fev/1998). Ganha quem exige menos do software.
+6. 1999. GeForce 256 (anuncio 31/08, venda 11/10/1999): a geometria e a luz saem do
+   processador; uns 20 milhoes de transistores (Pentium III: 9,5); a NVIDIA batiza de
+   GPU. David Kirk, cientista-chefe desde 1997.
+7. 2000-2002. Radeon (abr/2000) da ATI vira o rival; a 3dfx vende pra NVIDIA
+   (15/12/2000) e fecha (2002); GeForce 3 (27/02/2001) traz programinhas por vertice e
+   por ponto: a placa aceita programa; Xbox (nov/2001) com chip NVIDIA; Radeon 9700
+   (2002).
+8. 2003-2005. A placa por dentro: centenas de processadores simples com a mesma
+   instrucao em numeros diferentes. Pesquisadores fingem que a conta e um jogo; o Brook
+   (Stanford, 2004, um doutorando) escreve a conta em C pra placa; a NVIDIA o contrata.
+9. Julho de 2006. A AMD compra a ATI (24/07, US$ 5,4 bilhoes; fecha 25/10). Hector Ruiz
+   (AMD) e Dave Orton (ATI). Processador e placa na mesma empresa (Fusion); a AMD passa a
+   brigar em duas frentes.
+10. Novembro de 2006. GeForce 8800 (08/11): 681 milhoes de transistores, 128
+   processadores iguais e programaveis (unificados). Um computador de pintores iguais.
+11. Fevereiro de 2007. CUDA (15/02): programa em C rodando direto na placa, sem fingir
+   que e jogo. Primeiros usos: fisica, quimica, petroleo, financas.
+12. Onde para: 2007. Balanco das pessoas. Licao: a peca feita pra jogo virou a peca da
+   era seguinte porque o software (o jogo, depois uma linguagem) mudou o que se pedia
+   dela. Pergunta que abre o proximo episodio: existe problema que nao se sabe escrever
+   como programa, mas que se resolve com muita conta repetida? E se a resposta estivesse
+   numa gaveta desde 1958?
+
+O fio hardware e software: o jogo (software) puxou a peca; a peca nasceu especializada e
+por isso rapida; a lingua comum (Direct3D) decidiu quem sobreviveu; a GeForce 3 devolveu
+programa a peca; o Brook e o CUDA (software) abriram a peca pra conta geral. De novo,
+ganhou quem exigiu menos do software.
+
+Use este contexto apenas como apoio.

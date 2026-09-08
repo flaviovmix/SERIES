@@ -1,0 +1,7 @@
+Titulo: O dia que os processadores quase derreteram
+Notebook: 09-01-A corrida do processador
+
+Descricao:
+Os textos descrevem "A Corrida do Processador", um episódio da série documental que narra a evolução do hardware entre 1993 e 2006. O relato detalha a competição tecnológica entre Intel e AMD, destacando o desenvolvimento de chips icônicos como o Pentium e o Athlon. A narrativa foca em como o aumento da velocidade dos componentes atingiu uma barreira física de calor em 2004, encerrando a era de ganhos automáticos de performance. Como solução, a indústria migrou para a arquitetura de múltiplos núcleos, transferindo para o software a responsabilidade de processar dados em paralelo. Através da história de engenheiros e executivos, as fontes mostram que a física e a compatibilidade de programas ditaram o rumo da computação moderna.
+
+Link: https://notebook.google.com/notebook/b4cbcf73-5461-4028-80fb-8ed86652a06a

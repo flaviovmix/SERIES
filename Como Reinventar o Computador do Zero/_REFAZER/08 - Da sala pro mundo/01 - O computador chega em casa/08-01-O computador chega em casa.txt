@@ -1,0 +1,136 @@
+Inicie dizendo: O Computador Chega em Casa
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Computador Chega em Casa.txt
+enviado como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por
+tela.
+
+Este e o primeiro episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie Como
+Reinventar o Computador do Zero. A etapa anterior encolheu a maquina ate ela caber numa
+pastilha e terminou com a Intel vendendo o 8080 pra quem quisesse. A peca esta pronta,
+ninguem sabe o que fazer com ela, e ninguem tem um computador em casa.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. A serie e sobre como o computador foi construido.
+Este episodio segue as pessoas que pegaram a peca pronta e o que cada uma construiu, EM
+ORDEM CRONOLOGICA, e usa cada passo pra mostrar uma coisa so: como o hardware e o
+software melhoram um empurrando o outro. NAO transformar em historia de negocios ou de
+marketing. Preco e venda so entram pra dizer o que aquilo permitiu construir depois.
+
+ESTE EPISODIO COBRE DE 1973 A 1990, EM ORDEM. Dizer esse intervalo logo na abertura e,
+no encerramento, dizer em que ano o episodio para. NAO pular pra frente e voltar.
+
+COM PESSOAS E COM NOME. Diferente dos episodios anteriores, aqui as pessoas entram pelo
+nome: Kay, Thacker e Lampson na Xerox; Roberts e o Altair; Gates e Allen; Wozniak e
+Jobs; Bricklin e Frankston; Estridge na IBM; Mary Gates e Opel; Kildall; Paterson;
+Atkinson e Smith. Contar o que cada um fez e por que, sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na primeira vez que cada pessoa aparece, ler a ficha
+dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. As fichas estao no roteiro,
+marcadas com FICHA. Ler todas, sem pular e sem inventar dado.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso: a frase so aparece nos onze pedidos
+de verdade, porque a pagina corta o audio em cada ocorrencia dela.
+
+AS TELAS 11 E 12 JA FORAM JUNTADAS NUMA GRAVACAO ANTERIOR DESTE EPISODIO. A tela 11
+para no numero de casas com computador; o balanco, a licao e a pergunta que abre o
+proximo episodio sao a tela 12, e tem um pedido de Proximo entre as duas.
+
+AS TELAS 2 E 3, E AS TELAS 4 E 5, TAMBEM JA FORAM EMENDADAS. A tela 2 (Xerox) termina
+antes do Altair; a tela 4 (Gates e Allen) termina antes do Wozniak. Um pedido de
+Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+A ABERTURA E DIRETA, sem cena inventada e sem comparar o processador com motor ou
+carro. AS FICHAS SAO UMA FRASE CADA, sem comentario.
+
+O ANO DO VISICALC JA SAIU ERRADO NUMA GRAVACAO ANTERIOR: ele e de MIL NOVECENTOS E
+SETENTA E NOVE, e o apresentador disse "sessenta e nove". Na tela 6, dizer o ano
+devagar e separando "setenta e nove", dois anos depois do Apple II de setenta e sete.
+
+ANOS E PRECOS POR EXTENSO E DEVAGAR. Dizer "mil novecentos e setenta e tres", "mil
+novecentos e setenta e cinco", "mil novecentos e setenta e sete", "mil novecentos e
+setenta e nove", "mil novecentos e oitenta e um", "mil novecentos e oitenta e quatro",
+"mil novecentos e noventa". Ano dito rapido sai embolado e vira outro numero.
+
+NOMES ESTRANGEIROS, NA PRIMEIRA VEZ, devagar: Kay ("quei"), Thacker ("ta-quer"),
+Lampson ("lamp-son"), Engelbart ("en-guel-bart"), Roberts ("ro-berts"), Altair
+("au-ta-ir"), Gates ("gueits"), Allen ("alen"), Wozniak ("voz-ni-ac"), Jobs ("djobs"),
+Homebrew ("roum-bru"), VisiCalc ("vi-si-cauc"), Bricklin ("bri-clin"), Frankston
+("franks-ton"), Estridge ("es-tridj"), Kildall ("kil-dol"), Opel ("o-pel"), Paterson
+("pa-ter-son"), QDOS ("quiu-dos"), Macintosh ("me-quin-toch"), Atkinson ("at-quin-son"),
+Burrell Smith ("ba-rel smif"), QuickDraw ("quic-dro"). Siglas soletradas: PARC, MITS,
+CP/M, MS-DOS.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "a analogia autorizada" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa. NAO convidar
+ninguem a mexer, girar ou abrir nada.
+
+FOCO, EM ORDEM: mil novecentos e setenta e quatro, a Intel vende o 8080 e ninguem sabe o
+que fazer com ele. Mil novecentos e setenta e tres, a Xerox constroi o Alto no PARC:
+sem microprocessador, centenas de chips, 128 quilobytes, o mouse do Engelbart, e uma
+tela onde cada bit da memoria e um ponto, com o proprio processador pintando a tela por
+microcodigo porque nao existia placa de video; 32 mil dolares, guardado na gaveta.
+Janeiro de setenta e cinco, Ed Roberts quebrando poe o Altair na capa da Popular
+Electronics: 8080, 256 bytes, so interruptor; 200 pra empatar, 4 mil pedidos. Setenta e
+cinco, Gates e Allen escrevem o BASIC pro Altair sem ter a maquina, num emulador de
+8080 no PDP-10 de Harvard; a fita roda de primeira em Albuquerque; nasce a Microsoft.
+Setenta e cinco a setenta e sete, Wozniak no Homebrew, o Apple I, e o Apple II com a
+engenharia dele: cor enganando o sinal da televisao, um chip no lugar de tres. Setenta
+e nove, Bricklin e Frankston fazem o VisiCalc e ele vende o Apple II. Dezembro de
+setenta e nove, Jobs entra no PARC em troca de cem mil acoes e ve o Alto. Oitenta, a
+IBM dos mainframes manda doze pessoas pra Boca Raton, sob Estridge, montar um PC em um
+ano com pecas de prateleira, Intel 8088 e esquema publicado. Oitenta e um, a IBM
+procura a Microsoft, Kildall nao fecha, Mary Gates fala com John Opel na United Way,
+a Microsoft compra o QDOS de Tim Paterson por cinquenta mil dolares e licencia SEM
+EXCLUSIVIDADE; 12 de agosto sai o IBM PC; os clones fazem o padrao ser da Microsoft.
+Oitenta e tres, o Lisa fracassa; oitenta e quatro, o Macintosh faz a tela do Alto caber
+em 128 quilobytes com o QuickDraw do Atkinson na ROM e a placa do Burrell Smith
+dividindo memoria com o video. Oitenta e tres a noventa, a Microsoft escreve Word e
+Excel pro Mac, ve a interface por dentro, anuncia o Windows, Jobs acusa, Gates responde
+"vizinho rico chamado Xerox"; Windows 1.0 fraco em oitenta e cinco, Windows 3.0 pega em
+noventa; 8, 22 e 36 por cento das casas.
+
+O PONTO QUE NAO PODE FALTAR: em cada passo, ou o hardware liberou o software (o 8080
+permitiu o BASIC; a memoria barata permitiu a interface) ou o software puxou o hardware
+(o VisiCalc vendeu o Apple II; o Windows exigiu PC mais forte). Hardware e software
+melhoram um empurrando o outro, e ninguem planejou o conjunto.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+NAO explicar rede, internet nem web: sao o episodio seguinte. A ultima tela so deixa a
+pergunta no ar.
+
+DURACAO: cerca de 18 minutos. A gravacao anterior passou de 30: nao esticar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+Use SOMENTE as duas imagens descritas no roteiro, que sao literais: a foto guardada na
+memoria (cada bit da memoria e um ponto da tela do Alto) e a gaveta (a Xerox guardou a
+interface por dez anos ate alguem de fora levar). NAO invente analogias.
+
+Use tambem o Overview.txt como contexto curto.

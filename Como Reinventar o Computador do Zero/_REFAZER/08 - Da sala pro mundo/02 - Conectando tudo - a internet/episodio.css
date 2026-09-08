@@ -1,0 +1,39 @@
+/* episodio 08-02 — a arroba da tela 5
+
+   A tela do correio eletronico nao tem foto de epoca que valha a pena (um
+   programa de recado de 1971 e texto numa tela), e o que ela precisa mostrar e
+   uma ideia: o endereco tem duas metades e um simbolo no meio. Entao a coluna
+   da direita, onde as outras telas poem o retrato, mostra a propria arroba,
+   grande, com o nome de cada metade do lado. So deste episodio. */
+
+.arroba {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 2vw, 24px);
+  font-family: var(--fonte-mono);
+}
+.arroba__glifo {
+  font-family: var(--fonte-animacao);
+  font-weight: 900;
+  font-size: clamp(120px, 22vw, 300px);
+  line-height: 1;
+  color: var(--accent);
+}
+.arroba__lado {
+  font-size: clamp(11px, 1.3vw, 15px);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  max-width: 120px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* estreito: a arroba encolhe e fica embaixo dos cards, como o retrato faria */
+@media (max-width: 820px) {
+  .arroba { width: 100%; margin-top: 16px; }
+  .arroba__glifo { font-size: clamp(90px, 26vw, 160px); }
+}

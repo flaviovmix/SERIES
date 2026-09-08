@@ -1,0 +1,7 @@
+Titulo: Como o Transformer matou a fila
+Notebook: 09-04-2017 - Attention is All You Need
+
+Descricao:
+Estes textos apresentam o roteiro final de uma série que reconstrói a história da computação, focando na transição do processamento de texto em fila para a arquitetura Transformer em 2017. As fontes detalham como a evolução do software foi moldada para se adaptar à capacidade de processamento paralelo do hardware, especificamente de placas de vídeo e TPUs. O conteúdo percorre marcos cronológicos desde a criação da LSTM em 1997 até o surgimento do GPT e BERT em 2018, destacando o papel fundamental do mecanismo de atenção. A narrativa enfatiza as trajetórias de pesquisadores essenciais que transformaram a maneira como as máquinas interpretam a linguagem. O encerramento da série conclui que, embora os componentes fundamentais do computador permaneçam os mesmos, a grande mudança reside no fato de que os programas agora são achados por meio do aprendizado de máquina, e não mais apenas escritos por humanos.
+
+Link: https://notebook.google.com/notebook/fff803c5-abc9-41be-8b99-4ffc92614114

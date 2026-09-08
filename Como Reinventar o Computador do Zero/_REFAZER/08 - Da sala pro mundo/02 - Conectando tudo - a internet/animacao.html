@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conectando tudo: a internet — Etapa 08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 08-02. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
+     por isso os caminhos tem quatro ../ em vez de tres. Nao tem modelo 3D: a capa
+     e uma foto. As telas seguem o _telas.md tirado do audio, nao o roteiro. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-08.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Da%20ARPANET%20ao%20surgimento%20da%20web.m4a" data-duracao="1087"></audio>
+    <img class="tocador__capa" src="img/imp-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Da ARPANET ao surgimento da web</div>
+      <div class="tocador__fonte">Da sala pro mundo · 02 · Conectando tudo: a internet</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1087" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">18:07</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">da sala pro mundo · episódio 02</div>
+      <h1 class="reveal">Conectando tudo: a internet</h1>
+      <p class="lede reveal">De <b>1962 a 1995</b>, em ordem e com as pessoas. O episódio anterior parou em 1990; este volta a 1962 de propósito, porque a rede foi construída em silêncio, dentro da universidade, enquanto o computador de mesa nascia lá fora. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O que trava agora.</b> Milhões de máquinas iguais, e cada uma é uma ilha. Levar um arquivo pra outra é gravar num disquete e atravessar a sala com ele na mão.</p>
+        <p><b>O problema de verdade.</b> Ligar dois computadores por um fio já se fazia. O difícil é fazer redes diferentes, de donos diferentes, virarem uma rede só sem ninguém no comando. A internet não é uma rede: é um <b>acordo entre redes</b>.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal clicavel" data-abre="foto" data-legenda="Três gerações de disquete: 8, 5¼ e 3½ polegadas · foto: Kevin Savetz, CC BY 2.0">
+      <span class="selo">imagem real</span>
+      <img src="img/disquete-real.jpg" alt="Três disquetes de tamanhos diferentes empilhados sobre uma mesa de madeira: um de oito polegadas, um de cinco e um quarto e um de três e meia">
+      <figcaption>O jeito de um computador falar com o outro, antes da rede · foto: Kevin Savetz, CC BY 2.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1962 · Licklider, na ARPA</div>
+    <h2 class="reveal">Um caminho reservado só pra você</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma mesa telefônica em 1930: cada ligação era um caminho físico montado à mão · foto: Gary Langebartels / Fortepan Iowa, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/mesa-telefonica-real.jpg" alt="Um operador sentado diante de uma mesa telefônica de madeira cheia de tomadas e cabos, em foto sépia de 1930">
+        <figcaption>Cada ligação era um caminho inteiro, reservado até desligar · foto: Gary Langebartels / Fortepan Iowa, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Na ligação, a companhia monta um caminho físico entre as duas pontas e reserva ele pra vocês, <b>inclusive no silêncio</b>. Computador não fala assim: manda uma rajada curta e fica calado o resto do tempo. Alugar linha dedicada é pagar o dia inteiro por alguns segundos.</p>
+    <div class="nota-cena reveal">e caminho reservado tem um trajeto só: cortou no meio, caiu. Em 1962 J. C. R. Licklider, psicólogo dirigindo a computação da ARPA, pôs dinheiro numa rede que não fosse assim; o sucessor dele tinha três terminais na mesa, um por computador, e queria um só</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1961 a 1967 · Kleinrock, Baran, Davies e Larry Roberts</div>
+      <h2 class="reveal">Picar a mensagem em pedaços</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a ideia</div><div class="texto">em vez de reservar caminho, picar a mensagem em pedaços e escrever em cada um o endereço e o número na fila</div></div>
+        <div class="item reveal"><div class="rotulo">cada pedaço viaja sozinho</div><div class="texto">cada ponto lê a etiqueta e empurra pro vizinho mais perto do destino. Chegam fora de ordem; quem recebe remonta pelo número</div></div>
+        <div class="item reveal"><div class="rotulo">a mudança em caixas</div><div class="texto">a ligação fecha a estrada pro seu caminhão. A mudança despacha caixas numeradas por ruas diferentes, e quem recebe remonta</div></div>
+        <div class="item reveal"><div class="rotulo">três consequências</div><div class="texto">ninguém reserva nada e o fio leva mil conversas. Caiu um caminho, o pedaço desvia. E <b>não existe chefe</b>: cada ponto só empurra pra frente</div></div>
+      </div>
+      <p class="lede reveal">A terceira é a que mais importa pro resto do episódio.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O painel de um Interface Message Processor, a máquina que só lia etiqueta e empurrava pra frente · foto: Carlo Nardone, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/imp-real.jpg" alt="Painel frontal de um armário de computador dos anos 1960 com fileiras de lâmpadas e chaves e a placa Interface Message Processor">
+        <figcaption>O IMP, construído pela BBN: o único hardware novo desta história, uma máquina só pra ler o endereço do pedaço e passar adiante · foto: Carlo Nardone, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">29 de outubro de 1969 · Charley Kline, na UCLA</div>
+    <h2 class="reveal">L, O</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O caderno de registro da máquina da universidade, na noite da primeira mensagem: 22:30, 'falei com o SRI, host a host' · foto: Charles S. Kline / UCLA, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/log-lo-real.jpg" alt="Página de um caderno de registro pautado, com anotações à mão em inglês datadas de 29 de outubro de 1969, entre elas a linha 'Talked to SRI host to host'">
+        <figcaption>A linha manuscrita das 22:30 é a prova: duas máquinas se falaram · foto: Charles S. Kline / UCLA, domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Charley Kline, 21 anos, estudante de Kleinrock, ia entrar da UCLA na máquina do SRI, a centenas de quilômetros: bastava escrever LOGIN. A outra caiu na segunda letra. A primeira mensagem da ARPANET foi <b>L, O</b>. No fim do ano, quatro máquinas.</p>
+    <div class="nota-cena reveal">o motivo oficial era dividir computador caro à distância. O que a data prova é outra coisa: os pedaços chegam, se remontam, e ninguém precisou coordenar</div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1971 · Ray Tomlinson, na BBN</div>
+      <h2 class="reveal">O uso que ninguém encomendou</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o improviso</div><div class="texto">Ray Tomlinson junta um programa de deixar recado com um programa de copiar arquivo pela rede, e nasce o correio eletrônico</div></div>
+        <div class="item reveal"><div class="rotulo">o símbolo</div><div class="texto">faltava separar, num endereço só, a pessoa da máquina. A arroba serviu porque quase ninguém usava e porque em inglês já queria dizer <b>em</b></div></div>
+        <div class="item reveal"><div class="rotulo">o que pegou</div><div class="texto">em poucos anos mandar recado pra pessoa virou o uso principal da rede, na frente do motivo pelo qual ela foi construída</div></div>
+        <div class="item reveal"><div class="rotulo">a lição</div><div class="texto">quem constrói não decide pra que serve. A rede foi feita pra máquina falar com máquina; o que pegou foi gente falando com gente</div></div>
+      </div>
+    </div>
+    <div class="arroba reveal" aria-label="fulano arroba máquina">
+      <span class="arroba__lado">quem</span>
+      <span class="arroba__glifo">@</span>
+      <span class="arroba__lado">em qual máquina</span>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1974 · Vint Cerf e Bob Kahn</div>
+    <h2 class="reveal">Redes que não se entendem</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Contêineres empilhados no porto de Roterdã: navio, trem e caminhão continuam diferentes, o que virou padrão foi a caixa · foto: AgainErick, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/conteiner-real.jpg" alt="Pilhas de contêineres de cores diferentes num cais de porto, com uma torre ao fundo">
+        <figcaption>Ninguém trocou de veículo. A carga passa de um pro outro sem ser aberta · foto: AgainErick, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Rádio, satélite, universidade, empresa, outro país: dentro de cada rede tudo funciona, entre duas, nada. E não havia quem mandasse todo mundo trocar de rede. A saída foi <b>não mexer em rede nenhuma</b>: um envelope comum que qualquer uma aceita carregar.</p>
+    <div class="nota-cena reveal">TCP/IP, em duas metades: o IP cuida do endereço e empurra o pacote de rede em rede; o TCP confere nas pontas se chegou tudo e remonta na ordem</div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step">
+    <div class="kicker reveal">primeiro de janeiro de 1983 · Jon Postel</div>
+    <h2 class="reveal">O dia em que todo mundo trocou de língua</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">o dia</div><div class="texto">Jon Postel, que cuidava dos números e dos documentos da rede, escreve o plano: as máquinas da ARPANET passam todas pra língua nova no mesmo dia. Quem não se preparou ficou de fora</div></div>
+      <div class="item reveal"><div class="rotulo">por que junto</div><div class="texto">metade da rede numa língua e metade na outra não conversa. Ou muda todo mundo, ou não muda ninguém</div></div>
+      <div class="item reveal"><div class="rotulo">o nascimento</div><div class="texto">a internet nasce aqui, e não de um cabo novo: de um acordo. Qualquer rede que carregue o envelope está dentro, sem pedir licença</div></div>
+      <div class="item reveal"><div class="rotulo">por que venceu</div><div class="texto">não por ser a melhor rede. Por exigir o <b>mínimo</b>: ninguém jogou a própria rede fora, só aceitou carregar a caixa</div></div>
+    </div>
+    <p class="lede reveal">É a lição do padrão aberto do episódio anterior, agora do tamanho do mundo.</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="step">
+    <div class="kicker reveal">1983 · Paul Mockapetris</div>
+    <h2 class="reveal">O nome no lugar do número</h2>
+    <div class="ficha reveal">
+      <div class="item reveal"><div class="rotulo">o problema</div><div class="texto">no envelope, cada máquina é um número. Número funciona pra máquina e não funciona pra gente</div></div>
+      <div class="item reveal"><div class="rotulo">a lista única</div><div class="texto">no começo, um arquivo só, atualizado à mão, com todos os nomes e números. Com dezenas de milhares de máquinas, impossível, e é justamente a peça central que a rede evitou a vida inteira</div></div>
+      <div class="item reveal"><div class="rotulo">a saída</div><div class="texto">o DNS, de Paul Mockapetris com Postel: o nome é lido em pedaços, da direita pra esquerda, e cada pedaço tem alguém responsável por saber o próximo</div></div>
+      <div class="item reveal"><div class="rotulo">a lista que não mora em lugar nenhum</div><div class="texto">você pergunta pra quem está perto; se ele não sabe, sabe pra quem perguntar. Ninguém tem a lista toda e qualquer nome é encontrado</div></div>
+    </div>
+    <p class="lede reveal">Nome novo se cria sem avisar um órgão central, porque quem manda no seu pedaço é você.</p>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1989 a 1993 · Tim Berners-Lee, no CERN</div>
+    <h2 class="reveal">O motivo aparece</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A estação de trabalho que serviu a primeira página da teia, no CERN, com o aviso colado: 'esta máquina é um servidor, não desligue' · foto: Coolcaesar, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/primeiro-servidor-real.jpg" alt="Um computador preto em forma de cubo ao lado de um monitor e um teclado, com uma etiqueta escrita à mão pedindo pra não desligar, e uma proposta impressa em cima da mesa">
+        <figcaption>O primeiro servidor da teia, num laboratório de física na Europa · foto: Coolcaesar, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Tim Berners-Lee, físico inglês no <b>CERN</b>, cansado de não achar documento guardado cada um do seu jeito, propõe três peças: um <b>endereço</b> por documento, uma regra de pedir e entregar, e texto em que uma palavra leva a outro. Escreve o servidor e o navegador num NeXT.</p>
+    <div class="nota-cena reveal">agosto de 1991 vai pro ar pra quem quiser. 30 de abril de 1993 cai em domínio público, de graça. Se tivesse sido cobrado, a história seria outra</div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1993 · Marc Andreessen, no NCSA</div>
+    <h2 class="reveal">A cara</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O Mosaic: imagem na mesma página do texto, e tudo se usa apontando e clicando · captura: Charles Severance, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/mosaic-real.png" alt="Janela do navegador Mosaic mostrando uma página com título, dois logotipos e uma lista de links sublinhados em azul">
+        <figcaption>A mesma virada do Macintosh, agora na rede · captura: Charles Severance, CC0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Os primeiros programas de ler a teia mostravam só texto e rodavam em máquina de universidade. O <b>Mosaic</b>, de Marc Andreessen, estudante de 21 anos, mostra a imagem junto com o texto, roda na máquina de casa e se usa com o mouse. É aqui que os dois episódios se encontram.</p>
+    <div class="nota-cena reveal">1995: a espinha da rede deixa de ser bancada pelo governo americano e a rede abre pro comércio</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1995</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Licklider pagou. Kleinrock, Baran e Davies pensaram o pacote. Larry Roberts desenhou a rede. Kline mandou o L e o O. Tomlinson inventou o uso que ninguém pediu. Cerf e Kahn fizeram o envelope. Postel trocou a língua de todo mundo num dia. Mockapetris pôs o nome no lugar do número. Berners-Lee escreveu a teia e deu de graça. Andreessen pôs imagem e levou pro PC de casa</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição da etapa</div>
+        <div class="desc">as duas viradas foram ganhas por quem exigiu menos, não por quem fez melhor. O padrão aberto venceu o projeto fechado, e o acordo entre redes venceu a rede perfeita</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que muda agora</div>
+        <div class="desc">máquina em todo lugar, todas ligadas, todas despejando dado na rede. Escrever a regra passo a passo, como a série fez até aqui, não dá conta de reconhecer um rosto numa foto ou traduzir uma frase</div>
+      </div>
+    </div>
+    <p class="lede reveal">E se, em vez de a gente escrever a regra pra máquina seguir, a gente deixasse a máquina <b>achar a regra sozinha</b>, olhando os dados?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

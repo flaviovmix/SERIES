@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A máquina que aprende — Etapa 09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 09-03 (roteiro de 07/09, 12 telas, cronologico, com pessoas). Mesma
+     receita do 09-01: pasta em _REFAZER (quatro ../), sem modelo 3D, sem CSS local,
+     fichas curtas, fotos do Commons com credito. A foto da tela 11 vem da pasta do
+     09-02 (o chip G80). Os __PLACEHOLDERS__ do tocador sao preenchidos pelo
+     preenche-9.py. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-09.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20as%20GPUs%20destravaram%20as%20redes%20neurais.m4a" data-duracao="940"></audio>
+    <img class="tocador__capa" src="img/mark1-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como as GPUs destravaram as redes neurais</div>
+      <div class="tocador__fonte">A máquina que aprende · 03 · A máquina que aprende</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="940" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">15:40</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que aprende · episódio 03</div>
+      <h1 class="reveal">A máquina que aprende</h1>
+      <p class="lede reveal">De <b>1943 a 2012</b>, em ordem e com as pessoas. Em vez de escrever as regras, dá-se à máquina milhares de exemplos e um mecanismo que ajusta os próprios números até acertar: <b>o programa não é escrito, é achado.</b> A ideia é mais velha que o transistor e passou quase cinquenta anos esperando o hardware baratear. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>Os botões.</b> Um neurônio artificial soma entradas, cada uma passando por um botão giratório que aumenta ou diminui o quanto ela conta, e dispara se a soma passar de um limite. Aprender é girar cada botão um pouquinho, na direção que faz o erro diminuir, milhares de vezes. Em 1960 os botões eram de verdade; na AlexNet são 60 milhões de números.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/mark1-real.jpg" alt="Foto em preto e branco de um armário de computador dos anos 1960 com painéis e uma câmera em tripé apontada pra ele, com legendas técnicas indicando as unidades de associação e o painel de resposta">
+      <figcaption>O Mark I Perceptron (1960), com a câmera que lhe mostrava letras: os pesos eram botões de verdade · manual do operador, domínio público</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1943 a 1960 · McCulloch e Pitts; Rosenblatt</div>
+      <h2 class="reveal">O perceptron</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">1943</div><div class="texto">Warren McCulloch e Walter Pitts, em Chicago: um neurônio pode ser descrito como uma porta lógica. A lógica de Boole em cima de uma célula</div></div>
+        <div class="item reveal"><div class="rotulo">1957 e 1958</div><div class="texto">Frank Rosenblatt, na Cornell, cria o <b>perceptron</b>: pesos ajustáveis e uma regra pra ajustar. Simula num IBM 704. Em 8 de julho de 1958 o New York Times fala do "embrião de um computador que vai andar, falar, ver e escrever"</div></div>
+        <div class="item reveal"><div class="rotulo">1959 e 1960</div><div class="texto">o <b>Mark I</b>: 400 fotocélulas numa grade de 20×20, e os pesos são potenciômetros girados por motor. Aprende a distinguir letras</div></div>
+      </div>
+      <p class="lede reveal">O algoritmo era tão novo que precisou de hardware sob medida, com botão físico. <b>E a promessa do jornal era mil vezes maior que a máquina.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Frank Rosenblatt · CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/rosenblatt-real.jpg" alt="Retrato em preto e branco de Frank Rosenblatt jovem, de terno e gravata, cabelo penteado pra trás">
+        <figcaption>Frank Rosenblatt · CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um IBM 704 em 1957, o computador em que o perceptron foi simulado antes de virar máquina · foto: NASA, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/ibm704-real.jpg" alt="Foto em preto e branco de uma sala com um IBM 704: uma operadora sentada ao console de luzes e chaves, e um técnico inspecionando um armário aberto cheio de fios">
+        <figcaption>Um IBM 704, 1957 · foto: NASA, domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1969 · Minsky e Papert, no MIT</div>
+      <h2 class="reveal">A gaveta</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o livro</div><div class="texto"><i>Perceptrons</i>, 1969: um perceptron de uma camada não aprende o <b>ou exclusivo</b> (sim quando uma entrada está ligada ou a outra, não as duas). Trivial pra uma porta lógica; impossível pra ele</div></div>
+        <div class="item reveal"><div class="rotulo">o que faltava</div><div class="texto">com mais camadas daria, mas ninguém sabia ajustar os botões das camadas do meio, e o hardware da época não aguentava tentar</div></div>
+        <div class="item reveal"><div class="rotulo">o inverno</div><div class="texto">o livro é apontado como o gatilho do corte de verba nos anos 70. Rosenblatt morre em 1971, num acidente de barco, no dia em que fazia 43 anos</div></div>
+      </div>
+      <p class="lede reveal">Uma crítica correta sobre uma camada, num tempo sem hardware pra testar mais camadas, <b>guardou a ideia por quinze anos.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Marvin Minsky · foto: Joi Ito, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/minsky-real.jpg" alt="Marvin Minsky idoso, de perfil, careca e de óculos, camisa clara, numa sala iluminada">
+        <figcaption>Marvin Minsky · foto: Joi Ito, CC BY 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Seymour Papert com a tartaruga do Logo, o robô que ele fez pra crianças programarem · Matematicamente.it, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/papert-real.jpg" alt="Foto em preto e branco de Seymour Papert jovem, de cabelo comprido e barba, debruçado sobre uma mesa com um robô redondo sob uma cúpula transparente">
+        <figcaption>Seymour Papert com a tartaruga do Logo · CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1974 a 1986 · Werbos; Rumelhart, Hinton e Williams</div>
+      <h2 class="reveal">Propagar o erro pra trás</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">1974</div><div class="texto">Paul Werbos, doutorando em Harvard, descreve na tese como ajustar os botões das camadas do meio: repartir o erro de trás pra frente. A tese fica na biblioteca</div></div>
+        <div class="item reveal"><div class="rotulo">9 de outubro de 1986</div><div class="texto">a <i>Nature</i> publica Rumelhart, Hinton e Williams com o mesmo método, agora com o nome que ficou, a <b>retropropagação do erro</b>, e exemplos rodando: redes de várias camadas aprendem o ou exclusivo</div></div>
+        <div class="item reveal"><div class="rotulo">o método</div><div class="texto">a rede erra; o erro é repartido de trás pra frente entre os botões; cada um recebe a sua parte da culpa e gira um pouquinho. Repete milhares de vezes</div></div>
+      </div>
+      <p class="lede reveal">A chave da gaveta existia desde 1974. <b>Em 1986 o hardware rodava ela, devagar, em problemas pequenos.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Paul Werbos numa conferência em 1991 · foto: Rolf Kickuth, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/werbos-real.jpg" alt="Paul Werbos falando num púlpito de madeira em 1991, de terno cinza e gravata, com um crachá no bolso">
+        <figcaption>Paul Werbos, 1991 · foto: Rolf Kickuth, CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="David Rumelhart numa conferência em 1991 · foto: Rolf Kickuth, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/rumelhart-real.jpg" alt="David Rumelhart falando ao microfone em 1991, de terno cinza, gravata vermelha e óculos redondos, gesticulando">
+        <figcaption>David Rumelhart, 1991 · foto: Rolf Kickuth, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1989 a 1998 · LeCun, na Bell Labs</div>
+      <h2 class="reveal">A rede lê cheque</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">1989</div><div class="texto">Yann LeCun ataca um problema pequeno e útil: ler dígitos escritos à mão, o código postal dos envelopes</div></div>
+        <div class="item reveal"><div class="rotulo">a rede convolucional</div><div class="texto">pequenos filtros varrem a imagem procurando traços simples; as camadas seguintes juntam traços em partes e partes em dígitos. Menos botões, e reconhece o dígito onde ele estiver. A LeNet-5, madura, em 1998</div></div>
+        <div class="item reveal"><div class="rotulo">o uso real</div><div class="texto">máquinas de ler cheque da AT&amp;T e da NCR desde 1996; por volta de 2001, <b>cerca de 10% dos cheques dos EUA</b>, em chips desenhados pra isso</div></div>
+      </div>
+      <p class="lede reveal">O primeiro uso real é num problema pequeno, e ainda assim precisou de chip próprio. <b>Pra imagem grande, o hardware não existia.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Yann LeCun em 2018 · foto: Jérémy Barande, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/lecun-real.jpg" alt="Yann LeCun falando num púlpito, de camisa escura e óculos de armação preta, gesticulando com a mão">
+        <figcaption>Yann LeCun em 2018 · foto: Jérémy Barande, CC BY-SA 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Dígitos escritos à mão do conjunto MNIST, o exercício de LeCun que virou o teste padrão da área · Josef Steppan, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/mnist-real.jpg" alt="Uma grade de dígitos de 0 a 9 escritos à mão em preto sobre branco, dezesseis exemplos de cada, todos um pouco diferentes">
+        <figcaption>Dígitos à mão do MNIST · Josef Steppan, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1995 a 2006 · Vapnik; Hinton, em Toronto</div>
+      <h2 class="reveal">O segundo inverno</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">1995</div><div class="texto">Vladimir Vapnik, também na Bell Labs, publica a <b>máquina de vetores de suporte</b>: aprende com garantia matemática, treina rápido, sem botão no escuro. Ganha quase todos os testes da década</div></div>
+        <div class="item reveal"><div class="rotulo">fora de moda</div><div class="texto">poucos alunos, pouca verba, artigos rejeitados. Hinton e um punhado de gente continuam</div></div>
+        <div class="item reveal"><div class="rotulo">2004 e 2006</div><div class="texto">o CIFAR, no Canadá, paga um programa pequeno pro grupo se reunir. Em 2006 Hinton publica um jeito de treinar muitas camadas e chama de <b>aprendizado profundo</b>. O nome pega; o resultado ainda não</div></div>
+      </div>
+      <p class="lede reveal">Faltavam duas coisas que o algoritmo não podia dar: <b>dado e hardware</b>. As duas estavam sendo construídas em outro lugar, por outros motivos.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Geoffrey Hinton em 2024, no ano do Nobel · foto: Arthur Petron, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/hinton-real.jpg" alt="Geoffrey Hinton sorrindo, cabelo grisalho, terno escuro e gravata estampada, com microfone de lapela, fundo preto">
+        <figcaption>Geoffrey Hinton em 2024 · foto: Arthur Petron, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2007 a 2009 · Ng, em Stanford</div>
+      <h2 class="reveal">A placa de jogo treina a rede</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">2007</div><div class="texto">o CUDA abre a placa de vídeo pra qualquer conta que seja a mesma em muitos números</div></div>
+        <div class="item reveal"><div class="rotulo">por que serve</div><div class="texto">treinar uma rede é multiplicar tabelas grandes de números, entradas por pesos, camada por camada, e depois de trás pra frente. A mesma conta em milhões de números</div></div>
+        <div class="item reveal"><div class="rotulo">junho de 2009</div><div class="texto">Andrew Ng, com dois alunos, publica o treino de redes profundas em placa de vídeo: <b>até 70 vezes mais rápido</b> que num processador de dois núcleos. Semanas viram um dia</div></div>
+      </div>
+      <p class="lede reveal">A peça feita pra jogo em 1996 e aberta em 2007 encontra o algoritmo de 1986. <b>Nenhum dos dois foi feito pro outro.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Andrew Ng em 2017 · foto: TechCrunch, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/ng-real.jpg" alt="Andrew Ng sentado num palco, de camisa azul clara, com as mãos entrelaçadas, falando">
+        <figcaption>Andrew Ng em 2017 · foto: TechCrunch, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2007 a 2010 · Li, em Princeton e Stanford</div>
+      <h2 class="reveal">O ImageNet</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a ideia</div><div class="texto">Fei-Fei Li: o problema da área não é só algoritmo, é falta de exemplo. Uma rede só aprende do que vê</div></div>
+        <div class="item reveal"><div class="rotulo">2008 a 2010</div><div class="texto"><b>14 milhões de imagens</b> em 22 mil categorias, cada uma rotulada por pessoas pagas por tarefa pelo serviço da Amazon. Apresentado em junho de 2009</div></div>
+        <div class="item reveal"><div class="rotulo">o desafio</div><div class="texto">desde 2010, um campeonato anual: 1,2 milhão de imagens de treino, mil categorias. O melhor de 2010 erra 28%; o de 2011, 25,8%. Nenhum usa rede neural</div></div>
+      </div>
+      <p class="lede reveal">Em 2011 as três peças estão na mesa: o algoritmo de 1986, a placa de 2007, o dado de 2009. <b>Falta alguém juntar.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Fei-Fei Li em 2017 · foto: ITU Pictures, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/li-real.jpg" alt="Fei-Fei Li falando num púlpito com dois microfones, de blusa azul e casaco preto, segurando um controle">
+        <figcaption>Fei-Fei Li em 2017 · foto: ITU Pictures, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2012 · Krizhevsky e Sutskever, em Toronto</div>
+      <h2 class="reveal">A AlexNet</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a rede</div><div class="texto">no grupo de Hinton, Alex Krizhevsky e Ilya Sutskever entram no desafio de 2012 com uma rede convolucional enorme: <b>8 camadas, 60 milhões de botões</b></div></div>
+        <div class="item reveal"><div class="rotulo">o hardware</div><div class="texto">treinada em <b>duas GeForce GTX 580</b>, placas de jogo de uns 500 dólares, no computador do próprio Krizhevsky, por cinco a seis dias, com o código da placa escrito à mão em CUDA</div></div>
+        <div class="item reveal"><div class="rotulo">30 de setembro de 2012</div><div class="texto">a AlexNet erra <b>15,3%</b>. O segundo colocado, sem rede neural, 26,2%. Nunca o campeonato tinha caído tanto de um ano pro outro</div></div>
+      </div>
+      <p class="lede reveal">Duas placas feitas pra jogo fizeram em uma semana o que em 1986 não dava em nenhum prazo. <b>A ideia da gaveta encontrou a peça.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Ilya Sutskever num painel em Stanford, 2014 · foto: Steve Jurvetson, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/sutskever-real.jpg" alt="Ilya Sutskever sentado numa poltrona vermelha num palco, de camiseta cinza e jeans, com as mãos juntas">
+        <figcaption>Ilya Sutskever, 2014 · foto: Steve Jurvetson, CC BY 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Uma GeForce GTX 580 aberta: a placa de jogo de 2010 que treinou a AlexNet, com o chip no centro e uma pastilha solta em cima · foto: Fritzchens Fritz, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/gtx580-real.jpg" alt="Uma placa de vídeo GeForce GTX 580 com o dissipador preto levantado, mostrando o chip NVIDIA no centro da placa e uma pastilha de silício solta sobre ele">
+        <figcaption>Uma GeForce GTX 580, a placa de jogo que treinou a AlexNet · foto: Fritzchens Fritz, CC0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o programa achado</div>
+    <h2 class="reveal">Ninguém escreveu o gato</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Hinton na Academia Real de Ciências da Suécia, dezembro de 2024: o Nobel de Física pelos programas que ninguém escreveu · foto: Jay Dixit, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/hinton2-real.jpg" alt="Geoffrey Hinton de pé atrás de um púlpito de madeira com o brasão da Academia Real de Ciências da Suécia, terno escuro, num palco azul">
+        <figcaption>Hinton na Academia Real de Ciências, 2024 · foto: Jay Dixit, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Nenhuma linha da AlexNet diz o que é um gato. O código descreve a forma da rede e a regra de girar os botões. O que reconhece o gato são <b>60 milhões de números girados pelo erro</b>: dá pra medir que funciona, não dá pra explicar o que cada número faz.</p>
+    <div class="nota-cena reveal">desde a etapa 5 o programa era uma lista escrita por uma pessoa. Aqui o programa é achado; a pessoa escreve o método de achar</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">2013 a 2015</div>
+    <h2 class="reveal">Todo mundo muda de peça</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um chip G80 da NVIDIA: a partir de 2013 a mesma peça de jogo passa a ser vendida pra treinar rede, com mais memória e sem saída de vídeo · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="../02%20-%20A%20placa%20de%20v%C3%ADdeo/img/g80-real.jpg" alt="Um chip NVIDIA visto de cima, quadrado metálico com o logotipo, cercado de chips de memória numa placa preta">
+        <figcaption>A mesma peça de jogo, agora vendida pra treinar rede · domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Em março de 2013 o Google compra a empresa dos três de Toronto; em dezembro o Facebook contrata LeCun. Quem perdeu em 2012 usa rede e placa em 2013. O erro do ImageNet cai todo ano: em 2015 uma rede de 152 camadas erra <b>3,6%</b>, menos que uma pessoa treinada.</p>
+    <div class="nota-cena reveal">até 2012 quem puxava a placa era o jogo; a partir dali, é a rede</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2012</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">McCulloch e Pitts escreveram o neurônio como porta lógica. Rosenblatt construiu a máquina com botões de verdade. Minsky e Papert provaram o limite de uma camada e a ideia foi pra gaveta. Werbos escreveu a chave e ninguém leu; Rumelhart, Hinton e Williams escreveram de novo e todo mundo leu. LeCun pôs a rede pra ler cheque. Vapnik ganhou a década seguinte com outro método. Ng pôs a rede na placa de jogo. Li montou os 14 milhões de exemplos. Krizhevsky e Sutskever juntaram tudo em duas placas num quarto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição</div>
+        <div class="desc">a ideia estava na gaveta desde 1958, como o Alto da Xerox esperou dez anos pelo Mac. O que mudou não foi a ideia: foi a placa de vídeo ter ficado barata</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">onde para</div>
+        <div class="desc">2012: a AlexNet vence o ImageNet em duas placas de jogo, e o programa é achado em vez de escrito</div>
+      </div>
+    </div>
+    <p class="lede reveal">A rede olha a imagem inteira de uma vez, e por isso a placa gosta dela. Mas texto é uma fila de palavras. <b>Como uma máquina que gosta de fazer tudo ao mesmo tempo lê uma fila?</b></p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

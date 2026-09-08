@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2017: Attention is All You Need — Etapa 09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 09-04 (roteiro de 07/09, 12 telas, cronologico, com pessoas), o ultimo
+     da serie. Mesma receita do 09-01: pasta em _REFAZER (quatro ../), sem modelo 3D,
+     sem CSS local, fichas curtas, fotos e diagramas do Commons com credito. A foto de
+     Sutskever vem da pasta do 09-03, a GTX 580 tambem, e o abaco da tela 11 e a arte
+     do site (site/img). Os __PLACEHOLDERS__ do tocador sao preenchidos pelo
+     preenche-9.py. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-09.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20o%20Transformer%20matou%20a%20fila.m4a" data-duracao="1013"></audio>
+    <img class="tocador__capa" src="img/p100-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como o Transformer matou a fila</div>
+      <div class="tocador__fonte">A máquina que aprende · 04 · 2017: Attention is All You Need</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1013" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">16:53</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que aprende · episódio 04 · o fecho do arco da máquina</div>
+      <h1 class="reveal">2017: Attention is All You Need</h1>
+      <p class="lede reveal">De <b>1997 a 2018</b>, em ordem e com as pessoas. A AlexNet olha a imagem inteira de uma vez, e a placa gosta disso. Texto é uma fila de palavras. Por vinte anos a rede leu em fila, uma palavra por passo; em 2017, oito pessoas tiraram a fila. <b>Um software desenhado com a forma do hardware.</b> Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>A mesa de reunião.</b> Na fila, cada palavra passa um bilhete pra seguinte, e o bilhete vai se apagando pelo caminho. Na atenção, todas as palavras sentam na mesma mesa redonda, ao mesmo tempo, e cada uma olha pra todas as outras e decide quem escutar. O crachá com o número da cadeira é o carimbo de posição.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/p100-real.jpg" alt="Pastilhas de silício abertas sobre fundo branco: uma grande e colorida no centro, uma placa maior com um chip ao meio e várias pastilhas pequenas de memória empilhada em volta">
+      <figcaption>A pastilha de uma Tesla P100 aberta, com as memórias empilhadas ao lado: o Transformer foi treinado em oito delas · foto: Fritzchens Fritz, CC0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1997 · Hochreiter e Schmidhuber, em Munique</div>
+      <h2 class="reveal">Memória de curto e longo prazo</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o problema</div><div class="texto">a rede lê uma palavra por passo, guarda um resumo e reescreve o resumo a cada passo. Depois de vinte palavras o começo sumiu: o bilhete que se apaga</div></div>
+        <div class="item reveal"><div class="rotulo">a LSTM</div><div class="texto">uma célula com portões: um decide o que guardar, outro o que esquecer, outro o que mostrar. Tese de mestrado de Hochreiter com Schmidhuber, publicada em 1997</div></div>
+        <div class="item reveal"><div class="rotulo">o que não resolve</div><div class="texto">a rede lembra mais longe, mas continua lendo em fila: pra ler a palavra vinte, tem que ter lido a dezenove</div></div>
+      </div>
+      <p class="lede reveal">Um algoritmo em fila não aproveita a placa, que quer tudo ao mesmo tempo. <b>Em 1997 isso não importava; em 2012 passa a ser o problema.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Sepp Hochreiter · foto: Eulenreich, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/hochreiter-real.jpg" alt="Sepp Hochreiter, cabelo branco e camisa xadrez, diante de uma estante de livros">
+        <figcaption>Sepp Hochreiter · foto: Eulenreich, CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jürgen Schmidhuber em 2017 · foto: ITU/R.Farrell, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/schmidhuber-real.jpg" alt="Jürgen Schmidhuber de camisa branca e microfone de cabeça, barba grisalha, falando">
+        <figcaption>Jürgen Schmidhuber em 2017 · foto: ITU/R.Farrell, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2014 · Sutskever, Vinyals e Le, no Google</div>
+      <h2 class="reveal">Traduzir com duas filas</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">setembro de 2014</div><div class="texto">um tradutor feito de duas LSTM: a primeira lê a frase em inglês, palavra por palavra, e guarda um resumo, uma lista fixa de números; a segunda escreve a frase em francês a partir dele</div></div>
+        <div class="item reveal"><div class="rotulo">funciona</div><div class="texto">a primeira vez que uma rede neural traduz no nível dos melhores sistemas da época</div></div>
+        <div class="item reveal"><div class="rotulo">o limite</div><div class="texto">a frase inteira, curta ou longa, tem que caber no mesmo resumo de tamanho fixo. Frases longas perdem. <b>O gargalo do vetor único</b></div></div>
+      </div>
+      <p class="lede reveal">O software encontrou um limite de memória dentro do próprio desenho, não no hardware. <b>A saída vai ser mudar o desenho.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Ilya Sutskever num painel em Stanford, 2014 · foto: Steve Jurvetson, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="../03%20-%20A%20m%C3%A1quina%20que%20aprende/img/sutskever-real.jpg" alt="Ilya Sutskever sentado numa poltrona vermelha num palco, de camiseta cinza e jeans, com as mãos juntas">
+        <figcaption>Ilya Sutskever, 2014 · foto: Steve Jurvetson, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2014 e 2015 · Bengio e Cho, em Montreal</div>
+      <h2 class="reveal">A atenção</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a ideia</div><div class="texto">em vez de um resumo só, a rede que escreve recebe todos os resumos parciais, um por palavra da entrada, e a cada palavra que escreve dá um peso a cada um: quanto esta palavra da entrada importa pra esta da saída</div></div>
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">um doutorando de Bengio vindo da Bielorrússia, com o pós-doutorando Kyunghyun Cho; publicado em setembro de 2014, apresentado em maio de 2015</div></div>
+        <div class="item reveal"><div class="rotulo">o resultado</div><div class="texto">frases longas param de perder. E a rede mostra, pra cada palavra que escreveu, em quais palavras ela se apoiou</div></div>
+      </div>
+      <p class="lede reveal">O software contornou o gargalo com mais conta em paralelo, que é o que a placa faz bem. <b>Mas a leitura ainda é em fila.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Yoshua Bengio em 2019 · foto: Maryse Boyce, CC BY 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/bengio-real.jpg" alt="Yoshua Bengio sorrindo, de braços cruzados, suéter vinho e cabelo grisalho encaracolado">
+        <figcaption>Yoshua Bengio em 2019 · foto: Maryse Boyce, CC BY 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Kyunghyun Cho em 2025 · foto: Xuthoria, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/cho-real.jpg" alt="Retrato de Kyunghyun Cho, cabelo escuro curto, sorriso leve, jaqueta azul-marinho">
+        <figcaption>Kyunghyun Cho em 2025 · foto: Xuthoria, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">2016 · o tradutor em produção e a TPU</div>
+    <h2 class="reveal">Hardware sob medida</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma placa de TPU de terceira geração (2018), com quatro chips sob placas de cobre refrigeradas a água; a primeira, de 2016, só multiplicava tabelas · foto: Zinskauf, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/tpu-real.jpg" alt="Uma placa de circuito azul com quatro blocos de cobre quadrados ligados por tubos cinza de refrigeração a água">
+        <figcaption>Uma placa de TPU de 2018: quatro chips que só multiplicam tabelas · foto: Zinskauf, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Em setembro de 2016 o Google põe um tradutor neural em produção; em novembro, oito línguas. Oito camadas de LSTM lendo, oito escrevendo, atenção no meio: <b>seis dias em 96 placas</b> pra treinar. E um chip próprio pra rodar: a <b>TPU</b>, uma grade de 256×256 multiplicadores.</p>
+    <div class="nota-cena reveal">o software puxou um hardware sob medida, como o perceptron de 1960; e esse hardware quer tudo ao mesmo tempo</div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">12 de junho de 2017 · oito autores, no Google</div>
+      <h2 class="reveal">Atenção é tudo de que você precisa</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">os oito</div><div class="texto">Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser e Polosukhin. O mais novo, um estagiário de vinte anos. Até 2023 todos tinham saído do Google</div></div>
+        <div class="item reveal"><div class="rotulo">a ideia</div><div class="texto"><b>tirar a fila</b>. Nada de LSTM, nada de uma palavra por passo. Só atenção: todas as palavras entram ao mesmo tempo, cada uma olha pra todas, em várias camadas. O nome: Transformer</div></div>
+        <div class="item reveal"><div class="rotulo">os números</div><div class="texto">65 milhões de botões; treina em 12 horas numa máquina com oito placas P100 (o grande, em três dias e meio). Traduz melhor que tudo que existia</div></div>
+      </div>
+      <p class="lede reveal">Se todas as palavras são processadas ao mesmo tempo, o trabalho inteiro vira multiplicar tabelas, a conta da placa e da TPU. <b>O software foi desenhado com a forma do hardware.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Llion Jones, um dos oito autores, em Tóquio · foto: Syced, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/jones-real.jpg" alt="Llion Jones de camiseta azul-escura e óculos, segurando um microfone, ao lado de uma mesa de madeira">
+        <figcaption>Llion Jones · foto: Syced, CC0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Aidan Gomez, o estagiário de vinte anos entre os oito autores, em 2025 · foto: Gabriel Hutchinson, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/gomez-real.jpg" alt="Aidan Gomez sentado numa poltrona escura num palco, de camiseta preta e barba, sorrindo com as pernas cruzadas">
+        <figcaption>Aidan Gomez em 2025 · foto: Gabriel Hutchinson, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">como a palavra vira número</div>
+    <h2 class="reveal">O carimbo de posição</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O desenho do Transformer no artigo de 2017: as palavras entram embaixo, ganham o carimbo de posição (os círculos com a onda) e sobem pelas camadas de atenção · Yuening Jia, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/transformer-real.jpg" alt="Diagrama de caixas e setas do Transformer: duas colunas de blocos com Multi-Head Attention e Feed Forward, entradas embaixo somadas a um símbolo de onda chamado Positional Encoding">
+        <figcaption>O desenho do Transformer: o carimbo de posição entra pelos círculos com a onda · Yuening Jia, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Cada palavra vira uma lista de centenas de números, também aprendida: "gato" e "cachorro" ficam perto; "gato" e "imposto", longe. Sem fila, a rede não sabe qual palavra veio primeiro. A solução: somar a cada palavra um <b>carimbo de posição</b>, que só depende do lugar dela na frase.</p>
+    <div class="nota-cena reveal">o crachá com o número da cadeira: pra caber no hardware paralelo, o software reinventou a ordem que a fila dava de graça</div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a atenção por dentro</div>
+    <h2 class="reveal">Três multiplicações de tabela</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma cabeça de atenção do artigo de 2017 olhando a palavra its: ela se apoia em Law e em application, as palavras a que se refere · Google, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/atencao-real.jpg" alt="Diagrama em fundo preto: a palavra its no alto ligada por linhas às palavras Law e application numa fila de palavras embaixo">
+        <figcaption>Uma cabeça de atenção lendo a palavra "its": apoia-se em "Law" e "application" · Google, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">De cada palavra saem três listas: a <b>pergunta</b>, a <b>etiqueta</b> e o <b>conteúdo</b>. Comparar a pergunta de uma com a etiqueta de outra dá um número: quanto escutar. Todos os pares de uma vez, pesos que somam um, e cada palavra recebe a soma dos conteúdos pesados.</p>
+    <div class="nota-cena reveal">oito cabeças fazem isso ao mesmo tempo; comparar todas as perguntas com todas as etiquetas é multiplicar duas tabelas</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2018 · Radford, na OpenAI; o Google</div>
+      <h2 class="reveal">GPT e BERT</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">11 de junho de 2018</div><div class="texto">o <b>GPT</b>, de Alec Radford com Sutskever entre os autores: só a metade que escreve, treinada numa tarefa só, dada a frase até aqui, qual é a próxima palavra. 117 milhões de botões, sete mil livros</div></div>
+        <div class="item reveal"><div class="rotulo">11 de outubro de 2018</div><div class="texto">o <b>BERT</b>, do Google: só a metade que lê, treinada pra adivinhar palavras escondidas. 340 milhões de botões. Em meses, todo sistema de busca usa</div></div>
+        <div class="item reveal"><div class="rotulo">em comum</div><div class="texto">a peça de 2017 cortada ao meio, treinada em texto cru da internet sem ninguém rotular, e depois ajustada pra cada uso. Acha-se uma vez, usa-se em tudo</div></div>
+      </div>
+      <p class="lede reveal">O que decide o tamanho do modelo é quantas placas se tem e por quanto tempo. <b>O software virou receita; o ingrediente é hardware.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A mesma peça cortada ao meio: o GPT fica com a coluna da direita, que escreve; o BERT, com a da esquerda, que lê · Yuening Jia, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/transformer-real.jpg" alt="O diagrama do Transformer com as duas colunas: a da esquerda lê a entrada, a da direita escreve a saída">
+        <figcaption>GPT é a coluna da direita; BERT, a da esquerda · Yuening Jia, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">2017 a 2020</div>
+    <h2 class="reveal">A receita cresce</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma GeForce GTX 580 aberta: de duas placas de jogo num quarto, em 2012, a milhares de placas de servidor num galpão, em 2020 · foto: Fritzchens Fritz, CC0">
+        <span class="selo">imagem real</span>
+        <img src="../03%20-%20A%20m%C3%A1quina%20que%20aprende/img/gtx580-real.jpg" alt="Uma placa de vídeo GeForce GTX 580 com o dissipador levantado, mostrando o chip no centro e uma pastilha solta sobre ele">
+        <figcaption>De duas placas num quarto a milhares num galpão · foto: Fritzchens Fritz, CC0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">65 milhões de botões em 2017; 117 milhões em 2018; <b>1,5 bilhão</b> em 2019; <b>175 bilhões</b> em 2020. A mesma peça; o que muda é a quantidade de texto e de placa. A corrida recomeça em outra escala: milhares de placas de uma vez, e a NVIDIA vira a empresa mais valiosa da indústria.</p>
+    <div class="nota-cena reveal">até 2023 os oito autores tinham saído do Google. Pela primeira vez o software dita o tamanho do hardware</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o arco inteiro</div>
+    <h2 class="reveal">Do ábaco ao botão da rede</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O ábaco que abre a série: uma pedra numa canaleta guarda um número porque alguém a moveu">
+        <img src="../../../../site/img/abaco-episodio.webp" alt="A imagem do ábaco que abre a série">
+        <figcaption>Onde a série começou: uma pedra numa canaleta</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Uma pedra numa canaleta. Engrenagens que carregam o vai-um. Boole: sim-e-não dá conta de qualquer lógica. Von Neumann põe o programa na memória. Transistor, chip, PC, rede, placa de jogo. <b>A máquina de 2018 ainda é Boole mais Von Neumann mais um programa.</b></p>
+    <div class="nota-cena reveal">o que mudou é o programa: bilhões de botões girados pelo erro, que ninguém escreveu</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2018</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Hochreiter e Schmidhuber deram memória à fila. Sutskever, Vinyals e Le traduziram com duas filas e acharam o gargalo. Bengio e Cho, com um doutorando, ensinaram a rede a olhar pra todas as palavras. Oito pessoas no Google tiraram a fila e desenharam o software com a forma da peça. Radford cortou a peça ao meio e mandou adivinhar a próxima palavra. Ninguém planejou o conjunto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a etapa inteira</div>
+        <div class="desc">primeiro as peças correram, até o processador bater na parede do calor. Depois a peça feita pra jogo virou uma máquina de fazer a mesma conta em milhões de números. Depois uma ideia guardada desde 1958 encontrou essa peça barata e o programa passou a ser achado. E por fim o software tomou a forma do hardware, e a corrida recomeçou em outra escala</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">onde para</div>
+        <div class="desc">2018: a peça de 2017 cortada ao meio, treinada em texto cru, e a receita começando a crescer</div>
+      </div>
+    </div>
+    <p class="lede reveal">Aqui fecha o arco da máquina, da pedra do ábaco ao programa que passou a ser achado. A máquina ainda é a mesma máquina. <b>O que mudou de vez foi quem escreve o programa.</b> A etapa 10 volta pra outra linha da mesma história, a da rede.</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

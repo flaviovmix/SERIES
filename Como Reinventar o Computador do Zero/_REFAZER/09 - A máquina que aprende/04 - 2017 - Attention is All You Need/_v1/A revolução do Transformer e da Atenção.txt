@@ -1,0 +1,7 @@
+Titulo: A revolução do Transformer e da Atenção
+Notebook: 09-04-2017 - Attention is All You Need
+
+Descricao:
+Estes textos detalham o roteiro do episódio final de uma série sobre a história da computação, focando na transição do processamento de texto em fila para a arquitetura Transformer em 2017. O conteúdo narra a evolução cronológica desde a criação da memória LSTM em 1997 até os modelos GPT e BERT em 2018, destacando como o hardware e o software se moldaram mutuamente. A tese central afirma que o sucesso da inteligência artificial moderna ocorreu quando o software foi redesenhado para aproveitar o processamento paralelo das placas de vídeo e das TPUs. Através de fichas biográficas e analogias, como a da mesa de reunião, o material humaniza a engenharia por trás da tecnologia. O arco encerra a série demonstrando que, embora a estrutura lógica do computador permaneça a mesma, a forma de criar programas mudou drasticamente.
+
+Link: https://notebook.google.com/notebook/38d992b8-3157-4787-a195-8a3ddeb7c676

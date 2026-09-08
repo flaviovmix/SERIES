@@ -1,0 +1,35 @@
+/* episodio 08-01 — a cena com tres fotos
+
+   A tela de 1977 mostra as tres maquinas que chegaram prontas no mesmo ano, e
+   nenhuma delas e mais importante que as outras: cabem lado a lado, como a cena
+   de duas fotos da base (pranchas.css), so que com uma a mais. A base nao tem
+   variante de tres, entao esta folha so encolhe a altura da foto pra caberem as
+   tres com legenda numa janela de 1440x900. So deste episodio. */
+
+.cena--tres { max-width: 1280px; }
+.cena--tres img { height: clamp(150px, 36vh, 380px); }
+
+/* o titulo da capa: "computador" e uma palavra so de dez letras, e no h1 da base
+   (ate 72px) ela encosta na foto; no notebook (1366px) ela nem cabe na coluna e o
+   navegador partia em "computado / r". Mesma saida do 07-03: teto menor e um hifen
+   opcional (&shy;) no HTML, pra o corte ser onde eu escolhi (compu-tador). */
+.step--capa h1 {
+  font-size: clamp(32px, 4.4vw, 56px);
+  hyphens: manual;
+  overflow-wrap: break-word;
+}
+
+/* a tela 11 e uma cena com barra de troca (Windows 1.0 contra 3.0), e a barra soma
+   altura: com paragrafo e nota embaixo, a ultima linha cortava numa janela de
+   1440x900. Mesma saida do 07-02, copiada de la: o teto vai so na PRIMEIRA imagem
+   (e ela que da altura ao palco; a segunda entra por cima com inset:0). E a SEGUNDA
+   vez que isso aparece na serie; na terceira, a regra sobe pra base. */
+.step--cena .troca .troca__img:nth-of-type(1) {
+  max-height: min(34vh, 380px);
+  object-fit: cover;
+}
+
+/* estreito: as tres empilham (a base ja faz isso) e cada foto fica mais baixa */
+@media (max-width: 820px) {
+  .cena--tres img { height: clamp(120px, 20vh, 200px); }
+}

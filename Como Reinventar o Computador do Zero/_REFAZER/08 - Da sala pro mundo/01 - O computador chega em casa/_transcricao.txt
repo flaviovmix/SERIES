@@ -1,0 +1,398 @@
+# Transcricao automatica (faster-whisper small) - 24.5 min
+# Fonte: Como o computador pessoal chegou em casa.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O computador chega em casa.
+[00:01] É um título e tanto, né?
+[00:03] Porque a gente vai falar exatamente dessa transição maluca.
+[00:07] Pois é. Sabe, imagina a cena de hoje em dia.
+[00:10] A gente vai até uma loja para comprar um computador novinho.
+[00:14] E aí, quando abre a caixa, ele vem sem tela.
+[00:16] Nossa!
+[00:17] Vem sem teclado, sem mouse.
+[00:20] E pior, sem absolutamente nenhum programa instalado.
+[00:24] É só uma caixa de metal fechada com umas luzinhas piscando na frente.
+[00:27] Tipo um peso de papel bem caro, né?
+[00:29] Exato.
+[00:30] Parece um cenário absurdo para nós hoje.
+[00:33] Mas a verdade é que foi exatamente assim que a revolução dos computadores domésticos
+[00:38] começou de fato.
+[00:39] Com certeza.
+[00:40] A gente chegou no momento crucial aqui.
+[00:42] O momento em que a máquina sai daquelas salas refrigeradas,
+[00:45] sai dos laboratórios das grandes corporações.
+[00:48] Isso.
+[00:48] Para quem está acompanhando desde o início,
+[00:50] a nossa etapa anterior encolheu o computador até ele caber numa pastilha pequenininha.
+[00:55] Sim, e nós terminamos aquele momento no ano de 1974
+[01:00] com a Intel vendendo o processador 8080 para qualquer um que quisesse comprar.
+[01:05] Um processador completo de 8 bits à venda na prateleira.
+[01:09] A peça que pensa estava pronta e custava super pouco.
+[01:13] Mas aí vem o grande gargalo.
+[01:15] Um processador solto, sozinho na mesa, não faz nada.
+[01:19] E em 1974, ninguém tinha um computador em casa.
+[01:23] Ninguém mesmo.
+[01:24] Ninguém sabia direito o que fazer com aquela pastilha.
+[01:27] Então, é isso que define a missão do nosso mergulho de hoje.
+[01:31] Nós vamos cobrir o período que vai de 1973 a 1990, rigorosamente em ordem cronológico.
+[01:39] E lembrando que o nosso foco aqui não é número de vendas, não é campanha de marketing.
+[01:43] Não, de jeito nenhum.
+[01:45] O assunto hoje é construir.
+[01:47] A gente vai acompanhar as pessoas que pegaram essas peças prontas
+[01:51] e construíram as máquinas.
+[01:53] E a dinâmica principal que a gente vai ver se repetir, sabe a regra de ouro dessa história toda?
+[01:58] Qual seria?
+[01:59] É que em cada passo, o hardware avança e libera espaço para um novo software.
+[02:05] Ou, o inverso, um software novo surge e exige que o hardware seja melhorado.
+[02:11] Um sempre empurra o outro.
+[02:13] Um empurra o outro. Legal.
+[02:14] Antes da gente mergulhar de cabeça, um aviso prático muito importante
+[02:18] para quem está acompanhando visualmente.
+[02:20] Essa nossa explicação acompanha uma página com 12 telas.
+[02:24] Fiquem atentos.
+[02:25] Se você está só ouvindo a gente no fone, pode relaxar.
+[02:28] Acompanha normalmente que a história funciona do mesmo jeito.
+[02:31] Mas, para quem está com a página aberta,
+[02:34] você deve virar a tela toda vez que ouvir o meu pedido sonoro.
+[02:38] Bom, para entender de onde veio a tela de computador que a gente usa até hoje,
+[02:43] vamos dar um passo atrás.
+[02:45] Um ano antes da invenção daquele processador 8080.
+[02:49] Para isso, aperte o próximo.
+[02:52] Bom, o nosso cenário inicial é o PARC.
+[02:56] É um centro de pesquisas famosíssimos lá na Califórnia.
+[02:59] A Sherriks estava literalmente nadando em dinheiro com as vendas das copiadoras deles.
+[03:04] Dinheiro sobrando mesmo.
+[03:06] Muito.
+[03:07] Então, eles resolveram financiar esse espaço de pesquisa.
+[03:10] O objetivo deles não era comercial, sabe?
+[03:12] Era puramente pesquisa.
+[03:14] Eles queriam construir o computador ideal, sem nenhum tipo de limite de preço.
+[03:18] O céu era olhite.
+[03:20] E aí entram três figuras centrais que imaginaram esse futuro para nós.
+[03:25] Para nossa ficha, a gente tem o Alan Kay, nascido em 1940, tinha 33 anos,
+[03:31] está vivo em 2026.
+[03:34] Foi ele que teve a grande ideia do computador pessoal com uma tela gráfica.
+[03:38] E para montar isso, tivemos o Chuck Thacker,
+[03:41] nascido em 1943, tinha 30 anos e morreu em 2017.
+[03:47] Ele foi o engenheiro principal, projetou a máquina física mesmo.
+[03:51] E o terceiro, Butler Lampson, nascido em 1943, tinha 30 anos e está vivo em 2026.
+[03:58] Que foi quem escreveu o memorando, convencendo a diretoria a pagar essa conta toda.
+[04:03] A máquina que saiu dessas mentes foi o famoso Alto.
+[04:06] Isso. Só que tem um detalhe fascinante aí.
+[04:09] A gente está falando do ano de 1973.
+[04:13] Nessa época, não existia um microprocessador poderoso suficiente para fazer o que eles sonhavam.
+[04:18] Então, como eles resolveram?
+[04:20] Na força bruta.
+[04:21] Eles montaram o Alto usando centenas de chips pequenos separados
+[04:25] para conseguir criar um processador de 16 bits.
+[04:28] E olha isso, ele vinha com absurdos 128 kilobytes de memória.
+[04:33] 128 kilobytes em 1973 era uma montanha de espaço, né?
+[04:37] Absurdo de grande.
+[04:39] E ele ainda vinha com um mouse de três botões.
+[04:42] Ah, o mouse?
+[04:43] Deixa eu puxar a ficha do inventor.
+[04:45] Douglas Engelbart, nascido em 1925, tinha 43 anos quando mostrou o mouse em 1968 e morreu em 2013.
+[04:54] Perfeito.
+[04:55] Agora falando de inovação visual, a tela do Alto era uma coisa de outro planeta.
+[04:59] Ela ficava de pé com um formato exato de uma folha de papel.
+[05:03] E a engenharia por trás daqueles gráficos é o que mais me impressiona, sabe?
+[05:07] Sim, porque era uma engenharia superliteral.
+[05:09] Antes do Alto, os monitores só guardavam na memória o código de cada letra
+[05:14] e um chip fixo desenhava o texto, cru mesmo.
+[05:17] Testo puro.
+[05:18] Exato.
+[05:19] O Alto mudou essa regra.
+[05:20] Nele, cada bit da memória correspondia diretamente a um ponto luminoso na tela.
+[05:25] Então, a tela era literalmente uma fotografia mapeada dentro da memória RAM da máquina.
+[05:30] Peraí, se você quisesse desenhar, sei lá, uma janela,
+[05:34] o sistema ia lá e alterava os bits da memória.
+[05:37] Isso.
+[05:38] O preço técnico para fazer isso era gigantesco.
+[05:41] Daquele 128 kilobytes de memória total, a tela engolia 61 kilobytes.
+[05:46] Caramba!
+[05:47] Quase metade da memória inteira da máquina existia só para segurar a imagem estática na tela.
+[05:53] Exatamente.
+[05:54] Mas vem cá.
+[05:55] Como que isso rodava solto se nem existia placa de vídeo nessa época?
+[05:59] O processador tinha que dar conta da imagem e dos programas tudo junto.
+[06:03] Dava conta, sim.
+[06:04] E a solução que o Chuck Thacker arrumou para isso é de uma genialidade sem tamanho.
+[06:10] O tubo da tela precisa ser repintado 60 vezes por segundo, senão a imagem apaga.
+[06:15] Certo.
+[06:16] Como não tinha placa de vídeo, ele fez o próprio processador principal pintar a tela.
+[06:21] Ele programou 16 tarefas em microcódigo com níveis de prioridade.
+[06:26] E adivinha qual era a prioridade máxima.
+[06:28] Desenhar a tela.
+[06:29] Claro!
+[06:30] Desenhar a tela roubava ciclos de processamento do programa que estava rodando.
+[06:34] Tipo, ele pausava o programa do usuário para poder repintar os pontos.
+[06:38] Isso mesmo.
+[06:39] Ele parava tudo, buscava os pontos na memória, mandava para a tela e depois voltava para
+[06:45] o cálculo do programa.
+[06:47] O processador fingia ser a placa de vídeo.
+[06:49] Isso deve ter deixado a máquina bem mais lenta, né?
+[06:52] Mas entregava aquela interface visual lindíssima que eles queriam.
+[06:56] O duro mesmo era o preço comercial disso tudo.
+[06:59] Sem dúvida, fazer isso custava 32 mil dólares a unidade.
+[07:04] A Cherox produziu uns 2 mil para uso interno lá deles e simplesmente engavetou o projeto.
+[07:10] É.
+[07:11] O software que eles sonhavam exigia um hardware que o mundo não conseguia entregar ainda.
+[07:15] Pelo menos não por um preço acessível.
+[07:17] A Cherox pagou essa conta e o mundo ia ter que esperar, para ver o que estava acontecendo
+[07:21] de verdade no mercado, aperte o próximo.
+[07:23] Longe daquela bolha rica da Califórnia, o cenário real era bem mais cru.
+[07:28] Os computadores do mercado eram aqueles mainframes gigantes, trancados e operados por técnicos.
+[07:34] Nada na mesa de casa.
+[07:36] E aí surge o nosso próximo personagem, lá no Novo México.
+[07:40] Eddie Roberts, nascido em 1941, tinha 33 anos e morreu em 2010.
+[07:46] Ele era o dono da Mitz.
+[07:48] Era uma empresa de albuquer que estava quebrando.
+[07:51] Eles vendiam kits de calculadoras desmontadas, mas o mercado engoliu eles.
+[07:56] Desesperado para não falir, ele pega aquele chip 8080 da Intel e cria um computador em volta dele.
+[08:03] Exato, ele lança o Altair 8800 lá em janeiro de 1975 e era o básico do Dásico do hardware.
+[08:12] Quanto custava?
+[08:13] 400 dólares pelo kit.
+[08:15] E ele vinha com suados 256 bytes de memória.
+[08:20] Bites? Não kilobytes? Bites mesmo.
+[08:23] E sem tela, sem teclado.
+[08:25] Era só luzes e aqueles interruptores de alavanca.
+[08:29] E mesmo sendo essa caixa de metal limitada, o Eddie Roberts conseguiu botar o Altair na capa da revista Popular Electronics.
+[08:37] E a expectativa dele era bem baixa, né?
+[08:40] Muito.
+[08:41] Ele pensou, se eu vender 200 kits, eu escapo da falência.
+[08:45] Só que em três meses ele recebeu 4 mil pedidos.
+[08:49] 4 mil? Foi um sucesso absurdo.
+[08:52] Isso provou que o hardware mínimo era barato e as pessoas queriam ter um.
+[08:57] Mas o fato é que quem comprou levou uma caixa imútil.
+[09:01] Faltava cérebro, faltava software.
+[09:03] E para ver como eles lidaram com isso, aperte o próximo.
+[09:06] Aquele mesmo exemplar da revista de 1975 foi parar numa banca lá na Praça de Harvard.
+[09:13] E quem passa e bate o olho é o Paul Allen, nascido em 1953, tinha 22 anos e morreu em 2018.
+[09:21] E ele comprou a revista na hora.
+[09:22] Comprou e saiu correndo para mostrar para o amigo dele, o Bill Gates.
+[09:27] Nascido em 1955, tinha 19 anos e está vivo em 2026.
+[09:33] Os dois viram a máquina e sacaram na hora que aquele Altair precisava desesperadamente de uma linguagem, como o Basic.
+[09:41] Para a pessoa poder digitar comandos lógicos em vez de ficar brincando de interruptor.
+[09:45] A visão estava certíssima, mas tinha um desafio técnico aí que beira o impossível.
+[09:50] Como é que você escreve em um software para uma máquina se você não tem a máquina?
+[09:55] Pois é, eles não tinham Altair, não tinham nem o processador 8080 para testar o código.
+[10:01] Então eles apelaram para a simulação.
+[10:04] Eles usaram os computadores colossais de Harvard, um mainframe BDP10 e escreveram um emulador lá dentro.
+[10:12] Fizeram aquele monstro fingir que era o chip da Intel.
+[10:15] Oito semanas virando noite, né?
+[10:17] Oito semanas direto.
+[10:19] E eles conseguiram comprimir o Basic inteiro para caber em 4 kilobytes.
+[10:25] Aí vem a parte que parece filme.
+[10:27] O Alan pega o voo para o buquerque, levando o código numa fita de papel.
+[10:31] E lá no alto, ele lembra que esqueceu de escrever o programa carregador.
+[10:35] Sim, o código primário para a máquina conseguir ler a fita de papel.
+[10:40] Ele escreveu ali, no meio do voo.
+[10:42] E o mais louco é que chegando na empresa, eles colocam a fita no Altair real e roda de primeira.
+[10:47] Naquele dia no Novo México, eles fundam a Microsoft.
+[10:51] Isso é muito marcante.
+[10:53] Primeiro porque provou que dá para criar software simulando o hardware.
+[10:57] E segundo porque o Basic deles ocupava 4 kilobytes.
+[11:01] Mas o Altair só vinha com 256 bytes.
+[11:05] Ou seja, quem comprou a máquina foi obrigado a comprar a placa de expansão de memória da empresa do Roberts.
+[11:11] Exato.
+[11:12] Esse software de 4 kilobytes puxou as vendas de hardware para cima.
+[11:16] O software empurrou o hardware, perfeitamente alinhado com a nossa regra.
+[11:21] E aí, a atenção do mundo volta para a Califórnia.
+[11:24] Para a gente acompanhar essa mudança de áreas, aperte o próximo.
+[11:28] A gente desembarca em Melo Park, no Home Brew Computer Club.
+[11:32] Era lá que a galera se juntava para discutir essas novidades eletrônicas.
+[11:37] E é aí que entra uma das duplas mais famosas da história.
+[11:40] Steve Wozniak, nascido em 1950, tinha 25 anos.
+[11:45] Está vivo em 2026.
+[11:47] E o Steve Jobs, nascido em 1955, tinha 21 anos.
+[11:52] E morreu em 2011.
+[11:54] O Wozniak cria a placa do Apple 1 só para mostrar para o pessoal do clube.
+[11:58] E o Jobs, com aquela visão comercial, decide que eles deviam vender aquilo.
+[12:03] Mas a virada mesmo foi com a segunda máquina, certo?
+[12:06] Sim, em 1977, com o Apple 2.
+[12:10] O que faz o Apple 2 ser um triunfo é a engenharia super-enchuta do Wozniak.
+[12:15] Ele conseguiu, por exemplo, gerar cores numa TV comum enganando o sinal de vídeo,
+[12:21] sem ter nenhum hardware dedicado só para a cor.
+[12:24] Enganava os pulsos elétricos para baratear o custo?
+[12:27] Isso.
+[12:28] Onde os outros usavam três ou quatro chips, o Wozniak, lá, e resolvia com chips só.
+[12:33] Incrível!
+[12:34] O Apple 2 saiu junto com o Commodore Pet e o TRS80, lá em 1977.
+[12:40] E isso marcou o fim daquela era dos kits que você tinha que soldar em casa.
+[12:45] O computador virou produto de prateleira, você liga na tomada e acabou.
+[12:48] Verdade.
+[12:49] Mas pensa bem, se ligava na tomada hardware lindo e o que aparecia?
+[12:53] Uma tela preta com cursor verde piscando na sua cara?
+[12:56] Pois é, as pessoas não sapiam por que comprar.
+[12:59] Faltava um motivo de verdade para ter aquilo em casa.
+[13:02] Para descobrir que motivo foi esse, aperte o próximo.
+[13:06] Imagina o trabalho que dava a fazer contabilidade nessa época.
+[13:10] Para recalcular o morçamento em uma planilha de papel, se você mudasse um juro lá no topo,
+[13:15] o contador tinha que apagar e refazer as contas de umas 20 colunas na mão.
+[13:19] Davão trabalho insano, mas aí aparece a salvação.
+[13:23] Dan Bricklin, nascido em 1951, tinha 28 anos e está vivo em 2026.
+[13:30] Ele era aluno lá em Harvard e imaginou uma tabela eletrônica mágica,
+[13:34] que fizesse isso sozinha na tela.
+[13:36] Aí, ele chamou um parceiro para ajudar a programar.
+[13:38] O Bob Frankstone, nascido em 1949, tinha 30 anos e está vivo em 2026.
+[13:46] Juntos, eles lançam o Vizicalc.
+[13:49] Isso foi no ano de 1979 e eles vendiam por 100 dólares.
+[13:54] A genialidade deles era muito simples e direta.
+[13:57] Você alterava uma única célula da planilha e todos os números vinculados se atualizavam na mesma hora.
+[14:04] Um ilagre para a época e o impacto econômico disso foi invertido, né?
+[14:08] Totalmente.
+[14:09] Pessoas iam nas lojas e pagavam absurdos, 1.300 dólares no Apple II,
+[14:14] apenas e exclusivamente para poder rodar aquele software de 100 dólares.
+[14:18] O rabo abandonando o cachorro de vez.
+[14:20] A lição é que o software, a partir desse ponto,
+[14:23] passa a justificar a existência e a compra do hardware.
+[14:26] O software decide qual máquina domina.
+[14:29] E com a Apple vendando muito, o Jobs já estava de olho no futuro.
+[14:33] Para saber onde ele foi parar, aperte o próximo.
+[14:36] A Apple estava perto de abrir o capital prestes a ficar trilionária.
+[14:39] E o Jobs fez um acordo super esperto.
+[14:42] Ele deixa a Xerox comprar 100 mil ações da Apple por 10 dólares cada uma,
+[14:47] antes do preço explodir na bolsa.
+[14:49] Mas não foi de graça.
+[14:51] Em troca, ele exigiu que os engenheiros da Apple visitassem um laboratório parque.
+[14:56] Exato.
+[14:57] A visita acontece lá em dezembro de 1979.
+[15:02] E quem teve que receber a equipe foi a pesquisadora Adele Goldberg,
+[15:07] nascida em 1945.
+[15:09] Tinha 34 anos e está viva em 2026.
+[15:13] Ela não queria mostrar, né?
+[15:15] Não queria mesmo.
+[15:16] Foi ordem expressa da diretoria.
+[15:19] E quando Jobs entra e vê o computador alto rodando com janelas, maus e ícones,
+[15:25] ele entra em choque.
+[15:27] Ele fica hipnotizado pela interface.
+[15:30] Só que o especialista sempre nota que ele teve um ponto cego enorme nesse dia.
+[15:35] Sim, foi um ponto cego histórico.
+[15:38] A Xerox também mostrou para eles a rede internet, os computadores conversando
+[15:43] e uma linguagem maravilhosa chamada Small Talk.
+[15:47] Mas Jobs ignorou tudo isso.
+[15:49] Ele só conseguia pensar naquela tela gráfica em como colocar aquilo em uma loja.
+[15:54] Só que aquela interface já estava na gaveta da Xerox fazia uns 6 anos,
+[15:58] porque era muito cara.
+[16:00] O grande desafio agora era fazer caber num hardware mais barato.
+[16:04] Mas enquanto ele focava nisso, a IBM acordou para ver a movimentação
+[16:08] da gigante azul aperte o próximo.
+[16:11] A IBM era dona do mundo corporativo.
+[16:14] Eles vendiam aqueles mainframes de milhões de dólares.
+[16:18] A cultura era de que microcomputador era só um brinquedo.
+[16:21] Tanto que o ditado era que ninguém nunca foi demitido por comprar IBM.
+[16:26] Pois é. Só que o mercado de PC estava crescendo.
+[16:29] Então o Bill Low, nascido em 1941, tinha 39 anos e morreu em 2013.
+[16:35] Ele resolve peitar diretoria e consegue autorização para criar um PC.
+[16:39] E o prazo que deram para ele foi de apenas 1 ano.
+[16:42] 1 ano para botar na rua.
+[16:44] Na loculha para os padrões da IBM.
+[16:47] Ele junta uma equipe de 12 caras na Flórida.
+[16:51] A liderança ficou com o Dom Astridge, nascido em 1937, tinha 43 anos
+[16:58] e morreu em 1985 num trágico acidente de avião.
+[17:03] Como o prazo era curto demais, não dava para IBM inventar chips novos do zero.
+[17:08] O Astridge tomou a decisão de usar peças de prateleira,
+[17:12] coisas que qualquer um comprava no mercado, tipo o processador 8088 da Intel.
+[17:17] E mais, o esquema de como tudo estava conectado lá dentro
+[17:21] foi publicado de forma totalmente aberta pela IBM.
+[17:25] Aí é que está assacada. Se a máquina usa peças comuns de catálogo,
+[17:29] o metal e as placas não são mais do que diferenciam os computadores.
+[17:33] O hardware vira prateleira. Mas para tudo isso funcionar, faltava um sistema operacional.
+[17:39] Para ver o que a IBM fez, aperte o próximo.
+[17:42] A IBM bate lá na porta da Microsoft, atrás daquele basic que o Gates já dominava.
+[17:47] E no meio do papo, perguntam de um sistema operacional.
+[17:50] O Gates não tinha, então ele aponta para o sistema CP barra M.
+[17:54] Que era do Gary Kildall, nascido em 1942, tinha 38 anos e morreu em 1994.
+[18:02] Isso, só que o negócio da IBM com que o Kildall não vai para frente dá tudo errado.
+[18:07] A IBM estava quase desvestindo até que a mãe do Gates entra na jogada.
+[18:12] A Mary Gates, nascida em 1929, tinha 51 anos e morreu em 1994.
+[18:19] Ela sentava no conselho de uma obra de caridade, junto com ninguém menos que o chefão da IBM.
+[18:26] O John Opel, nascido em 1925, tinha 55 anos e morreu em 2011.
+[18:32] A Mary fala do filho, ele lembra e manda a equipe voltar a conversar com o Bill Gates.
+[18:37] Um baita empurrão. A IBM ade o sistema.
+[18:40] E a Microsoft corre e compra um sistema pequeno de Seattle, o Kiddos.
+[18:44] Que foi feito pelo Tim Patterson, nascido em 1956, tinha 24 anos e está vivo em 2026.
+[18:53] Era um sistema bem provisório, rápido e sujo mesmo.
+[18:57] O Gates compra os direitos do Patterson por uns 50 mil dólares.
+[19:01] E é aqui que ele vira o jogo da indústria.
+[19:03] Ele licencia esse sistema que ele batizou de MS-DOS para IBM.
+[19:08] Só que sem exclusividade.
+[19:10] Foi a cláusula de ouro.
+[19:12] O IBM PC é lançado em agosto de 1981 por 1.565 dólares.
+[19:20] E como a arquitetura era aberta, as outras empresas começaram a fazer clones idênticos do hardware.
+[19:26] E todos esses computadores clonados precisavam do quê?
+[19:29] Para rodar os mesmos programas, precisavam do MS-DOS.
+[19:33] O domínio total passou de quem fazia o hardware para quem tinha a licença do software.
+[19:38] E enquanto a tela preta com letrinhas verdes dominava, a Apple continuava na luta pela tela gráfica.
+[19:44] Para voltar para essa disputa, aperte o próximo.
+[19:47] O primeiro grande lançamento gráfico da Apple foi o computador Lisa.
+[19:51] Isso em 1983.
+[19:53] E foi um fracasso gigante, custava quase 10 mil dólares e era pesado.
+[19:58] Muito lento.
+[19:59] Mas a grande volta por cima, a redenção deles chega no dia 24 de janeiro de 1984 com o lançamento do Macintosh.
+[20:08] Por 2.495 dólares.
+[20:11] E olha a coincidência, o Mac tinha 128 kilobytes de memória.
+[20:16] Que era exata a mesma quantidade que o alto da Charox tinha mais de 10 anos antes.
+[20:22] Como eles conseguiram enfiar aquela complexidade gráfica toda no Mac com tão pouca memória.
+[20:28] Engenharia profunda e trabalho em equipe.
+[20:31] No software teve o Bill Edkinson, nascido em 1951, tinha 32 anos e morreu em 2025.
+[20:38] O que ele fez?
+[20:39] Ele pegou o QuickDraw, que eram as rotinas de desenho da tela.
+[20:43] E em vez de botar na memória RAM, ele gravou tudo fixo num chip de memória RAM na placa.
+[20:49] Isso economizou muita memória de trabalho.
+[20:52] Ah, entendi.
+[20:53] E no lado do hardware?
+[20:54] Tivemos o Burl Smith, nascido em 1955, tinha 28 anos e está vivo em 2026.
+[21:02] Ele usou a mesmíssima ideia da Charox, de fazer o processador dividir o tempo entre rodar o programa e gerar o vídeo para a tela.
+[21:09] Só que com peças modernas, ele conseguiu baratear muito o custo.
+[21:13] Então, para fazer caber o preço, a engenharia de software teve que se virar do avesso para economizar a RAM.
+[21:19] E deu super certo.
+[21:21] Mas é claro que a Microsoft estava acompanhando isso de perto.
+[21:24] Para ver essa briga de gigantes, aperte o próximo.
+[21:27] A Microsoft desenvolvia aplicativos tipo Word e Excel direto para o Mac.
+[21:32] Então, eles via um sistema gráfico funcionando de perto.
+[21:35] Aí, no final de 1983, o Gates decide anunciar para o mundo o Windows.
+[21:40] O Jobs surtou. Acusou o Gates de roubo na cara dura, né?
+[21:44] Surtou mesmo.
+[21:45] E o Gates mandou aquela resposta famosa de que, na verdade, os dois tinham um vizinho muito rico chamado Charox.
+[21:52] E quando o Gates entrou na casa do vizinho para roubar a TV, ele viu que o Jobs já tinha passado a mão nela antes.
+[21:58] É uma ótima analogia.
+[21:59] Mas o Windows 1.0, que saiu em 1985, foi bem mal.
+[22:04] Ele era travado, lento.
+[22:06] O hardware dos clones de BC não aguentava o tranco da interface gráfica.
+[22:10] O hardware penava.
+[22:12] A virada só aconteceu para valer com o Windows 3.0 lá no ano de 1990.
+[22:18] Porque em 90, os processadores já eram bem mais rápidos e a memória estava abundante e barata para os PCs.
+[22:24] Finalmente, o hardware alcançou o software.
+[22:27] É só ver as estatísticas.
+[22:29] A gente tinha 8% das casas com computador em 1984.
+[22:34] Isso pulou para 22% em 1993 e bateu em 36% em 1997.
+[22:42] Uma curva impressionante.
+[22:44] O hardware empurrando e o software puxando até dominar as casas.
+[22:49] E para fechar e amarrar toda essa história, aperte o próximo.
+[22:52] Chegamos no nosso limite de 1990.
+[22:55] A máquina chegou em casa e fazendo um resumo super rápido, sem detalhar muito.
+[23:00] Kate, Tucker e Lampson inventaram tudo na Xerox.
+[23:04] O Roberts entregou a máquina bruta na caixa.
+[23:07] Gates e Ellen deram alma para ela.
+[23:10] Wozniak fez aquela engenharia linda de hardware.
+[23:13] Brickling e Frankston trouxeram um motivo comercial com a planilha.
+[23:18] Jobs resgatou a tela da gaveta.
+[23:21] O Street escancarou a arquitetura do hardware para IBM
+[23:25] e o Gates fisgou o controle pelo software.
+[23:28] Por fim, Watkinson e o Smith espremeram tudo isso num preço que a gente conseguia pagar.
+[23:34] A conclusão lógica é a nossa regra inicial.
+[23:37] Às vezes o hardware te dá liberdade, como 8080, permitindo que o basic nascesse.
+[23:43] Em outros momentos, é o software que puxa.
+[23:46] Tipo o visical que forçando a venda de Apple II
+[23:49] ou Windows exigindo que os clones tivessem mais memória.
+[23:52] Ninguém sentou e planejou isso. Foi totalmente orgânico.
+[23:55] Mas aí tem um detalhe que fica claro quando a gente olha para trás.
+[23:59] Nós temos milhões dessas máquinas absurdamente inteligentes
+[24:03] em cima das mesas pelo mundo inteiro.
+[24:05] Mas cada computador desse é uma ilha completamente isolada.
+[24:09] Sim, desconectada de tudo.
+[24:11] Exato. Se você precisa passar uma simples informação para a pessoa da sala do lado,
+[24:16] tem que gravar num disquete e andando até lá.
+[24:19] Então, a grande provocação para você pensar agora é essa,
+[24:22] com milhões de ilhas do mundo inteiro o que falta inventar para fazer essas máquinas conversarem.

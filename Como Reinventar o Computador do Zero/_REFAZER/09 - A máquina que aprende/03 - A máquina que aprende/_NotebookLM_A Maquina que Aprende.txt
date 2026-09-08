@@ -1,0 +1,519 @@
+Inicie dizendo: A Máquina que Aprende
+---------------
+
+Este e o terceiro episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da
+serie Como Reinventar o Computador do Zero. Os dois anteriores contaram as pecas
+correndo: o processador ate bater na parede do calor em dois mil e quatro, e a placa de
+video, feita pra jogo, que em dois mil e sete ficou aberta pra qualquer conta que seja a
+mesma em milhoes de numeros. O anterior terminou com uma pergunta: existe algum problema
+que a gente nao sabe escrever como programa, mas que da pra resolver so com muita conta
+repetida? E se a resposta estivesse guardada numa gaveta desde mil novecentos e cinquenta
+e oito? Este episodio abre a gaveta.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram a maquina que
+aprende, EM ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o
+software melhoram um empurrando o outro. Aqui o fio tem uma forma especial: a IDEIA
+existiu quarenta anos antes do HARDWARE que a tornou util, e o episodio mostra a ideia
+esperando a peca.
+
+ESTE EPISODIO COBRE DE 1943 A 2012, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio para. ATENCAO: o episodio
+anterior parou em dois mil e sete e este comeca em mil novecentos e quarenta e tres. A
+serie VOLTA NO TEMPO de proposito, mais uma vez, e desta vez pra buscar uma IDEIA, nao
+uma peca: a ideia da maquina que aprende e mais velha que o transistor. Dizer isso na
+tela 1, em uma frase, e seguir.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome. Dizer quem fez, onde estava e por
+que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Frank
+Rosenblatt, nascido em mil novecentos e vinte e oito, tinha vinte e nove anos; morreu em
+mil novecentos e setenta e um." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E
+UMA FRASE SO, dita e seguida em frente: sem comentario, sem contar mais nada da vida da
+pessoa. NAO pular ficha de ninguem e NAO inventar dado que nao esteja na ficha. Sao
+quatorze fichas: McCulloch, Pitts, Rosenblatt, Minsky, Papert, Werbos, Rumelhart,
+Hinton, Williams, LeCun, Vapnik, Ng, Li e Sutskever. Sao muitas: ler cada uma rapido e
+seguir.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer
+"ficha", "deixa eu ler a ficha", "olha a ficha dele" nem nada parecido: emendar direto
+no nome.
+
+UMA PESSOA SEM FICHA: Alex Krizhevsky, o aluno que escreveu a AlexNet, NAO tem ano de
+nascimento publico. Ele e nomeado (a rede leva o nome dele) mas NAO tem ficha. NAO
+inventar ficha pra ele, NAO dizer que falta a ficha, NAO comentar: so o nome. Hinton
+aparece duas vezes (1986 e 2012) e a ficha dele e lida so na primeira.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido". A frase so pode ser dita nos onze pedidos de verdade,
+porque a pagina corta o audio em cada vez que ela aparece.
+
+A PRIMEIRA GRAVACAO DESTE EPISODIO IGNOROU A ESTRUTURA INTEIRA E FOI DESCARTADA: durou
+vinte e seis minutos, nao pediu "aperte o Proximo" NENHUMA vez, nao avisou das 12 telas,
+nao leu as fichas no formato (espalhou os dados em comentarios), disse "genio",
+"genial" e "genialidade" varias vezes, disse "aquela nossa velha analogia" e falou em
+"inteligencia artificial" repetidas vezes. NAO REPETIR: sao ONZE pedidos de "aperte o
+Proximo", um no fim de cada tela de 1 a 11; QUATORZE fichas lidas no formato, uma frase
+cada; o aviso das 12 telas na tela 1; cerca de dezoito minutos, NUNCA mais de vinte; e
+as palavras proibidas ficam fora. Sem isso o episodio nao serve.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. A tela 2 e o neuronio de 1943 e o perceptron de
+Rosenblatt. A tela 3 e Minsky e Papert derrubando o perceptron em 1969. Duas telas, um
+pedido de Proximo entre elas. NAO falar de Minsky na tela 2.
+
+ATENCAO ESPECIAL COM AS TELAS 3 e 4. A tela 3 TERMINA na ideia indo pra gaveta. A tela 4
+e o backpropagation (1974 e 1986). NAO falar de backpropagation na tela 3.
+
+ATENCAO ESPECIAL COM AS TELAS 7 e 8. A tela 7 e a placa de video treinando rede (2009,
+Ng). A tela 8 e o ImageNet (Li). Duas telas, dois pedidos. NAO falar de ImageNet na tela
+7.
+
+ATENCAO ESPECIAL COM AS TELAS 9 e 10. A tela 9 e a AlexNet vencendo em 2012 e TERMINA no
+resultado (quinze virgula tres contra vinte e seis virgula dois). A tela 10 e OUTRA
+COISA: o que aconteceu por dentro, o programa achado e nao escrito. Um pedido de Proximo
+entre as duas.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 e o que veio depois (2013 a 2015) e
+TERMINA na NVIDIA vendendo placa pra isso. A tela 12 e o balanco, a licao e a pergunta
+que abre o proximo episodio. Um pedido de Proximo entre as duas. Na primeira gravacao do
+episodio 01 desta etapa as duas ultimas telas sairam emendadas: NAO repetir.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e quarenta e tres", "mil
+novecentos e cinquenta e sete", "mil novecentos e cinquenta e oito", "mil novecentos e
+sessenta", "mil novecentos e sessenta e nove", "mil novecentos e setenta e quatro", "mil
+novecentos e oitenta e seis", "mil novecentos e oitenta e nove", "mil novecentos e
+noventa e cinco", "mil novecentos e noventa e oito", "dois mil e quatro", "dois mil e
+seis", "dois mil e sete", "dois mil e nove", "dois mil e dez", "dois mil e doze", "dois
+mil e treze", "dois mil e quinze". Ano dito rapido em digito sai embolado.
+
+NUMEROS DEVAGAR: "quatrocentas fotocelulas", "sessenta milhoes de numeros", "quatorze
+milhoes de imagens", "vinte e duas mil categorias", "um milhao e duzentas mil imagens",
+"mil categorias", "quinze virgula tres por cento", "vinte e seis virgula dois por cento",
+"setenta vezes mais rapido", "cerca de dez por cento dos cheques".
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar quando
+indicado, porque em portugues eles embolam:
+
+- Warren McCulloch: fala-se "uó-ren mac-cá-loc". Walter Pitts: fala-se "uól-ter pits".
+- Frank Rosenblatt: fala-se "frânk rô-zen-blat". Perceptron: fala-se "per-cép-tron".
+  Cornell: fala-se "cor-nél". IBM: soletrar, "i, be, eme".
+- Marvin Minsky: fala-se "már-vin míns-qui". Seymour Papert: fala-se "sí-mor pêi-pert".
+  MIT: soletrar, "eme, i, te". XOR: dizer "ou exclusivo".
+- Paul Werbos: fala-se "pól uér-bos". Harvard: fala-se "rár-vard".
+- Backpropagation: dizer "retropropagacao" na primeira vez e depois "retropropagacao
+  do erro" ou so "propagar o erro pra tras"; NAO dizer a palavra em ingles.
+- David Rumelhart: fala-se "dêi-vid rú-mel-rart". Geoffrey Hinton: fala-se "djé-fri
+  rín-ton". Ronald Williams: fala-se "ró-nald uí-liams". Nature: fala-se "nêi-tcher",
+  a revista.
+- Yann LeCun: fala-se "iân le-cân". Bell Labs: fala-se "bél lébs". CEP: dizer "o codigo
+  postal". LeNet: fala-se "le-nét". NCR: soletrar, "ene, ce, erre". AT&T: dizer "a te e
+  te".
+- Vladimir Vapnik: fala-se "vla-dí-mir váp-nic". SVM: dizer "maquina de vetores de
+  suporte" uma vez e depois "o metodo do Vapnik".
+- CIFAR: fala-se "sái-far", um instituto do Canada. Toronto: fala-se "to-rôn-to".
+- Andrew Ng: fala-se "ân-dru êng". Stanford: fala-se "stén-ford". CUDA: fala-se
+  "cú-da".
+- Fei-Fei Li: fala-se "fêi-fêi li". ImageNet: fala-se "í-medj-net". Amazon Mechanical
+  Turk: dizer "o servico de pequenas tarefas da Amazon" e o nome "me-cá-ni-cal turc".
+  Princeton: fala-se "prín-ston".
+- Alex Krizhevsky: fala-se "á-lecs cri-jévs-qui". Ilya Sutskever: fala-se "í-lia
+  sút-ske-ver". AlexNet: fala-se "á-lecs-net". GeForce GTX 580: dizer "dji-fórs ge te
+  xis quinhentos e oitenta".
+- Google: fala-se "gú-gol". Facebook: fala-se "fêis-buc".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu", "conforme o documento", "a analogia autorizada" nem nada
+parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "A Maquina que Aprende". As palavras "inicie dizendo"
+NUNCA sao ditas em voz alta.
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. NAO abrir com
+"imagina a seguinte cena", NAO abrir com um fato de tela posterior como isca, e NAO abrir
+com comparacao nenhuma. Depois do titulo, a primeira frase e a retomada de dois mil e
+sete.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir ou
+mexer em peca nenhuma na capa da pagina. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+ESTE EPISODIO E O TERCEIRO DE QUATRO. Na ultima tela, balanco das pessoas, a licao do
+episodio e a pergunta que abre o proximo. NAO explicar como a rede le texto, NAO falar
+de tradutor, de atencao nem de Transformer: e o episodio seguinte. A pergunta final so
+aponta.
+
+DURACAO: cerca de 18 minutos. Nao esticar, nao repetir, nao comentar cada fato duas
+vezes. E nao encurtar pulando as datas e as fichas do roteiro.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade,
+lendario, revolucionario. E a expressao "inteligencia artificial": este episodio fala
+de "rede", "maquina que aprende" e "aprendizado profundo", nunca de "inteligencia
+artificial", nem no nome do laboratorio do MIT (dizer "o laboratorio do MIT").
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- Os botoes de volume: um neuronio artificial soma varias entradas, cada uma passando por
+  um botao giratorio que aumenta ou diminui o quanto ela conta (o peso), e dispara se a
+  soma passar de um limite. Uma rede e uma caixa cheia desses botoes. Aprender e girar
+  cada botao um pouquinho, na direcao que faz o erro diminuir, milhares de vezes. No
+  perceptron de mil novecentos e sessenta os botoes eram de verdade: potenciometros
+  girados por motor. Na AlexNet sao sessenta milhoes de numeros na memoria da placa. O
+  botao e a mesma ideia.
+- A equipe de pintores, herdada do episodio anterior, pode ser lembrada em UMA frase pra
+  dizer o que a placa de video e (centenas de processadores fazendo a mesma conta em
+  numeros diferentes). Nao desenvolver.
+
+Fora essas, sem analogias. NAO comparar a rede com cerebro, neuronio de verdade ou
+crianca aprendendo, alem da frase historica de que a ideia foi inspirada no neuronio.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A IDEIA NA GAVETA
+
+Retomar em duas frases onde a serie parou: em dois mil e sete a placa de video, feita pra
+jogo, ficou aberta pra qualquer conta que seja a mesma em milhoes de numeros. A pergunta
+que ficou: existe algum problema que a gente nao sabe escrever como programa, mas que da
+pra resolver so com muita conta repetida? E se a resposta estivesse guardada numa gaveta
+desde mil novecentos e cinquenta e oito?
+
+Responder direto: existe, e a resposta e a maquina que aprende. Em vez de escrever as
+regras (o que faz um gato ser um gato), da-se a maquina milhares de exemplos e um
+mecanismo que ajusta os proprios numeros ate acertar. O programa nao e escrito: e achado.
+
+Explicar o que e, com a analogia dos botoes, inteira, aqui, uma vez: o neuronio
+artificial, os pesos como botoes, o limite, e aprender como girar os botoes na direcao
+que diminui o erro.
+
+Avisar que a serie volta no tempo de proposito, mais uma vez, ate mil novecentos e
+quarenta e tres, e que desta vez e pra buscar uma IDEIA, nao uma peca: a ideia da maquina
+que aprende e mais velha que o transistor, e passou quase cinquenta anos esperando o
+hardware ficar barato o bastante. Como o Alto da Xerox esperou na gaveta ate o Mac.
+
+Dizer o fio: pessoas em ordem, e em cada passo o hardware e o software empurrando um ao
+outro; aqui, quase sempre, a ideia na frente e a peca atrasada.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e quarenta e tres a
+dois mil e doze.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver o neuronio virar conta e a conta virar maquina.
+
+TELA 2 - MIL NOVECENTOS E QUARENTA E TRES A SESSENTA: O PERCEPTRON
+
+Contar em duas frases o comeco: em mil novecentos e quarenta e tres, em Chicago, Warren
+McCulloch, neurofisiologista, e Walter Pitts, um logico autodidata de vinte anos,
+escrevem que um neuronio pode ser descrito como uma porta logica: soma entradas, dispara
+se passar de um limite. E a logica de Boole, da etapa quatro, escrita em cima de uma
+celula.
+
+FICHA: Warren McCulloch, nascido em mil oitocentos e noventa e oito, tinha quarenta e
+cinco anos; morreu em mil novecentos e sessenta e nove. Walter Pitts, nascido em mil
+novecentos e vinte e tres, tinha vinte anos; morreu em mil novecentos e sessenta e nove.
+
+Contar a pessoa e a ideia: Frank Rosenblatt, psicologo no laboratorio aeronautico da
+universidade Cornell, cria em mil novecentos e cinquenta e sete o perceptron: um neuronio
+desses com os pesos ajustaveis, e uma regra pra ajustar: se errou, gira os botoes um
+pouco na direcao certa. Ele simula num IBM 704, o computador grande da epoca. Em oito de
+julho de mil novecentos e cinquenta e oito a Marinha americana faz uma coletiva e o New
+York Times escreve que nasceu "o embriao de um computador que vai andar, falar, ver,
+escrever e ter consciencia de existir".
+
+FICHA: Frank Rosenblatt, nascido em mil novecentos e vinte e oito, tinha vinte e nove
+anos; morreu em mil novecentos e setenta e um.
+
+Contar a maquina, que e o ponto de hardware: entre mil novecentos e cinquenta e nove e
+sessenta Rosenblatt constroi o Mark I Perceptron, uma maquina de verdade: quatrocentas
+fotocelulas numa grade de vinte por vinte, olhando pra uma imagem, e os pesos sao
+potenciometros, botoes de verdade, girados por motores eletricos conforme a maquina erra.
+Ela aprende a distinguir letras.
+
+Dizer a licao de hardware e software: o algoritmo era tao novo que precisou de hardware
+feito sob medida, com botao fisico. E a promessa do jornal era mil vezes maior que a
+maquina.
+
+Fechar pedindo o Proximo pra ver dois professores do MIT provarem o que essa maquina nao
+consegue fazer.
+
+TELA 3 - MIL NOVECENTOS E SESSENTA E NOVE: A GAVETA
+
+Contar as pessoas: Marvin Minsky e Seymour Papert, do laboratorio de inteligencia
+artificial do MIT, publicam em mil novecentos e sessenta e nove o livro "Perceptrons".
+
+FICHA: Marvin Minsky, nascido em mil novecentos e vinte e sete, tinha quarenta e um anos;
+morreu em dois mil e dezesseis. Seymour Papert, nascido em mil novecentos e vinte e oito,
+tinha quarenta e um anos; morreu em dois mil e dezesseis.
+
+Explicar o que o livro prova, sem formula: um perceptron de uma camada so nao consegue
+aprender o "ou exclusivo": dizer sim quando uma entrada esta ligada OU a outra, mas nao
+quando as duas estao. E uma conta trivial pra qualquer porta logica da etapa cinco, e o
+perceptron nao aprende. Com mais camadas de neuronios daria; mas ninguem sabia ajustar os
+botoes das camadas do meio, e o hardware da epoca nao aguentava tentar.
+
+Dizer a consequencia: o livro e apontado como o gatilho do corte de verba pra redes
+neurais nos anos setenta, o que depois foi chamado de primeiro inverno. A ideia vai pra
+gaveta. Rosenblatt morre em mil novecentos e setenta e um, num acidente de barco, no dia
+em que fazia quarenta e tres anos.
+
+Dizer a licao de hardware e software: uma critica correta sobre o algoritmo de uma
+camada, num tempo em que o hardware nao dava pra experimentar com mais camadas, guardou a
+ideia por quinze anos. Terminar a tela na gaveta fechada.
+
+Fechar pedindo o Proximo pra ver a chave da gaveta ser escrita duas vezes.
+
+TELA 4 - MIL NOVECENTOS E SETENTA E QUATRO A OITENTA E SEIS: PROPAGAR O ERRO PRA TRAS
+
+Contar a primeira escrita, que ninguem leu: em mil novecentos e setenta e quatro Paul
+Werbos, aluno de doutorado em Harvard, descreve na tese um jeito de ajustar os botoes das
+camadas do meio: calcular quanto cada botao contribuiu pro erro final e girar cada um na
+proporcao, de tras pra frente. A tese fica na biblioteca.
+
+FICHA: Paul Werbos, nascido em mil novecentos e quarenta e sete, tinha vinte e sete anos;
+vivo em dois mil e vinte e seis.
+
+Contar a segunda escrita, que todo mundo leu: em nove de outubro de mil novecentos e
+oitenta e seis a revista Nature publica um artigo de David Rumelhart, Geoffrey Hinton e
+Ronald Williams com o mesmo metodo, agora com o nome que ficou, a retropropagacao do
+erro, e com exemplos rodando: redes de varias camadas aprendem o ou exclusivo e coisas
+que o perceptron nao aprendia.
+
+FICHA: David Rumelhart, nascido em mil novecentos e quarenta e dois, tinha quarenta e
+quatro anos; morreu em dois mil e onze. Geoffrey Hinton, nascido em mil novecentos e
+quarenta e sete, tinha trinta e oito anos; vivo em dois mil e vinte e seis. Ronald
+Williams, nascido em mil novecentos e quarenta e cinco, tinha quarenta e um anos; morreu
+em dois mil e vinte e quatro.
+
+Explicar o metodo em uma frase, com os botoes: a rede erra; o erro e repartido de tras
+pra frente entre os botoes, cada um recebe a sua parte da culpa, e cada um gira um
+pouquinho; repete milhares de vezes.
+
+Dizer a licao de hardware e software: o algoritmo que abre a gaveta existia desde mil
+novecentos e setenta e quatro. Em mil novecentos e oitenta e seis o hardware ja rodava
+ele em estacoes de trabalho, devagar. A ideia voltou, mas so pra problemas pequenos.
+
+Fechar pedindo o Proximo pra ver a rede ler o codigo postal de uma carta.
+
+TELA 5 - MIL NOVECENTOS E OITENTA E NOVE A NOVENTA E OITO: A REDE LE CHEQUE
+
+Contar a pessoa e o problema: Yann LeCun, frances, chega a Bell Labs em mil novecentos e
+oitenta e oito e ataca um problema pequeno e util: ler digitos escritos a mao, o codigo
+postal dos envelopes do correio americano.
+
+FICHA: Yann LeCun, nascido em mil novecentos e sessenta, tinha vinte e nove anos; vivo em
+dois mil e vinte e seis.
+
+Contar a ideia, que e a que a AlexNet vai usar: a rede convolucional. Em vez de cada
+neuronio olhar a imagem inteira, pequenos filtros varrem a imagem procurando tracos
+simples (uma borda, um canto), e as camadas seguintes juntam tracos em partes e partes em
+digitos. Menos botoes, e a rede reconhece o digito onde ele estiver. Publicado em mil
+novecentos e oitenta e nove; a versao madura, a LeNet-5, em mil novecentos e noventa e
+oito.
+
+Contar o uso real: a AT&T e a NCR poem isso em maquinas de ler cheque a partir de mil
+novecentos e noventa e seis. Por volta de dois mil e um, cerca de dez por cento dos
+cheques dos Estados Unidos passam por uma rede neural. Rodando em chips desenhados pra
+isso pela propria Bell Labs.
+
+Dizer a licao de hardware e software: o primeiro uso real e num problema pequeno, com
+imagem pequena, e ainda assim precisou de chip proprio. Pra imagem grande e categoria
+aberta, o hardware nao existia.
+
+Fechar pedindo o Proximo pra ver a ideia voltar pra gaveta pela segunda vez.
+
+TELA 6 - MIL NOVECENTOS E NOVENTA E CINCO A DOIS MIL E SEIS: O SEGUNDO INVERNO
+
+Contar o rival: em mil novecentos e noventa e cinco Vladimir Vapnik, matematico russo
+tambem na Bell Labs, publica com Corinna Cortes a maquina de vetores de suporte, um
+metodo que aprende com garantia matematica de que vai generalizar, treina rapido e nao
+tem botao pra ajustar no escuro. Nos anos seguintes ele ganha quase todos os testes
+comparativos.
+
+FICHA: Vladimir Vapnik, nascido em mil novecentos e trinta e seis, tinha cinquenta e oito
+anos; vivo em dois mil e vinte e seis.
+
+Dizer o que aconteceu com as redes: sairam de moda de novo. Poucos alunos, pouca verba,
+artigos rejeitados. Hinton, agora em Toronto, e um punhado de gente continua. Em dois mil
+e quatro um instituto canadense, o CIFAR, paga um programa pequeno pra esse grupo se
+reunir. Em dois mil e seis Hinton publica um jeito de treinar redes com muitas camadas,
+camada por camada, e chama de aprendizado profundo. O nome pega, o resultado ainda nao.
+
+Dizer a licao de hardware e software: faltavam duas coisas que o algoritmo nao podia dar:
+dado suficiente pra ajustar milhoes de botoes, e hardware pra fazer a conta em tempo
+util. As duas estavam sendo construidas em outro lugar, por outros motivos.
+
+Fechar pedindo o Proximo pra ver a placa de jogo entrar na sala.
+
+TELA 7 - DOIS MIL E SETE A DOIS MIL E NOVE: A PLACA DE JOGO TREINA A REDE
+
+Lembrar em uma frase o episodio anterior: em dois mil e sete o CUDA abriu a placa de
+video pra qualquer conta que seja a mesma em muitos numeros.
+
+Dizer por que isso serve pra rede: treinar uma rede e, no fundo, multiplicar tabelas
+grandes de numeros, as entradas pelos pesos, camada por camada, e depois de tras pra
+frente. E exatamente a mesma conta em milhoes de numeros. A equipe de pintores do
+episodio anterior estava esperando esse trabalho.
+
+Contar a pessoa e o artigo: em junho de dois mil e nove Andrew Ng, professor em Stanford,
+com dois alunos, publica o treino de redes profundas em placa de video: ate setenta vezes
+mais rapido que num processador de dois nucleos. O que levava semanas passa a levar um
+dia.
+
+FICHA: Andrew Ng, nascido em mil novecentos e setenta e seis, tinha trinta e tres anos;
+vivo em dois mil e vinte e seis.
+
+Dizer a licao de hardware e software, que e o encontro do episodio: a peca feita pra jogo
+em mil novecentos e noventa e seis e aberta em dois mil e sete encontra o algoritmo de
+mil novecentos e oitenta e seis. Nenhum dos dois foi feito pro outro.
+
+Fechar pedindo o Proximo pra ver a outra metade que faltava: o dado.
+
+TELA 8 - DOIS MIL E SETE A DOIS MIL E DEZ: O IMAGENET
+
+Contar a pessoa e a ideia: Fei-Fei Li, professora em Princeton e depois em Stanford,
+decide que o problema da area nao e so algoritmo: e falta de exemplo. Uma rede so aprende
+do que ve. Ela monta o ImageNet: quatorze milhoes de imagens da internet, organizadas em
+vinte e duas mil categorias, cada uma rotulada por pessoas, pagas por tarefa pelo servico
+de pequenas tarefas da Amazon, entre dois mil e oito e dois mil e dez. Apresenta em junho
+de dois mil e nove.
+
+FICHA: Fei-Fei Li, nascida em mil novecentos e setenta e seis, tinha trinta e dois anos;
+viva em dois mil e vinte e seis.
+
+Contar o desafio: a partir de dois mil e dez, um campeonato anual: um milhao e duzentas
+mil imagens de treino, mil categorias, e a pergunta "o que tem nesta foto". O melhor de
+dois mil e dez erra vinte e oito por cento; o de dois mil e onze, vinte e cinco virgula
+oito. Nenhum dos dois usa rede neural.
+
+Dizer a licao de hardware e software: o dado e a terceira peca, e e software tambem: uma
+rede aprende dos exemplos, e alguem teve que montar os exemplos, a mao, milhoes de vezes.
+Em dois mil e onze as tres pecas estao na mesa: o algoritmo de oitenta e seis, a placa de
+dois mil e sete, o dado de dois mil e nove. Falta alguem juntar.
+
+Fechar pedindo o Proximo pra ver duas placas de jogo num quarto em Toronto.
+
+TELA 9 - DOIS MIL E DOZE: A ALEXNET
+
+Contar as pessoas: em Toronto, no grupo de Hinton, um aluno de doutorado, Alex
+Krizhevsky, e um colega, Ilya Sutskever, entram no desafio do ImageNet de dois mil e doze
+com uma rede convolucional, do tipo que LeCun fez em oitenta e nove, so que enorme: oito
+camadas, sessenta milhoes de botoes.
+
+FICHA: Ilya Sutskever, nascido em mil novecentos e oitenta e seis, tinha vinte e cinco
+anos; vivo em dois mil e vinte e seis.
+
+Contar o hardware, que e o centro da tela: a rede e treinada em DUAS placas de video
+GeForce GTX 580, placas de jogo, de uns quinhentos dolares cada, no computador do proprio
+Krizhevsky, durante cinco a seis dias. Krizhevsky escreveu o codigo da placa a mao, em
+CUDA. Sem as duas placas, o treino levaria meses num processador.
+
+Contar o resultado: em trinta de setembro de dois mil e doze saem os numeros. A rede
+deles, que ficou conhecida como AlexNet, erra quinze virgula tres por cento. O segundo
+colocado, sem rede neural, erra vinte e seis virgula dois. Nunca um campeonato desses
+tinha caido tanto de um ano pro outro.
+
+Dizer a licao de hardware e software: duas placas feitas pra jogo fizeram em uma semana o
+que em mil novecentos e oitenta e seis nao dava pra fazer em nenhum prazo. A ideia da
+gaveta de cinquenta e oito encontrou a peca.
+
+Fechar pedindo o Proximo pra ver o que aconteceu dentro daquela rede.
+
+TELA 10 - O PROGRAMA ACHADO
+
+Dizer o que ninguem escreveu: nenhuma linha da AlexNet diz o que e um gato. O codigo que
+Krizhevsky escreveu descreve a forma da rede e a regra de girar os botoes. So isso.
+
+Dizer o que a maquina achou: sessenta milhoes de numeros, girados pelo erro, um
+pouquinho por vez, ao longo de mais de um milhao de imagens. Esses sessenta milhoes de
+numeros e que reconhecem o gato. Eles sao o programa. E ninguem sabe ler esse programa:
+da pra medir que ele funciona, nao da pra explicar o que cada numero faz.
+
+Dizer a virada da serie, com todas as letras: desde a etapa cinco o programa era uma lista
+de instrucoes escrita por uma pessoa. Aqui o programa e achado, nao escrito. O que a
+pessoa escreve e o metodo de achar.
+
+Dizer a licao de hardware e software: o hardware barato nao mudou so a velocidade; mudou
+o que o software e. Quando a conta fica barata o bastante, da pra trocar "escrever a
+regra" por "procurar a regra".
+
+Fechar pedindo o Proximo pra ver o que aconteceu nos tres anos seguintes.
+
+TELA 11 - DOIS MIL E TREZE A DOIS MIL E QUINZE: TODO MUNDO MUDA DE PECA
+
+Contar, em ordem: em marco de dois mil e treze o Google compra a pequena empresa dos tres
+de Toronto e leva Hinton, Krizhevsky e Sutskever. Em dezembro de dois mil e treze o
+Facebook contrata LeCun pra montar um laboratorio. Os grupos que perderam pra AlexNet em
+dois mil e doze estao todos usando rede convolucional e placa de video em dois mil e
+treze.
+
+Contar o numero: o erro do ImageNet cai todo ano; em dois mil e quinze uma rede com cento
+e cinquenta e duas camadas erra tres virgula seis por cento, menos que uma pessoa
+treinada.
+
+Dizer o que muda no hardware: a NVIDIA, que fazia placa pra jogo, passa a desenhar e
+vender a mesma peca pra treinar rede, com mais memoria e sem saida de video. O software
+mudou o que se pede da peca, de novo.
+
+Dizer a licao de hardware e software: a demanda por hardware muda de dono. Ate dois mil e
+doze quem puxava a placa era o jogo; a partir dali, e a rede.
+
+Fechar pedindo o Proximo pra dizer onde isto para. ESTE PEDIDO E OBRIGATORIO: a tela 11
+acaba aqui. O balanco e a tela 12.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e doze, com a AlexNet vencendo o ImageNet em duas
+placas de jogo, e o programa achado em vez de escrito.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: McCulloch e
+Pitts escreveram o neuronio como porta logica. Rosenblatt construiu a maquina com botoes
+de verdade. Minsky e Papert provaram o limite de uma camada e a ideia foi pra gaveta.
+Werbos escreveu a chave e ninguem leu; Rumelhart, Hinton e Williams escreveram de novo e
+todo mundo leu. LeCun pos a rede pra ler cheque. Vapnik ganhou a decada seguinte com
+outro metodo. Ng pos a rede na placa de jogo. Li montou os quatorze milhoes de exemplos.
+Krizhevsky e Sutskever juntaram tudo em duas placas num quarto. Ninguem planejou o
+conjunto.
+
+Dizer a licao do episodio em duas frases: a ideia estava na gaveta desde mil novecentos e
+cinquenta e oito, como o Alto da Xerox esperou dez anos pelo Mac. O que mudou nao foi a
+ideia: foi a placa de video ter ficado barata.
+
+Deixar a pergunta no ar, sem responder, SEM falar de atencao nem de Transformer: a rede da
+AlexNet olha a imagem inteira de uma vez, e e por isso que a placa gosta dela. Mas texto
+nao e assim: uma frase e uma fila de palavras, uma depois da outra, e o sentido de uma
+depende das que vieram antes. Como e que uma maquina que gosta de fazer tudo ao mesmo
+tempo le uma fila?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

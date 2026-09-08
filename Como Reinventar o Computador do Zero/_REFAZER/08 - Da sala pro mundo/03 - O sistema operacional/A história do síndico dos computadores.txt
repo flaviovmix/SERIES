@@ -1,0 +1,7 @@
+Titulo: A história do síndico dos computadores
+Notebook: 08-03-O sistema operacional
+
+Descricao:
+O texto apresenta o roteiro e o contexto de um episódio sobre sistemas operacionais, integrando a série "Como Reinventar o Computador do Zero". A narrativa utiliza a analogia de um síndico de prédio para explicar como esse software gerencia o processador, a memória e os periféricos, atuando como ponte entre hardware e usuário. O conteúdo percorre a história de 1961 a 1997, destacando figuras centrais como Fernando Corbató, Ken Thompson, Dennis Ritchie e Linus Torvalds. Os documentos detalham a evolução técnica, desde o surgimento do tempo compartilhado no MIT e a criação do Unix, até a consolidação de gigantes como Windows, Mac OS e Linux. Além do progresso tecnológico, as fontes enfatizam como licenças de código aberto e padrões acessíveis permitiram que o software se libertasse de hardwares específicos. Por fim, o material orienta uma estrutura didática rigorosa, focada na cronologia das pessoas e nas transformações que levaram a computação das salas corporativas para o uso doméstico em rede.
+
+Link: https://notebook.google.com/notebook/780f3533-d39f-4ae5-973f-c4b9724ddb9b

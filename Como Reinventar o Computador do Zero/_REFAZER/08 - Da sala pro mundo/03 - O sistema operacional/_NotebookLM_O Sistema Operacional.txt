@@ -1,0 +1,490 @@
+Inicie dizendo: O Sistema Operacional
+---------------
+
+Este e o terceiro e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie
+Como Reinventar o Computador do Zero. Os dois episodios anteriores levaram o computador
+pra dentro de casa e ligaram as casas em rede, e os dois usaram a palavra "sistema
+operacional" varias vezes (o DOS que a Microsoft comprou, o Windows por cima do DOS)
+sem nunca dizer o que e um. Este episodio paga essa divida.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram o sistema
+operacional, EM ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o
+software melhoram um empurrando o outro. Quando aparecer venda, processo ou "esmagou",
+e pra dizer o que aquilo permitiu ou impediu de construir, nao como assunto em si.
+
+ESTE EPISODIO COBRE DE 1961 A 1997, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. ATENCAO: o episodio
+anterior parou em 1995 e este comeca em 1961. A serie esta VOLTANDO NO TEMPO de
+proposito, pela terceira e ultima vez. Avisar isso na tela 1, em uma frase, e explicar
+o motivo: o sistema operacional foi sendo construido debaixo das duas historias
+anteriores, e so agora a serie para pra olhar pra ele.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome. Dizer quem fez, onde estava e por
+que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Dennis
+Ritchie, nascido em mil novecentos e quarenta e um, tinha vinte e oito anos; morreu em
+dois mil e onze." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE SO,
+dita e seguida em frente: sem comentario, sem contar mais nada da vida da pessoa. NAO
+pular ficha de ninguem e NAO inventar dado que nao esteja na ficha.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido". A frase so pode ser dita nos onze pedidos de verdade,
+porque a pagina corta o audio em cada vez que ela aparece.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. A tela 2 e o tempo compartilhado e o Multics
+(Corbato). A tela 3 e o Unix (Thompson e Ritchie). Duas telas, um pedido de Proximo
+entre elas. NAO falar de Unix na tela 2.
+
+ATENCAO ESPECIAL COM AS TELAS 3 e 4. A tela 3 e o Unix nascendo no PDP-7. A tela 4 e a
+linguagem C e o Unix reescrito nela. Duas telas, dois pedidos. NAO falar de C na tela 3.
+
+ATENCAO ESPECIAL COM AS TELAS 6 e 7. A tela 6 e o sistema ganhando cara (Mac e Windows
+por cima do DOS). A tela 7 e a briga e o Windows 95. Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 8 e 9. A tela 8 e Stallman e o GNU, e TERMINA em "falta o
+nucleo". A tela 9 e Tanenbaum, o Minix e Torvalds. NAO falar de Linux na tela 8.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 e onde o Linux foi parar, e TERMINA
+no Android e nas maquinas de inteligencia artificial. A tela 12 e OUTRA COISA: o
+balanco, a licao da etapa e a pergunta que abre a etapa final. Um pedido de Proximo
+entre as duas.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e sessenta e um", "mil
+novecentos e sessenta e quatro", "mil novecentos e sessenta e nove", "mil novecentos e
+setenta e tres", "mil novecentos e setenta e quatro", "mil novecentos e oitenta e tres",
+"mil novecentos e oitenta e quatro", "mil novecentos e oitenta e oito", "mil novecentos
+e noventa e um", "mil novecentos e noventa e tres", "mil novecentos e noventa e cinco",
+"mil novecentos e noventa e sete". Ano dito rapido em digito sai embolado.
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar quando
+indicado, porque em portugues eles embolam:
+
+- MIT: soletrar, "eme, i, te". CTSS: soletrar, "ce, te, esse, esse". Multics: fala-se
+  "múl-tics". Fernando Corbato: fala-se "cor-ba-tó".
+- Bell Labs: fala-se "bél lébs". Ken Thompson: fala-se "tôm-son". Dennis Ritchie:
+  fala-se "rí-tchi". Unix: fala-se "iú-nics". PDP-7: fala-se "pe-de-pe sete".
+- A linguagem C: dizer "a linguagem cê".
+- Gary Kildall: fala-se "kíl-dol". CP/M: soletrar, "ce, pe, barra, eme". DOS: fala-se
+  "dós".
+- Macintosh: fala-se "me-quin-toch". Windows: fala-se "uín-dous". Bill Gates: fala-se
+  "guêits". John Sculley: fala-se "scâ-li".
+- Richard Stallman: fala-se "stól-man". GNU: fala-se "guê-nu". GPL: soletrar, "ge,
+  pe, ele".
+- Andrew Tanenbaum: fala-se "tá-nen-baum". Minix: fala-se "mí-nics". Linus Torvalds:
+  fala-se "lí-nus tór-valds". Linux: fala-se "lí-nucs". Helsinque: e a capital da
+  Finlandia.
+- Dave Cutler: fala-se "cât-ler". Windows NT: dizer "uín-dous ene te". NeXT: fala-se
+  "néxt". Steve Jobs: fala-se "djóbs". Android: fala-se "ân-droid".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "conforme o documento", "a analogia autorizada" nem nada parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "O Sistema Operacional". As palavras "inicie
+dizendo" NUNCA sao ditas em voz alta.
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA. NAO abrir com "imagina a seguinte cena" nem
+com comparacao que nao esteja na secao ANALOGIAS.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir ou
+mexer em peca nenhuma na capa da pagina. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+ESTE EPISODIO FECHA A ETAPA. Na ultima tela, alem de fechar o episodio, fazer o balanco
+curto da etapa inteira (o computador entrou em casa, virou rede, e ganhou o sistema
+que roda os outros) e deixar no ar a pergunta que abre a etapa final da serie. NAO
+explicar processador moderno, placa de video nem inteligencia artificial: sao a etapa
+seguinte.
+
+DURACAO: cerca de 18 minutos. Nao esticar, nao repetir, nao comentar cada fato duas
+vezes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O sindico do predio: o sistema operacional e o sindico. Ele nao mora em apartamento
+  nenhum, mas decide quem usa o elevador agora (o processador), qual apartamento e de
+  quem (a memoria), guarda a correspondencia com nome (os arquivos) e cuida da portaria
+  que todo mundo usa sem saber como funciona (teclado, tela, impressora). Um predio sem
+  sindico e um predio onde um morador so pode usar tudo de cada vez.
+
+Fora essa, sem analogias. Explicar direto. Tempo compartilhado e memoria protegida sao
+explicados literalmente, nao por comparacao.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A PALAVRA QUE FICOU SEM EXPLICACAO
+
+Retomar em duas frases onde a serie parou: o computador entrou em casa, as casas se
+ligaram em rede, e a rede abriu pro comercio em mil novecentos e noventa e cinco.
+
+Dizer a divida: nos dois episodios anteriores a palavra "sistema operacional" apareceu
+varias vezes, o DOS que a Microsoft comprou, o Windows por cima do DOS, o Mac, e a
+serie nunca disse o que e um. Este episodio explica.
+
+Dizer o que e, com todas as letras: o sistema operacional e o programa que roda os
+outros programas. Ele decide quem usa o processador agora, onde cada programa mora na
+memoria, transforma o disco em arquivos com nome, e faz teclado, tela e impressora
+virarem pecas que os programas usam sem saber a marca. E a camada entre o hardware e
+todo o resto.
+
+Usar a analogia do sindico, inteira.
+
+Avisar que a serie vai voltar no tempo de proposito, pela terceira e ultima vez, ate
+mil novecentos e sessenta e um: o sistema operacional foi construido debaixo das duas
+historias anteriores, e so agora a serie para pra olhar pra ele.
+
+Dizer o fio: como nos dois anteriores, pessoas em ordem, e em cada passo o hardware e o
+software empurrando um ao outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e sessenta e um a
+mil novecentos e noventa e sete.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver como era um computador sem sindico.
+
+TELA 2 - MIL NOVECENTOS E SESSENTA E UM: O TEMPO COMPARTILHADO
+
+Descrever como era antes: o computador rodava um programa de cada vez. Um operador
+humano pegava a pilha de cartoes de um usuario, colocava na maquina, esperava acabar,
+tirava o resultado impresso, e so entao colocava a pilha do proximo. Quem escreveu o
+programa esperava horas, as vezes um dia, pra saber que tinha errado uma virgula.
+
+Dizer o desperdicio, que e o motivo de tudo: a maquina custava milhoes e passava a
+maior parte do tempo parada, esperando o operador trocar de pilha ou esperando a
+impressora.
+
+Contar a pessoa e a ideia: Fernando Corbato, no MIT, faz em mil novecentos e sessenta e
+um o CTSS, o primeiro sistema de tempo compartilhado que funcionou. A ideia: varios
+usuarios ligados por terminal ao mesmo tempo, e o sistema trocando de programa tao
+rapido, varias vezes por segundo, que cada usuario acha que a maquina e so dele.
+
+FICHA: Fernando Corbato, nascido em mil novecentos e vinte e seis, tinha trinta e cinco
+anos; morreu em dois mil e dezenove.
+
+Explicar o que o sistema precisa fazer pra isso dar certo, e essa e a lista que vale
+ate hoje: guardar o estado de um programa quando tira ele do processador e devolver
+quando poe de volta; impedir que um programa leia ou estrague a memoria do outro; e
+dar a cada um a impressao de que a maquina inteira e dele.
+
+Contar o Multics em duas frases: em mil novecentos e sessenta e quatro o MIT, a General
+Electric e a Bell Labs comecam o Multics, o sistema que ia ter tudo isso e mais:
+qualquer coisa na maquina e um arquivo com nome, a memoria e protegida por hardware,
+o sistema roda sem parar por meses. Ficou grande, caro e atrasado, e a Bell Labs saiu
+do projeto em mil novecentos e sessenta e nove.
+
+Dizer a licao de hardware e software: o sistema operacional nasce porque o hardware
+era caro demais pra ficar parado. O software do sindico existe pra o hardware nao
+desperdicar um segundo.
+
+Fechar pedindo o Proximo pra ver o que dois engenheiros da Bell Labs fizeram quando
+sairam do Multics.
+
+TELA 3 - MIL NOVECENTOS E SESSENTA E NOVE: THOMPSON, RITCHIE E O UNIX
+
+Contar as pessoas: Ken Thompson e Dennis Ritchie tinham trabalhado no Multics pela Bell
+Labs e gostado da ideia, nao do tamanho. Quando a Bell Labs saiu, ficaram sem maquina
+pra usar.
+
+FICHA: Ken Thompson, nascido em mil novecentos e quarenta e tres, tinha vinte e seis
+anos; vivo em dois mil e vinte e seis. Dennis Ritchie, nascido em mil novecentos e
+quarenta e um, tinha vinte e oito anos; morreu em dois mil e onze.
+
+Contar a cena, que e verdadeira: Thompson tinha escrito um jogo de viagem espacial e
+queria uma maquina pra rodar. Achou um PDP-7 abandonado num canto do laboratorio, um
+minicomputador velho e fraco, e em algumas semanas de mil novecentos e sessenta e nove
+escreveu pra ele um sistema pequeno: arquivos, um jeito de carregar programa, um jeito
+de digitar comando. Um colega deu o nome de Unix, brincando com Multics: um em vez de
+muitos.
+
+Dizer a filosofia, que e o que sobreviveu: em vez de um sistema gigante que faz tudo,
+programas pequenos que fazem uma coisa so e bem feita, e um jeito de ligar a saida de
+um na entrada do outro, em fila. A ideia do Multics, no tamanho de um PDP-7.
+
+Dizer a licao de hardware e software: um hardware fraco e descartado obrigou o software
+a ficar pequeno, e o pequeno e que durou.
+
+Fechar pedindo o Proximo pra ver o problema que o Unix ainda tinha: ele so rodava
+naquela maquina.
+
+TELA 4 - MIL NOVECENTOS E SETENTA E TRES: A LINGUAGEM C
+
+Explicar o problema, que era o de todo sistema ate ali: o Unix foi escrito na linguagem
+da propria maquina, o codigo de maquina do PDP-7. Trocou de computador, joga fora e
+escreve de novo. Todo sistema operacional do mundo era preso ao hardware em que nasceu.
+
+Contar a pessoa e a ideia: Ritchie cria, entre mil novecentos e setenta e um e setenta e
+dois, a linguagem C: uma linguagem perto o bastante da maquina pra escrever um sistema
+operacional, e longe o bastante pra nao depender de qual maquina.
+
+Contar o feito: em mil novecentos e setenta e tres Thompson e Ritchie reescrevem o Unix
+inteiro em C. A partir dali, pra levar o Unix pra outra maquina, bastava um tradutor de
+C pra aquela maquina, o compilador, que a serie ja viu nascer na etapa seis. O sistema
+saiu de um hardware e rodou em outro.
+
+Dizer o tamanho disso em uma frase: e a primeira vez que um sistema operacional e
+solto do hardware. Tudo que veio depois, DOS, Windows, Mac, Linux, Android, e escrito
+em C ou em filhas do C.
+
+Dizer a licao de hardware e software, que e o centro do episodio: o C e o sindico
+deixando de ser funcionario de um predio so. O mesmo software passa a servir hardware
+diferente, e isso muda o que vale mais.
+
+Fechar pedindo o Proximo pra ver o sistema chegando no micro de casa, e o que ele
+perdeu no caminho.
+
+TELA 5 - MIL NOVECENTOS E SETENTA E QUATRO A OITENTA E UM: KILDALL, O CP/M E O DOS
+
+Contar a pessoa: Gary Kildall, professor na California, escreve em mil novecentos e
+setenta e quatro o CP/M, o primeiro sistema operacional pro 8080, o chip do Altair.
+
+FICHA: Gary Kildall, nascido em mil novecentos e quarenta e dois, tinha trinta e dois
+anos; morreu em mil novecentos e noventa e quatro.
+
+Dizer a ideia boa dele, que ficou: separar o pedaco do sistema que fala com o hardware
+(o disco desta marca, o teclado daquela) do resto. Pra levar o CP/M pra outro micro,
+trocava so esse pedaco. O mesmo truque do C, num tamanho menor.
+
+Ligar com o episodio 01: em mil novecentos e oitenta e um a IBM procurou Kildall pro
+seu PC e o negocio nao fechou; a Microsoft entregou o DOS, um sistema comprado que
+copiava a cara e os comandos do CP/M. Isso ja foi contado; aqui e o que o DOS fazia por
+dentro.
+
+Dizer o que o DOS fazia e nao fazia: guardava arquivos no disco, carregava um programa e
+entregava a maquina inteira pra ele. Um programa por vez. Nenhuma protecao de memoria:
+um programa errado derrubava tudo. Comparado com o Multics de sessenta e quatro, era um
+sindico que so sabia abrir a porta.
+
+Dizer a licao de hardware e software: o micro de mil novecentos e oitenta e um tinha
+tao pouca memoria e processador que o sistema teve que jogar fora tudo que o mainframe
+sabia. O hardware encolheu e o software encolheu junto. Vai levar quinze anos pra
+recuperar.
+
+Fechar pedindo o Proximo pra ver o sistema ganhar uma cara, e o que a cara exige por
+dentro.
+
+TELA 6 - MIL NOVECENTOS E OITENTA E QUATRO A NOVENTA: O SISTEMA GANHA CARA
+
+Contar em duas frases o que o episodio 01 ja contou: o Macintosh de mil novecentos e
+oitenta e quatro traz janela, icone e mouse, e o Windows nasce em oitenta e cinco como
+um programa por cima do DOS, e so pega na versao tres, em mil novecentos e noventa.
+
+Dizer o que a cara exige por dentro, que e o assunto desta tela: varias janelas na tela
+sao varios programas rodando ao mesmo tempo. Pra isso o sistema precisa, de novo,
+trocar de programa muitas vezes por segundo, e precisa impedir que um programa
+estrague a memoria do outro. E exatamente o que o Multics fazia em mil novecentos e
+sessenta e quatro, e o que o DOS tinha jogado fora.
+
+Dizer como os dois faziam de improviso: o Mac e o Windows dos anos oitenta trocavam de
+programa so quando o programa deixava (se um travasse, travava tudo), e nao protegiam
+memoria de verdade. Funcionava porque as pessoas aceitavam reiniciar.
+
+Dizer a licao de hardware e software: a interface grafica e um software que puxa o
+hardware (mais memoria, mais processador) e puxa o proprio sistema operacional de
+volta pra onde ele estava vinte anos antes.
+
+Fechar pedindo o Proximo pra ver a briga que essa cara causou.
+
+TELA 7 - MIL NOVECENTOS E OITENTA E OITO A NOVENTA E CINCO: A BRIGA E O WINDOWS 95
+
+Contar a briga, sem drama: em mil novecentos e oitenta e oito a Apple, entao comandada
+por John Sculley (Jobs tinha saido em oitenta e cinco), processa a Microsoft dizendo
+que o Windows copiou a cara do Mac. O processo dura seis anos e a Apple perde em mil
+novecentos e noventa e quatro: a justica decide que a cara de um sistema, janela,
+icone, lixeira, nao e de ninguem.
+
+FICHA: Bill Gates, nascido em mil novecentos e cinquenta e cinco, tinha trinta e tres
+anos; vivo em dois mil e vinte e seis.
+
+Contar o desfecho: em vinte e quatro de agosto de mil novecentos e noventa e cinco sai
+o Windows 95, o primeiro Windows que nao e um programa por cima do DOS e sim o sistema
+inteiro, com a cara e o DOS fundidos. Vende milhoes na primeira semana. A Apple, que
+nao tinha refeito o sistema por dentro, quase quebra nos dois anos seguintes.
+
+Dizer o que a briga decidiu de verdade, que nao foi o processo: o padrao aberto do
+episodio 01, o PC clone barato, mais um sistema que roda igual em todos, ganhou da
+maquina fechada com sistema proprio. De novo, exigir menos venceu fazer melhor.
+
+Dizer a licao de hardware e software: o Windows 95 pegou porque o PC de mil novecentos
+e noventa e cinco tinha memoria pra ele. O mesmo Windows em mil novecentos e oitenta e
+cinco nao tinha.
+
+Fechar pedindo o Proximo pra voltar a mil novecentos e oitenta e tres e ver um
+programador brigando com uma impressora.
+
+TELA 8 - MIL NOVECENTOS E OITENTA E TRES: STALLMAN E O GNU
+
+Contar a cena, que e verdadeira: Richard Stallman, programador do laboratorio de
+inteligencia artificial do MIT, tinha uma impressora que emperrava, e antes ele mesmo
+consertava o programa dela pra avisar quem tinha mandado imprimir. A impressora nova
+veio com o programa fechado: sem o codigo, ninguem podia consertar nada. Ele pediu o
+codigo ao fabricante e nao recebeu.
+
+FICHA: Richard Stallman, nascido em mil novecentos e cinquenta e tres, tinha trinta
+anos; vivo em dois mil e vinte e seis.
+
+Contar a decisao: em mil novecentos e oitenta e tres ele anuncia o projeto GNU, um
+sistema operacional inteiro, compativel com o Unix, que qualquer pessoa pode usar,
+estudar, copiar e mudar, com o codigo aberto. Comeca pelas ferramentas: o editor, o
+compilador de C, os programas pequenos do Unix, um por um, todos livres.
+
+Contar a licenca, em mil novecentos e oitenta e nove: a GPL. A regra: voce pode copiar
+e mudar a vontade, mas quem receber a sua copia recebe os mesmos direitos. A liberdade
+nao pode ser fechada de novo no caminho.
+
+Dizer o que faltava, e terminar a tela nisso: em mil novecentos e noventa e um o GNU
+tinha quase tudo, menos a peca do meio: o nucleo, a parte que de fato reparte o
+processador e a memoria. O sindico tinha portaria, correio e elevador, e nao tinha
+sindico.
+
+Dizer a licao de hardware e software: a licenca e software tambem, e e a peca que vai
+deixar o mesmo sistema ser copiado em milhoes de maquinas sem pedir licenca a ninguem.
+
+Fechar pedindo o Proximo pra ver de onde veio o nucleo, e foi de longe.
+
+TELA 9 - MIL NOVECENTOS E OITENTA E SETE A NOVENTA E UM: TANENBAUM, O MINIX E TORVALDS
+
+Contar a primeira pessoa: Andrew Tanenbaum, professor em Amsterda, escreve em mil
+novecentos e oitenta e sete o Minix, um Unix pequeno feito pra ensinar, com o codigo
+inteiro impresso no livro dele, pra qualquer aluno ler como um sistema operacional e
+por dentro.
+
+FICHA: Andrew Tanenbaum, nascido em mil novecentos e quarenta e quatro, tinha quarenta
+e tres anos; vivo em dois mil e vinte e seis.
+
+Contar a segunda: Linus Torvalds, estudante em Helsinque, compra um PC com o chip 386
+em mil novecentos e noventa e um, instala o Minix, acha ele limitado, e escreve um
+nucleo proprio pra sua maquina, usando as ferramentas do GNU. Em agosto de mil
+novecentos e noventa e um ele posta na internet um recado dizendo que esta fazendo um
+sistema, so por hobby, nada grande e profissional como o GNU, e pergunta o que as
+pessoas gostariam que ele tivesse.
+
+FICHA: Linus Torvalds, nascido em mil novecentos e sessenta e nove, tinha vinte e um
+anos; vivo em dois mil e vinte e seis.
+
+Dizer o encaixe: o nucleo de Torvalds, o Linux, mais as ferramentas de Stallman, o GNU,
+fazem um sistema inteiro, livre, que roda no PC barato. A peca que faltava veio de um
+estudante de vinte e um anos, pela mesma rede que o episodio anterior contou.
+
+Contar em uma frase a discussao de mil novecentos e noventa e dois: Tanenbaum escreveu
+que o desenho do Linux era antiquado; Torvalds respondeu; os dois seguiram vivos e
+amigos, e o Linux seguiu do jeito que era.
+
+Dizer a licao de hardware e software: o PC clone barato do episodio 01, mais a rede do
+episodio 02, mais a licenca livre: um sistema que ninguem vende nasce porque tinha
+hardware barato pra rodar e rede pra espalhar.
+
+Fechar pedindo o Proximo pra ver os dois gigantes refazendo a base, cada um do seu
+jeito.
+
+TELA 10 - MIL NOVECENTOS E NOVENTA E TRES A NOVENTA E SETE: NT E NEXT
+
+Contar o lado Microsoft: em mil novecentos e oitenta e oito a Microsoft contrata Dave
+Cutler, que tinha feito sistemas operacionais de minicomputador na DEC, pra escrever um
+Windows de verdade por dentro, do zero. Sai em mil novecentos e noventa e tres como
+Windows NT: memoria protegida, troca de programa que o programa nao controla, tudo que
+o Multics tinha. E a base de todo Windows de hoje.
+
+FICHA: Dave Cutler, nascido em mil novecentos e quarenta e dois, tinha quarenta e seis
+anos; vivo em dois mil e vinte e seis.
+
+Contar o lado Apple: sem conseguir refazer o proprio sistema, a Apple compra em
+dezembro de mil novecentos e noventa e seis a NeXT, a empresa que Jobs tinha fundado
+ao sair, e traz Jobs de volta. O sistema da NeXT era um Unix com uma cara bonita. Ele
+vira a base do Mac a partir de dois mil e um, e depois do iPhone: o Mac virou Unix por
+baixo.
+
+FICHA: Steve Jobs, nascido em mil novecentos e cinquenta e cinco, tinha quarenta e um
+anos; morreu em dois mil e onze.
+
+Dizer a frase que fecha a volta: em mil novecentos e noventa e sete, os tres sistemas
+que importam, Windows, Mac e Linux, tem por dentro as ideias do Multics de mil
+novecentos e sessenta e quatro. O micro levou trinta anos pra alcancar o mainframe.
+
+Dizer a licao de hardware e software: o hardware barateou ate o ponto em que o micro
+podia pagar o sindico completo. Ai o software voltou a ser o que ja sabia ser.
+
+Fechar pedindo o Proximo pra ver onde o sistema que ninguem vende foi parar.
+
+TELA 11 - ONDE O LINUX FOI PARAR
+
+Contar, em ordem e sem enfeitar: a rede do episodio anterior abriu pro comercio em mil
+novecentos e noventa e cinco, e cada servidor de web precisava de um sistema. O Linux
+era gratis, rodava no PC barato e qualquer um podia consertar. Em poucos anos a maior
+parte dos servidores da internet roda Linux.
+
+Dizer o resto do caminho em duas frases: em dois mil e oito o Android, que e um Linux
+com outra cara, poe o nucleo de Torvalds em bilhoes de telefones. E cada maquina que
+hoje treina inteligencia artificial roda Linux.
+
+Dizer o ponto: o sistema operacional que ninguem vende sustenta a rede que o episodio
+dois contou, e o telefone que a maioria das pessoas usa. O software mais copiado do
+mundo e o que tem a licenca que obriga a repassar a liberdade.
+
+Dizer a licao de hardware e software, e a licao da etapa: pela terceira vez na etapa,
+ganhou quem exigiu menos. O padrao aberto do PC, o acordo entre redes, e a licenca
+livre. Nos tres casos, o software que pede o minimo e o que vai parar em todo lugar.
+
+Fechar pedindo o Proximo pra dizer onde isto para. ESTE PEDIDO E OBRIGATORIO: a tela 11
+acaba aqui. O balanco e a tela 12.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: mil novecentos e noventa e sete, com o Mac virando Unix, o
+Windows refeito por dentro e o Linux nos servidores.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem: Corbato repartiu o tempo.
+Thompson e Ritchie fizeram o pequeno e depois soltaram ele do hardware. Kildall separou
+o pedaco que fala com a maquina. Gates pos a cara no PC. Stallman escreveu a liberdade
+numa licenca. Tanenbaum ensinou. Torvalds fez o nucleo aos vinte e um anos e deu de
+graca. Cutler refez o Windows por dentro. Jobs voltou com um Unix debaixo do braco.
+Ninguem planejou o conjunto.
+
+Fazer o balanco da etapa inteira em tres frases: a etapa comecou com a peca pronta e
+presa na sala da empresa. O computador entrou em casa, virou rede, e ganhou o sindico
+que roda os outros programas. Em mil novecentos e noventa e sete a maquina esta em
+toda casa, ligada em toda outra, e com um sistema livre por baixo de boa parte delas.
+
+Dizer o que muda pra serie, que e o que abre a etapa final: a maquina esta pronta e
+espalhada. Agora as pecas vao correr, o processador e uma placa nova feita pra jogo, e
+o programa vai deixar de ser escrito a mao.
+
+Deixar a pergunta no ar, sem responder: se a maquina ja esta em toda casa e ja fala
+com todas as outras, o que ainda falta pra ela fazer o que a gente nao sabe escrever?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

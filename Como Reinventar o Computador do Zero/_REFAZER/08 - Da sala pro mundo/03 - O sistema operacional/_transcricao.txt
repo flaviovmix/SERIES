@@ -1,0 +1,290 @@
+# Transcricao automatica (faster-whisper small) - 16.4 min
+# Fonte: A história do síndico dos computadores.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O sistema operacional.
+[00:02] Finalmente vamos falar sobre isso.
+[00:04] Pois é, nos dois mergulhos anteriores dessa etapa, a gente acompanhou o computador entrando dentro de casa.
+[00:10] E depois vimos essas casas se ligarem em rede.
+[00:13] Exato, e por fim a rede se abriu para o comércio lá em 1995.
+[00:18] Com certeza. E durante essas conversas, a expressão sistema operacional apareceu várias vezes, né?
+[00:23] Sim, a gente falou muito do DOS, do Windows rodando por cima dele,
+[00:27] mas a gente nunca parou de fato para explicar o que é essa peça de forma concreta.
+[00:32] E a gente precisa apagar essa dívida agora mesmo.
+[00:35] O sistema operacional é, na sua estrutura mais crua, o programa que roda os outros programas.
+[00:41] Tá, mas como assim?
+[00:43] Tipo, ele aloca memória física, gerencia o uso do processador,
+[00:47] cria arquivos com nomes que a gente consegue ler e entender.
+[00:51] E ele permite que peças físicas, tipo uma tela ou uma impressora,
+[00:54] sejam usadas sem que o programador precise saber a marca delas.
+[00:58] É como uma barreira de tradução, né?
+[01:00] Exatamente. Uma barreira entre o maquinário físico e o software.
+[01:04] Olha, a melhor forma de visualizar essa gestão toda é pensar no síndico do prédio.
+[01:09] O síndico? Ah, faz muito sentido.
+[01:11] Sim, o sistema é exatamente o síndico.
+[01:13] Ele não mora em nenhum apartamento, não consome o espaço útil para o próprio lazer,
+[01:17] mas é ele quem decide com autoridade quem usa o elevador naquele instante.
+[01:21] Que, nesse caso da máquina, é o processador.
+[01:23] Isso. É o síndico quem define qual apartamento é de quem.
+[01:27] Ele organiza as chaves e os limites da memória, guarda a correspondência, etiqueta os arquivos.
+[01:32] E cuida da portaria para garantir a entrada e sair da segura dos dados.
+[01:36] Exatamente.
+[01:37] Pense bem, um prédio sem síndico é num lugar onde apenas um único morador
+[01:42] pode usar todas as áreas comuns de cada vez.
+[01:45] Nossa, o caos. Total.
+[01:47] Um único morador usa o elevador e a portaria, travando o acesso de todo o resto do condomínio.
+[01:53] E para entender como a figura desse síndico virtual foi construída do zero,
+[01:58] a gente vai voltar no tempo de propósito.
+[02:00] E essa é a terceira e última vez que a gente faz esse salto
+[02:03] direto para o passado na nossa série.
+[02:05] Nossa intervalo vai de 1961 até chegar em 1997.
+[02:10] Legal.
+[02:11] A intenção é focar em construir em vez de vender.
+[02:14] Vamos seguir as pessoas que construíram o sistema na mais rigorosa ordem cronológica.
+[02:19] E mostrar como o hardware e o software nunca evoluem sozinhos, né?
+[02:22] Um melhor empurrando o outro.
+[02:24] Com certeza.
+[02:25] E aqui vai um aviso importante sobre como acompanhar esta etapa.
+[02:28] Esta análise acompanha uma página de animação dividida em 12 telas.
+[02:33] Quem está só ouvindo acompanha normalmente, sem perder nada.
+[02:37] Mas quem está com a página aberta vira a tela quando ouvir o pedido.
+[02:41] Então, para ver como era um computador sem a figura desse síndico, aperte o próximo.
+[02:46] Bom, o cenário antes da criação desse gestor central
+[02:49] era de um desperdício financeiro absurdo.
+[02:52] O computador rodava um único programa por vez.
+[02:55] Um só.
+[02:56] Só um.
+[02:57] A pessoa escrevia o código em folhas de papel,
+[02:59] uma máquina desprevia furava os tratões perfurados
+[03:03] e aí a pessoa entregava um calhamaso pesado nas mãos de um operador humano.
+[03:08] Esse humano alimentava a máquina milionária.
+[03:11] E se desce erro?
+[03:12] Nossa.
+[03:13] Se faltasse uma única vírgula no cartão 19,
+[03:16] o computador encerrava tudo no meio
+[03:18] e cuspiu um relatório de erro três horas depois.
+[03:21] Caramba, a pessoa perdi o dia inteiro por causa de um furo de papel fora do lugar.
+[03:25] Exato.
+[03:26] Um baita gargalo.
+[03:27] A máquina super rápida ficava ociosa esperando mãos humanas lentas.
+[03:32] E a saída para isso nasceu lá no MIT.
+[03:35] Fernando Corbato, nascido em 1926, tinha 35 anos, morreu em 2019.
+[03:41] Em 1961, a equipe dele cria o CT-SS.
+[03:45] O esquema de tempo compartilhado.
+[03:47] Isso.
+[03:48] A proposta era ter vários terminais ligados na mesma central
+[03:51] e o sistema dividindo a tensão rápido.
+[03:53] Peraí, mas como a máquina consegue atender 10 pessoas ao mesmo tempo
+[03:58] se ela só tem um núcleo de processamento?
+[04:01] É um truque de ilusão diótica baseado em velocidade.
+[04:05] O processador fatia o próprio tempo.
+[04:07] Ele atende os comandos da pessoa A, daí ele pausa.
+[04:10] Tá, e a nota onde parou?
+[04:11] Exatamente.
+[04:12] A nota não rascunha a linha exata, salva as variáveis de memória daquele momento,
+[04:17] tira aquilo do processador, carrega as variáveis da pessoa B
+[04:21] e processa por um milésimo de segundo.
+[04:23] Nossa, a troca é tão frenética
+[04:26] que tá do usuário acha que a máquina inteira é só dele, né?
+[04:29] O sistema guarda o estado, protege a memória de um programa contra o outro
+[04:33] e simula um controle total.
+[04:35] Essa ideia escalou muito rápido.
+[04:37] Em 1964 começam o Multix.
+[04:40] Projeto bem ambicioso.
+[04:42] Muito.
+[04:43] O MIT se junta com a General Electric e com o Baile Labs
+[04:47] para criar um sistema imenso.
+[04:49] A ideia era unificar tudo, transformar tudo em arquivo,
+[04:52] com memória protegida.
+[04:53] Só que ficou grande demais.
+[04:55] O Multix ficou pesado, consumia muito dinheiro
+[04:58] e acumulou atraso atrás de atraso.
+[05:00] Pois é, mas a lição dessa largada fica clara.
+[05:03] Total.
+[05:04] O software do síndico nasceu puramente para o hardware
+[05:07] não desperdiçar um segundo sequer.
+[05:09] Exatamente.
+[05:10] E para ver o que ocorreu com dois engenheiros
+[05:12] que acabaram saindo dessa equipe do Multix, aperte o próximo.
+[05:16] É, cansado desses atrasos, o Baile Labs sai da Parcerim em 1969
+[05:21] e dois engenheiros de lá ficam sem acesso às máquinas centrais.
+[05:25] Ken Thompson, nascido em 1943, tinha 26 anos, vivo em 2026.
+[05:31] Dennis Ritch, nascido em 1941, tinha 28 anos, morreu em 2011.
+[05:37] O engraçado é que a motivação deles não era nada corporativa, né?
+[05:41] O Thompson só queria rodar um jogo.
+[05:44] Sim, o Viagem Espacial.
+[05:45] Exato.
+[05:46] Exato.
+[05:47] E ele achou um mini computador, PD-P7, abandonado no laboratório
+[05:51] para tentar rodar isso.
+[05:52] É.
+[05:53] Trabalhando nessa máquina mais fraca, em 1969, o Thompson escreve um sistema próprio.
+[05:58] Pequeno e direto ao ponto.
+[06:00] Tinha arquivos e comandos básicos.
+[06:03] Alguém lá brincou com o nome Multix e batizou esse novo de Unix,
+[06:08] focando no 1 em vez de no muitos.
+[06:11] E a filosofia por trás disso é muito boa.
+[06:14] A ideia era ter programas pequenos, cada um fazendo uma coisa só.
+[06:19] Um lista de arquivos, outro busca texto.
+[06:21] E eles eram ligados em fila contínua.
+[06:24] Isso.
+[06:25] A saída de um entrava direto no outro.
+[06:27] E a grande lição aqui é que um hardware restrito
+[06:30] obrigou o software a ficar minúsculo.
+[06:33] E foi justamente o pequeno que durou ao longo do tempo.
+[06:36] Mas esse sistema ainda tinha um problema gigante.
+[06:39] Para ver qual era, aperte o próximo.
+[06:42] O problema era a linguagem de máquina.
+[06:44] O código do Unix estava preso nos circuitos elétricos específicos do PD-P7.
+[06:50] Trocar de computador significava jogar todo o código no lixo.
+[06:54] Sim, perder tudo e começar do zero.
+[06:57] Mas como eles conseguiram soltar isso?
+[06:59] Eles criaram um idioma novo.
+[07:01] Entre 1971 e 1972, o Hit projeta a linguagem C.
+[07:07] Ah, a famosa.
+[07:09] Ela fica perto da máquina, mas longe o suficiente
+[07:12] para não depender de um hardware específico.
+[07:14] E aí, em 1973, eles reescrevem o Unix inteiro em C.
+[07:19] Elatamente.
+[07:20] O pulo do gato é o compilador.
+[07:22] Ele lê a linguagem C e traduz para a máquina nova.
+[07:25] Ou seja, o sistema saiu de um hardware e encontrou o casa em outro.
+[07:30] Sim, tudo o que usamos hoje tem base na linguagem C
+[07:33] ou em coisas derivadas dela.
+[07:35] O C é o síndico deixando de ser funcionário de um prédio só.
+[07:39] O mesmo software passa a atender prédios e hardware diferentes.
+[07:43] É um marco.
+[07:44] E para ver se o sistema chegando no micro de casa aperte o próximo.
+[07:47] Bom, a história vai para a Califórnia agora.
+[07:50] Gary Kildow, nascido em 1942, tinha 32 anos, morreu em 1994.
+[07:57] Em 1974, ele escreve o CP-M pro chip do Altair.
+[08:03] E qual foi a grande sacada dele nessa época?
+[08:06] Ele separou fisicamente o pedaço do sistema que fala direto com o hardware.
+[08:11] Foi tipo usar o truque do sino um tamanho muito menor.
+[08:14] E aí, o mercado doméstico explode.
+[08:16] No episódio passado, a gente falou de 1981.
+[08:19] A IBM não fecha na negócio com Kildow.
+[08:21] Pois é.
+[08:22] E a Microsoft entrega o DOS, que na verdade copiava muito da cara do CP-M.
+[08:27] Sim, mas por dentro, o DOS era bem limitado, né?
+[08:30] Ele abria arquivos, carregava um programa por vez e ponto final.
+[08:34] Nenhuma proteção.
+[08:35] Era um síndico que só sabia abrir a porta da frente do prédio.
+[08:38] É.
+[08:39] A lista triste dessa fase é que o hardware do micro encolheu tanto para ficar barato
+[08:45] que o software teve que jogar fora tudo que já sabia desde 1964.
+[08:50] Mas as telas precisavam ficar mais amigáveis.
+[08:53] Para ver o sistema ganhar uma cara, aperte o próximo.
+[08:57] A aparência muda de vez.
+[08:59] A gente viu o Macintosh em 1984 com janela, ícone, mouse e o Windows começa em 1985.
+[09:06] Até pegar tração de verdade na versão 3 lá em 1990.
+[09:10] Exato.
+[09:11] Rodando ainda por cima do DOS.
+[09:13] Só que desenhar janela gasta muito e várias janelas abertas
+[09:18] significam vários programas rodando ao mesmo tempo.
+[09:21] O sistema precisa trocar rápido a atenção e proteger a memória.
+[09:25] Exatamente o que aquele multitask antigo tentava fazer.
+[09:28] Mas os sistemas da Apple e da Microsoft dessa época não protegiam nada de verdade.
+[09:33] Era uma troca cooperativa, né?
+[09:35] O programa soltava o processador quando queria.
+[09:37] E se travasse a pessoa simplesmente aceitava e apertava o botão de reiniciar a máquina inteira.
+[09:42] Pois é.
+[09:43] A interface gráfica puxou muito o hardware e acabou puxando o sistema operacional de volta para 20 anos antes.
+[09:49] E gerou uma confusão gigante nos bastidores.
+[09:52] Para ver a briga que essa cara visual causou, aperte o próximo.
+[09:57] O processo judicial foi tenso.
+[09:59] Em 1988, a Apple, comandada pelo John Skelly, processa Microsoft.
+[10:05] Alegando cópia da cara do Mac.
+[10:07] Bill Gates, nascido em 1955, tinha 33 anos, vive em 2026.
+[10:13] Essa briga nos tribunais dura 6 anos e a Apple perde em 1994.
+[10:19] O juiz diz que janela e lixeira não têm um dono único.
+[10:24] E logo depois, vem o esmagamento no mercado.
+[10:27] Em 24 de agosto de 1995, saiu o Windows 95.
+[10:32] Já como um sistema inteiro, né?
+[10:34] Fundido com um DOS.
+[10:36] Exato.
+[10:37] E a Apple, sem conseguir refazer o próprio sistema tempo, quase quebra de vez.
+[10:42] A lição dura dessa época, que a vitória real foi do padrão aberto e mais barato.
+[10:48] Com certeza.
+[10:49] Exigir menos vencer ou fazer melhor.
+[10:51] O Windows 95 funcionou porque o hardware finalmente já tinha memória barata para rodar ele.
+[10:56] Mas vamos voltar para 1983 para ver uma briga por causa de uma impressora.
+[11:02] Aperte o próximo.
+[11:03] Essa história clássica.
+[11:05] Tinha uma impressora no MIT que sempre emperrava.
+[11:09] Antes eles mexiam no código e arrumavam.
+[11:12] Mas aí chegou uma nova com o código fechado.
+[11:15] O fabricante negou o acesso para o programador lá do laboratório.
+[11:19] Richard Stallman, nascido em 1953, tinha 30 anos.
+[11:24] Vivo em 2026.
+[11:26] E essa recusa simples mudou tudo.
+[11:29] Em 1983, ele funda o projeto GNU, um sistema livre, aberto, compatível com o Unix.
+[11:38] Ele foi fazendo ferramendas, compilador C, tudo feito um a um.
+[11:43] Até que em 1989, ele cria a licença GPEC.
+[11:48] Essa licença é genial na mecânica.
+[11:51] A pessoa pode copiar e mudar, mas quem recebe é da mesma liberdade.
+[11:55] A liberdade não fecha.
+[11:57] Exato.
+[11:58] E a lição aqui é muito forte.
+[12:00] A licença é um pedaço de software.
+[12:02] E foi a peça que permitiu copiar o código milhões de vezes
+[12:06] sem pedir autorização comercial para ninguém.
+[12:09] Só que o projeto GNU chegou em 1991 quase pronto.
+[12:13] Mas faltava um núcleo.
+[12:15] O síndico tinha portaria e elevador, mas faltava a pessoa do síndico.
+[12:19] Para ver de onde veio esse núcleo, aperte o próximo.
+[12:23] O começo desse núcleo surge em Amsterdam.
+[12:26] Andrew Tannenbaum, nascido em 1944, tinha 43 anos.
+[12:31] Vivo em 2026.
+[12:33] Ah, em 1987 ele cria o Minix, né?
+[12:36] Isso. Era um Unix pequeno, focado em ensino.
+[12:39] E aí, a segunda peça se junta em Helsinki.
+[12:42] Lainos Torvalds, nascido em 1969, tinha 21 anos.
+[12:47] Vivo em 2026.
+[12:49] Em 1991, ele acha o Minix limitado para o chip 386 dele.
+[12:55] Daí ele escreve um núcleo usando as ferramentas do GNU e posta na rede.
+[13:00] Fala que é só um hobby.
+[13:02] E aí a junção do Linux com GNU cria o sistema livre e inteiro.
+[13:07] E teve até aquela discussão pública clássica em 1992?
+[13:11] O Tannenbaum achou desenho antiquado?
+[13:13] O Turwald respondeu, mas no fim, ambos seguiram amigos.
+[13:17] Sim. E o Linux ficou igual, crescendo pela rede.
+[13:21] Hardware barato, internet e licença livre.
+[13:24] Nasceu algo que ninguém vende.
+[13:27] E para ver os gigantes do mercado refazendo a própria base, aperte o próximo.
+[13:31] Porque do lado da Microsoft, a base antiga não aguentava mais.
+[13:35] Em 1988, eles contrataram uma pessoa para fazer o sistema corporativo do zero.
+[13:40] David Cutler, nascido em 1942, tinha 46 anos, vivo em 2026.
+[13:47] O projeto sai do papel em 1993 como Windows NT.
+[13:52] Memória protegida de verdade. A base de todo Windows de hoje.
+[13:56] Sim. E do outro lado, a Apple compra a Next em dezembro de 1996.
+[14:02] Steve Jobs, nascido em 1955, tinha 41 anos, morreu em 2011.
+[14:09] E esse encontro muda tudo de novo.
+[14:11] O sistema do Mac vai virar Unix por baixo do capô.
+[14:14] É. Em 1997, o ciclo se fecha.
+[14:17] Windows, Mac e Linux, todos usam as ideias de proteção lá do Multix.
+[14:22] Levou uns 30 anos para o microcomputador caseiro alcançar a força do mainframe, né?
+[14:27] Sim. O hardware finalmente barateou, a ponto de pagar o custo de ter um síndico completo.
+[14:33] E para ver onde o sistema que ninguém vende foi parar, aperte o próximo.
+[14:37] O caminho do Linux é impressionante. A Web se abre para o comércio em 1995.
+[14:43] Aham. E os servidores na rede precisavam de um sistema muito estável.
+[14:47] O Linux domina rapidamente os servidores.
+[14:50] E não parou aí. Em 2008, o Android coloca esse exato núcleo em bilhões de telefones.
+[14:57] Sem contar as máquinas de inteligência artificial de hoje. Elas rodam Linux.
+[15:03] Ou seja, o sistema que ninguém vende é o que sustenta as estruturas da rede.
+[15:08] É. O padrão se confirmou mais uma vez. Ganhou quem exigiu menos.
+[15:13] O PC aberto, os acordos de rede flexíveis, a licença livre.
+[15:17] O software que pede o mínimo de barreira é o que vai parar em absolutamente todo lugar.
+[15:22] E para dizer onde toda essa evolução para na nossa cronologia, aperte o próximo.
+[15:28] A nossa parada acontece no ano de 1997. A maçã sumindo a base para virar Unix.
+[15:35] O Windows sendo refeito por dentro para não travar. E o Linux assumindo a infraestrutura dos servidores na rede.
+[15:42] É isso. Cobato repartiu o tempo. Thompson e Witte fizeram um pequeno e soltaram.
+[15:47] Que o Dal separou o pedaço do hardware. Gates pôs a cara visual.
+[15:51] Stoma escreveu a licença. Tenenbaum ensinou a base. Torvaldes fez de graça.
+[15:56] Cutler refeiz por dentro. E Jobs trouxe o Unix debaixo do braço na volta para Apple.
+[16:01] Ninguém planejou isso tudo junto.
+[16:03] O computador começou preso na sala. Entrou em casa, virou rede e finalmente ganhou o seu síndico.
+[16:09] Em 1997, a máquina está em toda casa ligada em toda outra
+[16:15] com o sistema livre por baixo gerindo tudo.
+[16:18] E a pergunta fica. Se a máquina já está em toda casa e já fala com as outras,
+[16:22] o que ainda falta para ela fazer o que a gente não sabe escrever?

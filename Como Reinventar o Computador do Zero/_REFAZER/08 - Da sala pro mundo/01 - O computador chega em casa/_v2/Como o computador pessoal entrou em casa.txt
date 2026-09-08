@@ -1,0 +1,7 @@
+Titulo: Como o computador pessoal entrou em casa
+Notebook: 08-01-O computador chega em casa
+
+Descricao:
+Estes documentos descrevem a transição do computador de uma ferramenta restrita a laboratórios para um objeto presente nos lares entre 1975 e 1990. O conteúdo detalha que essa mudança não dependeu de novas peças, mas sim da criação de um produto acessível, de um motivo de uso como a planilha eletrônica e do estabelecimento de um padrão de mercado. A narrativa também destaca a importância da interface gráfica, que substituiu comandos complexos por janelas e ícones intuitivos. Ao final, as fontes mostram como a tecnologia deixou de focar apenas no funcionamento do hardware para priorizar a experiência do usuário comum. O texto conclui pontuando que, apesar da popularização, as máquinas desse período ainda operavam de forma isolada, preparando o terreno para o surgimento da conectividade.
+
+Link: https://notebook.google.com/notebook/c5641160-7c14-4998-833a-d383b5d826f1

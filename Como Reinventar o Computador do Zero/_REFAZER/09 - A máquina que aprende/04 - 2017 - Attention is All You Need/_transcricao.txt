@@ -1,0 +1,280 @@
+# Transcricao automatica (faster-whisper small) - 16.9 min
+# Fonte: Como o Transformer matou a fila.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] 2017, attention is all you need.
+[00:03] É, chegamos lá.
+[00:04] Bom, retomando de onde paramos, a gente viu que, lá em 2012, a máquina, no caso a Alex
+[00:11] Net, aprendeu a olhar para uma imagem inteira de uma única vez.
+[00:16] E ali, o programa passou a ser achado pela máquina, não mais escrito linha por linha,
+[00:21] né?
+[00:22] Exatamente.
+[00:23] Só que texto é bem diferente de imagem.
+[00:24] Pois é, texto não é imagem.
+[00:26] Uma frase é, essencialmente, uma fila indiana de palavras.
+[00:30] Então, fica o problema, como é que uma máquina, que, por natureza, adora processar tudo ao mesmo
+[00:35] tempo, consegue ler uma fila?
+[00:37] E a verdade é que, por 20 anos, ela leu um fila mesmo, e a área pagou preço por isso.
+[00:43] A grande virada, que é o foco de hoje, aconteceu em 2017, quando eles simplesmente
+[00:49] tiraram a fila do processo.
+[00:51] Tem uma analogia ótima para isso, a da mesa de reunião.
+[00:54] Na leitura em fila clássica, as palavras estão sentadas numa fileira comprida, passando
+[01:00] um bilhete umas para as outras.
+[01:02] Esse bilhete vai se apagando, sabe?
+[01:04] Sim, a informação vai sumindo.
+[01:06] Exato.
+[01:07] Já na nova solução que venceu a chamada Atenção ou Transformer, é como se todas as palavras
+[01:13] sentassem numa mesa redonda, ao mesmo tempo, olhando umas para as outras para decidir
+[01:18] quem elas devem escutar.
+[01:20] E o fio condutor desse nosso mergulho, que, aliás, é o último da nossa série, vai
+[01:24] cobrir de 1997 até 2018.
+[01:30] Lembrando que a fila do texto correu paralelamente a fila da imagem.
+[01:33] Não é uma viagem no tempo.
+[01:35] Ah, sim, importante pontuar.
+[01:37] É.
+[01:38] E a tese central aqui é que o modelo que venceu de vez em 2017 foi um software desenhado
+[01:44] literalmente com a forma do hardware.
+[01:46] E antes da gente entrar nos detalhes, um aviso operacional rápido.
+[01:50] Este áudio acompanha 12 telas animadas.
+[01:53] Para quem está só ouvindo, não se preocupe, dá para entender tudo perfeitamente.
+[01:58] Mas para quem está com a página aberta, é só virar a tela quando ouvir o pedido.
+[02:02] Então, para virar a rede que lê em fila ganhar memória, aperte o próximo.
+[02:06] Bom, o maior desafio técnico dessa leitura em fila lá no começo era justamente a
+[02:11] memória.
+[02:12] A rede lia uma palavra por passo, guardando um resumo que é sendo reescrito o tempo todo.
+[02:18] O bilhete apagando.
+[02:19] Isso.
+[02:20] Depois de passar por umas 20 palavras, o começo da frase simplesmente sumia.
+[02:25] E o erro matemático, que volta durante o treino para corrigir a rede, também se
+[02:29] apagava no caminho.
+[02:30] Aí entram aqueles dois pesquisadores em Munique, né?
+[02:34] Cep Rock Heiter, nascido em 1967, tinha 30 anos, vivo em 2026.
+[02:41] Jürgen Smith-Huber, nascido em 1963, tinha 34 anos, vivo em 2026.
+[02:47] Eles desenharam uma célula nova com portões lógicos e específicos.
+[02:51] Um portão para guardar informação, outro para esquecer e um para mostrar.
+[02:55] A famosa LSTM, a memória de curto e longo prazo.
+[02:58] Isso mesmo.
+[02:59] Com ela, aquele resumo para de se apagar tão rápido.
+[03:03] Resolveu o problema do esquecimento, então?
+[03:05] Resolveu a memória.
+[03:06] Mas e o limite entre o hardware e o software?
+[03:09] A leitura continuava acontecendo em fila, um passo depois do outro.
+[03:13] E um algoritmo que roda em fila não consegue aproveitar o poder da placa de vídeo, que
+[03:17] é um hardware que quer calcular tudo de uma vez.
+[03:20] Fica subutilizada, né?
+[03:21] Para ver duas dessas redes traduzindo uma frase, aperte o próximo, aí, avançando
+[03:26] Outra Setembro de 2014, surge no Google um tradutor novo, construído com duas dessas LSTMs
+[03:33] emendadas.
+[03:34] E ele é sua discover, nascido em 1986, tinha 27 anos, vivo em 2026.
+[03:40] Oriol Vinhos, nascido em 1983, tinha 31 anos, vivo em 2026.
+[03:47] Coaclé, nascido em 1982, tinha 32 anos, vivo em 2026.
+[03:52] O desenho deles era bem interessante.
+[03:54] A primeira rede só lê a frase em inglês e guarda um resumo final, uma lista fixa de
+[04:00] números.
+[04:01] A segunda rede pega só esse resumo e começa a escrever em francês, palavra por palavra.
+[04:08] Só que aí a gente bate num gargalo, óbvio, né?
+[04:11] Imagina tentar expremer uma frase inteira, seja ela curtinha ou um parágrafo enorme,
+[04:15] dentro de um único vetor fixo.
+[04:17] As frases mais longas perdem qualidade muito rápido.
+[04:20] Com certeza, o software deles encontrou um limite de memória imposto pelo próprio desenho,
+[04:25] não pelo hardware em si.
+[04:27] Eles teriam que mudar essa arquitetura.
+[04:29] Entendi.
+[04:30] Pra ver a rede parar de expremer tudo num resumo só, aperte o próximo.
+[04:34] A grande mudança estrutural vem de um grupo imontreal.
+[04:37] Eles apresentaram a ideia em setembro de 2014 e publicaram numa conferência em maio
+[04:42] de 2015.
+[04:44] E o Cho Ben Ju, nascido em 1964, tinha 50 anos, vivo em 2026.
+[04:50] Kim Hyun Choo, nascido em 1985, tinha 29 anos, vivo em 2026.
+[04:57] Teve também um doutorando focado no desenvolvimento com eles.
+[05:00] A ideia que eles trouxeram foi a atenção.
+[05:03] A segunda rede, a que escreve, não recebe mais apenas um resumo só lá no final.
+[05:07] Ah, ela passa a receber todos os resumos parciais gerados ao longo da frase, né?
+[05:12] Exato.
+[05:13] Ao escrever cada palavra nova, ela olha para todas as palavras da entrada e dá um peso
+[05:18] para cada uma.
+[05:19] Por exemplo, ao traduzir o gato preto para inglês, na hora exata de escrever black, a rede olha
+[05:26] muito mais para a palavra preto.
+[05:28] Faz todo sentido.
+[05:29] E o resultado é que as frases longas pararam de perder sentido e a rede ainda mostrava
+[05:34] matematicamente em quais palavras ela se apoiou para tomar decisão.
+[05:38] Foi um passo gigantesco.
+[05:40] Eles contornaram o gargalo, colocando muito mais conta para rodar em paralelo, o que a placa
+[05:45] de vídeo adora.
+[05:46] Só que a leitura da entrada e a escrita da saída ainda aconteciam na bendita fila.
+[05:52] É, para ver isso traduzindo para milhões de pessoas, aperte o próximo.
+[05:56] Mesmo com a fila segurando o potencial, o Google colocou esse modelo em produção.
+[06:00] Em setembro de 2016, para a chinesa inglês e em novembro para oito línguas, o português
+[06:06] incluído.
+[06:07] Dentro, o sistema era pesado, né?
+[06:10] Eram oito camadas de LST só lendo, mas oito camadas escrevendo, e essa tensão operando
+[06:16] ali no meio.
+[06:17] O custo disso era astronômico.
+[06:19] Para treinar, levavam seis dias inteiros rodando em 96 placas de vídeo poderosas.
+[06:25] E na hora de entregar a tradução, a fila persistia, uma palavra calculada por passo.
+[06:31] Então, para rodar isso de um jeito mais barato e rápido, o Google precisou criar
+[06:35] um hardware próprio, a TPU, a Unidade de Processamento de Tensores.
+[06:40] Eles a usavam ela desde 2015.
+[06:43] Sim, projetada por um engenheiro-líder que era da Antica Deck.
+[06:46] E a TPU não é um processador comum.
+[06:49] Ela é uma grade maciça de 256x256 multiplicadores.
+[06:56] Ela basicamente só multiplica grandes tabelas de números, mas tudo ao mesmo tempo.
+[07:00] Ou seja, assim como lá no perceptron de 1960, o software de novo exigiu um hardware
+[07:06] sob medida.
+[07:07] Mas o problema de incompatibilidade volta.
+[07:10] Esse hardware que é tudo ao mesmo tempo.
+[07:12] E a fila da LSTM se torna um obstáculo.
+[07:14] O gargalo virou a fila.
+[07:16] Exato.
+[07:17] Para ver oito pessoas tirarem a fila de uma vez por todas, aperte próximo.
+[07:21] A data crucial aqui é 12 de junho de 2017.
+[07:26] O lançamento do artigo Attention Is All You Need.
+[07:29] Traduzindo, atenção é tudo de que você precisa.
+[07:32] E os nomes são Ashish Vazhwani, Noam Shazer, Nicky Palmer, Jacob Ushkoreit, Leon Jones,
+[07:39] Aidan Gomes, Lucas Heiser, Ilha Polosukhin.
+[07:43] Um fato interessante é que todos estão vivos em 2026.
+[07:46] O mais novo deles era um estagiário de 20 anos na época.
+[07:50] E até 2023, todos esses oito autores já tinham saído do Google.
+[07:54] O que eles propuseram foi radical.
+[07:57] Eles simplesmente tiraram a fila.
+[08:00] Adeus para LSTM.
+[08:02] Nesse novo modelo que eles chamaram de Transformer, todas as palavras entram juntas na máquina.
+[08:09] Elas olham umas para as outras através de camadas puras de atenção.
+[08:13] Isso confirma aquela tese que a gente falou na abertura.
+[08:16] Sem a fila, o trabalho vira exclusivamente multiplicar enormes tabelas de números.
+[08:22] Que a única coisa que a placa de vídeo e a TPU sabem fazer de melhor.
+[08:26] É lindo de ver.
+[08:27] O software finalmente tomou a forma exata do hardware.
+[08:30] E os resultados foram imediatos.
+[08:33] O modelo base tinha 65 milhões de botões.
+[08:36] E treinou em 12 horas, usando só 8 placas percenda em vídeo.
+[08:41] O modelo grande deles levou 3 dias e meio.
+[08:44] E entregou uma tradução superior em uma fração do tempo antigo.
+[08:48] Para resumir esse arco.
+[08:50] De 1997 a 2016, o esforço foi tentar lembrar melhor das coisas dentro de uma fila.
+[08:57] Em 2017, eles desistiram da fila inteira para o software caber direito na peça física.
+[09:03] Para ver como uma palavra vira número, aperte o próximo.
+[09:06] Bom, a primeira coisa que o Transformer faz é pegar cada palavra e transformar numa lista de centenas de números.
+[09:13] Esses números são botões que giram no treino.
+[09:16] O resultado é que palavras com sentidos parecidos ganham números parecidos.
+[09:20] Gato e cachorro ficam perto.
+[09:22] Mas gato e imposto ficam longe.
+[09:24] Mas peraí, tem um problema lógico agora.
+[09:27] Se todas as palavras entram na máquina juntas sem fila nenhuma, como é que o modelo sabe a ordem?
+[09:33] A frase o cachorro mordeu o homem, entraria com os mesmos números que o homem mordeu o cachorro?
+[09:39] A sintasse iria para o espaço.
+[09:41] Sim.
+[09:42] A sacada deles foi criar um carimbo de posição.
+[09:45] Eles criaram listas de números baseadas puramente na posição espacial da palavra na frase.
+[09:51] E aí somam esses números na lista original da palavra.
+[09:54] Ah, entendi.
+[09:56] Usando a nossa analogia, seria como dar um crachá com o número da cadeira para a palavra antes de ela sentar na mesa redonda.
+[10:03] Isso mesmo.
+[10:04] A ordem do texto volta a existir, mas a fila do processamento não.
+[10:08] Caramba, ou seja, para poder usar os multiplicadores paralelos do hardware,
+[10:12] o software abriu um mão de uma vantagem sequencial óbvia, que é a ordem natural de ler,
+[10:17] e trocou isso por uma conta matemática de soma, para ver a tensão virar a multiplicação a perte próximo.
+[10:21] E a conta de como uma palavra escuta outra é enginhosa.
+[10:25] De cada palavra original, o modelo gera três novas listas.
+[10:29] A pergunta, a etiqueta e o conteúdo.
+[10:32] Aham.
+[10:33] E para saber o quanto a palavra A precisa escutar a palavra B,
+[10:37] a máquina simplesmente compara a pergunta da palavra A com a etiqueta da palavra B.
+[10:42] E o resultado dessa comparação vira um peso, certo?
+[10:46] Exato.
+[10:47] Baseado nesse peso, a palavra recebe a soma dos conteúdos das outras.
+[10:52] E o pulo do gato é que isso tudo é só conta de tabela.
+[10:55] Comparar as perguntas com as etiquetas é só multiplicar duas tabelas.
+[10:59] Somar esses conteúdos depois é multiplicar outra tabela.
+[11:03] E o transformer original não faz isso uma vez só.
+[11:05] Ele faz oito operações de atenção dessas ao mesmo tempo.
+[11:09] As oito cabeças paralelas.
+[11:11] Assim, enquanto uma cabeça foca no sujeito, a outra foca no pronome.
+[11:15] E tudo isso, multiplicar essas tabelas, é exatamente a matemática nativa
+[11:19] da antiga placa GeForce 256 e também da TPU.
+[11:23] Nada no transformer precisa esperar o passo anterior acabar.
+[11:27] Tudo roda solto.
+[11:28] Para ver o que se fez com isso no ano seguinte, aperte o próximo.
+[11:31] Então, modelo GPT.
+[11:33] Ele foi escrito por Alec Radford e Ilha Sutzkever.
+[11:37] Alec Radford, nascido em 1993, tinha 25 anos, vivo em 2026.
+[11:43] E o detalhe é que o GPT usa só a metade do transformer que se encarrega de escrever.
+[11:49] A tarefa principal era só prever a próxima palavra.
+[11:52] Treinado com 117 milhões de botões e um banco de 7 mil livros.
+[11:58] E poucos meses depois, em 11 de outubro de 2018, o Google lança o Baird.
+[12:04] O autor principal desse artigo não tem nome público.
+[12:07] O Baird fez o caminho oposto e usa só a metade do transformer focada em ler.
+[12:13] A tarefa dele era adivinhar palavras que o sistema escondia de propósito nas frases.
+[12:18] Ele começou com 340 milhões de botões e rapidamente virou o padrão por trás dos sistemas de busca.
+[12:25] A gente consegue ver um padrão claro surgindo aí.
+[12:28] É a mesmíssima peça de 2017, cortada ao meio, sendo treinada em texto cru, sem ninguém
+[12:34] para rotular nada.
+[12:36] O programa passa a ser achado uma vez e ajustado para resolver qualquer coisa.
+[12:41] O software virou uma receita pronta, né?
+[12:43] O único ingrediente que passou a limitar o avanço a partir daí foi o hardware.
+[12:47] Quantas placas você tem e por quanto tempo você pode rodar a máquina?
+[12:51] Pois é.
+[12:52] Para ver a receita crescer, aperte o próximo.
+[12:54] A escalada dos números a partir de 2018 é de tirar o fôlego.
+[12:59] Só olhando para os tamanhos.
+[13:01] Começou lá com 65 milhões em 2017.
+[13:04] Foi para 117 milhões em 2018.
+[13:07] Já em fevereiro de 2019 bateu 1,5 bilhão e em maio de 2020 pulou para 175 bilhões.
+[13:15] E o mais impressionante, aquela peça à base de 2017 é a mesma.
+[13:21] O modelo é o mesmo.
+[13:22] A única coisa que muda é a quantidade colossal de texto injetada e o número de placas rodando.
+[13:28] É a corrida lá do nosso primeiro episódio começando em outra escala.
+[13:33] As empresas passam a comprar milhares de placas.
+[13:36] NVIDIA vira a empresa mais valiosa da indústria inteira.
+[13:40] Tanto que, até 2023, os oito autores daquele primeiro artigo tinham saído do Google para
+[13:46] fundar as próprias empresas apostando nessa mesma ideia à base.
+[13:50] Foi um momento histórico porque pela primeira vez o software passou a editar o tamanho físico
+[13:55] do hardware.
+[13:56] A peça, o galpão, a energia, tudo desenhado para o programa caber dentro, não o contrário.
+[14:02] Para olhar a série inteira de uma vez, aperte o próximo.
+[14:06] Bom, depois de tanto tempo, vale a pena olhar para tudo o que construímos.
+[14:10] Com certeza, a gente começou da pedra digitalizando na canaleta, lá no hábaco.
+[14:16] Depois fomos para as engrenagens que automatizavam o movimento do vaivém mecânico, entrou a
+[14:21] eletricidade que tirou a peça mecânica, vimos a lógica de bully provando que decisões
+[14:26] de sim e não podiam morar em relés e válvulas.
+[14:30] Aí veio von Neumann colocando tanto programa quanto os dados dividindo a mesma memória.
+[14:35] O transistor e o microprocessador encolheram isso tudo até a máquina bater de frente com
+[14:40] a parede do calor.
+[14:42] Foi quando a placa feita para jogo virou uma máquina de conta paralela até que finalmente
+[14:46] a rede passou a achar o próprio programa.
+[14:49] E o resumo técnico da máquina de 2018 ainda é bully mais von Neumann executando o programa.
+[14:56] Fato.
+[14:57] A placa de vídeo mais avançada do mundo ainda é um mar de portas lógicas rodando
+[15:01] instruções escritas por alguém.
+[15:03] No nível do chip sim.
+[15:05] Mas a ruptura está em outro lugar.
+[15:07] O programa de inteligência que essa lista de instruções ajuda a executar hoje é achado.
+[15:13] São bilhões de botões que são girados pelo erro matemático.
+[15:17] Um programa que nenhum humano sentou para escrever e que ninguém, nem os próprios
+[15:22] criadores, sabe ler direito.
+[15:24] Porque ninguém planejou esse conjunto de anti-mão.
+[15:27] A peça nova de hardware abriu caminho para um modelo novo de programa e o modelo
+[15:31] novo exigiu uma peça muito maior.
+[15:33] E é esse conjunto operando junto que é o computador hoje.
+[15:37] Para fechar a série aperte o próximo.
+[15:38] É o ciclo se completou.
+[15:40] A nossa jornada histórica para por aqui no ano de 2018 com a receita dessa tecnologia
+[15:46] crescendo a partir do consumo de texto cru.
+[15:49] E se a gente fizer um balanço nominal de quem participou dessa última etapa, a lista
+[15:54] impressiona.
+[15:55] Roche Hater e Smith-Huber deram a memória fundamental para a leitura em fila.
+[16:00] Suttskever, Vinyouse e Leia conseguiram traduzir usando duas filas, mas deram de cara com o
+[16:06] gargalo.
+[16:07] Bem-juichou abriram esse gargalo ensinando a rede a olhar para todas as palavras de uma
+[16:11] vez.
+[16:12] Os oito do Google finalmente tiraram a fila da jogada e casaram perfeitamente o software
+[16:17] com a peça física.
+[16:19] E o Headford cortou a peça e simplesmente mandou ela adivinhar a próxima palavra.
+[16:24] E o mais marcante é que ninguém planejou essa sucessão.
+[16:27] As peças correram até a parede do calor.
+[16:29] A peça de jogo virou máquina paralela de conta.
+[16:32] Uma ideia de 1958 achou a peça barata e o programa passou a ser achado.
+[16:38] O software tomou a forma do hardware, recomeçando a corrida em outra escala.
+[16:42] A série reconstruiu o computador do zero, da pedra do hábaco ao botão da rede e
+[16:47] a máquina no fim ainda é a mesma máquina.
+[16:50] O que mudou de vez foi quem escreve o programa.

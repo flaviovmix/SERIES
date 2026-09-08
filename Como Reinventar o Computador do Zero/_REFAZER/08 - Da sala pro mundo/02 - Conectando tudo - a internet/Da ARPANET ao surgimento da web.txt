@@ -1,0 +1,7 @@
+Titulo: Da ARPANET ao surgimento da web
+Notebook: 08-02-Conectando tudo - a internet
+
+Descricao:
+As fontes detalham a evolução técnica e humana da internet, cobrindo o período de 1962 a 1995 através de uma perspectiva que une hardware e software. O relato descreve a transição de computadores isolados para uma rede global unificada, fundamentada na criação do pacote de dados e do protocolo TCP/IP. Personagens essenciais são apresentados cronologicamente, desde os pioneiros da ARPANET até a popularização da World Wide Web e do navegador Mosaic. O conteúdo enfatiza que o sucesso da rede não dependeu de uma autoridade central, mas de padrões abertos e acordos de cooperação. Por fim, o texto conecta o surgimento dessa infraestrutura conectada ao desafio moderno de processar volumes massivos de dados via inteligência artificial.
+
+Link: https://notebook.google.com/notebook/e376c495-73fe-4a04-8212-0fa178a5b179

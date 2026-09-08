@@ -1,0 +1,7 @@
+Titulo: Como o computador entrou em casa
+Notebook: 08-01-O computador chega em casa
+
+Descricao:
+Este material detalha a transição do computador de um equipamento restrito a laboratórios para um objeto indispensável no cotidiano doméstico entre 1975 e 1990. O texto argumenta que essa mudança não dependeu de novos componentes físicos, mas sim da evolução do computador como um produto acessível, com um propósito prático e uma interface amigável. Destaca-se o papel fundamental de softwares como o VisiCalc e a padronização trazida pelo IBM PC, que consolidou o mercado através de sistemas abertos. A narrativa também explora como a interface gráfica, inspirada em pesquisas da Xerox e popularizada pelo Macintosh, permitiu que leigos operassem as máquinas sem treinamentos técnicos. Ao final, as fontes indicam que, embora as máquinas tenham se tornado populares, elas ainda funcionavam de forma isolada, preparando o terreno para a futura era da conectividade.
+
+Link: https://notebook.google.com/notebook/a49ec7a4-47ab-4bd1-828f-ada742d2c0db

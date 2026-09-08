@@ -1,0 +1,193 @@
+# Transcricao automatica (faster-whisper small) - 10.8 min
+# Fonte: A revolução do Transformer e da Atenção.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] 2017. Attention is all you need.
+[00:03] É, o título inglês, Attention is all you need, que traduzindo significa
+[00:09] Atenção é tudo que você precisa.
+[00:11] Bom, neste nosso mergulho profundo de hoje, a gente vai cobrir os eventos da tecnologia de 1997 até 2018.
+[00:20] Tudo em ordem cronológica.
+[00:22] Isso aí.
+[00:23] E há um aviso super importante para quem está ouvindo.
+[00:25] A nossa página aqui de acompanhamento tem 12 telas no total.
+[00:29] Mas quem está só no áudio acompanha normalmente, viu? Está tudo certo.
+[00:33] Pode ficar super tranquilo.
+[00:34] Então, para a gente contextualizar, o nosso papo anterior terminou no ano de 2012.
+[00:39] Isso, com a famosa rede AlexNet.
+[00:41] Exato. A AlexNet chocou o mundo porque ela conseguia ler imagens inteiras de uma só vez.
+[00:49] As placas de vídeo adoram esse processamento paralelo.
+[00:52] Mas aí ficou aquele obstáculo gigantesco.
+[00:55] Como é que uma máquina que gosta de fazer tudo ao mesmo tempo
+[00:59] vai conseguir ler um texto?
+[01:01] Pois é.
+[01:01] Porque texto, diferente da imagem, é uma fila de palavras, né?
+[01:05] E a resposta que a gente vai ver a fundo hoje veio em 2017.
+[01:09] Basicamente, os pesquisadores tiraram a fila da jogada.
+[01:13] E criaram o software desenhado exatamente com a forma do hardware.
+[01:17] Aperte o próximo.
+[01:18] Para entender o drama dessa fila, a gente tem que ir para 1997, lá em Munique.
+[01:23] Tá.
+[01:24] Temos o SEP Roheiter, que a gente diz Roheiter, nascido em 1967, com 30 anos naquela cena e que tá vivo.
+[01:32] Certo. Quatro anos, também vivo.
+[01:35] Eles tentaram consertar a leitura em fila criando a LSTM.
+[01:40] LSTM, que significa memória de curto e longo prazo.
+[01:44] Perfeito. A rede usava uns portões para decidir matematicamente o que guardar e o que esquecer.
+[01:50] Para não perder logo o sentido da primeira palavra da frase.
+[01:53] Para quem tá acompanhando a gente, imagina uma mesa de reunião gigantesca com todo mundo sentado em fila.
+[02:00] A rede tenta resumir a frase, passando um bilhete de mão em mão por essa mesa.
+[02:04] Isso. A cada pessoa que é a palavra, o bilhete é apagado e reescrito.
+[02:09] E ninguém fala antes do colega terminar.
+[02:11] E o problema da LSTM é que, mesmo ajudando muito, depois de umas 20 palavras, o começo daquele bilhete já tá quase apagado.
+[02:19] Nossa, o contexto se perde todo. Aperte o próximo.
+[02:23] E aí, a gente avança para 2014 no Google.
+[02:25] Onde a coisa complicou.
+[02:26] Muito.
+[02:27] A equipe tinha o William Suthskever, nascido em 1986, com 27 anos naquela cena. Vivo.
+[02:34] Byte-equipe.
+[02:35] Sim. E o Oriol Vinyales, nascido em 1983, com 31 anos. Vivo.
+[02:41] E o Cochle, nascido em 1982, com 32 anos e que também está vivo.
+[02:47] E o que eles fizeram?
+[02:48] Eles pegaram duas redes LSTM e juntaram as duas para traduzir textos.
+[02:53] Uma rede lia o inglês e comprimia tudo num resumo, um vetor fixo de números.
+[02:59] A outra rede pegava só esse resumo e diz impacotava, escrevendo em francês.
+[03:04] Mas peraí, tem um problema muito óbvio nessa arquitetura, não tem?
+[03:07] Com certeza.
+[03:08] É o tal do gargalo do vetor único. Se for uma frase longa, o significado vai ser totalmente exprimido num resumo fixo.
+[03:15] Exatamente. É tipo tentar enfiar um guarda-op inteiro dentro de uma mala de mão, uma mala rasga.
+[03:21] O software bateu num limite arquitetônico. Aperte o próximo.
+[03:25] E a solução para esse gargalo surgiu entre 2014 e 2015. Lá em Montreal.
+[03:32] Montreal.
+[03:32] Nacia a atenção.
+[03:34] Isso. O grupo do Yoshua Benjiu, nascido em 1964, com 50 anos naquela cena. Vivo.
+[03:43] Junto com o Qiong Yun Chou, nascido em 1985, com 29 anos vivo, e um doutorando deles.
+[03:52] Eles introduziram a ideia da atenção.
+[03:54] Que mudou tudo.
+[03:55] Em vez de um único resumo espremido, a rede que escrevia passou a receber vários resumos parciais.
+[04:01] Então, quando a rede escrevia a palavra black em inglês, ela podia focar e dar um peso bem maior para a palavra preto lá na frase original.
+[04:08] Isso. Sem perder o contexto longo. O gargalo sumiu.
+[04:12] Brilhante. Aperte o próximo.
+[04:15] Só que aí tem o choque de realidade de 2016.
+[04:18] O tradutor do Google vai para a produção usando essas redes LSTM com atenção no meio.
+[04:24] E o custo foi absurdo.
+[04:26] Treinar o modelo desses levavam seis dias usando 96 placas de vídeo.
+[04:32] E na hora de usar, a leitura ainda era feita em fila.
+[04:34] O hardware odiava isso.
+[04:36] E foi aí que o Google detalhou a criação da TPU.
+[04:40] A TPU.
+[04:42] Unidade de processamento de tensores.
+[04:44] Um chip gigante com uma grade de 256 por 256 pequenos multiplicadores.
+[04:51] Feito só para multiplicar tabelas de números de forma simultânea.
+[04:55] Ou seja, o hardware implorava por paralelismo.
+[04:59] Mas o bem dito software, a LSTM, forçava todo mundo a trabalhar na fila.
+[05:04] Um desencontro total.
+[05:06] Aperte o próximo.
+[05:07] E então a gente chega no ponto de virada.
+[05:10] 12 de junho de 2017.
+[05:12] O artigo histórico é publicado.
+[05:14] Atenção, é tudo que você precisa.
+[05:16] Inscrito por oito pesquisadores do Google.
+[05:19] Vasvani, Vasuani, Shazir, Shazir, Parmar, Parmar,
+[05:26] Uscorate, Uscorate, Leon Jones, Leon Jones, Gomes, Gomes,
+[05:33] Kaiser, Kaiser e o Polossukim, Polossukim.
+[05:37] E a decisão deles foi radical.
+[05:39] Eles simplesmente pegaram a LSTM e jogaram no lixo.
+[05:42] Adeus, fila.
+[05:44] Eles criaram o Transformer.
+[05:45] Transformer.
+[05:46] No Transformer, todas as palavras entram ao exato mesmo tempo.
+[05:50] Aperte o próximo.
+[05:51] Mas olha, isso levanta a pergunta de um milhão de dólares.
+[05:54] Pode fazer.
+[05:55] Se a rede ler todas as palavras ao mesmo tempo, como é que ela sabe a ordem?
+[05:59] Porque a frase, o cachorro mordeu o homem.
+[06:02] E o homem mordeu o cachorro, virariam a mesma bagunça de palavras, né?
+[06:06] É, mas a gente tem que lembrar que palavra vira número.
+[06:09] Palavras com significados próximos, tipo cachorro e gato, ficam agrupadas juntas da matemática.
+[06:15] Tá, a semântica tá ali.
+[06:17] Mas e a ordem?
+[06:18] Eles criaram o Carimbo de Posição.
+[06:23] Voltando pra nossa mesa de reunião, é como se todo mundo sentasse numa mesa redonda.
+[06:28] Todos ao mesmo tempo.
+[06:29] Mas cada um ganhou um crachá, um carimbo com o número exato da cadeia que ocupava na fila.
+[06:34] Que sacada genial!
+[06:36] Aperte o próximo.
+[06:37] E a matemática por trás disso é genial.
+[06:40] Cada palavra gera três listas de números.
+[06:43] Em português a gente chama de pergunta, etiqueta e conteúdo.
+[06:46] Pergunta, etiqueta e conteúdo.
+[06:48] Isso.
+[06:49] A máquina pega e compara as perguntas de uma palavra com as etiquetas de todas as outras,
+[06:54] tudo de uma vez.
+[06:55] E o que isso significa na prática pra máquina?
+[06:58] Pure e simples multiplicação de matrizes gigantescas.
+[07:01] É exata a conta que as GPUs e a TPUs amam fazer.
+[07:06] O Transformer foi desenhado à imagem do hardware.
+[07:09] Caramba!
+[07:10] E os números desses saltos são malucos.
+[07:12] O modelo original tinha 65 milhões de parâmetros.
+[07:15] Sabe quanto tempo levava o treinamento?
+[07:17] Bem menos de seis dias, aposto.
+[07:20] Apenas 12 horas.
+[07:21] E usando só oito placas PC na Nvidia.
+[07:24] Em Nvidia.
+[07:25] O resultado foi a melhor tradução da época numa fração ínfima do tempo.
+[07:29] Aperte o próximo.
+[07:31] E o mais legal é que em 2018 os pesquisadores perceberam que podiam separar o Transformer.
+[07:36] Verdade.
+[07:37] Na OpenAI, OpenAI, a gente tem o Alec Redford.
+[07:42] Redford.
+[07:43] Nascido em 1993 com 25 anos na cena, vivo.
+[07:47] Ele e o Vílias Tsutsukever pegaram só a parte do Transformer que escreve.
+[07:52] E aí, na sua GPT?
+[07:54] GPT, com 117 milhões de pesos.
+[07:57] Treinado com 7 mil livros só com o objetivo de prever a próxima palavra.
+[08:02] E do outro lado, o Google pegou a parte que lê e criou o BIRT.
+[08:06] O BIRT, com 340 milhões de parâmetros,
+[08:09] focado totalmente em adivinhar palavras escondidas em textos da internet.
+[08:14] Sem humano rotulando nada.
+[08:16] Aperte o próximo.
+[08:17] E com essa facilidade, a receita cresceu de forma assustadora.
+[08:22] Foi uma explosão de escala, né?
+[08:24] De mais, saindo daqueles 65 milhões de parâmetros em 2017,
+[08:30] o mercado foi para 1,5 bilhão em 2019.
+[08:33] Melo Deus.
+[08:34] E bateu 175 bilhões em maio de 2020.
+[08:38] Não é surpresa nenhuma que a NVIDIA tenha virado a empresa mais valiosa do setor.
+[08:44] Porque a partir daí, o tamanho do software começou a editar o tamanho do hardware
+[08:48] a ser construído, e não o oposto.
+[08:50] Exato, os supercomputadores passaram a ser moldados para rodar esse software gigantesco.
+[08:56] Aperte próximo.
+[08:58] E poxa, isso liga aos pontos de toda a evolução da computação que a gente abordou.
+[09:02] É um arco histórico fascinante.
+[09:04] Totalmente.
+[09:04] A gente começou lá atrás, movendo uma simples pedra no hábaco,
+[09:08] passou por toda aquela genialidade da lógica de bully, bully.
+[09:11] Sim, o raciocínio matemático de zeros e uns.
+[09:14] Chegamos na arquitetura clássica, de von Neumann, von Neumann.
+[09:18] E nessas portas lógicas, baseadas em silício.
+[09:21] O que nos leva à epifania de 2018.
+[09:25] Aperte o próximo.
+[09:26] A grande mudança de paradigma.
+[09:28] Porque no fundo, as GPUs e as redes neurais continuam sendo baseadas em bully e von Neumann.
+[09:35] Zeros, uns, uma lista de instruções no silício.
+[09:39] É verdade.
+[09:40] A máquina, na sua essência física, continua sendo exatamente a mesma.
+[09:45] O que mudou de forma drástica foi o programa
+[09:48] Como assim?
+[09:49] Ele deixou de ser aquela lista imensa de regras escritas à mão por engenheiros
+[09:54] e virou algo orgânico.
+[09:56] Hoje, são bilhões de botões que a máquina ajusta sozinha, baseada nos próprios erros,
+[10:02] usando as placas de vídeo.
+[10:03] E a gente não consegue nem ler esses bilhões de parâmetros ajustados pelo Transformer.
+[10:08] Pois é.
+[10:09] O que nos deixa com um pensamento bem provocativo para fechar.
+[10:13] E a gente encerra nossa linha do tempo aqui no ano de 2018.
+[10:18] Se nós não escrevemos mais o código vital e mal compreendemos o que essas nuvens de dados
+[10:24] formam lá dentro.
+[10:26] O que vem pela frente.
+[10:28] Exato.
+[10:29] O que vai acontecer quando os hardware do futuro começarem a ser inteiramente projetados
+[10:34] não mais por engenheiros humanos, mas por esses mesmos programas achados nessas nuvens
+[10:40] que a gente não domina completamente.
+[10:43] Fica aí essa pergunta para o pessoal Matotá.
+[10:46] Até o próximo mergulho.

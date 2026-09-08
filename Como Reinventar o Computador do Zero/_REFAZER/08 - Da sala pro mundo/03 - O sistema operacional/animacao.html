@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O sistema operacional — Etapa 08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 08-03 (roteiro de 07/09, 12 telas, cronologico, com pessoas). A pasta
+     esta em _REFAZER, um nivel mais fundo que o normal: por isso os caminhos tem
+     quatro ../ em vez de tres. Sem modelo 3D, sem troca-imagem e sem CSS local: so
+     fotos do Commons e fichas da base. As duas fotos do Mac e do Windows 3.0 vem da
+     pasta do 08-01, que ja esta no ar. Os quatro __PLACEHOLDERS__ do tocador sao
+     preenchidos pelo preenche-8-03.py depois que a esteira baixa o audio aprovado. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-08.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20hist%C3%B3ria%20do%20s%C3%ADndico%20dos%20computadores.m4a" data-duracao="986"></audio>
+    <img class="tocador__capa" src="img/pdp7-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A história do síndico dos computadores</div>
+      <div class="tocador__fonte">Da sala pro mundo · 03 · O sistema operacional</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="986" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">16:26</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">da sala pro mundo · episódio 03</div>
+      <h1 class="reveal">O sistema operacional</h1>
+      <p class="lede reveal">De <b>1961 a 1997</b>, em ordem e com as pessoas. Os dois episódios anteriores disseram "sistema operacional" sem explicar. É <b>o programa que roda os outros</b>: decide quem usa o processador agora, onde cada um mora na memória, transforma o disco em arquivos e faz teclado e tela virarem peças trocáveis. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O síndico.</b> Não mora em apartamento nenhum, mas reparte o elevador (o processador), sabe de quem é cada apartamento (a memória), guarda a correspondência com nome (os arquivos) e cuida da portaria que todo mundo usa sem saber como funciona (teclado, tela, impressora).</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/pdp7-real.jpg" alt="Um minicomputador PDP-7 da DEC num museu: armários azuis, painel com luzes e uma tela redonda, e uma caixa de fitas na mesa">
+      <figcaption>Um PDP-7 como o que estava abandonado num canto da Bell Labs em 1969 · foto: Matiashf, CC BY-SA 3.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1961 · Corbató, no MIT</div>
+    <h2 class="reveal">Um programa por vez</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O operador no console de um IBM 7090 em 1965: a máquina de milhões que esperava a próxima pilha de cartões · foto: U.S. Weather Bureau, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/ibm7090-real.jpg" alt="Um homem de camisa branca sentado diante do console de um IBM 7090, com armários altos atrás e livros de manual sobre a mesa">
+        <figcaption>Um programa por vez · foto: U.S. Weather Bureau, domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Fernando Corbató faz o <b>CTSS</b>: vários terminais na mesma máquina, e o sistema trocando de programa tantas vezes por segundo que cada usuário acha que ela é só dele. Guarda o estado de cada um e impede um de mexer na memória do outro.</p>
+    <div class="nota-cena reveal">em 1964 começa o Multics (MIT, GE e Bell Labs): tudo é arquivo, memória protegida. Ficou grande demais; a Bell Labs saiu em 1969</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1969 · Bell Labs</div>
+      <h2 class="reveal">Thompson, Ritchie e o Unix</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">sem máquina</div><div class="texto">os dois gostavam da ideia do Multics, não do tamanho. Quando a Bell Labs saiu, ficaram sem computador pra usar</div></div>
+        <div class="item reveal"><div class="rotulo">o jogo</div><div class="texto">Thompson tinha escrito um jogo de viagem espacial e achou um PDP-7 abandonado num canto do laboratório</div></div>
+        <div class="item reveal"><div class="rotulo">semanas</div><div class="texto">em poucas semanas escreveu um sistema pequeno: arquivos, carregar programa, digitar comando. Batizado de <b>Unix</b>: um, em vez de muitos</div></div>
+        <div class="item reveal"><div class="rotulo">a filosofia</div><div class="texto">programas pequenos que fazem uma coisa só, ligados em fila, a saída de um na entrada do outro</div></div>
+      </div>
+      <p class="lede reveal">Um hardware fraco e descartado obrigou o software a ficar pequeno. <b>O pequeno é que durou.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Ken Thompson e Dennis Ritchie · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/thompson-ritchie-real.jpg" alt="Foto em preto e branco de dois homens de barba sorrindo lado a lado, Ken Thompson de óculos à esquerda e Dennis Ritchie à direita">
+        <figcaption>Thompson e Ritchie · domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1973 · a linguagem C</div>
+    <h2 class="reveal">O sistema solto do hardware</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O PDP-11, a máquina em que o Unix reescrito em C passou a rodar · foto: Don DeBold, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/pdp11-real.jpg" alt="Um minicomputador PDP-11/20 num museu, com painel frontal de chaves e luzes e um teletipo ao lado">
+        <figcaption>Do PDP-7 pro PDP-11 sem reescrever: bastou um compilador de C pra máquina nova · foto: Don DeBold, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Todo sistema até ali era escrito na língua da própria máquina: trocou de computador, joga fora. Ritchie cria o <b>C</b>, perto o bastante da máquina pra escrever um sistema e longe o bastante pra não depender de qual. Em 1973 o Unix é reescrito em C e <b>sai de um hardware pra rodar em outro</b>.</p>
+    <div class="nota-cena reveal">DOS, Windows, Mac, Linux e Android são escritos em C ou em filhas do C. O síndico deixou de ser funcionário de um prédio só</div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1974 a 1981 · Kildall</div>
+    <h2 class="reveal">CP/M, e o DOS que só abria a porta</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O manual do CP/M Plus, da Digital Research de Gary Kildall · foto: Hazitt, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/cpm-manual-real.jpg" alt="Um fichário cinza aberto com a capa CP/M Plus Operating System System Guide, da Digital Research, e a caixa dele atrás">
+        <figcaption>O sistema do 8080: o pedaço que fala com o hardware separado do resto · foto: Hazitt, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Kildall escreve o <b>CP/M</b> pro chip do Altair e separa o pedaço que fala com o disco e o teclado de cada marca: pra levar pra outro micro, trocava só ele. O DOS de 1981, que o episódio 01 contou, copia a cara do CP/M.</p>
+    <div class="nota-cena reveal">o que o DOS fazia: guardar arquivos, carregar um programa e entregar a máquina inteira pra ele. Um por vez, sem proteção de memória. Comparado com o Multics, um síndico que só sabia abrir a porta</div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1984 a 1990</div>
+    <h2 class="reveal">O que o DOS jogou fora</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Windows 3.0, 1990: um programa por cima do DOS desenhando janelas · captura: Panther, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="../01%20-%20O%20computador%20chega%20em%20casa/img/win30-real.png" alt="Uma janela cinza do Windows 3.0 com barra de título azul e o menu File, Options, Window, Help">
+        <figcaption>Várias janelas, vários programas · Panther, domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Várias janelas são vários programas juntos: o sistema precisa, de novo, <b>trocar de programa muitas vezes por segundo</b> e proteger a memória de cada um, como o Multics em 1964. O Mac e o Windows dos anos 80 improvisavam: um travado travava tudo.</p>
+    <div class="nota-cena reveal">a interface gráfica puxa o hardware e puxa o sistema de volta pra onde ele estava vinte anos antes</div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1988 a 1995</div>
+      <h2 class="reveal">A briga, e o Windows 95</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o processo</div><div class="texto">em 1988 a Apple, já sem Jobs, processa a Microsoft dizendo que o Windows copiou a cara do Mac</div></div>
+        <div class="item reveal"><div class="rotulo">a decisão</div><div class="texto">seis anos depois, em 1994, a Apple perde: janela, ícone e lixeira não são de ninguém</div></div>
+        <div class="item reveal"><div class="rotulo">24 de agosto de 1995</div><div class="texto">o <b>Windows 95</b>, o primeiro que não é um programa por cima do DOS e sim o sistema inteiro. Milhões na primeira semana</div></div>
+        <div class="item reveal"><div class="rotulo">o que decidiu</div><div class="texto">não foi o processo. O PC clone barato com um sistema igual em todos ganhou da máquina fechada. A Apple quase quebra</div></div>
+      </div>
+      <p class="lede reveal">O Windows 95 pegou porque o PC de 1995 tinha memória pra ele. <b>Exigir menos venceu fazer melhor</b>, de novo.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O Macintosh cuja cara foi parar no tribunal · foto: Sailko, CC BY 3.0">
+        <span class="selo">imagem real</span>
+        <img src="../01%20-%20O%20computador%20chega%20em%20casa/img/macintosh-real.jpg" alt="Um computador Macintosh bege compacto, com a tela embutida, teclado e mouse">
+        <figcaption>O lado que processou e perdeu · Sailko, CC BY 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1983 · Stallman, no MIT</div>
+    <h2 class="reveal">A impressora, o GNU e a licença</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Richard Stallman · foto: Frank Karlitschek, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/stallman-real.jpg" alt="Retrato em preto e branco de Richard Stallman, de cabelo comprido e barba, olhando pra câmera">
+        <figcaption>Pediu o código da impressora e não recebeu · foto: Frank Karlitschek, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A impressora nova veio com o programa fechado, e ninguém podia consertar. Em 1983 Stallman anuncia o <b>GNU</b>: um sistema compatível com o Unix que qualquer um pode usar, estudar, copiar e mudar. Em 1989, a <b>GPL</b>: quem recebe a cópia recebe os mesmos direitos.</p>
+    <div class="nota-cena reveal">em 1991 o GNU tinha editor, compilador de C e as ferramentas do Unix, e faltava o núcleo, a parte que reparte o processador e a memória. Portaria, correio e elevador, e nenhum síndico</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1987 a 1991 · Tanenbaum e Torvalds</div>
+      <h2 class="reveal">O núcleo veio de um estudante</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o livro</div><div class="texto">Andrew Tanenbaum, em Amsterdã, escreve o <b>Minix</b>, um Unix pequeno pra ensinar, com o código inteiro impresso no livro</div></div>
+        <div class="item reveal"><div class="rotulo">o 386</div><div class="texto">Linus Torvalds, 21 anos, em Helsinque, instala o Minix no PC novo, acha limitado, e escreve um núcleo pra sua máquina com as ferramentas do GNU</div></div>
+        <div class="item reveal"><div class="rotulo">agosto de 1991</div><div class="texto">posta na internet: está fazendo um sistema, só por hobby, "nada grande e profissional como o GNU". E pergunta o que as pessoas querem</div></div>
+        <div class="item reveal"><div class="rotulo">o encaixe</div><div class="texto">o núcleo de Torvalds, o <b>Linux</b>, mais as ferramentas de Stallman: um sistema inteiro, livre, no PC barato</div></div>
+      </div>
+      <p class="lede reveal">Hardware barato do episódio 01, rede do episódio 02, licença livre: <b>um sistema que ninguém vende</b>.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Linus Torvalds em 2014 · foto: Krd, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/torvalds-real.jpg" alt="Linus Torvalds sentado num sofá branco, de camiseta preta e óculos redondos, com as mãos cruzadas">
+        <figcaption>Aos 21 era só um hobby · Krd, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1993 a 1997 · Cutler e o NT, Jobs e o NeXT</div>
+    <h2 class="reveal">Os dois lados refazem a base</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O NeXTcube: o Unix com cara bonita que a Apple comprou em 1996 e que virou a base do Mac · foto: Michael Hicks, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/nextcube-real.jpg" alt="Um computador NeXTcube, um cubo preto de magnésio, exposto num museu">
+        <figcaption>O sistema que voltou com Jobs debaixo do braço · foto: Michael Hicks, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A Microsoft contrata Dave Cutler pra escrever um Windows de verdade por dentro: o <b>Windows NT</b> de 1993, base de todo Windows de hoje. A Apple, sem conseguir refazer o seu, compra a <b>NeXT</b> em 1996, traz Jobs de volta, e o Mac vira Unix por baixo.</p>
+    <div class="nota-cena reveal">em 1997 Windows, Mac e Linux têm por dentro as ideias do Multics de 1964. O micro levou trinta anos pra alcançar o mainframe</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">onde o Linux foi parar</div>
+    <h2 class="reveal">O sistema que ninguém vende</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O robô do Android: um Linux com outra cara, em bilhões de telefones · Google, desenho de Irina Blok, CC BY 3.0">
+        <img src="img/android-real.png" alt="O robô verde do Android, logotipo do sistema">
+        <figcaption>O núcleo de Torvalds no bolso · Google, CC BY 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A rede abriu pro comércio em 1995 e cada servidor precisava de um sistema. O Linux era grátis, rodava no PC barato e qualquer um consertava: em poucos anos, a maior parte da web. Depois o <b>Android</b>, e as máquinas que treinam IA.</p>
+    <div class="nota-cena reveal">pela terceira vez na etapa ganhou quem exigiu menos: padrão aberto, acordo entre redes, licença livre</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">1997</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Corbató repartiu o tempo. Thompson e Ritchie fizeram o pequeno e depois soltaram ele do hardware. Kildall separou o pedaço que fala com a máquina. Gates pôs a cara no PC. Stallman escreveu a liberdade numa licença. Tanenbaum ensinou. Torvalds fez o núcleo aos 21 e deu de graça. Cutler refez o Windows por dentro. Jobs voltou com um Unix debaixo do braço</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a etapa inteira</div>
+        <div class="desc">a peça pronta e presa na sala da empresa entrou em casa, virou rede e ganhou o síndico que roda os outros programas. Em 1997 a máquina está em toda casa, ligada em toda outra, com um sistema livre por baixo de boa parte delas</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">o que muda agora</div>
+        <div class="desc">a máquina está pronta e espalhada. Agora as peças vão correr, o processador e uma placa nova feita pra jogo, e o programa vai deixar de ser escrito à mão</div>
+      </div>
+    </div>
+    <p class="lede reveal">Se a máquina já está em toda casa e já fala com todas as outras, <b>o que ainda falta</b> pra ela fazer o que a gente não sabe escrever?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

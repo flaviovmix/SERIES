@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A placa de vídeo — Etapa 09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 09-02 (roteiro de 07/09, 12 telas, cronologico, com pessoas). Mesma
+     receita do 09-01: pasta em _REFAZER (quatro ../), sem modelo 3D, sem CSS local,
+     fichas curtas (texto longo corta em 1440x900), fotos do Commons com credito. A
+     pastilha da tela 8 vem da pasta do 09-03 (a GTX 580 que treinou a AlexNet). Os
+     __PLACEHOLDERS__ do tocador sao preenchidos pelo preenche-9.py. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-09.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="Como%20a%20placa%20de%20v%C3%ADdeo%20virou%20matem%C3%A1tica.m4a" data-duracao="745"></audio>
+    <img class="tocador__capa" src="img/voodoo-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Como a placa de vídeo virou matemática</div>
+      <div class="tocador__fonte">A máquina que aprende · 02 · A placa de vídeo</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="745" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">12:25</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que aprende · episódio 02</div>
+      <h1 class="reveal">A placa de vídeo</h1>
+      <p class="lede reveal">De <b>1985 a 2007</b>, em ordem e com as pessoas. O processador parou perto de 3 GHz; ir mais rápido virou fazer muitas contas ao mesmo tempo. Que peça já fazia isso há dez anos? <b>A placa de vídeo, pra jogo.</b> Pintar uma tela é fazer a mesma conta em 307 mil pontos, trinta vezes por segundo. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>A equipe de pintores.</b> A tela é uma parede de 300 mil azulejos repintada trinta vezes por segundo. O processador é um pintor só, esperto, um azulejo por vez. A placa de vídeo é uma equipe de centenas de pintores simples, todos com a mesma instrução, pintando ao mesmo tempo.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/voodoo-real.jpg" alt="Um chip preto com o logotipo 3Dfx Interactive, soldado numa placa de circuito marrom, ao lado de chips de memória">
+      <figcaption>O chip de uma placa 3dfx Voodoo: a peça feita pra jogo · foto: Dennis Lamczak, CC BY-SA 3.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1985 a 1993 · Ho e Carmack</div>
+      <h2 class="reveal">A placa burra</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que a placa era</div><div class="texto">memória de tela e um conversor pro monitor: a <b>VGA</b> da IBM (1987), 640×480. Quem pintava era o processador</div></div>
+        <div class="item reveal"><div class="rotulo">20 de agosto de 1985</div><div class="texto">K.Y. Ho funda a <b>ATI</b> em Markham, com dois engenheiros de Hong Kong: placas de vídeo pro PC, sem 3D</div></div>
+        <div class="item reveal"><div class="rotulo">dezembro de 1993</div><div class="texto">o <b>Doom</b>, engine de John Carmack: corredores em 3D pintados por um 386, com truques pra pular o que não aparece</div></div>
+      </div>
+      <p class="lede reveal"><b>Em 1993 o software já queria 3D</b>; o hardware que sabia fazer isso custava dezenas de milhares de dólares.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Uma ATI VGA Wonder, placa de vídeo dos anos 80: memória e conversor, sem 3D · foto: Samuel Demeulemeester, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/vgawonder-real.jpg" alt="Uma placa de vídeo ATI VGA Wonder dos anos 80, comprida, com chips de memória enfileirados e o conector de encaixe dourado">
+        <figcaption>Uma ATI VGA Wonder: memória e conversor, sem 3D · foto: Samuel Demeulemeester, CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="John Carmack em 2010 · foto: Official GDC, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/carmack-real.jpg" alt="John Carmack falando num púlpito com dois microfones, de camisa escura e óculos, num palco azul">
+        <figcaption>John Carmack em 2010 · foto: Official GDC, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1993 a 1995 · Huang e Malachowsky</div>
+      <h2 class="reveal">A NVIDIA erra a língua</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">5 de abril de 1993</div><div class="texto">num Denny's na Califórnia, Jensen Huang, Chris Malachowsky e um terceiro engenheiro fundam a <b>NVIDIA</b>: o PC vai querer 3D e ninguém faz um chip barato pra isso</div></div>
+        <div class="item reveal"><div class="rotulo">1995</div><div class="texto">o <b>NV1</b> desenha curvas em vez de triângulos e traz som e entrada pro controle do Sega Saturn</div></div>
+        <div class="item reveal"><div class="rotulo">junho de 1996</div><div class="texto">a Microsoft lança o <b>Direct3D</b>, a língua comum dos jogos de Windows com a placa: triângulos. O NV1 não fala a língua. Vende pouco; metade da equipe vai embora</div></div>
+      </div>
+      <p class="lede reveal">O hardware pode ser bom e morrer se não falar a língua que o software escolheu. <b>A lição do Itanium, dez anos antes.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jensen Huang em 2026 · foto: Anderseidesvik, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/huang-real.jpg" alt="Jensen Huang de jaqueta de couro preta e óculos, cabelo grisalho, olhando pro lado">
+        <figcaption>Jensen Huang em 2026 · foto: Anderseidesvik, CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Chris Malachowsky em 2025 · foto: Maryland GovPics, CC BY 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/malachowsky-real.jpg" alt="Chris Malachowsky, de cabelo e barba brancos e camisa cinza, diante de um microfone">
+        <figcaption>Chris Malachowsky em 2025 · foto: Maryland GovPics, CC BY 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1996 e 1997 · o Voodoo e o GLQuake</div>
+    <h2 class="reveal">A placa que só sabia fazer 3D</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma Diamond Monster 3D II com o Voodoo2 de 1998, a segunda geração da placa: dois chips de textura e um de pixel, e só saída pra 3D · foto: Appaloosa, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/voodoo2-real.jpg" alt="Uma placa de vídeo Diamond com três chips 3dfx e fileiras de chips de memória, dois conectores de vídeo na lateral">
+        <figcaption>Um Voodoo2 de 1998, a segunda geração da mesma placa · foto: Appaloosa, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Três engenheiros vindos da Silicon Graphics fundam a <b>3dfx</b>. O Voodoo Graphics (out/nov 1996) só faz 3D: liga em cascata na placa normal e assume a tela quando o jogo começa. Em 22 de janeiro de 1997 Carmack solta o <b>GLQuake</b>, o Quake pintado pela placa. A placa vira obrigatória.</p>
+    <div class="nota-cena reveal">um programa vendeu uma peça, como o VisiCalc vendeu o Apple II. E a peça nasceu especializada: só sabia fazer uma coisa, e por isso fazia rápido</div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1997 e 1998 · a briga das línguas</div>
+      <h2 class="reveal">Glide contra Direct3D</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">as línguas</div><div class="texto">a 3dfx tinha a <b>Glide</b>, só dela. Do outro lado, duas de todo mundo: o OpenGL e o Direct3D, que vinha com o Windows</div></div>
+        <div class="item reveal"><div class="rotulo">agosto de 1997</div><div class="texto">a NVIDIA renasce com o <b>RIVA 128</b>: fala Direct3D, 2D e 3D na mesma placa, sem cascata. Em 1998, o RIVA TNT</div></div>
+        <div class="item reveal"><div class="rotulo">fevereiro de 1998</div><div class="texto">o Voodoo2: ainda só 3D, ainda Glide primeiro. Os estúdios param de escrever pra uma placa só</div></div>
+      </div>
+      <p class="lede reveal">Pela quarta vez na série, <b>ganhou quem exigiu menos do software</b>: a peça que fala a língua comum sobrevive.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Uma ELSA Erazor II com o RIVA TNT de 1998: 2D e 3D na mesma placa · foto: Jana.Wiki, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/rivatnt-real.jpg" alt="Uma placa de vídeo ELSA verde com um dissipador preto quadrado no centro e chips de memória em volta">
+        <figcaption>RIVA TNT, 1998: 2D e 3D juntos · foto: Jana.Wiki, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Uma ATI Rage 128 de 2000: a ATI também falava Direct3D · foto: RobChafer, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/rage128-real.jpg" alt="Uma placa de vídeo ATI Rage 128 verde, com dissipador preto e chips de memória, conector VGA azul na lateral">
+        <figcaption>Uma ATI Rage 128, 2000 · foto: RobChafer, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">1999 · Kirk, na NVIDIA</div>
+    <h2 class="reveal">A primeira GPU</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma GeForce 256 da VisionTek, 1999: a geometria e a luz saem do processador e entram na placa · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/geforce256-real.jpg" alt="Uma placa de vídeo verde com uma ventoinha redonda preta no centro, chips de memória Infineon e conectores DVI e VGA na lateral">
+        <figcaption>Uma GeForce 256, 1999 · domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Mesmo com Voodoo ou RIVA, o processador ainda calculava onde cada triângulo cai na tela e como a luz bate nele. Em 31 de agosto de 1999 a NVIDIA anuncia a <b>GeForce 256</b>: geometria e luz vão pra placa. Uns 20 milhões de transistores, o dobro do Pentium III. Nome novo: <b>GPU</b>.</p>
+    <div class="nota-cena reveal">David Kirk, cientista-chefe desde 1997, desenha o rumo dali em diante. O jogo ganha o processador de volta pra física, inimigos e som</div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2000 a 2002 · Radeon, o fim da 3dfx, a GeForce 3</div>
+      <h2 class="reveal">A placa aceita programa</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">abril de 2000</div><div class="texto">a ATI anuncia a <b>Radeon</b>, no nível da GeForce. A corrida da placa passa a ter dois corredores</div></div>
+        <div class="item reveal"><div class="rotulo">15 de dezembro de 2000</div><div class="texto">a 3dfx vende o que tem pra NVIDIA e fecha em 2002. A Glide morreu antes</div></div>
+        <div class="item reveal"><div class="rotulo">27 de fevereiro de 2001</div><div class="texto">a <b>GeForce 3</b>: em vez de uma sequência fixa por ponto, um programinha curto que roda em cada vértice e em cada ponto. Xbox (nov 2001) com chip NVIDIA; Radeon 9700 (2002)</div></div>
+      </div>
+      <p class="lede reveal">A peça nasceu especializada pra ser rápida e agora ganha de volta um pouco de generalidade. <b>Cada pintor passa a seguir um programinha.</b> Isso vai ser a porta.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Uma Radeon 7500 All-in-Wonder de 2001, com sintonizador de TV a bordo · foto: Raptor3388, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/radeon-real.jpg" alt="Uma placa de vídeo ATI Radeon com uma ventoinha redonda com o logotipo ATI, um módulo de sintonizador de TV metálico e conectores de vídeo">
+        <figcaption>Uma Radeon de 2001 · foto: Raptor3388, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">2003 a 2005 · a placa por dentro</div>
+    <h2 class="reveal">Centenas de pintores iguais</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Uma GeForce GTX 580 (2010) aberta: o dissipador levantado, o chip no centro da placa e uma pastilha solta em cima dele, com 512 processadores iguais · foto: Fritzchens Fritz, CC0">
+        <span class="selo">imagem real</span>
+        <img src="../03%20-%20A%20m%C3%A1quina%20que%20aprende/img/gtx580-real.jpg" alt="Uma placa de vídeo GeForce GTX 580 com o dissipador preto levantado, mostrando a placa com o chip NVIDIA no centro e uma pastilha de silício solta apoiada sobre ele">
+        <figcaption>Uma GeForce de 2010 aberta: 512 processadores iguais no chip do centro · foto: Fritzchens Fritz, CC0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">O processador é um caixa só, esperto. A placa é o oposto: <b>centenas de pintores simples</b>, todos com a mesma instrução em números diferentes. Em 2004 um doutorando de Stanford apresenta o <b>Brook</b>: a conta em C, direto pra placa.</p>
+    <div class="nota-cena reveal">qualquer conta que é a mesma em muitos números cabe ali: o software achou um uso novo pro hardware</div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">julho de 2006 · Ruiz e Orton</div>
+      <h2 class="reveal">A AMD compra a ATI</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">24 de julho de 2006</div><div class="texto">a AMD anuncia a compra da ATI por <b>5,4 bilhões de dólares</b>; fecha em 25 de outubro. A mesma semana do Core 2 Duo</div></div>
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Hector Ruiz, presidente da AMD desde 2002, vindo da Motorola; Dave Orton, presidente da ATI, engenheiro vindo da Silicon Graphics</div></div>
+        <div class="item reveal"><div class="rotulo">o motivo</div><div class="texto">as duas peças da era seguinte na mesma empresa, e um plano de pôr as duas na mesma pastilha: <b>Fusion</b>. A AMD passa a brigar em duas frentes</div></div>
+      </div>
+      <p class="lede reveal">Dois núcleos e centenas de pintores são dois jeitos de fazer muitas contas ao mesmo tempo. <b>Em 2006 a indústria decide que os dois vão viver juntos.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Hector Ruiz, presidente da AMD, num palco em 2007 · foto: Erik Hersman, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/ruiz-real.jpg" alt="Hector Ruiz falando num palco, de camisa listrada e óculos, com uma foto de crianças num computador projetada atrás">
+        <figcaption>Hector Ruiz, em 2007 · foto: Erik Hersman, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">8 de novembro de 2006</div>
+    <h2 class="reveal">A GeForce 8800</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="A placa de uma GeForce 8800 GTX sem o dissipador: o chip G80 no centro, cercado de memória · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/geforce8800-real.jpg" alt="Uma placa de vídeo verde comprida, sem dissipador, com um chip grande NVIDIA no centro, doze chips de memória em volta e dois conectores DVI">
+        <figcaption>Uma GeForce 8800 GTX sem o dissipador · domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal"><b>681 milhões de transistores</b>, o dobro do Core 2 Duo. Até ali a placa tinha pintores especializados: uns pra geometria, outros pra cor. A 8800 tem <b>128 processadores iguais</b>, que fazem as duas coisas. Um computador de pintores iguais, que por acaso ainda pinta jogo.</p>
+    <div class="nota-cena reveal">a porta que a GeForce 3 abriu virou um portão. Falta a língua pra entrar</div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">15 de fevereiro de 2007</div>
+    <h2 class="reveal">CUDA: a língua que abriu a placa</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="O chip G80 de perto: é nele que o CUDA roda programa escrito em C · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/g80-real.jpg" alt="Um chip NVIDIA G80 visto de cima, quadrado metálico com o logotipo e a gravação G80-450-A3, cercado de chips de memória">
+        <figcaption>O chip G80, de perto · domínio público</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Um programa em C que roda direto nos 128 processadores da placa, sem fingir que é jogo: "faça esta conta em cada um destes um milhão de números", e a placa distribui pelos pintores. Liderado pelo doutorando do Brook, com Kirk empurrando. Primeiros usos: física, química, finanças.</p>
+    <div class="nota-cena reveal">uma linguagem, que é software, mudou o destino da peça: de placa de jogo a máquina de conta aberta pra qualquer programa</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2007</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Ho fundou em Markham a empresa que virou a Radeon. Carmack fez o jogo que vendeu a placa. Huang e Malachowsky erraram a língua no NV1 e acertaram no RIVA. Kirk pôs a geometria na placa, depois pôs programa nela, depois abriu ela pra tudo. Ruiz e Orton juntaram processador e placa na mesma empresa. Ninguém planejou o conjunto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição</div>
+        <div class="desc">uma peça feita pra jogo virou a peça mais importante da era seguinte. E virou porque o software, primeiro o jogo, depois uma linguagem, foi mudando o que se pedia dela</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">onde para</div>
+        <div class="desc">2007: a placa de vídeo programável em C, 128 processadores iguais, e a AMD dona da ATI</div>
+      </div>
+    </div>
+    <p class="lede reveal">Existe algum problema que a gente não sabe escrever como programa, mas que dá pra resolver só com muita conta repetida? <b>E se a resposta estivesse guardada numa gaveta desde 1958?</b></p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

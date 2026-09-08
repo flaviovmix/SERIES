@@ -1,0 +1,148 @@
+Inicie dizendo: A Corrida do Processador
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Corrida do Processador.txt
+enviado como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por
+tela.
+
+Este e o primeiro episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da
+serie Como Reinventar o Computador do Zero. A etapa anterior terminou em 1997 com a
+maquina em toda casa, ligada em rede e com sistema operacional, e perguntou o que
+ainda falta pra ela fazer o que a gente nao sabe escrever. A resposta vem em tres
+partes, e esta e a primeira: antes de qualquer coisa, as pecas vao correr. O
+processador primeiro.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram o processador, EM
+ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o software melhoram
+um empurrando o outro. Preco, briga na justica e "quem ganhou" so entram pra dizer o
+que permitiram ou impediram de construir.
+
+ESTE EPISODIO COBRE DE 1993 A 2006, EM ORDEM. Dizer esse intervalo logo na abertura e,
+no encerramento, dizer em que ano o episodio para. O anterior parou em 1997 e este
+comeca em 1993: NAO chamar isso de "voltar no tempo"; os anos se sobrepoem porque a
+corrida ja corria por baixo. A tela 1 diz isso em uma frase.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a
+ficha dela, uma frase so, no formato: nome, ano de nascimento, idade naquela cena, e se
+esta viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler
+todas, sem pular, sem inventar dado e sem comentar. Sao nove: Dham, Nicely, Grove,
+Eden, Sanders, Meyer, Gelsinger, Dennard e Otellini. Gordon Moore NAO e personagem
+(a lei de Moore e citada como regra da etapa sete, sem ficha). O artigo "O almoco
+gratis acabou" e citado pelo titulo e por "um programador da Microsoft", SEM nome.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (o Pentium e o erro), 4 e 5
+(o chip que reordena e a AMD), 6 e 7 (os mega-hertz e o aviso do calor), 8 e 9 (os 64
+bits e a parede), 9 e 10 (a parede e os dois nucleos), 11 e 12 (o Core 2 Duo e o
+fecho). Um pedido de Proximo entre cada par.
+
+AS TELAS 11 E 12 JA FORAM JUNTADAS NUMA GRAVACAO ANTERIOR DESTE EPISODIO. A tela 11
+termina na AMD anunciando a compra de uma empresa de placa de video, e ai vem o pedido
+de Proximo; o balanco das pessoas, a licao e a pergunta sao a tela 12. Sao onze
+pedidos, nao dez.
+
+A GRAVACAO ANTERIOR TAMBEM: abriu com o aviso de 2001 como chamada (a ordem e estrita:
+depois do titulo, a primeira frase e a retomada de 1997); disse "la nas fontes" (nao
+falar em fontes nem material); comparou o Pentium 4 com um motor (proibido); pulou o
+balanco nome por nome da tela 12; disse que Otellini nasceu em 1955 (e MIL NOVECENTOS E
+CINQUENTA); falou de Haifa na tela 9 (Haifa e a tela 11); e juntou os dois
+cancelamentos de 2004 num "quatro virgula sete giga-hertz" (sao dois: o de SETE, em
+maio, e o de QUATRO, em outubro).
+
+A SEGUNDA GRAVACAO acertou as onze telas e as nove fichas, mas: disse que um giga-hertz
+e "um milhao de batidas por segundo" (e UM BILHAO, mil milhoes); leu a palavra "ficha"
+em voz alta antes de cada pessoa (a palavra e marcador do roteiro, NAO e fala: emendar
+direto no nome); disse "Paulo Otellini" (e Paul, "pól"); abriu com "e, o coracao" (NAO
+comparar processador com coracao, nem na primeira frase); e falou em "cinco
+transistores" na tabela da divisao (sao cinco ENTRADAS).
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+A ABERTURA E DIRETA, sem cena inventada, sem comparacao e sem chamada com fato de tela
+posterior: depois do titulo, a primeira frase e a retomada de 1997.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR. "Mil novecentos e noventa e tres", "mil
+novecentos e noventa e quatro", "mil novecentos e noventa e cinco", "mil novecentos e
+noventa e sete", "mil novecentos e sessenta e nove", "mil novecentos e oitenta e dois",
+"mil novecentos e noventa e um", "mil novecentos e noventa e seis", "mil novecentos e
+noventa e nove", "dois mil", "dois mil e um", "mil novecentos e setenta e quatro",
+"dois mil e tres", "dois mil e quatro", "dois mil e cinco", "dois mil e seis".
+Frequencia sempre com unidade por extenso: "sessenta mega-hertz", "um giga-hertz",
+"tres giga-hertz e oitocentos mega-hertz".
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: Pentium ("pên-tium"), x86 ("xis oitenta e
+seis"), Dham ("vi-nód dâm"), Nicely ("nái-sli"), Lynchburg ("líntch-berg"), Grove
+("grôuv"), Eden ("mú-li é-den"), Haifa ("rái-fa"), Sanders ("sân-ders"), Fairchild
+("fér-tchaild"), NexGen ("nécs-djen"), Athlon ("át-lon", com T, nunca "éflon"), Meyer ("mái-er"), DEC
+("déc"), Alpha ("álfa"), Gelsinger ("guél-sin-guer"), Dennard ("dé-nard"), Itanium
+("i-tâ-nium"), Opteron ("óp-te-ron"), Paul Otellini ("pól o-te-lí-ni", nunca "Paulo"), Core 2 Duo ("cór tu
+dú-o"), Windows ("uín-dous"). Siglas SEMPRE soletradas: IBM, AMD, MMX. K5, K6 e K7 sao
+"cá cinco", "cá seis", "cá sete". Numeros de chip digito a digito: "quatro oito seis",
+"oito zero oito oito".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "a analogia autorizada" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa.
+
+FOCO, EM ORDEM: a maquina pronta e o que e "correr" (relogio e trabalho por batida);
+mil novecentos e noventa e tres, Dham e o Pentium, dois caixas, o nome que veio de uma
+decisao judicial; noventa e quatro, Nicely acha o erro da divisao, a rede espalha,
+Grove troca pra todo mundo; noventa e cinco a noventa e sete, o Pentium Pro executa
+fora de ordem, o MMX de Haifa faz a mesma conta em varios numeros, o Pentium II junta;
+sessenta e nove a noventa e sete, Sanders e a AMD, segunda fonte pela exigencia da IBM,
+a briga do 386, o K5 fraco, a NexGen de Dham vira o K6; noventa e nove a dois mil,
+Meyer e o Athlon, o giga-hertz dois dias antes da Intel, o Pentium 4 feito pra numero;
+dois mil e um, Gelsinger avisa do calor, a regra de Dennard e por que ela acaba; dois
+mil e tres, Itanium contra AMD64, o Pentium M de Haifa, a Intel copia a AMD; dois mil e
+quatro, a parede: o Pentium 4 de noventa nanometros esquenta, a Intel cancela o de sete
+e o de quatro giga-hertz, para em tres e oito, anuncia dois nucleos; dois mil e cinco,
+"o almoco gratis acabou", Otellini, Pentium D e Athlon 64 X2, o que e nucleo; dois mil
+e seis, o Core 2 Duo do desenho de notebook vence abaixando o relogio, a AMD anuncia a
+compra de uma empresa de placa de video; dois mil e seis, o fecho.
+
+O PONTO QUE NAO PODE FALTAR: de mil novecentos e noventa e tres a dois mil e quatro o
+programa nao mudou uma linha e ficou mais rapido, porque o relogio subia e o hardware
+aprendeu a ler e reordenar o programa sozinho. Em dois mil e quatro a fisica parou o
+relogio, e a saida por nucleos devolveu a conta pro software: daqui em diante so o
+programa escrito em paralelo aproveita o transistor novo.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO ABRE A ETAPA: na ultima tela, balanco das pessoas, a
+licao (Moore continua dando transistor mas parou de dar velocidade) e a pergunta que
+abre o proximo episodio, SEM explicar placa de video, rede neural nem inteligencia
+artificial.
+
+DURACAO: cerca de 18 minutos. Nao esticar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+Use SOMENTE a analogia descrita no roteiro, o caixa do mercado (instrucao = cliente na
+fila, relogio = ritmo do caixa, passos do atendimento = fila do chip, dois caixas =
+duas instrucoes por batida, chamar quem ja tem o dinheiro na mao = fora de ordem, dois
+mercados com o mesmo estoque = dois nucleos). NAO invente analogias novas. Calor,
+tensao e vazamento sao explicados direto, sem comparacao. NAO comparar processador com
+motor, carro, coracao ou cerebro.
+
+Use tambem o Overview.txt como contexto curto.

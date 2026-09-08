@@ -1,0 +1,7 @@
+Titulo: A corrida entre a Intel e AMD
+Notebook: 09-01-A corrida do processador
+
+Descricao:
+O episódio A Corrida do Processador detalha a evolução do hardware entre 1993 e 2006, focando na transição entre o aumento da velocidade bruta e a era dos múltiplos núcleos. O texto descreve como a Intel e a AMD competiram intensamente, destacando marcos como o lançamento do Pentium, a superação da barreira de 1 GHz e a transição para arquiteturas de 64 bits. Através de figuras centrais como Vinod Dham e Andy Grove, a narrativa explica que a eficiência energética e o calor tornaram-se obstáculos físicos intransponíveis para o aumento contínuo do relógio interno. Essa limitação culminou no fim do ganho automático de desempenho para softwares antigos, exigindo que programadores passassem a escrever códigos em paralelo. O relato encerra-se em 2006 com o lançamento do Core 2 Duo, consolidando a mudança de foco da indústria para a eficiência por batida e a multiplicação de núcleos de processamento.
+
+Link: https://notebook.google.com/notebook/e43efa90-e6b4-4614-8790-0dd11b0c448a

@@ -1,0 +1,56 @@
+carregando modelo medium...
+
+===== 3:34 (reouvido do 03:29) =====
+   No Google, um tradutor novo, construído com duas dessas LSTMs emendadas.
+   O desenho deles era bem interessante.
+   A primeira rede só lê a frase em inglês e guarda um resumo final.
+   Uma lista fixa de números.
+   A segunda rede pega só esse resumo e começa a escrever em francês, palavra por palavra.
+   Só que aí a gente bate num gargalo óbvio, né?
+   Imagina tentar espremer uma frase inteira, seja ela curtinha.
+
+===== 7:43 (reouvido do 07:38) =====
+   Leon Jones, Aidan Gomes, Lucas Heiser e Ilya Polosukin.
+   Um fato interessante é que todos estão vivos em 2026.
+   O mais novo deles era um estagiário de 20 anos na época,
+   e até 2023 todos esses oito autores já tinham saído do Google.
+   O que eles propuseram foi radical.
+   Eles simplesmente tiraram a fila.
+   Adeus para LSTM.
+   Nesse novo modelo que eles chamaram de Transformer,
+   todas as palavras entram juntas na máquina.
+   Elas olham umas para as outras através de camadas puras de atenção.
+   Isso confirma aquela tese que a gente falou na abertura.
+   Sem a fila, o trabalho vira exclusivamente multiplicar enormes tabelas de números.
+   Que a única coisa que...
+
+===== 10:17 (reouvido do 10:12) =====
+   do hardware, o software abriu um mão de uma vantagem sequencial óbvia, que é a ordem
+   natural de ler, e trocou isso para uma conta matemática de soma, para ver a tensão virar
+   a multiplicação a perto e próximo.
+   E a conta de como uma palavra escuta outra é engenhosa. De cada palavra original,
+   o modelo gera três novas listas, a pergunta, a etiqueta e o conteúdo.
+   E para saber o quanto a palavra A precisa escutar a palavra B, a máquina simplesmente
+   compara a pergunta da palavra A com a etiqueta da palavra B.
+   E o resultado dessa comparação vira um peso, certo?
+   Exato. Baseado nesse peso, a palavra recebe a soma dos conteúdos das outras.
+   E o pulo do gato é que isso tudo é só conta de tabela. Comparar as perguntas com
+
+===== 14:21 (reouvido do 14:16) =====
+   Depois fomos para as engrenagens que automatizavam o movimento do vai-vém mecânico.
+   Entrou a eletricidade que tirou a peça mecânica.
+   Vimos a lógica de bule provando que decisões de sim e não podiam morar em relés e válvulas.
+   Aí veio Von Neumann colocando tanto o programa quanto os dados dividindo a mesma memória.
+   O transistor e o microprocessador encolheram isso tudo até a máquina bater de frente com a parede do calor.
+   Foi quando a placa feita para jogo virou uma máquina de conta paralela
+   até que, finalmente, a rede passou a achar o próprio programa.
+   E o resumo técnico da máquina de 2018 ainda é Bully mais Von Neumann executando o programa.
+   Fato.
+   A placa de vídeo mais avançada do mundo ainda é um mar de portas lógicas rodando.
+
+===== 16:35 (reouvido do 16:30) =====
+   de jogo virou máquina paralela de conta. Uma ideia de 1958 achou a peça barata e o
+   programa passou a ser achado. O software tomou a forma do hardware,
+   recomeçando a corrida em outra escala. A série reconstruiu o computador do zero,
+   da pedra do abaco ao botão da rede, e a máquina no fim ainda é a mesma
+   máquina. O que mudou de vez foi quem escreve o programa.

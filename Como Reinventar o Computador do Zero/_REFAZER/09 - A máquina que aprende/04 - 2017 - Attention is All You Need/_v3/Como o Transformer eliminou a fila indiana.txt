@@ -1,0 +1,7 @@
+Titulo: Como o Transformer eliminou a fila indiana
+Notebook: 09-04-2017 - Attention is All You Need
+
+Descricao:
+Os documentos detalham o roteiro e o contexto histórico do episódio final de uma série que reconstrói a evolução da computação, focando na transição entre 1997 e 2018. O texto narra a superação do processamento de texto em fila pelas redes neurais, culminando na criação do Transformer em 2017. Essa inovação é apresentada como um software desenhado especificamente para se ajustar à arquitetura paralela das placas de vídeo e TPUs, permitindo o processamento simultâneo de dados. A narrativa destaca a contribuição de diversos pesquisadores e a evolução mútua entre hardware e software, que possibilitou o surgimento de modelos como o GPT e o BERT. Em última análise, as fontes explicam como o aumento na escala de processamento e a mudança na forma de criar programas definiram a inteligência artificial moderna. A série conclui que, embora a estrutura fundamental das máquinas permaneça a mesma, o método de encontrar programas através de dados substituiu a programação manual tradicional.
+
+Link: https://notebook.google.com/notebook/2ab38726-832f-4b46-af4e-9045e5ebc411

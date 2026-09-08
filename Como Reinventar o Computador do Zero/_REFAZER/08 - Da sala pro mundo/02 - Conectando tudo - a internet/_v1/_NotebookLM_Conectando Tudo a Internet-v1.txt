@@ -1,0 +1,395 @@
+Inicie dizendo: Conectando Tudo, a Internet
+---------------
+
+Este e o segundo e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior levou o computador pra
+dentro de casa: ele virou produto pronto, ganhou motivo, virou padrao aberto e ganhou
+uma cara que qualquer pessoa entende. E terminou com uma pergunta no ar, que este
+episodio inteiro responde: se ja existem milhoes de maquinas iguais espalhadas pelo
+mundo, o que falta pra elas conversarem entre si?
+
+ESTE EPISODIO COBRE DE 1969 A 1995. Dizer esse intervalo em voz alta logo na abertura
+e, no encerramento, dizer em que ano o episodio parou. ATENCAO: o episodio anterior
+parou em 1990 e este comeca em 1969, entao a serie esta VOLTANDO NO TEMPO de proposito.
+Avisar isso na tela 1, em uma frase, e explicar o motivo: a rede foi construida em
+silencio, dentro de universidade, ao mesmo tempo em que o computador de mesa era
+inventado la fora. As duas historias correm em paralelo e so se encontram no fim deste
+episodio.
+
+REGRA DURA DAS TELAS. Este episodio tem 11 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 10 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. Uma e o problema (a rede telefonica reserva
+caminho e nao serve pra computador) e a outra e a solucao (picar a mensagem em
+pacotes). E muito tentador contar as duas de uma vez. Nao juntar: o problema precisa
+ficar sozinho numa tela pra solucao fazer sentido na seguinte.
+
+ATENCAO ESPECIAL COM AS TELAS 6 e 7. Uma e o envelope comum entre redes diferentes e a
+outra e o dia em que todo mundo trocou de lingua junto. Sao duas coisas, com dois
+pedidos de Proximo.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e sessenta e nove",
+"mil novecentos e setenta e um", "mil novecentos e setenta e quatro", "mil novecentos
+e oitenta e tres", "mil novecentos e oitenta e nove", "mil novecentos e noventa e um",
+"mil novecentos e noventa e tres", "mil novecentos e noventa e cinco". Ano dito rapido
+em digito sai embolado e o ouvinte entende outro numero.
+
+NOMES E SIGLAS ESTRANGEIRAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar e
+soletrar quando indicado, porque em portugues eles embolam:
+
+- ARPANET: fala-se "arpa-nete", e soletrar ARPA na primeira vez, "a, erre, pe, a".
+- LOGIN: soletrar as letras quando contar a primeira mensagem, "ele, o, ge, i, ene",
+  e depois dizer que so chegaram o L e o O.
+- TCP/IP: soletrar sempre, "te, ce, pe, barra, i, pe". Nunca falar como palavra.
+- DNS: soletrar, "de, ene, esse".
+- Mosaic: fala-se "mo-zeic".
+- CERN: fala-se "serne". Melhor ainda: dizer "um laboratorio europeu de fisica de
+  particulas" na primeira vez e so depois usar a sigla, soletrada.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "conforme o documento", "a analogia autorizada" nem nada parecido. As
+analogias sao usadas como se fossem ideia de quem esta falando, sem apresentar de onde
+vieram. (Isso ja escapou duas vezes em episodios anteriores e quebrou a conversa.)
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir ou
+mexer em peca nenhuma na capa da pagina. As telas sao ilustracoes e fotos.
+
+DUAS TRILHAS. A serie tem uma trilha principal, que e esta, e uma trilha de extras. A
+principal so carrega o que a proxima peca precisa. Todo aprofundamento mora num extra
+avulso. Por isso, NESTE EPISODIO:
+
+- NAO contar biografia de ninguem. As pessoas entram so pelo que fizeram e por que.
+  Nada de nome proprio de pesquisador, de estudante, de quem escreveu qual proposta,
+  onde estudou, premio nem briga. As INSTITUICOES (universidade, laboratorio, agencia
+  do governo) e os PRODUTOS podem ser citados; as pessoas nao.
+- NAO tem gancho de extra neste episodio. Nao anunciar episodio extra nenhum.
+
+ESTE EPISODIO FECHA A ETAPA. Na ultima tela, alem de fechar o episodio, fazer o
+balanco curto da etapa inteira (o computador saiu da sala da empresa, entrou em casa e
+deixou de ser uma ilha) e deixar no ar a pergunta que abre a etapa final da serie.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "conectou o mundo".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A ligacao telefonica contra a mudanca em caixas: na ligacao, a companhia reserva um
+  caminho inteiro so pra voces dois e ele fica reservado ate desligar, mesmo no
+  silencio. Na mudanca, voce pica tudo em caixas, escreve o endereco em cada uma, e
+  elas podem ir em caminhoes diferentes, por ruas diferentes, e chegar fora de ordem.
+  Quem recebe remonta. A segunda e a comutacao de pacotes.
+- O conteiner: navio, trem e caminhao sao diferentes por dentro e continuam
+  diferentes. O que se padronizou foi a CAIXA, do mesmo tamanho e do mesmo encaixe em
+  todos. Ninguem precisou trocar de veiculo. E assim que redes diferentes viram uma
+  rede so.
+- A lista telefonica que nao mora em lugar nenhum: pra achar um numero voce pergunta
+  pra quem esta perto, e se ele nao souber ele sabe pra quem perguntar. Ninguem tem a
+  lista inteira e mesmo assim qualquer nome e encontrado. E o sistema de nomes.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - MILHOES DE ILHAS
+
+Retomar em duas frases onde a serie parou: o computador virou objeto de casa, com
+padrao aberto e com uma cara que qualquer pessoa entende, e ja existiam milhoes deles.
+
+Dizer o incomodo que ficou: cada um era uma ilha. O que uma maquina sabia, so ela
+sabia. Levar um arquivo pra outra era gravar num disquete e atravessar a sala com ele
+na mao. Duas maquinas na mesma casa nao se falavam.
+
+Avisar que a serie vai voltar no tempo de proposito, e dizer o motivo em uma frase: a
+rede foi sendo construida em silencio, dentro de universidade, ao mesmo tempo em que o
+computador de mesa era inventado la fora. As duas historias correm em paralelo e so se
+encontram no fim deste episodio.
+
+Dizer, com todas as letras, qual e o problema de verdade, porque quase todo mundo erra
+esse ponto: ligar dois computadores por um fio ja se fazia havia anos, e nao era
+dificil. O problema dificil e outro: fazer redes DIFERENTES, de donos diferentes, com
+maquinas diferentes e regras diferentes, virarem uma rede so, sem ninguem no comando.
+A internet nao e uma rede. Ela e um acordo entre redes.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e sessenta e nove
+a mil novecentos e noventa e cinco.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 11 telas, que quem esta
+so ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela
+quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra ver por que o telefone, que ja existia e ja chegava em
+todo canto, nao resolvia.
+
+TELA 2 - POR QUE O TELEFONE NAO SERVIA
+
+Explicar como a rede telefonica funciona por dentro, devagar: quando duas pessoas se
+ligam, a companhia monta um caminho fisico inteiro entre as duas pontas e reserva
+aquele caminho pra elas. Enquanto a ligacao dura, aquele pedaco da rede e so delas,
+inclusive nos momentos de silencio.
+
+Dizer por que isso e otimo pra voz e ruim pra computador: gente conversando fala quase
+o tempo todo. Computador nao. Ele manda uma rajada curta, fica calado um tempao
+esperando alguem digitar, manda outra rajada. Se voce aluga uma linha dedicada pra
+isso, esta pagando o dia inteiro por alguns segundos de uso.
+
+Dizer o segundo problema, que e pior que o preco: um caminho reservado tem um dono e um
+trajeto. Se cortar no meio, a ligacao cai e acabou. Nao ha outro jeito de a mensagem
+chegar.
+
+Dizer o que se queria: uma rede em que o mesmo fio servisse pra muita gente ao mesmo
+tempo, e em que a mensagem se virasse pra chegar mesmo que um pedaco do caminho
+sumisse.
+
+Fechar pedindo o Proximo pra ver a ideia que resolve as duas coisas de uma vez.
+
+TELA 3 - PICAR A MENSAGEM EM PEDACOS
+
+Explicar a comutacao de pacotes sem usar jargao antes de explicar: em vez de reservar
+um caminho, a maquina pica a mensagem em pedacos pequenos e escreve no rosto de cada
+pedaco o endereco de quem vai receber e o numero dele na fila.
+
+Dizer o que acontece com cada pedaco: ele viaja sozinho. Cada ponto da rede olha o
+endereco escrito nele e passa pra frente, pro vizinho que parece mais perto do destino.
+Dois pedacos da mesma mensagem podem ir por caminhos diferentes e chegar fora de ordem.
+A maquina do outro lado poe na ordem de novo pelo numero e remonta.
+
+Usar a analogia da mudanca em caixas, inteira: a ligacao telefonica e reservar a
+estrada; a mudanca e picar tudo em caixas, escrever o endereco em cada uma, e deixar
+elas irem em caminhoes diferentes, por ruas diferentes. Quem recebe remonta.
+
+Dizer as tres consequencias, uma de cada vez e sem pressa. Primeira: ninguem reserva
+nada, entao o mesmo fio carrega pedaco de mil conversas ao mesmo tempo, intercalados.
+Segunda: se um caminho cai, os pedacos seguintes pegam outro, sem ninguem avisar nada.
+Terceira: nao existe um lugar central mandando, porque cada ponto so precisa saber pra
+que vizinho empurrar.
+
+Dizer que essa terceira e a que mais importa pro resto do episodio.
+
+Fechar pedindo o Proximo pra ver a primeira vez que isso funcionou de verdade.
+
+TELA 4 - MIL NOVECENTOS E SESSENTA E NOVE: AS QUATRO PRIMEIRAS
+
+Contar o fato: em vinte e nove de outubro de mil novecentos e sessenta e nove, uma
+agencia de pesquisa do governo americano poe no ar a primeira rede desse tipo, a
+ARPANET, ligando computadores de centros de pesquisa.
+
+Contar a primeira mensagem, sem heroi e sem nome: a maquina de uma universidade da
+California ia entrar na maquina de um instituto de pesquisa a algumas centenas de
+quilometros. Pra isso era preciso escrever a palavra LOGIN. A maquina do outro lado
+caiu na segunda letra. A primeira mensagem que passou de um computador pra outro nessa
+rede foi L, O. Uma hora depois a coisa funcionou.
+
+Dizer o tamanho da rede no fim daquele ano: quatro maquinas. E dizer o motivo oficial
+dela existir, que vai ser importante daqui a pouco: computador era caro demais pra cada
+universidade ter o seu, entao a rede servia pra um pesquisador usar de longe a maquina
+que estava em outro lugar.
+
+Dizer o que essa data prova: que os pedacos chegam, se remontam e a coisa toda para de
+pe. A partir daqui e so crescer.
+
+Fechar pedindo o Proximo pra ver o que as pessoas de fato fizeram com ela.
+
+TELA 5 - MIL NOVECENTOS E SETENTA E UM: O USO QUE NINGUEM ENCOMENDOU
+
+Contar a virada: a rede tinha sido feita pra usar maquina de longe. Em mil novecentos e
+setenta e um alguem junta dois programas pequenos, um que escrevia recado e outro que
+copiava arquivo de uma maquina pra outra, e cria o correio eletronico.
+
+Dizer o problema pratico que apareceu e como foi resolvido, porque e um detalhe que
+todo mundo usa ate hoje: precisava de um jeito de dizer, num endereco so, QUEM e em
+QUAL maquina. O simbolo escolhido pra separar as duas coisas foi a arroba, porque quase
+ninguem usava ela e porque em ingles ela ja significava "em".
+
+Dizer o tamanho do que aconteceu: em poucos anos, mandar recado pra pessoa virou o uso
+principal da rede, na frente do motivo pelo qual ela tinha sido construida.
+
+Dizer a licao, que a serie ja viu e vai ver de novo, sem enfeitar: quem constroi uma
+coisa nao decide pra que ela vai servir. A rede foi feita pra maquina falar com
+maquina, e o que pegou foi gente falando com gente.
+
+Fechar pedindo o Proximo pra ver o problema que impedia essa rede de virar A rede.
+
+TELA 6 - REDES QUE NAO SE ENTENDEM
+
+Descrever o cenario dos anos setenta: a ARPANET deu certo, e por isso apareceram
+outras. Rede por radio. Rede por satelite. Rede de universidade, rede de empresa, rede
+de outro pais. Cada uma com o seu jeito de picar o pacote, o seu jeito de endereco, o
+seu tamanho maximo de pedaco.
+
+Dizer por que isso e um problema pior que o anterior: dentro de cada rede tudo
+funciona. Entre duas redes, nada funciona. E ninguem podia mandar todo mundo jogar
+fora a sua rede e adotar a do vizinho, porque nao havia quem mandasse.
+
+Dizer as duas saidas possiveis, e por que a primeira nao serve: a primeira e obrigar
+todo mundo a virar a mesma rede, o que exige uma autoridade central e a boa vontade de
+todos ao mesmo tempo. Nunca ia acontecer.
+
+Dizer a segunda, que e a que venceu: nao mexer em rede nenhuma. Definir um ENVELOPE
+comum, com um formato de endereco que todas concordem em carregar por dentro. Cada rede
+continua sendo o que e; o envelope atravessa.
+
+Usar a analogia do conteiner: navio, trem e caminhao sao diferentes e continuaram
+diferentes. O que virou padrao foi a caixa, do mesmo tamanho e do mesmo encaixe em
+todos. Ninguem trocou de veiculo, e mesmo assim a carga passa de um pro outro sem ser
+aberta.
+
+Dizer o nome disso quando ja estiver explicado, e soletrar: TCP barra IP. E dizer o que
+cada metade faz, em uma frase cada: uma cuida do endereco e de empurrar o pacote pra
+frente; a outra cuida de conferir se chegou tudo e remontar na ordem.
+
+Fechar pedindo o Proximo pra ver o dia em que todo mundo trocou de lingua junto.
+
+TELA 7 - PRIMEIRO DE JANEIRO DE MIL NOVECENTOS E OITENTA E TRES
+
+Contar o fato com a data: em primeiro de janeiro de mil novecentos e oitenta e tres, as
+maquinas da ARPANET pararam de falar a lingua antiga e passaram todas pra nova, no
+mesmo dia. Quem nao tinha se preparado ficou de fora ate se preparar.
+
+Dizer por que isso teve que ser assim: nao da pra metade da rede falar uma lingua e a
+outra metade falar outra. Ou muda todo mundo junto, ou nao muda ninguem.
+
+Dizer a frase que a serie precisa registrar: essa e a data de nascimento da internet
+como a gente conhece. Nao porque apareceu um cabo novo, e sim porque apareceu um
+acordo. A partir dali, qualquer rede que aceitasse carregar aquele envelope estava
+dentro, sem pedir licenca a ninguem.
+
+Dizer por que ela venceu as concorrentes, sem elogiar: nao foi por ser a melhor rede.
+Foi por exigir o minimo de todo mundo. Ela nao pedia pra voce trocar de rede, so pedia
+pra voce carregar o envelope. Custo baixo de entrar e ninguem dono do meio: e a mesma
+licao do padrao aberto do episodio anterior, agora do tamanho do mundo.
+
+Fechar pedindo o Proximo pra resolver um problema chato que apareceu junto.
+
+TELA 8 - O NOME NO LUGAR DO NUMERO
+
+Explicar o problema: no envelope, cada maquina e um numero. Numero funciona pra
+maquina e nao funciona pra gente. No comeco existia um arquivo unico, com a lista de
+todos os nomes e numeros, e cada maquina baixava esse arquivo de tempos em tempos.
+
+Dizer por que isso quebra: com centenas de maquinas ja era chato; com dezenas de
+milhares e impossivel. Um arquivo so, atualizado a mao, num lugar so, e exatamente o
+tipo de peca central que essa rede evitou a vida inteira.
+
+Explicar a saida, que e de mil novecentos e oitenta e tres: em vez de uma lista
+inteira, um sistema de perguntar. O nome e dividido em pedacos, da direita pra
+esquerda, e cada pedaco tem alguem responsavel por saber o proximo. Ninguem tem a lista
+toda e qualquer nome e encontrado.
+
+Usar a analogia da lista telefonica que nao mora em lugar nenhum: voce pergunta pra
+quem esta perto; se ele nao souber, ele sabe pra quem perguntar; e assim ate alguem
+saber.
+
+Dizer o que isso significa na pratica: da pra criar nome novo sem avisar um orgao
+central, porque quem manda no seu pedaco e voce.
+
+Fechar pedindo o Proximo pra ver o que ainda faltava pra rede sair da universidade.
+
+TELA 9 - MIL NOVECENTOS E OITENTA E NOVE: O MOTIVO APARECE
+
+Dizer onde a coisa estava no fim dos anos oitenta, sem romantizar: a rede funcionava,
+crescia e era de universidade, governo e empresa grande. Pra usar, a pessoa tinha que
+saber o nome exato da maquina, o nome exato do arquivo e o comando exato pra buscar.
+Isso e a mesma tela preta com cursor do episodio anterior, agora na rede: faltava
+motivo e faltava cara.
+
+Contar de onde veio a saida, sem nome de pessoa: em mil novecentos e oitenta e nove, um
+laboratorio europeu de fisica de particulas tinha um problema chato de escritorio.
+Milhares de pesquisadores de muitos paises, cada grupo guardando documento do seu
+jeito, na sua maquina, e ninguem achando nada.
+
+Contar a proposta em tres pecas, uma de cada vez, porque sao elas que a serie precisa
+guardar. Primeira: dar um ENDERECO unico pra cada documento, que diga em qual maquina
+ele esta e onde dentro dela. Segunda: uma regra simples de pedir e entregar, em que uma
+maquina pede o documento daquele endereco e a outra devolve. Terceira: um jeito de
+escrever texto em que uma palavra qualquer pode carregar o endereco de outro documento,
+e clicar nela leva pra la.
+
+Dizer o que essa terceira peca muda, que e o coracao: os documentos deixam de ser uma
+pilha e viram uma teia. Voce nao precisa saber onde a coisa esta. Voce segue de uma pra
+outra.
+
+Dizer as duas datas que liberaram tudo: em agosto de mil novecentos e noventa e um a
+coisa vai pro ar pra quem quisesse usar, fora do laboratorio. E em trinta de abril de
+mil novecentos e noventa e tres o laboratorio abre mao de qualquer direito sobre
+aquilo, poe em dominio publico, de graca, pra qualquer um usar e fazer o seu.
+
+Dizer o peso dessa segunda data em uma frase, sem drama: se aquilo tivesse sido
+cobrado ou licenciado, a historia seria outra.
+
+Fechar pedindo o Proximo pra ver a cara chegar.
+
+TELA 10 - MIL NOVECENTOS E NOVENTA E TRES: A CARA
+
+Contar o que faltava, mesmo com tudo isso pronto: os primeiros programas de ler a teia
+mostravam texto, rodavam em maquina de universidade e continuavam pedindo intimidade
+com a maquina.
+
+Contar o que muda em mil novecentos e noventa e tres: sai um programa de navegar
+chamado Mosaic, feito num centro de supercomputacao de uma universidade americana. Ele
+mostra imagem na mesma pagina do texto, em vez de abrir a imagem separada. Roda nas
+maquinas comuns, as de casa, as do padrao do episodio anterior. E se instala e se usa
+apontando e clicando.
+
+Dizer a frase que amarra os dois episodios: esta e a mesma virada da tela do Macintosh,
+agora na rede. O que da pra fazer parou de ser uma coisa que voce tem que saber de cor
+e virou uma coisa que esta a vista.
+
+Dizer o crescimento sem inventar numero: em pouco tempo o navegador estava sendo baixado
+aos milhares por mes e a teia saiu do circulo academico. E dizer que em mil novecentos e
+noventa e cinco a espinha da rede deixa de ser sustentada pelo governo americano e a
+rede abre pro comercio.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 11 - ONDE ISTO PARA
+
+Dizer onde o episodio para: mil novecentos e noventa e cinco, com a rede aberta pro
+comercio, com nome no lugar de numero, com um jeito de ver que qualquer pessoa entende
+e com o computador de casa ja saindo da loja pronto pra entrar nela.
+
+Fazer o balanco da etapa inteira em tres frases: a etapa comecou com a maquina ja
+pequena e barata, mas presa na sala da empresa. O primeiro episodio levou ela pra
+dentro de casa, dando a ela um produto, um motivo, um padrao e uma cara. Este segundo
+tirou dela a solidao. O computador saiu da sala, entrou em casa e deixou de ser uma
+ilha.
+
+Dizer a licao da etapa em uma frase, que vale pros dois episodios: as duas viradas
+foram ganhas por quem exigiu menos, e nao por quem fez melhor. O padrao aberto venceu o
+projeto fechado, e o acordo entre redes venceu a rede perfeita.
+
+Dizer o que muda pra serie, que e o que abre a etapa final: agora existe maquina em
+todo lugar, todas ligadas, e todas despejando na rede o que fazem. Sobra uma montanha
+de dado que nenhuma pessoa consegue ler na mao. E o jeito que a serie inteira usou pra
+mandar na maquina, que e escrever a regra passo a passo, comeca a nao dar conta: nao da
+pra escrever a mao a regra que reconhece um rosto numa foto, ou que separa recado bom de
+recado chato, ou que traduz uma frase.
+
+Deixar a pergunta no ar, sem responder: e se, em vez de a gente escrever a regra pra
+maquina seguir, a gente deixasse a maquina achar a regra sozinha, olhando os dados?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

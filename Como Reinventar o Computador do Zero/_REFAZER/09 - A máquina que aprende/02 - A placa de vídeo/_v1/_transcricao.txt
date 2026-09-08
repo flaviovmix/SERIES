@@ -1,0 +1,324 @@
+# Transcricao automatica (faster-whisper small) - 16.3 min
+# Fonte: Como a placa de vídeo virou supercomputador.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A placa de vídeo.
+[00:01] Pois é, chegou a hora dela.
+[00:03] Sim, porque, para quem está acompanhando a nossa jornada, a gente precisa retomar rapidinho
+[00:09] aquele cenário do ano de 2006.
+[00:12] Aham, aquele beco sem sair da clássico da tecnologia.
+[00:15] Exatamente.
+[00:17] A corrida dos processadores simplesmente bateu num muro ali perto dos 3 GHz.
+[00:22] Se o relógio do chip passasse muito disso, ele derretia a peça fisicamente não aguentava
+[00:28] o calor.
+[00:30] Então a indústria teve que mudar o foco.
+[00:32] Em vez de um núcleo super rápido, a solução foi espalhar o trabalho.
+[00:38] Colocar múltiplos núcleos no chip.
+[00:40] É, o famoso processamento paralelo.
+[00:43] O desafio virou fazer um monte de contas ao mesmo tempo.
+[00:46] Exato.
+[00:47] Mas aí que entra grande questão que ficou no ar.
+[00:50] Qual peça dentro do computador?
+[00:52] Já fazia exatamente isso, de um jeito bem silencioso, a pelo menos uns 10 anos.
+[00:59] E a resposta, que na época soava meio improvável, era a placa de vídeo.
+[01:04] Nossa, pois é.
+[01:05] Uma peça que foi criada quase que só para rodar jogo.
+[01:08] Sim, feita para a videogame de molecada, né?
+[01:10] É.
+[01:11] E hoje o nosso esculpo aqui vai cobrir exatamente esse salto, lá de 1985 até 2007, numa ordem
+[01:20] bem cronológica.
+[01:21] Mas é importante deixar bem claro para quem nos ouve que a gente não está voltando
+[01:25] no tempo.
+[01:26] Com certeza não.
+[01:28] Na corrida da placa de vídeo, aconteceu lado a lado com a evolução do processador.
+[01:33] Foram duas batalhas correndo juntas.
+[01:35] Sim, o nosso foco é justamente acompanhar as pessoas que construíram essas peças
+[01:40] e, sabe, observar como o hardware e o software foram empurrando um ao outro para o limite.
+[01:45] Quando um ficava rápido, o outro exigia mais, né?
+[01:48] Mas assim, para entender a base disso tudo, a gente precisa olhar para o problema
+[01:51] matemático que é pintar uma tela.
+[01:54] Ah sim, é um desafio absurdo.
+[01:58] Imagina um monitor comum lá de 1996.
+[02:01] Ele tinha uma resolução de 640 por 480.
+[02:05] O que dá uns 307 mil pontos ali na tela, certo?
+[02:09] Isso, 307 mil pixels.
+[02:12] E para dar para o olho humano aquela ilusão de movimento, você precisa repentar todos
+[02:16] esses pontos 30 vezes por segundo.
+[02:19] Caramba.
+[02:20] É.
+[02:21] Se você multiplicar, a gente está falando de repentar 9 milhões de pontos por segundo.
+[02:26] E o grande lance é que a conta matemática para definir luz e cor é exatamente a mesma
+[02:30] conta para todos esses pontos.
+[02:32] O que me lembra daquela nossa analogia clássica, né?
+[02:35] A do pintor.
+[02:36] Pode mandar.
+[02:37] É tipo assim.
+[02:38] Imagina que essa tela de 300 mil pontos é uma parede gigante com 300 mil azulejos.
+[02:44] O processador principal é como um único pintor, só que ele é incrivelmente genial
+[02:49] e super rápido.
+[02:50] Um gênio que pinta muito rápido, mas um azulejo de cada vez.
+[02:55] Só um de cada vez.
+[02:57] Já a placa de vídeo, ela é diferente.
+[02:59] Ela é tipo uma equipe de centenas de pintores mais simples.
+[03:02] Um dei mais simples, né?
+[03:04] Quase braçais.
+[03:05] Isso.
+[03:06] Eles não são gênios isolados, mas cada um pega um azulejo diferente e todo mundo
+[03:10] dá a pincelada ao mesmo tempo.
+[03:12] É o trabalho paralelo perfeito.
+[03:15] Só que, hum, nem sempre foi assim.
+[03:18] Lá no começo, entre 1985 e 1993, a placa de vídeo era considerada uma placa burra.
+[03:27] Como assim burra?
+[03:28] Ela não calculava nada.
+[03:30] Era só um espaço de memória e um conversor.
+[03:33] Um exemplo disso foi quando a IBM padronizou o VGA em 1987.
+[03:39] O processador calculava tudo, jogava na placa e ela só passava a imagem pro monitor.
+[03:45] Entendi.
+[03:46] Ela só repassava o recado.
+[03:47] E foi nesse comecinho que algumas pessoas fundamentais apareceram, né?
+[03:52] Com certeza.
+[03:53] Por exemplo, o Kai-Wai-Hou-Yi.
+[03:54] Ah, o Hou-Yi.
+[03:56] Ele fundou a IT, certo?
+[03:58] Isso mesmo.
+[03:59] O Kai-Wai-Hou, que nasceu em 1950, naquela época ele estava com 35 anos e olha que
+[04:04] legal, ele está vivo hoje, acompanhando tudo isso em 2026.
+[04:10] Que fantástico.
+[04:11] Pois é.
+[04:12] 20 de agosto de 1985, lá em Marcam, no Canadá, ele e dois engenheiros de Hong Kong fundaram
+[04:19] a IT, focando só em fazer essas placas de memória simples.
+[04:24] Porque na época ninguém imaginava gerar gráficos em três dimensões em casa, né?
+[04:28] Ninguém.
+[04:29] Toda matemática pesada ficava nas costas do processador do nosso pintor genial.
+[04:33] Mas aí a coisa mudou de figura.
+[04:35] A dezembro de 1993.
+[04:37] Exato.
+[04:38] O lançamento do DUN.
+[04:40] Nossa.
+[04:41] O DUN virou um mundo de cabeça para baixo.
+[04:44] Um jogo da IT Software criado pelo John Carmack.
+[04:47] Sim, o lendário John Carmack.
+[04:50] Ele nasceu em 1970, ou seja, ele tinha só 23 anos quando revolucionou o mercado e
+[04:56] também está vivíssimo hoje em 2026.
+[04:59] E o que o Carmack fez foi usar truques matemáticos, né?
+[05:03] O processador ainda era o único pintor, mas o Karma que enganou ele com matemática
+[05:07] para simular um mundo tridimensional.
+[05:10] Sim, ele fez o software exigir um nível de processamento que simplesmente não existia
+[05:15] no hardware doméstico.
+[05:16] Os jogos acenderam um sinal de fumaça absurdo.
+[05:19] E o guercado farejou esse sinal rapidinho.
+[05:22] Muito rápido.
+[05:23] Tanto que meses antes, em 5 de abril de 1993, a NVIDIA foi fundada.
+[05:28] E a história da fundação deles é maravilhosa, né?
+[05:31] Não Dennis.
+[05:32] Aham, sentados numa luchonete Dennis, na Califórnia.
+[05:34] Lá estava o Jensen Huang, nascido em 1963.
+[05:39] Ele tinha 30 anos na época e também está vivo hoje em 2026.
+[05:43] Isso.
+[05:44] E com ele estava o Chris Malakowski, que nasceu em 1959.
+[05:48] Ele estava com 33 anos nesse dia no Dennis e continua vivo e superativo na indústria
+[05:54] em 2026.
+[05:55] Além de um terceiro engenheiro com eles, né?
+[05:57] Sim, um terceiro colega.
+[05:59] E a visão deles ali na meia era clara.
+[06:01] O PC ia precisar de gráficos em 3D e ia precisar ser barato.
+[06:05] E aí eles lançam o primeiro chip deles.
+[06:08] O NVIDIA 1 em 1995.
+[06:11] E nossa, eles apostaram em tudo, né?
+[06:13] Até demais, né?
+[06:14] Eles tentaram fazer um chip que desenhava superfícies curvas, integraram até portas de som
+[06:20] e controle do videogame Sega SETR na placa.
+[06:22] Uma loucura.
+[06:23] Mas aí veio a armadilha.
+[06:25] Armadilha da linguagem de programação.
+[06:27] Essa foi dura.
+[06:28] Em junho de 1996, a Microsoft lança o Direct 3D.
+[06:35] E vira a língua oficial do Windows para gráficos.
+[06:39] E qual era o detalhe fatal?
+[06:41] O Direct 3D falava em triângulos.
+[06:44] Exatamente.
+[06:45] Triângulos, não curvas.
+[06:47] O triângulo é plano, é matematicamente previsível.
+[06:51] O computador prefere desenhar milhares de triângulos simples do que calcular uma curva
+[06:56] complexa.
+[06:57] E como o chip NVIDIA 1 da NVIDIA não falava a língua dos triângulos?
+[07:02] Teu superpouco, a NVIDIA quase quebrou.
+[07:06] A lição foi dura.
+[07:07] O hardware morre se não falar a língua que o software escolheu.
+[07:11] Nossa, é implacável.
+[07:12] Mas enquanto a NVIDIA quase fechava as portas, entra uma nova jogadora no tabuleiro, a
+[07:17] 3D Fix.
+[07:18] Sim, fundada por três engenheiros que vieram da Silicon Graphics.
+[07:22] E no final de 1996, eles lançam a placa Voodoo Graphics.
+[07:27] E essa placa era estritamente dedicada ao 3D.
+[07:30] Estão dedicada que era até esquisita, né?
+[07:33] Pra quem não lembra, ela funcionava em cascata.
+[07:36] Você precisava de um cabo ligando a sua placa de vídeo normal na Voodoo.
+[07:40] Ela nem mostrava wingos.
+[07:41] Mas quando você abriu um jogo 3D...
+[07:43] Ah, e ela brilhava.
+[07:44] E o que vendeu essa placa de verdade foi, de novo, o John Carmack.
+[07:48] O aplicativo assassino, o famoso Killer App.
+[07:51] Exato.
+[07:52] O jogo Quake e a versão especial dele, o Jelly Quake, que saiu em janeiro de 1997.
+[07:56] Quando o pessoal viu o Jelly Quake rodando liso na placa Voodoo, virou obrigação ter
+[08:01] uma.
+[08:02] O Hardware provou que ser ultra especializado era o caminho.
+[08:04] Só que o sucesso subiu a cabeça da 3DFX.
+[08:08] Eles tentaram empurrar a linguagem proprietária deles, o Glade, Guel Abasso dos desenvolvedores.
+[08:12] E desenvolvedor de software odeia trabalho dobrado, né?
+[08:16] SD, Microsoft e o OpenGL.
+[08:18] E foi aí que a NVIDIA renasceu das cinzas.
+[08:21] A famosa Revir A Volta.
+[08:23] Sim, eles aprenderam o confracaço.
+[08:25] Em agosto de 1997, lançaram a Riva 128.
+[08:29] No ano seguinte, em 1998, lançaram a Riva TNT.
+[08:33] E essas placas faziam o 2D do Windows e o 3D dos jogos tudo de uma placa só, né?
+[08:39] Tudo junto.
+[08:40] E o mais importante, elas falavam perfeitamente as línguas comuns, o Direct 3D.
+[08:45] Enquanto isso, a 3DFX lançou voo do 2, ainda presa no Glide.
+[08:49] E a moral da história.
+[08:50] Ganha quem exige menos esforço de quem cria o software.
+[08:54] O Glide morreu e a 3DFX começou a desmoronar.
+[08:57] Desmoronou tanto que acabou sendo comprada.
+[09:00] Mas superando essa briga das línguas, a gente esbarra em outro problema gigante em 1999.
+[09:06] O gargalo da geometria.
+[09:08] Exato.
+[09:08] Lembra que a gente falou que o processador mandava as ordens para a placa pintar os triângulos?
+[09:13] Aham.
+[09:13] Os jogos ficaram tão complexos que o processador não dava mais conta de calcular nem estrutura básica da cena.
+[09:20] A iluminação e os vértices estavam sufocando o chip principal.
+[09:23] Então a placa de vídeo estava rápida, mas ficava esperando o processador respirar.
+[09:28] E qual foi a solução?
+[09:29] A NVIDIA lançou a GeForce 256 lá em 1999.
+[09:33] Eles pegaram toda essa matemática de geometria e luz e tiraram nas costas do processador.
+[09:38] Colocaram tudo fisicamente dentro da placa de vídeo.
+[09:41] Nossa, e essa placa era um monstro, não era?
+[09:44] Demais!
+[09:45] Tinha uns 20 milhões de transistores.
+[09:47] Só para comparar, um Pentium 3 da época tinha uns 9 milhões e meio.
+[09:51] A placa de vídeo tinha o dobro do tamanho do cérebro do computador.
+[09:54] Caramba!
+[09:55] E foi por causa dessa mudança que a NVIDIA começou a chamar a placa de GPU, né?
+[10:00] A unidade de processamento gráfico.
+[10:01] Isso mesmo!
+[10:02] E o cérebro por trás dessa arquitetura fantástica foi o David Kirk.
+[10:07] Ah, o David Kirk.
+[10:08] Cintista-chefe deles?
+[10:10] Sim, ele nasceu em 1960, tinha 39 anos nessa época da GPU e também está vivo
+[10:17] hoje em 2026.
+[10:19] E com a GPU, o processador ficou livre para calcular a física e a inteligência artificial
+[10:24] dos jogos.
+[10:25] E aí, a gente entra nos anos 2000 e a guerra de verdade começa.
+[10:29] Em abril de 2000, a AT lança a arquitetura Radeon.
+[10:33] A 3DFX é finalmente vendida para a NVIDIA no finalzinho de 2000.
+[10:38] O Xbox original sai em 2001, usando o chip da NVIDIA.
+[10:42] Mas a grande mudança invisível mesmo vem um pouquinho depois, né?
+[10:46] Em fevereiro de 2001, com a GeForce 3.
+[10:49] E logo depois, a AMD também seguiu com a Radeon 9700 em 2002.
+[10:55] E o que mudou nelas?
+[10:57] Antes, a placa era cega.
+[10:59] A linha de montagem era fixa.
+[11:01] A partir da GeForce 3, a placa começou a aceitar pequenos programinhas
+[11:05] direto nos vértices e nos pixels, os famosos shaders programáveis.
+[11:10] Espera, e não é muito irônico isso?
+[11:13] Como assim?
+[11:14] A placa foi criada para ser superrígida, para fazer só uma coisa bem rápido.
+[11:19] E aos poucos, por causa desses shaders, ela começou a aceitar código flexível.
+[11:25] Ela estava ganhando generalidade de volta.
+[11:28] Perfeito, é exatamente isso.
+[11:30] E o impacto dessa ironia foi descoberto nas universidades lá por 2003.
+[11:35] Conta essa história que é incrível.
+[11:36] Alguns pesquisadores perceberam que a GPU tinha centenas de processadores perfeitos
+[11:41] para calcular física de fluidos ou multiplicar matrizes gigantes.
+[11:45] Mas a placa só entendia cor e imagem.
+[11:48] Pois é.
+[11:49] Então eles enganavam a placa.
+[11:51] Eles transformavam números de simulação científica
+[11:55] em valores de vermelho, verde e azul.
+[11:58] A placa achava que estava renderizando uma textura de parede.
+[12:01] Mas na verdade, estava calculando dinômica de fluidos.
+[12:05] Isso é genial, uma gambiarra absurda, mas genial.
+[12:08] E funcionou tão bem que precisou virar algo oficial.
+[12:12] Em 2004, um doutorando lá da Universidade de Stanford,
+[12:16] que preferiu ficar nos bastidores da história, criou o Brooke.
+[12:20] O Brooke.
+[12:21] Isso era uma linguagem em C, a famosa linguagem C,
+[12:25] que traduzia essas contas científicas direto para a placa
+[12:29] sem precisar dessa gambiarra de fingir que era imagem.
+[12:31] Nossa, isso abre uma porta gigante.
+[12:33] Tão gigante que a NVIDIA contratou esse doutorando no mesmo ano.
+[12:37] E com todo esse poder rolando solto, o mercado enlouquece.
+[12:41] Em julho de 2006, a gigante AMD simplesmente compra a ATI.
+[12:48] Fora por 5 bilhões e 400 milhões de dólares.
+[12:53] Uma fusão monumental.
+[12:55] E quem comandou isso?
+[12:57] O Héctor Ruiz, que comandava a AMD,
+[13:00] ele nasceu em 1945, então estava com 60 anos nessa negociação.
+[13:05] E o David Wharton, da ATI, nasceu em 1955 com 51 anos na época.
+[13:11] E só para constar, ambos estão vivos em 2026.
+[13:15] A ideia deles era literalmente fundir o processador
+[13:18] e a placa de vídeo na mesma peça de silício no futuro.
+[13:21] Exato.
+[13:22] Enquanto isso, do lado da NVIDIA, em novembro de 2006,
+[13:26] eles lançam a GeForce 8.800.
+[13:29] Que era um leviatã.
+[13:31] Uma peça massiva, 681 milhões de transistores.
+[13:36] Mas a grande inovação não era o tamanho, e sim a organização.
+[13:40] Ela tinha 128 processadores unificados e totalmente programáveis.
+[13:45] Então, em vez daquela equipe onde um pintor só sabia fazer luz
+[13:49] e o outro só fazia geometria, agora o 128 faziam qualquer coisa.
+[13:53] Qualquer coisa, a placa deixou de ser só um hardware gráfico
+[13:57] e virou um super computador paralelo completo.
+[14:00] Mas como é que esse poder todo chegou nas mãos de quem não fazia jogo?
+[14:05] Para quem não era da área de gráficos?
+[14:07] Aí, que tá a cereja do bolo.
+[14:09] Em fevereiro de 2007, a NVIDIA lança o CUDA.
+[14:12] Ah, o CUDA.
+[14:14] Liderado por aquele mesmo autorando de Stanford
+[14:16] e impulsionado pelo David Kirk.
+[14:19] O CUDA permitia que qualquer um programasse em linguagem
+[14:22] ser direto nesses 128 núcleos.
+[14:25] E o resultado disso?
+[14:26] Contas de ciência, química, mercado financeiro,
+[14:29] contas que levavam horas no processador
+[14:32] despencaram para questão de minutos na GPU.
+[14:35] Então, no fim das contas, a linguagem de programação,
+[14:37] o software, pegou um hardware que foi desenhado
+[14:40] pura e simplesmente para entretenimento.
+[14:42] E converteu numa máquina universal de processamento repetitivo.
+[14:47] Incrível.
+[14:48] Olha, recapitulando onde a nossa história estaciona hoje.
+[14:51] No ano de 2007, a placa de vídeo virou uma fera programável em C,
+[14:56] lotada de processadores iguais trabalhando em massa.
+[15:00] A AMD comprou a ATI para fundir tudo.
+[15:03] E a NVIDIA unificou sua arquitetura.
+[15:05] Tudo isso empurrado pelas pessoas que a gente acompanhou.
+[15:08] O KY lá na base da placa simples.
+[15:11] O Carmack forçando os limites com o DOOM.
+[15:14] O Huang e o Malashovsky levando aquela rasteira com o NV1.
+[15:18] E aprendendo com ela.
+[15:19] Sim, e o Kirk arquitetando a GPU programável
+[15:23] enquanto Ruiz e Wharton juntavam as peças das empresas
+[15:27] e sabe qual é o maior detalhe de todos?
+[15:29] Qual?
+[15:30] Ninguém, absolutamente ninguém,
+[15:32] previo onde essa junção de games com a matemática ia parar.
+[15:36] O que nos deixa com um impressamento bem provocativo
+[15:39] para o pessoal que está acompanhando o deep dive.
+[15:41] Pois é, imagina só.
+[15:43] Agora que a humanidade construiu e barateou essa máquina absurda,
+[15:47] capaz de fazer a exata mesma conta matemática
+[15:51] em milhões de números diferentes simultanamente.
+[15:53] O que mais dá pra fazer com isso, né?
+[15:55] Será que existe algum problema muito antigo,
+[15:58] algum mistério impossível de ser resolvido
+[16:00] na programação lógica tradicional,
+[16:03] mas que poderia ser quebrado
+[16:05] usando apenas repetição matemática bruta?
+[16:07] Nossa.
+[16:08] Fica a pergunta.
+[16:09] E se a resposta para isso já estiver guardada
+[16:12] pegando poeira numa gaveta acadêmica desde 1958?
+[16:16] É, essa resposta a gente deixa para a próxima.
+[16:19] Até lá.

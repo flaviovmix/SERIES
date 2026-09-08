@@ -1,0 +1,300 @@
+# Transcricao automatica (faster-whisper small) - 16.1 min
+# Fonte: A corrida entre a Intel e AMD.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A corrida do processador.
+[00:01] É, o coração, quer dizer, a base física de tudo na tecnologia, né?
+[00:06] Exato.
+[00:07] E, assim, imagina só o seguinte cenário.
+[00:09] A gente chegou ali no ano de 1997, o computador pessoal já venceu.
+[00:14] Já tá na mesa de quase toda casa de todo escritório.
+[00:18] Já dominou tudo.
+[00:19] Pois é.
+[00:20] As máquinas já estão ligadas em rede, conversando umas com as outras.
+[00:24] E o sistema operacional já tá lá, pronto, rodando liso.
+[00:28] O grande síndico da máquina.
+[00:30] Isso.
+[00:31] Então fica aquela pergunta enorme no ar, né?
+[00:34] Se a máquina já tá espalhada pelo mundo, já fala com as outras, o que é que ainda falta
+[00:38] pra ela conseguir fazer aquilo que a gente não sabe escrever no código?
+[00:42] É, essa é a grande questão.
+[00:44] E a resposta final pra isso tem três partes.
+[00:47] Tá.
+[00:48] A nossa conversa de hoje é exatamente a primeira parte dessa resposta, porque antes
+[00:53] de qualquer coisa, antes de qualquer inteligência, as peças precisam correr.
+[00:57] E quando a gente fala de peça correndo…
+[00:59] O processador é o que vem primeiro.
+[01:01] Sempre.
+[01:02] É ele quem puxa a fila.
+[01:03] Com certeza.
+[01:04] E pra entender como essa peça aprendeu a correr, a gente vai cobrir um intervalo de
+[01:08] tempo bem específico aqui, de 1993 a 2006.
+[01:13] Aham.
+[01:14] Mas ó, um aviso importante.
+[01:16] A gente não tá voltando no tempo em relação àquele ponto de 1997.
+[01:20] Não, de jeito nenhum.
+[01:22] Usando-se sobrepõe justamente porque essa corrida frenética do hardware já corria
+[01:26] por baixo dos panos o tempo todo.
+[01:28] Exatamente.
+[01:29] E é vital a gente definir o que significa correr pra um chip.
+[01:33] Não é uma coisa só, tipo, não é só uma métrica.
+[01:36] São dois fatores trabalhando juntos.
+[01:38] Quais?
+[01:39] O primeiro é o Hertz.
+[01:41] Ou seja, quantas vezes o relógio interno do chip bate por segundo?
+[01:45] A frequência, né?
+[01:46] Tá.
+[01:47] O ritmo da batida.
+[01:48] Isso.
+[01:49] E o segundo fator, que é tão importante quanto, é o quanto de trabalho real o
+[01:54] chip consegue fazer em cada uma dessas batidas.
+[01:58] Pra ficar bem claro pra quem tá ouvindo, imagina a rotina de um mercado.
+[02:02] Boa.
+[02:03] Cada instrução de um software é um cliente esperando na fila, certo?
+[02:06] Perfeito.
+[02:07] O relógio do chip é o ritmo do caixa passando os itens ali.
+[02:11] Se você divide o atendimento em vários passos curtos, tipo, um passo só pra passar
+[02:16] o código, outro só pra pesar, outro pra cobrar.
+[02:20] O ritmo do caixa fica bem mais rápido, o relógio bate mais de pressa.
+[02:23] Só que cada cliente passa por mais passos até sair da loja.
+[02:28] Tem um equilíbrio aí.
+[02:29] É a balança perfeita entre a velocidade e o tamanho da fila.
+[02:33] Pois é.
+[02:34] E antes da gente dar o primeiro passo, uma orientação de praxe.
+[02:37] A nossa conversa acompanha uma página de animação com 12 telas.
+[02:42] Quem tá só ouvindo no fone e acompanha de boa, a história faz sentido igual.
+[02:47] Mas quem tá com a página aberta só vira a tela quando ouviu o nosso pedido.
+[02:51] Então, pra começar, aperte o próximo.
+[02:53] Bom, o ano é 1993.
+[02:57] E a Intel tava com um chip novo pronto pra sair, né?
+[03:00] Exato.
+[03:01] E pela lógica antiga, ele deveria se chamar 586, pra seguir a escadinha clássica.
+[03:07] Só que aí a justiça americana entrou no meio lá em 1991 e decidiu que números
+[03:12] não podiam ser marca registrada.
+[03:14] Pois é.
+[03:15] E foi assim, por causa de um tribunal, que a Intel teve que inventar um nome e
+[03:19] criou o Pentium.
+[03:21] E o cara que chefiava isso era um engenheiro indiano.
+[03:24] Deixa eu ler a ficha dele aqui, ó.
+[03:26] Ficha, Vinod Dham, nascida em 1950, tinha 43 anos, vivo em 2026.
+[03:33] E o trabalho da equipe dele que chegou ao mundo em 22 de março de 1993 era um absurdo total
+[03:40] pra época.
+[03:41] A gente tá falando de números gigantes, né?
+[03:43] Muito.
+[03:44] Três milhões e 100 mil transístores.
+[03:46] E o relógio batia a 66 megahertz.
+[03:49] Caramba.
+[03:50] Mas a grande inovação não era o relógio, era o que eles chamaram de arquitetura superescalar.
+[03:55] Trazendo pro nosso mercado, isso seria o quê?
+[03:57] É como se ele simplesmente abrisse em dois caixas de mercado ao invés de um.
+[04:01] Ah, entendi.
+[04:02] O chip lia duas instruções do software.
+[04:04] Se uma conta não dependesse do resultado da outra, ele fazia as duas na mesma exata
+[04:08] batida do relógio.
+[04:10] Espera aí.
+[04:11] O próprio hardware, a peça física, aprendeu a ler o programa em tempo real
+[04:16] e decidiu isso.
+[04:18] Sozinho, sem programador escrever nenhuma linha nova, o Windows e os jogos exigiam mais
+[04:23] poder e o hardware entregou.
+[04:26] Isso criou uma regra que durou uns 11 anos, né?
+[04:28] O programa velho rodou mais rápido no chip novo, automaticamente.
+[04:32] Sem mudar uma linha.
+[04:33] Que você aperte o próximo.
+[04:35] Mas colocar três milhões de peças lógicas num quadradinho tem consequências.
+[04:41] E quem descobriu isso foi um professor de matemática que ficava testando números
+[04:45] primos do computador.
+[04:47] Tem a ficha dele aqui.
+[04:49] Ficha Thomas Nicely, nascido em 1943, tinha 51 anos, morreu em 2019.
+[04:56] É, o Nicely percebeu um padrão bizarro.
+[04:59] Em outubro de 1994, ele provou matematicamente que o Pentium errava contas.
+[05:05] Errava matemática básica.
+[05:07] Divisão com vírgula.
+[05:09] Falhava ali depois da quarta casa decimal.
+[05:12] Faltavam cinco entradas, cinco transistores numa tabela física que era gravada no chip.
+[05:17] Nossa!
+[05:18] E a notícia vazou na internet que estava engatinjando na época?
+[05:22] A Intel já sabia, mas tentou abafar.
+[05:24] Aí o presidente da empresa teve que entrar na roda.
+[05:27] Olha ele aqui.
+[05:28] Ficha Andy Grove, nascido em 1936, tinha 58 anos, morreu em 2016.
+[05:37] O Grove bateu o pé e disse que ninguém ia notar esse erro no dia a dia.
+[05:41] Só que a IBM parou de vender os computadores com o Pentium.
+[05:45] Foi no knockout.
+[05:47] Aí, em 20 de dezembro, ele jogou a toalha e aceitou trocar tudo.
+[05:50] Custou 475 milhões de dólares pra Intel.
+[05:55] Que loucura.
+[05:56] A lição aqui foi gigante.
+[05:58] O chip ficou tão complexo que passou a ter erro de software gravado na própria física.
+[06:05] Fabricar chip virou basicamente escrever montanhas de software só pra testar o desenho
+[06:10] antes de fabricar.
+[06:11] Caramba.
+[06:12] Aperte o próximo.
+[06:13] E a coisa foi escalando, né?
+[06:15] Em novembro de 1995, vem o Pentium Pro, com execução fora de ordem.
+[06:21] Pensa no mercado.
+[06:22] É o caixa chamando lá do fundo da fila quem já tá com o dinheiro na mão.
+[06:26] Isso.
+[06:27] Ele desconstrói a fila do software, executa fora de ordem e arruma tudo lá no final.
+[06:31] E em janeiro de 1997, chega o Pentium Mx, com o time lá de Israel.
+[06:38] Deixa eu puxar a ficha do líder deles.
+[06:40] Ficha Muli Edden, nascido em 1953, tinha 43 anos, vivo em 2026.
+[06:47] A equipe de Haifa, do Edden, criou 57 instruções novas.
+[06:52] Pra fazer a mesma conta em vários números de uma vez.
+[06:55] Exato.
+[06:56] Por causa do som e da imagem.
+[06:57] Era uma exigência nova do software.
+[07:00] E em maio, o Pentium 2 juntou tudo isso num chip só.
+[07:04] Então o hardware assumiu o trabalho chato de reordenar e o software puxou o hardware
+[07:09] pra criar instruções novas.
+[07:11] É uma retroalimentação.
+[07:13] E o programa velho, de novo, continuava ficando mais rápido de graça.
+[07:17] Maravilha.
+[07:18] Aperte o próximo.
+[07:19] Mas ó, ninguém corre sozinho.
+[07:21] E pra entender a velocidade, a gente tem que olhar pra concorrência.
+[07:25] Olha o fundador da principal rival.
+[07:27] Ficha Jerry Sanders, nascido em 1936, tinha 32 anos quando fundou a AMD em 1969.
+[07:35] Morreu em 2024.
+[07:37] A AMD era uma fabricante de segunda fonte?
+[07:40] Em 1982, a IBM exigiu peças iguais de fornecedores diferentes.
+[07:45] Aham.
+[07:46] Então a AMD fabricou o chip X86 usando uma licença da própria Intel.
+[07:52] Só que em 1987 a Intel corta o acordo, eles brigam o feio na justiça e a AMD ganha.
+[08:02] Com o direito de fazer, eles lançam o K5 em 1996.
+[08:07] E aí vem o cruzamento de destinos.
+[08:10] Eles compram a NexGen.
+[08:12] E quem era o diretor técnico lá?
+[08:15] O Vinod Daham.
+[08:16] O cara que fez o Pentium original.
+[08:18] Sim, ele tinha saído da Intel.
+[08:20] E o desenho da equipe dele vira o K6 lançado em abril de 1997.
+[08:25] É óbvio, né?
+[08:26] A corrida existe porque o padrão do computador, ingessou o software.
+[08:31] Os dois brigam até a morte pra ver quem roda melhor o mesmo Windows.
+[08:35] De crer, aperte o próximo.
+[08:37] E aí que a AMD passa na frente.
+[08:41] Comandada por esse cara aqui, ficha Dirke Meier.
+[08:45] Nascido em 1961, tinha 37 anos, vivo em 2026.
+[08:51] O Meier veio da década, ele desenhou o lendário chip Alpha e aí ele cria o K7 conhecido como
+[08:58] Atlon em agosto de 1999.
+[09:00] E eles cravam um marco histórico.
+[09:02] Em 6 de março de 2000, a AMD lança o primeiro chip comercial de 1 GHz, um milhão de batidas
+[09:11] por segundo.
+[09:12] A Intel entrou em pânico total, respondeu em dois dias.
+[09:16] E no fim do ano, em 20 de novembro de 2000, eles lançaram o Pentium 4.
+[09:20] E mudaram a lógica.
+[09:22] Lá no nosso mercado, eles esticaram a fila do caixa de 10 pra 20 passos.
+[09:27] Como cada passo faz menos coisa, o relógio pode bater absurdamente rápido.
+[09:32] Saiu a 1,4 GHz e a 1,5 GHz.
+[09:37] Fazia menos trabalho por batida, mas o número era alto.
+[09:40] A Intel chegou a prometer que alcançaria 10 GHz.
+[09:45] O número virou marketing purinho pra vender em loja.
+[09:48] Forçou o desenho do hardware, o software deitava e rolava e ninguém prestava atenção
+[09:53] no calor que isso gerava.
+[09:54] Um perigo invisível.
+[09:56] Aperte o próximo.
+[09:58] Até que em fevereiro de 2001, numa conferência, o diretor da Intel sobe no palco e mostra um
+[10:04] gráfico assustador.
+[10:05] A ficha dele, ficha Pat Gelsinger, nascido em 1961, tinha 39 anos, vivo em 2026.
+[10:14] O Gelsinger avisou, se continuar assim, o chip vai ter o calor de um reator nuclear
+[10:20] em 2005.
+[10:21] Um bico de foguete em 2010.
+[10:23] E a superfície do sol em 2015.
+[10:26] Tudo isso por causa daquela velha regra, né?
+[10:29] Deixa eu ler o criador dela.
+[10:31] Ficha Robert Dennard, nascido em 1932, tinha 42 anos quando escreveu a regra, em 1974, morreu
+[10:41] em 2024.
+[10:42] A regra de Dennard dizia que se o transistor ficasse menor, ficava mais rápido e gastava
+[10:48] menos.
+[10:49] Mas a regra quebrou.
+[10:50] Acabou.
+[10:51] Tentou ter tanto atenção para não esquentar que chegaram no limite físico.
+[10:54] Os transístores começaram a vazar a corrente elétrica sem parar, pungando, pingando, vazando
+[10:59] energia e gerando um calor massivo.
+[11:02] O limite não era mais em engenharia, virou física, e o pessoal do software nem sonhava
+[11:07] com isso.
+[11:08] Aperte o próximo.
+[11:09] E além do calor, bateu outro limite de memória, o limite de 32 bits, que só enxergava
+[11:15] 4 GB de memória.
+[11:17] O que, para os servidores gigantes, era o fim da linha.
+[11:19] A Intel tentou resolver em junho de 2001 com o Itânio, né?
+[11:25] Novas instruções do zero, só que o software antigo rodava muito mal, um desastre.
+[11:30] Aí, a Amy, do Dick Mayer, lançou o Opteeron e o Atlon 64 em 2003.
+[11:37] Uma jogada de gênio.
+[11:39] Eles só esticaram o X86 para 64 bits, os programas velhos rodavam perfeitamente
+[11:46] e o controlador de memória foi parado dentro do chip.
+[11:49] Em paralelo, naquele mesmo ano de 2003, o Mully Eden, lá de Haifa, fez o Pentium M para
+[11:55] a Notebook, focando puramente em poupar bateria.
+[11:59] E não em relógio alto.
+[12:00] E a Intel, sobre os bits, teve que engolir o orgulho.
+[12:04] Em 28 de junho de 2004, eles copiaram oficialmente o padrão da AMD.
+[12:10] Mais uma vez, vence o hardware que exige menos adaptação de quem faz o software.
+[12:15] Aperte o próximo.
+[12:16] Mas a parede do calor, essa chegou firme.
+[12:19] Pois é.
+[12:20] Em fevereiro de 2004, o novo Pentium 4, de 90 nanômetros e absurdos 31 passos na fila,
+[12:27] bateu na parede que o Gelsinger previu.
+[12:29] Ele só esquentava, não ficava mais rápido na prática.
+[12:31] E aí vem dois cancelamentos distintos muito simbólicos.
+[12:35] Em 7 de maio, a Intel cancela o projeto do sucessor de 7 GHz e em 14 de outubro
+[12:41] cancela o próprio Pentium 4 de 4 GHz.
+[12:45] O chip travou na barreira de 3 GHz e 800 MHz.
+[12:49] A promessa dos 10 GHz morreu.
+[12:51] E relouco pensar que, 20 anos depois, a gente ainda orbita perto desse número de batidas.
+[12:57] Mas a Intel anunciou a saída, chips de dois núcleos.
+[13:00] O que sacramento fin daquela regra de 1993, né?
+[13:04] O programa velho não roda mais rápido no chip novo de forma automática.
+[13:08] Caboa magia!
+[13:09] Aperte o próximo.
+[13:11] E o pânico bateu no código.
+[13:13] Em março de 2005, um programador da Microsoft escreveu um artigo famoso chamado.
+[13:19] O almoço gratis acabou.
+[13:21] O programa só ficaria rápido dali pra frente e se fosse escrito em paralelo.
+[13:25] E a Intel troca o comando.
+[13:27] Sim, a ficha dele.
+[13:29] Ficha Paulo Otellini, nascido em 1950, tinha 54 anos, morreu em 2017.
+[13:36] Otellini lança o Pentium D em 25 de maio de 2005.
+[13:40] A AMD responde em 31 de maio com o Atlan 64X2.
+[13:45] No nosso supermercado, é como ter dois mercados inteiros lado a lado, dividindo o estoque lá no fundo.
+[13:52] Você põe um programa no mercado e outro no outro, tranquilo.
+[13:56] Mas pra um programa só usar os dois mercados, o programador humano é que tem que fatiar o trabalho.
+[14:02] A Lady Mu continuou.
+[14:03] Os transtores vieram aos montes.
+[14:06] Mas vieram em formato de múltiplos núcleos.
+[14:09] O hardware simplesmente devolveu a conta do desempenho de volta pro colo do software.
+[14:14] Pois é, aperte o próximo.
+[14:16] O Otellini então tomou uma decisão drástica e mata a linhagem inteira do Pentium 4.
+[14:21] E ele usa aquele desenho de Israel focado em bateria de notebook.
+[14:25] Em 27 de julho de 2006, nasce o Core 2 Duo.
+[14:29] 65 nanômetros, fila cortada pra 14 passos, 2 núcleos e um relógio menor.
+[14:36] 2 GHz e 660 MHz.
+[14:39] Só que ele era brutalmente mais rápido e gastava metade da energia.
+[14:43] 65 watts contra o 130 do Pentium 4 esquentadinho.
+[14:47] A Intel retoma a liderança e na mesma semana olha que sintomático.
+[14:52] A AMD anuncia a compra de uma empresa de placa de vídeo.
+[14:57] Um chip de notebook foi literalmente a salvação pra parede térmica dos desktops.
+[15:02] Incrível!
+[15:03] Aperte o próximo.
+[15:05] E a gente para por aqui.
+[15:06] Chegamos a 2006.
+[15:08] Os processadores agora têm dois núcleos.
+[15:11] O padrão de 64 bits é da AMD e o relógio empacou na casa dos 3 GHz.
+[15:18] E fazendo um balanço de quem construiu isso sem centralização nenhuma.
+[15:23] O Jan lá do Pentium e do K6.
+[15:25] O Nicely que achou o erro.
+[15:27] O Groove que pagou a conta gigante.
+[15:29] O Eden do M, MX e do Core 2 Duo.
+[15:33] O Sanders com a concorrência firme.
+[15:35] O Mayer que chegou no 1 GHz.
+[15:37] O Gelsinguer alertando do calor.
+[15:40] O Denard que fez a regra que morreu vazando energia.
+[15:43] E o Otelini que virou Intel para os núcleos.
+[15:46] Caos total.
+[15:47] Total.
+[15:48] A Lady Moore seguiu dando transistores, não velocidade.
+[15:52] Ir rápido virou puramente sinônimo de matemática paralela.
+[15:56] Um problema só do software agora.
+[15:57] O que deixa uma pulga atrás da orelha?
+[15:59] Se agora o jeito de ir mais rápido é fazer muitas contas ao mesmo tempo?
+[16:04] Que peça do computador já fazia exatamente isso há 10 anos?
+[16:08] E para quê?

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A corrida do processador — Etapa 09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 09-01 (roteiro de 07/09, 12 telas, cronologico, com pessoas). A pasta
+     esta em _REFAZER, um nivel mais fundo que o normal: por isso os caminhos tem
+     quatro ../ em vez de tres. Sem modelo 3D, sem troca-imagem e sem CSS local: so
+     fotos do Commons e fichas da base, como no 08-03. As fichas tem texto curto de
+     proposito: com dois retratos e quatro itens, texto longo corta em 1440x900 (o
+     qa-pagina.js pegou isso na primeira versao). Os quatro __PLACEHOLDERS__ do
+     tocador sao preenchidos pelo preenche-9-01.py depois que a esteira baixa o audio
+     aprovado. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../../site/etapas/etapa-09.html">← voltar pra etapa</a></div>
+  <div class="tocador">
+    <audio preload="metadata" src="A%20Batalha%20Que%20Quase%20Derreteu%20os%20Processadores.m4a" data-duracao="825"></audio>
+    <img class="tocador__capa" src="img/pentium60-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A Batalha Que Quase Derreteu os Processadores</div>
+      <div class="tocador__fonte">A máquina que aprende · 01 · A corrida do processador</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="825" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">13:45</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que aprende · episódio 01</div>
+      <h1 class="reveal">A corrida do processador</h1>
+      <p class="lede reveal">De <b>1993 a 2006</b>, em ordem e com as pessoas. A máquina já está em toda casa e fala com as outras; antes de aprender qualquer coisa, <b>as peças vão correr</b>. Correr é duas coisas: quantas vezes por segundo o relógio bate e quanto o chip faz em cada batida. Em treze anos os dois subiram, um bateu numa parede, e o jeito de contornar a parede mudou como se escreve programa. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O caixa do mercado.</b> Cada instrução é um cliente na fila e o relógio é o ritmo do caixa. Passos menores deixam o ritmo mais rápido, mas cada cliente passa por mais passos. Dois caixas abertos: o Pentium. Chamar quem já está com o dinheiro na mão: o Pentium Pro. Dois mercados com o mesmo estoque atrás: dois núcleos.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/pentium60-real.jpg" alt="O primeiro Pentium, de 60 MHz, visto de cima: cerâmica escura com a tampa dourada e o logotipo Intel Pentium">
+      <figcaption>O primeiro Pentium, de 60 MHz, 1993 · domínio público</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1993 · Dham, na Intel</div>
+      <h2 class="reveal">O Pentium: dois caixas abertos</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o nome</div><div class="texto">ia ser 586. Em 1991 a justiça decidiu que 386 é número, não marca. A Intel contratou um nome: <b>Pentium</b></div></div>
+        <div class="item reveal"><div class="rotulo">22 de março de 1993</div><div class="texto">3,1 milhões de transistores, quase três vezes o 486; 60 e 66 MHz</div></div>
+        <div class="item reveal"><div class="rotulo">dois caixas</div><div class="texto">duas instruções por batida, quando uma não depende da outra. O hardware acha sozinho o que dá pra fazer junto</div></div>
+        <div class="item reveal"><div class="rotulo">quem puxou</div><div class="texto">Windows com som e vídeo, jogos, CD-ROM: o programa de 1993 pedia mais que o 486 dava</div></div>
+      </div>
+      <p class="lede reveal">O programa não mudou uma linha e ficou mais rápido. <b>Essa frase vai valer por onze anos.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Vinod Dham, que chefiou o projeto do Pentium · foto: Ambuj Saxena, CC BY 2.5">
+        <span class="selo">imagem real</span>
+        <img src="img/dham-real.jpg" alt="Vinod Dham falando num púlpito de madeira, de blazer escuro e óculos">
+        <figcaption>Vinod Dham · foto: Ambuj Saxena, CC BY 2.5</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A pastilha de um Pentium ao microscópio: três milhões de transistores (este é um de 120 MHz, da mesma família) · foto: cole8888, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/pentium-die-real.jpg" alt="A pastilha de silício de um Pentium vista ao microscópio: blocos retangulares em tons de dourado e verde, com fileiras finas de transistores como um tecido">
+        <figcaption>A pastilha ao microscópio: três milhões de transistores · foto: cole8888, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1994 · Nicely e Grove</div>
+      <h2 class="reveal">O erro dentro do chip</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">junho de 1994</div><div class="texto">Thomas Nicely, professor de matemática, vê seu Pentium somar primos errado. Avisa a Intel; ela já sabia</div></div>
+        <div class="item reveal"><div class="rotulo">a tabela</div><div class="texto">a divisão usava uma tabela gravada no chip com cinco entradas faltando. Não se corrige, se troca</div></div>
+        <div class="item reveal"><div class="rotulo">a rede</div><div class="texto">e-mail pra colegas, um post na internet, e em semanas está em jornal</div></div>
+        <div class="item reveal"><div class="rotulo">20 de dezembro</div><div class="texto">Grove só troca de quem provar que precisa. A IBM para de vender; dia 20, a Intel troca pra todos: <b>475 milhões de dólares</b></div></div>
+      </div>
+      <p class="lede reveal"><b>Daqui em diante, chip é testado como software.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O A80501, o Pentium de 60 e 66 MHz com o erro da divisão · foto: Konstantin Lanzet, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/pentium-a80501-real.jpg" alt="Um Pentium de 66 MHz visto de cima: cerâmica cinza com a tampa dourada, o logotipo Intel Pentium Processor e a gravação A80501-66">
+        <figcaption>O A80501, o Pentium com o erro · foto: Konstantin Lanzet, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Andy Grove em 2003, ao lado de um cartaz com os três fundadores da Intel · foto: Intel Free Press, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/grove-real.jpg" alt="Andy Grove sorrindo, de perfil, ao lado de um cartaz com uma foto antiga de três homens de camisa e gravata">
+        <figcaption>Andy Grove em 2003 · foto: Intel Free Press, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1995 a 1997 · Eden, em Haifa</div>
+      <h2 class="reveal">O chip que reordena</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">1º de novembro de 1995</div><div class="texto">o <b>Pentium Pro</b> executa fora de ordem: faz primeiro o que já tem tudo pronto e entrega na ordem que o programa esperava</div></div>
+        <div class="item reveal"><div class="rotulo">janeiro de 1997</div><div class="texto">o <b>Pentium MMX</b>: 57 instruções que fazem a mesma conta em vários números de uma vez. Feito em Haifa, pela equipe de Mooly Eden</div></div>
+        <div class="item reveal"><div class="rotulo">maio de 1997</div><div class="texto">o <b>Pentium II</b> junta os dois num chip pra casa</div></div>
+      </div>
+      <p class="lede reveal"><b>O programa velho segue ficando mais rápido sem mudar uma linha.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um Pentium Pro no soquete da placa-mãe: o encapsulamento retangular guarda o processador e o cache lado a lado · foto: Capitalistcakes, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/pentiumpro-real.jpg" alt="Uma placa-mãe verde com um Pentium Pro encaixado no soquete: encapsulamento retangular roxo com a tampa dourada e o logotipo Intel Pentium Pro">
+        <figcaption>Um Pentium Pro na placa-mãe: processador e cache lado a lado · foto: Capitalistcakes, CC0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Mooly Eden (à direita, de boina) com David Ginsberg, no fórum de desenvolvedores da Intel de 2011 · foto: Intel Free Press, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/eden-real.jpg" alt="Dois homens se cumprimentando num palco azul: à direita Mooly Eden, de boina preta e blazer, e à esquerda David Ginsberg, de blazer e jeans">
+        <figcaption>Mooly Eden (à direita, de boina), em 2011 · foto: Intel Free Press, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1969 a 1997 · Sanders e a AMD</div>
+      <h2 class="reveal">De cópia a concorrente</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">maio de 1969</div><div class="texto">Jerry Sanders sai da Fairchild com colegas e funda a <b>AMD</b>: fabrica o chip dos outros sob licença, a <i>segunda fonte</i></div></div>
+        <div class="item reveal"><div class="rotulo">fevereiro de 1982</div><div class="texto">a IBM exige dois fabricantes por peça do PC. A Intel licencia o 8086, o 8088 e o 286 pra AMD, que aprende x86</div></div>
+        <div class="item reveal"><div class="rotulo">1987 a 1991</div><div class="texto">a Intel não passa o 386. A AMD faz o dela, vai à justiça e ganha em março de 1991</div></div>
+        <div class="item reveal"><div class="rotulo">1996 e 1997</div><div class="texto">o <b>K5</b> chega atrasado e lento. A AMD compra a NexGen, onde Vinod Dham era diretor de operações, e o desenho vira o <b>K6</b></div></div>
+      </div>
+      <p class="lede reveal">Dois fabricantes só competem porque <b>o software é o mesmo</b>: dentro do molde do PC, dois correm.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jerry Sanders, fundador da AMD · foto: Phil Konstantin, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/sanders-real.jpg" alt="Jerry Sanders sorrindo, de terno escuro e gravata vermelha, cabelo branco, diante de um fundo azul">
+        <figcaption>Jerry Sanders · foto: Phil Konstantin, domínio público</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um K6 de 166 MHz, 1997: o desenho da NexGen no soquete do Pentium · CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/k6-real.jpg" alt="Um processador AMD K6 de 166 MHz visto de cima: cerâmica roxa com a tampa metálica e o selo Designed for Windows 95">
+        <figcaption>Um K6 de 166 MHz, 1997 · CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">1999 a 2000 · Meyer, na AMD</div>
+      <h2 class="reveal">A corrida do relógio</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">junho de 1999</div><div class="texto">Dirk Meyer, que fez o Alpha na DEC, chefia o <b>Athlon</b>: mais rápido que o Pentium III. A AMD passa a Intel pela primeira vez</div></div>
+        <div class="item reveal"><div class="rotulo">6 de março de 2000</div><div class="texto">o Athlon a <b>1 GHz</b>. A Intel responde em 8 de março. Dois dias</div></div>
+        <div class="item reveal"><div class="rotulo">20 de novembro de 2000</div><div class="texto">o <b>Pentium 4</b>, feito pra número: 20 passos em vez de 10, batida curta, relógio alto. A Intel promete 10 GHz</div></div>
+      </div>
+      <p class="lede reveal">O relógio virou a medida de tudo e o hardware se dobrou ao número. <b>Ninguém está contando quanto esquenta.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O Athlon original, no cartucho do Slot A, 1999: o chip da AMD no meio e os dois chips de cache dos lados · foto: Tullius, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/athlon-real.jpg" alt="A placa verde de um cartucho Slot A aberto, com o chip AMD Athlon no centro e dois chips de memória NEC nas laterais">
+        <figcaption>O Athlon original, no cartucho do Slot A, 1999 · foto: Tullius, CC BY-SA 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um Pentium 4 de 1,5 GHz, 2000 · domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/pentium4-real.jpg" alt="Um Pentium 4 de 1,5 GHz visto de cima, em diagonal: a base verde cheia de pinos e a tampa metálica quadrada com a gravação Intel Pentium 4">
+        <figcaption>Um Pentium 4 de 1,5 GHz, 2000 · domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2001 · Gelsinger, na Intel; a regra de Dennard, de 1974</div>
+      <h2 class="reveal">O aviso</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">fevereiro de 2001</div><div class="texto">Pat Gelsinger, da Intel, mostra o calor por área dos chips subindo: em 2005 o de um reator nuclear, em 2010 o bico de um foguete, em 2015 a superfície do Sol</div></div>
+        <div class="item reveal"><div class="rotulo">a regra de 1974</div><div class="texto">Robert Dennard, da IBM: transistor menor é mais rápido <i>e</i> gasta menos, na mesma proporção. Moore dá transistor; Dennard dava velocidade de graça</div></div>
+        <div class="item reveal"><div class="rotulo">por que acaba</div><div class="texto">a tensão chegou ao mínimo que separa o zero do um. Abaixo disso o transistor <b>vaza</b>. Cem milhões vazando é calor</div></div>
+      </div>
+      <p class="lede reveal">O primeiro limite que não é dinheiro nem engenharia: <b>é física</b>. E o software ainda não sabe.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Pat Gelsinger, que fez o aviso do calor em 2001 · foto: Web Summit, CC BY 2.5">
+        <span class="selo">imagem real</span>
+        <img src="img/gelsinger-real.jpg" alt="Pat Gelsinger falando num palco, de terno escuro, gesticulando com a mão">
+        <figcaption>Pat Gelsinger · foto: Web Summit, CC BY 2.5</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um cartucho de Athlon debaixo de um dissipador enorme: o calor já pedia metal e ventoinha · foto: Sven, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/dissipador-real.jpg" alt="Um cartucho de Athlon deitado sobre um pano branco, com um dissipador dourado de aletas grandes e uma ventoinha presa nele">
+        <figcaption>O calor já pedia metal · foto: Sven, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2003 · Opteron contra Itanium</div>
+      <h2 class="reveal">Os 64 bits da AMD</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o teto</div><div class="texto">32 bits alcançam 4 gigabytes de memória. Em 2003 os servidores batiam nele</div></div>
+        <div class="item reveal"><div class="rotulo">junho de 2001</div><div class="texto">o <b>Itanium</b> da Intel: instruções novas, do zero. Software antigo roda mal, o novo é reescrito. Vendeu pouco</div></div>
+        <div class="item reveal"><div class="rotulo">22 de abril de 2003</div><div class="texto">a AMD estica o x86 pra 64 bits, tudo de 32 rodando igual: o <b>Opteron</b>, depois o Athlon 64</div></div>
+        <div class="item reveal"><div class="rotulo">28 de junho de 2004</div><div class="texto">a Intel lança chips com os 64 bits da AMD. Até hoje o nome técnico é <b>AMD64</b></div></div>
+      </div>
+      <p class="lede reveal"><b>Ganhou quem exigiu menos do software.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um Opteron de 2005: o x86 esticado pra 64 bits · foto: Konstantin Lanzet, CC BY 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/opteron-real.jpg" alt="Um processador AMD Opteron visto de cima, com a tampa metálica quadrada e a gravação Opteron">
+        <figcaption>Um Opteron de 2005 · foto: Konstantin Lanzet, CC BY 3.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um Itanium aberto: o conjunto de instruções novo que quase ninguém comprou · foto: Konstantin Lanzet, CC BY 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/itanium-real.jpg" alt="Um cartucho de Itanium aberto: a moldura preta, a placa verde com componentes pequenos e a grade de contatos dourados do processador">
+        <figcaption>Um Itanium, aberto · foto: Konstantin Lanzet, CC BY 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">2004 · a parede</div>
+    <h2 class="reveal">O relógio para em 3,8 GHz</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um Pentium 4 de 2,8 GHz de 2004, do núcleo de 90 nanômetros que esquentava e não acelerava · foto: Raimond Spekking, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/prescott-real.jpg" alt="Um Pentium 4 de 2004 visto de cima: base verde e tampa metálica quadrada com a gravação Intel Pentium 4 2.80 GHz">
+        <figcaption>O Pentium 4 de 90 nanômetros: esquenta mais, não fica mais rápido · foto: Raimond Spekking, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Fevereiro de 2004: o Pentium 4 de 90 nanômetros, 125 milhões de transistores, fila de 31 passos. <b>Esquenta mais e não fica mais rápido.</b> Em 7 de maio a Intel cancela o sucessor de 7 GHz; em 14 de outubro, o de 4 GHz. Para em 3,8, e anuncia: em vez de um núcleo mais rápido, dois.</p>
+    <div class="nota-cena reveal">vinte anos depois, o processador de uma casa bate entre 4 e 6 bilhões de vezes por segundo. Não 10, não 30</div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2005 · Otellini, na Intel</div>
+      <h2 class="reveal">O fim do almoço grátis</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">março de 2005</div><div class="texto"><i>O almoço grátis acabou</i>, artigo de um programador da Microsoft: o programa só acelera se for escrito pra fazer várias coisas ao mesmo tempo</div></div>
+        <div class="item reveal"><div class="rotulo">maio de 2005</div><div class="texto">Otellini assume a Intel no dia 18. Dia 25, o <b>Pentium D</b>, dois Pentium 4 colados; dia 31, o <b>Athlon 64 X2</b>, dois núcleos numa pastilha</div></div>
+        <div class="item reveal"><div class="rotulo">o que é núcleo</div><div class="texto">dois mercados com o mesmo estoque. Um programa em fila usa um só. Pra usar os dois, o programador divide o trabalho</div></div>
+      </div>
+      <p class="lede reveal">Pela primeira vez <b>o hardware devolve a conta pro software</b>: Moore dá transistor em núcleos, e só o programa paralelo aproveita.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Paul Otellini (à esquerda) com Craig Barrett, o presidente que ele substituiu, em 2005 · foto: Intel Free Press, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/otellini-real.jpg" alt="Paul Otellini, de terno escuro e gravata listrada, ao lado de Craig Barrett, de cabelo branco, diante de microfones e câmeras de televisão">
+        <figcaption>Otellini (à esquerda) e Barrett, 2005 · foto: Intel Free Press, CC BY-SA 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um Athlon 64 X2: dois núcleos na mesma pastilha · foto: Trio3D, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/x2-real.jpg" alt="Um processador Athlon 64 X2 visto de cima, com a tampa metálica quadrada e a gravação AMD Athlon 64 X2">
+        <figcaption>Um Athlon 64 X2 · foto: Trio3D, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">2006 · Eden, de novo em Haifa</div>
+    <h2 class="reveal">O chip que venceu abaixando o relógio</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Um Core 2 Duo (um E8400 de 2008, da mesma família): dois núcleos, fila curta, relógio mais baixo que o do Pentium 4 e mais rápido em tudo · CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/core2duo-real.jpg" alt="Um processador Intel Core 2 Duo visto de cima, sobre uma mesa de madeira: base verde e tampa metálica quadrada com a gravação Intel Core 2 Duo E8400">
+        <figcaption>Um Core 2 Duo (um E8400, de 2008, da mesma família) · CC0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A equipe de Eden fazia o contrário num chip de notebook: fila curta, mais trabalho por batida. Otellini escolhe esse desenho. Em 27 de julho de 2006, o <b>Core 2 Duo</b>: dois núcleos, <b>2,66 GHz</b>, mais rápido que o Pentium 4 de 3,8 gastando 65 watts onde o Pentium D gastava 130.</p>
+    <div class="nota-cena reveal">a Intel retoma a frente. Na mesma semana a AMD anuncia a compra de uma empresa que faz placa de vídeo: o próximo episódio</div>
+  </section>
+
+  <!-- 12 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2006</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Dham fez o Pentium e depois deu à AMD o desenho do K6. Nicely achou o erro; Grove pagou a troca. Eden fez o MMX em Haifa e, dez anos depois, o chip que venceu abaixando o relógio. Sanders fundou a cópia que virou concorrente. Meyer fez o Athlon e chegou primeiro ao giga. Gelsinger avisou do calor. Dennard escreveu a regra que deu velocidade de graça por trinta anos, e a regra acabou. Otellini virou a Intel pra dois núcleos</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição</div>
+        <div class="desc">a lei de Moore continua dando transistor, mas parou de dar velocidade. Daqui em diante, ir mais rápido é fazer muitas contas ao mesmo tempo, e isso é um problema de software, não de hardware</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">onde para</div>
+        <div class="desc">2006: dois núcleos em todo processador novo, 64 bits no molde da AMD, e o relógio parado perto de 3 GHz</div>
+      </div>
+    </div>
+    <p class="lede reveal">Se agora o jeito de ir mais rápido é fazer muitas contas ao mesmo tempo, <b>que peça do computador já fazia exatamente isso</b> há dez anos, e pra quê?</p>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

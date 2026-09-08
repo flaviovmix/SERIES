@@ -1,0 +1,7 @@
+Titulo: Como as GPUs destravaram as redes neurais
+Notebook: 09-03-A máquina que aprende
+
+Descricao:
+A Máquina que Aprende narra a evolução histórica da inteligência artificial sob a perspectiva do hardware e do software, cobrindo o período de 1943 a 2012. O texto detalha como ideias fundamentais, como o neurônio artificial e o perceptron, ficaram guardadas por décadas aguardando o surgimento de tecnologias que permitissem seu uso prático. Através de uma cronologia de doze passos, acompanhamos o trabalho de figuras como Rosenblatt, Hinton e LeCun, cujas pesquisas enfrentaram períodos de descrédito conhecidos como invernos da área. A narrativa culmina em 2012 com a AlexNet, demonstrando que o uso de placas de vídeo baratas e grandes volumes de dados permitiu que programas fossem achados por meio de treinamento, em vez de escritos manualmente. Essa mudança de paradigma prova que o avanço do hardware não apenas acelerou o processamento, mas transformou a própria natureza da programação moderna. O material serve como um roteiro educativo que conecta a lógica matemática do passado ao poder computacional das redes neurais profundas.
+
+Link: https://notebook.google.com/notebook/b0dceb4c-a96e-4fe6-a4c3-4b8216197a6c

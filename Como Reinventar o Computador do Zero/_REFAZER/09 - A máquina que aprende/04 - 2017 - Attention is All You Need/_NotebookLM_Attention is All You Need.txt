@@ -1,0 +1,526 @@
+Inicie dizendo: 2017: Attention is All You Need
+---------------
+
+Este e o quarto e ultimo episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa
+da serie Como Reinventar o Computador do Zero. E o ultimo episodio da serie. O anterior
+contou a maquina que aprende, de mil novecentos e quarenta e tres a dois mil e doze, e
+terminou na AlexNet: uma rede que olha a imagem inteira de uma vez, treinada em duas
+placas de jogo, e um programa achado em vez de escrito. Ele deixou uma pergunta: texto
+nao e imagem; uma frase e uma fila de palavras, uma depois da outra. Como e que uma
+maquina que gosta de fazer tudo ao mesmo tempo le uma fila? Este episodio responde: em
+dois mil e dezessete, tirando a fila.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram o jeito de a rede
+ler texto, EM ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o
+software melhoram um empurrando o outro. A tese deste episodio, dita com todas as letras
+na tela 6: o Transformer e um software desenhado com a FORMA do hardware, e por isso ele
+venceu.
+
+ESTE EPISODIO COBRE DE 1997 A 2018, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio para. ATENCAO: o episodio
+anterior parou em dois mil e doze e este comeca em mil novecentos e noventa e sete. NAO
+chamar isso de "voltar no tempo": o texto tem a sua propria fila de pessoas, que correu
+ao lado da fila da imagem, e a serie conta ela do comeco. Dizer isso na tela 1, em uma
+frase.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome. Dizer quem fez, onde estava e por
+que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Yoshua
+Bengio, nascido em mil novecentos e sessenta e quatro, tinha cinquenta anos; vivo em
+dois mil e vinte e seis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE
+SO, dita e seguida em frente: sem comentario, sem contar mais nada da vida da pessoa.
+NAO pular ficha de ninguem e NAO inventar dado que nao esteja na ficha. Sao oito fichas:
+Hochreiter, Schmidhuber, Sutskever, Vinyals, Le, Cho, Bengio e Radford.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer
+"ficha", "deixa eu ler a ficha", "olha a ficha dele" nem nada parecido: emendar direto
+no nome.
+
+OS OITO AUTORES DO TRANSFORMER NAO TEM FICHA. Sao nomeados os oito, em uma passada, na
+tela 6, e o roteiro da sobre eles so o que e publico: todos vivos em dois mil e vinte e
+seis, o mais novo era um estagiario de vinte anos, e ate dois mil e vinte e tres todos
+tinham saido do Google. A maioria nao tem ano de nascimento publico, e por isso NENHUM
+dos oito recebe ficha: NAO inventar ano, NAO dizer que falta ficha, NAO comentar.
+Tambem NAO sao nomeados (ano nao publico): o doutorando de Bengio que escreveu a atencao,
+o engenheiro que liderou a TPU e o autor principal do BERT. Falar deles como o roteiro
+escreve.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido". A frase so pode ser dita nos onze pedidos de verdade,
+porque a pagina corta o audio em cada vez que ela aparece.
+
+A PRIMEIRA GRAVACAO DESTE EPISODIO FOI DESCARTADA. O que saiu errado, e NAO PODE se
+repetir:
+
+- Durou ONZE minutos e cortou metade do conteudo. A duracao e cerca de DEZOITO minutos:
+  dizer TUDO que cada tela traz, inclusive as datas e os numeros, sem resumir.
+- Leu as fichas com a palavra "cena": "tinha trinta anos naquela cena", "com vinte e cinco
+  anos na cena". A palavra "cena" e instrucao deste roteiro, NAO e fala. A ficha e
+  exatamente: "Nome, nascido em ANO, tinha N anos; vivo em dois mil e vinte e seis."
+  Sempre com "em dois mil e vinte e seis", nunca so "vivo". A ficha de Schmidhuber saiu
+  pela metade ("quatro anos, tambem vivo"): ler cada ficha inteira.
+- Chamou Ilya Sutskever de "William". O nome e ILYA ("í-lia").
+- Disse os oito nomes dos autores DUAS vezes cada ("Vaswani, Vaswani, Shazeer,
+  Shazeer..."), porque leu a pronuncia entre parenteses como se fosse repeticao. As
+  pronuncias entre parenteses sao GUIA de como falar: dizer cada nome UMA vez so.
+- Disse "genial" duas vezes e "genialidade" uma (proibidas) e "a pergunta de um milhao
+  de dolares" (frase de efeito proibida).
+- Pronunciou Boole como "bully". Boole e "búl", uma silaba, rimando com "sul".
+- Pulou o balanco nome por nome da tela 12 e o balanco da etapa, inventou uma pergunta
+  final e fechou com "ate o proximo mergulho". A ULTIMA FRASE DA SERIE E A DO ROTEIRO:
+  sem pergunta nova, sem "ate o proximo", sem "proximo mergulho", sem "proximo encontro".
+- Abriu com a traducao do titulo e o aviso das telas ANTES da retomada. Depois do titulo,
+  a PRIMEIRA frase e a retomada de dois mil e doze; o aviso das telas vem depois.
+
+Sao ONZE pedidos de "aperte o Proximo" (sempre com o "o"), um no fim de cada tela de 1 a
+11; OITO fichas lidas no formato, uma frase cada; o aviso das 12 telas na tela 1; cerca
+de dezoito minutos. Sem isso o episodio nao serve.
+
+A SEGUNDA GRAVACAO acertou quase tudo, mas disse na tela 9 que "o autor principal do BERT
+nao tem nome publico". ISSO E FALSO: o autor tem nome publico (o que nao e publico e o ano
+de nascimento dele, e por isso este roteiro nao le ficha). NAO dizer que alguem "nao tem
+nome publico", NAO comentar ficha que falta: dizer so "um engenheiro do Google", como o
+roteiro escreve. E pronunciou Boole como "bully" de novo: e "búl", uma silaba.
+
+ATENCAO ESPECIAL COM AS TELAS 3 e 4. A tela 3 e a traducao com duas redes em fila
+(Sutskever, Vinyals e Le) e TERMINA no gargalo do vetor unico. A tela 4 e a atencao
+(Bengio e Cho). Duas telas, um pedido de Proximo entre elas. NAO falar de atencao na
+tela 3.
+
+ATENCAO ESPECIAL COM AS TELAS 5 e 6. A tela 5 e o tradutor do Google em producao e a TPU
+(dois mil e dezesseis). A tela 6 e o artigo de dois mil e dezessete. Duas telas, dois
+pedidos. NAO falar de Transformer na tela 5.
+
+ATENCAO ESPECIAL COM AS TELAS 6, 7 e 8. A tela 6 e o artigo e a ideia geral (tirar a
+fila). A tela 7 e como a palavra vira numero e o carimbo de posicao. A tela 8 e como a
+atencao e calculada e por que e multiplicacao de matriz. Tres telas, tres pedidos. NAO
+explicar o carimbo de posicao na tela 6 nem a multiplicacao de matriz na tela 7.
+
+ATENCAO ESPECIAL COM AS TELAS 9 e 10. A tela 9 e o GPT e o BERT de dois mil e dezoito. A
+tela 10 e a receita crescendo (dois mil e dezenove e dois mil e vinte, em duas frases) e
+os oito saindo do Google. Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 11 e o fecho do arco da SERIE inteira (do
+abaco ate aqui). A tela 12 e o balanco das pessoas deste episodio, a licao da etapa e a
+ultima frase da serie. Um pedido de Proximo entre as duas. Na primeira gravacao do
+episodio 01 desta etapa as duas ultimas telas sairam emendadas: NAO repetir.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e noventa e sete", "dois
+mil e doze", "dois mil e quatorze", "dois mil e quinze", "dois mil e dezesseis", "dois
+mil e dezessete", "dois mil e dezoito", "dois mil e dezenove", "dois mil e vinte", "dois
+mil e vinte e tres". Ano dito rapido em digito sai embolado.
+
+NUMEROS DEVAGAR: "sessenta e cinco milhoes de numeros", "cento e dezessete milhoes",
+"trezentos e quarenta milhoes", "um bilhao e meio" (BILHAO, com B), "cento e setenta e
+cinco bilhoes", "oito placas", "tres dias e meio", "noventa e seis placas", "seis dias",
+"duzentos e cinquenta e seis por duzentos e cinquenta e seis".
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar quando
+indicado, porque em portugues eles embolam:
+
+- O titulo do artigo, "Attention is All You Need": dizer em ingles devagar, "a-tén-chon
+  is ól iu níd", e traduzir uma vez: "atencao e tudo de que voce precisa".
+- Transformer: fala-se "trans-fór-mer", em ingles; depois pode dizer "o Transformer".
+- Sepp Hochreiter: fala-se "zép rôr-rai-ter". Jürgen Schmidhuber: fala-se "iúr-guen
+  chmít-ru-ber". Munique: a cidade da Alemanha. LSTM: soletrar, "ele, esse, te, eme",
+  e dizer que quer dizer "memoria de curto e longo prazo".
+- Ilya Sutskever: fala-se "í-lia sút-ske-ver". Oriol Vinyals: fala-se "o-ri-ól
+  vi-niáls". Quoc Le: fala-se "cuóc lê". Google: fala-se "gú-gol".
+- Yoshua Bengio: fala-se "io-chú-a bên-jio". Kyunghyun Cho: fala-se "quiúng-riun tchô".
+  Montreal: fala-se "mon-tre-ál", no Canada.
+- TPU: soletrar, "te, pe, u", e dizer que quer dizer "unidade de processamento de
+  tensores"; depois "a TPU".
+- Os oito autores, na tela 6, devagar: Ashish Vaswani ("a-chích vas-uá-ni"), Noam
+  Shazeer ("nô-am cha-zír"), Niki Parmar ("ní-qui par-már"), Jakob Uszkoreit ("iá-cob
+  ús-co-rait"), Llion Jones ("lí-on djôns"), Aidan Gomez ("êi-dan gô-mes"), Lukasz
+  Kaiser ("lú-cach cái-zer"), Illia Polosukhin ("í-lia po-lo-sú-quin").
+- P100: dizer "pe cem", a placa da NVIDIA ("en-ví-dia").
+- Query, key e value: dizer em portugues, "pergunta, etiqueta e conteudo"; NAO usar as
+  palavras em ingles.
+- GPT: soletrar, "ge, pe, te". OpenAI: fala-se "ôpen-ei-ái". Alec Radford: fala-se
+  "á-lec réd-ford". BERT: fala-se "bért".
+- Boole: fala-se "búl", uma silaba so, rimando com "sul"; NUNCA "bully". Von Neumann:
+  fala-se "fon nói-man".
+- ATENCAO: tudo que esta entre parenteses e aspas nesta lista e GUIA de pronuncia, nao e
+  pra ser lido duas vezes. Cada nome e dito UMA vez.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu", "conforme o documento", "a analogia autorizada" nem nada
+parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "Dois mil e dezessete: Attention is All You Need". As
+palavras "inicie dizendo" NUNCA sao ditas em voz alta.
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. NAO abrir com
+"imagina a seguinte cena", NAO abrir com um fato de tela posterior como isca, e NAO abrir
+com comparacao nenhuma. Depois do titulo, a primeira frase e a retomada de dois mil e
+doze.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir ou
+mexer em peca nenhuma na capa da pagina. As telas sao fotos e diagramas.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+ESTE EPISODIO FECHA A ETAPA E FECHA A SERIE. Na tela 11, o arco inteiro da serie, do
+abaco ate a rede, em poucas frases. Na tela 12, o balanco das pessoas, a licao da etapa
+e a ultima frase da serie. NAO prometer proximo episodio, NAO deixar pergunta pra outro
+episodio: a serie para aqui.
+
+DURACAO: cerca de 18 minutos. Nao esticar, nao repetir, nao comentar cada fato duas
+vezes. E nao encurtar pulando as datas e as fichas do roteiro.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade,
+lendario, revolucionario. E "cerebro" em qualquer comparacao com a rede.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica
+realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa",
+"advogado do diabo", "mudou o mundo pra sempre", "revolucionou tudo", "o resto e
+historia", "ate o proximo", "proximo mergulho", "proximo encontro".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A mesa de reuniao: numa rede que le em fila, as palavras estao sentadas numa fileira e
+  cada uma passa um bilhete pra seguinte, resumindo tudo o que veio antes; o bilhete vai
+  se apagando pelo caminho, e ninguem pode falar antes do vizinho terminar. Na atencao,
+  todas as palavras sentam na mesma mesa redonda, ao mesmo tempo, e cada uma olha pra
+  todas as outras e decide quem escutar mais e quem escutar menos. A mesa e o Transformer.
+  O crachá com o numero da cadeira e o carimbo de posicao.
+- Os botoes, herdados do episodio anterior, podem ser lembrados em UMA frase (os pesos da
+  rede sao botoes girados pelo erro). A equipe de pintores, do episodio da placa de video,
+  pode ser lembrada em UMA frase (a placa faz a mesma conta em muitos numeros ao mesmo
+  tempo). Nao desenvolver nenhuma das duas.
+
+Fora essas, sem analogias. NAO comparar a rede com cerebro, nem a atencao com atencao
+humana alem do nome.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - A FILA
+
+Retomar em duas frases onde a serie parou: em dois mil e doze a AlexNet venceu o ImageNet
+em duas placas de jogo, e o programa passou a ser achado em vez de escrito. A pergunta
+que ficou: a rede olha a imagem inteira de uma vez, e a placa gosta disso; mas texto e
+uma fila de palavras, uma depois da outra, e o sentido de cada uma depende das que
+vieram antes. Como uma maquina que gosta de fazer tudo ao mesmo tempo le uma fila?
+
+Responder direto: durante vinte anos, lendo em fila mesmo, uma palavra por passo, e
+pagando o preco. Em dois mil e dezessete, tirando a fila.
+
+Usar a analogia da mesa de reuniao, inteira, aqui, uma vez: a fileira com o bilhete que
+se apaga, e a mesa redonda onde todo mundo olha pra todo mundo ao mesmo tempo.
+
+Avisar que o episodio anterior parou em dois mil e doze e este comeca em mil novecentos e
+noventa e sete: o texto tem a sua propria fila de pessoas, que correu ao lado da fila da
+imagem, e a serie conta ela do comeco.
+
+Dizer a tese do episodio em uma frase, sem explicar ainda: o que venceu em dois mil e
+dezessete foi um software desenhado com a forma do hardware.
+
+Dizer o fio: pessoas em ordem, e em cada passo o hardware e o software empurrando um ao
+outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e noventa e sete a
+dois mil e dezoito. E e o ultimo episodio da serie.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 12 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver a rede que le em fila ganhar memoria.
+
+TELA 2 - MIL NOVECENTOS E NOVENTA E SETE: A MEMORIA DE CURTO E LONGO PRAZO
+
+Explicar o problema antigo: uma rede que le texto em fila, uma palavra por passo, guarda
+um resumo do que leu e passa adiante, e a cada passo o resumo e reescrito. Depois de
+vinte palavras, o comeco da frase praticamente sumiu. E o bilhete que se apaga. Em
+termos de treino, o erro que volta de tras pra frente tambem se apaga, e os botoes das
+primeiras palavras quase nao giram.
+
+Contar as pessoas e a solucao: em Munique, Sepp Hochreiter, na tese de mestrado com o
+orientador Jürgen Schmidhuber, desenha uma celula com portoes: um portao decide o que
+guardar, outro o que esquecer, outro o que mostrar. Publicado em mil novecentos e noventa
+e sete com o nome LSTM, memoria de curto e longo prazo.
+
+FICHA: Sepp Hochreiter, nascido em mil novecentos e sessenta e sete, tinha trinta anos;
+vivo em dois mil e vinte e seis. Jürgen Schmidhuber, nascido em mil novecentos e
+sessenta e tres, tinha trinta e quatro anos; vivo em dois mil e vinte e seis.
+
+Dizer o que a LSTM resolve e o que nao resolve: o bilhete deixa de se apagar tao rapido,
+e a rede lembra mais longe. Mas continua lendo em fila: pra ler a palavra vinte, tem que
+ter lido a dezenove. Um passo depois do outro.
+
+Dizer a licao de hardware e software: um algoritmo em fila nao aproveita a placa, que
+quer tudo ao mesmo tempo. Em mil novecentos e noventa e sete isso nao importava; em dois
+mil e doze, com a placa na mesa, passa a ser o problema.
+
+Fechar pedindo o Proximo pra ver duas dessas redes traduzirem uma frase.
+
+TELA 3 - DOIS MIL E QUATORZE: TRADUZIR COM DUAS REDES EM FILA
+
+Contar as pessoas: no Google, Ilya Sutskever, o mesmo da AlexNet, com Oriol Vinyals e
+Quoc Le, publica em setembro de dois mil e quatorze um tradutor feito de duas LSTM.
+
+FICHA: Ilya Sutskever, nascido em mil novecentos e oitenta e seis, tinha vinte e sete
+anos; vivo em dois mil e vinte e seis. Oriol Vinyals, nascido em mil novecentos e oitenta
+e tres, tinha trinta e um anos; vivo em dois mil e vinte e seis. Quoc Le, nascido em mil
+novecentos e oitenta e dois, tinha trinta e dois anos; vivo em dois mil e vinte e seis.
+
+Explicar o desenho: a primeira rede le a frase em ingles, palavra por palavra, e no fim
+guarda um resumo, uma lista fixa de numeros. A segunda rede recebe esse resumo e escreve
+a frase em frances, palavra por palavra. Funciona: e a primeira vez que uma rede neural
+traduz no nivel dos melhores sistemas da epoca.
+
+Dizer o limite, e terminar a tela nele: a frase inteira, curta ou longa, tem que caber no
+mesmo resumo de tamanho fixo. Frases longas perdem. E o gargalo do vetor unico.
+
+Dizer a licao de hardware e software: o software encontrou um limite de memoria dentro do
+proprio desenho, nao no hardware. A saida vai ser mudar o desenho.
+
+Fechar pedindo o Proximo pra ver a rede parar de espremer a frase num resumo so.
+
+TELA 4 - DOIS MIL E QUATORZE E QUINZE: A ATENCAO
+
+Contar as pessoas: em Montreal, no grupo de Yoshua Bengio, um doutorando vindo da
+Bielorrussia, com o pos-doutorando Kyunghyun Cho, publica em setembro de dois mil e
+quatorze a saida, apresentada em conferencia em maio de dois mil e quinze.
+
+FICHA: Yoshua Bengio, nascido em mil novecentos e sessenta e quatro, tinha cinquenta
+anos; vivo em dois mil e vinte e seis. Kyunghyun Cho, nascido em mil novecentos e oitenta
+e cinco, tinha vinte e nove anos; vivo em dois mil e vinte e seis.
+
+Explicar a ideia: em vez de a segunda rede receber um resumo so, ela recebe todos os
+resumos parciais, um por palavra da entrada, e a cada palavra que escreve ela olha pra
+todos eles e da um peso a cada um: quanto esta palavra da entrada importa pra esta
+palavra da saida. Isso ganhou o nome de atencao. Traduzir "o gato preto" pra ingles: na
+hora de escrever "black", a rede olha mais pra "preto".
+
+Dizer o resultado: frases longas param de perder. E de brinde a rede mostra, pra cada
+palavra que escreveu, em quais palavras ela se apoiou.
+
+Dizer a licao de hardware e software: o software contornou o gargalo com mais conta em
+paralelo (olhar pra todas as palavras de uma vez), que e o que a placa faz bem. Mas a
+leitura ainda e em fila, e a escrita tambem.
+
+Fechar pedindo o Proximo pra ver isso traduzindo de verdade, pra milhoes de pessoas.
+
+TELA 5 - DOIS MIL E DEZESSEIS: O TRADUTOR EM PRODUCAO E A TPU
+
+Contar o fato: em vinte e sete de setembro de dois mil e dezesseis o Google poe um
+tradutor neural em producao, primeiro do chines pro ingles; em quinze de novembro estende
+pra oito linguas, portugues entre elas. Por dentro: oito camadas de LSTM lendo e oito
+escrevendo, com atencao no meio.
+
+Dizer o custo, que e o ponto da tela: treinar um desses leva cerca de seis dias em
+noventa e seis placas de video. E na hora de traduzir, a fila continua: uma palavra por
+passo.
+
+Contar o hardware novo: pra rodar isso barato, o Google desenhou um chip proprio, a TPU,
+usado por dentro desde dois mil e quinze e anunciado em dezoito de maio de dois mil e
+dezesseis. Ele faz uma coisa so: multiplicar tabelas de numeros, com uma grade de
+duzentos e cinquenta e seis por duzentos e cinquenta e seis multiplicadores pequenos,
+tudo ao mesmo tempo. O engenheiro que liderou o projeto tinha desenhado processadores
+na DEC nos anos oitenta.
+
+Dizer a licao de hardware e software: o software puxou um hardware sob medida, como o
+perceptron de mil novecentos e sessenta com os botoes de verdade. E esse hardware, como
+a placa, quer tudo ao mesmo tempo. A fila da LSTM e o que sobra de fora.
+
+Fechar pedindo o Proximo pra ver oito pessoas tirarem a fila.
+
+TELA 6 - DOZE DE JUNHO DE DOIS MIL E DEZESSETE: ATENCAO E TUDO DE QUE VOCE PRECISA
+
+Contar o artigo: em doze de junho de dois mil e dezessete, oito pesquisadores do Google
+publicam "Attention is All You Need", atencao e tudo de que voce precisa. Dizer os oito
+nomes, devagar, em uma passada: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob
+Uszkoreit, Llion Jones, Aidan Gomez, Lukasz Kaiser e Illia Polosukhin. Dizer o que e
+publico sobre eles, em uma frase: todos vivos em dois mil e vinte e seis, o mais novo era
+um estagiario de vinte anos, e ate dois mil e vinte e tres todos tinham saido do Google.
+SEM ficha pra nenhum dos oito.
+
+Explicar a ideia em uma frase: tirar a fila. Nada de LSTM, nada de ler uma palavra por
+passo. So atencao: todas as palavras da frase entram ao mesmo tempo, cada uma olha pra
+todas as outras, em varias camadas, e pronto. Deram o nome de Transformer.
+
+Dizer por que isso importa pro hardware, que e a tese do episodio: se todas as palavras
+sao processadas ao mesmo tempo, o trabalho inteiro vira multiplicar tabelas grandes de
+numeros, e isso e exatamente o que a placa de video e a TPU fazem. O software foi
+desenhado com a forma do hardware.
+
+Dizer os numeros: o modelo base tem sessenta e cinco milhoes de botoes e treina em doze
+horas numa maquina com oito placas P100 da NVIDIA; o grande, em tres dias e meio. Traduz
+melhor que tudo que existia, com uma fracao do tempo de treino.
+
+Dizer a licao de hardware e software, com todas as letras: de mil novecentos e noventa e
+sete a dois mil e dezesseis o software tentava lembrar melhor dentro da fila; em dois mil
+e dezessete ele desistiu da fila pra caber na peca.
+
+Fechar pedindo o Proximo pra ver como uma palavra vira numero.
+
+TELA 7 - COMO A PALAVRA VIRA NUMERO, E O CARIMBO DE POSICAO
+
+Explicar a entrada: cada palavra vira uma lista de algumas centenas de numeros, e esses
+numeros tambem sao botoes girados no treino, de modo que palavras parecidas ficam com
+listas parecidas. "Gato" e "cachorro" ficam perto; "gato" e "imposto" ficam longe.
+
+Explicar o problema que tirar a fila cria: se todas as palavras entram ao mesmo tempo, a
+rede nao sabe mais qual veio primeiro. "O cachorro mordeu o homem" e "o homem mordeu o
+cachorro" virariam a mesma coisa.
+
+Explicar a solucao, com a analogia: cada palavra recebe um carimbo de posicao, uma lista
+de numeros que so depende do lugar dela na frase (primeira, segunda, terceira), somada a
+lista da palavra. E o crachá com o numero da cadeira na mesa. A ordem volta sem a fila
+voltar.
+
+Dizer a licao de hardware e software: pra caber no hardware paralelo, o software teve que
+reinventar uma coisa que a fila dava de graca, a ordem. Trocou um passo depois do outro
+por um numero somado.
+
+Fechar pedindo o Proximo pra ver a atencao virar multiplicacao.
+
+TELA 8 - A ATENCAO E MULTIPLICACAO DE TABELA
+
+Explicar a atencao por dentro, com tres palavras em portugues: de cada palavra saem tres
+listas de numeros, a pergunta, a etiqueta e o conteudo, cada uma calculada com botoes
+proprios. Pra saber quanto a palavra A deve escutar a palavra B, compara-se a pergunta
+de A com a etiqueta de B: um numero. Faz isso pra todos os pares de palavras de uma vez,
+transforma em pesos que somam um, e cada palavra recebe a soma dos conteudos das outras,
+pesada por esses pesos.
+
+Dizer o que isso e em termos de conta: comparar todas as perguntas com todas as
+etiquetas de uma vez e multiplicar duas tabelas. Somar os conteudos pesados e
+multiplicar outra tabela. A atencao inteira sao tres multiplicacoes de tabela. E o
+Transformer faz oito dessas ao mesmo tempo, oito cabecas, cada uma aprendendo a olhar
+uma coisa diferente (quem e o sujeito, a que se refere o "ele").
+
+Dizer a licao de hardware e software, que fecha a tese: multiplicar tabela e a conta que
+a placa de video faz desde a GeForce 256 e que a TPU faz e so ela. Cada peca do
+Transformer foi escolhida pra ser essa conta. Nada nele precisa esperar o passo anterior.
+
+Fechar pedindo o Proximo pra ver o que se fez com isso no ano seguinte.
+
+TELA 9 - DOIS MIL E DEZOITO: GPT E BERT
+
+Contar o primeiro: em onze de junho de dois mil e dezoito a OpenAI, um laboratorio de
+Sao Francisco, publica o GPT, escrito por Alec Radford com Sutskever entre os autores.
+Pega so a metade do Transformer que escreve, e treina ela numa tarefa so: dada a frase
+ate aqui, qual e a proxima palavra. Cento e dezessete milhoes de botoes, treinados em
+sete mil livros.
+
+FICHA: Alec Radford, nascido em mil novecentos e noventa e tres, tinha vinte e cinco anos;
+vivo em dois mil e vinte e seis.
+
+Contar o segundo: em onze de outubro de dois mil e dezoito o Google publica o BERT, feito
+por uma equipe de engenheiros do Google (dizer so isso; NAO dizer que o autor "nao tem
+nome publico": ele tem, so nao e lido aqui). Pega so a metade que le, e treina ela pra
+adivinhar palavras escondidas no meio da frase. Trezentos e quarenta milhoes de botoes.
+Em meses, todo sistema de busca e de pergunta e resposta passa a usar ele.
+
+Dizer o que os dois tem em comum: a mesma peca de dois mil e dezessete, cortada ao meio,
+treinada em texto cru da internet sem ninguem rotular nada, e depois ajustada pra cada
+uso. O programa e achado, como na AlexNet, mas agora acha-se uma vez e usa-se em tudo.
+
+Dizer a licao de hardware e software: o que decide o tamanho do modelo e quantas placas
+se tem e por quanto tempo. O software virou uma receita, e o ingrediente e hardware.
+
+Fechar pedindo o Proximo pra ver a receita crescer.
+
+TELA 10 - A RECEITA CRESCE
+
+Dizer os numeros em uma passada, devagar: sessenta e cinco milhoes de botoes em dois mil
+e dezessete; cento e dezessete milhoes em dois mil e dezoito; um bilhao e meio em
+fevereiro de dois mil e dezenove; cento e setenta e cinco bilhoes em maio de dois mil e
+vinte. A mesma peca, o mesmo desenho de dois mil e dezessete. O que muda e a quantidade
+de texto e a quantidade de placa.
+
+Dizer o que isso quer dizer pra corrida: a corrida do processador do primeiro episodio
+desta etapa recomeca, em outra escala: agora se compra milhares de placas de uma vez, e a
+NVIDIA, que fazia placa de jogo, vira a empresa mais valiosa da industria.
+
+Dizer, em uma frase, sem drama: ate dois mil e vinte e tres, os oito autores do artigo
+tinham saido do Google, quase todos pra fundar empresas em cima da propria ideia.
+
+Dizer a licao de hardware e software: pela primeira vez na serie, o software e que dita o
+tamanho do hardware que se constroi. A peca e desenhada pra caber o programa, e nao o
+contrario.
+
+Fechar pedindo o Proximo pra olhar a serie inteira de uma vez.
+
+TELA 11 - O ARCO INTEIRO
+
+Fazer, em poucas frases, o caminho da serie desde o comeco, sem nomes novos: comecou com
+uma pedra numa canaleta, o abaco, que guarda um numero porque alguem moveu a pedra.
+Depois engrenagens que carregam o vai-um sozinhas. Depois a eletricidade, que move sem
+peca mecanica. Depois Boole, que mostra que sim-e-nao da conta de qualquer logica, e o
+rele e a valvula que fazem o sim-e-nao virar circuito. Depois Von Neumann, que poe o
+programa na mesma memoria que o dado, e a maquina passa a executar uma lista de
+instrucoes escrita por uma pessoa. Depois o transistor, o chip e o microprocessador, que
+encolhem tudo. Depois o computador em casa, em rede, com sistema operacional. Depois o
+processador correndo ate a parede e a placa de jogo virando maquina de conta. Depois a
+rede que acha o programa em vez de escrever.
+
+Dizer a frase do arco, com todas as letras: a maquina de dois mil e dezoito ainda e
+Boole mais Von Neumann mais um programa. Cada placa de video e feita de portas logicas
+de sim-e-nao, e roda uma lista de instrucoes escrita por uma pessoa. O que mudou e o
+programa que essa lista executa: um programa achado, bilhoes de botoes girados pelo
+erro, que ninguem escreveu e ninguem sabe ler.
+
+Dizer a licao da serie inteira em uma frase de hardware e software: em cada etapa, a peca
+nova deixou o programa fazer uma coisa que antes nao dava, e o programa novo pediu a peca
+seguinte; ninguem planejou o conjunto, e o conjunto e o computador.
+
+Fechar pedindo o Proximo pra fechar a serie. ESTE PEDIDO E OBRIGATORIO: a tela 11 acaba
+aqui. O balanco e a tela 12.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e dezoito, com a peca de dois mil e dezessete cortada
+ao meio e treinada em texto cru, e a receita comecando a crescer.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: Hochreiter e
+Schmidhuber deram memoria a fila. Sutskever, Vinyals e Le traduziram com duas filas e
+acharam o gargalo. Bengio e Cho, com um doutorando, ensinaram a rede a olhar pra todas as
+palavras. Oito pessoas no Google tiraram a fila e desenharam o software com a forma da
+peca. Radford cortou a peca ao meio e mandou adivinhar a proxima palavra. Ninguem
+planejou o conjunto.
+
+Fazer o balanco da etapa inteira em quatro frases: primeiro as pecas correram, ate o
+processador bater na parede do calor. Depois a peca feita pra jogo virou uma maquina de
+fazer a mesma conta em milhoes de numeros. Depois uma ideia guardada desde mil novecentos
+e cinquenta e oito encontrou essa peca barata e o programa passou a ser achado. E por fim
+o software tomou a forma do hardware, e a corrida recomecou em outra escala.
+
+Dizer a ultima frase da serie, curta, sem pergunta e sem promessa: a serie reconstruiu o
+computador do zero, da pedra do abaco ao botao da rede, e a maquina no fim ainda e a
+mesma maquina; o que mudou de vez foi quem escreve o programa.
+
+Fechar sem pedir Proximo: esta e a ultima tela, e a ultima da serie. Depois da frase
+acima NAO vem mais nada: nenhuma pergunta, nenhum "ate o proximo", nenhum "proximo
+mergulho". A primeira gravacao inventou uma pergunta sobre "hardware projetado por
+programas achados" e fechou com "ate o proximo mergulho": NAO REPETIR.

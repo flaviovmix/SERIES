@@ -1,0 +1,7 @@
+Titulo: Como a placa de vídeo virou matemática
+Notebook: 09-02-A placa de vídeo
+
+Descricao:
+Este roteiro detalha a evolução da placa de vídeo entre 1985 e 2007, revelando como um componente criado para jogos se transformou em uma ferramenta essencial para o processamento moderno. A narrativa acompanha figuras centrais de empresas como NVIDIA e ATI, demonstrando que o sucesso do hardware dependeu diretamente de sua capacidade de falar as linguagens de software dominantes. O texto descreve a transição das placas básicas para as GPUs programáveis, que utilizam centenas de pequenos processadores trabalhando em paralelo para realizar cálculos complexos. Com o surgimento do CUDA, essas peças deixaram de apenas pintar imagens para resolver problemas científicos e financeiros de larga escala. O material enfatiza que a flexibilidade do software mudou o destino do hardware, preparando o terreno para novas fronteiras computacionais.
+
+Link: https://notebook.google.com/notebook/8adae88c-7d4a-47ed-ba85-1469c235aff4

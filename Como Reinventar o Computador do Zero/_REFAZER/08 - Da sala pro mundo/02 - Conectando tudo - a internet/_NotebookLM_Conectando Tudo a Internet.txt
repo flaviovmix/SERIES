@@ -1,0 +1,473 @@
+Inicie dizendo: Conectando Tudo, a Internet
+---------------
+
+Este e o segundo e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior levou o computador pra
+dentro de casa, seguindo as pessoas que construiram cada peca, e terminou com uma
+pergunta no ar, que este episodio inteiro responde: se ja existem milhoes de maquinas
+iguais espalhadas pelo mundo, o que falta pra elas conversarem entre si?
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Este episodio segue as PESSOAS que construiram a
+rede, EM ORDEM CRONOLOGICA, e usa cada passo pra mostrar uma coisa so: como o hardware
+e o software melhoram um empurrando o outro. Quando aparecer preco, comercio ou
+"venceu", e pra dizer o que aquilo permitiu construir, nao como assunto em si.
+
+ESTE EPISODIO COBRE DE 1962 A 1995, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. ATENCAO: o episodio
+anterior parou em 1990 e este comeca em 1962, entao a serie esta VOLTANDO NO TEMPO de
+proposito. Avisar isso na tela 1, em uma frase, e explicar o motivo: a rede foi
+construida em silencio, dentro de universidade e laboratorio, ao mesmo tempo em que o
+computador de mesa era inventado la fora. As duas historias so se encontram na tela 10.
+
+COM PESSOAS E COM NOME. Como no episodio anterior, as pessoas entram pelo nome. Dizer
+quem fez, onde estava e por que fez. Sem fofoca e sem julgamento.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a
+ficha dela, curta e sempre no mesmo formato: nome, ano de nascimento, quantos anos tinha
+naquela cena, e se esta viva hoje ou em que ano morreu. Exemplo do formato: "Ray
+Tomlinson, nascido em mil novecentos e quarenta e um, tinha trinta anos; morreu em dois
+mil e dezesseis." Onde o roteiro escrever FICHA, ler a ficha. A FICHA E UMA FRASE SO,
+dita e seguida em frente: sem comentario, sem contar mais nada da vida da pessoa. NAO
+pular ficha de ninguem e NAO inventar dado que nao esteja na ficha.
+
+REGRA DURA DAS TELAS. Este episodio tem 11 telas. O audio TEM que pedir "aperte o
+Proximo" exatamente 10 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa,
+"aperte o Proximo", sem variacao: NAO dizer "vamos para o proximo", "siga adiante" nem
+nenhuma outra forma. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o
+assunto da tela seguinte e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina
+aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica
+olhando a tela errada pelo resto do episodio.
+
+AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO.
+Dizer so "quando ouvir o pedido". A frase so pode ser dita nos dez pedidos de verdade,
+porque a pagina corta o audio em cada vez que ela aparece.
+
+ATENCAO ESPECIAL COM AS TELAS 2 e 3. A tela 2 e o problema (a rede telefonica reserva
+caminho, e Licklider decidindo construir uma rede). A tela 3 e a solucao (o pacote, com
+Kleinrock, Baran, Davies e Larry Roberts). Duas telas, um pedido de Proximo entre elas.
+NAO explicar o pacote na tela 2.
+
+ATENCAO ESPECIAL COM AS TELAS 6 e 7. A tela 6 e o envelope comum (Cerf e Kahn, 1974).
+A tela 7 e o dia em que todo mundo trocou de lingua (Postel, 1983). Duas telas, dois
+pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 9 e 10. A tela 9 e Berners-Lee e a web, e TERMINA no
+dominio publico de 1993. A tela 10 e OUTRA COISA: Andreessen e o Mosaic. NAO falar de
+Mosaic nem de imagem na pagina na tela 9.
+
+ATENCAO ESPECIAL COM AS TELAS 10 e 11. A tela 10 termina em 1995, com a rede abrindo
+pro comercio. A tela 11 e o fecho: balanco, licao e a pergunta que abre a etapa final.
+Um pedido de Proximo entre as duas.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR. Falar "mil novecentos e sessenta e dois", "mil
+novecentos e sessenta e nove", "mil novecentos e setenta e um", "mil novecentos e
+setenta e quatro", "mil novecentos e oitenta e tres", "mil novecentos e oitenta e nove",
+"mil novecentos e noventa e um", "mil novecentos e noventa e tres", "mil novecentos e
+noventa e cinco". Ano dito rapido em digito sai embolado.
+
+NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar, e soletrar quando
+indicado, porque em portugues eles embolam:
+
+- ARPA: soletrar, "a, erre, pe, a". ARPANET: fala-se "arpa-nete".
+- Licklider: fala-se "lí-cli-der". RAND: fala-se "rând". MIT: soletrar, "eme, i, te".
+- Kleinrock: fala-se "cláin-roc". Baran: fala-se "bá-ran". Davies: fala-se "dêi-vis".
+- Larry Roberts: fala-se "ró-berts". AVISAR que NAO e o Ed Roberts do Altair, do
+  episodio anterior: e outro Roberts.
+- BBN: soletrar, "be, be, ene". IMP: soletrar, "i, eme, pe". UCLA: soletrar, "u, ce,
+  ele, a". SRI: soletrar, "esse, erre, i".
+- Charley Kline: fala-se "cláin". LOGIN: soletrar as letras quando contar a primeira
+  mensagem, "ele, o, ge, i, ene".
+- Tomlinson: fala-se "tôm-lin-son".
+- Vint Cerf: fala-se "sérf". Bob Kahn: fala-se "cân". TCP/IP: soletrar sempre, "te, ce,
+  pe, barra, i, pe".
+- Jon Postel: fala-se "pos-tél". Mockapetris: fala-se "mó-ca-pé-tris". DNS: soletrar,
+  "de, ene, esse".
+- Berners-Lee: fala-se "bér-ners-lí". CERN: soletrar, "ce, e, erre, ene", e dizer por
+  extenso na primeira vez, "o laboratorio europeu de fisica de particulas". (Na
+  gravacao anterior a sigla saiu como "CRN".) NeXT: fala-se "néxt".
+- Andreessen: fala-se "ân-dri-sen". NCSA: soletrar, "ene, ce, esse, a". Mosaic:
+  fala-se "mo-zéic". Illinois: fala-se "i-li-nói".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "conforme o documento", "a analogia autorizada" nem nada parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o
+apresentador dizendo so o titulo, "Conectando Tudo, a Internet". As palavras "inicie
+dizendo" NUNCA sao ditas em voz alta.
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA. NAO abrir com "imagina a seguinte cena" nem
+com comparacao que nao esteja na secao ANALOGIAS.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. NAO convidar ninguem a girar, abrir ou
+mexer em peca nenhuma na capa da pagina. As telas sao fotos.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+ESTE EPISODIO FECHA A ETAPA. Na ultima tela, alem de fechar o episodio, fazer o balanco
+curto da etapa inteira e deixar no ar a pergunta que abre a etapa final da serie. NAO
+explicar aprendizado de maquina, rede neural nem inteligencia artificial.
+
+DURACAO: cerca de 18 minutos. Nao esticar, nao repetir, nao comentar cada fato duas
+vezes.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "conectou o mundo", "o resto e historia".
+
+---------------
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A ligacao telefonica contra a mudanca em caixas: na ligacao, a companhia reserva um
+  caminho inteiro so pra voces dois e ele fica reservado ate desligar, mesmo no
+  silencio. Na mudanca, voce pica tudo em caixas, escreve o endereco em cada uma, e
+  elas podem ir em caminhoes diferentes, por ruas diferentes, e chegar fora de ordem.
+  Quem recebe remonta.
+- O conteiner: navio, trem e caminhao sao diferentes por dentro e continuam
+  diferentes. O que se padronizou foi a CAIXA, do mesmo tamanho e do mesmo encaixe em
+  todos. Ninguem precisou trocar de veiculo.
+- A lista telefonica que nao mora em lugar nenhum: pra achar um numero voce pergunta
+  pra quem esta perto, e se ele nao souber ele sabe pra quem perguntar.
+
+Fora essas tres, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - MILHOES DE ILHAS
+
+Retomar em duas frases onde a serie parou: o computador virou objeto de casa, e ja
+existiam milhoes deles, quase todos iguais por dentro.
+
+Dizer o incomodo que ficou: cada um era uma ilha. Passar um arquivo pra outra maquina
+era gravar num disquete e atravessar a sala com ele na mao.
+
+Avisar que a serie vai voltar no tempo de proposito, ate mil novecentos e sessenta e
+dois, e dizer o motivo em uma frase: a rede foi construida em silencio, dentro de
+universidade e laboratorio, ao mesmo tempo em que o computador de mesa era inventado la
+fora. As duas historias so se encontram no fim deste episodio.
+
+Dizer, com todas as letras, qual e o problema de verdade: ligar dois computadores por um
+fio ja se fazia. O dificil e fazer redes DIFERENTES, de donos diferentes, com maquinas
+diferentes e regras diferentes, virarem uma rede so, sem ninguem no comando. A internet
+nao e uma rede. Ela e um acordo entre redes.
+
+Dizer o fio do episodio: como no anterior, ele segue as pessoas, em ordem, e em cada
+passo mostra o hardware e o software empurrando um ao outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de mil novecentos e sessenta e dois
+a mil novecentos e noventa e cinco.
+
+Avisar que a explicacao acompanha uma pagina de animacao com 11 telas, que quem esta so
+ouvindo acompanha normalmente, e que quem esta com a pagina aberta vira a tela quando
+ouvir o pedido (sem dizer a frase do pedido aqui).
+
+Fechar pedindo o Proximo pra ver por que o telefone, que ja chegava em todo canto, nao
+resolvia, e quem decidiu construir outra coisa.
+
+TELA 2 - MIL NOVECENTOS E SESSENTA E DOIS: POR QUE O TELEFONE NAO SERVIA
+
+Explicar como a rede telefonica funciona por dentro: quando duas pessoas se ligam, a
+companhia monta um caminho fisico inteiro entre as duas pontas e reserva aquele caminho
+pra elas, inclusive nos momentos de silencio.
+
+Dizer por que isso e otimo pra voz e ruim pra computador: gente conversando fala quase
+o tempo todo. Computador manda uma rajada curta e fica calado um tempao. Alugar linha
+dedicada pra isso e pagar o dia inteiro por alguns segundos de uso. E caminho reservado
+tem um trajeto so: cortou no meio, caiu, e nao ha outro jeito de a mensagem chegar.
+
+Contar quem decidiu que precisava de outra coisa: J. C. R. Licklider, um psicologo que
+em mil novecentos e sessenta e dois foi dirigir o setor de computacao da ARPA, a agencia
+de pesquisa do governo americano. Ele escreveu sobre uma "rede intergalactica" de
+computadores, meio de brincadeira, e pos o dinheiro da agencia em cima disso.
+
+FICHA: J. C. R. Licklider, nascido em mil novecentos e quinze, tinha quarenta e sete
+anos; morreu em mil novecentos e noventa.
+
+Contar a cena que virou a encomenda: o sucessor dele na ARPA tinha na mesa tres
+terminais, um pra cada computador que a agencia pagava, cada um com a sua senha e o seu
+jeito. Pra falar com outro computador, mudava de cadeira. Ele queria um terminal so.
+
+Dizer a licao de hardware e software desta tela: o hardware que existia, a central
+telefonica, foi feito pra voz. Ele obriga a inventar um jeito novo de mandar dado. A
+peca que falta nao e um fio: e uma ideia.
+
+Fechar pedindo o Proximo pra ver a ideia, e as quatro pessoas que chegaram nela.
+
+TELA 3 - MIL NOVECENTOS E SESSENTA E UM A SESSENTA E SETE: PICAR A MENSAGEM
+
+Explicar a ideia sem jargao antes: em vez de reservar um caminho, a maquina pica a
+mensagem em pedacos pequenos e escreve no rosto de cada pedaco o endereco de quem vai
+receber e o numero dele na fila. Cada pedaco viaja sozinho. Cada ponto da rede olha o
+endereco e passa pro vizinho mais perto do destino. Pedacos da mesma mensagem podem ir
+por caminhos diferentes e chegar fora de ordem. A maquina do outro lado remonta.
+
+Usar a analogia da mudanca em caixas, inteira.
+
+Contar as pessoas, na ordem, cada uma com uma frase: Leonard Kleinrock, no MIT, faz em
+mil novecentos e sessenta e um a teoria de como mensagens picadas esperam em fila e
+quanto tempo levam.
+
+FICHA: Leonard Kleinrock, nascido em mil novecentos e trinta e quatro, tinha vinte e
+sete anos; vivo em dois mil e vinte e seis.
+
+Paul Baran, na RAND, em mil novecentos e sessenta e quatro, desenha uma rede sem
+centro, que continua funcionando mesmo com pedacos destruidos, porque cada bloco de
+mensagem acha o caminho sozinho.
+
+FICHA: Paul Baran, nascido em mil novecentos e vinte e seis, tinha trinta e oito anos;
+morreu em dois mil e onze.
+
+Donald Davies, na Inglaterra, em mil novecentos e sessenta e cinco, chega na mesma
+ideia sem conhecer Baran, e da o nome que ficou: pacote.
+
+FICHA: Donald Davies, nascido em mil novecentos e vinte e quatro, tinha quarenta e um
+anos; morreu em dois mil.
+
+Larry Roberts, na ARPA, em mil novecentos e sessenta e sete, desenha a rede da agencia
+em cima do pacote. Avisar que Larry Roberts NAO e o Ed Roberts do Altair, do episodio
+anterior.
+
+FICHA: Larry Roberts, nascido em mil novecentos e trinta e sete, tinha trinta anos;
+morreu em dois mil e dezoito.
+
+Dizer as tres consequencias do pacote, uma de cada vez: ninguem reserva nada; se um
+caminho cai, os pedacos pegam outro; e nao existe um chefe, porque cada ponto so precisa
+saber pra que vizinho empurrar. A terceira e a que sustenta o resto do episodio.
+
+Dizer a licao de hardware e software: o pacote e uma ideia de software, e ela exige um
+hardware que nao existia: uma maquina so pra picar, endereçar e empurrar.
+
+Fechar pedindo o Proximo pra ver essa maquina e a primeira mensagem.
+
+TELA 4 - VINTE E NOVE DE OUTUBRO DE MIL NOVECENTOS E SESSENTA E NOVE
+
+Contar o hardware primeiro: a ARPA encomenda a uma empresa de Boston, a BBN, a caixa
+que poe um computador na rede, chamada IMP. E um minicomputador reforcado, do tamanho
+de uma geladeira, que nao faz mais nada alem de picar, endereçar, empurrar e remontar
+pacote. Cada universidade ganha um, ligado ao computador dela.
+
+Contar a primeira mensagem, com a pessoa: em vinte e nove de outubro de mil novecentos e
+sessenta e nove, na UCLA, Charley Kline, estudante de Kleinrock, tenta entrar na maquina
+do SRI, a centenas de quilometros, escrevendo LOGIN. A maquina do outro lado cai na
+segunda letra. A primeira mensagem entre dois computadores nessa rede foi L, O. Uma hora
+depois funcionou.
+
+FICHA: Charley Kline, nascido em mil novecentos e quarenta e oito, tinha vinte e um anos;
+vivo em dois mil e vinte e seis.
+
+Dizer o tamanho da rede no fim daquele ano: quatro maquinas. E o motivo oficial dela
+existir: computador era caro demais pra cada universidade ter o seu, entao a rede servia
+pra usar de longe a maquina que estava em outro lugar.
+
+Dizer a licao de hardware e software: o IMP e um hardware construido so pra rodar uma
+ideia de software. Sem ele, o pacote ficava no papel.
+
+Fechar pedindo o Proximo pra ver o que as pessoas de fato fizeram com a rede.
+
+TELA 5 - MIL NOVECENTOS E SETENTA E UM: O USO QUE NINGUEM ENCOMENDOU
+
+Contar a pessoa e o feito: Ray Tomlinson, engenheiro da BBN, em mil novecentos e setenta
+e um, junta dois programas pequenos, um que deixava recado dentro de uma maquina e outro
+que copiava arquivo entre maquinas, e cria o correio eletronico.
+
+FICHA: Ray Tomlinson, nascido em mil novecentos e quarenta e um, tinha trinta anos;
+morreu em dois mil e dezesseis.
+
+Dizer o problema pratico e a escolha: precisava de um jeito de dizer, num endereco so,
+QUEM e em QUAL maquina. Ele escolheu a arroba, porque quase ninguem usava e porque em
+ingles ela ja significava "em".
+
+Dizer o tamanho do que aconteceu: em poucos anos, mandar recado pra pessoa virou o uso
+principal da rede, na frente do motivo pelo qual ela foi construida.
+
+Dizer a licao de hardware e software: o hardware foi feito pra maquina falar com
+maquina. O software que pegou foi gente falando com gente. Quem constroi nao decide pra
+que serve.
+
+Fechar pedindo o Proximo pra ver o problema que impedia essa rede de virar A rede.
+
+TELA 6 - MIL NOVECENTOS E SETENTA E QUATRO: REDES QUE NAO SE ENTENDEM
+
+Descrever o cenario: a ARPANET deu certo, e por isso apareceram outras. Uma rede por
+radio no Havai, ligando ilhas. Uma rede por satelite. Redes de universidade, de empresa,
+de outro pais. Cada uma com o seu jeito de picar, o seu endereco, o seu tamanho de
+pacote. Dentro de cada rede tudo funciona; entre duas, nada.
+
+Dizer as duas saidas e por que a primeira nao serve: obrigar todo mundo a virar a mesma
+rede exige um chefe que nao existe. A segunda: nao mexer em rede nenhuma e definir um
+ENVELOPE comum que todas concordem em carregar.
+
+Contar as pessoas: Vint Cerf, que tinha sido aluno na UCLA na epoca do IMP, e Bob Kahn,
+que tinha ajudado a construir o IMP na BBN e agora estava na ARPA, publicam em mil
+novecentos e setenta e quatro o desenho do envelope. Ele leva o nome de TCP/IP.
+
+FICHA: Vint Cerf, nascido em mil novecentos e quarenta e tres, tinha trinta e um anos;
+vivo em dois mil e vinte e seis. Bob Kahn, nascido em mil novecentos e trinta e oito,
+tinha trinta e seis anos; vivo em dois mil e vinte e seis.
+
+Usar a analogia do conteiner, inteira.
+
+Dizer o que cada metade faz, em uma frase cada: o IP cuida do endereco do lado de fora e
+empurra o pacote de rede em rede; o TCP fica nas pontas conferindo se chegou tudo,
+pedindo de novo o que sumiu e remontando na ordem.
+
+Dizer a licao de hardware e software: o envelope e um software que deixa cada hardware
+ser o que e. Ninguem jogou fora equipamento.
+
+Fechar pedindo o Proximo pra ver o dia em que todo mundo trocou de lingua junto.
+
+TELA 7 - PRIMEIRO DE JANEIRO DE MIL NOVECENTOS E OITENTA E TRES
+
+Contar a pessoa: Jon Postel, que cuidava dos numeros e dos documentos da rede havia
+anos, escreve o plano da transicao: em primeiro de janeiro de mil novecentos e oitenta e
+tres, todas as maquinas da ARPANET param de falar a lingua antiga e passam pra nova, no
+mesmo dia. Quem nao se preparou ficou de fora ate se preparar.
+
+FICHA: Jon Postel, nascido em mil novecentos e quarenta e tres, tinha trinta e nove
+anos; morreu em mil novecentos e noventa e oito.
+
+Dizer por que teve que ser assim: nao da pra metade falar uma lingua e a outra metade
+outra. Ou muda todo mundo junto, ou nao muda ninguem.
+
+Dizer a frase que a serie precisa registrar: essa e a data de nascimento da internet
+como a gente conhece. Nao porque apareceu um cabo novo, e sim porque apareceu um acordo.
+Qualquer rede que carregasse o envelope estava dentro, sem pedir licenca a ninguem.
+
+Dizer a licao de hardware e software: o hardware ficou o mesmo. Trocou o software, todo
+de uma vez. E o padrao aberto do episodio anterior, do tamanho do mundo.
+
+Fechar pedindo o Proximo pra resolver um problema chato que apareceu junto.
+
+TELA 8 - MIL NOVECENTOS E OITENTA E TRES: O NOME NO LUGAR DO NUMERO
+
+Explicar o problema: no envelope, cada maquina e um numero. Numero serve pra maquina e
+nao serve pra gente. No comeco existia um arquivo unico, com todos os nomes e numeros,
+atualizado a mao, que cada maquina baixava de tempos em tempos. Com dezenas de milhares
+de maquinas, impossivel. E e exatamente a peca central que essa rede evitou a vida
+inteira.
+
+Contar a pessoa: Paul Mockapetris, trabalhando com Postel, cria em mil novecentos e
+oitenta e tres o DNS: em vez de uma lista, um sistema de perguntar. O nome e lido da
+direita pra esquerda, e cada pedaco tem alguem responsavel por saber o proximo.
+
+FICHA: Paul Mockapetris, nascido em mil novecentos e quarenta e oito, tinha trinta e
+cinco anos; vivo em dois mil e vinte e seis.
+
+Usar a analogia da lista telefonica que nao mora em lugar nenhum.
+
+Dizer o que isso significa na pratica: da pra criar nome novo sem avisar orgao central,
+porque quem manda no seu pedaco e voce.
+
+Dizer a licao de hardware e software: um software distribuido substituiu um arquivo
+central. De novo, sem chefe.
+
+Fechar pedindo o Proximo pra ver o que ainda faltava pra rede sair da universidade.
+
+TELA 9 - MIL NOVECENTOS E OITENTA E NOVE: BERNERS-LEE E A WEB
+
+Dizer onde a coisa estava no fim dos anos oitenta: a rede funcionava e crescia, e era de
+universidade, governo e empresa grande. Pra usar, a pessoa tinha que saber o nome exato
+da maquina, do arquivo e do comando. Faltava motivo e faltava cara.
+
+Contar a pessoa: Tim Berners-Lee, fisico ingles que trabalhava no CERN, o laboratorio
+europeu de fisica de particulas, tinha um problema chato: milhares de pesquisadores de
+muitos paises, cada grupo guardando documento do seu jeito, e ninguem achando nada. Em
+mil novecentos e oitenta e nove ele escreve uma proposta.
+
+FICHA: Tim Berners-Lee, nascido em mil novecentos e cinquenta e cinco, tinha trinta e
+quatro anos; vivo em dois mil e vinte e seis.
+
+Contar a proposta em tres pecas, uma de cada vez: um ENDERECO unico pra cada documento;
+uma regra simples de pedir e entregar, em que uma maquina pede o documento daquele
+endereco e a outra devolve; e um jeito de escrever texto em que uma palavra carrega o
+endereco de outro documento, e clicar nela leva pra la. Os documentos deixam de ser uma
+pilha e viram uma teia.
+
+Contar o hardware: ele escreve o primeiro servidor e o primeiro navegador num NeXT, o
+computador da empresa que Jobs fundou depois de sair da Apple, e cola um bilhete na
+maquina pedindo pra ninguem desligar.
+
+Dizer as duas datas: em agosto de mil novecentos e noventa e um a coisa vai pro ar pra
+quem quisesse usar, fora do laboratorio. E em trinta de abril de mil novecentos e
+noventa e tres o laboratorio abre mao de qualquer direito e poe em dominio publico, de
+graca. Se tivesse cobrado, a historia seria outra.
+
+Dizer a licao de hardware e software: a web e software puro, tres regras, escrito numa
+maquina que existia. Nao precisou de peca nova.
+
+Fechar pedindo o Proximo pra ver a cara chegar, num programa feito por um estudante.
+
+TELA 10 - MIL NOVECENTOS E NOVENTA E TRES: ANDREESSEN E O MOSAIC
+
+Contar o que faltava: os primeiros programas de ler a teia mostravam so texto e rodavam
+em maquina de universidade.
+
+Contar a pessoa: Marc Andreessen, estudante de vinte e um anos num centro de
+supercomputacao da universidade de Illinois, o NCSA, com um colega programador, faz em
+mil novecentos e noventa e tres o Mosaic. Ele mostra imagem na mesma pagina do texto.
+Roda nas maquinas comuns, as de casa, as do padrao do episodio anterior. E se usa
+apontando e clicando.
+
+FICHA: Marc Andreessen, nascido em mil novecentos e setenta e um, tinha vinte e um anos;
+vivo em dois mil e vinte e seis.
+
+Dizer a frase que amarra os dois episodios: e a mesma virada da tela do Macintosh, agora
+na rede. O que da pra fazer parou de ser uma coisa que voce tem que saber de cor e virou
+uma coisa que esta a vista.
+
+Dizer o que vem em seguida, em duas frases: o navegador e baixado aos milhares por mes, a
+teia sai do circulo academico, e em mil novecentos e noventa e cinco a espinha da rede
+deixa de ser sustentada pelo governo americano e a rede abre pro comercio.
+
+Dizer a licao de hardware e software: e aqui que as duas historias se encontram. O
+software da rede rodando no hardware de casa. Um episodio construiu a maquina; o outro,
+a rede; o Mosaic poe um dentro do outro.
+
+Fechar pedindo o Proximo pra dizer onde isto para. ESTE PEDIDO E OBRIGATORIO: a tela 10
+acaba aqui. O balanco e a tela 11.
+
+TELA 11 - ONDE ISTO PARA
+
+Dizer onde o episodio para: mil novecentos e noventa e cinco, com a rede aberta pro
+comercio, com nome no lugar de numero, com um jeito de ver que qualquer pessoa entende.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem: Licklider pagou. Kleinrock,
+Baran e Davies pensaram o pacote. Larry Roberts desenhou a rede. Kline mandou o L e o O.
+Tomlinson inventou o uso que ninguem pediu. Cerf e Kahn fizeram o envelope. Postel
+trocou a lingua de todo mundo num dia. Mockapetris pos o nome no lugar do numero.
+Berners-Lee escreveu a teia e deu de graca. Andreessen pos imagem e levou pro PC de
+casa. Ninguem planejou o conjunto.
+
+Dizer a licao da etapa em uma frase, que vale pros dois episodios: as duas viradas foram
+ganhas por quem exigiu menos, e nao por quem fez melhor. O padrao aberto venceu o
+projeto fechado, e o acordo entre redes venceu a rede perfeita.
+
+Dizer a licao de hardware e software da etapa: a rede e quase toda software, ideias
+escritas em cima de hardware que ja existia. O unico hardware novo foi o IMP. O resto
+foi acordo.
+
+Dizer o que muda pra serie, que e o que abre a etapa final: agora existe maquina em todo
+lugar, todas ligadas, e todas despejando na rede o que fazem. Sobra uma montanha de dado
+que nenhuma pessoa consegue ler na mao. E escrever a regra passo a passo, que e como a
+serie mandou na maquina desde o cartao furado, comeca a nao dar conta: ninguem escreve a
+mao a regra que reconhece um rosto numa foto ou traduz uma frase.
+
+Deixar a pergunta no ar, sem responder: e se, em vez de a gente escrever a regra pra
+maquina seguir, a gente deixasse a maquina achar a regra sozinha, olhando os dados?
+
+Fechar sem pedir Proximo: esta e a ultima tela.

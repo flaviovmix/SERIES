@@ -1,0 +1,7 @@
+Titulo: A evolução técnica do chip ao PC
+Notebook: 08-01-O computador chega em casa
+
+Descricao:
+O conteúdo descreve o oitavo episódio da série Como Reinventar o Computador do Zero, focado na transição das máquinas para o ambiente doméstico entre 1973 e 1990. Os textos detalham a evolução técnica através da colaboração mútua entre hardware e software, onde o avanço de um inevitavelmente impulsiona o desenvolvimento do outro. A narrativa destaca figuras centrais como Steve Jobs, Bill Gates e Steve Wozniak, conectando inovações da Xerox e da IBM ao surgimento de ícones como o Apple II, o IBM PC e o sistema Windows. O roteiro enfatiza que o computador pessoal não foi fruto de um planejamento único, mas sim de uma sucessão de soluções criativas de diversos entusiastas e engenheiros. Ao final, as fontes preparam o terreno para a próxima etapa da história, questionando como essas máquinas isoladas passariam a se comunicar em rede.
+
+Link: https://notebook.google.com/notebook/f6c5558f-21d4-4a3c-8b4b-e065d6b00dee

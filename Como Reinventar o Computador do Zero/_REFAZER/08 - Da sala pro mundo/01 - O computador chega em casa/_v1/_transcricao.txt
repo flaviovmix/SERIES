@@ -1,0 +1,305 @@
+# Transcricao automatica (faster-whisper small) - 12.8 min
+# Fonte: Como o computador entrou em casa.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O computador chega em casa.
+[00:01] É sobre isso o nosso papo de hoje.
+[00:03] Esse episódio cobre de 1975 a 1990.
+[00:07] Bom, retomando de onde a gente parou no nosso último mergulho,
+[00:11] a coisa toda mudou de figura, né?
+[00:13] Mudou muito.
+[00:14] A gente viu que a parte que pensa encolhiu de um jeito absurdo.
+[00:18] Virou um componente de catálogo bem barato.
+[00:21] O computador inteiro já acabia numa placa bem pequena.
+[00:25] Só que tinha um problema.
+[00:26] Qual?
+[00:27] Essa máquina ainda estava totalmente presa em laboratórios e salas de empresas.
+[00:31] Pois é, e até aqui a lógica da indústria era bem focada no físico.
+[00:35] Se a máquina travava ou ficava lenta, a solução era sempre inventar uma peça nova.
+[00:40] Exato.
+[00:41] Mas agora a história é outra.
+[00:43] O hardware, a peça em si, já estava pronta desde 1971.
+[00:47] Então o que estava faltando para essa máquina aí, para a casa das pessoas?
+[00:50] Faltavam quatro coisas.
+[00:52] E detalhe, nenhuma delas era um componente físico.
+[00:55] Sério?
+[00:56] Nada de solda ou chip novo?
+[00:59] Nada disso.
+[01:00] Faltavam um produto, faltavam um motivo, faltavam um padrão e uma cara.
+[01:05] Tá.
+[01:06] Isso parece um caminho bem interessante para a gente explorar.
+[01:09] Só um aviso antes da gente começar.
+[01:11] Essa nossa conversa acompanha uma página de animação com 11 telas.
+[01:15] Isso.
+[01:16] Mas quem está solvendo no fone de ouvido, caminhando, pode acompanhar normalmente, tá?
+[01:19] Com certeza.
+[01:20] E quem tiver com a página aberta na frente do monitor é só virar a tela quando
+[01:24] ouvir o pedido.
+[01:25] Então, para a gente ver qual foi o produto, aperte o próximo.
+[01:28] Bom, a gente volta para janeiro de 1975.
+[01:32] É quando o computador finalmente chega pelo correio.
+[01:35] Pelo correio?
+[01:36] É, era o Altair 8800.
+[01:39] Uma máquina feita por uma empresa chamada MIT, esse.
+[01:42] E olha os preços.
+[01:43] Manda.
+[01:44] Custava 439 dólares na versão em kit.
+[01:47] E 621 dólares para quem quisesse ele já montado.
+[01:51] Mas peraí, a gente tem que descrever isso direito.
+[01:54] Porque assim, não tinha teclado, né?
+[01:56] Nenhum.
+[01:57] Não tinha tela.
+[01:58] Era, sei lá, uma caixa com interruptores e um monte de luzinhas.
+[02:03] E o pior, se você desligasse da tomada...
+[02:05] Apagava tudo.
+[02:06] Você perdi o trabalho inteiro.
+[02:08] Nossa.
+[02:09] Olha, pra mim isso soa muito como encomendar um carro e receber em casa um monte de caixas
+[02:14] de papelão.
+[02:15] Tudo desmontado.
+[02:16] Com um manual de mecânica do lado.
+[02:18] Pois é.
+[02:19] É o tipo de coisa perfeita para quem ama ficar na garagem no domingo montando a
+[02:23] mecânica com a mão cheia de graxa.
+[02:25] E realmente provava que tinha muita gente querendo ter a máquina.
+[02:29] Eles venderam milhares de kits.
+[02:31] Sim, mas não provava que a máquina servisse para algo útil no dia a dia.
+[02:35] Nem um pouco.
+[02:36] E aí que vem o detalhe mais importante.
+[02:39] A primeira coisa que vendeu muito para essa caixa não foi um acessório físico.
+[02:43] Foi o quê, então?
+[02:44] Foi um programa, um interpretador de Basic.
+[02:48] E quem fez isso foi uma empresa bem pequena de software que a gente vai ver reapparecer
+[02:51] depois.
+[02:52] É muito interessante guardar essa informação.
+[02:54] Então o software começou a das caras, bom, aperte o próximo.
+[02:57] Aí a gente avança um pouquinho para 1977.
+[03:00] É aqui que chegam três máquinas já prontas para o consumidor.
+[03:04] E quais eram?
+[03:05] O Apple II por 1.298 dólares, o Commodore PET que seria por 795 dólares, e o TRS-80
+[03:15] que era o mais barato por 599 dólares.
+[03:18] Você já viu com o teclado e você podia ligar na televisão da sala.
+[03:23] Voltando para a minha analogia do carro agora, é o carro que você compra na loja, pega a
+[03:27] chave e sai dirigindo.
+[03:29] Exatamente.
+[03:30] A mecânica debaixo do capô, vamos dizer assim, é a mesma do kit.
+[03:34] Mas o tipo de comprador mudou totalmente.
+[03:37] Mudou e tem um fator logístico aí.
+[03:39] Tem a R, esse 80 foi o que vendeu mais rápido.
+[03:42] Por causa do preço?
+[03:43] Também.
+[03:44] Mas principalmente por causa da distribuição.
+[03:46] A radiocheque tinha lojas físicas em praticamente toda a esquina.
+[03:49] Ah, claro.
+[03:50] Chegar na prateleira onde o cliente está importa muito.
+[03:53] Faz toda a diferença.
+[03:54] Só que pensa bem, a pessoa comprava, chegava em casa, ligava a tela e via só um cursor
+[04:00] piscando.
+[04:01] E ficava paralisada, porque não sabia o que fazer com aquilo.
+[04:03] Exato.
+[04:04] Faltava algo.
+[04:05] Faltava o motivo.
+[04:06] Então aperte o próximo.
+[04:08] Agora a gente entra no ano de 1969.
+[04:11] E eu tenho uma pergunta para você, como que era fazer um orçamento de uma empresa
+[04:14] antes dessa época?
+[04:16] Nossa, era papel, lápis e uma montanha de tempo perdido.
+[04:20] Imagina, o analista montava uma grade enorme de números no papel.
+[04:25] E se um único valor de aluguel mudasse?
+[04:27] Ele tinha que pegar a borracha e apagar quase tudo, né?
+[04:30] Sim.
+[04:31] E refazer conta por conta.
+[04:32] Mas aí, nesse ano, surgiu a solução.
+[04:35] O vize é aí.
+[04:36] Esse Ic, a L, C, o vizicalque.
+[04:39] A primeríssima planilha eletrônica comercial.
+[04:42] Custava 100 dólares.
+[04:43] E a mágica era que, se você mudasse um número no topo da tabela…
+[04:47] A planilha refazia todas as contas matemáticas sozinha.
+[04:50] Na hora.
+[04:51] E isso gerou uma inversão econômica muito maluca nas lojas.
+[04:55] Como assim?
+[04:56] As pessoas entravam na loja, decididas a comprar esse programa de 100 dólares.
+[05:00] Mas, por causa dele, acabavam levando junto a máquina de 1200 dólares.
+[05:05] Que loucura, né?
+[05:06] Foi o primeiro programa que vendeu o computador em si.
+[05:10] Exatamente.
+[05:11] O comprador agora estava buscando o que a máquina fazia, o benefício dela e não a máquina pela
+[05:17] máquina.
+[05:18] O motivo finalmente apareceu.
+[05:20] Apareceu.
+[05:21] Bom, aperte o próximo.
+[05:23] Aí o jogo sobe de nível.
+[05:25] 12 de agosto de 1981, a gigante IBM lança o IBM PC.
+[05:31] E o preço?
+[05:32] Custava 1.565 dólares.
+[05:34] Isso sem o monitor.
+[05:35] E a gente tem que considerar que a IBM não era qualquer marca.
+[05:38] O nome deles trazia um peso, né?
+[05:40] Muito peso.
+[05:41] Dava aquela segurança pro gerente do banco, assinar o cheque e comprar os computadores sem
+[05:46] medo de errar.
+[05:47] Claro.
+[05:48] Ninguém é demitido por comprar IBM.
+[05:50] Mas eles fizeram algo atípico pra montar essa máquina tão rápido não foi?
+[05:54] Muito atípico.
+[05:55] Pra não perder tempo inventando tudo do zero, a IBM montou o computador com peças
+[05:59] de prateleira.
+[06:00] Peças que qualquer um podia comprar?
+[06:03] Isso.
+[06:04] E sabe quem fez o sistema operacional dessa máquina?
+[06:07] Uma empresa pequena de software de 1975?
+[06:11] Eles mesmos.
+[06:12] E pra completar a estratégia, a IBM publicou o esquema técnico completo da máquina, abrindo
+[06:19] como ela era feita.
+[06:20] E isso teve um impacto gigantesco.
+[06:23] Então aperte o próximo.
+[06:25] A consequência desse esquema ser público foi imediata, outras empresas viram aquilo
+[06:30] e pensaram, peraí, a gente consegue fazer igual.
+[06:34] Claro, compraram as mesmas peças de prateleira e seguiram a receita do bolo.
+[06:38] Exato.
+[06:39] Começaram a fabricar máquinas mais baratas, mas que rodavam os mesmos programas.
+[06:44] Foi aí que nasceu uma plataforma de verdade.
+[06:47] Sabe o que se me lembra?
+[06:48] O formato da tomada de energia na parede.
+[06:50] Como assim?
+[06:51] É de domínio público.
+[06:52] O formato da tomada permite que qualquer marca fabrique um liquidificador novo sem
+[06:57] precisar pedir licença pra ninguém.
+[06:59] É uma boa analogia.
+[07:00] O padrão do PC, que a IBM criou, permitiu que mil fabricantes diferentes fizessem máquinas
+[07:06] compatíveis.
+[07:07] Só que tem uma ironia muito grande no mercado aí.
+[07:09] A IBM perdeu o controle.
+[07:11] Totalmente.
+[07:12] O verdadeiro dono do padrão passou a ser quem vendia o sistema operacional.
+[07:16] Ah, faz sentido, porque o sistema tinha que ser o mesmo em todas essas máquinas
+[07:20] clonadas, né?
+[07:21] Pois é.
+[07:22] O valor real saiu do metal e do silício e foi de novo pra dentro do programa.
+[07:26] Tudo convergindo pro software.
+[07:27] Legal.
+[07:28] Aperte o próximo.
+[07:29] Tenho o padrão estabelecido.
+[07:31] Mas a gente precisa falar sobre a experiência de uso lá em 1981.
+[07:35] Que não devia ser nada amigável.
+[07:36] Nenhum pouco.
+[07:38] Você ligava e viu uma tela preta com um cursor piscando.
+[07:41] Era obrigatório decorar comandos de texto exatos.
+[07:43] Tipo, decoraba mesmo.
+[07:45] Decoraba pura.
+[07:46] Se você errasse uma única letra, uma barra que fosse, nada funcionava.
+[07:50] A máquina travava num erro.
+[07:51] Ou seja, a pessoa é que precisava se adaptar à máquina.
+[07:54] Tinha que fazer cursos caros de digitação, apostilas.
+[07:58] Isso mesmo.
+[07:59] Tinha uma barreira de entrada muito alta pra quem só queria usar no dia a dia.
+[08:03] Olha, é como chegar numa farmácia daquelas de balcão antigo, sabe?
+[08:07] Como funcionava.
+[08:08] Os remédios estão todos escondidos num estoque escuro lá no fundo.
+[08:12] Se você não sabe o nome exato do composto químico que você quer...
+[08:15] Você não consegue comprar.
+[08:16] Exato.
+[08:17] Você sai de mãos vazias, porque o farmacêutico não te dá opções.
+[08:20] Faltava um jeito de o computador mostrasse as opções pro usuário.
+[08:23] Uma forma mais visual, né?
+[08:25] Sim.
+[08:26] Então aperte o próximo.
+[08:27] O mais engraçado é que essa ideia visual já estava guardada.
+[08:30] Se a gente voltar no tempo, pra 1973...
+[08:34] Quase 10 anos antes do IBM IPC.
+[08:36] Isso.
+[08:37] Num laboratório de pesquisa da Cherox.
+[08:39] Eles tinham lá uma máquina chamada ALTO.
+[08:41] E como ela era?
+[08:42] Ela já tinha janelas na tela.
+[08:43] Já tinha pequenos ícones desenhados.
+[08:46] E olha só.
+[08:47] Um mouse.
+[08:48] Nossa.
+[08:51] Mas pera aí, se isso tudo já estava inventado, funcionando direitinho em 1973, porque
+[08:56] não dominou o mundo na época.
+[08:58] Preço.
+[08:59] Essa máquina custava dezenas de milhares de dólares pra ser feita.
+[09:02] Ah, inviável pra colocar numa loja de eletrônicos.
+[09:05] Exato.
+[09:06] Era puramente equipamento de pesquisa.
+[09:08] A ideia, o conceito visual, já existia a oito anos.
+[09:12] Só tava na gaveta esperando o custo das peças cair.
+[09:15] Precisava ficar barato o suficiente.
+[09:18] E ficou.
+[09:19] Aperte o próximo.
+[09:20] Aí a gente dá um salto pra frente direto pra 1984.
+[09:25] Nasce o Macintosh.
+[09:27] Por dois mil quatrocentos e noventa e cinco dólares.
+[09:29] Não é.
+[09:30] Isso.
+[09:31] E ele finalmente traz aquela tela com janelas interativas e o mouse pras prateleiras das lojas
+[09:36] comuns.
+[09:37] Agora a gente saiu daquela farmácia de balcão rígida e entrou num supermercado.
+[09:42] Perfeito.
+[09:43] Tudo exposto na prateleira.
+[09:45] Sim, a pessoa bate o olho e reconhece o desenho da lixeira ou o desenho da
+[09:50] pasta de papel.
+[09:52] Ela não precisa mais decorar um código estranho pra deleitar um arquivo.
+[09:55] É só apontar com o mouse e clicar.
+[09:57] Mas tem um ponto técnico crucial aí que conecta com o que a gente falou no início.
+[10:02] Qual?
+[10:03] Desenhar todos esses pontinhos na tela, gerenciar janelas, consome muito mais processador
+[10:09] e muito mais memória do que só mostrar letras verdes numa tela preta.
+[10:13] Ah, claro.
+[10:14] O esforço matemático é maior.
+[10:16] Muito maior.
+[10:17] Essa revolução visual toda só foi possível comercialmente porque a placa do computador
+[10:23] continuou encolhendo e ficando mais barata.
+[10:26] Exatamente como a gente viu no episódio passado.
+[10:28] O custo caiu, a interface amigável pôde existir.
+[10:32] Sensacional.
+[10:33] Aperte o próximo.
+[10:34] E a gente chega no ano de 1990.
+[10:36] É aqui que as linhas finalmente se encontram.
+[10:39] Que linhas?
+[10:40] Lembra daquele padrão aberto da IBM cheio de computadores clonados e baratos?
+[10:45] Lembro, que rodavam na tela preta.
+[10:47] Então, essa interface fácil de janelinhas chega pra esse padrão IBM na forma de um programa
+[10:53] de computador.
+[10:54] Ah, entendi.
+[10:56] Eles instalaram essa cara amigável por cima daquela tela preta antiga e assustadora.
+[11:01] Exatamente.
+[11:02] O computador barato, de padrão aberto e competitivo, agora ganhava uma cara que
+[11:07] qualquer um conseguiu entender na hora.
+[11:09] Isso é o empurrão que faltava pra adoção em massa, né?
+[11:12] E os números provam isso direitinho.
+[11:14] Quer ver?
+[11:15] Manda.
+[11:16] Em 1984, só 8% das casas americanas tinham um computador.
+[11:21] 8%.
+[11:22] Um número bem intímido.
+[11:23] Sim.
+[11:24] Mas esse número pula pra 22% em 1993 e chega a 36% em 1997.
+[11:33] É uma curva de crescimento muito forte.
+[11:35] Nosso balanço pra fechar a história.
+[11:37] Estamos no começo dos anos 90.
+[11:39] O computador de casa virou realidade.
+[11:42] Graças a quatro pilares.
+[11:43] E isso, ganhou um produto pronto lá em 1977, ganhou aquele grande motivo com as planilhas
+[11:49] em 79, depois um padrão de mercado em 81 e finalmente uma cara amigável em 84, que acabou dominando
+[11:56] tudo mesmo em 1990.
+[11:59] Dá pra dizer de um jeito simples, então, que a lição central desse nosso mergulho
+[12:03] é a seguinte, a parte difícil da tecnologia deixou de ser fazer a máquina funcionar.
+[12:09] E passou a ser o quê?
+[12:10] Para você fazer a máquina fazer sentido para quem não estudou eletrônica ou engenharia
+[12:15] para usá-la.
+[12:16] É, o obstáculo humano foi superado.
+[12:18] Mas olha só, a gente não pode esquecer de um detalhe.
+[12:20] Qual?
+[12:21] Pensa bem, agora existem milhões dessas máquinas espalhadas nas casas das pessoas, né?
+[12:26] Sim, milhões.
+[12:27] Só que cada uma dessas máquinas é como se fosse uma ilha completamente isolada.
+[12:32] Ah, entendi.
+[12:33] Se a pessoa quer passar um arquivo pro vizinho, ela precisa gravar a informação num
+[12:38] disquete.
+[12:39] Tirar da máquina e levar na mão até outra casa.
+[12:41] Físicamente, andando.
+[12:43] Pois é, então, se já existem milhões de máquinas iguais espalhadas por aí, o que
+[12:48] que falta para elas começarem a conversar entre si?

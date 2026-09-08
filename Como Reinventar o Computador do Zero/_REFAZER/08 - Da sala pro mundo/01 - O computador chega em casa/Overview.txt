@@ -1,0 +1,91 @@
+O COMPUTADOR CHEGA EM CASA - CONTEXTO
+=====================================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie Como Reinventar
+o Computador do Zero. A serie reconstroi o computador do zero, do abaco ate a
+inteligencia artificial, uma peca por episodio. Este episodio cobre de 1973 a 1990,
+em ORDEM CRONOLOGICA, e e o primeiro da trilha principal em que as pessoas entram
+pelo nome: aqui a historia e as pessoas.
+
+Onde a serie estava: a etapa anterior encolheu a maquina ate ela caber numa pastilha.
+Em 1974 a Intel vende o 8080, um processador completo de oito bits, pra quem quiser
+comprar. A peca esta pronta. Ninguem sabe o que fazer com ela, e ninguem tem um
+computador em casa.
+
+A PERGUNTA DO EPISODIO NAO E "COMO VENDER COMPUTADOR". E: como o hardware e o software
+melhoraram um empurrando o outro, ate a maquina caber numa mesa e ter uma cara que
+qualquer pessoa entende. A serie e sobre CONSTRUIR o computador, e este episodio segue
+quem construiu, em ordem, e o que cada um resolveu.
+
+O fio, em doze passos:
+
+1. 1974. A Intel poe o combustivel: o 8080. Processador pronto, software nenhum.
+2. 1968-1973. Na Xerox, num centro de pesquisa na California (PARC), Alan Kay,
+   Chuck Thacker e Butler Lampson constroem o Alto. Nao existe microprocessador que
+   de conta, entao a maquina e montada com centenas de chips TTL. Tem 128 KB de
+   memoria, o mouse de tres botoes que Douglas Engelbart mostrou em 1968, e uma tela
+   em pe de 606 por 808 pontos onde CADA BIT DA MEMORIA E UM PONTO DA TELA. A tela e
+   uma foto guardada na RAM, e come quase metade da memoria. Como nao existe placa de
+   video, o processador pinta a tela ele mesmo: Thacker deu a ele dezesseis tarefas
+   de microcodigo com prioridade, e a de pintar a tela rouba ciclos da que roda o
+   programa. Custa 32 mil dolares. A Xerox guarda na gaveta.
+3. Janeiro de 1975. Ed Roberts, dono da MITS, uma empresa de kits de calculadora em
+   Albuquerque que estava quebrando, monta um computador em volta do 8080 e poe na
+   capa da revista Popular Electronics: o Altair 8800, uns quatrocentos dolares em
+   kit, 256 bytes de memoria, sem teclado e sem tela, so interruptor e luzinha.
+   Precisava vender 200 pra empatar. Em tres meses tinha 4 mil pedidos.
+4. 1975. Paul Allen ve a capa numa banca em Harvard Square e mostra pra Bill Gates,
+   aluno de Harvard. Os dois escrevem um interpretador de BASIC pro Altair SEM TER A
+   MAQUINA: escrevem primeiro um emulador do 8080 no PDP-10 da universidade e
+   programam em cima dele, oito semanas, o BASIC cabendo em 4 KB. Allen voa pra
+   Albuquerque com a fita de papel, escreve o carregador no aviao, e o programa roda
+   de primeira numa maquina que ele nunca tinha visto. Nasce a Microsoft.
+5. 1975-1977. Steve Wozniak frequenta o Homebrew Computer Club, um clube de
+   entusiastas numa garagem em Menlo Park. Projeta o Apple I pra mostrar la; Steve
+   Jobs vende. Em 1977 sai o Apple II, e o que ele tem de especial e ENGENHARIA:
+   Wozniak faz cor na televisao sem hardware de cor, enganando o sinal de video, e
+   faz com um chip o que os outros faziam com tres. Mesmo ano: Commodore PET e TRS-80.
+6. 1979. Dan Bricklin, aluno de administracao em Harvard, imagina uma calculadora
+   com tela onde mudar um numero refaz todas as contas; Bob Frankston programa. E o
+   VisiCalc, cem dolares, e e o programa que vende o Apple II: gente comprava a
+   maquina de mil e trezentos dolares pra rodar o programa de cem.
+7. Dezembro de 1979. Jobs negocia com a Xerox: ela compra cem mil acoes da Apple
+   antes da abertura de capital, e em troca os engenheiros da Apple entram no PARC.
+   Jobs ve o Alto funcionando, com janelas, icones e mouse, e sai decidido a por
+   aquilo numa maquina de loja.
+8. 1980. A IBM fabrica mainframes de milhoes de dolares e nao leva micro a serio. Um
+   grupo em Boca Raton, na Florida, comandado por Don Estridge, ganha um ano pra
+   fazer um computador pessoal: doze pessoas, pecas de prateleira, o processador
+   Intel 8088 e o esquema publicado.
+9. 1980-1981. A IBM precisa de um sistema operacional e procura a Microsoft por causa
+   do BASIC. Gates indica Gary Kildall, dono do CP/M, e o negocio nao fecha. Mary
+   Gates, mae de Bill, esta no conselho da United Way com John Opel, presidente da
+   IBM, e fala do filho. A IBM volta. A Microsoft nao tem sistema operacional:
+   compra o QDOS, escrito por Tim Paterson na Seattle Computer Products, por
+   cinquenta mil dolares, e licencia pra IBM SEM EXCLUSIVIDADE. Em 12 de agosto de
+   1981 sai o IBM PC. Como o esquema e publico, aparecem os clones, e todos precisam
+   do mesmo sistema: o padrao passa a ser da Microsoft, nao da IBM.
+10. 1983-1984. A Apple lanca o Lisa por quase dez mil dolares e ele fracassa. Em 24
+   de janeiro de 1984 sai o Macintosh, dois mil quatrocentos e noventa e cinco
+   dolares, e o feito e fazer a interface do Alto caber em 128 KB: Bill Atkinson
+   escreve as rotinas de desenho (QuickDraw) e elas vao pra ROM, pra nao gastar RAM;
+   Burrell Smith projeta a placa em que o processador divide a memoria com o video,
+   que e a mesma ideia do Alto, dez anos mais barata.
+11. 1983-1990. A Microsoft escreve Word e Excel pro Macintosh e ve a interface por
+   dentro. Em novembro de 1983 Gates anuncia o Windows. Jobs acusa Gates de roubar;
+   Gates responde que os dois tinham um vizinho rico chamado Xerox. O Windows 1.0
+   de 1985 e fraco. O Windows 3.0, de 1990, roda no PC clone barato com memoria
+   barata, e pega: 8 por cento das casas americanas com computador em 1984, 22 em
+   1993, 36 em 1997.
+12. Onde isto para: 1990. A licao da serie: em cada passo, ou o hardware liberou o
+   software (o 8080 permitiu o BASIC; a memoria barata permitiu a interface) ou o
+   software puxou o hardware (o VisiCalc vendeu o Apple II; o Windows exigiu PC mais
+   forte). Hardware e software melhoram um empurrando o outro, e ninguem planejou:
+   foi um fabricante de kit quebrando, dois estudantes, um clube de garagem e uma mae
+   num conselho de caridade.
+
+O que ainda falta no fim do episodio: existem milhoes dessas maquinas, quase todas
+iguais por dentro, e cada uma e uma ilha.
+
+Use este contexto apenas como apoio.

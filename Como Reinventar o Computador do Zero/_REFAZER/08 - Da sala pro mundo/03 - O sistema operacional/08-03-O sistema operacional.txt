@@ -1,0 +1,106 @@
+Inicie dizendo: O Sistema Operacional
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Sistema Operacional.txt enviado
+como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o terceiro e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie
+Como Reinventar o Computador do Zero. Os dois anteriores levaram o computador pra casa
+e ligaram as casas em rede, e usaram a palavra "sistema operacional" sem nunca explicar.
+Este episodio paga a divida: o sistema operacional e o programa que roda os outros.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram o sistema
+operacional, EM ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o
+software melhoram um empurrando o outro.
+
+ESTE EPISODIO COBRE DE 1961 A 1997, EM ORDEM. Dizer esse intervalo logo na abertura e,
+no encerramento, dizer em que ano o episodio para. O anterior parou em 1995 e este
+comeca em 1961: a serie VOLTA NO TEMPO de proposito, pela terceira e ultima vez, e a
+tela 1 avisa isso em uma frase.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a
+ficha dela, uma frase so, no formato: nome, ano de nascimento, idade naquela cena, e se
+esta viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler
+todas, sem pular, sem inventar dado e sem comentar. Sao dez: Corbato, Thompson,
+Ritchie, Kildall, Gates, Stallman, Tanenbaum, Torvalds, Cutler e Jobs.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (Multics e Unix), 3 e 4 (o
+Unix e a linguagem C), 6 e 7 (a cara e a briga), 8 e 9 (o GNU e o Linux), 11 e 12 (onde
+o Linux foi parar e o fecho). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+A ABERTURA E DIRETA, sem cena inventada.
+
+ANOS POR EXTENSO E DEVAGAR. "Mil novecentos e sessenta e um", "mil novecentos e sessenta
+e quatro", "mil novecentos e sessenta e nove", "mil novecentos e setenta e tres", "mil
+novecentos e setenta e quatro", "mil novecentos e oitenta e tres", "mil novecentos e
+oitenta e oito", "mil novecentos e noventa e um", "mil novecentos e noventa e tres",
+"mil novecentos e noventa e cinco", "mil novecentos e noventa e sete".
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: Corbato ("cor-ba-to"), Multics ("mul-tics"),
+Thompson ("tom-son"), Ritchie ("ri-tchi"), Unix ("iu-nics"), Kildall ("kil-dol"),
+Sculley ("sca-li"), Stallman ("stol-man"), GNU ("gue-nu"), Tanenbaum ("ta-nen-baum"),
+Minix ("mi-nics"), Torvalds ("li-nus tor-valds"), Linux ("li-nucs"), Cutler
+("cat-ler"), NeXT ("next"), Android ("an-droid"). Siglas SEMPRE soletradas: MIT, CTSS,
+CP/M, GPL, NT. A linguagem C e "a linguagem ce".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "a analogia autorizada" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa.
+
+FOCO, EM ORDEM: o que e o sistema (o sindico do predio); mil novecentos e sessenta e
+um, Corbato e o tempo compartilhado, e o Multics de sessenta e quatro grande demais;
+sessenta e nove, Thompson e Ritchie escrevem o Unix num PDP-7 abandonado pra rodar um
+jogo; setenta e tres, o C e o Unix solto do hardware; setenta e quatro a oitenta e um,
+Kildall e o CP/M, o pedaco que fala com a maquina separado, e o DOS que so abria a
+porta; oitenta e quatro a noventa, a cara exige de volta o que o DOS jogou fora;
+oitenta e oito a noventa e cinco, a Apple processa e perde, o Windows 95 esmaga; oitenta
+e tres, Stallman, a impressora, o GNU e a GPL, e falta o nucleo; oitenta e sete a noventa
+e um, Tanenbaum e o Minix, Torvalds e o nucleo aos vinte e um anos, "so um hobby";
+noventa e tres a noventa e sete, Cutler e o Windows NT, a Apple compra a NeXT e o Mac
+vira Unix; onde o Linux foi parar, servidor, Android, IA; noventa e sete, o fecho.
+
+O PONTO QUE NAO PODE FALTAR: o sistema operacional e a camada que deixa o mesmo software
+rodar em hardware diferente (o C soltou o sistema do hardware), e a licenca livre e o
+que deixou o mesmo sistema ser copiado em milhoes de maquinas sem pedir licenca. Pela
+terceira vez na etapa, ganhou quem exigiu menos.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO FECHA A ETAPA: na ultima tela, balanco das pessoas,
+balanco da etapa (casa, rede, sistema) e a pergunta que abre a etapa final, SEM
+explicar processador moderno, placa de video nem inteligencia artificial.
+
+DURACAO: cerca de 18 minutos. Nao esticar.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, lendario, revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+Use SOMENTE a analogia descrita no roteiro, o sindico do predio (elevador = processador,
+apartamento = memoria, correspondencia = arquivos, portaria = teclado, tela e
+impressora). NAO invente analogias novas. Tempo compartilhado e memoria protegida sao
+explicados direto, sem comparacao.
+
+Use tambem o Overview.txt como contexto curto.

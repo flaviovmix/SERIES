@@ -1,0 +1,217 @@
+# Transcricao automatica (faster-whisper small) - 14.5 min
+# Fonte: Como o Transformer eliminou a fila indiana.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] 2017. Atenção is all you need. Esse é o quarto e último episódio da etapa
+[00:05] A Máquina Que Aprende, a Nona e o último etapa da nossa série
+[00:09] Como Reinventar o Computador do Zero e o último episódio de toda a série.
+[00:14] É, chegamos no grande final. Pois é. E o nosso mergulho profundo anterior terminou
+[00:19] em 2012, na arquitetura AlexNet. Foi aquele momento, sabem que as máquinas
+[00:24] aprenderam a olhar para imagens inteiras de uma só vez.
+[00:27] Aham. Aproveitando ao máximo o processamento paralelo.
+[00:31] Isso. E aí a gente deixou uma pergunta no ar. Como uma máquina que adora fazer cálculos
+[00:37] simultâneos ler um texto, que é, por natureza, uma fila de palavras?
+[00:41] Uma palavra rigorosamente atrás da outra, né?
+[00:44] Exato. E a resposta que revolucionou tudo que surgiu em 2017 foi simplesmente tirando a fila.
+[00:50] Parece simples falando assim, mas foi uma mudança estrutural massiva.
+[00:55] O nosso foco hoje é traçar exatamente essa jornada, de 1997 até 2018, em ordem.
+[01:03] E olha, vale um esclarecimento de cara. A gente não está fazendo uma viagem de volta no tempo, tá?
+[01:08] Boa. É importante ponto a isso.
+[01:10] É, porque a pesquisa para processar fila do texto correu, tipo, de forma totalmente simultânea,
+[01:15] a fila da imagem. A gente vai ver como o software, depois de anos tentando forçar
+[01:20] essa leitura em fila, finalmente desistiu e assumiu a exata forma do hardware.
+[01:25] É fascinante. É como se a gente tentasse entender a planta de uma casa inteira olhando só pelo buraco
+[01:31] da fechadura, sabe? Um cômodo de cada vez.
+[01:34] Nossa, perfeita analogia. E a solução que eles encontraram não foi, tipo, alargar o buraco
+[01:39] da fechadura. Foi derrubar a porta inteira.
+[01:42] Adorei. E pré-estruturar tudo isso à nossa página de animação, que acompanha um episódio,
+[01:48] que tem 12 telas, tá? Quem está só ouvindo acompanha toda a ideia normalmente, sem problemas.
+[01:53] A gente só vai dar o comando para avançar as imagens dos momentos exatos. Então, bora lá, aperte o próximo.
+[02:00] Bom, o nosso primeiro grande marco nos leva a Munique, no ano de 1997. É aqui que entram em cena
+[02:09] o SEP-Hoschwriter, nascido em 1967, tinha 30 anos naquela cena, vivo em 2026.
+[02:17] Foram eles que criaram a famosa arquitetura LSTM.
+[02:21] Exato, a LSTM, que significa memória de curto e longo prazo.
+[02:27] O grande problema das redes anteriores que eles queriam resolver é que ao ler as palavras
+[02:31] em fila, o resumo ia sendo reescrito por consecutivamente. A máquina basicamente esquecia o início
+[02:38] da frase, né? O sinal matemático e o sinal e o sinal.
+[02:41] A máquina basicamente esquecia o início da frase, né? O sinal matemático e, tipo, desbotando.
+[02:47] Aham. O sinal diluía. Imagina-lhe um parágrafo longo e, no final, a identidade do sujeito lá da primeira linha
+[02:54] já tinha assumido no mar de novas multiplicações.
+[02:57] E como a LSTM resolveu isso na época?
+[03:00] Eles usaram portões. Eram pequenos portões lógicos dentro da rede que decidiu o que guardar no longo prazo
+[03:06] e o que esquecer imediatamente. Isso prolongou a memória da máquina.
+[03:10] Mas, assim, a fila continuava lá.
+[03:12] Ah, sim. A geometria continuava saindo de uma fila. Aperte o próximo.
+[03:16] E aí, a gente dá um salto para 2014 lá no Google.
+[03:20] Isso, no laboratório do Google. A equipe tinha o William Sudskever, nascido em 1987, tinha 27 anos naquela cena,
+[03:29] vivo em 2026. O Oriel Vinyls, nascido em 1983, tinha 31 anos naquela cena, vivo em 2026.
+[03:39] E o Coquelé, nascido em 1982, tinha 32 anos naquela cena, vivo em 2026.
+[03:46] Um time de peso.
+[03:48] Com certeza. E eles propuseram usar duas redes LSTM trabalhando juntas para a tradução.
+[03:55] A primeira rede lia o texto inteiro em português, por exemplo.
+[03:59] Acumulava o contexto e criava um vetor fixo, que era tipo um resumo matemático e mutável.
+[04:05] Tá. E a segunda?
+[04:06] A segunda pegava só esse vetor e começava a escrever a tradução em inglês.
+[04:11] Espera, mas isso só acumuleu um livro inteiro do Dostoevsky e se é obrigado a resumir tudo num único pochete
+[04:19] antes de começar a traduzir. Frases longas não perdiam muita informação nesse funil?
+[04:24] Exatamente. É o que ficou conhecido como o gargalo do vetor único. A compressão extrema causava uma perda irreparável.
+[04:32] A segunda rede começava a traduzir o final de uma frase superlonga e a matemática já não dava mais sustentação para a gramática.
+[04:39] O software bateu num limite estrutural da própria memória. Aperte o próximo.
+[04:45] E para sair desse gargalo, o foco da pesquisa mudou para Montreal entre 2014 e 2015, né?
+[04:51] Exatamente. Lá, a gente tem o Yoshua Bendio, nascido em 1964, tinha 50 anos naquela cena, vivo em 2026,
+[05:01] o que um riuncho, nascido em 1985, tinha 29 anos naquela cena, vivo em 2026 e um aluno de doutorado do Bendio.
+[05:10] Foram eles que trouxeram o conceito de atenção.
+[05:14] É isso. A grande sacada da atenção foi abolir aquele poste único, em vez de um único resumo, a rede que escreve a tradução
+[05:22] passou a receber absolutamente todos os resumos parciais gerados a cada palavra que a primeira rede leu.
+[05:29] Ah, então ela ganha acesso direto a tudo e dá um peso para cada palavra, certo?
+[05:36] Perfeito. Quer ver um exemplo? Pensa em traduzir o gato preto para o inglês.
+[05:40] Na fração de milisegundo em que a máquina vai escrever a palavra black,
+[05:44] ela foca fortemente a atenção dela nos números que representam a palavra preto no texto original
+[05:50] e deixa o gato em segundo plano. O foco muda dinamicamente.
+[05:54] Aperte o próximo.
+[05:55] Na teoria, isso é lindo, mas na prática, quando o Google colocou isso nos servidores para valer,
+[06:01] em 2016, o negócio pesou, pesou demais.
+[06:05] Para colocar em produção, eles empilharam oito camadas de leitura e oito camadas de escrita de LSTM,
+[06:11] tudo amarrado com esse mecanismo de atenção.
+[06:14] O custo computacional disso devia ser absurdo.
+[06:16] Treinar essa rede levavam seis dias ininterruptos usando 96 placas de vídeo rodando juntas.
+[06:22] Era caríssimo. E foi para baratear e viabilizar isso que o Google revelou a TPU,
+[06:27] a unidade de processamento de tensores.
+[06:30] A famosa TPU. E quem liderou o projeto foi um engenheiro que veio da Antiga Deck, né?
+[06:35] Isso, um engenheiro veterano que não tem o nome público no artigo, mas que desenhou uma peça genial.
+[06:40] A TPU era essencialmente uma grade plana de 256 por 256 pequenos multiplicadores físicos.
+[06:47] O foco dela era só fazer multiplicação massiva em paralelo.
+[06:50] Mas aí, olha que ironia. A gente tem um hardware gigante forjado numa grade,
+[06:56] implorando para fazer tudo ao mesmo tempo.
+[06:59] Mas o software da LSTM ainda está empurrando as palavras uma a uma em fila indiana.
+[07:04] Exato! Esse era o choque geomédico.
+[07:07] A fila era o que sobrava de fora do encaixe.
+[07:10] O hardware estava lá, pronto, hiperveloz, mas o software não acompanhava a forma dele.
+[07:15] O chip ficava lá, ocioso, esperando a palavra anterior terminar para receber a próxima.
+[07:20] Aperte o próximo.
+[07:21] Aí chegamos no grande clímax cronológico, o dia 12 de junho de 2017.
+[07:26] O dia em que oito pesquisadores do Google publicaram o artigo que mudou tudo.
+[07:31] Attention is all you need. O que traduzindo para quem está ouvindo seria.
+[07:36] Atenção é tudo que você precisa.
+[07:38] Isso. E os oito autores dessa ruptura assinando o artigo foram Vasvani, Shazer, Parmar,
+[07:46] Leon Jones, Gomez, Kaiser e Polo Sukin.
+[07:50] Eles apresentaram a arquitetura que batizaram de transformer.
+[07:53] E o transformer fez o que parecia impossível. Tirar a fila completamente.
+[07:59] Amputou a rede recorrente LSTM sem dó.
+[08:03] Nenhuma palavra precisa esperar a outra.
+[08:05] O texto inteiro entra no sistema ao mesmo tempo. Aperte o próximo.
+[08:10] Mas peraí, se a máquina engole as palavras todas de uma vez sem ordem sequencial,
+[08:16] a linguagem não desmorona? Como é que o sistema não vira uma sopa de letras aleatória?
+[08:22] Parece contraintuitivo, mas a solução está na forma como as palavras viram matemática.
+[08:28] O vocabulário inteiro é projetado num espaço numérico de centenas de dimensões.
+[08:33] Então gato e cachorro, por exemplo, viram listas longas de números
+[08:38] que ficam matematicamente próximas nesse espaço.
+[08:41] Quase vizinhas, enquanto a palavra imposto vai ficar num quadrante totalmente distante.
+[08:47] O sentido deixa de ser um verbete e vira uma coordenada,
+[08:51] uma localização nesse mapa tridimensional enorme.
+[08:54] Aperte o próximo.
+[08:55] Certo, o sentido está garantido por essa localização.
+[08:59] Mas e a gramática? Como a máquina diferencia
+[09:02] o cachorro mordeu o homem de o homem mordeu o cachorro, se todas as palavras entram juntas.
+[09:08] Para não reconstruir a fila, eles adicionaram um carimbo de posição em cada palavra,
+[09:13] usando ondas matemáticas baseadas em funções de seno e cosseno.
+[09:17] É tipo uma identidade fixa.
+[09:19] Isso. É fisicamente somado aos números da palavra antes dela entrar na rede.
+[09:24] Assim, a máquina processa um bloco simultâneo,
+[09:27] onde as coordenadas já dizem, de forma indelevel,
+[09:31] onde aquela palavra deveria estar na frase original.
+[09:34] Lembra aquela nossa metáfora do buraco da fechadura?
+[09:37] Claro.
+[09:38] No Transformer, é como se a gente moldasse para uma mesa de reunião redonda.
+[09:42] As palavras não estão mais numa fila passando um bilhete que vai apagando.
+[09:46] Todas sentam na mesa ao mesmo tempo e esse carimbo de posição
+[09:51] é só um número pintado no encosto da cadeira de cada uma.
+[09:54] Nossa, perfeito. Elas olham umas para as outras e decidem quem escutar mais.
+[09:59] E no coração dessa mesa redonda, o cálculo da atenção foi decomposto em três matrizes.
+[10:04] Pergunta, etiqueta e conteúdo.
+[10:07] Ah, eu amo pensar nisso como um evento de Network Incorporativo.
+[10:10] A etiqueta é o crachado à pessoa.
+[10:12] A pergunta é o que você está procurando no evento
+[10:15] e o conteúdo é o que a pessoa de fato tem a dizer quando vocês não mete.
+[10:18] É muito isso. A pergunta matemática, de uma palavra,
+[10:22] procura a etiqueta matemática das outras e quando encaixa, transfere o conteúdo.
+[10:27] E no fundo físico do negócio, isso é só tabela gigante de número
+[10:30] multiplicando por tabela gigante de número nas chamadas 8 cabeças de atenção operando em paralelo.
+[10:36] Tudo o que a grade da TPO queria fazer desde o início.
+[10:38] Exatamente.
+[10:39] O software moldou a matemática para encaixar na multiplicação paralela das placas.
+[10:44] O resultado, o primeiro modelo tinha 65 milhões de parâmetros
+[10:49] e foi treinado em apenas 12 horas usando 8 placas da NVIDIA.
+[10:54] Nada perou, o passo anterior aperte o próximo.
+[10:58] Incrível.
+[10:59] E o Transformer provou ser tão eficiente que já no ano seguinte, em 2018,
+[11:03] a indústria dissecou a arquitetura.
+[11:05] Em junho, a OpenAI lançou o GPT.
+[11:08] Isso. E o trabalho lá foi puxado pelo Alec Radford,
+[11:11] nascido em 1993, tinha 25 anos naquela cena,
+[11:15] vivo em 2026, e pelo Ilha Subscover, que a gente já mencionou.
+[11:20] O mais loco do GPT é que eles pegaram o Transformer e, tipo, cortaram no meio, né?
+[11:25] É, eles usaram só a metade que escreve o chamado decodificador.
+[11:29] Ele foi treinado de forma autoregressiva, consumindo 7 mil livros cruz,
+[11:34] sem rotulação.
+[11:35] O objetivo era só prever a próxima palavra, certo?
+[11:38] Isso. Só isso.
+[11:39] O GPT original tinha 117 milhões de parâmetros
+[11:43] e só tentava adivinhar a palavra seguinte, olhando para o que vinha antes.
+[11:47] Aperte o próximo.
+[11:48] Mas a concorrência não parou, né?
+[11:50] Em outubro de 2018, uma equipe de engenheiros, o Google, lançou a resposta deles,
+[11:55] o famoso Bert.
+[11:56] O caminho oposto.
+[11:57] O Bert usou a metade que lê do Transformer.
+[12:00] O codificador.
+[12:01] Em vez de prever o futuro,
+[12:03] o treinamento do Bert escondia palavras aleatórias no meio do texto.
+[12:07] A máquina cruzava o contexto da esquerda e da direita
+[12:10] para deduzir o que estava faltando naquele buraco.
+[12:13] Era um modelo maior também, né?
+[12:15] Sim, já veio com 340 milhões de parâmetros.
+[12:18] Mas a grande sacada tanto do GPT quanto do Bert
+[12:21] foi que o programa era tipo achado a partir do texto crudo na internet.
+[12:25] Não tinha mais humano rotulando os dados.
+[12:28] O que mudou totalmente a escala da coisa.
+[12:31] Passamos de 65 milhões de conexões em 2017
+[12:35] para um bilhão e meio em 2019.
+[12:38] E 175 bilhões em 2020?
+[12:41] É um absurdo.
+[12:42] A inteligência artificial virou uma questão de acumular hardware bruto.
+[12:46] O tamanho do software passou a editar o hardware
+[12:49] que a indústria com NVIDIA precisaria construir.
+[12:52] Aperte o próximo.
+[12:53] Se a gente fizer um balanço do arco histórico dessa série inteira,
+[12:56] o que a gente vê é um fluxo constante.
+[12:59] A gente saiu de mover pedras no hábaco,
+[13:02] passou pela lógica de falso e verdadeiro do bully,
+[13:05] pela memória do von Neumann,
+[13:07] e chegou na litografia dos microprocessadores.
+[13:10] A máquina de 2018 ainda é, no fundo,
+[13:13] elétrons passando por portas lógicas.
+[13:16] E o grande triunfo do Transformers foi esse, né?
+[13:19] As peças físicas evoluíram,
+[13:21] até conseguir fazer milhões de cálculos massivos de matrizes.
+[13:26] E o software, ao tirar a restrição temporal da fila indiana,
+[13:30] finalmente se diluiu para usar 100% dessa grade elétrica.
+[13:34] Ninguém planejou o pacote completo,
+[13:36] mas o encaixe de todas essas peças gerou a ia moderna.
+[13:40] Aperte o próximo.
+[13:42] Bom, com a ramificação dos modelos em 2018
+[13:45] e os oito autores originais já arrumando até 2023
+[13:49] para fundar suas próprias empresas,
+[13:51] a gente encerra nossa cronologia por aqui.
+[13:54] A arquitetura física no nível mais baixo continua sendo a mesma,
+[13:58] processando zeros e uns.
+[14:00] Mas a lista de instruções não é mais algo escrito
+[14:04] linha por linha para um humano.
+[14:07] Ela é achada pelos bilhões de botões girados
+[14:10] automaticamente durante o treinamento.
+[14:13] E eu deixo essa reflexão para quem nos acompanhou até aqui.
+[14:17] Se a máquina agora escreve suas próprias regras de entendimento
+[14:20] através de uma rede matemática
+[14:22] que nem os engenheiros conseguem ler,
+[14:25] até que ponto a gente realmente compreende as ferramentas
+[14:28] que estamos usando para decifrar o nosso próprio mundo.

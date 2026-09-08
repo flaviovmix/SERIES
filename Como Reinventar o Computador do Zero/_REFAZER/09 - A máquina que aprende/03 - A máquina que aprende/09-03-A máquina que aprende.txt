@@ -1,0 +1,133 @@
+Inicie dizendo: A Máquina que Aprende
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Maquina que Aprende.txt enviado
+como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o terceiro episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da
+serie Como Reinventar o Computador do Zero. Os dois anteriores contaram as pecas
+correndo (processador e placa de video); o anterior perguntou se existe problema que nao
+se sabe escrever como programa mas que se resolve com muita conta repetida, e se a
+resposta estaria numa gaveta desde 1958. Este episodio abre a gaveta.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. Seguir as PESSOAS que construiram a maquina que
+aprende, EM ORDEM CRONOLOGICA, e usar cada passo pra mostrar como o hardware e o
+software melhoram um empurrando o outro; aqui, a ideia na frente e a peca atrasada.
+
+ESTE EPISODIO COBRE DE 1943 A 2012, EM ORDEM. Dizer esse intervalo logo na abertura e,
+no encerramento, dizer em que ano o episodio para. O anterior parou em 2007 e este
+comeca em 1943: a serie VOLTA NO TEMPO de proposito, mais uma vez, e desta vez pra
+buscar uma IDEIA, nao uma peca. A tela 1 diz isso em uma frase.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a
+ficha dela, uma frase so, no formato: nome, ano de nascimento, idade naquela cena, e se
+esta viva ou em que ano morreu. As fichas estao no roteiro, marcadas com FICHA. Ler
+todas, sem pular, sem inventar dado e sem comentar. Sao quatorze: McCulloch, Pitts,
+Rosenblatt, Minsky, Papert, Werbos, Rumelhart, Hinton, Williams, LeCun, Vapnik, Ng, Li e
+Sutskever; ler cada uma rapido. A PALAVRA "FICHA" NAO E DITA EM VOZ ALTA: emendar
+direto no nome. Alex Krizhevsky e nomeado mas NAO tem ficha (ano nao publico): NAO
+inventar, NAO comentar. A ficha de Hinton e lida so na primeira vez (1986).
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a
+frase "aperte o Proximo" como exemplo nesse aviso.
+
+A PRIMEIRA GRAVACAO DESTE EPISODIO FOI DESCARTADA: vinte e seis minutos, NENHUM "aperte o
+Proximo", sem aviso das 12 telas, fichas fora do formato, "genio/genial/genialidade",
+"aquela nossa velha analogia" e "inteligencia artificial" varias vezes. Sao ONZE pedidos,
+QUATORZE fichas no formato, o aviso das 12 telas na tela 1, cerca de dezoito minutos e
+nunca mais de vinte.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (o perceptron, e Minsky e
+Papert), 3 e 4 (a gaveta, e a retropropagacao), 7 e 8 (a placa treinando, e o ImageNet),
+9 e 10 (a AlexNet vencendo, e o programa achado), 11 e 12 (o que veio depois, e o
+fecho). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+A ABERTURA E DIRETA, sem cena inventada, sem comparacao e sem chamada com fato de tela
+posterior: depois do titulo, a primeira frase e a retomada de 2007.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR. "Mil novecentos e quarenta e tres", "mil
+novecentos e cinquenta e sete", "mil novecentos e cinquenta e oito", "mil novecentos e
+sessenta", "mil novecentos e sessenta e nove", "mil novecentos e setenta e quatro", "mil
+novecentos e oitenta e seis", "mil novecentos e oitenta e nove", "mil novecentos e
+noventa e cinco", "mil novecentos e noventa e oito", "dois mil e quatro", "dois mil e
+seis", "dois mil e sete", "dois mil e nove", "dois mil e dez", "dois mil e doze", "dois
+mil e treze", "dois mil e quinze". "Sessenta milhoes de numeros", "quatorze milhoes de
+imagens", "quinze virgula tres por cento", "vinte e seis virgula dois por cento".
+
+NOMES E SIGLAS, NA PRIMEIRA VEZ, devagar: McCulloch ("mac-cá-loc"), Pitts ("pits"),
+Rosenblatt ("rô-zen-blat"), perceptron ("per-cép-tron"), Cornell ("cor-nél"), Minsky
+("míns-qui"), Papert ("pêi-pert"), XOR (dizer "ou exclusivo"), Werbos ("uér-bos"),
+Harvard ("rár-vard"), backpropagation (dizer "retropropagacao do erro", nao a palavra
+em ingles), Rumelhart ("rú-mel-rart"), Hinton ("rín-ton"), Williams ("uí-liams"),
+Nature ("nêi-tcher"), LeCun ("le-cân"), Bell Labs ("bél lébs"), LeNet ("le-nét"), NCR
+(soletrar), Vapnik ("váp-nic"), SVM (dizer "maquina de vetores de suporte"), CIFAR
+("sái-far"), Toronto ("to-rôn-to"), Andrew Ng ("ân-dru êng"), Stanford ("stén-ford"),
+CUDA ("cú-da"), Fei-Fei Li ("fêi-fêi li"), ImageNet ("í-medj-net"), Princeton
+("prín-ston"), Krizhevsky ("cri-jévs-qui"), Sutskever ("sút-ske-ver"), AlexNet
+("á-lecs-net"), GeForce GTX 580 ("dji-fórs ge te xis quinhentos e oitenta"), Google
+("gú-gol"), Facebook ("fêis-buc").
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu", "a analogia autorizada" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa.
+
+FOCO, EM ORDEM: o que e a maquina que aprende (botoes girados pelo erro; programa achado,
+nao escrito) e a volta no tempo pra buscar uma ideia; quarenta e tres a sessenta,
+McCulloch e Pitts, Rosenblatt e o perceptron, o jornal, o Mark I com botoes de verdade;
+sessenta e nove, Minsky e Papert e a gaveta; setenta e quatro a oitenta e seis, Werbos, e
+Rumelhart, Hinton e Williams com a retropropagacao; oitenta e nove a noventa e oito,
+LeCun le codigo postal e cheque; noventa e cinco a dois mil e seis, Vapnik e o segundo
+inverno, Hinton persiste, o CIFAR e o nome aprendizado profundo; dois mil e sete a dois
+mil e nove, Ng treina na placa de jogo, setenta vezes mais rapido; dois mil e sete a dois
+mil e dez, Li e o ImageNet, quatorze milhoes de imagens, o desafio anual; dois mil e
+doze, Krizhevsky e Sutskever, duas GTX 580, quinze virgula tres contra vinte e seis
+virgula dois; o programa achado; dois mil e treze a dois mil e quinze, todo mundo muda de
+peca, a NVIDIA vende a placa pra rede; dois mil e doze, o fecho.
+
+O PONTO QUE NAO PODE FALTAR: a ideia estava pronta em 1958 e a chave (a retropropagacao)
+em 1974/1986; o que faltava era hardware barato pra fazer a conta e dado suficiente pra
+ajustar os botoes. Quando a placa de jogo ficou barata (2007) e o dado apareceu (2009),
+duas placas num quarto fizeram em uma semana o que 1986 nao podia. E o programa deixou de
+ser escrito: passou a ser achado.
+
+SEM GANCHO DE EXTRA. ESTE EPISODIO E O TERCEIRO DE QUATRO: na ultima tela, balanco das
+pessoas nome por nome, a licao, e a pergunta que abre o proximo episodio, SEM falar de
+tradutor, atencao nem Transformer.
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade,
+lendario, revolucionario. E a expressao "inteligencia artificial" (dizer "rede",
+"maquina que aprende", "aprendizado profundo").
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia".
+
+---------------
+
+Use SOMENTE a analogia descrita no roteiro, os botoes de volume (peso = botao giratorio;
+rede = caixa de botoes; aprender = girar cada botao um pouquinho na direcao que diminui o
+erro; no Mark I os botoes eram potenciometros de verdade; na AlexNet sao sessenta
+milhoes de numeros), e lembre a equipe de pintores do episodio anterior em uma frase so.
+NAO invente analogias novas. NAO comparar a rede com cerebro, neuronio de verdade ou
+crianca aprendendo, alem da frase historica de que a ideia foi inspirada no neuronio.
+
+Use tambem o Overview.txt como contexto curto.

@@ -1,0 +1,7 @@
+Titulo: Como o computador pessoal chegou em casa
+Notebook: 08-01-O computador chega em casa
+
+Descricao:
+Estes documentos detalham a evolução dos computadores pessoais entre 1973 e 1990, focando na construção técnica e na relação entre hardware e software. O conteúdo narra como inovações da Xerox PARC, como a interface gráfica e o mouse, foram posteriormente adaptadas por figuras como Steve Jobs e Bill Gates para o mercado doméstico. A narrativa destaca marcos fundamentais, desde o kit Altair 8800 e o surgimento da Microsoft até a popularização do IBM PC e do Macintosh. O texto enfatiza que o progresso tecnológico não foi planejado, mas sim impulsionado por um ciclo onde avanços em componentes permitiam programas novos, enquanto softwares inéditos exigiam máquinas melhores. Ao final, a série estabelece como o computador chegou às casas, transformando-se de uma peça isolada em uma ferramenta padronizada.
+
+Link: https://notebook.google.com/notebook/a95146b3-70fb-4bd8-9a5d-cb6d36b189e7

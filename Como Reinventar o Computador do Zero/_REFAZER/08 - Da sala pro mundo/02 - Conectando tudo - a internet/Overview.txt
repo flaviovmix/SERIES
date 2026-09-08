@@ -1,0 +1,72 @@
+CONECTANDO TUDO: A INTERNET - CONTEXTO
+======================================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco ate
+a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1962 a 1995,
+em ORDEM CRONOLOGICA, e comeca voltando no tempo: o episodio anterior parou em 1990.
+Como o anterior, ele conta a historia PELAS PESSOAS, com nome e ficha, e usa cada
+passo pra mostrar como o hardware e o software melhoram um empurrando o outro.
+
+Onde a serie estava: o computador virou objeto de casa, com padrao aberto e uma cara
+que qualquer pessoa entende. Milhoes deles, quase todos iguais por dentro, e cada um e
+uma ilha: passar um arquivo de uma pra outra e gravar num disquete e atravessar a sala.
+
+O PROBLEMA QUE ESTE EPISODIO RESOLVE, E QUE E MAIOR DO QUE PARECE: ligar dois
+computadores por um fio ja se fazia. O dificil e fazer redes DIFERENTES, de donos
+diferentes, com maquinas diferentes e regras diferentes, virarem uma rede so, sem
+ninguem no comando. A internet nao e uma rede. E um acordo entre redes.
+
+O fio, em onze passos:
+
+1. Milhoes de ilhas. Retomada, a volta no tempo, e o problema de verdade.
+2. 1962-1966. Por que o telefone nao servia: a rede telefonica reserva um caminho
+   inteiro e computador fala em rajada. J. C. R. Licklider, psicologo que dirigia o
+   setor de computacao da ARPA (agencia de pesquisa do governo americano), escreve em
+   1962 sobre uma "rede intergalactica" de computadores e poe dinheiro nisso. O
+   sucessor dele tinha tres terminais na mesa, um pra cada computador, cada um com
+   sua senha, e queria um so.
+3. 1961-1967. Picar a mensagem em pedacos. Leonard Kleinrock, no MIT, faz a teoria
+   das filas de mensagens em 1961. Paul Baran, na RAND, em 1964, desenha uma rede
+   distribuida que sobrevive a bombardeio: sem centro, mensagem em blocos, cada bloco
+   achando o caminho. Donald Davies, na Inglaterra, em 1965, chega na mesma ideia sem
+   conhecer Baran e da o nome: pacote. Larry Roberts, na ARPA, em 1967, desenha a
+   ARPANET em cima disso. (Larry Roberts NAO e o Ed Roberts do Altair.)
+4. 29 de outubro de 1969. A caixa que poe o computador na rede, o IMP, e construida
+   pela BBN, uma empresa de Boston: um minicomputador reforcado, do tamanho de uma
+   geladeira, so pra picar, endereçar e empurrar pacote. Charley Kline, estudante de
+   Kleinrock na UCLA, com vinte e um anos, tenta escrever LOGIN pro SRI; a maquina do
+   outro lado cai na segunda letra; a primeira mensagem e L, O. Quatro maquinas no fim
+   do ano.
+5. 1971. Ray Tomlinson, engenheiro da BBN, junta dois programas e cria o correio
+   eletronico; escolhe a arroba pra separar pessoa de maquina. Ninguem encomendou; em
+   poucos anos e o uso principal da rede.
+6. 1971-1974. Redes que nao se entendem: ALOHAnet por radio no Havai, rede por
+   satelite, redes de outros paises. Vint Cerf e Bob Kahn publicam em 1974 o
+   envelope comum, o TCP/IP: cada rede continua sendo o que e, o envelope atravessa.
+7. 1 de janeiro de 1983. Jon Postel, que cuidava dos numeros e dos documentos da rede,
+   escreve o plano de transicao: todo mundo troca de lingua no mesmo dia. Nasce a
+   internet como acordo.
+8. 1983. Paul Mockapetris, com Postel, cria o DNS: o nome no lugar do numero, sem
+   lista central.
+9. 1989-1993. Tim Berners-Lee, fisico ingles no CERN, propoe a web com tres pecas:
+   endereco, regra de pedir e entregar, texto com ligacao. Escreve o primeiro servidor
+   e o primeiro navegador num NeXT. Agosto de 1991 no ar; 30 de abril de 1993 em
+   dominio publico.
+10. 1993. Marc Andreessen, estudante de vinte e um anos num centro de supercomputacao
+   em Illinois, com um colega programador, faz o Mosaic: imagem junto com o texto,
+   rodando no PC de casa. E o encontro com o episodio anterior.
+11. 1995. Onde para: a rede abre pro comercio. A licao: o que fez a internet vencer
+   nao foi ser a melhor rede, foi exigir o minimo de todo mundo. O balanco das pessoas.
+   E o gancho da etapa final: milhoes de maquinas ligadas despejando dado, e a regra
+   escrita a mao nao da mais conta.
+
+O fio hardware e software, tela a tela: o telefone e um hardware que forca uma ideia
+de software (o pacote); o pacote e um software que exige um hardware novo (o IMP); o
+correio e um software que ninguem pediu, rodando num hardware feito pra outra coisa; o
+envelope e um software que deixa cada hardware ser o que e; o dia da virada troca o
+software sem trocar o hardware; o nome substitui um arquivo central; a web e software
+escrito num NeXT; o Mosaic e o software da rede rodando no hardware de casa.
+
+Use este contexto apenas como apoio.

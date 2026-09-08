@@ -1,0 +1,362 @@
+# Transcricao automatica (faster-whisper small) - 17.3 min
+# Fonte: Como os computadores deixaram de ser ilhas.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Conectando tudo, a internet.
+[00:02] Isso mesmo. E chegamos na reta final dessa nossa conversa.
+[00:05] Pois é, esse é o segundo e último episódio da etapa da sala pro mundo,
+[00:10] que é a oitava etapa da série, como reinventar o computador do zero.
+[00:14] E a gente precisa dar um passo atrás pra entender onde paramos.
+[00:18] Na nossa última conversa, o computador virou um produto de casa, né?
+[00:21] Exato. Ele ganhou um padrão aberto, perdeu aquela cara difícil de usar,
+[00:26] e foi pras prateleiras.
+[00:27] Milhões de máquinas iguais se espalharam por aí.
+[00:30] Só que existia uma limitação bem frustrante nisso tudo.
+[00:33] Cada uma dessas máquinas super modernas era uma ilha isolada.
+[00:39] Nossa, a verdade.
+[00:40] Se alguém precisasse passar um arquivo pra outra máquina,
+[00:43] mesmo que fosse na mesa do lado, não tinha um cabo mágico.
+[00:47] Tinha que gravar um disquete, levantar da cadeira
+[00:49] e andar fisicamente até o outro computador.
+[00:52] 90. Mas hoje o Papi vai cobrir de 1969 até 1995.
+[00:58] A gente faz esse salto temporal porque essa rede que tirou o computador do isolamento
+[01:03] foi sendo construída em silêncio.
+[01:05] Tipo, dentro dos laboratórios das universidades, né?
+[01:08] Exatamente, exatamente na mesma época
+[01:11] em que o computador de mesa tava nascendo e ganhando o mercado lá fora.
+[01:15] E um aviso rápido de navegação pra quem tá acompanhando a gente.
+[01:18] Essa etapa acompanha uma página de animação dividida em 11 telas.
+[01:22] Quem tá só ouvindo no fone segue normal com a gente.
+[01:25] Isso, mas pra quem tá com a página aberta na tela,
+[01:28] a regra é virar pra próxima só quando ouviu o nosso aviso sonoro.
+[01:31] E olha, ligar dois computadores com o fio não era bem o problema.
+[01:35] Isso já era super fácil.
+[01:37] O problema real, gargalo mesmo, era fazer redes totalmente diferentes conversarem.
+[01:43] Redes com donos diferentes, com regras diferentes.
+[01:47] Fazer isso tudo virar uma rede só e tipo, sem ter ninguém ali no comando.
+[01:51] Porque a internet não é uma rede só, ela é um grande acordo entre redes, sabe?
+[01:56] É o acordo que importa no fim das contas.
+[01:58] Aperte o próximo.
+[01:59] E a primeira pergunta lógica que o pessoal se fazia naquela época era...
+[02:02] Porque não usar o telefone, né?
+[02:04] A infraestrutura já tava lá cruzando o mundo inteiro.
+[02:07] Pois é, parecia o caminho mais fácil,
+[02:09] mas a lógica da telefonia era péssima pra computador.
+[02:12] O telefone funcionava por comutação de circuitos.
+[02:15] Como assim, circuitos?
+[02:16] Assim, quando duas pessoas ligavam,
+[02:18] a companhia telefônica reservava um caminho físico inteirinho e exclusivo pras duas.
+[02:23] Ah, entendi.
+[02:24] É, mesmo que ficasse todo mundo em silêncio por horas, aquele caminho era só deles.
+[02:29] E computador não fala assim, né?
+[02:31] Ele fala em rajadas, bem curtas e passa a maior parte do dia mudo.
+[02:35] Exato.
+[02:35] Se fosse alugar uma linha dedicada pra computador,
+[02:38] alguém ia pagar o dia inteiro por um trecho que só ia usar por alguns segundos.
+[02:42] Nossa, inviável.
+[02:43] E tem o risco de queda também, não tem?
+[02:45] Com certeza.
+[02:46] Como o caminho era exclusivo, se aquele fio específico fosse cortado...
+[02:50] A ligação caía na hora.
+[02:51] Caía e não tinha nenhum outro jeito da mensagem chegar.
+[02:54] Eles precisavam de um fio que servisse pra um monte de gente ao mesmo tempo.
+[02:58] E que a mensagem chegasse do outro lado,
+[03:00] mesmo se um pedaço daquele caminho sumisse do lado, sabe?
+[03:03] Era um mínimo pra coisa funcionar em grande escala.
+[03:05] Aperte o próximo.
+[03:08] Então, pra fugir da lógica do telefone,
+[03:10] a saída técnica que eles criaram foi a comutação de pacotes.
+[03:13] Ah, esse nome é famoso.
+[03:15] Mas como é que isso funcionava na prática?
+[03:17] Em vez de reservar o caminho todo,
+[03:19] o sistema pegava a mensagem e picava em pedaços bem pequenos.
+[03:22] Tá, e aí?
+[03:23] Aí, no rosto de cada pedacinho,
+[03:26] a máquina escrevia o endereço final de entrega
+[03:29] e o número que ele ocupava na fila,
+[03:31] tipo pra montar de volta.
+[03:32] Hum, é tipo aquela ideia da mudança, né?
+[03:35] Como assim?
+[03:35] Imagina que na telefonia clássica era como fechar uma estrada inteira
+[03:39] só pro seu caminhão de mudança passar.
+[03:42] Um desperdício de estrada.
+[03:43] Nossa, total.
+[03:44] Na comutação de pacotes,
+[03:46] é como colocar sua mudança inteira em várias caixas separadas,
+[03:50] colocar o endereço em cada caixa
+[03:52] e despachar elas por caminhões e estradas diferentes, sabe?
+[03:56] Ah, sim.
+[03:57] E as caixas vão se misturando com as caixas de outras pessoas na estrada.
+[04:01] Exato.
+[04:01] E tem, recebe tudo na porta de casa que remonta a mobília.
+[04:05] É bem isso, Meiros.
+[04:06] E esse jeito de picar os pacotes
+[04:08] gerou três consequências fundamentais.
+[04:10] A primeira é que ninguém reserva nada.
+[04:12] O fio leva mil conversas misturadas.
+[04:15] Ocupando cada espacinho vazio no cabo.
+[04:18] A segunda é resistência.
+[04:19] Se um caminho cai no meio da rota,
+[04:21] as próximas caixas dos próximos pacotes
+[04:24] percebem sozinhos e pegam outro caminho.
+[04:26] Desviam o trajeto sem ninguém precisar agir.
+[04:29] Isso.
+[04:30] E a terceira, que é a mais forte de todas.
+[04:32] A falta de um chefe.
+[04:33] Isso.
+[04:34] Não tem nenhum computador central mandando no processo.
+[04:37] Cada ponto de cruzamento de rede só lê etiqueta
+[04:40] e empurra pro vizinho que parece estar mais perto do destino.
+[04:43] Tudo empurrando pra frente.
+[04:45] Aperte o próximo.
+[04:46] E tudo isso aí virou realidade prática no dia 29 de outubro de 1969.
+[04:51] Foi o dia que uma agência do governo americano ligou a primeira rede assim, certo?
+[04:55] Certo.
+[04:56] A famosa ARPANET.
+[04:58] Foi a primeira vez que eles testaram a coisa toda.
+[05:01] E a primeira mensagem foi até engraçada, né?
+[05:03] Porque uma universidade na Califórnia
+[05:06] tentou entrar numa máquina que tava centenas de quilômetros.
+[05:09] E a ideia era só mandar uma palavra simples, não era?
+[05:12] Sim, eles tinham que digitar a palavra L, O-G-I-N.
+[05:16] Mas a máquina do outro lado caiu de um jeito feio logo na segunda letra.
+[05:21] Nossa, falhou rápido.
+[05:22] Muito rápido.
+[05:24] Então a primeira mensagem histórica que passou na rede foi só a letra L e a letra O.
+[05:29] É, o comerto de tecnologia é sempre assim.
+[05:32] Mas o curioso é que no final daquele ano de 1969
+[05:36] tinham só quatro máquinas ligadas no total.
+[05:39] Só quatro, mas por que tão poucas?
+[05:41] O motivo oficial do projeto era só compartilhar o uso de computadores gigantes e caros à distância.
+[05:47] Ah, pra dividir a conta do processamento, né?
+[05:49] Exato, porque não dava pra toda a universidade ter urum.
+[05:53] Mas o grande marco daquele dia não foi economizar dinheiro, foi a prova de conceito.
+[05:58] Provar que os pacotes picados realmente viajam,
+[06:02] encontram o caminho sozinhos e se remontam lá na frente.
+[06:05] E principalmente que o sistema preempeça em uma autoridade central ali coordenando tudo.
+[06:10] Aperte o próximo.
+[06:11] É, e a gente avança um pouco pra 1971.
+[06:15] E surge um uso que ninguém do governo tinha planejado.
+[06:18] Ah, essa história é muito boa.
+[06:20] Alguém pegou um programa de deixar recado no computador
+[06:23] e juntou com um programa de copiar arquivos pela rede, não foi?
+[06:27] Isso mesmo.
+[06:28] E foi assim desse improviso que nasceu o correio eletrônico.
+[06:32] O famoso e-mail.
+[06:33] Mas e aquele detalho do endereço?
+[06:35] Ah, a rouba, né?
+[06:37] Eles precisavam de um jeito prático pra separar quem era a pessoa que ia receber da máquina
+[06:42] que ela tava usando.
+[06:43] Precisavam de um símbolo no meio.
+[06:45] Isso.
+[06:46] E eles escolheram a rouba?
+[06:48] Porque primeiro, quase ninguém usava isso no teclado no dia a dia.
+[06:52] Então não confundia com o resto do texto.
+[06:54] E segundo, porque em inglês o nome daquele símbolo já significa em, né?
+[06:58] Exato.
+[06:59] O et.
+[07:00] Então você lia fulano em tal máquina.
+[07:03] E isso acabou engolindo todo o resto da rede em muito pouco tempo.
+[07:07] O correio eletrônico virou a função principal.
+[07:09] O que deixa uma lição enorme pra gente.
+[07:12] Quem constrói a rede não decide como ela vai ser usada de verdade.
+[07:16] É, o governo fez tudo aquilo pra máquina falar com máquina e economizar grana.
+[07:20] Mas o que implacou de verdade foi gente querendo falar com gente.
+[07:24] Aperte o próximo.
+[07:25] Só que o sucesso daquela primeira rede do governo acabou criando um caos nos
+[07:29] anos 70.
+[07:30] Como assim, caos?
+[07:31] Como tecnologia se provou boa, várias outras redes começaram a nascer.
+[07:35] Redes de rádio, redes por satélite, redes privadas de grandes empresas, redes de outros
+[07:40] países.
+[07:41] Assim, o mundo começou a se conectar.
+[07:43] Só que elas eram totalmente incompatíveis entre si.
+[07:47] Dentro da bolha de cada uma, tudo rodava leso.
+[07:50] Mas de uma pra outra, silêncio total não se entendiam.
+[07:54] E tentar obrigar todo mundo a usar a mesma rede física era impossível.
+[07:59] Não existia um chefe mundial pra mandar todo mundo jogar os equipamentos no lixo.
+[08:03] E aí, qual foi a saída que eles acharam?
+[08:05] A saída foi genial porque eles decidiram simplesmente não mexer nas redes de ninguém.
+[08:09] Então, como eles resolveram?
+[08:11] Eles criaram um envelope digital em comum, uma caixa padrão que qualquer rede aceitasse
+[08:16] carregar.
+[08:17] Cara, é exatamente a mesma lógica do container no transporte naval.
+[08:21] Como assim?
+[08:22] Explica essa do container.
+[08:23] Imagina um navio cargueiro, um trem e um caminhão.
+[08:26] Eles são veículos completamente diferentes, não são?
+[08:29] Então, o que a indústria padronizou não foi o veículo, foi a caixa.
+[08:34] O container tem aquele encaixe padrão no mundo inteiro.
+[08:38] Ninguém precisa trocar de veículo, mas a carga do container viaja por todos eles.
+[08:44] Perfeito?
+[08:45] É a mesma coisa.
+[08:46] O navio leva a caixa, o trem pega a mesma caixa.
+[08:48] E, no caso dos computadores, o nome da regra que moldou esse container digital
+[08:55] ganhou uma sigla famosa.
+[08:57] A tal da T, C, P, barra e P, né?
+[09:00] Essa mesma.
+[09:01] E ela tem duas metades bem divididas.
+[09:04] A metade do IP cuida só do endereço do lado de fora da caixa e vai empurrando o pacote
+[09:10] de rede em rede.
+[09:11] E a outra metade?
+[09:12] A metade do TCP funciona como um conferente.
+[09:16] Ela só fica nas pontas garantindo que tudo chegou inteiro, pedindo reenvio se sumiu
+[09:21] algo e remontando a mensagem final.
+[09:23] Aperte o próximo.
+[09:25] Esse container digital teve um dia certinho para entrar em ação.
+[09:28] Foi no dia 1º de janeiro de 1983.
+[09:32] Ah, o dia da virada?
+[09:34] Isso.
+[09:35] Todas as máquinas daquela rede antiga do governo trocaram para essa língua nova
+[09:40] no exato mesmo dia.
+[09:42] Foi tipo um tudo ou nada, né?
+[09:44] Não dava para a metade falar a língua antiga e a outra metade os envelopes novos.
+[09:48] Não dava mesmo.
+[09:49] Quem não estava com o sistema atualizado naquele dia primeiro simplesmente acordou
+[09:53] desconectado e ficou de fora até se arrumar.
+[09:56] E muita gente enxerga essa data como o nascimento de verdade da internet.
+[10:00] Sim.
+[10:01] Porque ela não nasceu passando um super cabo novo, nasceu pelo acordo, pelo simples
+[10:06] fato de falarem o mesmo protocolo.
+[10:09] E isso traz o ponto-chave de tudo o que a gente está falando.
+[10:12] A internet não venceu porque era a rede técnica mais rápida ou a mais perfeita
+[10:17] do mundo.
+[10:18] Ela venceu porque ela exigia um mínimo.
+[10:20] Ninguém precisou jogar própria infraestrutura fora.
+[10:22] A única coisa que pediam era, por favor, carregue esse envelope aqui, sabe?
+[10:27] É a vitória absurda do padrão aberto que a gente já viu no episódio dos computadores
+[10:31] de casa.
+[10:32] Mas agora em escala global.
+[10:34] Aperte o próximo.
+[10:36] Agora o problema desses envelopes TC, P, Barra e P é que eles adoram números.
+[10:42] Tudo depende de endereço numérico.
+[10:44] E humanos odeiam decorar números longos para falar com as máquinas, a gente gosta
+[10:48] de nome.
+[10:49] Muito mais fácil.
+[10:51] E no começo, para resolver isso, a saída era bem rústica.
+[10:54] Tinha literalmente um arquivo de texto central que ficava num computador só.
+[10:58] Um bloco de notas gigante.
+[11:01] Quase isso.
+[11:02] E nele ficava a lista inteira atualizada à mão com os nomes e os números de todas
+[11:07] as máquinas.
+[11:08] Nossa, mas isso não quebra tudo quando entram milhares de máquinas?
+[11:13] Quebra totalmente.
+[11:14] E pior, ter um arquivo centralizado era exatamente tudo o que a filosofia da
+[11:18] rede queria evitar desde o início.
+[11:20] E aí entra a solução de 1983, o sistema de nomes que usa a sigla de NS.
+[11:26] Que é maravilhoso, porque funciona tipo uma lista telefônica, só que ela não mora em
+[11:30] lugar nenhum.
+[11:31] Como assim não mora em lugar nenhum?
+[11:32] Assim, se você quer achar uma máquina pelo nome, seu computador pergunta para o servidor
+[11:36] vizinho.
+[11:37] Se o vizinho não souber o número, ele sabe exatamente para quem repassar a pergunta.
+[11:41] Ah, entendi.
+[11:42] Ele vai dividindo o nome, né, lendo o endereço da direita para a esquerda e repassando
+[11:46] o problema.
+[11:47] Isso, da direita para a esquerda.
+[11:48] O grande resultado disso é que sumiu o chefão central.
+[11:51] Qualquer um hoje cria um nome de site sem ter que pedir licença para um órgão supremo
+[11:56] do governo.
+[11:57] Aperte o próximo.
+[11:58] Chegando no final dos anos 80, a rede era gigantesca, mas ainda muito restrita.
+[12:02] Restrita a governo, centro de pesquisa e corponações enormes, né?
+[12:06] Isso.
+[12:07] E faltava uma cara mais amigável.
+[12:09] Usar a rede era encarar uma tela escura, decorando comandos bem complicados só
+[12:14] para transferir um texto.
+[12:16] Faltava um motivo bom para a pessoa normal querer entrar ali.
+[12:19] E a virada disso veio de um lugar bem inesperado em 1989, uma proposta feita no Laboratório
+[12:26] Europeu de Física de Partículas, que é conhecido pela sigla CRN.
+[12:31] Eles tinham um problema enorme de organização por lá, né?
+[12:34] Um problema terrível.
+[12:36] Eles produziam papéis e mais papéis de pesquisa espalhados em milhares de computadores
+[12:41] por vários países.
+[12:43] Acha o documento certo, era um caos.
+[12:45] E para arrumar a bagunça, eles juntaram três ideias muito simples, mas potentes.
+[12:50] Primeiro, eles criaram um endereço único e absoluto para cada documento, para saber onde
+[12:55] ele morava.
+[12:56] Tá.
+[12:57] Segundo, uma regrinha super leve de bater no servidor e pedir entrega desse documento
+[13:01] na sua tela.
+[13:02] E a terceira, foi a cereja do bolo.
+[13:04] O texto com os links.
+[13:05] Isso.
+[13:06] O texto comum, só que com ligações ocultas.
+[13:09] Você clica numa palavra e ela te puxa direto para outro documento relacionado, sem
+[13:14] você nem saber onde ele está guardado fisicamente.
+[13:17] Cara, isso transforma uma montanha de relatórios mortos numa verdadeira teia clicarvel.
+[13:22] Totalmente.
+[13:23] E o grande momento mesmo foi quando essa teia foi para o ar.
+[13:27] Primeiro num grupo fechado lá em agosto de 1991.
+[13:30] Mas a data que mudou o curso das coisas foi 30 de abril de 1993, né?
+[13:35] Sim.
+[13:36] O dia em que o laboratório abriu mão de qualquer cobrança e colocou tudo isso em
+[13:40] domínio público.
+[13:41] De graça.
+[13:42] E se eles tivessem cobrado licença por cada servidor que quisesse fazer um link clicarvel,
+[13:47] ah, a história morria ali mesmo.
+[13:49] Com toda certeza.
+[13:51] E a sufocar o crescimento.
+[13:53] Aperte o próximo.
+[13:54] Só que, mesmo com a invenção dessa teia grátis, o jeito de ler isso ainda era muito
+[13:59] feio.
+[14:00] Os primeiros programas que as pessoas usavam só linhas e mais linhas de texto cru.
+[14:05] E o que mudou isso?
+[14:06] Tudo muda de patamar em 1993, com a chegada de um programa chamando Mosaic.
+[14:12] Um navegador novo.
+[14:14] Sim.
+[14:15] E o grande pulo do Mosaic foi mostrar imagens misturadas no meio do texto.
+[14:19] Ele rodava de boa nas máquinas que as pessoas já tinham em casa e funcionava perfeitamente
+[14:24] pelo clique do mouse.
+[14:25] Tipo, só apontar, acertinha e clicar, ao invés de digitar código na tela.
+[14:31] Exato.
+[14:32] É um encontro de mundos absurdo.
+[14:34] Foi a mesma revolução visual que a gente conversou no episódio anterior, tirando o computador
+[14:39] do escritório, só que agora aplicando isso na rede.
+[14:42] Interface gráfica, encontrando a rede global.
+[14:45] E essa mistura gerou uma expansão gigantesca para fora da área acadêmica e comigou lógico
+[14:53] ali em 1995.
+[14:54] É o ano que a espinha dorsal americana deixa de ser bancada e controlada pelo governo
+[14:59] e abre as portas totalmente para o mundo do comércio.
+[15:02] Aperte o próximo.
+[15:03] E a gente paralisa a nossa jornada no tempo justamente aí, em 1995.
+[15:08] A rede já virou uma coisa comercial, a gente usa nomes de palavras para achar as coisas
+[15:14] e não mais números, tem toda uma cara visual com imagens.
+[15:18] E tipo, os computadores já saem das lojas prontos para plugar na tomada e navegar.
+[15:23] É o momento de fazer o balanço final dessa nossa etapa da sala para o mundo.
+[15:27] Pense em tudo o que rolou em três passos.
+[15:29] Primeiro, o computador era gigante, caro e vivia crancado da empresa.
+[15:33] Depois, no nosso episódio anterior, a gente viu ele sendo levado para dentro de casa.
+[15:39] Isso, ganhando aquele padrão e a interface gráfica amigável.
+[15:43] E nesse nosso encontro de agora, a gente acabou de vez com a solidão dele.
+[15:48] O computador deixou de ser uma ilha isolada no quarto.
+[15:51] Deixou mesmo.
+[15:53] E nessas duas frentes de inovação, quem venceu nunca foi quem fez o sistema mais
+[15:57] travado e perfeito de laboratório.
+[16:00] Quem venceu foi quem exigiu menos do usuário, sabe?
+[16:03] Quem pediu o mínimo para entrar no jogo.
+[16:05] O padrão aberto venceu mais uma vez.
+[16:08] Só que resolver esse problema de conectar as máquinas espalhadas pelo planeta
+[16:13] criou um novo abismo para a gente.
+[16:14] Qual?
+[16:15] Agora que está todo mundo ligado, essas máquinas começaram a despejar uma
+[16:19] montanha praticamente infinita de dados a cada segundo.
+[16:22] Texto, foto, número, log de servidor o tempo todo.
+[16:26] Exato.
+[16:27] E aquele método clássico de programação que a gente usou até agora.
+[16:31] Lembra?
+[16:31] Descrever a regra passo a passo à mão.
+[16:34] Lembra lá das primeiras máquinas furando o papelão, dizendo exatamente o que o
+[16:39] computador tinha que fazer.
+[16:40] Então esse método não dá mais conta do volume de hoje.
+[16:43] Não dá para um ser humano escrever a regra matemática exata para
+[16:47] ensinar a máquina, tipo reconhecer um rosto numa foto meio borrada.
+[16:51] Ou sei lá, traduzir uma frase cheia de gírias e sarcasmo para outro
+[16:54] idioma.
+[16:55] É complexo demais para escrever a regra.
+[16:58] Demais.
+[16:59] E é exatamente aí que fica a nossa provocação final para entrar na última
+[17:02] etapa da série.
+[17:03] E se, no meio dessa tempestade de dados, em vez da gente sentar e ficar tentando
+[17:09] escrever a regra pronta para a máquina seguir, a gente simplesmente
+[17:13] deixasse a máquina achar a regra sozinha, só olhando para os dados.

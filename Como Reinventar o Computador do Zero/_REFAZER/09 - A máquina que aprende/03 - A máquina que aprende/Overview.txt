@@ -1,0 +1,71 @@
+A MAQUINA QUE APRENDE - CONTEXTO
+================================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro episodio da etapa A MAQUINA QUE APRENDE, a nona e ultima etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco ate
+a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1943 a 2012, em
+ORDEM CRONOLOGICA, e conta a historia PELAS PESSOAS, com nome e ficha, usando cada passo
+pra mostrar como o hardware e o software melhoram um empurrando o outro. Aqui a ideia
+veio quarenta anos antes do hardware que a tornou util.
+
+Por que este episodio existe: os dois anteriores contaram as pecas correndo (o
+processador ate 2006, a placa de video ate 2007, aberta pra qualquer conta repetida). O
+anterior perguntou se existe problema que nao se sabe escrever como programa mas que se
+resolve com muita conta repetida, e se a resposta estaria numa gaveta desde 1958. A
+serie volta no tempo mais uma vez, pra buscar uma IDEIA.
+
+O QUE E: um neuronio artificial soma entradas, cada uma passando por um peso (um botao
+giratorio), e dispara se a soma passar de um limite. Aprender e girar cada botao um
+pouquinho na direcao que diminui o erro, milhares de vezes, a partir de exemplos. O
+programa nao e escrito: e achado.
+
+O fio, em doze passos:
+
+1. A ideia na gaveta. Retomada de 2007, o que e a maquina que aprende, os botoes, a
+   volta no tempo pra buscar uma ideia, o intervalo 1943-2012.
+2. 1943-1960. McCulloch e Pitts (1943): o neuronio como porta logica. Rosenblatt, no
+   laboratorio aeronautico da Cornell: o perceptron (1957, simulado num IBM 704),
+   coletiva da Marinha em 08/07/1958 e o New York Times ("embriao de um computador que
+   vai andar, falar, ver, escrever e ter consciencia"), e o Mark I Perceptron
+   construido em 1959-60: 400 fotocelulas, pesos em potenciometros girados por motor.
+3. 1969. Minsky e Papert, "Perceptrons": uma camada nao aprende o ou exclusivo; sem jeito
+   de treinar camadas do meio e sem hardware pra tentar, a verba seca; o livro e
+   apontado como gatilho do primeiro inverno. Rosenblatt morre em 1971. A gaveta.
+4. 1974-1986. A retropropagacao do erro: escrita por Werbos na tese de 1974 (ninguem
+   leu) e de novo por Rumelhart, Hinton e Williams na Nature de 09/10/1986 (todo mundo
+   leu). Redes de varias camadas aprendem; o hardware roda devagar.
+5. 1989-1998. LeCun, na Bell Labs: rede convolucional le digitos do codigo postal
+   (1989), LeNet-5 (1998); maquinas de ler cheque da AT&T/NCR desde 1996, cerca de 10%
+   dos cheques dos EUA por volta de 2001, em chip proprio.
+6. 1995-2006. Segundo inverno: Vapnik e a maquina de vetores de suporte (1995) ganham
+   os testes; redes saem de moda; Hinton em Toronto persiste; programa do CIFAR (2004);
+   "aprendizado profundo" (2006). Faltam dado e hardware.
+7. 2007-2009. A placa de jogo treina a rede: CUDA (2007); Ng, em Stanford, com dois
+   alunos (junho de 2009): ate 70 vezes mais rapido que um processador de dois nucleos.
+8. 2007-2010. Li monta o ImageNet: 14 milhoes de imagens, 22 mil categorias, rotuladas
+   por pessoas pelo servico de pequenas tarefas da Amazon; apresentado em junho de 2009;
+   desafio anual desde 2010 (1,2 milhao de imagens, mil categorias); erro do melhor:
+   28% (2010), 25,8% (2011), sem rede neural.
+9. 2012. AlexNet: Krizhevsky (sem ficha: ano nao publico) e Sutskever, no grupo de
+   Hinton em Toronto: 8 camadas, 60 milhoes de pesos, treinada em DUAS GeForce GTX 580
+   de jogo por 5 a 6 dias, codigo em CUDA escrito a mao; 30/09/2012: 15,3% contra 26,2%
+   do segundo.
+10. O programa achado: ninguem escreveu o que e um gato; 60 milhoes de numeros girados
+   pelo erro sao o programa, e ninguem sabe le-lo. Desde a etapa 5 o programa era
+   escrito; agora e achado.
+11. 2013-2015. Google compra a empresa dos tres (mar/2013); Facebook contrata LeCun
+   (dez/2013); todo mundo migra pra rede e placa; erro do ImageNet em 2015: 3,6%; a
+   NVIDIA passa a vender a placa pra treinar rede.
+12. Onde para: 2012. Balanco das pessoas. Licao: a ideia estava na gaveta desde 1958,
+   como o Alto da Xerox; o que mudou foi a placa ficar barata. Pergunta que abre o
+   proximo episodio: a rede olha a imagem inteira de uma vez; e texto, que e uma fila de
+   palavras?
+
+O fio hardware e software: o Mark I precisou de botao fisico; a critica de 1969 venceu
+porque nao havia hardware pra testar camadas a mais; o algoritmo de 1974/1986 esperou a
+peca; a placa de jogo (2007) e o dado (2009) chegaram por outros motivos; em 2012 duas
+placas de jogo fizeram em uma semana o que 1986 nao podia. O hardware barato mudou o que
+o software e: de escrito a achado.
+
+Use este contexto apenas como apoio.

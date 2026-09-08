@@ -1,0 +1,7 @@
+Titulo: A placa de vídeo que virou supercomputador
+Notebook: 09-02-A placa de vídeo
+
+Descricao:
+A Placa de Vídeo é o tema central deste panorama histórico que detalha a evolução do hardware gráfico entre 1985 e 2007. O texto descreve como componentes originalmente criados para jogos eletrônicos transformaram-se em poderosas ferramentas de processamento geral através da interação constante entre designers de chips e desenvolvedores de software. Figuras fundamentais como Jensen Huang e John Carmack são apresentadas para ilustrar a transição de placas simples para as modernas GPUs programáveis. A narrativa destaca momentos decisivos, incluindo a padronização de linguagens como Direct3D e o surgimento do CUDA, que permitiu o uso de placas em cálculos científicos. Por fim, a obra demonstra que a necessidade de processamento paralelo na indústria de entretenimento acabou preparando o terreno tecnológico para os desafios da computação moderna.
+
+Link: https://notebook.google.com/notebook/32b7dd90-2d93-44da-b86a-5b647be65958

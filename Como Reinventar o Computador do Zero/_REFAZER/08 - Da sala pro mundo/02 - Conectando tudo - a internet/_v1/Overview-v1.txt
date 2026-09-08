@@ -1,0 +1,78 @@
+CONECTANDO TUDO: A INTERNET - CONTEXTO
+======================================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie Como
+Reinventar o Computador do Zero. A serie reconstroi o computador do zero, do abaco ate
+a inteligencia artificial, uma peca por episodio. Este episodio cobre de 1969 a 1995,
+e por isso comeca voltando no tempo: o episodio anterior parou em 1990.
+
+A serie tem duas trilhas. A trilha principal conta a linha do tempo e so carrega o que
+a proxima peca precisa. Todo aprofundamento (uma peca por dentro, a vida de um
+inventor, um conceito esmiucado) mora numa trilha separada de episodios extras,
+avulsos. Este episodio e da trilha principal e nao conta biografia de ninguem.
+
+Onde a serie estava: o episodio anterior levou o computador pra dentro de casa. Ele
+virou produto pronto, ganhou motivo pra existir, virou padrao aberto fabricado por
+muita gente e ganhou uma cara que qualquer pessoa entende. Sobrou um problema: cada
+uma dessas maquinas e uma ilha. O que uma sabe, so ela sabe, e passar um arquivo de
+uma pra outra e gravar num disquete e atravessar a sala com ele na mao.
+
+O PROBLEMA QUE ESTE EPISODIO RESOLVE, E QUE E MAIOR DO QUE PARECE: ligar dois
+computadores por um fio ja se fazia. O problema dificil e outro: fazer redes
+DIFERENTES, de donos diferentes, com maquinas diferentes e regras diferentes, virarem
+uma rede so, sem ninguem no comando. A internet nao e uma rede. E um acordo entre
+redes.
+
+Este episodio responde em seis passos:
+
+1. POR QUE O TELEFONE NAO SERVIA. A rede telefonica e de circuito: ela reserva um
+   caminho inteiro so pra sua conversa, e o caminho fica reservado mesmo enquanto
+   ninguem fala. Computador nao conversa assim. Ele fala em rajada curta e fica calado
+   a maior parte do tempo. Alugar linha dedicada pra isso e pagar o dia inteiro por
+   alguns segundos de uso.
+2. A COMUTACAO DE PACOTES, que e a peca central. Em vez de reservar caminho, picar a
+   mensagem em pedacos pequenos e escrever no rosto de cada pedaco pra onde ele vai.
+   Cada pedaco viaja sozinho, podendo pegar caminhos diferentes, e a maquina do outro
+   lado remonta na ordem. Ninguem reserva nada e o mesmo fio serve pra todo mundo ao
+   mesmo tempo.
+3. 1969: A ARPANET SAI DO PAPEL. Em 29 de outubro de 1969, a primeira mensagem entre
+   duas maquinas, de uma universidade da California pra um instituto de pesquisa a
+   algumas centenas de quilometros. Tentaram escrever a palavra LOGIN; a maquina do
+   outro lado caiu na segunda letra, e a primeira mensagem da historia da rede foi
+   L, O. No fim daquele ano eram quatro maquinas ligadas.
+4. 1971: O USO QUE NINGUEM TINHA ENCOMENDADO. A rede foi feita pra pesquisador
+   compartilhar computador caro a distancia. O que explodiu foi outra coisa: mandar
+   recado pra pessoa. O correio eletronico nasce como um puxadinho e vira o uso
+   principal da rede. O simbolo arroba foi escolhido pra separar a pessoa da maquina
+   porque quase ninguem usava e ele ja significava "em".
+5. 1974 A 1983: A LINGUA COMUM. Nos anos setenta aparecem outras redes, por radio, por
+   satelite, de universidades e de empresas, cada uma com regra propria. A saida nao
+   foi obrigar todo mundo a ter a mesma rede: foi definir um envelope comum que
+   qualquer rede sabe carregar. Cada rede continua sendo o que e por dentro, e o
+   envelope atravessa todas. Em 1 de janeiro de 1983 as maquinas da ARPANET trocaram
+   de lingua no mesmo dia, e essa data e o nascimento da internet como a gente conhece.
+   No mesmo ano aparece o sistema de nomes, que troca numero por nome sem lista
+   central.
+6. 1989 A 1995: O MOTIVO E A CARA. Ate o fim dos anos oitenta a rede era universidade,
+   governo e empresa grande, e usar ela era decorar comando: o mesmo problema que o
+   episodio anterior resolveu no computador de mesa. Em 1989 um laboratorio de fisica
+   na Europa propoe um jeito de organizar documento espalhado, com tres pecas: um
+   endereco pra cada documento, uma regra simples de pedir e entregar, e um jeito de
+   escrever texto com ligacao apontando pro endereco de outro. Em agosto de 1991 isso
+   vai pro ar pra qualquer um, e em 30 de abril de 1993 o laboratorio poe tudo em
+   dominio publico, de graca. Em 1993 aparece o navegador que mostra imagem junto com
+   o texto e roda em maquina comum, e o crescimento sai do controle. Em 1995 a rede
+   deixa de ser academica e abre pro comercio.
+
+O ponto que o episodio precisa deixar claro: o que fez a internet vencer nao foi ser a
+melhor rede. Foi nao exigir que ninguem trocasse de rede. Ela pediu o minimo de todo
+mundo, e por isso todo mundo pode entrar sem pedir licenca a ninguem. E a mesma licao
+do padrao aberto do episodio anterior, agora do tamanho do mundo.
+
+O que muda pra serie no fim do episodio: agora existe maquina em todo lugar, todas
+ligadas, e todas despejando na rede o que fazem. Sobra uma quantidade de dado que
+nenhuma pessoa consegue ler na mao, e nenhum programa escrito regra por regra da conta
+de organizar. Isso abre a ultima etapa.
+
+Use este contexto apenas como apoio.

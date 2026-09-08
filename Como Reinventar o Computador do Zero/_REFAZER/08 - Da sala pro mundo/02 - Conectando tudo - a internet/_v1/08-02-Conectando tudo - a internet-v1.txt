@@ -1,0 +1,107 @@
+Inicie dizendo: Conectando Tudo, a Internet
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Conectando Tudo a Internet.txt
+enviado como fonte. Esse arquivo contem o roteiro completo do episodio, dividido por
+tela.
+
+Este e o segundo e ultimo episodio da etapa DA SALA PRO MUNDO, a oitava etapa da serie
+Como Reinventar o Computador do Zero. O episodio anterior levou o computador pra dentro
+de casa e terminou com uma pergunta no ar: se ja existem milhoes de maquinas iguais
+espalhadas pelo mundo, o que falta pra elas conversarem entre si? Este episodio inteiro
+e a resposta dela.
+
+ESTE EPISODIO COBRE DE 1969 A 1995. Dizer esse intervalo logo na abertura e, no
+encerramento, dizer em que ano o episodio para. O episodio anterior parou em 1990 e
+este comeca em 1969: a serie esta VOLTANDO NO TEMPO de proposito, e a tela 1 avisa isso
+em uma frase, explicando que a rede foi construida dentro da universidade ao mesmo
+tempo em que o computador de mesa nascia la fora.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 11 telas. O
+audio TEM que pedir "aperte o Proximo" exatamente 10 vezes, uma no fim de cada tela, na
+ordem do roteiro. A frase e sempre essa, "aperte o Proximo", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a
+pagina tem 11 telas e que quem esta so ouvindo acompanha normalmente.
+
+ANOS POR EXTENSO E DEVAGAR. Dizer "mil novecentos e sessenta e nove", "mil novecentos e
+setenta e um", "mil novecentos e oitenta e tres", "mil novecentos e oitenta e nove",
+"mil novecentos e noventa e um", "mil novecentos e noventa e tres", "mil novecentos e
+noventa e cinco". Ano dito rapido sai embolado e vira outro numero.
+
+SIGLAS SOLETRADAS, NA PRIMEIRA VEZ. ARPANET fala-se "arpa-nete", com ARPA soletrado na
+primeira vez. TCP/IP e SEMPRE soletrado, "te, ce, pe, barra, i, pe", nunca falado como
+palavra. DNS e soletrado, "de, ene, esse". Mosaic fala-se "mo-zeic". O laboratorio
+europeu de fisica de particulas entra pelo nome por extenso na primeira vez, e so
+depois pela sigla, soletrada.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "o material que a
+gente recebeu", "a analogia autorizada" nem nada parecido. As analogias entram como
+ideia de quem esta falando, sem apresentar de onde vieram.
+
+SEM MODELO TRIDIMENSIONAL. Este episodio nao tem peca pra girar na capa. NAO convidar
+ninguem a mexer, girar ou abrir nada.
+
+FOCO: o problema de verdade nao e ligar dois computadores, e sim fazer redes DIFERENTES
+virarem uma rede so sem ninguem no comando. A rede telefonica reserva um caminho inteiro
+e nao serve pra computador, que fala em rajada. A comutacao de pacotes: picar a mensagem
+em pedacos com endereco escrito em cada um, cada pedaco viajando sozinho, sem lugar
+central mandando. Mil novecentos e sessenta e nove: a ARPANET no ar, a primeira mensagem
+que virou L, O porque a outra maquina caiu, e quatro maquinas no fim do ano. Mil
+novecentos e setenta e um: o correio eletronico, que ninguem tinha encomendado, e a
+arroba separando pessoa de maquina. Os anos setenta com muitas redes incompativeis, e a
+saida de nao mexer em nenhuma delas: um envelope comum que qualquer rede carrega. Em
+primeiro de janeiro de mil novecentos e oitenta e tres, todo mundo troca de lingua no
+mesmo dia. No mesmo ano, o sistema de nomes que substitui a lista central. Mil novecentos
+e oitenta e nove: um laboratorio europeu de fisica propoe endereco por documento, uma
+regra de pedir e entregar, e texto com ligacao apontando pra outro documento. Agosto de
+mil novecentos e noventa e um vai pro ar; trinta de abril de mil novecentos e noventa e
+tres cai em dominio publico. Mil novecentos e noventa e tres: o navegador que mostra
+imagem junto com o texto e roda em maquina de casa. Mil novecentos e noventa e cinco: a
+rede abre pro comercio.
+
+O PONTO QUE NAO PODE FALTAR: a internet nao venceu por ser a melhor rede. Venceu por
+nao exigir que ninguem trocasse de rede. Ela pede o minimo de todo mundo, e por isso
+qualquer um entra sem pedir licenca. E a mesma licao do padrao aberto do episodio
+anterior, agora do tamanho do mundo.
+
+SEM BIOGRAFIA. Esta e a trilha principal da serie. NAO citar nome proprio de
+pesquisador, de estudante, de quem escreveu qual proposta, nem premio ou disputa de
+credito. As instituicoes (universidade, laboratorio, agencia do governo) e os produtos
+podem ser citados pelo nome; as pessoas nao.
+
+SEM GANCHO DE EXTRA. Este episodio nao anuncia nenhum episodio extra.
+
+ESTE EPISODIO FECHA A ETAPA. Na ultima tela, alem de fechar o episodio, fazer o balanco
+curto da etapa inteira e deixar no ar a pergunta que abre a etapa final da serie: e se,
+em vez de a gente escrever a regra pra maquina seguir, a gente deixasse a maquina achar
+a regra sozinha, olhando os dados? NAO explicar aprendizado de maquina, rede neural nem
+inteligencia artificial: e a etapa seguinte.
+
+DURACAO: cerca de 25 minutos.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "e aqui que fica realmente interessante", "a genialidade por
+tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "conectou o mundo".
+
+---------------
+
+Use SOMENTE as analogias descritas no roteiro. NAO invente analogias novas. As unicas
+autorizadas sao a ligacao telefonica contra a mudanca em caixas numeradas (circuito
+reservado contra comutacao de pacotes), o conteiner (redes diferentes carregando o mesmo
+envelope sem trocar de veiculo) e a lista telefonica que nao mora em lugar nenhum (o
+sistema de nomes).
+
+Use tambem o Overview.txt como contexto curto.

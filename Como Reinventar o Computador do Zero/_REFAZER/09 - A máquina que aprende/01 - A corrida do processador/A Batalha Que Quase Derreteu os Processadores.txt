@@ -1,0 +1,7 @@
+Titulo: A Batalha Que Quase Derreteu os Processadores
+Notebook: 09-01-A corrida do processador
+
+Descricao:
+As fontes detalham a evolução técnica e histórica dos processadores entre 1993 e 2006, período marcado pela intensa disputa entre Intel e AMD. O texto descreve como o hardware inicialmente buscou velocidade através do aumento da frequência do relógio e de técnicas como a execução fora de ordem, permitindo que programas antigos rodassem mais rápido sem alterações. No entanto, em 2004, a indústria atingiu um limite físico causado pelo superaquecimento dos transistores, encerrando a era de ganhos automáticos de desempenho. A solução encontrada foi a transição para chips de múltiplos núcleos, transferindo para os programadores a responsabilidade de criar softwares paralelos para aproveitar o poder de processamento. Toda essa trajetória é narrada sob a ótica das pessoas e engenheiros que lideraram essas inovações, destacando que o progresso tecnológico depende da constante interação entre o design físico e a lógica do software.
+
+Link: https://notebook.google.com/notebook/ea3f4a59-39cf-4822-b5a1-899d68742b40
