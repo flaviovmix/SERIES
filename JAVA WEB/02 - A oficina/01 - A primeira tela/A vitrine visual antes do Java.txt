@@ -1,0 +1,7 @@
+Titulo: A vitrine visual antes do Java
+Notebook: 02-01-A primeira tela
+
+Descricao:
+Os textos apresentam o episódio A Primeira Tela, que marca o início da prática na segunda etapa da série Java Web. O foco central é a construção da interface de um sistema real utilizando HTML e CSS, permitindo que o aluno visualize resultados imediatos antes de avançar para a lógica de programação. O material descreve uma experiência interativa composta por seis telas, onde se explora a criação de uma lista de tarefas adaptável para celular e desktop. A abordagem pedagógica prioriza o entendimento das estruturas visuais e a organização de arquivos, deixando o comportamento dinâmico para momentos posteriores. Ao final, utiliza-se a analogia da vitrine para explicar que o navegador processa as mesmas tecnologias front-end, independentemente da linguagem de servidor utilizada. Essa base sólida prepara o estudante para integrar, no futuro, a interface desenvolvida com o ecossistema Java.
+
+Link: https://notebook.google.com/notebook/9130cc15-3c66-4374-8098-89a834664973

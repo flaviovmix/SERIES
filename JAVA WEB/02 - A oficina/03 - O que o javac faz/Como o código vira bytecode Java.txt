@@ -1,0 +1,7 @@
+Titulo: Como o código vira bytecode Java
+Notebook: 02-03-O que o javac faz
+
+Descricao:
+Os textos apresentam o terceiro episódio da série educativa Java Web, focado em explicar o papel do compilador javac e a estrutura interna dos arquivos de extensão .class. A explicação detalha que o desenvolvimento em Java envolve três partes fundamentais: o código-fonte, o bytecode intermediário e a JVM, que atua como uma máquina virtual capaz de traduzir instruções para qualquer processador. O conteúdo esclarece que o uso do bytecode permite a portabilidade do sistema, permitindo que o programador escreva o código uma única vez para ser executado em diferentes plataformas. Além disso, as fontes diferenciam erros de compilação de erros de execução e definem as siglas JDK, JRE e JVM para organizar o kit de ferramentas do desenvolvedor. Por fim, o material destaca que esse modelo de tradução intermediária não é exclusivo do Java, sendo uma lógica compartilhada por outras linguagens modernas como Python e C#.
+
+Link: https://notebook.google.com/notebook/9496d159-dd3e-4058-be7d-ca779ad1851c

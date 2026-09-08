@@ -1,0 +1,407 @@
+# Transcricao automatica (faster-whisper small) - 21.6 min
+# Fonte: A vitrine visual antes do Java.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] a primeira tela.
+[00:01] É.
+[00:02] E olha, é exatamente nessa primeira tela que é esmagadora a maioria de quem tenta
+[00:09] aprender a programar desiste, tipo desiste antes mesmo de começar de verdade, sabe?
+[00:15] Nossa, sim.
+[00:16] E o detalhe mais cruel dessa história toda é que o motivo da desistência quase nunca
+[00:21] é a dificuldade lógica da programação em si.
+[00:24] O grande balde de água fria costuma ser justamente aquela tela inicial que o
+[00:29] pessoal encara, que na maior parte das vezes é só uma janela do terminal
+[00:33] completamente preta, vazia e, sinceramente, bem sem graça.
+[00:38] Exato.
+[00:39] E isso contextualiza perfeitamente o nosso ponto de partida hoje.
+[00:44] Para quem acompanha a série, a gente sabe que a etapa anterior inteira, que foi
+[00:48] focada nos motivos para se estudar o assunto, passou sem uma única linha de
+[00:52] código.
+[00:53] Verdade, a gente não escreveu nada.
+[00:55] Nada.
+[00:56] O foco lá foi fechar a tese, né?
+[00:58] Ela tese de que um programa que funciona, mas que ninguém na equipe entende, é um risco
+[01:03] gigantesco.
+[01:04] E a gente também firmou o método de estudo.
+[01:07] Mas a promessa final daquela etapa foi que agora, na etapa chamada a oficina, a mão
+[01:12] ia finalmente para o teclado.
+[01:14] Aham.
+[01:15] E neste episódio, a gente vai detalhar exatamente por onde essa mão começa, o
+[01:19] que e o porquê a gente vai fazer.
+[01:22] O que acaba trazendo uma surpresa enorme para muita gente, porque veja bem, se
+[01:26] a série inteira carrega o nome de Java Web, a resposta mais óbvia seria começar
+[01:33] instalando o próprio Java, abrindo tal do terminal e digitando comandos lá dentro.
+[01:38] Mas não é isso que acontece.
+[01:41] A porta de entrada, na verdade, é a construção de uma tela visual usando HTML e CSS.
+[01:48] Sim, e é bom deixar claro que não se trata de um atalho, tá?
+[01:52] Ou de tentar pular etapas mais difíceis para facilitar as coisas.
+[01:56] É uma escolha super consciente com um motivo declarado por parte do aluno.
+[02:00] O raciocínio é muito direto.
+[02:02] Começar a jornada por um terminal que não mostra nada desanima qualquer um.
+[02:06] Com certeza.
+[02:07] Porque tipo, um programa de terminal clássico recebe instruções super complexas e no final
+[02:11] das contas imprime uma linha de texto em preto e branco dizendo algo básico.
+[02:15] E acabou.
+[02:16] Uma tela visual altera totalmente essa dinâmica de frustração.
+[02:20] Ela tem cor, né?
+[02:21] Exato.
+[02:22] Tem cor, tem forma e o mais importante de tudo.
+[02:25] Ela muda a cada clique no botão de salvar.
+[02:28] Existe um ciclo de recompensa que é muito mais rápido e gratificante.
+[02:31] Saquei.
+[02:32] É ter aquele retorno visual imediato que prende a atenção.
+[02:36] Isso mantém o aluno engajado logo nos primeiros dias, que costumam ser os mais difíceis
+[02:40] da curva de aprendizado.
+[02:42] Mas, bom, antes de a gente detalhar o que exatamente compõe essa tela, eu preciso
+[02:46] dar um aviso sobre o material visual que acompanha a gente hoje.
+[02:49] Boa.
+[02:50] Essa análise tem uma animação de seis telas rodando direto no navegador.
+[02:55] Lá na primeira tela, logo ao lado do texto da capa, tem um celular desenhado com uma página
+[02:59] dentro.
+[03:00] E a dica aqui é, não é uma foto estática, é a página real, a página pronta que a aula
+[03:05] de fato vai construir.
+[03:07] E quem está com o material aberto já consegue até rolar a lista de tarefas ali mesmo.
+[03:12] É a página de verdade e rodando ali.
+[03:14] E bom, para quem estiver apenas no áudio, seja no trânsito ou longe de uma tela,
+[03:19] o acompanhamento continua perfeito.
+[03:21] A gente vai descrever todas as dinâmicas e regras de um jeito muito claro.
+[03:25] Sim, não vai perder nada.
+[03:27] Mas, para quem tem a página aberta, a gente tem uma regra de navegação muito estrita.
+[03:32] A recomendação é não avançar pelas telas por conta própria.
+[03:37] Isso é para não perder a sincronia com a nossa explicação.
+[03:40] A transição de uma tela para outra vai ser sempre pedida em voz alta, no momento
+[03:44] exato.
+[03:45] Então, sendo assim, para a gente encerrar este primeiro bloco e revelar a página
+[03:49] viva, aperte o próximo.
+[03:51] Bom, o que aparece na tela agora é a página de verdade, renderizada nos dois tamanhos principais.
+[03:58] De um lado, a gente tem o formato para celular e do outro, o formato para desktop.
+[04:02] E eu convido o pessoal que está com o material visual aberto a interagir mesmo.
+[04:07] Role a lista para cima e para baixo.
+[04:08] Passe o mouse em cima dos cartões e perceba aquelas pequenas mudanças de cor e de sombreamento.
+[04:13] Gerenciamento de tarefas.
+[04:15] Lá no topo, bem destaque, tem o nome da tarefa principal e, do lado, uma pequena bolinha
+[04:21] redonda daquelas de concluir a tarefa, sabe?
+[04:24] Aham, aquela clássica.
+[04:25] Isso!
+[04:26] E logo abaixo deste cabeçalho, a página mostra uma lista de sub-tarefas.
+[04:31] Cada uma destas sub-tarefas ocupa o seu próprio cartão individual.
+[04:35] E quando a gente olha para o roda-pé da versão do celular, tem uma fileira de atalhos
+[04:40] rápidos, tipo tem ícone para descrição, para data, para prioridade.
+[04:44] Agora, o que me chama a atenção é a versão de desktop.
+[04:48] Essa mesma folha não estica para ocupar a tela inteira.
+[04:52] Ela vira uma espécie de janela centralizada, com o fundo mais escuro ao redor.
+[04:56] E aí é que está o grande pulo do gato dessa construção toda.
+[05:01] O detalhe técnico que define toda a base do trabalho no Código de hoje.
+[05:05] A gente está falando exatamente do mesmo arquivo para os dois cenários.
+[05:09] Peraí.
+[05:10] Como assim?
+[05:11] Eu estou olhando para o celular de um lado e para o desktop do outro.
+[05:15] E eles parecem muito diferentes.
+[05:17] O layout muda completamente.
+[05:19] Nos celulares, os atalhos ficam grudados ali embaixo e a tela toma todo o espaço disponível.
+[05:25] E no computador, a folha inteira fica flutuando no meio da tela.
+[05:28] São arquivos separados, não são?
+[05:30] Não, é o mesmo arquivo HTML.
+[05:33] Único.
+[05:34] O que muda de um para o outro é puramente uma regra de CSS que fica lá no fim do arquivo.
+[05:39] Mentira.
+[05:40] Só uma regra?
+[05:42] Faz tudo isso?
+[05:43] Sim.
+[05:44] Só uma regra.
+[05:46] O navegador toma a decisão sozinho, baseado na largura da tela.
+[05:50] A gente escreve a página inteira pensando no celular, com tudo ocupando 100% do espaço.
+[05:56] E aí, lá no finalzinho do CSS, entra uma instrução que diz mais ou menos assim.
+[06:02] Se a largura da tela passar de um certo número de pixels, aplique essa nova formatação
+[06:07] aqui.
+[06:08] Entendi.
+[06:09] Ou seja, o navegador fica o tempo todo medindo o tamanho da janela.
+[06:13] Se a tela for larga num monitor de mesa, a regra do desktop liga e ele centraliza a folha.
+[06:19] Se a janela encolher, a regra desliga e o layout volta a preencher tudo, como no celular.
+[06:23] Tudo automático.
+[06:25] Exatamente isso.
+[06:26] É o navegador fazendo o trabalho pesado de adaptação visual.
+[06:30] Caramba!
+[06:31] Mas assim, tem uma coisa faltando nessa página viva.
+[06:34] A estrutura está muito boa, o visual também, mas nada clica de verdade.
+[06:40] Tipo, os botões no topo estão lá, mas se a pessoa clicar, não acontece nada.
+[06:44] Os cartões não abrem, nem deslizam para os lados.
+[06:47] Os atalhos do roda-pé tão bem não mostram o menu nenhum.
+[06:50] Por que gastar tanto tempo fazendo algo que ainda não funciona na prática?
+[06:54] Porque, veja bem, isso é totalmente de propósito.
+[06:58] Todo o que não funciona agora foi deixado de fora intencionalmente.
+[07:02] O nosso assunto exclusivo aqui é o que o navegador desenha.
+[07:06] É puramente tags HTML e regras de estilo do CSS.
+[07:12] Só o visual mesmo.
+[07:13] Só o visual.
+[07:14] O comportamento das coisas, tipo clicar numa bolinha e a tarefa ser riscada ou salvar
+[07:19] algo no banco de dados, isso vem depois.
+[07:21] Usando java, nenhuma única linha de JavaScript entra aqui nessa etapa.
+[07:26] Zero.
+[07:27] Saquei.
+[07:28] Se tentar se colocar comportamento agora, ia misturar os assuntos e virar uma bagunça
+[07:32] na cabeça do aluno, né?
+[07:34] Com certeza.
+[07:35] Seria colocar carroça na frente dos bois, primeiro a gente domina o desenho.
+[07:39] Faz todo sentido.
+[07:40] Bom, entendida essa diferença entre o que é estrutura visual e o comportamento que
+[07:46] vai ficar para depois, aperte o próximo.
+[07:49] Beleza.
+[07:50] Agora a gente precisa falar de onde essa tela veio.
+[07:53] Porque esse desenho não é um exercício genérico de curso que alguém inventou
+[07:56] de última hora para dar uma aula.
+[07:58] Não, de jeito nenhum, a origem dela é bem real.
+[08:02] Ela vem direto do Nexus, que é o sistema que o aluno da série usa todo santo dia para organizar
+[08:07] a própria vida.
+[08:08] É uma ferramenta real.
+[08:10] E trazer um sistema real para o centro da mesa muda toda a lógica do aprendizado.
+[08:15] Para quem está olhando a tela 3 agora, tem dois prints do sistema verdadeiro.
+[08:19] Sim, dois prints.
+[08:21] O da esquerda mostra a tela original no celular do próprio aluno.
+[08:25] Tem uma tarefa bem grande chamada equipamentos no topo, e olha isso, tem 56 sub-tarefas listadas
+[08:32] ali.
+[08:33] É bem denso.
+[08:34] Já o print da direita mostra a mesma visão, só que no formato de desktop original.
+[08:40] E aqui dá para ver uma diferença clara em relação ao que a gente vai construir.
+[08:44] No sistema original, o desktop ganha um painel lateral cheio de informações, tipo
+[08:48] projeto, responsável e data de entrega.
+[08:51] É, e vale frisar que esse painel lateral grande fica de fora da nossa aula totalmente de propósito.
+[08:58] O nosso foco vai ser apenas a lista central e pronto.
+[09:01] Mas eu fiquei pensando aqui, não seria bem mais fácil a gente simplesmente inventar uma tela
+[09:06] mais simples para o aluno aprender os conceitos básicos.
+[09:09] Um quadradinho aqui, um botão ali, sem essa pressão de ter que clonar uma interface
+[09:13] com tantos detalhes?
+[09:15] Cara, essa é a armadilha mais clássica que existe.
+[09:18] Inventar uma tela parece mais amigável, mas é péssivo por o aprendizado técnico real.
+[09:24] Porque quando você refaz uma tela que já existe, você arranca pela raiz toda a subjetividade
+[09:30] do processo.
+[09:31] Subjetividade de design, se diz.
+[09:34] Isso.
+[09:35] Não tem aquela avaliação torta de, ah, será que isso ficou bonito?
+[09:38] Porque, beleza, opinião, a regra do jogo muda completamente.
+[09:42] A única métrica que importa é, ficou igual ou não ficou igual.
+[09:46] Uhum, é um critério totalmente objetivo.
+[09:48] Exata.
+[09:49] E isso faz um milagre na cabeça de quem está começando.
+[09:52] Transforma aquelas dúvidas vagas tipo, por que minha tela está estranha em perguntas
+[09:56] extremamente concretas?
+[09:58] O aluno vai olhar e falar, peraí, por que o meu cartão ficou 10 pixels mais alto que
+[10:03] o original?
+[10:04] Porque a minha sombra está forte e a do sistema real está suave.
+[10:07] E aí, a busca pela solução vira uma pesquisa técnica direcionada.
+[10:10] A pessoa sabe o que está caçando no código.
+[10:13] É exatamente essa lógica.
+[10:15] Muito bom.
+[10:17] Com esse gabarito do sistema real em mente, aperte o próximo.
+[10:21] Bom, agora a gente vai olhar para as peças.
+[10:23] Para colocar essa página em pé, a gente precisa saber do que ela é feita.
+[10:27] E tudo começa pela anatomia das tags no HTML.
+[10:31] Nem uma entra ali por acaso.
+[10:32] Eu acho legal como as tags são tipo os tijolos estruturais, né?
+[10:36] Uhum, bem por aí.
+[10:38] Você tem um bloco principal que segura a folha inteira.
+[10:40] Tem um cabeçalho que serve para agrupar os botões lá no topo.
+[10:43] E no outro extremo tem um rodapé com os atalhos.
+[10:46] Até o nome da tarefa não fica solto no ar.
+[10:48] Ele precisa de um formulário e de uma caixa de texto.
+[10:51] E claro, a gente usa uma tag de lista para organizar os cartões com o item para cada sub-talefa.
+[10:56] A gente cita os nomes dessas tags durante a prática.
+[10:59] Mas o objetivo não é editar código.
+[11:01] É entender o papel de cada uma.
+[11:03] O papel prático da cor.
+[11:05] E não há códigos malucos.
+[11:06] Sim.
+[11:07] Isso salva vidas na hora de manter o código, sério.
+[11:10] A gente não usa números soltos e extra decimais imensos.
+[11:13] As cores ganham nomes pela sua função no sistema.
+[11:16] A cor clara de fundo se chama fundo.
+[11:18] A cor da letra se chama texto.
+[11:20] Fica humano, saca?
+[11:21] Nossa, muito mais fácil de ler depois de uns meses.
+[11:25] Mas tem uma coisa no CSS que sempre dá dor de cabeça para quem está começando, que
+[11:29] é o alinhamento.
+[11:31] Fazer as coisas não quebrarem a tela.
+[11:33] Ah, o terror do alinhamento.
+[11:35] Mas aqui a gente usa o Flexbox para resolver isso.
+[11:38] É ele que distribui o espaço e garante que os cartões fiquem alinhados e os
+[11:42] botões não escapem da tela.
+[11:44] E tem outra regra fundamental ali no topo, que é o stick.
+[11:47] Ah, eu notei isso na tela Viva.
+[11:49] Quando a gente rola a lista de sub-tarefas, os cartões sobem e somem.
+[11:54] Mas o nome da tarefa principal, o título, fica grudado ali em cima.
+[11:58] Ele não desaparece.
+[11:59] Isso mesmo.
+[12:00] A regra stick faz ele se prendir no topo.
+[12:04] É um recurso visual super moderno e que já entra logo no começo.
+[12:08] E claro, não podemos esquecer daquela única media query que a gente comentou antes que fica
+[12:13] lá no fim do arquivo e vira a chave para adaptar a tela do celular para o desktop.
+[12:18] Tá, então a gente tem o HTML estruturando, o CSS colorindo e posicionando.
+[12:25] Mas onde a pessoa escreve isso tudo?
+[12:27] A gente introduza a oficina de trabalho aqui, né?
+[12:30] O editor de texto escolhido é o famoso Vesh Code.
+[12:34] Só que a visualização da página não é daquele jeito amador de dar dois cliques no
+[12:38] arquivo e abrir.
+[12:39] Não de jeito nenhum.
+[12:41] A página é servida por um servidor local chamado Live Server.
+[12:45] Ele roda integrado no editor e recarrega a página automaticamente a cada salvamento.
+[12:49] Mas eu fiquei curiosa, por que complicar?
+[12:52] Por que a necessidade de levantar um servidor só para ver um HTML simples, em vez de
+[12:58] só abrir o arquivo que está salvo no disco rígido?
+[13:01] É que o navegador trata essas duas situações de jeitos completamente diferentes por motivos
+[13:06] de segurança.
+[13:07] Se você abre um arquivo direto do seu disco rígido, o navegador bloqueia um monte de
+[13:12] coisas achando que é um risco.
+[13:14] Ele não deixa carregar alguns recursos externos direito.
+[13:17] Ah, entendi.
+[13:19] Ele fica na defensiva.
+[13:20] Isso.
+[13:21] Agora, quando você serve a página através do Live Server, o navegador relaxa.
+[13:26] Ele entende que a página está vindo de uma rede real mesmo sendo local.
+[13:30] E como tudo que a gente vai fazendo no resto da série envolve um servidor rodando, o hábito
+[13:35] certo tem que começar agora, desde o dia 1.
+[13:38] Faz todo o sentido é criar o costume de profissional desde cedo.
+[13:42] O que me leva a perguntar sobre o tamanho real desse desafio?
+[13:45] Porque olhando o modelo pronto, a gente tem cerca de 150 linhas de HTML e, atenção,
+[13:52] 490 linhas de CSS, quase 500 linhas de estilo.
+[13:58] Você não é meio assustador para um primeiro dia de código?
+[14:01] Olha, de cara parece muito.
+[14:03] Dá aquele susto inicial de ver aquele texto imenso rolando na tela.
+[14:08] Mas a mágica acontece quando o aluno entende que cada bloco de código ali tem um nome
+[14:15] e um motivo muito claro de existir.
+[14:17] Não é um hemaranhado impossível, né?
+[14:20] Não.
+[14:21] São pequenas regras empilhadas.
+[14:23] Tem 10 linhas que só servem para deixar a bolinha redonda.
+[14:27] Mais 15 que só alinhe os atalhos embaixo.
+[14:30] Quando você quebra um monstro em pedacinhos pequenos, a ansiedade vai embora.
+[14:34] É um quebra-cabeça grande, mas as peças são simples de entender.
+[14:38] Bom, superado esse susto dos números, aperte o próximo.
+[14:41] Chegamos num ponto muito importante do andamento da aula.
+[14:45] Porque o jeito que a sessão começa é muito diferente de como ela termina.
+[14:49] Na hora de escrever as primeiras linhas, tudo começa meio misturado.
+[14:53] Aham.
+[14:54] O aluno escreve o HTML e logo lá no topo do mesmo arquivo ele abre uma tag de style e
+[15:00] joga todo o CSS lá dentro.
+[15:02] Fica um arquivo só, superprático, né?
+[15:04] Pessoal abre e todo já aparece funcionando.
+[15:06] Exato.
+[15:07] No começo, essa mistura é excelente.
+[15:09] O aluno consegue rolar um pouquinho para cima, mudar uma cor, descer de novo e já ver
+[15:14] o resultado.
+[15:15] É rápido e diminui a carga mental de ficar pulando entre abas.
+[15:19] Mas a aula não termina assim.
+[15:21] O desfecho dela é justamente a separação disso tudo.
+[15:24] Isso.
+[15:25] Lá no final, aquele bolão de CSS sai do HTML e vai morar sozinho num arquivo próprio,
+[15:32] que o aluno chama de estilo.css.
+[15:35] E aí o arquivo HTML original passa apenas a apontar para esse arquivo novo através
+[15:39] de uma tag de link.
+[15:41] Na nossa animação, a gente até mostra um antes e depois bem claro disso.
+[15:45] O arquivo HTML fica pequenininho e o CSS fica intacto do lado.
+[15:49] É um momento de maturidade do projeto, digamos assim.
+[15:52] Mas vem cá, eu tenho que perguntar por que ter todo esse trabalho de recortar e colar
+[15:57] o código em arquivos separados, se não navegador, a tela final não muda nenhum milímetro.
+[16:02] Não é tedor de cabeça à toa?
+[16:04] Olha, não é frescura técnica.
+[16:06] Eu te garanto.
+[16:07] A gente separa para resolver problemas do mundo real.
+[16:11] Pensa no seguinte, o sistema Nexus na vida real deve ter umas 10 páginas diferentes,
+[16:16] certo?
+[16:17] Se a gente mantivesse o CSS misturado dentro do HTML em cada uma dessas páginas e amanhã
+[16:25] o dono decidisse mudar a cor do botão principal de cinza para azul, sabe o que aconteceria?
+[16:31] A pessoa teria que abrir as 10 páginas.
+[16:34] Exatamente.
+[16:35] Abrir os 10 arquivos, caçar as regras de texto e mudar uma por uma.
+[16:40] Quando você exporta o CSS por um arquivo próprio, aquelas 10 páginas em HTML vão
+[16:45] simplesmente apontar para a mesma folha de estilo.
+[16:48] Aí você muta a cor num lugar só e a mágica acontece em 10 páginas ao mesmo tempo.
+[16:53] E mais, se precisar alterar só um texto numa página, você não corre o risco de estragar
+[16:58] o visual sem querer, porque os assuntos estão em arquivos separados.
+[17:02] Nossa, é muito mais seguro e lógico.
+[17:05] Fiquem infinitamente mais fácil de dar manutenção depois.
+[17:07] Muito bem?
+[17:08] Com a estrutura final do código entendida, aperte o próximo.
+[17:12] Chegamos ao encerramento dessa etapa.
+[17:14] E para essa sessão de estudo funcionar, a gente aplica 3 regras muito claras de como
+[17:20] a aula vai acontecer na prática.
+[17:22] Certo.
+[17:23] E quais são essas regras que o aluno tem que seguir?
+[17:25] A primeira delas é que os movimentos iniciais são sempre do aluno.
+[17:29] O professor não entrega um código base pronto e fala, ó, só preencha aqui as lacunas.
+[17:35] Não.
+[17:36] O aluno tem que ir no computador dele, criar a pasta, criar o arquivo em branco
+[17:40] e digitar as primeiras tags do zero.
+[17:43] O pontaquet é sempre dele.
+[17:45] É pôr a mão na massa desde o primeiro segundo.
+[17:48] E a segunda regra.
+[17:49] A segunda é sobre o silêncio.
+[17:51] O veredito de se o pródigo está certo ou não só vem quando o aluno pede.
+[17:56] Não tem o professor corrigindo e interrompendo enquanto a pessoa ainda está digitando a linha.
+[18:01] O aluno precisa terminar o pensamento, testar, bater a cabeça e só então pedir ajuda.
+[18:07] Isso ajuda demais a criar autonomia, né?
+[18:09] Porque no trabalho real, ninguém fica atrás da sua cadeira te dizendo onde falta um ponto e vírgula.
+[18:14] E a terceira regra é sobre o modelo que a gente comentou lá atrás, não é?
+[18:18] Exato.
+[18:19] A terceira regra é que o modelo real é o nosso gabarito oficial.
+[18:24] Aquela página interativa que a gente viu aqui nas telas de animação,
+[18:27] ela fica de lado na hora de praticar de verdade.
+[18:30] O aluno vai olhar para o código dele, vai abrir o sistema real do Nexus
+[18:34] e vai comparar os dois.
+[18:36] O original é a fonte da verdade para saber se ficou bom.
+[18:39] Perfeito. Agora tem uma dúvida que sempre aparece.
+[18:43] A gente falou de HTML, falou de CSS, construiu a tela inteira com tags,
+[18:48] mas a série é sobre Java Web.
+[18:51] O que exatamente dessa construção toda de HTML e CSS é transferido
+[18:56] para quando o aluno de fato for usar outras linguagens mais pesadas?
+[19:00] O que fica de lição além da sintaxe em si?
+[19:03] Essa é a melhor pergunta e a gente tem uma analogia exata,
+[19:07] a única autorizada para explicar essa dinâmica.
+[19:10] É a analogia da vitrine e da oficina.
+[19:13] A vitrine e a oficina conta mais.
+[19:16] Pensa no navegador, no Chrome, no Safari,
+[19:18] como uma pessoa caminhando para uma calçada numa rua de comércio.
+[19:22] Esse navegador passa pela frente da loja
+[19:25] e tudo o que ele consegue enxergar é a vitrine.
+[19:29] A vitrine é composta unicamente de HTML e CSS.
+[19:34] Ela tem luzes, tem as prateleiras arrumadas, as roupas,
+[19:37] tudo pronto para o cliente interagir.
+[19:40] E o navegador só entende isso.
+[19:41] Aham, ele só leu o que está exposto ali na frente.
+[19:44] Exato. Ele não consegue ver o que tem na oficina,
+[19:47] lá nos fundos da loja, atrás da parede.
+[19:50] O navegador não sabe e nem se importa.
+[19:52] Se aquela vitrine foi montada à mão,
+[19:54] peça por peça por uma pessoa física,
+[19:57] ou se tem uma mega-máquina automatizada lá no fundo
+[20:00] cuspindo páginas prontas direto para a vitrine.
+[20:02] Nossa, saquei! O navegador é cego para o que acontece no back-end.
+[20:07] Completamente cego e a lição que fica,
+[20:10] a conexão direta com o futuro do estudo,
+[20:12] é reforçar o limite de que essa vitrine
+[20:15] não é só o enfeitizinho que a gente joga fora depois.
+[20:18] A vitrine é o produto real,
+[20:21] é o que o cliente de fato usa e clica.
+[20:24] O que vai mudar daqui para a frente de usar a mão hoje
+[20:27] para usar o java amanhã é apenas quem monta essa vitrine.
+[20:31] Olha só, hoje na nossa aula da tela o aluno é o artesão,
+[20:36] é a mão dele no teclado montando HTML na força bruta.
+[20:40] No futuro vai ser um programa super robusto
+[20:43] construindo e entregando essa exata mesma folha pronta para o navegador ler.
+[20:47] Isso aí, o produto final na porta de saída não muda,
+[20:51] muda a mecânica da oficina lá no fundo.
+[20:53] Bom, com a tela finalmente em pé
+[20:55] e toda essa vitrine montada de forma impecável,
+[20:58] o nosso próximo passo já tem destino certo.
+[21:01] A gente finalmente vai sair da parte da frente
+[21:03] e vai descer para o terminal.
+[21:05] É hora da oficina.
+[21:06] Exato, quem está acompanhando com a gente
+[21:09] vai descobrir finalmente onde o código lógico é escrito de verdade.
+[21:14] O que aqueles programas super pesados que os cursos tradicionais
+[21:17] mandam a galera instalar logo no primeiro dia
+[21:20] faziam escondidos, sem ninguém saber.
+[21:23] E principalmente, o porquê de nenhum deles ser usado aqui no nosso método.
+[21:27] Tudo isso o pasmem,
+[21:28] antes de escrever a primeiríssima linha de código Java.
+[21:32] Se a tela era o primeiro degrau,
+[21:34] o terminal é a porta dos fundos que a gente vai abrir agora.

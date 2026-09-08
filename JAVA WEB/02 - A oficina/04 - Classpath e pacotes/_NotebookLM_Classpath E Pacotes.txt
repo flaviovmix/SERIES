@@ -1,0 +1,133 @@
+Inicie dizendo: Classpath E Pacotes
+---------------
+
+Este e o quarto e ultimo episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. O episodio anterior, O Que O Javac Faz, abriu o arquivo class e explicou as tres pecas: fonte, bytecode e maquina virtual. Este episodio explica o erro mais comum de quem programa Java na unha, o de classe principal nao encontrada, que apareceu de passagem dois episodios atras e ficou prometido. E ele fecha a etapa: no fim dele, a oficina esta de pe.
+
+O AUDIO NAO DITA CODIGO. A animacao mostra a arvore de pastas e os comandos. O audio cita os comandos e as opcoes pelo nome (java, javac, a opcao cp, a opcao d, a linha package), mas NAO le codigo letra por letra. Quem esta so no audio entende a ideia; quem esta na pagina ve o texto.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 7 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (4), avisar que da pra escolher na tela de onde roda e com qual nome, e ver se a maquina virtual acha a classe ou nao.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 7 telas. O audio TEM que pedir "aperte o Proximo" exatamente 6 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. Nada de sermao e nada de nostalgia. O erro do episodio nao e motivo de vergonha: todo mundo toma ele uma vez, e a serie passa por ele de proposito. Nao fazer piada com quem usa IDE.
+
+O QUE TRANSFERE. No encerramento, dizer em uma frase o que deste episodio serve pra qualquer linguagem, e nao so pra Java.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Classpath E Pacotes.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O endereco com a cidade: dizer so "Rua das Flores" nao leva ninguem a lugar nenhum, porque toda cidade tem uma. O pacote e a cidade na frente do nome da rua, e o classpath e a lista de cidades onde o carteiro vai procurar. Serve pra explicar por que o nome completo da classe tem o pacote na frente e por que a maquina virtual precisa de uma lista de lugares. Nao serve pra dizer que o pacote e burocracia: sem cidade, duas ruas iguais viram uma carta perdida.
+
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: CLASSPATH E PACOTES)
+
+Retomar em uma frase onde o episodio anterior parou: o arquivo class foi aberto, cada instrucao dele veio de uma linha do fonte, e a maquina virtual e quem le.
+
+Dizer o que este episodio faz: explica o erro que ficou prometido, o de classe principal nao encontrada. Dizer que e o erro mais comum de quem programa Java na unha, que todo mundo toma ele uma vez, e que ele ensina uma coisa que a IDE sempre escondeu: onde as classes moram e como a maquina virtual acha elas.
+
+Dizer que este e o ultimo episodio da etapa: no fim dele, a oficina esta de pe.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na tela do meio, da pra escolher de onde roda e ver o que acontece.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (ONDE O JAVA PROCURA)
+
+Comecar pelo que acontece quando a pessoa digita java e o nome da classe. A maquina virtual nao recebe um arquivo: recebe um NOME. E vai procurar um arquivo class com esse nome numa lista de lugares. Essa lista se chama classpath, que quer dizer caminho das classes.
+
+Dizer o que tem na lista por padrao: um item so, a pasta atual, a pasta em que o terminal esta. Se o arquivo class esta ali, acha. Se o terminal esta em outra pasta, nao acha, e responde com a mensagem: nao foi possivel encontrar ou carregar a classe principal.
+
+Dizer o que a mensagem significa, sem drama: nao e defeito no programa, nao e defeito no Java. E a maquina virtual dizendo "procurei na lista e nao estava". A pergunta certa na hora e sempre a mesma: em que pasta eu estou, e em que pasta esta o class?
+
+Contar os dois jeitos de tomar o erro no episodio do Ola mundo: rodar de outra pasta, ou rodar com o nome errado, tipo com a extensao no fim. Nos dois casos a maquina virtual procurou um nome que nao existia onde ela procurou.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (PACOTES: PASTA E PACOTE SAO A MESMA COISA)
+
+Levantar o problema que os pacotes resolvem. Num programa de um arquivo, o nome Ola e unico. Num programa de mil arquivos, feito por varias pessoas, e com bibliotecas de fora, dois arquivos com o mesmo nome e questao de tempo. E alem disso, mil arquivos numa pasta so e impossivel de achar qualquer coisa.
+
+Apresentar o pacote: um nome de grupo, escrito na primeira linha do arquivo, a linha package. Dizer que o costume e usar o dominio da pessoa ou da empresa ao contrario, e depois o assunto: br ponto afx ponto tarefas, por exemplo. Isso garante que ninguem no mundo vai ter o mesmo nome de grupo sem querer.
+
+Dizer a regra que pega todo mundo: pasta e pacote sao a MESMA coisa. A classe que declara o pacote br ponto afx ponto tarefas tem que morar na pasta br, dentro dela afx, dentro dela tarefas. Se o arquivo esta numa pasta diferente da que o pacote diz, o compilador ate compila, mas a maquina virtual nao acha na hora de rodar.
+
+Dizer a consequencia no nome: a classe deixa de se chamar Ola e passa a se chamar br ponto afx ponto tarefas ponto Ola. E esse nome inteiro que o comando java quer. Usar a analogia do endereco: dizer so o nome da rua nao leva ninguem a lugar nenhum, porque toda cidade tem uma Rua das Flores. O pacote e a cidade na frente. Dizer o limite na hora: nao e burocracia, e o que impede duas ruas iguais de virar uma carta perdida.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (DE ONDE EU RODO, COM QUAL NOME, TELA INTERATIVA)
+
+Avisar: na tela tem a arvore de pastas do projeto e uma linha de comando, e da pra escolher de onde roda e com qual nome. Sao quatro combinacoes, e so uma funciona. Dar tempo pro ouvinte testar enquanto escuta.
+
+Descrever a arvore em palavras: uma pasta do projeto, dentro dela a pasta br, dentro afx, dentro tarefas, e la no fundo o arquivo class do Ola.
+
+Contar as quatro combinacoes. Rodar de dentro da pasta tarefas, com o nome curto Ola: erro, porque o nome completo da classe tem o pacote e a maquina virtual procurou uma classe sem pacote. Rodar de dentro da pasta tarefas, com o nome completo: erro tambem, porque a maquina virtual pega o nome completo, transforma em caminho de pastas, e procura br, afx, tarefas a partir de onde esta, e ali dentro nao tem br. Rodar da raiz do projeto, com o nome curto: erro, mesmo motivo do primeiro. Rodar da raiz do projeto, com o nome completo: funciona, porque a partir da raiz existe br, afx, tarefas, e la esta o class.
+
+Dizer o ponto da tela: a maquina virtual sempre faz a mesma conta. Nome completo vira caminho de pastas, e o caminho e procurado a partir de cada lugar da lista. Quem entende essa conta nunca mais toma esse erro sem saber por que.
+
+Dizer que existe um outro jeito, fora dessas quatro combinacoes, de fazer funcionar de qualquer pasta: dizer na mao onde procurar. Isso e o assunto da proxima tela.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (DIZER ONDE PROCURAR)
+
+Apresentar a opcao cp do comando java: e o jeito de dizer na mao qual e a lista de lugares. Com ela, da pra rodar de qualquer pasta, porque em vez de "procure a partir daqui" a pessoa diz "procure a partir de tal pasta".
+
+Ligar com a separacao que todo projeto de verdade faz: fonte de um lado, compilado do outro. Dizer que o javac tem a opcao d, que manda ele escrever os arquivos class numa pasta de saida em vez de ao lado do fonte, e que ele cria as pastas do pacote sozinho la dentro. E que o java com a opcao cp aponta pra essa pasta de saida.
+
+Dizer por que separar, sem regra de etiqueta. Primeiro: a pasta de saida pode ser apagada e refeita a qualquer hora, porque tudo que tem nela sai do fonte. Segundo, e esse e o gancho da proxima etapa: o historico de codigo guarda o fonte e nao guarda a saida. Quem mistura os dois na mesma pasta acaba guardando arquivo class no historico, e isso da problema que a proxima etapa explica.
+
+Dizer que na tela estao os dois comandos, o de compilar com saida e o de rodar apontando pra ela, e que eles sao os mesmos dois comandos do Ola mundo, com uma opcao a mais cada.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O QUE A IDE FAZIA ESCONDIDO)
+
+Voltar na lista do segundo episodio da etapa, as quatro coisas que a IDE faz escondido, e dizer que esta era a ultima que faltava: montar o caminho das classes. A IDE monta o classpath sozinha, com a pasta de saida dela e as bibliotecas do projeto, e por isso dentro dela o botao verde sempre acha tudo.
+
+Dizer a consequencia: o erro deste episodio so aparece fora da IDE. E por isso ele e o erro mais comum de quem sai dela pela primeira vez, e por isso a serie passou por ele de proposito.
+
+Dizer o que vem mais pra frente, sem entrar em detalhe: la na frente entram ferramentas maiores, que montam o classpath sozinhas com dezenas de bibliotecas. O classpath nao desaparece; so muda quem monta. Quem viu ele na mao uma vez entende o que essas ferramentas estao fazendo, e sabe onde olhar quando elas falham.
+
+Fechar a etapa: as quatro coisas escondidas foram feitas na mao. Achar o kit, compilar, montar o caminho das classes, rodar. A oficina esta de pe.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (ENCERRAMENTO)
+
+Recapitular em poucas frases. A maquina virtual recebe um nome e procura o arquivo class numa lista chamada classpath, que por padrao e so a pasta atual. Pacote e pasta sao a mesma coisa, e o nome completo da classe tem o pacote na frente. Nome completo vira caminho de pastas, procurado a partir de cada lugar da lista. A opcao cp diz onde procurar, a opcao d separa a saida do fonte, e a saida pode ser apagada e refeita. A IDE montava tudo isso escondido.
+
+Dizer que a etapa 2 acabou e o que ela deixou: um editor com terminal, o kit, um programa compilado e rodado na mao, o arquivo class entendido, e pacotes e classpath na mao. A partir daqui, tudo que o aluno escrever vai nascer nessa oficina.
+
+O QUE TRANSFERE: todo ambiente tem uma lista de onde procurar. Python tem a lista dele de pastas de modulos. Node tem a pasta de modulos do projeto. O proprio terminal tem o PATH, que foi o que fez o javac ser encontrado no comeco da etapa. O nome muda, a ideia nao: um nome, uma lista de lugares, e o erro "nao achei" quando o nome nao esta em nenhum deles.
+
+Gancho pra proxima etapa, sem entregar a resposta: antes de escrever o programa de verdade, o aluno vai ganhar um jeito de voltar atras. Tudo que ele digitar a partir daqui merece historico, e a pasta de saida deste episodio e a primeira coisa que esse historico vai aprender a ignorar.

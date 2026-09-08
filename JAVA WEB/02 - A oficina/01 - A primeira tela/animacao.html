@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A primeira tela — Java Web 2.1</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Animação do episódio 2.1 da série JAVA WEB, montada em 06/09/2026 a partir da
+     _planta.md, ANTES do áudio: o Flávio pediu que o projeto real aparecesse na
+     animação, pro aluno ver o que vai ser feito. As telas 1 e 2 embutem o modelo
+     pronto (modelo/index.html), vivo, dentro de um celular e de um desktop em
+     escala. Quando o áudio existir, o mapa de telas reconta e esta página se ajusta
+     ao corte real. A base de css/js vem toda de site/. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="episodio.css">
+</head>
+<body>
+
+<header class="topo">
+  <div><a class="voltar" href="../../../site/javaweb.html">← voltar pra série</a></div>
+  <div class="tocador">
+    <!-- data-duracao em segundos: vale até o navegador ler o metadata do áudio -->
+    <audio preload="metadata" src="A vitrine visual antes do Java.m4a" data-duracao="1297"></audio>
+    <img class="tocador__capa" src="../../../site/img/serie-java-web.webp" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A vitrine visual antes do Java</div>
+      <div class="tocador__fonte">Java Web · etapa 2 · episódio 1</div>
+    </div>
+    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
+    <button class="tocador__play" aria-label="tocar">▶</button>
+    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1297" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">21:37</span></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">java web · etapa 2 · episódio 1</div>
+      <h1 class="reveal">A primeira tela</h1>
+      <p class="lede reveal">A mão vai pro teclado, e a primeira coisa que ela escreve não é Java: é a tela. Começar por uma parte que não mostra nada na tela desanima. Então a série começa por HTML e CSS, e o resultado está aí do lado, de verdade.</p>
+      <div class="capa-como reveal">
+        <p><b>Como acompanhar.</b> O que aparece no celular ao lado não é foto: é a página pronta, a mesma que a aula vai construir. Role a lista, passe o mouse. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      </div>
+    </div>
+    <figure class="capa-arte reveal">
+      <div class="aparelho aparelho--celular">
+        <div class="aparelho__tela">
+          <iframe src="modelo/index.html" title="A folha da tarefa, no celular" loading="lazy"></iframe>
+        </div>
+      </div>
+      <figcaption>o modelo real · html e css, sem javascript</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 · o que vamos construir (interativa) -->
+  <section class="step">
+    <div class="kicker reveal">mexa nela</div>
+    <h2 class="reveal">O que vamos construir.</h2>
+    <p class="lede reveal">A folha de uma tarefa: o nome, a lista de subtarefas e os atalhos no pé. O mesmo arquivo nos dois tamanhos. O que muda entre um e outro é uma regra de CSS só, no fim do arquivo.</p>
+    <div class="aparelhos reveal">
+      <figure class="aparelho aparelho--celular">
+        <div class="aparelho__tela">
+          <iframe src="modelo/index.html" title="A folha da tarefa, no celular" loading="lazy"></iframe>
+        </div>
+        <figcaption>celular · 390 pixels de largura</figcaption>
+      </figure>
+      <figure class="aparelho aparelho--desktop">
+        <div class="aparelho__tela">
+          <iframe src="modelo/index.html" title="A folha da tarefa, no desktop" loading="lazy"></iframe>
+        </div>
+        <figcaption>desktop · a mesma folha vira uma janela</figcaption>
+      </figure>
+    </div>
+    <p class="destaque reveal">Nada aqui clica de verdade: os botões não fazem nada, o cartão não desliza. <b>É de propósito.</b> O assunto do módulo é o que o navegador desenha a partir de tags e regras. O comportamento vem depois, e vem em Java.</p>
+  </section>
+
+  <!-- 3 · de onde ela veio -->
+  <section class="step step--cena">
+    <div class="kicker reveal">a tela de um sistema em uso</div>
+    <h2 class="reveal">De onde ela veio.</h2>
+    <p class="lede reveal">Não foi inventada pra aula. É a folha de tarefa do Nexus, o sistema que o Flávio usa todo dia, no celular dele e no desktop. A aula refaz essa tela na unha, e a régua é a tela real.</p>
+    <div class="cena cena--nexus reveal">
+      <figure class="cena__celular">
+        <span class="selo">tela real</span>
+        <img src="img/nexus-celular.webp" alt="Print do celular do Flávio com a folha da tarefa EQUIPAMENTOS no Nexus: a bolinha de concluir, o nome, 56 subtarefas em cartões e a fileira de atalhos no pé">
+        <figcaption>o Nexus no celular · a tarefa EQUIPAMENTOS, 56 subtarefas</figcaption>
+      </figure>
+      <figure class="cena__desktop">
+        <span class="selo">tela real</span>
+        <img src="img/nexus-desktop.webp" alt="A mesma folha de tarefa no desktop: uma janela no meio da tela com o nome, a descrição, a lista de subtarefas e uma coluna à direita com projeto, responsável, data e prioridade">
+        <figcaption>o Nexus no desktop · a folha vira uma janela, com um painel à direita que a aula deixa de fora</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 · as peças -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">o que entra e o que fica de fora</div>
+      <h2 class="reveal">As peças.</h2>
+      <div class="ficha reveal">
+        <div class="item">
+          <div class="rotulo">as tags</div>
+          <div class="texto">A tela pede cada uma: <code>section</code>, <code>header</code>, <code>footer</code>, <code>nav</code>, <code>form</code>, <code>h1</code> a <code>h3</code>, <code>textarea</code>, <code>button</code>, <code>ul</code> e <code>li</code>. Nenhuma entra por catálogo.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">o css</div>
+          <div class="texto">Cores com nome de papel (<code>--fundo</code>, <code>--texto</code>), flexbox pra alinhar, <code>position: sticky</code> pro nome ficar preso no alto, e uma media query só, no fim, que vira tudo pro celular.</div>
+        </div>
+        <div class="item">
+          <div class="rotulo">a oficina</div>
+          <div class="texto">VS Code e o Live Server: a página servida por <code>http://</code>, nunca aberta por <code>file://</code>, e recarregando a cada salvar.</div>
+        </div>
+        <div class="item item--fora">
+          <div class="rotulo">fica de fora</div>
+          <div class="texto">JavaScript. Nada clica, nada desliza, nada abre. A tela existe; o comportamento é assunto das próximas etapas.</div>
+        </div>
+      </div>
+      <p class="destaque reveal">O modelo pronto cabe em <b>150 linhas de HTML e 490 de CSS</b>. Parece muito até ver que cada bloco tem um nome e um motivo.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <div class="aparelho aparelho--celular">
+        <div class="aparelho__tela">
+          <iframe src="modelo/index.html" title="A folha da tarefa, no celular" loading="lazy"></iframe>
+        </div>
+      </div>
+      <figcaption>a mesma página, viva</figcaption>
+    </figure>
+  </section>
+
+  <!-- 5 · um arquivo vira dois -->
+  <section class="step">
+    <div class="kicker reveal">como a aula anda</div>
+    <h2 class="reveal">Um arquivo vira dois.</h2>
+    <p class="lede reveal">A aula começa com tudo dentro do mesmo arquivo: o HTML e, no alto dele, o CSS dentro de <span class="mono">&lt;style&gt;</span>. No fim, o CSS sai pro arquivo dele e entra por um <span class="mono">&lt;link&gt;</span>. A tela não muda um pixel. O que muda é quem cuida de quê.</p>
+    <div class="arquivos reveal">
+      <div class="arquivo">
+        <div class="arquivo__nome">antes · index.html</div>
+<pre>&lt;head&gt;
+  &lt;title&gt;EQUIPAMENTOS · Nexus&lt;/title&gt;
+  &lt;style&gt;
+    :root { --fundo: #141312; --texto: #e9e6df; }
+    body  { background: var(--fundo); }
+    .subtarefa-cartao { border-radius: 12px; }
+    <span class="apagado">... mais 480 linhas ...</span>
+  &lt;/style&gt;
+&lt;/head&gt;</pre>
+      </div>
+      <div class="arquivos__seta" aria-hidden="true">→</div>
+      <div class="arquivo arquivo--depois">
+        <div class="arquivo__nome">depois · index.html</div>
+<pre>&lt;head&gt;
+  &lt;title&gt;EQUIPAMENTOS · Nexus&lt;/title&gt;
+  &lt;link rel="stylesheet" href="estilo.css"&gt;
+&lt;/head&gt;</pre>
+        <div class="arquivo__nome">depois · estilo.css</div>
+<pre>:root { --fundo: #141312; --texto: #e9e6df; }
+body  { background: var(--fundo); }
+.subtarefa-cartao { border-radius: 12px; }
+<span class="apagado">... o mesmo CSS, agora na casa dele ...</span></pre>
+      </div>
+    </div>
+    <p class="destaque reveal">Separar não é regra de etiqueta. É pra que <b>a mesma folha de estilo sirva a dez páginas</b>, e pra que mexer na cor não obrigue a abrir o arquivo que tem o texto.</p>
+  </section>
+
+  <!-- 6 · fecho -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">a aula, e o que transfere</div>
+      <h2 class="reveal">Quem escreve é o aluno.</h2>
+      <ol class="regras reveal">
+        <li class="regra">
+          <span class="regra__num">1</span>
+          <div class="regra__corpo"><b>Ele no teclado.</b> Os primeiros movimentos de cada aula são dele: a pasta, o arquivo, as primeiras tags. O repetitivo vem depois.</div>
+        </li>
+        <li class="regra">
+          <span class="regra__num">2</span>
+          <div class="regra__corpo"><b>Veredito só quando pedido.</b> Enquanto digita, ninguém aponta linha. A explicação vem depois que ele tentou.</div>
+        </li>
+        <li class="regra">
+          <span class="regra__num">3</span>
+          <div class="regra__corpo"><b>O modelo é o gabarito.</b> A página que você viu nas telas 1 e 2 fica pronta, do lado, pra comparar. A régua é a tela real do Nexus.</div>
+        </li>
+      </ol>
+      <p class="destaque reveal"><b>O que transfere:</b> o navegador só entende HTML e CSS. O que muda de stack pra stack é <b>quem escreve esse HTML</b>: hoje é a mão; na etapa 9 vai ser um programa Java montando a mesma folha, linha por linha; em Python ou em JavaScript seria outro programa, escrevendo o mesmo texto. A tela que chega ao navegador é esta.</p>
+      <div class="gancho reveal">
+        <div class="gancho__rotulo">no próximo episódio</div>
+        <p class="gancho__texto">Olá mundo sem IDE: o VS Code e o terminal, <span class="mono">javac</span> e <span class="mono">java</span> na mão, e o que a IDE fazia escondido.</p>
+        <a class="btn-mini cheio gancho__botao" href="../../../site/javaweb.html">Ver a série →</a>
+      </div>
+    </div>
+    <figure class="lado-arte reveal">
+      <div class="aparelho aparelho--desktop">
+        <div class="aparelho__tela">
+          <iframe src="modelo/index.html" title="A folha da tarefa, no desktop" loading="lazy"></iframe>
+        </div>
+      </div>
+      <figcaption>o ponto de chegada da aula 3.1</figcaption>
+    </figure>
+  </section>
+
+</main>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo →</button>
+</footer>
+
+<!-- a base, nesta ordem; depois o que é deste episódio -->
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

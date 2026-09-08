@@ -1,0 +1,121 @@
+Inicie dizendo: A Primeira Tela
+---------------
+
+Este e o primeiro episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. A etapa anterior, POR QUE AINDA ESTUDAR ISSO, nao teve uma linha de codigo: fechou a tese da serie (codigo que funciona e que ninguem entende e uma bomba-relogio) e o metodo de estudo (a inteligencia artificial como professor, nao como fornecedor), e terminou dizendo que agora a mao vai pro teclado pela primeira vez. Este episodio conta por onde ela comeca.
+
+ESTE EPISODIO NAO E A AULA. A aula acontece depois, numa sessao de estudo, com o aluno no teclado. O episodio existe pra que quem ouve saiba O QUE vai ser feito e POR QUE comeca por ai. Ele fala de HTML e CSS pelo nome, cita nomes de tags e de arquivos quando precisa, mas NAO dita codigo em voz alta: nenhuma linha lida letra por letra, nenhum "abre chave, fecha chave".
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 6 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. Duas dessas telas (a 1 e a 2) mostram a pagina pronta, VIVA, dentro de um celular e de um desktop desenhados: nao e foto, e o HTML e CSS de verdade, e da pra rolar a lista e passar o mouse. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (2), avisar que o que esta na tela e a pagina de verdade, e convidar a rolar a lista e passar o mouse enquanto ouve.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 6 telas. O audio TEM que pedir "aperte o Proximo" exatamente 5 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. O mesmo da etapa anterior: nada de sermao e nada de nostalgia. Comecar pela tela em vez do terminal nao e atalho nem preguica, e uma escolha do aluno com motivo declarado. Nao fazer piada com quem comeca pelo terminal.
+
+O QUE TRANSFERE. No encerramento, dizer em uma frase o que deste episodio serve pra qualquer linguagem e qualquer banco, e nao so pra Java.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_A Primeira Tela.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A vitrine e a oficina: quem passa na rua ve a vitrine e nao sabe o que tem atras dela. O navegador e quem passa na rua: ele so ve HTML e CSS, e nao sabe se a vitrine foi montada a mao ou por um programa. Serve pra explicar o que transfere entre linguagens: a vitrine e a mesma, o que muda e quem monta. Nao serve pra dizer que a tela e enfeite: a vitrine e o que o cliente usa.
+
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A PRIMEIRA TELA)
+
+Retomar em uma frase onde a etapa anterior parou: a serie combinou o metodo (explicacao antes do codigo, digitar em vez de colar, prever antes de rodar) e prometeu que a mao ia pro teclado.
+
+Dizer o que este episodio faz: conta por onde a mao comeca. E a resposta nao e Java, e uma tela. O aluno da serie escolheu comecar por HTML e CSS, e o motivo e simples: comecar por uma parte que nao mostra nada na tela desanima. Um programa de terminal roda e imprime uma linha; uma tela aparece, tem cor, tem forma, e a cada salvar ela muda na sua frente.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Dizer que na animacao, ao lado do texto da capa, tem um celular desenhado, e o que aparece dentro dele nao e foto: e a pagina pronta, a mesma que a aula vai construir. Da pra rolar.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (O QUE VAMOS CONSTRUIR, TELA INTERATIVA)
+
+Avisar: o que esta na tela agora e a pagina de verdade, nos dois tamanhos, celular e desktop, lado a lado. Convidar a mexer nela enquanto ouve: rolar a lista, passar o mouse em cima dos cartoes.
+
+Descrever o que e a pagina: a folha de uma tarefa. Em cima, o nome da tarefa com uma bolinha de concluir ao lado. Embaixo, a lista de subtarefas, cada uma num cartao com a sua bolinha. No pe, no celular, uma fileira de atalhos (descricao, data, prioridade, e outros). No desktop, a mesma folha vira uma janela no meio da tela.
+
+Dizer o ponto da tela: e o MESMO arquivo nos dois tamanhos. O que muda entre o celular e o desktop e uma regra de CSS so, escrita no fim do arquivo, que diz "abaixo de tal largura, faz assim". E o navegador escolhe sozinho.
+
+Dizer o que nao acontece, e que e de proposito: nada clica de verdade. Os botoes nao fazem nada, o cartao nao desliza pro lado, os atalhos nao abrem nada. O assunto do modulo e o que o navegador desenha a partir de tags e regras. O comportamento vem depois, e vem em Java.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (DE ONDE ELA VEIO)
+
+Dizer que a tela nao foi inventada pra aula. E a folha de tarefa do Nexus, o sistema que o aluno da serie usa todo dia pra organizar a vida dele, no celular e no desktop.
+
+Descrever o que a tela mostra: dois prints da tela real. O da esquerda e o celular dele, com uma tarefa chamada EQUIPAMENTOS e uma lista de cinquenta e seis subtarefas. O da direita e a mesma folha no desktop, onde ela vira uma janela e ganha um painel a direita, com projeto, responsavel, data e prioridade.
+
+Dizer a regra da aula: a regua e a tela real. O aluno refaz a folha na unha e compara com o que ja existe. O painel da direita do desktop fica de fora de proposito: o modulo e so a lista.
+
+Dizer por que isso importa pra quem esta aprendendo: refazer uma tela que existe e diferente de inventar uma. Nao tem "ficou bom?": ficou igual ou nao ficou. A duvida vira uma pergunta concreta, tipo "por que o meu cartao ficou mais alto que o dele".
+
+Pedir: aperte o Proximo.
+
+TELA 4 (AS PECAS)
+
+Dizer que a tela lista o que entra e o que fica de fora.
+
+As tags. Dizer que a tela pede cada uma delas, e nenhuma entra por catalogo: tem um bloco pra folha inteira, um cabecalho com os botoes do topo, um rodape com os atalhos, um formulario com o nome da tarefa, titulos de tres tamanhos, uma caixa de texto pra descricao, botoes, e uma lista com um item por subtarefa. Citar os nomes das tags de passagem, sem soletrar.
+
+O CSS. Dizer que as cores tem nome de papel, tipo "fundo" e "texto", em vez de numero solto; que o alinhamento e feito com flexbox; que o nome da tarefa fica preso no alto enquanto a lista rola, com uma regra chamada sticky; e que existe uma unica media query, no fim do arquivo, que vira tudo pro celular.
+
+A oficina. Dizer que o editor e o VS Code e que a pagina e servida por um servidor local, o Live Server, que recarrega a cada salvar. Explicar em uma frase por que servida e nao aberta direto do disco: o navegador trata os dois de jeitos diferentes, e tudo que vem depois na serie e servido, entao o habito comeca agora.
+
+O que fica de fora: JavaScript. Nada clica, nada desliza, nada abre. A tela existe; o comportamento e assunto das proximas etapas.
+
+Dar o tamanho do modelo pronto: cento e cinquenta linhas de HTML e quatrocentas e noventa de CSS. Dizer que parece muito ate ver que cada bloco tem um nome e um motivo.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (UM ARQUIVO VIRA DOIS)
+
+Contar como a aula anda. Ela comeca com tudo dentro do mesmo arquivo: o HTML e, no alto dele, o CSS dentro de uma tag chamada style. Um arquivo so, que abre e ja aparece.
+
+Dizer o que acontece no fim da aula: o CSS sai do arquivo HTML e vai pra um arquivo proprio, chamado estilo.css, e o HTML passa a apontar pra ele com uma tag chamada link. A tela nao muda um pixel. O que muda e quem cuida de que.
+
+Explicar por que separar, sem regra de etiqueta: pra que a mesma folha de estilo sirva a dez paginas em vez de uma, e pra que mexer numa cor nao obrigue a abrir o arquivo que tem o texto. Dizer que na tela tem o antes e o depois, lado a lado, e que o depois e menor no HTML e igual no CSS.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (ENCERRAMENTO)
+
+Contar como a aula acontece, em tres regras curtas, que sao as mesmas da etapa anterior aplicadas aqui. Primeira: quem escreve e o aluno; os primeiros movimentos de cada aula sao dele, a pasta, o arquivo, as primeiras tags, e o repetitivo vem depois. Segunda: veredito so quando pedido; enquanto ele digita, ninguem aponta linha, e a explicacao vem depois que ele tentou. Terceira: o modelo e o gabarito; a pagina que apareceu nas telas 1 e 2 fica pronta, do lado, pra comparar, e a regua e a tela real do Nexus.
+
+Recapitular em poucas frases: a mao comeca pela tela, nao pelo terminal, porque tela aparece; a tela e a folha de uma tarefa de um sistema real, no celular e no desktop; entram as tags que a tela pede, o CSS por papel e o Live Server; fica de fora o JavaScript; a aula comeca com um arquivo e termina com dois.
+
+O QUE TRANSFERE: usar a analogia da vitrine. O navegador so entende HTML e CSS, em qualquer stack. O que muda de uma linguagem pra outra e quem monta a vitrine: hoje e a mao; mais adiante na serie vai ser um programa Java montando a mesma folha, linha por linha; em Python ou em JavaScript seria outro programa escrevendo o mesmo texto. A tela que chega ao navegador e esta.
+
+Gancho pro proximo episodio, sem entregar a resposta: com a tela de pe, o proximo episodio vai pro terminal. Antes da primeira linha de Java, saber onde a gente escreve, o que o programa pesado que quase todo curso manda instalar no primeiro dia fazia escondido, e por que ele nao vai ser usado aqui.

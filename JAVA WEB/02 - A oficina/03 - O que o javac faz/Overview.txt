@@ -1,0 +1,17 @@
+O QUE O JAVAC FAZ - CONTEXTO
+============================
+Documento curto de contexto para uso com NotebookLM.
+
+Terceiro episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. A serie monta uma aplicacao Java web do zero, peca por peca: uma lista de tarefas que nasce rodando no terminal e termina no ar, num endereco que outra pessoa consegue abrir. Pelo caminho passam ambiente de trabalho, historico de codigo, testes, servidor, banco de dados e publicacao.
+
+O episodio anterior, Ola Mundo Sem IDE, compilou e rodou o primeiro programa na mao, e um arquivo chamado Ola.class apareceu na pasta. Este episodio abre esse arquivo.
+
+A ideia central e que Java tem tres pecas, nao duas. O fonte e o texto que a pessoa escreve. O bytecode e o que o compilador javac escreve no arquivo class: instrucoes pra uma maquina que nao existe em metal. E a JVM, a maquina virtual Java, e essa maquina existindo em software: e ela que le o bytecode e executa. O comando java do episodio anterior liga a JVM.
+
+O episodio explica por que o compilador nao vai direto pro processador: cada chip fala uma lingua propria, e compilar pra um deles e nao rodar nos outros. O bytecode e um meio do caminho igual pra todo mundo, e cada maquina tem a sua JVM, que faz a traducao final. E isso que a frase "escreva uma vez, rode em qualquer lugar" quer dizer, sem slogan: escreva uma vez, compile uma vez, e cada maquina traz o tradutor dela.
+
+A animacao mostra o fonte e o bytecode lado a lado, com a saida da ferramenta javap, e o ouvinte ve em que instrucoes cada linha virou. O episodio tambem separa erro de compilacao de erro de execucao: o compilador confere tipos, nomes e sintaxe antes de escrever o arquivo, e e o primeiro leitor que nao aceita o codigo sem entender. O que ele nao consegue prever so aparece rodando.
+
+Fecha diferenciando JDK, JRE e JVM (o kit, o que roda, a maquina), e dizendo o que transfere: toda linguagem tem um meio do caminho, com outro nome. Python compila pra um arquivo escondido antes de rodar, JavaScript vira bytecode dentro do navegador, C sharp tem o dele. O nome muda, a ideia nao.
+
+Use este contexto apenas como apoio.

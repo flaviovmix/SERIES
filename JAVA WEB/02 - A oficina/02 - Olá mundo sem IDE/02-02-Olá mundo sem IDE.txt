@@ -1,0 +1,35 @@
+Inicie dizendo: Ola Mundo Sem IDE
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Ola Mundo Sem IDE.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o segundo episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. O episodio anterior, A Primeira Tela, mostrou por onde a mao comecou: pela tela, em HTML e CSS. Este vai pro terminal e faz o pedido que deu origem a serie: o primeiro programa Java escrito, compilado e rodado na mao, no VS Code, sem IDE.
+
+O AUDIO NAO DITA CODIGO. O arquivo tem cinco linhas e a animacao mostra ele inteiro; o audio descreve o que cada linha faz e cita os comandos pelo nome (javac, java), sem ler letra por letra.
+
+FOCO: as quatro coisas que a IDE faz escondido (acha o kit, compila ao salvar, monta o caminho das classes, roda no botao verde) e por que quem nunca viu nenhuma delas nao sabe o que fazer quando uma falha. A oficina de verdade: VS Code como editor com terminal do lado, o JDK como kit (javac, java e a biblioteca), e o terminal precisando achar o kit, com a prova pela versao. O arquivo Ola.java: cinco linhas com um motivo cada, e a regra de que o arquivo chama como a classe. Compilar com javac e o arquivo class que aparece; como ler o primeiro erro de sintaxe (linha, depois o que ele esperava); prever antes de rodar. Rodar com java sem a extensao, e por que. O erro "could not find or load main class" so apresentado, sem explicar: e do episodio sobre classpath.
+
+TOM: nada de sermao e nada de nostalgia. A serie nao e contra IDE e nao acha que sofrer ensina; passa por cada passo uma vez, na mao. Nao fazer piada com quem usa IDE.
+
+A pagina tem 7 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 6 vezes, sem juntar duas telas num bloco so. Na tela interativa (4), avisar que da pra tocar em cada linha do arquivo na tela.
+
+No encerramento, dizer o que transfere pra outras linguagens (todo compilador e todo interpretador tem esses passos, com outros nomes), e fechar com o gancho pro episodio seguinte, sobre o que tem dentro do arquivo class, sem entregar a resposta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Ola Mundo Sem IDE.txt. NAO invente analogias novas. A unica autorizada e o cambio manual e o automatico, pra explicar por que a serie faz cada passo na mao uma vez, com o limite dito em voz alta no roteiro: ninguem precisa dirigir de manual pra sempre.
+
+Use tambem o Overview.txt como contexto curto.

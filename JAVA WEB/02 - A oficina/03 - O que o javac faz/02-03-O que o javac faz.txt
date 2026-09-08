@@ -1,0 +1,37 @@
+Inicie dizendo: O Que O Javac Faz
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Que O Javac Faz.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o terceiro episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. O episodio anterior, Ola Mundo Sem IDE, compilou e rodou o primeiro programa na mao, e um arquivo Ola.class apareceu na pasta. Este episodio abre esse arquivo.
+
+O AUDIO NAO DITA CODIGO. A animacao mostra o fonte e o bytecode lado a lado; o audio cita ferramentas (javac, java, javap) e instrucoes de passagem, sem ler letra por letra.
+
+FOCO: as tres pecas de Java (fonte, bytecode, JVM) e a cadeia entre elas. Por que o compilador nao vai direto pro processador: cada chip fala uma lingua, e o bytecode e o meio do caminho igual pra todos, com a JVM de cada maquina fazendo a traducao final. O que a frase "escreva uma vez, rode em qualquer lugar" quer dizer sem slogan, com custo e beneficio. O fonte e o bytecode lado a lado: cada instrucao veio de uma linha, nada e magica. O que o compilador confere antes de escrever o class (tipos, nomes, sintaxe) e a diferenca entre erro de compilacao e erro de execucao; o compilador como primeiro leitor que nao aceita sem entender. JDK, JRE e JVM: o kit, o que roda, a maquina. Dizer as siglas certas, do menor pro maior: JVM e a maquina virtual, JRE e o ambiente de execucao (JVM mais biblioteca), JDK e o kit (JRE mais compilador). NUNCA dizer que a JRE e a maquina virtual.
+
+A tela 4 (fonte e bytecode lado a lado) termina antes do assunto "o que o compilador confere", que e a tela 5: pedir o Proximo entre as duas, sem emendar.
+
+TOM: nada de sermao e nada de nostalgia. Nao vender Java como a melhor linguagem: o bytecode e uma escolha com custo e beneficio, e o episodio diz os dois.
+
+A pagina tem 7 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 6 vezes, sem juntar duas telas num bloco so. Na tela interativa (4), avisar que da pra tocar em cada linha do fonte na tela.
+
+No encerramento, dizer o que transfere pra outras linguagens (toda linguagem tem um meio do caminho, com outro nome), e fechar com o gancho pro episodio seguinte, sobre o erro de classe nao encontrada e por que pasta e nome importam, sem entregar a resposta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Que O Javac Faz.txt. NAO invente analogias novas. A unica autorizada e o idioma intermediario e o tradutor de cada pais, pra explicar por que Java roda em qualquer lugar, com o limite dito em voz alta no roteiro: traduzir duas vezes nao e lento, porque a JVM guarda o que ja traduziu.
+
+Use tambem o Overview.txt como contexto curto.

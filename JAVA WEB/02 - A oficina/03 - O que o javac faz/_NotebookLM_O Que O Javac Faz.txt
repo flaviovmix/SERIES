@@ -1,0 +1,133 @@
+Inicie dizendo: O Que O Javac Faz
+---------------
+
+Este e o terceiro episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. O episodio anterior, Ola Mundo Sem IDE, compilou e rodou o primeiro programa na mao, com dois comandos, javac e java, e um arquivo chamado Ola.class apareceu na pasta. Este episodio abre esse arquivo e explica por que ele nao e o programa final.
+
+O AUDIO NAO DITA CODIGO. A animacao mostra o fonte e o bytecode lado a lado. O audio cita nomes de ferramentas (javac, java, javap) e de instrucoes de passagem, mas NAO le codigo letra por letra. Quem esta so no audio entende a ideia; quem esta na pagina ve o texto.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 7 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (4), avisar que da pra tocar em cada linha do fonte na tela pra ver em que instrucoes ela virou.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 7 telas. O audio TEM que pedir "aperte o Proximo" exatamente 6 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. Nada de sermao e nada de nostalgia. Nao vender Java como a melhor linguagem: o bytecode e uma escolha de projeto com custo e beneficio, e o episodio diz os dois.
+
+O QUE TRANSFERE. No encerramento, dizer em uma frase o que deste episodio serve pra qualquer linguagem, e nao so pra Java.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Que O Javac Faz.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O idioma intermediario e o tradutor de cada pais: em vez de traduzir um texto pra cada lingua do mundo, o autor escreve numa lingua intermediaria que todo tradutor conhece, e cada pais tem o seu tradutor, que passa dali pra lingua local. O bytecode e o texto na lingua intermediaria; a JVM e o tradutor que cada maquina tem. Serve pra explicar por que Java roda em qualquer lugar. Nao serve pra dizer que traduzir duas vezes e lento: a JVM traduz de um jeito esperto, e o episodio diz isso na hora.
+
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O QUE O JAVAC FAZ)
+
+Retomar em uma frase onde o episodio anterior parou: dois comandos, javac e java, e um arquivo novo na pasta, Ola ponto class, que ninguem abriu.
+
+Dizer o que este episodio faz: abre esse arquivo. O que tem dentro, por que ele nao e o programa final, e por que isso e o motivo de Java rodar em qualquer maquina.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na tela do meio, da pra tocar em cada linha do fonte.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (AS TRES PECAS)
+
+Dizer que Java tem tres pecas, e que quem acha que tem duas (o codigo e o programa) e quem se perde depois.
+
+Primeira peca, o fonte. E o arquivo ponto java: texto, escrito pra gente ler. O processador nao entende uma palavra dele.
+
+Segunda peca, o bytecode. E o que o javac escreve no arquivo ponto class: uma lista de instrucoes curtas, numeradas, pra uma maquina que nao existe em metal. Ninguem escreve bytecode na mao; e produto do compilador.
+
+Terceira peca, a JVM. A sigla e maquina virtual Java. E a maquina que nao existe em metal existindo em software: um programa instalado no computador que sabe ler bytecode e executar. Ligar com o episodio anterior: o comando java do outro dia liga a JVM e entrega o arquivo class pra ela.
+
+Fechar a tela com a cadeia inteira em uma frase: voce escreve o fonte, o javac vira ele em bytecode, a JVM le o bytecode e executa. Tres pecas, dois comandos.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (POR QUE NAO IR DIRETO PRO PROCESSADOR)
+
+Levantar a pergunta que fica: por que essa volta? Por que nao compilar direto pra lingua do processador, como C faz?
+
+Explicar o problema: cada chip fala uma lingua propria. O processador de um computador de mesa, o do celular, o do notebook novo da maca, cada um tem o seu conjunto de instrucoes. Um programa compilado direto pra um deles nao roda nos outros. Quem faz em C compila uma vez pra cada maquina que quer atingir.
+
+Usar a analogia do idioma intermediario: em vez de traduzir o texto pra cada lingua do mundo, o autor escreve numa lingua intermediaria que todo tradutor conhece, e cada pais tem o seu tradutor pra lingua local. O bytecode e a lingua intermediaria. A JVM e o tradutor, e cada maquina traz o seu. Dizer o limite na hora: parece que traduzir duas vezes e lento, e no comeco era; hoje a JVM traduz de um jeito esperto, guardando o que ja traduziu, e o custo quase some.
+
+Dizer o que a frase famosa quer dizer sem slogan: escreva uma vez, rode em qualquer lugar e escreva uma vez, compile uma vez, e cada maquina traz o tradutor dela. O custo e que a maquina precisa ter a JVM instalada; o beneficio e que o mesmo arquivo class roda em todas.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (FONTE E BYTECODE LADO A LADO, TELA INTERATIVA)
+
+Avisar: na tela tem o fonte de um lado e o bytecode do outro, e da pra tocar em cada linha do fonte pra ver em que instrucoes ela virou. Dar tempo pro ouvinte tocar enquanto escuta.
+
+Dizer de onde o bytecode da tela saiu: de uma ferramenta que vem no kit, chamada javap, que abre um arquivo class e mostra as instrucoes em texto. Nao e pra usar no dia a dia; e pra olhar uma vez e nunca mais achar que o class e magica.
+
+Descrever o que o ouvinte vai ver, em palavras. As cinco linhas do fonte viraram meia duzia de instrucoes. A linha que imprime o texto virou tres: uma que pega a saida padrao, uma que carrega o texto, uma que chama o metodo de imprimir. A linha que fecha o metodo virou uma instrucao de retorno. As linhas que so abrem e fecham a classe nao viraram instrucao nenhuma: viraram a moldura do arquivo.
+
+Dizer o ponto da tela: cada instrucao tem origem. Nao existe nada no class que nao veio de uma linha do fonte. Isso e o contrario de magica, e e o que a serie quer que o aluno sinta: ele consegue apontar de onde cada coisa veio.
+
+ATENCAO: a tela 4 termina AQUI. O que o compilador confere (tipos, nomes, sintaxe) e assunto da tela 5, e NAO pode ser falado antes de pedir o Proximo. Na primeira gravacao os apresentadores emendaram as duas telas sem pedir, e a pessoa ficou olhando a tela errada por quatro minutos.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (O QUE O COMPILADOR CONFERE)
+
+Dizer que o javac nao e so um tradutor: antes de escrever o class, ele le o fonte inteiro e recusa o que nao faz sentido pra ele. Listar o que ele confere.
+
+Os tipos. Uma variavel declarada como numero inteiro nao aceita um texto; ele reclama antes de rodar. Os nomes. Chamar um metodo que nao existe, ou usar uma variavel que nunca foi declarada, e recusado na hora. A sintaxe. A chave que nao fechou, o ponto e virgula que faltou. Tudo isso para no compilador, e o class nem e escrito.
+
+Separar os dois tipos de erro, que e o ponto da tela. Erro de compilacao e o que o javac pega: o programa nem chega a existir. Erro de execucao e o que so aparece com o programa rodando: dividir por zero, mexer numa coisa que esta vazia, ler um arquivo que nao esta la. O compilador nao tem como prever esses, porque dependem do dado que chega na hora.
+
+Ligar com a tese da serie: o compilador e o primeiro leitor que nao aceita o codigo sem entender. Ele e chato de proposito, e cada reclamacao dele e um erro que nao vai explodir seis meses depois. Quem aprende a ler as mensagens dele ganha um revisor de graca.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (JDK, JRE E JVM)
+
+Desfazer a confusao das tres siglas, que todo iniciante tromba.
+
+CUIDADO COM AS SIGLAS: esta tela existe pra desfazer a confusao, entao cada sigla tem que ser dita certa, na ordem do menor pro maior. A menor e a JVM, jota ve eme, a maquina virtual. Depois o JRE, jota erre e, o ambiente de execucao. Depois o JDK, jota de ka, o kit. Na primeira gravacao os apresentadores disseram "a JRE e a maquina virtual", que e exatamente a troca que a tela quer evitar. Antes de cada sigla, conferir mentalmente: maquina virtual = JVM; ambiente de execucao = JRE; kit = JDK.
+
+A JVM e a maquina virtual: so ela, o programa que le bytecode. O JRE e o ambiente de execucao: a JVM mais a biblioteca padrao, tudo que precisa pra RODAR um programa Java ja compilado. O JDK e o kit de desenvolvimento: o JRE mais o compilador javac, o javap e outras ferramentas, tudo que precisa pra ESCREVER um programa Java.
+
+Dizer a consequencia pratica: quem so vai rodar um programa pronto precisa do JRE, e nem precisa saber que o javac existe. Quem vai escrever precisa do JDK, e foi o JDK que o aluno instalou no episodio anterior. Dizer que hoje em dia o JRE separado quase nao se instala mais: instala o JDK e pronto.
+
+Fechar a tela ligando com a tela 2: JDK e a caixa de ferramentas, JVM e a peca que trabalha, e o arquivo class e o que passa de uma pra outra.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (ENCERRAMENTO)
+
+Recapitular em poucas frases. Java tem tres pecas: fonte, bytecode e JVM. O javac vira fonte em bytecode e a JVM executa. O bytecode existe pra que o mesmo arquivo rode em qualquer maquina que tenha a JVM. Cada instrucao do class veio de uma linha do fonte. O compilador confere tipos, nomes e sintaxe e e o primeiro leitor exigente do codigo; o que ele nao pega e erro de execucao. JDK e o kit, JRE e o que roda, JVM e a maquina.
+
+O QUE TRANSFERE: toda linguagem tem um meio do caminho, com outro nome. Python compila pra um arquivo escondido antes de rodar. JavaScript vira bytecode dentro do proprio navegador, sem ninguem ver. C sharp tem o dele, com outro nome. Quem entendeu o class de Java entende o de todos: e sempre o produto de um compilador, lido por uma maquina que vem instalada.
+
+Gancho pro proximo episodio, sem entregar a resposta: aquele erro que apareceu de passagem no episodio anterior, o de classe nao encontrada. Ele tem a ver com onde o arquivo class esta, com o nome da pasta e com uma lista que a JVM consulta. E o erro mais comum de quem programa Java na unha, e e o proximo assunto.

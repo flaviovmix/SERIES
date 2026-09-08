@@ -42,7 +42,7 @@ Uma pergunta única atravessa tudo: **como uma lista de tarefas escrita num pape
 | # | Etapa | O que a lista de tarefas ganha | Eps | Status |
 |---|---|---|---|---|
 | 1 | **Por que ainda estudar isso** | (a tese: nada de código ainda) | 2 | 🔴 |
-| 2 | **A oficina** | o ambiente de pé | 3 | 🔴 |
+| 2 | **A oficina** | o ambiente de pé, e a primeira tela | 4 | 🟠 |
 | 3 | **O histórico do que você escreve** | versionada, com volta no tempo | 4 | 🔴 |
 | 4 | **A lista existe** | rodando no terminal, em memória | 3 | 🔴 |
 | 5 | **Provando que funciona** | testes que rodam sozinhos | 3 | 🔴 |
@@ -76,11 +76,14 @@ Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
 
 *Antes de escrever qualquer linha, saber onde a gente escreve.* Por que o Claude nunca abre NetBeans nem Eclipse, o que o VS Code é de verdade (um editor com terminal do lado, não uma IDE), e o primeiro programa compilado e rodado na mão.
 
+**Desvio registrado (06/09/2026):** a etapa ganhou um episódio antes do "Olá mundo": a oficina abre pela tela (HTML e CSS no VS Code com Live Server), porque o terminal não mostra nada e desanima quem começa. O modelo que o episódio embute mora em `02 - A oficina/01 - A primeira tela/modelo/` (cópia do `_arquivos/modelo-lista-de-tarefas/2-css-exportado/`, gerada pelo mesmo script). A etapa passa a ter 4 episódios.
+
 | Pasta | Episódio | O que cobre | Status |
 |---|---|---|---|
-| `01` | **Olá mundo sem IDE** | o pedido original do Flávio: VS Code, terminal integrado, `javac Ola.java`, `java Ola`. O que a IDE fazia escondido e por que doer uma vez ensina | 🔴 |
-| `02` | **O que o `javac` faz** | fonte → bytecode → JVM. Por que Java roda em qualquer lugar e o que é aquele `.class` que apareceu na pasta | 🔴 |
-| `03` | **Classpath e pacotes** | o erro mais comum de quem programa Java na unha (`could not find or load main class`), pasta = pacote, `-cp` | 🔴 |
+| `01` | **A primeira tela** | (06/09) a mão vai pro teclado, mas a primeira coisa que ela escreve é a TELA, não Java: começar por uma parte que não mostra nada na tela desanima. Anuncia o módulo 3.1 da trilha web do ESTUDO-PROGRAMACAO (a folha de tarefa do Nexus refeita em HTML e CSS, celular e desktop) e mostra o modelo real, vivo, dentro da animação. A aula em si acontece numa sessão de estudo | 🟠 áudio "A vitrine visual antes do Java" (21:37) + animação com tocador e marcas, 06/09; falta página da etapa no site e deploy |
+| `02` | **Olá mundo sem IDE** | o pedido original do Flávio: VS Code, terminal integrado, `javac Ola.java`, `java Ola`. O que a IDE fazia escondido e por que doer uma vez ensina | 🟠 áudio "Java além do botão verde" (12:14), 06/09; 7 telas no áudio, 7 na planta; animação a fazer |
+| `03` | **O que o `javac` faz** | fonte → bytecode → JVM. Por que Java roda em qualquer lugar e o que é aquele `.class` que apareceu na pasta | 🟠 áudio "Como o código vira bytecode Java" (13:44, v2 de 06/09: a v1 trocou JRE por JVM e emendou as telas 4 e 5; ficou em `_v1/`); 7 telas no áudio, 7 na planta; animação a fazer |
+| `04` | **Classpath e pacotes** | o erro mais comum de quem programa Java na unha (`could not find or load main class`), pasta = pacote, `-cp` | 🟠 áudio "Como o Java encontra suas classes" (12:49), 06/09; o áudio juntou pacotes + prática num bloco, planta refeita com 6 telas; animação a fazer |
 
 **Fecha quando:** ele compila e roda um Java pelo terminal do VS Code, sem plugin mágico.
 **Transfere:** todo interpretador e todo compilador tem esses três passos, com outros nomes.

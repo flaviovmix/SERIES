@@ -1,0 +1,17 @@
+OLA MUNDO SEM IDE - CONTEXTO
+============================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. A serie monta uma aplicacao Java web do zero, peca por peca: uma lista de tarefas que nasce rodando no terminal e termina no ar, num endereco que outra pessoa consegue abrir. Pelo caminho passam ambiente de trabalho, historico de codigo, testes, servidor, banco de dados e publicacao.
+
+O episodio anterior, A Primeira Tela, mostrou por onde a mao comecou: pela tela, em HTML e CSS, porque tela aparece. Este episodio vai pro terminal. E o pedido que fez a serie nascer: escrever, compilar e rodar o primeiro programa Java na mao, no VS Code, sem IDE.
+
+A ideia central e que a IDE (NetBeans, Eclipse, IntelliJ) faz quatro coisas escondidas: acha o kit do Java, compila quando voce salva, monta o caminho onde as classes ficam, e roda no botao verde. Quem sempre usou IDE nunca viu nenhuma das quatro acontecer, e por isso nao sabe o que fazer quando uma delas falha. A serie nao e contra IDE; ela passa por cada passo uma vez, na mao, pra que a IDE depois seja conforto e nao muleta.
+
+O episodio apresenta a oficina de verdade: o VS Code como editor com terminal do lado, o JDK como o kit (compilador, executor e biblioteca), e o terminal precisando achar esse kit. Depois o arquivo Ola.java, com cinco linhas e um motivo pra cada uma, e a regra de que o arquivo chama como a classe. Depois compilar com javac, o arquivo .class que aparece, e como ler o primeiro erro de sintaxe. Depois rodar com java, sem a extensao no fim, e o Ola mundo na tela. O erro classico de classe nao encontrada e so apresentado: a explicacao fica pro episodio sobre classpath.
+
+Sem ditar codigo letra por letra: o audio descreve o que cada linha faz, e a animacao mostra o arquivo.
+
+Fecha dizendo o que transfere: todo compilador e todo interpretador tem esses passos, com outros nomes. Python pula um passo visivel, C tem o gcc, JavaScript tem o node. Saber os passos e o que deixa a pessoa ler qualquer erro de qualquer linguagem.
+
+Use este contexto apenas como apoio.

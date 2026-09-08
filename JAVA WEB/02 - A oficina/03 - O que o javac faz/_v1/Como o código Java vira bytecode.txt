@@ -1,0 +1,7 @@
+Titulo: Como o código Java vira bytecode
+Notebook: 02-03-O que o javac faz
+
+Descricao:
+Os materiais tratam do funcionamento do compilador javac e do papel do bytecode no ecossistema Java. A explicação detalha como o código escrito por humanos é transformado em instruções para uma máquina virtual (JVM), permitindo que o programa rode em diferentes sistemas operacionais sem alterações. As fontes descrevem a estrutura de uma série educativa composta por áudio e animações interativas que diferenciam erros de compilação de erros de execução. O conteúdo também esclarece as distinções entre as siglas JDK, JRE e JVM, fundamentais para quem desenvolve ou apenas executa aplicações. Por fim, o texto reforça que esse processo de tradução intermediária é um conceito comum a diversas linguagens de programação modernas.
+
+Link: https://notebook.google.com/notebook/67f5eec7-fced-4df5-a925-bdb190a1bd7f

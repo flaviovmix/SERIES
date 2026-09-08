@@ -1,0 +1,7 @@
+Titulo: Como o Java encontra suas classes
+Notebook: 02-04-Classpath e pacotes
+
+Descricao:
+Estes documentos detalham a conclusão da segunda etapa de uma série educativa sobre Java Web, focada no funcionamento do Classpath e dos pacotes. O material explica que a JVM localiza arquivos através de uma lista de caminhos, desmistificando o erro comum de classe não encontrada ao executar programas manualmente. A relação direta entre a estrutura de pastas e a declaração de pacotes é explorada, utilizando a analogia de endereços urbanos para facilitar a compreensão. As fontes também descrevem o uso das opções cp e d nos comandos de terminal para organizar e separar arquivos fontes de arquivos compilados. Por fim, o conteúdo ressalta que o conceito de listas de busca é universal na computação, existindo de forma semelhante em ambientes como Python e Node.js.
+
+Link: https://notebook.google.com/notebook/2ec25842-0fe7-4f48-a8af-b3a0adb1e02e

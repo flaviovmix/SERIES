@@ -1,0 +1,55 @@
+MODELO: a folha da tarefa do Nexus, só com HTML e CSS
+=====================================================
+
+O que é
+-------
+A folha de uma tarefa do Nexus (o nome da tarefa e a lista de subtarefas),
+reproduzida do zero em HTML e CSS puros, no celular e no desktop, tema escuro.
+É uma lista de tarefas simples: só essa parte, sem o resto do sistema.
+
+É o resultado que a aula 3.1 da trilha web (ESTUDO-PROGRAMACAO) constrói, e o
+que o episódio da série JAVA WEB mostra pro ouvinte antes da aula acontecer.
+
+Nada aqui tem JavaScript: os botões não fazem nada, o cartão não desliza pra
+mostrar as ações, os atalhos do rodapé não abrem painel. Isso é de propósito.
+O assunto é o que o navegador desenha a partir de tags e regras.
+
+Duas pastas, a mesma tela
+-------------------------
+1-tudo-no-arquivo/   index.html com o CSS dentro do <style>. É assim que a
+                     aula começa: um arquivo só.
+2-css-exportado/     o mesmo index.html, agora com <link rel="stylesheet">,
+                     e o CSS inteiro em estilo.css. É assim que a aula termina.
+_referencia/         prints da tela real e do modelo, nos dois tamanhos.
+
+Como abrir
+----------
+Sempre servido, nunca por file://.
+
+  Live Server (VS Code): botão direito no index.html > "Open with Live Server".
+                         Abre em http://127.0.0.1:5500/... e recarrega ao salvar.
+                         Com ele aberto, não renomear nem mover pasta.
+
+  Ou pelo terminal, nesta pasta:  python -m http.server 8000
+                                  e abrir http://localhost:8000/2-css-exportado/
+
+Pra ver o celular: F12 > ícone de celular > 390 x 844.
+
+O que a tela usa
+----------------
+Tags:   section, header, footer, nav, div, form, h1, h2, h3, textarea,
+        button, ul, li, span, svg
+CSS:    variáveis (--fundo, --texto...), flexbox (topo, linha da tarefa,
+        cartão, atalhos), position: fixed (o véu e a folha), position: sticky
+        (o nome da tarefa preso no alto do celular), overflow (só o corpo
+        rola), pseudo-classes :hover e ::placeholder, e uma única media query
+        no fim (max-width: 768px) que vira tudo pro celular.
+
+De onde saiu
+------------
+Código real do Nexus em
+C:\src\PROJETOS\NEXUS\frontend\src\lib\components\tasks\TaskDetailModal.svelte
+e nas cascas ui\Modal.svelte (desktop) e ui\FullScreenModal.svelte (celular).
+As cores são as do tema escuro em app.css. No desktop o Nexus mostra também
+uma coluna à direita (projeto, responsável, data, prioridade...); ela ficou
+de fora de propósito, porque o módulo é só a lista.

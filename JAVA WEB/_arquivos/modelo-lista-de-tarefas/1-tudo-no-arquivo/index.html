@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EQUIPAMENTOS · Nexus</title>
+    <link rel="icon" href="data:,">
+    <style>
+      /* ==========================================================================
+         A folha da tarefa do Nexus (título + subtarefas), só com HTML e CSS.
+         Tema escuro, que é o que o Flávio usa. Valores copiados do app real.
+         Ordem: variáveis → base → a folha (casca) → topo → tarefa → subtarefas
+         → rodapé de atalhos → celular (a media query fica no FIM, de propósito:
+         media query não tem especificidade, quem vem depois ganha).
+         ========================================================================== */
+
+      /* ---- 1. Variáveis: cada cor tem nome, e o nome diz o PAPEL dela ---- */
+      :root {
+        --fundo: #141312;            /* papel da página, atrás do véu */
+        --superficie: #121211;       /* a folha, o topo, o rodapé */
+        --superficie-2: #1c1b19;     /* o cartão da subtarefa */
+        --texto: #e9e6df;
+        --texto-apagado: #8b867d;    /* contagem, botões do topo, "Adicionar" */
+        --texto-fraco: #6e6a62;      /* placeholder */
+        --linha: #26241f;            /* divisores */
+        --linha-forte: #3a362e;      /* borda da folha no desktop */
+        --veu: rgba(0, 0, 0, 0.6);   /* escurece a página atrás da folha */
+
+        --acento: #dc4c3e;           /* o "+" de Adicionar subtarefa */
+        --primario: #3b82f6;         /* a marca azul no atalho "Data" */
+        --estrela: #f5b301;          /* favorito ligado */
+
+        color-scheme: dark;
+      }
+
+      /* ---- 2. Base ---- */
+      *, *::before, *::after { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        background: var(--fundo);
+        color: var(--texto);
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+      }
+
+      /* ---- 3. A folha: no desktop é uma janela no meio da tela ---- */
+      .veu {
+        position: fixed;
+        inset: 0;
+        background: var(--veu);
+      }
+
+      .folha {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        width: min(640px, 94vw);
+        max-height: 94vh;
+        overflow: hidden;
+        border: 1px solid var(--linha-forte);
+        border-radius: 10px;
+        background: var(--superficie);
+        color: var(--texto);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+      }
+
+      /* ---- 4. Topo: nome da caixa e os três botões ---- */
+      .folha-topo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex-shrink: 0;
+        padding: 16px 20px 12px;
+        border-bottom: 1px solid var(--linha);
+      }
+
+      .folha-topo h2 {
+        flex: 1;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .folha-acoes {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+
+      .favorito,
+      .compartilhar,
+      .fechar {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        border: none;
+        border-radius: 4px;
+        background: none;
+        color: var(--texto-apagado);
+      }
+
+      .favorito { opacity: 0.65; }
+
+      .favorito:hover {
+        opacity: 1;
+        background: rgba(127, 127, 127, 0.14);
+      }
+
+      /* Favorito ligado: a estrela enche de amarelo. */
+      .favorito--ligado {
+        opacity: 1;
+        color: var(--estrela);
+      }
+
+      .favorito--ligado svg { fill: currentColor; }
+
+      .compartilhar:hover,
+      .fechar:hover {
+        background: var(--superficie-2);
+        color: var(--texto);
+      }
+
+      .favorito svg,
+      .compartilhar svg,
+      .fechar svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* ---- 5. Corpo: quem rola é ele, não a página ---- */
+      .folha-corpo {
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow: auto;
+      }
+
+      .principal { padding: 20px 24px; }
+
+      /* ---- 6. A tarefa: bolinha + título, e a descrição embaixo ---- */
+      .tarefa {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .tarefa-linha {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      /* A bolinha de concluir: 28px de alvo, o desenho na cor da prioridade. */
+      .concluir {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 28px;
+        min-height: 28px;
+        padding: 0;
+        border: none;
+        background: none;
+        line-height: 0;
+        flex-shrink: 0;
+      }
+
+      .bolinha {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--diametro, 20px);
+        height: var(--diametro, 20px);
+        border: 2px solid var(--cor, var(--texto));
+        border-radius: 50%;
+        color: transparent;        /* o tique existe, mas só aparece no hover */
+        transition: background 0.12s, color 0.12s;
+      }
+
+      .bolinha svg {
+        width: 68%;
+        height: 68%;
+        display: block;
+      }
+
+      .concluir:hover .bolinha {
+        background: color-mix(in srgb, var(--cor, var(--texto)) 12%, transparent);
+        color: color-mix(in srgb, var(--cor, var(--texto)) 45%, transparent);
+      }
+
+      /* Desce 4px pra alinhar com a primeira linha do título grande. */
+      .tarefa-linha .concluir { margin-top: 4px; }
+
+      .tarefa-titulo {
+        flex: 1;
+        min-width: 0;
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .descricao {
+        width: calc(100% - 32px);
+        min-height: 36px;
+        margin: 4px 0 0 32px;
+        padding: 8px 10px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        background: transparent;
+        color: var(--texto);
+        font-family: inherit;
+        font-size: 0.88rem;
+        outline: none;
+        resize: vertical;
+      }
+
+      .descricao::placeholder { color: var(--texto-fraco); }
+
+      .descricao:hover { border-color: var(--linha); }
+
+      .descricao:focus {
+        border-color: var(--linha-forte);
+        background: var(--superficie);
+      }
+
+      /* ---- 7. Subtarefas ---- */
+      .subtarefas {
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 1px solid var(--linha);
+      }
+
+      .subtarefas-cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .subtarefas-titulo {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 0.92rem;
+        font-weight: 600;
+      }
+
+      .subtarefas-conta {
+        color: var(--texto-apagado);
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      .adicionar {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px 0;
+        border: none;
+        background: none;
+        color: var(--texto-apagado);
+        font-size: 0.88rem;
+      }
+
+      .adicionar:hover { color: var(--acento); }
+
+      .adicionar-mais {
+        color: var(--acento);
+        font-size: 1.05rem;
+        font-weight: 600;
+        line-height: 1;
+      }
+
+      .subtarefas-lista {
+        list-style: none;
+        margin: 8px 0 0;
+        padding: 0;
+      }
+
+      /* Cada subtarefa é um CARTÃO: fundo e cantos próprios, separado por espaço
+         em vez de por risco. No desktop a seta ao lado abre as ações. */
+      .subtarefa {
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 8px;
+        font-size: 0.92rem;
+      }
+
+      .subtarefa-cartao {
+        position: relative;
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: var(--superficie-2);
+      }
+
+      .subtarefa .concluir { margin-top: 1px; }
+
+      .subtarefa-conteudo {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .subtarefa-titulo {
+        display: block;
+        padding: 2px 6px;
+        font-size: 0.92rem;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+
+      /* No desktop cada cartão mostra o campo de descrição, vazio. */
+      .subtarefa-descricao {
+        display: block;
+        min-height: 22px;
+        margin-top: 2px;
+        padding: 2px 6px;
+        color: var(--texto-fraco);
+        font-size: 0.82rem;
+        line-height: 1.4;
+      }
+
+      .subtarefa-seta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        flex-shrink: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        color: var(--texto-apagado);
+      }
+
+      .subtarefa-seta:hover { color: var(--texto); }
+
+      /* ---- 8. Rodapé de atalhos: só existe no celular ---- */
+      .folha-rodape {
+        display: none;
+        flex-shrink: 0;
+        border-top: 1px solid var(--linha);
+        background: var(--superficie);
+      }
+
+      /* Desliza na horizontal em vez de quebrar linha: são nove atalhos. */
+      .atalhos {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 10px 12px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        scroll-snap-type: x proximity;
+      }
+
+      .atalhos::-webkit-scrollbar { display: none; }
+
+      .atalho {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        padding: 10px 14px;
+        border: 1px solid var(--linha);
+        border-radius: 999px;
+        background: var(--fundo);
+        color: var(--texto);
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .atalho:hover { border-color: var(--texto-fraco); }
+
+      .atalho svg {
+        width: 14px;
+        height: 14px;
+        color: var(--texto-apagado);
+      }
+
+      /* Marca de "tem conteúdo aqui dentro". */
+      .atalho-marca {
+        min-width: 18px;
+        padding: 0 5px;
+        border-radius: 999px;
+        background: var(--primario);
+        color: #fff;
+        font-size: 0.72rem;
+        line-height: 18px;
+        text-align: center;
+      }
+
+      /* ==========================================================================
+         9. Celular (até 768px): a folha vira a tela inteira, parada.
+         ========================================================================== */
+      @media (max-width: 768px) {
+        .veu { display: none; }
+
+        .folha {
+          inset: 0;
+          transform: none;
+          width: auto;
+          height: 100vh;
+          height: 100dvh;
+          max-height: none;
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        /* O topo perde o texto: só os três botões, à direita, com alvo de 42px
+           (é a mão que aperta, não o ponteiro). */
+        .folha-topo { padding: 10px 12px; }
+
+        .folha-topo h2 { visibility: hidden; }
+
+        .folha-acoes { gap: 2px; }
+
+        .favorito,
+        .compartilhar,
+        .fechar {
+          width: 42px;
+          height: 42px;
+          border-radius: 8px;
+        }
+
+        .favorito svg,
+        .compartilhar svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        .fechar svg {
+          width: 22px;
+          height: 22px;
+        }
+
+        .principal { padding: 0 14px 16px; }
+
+        /* O nome da tarefa fica preso no alto enquanto a lista rola por baixo. */
+        .tarefa {
+          position: sticky;
+          top: 0;
+          z-index: 2;
+          padding: 16px 0 10px;
+          border-bottom: 1px solid var(--linha);
+          background: var(--superficie);
+        }
+
+        .tarefa-linha .concluir { margin-top: -1px; }
+
+        /* A descrição sai da tela: mora no atalho lá embaixo. */
+        .descricao { display: none; }
+
+        /* A linha da seção seria a segunda logo abaixo da do título. */
+        .subtarefas {
+          margin-top: 0;
+          border-top: none;
+        }
+
+        /* O cartão é texto, e o gesto é puxar: sem seta, sem campo de descrição. */
+        .subtarefa-seta,
+        .subtarefa-descricao { display: none; }
+
+        .subtarefa .concluir { margin-top: -4px; }
+
+        .subtarefa-titulo {
+          padding: 0;
+          font-size: 0.95rem;
+          font-weight: 600;
+          line-height: 20px;
+        }
+
+        .folha-rodape { display: block; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- O véu escuro por trás da folha. Só aparece no desktop. -->
+    <div class="veu"></div>
+
+    <!-- A folha da tarefa: janela no desktop, tela inteira no celular. -->
+    <section class="folha" aria-label="Tarefa EQUIPAMENTOS">
+
+      <header class="folha-topo">
+        <h2>Caixa de entrada</h2>
+        <div class="folha-acoes">
+          <button type="button" class="favorito favorito--ligado" aria-pressed="true" aria-label="Favorito"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.6 1-4.8 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.5 9.4l6.6-1z"/></svg></button>
+          <button type="button" class="compartilhar" aria-label="Compartilhar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4" cy="8" r="1.8"/><circle cx="12" cy="4" r="1.8"/><circle cx="12" cy="12" r="1.8"/><path d="M5.5 7L10.5 4.5M5.5 9L10.5 11.5"/></svg></button>
+          <button type="button" class="fechar" aria-label="Fechar"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button>
+        </div>
+      </header>
+
+      <div class="folha-corpo">
+        <div class="principal">
+
+          <!-- A tarefa: a bolinha de concluir e o nome -->
+          <form class="tarefa">
+            <div class="tarefa-linha">
+              <button type="button" class="concluir" style="--diametro: 20px" aria-label="Concluir tarefa"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+              <h1 class="tarefa-titulo">EQUIPAMENTOS</h1>
+            </div>
+            <textarea class="descricao" placeholder="Descrição" rows="2"></textarea>
+          </form>
+
+          <!-- As subtarefas: cabeçalho com a contagem e a lista de cartões -->
+          <section class="subtarefas" aria-label="Subtarefas">
+            <div class="subtarefas-cabecalho">
+              <h3 class="subtarefas-titulo">
+                <span>Subtarefas</span>
+                <span class="subtarefas-conta">0/8</span>
+              </h3>
+              <button type="button" class="adicionar"><span class="adicionar-mais">+</span><span>Adicionar subtarefa</span></button>
+            </div>
+            <ul class="subtarefas-lista">
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Copo grande para coar café"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Copo grande para coar café</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Copo grande para coar café"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Colher"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Colher</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Colher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Copos"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Copos</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Copos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Pano de chão"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Pano de chão</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Pano de chão"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Guardanapo"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Guardanapo</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Guardanapo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Lanche"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Lanche</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Lanche"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Faca"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Faca</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Faca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+              <li class="subtarefa">
+                <div class="subtarefa-cartao">
+                  <button type="button" class="concluir" style="--diametro: 18px" aria-label="Concluir Café"><span class="bolinha"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.3l3 3 5.5-5.6"/></svg></span></button>
+                  <div class="subtarefa-conteudo">
+                    <span class="subtarefa-titulo">Café</span>
+                    <span class="subtarefa-descricao">Descrição</span>
+                  </div>
+                </div>
+                <button type="button" class="subtarefa-seta" aria-label="Ações de Café"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Os atalhos do celular: cada um abre um painel de baixo -->
+      <footer class="folha-rodape">
+        <nav class="atalhos" aria-label="Mais da tarefa">
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h12M3 18h15"/></svg><span>Descrição</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Data</span><span class="atalho-marca">•</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h12l-2 4 2 4H5"/></svg><span>Prioridade</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Comentários</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.4 13.3l-7.1 7.1a2 2 0 0 1-2.8 0l-6.2-6.2a2 2 0 0 1-.6-1.4V5.6a2 2 0 0 1 2-2h7.2a2 2 0 0 1 1.4.6l6.1 6.1a2 2 0 0 1 0 3z"/><circle cx="8.4" cy="8.4" r="1.3"/></svg><span>Etiquetas</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Lembretes</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7.5A2 2 0 0 1 6 5.5h3.3l2 2.2H18a2 2 0 0 1 2 2v7.3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg><span>Projeto</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Responsável</span></button>
+          <button type="button" class="atalho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16M3 10h18"/></svg><span>Quadros</span></button>
+        </nav>
+      </footer>
+
+    </section>
+  </body>
+</html>

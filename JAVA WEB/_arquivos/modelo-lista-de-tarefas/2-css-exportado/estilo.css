@@ -1,0 +1,489 @@
+/* ==========================================================================
+   A folha da tarefa do Nexus (título + subtarefas), só com HTML e CSS.
+   Tema escuro, que é o que o Flávio usa. Valores copiados do app real.
+   Ordem: variáveis → base → a folha (casca) → topo → tarefa → subtarefas
+   → rodapé de atalhos → celular (a media query fica no FIM, de propósito:
+   media query não tem especificidade, quem vem depois ganha).
+   ========================================================================== */
+
+/* ---- 1. Variáveis: cada cor tem nome, e o nome diz o PAPEL dela ---- */
+:root {
+  --fundo: #141312;            /* papel da página, atrás do véu */
+  --superficie: #121211;       /* a folha, o topo, o rodapé */
+  --superficie-2: #1c1b19;     /* o cartão da subtarefa */
+  --texto: #e9e6df;
+  --texto-apagado: #8b867d;    /* contagem, botões do topo, "Adicionar" */
+  --texto-fraco: #6e6a62;      /* placeholder */
+  --linha: #26241f;            /* divisores */
+  --linha-forte: #3a362e;      /* borda da folha no desktop */
+  --veu: rgba(0, 0, 0, 0.6);   /* escurece a página atrás da folha */
+
+  --acento: #dc4c3e;           /* o "+" de Adicionar subtarefa */
+  --primario: #3b82f6;         /* a marca azul no atalho "Data" */
+  --estrela: #f5b301;          /* favorito ligado */
+
+  color-scheme: dark;
+}
+
+/* ---- 2. Base ---- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ---- 3. A folha: no desktop é uma janela no meio da tela ---- */
+.veu {
+  position: fixed;
+  inset: 0;
+  background: var(--veu);
+}
+
+.folha {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: min(640px, 94vw);
+  max-height: 94vh;
+  overflow: hidden;
+  border: 1px solid var(--linha-forte);
+  border-radius: 10px;
+  background: var(--superficie);
+  color: var(--texto);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* ---- 4. Topo: nome da caixa e os três botões ---- */
+.folha-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--linha);
+}
+
+.folha-topo h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.folha-acoes {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.favorito,
+.compartilhar,
+.fechar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  color: var(--texto-apagado);
+}
+
+.favorito { opacity: 0.65; }
+
+.favorito:hover {
+  opacity: 1;
+  background: rgba(127, 127, 127, 0.14);
+}
+
+/* Favorito ligado: a estrela enche de amarelo. */
+.favorito--ligado {
+  opacity: 1;
+  color: var(--estrela);
+}
+
+.favorito--ligado svg { fill: currentColor; }
+
+.compartilhar:hover,
+.fechar:hover {
+  background: var(--superficie-2);
+  color: var(--texto);
+}
+
+.favorito svg,
+.compartilhar svg,
+.fechar svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---- 5. Corpo: quem rola é ele, não a página ---- */
+.folha-corpo {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.principal { padding: 20px 24px; }
+
+/* ---- 6. A tarefa: bolinha + título, e a descrição embaixo ---- */
+.tarefa {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tarefa-linha {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* A bolinha de concluir: 28px de alvo, o desenho na cor da prioridade. */
+.concluir {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  min-height: 28px;
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.bolinha {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--diametro, 20px);
+  height: var(--diametro, 20px);
+  border: 2px solid var(--cor, var(--texto));
+  border-radius: 50%;
+  color: transparent;        /* o tique existe, mas só aparece no hover */
+  transition: background 0.12s, color 0.12s;
+}
+
+.bolinha svg {
+  width: 68%;
+  height: 68%;
+  display: block;
+}
+
+.concluir:hover .bolinha {
+  background: color-mix(in srgb, var(--cor, var(--texto)) 12%, transparent);
+  color: color-mix(in srgb, var(--cor, var(--texto)) 45%, transparent);
+}
+
+/* Desce 4px pra alinhar com a primeira linha do título grande. */
+.tarefa-linha .concluir { margin-top: 4px; }
+
+.tarefa-titulo {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.descricao {
+  width: calc(100% - 32px);
+  min-height: 36px;
+  margin: 4px 0 0 32px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 0.88rem;
+  outline: none;
+  resize: vertical;
+}
+
+.descricao::placeholder { color: var(--texto-fraco); }
+
+.descricao:hover { border-color: var(--linha); }
+
+.descricao:focus {
+  border-color: var(--linha-forte);
+  background: var(--superficie);
+}
+
+/* ---- 7. Subtarefas ---- */
+.subtarefas {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--linha);
+}
+
+.subtarefas-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.subtarefas-titulo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 4px 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.subtarefas-conta {
+  color: var(--texto-apagado);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.adicionar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  border: none;
+  background: none;
+  color: var(--texto-apagado);
+  font-size: 0.88rem;
+}
+
+.adicionar:hover { color: var(--acento); }
+
+.adicionar-mais {
+  color: var(--acento);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.subtarefas-lista {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+/* Cada subtarefa é um CARTÃO: fundo e cantos próprios, separado por espaço
+   em vez de por risco. No desktop a seta ao lado abre as ações. */
+.subtarefa {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+}
+
+.subtarefa-cartao {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--superficie-2);
+}
+
+.subtarefa .concluir { margin-top: 1px; }
+
+.subtarefa-conteudo {
+  flex: 1;
+  min-width: 0;
+}
+
+.subtarefa-titulo {
+  display: block;
+  padding: 2px 6px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* No desktop cada cartão mostra o campo de descrição, vazio. */
+.subtarefa-descricao {
+  display: block;
+  min-height: 22px;
+  margin-top: 2px;
+  padding: 2px 6px;
+  color: var(--texto-fraco);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.subtarefa-seta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--texto-apagado);
+}
+
+.subtarefa-seta:hover { color: var(--texto); }
+
+/* ---- 8. Rodapé de atalhos: só existe no celular ---- */
+.folha-rodape {
+  display: none;
+  flex-shrink: 0;
+  border-top: 1px solid var(--linha);
+  background: var(--superficie);
+}
+
+/* Desliza na horizontal em vez de quebrar linha: são nove atalhos. */
+.atalhos {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+
+.atalhos::-webkit-scrollbar { display: none; }
+
+.atalho {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  padding: 10px 14px;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: var(--fundo);
+  color: var(--texto);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.atalho:hover { border-color: var(--texto-fraco); }
+
+.atalho svg {
+  width: 14px;
+  height: 14px;
+  color: var(--texto-apagado);
+}
+
+/* Marca de "tem conteúdo aqui dentro". */
+.atalho-marca {
+  min-width: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--primario);
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   9. Celular (até 768px): a folha vira a tela inteira, parada.
+   ========================================================================== */
+@media (max-width: 768px) {
+  .veu { display: none; }
+
+  .folha {
+    inset: 0;
+    transform: none;
+    width: auto;
+    height: 100vh;
+    height: 100dvh;
+    max-height: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* O topo perde o texto: só os três botões, à direita, com alvo de 42px
+     (é a mão que aperta, não o ponteiro). */
+  .folha-topo { padding: 10px 12px; }
+
+  .folha-topo h2 { visibility: hidden; }
+
+  .folha-acoes { gap: 2px; }
+
+  .favorito,
+  .compartilhar,
+  .fechar {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+  }
+
+  .favorito svg,
+  .compartilhar svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fechar svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .principal { padding: 0 14px 16px; }
+
+  /* O nome da tarefa fica preso no alto enquanto a lista rola por baixo. */
+  .tarefa {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 16px 0 10px;
+    border-bottom: 1px solid var(--linha);
+    background: var(--superficie);
+  }
+
+  .tarefa-linha .concluir { margin-top: -1px; }
+
+  /* A descrição sai da tela: mora no atalho lá embaixo. */
+  .descricao { display: none; }
+
+  /* A linha da seção seria a segunda logo abaixo da do título. */
+  .subtarefas {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  /* O cartão é texto, e o gesto é puxar: sem seta, sem campo de descrição. */
+  .subtarefa-seta,
+  .subtarefa-descricao { display: none; }
+
+  .subtarefa .concluir { margin-top: -4px; }
+
+  .subtarefa-titulo {
+    padding: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .folha-rodape { display: block; }
+}

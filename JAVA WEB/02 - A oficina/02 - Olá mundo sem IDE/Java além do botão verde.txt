@@ -1,0 +1,7 @@
+Titulo: Java além do botão verde
+Notebook: 02-02-Olá mundo sem IDE
+
+Descricao:
+Estes documentos descrevem o segundo episódio da série Java Web, intitulado Olá Mundo Sem IDE, que ensina a programar Java utilizando apenas o VS Code e o terminal. O objetivo central é desmistificar o papel das interfaces de desenvolvimento, utilizando a analogia do câmbio manual para explicar processos que normalmente ocorrem de forma automática e oculta. O material detalha o funcionamento do JDK, os comandos de compilação e execução, e a estrutura básica de um código inicial. Ao realizar cada etapa manualmente, o estudante aprende a identificar a origem de falhas no ambiente de trabalho e a interpretar erros de sintaxe com autonomia. Essa abordagem visa transformar a tecnologia em um conforto compreensível, em vez de uma ferramenta de dependência técnica. Por fim, o conteúdo destaca que o entendimento desses fluxos fundamentais é transferível para diversas outras linguagens de programação.
+
+Link: https://notebook.google.com/notebook/e57706ab-1ea9-410a-ab8a-1b8b652bcedc

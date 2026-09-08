@@ -1,0 +1,35 @@
+Inicie dizendo: Classpath E Pacotes
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Classpath E Pacotes.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o quarto e ultimo episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. O episodio anterior, O Que O Javac Faz, abriu o arquivo class e explicou fonte, bytecode e maquina virtual. Este explica o erro de classe principal nao encontrada, que ficou prometido, e fecha a etapa: no fim dele a oficina esta de pe.
+
+O AUDIO NAO DITA CODIGO. A animacao mostra a arvore de pastas e os comandos; o audio cita comandos e opcoes pelo nome (java, javac, a opcao cp, a opcao d, a linha package), sem ler letra por letra.
+
+FOCO: a maquina virtual recebe um nome e procura o arquivo class numa lista de lugares chamada classpath, que por padrao e so a pasta atual; o erro nao e defeito, e "nao achei na lista". Pacotes: por que existem, a linha package, e a regra de que pasta e pacote sao a mesma coisa, com o nome completo da classe ganhando o pacote na frente. As quatro combinacoes de "de onde eu rodo" e "com qual nome", das quais so uma funciona, e a conta que a maquina virtual sempre faz (nome completo vira caminho de pastas). A opcao cp pra dizer onde procurar, a opcao d pra separar fonte de compilado, e por que separar (a saida pode ser apagada e refeita; o historico de codigo nao guarda ela). A IDE montava o classpath escondido, por isso o erro so aparece fora dela; as ferramentas maiores que vem depois continuam montando um classpath, so que sozinhas. A etapa fecha com a oficina de pe.
+
+TOM: nada de sermao e nada de nostalgia. O erro nao e motivo de vergonha: todo mundo toma ele uma vez. Nao fazer piada com quem usa IDE.
+
+A pagina tem 7 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 6 vezes, sem juntar duas telas num bloco so. Na tela interativa (4), avisar que da pra escolher na tela de onde roda e com qual nome.
+
+No encerramento, dizer que a etapa 2 acabou e o que ela deixou, dizer o que transfere pra outras linguagens (todo ambiente tem uma lista de onde procurar), e fechar com o gancho pra etapa seguinte, sobre ter como voltar atras antes de escrever o programa, sem citar o nome da ferramenta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Classpath E Pacotes.txt. NAO invente analogias novas. A unica autorizada e o endereco com a cidade, pra explicar o pacote na frente do nome e a lista de lugares onde procurar, com o limite dito em voz alta no roteiro: nao e burocracia, e o que impede duas ruas iguais de virar uma carta perdida.
+
+Use tambem o Overview.txt como contexto curto.

@@ -1,0 +1,19 @@
+CLASSPATH E PACOTES - CONTEXTO
+==============================
+Documento curto de contexto para uso com NotebookLM.
+
+Quarto e ultimo episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. A serie monta uma aplicacao Java web do zero, peca por peca: uma lista de tarefas que nasce rodando no terminal e termina no ar, num endereco que outra pessoa consegue abrir. Pelo caminho passam ambiente de trabalho, historico de codigo, testes, servidor, banco de dados e publicacao.
+
+O episodio anterior, O Que O Javac Faz, abriu o arquivo class e explicou fonte, bytecode e maquina virtual. Este episodio explica o erro mais comum de quem programa Java na unha: a mensagem de que a classe principal nao foi encontrada. Ela apareceu de passagem dois episodios atras e ficou prometida.
+
+A ideia central e que a JVM, quando recebe o comando java com o nome de uma classe, procura o arquivo class dessa classe numa lista de lugares chamada classpath. Por padrao a lista tem um item so: a pasta atual. Rodar de outra pasta, ou com o nome errado, da o erro. Nao e defeito: e a JVM dizendo que nao achou na lista.
+
+Entram os pacotes: por que existem (dois arquivos com o mesmo nome em projetos grandes, e organizar por assunto), a linha package no topo do arquivo, e a regra de que pasta e pacote sao a mesma coisa: a classe no pacote br ponto afx ponto tarefas mora na pasta br, afx, tarefas, e o nome completo dela passa a ter o pacote na frente. A animacao deixa o ouvinte escolher de onde roda e com qual nome, e ver se a JVM acha ou nao.
+
+Depois a opcao cp, que diz a JVM onde procurar, e a separacao entre fonte e compilado: o javac com a opcao d escreve os arquivos class numa pasta de saida, e o java com a opcao cp aponta pra ela. Separar importa porque a saida pode ser apagada e refeita a qualquer hora, e porque o historico de codigo, que e a proxima etapa, nao guarda ela.
+
+Fecha mostrando que a IDE montava o classpath sozinha, e por isso o erro so aparece fora dela, e que quando as ferramentas maiores entrarem na serie o classpath continua existindo, so que montado por elas. Com isso a oficina esta de pe e a etapa 2 acaba.
+
+O que transfere: todo ambiente tem uma lista de onde procurar. Python tem a dele, Node tem a pasta de modulos, o proprio terminal tem o PATH. O nome muda, a ideia nao.
+
+Use este contexto apenas como apoio.

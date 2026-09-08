@@ -1,0 +1,307 @@
+/* episódio 2.1 · A primeira tela
+   O que é só deste episódio: os aparelhos que embutem o modelo real (um celular e um desktop, cada um com um iframe vivo em escala), as telas de lado com ilustração, os cartões de código da tela 5 e o gancho do fecho. Depende de css/tokens.css, animacao/tokens.css, animacao/telas.css, animacao/pranchas.css e animacao/painel.css.
+
+   As media queries ficam no fim da folha de propósito: media query não aumenta
+   especificidade, e com a mesma especificidade quem vem depois ganha. */
+
+/* ---- os aparelhos: o modelo real dentro de um quadro, em escala ----
+   O iframe é desenhado no tamanho real (390 ou 1280 de largura, pra media query
+   do modelo cair do lado certo) e encolhido por transform. A escala mora numa
+   variável porque quem decide o tamanho é a altura da tela, nos apertos do fim. */
+:root {
+  --escala-celular: .58;
+  --escala-desktop: .44;
+}
+
+.aparelhos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(20px, 3vw, 48px);
+  margin-top: 18px;
+  width: 100%;
+}
+
+.aparelho {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.aparelho__tela {
+  position: relative;
+  overflow: hidden;
+  /* a largura é a do iframe em escala; a moldura fica por fora dela. Com o
+     border-box do site a moldura comia 16px do modelo e cortava o rodapé. */
+  box-sizing: content-box;
+  border: 8px solid #111;
+  border-radius: 28px;
+  background: #121211;
+  box-shadow: var(--sombra-alta);
+}
+
+.aparelho iframe {
+  display: block;
+  border: 0;
+  transform-origin: 0 0;
+}
+
+.aparelho--celular .aparelho__tela {
+  width: calc(390px * var(--escala-celular));
+  height: calc(760px * var(--escala-celular));
+}
+
+.aparelho--celular iframe {
+  width: 390px;
+  height: 760px;
+  transform: scale(var(--escala-celular));
+}
+
+.aparelho--desktop .aparelho__tela {
+  border-width: 6px;
+  border-radius: 10px;
+  width: calc(1280px * var(--escala-desktop));
+  height: calc(800px * var(--escala-desktop));
+}
+
+.aparelho--desktop iframe {
+  width: 1280px;
+  height: 800px;
+  transform: scale(var(--escala-desktop));
+}
+
+.aparelho figcaption,
+.capa-arte figcaption,
+.lado-arte figcaption {
+  font-family: var(--fonte-mono);
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* na capa, o celular sozinho ocupa o lugar do modelo 3D, e pode ser maior */
+.step--capa { --escala-celular: .76; }
+
+.capa-arte {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---- telas de lado: conteúdo à esquerda, ilustração à direita ---- */
+.step--lado {
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(20px, 3vw, 48px);
+  text-align: left;
+  padding-left: clamp(12px, 3vw, 40px);
+  padding-right: clamp(12px, 3vw, 40px);
+}
+
+.lado-texto {
+  flex: 1 1 560px;
+  min-width: 0;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lado-arte {
+  flex: 1 1 420px;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.lado-arte img {
+  width: 100%;
+  height: auto;
+  max-height: min(62vh, 520px);
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: var(--sombra-alta);
+}
+
+.step--lado .ficha,
+.step--lado h2 { max-width: none; }
+
+/* ---- o fecho de cada tela ---- */
+.destaque {
+  max-width: 780px;
+  margin-top: 16px;
+  font-size: clamp(13px, 1.6vw, 16px);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.destaque b { color: var(--ink); }
+
+/* ---- tela 3: as duas fotos do Nexus real, uma em pé e uma deitada ---- */
+.cena--nexus { align-items: flex-start; }
+.cena--nexus img { height: clamp(220px, 52vh, 560px); object-fit: contain; filter: none; background: #0a0a0a; }
+.cena--nexus .cena__celular { flex: 0 1 300px; }
+.cena--nexus .cena__desktop { flex: 1 1 0; }
+
+/* ---- tela 4: o que entra e o que fica de fora ---- */
+.step--lado .ficha { margin-top: 18px; width: 100%; }
+.step--lado .ficha .item { flex: 1 1 200px; max-width: none; }
+.ficha .item--fora { border-style: dashed; }
+.ficha .texto code {
+  font-family: var(--fonte-mono);
+  font-size: 12.5px;
+  background: var(--surface-alt);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+/* ---- tela 5: um arquivo vira dois ---- */
+.arquivos {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 18px;
+  width: 100%;
+}
+
+.arquivo {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px 16px;
+  text-align: left;
+}
+
+.arquivo--depois { border-color: var(--accent-edge); background: var(--accent-soft); }
+
+.arquivo__nome {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.arquivo pre {
+  font-family: var(--fonte-mono);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink);
+  white-space: pre;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.arquivo pre + .arquivo__nome { margin-top: 12px; }
+
+.arquivo .apagado { color: var(--ink-faint); }
+
+.arquivos__seta { align-self: center; font-size: 22px; color: var(--ink-faint); }
+
+/* ---- fecho: as três regras da aula, em lista curta ---- */
+.regras { list-style: none; margin: 16px 0 0; padding: 0; width: 100%; display: flex; flex-direction: column; gap: 8px; }
+
+.regra {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 11px 15px;
+  text-align: left;
+}
+
+.regra__num {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--ground);
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regra__corpo { font-size: 13px; line-height: 1.5; color: var(--ink-soft); }
+.regra__corpo b { color: var(--ink); }
+
+/* ---- gancho do fecho ---- */
+.gancho {
+  margin-top: 16px;
+  max-width: 700px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-edge);
+  border-radius: 14px;
+  padding: 14px 18px 16px;
+  text-align: left;
+}
+
+.gancho__rotulo {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.gancho__texto { font-size: 14px; line-height: 1.6; }
+.gancho__botao { display: inline-block; margin-top: 12px; text-decoration: none; }
+
+/* ---- apertos de tela, no fim da folha ---- */
+
+/* estreito: tudo empilha e os aparelhos encolhem */
+@media (max-width: 820px) {
+  :root {
+    --escala-celular: .42;
+    --escala-desktop: .24;
+  }
+  .aparelhos { flex-direction: column; align-items: center; }
+  .step--lado { flex-direction: column; text-align: center; }
+  .lado-texto { max-width: none; width: 100%; align-items: center; text-align: center; }
+  .lado-arte { width: 100%; }
+  .lado-arte img { max-height: min(30vh, 240px); }
+  .cena--nexus { flex-direction: column; align-items: center; }
+  .cena--nexus .cena__celular,
+  .cena--nexus .cena__desktop { flex: none; width: 100%; }
+  .cena--nexus img { height: clamp(150px, 26vh, 240px); }
+  .arquivos { flex-direction: column; }
+  .arquivos__seta { transform: rotate(90deg); }
+  .regra { text-align: left; }
+}
+
+/* tela baixa (notebook 768px): quem cede é o aparelho e o respiro, não o texto */
+@media (max-height: 820px) {
+  :root {
+    --escala-celular: .44;
+    --escala-desktop: .36;
+  }
+  .step--capa { --escala-celular: .56; }
+  .lado-arte img { max-height: 46vh; }
+  .cena--nexus img { height: clamp(180px, 40vh, 360px); }
+  .destaque { margin-top: 11px; font-size: 12.5px; }
+  .arquivos { margin-top: 12px; }
+  .arquivo pre { font-size: 11px; }
+  .regras { margin-top: 10px; gap: 6px; }
+  .regra { padding: 8px 12px; }
+  .gancho { margin-top: 12px; padding: 12px 16px 14px; }
+}

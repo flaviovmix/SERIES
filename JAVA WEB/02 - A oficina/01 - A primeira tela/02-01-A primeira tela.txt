@@ -1,0 +1,35 @@
+Inicie dizendo: A Primeira Tela
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Primeira Tela.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este e o primeiro episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. A etapa anterior, POR QUE AINDA ESTUDAR ISSO, nao teve uma linha de codigo: fechou a tese da serie e o metodo de estudo, e terminou dizendo que a mao vai pro teclado pela primeira vez.
+
+ESTE EPISODIO NAO E A AULA. A aula acontece depois, numa sessao de estudo, com o aluno no teclado. O episodio conta O QUE vai ser feito e POR QUE comeca por ai. Cita HTML, CSS, nomes de tags e de arquivos pelo nome, mas NAO dita codigo em voz alta.
+
+FOCO: por onde a mao comeca, e a resposta nao e Java, e a tela. O aluno escolheu comecar por HTML e CSS porque comecar por uma parte que nao mostra nada na tela desanima. O que vai ser construido: a folha de uma tarefa do Nexus, o sistema que ele usa todo dia, com o nome da tarefa, a lista de subtarefas em cartoes e os atalhos no pe, no celular e no desktop, o mesmo arquivo nos dois tamanhos. De onde a tela veio e por que refazer uma tela que existe e melhor pra aprender do que inventar uma. As pecas: as tags que a tela pede, o CSS por papel, o VS Code com o Live Server, e o que fica de fora de proposito (JavaScript). Como a aula anda: comeca com o CSS dentro do arquivo HTML e termina com ele exportado pra um arquivo proprio. Como a aula acontece: quem escreve e o aluno, veredito so quando pedido, o modelo pronto e o gabarito.
+
+TOM: nada de sermao e nada de nostalgia. Comecar pela tela nao e atalho: e uma escolha do aluno com motivo declarado. Nao fazer piada com quem comeca pelo terminal.
+
+A pagina tem 6 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 5 vezes, sem juntar duas telas num bloco so. Na tela interativa (2), avisar que o que esta na tela e a pagina de verdade, viva, e convidar a rolar a lista e passar o mouse.
+
+No encerramento, dizer o que transfere pra outras linguagens (o navegador so entende HTML e CSS; o que muda e quem escreve esse HTML), e fechar com o gancho pro episodio seguinte, que vai pro terminal, sem citar o nome de nenhum programa.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_A Primeira Tela.txt. NAO invente analogias novas. A unica autorizada e a vitrine e a oficina, pra explicar que o navegador so ve HTML e CSS e nao sabe quem montou, com o limite dito em voz alta no roteiro: a vitrine nao e enfeite, e o que o cliente usa.
+
+Use tambem o Overview.txt como contexto curto.

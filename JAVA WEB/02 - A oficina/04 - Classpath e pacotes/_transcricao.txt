@@ -1,0 +1,264 @@
+# Transcricao automatica (faster-whisper small) - 12.8 min
+# Fonte: Como o Java encontra suas classes.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Claspath e pacotes.
+[00:01] Bom, retomando rapidinho a conclusão do nosso último episódio.
+[00:05] A gente abriu o arquivo class, viu que cada instrução que está lá dentro veio direto
+[00:10] do código fonte, né?
+[00:11] Exato.
+[00:12] E que a magna virtual é que enlê tudo isso.
+[00:14] Só que hoje o assunto é bem prático.
+[00:17] A pessoa digita o comando, aperta Enter e toma aquele erro de classe principal não
+[00:22] encontrada.
+[00:23] Pois é, e este é o nosso quarto e último episódio da etapa a oficina.
+[00:28] É a segunda etapa da série Java Web.
+[00:30] E a nossa missão agora é justamente explicar esse bendito erro de classe não encontrada.
+[00:36] Que dá um desespero na hora, né?
+[00:38] Dá, mas olha, eu queria falar com um tom bem tranquilizador aqui.
+[00:42] Esse é o erro mais comum de quem vai programar Java na unha pela primeira vez.
+[00:46] Não é motivo de vergonha nenhum.
+[00:48] Com certeza não.
+[00:49] Todo mundo passa por ele uma vez, pelo menos.
+[00:51] O nosso objetivo é que no fim desta etapa a oficina vai estar de pé.
+[00:57] Muito bom.
+[00:58] E só um aviso sobre as instruções de navegação para quem está ouvindo.
+[01:03] Quem estiver acompanhando só pelo áudio vai conseguir entender a lógica perfeitamente,
+[01:07] tá?
+[01:08] Mas quem estiver com a página aberta vai ver uma inação com sete telas.
+[01:13] A mecânica é simples, a página avança pelo botão de próximo.
+[01:16] Então, para a gente avançar para a segunda tela, aperte o próximo.
+[01:20] Bom, a gente precisa falar sobre onde o Java procura as coisas.
+[01:24] Porque surge uma dúvida lógica inicial bem forte aí.
+[01:28] Se a pessoa apenas digita o comando Java e o nome da classe, como é que a máquina virtual
+[01:34] sabe onde esse arquivo está no computador?
+[01:36] Ah, essa é a grande questão.
+[01:38] A máquina virtual não recebe um arquivo, ela recebe apenas um nome.
+[01:43] Só um texto ali no terminal.
+[01:45] Isso.
+[01:46] A partir desse nome ela procura o arquivo class correspondente e ela faz isso numa
+[01:51] lista de lugares chamada class path, o caminho das classes.
+[01:55] O famoso class path.
+[01:57] Ele mesmo.
+[01:58] E o detalhe é que por padrão essa lista tem apenas um item.
+[02:02] Sabe qual é?
+[02:03] A pasta atual, em que o terminal está aberto.
+[02:06] Exato.
+[02:07] Só a pasta atual e nada mais.
+[02:09] Ah, entendi.
+[02:10] Então se o terminal estiver aberto em outra pasta qualquer, a máquina simplesmente não
+[02:15] acha o arquivo e solta mensagem de erro.
+[02:17] É bem por aí.
+[02:18] E é bom a gente enfatizar que isso não é um defeito no programa, sabe?
+[02:22] Nenhum problema no Java.
+[02:24] Não quebrou nada.
+[02:25] Não.
+[02:26] Mas a máquina virtual dizendo, olha, procurei na lista e não estava lá.
+[02:30] Então a pergunta certa se fazer na hora do erro não é o que estragou.
+[02:34] Mas sim, em que pasta o terminal está e em que pasta o arquivo class está guardado?
+[02:40] Faz todo sentido.
+[02:41] E lembrando do nosso episódio do Olá Mundo, tem duas causas muito comuns para tomar
+[02:47] esse erro de cara, né?
+[02:48] Sim.
+[02:49] Dois jeitos clássicos.
+[02:50] O primeiro é rodar o comando tanto em outra pasta, como a gente falou.
+[02:54] Aham.
+[02:55] A pessoa dá o comando com o nome errado, tipo colocar a extensão no fim do nome.
+[02:59] Ah, digitar ponto class junto, né?
+[03:01] Isso.
+[03:02] A pessoa digitar Java espaço Olá ponto class.
+[03:05] Nos dois casos, a máquina virtual procurou um nome que não existia nos lugares daquela
+[03:10] lista.
+[03:11] Perfeito.
+[03:12] Então aperte o próximo.
+[03:13] Bom, na mesma pasta funciona bem para um arquivo só, né?
+[03:16] É, mas aí vem o problema do crescimento.
+[03:19] Porque para um arquivo chamado Olá é tranquilo.
+[03:22] Mas como é que a gente lida com um projeto enorme feito por várias pessoas e usando
+[03:26] um monte de bibliotecas de fora?
+[03:28] Vira um caos.
+[03:29] Total.
+[03:30] A colisão de nome seria inevitável e ia virar uma bagunça achar qualquer coisa ali no
+[03:34] meio.
+[03:35] Para resolver isso, a gente tem a solução dos pacotes.
+[03:38] O pacote é, ele é basicamente um nome de grupo escrito na primeira linha do
+[03:42] artigo fonte, na famosa linha Package.
+[03:45] Ah, tá.
+[03:46] E como o pessoal costuma nomear isso?
+[03:48] O costume é usar o domínio da pessoa ou da empresa ao contrário, seguido do assunto.
+[03:54] Entendi.
+[03:55] Dá um exemplo para a gente ouvir como fica.
+[03:57] Por exemplo, br.fx.tarefas.
+[04:00] Ah, bacana.
+[04:01] Fazer desse jeito garante que o nome do grupo seja único no mundo todo, sabe?
+[04:05] Ninguém mais tem esse domínio na internet.
+[04:07] Evita aquela colisão que a gente estava falando.
+[04:10] Exatamente.
+[04:11] Mas aqui entra a regra de ouro que pega muita gente desprevenida.
+[04:14] Pasta e pacote são exatamente a mesma coisa.
+[04:18] Peraí, a mesma coisa?
+[04:20] Como assim?
+[04:21] Se a classe declara o pacote br.fx.tarefas, o arquivo classe precisa morar em uma estrutura
+[04:29] de pastas idêntica.
+[04:30] Ele tem que morar na pasta br, que tem dentro a pasta fx, que tem dentro a pasta tarefas.
+[04:36] Nossa, tem que bater certinho.
+[04:37] Tem que bater?
+[04:38] Se o arquivo tiver fora do lugar, ele até compila, mas a máquina virtual não
+[04:43] acha na hora de rodar.
+[04:44] O nome da classe deixa de ser curtinho e passa a ser o nome completo com pacote na frente.
+[04:50] É aquela analogia do inireço com a cidade, né?
+[04:53] Dizer apenas, rua das flores não leva o carteiro a lugar nenhum, porque toda cidade do Brasil
+[04:58] tem uma.
+[04:59] Pois é.
+[05:00] O pacote funciona como a cidade na frente do nome da rua.
+[05:02] E o class path é a lista de cidades onde o carteiro vai procurar.
+[05:07] E é bom frisar o limite dessa analogia.
+[05:09] Isso não é burocracia do Java pra dificultar a vida, sabe?
+[05:12] É literalmente a única coisa que impede duas ruas iguais de virão uma carta perdida
+[05:17] no sistema.
+[05:18] Perfeita a comparação.
+[05:19] Então, aperte próximo.
+[05:20] Pessoal que está com a página aberta, um aviso, essa tela agora é interativa.
+[05:26] Isso é bem legal pra testar.
+[05:27] Ela mostra a árvore de pastas do projeto de um lado e uma linha de comando do outro.
+[05:33] Dá pra testar quatro combinações de onde rodar o comando e com qual nome.
+[05:38] E já do spoiler de que só uma combinação funciona.
+[05:41] A ideia é testar durante a explicação mesmo.
+[05:43] Pra quem está só no áudio, eu vou descrever o cenário rapidinho.
+[05:47] A gente tem uma pasta de projeto, aí dentro dela a pasta br, dentro a afex, dentro a tarefas.
+[05:54] E lá no fundo dessa estrutura, está o nosso arquivo class do ola.
+[05:58] Vamos repassar essas quatro tentativas, então.
+[06:00] A primeira é tentar rodar de dentro da pasta tarefas com o nome curto, tipo só
+[06:05] digitando o ola.
+[06:06] Vai dar erro.
+[06:07] Por quê?
+[06:08] Porque o nome completo da classe tem o pacote.
+[06:10] Lembra?
+[06:11] A máquina virtual procurou uma classe sem pacote.
+[06:15] E os nomes não bateram.
+[06:16] Ah, faz sentido.
+[06:17] A segunda tentativa é tentar rodar de dentro da pasta tarefas também, mas usando o nome
+[06:22] completo agora.
+[06:23] Erro de novo.
+[06:24] A máquina é ela sempre procurar a primeira pasta do pacote, a pasta br, a partir da
+[06:31] onde o terminal está.
+[06:32] E dentro da pasta tarefas lá no fundo não existe outra pasta br.
+[06:36] Não acha nada.
+[06:37] A terceira opção é o terminal ir lá para a raiz do projeto e tentar rodar com o nome
+[06:42] curto.
+[06:43] Erro de novo.
+[06:44] Pelo mesmo motivo do primeiro cenário.
+[06:46] A classe tem pacote, então a máquina quer o nome longo.
+[06:50] E a quarta e última tentativa é tentar rodar da raiz do projeto com o nome completo.
+[06:55] Aí sim, funciona lindamente.
+[06:57] A partir da pasta raiz existe a pasta br, depois a affix, depois a tarefas e finalmente
+[07:04] o arquivo class, a conta bate perfeita.
+[07:06] É, o resumo da lição dessa tela é que a máquina virtual sempre faz a mesma conta.
+[07:12] O nome completo vira um caminho de pastas.
+[07:15] E esse caminho de pastas é procurado a partir de cada lugar da lista do class path.
+[07:20] Entender essa continha simples acaba com o mistério desse erro para sempre.
+[07:25] Exato.
+[07:26] Mas claro que existe um jeito de fazer isso funcionar de qualquer pasta, né?
+[07:29] Para a pessoa não ficar dependendo de abrir o terminal sempre lá na raiz do projeto.
+[07:33] E isso leva a gente para a próxima tela, então aperte o próximo.
+[07:37] Então como que a gente informa essa lista de lugares na mão, para ter essa liberdade
+[07:41] toda de não ficar presa a uma pasta só?
+[07:43] A gente usou a opção Cp do comando Java.
+[07:47] Opção Cp?
+[07:48] Isso, Cp.
+[07:49] Ela serve justamente para dizer na mão qual é o class path.
+[07:53] Ela pega aquele comportamento de procura a partir daqui e troca por procura a partir
+[07:58] da pasta tal.
+[07:59] Bem mais prático.
+[08:00] Muito.
+[08:01] Tem um detalhe.
+[08:02] Projetos reais separam o código fonte do código compilado, sabe?
+[08:07] Ah, eles não ficam juntos na mesma pasta.
+[08:10] Não.
+[08:11] E para fazer isso, a gente apresenta a opção D do comando Java C, que é o nosso compilador.
+[08:17] E o que essa opção faz?
+[08:19] Ela manda o compilador escrever os arquivos class em uma pasta de saída dedicada
+[08:24] e não ali do lado do código fonte.
+[08:26] E a mágica é que ele cria as pastas do pacote sozinho lá dentro.
+[08:30] Ah, então ele já cria aquele caminho brf, fax, tarefas...
+[08:35] Tudo sozinho.
+[08:36] Assim, o comando Java com aquela opção Cp só precisa apontar para essa pasta de saída
+[08:42] na hora de rodar.
+[08:43] Entendi.
+[08:44] Mas, para aí, explica para a gente por que separar é tão importante.
+[08:48] Não seria mais fácil deixar tudo misturado ali e poupar comando?
+[08:51] Parece, mas não.
+[08:53] Tem duas razões muito práticas para isso, não é só frescura de etiqueta.
+[08:57] A primeira é que a pasta de saída pode ser apagada e refeita a qualquer momento.
+[09:02] Tudo que está ali nasce do código fonte, é descartável.
+[09:05] Verdade, é só compilar de novo.
+[09:07] E a segunda razão, que é até um gancho para nossa próxima etapa, é que o histórico
+[09:12] de código só guarda o código fonte.
+[09:15] Ele não tem que guardar saída compilada.
+[09:17] Faz todo sentido.
+[09:18] Se você mistura os dois na mesma pasta, o histórico acaba guardando arquivos class
+[09:22] sem querer e isso causa problemas chatos no futuro.
+[09:25] Entendido.
+[09:26] Então, para ver como as ferramentas lidam com isso, aperte o próximo.
+[09:30] Agora a gente chega em um ponto interessante.
+[09:32] Se a gente lembrar daquela lista do segundo episódio sobre as coisas que a IDE fazia escondido,
+[09:37] essa era a última peça do quebra-cabeça que faltava.
+[09:40] E que peça, né?
+[09:41] A IDE monta o class path sozinha o tempo todo por baixo dos panos.
+[09:45] Ela junta a pasta de saída e todas as bibliotecas do projeto na lista, tudo certinho.
+[09:51] Ah, turista que lá dentro apertar o botão verde sempre acha tudo, sem erro nenhum.
+[09:56] A pessoa nem fica sabendo que o class path existe.
+[09:59] E o erro só assusta quem sai da IDE pela primeira vez, né?
+[10:02] Isso mesmo.
+[10:03] Mas olha, sem críticas é quem usa a IDE de jeito nenhum.
+[10:06] As ferramentas maiores que vão aparecer pela frente no trabalho de todo mundo continuam
+[10:11] montando o class path sozinhas.
+[10:13] Só que agora com dezenas de bibliotecas, né?
+[10:16] Centenas, às vezes.
+[10:17] O class path não some quando o projeto cresce.
+[10:20] Ele apenas muda quem é responsável por montar a lista.
+[10:23] É automático.
+[10:24] Sim.
+[10:25] Mas ter feito isso na mão agora, do jeito difícil, garante que a pessoa sabe exatamente
+[10:29] onde olhar quando a ferramenta automática falha, porque uma hora ela falha.
+[10:32] E aí a pessoa não se desespera, ela sabe o que procurar.
+[10:35] Excelente.
+[10:36] E com isso, a gente pode celebrar que a oficina está pronta.
+[10:40] A gente fez as quatro coisas escondidas totalmente na mão, a gente achou o kit,
+[10:45] a gente compilou o código, montou o caminho das classes e rodou o programa com sucesso.
+[10:51] A oficina está de pé, galera.
+[10:53] Prontíssima.
+[10:54] Então aperte o próximo step, fazendo aquele nosso resumo final da etapa.
+[10:59] A máquina virtual recebe um nome e procura o class numa lista chamada class path, que
+[11:04] por padrão é apenas a pasta atual.
+[11:07] Pacote e pasta são a mesma coisa, o nome completo ganha o pacote na frente e esse
+[11:11] nome vira um caminho de pastas cheio de barras.
+[11:15] A opção CP diz para a máquina onde ela tem que procurar.
+[11:19] A opção D separa a saída do código fonte e a ideia automatizava todo esse processo sem
+[11:24] a gente ver.
+[11:25] É um balanço e tanto para essa etapa dois.
+[11:28] A pessoa leva como fundação um editor com terminal rodando liso, o kit instalado,
+[11:33] o programa rodado na mão.
+[11:35] O arquivo class foi totalmente desmistificado e o entendimento de pacotes e class path
+[11:41] ficou claro.
+[11:42] Daqui para frente tudo o que for construído vai nascer nessa oficina.
+[11:46] E o mais legal é saber o que transfere para outras linguagens, sabe?
+[11:50] É verdade.
+[11:51] Como é que é isso em outros ambientes?
+[11:52] Todo o ambiente tem uma lista de onde procurar.
+[11:55] O Python tem a lista de pastas de módulos dele, o Node tem a pasta de módulos do
+[12:00] próprio projeto que a galera conhece bem, o próprio terminal tem o PF, né?
+[12:04] Ah, o PF que a gente usou para achar o Java aqui no começo da etapa.
+[12:08] E isso?
+[12:09] O nome muda, mas a ideia de ter um nome, uma lista de lugares para procurar e aquele
+[12:13] erro de não achei, isso transfere para qualquer tecnologia que a pessoa for aprendendo o futuro.
+[12:18] Uma base para vida toda.
+[12:21] Bom, para fechar o episódio de hoje, a gente precisa preparar o terreno para a próxima
+[12:25] etapa, porque antes da gente escrever o programa de verdade ali na oficina, será
+[12:30] preciso ter um jeito de voltar atrás se algo der errado.
+[12:34] Tudo que for digitado a partir daqui merece um histórico.
+[12:38] Com certeza.
+[12:39] E aquela pasta de saída novinha que foi criada neste episódio vai ser a primeiríssima coisa
+[12:44] que esse novo histórico vai aprender a ignorar.
+[12:46] Mas isso fica para a próxima.
+[12:48] Um abraço e até lá.

@@ -1,0 +1,131 @@
+Inicie dizendo: Ola Mundo Sem IDE
+---------------
+
+Este e o segundo episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. O episodio anterior, A Primeira Tela, mostrou por onde a mao comecou: pela tela, em HTML e CSS, porque tela aparece. Este episodio vai pro terminal e faz o pedido que deu origem a serie inteira: escrever, compilar e rodar o primeiro programa Java na mao, no VS Code, sem IDE.
+
+ESTE EPISODIO TEM CODIGO, MAS O AUDIO NAO DITA CODIGO. O arquivo tem cinco linhas e a animacao mostra ele inteiro. O audio descreve o que cada linha faz e cita os comandos pelo nome (javac, java), mas NAO le codigo letra por letra: nada de "abre chave", "ponto e virgula", "aspas". Quem esta so no audio entende a ideia; quem esta na pagina ve o texto.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 7 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Na tela interativa (4), avisar que da pra tocar em cada linha do arquivo na tela pra ver o que ela faz.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 7 telas. O audio TEM que pedir "aperte o Proximo" exatamente 6 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. Nada de sermao e nada de nostalgia. A serie nao e contra IDE e nao acha que sofrer ensina. Ela passa por cada passo uma vez, na mao, pra que a IDE depois seja conforto e nao muleta. Nao fazer piada com quem usa IDE.
+
+O QUE TRANSFERE. No encerramento, dizer em uma frase o que deste episodio serve pra qualquer linguagem, e nao so pra Java.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Ola Mundo Sem IDE.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O cambio manual e o automatico: os dois carros chegam no mesmo lugar. O automatico troca a marcha sozinho e voce nunca ve a embreagem; o manual obriga a sentir cada troca. A serie dirige de manual uma vez pra entender o que o automatico faz sozinho, e depois pode voltar pro automatico. Serve pra explicar por que "sem IDE". Nao serve pra dizer que manual e melhor: ninguem precisa dirigir de manual pra sempre.
+
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: OLA MUNDO SEM IDE)
+
+Retomar em uma frase onde o episodio anterior parou: a tela esta de pe, em HTML e CSS, e o navegador ja mostra alguma coisa.
+
+Dizer o que este episodio faz: o primeiro programa Java, escrito, compilado e rodado na mao. E o pedido que fez a serie nascer: o aluno queria ver um Ola mundo no VS Code, sem o programa pesado que todo curso manda instalar no primeiro dia.
+
+Explicar o "sem IDE" com a analogia do cambio: a IDE e o automatico, troca a marcha sozinha e voce nunca ve a embreagem. A serie dirige de manual uma vez, pra ver cada troca, e depois pode voltar pro automatico. Dizer o limite na hora: nao e pra dirigir de manual pra sempre, e nao e pra sofrer. E pra ver.
+
+Avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+
+Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na tela do arquivo, da pra tocar em cada linha.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (O QUE A IDE ESCONDE)
+
+Dizer o que uma IDE e: um programa grande que junta editor, compilador, executor e mais um monte de coisa numa janela so. Citar de passagem os nomes mais comuns (NetBeans, Eclipse, IntelliJ), sem julgar nenhum.
+
+Listar as quatro coisas que ela faz escondido, uma por vez. Primeira: ela acha o kit do Java instalado na maquina, sem voce dizer onde esta. Segunda: ela compila toda vez que voce salva, e o erro aparece sublinhado em vermelho antes de voce pedir. Terceira: ela monta o caminho onde as classes ficam, e por isso "rodar" funciona de qualquer pasta. Quarta: ela roda no botao verde, que junta compilar e executar num clique so.
+
+Dizer o problema: quem sempre usou IDE nunca viu nenhuma das quatro acontecer. Entao no dia em que uma delas falha, a pessoa nao sabe nem qual das quatro foi. Ligar com a etapa anterior: e a bomba-relogio do ambiente, nao do codigo. Funciona ate o dia em que nao funciona, e ai ninguem sabe o motivo.
+
+Dizer o combinado do episodio: fazer as quatro na mao, uma vez. Nao pra sempre.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A OFICINA DE VERDADE)
+
+Apresentar as tres pecas da oficina.
+
+Primeira, o VS Code. Dizer o que ele e de verdade: um editor de texto com um terminal do lado. Nao e IDE. Ele nao sabe compilar Java, nao sabe rodar Java, e isso e bom: tudo que acontecer vai ser porque voce mandou.
+
+Segunda, o JDK. Dizer que a sigla quer dizer kit de desenvolvimento Java, e que e um kit mesmo: dentro dele vem o compilador, que se chama javac, o executor, que se chama java, e a biblioteca padrao, que e o monte de coisa pronta que todo programa usa. Sem o JDK, o VS Code e so um bloco de notas.
+
+Terceira, o terminal achar o kit. Dizer que quando voce digita javac no terminal, o terminal procura esse nome numa lista de pastas, e o JDK tem que estar nessa lista. A prova de que esta: digitar java com a opcao version e receber o numero da versao de volta. Se voltar "comando nao encontrado", a oficina ainda nao esta de pe, e nada do resto vai funcionar.
+
+Dizer que a tela mostra as tres pecas e o comando de prova.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O ARQUIVO, TELA INTERATIVA)
+
+Avisar: o arquivo inteiro esta na tela, e da pra tocar em cada linha pra ver o que ela faz e o que quebra se ela faltar. Dar tempo pro ouvinte tocar enquanto escuta.
+
+Dizer o nome do arquivo: Ola ponto java. E a regra do nome, que e a primeira coisa que pega quem comeca: o arquivo tem que chamar exatamente como a classe que esta dentro dele, com a mesma letra maiuscula. Ola com O maiusculo no arquivo, Ola com O maiusculo na classe. Se um for diferente do outro, o compilador reclama.
+
+Descrever as cinco linhas em palavras, sem ditar. A primeira declara uma classe chamada Ola: todo programa Java precisa estar dentro de uma classe, e esta e a dele. A segunda declara o metodo main, que e o ponto por onde o Java comeca a executar: sem um main, o Java nao sabe por onde comecar e se recusa a rodar. A terceira e a unica que faz alguma coisa: manda imprimir um texto na tela. A quarta e a quinta fecham o metodo e a classe, na ordem inversa em que abriram.
+
+Dizer o que o ouvinte deve ser capaz de fazer depois desta tela: apontar pra qualquer linha e dizer pra que ela serve. Se uma linha nao tem motivo, ela nao devia estar la. Isso e a regua do episodio 1 aplicada em cinco linhas.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (COMPILAR)
+
+Dizer o comando: javac, e o nome do arquivo com a extensao. Dizer o que acontece: por um segundo nao aparece nada, e depois surge um arquivo novo na pasta, Ola ponto class. Esse silencio e a resposta de "deu certo".
+
+Dizer o que o compilador fez nesse segundo: leu o arquivo inteiro, conferiu se cada coisa faz sentido pra ele, e escreveu uma versao traduzida num formato que a maquina do Java entende. O que tem dentro desse arquivo novo e assunto do proximo episodio; por enquanto, e o produto do compilador.
+
+Contar o primeiro erro, porque ele vai acontecer: um sinal que faltou no fim de uma linha, uma chave que nao fechou, ou o nome do arquivo que nao bate com a classe. O compilador responde com uma mensagem que tem tres partes: o nome do arquivo, o numero da linha, e o que ele esperava encontrar. Ensinar a ler nessa ordem: linha primeiro, depois o que ele esperava. A mensagem parece grosseira e e a coisa mais util do dia.
+
+Ligar com a terceira regra do metodo: antes de compilar, dizer em voz alta o que espera. "Vai aparecer um arquivo class e nenhuma mensagem." Se aparecer mensagem, o entendimento estava errado em algum ponto, e a mensagem diz qual.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (RODAR)
+
+Dizer o comando: java, e o nome da classe. Sem a extensao. Dizer o detalhe que pega todo mundo uma vez: nao e java Ola ponto class, e java Ola. O executor quer o nome da classe, nao o nome do arquivo, e ele mesmo vai procurar o arquivo class na pasta.
+
+Dizer o que acontece: o texto aparece na tela. Ola, mundo. Dar o peso certo: e a primeira vez que a maquina fez o que o aluno mandou, do jeito que ele mandou, sem nenhum botao verde no meio.
+
+Apresentar o erro classico, so apresentar: se rodar de outra pasta, ou com o nome errado, o Java responde "could not find or load main class". Dizer que e o erro mais comum de quem programa Java na unha, que ele tem um motivo simples, e que o episodio sobre classpath explica por inteiro. Aqui, so registrar a cara dele.
+
+Fechar a tela juntando os dois comandos: compilar e rodar sao dois programas diferentes, javac e java, e o botao verde da IDE era os dois num clique. Agora o aluno sabe o que o botao fazia.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (ENCERRAMENTO)
+
+Recapitular em poucas frases. A IDE esconde quatro coisas: achar o kit, compilar ao salvar, montar o caminho das classes, rodar no botao verde. A oficina de verdade e um editor com terminal, o JDK, e o terminal achando o JDK. O arquivo tem cinco linhas e cada uma tem um motivo. Compilar e javac, rodar e java sem extensao, e o erro de sintaxe se le pela linha e pelo que o compilador esperava.
+
+O QUE TRANSFERE: todo compilador e todo interpretador tem esses passos, com outros nomes. Em C o compilador chama gcc e o produto e um executavel. Em Python o passo de compilar existe mas fica escondido, e o comando python faz os dois. Em JavaScript o node faz o mesmo papel do java. Quem sabe os passos le o erro de qualquer linguagem, porque o erro sempre diz em qual passo quebrou.
+
+Gancho pro proximo episodio, sem entregar a resposta: aquele arquivo class que apareceu na pasta. O que tem dentro dele, por que ele nao e o programa final, e por que isso e o motivo de Java rodar em qualquer maquina.

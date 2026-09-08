@@ -1,0 +1,17 @@
+A PRIMEIRA TELA - CONTEXTO
+==========================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa A OFICINA, a segunda etapa da serie JAVA WEB. A serie monta uma aplicacao Java web do zero, peca por peca: uma lista de tarefas que nasce rodando no terminal e termina no ar, num endereco que outra pessoa consegue abrir. Pelo caminho passam ambiente de trabalho, historico de codigo, testes, servidor, banco de dados e publicacao.
+
+A etapa anterior, POR QUE AINDA ESTUDAR ISSO, nao teve uma linha de codigo: fechou a tese da serie (codigo que funciona e que ninguem entende e uma bomba-relogio) e o metodo de estudo (a inteligencia artificial como professor, nao como fornecedor). Terminou dizendo que na etapa seguinte a mao vai pro teclado pela primeira vez.
+
+Este episodio anuncia por onde a mao comeca, e a resposta nao e Java: e a tela. O aluno da serie escolheu comecar por HTML e CSS porque comecar por uma parte que nao mostra nada na tela desanima. A primeira coisa que ele vai construir e a folha de uma tarefa de um sistema real, o Nexus, que ele usa todo dia: o nome da tarefa, a lista de subtarefas em cartoes e os atalhos no pe, no celular e no desktop. So essa parte, sem o resto do sistema.
+
+O episodio nao e a aula. A aula acontece numa sessao de estudo, com o aluno no teclado. O episodio existe pra que quem ouve saiba o que vai ser feito, por que comeca por ai, quais pecas entram (as tags que a tela pede, o CSS por papel, o VS Code com o Live Server) e o que fica de fora de proposito (JavaScript: nada clica). Explica tambem como a aula anda: comeca com o CSS dentro do proprio arquivo HTML e termina com ele exportado pra um arquivo separado.
+
+A animacao que acompanha o audio embute a pagina pronta, viva, dentro de um celular e de um desktop desenhados na tela. Nao e foto: da pra rolar a lista e passar o mouse. E o modelo que serve de gabarito pra aula.
+
+Fecha dizendo o que transfere: o navegador so entende HTML e CSS, em qualquer stack. O que muda de uma linguagem pra outra e quem escreve esse HTML. Hoje e a mao; mais adiante na serie vai ser um programa Java montando a mesma folha.
+
+Use este contexto apenas como apoio.
