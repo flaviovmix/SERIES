@@ -28,6 +28,16 @@
 (function () {
   'use strict';
 
+  /* ---------- as series ligadas ---------- */
+
+  /* A lista abaixo e escrita pelo gera-cards.js a partir do site/dados/series.json, que o
+     painel local liga e desliga (decisao 10 da Etapa 6). Serie fora dela some do menu e
+     do "o que vem por ai", e os extras dela somem junto. A pagina dela continua abrindo
+     por link direto, porque o site e estatico (P13). */
+  /* series-ativas: gerado por gera-cards.js a partir do site/dados/series.json; nao editar a mao */
+  var SERIES_ATIVAS = ['01', '02', '03', '04', '05', '06'];
+  /* /series-ativas */
+
   /* ---------- a arvore ---------- */
 
   /* serie sem href = ainda nao comecou (cai no bloco "o que vem por ai"). Etapa sem href = em producao (vira cinza).
@@ -379,9 +389,16 @@
     return montaBloco(serie.extras.nome, null, serie.extras.href, 'Acessar os extras', serie.extras.itens);
   }
 
+  /* so as series ligadas entram no menu. O voltar continua olhando a arvore inteira,
+     porque a pagina de uma serie desligada ainda abre por link */
+  function seriesLigadas() {
+    return MENU.filter(function (s) { return SERIES_ATIVAS.indexOf(s.num) >= 0; });
+  }
+
   function montaMenu() {
-    var comecaram = MENU.filter(function (s) { return s.href; });
-    var porVir = MENU.filter(function (s) { return !s.href; });
+    var ligadas = seriesLigadas();
+    var comecaram = ligadas.filter(function (s) { return s.href; });
+    var porVir = ligadas.filter(function (s) { return !s.href; });
 
     /* as que ainda nao comecaram vao pra faixa de baixo, deitadas: sem pagina pra
        abrir, elas so precisam ser anunciadas, e como bloco furariam a grade */

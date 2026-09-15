@@ -17,7 +17,7 @@
 | 6.6 | Extras | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.7 | `hardware-01.html` | não iniciada (espera a P11; fora da execução em sequência) |
 | 6.8 | A D4 vira hábito | ✅ 15/09/2026 |
-| 6.9 | O estado das séries, sem painel ainda | não iniciada |
+| 6.9 | O estado das séries, sem painel ainda | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.10 | O painel local das séries | não iniciada |
 
 ---
@@ -181,6 +181,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 - O `gera-cards.js` escreve o trecho `series-ativas` no topo do `menu.js` e deixa de fora da grade da home a série desativada. O `menu.js` monta a árvore só com as ativas (decisão 10). O `--confere` passa a cobrar também esse trecho.
 - A página de uma série desativada continua abrindo por link direto: o site é estático, e bloquear de verdade é regra no nginx do container `serie` (P13).
 - **Pronto quando:** numa série de teste, `"ativa": false` escrito à mão no JSON e o gerador rodado fazem ela sumir do menu (no site e numa animação) e da home, e voltar ao contrário; `qa-series-ativas.js` (novo, aceita `ar`) prova os dois sentidos; com todas ativas, o `menu.js` e a home geram iguais aos de hoje (régua 3); dono no navegador.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono no navegador.** O `site/dados/series.json` nasceu com as 6 séries ligadas. O gerador ganhou a peça `series-ativas.js`, que lê e confere o JSON (só série da MENU, toda série com estado, "ativa" só verdadeiro ou falso) e escreve a lista `SERIES_ATIVAS` no trecho marcado do topo do `menu.js`; a home deixa de fora a série desligada. O `menu.js` monta a árvore só com as ligadas, e o voltar continua olhando a árvore inteira, porque a página de uma série desligada ainda abre por link (P13). O `--confere` passou a cobrar esse trecho também. **Provas:** o `qa-series-ativas.js` (novo, aceita `ar`) testa três situações. Com tudo ligado, toda série aparece na home, no menu do site e no menu da animação. Com a série 03 desligada, ela some dos três. Religada, ela volta, e o `series.json`, o `menu.js` e o `index.html` ficam byte a byte iguais aos de antes. Régua 3: com tudo ligado seguem verdes `qa-menu-extras-ultimo.js`, `qa-tema-e-card.js`, `qa-home-series.js`, a geometria da home, `qa-gera-cards.js` e `--confere`.
 
 ### 6.10 O painel local das séries
 

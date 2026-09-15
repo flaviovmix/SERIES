@@ -57,7 +57,7 @@ Ao fechar uma etapa, marcar `✅ + data` **aqui e no arquivo dela**. Índice des
 | 3 | A rede de testes das animações e dos modelos | não iniciada (os `qa-*.js` do site, versionados em 14/09, são o começo dela pelo lado do site) | 14/09/2026 |
 | 4 | Publicação | em andamento: atualização e conferência pós-publicação por script versionado desde 14/09 (`inventario-site.sh`, `revisa-diferencas.sh`, `sobe-arquivos.sh`, `qa-*.js ar`); em 15/09 entrou a 4.1 (publicar a partir do commit, D5), não iniciada, que roda antes do primeiro deploy da Etapa 6; falta o README de publicar episódio e reescrever os itens que ainda falam em nota do Nexus | 15/09/2026 |
 | 5 | Operação e evolução | não iniciada | |
-| 6 | O card vira componente, com a lupa e o painel das séries | em andamento, 6.9 de 11: 6.0 a 6.6 e 6.8 ✅ 15/09 (as 14 páginas com cards gerados, 🟠 falta o dono no navegador; a D4 com trava no deploy e prova por script); a 6.7 espera a P11; o dono pediu execução em sequência até a 6.10 (menos a 6.7), com a validação no navegador junta no fim | 15/09/2026 |
+| 6 | O card vira componente, com a lupa e o painel das séries | em andamento, 6.10 de 11: 6.0 a 6.6, 6.8 e 6.9 ✅ 15/09 (as 14 páginas com cards gerados e o estado das séries no `series.json`, 🟠 falta o dono no navegador; a D4 com trava no deploy e prova por script); a 6.7 espera a P11; o dono pediu execução em sequência até a 6.10 (menos a 6.7), com a validação no navegador junta no fim | 15/09/2026 |
 
 Etapa em andamento se escreve com a posição: `em andamento, 2.3 de 4`.
 

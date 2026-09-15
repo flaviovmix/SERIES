@@ -8,6 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 const arvore = require('./arvore.js');
+const seriesAtivas = require('./series-ativas.js');
 const { linhasDaGrade } = require('./molde.js');
 const { marcadoresDaPagina } = require('./trecho.js');
 
@@ -113,19 +114,25 @@ function cardDosExtrasDaSerie(dado, menu, marcador) {
   }];
 }
 
-function cardsDasSeries(dado, menu, marcador) {
-  return casarComMenu(menu, dado.cards, marcador).map(({ item: serie, texto }) => {
-    const onde = `${marcador}, serie ${serie.num}`;
-    exigir(texto, ['imagem', 'icone', 'resumo'], onde);
-    if (!/^[a-z-]+$/.test(texto.icone)) throw new Error(`${onde}: icone "${texto.icone}" fora do formato do sprite da home`);
-    const noAr = Boolean(serie.href);
-    return {
-      titulo: serie.nome, resumo: texto.resumo, icone: texto.icone, imagem: texto.imagem,
-      verbo: noAr ? `${(serie.etapas || []).length} etapas` : 'Em preparação',
-      linkDaArte: noAr ? serie.href : null,
-      ...(noAr ? { botao: { href: serie.href, rotulo: 'Ver a série', aria: `Ver a série ${serie.nome}` } } : { selo: 'em breve' }),
-    };
-  });
+function cardDaSerie(serie, texto, onde) {
+  exigir(texto, ['imagem', 'icone', 'resumo'], onde);
+  if (!/^[a-z-]+$/.test(texto.icone)) throw new Error(`${onde}: icone "${texto.icone}" fora do formato do sprite da home`);
+  const noAr = Boolean(serie.href);
+  return {
+    titulo: serie.nome, resumo: texto.resumo, icone: texto.icone, imagem: texto.imagem,
+    verbo: noAr ? `${(serie.etapas || []).length} etapas` : 'Em preparação',
+    linkDaArte: noAr ? serie.href : null,
+    ...(noAr ? { botao: { href: serie.href, rotulo: 'Ver a série', aria: `Ver a série ${serie.nome}` } } : { selo: 'em breve' }),
+  };
+}
+
+/* serie desligada no series.json fica fora da home (decisao 10); o texto dela continua
+   no dado, conferido do mesmo jeito, pronto pra quando ela voltar */
+function cardsDasSeries(dado, menu, marcador, ativas) {
+  return casarComMenu(menu, dado.cards, marcador)
+    .map(({ item: serie, texto }) => ({ serie, card: cardDaSerie(serie, texto, `${marcador}, serie ${serie.num}`) }))
+    .filter(({ serie }) => ativas.includes(serie.num))
+    .map(({ card }) => card);
 }
 
 function cardsDosEpisodios(dado, menu, marcador) {
@@ -197,17 +204,24 @@ function carregarDados() {
   return require(ARQUIVO_DOS_DADOS);
 }
 
-function montarGrade(marcador, dado, menu) {
+function montarGrade(marcador, dado, menu, ativas) {
   const montador = MONTADORES[dado.tipo];
   if (!montador) throw new Error(`${marcador}: tipo "${dado.tipo}" nao existe (${Object.keys(MONTADORES).join(', ')})`);
   if (!fs.existsSync(path.join(PASTA_DO_SITE, dado.pagina || ''))) throw new Error(`${marcador}: a pagina "${dado.pagina}" nao existe no site/`);
-  const grade = { marcador, pagina: dado.pagina, tipo: dado.tipo, classe: dado.grade, cards: montador(dado, menu, marcador) };
+  const grade = { marcador, pagina: dado.pagina, tipo: dado.tipo, classe: dado.grade, cards: montador(dado, menu, marcador, ativas) };
   return { ...grade, linhas: linhasDaGrade(grade) };
 }
 
-function montarTodasAsGrades() {
+/* tudo o que o gerador escreve: as grades e a lista das series ligadas */
+function montarSite() {
   const menu = arvore.carregarMenu(PASTA_DO_SITE);
-  return Object.entries(carregarDados()).map(([marcador, dado]) => montarGrade(marcador, dado, menu));
+  const ativas = seriesAtivas.lerEstado(PASTA_DO_SITE, menu);
+  const grades = Object.entries(carregarDados()).map(([marcador, dado]) => montarGrade(marcador, dado, menu, ativas));
+  return { grades, ativas };
+}
+
+function montarTodasAsGrades() {
+  return montarSite().grades;
 }
 
 /* as grades que ja tem marcador na pagina: e o que o qa-cards.js testa */
@@ -218,4 +232,4 @@ function gradesComMarcador() {
   });
 }
 
-module.exports = { PASTA_DO_SITE, montarTodasAsGrades, gradesComMarcador };
+module.exports = { PASTA_DO_SITE, montarSite, montarTodasAsGrades, gradesComMarcador };
