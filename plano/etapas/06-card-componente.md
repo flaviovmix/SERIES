@@ -9,7 +9,7 @@
 | # | Subetapa | Estado |
 |---|---|---|
 | 6.0 | Savepoint e decisões | ✅ 15/09/2026 |
-| 6.1 | Levantamento das legendas | não iniciada |
+| 6.1 | Levantamento das legendas | ✅ 15/09/2026 |
 | 6.2 | O molde e o gerador, provados no `hardware.html` | não iniciada |
 | 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | não iniciada |
 | 6.4 | A home deitada | não iniciada |
@@ -125,6 +125,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 - Script `levanta-legendas.js`: pra cada uma das 48 fotos, procura a mesma imagem nas animações e no `CREDITOS.md` e copia a legenda e o crédito. Sai uma tabela: arquivo, tipo (real ou ilustração), legenda, de onde veio o crédito.
 - O dono diz quais das 15 imagens sem crédito são ilustração (as 13 `.webp` de `site/img`, a `tela-01.webp` e a `capa-ilustra.jpg`) e de onde vieram as 4 fotos `extra-1x` (P10).
 - **Pronto quando:** a tabela tem as 48 linhas, cada uma com legenda ou com "sem crédito" explícito, e ela vira o começo do `site/dados/cards.js`.
+- **✅ Fechada em 15/09/2026.** `_arquivos/scripts/levanta-legendas.js` escreve `plano/levantamento-legendas.md`. As 48 capas são **42 arquivos** (seis fotos são capa em duas páginas: a tabela tem uma linha por arquivo, com a coluna das capas), e o resultado é 24 fotos com crédito, 9 ilustrações e 9 sem crédito (P10). A comparação com as animações é por md5, não por nome: foi assim que a `extra-11-intel.jpg` apareceu como a mesma foto do 4004, e que os dois `datacenter-real.jpg` (fotos diferentes) não se misturaram. Três leituras corrigidas na conferência da tabela: a troca foto/ilustração (a legenda com "foto:" vai pra imagem `-real`), o `_telas.md` com a licença no meio, e o recorte do `CREDITOS.md` (o `transformer-169.png` empresta a legenda "diagrama" pro `transformer-real.png`). Desvio: o dono não disse quais eram ilustração (a execução em sequência combinou deixar isso pro fim); as 9 com prova foram aceitas pela prova, as 9 sem prova ficam sem lupa e na lista da P10.
 
 ### 6.2 O molde e o gerador, provados no `hardware.html`
 
