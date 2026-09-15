@@ -13,6 +13,22 @@ Tarefas:
 - **Refazer um episódio publicado tem procedimento próprio**: o que acontece com a nota antiga (editar no lugar, mantendo a faixa, ou nota nova e a antiga arquivada), onde vai a versão anterior (`OLD\`, `_v1\`) e como a tabela do acervo registra a troca. Sem isso o refazer de boa parte dos publicados, já decidido na série, vira bagunça de faixa.
 - Título e descrição da nota como o cartão de link vai mostrar em aplicativo de mensagem, e a capa leve o bastante pra virar miniatura.
 
+### 4.1 Publicar a partir do commit (D5, igual ao KIDS)
+
+Escrita em 15/09/2026, na 6.0 da Etapa 6, quando o dono pediu o deploy "igual à forma como trabalhamos no projeto do Kaco". Roda **antes do primeiro deploy da Etapa 6** (a 6.2). Sem ordem pra publicar, nada disto toca o ar.
+
+**Por quê:** o `sobe-arquivos.sh` sobe da pasta de trabalho, então precisa do inventário pra não levar trabalho de outra sessão, e o que está no ar não é um commit conhecido. Publicando a partir da `main`, só o que foi commitado sobe, e voltar atrás é voltar um commit.
+
+Tarefas:
+- **Acerto de contas antes do primeiro deploy por commit.** O primeiro `publicar.sh` põe no ar a `main` inteira, e o savepoint `6c3925b` levou pra `main` tudo que estava na pasta de trabalho. Então, antes: `inventario-site.sh` e `revisa-diferencas.sh` de verdade, o dono revê o diff `main` × ar; o que estiver no ar e não estiver no git entra no repo primeiro (senão a cópia apaga por cima); e a P11 (`hardware-01.html`) fecha aqui, porque o arquivo já está na `main`.
+- **No servidor**, o padrão da skill `publicar-no-servidor`: deploy key só-leitura (como no KIDS), clone da `main` em `~/serie-src`, e `~/serie/publicar.sh` = `git pull` + backup carimbado do `~/serie` (tgz, guarda os 3 mais novos) + cópia por cima **sem apagar** (mp3 e mp4 só existem no servidor e ficam) + md5 dos arquivos copiados. O script aborta se o clone estiver fora da `main`.
+- **`gera-cards.js --confere` dentro do `publicar.sh`**, entre o pull e a cópia, quando a 6.2 existir: sai com 1, não publica. Roda em container descartável de node (como o build do KIDS), sem instalar node na VM.
+- **Mídia** (mp3, mp4, fora do git pelo `.gitignore`) continua subindo pelo `sobe-arquivos.sh`, que deixa de ser o caminho normal e vira o de mídia e de emergência (escrito assim no `LEIA-ME-qa.md`).
+- **Rollback:** `publicar.sh --rollback` volta o tgz mais novo; testado de verdade, com o md5 de um arquivo no ar voltando ao anterior.
+- **Rotina escrita** no `LEIA-ME-qa.md` e na memória `reference_serie_site_scripts_deploy_qa`: branch → commit → merge na `main` por ordem → `ssh server 'bash serie/publicar.sh'` → `qa-*.js ar`. A regra de git do `1-formato-do-plano` (item 7) passa a valer no pé da letra: tudo que está na `main` sobe.
+
+**Pronto quando:** um commit da `main` vai ao ar por `ssh server 'bash serie/publicar.sh'`, com o md5 no ar igual ao do repo; o `qa-producao-site.js ar` segue verde; o rollback foi testado de verdade; e um arquivo só local, sem commit, provadamente não sobe.
+
 ---
 
 **Pronto quando:** um episódio é publicado seguindo só o texto do README, a conferência pós-publicação roda verde contra a nota real, o `plano-da-serie.md` e a visão HTML foram atualizados na mesma sessão, e a P3 virou decisão escrita.

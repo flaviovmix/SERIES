@@ -8,7 +8,7 @@
 
 | # | Subetapa | Estado |
 |---|---|---|
-| 6.0 | Savepoint e decisões | não iniciada |
+| 6.0 | Savepoint e decisões | ✅ 15/09/2026 |
 | 6.1 | Levantamento das legendas | não iniciada |
 | 6.2 | O molde e o gerador, provados no `hardware.html` | não iniciada |
 | 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | não iniciada |
@@ -77,7 +77,7 @@ Total: 82 com arte (48 com foto, 34 provisórias) e 5 sem arte.
 ```
 
 - `gera-cards.js` lê a `MENU` (quais cards, ordem, link, estado) e o `site/dados/cards.js` (período, frase, resumo, imagem, legenda, rótulos) e escreve o trecho em HTML puro.
-- `gera-cards.js --confere` não escreve nada: sai com 1 se algum trecho estiver diferente do que o dado gera, ou se página com foto não carrega `lightbox.css` e `lightbox.js`. **É ele que segura a D4**, e pra não depender de memória o `sobe-arquivos.sh` roda ele sozinho sempre que algum `site/*.html` estiver na lista (entra na 6.8). Durante a migração, página que ainda não tem marcador aparece como "pendente", não como falha; quando a 6.7 fechar, a lista de pendentes precisa estar vazia.
+- `gera-cards.js --confere` não escreve nada: sai com 1 se algum trecho estiver diferente do que o dado gera, ou se página com foto não carrega `lightbox.css` e `lightbox.js`. **É ele que segura a D4**, e pra não depender de memória o `publicar.sh` (D5, subetapa 4.1) roda ele sozinho antes de copiar pro ar (entra na 6.8). Durante a migração, página que ainda não tem marcador aparece como "pendente", não como falha; quando a 6.7 fechar, a lista de pendentes precisa estar vazia.
 - Sobre a D1: o HTML servido é o HTML commitado, legível, sem base64 e sem pasta de construído. O que muda é que a fonte do CARD passa a ser o dado. Isso se escreve na própria D4 como esclarecimento da D1, não como repropor.
 - Preço honesto: mexer em card vira "edita o dado e roda o script". Quem editar o trecho à mão perde a edição, e o `--confere` acusa antes do deploy.
 
@@ -93,7 +93,7 @@ Total: 82 com arte (48 com foto, 34 provisórias) e 5 sem arte.
 6. **Selo fica no dado, e o gerador recusa contradição.** A `MENU` só sabe "tem href ou não"; o "pra conferir" dos extras 03 a 07 não existe nela. Dado dizendo "em produção" pra item que tem href na `MENU` (ou "no ar" pra item sem href) faz o gerador parar com erro, não gerar calado.
 7. **A lupa leva o desenho dentro** (`<svg>` inline no card gerado), em vez de depender do sprite `#ico-lupa` no começo de cada página: uma coisa a menos que página nova precisa lembrar.
 8. **Caminhos passam por `encodeURI` no gerador.** No dado o caminho vai legível (`../Como Reinventar o Computador do Zero/_REFAZER/07 - O computador encolhe/01 - O transistor/img/transistor-real.jpg`); o HTML sai com `%20` e `%C3%A1`, como hoje. Mesma regra que o `menu.js` já aplica.
-9. **Na home a foto amplia ou leva pra série?** Hoje clicar na foto da home não faz nada, e quem clica numa vitrine costuma esperar ir pra série. Pergunta do dono antes da 6.4.
+9. **Na home a foto amplia ou leva pra série?** Hoje clicar na foto da home não faz nada, e quem clica numa vitrine costuma esperar ir pra série. **Fechada em 15/09/2026: leva pra série.** A foto da home vira link pro mesmo destino do botão (série sem `href` continua sem link), sem lupa e sem legenda; o crédito das fotos da home fica devendo pela P10 onde não houver.
 10. **O estado da série mora em `site/dados/series.json`** (`{ "01": { "ativa": true }, ... }`), fora da `MENU`. O painel escreve só JSON, nunca edita código. O `gera-cards.js` leva o estado pra dois lugares: a grade da home e um trecho marcado no topo do `menu.js` (`/* series-ativas: gerado */ ... /* /series-ativas */`), o mesmo mecanismo de marcador da D4. Série desativada some do menu, da home e do "o que vem por aí", e os extras dela somem junto. "Em preparação" continua sendo série sem `href`, e é outra coisa: aparece como "em breve".
 11. **O painel é local e não publica.** Roda só na máquina do dono (`node painel/servidor.js`, escutando só `127.0.0.1`), sem dependência de npm. Ele troca o estado e roda o `gera-cards.js`; no fim mostra os arquivos que mudaram e o comando do `sobe-arquivos.sh` pronto pra copiar. Subir continua por ordem do dono (Etapa 4). Painel online, com login, é outro projeto e fica fora: o `plano.md` diz "sem backend, sem banco, sem login".
 
@@ -105,7 +105,7 @@ Total: 82 com arte (48 com foto, 34 provisórias) e 5 sem arte.
 |---|---|---|---|
 | 6.2 | `hardware.html` | 5 | 5 (já têm; passam a ser gerados) |
 | 6.3 | `computador.html`, `javaweb.html` | 26 | 8 |
-| 6.4 | `index.html` | 6 | 6 |
+| 6.4 | `index.html` | 6 | 0 (decisão 9: a foto leva pra série) |
 | 6.5 | `etapas/etapa-06` a `11`, `etapas/javaweb-01` | 24 | 21 |
 | 6.6 | `extras/index.html`, `extra-01`, `extra-02` | 20 | 8 |
 | 6.7 | `etapas/hardware-01.html` | 6 | 0 |
@@ -118,6 +118,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 - Texto proposto da D4, que entra no `plano.md` quando a 6.0 fechar: **o card não se escreve à mão.** Toda grade de cards do `site/` sai do `gera-cards.js`, a partir da árvore `MENU` (quais cards, ordem, link e estado) e do `site/dados/cards.js` (texto, imagem e legenda de cada card); a página só marca onde a grade entra. Capa com foto nasce com a lupa e a legenda (`ilustração`, ou `foto: autor, licença`). Página nova já nasce assim, e `gera-cards.js --confere` verde é condição de deploy. Esclarece a D1: o trecho gerado é HTML puro, commitado e servido como está; não existe pasta de construído.
 - **Savepoint antes de gerar qualquer coisa (P12).** O último commit do SEIRES é de 08/09, e 13 das páginas que o gerador vai reescrever já têm mudança sem commit. Sem savepoint, o diff do gerador se mistura com seis dias de trabalho de outras sessões. Commit só por ordem do dono; branch de frente `card-componente` (regra de git do `1-formato-do-plano`, item 7).
 - **Pronto quando:** D4 escrita no `plano.md`, commit de savepoint feito, branch criada.
+- **✅ Fechada em 15/09/2026.** Savepoint `6c3925b` na `main` (P12 resolvida) e branch `card-componente` criada. Decisões 1 e 2 aceitas pelo dono uma a uma; a conversa da 2 abriu a D5 (publicar a partir do commit, subetapa 4.1), sem mudar a 2. Decisões 3 a 8, 10 e 11 aceitas como default ("sim" à proposta de executar em sequência); **decisão 9: na home a foto leva pra série** (não amplia, sem lupa na home). D4 escrita no `plano.md`.
 
 ### 6.1 Levantamento das legendas (sem mexer em página)
 
@@ -139,7 +140,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 
 ### 6.4 A home deitada
 
-- Depende da decisão 9. O ícone do aro segue no sprite da home (é da home, não do card).
+- Decisão 9 fechada: a foto vira link pra série, sem lupa. O ícone do aro segue no sprite da home (é da home, não do card).
 - **Pronto quando:** `qa-home-series.js`, `qa-tema-e-card.js` e `qa-cards.js` verdes; a lupa não cobre a foto encostada na borda no deitado nem no telefone; dono no navegador.
 
 ### 6.5 Páginas de etapa
@@ -160,8 +161,8 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 ### 6.8 A D4 vira hábito
 
 - `feedback_serie_episodio_novo_checklist`, item 4: sai "o botão do card aponta direto", entra "o episódio entra na `MENU` e no `cards.js`, e roda `gera-cards.js`".
-- `sobe-arquivos.sh` roda `gera-cards.js --confere` sozinho quando algum `site/*.html` está na lista, e para se ele sair com 1: a D4 vira ferramenta, não lembrança.
-- `LEIA-ME-qa.md`: `gera-cards.js` e `qa-cards.js` na tabela; a rotina de deploy vira inventário → `--confere` → revisa → sobe → QA no ar.
+- O `publicar.sh` da 4.1 roda `gera-cards.js --confere` sozinho antes de copiar pro ar, e para se ele sair com 1: a D4 vira ferramenta, não lembrança. (Era o `sobe-arquivos.sh`; mudou com a D5 em 15/09.)
+- `LEIA-ME-qa.md`: `gera-cards.js` e `qa-cards.js` na tabela; a rotina de deploy vira commit → merge na `main` por ordem → `publicar.sh` (com o `--confere` dentro) → QA no ar.
 - Anotado, não mexido: o `gera-cards.js` mora em `Como Reinventar o Computador do Zero/_arquivos/scripts/`, pasta de uma série só, enquanto o site cobre três. Segue o padrão dos scripts de deploy que já estão lá; mudar de pasta é outra conversa.
 - `menu.js`: sai o aviso "a lista vive em dois lugares".
 - `.claude/components/card-img-fixa.md`: aponta o molde do gerador como fonte de verdade e ganha a variante em pé.
@@ -223,6 +224,8 @@ painel/
 
 ### Deploy (em cada subetapa, só com ordem)
 
+Desde a D5 (15/09), o deploy é o da subetapa 4.1: commit na `card-componente`, merge na `main` por ordem do dono, `ssh server 'bash serie/publicar.sh'` (o `--confere` roda dentro), depois o QA no ar do passo 5. A 4.1 roda antes da 6.2, então os passos 1, 3 e 4 abaixo só valem se ela atrasar. Com o `publicar.sh`, o `site/dados/cards.js` sobe junto com o resto do repo: não custa nada, nenhuma página carrega ele.
+
 1. `bash inventario-site.sh`: comparar com o ar ANTES, porque outras sessões mexem no site.
 2. `node gera-cards.js --confere` verde.
 3. `bash revisa-diferencas.sh` nos arquivos da subetapa. O `menu.js` (6.2) e o `index.html` (6.4) podem carregar série ainda não publicada: conferir o diff antes de subir inteiros.
@@ -236,3 +239,5 @@ painel/
 **Desvios registrados:**
 - (14/09/2026) Entra como Etapa 6 por ordem de chegada e roda antes das 0, 1, 3 e 5, por pedido do dono ("vamos seguir o plano"). Não é subetapa da 2 porque a 2 é a base das animações, e o card é página do site.
 - (15/09/2026) Entra o painel das séries (6.9 e 6.10), a pedido do dono ("então já deixa o painel no plano também com o código humanizado e seguro"). Fica no fim porque depende do gerador pronto: o estado da série só vale se quem monta menu e home for o `gera-cards.js`.
+- (15/09/2026) **Desvio de método, a pedido do dono ("pode executar todas as etapas?" → "sim"):** da 6.1 à 6.10 executadas em sequência na mesma sessão, sem o OK dele entre elas. Compensação escrita: cada subetapa fecha com QA por script, régua de legibilidade no diff e commit próprio na `card-componente` (sem push), e fica **🟠 "falta o dono no navegador"** até ele validar a lista entregue no fim (régua 7). Fora do pedido: a 6.7 (espera a P11), a 4.1 e qualquer deploy.
+- (15/09/2026) Na 6.0, ao alinhar a decisão 2, o dono pediu o deploy igual ao do KIDS: virou a D5 e a subetapa 4.1 da Etapa 4, que roda antes do primeiro deploy desta etapa. A decisão 2 não mudou. Efeito aqui: a 6.8 e a seção Deploy apontam pro `publicar.sh` em vez do `sobe-arquivos.sh`, e o `hardware-01.html` da P11 já está na `main` pelo savepoint, então a P11 fecha na 4.1.
