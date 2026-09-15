@@ -11,7 +11,8 @@
 
    Cada entrada e UMA grade, com o nome do marcador que ela tem na pagina:
      pagina   onde a grade mora, relativa ao site/
-     tipo     etapas | extras-da-serie | series | episodios | extras | destaque-do-extra
+     tipo     etapas | extras-da-serie | series | episodios | episodios-sem-arte |
+              extras | destaque-do-extra | destaque-da-etapa
      serie, etapa, extra   de que galho da MENU saem os cards
      grade    as classes da <div> da grade
      cards    { 'num da MENU': { ...texto } }, ou card (um so), nos tipos de um card
@@ -761,6 +762,40 @@ module.exports = {
         resumo: `O circuito sai do simulador e vira desenho de placa: quem liga em quem, onde fica cada peça, por onde passa cada trilha e o arquivo que a fábrica usa pra produzir.`,
         contagem: `4 episódios`,
       },
+    },
+  },
+
+  /* a pagina da etapa 01, que por enquanto e o audio da etapa inteira e a lista dos
+     episodios em producao. O resumo do destaque e o do ar, escolhido pelo dono em
+     15/09 (P11): mais concreto que o que estava so aqui */
+  'hardware-01/destaque': {
+    pagina: 'etapas/hardware-01.html',
+    tipo: 'destaque-da-etapa',
+    serie: '03',
+    etapa: '01',
+    grade: 'grade grade--dupla',
+    card: {
+      periodo: `liga a bomba sozinha`,
+      frase: `Um chip que lê, decide e age, num laço que não para.`,
+      resumo: `O microcontrolador e o LED que pisca dizendo "estou funcionando". A boia, que só sabe dizer sim ou não, e por que uma entrada solta mente. O relé, que dá a ordem pra bomba sem puxar a corrente dela. O nível virando número de 0 a 1023. O meio termo do PWM. E a decisão com folga entre ligar e desligar, a mesma do termostato da geladeira.`,
+      audio: { src: "../HARDWARE/01 - O cérebro e os sentidos/00 - A etapa inteira/A caixa d'água que virou organismo.m4a", duracao: '13 min', ficha: 'Áudio da etapa' },
+      contagem: `só áudio`,
+      selo: 'no ar',
+    },
+  },
+
+  'hardware-01/episodios': {
+    pagina: 'etapas/hardware-01.html',
+    tipo: 'episodios-sem-arte',
+    serie: '03',
+    etapa: '01',
+    grade: 'grade',
+    cards: {
+      '01': { resumo: `O que é um microcontrolador e o primeiro sinal de vida da caixa d'água: o LED que pisca.` },
+      '02': { resumo: `Entrada e saída digital: a entrada que flutua e mente, o resistor que resolve e o relé que dá a ordem.` },
+      '03': { resumo: `A entrada analógica: a tensão virando um número de 0 a 1023, e por que justamente 1023.` },
+      '04': { resumo: `PWM: liga e desliga tão rápido que o olho vê meio-termo, e o painel mostra o nível pelo brilho.` },
+      '05': { resumo: `A decisão que junta tudo, e a folga entre ligar e desligar que impede o liga-desliga sem fim.` },
     },
   },
 

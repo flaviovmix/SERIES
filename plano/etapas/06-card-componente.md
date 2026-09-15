@@ -15,7 +15,7 @@
 | 6.4 | A home deitada | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.5 | Páginas de etapa | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.6 | Extras | ✅ 15/09/2026, 🟠 falta o dono no navegador |
-| 6.7 | `hardware-01.html` | não iniciada (espera a P11; fora da execução em sequência) |
+| 6.7 | `hardware-01.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.8 | A D4 vira hábito | ✅ 15/09/2026 |
 | 6.9 | O estado das séries, sem painel ainda | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.10 | O painel local das séries | ✅ 15/09/2026, 🟠 falta o dono usar no navegador |
@@ -163,6 +163,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 ### 6.7 `hardware-01.html`
 
 - **Espera o dono** decidir a mudança local sem OK que já está nesse arquivo (P11). Só depois entram o destaque E e os 5 cards sem arte F.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono no navegador.** O dono viu o diff local × ar e decidiu a P11: título e descrição da versão local, resumo do card do áudio da versão do ar. O gerador ganhou os tipos `destaque-da-etapa` (o card da etapa com o player) e `episodios-sem-arte` (os 5 cards F), e os 5 episódios da etapa 01 do Hardware entraram na MENU, sem link. **Delta declarado:** no menu, o Hardware 01 virou pasta, com "Acessar o módulo" e os 5 episódios em cinza, igual à etapa 11 do Computador. **Provas:** `--confere` verde e, pela primeira vez, sem nenhuma página pendente. `qa-cards.js` verde na `hardware-01.html` e no `hardware.html`, que ficou idêntico. `qa-player-site.js`, `qa-menu-extras-ultimo.js` e `qa-gera-cards.js` também verdes. **Geometria:** só o card do áudio cresceu (21 px no desktop, 64 px no telefone), pelo resumo mais longo que o dono escolheu; os cards de baixo desceram o mesmo tanto, sem mudar de tamanho.
 
 ### 6.8 A D4 vira hábito
 

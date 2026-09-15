@@ -17,7 +17,7 @@ const PASTA_DO_SITE = path.join(RAIZ, 'site');
 const ARQUIVO_DOS_DADOS = path.join(PASTA_DO_SITE, 'dados', 'cards.js');
 
 /* true = o selo so vale pra extra que esta no ar (tem link na MENU) */
-const SELOS_DE_EXTRA = { 'no ar': true, 'pra conferir': true, 'em produção': false };
+const SELOS_DO_DADO = { 'no ar': true, 'pra conferir': true, 'em produção': false };
 
 /* ---------- conferencias do dado ---------- */
 
@@ -64,10 +64,10 @@ function audioDoDado(texto, onde) {
 }
 
 /* decisao 6: o selo do extra mora no dado, e o gerador para se ele contradiz a MENU */
-function seloDoExtra(item, texto, onde) {
+function seloConferido(item, texto, onde) {
   exigir(texto, ['selo'], onde);
-  if (!(texto.selo in SELOS_DE_EXTRA)) throw new Error(`${onde}: selo "${texto.selo}" nao existe (${Object.keys(SELOS_DE_EXTRA).join(', ')})`);
-  if (SELOS_DE_EXTRA[texto.selo] !== Boolean(item.href)) {
+  if (!(texto.selo in SELOS_DO_DADO)) throw new Error(`${onde}: selo "${texto.selo}" nao existe (${Object.keys(SELOS_DO_DADO).join(', ')})`);
+  if (SELOS_DO_DADO[texto.selo] !== Boolean(item.href)) {
     throw new Error(`${onde}: o cards.js diz "${texto.selo}", mas na MENU ele ${item.href ? 'tem link (esta no ar)' : 'nao tem link (nao esta no ar)'}`);
   }
   return texto.selo;
@@ -141,15 +141,44 @@ function cardsDosEpisodios(dado, menu, marcador) {
     const onde = `${marcador}, episodio ${episodio.num}`;
     exigir(texto, ['periodo', 'frase', 'resumo', 'contagem'], onde);
     recusar(texto, ['selo', 'botao'], onde, 'o selo e o botao do episodio saem da MENU');
-    const acao = episodio.href
-      ? { botao: { href: episodio.href, rotulo: 'Abrir a animação', aria: `Abrir a animação do episódio ${episodio.num}, ${episodio.nome}` } }
-      : { selo: 'em produção' };
     return {
       num: episodio.num, titulo: episodio.nome, ...textoDoCard(texto),
       ...arteDoDado(texto, `Episódio ${episodio.num} · ${episodio.nome}`, `do episódio ${episodio.num}, ${episodio.nome}`),
-      ...acao,
+      ...acaoDoEpisodio(episodio),
     };
   });
+}
+
+/* episodio no ar leva pra animacao; sem link na MENU, o selo */
+function acaoDoEpisodio(episodio) {
+  return episodio.href
+    ? { botao: { href: episodio.href, rotulo: 'Abrir a animação', aria: `Abrir a animação do episódio ${episodio.num}, ${episodio.nome}` } }
+    : { selo: 'em produção' };
+}
+
+/* os episodios de uma etapa ainda sem animacao, listados sem arte e sem frase (a pagina
+   hardware-01): o periodo diz so o numero, e o selo ou o botao saem da MENU */
+function cardsDosEpisodiosSemArte(dado, menu, marcador) {
+  const etapa = arvore.acharEtapa(arvore.acharSerie(menu, dado.serie), dado.etapa);
+  return casarComMenu(etapa.episodios || [], dado.cards, marcador).map(({ item: episodio, texto }) => {
+    const onde = `${marcador}, episodio ${episodio.num}`;
+    exigir(texto, ['resumo'], onde);
+    recusar(texto, ['imagem', 'frase', 'selo', 'botao'], onde, 'o card sem arte so leva o resumo; selo e botao saem da MENU');
+    return { num: episodio.num, titulo: episodio.nome, periodo: `episódio ${episodio.num}`, resumo: texto.resumo, semArte: true, ...acaoDoEpisodio(episodio) };
+  });
+}
+
+/* a pagina de uma etapa que por enquanto e so o audio dela (a hardware-01): o card da
+   propria etapa, com o player e sem botao, e o selo conferido com o link da MENU */
+function cardDoDestaqueDaEtapa(dado, menu, marcador) {
+  const etapa = arvore.acharEtapa(arvore.acharSerie(menu, dado.serie), dado.etapa);
+  exigir(dado.card, ['periodo', 'frase', 'resumo', 'contagem', 'audio'], marcador);
+  recusar(dado.card, ['botao'], marcador, 'o destaque ja e a pagina da etapa');
+  return [{
+    num: etapa.num, titulo: etapa.nome, ...textoDoCard(dado.card), audio: audioDoDado(dado.card, marcador),
+    ...arteDoDado(dado.card, `Etapa ${etapa.num} · ${etapa.nome}`, `da etapa ${etapa.num}, ${etapa.nome}`),
+    selo: seloConferido(etapa, dado.card, marcador),
+  }];
 }
 
 function botaoDoExtra(item, texto, onde) {
@@ -167,7 +196,7 @@ function cardDoExtra(item, texto, onde) {
   return {
     num: item.num, titulo: item.nome, ...textoDoCard(texto), audio: audioDoDado(texto, onde),
     ...arteDoDado(texto, `Extra ${item.num} · ${item.nome}`, `do extra ${item.num}, ${item.nome}`),
-    selo: seloDoExtra(item, texto, onde),
+    selo: seloConferido(item, texto, onde),
   };
 }
 
@@ -195,6 +224,8 @@ const MONTADORES = {
   'episodios': cardsDosEpisodios,
   'extras': cardsDosExtras,
   'destaque-do-extra': cardDoDestaque,
+  'episodios-sem-arte': cardsDosEpisodiosSemArte,
+  'destaque-da-etapa': cardDoDestaqueDaEtapa,
 };
 
 /* ---------- a entrada ---------- */

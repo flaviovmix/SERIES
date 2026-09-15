@@ -91,7 +91,7 @@ function corpoEmPe(card, pagina) {
     '<div class="cap__corpo">',
     `  <p class="cap__periodo">${card.periodo}</p>`,
     `  <h3>${escaparTexto(card.titulo)}</h3>`,
-    `  <p class="cap__frase">${card.frase}</p>`,
+    ...(card.frase ? [`  <p class="cap__frase">${card.frase}</p>`] : []),
     `  <p class="cap__resumo">${card.resumo}</p>`,
     ...recuar(audioDoCard(card, pagina), 1),
     ...recuar(peDoCard(card, pagina), 1),
@@ -114,9 +114,11 @@ function corpoDeitado(card, pagina) {
   ];
 }
 
+/* card sem arte nenhuma: a lista dos episodios ainda em producao de uma etapa (hardware-01) */
 function artigoDoCard(card, pagina, deitado) {
   const corpo = deitado ? corpoDeitado(card, pagina) : corpoEmPe(card, pagina);
-  return ['<article class="cap">', `  ${arteDoCard(card, pagina)}`, ...recuar(corpo, 1), '</article>'];
+  const arte = card.semArte ? [] : [`  ${arteDoCard(card, pagina)}`];
+  return ['<article class="cap">', ...arte, ...recuar(corpo, 1), '</article>'];
 }
 
 function linhasDaGrade(grade) {

@@ -205,7 +205,14 @@
       nome: 'Hardware',
       href: 'hardware.html',
       etapas: [
-        { num: '01', nome: 'O cérebro e os sentidos', href: 'etapas/hardware-01.html' },
+        { num: '01', nome: 'O cérebro e os sentidos', href: 'etapas/hardware-01.html',
+          episodios: [
+            { num: '01', nome: 'O laço que nunca para' },
+            { num: '02', nome: 'A boia e a bomba' },
+            { num: '03', nome: 'Quanta água tem' },
+            { num: '04', nome: 'Meio aceso' },
+            { num: '05', nome: "A caixa d'água decide sozinha" }
+          ] },
         { num: '02', nome: 'O controlador fica esperto' },
         { num: '03', nome: 'O painel da portaria' },
         { num: '04', nome: 'A caixa d\'água no WiFi' },

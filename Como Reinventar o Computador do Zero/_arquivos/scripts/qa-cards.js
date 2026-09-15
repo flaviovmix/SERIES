@@ -110,9 +110,11 @@ function medirCardsNaPagina() {
     const estouros = [...card.querySelectorAll('.cap__corpo *')]
       .filter((el) => { const r = el.getBoundingClientRect(); return r.width && !dentro(r, caixa); })
       .map((el) => el.className || el.tagName);
+    /* card sem arte (os episodios em producao do hardware-01) nao tem o que ampliar */
+    const deArte = (ler) => (arte ? ler(arte) : null);
     return {
-      titulo: card.querySelector('h3').textContent, abre: arte.dataset.abre || null,
-      legenda: arte.dataset.legenda || null, aria: arte.getAttribute('aria-label'), temLupa: !!card.querySelector('.cap__lupa'),
+      titulo: card.querySelector('h3').textContent, abre: deArte((a) => a.dataset.abre || null),
+      legenda: deArte((a) => a.dataset.legenda || null), aria: deArte((a) => a.getAttribute('aria-label')), temLupa: !!card.querySelector('.cap__lupa'),
       estouros, botaoResponde: respondeNoCentro(card.querySelector('.cap__botao')), lupaResponde: respondeNoCentro(card.querySelector('.cap__lupa')),
     };
   };
