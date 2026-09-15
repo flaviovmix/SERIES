@@ -378,6 +378,216 @@ module.exports = {
     },
   },
 
+  /* os extras: o hub e as paginas dos dois que sao so audio. O selo ("no ar", "pra
+     conferir", "em produção") mora aqui porque a MENU nao sabe o que e "pra conferir";
+     o gerador para se o selo contradiz a MENU (decisao 6). O botao so existe se o extra
+     tem link na MENU. */
+
+  'extras/todos': {
+    pagina: 'extras/index.html',
+    tipo: 'extras',
+    serie: '01',
+    grade: 'grade grade--dupla',
+    cards: {
+      '01': {
+        periodo: `analogia: o prédio com caixa d'água`,
+        frase: `Eletricidade explicada como água num prédio.`,
+        resumo: `A lâmpada diz 9 W, o chuveiro 5.500 W, o carregador 5 V e 2 A, o disjuntor 20 A, a bateria 5.000 mAh e a conta de luz cobra em kWh. Seis medidas na mesma casa e ninguém explica a diferença: aqui todas saem de um prédio com caixa d'água no telhado.`,
+        contagem: `27 min &middot; com modelo 3D`,
+        selo: 'no ar',
+        botao: `Ouvir o extra`,
+      },
+      '02': {
+        periodo: `analogia: as agulhinhas de bússola`,
+        frase: `Como os ímãs funcionam por dentro.`,
+        resumo: `Por que gruda em ferro e não em alumínio, por que às vezes empurra em vez de atrair, por que quebrar ao meio cria dois ímãs inteiros, e por que segurar um papel na geladeira por dez anos não gasta energia nenhuma. Tudo sai de uma imagem só: o ferro é feito de milhões de agulhinhas de bússola.`,
+        contagem: `37 min`,
+        selo: 'no ar',
+        botao: `Ouvir o extra`,
+      },
+      '03': {
+        periodo: `analogia: os dez dedos`,
+        frase: `A base que você já usa sem perceber.`,
+        resumo: `Por que contamos de dez em dez, o que o "vai um" realmente faz, e por que a posição do algarismo vale mais que o desenho dele. É a peça que o extra seguinte vira de cabeça pra baixo.`,
+        contagem: `13 min &middot; 10 telas`,
+        selo: 'pra conferir',
+        botao: `Ouvir com as telas`,
+      },
+      '04': {
+        periodo: `analogia: a lâmpada e o interruptor`,
+        frase: `A mesma conta, com dois algarismos só.`,
+        resumo: `O que acontece quando a base dez vira base dois: contar, somar e fazer o vai-um só com liga e desliga. É o idioma de tudo o que a série monta depois, explicado sem história.`,
+        contagem: `29 min &middot; 10 telas`,
+        selo: 'pra conferir',
+        botao: `Ouvir com as telas`,
+      },
+      '05': {
+        periodo: `analogia: o armário de dezesseis gavetas`,
+        frase: `Contar até quinze num desenho só.`,
+        resumo: `Por que existe uma base em que A vale dez e F vale quinze, o que o FF6B35 da cor de tela está dizendo, e por que dezesseis é exatamente o tamanho que resume quatro sim-ou-nãos.`,
+        contagem: `11 min &middot; 10 telas`,
+        selo: 'pra conferir',
+        botao: `Ouvir com as telas`,
+      },
+      '06': {
+        periodo: `analogia: o relógio`,
+        frase: `A base que você lê no pulso todo dia.`,
+        resumo: `Sessenta segundos, sessenta minutos, 360 graus: por que o grupo de sessenta sobreviveu milhares de anos — a divisão sem sobra — e como se conta nele sem inventar sessenta desenhos.`,
+        contagem: `24 min &middot; 10 telas`,
+        selo: 'pra conferir',
+        botao: `Ouvir com as telas`,
+      },
+      '07': {
+        periodo: `analogia: o balanço do parque`,
+        frase: `O que o giga da etiqueta conta.`,
+        resumo: `A rádio diz 89,1, o roteador 2,4, o processador 3 — e o sobrenome é sempre hertz. Quantas vezes por segundo algo vai e volta, por que grave é lento e agudo é rápido, e por que o giga só mora em coisas minúsculas. Tem tela que toca som de verdade.`,
+        contagem: `15 min &middot; 10 telas`,
+        selo: 'pra conferir',
+        botao: `Ouvir com as telas`,
+      },
+      '08': {
+        periodo: `séc. VII &ndash; XIII`,
+        frase: `Como o zero criou o algoritmo.`,
+        resumo: `Por que os algarismos romanos são bons de registrar e péssimos de calcular, como o sistema posicional indiano com o zero resolveu isso, e quem trouxe esses algarismos até aqui: Brahmagupta, al-Khwarizmi e Fibonacci. Saiu da etapa 01 e virou extra.`,
+        audio: { src: '../Como Reinventar o Computador do Zero/OLD/01 - Contar antes das máquinas/02 - O Zero e os Números/Como o zero criou o algoritmo.mp3', duracao: '22 min' },
+        contagem: `22 min &middot; 9 telas`,
+        selo: 'no ar',
+        botao: `Abrir a animação`,
+      },
+      '09': {
+        periodo: `1958 &rarr; 2000`,
+        frase: `Foram dois, e os dois estão certos.`,
+        resumo: `Um circuito era feito de peças soltas, e uma máquina grande pedia dezenas de milhares de soldas à mão. Jack Kilby, sozinho no laboratório nas férias coletivas de 1958, provou que dava pra fazer tudo num pedaço só. Robert Noyce, meses depois, mostrou como fabricar aos milhares. Vieram a briga de patente, o acordo, e um Nobel que só um dos dois viveu pra receber.`,
+        audio: { src: '../Como Reinventar o Computador do Zero/_EXTRAS/09 - Quem Fez o Primeiro Chip/Como Kilby e Noyce inventaram o chip.m4a', duracao: '16 min' },
+        contagem: `16 min &middot; 10 telas`,
+        selo: 'pra conferir',
+        botao: `Ouvir com as telas`,
+      },
+      '10': {
+        periodo: `1965 &rarr; hoje`,
+        frase: `A previsão que virou combinado.`,
+        resumo: `Um artigo curto de revista, escrito em 1965 em cima de meia dúzia de pontos num gráfico, virou o calendário de uma indústria inteira. Não é lei da física: cumpriu-se porque todo mundo passou a mirar nela. Inclui a confusão mais comum (ela não fala de velocidade), o ano em que a frequência parou de subir, e onde a curva está hoje.`,
+        audio: { src: '../Como Reinventar o Computador do Zero/_EXTRAS/10 - A Lei de Moore/A Lei de Moore não é física.m4a', duracao: '18 min' },
+        contagem: `18 min &middot; 10 telas`,
+        selo: 'pra conferir',
+        botao: `Ouvir com as telas`,
+      },
+      /* 11 a 18: encomenda de 06/09, saidos do episodio 08-01 (familia "peca e figura",
+         com nome e data). Sem audio ainda: card com foto e selo, sem botao. As fotos do
+         8080, do Alto e do Apple II vem da pasta do 08-01; a do servidor, do 08-02; as
+         outras quatro moram em site/img/. A da Intel e a mesma foto do 4004 (07-03). */
+      '11': {
+        imagem: 'img/extra-11-intel.jpg',
+        descricao: `O primeiro microprocessador, na própria placa da calculadora`,
+        credito: `foto: MaltaGC, CC BY-SA 4.0`,
+        periodo: `1968 &rarr; hoje`,
+        frase: `A empresa que vendia memória e virou a peça que pensa.`,
+        resumo: `Fundada em 1968 por dois engenheiros que saíram da Fairchild, vendia chip de memória. Uma encomenda de calculadora japonesa vira o 4004, o primeiro processador num chip; o 8080 vai parar no Altair e o 8088 no IBM PC. Por que o processador ficou com o nome dela, e não do computador.`,
+        contagem: `peça e figura`,
+        selo: 'em produção',
+      },
+      '12': {
+        /* sem credito conhecido (P10): fica sem lupa */
+        imagem: 'img/extra-12-ibm.jpg',
+        periodo: `1911 &rarr; 1981`,
+        frase: `Do cartão furado ao PC, e como perdeu o padrão que criou.`,
+        resumo: `Nasce das tabuladoras de Hollerith, faz o Mark I, domina o mundo com os mainframes System/360 e a frase "ninguém é demitido por comprar IBM". Em 1980 manda doze pessoas pra Boca Raton montar um PC de peças de prateleira em um ano, publica o esquema, e os clones levam o mercado.`,
+        contagem: `peça e figura`,
+        selo: 'em produção',
+      },
+      '13': {
+        imagem: '../Como Reinventar o Computador do Zero/_REFAZER/08 - Da sala pro mundo/01 - O computador chega em casa/img/8080-real.jpg',
+        descricao: `O 8080 de 1974, fechado e aberto: a peça pronta, esperando alguém saber o que fazer com ela`,
+        credito: `foto: The Science Museum UK, CC BY 4.0`,
+        periodo: `1974`,
+        frase: `Um processador de oito bits, e tudo que coube nele.`,
+        resumo: `O que tem dentro da pastilha: os escaninhos, a unidade que faz a conta, os 64 KB que ele consegue endereçar, os dois milhões de ciclos por segundo. Como ele conversa com a memória e com o teclado, por que o Altair o escolheu, e o que muda dele pro 4004 de antes e pro 8088 de depois.`,
+        contagem: `peça`,
+        selo: 'em produção',
+      },
+      '14': {
+        imagem: '../Como Reinventar o Computador do Zero/_REFAZER/08 - Da sala pro mundo/01 - O computador chega em casa/img/alto-real.jpg',
+        descricao: `O Alto: tela em pé, teclado, o teclado de acordes e o mouse de três botões`,
+        credito: `foto: The wub, CC BY-SA 4.0`,
+        periodo: `1973`,
+        frase: `Como a tela coube no hardware, dez anos antes.`,
+        resumo: `Kay, Thacker e Lampson constroem, sem microprocessador, a máquina que já tinha janela, ícone e mouse. Cada bit da memória é um ponto da tela, e o próprio processador pinta o tubo por microcódigo porque não existia placa de vídeo. Por que custava 32 mil dólares, e por que a Xerox guardou na gaveta.`,
+        contagem: `peça e figura`,
+        selo: 'em produção',
+      },
+      '15': {
+        imagem: '../Como Reinventar o Computador do Zero/_REFAZER/08 - Da sala pro mundo/01 - O computador chega em casa/img/appleii-real.jpg',
+        descricao: `O Apple II de 1977: cor na televisão sem hardware de cor, e um chip fazendo o trabalho de três`,
+        credito: `foto: The wub, CC BY-SA 4.0`,
+        periodo: `1976 &rarr; 1984`,
+        frase: `Wozniak projeta, Jobs vende.`,
+        resumo: `Do clube de garagem ao Apple I, e a engenharia do Apple II: cor na televisão sem hardware de cor, um chip fazendo o trabalho de três, o controlador de disquete com oito chips. O VisiCalc que vendeu a máquina, a visita ao PARC em troca de ações, o Lisa que fracassou e o Macintosh que fez a tela caber em 128 KB.`,
+        contagem: `peça e figura`,
+        selo: 'em produção',
+      },
+      '16': {
+        /* sem credito conhecido (P10): fica sem lupa */
+        imagem: 'img/extra-16-microsoft.jpg',
+        periodo: `1975 &rarr; 1990`,
+        frase: `Software antes de ter o hardware.`,
+        resumo: `Gates e Allen escrevem o BASIC do Altair num emulador, sem nunca ter visto a máquina, e fundam a empresa em Albuquerque. A mãe no conselho com o presidente da IBM, o QDOS comprado por 50 mil dólares e licenciado sem exclusividade, o Word e o Excel feitos pro Mac, e o Windows do 1.0 que falhou ao 3.0 que pegou.`,
+        contagem: `figura`,
+        selo: 'em produção',
+      },
+      '17': {
+        /* sem credito conhecido (P10): fica sem lupa */
+        imagem: 'img/extra-17-basic.png',
+        periodo: `1964 &rarr; 1977`,
+        frase: `A linguagem que ligava junto com o computador.`,
+        resumo: `Nasce em 1964 numa faculdade, feita pra aluno que não era de exatas escrever um programa em uma aula. Dez anos depois é o primeiro software vendido pro Altair, e em 1977 já vem gravada dentro do Apple II, do PET e do TRS-80: a máquina ligava e esperava uma linha de BASIC. O que ela tinha de simples, o que tinha de ruim, e por que foi ela que ensinou uma geração a programar.`,
+        contagem: `conceito e figura`,
+        selo: 'em produção',
+      },
+      '18': {
+        imagem: '../Como Reinventar o Computador do Zero/_REFAZER/08 - Da sala pro mundo/02 - Conectando tudo - a internet/img/primeiro-servidor-real.jpg',
+        descricao: `A estação de trabalho que serviu a primeira página da teia, no CERN, com o aviso colado: 'esta máquina é um servidor, não desligue'`,
+        credito: `foto: Coolcaesar, CC BY-SA 3.0`,
+        periodo: `1989 &rarr; 1993`,
+        frase: `Três peças e um presente.`,
+        resumo: `Um físico do CERN cansado de não achar documento espalhado em máquina de país diferente. A proposta de 1989 com três peças: um endereço por documento, uma regra simples de pedir e entregar, e texto com ligação apontando pra outro. O NeXT que virou o primeiro servidor, agosto de 1991 no ar, e 30 de abril de 1993, quando o laboratório pôs tudo em domínio público de graça — a decisão que fez a web ganhar de todas as concorrentes.`,
+        contagem: `figura`,
+        selo: 'em produção',
+      },
+    },
+  },
+
+  'extra-01/destaque': {
+    pagina: 'extras/extra-01.html',
+    tipo: 'destaque-do-extra',
+    serie: '01',
+    extra: '01',
+    grade: 'grade grade--dupla',
+    card: {
+      periodo: `analogia única: o prédio com caixa d'água`,
+      frase: `Eletricidade explicada como água num prédio.`,
+      resumo: `A altura da caixa é o volt, os litros por segundo no cano são o ampère, o cano fino e comprido é o ohm, a mangueira de bico fino que tira o lodo da calçada é o watt, os litros que passaram no mês são o kWh, e o tamanho da caixa é o mAh. Seis medidas, um prédio.`,
+      audio: { src: '../Como Reinventar o Computador do Zero/_EXTRAS/01 - Volt Ampere e Watt/Eletricidade explicada como água num prédio.mp3', duracao: '27 min' },
+      contagem: `só áudio + modelo abaixo`,
+      selo: 'no ar',
+    },
+  },
+
+  'extra-02/destaque': {
+    pagina: 'extras/extra-02.html',
+    tipo: 'destaque-do-extra',
+    serie: '01',
+    extra: '02',
+    grade: 'grade grade--dupla',
+    card: {
+      periodo: `analogia única: as agulhinhas de bússola`,
+      frase: `Como os ímãs funcionam por dentro.`,
+      resumo: `Por que gruda em ferro e não em alumínio, cobre nem ouro; por que às vezes empurra em vez de atrair; por que quebrar um ímã ao meio não separa os lados e sim cria dois ímãs completos; por que ele perde força ao cair ou esquentar; e por que segurar um papel na geladeira por dez anos não consome energia nenhuma.`,
+      audio: { src: '../Como Reinventar o Computador do Zero/_EXTRAS/02 - Por que o Ima Gruda/Como os ímãs funcionam por dentro.mp3', duracao: '37 min' },
+      contagem: `só áudio`,
+      selo: 'no ar',
+    },
+  },
+
   /* ---------- Java Web (serie 02) ---------- */
 
   'javaweb/etapas': {

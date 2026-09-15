@@ -14,8 +14,8 @@
 | 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.4 | A home deitada | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.5 | Páginas de etapa | ✅ 15/09/2026, 🟠 falta o dono no navegador |
-| 6.6 | Extras | não iniciada |
-| 6.7 | `hardware-01.html` | não iniciada (espera a P11) |
+| 6.6 | Extras | ✅ 15/09/2026, 🟠 falta o dono no navegador |
+| 6.7 | `hardware-01.html` | não iniciada (espera a P11; fora da execução em sequência) |
 | 6.8 | A D4 vira hábito | não iniciada |
 | 6.9 | O estado das séries, sem painel ainda | não iniciada |
 | 6.10 | O painel local das séries | não iniciada |
@@ -158,6 +158,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 - O molde ganha o player dentro do card (08, 09, 10 e o destaque dos extras 01 e 02, que dependem do `audio.js`).
 - O dono decide se o texto "Oito extras" da seção se corrige junto (fora do card).
 - **Pronto quando:** `--confere`, `qa-cards.js` e `qa-player-site.js` verdes; dono no navegador.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono no navegador.** 18 cards no hub e os destaques dos extras 01 e 02 (tipo `destaque-do-extra`). O molde ganhou o player dentro do card (08, 09, 10 e os dois destaques), e o gerador para se o selo contradiz a MENU (decisão 6). Lupa em 5 fotos; a 12 (IBM), a 16 (Microsoft) e a 17 (BASIC) ficam sem crédito e sem lupa (P10). A `extra-11-intel.jpg` ganhou o crédito do 4004, porque é a mesma foto. O `extras/index.html` passou a carregar o lightbox. **Deltas:** o comentário "11 a 16: encomenda de 06/09" saiu da página e mora no `cards.js`; o endereço do áudio do extra 08 passou a ir inteiro codificado (antes ia meio codificado). **Não mexido, fica pro dono:** a seção do hub ainda diz "Oito extras" e "três no ar, sete pra conferir e oito em produção", e a página tem 18 (texto fora do card). **Provas:** `--confere` verde, com só o `hardware-01.html` pendente (a 6.7); `qa-cards.js` verde nas 3 páginas, lightbox em 5 artes; geometria igual (9 medidas); `qa-player-site.js` verde, com o áudio do extra 08 tocando pelo endereço novo.
 
 ### 6.7 `hardware-01.html`
 
