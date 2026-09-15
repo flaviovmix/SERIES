@@ -72,8 +72,9 @@ function examinarSite(grades, querEscrever) {
   return relatorio;
 }
 
+/* na home nenhuma foto amplia (decisao 9): la falta de credito nao tira lupa de ninguem */
 function semLupaPorFaltaDeCredito(grades) {
-  return grades.flatMap((grade) => grade.cards
+  return grades.filter((grade) => grade.tipo !== 'series').flatMap((grade) => grade.cards
     .filter((card) => card.imagem && !card.legenda && !card.linkDaArte)
     .map((card) => `${grade.pagina} · ${card.titulo} (${card.imagem})`));
 }

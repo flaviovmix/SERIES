@@ -275,4 +275,47 @@ module.exports = {
     },
   },
 
+  /* ---------- A home: uma card deitado por serie ---------- */
+
+  /* A foto leva pra serie e nao amplia (decisao 9), entao aqui nao ha credito. O rotulo
+     ("11 etapas", "Em preparação") e o botao ou selo saem da MENU; o icone e o <symbol>
+     do sprite da propria home (ico-<icone>). */
+  'home/series': {
+    pagina: 'index.html',
+    tipo: 'series',
+    grade: 'grade grade--series',
+    cards: {
+      '01': {
+        imagem: 'img/serie-computador.webp',
+        icone: 'abaco',
+        resumo: `Como <em>pedras que a gente move</em> viraram <em>máquinas que conversam</em>. Contar, instrumento, engrenagem, eletricidade, lógica, memória, miniaturização, rede e aprendizado: uma peça por episódio.`,
+      },
+      '02': {
+        imagem: 'img/serie-java-web.webp',
+        icone: 'codigo',
+        resumo: `Pedir pra uma IA ficou fácil; <em>entender o que voltou</em> é que não. Aqui a gente monta uma lista de tarefas do terminal até o ar (ambiente, git, teste, banco, deploy) pra que nada no seu código seja mágica. O princípio serve pra qualquer linguagem.`,
+      },
+      '03': {
+        imagem: 'img/serie-hardware.webp',
+        icone: 'chip',
+        resumo: `No simulador, sem comprar nada, a gente monta <em>a caixa d'água que se cuida sozinha</em>: sensor de nível, bomba, alarme, painel no computador, WiFi e, no fim, a placa própria. Arduino e ESP32 são o veículo; o princípio vale pra qualquer microcontrolador.`,
+      },
+      '04': {
+        imagem: 'img/serie-lua.webp',
+        icone: 'foguete',
+        resumo: `A próxima série, no mesmo método: o que foi preciso inventar, uma peça de cada vez, pra tirar uma pessoa do chão, levar ela até outro mundo e trazer de volta viva.`,
+      },
+      '05': {
+        imagem: 'img/serie-corpo.webp',
+        icone: 'coracao',
+        resumo: `Uma peça por episódio, do mesmo jeito: o osso que sustenta, o músculo que puxa, o sangue que entrega, o nervo que avisa e o miolo que decide o que fazer com tudo isso.`,
+      },
+      '06': {
+        imagem: 'img/serie-evolucao.webp',
+        icone: 'dna',
+        resumo: `Como uma bolha de gordura no fundo do mar virou tudo que está vivo. Sem salto e sem plano: cada peça nova nasce de uma que já existia e servia pra outra coisa.`,
+      },
+    },
+  },
+
 };

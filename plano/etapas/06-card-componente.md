@@ -12,7 +12,7 @@
 | 6.1 | Levantamento das legendas | ✅ 15/09/2026 |
 | 6.2 | O molde e o gerador, provados no `hardware.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
-| 6.4 | A home deitada | não iniciada |
+| 6.4 | A home deitada | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.5 | Páginas de etapa | não iniciada |
 | 6.6 | Extras | não iniciada |
 | 6.7 | `hardware-01.html` | não iniciada (espera a P11) |
@@ -145,6 +145,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 
 - Decisão 9 fechada: a foto vira link pra série, sem lupa. O ícone do aro segue no sprite da home (é da home, não do card).
 - **Pronto quando:** `qa-home-series.js`, `qa-tema-e-card.js` e `qa-cards.js` verdes; a lupa não cobre a foto encostada na borda no deitado nem no telefone; dono no navegador.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono no navegador.** 6 cards no dado, com imagem, ícone e resumo. O rótulo ("11 etapas", "Em preparação"), o botão ou o selo e o destino saem da MENU. **Decisão 9 aplicada:** nas 3 séries no ar a foto virou link pro mesmo destino do botão (`<a class="cap__arte" tabindex="-1" aria-hidden="true">`, fora do Tab e do leitor de tela, porque o botão já leva lá); nas 3 em preparação a foto continua parada. Sem lupa na home, então o item "a lupa não cobre a foto" não se aplica. **Provas:** `--confere` verde; `qa-cards.js` verde (6 cards, 5 tamanhos × 2 temas); `qa-home-series.js` e `qa-tema-e-card.js` verdes; geometria igual à gravada. De brinde, o `--confere` deixou de listar as fotos da home como "sem lupa por falta de crédito", já que na home nenhuma foto amplia.
 
 ### 6.5 Páginas de etapa
 
