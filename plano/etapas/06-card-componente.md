@@ -16,7 +16,7 @@
 | 6.5 | Páginas de etapa | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.6 | Extras | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.7 | `hardware-01.html` | não iniciada (espera a P11; fora da execução em sequência) |
-| 6.8 | A D4 vira hábito | não iniciada |
+| 6.8 | A D4 vira hábito | ✅ 15/09/2026 |
 | 6.9 | O estado das séries, sem painel ainda | não iniciada |
 | 6.10 | O painel local das séries | não iniciada |
 
@@ -173,6 +173,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 - `menu.js`: sai o aviso "a lista vive em dois lugares".
 - `.claude/components/card-img-fixa.md`: aponta o molde do gerador como fonte de verdade e ganha a variante em pé.
 - **Pronto quando:** numa cópia de teste, uma etapa inventada entra só no dado e aparece no hub com lupa depois de rodar o gerador; e um card editado à mão faz o `--confere` sair com 1.
+- **✅ Fechada em 15/09/2026.** O item 4 do checklist de episódio novo (memória) agora diz: o episódio entra na MENU e no `cards.js`, e roda o gerador. O `--confere` entrou no `sobe-arquivos.sh`: se a lista tem página do `site/` e ele reprova, a subida para. O `LEIA-ME-qa.md` ganhou o gerador, o `qa-cards.js`, o `qa-gera-cards.js` e a seção "Os cards do site". Do `menu.js` saiu o aviso "a lista vive em dois lugares". O `card-img-fixa.md` aponta o gerador como fonte do HTML e ganhou a variante em pé com lupa e a foto que leva pra página. **Prova, versionada:** `qa-gera-cards.js`, numa cópia do site na pasta temporária. Nela, uma etapa inventada entra só na MENU e no `cards.js` e aparece no hub com lupa e botão derivado, e um card editado à mão faz o `--confere` sair com 1. Três recusas (card sem item, selo contraditório, contagem que a MENU já deriva) param o gerador sem escrever nada. **Desvio:** a trava foi pro `sobe-arquivos.sh`, que é o deploy de hoje, e não pro `publicar.sh`, que só nasce na 4.1; a 4.1 leva a trava junto. **Achado:** outra sessão mexia no `LEIA-ME-qa.md` ao mesmo tempo (seção "Pendrive USB"), e só os trechos desta subetapa entraram no commit.
 
 ### 6.9 O estado das séries, sem painel ainda
 

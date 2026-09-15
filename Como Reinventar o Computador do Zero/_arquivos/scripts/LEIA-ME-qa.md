@@ -45,6 +45,7 @@ mesmo motivo de sempre: o scratchpad some. Detalhe do que cada um cobre no
 | Script | Pra que serve |
 |---|---|
 | `inventario-site.sh` | md5 de todo html/css/js de `~/serie` no servidor, numa chamada ssh só, contra o local; escreve os diferentes em `/tmp/inventario-serie/diferentes.txt` (`QA_OUT` muda a pasta). Rodar ANTES de subir arquivo compartilhado: acha trabalho de outra sessão que não pode ir junto |
+| `gera-cards/gera-cards.js --confere` | os cards de toda página do `site/` iguais ao que a MENU e o `site/dados/cards.js` geram, e o lightbox carregado onde a foto amplia. Reprovou, não sobe (D4). O `sobe-arquivos.sh` roda sozinho quando a lista tem página do `site/` |
 | `revisa-diferencas.sh` | baixa do ar (por tar) as cópias dos arquivos diferentes e mostra o diff de cada um |
 | `sobe-arquivos.sh <caminhos>` | sobe arquivos (caminhos relativos à raiz do SEIRES) com backup em tgz carimbado, tar por cima do ssh e md5 local x ar no fim. Css e js antes de html |
 
@@ -61,7 +62,20 @@ o local por `file://`; capturas na pasta temporária, `QA_OUT` muda):
 | `qa-tema-e-card.js` | a troca de tema no menu (guardada ao recarregar, no site e numa animação) e o card da home no telefone |
 | `qa-producao-site.js` | as 16 páginas do site (fundo, fonte e cards do desenho AFX, claro e escuro) e 5 animações (paleta antiga, tocador abaixo da barra, tela de fim) |
 | `qa-trava-animacao.js` | as animações seguem com a paleta antiga e o site com a do AFX, nos dois temas |
+| `qa-cards.js` | os cards gerados: lupa, legenda igual à do dado, lightbox que abre a mesma foto, Esc devolvendo o foco, Tab e Enter, botão e lupa sem nada por cima, nada estourando, em 5 tamanhos e 2 temas. `--grava` e `--compara` guardam e conferem a geometria antes e depois (régua 4) |
+| `qa-gera-cards.js` | a D4 numa cópia do site na pasta temporária: etapa nova só na MENU e no dado aparece no hub com lupa, card editado à mão reprova o `--confere`, e o gerador recusa dado que contradiz a MENU sem escrever nada. Não usa navegador nem `ar` |
 | `qa-componente-card-img-fixa.js` | monta o componente `card-img-fixa` só com o que está no `.md` da pasta de componentes e mede |
+
+## Os cards do site (Etapa 6, desde 15/09/2026)
+
+Card não se escreve à mão (D4 do plano do SEIRES). A MENU do `site/js/menu.js` diz quais cards existem, em que ordem, pra onde levam e se estão no ar; o `site/dados/cards.js` guarda o texto, a imagem e o crédito da foto; o gerador escreve só o trecho entre `<!-- cards: ... -->` e `<!-- /cards -->` de cada página. Na raiz do SEIRES:
+
+```bash
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/gera-cards/gera-cards.js"            # escreve
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/gera-cards/gera-cards.js" --confere  # só confere
+```
+
+Episódio ou etapa nova: entra na MENU e no `cards.js`, roda o gerador, roda o `qa-cards.js`. O gerador para (e não escreve nada) se o dado contradiz a MENU. Foto nova de capa precisa de crédito no `cards.js` pra ganhar lupa; a origem dos créditos que já existem está em `plano/levantamento-legendas.md`, gerada pelo `levanta-legendas.js`. Rotina de deploy com cards: inventário → `--confere` → revisa → sobe → `qa-cards.js ar`. Quando a subetapa 4.1 fechar, o `--confere` passa pro `publicar.sh`.
 
 ## Por que a checagem "atrás do painel" existe
 

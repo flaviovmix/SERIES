@@ -20,9 +20,10 @@
    O script descobre sozinho de que pasta a pagina esta sendo servida (pela
    propria URL do menu.js), entao a mesma linha funciona na raiz e em etapas/.
 
-   Aviso: a lista de etapas vive em dois lugares, aqui e nos cards do hub de
-   cada serie (computador.html, javaweb.html, hardware.html, extras/index.html). Quando uma
-   etapa entra no ar, o href entra aqui e o card sai do "em producao" la. */
+   Os cards das paginas (home, hubs, paginas de etapa e extras) tambem saem desta
+   arvore: o gera-cards.js le a MENU e o site/dados/cards.js e escreve a grade de cada
+   pagina (D4 do plano do SEIRES). Quando uma etapa ou um episodio entra no ar, o href
+   entra aqui e o gerador roda; card nao se edita a mao. */
 
 (function () {
   'use strict';

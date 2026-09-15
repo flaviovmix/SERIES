@@ -28,6 +28,14 @@ for arq in "$@"; do
   printf '%s\n' "$arq" >> "$LISTA"
 done
 
+# D4 (Etapa 6): pagina do site/ so sobe com os cards iguais ao que a MENU e o cards.js
+# geram. Enquanto o publicar.sh da subetapa 4.1 nao existe, a trava mora aqui.
+if grep -q '^site/.*\.html$' "$LISTA"; then
+  echo "--- gera-cards.js --confere ---"
+  node "$LOCAL/Como Reinventar o Computador do Zero/_arquivos/scripts/gera-cards/gera-cards.js" --confere \
+    || { echo "PAROU: os cards das paginas nao batem com o dado. Rode o gera-cards.js, confira e so entao suba."; rm -f "$LISTA"; exit 1; }
+fi
+
 echo "--- backup do que ja esta no ar (tgz em ~/serie-backup-$CARIMBO.tgz) ---"
 # so os que existem la: o tar reclamaria dos novos
 ssh "$SERVIDOR" "cd '$REMOTO' && while IFS= read -r f; do [ -f \"\$f\" ] && printf '%s\n' \"\$f\"; done > /tmp/sobe-existentes.txt; if [ -s /tmp/sobe-existentes.txt ]; then tar czf ~/serie-backup-$CARIMBO.tgz -T /tmp/sobe-existentes.txt && echo \"backup: \$(wc -l < /tmp/sobe-existentes.txt) arquivo(s)\"; else echo 'nada pra guardar: tudo e novo'; fi" < "$LISTA"
