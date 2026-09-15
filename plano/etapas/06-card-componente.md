@@ -11,7 +11,7 @@
 | 6.0 | Savepoint e decisões | ✅ 15/09/2026 |
 | 6.1 | Levantamento das legendas | ✅ 15/09/2026 |
 | 6.2 | O molde e o gerador, provados no `hardware.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
-| 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | não iniciada |
+| 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.4 | A home deitada | não iniciada |
 | 6.5 | Páginas de etapa | não iniciada |
 | 6.6 | Extras | não iniciada |
@@ -139,6 +139,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 
 - Marcadores, dado dos 26 cards, gerar. O `computador.html` tem duas grades (as etapas e o card Extras), cada uma com o próprio marcador; o card Extras sai de `serie.extras` da `MENU`, e a contagem "18 extras" de `extras.itens.length`. Delta: lupa em 8 fotos e a decisão 5 derivando os dois botões diretos (etapas 01 e 11).
 - **Pronto quando:** `--confere` e `qa-cards.js` verdes nas 3 páginas de hub; `qa-producao-site.js` segue verde; geometria igual fora a lupa; dono no navegador.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono no navegador.** 26 cards no dado (12 do `computador.html`, com o card Extras, e 14 do `javaweb.html`). Lupa em **6 fotos, não 8**: as capas das etapas 01 e 06 do `computador.html` (`abaco-episodio.webp`, `etapa-06.webp`) não têm crédito conhecido e ficaram sem lupa (P10). Os botões diretos das etapas 01 e 11, o "1 de 4 episódios" e todas as contagens saíram derivados da MENU, iguais aos escritos à mão. **Deltas declarados:** os dois hubs passaram a carregar `lightbox.css` e `lightbox.js` (o `--confere` cobrou; o texto desta subetapa não previa); e saíram os comentários HTML de dentro da grade ("etapa de um episódio só: o card leva direto"), porque a regra agora mora no `arvore.js` (decisão 5). **Provas:** `--confere` verde; `qa-cards.js` verde nos 3 hubs, 5 tamanhos × 2 temas, lightbox com foco e teclado em 11 artes; geometria igual à gravada. O `qa-producao-site.js` só roda contra o ar, então fica pro deploy.
 
 ### 6.4 A home deitada
 
