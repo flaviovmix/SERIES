@@ -10,7 +10,7 @@
 |---|---|---|
 | 6.0 | Savepoint e decisões | ✅ 15/09/2026 |
 | 6.1 | Levantamento das legendas | ✅ 15/09/2026 |
-| 6.2 | O molde e o gerador, provados no `hardware.html` | não iniciada |
+| 6.2 | O molde e o gerador, provados no `hardware.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | não iniciada |
 | 6.4 | A home deitada | não iniciada |
 | 6.5 | Páginas de etapa | não iniciada |
@@ -133,6 +133,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 - Caminhos no dado são relativos à raiz do `site/` (como na `MENU`); o gerador resolve pra profundidade de cada página (`etapas/`, `extras/`).
 - `qa-cards.js` novo e versionado (especificação na seção de QA).
 - **Pronto quando:** `node gera-cards.js --confere` verde; `qa-cards.js` verde no `hardware.html`; a medida geométrica dos cards antes e depois é igual (régua 4), fora os deltas declarados; o dono vê no navegador e no telefone.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono no navegador.** A `MENU` subiu pro topo do `menu.js`, com a saída pro node antes de qualquer linha que toque a página (decisão 2). O gerador tem uma entrada, `gera-cards.js`, e três peças (`arvore.js` lê a MENU, `grades.js` junta com o dado e recusa contradição, `molde.js` escreve o HTML do card, `trecho.js` acha e troca os marcadores). Também nasceram o `site/dados/cards.js` com os 5 cards do Hardware e o `qa-cards.js`. **Desvio:** o gerador mora numa pasta própria, `_arquivos/scripts/gera-cards/`, e não num arquivo solto, pela regra 6 do `/codigo-humanizado-e-seguro` (componente com 3 ou mais arquivos ganha pasta); o comando é `node "Como Reinventar o Computador do Zero/_arquivos/scripts/gera-cards/gera-cards.js"`. **Delta declarado:** a lupa leva o desenho dentro (decisão 7), e o sprite `#ico-lupa` saiu do `hardware.html`. Fora isso o trecho gerado é igual ao escrito à mão. **Provas:** `--confere` verde (14 páginas pendentes, esperado); `qa-cards.js` verde nos 5 tamanhos × 2 temas, com lightbox, Esc devolvendo o foco e Tab+Enter nas 5 artes; geometria igual à gravada antes (1px); `qa-tema-e-card.js`, `qa-menu-extras-ultimo.js` e `qa-player-site.js` verdes com a MENU no topo. A geometria de ANTES das 14 páginas foi gravada numa rodada só, antes de qualquer edição, e serve de régua 4 pras subetapas seguintes.
 
 ### 6.3 Hubs em pé: `computador.html` e `javaweb.html`
 

@@ -27,50 +27,6 @@
 (function () {
   'use strict';
 
-  /* ---------- o tema claro ou escuro ---------- */
-
-  /* escolhido no botao do menu (13/09, pedido dele). Sem escolha vale o do sistema,
-     que os tokens.css ja seguem sozinhos. A escolha fica guardada no aparelho e entra
-     no <html> como data-theme, que os tokens.css obedecem nos dois sentidos. Aplica
-     logo aqui, antes de montar qualquer coisa, pra pagina nao abrir no tema errado */
-  var CHAVE_DO_TEMA = 'series-tema';
-  var raizDoDocumento = document.documentElement;
-  var sistemaEscuro = matchMedia('(prefers-color-scheme: dark)');
-
-  function temaGuardado() {
-    try { return localStorage.getItem(CHAVE_DO_TEMA); } catch (erro) { return null; }
-  }
-
-  var guardado = temaGuardado();
-  if (guardado === 'dark' || guardado === 'light') raizDoDocumento.setAttribute('data-theme', guardado);
-
-  function temaAtual() {
-    return raizDoDocumento.getAttribute('data-theme') || (sistemaEscuro.matches ? 'dark' : 'light');
-  }
-
-  /* o desenho mostra o tema PRA ONDE o botao leva: a lua no claro, o sol no escuro */
-  var ICONE_LUA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>';
-  var ICONE_SOL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';
-
-  function pintaBotaoDoTema(botao) {
-    var escuro = temaAtual() === 'dark';
-    botao.innerHTML = (escuro ? ICONE_SOL : ICONE_LUA) + '<span>' + (escuro ? 'Tema claro' : 'Tema escuro') + '</span>';
-    botao.setAttribute('aria-label', escuro ? 'Mudar pro tema claro' : 'Mudar pro tema escuro');
-  }
-
-  function ligaTema() {
-    var botao = document.querySelector('.menu__tema');
-    pintaBotaoDoTema(botao);
-    botao.addEventListener('click', function () {
-      var novo = temaAtual() === 'dark' ? 'light' : 'dark';
-      raizDoDocumento.setAttribute('data-theme', novo);
-      try { localStorage.setItem(CHAVE_DO_TEMA, novo); } catch (erro) { /* aba privada: vale ate fechar a pagina */ }
-      pintaBotaoDoTema(botao);
-    });
-    /* sem escolha guardada, o botao acompanha o sistema quando ele muda */
-    sistemaEscuro.addEventListener('change', function () { pintaBotaoDoTema(botao); });
-  }
-
   /* ---------- a arvore ---------- */
 
   /* serie sem href = ainda nao comecou (cai no bloco "o que vem por ai"). Etapa sem href = em producao (vira cinza).
@@ -249,6 +205,59 @@
     { num: '05', nome: 'Montando o Corpo Humano' },
     { num: '06', nome: 'A Evolução das Espécies' }
   ];
+
+  /* No node (o gera-cards.js, que monta os cards do site a partir desta arvore) o
+     arquivo entrega a MENU e para aqui: tudo daqui pra baixo mexe na pagina, e la nao
+     existe pagina. No navegador `module` nao existe e o script segue. Por isso a MENU
+     mora no topo, antes de qualquer linha que toque o documento (decisao 2 da Etapa 6). */
+  if (typeof module === 'object' && module.exports) {
+    module.exports = MENU;
+    return;
+  }
+
+  /* ---------- o tema claro ou escuro ---------- */
+
+  /* escolhido no botao do menu (13/09, pedido dele). Sem escolha vale o do sistema,
+     que os tokens.css ja seguem sozinhos. A escolha fica guardada no aparelho e entra
+     no <html> como data-theme, que os tokens.css obedecem nos dois sentidos. Aplica
+     antes de montar a barra e o menu, pra pagina nao abrir no tema errado */
+  var CHAVE_DO_TEMA = 'series-tema';
+  var raizDoDocumento = document.documentElement;
+  var sistemaEscuro = matchMedia('(prefers-color-scheme: dark)');
+
+  function temaGuardado() {
+    try { return localStorage.getItem(CHAVE_DO_TEMA); } catch (erro) { return null; }
+  }
+
+  var guardado = temaGuardado();
+  if (guardado === 'dark' || guardado === 'light') raizDoDocumento.setAttribute('data-theme', guardado);
+
+  function temaAtual() {
+    return raizDoDocumento.getAttribute('data-theme') || (sistemaEscuro.matches ? 'dark' : 'light');
+  }
+
+  /* o desenho mostra o tema PRA ONDE o botao leva: a lua no claro, o sol no escuro */
+  var ICONE_LUA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>';
+  var ICONE_SOL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';
+
+  function pintaBotaoDoTema(botao) {
+    var escuro = temaAtual() === 'dark';
+    botao.innerHTML = (escuro ? ICONE_SOL : ICONE_LUA) + '<span>' + (escuro ? 'Tema claro' : 'Tema escuro') + '</span>';
+    botao.setAttribute('aria-label', escuro ? 'Mudar pro tema claro' : 'Mudar pro tema escuro');
+  }
+
+  function ligaTema() {
+    var botao = document.querySelector('.menu__tema');
+    pintaBotaoDoTema(botao);
+    botao.addEventListener('click', function () {
+      var novo = temaAtual() === 'dark' ? 'light' : 'dark';
+      raizDoDocumento.setAttribute('data-theme', novo);
+      try { localStorage.setItem(CHAVE_DO_TEMA, novo); } catch (erro) { /* aba privada: vale ate fechar a pagina */ }
+      pintaBotaoDoTema(botao);
+    });
+    /* sem escolha guardada, o botao acompanha o sistema quando ele muda */
+    sistemaEscuro.addEventListener('change', function () { pintaBotaoDoTema(botao); });
+  }
 
   /* ---------- onde a pagina esta ---------- */
 
