@@ -1,0 +1,228 @@
+/* painel
+   O desenho do painel local das series, com os tokens do site (D2): papel, tinta,
+   tracejado e pilula. Um bloco por peca, na ordem da pagina. Depende de tokens.css.
+   As fontes do Google ficam de fora de proposito: a politica de seguranca do painel so
+   deixa carregar o que vem dele mesmo, entao vale a fonte do sistema. */
+
+body {
+  margin: 0;
+  padding-inline: 16px;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: system-ui, "Segoe UI", sans-serif;
+}
+
+/* a pagina: uma coluna so e estreita, porque a lista e curta */
+.painel {
+  max-width: 640px;
+  margin: 0 auto;
+  padding-block: 48px;
+}
+
+/* ---------- a cabeca ---------- */
+
+.painel__rotulo {
+  margin: 0;
+  font-family: Consolas, monospace;
+  font-size: .66rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.painel__cabeca h1 {
+  margin: 8px 0 10px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.painel__lede {
+  margin: 0 0 28px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.painel__lede code {
+  font-family: Consolas, monospace;
+  font-size: .85em;
+}
+
+/* ---------- a lista de series ---------- */
+
+.series__lista {
+  margin: 0;
+  padding: 8px 20px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.series__legenda {
+  padding: 0 8px;
+  font-family: Consolas, monospace;
+  font-size: .66rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.series__carregando {
+  color: var(--ink-soft);
+}
+
+/* ---------- uma serie: a chave, o nome e a situacao ---------- */
+
+.serie {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 14px 0;
+  border-top: 1px dashed var(--line);
+  cursor: pointer;
+}
+
+.serie:first-of-type {
+  border-top: 0;
+}
+
+.serie__nome {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.serie__situacao {
+  font-family: Consolas, monospace;
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* a chave: o checkbox de verdade desenhado como interruptor. O appearance:none tira so o
+   desenho; teclado, foco e leitor de tela continuam os do input nativo */
+.serie__chave {
+  appearance: none;
+  position: relative;
+  flex: none;
+  width: 44px;
+  height: 24px;
+  margin: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface-alt);
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.serie__chave::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+  transition: transform .2s ease, background .2s ease;
+}
+
+.serie__chave:checked {
+  border-color: var(--destaque);
+  background: var(--destaque);
+}
+
+.serie__chave:checked::after {
+  transform: translateX(20px);
+  background: var(--ground);
+}
+
+.serie__chave:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* ---------- salvar e o aviso, um do lado do outro ---------- */
+
+.series__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+  margin-top: 20px;
+}
+
+.series__salvar {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--destaque);
+  color: var(--ground);
+  font-family: Consolas, monospace;
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.series__salvar:hover {
+  background: var(--destaque-forte);
+}
+
+.series__salvar:disabled {
+  opacity: .6;
+  cursor: progress;
+}
+
+.series__salvar:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.series__aviso {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.series__aviso[data-tipo="erro"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---------- o resultado ---------- */
+
+.resultado {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--line-strong);
+}
+
+.resultado h2 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.resultado__arquivos {
+  margin: 0 0 16px;
+  padding-left: 20px;
+  font-family: Consolas, monospace;
+  font-size: .8rem;
+}
+
+.resultado__rotulo {
+  margin: 0 0 6px;
+  color: var(--ink-soft);
+}
+
+.resultado__comando {
+  margin: 0;
+  padding: 12px 14px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-alt);
+  font-size: .78rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

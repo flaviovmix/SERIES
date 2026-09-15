@@ -18,7 +18,7 @@
 | 6.7 | `hardware-01.html` | não iniciada (espera a P11; fora da execução em sequência) |
 | 6.8 | A D4 vira hábito | ✅ 15/09/2026 |
 | 6.9 | O estado das séries, sem painel ainda | ✅ 15/09/2026, 🟠 falta o dono no navegador |
-| 6.10 | O painel local das séries | não iniciada |
+| 6.10 | O painel local das séries | ✅ 15/09/2026, 🟠 falta o dono usar no navegador |
 
 ---
 
@@ -217,6 +217,22 @@ painel/
 - `qa-painel-series.js` (novo) prova as recusas: pedido sem token, `Origin` estranha, `Host` estranho, id inventado, valor que não é booleano e corpo gigante voltam recusados; o pedido certo passa; nada responde fora do `127.0.0.1`.
 - A régua do `/codigo-humanizado-e-seguro` passou no diff da subetapa (item 10 do `1-formato-do-plano`), e o `/revisao` (security-review + code-review) rodou no `painel/`, com cada achado corrigido ou escrito como `P*`.
 - O dono usou no navegador.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono usar no navegador.** O `painel/` nasceu na raiz do SEIRES com `servidor.js`, `painel.html`, `painel.css`, `painel.js` e `LEIA-ME.md`, como no desenho acima. Abre com `node painel/servidor.js`, em `http://127.0.0.1:8790/`. **Provas:** `qa-painel-series.js` (novo) verde. Conferido nele:
+  - a página abre com o token e a política de segurança;
+  - 13 pedidos voltam recusados sem mexer em arquivo: sem token, token errado, Origin estranha, sem Origin, Host estranho no POST e no GET, série inventada, `__proto__`, valor que não é booleano, JSON quebrado, corpo gigante, método errado e caminho fora da lista;
+  - um corpo mandado devagar não trava a gravação;
+  - desligar e religar a série 03 pelo painel muda o JSON, o menu e a home, lista os arquivos e o comando de subir, e volta byte a byte;
+  - a página funciona no navegador em 1280 e 384 px (6 chaves com rótulo, teclado, salvar);
+  - nada responde nos 4 endereços de rede da máquina.
+
+  **Revisão** (`/revisao`, as duas lentes, e um revisor independente atacando o código): nenhum achado alto ou médio. Corrigido na hora:
+  - a trava de gravação ligava antes de ler o corpo;
+  - a volta depois de o gerador recusar não era conferida;
+  - o comando de subir usava aspas duplas, e um nome de arquivo com `$(...)` rodaria ao colar;
+  - a tela não recarregava as chaves depois de um erro;
+  - o terminal ganhava uma pilha de erro quando o cliente desistia no meio.
+
+  O que não coube virou a P14. **Régua de legibilidade:** funções curtas com nome de verbo e uma responsabilidade cada; HTML semântico (`main`, `form`, `fieldset`, `label`, `role="switch"`, aviso `role="status"` ao lado do botão); CSS por peça, com os tokens do site.
 
 ---
 

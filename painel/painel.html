@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="token-do-painel" content="{{TOKEN}}">
+<title>Painel das séries</title>
+<link rel="stylesheet" href="/tokens.css">
+<link rel="stylesheet" href="/painel.css">
+</head>
+
+<body>
+
+<main class="painel">
+
+  <header class="painel__cabeca">
+    <p class="painel__rotulo">Só nesta máquina · não publica nada</p>
+    <h1>Painel das séries</h1>
+    <p class="painel__lede">Desligue uma série pra ela sumir do menu e da home. Salvar grava o <code>site/dados/series.json</code> e roda o gerador; subir pro ar continua sendo com você.</p>
+  </header>
+
+  <form class="series" id="series">
+    <fieldset class="series__lista">
+      <legend class="series__legenda">As séries</legend>
+      <p class="series__carregando" id="carregando">Carregando as séries...</p>
+    </fieldset>
+    <div class="series__acoes">
+      <button class="series__salvar" type="submit">Salvar e gerar</button>
+      <p class="series__aviso" id="aviso" role="status"></p>
+    </div>
+  </form>
+
+  <section class="resultado" id="resultado" aria-labelledby="resultado-titulo" hidden>
+    <h2 id="resultado-titulo">O que mudou</h2>
+    <ul class="resultado__arquivos" id="arquivos"></ul>
+    <p class="resultado__rotulo">Pra subir, quando quiser:</p>
+    <pre class="resultado__comando"><code id="comando"></code></pre>
+  </section>
+
+</main>
+
+<script src="/painel.js"></script>
+
+</body>
+</html>

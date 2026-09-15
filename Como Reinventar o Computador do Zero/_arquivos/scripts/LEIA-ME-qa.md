@@ -64,6 +64,8 @@ o local por `file://`; capturas na pasta temporária, `QA_OUT` muda):
 | `qa-trava-animacao.js` | as animações seguem com a paleta antiga e o site com a do AFX, nos dois temas |
 | `qa-cards.js` | os cards gerados: lupa, legenda igual à do dado, lightbox que abre a mesma foto, Esc devolvendo o foco, Tab e Enter, botão e lupa sem nada por cima, nada estourando, em 5 tamanhos e 2 temas. `--grava` e `--compara` guardam e conferem a geometria antes e depois (régua 4) |
 | `qa-gera-cards.js` | a D4 numa cópia do site na pasta temporária: etapa nova só na MENU e no dado aparece no hub com lupa, card editado à mão reprova o `--confere`, e o gerador recusa dado que contradiz a MENU sem escrever nada. Não usa navegador nem `ar` |
+| `qa-series-ativas.js` | a decisão 10: desliga uma série no `site/dados/series.json`, roda o gerador e confere que ela some da home, do menu do site e do menu da animação; religa e confere que tudo volta byte a byte. Com `ar`, só confere o que o site publicado mostra |
+| `qa-painel-series.js` | o painel local (`painel/servidor.js`): as recusas (sem token, Origin ou Host estranhos, série inventada, valor que não é booleano, corpo gigante), desligar e religar pelo painel, a página no navegador e que nada responde fora do `127.0.0.1`. Os arquivos do site voltam ao que eram no fim |
 | `qa-componente-card-img-fixa.js` | monta o componente `card-img-fixa` só com o que está no `.md` da pasta de componentes e mede |
 
 ## Os cards do site (Etapa 6, desde 15/09/2026)
