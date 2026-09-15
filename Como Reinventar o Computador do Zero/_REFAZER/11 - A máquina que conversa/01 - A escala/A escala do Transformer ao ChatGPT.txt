@@ -1,0 +1,7 @@
+Titulo: A escala do Transformer ao ChatGPT
+Notebook: 11-01-A escala
+
+Descricao:
+A Escala inaugura uma nova fase da série documental sobre a evolução da computação, focando no desenvolvimento dos modelos de linguagem entre dois mil e dezessete e dois mil e vinte e dois. O texto detalha como a arquitetura Transformer permitiu que o hardware e o software impulsionassem um ao outro, resultando em máquinas capazes de conversar. Através de uma ordem cronológica, a narrativa apresenta marcos como o surgimento do GPT e do BERT, destacando as pessoas fundamentais por trás dessas criações. A tese central defende que o aumento massivo na quantidade de dados e na capacidade de processamento revelou habilidades imprevistas nos programas, sem a necessidade de nova programação. O roteiro enfatiza as leis de escala, que transformaram o crescimento da inteligência artificial em uma ciência previsível baseada em infraestrutura. Por fim, o conteúdo prepara o terreno para os próximos episódios, que explorarão os centros de processamento e o treinamento especializado dessas ferramentas.
+
+Link: https://notebook.google.com/notebook/2cba38dd-1774-4c49-bd9b-f36def37f176

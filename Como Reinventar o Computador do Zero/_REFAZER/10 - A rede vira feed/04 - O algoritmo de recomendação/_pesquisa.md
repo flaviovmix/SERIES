@@ -211,3 +211,29 @@ causalidade.
 ## Gravações
 
 (preencher a cada gravação)
+
+## O destino do trabalho de cada um (conferido em 08/09/2026)
+
+A ficha passou a fechar com o que a pessoa foi fazer, em vez da causa da morte. Levantado
+por busca, com fonte e data.
+
+| Pessoa | O que a ficha diz | Base |
+|---|---|---|
+| Reed Hastings | "vivo em 2026, quando saiu do conselho da Netflix" | saiu na assembleia de junho de 2026; está no conselho da Anthropic desde maio de 2025 |
+| Geoffrey Hinton | "vivo em 2026, dando aula em Toronto" | professor emérito na Universidade de Toronto; saiu do Google em maio de 2023 |
+| Mark Zuckerberg | "vivo em 2026, ainda no comando da mesma empresa" | segue como executivo-chefe da Meta |
+| Eli Pariser | "tocando uma organização que constrói praças digitais de bairro" | codiretor da New_ Public |
+| Salar Kamangar | ⚠️ **"deixou o YouTube em 2014"** e nada mais | **não confirmei** o que faz hoje |
+| Susan Wojcicki | "morreu em 2024, quando já tinha saído do YouTube havia um ano e meio" | renunciou em 16/02/2023, morreu em 09/08/2024 |
+| Jeff Dean | "vivo em 2026, quando saiu do Google depois de 27 anos e abriu empresa de pesquisa própria" | saiu em **agosto de 2026** pra fundar a Discovery Loop |
+
+⚠️ **Três armadilhas que a pesquisa pegou:**
+
+1. **Jeff Dean é a mais perigosa.** Qualquer roteiro escrito antes de agosto de 2026 o
+   coloca como cientista-chefe do Google DeepMind. Está errado desde 05/08/2026.
+2. **Kamangar é campo minado.** Os únicos sites que dizem que ele ainda é executivo do
+   YouTube são fazendas de conteúdo repetindo o cargo de 2014. O roteiro proíbe dizer em que
+   ele trabalha agora.
+3. **Wojcicki tem dois erros simétricos.** "Morreu comandando o YouTube" é falso: tinha
+   saído havia um ano e meio. Mas "tinha largado o Google" também é falso: continuou como
+   conselheira da Alphabet. A frase da ficha fica no meio, dizendo só o que é seguro.

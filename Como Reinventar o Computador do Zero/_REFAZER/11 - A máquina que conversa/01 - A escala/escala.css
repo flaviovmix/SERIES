@@ -1,0 +1,56 @@
+/* escala: as duas praticas do episodio 11.01 (a reta das leis de escala e o
+   exemplo dentro da pergunta). So o miolo e daqui; a moldura (painel, legenda,
+   total, botoes) e do painel.css da base. Carrega depois da base. */
+
+/* tela 7: a ficha na coluna da esquerda e o painel ocupando o resto */
+.pratica-lado { flex: 1 1 auto; min-width: 0; }
+.pratica-lado .painel { margin-top: 0; max-width: none; }
+
+/* a reta: o grafico em svg, o controle deslizante embaixo e as paradas conhecidas */
+.reta { display: grid; gap: 12px; }
+.reta svg { width: 100%; height: auto; display: block; }
+.reta .eixo { stroke: var(--line); stroke-width: 1; }
+.reta .grade { stroke: var(--line); stroke-width: 1; stroke-dasharray: 3 5; }
+.reta .linha { stroke: var(--accent); stroke-width: 3; fill: none; stroke-linecap: round; }
+.reta .ponto { fill: var(--accent-vivo); stroke: var(--ground); stroke-width: 3; }
+.reta .parada { fill: var(--ink-soft); }
+.reta text { font-family: var(--fonte-mono); font-size: 11px; fill: var(--ink-soft); }
+/* a largura e a margem esquerda do controle vem do escala.js, medidas pra o botao
+   correr embaixo da reta; a fileira de rotulos que existia embaixo dele saiu (11/09):
+   repetia os do eixo e nao batia com a grade */
+.reta input[type="range"] { display: block; margin-top: 2px; margin-bottom: 0; accent-color: var(--accent); }
+
+/* o total da reta: o numero com o rotulo embaixo, e o tamanho e o modelo a direita,
+   em duas linhas. Antes o texto corria colado no numero e quebrava torto no telefone
+   (print dele em 11/09) */
+.reta__total { align-items: center; gap: 14px; }
+.reta__erro { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; }
+.reta__rotulo { font-family: var(--fonte-mono); font-size: 11px; letter-spacing: .04em; color: var(--ink-soft); margin-top: 7px; }
+.reta__total .meta { text-align: right; min-width: 0; line-height: 1.5; }
+.reta__tamanho, .reta__modelo { display: block; }
+.reta__modelo { color: var(--accent); font-weight: 600; }
+
+/* o exemplo: tres pares prontos e o quarto pra completar */
+.exemplo { display: grid; gap: 10px; max-width: 520px; margin: 0 auto; }
+.exemplo .par {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  font-family: var(--fonte-mono); font-size: 17px;
+  padding: 9px 16px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--ground);
+}
+.exemplo .par .seta { color: var(--ink-soft); }
+.exemplo .par.alvo { border-color: var(--accent); border-width: 2px; }
+.exemplo .par.certo { border-color: var(--ok); }
+.exemplo .par.errado { border-color: var(--flag); }
+.exemplo input {
+  font: inherit; font-family: var(--fonte-mono);
+  border: 0; border-bottom: 2px solid var(--accent); background: none;
+  color: var(--ink); width: 10ch; text-align: right; outline: none;
+}
+.exemplo input:focus { border-bottom-color: var(--accent-vivo); }
+
+/* ---- apertos, no fim da folha de proposito ---- */
+@media (max-width: 700px) {
+  .exemplo .par { font-size: 15px; padding: 8px 12px; }
+  .exemplo input { width: 8ch; }
+}

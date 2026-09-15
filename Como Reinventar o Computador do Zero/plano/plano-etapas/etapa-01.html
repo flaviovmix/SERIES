@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Etapa 01 &middot; Como Reinventar o Computador do Zero</title>
+<title>Etapa 01 &middot; Do Ábaco à IA (pasta e URLs: &quot;Como Reinventar o Computador do Zero&quot;)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -15,7 +15,7 @@
 <div class="wrap wrap--etapa">
 
   <header class="head">
-    <p class="eyebrow"><a href="../plano-visao.html">&larr; Plano Como Reinventar o Computador do Zero</a> &middot; etapa 01 de 10</p>
+    <p class="eyebrow"><a href="../plano-visao.html">&larr; Plano Do Ábaco à IA (pasta e URLs: &quot;Como Reinventar o Computador do Zero&quot;)</a> &middot; etapa 01 de 12</p>
     <h1>Contar antes das máquinas</h1>
   </header>
 
@@ -30,6 +30,14 @@
     <article class="corpo">
 <p>Antes de qualquer máquina, duas invenções: um jeito de <strong>mover</strong> quantidade (o ábaco) e um jeito de <strong>escrever</strong> quantidade (o zero e o posicional).</p>
 <p>A <strong>Anticítera</strong> (~100 a.C.) é antiguidade e caberia aqui, mas mora na 1ª metade do ep <code>01</code> da etapa 2 — ver a nota do corte abaixo. A etapa 1 a cita como ponte.</p>
+<h3>O schoty na capa e a haste de quatro no fim (09/09/2026) — 🟢 FEITO E NO AR no mesmo dia</h3>
+<p><strong>Executado em 09/09 (&quot;Deploy&quot;):</strong> <code>img/schoty.jpg</code> (corte fechado na moldura, 864×985, 134 KB) na capa com a legenda &quot;O schoty, o ábaco russo: dez contas por haste, cada uma valendo um · Wikimedia Commons, domínio público&quot;; a frase da capa voltou a apontar pra foto (&quot;usam o modelo mais simples, <strong>o da foto</strong>&quot;); no fim, <strong>5º card &quot;Schoty 🇷🇺&quot;</strong> na grade <code>.mundo</code> (a grade é auto-fit, coube sem CSS novo) com a curiosidade da haste de quatro e das contas escuras; linha no <code>img/CREDITOS.md</code>. De brinde, <code>site/css/animacao/telas.css</code>: <code>.capa-modelo img</code> de 66vh pra <strong>60vh</strong>, porque com foto em pé a legenda sumia atrás do tocador. ⚠️ Achado no caminho: o servidor local <code>python -m http.server</code> <strong>não atende Range</strong>, então o seek do áudio volta a 0 e o tocador devolve a tela 1 — navegação de telas só se testa no ar (nginx) ou ligando a classe <code>active</code> na mão. O texto abaixo é o registro do pedido, como foi guardado antes de executar.</p>
+<h4>O pedido, como foi guardado</h4>
+<p><strong>O que já está no ar (09/09):</strong> a capa do Ábaco mostra uma <strong>foto real</strong> no lugar do modelo 3D embutido — hoje o suanpan chinês (<code>img/abaco-real.jpg</code>) — e o 3D abre pelo botão (declarado no próprio botão, <code>data-modelo</code>; o <code>lightbox.js</code> aceita as duas formas). A frase da capa virou &quot;usam um modelo <strong>mais simples que o da foto</strong>&quot;.</p>
+<p><strong>O que o Flávio pediu e ficou guardado aqui (&quot;deixa salvo aí no plano&quot;):</strong></p>
+<ol><li><strong>Trocar a foto da capa pelo ábaco mais simples</strong>, o modelo que a página ensina (uma conta = uma unidade). Escolhido: <strong><code>Schoty abacus.jpg</code></strong> do Commons (domínio público, 919×1064, retrato, fundo de pano) — o <strong>schoty</strong>, o ábaco russo, dez contas por haste, sem a conta de cinco. Ele viu a foto, perguntou da haste de quatro e mandou <strong>deixar essa mesma</strong>, com a haste. Cópia baixada em <code>scratchpad/abacos/schoty.jpg</code> da sessão de 09/09; baixar de novo com <code>_arquivos/scripts/baixa-wikimedia.sh &quot;Schoty_abacus.jpg&quot; schoty.jpg &lt;img/&gt;</code> (é PD, mas creditar &quot;Wikimedia Commons, domínio público&quot; na legenda, como o projeto faz). Duas outras candidatas vistas e descartadas: <code>Abacus - Meshkov house.jpg</code> (CC0, 3653×2922, boa mas em perspectiva e com panelas no fundo) e <code>Abacus of State Department Store.jpg</code> (vitrine com reflexo).</li><li>Ao trocar, <strong>reescrever a frase da capa</strong>: a foto passa a SER o modelo simples (&quot;usam o modelo mais simples, o da foto: uma conta vale uma unidade; o chinês e o japonês, que aparecem mais adiante, têm uma barra e a conta de cima vale cinco&quot;).</li><li>Registrar a foto no <code>img/CREDITOS.md</code> do episódio.</li><li>A foto é retrato: na <code>.capa-modelo</code> ela cabe em altura (<code>max-height: min(66vh, 600px)</code>), conferir no telefone.</li></ol>
+<ol><li><strong>A curiosidade no fim do episódio</strong> (última tela, <code>step--mundo</code>, DENTRO dela — a contagem de telas não muda, REGRA DURA DAS TELAS): um card ou <code>nota-cena</code> no espírito *&quot;ficou curioso com a haste de quatro contas do ábaco da capa?&quot;*. O que explicar, nas palavras dele: <strong>é a haste das frações</strong> — cada conta vale um quarto (¼, ½, ¾) — e ela serve de <strong>divisória</strong>: as hastes acima contam a parte inteira (rublos, ou unidades/dezenas/centenas), as de baixo os copeques. As <strong>duas contas escuras no meio</strong> de cada haste são marca pro olho, pra ver de relance se passou de cinco (mesmo corte de cinco em cinco do risco da tela 2 e da nota que já existe nessa tela). Motivo dele: *&quot;se alguém passar por esse ábaco pela internet, a pessoa já sabe&quot;*. É texto de página, não áudio: o áudio do <code>01</code> não é regravado.</li></ol>
+<ol><li>Depois: <code>qa-foto-abaco.js</code> (scratchpad de 09/09; recriar se sumiu) confere capa com foto, os dois botões abrindo o 3D e o transistor intacto; subir com o <code>sobe-barra.sh</code> (site/ + animações no ar) e conferir no ar.</li></ol>
     </article>
 
   <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>tudo publicado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>parcial: alguns episódios publicados</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>não iniciado</span></span></div>
@@ -38,7 +46,7 @@
 
   <footer>
     <span>plano-da-serie.md &middot; se&ccedil;&atilde;o &ldquo;Contar antes das máquinas&rdquo;</span>
-    <span>27.08.2026</span>
+    <span>14.09.2026</span>
   </footer>
 
 </div>

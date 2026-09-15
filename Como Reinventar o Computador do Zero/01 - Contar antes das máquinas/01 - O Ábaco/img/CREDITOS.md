@@ -11,6 +11,7 @@ de origem** — o que estava aqui foi reconstruído a partir das legendas da pr�
 | Arquivo | O que é | Fonte | Licença | Crédito obrigatório? |
 |---|---|---|---|---|
 | `tabua-uruk-numeros.jpg` | tábua de gesso com números arcaicos, Uruk Tardio (~3300 a.C.), British Museum | Commons, *British Museum Middle east 14022019 Gypsum tablet with archaic numbers Late Uruk Period 3667* | CC0 | Não |
+| `schoty.jpg` | o schoty, o ábaco russo (dez contas por haste, a haste de quatro das frações no meio) — **a capa** desde 09/09 e o card "Schoty" do fim | Commons, *Schoty abacus.jpg*, autor não informado; corte fechado na moldura, sem o pano em volta | Domínio público | Não (a legenda cita a fonte mesmo assim) |
 | `abaco-romano-gravura.jpg` | o ábaco romano de mão, gravura | Commons, *EB9 Fig 5 Roman Abacus*, Encyclopædia Britannica 9ª ed., vol. I | Domínio público | Não |
 | `abaco-real.jpg` | um suanpan de verdade, o ábaco chinês | Commons, *Chinese Suanpan Abacus.jpg*, Felix Winkelnkemper — **trocada em 29/08**, a anterior não tinha origem | CC BY-SA 4.0 | **Sim** — "foto: Felix Winkelnkemper, CC BY-SA 4.0" |
 | `soroban.jpg` | soroban com a mão movendo as contas | Commons, *Soroban.jpg* — **confirmada pixel a pixel** | CC BY-SA 3.0 | **Sim** — "foto: Kowloonese, CC BY-SA 3.0" |

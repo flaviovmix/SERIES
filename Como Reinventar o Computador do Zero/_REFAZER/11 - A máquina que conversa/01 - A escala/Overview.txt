@@ -1,0 +1,64 @@
+A ESCALA - CONTEXTO
+===================
+Documento curto de contexto para uso com NotebookLM.
+
+Primeiro episodio da etapa A MAQUINA QUE CONVERSA, a decima primeira etapa da serie Do Abaco
+a IA (a serie que reconstroi o computador do zero, do abaco em diante, uma peca por
+episodio). Este episodio cobre de 2017 a 2022, em ORDEM CRONOLOGICA, e conta a historia
+PELAS PESSOAS, com nome e ficha, usando cada passo pra mostrar como o hardware e o software
+melhoram um empurrando o outro.
+
+Por que este episodio existe: a etapa anterior terminou com a maquina que adivinha o que
+voce quer sem voce pedir, lendo o seu rastro, e perguntou: e se desse pra pedir, com as suas
+palavras, e a maquina responder? Esta etapa conta como isso ficou possivel. E este primeiro
+episodio conta a primeira peca: o modelo.
+
+A TESE: o mesmo desenho de 2017, o Transformer, treinado so pra adivinhar a proxima palavra,
+ficou mil vezes maior em cinco anos. O programa achado melhora so de ficar maior, e quem
+decide o tamanho e a placa e o dado, nao o programador.
+
+O fio, em doze passos:
+
+1. O mesmo desenho, mil vezes maior. Costura com o fim da etapa 9 (o Transformer) e com o
+   fim da etapa 10 (o texto e as placas que o feed deixou). Intervalo 2017-2022.
+2. 12/06/2017: "Attention is All You Need", oito autores do Google, Ashish Vaswani na
+   frente. Feito pra traduzir. O paper termina dizendo que querem testar em imagem, audio e
+   video; nao diz que o mesmo desenho, maior, serviria pra conversar.
+3. A tarefa: tapar a proxima palavra e adivinhar. O texto ja traz a resposta, entao nao
+   precisa de professor. A maquina le pedacos (tokens), nao palavras.
+4. 11/06/2018: GPT-1, OpenAI, Alec Radford na frente com Ilya Sutskever. Metade do desenho
+   (a que escreve pra frente), doze camadas, mais de 7.000 livros ineditos, um mes em oito
+   placas de video. Le primeiro, ajusta pra tarefa depois. Os 117 milhoes de pecas so sao
+   ditos no paper seguinte.
+5. 11/10/2018: BERT, Google, Jacob Devlin na frente. A outra metade do desenho, a que le:
+   adivinha palavras tapadas no meio, olhando os dois lados. 110 e 340 milhoes de pecas.
+   Treinado em TPU: 16 TPUs por quatro dias na versao grande.
+6. 14/02/2019: GPT-2, 1,5 bilhao de pecas, oito milhoes de paginas da web, 40 GB. Texto que
+   parecia de gente e tarefas que ninguem ensinou. A OpenAI segurou o modelo completo por
+   "preocupacao com usos maliciosos" e so liberou tudo em 05/11/2019.
+7. 23/01/2020: as leis de escala, dez autores da OpenAI, Jared Kaplan na frente, Dario
+   Amodei no fim. O erro cai numa reta (em escala logaritmica) quando modelo, texto e conta
+   crescem juntos, por sete ordens de grandeza. Da pra prever antes de gastar.
+8. 28/05/2020: GPT-3, 175 bilhoes de pecas, 31 autores, Tom Brown na frente. 300 bilhoes de
+   tokens: web filtrada, paginas recomendadas, livros, Wikipedia. Treinado em placas V100
+   num cluster que o paper diz ter sido fornecido pela Microsoft; a Microsoft tinha
+   anunciado esse supercomputador em 19/05/2020 (285 mil nucleos de CPU, 10 mil GPUs).
+9. O que apareceu so de crescer: exemplos dentro da propria pergunta (few-shot). O modelo
+   nao muda por dentro, so le os exemplos. Ninguem programou isso.
+10. 29/03/2022: Chinchilla, DeepMind, 22 autores, Jordan Hoffmann na frente. 70 bilhoes de
+   pecas lendo 1,4 trilhao de tokens ganha do Gopher de 280 bilhoes. Regra do paper: dobrou
+   o modelo, dobra o texto. A placa volta a mandar no software.
+11. 2021 e 2022: Codex (GPT-3 ajustado em codigo do GitHub; Copilot em 29/06/2021, paper em
+   07/07, API em 10/08) e a serie GPT-3.5 (texto e codigo de antes do fim de 2021, ajustada
+   pra seguir instrucao; text-davinci-003 em 28/11/2022). Em 30/11/2022 o ChatGPT e "ajustado
+   a partir de um modelo da serie GPT-3.5", nas palavras da OpenAI.
+12. Onde para: 2022, com o GPT-3.5 pronto. Balanco das pessoas, onde estavam em 2026, a
+   licao, e a pergunta que abre o proximo episodio: quem constroi o galpao?
+
+CUIDADOS: o paper do GPT-3 NAO agradece a Microsoft; ele so diz que o cluster foi
+"fornecido pela Microsoft". "Vinte tokens por parametro" nao e frase do paper do Chinchilla:
+e o que sai da tabela; a frase do paper e "dobrou o modelo, dobra o texto". Quatro pessoas
+centrais nao tem ano de nascimento publico (Kaplan, Devlin, Brown, Hoffmann) e entram sem
+idade. Todos os protagonistas estao vivos em 2026.
+
+Use este contexto apenas como apoio.

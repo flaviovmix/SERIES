@@ -1,0 +1,39 @@
+Inicie dizendo: Entrar Na Maquina De Longe
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Entrar Na Maquina De Longe.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este episodio e da etapa PRO MUNDO, a ultima etapa da serie JAVA WEB. O episodio anterior deu o panorama da etapa inteira, com as pecas que faltam pra um programa estar no ar; este pega a primeira delas. Nos capitulos anteriores a lista de tarefas ficou pronta e roda inteira na maquina do aluno. Agora ela vai sair dali, e o primeiro passo nao e mandar arquivo: e conseguir entrar na maquina que vai receber o programa.
+
+NAO CITAR NUMERO DE EPISODIO NEM DE ETAPA. Nada de "episodio tres" ou "etapa oito". Quando precisar retomar alguma coisa ja vista na serie, dizer "nos capitulos anteriores" ou "la atras".
+
+O AUDIO NAO DITA COMANDO LETRA POR LETRA. A animacao mostra os comandos escritos. O audio cita o nome deles (ssh, pwd, ls, whoami, exit, sudo) e diz o que cada um faz, sem soletrar caminho, sem ditar endereco e sem ler linha de terminal em voz alta.
+
+FOCO: um servidor e um computador comum, que fica ligado, tem endereco publico e NAO tem tela, entao tudo la dentro e texto. O SSH como um terminal seu cujos comandos executam na outra maquina, com texto cifrado indo e voltando, um cliente do seu lado e um programa esperando numa porta do lado de la. A pergunta da primeira conexao, o que ela quer dizer, e por que um aviso de identificacao trocada e motivo pra parar. Chave em vez de senha, e o porque: a porta e publica e programas varrem a internet testando senha o tempo todo, sem nada de pessoal. O par de chaves: publica instalada na maquina, privada nunca sai da sua e nunca e enviada; quem tem o arquivo entra no seu lugar. Dentro da maquina: o prompt muda de nome, as tres perguntas de sempre (quem eu sou, onde eu estou, o que tem aqui) e onde as coisas moram no Linux. E o cuidado: root pode tudo, o comando que apaga nao pergunta, e comando colado sem entender num terminal de servidor e a tese da serie explodindo em segundos em vez de meses.
+
+A tela 4 (chave em vez de senha) e separada da 3 (o que o SSH faz) de proposito: uma responde o que o programa e, a outra responde como voce prova que e voce. Pedir o Proximo entre as duas, sem emendar.
+
+TOM: nada de sermao e nada de susto. A tela 6 fala do que quebra, mas o objetivo e criar habito, nao medo de mexer. Nao tratar servidor proprio como coisa de gente avancada: a noticia boa do episodio e que e um computador comum.
+
+A pagina tem 7 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 6 vezes, sem juntar duas telas num bloco so. O aviso da pagina na abertura e um LEMBRETE de uma frase, nao uma explicacao: nao ensinar a usar a pagina. Na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+
+No encerramento, dizer o que transfere (SSH nao e de Java: e como se entra em qualquer maquina Linux, e o par de chaves e o mesmo mecanismo ja usado pra mandar codigo pro repositorio remoto), e fechar com o gancho pro episodio seguinte, sobre o que exatamente se leva pra dentro da maquina e o que nao pode ir junto, sem entregar a resposta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Entrar Na Maquina De Longe.txt. NAO invente analogias novas. A unica autorizada e a fechadura e a chave, so pra explicar o par de chaves, com o limite dito em voz alta no roteiro: numa porta de verdade quem olha a fechadura consegue fabricar a chave, e aqui nao consegue, porque quem garante isso e matematica.
+
+Use tambem o Overview.txt como contexto curto.

@@ -1,6 +1,6 @@
 # Série: JAVA WEB — estudar programação na era dos modelos de linguagem
 
-**Estado:** arco proposto em 04/09/2026 (3ª versão, depois que o Flávio fechou a tese da série). Nenhum episódio gravado ainda.
+**Estado:** arco proposto em 04/09/2026 (3ª versão, depois que o Flávio fechou a tese da série). Etapa 1 no ar; etapa 2 com os 4 áudios prontos; etapa 14 aberta fora de ordem em 09/09 (ver o desvio na seção dela).
 **Formato:** episódios NotebookLM via `/criar-podcast` (trio `Overview.txt` + `_NotebookLM_` + prompt por episódio), cada um com sua `animacao.html`, no mesmo molde da série *Como Reinventar o Computador do Zero*.
 **Fonte:** conhecimento próprio + o código real que o Flávio já mexe (XTtreinamento/Jasap, Nexus, KIDS). Não há vídeo de origem: cada roteiro nasce aqui.
 **Capa:** `site/img/serie-java-web.webp` (Flow, projeto `0a1413ec-a180-4346-9d4b-f3f18cdb9643`; original em `_arquivos/capa-java-01.png`). Aprovada em 04/09 mesmo sendo clara enquanto as outras são escuras.
@@ -54,10 +54,10 @@ Uma pergunta única atravessa tudo: **como uma lista de tarefas escrita num pape
 | 11 | **Arrumando a bagunça** | o mesmo app, agora legível | 3 | 🔴 |
 | 12 | **O banco entra** | sobrevive quando o servidor desliga | 5 | 🔴 |
 | 13 | **O framework assume** | o mesmo app em Spring Boot | 4 | 🔴 |
-| 14 | **Pro mundo** | no ar, num endereço de verdade | 5 | 🔴 |
+| 14 | **Pro mundo** | no ar, num endereço de verdade | 7 | 🟠 |
 
 Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
-**Placar:** 0 publicados · 49 pela frente (fora os 12 extras).
+**Placar:** 0 publicados · 51 pela frente (fora os 12 extras).
 
 ---
 
@@ -241,13 +241,17 @@ Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
 
 *Roda na sua máquina não é o fim.* A etapa que quase toda trilha deixa de fora, e que é onde a bomba-relógio da etapa 1 costuma explodir.
 
+**Desvio registrado (09/09/2026):** a etapa foi aberta **fora de ordem**, com a série ainda na etapa 2, porque surgiu necessidade real de ensinar acesso a servidor agora. Ganhou **dois** episódios na frente do "Empacotar": a aula de SSH que motivou o desvio e, na frente dela, o panorama da etapa, que o dono pediu depois de ver que a introdução tinha virado mecânica de SSH em vez de visão geral. Os cinco originais desceram duas posições e a etapa passou a ter 7 episódios. **Duas regras que nasceram daqui:** (1) episódio gravado fora de ordem **não cita número de episódio nem de etapa** — retoma o que já foi visto como "nos capítulos anteriores", e o ouvinte não percebe o salto; (2) **etapa abre com panorama**, não com a primeira peça.
+
 | Pasta | Episódio | O que cobre | Status |
 |---|---|---|---|
-| `01` | **Empacotar** | build, dependência, o que vai junto e o que fica de fora (senha, sobretudo) | 🔴 |
-| `02` | **Subir num servidor de verdade** | uma máquina Linux, uma porta, um serviço que sobe sozinho quando reinicia | 🔴 |
-| `03` | **HTTPS e o cadeado** | o que o cadeado prova, o que ele não prova, e o proxy na frente do Java | 🔴 |
-| `04` | **Quando quebra** | log, stack trace, o 500 do usuário, e o que dizer pra ele sem entregar o servidor | 🔴 |
-| `05` | **Subir de novo sem medo** | o deploy repetível: o mesmo comando toda vez, e como voltar pra versão anterior quando dá errado | 🔴 |
+| `01` | **O que falta pra estar no ar** | (09/09) o mapa da etapa, sem montar nada: o que muda quando o programa deixa de ser só seu e o que "produção" quer dizer; as sete peças (máquina, acesso, pacote, serviço, endereço, cadeado, registro); o percurso de uma visita, do dedo da pessoa até a resposta; e os três tropeços da primeira publicação | 🟠 planta + trio prontos, áudio a gravar |
+| `02` | **Entrar na máquina de longe** | (09/09) o que é um servidor (computador comum, ligado sempre, sem tela), o que o SSH faz, chave em vez de senha e por quê, o primeiro login e o "onde eu estou", e o que não fazer logado como root. Só a entrada: subir e ligar o programa é o resto da etapa | 🟠 áudio pronto (13,8 min, 7/7 telas, 6 pedidos de Próximo); falta animação, página e deploy |
+| `03` | **Empacotar** | build, dependência, o que vai junto e o que fica de fora (senha, sobretudo) | 🔴 |
+| `04` | **Subir num servidor de verdade** | uma máquina Linux, uma porta, um serviço que sobe sozinho quando reinicia | 🔴 |
+| `05` | **HTTPS e o cadeado** | o que o cadeado prova, o que ele não prova, e o proxy na frente do Java | 🔴 |
+| `06` | **Quando quebra** | log, stack trace, o 500 do usuário, e o que dizer pra ele sem entregar o servidor | 🔴 |
+| `07` | **Subir de novo sem medo** | o deploy repetível: o mesmo comando toda vez, e como voltar pra versão anterior quando dá errado | 🔴 |
 
 **Fecha quando:** a lista de tarefas dele está no ar, num endereço que outra pessoa consegue abrir, e ele consegue subir uma correção sem consultar anotação.
 **Transfere:** empacotar, servir, cifrar e observar é o mesmo problema em qualquer stack.

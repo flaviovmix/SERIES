@@ -1,5 +1,9 @@
 # Modelos 3D — o que falta fazer
 
+> Modelo novo que for usado **deitado no telefone**: siga o padrão de
+> [_padrao-deitado.md](_padrao-deitado.md) — a arte deita sozinha, os controles vão
+> pro painel lateral e o valor fica flutuando. Confira com `node _qa-deitado.js`.
+
 Levantamento de 27/08/2026, tirado episódio por episódio do `plano-da-serie.md`. Cada linha é um objeto que a animação daquele episódio pediria em 3D.
 
 **Placar: 46 objetos — 8 prontos e 38 a fazer.** Dos 39, **30 são essenciais** (o episódio é sobre aquele objeto e sem ele a tela central fica sem nada) e **9 são opcionais** (o episódio se resolve com foto do Wikimedia ou tela 2D). **11 dos 39 são de conceito**, um tipo que a gente ainda não fez nenhum.
@@ -13,6 +17,7 @@ Legenda: 🟢 pronto · 🔴 essencial · 🟠 opcional, decisão do Flávio · 
 | Objeto | Episódio | Status |
 |---|---|---|
 | Ábaco (fichas, hastes, vai-um) | `01 - O Ábaco` | 🟢 `abaco.html` |
+| Ábaco binário (oito bits, peso por haste) | `_EXTRAS/04 - O Sistema Binário` | 🟢 `abaco-binario.html`, no ar em 09/09/2026 com o padrão deitado |
 | Tabuleiro romano com *calculi* + a mesma conta em algarismo posicional | `02 - O Zero e os Números` | 🟠 |
 
 ## Etapa 2 — Séculos sem máquina

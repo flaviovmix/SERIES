@@ -6,12 +6,13 @@
 <title>O compilador — Etapa 06</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Episodio 06-04. A pasta esta em _REFAZER, um nivel mais fundo que o normal:
      por isso os caminhos tem quatro ../ em vez de tres. -->
 <link rel="stylesheet" href="../../../../site/css/tokens.css">
 <link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/menu.css">
 <link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
 <link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
 <link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
@@ -23,23 +24,6 @@
 <body>
 
 <header class="topo">
-  <div><a class="voltar" href="../../../../site/etapas/etapa-06.html">← voltar pra etapa</a></div>
-  <div class="tocador">
-    <audio preload="metadata" src="A%20m%C3%A1quina%20que%20aprendeu%20a%20traduzir%20c%C3%B3digo.m4a" data-duracao="755"></audio>
-    <img class="tocador__capa" src="img/cartao-real.jpg" alt="">
-    <div class="tocador__id">
-      <div class="tocador__titulo">A máquina que aprendeu a traduzir código</div>
-      <div class="tocador__fonte">A máquina que liga · 04 · O compilador</div>
-    </div>
-    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
-    <button class="tocador__play" aria-label="tocar">▶</button>
-    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
-    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="755" aria-valuenow="0">
-      <div class="tocador__cheio"></div>
-      <div class="tocador__marcas"></div>
-    </div>
-    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">12:35</span></div>
-  </div>
 </header>
 
 <main>
@@ -217,15 +201,37 @@ diferentes</div>
 
 </main>
 
+  <div class="tocador">
+    <audio preload="metadata" src="A%20m%C3%A1quina%20que%20aprendeu%20a%20traduzir%20c%C3%B3digo.m4a" data-duracao="755"></audio>
+    <img class="tocador__capa" src="img/cartao-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A máquina que aprendeu a traduzir código</div>
+    </div>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="755" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__controles">
+      <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+      <div class="tocador__transporte">
+        <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+        <button class="tocador__play" aria-label="tocar">▶</button>
+        <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+      </div>
+      <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">12:35</span></div>
+    </div>
+  </div>
+
 <footer class="navegacao">
-  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
   <div class="navegacao__meio">
     <div class="bolinhas" role="group" aria-label="telas"></div>
     <div class="contador"></div>
   </div>
-  <button class="nav-btn navegacao__proximo">Próximo →</button>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
 </footer>
 
+<script src="../../../../site/js/menu.js"></script>
 <script src="../../../../site/js/animacao/telas.js"></script>
 <script src="../../../../site/js/animacao/lightbox.js"></script>
 <script src="../../../../site/js/animacao/tocador.js"></script>

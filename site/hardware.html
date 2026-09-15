@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hardware</title>
+<meta name="description" content="Montar do zero, no simulador, a caixa d'água que se cuida sozinha: sensor, bomba, alarme, painel no computador, WiFi e placa própria, com Arduino e ESP32.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/cabecalho.css">
+<link rel="stylesheet" href="css/secao.css">
+<link rel="stylesheet" href="css/capitulo.css">
+<link rel="stylesheet" href="css/audio.css">
+<link rel="stylesheet" href="css/animacao/lightbox.css">
+</head>
+
+<body>
+
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <symbol id="ico-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap wrap--vitrine">
+
+  <header class="head">
+    <p class="eyebrow"><a href="index.html">&larr; Séries</a> &middot; Série em 5 etapas &middot; do LED que pisca à placa própria</p>
+    <h1>Hardware</h1>
+    <div class="audio">
+      <audio controls preload="none" src="../HARDWARE/00%20-%20A%20série%20inteira/Como%20as%20máquinas%20tomam%20decisões.m4a">
+        Seu navegador não toca áudio aqui.
+      </audio>
+      <p class="audio__ficha"><span>A série inteira em áudio</span><span>14 min</span></p>
+    </div>
+    <p class="lede">Todo aparelho que parece esperto é a mesma coisa por dentro: um chip pequeno que <strong>lê sensores, decide e mexe em alguma coisa</strong>, num laço que não para nunca. Aqui a gente monta um desses do zero, peça por peça, no simulador: <strong>a caixa d'água que se cuida sozinha</strong>. Não precisa comprar nada pra acompanhar.</p>
+    <div class="bars" role="presentation"></div>
+  </header>
+
+  <section>
+    <header class="secao">
+      <p class="secao__contexto">A jornada em cinco etapas</p>
+      <h2>Cada etapa deixa a mesma caixa d'água mais esperta.</h2>
+      <p class="secao__nota">Um aparelho só, do começo ao fim: nasce como um LED piscando e termina com placa própria. Todo episódio tem um circuito pra mexer na página e o circuito completo no simulador, e fecha dizendo onde aquilo aparece fora da bancada.</p>
+    </header>
+
+    <div class="grade">
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 01 · O cérebro e os sentidos · ilustração" aria-label="Ampliar a arte da etapa 01, O cérebro e os sentidos"><img class="cap__img" src="img/hardware-etapa-01.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">01</span><span class="cap__lupa" aria-hidden="true"><svg><use href="#ico-lupa"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">liga a bomba sozinha</p>
+          <h3>O cérebro e os sentidos</h3>
+          <p class="cap__frase">Um chip que lê, decide e age.</p>
+          <p class="cap__resumo">O que é um microcontrolador e o laço que não para. O LED que diz "estou vivo", a boia que funciona como botão, a bomba que é um relé, o trimpot que mede a água e a decisão que liga tudo sozinha.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">a etapa inteira em áudio &middot; 13 min</span>
+            <a class="cap__botao" href="etapas/hardware-01.html" aria-label="Abrir a etapa 01, O cérebro e os sentidos">Ouvir a etapa</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 02 · O controlador fica esperto · ilustração" aria-label="Ampliar a arte da etapa 02, O controlador fica esperto"><img class="cap__img" src="img/hardware-etapa-02.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">02</span><span class="cap__lupa" aria-hidden="true"><svg><use href="#ico-lupa"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">sensor de verdade e proteção</p>
+          <h3>O controlador fica esperto</h3>
+          <p class="cap__frase">Sai o trimpot, entra o eco.</p>
+          <p class="cap__resumo">O sensor de ultrassom mede a água pelo eco, um visor mostra o nível, o motor de passo abre o registro de pouquinho, e o controlador aprende a fazer duas coisas ao mesmo tempo sem travar.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">6 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 03 · O painel da portaria · ilustração" aria-label="Ampliar a arte da etapa 03, O painel da portaria"><img class="cap__img" src="img/hardware-etapa-03.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">03</span><span class="cap__lupa" aria-hidden="true"><svg><use href="#ico-lupa"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">tudo numa tela do computador</p>
+          <h3>O painel da portaria</h3>
+          <p class="cap__frase">O zelador não quer subir no telhado.</p>
+          <p class="cap__resumo">O controlador conversa com o computador por um fio, uma letra de cada vez, e um painel montado com blocos mostra o nível, acende a luz da bomba e manda comando de volta.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">3 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 04 · A caixa d'água no WiFi · ilustração" aria-label="Ampliar a arte da etapa 04, A caixa d'água no WiFi"><img class="cap__img" src="img/hardware-etapa-04.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">04</span><span class="cap__lupa" aria-hidden="true"><svg><use href="#ico-lupa"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">o celular abre a página</p>
+          <h3>A caixa d'água no WiFi</h3>
+          <p class="cap__frase">Troca o cérebro, ganha a rede.</p>
+          <p class="cap__resumo">O ESP32 faz o mesmo que o Arduino e ainda fala WiFi: a caixa d'água vira uma página na rede, com endereço fixo, dois núcleos dividindo o trabalho e um relatório que qualquer programa entende.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">6 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 05 · A placa própria · ilustração" aria-label="Ampliar a arte da etapa 05, A placa própria"><img class="cap__img" src="img/hardware-etapa-05.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">05</span><span class="cap__lupa" aria-hidden="true"><svg><use href="#ico-lupa"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">do simulador pra fábrica</p>
+          <h3>A placa própria</h3>
+          <p class="cap__frase">Do desenho à placa verde.</p>
+          <p class="cap__resumo">O circuito sai do simulador e vira desenho de placa: quem liga em quem, onde fica cada peça, por onde passa cada trilha e o arquivo que a fábrica usa pra produzir.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">4 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</div>
+
+<script src="js/menu.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/animacao/lightbox.js"></script>
+
+</body>
+</html>

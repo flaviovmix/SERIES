@@ -1,0 +1,7 @@
+Titulo: Como a escala criou o ChatGPT
+Notebook: 11-01-A escala
+
+Descricao:
+Este texto fornece um panorama histórico detalhado sobre a evolução da inteligência artificial generativa entre os anos de 2017 e 2022. A narrativa foca no desenvolvimento da arquitetura Transformer e como o aumento massivo da escala de hardware e dados permitiu que máquinas passassem a conversar de forma fluida. O conteúdo destaca marcos fundamentais, como o lançamento do GPT-1, o surgimento das leis de escala e a criação do ChatGPT. Através de uma cronologia centrada em pesquisadores e instituições, o material demonstra como a capacidade computacional e o treinamento em volumes gigantescos de texto moldaram os modelos atuais. Essa transição revela que o desempenho da tecnologia melhora drasticamente conforme o sistema cresce, muitas vezes manifestando habilidades imprevistas pelos próprios programadores. Por fim, o documento serve como um guia contextual para entender a integração entre o software avançado e a infraestrutura física necessária para sustentá-lo.
+
+Link: https://notebook.google.com/notebook/41777d17-d77c-4e79-85b8-eaa4b8fcf909

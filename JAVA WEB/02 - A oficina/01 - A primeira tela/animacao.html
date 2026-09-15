@@ -7,7 +7,7 @@
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Animação do episódio 2.1 da série JAVA WEB, montada em 06/09/2026 a partir da
      _planta.md, ANTES do áudio: o Flávio pediu que o projeto real aparecesse na
@@ -17,6 +17,7 @@
      ao corte real. A base de css/js vem toda de site/. -->
 <link rel="stylesheet" href="../../../site/css/tokens.css">
 <link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
 <link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
 <link rel="stylesheet" href="../../../site/css/animacao/telas.css">
 <link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
@@ -29,23 +30,6 @@
 
 <header class="topo">
   <div><a class="voltar" href="../../../site/javaweb.html">← voltar pra série</a></div>
-  <div class="tocador">
-    <!-- data-duracao em segundos: vale até o navegador ler o metadata do áudio -->
-    <audio preload="metadata" src="A vitrine visual antes do Java.m4a" data-duracao="1297"></audio>
-    <img class="tocador__capa" src="../../../site/img/serie-java-web.webp" alt="">
-    <div class="tocador__id">
-      <div class="tocador__titulo">A vitrine visual antes do Java</div>
-      <div class="tocador__fonte">Java Web · etapa 2 · episódio 1</div>
-    </div>
-    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
-    <button class="tocador__play" aria-label="tocar">▶</button>
-    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
-    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1297" aria-valuenow="0">
-      <div class="tocador__cheio"></div>
-      <div class="tocador__marcas"></div>
-    </div>
-    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">21:37</span></div>
-  </div>
 </header>
 
 <main>
@@ -219,16 +203,39 @@ body  { background: var(--fundo); }
 
 </main>
 
+  <div class="tocador">
+    <!-- data-duracao em segundos: vale até o navegador ler o metadata do áudio -->
+    <audio preload="metadata" src="A vitrine visual antes do Java.m4a" data-duracao="1297"></audio>
+    <img class="tocador__capa" src="../../../site/img/serie-java-web.webp" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A vitrine visual antes do Java</div>
+    </div>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1297" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__controles">
+      <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+      <div class="tocador__transporte">
+        <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+        <button class="tocador__play" aria-label="tocar">▶</button>
+        <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+      </div>
+      <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">21:37</span></div>
+    </div>
+  </div>
+
 <footer class="navegacao">
-  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
   <div class="navegacao__meio">
     <div class="bolinhas" role="group" aria-label="telas"></div>
     <div class="contador"></div>
   </div>
-  <button class="nav-btn navegacao__proximo">Próximo →</button>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
 </footer>
 
 <!-- a base, nesta ordem; depois o que é deste episódio -->
+<script src="../../../site/js/menu.js"></script>
 <script src="../../../site/js/animacao/telas.js"></script>
 <script src="../../../site/js/animacao/tocador.js"></script>
 <script src="episodio.js"></script>

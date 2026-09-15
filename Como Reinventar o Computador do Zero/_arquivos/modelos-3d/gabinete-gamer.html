@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <title>Gabinete gamer · laboratório 3D</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./_visualizador-pecas.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+  </script>
+  <link rel="stylesheet" href="./gabinete-gamer.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Voltar à galeria de modelos 3D"><span class="brand-mark" aria-hidden="true">S</span> SEIRES <span class="brand-lab">/ LAB</span></a>
+      <span class="top-caption">HARDWARE, POR TODOS OS ÂNGULOS.</span>
+      <a class="back-link" href="./index.html">↗ Galeria 3D</a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <div><p class="eyebrow"><span class="live-dot"></span> ATX · RGB · VIDRO</p><h1 id="title">Gabinete <span>gamer</span><span class="title-dot">.</span></h1></div>
+        <p class="intro-copy">Vidro, metal e cada conexão à vista.<br>Abra o gabinete e explore o computador por dentro.</p>
+      </section>
+      <div class="workspace">
+        <section class="viewer" aria-label="Visualizador do gabinete gamer">
+          <div class="stage" id="stage">
+            <button id="mobilePanel" type="button" aria-label="Abrir controles" aria-expanded="false">☰</button><div class="stage-heading"><span><i></i> ESTÚDIO 3D</span><span id="assemblyLabel">GABINETE MONTADO</span></div>
+            <div id="cena"></div>
+            <div id="loading" class="notice" role="status"><span class="spinner"></span>Preparando o gabinete…</div>
+            <div id="aviso" class="notice error" role="alert" hidden><strong>Não foi possível abrir o modelo.</strong><span>Confira a conexão e se o navegador está com WebGL disponível.</span><button type="button" id="retry">Tentar novamente</button></div>
+            <div class="stage-bottom"><span class="gesture" id="gestureHint">↔ Arraste para girar <span>·</span> Botão direito move</span><button class="small-button" type="button" id="reset" aria-label="Restaurar câmera e enquadramento">↺ <span>Restaurar</span></button></div>
+          </div>
+          <div class="viewbar" aria-label="Ângulos da câmera">
+            <div class="views"><button type="button" data-view="perspective" aria-pressed="true">Perspectiva</button><button type="button" data-view="top" aria-pressed="false">Cima</button><button type="button" data-view="bottom" aria-pressed="false">Baixo</button><button type="button" data-view="back" aria-pressed="false">Traseira</button></div>
+            <button type="button" id="fullscreen" class="small-button" aria-label="Abrir visualizador em tela cheia">⛶</button>
+          </div>
+          <div class="viewer-actions"><button type="button" id="rotate" aria-pressed="false"><span class="toggle-dot"></span>Giro automático</button><button type="button" id="rgb" aria-pressed="true"><span class="toggle-dot"></span>RGB</button><button type="button" id="ventoinhas" aria-pressed="true"><span class="toggle-dot"></span>Ventoinhas</button><button type="button" id="pan" aria-pressed="false" aria-label="Ativar modo de mover a câmera"><span class="move-icon" aria-hidden="true">✥</span><span>Mover câmera</span></button><button type="button" id="snapshot">↓ Salvar imagem</button></div>
+        </section>
+        <aside class="inspector" aria-label="Explorar componentes">
+          <div class="panel-heading"><span class="eyebrow">ENGENHARIA EM CAMADAS</span><span class="panel-number">01 / 08</span></div>
+          <h2>Abra o gabinete.</h2><p class="panel-intro">Explore os circuitos, a refrigeração líquida e os cabos. Controle a iluminação e o movimento das ventoinhas.</p>
+          <button class="primary" type="button" id="explode" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Zm0 4 9 5 9-5M3 16l9 5 9-5"/></svg><span>Explorar por dentro</span><span aria-hidden="true">↗</span></button>
+          <div class="separation"><label for="separation">Separação das peças <output id="separationValue" for="separation">0%</output></label><input id="separation" type="range" min="0" max="100" value="0" step="1"></div>
+          <details class="visibility-panel" open><summary>Mostrar / ocultar peças <span id="visibilityCount">9 / 9</span></summary><div id="visibilityList"></div><button type="button" id="showAll">Mostrar todas as peças</button></details>
+          <div class="components"><button data-part="estrutura"><span>01</span>Estrutura e vidro<i>↗</i></button><button data-part="placa"><span>02</span>Placa-mãe<i>↗</i></button><button data-part="gpu"><span>03</span>Placa de vídeo<i>↗</i></button><button data-part="cpu"><span>04</span>CPU e cooler<i>↗</i></button><button data-part="ram"><span>05</span>Memória RGB<i>↗</i></button><button data-part="fonte"><span>06</span>Fonte ATX<i>↗</i></button><button data-part="radiador"><span>07</span>Radiador<i>↗</i></button><button data-part="fans"><span>08</span>Ventoinhas RGB<i>↗</i></button></div>
+          <div class="part-detail" aria-live="polite"><span id="partKicker">UM COMPUTADOR POR DENTRO</span><h3 id="partTitle">Cada peça tem seu lugar.</h3><p id="partText">Selecione um dos oito conjuntos para examinar seus detalhes. O vidro lateral também pode ser ocultado separadamente.</p><button type="button" id="isolate" aria-pressed="false">Isolar componente ↗</button></div>
+        </aside>
+      </div>
+      <section class="specs" aria-label="Características"><div><span>FORMATO</span><strong>ATX <small>mid tower</small></strong></div><div><span>LATERAL</span><strong>Vidro <small>removível</small></strong></div><div><span>REFRIGERAÇÃO</span><strong>Líquida <small>+ ar</small></strong></div><div><span>ESTUDO</span><strong>8 <small>conjuntos</small></strong></div></section>
+      <footer><p>Estudo didático de um gabinete gamer. Componentes e circuitos são ilustrativos; não reproduzem um produto comercial.</p><a href="./index.html">Galeria 3D ↗</a></footer>
+    </main>
+  </div>
+  <script>
+    document.getElementById('retry').addEventListener('click',()=>location.reload());
+    window.__gabineteGamerLoadTimer=setTimeout(()=>{if(!window.__gabineteGamer){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},8000);
+    if(window.parent!==window)document.body.classList.add('embedded');
+  </script>
+  <script type="module" src="./gabinete-gamer.js"></script>
+</body>
+</html>

@@ -1,12 +1,13 @@
 /* episodio
    O episódio aberto na própria página da etapa, quando a etapa tem um só e não há
    lista pra escolher: arte, áudio e a ação de abrir a animação. Depende de tokens.css,
-   base.css e do botão que vem de capitulo.css. */
+   base.css e do botão que vem de capitulo.css (a pílula em grafite do SITE-AFX, 13/09). */
 
+/* a capa na moldura de linha do "cartão com foto" do AFX */
 .episodio__capa {
   margin: 0 0 18px;
   border: 1px solid var(--line);
-  border-radius: var(--raio);
+  border-radius: var(--raio-cartao);
   overflow: hidden;
 }
 
@@ -23,10 +24,6 @@
 .episodio__acao .cap__botao {
   display: inline-block;
   margin-left: 0;
-  font-family: var(--fonte-mono);
-  font-size: .68rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
 }
 
 
@@ -35,7 +32,7 @@
   margin: 14px 0 0;
   font-family: var(--fonte-mono);
   font-size: .68rem;
-  letter-spacing: .1em;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
@@ -69,7 +66,6 @@
     display: block;
     width: 100%;
     padding: 15px 16px;
-    border-radius: 999px;
     text-align: center;
     font-size: .74rem;
   }

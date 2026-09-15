@@ -1,0 +1,13 @@
+HARDWARE A SERIE INTEIRA - CONTEXTO
+===================================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o audio de abertura da serie HARDWARE, feito pra ouvir antes de tudo. A serie monta do zero, peca por peca, uma caixa d'agua de predio que se cuida sozinha: ela percebe quando a agua abaixa, liga a bomba, desliga na hora certa, avisa quando algo esta errado e, no fim, conta pro celular como esta.
+
+O audio conta as cinco etapas numa olhada so. A etapa 1 poe o cerebro e os sentidos (o laco que nao para, a boia, o rele, a medida do nivel e a decisao). A 2 deixa o controlador esperto (sensor por eco, visor, motor de passo, duas coisas ao mesmo tempo). A 3 leva tudo pra uma tela do computador, o painel da portaria. A 4 troca o cerebro pelo ESP32 e poe a caixa d'agua no WiFi. A 5 transforma o circuito numa placa de verdade, pronta pra fabrica.
+
+E audio puro, sem animacao e sem exercicio. Da pra acompanhar a serie sem comprar nada, porque tudo roda num simulador que abre no navegador, e o rele nunca liga carga da rede eletrica.
+
+Por que importa: Arduino e ESP32 sao o veiculo, nao o assunto. Ler um contato, medir uma quantidade, dosar uma saida e decidir com uma regra e o que existe dentro de qualquer controle automatico, do termostato da geladeira ao controle de nivel de uma fabrica.
+
+Use este contexto apenas como apoio.

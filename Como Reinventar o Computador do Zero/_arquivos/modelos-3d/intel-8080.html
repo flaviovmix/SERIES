@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <title>Intel 8080 — laboratório 3D</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./rtx-5090.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+  </script>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Voltar à galeria de modelos 3D"><span class="brand-mark" aria-hidden="true">S</span> SEIRES <span class="brand-lab">/ LAB</span></a>
+      <span class="top-caption">HARDWARE, POR TODOS OS ÂNGULOS.</span>
+      <a class="back-link" href="./index.html">↗ Galeria 3D</a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <div><p class="eyebrow"><span class="live-dot"></span> INTEL · ENCAPSULAMENTO CERÂMICO</p><h1 id="title">Intel <span>8080</span><span class="title-dot">.</span></h1></div>
+        <p class="intro-copy">Cerâmica, ouro e silício.<br>Explore um clássico por dentro.</p>
+      </section>
+      <div class="workspace">
+        <section class="viewer" aria-label="Visualizador do processador">
+          <div class="stage" id="stage">
+            <div class="stage-heading"><span><i></i> ESTÚDIO 3D</span><span id="assemblyLabel">PROCESSADOR MONTADO</span></div>
+            <div id="cena"></div>
+            <div id="loading" class="notice" role="status"><span class="spinner"></span>Preparando o processador…</div>
+            <div id="aviso" class="notice error" role="alert" hidden><strong>Não foi possível abrir o modelo.</strong><span>Confira a conexão e se o navegador está com WebGL disponível.</span><button type="button" id="retry">Tentar novamente</button></div>
+            <div class="stage-bottom"><span class="gesture" id="gestureHint">↔ Arraste para girar <span>·</span> Role para aproximar</span><button class="small-button" type="button" id="reset" aria-label="Restaurar câmera e enquadramento">↺ <span>Restaurar</span></button></div>
+          </div>
+          <div class="viewbar" aria-label="Ângulos da câmera">
+            <div class="views"><button type="button" data-view="perspective" aria-pressed="true">Perspectiva</button><button type="button" data-view="front" aria-pressed="false">Topo</button><button type="button" data-view="back" aria-pressed="false">Contatos</button><button type="button" data-view="side" aria-pressed="false">Lateral</button></div>
+            <button type="button" id="fullscreen" class="small-button" aria-label="Abrir visualizador em tela cheia">⛶</button>
+          </div>
+          <div class="viewer-actions"><button type="button" id="rotate" aria-pressed="false"><span class="toggle-dot"></span>Giro automático</button><button type="button" id="pan" aria-pressed="false" aria-label="Ativar modo de mover a câmera"><span class="move-icon" aria-hidden="true">✥</span><span>Mover câmera</span></button><button type="button" id="snapshot">↓ Salvar imagem</button></div>
+        </section>
+        <aside class="inspector" aria-label="Explorar componentes">
+          <div class="panel-heading"><span class="eyebrow">ENGENHARIA EM CAMADAS</span><span class="panel-number">01 / 05</span></div>
+          <h2>Abra o processador.</h2><p class="panel-intro">Da tampa dourada aos fios que conectam a pastilha.</p>
+          <button class="primary" type="button" id="explode" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Zm0 4 9 5 9-5M3 16l9 5 9-5"/></svg><span>Explorar por dentro</span><span aria-hidden="true">↗</span></button>
+          <div class="separation"><label for="separation">Separação das peças <output id="separationValue" for="separation">0%</output></label><input id="separation" type="range" min="0" max="100" value="0" step="1"></div>
+          <details class="visibility-panel" open><summary>Mostrar / ocultar peças <span id="visibilityCount">5 / 5</span></summary><div id="visibilityList"></div><button type="button" id="showAll">Mostrar todas as peças</button></details>
+          <div class="components" aria-label="Componentes do modelo">
+<button type="button" data-part="lid" aria-pressed="true"><span>01</span>Tampa dourada<i>↗</i></button>
+<button type="button" data-part="ceramic" aria-pressed="false"><span>02</span>Corpo cerâmico<i>↗</i></button>
+<button type="button" data-part="die" aria-pressed="false"><span>03</span>Pastilha de silício<i>↗</i></button>
+<button type="button" data-part="bonds" aria-pressed="false"><span>04</span>Fios internos<i>↗</i></button>
+<button type="button" data-part="pins" aria-pressed="false"><span>05</span>40 pinos<i>↗</i></button>
+</div>
+          <div class="part-detail" aria-live="polite"><span id="partKicker">CERÂMICA E OURO</span><h3 id="partTitle">A tampa do C8080A.</h3><p id="partText">A tampa dourada protege a pastilha e os fios internos. Abra as camadas ou isole uma peça para observar.</p><button type="button" id="isolate" aria-pressed="false">Isolar componente ↗</button></div>
+        </aside>
+      </div>
+      <section class="specs" aria-label="Características do Intel 8080"><div><span>LANÇAMENTO</span><strong>1974</strong></div><div><span>ARQUITETURA</span><strong>8 <small>bits</small></strong></div><div><span>TERMINAIS</span><strong>40 <small>pinos</small></strong></div><div><span>FORMATO</span><strong>DIP <small>cerâmico</small></strong></div></section>
+      <footer><p>Exterior inspirado na foto do C8080A. Interior didático, ampliado e simplificado.</p><a href="https://www.intel.com/content/www/us/en/newsroom/news/50-years-ago-the-influential-intel-8080.html" target="_blank" rel="noopener noreferrer">História: Intel ↗</a></footer>
+    </main>
+  </div>
+  <script>
+    document.getElementById('retry').addEventListener('click',()=>location.reload());
+    window.intelLoadTimer=setTimeout(()=>{if(!window.__intel8080){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},8000);
+    if(window.parent!==window)document.body.classList.add('embedded');
+  </script>
+  <script type="module" src="./intel-8080.js"></script>
+</body>
+</html>

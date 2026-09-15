@@ -1,8 +1,16 @@
 /* cabecalho
-   A barra de cima da animacao: o caminho de volta a esquerda, o tocador no meio e o botao do modelo 3D a direita. Depende de animacao/tokens.css; o tocador em si e tocador.css.
+   A barra de cima da animacao: o hamburguer e o voltar a esquerda, o tocador no meio e o botao do modelo 3D a direita. Depende de animacao/tokens.css e de css/menu.css; o tocador em si e tocador.css.
 
    E a unica faixa que nao troca junto com a tela. Por isso o modelo 3D mora aqui,
-   sempre a um clique, sem precisar de painel em toda tela. */
+   sempre a um clique, sem precisar de painel em toda tela.
+
+   Sobre o menu: o hamburguer e o mesmo do site, e quem monta a arvore e js/menu.js.
+   A diferenca e que aqui a barra NAO e fixa, ela e a primeira faixa do palco em
+   flex. Por isso o padding que menu.css poe no body e desfeito logo abaixo: o
+   cabecalho ja ocupa o proprio espaco, e o padding empurraria o palco pra fora. */
+
+/* o palco mede a tela inteira; a barra do site reservaria espaco duas vezes */
+body { padding-top: 0; }
 
 .topo {
   position: relative;
@@ -23,21 +31,31 @@
 }
 .topo > :first-child { flex: 0 1 auto; min-width: 0; }
 
-/* o caminho de volta pro site: discreto, do tamanho do resto da barra */
-.voltar {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
-.voltar:hover { border-bottom-color: var(--accent); }
-.voltar:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+/* ---- o canto de sair ---- */
+
+/* o hamburguer e o voltar chegam prontos de menu.css, montados pelo menu.js.
+   Aqui eles so crescem pro tamanho de dedo: a animacao se ve no telefone, e
+   esta e a unica barra que o visitante tem enquanto assiste */
+.topo .barra__ir .barra__botao { width: 44px; height: 44px; }
+.topo .barra__ir .barra__botao span { left: 13px; }
+.topo .barra__ir .barra__botao span:nth-child(1) { top: 15px; }
+.topo .barra__ir .barra__botao span:nth-child(2) { top: 21px; }
+.topo .barra__ir .barra__botao span:nth-child(3) { top: 27px; }
+.topo .barra__ir .voltar { min-height: 44px; }
 
 .acoes { display: flex; align-items: center; gap: 16px; }
 
+/* o modelo 3D e a acao da ponta direita. Ele nasceu menor que o canto de sair,
+   e com o voltar em tamanho de dedo os dois lados da barra ficavam de alturas
+   diferentes: agora ele tem a mesma altura e o mesmo formato de pilula, e o que
+   o separa e so a cor cheia, de quem e a acao principal da faixa */
 .btn-cabecalho {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-family: var(--fonte-mono);
-  font-size: 10px;
-  letter-spacing: .14em;
+  font-size: .7rem;
+  letter-spacing: .12em;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
@@ -45,7 +63,7 @@
   color: var(--ground);
   border: 1px solid var(--accent);
   border-radius: 99px;
-  padding: 7px 16px;
+  padding: 0 18px;
   font-weight: 600;
   transition: all .25s;
 }
@@ -55,5 +73,11 @@
 /* telefone */
 @media (max-width: 700px) {
   .topo { padding: 10px 12px; font-size: 9px; }
-  .btn-cabecalho { font-size: 9px; padding: 5px 10px; }
+  /* o botao encolhe de largura, nunca de altura: ele continua alvo de dedo */
+  .btn-cabecalho { font-size: .62rem; padding: 0 14px; }
+  /* so "voltar": com o nome inteiro a barra virava tres linhas e comia o palco.
+     menu.css ja corta assim a partir de 640px; aqui o corte vem antes, porque o
+     tocador no meio da barra pede mais espaco que uma pagina comum */
+  .topo .voltar { padding: 0 14px; }
+  .topo .voltar__resto { display: none; }
 }

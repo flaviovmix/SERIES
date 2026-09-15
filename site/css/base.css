@@ -9,11 +9,14 @@ body {
   color: var(--ink);
   font-family: var(--fonte-texto);
   font-size: 16px;
-  line-height: 1.55;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 a { color: var(--accent); }
+
+/* a selecao na tinta, como no SITE-AFX */
+::selection { background: var(--ink); color: var(--ground); }
 
 /* quem chega pelo Tab precisa enxergar onde esta */
 :focus-visible {
@@ -42,3 +45,11 @@ a { color: var(--accent); }
   flex-direction: column;
   gap: clamp(36px, 5vw, 56px);
 }
+
+/* a vitrine (a home e o hub de cada serie): mais larga, pra caber mais card por fileira */
+.wrap--vitrine { max-width: var(--largura-vitrine); }
+
+/* a home das series: 68% da largura da tela, sem ficar mais estreita que uma pagina
+   comum em tela menor. Era 80% (13/09) e com dois cards por fileira ficou largo
+   demais ("deixa a largura da pagina um pouco mais estreita", 13/09) */
+.wrap--series { max-width: max(var(--largura-pagina), 68vw); }

@@ -7,7 +7,7 @@
 <meta name="description" content="Séries que montam do zero uma coisa que parece grande demais, uma peça de cada vez: cada episódio traz uma peça, com áudio pra ouvir e uma animação pra mexer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/menu.css">
@@ -17,12 +17,32 @@
 
 <body>
 
-<header class="barra">
-  <button class="barra__botao" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
-  <a class="barra__marca" href="index.html">Séries</a>
-</header>
+<!-- Os icones dos cartoes: um simbolo por serie, todos em traco de 1.5, no mesmo
+     desenho da biblioteca de tracos do SITE-AFX -->
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <symbol id="ico-abaco" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 8h18M3 12h18M3 16h18"/><circle cx="7.5" cy="8" r="1.4"/><circle cx="10.5" cy="8" r="1.4"/><circle cx="14" cy="12" r="1.4"/><circle cx="8" cy="16" r="1.4"/><circle cx="15.5" cy="16" r="1.4"/>
+    </symbol>
+    <symbol id="ico-codigo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4.5l-3 15"/>
+    </symbol>
+    <symbol id="ico-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx=".5"/><path d="M10 3v3.5M14 3v3.5M10 17.5V21M14 17.5V21M3 10h3.5M3 14h3.5M17.5 10H21M17.5 14H21"/>
+    </symbol>
+    <symbol id="ico-foguete" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2.5c2.9 2.3 4.4 5.6 4.4 9.6V16H7.6v-3.9c0-4 1.5-7.3 4.4-9.6Z"/><circle cx="12" cy="10" r="1.8"/><path d="M7.6 12.5 5 15.5v3.2l2.6-1.7M16.4 12.5l2.6 3v3.2L16.4 17M10 19l2 2.5 2-2.5"/>
+    </symbol>
+    <symbol id="ico-coracao" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 20.5s-8-4.9-8-10.6A4.4 4.4 0 0 1 12 7.2a4.4 4.4 0 0 1 8 2.7c0 5.7-8 10.6-8 10.6Z"/><path d="M6.5 12.5h3l1.5-2.5 2 4.5 1.5-2h3"/>
+    </symbol>
+    <symbol id="ico-dna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 2.5c0 5 10 5 10 9.5s-10 4.5-10 9.5M17 2.5c0 5-10 5-10 9.5s10 4.5 10 9.5"/><path d="M8.5 6.5h7M8.5 17.5h7"/>
+    </symbol>
+  </defs>
+</svg>
 
-<div class="wrap">
+<div class="wrap wrap--series">
 
   <header class="head">
     <p class="eyebrow">Séries &middot; áudio pra ouvir, animação pra mexer</p>
@@ -32,73 +52,93 @@
   </header>
 
   <section>
-    <div class="grade grade--dupla">
+    <div class="grade grade--series">
 
       <article class="cap">
-        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-computador.webp" alt="" loading="lazy"><span class="cap__num">01</span></div>
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-computador.webp" alt="" loading="lazy"></div>
         <div class="cap__corpo">
-          <p class="cap__periodo">Antiguidade &rarr; 2017</p>
-          <h3>Construindo um Computador do Zero</h3>
-          <p class="cap__frase">Do risco no osso à máquina que conversa.</p>
+          <div class="cap__cabeca">
+            <span class="aro" aria-hidden="true"><svg><use href="#ico-abaco"/></svg></span>
+            <p class="cap__verbo">11 etapas</p>
+            <h3>Do Ábaco à IA</h3>
+          </div>
           <p class="cap__resumo">Como <em>pedras que a gente move</em> viraram <em>máquinas que conversam</em>. Contar, instrumento, engrenagem, eletricidade, lógica, memória, miniaturização, rede e aprendizado: uma peça por episódio.</p>
           <div class="cap__pe">
-            <span class="cap__eps">10 etapas &middot; 10 extras</span>
-            <a class="cap__botao" href="computador.html" aria-label="Ver a série Construindo um Computador do Zero">Ver a série</a>
+            <a class="cap__botao" href="computador.html" aria-label="Ver a série Do Ábaco à IA">Ver a série</a>
           </div>
         </div>
       </article>
 
       <article class="cap">
-        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-java-web.webp" alt="" loading="lazy"><span class="cap__num">02</span></div>
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-java-web.webp" alt="" loading="lazy"></div>
         <div class="cap__corpo">
-          <p class="cap__periodo">Do primeiro javac ao site no ar</p>
-          <h3>Java Web</h3>
-          <p class="cap__frase">Código que você não entende é uma bomba-relógio.</p>
+          <div class="cap__cabeca">
+            <span class="aro" aria-hidden="true"><svg><use href="#ico-codigo"/></svg></span>
+            <p class="cap__verbo">14 etapas</p>
+            <h3>Java Web</h3>
+          </div>
           <p class="cap__resumo">Pedir pra uma IA ficou fácil; <em>entender o que voltou</em> é que não. Aqui a gente monta uma lista de tarefas do terminal até o ar (ambiente, git, teste, banco, deploy) pra que nada no seu código seja mágica. O princípio serve pra qualquer linguagem.</p>
           <div class="cap__pe">
-            <span class="cap__eps">14 etapas &middot; 12 extras</span>
             <a class="cap__botao" href="javaweb.html" aria-label="Ver a série Java Web">Ver a série</a>
           </div>
         </div>
       </article>
 
       <article class="cap">
-        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-lua.webp" alt="" loading="lazy"><span class="cap__num">03</span></div>
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-hardware.webp" alt="" loading="lazy"></div>
         <div class="cap__corpo">
-          <p class="cap__periodo">1609 &rarr; 1969</p>
-          <h3>Levando o Homem à Lua</h3>
-          <p class="cap__frase">Do céu calculado à pegada na poeira.</p>
+          <div class="cap__cabeca">
+            <span class="aro" aria-hidden="true"><svg><use href="#ico-chip"/></svg></span>
+            <p class="cap__verbo">5 etapas</p>
+            <h3>Hardware</h3>
+          </div>
+          <p class="cap__resumo">No simulador, sem comprar nada, a gente monta <em>a caixa d'água que se cuida sozinha</em>: sensor de nível, bomba, alarme, painel no computador, WiFi e, no fim, a placa própria. Arduino e ESP32 são o veículo; o princípio vale pra qualquer microcontrolador.</p>
+          <div class="cap__pe">
+            <a class="cap__botao" href="hardware.html" aria-label="Ver a série Hardware">Ver a série</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-lua.webp" alt="" loading="lazy"></div>
+        <div class="cap__corpo">
+          <div class="cap__cabeca">
+            <span class="aro" aria-hidden="true"><svg><use href="#ico-foguete"/></svg></span>
+            <p class="cap__verbo">Em preparação</p>
+            <h3>Levando o Homem à Lua</h3>
+          </div>
           <p class="cap__resumo">A próxima série, no mesmo método: o que foi preciso inventar, uma peça de cada vez, pra tirar uma pessoa do chão, levar ela até outro mundo e trazer de volta viva.</p>
           <div class="cap__pe">
-            <span class="cap__eps">em preparação</span>
             <span class="cap__selo">em breve</span>
           </div>
         </div>
       </article>
 
       <article class="cap">
-        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-corpo.webp" alt="" loading="lazy"><span class="cap__num">04</span></div>
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-corpo.webp" alt="" loading="lazy"></div>
         <div class="cap__corpo">
-          <p class="cap__periodo">1 célula &rarr; 37 trilhões</p>
-          <h3>Montando o Corpo Humano</h3>
-          <p class="cap__frase">A máquina que se monta sozinha.</p>
+          <div class="cap__cabeca">
+            <span class="aro" aria-hidden="true"><svg><use href="#ico-coracao"/></svg></span>
+            <p class="cap__verbo">Em preparação</p>
+            <h3>Montando o Corpo Humano</h3>
+          </div>
           <p class="cap__resumo">Uma peça por episódio, do mesmo jeito: o osso que sustenta, o músculo que puxa, o sangue que entrega, o nervo que avisa e o miolo que decide o que fazer com tudo isso.</p>
           <div class="cap__pe">
-            <span class="cap__eps">em preparação</span>
             <span class="cap__selo">em breve</span>
           </div>
         </div>
       </article>
 
       <article class="cap">
-        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-evolucao.webp" alt="" loading="lazy"><span class="cap__num">05</span></div>
+        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="img/serie-evolucao.webp" alt="" loading="lazy"></div>
         <div class="cap__corpo">
-          <p class="cap__periodo">3,8 bilhões de anos &rarr; hoje</p>
-          <h3>A Evolução das Espécies</h3>
-          <p class="cap__frase">Da primeira célula ao bicho que pergunta.</p>
+          <div class="cap__cabeca">
+            <span class="aro" aria-hidden="true"><svg><use href="#ico-dna"/></svg></span>
+            <p class="cap__verbo">Em preparação</p>
+            <h3>A Evolução das Espécies</h3>
+          </div>
           <p class="cap__resumo">Como uma bolha de gordura no fundo do mar virou tudo que está vivo. Sem salto e sem plano: cada peça nova nasce de uma que já existia e servia pra outra coisa.</p>
           <div class="cap__pe">
-            <span class="cap__eps">em preparação</span>
             <span class="cap__selo">em breve</span>
           </div>
         </div>

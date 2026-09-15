@@ -1,142 +1,166 @@
 /* capitulo
-   A grade e o card de uma etapa da serie: arte, periodo, nome, frase e resumo. Depende de tokens.css e base.css. */
+   A grade e o card de uma etapa da serie: arte, periodo, nome, frase e resumo. Depende de tokens.css e base.css.
+   Desenho do SITE-AFX desde 13/09/2026: o card e o "cartao com foto" de la (tracejado,
+   canto de 20px, a foto em cima com a linha embaixo, rotulos em mono e o botao em
+   pilula). A home usa a variante deitada, o cartao de servico (.grade--series, no fim). */
 
+/* a grade: a lista de etapas de uma serie vai em quatro colunas (11/09, pedido
+   dele); quem pede menos diz pelo modificador. A quantidade mora numa variavel,
+   pra os apertos do fim da folha so trocarem o numero */
 .grade {
+  --colunas: 4;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(var(--colunas), minmax(0, 1fr));
+  gap: 20px;
 }
 
 /* etapa com poucos episodios: duas colunas, pra nao sobrar buraco na fila */
-.grade--dupla { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grade--dupla { --colunas: 2; }
 
 .cap {
+  /* o botao do card mora no canto de cima da arte (.cap .cap__botao, mais abaixo) */
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--raio);
-  box-shadow: var(--shadow);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--raio-cartao);
   overflow: hidden;
-  transition: transform .18s ease, box-shadow .18s ease;
+  transition: border-color .3s ease, transform .3s ease;
 }
 
+/* no hover o tracejado vira linha cheia na cor da tinta e o cartao sobe, como no AFX */
 .cap:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(20, 25, 29, .08), 0 16px 34px -18px rgba(20, 25, 29, .4);
+  border-style: solid;
+  border-color: var(--ink);
+  transform: translateY(-4px);
 }
 
-/* a arte: enquanto a imagem do episodio nao existe, entra o fundo marcado
-   como provisorio, com o numero da etapa como marca d'agua */
+/* a arte, com a linha fina que separa ela do texto. Enquanto a imagem do episodio
+   nao existe, fica a trama de pontos do topo do AFX */
 .cap__arte {
   position: relative;
   aspect-ratio: 16 / 9;
-  background:
-    radial-gradient(circle at 72% 22%, rgba(87, 182, 202, .28), transparent 55%),
-    linear-gradient(150deg, var(--arte-de), var(--arte-ate));
   overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background-color: var(--surface-alt);
+  background-image: radial-gradient(var(--line-strong) 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
-/* a trama de pontos por cima do gradiente */
-.cap__arte::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgba(220, 238, 244, .16) 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-
+/* o numero da etapa: etiqueta em mono no canto de baixo, que le igual sobre foto
+   clara, foto escura e trama */
 .cap__num {
   position: absolute;
-  left: 16px;
-  bottom: 2px;
-  font-family: var(--fonte-titulo);
-  font-weight: 700;
-  font-size: 4.4rem;
-  line-height: 1;
-  letter-spacing: -.03em;
-  color: rgba(220, 238, 244, .22);
+  left: 12px;
+  bottom: 12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(28, 42, 63, .8);
+  color: #e9ebf1;
+  font-family: var(--fonte-mono);
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  line-height: 1.6;
 }
 
+/* a arte provisoria diz que e provisoria: pilula de traco no canto oposto */
 .cap__tag {
   position: absolute;
   right: 12px;
   bottom: 12px;
+  padding: 3px 10px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-soft);
   font-family: var(--fonte-mono);
   font-size: .56rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--arte-ink);
-  background: rgba(11, 42, 56, .55);
-  border: 1px solid rgba(220, 238, 244, .5);
-  border-radius: 4px;
-  padding: 4px 9px;
 }
 
-/* episodio com arte propria: a imagem cobre o card, o gradiente e a trama saem
-   de cena e o numero vai pro canto vazio da ilustracao */
-.cap__arte--arte::before { display: none; }
+/* arte que amplia (14/09/2026, pedido dele: "coloca uma lupa na capa pra ao clicar abrir
+   a imagem"): a arte inteira abre o lightbox (data-abre="foto", animacao/lightbox.js) e a
+   lupa no canto de baixo diz que da. A pilula escura e a do numero, que le igual sobre
+   foto clara e escura */
+.cap__arte[data-abre] { cursor: zoom-in; }
+.cap__arte[data-abre]:focus-visible { outline: 2px solid var(--ink); outline-offset: -4px; }
+.cap__lupa {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(28, 42, 63, .8);
+  color: #e9ebf1;
+  transition: transform .25s ease, background .25s ease;
+}
+.cap__lupa svg { width: 17px; height: 17px; }
+.cap__arte[data-abre]:hover .cap__lupa { transform: scale(1.1); background: rgba(28, 42, 63, .95); }
 
+/* episodio com arte propria: a foto cobre a moldura e cresce devagar no hover */
 .cap__img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform .6s ease;
 }
-
-.cap__arte--arte .cap__num {
-  left: auto;
-  right: 22px;
-  bottom: 6px;
-  color: rgba(220, 238, 244, .34);
-}
+.cap:hover .cap__img { transform: scale(1.04); }
 
 .cap__corpo {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 20px 22px 22px;
+  padding: 18px 20px;
 }
 
-/* o periodo historico que a etapa cobre */
+/* o periodo historico que a etapa cobre: o rotulo em mono do AFX */
 .cap__periodo {
   margin: 0;
   font-family: var(--fonte-mono);
-  font-size: .63rem;
-  font-weight: 600;
+  font-size: .62rem;
+  font-weight: 500;
   letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--ink-faint);
 }
 
 .cap h3 {
-  margin: 7px 0 4px;
-  font-family: var(--fonte-serif);
-  font-size: 1.42rem;
-  font-weight: 600;
-  line-height: 1.2;
+  margin: 6px 0 4px;
+  font-family: var(--fonte-titulo);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.25;
   letter-spacing: -.005em;
 }
 
-/* a frase que resume a etapa numa linha */
+/* a frase que resume a etapa numa linha. Sem italico: o AFX nao usa */
 .cap__frase {
-  margin: 0 0 10px;
-  font-family: var(--fonte-serif);
-  font-style: italic;
-  font-size: .98rem;
+  margin: 0 0 8px;
+  font-size: .92rem;
+  font-weight: 500;
   color: var(--ink);
 }
 
 .cap__resumo {
   margin: 0 0 16px;
   font-size: .86rem;
+  line-height: 1.55;
   color: var(--ink-soft);
 }
 
-/* o pe do card: quantos episodios a etapa tem, o estado dela e o botao.
-   No card estreito o botao desce sozinho pra linha de baixo, sempre a direita. */
+/* o pe do card: quantos episodios a etapa tem e o estado dela, atras de uma linha
+   tracejada. O botao mora no HTML daqui, mas no card ele sobe pro canto da arte
+   (.cap .cap__botao, abaixo) */
 .cap__pe {
   display: flex;
   flex-wrap: wrap;
@@ -144,54 +168,157 @@
   gap: 8px 10px;
   margin: auto 0 0;
   padding-top: 12px;
-  border-top: 1px solid var(--line-soft);
+  border-top: 1px dashed var(--line);
   font-family: var(--fonte-mono);
-  font-size: .68rem;
-  letter-spacing: .1em;
+  font-size: .64rem;
+  letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
 
-/* o estado da etapa: contorno leve, porque e informacao, nao acao.
-   Vai encostado na direita, no lugar que o botao ocuparia se houvesse. */
+/* o estado da etapa: pilula so de traco, porque e informacao, nao acao.
+   Vai encostado na direita do pe. */
 .cap__selo {
   margin-left: auto;
-  font-weight: 600;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid var(--accent-edge);
-  border-radius: 4px;
-  padding: 2px 7px;
+  padding: 4px 12px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 
-/* quantos episodios da etapa ja dao pra ouvir: texto solto, sem caixa,
-   pra nao competir com o selo de estado que vem antes */
-.cap__disponivel {
-  font-weight: 600;
-  color: var(--accent);
-}
-
-/* a acao do card: cheia, pra nao se confundir com o selo ao lado */
+/* a acao do card: a pilula cheia em grafite do AFX, pra nao se confundir com o selo */
 .cap__botao {
   margin-left: auto;
-  padding: 7px 12px;
-  border-radius: 5px;
-  background: var(--accent);
-  color: var(--surface);
-  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--destaque);
+  color: var(--ground);
+  font-family: var(--fonte-mono);
+  font-size: .64rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  transition: filter .15s ease;
+  transition: transform .25s ease, background .25s ease;
 }
 
 .cap__botao::after { content: " →"; }
 
-.cap__botao:hover { filter: brightness(1.15); }
+.cap__botao:hover { background: var(--destaque-forte); transform: translateY(-2px); }
+
+/* no card o botao sobe pro canto de cima da arte (11/09, pedido dele): e a acao do
+   card, e la o olho acha sem descer o card inteiro. A sombra separa ele da foto
+   clara. Fora do card (a pagina da etapa de um episodio so) ele segue no fluxo */
+.cap .cap__botao {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  box-shadow: 0 6px 16px -6px rgba(0, 0, 0, .5);
+}
+
+/* o aro: o icone de traco dentro de um circulo, do SITE-AFX. O desenho vem de um
+   <symbol> da pagina (<svg><use href="#ico-..."></svg>) e herda a cor da tinta */
+.aro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--ink);
+}
+.aro svg { width: 22px; height: 22px; }
+
+/* os apertos so trocam a quantidade de colunas: quatro, tres, duas, uma */
+@media (max-width: 1180px) {
+  .grade { --colunas: 3; }
+  .grade--dupla { --colunas: 2; }
+}
 
 @media (max-width: 980px) {
-  .grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grade { --colunas: 2; }
 }
 
 @media (max-width: 640px) {
-  .grade { grid-template-columns: minmax(0, 1fr); }
+  .grade { --colunas: 1; }
+}
+
+/* a home: as series em fileiras de DUAS (13/09, por print: "a imagem em 16x9 e coloca
+   so 2 por linha"), no cartao de servico do SITE-AFX: a foto em 16:9 encostada na
+   borda do cartao, na esquerda, e o texto na direita (o aro com o icone e o rotulo juntos, o
+   nome na mesma linha e o resumo embaixo). Tracejado, pilula e hover vem do card de
+   cima; aqui mora so o que deita. A fileira nao usa o --colunas: quando nao cabem dois
+   cards de 330px ela cai sozinha pra um (auto-fill), e o min(100%) segura o telefone
+   estreito. Fica no fim da folha pra ganhar dos apertos */
+.grade--series {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, max(330px, (100% - 20px) / 2)), 1fr));
+}
+.grade--series .cap { flex-direction: row; }
+/* a foto encosta na borda do cartao, sem respiro em volta, como o quadro dos pilares
+   da home do ESFERA (13/09, ele: "tu colocou um espaco ao redor da imagem"): quem
+   recorta os cantos e o overflow:hidden do card. O 16:9 e o MINIMO: da a altura do
+   cartao quando o texto cabe nela, e com o texto mais alto a foto estica junto
+   (o object-fit: cover corta a sobra) em vez de deixar vao em cima e embaixo */
+.grade--series .cap__arte {
+  flex: 0 0 48%;
+  aspect-ratio: 16 / 9;
+  border-bottom: 0;
+}
+.grade--series .cap__corpo {
+  min-width: 0;
+  padding: 18px 20px 16px 22px;
+}
+/* a cabeca do cartao: o aro e o rotulo andam juntos, o nome vai pra direita. Sem
+   largura pros tres na mesma linha, o nome desce e continua encostado na direita */
+.grade--series .cap__cabeca {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+}
+.grade--series .cap__verbo {
+  margin: 0;
+  font-family: var(--fonte-mono);
+  font-size: .62rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.grade--series .cap h3 {
+  margin: 0 0 0 auto;
+  font-size: 1.04rem;
+  text-align: right;
+}
+/* o resumo corta na terceira linha: o texto inteiro esta na pagina da serie */
+.grade--series .cap__resumo {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 12px 0;
+}
+/* o pe so leva a acao (ou o selo de em breve), encostada na direita */
+.grade--series .cap__pe {
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+/* com a foto do lado o botao volta pro pe do texto: no canto de uma foto estreita
+   ele cobriria a imagem */
+.grade--series .cap .cap__botao {
+  position: static;
+  box-shadow: none;
+}
+
+/* no telefone a foto sobe pra cima do texto (13/09, pedido dele): numa coluna so,
+   deitada ela ficava pequena demais. Em cima ela fica em 16:9, encostada nas bordas */
+@media (max-width: 640px) {
+  .grade--series .cap { flex-direction: column; }
+  .grade--series .cap__arte { flex: none; }
+  .grade--series .cap__corpo { padding: 16px 18px; }
 }

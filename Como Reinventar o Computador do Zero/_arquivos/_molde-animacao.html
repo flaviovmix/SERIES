@@ -6,22 +6,31 @@
 <title>__NOME__ — Equipamento __NN__</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<!-- Atkinson Hyperlegible e a fonte de leitura (09/09); a Fraunces fica nos titulos -->
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-<!-- MOLDE DE ANIMACAO (Etapa 2, 30/08/2026)
+<!-- MOLDE DE ANIMACAO (Etapa 2, 30/08/2026; refeito pelo Abaco em 10/09/2026)
      Copie este arquivo pra pasta do episodio como animacao.html e troque os __X__.
      A base mora em site/css/animacao/ e site/js/animacao/: nao copie nada de outro
      episodio. O que e deste episodio (pratica interativa, desenho) entra em css/js
      proprios ao lado, carregados por ultimo. Os caminhos abaixo valem pra pasta
      <serie>/<NN - Etapa>/<NN - Episodio>/; um nivel a mais ou a menos muda os ../.
-     Como consumidor de referencia, veja "01 - Contar antes das maquinas/01 - O Abaco". -->
+     Consumidor de referencia: "01 - Contar antes das maquinas/01 - O Abaco".
+
+     O que a base faz sozinha, sem nada escrito aqui:
+     - o hamburguer e o voltar (menu.js). O voltar vai pro PAI desta pagina na
+       arvore do menu: registre o episodio no menu.js, senao ele nao sabe o pai;
+     - as bolinhas, o contador, as setas grandes dos lados do palco e a TELA DE FIM
+       depois da ultima, com a foto da capa e o h1 dela (telas.js);
+     - o lightbox de toda figura com data-abre (lightbox.js);
+     - a tela de fim abre sozinha quando o audio acaba (tocador.js). -->
 <link rel="stylesheet" href="../../../site/css/tokens.css">
 <link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
 <link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
 <link rel="stylesheet" href="../../../site/css/animacao/telas.css">
 <link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
 <link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
-<link rel="stylesheet" href="../../../site/css/animacao/modelo-3d.css">
 <link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
 <link rel="stylesheet" href="../../../site/css/animacao/painel.css">
 <link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
@@ -29,34 +38,22 @@
 </head>
 <body>
 
+<!-- o topo: o hamburguer e o voltar entram pelo menu.js. Aqui so as acoes: o
+     modelo 3D e declarado no botao e abre no lightbox. Sem modelo, apague o botao.
+     (Capa que E o proprio modelo, com iframe data-src: ver os episodios da etapa 7,
+     que carregam modelo-3d.css e modelo-3d.js.) -->
 <header class="topo">
-  <div><a class="voltar" href="../../../site/etapas/etapa-__EE__.html">← voltar pra etapa</a></div>
-  <div class="tocador">
-    <!-- data-duracao em segundos: vale ate o navegador ler o metadata do mp3 -->
-    <audio preload="metadata" src="__AUDIO__.mp3" data-duracao="__SEGUNDOS__"></audio>
-    <img class="tocador__capa" src="img/capa-tocador.jpg" alt="">
-    <div class="tocador__id">
-      <div class="tocador__titulo">__TITULO_DO_AUDIO__</div>
-      <div class="tocador__fonte">Série Equipamentos · __NN__ · __NOME__</div>
-    </div>
-    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
-    <button class="tocador__play" aria-label="tocar">▶</button>
-    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
-    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="__SEGUNDOS__" aria-valuenow="0">
-      <div class="tocador__cheio"></div>
-      <div class="tocador__marcas"></div>
-    </div>
-    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">__MM:SS__</span></div>
-  </div>
   <div class="acoes">
-    <!-- so faz sentido se a capa tiver o iframe do modelo; senao, apague os dois -->
-    <button class="btn-cabecalho" data-abre="modelo3d">🧊 abrir modelo 3D</button>
+    <button class="btn-cabecalho" data-abre="modelo3d"
+      data-modelo="../../_arquivos/modelos-3d/__MODELO__.html" data-modelo-titulo="Modelo tridimensional de __NOME__"
+      data-modelo-legenda="Arraste pra girar · role pra aproximar">🧊 abrir modelo 3D</button>
   </div>
 </header>
 
 <main>
 
-  <!-- 1 · capa: texto a esquerda, modelo 3D a direita -->
+  <!-- 1 · capa: texto a esquerda, a FOTO REAL a direita (no telefone ela sobe pro
+       alto). Toda tela tem imagem: foto real primeiro, Flow so se nao houver. -->
   <section class="step step--capa">
     <div class="capa-texto">
       <div class="kicker reveal">equipamento __NN__ · série equipamentos</div>
@@ -65,18 +62,20 @@
       <div class="capa-como reveal">
         <p><b>Como ele funciona.</b> __QUATRO LINHAS, NO MAXIMO.__</p>
       </div>
-      <button class="btn-mini cheio clicavel capa-botao reveal" data-abre="modelo3d">abrir modelo 3D</button>
     </div>
     <figure class="capa-modelo reveal">
-      <!-- data-src, nao src: o modelo so liga enquanto a capa esta em cena -->
-      <iframe data-src="../../_arquivos/modelos-3d/__MODELO__.html" title="Modelo tridimensional de __NOME__"></iframe>
-      <figcaption>Arraste pra girar · role pra aproximar</figcaption>
+      <img src="img/__FOTO_DA_CAPA__.jpg" alt="__O QUE SE VE NA FOTO__">
+      <figcaption>__LEGENDA__ · __AUTOR__, __LICENCA__</figcaption>
     </figure>
   </section>
 
-  <!-- 2 · cena: uma ou duas fotos lado a lado (cena--uma quando for uma so).
-       Foto gerada: selo "ilustracao" e legenda terminando em "reconstituicao,
-       nao e foto de epoca". Foto de acervo: selo "imagem real" e o credito. -->
+  <!-- 2 · cena: 1, 2, 3, 4 ou 6 fotos, e a QUANTIDADE escolhe o desenho sozinha
+       (pranchas.css): uma (cena--uma), duas lado a lado, tres em 2+1, quatro em
+       2x2, seis em 3x2. Toda foto e 16:9: a moldura corta no centro o que vier em
+       outro formato, entao imagem do Flow ja nasce 16:9 e foto real em pe so entra
+       se o assunto sobreviver ao corte. Foto gerada: selo "ilustracao" e legenda
+       terminando em "reconstituicao, nao e foto de epoca". Foto de acervo: selo
+       "imagem real" e o credito. -->
   <section class="step step--cena">
     <div class="kicker reveal">__~ANO__ · __CONTEXTO__</div>
     <h2 class="reveal">__TITULO DA CENA__</h2>
@@ -84,13 +83,14 @@
       <figure class="clicavel" data-abre="foto" data-legenda="__LEGENDA DO LIGHTBOX__ · reconstituição, não é foto de época">
         <span class="selo">ilustração</span>
         <img src="img/__FOTO__.jpg" alt="__O QUE SE VE NA FOTO__">
-        <figcaption>__LEGENDA CURTA__</figcaption>
+        <figcaption>__A LEGENDA EXPLICA A IMAGEM, EM FRASE DE LEITURA__</figcaption>
       </figure>
     </div>
     <div class="nota-cena reveal">reconstituição realista · não é fotografia de época</div>
   </section>
 
-  <!-- 3 · ficha: nome, data e lugar, motivacao + uma foto de acervo -->
+  <!-- 3 · ficha: nome, data e lugar, motivacao + uma foto de acervo (no telefone a
+       foto sobe pro alto: ficha sem imagem a vista nao apresenta nada) -->
   <section class="step step--ficha">
     <div class="ficha-coluna">
       <div class="kicker reveal">a ficha do equipamento</div>
@@ -125,7 +125,8 @@
     </div>
   </section>
 
-  <!-- 5 · fechamento: os cards do "pelo mundo", a limitacao e o gancho do proximo -->
+  <!-- 5 · fechamento: os cards do "pelo mundo", a limitacao e o gancho do proximo.
+       Os cartoes respondem ao mouse sozinhos (pranchas.css). -->
   <section class="step step--mundo">
     <div class="kicker reveal">__NOME__ pelo mundo</div>
     <h2 class="reveal">__TITULO DO FECHO__</h2>
@@ -135,6 +136,15 @@
         <div class="nome">__</div>
         <div class="desc">__</div>
       </div>
+      <!-- retrato de pessoa: no telefone vira 4:5 com um recorte proprio (pranchas.css, fim)
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="__">
+        <picture>
+          <source media="(max-width: 820px)" srcset="img/__-45.jpg">
+          <img class="foto foto--retrato" src="img/__.jpg" alt="__">
+        </picture>
+        <div class="nome">__</div>
+        <div class="desc">__</div>
+      </div> -->
       <div class="item clicavel reveal" data-abre="foto" data-legenda="__ · reconstituição, não é foto de época">
         <span class="selo">ilustração</span>
         <img class="foto" src="img/__.jpg" alt="__">
@@ -144,22 +154,56 @@
     </div>
   </section>
 
+  <!-- a tela de FIM nao se escreve: o telas.js poe depois da ultima -->
+
 </main>
 
+<!-- o tocador: no telefone ele mora aqui, embaixo do palco, no desenho do player do
+     Nexus (capa e nome em cima, a barra com uma marca por tela, a fileira de controles
+     atravessando: a marcha, voltar 10, play, avancar 30 e o relogio). No desktop o
+     tocador.js poe ele numa faixa logo abaixo da barra de cima, compacto e na ponta
+     esquerda (11/09).
+     Escrever ele SEMPRE aqui, nunca dentro do .topo: quem muda de lugar e o JS -->
+
+<!-- no desktop o rodape abaixo nao aparece (11/09): as setas do palco e as marcas da
+     barra do tocador fazem o papel dele. Ele continua aqui porque o telefone usa -->
+<div class="tocador">
+  <!-- data-duracao em segundos: vale ate o navegador ler o metadata do mp3 -->
+  <audio preload="metadata" src="__AUDIO__.mp3" data-duracao="__SEGUNDOS__"></audio>
+  <img class="tocador__capa" src="img/capa-tocador.jpg" alt="">
+  <div class="tocador__id">
+    <div class="tocador__titulo">__TITULO_DO_AUDIO__</div>
+  </div>
+  <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="__SEGUNDOS__" aria-valuenow="0">
+    <div class="tocador__cheio"></div>
+    <div class="tocador__marcas"></div>
+  </div>
+  <div class="tocador__controles">
+    <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+    <div class="tocador__transporte">
+      <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+      <button class="tocador__play" aria-label="tocar">▶</button>
+      <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">__MM:SS__</span></div>
+  </div>
+</div>
+
 <footer class="navegacao">
-  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
   <div class="navegacao__meio">
     <div class="bolinhas" role="group" aria-label="telas"></div>
     <div class="contador"></div>
   </div>
-  <button class="nav-btn navegacao__proximo">Próximo →</button>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
 </footer>
 
 <!-- a base, nesta ordem; depois o que e deste episodio -->
+<script src="../../../site/js/menu.js"></script>
 <script src="../../../site/js/animacao/telas.js"></script>
-<script src="../../../site/js/animacao/modelo-3d.js"></script>
 <script src="../../../site/js/animacao/lightbox.js"></script>
 <script src="../../../site/js/animacao/tocador.js"></script>
+<!-- <script src="../../../site/js/animacao/trilha.js"></script>  so se a pratica tiver trilha de desafios -->
 <!-- <script src="minha-pratica.js"></script> -->
 <script>
 // os marcadores do audio: o segundo em que o apresentador pede "aperte o Proximo"

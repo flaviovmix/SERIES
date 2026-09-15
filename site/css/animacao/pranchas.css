@@ -4,12 +4,14 @@
    Toda foto gerada leva o selo "ilustracao" e a legenda diz que e reconstituicao:
    e obrigacao de honestidade, nao de licenca. Foto de acervo leva o credito na legenda. */
 
-/* o que abre no lightbox levanta ao passar o mouse */
+/* o que abre no lightbox levanta ao passar o mouse. Levanta com `translate`, nao
+   com `transform` (10/09): a animacao de entrada (.reveal, telas.css) termina
+   presa no transform, e no cartao que entra com ela o hover nunca subia.
+   O :hover mora no bloco (hover: hover) do fim da folha: no toque ele grudava. */
 .clicavel {
   cursor: pointer;
-  transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+  transition: translate .25s var(--ease), box-shadow .25s var(--ease);
 }
-.clicavel:hover { transform: translateY(-3px); box-shadow: var(--sombra-flutua); }
 
 /* o selo no canto: "ilustracao", "imagem real", "ampliar" */
 .selo {
@@ -27,8 +29,11 @@
   padding: 4px 10px;
 }
 
-/* ---- cena: uma ou duas fotos lado a lado, a imagem manda na tela ---- */
+/* ---- cena: uma ou duas fotos lado a lado (quatro e seis em grade, logo abaixo),
+   a imagem manda na tela ---- */
 .cena {
+  /* o teto de altura da foto; a largura sai dele, pra caixa ser sempre 16:9 */
+  --alto: clamp(170px, 46vh, 480px);
   display: flex;
   gap: clamp(14px, 2vw, 26px);
   margin-top: 18px;
@@ -41,6 +46,9 @@
   position: relative;
   flex: 1 1 0;
   min-width: 0;
+  /* o cartao para onde a foto 16:9 bate no teto de altura (+ padding e borda):
+     sem isto, na tela baixa a foto encolhia e o cartao ficava com sobra dos lados */
+  max-width: calc(var(--alto) * 16 / 9 + 22px);
   margin: 0;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -51,20 +59,69 @@
 .cena img {
   display: block;
   width: 100%;
-  height: clamp(170px, 46vh, 480px);
+  /* sempre 16:9 (pedido 10/09): com a altura fixa a caixa virava quase quadrada
+     e cortava as ilustracoes do Flow, que ja nascem 16:9. Foto de outro formato
+     entra cortada pelo meio (cover) */
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 8px;
   filter: sepia(.10);
 }
+/* a legenda da cena EXPLICA a imagem: mesmo formato do texto da capa (pedido
+   dele, 09/09). Em mono centralizada de 11px ela tinha cara de credito, e era o
+   único texto da tela. O crédito de verdade mora no `data-legenda` (aparece ao
+   abrir a foto) e a nota técnica na `.nota-cena`, essas sim miúdas. */
 .cena figcaption {
-  font-family: var(--fonte-mono);
-  font-size: 10px;
-  letter-spacing: .04em;
+  font-family: var(--fonte-leitura);
+  font-size: 15px;
+  letter-spacing: normal;
   color: var(--ink-soft);
-  margin-top: 8px;
-  text-align: center;
+  margin-top: 10px;
+  text-align: left;
   line-height: 1.55;
 }
+
+/* ---- cena de tres, quatro e seis (pedido 10/09, por mockup): as fotos em grade,
+   2+1, 2x2 e 3x2, cada uma 16:9 com a legenda embaixo. As duas fileiras tem que caber
+   no palco sem rolar, entao o teto da foto sai da ALTURA da janela: o que nao e
+   foto (topo, tocador, rodape, titulo, legendas) sai da conta e o resto divide
+   pelas duas fileiras. A coluna sai do teto, e a grade estreita sozinha em tela
+   baixa em vez de empurrar a segunda fileira pra fora.
+   Variavel propria (--alto-grade) de proposito: os extras mexem no --alto da cena
+   comum em tela baixa, e isso nao pode vazar pra grade.
+   HTML: basta a .cena com 3, 4 ou 6 <figure>: a QUANTIDADE escolhe a grade sozinha
+   (:has com :nth-child(N):last-child = exatamente N filhos), pedido 10/09 "quando
+   for 3 imagens deve ficar assim". A classe cena--tres/quatro/seis tambem vale. */
+:is(.cena--tres, .cena:has(> :nth-child(3):last-child)),
+:is(.cena--quatro, .cena:has(> :nth-child(4):last-child)),
+:is(.cena--seis, .cena:has(> :nth-child(6):last-child)) {
+  --alto-grade: clamp(96px, calc((100vh - 580px) / 2), 360px);
+  display: grid;
+  grid-template-columns: repeat(var(--colunas), minmax(0, calc(var(--alto-grade) * 16 / 9 + 22px)));
+  justify-content: center;
+  --vao: clamp(12px, 1.4vw, 22px);
+  gap: var(--vao);
+  max-width: none;
+}
+:is(.cena--tres, .cena:has(> :nth-child(3):last-child)),
+:is(.cena--quatro, .cena:has(> :nth-child(4):last-child)) { --colunas: 2; }
+:is(.cena--seis, .cena:has(> :nth-child(6):last-child)) { --colunas: 3; }
+/* na de tres a terceira desce sozinha, no meio da fileira de baixo, com a largura
+   exata de uma coluna: a area dela e as duas colunas mais o vao */
+:is(.cena--tres, .cena:has(> :nth-child(3):last-child)) > :nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc((100% - var(--vao)) / 2);
+}
+/* a coluna ja limita o cartao */
+:is(.cena--tres, .cena:has(> :nth-child(3):last-child)) figure,
+:is(.cena--quatro, .cena:has(> :nth-child(4):last-child)) figure,
+:is(.cena--seis, .cena:has(> :nth-child(6):last-child)) figure { max-width: none; }
+/* com seis legendas na tela a letra desce um degrau; no telefone volta pros 17px */
+:is(.cena--tres, .cena:has(> :nth-child(3):last-child)) figcaption,
+:is(.cena--quatro, .cena:has(> :nth-child(4):last-child)) figcaption,
+:is(.cena--seis, .cena:has(> :nth-child(6):last-child)) figcaption { font-size: 13.5px; line-height: 1.5; margin-top: 8px; }
 
 /* ---- retrato: a foto de acervo com credito, em card ---- */
 .retratos {
@@ -151,6 +208,7 @@
   width: auto;
   text-align: left;
   box-shadow: var(--sombra-alta);
+  transition: translate .25s var(--ease), border-color .25s var(--ease), box-shadow .25s var(--ease);
 }
 .mundo .foto {
   display: block;
@@ -160,6 +218,7 @@
   border-radius: 8px;
   filter: sepia(.12);
   margin-bottom: 14px;
+  transition: filter .25s var(--ease);
 }
 .mundo .selo { top: 30px; right: 32px; }
 .mundo .nome { font-size: 21px; font-weight: 600; }
@@ -169,11 +228,22 @@
 
 /* estreito: a cena empilha, o mundo vira coluna */
 @media (max-width: 820px) {
+  /* no telefone a legenda é leitura de verdade: cresce com o resto */
+  .cena figcaption { font-size: 17px; }
+  .mundo .desc { font-size: 15.5px; }
   .cena { flex-direction: column; }
-  .cena img { height: clamp(150px, 26vh, 240px); }
+  /* empilhadas, `flex:1 1 0` fazia as fichas dividirem a ALTURA em partes iguais
+     e a mais curta ficava com um vazio embaixo: cada uma volta a ter a sua */
+  .cena figure { flex: 0 0 auto; width: 100%; margin-inline: auto; }
+  .nota-cena { font-size: 14.5px; }
+  /* no telefone o teto e mais alto: a foto 16:9 enche a largura da tela */
+  .cena { --alto: clamp(150px, 30vh, 240px); }
+  /* a grade de tres, quatro e seis empilha como a cena comum: a legenda e
+     leitura, e em duas colunas no telefone ela virava letra miuda */
+  :is(.cena--tres, .cena:has(> :nth-child(3):last-child)), :is(.cena--quatro, .cena:has(> :nth-child(4):last-child)), :is(.cena--seis, .cena:has(> :nth-child(6):last-child)) { grid-template-columns: minmax(0, 1fr); }
+  :is(.cena--tres, .cena:has(> :nth-child(3):last-child)) > :nth-child(3) { width: 100%; justify-self: stretch; }
   .mundo { grid-template-columns: minmax(0, 1fr); gap: 16px; max-width: 520px; }
   .mundo .nome { font-size: 20px; }
-  .mundo .desc { font-size: 14px; }
 }
 
 /* tela baixa */
@@ -183,4 +253,35 @@
   .mundo .item { padding: 12px; }
   .mundo .foto { height: clamp(84px, 11vh, 120px); margin-bottom: 10px; }
   .mundo .desc { font-size: 12px; }
+}
+
+/* desktop ate 1000px de altura: a grade de tres, quatro e seis aperta a legenda e o
+   vao. Nessa altura a coluna estreita e a legenda quebra em 3 linhas (medido em
+   10/09 na janela dele, 1986x870, e em 1440x900: rolava 24-26px). O telefone fica
+   de fora de proposito: la a legenda e leitura (17px) e a grade e uma coluna so. */
+@media (max-height: 1000px) and (min-width: 821px) {
+  :is(.cena--tres, .cena:has(> :nth-child(3):last-child)), :is(.cena--quatro, .cena:has(> :nth-child(4):last-child)), :is(.cena--seis, .cena:has(> :nth-child(6):last-child)) { --vao: 10px; }
+  :is(.cena--tres, .cena:has(> :nth-child(3):last-child)) figcaption,
+  :is(.cena--quatro, .cena:has(> :nth-child(4):last-child)) figcaption,
+  :is(.cena--seis, .cena:has(> :nth-child(6):last-child)) figcaption { font-size: 12.5px; line-height: 1.42; margin-top: 5px; }
+}
+
+/* os cartoes do fechamento respondem ao mouse (pedido 10/09): sobem, a borda
+   acende e a foto perde o sepia. Vale pra todo cartao, abra ele a foto ou nao.
+   So onde existe mouse: no toque o hover gruda depois do dedo e o cartao ficava
+   levantado. O "subir" e `translate` pelo mesmo motivo do .clicavel (la no topo). */
+@media (hover: hover) {
+  .clicavel:hover { translate: 0 -3px; box-shadow: var(--sombra-flutua); }
+  .mundo .item:hover { translate: 0 -4px; border-color: var(--accent); box-shadow: var(--sombra-flutua); }
+  .mundo .item:hover .foto { filter: none; }
+}
+
+/* retrato de pessoa no card do fechamento: no telefone fica em pe, 4:5 (pedido dele
+   em 14/09, no fecho do 11.01). So com a classe: foto de objeto segue na faixa. O
+   arquivo 4:5 e um recorte proprio, trocado por <picture> no mesmo corte de 820px:
+     <picture><source media="(max-width: 820px)" srcset="img/x-45.jpg">
+     <img class="foto foto--retrato" src="img/x.jpg" alt=""></picture>
+   Por ultimo na folha de proposito: tambem ganha da regra de tela baixa. */
+@media (max-width: 820px) {
+  .mundo .foto--retrato { aspect-ratio: 4 / 5; height: auto; }
 }

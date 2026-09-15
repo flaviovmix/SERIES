@@ -1,0 +1,39 @@
+Inicie dizendo: O Que Falta Pra Estar No Ar
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Que Falta Pra Estar No Ar.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido POR TELA da animacao.
+
+Este episodio abre a etapa PRO MUNDO, a ultima etapa da serie JAVA WEB. Nos capitulos anteriores a lista de tarefas ficou pronta e roda inteira na maquina do aluno. Agora ela vai sair dali, e este episodio e o mapa de tudo que falta pra isso acontecer.
+
+ESTE EPISODIO E PANORAMA, NAO MECANICA. Sem comando, sem arquivo de configuracao, sem passo a passo. Quando der vontade de abrir uma peca por dentro, dizer o nome dela, dizer pra que serve em uma ou duas frases e avisar que ela volta com calma mais pra frente. NAO prometer um capitulo pra cada peca: algumas dividem capitulo e uma delas e assunto de um aprofundamento a parte. A unica excecao e a tela do percurso, que descreve o caminho de uma visita sem entrar em nenhuma parada.
+
+NAO CITAR NUMERO DE EPISODIO NEM DE ETAPA. Nada de "episodio tres" ou "etapa oito". Pra retomar, dizer "nos capitulos anteriores" ou "la atras"; pra falar do que vem, "no proximo capitulo" ou "mais pra frente".
+
+FOCO: rodar na sua maquina nao e o fim, e a distancia ate estar no ar e maior do que quase todo curso deixa parecer. O que muda quando o programa deixa de ser so seu (gente ao mesmo tempo, o tempo todo, dado que e de outra pessoa) e o que a palavra producao quer dizer: mesmo programa, outra regua, sem "so um instante" e sem desfazer. O mapa das sete pecas, uma frase cada: a maquina, o acesso, o pacote, o servico, o endereco, o cadeado e o registro; nenhuma opcional, e quase toda trilha para na primeira. O percurso de uma visita, que amarra num caminho so as pecas que aparecem quando alguem entra, avisando que duas ficam de fora (o acesso e o pacote acontecem no dia da publicacao, nao a cada visita), e que mostra que o codigo do aluno e uma parada so desse caminho. E os tres tropecos da primeira publicacao: subir o segredo junto (que nao se conserta apagando, se conserta trocando o segredo), o programa que so existe enquanto a janela esta aberta, e o "na minha maquina funciona".
+
+A tela 3 (a lista das sete pecas) e a tela 4 (o percurso de uma visita) sao separadas de proposito: uma lista os nomes, a outra os percorre. Pedir o Proximo entre as duas, sem emendar.
+
+TOM: nada de sermao e nada de susto. Contar o que falta sem virar muralha: sao sete pecas, todas com nome, e cada uma vai ser montada com calma. Nao tratar publicar como coisa de gente avancada, e nao fingir que e trivial.
+
+A pagina tem 6 telas e o ouvinte avanca no botao Proximo. No fim de cada tela, pedir claramente "aperte o Proximo", exatamente 5 vezes, sem juntar duas telas num bloco so. O aviso da pagina na abertura e um LEMBRETE de uma frase, nao uma explicacao: nao ensinar a usar a pagina. Na tela interativa (4), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+
+No encerramento, dizer o que transfere (as sete pecas nao sao de Java: qualquer programa que outra pessoa va abrir precisa das mesmas sete, e so muda o nome da ferramenta), e fechar com o gancho pro proximo capitulo, sobre entrar numa maquina que nao tem monitor nem teclado e pode estar em outro pais, sem entregar a resposta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Que Falta Pra Estar No Ar.txt. NAO invente analogias novas. A unica autorizada e a loja que abre pra rua, so pra explicar o que muda quando o programa deixa de ser so seu, com o limite dito em voz alta no roteiro: loja fecha a noite, e um programa no ar nao fecha.
+
+Use tambem o Overview.txt como contexto curto.

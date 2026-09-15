@@ -33,7 +33,11 @@ body.menu-aberto { overflow: hidden; }
   align-items: center;
   gap: 6px;
   padding: 0 10px;
-  background: var(--surface);
+  /* o topo do SITE-AFX (13/09): o papel quase opaco com desfoque por baixo, e a
+     linha fina embaixo. color-mix pra valer no claro e na "noite" */
+  background: color-mix(in srgb, var(--ground) 88%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
 
@@ -71,19 +75,55 @@ body.menu-aberto { overflow: hidden; }
 .barra__botao--aberto span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .barra__botao--aberto span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
-/* a marca: o caminho de volta pra casa, sempre a vista */
-.barra__marca {
-  font-family: var(--fonte-titulo);
-  font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: -.01em;
-  color: var(--ink);
-  text-decoration: none;
-  padding: 6px 8px;
-  border-radius: 6px;
+/* ---------- o canto de sair: o hamburguer e o voltar ---------- */
+
+/* os dois andam juntos, e quem os monta e o js/menu.js: nem a barra nem o voltar
+   sao escritos nas paginas */
+.barra__ir {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.barra__marca:hover { background: var(--surface-alt); color: var(--accent); }
+/* o voltar: quem leva um degrau acima na arvore (episodio -> etapa -> serie).
+   E botao, nao link fininho: no telefone ele e o alvo que se erra, entao tem
+   altura de dedo e borda em vez de sublinhado. A seta e desenhada aqui, pra
+   nenhum texto de pagina precisar carregar o "←" */
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--surface);
+  color: var(--accent);
+  font-family: var(--fonte-mono);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: border-color .2s, background .2s;
+}
+
+.voltar::before { content: "←"; margin-right: 8px; font-size: 13px; letter-spacing: 0; }
+.voltar__resto { padding-left: .4em; }
+.voltar:hover { border-color: var(--accent); background: var(--surface-alt); }
+.voltar:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* na barra do site o voltar e o botao de traco do SITE-AFX (13/09): tracejado que
+   vira linha cheia no hover. So dentro da .barra: a animacao monta o voltar dela no
+   .topo e fica com a cara antiga ate a fase 2 */
+.barra .voltar {
+  border: 1px dashed var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: .14em;
+}
+.barra .voltar:hover { border-style: solid; border-color: var(--ink); background: transparent; }
 
 /* ---------- o menu ---------- */
 
@@ -153,42 +193,180 @@ body.menu-aberto { overflow: hidden; }
 
 .menu__inicio:hover { text-decoration: underline; text-underline-offset: 4px; }
 
+/* no site o losango vira o traco do rotulo tecnico do SITE-AFX (13/09). O menu entra
+   logo depois da .barra; na animacao ele vem depois do .topo e fica como era */
+.barra + .menu .menu__inicio { gap: 14px; font-weight: 500; letter-spacing: .18em; color: var(--ink-soft); }
+.barra + .menu .menu__inicio::before,
+.barra + .menu .menu__item--acesso::before {
+  width: 22px;
+  height: 1px;
+  border-radius: 0;
+  transform: none;
+  background: var(--line-strong);
+}
+.barra + .menu .menu__inicio::before { width: 34px; }
+
+/* a primeira linha do menu: a volta pro inicio e, na outra ponta, a troca de tema */
+.menu__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* a troca de tema claro/escuro (13/09, pedido dele): pilula de traco, com o desenho
+   do tema pra onde ela leva. O --line-strong so existe nos tokens do site; a
+   animacao, com a paleta antiga, cai no --line */
+.menu__tema {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px dashed var(--line-strong, var(--line));
+  border-radius: 99px;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--fonte-mono);
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.menu__tema:hover { border-style: solid; border-color: var(--ink); }
+.menu__tema svg { flex: none; width: 16px; height: 16px; }
+
 /* ---------- a grade das series ---------- */
 
 /* cada serie e um bloco; a grade poe quantos couberem lado a lado e empilha o resto */
+/* auto-FILL, nao auto-fit: o fit descarta a faixa que sobra vazia, e a serie com
+   episodios ocupa duas faixas, entao o ultimo bloco ficava sem onde entrar e caia
+   pra segunda fileira, abrindo um vao. O fill mantem a faixa de pe pra ele */
 .menu__grade {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: clamp(22px, 3vw, 40px);
   align-items: start;
   margin-top: clamp(18px, 3vw, 26px);
 }
 
-/* o nome da serie: fonte de titulo, tamanho de leitura. Em caixa alta miuda
-   (como era na gaveta estreita) um nome de seis palavras vira um bloco ilegivel */
-.menu__titulo {
+/* o cabecalho do bloco: o nome e a seta, numa linha que abre e fecha inteira */
+.menu__cabecalho {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.menu__cabecalho:hover .menu__titulo { color: var(--accent); }
+
+/* o nome da serie: fonte de titulo, tamanho de leitura. Em caixa alta miuda
+   (como era na gaveta estreita) um nome de seis palavras vira um bloco ilegivel.
+   Nao e link de proposito: quem leva pra pagina da serie e a linha de acesso,
+   a primeira da lista. Assim o nome grande so faz uma coisa, abrir e fechar */
+.menu__titulo {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
   font-family: var(--fonte-titulo);
   font-size: 1.02rem;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -.01em;
   color: var(--ink);
-  text-decoration: none;
+  user-select: none;
 }
 
-a.menu__titulo:hover,
-.menu__titulo[aria-current] { color: var(--accent); }
+/* a seta: um chevron desenhado com duas bordas, que gira ao abrir. O flex centra
+   a CAIXA do chevron; o translate acerta a TINTA, que a rotacao joga pra um canto
+   (o "v" pesa embaixo, o ">" pesa a direita). Sem esse acerto a seta fica torta */
+.menu__seta {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink-faint);
+  cursor: pointer;
+}
 
-/* o titulo de um bloco que nao leva a lugar nenhum (a lista do que vem por ai) */
-.menu__titulo--cinza { color: var(--ink-faint); }
+.menu__seta:hover { background: var(--surface-alt); color: var(--accent); }
 
-.menu__lista { display: flex; flex-direction: column; }
+.menu__seta::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform .25s ease;
+}
+
+/* fechado o chevron aponta pro lado; aberto, pra baixo */
+.menu__bloco--fechado > .menu__cabecalho .menu__seta::before,
+.menu__ramo--fechado > .menu__linha .menu__seta::before {
+  transform: translateX(-2px) rotate(-45deg);
+}
+
+/* a caixa que encolhe: grid-template-rows aceita altura desconhecida, coisa que
+   max-height so faz com um numero magico maior que a maior lista. O visibility
+   tira os links do Tab enquanto estao guardados */
+.menu__itens {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows .25s ease, visibility .25s;
+}
+
+.menu__bloco--fechado > .menu__itens,
+.menu__ramo--fechado > .menu__itens {
+  grid-template-rows: 0fr;
+  visibility: hidden;
+}
+
+/* o miolo das duas caixas que encolhem. min-height:0 e o que faz o 0fr valer:
+   item de grid nasce com min-height auto, e com isso a linha continua do tamanho
+   do conteudo e a caixa "fechada" segue ocupando altura */
+.menu__lista,
+.menu__sub {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.menu__lista { min-width: 0; }
+
+/* a linha de acesso: a porta pra pagina do bloco, que o nome deixou de ser */
+.menu__item--acesso {
+  font-family: var(--fonte-mono);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.menu__item--acesso::before {
+  content: "";
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  align-self: center;
+}
 
 /* uma etapa ou um extra. O filete da esquerda so acende no item da pagina atual;
    o padding vale pra todos, pra o texto nao dancar de um item pro outro */
@@ -220,6 +398,54 @@ a.menu__item:hover { background: var(--surface-alt); color: var(--accent); }
   color: var(--ink-faint);
   cursor: default;
 }
+
+/* ---------- os episodios pendurados numa etapa ---------- */
+
+/* a etapa e a seta dos episodios, lado a lado. A linha inteira abre e fecha,
+   como o cabecalho do bloco; a porta pra pagina da etapa e a linha de acesso */
+.menu__linha {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/* o nome da etapa: nao e link, so abre e fecha. Sem selecao de texto, senao
+   abrir e fechar duas vezes seguidas pinta o nome de azul */
+.menu__item--nome { user-select: none; }
+
+.menu__linha:hover .menu__item--nome,
+.menu__linha:hover .menu__seta { color: var(--accent); }
+
+.menu__linha .menu__item { flex: 1; min-width: 0; }
+.menu__linha .menu__seta { width: 28px; height: 28px; }
+
+/* o fio vertical desenha a descendencia sem precisar de bullet nem de recuo grande */
+.menu__sub {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 8px 21px;
+  padding-left: 11px;
+  border-left: 1px solid var(--line);
+}
+
+.menu__sub .menu__item {
+  padding: 5px 8px;
+  border-left: 0;
+  border-radius: 6px;
+  font-size: .84rem;
+  color: var(--ink-faint);
+}
+
+.menu__sub a.menu__item:hover { color: var(--accent); }
+
+/* a porta pra pagina da etapa, encabecando os episodios: e uma linha de acesso
+   como a do bloco, entao volta ao mono do accent que a lista pinta de cinza */
+.menu__sub .menu__item--acesso { color: var(--accent); }
+
+/* o episodio aberto acende o fio do ramo inteiro, pra achar de longe onde se esta */
+.menu__sub .menu__item--ativo { color: var(--accent); background: var(--accent-soft); }
+.menu__ramo:has(.menu__item--ativo) .menu__sub { border-left-color: var(--accent-edge); }
 
 /* o numero da etapa, em mono, alinhado numa coluna so */
 .menu__num {
@@ -267,16 +493,10 @@ a.menu__item:hover { background: var(--surface-alt); color: var(--accent); }
 
 /* ---------- apertos, no fim da folha de proposito ---------- */
 
-/* com espaco, a lista longa (os 18 extras) ocupa duas colunas em vez de virar
-   uma tira de meio metro que obriga a rolar o menu inteiro */
-@media (min-width: 900px) {
-  .menu__bloco--largo { grid-column: span 2; }
-  .menu__bloco--largo .menu__lista {
-    display: block;
-    columns: 2;
-    column-gap: clamp(18px, 2.5vw, 32px);
-  }
-  .menu__bloco--largo .menu__item { break-inside: avoid; }
+/* estreito demais pra duas faixas: uma so, e os blocos empilham. Empilhados nao
+   existe vao possivel, porque nao ha fileira em que um bloco espere o outro */
+@media (max-width: 899px) {
+  .menu__grade { grid-template-columns: 1fr; }
 }
 
 /* no estreito a grade vira uma coluna so. Sem mouse pra mirar, cada opcao cresce
@@ -284,13 +504,26 @@ a.menu__item:hover { background: var(--surface-alt); color: var(--accent); }
    que o dedo pede, e a letra sobe pra ler de longe. Rola mais, e e o certo:
    menu de telefone se percorre com o polegar */
 @media (max-width: 640px) {
-  .menu__grade { gap: 30px; }
+  /* colados, os blocos leem como uma lista: o filete de cada cabecalho ja separa
+     um do outro, e 30px de folga entre eles so empurrava o menu pra baixo */
+  .menu__grade { gap: 4px; }
+  .menu__cabecalho { padding: 12px 0 10px; margin-bottom: 0; }
   .menu__inicio { font-size: .74rem; }
-  .menu__titulo { font-size: 1.14rem; padding-bottom: 12px; margin-bottom: 6px; }
+  .menu__titulo { font-size: 1.14rem; }
   .menu__item { padding: 12px 8px 12px 12px; font-size: 1.02rem; }
   .menu__num { font-size: .8rem; }
-  .menu__rodape { gap: 8px 22px; }
-  .menu__rodape .menu__item { padding: 4px 0; font-size: .96rem; }
+  .menu__sub { margin-left: 24px; padding-left: 12px; }
+  /* o episodio tambem e alvo de dedo: 12px em cima e embaixo levam a linha a 44px */
+  .menu__sub .menu__item { padding: 12px 8px; font-size: .96rem; }
+  /* deitada, a faixa quebra no meio de um nome e a primeira serie sobe pra linha
+     do rotulo. Em pe, cada uma tem a sua linha e o rotulo encabeca */
+  .menu__rodape { flex-direction: column; gap: 2px; }
+  .menu__rodape-titulo { margin-bottom: 4px; }
+  .menu__rodape .menu__item { padding: 7px 0; font-size: .96rem; }
+  /* na barra estreita o destino por extenso empurra o hamburguer; a palavra
+     "voltar" com a seta ja diz pra onde, e o menu ao lado diz o resto */
+  .voltar { padding: 0 14px; }
+  .voltar__resto { display: none; }
 }
 
 /* no papel, nada de barra nem menu */

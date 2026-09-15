@@ -1,0 +1,108 @@
+Inicie dizendo: Hardware - O Cerebro e os Sentidos
+---------------
+
+Este e o audio da ETAPA 1 da serie HARDWARE, que se chama O CEREBRO E OS SENTIDOS. O audio de abertura da serie ja mostrou as cinco etapas por cima; aqui o zoom fica so na etapa 1.
+
+E uma VISAO GERAL DIRETA do que a etapa ensina, em cinco pedacos. NAO conte a etapa como historia: diga o que se aprende em cada pedaco, com clareza, e siga pro proximo. Cada pedaco vira um episodio proprio depois, com calma.
+
+A caixa d'agua que se cuida sozinha e o aparelho que a serie monta. Aqui ela aparece SO numa frase por pedaco, pra dizer onde aquilo vai servir. Nada de narrativa comprida com ela.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO. Nada de tarefa, nada de tabela pra preencher, nada de "o exercicio pede".
+
+NAO EXISTE ANIMACAO NESTE AUDIO: e audio puro. NAO peca pra apertar nada e NAO mande ninguem olhar nada: nada de "veja na tela", "na imagem", "na figura", "nesta pagina". Quem ouve esta no onibus, no carro ou andando: tudo tem que se entender so ouvindo.
+
+CHAMADAS DE EXTRAS: a serie tem episodios extras, que descem a fundo num assunto. Onde o roteiro marca CHAMADA DE EXTRA, diga numa frase so que existe, ou que vai existir, um episodio extra sobre aquilo, com o nome dele, e siga em frente. NAO explique o conteudo do extra ali. Quando o roteiro diz "ja existe", fale "tem um extra". Quando diz "ainda vai sair", fale "vai ter um extra". NAO invente extra que nao esteja no roteiro.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Cerebro e os Sentidos.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE AUDIO
+
+- A caixa d'agua que se cuida sozinha: o aparelho da serie. Usar so pra dizer, numa frase por pedaco, onde aquilo vai servir.
+
+Fora essa, explicar direto.
+
+---
+
+ROTEIRO
+
+PARTE 1 - O QUE A ETAPA 1 ENSINA
+
+Abrir dizendo, sem rodeio, as cinco coisas que a etapa ensina. Um: fazer a placa rodar um programa. Dois: ler um botao e ligar um rele. Tres: medir uma quantidade. Quatro: dosar uma saida, em vez de so ligar ou desligar. Cinco: decidir sozinha. No fim da etapa, um chip pequeno ja percebe o que acontece em volta e age sem ninguem apertar nada. Na serie, e isso que faz a caixa d'agua ligar a bomba sozinha.
+
+Dizer como acompanhar: da pra fazer tudo num simulador de Arduino que abre no navegador, sem comprar nada. Quem tiver as pecas na mao monta igual.
+
+PARTE 2 - PEDACO 1: O CEREBRO E O PROGRAMA QUE NAO PARA
+
+O que se aprende aqui. O microcontrolador e um computador inteiro dentro de um chip: processador, memoria e pinos pra falar com o mundo. O Arduino e uma placa que deixa facil usar um chip desses.
+
+Todo programa dessa placa tem duas partes. O setup roda uma vez, quando a placa liga, e diz o que cada pino vai fazer. O loop roda depois, de novo e de novo, sem parar nunca.
+
+O primeiro programa faz um LED piscar. E junto vem o jeito de a placa escrever texto pro computador enquanto roda, pelo cabo USB, numa janela chamada Monitor Serial. Na serie, o LED piscando e o sinal de vida da caixa d'agua.
+
+CHAMADA DE EXTRA (ainda vai sair): O que tem dentro do microcontrolador.
+
+CHAMADA DE EXTRA (ainda vai sair): A historia do Arduino, contando de onde essa placa veio. NAO contar a historia aqui: nem pais, nem ano, nem nome de pessoa.
+
+PARTE 3 - PEDACO 2: SIM OU NAO, O BOTAO E O RELE
+
+O que se aprende aqui. A entrada digital so conhece dois estados: ligado ou desligado. O primeiro sentido da placa e ler um botao.
+
+A armadilha que se aprende a evitar: um pino de entrada solto, sem nada ligado nele, nao le zero, le qualquer coisa. O resistor que prende o pino num valor conhecido resolve, e o proprio chip ja tem esse resistor dentro, que se liga no programa com INPUT_PULLUP.
+
+Do lado da saida: o pino da pouca corrente, feita pra dar sinal e nao pra puxar motor. Por isso ele nao liga uma bomba direto: ele aciona um rele, que e uma chave comandada por eletricidade. E ate o LED precisa de um resistor pra nao receber corrente demais, e essa conta e a lei de Ohm. Na serie, o botao faz o papel da boia e o rele faz o papel da bomba.
+
+CHAMADA DE EXTRA (ja existe, na serie Do Abaco a IA): Volt, Ampere e Watt, que explica tensao, corrente e resistencia.
+
+CHAMADA DE EXTRA (ainda vai sair, na serie Do Abaco a IA): O rele.
+
+Uma regra da serie, dita em voz alta: nada de tomada. O rele so liga coisa de baixa tensao. Ligar carga da rede eletrica e outro assunto, com outro cuidado.
+
+PARTE 4 - PEDACO 3: QUANTO, O NUMERO DE 0 A 1023
+
+O que se aprende aqui. A entrada analogica nao diz so sim ou nao: ela mede a tensao que chega no pino e transforma num numero de 0 a 1023. Zero e zero volt; 1023 e o maximo, cinco volts.
+
+Aprende-se a ler um trimpot, que e um botaozinho de girar, e ver o numero mudando no computador. Na serie, e o nivel da agua virando numero.
+
+CHAMADA DE EXTRA (ja existe, na serie Do Abaco a IA): O Sistema Binario, que mostra por que essa conta vai justamente ate 1023. NAO explicar o binario aqui.
+
+PARTE 5 - PEDACO 4: O MEIO TERMO, O PWM
+
+O que se aprende aqui. O pino nao consegue dar meia tensao. O que ele faz e ligar e desligar muito rapido, variando quanto tempo fica ligado em cada volta. Isso se chama PWM, e a proporcao de tempo ligado se chama ciclo de trabalho, de zero a cem por cento. No Arduino, esse valor se escolhe de 0 a 255.
+
+Aprende-se a regular o brilho de um LED girando o trimpot: o olho nao acompanha a piscada e ve o LED meio aceso. Na serie, e o LED que acende mais quanto mais cheia esta a caixa.
+
+CHAMADA DE EXTRA (ja existe, na serie Do Abaco a IA): O Hertz, sobre o que quer dizer ligar e desligar tantas vezes por segundo.
+
+PARTE 6 - PEDACO 5: A DECISAO
+
+O que se aprende aqui. O if e o else: se tal coisa, faz isso; senao, faz aquilo. Junto vem comparar numeros (maior, menor, igual) e juntar condicoes com e, ou e nao.
+
+E aqui que tudo se junta: ler o botao, ler o trimpot, decidir e acionar o LED e o rele. Na serie, e a primeira versao da caixa d'agua funcionando: a bomba liga quando o nivel baixa e o alarme acende quando o nivel fica perigoso.
+
+Um cuidado que se aprende junto, dito numa frase so: o ponto de ligar e o de desligar nao podem ser o mesmo, senao a bomba fica batendo liga e desliga; por isso existe uma folga entre os dois.
+
+PARTE 7 - ONDE ISSO APARECE
+
+Uma frase so: ler um contato, medir uma quantidade, dosar uma saida e decidir com uma regra e o que existe dentro do termostato da geladeira, do portao eletronico e da maquina de lavar.
+
+---
+
+ENCERRAMENTO
+
+Recapitular os cinco pedacos em poucas frases: o programa que nao para, o botao e o rele, o numero de 0 a 1023, o PWM e a decisao. Lembrar que cada um vira um episodio desta etapa, e que os extras ficam pra quem quiser ir mais fundo. E dizer que, na etapa 2, o controlador fica esperto: entra o sensor que mede a agua pelo eco, um visor mostrando o nivel e o jeito de fazer duas coisas ao mesmo tempo sem travar.

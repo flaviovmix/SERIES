@@ -1,15 +1,15 @@
 /* aparte
-   O bloco de nota ao lado do assunto: contexto que nao cabe no corpo. Depende de tokens.css. */
+   O bloco de nota ao lado do assunto: contexto que nao cabe no corpo. Depende de tokens.css.
+   Desenho do SITE-AFX desde 13/09/2026: o cartao tracejado de canto largo, sem a
+   faixa colorida da esquerda (o AFX nao tem cor de destaque; quem separa e a linha). */
 
 .aparte {
   margin: 0;
-  padding: 15px 18px;
+  padding: 18px 22px;
   background: var(--surface);
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 var(--raio) var(--raio) 0;
-  box-shadow: var(--shadow);
-  font-size: .9rem;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--raio-cartao);
+  font-size: .92rem;
   color: var(--ink-soft);
 }
 

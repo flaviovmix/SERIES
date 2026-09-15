@@ -1,0 +1,7 @@
+Titulo: O Galpao (provisório: o baixador leu o selo "Não lidos" da interface no lugar do título do NotebookLM)
+Notebook: 11-02-O galpao
+
+Descricao:
+O roteiro intitulado O Galpão descreve a evolução da infraestrutura física necessária para a inteligência artificial entre os anos de dois mil e quinze e dois mil e vinte e dois. A narrativa foca na mudança de paradigma onde o hardware, antes genérico, passou a ser desenhado especificamente para atender às demandas da arquitetura Transformer. O texto detalha o desenvolvimento de componentes cruciais como a TPU do Google e as placas H100 da Nvidia, enfatizando que o grande desafio atual não é apenas processar dados, mas transportá-los eficientemente através de memórias e conexões. Além disso, a obra humaniza essa trajetória técnica ao apresentar as trajetórias de figuras centrais como Jensen Huang, Norm Jouppi e Kevin Scott. O conteúdo também aborda os impactos logísticos e ambientais desse progresso, mencionando o enorme consumo elétrico e a necessidade de sistemas de refrigeração líquida nos centros de dados. Por fim, o material serve como um elo na série Do Ábaco à IA, preparando o terreno para discussões sobre a capacidade de resposta dos modelos de linguagem modernos.
+
+Link: https://notebook.google.com/notebook/057a1c99-5e9f-42c4-ac93-ad9188d6eb39

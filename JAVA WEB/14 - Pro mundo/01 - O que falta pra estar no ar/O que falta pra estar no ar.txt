@@ -1,0 +1,7 @@
+Titulo: O que falta pra estar no ar
+Notebook: 14-01-O que falta pra estar no ar
+
+Descricao:
+O texto descreve o conteúdo de um material educativo voltado para a transição de uma aplicação Java do ambiente de desenvolvimento local para a produção. O conteúdo funciona como um mapa conceitual, apresentando os sete componentes essenciais, como servidor, domínio e segurança, necessários para manter um sistema disponível na internet. A abordagem foca na visão panorâmica e na mudança de mentalidade, comparando o programa acessível ao público a uma loja aberta na rua, onde a estabilidade é fundamental. O material esclarece que colocar um site no ar envolve desafios além da programação, como a configuração de serviços automáticos e a gestão de dados de terceiros. Por fim, as fontes ressaltam que esses fundamentos são universais, aplicando-se a qualquer linguagem ou tecnologia utilizada no desenvolvimento de software.
+
+Link: https://notebook.google.com/notebook/a63d2242-6a0f-4a9a-8bd9-3575d4130965

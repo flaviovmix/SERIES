@@ -1,0 +1,153 @@
+Inicie dizendo: Entrar Na Maquina De Longe
+---------------
+
+Este episodio e da etapa PRO MUNDO, a ultima etapa da serie JAVA WEB. O episodio anterior deu o panorama da etapa inteira, com as pecas que faltam pra um programa estar no ar; este pega a primeira delas. Ate aqui a lista de tarefas rodou sempre na maquina do aluno: ele abre o navegador em localhost e ela esta la. A etapa que comeca agora tira ela dali e poe num endereco que outra pessoa consegue abrir. Este episodio e o passo antes de todos os outros: entrar na maquina que vai receber o programa.
+
+NAO CITAR NUMERO DE EPISODIO NEM DE ETAPA. Em nenhum momento dizer "episodio tres", "etapa oito" ou coisa parecida. Quando precisar retomar alguma coisa que a serie ja mostrou, dizer "nos capitulos anteriores", "la atras" ou "quando a gente viu isso". O ouvinte nao pode perceber ordem nenhuma alem do fio do assunto.
+
+O AUDIO NAO DITA COMANDO LETRA POR LETRA. A animacao mostra os comandos escritos. O audio cita o nome deles (ssh, pwd, ls, whoami, exit, sudo) e diz o que cada um faz, sem soletrar caminho, sem ditar endereco e sem ler linha de terminal em voz alta. Quem esta so no audio entende a ideia; quem esta na pagina ve o texto.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 7 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe: quem ouve a serie ja conhece a mecanica, e explicar do zero toda vez cansa. Uma frase, no maximo duas: sao 7 telas, quem esta so ouvindo acompanha normalmente, e quem esta com a pagina aberta vira a tela quando ouvir o pedido. NAO explicar o que e um botao, NAO ensinar a usar a pagina e NAO dizer a frase do pedido como exemplo.
+- Na tela interativa (5), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 7 telas. O audio TEM que pedir "aperte o Proximo" exatamente 6 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. Nada de sermao e nada de susto. A tela 6 fala do que quebra, e ela avisa sem apavorar: a ideia e criar habito, nao medo de mexer. Nao vender servidor proprio como coisa de gente avancada: e um computador comum, e essa e a noticia boa do episodio.
+
+O QUE TRANSFERE. No encerramento, dizer em uma frase o que deste episodio serve pra qualquer linguagem e qualquer stack, e nao so pra Java.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Entrar Na Maquina De Longe.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A fechadura e a chave, so pra explicar o par de chaves. A chave publica e a fechadura: voce instala ela na porta da maquina, e ela pode ficar a vista de todo mundo sem risco nenhum. A chave privada e a chave que fica no seu bolso, e ela nunca sai de casa. Dizer o limite na hora, dentro da propria tela: numa porta de verdade, quem olha bem a fechadura consegue fabricar a chave; aqui nao consegue, e quem garante isso e matematica, nao metal. Fora esse ponto, nao esticar a comparacao.
+
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: ENTRAR NA MAQUINA DE LONGE)
+
+Retomar em uma frase onde a serie chegou: nos capitulos anteriores a lista de tarefas ficou pronta e roda inteira na maquina do aluno, com o navegador aberto no proprio computador dele.
+
+Dizer o que muda agora: rodar na sua maquina nao e o fim. Enquanto so voce abre, o programa nao esta no ar. A parte da serie que comeca aqui poe a lista num endereco que outra pessoa consegue abrir, e o primeiro passo dela nao e mandar arquivo nenhum: e conseguir entrar na maquina que vai receber.
+
+Dizer o que este episodio cobre e o que ele nao cobre: hoje e so entrar, olhar em volta e sair sem quebrar nada. Empacotar, subir e ligar o programa vem depois.
+
+Lembrar a mecanica em uma frase, sem ensinar: sao 7 telas, quem esta so ouvindo acompanha normalmente, e quem esta com a pagina aberta vira quando ouvir o pedido.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (A MAQUINA QUE NAO E A SUA)
+
+Dizer o que e um servidor, tirando o misterio: e um computador comum. Mesmo tipo de processador, mesma memoria, mesmo sistema. A diferenca nao esta na peca, esta no jeito como ele vive: fica ligado o tempo todo, mora num predio com energia e internet que nao caem, e tem um endereco fixo que qualquer pessoa do mundo consegue alcancar. Dizer que hoje se aluga uma dessas por mes, por um preco de lanche, e que e assim que a maioria dos sites pequenos vive.
+
+Dizer a diferenca que muda tudo pra quem chega: ele nao tem monitor, nao tem teclado e nao tem mouse. Ninguem senta na frente dele. Nao existe area de trabalho, nao existe janela, nao existe icone pra clicar duas vezes. Tudo que acontece la dentro acontece por texto.
+
+Explicar por que isso importa e nao e detalhe: quem so usou computador clicando acha que instalar um programa numa maquina dessas e uma versao chata do que ja conhece, e nao e. E outro jeito de trabalhar, e e por isso que a serie parou pra dedicar um episodio inteiro a entrar la.
+
+Desmontar a ideia de que basta mandar o arquivo. Copiar o programa pra dentro da maquina e so uma parte pequena. Alguem precisa instalar o Java la, deixar o programa comecar sozinho quando a maquina reiniciar, deixar a porta certa aberta e ir ver o que aconteceu quando der errado. Cada uma dessas coisas e um comando digitado dentro da maquina. Sem uma forma de digitar la dentro, nada disso existe.
+
+Fechar a tela com a pergunta que abre a proxima: se a maquina nao tem teclado e esta longe, em outro predio, em outra cidade, como e que voce digita nela.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O QUE O SSH FAZ)
+
+Responder a pergunta da tela anterior: a resposta e um programa chamado SSH.
+
+Dizer o nome por extenso e o que ele significa, porque as duas palavras explicam o programa. Secure Shell. Shell e aquele programa que le o que voce digita e executa, o mesmo que ja apareceu nos capitulos anteriores quando a gente compilou e rodou coisa no terminal. Secure e o que ele fez de novo: essa conversa passa cifrada pela internet.
+
+Dizer o que ele e, na frase mais simples possivel: e um terminal na sua maquina cujos comandos executam na outra. Voce digita aqui, o comando roda la, a resposta volta e aparece aqui. A janela e sua, o trabalho e do outro lado.
+
+Dizer o que viaja nessa conexao, porque isso surpreende quem imagina area de trabalho remota: nao viaja imagem, nao viaja tela, nao viaja video. Viaja texto. O texto do comando que voce digitou e o texto que a maquina respondeu. E por isso que SSH funciona bem ate numa internet ruim, num celular, no meio do nada.
+
+Explicar o cifrado sem enrolar. Esse texto passa por muita gente no caminho: o roteador do cafe, o provedor, quem quer que esteja no meio. Cifrado quer dizer que quem esta no meio ve que existe uma conversa acontecendo, e nao ve o que foi dito. Nem os comandos, nem as respostas.
+
+Dizer as duas pecas, que sao as mesmas de sempre: um programa cliente, que roda na sua maquina e ja vem instalado no Windows, no Mac e no Linux, e um programa servidor, que fica rodando na maquina de destino esperando conexao numa porta, a porta vinte e dois. Se esse programa nao estiver rodando la, nao tem como entrar.
+
+Dizer como se chama a maquina na hora de conectar, sem ditar endereco: sao duas informacoes, quem voce e la dentro e qual e a maquina, separadas por um arroba. A conta que voce usa la nao tem nada a ver com a sua conta aqui: e um usuario que existe naquela maquina.
+
+Contar o que acontece na primeira vez, porque todo mundo topa com isso e quase todo mundo aperta sim sem ler: na primeira conexao o programa mostra uma sequencia de caracteres que identifica a maquina e pergunta se voce confia. Ele esta dizendo uma coisa honesta: ninguem me garantiu ainda que essa maquina do outro lado e a que voce quer. Se voce disser que sim, ele guarda essa identificacao, e a partir da proxima vez ele confere sozinho. O dia em que ele reclamar que a identificacao mudou e o dia de parar e perguntar por que, e nao de apagar o aviso pra conexao voltar a funcionar.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (CHAVE EM VEZ DE SENHA)
+
+Comecar pelo que a pessoa espera: da pra entrar com senha, como em qualquer outro lugar. Dizer em seguida que quase ninguem deveria, e explicar por que, sem misticismo.
+
+Dar o motivo concreto. O endereco da maquina e publico, a porta e conhecida, e existem programas varrendo a internet inteira o tempo todo tentando entrar em qualquer maquina que responda, com listas de usuario e senha comuns. Nao e alguem perseguindo voce, e nao tem nada de pessoal: e automatico, e comeca poucos minutos depois de a maquina existir. Uma senha boa aguenta; uma senha razoavel, num lugar que aceita tentativa a noite inteira, um dia nao aguenta.
+
+Apresentar a alternativa: um par de chaves. Sao dois arquivos gerados juntos, de uma vez so, na sua maquina. Um deles e a chave publica e vai instalada na maquina de destino. O outro e a chave privada e nunca sai da sua maquina, nunca e enviada, nem na hora de entrar.
+
+Usar a analogia da fechadura, uma vez: a chave publica e a fechadura, que voce instala na porta da maquina e que pode ficar a vista de todo mundo, porque fechadura a vista nao abre porta. A chave privada e a que fica no seu bolso. Dizer o limite na mesma tela: numa porta de verdade, quem olha bem a fechadura consegue fabricar a chave; aqui nao consegue, e quem garante isso e matematica, nao metal.
+
+Explicar como voce prova quem e sem entregar o segredo, em duas frases e sem formula: a maquina manda um desafio, o programa na sua maquina responde de um jeito que so quem tem a chave privada consegue responder, e a maquina confere a resposta usando a chave publica que ela ja tem. A chave privada participa e nao viaja.
+
+Dizer o cuidado pratico, que e a parte que as pessoas erram: a chave privada e um arquivo, e quem tiver esse arquivo entra como voce. Ela nao vai por mensagem, nao vai por e-mail, nao entra no repositorio de codigo junto com o projeto. E da pra por uma senha na propria chave, e ai o arquivo sozinho nao basta: quem copiar o arquivo ainda precisa da senha.
+
+Fechar dizendo o que se faz depois que a chave funciona: desligar a entrada por senha na maquina. A partir dali, tentar adivinhar senha ali nao adianta mais nada, porque nao existe senha pra adivinhar.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (DENTRO DA MAQUINA, TELA INTERATIVA)
+
+Avisar que tem um botao na tela pra acompanhar enquanto ouve: da pra tocar em cada comando e ver a resposta que a maquina devolve.
+
+Dizer o que muda no exato momento em que a conexao acontece, que e a coisa mais concreta do episodio: o texto que aparece antes do cursor troca. Ele deixa de ter o nome da sua maquina e passa a ter o nome da outra. Aquela janela continua sendo a sua janela, mas tudo que for digitado dali pra frente acontece do outro lado. Dizer que essa linha e o unico aviso que voce tem de onde esta, e que por isso vale o habito de olhar pra ela.
+
+Dar as tres perguntas que se faz sempre que chega numa maquina, com o comando de cada uma e o que ela responde. Quem eu sou aqui: o comando responde o nome do usuario com que voce entrou, e isso muda o que voce pode fazer. Onde eu estou: o comando responde o caminho da pasta em que voce caiu, que normalmente e a sua pasta pessoal. O que tem aqui: o comando lista os arquivos e pastas do lugar onde voce esta.
+
+Dizer onde as coisas moram numa maquina Linux, so o suficiente pra pessoa nao ficar perdida. A sua pasta pessoal, que e onde voce cai e onde voce pode escrever a vontade. A pasta de configuracao do sistema, onde ficam os arquivos que dizem como cada programa se comporta. A pasta onde o servidor web guarda o que ele serve pra internet. E a pasta dos registros, onde fica escrito o que aconteceu, que e pra onde se vai quando alguma coisa quebra. Dizer os nomes de passagem, sem soletrar caminho.
+
+Dizer como se sai: um comando encerra a conexao e voce volta pro seu prompt de sempre, o com o nome da sua maquina. Fechar a janela tambem derruba a conexao, e ai vale saber uma coisa: o que estava rodando por conta daquela sessao morre junto. Programa que precisa continuar de pe depois que voce sai nao pode ser ligado assim, e isso e assunto de outro dia.
+
+Convidar a reparar numa coisa enquanto mexe na tela: nenhum desses comandos e de Java. Sao comandos do sistema, os mesmos em qualquer maquina Linux do mundo.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (O QUE NAO FAZER)
+
+Comecar pela diferenca que a pessoa precisa sentir: na sua maquina, errar custa tempo seu. Numa maquina em producao, errar custa o site fora do ar pra todo mundo que ia usar. E la nao tem lixeira, nao tem desfazer, e o comando que apaga nao pergunta se voce tem certeza. Ele apaga.
+
+Explicar o root sem drama. Toda maquina Linux tem um usuario que pode tudo, e o nome dele e root. Pode tudo mesmo, inclusive apagar as pecas do proprio sistema enquanto ele esta rodando. Muito servidor novo chega com esse usuario liberado, e e comodo entrar sempre com ele, porque nenhum comando reclama.
+
+Dizer qual e o habito certo e por que ele e melhor: entrar com um usuario comum, e pedir poder de administrador so no comando que precisa, com o sudo na frente. Nao e burocracia. O ganho e que a maquina te obriga a reparar: no dia em que voce estiver prestes a fazer uma coisa seria, tem uma palavra a mais pra digitar, e essa palavra a mais e o segundo em que da tempo de ler o que voce ia mandar.
+
+Trazer a tese da serie pro lugar mais caro dela, que e este. Nos capitulos anteriores a gente falou de aceitar codigo que funciona e que voce nao entende. Aqui e a mesma coisa, so que a explosao nao demora meses: o comando pronto que voce copiou de um site ou pediu pra uma inteligencia artificial, colado num terminal de servidor, com poder de administrador, faz efeito no segundo seguinte, e o efeito pode ser a pasta errada apagada. Dizer o que fazer no lugar: ler o comando antes do enter e saber responder tres coisas sobre ele, o que ele apaga, onde ele escreve e o que ele baixa da internet. Se o comando baixa alguma coisa e executa direto, ou se ele apaga uma pasta inteira de uma vez, e hora de parar e entender, nao de apertar enter.
+
+Dar o erro classico, que e o mais bobo e o mais comum: ficar com duas janelas abertas, uma na sua maquina e outra no servidor, e digitar na errada. E assim que gente experiente apaga a pasta certa no lugar errado. O remedio e o mesmo do comeco: olhar a linha do prompt antes de rodar qualquer coisa que mexa em arquivo.
+
+Fechar sem apavorar: nada disso e motivo pra ter medo de entrar na maquina. E motivo pra entrar com o habito certo desde a primeira vez, que e mais facil do que corrigir o habito errado depois.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (ENCERRAMENTO)
+
+Recapitular em poucas frases. Um servidor e um computador comum que fica ligado, com endereco publico e sem tela; tudo la e texto. O SSH e um terminal seu cujos comandos executam nele, e o que viaja e texto cifrado. Voce prova quem e com um par de chaves: a publica fica na maquina, a privada nunca sai da sua. Dentro dela, o prompt diz onde voce esta, e as tres perguntas de sempre sao quem eu sou, onde eu estou e o que tem aqui. E o poder de administrador se pede por comando, nao se usa o tempo todo.
+
+O QUE TRANSFERE: nada deste episodio e de Java. Entrar por SSH e como se entra em qualquer maquina Linux do mundo, seja pra rodar um programa em Python, pra mexer num banco de dados, pra configurar um computadorzinho na sua casa ou pra olhar dentro de um servidor de qualquer empresa. E o par de chaves e o mesmo mecanismo que voce ja usou sem pensar quando mandou codigo pro repositorio remoto nos capitulos anteriores: la tambem era uma chave publica instalada do outro lado e uma privada que ficou com voce.
+
+Gancho pro proximo episodio, sem entregar a resposta: agora que da pra entrar na maquina, falta decidir o que exatamente se leva pra dentro dela. Nao e a pasta do projeto inteira, e tem uma coisa no meio dos seus arquivos que nao pode ir de jeito nenhum, porque uma vez que ela sobe, ela sobe pra sempre. E o proximo assunto.

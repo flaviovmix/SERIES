@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 4 &middot; Plano HARDWARE (Arduino e ESP32)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="etapa.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../index.html">&larr; Plano HARDWARE (Arduino e ESP32)</a> &middot; etapa 04</p>
+    <h1>A caixa d'água no WiFi</h1>
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span> <p class="note">não iniciada</p></div>
+    <p class="lede"><strong>Objetivo.</strong> Programar o ESP32 do kit pra entrar na rede WiFi de casa, servir uma página, guardar configuração que sobrevive ao desligar, mandar dados pro computador em JSON e conversar por Bluetooth com um app de celular; o Wokwi fica pra testar a lógica antes (D7).</p>
+  </header>
+
+  <div class="criterio">
+    <p class="rotulo">Pronto quando</p>
+    <p>As aulas 15 a 20 estão <code>✅</code> com data e o ESP32 do dono serve uma página que o navegador do PC abre, guarda a configuração da rede, manda um JSON que chega no PC e conversa com o celular por Bluetooth.</p>
+  </div>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>implementado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>em parte</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span></span></div>
+
+  <article class="corpo">
+<p><strong>Conteúdo de estudo:</strong> o que o ESP32 tem que o Arduino Uno não tem (WiFi, Bluetooth, dois núcleos, 3,3 V nos pinos); placas de 30 e de 38 pinos e o mapa dos pinos; ponto de acesso (o ESP32 cria a rede) e estação (ele entra numa rede); servidor e cliente; tarefas nos dois núcleos; gravar o programa pelo ar (OTA); a memória que não apaga (EEPROM na flash) e o mapa da flash; arquivos guardados na flash; a página de configuração de rede; JSON indo e voltando; e Bluetooth serial com o App Inventor.</p>
+<p><strong>Material:</strong> o arquivo de cada aula está no <code>PDF/_mapa.md</code>. O código vem pronto: um firmware completo com as páginas de configuração (a base das aulas 17 a 19), o exemplo de dois núcleos, o Modbus portado pro ESP32, o de Bluetooth com o projeto do App Inventor, o fluxo do Node-RED e a planilha com o mapa da EEPROM. Uma folha de montagem mostra as entradas e saídas na protoboard, manda tirar um jumper e avisa que os pinos 34, 35, 36 e 39 não têm pull-up.</p>
+<h3>Tarefas</h3>
+<div class="scroller"><table><thead><tr><th>N&ordm;</th><th>Tarefa</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">01</td><td>Montar o ESP32 na protoboard pela folha de montagem do material.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">02</td><td>Pôr o suporte do ESP32 na IDE na aula 16 (D7).</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">03</td><td>Mesmo formato de exercício das etapas anteriores.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr></tbody></table></div>
+<h2>Aulas (uma aula = um passo)</h2>
+<div class="scroller"><table><thead><tr><th>#</th><th>Aula</th><th class="status">Estado</th></tr></thead><tbody><tr><td>15</td><td><strong>O irmão com WiFi.</strong> O hardware do ESP32: entradas e saídas digitais e analógicas, WiFi, dois núcleos e Bluetooth; placas de 30 e de 38 pinos; o mapa dos pinos (pinout). Exercício 1: achar o pinout das duas placas. Exercício 2: remontar no ESP32 as entradas e saídas do supervisório da aula 14, em pinos que servem (os 34, 35, 36 e 39 não têm pull-up)</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>16</td><td><strong>Ponto de acesso, servidor e cliente.</strong> Pôr o ESP32 na IDE (o endereço das placas da Espressif no gerenciador de placas; no Wokwi ele já vem) e explorar os exemplos e as placas disponíveis. Exercício 1: o código Modbus da aula 14 com os pinos do ESP32, rodando com o Node-RED e atualizando a cada 100 ms. Exercício 2: o exemplo <code>WiFiAccessPoint</code> (o ESP32 cria a própria rede) acionando o relé. Exercício 3: o exemplo <code>SimpleWiFiServer</code> acionando o relé. Exercício 4: o exemplo <code>WiFiClientBasic</code> mandando a leitura analógica pro debug do Node-RED. Leitura extra: as duas aulas de automação residencial, que usam o mesmo servidor pra ligar a luz de casa pelo celular</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>17</td><td><strong>Dois núcleos, gravar pelo ar e memória que fica.</strong> Dual core: rodar o exemplo de tarefas, mudar prioridade e núcleo e ver se existe paralelismo no mesmo núcleo. OTA: gravar o programa pelo WiFi, sem cabo. EEPROM: o exemplo de escrita, mostrando que a informação sobrevive ao desligar; o mapa da memória flash. Arquivos na flash: preparar a IDE pra mandar arquivos (o plugin ESP32FS na pasta <code>tools</code>), mandar um <code>.txt</code> e imprimir no Monitor Serial. Webserver: rodar o código pronto, ver que não precisa saber o IP e como apagar a flash inteira, lendo pela lógica e não decorando a sintaxe</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>18</td><td><strong>A página de configuração.</strong> O código que deixa trocar o nome da rede (SSID), a senha e o IP fixo sem regravar o programa, guardando tudo na EEPROM (o mapa da EEPROM vem numa planilha)</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>19</td><td><strong>Mandar dados pra fora.</strong> JSON pro Node-RED do PC: importar o fluxo pronto e configurar até os dados irem e voltarem pro ESP32, com calma, caçando a causa quando não funcionar. E um GET que grava dados numa planilha do Google Sheets. Leitura extra: a palestra que manda dados de uma placa com ESP32 pro Google Sheets</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>20</td><td><strong>Bluetooth e o app do celular.</strong> O exemplo <code>SerialToSerialBT</code> com um app de terminal Bluetooth no celular; conhecer o App Inventor (tela de design e blocos); um app simples e depois importar o projeto pronto. Leitura extra: a aula de Alexa com ESP32, que liga um relé por voz (biblioteca Espalexa)</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr></tbody></table></div>
+  </article>
+
+  
+
+  <section>
+    <h2>Desvios registrados</h2>
+    <div class="desvios">
+<ul><li>11/09/2026: os nomes das aulas estavam errados, vindos de uma lista antiga. O material real junta dual core, OTA, memória e arquivos numa aula só (17), põe SSID, senha e IP fixo juntos (18) e termina com Bluetooth e App Inventor (20). Numeração nossa (D6).</li><li>11/09/2026: com o kit comprado (D7), o ESP32 é o de verdade, na rede de casa, e a P4 caiu.</li></ul>
+    </div>
+  </section>
+
+  <nav class="passo"><a class="nav-ir" href="etapa-03.html"><span>anterior</span>Etapa 3 &middot; O painel da portaria</a><a class="nav-ir nav-ir--fim" href="etapa-05.html"><span>pr&oacute;xima</span>Etapa 5 &middot; A placa própria</a></nav>
+
+  <footer>
+    <span>etapas/04-esp32-wifi.md</span>
+    <span>14.09.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

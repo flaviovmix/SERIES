@@ -1,0 +1,33 @@
+Inicie dizendo: Hardware - A Serie Inteira
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Serie Inteira.txt enviado como fonte.
+Esse arquivo contem o roteiro completo.
+
+Este e o audio de abertura da serie HARDWARE, que monta do zero uma caixa d'agua de predio que se cuida sozinha.
+
+FOCO: a serie inteira numa olhada so. A ideia que atravessa tudo, como acompanhar sem comprar nada, e o que cada uma das cinco etapas acrescenta no aparelho.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO: nada de tarefa, nada de tabela pra preencher.
+
+NAO descer em detalhe tecnico de nenhuma etapa: isto e a apresentacao da serie, e cada etapa tem o seu proprio audio.
+
+NAO EXISTE ANIMACAO: e audio puro. NAO peca pra apertar nada e NAO mande ninguem olhar nada: nada de "veja na tela", "na imagem", "na figura", "nesta pagina". A tela do computador da etapa 3 e a pagina que o celular abre na etapa 4 sao assunto do roteiro e podem ser ditas. Quem ouve esta no onibus ou no carro: tudo tem que se entender so ouvindo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_A Serie Inteira.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

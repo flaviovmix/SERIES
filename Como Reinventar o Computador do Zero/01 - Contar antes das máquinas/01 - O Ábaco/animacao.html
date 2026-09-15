@@ -6,16 +6,16 @@
 <title>O Ábaco — Equipamento 01</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- a base da animacao mora no site; o que e deste episodio vem por ultimo -->
 <link rel="stylesheet" href="../../../site/css/tokens.css">
 <link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
 <link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
 <link rel="stylesheet" href="../../../site/css/animacao/telas.css">
 <link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
 <link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
-<link rel="stylesheet" href="../../../site/css/animacao/modelo-3d.css">
 <link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
 <link rel="stylesheet" href="../../../site/css/animacao/painel.css">
 <link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
@@ -26,25 +26,10 @@
 <body>
 
 <header class="topo">
-  <div><a class="voltar" href="../../../site/etapas/etapa-01.html">← voltar pra etapa</a></div>
-  <div class="tocador">
-    <audio preload="metadata" src="Do%20risco%20no%20osso%20ao%20%C3%A1baco.mp3" data-duracao="1605"></audio>
-    <img class="tocador__capa" src="img/capa-tocador.jpg" alt="">
-    <div class="tocador__id">
-      <div class="tocador__titulo">Do risco no osso ao ábaco</div>
-      <div class="tocador__fonte">Série Equipamentos · 01 · O Ábaco</div>
-    </div>
-    <button class="tocador__salto" data-salto="-15" aria-label="voltar 15 segundos">↺<b>15</b></button>
-    <button class="tocador__play" aria-label="tocar">▶</button>
-    <button class="tocador__salto" data-salto="15" aria-label="avançar 15 segundos">↻<b>15</b></button>
-    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1605" aria-valuenow="0">
-      <div class="tocador__cheio"></div>
-      <div class="tocador__marcas"></div>
-    </div>
-    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">26:45</span></div>
-  </div>
   <div class="acoes">
-    <button class="btn-cabecalho" data-abre="modelo3d">🧊 abrir modelo 3D</button>
+    <button class="btn-cabecalho" data-abre="modelo3d"
+      data-modelo="../../_arquivos/modelos-3d/abaco.html" data-modelo-titulo="Modelo tridimensional do ábaco, com as contas móveis"
+      data-modelo-legenda="Arraste pra girar · role pra aproximar · clique nas contas pra mover">🧊 abrir modelo 3D</button>
   </div>
 </header>
 
@@ -63,15 +48,14 @@
         centena e milhar, cada uma valendo dez vezes a de baixo. Empurrar conta soma, puxar tira.
         Quando a haste chega em 9 e vem mais um, ela esvazia e nasce uma conta na casa de cima.
         Esse é o vai-um.</p>
-        <p>As práticas e demonstrações daqui usam <b>este</b> modelo, o mais simples:
-        uma conta vale uma unidade. O chinês e o japonês que aparecem nas fotos têm uma barra,
+        <p>As práticas e demonstrações daqui usam o modelo mais simples, <b>o da foto</b>:
+        uma conta vale uma unidade. O chinês e o japonês, que aparecem mais adiante, têm uma barra,
         e a conta de cima vale cinco. Lê mais rápido, custa uma regra a mais.</p>
       </div>
-      <button class="btn-mini cheio clicavel capa-botao reveal" data-abre="modelo3d">abrir modelo 3D</button>
     </div>
     <figure class="capa-modelo reveal">
-      <iframe data-src="../../_arquivos/modelos-3d/abaco.html" title="Modelo tridimensional do ábaco, com as contas móveis"></iframe>
-      <figcaption>Arraste pra girar · role pra aproximar · clique nas contas pra mover</figcaption>
+      <img src="img/schoty.jpg?v=2" alt="Schoty, o ábaco russo de madeira: dez contas em cada haste, com duas escuras no meio">
+      <figcaption>O schoty, o ábaco russo: dez contas por haste, cada uma valendo um · Wikimedia Commons, domínio público</figcaption>
     </figure>
   </section>
 
@@ -378,6 +362,11 @@
         <div class="nome">Soroban 🇯🇵</div>
         <div class="desc">O japonês, mais enxuto: 1 conta em cima (vale 5), 4 embaixo. Ensinado em escolas até hoje; campeonatos de velocidade existem.</div>
       </div>
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="O schoty, o ábaco russo: dez contas por haste, cada uma valendo um · Wikimedia Commons, domínio público">
+        <img class="foto" src="img/schoty.jpg?v=2" alt="Schoty, o ábaco russo, com a haste de quatro contas no meio">
+        <div class="nome">Schoty 🇷🇺</div>
+        <div class="desc">Ficou curioso com a haste de <b>quatro</b> contas do ábaco da capa? É a haste das frações: cada conta vale um quarto. E ela serve de divisória — acima dela, a parte inteira; abaixo, os copeques, os centavos. As duas contas escuras no meio de cada haste são marca pro olho: de relance dá pra ver se passou de cinco.</div>
+      </div>
       <div class="item clicavel reveal" data-abre="foto" data-legenda="Quem faz a conta andar é a mão · reconstituição, não é foto de época">
         <span class="selo">ilustração</span>
         <img class="foto" src="img/abaco-em-uso.jpg" alt="Mãos movendo as contas de um ábaco de madeira">
@@ -390,18 +379,39 @@
 
 </main>
 
+  <div class="tocador">
+    <audio preload="metadata" src="Do%20risco%20no%20osso%20ao%20%C3%A1baco.mp3" data-duracao="1605"></audio>
+    <img class="tocador__capa" src="img/capa-tocador.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">Do risco no osso ao ábaco</div>
+    </div>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1605" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__controles">
+      <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+      <div class="tocador__transporte">
+        <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+        <button class="tocador__play" aria-label="tocar">▶</button>
+        <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+      </div>
+      <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">26:45</span></div>
+    </div>
+  </div>
+
 <footer class="navegacao">
-  <button class="nav-btn ghost navegacao__anterior">← Anterior</button>
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
   <div class="navegacao__meio">
     <div class="bolinhas" role="group" aria-label="telas"></div>
     <div class="contador"></div>
   </div>
-  <button class="nav-btn navegacao__proximo">Próximo →</button>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
 </footer>
 
 <!-- a base, na ordem de dependencia; depois o que e deste episodio -->
+<script src="../../../site/js/menu.js"></script>
 <script src="../../../site/js/animacao/telas.js"></script>
-<script src="../../../site/js/animacao/modelo-3d.js"></script>
 <script src="../../../site/js/animacao/lightbox.js"></script>
 <script src="../../../site/js/animacao/tocador.js"></script>
 <script src="../../../site/js/animacao/trilha.js"></script>

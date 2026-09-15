@@ -1,0 +1,515 @@
+Inicie dizendo: O Galpao
+---------------
+
+Este e o segundo episodio da etapa A MAQUINA QUE CONVERSA, a decima primeira etapa da serie
+Do Abaco a IA. O episodio anterior, A Escala, cobriu de dois mil e dezessete a dois mil e
+vinte e dois e terminou com o GPT tres ponto cinco pronto e uma pergunta: a reta diz quanto o
+modelo precisa; quem constroi o galpao que cabe isso? Este episodio responde: conta a peca
+que teve que mudar pro programa caber.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. NAO transformar em historia de empresa que deu certo, NAO
+fazer corrida de empresas, NAO falar de valor de acao e NAO fazer sermao sobre inteligencia
+artificial. O assunto e a PECA: o chip, a memoria, o fio entre as placas, a luz e o calor.
+
+ESTE EPISODIO COBRE DE 2015 A 2022, EM ORDEM. Dizer esse intervalo em voz alta logo na
+abertura e, no encerramento, dizer em que ano o episodio parou. Os anos se sobrepoem com o
+episodio anterior de proposito: o anterior foi de dois mil e dezessete a dois mil e vinte e
+dois, e este comeca antes e termina no mesmo ano, contado pelo lado da placa. Duas pontas
+saem da janela e sao ditas como tal: o fio NVLink foi anunciado em dois mil e catorze, e a
+placa de casa da tela 5 e de dois mil e vinte e cinco.
+
+A TESE, E ELA TEM QUE SER DITA COM ESSAS PALAVRAS: ate aqui o software tomava a forma da
+placa; o Transformer foi desenhado pra caber na placa de video. Neste episodio acontece o
+contrario: a placa passa a ser desenhada pro Transformer. E o problema deixa de ser fazer a
+conta e passa a ser levar o numero de um lado pro outro.
+
+COM PESSOAS E COM NOME. As pessoas entram pelo nome, em ordem cronologica. Dizer quem fez,
+onde estava e por que fez.
+
+FICHA DE CADA PESSOA, EM VOZ ALTA. Na PRIMEIRA vez que cada pessoa aparece, dizer a ficha
+dela, curta, do jeito que o roteiro escreve, e seguir em frente. Onde o roteiro escrever
+FICHA, ler a ficha. Neste episodio NINGUEM entra com idade:
+
+- Norm Jouppi NAO tem ano nem lugar de nascimento publico. Entra sem idade.
+- Eyal Waldman nasceu em Jerusalem, mas o ano NAO esta confirmado. Entra sem idade.
+- Kevin Scott nasceu em mil novecentos e setenta e dois, mas o dia nao e publico. Entra com o
+  ano e SEM idade.
+
+JENSEN HUANG E ILYA SUTSKEVER JA TEM FICHA NESTA SERIE (Huang na placa de video, Sutskever na
+AlexNet). Aqui os dois sao relembrados em uma frase, sem repetir a ficha.
+
+TODOS OS PROTAGONISTAS ESTAO VIVOS EM DOIS MIL E VINTE E SEIS. Ninguem morreu.
+
+A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dizer "ficha",
+"deixa eu ler a ficha" nem nada parecido: emendar direto no nome. A PALAVRA "CENA" TAMBEM E
+MARCADOR: NAO dizer "naquela cena" nem "na cena".
+
+⚠️ O AVISO DA PAGINA E UM LEMBRETE, NAO UMA EXPLICACAO. Quem ouve esta serie ouve em
+sequencia e ja sabe como a pagina funciona. NAO explicar a mecanica do zero. UMA fala so, de
+UM apresentador, na tela 1: sao doze telas, quem esta so ouvindo acompanha normalmente, e
+quem esta com a pagina aberta vira quando ouvir o pedido. O OUTRO APRESENTADOR NAO COMENTA.
+Sem ensinar a usar a pagina e sem dizer a frase do pedido como exemplo.
+
+⚠️ A APOSTA TEM QUE SOAR COMO APOSTA, E ESTE EPISODIO TEM TRES. Quando contar uma decisao
+que deu certo, dizer o que NAO se sabia naquele dia:
+
+- NA TELA 2, o chip do Google: um chip que so sabe fazer a conta da rede neural. Se a rede
+  neural fosse moda de poucos anos, era um chip que nao servia pra mais nada.
+- NA TELA 3, a maquina da Nvidia: tres mil pessoas por tres anos numa maquina pra treinar
+  rede neural, quando quase ninguem treinava rede neural desse tamanho. Podia ficar na
+  prateleira.
+- NA TELA 8, a compra da empresa do fio: em dois mil e dezenove a Nvidia era conhecida por
+  placa, e pagou quase sete bilhoes de dolares por uma empresa de rede. Se o galpao nao
+  crescesse, era dinheiro por um cabo.
+
+⚠️ AMARRAR COM OS OUTROS EPISODIOS DESTA ETAPA. Os quatro se cruzam nos mesmos anos, por
+fios diferentes. Onde as datas se cruzarem, lembrar em UMA frase o que estava acontecendo do
+outro lado:
+- na tela 2, o BERT do episodio anterior foi treinado em TPU;
+- na tela 9, nove dias depois do anuncio da Microsoft sai o GPT tres do episodio anterior;
+- na tela 11, a H100 e anunciada no mes do Chinchilla, do episodio anterior, e do
+  InstructGPT, que e o episodio tres.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o Proximo"
+exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa, "aperte o
+Proximo", COM o "o", sem variacao. NAO juntar o conteudo de duas telas num bloco so, NAO
+adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir.
+
+AO LEMBRAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO. Dizer so
+"quando ouvir o pedido".
+
+NAO ESTICAR A TELA. Dizer o que a tela tem pra dizer, do jeito mais direto, e pedir o
+Proximo. NAO repetir com outras palavras o que acabou de ser dito, NAO resumir a tela
+anterior antes de comecar a nova, e NAO comentar o proprio comentario.
+
+ATENCAO ESPECIAL COM AS TELAS 3 e 4. A tela 3 e o DGX-1 e a entrega na OpenAI. A tela 4 e a
+explicacao de por que oito placas: a turma que vira escola. Duas telas, dois pedidos.
+
+ATENCAO ESPECIAL COM AS TELAS 6 e 7. A tela 6 e dois mil e dezessete (a V100 e a TPU v2). A
+tela 7 e dois mil e dezoito (o NVSwitch e o liquido na TPU v3). NAO adiantar o liquido na tela 6.
+
+ATENCAO ESPECIAL COM AS TELAS 10 e 11. A tela 10 e a conta de luz. A tela 11 e a H100. NAO
+falar da H100 na tela 10.
+
+ATENCAO ESPECIAL COM AS TELAS 11 e 12. A tela 12 e OUTRA COISA: o balanco das pessoas, onde
+estavam em dois mil e vinte e seis, a licao e a pergunta que abre o proximo episodio. Um
+pedido entre as duas.
+
+⚠️ ESTE EPISODIO NAO FECHA NADA. Na ultima tela NAO dizer "fim da serie", "fim da etapa",
+"ate o proximo", "ate a proxima", "proximo mergulho" nem "proximo encontro". NENHUMA
+despedida. So o balanco, a licao e a pergunta.
+
+OS ANOS SAO DITOS POR EXTENSO E DEVAGAR: "dois mil e catorze", "dois mil e quinze", "dois mil
+e dezesseis", "dois mil e dezessete", "dois mil e dezoito", "dois mil e dezenove", "dois mil
+e vinte", "dois mil e vinte e um", "dois mil e vinte e dois", "dois mil e vinte e tres",
+"dois mil e vinte e cinco", "dois mil e vinte e seis".
+
+NUMEROS DEVAGAR, SEMPRE COM A UNIDADE: "oito placas", "tres mil e duzentos watts", "duzentos
+e cinquenta servidores", "tres mil pessoas por tres anos", "dezesseis gigabytes", "trinta e
+dois gigabytes", "dois bytes", "meio byte", "trinta bilhoes de parametros", "setenta bilhoes
+de parametros", "cento e setenta e cinco bilhoes", "trezentos e cinquenta gigabytes", "onze
+placas", "seiscentos e quarenta", "sessenta e quatro", "dezesseis placas", "dois virgula
+quatro terabytes por segundo", "seis bilhoes e novecentos milhoes de dolares", "sete bilhoes
+de dolares", "duzentos e oitenta e cinco mil nucleos de processador", "dez mil placas de
+video", "quatrocentos gigabits por segundo", "quinhentos e sessenta gabinetes", "quinhentos e
+trinta bilhoes de parametros", "mil duzentos e oitenta e sete megawatts-hora", "trezentos e
+trinta watts", "uns quinze dias", "seiscentas e quinze casas", "oitenta bilhoes de
+transistores", "oitenta gigabytes", "seis vezes", "setecentos watts", "dez mil e duzentos
+watts". NAO trocar milhao por bilhao nem bilhao por trilhao. NAO trocar gigabyte por
+terabyte.
+
+NOMES ESTRANGEIROS: dizer devagar e com calma na primeira vez que cada um aparecer, e
+seguir em frente. NAO comentar como o nome se pronuncia, NAO repetir o nome logo em seguida,
+e NAO usar as expressoes "fala-se", "que se pronuncia", "pronuncia-se" nem "que se le". Dizer
+o nome UMA vez e continuar. Os nomes deste episodio: Google, Norm Jouppi, Stanford,
+Northwestern, MIPS, Street View, AlphaGo, Lee Sedol, Nvidia, Jensen Huang, OpenAI, Ilya Sutskever, DGX-1,
+NVLink, P100, AMD, Radeon Fury X, RTX 5090, V100, Tensor Core, NVSwitch, DGX-2, Mellanox,
+InfiniBand, Eyal Waldman, Jerusalem, Technion, Intel, Microsoft, Kevin Scott, Gladys, Virginia,
+Lynchburg College, Wake Forest, LinkedIn, A100,
+Selene, Megatron-Turing, David Patterson, H100, Grace Hopper, Transformer Engine, Chinchilla,
+InstructGPT, 60 Minutes, CBS, Overview, PBS. As siglas GPT e TPU sao ditas letra por letra,
+em portugues, e os numeros delas em portugues: "GPT tres", "GPT tres ponto cinco", "TPU dois",
+"TPU tres". Os nomes das placas sao ditos letra e numero: "P cem", "V cem", "A cem", "H cem",
+"DGX um", "DGX dois". Dizer "rede neural" em portugues, NUNCA "deep learning".
+
+⚠️ DEFEITOS DE GRAVACOES ANTERIORES DESTA SERIE, QUE NAO PODEM VOLTAR:
+
+1. NAO usar "genial", "genialidade", "genio", "revolucao" nem "revolucionario", nem pra
+   elogiar pessoa nem pra elogiar peca. Dizer o que a coisa FAZ.
+2. O fecho da ficha e sempre com o ano dito: "em dois mil e vinte e seis estava em tal
+   lugar". NUNCA "hoje", "atualmente" nem futuro vago ("continuaria", "estaria liderando").
+   Ler a ficha COMO ESTA ESCRITA, sem acrescentar cargo nem empresa.
+3. NAO inventar frase dramatica que nao esta aqui ("chega o monstro", "a midia pirou", "pulo
+   do gato", "chocante", "bizarro", "que loucura"). Dizer o que esta escrito, direto.
+4. NAO pular os ganchos: o extra na tela 10, as duas obras nas telas 3 e 10, as datas de
+   todas as telas.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+A LINHA "Inicie dizendo" E UMA INSTRUCAO, NAO E FALA. O episodio comeca com o apresentador
+dizendo so o titulo, "O Galpao".
+
+A ABERTURA E DIRETA, SEM CENA INVENTADA, SEM COMPARACAO E SEM CHAMADA. Depois do titulo, a
+primeira frase e a retomada da pergunta que o episodio anterior deixou.
+
+NAO EXISTE MODELO TRIDIMENSIONAL NESTE EPISODIO. As telas sao fotos, uma pratica (tela 5) e
+uma tela interativa (tela 7).
+
+GANCHO DE EXTRA: este episodio anuncia UM extra, com a frase generica "tem um extra sobre
+isso", SEM dizer nome nem numero do extra: na tela 10, sobre a placa de treinar por dentro
+(o chip, a memoria empilhada, o fio entre as placas, a luz e o calor). Uma frase, onde o
+roteiro manda.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A turma de quinta serie, que a serie ja usou na etapa 9 e no episodio anterior: a placa de
+  video e uma turma de alunos de quinta serie; a professora dita UMA continha e a turma
+  inteira faz ao mesmo tempo, cada aluno com os seus numeros. Aqui ela so e lembrada, nao
+  explicada de novo.
+- A escola e o corredor, que e o que este episodio acrescenta: quando uma turma so nao da
+  conta, junta-se varias turmas, e a placa vira uma escola inteira. Cada sala faz a continha
+  dela, mas as salas precisam trocar os resultados, e quem leva o resultado de uma sala pra
+  outra anda pelo corredor. Se o corredor e estreito, as salas ficam paradas esperando. O
+  fio entre as placas e esse corredor. Usar nas telas 4 e 7, e lembrar em uma frase na tela 8.
+
+Fora essas duas, sem analogias. A memoria empilhada, o Tensor Core, a conta de luz e a conta
+dos bytes sao explicados direto, sem analogia. Dizer o gasto de luz em casas por ano, na tela 10,
+nao e analogia: e a mesma conta em outra unidade.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA)
+
+TELA 1 - QUEM CONSTROI O GALPAO
+
+Retomar a pergunta que ficou, com as palavras dela: o episodio passado mostrou o mesmo
+desenho de dois mil e dezessete ficando mil vezes maior, e terminou perguntando: a reta diz
+quanto o modelo precisa; quem constroi o galpao que cabe isso?
+
+Dizer o que este episodio conta: a peca. O que teve que mudar dentro da placa, em volta da
+placa e entre as placas pra esse programa caber.
+
+Dizer a tese, com essas palavras: ate aqui o software tomava a forma da placa; o Transformer
+foi desenhado pra caber na placa de video. Neste episodio acontece o contrario: a placa passa
+a ser desenhada pro Transformer. E o problema deixa de ser fazer a conta e passa a ser levar
+o numero de um lado pro outro.
+
+Dizer o intervalo em voz alta: este episodio cobre de dois mil e quinze a dois mil e vinte e
+dois. Comeca antes do episodio passado e termina no mesmo ano, contado pelo lado da placa.
+
+Lembrar a pagina, em UMA fala so: sao doze telas, quem esta so ouvindo acompanha
+normalmente, e quem esta com a pagina aberta vira quando ouvir o pedido.
+
+Fechar pedindo o Proximo pra ver o primeiro chip feito so pra isso.
+
+TELA 2 - DOIS MIL E QUINZE A DEZOITO DE MAIO DE DOIS MIL E DEZESSEIS: A TPU
+
+Contar o chip e o dia: em dezoito de maio de dois mil e dezesseis o Google conta que tem um
+chip proprio, feito so pra fazer a conta da rede neural, e que ja rodava esse chip dentro dos
+data centers havia mais de um ano, desde dois mil e quinze. Chama o chip de TPU. Ja estava
+por tras da busca, do Street View e do AlphaGo nas partidas contra Lee Sedol.
+
+Dizer o que o Google mediu, com as palavras dele, em uma frase: uma ordem de grandeza melhor
+de desempenho por watt, ou seja, umas dez vezes mais conta com a mesma luz.
+
+FICHA: quem assina o anuncio e Norm Jouppi. Nao tem ano nem lugar de nascimento publico.
+Fez mestrado na Northwestern e doutorado em Stanford, onde foi um dos arquitetos do
+processador MIPS; passou por laboratorios de pesquisa de fabricantes de computador e entrou
+no Google em dois mil e treze, onde virou o lider tecnico da TPU. Em dois mil e vinte e seis
+estava no Google, e em agosto apresentou a oitava geracao da TPU.
+
+Dizer a aposta como aposta: em dois mil e quinze um chip que so sabe fazer a conta da rede
+neural era arriscado. Se a rede neural fosse moda de poucos anos, era um chip que nao servia
+pra mais nada.
+
+Amarrar com o episodio anterior, em uma frase: o BERT, de dois mil e dezoito, foi treinado
+nesse tipo de chip.
+
+Dizer a licao de hardware e software: o Google desenha o chip em volta
+do programa, e nao o programa em volta do chip.
+
+Fechar pedindo o Proximo pra ver a resposta do lado da placa de video.
+
+TELA 3 - CINCO DE ABRIL DE DOIS MIL E DEZESSEIS: O DGX-1
+
+Contar a maquina: em cinco de abril de dois mil e dezesseis a Nvidia apresenta o DGX-1. Um
+gabinete com oito placas P cem, ligadas entre si por um fio proprio, o NVLink, que a Nvidia
+tinha anunciado em dois mil e catorze e so agora aparecia num produto. Tres mil e duzentos
+watts. A Nvidia disse que fazia o trabalho de duzentos e cinquenta servidores comuns.
+
+Relembrar o Huang em uma frase, sem repetir a ficha: Jensen Huang, que a serie ja apresentou
+quando contou a placa de video; em dois mil e vinte e seis continuava chefe da Nvidia.
+
+Dizer o que a Nvidia contou sobre o esforco: tres mil pessoas trabalhando por tres anos.
+
+Contar a entrega: no comeco de agosto de dois mil e dezesseis o Huang leva em maos o primeiro
+DGX-1 de producao pra OpenAI, em Sao Francisco. Assina a maquina junto com a equipe. Do lado
+de la estava o Sutskever, que a serie ja apresentou na AlexNet; em dois mil e vinte e seis
+chefiava a empresa que fundou em dois mil e vinte e quatro. Dizer so "entregou em maos a
+OpenAI": NAO dizer nome de quem recebeu alem do Sutskever, e NAO inventar o que foi escrito
+na maquina.
+
+Dizer a aposta como aposta: tres mil pessoas por tres anos numa maquina pra treinar rede
+neural, quando quase ninguem treinava rede neural desse tamanho. Podia ficar na prateleira.
+
+FALAR DA OBRA QUE EXISTE, em duas frases: o programa de televisao americano 60 Minutes, da
+CBS, fez em dois mil e vinte e quatro uma reportagem com o Huang contando como a placa de
+jogo virou placa de rede neural. Dizer o cuidado: e reportagem de TV, um perfil de empresario
+no auge, o chip que aparece e de dois mil e vinte e quatro, e quase nao mostra o galpao.
+
+Fechar pedindo o Proximo pra ver por que oito placas.
+
+TELA 4 - POR QUE OITO PLACAS: A TURMA VIRA ESCOLA
+
+Lembrar a analogia em uma frase, sem explicar de novo: a placa de video e a turma de quinta
+serie, a professora dita uma continha e a turma inteira faz ao mesmo tempo.
+
+Dizer o que muda, com a analogia autorizada: um modelo grande nao cabe numa turma. Entao
+junta-se varias turmas, e a placa vira uma escola inteira. Cada sala faz a continha dela,
+mas as salas precisam trocar os resultados o tempo todo, e quem leva o resultado de uma sala
+pra outra anda pelo corredor.
+
+Dizer o ponto da tela, direto: quando o corredor e estreito, as salas terminam a conta e
+ficam paradas esperando o numero da sala vizinha. Juntar mais placa nao adianta se o numero
+nao chega. Por isso o fio entre as placas do DGX-1 era proprio: o caminho comum, o que liga
+a placa ao resto do computador, tinha virado o gargalo.
+
+Dizer a licao de hardware e software: o problema do galpao nao e so ter mais placa. E fazer
+o numero andar.
+
+Fechar pedindo o Proximo pra ver o outro lado desse mesmo problema, dentro de cada placa.
+
+TELA 5 - A MEMORIA EMPILHADA: CABE NA PLACA? (PRATICA)
+
+Contar, direto: dentro de cada placa acontece o mesmo problema, em pequeno. A conta e rapida;
+o que demora e buscar o numero na memoria e trazer de volta. Entao a memoria sobe pra junto
+do chip: camadas de memoria empilhadas, coladas ao lado do chip no mesmo pacote. A primeira
+placa com essa memoria foi a Radeon Fury X, da AMD, em junho de dois mil e quinze. A P cem,
+a placa do DGX-1, chegou com dezesseis gigabytes dela.
+
+Dizer a conta que decide tudo, devagar: cada parametro do modelo e um numero guardado na
+memoria da placa. Em dezesseis bits, cada numero ocupa dois bytes; comprimido em quatro bits,
+meio byte. O GPT tres, de cento e setenta e cinco bilhoes de parametros, ocupa trezentos e
+cinquenta gigabytes so pra guardar os numeros.
+
+Convidar a pausar o audio e resolver na tela: tem um controle pro tamanho do modelo e outro
+pra quantos bits cada numero usa, e a tela mostra quantas placas ocupa. Tentar fazer o GPT
+tres caber em uma placa so, e ver quantas faltam.
+
+Dizer, quando voltar, a conta da placa de casa. Dizer que sai da janela do episodio: a RTX
+5090, placa de jogo de dois mil e vinte e cinco, tem trinta e dois gigabytes. Ela roda modelo
+em casa, so nao roda os grandes. O limite e a memoria, nao a conta. Cabem modelos abertos de
+ate uns trinta bilhoes de parametros. Um de setenta bilhoes, comprimido em quatro bits, ja
+passa de trinta e dois gigabytes. O GPT tres ocuparia umas onze placas dessas so pra guardar
+os numeros. E os modelos de ponta das grandes empresas nem chegam nessa conta: os pesos deles
+nao sao liberados, entao nao ha o que baixar.
+
+Dizer a licao de hardware e software: o tamanho do modelo e decidido pela memoria da placa,
+nao pela velocidade dela.
+
+Achar o ponto certo, e ai voltar o audio e apertar o Proximo.
+
+TELA 6 - DEZ E DEZESSETE DE MAIO DE DOIS MIL E DEZESSETE: A V100 E A TPU DOIS
+
+Contar a V100: em dez de maio de dois mil e dezessete a Nvidia apresenta a V cem, com uma
+peca nova dentro do chip, o Tensor Core. Explicar direto, sem analogia: e um pedaco do chip
+que faz de uma vez a continha que a rede neural repete milhoes de vezes, multiplicar duas
+tabelinhas de quatro por quatro e somar uma terceira, com numeros de dezesseis bits. A V cem
+tinha seiscentos e quarenta desses. Chegou com dezesseis gigabytes de memoria.
+
+Contar a TPU dois: uma semana depois, em dezessete de maio, o Google apresenta a segunda
+TPU, feita pra treinar e nao so pra responder: sessenta e quatro chips ligados num conjunto
+so. Ainda resfriada a ar.
+
+Dizer o ponto da tela, em uma frase: com uma semana de diferenca, o Google e a Nvidia fazem a mesma
+coisa de dois jeitos. O Google com um chip que so faz a conta da rede; a Nvidia com a placa de
+video ganhando um pedaco que so faz a conta da rede.
+
+Dizer a licao de hardware e software: treinar virou o trabalho que decide como a peca e feita.
+
+Fechar pedindo o Proximo pra ver o corredor ficar largo.
+
+TELA 7 - DOIS MIL E DEZOITO: O CORREDOR E O LIQUIDO (TELA INTERATIVA)
+
+Contar o corredor: em vinte e sete de marco de dois mil e dezoito a Nvidia apresenta o
+NVSwitch, uma peca que deixa dezesseis placas V cem conversando todas ao mesmo tempo, a dois
+virgula quatro terabytes por segundo, num gabinete chamado DGX-2. No mesmo anuncio a V cem
+dobra a memoria, pra trinta e dois gigabytes.
+
+Usar a analogia autorizada, em uma frase: e o corredor ficando largo o bastante pra
+dezesseis salas trocarem resultado sem fila.
+
+Contar o liquido: em maio de dois mil e dezoito o Google apresenta a terceira TPU. Foi nela que o
+Google usou resfriamento a liquido pela primeira vez: tanta placa junta esquentava demais pro
+ar dar conta, e com liquido cabia o dobro de chip no mesmo espaco.
+
+Avisar da tela interativa: tem um controle na tela pra dobrar o numero de placas e ver quanto
+o trabalho anda, com corredor estreito e com corredor largo. Reparar que, com o corredor
+estreito, dobrar as placas quase nao ajuda: o tempo vai todo na conversa entre elas.
+
+Dizer a licao de hardware e software: a peca que mais mudou nesse ano nao e o chip. E o fio e
+o liquido em volta dele.
+
+Fechar pedindo o Proximo pra ver o fio sair do gabinete.
+
+TELA 8 - ONZE DE MARCO DE DOIS MIL E DEZENOVE: A MELLANOX E O INFINIBAND
+
+Contar: em onze de marco de dois mil e dezenove a Nvidia anuncia que vai comprar a Mellanox,
+a empresa que fazia o InfiniBand, por uns seis bilhoes e novecentos milhoes de
+dolares. A compra fecha em vinte e sete de abril de dois mil e vinte, em sete bilhoes.
+
+Explicar direto o que o InfiniBand faz: dentro do gabinete as placas conversam pelo NVLink;
+de um gabinete pro outro, pelo InfiniBand. Lembrar a analogia em uma frase: e o mesmo corredor,
+so que mais comprido, ligando um gabinete ao outro. Segundo a Nvidia, em dois mil e dezenove o InfiniBand,
+junto com a rede Ethernet rapida da mesma empresa, ja ligava mais da metade dos supercomputadores mais rapidos do mundo.
+
+FICHA: Eyal Waldman, nascido em Jerusalem, filho de um economista; estudou computacao no
+Technion e fez mestrado em engenharia eletrica; trabalhou na Intel, ajudou a fundar outra
+empresa de chip e cofundou a Mellanox em mil novecentos e noventa e nove, onde foi o chefe ate
+a venda. Saiu da Nvidia no fim de dois mil e vinte. Em dois mil e vinte e seis estava
+investindo em empresas de tecnologia.
+
+Dizer a aposta como aposta: em dois mil e dezenove a Nvidia era conhecida por placa, e pagou
+quase sete bilhoes de dolares por uma empresa de rede. Se o galpao nao crescesse, era dinheiro
+por um cabo.
+
+Dizer a licao de hardware e software: quem vende a placa passa a vender o fio, porque sem o
+fio a placa fica parada.
+
+Fechar pedindo o Proximo pra ver o galpao inteiro montado.
+
+TELA 9 - MAIO DE DOIS MIL E VINTE: A A100 E A MAQUINA DA MICROSOFT
+
+Contar a placa: em catorze de maio de dois mil e vinte a Nvidia apresenta a A cem, com a
+terceira geracao do NVLink, e que pode ser dividida em ate sete placas menores.
+
+Contar a maquina: cinco dias depois, em dezenove de maio de dois mil e vinte, a Microsoft
+anuncia o supercomputador que montou pra OpenAI: mais de duzentos e oitenta e cinco mil
+nucleos de processador, dez mil placas de video e quatrocentos gigabits por segundo de rede
+pra cada servidor de placas. Entre os cinco maiores divulgados no mundo.
+
+FICHA: quem anuncia e Kevin Scott, nascido em mil novecentos e setenta e dois, em Gladys, na
+zona rural da Virginia; estudou computacao na Lynchburg College e fez mestrado na Wake
+Forest; passou pelo Google e pelo LinkedIn e virou o chefe de tecnologia da Microsoft em
+dois mil e dezessete. Em dois mil e vinte e seis continuava chefe de tecnologia da Microsoft.
+
+Amarrar com o episodio anterior, com o cuidado de fato, em duas frases: nove dias depois, em
+vinte e oito de maio, sai o GPT tres, e o paper dele diz que foi treinado em placas V cem num
+cluster fornecido pela Microsoft. O anuncio da Microsoft NAO diz qual placa usou nem fala do
+GPT tres: que seja a mesma maquina, as datas sugerem, mas nenhum dos dois textos diz.
+
+Contar, em uma frase, o galpao no ano seguinte: em outubro de dois mil e vinte e um a Nvidia e a
+Microsoft treinam o Megatron-Turing, de quinhentos e trinta bilhoes de parametros, no
+Selene, o supercomputador da Nvidia: quinhentos e sessenta gabinetes ligados por InfiniBand.
+
+Dizer a licao de hardware e software: o galpao virou produto. Nao se compra mais uma placa; se
+encomenda um galpao inteiro.
+
+Fechar pedindo o Proximo pra ver quanto isso gasta de luz.
+
+TELA 10 - A CONTA DE LUZ
+
+Contar o numero, com quem mediu: em abril de dois mil e vinte e um, um estudo de David
+Patterson e mais oito pesquisadores fez a conta do treino do GPT tres: mil duzentos e oitenta
+e sete megawatts-hora. A OpenAI mediu trezentos e trinta watts por placa. O numero de placas,
+uns dez mil, e os dias, uns quinze, sao estimativa: dez mil foi o numero que a propria Nvidia
+sugeriu.
+
+Dizer o tamanho disso em casas, devagar: e mais ou menos o que seiscentas e quinze casas do
+Sudeste do Brasil gastam de luz num ano inteiro.
+
+Explicar direto por que a refrigeracao virou problema: cada chip gasta mais que o anterior,
+e o galpao junta cada vez mais chip no mesmo espaco. A TPU dois gastava duzentos e oitenta
+watts por chip; a TPU tres, quatrocentos e cinquenta. Todo watt que entra sai como calor, e
+alguem tem que tirar esse calor do predio.
+
+FALAR DA OBRA QUE EXISTE, em duas frases: a serie documental de TV Overview, da PBS, mostrou em
+dois mil e vinte e seis os data centers de inteligencia artificial vistos de fora, com os
+geradores e as turbinas em volta. Dizer o cuidado: e bem depois deste episodio, tem tom de
+denuncia, os numeros de emissao sao estimativa do proprio programa, e nao explica placa nem
+fio.
+
+Dizer o gancho do extra, em uma frase: o chip, a memoria empilhada, o fio entre as placas, a
+luz e o calor, a placa de treinar por dentro, tem um extra sobre isso.
+
+Dizer a licao de hardware e software: treinar um modelo virou obra de engenharia eletrica, nao
+so de programa.
+
+Fechar pedindo o Proximo pra ver a placa que leva o nome do programa.
+
+TELA 11 - VINTE E DOIS DE MARCO DE DOIS MIL E VINTE E DOIS: A H100
+
+Contar a placa: em vinte e dois de marco de dois mil e vinte e dois a Nvidia apresenta a H
+cem, com o nome da Grace Hopper, pioneira da computacao. Oitenta bilhoes de transistores,
+oitenta gigabytes de memoria, ate setecentos watts por placa.
+
+Dizer o ponto da tela, com cuidado: a Nvidia deu a uma parte da placa o nome do programa, o
+Transformer Engine. E circuito mais software: mistura contas de oito e de dezesseis bits pra
+acelerar o Transformer, e a Nvidia disse que treinava esse tipo de modelo ate seis vezes mais
+rapido que a geracao anterior. NAO dizer que foi a primeira placa feita pra inteligencia
+artificial: a TPU e a V cem vieram antes.
+
+Dizer o gabinete, em uma frase: o DGX-1 de dois mil e dezesseis gastava tres mil e duzentos
+watts; o gabinete com oito H cem chega a uns dez mil e duzentos.
+
+Amarrar com os outros episodios, em uma frase: a H cem e anunciada no mesmo mes do Chinchilla,
+do episodio passado, e do InstructGPT, que e o episodio tres. Dizer o cuidado de data: anunciar
+nao e entregar. Os servidores com a H cem so comecam a sair em outubro de dois mil e vinte e
+dois, e o GPT tres ponto cinco ja tinha terminado o treino no comeco do ano.
+
+Dizer a licao de hardware e software: em dois mil e dezessete o Transformer foi desenhado pra
+caber na placa. Cinco anos depois, a placa leva o nome do Transformer.
+
+Fechar pedindo o Proximo pra dizer onde isto para.
+
+TELA 12 - ONDE ISTO PARA
+
+Dizer onde o episodio para: dois mil e vinte e dois, com o galpao montado.
+
+Fazer o balanco das pessoas em uma passada rapida, na ordem, NOME POR NOME: Jouppi liderou o
+chip que so faz a conta da rede. Huang levou o primeiro DGX-1 de producao pra OpenAI.
+A empresa do Waldman fazia o fio que liga um gabinete ao outro. Scott anunciou a maquina de dez mil
+placas.
+Ninguem planejou o conjunto.
+
+DIZER UMA COISA SOBRE AS FICHAS, em uma frase: duas dessas pessoas entram sem ano de nascimento:
+uma nao tem ano publico, e a outra nao tem ano confirmado.
+
+Dizer onde estavam em dois mil e vinte e seis, em uma passada: Jouppi no Google, apresentando
+a oitava TPU; Waldman investindo; Scott chefe de tecnologia da Microsoft; Huang chefe da
+Nvidia; Sutskever na empresa dele.
+
+Dizer a licao, em duas frases: o Transformer foi desenhado pra placa; agora a placa e
+desenhada pro Transformer. E o que manda no galpao nao e a conta, e o caminho do numero: a
+memoria, o fio e a luz.
+
+Deixar a pergunta no ar, sem responder: o galpao esta pronto, e o modelo dentro dele e enorme.
+Mas ele so continua o texto que recebe. Uma maquina dessas sabe responder?
+
+Fechar sem pedir Proximo: esta e a ultima tela deste episodio.

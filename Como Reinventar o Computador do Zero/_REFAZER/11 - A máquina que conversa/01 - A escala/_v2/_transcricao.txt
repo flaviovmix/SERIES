@@ -1,0 +1,396 @@
+# Transcricao automatica (faster-whisper small) - 19.2 min
+# Fonte: Como a escala criou o ChatGPT.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A escala, a etapa anterior terminou de um jeito bem instigante, a gente tinha chegado
+[00:07] naquela máquina que era capaz de adivinhar o que a pessoa queria, sem a pessoa precisar
+[00:13] pedir absolutamente nada, só lendo o rastro digital.
+[00:17] Exatamente, lendo aquele comportamento passado.
+[00:20] Pois é.
+[00:21] E aí ficou no ar a pergunta, e se desce para pedir, tipo, com as suas próprias palavras
+[00:27] e a máquina simplesmente responder.
+[00:29] É a grande virada, né?
+[00:30] Sim.
+[00:31] E este é o primeiro episódio da etapa, a máquina que conversa, que é a décima primeira etapa
+[00:37] da série do abaco AIA.
+[00:39] E, bom, o que a gente vai fazer aqui hoje não é, sabe, acompanhar uma corrida corporativa,
+[00:45] a gente não vai falar de quem vendeu mais ou entrar naqueles sermões filosóficos
+[00:49] sobre, ah, o que é inteligência.
+[00:51] Certo.
+[00:52] Sem papo de ficção científica.
+[00:53] Exato.
+[00:54] O nosso foco hoje é puramente a engenharia da coisa.
+[00:57] A gente vai dissecar um desenho de software, sabe?
+[00:59] O volume colossal de texto que alimenta esse desenho e a placa física que faz tudo isso
+[01:04] rodar.
+[01:05] É, hardware e software puros.
+[01:08] E a nossa tese principal, o coração dessa discussão toda hoje, é quase, é, chocante
+[01:14] de tão simples.
+[01:16] O mesmo desenho de software, lá de 2017, que foi treinado só para adivinhar a próxima
+[01:21] palavra, ele ficou mil vezes maior em cinco anos.
+[01:25] Mil vezes é muita coisa.
+[01:28] Bizarro, né?
+[01:29] O programa Chado melhora só de ficar maior.
+[01:32] E quem decide o tamanho é a placa e o dado, não o programador.
+[01:36] O programador só assiste, basicamente.
+[01:39] É, por aí.
+[01:40] E para cobrir isso, o nosso escopo de tempo vai, assim, exatamente de 2017 a 2022.
+[01:47] É um período cronológico que se sobrepõe com o fim da nossa etapa 9 e passa pela
+[01:51] etapa 10 inteira.
+[01:53] Isso mesmo.
+[01:54] Antes da gente mergulhar nos detalhes, um aviso rápido sobre a página de hoje.
+[01:59] Ela tem 12 telas.
+[02:01] Quem está só ouvindo pode acompanhar a história normalmente, tá?
+[02:05] E quem está com a página aberta vira quando ouvir o pedido.
+[02:09] Então, para a gente iniciar a nossa linha do tempo, aperte o próximo.
+[02:13] Bom, o nosso marco zero acontece no dia 12 de junho de 2017.
+[02:17] Certo.
+[02:18] Foi quando o Google publicou um artigo científico bem famoso chamado Attention Is All You
+[02:23] Need?
+[02:24] Clássico, né?
+[02:25] Esse mesmo.
+[02:26] Eram 8 autores.
+[02:27] Na liderança estava Ashish Vazhwani, nascido em 1986 com 31 anos naquele momento e que
+[02:33] no ano de 2026 estaria liderando novos projetos de pesquisa de ponta.
+[02:38] Certo.
+[02:39] E o título do artigo foca nessa palavra, né?
+[02:42] Atenção.
+[02:43] E a gente logo imagina que por ser o início dessas máquinas que conversam, eles queriam
+[02:47] criar meio que um parceiro de diálogo, né?
+[02:50] Então, aí que tá.
+[02:52] Lendo a proposta original, o objetivo primário desse modelo, que eles chamaram de Transformer
+[02:59] é bom lembrar, era tradução, tradução pura e simples.
+[03:03] Só pegar inglês e passar para francês, por exemplo.
+[03:07] Basicamente isso.
+[03:08] O artigo até falava, sabe, sobre testar essa mesma arquitetura no futuro, para imagens,
+[03:13] áudio, vídeo.
+[03:14] Ah, entendi.
+[03:15] Mas ele não dizia, em nenhum momento, que esse mesmo desenho, se ficasse muito
+[03:20] maior, serviria para manter conversas complexas.
+[03:23] Não era para isso.
+[03:25] Que loucura.
+[03:26] Então, a intenção original meio que limitava a visão do que a própria ferramenta podia
+[03:31] fazer.
+[03:32] O desenho estava ali, pronto para algo colossal, mas a engenharia interna precisava ser entendida
+[03:37] primeiro.
+[03:38] Então, para entender essa mecânica genial, por trás disso tudo, aperte o próximo.
+[03:43] O verdadeiro pulo do gato desse desenho de 2017, sabe qual foi?
+[03:47] Qual?
+[03:48] O gato do treinamento.
+[03:49] Eles configuraram o sistema para tapar a próxima palavra de uma frase e forçar a máquina a adivinhar.
+[03:54] Ah, tipo, vamos tentar visualizar isso para quem está ouvindo.
+[03:58] É basicamente aquele livro de exercícios da escola, né?
+[04:02] Aquele de preencher as lacunas na frase.
+[04:04] É, a analogia é perfeita.
+[04:05] Só que a diferença brutal aqui é que a resposta correta, o gabarito, já está
+[04:10] embutido no próprio texto.
+[04:12] Tá.
+[04:13] Então se a frase é, o céu é azul.
+[04:15] Isso.
+[04:16] A máquina esconde o azul, tenta adivunhar e logo depois ele mesmo confere o texto original.
+[04:21] Nossa, então o gargalo desaparece, porque não precisa de um professor humano lá supervisionando
+[04:26] e corrigindo tudo.
+[04:27] Exato.
+[04:28] Esse é o aprendizado auto-supervisionado.
+[04:30] A máquina treina sem parar, mas tem um detalhe mecânico bem importante aí.
+[04:35] Qual?
+[04:36] A máquina não lê as palavras inteiras, como a gente.
+[04:39] O sistema quebra o texto em pedaços menores.
+[04:42] A gente chama isso de tokens.
+[04:44] Tá.
+[04:45] Tipo umas sílabas, raízes de palavras.
+[04:49] Isso, pensa neles como uns blocos de montar, sabe.
+[04:53] Lê em pedacinhos, reduz muito a conflexidade matemática.
+[04:56] Em vez de decorar o dicionário inteiro, a máquina só calcula a chance lógica de
+[05:01] um bloquinho vir depois do outro.
+[05:03] Entendi.
+[05:04] E essa lógica começou a ser notada.
+[05:07] A indústria olhou para essa estrutura, viu que dava pra escalar e começou literalmente
+[05:12] a dividir o cérebro original.
+[05:15] Vamos entender como isso aconteceu.
+[05:18] Aperte o próximo.
+[05:19] O primeiro grande desdobramento surgiu um aninho depois, tá?
+[05:23] Em 11 de junho de 2018.
+[05:25] Certo.
+[05:26] A OpenAI lança o GPT-1.
+[05:29] A equipe foi liderada por Alec Radford, nascido em 1993, com 25 anos naquele momento, que
+[05:36] em 2026 continuaria inovando dentro dos laboratórios da empresa.
+[05:40] E ele não estava sozinho, né?
+[05:41] Não, não.
+[05:42] Ele trabalhou junto com Ilha Sudskäver, que já teve sua ficha detalhada e relembrada
+[05:48] aqui na nossa jornada.
+[05:49] Sim.
+[05:50] E a decisão técnica da equipe foi bem, assim, inusitada.
+[05:54] Eles não usaram a estrutura inteira do Transformer, lá de 2017.
+[05:58] Uhum.
+[05:59] Respegaram só a metade que foquem em escrever pra frente, não foi?
+[06:02] Exatamente.
+[06:03] Só a metade geradora.
+[06:04] E foram 12 camadas.
+[06:06] O modelo todo tinha 117 milhões de peças.
+[06:10] Ou parâmetros, como a gente chama.
+[06:12] Parâmetros.
+[06:13] Vamos dar uma pausa rápida aqui.
+[06:15] Explica o que é um parâmetro.
+[06:16] É, imagina uma mesa de som daquelas de estúdio gigantesca, sabe?
+[06:21] Com milhões de botões giratórios pequenininhos.
+[06:23] Certo.
+[06:24] Cada parâmetro é um botão desses, que ajusta o peso de uma conexão matemática
+[06:28] lá dentro.
+[06:29] E eles afinaram esses 117 milhões de botões, fazendo o modelo ler mais de
+[06:34] 7 mil livros inéditos.
+[06:36] Mais de 7 mil livros.
+[06:38] Durante um mês, rodando direto em oito placas de vídeo.
+[06:42] Nossa, isso criou uma regra nova, né?
+[06:45] A regra de ler primeiro.
+[06:47] A máquina devora todo esse texto pra aprender as regras gerais primeiro.
+[06:51] E só depois os engenheiros ajustam pra uma tarefa específica.
+[06:55] Perfeito.
+[06:56] E, só um detalhe curioso, esse número exato de 117 milhões
+[07:01] ele só foi revelado no artigo seguinte.
+[07:04] Mas, bom, se eles pegaram a metade que escreve, era o cenário perfeito
+[07:10] pra alguém explorar outra metade.
+[07:12] Aperte o próximo.
+[07:13] Foi certinho o que aconteceu.
+[07:15] Só quatro meses depois.
+[07:17] Em 11 de outubro de 2018, o Google apresenta o BERT.
+[07:22] O famoso BERT.
+[07:24] Esse projeto foi liderado por Jacob Devlin.
+[07:27] Jacob Devlin formou-se na Universidade de Maryland, trabalhava no Google
+[07:31] e continuaria ativo no setor de tecnologia no ano de 2026.
+[07:35] Legal.
+[07:36] E o foco da equipe dele?
+[07:37] O foco foi pegar justamente aqui a outra metade do desenho.
+[07:41] Ah, então ele não escrevi o texto contínuo?
+[07:44] Não, a lógica era diferente.
+[07:46] Ele não ficava adivinhando a próxima palavra lá na ponta da frase.
+[07:50] O BERT adivinhava tokens que estavam tapados no meio do texto.
+[07:55] Então ele olhava pros dois lados.
+[07:56] Exatamente, ele lia olhando pros dois lados ao mesmo tempo.
+[07:59] Porque pensa comigo, a palavra manga.
+[08:02] Se eu leio só de um lado, a manga.
+[08:05] A máquina não vai saber se é a fruta ou se é a manga da camisa, né?
+[08:09] Exatamente.
+[08:10] Mas lendo pros dois lados, o contexto fica todo resolvido ali, matematicamente.
+[08:15] E eles fizeram versões com 110 milhões e 340 milhões de peças.
+[08:21] E aí a força bruta do hardware começa a aparecer forte, né?
+[08:24] Porque o BERT não rodou em placa de vídeo normal.
+[08:27] Não, nem de longe, ele usou 16 TPUs, que são os chips exclusivos do Google.
+[08:32] E ficou processando por quatro dias diretos.
+[08:35] A corrida pela escala tava oficialmente engatando a marcha.
+[08:39] Aperte próximo.
+[08:40] A em 14 de fevereiro de 2019, a OpenAI volta pro jogo com GPT2.
+[08:46] E aqui a indústria tomou aquele primeiro susto real com a escala.
+[08:50] Por causa do tamanho?
+[08:51] Sim, os números ficaram absurdos.
+[08:55] O modelo passou a ter 1 bilhão e 500 milhões de peças.
+[08:59] Pera, de pouco mais de 100 milhões foi pra 1 bilhão e 500 milhões?
+[09:04] Num salto só.
+[09:05] E pra alimentar tudo isso, eles usaram 8 milhões de páginas da web.
+[09:09] Isso dá uns 40 GB de texto limpo.
+[09:11] Tá, mas aí eu tenho que fazer a pergunta que não quer calar.
+[09:14] Tipo, a mecânica era a mesma, certo?
+[09:17] Só de jogar mais texto lá dentro, magicamente ele aprendeu coisas novas?
+[09:21] Como é que só acontece?
+[09:23] Então, a resposta curta é sim.
+[09:25] Ele aprendeu.
+[09:26] Sério?
+[09:27] A resposta longa envolve como a nossa linguagem funciona.
+[09:30] O objetivo lá dentro ainda era só adivinhar a próxima palavra.
+[09:34] Mas pra máquina conseguia adivinhar a próxima palavra com precisão num texto sei lá, de
+[09:39] física quêntica.
+[09:40] Ela é meio que forçada a entender a lógica daquele assunto, né?
+[09:44] Exatamente.
+[09:45] As regras gramaticais e as regras do mundo real estão embutidas no nosso texto.
+[09:49] O resultado prático foi que o GPT2 começou a gerar uns parágrafos que pareciam muito humanos
+[09:55] e ele passou a traduzir e resumir coisas sem que ninguém tivesse ensimado isso diretamente
+[10:01] pra ele.
+[10:02] Caramba!
+[10:03] E foi tão real que a própria OpenAI ficou assustada, não foi?
+[10:06] Ficaram.
+[10:07] Eles ficaram com muito medo do potencial pra usos maliciosos tipo gerar notícia falsa
+[10:12] em massa, então eles seguraram o modelo completo.
+[10:15] Eles não liberaram de primeira?
+[10:16] Não, só foram soltar tudo meses depois lá no dia 5 de novembro de 2019.
+[10:22] Sentiram o peso do que estava acontecendo.
+[10:24] Aperte o próximo.
+[10:25] E justamente pra tentar entender o que estava acontecendo, em vez de só crescer no escuro,
+[10:31] né?
+[10:32] Dez autores da OpenAI publicam as leis de escala.
+[10:36] E isso foi quando?
+[10:37] Em 23 de janeiro de 2020, na liderança estava Jared Kaplan e fechando a lista
+[10:43] Dario Amudei.
+[10:45] Certo.
+[10:46] Jared Kaplan formou-se em Stanford, trabalhava na Johns Hopkins e continuaria ativo na pesquisa
+[10:51] em 2026.
+[10:52] E Dario Amudei, nascido em 1983, com 37 anos naquele momento, que em 2026 estaria como
+[11:01] principal executivo de uma gigante concorrente.
+[11:04] Certo.
+[11:05] E leis de escala.
+[11:06] Parece nome de física teórica, né?
+[11:08] Eles falam que o erro da máquina cai numa linha reta, ali numa escala logarítmica
+[11:13] quando as coisas crescem juntas no intervalo de sete ordens de grandeza.
+[11:17] Mas traduz isso pra gente, qual o significado prático disso lá na engenharia?
+[11:22] É gigante.
+[11:23] Pensa assim, antes, aumentar um modelo era meio que um chute.
+[11:28] Um tiro no escuro.
+[11:29] Isso.
+[11:30] Você gastava milhões em hardware e nem sabia se a máquina ia ficar tão mais inteligente
+[11:34] assim.
+[11:35] O que as leis de escala aprovaram foi que, se você aumentar o tamanho da máquina,
+[11:39] aumentar o texto e aumentar as placas tudo na mesma proporção, a chance de erro vai
+[11:45] cair de um jeito que você consegue prever.
+[11:47] Numa linha reta.
+[11:48] Ah, então, com essa linha reta, dava pra prever o quão inteligente o modelo ia ficar
+[11:53] antes de gastar milhões de dólares treinando.
+[11:56] Exatamente isso.
+[11:57] A ciência ali virou tipo uma equação financeira super garantida.
+[12:00] Nossa.
+[12:01] E essa previsão deu muita coragem pra dar um passo colossal logo depois.
+[12:06] Aperte o próximo.
+[12:08] Não certeza deu.
+[12:09] Em 28 de maio de 2020, 31 autores revelam o GPT-3.
+[12:15] Certo.
+[12:16] E quem tava na frente dessa vez?
+[12:17] O líder ali era Tom Brown.
+[12:20] Tom Brown trabalhava na OpenAI e continuaria ativo no desenvolvimento de inteligência
+[12:24] artificial em 2026.
+[12:27] E o salto do GPT-3, olha, foi impressionante.
+[12:30] Os números aqui são ignorantes, né?
+[12:34] Totalmente.
+[12:35] Estaram para 175 bilhões de peças.
+[12:38] 175 bilhões de parâmetros.
+[12:41] E o texto.
+[12:43] Ele leu 300 bilhões de pedaços de texto.
+[12:46] Isso é a web inteira filtrada, páginas recomendadas, coleções de livros, wikipédia, tudo que
+[12:52] você imaginar.
+[12:53] E aqui a gente tem que falar da máquina física.
+[12:56] O hardware por trás disso.
+[12:59] Porque foi treinado numas placas chamadas V100, né?
+[13:03] Num clúster gigantesco.
+[13:05] E no artigo técnico, eles dizem que foi fornecido pela Microsoft.
+[13:09] É, e o mais fascinante desse detalhe é que o artigo não agradece à Microsoft.
+[13:14] Ele só diz, bem secamente, que foi fornecido por eles.
+[13:17] Pois é, uma menção fria.
+[13:19] E vale lembrar, esse supercomputador tinha sido anunciado poucos dias antes, em 19
+[13:25] de maio.
+[13:26] Ele tinha 285 mil núcleos de processador e 10 mil placas de vídeo interligadas.
+[13:33] 10 mil placas rodando tudo ao mesmo tempo.
+[13:35] O investimento foi brutal e a surpresa no comportamento dele também foi.
+[13:40] A maior surpresa de todas, né?
+[13:42] Aperte o próximo.
+[13:43] A surpresa foi o que a gente chama de Fill Shot.
+[13:46] Que é aprender com poucos exemplos.
+[13:48] Isso.
+[13:49] E a loucura é que ninguém programou isso dentro dele.
+[13:52] O software, o código em si, não mudou nada.
+[13:55] Espera.
+[13:56] Para ficar claro, normalmente para a máquina aprender uma tarefa nova, alguém tem
+[14:00] que lá e mexer no código, mudar as regras.
+[14:03] Sim.
+[14:04] O padrão era esse.
+[14:06] Mas no GPT-3, você só colocava um exemplo na hora de perguntar.
+[14:10] Você escrevia assim, Brasil, Brasília, França, Paris, Japão e ele completava
+[14:17] Tóquio.
+[14:18] Só porque ele leu aquele contexto na hora, sem precisar regravar nada no banco de
+[14:22] dados dele.
+[14:23] Sem alterar os pesos originais.
+[14:25] Aquele 175 bilhões de botões lá da mesa de som.
+[14:30] Isso ficaram congelados, né?
+[14:31] Isso.
+[14:32] Congelados.
+[14:33] Ele usava a lógica embutida neles para resolver o exemplo que você deu ali.
+[14:37] Em tempo real, a inteligência emergiu só por causa do tamanho gigantesco do modelo.
+[14:43] É impressionante.
+[14:44] Mas, claro, esse tamanho todo cobra um preço em hardware que não dá para ignorar.
+[14:49] E a indústria logo percebeu que precisava de uma correção de rota, né?
+[14:53] Aperte o próximo.
+[14:55] Foi urgente.
+[14:56] E essa correção veio em 29 de março de 2022.
+[15:01] Quem publicou?
+[15:02] A DeepMind publicou o modelo Chinchilla.
+[15:04] Faram 22 autores com Jordan Hoffman lá na frente.
+[15:08] Ficha do Jordan.
+[15:09] Jordan Hoffman trabalhava na DeepMind e continuaria na fronteira da pesquisa técnica em
+[15:14] 2026.
+[15:15] E o que esse modelo Chinchilla provou que mudou o jogo de novo?
+[15:18] Ele provou que só aumentar as peças infinitamente não era o caminho.
+[15:22] O Chinchilla tinha apenas 70 bilhões de peças.
+[15:26] Bem menos que o GPT-3.
+[15:27] Bem menos.
+[15:28] Mas sabe quanto ele neu?
+[15:29] 1 trilhão e 400 bilhões de tokens.
+[15:33] E com isso ele ganhou em todos os testes do modelo golfer que tinha 280 bilhões de
+[15:39] peças.
+[15:40] Então o modelo menor ganhou do maior porque leu muito mais texto.
+[15:43] Exatamente.
+[15:44] Regra de ouro que surgiu aqui foi, dobrou o tamanho do modelo, tem que dobrar o
+[15:48] texto também.
+[15:49] Ah, então eles perceberam que esses gigantes tipo GPT-3 estavam meio que subtreinados, né?
+[15:56] Eram cérebros gigantes mas que não tinham lido o suficiente.
+[15:59] Isso mesmo.
+[16:00] A placa de vídeo voltou a mandar no pedaço.
+[16:02] O hardware exigiu muito mais dados se você quisesse um modelo mais eficiente.
+[16:07] O hardware sempre dá a palavra final, aperte o próximo.
+[16:10] Com essa regra nova, o campo começou a lapidar os modelos ali entre 2021 e 2022.
+[16:15] Certo.
+[16:16] Surgiu Codex nessa época, né?
+[16:18] Slim.
+[16:19] Ele pegou aquele GPV-3 gigantesco e foi ajustado com códigos lá do GitHub.
+[16:24] Programação pura.
+[16:25] Pura.
+[16:26] Ele aprendeu a escrever software e isso ajudou ele a pensar de forma muito
+[16:29] mais lógica.
+[16:30] A sintasse de programação força o modelo a ser mais rígido, né?
+[16:34] Com certeza.
+[16:35] E junto com isso surgiu a série GPT-3.5.
+[16:39] E a equipe modiferência crítica.
+[16:41] A diferença é o ajuste para seguir instruções.
+[16:45] O modelo parou de ser só aquele motor tentando adivinhar a próxima palavra no vazio.
+[16:49] Ele passou a preencher a palavra obedecendo a uma ordem direta, tipo um comando que o
+[16:54] humano deu na tela.
+[16:56] Exatamente.
+[16:57] Foi a lapidação final.
+[16:58] O sistema foi domado para conversar de verdade.
+[17:01] E o ponto de chegada, o clímax dessa nossa linha do tempo, acontece no dia 30 de
+[17:07] novembro de 2022, que é quando surge o famoso chat GPT.
+[17:11] E nas palavras exatas da própria OpenAI na época, ele foi ajustado a partir de um modelo
+[17:17] da série GPT-3.5.
+[17:20] É embalagem daquele trabalho todo de cinco anos.
+[17:23] E a nossa linha do tempo para exatamente aqui.
+[17:26] Aperte o próximo.
+[17:27] Então, para fazer um balanço dessa loucura toda.
+[17:31] O que a gente aprende aqui é que o código não precisou ser reescrito do zero por
+[17:36] um gênio a cada mês.
+[17:38] Não teve revolução no código base.
+[17:40] Não teve.
+[17:41] O código encontrou um jeito de melhorar simplesmente ficando maior.
+[17:45] O limite não era mais a criatividade do programador.
+[17:49] O teto passou a ser a força das placas e a quantidade de dados disponível.
+[17:53] E é super curioso se a gente for ver as pessoas por trás disso.
+[17:57] Hum, pode falar.
+[17:59] Nós mencionamos aqui gente muito brilhante.
+[18:01] E quatro dessas pessoas centrais, o Jared Kaplan, o Jacob Devlin, o Tom Brown
+[18:07] e o Jordan Hoffman, a gente nem sabe a idade deles.
+[18:10] Verdade.
+[18:11] Quatro dessas pessoas não têm nem ano de nascimento público.
+[18:14] São anônimos lá nos laboratórios mudando a história da tecnologia.
+[18:19] Então todos lá construindo e testando.
+[18:22] E vale reforçar a nossa história de hoje para em 2022.
+[18:27] Exato.
+[18:28] Paramos aqui.
+[18:29] E a gente deixa uma provocação final para quem acompanhou até agora e que já
+[18:32] vai abrir a porta para o que vem por aí.
+[18:35] Pensa comigo.
+[18:36] Vamos lá.
+[18:37] A história da máquina agora depende totalmente de amontoar milhares e milhares de placas
+[18:43] de vídeo no mesmo lugar e fazer elas processarem trilhões de palavras sem parar.
+[18:48] Alguém tem que plugar isso na tomada, né?
+[18:51] Pois é.
+[18:52] Quem é que constrai o galpão gigante para abrigar isso tudo?
+[18:56] De onde vem a energia colossal para alimentar toda essa máquina?
+[19:00] Porque a escala no papel é bonita, mas na vida real ela precisa de tijolo,
+[19:05] cabo e usina elétrica.
+[19:07] Fica a reflexão.
+[19:09] Muito obrigado pela companhia.
+[19:10] Até a próxima.

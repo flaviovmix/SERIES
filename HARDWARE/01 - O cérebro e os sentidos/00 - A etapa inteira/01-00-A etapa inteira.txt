@@ -1,0 +1,35 @@
+Inicie dizendo: Hardware - O Cerebro e os Sentidos
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Cerebro e os Sentidos.txt enviado como fonte.
+Esse arquivo contem o roteiro completo.
+
+Este e o audio da etapa 1 da serie HARDWARE, que monta do zero uma caixa d'agua de predio que se cuida sozinha.
+
+FOCO: visao geral direta do que a etapa 1 ensina, em cinco pedacos: o programa que nao para, o botao e o rele, o numero de 0 a 1023, o PWM e a decisao (com a folga entre ligar e desligar). NAO contar a etapa como historia.
+
+CHAMADAS DE EXTRAS: onde o roteiro marca CHAMADA DE EXTRA, dizer numa frase que tem (ou vai ter) um episodio extra sobre aquilo, com o nome dele, sem explicar o conteudo do extra.
+
+NAO explicar as etapas 2 a 5: so citar a etapa 2 no fim, como a proxima.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO: nada de tarefa, nada de tabela pra preencher.
+
+NAO EXISTE ANIMACAO: e audio puro. NAO peca pra apertar nada e NAO mande ninguem olhar nada: nada de "veja na tela", "na imagem", "na figura", "nesta pagina". Quem ouve esta no onibus ou no carro: tudo tem que se entender so ouvindo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Cerebro e os Sentidos.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

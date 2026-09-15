@@ -125,6 +125,12 @@
   gap: 8px;
 }
 
+/* 10/09: com um aparelho dentro, a figura fica com a largura dele e quem cede e o
+   texto. Com min-width: 0 ela encolhia abaixo do aparelho (que tem largura fixa)
+   e, em 1024, ele vazava pra faixa da seta da direita, que desde a tela de fim
+   aparece tambem na ultima tela. */
+.lado-arte:has(.aparelho) { flex: 0 0 auto; }
+
 .lado-arte img {
   width: 100%;
   height: auto;
@@ -153,6 +159,10 @@
 .cena--nexus img { height: clamp(220px, 52vh, 560px); object-fit: contain; filter: none; background: #0a0a0a; }
 .cena--nexus .cena__celular { flex: 0 1 300px; }
 .cena--nexus .cena__desktop { flex: 1 1 0; }
+/* 10/09: a base passou a estreitar o cartao da cena pro tamanho da foto 16:9
+   (pranchas.css). Esta cena e de prints de tela inteiros (contain), fora dessa
+   regra: o cartao volta a ser do tamanho que o layout daqui da. */
+.cena--nexus figure { max-width: none; width: auto; margin-inline: 0; }
 
 /* ---- tela 4: o que entra e o que fica de fora ---- */
 .step--lado .ficha { margin-top: 18px; width: 100%; }

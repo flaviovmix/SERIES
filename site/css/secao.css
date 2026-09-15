@@ -1,49 +1,51 @@
 /* secao
-   O cabecalho que abre qualquer bloco da pagina: contexto, titulo e nota. Depende de tokens.css e base.css. */
+   O cabecalho que abre qualquer bloco da pagina: contexto, titulo e nota. Depende de tokens.css e base.css.
+   Desenho do SITE-AFX desde 13/09/2026: o contexto e o rotulo tecnico (mono com o
+   traco na frente), o titulo e o titulo de secao pesado e a nota e o texto de apoio. */
 
 .secao {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
-/* a linha miuda com o losango, que diz de que bloco se trata */
+/* a linha miuda com o traco, que diz de que bloco se trata */
 .secao__contexto {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 14px;
   margin: 0;
   font-family: var(--fonte-mono);
-  font-size: .7rem;
-  font-weight: 600;
-  letter-spacing: .22em;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--ink-soft);
 }
 
 .secao__contexto::before {
   content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 2px;
-  background: var(--accent);
-  transform: rotate(45deg);
+  flex: none;
+  width: 34px;
+  height: 1px;
+  background: var(--line-strong);
 }
 
 .secao h2 {
-  margin: 0;
-  font-family: var(--fonte-serif);
-  font-size: clamp(1.9rem, 4.4vw, 2.9rem);
-  font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: -.01em;
+  margin: 10px 0 0;
+  max-width: 28ch;
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.55rem, 3.2vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -.015em;
   text-wrap: balance;
 }
 
 .secao__nota {
-  margin: 0;
-  max-width: 68ch;
+  margin: 6px 0 0;
+  max-width: 64ch;
   font-size: .96rem;
   color: var(--ink-soft);
 }

@@ -1,0 +1,320 @@
+# Transcricao automatica (faster-whisper small) - 13.8 min
+# Fonte: Não lidos.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Entrar na máquina de longe.
+[00:01] Bom, a gente sabe que nos capítulos anteriores a nossa lista de tarefas ficou pronta, né?
+[00:06] Sim. Rodou inteira, certinha, lá na máquina local.
+[00:10] Exato. Só que agora ela vai sair dali.
+[00:13] Ela precisa ir para um endereço público.
+[00:15] É o momento que todo mundo espera.
+[00:17] Pois é. E aí a pessoa pensa, bom, vou pegar meus arquivos e mandar para lá.
+[00:23] Mas não é bem assim. O primeiro passo de todos não é mandar arquivo nenhum.
+[00:27] Definitivamente não.
+[00:28] O episódio de hoje é puramente sobre como conseguir entrar na máquina que vai receber esse programa.
+[00:34] E só isso? Só isso.
+[00:36] A gente vai focar em entrar, dar uma olhada em volta e sair sem quebrar nada.
+[00:41] Aquela parte de empacotar o projeto e subir o programa, ah, isso fica para depois.
+[00:46] Então é como visitar a casa nova antes da mudança.
+[00:50] Exatamente.
+[00:51] Um áudio acompanha normalmente sem problema nenhum.
+[00:53] Mas quem está com a tela aberta só vira a tela quando a gente pedir.
+[00:56] Isso aí. Então para começar aperte o próximo.
+[01:00] Bom, quando a gente fala a palavra servidor, as pessoas já imaginam algo de ficção científica.
+[01:06] Nossa sim, um computador gigante cheio de luzes piscando num cofre.
+[01:10] É, mas vamos tirar esse mistério.
+[01:12] Um servidor no fundo é um computador comum.
+[01:15] Tipo o meu de casa.
+[01:16] Tipo seu.
+[01:17] Ele tem o mesmo tipo de processador, tem memória RAM, tem um sistema operacional.
+[01:22] A diferença real não é a máquina em si.
+[01:24] É o que então?
+[01:25] É o estilo de vida dele.
+[01:27] Estilo de vida de computador, gostei.
+[01:29] Pois é, ele vive diferente.
+[01:30] Ele fica ligado o tempo todo num prédio com energia e internet que são super estáveis.
+[01:36] E ele tem um endereço fixo na internet.
+[01:39] Ah, o meu de casa muda de endereço direto.
+[01:41] Exato.
+[01:42] E hoje em dia você aluga um computador desses pelo preço de um lanche.
+[01:46] É muito acessível.
+[01:48] Tá, mas aí vem uma dúvida prática.
+[01:50] Se é um computador comum, porque eu não posso simplesmente arrastar meus ativos pra
+[01:54] lá e dar dois cliques pra abrir.
+[01:56] Aí é que tá a maior diferença de todas.
+[01:59] Esse computador não tem monitor.
+[02:02] Ele não tem teclado, não tem mouse, não existe nenhuma janela ou ícone pra você
+[02:07] clicar.
+[02:08] Caramba.
+[02:09] E como eu faço as coisas?
+[02:11] Tudo.
+[02:12] Absolutamente tudo acontece por texto.
+[02:14] Entendi.
+[02:15] Então tipo, enviar o arquivo do projeto acaba sendo a menor parte do trabalho?
+[02:19] É a parte mais fácil, porque depois que o arquivo chega, alguém precisa instalar o
+[02:23] java, né?
+[02:24] Sim.
+[02:25] Precisa configurar o programa pra ligar sozinho se a máquina reiniciar, abrir a porta correta
+[02:30] pra internet, ler os erros e tudo isso é feito digitando comandos de texto dentro
+[02:35] da máquina.
+[02:36] Tá, mas espera aí.
+[02:37] Se a máquina não tem teclado e ela tá num prédio numa cidade lá longe, como
+[02:41] é que a pessoa digita nela?
+[02:43] É uma boa pergunta.
+[02:44] Então aperte o próximo.
+[02:45] A resposta pra essa mágica é um programa chamado SSH.
+[02:49] SSH?
+[02:50] Isso.
+[02:51] Significa Secure Shell e a gente já viu o Shell antes.
+[02:54] É aquele programa que lê o texto que você digita e executa os comandos, o mesmo dos
+[02:59] capítulos anteriores.
+[03:00] Ah, certo.
+[03:01] O terminal.
+[03:02] E o Secure entra aonde?
+[03:04] O Secure significa que toda essa conversa passa cifrada pela internet.
+[03:08] Sendo bem direto, o SSH é um terminal na sua máquina, mas os comandos que você
+[03:13] digita lá, eles executam na outra máquina.
+[03:16] Mas e o que exatamente viaja por essa conexão?
+[03:20] Porque se eu não tô vendo a tela da outra máquina, viaja vídeo, tipo um acesso remoto
+[03:25] normal?
+[03:26] Não viaja imagem, não viaja vídeo.
+[03:29] Nada disso.
+[03:30] Apenas texto.
+[03:31] O texto do comando vai e o texto da resposta volta.
+[03:34] Só texto.
+[03:36] Deve ser super leve.
+[03:37] Muito.
+[03:38] Por isso que funciona super bem, até naquelas conexões de internet ruins.
+[03:42] E como esse texto é todo cifrado, quem tá no meio do caminho, tipo provedor de internet,
+[03:48] ele até sabe que existe uma conversa rolando.
+[03:50] Mas não sabe o que é.
+[03:51] Exatamente.
+[03:52] Não consegue ler os seus comandos.
+[03:54] Tá.
+[03:55] E o que eu preciso pra isso funcionar?
+[03:56] Você precisa de duas peças.
+[03:58] Um programa cliente que, olha, hoje já vem instalado no Windows, no Mac e no Linux.
+[04:04] E um programa servidor que fica lá na máquina de destino, escutando e esperando na porta
+[04:09] 22.
+[04:10] Porta 22.
+[04:11] Ok.
+[04:12] E na hora de conectar, como eu me apresento?
+[04:15] Você tem que informar quem você é lá dentro.
+[04:18] Qual é o usuário e qual é a máquina?
+[04:20] E um detalhe.
+[04:21] A conta não é a sua conta local do seu computador, é um usuário do outro lado.
+[04:27] Faz sentido, mas me tira uma dúvida.
+[04:30] Quando a gente conecta a primeira vez, o programa sempre joga um aviso na tela.
+[04:34] Ele mostra uma identificação estranha da máquina e pergunta se a gente confia.
+[04:38] É, o famoso aviso que todo mundo quer pular.
+[04:41] Sim, todo mundo só diz sim.
+[04:42] Pois é.
+[04:43] O programa te avisa isso porque, até aquele momento, ninguém garantiu que aquela máquina
+[04:48] é realmente acerta.
+[04:50] Entendi.
+[04:51] Se você disser que sim, o programa guarda aquela identificação.
+[04:54] O perigo é se, um dia do nada, essa identificação mudar.
+[04:58] Aí ele avisa de novo.
+[04:59] Avise bloqueia.
+[05:01] E esse é o momento de parar tudo e investigar.
+[05:04] Não é pra ignorar o erro.
+[05:05] Alguém pode estar interceptando a conexão.
+[05:08] Boa.
+[05:09] Bom saber disso.
+[05:10] E pra saber como entrar de forma segura, aperte o próximo.
+[05:14] Agora vamos falar de como provar quem você é pra essa máquina.
+[05:18] Bom, pra mim, o caminho mais óbvio é entrar com usuário senha.
+[05:22] Porque a gente não pode simplesmente criar uma senha muito, mas muito boa e usarela.
+[05:28] No seu computador de casa funciona.
+[05:30] Mas a realidade da internet é cruel.
+[05:33] Lembra que o endereço do servidor é público?
+[05:35] Sim.
+[05:36] Na porta 22, que a gente acabou de falar, é super conhecida.
+[05:40] Então existem programas, vários robôs, varrendo a internet o tempo todo.
+[05:45] Tipo, escaneando tudo.
+[05:46] Isso.
+[05:47] Eles ficam testando senhas comuns nas portas abertas.
+[05:51] E não é um ataque pessoal.
+[05:53] Não é alguém tentando invadir o seu projeto específico.
+[05:56] É só um processo automático.
+[05:58] Um robô atirando pra todo lado.
+[06:00] Exato.
+[06:01] E uma senha razoável, por melhor que seja, não aguenta milhares de tentativas à
+[06:05] noite inteira.
+[06:06] Uma hora ela quebra.
+[06:07] Caramba.
+[06:08] E qual é a solução pra isso?
+[06:09] A gente usa um par de chaves.
+[06:12] É um par gerado junto na sua própria máquina local.
+[06:15] Um par de chaves.
+[06:16] É.
+[06:17] Uma é a chave pública, essa vai lá pro servidor.
+[06:21] A outra é a chave privada e essa nunca sai da sua máquina de origem e nunca é
+[06:25] enviada pra lugar nenhum.
+[06:27] Então, pra usar aquela nossa única analogia permitida aqui, é o seguinte.
+[06:32] A chave pública é como a fechadura que você instala lá na porta da máquina no servidor.
+[06:38] Ela fica à vista de todos.
+[06:40] Perfeito.
+[06:41] E a chave privada é a chave de metal que fica guardada no seu bolso.
+[06:45] Só que eu tenho que dizer o limite dessa comparação em voz alta, tá?
+[06:48] Manda.
+[06:49] Numa porta de verdade, um chaveiro experiente consegue olhar a fechadura e fabricar a
+[06:53] chave.
+[06:54] É, no mundo real sim.
+[06:55] Mas aqui ele não consegue, porque quem garante que ninguém vai fabricar a chave
+[06:59] olhando a fechadura é a matemática.
+[07:01] Matemática pura.
+[07:02] E o jeito que isso funciona sem a sua chave viajar é muito inteligente.
+[07:06] Cal, no seu computador, responde esse desafio usando a sua chave privada.
+[07:11] Aí, a máquina confere a resposta usando a chave pública que tá lá com ela.
+[07:15] Entendi.
+[07:16] Eu provo que tenho a chave sem mostrar a chave.
+[07:19] Mas vem cá.
+[07:20] E se eu perder esse arquivo da chave privada?
+[07:22] Tem muito perigo?
+[07:23] Tem, porque a chave privada é um arquivo, né?
+[07:25] E quem tem o arquivo entra no seu lugar.
+[07:27] Simples assim.
+[07:28] Nossa.
+[07:29] Essa chave não deve ir por e-mail, não deve ir pro repositório de código, de jeito nenhum.
+[07:35] Mas você pode proteger ela com uma senha própria, local.
+[07:38] E com tudo isso funcionando, o passo final é lá no servidor desligar completamente a entrada
+[07:44] por senha.
+[07:45] Tranca a porta e deixa só a fechadura nova.
+[07:47] Exatamente.
+[07:48] Show.
+[07:49] Aperte o próximo.
+[07:50] É.
+[07:51] Agora a gente vai olhar lá dentro.
+[07:52] E só um aviso pra quem tá com a página aberta, tem um botão na tela interativa
+[07:56] pra vocês acompanharem os comandos e verem a resposta da máquina.
+[07:59] É bem legal.
+[08:00] E assim que a conexão funciona, a mudança mais clara, aquela que diz que você entrou,
+[08:06] é que o texto, antes do cursor, muda de nome.
+[08:09] O prompt.
+[08:10] Isso, o prompt.
+[08:12] Aquela linha piscando é o seu único aviso de onde você está.
+[08:15] E num lugar assim totalmente escuro, baseado só em texto, qual é a primeira coisa
+[08:19] que a gente faz?
+[08:20] A gente faz as três perguntas fundamentais e a gente responde elas com três comandos
+[08:24] do sistema.
+[08:25] Então.
+[08:26] Primeira pergunta, quem eu sou?
+[08:29] Você usa o comando ruami e ele te diz qual é o usuário logado agora.
+[08:33] Tá.
+[08:34] E a segunda?
+[08:35] Onde eu estou?
+[08:36] O comando PWD diz o caminho completo da pasta atual.
+[08:39] E a terceira pergunta é o que tem aqui?
+[08:42] Pra ver os arquivos?
+[08:43] Isso.
+[08:44] Você usa o comando LS, que lista todos os arquivos e pastas daquele lugar.
+[08:48] E falando em pastas, como é a geografia delas no Linux?
+[08:52] É muito diferente.
+[08:54] Tem uma estrutura padrão, sabe?
+[08:56] De forma breve, você tem a sua pasta pessoal, que é o seu cantinho.
+[09:01] Tem a pasta de configuração, que manda no sistema.
+[09:04] Tem a pasta do servidor Web, que é onde vão as coisas públicas.
+[09:09] E tem uma muito importante, a pasta de registros.
+[09:13] Registros de erro, essas coisas?
+[09:15] Exato.
+[09:16] É o lugar que você vai olhar quando o seu programa quebrar.
+[09:19] Entendi.
+[09:20] Mas me diz uma coisa.
+[09:21] E pra sair dessa máquina?
+[09:23] É só digitar o comando Exit.
+[09:26] Ele encerra a conexão de um jeito seguro e o seu prompte volta a mostrar o nome da sua
+[09:30] máquina local.
+[09:31] É melhor que só fechar a janela no X?
+[09:34] Muito melhor.
+[09:35] Porque se você só fechar a janela, a conexão cai direto.
+[09:38] E qualquer programa que estava rodando solto naquela sessão, morre junto.
+[09:43] Bom, um detalhe fundamental pra pontuar aqui.
+[09:46] Nenhum desses comandos LS, PWD, Exit tem a ver com Java, certo?
+[09:52] Certíssimo.
+[09:53] Um comando os puros de Linux.
+[09:55] Legal.
+[09:56] Aperte o próximo.
+[09:57] Bom, a gente precisa falar do medo que as pessoas têm de quebrar tudo.
+[10:01] Nossa, sim, dá um medo natural de mexer na máquina de produção.
+[10:05] Qual é o perigo real de mexer no servidor em comparação com a máquina local?
+[10:09] A diferença é bem concreta.
+[10:11] Na máquina local, se você errar um comando e apagar algo, o erro custa apenas o seu
+[10:16] tempo.
+[10:17] Você arruma, refaça, no servidor o erro tira o site do ar.
+[10:22] Imejatamente.
+[10:23] Lá não existe lixeira pra recuperar arquivo, não existe atalho de desfazer e o comando
+[10:29] que apaga ele simplesmente não pergunta se você tem certeza.
+[10:33] Ele só vai e faz.
+[10:34] Sim.
+[10:35] Isso piora se você estiver usando o usuário root.
+[10:37] Quem é o root?
+[10:38] E o pior é que muitos servidores, quando você aluga, já entregam a máquina com
+[10:43] o usuário root liberado pra você.
+[10:45] Ah, aí a pessoa se acostuma a usar?
+[10:47] É muito cômodo.
+[10:49] Porque você tá como root, então nenhum comando o seu dá erro de permissão.
+[10:53] Tudo funciona até hora que você quebra a máquina.
+[10:55] E qual é a alternativa mais segura pra não viver perigosamente?
+[11:00] O certo é você sempre entrar com um usuário comum.
+[11:03] E aí, quando você precisar de poder de administrador pra algo específico, você pede esse poder
+[11:09] apenas naquele comando.
+[11:10] Como faz isso?
+[11:11] Colocando a palavra sudo na frente do comando.
+[11:13] Ah, o famoso sudo.
+[11:15] Ele mesmo.
+[11:16] O ganho prático de usar o sudo não é burocracia do sistema, é obrigar a pessoa
+[11:21] a parar.
+[11:22] Sabe, a palavra extra que você tem que digitar é aquele segundo necessário pra você ler
+[11:26] o comando de novo.
+[11:28] Isso conecta perfeitamente com aquele aviso central que a gente vem dando na série.
+[11:32] De copiar código da internet.
+[11:34] Isso.
+[11:35] Aceitar um código copiado de fórum ou gerado por inteligência artificial e colar direto
+[11:40] no terminal do servidor com poder de administrador.
+[11:43] A nossa tese de quebrar o projeto que antes demorava meses faz a explosão acontecer
+[11:48] em segundos.
+[11:49] Sem dúvida.
+[11:50] A gente dá o enter, a pessoa precisa saber o que aquele comando apaga, onde ele escreve
+[11:54] as coisas e principalmente o que ele baixa.
+[11:58] É, é a embrea de ouro.
+[11:59] E quer saber o erro mais comum de todos que derruba o servidor?
+[12:02] Qual?
+[12:03] Ficar com duas janelas de terminal abertas, uma conectada na sua máquina e a outra
+[12:08] no servidor.
+[12:09] A pessoa quer apagar um arquivo local de teste, digita o comando certo, mas tá
+[12:13] na janela errada.
+[12:14] Nossa, apagou o arquivo na produção.
+[12:16] É.
+[12:17] É isso que lhamo tic nervoso, sempre olhar para o prompt para ter certeza de onde
+[12:22] você tá.
+[12:23] O tom aqui não é criar um medo paralisante de mexer no servidor, tá?
+[12:27] É só focar em criar um hábito de atenção.
+[12:29] Ter respeito pela máquina, né?
+[12:31] Isso.
+[12:32] Tá ótimo.
+[12:33] Aperte o próximo.
+[12:34] Bom, a gente passou pela porta.
+[12:35] É, um resumo bem rápido aqui.
+[12:38] Um servidor é só um computador comum, mas sem tela.
+[12:41] O SSH é o que manda o nosso texto cifrado para lá.
+[12:45] A chave prova nossa identidade de forma segura e o prompt te avisa onde a gente tá.
+[12:50] E o mais legal é o que a pessoa leva desse conhecimento para a vida dela.
+[12:53] Como assim?
+[12:54] O uso do SSH, os comandos, tudo isso serve para você entrar em qualquer máquina Linux
+[12:58] no futuro, seja para trabalhar com Java ou qualquer outra linguagem.
+[13:02] E aquele mecanismo do par de chaves.
+[13:05] Aham.
+[13:06] É exatamente, mas exatamente a mesma tecnologia que a gente já usou lá atrás nos capítulos
+[13:11] anteriores para mandar o nosso código para o repositório remoto.
+[13:15] É o mesmo conceito resolvendo outro problema.
+[13:19] Olha só.
+[13:20] Bom, agora que a entrada na máquina está resolvida, o acesso está garantido, falta decidir
+[13:25] o que exatamente viaja para dentro dela.
+[13:28] É o próximo passo.
+[13:29] O projeto inteiro a gente já sabe que não vai.
+[13:32] E existe uma coisa no meio dos nossos arquivos de desenvolvimento, uma peça
+[13:36] específica que não pode junto de jeito nenhum.
+[13:39] Porque o que sobe para o servidor não sai mais.
+[13:42] A resposta do que é essa peça e como a gente separa as coisas fica para o nosso próximo
+[13:47] capítulo.

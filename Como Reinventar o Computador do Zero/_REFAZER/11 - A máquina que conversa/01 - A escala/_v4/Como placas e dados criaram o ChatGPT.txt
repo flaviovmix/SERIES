@@ -1,0 +1,7 @@
+Titulo: Como placas e dados criaram o ChatGPT
+Notebook: 11-01-A escala
+
+Descricao:
+Este documento detalha o desenvolvimento técnico e histórico da inteligência artificial generativa entre os anos de 2017 e 2022. O texto explica como a arquitetura Transformer evoluiu através de modelos icônicos como BERT e as versões sucessivas do GPT, focando na relação entre hardware potente e grandes volumes de dados. A narrativa destaca leis de escala, demonstrando que o simples aumento de parâmetros e processamento permitiu que as máquinas adquirissem capacidades imprevistas pelos programadores. O roteiro também traça o perfil dos pesquisadores fundamentais e das empresas que lideraram essa corrida tecnológica, culminando na criação do ChatGPT. Por fim, a fonte serve como um guia cronológico para entender como a computação moderna passou a processar a linguagem humana de forma fluida e eficiente.
+
+Link: https://notebook.google.com/notebook/59378bcb-1fe1-42db-b837-08e5777cb32a

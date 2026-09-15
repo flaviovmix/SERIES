@@ -1,82 +1,85 @@
 /* tokens
    As variaveis de cor e medida do site inteiro. Nao depende de nada e carrega primeiro.
 
-   Esta e a identidade nova da serie: as animacoes nasceram em creme e serao
-   trazidas pra ca uma a uma, comecando pelo abaco. Enquanto a migracao nao
-   termina, site e episodio antigo nao combinam, e isso e esperado. */
+   Desde 13/09/2026 o site usa o desenho do SITE-AFX (pedido dele: "faz toda a
+   interface com o mesmo design do SITE-AFX"): papel creme, tinta azul-marinho,
+   linha tracejada, Schibsted Grotesk nos textos e IBM Plex Mono nos rotulos. O
+   tema escuro sai da secao "noite" do mesmo site. Os nomes das variaveis ficaram
+   os de antes, entao cada componente troca de cara sem precisar saber.
+
+   As animacoes seguem com a paleta antiga por enquanto (a fase 1 so mexe nas
+   paginas do site): quem segura isso e o animacao/tokens.css, que carrega depois. */
 
 :root {
-  /* superficie e texto */
-  --ground:      #f4f6f8;
-  --surface:     #ffffff;
-  --surface-alt: #eceff3;
-  --line:        #d3dae1;
-  --line-soft:   #e3e8ed;
-  --ink:         #14191d;
-  --ink-soft:    #4b5760;
-  --ink-faint:   #77848d;
+  /* superficie e texto. Os dois cinzas de texto sao a tinta com transparencia,
+     como no AFX, mas mais opacos que la: .72 e .60 dao 4,8:1 e 3,7:1 sobre o papel */
+  --ground:      #f4f3ee;   /* o papel */
+  --surface:     #faf9f5;   /* o cartao */
+  --surface-alt: #eceae2;
+  --line:        rgba(34, 52, 79, .16);
+  --line-soft:   rgba(34, 52, 79, .09);
+  --line-strong: rgba(34, 52, 79, .34);   /* o tracejado dos cartoes */
+  --ink:         #22344f;
+  --ink-soft:    rgba(34, 52, 79, .72);
+  --ink-faint:   rgba(34, 52, 79, .60);
 
-  /* destaque */
-  --accent:      #0e5a6e;
-  --accent-soft: #e0eef1;
-  --accent-edge: #a8ccd6;
+  /* o AFX nao tem cor de marca: a marca e a propria tinta, e os botoes sao grafite */
+  --accent:         #22344f;
+  --accent-soft:    rgba(34, 52, 79, .07);
+  --accent-edge:    rgba(34, 52, 79, .34);
+  --destaque:       #434b58;
+  --destaque-forte: #333a45;
 
-  /* a fita do topo: as sete barras de teste da TV, na ordem classica */
-  --fita-1: #b9b9b9;
-  --fita-2: #b9b900;
-  --fita-3: #00b9b9;
-  --fita-4: #00b900;
-  --fita-5: #b900b9;
-  --fita-6: #b90000;
-  --fita-7: #0000b9;
-
-  /* a arte do card nao inverte com o tema: foto nao vira negativo */
-  --arte-de:  #16455a;
-  --arte-ate: #0b2a38;
-  --arte-ink: #dceef4;
-
-  /* tipografia */
-  --fonte-titulo: Archivo, ui-sans-serif, system-ui, sans-serif;
-  --fonte-serif:  Lora, Georgia, "Times New Roman", serif;
-  --fonte-texto:  "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --fonte-mono:   "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  /* tipografia. --fonte-serif manteve o nome, mas o AFX nao usa serifa */
+  --fonte-titulo: "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
+  --fonte-serif:  "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
+  --fonte-texto:  "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
+  --fonte-mono:   "IBM Plex Mono", Consolas, monospace;
 
   /* medida */
   --largura-pagina: 1120px;
+  /* a vitrine (a home e o hub de cada serie) usa mais a tela (11/09) */
+  --largura-vitrine: 1480px;
   --raio: 10px;
-  --shadow: 0 1px 2px rgba(20, 25, 29, .06), 0 8px 24px -16px rgba(20, 25, 29, .28);
+  --raio-cartao: 20px;
+  /* o desenho do AFX e chapado: cartao sem sombra, quem separa e a linha */
+  --shadow: none;
 }
 
-/* o tema escuro do sistema, quando o visitante nao escolheu nada */
+/* o tema escuro do sistema, quando o visitante nao escolheu nada: a "noite" do AFX */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --ground:      #11161a;
-    --surface:     #171e23;
-    --surface-alt: #1e262c;
-    --line:        #2c363d;
-    --line-soft:   #232c33;
-    --ink:         #e6ecf0;
-    --ink-soft:    #a3b0b9;
-    --ink-faint:   #77858e;
-    --accent:      #57b6ca;
-    --accent-soft: #12333c;
-    --accent-edge: #2c5d68;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
+    --ground:         #1c2a3f;
+    --surface:        #213049;
+    --surface-alt:    #27374f;
+    --line:           rgba(233, 235, 241, .16);
+    --line-soft:      rgba(233, 235, 241, .09);
+    --line-strong:    rgba(233, 235, 241, .34);
+    --ink:            #e9ebf1;
+    --ink-soft:       rgba(233, 235, 241, .72);
+    --ink-faint:      rgba(233, 235, 241, .56);
+    --accent:         #e9ebf1;
+    --accent-soft:    rgba(233, 235, 241, .08);
+    --accent-edge:    rgba(233, 235, 241, .34);
+    --destaque:       #e9ebf1;
+    --destaque-forte: #ffffff;
   }
 }
 
 /* o tema escuro escolhido na mao, que precisa ganhar do sistema */
 :root[data-theme="dark"] {
-  --ground:      #11161a;
-  --surface:     #171e23;
-  --surface-alt: #1e262c;
-  --line:        #2c363d;
-  --line-soft:   #232c33;
-  --ink:         #e6ecf0;
-  --ink-soft:    #a3b0b9;
-  --ink-faint:   #77858e;
-  --accent:      #57b6ca;
-  --accent-soft: #12333c;
-  --accent-edge: #2c5d68;
-  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
+  --ground:         #1c2a3f;
+  --surface:        #213049;
+  --surface-alt:    #27374f;
+  --line:           rgba(233, 235, 241, .16);
+  --line-soft:      rgba(233, 235, 241, .09);
+  --line-strong:    rgba(233, 235, 241, .34);
+  --ink:            #e9ebf1;
+  --ink-soft:       rgba(233, 235, 241, .72);
+  --ink-faint:      rgba(233, 235, 241, .56);
+  --accent:         #e9ebf1;
+  --accent-soft:    rgba(233, 235, 241, .08);
+  --accent-edge:    rgba(233, 235, 241, .34);
+  --destaque:       #e9ebf1;
+  --destaque-forte: #ffffff;
 }

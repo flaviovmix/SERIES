@@ -1,5 +1,6 @@
 /* modelo3d
    A moldura do modelo tridimensional embutido na pagina. Depende de tokens.css.
+   Moldura e botoes no desenho do SITE-AFX desde 13/09/2026 (canto largo, pilulas).
 
    O modelo tem paleta propria, de objeto, e nao acompanha o tema do site: e
    uma peca exposta, nao um pedaco da interface. */
@@ -7,9 +8,8 @@
 .modelo {
   margin: 0;
   border: 1px solid var(--line);
-  border-radius: var(--raio);
+  border-radius: var(--raio-cartao);
   background: var(--surface);
-  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
@@ -22,11 +22,11 @@
 }
 
 .modelo figcaption {
-  padding: 12px 16px;
-  border-top: 1px solid var(--line-soft);
+  padding: 12px 18px;
+  border-top: 1px solid var(--line);
   font-family: var(--fonte-mono);
   font-size: .68rem;
-  letter-spacing: .1em;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
@@ -66,32 +66,34 @@
   font: inherit;
 }
 
+/* o convite pra mexer: a pilula cheia em grafite, a mesma acao dos cards */
 .modelo__trava span {
-  padding: 10px 18px;
+  padding: 11px 20px;
   border-radius: 999px;
-  background: var(--accent);
-  color: var(--surface);
+  background: var(--destaque);
+  color: var(--ground);
   font-family: var(--fonte-mono);
   font-size: .68rem;
-  font-weight: 600;
-  letter-spacing: .1em;
+  font-weight: 500;
+  letter-spacing: .14em;
   text-transform: uppercase;
-  box-shadow: var(--shadow);
 }
 
 /* destravado: a camada sai de cena e a legenda oferece o caminho de volta */
 .modelo--solto .modelo__trava { display: none; }
 
+/* o caminho de volta e secundario: pilula so de traco */
 .modelo__soltar {
   float: right;
-  padding: 2px 9px;
-  border: 1px solid var(--accent-edge);
-  border-radius: 4px;
-  background: var(--accent-soft);
-  color: var(--accent);
+  padding: 2px 11px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
   cursor: pointer;
   font: inherit;
   font-size: .68rem;
-  letter-spacing: .1em;
+  letter-spacing: .14em;
   text-transform: uppercase;
 }
+.modelo__soltar:hover { border-style: solid; border-color: var(--ink); }

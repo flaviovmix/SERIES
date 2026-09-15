@@ -67,11 +67,13 @@
    As regras levam a classe dobrada de proposito: ganham das medidas dos blocos de
    altura la embaixo, que sao mais fracas. ---- */
 .suanpan.suanpan--deitado { flex-direction: column; align-items: stretch; gap: 14px; max-width: 760px; margin: 0 auto; }
-.suanpan.suanpan--deitado .haste { flex-direction: row; gap: 18px; }
+.suanpan.suanpan--deitado .haste { flex-direction: row; gap: 18px; justify-content: center; }
 .suanpan.suanpan--deitado .haste .rotulo { width: 88px; text-align: right; }
 .suanpan.suanpan--deitado .haste .valor { width: 34px; text-align: left; }
 .suanpan.suanpan--deitado .haste .fio {
-  flex: 1;
+  /* o fio tem a medida dos dois decks e da barra, como no abaco.css (10/09): com
+     flex: 1 ele esticava e sobrava fio vazio depois da ultima conta */
+  flex: none;
   flex-direction: row;
   width: auto;
   height: calc(var(--conta) + 14px);
@@ -80,7 +82,7 @@
 .suanpan.suanpan--deitado .haste.destaque .fio { background: linear-gradient(0deg, transparent 46%, var(--accent-vivo) 46% 54%, transparent 54%); }
 .suanpan.suanpan--deitado .deck { flex-direction: row; height: auto; padding: 0 6px; }
 .suanpan.suanpan--deitado .deck--cinco { width: calc(2 * var(--conta) + var(--vao) + var(--folga) + 12px); flex: none; justify-content: flex-start; }
-.suanpan.suanpan--deitado .deck--um { width: auto; flex: 1; justify-content: flex-start; }
+.suanpan.suanpan--deitado .deck--um { width: calc(5 * var(--conta) + 4 * var(--vao) + var(--folga) + 12px); flex: none; justify-content: flex-start; }
 .suanpan.suanpan--deitado .barra { width: 7px; height: auto; align-self: stretch; }
 .suanpan.suanpan--deitado .deck--cinco .conta { transform: translateX(0) scale(.88); }
 .suanpan.suanpan--deitado .deck--cinco .conta.on { transform: translateX(var(--folga)) scale(1); }

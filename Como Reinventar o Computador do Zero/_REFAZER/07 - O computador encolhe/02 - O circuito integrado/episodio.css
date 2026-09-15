@@ -6,14 +6,12 @@
    notebook) isso somava mais que a altura util e a ultima linha saia cortada.
    O 06-02 tem a mesma barra e nao corta porque as telas dele nao tem nota.
 
-   Em vez de jogar fora a nota, a foto cede a altura. O teto vai so na PRIMEIRA
-   imagem de proposito: no troca-imagem.css e ela que da altura ao palco, e a
-   segunda entra por cima com inset:0 e object-fit:cover justamente pra troca
-   nao pular o layout. Mexer nas duas quebraria esse contrato e deixaria tarja
-   cinza dos lados. (`:first-child` nao serve: quem abre o palco e o <span> do
-   selo. `img:nth-of-type(1)` conta so as imagens.) So deste episodio. */
+   Em vez de jogar fora a nota, a foto cede a altura. No troca-imagem.css e a
+   PRIMEIRA imagem que da altura ao palco, e a segunda entra por cima com inset:0
+   e object-fit:cover pra troca nao pular o layout; o teto na cena preserva isso.
+   So deste episodio. */
 
-.step--cena .troca .troca__img:nth-of-type(1) {
-  max-height: min(34vh, 380px);
-  object-fit: cover;
-}
+/* 10/09: o teto passou da foto pra CENA (--alto do pranchas.css). Com max-height
+   na foto a largura ficava cheia e a caixa saia do 16:9; pelo --alto a figura
+   inteira estreita e a foto continua 16:9. So a cena que tem a troca. */
+.step--cena .cena:has(.troca) { --alto: min(34vh, 380px); }

@@ -1,0 +1,13 @@
+O CEREBRO E OS SENTIDOS - CONTEXTO
+==================================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o episodio da etapa inteira numero 1 da serie DO LED AO ESP32. A serie monta do zero, peca por peca, uma caixa d'agua de predio que se cuida sozinha: enche quando falta, avisa quando tem problema e, mais pra frente, conta pro celular como esta.
+
+A etapa 1 poe o cerebro e os primeiros sentidos no aparelho. O microcontrolador e o laco que nao para; o LED que pisca como sinal de vida; a entrada digital, que so diz sim ou nao, no papel da boia; o rele, que da a ordem pra bomba sem puxar a corrente dela; a entrada analogica, que diz quanto tem, de 0 a 1023; o PWM, que da o meio termo; e a decisao com uma folga entre ligar e desligar. No fim, a bomba liga e desliga sozinha e o alarme acende na hora certa.
+
+E audio puro, sem animacao e sem exercicio: conta a etapa inteira numa olhada so, e os episodios seguintes descem em cada peca com calma. Da pra acompanhar sem comprar nada, porque o circuito roda num simulador de Arduino que abre no navegador.
+
+Por que importa: ler um contato, medir uma quantidade, dosar uma saida e decidir com uma regra e o que existe dentro de qualquer controle automatico, do termostato da geladeira ao controle de nivel de uma fabrica.
+
+Use este contexto apenas como apoio.

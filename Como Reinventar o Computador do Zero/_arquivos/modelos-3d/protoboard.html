@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <title>Protoboard — laboratório 3D</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./_visualizador-pecas.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+  </script>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Voltar à galeria de modelos 3D"><span class="brand-mark" aria-hidden="true">S</span> SEIRES <span class="brand-lab">/ LAB</span></a>
+      <span class="top-caption">HARDWARE, POR TODOS OS ÂNGULOS.</span>
+      <a class="back-link" href="./index.html">↗ Galeria 3D</a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <div><p class="eyebrow"><span class="live-dot"></span> MATRIZ DE CONTATOS · 830 PONTOS</p><h1 id="title">Proto<span>board</span><span class="title-dot">.</span></h1></div>
+        <p class="intro-copy">Circuito sem solda nenhuma.<br>Ligue o raio-x e veja o metal escondido.</p>
+      </section>
+      <div class="workspace">
+        <section class="viewer" aria-label="Visualizador do protoboard">
+          <div class="stage" id="stage">
+            <div class="stage-heading"><span><i></i> ESTÚDIO 3D</span><span id="assemblyLabel">PLACA MONTADA</span></div>
+            <div id="cena"></div>
+            <div id="loading" class="notice" role="status"><span class="spinner"></span>Preparando a placa…</div>
+            <div id="aviso" class="notice error" role="alert" hidden><strong>Não foi possível abrir o modelo.</strong><span>Confira a conexão e se o navegador está com WebGL disponível.</span><button type="button" id="retry">Tentar novamente</button></div>
+            <div class="stage-bottom"><span class="gesture" id="gestureHint">↔ Arraste para girar <span>·</span> Botão direito move</span><button class="small-button" type="button" id="reset" aria-label="Restaurar câmera e enquadramento">↺ <span>Restaurar</span></button></div>
+          </div>
+          <div class="viewbar" aria-label="Ângulos da câmera">
+            <div class="views"><button type="button" data-view="perspective" aria-pressed="true">Perspectiva</button><button type="button" data-view="front" aria-pressed="false">Topo</button><button type="button" data-view="back" aria-pressed="false">Por baixo</button><button type="button" data-view="side" aria-pressed="false">Perfil</button></div>
+            <button type="button" id="fullscreen" class="small-button" aria-label="Abrir visualizador em tela cheia">⛶</button>
+          </div>
+          <div class="viewer-actions"><button type="button" id="rotate" aria-pressed="false"><span class="toggle-dot"></span>Giro automático</button><button type="button" id="raiox" aria-pressed="false"><span class="toggle-dot"></span>Raio-X</button><button type="button" id="corrente" aria-pressed="true"><span class="toggle-dot"></span>Circuito ligado</button><button type="button" id="pan" aria-pressed="false" aria-label="Ativar modo de mover a câmera"><span class="move-icon" aria-hidden="true">✥</span><span>Mover câmera</span></button><button type="button" id="snapshot">↓ Salvar imagem</button></div>
+        </section>
+        <aside class="inspector" aria-label="Explorar componentes">
+          <div class="panel-heading"><span class="eyebrow">ENGENHARIA EM CAMADAS</span><span class="panel-number">01 / 06</span></div>
+          <h2>Onde os fios se encontram.</h2><p class="panel-intro">Por fora são 830 furos iguais. Por dentro, eles já vêm ligados de cinco em cinco.</p>
+          <button class="primary" type="button" id="explode" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Zm0 4 9 5 9-5M3 16l9 5 9-5"/></svg><span>Explorar por dentro</span><span aria-hidden="true">↗</span></button>
+          <div class="separation"><label for="separation">Separação das peças <output id="separationValue" for="separation">0%</output></label><input id="separation" type="range" min="0" max="100" value="0" step="1"></div>
+          <details class="visibility-panel" open><summary>Mostrar / ocultar peças <span id="visibilityCount">6 / 6</span></summary><div id="visibilityList"></div><button type="button" id="showAll">Mostrar todas as peças</button></details>
+          <div class="components" aria-label="Componentes do modelo">
+            <button type="button" data-part="corpo" aria-pressed="true"><span>01</span>Corpo e furos<i>↗</i></button>
+            <button type="button" data-part="contatos" aria-pressed="false"><span>02</span>Molas de contato<i>↗</i></button>
+            <button type="button" data-part="trilhos" aria-pressed="false"><span>03</span>Trilhos de alimentação<i>↗</i></button>
+            <button type="button" data-part="canal" aria-pressed="false"><span>04</span>O canal do meio<i>↗</i></button>
+            <button type="button" data-part="circuito" aria-pressed="false"><span>05</span>Circuito de exemplo<i>↗</i></button>
+            <button type="button" data-part="base" aria-pressed="false"><span>06</span>Base adesiva<i>↗</i></button>
+          </div>
+          <div class="part-detail" aria-live="polite"><span id="partKicker">TODOS OS FUROS IGUAIS</span><h3 id="partTitle">O que a placa mostra por fora.</h3><p id="partText">Sessenta e três colunas numeradas, dez linhas com letra e dois trilhos em cada borda. Os números e as letras são só um mapa para você achar o furo de novo.</p><button type="button" id="isolate" aria-pressed="false">Isolar componente ↗</button></div>
+        </aside>
+      </div>
+      <section class="specs" aria-label="Características do protoboard"><div><span>PONTOS DE CONTATO</span><strong>830</strong></div><div><span>PASSO ENTRE FUROS</span><strong>2,54 <small>mm · 0,1"</small></strong></div><div><span>FUROS POR MOLA</span><strong>5</strong></div><div><span>PLACA</span><strong>165 × 55 <small>mm</small></strong></div></section>
+      <footer><p>Estudo visual de uma matriz de contatos de 830 pontos. As molas internas são uma representação didática, ampliada e simplificada.</p><a href="./index.html">Galeria 3D ↗</a></footer>
+    </main>
+  </div>
+  <script>
+    document.getElementById('retry').addEventListener('click',()=>location.reload());
+    window.__protoboardLoadTimer=setTimeout(()=>{if(!window.__protoboard){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},8000);
+    if(window.parent!==window)document.body.classList.add('embedded');
+  </script>
+  <script type="module" src="./protoboard.js"></script>
+</body>
+</html>

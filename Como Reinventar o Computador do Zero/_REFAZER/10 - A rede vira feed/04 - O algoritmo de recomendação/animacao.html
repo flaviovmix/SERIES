@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O algoritmo de recomendação — Etapa 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 10-04. ⚠️ DEZ TELAS, nao doze: o roteiro pedia doze e o audio entregou dez,
+     juntando o contexto com o premio e a privacidade com a vitoria. Como dez telas com
+     nove pedidos e internamente consistente, e como a regra de 08/09 diz que a pagina
+     serve ao audio, a pagina segue o audio. As fichas fecham com o destino do trabalho
+     de cada pessoa. Os __PLACEHOLDERS__ do tocador sao preenchidos pelo preenche-10.py. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/menu.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+</head>
+<body>
+
+<header class="topo">
+</header>
+
+<main>
+
+  <!-- 1 -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a rede vira feed · episódio 04 · quando ninguém escreve a regra</div>
+      <h1 class="reveal">O algoritmo de recomendação</h1>
+      <p class="lede reveal">De <b>2006 a 2016</b>, em ordem e com as pessoas. O episódio anterior fechou com uma regra de três fatores escrita à mão. E se ninguém escrever a regra? <b>Esta foi a primeira máquina que aprendeu e mexeu com todo mundo</b>, e não foi a que conversa. O que ela aprendeu veio do rastro que as pessoas deixaram sem perceber.</p>
+      <div class="capa-como reveal">
+        <p><b>Em 2006 a Netflix era DVD pelo correio.</b> Você montava uma fila num site e os discos iam e voltavam; o streaming só começa em 2007. Foi dessa empresa que saiu um concurso público de um milhão de dólares pra quem melhorasse em 10% o acerto da nota.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/envelope-real.jpg" alt="Envelope vermelho da Netflix usado para enviar DVDs pelo correio">
+      <figcaption>O produto em 2006 chegava pelo correio · foto: BlueMint, CC BY 2.5</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">11 de dezembro de 2006</div>
+    <h2 class="reveal">O método sai de graça</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Multiplicar duas tabelas magras dá de volta uma tabela grande: é a ideia da fatoração · diagrama: Bilou, CC BY-SA 3.0">
+        <img src="img/matriz-real.png" alt="Diagrama de multiplicação de matrizes, com duas tabelas menores gerando uma maior">
+        <figcaption>Duas tabelas magras no lugar de uma gigante e vazia · diagrama: Bilou, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Quem competia como <b>Simon Funk</b>, em terceiro lugar, publicou de graça o método dele no meio de uma disputa por um milhão de dólares. A tabela é de 480 mil pessoas por 17.770 filmes, com uma célula preenchida em cada cem. <b>O modelo nunca vê título nem elenco:</b> só quem votou o quê.</p>
+    <div class="nota-cena reveal">os números que descrevem cada filme não têm nome: chamar um deles de "ação e drama" é interpretação humana, não instrução</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2007 · a peça que veio de Toronto</div>
+      <h2 class="reveal">A rede neural entra pela porta dos fundos</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">quem</div><div class="texto">Geoffrey Hinton assina em 2007 um trabalho que usa rede neural pra adivinhar nota. É quem, cinco anos depois, vira a chave da etapa anterior</div></div>
+        <div class="item reveal"><div class="rotulo">o resultado</div><div class="texto">em novembro de 2007 a equipe da frente leva o prêmio de progresso, com 8% de melhora: a fatoração <b>mais</b> essa rede neural</div></div>
+      </div>
+      <p class="lede reveal"><b>São estas duas peças, e só elas, que a Netflix põe pra rodar.</b> Rede neural não nasceu em 2012: já rodava aqui, pequena e sem nome.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Geoffrey Hinton em 2024 · foto: Arthur Petron, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/hinton-real.jpg" alt="Geoffrey Hinton de terno e camisa clara, cabelo branco, olhando pra câmera">
+        <figcaption>Geoffrey Hinton · foto: Arthur Petron, CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O desenho de uma rede em camadas: entrada, camadas do meio e saída · diagrama: Offnfopt, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/rede-real.png" alt="Diagrama de rede neural com círculos em três colunas ligados por linhas">
+        <figcaption>Camadas ligadas · diagrama: Offnfopt, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="step step--cena">
+    <div class="kicker reveal">2006 a 2009 · o dado e o empate</div>
+    <h2 class="reveal">Tirar o nome não é anonimizar</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Fileiras de máquinas num centro de dados: o padrão de comportamento que fica guardado é a impressão digital · foto: Visitor7, CC BY-SA 3.0">
+        <img src="img/datacenter-real.jpg" alt="Corredor de centro de dados com racks dos dois lados e tubos coloridos no teto">
+        <figcaption>O que sobra depois de tirar o nome · foto: Visitor7, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">Dezesseis dias depois do concurso começar, dois pesquisadores do Texas cruzaram a base com avaliações públicas de outro site. <b>Com oito notas dava pra identificar 99% dos registros.</b> A Netflix não anonimizou: trocou o nome por um número e deixou a impressão digital.</p>
+    <div class="nota-cena reveal">em julho de 2009 a marca cai: no placar público a outra equipe estava na frente, no conjunto que valia empataram, e o desempate foi por ordem de chegada — 20 minutos</div>
+  </section>
+
+  <!-- 5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2012 · a empresa conta</div>
+      <h2 class="reveal">O que ficou na prateleira</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que não foi usado</div><div class="texto">a mistura de <b>107 algoritmos</b> que ganhou o milhão nunca foi pra produção</div></div>
+        <div class="item reveal"><div class="rotulo">o que foi</div><div class="texto">as duas peças do primeiro ano, a fatoração e a rede neural, reescritas pra escala. Ficaram anos no recomendador. <b>A lenda de que pagaram um milhão e não usaram nada é falsa pela metade</b></div></div>
+        <div class="item reveal"><div class="rotulo">as três razões</div><div class="texto">o ganho não pagava o esforço de engenharia; a escala tinha mudado, de 100 milhões de notas para mais de 5 bilhões; e o produto tinha virado streaming</div></div>
+      </div>
+      <p class="lede reveal">É a terceira razão que empurra a recomendação pro resto da rede: <b>prever a nota que você daria deixou de ser o problema, e prever o que você vai assistir virou o problema.</b> E isso qualquer serviço faz sem pedir nada pra você.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Reed Hastings · foto: autor não informado, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/hastings-real.jpg" alt="Reed Hastings de camisa clara, cabelo e barba grisalhos, falando num palco">
+        <figcaption>Reed Hastings · foto: autor não informado, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">por volta de 2011</div>
+      <h2 class="reveal">O feed para de seguir regra</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que muda</div><div class="texto">a regra de três fatores escrita à mão sai, e entra um sistema que aprende. Em 2013 um engenheiro de ranqueamento da casa fala em <b>até 100 mil pesos</b></div></div>
+        <div class="item reveal"><div class="rotulo">a diferença</div><div class="texto">numa regra escrita à mão, uma pessoa decide que comentário vale mais que curtida. Num sistema que aprende, ninguém decide: a máquina olha o que você fez e ajusta os pesos sozinha</div></div>
+        <div class="item reveal"><div class="rotulo">o cuidado</div><div class="texto">não existe anúncio oficial com data pra essa troca. O que se sabe vem de uma entrevista de 2013, então é <b>por volta de 2011</b></div></div>
+      </div>
+      <p class="lede reveal">A partir daí, nem quem construiu o sistema consegue dizer em uma frase por que aquele post apareceu pra você. <b>Não por segredo: porque a resposta são cem mil números.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Mark Zuckerberg em 2005 · foto: Elaine Chan e Priscilla Chan, CC BY 2.5">
+        <span class="selo">imagem real</span>
+        <img src="img/zuckerberg-real.jpg" alt="Mark Zuckerberg jovem, de camiseta, cabelo encaracolado">
+        <figcaption>Mark Zuckerberg · foto: Elaine e Priscilla Chan, CC BY 2.5</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">março de 2011</div>
+      <h2 class="reveal">A bolha de filtro</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o nome</div><div class="texto">Eli Pariser dá nome a um incômodo: se cada pessoa vê uma seleção feita sob medida, cada uma passa a viver num recorte diferente do mundo</div></div>
+        <div class="item reveal"><div class="rotulo">o que é afirmação</div><div class="texto">"bolha de filtro" é conceito de debate público, <b>não resultado de laboratório</b>. E o número mais repetido do mundo sobre isso saiu de uma declaração de executivo em evento, sem metodologia publicada</div></div>
+        <div class="item reveal"><div class="rotulo">o que a pesquisa achou</div><div class="texto">estudos grandes, de 2021 pra cá, mediram e acharam o contrário do senso comum: a maior parte de quem chega em conteúdo extremo chega por busca direta, inscrição em canal e link de fora</div></div>
+      </div>
+      <p class="lede reveal">⚠️ Mas esses estudos são dez anos posteriores ao que este episódio conta, e mediram um sistema que já tinha mudado. <b>Dá pra dizer o que foi decidido; não dá pra dizer qual foi o efeito nas pessoas.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Eli Pariser · foto: Knight Foundation, CC BY-SA 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/pariser-real.jpg" alt="Eli Pariser de camisa escura, barba curta, falando">
+        <figcaption>Eli Pariser · foto: Knight Foundation, CC BY-SA 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">agosto de 2012</div>
+      <h2 class="reveal">Trocar o que se mede</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a decisão</div><div class="texto">o YouTube para de otimizar <b>clique</b> e passa a otimizar <b>tempo assistido</b>. Em outubro a mesma troca chega na busca de vídeos</div></div>
+        <div class="item reveal"><div class="rotulo">o diagnóstico deles</div><div class="texto">o sistema antigo premiava vídeo bom em atrair clique, e não vídeo que segurava quem assistia. Premiava a capa, não o filme</div></div>
+        <div class="item reveal"><div class="rotulo">por que é técnico</div><div class="texto">o que mudou foi o <b>rótulo</b> que a máquina tenta acertar. Clique é sim ou não, e é barato de enganar. Tempo assistido é contínuo e mede o que acontece <b>depois</b> do clique</div></div>
+      </div>
+      <p class="lede reveal">Nenhuma peça de hardware mudou nesse dia, e nenhum algoritmo novo foi inventado. <b>Mudou o que se mede, e isso mudou o sistema inteiro.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Salar Kamangar · foto: Hwnar M. S., CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/kamangar-real.jpg" alt="Salar Kamangar de camisa clara, cabelo escuro, num evento">
+        <figcaption>Salar Kamangar · foto: Hwnar M. S., CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">setembro de 2016</div>
+      <h2 class="reveal">A rede neural assume</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o desenho</div><div class="texto">duas redes, em funil. A primeira pega milhões de vídeos e escolhe <b>centenas</b>; a segunda ordena as <b>dezenas</b> que aparecem. Uma é barata e grosseira, a outra cara e caprichada</div></div>
+        <div class="item reveal"><div class="rotulo">com o que aprende</div><div class="texto">não com nota nem com curtida: <b>com o que você assistiu até o fim</b>. Mais de um bilhão de pessoas e de números ajustáveis</div></div>
+        <div class="item reveal"><div class="rotulo">o que não dá pra dizer</div><div class="texto">⚠️ <b>não foi a primeira rede neural em produção</b>, nem a primeira em escala de bilhões: a da própria Netflix já rodava desde 2008, e a busca do Google usava desde 2015</div></div>
+      </div>
+      <p class="lede reveal">O especial é outra coisa: foram os próprios engenheiros publicando, em detalhe, como isso funciona nessa escala. <b>E o trabalho fala o tempo todo em economizar processador comum.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Susan Wojcicki · foto: TechCrunch, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/wojcicki-real.jpg" alt="Susan Wojcicki de blazer escuro, cabelo castanho comprido">
+        <figcaption>Susan Wojcicki · foto: TechCrunch, CC BY 2.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Jeff Dean em 2019 · foto: The Web Conference, CC BY 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/dean-real.jpg" alt="Jeff Dean de camisa clara, cabelo curto, sorrindo">
+        <figcaption>Jeff Dean · foto: The Web Conference, CC BY 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2016</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Hastings soltou o dado no mundo e deixou qualquer um tentar. Quem competia como Simon Funk publicou o método de graça no meio da disputa. Hinton trouxe a rede neural cinco anos antes de ela virar assunto. Dois pesquisadores mostraram que o dado não era anônimo. Três grupos se juntaram e ganharam por 20 minutos de relógio. Os engenheiros da Netflix decidiram não usar o campeão, e explicaram por quê. Zuckerberg trocou a regra escrita à mão por um sistema que aprende. Pariser deu nome ao incômodo. Kamangar trocou o que a máquina mede. Ninguém planejou o conjunto</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">quem tem ficha nesta história</div>
+        <div class="desc">boa parte de quem escreveu essas peças não tem nem data de nascimento pública. Quem tem ficha são os donos das empresas</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição da etapa</div>
+        <div class="desc">a rede abriu pro comércio e o dinheiro chegou antes do uso, deixando cano enterrado. Veio um jeito de ordenar a web e cobrar por isso, que obrigou a máquina a adivinhar gente. Gente demais publicando matou a ordem de hora. E no fim quem escolhe o que você vê não é mais uma regra que alguém escreveu: é um modelo que aprendeu com o que você fez</div>
+      </div>
+    </div>
+    <p class="lede reveal">Essa máquina aprendeu a adivinhar o que você quer sem você pedir nada. Ela lê o seu rastro. <b>Mas em nenhum momento você conversa com ela. E se desse pra simplesmente pedir, com as suas palavras?</b></p>
+  </section>
+
+</main>
+
+  <div class="tocador">
+    <audio preload="metadata" src="A%20m%C3%A1quina%20que%20aprendeu%20lendo%20rastros.m4a" data-duracao="1130"></audio>
+    <img class="tocador__capa" src="img/envelope-real.jpg" alt="">
+    <div class="tocador__id">
+      <div class="tocador__titulo">A máquina que aprendeu lendo rastros</div>
+    </div>
+    <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="1130" aria-valuenow="0">
+      <div class="tocador__cheio"></div>
+      <div class="tocador__marcas"></div>
+    </div>
+    <div class="tocador__controles">
+      <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+      <div class="tocador__transporte">
+        <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+        <button class="tocador__play" aria-label="tocar">▶</button>
+        <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+      </div>
+      <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">18:50</span></div>
+    </div>
+  </div>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
+</footer>
+
+<script src="../../../../site/js/menu.js"></script>
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

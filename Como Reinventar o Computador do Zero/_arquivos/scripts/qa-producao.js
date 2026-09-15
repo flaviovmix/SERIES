@@ -20,6 +20,9 @@ const PAGINAS = [
   ['10.01', S + '/_REFAZER/10%20-%20A%20rede%20vira%20feed/01%20-%20A%20bolha/animacao.html', 12, null],
   ['10.02', S + '/_REFAZER/10%20-%20A%20rede%20vira%20feed/02%20-%20A%20busca%20vira%20neg%C3%B3cio/animacao.html', 12, null],
   ['10.03', S + '/_REFAZER/10%20-%20A%20rede%20vira%20feed/03%20-%20As%20redes%20sociais/animacao.html', 12, null],
+  // o 10.04 tem DEZ telas, nao doze: o audio entregou dez blocos e a pagina segue o audio
+  ['10.04', S + '/_REFAZER/10%20-%20A%20rede%20vira%20feed/04%20-%20O%20algoritmo%20de%20recomenda%C3%A7%C3%A3o/animacao.html', 10, null],
+  ['11.01', S + '/_REFAZER/11%20-%20A%20m%C3%A1quina%20que%20conversa/01%20-%20A%20escala/animacao.html', 12, null],
 ];
 
 (async () => {
@@ -37,7 +40,7 @@ const PAGINAS = [
     await page.waitForTimeout(2500);
 
     const d = await page.evaluate(() => ({
-      telas: document.querySelectorAll('.step').length,
+      telas: document.querySelectorAll('main > .step:not(.step--fim)').length,
       quebradas: [...document.querySelectorAll('img')].filter((i) => i.getAttribute('src') && !(i.complete && i.naturalWidth > 0)).length,
       estouro: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       duracao: (document.querySelector('.tocador__total') || {}).textContent,

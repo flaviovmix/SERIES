@@ -46,6 +46,33 @@ A PALAVRA "FICHA" E UM MARCADOR DESTE ROTEIRO E NAO E DITA EM VOZ ALTA. NAO dize
 "deixa eu ler a ficha" nem nada parecido: emendar direto no nome. A PALAVRA "CENA" TAMBEM E
 MARCADOR: NAO dizer "naquela cena" nem "na cena".
 
+⚠️ O AVISO DA PAGINA E UM LEMBRETE, NAO UMA EXPLICACAO. Quem ouve esta serie ouve
+em sequencia e ja sabe como a pagina funciona: este e o quarto episodio da etapa. NAO
+explicar a mecanica do zero como se fosse a primeira vez. Uma frase curta na tela 1,
+dizendo que sao doze telas, que quem esta so ouvindo acompanha normalmente, e que quem
+esta com a pagina aberta vira quando ouvir o pedido. Sem ensinar a usar a pagina e sem
+dizer a frase do pedido como exemplo.
+
+⚠️ A APOSTA TEM QUE SOAR COMO APOSTA, E ESTE EPISODIO TEM DUAS. Quando contar uma decisao
+que deu certo, dizer o que NAO se sabia naquele dia. Nao deixar ninguem parecer que ja
+sabia o final:
+
+- NA TELA 2, o premio de um milhao de dolares: em dois mil e seis a Netflix era DVD pelo
+  correio e ninguem sabia se streaming ia pegar. Soltar a base de notas no mundo era risco,
+  nao esperteza: podia nao aparecer ninguem melhor que o sistema da casa, e a base ainda
+  criou um problema serio de privacidade que a tela 5 conta. Dizer isso.
+- NA TELA 4, a rede neural de dois mil e sete: naquele momento rede neural era assunto FORA
+  de moda, coisa que quase ninguem levava a serio. Ninguem ali sabia que cinco anos depois
+  ela viraria a chave da industria. Dizer que na epoca aquilo era uma aposta esquisita, e
+  nao um caminho obvio.
+
+⚠️ AMARRAR COM OS OUTROS EPISODIOS DESTA ETAPA. Os quatro cobrem a mesma janela por fios
+diferentes. Onde as datas se cruzarem, lembrar em UMA frase o que estava acontecendo do
+outro lado: em dois mil e seis, quando o premio e anunciado, a busca ja tinha virado
+negocio e o YouTube estava sendo comprado; e em dois mil e onze e dois mil e doze, o feed
+que aprende e a troca do que se mede acontecem enquanto as redes sociais do episodio
+anterior ja tinham gente demais publicando.
+
 REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o Proximo"
 exatamente 11 vezes, uma no fim de cada tela, na ordem. A frase e sempre essa, "aperte o
 Proximo", COM o "o", sem variacao. NAO juntar o conteudo de duas telas num bloco so, NAO
@@ -53,6 +80,18 @@ adiantar o assunto da tela seguinte e NAO seguir adiante sem pedir.
 
 AO EXPLICAR A PAGINA NA TELA 1, NAO DIZER A FRASE "aperte o Proximo" COMO EXEMPLO. Dizer
 so "quando ouvir o pedido".
+
+⚠️ A GRAVACAO ANTERIOR EMENDOU AS TELAS 1 e 2 E DUROU 28 MINUTOS EM VEZ DE 18. Os dois
+defeitos, e como evitar:
+
+- TELAS 1 e 2 SAIRAM NUM BLOCO SO. A tela 1 e SO a pergunta que ficou, a tese, o intervalo
+  de anos e o aviso da pagina. Ela termina ali, com o pedido. O premio, o milhao de dolares,
+  a Netflix e o Reed Hastings sao TODOS da tela 2 e nao podem aparecer na tela 1.
+- CADA TELA TEM QUE DURAR UNS UM MINUTO E MEIO, nao dois e meio. Doze telas nesse ritmo dao
+  os dezoito minutos do molde. Se uma tela esta passando de dois minutos, ela esta sendo
+  esticada: dizer o que a tela tem pra dizer, do jeito mais direto, e pedir o Proximo. NAO
+  repetir com outras palavras o que acabou de ser dito, NAO resumir a tela anterior antes de
+  comecar a nova, e NAO comentar o proprio comentario.
 
 ATENCAO ESPECIAL COM AS TELAS 6 e 7. A tela 6 e a vitoria do premio. A tela 7 e a Netflix
 contando o que fez com o resultado. Duas telas, dois pedidos. NAO adiantar na tela 6 que o
@@ -81,22 +120,14 @@ filmes", "vinte minutos", "cinco bilhoes de notas", "cento e sete algoritmos", "
 pessoas", "um bilhao de numeros ajustaveis", "centenas de bilhoes de exemplos". NAO trocar
 milhao por bilhao.
 
-NOMES E SIGLAS. Na PRIMEIRA vez que cada um aparecer, dizer devagar:
-
-- Netflix: fala-se "nét-flics". Reed Hastings: fala-se "rid rêis-tings".
-- Cinematch: fala-se "sine-métch"; era o nome do sistema de recomendacao que a Netflix ja
-  tinha.
-- Simon Funk: fala-se "sái-mon fânk"; e um apelido, nao o nome de registro dele.
-- Geoffrey Hinton: fala-se "djé-fri rin-ton". YouTube: fala-se "iú-tiúb".
-- Eli Pariser: fala-se "í-lai pá-ri-ser". Salar Kamangar: fala-se "sa-lár ka-man-gár".
-- Susan Wojcicki: fala-se "sú-zan uo-djís-qui". Jeff Dean: fala-se "djéf dín".
-- Facebook: fala-se "fêis-buc". Mark Zuckerberg: fala-se "márc zâ-quer-berg".
-- Rede neural: dizer em portugues, "rede neural". NAO dizer "deep learning": dizer "rede
-  neural profunda".
-
-⚠️ A LISTA DE PRONUNCIA ACIMA E INSTRUCAO PRA VOCE, NAO E FALA. NUNCA dizer "que se
-pronuncia", "que se le" nem "pronuncia-se" no ar. Falar o nome do jeito certo, uma vez, e
-seguir em frente como se nada tivesse sido explicado.
+NOMES ESTRANGEIROS: dizer devagar e com calma na primeira vez que cada um aparecer, e
+seguir em frente. NAO comentar como o nome se pronuncia, NAO repetir o nome logo depois de
+diz-lo, e NAO usar as expressoes "fala-se", "que se pronuncia", "pronuncia-se" nem "que se
+le". Dizer o nome UMA vez e continuar. Os nomes deste episodio: Netflix, Reed Hastings,
+Cinematch (o sistema de recomendacao que a Netflix ja tinha), Simon Funk (um apelido, nao o
+nome de registro), Geoffrey Hinton, YouTube, Eli Pariser, Salar Kamangar, Susan Wojcicki,
+Jeff Dean, Facebook e Mark Zuckerberg. Dizer "rede neural" e "rede neural profunda" em
+portugues, NUNCA "deep learning".
 
 ⚠️ DOIS DEFEITOS DA GRAVACAO ANTERIOR, E OS DOIS SAO FACEIS DE EVITAR:
 
@@ -201,7 +232,7 @@ Contar a pessoa e o dia: em dois de outubro de dois mil e seis, Reed Hastings, q
 Netflix, anuncia um concurso publico com um premio de um milhao de dolares.
 
 FICHA: Reed Hastings, nascido em mil novecentos e sessenta, tinha quarenta e cinco anos;
-vivo em dois mil e vinte e seis.
+vivo em dois mil e vinte e seis, quando saiu do conselho da Netflix.
 
 LEMBRAR O QUE A NETFLIX ERA NAQUELE MOMENTO, porque quase todo mundo esquece: nao era
 streaming. Era DVD pelo correio. Voce montava uma fila de filmes num site, e os discos
@@ -265,7 +296,7 @@ grupo em Toronto publicou como usar um tipo de rede neural pra fazer a mesma tar
 adivinhar nota.
 
 FICHA: Geoffrey Hinton, nascido em mil novecentos e quarenta e sete, tinha cinquenta e nove
-anos; vivo em dois mil e vinte e seis.
+anos; vivo em dois mil e vinte e seis, dando aula em Toronto.
 
 Lembrar quem e ele em uma frase, sem repetir a etapa 9: e a mesma pessoa que, cinco anos
 depois, esta por tras da rede que enxerga imagem e vira a chave da etapa anterior desta
@@ -366,7 +397,7 @@ Retomar de onde o episodio anterior parou, sem repetir: a regra de tres fatores 
 Facebook mostrou em dois mil e dez era escrita a mao.
 
 FICHA: Mark Zuckerberg, nascido em mil novecentos e oitenta e quatro, tinha vinte e sete
-anos; vivo em dois mil e vinte e seis.
+anos; vivo em dois mil e vinte e seis, ainda no comando da mesma empresa.
 
 Contar a troca, com o cuidado da fonte: por volta de dois mil e onze a regra escrita a mao
 sai e entra um sistema que aprende. Em dois mil e treze, um engenheiro de ranqueamento da
@@ -396,7 +427,7 @@ selecao feita sob medida pra ela, cada uma passa a viver num recorte diferente d
 chamou isso de bolha de filtro.
 
 FICHA: Eli Pariser, nascido em mil novecentos e oitenta, tinha trinta anos; vivo em dois mil
-e vinte e seis.
+e vinte e seis, tocando uma organizacao que constroi pracas digitais de bairro.
 
 ⚠️ SEPARAR AFIRMACAO DE PESQUISA, COM TODAS AS LETRAS, PORQUE ESTA E A TELA MAIS FACIL DE
 ERRAR: "bolha de filtro" e um conceito de debate publico, nao um resultado de laboratorio. E
@@ -414,6 +445,14 @@ episodio conta, e mediram um sistema que ja tinha mudado. Eles nao servem pra af
 sobre o sistema de dois mil e onze. O que da pra dizer com seguranca e o que foi decidido, e
 nao qual foi o efeito nas pessoas.
 
+FALAR DA OBRA QUE EXISTE, em duas frases e sem virar propaganda: quem quiser ver esse
+debate com cara e voz tem "O Dilema das Redes Sociais", de dois mil e vinte, na Netflix,
+com ex-funcionarios do Google e do Facebook falando do proprio trabalho. E dizer o cuidado
+junto, que e o que separa esta serie do filme: ele NAO e documentario, e um docudrama, com
+CENAS DE FICCAO ENCENADAS no meio das entrevistas, inclusive uma sala de controle com tres
+algoritmos decidindo o que voce ve, que e invencao pra explicar, nao descricao de sistema.
+O proprio diretor aceitou em publico a critica de que so ouviu gente de dentro do Vale.
+
 Dizer a licao de hardware e software: a maquina passou a decidir o que bilhoes de pessoas
 veem antes de existir qualquer jeito de medir o efeito disso. A engenharia chegou primeiro
 que a medida.
@@ -427,8 +466,11 @@ CLIQUE e passa a otimizar TEMPO ASSISTIDO. Em outubro a mesma troca chega na bus
 videos.
 
 FICHA: Salar Kamangar, nascido em mil novecentos e setenta e sete, tinha trinta e quatro ou
-trinta e cinco anos; vivo em dois mil e vinte e seis. (O dia do aniversario dele nao e
-publico: dizer as duas idades assim mesmo, sem explicar.)
+trinta e cinco anos; deixou o YouTube em dois mil e catorze e vivo em dois mil e vinte e
+seis. (O dia do aniversario dele nao e publico: dizer as duas idades assim mesmo, sem
+explicar. ⚠️ E NAO dizer em que ele trabalha agora: nao ha fonte confiavel, e o que circula
+na internet sobre isso e texto de fazenda de conteudo repetindo o cargo de dois mil e
+catorze. A ficha dele para no que esta escrito aqui.)
 
 Dizer o diagnostico deles, quase com as palavras deles: o sistema antigo premiava video bom
 em atrair clique, e nao video que segurava quem assistia. Ou seja, premiava a capa, e nao o
@@ -457,10 +499,12 @@ Jay Adams e Emre Sargin.
 Dizer quem estava por perto, com ficha, porque sao dois nomes que a serie ja conhece:
 
 FICHA: Susan Wojcicki, nascida em mil novecentos e sessenta e oito, tinha quarenta e cinco
-anos quando assumiu o YouTube em dois mil e catorze; morreu em dois mil e vinte e quatro.
+anos quando assumiu o YouTube em dois mil e catorze; morreu em dois mil e vinte e quatro,
+quando ja tinha saido do YouTube havia um ano e meio.
 
 FICHA: Jeff Dean, nascido em mil novecentos e sessenta e oito, tinha quarenta e oito anos;
-vivo em dois mil e vinte e seis. Dizer que a base de software que roda isso e do grupo dele.
+vivo em dois mil e vinte e seis, quando saiu do Google depois de vinte e sete anos e abriu
+uma empresa de pesquisa propria. Dizer que a base de software que roda isso e do grupo dele.
 
 Explicar a arquitetura em duas frases, porque e simples e bonita: sao duas redes, em funil.
 A primeira pega o acervo inteiro, milhoes de videos, e escolhe umas CENTENAS que talvez
@@ -481,6 +525,13 @@ reconhecimento de voz do Google, em dois mil e doze, e a busca do Google, em doi
 quinze, ja usavam rede neural pra bilhoes de pessoas. O que ESTE trabalho tem de especial e
 outra coisa: foram os proprios engenheiros publicando, em detalhe, como uma recomendacao por
 rede neural funciona nessa escala. Ate ali, isso era segredo de casa.
+
+FALAR DA OBRA QUE EXISTE, em duas frases: pra ver o que uma rede neural profunda passou a
+conseguir fazer exatamente neste ano, existe o documentario "AlphaGo", de dois mil e
+dezessete, que a DeepMind liberou de graca no YouTube. Dizer o cuidado: ele nao fala de
+recomendacao nem de feed, e foi feito com participacao da propria empresa, entao o olhar e
+simpatico a ela. Serve pra dar cara e drama a uma coisa abstrata, no mesmo ano em que o
+YouTube trocou o motor.
 
 Dizer o detalhe que fecha o arco com a etapa 9: o trabalho fala o tempo todo em economizar
 processador. Nao menciona chip especial nenhum. A conta ainda estava sendo espremida pra

@@ -1,0 +1,52 @@
+O GALPAO - CONTEXTO
+===================
+Documento curto de contexto para uso com NotebookLM.
+
+Segundo episodio da etapa A MAQUINA QUE CONVERSA, a decima primeira etapa da serie Do Abaco
+a IA (a serie que reconstroi o computador do zero, do abaco em diante, uma peca por
+episodio). Este episodio cobre de 2015 a 2022, em ORDEM CRONOLOGICA, e conta a historia
+PELAS PESSOAS, com nome e ficha, pelo lado da placa.
+
+Episodios da etapa: 01 A Escala (o modelo), 02 O Galpao (a placa, este), 03 Ensinar a
+Responder (o ajuste), 04 Novembro de 2022 (a conversa na mao de todo mundo).
+
+Por que este episodio existe: o episodio anterior terminou perguntando: a reta diz quanto o
+modelo precisa; quem constroi o galpao que cabe isso?
+
+A TESE: ate aqui o software tomava a forma da placa. Aqui a placa passa a ser desenhada pro
+Transformer, e o problema deixa de ser fazer a conta e passa a ser levar o numero de um lado
+pro outro.
+
+O fio, em doze passos:
+
+1. Quem constroi o galpao. Intervalo 2015-2022: comeca antes do episodio anterior (2017-2022) e termina no mesmo ano.
+2. 18/05/2016: o Google revela a TPU, chip so pra rede neural, em uso desde 2015. Norm
+   Jouppi assina. O BERT foi treinado nesse tipo de chip.
+3. 05/04/2016: o DGX-1 da Nvidia, oito placas P100 ligadas pelo NVLink (anunciado em 2014),
+   3.200 W. No comeco de agosto de 2016, Jensen Huang entrega o primeiro de producao em maos
+   na OpenAI.
+4. Por que oito placas: a turma de quinta serie vira escola, e o gargalo vira o corredor.
+5. A memoria empilhada junto do chip (primeira placa: AMD Fury X, 2015; P100 com 16 GB). A
+   conta: 2 bytes por parametro em 16 bits, meio byte em 4 bits; o GPT-3 ocupa 350 GB. A
+   placa de casa (RTX 5090, 2025, 32 GB): cabem modelos abertos de ate uns 30 bilhoes.
+6. 10 e 17/05/2017: a V100 com o Tensor Core, e a TPU v2, ainda a ar.
+7. 2018: o NVSwitch (16 V100 no DGX-2) e a V100 de 32 GB; a TPU v3, a primeira do Google com
+   resfriamento a liquido.
+8. 11/03/2019: a Nvidia anuncia a compra da Mellanox (6,9 bilhoes de dolares, fechada em
+   27/04/2020). O InfiniBand liga um gabinete ao outro. Eyal Waldman, cofundador.
+9. 14/05/2020 a A100; 19/05/2020 a Microsoft anuncia a maquina de 285 mil nucleos e 10 mil
+   placas pra OpenAI (Kevin Scott). O post nao diz a placa nem cita o GPT-3. Em outubro de
+   2021, o Selene: 560 gabinetes ligados por InfiniBand.
+10. A conta de luz: o treino do GPT-3 gastou 1.287 MWh (Patterson e outros, 2021), umas 615
+   casas do Sudeste por um ano. A refrigeracao vira problema.
+11. 22/03/2022: a H100, com o Transformer Engine (circuito mais software, 8 e 16 bits). So
+   chega a cliente em outubro de 2022.
+12. Onde para: 2022, galpao montado. Balanco das pessoas, onde estavam em 2026, e a pergunta
+   que abre o episodio 03: uma maquina dessas sabe responder?
+
+CUIDADOS: a H100 nao foi a primeira placa pra inteligencia artificial (a TPU e a V100 vieram
+antes). A Microsoft nao diz que o GPT-3 foi treinado na maquina anunciada. Os 10 mil V100 e
+os 15 dias do GPT-3 sao estimativa. Ninguem entra com idade: Jouppi sem ano de nascimento
+publico, Waldman sem ano confirmado, Scott com o ano (1972). Todos os protagonistas estao vivos em 2026.
+
+Use este contexto apenas como apoio.

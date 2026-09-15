@@ -1,0 +1,7 @@
+Titulo: Não lidos
+Notebook: 11-01-A escala
+
+Descricao:
+O texto apresenta as diretrizes detalhadas para a criação do primeiro episódio de uma série documental sobre inteligência artificial, intitulado A Escala. O roteiro foca na evolução dos modelos de linguagem entre dois mil e dezessete e dois mil e vinte e dois, destacando como o design do Transformer permitiu saltos monumentais de capacidade apenas ao aumentar o volume de dados e o poder de processamento. Através de doze telas interativas, a narrativa descreve marcos como a publicação do artigo Attention is All You Need e o desenvolvimento das versões do GPT e do BERT. As instruções enfatizam a importância de creditar os pesquisadores envolvidos, fornecendo fichas biográficas que situam suas trajetórias até o ano de dois mil e vinte e seis. O conteúdo explora a tese de que o software agora dita a construção do hardware, culminando na preparação tecnológica para o surgimento do ChatGPT. A estrutura do episódio busca manter uma linguagem simples e direta, evitando termos exagerados e focando na relação técnica entre arquitetura, dados e infraestrutura.
+
+Link: https://notebook.google.com/notebook/b76591a6-eeec-482c-9938-2813972ceaad

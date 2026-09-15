@@ -5,6 +5,9 @@
 *.mp4
 *.wav
 *.m4a
+# PDFs do curso de Arduino e ESP32: material pago, fica so nesta maquina
+# (D3 do plano do HARDWARE, 10/09/2026). O codigo dos exercicios entra.
+HARDWARE/PDF/
 __pycache__/
 Thumbs.db
 .DS_Store

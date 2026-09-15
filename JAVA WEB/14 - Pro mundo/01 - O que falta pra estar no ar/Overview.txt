@@ -1,0 +1,21 @@
+O QUE FALTA PRA ESTAR NO AR - CONTEXTO
+======================================
+Documento curto de contexto para uso com NotebookLM.
+
+Episodio que abre a etapa PRO MUNDO, a ultima etapa da serie JAVA WEB. A serie monta uma aplicacao Java web do zero, peca por peca: uma lista de tarefas que nasce rodando no terminal e termina no ar, num endereco que outra pessoa consegue abrir. Pelo caminho passam ambiente de trabalho, historico de codigo, testes, servidor, banco de dados e publicacao.
+
+Nos capitulos anteriores a lista de tarefas ficou pronta e roda inteira na maquina do aluno. Este episodio abre a parte final da serie, e e o mapa dela: mostra tudo que falta pra um programa sair da maquina de quem escreveu, sem montar nenhuma peca. E panorama, nao mecanica: sem comando, sem arquivo de configuracao, sem passo a passo. Nao citar numero de episodio nem de etapa em momento nenhum.
+
+A ideia central e que rodar na sua maquina nao e o fim, e que a distancia entre isso e estar no ar e maior do que quase todo curso deixa parecer. Quem comeca a publicar sem o mapa acha que esta quase terminando, topa com a segunda peca, acha que errou alguma coisa e desiste.
+
+O episodio comeca pela mudanca de situacao. Enquanto so o autor abre o programa, ele e uma oficina nos fundos de casa: bagunca nao incomoda ninguem e prateleira derrubada se levanta. Quando a porta da pra rua, aquilo virou uma loja: entra gente desconhecida, na hora que ela quiser, e essa gente nao sabe que existe alguem consertando as coisas do outro lado. O limite da comparacao e dito na mesma hora: loja fecha a noite, e um programa no ar nao fecha. Tres coisas passam a existir de verdade: mais de uma pessoa ao mesmo tempo, funcionamento o tempo todo, e dado que pertence a outra pessoa. E dai vem a palavra producao, que e o mesmo programa medido por outra regua: nao existe "so um instante que eu reinicio aqui", nao existe desfazer, e o erro e visto por quem nem sabe que existe um programador envolvido.
+
+O corpo do episodio e a lista das sete pecas que faltam, uma frase cada. A maquina, um computador ligado o tempo todo com endereco proprio na internet. O acesso, um jeito de mandar comando pra dentro dela de longe, ja que ela nao tem tela nem teclado. O pacote, a decisao do que exatamente do projeto viaja, porque nao e a pasta inteira e tem coisa que nao pode ir. O servico, o que faz o programa subir sozinho, continuar de pe depois que a conexao cai e voltar quando a maquina reinicia. O endereco, o nome que a pessoa digita e o caminho ate a maquina. O cadeado, o que ele prova e o que nao prova. E o registro, que e a diferenca entre consertar e adivinhar. Nenhuma dessas pecas e opcional: pular uma nao e escolha de estilo, e problema adiado. E quase toda trilha de programacao para na primeira delas.
+
+Depois da lista vem o percurso de uma visita, que amarra num caminho so as pecas que aparecem quando alguem entra. Duas das sete ficam de fora de proposito: o acesso e o pacote acontecem no dia da publicacao, e nao a cada visita. O percurso: alguem digita um nome, esse nome vira um numero, o navegador acha a maquina e bate na porta, um programa que fica na frente cuida do cadeado e entrega o pedido pro programa do aluno, que estava de pe porque foi configurado pra isso, a resposta volta pra tela da pessoa e uma linha fica escrita dizendo que a visita aconteceu. Nesse percurso inteiro, o codigo escrito pelo aluno e uma parada so.
+
+O episodio fecha com os tres tropecos da primeira publicacao. Subir o segredo junto com o codigo, que e o pior porque uma vez que sobe nao adianta apagar: o conserto e trocar o segredo. O programa que so existe enquanto a janela esta aberta e some quando a pessoa vai dormir, que e a diferenca entre ligar na mao e instalar como servico. E o "na minha maquina funciona", que e diferenca de ambiente e nao azar. Os tres so aparecem quando o programa sai da maquina de quem escreveu, e por isso precisam ser aprendidos, nao adivinhados.
+
+O que transfere: as sete pecas nao sao de Java. Qualquer programa que outra pessoa va abrir precisa das mesmas sete, e o que muda de uma stack pra outra e o nome da ferramenta de cada peca, nunca a lista.
+
+Use este contexto apenas como apoio.

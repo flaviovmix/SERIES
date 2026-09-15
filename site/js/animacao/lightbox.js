@@ -1,9 +1,12 @@
 /* lightbox
    A foto ampliada ou o modelo 3D em tela cheia. Cria o proprio DOM (nenhum episodio
    copia a marcacao), liga todo elemento com data-abre e o passeio pelas fotos da tela.
-   Depende de telas.js e de lightbox.css. Espera no HTML: elementos com
+   Depende de lightbox.css. O telas.js e opcional: sem ele (o hub de uma serie, como o
+   hardware.html desde 14/09/2026) cada foto abre sozinha, sem passeio. Espera no HTML: elementos com
    data-abre="foto" (com <img> e data-legenda ou <figcaption>) ou data-abre="modelo3d";
-   o modelo vem do <iframe data-src> da capa (modelo-3d.js).
+   o modelo vem do <iframe data-src> da capa (modelo-3d.js) ou do proprio botao,
+   que pode declarar data-modelo (e data-modelo-legenda) — e o caso da capa que
+   mostra uma foto e guarda o modelo so pra tela cheia.
 
    O passeio gira em loop DENTRO da tela onde a foto foi clicada e nunca pula pra
    cena seguinte: a ordem das cenas e a narrativa do episodio, e quem manda nela e
@@ -18,8 +21,27 @@
   const setaAntes = lightbox.querySelector('.lb-seta--antes');
   const setaDepois = lightbox.querySelector('.lb-seta--depois');
   const btnFechar = lightbox.querySelector('.lb-fechar');
-  const modelo = document.querySelector('.capa-modelo iframe[data-src]');
-  const legendaDoModelo = modelo ? modelo.closest('figure').querySelector('figcaption').textContent : '';
+  const recado = lightbox.querySelector('.lb-recado');
+  const btnTentar = lightbox.querySelector('.lb-tentar');
+  const modeloDaCapa = document.querySelector('.capa-modelo iframe[data-src]');
+
+  /* de onde sai o modelo desta abertura: quem clicou manda, e a capa e o fallback
+     das paginas que exibem o modelo embutido */
+  function modeloDe(alvo) {
+    if (alvo && alvo.dataset.modelo) {
+      return {
+        src: alvo.dataset.modelo,
+        titulo: alvo.dataset.modeloTitulo || 'modelo tridimensional',
+        legenda: alvo.dataset.modeloLegenda || ''
+      };
+    }
+    if (!modeloDaCapa) return null;
+    return {
+      src: modeloDaCapa.dataset.src,
+      titulo: modeloDaCapa.title,
+      legenda: modeloDaCapa.closest('figure').querySelector('figcaption').textContent
+    };
+  }
 
   let galeria = [];      // as fotos da tela em que o lightbox foi aberto, e so elas
   let fotoAtual = -1;
@@ -35,6 +57,7 @@
       '<button class="lb-fechar" aria-label="fechar">✕</button>' +
       '<img alt="">' +
       '<iframe title="modelo tridimensional"></iframe>' +
+      '<div class="lb-recado" hidden>O modelo não abriu — a conexão pode ter falhado. '+ '<button type="button" class="lb-tentar">tentar de novo</button></div>' +
       '<div class="lb-legenda"></div>' +
       '</div>';
     document.body.appendChild(el);
@@ -60,6 +83,7 @@
     const original = foto.querySelector('img[data-em-cena]') || foto.querySelector('img');
     img.src = original.src;
     img.alt = original.alt;
+    decideGiro(original);
     const cap = foto.querySelector('figcaption');
     legenda.textContent = foto.dataset.legenda || (cap ? cap.textContent : '');
     quadro.classList.remove('veio-da-direita', 'veio-da-esquerda');
@@ -71,17 +95,80 @@
   }
   function andaFoto(passo) { poeFoto(fotoAtual + passo, passo); }
 
-  function mostraModelo() {
+  /* Foto larga no telefone em pé abre deitada (pedido dele, 09/09): quem gira é o
+     CSS, aqui só se diz se a foto é mais larga que alta. Mede a imagem da página,
+     que já está carregada; se ainda não estiver, espera o load dela. */
+  function decideGiro(original) {
+    const larga = (el) => el.naturalWidth > el.naturalHeight * 1.15;
+    if (original.complete && original.naturalWidth) {
+      lightbox.classList.toggle('lb--deitar', larga(original));
+    } else {
+      lightbox.classList.remove('lb--deitar');
+      original.addEventListener('load', () => lightbox.classList.toggle('lb--deitar', larga(original)), { once: true });
+    }
+  }
+
+  /* O modelo mora num iframe: se ele nao chega (conexao ruim), o quadro ficaria
+     vazio pra sempre. Nove segundos sem o `load` do iframe e a gente conta o que
+     houve e oferece tentar de novo — em vez de deixar a pessoa esperando. */
+  let vigia = null;
+  let modeloNoAr = null;
+  function esperaOModelo() {
+    clearTimeout(vigia);
+    recado.hidden = true;
+    vigia = setTimeout(() => { recado.hidden = false; }, 9000);
+  }
+  frame.addEventListener('load', () => {
+    if (!frame.src || frame.src === 'about:blank') return;   // o passo do meio do "tentar de novo"
+    clearTimeout(vigia);
+    // ⚠️ rede falhando também dispara `load` (o navegador desenha a página de
+    // erro dele): quem diz se deu certo é achar o modelo lá dentro.
+    let veio = false;
+    try { veio = !!frame.contentDocument?.querySelector('.app'); } catch (e) { veio = true; }
+    recado.hidden = veio;
+    if (location.search.includes('medidas=1')) setTimeout(escreveMedidas, 1500);
+  });
+
+  /* Medir no aparelho, não calibrar (?medidas=1): o que o iframe e o modelo lá
+     dentro estão vendo, escrito na legenda pra tirar print. */
+  function escreveMedidas() {
+    try {
+      const w = frame.contentWindow, d = frame.contentDocument;
+      const r = (el) => { if (!el) return 'nao ha'; const b = el.getBoundingClientRect(); return `${Math.round(b.left)},${Math.round(b.top)} ${Math.round(b.width)}x${Math.round(b.height)}`; };
+      const app = d.querySelector('.app'), arena = d.querySelector('.arena'), cv = d.querySelector('#cena canvas');
+      const fi = frame.getBoundingClientRect();
+      legenda.textContent =
+        `pai ${innerWidth}x${innerHeight} | iframe ${Math.round(fi.width)}x${Math.round(fi.height)} em ${Math.round(fi.left)},${Math.round(fi.top)}` +
+        ` | dentro ${w.innerWidth}x${w.innerHeight} | app ${r(app)} | arena ${r(arena)} | canvas ${r(cv)}` +
+        ` | embedded ${d.body.classList.contains('embedded')} | deitado ${w.matchMedia('(max-width:820px) and (orientation:portrait) and (pointer:coarse)').matches}` +
+        ` | transform ${app ? getComputedStyle(app).transform.slice(0, 40) : '-'} | ${navigator.userAgent.match(/Chrome\/[\d.]+|Safari[^ ]*/)?.[0] || ''}`;
+    } catch (e) { legenda.textContent = 'medidas: ' + e.message; }
+  }
+  btnTentar.addEventListener('click', () => {
+    if (!modeloNoAr) return;
+    esperaOModelo();
+    frame.src = 'about:blank';
+    // o about:blank tambem dispara load: recarrega no quadro seguinte
+    requestAnimationFrame(() => { frame.src = modeloNoAr; esperaOModelo(); });
+  });
+
+  function mostraModelo(alvo) {
+    const modelo = modeloDe(alvo);
     if (!modelo) return;
-    frame.src = modelo.dataset.src;
-    frame.title = modelo.title;
+    modeloNoAr = modelo.src;
+    esperaOModelo();
+    frame.src = modelo.src;
+    frame.title = modelo.titulo;
     frame.style.display = 'block';
     img.style.display = 'none';
-    legenda.textContent = legendaDoModelo;
+    legenda.textContent = modelo.legenda;
     setasDoPasseio(false);   // o modelo nao e foto: nao entra no passeio
+    lightbox.classList.remove('lb--deitar');   // o modelo deita sozinho lá dentro
   }
 
   function mostraFoto(foto) {
+    clearTimeout(vigia);
+    recado.hidden = true;
     img.style.display = 'block';
     frame.style.display = 'none';
     const tela = foto.closest('.step');
@@ -89,9 +176,9 @@
     poeFoto(galeria.indexOf(foto), 0);
   }
 
-  function abre(tipo, foto) {
+  function abre(tipo, alvo) {
     gatilho = document.activeElement;
-    if (tipo === 'modelo3d') mostraModelo(); else mostraFoto(foto);
+    if (tipo === 'modelo3d') mostraModelo(alvo); else mostraFoto(alvo);
     lightbox.classList.remove('saindo');
     lightbox.classList.add('aberta');
     btnFechar.focus();
@@ -99,6 +186,8 @@
 
   function fecha() {
     if (lightbox.classList.contains('saindo')) return;   // ja esta saindo
+    clearTimeout(vigia);
+    recado.hidden = true;
     lightbox.classList.add('saindo');
     let fechado = false;
     const some = () => {
@@ -149,6 +238,8 @@
     }, true);
   }
 
+  // fora das animacoes (o hub de uma serie) nao existe telas.js pra criar o Animacao
+  window.Animacao = window.Animacao || {};
   Animacao.lightbox = { abre, fecha, aberta };
   ligaGatilhos();
   ligaTeclado();

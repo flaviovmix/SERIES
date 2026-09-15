@@ -71,5 +71,6 @@
    1366x768: a cena encolhe um pouco em tela baixa. So fora do telefone, pra
    nao passar por cima da medida de 26vh do bloco estreito da base. */
 @media (max-height: 820px) and (min-width: 821px) {
-  .cena img { height: clamp(170px, 42vh, 480px); }
+  /* pelo teto de altura, nao pela altura: a foto da cena e sempre 16:9 (10/09) */
+  .cena { --alto: clamp(170px, 42vh, 480px); }
 }

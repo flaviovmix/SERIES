@@ -1,0 +1,210 @@
+# Transcricao automatica (faster-whisper small) - 14.0 min
+# Fonte: Não lidos.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A escala, a etapa anterior terminou em 2016 com a máquina que adivinha o que a gente quer sem ninguém pedir,
+[00:08] lendo o nosso rastro.
+[00:10] E isso deixou uma pergunta no ar.
+[00:12] E se desce para pedir com as próprias palavras e a máquina responder?
+[00:16] Então, esse é o primeiro de quatro episódios focados exatamente em como isso se tornou possível.
+[00:23] A gente vai olhar bem de perto para a construção do modelo,
+[00:26] cobrindo puramente o software e o hardware dos anos de 2017 a 2022.
+[00:32] E esses anos se sobrepõem de propósito com a nossa história interior, mas o foco de hoje é construir, não vender.
+[00:40] Exato. A tese central de hoje dita com essas palavras.
+[00:44] O mesmo desenho de 2017, treinado só para adivinhar a próxima palavra, ficou mil vezes maior em cinco anos.
+[00:53] O programa acha melhora só de ficar maior e quem decidiu o tamanho é a placa e o dado, não o programador.
+[00:59] Tá. E para quem está acompanhando a gente um aviso importante de navegação.
+[01:03] A nossa explicação acompanha uma página de animação com 12 telas.
+[01:07] Quem está só no áudio acompanha normalmente, sem problema.
+[01:11] E quem está com a página aberta, vira a tela quando ouviu o pedido.
+[01:14] Sabendo disso, aperte o próximo.
+[01:17] Hum, a nossa busca por uma máquina que conversa não começa com a intenção de fazer um baixo papo.
+[01:22] Tudo começa no dia 12 de junho de 2017 no Google.
+[01:27] Oito pesquisadores publicam o artigo Attention Is All You Need.
+[01:31] Isso. E o primeiro nome no artigo definido por puro sorteio é o do Ashish Vazhwani.
+[01:37] Ashish Vazhwani, nascido em 1986 na Índia, tinha 31 anos.
+[01:42] Estudou computação no BitMessra, fez doutorado na Universidade do Sul da Califórnia
+[01:47] e estava no Google desde 2016.
+[01:50] Viva em 2026 quando levou a equipe da empresa que tinha fundado para NVIDIA.
+[01:55] Para alemão ou francês?
+[01:56] Entendi. Só tradução mesmo.
+[01:58] Pois é. O desenho do software que eles chamaram de Transformer dispensa aquela fila de palavras.
+[02:05] Ele olha o texto todo de uma vez só e cabe inteirinho na placa de vídeo.
+[02:10] É tipo o software tomando a forma exata do hardware.
+[02:14] Mas ninguém sabia que esse desenho ia crescer para conseguir conversar, certo?
+[02:20] Ninguém. O texto original deles falava em testar com imagem e com áudio.
+[02:25] Não tinha nada sobre falar com humanos.
+[02:27] Nossa, e tem um extra sobre isso para quem quiser entender a atenção por dentro?
+[02:31] Passo a passo. Por agora, aperte o próximo.
+[02:34] Mas sabe a dúvida é como se treina isso na prática?
+[02:39] Qual é a tarefa?
+[02:41] A única tarefa é, dado o começo de um texto, a máquina precisa adivinhar a próxima palavra.
+[02:47] E como a gente treina com textos que já existem, o gabarito é grátis.
+[02:51] Exatamente. Só tem um detalhe técnico.
+[02:55] A máquina não lê palavras inteiras.
+[02:58] Ela corta o texto em pedaços pequenos, que são os tokens.
+[03:02] Ah, sim. E tem um extra sobre isso também, explicando como o texto é cortado.
+[03:07] Então aqui é que essa tarefa de tapar a palavra nunca muda.
+[03:12] Do menor ao maior modelo que a gente vai ver.
+[03:15] É barato em gente, né? Mas cara em placa de vídeo.
+[03:18] Com certeza. Exige muita máquina na tomada.
+[03:22] Então aperte o próximo.
+[03:24] Sabendo a tarefa, a gente avança para 11 de junho de 2018.
+[03:29] A OpenAI, lá em São Francisco, entra no jogo.
+[03:33] Eles pegaram só a metade daquele desenho de 2017.
+[03:36] A metade que escreveu para a frente.
+[03:38] Isso mesmo. E treinaram em mais de 7 mil livros inéditos.
+[03:42] Fazendo só essa tarefa de tapar a próxima palavra.
+[03:46] Nace aí o GPT-1.
+[03:48] E sobre o tamanho dele, o modelo tinha 117 milhões de peças.
+[03:53] Peças ou parâmetros são aqueles números ajustáveis que a máquina aprende, sabe?
+[03:58] E esse número exato de 117 milhões só foi revelado no artigo seguinte.
+[04:03] O nome por trás desse trabalho era Alec Redford.
+[04:07] Exato.
+[04:08] Alec Redford, nascido em 1993, no Texas, tinha 25 anos.
+[04:13] Largou a faculdade, o Olin College, em 2014, para tocar a startup que tinha fundado.
+[04:18] E entrou na OpenAI em 2016.
+[04:21] Vivo em 2026, pesquisando por conta própria,
+[04:24] depois de sair da OpenAI no fim de 2024.
+[04:27] E ele assinou isso junto com o William Schutzgewehr.
+[04:30] Que a gente já conhece de outras etapas e que está vivo em 2026, chefeando a própria empresa.
+[04:36] E usando uma analogia de escola, eles treinaram isso em um mês numa máquina só com oito placas de vídeo.
+[04:43] 23 do The Guardian chamado Ilha, com cenas dessa época.
+[04:47] Mas ele foi montado bem depois, num mundo pós-chat GPT, né?
+[04:53] Pois é, tem um tom bem alarmista e só tem a voz dele, sem contraditório nenhum.
+[04:58] A decisão técnica de 2018, na verdade, era a ideia nova de a máquina ler textos primeiro e ser ensinada na tarefa depois.
+[05:06] Entender antes de agir. Aperte o próximo.
+[05:10] O Google não ia ficar parado assistindo.
+[05:12] 11 de outubro de 2018, eles lançam a resposta.
+[05:16] O Bert.
+[05:17] Jacob Devlin estudou na Universidade de Maryland,
+[05:20] levou o tradutor da Microsoft para a rede neural e entrou no Google em 2017.
+[05:25] A última notícia pública dele é de 2023, quando saiu para o OpenAI e voltou para o Google em seis meses.
+[05:32] O que o Devlin fez com o Bert foi pegar a outra metade do desenho original, sabe?
+[05:37] A metade que lê.
+[05:38] Em vez de prever a próxima palavra, o Bert adivinha palavras tapadas bem no meio do texto.
+[05:44] Sabe, ele olha para os dois lados.
+[05:46] Sim, ele tinha versões de 110 milhões a 340 milhões de peças.
+[05:52] Eles treinaram isso por quatro dias em 16 TPUs.
+[05:56] Que são as placas do próprio Google, cada casa treinou na placa que tinha, né?
+[06:00] Isso mesmo.
+[06:01] O Bert acabou dominando a busca do Google e sendo super útil.
+[06:05] Mas o GPT seguiu firme e puxando esta nossa história.
+[06:09] Entendido. Aperte o próximo.
+[06:11] A OpenAI viu o resultado e decidiu colocar mais força bruta.
+[06:15] 14 de fevereiro de 2019, eles lançam o GPT2.
+[06:20] Foi um salto gigante, 1,5 bilhões de peças, dez vezes maior.
+[06:26] E treinado em 8 milhões de páginas da Web, que dá uns 40 GB.
+[06:30] A tarefa é a mesmíssima.
+[06:32] Mas o resultado assustou muito o pessoal, né?
+[06:35] Nossa, muito.
+[06:36] O modelo gerava parágrafos inteiros parecendo humanos.
+[06:40] Começou a resumir textos, a traduzir e a responder perguntas sem ninguém ter ensinado.
+[06:45] Mesmo fazendo o mal feito é bizarro aparecer isso do nada.
+[06:49] Exato.
+[06:50] A OpenAI até tomou a decisão de segurar o modelo completo por medo de usos maliciosos.
+[06:55] Eles foram liberando aos poucos até novembro.
+[06:58] Eu sempre fico pensando se foi cuidado genuíno ou um exagero deles.
+[07:02] Ninguém sabia nada, na época receberam críticas de todo lado.
+[07:07] Verdade.
+[07:08] Mas foi a primeira vez que o modelo de texto pareceu algo que podia simplesmente sair do controle.
+[07:13] A escala fez diferença.
+[07:15] Aperte próximo.
+[07:16] Aí, hum, a dúvida virou matemática.
+[07:19] 23 de janeiro de 2020.
+[07:22] 10 pesquisadores da OpenAI publicam as leis de escala.
+[07:26] Eles descobriram que, treinando modelos de tamanhos diferentes,
+[07:29] o erro cai numa linha reta se o modelo, o texto e a conta crescerem juntos.
+[07:34] Isso por sete ordens de grandeza.
+[07:37] Exato.
+[07:38] Jared Kaplan, físico, estudou em Stanford, fez doutorado em Harvard
+[07:42] e dava aula na Johns Hopkins desde 2012.
+[07:45] Em 2026 estava na Anthropoc, empresa que ajudou a fundar em 2021 como chefe de ciência.
+[07:52] Dario Amodei, nascido em 1983 em São Francisco,
+[07:56] filho de um artesão de coro italiano e de uma gerente de obras de bibliotecas,
+[08:01] tinha 36 anos, estudou Física em Stanford e fez doutorado em Biofísica em Princeton.
+[08:07] Era o chefe de pesquisa da OpenAI.
+[08:10] Vivo em 2026, dirigindo Anthropoc, que fundou em 2021.
+[08:15] O valor dessa medição deles é absurdo.
+[08:18] Pra quem tá com a tela aberta, dá pra arrastar um controle e ver o erro descer na linha.
+[08:23] A lição ali foi que a decisão de crescer virou cálculo matemático.
+[08:28] Não era mais aposta cega.
+[08:30] Dá pra encomendar um galpão inteiro de placas de vídeo sabendo exatamente o que vai receber.
+[08:35] O risco some.
+[08:37] Então, aperte o próximo.
+[08:39] 28 de maio de 2020, chega o monstro, o GPT-3, 175 bilhões de peças.
+[08:46] 100 vezes maior que o 2.
+[08:48] E leu 300 bilhões de pedaços de texto.
+[08:51] Basicamente tudo da web, livros, Wikipedia, os textos todos produzidos na era do feed da nossa etapa anterior.
+[08:58] O dato tava lá de graça, mas a conta de hardware não.
+[09:01] Tom Brown, estudou computação no MIT, fundou uma startup em 2011,
+[09:07] entrou na OpenAA em 2016 e chefeou engenharia deste modelo.
+[09:13] Em 2026 estava na Antropiq, que ajudou a fundar, cuidando da computação.
+[09:18] Pra treinar isso, eles precisaram de um super computador da Microsoft,
+[09:23] com 285 mil núcleos de processador e 10 mil placas de vídeo rodando juntas.
+[09:30] Nossa, a turminha de quinta série virou uma escola inteira.
+[09:33] Virou.
+[09:34] E era uma aposta real mesmo.
+[09:36] Ninguém tinha treinado nada tão grande na vida.
+[09:38] Eram meses de milhares de placas ligadas.
+[09:41] Podia ter saído 100 vezes mais caro e rendido quase nada de melhora.
+[09:46] Mas a matemática tava certa.
+[09:48] Curiosamente, a mídia pirou.
+[09:50] Tem documentário chamado Eterno Yu, de 2024,
+[09:54] mostrando o GPT-3 virando o produto pra simular conversas com os mortos.
+[09:58] Com aquele tom bem alarmista, né?
+[10:00] Que o criador do serviço até contestou.
+[10:03] Mas a máquina tinha ficado grande e suficiente pra dar medo de novo.
+[10:07] Com certeza, aperte o próximo.
+[10:10] Na prática, a grande novidade tecnológica do GPT-3 era que ele não foi ajustado pra tarefas.
+[10:16] Ele aprendia pelo exemplo colocado ali na própria pergunta, o fuel shot.
+[10:20] Tipo, você dá dois exemplos e ele entra de padrão.
+[10:23] Exatamente.
+[10:24] A gente convida quem tá na página, pausa o áudio, tentar resolver os pares lógicos na tela e voltar.
+[10:29] E a pessoa percebe que acabou de inferir a regra sem ninguém explicar qual era?
+[10:32] E o modelo fez a mesma coisa.
+[10:34] A capacidade apareceu de novo só com o tamanho.
+[10:37] Ele achou a própria tarefa ali no meio.
+[10:40] Impressionante.
+[10:41] Aperte o próximo.
+[10:42] Aí, em 29 de março de 2022, tem um ajuste de rota importante.
+[10:49] A DeepMind em Londres pergunta,
+[10:52] com dinheiro fixo, é melhor um modelo gigante lendo menos ou um menor lendo mais?
+[10:58] Jordan Hoffman, doutor em matemática por Harvard, saiu da DeepMind em 2022
+[11:04] e a última notícia pública dele é de 2024 na Microsoft em Londres.
+[11:09] O modelo vencedor foi o Xinchila dele.
+[11:11] 70 bilhões de peças lendo um trilhão e 400 bilhões de textos.
+[11:17] E esmagou o modelo Goffer da mesma casa, que tinha 280 bilhões.
+[11:23] A rebra matemática é super simples.
+[11:26] Se dobrar o modelo, dobre o texto junto.
+[11:28] Os modelos gigantes estavam lendo o texto de menos, desperdiçando o placa.
+[11:33] E detalhe, no mesmo mês, a OpenAI lançava um Struck GPT, que é o tema do nosso episódio 3.
+[11:40] E a conta certinha do Xinchila, a placa voltou a mandar no software e a conta decide o tamanho ideal.
+[11:47] Aperte o próximo.
+[11:49] Chegando em 2021, a OpenAI ajusta o GPT 3 em códigos do GitHub, criando o Codex, que vira o GitHub Copilot.
+[11:57] E aí a gente entra na série GPT 3.5, ao longo de 2022.
+[12:03] Isso. O GPT 3.5 é um modelo treinado nessa mistura gigante de texto e código ajustado para seguir a instrução.
+[12:11] Só para lembrar, dois dias depois desse último modelo sair, eles lançaria um GPT Chat, que é assunto do episódio 4.
+[12:18] Mas a seguinte instrução é sem, não vem puramente de crescer.
+[12:22] Não, de jeito nenhum. Vem de gente sentando e ensinando a máquina a responder direito, que a gente vai ver em outro episódio.
+[12:29] Aqui a gente está entregando um modelo bruto, pronto para aprender.
+[12:32] E para a máquina gigante, código de programação e texto comum são exatamente a mesma coisa.
+[12:38] Tem um extra sobre isso focado no Codex e no Copilot, para quem curte a parte de desenvolvimento.
+[12:44] Chegamos ao fim da linha dessa etapa, aperte o próximo.
+[12:48] A gente para a nossa conta no ano de 2022.
+[12:51] E fazendo um balanço rápido dos nomes que passaram por aqui, Vasvoni e MySeth desenharam.
+[12:57] Hado for de Sutscever treinaram, Devlin cortou ao meio, a OpenAI dobrou e segurou.
+[13:03] Kaplan e Amodei mediram a reta, Brown cresceu 100 vezes, Hoffman mostrou o tamanho certo,
+[13:10] sem plano mestre, apenas tijou-lo sobre tijou.
+[13:14] Aí quatro dessas pessoas centrais não têm nenhum ano de nascimento público.
+[13:19] É louco pensar nisso.
+[13:21] E os destinos deles em 2026 foram bem diferentes.
+[13:24] Vasvani estava na envidia, Hadford trabalhando sozinho, Kaplan, Amodei e Brown on Tropic,
+[13:31] Sutscever na empresa dele e o Devlin e o Hoffman sem notícia pública recente.
+[13:36] A grande lição que amarra tudo isso é sobre o limite do Rhabler.
+[13:40] O programa melhorou enormemente só de crescer.
+[13:44] Quem decide ao dado e a placa, não programador.
+[13:47] O desenho lá de 2017 é exatamente o mesmo.
+[13:51] O que mudou de verdade foi o galpão gigante construído em volta dele.
+[13:55] A linha matemática diz exatamente o que o modelo de software precisa.
+[13:59] Mas quem constrói o galpão que cabe tudo isso?

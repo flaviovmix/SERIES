@@ -19,7 +19,7 @@ const [URL, ESPERADAS] = [process.argv[2], Number(process.argv[3])];
   const diz = (ok, t) => { console.log('  ' + (ok ? 'ok  ' : 'FALHOU  ') + t); if (!ok) falhas++; };
 
   const base = await page.evaluate(() => ({
-    telas: document.querySelectorAll('.step').length,
+    telas: document.querySelectorAll('main > .step:not(.step--fim)').length,
     bolinhas: document.querySelectorAll('.bolinhas > *').length,
     quebradas: [...document.querySelectorAll('img')].filter((i) => i.getAttribute('src') && !(i.complete && i.naturalWidth > 0)).map((i) => i.getAttribute('src')),
     duracao: (document.querySelector('.tocador__total') || {}).textContent,
@@ -34,9 +34,9 @@ const [URL, ESPERADAS] = [process.argv[2], Number(process.argv[3])];
   // conteudo cortado dentro de cada tela
   const cortadas = [];
   for (let i = 0; i < base.telas; i++) {
-    if (i > 0) { await page.click('.navegacao__proximo'); await page.waitForTimeout(200); }
+    if (i > 0) { await page.click('.seta-palco--depois'); await page.waitForTimeout(200); }
     const sobra = await page.evaluate((idx) => {
-      const s = document.querySelectorAll('.step')[idx];
+      const s = document.querySelectorAll('main > .step:not(.step--fim)')[idx];
       return Math.round(s.scrollHeight - s.clientHeight);
     }, i);
     if (sobra > 0) cortadas.push((i + 1) + ':+' + sobra);

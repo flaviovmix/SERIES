@@ -1,0 +1,123 @@
+Inicie dizendo: O Que Falta Pra Estar No Ar
+---------------
+
+Este episodio abre a etapa PRO MUNDO, a ultima etapa da serie JAVA WEB. Nos capitulos anteriores a lista de tarefas ficou pronta e roda inteira na maquina do aluno. A parte da serie que comeca agora tira ela dali e poe num endereco que outra pessoa consegue abrir. Este episodio e o mapa dessa parte: ele mostra tudo que falta, e nao monta nenhuma peca.
+
+ESTE EPISODIO E PANORAMA, NAO MECANICA. Ele existe pra pessoa entender o tamanho e a forma do que vem pela frente antes de por a mao em qualquer coisa. Entao: nada de comando, nada de arquivo de configuracao, nada de passo a passo. Toda vez que der vontade de explicar como uma peca funciona por dentro, dizer o nome dela, dizer pra que ela serve em uma ou duas frases, e avisar que ela volta com calma mais pra frente. NAO prometer um capitulo pra cada peca: algumas dividem capitulo e uma delas e assunto de um aprofundamento a parte. A unica excecao e a tela do percurso, que descreve o caminho de uma visita sem entrar em nenhuma parada.
+
+NAO CITAR NUMERO DE EPISODIO NEM DE ETAPA. Em nenhum momento dizer "episodio tres", "etapa oito" ou coisa parecida. Quando precisar retomar alguma coisa que a serie ja mostrou, dizer "nos capitulos anteriores", "la atras" ou "quando a gente viu isso". Pra falar do que vem, dizer "no proximo capitulo" ou "mais pra frente".
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 6 telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe: quem ouve a serie ja conhece a mecanica, e explicar do zero toda vez cansa. Uma frase, no maximo duas: sao 6 telas, quem esta so ouvindo acompanha normalmente, e quem esta com a pagina aberta vira a tela quando ouvir o pedido. NAO explicar o que e um botao, NAO ensinar a usar a pagina e NAO dizer a frase do pedido como exemplo.
+- Na tela interativa (4), avisar que tem um botao na tela pra acompanhar enquanto ouve.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 6 telas. O audio TEM que pedir "aperte o Proximo" exatamente 5 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. Nada de sermao e nada de susto. O episodio conta o que falta sem transformar isso em muralha: sao sete pecas, todas com nome, e cada uma vai ser montada com calma. Nao vender publicar como coisa de gente avancada, e nao fingir que e trivial.
+
+O QUE TRANSFERE. No encerramento, dizer em uma frase o que deste episodio serve pra qualquer linguagem e qualquer stack, e nao so pra Java.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Que Falta Pra Estar No Ar.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A loja que abre pra rua, so pra explicar o que muda quando o programa deixa de ser so seu. Enquanto e so voce que entra, e uma oficina nos fundos de casa: bagunca ali dentro nao incomoda ninguem, e se voce derrubar uma prateleira, voce levanta. No dia em que a porta da pra rua, entra gente que voce nao conhece, na hora que ela quiser, sem avisar, e ela nao sabe nem que existe alguem consertando as coisas. Dizer o limite na mesma tela: loja fecha a noite, e um programa no ar nao fecha.
+
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O QUE FALTA PRA ESTAR NO AR)
+
+Retomar em uma frase onde a serie chegou: nos capitulos anteriores a lista de tarefas ficou pronta e roda inteira na maquina do aluno, com o navegador aberto no proprio computador dele.
+
+Dizer a frase que abre a etapa: rodar na sua maquina nao e o fim. Enquanto so voce consegue abrir, o programa nao esta no ar, e a distancia entre uma coisa e outra e maior do que quase todo curso deixa parecer.
+
+Dizer o que este episodio e e o que ele nao e, com todas as letras: hoje e mapa. A gente vai olhar de cima tudo que falta, dar nome a cada peca e mostrar em que ordem elas entram. Nao vai ter comando pra digitar, nao vai ter arquivo pra criar, e ninguem precisa estar na frente do computador. A mao vai pro teclado do proximo capitulo em diante.
+
+Dizer por que vale a pena um episodio so pra isso: quem comeca a publicar sem o mapa acha que esta quase terminando, topa com a segunda peca, acha que fez alguma coisa errada e desiste. Nao fez nada errado. Sao sete pecas, e ninguem avisou.
+
+Lembrar a mecanica em uma frase, sem ensinar: sao 6 telas, quem esta so ouvindo acompanha normalmente, e quem esta com a pagina aberta vira quando ouvir o pedido.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (O QUE MUDA QUANDO O PROGRAMA DEIXA DE SER SO SEU)
+
+Comecar pela mudanca de situacao, que e o que da sentido a etapa inteira.
+
+Usar a analogia da loja, uma vez: enquanto e so voce que abre o programa, e uma oficina nos fundos de casa. Bagunca ali dentro nao incomoda ninguem, e se voce derrubar uma prateleira, voce mesmo levanta. No dia em que a porta da pra rua, aquilo virou uma loja: entra gente que voce nao conhece, na hora que ela quiser, sem avisar, e essa gente nao sabe nem que existe alguem do outro lado consertando as coisas. Dizer o limite na mesma tela: loja fecha a noite, e um programa no ar nao fecha.
+
+Dizer as tres coisas que passam a existir de verdade, e que ate agora eram teoria. Primeira: mais de uma pessoa ao mesmo tempo. Ate aqui era sempre uma, e essa uma era voce. Segunda: o tempo todo. O programa tem que estar de pe as tres da manha de domingo, quando ninguem esta olhando. Terceira: dado que e de outra pessoa. A partir do momento em que alguem digita alguma coisa ali, aquilo deixou de ser um teste seu.
+
+Explicar a palavra producao, porque ela vai aparecer o tempo todo daqui pra frente e quase ninguem para pra dizer o que e. Producao e o mesmo programa, no mesmo codigo, medido por outra regua. O que muda e o que voce pode fazer com ele. Nao existe "so um instante que eu vou reiniciar aqui", porque tem gente do outro lado no meio de uma tarefa. Nao existe desfazer. E o erro, quando acontece, e visto por quem nao sabe nem que existe um programador envolvido.
+
+Fechar a tela dizendo que nada disso e motivo pra ter medo de publicar; e motivo pra saber o que esta indo pra la, que e exatamente o assunto da serie desde o comeco.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (O MAPA: AS SETE PECAS)
+
+Dizer que agora vem a lista, e que ela e curta de proposito: uma frase por peca, e cada uma volta com calma pela frente. Quem quiser anotar, anota o nome, nao a explicacao.
+
+Primeira peca, a maquina. Um computador que fica ligado o tempo todo, com endereco proprio na internet, que nao e o seu. Segunda peca, o acesso. Um jeito de voce mandar comando pra dentro dela de longe, com seguranca, porque ela nao tem tela nem teclado pra alguem sentar na frente. Terceira peca, o pacote. Decidir o que exatamente do seu projeto viaja pra la, porque nao e a pasta inteira, e tem coisa que nao pode ir de jeito nenhum. Quarta peca, o servico. O que faz o programa subir sozinho, continuar de pe depois que voce desconecta, e voltar sozinho quando a maquina reinicia de madrugada. Quinta peca, o endereco. O nome que a pessoa digita no navegador, e o caminho de como esse nome encontra a sua maquina. Sexta peca, o cadeado. O que ele prova, o que ele nao prova, e por que hoje um site sem ele e tratado como quebrado. Setima peca, o registro. O que ficou escrito sobre o que aconteceu, que e a diferenca entre consertar e adivinhar quando alguem disser que nao funcionou.
+
+Dizer duas coisas sobre a lista, e so. Primeira: nenhuma dessas pecas e opcional. Da pra fazer cada uma de um jeito mais simples ou mais caprichado, mas pular uma delas nao e uma escolha de estilo, e um problema adiado. Segunda: quase toda trilha de programacao para na primeira peca, e por isso tanta gente sabe programar e nunca pos nada no ar.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (O CAMINHO DE UMA VISITA, TELA INTERATIVA)
+
+Avisar que tem um botao na tela pra acompanhar enquanto ouve: da pra tocar em cada parada do caminho e ver o que acontece nela.
+
+Dizer pra que serve esta tela: a lista de agora ha pouco sao sete nomes soltos. Aqui a maior parte deles vira um percurso, seguindo uma unica visita, do dedo da pessoa ate a resposta na tela dela. Avisar de saida que duas das sete nao aparecem nesse caminho: o acesso e o pacote acontecem antes, no dia em que voce publica, e nao toda vez que alguem entra.
+
+Descrever o caminho em palavras, parada por parada, sem entrar em nenhuma. Comeca com uma pessoa que voce nao conhece digitando um nome no navegador. Esse nome nao serve pra achar maquina nenhuma, entao antes de qualquer coisa ele e traduzido pra um numero, que e o endereco de verdade. Com o numero na mao, o navegador procura a maquina e bate na porta dela. Do lado de la, quem atende nao e o seu programa: e um programa que fica na frente, e ele e a peca do cadeado da lista de agora ha pouco, cuidando da parte cifrada e decidindo pra quem entregar o pedido. Ele entrega pro seu programa, que estava de pe porque alguem deixou ele configurado pra subir sozinho. Seu programa monta a resposta, e ela faz o caminho de volta ate a tela da pessoa. E, no meio disso tudo, uma linha foi escrita num arquivo dizendo que essa visita aconteceu.
+
+Dizer o que o ouvinte tem que levar da tela: nesse percurso inteiro, o codigo que ele escreveu e uma parada so. Todo o resto e a etapa que comeca agora. E cada uma dessas paradas ja tem nome, o que quer dizer que quando quebrar, a pergunta nao vai ser "o site caiu", e sim "em qual parada".
+
+Pedir: aperte o Proximo.
+
+TELA 5 (OS TRES TROPECOS DA PRIMEIRA VEZ)
+
+Dizer que existem tres erros que pegam quase todo mundo na primeira publicacao, que nao tem nada a ver com talento, e que so pegam quem nunca ouviu falar deles. Dizer os tres, cada um em poucas frases, avisando que os tres voltam com mais calma pela frente.
+
+O primeiro: subir o segredo junto. A senha do banco, a chave de um servico pago, aquele arquivo de configuracao com tudo dentro. Vai junto sem ninguem reparar, porque estava na pasta do projeto. E o detalhe que faz esse ser o pior dos tres: uma vez que sobe, sobe pra sempre, e nao adianta apagar depois. O conserto e trocar o segredo, nao apagar o arquivo.
+
+O segundo: o programa que so existe enquanto a janela esta aberta. A pessoa entra na maquina, liga o programa, ve funcionando, fecha o computador e vai dormir feliz. De manha esta fora do ar, e ela nao mudou nada. E que ligar um programa na mao e diferente de deixar ele instalado como um servico da maquina, e essa diferenca e uma peca inteira do mapa.
+
+O terceiro: na minha maquina funciona. Do lado de la o Java e outro, a pasta e outra, o sistema e outro, e falta uma coisa que na sua maquina estava instalada ha tanto tempo que voce esqueceu. Nao e azar, e diferenca de ambiente, e existe jeito de fazer os dois lados combinarem.
+
+Fechar a tela dizendo o que os tres tem em comum: nenhum deles aparece na sua maquina. Todos aparecem so quando o programa sai dela, e e por isso que essa parte precisa ser aprendida, e nao adivinhada.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (ENCERRAMENTO)
+
+Recapitular o mapa em poucas frases. Estar no ar nao e um botao: sao sete pecas, e todas tem nome. A maquina que fica ligada, o acesso a ela, o pacote que viaja, o servico que mantem o programa de pe, o endereco que a pessoa digita, o cadeado e o registro do que aconteceu. Producao e o mesmo programa com outra regua, onde tem gente do outro lado e nao existe desfazer.
+
+Ligar com a regua que atravessa a serie: e aqui que ela custa mais caro. Nada sobe pra uma maquina que outras pessoas usam sem alguem entender o que esta indo. Aceitar um passo a passo pronto pra publicar, sem saber o que cada linha faz, e o mesmo problema de sempre, so que agora com gente do lado de fora dependendo do resultado.
+
+O QUE TRANSFERE: essas sete pecas nao sao de Java. Um programa em Python, um em JavaScript rodando do lado do servidor, qualquer coisa que outra pessoa va abrir precisa das mesmas sete. O que muda de uma stack pra outra e o nome da ferramenta de cada peca, e nunca a lista.
+
+Gancho pro proximo capitulo, sem entregar a resposta: a primeira peca do mapa e a maquina, e a segunda e conseguir mandar comando pra dentro dela. Ela nao tem monitor, nao tem teclado e pode estar em outro pais. O proximo capitulo e sobre entrar la.

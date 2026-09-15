@@ -1,0 +1,189 @@
+Inicie dizendo: O Galpao
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Galpao.txt enviado como fonte. Esse
+arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o segundo episodio da etapa A MAQUINA QUE CONVERSA, a decima primeira etapa da serie
+Do Abaco a IA.
+
+RETOMADA NA TELA 1: o episodio anterior, A Escala, terminou perguntando: a reta diz quanto o
+modelo precisa; quem constroi o galpao que cabe isso? A primeira frase depois do titulo
+retoma essa pergunta.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. NAO virar historia de empresa de sucesso, NAO fazer corrida
+de empresas, NAO falar de valor de acao e NAO fazer sermao sobre inteligencia artificial. O
+assunto e a peca: o chip, a memoria, o fio entre as placas, a luz e o calor.
+
+A TESE, DITA COM ESSAS PALAVRAS: ate aqui o software tomava a forma da placa; o Transformer foi
+desenhado pra caber na placa de video. Neste episodio acontece o contrario: a placa passa a
+ser desenhada pro Transformer. E o problema deixa de ser fazer a conta e passa a ser levar o
+numero de um lado pro outro.
+
+ESTE EPISODIO COBRE DE 2015 A 2022, EM ORDEM. Dizer o intervalo na abertura e, no fim, dizer
+em que ano o episodio para. Duas pontas saem da janela e sao ditas como tal: o NVLink
+anunciado em dois mil e catorze (tela 3) e a placa de casa de dois mil e vinte e cinco (tela
+5).
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a ficha dela
+do jeito que o roteiro escreve. As fichas estao no roteiro, marcadas com FICHA. NINGUEM entra
+com idade neste episodio: Jouppi nao tem ano nem lugar de nascimento publico; Waldman nasceu
+em Jerusalem, ano nao confirmado; Scott nasceu em mil novecentos e setenta e dois e entra com
+o ano, sem idade. NAO inventar idade. A PALAVRA "FICHA" NAO E DITA EM VOZ ALTA, e a palavra
+"CENA" tambem nao: emendar direto no nome.
+
+JENSEN HUANG E ILYA SUTSKEVER JA TEM FICHA NESTA SERIE: aqui sao relembrados em uma frase cada,
+sem repetir a ficha.
+
+TODOS OS PROTAGONISTAS ESTAO VIVOS EM DOIS MIL E VINTE E SEIS. Ninguem morreu.
+
+⚠️ O AVISO DA PAGINA E UM LEMBRETE, NAO UMA EXPLICACAO. Uma fala so, de um apresentador, na
+tela 1: sao doze telas, quem esta so ouvindo acompanha normalmente, e quem esta com a pagina
+aberta vira quando ouvir o pedido. O outro apresentador nao comenta. Sem ensinar a usar a
+pagina e sem dizer a frase do pedido como exemplo.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O audio
+TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem do
+roteiro. A frase e sempre essa, "aperte o Proximo", COM o "o", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir.
+
+NAO ESTICAR A TELA. NAO repetir com outras palavras o que acabou de ser dito e NAO resumir a
+tela anterior antes de comecar a nova.
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 3 e 4 (o DGX-1, e a turma que vira
+escola), 6 e 7 (dois mil e dezessete, e dois mil e dezoito com o liquido), 10 e 11 (a conta de
+luz, e a H cem), 11 e 12 (a H cem, e o balanco). Um pedido de Proximo entre cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR, do jeito que o roteiro escreve. NAO trocar milhao por
+bilhao, bilhao por trilhao, nem gigabyte por terabyte. Os que mais pedem cuidado: "trezentos e
+cinquenta gigabytes", "trinta e dois gigabytes", "dois virgula quatro terabytes por segundo",
+"seis bilhoes e novecentos milhoes de dolares", "duzentos e oitenta e cinco mil nucleos de
+processador", "dez mil placas de video", "quinhentos e trinta bilhoes de parametros", "mil
+duzentos e oitenta e sete megawatts-hora", "seiscentas e quinze casas".
+
+NOMES ESTRANGEIROS: dizer devagar e com calma na primeira vez que cada um aparecer, e seguir
+em frente. NAO comentar como o nome se pronuncia, NAO repetir o nome logo em seguida, e NAO
+usar as expressoes "fala-se", "que se pronuncia", "pronuncia-se" nem "que se le". Os nomes e
+siglas estao listados no roteiro. As placas sao ditas letra e numero: "P cem", "V cem", "A
+cem", "H cem". Dizer "rede neural" em portugues, NUNCA "deep learning".
+
+⚠️ DEFEITOS DE GRAVACOES ANTERIORES DESTA SERIE, QUE NAO PODEM VOLTAR:
+
+1. NAO usar "genial", "genialidade", "genio", "revolucao" nem "revolucionario". Dizer o que a
+   coisa FAZ.
+2. A ficha fecha com o ano dito: "em dois mil e vinte e seis estava em tal lugar". NUNCA
+   "hoje", "atualmente" nem futuro inventado. Ler COMO ESTA ESCRITA, sem acrescentar cargo.
+3. NENHUMA despedida no fim: nada de "ate a proxima", "obrigado pela companhia", "fim da
+   etapa". O episodio termina na pergunta.
+4. NAO inventar analogias. So as duas do roteiro: a turma de quinta serie e a escola com o
+   corredor. A memoria empilhada, o Tensor Core, a conta de luz e a conta dos bytes sao
+   explicados direto.
+5. NAO inventar frases dramaticas ("chega o monstro", "pulo do gato", "chocante", "bizarro",
+   "que loucura"). Dizer o que o roteiro diz.
+6. NAO pular o aviso da pratica (tela 5: pausar o audio, resolver na tela e voltar) nem o
+   da tela interativa (tela 7: o controle pra dobrar as placas).
+7. NAO pular o gancho do extra (tela 10), as duas obras (telas 3 e 10) nem as datas.
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. As telas sao fotos, uma pratica na tela 5 (quantas placas o modelo
+ocupa) e uma tela interativa na tela 7 (dobrar as placas com corredor estreito e largo).
+
+GANCHO DE EXTRA: UM, com a frase generica "tem um extra sobre isso", SEM nome e SEM numero, na
+tela 10: a placa de treinar por dentro. Uma frase.
+
+FOCO, EM ORDEM: quem constroi o galpao; dois mil e quinze, a TPU que o Google usava por dentro
+e so revelou em maio de dois mil e dezesseis; abril de dois mil e dezesseis, o DGX-1 de oito
+placas, e em agosto a
+entrega em maos na OpenAI; por que oito placas, a turma que vira escola e o corredor; a
+memoria empilhada, a conta dos bytes e a placa de casa; maio de dois mil e dezessete, a V cem
+com o Tensor Core e a TPU dois; dois mil e dezoito, o NVSwitch e o liquido na TPU tres; marco de
+dois mil e dezenove, a Mellanox e o InfiniBand; maio de dois mil e vinte, a A cem e a maquina
+da Microsoft, e o Selene em dois mil e vinte e um; a conta de luz do GPT tres; marco de dois
+mil e vinte e dois, a H cem e o Transformer Engine; o balanco.
+
+O PONTO QUE NAO PODE FALTAR: o problema do galpao nao e fazer a conta, e fazer o numero andar.
+A memoria sobe pra junto do chip, o fio entre as placas vira produto, e a luz e o calor viram
+obra. Essa e a tese do episodio.
+
+⚠️ A APOSTA TEM QUE SOAR COMO APOSTA, E ESTE EPISODIO TEM TRES:
+
+- NA TELA 2, a TPU: se a rede neural fosse moda de poucos anos, era um chip que nao servia pra
+  mais nada.
+- NA TELA 3, o DGX-1: tres mil pessoas por tres anos numa maquina que podia ficar na
+  prateleira.
+- NA TELA 8, a Mellanox: quase sete bilhoes de dolares por uma empresa de rede; se o galpao nao
+  crescesse, era dinheiro por um cabo.
+
+⚠️ AMARRAR COM OS OUTROS EPISODIOS DESTA ETAPA, em uma frase onde as datas se cruzam: na tela
+2, o BERT do episodio anterior foi treinado em TPU; na tela 9, nove dias depois do anuncio da
+Microsoft sai o GPT tres; na tela 11, a H cem e anunciada no mes do Chinchilla e do
+InstructGPT, que e o episodio tres.
+
+FALAR DAS DUAS OBRAS QUE EXISTEM, onde o roteiro manda, em duas frases cada, sem virar
+propaganda e sempre com o cuidado junto:
+- na tela 3, a reportagem do programa 60 Minutes, da CBS, de dois mil e vinte e quatro, com o
+  Huang. ⚠️ Dizer que e reportagem de TV, perfil de empresario, que o chip mostrado e de dois
+  mil e vinte e quatro e que quase nao mostra o galpao.
+- na tela 10, o episodio da serie documental Overview, da PBS, de dois mil e vinte e seis,
+  sobre os data centers vistos de fora. ⚠️ Dizer que e bem depois deste episodio, que tem tom
+  de denuncia, que os numeros de emissao sao estimativa do programa e que nao explica placa
+  nem fio.
+NAO inventar outras obras, NAO dizer onde assistir, e NAO dizer nota, premio nem quem aparece.
+
+CUIDADOS DE FATO:
+- ⚠️ O anuncio da Microsoft NAO diz qual placa usou nem fala do GPT tres. O paper do GPT tres
+  diz "placas V cem num cluster fornecido pela Microsoft". Que seja a mesma maquina, as datas
+  sugerem e os textos nao dizem. Dizer assim.
+- ⚠️ A maquina da Microsoft e "entre os cinco maiores DIVULGADOS no mundo", nao "entre os cinco
+  maiores do mundo".
+- ⚠️ A H cem NAO foi a primeira placa feita pra inteligencia artificial: a TPU e a V cem vieram
+  antes. O Transformer Engine e circuito mais software. NAO dizer "camada por camada".
+- ⚠️ A H cem foi ANUNCIADA em marco de dois mil e vinte e dois e so comeca a sair em outubro. NAO
+  dizer que o GPT tres ponto cinco ou o ChatGPT foram treinados nela.
+- ⚠️ A primeira placa com memoria empilhada foi da AMD, em dois mil e quinze, NAO a P cem.
+- ⚠️ Na TPU, o resfriamento a liquido comeca na TERCEIRA, em dois mil e dezoito. A segunda era a
+  ar.
+- ⚠️ As dez mil placas e os quinze dias do treino do GPT tres sao estimativa; os mil duzentos e
+  oitenta e sete megawatts-hora sao a conta do estudo. Dizer assim.
+- ⚠️ Na entrega do DGX-1, dizer so "entregou em maos a OpenAI", com o Sutskever do lado de la.
+  NAO citar outros nomes e NAO inventar o que foi escrito na maquina.
+- ⚠️ Na placa de casa, NAO dizer que nenhuma empresa libera pesos: dizer que os modelos de ponta
+  das grandes empresas nao tem os pesos liberados.
+
+⚠️ ESTE EPISODIO NAO FECHA NADA. Na ultima tela: balanco das pessoas nome por nome, onde
+estavam em dois mil e vinte e seis, a licao, e a pergunta que abre o proximo episodio (uma
+maquina dessas sabe responder?). NAO dizer "fim da serie", "ate o proximo", "proximo
+mergulho" nem "proximo encontro".
+
+Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt: a turma de quinta serie (so
+lembrada) e a escola com o corredor, nas telas 4 e 7, lembrada em uma frase na tela 8. NAO
+invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

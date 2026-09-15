@@ -1,0 +1,432 @@
+# Transcricao automatica (faster-whisper small) - 18.8 min
+# Fonte: A máquina que aprendeu lendo rastros.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] o algoritmo de recomendação.
+[00:02] É, esse é o ponto central.
+[00:04] Então, para a gente contextualizar o material que a gente está analisando hoje,
+[00:08] no fim da etapa anterior, a gente viu que quem escolhia o que aparecia na tela de uma rede social
+[00:13] era uma regra de três fatores.
+[00:15] Exato, uma regra escrita à mão por pessoas, né?
+[00:18] Pois é, pessoas de carne e osso.
+[00:20] Mas a grande questão de hoje é a seguinte,
+[00:22] e se simplesmente ninguém escrever a regra?
+[00:26] E se a máquina descobrir sozinha, olhando só o que as pessoas fizeram antes?
+[00:30] Essa é a virada fundamental dessa décima etapa da série
+[00:34] como reinventar o computador do zero.
+[00:36] Quando a rede vira fide.
+[00:37] Aham, porque a tese central aqui é muito clara.
+[00:41] Presta bem atenção.
+[00:42] Esta foi a primeira máquina que aprendeu e que mexeu com todo mundo.
+[00:47] Não foi a que conversa.
+[00:49] E o que ela aprendeu não veio de nota que alguém deu de propósito.
+[00:53] Veio do rastro que as pessoas deixaram sem perceber.
+[00:56] Nossa, isso é muito forte.
+[00:58] E para a gente entender como isso aconteceu,
+[01:01] o intervalo que a gente vai analisar hoje cobre de 2006 a 2016, em ordem.
+[01:07] E é super importante pontuar, só em uma frase mesmo,
+[01:10] que esses anos se sobrepõem com a etapa das placas de vídeo
+[01:13] e com as redes sociais que a gente discutiu antes, sabe?
+[01:16] São linhas que correm em paralelo.
+[01:18] Exatamente.
+[01:19] E, ah, vamos lembrar com o nosso foco aqui.
+[01:23] O assunto é construir uma peça de software que aprende
+[01:26] e o dado que alimenta ela.
+[01:28] É, não é para ficar contando historinhas de empresas de sucesso, né?
+[01:31] Nem fazer sermão sobrevista em tela.
+[01:33] A gente vai olhar para a engenharia.
+[01:35] E só um aviso de navegação rápido,
+[01:37] a nossa explicação acompanha uma página de animação com 12 telas.
+[01:41] Para quem está só ouvindo a gente no áudio,
+[01:43] acompanha normalmente, sem problemas.
+[01:45] Sim.
+[01:45] E quem está com a página aberta,
+[01:47] vira a tela quando ouviu meu pedido.
+[01:49] Então, a partir o próximo.
+[01:51] Bom, a gente começa no dia 2 de outubro de 2006.
+[01:53] O Read Hastings anunciou um concurso público
+[01:56] com um prêmio de, olha só, 1 milhão de dólares.
+[02:00] Caramba, 1 milhão de dólares na época era um absurdo de dinheiro
+[02:04] para um prêmio de software.
+[02:06] Demais.
+[02:07] E o Read Hastings, nascido em 1960, tinha 45 anos,
+[02:11] vivo em 2020 e 6 quando saiu do Conselho da Netflix.
+[02:16] Eu acho legal a gente lembrar do contexto dessa época.
+[02:19] A Netflix não era streaming ainda, tá?
+[02:21] Verdade, a gente esquece disso.
+[02:23] Pois é.
+[02:23] O negócio deles era mandar DVD pelo correio naqueles envelopes vermelhos.
+[02:27] O streaming mesmo só começaria uns três meses depois,
+[02:30] lá em janeiro de 2007.
+[02:32] Então, essa aposta era um risco gigante.
+[02:35] Soltar os dados internos no mundo
+[02:37] podia não dar em absolutamente nada.
+[02:39] Mas qual era o desafio exato que ele propôs?
+[02:42] O desafio era o seguinte.
+[02:44] O sistema deles, que chamava cinemate,
+[02:47] errava em média quase uma estrela nas previsões de notas.
+[02:51] A meta era errar 10% menos.
+[02:54] E a base de dados que eles soltaram impressiona muito, né?
+[02:57] Demais.
+[02:58] Foram 100 milhões de notas,
+[03:00] dadas por 480 mil pessoas,
+[03:03] sobre 17.770 filmes.
+[03:07] Nossa, é um volume assustador para 2006.
+[03:10] Isso traz uma lição incrível de hardware e de software.
+[03:14] Como assim?
+[03:15] É que pela primeira vez, o gargalo não era o acesso ao dado ou a falta de máquina.
+[03:19] O gargalo era um método matemático mesmo.
+[03:22] A solução de software ia ter que vir de fora da empresa.
+[03:25] Com certeza.
+[03:26] Aperte o próximo.
+[03:28] Aí logo em seguida, em 11 de dezembro de 2006,
+[03:32] acontece um negócio muito curioso.
+[03:34] O que foi?
+[03:34] Alguém usando o apelido Simon Funk
+[03:37] simplesmente publicou o método dele de graça na internet,
+[03:41] no meio da disputa por aquele milhão de dólares.
+[03:44] E o mais louco é que não tem nem data de nascimento pública para esse Simon Funk.
+[03:49] A gente não sabe muito sobre ele.
+[03:51] Mas o que ele publicou foi revolucionário para a época.
+[03:54] Foi sim.
+[03:55] Para entender, a gente pode usar a analogia de uma planilha quase toda vazia.
+[03:59] Imagina 480 mil linhas, que são as pessoas,
+[04:02] e 17 mil colunas, que são os filmes.
+[04:05] Tá, uma tabela gigante.
+[04:07] Gigante.
+[04:08] Mas só uma célula em cada 100 tem algo preenchido.
+[04:11] O resto é buraco, porque ninguém assiste tudo.
+[04:14] O método desse funk troca essa tabela gigante cheia de buracos
+[04:18] por duas tabelas magras.
+[04:20] Aí a máquina multiplica uma linha da primeira por uma coluna da segunda
+[04:24] para prever a nota no espaço vazio.
+[04:26] Entendi.
+[04:27] E fazendo isso, ela meio que inventa sozinho o significado de cada coluna, né?
+[04:30] Exato.
+[04:31] Os famosos fatores latentes.
+[04:33] Ela faz isso sem saber se o filme é de ação ou se é um drama.
+[04:37] Eu acho muito legal esclarecer que o funk não inventou essa técnica do zero.
+[04:42] Ele só publicou uma receita simples que funcionava muito bem ali.
+[04:46] Pois é, e o nome no mercado acabou ficando errado para sempre.
+[04:49] Chamou de uma técnica clássica que normalmente exige uma tabela completa sem buracos.
+[04:54] E eles são de hardware e software que fica bem clara, né?
+[04:57] Sim, porque ajustar todos esses números milhares de vezes
+[05:00] só existiu porque as máquinas de mesas computadores das pessoas na época
+[05:04] já aguentavam o tranco sozinhas.
+[05:06] O hardware na casa das pessoas já dava conta.
+[05:08] Aperte o próximo.
+[05:10] Aí a gente chega em 2007.
+[05:11] E aparece uma nova peça nessa história que conecta com uma outra parte da série
+[05:15] que a gente está analisando.
+[05:16] Qual peça?
+[05:17] A segunda peça do concurso não era estatística clássica.
+[05:19] Era rede neural.
+[05:21] Um grupo lá de Toronto publicou como usar isso para adivinhar as notas da Netflix.
+[05:25] Ah, o grupo do Hinton, né?
+[05:27] Isso, o Jeffrey Hinton, nascido em 1947, tinha 59 anos,
+[05:33] vivo em 2026 dando aula em Toronto.
+[05:36] E o que eu acho mais bizarro é que naquela época,
+[05:38] apostar em rede neural era uma coisa muito esquisita.
+[05:41] Era super fora de moda.
+[05:43] Ninguém queria mexer com isso.
+[05:45] Exatamente.
+[05:46] Ninguém ali imaginava que 5 anos depois ela viraria a chave de toda a indústria de imagem do mundo.
+[05:52] Ninguém mesmo.
+[05:53] Mas a equipe do Hinton levou o prêmio de progresso naquele ano.
+[05:57] Eles melhoraram a precisão em 8% e pouco.
+[06:00] Misturando aquele método de fatoração do funk com a rede neural deles.
+[06:03] Sim, guardem bem essa combinação.
+[06:06] A lição de hardware e software aqui quebra um grande mito.
+[06:10] Aquela ideia de que a rede neural nasceu em 2012, né?
+[06:13] Exato. Não nasceu em 2012.
+[06:15] Já rodava em coisas super úteis e pequenas em 2007 ganhando o prêmio.
+[06:20] Aperte o próximo.
+[06:21] Bom, e aí veio um problema gravíssimo com aquele dado anônimo que não era bem anônimo.
+[06:27] Ah, essa história pensa.
+[06:28] Dois pesquisadores lá do Texas provaram que a base da Netflix era super vulnerável.
+[06:33] E olha que esses dois também não tem nem ficha pública de nascimento.
+[06:37] Mas o que eles fizeram foi assustador.
+[06:39] A Netflix tinha tirado os nomes das pessoas, mas deixou os filmes, as notas e as datas aproximadas.
+[06:46] E os pesquisadores simplesmente cruzaram isso com as avaliações públicas de outro site de cinema, o IMDB.
+[06:52] Os números desse estudo me deixaram arrepiada, sabe por quê?
+[06:56] Por causa da facilidade, né?
+[06:57] Sim, com apenas 8 notas e presta atenção mesmo se duas dessas notas estivessem erradas
+[07:04] e como a margem de erro de duas semanas dava para identificar 99% dos registros.
+[07:09] 99%.
+[07:11] O resumo é que tirar o nome da coluna não é anonimizar de verdade.
+[07:15] Não mesmo, o padrão de comportamento de uma pessoa é uma impressão digital.
+[07:20] E a consequência disso foi pesada.
+[07:22] Tiveram processos judiciais na cola da Netflix em 2009
+[07:26] e eles tiveram que cancelar o segundo concurso que ia rolar em 2010.
+[07:30] A lição de hardware e software aqui é dura.
+[07:34] A mesma finura de dados que faz a recomendação funcionar
+[07:38] é a mesmíssima que denuncia quem é a pessoa na vida real.
+[07:42] Não dá para separar as duas coisas.
+[07:44] E a perde o próximo.
+[07:45] Mas e o prêmio?
+[07:46] O concurso original continuou e em 26 de julho de 2009,
+[07:51] aquela meta mágica dos 10% foi finalmente batida.
+[07:55] Foi batida por uma equipe com um nome enorme, Belchors Pragmatic Chaos,
+[07:59] formada por três grupos que se juntaram na reta final.
+[08:03] E de novo, o pessoal ali sem datas de nascimento públicas disponíveis.
+[08:07] Mas o detalhe que pouca gente conhece é como aconteceu o desimpate, né?
+[08:11] Ah, isso é cinema puro.
+[08:13] Porque no placar público, lá do site, era outra equipe que liderava.
+[08:17] Mas do teste oculto da Netflix, que era o que valia,
+[08:20] elas empataram exatamente no milésimo.
+[08:23] Nossa, e como desimpatam o negócio desses?
+[08:26] Pela ordem de chegada.
+[08:28] A outra equipe enviou os arquivos 20 minutos depois da equipe campeã.
+[08:32] 20 minutos.
+[08:33] 1 milhão de dólares decidido por um atraso de 20 minutos num relógio.
+[08:38] Não dá para se desacreditar.
+[08:40] E a solução campeã, que bateu os 10%,
+[08:43] era um Frankenstein.
+[08:44] Era uma mistura de 107 algoritmos diferentes rodando juntos.
+[08:48] 107 algoritmos.
+[08:50] De uma vez, aperte o próximo.
+[08:52] Só que aí, em 2012, a empresa solta uma bomba.
+[08:56] E conta o que fez com aquilo tudo.
+[08:58] É a maior reviravolta dessa história toda.
+[09:00] A Netflix simplesmente foi a público revelar que aquela mistura enorme de 107 algoritmos
+[09:07] nunca foi usada em produção no sistema deles.
+[09:10] Nunca foi.
+[09:11] E a gente precisa esclarecer isso de imediato, para quebrar o mito.
+[09:15] Ah, com certeza.
+[09:16] O que eles usaram, na verdade, foram as peças do primeiro ano.
+[09:20] Aquela fatoração de matrizes e a rede neural
+[09:23] foram reescritas e usadas por muitos anos.
+[09:26] Sim, só a mistura super complexa da equipe campeã
+[09:30] é que ficou lá na prateleira juntando poeira.
+[09:32] E a Netflix deu três motivos muito claros do por que fizeram isso.
+[09:36] Primeiro, o ganho de precisão não pagava o esforço
+[09:39] massivo de engenharia que ia precisar.
+[09:41] E a escala deles tinha mudado de uma forma bizarra, né?
+[09:45] Passou de 100 milhões de notas no concurso
+[09:47] para 5 bilhões de notas na vida real.
+[09:50] E o motivo mais crucial de todos, o produto deles virou streaming.
+[09:54] Isso muda tudo, porque o problema deixou de ser prever a nota
+[09:58] que alguém ia dar para o DVD e passou a ser prever o que a pessoa
+[10:02] vai assistir ali na hora, dando play.
+[10:05] E prever consumo não exige que o usuário dê nota de propósito.
+[10:09] É só analisar o resto da rede.
+[10:11] O que nos traz para uma vitalição de hardware e software.
+[10:15] Um algoritmo que é excelente no papel
+[10:17] pode ser completamente inútil na máquina real.
+[10:20] Aperte o próximo.
+[10:21] Agora a gente faz uma transição de cenário saindo da Netflix
+[10:25] e indo lá para o Facebook, mais ou menos em 2011.
+[10:29] O feed para de seguir uma regra fixa.
+[10:32] Lembra daquela regra de três fatores que a gente viu antes
+[10:35] que foi escrita à mão em 2010?
+[10:37] Sim, ela foi substituída por um sistema que aprende sozinho.
+[10:41] E o Mark Zuckerberg, nascido em 1984, tinha 27 anos nessa época.
+[10:47] Vivo em 2026, ainda no comando da mesma empresa.
+[10:51] A mudança técnica ali foi estrutural.
+[10:54] Em vez de um humano sentar e decidir que um comentário vale mais
+[10:58] do que uma curtida, a máquina começa a ajustar os pesos sozinho.
+[11:01] Ela vai observando as interações da base de usuários toda.
+[11:05] E foi tão rápido que em 2013 o modelo deles
+[11:08] já tinha até 100 mil pesos regulando as coisas.
+[11:11] 100 mil pesos!
+[11:13] A consequência direta disso é que a explicabilidade foi para o espaço.
+[11:17] Totalmente.
+[11:18] Nem os criadores do sistema conseguiam explicar em uma frase simples
+[11:21] o motivo de um post aparecer para alguém,
+[11:24] porque a resposta na prática era um 100 mil números matemáticos.
+[11:27] É, é insano.
+[11:28] E a lição de hardware e software é que guardar e ajustar 100 mil pesos
+[11:32] para um bilhão de pessoas
+[11:34] só é possível graças aos imensos galpões de máquinas.
+[11:38] Servidores de movem, né?
+[11:39] Isso.
+[11:40] A infraestrutura física é o que permitiu essa escala.
+[11:43] Aperte o próximo.
+[11:44] Em março de 2011 surge um conceito que deu o que falar.
+[11:48] O Elipareser deu um nome para aquele incômodo crescente
+[11:51] que a gente estava sentindo, a bolha de filtro.
+[11:54] O Elipareser, nascido em 1980, tinha 30 anos.
+[11:58] Vivo em 2026 tocando uma organização
+[12:01] que constrói praças digitais de bairro.
+[12:04] A tese dele era que, se cada um vê uma seleção feita
+[12:07] sob medida pelo sistema, a gente passa a viver em recortes isolados, bolhas.
+[12:11] Mas aqui a gente tem que fazer um alerta crucial.
+[12:14] Naquela época, isso era pulamente um debate público.
+[12:17] Não era pesquisa isolada de laboratório.
+[12:19] É, isso é muito importante.
+[12:20] Estudos gigantescos feitos de 2021 em diante
+[12:23] mostraram exatamente o contrário.
+[12:25] Mostraram que o consumo de conteúdo extremo, na verdade,
+[12:28] vem mais de busca direta do usuário e de links externos
+[12:32] do que puramente da recomendação empurrando.
+[12:34] Mas, óbvio, tem um detalhe no meio disso, né?
+[12:36] Claro.
+[12:37] Esses estudos científicos mediram um sistema tecnológico totalmente diferente.
+[12:42] Dez anos depois da fala do Pariser.
+[12:45] Não dá pra afirmar categoricamente
+[12:47] qual era o efeito exato daquela primeira máquina em 2011.
+[12:51] A gente até lembra do docodrama
+[12:53] ou dilema das redes sociais de 2020 que explora isso.
+[12:56] Sim, mas com cuidado de lembrar que aquilo é um docodrama.
+[12:59] Tem cenas de ficção, tipo aquela sala de controle
+[13:02] com os carinhas puxando a alavanca.
+[13:04] Não é um documentário puro.
+[13:06] Exatamente.
+[13:07] A lição de hardware e software dessa parte
+[13:10] é que a engenharia sempre chega antes da medida.
+[13:13] A máquina decidiu que bilhões de pessoas veriam
+[13:16] muito antes de existir um jeito acadêmico de medir esse impacto.
+[13:19] Perfeito. Aperte o próximo.
+[13:21] Aí a gente chega em 2012,
+[13:23] quando o YouTube decide trocar o que se mede dentro da plataforma.
+[13:26] E não foi pouca coisa, viu?
+[13:28] Entre agosto e outubro daquele ano,
+[13:30] o YouTube e o sistema de busca de vídeos
+[13:32] pararam de otimizar pra clique
+[13:34] e passaram a otimizar pra tempo assistido.
+[13:37] O Salar Camangar, nascido em 1977,
+[13:40] tinha 34 ou 35 anos na época.
+[13:43] Deixou o YouTube em 2014 e vive em 2026.
+[13:47] E pra entender o tamanho dessa mudança,
+[13:49] tem uma analogia super autorizada que é perfeita.
+[13:52] Imagina um caixa de mercado.
+[13:54] Tá, um operador de caixa.
+[13:55] Isso.
+[13:56] Se você paga o bônus do caixa,
+[13:58] por quantas pessoas possam a fila,
+[14:00] ele vai empurrar a fila o mais rápido possível.
+[14:02] Ele não tá nem aí pro resto.
+[14:04] Mas se você muda a regra e paga ele
+[14:06] pelo volume financeiro das compras,
+[14:08] a atitude dele muda na hora.
+[14:11] Ele passa a olhar pro tamanho do carrinho.
+[14:13] Nossa, faz todo sentido.
+[14:15] Porque o impacto técnico lá no YouTube
+[14:17] foi exatamente esse.
+[14:18] Premiar o click puramente
+[14:20] acabava premiando aquela capa chamativa,
+[14:22] o click bait mentiroso.
+[14:24] E não o conteúdo do vídeo em si.
+[14:26] E o tempo assistido é uma métrica contínua,
+[14:28] que acontece depois do click.
+[14:30] O sistema precisa medir retenção.
+[14:32] E trocar esse rótulo
+[14:34] obrigou a equipe deles a reescrever
+[14:36] o treino do modelo inteiro.
+[14:38] E olha a lição de hardware e software que fascinante.
+[14:40] Nenhum único hardware
+[14:42] mudou nesse dia nos servidores.
+[14:44] O hardware era o mesmo.
+[14:45] Mas o software é o que você manda ele perseguir.
+[14:47] Mudar a métrica mudou
+[14:49] todo o comportamento do sistema.
+[14:51] Aperte o próximo.
+[14:52] E a gente aterrisse em setembro de 2016
+[14:54] quando um artigo marca a indústria.
+[14:56] A rede neural finalmente assume
+[14:58] a recomendação principal do YouTube.
+[15:00] Foram três engenheiros do Google.
+[15:02] O Paul Covington, o Jay Adams
+[15:04] e o Emere Sargin,
+[15:06] que também não tem fichas públicas de nascimento.
+[15:08] Mas eles publicaram em detalhes
+[15:10] o uso de rede neural profunda nesse sistema.
+[15:13] E quem estava liderando as coisas nessa época?
+[15:16] A Susan Watik,
+[15:18] nascida em 1968,
+[15:20] que tinha 45 anos quando assumiu YouTube em 2014.
+[15:23] Ela morreu em 2024,
+[15:25] quando já tinha saído do YouTube
+[15:27] havia um ano e meio.
+[15:29] E na parte de infraestrutura
+[15:31] o Jeff Dean, nascido em 1968,
+[15:33] tinha 48 anos.
+[15:35] Vivo em 2026,
+[15:37] quando saiu do Google depois de 27 anos
+[15:40] e abriu uma empresa de pesquisa própria.
+[15:42] A arquitetura que eles descreveram
+[15:44] é como se fosse um funil.
+[15:46] A primeira rede neural
+[15:47] pega uma piscina com milhões de vídeos
+[15:50] e separa algumas centenas.
+[15:52] Para dar uma limpada inicial.
+[15:54] Isso.
+[15:55] Aí uma segunda rede pega seis centenas
+[15:57] e ordena quais dezenas realmente
+[16:00] vão aparecer ali na tela inicial do usuário.
+[16:02] E aqui a tese central se materializa, sabe?
+[16:05] O treino não vinha de notinhas manuais,
+[16:07] vinha do que a pessoa assistiu até o fim.
+[16:10] O dado primário era puramente o rastro.
+[16:12] E a escala disso,
+[16:14] mais de um bilhão de pessoas cadastradas,
+[16:17] cerca de um bilhão de números ajustáveis na matemática
+[16:20] e centenas de bilhões de exemplos sendo digeridos.
+[16:23] Só que a gente tem que ter cuidado
+[16:25] para separar a realidade do exagero mercado lógico.
+[16:27] É, não foi a primeira rede neural usada
+[16:29] em produção no mundo,
+[16:31] a Netflix já usava em 2008
+[16:33] e não foi a primeira a operar na escala de bilhões de acessos
+[16:35] porque o Google usava em buscas faz tempo.
+[16:37] O que teve de tão especial, então,
+[16:39] foi que os engenheiros abriram a caixa preta
+[16:41] e contaram segredos de como tudo funcionava.
+[16:43] E para quem quiser ver
+[16:45] como as coisas estavam acontecendo na época,
+[16:47] o documentário AlphaGo
+[16:49] de 2017, que está no YouTube,
+[16:52] é um belo retrato visual.
+[16:54] E lá mostra como a engenharia dessa época
+[16:57] focava em economizar processador a todo cuspo,
+[17:00] porque ainda não tinha chips especiais só para iar.
+[17:03] Aperte o próximo.
+[17:04] Então, essa parte da nossa história sobre as máquinas
+[17:07] em 2016.
+[17:09] É onde a rede neural reina lendo
+[17:11] o rasto de mais de um bilhão de pessoas todos os dias.
+[17:14] E se a gente fizer um balanço rapidinho das pessoas,
+[17:17] olha que maluquice.
+[17:18] Vê se eu não esqueço de nada.
+[17:19] O Hasting soltou o dado.
+[17:21] O Funk publicou o método.
+[17:22] O Hinton trouxe a rede neural.
+[17:24] Os dois pesquisadores do Texas
+[17:26] expuseram a falha anônima.
+[17:28] Três grupos ganharam o prêmio
+[17:30] por uma diferença de 20 minutos.
+[17:32] Engenheiros da Netflix não usaram a mistura campeã.
+[17:35] O Zuckerberg trocou a regra do feed.
+[17:37] O Pariseiro nomeou a bolha.
+[17:39] O camangá mudou a métrica para tempo.
+[17:42] A OX que estava no comando.
+[17:44] E o Jeff Jean fez a base monumental de software.
+[17:47] Uau, é isso?
+[17:48] E sabe o que eu noto olhando para isso tudo?
+[17:51] Ninguém, absolutamente ninguém,
+[17:53] planejou esse conjunto de eventos do começo ao fim.
+[17:56] É muito importante pontuar aqui boa parte
+[17:59] dos criadores técnicos,
+[18:01] dos que puseram a mão no ródigo.
+[18:03] Não tem nem data de nascimento pública.
+[18:06] É o oposto dos donos das empresas.
+[18:08] Pois é.
+[18:09] E a grande síntese da etapa inteira,
+[18:11] a lição que fica é essa aqui.
+[18:13] A rede abriu para o comércio,
+[18:15] que deixou cano enterrado.
+[18:17] Aí veio um jeito de ordenar a web,
+[18:19] que obrigou a máquina a adivinhar as pessoas.
+[18:22] O excesso de conteúdo no ar matou
+[18:24] a velha ordem cronológica.
+[18:26] E no fim das contas,
+[18:27] a regra foi totalmente substituída
+[18:29] por um modelo que aprendeu
+[18:31] tendo o rastro invisível de todos nós.
+[18:33] Essa máquina aprendeu a adivinhar o que você quer
+[18:36] sem você pedir nada.
+[18:38] Ela leu seu rastro.
+[18:40] Mas em nenhum momento você conversa com ela.
+[18:43] E se desce para simplesmente pedir
+[18:45] com as suas palavras.
+[18:47] E a máquina é responder.

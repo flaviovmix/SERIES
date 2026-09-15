@@ -158,6 +158,101 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
 .hard-challenge .bit-weights,.hard-challenge .progress-caption,.hard-challenge #btnHint{display:none}
 
 @media(max-width:540px){.running-sum{left:14px;top:90px;min-width:44px;font-size:18px}.sum-label{font-size:7px;letter-spacing:.5px}.arena-bottom{left:14px;right:14px}}
+/* PADRÃO DEITADO (receita em _padrao-deitado.md, 09/09/2026): no telefone a arte
+   deita, os controles vão pro menu lateral que entra pela direita e a SUA SOMA
+   — que este modelo já flutuava na arena — fica sendo o valor à vista. Acima de
+   700px nada disto existe: o desktop continua como sempre foi. */
+.arena-menu-btn{display:none;position:absolute;z-index:4;top:13px;right:14px;width:38px;height:38px;padding:0;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:1px solid var(--line);border-radius:11px;background:#1c2130e6;backdrop-filter:blur(6px);transition:right .22s ease-out,top .22s ease-out}
+.arena-menu-btn span{width:16px;height:2px;border-radius:1px;background:#cfd6e4;transition:transform .2s,opacity .2s}
+.arena-menu-btn[aria-expanded=true] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.arena-menu-btn[aria-expanded=true] span:nth-child(2){opacity:0}
+.arena-menu-btn[aria-expanded=true] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.arena{--gaveta:min(280px,60%)}
+.arena-menu{position:absolute;z-index:5;top:0;right:0;bottom:0;width:var(--gaveta);overflow-y:auto;display:flex;flex-direction:column;padding:8px;border-left:1px solid var(--line);background:#141925f2;backdrop-filter:blur(8px);animation:entraDaDireita .22s ease-out}
+.arena-menu[hidden]{display:none}
+/* aberto, o X desce e encosta na borda do menu, fora do conteúdo */
+.arena.menu-aberto .arena-menu-btn{top:26px;right:calc(var(--gaveta) + 2px)}
+@keyframes entraDaDireita{from{transform:translateX(100%)}to{transform:none}}
+.arena-menu-linha{flex:none;display:flex;align-items:center;gap:12px;padding:1px 2px 7px;border-bottom:1px solid var(--line)}
+.arena-menu-linha .utility-buttons{margin:0;gap:14px;flex:1 1 auto;min-width:0}
+.arena-menu-linha .text-btn{font-size:11px}
+.arena-menu-linha .level-chip{margin-left:auto;flex:none}
+.arena-menu .mode-switch{flex:none;margin:8px 0 0;display:flex;width:100%}
+.arena-menu .mode-switch button{flex:1;justify-content:center;padding:6px 6px;font-size:11px}
+/* o cartão perde a moldura: dentro do menu ele JÁ está num cartão. Não encolhe
+   (`flex:0 0 auto`): encolhido, o conteúdo vaza e cobre os bits. */
+.arena-menu .challenge{flex:0 0 auto;margin:4px 0 0;padding:0;background:none;border:0;border-radius:0;overflow:visible;display:block}
+.arena-menu .challenge-top,.arena-menu .challenge h2,.arena-menu .session-stats,.arena-menu .challenge-symbol,.arena-menu .challenge-copy,.arena-menu #btnHint{display:none}
+.arena-menu .target-box{margin:0;padding:8px 10px}
+.arena-menu #target{font-size:22px}
+.arena-menu .progress-dots{margin-top:6px}
+.arena-menu .progress-caption{margin-top:4px}
+.arena-menu .challenge-bottom{padding-top:8px}
+.arena-menu .primary-btn{margin-top:0;padding:9px 8px}
+.arena-menu .feedback{margin-top:4px;min-height:0}
+/* a dificuldade vira uma linha de botões: o rótulo e a explicação são leitura */
+.arena-menu .difficulty{margin:4px 0 0}
+.arena-menu .difficulty legend,.arena-menu .difficulty p{display:none}
+.arena-menu .difficulty button{padding:7px 3px;font-size:10px}
+/* os pesos já estão escritos em cada bit, aqui seria a mesma coisa duas vezes */
+.arena-menu .bit-weights{display:none}
+.arena-menu .panel-binary{margin-top:4px}
+/* os oito bits fecham o menu: 4 colunas x 2 linhas cabem nos 264px úteis */
+.arena-menu .digit-controls{margin-top:auto;flex:none;padding-top:6px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.arena-menu .bit-control{width:100%;min-height:0;padding:3px 2px;gap:0}
+.arena-menu .bit-control span{font-size:8px;letter-spacing:.4px}
+.arena-menu .bit-control output{font-size:16px}
+/* [hidden] sozinho perde pro display:flex do placar */
+.scoreboard[hidden]{display:none}
+@media(max-width:700px){
+  .arena-menu-btn{display:flex}
+  .arena-top .view-reset{display:none}
+  /* o menu entra deslizando: o que ainda está fora da arena não pode aparecer */
+  .arena{overflow:hidden}
+  .arena.menu-aberto .arena-bottom{opacity:0}
+  /* sem o cartão ao lado, a coluna da cena fica com tudo. ⚠️ Este modelo põe a
+     coluna na LINHA 2 de três automáticas (a 3ª era do cartão): com o cartão no
+     menu, sobrava linha vazia e a arena encolhia. Uma linha só, que preenche. */
+  .game-layout{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);gap:0}
+  .play-column{grid-column:1;grid-row:1;padding:0}
+}
+/* Embutido no lightbox do episódio: a janela NUNCA rola. O iframe tem 84vh, que num
+   monitor 1080p com escala 125% dá uns 720px — menos do que a soma das caixas. */
+body.embedded{height:100vh;min-height:0;overflow:hidden}
+.embedded .app{height:100%;display:flex;flex-direction:column}
+.embedded .introduction{flex:none}
+.embedded .game-layout{flex:1;min-height:0;grid-template-rows:minmax(0,1fr)}
+.embedded .play-column{min-height:0}
+.embedded .arena{height:auto;flex:1;min-height:180px}
+.embedded .scoreboard,.embedded .underboard{flex:none}
+.embedded .challenge{min-height:0;overflow-y:auto}
+/* Telefone EM PÉ: a arte deita. Mesma lógica do quebra-cabeça e do ateliê do KIDS
+   — o CSS gira o app 90°. Deitar o aparelho de verdade solta a media query e tudo
+   volta ao normal sozinho. O JS lê a mesma query pra corrigir os eixos do dedo. */
+@media(max-width:820px) and (orientation:portrait) and (pointer:coarse){
+  html,body{height:100%;overflow:hidden}
+  /* svh = altura COM a barra do navegador à vista; com 100vh o pé do app sai da tela */
+  .app{position:fixed;top:0;left:0;width:100svh;height:100vw;max-width:none;padding:0 16px;transform-origin:0 0;transform:rotate(90deg) translateY(-100%);display:flex;flex-direction:column;overflow:hidden}
+  /* deitado sobra pouca altura: fica o que se usa, sai o que é leitura */
+  .topbar{height:52px;flex:none}
+  .introduction,.bottom-strip,.underboard{display:none}
+  .game-layout{flex:1;min-height:0;padding-bottom:12px;gap:0}
+  .play-column{min-height:0}
+  .arena{height:auto;min-height:0;flex:1}
+  .running-sum{top:52px}
+  /* o <dialog> mora fora do .app, então precisa do mesmo giro pra nascer deitado */
+  #helpDialog{top:0;left:0;width:min(520px,100svh);max-height:100vw;margin:0;transform-origin:0 0;transform:rotate(90deg) translateY(-100%)}
+  /* ⚠️ `.embedded .app` (duas classes) vence o height daqui — media query não soma
+     especificidade. Sem isto o app deitado fica quadrado, maior que o iframe. */
+  body.embedded .app{height:100vw}
+  body.embedded .arena{min-height:0}
+  /* ⚠️ Abaixo de 540px de altura de iframe (telefone de 384x686 no lightbox), o
+     bloco antigo do embutido faz `.game-layout{display:block}`: num pai em bloco a
+     coluna do jogo não tem altura definida e a arena com `flex:1` cai pra ZERO —
+     foi o quadro vazio que ele mediu em 10/09. Deitado, a grade volta. */
+  body.embedded .game-layout{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);flex:1;min-height:0;height:auto}
+  body.embedded .play-column{min-height:0}
+}
 </style>
 </head>
 <body>
@@ -184,7 +279,7 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
         <div class="scene-message" id="loading"><span class="spinner" aria-hidden="true"></span><span>Preparando seu ábaco binário…</span></div>
         <div class="scene-message" id="aviso" role="alert" hidden>Não foi possível abrir o ábaco 3D. Confira sua conexão e recarregue a página.</div>
         <div class="arena-bottom"><span class="active-key"><i></i>Esquerda = 1 · Direita = 0</span><span class="drag-guide">Arraste o fundo para girar · role para aproximar</span></div>
-        <aside class="running-sum" aria-label="Soma dos pesos ligados"><span class="sum-label">SUA SOMA</span><div id="sumTerms">0</div><output id="sumResult" aria-label="Total da soma">0</output></aside><div class="win-flash"></div><div class="celebration" aria-hidden="true">✦ Número perfeito! +100 XP</div>
+        <aside class="running-sum" aria-label="Soma dos pesos ligados"><span class="sum-label">SUA SOMA</span><div id="sumTerms">0</div><output id="sumResult" aria-label="Total da soma">0</output></aside><div class="win-flash"></div><div class="celebration" aria-hidden="true">✦ Número perfeito! +100 XP</div><button class="arena-menu-btn" id="btnOpcoes" aria-expanded="false" aria-controls="arenaMenu" aria-label="Desafio, modos e opções"><span></span><span></span><span></span></button><div class="arena-menu" id="arenaMenu" hidden><div class="arena-menu-linha" id="menuLinha"></div></div>
       </div>
       <div class="scoreboard"><div><p class="score-label">Decimal</p><div class="total-wrap"><output id="total" aria-label="Valor total">0</output></div></div><div class="digit-controls" id="digitControls" role="group" aria-label="Ligar ou desligar os oito bits"></div></div>
       <div class="underboard"><p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></svg>Clique em uma conta ou em um bit para alternar 0 e 1.</p><div class="utility-buttons"><button class="text-btn" id="btnExemplo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg><span id="exampleLabel">Ver exemplo</span></button><button class="text-btn" id="btnLimpar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg>Zerar</button></div></div>
@@ -211,7 +306,7 @@ dialog{margin:auto;width:min(470px,calc(100% - 32px));max-height:90vh;overflow:a
 <noscript><p style="padding:24px">Ative o JavaScript para jogar com o ábaco.</p></noscript>
 <script>
 // Também cobre falha de rede antes de o módulo conseguir inicializar.
-window.abacoLoadTimer=setTimeout(()=>{if(!window.__binario){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},18000);
+window.abacoLoadTimer=setTimeout(()=>{if(!window.__binario){document.getElementById('loading').hidden=true;document.getElementById('aviso').hidden=false;}},8000);
 if(window.parent!==window)document.body.classList.add('embedded');
 </script>
 <script type="importmap">
@@ -356,9 +451,46 @@ $('digitControls').addEventListener('click',event=>{const btn=event.target.close
 
 // Arrastar uma conta não aciona a órbita. Soltar fora ou cancelar libera a câmera.
 const raycaster=new THREE.Raycaster(),mouse=new THREE.Vector2();
-function pick(event){const rect=renderer.domElement.getBoundingClientRect();mouse.set((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1);raycaster.setFromCamera(mouse,camera);return raycaster.intersectObjects(beads)[0]?.object;}
+/* PADRÃO DEITADO: o CSS deita o app inteiro. O navegador NÃO converte coordenada
+   de ponteiro através de um transform — clientX/clientY continuam sendo tela —,
+   então quem lê o dedo desfaz o giro aqui. */
+const EM_PE=matchMedia('(max-width:820px) and (orientation:portrait) and (pointer:coarse)');
+const deitado=()=>EM_PE.matches;
+function pontoLocal(el,e){
+  const r=el.getBoundingClientRect();
+  return deitado()
+    ? {x:e.clientY-r.top,y:r.right-e.clientX,w:r.height,h:r.width}
+    : {x:e.clientX-r.left,y:e.clientY-r.top,w:r.width,h:r.height};
+}
+function pixelNaTela(v3){
+  const p=v3.clone().project(camera),el=renderer.domElement,r=el.getBoundingClientRect();
+  const x=(p.x+1)/2*el.clientWidth,y=(1-p.y)/2*el.clientHeight;
+  return deitado()?{x:r.right-y,y:r.top+x}:{x:r.left+x,y:r.top+y};
+}
+/* O OrbitControls também lê o dedo em tela e arrastaria no eixo trocado: deitado, a
+   rotação passa a ser feita aqui. A pinça de zoom continua com ele — distância
+   entre dois dedos não muda com o giro. */
+const esfera=new THREE.Spherical();let girandoCamera=null;
+function giraCamera(dx,dy){
+  esfera.setFromVector3(camera.position.clone().sub(controls.target));
+  esfera.theta-=dx*.006;
+  esfera.phi=Math.max(.08,Math.min(Math.PI-.08,esfera.phi-dy*.006));
+  camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(esfera));
+  camera.lookAt(controls.target);
+}
+function ajustaOrientacao(){controls.enableRotate=!deitado();}
+EM_PE.addEventListener('change',ajustaOrientacao);ajustaOrientacao();
+renderer.domElement.addEventListener('pointerdown',e=>{if(deitado()&&e.isPrimary&&!pointer)girandoCamera={id:e.pointerId,x:e.clientX,y:e.clientY};});
+renderer.domElement.addEventListener('pointermove',e=>{
+  if(!girandoCamera||e.pointerId!==girandoCamera.id)return;
+  giraCamera(e.clientY-girandoCamera.y,-(e.clientX-girandoCamera.x));
+  girandoCamera.x=e.clientX;girandoCamera.y=e.clientY;
+});
+['pointerup','pointercancel'].forEach(t=>renderer.domElement.addEventListener(t,()=>{girandoCamera=null;}));
+
+function pick(event){const p=pontoLocal(renderer.domElement,event);mouse.set(p.x/p.w*2-1,-(p.y/p.h)*2+1);raycaster.setFromCamera(mouse,camera);return raycaster.intersectObjects(beads)[0]?.object;}
 renderer.domElement.addEventListener('pointerdown',event=>{if(!event.isPrimary||event.button!==0)return;const bead=pick(event);if(!bead)return;event.stopImmediatePropagation();controls.enabled=false;stopDemo();pointer={id:event.pointerId,bead,x:event.clientX,y:event.clientY};renderer.domElement.setPointerCapture(event.pointerId);renderer.domElement.style.cursor='grabbing';},true);
-renderer.domElement.addEventListener('pointermove',event=>{if(pointer){if(event.pointerId===pointer.id)dragGuide=Math.max(-.1,Math.min(.1,(event.clientX-pointer.x)*.002));return;}renderer.domElement.style.cursor=pick(event)?'grab':'default';});
+renderer.domElement.addEventListener('pointermove',event=>{if(pointer){if(event.pointerId===pointer.id)dragGuide=Math.max(-.1,Math.min(.1,(deitado()?event.clientY-pointer.y:event.clientX-pointer.x)*.002));return;}renderer.domElement.style.cursor=pick(event)?'grab':'default';});
 // Projeta a haste na tela para o arraste continuar correto atrás ou acima do modelo.
 function dragAlongRod(bead,event,x,y){
   const world=bead.getWorldPosition(new THREE.Vector3());
@@ -428,10 +560,30 @@ inicia(dt=>{
   if(celebrationTime>0){celebrationTime-=dt;if(celebrationTime<=0)$('arena').classList.remove('won');}
 });
 // Gancho de leitura para verificar a mecânica e a posição real das peças na tela.
-window.__binario={estado:()=>({digits:[...state],binary:state.join(''),total:total(),mode,target:TARGETS[challengeIndex],challengeIndex,solved,xp:earned,completed,demoRunning}),pixels:()=>({beads:beads.map(bead=>({...pixelDe(bead.getWorldPosition(new THREE.Vector3())),row:bead.userData.row,index:bead.userData.index})),frame:[[-2.05,.0,0],[2.05,9.1,0]].map(p=>pixelDe(new THREE.Vector3(...p)))})};
+window.__binario={estado:()=>({digits:[...state],binary:state.join(''),total:total(),mode,target:TARGETS[challengeIndex],challengeIndex,solved,xp:earned,completed,demoRunning}),pixels:()=>({beads:beads.map(bead=>({...pixelNaTela(bead.getWorldPosition(new THREE.Vector3())),row:bead.userData.row,index:bead.userData.index})),frame:[[-2.05,.0,0],[2.05,9.1,0]].map(p=>pixelNaTela(new THREE.Vector3(...p)))})};
 const compactEmbed=matchMedia('(max-width:700px) and (max-height:540px)');
 function adaptEmbed(){if(window.parent!==window&&compactEmbed.matches)setMode('free');}
 compactEmbed.addEventListener('change',adaptEmbed);adaptEmbed();
+/* Os controles no telefone (receita em _padrao-deitado.md). MOVER, nunca clonar:
+   os ouvintes foram ligados por id. Guarda de onde cada bloco veio pra devolver
+   intacto quando a tela crescer. A soma continua flutuando na arena, fora do menu. */
+const noTelefone=matchMedia('(max-width:700px)');
+const gaveta=$('arenaMenu'),btnOpcoes=$('btnOpcoes'),linha=$('menuLinha'),placar=document.querySelector('.scoreboard');
+const deOndeVeio=sel=>{const no=document.querySelector(sel);return{no,pai:no.parentNode,depois:no.nextSibling};};
+const naLinha=['.utility-buttons','.level-chip'].map(deOndeVeio);
+const naGaveta=['.mode-switch','.challenge','#digitControls'].map(deOndeVeio);
+function abreOpcoes(abrir){gaveta.hidden=!abrir;btnOpcoes.setAttribute('aria-expanded',String(abrir));$('arena').classList.toggle('menu-aberto',abrir);}
+function arrumaOpcoes(){
+  if(noTelefone.matches){naLinha.forEach(g=>linha.appendChild(g.no));naGaveta.forEach(g=>gaveta.appendChild(g.no));placar.hidden=true;}
+  else{[...naLinha,...naGaveta].forEach(g=>g.pai.insertBefore(g.no,g.depois));placar.hidden=false;abreOpcoes(false);}
+}
+btnOpcoes.addEventListener('click',()=>abreOpcoes(gaveta.hidden));
+/* Agiu na cena (ver exemplo, zerar, o botão do desafio): o menu sai da frente.
+   Trocar de modo e ligar bits mantém ele aberto — ali se dá mais de um toque. */
+gaveta.addEventListener('click',e=>{if(e.target.closest('#btnNext,.utility-buttons'))abreOpcoes(false);});
+document.addEventListener('click',e=>{if(!gaveta.hidden&&!e.target.closest('#arenaMenu,#btnOpcoes'))abreOpcoes(false);});
+noTelefone.addEventListener('change',arrumaOpcoes);arrumaOpcoes();
+
 renderState(false);clearTimeout(window.abacoLoadTimer);$('loading').hidden=true;$('aviso').hidden=true;
 </script>
 </body>

@@ -1,0 +1,214 @@
+# Transcricao automatica (faster-whisper small) - 12.0 min
+# Fonte: A escala do Transformer ao ChatGPT.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A escala, bom, para fazer uma retomada, etapa anterior terminou com aquela máquina
+[00:05] que é divinha o que a pessoa quer, né, sem ninguém pedir.
+[00:09] Isso, lendo o rastro dela, tipo, os cliques, o que ela deixava para trás.
+[00:14] Exato. E a grande pergunta que ficou no ar foi, e se desce para pedir, assim,
+[00:20] com as suas próprias palavras e a máquina responder.
+[00:23] Pois é, e essa etapa mostra exatamente como isso ficou possível, sabe.
+[00:27] Ah, só para avisar em que momento do tempo a gente está.
+[00:30] Esse episódio cobre de 2017 a 2022, em ordem, que são anos que se sobrepõem
+[00:37] com o fim da etapa 9 e com etapa 10 inteira.
+[00:40] É, foi tudo meio que aconteceu no junto.
+[00:42] Exatamente. E o foco aqui, gente, é construir, não vender.
+[00:45] Uhum, com certeza.
+[00:47] Então assim, sem histórias de empresa de sucesso, sem corrida de bilionários e sem sermões,
+[00:53] o assunto é um desenho de software que fica maior,
+[00:57] o texto que alimenta ele e a placa que roda ele.
+[01:00] É sobre estrutura pura, né?
+[01:03] É. Então guarda essa tese aqui.
+[01:06] O mesmo desenho de 2017, treinado só para adivinhar a próxima palavra,
+[01:10] ficou mil vezes maior em cinco anos.
+[01:14] O programa Chado melhora só de ficar maior,
+[01:17] e quem decide o tamanho é a placa e o dado, não o programador.
+[01:20] É, no fundo essa é a grande virada de chave de toda a história.
+[01:24] Bom, e a nossa explicação hoje acompanha uma página de animação com 12 telas.
+[01:29] Pra quem tá só ouvindo, fica tranquilo que acompanha normalmente.
+[01:33] Não quer de nada.
+[01:33] Nada. E quem tá com a página aberta aí é só virar a tela quando ouviu o pedido.
+[01:38] Então pra começar, aperte o próximo.
+[01:41] Então a gente volta pro dia 12 de junho de 2017.
+[01:46] Oito pesquisadores do Google publicam o paper Attention Is All You Need.
+[01:51] Ah, sim.
+[01:52] E o primeiro da lista que por sinal foi sorteada é o Ashish Vazhwani.
+[01:57] Ashish Vazhwani, nascido em 1986 na Índia, tinha 31 anos.
+[02:02] Estudou computação no Beats Marrow,
+[02:05] fez doutorado na Universidade do Sul da Califórnia
+[02:08] e estava no Google desde 2016,
+[02:10] vivo em 2026, quando levou a equipe da empresa que tinha fundado pra NVIDIA.
+[02:14] O é o curioso que o objetivo inicial ali deles era apenas traduzir.
+[02:19] Tipo, do inglês pro alemão, coisas assim.
+[02:21] Isso, só isso.
+[02:22] E aqui está a aposta.
+[02:24] Ninguém, assim, absolutamente ninguém sabia que esse desenho ia crescer pra conversar.
+[02:28] Sim, o paper fala de testar o modelo em imagem em áudio,
+[02:32] e não tipo num bate papo.
+[02:34] E o que a gente vê é que o software simplesmente toma a forma do hardware.
+[02:38] Ah, e tem um extra sobre isso.
+[02:40] Sobre como a atenção funciona por dentro, né?
+[02:42] Exato.
+[02:43] Aperte o próximo.
+[02:44] Bom, a tarefa literária, a regra de ouro do modelo é simples.
+[02:48] É só tapar a próxima palavra e adivinhar.
+[02:51] Mas, pera, como o texto já tem a resposta ali escondida,
+[02:54] funciona como um gabarito grátis, né?
+[02:56] Exatamente.
+[02:58] É por isso que dá pra treinar com a web inteira sem professor.
+[03:01] O texto corrige a máquina.
+[03:03] Só que a máquina lê pedazos de textos chamados tokens,
+[03:06] não palavras inteiras.
+[03:08] E também tem um extra sobre isso.
+[03:09] É um detalhe técnico, mas faz toda a diferença.
+[03:13] Mas, me tira uma dúvida.
+[03:14] Então essa tarefa nunca muda do menor ao maior modelo?
+[03:18] Não, não muda.
+[03:19] A tarefa é barata em gente e, bom, cara em placa de vídeo.
+[03:22] Faz sentido?
+[03:23] Aperte o próximo.
+[03:24] Aí a gente pula pra 11 de junho de 2018.
+[03:28] A OpenAI usa metade desse desenho que escreve.
+[03:31] Certo.
+[03:32] E eles treinam isso em mais de 7 mil livros inéditos.
+[03:36] Só lembrando que esse modelo tinha 117 milhões de peças.
+[03:41] E essas peças são os parâmetros, né?
+[03:44] Os números ajustáveis que a máquina aprende durante o treino.
+[03:48] Isso.
+[03:48] E ali estavam dois nomes-chave.
+[03:50] Alec Redford, nascido em 1993 no Texas, tinha 25 anos,
+[03:55] largou a faculdade o All in College em 2014 pra tocar a startup que tinha fundado
+[04:01] e entrou na OpenAI em 2016.
+[04:04] Vivo em 2026 pesquisando por conta própria depois de sair da OpenAI no fim de 2024.
+[04:10] E também o Ilha Sotskever.
+[04:12] Ah, sim.
+[04:13] Que a gente já falou na etapa da AlexNet.
+[04:15] Isso. Vivo em 2026, chefe da empresa que fundou em 2024.
+[04:20] O treinamento deles foi tipo usando a analogia da turma de quinta série.
+[04:25] Foi um mês treinando numa turma de oito placas de vídeo.
+[04:28] Tem até aquele documentário do The Guardian, o Ilha, de 2023.
+[04:32] Mas ó, é bom tomar cuidado porque foi montado depois do Chatipiti.
+[04:37] E só tem a voz dele sem contraditório.
+[04:40] Bem lembrado, aperte próximo.
+[04:41] Bom, pouco depois, em 11 de outubro de 2018, o Google lança o BERT.
+[04:47] E o BERT é a outra metade, a metade que lê pros dois lados.
+[04:51] E aqui entra o Jacob Devlin, fez mestrado na Universidade de Maryland,
+[04:55] levou o tradutor da Microsoft pra rede neural e entrou no Google em 2017.
+[05:00] A última notícia pública dele é de 2023, quando saiu pra OpenAI
+[05:05] e voltou pro Google em seis meses.
+[05:08] O modelo dele foi treinado em 16 TPUs por quatro dias.
+[05:12] É, um hardware diferente e sabe, o BERT tomou conta da busca do Google.
+[05:17] Mas o GPT, por ser a metade que escreve pra frente, foi o que tomou conta desta história.
+[05:22] Pois é, cada um usou a placa que tinha na mão.
+[05:25] Exato. Aperte o próximo.
+[05:27] Aí, 14 de fevereiro de 2019, nasce o GPT 2.
+[05:32] O salto é imenso.
+[05:34] Foi pra 1 bilhão e 500 milhões de peças, né?
+[05:37] Sim, e treinado com 8 milhões de páginas, uns 40 GB de texto.
+[05:42] Caramba! E o doido é que o modelo fez resumos e traduções sem ninguém ensinar.
+[05:46] Só que a OpenAI não liberou o modelo completo, alegando preocupação com usos maliciosos.
+[05:51] É, isso levanta a aposta da época.
+[05:54] Ninguém sabia se era um cuidado genuíno ou se era um exagero.
+[05:57] Mas o fato é que foi a primeira vez que o modelo foi tratado como risco real.
+[06:01] Com certeza.
+[06:02] Aperte o próximo.
+[06:03] Então, em 23 de janeiro de 2020, 10 pesquisadores da OpenAI decidem medir o erro do modelo.
+[06:11] Jared Kaplan, físico, estudou em Stanford, fez doutorado em Harvard e dava aula na Johns Hopkins desde 2012.
+[06:20] Em 2026, estava na Anthropoc, empresa que ajudou a fundar em 2021, como chefe de ciência.
+[06:27] E o Dario Amodei, nascido em 1983 em São Francisco, filho de uma artesão de coro italiano e de uma gerente de obras de bibliotecas,
+[06:38] tinha 36 anos, estudou física em Stanford e fez doutorado em biofísica em Princeton.
+[06:46] Era o chefe de pesquisa da OpenAI, vivo em 2026, dirigindo a Anthropoc que fundou em 2021.
+[06:54] E o que eles descobriram lá?
+[06:55] O insight principal é que o erro cai em uma reta, assim, perfeita por sete ordens de grandeza.
+[07:02] E a grande virada de chave nisso é poder prever o resultado antes de gastar o dinheiro.
+[07:08] É tipo, o software avisa o hardware o que precisa.
+[07:11] Ai, quem está na página pode arrastar e testar isso na prática na tela.
+[07:15] É ver a matemática funcionando ao vivo.
+[07:17] Sensacional.
+[07:18] Aperte o próximo.
+[07:19] 28 de maio de 2020, chega o GPT-3, 175 bilhões de peças.
+[07:26] Uau, alimentado por 300 bilhões de pedaços de texto.
+[07:31] Uma força bruta.
+[07:32] Tom Brown, com mais 31 autores, estudou computação no MIT, fundou uma startup em 2011, entrou
+[07:41] na OpenAI em 2016 e chefeou a engenharia desse modelo.
+[07:46] Em 2016 estava na Anthropic, que ajudou a fundar cuidando da computação.
+[07:51] E o hardware que rodou tudo isso foi um cluster fornecido pela Microsoft.
+[07:56] Eles tinham acabado de anunciar com 285 mil núcleos de processador e 10 mil placas de vídeo.
+[08:04] Nossa.
+[08:04] Lembra da turma de Quinta série?
+[08:06] Então, passou da turma para a escola inteira.
+[08:09] Tem aquele filme, O Eternal U, de 2024, que fala dessa época.
+[08:13] Mas, bom, é bom dizer que tem um tom bem alarmista e uma montagem que foi bem contestada.
+[08:19] É, tem que ter um filtro.
+[08:20] E a aposta deles ali era gigante.
+[08:22] A conta era altíssima, o risco era sair algo 100 vezes mais caro e, no fim, só um pouco melhor.
+[08:28] Exato.
+[08:28] Um risco enorme.
+[08:30] Aperte próximo.
+[08:31] E aí a gente descobre a prática do modelo.
+[08:33] Ele traduzia e somava só lendo exemplos na pergunta.
+[08:36] O famoso fill shot, né?
+[08:38] Aprender pelo exemplo ali na hora dentro da pergunta.
+[08:42] O pessoal que está na página pode pausar agora e tentar fazer o exercício que está na tela.
+[08:46] E o mais bizarro, quando a gente volta para o raciocínio, é que a máquina infere a regra sozinha.
+[08:52] Ninguém foi lá e programou isso nela.
+[08:54] Simplesmente é merge.
+[08:56] Sim, por causa do tamanho.
+[08:57] Loucura.
+[08:58] Aperte o próximo.
+[08:59] Mas ali as coisas mudam em 29 de março de 2022.
+[09:04] A DeepMind entra na jogada com o modelo Chinchila.
+[09:07] Certo.
+[09:08] E eles cravam uma nova regra.
+[09:10] Se você dobrou o modelo, tem que dobrar o peisto.
+[09:13] Então um modelo de 70 bilhões de peças lendo 1 trilhão e 400 milhões de pedaços de texto
+[09:20] acabou ganhando do modelo de 280 bilhões.
+[09:23] Exatamente.
+[09:24] Varreu o modelo maior porque leu mais.
+[09:26] Jordan Hoffman com mais 21 autores, doutor em matemática por Harvard, saiu da DeepMind
+[09:33] em 2022, e a última notícia pública dele é de 2024 na Microsoft em Londres.
+[09:40] E aí tem um extra sobre isso, detalhando a reta e essa conta.
+[09:44] É aí que a placa de vídeo, as restrições físicas dela, voltaram a mandar no software
+[09:50] de vez.
+[09:51] Muito bom, aperte o próximo.
+[09:52] A gente entra na reta final.
+[09:54] O calendário aperta.
+[09:55] Em 29 de junho de 2021, a OpenAI solta o Kit Hub Copilot, rodando um modelo chamado
+[10:02] Codex.
+[10:03] O GPT 3.5 sai logo depois, treinado tanto em texto normal quanto em código de programação.
+[10:11] O último modelo dessa série base sai em 28 de novembro de 2022.
+[10:17] E dois dias depois.
+[10:18] Isso, em 30 de novembro de 2022, sai o Chat GPT, já ajustado a partir dessa série
+[10:25] 3.5.
+[10:26] Mas ó, tem um insight-chave aqui, seguir a instrução não vendo o tamanho do modelo.
+[10:32] Vem de gente, de humanos ensinando.
+[10:34] E isso é assunto do episódio 3, porque pra máquina no fim das contas, código é texto.
+[10:39] Sim, não tem diferença nenhuma pra ela.
+[10:41] Ah, e tem um extra sobre isso, sobre o Codex e o Copilot.
+[10:44] Aperte o próximo.
+[10:45] Bom, a gente para o episódio aqui no fim de 2022, porque o modelo já tá pronto
+[10:50] pra ser ensinado.
+[10:51] Fazendo uma rápida recapitulação das pessoas.
+[10:54] Vamos lá.
+[10:55] Vasvane desenhou.
+[10:56] Redford e Sudskiver treinaram.
+[10:59] O Devlin cortou o meio.
+[11:01] A OpenAI pegou e dobrou tudo.
+[11:03] O Kaplan e o Amodei me dirão um erro.
+[11:06] O Brown cresceu o tamanho de forma absurda.
+[11:09] E o Hoffman mostrou qual era o tamanho certo.
+[11:12] E um detalhe bem curioso.
+[11:14] Quatro dessas pessoas não tem nem ano de nascimento público.
+[11:17] E se a gente olhar pra onde eles foram em 2026, Vasvane tava na Invilha.
+[11:22] Redford, pesquisando por conta própria.
+[11:24] Kaplan, Amodei e Brown fundaram a Entropic, Sudskiver na sua própria empresa
+[11:30] e Devlin e Hoffman sem notícia pública recente.
+[11:32] Impressionante como isso espalhou.
+[11:34] E a lição que fica, pra resumir mesmo, são duas coisas.
+[11:38] O programa Chado melhora só de ficar maior.
+[11:41] E quem decide o tamanho é a placa e o dado.
+[11:44] Não o programador.
+[11:46] Se você parar pra pensar, o desenho de 2017 não mudou.
+[11:49] Mudou o galpão em volta dele.
+[11:52] A reta diz quanto modelo precisa.
+[11:55] Quem constrói o galpão que cabe isso?

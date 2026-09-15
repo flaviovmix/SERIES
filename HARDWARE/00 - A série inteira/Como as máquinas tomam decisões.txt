@@ -1,0 +1,7 @@
+Titulo: Como as máquinas tomam decisões
+Notebook: 00-A serie inteira
+
+Descricao:
+A série Hardware - A Serie Inteira apresenta o processo de construção de um sistema de controle automático para uma caixa d'água capaz de operar de forma autônoma. O projeto é dividido em cinco etapas progressivas que ensinam desde a instalação do microcontrolador e sensores básicos até a criação de uma placa de circuito impresso profissional. Através de simuladores online, o conteúdo demonstra como monitorar níveis de água, utilizar comunicação sem fio e integrar dispositivos à internet sem a necessidade de compra de componentes físicos. O objetivo central é desmistificar o funcionamento de aparelhos eletrônicos cotidianos, utilizando o Arduino e o ESP32 como ferramentas práticas de aprendizado. Ao final da jornada, o protótipo evolui de um conjunto de fios para um sistema completo com interface digital e conectividade remota.
+
+Link: https://notebooklm.google.com/notebook/dc6951c7-e812-4cad-9865-47bf86889168

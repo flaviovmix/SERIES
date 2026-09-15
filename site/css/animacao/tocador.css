@@ -1,101 +1,90 @@
 /* tocador
-   O tocador do episodio, desenhado por cima de um <audio> sem controles: capa, titulo, saltos de 15s, play, a barra com uma marca por tela e o tempo. Depende de animacao/tokens.css e mora dentro de .topo (cabecalho.css).
+   O tocador do episodio, desenhado por cima de um <audio> sem controles.
+   Depende de animacao/tokens.css. Mora na parte de BAIXO da tela, entre o palco
+   e a navegacao (08/09/2026): antes ele dividia a barra de cima com o menu e o
+   modelo 3D, e ali o titulo cabia cortado e sumia inteiro abaixo de 1000px.
 
-   A caixa branca e o que separa o tocador da barra. A barra tem as marcas das
-   telas, que um tocador comum nao pode ter: aqui a gente sabe onde a tela vira. */
+   Tres faixas, no desenho NOVO do player do Nexus (redesenho de 09/09 la, trazido
+   pra ca no mesmo dia):
+     em cima    a capa, numa coluna inteira a esquerda, e o nome do episodio
+     no meio    a linha do tempo, ao lado da capa, com uma marca por tela
+     embaixo    a fileira de controles ATRAVESSANDO a barra inteira: a marcha no
+                canto esquerdo, os saltos e o play no centro da largura toda, e o
+                relogio no canto direito
+
+   O play no centro da barra (e nao no centro do que sobra da capa) e o que muda
+   de verdade em relacao ao desenho anterior. Os saltos viraram voltar 10 e
+   avancar 30, como no Nexus: sao os dois gestos de quem ouve, e nao a mesma
+   distancia nos dois sentidos.
+
+   O HTML tem quatro filhos com lugar marcado (capa, id, barra, controles); os
+   controles trazem dentro a marcha, o transporte e o relogio.
+
+   No DESKTOP (11/09) as tres faixas viram duas linhas finas (o nome em cima, os
+   controles embaixo) e o tocador.js poe elas numa faixa propria logo abaixo da
+   barra de cima, na ponta esquerda; os blocos do fim da folha cuidam disso. As
+   tres faixas, embaixo do palco, ficam pro telefone. */
 
 .tocador {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "capa titulo"
+    "capa barra"
+    "controles controles";
   align-items: center;
-  gap: 12px;
-  flex: 1 1 420px;
-  max-width: 820px;
-  margin: 0 auto;
+  gap: 6px 10px;
+  /* a coluna do palco, pra o tocador nascer alinhado com o conteudo */
+  margin: 0 max(18px, calc((100% - var(--largura)) / 2)) 10px;
   /* a barra de cima impoe caixa alta espacada; o tocador nao e barra */
   text-transform: none;
   letter-spacing: normal;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 4px 12px 4px 4px;
+  border-radius: 14px;
+  padding: 10px 14px;
   box-shadow: 0 1px 0 var(--line), 0 10px 26px -20px rgba(0, 0, 0, .35);
 }
+
+/* o <audio> so toca; sem isto ele ocuparia uma celula do grid */
+.tocador audio { display: none; }
+
+/* ---- em cima: a capa e o nome ---- */
+
+/* a capa acompanha as duas faixas de cima, a do nome e a da barra */
 .tocador__capa {
-  width: 32px;
-  height: 32px;
-  border-radius: 7px;
+  grid-area: capa;
+  align-self: start;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
   object-fit: cover;
-  flex: none;
   border: 1px solid var(--line);
 }
-.tocador__id { min-width: 0; flex: 0 1 240px; }
+.tocador__id {
+  grid-area: titulo;
+  min-width: 0;
+}
+/* o nome inteiro, quebrando linha: com reticencias nao dava pra saber que
+   episodio estava no ar, e era ele o primeiro a sumir quando a tela apertava */
 .tocador__titulo {
-  font-family: var(--fonte-animacao);
-  font-size: 13.5px;
+  font-family: var(--fonte-leitura);
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.25;
   color: var(--ink);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.tocador__fonte {
-  font-family: var(--fonte-mono);
-  font-size: 9.5px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-top: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
 }
 
-/* os saltos de 15s e o play */
-.tocador__salto {
-  flex: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--ink-soft);
-  font-size: 15px;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  padding: 6px;
-  border-radius: 8px;
-  transition: color .2s, background .2s;
-}
-.tocador__salto b { font-family: var(--fonte-mono); font-size: 9px; font-weight: 600; }
-.tocador__salto:hover { color: var(--accent); background: var(--surface-alt); }
-.tocador__play {
-  flex: none;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background: var(--accent);
-  color: var(--ground);
-  font-size: 15px;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 2px;
-  transition: transform .2s var(--ease), filter .2s;
-  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, .5);
-}
-.tocador__play.tocando { padding-left: 0; font-size: 13px; letter-spacing: 1px; }
-.tocador__play:hover { transform: scale(1.06); filter: brightness(1.15); }
+/* ---- no meio: a barra ---- */
 
-/* a barra: o indice do episodio, com uma marca por tela. A barra e o alvo de
-   clique e de teclado (role=slider); as marcas sao so desenho, e clicar em cima
-   de uma leva pro trecho dela porque a barra sabe onde ela esta */
+/* a barra: o indice do episodio, com uma marca por tela (a da tela 1 no comeco)
+   e mais uma no fim, a da tela de fim. A barra e o alvo de clique e de teclado
+   (role=slider); as marcas sao so desenho, e clicar em cima de uma leva pro
+   trecho dela porque a barra sabe onde ela esta */
 .tocador__barra {
+  grid-area: barra;
   position: relative;
-  flex: 1 1 auto;
   min-width: 80px;
   height: 22px;
   cursor: pointer;
@@ -143,31 +132,471 @@
 }
 .tocador__marca:hover::after { background: var(--accent-vivo); height: 16px; }
 .tocador__marca.aqui::after { background: var(--ink); height: 16px; }
+
+/* ---- embaixo: a fileira que atravessa ---- */
+
+/* as tres colunas iguais em volta do transporte sao o que poe o play no centro
+   da barra: a marcha e o relogio empurram um contra o outro */
+.tocador__controles {
+  grid-area: controles;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  margin-top: 2px;
+}
+.tocador__transporte {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* os saltos: sao o que mais se aperta ouvindo, e o numero mora DENTRO da seta,
+   como em app de podcast. A seta e DESENHO (svg por mask, na cor do botao), nao
+   o glifo ↺ do HTML: como texto, a fonte do telefone desenhava ela miuda e o
+   numero por cima virava um rabisco (ele viu em 10/09). O glifo continua no
+   HTML das 29 paginas, so que com font-size zero. */
+.tocador__salto {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-size: 0;
+  line-height: 1;
+  border-radius: 50%;
+  transition: color .2s, background .2s;
+}
+.tocador__salto::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8'/%3E%3Cpath d='M3 3v5h5'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8'/%3E%3Cpath d='M3 3v5h5'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+/* avancar e a mesma seta espelhada */
+.tocador__salto[data-salto="30"]::before { transform: scaleX(-1); }
+.tocador__salto b {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  font-family: var(--fonte-mono);
+  font-size: 13px;
+  font-weight: 700;
+}
+.tocador__salto:hover { color: var(--accent); background: var(--surface-alt); }
+
+.tocador__play {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--accent);
+  color: var(--ground);
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* o triangulo tem peso visual a esquerda; 2px recentralizam */
+  padding-left: 2px;
+  transition: transform .2s var(--ease), filter .2s;
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, .5);
+}
+.tocador__play.tocando { padding-left: 0; font-size: 17px; letter-spacing: 1px; }
+.tocador__play:hover { transform: scale(1.06); filter: brightness(1.15); }
+
+/* a marcha, na pilula do player do Nexus, no canto esquerdo. tabular-nums pra
+   "1x" e "1.25x" nao mudarem a largura do botao a cada toque */
+.tocador__velocidade {
+  justify-self: start;
+  min-width: 46px;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: none;
+  color: var(--ink-soft);
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: color .2s, background .2s, border-color .2s;
+}
+.tocador__velocidade:hover { color: var(--accent); border-color: var(--accent); background: var(--surface-alt); }
+
 .tocador__tempo {
+  justify-self: end;
+  /* com os saltos grandes, no 384 o relogio quebrava em duas linhas */
+  white-space: nowrap;
   font-family: var(--fonte-mono);
   font-size: 11px;
   color: var(--ink-soft);
-  flex: none;
   letter-spacing: .04em;
 }
 
 /* ---- apertos, no fim da folha de proposito ---- */
 
-/* sem largura pras tres partes da barra, o titulo e o primeiro a sair */
-@media (max-width: 1000px) {
-  .tocador__id { display: none; }
-  .tocador { gap: 10px; }
-}
-
-/* mais estreito, o tocador desce sozinho pra segunda linha da barra */
-@media (max-width: 820px) {
-  .tocador { order: 3; flex: 1 1 100%; max-width: none; margin: 2px 0 0; }
-}
-
-/* tela baixa */
+/* tela baixa: o tocador cede altura pro palco, que e o que se olha */
 @media (max-height: 820px) {
-  .tocador { padding: 3px 10px 3px 3px; gap: 9px; }
-  .tocador__capa { width: 28px; height: 28px; }
-  .tocador__play { width: 29px; height: 29px; font-size: 12px; }
-  .tocador__titulo { font-size: 12.5px; }
+  .tocador { padding: 8px 12px; gap: 5px 9px; }
+  .tocador__capa { width: 44px; height: 44px; }
+  .tocador__titulo { font-size: 13.5px; }
+  .tocador__salto { width: 44px; height: 44px; }
+  .tocador__salto b { font-size: 12px; }
+  .tocador__play { width: 46px; height: 46px; font-size: 18px; }
+}
+
+/* telefone */
+@media (max-width: 700px) {
+  .tocador { margin: 0 12px 8px; padding: 8px 10px; border-radius: 12px; }
+  .tocador__capa { width: 42px; height: 42px; }
+  .tocador__titulo { font-size: 13.5px; }
+  /* no telefone os saltos crescem de verdade (pedido dele): e o que o dedo procura */
+  .tocador__transporte { gap: 12px; }
+  .tocador__salto { width: 58px; height: 58px; }
+  .tocador__salto b { font-size: 15px; }
+  .tocador__play { width: 60px; height: 60px; font-size: 22px; }
+}
+
+/* ⚠️ 08/09: o relogio estoura a tela de 360px quando o audio passa de 10 minutos.
+   O ".tocador__tempo" cresce com o texto: em "0:00 / 21:57" cabe, em
+   "21:57 / 21:57" passa 3px. Ninguem tinha visto porque o qa-pagina.js nunca tocava o
+   audio; so apareceu quando virar a tela passou a mover o som. Tirar o espacamento entre
+   letras e baixar meio ponto recupera uns 8px, que sobra.
+   Este bloco fica no FIM do arquivo de proposito: media query nao tem especificidade. */
+@media (max-width: 420px) {
+  .tocador__tempo {
+    letter-spacing: 0;
+    font-size: 10.5px;
+  }
+  .tocador__barra { min-width: 60px; }
+  /* o botao da marcha cede largura antes da barra, que e o alvo de arrasto */
+  .tocador__velocidade { min-width: 40px; padding: 5px 6px; font-size: 10.5px; }
+  /* o telefone dele tem 384px e cai aqui: os saltos continuam grandes, cabe.
+     As laterais com o mesmo minimo mantem o play no centro mesmo com o relogio
+     mais largo que a marcha: 178 de transporte + 2 x 81 = 340, exato. */
+  .tocador__controles { grid-template-columns: minmax(80px, 1fr) auto minmax(80px, 1fr); gap: 0; }
+  .tocador__transporte { gap: 6px; }
+  .tocador__salto { width: 56px; height: 56px; }
+  .tocador__salto b { font-size: 15px; }
+  .tocador__play { width: 56px; height: 56px; font-size: 21px; }
+  .tocador__tempo { font-size: 10px; }
+}
+
+/* 360px (medido em 10/09): a fileira tem 314 e, com os saltos de 56, as colunas
+   somavam 340 — o excesso vazava pra direita e o play saia 13px do centro. Aqui
+   o transporte cede 12px e as laterais aceitam 72, que e o relogio: 168 + 2 x 73. */
+@media (max-width: 370px) {
+  .tocador__controles { grid-template-columns: minmax(72px, 1fr) auto minmax(72px, 1fr); }
+  .tocador__salto { width: 52px; height: 52px; }
+  .tocador__salto b { font-size: 14px; }
+  .tocador__play { width: 52px; height: 52px; font-size: 20px; }
+}
+
+/* desktop: o tocador vira UMA faixa fina (11/09, ele: "o play de audio ta muito
+   grande"). As tres faixas empilhadas comiam uns 140px da altura do palco pra
+   mostrar o que cabe numa linha: capa, nome, os saltos com o play, a barra, o
+   relogio e a marcha, lado a lado. A fileira de controles se desfaz (display:
+   contents) e os tres filhos dela ganham lugar proprio na linha. O telefone fica
+   com as tres faixas e os saltos grandes: la o dedo precisa deles.
+   No fim da folha de proposito: tem que ganhar do aperto de tela baixa acima. */
+@media (min-width: 821px) {
+  .tocador {
+    grid-template-columns: auto minmax(0, 16rem) auto minmax(80px, 1fr) auto auto;
+    grid-template-areas: "capa titulo transporte barra tempo velocidade";
+    gap: 0 16px;
+    padding: 6px 14px;
+  }
+  .tocador__controles { display: contents; }
+  .tocador__transporte { grid-area: transporte; gap: 4px; }
+  .tocador__tempo { grid-area: tempo; }
+  .tocador__velocidade { grid-area: velocidade; }
+  .tocador__capa { width: 40px; height: 40px; align-self: center; }
+  .tocador__titulo { font-size: 13.5px; }
+  .tocador__salto { width: 38px; height: 38px; }
+  .tocador__salto b { font-size: 11px; }
+  .tocador__play { width: 42px; height: 42px; font-size: 16px; }
+  .tocador__play.tocando { font-size: 14px; }
+}
+
+/* desktop: o tocador mora numa FAIXA PROPRIA logo abaixo da barra de cima, na
+   ponta esquerda da tela (11/09). Foi o terceiro lugar do dia: primeiro ele subiu
+   pra dentro da barra ("leva o play pra barra de navegacao, pra sobrar mais espaco
+   na tela"), depois ficou bem menor, e por fim ele marcou o lugar num print,
+   embaixo da barra e na esquerda: "eu so quero ele aqui".
+   Quem muda o no de lugar e o tocador.js, que poe ele logo depois do .topo (por
+   isso o seletor e o de irmao colado); aqui ele perde a cara de cartao e fica no
+   tamanho compacto que tinha dentro da barra, em duas linhas. A faixa tira uns
+   66px da altura do palco. Fora da barra ele nao divide a linha com o voltar nem com o botao do 3D,
+   entao o nome do episodio cabe em qualquer largura de desktop. */
+@media (min-width: 821px) {
+  .topo + .tocador {
+    flex: none;   /* o body e uma coluna flex: quem estica na altura e o palco */
+    width: min(44rem, 100% - 36px);
+    margin: 0 0 0 18px;   /* a folga minima da barra de cima */
+    padding: 6px 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    /* duas linhas (11/09, ele: "coloca embaixo", com a seta dos controles pra baixo
+       do nome): o nome em cima, os controles embaixo dele, e a capa na esquerda
+       ocupando as duas, como no telefone. Com a linha so dele o nome cabe inteiro,
+       e a barra do audio fica mais comprida */
+    grid-template-columns: auto auto minmax(60px, 1fr) auto auto;
+    grid-template-areas:
+      "capa titulo titulo titulo titulo"
+      "capa transporte barra tempo velocidade";
+    gap: 4px 10px;
+  }
+  .topo + .tocador .tocador__capa { width: 52px; height: 52px; }
+  .topo + .tocador .tocador__titulo {
+    font-size: 12.5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .topo + .tocador .tocador__salto { width: 30px; height: 30px; }
+  .topo + .tocador .tocador__salto b { font-size: 9.5px; }
+  .topo + .tocador .tocador__play { width: 34px; height: 34px; font-size: 13px; }
+  .topo + .tocador .tocador__play.tocando { font-size: 11px; }
+  .topo + .tocador .tocador__tempo { font-size: 10.5px; letter-spacing: 0; }
+  .topo + .tocador .tocador__velocidade { min-width: 38px; padding: 3px 7px; font-size: 10px; }
+}
+
+/* telefone: o tocador se recolhe quando o audio comeca (14/09, pedido dele: "ele ai o
+   tempo todo atrapalha") e a paginacao do rodape vai junto ("pode colocar a paginacao pra
+   ir junto"); uma seta no canto de baixo traz os dois de volta. Quem liga e desliga as
+   classes nos dois e o tocador.js:
+     .recolhe--descendo   desce e apaga, em 300ms (o mesmo tempo do JS)
+     .recolhe--guardado   sai do fluxo: o palco ganha a altura deles
+   Com o nome do bloco na frente de proposito: o .navegacao { display:flex } do telas.css
+   tem a mesma forca e ganharia do display:none se a ordem das folhas mudasse.
+   No desktop o tocador e a faixa fina embaixo da barra, o rodape nem aparece e nada recolhe. */
+@media (max-width: 820px) {
+  .tocador,
+  .navegacao,
+  .painel-abas,
+  .painel-extras,
+  .painel-filmes { transition: transform .3s var(--ease), opacity .3s ease; }
+  .tocador.recolhe--descendo,
+  .navegacao.recolhe--descendo,
+  .painel-abas.recolhe--descendo,
+  .painel-extras.recolhe--descendo,
+  .painel-filmes.recolhe--descendo { transform: translateY(28px); opacity: 0; pointer-events: none; }
+  .tocador.recolhe--guardado,
+  .navegacao.recolhe--guardado,
+  .painel-abas.recolhe--guardado,
+  .painel-extras.recolhe--guardado,
+  .painel-filmes.recolhe--guardado { display: none; }
+  /* a lista da guia que nao esta a mostra (o tocador.js troca a classe ao tocar nas
+     guias); o tocador e a paginacao ficam sempre a mostra, embaixo */
+  .painel-extras.painel-oculto,
+  .painel-filmes.painel-oculto { display: none; }
+}
+
+/* ---- as guias do painel (telefone), no desenho do TabBar do Nexus ---- */
+
+/* itens sublinhados numa linha de base; o ativo acende na cor de destaque e engorda.
+   Alinhadas com o cartao do tocador (a mesma margem de 12px). So existem quando o
+   episodio promete extras (tocador.js) */
+.painel-abas {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  margin: 0 12px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.painel-abas__guia {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;   /* nunca quebra: o sublinhado desencontraria do texto */
+  padding: 6px 2px 8px;
+  margin-bottom: -1px;   /* o sublinhado do ativo cai em cima da linha de base */
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--ink-faint);
+  font-family: var(--fonte-leitura);
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.painel-abas__guia:hover { color: var(--ink); }
+.painel-abas__guia--ativa { color: var(--ink); font-weight: 700; border-bottom-color: var(--accent); }
+/* quantos extras, do lado do nome da guia */
+.painel-abas__conta {
+  font-family: var(--fonte-mono);
+  font-size: .68rem;
+  font-weight: 500;
+  color: var(--ink-faint);
+}
+
+/* as duas listas (extras e filmes): um cartao como o do tocador */
+.painel-extras,
+.painel-filmes {
+  margin: 0 12px 8px;
+  padding: 4px 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.painel-extras__lista,
+.painel-filmes__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* muitos itens (o 6.02 promete oito extras; a bolha tem seis filmes): rola por dentro.
+     Com a lista EM CIMA do tocador (14/09), o teto e o que sobra pro palco: a 38vh a
+     guia Filmes deixava 93px de palco num telefone de 688 */
+  max-height: 26vh;
+  overflow-y: auto;
+}
+
+/* a guia sem item avisa, em vez de sumir: as duas guias existem em todo episodio */
+.painel-vazio {
+  margin: 0;
+  padding: 14px 10px;
+  font-family: var(--fonte-leitura);
+  font-size: .9rem;
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+/* um filme: o titulo com o ano e o tipo numa linha, a nota (o que a obra distorce) e onde
+   assistir. Separados por uma linha fina, como os itens do menu */
+.painel-filmes__item {
+  padding: 10px 8px;
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--fonte-leitura);
+}
+.painel-filmes__item:first-child { border-top: 0; }
+.painel-filmes__cabeca {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+}
+.painel-filmes__titulo { font-size: .95rem; font-weight: 700; color: var(--ink); }
+.painel-filmes__ano { font-family: var(--fonte-mono); font-size: .74rem; color: var(--ink-faint); }
+/* o tipo e a informacao que a regra da serie exige: nunca vago. Pilula de traco */
+.painel-filmes__tipo {
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-family: var(--fonte-mono);
+  font-size: .58rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.painel-filmes__nota {
+  margin: 5px 0 0;
+  font-size: .84rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+.painel-filmes__onde {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--fonte-mono);
+  font-size: .7rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+}
+.painel-filmes__onde::before { content: "▶ "; font-size: .6rem; }
+a.painel-filmes__onde { color: var(--accent); }
+a.painel-filmes__onde:hover { text-decoration: underline; }
+.painel-extras__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: var(--ink);
+  font-family: var(--fonte-leitura);
+  font-size: .92rem;
+  line-height: 1.3;
+  text-decoration: none;
+}
+a.painel-extras__item::after { content: "→"; color: var(--ink-faint); }
+a.painel-extras__item:hover { background: var(--surface-alt); color: var(--accent); }
+.painel-extras__item--cinza { color: var(--ink-faint); }
+.painel-extras__num {
+  flex: none;
+  min-width: 2ch;
+  font-family: var(--fonte-mono);
+  font-size: .74rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-faint);
+}
+.painel-extras__nome { flex: 1; min-width: 0; }
+.painel-extras__selo {
+  flex: none;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-family: var(--fonte-mono);
+  font-size: .58rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+/* no desktop nao ha painel: o tocador e a faixa e as listas estao na tela de fim */
+@media (min-width: 821px) {
+  .painel-abas,
+  .painel-extras,
+  .painel-filmes { display: none; }
+}
+
+/* a seta: um quadrado escuro e translucido no canto de baixo, como no print dele. O
+   tocador.js acerta o bottom (no canto da tela com tudo guardado, logo acima do tocador
+   aberto). Fica por cima do palco e do rodape (z-index 1 e 2) e por baixo do lightbox
+   (60) e do menu (150) */
+.tocador-alca {
+  position: fixed;
+  right: 14px;
+  bottom: 16px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(17, 22, 26, .78);
+  color: #c3ccd3;
+  cursor: pointer;
+  box-shadow: 0 6px 18px -8px rgba(0, 0, 0, .6);
+  -webkit-tap-highlight-color: transparent;
+}
+.tocador-alca[hidden] { display: none; }
+/* a ponta: duas bordas de um quadrado girado. Pra cima com o tocador guardado, pra
+   baixo com ele aberto; o translate acerta a tinta no centro do botao */
+.tocador-alca::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: 2.5px solid currentColor;
+  border-left: 2.5px solid currentColor;
+  transform: translateY(3px) rotate(45deg);
+  transition: transform .25s ease;
+}
+.tocador-alca--aberta::before { transform: translateY(-3px) rotate(225deg); }
+@media (min-width: 821px) {
+  .tocador-alca { display: none; }
 }

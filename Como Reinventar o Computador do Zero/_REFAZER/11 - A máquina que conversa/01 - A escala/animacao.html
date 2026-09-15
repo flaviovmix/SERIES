@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A escala — Etapa 11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 11-01, nascido do _molde-animacao.html em 10/09/2026. Doze telas narradas
+     (onze pedidos de Proximo), na ordem do _telas.md da v3 (12 telas; o audio disse
+     "aperte proximo" sem o "o" em 04:40 e 08:30, e a tabela foi corrigida a mao); a tela
+     de fim e da base. As duas praticas (a reta das leis de escala e o exemplo dentro da
+     pergunta) moram em escala.css / escala.js ao lado; os marcadores em episodio.js. -->
+<link rel="stylesheet" href="../../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/base.css">
+<link rel="stylesheet" href="../../../../site/css/menu.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="escala.css">
+</head>
+<body>
+
+<header class="topo">
+</header>
+
+<main>
+
+  <!-- 1 · capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">a máquina que conversa · episódio 01 · o mesmo desenho, mil vezes maior</div>
+      <h1 class="reveal">A escala</h1>
+      <p class="lede reveal">De <b>2017 a 2022</b>, em ordem e com as pessoas. A etapa 9 fechou o arco da máquina no Transformer de 2017; a etapa 10 deixou a rede cheia de texto, e as placas que o feed pagou. Este episódio junta as duas pontas: <b>o que acontece quando o mesmo desenho de 2017 fica mil vezes maior.</b> Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>O desenho é o Transformer, de junho de 2017.</b> Ele nasceu pra traduzir. Cinco anos depois, o mesmo desenho, com mil vezes mais peças e mil vezes mais texto, é a base do que explode em novembro de 2022.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/datacenter-real.jpg" alt="Corredor de centro de dados com fileiras de racks dos dois lados">
+      <figcaption>Escala é isto: fileiras de máquinas fazendo a mesma conta · foto: Carl Lender, CC BY 2.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 · 2017: o paper -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">12 de junho de 2017 · Google</div>
+      <h2 class="reveal">Attention is All You Need</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o paper</div><div class="texto">oito autores do Google, <b>Ashish Vaswani</b> na frente. O objetivo declarado era traduzir, do inglês pro alemão e pro francês. O desenho dispensa a fila: olha o texto inteiro de uma vez, e por isso cabe na placa de vídeo, que é o que o 9.04 contou</div></div>
+        <div class="item reveal"><div class="rotulo">a ficha</div><div class="texto">Vaswani nasceu em 1986 na Índia, estudou computação no BIT Mesra e fez o doutorado na Universidade do Sul da Califórnia. Estava no Google Brain desde 2016; saiu em 2021, fundou duas empresas, e em junho de 2026 levou a equipe da segunda pra Nvidia</div></div>
+        <div class="item reveal"><div class="rotulo">o que o paper não previu</div><div class="texto">o texto termina dizendo que querem testar o desenho em outras tarefas, com imagem, áudio e vídeo. <b>Não diz que o mesmo desenho, maior, serviria pra conversar.</b> Ninguém sabia</div></div>
+      </div>
+      <p class="lede reveal">Em 2017 ele era um jeito melhor de traduzir, entre vários. <b>A trilha conta a história; o mecanismo da atenção, passo a passo, fica pra um extra.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O desenho de 2017: o codificador, à esquerda, lê; o decodificador, à direita, escreve · diagrama: Yuening Jia, CC BY-SA 3.0">
+        <span class="selo">imagem real</span>
+        <img src="img/transformer-169.png" alt="Diagrama da arquitetura do Transformer, com os blocos do codificador à esquerda e do decodificador à direita">
+        <figcaption>O desenho de 2017: a metade que lê e a metade que escreve · diagrama: Yuening Jia, CC BY-SA 3.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 · a tarefa -->
+  <section class="step step--cena">
+    <div class="kicker reveal">o exercício · sem professor</div>
+    <h2 class="reveal">Tapar a próxima palavra</h2>
+    <div class="cena cena--uma reveal">
+      <figure class="clicavel" data-abre="foto" data-legenda="Qualquer texto serve de exercício: tapa-se a próxima palavra e a máquina chuta · página de Alice no País das Maravilhas, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/livro-real.jpg" alt="Página impressa de um livro antigo em inglês, com o texto corrido">
+        <figcaption>Qualquer página serve de exercício: tapa-se a próxima palavra e a máquina chuta · página de Alice no País das Maravilhas, CC0</figcaption>
+      </figure>
+    </div>
+    <p class="lede reveal">A tarefa é uma só: dado o começo, <b>qual é a próxima palavra?</b> O texto já traz a resposta, então não precisa de ninguém corrigindo: cada frase de cada livro vira um exercício com gabarito grátis. A máquina não lê palavras inteiras: corta o texto em pedaços, os <b>tokens</b>, e é um pedaço desses que ela adivinha.</p>
+    <div class="nota-cena reveal">tem um extra sobre o token: como o texto é cortado antes de a máquina ler</div>
+  </section>
+
+  <!-- 4 · 2018: GPT-1 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">11 de junho de 2018 · OpenAI, São Francisco</div>
+      <h2 class="reveal">GPT-1: lê livros, depois ajusta</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o modelo</div><div class="texto">117 milhões de parâmetros, doze camadas do desenho de 2017, só a metade que escreve pra frente. Treinado em mais de sete mil livros inéditos, e depois ajustado com poucos exemplos pra cada tarefa</div></div>
+        <div class="item reveal"><div class="rotulo">a ficha</div><div class="texto"><b>Alec Radford</b> assina na frente. Nasceu em 1993 no Texas; largou o Olin College, em Massachusetts, em 2014 pra tocar a startup que fundou na faculdade, e entrou na OpenAI em 2016. Saiu no fim de 2024; em 2026 pesquisava por conta própria</div></div>
+        <div class="item reveal"><div class="rotulo">o hardware</div><div class="texto">oito placas de vídeo durante um mês. É a turma de quinta série do 9.02, ainda pequena</div></div>
+      </div>
+      <p class="lede reveal"><b>Ilya Sutskever</b>, o da AlexNet do 9.03, assina junto. A ideia: em vez de ensinar uma tarefa por vez, <b>deixar a máquina ler primeiro e ensinar a tarefa depois, com pouco.</b></p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Ilya Sutskever em 2014 · foto: Steve Jurvetson, CC BY 2.0">
+        <span class="selo">imagem real</span>
+        <img src="img/sutskever-rosto.jpg" alt="Ilya Sutskever de perfil, falando num evento">
+        <figcaption>Ilya Sutskever, que assina junto · foto: Steve Jurvetson, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5 · 2018: BERT -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">11 de outubro de 2018 · Google</div>
+      <h2 class="reveal">BERT lê nos dois sentidos</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o modelo</div><div class="texto">a outra metade do desenho de 2017, a que lê: adivinha palavras tapadas no meio do texto, olhando o que vem antes e o que vem depois. 340 milhões de parâmetros na versão grande</div></div>
+        <div class="item reveal"><div class="rotulo">a ficha</div><div class="texto"><b>Jacob Devlin</b> assina na frente. Mestrado na Universidade de Maryland; levou o tradutor da Microsoft pra rede neural antes de entrar no Google, em 2017. Em 2023 foi pra OpenAI e voltou ao Google em seis meses: é a última notícia pública dele</div></div>
+        <div class="item reveal"><div class="rotulo">o hardware</div><div class="texto">treinado em TPU, a peça do Google que o 9.04 apresentou: dezesseis TPUs por quatro dias na versão grande</div></div>
+      </div>
+      <p class="lede reveal"><b>Os dois são o mesmo desenho de 2017, cortado ao meio de jeitos diferentes.</b> O BERT tomou conta da busca do Google; o GPT, desta história.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A TPU do Google, terceira versão: quatro chips numa placa, desenhada pra multiplicar matriz · foto: Zinskauf, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/tpu-real.jpg" alt="Placa TPU do Google com quatro chips">
+        <figcaption>A TPU do Google, a placa que treinou o BERT · foto: Zinskauf, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6 · 2019: GPT-2 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">14 de fevereiro de 2019 · OpenAI</div>
+      <h2 class="reveal">GPT-2: dez vezes maior, e guardado</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o modelo</div><div class="texto">1,5 bilhão de parâmetros, treinado em oito milhões de páginas da web recomendadas por gente: 40 GB. A tarefa de sempre, a próxima palavra</div></div>
+        <div class="item reveal"><div class="rotulo">o que saiu</div><div class="texto">parágrafos que pareciam escritos por gente, e tarefas que ninguém ensinou: resumir, traduzir um pouco, responder pergunta. Mal feito, mas sem treino pra isso</div></div>
+        <div class="item reveal"><div class="rotulo">a decisão</div><div class="texto">a OpenAI <b>não liberou o modelo completo</b>: disse que podia fabricar texto enganoso em escala. Soltou versões menores e só liberou o de 1,5 bilhão em novembro de 2019</div></div>
+      </div>
+      <p class="lede reveal"><b>A aposta soa como aposta:</b> em 2019 ninguém sabia se segurar era cuidado ou exagero, e a crítica veio das duas pontas. Pela primeira vez um modelo de texto foi tratado como algo que podia sair do controle.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A OpenAI em 2019 era um laboratório de quatro anos · logo da OpenAI, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/openai-logo.png" alt="Logotipo da OpenAI">
+        <figcaption>A OpenAI, um laboratório de quatro anos em 2019 · logo da OpenAI, domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 · 2020: as leis de escala, com a pratica -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">23 de janeiro de 2020 · OpenAI</div>
+      <h2 class="reveal">As leis de escala</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a medida</div><div class="texto">dez pesquisadores treinaram dezenas de modelos de tamanhos diferentes e mediram: <b>o erro cai numa reta quando modelo, texto e conta crescem juntos</b>, por sete ordens de grandeza, sem sinal de parar</div></div>
+        <div class="item reveal"><div class="rotulo">Jared Kaplan</div><div class="texto">físico: Stanford, doutorado em Harvard, professor na Johns Hopkins desde 2012. Assina na frente. Em 2021 cofundou a Anthropic, onde em 2026 era o chefe de ciência</div></div>
+        <div class="item reveal"><div class="rotulo">Dario Amodei</div><div class="texto">nasceu em 1983 em São Francisco, filho de um artesão de couro e de uma gerente de obras; física em Stanford, doutorado em biofísica em Princeton. Chefe de pesquisa da OpenAI; em 2021 cofundou a Anthropic, que dirigia em 2026</div></div>
+      </div>
+      <p class="lede reveal">Pela primeira vez dava pra prever o resultado antes de gastar o dinheiro. <b>O software dizendo ao hardware quanto precisa.</b> Tem um extra sobre a reta e a conta que vem dela.</p>
+    </div>
+    <div class="pratica-lado reveal">
+      <div class="painel">
+        <div class="legenda" id="legReta">Arraste. Quanto maior o modelo, <b>menor o erro</b>, e a queda é uma reta nesta escala.</div>
+        <div id="mioloReta"></div>
+        <div class="painel__total reta__total">
+          <div class="reta__erro"><span class="num" id="totalReta">0</span><span class="reta__rotulo">erro previsto</span></div>
+          <span class="meta" id="metaReta"></span>
+        </div>
+        <div class="botoes" id="botoesReta"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · 2020: GPT-3 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">28 de maio de 2020 · OpenAI e Microsoft</div>
+      <h2 class="reveal">GPT-3: cem vezes o anterior</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o modelo</div><div class="texto">175 bilhões de parâmetros, cem vezes o GPT-2, o mesmo desenho. Treinado em cerca de 300 bilhões de tokens: a web filtrada, páginas recomendadas, livros e a Wikipédia</div></div>
+        <div class="item reveal"><div class="rotulo">a ficha</div><div class="texto"><b>Tom Brown</b> assina na frente, com mais trinta. Computação no MIT, uma startup em 2011, OpenAI em 2016, chefe da engenharia do GPT-3. Em 2021 cofundou a Anthropic, onde em 2026 cuidava da computação</div></div>
+        <div class="item reveal"><div class="rotulo">o galpão</div><div class="texto">milhares de placas V100 num supercomputador que a Microsoft montou pra OpenAI, anunciado no mesmo mês: <b>285 mil núcleos de processador e 10 mil placas</b>. É o galpão do próximo episódio</div></div>
+      </div>
+      <p class="lede reveal"><b>O texto que treinou o GPT-3 é o texto da etapa 10:</b> a web que o feed encheu de gente escrevendo. O dado veio de graça; a conta, não.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Gabinetes DGX-1 da NVIDIA empilhados num rack: oito placas em cada caixa · foto: Qdrddr, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/v100-real.jpg" alt="Fileira de gabinetes NVIDIA DGX-1 empilhados num rack">
+        <figcaption>Gabinetes DGX-1: oito placas por caixa · foto: Qdrddr, CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Um centro de dados da Microsoft, na Holanda · foto: Hay Kranen, CC BY 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/microsoft-real.jpg" alt="Galpão de centro de dados da Microsoft visto de fora">
+        <figcaption>Um galpão da Microsoft · foto: Hay Kranen, CC BY 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 · o que apareceu so de crescer, com a pratica -->
+  <section class="step">
+    <div class="kicker reveal">o que apareceu só de crescer</div>
+    <h2 class="reveal">Aprender pelo exemplo, dentro da pergunta</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legExemplo">Três exemplos seguem uma regra que ninguém escreveu. <b>Complete o quarto.</b></div>
+      <div id="mioloExemplo"></div>
+      <div class="painel__total">
+        <span class="num" id="totalExemplo">0</span>
+        <span class="meta" id="metaExemplo">regra 1 de 4</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="outraRegra">outra regra</button>
+        <button class="btn-mini" id="mostraResposta">mostrar a resposta</button>
+        <button class="btn-mini" id="limparExemplo">limpar</button>
+      </div>
+    </div>
+    <p class="lede reveal">O GPT-3 não foi ajustado pra nenhuma tarefa. Com três exemplos no próprio texto, ele fazia o quarto: traduzia, somava, respondia. <b>Ninguém programou isso; apareceu com o tamanho.</b> O paper chamou de few-shot: o modelo não muda por dentro, só lê.</p>
+  </section>
+
+  <!-- 10 · 2022: Chinchilla -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">29 de março de 2022 · DeepMind, Londres</div>
+      <h2 class="reveal">Chinchilla: o tamanho certo</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a pergunta</div><div class="texto">com a conta fixa, é melhor um modelo maior lendo menos texto, ou um menor lendo mais?</div></div>
+        <div class="item reveal"><div class="rotulo">a resposta</div><div class="texto">um modelo de <b>70 bilhões</b> lendo 1,4 trilhão de tokens ganhou do Gopher, de <b>280 bilhões</b>, da mesma casa. A regra do paper: dobrou o modelo, dobra o texto</div></div>
+        <div class="item reveal"><div class="rotulo">o que muda</div><div class="texto">os gigantes de 2020 e 2021 tinham parado de ler cedo demais. Crescer só o modelo desperdiça placa</div></div>
+      </div>
+      <p class="lede reveal"><b>A placa voltou a mandar no software:</b> a conta do galpão decide o tamanho do modelo e quanto texto ele lê. <b>Jordan Hoffmann</b>, matemático de Harvard, assina na frente, com mais vinte e um. Saiu da DeepMind em 2022; a última notícia pública é de 2024, na Microsoft, em Londres.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O modelo leva o nome do bicho: uma chinchila · foto: Trurl66, domínio público">
+        <span class="selo">imagem real</span>
+        <img src="img/chinchila-real.jpg" alt="Uma chinchila">
+        <figcaption>O modelo tem nome de bicho · foto: Trurl66, domínio público</figcaption>
+      </figure>
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="A DeepMind, em Londres · foto: Gciriani, CC BY-SA 4.0">
+        <span class="selo">imagem real</span>
+        <img src="img/deepmind-fachada.jpg" alt="DeepMind">
+        <figcaption>A DeepMind, em Londres · foto: Gciriani, CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 11 · 2021 e 2022: GPT-3.5 -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">2021 e 2022 · a base do que vem</div>
+      <h2 class="reveal">GPT-3.5: o modelo que aprendeu código</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">Codex, 2021</div><div class="texto">o GPT-3 ajustado em código público do GitHub. Em junho de 2021 vira o <b>Copilot</b>, que completa o código enquanto você digita; em julho sai o paper</div></div>
+        <div class="item reveal"><div class="rotulo">GPT-3.5, 2022</div><div class="texto">a série que a OpenAI chamou de 3.5: o GPT-3 treinado em texto <b>e código</b> de antes do fim de 2021, e ajustado pra seguir instrução. O último da série sai em 28 de novembro de 2022</div></div>
+        <div class="item reveal"><div class="rotulo">dois dias depois</div><div class="texto">30 de novembro de 2022: o ChatGPT é, nas palavras da própria OpenAI, ajustado a partir de um modelo da série GPT-3.5. <b>É aqui que esta linha entrega o próximo episódio</b></div></div>
+      </div>
+      <p class="lede reveal">Seguir instrução não vem de crescer: vem de gente ensinando a responder, e isso é o 11.03. <b>O que este episódio entrega é o modelo pronto pra ser ensinado.</b> Tem um extra sobre o Codex e o Copilot.</p>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Código-fonte na tela: o texto que o Codex aprendeu a completar · foto: Ilya Pavlov, CC0">
+        <span class="selo">imagem real</span>
+        <img src="img/codigo-real.jpg" alt="Tela de computador com código-fonte">
+        <figcaption>O texto que o Codex aprendeu a completar · foto: Ilya Pavlov, CC0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 12 · fecho -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isto para</div>
+    <h2 class="reveal">2022</h2>
+    <div class="mundo">
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="Dario Amodei em 2023 · foto: UK Prime Minister, CC BY 2.0">
+        <picture>
+          <source media="(max-width: 820px)" srcset="img/amodei-rosto-45.jpg">
+          <img class="foto foto--retrato" src="img/amodei-rosto.jpg?v=2" alt="Dario Amodei">
+        </picture>
+        <div class="nome">as pessoas, na ordem</div>
+        <div class="desc">Vaswani e mais sete desenharam pra traduzir. Radford e Sutskever treinaram o desenho em livros e ensinaram a tarefa depois. Devlin cortou o mesmo desenho ao meio do outro jeito. A OpenAI dobrou dez vezes e guardou o modelo. Kaplan e Amodei mediram a reta. Brown e mais trinta cresceram cem vezes. Hoffmann mostrou o tamanho certo. Ninguém planejou o conjunto</div>
+      </div>
+      <div class="item clicavel reveal" data-abre="foto" data-legenda="Jared Kaplan em 2025 · foto: TechCrunch, CC BY 2.0">
+        <picture>
+          <source media="(max-width: 820px)" srcset="img/kaplan-rosto-45.jpg">
+          <img class="foto foto--retrato" src="img/kaplan-rosto.jpg?v=2" alt="Jared Kaplan">
+        </picture>
+        <div class="nome">onde estavam em 2026</div>
+        <div class="desc">Vaswani na Nvidia, desde junho. Radford pesquisando por conta própria. Kaplan, Amodei e Brown na Anthropic, que fundaram em 2021. Sutskever na empresa que fundou em 2024. Devlin e Hoffmann: a última notícia pública é de 2023 e de 2024</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">a lição</div>
+        <div class="desc">o programa achado melhora só de ficar maior, e quem decide o tamanho é a placa e o dado, não o programador. O desenho de 2017 não mudou; mudou o galpão em volta dele</div>
+      </div>
+    </div>
+    <p class="lede reveal">A reta diz quanto o modelo precisa. <b>Quem constrói o galpão que cabe isso?</b></p>
+  </section>
+
+</main>
+
+<!-- o tocador mora embaixo do palco, no desenho do player do Nexus. Os __CAMPOS__
+     sao preenchidos pelo preenche-11.py (scratchpad) a partir do m4a e da ficha. -->
+<div class="tocador">
+  <audio preload="metadata" src="A%20escala%20do%20Transformer%20ao%20ChatGPT.m4a" data-duracao="717"></audio>
+  <img class="tocador__capa" src="img/datacenter-real.jpg" alt="">
+  <div class="tocador__id">
+    <div class="tocador__titulo">A escala do Transformer ao ChatGPT</div>
+  </div>
+  <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="717" aria-valuenow="0">
+    <div class="tocador__cheio"></div>
+    <div class="tocador__marcas"></div>
+  </div>
+  <div class="tocador__controles">
+    <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+    <div class="tocador__transporte">
+      <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+      <button class="tocador__play" aria-label="tocar">▶</button>
+      <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">11:57</span></div>
+  </div>
+</div>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
+</footer>
+
+<script src="../../../../site/js/menu.js"></script>
+<script src="../../../../site/js/animacao/telas.js"></script>
+<script src="../../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../../site/js/animacao/tocador.js"></script>
+<script src="escala.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

@@ -1,8 +1,10 @@
 /* cabecalho
-   O topo da pagina: linha de contexto, titulo, chamada e fita de cores. Depende de tokens.css e base.css. */
+   O topo da pagina: linha de contexto, titulo, chamada e a linha de baixo. Depende de tokens.css e base.css.
+   Desenho do SITE-AFX desde 13/09/2026: rotulo tecnico em mono com um traco na
+   frente, titulo pesado e a linha fina no lugar da fita de cores. */
 
-/* duas colunas: o titulo a esquerda, a chamada a direita, e a fita atravessando as duas por baixo.
-   No HTML a fita vem por ultimo porque e enfeite: o grid so a coloca no lugar. */
+/* duas colunas: o titulo a esquerda, a chamada a direita, e a linha atravessando as duas por baixo.
+   No HTML a linha vem por ultimo porque e enfeite: o grid so a coloca no lugar. */
 .head {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -11,7 +13,9 @@
   align-items: start;
 }
 
-/* a linha miuda acima do titulo, que diz onde o visitante esta */
+/* a linha miuda acima do titulo, que diz onde o visitante esta: o rotulo tecnico do
+   AFX. O traco e inline (e nao flex) porque a linha carrega link e texto misturados,
+   e em flex cada pedaco viraria um item com vao no meio */
 .eyebrow {
   grid-column: 1;
   grid-row: 1;
@@ -19,23 +23,32 @@
   font-family: var(--fonte-mono);
   font-size: .72rem;
   font-weight: 500;
-  letter-spacing: .16em;
+  letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
+}
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 34px;
+  height: 1px;
+  margin: -2px 14px 0 0;
+  background: var(--line-strong);
 }
 
 /* na pagina de etapa a linha de contexto carrega o caminho de volta */
 .eyebrow a { color: inherit; text-decoration: none; }
-.eyebrow a:hover { color: var(--accent); text-decoration: underline; }
+.eyebrow a:hover { color: var(--ink); text-decoration: underline; }
 
 .head h1 {
   grid-column: 1;
   grid-row: 2;
   margin: 0;
   font-family: var(--fonte-titulo);
-  font-weight: 700;
-  font-size: clamp(2.1rem, 5.5vw, 3.1rem);
-  line-height: 1.04;
+  font-weight: 800;
+  font-size: clamp(2rem, 4.6vw, 3.1rem);
+  line-height: 1.12;
   letter-spacing: -.02em;
   text-wrap: balance;
 }
@@ -55,23 +68,23 @@
   font-weight: 600;
 }
 
-/* a fita: as sete barras num gradiente de faixas duras, sem sete elementos vazios no HTML */
+/* a linha de baixo: fina e na cor da linha, como as divisas de secao do AFX. O nome
+   .bars ficou da fita de cores que ela substituiu */
 .bars {
   grid-column: 1 / -1;
   grid-row: 3;
   margin-top: 14px;
-  height: 5px;
-  border-radius: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--fita-1) 0 14.285%,
-    var(--fita-2) 0 28.571%,
-    var(--fita-3) 0 42.857%,
-    var(--fita-4) 0 57.142%,
-    var(--fita-5) 0 71.428%,
-    var(--fita-6) 0 85.714%,
-    var(--fita-7) 0
-  );
+  height: 1px;
+  background: var(--line);
+}
+
+/* audio no cabecalho fica sempre logo abaixo do titulo: no largo ganha a linha de baixo da coluna
+   da esquerda, a chamada estica ate ela e a linha desce uma fileira. No estreito quem manda e a ordem
+   do HTML, por isso o audio vem escrito logo depois do h1. */
+@media (min-width: 861px) {
+  .head > .audio { grid-column: 1; grid-row: 3; }
+  .head:has(> .audio) .lede { grid-row: 1 / 4; }
+  .head:has(> .audio) .bars { grid-row: 4; }
 }
 
 /* no estreito nao cabem duas colunas: tudo empilha na ordem em que esta escrito no HTML */

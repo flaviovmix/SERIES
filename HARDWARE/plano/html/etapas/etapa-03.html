@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 3 &middot; Plano HARDWARE (Arduino e ESP32)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="etapa.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../index.html">&larr; Plano HARDWARE (Arduino e ESP32)</a> &middot; etapa 03</p>
+    <h1>O painel da portaria</h1>
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span> <p class="note">não iniciada</p></div>
+    <p class="lede"><strong>Objetivo.</strong> Ver no computador, numa tela montada no Node-RED, os dados que o Arduino manda pela serial, e mandar comando de volta; primeiro com mensagem nossa, depois com Modbus.</p>
+  </header>
+
+  <div class="criterio">
+    <p class="rotulo">Pronto quando</p>
+    <p>As aulas 12 a 14 estão <code>✅</code> com data e o supervisório do dono mostra um valor do Arduino mudando na tela e manda um comando que o Arduino obedece, primeiro pela serial pura e depois pelo Modbus.</p>
+  </div>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>implementado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>em parte</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span></span></div>
+
+  <article class="corpo">
+<p><strong>Conteúdo de estudo:</strong> o que é comunicação serial (um bit de cada vez, com velocidade combinada dos dois lados) e o que muda na paralela (um fio por bit); serial síncrona (com relógio, como o I2C) e assíncrona (como a USB); a tabela ASCII, que transforma letra em número e número em bits; o que é um supervisório; como o Node-RED liga blocos de entrada, tratamento e tela; e o Modbus, uma regra padrão de pedir e ler valores que anda por cima de qualquer meio (RS485, RS232, USB, Ethernet, WiFi).</p>
+<p><strong>Material:</strong> o arquivo de cada aula está no <code>PDF/_mapa.md</code>. O código vem pronto: exemplos de serial síncrona, assíncrona e paralela (dois Unos ligados), exemplos de Modbus (lâmpada, servo, chave, sensor de temperatura e a integração deles), a correção do supervisório e o fluxo do Node-RED.</p>
+<h3>Tarefas</h3>
+<div class="scroller"><table><thead><tr><th>N&ordm;</th><th>Tarefa</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">01</td><td>Instalar o Node-RED no PC na aula 13 (D7), com os pacotes que a aula lista. Ele fala com a placa de verdade pela porta USB (a P3 caiu com a D7).</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">02</td><td>Mesmo formato de exercício das etapas anteriores.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr></tbody></table></div>
+<h2>Aulas (uma aula = um passo)</h2>
+<div class="scroller"><table><thead><tr><th>#</th><th>Aula</th><th class="status">Estado</th></tr></thead><tbody><tr><td>12</td><td><strong>Uma letra de cada vez.</strong> Comunicação serial e paralela (o material liga dois Unos por oito fios, um por bit, com um relógio), síncrona e assíncrona, a tabela ASCII e o caminho da letra &quot;a&quot; em bits, do computador pro Arduino e de volta. Exercício 1: o Monitor Serial manda &quot;a&quot; e o Arduino imprime o que recebeu. Exercício 2: o Arduino responde &quot;b&quot; depois de receber o &quot;a&quot; (com <code>Serial.available()&gt;0</code>, e só se for &quot;a&quot;). Exercício 3: o Arduino recebe uma palavra e imprime. Exercício 4: <code>parseInt()</code> recebe um número que muda o brilho do LED</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>13</td><td><strong>Blocos que conversam.</strong> Node-RED: instalar e conhecer nós, fluxo, debug e paleta; os pacotes do dashboard, da serial, do MQTT e do agregador. Exercício 1: um nó de injeção manda o horário e o debug mostra. Exercício 2: um dashboard onde arrastar uma barra muda o valor num gráfico. Leitura extra: a aula de IoT com ESP32 e Node-RED, que apresenta o MQTT</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>14</td><td><strong>O supervisório.</strong> A tela que mostra e manda. Exercício 1: a entrada A0 num mostrador (gauge) e num gráfico. Exercício 2: um botão na tela liga o relé. Exercício 3: um LED na tela mostra a entrada 5. Exercício 4: uma barra na tela muda o brilho do LED. Depois, os mesmos quatro com Modbus (pacote <code>node-red-contrib-modbus</code>): o que é o Modbus, o meio físico por onde ele anda, e um pouco das duas formas lado a lado</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr></tbody></table></div>
+  </article>
+
+  
+
+  <section>
+    <h2>Desvios registrados</h2>
+    <div class="desvios">
+<ul><li>11/09/2026: numeração nossa (D6), e as aulas ganharam os exercícios do material, que chegou nesse dia.</li></ul>
+    </div>
+  </section>
+
+  <nav class="passo"><a class="nav-ir" href="etapa-02.html"><span>anterior</span>Etapa 2 &middot; O controlador fica esperto</a><a class="nav-ir nav-ir--fim" href="etapa-04.html"><span>pr&oacute;xima</span>Etapa 4 &middot; A caixa d'água no WiFi</a></nav>
+
+  <footer>
+    <span>etapas/03-supervisorio.md</span>
+    <span>14.09.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

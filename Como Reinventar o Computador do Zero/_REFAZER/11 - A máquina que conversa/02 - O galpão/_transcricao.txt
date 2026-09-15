@@ -1,0 +1,169 @@
+# Transcricao automatica (faster-whisper small) - 16.8 min
+# Fonte: O Galpao.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] o galpão. A reta diz quanto o modelo precisa. Quem constrói o galpão que cabe isso? Porque
+[00:07] a gente tem falado muito sobre a conta matemática, sobre a inteligência, né?
+[00:11] Hum, exato.
+[00:12] Mas a questão agora é construir, assim, a estrutura toda. Não é erguer as paredes,
+[00:18] mas garantir, tipo, o asfalto para a informação rodar muito rápido, sabe?
+[00:22] E o que a gente vai investigar aqui não é sobre quem vendeu mais, tá? Não é
+[00:27] de empresa de sucesso.
+[00:29] Mais obriação na bolsa de valores.
+[00:31] Não, nada de corrida financeira. O assunto aqui é a peça física, quer dizer, o chip,
+[00:37] a memória, aquele fio que liga as placas, a luz, o calor. E a gente vai cobrir, assim,
+[00:43] um período bem específico de 2015 a 2022, em ordem. Legal.
+[00:48] E dessa janela temporal, saem só duas pontas. O fio Nvelink, que foi anunciado em 2014,
+[00:55] e uma placa de casa, de computador mesmo, de 2025.
+[00:59] Tovê-me. Bom, e o que muda de verdade quando a gente olha para a peça e não para o código?
+[01:04] Até que o software tomava a forma da placa. O Transformer foi desenhado para
+[01:09] caber na placa de vídeo. Nesse episódio acontece o contrário.
+[01:13] A placa passa a ser desenhada para o Transformer e o problema deixa de ser
+[01:17] fazer a conta e passa a ser levar o número de um lado para o outro.
+[01:20] Nossa, o problema virou levar o número. Bom, antes da gente seguir, são 12 telas,
+[01:26] quem está só ouvindo acompanha normalmente e quem está com a página aberta vira quando
+[01:31] ouvir o pedido. Aperte o próximo. Então, começando, né? 18 de maio de 2016.
+[01:37] O Google anunciou um chip próprio, a TPU. Isso, e o interessante é que era um chip feito
+[01:43] só para conta da rede neural, tipo, exclusivo para isso. Exato. E o detalhe é que já
+[01:48] está ajudando, sabe, desde 2015. Ah, já usavam lá dentro, né? Na busca, no Street View.
+[01:54] Pois é. E no AlphaGo, naquela partida contra o Liceadol, eles fizeram porque entregava
+[02:01] dez vezes mais conta com a mesma luz. Dez vezes? Caramba! É. Quem assina é
+[02:08] Norm Jope. Não tem ano nem lugar de nascimento público. Fez mestrado na
+[02:13] Northwestern e doutorado em Stanford, onde foi um dos arquitetos do
+[02:17] doutor MIPS, passou por laboratórios e pesquisa de fabricantes de computador e entrou no Google
+[02:22] em 2013, onde virou o líder técnico da TPU. Em 2026 estava no Google e em
+[02:28] agosto apresentou a oitava geração da TPU. Mas, assim, a gente precisa pensar no risco que
+[02:33] foi isso. Em 2015, se a rede neural fosse só uma moda passageira, né? Nossa, sim. Aquele chip,
+[02:40] sei lá, não ia servir para mais nada. É para o lixo. E é mesmo. Mas, se a gente lembrar
+[02:44] mais anterior, o Bert foi treinado exatamente num chip desses. A lição é que o Google
+[02:50] desenha o chip em volta do programa. O hardware mudou pelo software. Muito impactante. Aperte o próximo.
+[02:56] Bom, a resposta do outro lado veio também, né? Em 5 de abril de 2016. A NVIDIA. Isso. Eles
+[03:04] mostram o DGX-1, uma máquina enorme. É, não era uma plaquinha. Era um gabinete inteiro,
+[03:10] né? Com oito placas P100. Oito interligadas. E ligadas pelo NVLink, que é aquele fio anunciado lá em
+[03:17] 2014 que você comentou. Gastava 3.200 watts. É um absurdo de energia. Sim, e fazia o trabalho
+[03:26] de 250 servidores normais. E aqui a gente lembra do Jensen Hangue. Já falamos dele na época
+[03:32] da placa de vídeo. Em 2026, ele continuava sendo o chefe da NVIDIA. E, assim, para construir
+[03:39] um gabinete, foram 3.000 pessoas trabalhando por 3 anos, sabia? Nossa, 3.000 pessoas. E tem aquela
+[03:45] entrega famosa, né? Tem. Em agosto de 2016, o próprio Hangue entrega o primeiro DGX-1 de produção
+[03:53] direto na mão do pessoal da OpenAI. Para quem recebeu? Ilha Sutscaver. A gente também já
+[04:00] apresentou ele na época da AlexNet. E em 2026, ele chefiava a própria empresa. Exato. Mas repara
+[04:07] quase ninguém treinava rede neural daquele tamanho. A máquina podia ficar empacada no
+[04:11] estoque, tipo, ninguém ia comprar. Pois é. E vale um aviso, quem procurava é achar uma reportagem do
+[04:18] programa 60 Minutes da Reda CBS de 2024 sobre isso. Tem que ter cuidado com essa reportagem, né? Tem.
+[04:24] Porque assim, é televisão. É um perfil focado no empresário. O chip que ele segura lá na TV
+[04:30] já é o de 2024, bem diferente. E eles quase não mostram o galpão de verdade.
+[04:35] Simplifica demais. Aperte o próximo. E aí, né? Por que colocar o oito placas juntas? É,
+[04:42] porque não fazer uma só gigante? Bom, dá pra usar aquela analogia da escola. A placa de vídeo é
+[04:50] tipo uma turma de quinta série, sabe? Fazendo a mesma continha ao mesmo tempo. Só que o
+[04:55] modelo não cabe em uma turma só. A conta ficou grande demais. Então a gente junta várias
+[05:00] coisas. A placa vira a escola inteira, digamos assim. Certo. Cada sala de aula faz a sua conta,
+[05:06] mas no fim elas precisam trocar os resultados pelo corredor. Ah, entendi. E se o corredor é
+[05:13] estreito? As salas ficam lá. Paradas. Só esperando o bendito número chegada a outra sala.
+[05:18] Faz muito sentido. É por isso que inventaram o NV Link, então. O caminho comum do computador
+[05:23] era, tipo, um gargalo absurdo. O problema de construir o galpão virou fazer o número andar.
+[05:28] Exatamente. Fazer andar. Aperte o próximo. E esse problema de fazer andar, sabe? Acontece
+[05:35] dentro da placa também. O problema interno dela. Como assim dentro dela? É que na placa
+[05:40] fazer a conta é rápido. Mas ir buscar o número da memória demora muito. O gargalo é interno também.
+[05:47] Isso. A solução foi pegar a memória e literalmente empilhar junto do chip. A Radeon Fury X da
+[05:54] NVIDIA fez isso em 2015. E aquela P100 da NVIDIA já veio com 16 GB dessa memória empilhada.
+[06:03] E a gente tem que entender a matemática desse espaço para entender o problema, né?
+[06:08] É. Vamos fazer a conta dos bytes devagar. O número normal usando 16 bits ocupa 2 bytes.
+[06:15] Ok, 2 bytes. Se tiver uma compressão para 4 bits, ele cai para meio byte. Agora o GPT3.
+[06:21] Ele tem 175 bilhões de parâmetros. Caramba! Então ele ocupa 350 GB. Isso só para guardar
+[06:32] os números, sem fazer conta nenhuma. Quem está com a tela interativa aberta agora dá para mexer
+[06:37] nos controles e ver a quantidade de placas subindo e descendo, né? Um, exatamente. É, só para que
+[06:42] acompanha ter uma ideia da dimensão, pegando aquela RTX 5090, placa de casa de 2025. Sim, placa
+[06:49] forte. Forte. 32 GB, ela roda modelos ali até uns 30 bilhões de parâmetros. Se pegar um de 70 bilhões,
+[06:55] mesmo em 4 bits, já passa da memória dela. Para rodar o GPT3, precisaria de umas 11 placas
+[07:01] dessas ligadas em casa. 11 placas na sala de casa. É. Pois é. E modelos fechados dessas empresas
+[07:07] grandes nem entram nessa conta porque nem dá para baixar os pesos deles para testar.
+[07:11] Eles são aqui a clara, né? O tamanho do modelo que dá para usar é decidido puramente pela
+[07:15] memória, não pela velocidade. A memória dita a regra. Aperte o próximo. Aí, 10 de maio de 2017,
+[07:22] a NVIDIA lança a arquitetura V100. Com 16 GB de memória. Isso, mas o principal foi o TensorFlow Core.
+[07:29] É um pedaço ali do chip. Ele pega duas tabelinhas de 4x4, multiplica e soma o resultado
+[07:36] numa terceira tabelinha, tudo de uma vez só em 16 bits. É um atalho físico direto para conta
+[07:42] da rede neural, né? A V100 vinha com 640 desses TensorFlow Cores. Exato. E uma semana depois,
+[07:49] olha só, em 17 de maio de 2017, o Google lança TPU 2. A segunda versão. E qual a diferença? Ela foi
+[07:57] feita para treinar. O modelo era uns 64 chips, juntos, ainda resfriados a ar. É muito interessante a
+[08:04] diferença de visão. O Google fez um chip inteiro só para a rede neural. A NVIDIA pegou a placa
+[08:10] de vídeo e deu um pedaço dela o TensorFlow Core para a rede neural. Isso, treinar virou aquele trabalho
+[08:15] pesado que decide, de fato, o design da peça de silício. A peça mudou por causa do treino. Aperte
+[08:21] o próximo. Lembra do corredor da escola? Lembro o gargalo de trocar informação. Então, em março de
+[08:27] 2018, a NVIDIA apresenta o NV Switch, um corredor muito largo. Ah, para ligar mais placas. Exato.
+[08:35] Ele permitia 16 placas V100 conversando ali, ao mesmo tempo, a 2,4 TB por segundo. E a V100
+[08:45] passou para 32 GB. Tudo isso no DGX2. É como se o corredor ficasse tão largo que 16 turmas conseguem
+[08:53] trocar provas sem pegar a fila, né? Ninguém espera. Perfeito. Mas esse esquenta, né? Em
+[08:58] 2018, o Google lança a terceira TPU e a placa esquentava demais pro ar condicionado da conta. Sério? E
+[09:07] o que eles fizeram? Tiveram que usar resfriamento à líquido. Água gelada ali em Canadá. Com o
+[09:12] líquido, o Google conseguiu colocar o dobro de chips no mesmo espaço físico. Nossa, para quem
+[09:17] está com a tela interativa, dá para ver bem isso na animação. O corredor estreito versus o
+[09:22] largo. Dá para ver como o corredor estreito trava tudo, não importa quantas placas tenham. É,
+[09:28] a lição é que a peça que mais mudou não foi o processador, sabe? Foi o fio de comunicação
+[09:34] e o líquido circulando em volta dele. Sem dúvida. Aperte o próximo. Em 11 de março de 2019, um anúncio
+[09:40] enorme da NVIDIA. Eles iam comprar a Melanox. 6 bilhões e 900 milhões de dólares. É muito
+[09:47] dinheiro. E fecharam o negócio em 2020 por 7 bilhões. E por que tanto dinheiro? Por causa
+[09:53] do Infinity Band. O NV Link liga as placas dentro de um mesmo gabinete. O Infinity Band é
+[09:58] aquele fio grosso que liga um gabinete lá do outro lado do prédio. É o corredor cumprido do
+[10:03] galpão. É a ligação macro, né? E quem fez essa tecnologia? Nascida em Jerusalém, filho de
+[10:09] um economista, estudou computação no Technion e fez mestrado em engenharia elétrica. Trabalhou
+[10:15] na Intel, ajudou a fundar outra empresa de chip e cofundou a Melanox em 1999, onde foi
+[10:22] investido no NF até a venda. Saiu da NVIDIA NVIDIA no fim de 2020. Em 2026, estava investindo em
+[10:29] empresas de tecnologia. E a aposta aí foi altíssima, concorda? Pagar 7 bilhões de dólares num cabo,
+[10:37] prevendo que o galpão ia crescer absurdamente. Foi drástico. Mostra que quem vende a placa
+[10:44] de cálculo agora precisa passar a vender o fio também. Precisa controlar o caminho todo. Aperte
+[10:51] o máximo. Aí, 14 de maio de 2020. A NVIDIA lança geração A100. Uma placa ainda mais potente.
+[10:58] Mas a máquina inteira o que importa, né? Sim. Cinco dias depois, a Microsoft vem a público e
+[11:05] anuncia uma máquina monstruosa para o PNA usar. Tinha 285 mil núcleos de processador tipo
+[11:12] convencional e 10 mil placas de vídeo interligadas. 10 mil placas. 10 mil com 400
+[11:19] bits por segundo de rede em cada uma. É quase uma cidade de servidores. E quem foi que apresentou isso?
+[11:25] Nascido em 1972 em Gledis, na zona rural da Virgínia, estudou computação na Lynchburg College e fez
+[11:33] mestrado na Wake Forest. Passou pelo Google e pelo LinkedIn e virou chefe de tecnologia da
+[11:39] Microsoft em 2017. Em 2026, continuava chefe de tecnologia da Microsoft. O Kevin Scott.
+[11:46] E olha que curioso. 9 dias depois que ele anuncia isso, saiu o documento oficial do GPT-3.
+[11:52] Exato. E no texto lá, diz que o modelo foi treinado em placas V100 na Microsoft. Mas a própria
+[12:00] Microsoft não diz, sabe, qual placa usou nessa máquina gigante. Nem citam o nome do GPT-3 no
+[12:07] anúncio dela. Fica uma coisa meio no ar. Tem uma cautela nessas datas, né? Mas fato é que no ano
+[12:13] de 2021 a Microsoft e NVIDIA treinam o Megatron Touring, uma rede gigantesca no supercomputador
+[12:21] Selene, com 560 gabinetes e usando Infinity Band. É muita força bruta. A lição é que o galpão
+[12:29] inteiro virou produto, sabe? As empresas não compram mais a placa separada. Elas encomendam logo
+[12:35] o galpão. Compram o galpão pronto, é? Aperte o próximo. Bom, montar isso tudo tem um gasto,
+[12:41] né? Em abril de 2021, o David Patterson fez o estudo detalhado. O treinamento do GPT-3 consumiu
+[12:48] incríveis 1.287 megawatts hora. Puxa, é muito difícil visualizar essa energia. É a estimativa deles
+[12:57] para 10 mil placas, rodando direto ali uns 15 dias a 330 watts cada. É um bairro inteiro. Dá o que
+[13:06] de 815 casas do sudeste do Brasil gastam de energia elétrica num ano inteiro. Num ano e tem um
+[13:13] detalhe físico chato. Aquele calor todo não some. A TPU-2, por exemplo, gastava 280 watts. A TPU-3 foi
+[13:21] para 450. Todo esse vate que entra como eletricidade sai obrigatoriamente como calor. E alguém precisa
+[13:29] tirar esse calor lá de dentro do prédio. Sim, vir uma estufa. E falando sobre isso,
+[13:34] um cura-assunto sobre data center pode esbarrar numa obra documental chamada Overview da rede PBS
+[13:41] lançada em 2026. Sim, tem que ficar atento. Ela tem um tom forte de denúncia, né? E as estimativas
+[13:47] de energia são deles próprios bem focados no clima. Não explica a placa em si. Da memória
+[13:52] empilhada, luz, refrigeração. Perfeito. O importante é entender que treinar rede
+[13:57] neural virou puramente uma obra de engenharia elétrica. Exato. Aperte o próximo. Para
+[14:03] cronologia pesada, 22 de março de 2022. Chega geração H100. A famosa Grace Hopper. Essa
+[14:11] mesma. 80 bilhões de transistores, 80 GB de memória e puxa até 700 watts por placa. Um
+[14:19] gabinete com 8 dessas gastam uns 10.200 watts. Lembra que o primeiro, o DGX-1, gastava 3.200?
+[14:27] O nosso consumo triplicou quase. E a placa mudou por dentro de novo, não mudou? Mudou. A
+[14:32] envidia pegou uma parte do silício ali e deu literalmente o nome do programa. Batizaram de
+[14:38] Transformer Engine. Transformer Engine? Caramba! É um circuito ali misturado com software que usa
+[14:44] 8 bits para uma coisa, 16 bits para outra, treinava seis vezes mais rápido. E cruzando as
+[14:50] datas ela foi lançada no mesmo mês daquele modelo Chinchilla e do Instruct GPT que a
+[14:54] gente falou. Mas essas placas H100 só chegaram mesmo na mão dos clientes em outubro de 2022.
+[15:00] E em outubro o treino daquele GPT 3.5 já tinha acabado usando geração velha.
+[15:06] Exatamente. Há cinco anos o algoritmo Transformer tentava se espremê né, para caber na placa que
+[15:13] existia. E agora a gente tem uma placa inteira com o nome do Transformer embutido.
+[15:17] Inverteu tudo. Aperte o próximo. Bom, a gente para essa linha do tempo de peças em 2022,
+[15:23] porque aqui o galpão já está montado. Tá pronto. E se a gente fizer um balanço dessas
+[15:28] pessoas que a gente mencionou é impressionante. É o Júpio desenhar o chip exclusivo para a rede.
+[15:32] O Huang foi lá e entregou o primeiro DGX-1 fisicamente na OpenEye. O Valdman fundou a empresa
+[15:39] que faz o fio gigantesco e o Scott anunciou aquela máquina de 10 mil placas, né, para
+[15:45] juntar tudo. Mas o curioso é que ninguém ali sentou junto para planejar o conjunto. Foi
+[15:50] agindo. Sim. E a gente sempre dita o cuidado com as fichas, né. Duas dessas pessoas entraram
+[15:57] sem ano de nascimento marcado. Uma não tem um ano público e a outra não tem um ano confirmado
+[16:03] nas nossas fontes. Isso. E repassando rapidinho onde todo mundo estava em 2026. Júpio, na oitava
+[16:10] TPU lá no Google, Valdman focado em investimentos, Scott como chefe de tecnologia da Microsoft,
+[16:17] o Huang no comando da NVIDIA e o Sudscaver lá na sua própria empresa. A mudança que a
+[16:21] gente viu hoje é marcante, né. O Transformer, que era um negócio desenhado com cuidado para
+[16:28] caber na placa, fez o mercado virar e desenhar a placa exclusivamente para ele. E os problemas,
+[16:35] tipo, viraram totalmente memória, fio e luz. A física mesmo. É. Então o Galpão tá pronto.
+[16:42] E o modelo dentro dele é enorme. Mas ele só continua o texto que recebe. Uma máquina dessa
+[16:49] sabe responder.

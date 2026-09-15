@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 5 &middot; Plano HARDWARE (Arduino e ESP32)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="etapa.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../index.html">&larr; Plano HARDWARE (Arduino e ESP32)</a> &middot; etapa 05</p>
+    <h1>A placa própria</h1>
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span> <p class="note">não iniciada</p></div>
+    <p class="lede"><strong>Objetivo.</strong> Desenhar no KiCad a placa de circuito impresso (PCB) de um circuito do estudo e gerar os arquivos que uma fábrica usa pra produzir a placa.</p>
+  </header>
+
+  <div class="criterio">
+    <p class="rotulo">Pronto quando</p>
+    <p>As aulas 21 a 24 estão <code>✅</code> com data e existe o Gerber de uma placa desenhada pelo dono, que ele explica peça por peça.</p>
+  </div>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>implementado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>em parte</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>nem começou</span></span></div>
+
+  <article class="corpo">
+<p><strong>Conteúdo de estudo:</strong> esquemático (o desenho de quem liga em quem) x layout da placa (onde cada peça e cada trilha ficam de verdade); footprint (a pegada física de cada componente); o que deixa um circuito robusto (proteger a alimentação, separar potência de sinal, isolar as entradas); placa de duas faces e plano de terra; e os arquivos Gerber, que são o que a fábrica lê.</p>
+<p><strong>Material:</strong> o arquivo de cada aula está no <code>PDF/_mapa.md</code>. Vem pronto o projeto inteiro no KiCad, com as bibliotecas das peças (ESP32 DevKitC, optoacoplador PC817, conversor LM2596, indutor de filtro) e o esquemático também em PDF. O KiCad é programa de computador, gratuito; nesta etapa não tem simulador (D7).</p>
+<h3>Tarefas</h3>
+<div class="scroller"><table><thead><tr><th>N&ordm;</th><th>Tarefa</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">01</td><td>Instalar o KiCad na aula 21.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr><tr data-st="zero"><td class="num">02</td><td>Os arquivos do projeto de PCB ficam em <code>exercicios/NN.E - nome/</code>, como os outros.</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span></td></tr></tbody></table></div>
+<h2>Aulas (uma aula = um passo)</h2>
+<div class="scroller"><table><thead><tr><th>#</th><th>Aula</th><th class="status">Estado</th></tr></thead><tbody><tr><td>21</td><td><strong>O KiCad.</strong> Instalar e conhecer o ambiente; abrir o projeto pronto do material pra ver o caminho inteiro (esquemático, placa, 3D). Sem material escrito: é instalação</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>22</td><td><strong>Quem liga em quem.</strong> O esquemático do circuito de robustez que o material traz: o ESP32 encaixado na placa, as entradas isoladas por optoacoplador PC817, o relé acionado por transistor com diodo, e a fonte protegida (diodo contra inversão, indutor de filtro e o regulador LM2596). A busca de símbolo e footprint prontos (componentsearchengine.com, snapeda.com) e, quando não acha, fazer o footprint medindo a peça. Leitura extra: a parte de hardware dos 10 passos da aula 25, que explica o porquê de cada proteção</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>23</td><td><strong>Onde passa cada trilha.</strong> Levar os footprints pra placa, desenhar o contorno e ver em 3D, organizar como no esquemático (não é obrigatório), definir trilhas e vias, placa de duas faces, plano de terra, conferir todas as conexões e imprimir em papel pra conferir o tamanho real. Modelos 3D das peças no GrabCAD</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr><tr><td>24</td><td><strong>O arquivo que vai pra fábrica.</strong> Gerar os Gerber; o plugin do fabricante dentro do KiCad, a conta e o pedido da placa</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="nem começou" title="nem começou"></span> não iniciada</td></tr></tbody></table></div>
+  </article>
+
+  
+
+  <section>
+    <h2>Desvios registrados</h2>
+    <div class="desvios">
+<ul><li>11/09/2026: numeração nossa (D6); o material chegou e as aulas ganharam o conteúdo.</li></ul>
+    </div>
+  </section>
+
+  <nav class="passo"><a class="nav-ir" href="etapa-04.html"><span>anterior</span>Etapa 4 &middot; A caixa d'água no WiFi</a><a class="nav-ir nav-ir--fim" href="etapa-06.html"><span>pr&oacute;xima</span>Etapa 6 &middot; Do protótipo ao produto</a></nav>
+
+  <footer>
+    <span>etapas/05-pcb.md</span>
+    <span>14.09.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+Titulo: Entrar na maquina de longe
+Notebook: 14-01-Entrar na máquina de longe
+
+Descricao:
+As fontes detalham a transição de uma aplicação Java do ambiente local para um servidor real, desmistificando o uso de máquinas remotas. O texto explica que um servidor é um computador comum, porém sem interface visual, onde toda interação ocorre via texto através do protocolo SSH. É enfatizada a importância da segurança, recomendando a substituição de senhas pelo uso de chaves públicas e privadas para evitar invasões automatizadas. O guia orienta sobre a navegação em sistemas Linux, destacando comandos essenciais para identificar o usuário, o diretório atual e os arquivos presentes. Há também um forte alerta sobre a responsabilidade do administrador, sugerindo o uso cauteloso de privilégios elevados para evitar erros irreversíveis. Por fim, as fontes reforçam que esse conhecimento é universal e aplicável a qualquer tecnologia de desenvolvimento, não se limitando apenas ao Java.
+
+Link: https://notebook.google.com/notebook/760ea731-df74-4dc1-97ee-8c51d0db970c

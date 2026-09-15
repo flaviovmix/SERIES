@@ -3,17 +3,28 @@
 
    Cada conta vale 1 e cada haste enche em 9: e o modelo sem barra, que deixa o
    vai-um obvio sem regra extra. A conta fora do fio fica deslocada em pixel
-   (translateX) e esse valor cresce junto com o tamanho da conta: a proporcao e
-   ~1,6 vezes o passo do fio (conta + gap). */
+   (translateX, a --folga) e esse valor cresce junto com o tamanho da conta: a
+   proporcao e ~1,6 vezes o passo do fio (conta + vao).
+
+   A haste tem o comprimento EXATO das nove contas paradas (10/09, pedido dele):
+   o fio esticava ate a borda do painel (flex: 1) e sobrava fio vazio depois da
+   ultima conta, 136px no desktop, enquanto do outro lado a conta que conta
+   encosta na ponta. Agora as medidas moram em variaveis e o fio sai delas. */
 
 .abaco {
+  --conta: 40px;   /* o tamanho da conta */
+  --vao: 4px;      /* o espaco entre duas contas */
+  --folga: 70px;   /* o quanto a conta parada fica longe das que contam */
+  --pad: 6px;      /* a ponta do fio antes da primeira conta e depois da ultima */
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 760px;
   margin: 0 auto;
 }
-.haste { display: flex; align-items: center; gap: 18px; }
+/* as linhas ficam no meio do painel; todas tem o mesmo comprimento, entao rotulo,
+   fio e valor continuam alinhados em coluna */
+.haste { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .haste .rotulo {
   font-family: var(--fonte-mono);
   font-size: 12.5px;
@@ -25,26 +36,28 @@
 .haste.destaque .rotulo { color: var(--accent); font-weight: 600; }
 .haste .fio {
   position: relative;
-  flex: 1;
+  flex: none;
+  /* nove contas (CONTAS_POR_HASTE, no abaco.js), oito vaos, a folga e as duas pontas */
+  width: calc(9 * var(--conta) + 8 * var(--vao) + var(--folga) + 2 * var(--pad));
   height: 54px;
   border-radius: 99px;
   background: linear-gradient(0deg, transparent 46%, var(--line) 46% 54%, transparent 54%);
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 0 6px;
+  gap: var(--vao);
+  padding: 0 var(--pad);
 }
 .haste.destaque .fio { background: linear-gradient(0deg, transparent 46%, var(--accent-vivo) 46% 54%, transparent 54%); }
 .conta {
-  width: 40px;
-  height: 40px;
+  width: var(--conta);
+  height: var(--conta);
   border-radius: 50%;
   border: none;
   cursor: pointer;
   flex: none;
   background: radial-gradient(circle at 35% 30%, var(--accent-vivo), var(--accent));
   opacity: .26;
-  transform: translateX(70px) scale(.88);
+  transform: translateX(var(--folga)) scale(.88);
   transition: transform .3s var(--ease), opacity .3s var(--ease);
 }
 .conta.on { opacity: 1; transform: translateX(0) scale(1); }
@@ -59,19 +72,22 @@
 
 /* ---- apertos, no fim da folha de proposito ---- */
 
-/* telefone */
-@media (max-width: 700px) {
-  .haste { gap: 6px; }
-  .haste .rotulo { width: 46px; font-size: 8.5px; }
-  .haste .fio { height: 24px; gap: 2px; padding: 0 4px; }
-  .conta { width: 16px; height: 16px; transform: translateX(12px) scale(.85); }
-  .conta.on { transform: translateX(0) scale(1); }
-  .haste .valor { width: 16px; font-size: 11px; }
-}
-
 /* tela baixa: o abaco volta perto do tamanho antigo, senao nao cabe em 1366x768 */
 @media (max-height: 820px) {
-  .abaco { gap: 8px; max-width: 520px; }
+  .abaco { --conta: 26px; --folga: 48px; gap: 8px; max-width: 520px; }
   .haste .fio { height: 34px; }
-  .conta { width: 26px; height: 26px; transform: translateX(48px) scale(.88); }
+}
+
+/* telefone POR ULTIMO (10/09): o telefone em pe tambem tem menos de 820px de
+   altura, e com a tela baixa escrita depois dele a conta voltava pra 26px e as
+   nove passavam 42px da ponta do fio. Contas de 20px: as nove cabem no fio ate
+   num aparelho de 360px. */
+@media (max-width: 700px) {
+  .abaco { --conta: 20px; --vao: 2px; --folga: 20px; --pad: 4px; }
+  .haste { gap: 6px; }
+  .haste .rotulo { width: 46px; font-size: 8.5px; }
+  .haste .fio { height: 26px; }
+  .conta { transform: translateX(var(--folga)) scale(.85); }
+  .conta.on { transform: translateX(0) scale(1); }
+  .haste .valor { width: 16px; font-size: 11px; }
 }

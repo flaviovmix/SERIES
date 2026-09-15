@@ -38,12 +38,30 @@ nascimento publica, ao contrario dos donos das empresas.
 
 UMA PESSOA ESTA MORTA E SE FALA DELA NO PASSADO: Susan Wojcicki, que morreu em 2024.
 
+⚠️ O AVISO DA PAGINA E UM LEMBRETE, NAO UMA EXPLICACAO. Quem ouve esta serie ouve
+em sequencia e ja sabe como a pagina funciona: este e o quarto episodio da etapa. NAO
+explicar a mecanica do zero como se fosse a primeira vez. Uma frase curta na tela 1,
+dizendo que sao doze telas, que quem esta so ouvindo acompanha normalmente, e que quem
+esta com a pagina aberta vira quando ouvir o pedido. Sem ensinar a usar a pagina e sem
+dizer a frase do pedido como exemplo.
+
 REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O audio
 TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem do
 roteiro. A frase e sempre essa, "aperte o Proximo", COM o "o", sem nenhuma variacao. NAO
 juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a pagina
 tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a frase "aperte
 o Proximo" como exemplo nesse aviso.
+
+⚠️ A GRAVACAO ANTERIOR EMENDOU AS TELAS 1 e 2 E DUROU 28 MINUTOS EM VEZ DE 18. A tela 1 e
+SO a pergunta que ficou, a tese, o intervalo e o aviso da pagina; o premio e o Reed Hastings
+sao da tela 2. E cada tela tem que durar uns UM MINUTO E MEIO, nao dois e meio: se passar de
+dois minutos, a tela esta sendo esticada. NAO repetir com outras palavras o que acabou de
+ser dito e NAO resumir a tela anterior antes de comecar a nova.
+
+⚠️ A FICHA FECHA COM O QUE A PESSOA FOI FAZER. Cada ficha deste episodio termina dizendo em
+que a pessoa estava trabalhando, com o ano dito, do jeito que esta escrito no roteiro. NAO
+dizer "hoje" nem "atualmente". ⚠️ E NAO inventar nada sobre o Salar Kamangar: a ficha dele
+para onde o roteiro manda parar.
 
 PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 6 e 7 (a vitoria do premio, e o que a
 empresa fez com ele), 10 e 11 (a troca do que se mede em 2012, e a troca do motor em 2016 —
@@ -59,17 +77,14 @@ setecentos e setenta filmes", "vinte minutos", "cinco bilhoes de notas", "cento 
 algoritmos", "oito notas", "noventa e nove por cento", "cem mil pesos", "um bilhao de
 pessoas", "centenas de bilhoes de exemplos". NAO trocar milhao por bilhao.
 
-NOMES, NA PRIMEIRA VEZ, devagar: Netflix ("nét-flics"); Reed Hastings ("rid rêis-tings");
-Cinematch ("sine-métch", o sistema que a Netflix ja tinha); Simon Funk ("sái-mon fânk", e um
-apelido); Geoffrey Hinton ("djé-fri rin-ton"); YouTube ("iú-tiúb"); Eli Pariser ("í-lai
-pá-ri-ser"); Salar Kamangar ("sa-lár ka-man-gár"); Susan Wojcicki ("sú-zan uo-djís-qui");
-Jeff Dean ("djéf dín"); Facebook ("fêis-buc"); Mark Zuckerberg ("márc zâ-quer-berg"). Dizer
-"rede neural" e "rede neural profunda" em portugues, NUNCA "deep learning".
-
-⚠️ A LISTA DE PRONUNCIA ACIMA E INSTRUCAO PRA VOCE, NAO E FALA. NUNCA dizer "que se
-pronuncia", "que se le" nem "pronuncia-se" no ar. Numa gravacao anterior desta etapa saiu,
-mais de dez vezes, coisa como "o Larry Page, que se pronuncia Larry Page". Falar o nome do
-jeito certo, uma vez, e seguir em frente.
+NOMES ESTRANGEIROS: dizer devagar e com calma na primeira vez que cada um aparecer, e
+seguir em frente. NAO comentar como o nome se pronuncia, NAO repetir o nome logo depois de
+diz-lo, e NAO usar as expressoes "fala-se", "que se pronuncia", "pronuncia-se" nem "que se
+le". Dizer o nome UMA vez e continuar. Os nomes deste episodio: Netflix, Reed Hastings,
+Cinematch (o sistema de recomendacao que a Netflix ja tinha), Simon Funk (um apelido, nao o
+nome de registro), Geoffrey Hinton, YouTube, Eli Pariser, Salar Kamangar, Susan Wojcicki,
+Jeff Dean, Facebook e Mark Zuckerberg. Dizer "rede neural" e "rede neural profunda" em
+portugues, NUNCA "deep learning".
 
 ⚠️ DOIS DEFEITOS DA GRAVACAO ANTERIOR, E OS DOIS SAO FACEIS DE EVITAR:
 
@@ -99,6 +114,35 @@ mil e dezesseis, a rede neural assumindo a recomendacao; o balanco da etapa inte
 O PONTO QUE NAO PODE FALTAR: a recomendacao do YouTube nao e treinada em nota nem em
 curtida. E treinada no que a pessoa assistiu ate o fim, ou seja, no RASTRO. Essa frase e a
 tese do episodio.
+
+⚠️ A APOSTA TEM QUE SOAR COMO APOSTA, E ESTE EPISODIO TEM DUAS. Quando contar uma decisao
+que deu certo, dizer o que NAO se sabia naquele dia. Nao deixar ninguem parecer que ja
+sabia o final:
+
+- NA TELA 2, o premio de um milhao de dolares: em dois mil e seis a Netflix era DVD pelo
+  correio e ninguem sabia se streaming ia pegar. Soltar a base de notas no mundo era risco,
+  nao esperteza: podia nao aparecer ninguem melhor que o sistema da casa, e a base ainda
+  criou um problema serio de privacidade que a tela 5 conta. Dizer isso.
+- NA TELA 4, a rede neural de dois mil e sete: naquele momento rede neural era assunto FORA
+  de moda, coisa que quase ninguem levava a serio. Ninguem ali sabia que cinco anos depois
+  ela viraria a chave da industria. Dizer que na epoca aquilo era uma aposta esquisita, e
+  nao um caminho obvio.
+
+⚠️ AMARRAR COM OS OUTROS EPISODIOS DESTA ETAPA. Os quatro cobrem a mesma janela por fios
+diferentes. Onde as datas se cruzarem, lembrar em UMA frase o que estava acontecendo do
+outro lado: em dois mil e seis, quando o premio e anunciado, a busca ja tinha virado
+negocio e o YouTube estava sendo comprado; e em dois mil e onze e dois mil e doze, o feed
+que aprende e a troca do que se mede acontecem enquanto as redes sociais do episodio
+anterior ja tinham gente demais publicando.
+
+FALAR DAS DUAS OBRAS QUE EXISTEM, onde o roteiro manda, em duas frases cada, sem virar
+propaganda e sempre com o cuidado junto:
+- na tela 9, "O Dilema das Redes Sociais" (dois mil e vinte, Netflix). ⚠️ Dizer que ele NAO
+  e documentario: e docudrama, com cenas de ficcao encenadas no meio das entrevistas.
+- na tela 11, "AlphaGo" (dois mil e dezessete), liberado de graca no YouTube pela DeepMind.
+  ⚠️ Dizer que ele nao fala de recomendacao e foi feito com participacao da empresa.
+NAO inventar outras obras, NAO dizer onde assistir alem do que esta escrito aqui, e NAO
+dizer nota, premio nem quem atua.
 
 CUIDADOS DE FATO:
 - ⚠️ A NETFLIX USOU SIM parte do resultado do premio. Foram pra producao a fatoracao de

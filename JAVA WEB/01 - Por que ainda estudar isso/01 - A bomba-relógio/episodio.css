@@ -6,7 +6,7 @@
 
 /* ---- capa: a ilustração no lugar em que os outros episódios põem o modelo 3D ---- */
 .capa-arte {
-  flex: 1 1 auto;
+  flex: 0 1 820px;   /* nao estica alem do teto da arte (a imagem, 820px): a sobra da capa se divide por igual (telas.css, 11/09) */
   min-width: 0;
   margin: 0;
   display: flex;

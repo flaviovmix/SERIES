@@ -1,0 +1,7 @@
+Titulo: O algoritmo que aprendeu com seu rastro
+Notebook: 10-04-O algoritmo de recomendacao
+
+Descricao:
+O conteúdo apresenta a história técnica e humana dos algoritmos de recomendação entre os anos de dois mil e seis e dois mil e dezesseis. Os textos detalham como a tecnologia evoluiu de regras escritas por humanos para redes neurais profundas que aprendem sozinhas através do rastro digital deixado pelos usuários. A narrativa destaca marcos fundamentais, como o prêmio Netflix de um milhão de dólares e a mudança de métricas no YouTube, que passou a priorizar o tempo assistido em vez do clique. Além disso, as fontes exploram as implicações sociais dessa evolução, mencionando o conceito de bolha de filtro e os desafios da privacidade de dados. O material foca na construção de peças de software e no impacto de figuras centrais da indústria, conectando o avanço do hardware à sofisticação dos sistemas que hoje organizam a informação.
+
+Link: https://notebook.google.com/notebook/4a1a884b-fc67-4cda-b455-499c85879293

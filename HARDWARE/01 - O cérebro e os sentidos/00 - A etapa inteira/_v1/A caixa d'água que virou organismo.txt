@@ -1,0 +1,7 @@
+Titulo: A caixa d'água que virou organismo
+Notebook: 01-00-A etapa inteira
+
+Descricao:
+O material intitulado O Cérebro e os Sentidos apresenta a primeira etapa da série Do LED ao ESP32, que ensina a automação de uma caixa d'água utilizando microcontroladores. Os textos detalham como transformar um chip comum no cérebro de um sistema capaz de monitorar níveis de água, acionar bombas e emitir alertas de forma autônoma. O conteúdo explica conceitos fundamentais da eletrônica, como entradas digitais e analógicas, o uso de relés para controle de potência e a lógica de histerese para evitar desgastes no equipamento. O projeto prioriza a acessibilidade ao permitir o acompanhamento por meio de um simulador de Arduino online, sem a necessidade imediata de componentes físicos. Por fim, as fontes destacam que esses princípios de leitura, decisão e ação são a base de qualquer controle automático moderno, desde eletrodomésticos até processos industriais complexos.
+
+Link: https://notebooklm.google.com/notebook/90ee7a0d-176d-44ba-999e-bc820d5b9db0

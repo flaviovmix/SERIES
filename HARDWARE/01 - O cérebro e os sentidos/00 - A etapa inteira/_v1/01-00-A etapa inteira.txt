@@ -1,0 +1,33 @@
+Inicie dizendo: O Cerebro e os Sentidos
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Cerebro e os Sentidos.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio.
+
+Este e o episodio da etapa inteira numero 1 da serie HARDWARE, que monta uma caixa d'agua de predio que se cuida sozinha.
+
+FOCO: como a caixa d'agua ganha cerebro e sentidos. O microcontrolador e o laco que nao para, a entrada que diz sim ou nao (a boia), a entrada que diz quanto (o nivel), o meio termo do PWM e a decisao que liga a bomba sozinha.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO: nada de tarefa pra fazer, nada de tabela pra preencher, nada de "o exercicio pede".
+
+NAO EXISTE ANIMACAO: e audio puro. NAO peca pra apertar nada e NAO cite tela, imagem, figura nem pagina. Quem ouve esta no onibus ou no carro: tudo tem que se entender so ouvindo.
+
+NAO antecipar as etapas seguintes: o sensor de eco, o visor, o WiFi e a placa propria so aparecem na frase final, como o que vem depois.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Cerebro e os Sentidos.txt. NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

@@ -20,6 +20,8 @@ Decisões **travadas**. Uma vez escritas, não se repropõe. Se a realidade derr
 
 - Nenhuma travada pela tabela da Etapa 0 ainda. As propostas, uma por linha, estão lá: o dono confirma ou troca, e cada uma vira `D*` aqui com a data.
 - D1 (30/08/2026, dita pelo dono na sessão do ábaco, antes da Etapa 0): **o site substitui as notas do Nexus.** A animação é sempre servida pelo site (nunca mais `file://` nem anexo em nota). Consequência direta: **não existe mais arquivo construído, base64 nem embutidor**; a fonte é o entregável, imagem entra por caminho e o modelo 3D por `src` no iframe. Derruba duas linhas da tabela da Etapa 0 ("fonte de verdade" e "onde publica"), que precisam ser reescritas quando a etapa rodar.
+- D2 (13/09/2026, dita pelo dono por print): **o site segue o desenho do SITE-AFX** (papel, tinta, tracejado, Schibsted Grotesk e IBM Plex Mono, pílulas, aros com ícone de traço), com o tema escuro tirado da "noite" do próprio AFX. Fase 1 = as páginas do `site/`, no ar em 13/09. **As animações ficam com a paleta antiga até a fase 2** (a paleta antiga está repetida no `site/css/animacao/tokens.css`). Os tokens mantiveram os nomes: trocar o desenho é trocar valores.
+- D3 (14/09/2026, dita pelo dono por prints): **no telefone, o tocador e a paginação se recolhem quando o áudio começa** e uma seta no canto de baixo traz tudo de volta; **as listas do episódio (extras e filmes) vivem em guias em cima do tocador**, que fica fixo embaixo seja qual for a guia; sem item, a guia avisa. No desktop não há painel: as listas moram na tela de fim. **A fonte das listas é a árvore `MENU` do `site/js/menu.js`** (campos `extras` e `filmes` por episódio), e a tela muda "Pra ver" de 08/09 deixa de existir. Registro completo em `Como Reinventar o Computador do Zero/plano/_HANDOFF-2026-09-14.md`.
 
 ## Pendências
 
@@ -33,6 +35,11 @@ Cada uma diz **em que etapa trava**. Pendência sem etapa dona vira esquecimento
 - P6. Setas do lightbox: no ábaco ficaram nas bordas da janela; em 23/08 (ep 04-01) o dono pediu grudadas na foto. A base fixou **bordas da janela** (é o que está no ábaco, visto e não reclamado em 30/08); se a decisão for a outra, muda em `lightbox.css` só. **Trava a Etapa 5** (migração dos antigos).
 - P7. O site não tem favicon: toda página (e o Lighthouse) registra um 404 no console, e o "boas práticas" para em 96. **Trava a Etapa 4.**
 - P8. Performance do Lighthouse na animação: 65 no celular, 71 no desktop (FCP 4s no celular emulado). O custo é o three.js do modelo da capa por CDN, as fontes do Google e as 11 imagens carregadas de uma vez. Acessibilidade está em 100; a performance fica pra quando a rede de testes existir. **Trava a Etapa 3.**
+- P9 (10/09/2026). Fotos de cena que o corte 16:9 estraga: das 130 fotos de cena, 21 são quadradas ou em pé, e umas 8 perdem o assunto no corte do meio (as duas válvulas, o rádio, o Jobs sem o rosto, o Android, os diagramas do transformer e da matriz, a tela do Nexus). Mostrar a foto inteira dentro da moldura 16:9 (com faixa dos lados, como a capa) ou trocar a imagem é decisão do dono. Quase todas estão nos episódios do `_REFAZER`. **Trava a Etapa 5.**
+- P10 (14/09/2026). Fotos de capa sem crédito registrado: as 4 `site/img/extra-11`, `12`, `16` e `17` (fotos), e 15 imagens com cara de ilustração pelo nome, a confirmar (as 13 `.webp` de `site/img`, a `tela-01.webp` do JAVA WEB 01-02 e a `capa-ilustra.jpg` do 06-01). Sem crédito, foto real não ganha a lupa. **Trava a Etapa 6.**
+- P11 (14/09/2026). `site/etapas/hardware-01.html` tem mudança local sem OK. Subir, descartar ou seguir editando é do dono. **Trava a Etapa 6.**
+- P12 (14/09/2026). O último commit do SEIRES é de 08/09, e o gerador de cards vai reescrever 13 páginas que já têm mudança sem commit. Savepoint (commit por ordem do dono) antes de gerar. **Trava a Etapa 6.**
+- P13 (15/09/2026). Série desativada pelo painel some do menu e da home, mas as páginas dela seguem abrindo por link direto, porque o site é estático. Bloquear de verdade é uma regra no nginx do container `serie`; fazer ou não é do dono. **Trava a Etapa 6.**
 
 ---
 
@@ -44,10 +51,11 @@ Ao fechar uma etapa, marcar `✅ + data` **aqui e no arquivo dela**. Índice des
 |---|---|---|---|
 | 0 | Decisões travadas e esqueleto do repo | não iniciada | |
 | 1 | Arquivos pesados e backup | não iniciada | |
-| 2 | A base da animação, sem clonar | em andamento, executada; falta a validação do dono (régua 7) | 30/08/2026 |
-| 3 | A rede de testes das animações e dos modelos | não iniciada | |
-| 4 | Publicação | não iniciada | |
+| 2 | A base da animação, sem clonar | em andamento, executada e ampliada em 08 a 14/09 (tocador, fonte, navegação, tela de fim, cena 16:9; em 12 a 14/09 o lote 3 de layout, o painel do telefone que recolhe no play com as guias Extras/Filmes, e as listas de extras e filmes na tela de fim, tudo no ar); falta a validação do dono (régua 7) | 14/09/2026 |
+| 3 | A rede de testes das animações e dos modelos | não iniciada (os `qa-*.js` do site, versionados em 14/09, são o começo dela pelo lado do site) | 14/09/2026 |
+| 4 | Publicação | em andamento: atualização e conferência pós-publicação por script versionado desde 14/09 (`inventario-site.sh`, `revisa-diferencas.sh`, `sobe-arquivos.sh`, `qa-*.js ar`); falta o README de publicar episódio e reescrever os itens que ainda falam em nota do Nexus | 14/09/2026 |
 | 5 | Operação e evolução | não iniciada | |
+| 6 | O card vira componente, com a lupa e o painel das séries | não iniciada (plano escrito em 14 e 15/09; próxima: 6.0, savepoint e decisões) | 15/09/2026 |
 
 Etapa em andamento se escreve com a posição: `em andamento, 2.3 de 4`.
 

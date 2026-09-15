@@ -7,7 +7,7 @@
    grande, com o nome de cada metade do lado. So deste episodio. */
 
 .arroba {
-  flex: 1 1 auto;
+  flex: 0 1 auto;   /* nao estica: a sobra da ficha se divide por igual (telas.css, 11/09) */
   min-width: 0;
   display: flex;
   align-items: center;

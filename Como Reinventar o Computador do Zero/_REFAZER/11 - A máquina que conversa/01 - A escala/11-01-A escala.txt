@@ -1,0 +1,258 @@
+Inicie dizendo: A Escala
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Escala.txt enviado como fonte. Esse
+arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o primeiro episodio da etapa A MAQUINA QUE CONVERSA, a decima primeira etapa da serie
+Do Abaco a IA.
+
+RETOMADA NA TELA 1: a etapa anterior terminou com a maquina que adivinha o que voce quer sem
+voce pedir, lendo o seu rastro, e perguntou: e se desse pra pedir, com as suas palavras, e a
+maquina responder? A primeira frase depois do titulo retoma isso.
+
+O ASSUNTO E CONSTRUIR, NAO VENDER. NAO virar historia de empresa de sucesso, NAO fazer corrida
+de empresas e NAO fazer sermao sobre inteligencia artificial. O assunto e um desenho de
+software que fica maior, o texto que alimenta ele e a placa que roda ele.
+
+A TESE, DITA COM ESSAS PALAVRAS: o mesmo desenho de dois mil e dezessete, treinado so pra
+adivinhar a proxima palavra, ficou mil vezes maior em cinco anos. O programa achado melhora
+so de ficar maior, e quem decide o tamanho e a placa e o dado, nao o programador.
+
+ESTE EPISODIO COBRE DE 2017 A 2022, EM ORDEM. Dizer o intervalo na abertura e, no fim, dizer
+em que ano o episodio para. Os anos se sobrepoem com o fim da etapa 9 e com a etapa 10
+inteira: dizer numa frase, na tela 1.
+
+COM PESSOAS E COM NOME, E COM FICHA. Na primeira vez que cada pessoa aparece, ler a ficha
+dela, uma frase so, no formato: nome, ano de nascimento, idade naquele momento, e o destino
+do trabalho com o ano dito. As fichas estao no roteiro, marcadas com FICHA. Sao TRES com
+idade: Vaswani, Radford e Amodei. A PALAVRA "FICHA" NAO E DITA EM VOZ ALTA, e a palavra
+"CENA" tambem nao: emendar direto no nome.
+
+⚠️ QUATRO PESSOAS CENTRAIS NAO TEM ANO DE NASCIMENTO PUBLICO E ENTRAM SEM IDADE: Jared
+Kaplan, Jacob Devlin, Tom Brown e Jordan Hoffmann. Falar deles pelo nome, dizer onde
+estudaram e onde estavam trabalhando, do jeito que o roteiro escreve, sem inventar idade. Na
+tela 12 dizer, em uma frase, que quatro dessas pessoas nao tem nem ano de nascimento
+publico.
+
+ILYA SUTSKEVER JA TEM FICHA NESTA SERIE: aqui e relembrado em uma frase, sem repetir a ficha.
+
+TODOS OS PROTAGONISTAS ESTAO VIVOS EM DOIS MIL E VINTE E SEIS. Ninguem morreu.
+
+⚠️ O AVISO DA PAGINA E UM LEMBRETE, NAO UMA EXPLICACAO. Quem ouve esta serie ouve em
+sequencia e ja sabe como a pagina funciona. NAO explicar a mecanica do zero. Uma frase curta
+na tela 1, dizendo que sao doze telas, que quem esta so ouvindo acompanha normalmente, e que
+quem esta com a pagina aberta vira quando ouvir o pedido. Sem ensinar a usar a pagina e sem
+dizer a frase do pedido como exemplo.
+
+REGRA DURA DAS TELAS. Este episodio acompanha uma pagina de animacao com 12 telas. O audio
+TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem do
+roteiro. A frase e sempre essa, "aperte o Proximo", COM o "o", sem nenhuma variacao. NAO
+juntar duas telas num bloco so e NAO seguir adiante sem pedir. Avisar na tela 1 que a pagina
+tem 12 telas e que quem esta so ouvindo acompanha normalmente, MAS sem dizer a frase "aperte
+o Proximo" como exemplo nesse aviso.
+
+CADA TELA DURA UNS UM MINUTO E MEIO, nao dois e meio: se passar de dois minutos, a tela esta
+sendo esticada. NAO repetir com outras palavras o que acabou de ser dito e NAO resumir a
+tela anterior antes de comecar a nova.
+
+⚠️ A FICHA FECHA COM O QUE A PESSOA FOI FAZER. Cada ficha termina dizendo em que a pessoa
+estava trabalhando em dois mil e vinte e seis, do jeito que esta escrito no roteiro. NAO
+dizer "hoje" nem "atualmente". NAO inventar nada sobre Devlin e Hoffmann: a ficha deles para
+onde o roteiro manda parar ("a ultima noticia publica").
+
+PARES QUE COSTUMAM SER EMENDADOS E NAO PODEM: telas 2 e 3 (o paper de 2017, e a tarefa de
+tapar a palavra), 7 e 8 (a reta, e o GPT tres), 10 e 11 (o Chinchilla, e o Codex com o GPT
+tres ponto cinco), 11 e 12 (o GPT tres ponto cinco, e o balanco). Um pedido de Proximo entre
+cada par.
+
+A LINHA "Inicie dizendo" NAO E DITA EM VOZ ALTA: o apresentador abre so com o titulo.
+
+ANOS E NUMEROS POR EXTENSO E DEVAGAR: "dois mil e dezessete", "dois mil e dezoito", "dois mil
+e dezenove", "dois mil e vinte", "dois mil e vinte e um", "dois mil e vinte e dois", "dois mil
+e vinte e seis", "oito placas de video", "mais de sete mil livros", "cento e dezessete
+milhoes", "trezentos e quarenta milhoes", "dezesseis TPUs", "quatro dias", "um bilhao e
+quinhentos milhoes", "oito milhoes de paginas", "quarenta gigabytes", "sete ordens de
+grandeza", "cento e setenta e cinco bilhoes", "trezentos bilhoes de pedacos de texto",
+"trinta e um autores", "duzentos e oitenta e cinco mil nucleos de processador", "dez mil
+placas de video", "setenta bilhoes", "um trilhao e quatrocentos bilhoes", "duzentos e oitenta
+bilhoes", "vinte e dois autores". NAO trocar milhao por bilhao nem bilhao por trilhao. "Pecas"
+e "parametros" sao a mesma coisa: explicar "parametros" em meia frase na tela 4.
+
+NOMES ESTRANGEIROS: dizer devagar e com calma na primeira vez que cada um aparecer, e
+seguir em frente. NAO comentar como o nome se pronuncia, NAO repetir o nome logo depois de
+dize-lo, e NAO usar as expressoes "fala-se", "que se pronuncia", "pronuncia-se" nem "que se
+le". Dizer o nome UMA vez e continuar. Os nomes deste episodio: Attention is All You Need (o
+titulo do paper, dito uma vez em ingles), Ashish Vaswani, Google, OpenAI, Alec Radford, Ilya
+Sutskever, Olin College, Jacob Devlin, BERT, Maryland, Microsoft, Jared Kaplan, Johns
+Hopkins, Stanford, Harvard, Dario Amodei, Princeton, Anthropic, Tom Brown, MIT, DeepMind,
+Jordan Hoffmann, Gopher, Chinchilla, Codex, GitHub Copilot, ChatGPT, Nvidia, The Guardian,
+Eternal You. As siglas GPT, TPU e API sao ditas letra por letra, em portugues, e os numeros
+delas em portugues: "GPT um", "GPT dois", "GPT tres", "GPT tres ponto cinco". Dizer "rede
+neural" em portugues, NUNCA "deep learning".
+
+⚠️ DOIS DEFEITOS DE GRAVACOES ANTERIORES DESTA SERIE, FACEIS DE EVITAR:
+
+1. NAO usar "genial", "genialidade" nem "genio", nem pra elogiar pessoa nem pra elogiar
+   metodo. Dizer o que a coisa FAZ, e deixar o ouvinte achar bonito sozinho.
+
+2. O fecho da ficha e sempre "VIVO EM DOIS MIL E VINTE E SEIS", com o ano dito e com o que a
+   pessoa estava fazendo. "Vivo hoje" nao serve.
+
+⚠️ DUAS GRAVACOES ANTERIORES DESTE EPISODIO FORAM REPROVADAS. O QUE ELAS ERRARAM, E QUE
+NAO PODE SE REPETIR:
+
+1. A segunda usou palavras da lista de PROIBIDAS: "colossal" (quatro vezes), "genial",
+   "fascinante", "genio", "revolucao". E fechou com "muito obrigado pela companhia, ate a
+   proxima". NENHUMA palavra da lista, e NENHUMA despedida: o episodio termina na pergunta.
+2. A segunda REESCREVEU as fichas com futuro vago e inventado ("continuaria ativo",
+   "estaria liderando projetos de ponta"). E chegou a dizer que Radford continuaria na
+   OpenAI, o que e FALSO. A ficha e lida COMO ESTA NO ROTEIRO, com o lugar e o ano:
+   Vaswani na Nvidia em dois mil e vinte e seis; Radford por conta propria, FORA da OpenAI
+   desde o fim de dois mil e vinte e quatro; Devlin, "a ultima noticia publica e de dois
+   mil e vinte e tres"; Kaplan e Amodei na Anthropic, que fundaram em dois mil e vinte e
+   um; Brown na Anthropic; Hoffmann, "a ultima noticia publica e de dois mil e vinte e
+   quatro, na Microsoft". Amodei tinha TRINTA E SEIS anos em janeiro de dois mil e vinte.
+3. A segunda pulou os QUATRO ganchos de extra (telas 2, 3, 10 e 11) e as DUAS obras (o
+   curta "Ilya" do Guardian na tela 4, o "Eternal You" na tela 8). Todos tem que estar,
+   onde o roteiro manda.
+4. A segunda nao disse "Copilot" nem as datas da tela 11; a primeira disse "GPT chat".
+   Dizer: vinte e nove de junho de dois mil e vinte e um, o GitHub Copilot; vinte e oito de
+   novembro de dois mil e vinte e dois, o ultimo modelo da serie tres ponto cinco; trinta
+   de novembro de dois mil e vinte e dois, o ChatGPT, dito "chat GPT", nessa ordem.
+5. A segunda inventou analogias: a mesa de som com botoes, o livro de exercicios de
+   preencher lacunas, os blocos de montar. A UNICA analogia autorizada e a turma de quinta
+   serie, nas telas 4 e 8. Parametro se explica direto: o numero ajustavel que a maquina
+   aprende. Token se explica direto: pedaco de texto.
+6. A segunda pulou os avisos das praticas. Na tela 7 avisar que tem um controle na tela pra
+   arrastar o tamanho do modelo; na tela 9 convidar a pausar o audio, resolver na tela e
+   voltar.
+7. As duas inventaram frases dramaticas que nao estao no roteiro: "chega o monstro", "a
+   midia pirou", "o risco some", "sermoes filosoficos", "papo de ficcao cientifica", "pulo
+   do gato", "chocante", "bizarro", "que loucura", "equacao financeira super garantida",
+   "o sistema foi domado para conversar", "anonimos mudando a historia da tecnologia".
+   Dizer o que o roteiro diz, do jeito mais direto.
+8. A primeira atribuiu "tom alarmista" ao curta do Guardian: o cuidado dele e SO "montado em
+   dois mil e vinte e tres, so a voz dele". O alarmista e o "Eternal You".
+9. As duas disseram "aperte proximo" sem o "o" pelo menos uma vez, e a primeira disse "fim
+   da linha dessa etapa" (e o fim do EPISODIO, a etapa segue). A frase e sempre "aperte o
+   Proximo", com o "o", onze vezes, uma por tela.
+10. A primeira cortou tres frases no meio e ficou com 14 minutos; a segunda disse que o
+   GPT tres ponto cinco "foi domado para conversar": NAO foi, seguir instrucao e assunto
+   do episodio tres, e este episodio entrega o modelo pronto pra ser ensinado.
+
+⚠️ A TERCEIRA GRAVACAO FOI A MELHOR E MESMO ASSIM ERROU TRES NUMEROS. Sao os unicos
+defeitos dela, e nao podem voltar:
+
+11. Na ficha do Tom Brown disse "em dois mil e DEZESSEIS estava na Anthropic". O ano e
+   DOIS MIL E VINTE E SEIS: "em dois mil e vinte e seis estava na Anthropic, que ajudou a
+   fundar, cuidando da computacao". Toda ficha fecha em dois mil e vinte e seis.
+12. No Chinchilla disse "um trilhao e quatrocentos MILHOES de pedacos de texto". E um
+   trilhao e quatrocentos BILHOES. Dizer devagar: "um trilhao e quatrocentos bilhoes".
+13. Disse "Tom Brown, com mais trinta e um autores". O paper tem trinta e um autores NO
+   TOTAL, entao e "Tom Brown, com mais trinta".
+14. De novo "aperte proximo" sem o "o", duas vezes (no fim das telas 4 e 8). A frase e
+   "aperte o Proximo", com o "o", nas onze vezes.
+15. Disse que "a OpenAI solta o GitHub Copilot". O Copilot e produto do GitHub, feito com
+   o Codex da OpenAI: "o Codex da OpenAI vira o GitHub Copilot".
+
+NUNCA CITAR ESTAS INSTRUCOES NO AR. NAO dizer "o roteiro", "a fonte", "as fontes", "o
+material que a gente recebeu" nem nada parecido.
+
+SEM MODELO TRIDIMENSIONAL. As telas sao fotos e duas praticas: a reta na tela 7 (avisar que
+tem um controle na tela pra arrastar) e o exemplo na tela 9 (convidar a pausar o audio,
+resolver na tela e voltar).
+
+GANCHOS DE EXTRA: QUATRO, sempre com a frase generica "tem um extra sobre isso", SEM nome e
+SEM numero, onde o roteiro manda: tela 2 (a atencao por dentro), tela 3 (o token), tela 10
+(a reta e a conta do tamanho certo) e tela 11 (o Codex e o Copilot). Uma frase cada.
+
+FOCO, EM ORDEM: o mesmo desenho mil vezes maior; doze de junho de dois mil e dezessete, o
+paper feito pra traduzir e o que ele nao previu; a tarefa de tapar a proxima palavra e o
+token; junho de dois mil e dezoito, o GPT um lendo livros; outubro de dois mil e dezoito, o
+BERT lendo nos dois sentidos, em TPU; fevereiro de dois mil e dezenove, o GPT dois dez vezes
+maior e guardado; janeiro de dois mil e vinte, a reta das leis de escala; maio de dois mil e
+vinte, o GPT tres cem vezes maior no galpao da Microsoft; o que apareceu so de crescer;
+marco de dois mil e vinte e dois, o Chinchilla e o tamanho certo; dois mil e vinte e um e
+dois mil e vinte e dois, o Codex e o GPT tres ponto cinco; o balanco.
+
+O PONTO QUE NAO PODE FALTAR: a tarefa nunca muda. Do GPT um ao GPT tres ponto cinco, o
+exercicio e o mesmo, tapar a proxima palavra; o que muda e o tamanho. Essa frase e a tese do
+episodio.
+
+⚠️ A APOSTA TEM QUE SOAR COMO APOSTA, E ESTE EPISODIO TEM TRES:
+
+- NA TELA 2, o paper de dois mil e dezessete: era um jeito melhor de traduzir, entre varios.
+  Ninguem sabia que era ESSE desenho que ia crescer; o proprio paper fecha falando de imagem,
+  audio e video.
+- NA TELA 6, segurar o GPT dois: ninguem sabia se era cuidado ou exagero, e a critica veio dos
+  dois lados.
+- NA TELA 8, gastar a conta do GPT tres: a reta dizia que ia render, mas ninguem tinha
+  treinado nada perto daquele tamanho. Podia sair cem vezes mais caro e pouco melhor.
+
+⚠️ AMARRAR COM OS OUTROS EPISODIOS DESTA ETAPA, em uma frase onde as datas se cruzam: em maio
+de dois mil e vinte, nove dias antes do GPT tres, a Microsoft anuncia o supercomputador que
+e o galpao do episodio dois; em marco de dois mil e vinte e dois, no mes do Chinchilla, a
+OpenAI publica o InstructGPT, que e o episodio tres; em novembro de dois mil e vinte e dois,
+o ChatGPT, que e o episodio quatro.
+
+FALAR DAS DUAS OBRAS QUE EXISTEM, onde o roteiro manda, em duas frases cada, sem virar
+propaganda e sempre com o cuidado junto:
+- na tela 4, o documentario curto "Ilya", do jornal The Guardian, de dois mil e vinte e tres,
+  com conversas filmadas com o Sutskever entre dois mil e dezesseis e dois mil e dezenove.
+  ⚠️ Dizer que foi montado em dois mil e vinte e tres, depois do ChatGPT, e que so tem a
+  voz dele, sem contraditorio.
+- na tela 8, o documentario "Eternal You", de dois mil e vinte e quatro, que mostra o GPT
+  tres virando produto num servico que simulava conversa com pessoas mortas. ⚠️ Dizer que o
+  tom e alarmista e que o criador do servico contestou a montagem.
+NAO inventar outras obras, NAO dizer onde assistir, e NAO dizer nota, premio nem quem atua.
+
+CUIDADOS DE FATO:
+- ⚠️ O paper do GPT tres NAO agradece a Microsoft. Ele so diz que o modelo foi treinado em
+  placas V100 num cluster "fornecido pela Microsoft". Dizer assim.
+- ⚠️ O supercomputador da Microsoft e "entre os cinco maiores DIVULGADOS no mundo", nao
+  "entre os cinco maiores do mundo".
+- ⚠️ Os cento e dezessete milhoes de parametros do GPT um NAO estao no paper dele: estao no
+  paper do GPT dois, que chama o primeiro de "o GPT original". Dizer isso em uma frase.
+- ⚠️ "Vinte pedacos de texto por parametro" NAO e frase do paper do Chinchilla: e o que sai
+  da tabela. A frase do paper e "dobrou o modelo, dobra o texto".
+- ⚠️ O GPT dois foi liberado em ETAPAS ao longo de dois mil e dezenove, e o modelo completo
+  saiu em cinco de novembro. NAO dizer que nunca foi liberado.
+- ⚠️ O BERT foi treinado em TPU, e o GPT um em placas de video. NAO trocar.
+- ⚠️ O ChatGPT NAO e contado neste episodio: uma frase na tela 11 dizendo que ele foi
+  ajustado a partir de um modelo da serie GPT tres ponto cinco, e que isso e o episodio
+  quatro.
+
+⚠️ ESTE EPISODIO ABRE A ETAPA E NAO FECHA NADA. Na ultima tela: balanco das pessoas nome por
+nome, onde estavam em dois mil e vinte e seis, a licao, e a pergunta que abre o proximo
+episodio (quem constroi o galpao?). NAO dizer "fim da serie", "ate o proximo", "proximo
+mergulho" nem "proximo encontro".
+
+DURACAO: cerca de 18 minutos. Nao esticar; e nao encurtar pulando as datas e as fichas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use
+palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal,
+monumental, fascinante, extraordinario, visionario, genio, genial, genialidade, lendario,
+revolucionario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta
+uma questao importante", "a pergunta de um milhao de dolares", "e aqui que fica realmente
+interessante", "a genialidade por tras disso", "advogado do diabo", "mudou o mundo pra
+sempre", "revolucionou tudo", "o resto e historia", "ate o proximo", "proximo mergulho",
+"proximo encontro".
+
+---------------
+
+Use SOMENTE a analogia descrita no roteiro: a turma de quinta serie, so pra dizer o que e a
+placa de video, nas telas 4 e 8. NAO invente analogias novas. A tarefa de tapar a palavra e a
+reta das leis de escala sao explicadas direto, sem comparacao.
+
+Use tambem o Overview.txt como contexto curto.

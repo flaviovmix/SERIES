@@ -1,7 +1,9 @@
-# Série: Como Reinventar o Computador do Zero — do Ábaco ao Transformer
+# Série: Do Ábaco à IA (pasta e URLs: "Como Reinventar o Computador do Zero")
+
+⚠️ **Nome novo desde 09/09/2026: "Do Ábaco à IA"** (medido antes de escolher: é o que cabe em uma linha no menu em qualquer largura). Trocado só no texto do site (título, h1, cards, linha de contexto das páginas, chave `nome:` do `menu.js`). **A pasta e as URLs continuam "Como Reinventar o Computador do Zero"**, porque é o endereço de tudo que está no ar e de todo link já dado; renomear a pasta é outra tarefa (pasta + `href` do MENU + deploy + redirect).
 
 **Fonte principal:** `_arquivos\transcricao.txt` (vídeo do canal Infinitamente, 1h16min; o `video.mp4` e o `audio.mp3` também estão em `_arquivos\`) — cobre até os compiladores (~anos 1950).
-**Extensão da série:** depois do vídeo, a história continua por conta própria até **2017**, quando o paper *Attention is All You Need* apresentou o **Transformer** — a arquitetura que tornou possível as IAs atuais.
+**Extensão da série:** depois do vídeo, a história continua por conta própria. A meta original era parar em **2017**, no Transformer (*Attention is All You Need*). Em **07/09 a série virou aberta**, sem fim previsto: a etapa 9 fecha o arco da máquina em 2017, a 10 conta a rede virando feed, a 11 (espinha desenhada em 10/09) conta a máquina que conversa, e a 12 fica prevista pra 2023–2026.
 **Formato:** episódios NotebookLM via `/criar-podcast` (trio Overview.txt + _NotebookLM_ + prompt por episódio), cada um com sua `animacao.html`.
 
 ## Analogias oficiais da série (decisões do Flávio, 07/09/2026)
@@ -52,9 +54,9 @@ dentro)*
 Uma pergunta única atravessa tudo: **como pedras que a gente move viraram máquinas que conversam?**
 Cada episódio adiciona uma peça: contar → instrumento → engrenagem → eletricidade → lógica → memória → universalidade → miniaturização → conexão → aprendizado → atenção.
 
-A série é dividida em **10 etapas** (a 10 entrou em 07/09; a 11 que chegou a ser proposta virou extra no mesmo dia) (reorganização de 22/08 em 10; renumerada em 04/09 pra 9, quando a antiga 7 foi absorvida pela 6; a tabela abaixo segue a numeração de 04/09, mas os títulos das seções mais antigas deste arquivo ainda trazem a numeração velha). A etapa é a unidade de planejamento e de leitura da página: cada uma tem um tema, um período e um punhado de episódios. Antes disso o plano vivia em duas listas paralelas (os 16 episódios da transcrição e os 11 de Equipamentos) que se sobrepunham — as etapas são a espinha única que substituiu as duas.
+A série tem **10 etapas no ar e é aberta** (a 10 entrou em 07/09; no mesmo dia a 11 chegou a virar extra e voltou a ser etapa; a espinha da 11 foi desenhada em 10/09 e a 12 está prevista) (reorganização de 22/08 em 10; renumerada em 04/09 pra 9, quando a antiga 7 foi absorvida pela 6; a tabela abaixo segue a numeração de 04/09, mas os títulos das seções mais antigas deste arquivo ainda trazem a numeração velha). A etapa é a unidade de planejamento e de leitura da página: cada uma tem um tema, um período e um punhado de episódios. Antes disso o plano vivia em duas listas paralelas (os 16 episódios da transcrição e os 11 de Equipamentos) que se sobrepunham — as etapas são a espinha única que substituiu as duas.
 
-## As etapas (9 fechadas, a 10 aprovada em 07/09)
+## As etapas (10 no ar, a 11 desenhada em 10/09, a 12 prevista)
 
 | # | Etapa | Complemento | Período | Eps | Status |
 |---|---|---|---|---|---|
@@ -66,11 +68,13 @@ A série é dividida em **10 etapas** (a 10 entrou em 07/09; a 11 que chegou a s
 | 6 | **A máquina que liga** | do papel à tomada, e da tomada à nossa língua | 1936–1959 | 4 | 🟢 |
 | 7 | **O computador encolhe** | a mesma máquina, cabendo numa pastilha | 1947–1974 | 3 | 🟢 |
 | 8 | **Da sala pro mundo** | entra em casa, vira rede, e o sistema que roda os outros | 1961–1997 | 3 | 🟢 (01 e 02 no ar em 06/09, 03 em 07/09) |
-| 9 | **A máquina que aprende** | as peças da corrida e o programa que é achado, não escrito | 1993–2017 | 4 | 🔴 (espinha aprovada em 06/09) |
-| 10 | **A rede vira feed** | a bolha, as redes sociais e o algoritmo que escolhe por você | 1995–2016 | 4 | 🔴 (aprovada em 07/09, a última da série) |
+| 9 | **A máquina que aprende** | as peças da corrida e o programa que é achado, não escrito | 1993–2017 | 4 | 🟢 no ar desde 08/09 |
+| 10 | **A rede vira feed** | a bolha, as redes sociais e o algoritmo que escolhe por você | 1995–2016 | 4 | 🟢 no ar (01 a 03 em 08/09, 04 em 09/09) |
+| 11 | **A máquina que conversa** | o desenho de 2017 mil vezes maior, o galpão feito pra ele, e gente ensinando a responder | 2017–2022 | 4 | 🟠 01 no ar desde 11/09 (v3, com três ressalvas de número pra ele ouvir); 02 gravado (v1 de 16:50, aceita em 15/09 com ressalvas), falta a página; 03 e 04 "em produção" |
+| 12 | **(sem título)** | a corrida das placas, o modelo que vê e ouve, peso aberto contra fechado, o agente | 2023–2026 | ? | 🔴 prevista em 07/09; papéis ainda mudam |
 
 Status: 🔴 não iniciado · 🟠 parcial (alguns episódios publicados) · 🟢 tudo publicado
-**Placar (27/08):** 15 episódios publicados + piloto (a etapa 7 inteira entrou em 27/08) · **20 pela frente** (fora os candidatos) · 6 áudios prontos aguardando conferência (eps `01`-`04` da etapa 4 + 2 extras). Fora das etapas existe também a pasta **`_EXTRAS\`** (episódios avulsos autocontidos — ver seção própria).
+**Placar (10/09):** no site (`series.afx.art.br`) estão **19 animações** de episódio (etapa 1: o Ábaco; 6: 4; 7: 3; 8: 3; 9: 4; 10: 4) e **10 extras** com áudio (mais 8 cards "em produção" no hub). ⚠️ As etapas 2 a 5 só existem no acervo antigo do Nexus e não têm página no site: o 🟢/🟠 delas nesta tabela fala do acervo, não do site (o Zero e os Números da etapa 1 aparece no site como extra 08, apontando pra animação antiga em `OLD/`). Fora das etapas existe também a pasta **`_EXTRAS\`** (episódios avulsos — ver seção própria).
 
 ---
 
@@ -84,6 +88,25 @@ Status: 🔴 não iniciado · 🟠 parcial (alguns episódios publicados) · �
 | `02` | **O Zero e os Números** | séc. VII–XIII | romanos → posicional → zero → al-Khwarizmi/algoritmo → Fibonacci → abacistas vs algoristas | 🟢 |
 
 A **Anticítera** (~100 a.C.) é antiguidade e caberia aqui, mas mora na 1ª metade do ep `01` da etapa 2 — ver a nota do corte abaixo. A etapa 1 a cita como ponte.
+
+### O schoty na capa e a haste de quatro no fim (09/09/2026) — 🟢 FEITO E NO AR no mesmo dia
+
+**Executado em 09/09 ("Deploy"):** `img/schoty.jpg` (corte fechado na moldura, 864×985, 134 KB) na capa com a legenda "O schoty, o ábaco russo: dez contas por haste, cada uma valendo um · Wikimedia Commons, domínio público"; a frase da capa voltou a apontar pra foto ("usam o modelo mais simples, **o da foto**"); no fim, **5º card "Schoty 🇷🇺"** na grade `.mundo` (a grade é auto-fit, coube sem CSS novo) com a curiosidade da haste de quatro e das contas escuras; linha no `img/CREDITOS.md`. De brinde, `site/css/animacao/telas.css`: `.capa-modelo img` de 66vh pra **60vh**, porque com foto em pé a legenda sumia atrás do tocador. ⚠️ Achado no caminho: o servidor local `python -m http.server` **não atende Range**, então o seek do áudio volta a 0 e o tocador devolve a tela 1 — navegação de telas só se testa no ar (nginx) ou ligando a classe `active` na mão. O texto abaixo é o registro do pedido, como foi guardado antes de executar.
+
+#### O pedido, como foi guardado
+
+**O que já está no ar (09/09):** a capa do Ábaco mostra uma **foto real** no lugar do modelo 3D embutido — hoje o suanpan chinês (`img/abaco-real.jpg`) — e o 3D abre pelo botão (declarado no próprio botão, `data-modelo`; o `lightbox.js` aceita as duas formas). A frase da capa virou "usam um modelo **mais simples que o da foto**".
+
+**O que o Flávio pediu e ficou guardado aqui ("deixa salvo aí no plano"):**
+
+1. **Trocar a foto da capa pelo ábaco mais simples**, o modelo que a página ensina (uma conta = uma unidade). Escolhido: **`Schoty abacus.jpg`** do Commons (domínio público, 919×1064, retrato, fundo de pano) — o **schoty**, o ábaco russo, dez contas por haste, sem a conta de cinco. Ele viu a foto, perguntou da haste de quatro e mandou **deixar essa mesma**, com a haste. Cópia baixada em `scratchpad/abacos/schoty.jpg` da sessão de 09/09; baixar de novo com `_arquivos/scripts/baixa-wikimedia.sh "Schoty_abacus.jpg" schoty.jpg <img/>` (é PD, mas creditar "Wikimedia Commons, domínio público" na legenda, como o projeto faz). Duas outras candidatas vistas e descartadas: `Abacus - Meshkov house.jpg` (CC0, 3653×2922, boa mas em perspectiva e com panelas no fundo) e `Abacus of State Department Store.jpg` (vitrine com reflexo).
+   - Ao trocar, **reescrever a frase da capa**: a foto passa a SER o modelo simples ("usam o modelo mais simples, o da foto: uma conta vale uma unidade; o chinês e o japonês, que aparecem mais adiante, têm uma barra e a conta de cima vale cinco").
+   - Registrar a foto no `img/CREDITOS.md` do episódio.
+   - A foto é retrato: na `.capa-modelo` ela cabe em altura (`max-height: min(66vh, 600px)`), conferir no telefone.
+
+2. **A curiosidade no fim do episódio** (última tela, `step--mundo`, DENTRO dela — a contagem de telas não muda, REGRA DURA DAS TELAS): um card ou `nota-cena` no espírito *"ficou curioso com a haste de quatro contas do ábaco da capa?"*. O que explicar, nas palavras dele: **é a haste das frações** — cada conta vale um quarto (¼, ½, ¾) — e ela serve de **divisória**: as hastes acima contam a parte inteira (rublos, ou unidades/dezenas/centenas), as de baixo os copeques. As **duas contas escuras no meio** de cada haste são marca pro olho, pra ver de relance se passou de cinco (mesmo corte de cinco em cinco do risco da tela 2 e da nota que já existe nessa tela). Motivo dele: *"se alguém passar por esse ábaco pela internet, a pessoa já sabe"*. É texto de página, não áudio: o áudio do `01` não é regravado.
+
+3. Depois: `qa-foto-abaco.js` (scratchpad de 09/09; recriar se sumiu) confere capa com foto, os dois botões abrindo o 3D e o transistor intacto; subir com o `sobe-barra.sh` (site/ + animações no ar) e conferir no ar.
 
 ## Etapa 2 — Séculos sem máquina
 
@@ -202,18 +225,18 @@ As imagens deste episódio estreiam o **padrão dos dois selos**: 3 reais do Com
 
 ## Etapa 9 — A máquina que aprende (numeração de 04/09; era a 10)
 
-*1993–2017.* A última etapa, **reescrita em 06/09 com o pedido do dono: "lembra que estamos construindo o computador, queremos saber das peças"**. Antes eram três episódios só de ideia (invernos da IA, deep learning, Transformer). Agora são quatro, e os dois primeiros são de peça: a corrida do processador e a placa de vídeo, que é a peça feita pra jogo que virou a máquina de treinar rede. Só depois vem a máquina que aprende, e ela chega como o Alto chegou: uma ideia na gaveta desde 1958 esperando o hardware baratear. Fecha o arco aberto no piloto. Molde igual ao da etapa 8: pessoas com ficha, ordem estrita, fio hardware ↔ software, 12 telas. Pasta a criar: `_REFAZER/09 - A máquina que aprende/`.
+*1993–2017.* 🟢 **Os quatro episódios no ar desde 08/09.** Nada da etapa 9 é regravado (decisão de 07/09); o texto da página do `9.04` foi corrigido pra não dizer "fim de série". **Reescrita em 06/09 com o pedido do dono: "lembra que estamos construindo o computador, queremos saber das peças"**. Antes eram três episódios só de ideia (invernos da IA, deep learning, Transformer). Agora são quatro, e os dois primeiros são de peça: a corrida do processador e a placa de vídeo, que é a peça feita pra jogo que virou a máquina de treinar rede. Só depois vem a máquina que aprende, e ela chega como o Alto chegou: uma ideia na gaveta desde 1958 esperando o hardware baratear. Fecha o arco aberto no piloto (o arco da máquina; a série segue). Molde igual ao da etapa 8: pessoas com ficha, ordem estrita, fio hardware ↔ software, 12 telas. Pasta: `_REFAZER/09 - A máquina que aprende/`.
 
 | Pasta | Episódio | Período | O que cobre | Status |
 |---|---|---|---|---|
-| `01` | **A corrida do processador** | 1993–2006 | Pentium (1993); a AMD, nascida em 1969 como segunda fonte do 8086 (Jerry Sanders), vira concorrente com o Athlon (1999) e chega primeiro a 1 GHz (2000); Pentium III e 4; a **parede do calor** por volta de 2004, quando a frequência para de subir; o AMD64 (2003) que a Intel teve que copiar; a saída: dois núcleos em vez de um mais rápido (Core 2 Duo, 2006). Lição: a Lei de Moore continua dando transistor, mas para de dar velocidade, e o software vai ter que virar paralelo | 🟠 07/09: trio no molde novo; v1 (telas 11 e 12 emendadas) e v2 ("um milhão" no 1 GHz, "ficha" lida em voz alta) rejeitadas e guardadas em `_v1/` e `_v2/`; **v3 gravada e conferida** ("A Batalha Que Quase Derreteu os Processadores", 13:45, 11 pedidos, 9 fichas certas), página de 12 telas com 18 fotos do Commons, `etapa-09.html` e QA local verdes; falta o dono ouvir e mandar subir (deploy, card 09 e menu preparados em scripts) |
-| `02` | **A placa de vídeo** | 1996–2007 | por que o processador é ruim em pintar pixel (uma conta por vez, milhões de pontos); 3dfx Voodoo (1996) pra jogo; NVIDIA (Jensen Huang, 1993) e a GeForce 256 (1999), a primeira chamada de GPU; ATI Radeon (2000) e a AMD comprando a ATI (2006); a GPU como milhares de núcleos pequenos fazendo a mesma conta em números diferentes; CUDA (2007), a placa aberta pra conta que não é jogo. Lição: uma peça feita pra jogo vira a peça mais importante da era seguinte | 🟠 07/09: trio no molde novo (7 fichas); v1 sem estrutura e v2 com "400 bilhões" descartadas (em `_v1/` e `_v2/`); **v3 gravada** ("Como a placa de vídeo virou matemática", 12:25, 11 pedidos, 7 fichas, valor da compra da ATI certo), página de 12 telas com 15 fotos, marcadores e QA local verdes; ressalva: 12 min e nomes ditos duas vezes; falta o dono ouvir |
-| `03` | **A máquina que aprende** | 1958–2012 | McCulloch e Pitts (1943) em uma frase; Rosenblatt e o perceptron (1958); Minsky e Papert (1969) e o primeiro inverno; Hinton, Rumelhart e Williams e o backpropagation (1986); LeCun lendo cheque (1989–98); o segundo inverno; Fei-Fei Li e o ImageNet (2009); 2012: o AlexNet de Krizhevsky, Sutskever e Hinton treinado em **duas placas de vídeo de jogo**, e o erro caindo pela metade. Lição: a ideia estava na gaveta desde 1958, como o Alto; a GPU é que ficou barata | 🟠 07/09: trio no molde novo (14 fichas; Krizhevsky nomeado sem ficha); v1 descartada (25 min, nenhum Próximo); **v2 gravada e conferida** ("Como as GPUs destravaram as redes neurais", 15:40, 11 pedidos, 14 fichas certas), página de 12 telas com 15 fotos, marcadores e QA local verdes; falta o dono ouvir |
-| `04` | **2017: Attention is All You Need** | 2014–2017 | o gargalo das redes que leem uma palavra por vez (não aproveitam a GPU, que quer tudo ao mesmo tempo); a atenção (Bahdanau, 2014); o Transformer (Vaswani e mais sete, Google, 2017), desenhado pra ser paralelo: software com a forma do hardware; a TPU (2016); GPT e BERT (2018). Fecho do arco: da pedra do ábaco ao peso da rede, a máquina ainda é Boole mais Von Neumann mais um programa, só que agora o programa é **achado, não escrito** | 🟠 07/09: trio no molde novo (8 fichas; os oito autores sem ficha); v1 (11 min) e v3 ("naquela cena", "William") descartadas; **v2 é a boa** ("Como o Transformer matou a fila", 16:53, 11 pedidos, 8 fichas, fecha a série), página de 12 telas, marcadores e QA local verdes; ⚠️ ressalva: diz que o autor do BERT "não tem nome público" (falso) e Boole sai "bully"; falta o dono ouvir e decidir se regrava |
+| `01` | **A corrida do processador** | 1993–2006 | Pentium (1993); a AMD, nascida em 1969 como segunda fonte do 8086 (Jerry Sanders), vira concorrente com o Athlon (1999) e chega primeiro a 1 GHz (2000); Pentium III e 4; a **parede do calor** por volta de 2004, quando a frequência para de subir; o AMD64 (2003) que a Intel teve que copiar; a saída: dois núcleos em vez de um mais rápido (Core 2 Duo, 2006). Lição: a Lei de Moore continua dando transistor, mas para de dar velocidade, e o software vai ter que virar paralelo | 🟢 **no ar desde 08/09** (v3 "A Batalha Que Quase Derreteu os Processadores", 13:45, 11 pedidos, 9 fichas certas, 12 telas com 18 fotos do Commons). v1 (telas 11 e 12 emendadas) e v2 ("um milhão" no 1 GHz, "ficha" lida em voz alta) guardadas em `_v1/` e `_v2/` |
+| `02` | **A placa de vídeo** | 1996–2007 | por que o processador é ruim em pintar pixel (uma conta por vez, milhões de pontos); 3dfx Voodoo (1996) pra jogo; NVIDIA (Jensen Huang, 1993) e a GeForce 256 (1999), a primeira chamada de GPU; ATI Radeon (2000) e a AMD comprando a ATI (2006); a GPU como milhares de núcleos pequenos fazendo a mesma conta em números diferentes; CUDA (2007), a placa aberta pra conta que não é jogo. Lição: uma peça feita pra jogo vira a peça mais importante da era seguinte | 🟢 **no ar desde 08/09** (v3 "Como a placa de vídeo virou matemática", 12:25, 11 pedidos, 7 fichas, 12 telas com 15 fotos). v1 sem estrutura e v2 com "400 bilhões" em `_v1/` e `_v2/`; ressalva que ficou: 12 min e nomes ditos duas vezes |
+| `03` | **A máquina que aprende** | 1958–2012 | McCulloch e Pitts (1943) em uma frase; Rosenblatt e o perceptron (1958); Minsky e Papert (1969) e o primeiro inverno; Hinton, Rumelhart e Williams e o backpropagation (1986); LeCun lendo cheque (1989–98); o segundo inverno; Fei-Fei Li e o ImageNet (2009); 2012: o AlexNet de Krizhevsky, Sutskever e Hinton treinado em **duas placas de vídeo de jogo**, e o erro caindo pela metade. Lição: a ideia estava na gaveta desde 1958, como o Alto; a GPU é que ficou barata | 🟢 **no ar desde 08/09** (v2 "Como as GPUs destravaram as redes neurais", 15:40, 11 pedidos, 14 fichas certas, 12 telas com 15 fotos; Krizhevsky nomeado sem ficha). v1 descartada (25 min, nenhum Próximo) |
+| `04` | **2017: Attention is All You Need** | 2014–2017 | o gargalo das redes que leem uma palavra por vez (não aproveitam a GPU, que quer tudo ao mesmo tempo); a atenção (Bahdanau, 2014); o Transformer (Vaswani e mais sete, Google, 2017), desenhado pra ser paralelo: software com a forma do hardware; a TPU (2016); GPT e BERT (2018). Fecho do arco: da pedra do ábaco ao peso da rede, a máquina ainda é Boole mais Von Neumann mais um programa, só que agora o programa é **achado, não escrito** | 🟢 **no ar desde 08/09, sem regravar** (v2 "Como o Transformer matou a fila", 16:53, 11 pedidos, 8 fichas; os oito autores sem ficha; 12 telas). v1 (11 min) e v3 ("naquela cena", "William") descartadas. ⚠️ Ressalvas que ficam no áudio: diz que o autor do BERT "não tem nome público" (falso), Boole sai "bully" e o fecho diz que fecha a série; a página é que foi corrigida (kicker "o fecho do arco da máquina", parágrafo final entregando a etapa 10) |
 
 *Pessoas com ficha a conferir na hora de escrever (vivos em 2026 pelo que se sabe em 06/09): Jensen Huang (n. 1963), Geoffrey Hinton (n. 1947), Yann LeCun (n. 1960), Fei-Fei Li (n. 1976), Alex Krizhevsky e Ilya Sutskever (n. 1986); mortos: Andy Grove (1936–2016), **Jerry Sanders (1936–2024, conferido em 07/09: o plano de 06/09 o tinha como vivo)**, Frank Rosenblatt (1928–1971), Marvin Minsky (1927–2016), Seymour Papert (1928–2016), David Rumelhart (1942–2011). As fichas conferidas do 9.01 (nove pessoas, com fontes) estão em `_REFAZER/09 - A máquina que aprende/01 - A corrida do processador/_pesquisa.md`.*
 
-## Etapa 10 — A rede vira feed (aprovada em 07/09)
+## Etapa 10 — A rede vira feed (aprovada em 07/09, inteira no ar desde 09/09)
 
 *1995–2016.* Nasceu de um pedido dele em 07/09: **redes sociais fazendo a internet bombar,
 a crise das ponto com, e as inteligências artificiais dos algoritmos de recomendação**.
@@ -234,7 +257,7 @@ mexendo com todo mundo não foi a que conversa, foi a que escolhe o próximo ví
 | `01` | **A bolha** | 1995–2002 | a abertura da bolsa da Netscape em agosto de 1995 e o dinheiro entrando; Amazon e eBay; empresa sem receita valendo bilhões; o estouro em março de 2000 e o que sobrou no chão: fibra ótica enterrada e barata, e gente treinada. Lição: a bolha pagou a infraestrutura que a década seguinte usou quase de graça | 🟢 **NO AR desde 08/09** (v1, 16:02) |
 | `02` | **A busca vira negócio** | 1998–2004 | o PageRank e a busca que ordena a web por quem aponta pra quem; o anúncio ao lado do resultado como o modelo que sustentou a rede inteira; o primeiro algoritmo que ordena o que bilhões de pessoas veem. Lição: quando o software ordena, alguém decide a ordem | 🟢 **NO AR desde 08/09** (v3, 13:35) |
 | `03` | **As redes sociais** | 2002–2012 | de Friendster e MySpace ao Facebook, Twitter e YouTube; o feed cronológico enquanto dá, e a hora em que não dá mais: gente demais publicando, e a máquina passa a escolher. Lição: o volume de gente virou um problema de computação | 🟢 **NO AR desde 08/09** (v2, 21:58) |
-| `04` | **O algoritmo de recomendação** | 2006–2016 | o prêmio da Netflix (2006–2009) e a conta que descobre gosto sem entender de filme; o feed ordenado por modelo; o YouTube trocando a recomendação por rede neural em 2016, quatro anos depois da AlexNet. Lição: a primeira máquina que aprendeu e tocou todo mundo, e o dado que ela gerou é o combustível da etapa seguinte | 🟠 **v1 reprovada (usou "genial"); v2 travada na fila do NotebookLM. Único card ainda "em produção"** |
+| `04` | **O algoritmo de recomendação** | 2006–2016 | o prêmio da Netflix (2006–2009) e a conta que descobre gosto sem entender de filme; o feed ordenado por modelo; o YouTube trocando a recomendação por rede neural em 2016, quatro anos depois da AlexNet. Lição: a primeira máquina que aprendeu e tocou todo mundo, e o dado que ela gerou é o combustível da etapa seguinte | 🟢 **NO AR desde 09/09** (v3 "A máquina que aprendeu lendo rastros", 19 min, 10 telas). v1 reprovada (usou "genial" e fechou ficha com "vivo hoje") e v2 descartada, guardadas em `_v1/` e `_v2/` |
 
 *Pessoas a conferir na hora de escrever (ficha só com ano de nascimento público). Andreessen
 já apareceu no 8.02 com ficha: relembrar sem repetir a ficha.*
@@ -242,8 +265,9 @@ já apareceu no 8.02 com ficha: relembrar sem repetir a ficha.*
 ### Deploy de 08/09: etapas 9 e 10 no ar
 
 Ele mandou subir com o `10.04` ainda gravando, então foram ao ar **a etapa 9 inteira e três
-dos quatro episódios da etapa 10**. O card do `10.04` continua "em produção" na
-`etapa-10.html`, que é o mesmo padrão que o site já usa.
+dos quatro episódios da etapa 10**. O card do `10.04` ficou "em produção" na
+`etapa-10.html` (o mesmo padrão que o site já usa) até **09/09**, quando a v3 subiu e a
+etapa fechou.
 
 O que o deploy mexeu no site, além dos episódios: o card 09 do `computador.html` virou link
 e ganhou foto, o card 10 foi inserido, três textos que passariam a mentir foram corrigidos
@@ -306,30 +330,69 @@ regravado**. Duas consequências, que valem pra tudo que for escrito daqui pra f
 
 | # | Etapa | Período | O que cobre | Risco |
 |---|---|---|---|---|
-| 11 | **A máquina que conversa** | 2018–2022 | a escala do Transformer; o galpão (memória empilhada, placas ligadas, energia); ensinar a responder (exemplo e preferência humana); o ChatGPT em novembro de 2022 | baixo: fatos fechados |
+| 11 | **A máquina que conversa** | 2017–2022 | a escala do Transformer; o galpão (memória empilhada, placas ligadas, energia); ensinar a responder (exemplo e preferência humana); o ChatGPT em novembro de 2022. **Espinha de 4 episódios desenhada em 10/09: ver a seção Etapa 11 logo abaixo** | baixo: fatos fechados; o que muda é o cargo das pessoas em 2026 (ficha com destino do trabalho) |
 | 12 | **(sem título ainda)** | 2023–2026 | a corrida das placas e a NVIDIA virando a maior; o modelo que vê e ouve; o peso aberto contra o fechado; o agente que usa ferramenta | ⚠️ alto: papéis ainda mudam. Um dos oito autores do Transformer saiu do Google, voltou em 2024 e saiu de novo em 2026, tudo dentro do intervalo que a etapa contaria |
 
 Os candidatos a extra 67 a 70 (escala, galpão, ensinar a responder, ChatGPT) nasceram
 quando a etapa 11 tinha virado extra; com a série aberta eles voltam a ser **episódios da
-etapa 11**, e a lista de extras fica com eles só como reserva.
+etapa 11**, e a lista de extras fica com eles só como reserva. Em 10/09 viraram os quatro
+episódios da seção abaixo.
+
+## Etapa 11 — A máquina que conversa (espinha desenhada em 10/09)
+
+*2017–2022.* ⚠️ A espinha de 07/09 dizia 2018–2022; a janela abriu pra 2017 porque três peças da etapa nascem nesse ano, junto com o Transformer: o Tensor Core (V100, maio de 2017), a preferência humana (Christiano, junho de 2017) e o PPO (Schulman, julho de 2017). A regra de 08/09 diz que a janela é da etapa e os episódios vão e voltam dentro dela. **Decisão dele em 10/09: ignorar o limite de data.** A janela é orientação, não trava: cada episódio vai até onde a história pede, e a tela 1 declara o intervalo que ele cobre de fato. Sem pesquisa ainda: datas, números e nomes abaixo são de cabeça e passam pela pesquisa em fonte primária antes do trio, como a etapa 10 fez.
+
+Onde encaixa: o `9.04` parou em 2018 com o Transformer e citou GPT e BERT como o que vem depois; o `10.04` parou em 2016 com o feed dando o dado, o dinheiro e as placas. Esta etapa pega as duas pontas, o desenho de 2017 e as placas que o feed pagou, e conta como o programa achado virou uma máquina que responde. A tela 1 do `11.01` diz isso em uma frase, como o `10.01` fez com o `9.04`.
+
+Fio hardware ↔ software, que é o que a etapa tem de novo: até aqui o software tomava a forma do hardware (o Transformer foi desenhado pra placa, `9.04`). Aqui inverte: **a placa passa a ser desenhada pro Transformer** (Tensor Core, memória empilhada, o fio entre as placas), e depois a peça volta a limitar o software (Chinchilla: modelo e dado no tamanho da placa). Construir, não vender: a etapa conta o galpão e a conta, não a corrida das empresas, que fica pra 12.
+
+Molde igual ao das etapas 8 a 10: pessoas com ficha (destino do trabalho, com o ano dito), cronologia estrita, 12 telas, aviso curto, sem pronúncia escrita, aposta soando como aposta, fios amarrados entre os episódios, extras levantados no roteiro, filmes por busca conferida, toda tela com imagem 16:9. Pasta a criar: `_REFAZER/11 - A máquina que conversa/`. Animação nasce do `_arquivos/_molde-animacao.html` (refeito em 10/09) e entra na árvore do `menu.js`.
+
+| Pasta | Episódio | Período | O que cobre | Status |
+|---|---|---|---|---|
+| `01` | **A escala** | 2017–2022 | abre em junho de 2017 com *Attention is All You Need* (Vaswani e mais sete, Google), relembrado do `9.04` em uma frase e dito pelo nome: é ESSE desenho que vai crescer, e o paper não previu isso; a atenção por dentro fica pro extra (a trilha conta a história, o extra leva o mecanismo); GPT-1 (Radford e mais três, OpenAI, junho de 2018) e BERT (Devlin e mais três, Google, outubro de 2018): o desenho de 2017 treinado em texto solto, sem gabarito, e depois ajustado pra tarefa; GPT-2 (fevereiro de 2019, 1,5 bilhão de parâmetros) e a decisão de segurar o modelo por meses; as leis de escala (Kaplan, Amodei e outros, janeiro de 2020): o erro cai numa reta previsível quando modelo, dado e conta crescem juntos, então dá pra planejar o galpão antes de construir; GPT-3 (Brown e mais trinta, maio de 2020, 175 bilhões): o que aparece só de crescer, fazer a tarefa a partir de exemplos dentro da própria pergunta; Chinchilla (Hoffmann, DeepMind, março de 2022): modelo grande demais pra pouco dado desperdiça placa; **GPT-3.5 (2022)**: o GPT-3 treinado também em código (Codex, 2021) e ajustado pra seguir instrução, a base que o ChatGPT vai usar em novembro (gancho pros `11.03` e `11.04`). Lição: o programa achado melhora só de ficar maior, e quem decide o tamanho é a placa e o dado, não o programador | 🟠 **10/09: pesquisa em fonte primária feita** (`_pesquisa.md`: 8 fatos confirmados, 4 ajustes, destinos de 2026 com data; Devlin e Hoffmann sem notícia depois de 2023/2024), planta de 12 telas, trio aprovado pelo verificador (2 correções). **Duas gravações reprovadas em 10/09, guardadas em `_v1/` e `_v2/`:** a v1 (14:01, sem título: o downloader pegou o selo "Não lidos" da UI) seguiu o roteiro mas disse "GPT chat", atribuiu "tom alarmista" ao curta do Guardian, cortou três frases no meio, pulou o gancho da tela 10 e as datas da tela 11; a v2 ("Como a escala criou o ChatGPT", 19:11) se soltou do roteiro: "colossal" quatro vezes, "genial", "fascinante", "gênio", "até a próxima", fichas reescritas com futuro inventado (Radford "dentro da empresa"), sem os quatro extras, sem os dois filmes, sem Copilot, analogias não autorizadas (mesa de som, livro de exercícios). As duas pediram "aperte próximo" sem o "o" uma vez (o cortador só casa com o "o"). Tudo conferido com o modelo maior antes de reprovar. **A v3 ("A escala do Transformer ao ChatGPT", 11:57, em `_v3/`) é a melhor:** 12 telas na ordem (dois pedidos sem o "o", tabela do `_telas.md` corrigida à mão), fichas certas, os quatro extras, os dois filmes com o cuidado certo, todas as datas, nenhuma palavra proibida, sem despedida. Errou só três números, confirmados na segunda passada: "em 2016 estava na Anthropic" (Brown, seria 2026), "1 trilhão e 400 milhões" (seria bilhões) e "com mais 31 autores" (seria "mais trinta"). A **v4** ("Como placas e dados criaram o ChatGPT", 14:25, em `_v4/`) saiu pior que a v3: emendou as telas 1 e 2, "genial", "genialidade", "fascinante", "colossal" três vezes, "revolução", "mudaram o mundo", destinos inventados de novo, sem extras, sem filmes, sem as datas do Copilot. **Parei em quatro: a v3 é a gravação do episódio, com três ressalvas de número pra ele decidir de ouvido** (ficar como o 9.04 ficou com "bully", ou regravar). ⚠️ Lição das quatro: a qualidade não cresce com o tamanho do bloco de defeitos no prompt; cada take é um sorteio, e o que se faz é guardar todos em `_vN/` e escolher o melhor. A página está ligada à v3 (tocador com o m4a e 11:57, 11 marcadores em `episodio.js`), QA local verde em telas, imagens e estouro; as telas cortam em 1440x900 na mesma faixa que o 10.04 no ar (rola por dentro). `etapa-11.html` com o card 01 ("12 min · 12 telas") e 02-04 "em produção"; entrada no `menu.js`. 🟢 **NO AR desde 11/09 01:09** (pedido dele: "pode por no site, vejo aqui no telefone"), pela `sobe-11-01.sh` do scratchpad: pasta do episódio sem `_v1/_v2/_v4`, `etapa-11.html`, `computador.html` com o card 11 e os três textos "10 etapas"/"do ábaco ao Transformer" → "11 etapas"/"do ábaco à IA", e cópias REMENDADAS de `menu.js` e `index.html` feitas em cima do que estava no ar (o local tem a série de hardware "Do LED ao ESP32", ainda não publicada, e ela NÃO subiu). Backup dos três compartilhados no servidor (`.bak-20260911-0109`), md5 local x ar batendo. `qa-producao.js` ganhou a linha do 11.01 (12 telas). **11/09 02:22, depois do print dele no telefone** ("algumas fotos no celular, um texto mal alinhado, faltou a tela de fim"): subiram o **lote 2 da base** (a tela de fim, que era a que faltava, junto com grade 3/4/6, hastes e hover, todos pedidos dele em 10/09 e testados desde então) e os ajustes do 11.01: recortes 16:9 das fotos em pé (fachada da DeepMind, Sutskever), faixas 2,5:1 com o rosto pros cards do fecho (Amodei e Kaplan mostravam o peito), diagrama do Transformer e logo da OpenAI emoldurados em 16:9 (o logo preto sumia no tema escuro), e a reta refeita pra medir a largura real (letra de 11px no telefone, controle embaixo da reta, total com rótulo "erro previsto" e o tamanho e o modelo à direita em duas linhas). Backup de 13 arquivos `.bak-20260911-0222`, md5 dos 19 batendo. Tela de fim no ar em 29 das 30 animações; a que falta é o extra 08 "O Zero e os Números", que é a animação antiga em `OLD/` e nunca teve a base nova. Nada commitado. ⚠️ **14/09, conferido na `_transcricao.txt` da v3:** o áudio chama os quatro extras (02:38, 03:08, 09:40, 10:41) e só dois filmes, o curta do Guardian sobre o Ilya (04:28) e o *Eternal You* (08:09); a transcrição escreveu "Ilha" e "Eternal U", provável erro do whisper, ele confere de ouvido. O painel do `menu.js` lista quatro: *iHuman* e *The Thinking Game* aparecem só na tela. Decisão dele pendente: deixar os dois no painel ou tirar. **14/09, decisão dele: o 11.01 fica como está.** A pesquisa do 11.02 não confirmou que o GPT-3 foi treinado no supercomputador da Microsoft (o post de maio de 2020 não diz a placa nem cita o GPT-3); mesmo assim não se mexe no áudio nem na página. O 11.02 conta só o que a fonte diz: os dois anúncios caíram no mesmo mês | ⚠️ A página nasceu ANTES do áudio, como prévia (erro de ordem meu; ele lembrou que a regra é áudio primeiro): `animacao.html` com 12 telas, duas práticas (a reta das leis de escala em `escala.js`, e o exemplo dentro da pergunta), 14 fotos do Commons em `img/` (sem retrato livre de Vaswani, Radford, Devlin e Brown), `etapa-11.html` e entrada no `menu.js`. Ela será refeita em cima do `_telas.md` quando o áudio sair; créditos das legendas ainda com marcador `{{cred:…}}` |
+| `02` | **O galpão** | 2016–2022 | peça: o que muda na placa quando o freguês é o Transformer. Tensor Core (V100, maio de 2017): a multiplicação de matriz numa instrução, e a placa de jogo vira placa de treinar; memória empilhada (HBM) colada ao lado do chip, porque o gargalo virou mover número, não fazer conta; **e na placa de casa?** (pedido dele em 14/09, fecha a tela da memória): a RTX 5090 roda modelo local, só não roda os grandes; o limite é a memória, não a conta: 32 GB, cada parâmetro ocupa 2 bytes em 16 bits ou meio byte comprimido em 4 bits, então cabem modelos abertos de até uns 30 bilhões; um de 70 bilhões comprimido em 4 bits já passa de 32 GB (em 2 ou 3 bits cabe, pesquisa de 14/09), e o GPT-3 (175 bilhões) ocupa 350 GB, umas 11 placas só pra guardar os números; os modelos de ponta têm um problema antes desse: os pesos não são liberados, então não há o que baixar (⚠️ pesquisa de 14/09: não dizer "o GPT", a OpenAI liberou os pesos do gpt-oss em 05/08/2025) (sai da janela, a 5090 é de 2025: vale a decisão de 10/09 de ignorar o limite de data; a pesquisa confere os 32 GB e a data); NVLink (2016) e o DGX-1, oito placas no mesmo gabinete falando entre si sem passar pelo processador, a primeira entregue em mãos à OpenAI em agosto de 2016; a Mellanox (compra anunciada em 2019, fechada em 2020) e o InfiniBand ligando gabinetes; o supercomputador que a Microsoft montou pra OpenAI (maio de 2020: 285 mil núcleos de processador e 10 mil placas); a TPU v2 e v3 do Google (2017–2018) e o refrigerador a líquido; energia: treinar é megawatts por semanas; **a H100 (anunciada em 22 de março de 2022, arquitetura Hopper): com o Transformer Engine, software mais Tensor Core que mistura contas de 8 e 16 bits pra acelerar o Transformer** (⚠️ pesquisa de 14/09: sem fonte pra "a primeira placa com peça feita pra um programa" nem pra "camada por camada"; a documentação fala em escala por tensor) (pedido dele em 14/09; não foi a primeira placa só pra IA: a TPU do Google roda desde 2015 e a V100 já trazia núcleo de rede em 2017; amarra com o Chinchilla e o InstructGPT, no mesmo mês). Analogia oficial: a turma de quinta série virou uma escola inteira, e o problema passou a ser o corredor entre as salas. Lição: o Transformer foi desenhado pra placa; agora a placa é desenhada pro Transformer | 🟠 **14/09, fim do dia: pesquisa feita (`_pesquisa.md`, 35 fatos, 12 ajustes) e planta final em `_planta.md` (cronologia refeita: a TPU abre, o supercomputador não se liga ao GPT-3 como fato), 3 pontos decididos por mim, ele delegou: Ross fora, Selene numa frase da tela 9, Meta e PaLM fora, Karpathy guardado pro 11.04.** **Trio escrito e aprovado pelo verificador em 14/09, em três rodadas** (`Overview.txt`, `_NotebookLM_O Galpao.txt`, `11-02-O galpao.txt`; 12 telas, 11 pedidos; saíram "água" sem fonte, "a mesma janela", "pela primeira vez" e o InfiniBand sozinho em "mais da metade"). **Gravado em 14/09 (v1, título provisório "O Galpao", 16:50, 11 pedidos de Próximo, 12 telas) e aceito pelo dono sem regravar em 15/09** ("não precisa"). Ressalvas conferidas com o modelo maior, pra ele ouvir: sem o gancho do extra na tela 10 (13:42); a ficha do Waldman começa sem o nome (10:02, o nome só vem no balanço); "a H100, a famosa Grace Hopper" (14:05); em 14:44 o modelo maior ouviu "Caralho" e o pequeno "Caramba" (conferir de ouvido); instrução dita em voz alta ("o cuidado com as fichas", "nas nossas fontes", 15:50); comparações fora da lista (asfalto, cidade de servidores, bairro, estufa) e "água gelada encanada". Falsos alarmes do modelo pequeno: Fury X "da NVIDIA", "TensorFlow Core", "815 casas", "400 bits", "aperte o máximo". ⚠️ O `_telas.md` saiu com 10 telas porque dois pedidos quebraram entre linhas da transcrição (08:15 e 10:44): corrigir a tabela à mão antes da página. ⚠️ O `baixa-episodio-cdp.js` leu o selo "Não lidos" como título (o conserto de 10/09 só foi pro `baixa-episodio.js`): arquivos renomeados à mão. **Falta a página.** O rascunho abaixo foi superado pela planta: planta de 12 telas em rascunho, alinhada com ele antes da pesquisa (datas e números de memória até a pesquisa confirmar): 1 capa, responde a pergunta que o 11.01 deixou (quem constrói o galpão?) e declara 2016–2022 · 2 ficha, DGX-1 e NVLink, entregue à OpenAI em 2016 (Huang relembrado do 9.02, sem ficha nova) · 3 conteúdo, a turma vira escola e o gargalo vira o corredor · 4 ficha, V100 e o Tensor Core (maio de 2017) · 5 prática "cabe na placa?" na memória empilhada, fechando com "e na placa de casa?"; ⚠️ a V100 saiu com **16 GB**, não 32 (conferido em 14/09) · 6 ficha, TPU v2 e v3 e o resfriamento a líquido · 7 ficha, InfiniBand e a Mellanox · 8 prática, o corredor: dobrar as placas e ver a conversa entre elas comer o ganho · 9 ficha, o supercomputador da Microsoft (maio de 2020, mesmo mês do GPT-3) · 10 conteúdo, energia e refrigeração com número de fonte, gancho do extra 71 (A placa de treinar por dentro) · 11 ficha, H100 e o Transformer Engine (março de 2022) · 12 fecho, as pessoas em 2026, a lição e a pergunta que abre o 11.03 (o galpão pronto sabe responder?). **Buracos de referência que a pesquisa fecha:** a espinha não tem pessoa com ficha (candidatos: Norm Jouppi, TPU; Eyal Waldman, Mellanox; Kevin Scott, Microsoft); nenhum filme levantado (a busca de 10/09 já não achou nada sobre o supercomputador, pode sair "não existe"); a A100 (maio de 2020) e as telas 5 e 11 são acréscimos a confirmar; números sem fonte: 285 mil núcleos e 10 mil placas, a entrega do DGX-1, a energia do treino; fotos de V100, DGX-1, TPU e galpão dependem do Commons |
+| `03` | **Ensinar a responder** | 2017–2022 | o modelo que completa texto não responde: continua o texto mais provável, e pergunta vira mais pergunta; preferência humana (Christiano, OpenAI e DeepMind, junho de 2017): em vez de escrever a nota, gente escolhe entre duas respostas e uma rede aprende o gosto; PPO (Schulman e outros, julho de 2017), a receita de reforço que virou padrão; o ajuste por preferência chega ao texto (Ziegler, 2019) e ao resumo (Stiennon, 2020); InstructGPT (Ouyang e outros, março de 2022): três passos, exemplos escritos por gente, modelo de preferência, reforço, e um modelo cem vezes menor que o GPT-3 sai preferido a ele; o trabalho humano que aparece pela primeira vez na trilha: quem escreve os exemplos e escolhe as respostas. Lição: o que faz a máquina responder não é mais peso, é gente dizendo qual resposta prefere, o mesmo gosto aprendido do `10.04`, agora aplicado à resposta | 🔴 espinha 10/09 |
+| `04` | **Novembro de 2022** | 2015–2022 | figura e balanço: a OpenAI nasce em dezembro de 2015 como laboratório sem fins lucrativos, em 2019 vira empresa com teto de lucro e recebe 1 bilhão da Microsoft (contar como aposta: em 2019 parecia mais um laboratório entre vários, e o dinheiro podia não dar em nada); o ChatGPT em 30 de novembro de 2022, "prévia de pesquisa" em cima do GPT-3.5 com o ajuste do `11.03` e uma caixa de conversa na frente; um milhão de contas em cinco dias, cem milhões em dois meses; o que custa responder: cada resposta roda no galpão do `11.02`, então o galpão não é só de treinar; o "código vermelho" do Google em dezembro de 2022. Balanço das pessoas e da etapa, e a pergunta que abre a 12: quem fabrica a placa que todo mundo passou a querer? (série aberta: não é fim de série) | 🔴 espinha 10/09 |
+
+*Pessoas com ficha (conferido em 10/09 na pesquisa do `11.01`, fontes em `_pesquisa.md`): com ano de nascimento público: Ashish Vaswani (n. 1986, Índia; Nvidia em jun/2026), Alec Radford (n. 1993, Texas; independente, abr/2026), Dario Amodei (n. 1983, São Francisco; CEO da Anthropic, set/2026). Sem ano público, entram sem idade: Jared Kaplan (Anthropic, chefe de ciência), Tom Brown (Anthropic, computação), Jacob Devlin (última notícia: voltou ao Google em jun/2023), Jordan Hoffmann (última notícia: Microsoft AI Londres, abr/2024). Pros próximos episódios, destinos já conferidos com data: Sutskever (CEO da SSI, jul/2026), Altman (CEO da OpenAI, set/2026), Brockman (presidente da OpenAI, ago/2026), Murati (CEO do Thinking Machines Lab, jun/2026), Schulman (chief scientist do TML, jul/2026); a conferir: Paul Christiano, Long Ouyang, Jan Leike. Já têm ficha na etapa 9 e são relembrados sem repetir: Ilya Sutskever (`9.03`) e Jensen Huang (`9.02`). ⚠️ **Destino do trabalho é onde esta etapa mais pode errar:** quase todos mudaram de casa entre 2021 e 2026, então cada ficha diz "em 2026 estava em tal lugar" só com fonte, e "não confirmei" é resposta aceitável.*
+
+**Fios a amarrar entre os episódios (regra de 08/09):** o `11.01` chega em maio de 2020 (GPT-3) no mesmo mês em que o `11.02` entrega o supercomputador da Microsoft; o `11.03` chega em março de 2022 (InstructGPT) no mesmo mês do Chinchilla do `11.01`; o `11.04` fecha em novembro de 2022 com as três peças juntas, o modelo do `01`, o galpão do `02` e o ajuste do `03`.
+
+**Filmes e documentários:** levantar por busca conferida na hora do roteiro, como a etapa 10 (`_filmes-e-documentarios.md` na pasta da etapa), com tipo, o que distorce e onde ver. Nada de memória: título de filme é onde mais se inventa.
+
+**Extras da etapa (aprovados por ele em 10/09, de 15 levantados):** cinco, na lista da seção `_EXTRAS`: 79 o Transformer por dentro · 74 o token · 71 a placa de treinar por dentro (com 72, 73 e 78, modelo 3D) · 75 as leis de escala e a conta do Chinchilla (com o 84) · 85 Codex e Copilot. O 77 (o trabalho humano por trás da resposta) ficou em aberto. Os outros (76, 80 a 83) cabem numa frase do próprio episódio. **O áudio diz "tem um extra sobre isso" nesses pontos**, genérico e sem nome, como a regra manda; o `11.01` leva quatro ganchos (79, 74, 75, 85) e o `11.02` um (71).
 
 ## _EXTRAS — episódios avulsos (23/08)
 
 Pasta `_EXTRAS\` na raiz da série. São episódios **fora da linha do tempo e autocontidos**: zero cientista, zero data, zero referência a série/etapa/episódio anterior ou próximo — dá pra mandar o mp3 solto pra qualquer pessoa ouvir isoladamente, em qualquer ordem. Cada um vive dentro de **uma única analogia** declarada no roteiro (com uma tela final "onde a analogia quebra"). O prompt segue naming próprio: `EX-NN-<Nome>.txt`. Nasceram de dúvidas do dia a dia que os episódios históricos não param pra resolver.
 
-**No site (30/08):** hub em `site/extras/` + página por extra; o índice ganhou o card "Extras".
+**No site (30/08):** hub em `site/extras/` + página por extra; o índice ganhou o card "Extras". (10/09: só o 01 e o 02 têm página própria, `extra-01.html` e `extra-02.html`; do 03 em diante o card do hub abre direto a animação da pasta do extra.)
 
 | Pasta | Extra | Analogia única | Título do áudio | Status |
 |---|---|---|---|---|
-| `01` | **Volt Ampere e Watt** | prédio com caixa d'água (altura=volt, vazão=ampère, cano=ohm, mangueira do lodo=watt, litros do mês=kWh, tamanho da caixa=mAh) | Eletricidade explicada como água num prédio | 🟠 |
-| `02` | **Por que o Ima Gruda** | ferro = milhões de agulhinhas de bússola (bagunçadas=ferro comum, alinhadas=ímã); eletroímã fica de fora (é o ep `03` da etapa 4) | Como os ímãs funcionam por dentro | 🟠 |
-| `03` | **O Sistema Decimal** | os dez dedos e o "encheu a mão, sobe um" (pedrinha na tigela = grupo fechado; saquinho/caixa = grupo de grupos; prateleira com vão = o zero) | Por que contamos de dez em dez | 🟠 áudio gravado e conferido em 31/08 (12:52, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); falta o Flávio ouvir com a página aberta |
-| `04` | **O Sistema Binário** | a lâmpada e o interruptor (aceso/apagado sem meio-termo; fileira de lâmpadas com casas que dobram 16/8/4/2/1) | Como contar qualquer número apenas com lâmpadas | 🟠 áudio gravado e conferido em 31/08 (29:25, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); ressalva: fecho de 5:51 meio empolado — ele decide de ouvido |
-| `05` | **O Sistema Hexadecimal** | o armário de dezesseis gavetas (letras A-F = carimbos emprestados; um algarismo = apelido de quatro sim-ou-nãos) | Por que o hexadecimal usa letras | 🟠 áudio gravado e conferido em 31/08 (10:35, 10 telas na ordem, tocador + marcadores; a virada 5→6 saiu "aperte próximo" sem o "o" — linha corrigida no _telas.md); ressalva: 1º cartão do fecho rápido — ele confere de ouvido |
-| `06` | **O Sistema de 60** | o relógio (vai-um dos sessenta e a cascata do 59:59; divisão sem sobra; 360°; falanges 12×5) | Por que a hora tem sessenta minutos | 🟠 áudio gravado e conferido em 31/08 (23:51, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); falta o Flávio ouvir com a página aberta |
-| `07` | **O Hertz** | o balanço do parque (1 Hz = um vai-e-vem por segundo; corda curta = rápido, logo o giga mora no minúsculo; tela 7 TOCA som de verdade, 110→1.760 Hz em oitavas) | O que o Hertz realmente mede | 🟠 áudio gravado e conferido em 31/08 (15:08, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); falta o Flávio ouvir com a página aberta |
+| `01` | **Volt Ampere e Watt** | prédio com caixa d'água (altura=volt, vazão=ampère, cano=ohm, mangueira do lodo=watt, litros do mês=kWh, tamanho da caixa=mAh) | Eletricidade explicada como água num prédio | 🟢 no ar desde 30/08 (`extra-01.html`, com o modelo 3D do Prédio da Água) |
+| `02` | **Por que o Ima Gruda** | ferro = milhões de agulhinhas de bússola (bagunçadas=ferro comum, alinhadas=ímã); eletroímã fica de fora (é o ep `03` da etapa 4) | Como os ímãs funcionam por dentro | 🟢 no ar desde 30/08 (`extra-02.html`, só áudio) |
+| `03` | **O Sistema Decimal** | os dez dedos e o "encheu a mão, sobe um" (pedrinha na tigela = grupo fechado; saquinho/caixa = grupo de grupos; prateleira com vão = o zero) | Por que contamos de dez em dez | 🟢 no ar desde 31/08, áudio conferido tela a tela (12:52, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); sem retorno dele de ouvido registrado |
+| `04` | **O Sistema Binário** | a lâmpada e o interruptor (aceso/apagado sem meio-termo; fileira de lâmpadas com casas que dobram 16/8/4/2/1) | Como contar qualquer número apenas com lâmpadas | 🟢 no ar desde 31/08, áudio conferido tela a tela (29:25, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); ressalva: fecho de 5:51 meio empolado — ele decide de ouvido |
+| `05` | **O Sistema Hexadecimal** | o armário de dezesseis gavetas (letras A-F = carimbos emprestados; um algarismo = apelido de quatro sim-ou-nãos) | Por que o hexadecimal usa letras | 🟢 no ar desde 31/08, áudio conferido tela a tela (10:35, 10 telas na ordem, tocador + marcadores; a virada 5→6 saiu "aperte próximo" sem o "o" — linha corrigida no _telas.md); ressalva: 1º cartão do fecho rápido — ele confere de ouvido |
+| `06` | **O Sistema de 60** | o relógio (vai-um dos sessenta e a cascata do 59:59; divisão sem sobra; 360°; falanges 12×5) | Por que a hora tem sessenta minutos | 🟢 no ar desde 31/08, áudio conferido tela a tela (23:51, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); sem retorno dele de ouvido registrado |
+| `07` | **O Hertz** | o balanço do parque (1 Hz = um vai-e-vem por segundo; corda curta = rápido, logo o giga mora no minúsculo; tela 7 TOCA som de verdade, 110→1.760 Hz em oitavas) | O que o Hertz realmente mede | 🟢 no ar desde 31/08, áudio conferido tela a tela (15:08, 10 telas = 10 blocos, 9 Próximos certos, tocador + marcadores ligados); sem retorno dele de ouvido registrado |
+| `08` | **O Zero e os Números** | figura (veio do ep `01-02` da etapa 1, com nome e data; não tem pasta em `_EXTRAS`: o card do hub aponta pra animação antiga em `OLD/01 - Contar antes das máquinas/02 - O Zero e os Números/`) | o mesmo áudio do episódio (22 min, 9 telas) | 🟢 no ar no hub, com "arte provisória" |
+| `09` | **Quem Fez o Primeiro Chip** | figura (Kilby e Noyce, com nome e data) | Como Kilby e Noyce inventaram o chip | 🟢 no ar desde 06/09; ⚠️ o áudio diz "Jack Qube" aos 3:42 e ele decidiu não regravar |
+| `10` | **A Lei de Moore** | conceito | A Lei de Moore não é física | 🟢 no ar desde 06/09 |
+| `11` a `18` | **A Intel · A IBM · O 8080 da Intel · O Alto da Xerox · A Apple · A Microsoft · O BASIC · Tim Berners-Lee e a web** | peça e figura (os oito da etapa 8, encomenda de 06/09; são os candidatos 46 a 53) | — | 🟠 só o card "em produção" no hub, com foto (06/09); sem pasta, sem trio, sem áudio |
+| `19` | **O Eletroímã** | a decidir; proposta: as agulhinhas de bússola do `02`, continuadas (fio com corrente = a mão que vira as agulhinhas; cada volta = mais uma mão; ferro doce se bagunça quando a mão sai, aço fica virado; todas viradas = a força para de crescer) | — | 🟠 em produção desde 14/09: pesquisa de quem descobriu feita (Arago 1820, Sturgeon 1825, Henry 1831); esperando ele escolher a analogia e os candidatos 93 a 96; sem pasta, sem trio, sem áudio |
 
 O `01` teve uma v1 gerada ainda com amarras de série ("primeiro episodio desta etapa", "o resto da serie") — regravado em 23/08 já autocontido; a v1 está em `_v1\` dentro da pasta. Desde então os roteiros de extra carregam uma **REGRA DURA nº 2** proibindo explicitamente citar série/etapa/episódio vizinho, além da nº 1 (sem pessoa/data) — usar esses dois blocos como modelo pros próximos extras.
+
+⚠️ **Virada de 14/09/2026: extra diz quem descobriu.** Pedido dele, ao encomendar o extra do eletroímã: "nos extras eu quero saber quem descobriu". A REGRA DURA nº 1 (sem pessoa, sem data) deixa de valer pros extras novos: todo extra conta o mecanismo **e** quem descobriu ou inventou, com a ficha em voz alta e fonte primária antes de gravar, como na trilha. A nº 2 (sem citar série, etapa ou episódio vizinho) continua. Os extras de conceito já no ar (03 a 07, 10) não são refeitos por isso.
+
+⚠️ **O Eletroímã, o `19` (14/09/2026), em andamento.** Nasceu do relé do áudio da etapa 1 do Hardware: o `02` (Por que o Ímã Gruda) não serve pro relé, porque deixa o eletroímã de fora de propósito. É o primeiro extra escrito sob a virada acima. Fichas, números, fontes e dúvidas da pesquisa estão em [`_HANDOFF-2026-09-14-eletroima.md`](_HANDOFF-2026-09-14-eletroima.md).
+
+- **Sequência, uma etapa por vez e com o OK dele entre elas:** (1) roteiro do extra, depois das decisões abaixo; (2) destravar o NotebookLM (o Edge perdeu o login; ver a receita de gerar no `HARDWARE/plano/_COMO-FAZER.md`); (3) áudio do extra, com o `podcast-verificador` antes; (4) acrescentar a chamada "tem um extra: O Eletroímã" na parte do relé do trio da etapa 1 do Hardware e verificar de novo; (5) ele ouve os dois; (6) deploy só com OK dele.
+- **Formato proposto, sem confirmação dele:** pasta `_EXTRAS\19 - O Eletroima\`, prompt `EX-19-O Eletroima.txt`, só áudio, com o trio do `02` de molde; REGRA DURA nº 2 vale, a nº 1 não; uma analogia só e a parte "onde a analogia quebra"; não repetir o `04-03` (A agulha que se mexeu), que já conta a cena do Sturgeon e a seda do Henry: o extra usa as pessoas pra dizer quem achou cada pedaço do mecanismo (Arago: por que solta; Sturgeon: por que o ferro multiplica; Henry: por que mais voltas). Filme e documentário do assunto ainda não foram levantados.
+- **Decisões esperando ele:** a analogia (proposta: as agulhinhas; alternativa: o capinzal e o vento); quais dos candidatos 93 a 96 viram extra; o extra `03` do Hardware (O relé por dentro) repete o candidato 18, O relé (proposta: usar o 18); a chamada de extra com nome ou genérica (ver a linha "Regra que vale pra todos" abaixo); e um `_pesquisa.md` na pasta de cada extra, com fontes, fichas, analogia e candidatos (proposto e sem resposta).
 
 **A fila de extras vai crescer (30/08):** decisão do dono — "vamos fazer vários extras", com muitos outros depois; a ordem (30/08, mais tarde) é **decimal primeiro, binário na sequência**: entender a base que a pessoa já usa antes de trocar de base. Antes de produzir em série, **pensar e decidir o que a esteira de extras precisa** (nada disso existe hoje):
 
@@ -348,80 +411,7 @@ Três consequências registradas junto:
 - **A trilha principal continua dona do elo.** O episódio `06-01` explica relé e válvula no que a próxima peça precisa (uma tem contato que se mexe, a outra não, e é por isso que ela é mais rápida) e aponta o gancho. O extra é o aprofundamento, nunca o pré-requisito.
 - **Os dois modelos 3D entram no backlog** de `_arquivos/modelos-3d/_a-fazer.md`, na seção `_EXTRAS`.
 
-**Candidatos a extra (03/09), pra deixar o gancho já no áudio da trilha principal — aguardando aprovação do dono.** Agrupados pela etapa da espinha nova (7 etapas) onde o gancho é dito. Tipo: *conceito* (sem nome nem data), *peça* (o objeto por dentro, com modelo 3D) ou *figura* (a pessoa). Situação: 🟢 já no ar · 🟠 modelo 3D pronto, falta o episódio · 🔴 do zero.
-
-| # | Extra | Tipo | Gancho na etapa | Situação |
-|---|---|---|---|---|
-| 1 | O Zero e os Números | figura | 1 Contar | 🟢 EX-08 |
-| 2 | O Sistema Decimal | conceito | 1 Contar | 🟢 EX-03 |
-| 3 | O Sistema Binário | conceito | 1 Contar / 5 Papel | 🟢 EX-04 |
-| 4 | O Sistema Hexadecimal | conceito | 5 Papel | 🟢 EX-05 |
-| 5 | O Sistema de 60 | conceito | 1 Contar | 🟢 EX-06 |
-| 6 | A Anticítera | peça | 1 Contar | 🟠 `anticitera.html` |
-| 7 | A Pascalina por dentro | peça | 2 Mecânica | 🟠 `pascalina.html` |
-| 8 | A Roda de Leibniz | peça | 2 Mecânica | 🟠 `roda-de-leibniz.html` |
-| 9 | Os autômatos (o Escritor) | peça | 2 Mecânica | 🔴 |
-| 10 | A caixa de música | peça | 2 Mecânica | 🔴 |
-| 11 | O tear de Jacquard | peça | 2 Mecânica | 🔴 |
-| 12 | Babbage e Ada | figura | 2 Mecânica | 🔴 |
-| 13 | Volt, Ampère e Watt | conceito | 3 Raio | 🟢 EX-01 |
-| 14 | Por que o ímã gruda | conceito | 3 Raio | 🟢 EX-02 |
-| 15 | A garrafa de Leiden | peça | 3 Raio | 🟠 `garrafa-de-leiden.html` |
-| 16 | Volta e a pilha | figura | 3 Raio | 🔴 |
-| 17 | Faraday | figura | 3 Raio | 🔴 |
-| 18 | O relé | peça | 3 Raio / 6 Liga | 🟠 `rele.html` |
-| 19 | O telégrafo e o Morse | peça | 3 Raio | 🔴 (ep 04-06 publicado pode virar extra) |
-| 20 | Edison, Tesla e a corrente alternada | figura | 3 Raio | 🔴 |
-| 21 | Boole | figura | 4 Lógica | 🔴 |
-| 22 | Hollerith e o cartão furado | figura | 4 Lógica | 🔴 (ep 05-02 publicado pode virar extra) |
-| 23 | Shannon | figura | 4 Lógica | 🔴 |
-| 24 | O Hertz | conceito | 4 Lógica / 6 Liga | 🟢 EX-07 |
-| 25 | Turing | figura | 5 Papel | 🔴 |
-| 26 | Como a letra vira número (ASCII) | conceito | 5 Papel | 🔴 |
-| 27 | Número negativo na máquina (complemento de dois) | conceito | 5 Papel | 🔴 |
-| 28 | A válvula | peça | 6 Liga | 🟠 `valvula.html` |
-| 29 | O Z3 e Konrad Zuse | peça + figura | 6 Liga | 🔴 |
-| 30 | As seis programadoras do ENIAC | figura | 6 Liga | 🔴 |
-| 31 | Von Neumann e a briga do rascunho | figura | 6 Liga | 🔴 |
-| 32 | Grace Hopper e o compilador | figura | 6 Liga | 🔴 (ep 07-03 publicado vira extra) |
-| 33 | O transistor | peça | 7 Encolher | 🟠 `transistor.html` |
-| 34 | Kilby, Noyce e o circuito integrado | figura | 7 Encolher | 🟢 EX-09 (06/09) |
-| 35 | A lei de Moore | conceito | 7 Encolher | 🟢 EX-10 (06/09) |
-| 36 | Como um pacote atravessa a internet | conceito | 7 Encolher | 🔴 |
-| 37 | O Perceptron | peça | 7 Encolher | 🔴 |
-| 38 | O que é treinar uma rede | conceito | 7 Encolher | 🔴 |
-| 39 | Portas lógicas na mão | conceito | 6 Liga (A planta) | 🔴 |
-| 40 | O somador e o número negativo | conceito | 6 Liga (A planta) | 🔴 |
-| 41 | Como a máquina lembra (flip-flop e endereço) | conceito | 6 Liga (A planta) | 🔴 |
-| 42 | Turing e a máquina universal | figura | 6 Liga (A planta) | 🔴 (era o #25, gancho mudou de etapa) |
-| 43 | O conjunto de instruções | conceito | 6 Liga (A planta) | 🔴 |
-| 44 | A IBM e o Mark I, a máquina que contava em decimal | peça + figura | 6 Liga | 🔴 |
-| 45 | O ENIAC | peça | 6 Liga | 🔴 |
-| 46 | A Intel, a empresa | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
-| 47 | O 8080 da Intel, a peça | peça | 8 Sala pro mundo | 🔴 pedido 06/09 |
-| 48 | O Alto da Xerox: como a tela coube no hardware (bitmap, microcódigo, mouse) | peça + figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
-| 49 | A IBM, do mainframe ao PC (não confundir com o 44, que é o Mark I) | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
-| 50 | A Apple: Wozniak e Jobs | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
-| 51 | A Microsoft: Gates e Allen | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
-| 52 | O BASIC: a linguagem que veio junto com o computador de casa (Dartmouth 1964 → Altair 1975 → o BASIC que ligava junto no Apple II, PET e TRS-80) | conceito + figura | 8 Sala pro mundo / 6 Liga (O compilador) | 🔴 pedido 06/09 |
-| 53 | Tim Berners-Lee e a web (o CERN, as três peças, o domínio público de 1993) | figura | 8 Sala pro mundo | 🔴 pedido 06/09 |
-| 54 | O Pentium, a peça (o que mudou por dentro do 486 pro Pentium: dois caixas, o barramento de 64 bits, o erro da divisão) | peça | 9 Máquina que aprende (9.01) | 🔴 pedido 07/09 |
-| 55 | A AMD, a empresa que briga em duas frentes (CPU contra a Intel desde 1969, placa de vídeo contra a NVIDIA desde a compra da ATI em 2006) | figura | 9 Máquina que aprende (9.01 e 9.02) | 🔴 pedido 07/09 |
-| 56 | A NVIDIA e os núcleos de processamento (Jensen Huang, 1993; da GeForce ao CUDA: por que milhares de núcleos pequenos) | peça + figura | 9 Máquina que aprende (9.02) | 🔴 pedido 07/09 |
-| 57 | NVIDIA contra AMD: a corrida das placas de vídeo (3dfx, ATI, GeForce, Radeon) | conceito | 9 Máquina que aprende (9.02) | 🔴 pedido 07/09 |
-| 58 | A história dos videogames (do Pong ao console, e por que o jogo puxou a placa de vídeo) | conceito | 9 Máquina que aprende (9.02) | 🔴 pedido 07/09 |
-| 59 | O que é uma bolha, e por que a das ponto com estourou em março de 2000 | conceito | 10 A rede vira feed (10.01) | 🔴 pedido 07/09 |
-| 60 | A fibra enterrada na bolha: a infraestrutura barata que sobrou no chão | peça | 10 A rede vira feed (10.01) | 🔴 pedido 07/09 |
-| 61 | O PageRank: ordenar a web por quem aponta pra quem | conceito | 10 A rede vira feed (10.02) | 🔴 pedido 07/09 |
-| 62 | O leilão do anúncio: como a rede inteira passou a se pagar | conceito | 10 A rede vira feed (10.02) | 🔴 pedido 07/09 |
-| 63 | O feed: cronológico contra ordenado por modelo | conceito | 10 A rede vira feed (10.03) | 🔴 pedido 07/09 |
-| 64 | O prêmio da Netflix: como a máquina descobre gosto sem entender de filme | conceito | 10 A rede vira feed (10.04) | 🔴 pedido 07/09 |
-| 65 | 2016: quando a recomendação do YouTube virou rede neural | conceito | 10 A rede vira feed (10.04) | 🔴 pedido 07/09 |
-| 66 | O que o algoritmo de recomendação faz com quem assiste (a bolha de conteúdo) | conceito | 10 A rede vira feed (10.04) | 🔴 pedido 07/09 |
-| 67 | A escala: por que o mesmo desenho de 2017 ficou mil vezes maior | conceito | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
-| 68 | O galpão: memória empilhada, placas ligadas entre si, energia e refrigeração | peça | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
-| 69 | Ensinar a responder: do texto que completa ao que responde pergunta | conceito | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
-| 70 | Novembro de 2022: a máquina que conversa chega na mão de todo mundo | figura | ex-etapa 11 (07/09) | 🔴 pedido 07/09 |
+**Candidatos a extra:** a lista numerada mudou em 14/09/2026 pra [`SEIRES/plano/candidatos-a-extra.md`](../../plano/candidatos-a-extra.md), junto com a do Hardware, e ganhou a coluna *Nasceu de*. Os números continuam os mesmos.
 
 **Encomenda do dono (06/09): oito extras da etapa 8** (46 a 53 acima; o BASIC e o Berners-Lee entraram por último, ouvindo o `08-01` e o `08-02`). ✅ **O `08-02` foi refeito no molde do `08-01`** (pessoas com ficha, fio hardware ↔ software) em 06/09, v2 "Da ARPANET ao surgimento da web", 18:07, 11 telas, aprovado de primeira na conferência (o "1999" da transcrição era o Whisper pequeno; o modelo maior ouve "1998" pro Postel). A v1 está em `_v1/` na pasta do episódio. O dono tinha ouvido a v1 e apontado o mesmo defeito da v1 do `08-01`: sem nome e sem ficha, porque foi escrita antes da virada. Pra levar ao extra do Alto (44): o que saiu do PARC saiu por padrão publicado (Ethernet, 1980), por livro (Smalltalk-80, 1983) e por gente que mudou de empresa (Tesler → Apple 1980, Simonyi → Microsoft 1981); ninguém levou planta. Vieram de ele ouvir o `08-01` refeito com as pessoas pelo nome: cada empresa e peça que o episódio só toca de passagem ganha o próprio extra, da família *peça e figura* (com nome e data). ⚠️ O áudio do `08-01` já está gravado com "SEM GANCHO DE EXTRA", então esses seis não são anunciados no ar: quem chega neles é pelo hub de extras e pelo card da etapa. Ordem entre eles ainda não decidida.
 
@@ -429,7 +419,7 @@ Três consequências registradas junto:
 
 **Ideia do dono (03/09): o botão foto real ↔ ilustração.** Ouvindo o teste do `06-02` ele decidiu que a etapa merece **telas**, e mais: nas telas em que a máquina tem fotografia de época, um **botão que troca entre a foto real e a ilustração**. A ilustração não é enfeite, é o que a foto não mostra (a peça em corte, o que se mexe, a cena que ninguém fotografou). Isso resolve um incômodo antigo: até o ábaco o áudio tinha que avisar "estas cenas são reconstituições, não são fotos" (tela 3 do `01-01`); daqui pra frente a página mostra as duas e quem escolhe é quem assiste. ⚠️ **O componente ainda NÃO foi implementado, por decisão dele:** primeiro ele aprova ouvindo o áudio escrito com as telas. A planta de telas do `06-02` (12 telas, 11 pedidos de Próximo, com a foto real e a ilustração anotadas uma a uma) está em `_REFAZER/06 - A máquina que liga/02 - As primeiras máquinas que ligaram/_telas.md`. As versões anteriores do áudio ficaram em `_v1` (episódio antigo) e `_v2` (versão áudio puro, de 18:27).
 
-Regra que vale pra todos: o áudio da trilha principal só diz "tem um extra sobre isso" pro que estiver aprovado nesta lista; genérico, sem nome. Os de *figura* e *peça* seguem a família nova (com nome e data); os de *conceito* seguem as REGRAS DURAS nº 1 e 2 de sempre.
+Regra que vale pra todos: o áudio da trilha principal só diz "tem um extra sobre isso" pro que estiver aprovado na [lista de candidatos](../../plano/candidatos-a-extra.md); genérico, sem nome. ⚠️ Em aberto desde 14/09/2026: o Hardware (D9) chama o extra pelo nome, e esta linha diz genérico; proposta de igualar com nome (a D9 é o pedido mais recente dele), esperando o Flávio. Os de *figura* e *peça* seguem a família nova (com nome e data); os de *conceito* seguem as REGRAS DURAS nº 1 e 2 de sempre.
 
 **Decisão do dono (03/09): a etapa "O computador no papel" sai da espinha.** Motivo: as etapas 5 e 6 do desenho de 7 acontecem ao mesmo tempo (1936–1949), e "primeiro o papel, depois a máquina" confundia até quem escreveu. O conteúdo não some: vira **um episódio só, "A planta"**, que passa a abrir a etapa **A máquina que liga** (agora com três episódios: 01 A planta · 02 As primeiras máquinas que ligaram · 03 O programa que mora na memória), e os cinco assuntos de hoje viram **cinco extras** com gancho nesse episódio: 39 Portas lógicas na mão · 40 O somador · 41 Como a máquina lembra (flip-flop e endereço) · 42 Turing e a máquina universal · 43 O conjunto de instruções. A espinha nova fica com **6 etapas**. O trio de "A planta" está em `_REFAZER/06 - A máquina que liga/01 - A planta/` (áudio de teste, como os outros dois).
 
@@ -735,7 +725,27 @@ novos e as duas paginas que embutem modelo.
 Playwright e nao patchright) e por que a checagem "atras do painel" existe. E o que a
 Etapa 4 do plano pedia desde sempre.
 
-## Publicados no acervo
+## 08 a 10/09: o site muda de cara (lote 1 no ar, lote 2 pronto local)
+
+Três dias de pedidos dele por print, quase tudo na base do site (`site/css/animacao/`, `site/js/animacao/`), então vale pras 29 animações e pros extras de uma vez. O detalhe de cada item (causa, CSS, lab de QA) está na memória `project_serie_reinventar_computador`; aqui fica o que mudou e o que ainda não subiu.
+
+- **Nome "Do Ábaco à IA" (09/09)**, só no texto; pasta e URLs iguais (ver o cabeçalho).
+- **Barra virou componente (08/09):** o `menu.js` monta a barra e o "voltar" a partir da árvore do MENU; página nova só liga `menu.css` + `menu.js`. ⚠️ Episódio novo precisa entrar na árvore do `menu.js`, senão o voltar não sabe o pai.
+- **Tocador no rodapé, no desenho do player do Nexus (09/09):** capa de 48px, título inteiro, play no centro da largura toda, voltar 10 / avançar 30; em 10/09 as setas viraram desenho (SVG por `mask-image`), porque o glifo saía miúdo no telefone dele.
+- **Leitura (09/09):** fonte de leitura Atkinson Hyperlegible (Fraunces só em título), letra maior no telefone (abertura em 19,5px), legenda da cena virou texto de leitura à esquerda, `.nota-cena` saiu da caixa alta; foto da capa e da ficha vão pro alto no telefone (10/09).
+- **Ábaco (09/09):** capa com foto real (suanpan, depois o schoty), 3D pelo botão; o Ábaco Play subiu (no ar estava a versão de 30/08); o ábaco binário entrou no ar com botão no extra 04.
+- **3D no telefone (09/09):** a arte deita quando o telefone está em pé (técnica do KIDS, com três consertos pro Three.js), menu único pelo hamburguer, "Seu número" flutuando na arena; lightbox mede em `dvh`, X pra dentro do quadro, foto larga também deita. 10/09: o quadro vazio no telefone dele (384x686) era bug de `max-height`, não rede.
+- **Desktop (10/09):** rodapé fino de 46px + setas grandes nos lados do palco (`telas.js` cria, `telas.css` só mostra acima de 820px); o trilho vertical de 09/09 durou um dia.
+- **Tela de FIM (10/09):** o `telas.js` cria uma `step--fim` depois da última (capa 16:9, "Fim ✦", ver de novo, voltar pra etapa); não conta nas bolinhas nem na REGRA DURA; o tocador abre o fim no `ended`.
+- **Cena 16:9 + grade de 3/4/6 automática (10/09)**, hastes do ábaco HTML na medida exata das contas (Ábaco e Decimal), hover nos 57 cartões do fechamento (`translate`, não `transform`, e só em `(hover: hover)`).
+- **Molde `_arquivos/_molde-animacao.html` refeito pelo Ábaco (10/09):** episódio novo nasce dele, nunca de cópia de outro episódio (checklist na memória `feedback_serie_episodio_novo_checklist`).
+- **Servidor local com Range (09/09):** `scratchpad/servidor-local.py`, porta 1234; sem isso o seek do áudio voltava a zero e a tela saltava pra primeira.
+
+⚠️ **Estado do deploy no fim de 10/09:** no ar desde 14:08 o **lote 1** (11 arquivos: rodapé fino, setas, cena 16:9, extras 03-07 e os 2 do `_REFAZER` com `--alto`, HTML do 08-01). **Pronto local e SEM deploy, esperando o OK dele (lote 2):** `telas.css`, `pranchas.css`, `telas.js`, `tocador.js`, o `abaco.css` e o `suanpan.css` do Ábaco, o `abaco.css` do Decimal, `animacao.html` + `episodio.css` do 08-01. É o que leva a grade automática, as hastes, o hover e a tela de fim. O script `sobe-rodape-setas-cena.sh` era do scratchpad: refazer a lista se sumiu. Fora do deploy de propósito: o JAVA WEB 02-01 e o `_molde-animacao.html`.
+
+## Publicados no acervo (histórico, parou em 27/08)
+
+⚠️ **Esta tabela parou em 27/08 e não foi mais alimentada.** Desde a etapa 6 refeita (03/09) os episódios saem no site `series.afx.art.br` (hub `computador.html` + `etapas/etapa-NN.html`), e é o site que diz o que está no ar. As fases antigas (etapas 1 a 5 no acervo do Nexus) continuam como estão aqui.
 
 A pasta guarda o nome do episódio; o card no Nexus guarda o **título do podcast** (o que o NotebookLM deu ao áudio). Esta tabela é o que amarra os dois — os números de faixa vêm do `_publicado.json` de cada pasta.
 
@@ -764,11 +774,11 @@ Fase antiga, fora das etapas: piloto v1 (faixa 33, em `00 - Piloto\_v1\`, decis�
 
 `00 - Piloto - Do Ábaco ao Transformer` — é a vitrine: apresenta o arco inteiro e vende o resto da série. Publicado na v2.
 
-⚠️ **Pendência: refazer (v3).** O piloto atual anuncia os episódios soltos e não conhece o hiato nem as etapas. O piloto novo apresenta **as 10 etapas** como mapa da série. Pedido de 20/08, reforçado pela reorganização de 22/08.
+⚠️ **Pendência: refazer (v3).** O piloto atual anuncia os episódios soltos e não conhece o hiato nem as etapas. O piloto novo apresenta **as etapas** como mapa da série (10 no ar, e a série é aberta desde 07/09: o mapa não promete fim). Pedido de 20/08, reforçado pela reorganização de 22/08.
 
 ## Regras da série
 
-- **O piloto primeiro** e, quando refeito, ele passa a ser o mapa das 10 etapas.
+- **O piloto primeiro** e, quando refeito, ele passa a ser o mapa das etapas (sem prometer fim: a série é aberta desde 07/09).
 - Quem tem minutagem na coluna Fonte usa a transcrição (perfil `podcast-fonte-externa`); o resto precisa de **pesquisa própria** antes do trio. A etapa 4 é quase toda pesquisa nova.
 - Um episódio por vez, com aprovação do Flávio antes de gerar áudio.
 - Cada episódio tem **nome, data, motivação, como funciona e prática interativa** na `animacao.html`.
@@ -777,8 +787,133 @@ Fase antiga, fora das etapas: piloto v1 (faixa 33, em `00 - Piloto\_v1\`, decis�
 - ⚠️ **O áudio vem antes da animação** (invertido em 22/08 — ver a ordem de produção abaixo).
 - Testar a animação com Playwright antes de publicar, **inclusive na viewport 360px**.
 - ⚠️ **Janela temporal declarada (26/08).** A abertura de todo episódio diz o intervalo que ele cobre — "este episódio vai de 1745 a 1800" — e o fechamento devolve em que ano parou, pro próximo pegar dali. Vale nos três lugares: primeira linha do bloco do Overview, abertura do roteiro e ficha da primeira tela da animação.
-- ⚠️ **Ficha humana dos protagonistas (26/08).** Todo personagem que carrega o episódio ganha uma ficha curta na primeira vez que é citado: onde nasceu (**nome do lugar na época + o que é aquilo hoje**), de que família veio (ofício do pai, condição), onde estudou, e **quando morreu e de quê** (a causa entra sempre que for conhecida, em poucas palavras e sem drama; quando a fonte não disser, o roteiro diz que não se sabe, nunca inventa). Critério de quem entra: os protagonistas, mais quem o roteiro julgar importante — coadjuvante citado de passagem numa frase só fica sem ficha. Motivo: nome solto com data de invenção do lado não gruda; ouvinte lembra de pessoa, não de sobrenome.
-- ⚠️ **Nome próprio estrangeiro entra soletrado na primeira vez (06/09).** No EX-09 o apresentador apresentou o protagonista como "Jack **Qube**" aos 3:42, exatamente onde o ouvinte aprende o nome, e só falou "Kilby" certo aos 11:38 (confirmado na segunda passada com o modelo maior: é do áudio, não da transcrição). O dono decidiu **não regravar** e tratar daqui pra frente. Então todo roteiro com sobrenome estrangeiro passa a trazer, no bloco de regras duras, a pronúncia escrita do jeito que se fala em português e o pedido de dizer devagar na primeira aparição — mesma solução que já vale pros anos por extenso. Exemplo: `Kilby (fala-se "quiu-bi")`.
+- ⚠️ **Ficha humana dos protagonistas (26/08).** Todo personagem que carrega o episódio ganha uma ficha curta na primeira vez que é citado: onde nasceu (**nome do lugar na época + o que é aquilo hoje**), de que família veio (ofício do pai, condição), onde estudou, e **o ano em que morreu** (⚠️ a parte da causa desta regra foi **desfeita em 08/09**: ver a regra logo abaixo). Critério de quem entra: os protagonistas, mais quem o roteiro julgar importante — coadjuvante citado de passagem numa frase só fica sem ficha. Motivo: nome solto com data de invenção do lado não gruda; ouvinte lembra de pessoa, não de sobrenome.
+- ⚠️ **Nome próprio estrangeiro entra soletrado na primeira vez (06/09).** No EX-09 o apresentador apresentou o protagonista como "Jack **Qube**" aos 3:42, exatamente onde o ouvinte aprende o nome, e só falou "Kilby" certo aos 11:38 (confirmado na segunda passada com o modelo maior: é do áudio, não da transcrição). O dono decidiu **não regravar** e tratar daqui pra frente. ⚠️ **Esta regra foi DESFEITA em 08/09** (ver a regra logo abaixo): a pronúncia escrita no roteiro fazia o apresentador ler a nota em voz alta. O que sobra dela é o pedido de **dizer o nome devagar na primeira aparição**, sem nenhuma nota de pronúncia junto.
+- ⚠️ **O aviso da página é um LEMBRETE, não uma explicação (08/09).** Ouvindo a etapa 10, o
+  Flávio reparou que todo episódio explica a mecânica da página do zero, como se fosse a
+  primeira vez que aquela pessoa ouve a série. Não é: quem ouve, ouve em sequência, e no
+  quarto episódio já sabe o que é o botão Próximo. O aviso continua existindo, porque tem
+  gente que pega a série pelo meio, mas vira **uma frase curta**: quantas telas são, que
+  quem está só ouvindo não perde nada, e que quem está com a página aberta vira quando
+  ouvir o pedido. Sem ensinar a usar a página e sem dizer a frase do pedido como exemplo.
+  Já está no `_arquivos/_molde-roteiro.txt`, então vale pros próximos episódios de qualquer
+  série. Os áudios já no ar ficam como estão.
+- ⚠️ **A etapa fixa uma janela de tempo, e os episódios vão e voltam dentro dela (08/09).**
+  O Flávio ouviu a etapa 10 e gostou justamente disto: o `10.01` conta o dinheiro e a bolsa
+  quebrando, o `10.02` **volta atrás no mesmo período** pra contar como o mecanismo de busca
+  funcionava, o `10.03` volta de novo pra contar as redes sociais. Cada episódio pega **um
+  fio de cada vez** em vez de embolar tudo numa cronologia única. Palavras dele: "o dez vai
+  ficar de tal tempo a tal tempo, e ele vai indo e vindo, contando o que estava
+  acontecendo". Isso passa a ser o desenho padrão de etapa: **a janela é da etapa, não do
+  episódio**, os intervalos dos episódios se sobrepõem de propósito, e cada um avisa isso em
+  uma frase na tela 1. É o oposto de fatiar a etapa em pedaços de tempo que não se tocam.
+
+- ⚠️ **Sai a pronúncia escrita dos roteiros (08/09).** O Flávio ouviu "fulano, que se
+  pronuncia fulano" e mandou tirar. A causa era a lista que eu punha no prompt no formato
+  `Nome ("fo-né-ti-ca")`: o apresentador tratava a lista como conteúdo e lia em voz alta,
+  e como na maioria dos nomes a fonética em português soa igual ao nome escrito, ele dizia
+  **a mesma coisa duas vezes seguidas**. Avisar "não leia esta lista" não resolveu: numa
+  gravação a lista saiu 17 vezes mesmo com o aviso. Então a lista sai. Fica só: *dizer o
+  nome devagar na primeira vez, uma vez só, e seguir*.
+  ⚠️ **O risco que isso reabre**, e que vale saber: a regra de 06/09 nasceu porque o EX-09
+  chamou Jack Kilby de "Jack Qube" bem onde o ouvinte aprende o nome. Sem a pronúncia
+  escrita, esse tipo de erro volta a depender da conferência da transcrição pra ser pego.
+  Só um take teve a lista lida (a v2 do `10.02`, reprovada e nunca publicada); nenhum
+  episódio no ar tem isso.
+
+- ⚠️ **A aposta tem que soar como aposta (08/09).** Sempre que um episódio chega num
+  momento em que alguém apostou e deu certo — um cheque, uma fundação, uma decisão de não
+  vender —, dizer **o que não se sabia naquele dia**: que aquilo parecia igual a tudo que
+  havia em volta, que podia não dar em nada, e, quando for verdade, que a mesma pessoa
+  apostou também em coisas que quebraram. Sem isso o ouvinte escuta sabedoria onde havia
+  sorte e risco. Palavras do Flávio, ouvindo o `10.02`: *"parece que esses caras acertaram
+  já sabendo, mas não. Eles estavam apostando em uma coisa que estava igual pra todo mundo,
+  milhões delas aparecendo"*. O caso concreto: o cheque de cem mil dólares pro Google, em
+  agosto de 1998, foi assinado **no auge da bolha das ponto com**, quando qualquer empresa
+  de internet parecia a mesma coisa. O áudio no ar não diz isso.
+- ⚠️ **Os fios da etapa se amarram entre si (08/09).** Como a janela de tempo é da etapa e
+  cada episódio conta um fio (ver a regra do vai e vem), quando um episódio chega numa data
+  que outro episódio da mesma etapa já cobriu, **amarrar em uma frase**: o que estava
+  acontecendo do outro lado naquele mesmo dia. Quem ouve um episódio solto não tem esse
+  contexto, e é justamente ele que faz a decisão parecer arriscada em vez de óbvia. Isso se
+  decide **montando a etapa inteira**, não episódio a episódio: ao fechar o roteiro de um
+  episódio, reler os irmãos e marcar onde as datas se cruzam.
+
+- ⚠️ **A tela e o áudio andam nos DOIS sentidos (08/09, feito).** Antes, só o áudio mandava
+  na tela. Agora virar a tela na mão (Próximo, Anterior, bolinha ou seta) **leva o áudio
+  junto**, pro começo daquela tela, como trocar de capítulo: tocando, continua tocando dali;
+  parado, só anda o ponteiro. Está no `site/js/animacao/tocador.js`, que é compartilhado, e
+  por isso vale nas 17 páginas de uma vez. A trava `virandoPeloAudio` evita o laço (áudio
+  vira tela → tela mexe no áudio → áudio vira tela).
+  ⚠️ **Isso revelou um defeito antigo:** o relógio do tocador estourava 3px na tela de 360px
+  quando o áudio passava de 10 minutos. Ninguém tinha visto porque o `qa-pagina.js` nunca
+  tocava o áudio; só apareceu quando virar a tela passou a mover o som. Corrigido num bloco
+  `@media (max-width: 420px)` no fim do `tocador.css`.
+- ⚠️ **Os extras possíveis se levantam JUNTO com o roteiro (08/09).** Ao montar o roteiro de
+  um episódio, listar **todos** os extras que ele poderia gerar (conceito que ficou de fora,
+  peça que mereceria episódio próprio, pessoa que não coube) e levar a lista pro Flávio
+  **antes**, pra ele aprovar quais quer. Não decidir sozinho e não deixar pra propor depois,
+  quando o roteiro já está fechado e a lembrança do que ficou de fora já se perdeu. A lista
+  de candidatos, numerada, vive em [`SEIRES/plano/candidatos-a-extra.md`](../../plano/candidatos-a-extra.md) desde 14/09/2026.
+
+- ⚠️ **Filme e documentário do assunto entram junto com o roteiro (08/09).** Além dos
+  extras, levantar as obras que conversam com o episódio e levar a lista pro Flávio. Vale o
+  que eu souber e o que uma busca trouxer.
+  **A obra entra em DOIS lugares** (decisão dele em 08/09): (1) **o áudio fala dela**, onde
+  o assunto aparece, em uma ou duas frases, dizendo se é documentário ou ficção e o que ela
+  distorce; e (2) **a página fecha com uma tela de links** dizendo onde assistir — HBO,
+  Netflix, YouTube, cinema. Palavras dele: *"quero que o áudio fale sobre o documentário que
+  existe, e quero que lá no final, depois de tudo, tenha os links pra aonde está"*.
+  ⚠️ **Virada de 14/09/2026: a tela de links NÃO é uma tela do deck.** A ideia de 08/09 era
+  uma tela final muda "Pra ver" (N narradas + 1 muda); ela nunca chegou a ser montada. Desde
+  14/09 a lista mora em dois lugares da base: no **telefone**, na guia "Filmes" do painel
+  (as guias "Extras" e "Filmes" ficam em cima da lista e o tocador com a paginação fixos
+  embaixo, seja qual for a guia; sem item a guia avisa que não tem); e no **desktop**, no
+  bloco "pra ver" da tela de fim, que já existia desde 10/09. As duas leem do campo
+  `filmes` do episódio na árvore `MENU` do `site/js/menu.js` (título, ano, tipo, nota com o
+  que distorce, onde assistir em texto e `href` só quando confirmado); o campo `extras`
+  vizinho faz o mesmo pros extras que o áudio promete. O deck fica só com as N telas
+  narradas e o `qa-pagina.js` recebe N. Detalhe em `_HANDOFF-2026-09-14.md`.
+  ⚠️ **Título de filme é onde eu mais invento**, então a lista sai de busca conferida, com
+  fonte, e não de memória: se não achar confirmação de que a obra existe, ela não entra. É
+  melhor devolver duas certas do que seis duvidosas.
+  Cada indicação diz: **se é documentário ou ficção** (não pode ficar vago), por que
+  conversa com o episódio, e **o que ela distorce** — o caso exemplar é "The Social Network"
+  (2010), que é drama e não reportagem, e cujo próprio roteirista admitiu licença dramática.
+  Onde assistir só entra se der pra confirmar; streaming muda toda hora.
+
+- ⚠️ **A ficha fecha com o DESTINO DO TRABALHO da pessoa (08/09).** Não com a causa da
+  morte, que sai; com o que ela estava fazendo. **Se morreu:** o ano, mais se ainda estava
+  no projeto que o episódio conta ou se já tinha ido pra outra coisa. **Se está viva:** em
+  que estava trabalhando, **com o ano dito** — "em dois mil e vinte e seis estava em tal
+  lugar", nunca "hoje" nem "atualmente", que envelhecem mal e viram mentira sozinhos (o
+  mesmo motivo pelo qual a ficha já diz "vivo em dois mil e vinte e seis" e não "vivo
+  hoje"). Palavras dele: *"se a pessoa morreu, você fala, ela estava trabalhando no projeto
+  ou não, o que ela estava fazendo?... e agora nesses que a pessoa está viva, também fala em
+  que que a pessoa está trabalhando"*.
+  ⚠️ **Custo que isso cria:** é mais um dado por pessoa que precisa de pesquisa conferida
+  antes de gravar, e é um dado que **muda com o tempo** — o levantamento vale para o ano em
+  que foi feito, e por isso o ano vai dito em voz alta.
+- ⚠️ **Sobre a morte, o ANO e só isso (08/09).** Sem causa, sem motivo, sem dizer se
+  foi doença, acidente ou idade — e sem dizer "não se sabe do quê". Isso **desfaz** a parte
+  da regra de 28/08 que mandava dar a causa "sempre que for conhecida". Palavras do Flávio:
+  *"quando você fala que a pessoa morre, só fala o ano da morte. Não fala de quê, não fala o
+  motivo da morte"*. Os episódios das etapas 8, 9 e 10 já saíram assim por acaso (as fichas
+  dizem só "morreu em 2009", "morreu em 2024"); quem tem a causa no ar são episódios mais
+  antigos, e eles ficam como estão.
+
+- ⚠️ **A trilha principal conta a HISTÓRIA; o mecanismo técnico fundo vira EXTRA (08/09).**
+  Ouvindo o `10.03`, o Flávio disse: *"ele inteiro poderia ser um arquivo extra. Na passagem
+  principal poderia só falar sobre as redes sociais, YouTube, e levar todo esse material pra
+  um episódio extra"*. O episódio da trilha carrega **as pessoas, as datas e o que mudou**;
+  quando o assunto exige explicar um mecanismo por dentro — com número, arquitetura e nome
+  de ferramenta —, esse pedaço é **material de extra**, não de trilha.
+  ⚠️ **O sintoma é a duração.** O molde pede uns 18 minutos. Episódio saindo em 22, 25, 28
+  não é "assunto rico": é assunto de extra empurrado pra dentro da trilha. Quando a duração
+  estourar, a primeira pergunta é **o que aqui é extra**, e não como falar mais rápido.
+  Isso alimenta a regra dos extras levantados junto com o roteiro: o que for cortado por
+  densidade **já entra na lista** de candidatos.
+
 - Os 12 episódios publicados até 23/08 são anteriores às duas regras acima e não as seguem — entram nelas quando forem refeitos, sem reeditar nada por enquanto.
 
 ## Produção

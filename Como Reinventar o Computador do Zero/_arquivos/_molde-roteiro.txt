@@ -25,14 +25,62 @@ ESTE EPISODIO COBRE DE {ANO} A {ANO}. Dizer esse intervalo em voz alta logo na a
 ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com {N} telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O {N} vem da contagem do _planta.md deste episodio. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
 
 - No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
-- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O aviso e UMA FALA SO, de
+  UM apresentador, em no maximo duas frases e uns quinze segundos: diz quantas telas sao,
+  que quem esta so ouvindo nao perde nada, e segue. O OUTRO APRESENTADOR NAO COMENTA, nao
+  concorda, nao completa e nao faz pergunta sobre isso: aviso com replica vira conversa, e
+  conversa vira meio minuto de nada. NAO explicar o que e um botao, NAO ensinar a usar a
+  pagina e NAO dizer a frase do pedido como exemplo.
+  Por que pode ser tao curto: a pagina e o audio andam juntos nos dois sentidos. O audio
+  vira a tela sozinho enquanto toca, e virar a tela na mao leva o audio junto, como trocar
+  de capitulo. Ninguem precisa fazer nada, entao nao ha nada pra ensinar. O pedido "aperte
+  o Proximo" no fim de cada tela CONTINUA existindo: e ele que marca onde a tela vira.
 - Nas telas interativas ({numeros}), avisar que tem um botao na tela pra acompanhar enquanto ouve.
 - Na tela de PRATICA ({numero}), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
 - Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
 
+A TRILHA CONTA A HISTORIA; O MECANISMO POR DENTRO E EXTRA. O episodio da trilha carrega as
+pessoas, as datas e o que mudou. Quando o assunto pedir para abrir um mecanismo por dentro,
+com numero, arquitetura e nome de ferramenta, esse pedaco NAO cabe aqui: vira extra, e entra
+na lista de candidatos. Sintoma de que isso aconteceu: a duracao. Se o episodio esta
+passando de uns 18 minutos, a pergunta nao e como falar mais rapido, e o que ali dentro e
+extra.
+
+LEVANTAR FILME E DOCUMENTARIO DO ASSUNTO. Junto com a lista de extras, listar as obras
+que conversam com o episodio. Cada uma diz se e DOCUMENTARIO ou FICCAO, por que conversa
+com o episodio, e o que ela distorce. Titulo de filme e onde mais se inventa: conferir cada
+obra numa busca antes de listar, e nao por nada que nao der pra confirmar.
+
+A OBRA APARECE EM DOIS LUGARES. No AUDIO, onde o assunto dela aparece: uma ou duas frases
+dizendo que a obra existe, se e documentario ou ficcao, e o que ela distorce. E na PAGINA,
+na guia "Filmes" do painel do telefone e na tela de fim, no desktop (desde 14/09/2026; antes
+a ideia era uma tela final muda "Pra ver", que nunca chegou a ser montada). A lista da
+pagina NAO e escrita no episodio: entra no campo `filmes` do episodio na arvore MENU do
+site/js/menu.js (titulo, ano, tipo, nota com o que distorce, onde assistir em texto e o href
+so quando confirmado), e o painel e a tela de fim leem de la. O deck fica so com as N telas
+narradas.
+
+LEVANTAR OS EXTRAS POSSIVEIS. Ao terminar o roteiro, listar num bloco a parte TODOS os
+extras que este episodio poderia gerar: conceito que ficou de fora por falta de espaco,
+peca que mereceria um episodio so dela, pessoa que nao coube. A lista vai pro dono ANTES,
+pra ele escolher o que vira extra. Nao decidir sozinho e nao deixar pra propor depois.
+
+A APOSTA TEM QUE SOAR COMO APOSTA. Quando o episodio contar uma decisao que deu certo
+(um cheque, uma fundacao, um "nao" pra uma proposta de compra), dizer o que NAO se sabia
+naquele dia: que aquilo parecia igual a tudo em volta e podia nao dar em nada. Sem isso o
+ouvinte escuta sabedoria onde havia risco. Se a mesma pessoa apostou em coisas que
+quebraram, dizer isso tambem, numa frase.
+
+AMARRAR COM OS OUTROS EPISODIOS DA ETAPA. Os episodios de uma etapa cobrem a mesma janela
+de tempo por fios diferentes. Quando este chegar numa data que outro ja contou, lembrar em
+UMA frase o que estava acontecendo do outro lado naquele dia. Quem ouve este episodio
+sozinho nao tem esse contexto.
+
 REGRA DURA DAS TELAS. Este episodio tem {N} telas. O audio TEM que pedir "aperte o Proximo" exatamente {N-1} vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
 
-FICHA HUMANA. Cada protagonista do episodio, mais quem o roteiro julgar importante, ganha uma ficha curta na primeira vez que e citado: onde nasceu, com o nome do lugar na epoca E o que e aquilo hoje; de que familia veio, o oficio do pai, a condicao; onde estudou; quando morreu E DE QUE. A causa da morte entra sempre que for conhecida, em poucas palavras, dita direto, sem rodeio e sem drama; quando a fonte nao disser, falar que nao se sabe, nunca inventar. Quem so aparece de passagem numa frase fica sem ficha.
+FICHA HUMANA. Cada protagonista do episodio, mais quem o roteiro julgar importante, ganha uma ficha curta na primeira vez que e citado: onde nasceu, com o nome do lugar na epoca E o que e aquilo hoje; de que familia veio, o oficio do pai, a condicao; onde estudou; e o DESTINO DO TRABALHO dela. Se ja morreu: o ano da morte E o que ela estava fazendo naquela altura, se ainda estava no projeto que o episodio conta ou se ja tinha ido pra outra coisa. Se esta viva: em que ela estava trabalhando, com o ano dito ("em dois mil e vinte e seis estava em tal lugar"), NUNCA "hoje" nem "atualmente", que envelhecem mal. ⚠️ Sobre a morte, o ANO E SO ISSO: NAO dizer de que morreu, NAO dizer o motivo, NAO dizer se foi doenca, acidente ou idade, e NAO dizer que nao se sabe a causa. Quem so aparece de passagem numa frase fica sem ficha.
+
+TODA TELA TEM IMAGEM. Nenhuma tela do episodio pode ser so texto: a ficha do equipamento, a ficha humana e qualquer tela de explicacao vao com uma imagem a vista, no alto da tela no telefone. A ordem de busca e fixa: primeiro foto REAL (Wikimedia Commons, museu, acervo, com credito e licenca na legenda); se nao existir foto real do assunto ou da pessoa, ai sim uma reconstituicao gerada no Flow, marcada como ilustracao. Quem monta a animacao confere tela por tela no telefone: se a imagem ficou fora da dobra, a tela conta como sem imagem. FORMATO: a imagem da tela e sempre 16:9 (a moldura da cena corta no centro o que vier em outro formato). Imagem gerada no Flow nasce 16:9; foto real em pe ou quadrada so entra se o assunto sobreviver ao corte do meio.
 
 ---------------
 
@@ -70,7 +118,8 @@ TELA 1 (CAPA: {NOME DO EPISODIO})
 
 {Dizer o que este episodio faz, e o intervalo de anos que ele cobre.}
 
-Explicar a mecanica: quando a gente pedir, aperte o Proximo. Na pratica, pause e resolva. Sem a pagina, da pra acompanhar so ouvindo.
+Lembrar a mecanica em uma frase, sem ensinar: sao {N} telas, quem esta so ouvindo
+acompanha normalmente, e quem esta com a pagina aberta vira quando ouvir o pedido.
 
 Pedir: aperte o Proximo.
 
@@ -78,7 +127,7 @@ TELA 2 (A FICHA: NOME, DATA E MOTIVACAO)
 
 {Ficha do assunto: o que e, data, lugar.}
 
-{Ficha humana do protagonista: nascimento com nome de entao e de hoje, familia, escola, morte com a causa.}
+{Ficha humana do protagonista: nascimento com nome de entao e de hoje, familia, escola, e o destino do trabalho: o ano da morte e o que fazia entao, ou, se viva, em que estava trabalhando e em que ano.}
 
 {Motivacao: por que alguem se deu ao trabalho de resolver isso.}
 

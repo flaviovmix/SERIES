@@ -1,0 +1,20 @@
+O CEREBRO E OS SENTIDOS - CONTEXTO
+==================================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o audio da etapa 1 da serie HARDWARE. A serie monta do zero, peca por peca, uma caixa d'agua de predio que se cuida sozinha. Este audio e uma visao geral direta do que a etapa 1 ensina, sem contar a etapa como historia.
+
+A etapa 1 ensina cinco coisas: o microcontrolador e o programa que nao para (setup e loop, o LED que pisca, o Monitor Serial); a entrada e a saida digital (o botao, o resistor que prende a entrada, o rele e a lei de Ohm); a entrada analogica (o numero de 0 a 1023 lido de um trimpot); o PWM (o meio termo de 0 a 255); e a decisao com if e else, que junta tudo. Da pra acompanhar num simulador de Arduino no navegador, sem comprar nada.
+
+Episodios desta etapa (ainda em producao):
+01 - O laco que nunca para
+02 - A boia e a bomba
+03 - Quanta agua tem
+04 - Meio aceso
+05 - A caixa d'agua decide sozinha
+
+Extras indicados no audio: O que tem dentro do microcontrolador e A historia do Arduino (ainda vao sair, nesta serie); Volt, Ampere e Watt, O Sistema Binario e O Hertz (ja existem, na serie Do Abaco a IA); O rele (ainda vai sair, na serie Do Abaco a IA).
+
+Por que importa: ler um contato, medir uma quantidade, dosar uma saida e decidir com uma regra e o que existe dentro de qualquer controle automatico, do termostato da geladeira ao portao eletronico.
+
+Use este contexto apenas como apoio.

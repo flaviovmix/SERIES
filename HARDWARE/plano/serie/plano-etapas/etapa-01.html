@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 01 &middot; Hardware</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../plano-estilo.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../plano-visao.html">&larr; Plano Hardware</a> &middot; etapa 01 de 5</p>
+    <h1>O cérebro e os sentidos</h1>
+  </header>
+
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>não iniciado</span> <p class="note"><b>0</b> de 5 publicados</p></div>
+    <p class="lede">Liga a bomba sozinha e acende o alarme <em>&middot; 5</em></p>
+
+    <section>
+      <h2>Os 5 epis&oacute;dios</h2>
+      <div class="scroller"><table><thead><tr><th>Pasta</th><th>Episódio</th><th>O que cobre</th><th>Aula</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">01</td><td class="etapa"><b>O laço que nunca para</b></td><td class="obs">o que é um microcontrolador (um computador inteiro num chip só: processador, memória e pinos), <code>setup()</code> e <code>loop()</code>, e o primeiro sinal de vida da caixa d'água: um LED que pisca pra dizer &quot;estou funcionando&quot;, como o de todo aparelho ligado. O Monitor Serial, com o controlador contando o que está fazendo</td><td class="obs">1</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">02</td><td class="etapa"><b>A boia e a bomba</b></td><td class="obs">entrada e saída digital. A chave-boia é um contato seco, igual a um botão; por que a entrada solta &quot;flutua&quot; e mente, e como o pull-up resolve (o resistor que já mora dentro do chip). A bomba é um relé: o pino não aguenta motor, só dá a ordem. Por que o LED precisa de resistor, com a lei de Ohm no prédio da água</td><td class="obs">2</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">03</td><td class="etapa"><b>Quanta água tem</b></td><td class="obs">entrada analógica: o trimpot como boia, a tensão virando um número de 0 a 1023, e por que 1023 (dez lâmpadas do binário). O nível aparecendo no Monitor Serial</td><td class="obs">3</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">04</td><td class="etapa"><b>Meio aceso</b></td><td class="obs">a saída analógica que não é analógica: PWM, liga e desliga tão rápido que o olho vê meio-termo. Ciclo de trabalho e <code>analogWrite</code> de 0 a 255, com o LED do painel acendendo mais quanto mais cheia a caixa</td><td class="obs">4</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">05</td><td class="etapa"><b>A caixa d'água decide sozinha</b></td><td class="obs"><code>if</code>/<code>else</code>: abaixo do mínimo liga a bomba e acende o alarme, no máximo desliga, no meio só mostra o nível. E por que a bomba não pode ligar e desligar no mesmo ponto (a histerese, o intervalo que impede o liga-desliga sem fim). A primeira versão do aparelho funcionando inteira</td><td class="obs">5</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr></tbody></table></div>
+    </section>
+
+    <article class="corpo">
+<p>Nesta etapa o sensor de nível é um trimpot fazendo o papel da boia: girar o botãozinho é a água subindo ou descendo.</p>
+<p>*A etapa tem também o episódio <code>00 - A etapa inteira</code> (D8), só áudio, escrito em 11/09/2026: conta a etapa numa olhada só e mora na página <code>site/etapas/hardware-01.html</code>.*</p>
+<p><strong>Fecha quando:</strong> a versão 1 da caixa d'água roda no Wokwi: girando a boia, a bomba liga e desliga sozinha e o alarme acende na hora certa. <strong>Aparece em:</strong> termostato de geladeira, boia elétrica de caixa d'água, portão com fim de curso.</p>
+    </article>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>tudo publicado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>parcial: alguns episódios publicados</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>não iniciado</span></span></div>
+
+  <nav class="passo"><span></span><a class="nav-ir nav-ir--fim" href="etapa-02.html"><span>pr&oacute;xima</span>Etapa 02 &middot; O controlador fica esperto</a></nav>
+
+  <footer>
+    <span>plano-da-serie.md &middot; se&ccedil;&atilde;o &ldquo;O cérebro e os sentidos&rdquo;</span>
+    <span>14.09.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

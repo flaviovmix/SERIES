@@ -1,0 +1,104 @@
+Inicie dizendo: O Cerebro e os Sentidos
+---------------
+
+Este e o episodio da ETAPA INTEIRA numero 1 da serie HARDWARE, que se chama O CEREBRO E OS SENTIDOS. A serie monta, do zero, uma caixa d'agua de predio que se cuida sozinha: enche quando falta, avisa quando tem problema e, la na frente, conta pro celular como esta. Esta etapa poe o cerebro e os primeiros sentidos nesse aparelho. No fim dela, a caixa d'agua liga a bomba sozinha e acende o alarme.
+
+Este episodio conta a etapa inteira de uma vez, numa olhada so. Os episodios seguintes descem em cada peca com calma.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO. Nada de "o exercicio pede", nada de tabela pra preencher, nada de lista de tarefas. O que este audio faz e contar como a caixa d'agua ganha cerebro e sentidos, e por que cada peca entra na hora em que entra.
+
+NAO EXISTE ANIMACAO NESTE EPISODIO: e audio, sem tela pra virar. Entao NAO peca pra apertar nada, NAO cite tela, imagem, figura nem pagina. Quem ouve esta no onibus, no carro ou andando: tudo tem que se entender so ouvindo.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_O Cerebro e os Sentidos.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A caixa d'agua que se cuida sozinha: o aparelho que a serie monta. O cerebro dela e o microcontrolador; os sentidos sao o que ela usa pra perceber a agua; a bomba e o braco. E a analogia principal, e vale o episodio inteiro.
+- A boia do predio: a chave que boia na agua e fecha um contato quando o nivel sobe. Serve pra explicar entrada digital, que so sabe dizer sim ou nao.
+- As dez lampadas: pra explicar por que a leitura analogica vai ate 1023. Sao dez lampadas que so ficam acesas ou apagadas, e todas as combinacoes delas dao 1024 numeros diferentes, contando o zero.
+
+Fora essas tres, explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO
+
+PARTE 1 - O QUE ESTA ETAPA CONSTROI
+
+Abrir a serie em duas frases: todo aparelho que parece esperto tem, por dentro, um chip pequeno que le o que acontece la fora, decide e mexe em alguma coisa, num laco que nao para nunca. A serie monta um aparelho desses do zero, e o aparelho escolhido e a caixa d'agua de um predio que se cuida sozinha.
+
+Dizer o que a etapa 1 entrega: no fim dela, girando o sensor de nivel, a bomba liga sozinha quando a agua abaixa, desliga quando enche, e um alarme acende quando o nivel fica perigoso. Tudo isso sem ninguem apertar nada.
+
+Dizer tambem que da pra acompanhar sem comprar peca nenhuma: o circuito roda num simulador de Arduino que abre no navegador. Quem tiver as pecas na mao monta igualzinho.
+
+PARTE 2 - O CEREBRO
+
+O microcontrolador e um computador inteiro dentro de um chip: processador, memoria e pinos pra falar com o mundo. A diferenca pro computador de mesa e que ele roda um programa so, o tempo inteiro, e esse programa continua gravado nele mesmo quando a energia acaba.
+
+Todo programa desse chip tem duas partes. Uma roda uma vez, quando liga: e onde se diz o que cada pino vai fazer. A outra roda de novo e de novo, pra sempre: le, decide, age, e volta pro comeco. Esse laco que nao para e o coracao da coisa, e vale a pena dizer em voz alta que ele nunca termina.
+
+O primeiro sinal de vida do aparelho e um LED que pisca. Nao e enfeite: e o mesmo pisca-pisca que existe no roteador, na TV e na maquina de lavar pra dizer "estou funcionando". Enquanto ele pisca, o laco esta rodando.
+
+E tem um segundo jeito de ouvir o cerebro pensando: o controlador consegue escrever texto pro computador enquanto roda, por um cabo. E como ele contando o que esta fazendo, linha por linha.
+
+PARTE 3 - O PRIMEIRO SENTIDO: SIM OU NAO
+
+A boia do predio e uma chave que boia na agua: quando o nivel sobe, ela fecha um contato. Pro controlador, isso e entrada digital, que so sabe dizer duas coisas: tem contato ou nao tem.
+
+Aqui mora a primeira armadilha da eletronica, e ela pega todo mundo. Um pino de entrada solto, sem nada puxando ele pra um lado, nao le zero: ele le qualquer coisa, porque fica sensivel ao que passa perto. A solucao e um resistor que puxa o pino pra um lado conhecido enquanto o contato esta aberto. E a boa noticia e que o chip ja tem esse resistor dentro dele, e basta pedir pra ligar.
+
+Do outro lado esta a bomba. O pino do controlador da uma corrente pequena, feita pra mandar recado, nao pra puxar motor. Entao ele nao liga a bomba: ele aciona um rele, que e uma chave comandada por um imazinho. O pino da a ordem, o rele fecha o caminho, e a bomba, que tem a propria alimentacao, gira.
+
+Duas regras da serie entram aqui. A primeira: mesmo o LED pede um resistor pra nao receber corrente demais, e essa conta e a lei de Ohm, que diz quanta corrente passa pra cada tensao, dependendo do resistor que esta no caminho. A segunda: nesta serie o rele nao liga nada que venha da tomada. Ligar carga de rede eletrica e outro assunto, com outro cuidado, e a gente nao faz isso aqui.
+
+PARTE 4 - O SEGUNDO SENTIDO: QUANTO
+
+Saber se tem contato ou nao e pouco pra uma caixa d'agua. A pergunta de verdade e quanta agua tem.
+
+Pra isso existe a entrada analogica: em vez de sim ou nao, ela mede a tensao que chega no pino e transforma num numero. No Arduino esse numero vai de 0 a 1023.
+
+Explicar o 1023 com as dez lampadas: sao dez lampadas que so ficam acesas ou apagadas, e todas as combinacoes possiveis delas dao mil e vinte e quatro valores, do zero ao mil e vinte e tres. E com essa escala que o chip mede a tensao.
+
+Nesta etapa o sensor de nivel ainda e um botaozinho de girar, um trimpot, fazendo o papel da boia: girar pra um lado e a agua subindo, pro outro e a agua descendo. O sensor de verdade chega na etapa seguinte.
+
+PARTE 5 - O MEIO TERMO
+
+O aparelho ja sabe ler quanto tem. Falta ele conseguir responder com meio termo, e nao so ligado ou desligado.
+
+Aqui entra o PWM. O pino nao consegue dar meia tensao: o que ele faz e ligar e desligar muito rapido e variar quanto tempo fica ligado em cada ciclo. Essa proporcao se chama ciclo de trabalho, e vai de zero a cem por cento. No Arduino se escolhe esse valor numa escala de 0 a 255.
+
+Quem olha um LED nesse regime enxerga ele aceso pela metade, porque o olho nao acompanha a piscada. No painel da caixa d'agua, e o LED que acende mais quanto mais cheia ela esta.
+
+E vale dizer onde mais esse truque aparece: e o mesmo principio do controle de velocidade de motor, da fonte chaveada do carregador e do dimmer de luz.
+
+PARTE 6 - A DECISAO
+
+Com os sentidos no lugar, falta o cerebro decidir. E uma pergunta com duas saidas: se o nivel esta abaixo do minimo, liga a bomba e acende o alarme; senao, desliga.
+
+Uma armadilha boa pra contar: se a bomba ligar e desligar no mesmo ponto exato, ela vai bater liga e desliga sem parar quando a agua ficar tremendo em volta desse ponto. Por isso se usa uma folga entre o ponto de ligar e o de desligar: enche ate o alto, so volta a ligar la embaixo. Essa folga tem nome, histerese, e ela existe no termostato da geladeira e no ar condicionado pela mesma razao.
+
+PARTE 7 - O QUE ISSO E, FORA DA BANCADA
+
+Fechar mostrando que a etapa inteira nao e sobre caixa d'agua: e o desenho de qualquer controle automatico. Ler um contato, medir uma quantidade, dosar uma saida e decidir com uma regra e o que existe dentro do termostato da geladeira, do portao que para sozinho no fim do trilho, da maquina de lavar que sabe a hora de parar e do controle de nivel de uma fabrica inteira.
+
+---
+
+ENCERRAMENTO
+
+Recapitular em poucas frases: o cerebro e o chip que roda um laco que nao para; o primeiro sentido diz sim ou nao e serve pra boia; o segundo diz quanto e serve pro nivel; o PWM da o meio termo; e a decisao junta tudo e faz a caixa d'agua se cuidar sozinha. E dizer que, na proxima etapa, o controlador fica esperto: entra o sensor que mede pelo eco, um visor mostrando o nivel e o jeito de fazer duas coisas ao mesmo tempo sem travar.

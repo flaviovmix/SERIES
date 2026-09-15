@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etapa 02 &middot; Hardware</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../plano-estilo.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--etapa">
+
+  <header class="head">
+    <p class="eyebrow"><a href="../plano-visao.html">&larr; Plano Hardware</a> &middot; etapa 02 de 5</p>
+    <h1>O controlador fica esperto</h1>
+  </header>
+
+    <div class="status-linha"><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>não iniciado</span> <p class="note"><b>0</b> de 6 publicados</p></div>
+    <p class="lede">Sensor de nível de verdade, visor, registro motorizado e proteção da bomba <em>&middot; 6</em></p>
+
+    <section>
+      <h2>Os 6 epis&oacute;dios</h2>
+      <div class="scroller"><table><thead><tr><th>Pasta</th><th>Episódio</th><th>O que cobre</th><th>Aula</th><th class="status">Status</th></tr></thead><tbody><tr data-st="zero"><td class="num">01</td><td class="etapa"><b>Quanto cabe numa caixinha</b></td><td class="obs">tipos de dado: o nível em centímetros cabe num <code>int</code>, a porcentagem com vírgula pede <code>float</code>, e o que acontece quando a conta estoura</td><td class="obs">6</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">02</td><td class="etapa"><b>Peça pronta</b></td><td class="obs">biblioteca: o que ela traz e como entra no projeto, pra o visor e o motor não precisarem ser escritos do zero</td><td class="obs">7</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">03</td><td class="etapa"><b>Enquanto não encher</b></td><td class="obs"><code>while</code>: repetir enquanto uma condição vale, e o perigo do laço que trava o aparelho inteiro. Estreia o visor de duas linhas mostrando o nível na casa de máquinas (ele conversa por I2C)</td><td class="obs">8</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">04</td><td class="etapa"><b>O eco que mede a água</b></td><td class="obs"><code>for</code> e o sensor de ultrassom: o som que bate na água e volta, o tempo virando distância, e a média de várias medidas pra não confiar num eco só</td><td class="obs">9</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">05</td><td class="etapa"><b>O registro que abre de pouquinho</b></td><td class="obs">motor de passo: girar um número exato de passos, e o registro da saída de água que abre e fecha pela metade</td><td class="obs">10</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr><tr data-st="zero"><td class="num">06</td><td class="etapa"><b>Duas coisas ao mesmo tempo</b></td><td class="obs"><code>millis()</code> no lugar do <code>delay</code>, pra medir o nível sem parar de piscar o LED de vida; o limite de tempo que protege a bomba de rodar a seco; e o botão de emergência que para tudo na hora (interrupção)</td><td class="obs">11</td><td class="status"><span class="ponto ponto--zero" role="img" aria-label="não iniciado" title="não iniciado"></span></td></tr></tbody></table></div>
+    </section>
+
+    <article class="corpo">
+<p><strong>Fecha quando:</strong> a versão 2 roda no Wokwi com o sensor de ultrassom, o visor mostrando o nível e a bomba desligando sozinha se passar do tempo. <strong>Aparece em:</strong> sensor de ré do carro, bomba de piscina com timer, botão de emergência de esteira.</p>
+    </article>
+
+  <div class="legend"><span><span class="selo"><span class="ponto ponto--feito" aria-hidden="true"></span>tudo publicado</span></span><span><span class="selo"><span class="ponto ponto--parte" aria-hidden="true"></span>parcial: alguns episódios publicados</span></span><span><span class="selo"><span class="ponto ponto--zero" aria-hidden="true"></span>não iniciado</span></span></div>
+
+  <nav class="passo"><a class="nav-ir" href="etapa-01.html"><span>anterior</span>Etapa 01 &middot; O cérebro e os sentidos</a><a class="nav-ir nav-ir--fim" href="etapa-03.html"><span>pr&oacute;xima</span>Etapa 03 &middot; O painel da portaria</a></nav>
+
+  <footer>
+    <span>plano-da-serie.md &middot; se&ccedil;&atilde;o &ldquo;O controlador fica esperto&rdquo;</span>
+    <span>14.09.2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
