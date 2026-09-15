@@ -13,7 +13,7 @@
 | 6.2 | O molde e o gerador, provados no `hardware.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.3 | Hubs em pé: `computador.html` e `javaweb.html` | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.4 | A home deitada | ✅ 15/09/2026, 🟠 falta o dono no navegador |
-| 6.5 | Páginas de etapa | não iniciada |
+| 6.5 | Páginas de etapa | ✅ 15/09/2026, 🟠 falta o dono no navegador |
 | 6.6 | Extras | não iniciada |
 | 6.7 | `hardware-01.html` | não iniciada (espera a P11) |
 | 6.8 | A D4 vira hábito | não iniciada |
@@ -151,6 +151,7 @@ A ordem: primeiro a página que já tem lupa (prova que o gerador reproduz o que
 
 - 7 páginas. Elas não carregam o lightbox hoje: entram `lightbox.css` e `lightbox.js` no cabeçalho e no fim (parte escrita à mão; o `--confere` cobra). Deltas: `aria-label` nos botões e a pílula no etapa-11.
 - **Pronto quando:** `--confere` e `qa-cards.js` verdes nas 7; dono no navegador.
+- **✅ Fechada em 15/09/2026, 🟠 falta o dono no navegador.** 24 cards de episódio no dado e 21 fotos com lupa (toda capa de episódio tem crédito). As 7 páginas passaram a carregar `lightbox.css` e `lightbox.js`. **Deltas declarados:** os dois do levantamento (`aria-label` nos botões "Abrir a animação" e a pílula "Arte provisória" nos episódios 02 a 04 do `etapa-11.html`), e o rótulo da lupa agora diz "foto", "arte" ou "imagem" conforme o crédito (diagrama e manual viram "imagem", em vez de "foto"). **Provas:** `--confere` verde; `qa-cards.js` verde nas 7 páginas, 5 tamanhos × 2 temas, lightbox com foco e teclado em 21 artes; geometria igual à gravada (21 medidas).
 
 ### 6.6 Extras
 

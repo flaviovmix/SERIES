@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="../css/cabecalho.css">
 <link rel="stylesheet" href="../css/capitulo.css">
 <link rel="stylesheet" href="../css/episodio.css">
+<link rel="stylesheet" href="../css/animacao/lightbox.css">
 </head>
 
 <body>
@@ -28,10 +29,11 @@
   </header>
 
   <section>
+    <!-- cards: etapa-11/episodios (gerado por gera-cards.js a partir da MENU e do site/dados/cards.js; nao editar a mao) -->
     <div class="grade grade--dupla">
 
       <article class="cap">
-        <div class="cap__arte cap__arte--arte" aria-hidden="true"><img class="cap__img" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/11%20-%20A%20m%C3%A1quina%20que%20conversa/01%20-%20A%20escala/img/transformer-real.png" alt="" loading="lazy"><span class="cap__num">01</span></div>
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Episódio 01 · A escala · O desenho de 2017: o codificador, à esquerda, lê; o decodificador, à direita, escreve · diagrama: Yuening Jia, CC BY-SA 3.0" aria-label="Ampliar a imagem do episódio 01, A escala"><img class="cap__img" src="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/11%20-%20A%20m%C3%A1quina%20que%20conversa/01%20-%20A%20escala/img/transformer-real.png" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">01</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
         <div class="cap__corpo">
           <p class="cap__periodo">2017 &rarr; 2022</p>
           <h3>A escala</h3>
@@ -39,13 +41,13 @@
           <p class="cap__resumo">O Transformer nasceu pra traduzir. Treinado só pra adivinhar a próxima palavra, ele foi crescendo: GPT-1, BERT, GPT-2, a reta das leis de escala, o GPT-3 com 175 bilhões, o tamanho certo do Chinchilla, e o GPT-3.5 que aprendeu código. O programa achado melhora só de ficar maior, e quem decide o tamanho é a placa e o dado.</p>
           <div class="cap__pe">
             <span class="cap__eps">12 min &middot; 12 telas</span>
-            <a class="cap__botao" href="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/11%20-%20A%20m%C3%A1quina%20que%20conversa/01%20-%20A%20escala/animacao.html">Abrir a animação</a>
+            <a class="cap__botao" href="../../Como%20Reinventar%20o%20Computador%20do%20Zero/_REFAZER/11%20-%20A%20m%C3%A1quina%20que%20conversa/01%20-%20A%20escala/animacao.html" aria-label="Abrir a animação do episódio 01, A escala">Abrir a animação</a>
           </div>
         </div>
       </article>
 
       <article class="cap">
-        <div class="cap__arte" aria-hidden="true"><span class="cap__num">02</span></div>
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">02</span><span class="cap__tag">Arte provisória</span></div>
         <div class="cap__corpo">
           <p class="cap__periodo">2016 &rarr; 2022</p>
           <h3>O galpão</h3>
@@ -59,7 +61,7 @@
       </article>
 
       <article class="cap">
-        <div class="cap__arte" aria-hidden="true"><span class="cap__num">03</span></div>
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">03</span><span class="cap__tag">Arte provisória</span></div>
         <div class="cap__corpo">
           <p class="cap__periodo">2017 &rarr; 2022</p>
           <h3>Ensinar a responder</h3>
@@ -73,7 +75,7 @@
       </article>
 
       <article class="cap">
-        <div class="cap__arte" aria-hidden="true"><span class="cap__num">04</span></div>
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">04</span><span class="cap__tag">Arte provisória</span></div>
         <div class="cap__corpo">
           <p class="cap__periodo">2015 &rarr; 2022</p>
           <h3>Novembro de 2022</h3>
@@ -87,11 +89,13 @@
       </article>
 
     </div>
+    <!-- /cards -->
   </section>
 
 </div>
 
 <script src="../js/menu.js"></script>
+<script src="../js/animacao/lightbox.js"></script>
 
 </body>
 </html>

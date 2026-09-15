@@ -52,7 +52,7 @@ function arteDoDado(texto, prefixo, doItem) {
   if (!texto.imagem) return {};
   if (!texto.credito) return { imagem: texto.imagem };
   const legenda = [prefixo, texto.descricao, texto.credito].filter(Boolean).join(' · ');
-  const oQueE = /^(ilustração|reconstituição)/.test(texto.credito) ? 'arte' : 'foto';
+  const oQueE = /^(ilustração|reconstituição)/.test(texto.credito) ? 'arte' : /^foto/.test(texto.credito) ? 'foto' : 'imagem';
   return { imagem: texto.imagem, legenda, rotuloDaArte: `Ampliar a ${oQueE} ${doItem}` };
 }
 
