@@ -9,6 +9,8 @@ Copiar este arquivo pra pasta do episódio como `_planta.md` e preencher ANTES d
 - Uma linha por tela, na ordem em que aparecem.
 - Tipo: `capa` · `ficha` · `conteudo` · `interativa` · `pratica` · `fecho`. Um episódio não é obrigado a ter todos.
 - Se duas linhas de `conteudo` estão dizendo a mesma coisa, juntar. Se uma linha só tem assunto pra 10 minutos, partir em duas. É aqui que o número se decide.
+- ⚠️ **A justificativa não pode citar outro episódio.** Nada de "o mesmo molde das etapas 8 a 10", "igual às outras séries", "o número de sempre". O número sai do que ESTE episódio precisa mostrar, e a justificativa fala só do conteúdo dele: quantos assuntos não cabem juntos, quantos pedem tela que se mexe, quantos pedem ficha. Se a frase continuar verdadeira trocando o nome do episódio, ela não justifica nada. (Regra dele, 16/09/2026, ao ver 13 episódios com 12 telas: "cada uma tem que ser a quantidade que precisa, não olhar as outras páginas".)
+- ⚠️ **Não abrir a planta de outro episódio pra escrever esta.** Foi assim que todos viraram 8 telas até 23/08, e foi assim que viraram 12 depois: o vício voltou com outro número. O `confere-plantas.js` reprova justificativa que cite outro episódio.
 - Terminada a planta, o cabeçalho do roteiro (`E uma pagina com N telas`) é preenchido com a contagem daqui, e a animação se monta com essas mesmas telas.
 - O agente `podcast-verificador` confere que este arquivo existe e que a contagem bate com os blocos `TELA n` do roteiro.
 
