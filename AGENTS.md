@@ -56,4 +56,4 @@ o Computador do Zero" (animação e modelo 3D). Escrito em 10/09/2026, atualizad
 8. Conferir no telefone (384x686) e no desktop antes de publicar; publicar só com o
    OK do usuário e conferir o que subiu.
 
-O que mudou na base e por quê: `plano/etapas/02-base-da-animacao.md`.
+O que mudou na base e por quê: `plano/md/etapas/02-base-da-animacao.md`.

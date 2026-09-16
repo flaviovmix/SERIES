@@ -1,5 +1,7 @@
 # Plano: SEIRES
 
+**Saída:** ../html
+
 **Tipo:** site de conteúdo: série de podcast com animação HTML e modelos 3D, publicada como site estático (`site/`), que substituiu as notas do Nexus em 30/08/2026 (D1). Sem backend e sem banco; a única porta com chave é o painel das séries, protegido por senha do servidor (D6). A hospedagem é a do servidor `afx.art.br`, decidida na Etapa 4.
 
 Índice do projeto. **É o único arquivo lido em toda sessão**, por isso ele é curto: o detalhe mora em `etapas/`, e só a etapa atual é carregada.

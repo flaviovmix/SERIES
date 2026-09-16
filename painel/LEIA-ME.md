@@ -77,10 +77,12 @@ estranha, Host estranho, série inventada, valor que não é booleano, JSON queb
 gigante), o caminho certo (desligar e religar a série 03), a página no navegador, e que
 nada responde fora do `127.0.0.1`. Os arquivos do site voltam ao que eram no fim.
 
-⚠️ O caminho certo só passa se o `gera-cards.js` estiver verde nesta máquina. Enquanto
-existir uma pasta de página fora do padrão em `site/` (como a `site/_exemplos-card/` de
-16/09/2026), o gerador reprova, o painel devolve erro e o teste acusa 5 falhas — todas
-essa mesma causa. No servidor isso não acontece: lá só existe o que foi commitado.
+⚠️ O caminho certo só passa se o `gera-cards.js` estiver verde nesta máquina. Toda página
+solta dentro de `site/` entra na conta do gerador, inclusive mockup: se ela tem card
+escrito à mão, o gerador reprova, o painel devolve erro ao salvar e o teste acusa 5
+falhas, todas essa mesma causa. Foi o que aconteceu em 16/09/2026 com uma pasta de
+exemplos de cartão, resolvida movendo ela pra `modelos/`, que é onde mockup mora. No
+servidor isso não acontece: lá só existe o que foi commitado.
 
 ## No servidor
 
