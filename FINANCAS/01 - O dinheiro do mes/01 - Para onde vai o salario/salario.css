@@ -424,15 +424,15 @@
 
 /* ---------- as ilustrações ----------
    Uma por tela, geradas no Flow no mundo visual da série (os prompts ficam em
-   ilustracoes.md). Dois jeitos aqui: .step--lado nas telas de texto (ilustração à
-   direita) e .sal-arte nas telas de grade larga, onde a imagem vira faixa acima do
-   componente pra não espremer a grade. A capa não precisa de nada: a .capa-modelo
-   do telas.css já trata imagem, e é ela que sobe a arte pro alto no telefone.
+   ilustracoes.md). Um jeito só, porque foi o que ele aprovou: .step--lado, com o
+   conteúdo à esquerda e a ilustração à direita, valendo inclusive nas telas de
+   grade (as caixas, as fatias, as pontas, os dados e o mundo do fecho). A capa não
+   precisa de nada: a .capa-modelo do telas.css já trata imagem, e é ela que sobe a
+   arte pro alto no telefone.
    As telas 3, 5, 8 e 11 não levam ilustração: lá o widget interativo é a imagem,
    como a planta decidiu. */
 
-.lado-arte figcaption,
-.sal-arte figcaption {
+.lado-arte figcaption {
   font-family: var(--fonte-mono);
   font-size: 9.5px;
   letter-spacing: .05em;
@@ -464,7 +464,32 @@
 .step--lado .sal-citacao,
 .step--lado .sal-cofrinho,
 .step--lado .sal-aviso,
-.step--lado .sal-filme { width: 100%; }
+.step--lado .sal-filme,
+.step--lado .sal-caixas,
+.step--lado .sal-fatias,
+.step--lado .sal-pontas,
+.step--lado .sal-dados,
+.step--lado .sal-formula,
+.step--lado .sal-praver,
+.step--lado .mundo { width: 100%; }
+
+/* a tela do fecho é a mais cheia do episódio: o mundo, o gancho do próximo e a
+   lista de filmes, tudo na mesma coluna. Dois por linha em vez de três deixa o
+   cartão mais largo e o texto mais curto, e a lista em duas colunas tira da
+   altura o que faltava: com três por linha a tela rolava 24px em 1440x900 */
+.step--lado .mundo {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.step--lado .mundo .item { padding: 14px 16px 16px; }
+.step--lado .sal-praver { margin-top: 14px; }
+.step--lado .sal-praver ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px 22px;
+}
+.step--lado .sal-praver li { margin-bottom: 2px; }
 .lado-arte {
   flex: 1 1 400px;
   min-width: 0;
@@ -483,31 +508,10 @@
   box-shadow: var(--sombra-alta);
 }
 
-/* telas de grade larga: a ilustração vira faixa e a grade segue inteira embaixo */
-.sal-arte {
-  width: 100%;
-  max-width: 880px;
-  margin: 14px 0 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-.sal-arte img {
-  width: 100%;
-  height: clamp(96px, 17vh, 190px);
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: var(--sombra-alta);
-}
-/* a tela do fecho já carrega o mundo e a lista de filmes: lá a faixa é mais fina,
-   senão a tela rola 18px em 1440x900 (medido com o qa-pagina, não chutado). O
-   corte desce um pouco do meio porque os objetos ficam na metade de baixo da
-   ilustração: centrado, a engrenagem do fim sumia, e é ela que a legenda promete */
-.sal-arte--fina img {
-  height: clamp(80px, 14vh, 135px);
-  object-position: center 64%;
-}
+/* A faixa larga por cima do componente (a antiga .sal-arte) foi tentada e reprovada
+   por ele em 16/09: numa tira de 880 por 135 o object-fit corta a ilustração 16:9
+   em cima e embaixo, e a composição morre. Toda tela de conteúdo usa a ilustração
+   AO LADO do texto, que foi o que funcionou. */
 
 /* ---------- telefone: SEMPRE no fim do arquivo ---------- */
 
@@ -530,11 +534,12 @@
      fora da dobra conta como tela sem imagem */
   .lado-arte { width: 100%; order: -1; }
   .lado-arte img { max-height: min(30vh, 240px); }
-  .sal-arte img { height: clamp(88px, 14vh, 130px); }
+  /* no telefone a largura é uma só: as duas colunas do fecho viram uma */
+  .step--lado .mundo,
+  .step--lado .sal-praver ul { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* tela baixa (notebook de 768px): quem cede é a imagem, não o texto */
 @media (max-height: 820px) {
   .lado-arte img { max-height: 46vh; }
-  .sal-arte img { height: clamp(88px, 13vh, 140px); }
 }
