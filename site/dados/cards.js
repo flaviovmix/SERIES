@@ -809,6 +809,9 @@ module.exports = {
     tipo: 'series',
     grade: 'grade grade--series',
     cards: {
+      /* as capas das series: as geradas no Flow levam 'ilustração' (prompt guardado em
+         <SERIE>/_arquivos/capa-serie/ ou no plano da serie); as quatro sem origem conhecida
+         ficam sem credito e sem lupa (P10) */
       '01': {
         imagem: 'img/serie-computador.webp',
         icone: 'abaco',
@@ -816,11 +819,13 @@ module.exports = {
       },
       '02': {
         imagem: 'img/serie-java-web.webp',
+        credito: `ilustração`,
         icone: 'codigo',
         resumo: `Pedir pra uma IA ficou fácil; <em>entender o que voltou</em> é que não. Aqui a gente monta uma lista de tarefas do terminal até o ar (ambiente, git, teste, banco, deploy) pra que nada no seu código seja mágica. O princípio serve pra qualquer linguagem.`,
       },
       '03': {
         imagem: 'img/serie-hardware.webp',
+        credito: `ilustração`,
         icone: 'chip',
         resumo: `No simulador, sem comprar nada, a gente monta <em>a caixa d'água que se cuida sozinha</em>: sensor de nível, bomba, alarme, painel no computador, WiFi e, no fim, a placa própria. Arduino e ESP32 são o veículo; o princípio vale pra qualquer microcontrolador.`,
       },
@@ -838,6 +843,12 @@ module.exports = {
         imagem: 'img/serie-evolucao.webp',
         icone: 'dna',
         resumo: `Como uma bolha de gordura no fundo do mar virou tudo que está vivo. Sem salto e sem plano: cada peça nova nasce de uma que já existia e servia pra outra coisa.`,
+      },
+      '07': {
+        imagem: 'img/serie-financas.webp',
+        credito: `ilustração`,
+        icone: 'abaco',
+        resumo: `Do cofrinho à bolsa: o dinheiro do mês, emprestar, virar sócio, o imposto e a média, até <em>trocar entre dois papéis parecidos</em>. Uma peça por episódio, com uma empresa inventada nas telas.`,
       },
     },
   },

@@ -49,7 +49,8 @@ a { color: var(--accent); }
 /* a vitrine (a home e o hub de cada serie): mais larga, pra caber mais card por fileira */
 .wrap--vitrine { max-width: var(--largura-vitrine); }
 
-/* a home das series: 68% da largura da tela, sem ficar mais estreita que uma pagina
-   comum em tela menor. Era 80% (13/09) e com dois cards por fileira ficou largo
-   demais ("deixa a largura da pagina um pouco mais estreita", 13/09) */
-.wrap--series { max-width: max(var(--largura-pagina), 68vw); }
+/* a home das series: 90% da largura da tela, sem ficar mais estreita que uma pagina
+   comum em tela menor. Foi 80% (13/09), 68% com dois cards por fileira ("deixa a
+   largura da pagina um pouco mais estreita", 13/09) e voltou a alargar com tres por
+   fileira ("tem que pegar 90% da largura da pagina", 15/09) */
+.wrap--series { max-width: max(var(--largura-pagina), 90vw); }

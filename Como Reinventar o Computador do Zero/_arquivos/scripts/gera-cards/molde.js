@@ -47,16 +47,13 @@ function arteQueAmplia(card, imagem) {
     + `${imagem}${numeroDoCard(card, true)}<span class="cap__lupa" aria-hidden="true">${LUPA}</span></div>`;
 }
 
-/* quatro jeitos: provisoria (sem imagem), link pra serie (a home, decisao 9), foto com
-   lupa (tem credito) e foto parada (sem credito conhecido, P10) */
+/* tres jeitos: provisoria (sem imagem), foto com lupa (tem credito) e foto parada
+   (sem credito conhecido, P10). Na home a foto tambem amplia (decisao 9, mudada em 15/09) */
 function arteDoCard(card, pagina) {
   if (!card.imagem) {
     return `<div class="cap__arte" aria-hidden="true">${numeroDoCard(card, false)}<span class="cap__tag">Arte provisória</span></div>`;
   }
   const imagem = `<img class="cap__img" src="${enderecoPara(pagina, card.imagem)}" alt="" loading="lazy">`;
-  if (card.linkDaArte) {
-    return `<a class="cap__arte cap__arte--arte" href="${enderecoPara(pagina, card.linkDaArte)}" tabindex="-1" aria-hidden="true">${imagem}</a>`;
-  }
   if (card.legenda) return arteQueAmplia(card, imagem);
   return `<div class="cap__arte cap__arte--arte" aria-hidden="true">${imagem}${numeroDoCard(card, false)}</div>`;
 }

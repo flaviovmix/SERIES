@@ -114,14 +114,16 @@ function cardDosExtrasDaSerie(dado, menu, marcador) {
   }];
 }
 
+/* a capa amplia com lupa quando tem credito, como qualquer card (decisao 9, mudada em
+   15/09: antes a foto da home levava pra serie); quem leva pra serie e o botao */
 function cardDaSerie(serie, texto, onde) {
   exigir(texto, ['imagem', 'icone', 'resumo'], onde);
   if (!/^[a-z-]+$/.test(texto.icone)) throw new Error(`${onde}: icone "${texto.icone}" fora do formato do sprite da home`);
   const noAr = Boolean(serie.href);
   return {
-    titulo: serie.nome, resumo: texto.resumo, icone: texto.icone, imagem: texto.imagem,
+    titulo: serie.nome, resumo: texto.resumo, icone: texto.icone,
+    ...arteDoDado(texto, `Série · ${serie.nome}`, `da série ${serie.nome}`),
     verbo: noAr ? `${(serie.etapas || []).length} etapas` : 'Em preparação',
-    linkDaArte: noAr ? serie.href : null,
     ...(noAr ? { botao: { href: serie.href, rotulo: 'Ver a série', aria: `Ver a série ${serie.nome}` } } : { selo: 'em breve' }),
   };
 }

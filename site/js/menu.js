@@ -221,7 +221,8 @@
     },
     { num: '04', nome: 'Levando o Homem à Lua' },
     { num: '05', nome: 'Montando o Corpo Humano' },
-    { num: '06', nome: 'A Evolução das Espécies' }
+    { num: '06', nome: 'A Evolução das Espécies' },
+    { num: '07', nome: 'Finanças' }
   ];
 
   /* No node (o gera-cards.js, que monta os cards do site a partir desta arvore) o

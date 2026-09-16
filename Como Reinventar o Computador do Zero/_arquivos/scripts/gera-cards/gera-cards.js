@@ -95,10 +95,10 @@ function examinarSite(site, querEscrever) {
   return relatorio;
 }
 
-/* na home nenhuma foto amplia (decisao 9): la falta de credito nao tira lupa de ninguem */
+/* toda foto sem credito conhecido fica sem lupa, a da home inclusive (decisao 9, mudada em 15/09) */
 function semLupaPorFaltaDeCredito(grades) {
-  return grades.filter((grade) => grade.tipo !== 'series').flatMap((grade) => grade.cards
-    .filter((card) => card.imagem && !card.legenda && !card.linkDaArte)
+  return grades.flatMap((grade) => grade.cards
+    .filter((card) => card.imagem && !card.legenda)
     .map((card) => `${grade.pagina} · ${card.titulo} (${card.imagem})`));
 }
 

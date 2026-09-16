@@ -107,8 +107,16 @@ function medirCardsNaPagina() {
   const medirCard = (card) => {
     const caixa = card.getBoundingClientRect();
     const arte = card.querySelector('.cap__arte');
+    /* o que a -webkit-line-clamp do resumo esconde (um <em> na linha cortada) fica fora
+       da caixa de proposito: so conta estouro quem nao esta dentro de um recorte */
+    const recortado = (el) => {
+      for (let pai = el.parentElement; pai && pai !== card; pai = pai.parentElement) {
+        if (/hidden|clip/.test(getComputedStyle(pai).overflow)) return true;
+      }
+      return false;
+    };
     const estouros = [...card.querySelectorAll('.cap__corpo *')]
-      .filter((el) => { const r = el.getBoundingClientRect(); return r.width && !dentro(r, caixa); })
+      .filter((el) => { const r = el.getBoundingClientRect(); return r.width && !recortado(el) && !dentro(r, caixa); })
       .map((el) => el.className || el.tagName);
     /* card sem arte (os episodios em producao do hardware-01) nao tem o que ampliar */
     const deArte = (ler) => (arte ? ler(arte) : null);

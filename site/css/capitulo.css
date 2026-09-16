@@ -29,17 +29,46 @@
   transition: border-color .3s ease, transform .3s ease;
 }
 
-/* no hover o tracejado vira linha cheia na cor da tinta e o cartao sobe, como no AFX */
-.cap:hover {
-  border-style: solid;
-  border-color: var(--ink);
-  transform: translateY(-4px);
+/* no hover o cartao sobe e um risco cheio na cor da tinta corre em volta do
+   tracejado (15/09, pedido dele: em vez da linha ficar preta, uma animacao ao redor).
+   O risco e o ::after: um anel de 2px pintado por um conic-gradient que gira pelo
+   --angulo (registrado com @property, senao a animacao nao interpola o angulo); o
+   mask deixa so o anel. Ele fica por dentro da borda porque o overflow:hidden do card
+   corta o que passa dela, por isso o raio um pixel menor */
+@property --angulo {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
 }
+.cap:hover { transform: translateY(-4px); }
+.cap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: calc(var(--raio-cartao) - 1px);
+  padding: 2px;
+  background: conic-gradient(from var(--angulo), transparent 0deg 250deg, var(--ink) 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+.cap:hover::after {
+  opacity: 1;
+  animation: cap-volta 1.8s linear infinite;
+}
+@keyframes cap-volta { to { --angulo: 360deg; } }
 
 /* a arte, com a linha fina que separa ela do texto. Enquanto a imagem do episodio
    nao existe, fica a trama de pontos do topo do AFX */
 .cap__arte {
   position: relative;
+  /* acima do risco do hover (o ::after do card): ele da a volta por tras da arte e so
+     aparece do lado do texto (15/09, pedido dele) */
+  z-index: 1;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
@@ -249,15 +278,15 @@
   .grade { --colunas: 1; }
 }
 
-/* a home: as series em fileiras de DUAS (13/09, por print: "a imagem em 16x9 e coloca
-   so 2 por linha"), no cartao de servico do SITE-AFX: a foto em 16:9 encostada na
+/* a home: as series em fileiras de TRES (15/09, pedido dele: "coloca 3 por linha";
+   eram duas desde 13/09), no cartao de servico do SITE-AFX: a foto em 16:9 encostada na
    borda do cartao, na esquerda, e o texto na direita (o aro com o icone e o rotulo juntos, o
    nome na mesma linha e o resumo embaixo). Tracejado, pilula e hover vem do card de
-   cima; aqui mora so o que deita. A fileira nao usa o --colunas: quando nao cabem dois
-   cards de 330px ela cai sozinha pra um (auto-fill), e o min(100%) segura o telefone
-   estreito. Fica no fim da folha pra ganhar dos apertos */
+   cima; aqui mora so o que deita. A fileira nao usa o --colunas: quando nao cabem tres
+   cards de 330px ela cai sozinha pra dois e depois pra um (auto-fill), e o min(100%)
+   segura o telefone estreito. Fica no fim da folha pra ganhar dos apertos */
 .grade--series {
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, max(330px, (100% - 20px) / 2)), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, max(330px, (100% - 40px) / 3)), 1fr));
 }
 .grade--series .cap { flex-direction: row; }
 /* a foto encosta na borda do cartao, sem respiro em volta, como o quadro dos pilares
@@ -272,18 +301,27 @@
 }
 .grade--series .cap__corpo {
   min-width: 0;
-  padding: 18px 20px 16px 22px;
+  padding: 16px 20px 14px 20px;
 }
-/* a cabeca do cartao: o aro e o rotulo andam juntos, o nome vai pra direita. Sem
-   largura pros tres na mesma linha, o nome desce e continua encostado na direita */
+/* a cabeca do cartao: o aro na esquerda e, do lado dele, o rotulo em cima do nome,
+   numa altura so. Ate 15/09 o nome ia pra direita e descia pra linha de baixo quando
+   nao cabia ao lado do rotulo; o card mais alto da fileira esticava os outros e sobrava
+   vazio ("ficou muito espaco vazio, diminuir a altura"). E uma grade de duas linhas
+   sem div a mais: o aro ocupa as duas, o rotulo a de cima e o nome a de baixo */
 .grade--series .cap__cabeca {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 14px;
   align-items: center;
-  gap: 10px 12px;
+}
+.grade--series .cap__cabeca .aro {
+  grid-row: 1 / 3;
+  width: 44px;
+  height: 44px;
 }
 .grade--series .cap__verbo {
-  margin: 0;
+  margin: 0 0 3px;
+  align-self: end;
   font-family: var(--fonte-mono);
   font-size: .62rem;
   letter-spacing: .18em;
@@ -291,22 +329,24 @@
   color: var(--ink-faint);
 }
 .grade--series .cap h3 {
-  margin: 0 0 0 auto;
-  font-size: 1.04rem;
-  text-align: right;
+  margin: 0;
+  align-self: start;
+  font-size: 1rem;
+  line-height: 1.2;
 }
-/* o resumo corta na terceira linha: o texto inteiro esta na pagina da serie */
+/* o resumo corta na segunda linha (15/09, "card com uma altura menor"; era a terceira):
+   o texto inteiro esta na pagina da serie */
 .grade--series .cap__resumo {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   overflow: hidden;
-  margin: 12px 0;
+  margin: 10px 0;
 }
 /* o pe so leva a acao (ou o selo de em breve), encostada na direita */
 .grade--series .cap__pe {
   justify-content: flex-end;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 /* com a foto do lado o botao volta pro pe do texto: no canto de uma foto estreita
    ele cobriria a imagem */
@@ -321,4 +361,11 @@
   .grade--series .cap { flex-direction: column; }
   .grade--series .cap__arte { flex: none; }
   .grade--series .cap__corpo { padding: 16px 18px; }
+}
+
+/* quem pediu menos movimento nao ve o risco correndo: no hover volta a linha cheia
+   na cor da tinta, como era */
+@media (prefers-reduced-motion: reduce) {
+  .cap:hover { border-style: solid; border-color: var(--ink); }
+  .cap:hover::after { opacity: 0; }
 }
