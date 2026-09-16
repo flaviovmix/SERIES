@@ -110,7 +110,29 @@
     </div>
   </section>
 
-  <!-- 4 · pratica ou demonstracao: o painel e da base, o miolo e do episodio -->
+  <!-- 4 · tela de conteudo com ilustracao: o texto na esquerda, a imagem na
+       direita. E o formato mais usado nas series novas (JAVA WEB e FINANCAS) e o
+       que ele aprovou em 16/09/2026, olhando as duas versoes lado a lado.
+       ⚠️ A ilustracao vai AO LADO do texto, NUNCA em faixa larga por cima do
+       conteudo: numa tira baixa o recorte corta a imagem 16:9 em cima e embaixo e
+       a composicao morre. No telefone ela sobe pro alto sozinha, porque imagem
+       fora da dobra conta como tela sem imagem. As classes moram no pranchas.css:
+       nao copiar pro episodio.css, que ja foi clonado quatro vezes antes de subir
+       pra base. -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">__DE ONDE VEM O DADO__</div>
+      <h2 class="reveal">__TITULO DA TELA__</h2>
+      <p class="lede reveal">__O QUE ESTA TELA EXPLICA__</p>
+      <!-- os blocos proprios do episodio entram aqui e ocupam a largura da coluna -->
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/__.webp" alt="__O QUE SE VE NA IMAGEM__">
+      <figcaption>ilustração · __A FRASE CURTA DA LEGENDA__</figcaption>
+    </figure>
+  </section>
+
+  <!-- 5 · pratica ou demonstracao: o painel e da base, o miolo e do episodio -->
   <section class="step">
     <div class="kicker reveal">pratique</div>
     <h2 class="reveal">__O QUE FAZER__</h2>
@@ -125,7 +147,7 @@
     </div>
   </section>
 
-  <!-- 5 · fechamento: os cards do "pelo mundo", a limitacao e o gancho do proximo.
+  <!-- 6 · fechamento: os cards do "pelo mundo", a limitacao e o gancho do proximo.
        Os cartoes respondem ao mouse sozinhos (pranchas.css). -->
   <section class="step step--mundo">
     <div class="kicker reveal">__NOME__ pelo mundo</div>

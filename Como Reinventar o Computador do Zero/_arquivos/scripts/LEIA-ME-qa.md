@@ -23,7 +23,7 @@ e o gancho `window.__<maquina>` aparece como `undefined` — parece bug do model
 
 | Script | Pra que serve |
 |---|---|
-| `qa-pagina.js <url> <telas>` | uma página de animação: número de telas e bolinhas, navegação até a última, imagem quebrada, estouro horizontal em 1440px e 360px, e **conteúdo cortado dentro da tela** numa janela de 1440x900 (que o teste de estouro não pega) |
+| `qa-pagina.js <url> <telas>` | uma página de animação: número de telas e bolinhas, navegação até a última, imagem quebrada, estouro horizontal em 1440px e 360px, **conteúdo cortado dentro da tela** numa janela de 1440x900 (que o teste de estouro não pega) e, desde 16/09/2026, a **regra da imagem**: toda tela tem imagem (foto, ilustração, svg, canvas ou o widget interativo, que é o desenho da própria página) e ela fica **à vista no telefone**, porque imagem fora da dobra conta como tela sem imagem. Essa última nasceu de um episódio que foi ao ar com 12 telas e uma foto só: o teste dizia "tudo passou" porque media tudo menos isso, e a regra, embora escrita no `_molde-roteiro.txt`, não segurava nada sem alguém testando |
 | `qa-modelos-3d.js` | os cinco modelos de uma vez: a cena monta, o gancho responde, e nenhuma peça cai fora da tela ou **atrás do painel** — em desktop e no telefone |
 | `qa-abaco.js` | Ábaco Play: clique, arraste, teclado, oito desafios, pontuação, cancelamento da demonstração, cinco tamanhos de tela e modelo embutido em dois tamanhos |
 | `qa-suanpan.js` | Suanpan Play: famílias de duas e cinco contas, arraste em direções opostas, valores equivalentes, oito desafios e quatro tamanhos de tela; `--embed-only` verifica três tamanhos de iframe |
@@ -141,3 +141,156 @@ Execute `node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-suanpan
 `modelos-3d/abaco-binario.html` é um terceiro modelo, separado de `abaco.html` e `suanpan.html`. O corpo estreito possui oito hastes com uma conta em cada: esquerda representa 1; direita representa 0. Os pesos escritos no metal são 128, 64, 32, 16, 8, 4, 2 e 1, de cima para baixo. A interface mostra os oito bits e o valor decimal de 0 a 255. A câmera permite rotação completa, e os botões de bits oferecem a mesma operação pelo teclado.
 
 Execute `node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-binario.js"` com o servidor local e os pré-requisitos descritos acima. Além das 256 combinações, o teste verifica a demonstração, sua interrupção, os oito desafios, pontuação sem duplicação e as versões embutidas. Capturas e HTML montado ficam em `abaco-binario-qa`, na pasta temporária. `QA_OUT` e `MODELOS_URL` permitem escolher pasta e URL.
+
+## Pendrive USB
+
+Execute `node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-pendrive.js"`
+com o servidor local. Verifica LED e difusor apagando juntos, luz constante em
+movimento reduzido, seleção de peças pelo próprio modelo, abertura, versos e PNG.
+No telefone 384×686, usa toques reais, arraste e pinça no palco girado. Também
+confere que a fonte continua usando o cálculo padrão de clique do visualizador.
+Capturas ficam em `pendrive-final` na pasta temporária; aceita `QA_OUT` e
+`MODELOS_URL`. Para vistas, enquadramento e todas as peças, use também
+`qa-visualizador.js pendrive.html`; `--thumb` atualiza a miniatura.
+
+## Placa-mãe ATX
+
+Execute `node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-placa-mae.js"`
+com o servidor local. Confere vistas, isolamento, clique no socket, abertura,
+versos, PNG, tela cheia e redimensionamento. No telefone 384×686, verifica toque
+no socket e nas portas, arraste, pinça, painel e abertura. Também cobre movimento
+reduzido e erros do navegador. Capturas em `placa-mae-final`, na pasta temporária;
+aceita `QA_OUT` e `MODELOS_URL`. O teste geral continua sendo
+`qa-visualizador.js placa-mae.html`, com `--thumb` para atualizar a miniatura.
+
+## Gabinete gamer (as peças da galeria, montadas)
+
+Desde 15/09/2026 o `gabinete-gamer.html` não desenha mais as peças por conta própria:
+carrega as **carcaças** dos modelos da galeria (placa-mãe, RTX 5090, processador,
+cooler, DDR5 em dois slots, fonte, HD, SSD, NVMe e pendrive) de
+`modelos-3d/pecas-gamer/*.glb.gz`, e o `_montagem-gamer.js` diz onde cada uma encaixa.
+O chassi, o vidro, o painel frontal e as ventoinhas do gabinete continuam
+construídos no `gabinete-gamer.js`; `_cabos-gamer.js` monta os chicotes externos.
+Na desmontagem cada peça sai inteira: o
+clique numa solda ou num conector seleciona a peça toda, não o pedaço.
+
+A carcaça segue a foto de referência que o Flávio mandou em 15/09 (mid-tower preto):
+corpo de aço fechado atrás, em cima e na direita; vidro fumê só na esquerda; painel
+frontal com duas grades vazadas e três faixas RGB verticais, pontas afiladas e
+facetas pretas; tampa da fonte com fita rosa; ventoinhas de anel RGB, inclusive
+duas no teto perfurado. O arco-íris é textura de canvas; só os anéis se deslocam
+a cada quadro (`arcoIris()`). O brilho é um plano aditivo com máscara
+suave (`brilho()`), sem pós-processamento. As ventoinhas da frente ficam **recuadas**
+do painel (`z=2.6`, painel em `3.42`): coladas nele, qualquer ângulo que não seja de
+lado puro esconde as três. Duas luzes pontuais dentro do gabinete compensam o vidro
+escuro e apagam junto com o RGB. O vidro tem opacidade de 26%.
+
+A GPU ocupa o segundo PCIe longo: neste modelo, o painel I/O desce até a altura
+do primeiro. Essa montagem evita sobreposição entre as saídas de vídeo e os jacks
+da placa-mãe. A traseira tem recortes próprios, abas e espelhos recuados para os
+conectores reais das duas peças. ATX, EPS, GPU, SATA e ventoinhas têm cabos com
+plugs e presilhas; a bandeja e a tampa inferior têm passagens vazadas. Os chicotes
+saem como um conjunto separado na desmontagem, sem esticar.
+
+As carcaças saem dos próprios construtores da galeria, sem alterar nenhum deles:
+
+```bash
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/exporta-pecas-gamer.js"
+```
+
+Com o servidor local ativo, o script abre cada modelo no Edge, injeta a captura só
+no navegador, guarda os grupos externos de cada peça (lista no próprio script)
+consolidados por material, e grava `.glb.gz` + `manifest.json` com o sha256 do
+construtor de origem. **Mexeu num construtor (placa-mae.js, rtx-5090.js…), roda
+de novo**, senão o gabinete mostra a peça velha. Os rotores das ventoinhas ficam em
+grupos `fan-rotor-*` pra continuarem girando dentro do gabinete.
+Opcionalmente, passe um ou mais IDs para reexportar só as peças alteradas,
+por exemplo `exporta-pecas-gamer.js fonte`. Os chanfros usam um segmento no
+computador completo e as texturas são limitadas a 1024 px. Os modelos individuais
+mantêm a resolução original. O carregador descompacta os GLBs com
+`DecompressionStream('gzip')`, disponível no Edge usado na conferência.
+
+Conferência: `qa-visualizador.js gabinete-gamer.html` (5 vistas, 15 seleções, RGB e
+ventoinhas, desktop e telefone) e `--thumb` pra miniatura. O gancho
+`window.__gabineteGamer.detalhes()` devolve a posição, os limites e a origem de
+cada peça carregada, os chicotes e o total de triângulos.
+
+`qa-gabinete-gamer.js` confere os hashes de origem, as 11 peças de hardware e
+as 16 entradas de visibilidade. Pausa as hélices e compara as matrizes de todos
+os elementos antes/depois da desmontagem: nenhuma camada interna pode se mover.
+Também verifica que cada peça sai completamente do volume do gabinete e volta
+à posição inicial, isolamento dos cabos, clique na GPU, luzes desligadas, PNG,
+tela cheia, desktop 1024 e telefone 384×686 com toque, arraste e pinça. Cobre
+movimento reduzido e recuperação após falha no carregamento de um GLB.
+Capturas em `%TEMP%/gabinete-gamer-final/`; aceita `QA_OUT` e `MODELOS_URL`.
+
+## Mouse gamer
+
+`mouse-gamer.html` usa o visualizador comum e oito conjuntos: carcaça, botões,
+laterais, scroll, placa, sensor, base e cabo. Tampa, colar lateral e base usam
+contornos compatíveis, com paredes frontal/traseira e lábios nas juntas.
+Difusores planos acompanham as laterais. RGB controla as faixas, o aro e os
+emblemas. O scroll começa parado e respeita movimento reduzido.
+
+```bash
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-visualizador.js" mouse-gamer.html
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-mouse-gamer.js"
+node "Como Reinventar o Computador do Zero/_arquivos/modelos-3d/_qa-deitado.js" "http://127.0.0.1:8777/Como%20Reinventar%20o%20Computador%20do%20Zero/_arquivos/modelos-3d/mouse-gamer.html" --pecas
+```
+
+O teste específico confere RGB, início/parada do scroll, seleção pela geometria,
+oito isolamentos, vistas, abertura, PNG, tela cheia, desktop 1024, celular 384×686
+com toque, arraste e pinça, além de movimento reduzido. Testa também 894 raios
+contra a carcaça montada para detectar frestas que exponham o interior e captura
+as duas laterais, a frente e a traseira para revisão visual das juntas. Capturas em
+`%TEMP%/mouse-gamer-final/`; aceita `QA_OUT` e `MODELOS_URL`.
+
+O novo modo `--pecas` do `_qa-deitado.js` usa os seletores do visualizador comum
+e verifica a rotação, largura do palco e posição do painel em cinco telefones,
+além de paisagem e desktop. O modo original dos ábacos continua sem essa opção.
+Para atualizar a miniatura, execute o primeiro comando com `--thumb`.
+
+## Teclado gamer
+
+`teclado-gamer.html` reúne oito conjuntos: teclas, switches, placa de suporte,
+moldura, PCB, base, apoio de pulso e cabo. As 87 posições orientam os recortes e
+os mecanismos; teclas ocas têm encaixes em cruz e legendas presas à superfície.
+RGB liga/desliga e `Demonstrar teclas` mostra o curso de WASD, espaço, Enter e Esc.
+
+```bash
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-visualizador.js" teclado-gamer.html
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-teclado-gamer.js"
+node "Como Reinventar o Computador do Zero/_arquivos/modelos-3d/_qa-deitado.js" "http://127.0.0.1:8777/Como%20Reinventar%20o%20Computador%20do%20Zero/_arquivos/modelos-3d/teclado-gamer.html" --pecas
+```
+
+O teste específico verifica os tampos/versos das 87 teclas por interseção de
+raios, ausência de chapa nos 87 vazados e fechamento das laterais. Confere
+animação/retorno das teclas e legendas, RGB, clique/toque na tecla W, oito
+isolamentos, vistas, desmontagem, PNG, tela cheia e desktop 1024. No celular
+384×686 testa o palco girado, painel, arraste e pinça; verifica movimento
+reduzido. Capturas em `%TEMP%/teclado-gamer-final/`, incluindo versos das teclas
+e PCB. Aceita `QA_OUT` e `MODELOS_URL`. Para a miniatura, use o QA genérico com
+`teclado-gamer.html --thumb`.
+
+## Monitor gamer
+
+`monitor-gamer.html` tem nove conjuntos: moldura, painel, iluminação, chassi,
+placas, carcaça traseira, coluna, base e cabos. O painel plano tem proporção
+16:9; tela e RGB traseiro possuem controles separados. As seis entradas ficam
+fora da área da coluna, com janelas vazadas na tampa. A adaptação ao celular
+usa `_visualizador-pecas-mobile.js/css`, extraída do padrão dos periféricos.
+
+```bash
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-visualizador.js" monitor-gamer.html
+node "Como Reinventar o Computador do Zero/_arquivos/scripts/qa-monitor-gamer.js"
+node "Como Reinventar o Computador do Zero/_arquivos/modelos-3d/_qa-deitado.js" "http://127.0.0.1:8777/Como%20Reinventar%20o%20Computador%20do%20Zero/_arquivos/modelos-3d/monitor-gamer.html" --pecas
+```
+
+O teste específico verifica a proporção do painel, os recortes das seis portas,
+a ausência da coluna na frente delas, o fechamento da carcaça e a passagem de
+cabos por interseção de raios. Testa tela/RGB, clique/toque no painel, os nove
+isolamentos, cinco vistas, montagem, PNG, tela cheia e desktop 1024. No celular
+384×686 confere toque, painel lateral, arraste e pinça; testa também movimento
+reduzido. Capturas em `%TEMP%/monitor-gamer-final/`, incluindo os versos da placa
+e da tampa e a vista lateral das camadas abertas. Aceita `QA_OUT` e `MODELOS_URL`.
+Para a miniatura, use o QA genérico com `monitor-gamer.html --thumb`.

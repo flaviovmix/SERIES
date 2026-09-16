@@ -224,6 +224,59 @@
 .mundo .nome { font-size: 21px; font-weight: 600; }
 .mundo .desc { font-size: 14.5px; color: var(--ink-soft); line-height: 1.6; margin-top: 8px; }
 
+/* ---- tela de conteudo com ilustracao: texto na esquerda, imagem na direita ----
+   Padrao das series novas: o JAVA WEB usa desde 04/09/2026 e o FINANCAS desde
+   16/09. Subiu pra ca quando virou o QUARTO episodio a copiar as mesmas regras no
+   proprio episodio.css, com a regra do terceiro clone ja estourada. Os episodios
+   antigos seguem com a copia deles, que carrega depois desta folha e vence.
+   ⚠️ A ilustracao vai AO LADO do texto, NUNCA em faixa larga por cima do
+   conteudo: numa tira baixa o object-fit corta a imagem 16:9 em cima e embaixo e
+   a composicao morre (tentado e reprovado por ele em 16/09/2026). No telefone ela
+   sobe pro alto, porque imagem fora da dobra conta como tela sem imagem. */
+.step--lado {
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(20px, 3vw, 44px);
+  text-align: left;
+  padding-left: clamp(12px, 3vw, 40px);
+  padding-right: clamp(12px, 3vw, 40px);
+}
+.lado-texto {
+  flex: 1 1 560px;
+  min-width: 0;
+  /* teto de largura pra a linha nao ficar longa demais de ler */
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lado-arte {
+  /* nao estica alem do teto da arte: a sobra de largura se divide por igual */
+  flex: 1 1 400px;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.lado-arte img {
+  width: 100%;
+  height: auto;
+  max-height: min(58vh, 480px);
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: var(--sombra-alta);
+}
+.lado-arte figcaption {
+  font-family: var(--fonte-mono);
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
 /* ---- apertos, no fim da folha de proposito ---- */
 
 /* estreito: a cena empilha, o mundo vira coluna */
@@ -243,6 +296,12 @@
   :is(.cena--tres, .cena:has(> :nth-child(3):last-child)), :is(.cena--quatro, .cena:has(> :nth-child(4):last-child)), :is(.cena--seis, .cena:has(> :nth-child(6):last-child)) { grid-template-columns: minmax(0, 1fr); }
   :is(.cena--tres, .cena:has(> :nth-child(3):last-child)) > :nth-child(3) { width: 100%; justify-self: stretch; }
   .mundo { grid-template-columns: minmax(0, 1fr); gap: 16px; max-width: 520px; }
+  /* a tela de lado empilha, e a ilustracao sobe pro ALTO do texto: no telefone,
+     imagem fora da dobra conta como tela sem imagem */
+  .step--lado { flex-direction: column; text-align: center; }
+  .lado-texto { width: 100%; max-width: none; align-items: center; text-align: center; }
+  .lado-arte { width: 100%; order: -1; }
+  .lado-arte img { max-height: min(30vh, 240px); }
   .mundo .nome { font-size: 20px; }
 }
 
