@@ -111,3 +111,8 @@ Situação: 🟢 no ar · 🟠 em andamento (modelo 3D pronto, card no hub ou em
 | 94 | O motor elétrico do Sturgeon (1832) | peça e figura | Do Ábaco à IA | EX-19 *O Eletroímã* | 🔴 levantado em 14/09, esperando o Flávio escolher |
 | 95 | A campainha e o alto-falante: o eletroímã que vibra | peça | Do Ábaco à IA | EX-19 *O Eletroímã* | 🔴 levantado em 14/09, esperando o Flávio escolher |
 | 96 | O eletroímã gigante: ferro-velho e ressonância magnética | peça | Do Ábaco à IA | EX-19 *O Eletroímã* | 🔴 levantado em 14/09, esperando o Flávio escolher |
+| 97 | **Por que o dinheiro some** | conceito | Finanças | Finanças, etapa 1, ep 01 | 🔴 levantado em 16/09/2026, esperando o Flávio; contabilidade mental, fonte primária já levantada (Thaler, 1999, e o prêmio de 2017) |
+| 98 | **Por faixa, não por cima** | conceito | Finanças | Finanças, etapa 1, ep 01 | 🔴 levantado em 16/09/2026, esperando o Flávio; alíquota progressiva do INSS e do IR; quem descobriu a pesquisar |
+| 99 | **Quanto mais pobre, maior a fatia da comida** | conceito e figura | Finanças | Finanças, etapa 1, ep 01 | 🔴 levantado em 16/09/2026, esperando o Flávio; a lei de Engel (1857), a conferir em fonte primária |
+| 100 | **A regra que virou lei sem ser lei** | conceito | Finanças | Finanças, etapa 1, ep 01 | 🔴 levantado em 16/09/2026, esperando o Flávio; a divisão em três partes de *All Your Worth* (Warren e Tyagi, 2005) e os percentuais que não estão na fonte |
+| 101 | **Como o IBGE sabe o que você gasta** | peça | Finanças | Finanças, etapa 1, ep 01 | 🔴 levantado em 16/09/2026, esperando o Flávio; o que é a POF e por que a de 2024-2025 ainda não saiu |

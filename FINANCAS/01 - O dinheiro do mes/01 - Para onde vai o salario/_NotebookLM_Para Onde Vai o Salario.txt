@@ -1,0 +1,209 @@
+Inicie dizendo: Financas - Para Onde Vai o Salario
+---------------
+
+Este e o PRIMEIRO episodio da serie FINANCAS, que vai do dinheiro do mes ate a bolsa. Nao existe episodio anterior: este abre a serie. A serie sobe degrau por degrau, e trocar acoes, que muita gente acha que e o comeco, e o ultimo degrau.
+
+ESTE EPISODIO NAO FALA DE INVESTIMENTO. Nada de acao, bolsa, corretora, renda fixa, produto, aplicacao ou rendimento. Ele fica no dinheiro do mes. Bolsa so e citada uma vez, na abertura, pra dizer aonde a serie vai chegar.
+
+E EDUCACAO, NUNCA RECOMENDACAO. Em nenhum momento dizer o que comprar, onde investir, que banco usar, que produto contratar ou quanto uma coisa rende. Nada de promessa de resultado. Nao dizer "voce deve", "faca isso hoje": a serie mostra a conta e quem decide e quem ouve.
+
+TODA CIFRA VEM COM A DATA E COM A FONTE, dita em voz alta e em poucas palavras: "numa pesquisa do IBGE, feita entre dois mil e dezessete e dois mil e dezoito", "o Banco Central mediu, em junho de dois mil e vinte e seis". Numero sem data nao entra. Os anos vao ditos por extenso e sem pressa.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 12 telas que o ouvinte avanca apertando o botao Proximo. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
+- Logo na abertura, avisar que quem nao estiver com a pagina aberta acompanha so pelo audio, sem problema.
+- Nas telas que se mexem (3, 5 e 8), avisar que tem controle na tela pra acompanhar enquanto ouve.
+- Na tela de PRATICA (11), convidar o ouvinte a pausar o audio, fazer na tela e voltar quando terminar.
+- Nao descrever pixels nem posicao de botao; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 12 telas. O audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem pedir. Quem esta ouvindo com a pagina aberta so vira a tela quando esse pedido acontece: se faltar um pedido, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+TOM. Sem sermao e sem culpa. O episodio nao diz que as pessoas gastam mal, nao chama ninguem de descontrolado e nao trata quem esta endividado como quem errou. A maior parte da diferenca entre quem sobra e quem nao sobra e o tamanho da renda, e isso esta dito em voz alta na tela 7. Nada de tom de coach, nada de frase de motivacao.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO PRA ENTREGAR. Nada de "tarefa", "modulo", "aula numero tal", "o material pede", tabela pra preencher e prazo. A tela 11 convida a fazer uma conta, e isso e tudo.
+
+CUIDADOS DE PRECISAO (cada um ja custou correcao):
+- O desconto que zera o imposto de renda ate cinco mil reais por mes e um DESCONTO NO IMPOSTO, criado por uma lei de dois mil e vinte e cinco, valendo desde janeiro de dois mil e vinte e seis. NAO dizer que "a tabela agora e isenta ate cinco mil": a faixa de isencao da tabela continua em dois mil quatrocentos e vinte e oito reais e oitenta centavos.
+- NAO dizer quantos meses de reserva alguem deve ter. Nenhuma fonte oficial brasileira fixa isso. A reserva aparece so como assunto do proximo degrau.
+- A divisao do dinheiro em tres partes (o que voce tem que pagar, o que voce quer, e o que voce guarda) e de um livro americano de dois mil e cinco, escrito por Elizabeth Warren e Amelia Warren Tyagi. Dizer que e proposta de livro. NAO dizer que e regra, norma, recomendacao oficial ou coisa do Banco Central, e NAO cravar os percentuais.
+- Os oitenta e dois por cento de familias com divida a vencer sao de uma pesquisa da Confederacao Nacional do Comercio, que e entidade do comercio, e isso tem que ser dito. Os numeros do Banco Central sao outros e medem outra coisa: nao misturar os dois na mesma frase.
+- Os numeros do IBGE sao POR FAMILIA, nao por pessoa, e sao de dois mil e dezessete a dois mil e dezoito.
+- A conta do INSS e do imposto de renda vale pra quem trabalha com carteira assinada. Dizer isso em voz alta na tela 2.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario, genial, genialidade.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "e ai que mora o perigo".
+
+---------------
+
+Use SOMENTE as analogias descritas aqui. NAO invente analogias novas.
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O cofrinho: e o objeto que atravessa a serie inteira. Aqui ele nasce, e ele e simplesmente a sobra do mes ganhando um lugar proprio. Nao e personagem, nao fala, nao tem nome.
+- A fita de tamanho fixo: o salario que cai na conta e uma fita que nao estica. Cada gasto e um pedaco marcado nela. Puxar um pedaco pra maior empurra os outros, porque a fita nao estica. Serve pra tela 5.
+
+Fora essas duas, explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: PARA ONDE VAI O SALARIO)
+
+Abrir a serie em duas frases: e uma serie sobre dinheiro que comeca no dinheiro do mes e termina na bolsa. E dizer a ordem, porque ela e o contrario do que costuma acontecer: muita gente comeca perguntando onde investir, e aqui isso e o ultimo degrau. Antes dele vem entender o dinheiro que entra e sai todo mes, emprestar dinheiro, virar socio de uma empresa, imposto e custo, e medir o que e normal num numero.
+
+Dizer o que este primeiro episodio faz: responder uma pergunta so, que quase todo mundo ja fez. O salario entrou, o mes acabou, e cade o dinheiro. O episodio separa o que sai antes de cair na conta, o que e fixo, o que varia, o que e certo mas nao cai todo mes, e o que sobra.
+
+Avisar que os numeros vem de fonte oficial e cada um vem com a data, e que quem nao estiver com a pagina aberta acompanha so pelo audio.
+
+Explicar a mecanica sem usar a frase do pedido como exemplo: a cada tela a gente avisa a hora de avancar. Nas telas com controle, mexa enquanto ouve. Na tela de pratica, pause e faca.
+
+Pedir: aperte o Proximo.
+
+TELA 2 (O BRUTO NAO E O QUE CAI NA CONTA)
+
+Comecar pelo comeco: o numero que aparece no anuncio da vaga e no contracheque nao e o numero que chega na conta. Pra quem tem carteira assinada saem duas coisas antes: a contribuicao pro INSS e o imposto de renda.
+
+Explicar a parte que quase todo mundo entende errado, com calma, porque ela vale pros dois descontos: a aliquota e POR FAIXA. O salario e cortado em pedacos, e cada pedaco paga a aliquota dele. Nao e a maior aliquota aplicada sobre tudo.
+
+Dar a tabela do INSS de dois mil e vinte e seis com os numeros ditos devagar: sete e meio por cento ate mil seiscentos e vinte e um reais, nove por cento no pedaco seguinte, doze por cento depois, e quatorze por cento no ultimo pedaco, que vai ate oito mil quatrocentos e setenta e cinco reais e cinquenta e cinco centavos. Desse teto pra cima nao se contribui mais.
+
+Dizer em voz alta o limite disso: essa conta vale pra quem tem carteira assinada. Quem trabalha por conta propria, quem e MEI e quem esta na informalidade tem outra conta, e nao e pouca gente: segundo o IBGE, no segundo trimestre de dois mil e vinte e seis, trinta e sete virgula quatro por cento de quem trabalha no Brasil estava na informalidade.
+
+Pedir: aperte o Proximo.
+
+TELA 3 (A REGUA DO BRUTO AO LIQUIDO, TELA COM CONTROLE)
+
+Avisar: tem um controle na tela pra escolher o salario e ver as faixas se enchendo uma a uma, com o liquido no fim. Dizer que a tela comeca num salario de tres mil reais, que e o exemplo que o audio vai seguir.
+
+Conduzir a conta desse exemplo devagar, sem exigir que ninguem faca junto: o primeiro pedaco, ate mil seiscentos e vinte e um reais, paga sete e meio por cento; o segundo, ate dois mil novecentos e dois reais e oitenta e quatro centavos, paga nove; e sobra um ultimo pedacinho, de menos de cem reais, que paga doze. O que chega na conta e menor que o bruto, mas bem maior do que seria se a maior aliquota valesse sobre tudo. Esse e o ponto da tela.
+
+Falar do imposto de renda com o cuidado combinado. A tabela de dois mil e vinte e seis comeca a cobrar acima de dois mil quatrocentos e vinte e oito reais e oitenta centavos. So que existe, desde janeiro de dois mil e vinte e seis, um desconto no imposto que zera a conta pra quem ganha ate cinco mil reais por mes, criado por uma lei de dois mil e vinte e cinco. O efeito pratico e que quem ganha ate cinco mil nao paga imposto de renda na folha. Dito assim, sem transformar isso em mudanca da tabela.
+
+Fechar a tela com a frase que amarra: a partir daqui, o episodio trabalha so com o que chegou na conta.
+
+Pedir: aperte o Proximo.
+
+TELA 4 (AS QUATRO CAIXAS DO MES)
+
+Apresentar o vocabulario, dizendo de onde ele vem: o Caderno de Educacao Financeira do Banco Central, na versao de dois mil e vinte e seis. Nao e invencao da serie e nao e regra de guru.
+
+Quatro nomes, um de cada vez, com exemplo curto:
+Receita fixa e a que nao muda ou muda pouco, como o salario. Receita variavel muda de um mes pro outro, como comissao ou bico.
+Despesa fixa e a que nao muda ou muda pouco, como aluguel e prestacao. Despesa variavel muda conforme o uso, como luz, agua e mercado.
+
+E tem um quinto nome, que e o que mais estraga mes: o compromisso que e certo e nao cai todo mes. IPVA, matricula, seguro, material escolar. O caderno chama de compromisso sazonal. Ele nao e surpresa, ele e so esquecido.
+
+Dizer a conta do caderno do jeito que ela esta escrita la: receitas menos despesas e igual a poupanca.
+
+Pedir: aperte o Proximo.
+
+TELA 5 (A BARRA DO MES, TELA COM CONTROLE)
+
+Avisar: a tela tem uma barra que representa o salario que caiu na conta, dividida em fatias que da pra arrastar.
+
+Usar a analogia da fita, uma vez: a barra e uma fita de tamanho fixo. Cada gasto e um pedaco marcado nela. Puxar moradia pra maior empurra o resto, porque a fita nao estica. Quem decide o tamanho de cada pedaco e quem mexe.
+
+Conduzir o que acontece quando as fatias crescem: a sobra, que fica no fim da fita, encolhe ate sumir. E dizer o que isso quer dizer na vida: a sobra e a unica fatia que ninguem escolheu, ela e o que restou depois que as outras foram marcadas.
+
+Deixar claro que os numeros da tela sao inventados e redondos, de proposito, e que ninguem precisa botar dado de verdade em lugar nenhum.
+
+Pedir: aperte o Proximo.
+
+TELA 6 (PARA ONDE VAI DE VERDADE)
+
+Dar o retrato oficial, com a data na frente: numa pesquisa do IBGE feita entre dois mil e dezessete e dois mil e dezoito, a maior fatia do que as familias brasileiras gastam com consumo nao e comida. E moradia, com trinta e seis virgula seis por cento. Depois vem transporte, com dezoito virgula um. E so entao alimentacao, com dezessete virgula cinco. As tres juntas passam de setenta por cento.
+
+Dizer por que isso surpreende: comida e o gasto que a gente ve todo dia, varias vezes por dia, e moradia sai uma vez so e some. O que aparece mais nao e o que pesa mais.
+
+Repetir os tres cuidados, sem enrolar: os numeros sao por familia, nao por pessoa; sao dessa pesquisa, que e a mais nova publicada, e a seguinte foi a campo e ainda nao tinha resultado divulgado; e sao a fatia da parte do gasto que e consumo, nao de tudo que a familia gasta no mes.
+
+Pedir: aperte o Proximo.
+
+TELA 7 (A DIFERENCA ESTA NA SOBRA)
+
+Comparar as duas pontas da mesma pesquisa do IBGE, a de dois mil e dezessete a dois mil e dezoito, com cuidado e sem moral da historia. Entre as familias de menor renda, quase tudo que sai no mes vai pra consumo: noventa e dois virgula seis por cento de tudo que a familia gasta. Entre as de maior renda, sessenta e seis virgula tres.
+
+Mostrar onde esta a diferenca: nao e comida, e o que sobra e vira patrimonio. A parte do dinheiro que vira aumento de bens e de aplicacoes e de um virgula quatro por cento nas familias de menor renda e nove virgula seis por cento nas de maior renda.
+
+Dizer em voz alta, porque e a frase mais importante do episodio: essa diferenca e principalmente tamanho de renda, nao esforco nem disciplina. Quem ganha pouco gasta uma fatia maior com comida justamente porque comida tem um tamanho minimo e a renda e menor. O que o episodio propoe daqui pra frente vale pra quem tem qualquer sobra, por menor que seja, e nao serve de julgamento pra quem nao tem.
+
+Pedir: aperte o Proximo.
+
+TELA 8 (O ANO QUE NAO FECHA, TELA COM CONTROLE)
+
+Avisar: a tela mostra doze meses de uma vez, com o mesmo salario e a mesma sobra em todos.
+
+Contar o que acontece: os compromissos sazonais caem em cima de alguns meses. IPVA no comeco do ano, matricula e material logo depois, seguro no meio. Cada um deles engole a sobra de um mes inteiro, e as vezes mais de um. O ano inteiro pode nao fechar mesmo quando quase todo mes pareceu bom.
+
+Mostrar a saida que a propria tela faz: um botao divide esses gastos por doze e guarda um pouco todo mes. O gasto continua o mesmo, o susto some. Esse e o primeiro momento em que a serie separa uma coisa que vai voltar sempre: o que muda nao e o valor, e o quando.
+
+Pedir: aperte o Proximo.
+
+TELA 9 (QUANDO A SOBRA JA FOI GASTA ANTES DE CHEGAR)
+
+Explicar a parcela como o que ela e: gasto fixo do futuro. Quem parcelou comprou um pedaco dos proximos meses, e aquele pedaco chega ja comprometido.
+
+Dar os numeros separados, sem misturar, dizendo quem mediu:
+O Banco Central mediu, em junho de dois mil e vinte e seis, que vinte e oito virgula oito e cinco por cento da renda das familias brasileiras vai pagar divida com bancos. E que o tamanho da divida equivale a quase metade da renda de um ano inteiro.
+A Confederacao Nacional do Comercio, que e uma entidade do comercio e nao um orgao de governo, mediu em agosto de dois mil e vinte e seis que oitenta e dois por cento das familias tem alguma divida a vencer, e que quase trinta por cento estao com alguma conta em atraso.
+
+Dizer por que os dois numeros nao se somam nem se trocam: um mede quanto da renda vai pra divida, o outro mede quantas familias tem divida. Sao perguntas diferentes.
+
+Citar o filme, em uma frase, com o que ele e e com a ressalva: um documentario curto brasileiro, do Idec, chamado No Caminho do Superendividamento, de graca na internet, que acompanha um caso de perto. E filme de campanha do Idec, com tese pronta e sem a voz dos bancos.
+
+Fechar sem moralizar: divida nao e fracasso de carater, e uma conta que ja foi feita. O episodio so quer que ela apareca na conta do mes em vez de aparecer de surpresa.
+
+Pedir: aperte o Proximo.
+
+TELA 10 (POR QUE A SOBRA VEM ANTES)
+
+Chegar no ponto do episodio. Quando a sobra e o que restar no fim, ela quase nunca sobra, porque o dinheiro que esta na conta vai sendo usado.
+
+Dizer que isso nao e opiniao da serie, e citar a fonte: o Caderno de Educacao Financeira do Banco Central diz, com todas as letras, que a primeira coisa a fazer ao receber e separar a parte de poupar antes mesmo de pagar qualquer despesa. E diz tambem que esperar pra poupar so no fim do mes e pouco efetivo. O nome que o caderno da pra isso e pague-se primeiro. E a regra de ouro que ele escreve e simples assim: gastar menos do que se recebe.
+
+Explicar o que muda na pratica, sem receita fechada: a mesma quantia sai da conta, so que sai no comeco. O mes se organiza em volta do que ficou, e nao o contrario.
+
+Dar o nome disso que ficou separado na frente: e o cofrinho do mes. Nao e um produto nem uma conta especial, e so a sobra ganhando um lugar proprio, e ele volta em todo episodio da serie.
+
+Citar o filme, em uma frase, com a ressalva: A Arte de Economizar, um documentario que acompanha pessoas comuns arrumando a propria conta. E americano, entao os valores e os produtos sao de la, e ele traz gente vendendo metodo proprio.
+
+Pedir: aperte o Proximo.
+
+TELA 11 (PRATICA: MONTE O SEU MES)
+
+Convidar a pausar o audio e fazer na tela: montar o mesmo mes duas vezes, uma com a sobra no fim e outra com a sobra na frente, e olhar os doze meses de cada jeito lado a lado.
+
+Enquanto isso, dar duas referencias, nomeadas e com data:
+A primeira e um livro americano de dois mil e cinco, de Elizabeth Warren e Amelia Warren Tyagi, que propos dividir o dinheiro em tres partes: o que voce tem que pagar, o que voce quer e o que voce guarda. Dizer que e proposta de livro, que virou muito citada, e que os percentuais que costumam aparecer colados nela nao estao escritos assim na fonte original.
+A segunda e um indice publicado em dois mil e vinte e seis, feito pelo Datafolha para uma associacao de planejadores financeiros, com as entrevistas feitas em julho de dois mil e vinte e cinco: numa escala de zero a cem, o brasileiro tira setenta virgula um na conta do mes e trinta e nove virgula tres na parte de ter reserva pra imprevisto. Ou seja: a maioria consegue organizar o mes, e trava no degrau seguinte.
+
+Convidar a voltar quando terminar.
+
+Pedir: aperte o Proximo.
+
+TELA 12 (ENCERRAMENTO)
+
+Recapitular em poucas frases: do bruto sai INSS e imposto, cobrados por faixa. O que chega se divide em fixo, variavel e o que e certo mas nao cai todo mes. O maior gasto das familias brasileiras e moradia, nao comida. A diferenca entre quem guarda e quem nao guarda e, em boa parte, tamanho de renda. E a sobra funciona melhor separada na frente do que esperada no fim.
+
+Dizer onde isso aparece fora da tela, em uma frase: no contracheque, na fatura do cartao, no extrato e no informe de rendimentos que chega uma vez por ano.
+
+Nao dizer quantos meses de reserva alguem deve ter. Nao dar conselho de investimento.
+
+Gancho pro proximo episodio, sem entregar a resposta: a sobra parada nao cresce, e existe um mesmo motor que faz a divida do cartao crescer e faz o dinheiro guardado crescer. No proximo episodio a gente olha esse motor de perto, e ele explica tanto a divida do cartao que cresce sozinha quanto o dinheiro guardado que cresce sozinho com tempo.
+
+---
+
+ENCERRAMENTO
+
+Fechar dizendo que esta mesma tela tem, embaixo, os filmes e documentarios do assunto pra quem quiser ver depois, e que a serie segue no proximo episodio.

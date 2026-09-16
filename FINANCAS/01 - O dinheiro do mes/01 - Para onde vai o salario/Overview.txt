@@ -1,0 +1,24 @@
+PARA ONDE VAI O SALARIO - CONTEXTO
+==================================
+Documento curto de contexto para uso com NotebookLM.
+
+Este e o primeiro episodio da serie FINANCAS, que vai do dinheiro do mes ate a bolsa. A linha de apoio da serie e "do cofrinho a bolsa". A serie sobe degrau por degrau: primeiro o dinheiro do mes, depois emprestar dinheiro, depois virar socio de uma empresa, depois imposto e custo, depois a regua da media e do desvio, e so no fim trocar entre dois papeis parecidos.
+
+Este episodio responde uma pergunta so: para onde vai o salario. Ele separa o que sai antes de cair na conta (INSS e imposto de renda, cobrados por faixa), o que e gasto fixo, o que e gasto variavel, o que e gasto certo que nao cai todo mes, e o que sobra. E termina mostrando que a sobra funciona melhor quando e separada na frente, e nao no que restar no fim.
+
+Os numeros vem de fonte oficial e cada um tem data, dita por extenso:
+- Para onde as familias brasileiras gastam: Pesquisa de Orcamentos Familiares do IBGE, feita entre dois mil e dezessete e dois mil e dezoito, a mais nova divulgada. Da parte que a familia gasta com consumo, habitacao fica com trinta e seis virgula seis por cento, transporte com dezoito virgula um e alimentacao com dezessete virgula cinco. Sao numeros por familia, nao por pessoa.
+- Quanto da renda das familias vai pagar divida com bancos: Banco Central, junho de dois mil e vinte e seis, vinte e oito virgula oito e cinco por cento.
+- Quantas familias tem divida a vencer: pesquisa da Confederacao Nacional do Comercio, agosto de dois mil e vinte e seis, oitenta e dois por cento. E pesquisa de entidade do comercio, nao e dado de governo, e mede coisa diferente do numero do Banco Central.
+- Tabela do INSS e do imposto de renda: as de dois mil e vinte e seis.
+- Salario minimo de dois mil e vinte e seis: mil seiscentos e vinte e um reais.
+
+O vocabulario do orcamento (receita fixa, receita variavel, despesa fixa, despesa variavel, compromisso sazonal, poupar antes de gastar) vem do Caderno de Educacao Financeira do Banco Central do Brasil, na versao de dois mil e vinte e seis.
+
+A serie e educacao financeira, nunca recomendacao de investimento. Nenhum episodio diz o que comprar, onde investir ou quanto rende.
+
+Por que importa: quase todo mundo sabe quanto ganha e quase ninguem sabe para onde foi. Enquanto a conta do mes nao fecha, nenhum assunto de investimento adianta.
+
+O episodio e acompanhado de uma pagina com doze telas, e o audio avisa a hora de avancar.
+
+Use este contexto apenas como apoio.

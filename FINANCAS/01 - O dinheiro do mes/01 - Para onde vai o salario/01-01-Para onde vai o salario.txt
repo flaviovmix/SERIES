@@ -1,0 +1,49 @@
+Inicie dizendo: Financas - Para Onde Vai o Salario
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Para Onde Vai o Salario.txt enviado como fonte.
+Esse arquivo contem o roteiro completo, dividido por tela.
+
+Este e o primeiro episodio da serie FINANCAS, que vai do dinheiro do mes ate a bolsa.
+
+FOCO: para onde vai o salario. O que sai antes de cair na conta (INSS e imposto de renda, cobrados por faixa), o que e gasto fixo, o que e gasto variavel, o que e certo mas nao cai todo mes, e o que sobra. E por que a sobra funciona melhor separada na frente do que esperada no fim.
+
+ESTE EPISODIO TEM ANIMACAO: e uma pagina com 12 TELAS. O audio TEM que pedir "aperte o Proximo" exatamente 11 vezes, uma no fim de cada tela, na ordem, do jeito que o roteiro marca. NAO juntar duas telas num bloco so e NAO seguir sem pedir.
+
+NAO FALAR DE INVESTIMENTO: nada de acao, bolsa, corretora, renda fixa, produto ou rendimento. Bolsa so na abertura, numa frase, pra dizer aonde a serie chega.
+
+E EDUCACAO, NUNCA RECOMENDACAO: nao dizer o que comprar, onde investir, que banco usar nem quanto rende. Sem promessa de resultado.
+
+TODA CIFRA COM DATA E FONTE dita em voz alta, e os anos por extenso e devagar. Numero sem data nao entra.
+
+CUIDADOS QUE NAO PODEM ESCAPAR:
+- O desconto que zera o imposto de renda ate cinco mil reais e um desconto no imposto, valendo desde janeiro de dois mil e vinte e seis. NAO dizer que a tabela ficou isenta ate cinco mil.
+- NAO dizer quantos meses de reserva alguem deve ter.
+- A divisao do dinheiro em tres partes e proposta de um livro americano de dois mil e cinco (Elizabeth Warren e Amelia Warren Tyagi), nao e regra nem norma oficial, e sem cravar percentuais.
+- Os oitenta e dois por cento de familias com divida sao de pesquisa da Confederacao Nacional do Comercio, entidade do comercio, e isso tem que ser dito. Os numeros do Banco Central medem outra coisa e nao se misturam com esse.
+- Os numeros do IBGE sao por familia, nao por pessoa, e da pesquisa de dois mil e dezessete a dois mil e dezoito.
+- A conta do INSS e do imposto vale pra quem tem carteira assinada, e isso e dito na tela 2.
+
+TOM: sem sermao, sem culpa e sem tom de coach. A tela 7 diz em voz alta que a diferenca entre quem sobra e quem nao sobra e, em boa parte, tamanho de renda.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO PRA ENTREGAR: nada de modulo, tarefa, prazo ou tabela pra preencher.
+
+SEM CHAMADA DE EXTRA: este episodio nao chama nenhum episodio extra. NAO inventar chamada de extra em lugar nenhum.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario, genial, genialidade.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "e ai que mora o perigo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Para Onde Vai o Salario.txt (o cofrinho e a fita de um metro). NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.
