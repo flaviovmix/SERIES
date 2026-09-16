@@ -22,19 +22,23 @@ Este e o {N}o episodio da etapa {NOME DA ETAPA}, a {N}a etapa da serie Como Rein
 
 ESTE EPISODIO COBRE DE {ANO} A {ANO}. Dizer esse intervalo em voz alta logo na abertura, e no encerramento dizer em que ano o episodio parou, pro proximo pegar dali.
 
-ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com {N} telas (animacao.html) que o ouvinte avanca apertando o botao Proximo. O {N} vem da contagem do _planta.md deste episodio. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com {N} telas (animacao.html) que VIRA SOZINHA enquanto o audio toca, e que leva o audio junto quando alguem pula a tela na mao. O ouvinte nao precisa apertar nada. O {N} vem da contagem do _planta.md deste episodio. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
 
 - No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
 - Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O aviso e UMA FALA SO, de
-  UM apresentador, em no maximo duas frases e uns quinze segundos: diz quantas telas sao,
-  que quem esta so ouvindo nao perde nada, e segue. O OUTRO APRESENTADOR NAO COMENTA, nao
-  concorda, nao completa e nao faz pergunta sobre isso: aviso com replica vira conversa, e
-  conversa vira meio minuto de nada. NAO explicar o que e um botao, NAO ensinar a usar a
-  pagina e NAO dizer a frase do pedido como exemplo.
-  Por que pode ser tao curto: a pagina e o audio andam juntos nos dois sentidos. O audio
-  vira a tela sozinho enquanto toca, e virar a tela na mao leva o audio junto, como trocar
-  de capitulo. Ninguem precisa fazer nada, entao nao ha nada pra ensinar. O pedido "aperte
-  o Proximo" no fim de cada tela CONTINUA existindo: e ele que marca onde a tela vira.
+  UM apresentador, em DUAS FRASES no maximo, e diz so tres coisas (16/09/2026, pedido dele):
+  que o audio acompanha a pagina, que a pagina VIRA SOZINHA, e que pular a tela na mao
+  leva o audio junto. Depois segue o assunto.
+  NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina,
+  NAO dizer a frase do pedido como exemplo e NAO chamar a animacao de legal, bacana ou
+  interativa. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz
+  pergunta sobre isso: aviso com replica vira conversa, e conversa vira meio minuto de nada.
+  Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se
+  voce pular uma tela, o audio pula junto." Duas frases, um apresentador, e acabou.
+  Por que pode ser tao curto: ninguem precisa fazer nada, entao nao ha nada pra ensinar.
+  ⚠️ O pedido "aperte o Proximo" no fim de cada tela CONTINUA existindo, e nao e instrucao
+  pro ouvinte: e o marcador que o mapa-de-telas.py usa pra cortar o audio em telas. Tirar
+  o pedido quebra o corte e os marcadores do episodio.js.
 - Nas telas interativas ({numeros}), avisar que tem um botao na tela pra acompanhar enquanto ouve.
 - Na tela de PRATICA ({numero}), convidar o ouvinte a pausar o audio, resolver na tela e voltar quando terminar.
 - Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
