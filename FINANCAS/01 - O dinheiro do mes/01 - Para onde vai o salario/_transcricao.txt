@@ -1,0 +1,308 @@
+# Transcricao automatica (faster-whisper small) - 15.4 min
+# Fonte: Não lidos.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Finanças para onde vai o salário? É com muito mais muito entusiasmo mesmo que a gente abre hoje
+[00:07] o primeiro passo da nossa nova série, chamada Finanças.
+[00:11] É isso aí, um passo super importante.
+[00:14] Com certeza. O caminho que a gente vai traçar começa hoje do dinheiro do mês e vai até a Bolsa de Valores.
+[00:20] Mas olha, deixando claríssimo logo de cara.
+[00:23] A Bolsa de Valores é o último degrau dessa jornada.
+[00:27] A gente não vai falar de nenhum tipo de investimento neste episódio, tá?
+[00:31] Exato, nada de investimento hoje. A nossa missão aqui é responder aquela pergunta clássica, sabe?
+[00:36] O salário entrou, o mês acabou e um cadê o dinheiro?
+[00:41] Pois é, o grande mistério.
+[00:43] E para quem está acompanhando a gente com a página aberta, o formato de hoje tem uma animação superlegal
+[00:48] com 12 telas interativas.
+[00:49] E como é que vai funcionar essa mecânica da animação?
+[00:52] É bem tranquilo, de forma bem didática.
+[00:55] Todos os números que a gente citava em de fontes oficiais, com datas, direitinho.
+[00:59] E a regra é simples. Quando for a hora de avançar, o áudio vai avisar.
+[01:03] Legal.
+[01:04] Mas há um detalhe importante.
+[01:05] Quem estiver ouvindo sem a tela não tem problema nenhum,
+[01:08] porque o áudio se sustenta sozinho perfeitamente.
+[01:11] Maravilha. Então, para começar a nossa jornada na tela 1, aperte o próximo.
+[01:17] Entrando agora na tela 2. O bruto não é o que cai na conta.
+[01:21] Nossa, esse é aquele choque de realidade clássico, né?
+[01:24] A pessoa vê lá o anúncio da vaga de emprego com um número super atrativo,
+[01:28] mas tipo, nunca é aquele número que chega na conta do banco.
+[01:31] Nossa, nunca é.
+[01:33] E para detalhar isso, a gente precisa falar do INSS e do imposto de renda.
+[01:37] E o ponto central aqui para entender com muita calma é que a cobrança é feita por faixa.
+[01:42] Como assim por faixa?
+[01:43] Então tipo, pedacinhos do salário.
+[01:46] A maior alíquota não é aplicada em cima do valor inteiro de uma vez só.
+[01:50] Ah, entendi.
+[01:51] Olha só os dados da tabela do INSS de 2026.
+[01:54] São 7,5% cobrados até a faixa de R$ 1.621.
+[01:59] Certo.
+[02:00] Aí cobra-se 9% só no pedaço seguinte.
+[02:03] Depois 12% no próximo pedaço.
+[02:07] E por fim, 14% no último pedaço que vai até o teto de R$ 8.475,55.
+[02:15] Mas pera aí, a gente precisa fazer uma alerta de realidade aqui, né?
+[02:18] Com certeza.
+[02:19] Essa regra toda vale só para quem tem carteira assinada.
+[02:22] Pois é.
+[02:23] E se a gente pegar o dado do IBGE do segundo trimestre de 2026, 37,4% de quem trabalha
+[02:29] no Brasil estava na informalidade.
+[02:32] Então, a régua é outra.
+[02:33] Mas para continuar vendo como a conta oficial funciona, aperte o próximo.
+[02:37] Chegamos na tela 3, a régua do bruto ao líquido.
+[02:42] Para quem está acompanhando a tela, tem um controle interativo aí.
+[02:45] A gente vai usar um salário de R$ 3.000 como nosso exemplo base hoje, tá?
+[02:49] Isso.
+[02:50] E na animação dá para ver os pedaços se enchendo.
+[02:52] O primeiro pedaço, como eu disse, paga 7,5%.
+[02:55] Aí o segundo pedaço vai enchendo até R$ 2.902,84 pagando 9%.
+[03:03] E bom, sobra só um pedacinho de menos de R$ 100 pagando os 12%.
+[03:08] É bem visual mesmo.
+[03:10] Mas e o imposto de renda?
+[03:11] Porque tem que ter uma tensão redobrada aí, né?
+[03:13] Muita tensão.
+[03:15] A tabela de R$ 2.026 cobra acima de R$ 2.428,80.
+[03:21] Mas, e aqui precisa de uma precisão cirúrgica.
+[03:25] Desde janeiro de R$ 2.026, existe um desconto no imposto que foi criado por uma lei de R$ 2.025.
+[03:32] Esse desconto zerra a conta para quem ganha até R$ 5.000.
+[03:36] Olha só, só para frisar bem isso.
+[03:38] A tabela em si não mudou a isenção.
+[03:40] O que rolou foi um desconto aplicado que gera esse efeito prático lá na folha.
+[03:44] Exatamente.
+[03:45] Beleza.
+[03:46] E bom, tirando tudo isso, o que chega é o líquido.
+[03:50] E daqui para frente, o nosso papo é só sobre esse dinheiro líquido.
+[03:54] Então, aperte o próximo.
+[03:56] Tela 4, as 4 caixas do mês.
+[03:59] Para usar o vocabulario oficial, a gente pegou os termos do caderno de educação financeira
+[04:04] do Banco Central do Brasil, a versão de 2026.
+[04:07] Isso.
+[04:08] E o caderno lista 4 caixas principais.
+[04:11] A receita fixa que muda pouco, tipo o próprio salário.
+[04:15] A receita variável, que é aquela comissão ou um bico.
+[04:18] Certo.
+[04:19] E do lado das reídas, tem a despesa fixa como um aluguel ou prestação.
+[04:23] E a despesa variável, que é a conta de luz, água ou mercado.
+[04:27] Agora, me tira uma dúvida.
+[04:29] De todos esses, qual é o gasto que, assim, mais bagunça o mês da galera?
+[04:35] Ah, é o quinto elemento dessa história, o compromisso sazonal.
+[04:39] O IPVA, né?
+[04:40] IPVA, matrícula escolar e PTU.
+[04:42] E o pior é que não é surpresa, sabe?
+[04:44] É só esquecimento mesmo.
+[04:45] Nossa, totalmente.
+[04:46] O ano vira e a conta chega.
+[04:48] E o Banco Central reforça muito aquela conta básica.
+[04:51] Receitas menos despesas é igual a poupança.
+[04:54] É uma temática fria.
+[04:56] Para visualizar isso melhor, aperte o próximo.
+[04:59] Chegamos na tela 5, a barra do mês.
+[05:01] Essa tela interativa é muito boa.
+[05:04] A gente pode pensar numa fita tipo daquelas de costura, sabe?
+[05:08] Só que é uma fita de tamanho fixo, que não estica de jeito nenhum.
+[05:12] O salário total é essa fita.
+[05:14] E cada gasto vai marcando um pedaço nela.
+[05:17] É a analogia perfeita.
+[05:18] A lógica é imparacável.
+[05:20] Se a pessoa arrasta uma fatia para ficar maior, digamos, gastando mais com muradia,
+[05:25] essa fatia empurra todo o resto.
+[05:27] Lógico. A fita não estica.
+[05:29] Exato.
+[05:30] E aí a sobra, lá no fim da fita, encolhe até sumir.
+[05:34] E o detalhe, a sobra é a única fatia que ninguém escolheu ativamente.
+[05:39] Ela é só o que restou.
+[05:41] É o espaço que foi esmagado, né?
+[05:42] Só lembrando, quem está na tela, esses números que aparecem aí são todos inventados
+[05:47] e redondos só para ilustrar o conceito.
+[05:49] Mas para ver a realidade de verdade, aperte o próximo.
+[05:52] Tela 6, para onde vai de verdade?
+[05:55] Se a gente perguntar por aí, qual é a coisa que as famílias brasileiras mais gastam de fato?
+[05:59] Os dados oficiais surpreendem muita gente.
+[06:03] Segundo a pesquisa de orçamentos familiares do IBGE, de 2017 a 2018,
+[06:09] a habitação é o que mais pesa.
+[06:12] Não é a comida.
+[06:13] Não. A habitação leva 36,6% do consumo familiar.
+[06:19] Nossa.
+[06:19] Depois, o transporte leva 18,1%.
+[06:23] E só aí, no terceiro lugar, vem a alimentação, com 17,5%.
+[06:29] Caramba, isso engana muito a nossa cabeça, sabe?
+[06:32] Porque, tipo, a gente vai na padaria ou no mercado quase todo dia,
+[06:36] vê a comida e o peso toda hora,
+[06:39] mas no moradia sai da conta de uma vez só, no mês,
+[06:43] e acaba assumindo da vista.
+[06:44] Sim, o cérebro prega essa peça.
+[06:46] E só para reforçar os cuidados com esses dados.
+[06:49] Eles são dados por família, tá?
+[06:51] Da pesquisa mais recente que o IBGE publicou
+[06:54] e se referem apenas à fatia de consumo.
+[06:57] Ficou claríssimo.
+[06:59] Para entender a diferença que isso faz na vida de cada um,
+[07:02] aperte o próximo.
+[07:03] Tela 7. A diferença está na sobra.
+[07:05] E a gente continuou com os dados daquela mesma pesquisa do IBGE de 2017 a 2018.
+[07:11] E o que rola quando a gente cruza isso com a renda?
+[07:14] O contraste é gigante.
+[07:16] Nas famílias de menor renda, 92,6% dos gastos vão inteirinhos para o consumo básico.
+[07:24] Praticamente tudo.
+[07:25] Tudo.
+[07:26] Já nas famílias de maior renda, esse percentual cai para 66,3%.
+[07:31] E a fatia que sobra...
+[07:33] A fatia que vira patrimônio, tipo Bens e aplicações, é de só 1,4% nas famílias de menor renda.
+[07:41] Enquanto nas de maior renda, salta para 9,6%.
+[07:45] Olha, esse é o momento de falar uma coisa bem séria, em voz alta e sem julgamento nenhum.
+[07:50] Essa diferença toda é principalmente tamanho de renda.
+[07:54] Exatamente.
+[07:55] Não é uma questão de ter mais disciplina, de caráter ou de esforço, sabe?
+[08:00] A comida e a moradia têm um tamanho mínimo.
+[08:03] Então pela lógica da fita, isso pesa muito mais para quem ganha menos.
+[08:06] Com certeza.
+[08:07] A nossa série não está aqui para julgar ninguém.
+[08:10] Essas propostas e análises valem para quem tem qualquer sobra, seja ela qual for o tamanho.
+[08:15] Perfeito.
+[08:16] Vamos seguir então?
+[08:17] Aperte o próximo.
+[08:18] Tela 8, o ano que não fecha.
+[08:20] Aqui a gente tem uma visão anual na tela interativa, mostrando os 12 meses um do
+[08:25] lado do outro.
+[08:26] E olha, o salário parece igualzinho todo mês.
+[08:29] A sobra parece igual.
+[08:31] Até que...
+[08:32] Até que chegam aqueles compromissos sazonais.
+[08:35] O IPVA, o material escolar, seguro, eles caem de uma vez só em um mês específico e simplesmente
+[08:42] engolem a sobra de meses inteiros.
+[08:44] É um desespero, mas tem uma solução lógica para isso, né?
+[08:48] Tem sim.
+[08:49] Quem está na tela pode apertar o botão que divide esses gastos grandes por 12.
+[08:53] A ideia é ir guardando um pouquinho todo mês.
+[08:56] Ah, entendi.
+[08:57] Veja, o valor total do gasto não muda, não fica mais barato, mas é que ele susto no assamento
+[09:03] desaparece.
+[09:05] O que a gente está mudando é o quando se paga.
+[09:07] Tira a pressão de um mês só, genial.
+[09:10] Quer dizer, muito eficiente.
+[09:11] Bom, para avançar, aperte o próximo.
+[09:13] Tela 9, quando a sobra já foi gasta antes de chegar.
+[09:17] É, chegou a hora de falar das compras parceladas, o peso da parcela na vida.
+[09:22] Pois é.
+[09:23] Em termos técnicos, a parcela é basicamente um gasto fixo do futuro, que já chega
+[09:27] no mês comprometendo a renda antes mesmo do dinheiro entrar.
+[09:30] E os números sobre isso são bem preocupantes, né?
+[09:32] Muito.
+[09:33] E a gente precisa de atenção redobrada aqui para não misturar as pesquisas, tá?
+[09:37] Tá, manda lá.
+[09:38] Pelo Banco Central, num dado de junho de 2026, 28,8,5% da renta das famílias vai só
+[09:47] para pagar a dívida com bancos.
+[09:49] E a dívida total equivale a quase metade da renda de um ano inteirinho.
+[09:54] Quase metade de um ano.
+[09:55] Nossa.
+[09:56] E tem outra pesquisa também, né?
+[09:58] Da Confederação Nacional do Comércio, que é uma entidade do Comércio e não do Governo,
+[10:02] com dados de agosto de 2026.
+[10:05] Eles mostram que 82% das famílias têm alguma dívida a vencer.
+[10:10] E quase 30% estão em atraso.
+[10:13] Isso.
+[10:14] E é fundamental não somar essas duas pesquisas.
+[10:16] Elas mostram ângulos diferentes.
+[10:19] Uma médio, tamanho da renda que está comprometida lá no banco e a outra conta quantas
+[10:24] famílias estão com contas a pagar no comércio.
+[10:27] É a radiografia da pressão.
+[10:29] Sem dar sermão, vale muito a pena citar um documentário curto brasileiro sobre isso
+[10:34] do Idec, chamado No Caminho do Super Individamento.
+[10:38] A gente só faz a ressalva de que é um filme de campanha, sabe?
+[10:42] Tem uma tese pronta e não tem a voz dos bancos ali.
+[10:45] Mas a mensagem central é muito boa, porque mostra que dívida é uma matemática
+[10:49] que já foi feita, não é uma falha de caráter.
+[10:52] Exato.
+[10:53] Forçamento tentando lidar com o passado.
+[10:55] Para entender como se proteger, aperte o próximo.
+[10:58] Chegamos na tela 10.
+[11:00] Por que a sobra vem antes?
+[11:02] Olha, a grande regra de ouro.
+[11:04] Por que deixar para poupar só o que sobra lá no fim do mês quase nunca dá certo?
+[11:09] A resposta está no caderno de educação financeira do Banco Central.
+[11:13] Eles chamam isso de regra do pague-se primeiro.
+[11:16] Pague-se primeiro.
+[11:17] Isso.
+[11:18] A ideia é gastar menos do que se recebe, óbvio.
+[11:22] Mas principalmente separar a parte de poupar logo no momento que o dinheiro entra na conta.
+[11:28] Não esperar o dia 30.
+[11:29] Ah, e a gente pode usar a analogia do cofrinho do mês para isso.
+[11:33] Exato.
+[11:34] Mas deixando bem claro, esse cofrinho não é um produto bancário, tá?
+[11:38] Não é um investimento.
+[11:39] Ele é só a representação da sobra ganhando um lugar próprio no comecinho do mês.
+[11:44] Fica seguro ele.
+[11:45] Isso.
+[11:46] Aí o mês passa a se organizar em volta só daquele dinheiro que restou na conta
+[11:50] corrente principal.
+[11:51] A gente inverte a lógica da pressão.
+[11:53] E sobre essa mudança de comportamento, tem um documentário americano muito bom citado
+[11:58] em uma frase aqui, chamado Arte de economizar.
+[12:01] Qual é a salva de sempre, né?
+[12:03] Reflete a realidade, os valores e os produtos financeiros lá dos Estados Unidos.
+[12:08] Inclusive com gente vendendo os próprios métodos no meio.
+[12:11] Mas a ideia de tirar da frente funciona.
+[12:14] Para colocar mão na massa, aperte o próximo.
+[12:17] Tela 11.
+[12:18] Prática, monte seu mês.
+[12:20] É um convite muito legal.
+[12:22] Quem está acompanhando a gente com a tela pode pausar o áudio agora para montar o orçamento
+[12:26] de dois jeitos diferentes lá na animação.
+[12:29] É, um jeito com a sobra no fim disputando espaço e o outro com a sobra separada lá na frente.
+[12:34] E dá para ver certinhos dois meses mudando de figura.
+[12:38] E enquanto a pessoa pausa e faz o teste lá, a gente traz algumas referências interessantes
+[12:42] por aqui.
+[12:43] Sim, tem um livro americano famoso de 2005 da Elizabeth Warren e da Amelia Warren
+[12:48] Tayag.
+[12:49] Elas propuseram dividir o dinheiro em três partes.
+[12:52] Três partes, como é que é?
+[12:53] O que se tem que pagar, o que se quer gastar e o que se guarda.
+[12:57] Mas, ó, alerta aqui, isso é só uma proposta que está num livro.
+[13:02] Os percentuais exatos que rolam por aí na internet não são regra oficial do governo
+[13:06] nem nada.
+[13:07] Com certeza não.
+[13:08] E falando em regras e planejamento, tem uma pesquisa muito reveladora do Datafolha.
+[13:13] O que ela diz?
+[13:14] Foi feito em julho de 2020 e publicada em 2026 para planejadores financeiros.
+[13:20] Eles mediram que numa escala de 0 a 100, o brasileiro até que tira uma nota boa para organizar a
+[13:25] conta do mês.
+[13:26] 70,1.
+[13:27] Pô, 70 está passando de ano.
+[13:29] Está passando.
+[13:30] Mas a nota trava na hora de ter reserva para imprevistos.
+[13:32] Aí a nota cai lá para 39,13.
+[13:35] A pessoa sabe o que gasta, mas não tem margem se algo derrada.
+[13:39] Bom, se alguém pausou para fazer a prática, a gente convida a voltar agora.
+[13:44] Que estamos chegando no finalzinho.
+[13:45] Aperte o próximo.
+[13:47] E chegamos na tela 12.
+[13:49] É o nosso encerramento.
+[13:51] Para fazer uma recapitulação bem rápida de tudo o que a gente viu.
+[13:54] Bora lá.
+[13:55] Do Bruto saiu o INSS e o imposto tudo cobrado por faixa.
+[13:59] Aí o níquido que chega se divide em gastos fixos, variáveis e naqueles sazonais que
+[14:04] pegam a gente de surpresa.
+[14:06] E a habitação acaba ganhando da comida no peso do mês.
+[14:10] Assim, e a gente viu que a diferença de quem tem sobra e de quem não tem é ditada pelo
+[14:15] tamanho da renda.
+[14:16] Mas independente disso, o ideal é que a sobra, se existir, seja tirada sempre na frente.
+[14:22] E tudo isso que a gente discutiu hoje, todas essas caixas, a gente consegue observar
+[14:27] na vida real.
+[14:28] Está lá no Contrachec, na fatura do cartão de crédito, no extrato do banco e no
+[14:33] nosso informe de rendimentos anual.
+[14:35] É só dar uma olhada com calma.
+[14:37] É, os dados estão todos lá.
+[14:39] Mas fica uma questão final para o nosso próximo encontro, viu?
+[14:42] Qual é o gancho, então?
+[14:43] A sobra parada não cresce.
+[14:46] Existe um motor matemático no mercado que faz tanto a dívida do cartão de crédito
+[14:50] crescer sozinha, que é ao lado ruim.
+[14:53] Nossa, o lado péssimo.
+[14:55] Quanto faz o dinheiro guardado também crescer com o tempo, que é ao lado bom.
+[14:59] Muito bem.
+[15:00] E o próximo episódio da nossa série vai focar exatamente nesse motor.
+[15:05] A gente vai encerrar essa visão parada, estática, do dinheiro no mês, e vai ligar as engrenagens.
+[15:11] Isso aí.
+[15:12] Bom, a gente se despede lembrando que embaixo da tela tem os links para os dois documentários
+[15:17] que a gente citou hoje.
+[15:19] A nossa série continua no próximo degrau.
+[15:22] Até lá.

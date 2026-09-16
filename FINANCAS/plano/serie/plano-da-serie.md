@@ -1,8 +1,8 @@
 # Série: Finanças
 
-**Estado (15/09/2026):** plano em rascunho. Nada gravado; no site, só o card da home (à tarde, a pedido dele: "adiciona pra testar", série 07 `Finanças`, "Em preparação", com capa; sem commit e sem deploy).
-- Da pasta `SEIRES/FINANCAS/` só existe `plano/serie/` (este plano e o `_pesquisa-inicial.md`). As pastas de etapa esperam a P18.
-- Nenhum trio, nenhuma planta, nenhuma página. O card e a entrada no `menu.js` entraram antes da P1 e da P2 (15/09, pra ele ver na home): nome `Finanças`, última posição (07), ícone emprestado do ábaco. O nome fechou na D3; a P2 continua aberta.
+**Estado (16/09/2026):** o `1.01` está gravado e o plano inteiro foi commitado na `main` (`67fa3eb`). No site, só o card da home (15/09, a pedido dele: "adiciona pra testar", série 07 `Finanças`, "Em preparação", com capa), que subiu **desligado** no deploy de 16/09.
+- A pasta `SEIRES/FINANCAS/` tem `plano/serie/` (este plano e o `_pesquisa-inicial.md`), `_arquivos/capa-serie/` e a primeira pasta de etapa, `01 - O dinheiro do mes/`, criada sem acento (P18 continua aberta pro resto).
+- O `1.01` tem pesquisa, planta, trio e áudio; os outros 24 episódios não têm nada, e nenhuma página existe. O card e a entrada no `menu.js` entraram antes da P1 e da P2 (15/09, pra ele ver na home): nome `Finanças`, última posição (07), ícone emprestado do ábaco. O nome fechou na D3; a P2 continua aberta.
 - Das decisões deste plano, só D1 e D2 são dele. O resto é proposta e está em Pendências, cada uma com a recomendação.
 - Revisado em 15/09/2026 com duas leituras críticas (fatos, compliance e indícios): nome da empresa inventada trocado, regras de imposto e de CVM corrigidas, casos históricos com a fonte certa.
 
@@ -59,7 +59,7 @@ Uma pergunta única atravessa tudo: **como a sobra do mês vira reserva, rendime
 
 | # | Etapa | O que o cofrinho ganha | Eps | Status |
 |---|---|---|---|---|
-| 1 | **O dinheiro do mês** | nasce como sobra e vira reserva de emergência | 4 | 🔴 |
+| 1 | **O dinheiro do mês** | nasce como sobra e vira reserva de emergência | 4 | 🟠 |
 | 2 | **Emprestar o dinheiro** | a reserva passa a render, medida em reais de hoje | 3 | 🔴 |
 | 3 | **Virar sócio** | vira ações da Companhia Exemplo, e descobre quem está do outro lado da ordem | 5 | 🔴 |
 | 4 | **O leão e o pedágio** | ganha um livro-caixa: preço médio, vendas do mês e imposto | 3 | 🔴 |
@@ -77,7 +77,7 @@ Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
 
 | Pasta | Episódio | O que cobre | Status |
 |---|---|---|---|
-| `01` | **Para onde vai o salário** | entrada, gasto fixo, gasto variável e sobra. Por que a sobra vem antes de qualquer investimento. Tela: a barra do mês com fatias arrastáveis (aluguel, mercado, lazer), e a sobra cresce ou some conforme o arrasto | 🔴 |
+| `01` | **Para onde vai o salário** | entrada, gasto fixo, gasto variável e sobra. Por que a sobra vem antes de qualquer investimento. Tela: a barra do mês com fatias arrastáveis (aluguel, mercado, lazer), e a sobra cresce ou some conforme o arrasto | 🟠 **16/09: pesquisa, planta de 12 telas, trio e áudio v1 prontos.** Pesquisa em fonte primária (8 dos 9 itens); filmes da etapa levantados por busca com a ressalva de cada um; trio **reprovado pelo verificador na primeira volta** e corrigido em 16 pontos (a conta do INSS pulava a faixa de 12%, os 92,6% estavam sobre a base errada, 28,85% virou 28,8 e a chamada de extra abria o assunto). Áudio **"Para onde vai seu salário de verdade", 15:23**, no notebook `81cda56f`. **Mapa de telas conferido: 12 telas e 11 pedidos, batendo com a planta**, e a frase de precisão do imposto saiu inteira ("a tabela em si não mudou a isenção"). Ressalvas confirmadas no áudio com o modelo maior, pra ele ouvir: o Datafolha saiu como **"julho de 2020"** quando o campo foi em julho de 2025 (12:58); **"PTU"** em vez de IPTU (04:39); "é uma temática fria" onde seria matemática fria (04:50); e um **"genial"**, palavra proibida, na tela 8, com autocorreção na frase seguinte. Falsos alarmes do modelo pequeno, já descartados: "R$ 2.026", "39,13" (o áudio diz 39,3), "Super Individamento" e "Contrachec". **Falta:** ele ouvir e a página |
 | `02` | **Juros sobre juros** | juros simples e compostos. O mesmo motor na dívida do cartão e no dinheiro aplicado, com taxas inventadas. O tempo é a variável que mais pesa. Chama o extra *Juros sobre juros tem história*. Tela: controles de taxa e de anos desenhando a curva da dívida e a da aplicação, e um botão que troca simples por composto | 🔴 |
 | `03` | **O preço que anda sozinho** | inflação e poder de compra. O IPCA como índice oficial (IBGE, divulgado desde 01/1980) e o sistema de metas (Decreto 3.088/1999, substituído pela meta contínua do Decreto 12.079/2024 a partir de 01/01/2025, com o texto a conferir no Planalto). Chama o extra *Quem mede a inflação*. Tela: um carrinho de compras que encolhe conforme o controle de anos avança | 🔴 |
 | `04` | **A reserva antes de tudo** | reserva de emergência e liquidez (a palavra volta na etapa 6). Por que dinheiro que pode fazer falta amanhã não vai pra bolsa. Tela: meses de gasto guardados contra os imprevistos de um exemplo fixo (botão de sortear outros, com "voltar ao exemplo"), e um botão mostrando a reserva aplicada em ações num mês de queda | 🔴 |

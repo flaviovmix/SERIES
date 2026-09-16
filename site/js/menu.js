@@ -222,7 +222,26 @@
     { num: '04', nome: 'Levando o Homem à Lua' },
     { num: '05', nome: 'Montando o Corpo Humano' },
     { num: '06', nome: 'A Evolução das Espécies' },
-    { num: '07', nome: 'Finanças' }
+    {
+      num: '07',
+      nome: 'Finanças',
+      href: 'financas.html',
+      etapas: [
+        { num: '01', nome: 'O dinheiro do mês', href: 'etapas/financas-01.html',
+          episodios: [
+            { num: '01', nome: 'Para onde vai o salário',
+              href: '../FINANCAS/01 - O dinheiro do mes/01 - Para onde vai o salario/animacao.html' },
+            { num: '02', nome: 'Juros sobre juros' },
+            { num: '03', nome: 'O preço que anda sozinho' },
+            { num: '04', nome: 'A reserva antes de tudo' }
+          ] },
+        { num: '02', nome: 'Emprestar o dinheiro' },
+        { num: '03', nome: 'Virar sócio' },
+        { num: '04', nome: 'O leão e o pedágio' },
+        { num: '05', nome: 'A régua da média' },
+        { num: '06', nome: 'Trocar entre parecidos' }
+      ]
+    }
   ];
 
   /* No node (o gera-cards.js, que monta os cards do site a partir desta arvore) o

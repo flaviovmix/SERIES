@@ -799,6 +799,88 @@ module.exports = {
     },
   },
 
+  /* ---------- Financas: as 6 etapas e os episodios da etapa 01 ---------- */
+
+  /* As etapas ainda nao tem arte (P17 do plano da serie), entao os cards saem sem
+     imagem. A serie esta desligada no series.json ate o dono ligar no painel. */
+  'financas/etapas': {
+    pagina: 'financas.html',
+    tipo: 'etapas',
+    serie: '07',
+    grade: 'grade',
+    cards: {
+      '01': {
+        periodo: `a sobra nasce`,
+        frase: `Para onde vai o salário.`,
+        resumo: `O que sai antes de cair na conta, cobrado por faixa. O gasto fixo, o variável e o que é certo e não cai todo mês. Para onde as famílias brasileiras gastam de verdade, pelo IBGE. E por que a sobra funciona melhor separada na frente do que esperada no fim.`,
+      },
+      '02': {
+        periodo: `a reserva rende`,
+        frase: `Emprestar o dinheiro, e quanto rendeu de verdade.`,
+        resumo: `A taxa que puxa as outras, emprestar pro governo e pro banco, e a conta que importa: quanto sobrou depois do imposto, do custo e da inflação.`,
+        contagem: `3 episódios`,
+      },
+      '03': {
+        periodo: `virar sócio`,
+        frase: `Uma ação é um pedaço de empresa.`,
+        resumo: `Ordinária e preferencial, o livro de ofertas, quem está do outro lado da ordem, o preço que dá um degrau quando cai dividendo, e o sobe e desce que vem junto.`,
+        contagem: `5 episódios`,
+      },
+      '04': {
+        periodo: `o que o Estado leva`,
+        frase: `Toda venda passa pela conta do mês.`,
+        resumo: `Preço médio, o limite de isenção que é sobre o quanto se vendeu e não sobre o lucro, e o imposto que o próprio investidor apura e paga.`,
+        contagem: `3 episódios`,
+      },
+      '05': {
+        periodo: `medir o normal`,
+        frase: `Perto ou longe da média, e quanto.`,
+        resumo: `Média, desvio padrão e as bandas: a régua que diz se um número está no lugar de sempre. E por que andar junto não é a mesma coisa que voltar junto.`,
+        contagem: `4 episódios`,
+      },
+      '06': {
+        periodo: `trocar entre parecidos`,
+        frase: `Dois papéis quase iguais, e a conta honesta.`,
+        resumo: `A troca entre duas classes da mesma empresa: a conta da ida e volta, onde o ganho some em tarifa e imposto, o passado que sempre parece fácil, e o par que não volta.`,
+        contagem: `6 episódios`,
+      },
+    },
+  },
+
+  'financas-01/episodios': {
+    pagina: 'etapas/financas-01.html',
+    tipo: 'episodios',
+    serie: '07',
+    etapa: '01',
+    grade: 'grade grade--dupla',
+    cards: {
+      '01': {
+        periodo: `o mês inteiro`,
+        frase: `O salário entrou, o mês acabou, e cadê o dinheiro.`,
+        resumo: `O bruto não é o que cai na conta, e a cobrança é por faixa. O vocabulário do orçamento pelo Banco Central, incluindo o gasto que é certo e não cai todo mês. Para onde as famílias gastam de verdade, pelo IBGE: moradia na frente, comida em terceiro. E por que a sobra vem antes, e não no que restar.`,
+        contagem: `15 min &middot; 12 telas`,
+      },
+      '02': {
+        periodo: `o motor do tempo`,
+        frase: `O mesmo motor na dívida e na aplicação.`,
+        resumo: `Juros simples e compostos, e por que o tempo é a variável que mais pesa dos dois lados.`,
+        contagem: `em produção`,
+      },
+      '03': {
+        periodo: `o preço que anda`,
+        frase: `O dinheiro parado encolhe.`,
+        resumo: `Inflação e poder de compra: o índice oficial, quem calcula e o que isso faz com a reserva.`,
+        contagem: `em produção`,
+      },
+      '04': {
+        periodo: `antes de investir`,
+        frase: `A reserva vem antes de qualquer aplicação.`,
+        resumo: `Por que dinheiro que pode fazer falta amanhã não vai pra bolsa, e o que é liquidez na prática.`,
+        contagem: `em produção`,
+      },
+    },
+  },
+
   /* ---------- A home: uma card deitado por serie ---------- */
 
   /* A foto leva pra serie e nao amplia (decisao 9), entao aqui nao ha credito. O rotulo

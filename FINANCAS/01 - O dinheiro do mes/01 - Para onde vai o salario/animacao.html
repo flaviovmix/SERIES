@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para onde vai o salário — Finanças 1.01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 1.01 da serie FINANCAS. Nasceu do _molde-animacao.html.
+     As 12 telas seguem o _telas.md, que saiu do audio: o audio manda, a pagina serve.
+     O que e deste episodio mora em salario.css e salario.js, carregados por ultimo. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="salario.css">
+</head>
+<body>
+
+<header class="topo"></header>
+
+<main>
+
+  <!-- 1 (00:00) capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">finanças · episódio 1.01</div>
+      <h1 class="reveal">Para onde vai o salário</h1>
+      <p class="lede reveal">O salário entrou, o mês acabou, e cadê o dinheiro. Este episódio separa o que sai antes de cair na conta, o que é fixo, o que varia, o que é certo e não cai todo mês, e o que sobra. Quando o áudio pedir, aperte <b>Próximo</b>.</p>
+      <div class="capa-como reveal">
+        <p><b>A série vai do dinheiro do mês até a bolsa</b>, e a bolsa é o último degrau. Aqui não se fala de investimento. Todo número vem de fonte oficial, com a data dita em voz alta.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="../../../site/img/serie-financas.webp" alt="Um porquinho de moedas ao lado de uma tela com gráficos, numa mesa clara">
+      <figcaption>A série Finanças, do cofrinho à bolsa · ilustração</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 (01:11) o bruto nao e o que cai na conta -->
+  <section class="step">
+    <div class="kicker reveal">tabela do INSS de 2026</div>
+    <h2 class="reveal">O bruto não é o que cai na conta</h2>
+    <p class="lede reveal">A alíquota é cobrada <b>por faixa</b>: o salário é cortado em pedaços, e cada pedaço paga a alíquota dele. Não é a maior alíquota sobre o valor inteiro.</p>
+    <div class="sal-tabela reveal">
+      <div class="sal-linha sal-linha--cabeca"><span>pedaço do salário</span><span>alíquota</span></div>
+      <div class="sal-linha"><span>até R$ 1.621,00</span><span class="sal-pct">7,5%</span></div>
+      <div class="sal-linha"><span>de R$ 1.621,01 a R$ 2.902,84</span><span class="sal-pct">9%</span></div>
+      <div class="sal-linha"><span>de R$ 2.902,85 a R$ 4.354,27</span><span class="sal-pct">12%</span></div>
+      <div class="sal-linha"><span>de R$ 4.354,28 a R$ 8.475,55</span><span class="sal-pct">14%</span></div>
+    </div>
+    <p class="sal-aviso reveal"><b>Vale para quem tem carteira assinada.</b> Quem trabalha por conta própria, quem é MEI e quem está na informalidade tem outra conta, e não é pouca gente: 37,4% de quem trabalha no Brasil estava na informalidade, segundo o IBGE, no segundo trimestre de 2026.</p>
+  </section>
+
+  <!-- 3 (02:33) a regua do bruto ao liquido, interativa -->
+  <section class="step">
+    <div class="kicker reveal">mexa enquanto ouve</div>
+    <h2 class="reveal">A régua do bruto ao líquido</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legRegua">Arraste o salário e veja as faixas do INSS se enchendo uma a uma.</div>
+      <div class="painel__miolo" id="mioloRegua"></div>
+      <div class="painel__total">
+        <span class="num" id="totalRegua">R$ 0</span>
+        <span class="meta" id="metaRegua">o que chega na conta</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="reguaExemplo">voltar ao exemplo</button>
+      </div>
+    </div>
+    <p class="sal-aviso reveal"><b>O imposto de renda, com precisão.</b> A tabela de 2026 começa a cobrar acima de R$ 2.428,80. Desde janeiro de 2026 existe um <b>desconto no imposto</b>, criado por uma lei de 2025, que zera a conta de quem ganha até R$ 5.000,00 por mês. A faixa de isenção da tabela não mudou: o que existe é o desconto.</p>
+  </section>
+
+  <!-- 4 (03:54) as caixas do mes -->
+  <section class="step">
+    <div class="kicker reveal">o vocabulário do Banco Central</div>
+    <h2 class="reveal">As caixas do mês</h2>
+    <p class="lede reveal">Os nomes vêm do Caderno de Educação Financeira do Banco Central, na versão de 2026. Não é invenção da série.</p>
+    <div class="sal-caixas reveal">
+      <div class="sal-caixa"><div class="sal-caixa__nome">receita fixa</div><div class="sal-caixa__ex">o salário, que muda pouco</div></div>
+      <div class="sal-caixa"><div class="sal-caixa__nome">receita variável</div><div class="sal-caixa__ex">comissão, bico, hora extra</div></div>
+      <div class="sal-caixa"><div class="sal-caixa__nome">despesa fixa</div><div class="sal-caixa__ex">aluguel, prestação</div></div>
+      <div class="sal-caixa"><div class="sal-caixa__nome">despesa variável</div><div class="sal-caixa__ex">luz, água, mercado</div></div>
+      <div class="sal-caixa sal-caixa--quinta"><div class="sal-caixa__nome">o quinto, o sazonal</div><div class="sal-caixa__ex">IPVA, matrícula, seguro: certo, e não cai todo mês</div></div>
+    </div>
+    <div class="sal-formula reveal">receitas <span>menos</span> despesas <span>é igual a</span> poupança</div>
+  </section>
+
+  <!-- 5 (04:56) a barra do mes, interativa -->
+  <section class="step">
+    <div class="kicker reveal">mexa enquanto ouve</div>
+    <h2 class="reveal">A barra do mês</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legBarra">A barra é uma fita de tamanho fixo. Arraste uma fatia e veja o que acontece com a sobra.</div>
+      <div class="painel__miolo" id="mioloBarra"></div>
+      <div class="painel__total">
+        <span class="num" id="totalBarra">R$ 0</span>
+        <span class="meta" id="metaBarra">o que sobra no fim</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="barraExemplo">voltar ao exemplo</button>
+      </div>
+    </div>
+    <p class="sal-aviso reveal">Os valores são inventados e redondos, de propósito. Ninguém precisa pôr dado de verdade em lugar nenhum.</p>
+  </section>
+
+  <!-- 6 (05:49) para onde vai de verdade -->
+  <section class="step">
+    <div class="kicker reveal">IBGE · Pesquisa de Orçamentos Familiares de 2017 a 2018</div>
+    <h2 class="reveal">Para onde vai de verdade</h2>
+    <p class="lede reveal">O maior gasto das famílias brasileiras não é comida. É moradia. As três primeiras fatias somam mais de 70% do consumo.</p>
+    <div class="sal-fatias reveal">
+      <div class="sal-fatia"><span class="sal-fatia__nome">habitação</span><span class="sal-fatia__barra" style="--v:36.6"></span><span class="sal-fatia__num">36,6%</span></div>
+      <div class="sal-fatia"><span class="sal-fatia__nome">transporte</span><span class="sal-fatia__barra" style="--v:18.1"></span><span class="sal-fatia__num">18,1%</span></div>
+      <div class="sal-fatia"><span class="sal-fatia__nome">alimentação</span><span class="sal-fatia__barra" style="--v:17.5"></span><span class="sal-fatia__num">17,5%</span></div>
+      <div class="sal-fatia"><span class="sal-fatia__nome">saúde</span><span class="sal-fatia__barra" style="--v:8"></span><span class="sal-fatia__num">8,0%</span></div>
+      <div class="sal-fatia"><span class="sal-fatia__nome">educação</span><span class="sal-fatia__barra" style="--v:4.7"></span><span class="sal-fatia__num">4,7%</span></div>
+      <div class="sal-fatia"><span class="sal-fatia__nome">vestuário</span><span class="sal-fatia__barra" style="--v:4.3"></span><span class="sal-fatia__num">4,3%</span></div>
+    </div>
+    <p class="sal-aviso reveal">Três cuidados: os números são <b>por família</b>, não por pessoa; são dessa pesquisa, que é a mais nova publicada (a seguinte foi a campo e ainda não tinha resultado divulgado); e são a fatia do <b>consumo</b>, não de tudo que a família gasta no mês.</p>
+  </section>
+
+  <!-- 7 (07:02) a diferenca esta na sobra -->
+  <section class="step">
+    <div class="kicker reveal">as duas pontas da mesma pesquisa</div>
+    <h2 class="reveal">A diferença está na sobra</h2>
+    <div class="sal-pontas reveal">
+      <div class="sal-ponta">
+        <div class="sal-ponta__nome">menor renda</div>
+        <div class="sal-ponta__linha"><span>vai para consumo</span><b>92,6%</b></div>
+        <div class="sal-ponta__linha"><span>vira patrimônio</span><b class="sal-baixo">1,4%</b></div>
+        <div class="sal-ponta__linha"><span>alimentação</span><b>22,0%</b></div>
+      </div>
+      <div class="sal-ponta">
+        <div class="sal-ponta__nome">maior renda</div>
+        <div class="sal-ponta__linha"><span>vai para consumo</span><b>66,3%</b></div>
+        <div class="sal-ponta__linha"><span>vira patrimônio</span><b class="sal-alto">9,6%</b></div>
+        <div class="sal-ponta__linha"><span>alimentação</span><b>7,6%</b></div>
+      </div>
+    </div>
+    <p class="sal-aviso sal-aviso--forte reveal">Essa diferença é principalmente <b>tamanho de renda</b>, não disciplina nem esforço. Comida e moradia têm um tamanho mínimo, e por isso pesam mais para quem ganha menos. O que a série propõe vale para quem tem qualquer sobra, por menor que seja, e não serve de julgamento para quem não tem.</p>
+  </section>
+
+  <!-- 8 (08:17) o ano que nao fecha, interativa -->
+  <section class="step">
+    <div class="kicker reveal">mexa enquanto ouve</div>
+    <h2 class="reveal">O ano que não fecha</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legAno">O mesmo salário nos doze meses. Os compromissos sazonais caem de uma vez e engolem a sobra.</div>
+      <div class="painel__miolo" id="mioloAno"></div>
+      <div class="painel__total">
+        <span class="num" id="totalAno">0</span>
+        <span class="meta" id="metaAno">meses no vermelho</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="anoDivide">dividir por doze</button>
+        <button class="btn-mini" id="anoExemplo">voltar ao exemplo</button>
+      </div>
+    </div>
+    <p class="sal-aviso reveal">O valor do gasto não muda e não fica mais barato. O que muda é o <b>quando</b>.</p>
+  </section>
+
+  <!-- 9 (09:11) a parcela, gasto fixo do futuro -->
+  <section class="step">
+    <div class="kicker reveal">três medidas diferentes, que não se somam</div>
+    <h2 class="reveal">Quando a sobra já foi gasta antes de chegar</h2>
+    <div class="sal-dados reveal">
+      <div class="sal-dado">
+        <div class="sal-dado__num">28,85%</div>
+        <div class="sal-dado__oque">da renda das famílias vai pagar dívida com bancos</div>
+        <div class="sal-dado__fonte">Banco Central, junho de 2026</div>
+      </div>
+      <div class="sal-dado">
+        <div class="sal-dado__num">49,75%</div>
+        <div class="sal-dado__oque">é o tamanho da dívida sobre a renda de um ano inteiro</div>
+        <div class="sal-dado__fonte">Banco Central, junho de 2026</div>
+      </div>
+      <div class="sal-dado">
+        <div class="sal-dado__num">82%</div>
+        <div class="sal-dado__oque">das famílias têm alguma dívida a vencer, e 29,9% estão em atraso</div>
+        <div class="sal-dado__fonte">CNC, entidade do comércio, agosto de 2026</div>
+      </div>
+    </div>
+    <p class="sal-aviso reveal">Uma medida diz <b>quanto da renda</b> vai para a dívida; a outra, <b>quantas famílias</b> têm dívida. São perguntas diferentes, e somar as duas seria erro. A parcela é gasto fixo do futuro: dívida é uma conta que já foi feita, não falha de caráter.</p>
+    <p class="sal-filme reveal">Para ver: <b>No Caminho do Superendividamento</b>, curta do Idec, de graça na internet. É filme de campanha, com tese pronta e sem a voz dos bancos.</p>
+  </section>
+
+  <!-- 10 (10:55) por que a sobra vem antes -->
+  <section class="step">
+    <div class="kicker reveal">Caderno de Educação Financeira do Banco Central</div>
+    <h2 class="reveal">Por que a sobra vem antes</h2>
+    <blockquote class="sal-citacao reveal">a primeira coisa a fazer ao receber uma renda deve ser separar parte dela para poupar, <b>antes mesmo de pagar qualquer despesa</b>.</blockquote>
+    <p class="lede reveal">O caderno chama isso de <b>pague-se primeiro</b>, e a regra de ouro dele é gastar menos do que se recebe. A mesma quantia sai da conta, só que sai no começo, e o mês se organiza em volta do que ficou.</p>
+    <div class="sal-cofrinho reveal">
+      <div class="sal-cofrinho__nome">o cofrinho do mês</div>
+      <div class="sal-cofrinho__desc">Não é produto de banco nem investimento. É a sobra ganhando um lugar próprio, e ele volta em todo episódio da série.</div>
+    </div>
+    <p class="sal-filme reveal">Para ver: <b>A Arte de Economizar</b>, documentário na Netflix, com gente comum arrumando a própria conta. É americano, então os valores e os produtos são de lá, e tem gente vendendo método próprio.</p>
+  </section>
+
+  <!-- 11 (12:14) pratica -->
+  <section class="step">
+    <div class="kicker reveal">pause o áudio e faça</div>
+    <h2 class="reveal">Monte o seu mês</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legPratica">Monte o mesmo mês dos dois jeitos e compare os doze meses de cada um.</div>
+      <div class="painel__miolo" id="mioloPratica"></div>
+      <div class="painel__total">
+        <span class="num" id="totalPratica">R$ 0</span>
+        <span class="meta" id="metaPratica">guardado em doze meses</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini cheio" id="praticaFim">sobra no fim</button>
+        <button class="btn-mini" id="praticaFrente">sobra na frente</button>
+      </div>
+    </div>
+    <p class="sal-aviso reveal"><b>Duas referências, com data.</b> A divisão do dinheiro em três partes (o que se tem que pagar, o que se quer, o que se guarda) é proposta de um livro americano de 2005, de Elizabeth Warren e Amelia Warren Tyagi. É proposta de livro, não regra oficial, e os percentuais que circulam não estão na fonte original. E um índice do Datafolha publicado em 2026, com entrevistas de julho de 2025, mede o brasileiro em 70,1 na conta do mês e 39,3 na reserva para imprevisto, numa escala de 0 a 100.</p>
+  </section>
+
+  <!-- 12 (13:45) fecho -->
+  <section class="step step--mundo">
+    <div class="kicker reveal">onde isso aparece fora da tela</div>
+    <h2 class="reveal">O mês, do bruto à sobra</h2>
+    <div class="mundo">
+      <div class="item reveal">
+        <div class="nome">No contracheque</div>
+        <div class="desc">O INSS e o imposto, cobrados por faixa, entre o bruto e o que chega.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">Na fatura</div>
+        <div class="desc">A parcela de hoje é o gasto fixo dos meses que vêm.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">No extrato</div>
+        <div class="desc">Fixo, variável e o sazonal, que é certo e não cai todo mês.</div>
+      </div>
+      <div class="item reveal">
+        <div class="nome">No informe de rendimentos</div>
+        <div class="desc">O ano inteiro numa folha, uma vez por ano.</div>
+      </div>
+    </div>
+    <p class="sal-aviso reveal"><b>No próximo episódio:</b> a sobra parada não cresce. Existe um motor que faz a dívida do cartão crescer sozinha e faz o dinheiro guardado crescer com o tempo, e é ele que a gente vai olhar de perto.</p>
+    <div class="sal-praver reveal">
+      <div class="sal-praver__titulo">Para ver, sobre o assunto deste episódio</div>
+      <ul>
+        <li><b>A Arte de Economizar</b> (2022), documentário, Netflix. Pessoas comuns arrumando a conta, com valores e produtos americanos.</li>
+        <li><b>No Caminho do Superendividamento</b> (Idec), curta brasileiro, de graça na internet. Filme de campanha, com tese pronta.</li>
+        <li><b>Até que a Sorte nos Separe</b> (2012), ficção, Netflix. O dinheiro que some, em tom de comédia.</li>
+        <li><b>Resumindo: O Dinheiro</b>, episódio sobre cartões de crédito (2021), Netflix. A máquina do cartão, com juros de lá, não os daqui.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<div class="tocador">
+  <audio preload="metadata" src="Para onde vai seu salário de verdade.m4a" data-duracao="923"></audio>
+  <img class="tocador__capa" src="../../../site/img/serie-financas.webp" alt="">
+  <div class="tocador__id">
+    <div class="tocador__titulo">Para onde vai seu salário de verdade</div>
+  </div>
+  <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="923" aria-valuenow="0">
+    <div class="tocador__cheio"></div>
+    <div class="tocador__marcas"></div>
+  </div>
+  <div class="tocador__controles">
+    <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+    <div class="tocador__transporte">
+      <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+      <button class="tocador__play" aria-label="tocar">▶</button>
+      <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">15:23</span></div>
+  </div>
+</div>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
+</footer>
+
+<script src="../../../site/js/menu.js"></script>
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="salario.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>
