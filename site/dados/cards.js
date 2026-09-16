@@ -801,9 +801,11 @@ module.exports = {
 
   /* ---------- Financas: as 6 etapas e os episodios da etapa 01 ---------- */
 
-  /* As etapas ainda nao tem arte (P17 do plano da serie), entao os cards delas saem
-     sem imagem; o episodio que ja existe leva a ilustracao da propria animacao.
-     A serie esta desligada no series.json ate o dono ligar no painel. */
+  /* A etapa 01 e o episodio dela levam ilustracao da propria animacao do 1.01: a
+     etapa fica com a mesa da capa (o envelope e o cofrinho) e o episodio com a do
+     fecho, pra nao repetir a mesma foto nas duas paginas. As etapas 02 a 06 seguem
+     sem arte, porque nao ha episodio feito pra emprestar imagem: e a P17 do plano
+     da serie, que espera ele. */
   'financas/etapas': {
     pagina: 'financas.html',
     tipo: 'etapas',
@@ -811,6 +813,9 @@ module.exports = {
     grade: 'grade',
     cards: {
       '01': {
+        imagem: '../FINANCAS/01 - O dinheiro do mes/01 - Para onde vai o salario/img/tela-01.webp',
+        descricao: `O salário que entra e o cofrinho que espera`,
+        credito: `ilustração`,
         periodo: `a sobra nasce`,
         frase: `Para onde vai o salário.`,
         resumo: `O que sai antes de cair na conta, cobrado por faixa. O gasto fixo, o variável e o que é certo e não cai todo mês. Para onde as famílias brasileiras gastam de verdade, pelo IBGE. E por que a sobra funciona melhor separada na frente do que esperada no fim.`,
