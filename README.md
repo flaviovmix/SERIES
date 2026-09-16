@@ -17,8 +17,10 @@ arquivo, e a única porta com chave é o painel que liga e desliga série.
 | `plano/` | O plano do projeto: os `.md` em `md/`, o HTML gerado em `html/` |
 | `modelos/` | Mockups e modelos de tela. Os descartados ficam, como registro |
 
-`GRAVAR-TELA/` é repositório próprio, aninhado aqui. A 4ª série (Finanças) está em
-preparação e ainda fora do git.
+`GRAVAR-TELA/` é repositório próprio, aninhado aqui. `modelos/` ainda é só local: os
+mockups que moram nele saíram de dentro de `site/` em 16/09/2026, e entram no git quando
+o dono decidir se ficam ou vão embora. A 4ª série (Finanças) está em preparação, com o
+plano e o primeiro episódio já versionados.
 
 ## Publicar
 
