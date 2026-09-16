@@ -1,0 +1,4 @@
+# Os scripts de deploy rodam no Linux, mas sao escritos aqui no Windows. Sem esta linha
+# o git entrega o arquivo com CRLF no servidor e o bash morre na primeira linha, com
+# "\r: command not found". Padrao da skill publicar-no-servidor (D5 do plano).
+*.sh text eol=lf
