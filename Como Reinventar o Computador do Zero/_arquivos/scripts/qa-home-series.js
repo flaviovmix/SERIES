@@ -1,5 +1,7 @@
-// A home com 2 cards por fileira e a foto sempre em 16:9 (a esquerda no desktop,
-// em cima no telefone), sem nada estourando o cartao nem a pagina
+// A home com a foto sempre em 16:9 (a esquerda no desktop, em cima no telefone), sem
+// nada estourando o cartao nem a pagina. Quantos cards cabem por fileira mudou em
+// 15/09/2026, quando o dono pediu a home em 90% da tela: 3 de 1366px pra cima, 2 em
+// 1024 e 1 no telefone (a grade e auto-fill, entao o numero sai da largura).
 const fs = require('fs');
 const path = require('path');
 
@@ -11,9 +13,9 @@ const { chromium } = require(achado);
 // sem argumento testa o local; com "ar" testa series.afx.art.br
 const HOME = process.argv[2] === 'ar' ? 'https://series.afx.art.br/site/index.html' : 'file:///C:/src/PROJETOS/SEIRES/site/index.html';
 const TAMANHOS = [
-  { nome: 'd1920-escuro', w: 1920, h: 1080, e: 'dark', fileira: 2, deitado: true },
-  { nome: 'd1536', w: 1536, h: 864, e: 'light', fileira: 2, deitado: true },
-  { nome: 'd1366', w: 1366, h: 768, e: 'light', fileira: 2, deitado: true },
+  { nome: 'd1920-escuro', w: 1920, h: 1080, e: 'dark', fileira: 3, deitado: true },
+  { nome: 'd1536', w: 1536, h: 864, e: 'light', fileira: 3, deitado: true },
+  { nome: 'd1366', w: 1366, h: 768, e: 'light', fileira: 3, deitado: true },
   { nome: 'd1024', w: 1024, h: 768, e: 'light', fileira: 2, deitado: true },
   { nome: 'tel384-escuro', w: 384, h: 688, e: 'dark', fileira: 1, deitado: false },
   { nome: 'tel360', w: 360, h: 640, e: 'light', fileira: 1, deitado: false },

@@ -119,6 +119,52 @@ publicar() {
   rm -f "$lista"
 }
 
+# O QUE O PAINEL DECIDE E DO SERVIDOR, NAO DO COMMIT
+#   Desde 16/09/2026 o painel das series roda aqui e escreve o site/dados/series.json
+#   desta pasta. Se o deploy copiasse o series.json do commit por cima, toda publicacao
+#   religaria o que o dono tinha desligado. Entao o estado do servidor e guardado antes da
+#   copia, devolvido depois, e o gerador roda de novo pra o menu e a home combinarem com
+#   ele. O commit continua sendo a fonte das PAGINAS; quem manda em ligado ou desligado e
+#   o painel.
+ESTADO_DAS_SERIES="site/dados/series.json"
+estado_guardado=""
+
+guardar_estado_das_series() {
+  if [ -f "$AR/$ESTADO_DAS_SERIES" ]; then
+    estado_guardado=$(mktemp)
+    cp "$AR/$ESTADO_DAS_SERIES" "$estado_guardado"
+  fi
+}
+
+devolver_estado_das_series() {
+  [ -n "$estado_guardado" ] || return 0
+  if cmp -s "$estado_guardado" "$AR/$ESTADO_DAS_SERIES"; then
+    echo "==> o painel e o commit concordam sobre as series ligadas"
+    rm -f "$estado_guardado"
+    estado_guardado=""
+    return 0
+  fi
+  echo "==> devolvendo as series que o painel tinha ligado/desligado"
+  cp "$estado_guardado" "$AR/$ESTADO_DAS_SERIES"
+  rm -f "$estado_guardado"
+  estado_guardado=""
+  gerar_paginas
+}
+
+# O gerador mora no repo, nao na pasta publicada (os scripts nao vao pro ar). Aqui ele e
+# emprestado pro lugar onde o proprio gerador espera se encontrar: montado DENTRO de
+# ~/serie, ele resolve a raiz sozinho e escreve as paginas certas, sem precisar saber que
+# esta num container.
+gerar_paginas() {
+  local scripts="Como Reinventar o Computador do Zero/_arquivos/scripts"
+  echo "==> gerando o menu e a home com o estado do painel"
+  docker run --rm --user "$DONO" \
+    -v "$AR":/raiz \
+    -v "$SRC/$scripts":"/raiz/$scripts":ro \
+    -w /raiz "$IMAGEM_NODE" \
+    node "$scripts/gera-cards/gera-cards.js"
+}
+
 # Prova que o que esta no ar e o que acabou de ser publicado, arquivo por arquivo.
 conferir_arquivos() {
   echo "==> o que esta no ar x o commit"
@@ -174,8 +220,10 @@ main() {
   echo "==> publicando $(git -C "$SRC" rev-parse --short HEAD) — $(git -C "$SRC" log -1 --format=%s)"
   conferir_cards
   guardar_backup
+  guardar_estado_das_series
   publicar
-  conferir_arquivos
+  conferir_arquivos            # o commit chegou inteiro: confere ANTES de o painel opinar
+  devolver_estado_das_series
   conferir_no_ar
   echo "==> PUBLICADO"
 }

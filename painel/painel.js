@@ -56,7 +56,9 @@
   /* ---------- a conversa com o servidor ---------- */
 
   async function pedir(metodo, corpo) {
-    const resposta = await fetch('/api/series', {
+    /* endereco relativo de proposito: na maquina do dono a pagina abre em "/", e no
+       servidor ela abre em "/painel/" — o mesmo codigo serve os dois */
+    const resposta = await fetch('api/series', {
       method: metodo,
       headers: corpo ? { 'Content-Type': 'application/json', 'X-Token-Do-Painel': TOKEN } : {},
       body: corpo ? JSON.stringify(corpo) : undefined,

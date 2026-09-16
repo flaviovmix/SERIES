@@ -24,8 +24,15 @@ const path = require('path');
 const crypto = require('crypto');
 const { execFile } = require('child_process');
 
-const HOST = '127.0.0.1';
+/* Onde o painel escuta. Na maquina do dono, so 127.0.0.1, e e isso que o protege. Dentro
+   do container ele precisa escutar 0.0.0.0, senao o Caddy nao alcanca; ali quem protege e
+   a senha do Caddy na frente e a rede fechada do docker, nunca o endereco. */
+const HOST = process.env.PAINEL_ESCUTA || '127.0.0.1';
 const PORTA = lerPorta(process.env.PAINEL_PORTA);
+/* O endereco de fora, quando ele roda atras do Caddy (ex.: series.afx.art.br). O Host e a
+   Origin que chegam sao os de fora, nao os do container, entao sem isto aqui o painel
+   recusaria o proprio dono. Vazio = so a maquina local, como era ate 16/09/2026. */
+const ENDERECO_PUBLICO = process.env.PAINEL_ENDERECO || '';
 const RAIZ = path.resolve(__dirname, '..');
 const SITE = path.join(RAIZ, 'site');
 const ARQUIVO_DO_ESTADO = path.join(SITE, 'dados', 'series.json');
@@ -35,8 +42,8 @@ const SOBE_ARQUIVOS = 'Como Reinventar o Computador do Zero/_arquivos/scripts/so
 const LIMITE_DO_CORPO = 4 * 1024;
 const PRAZO_DO_GERADOR = 60 * 1000;
 const TOKEN = crypto.randomBytes(32).toString('hex');
-const HOSTS_ACEITOS = [`127.0.0.1:${PORTA}`, `localhost:${PORTA}`];
-const ORIGENS_ACEITAS = HOSTS_ACEITOS.map((host) => `http://${host}`);
+const HOSTS_ACEITOS = [`127.0.0.1:${PORTA}`, `localhost:${PORTA}`, ...(ENDERECO_PUBLICO ? [ENDERECO_PUBLICO] : [])];
+const ORIGENS_ACEITAS = [`http://127.0.0.1:${PORTA}`, `http://localhost:${PORTA}`, ...(ENDERECO_PUBLICO ? [`https://${ENDERECO_PUBLICO}`] : [])];
 
 /* o que a pagina do painel pode pedir, e so isso */
 const ARQUIVOS_DA_PAGINA = new Map([
@@ -83,8 +90,14 @@ function recusar(resposta, status, motivo) {
   responder(resposta, status, { ok: false, erro: motivo });
 }
 
+/* a tarja de cima diz onde o painel esta rodando: na maquina do dono nada vai pro ar
+   sozinho, no servidor a mudanca vale na hora pra quem abrir o site */
+const ONDE = ENDERECO_PUBLICO ? 'No ar · a mudança vale na hora' : 'Só nesta máquina · não publica nada';
+
 function servirPagina(resposta) {
-  const html = fs.readFileSync(path.join(__dirname, 'painel.html'), 'utf8').replace('{{TOKEN}}', TOKEN);
+  const html = fs.readFileSync(path.join(__dirname, 'painel.html'), 'utf8')
+    .replace('{{TOKEN}}', TOKEN)
+    .replace('{{ONDE}}', ONDE);
   responder(resposta, 200, html, 'text/html; charset=utf-8');
 }
 

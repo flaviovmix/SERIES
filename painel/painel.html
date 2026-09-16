@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="token-do-painel" content="{{TOKEN}}">
 <title>Painel das séries</title>
-<link rel="stylesheet" href="/tokens.css">
-<link rel="stylesheet" href="/painel.css">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="painel.css">
 </head>
 
 <body>
@@ -14,9 +14,9 @@
 <main class="painel">
 
   <header class="painel__cabeca">
-    <p class="painel__rotulo">Só nesta máquina · não publica nada</p>
+    <p class="painel__rotulo">{{ONDE}}</p>
     <h1>Painel das séries</h1>
-    <p class="painel__lede">Desligue uma série pra ela sumir do menu e da home. Salvar grava o <code>site/dados/series.json</code> e roda o gerador; subir pro ar continua sendo com você.</p>
+    <p class="painel__lede">Desligue uma série pra ela sumir do menu e da home. Salvar grava o <code>site/dados/series.json</code> e roda o gerador.</p>
   </header>
 
   <form class="series" id="series">
@@ -39,7 +39,7 @@
 
 </main>
 
-<script src="/painel.js"></script>
+<script src="painel.js"></script>
 
 </body>
 </html>
