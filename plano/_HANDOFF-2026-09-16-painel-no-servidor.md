@@ -2,6 +2,8 @@
 
 Escrito pela sessão do plano de Finanças, que não executa nada disto. É pra uma sessão própria, na branch `card-componente` do SEIRES, depois que a etapa 6 subir.
 
+> **✅ EXECUTADO em 16/09/2026**, por ordem do dono ("todas"), nesta ordem: etapa 6 na `main` e no ar; subetapa 4.1 (`deploy/publicar.sh`, rollback testado de verdade); container `serie-painel`; senha do Caddy em `series.afx.art.br/painel/`; P13 decidida (fica como está); textos e decisões atualizados (D6 no `plano.md`). O que ficou fora, e por quê, está no fim deste arquivo. Este documento vira registro histórico: o que vale agora é a **D6** do `plano.md`, a decisão 11 da Etapa 6 e o `deploy/LEIA-ME.md`.
+
 ## O que o dono decidiu (16/09/2026, em duas frases)
 
 1. "Eu quero que o painel esteja no servidor, mas ativar ou desativar vai ser apenas tornar o painel visível ou não." Ou seja: o painel que liga e desliga série (subetapa 6.10) deixa de ser só local e passa a rodar no servidor; ele aceita porque tudo o que o painel faz é mostrar ou esconder uma série.

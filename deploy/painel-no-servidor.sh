@@ -72,23 +72,28 @@ subir() {
 }
 
 # O painel responde de dentro da rede do docker? Um container descartavel na mesma rede
-# pergunta por ele, com o Host de fora — que e o unico que o painel aceita.
+# pergunta por ele com o Host de fora, que e o unico que o painel aceita ali.
+# ⚠️ Aqui e wget, nao o fetch do node: o fetch se recusa a mandar o cabecalho Host (a
+# especificacao chama isso de cabecalho proibido), entao a pergunta chegava com
+# "serie-painel:8790" e o painel recusava — 403 do teste, com o painel sadio.
+perguntar_ao_painel() {
+  docker run --rm --network "$REDE" "$IMAGEM_NODE" \
+    wget -q -O /dev/null --header="Host: $ENDERECO" "http://$CONTAINER:$PORTA/api/series"
+}
+
 conferir() {
   echo "==> esperando o painel responder"
-  local tentativa=0 codigo
-  while true; do
-    codigo=$(docker run --rm --network "$REDE" "$IMAGEM_NODE" \
-      node -e "fetch('http://$CONTAINER:$PORTA/api/series',{headers:{Host:'$ENDERECO'}}).then(r=>console.log(r.status)).catch(()=>console.log(0))" 2>/dev/null | tail -1)
-    [ "$codigo" = "200" ] && break
+  local tentativa=0
+  until perguntar_ao_painel; do
     tentativa=$((tentativa + 1))
     if [ "$tentativa" -ge 10 ]; then
-      echo "!!! o painel nao respondeu 200 (ultimo: $codigo)"
+      echo "!!! o painel nao respondeu"
       echo "!!! ver o log:  docker logs --tail 40 $CONTAINER"
       exit 1
     fi
     sleep 2
   done
-  echo "    200 em http://$CONTAINER:$PORTA/api/series"
+  echo "    respondeu em http://$CONTAINER:$PORTA/api/series"
   docker ps --filter "name=$CONTAINER" --format "    {{.Names}}  {{.Image}}  {{.Status}}"
 }
 
