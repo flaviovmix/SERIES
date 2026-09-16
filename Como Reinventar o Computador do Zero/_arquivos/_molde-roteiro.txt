@@ -26,15 +26,23 @@ ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com {N} telas
 
 - No fim de cada tela, um dos apresentadores pede claramente: "aperte o Proximo".
 - Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O aviso e UMA FALA SO, de
-  UM apresentador, em DUAS FRASES no maximo, e diz so tres coisas (16/09/2026, pedido dele):
-  que o audio acompanha a pagina, que a pagina VIRA SOZINHA, e que pular a tela na mao
-  leva o audio junto. Depois segue o assunto.
+  UM apresentador, em TRES FRASES no maximo, e diz so estas coisas (16/09/2026, pedido dele):
+  que o audio acompanha a pagina, que a pagina VIRA SOZINHA, que pular a tela na mao
+  leva o audio junto, e que embaixo da tela ficam as guias Extras e Filmes, onde pode ter
+  episodio extra e filme sobre o assunto esperando. Depois segue o assunto.
+  ⚠️ A parte das guias so entra SE este episodio tiver extra ou filme preenchido no
+  `menu.js` (campos `extras` e `filmes`). Sem nenhum dos dois, a pagina mostra "nao promete
+  nenhum extra", e o audio prometeria o que nao existe: nesse caso o aviso fica so nas tres
+  primeiras coisas.
   NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina,
-  NAO dizer a frase do pedido como exemplo e NAO chamar a animacao de legal, bacana ou
-  interativa. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz
+  NAO dizer a frase do pedido como exemplo, NAO chamar a animacao de legal, bacana ou
+  interativa, e NAO listar os extras aqui: a lista e a pagina que mostra, e o extra certo
+  e chamado pelo nome la no meio do roteiro, quando o assunto dele passa (regra separada).
+  O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz
   pergunta sobre isso: aviso com replica vira conversa, e conversa vira meio minuto de nada.
   Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se
-  voce pular uma tela, o audio pula junto." Duas frases, um apresentador, e acabou.
+  voce pular uma tela, o audio pula junto. E embaixo da tela tem as guias de extras e de
+  filmes, com o que sobrou pra quem quiser puxar o assunto depois." Um apresentador, e acabou.
   Por que pode ser tao curto: ninguem precisa fazer nada, entao nao ha nada pra ensinar.
   ⚠️ O pedido "aperte o Proximo" no fim de cada tela CONTINUA existindo, e nao e instrucao
   pro ouvinte: e o marcador que o mapa-de-telas.py usa pra cortar o audio em telas. Tirar
