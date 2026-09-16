@@ -801,8 +801,9 @@ module.exports = {
 
   /* ---------- Financas: as 6 etapas e os episodios da etapa 01 ---------- */
 
-  /* As etapas ainda nao tem arte (P17 do plano da serie), entao os cards saem sem
-     imagem. A serie esta desligada no series.json ate o dono ligar no painel. */
+  /* As etapas ainda nao tem arte (P17 do plano da serie), entao os cards delas saem
+     sem imagem; o episodio que ja existe leva a ilustracao da propria animacao.
+     A serie esta desligada no series.json ate o dono ligar no painel. */
   'financas/etapas': {
     pagina: 'financas.html',
     tipo: 'etapas',
@@ -855,6 +856,9 @@ module.exports = {
     grade: 'grade grade--dupla',
     cards: {
       '01': {
+        imagem: '../FINANCAS/01 - O dinheiro do mes/01 - Para onde vai o salario/img/tela-12.webp',
+        descricao: `Do bruto à sobra, na mesa`,
+        credito: `ilustração`,
         periodo: `o mês inteiro`,
         frase: `O salário entrou, o mês acabou, e cadê o dinheiro.`,
         resumo: `O bruto não é o que cai na conta, e a cobrança é por faixa. O vocabulário do orçamento pelo Banco Central, incluindo o gasto que é certo e não cai todo mês. Para onde as famílias gastam de verdade, pelo IBGE: moradia na frente, comida em terceiro. E por que a sobra vem antes, e não no que restar.`,

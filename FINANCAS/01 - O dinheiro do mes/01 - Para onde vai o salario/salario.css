@@ -422,6 +422,93 @@
   text-align: center;
 }
 
+/* ---------- as ilustrações ----------
+   Uma por tela, geradas no Flow no mundo visual da série (os prompts ficam em
+   ilustracoes.md). Dois jeitos aqui: .step--lado nas telas de texto (ilustração à
+   direita) e .sal-arte nas telas de grade larga, onde a imagem vira faixa acima do
+   componente pra não espremer a grade. A capa não precisa de nada: a .capa-modelo
+   do telas.css já trata imagem, e é ela que sobe a arte pro alto no telefone.
+   As telas 3, 5, 8 e 11 não levam ilustração: lá o widget interativo é a imagem,
+   como a planta decidiu. */
+
+.lado-arte figcaption,
+.sal-arte figcaption {
+  font-family: var(--fonte-mono);
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* telas de texto: conteúdo à esquerda, ilustração à direita */
+.step--lado {
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(20px, 3vw, 44px);
+  text-align: left;
+  padding-left: clamp(12px, 3vw, 40px);
+  padding-right: clamp(12px, 3vw, 40px);
+}
+.lado-texto {
+  flex: 1 1 560px;
+  min-width: 0;
+  /* teto de largura pra a linha não ficar longa demais de ler */
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* dentro da coluna de texto os blocos ocupam a largura toda dela */
+.step--lado .sal-tabela,
+.step--lado .sal-citacao,
+.step--lado .sal-cofrinho,
+.step--lado .sal-aviso,
+.step--lado .sal-filme { width: 100%; }
+.lado-arte {
+  flex: 1 1 400px;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.lado-arte img {
+  width: 100%;
+  height: auto;
+  max-height: min(58vh, 480px);
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: var(--sombra-alta);
+}
+
+/* telas de grade larga: a ilustração vira faixa e a grade segue inteira embaixo */
+.sal-arte {
+  width: 100%;
+  max-width: 880px;
+  margin: 14px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.sal-arte img {
+  width: 100%;
+  height: clamp(96px, 17vh, 190px);
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--sombra-alta);
+}
+/* a tela do fecho já carrega o mundo e a lista de filmes: lá a faixa é mais fina,
+   senão a tela rola 18px em 1440x900 (medido com o qa-pagina, não chutado). O
+   corte desce um pouco do meio porque os objetos ficam na metade de baixo da
+   ilustração: centrado, a engrenagem do fim sumia, e é ela que a legenda promete */
+.sal-arte--fina img {
+  height: clamp(80px, 14vh, 135px);
+  object-position: center 64%;
+}
+
 /* ---------- telefone: SEMPRE no fim do arquivo ---------- */
 
 @media (max-width: 820px) {
@@ -436,4 +523,18 @@
   .sal-mes__nome { font-size: 8px; }
   .sal-barra { height: 36px; }
   .sal-barra__parte { font-size: 10px; }
+  /* a ilustração empilha embaixo do texto e encolhe: no telefone quem manda é a leitura */
+  .step--lado { flex-direction: column; text-align: center; }
+  .lado-texto { width: 100%; max-width: none; align-items: center; text-align: center; }
+  /* a ilustração sobe pro alto do texto, como a da capa: no telefone, imagem
+     fora da dobra conta como tela sem imagem */
+  .lado-arte { width: 100%; order: -1; }
+  .lado-arte img { max-height: min(30vh, 240px); }
+  .sal-arte img { height: clamp(88px, 14vh, 130px); }
+}
+
+/* tela baixa (notebook de 768px): quem cede é a imagem, não o texto */
+@media (max-height: 820px) {
+  .lado-arte img { max-height: 46vh; }
+  .sal-arte img { height: clamp(88px, 13vh, 140px); }
 }
