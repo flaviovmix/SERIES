@@ -333,6 +333,10 @@
 }
 
 .sal-regua__cheio {
+  /* o trilho e o cheio sao <span>: sem isto o cheio continua INLINE, e largura e
+     altura nao valem pra inline. A barra ficava sempre vazia, no telefone e no
+     desktop, com os valores certos do lado (16/09/2026, print dele) */
+  display: block;
   height: 100%;
   width: 0;
   background: var(--accent);
@@ -527,6 +531,12 @@
   .sal-mes__nome { font-size: 8px; }
   .sal-barra { height: 36px; }
   .sal-barra__parte { font-size: 10px; }
+  /* o numero grande nao quebra no meio: nas telas 3 e 5 a legenda ao lado e
+     comprida e espremia o "R$ 2.751" em duas linhas (print dele, 16/09). O gap
+     e obrigatorio: com o nowrap sozinho o numero encostava na legenda */
+  .painel__total { gap: 14px; }
+  .painel__total .num { font-size: 34px; white-space: nowrap; }
+  .painel__total .meta { font-size: 12.5px; text-align: right; }
   /* a ilustração empilha embaixo do texto e encolhe: no telefone quem manda é a leitura */
   .step--lado { flex-direction: column; text-align: center; }
   .lado-texto { width: 100%; max-width: none; align-items: center; text-align: center; }
