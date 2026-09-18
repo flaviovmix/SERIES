@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O que a Bíblia conta</title>
+<meta name="description" content="As histórias que a Bíblia conta, do jardim ao Apocalipse, na ordem em que o texto conta: um mapa que ganha um lugar por episódio, sem julgar e sem pregar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/cabecalho.css">
+<link rel="stylesheet" href="css/secao.css">
+<link rel="stylesheet" href="css/capitulo.css">
+<link rel="stylesheet" href="css/audio.css">
+<link rel="stylesheet" href="css/animacao/lightbox.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--vitrine">
+
+  <header class="head">
+    <p class="eyebrow"><a href="index.html">&larr; Séries</a> &middot; Série em 6 etapas &middot; do jardim ao Apocalipse</p>
+    <h1>O que a Bíblia conta</h1>
+    <!-- o piloto: o 00 da serie, o mapa inteiro de ponta a ponta num audio so (18/09/2026).
+         A classe audio--faixa (css/cabecalho.css e css/audio.css) leva o player pra uma faixa
+         logo abaixo da barra do topo no desktop; no telefone ele fica aqui, embaixo do titulo.
+         O .m4a nao vai no commit (.gitignore): sobe a parte, pelo sobe-arquivos.sh. -->
+    <div class="audio audio--faixa">
+      <audio controls preload="none" src="../BIBLIA-HISTORIAS/00%20-%20A%20serie%20inteira/Toda%20a%20Bíblia%20do%20Gênesis%20ao%20Apocalipse.m4a">
+        Seu navegador não toca áudio aqui.
+      </audio>
+      <p class="audio__ficha"><span>O caminho inteiro em áudio</span><span>14 min</span></p>
+    </div>
+    <p class="lede">As histórias que a gente conhece soltas, o dilúvio, a torre, Davi e Golias, o filho pródigo, formam <strong>um caminho só</strong>. A série segue a Bíblia <strong>na ordem em que ela conta</strong>, do jardim ao Apocalipse, e põe cada história no mapa, no lugar onde o texto põe.</p>
+    <div class="bars" role="presentation"></div>
+  </header>
+
+  <section>
+    <header class="secao">
+      <p class="secao__contexto">Seis etapas, na ordem do texto</p>
+      <h2>Cada episódio põe um lugar no mapa.</h2>
+      <p class="secao__nota">Um objeto só atravessa a série: o mapa, que começa vazio e ganha um lugar por episódio, com a história que o texto põe ali. Lugar que o texto nomeia e ninguém sabe onde fica, como o Éden ou o mar da travessia, entra pontilhado. No fim, o mapa está cheio, de Ur a Patmos.</p>
+    </header>
+
+    <!-- cards: biblia-historias/etapas (gerado por gera-cards.js a partir da MENU e do site/dados/cards.js; nao editar a mao) -->
+    <div class="grade">
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 01 · Os começos · A luz rompendo as nuvens, no primeiro dia · gravura de Gustave Doré, 1866" aria-label="Ampliar a imagem da etapa 01, Os começos"><img class="cap__img" src="img/biblia-historias-etapa-01.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">01</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">Gênesis 1 a 11</p>
+          <h3>Os começos</h3>
+          <p class="cap__frase">O mapa começa com lugares que ninguém localiza.</p>
+          <p class="cap__resumo">Os dois relatos da criação, o jardim e o fruto, Caim e Abel, o dilúvio e a torre. Dos quatro rios do Éden o mapa acha dois, e nenhum lugar desta etapa vira ponto.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">4 episódios</span>
+            <a class="cap__botao" href="etapas/biblia-historias-01.html" aria-label="Abrir a etapa 01, Os começos">Ver a etapa</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 02 · As famílias · Abraão a caminho de Canaã, com os rebanhos · gravura de Gustave Doré, 1866" aria-label="Ampliar a imagem da etapa 02, As famílias"><img class="cap__img" src="img/biblia-historias-etapa-02.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">02</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">Gênesis 12 a 50</p>
+          <h3>As famílias</h3>
+          <p class="cap__frase">Quatro gerações, de Ur ao Egito.</p>
+          <p class="cap__resumo">Abraão sai de Ur, Sodoma, o monte de Moriá, a escada de Jacó e José vendido pelos irmãos. O mapa ganha o caminho inteiro de uma família.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">5 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 03 · Do Egito à terra · O povo atravessando o Jordão · gravura de Gustave Doré, 1866" aria-label="Ampliar a imagem da etapa 03, Do Egito à terra"><img class="cap__img" src="img/biblia-historias-etapa-03.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">03</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">Êxodo a Rute</p>
+          <h3>Do Egito à terra</h3>
+          <p class="cap__frase">O mar e o monte que ninguém fecha no mapa.</p>
+          <p class="cap__resumo">O menino no cesto, as pragas, a travessia, o Sinai, os quarenta anos, Jericó, os juízes e Rute, que chega a Belém. O texto dá o nome do mar e do monte; onde eles ficam, ninguém fecha.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">7 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 04 · Reis e profetas · Daniel na cova dos leões · gravura de Gustave Doré, 1866" aria-label="Ampliar a imagem da etapa 04, Reis e profetas"><img class="cap__img" src="img/biblia-historias-etapa-04.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">04</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">1 Samuel a Ester, Daniel e Jonas</p>
+          <h3>Reis e profetas</h3>
+          <p class="cap__frase">O reino, a queda e a volta.</p>
+          <p class="cap__resumo">Samuel, Davi e Golias, Salomão e o templo, Elias, a queda de Jerusalém, a volta, Ester, Daniel e Jonas. Na ordem do texto, Daniel e Jonas vêm depois de Ester, e o mapa volta no tempo pra buscar os dois.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">9 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 05 · Jesus · Jesus curando os doentes · gravura de Gustave Doré, 1866" aria-label="Ampliar a imagem da etapa 05, Jesus"><img class="cap__img" src="img/biblia-historias-etapa-05.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">05</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">os quatro evangelhos</p>
+          <h3>Jesus</h3>
+          <p class="cap__frase">Quatro livros contando a mesma vida, cada um do seu jeito.</p>
+          <p class="cap__resumo">O nascimento, o Jordão, a Galileia, as parábolas, a última semana e o túmulo. Cada história diz de qual evangelho vem, e onde eles contam diferente, a série diz o que cada um traz.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">6 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Etapa 06 · Os primeiros · Paulo preso, falando à multidão em Jerusalém · gravura de Gustave Doré, 1866" aria-label="Ampliar a imagem da etapa 06, Os primeiros"><img class="cap__img" src="img/biblia-historias-etapa-06.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">06</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">Atos ao Apocalipse</p>
+          <h3>Os primeiros</h3>
+          <p class="cap__frase">De Jerusalém a Roma, e de Roma a uma ilha.</p>
+          <p class="cap__resumo">Pentecostes, a estrada de Damasco, as viagens de Paulo, o naufrágio e o Apocalipse, escrito em Patmos. O mapa termina cheio, e a última cidade do livro é a única que ele não tem como marcar.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">5 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte cap__arte--arte" data-abre="foto" data-legenda="Extras · O que a Bíblia conta · Baruque escrevendo o que Jeremias dita · gravura de Gustave Doré, 1866" aria-label="Ampliar a imagem dos extras de O que a Bíblia conta"><img class="cap__img" src="img/biblia-historias-extras.webp" alt="" loading="lazy"><span class="cap__num" aria-hidden="true">EX</span><span class="cap__lupa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg></span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">fora da estrada &middot; lista aberta</p>
+          <h3>Os extras da série</h3>
+          <p class="cap__frase">O que aprofunda sem travar o caminho.</p>
+          <p class="cap__resumo">O que o texto não diz e a tradição pôs, as leis, os Salmos, Jó, os profetas, os livros que só algumas Bíblias têm, os evangelhos lado a lado e as cartas. Cada extra diz depois de qual episódio vale ouvir, e a lista cresce com o tempo.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">15 extras</span>
+            <a class="cap__botao" href="extras/biblia-historias.html" aria-label="Ver os extras da série">Ver extras</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- /cards -->
+  </section>
+
+  <section>
+    <header class="secao">
+      <p class="secao__contexto">Como a série conta</p>
+      <h2>Do jeito que o texto conta, e só.</h2>
+      <p class="secao__nota">A série não diz que aconteceu e não diz que não aconteceu: diz o que o texto diz, com o livro e o capítulo, e para ali. Onde dois relatos contam a mesma história de jeitos diferentes, como os dois da criação ou os quatro evangelhos, ela diz o que cada um traz, sem escolher. As imagens são gravuras de Gustave Doré para a Bíblia de 1866.</p>
+    </header>
+  </section>
+
+</div>
+
+<script src="js/menu.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/animacao/lightbox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+Inicie dizendo: O que a Biblia conta - O Caminho Inteiro
+---------------
+
+Este e o piloto da serie O que a Biblia conta: o caminho inteiro, do jardim ao Apocalipse, num audio so. A serie tem seis etapas, e cada uma pega um trecho da Biblia. Este audio e o mapa: passa por todos os lugares de uma vez, sem se aprofundar em nenhum. Os episodios das etapas e que descem em cada historia.
+
+ESTE AUDIO NAO TEM PAGINA QUE VIRA. Nao pedir pra apertar nada, nao mandar olhar tela, nao falar em botao. E um audio pra ouvir do comeco ao fim.
+
+A REGRA DA SERIE, dita em voz alta logo no comeco e repetida no fim: CONTAR COMO O TEXTO CONTA. A serie diz "o texto diz" e para ali. NAO afirma que aconteceu e NAO afirma que nao aconteceu. Sem ironia, sem sermao, sem licao de moral que nao esteja no texto. Quem cre e quem nao cre tem que ouvir este audio e nao se sentir enganado.
+
+PALAVRAS QUE TOMAM PARTIDO, PROIBIDAS DOS DOIS LADOS. NAO dizer mito, lenda, fabula, conto, folclore, supostamente, teria acontecido, o suposto milagre, a crenca de que. E NAO dizer de fato aconteceu, milagre verdadeiro, historicamente comprovado, a arqueologia prova, a Palavra de Deus nos ensina, Nosso Senhor, a licao aqui e. Usar "o texto diz", "o livro conta", "segundo Mateus", "Lucas conta de outro jeito".
+
+JESUS, E NAO CRISTO. Na voz de quem apresenta, o nome e Jesus. "Cristo" e "Messias" so quando uma citacao trouxer.
+
+NENHUM POVO COMO VILAO. NAO dizer "os judeus" nem "os fariseus" como grupo culpado de nada. Quando precisar, nomear quem a cena mostra: os sacerdotes, os guardas, a multidao.
+
+O MAPA MOSTRA ONDE O TEXTO POE A HISTORIA, E NAO PROVA NADA. Um lugar que existe e se sabe onde fica NAO confirma que a historia aconteceu ali, e um lugar que ninguem acha NAO desmente a historia. Dizer o jeito como cada lugar entra no mapa exatamente como este roteiro traz: PONTO (o lugar existe e se sabe onde fica), REGIAO (o texto nomeia uma terra, e nao um ponto), PONTILHADO ou SEM PONTO (o texto nomeia e ninguem sabe onde fica), ou PELA TRADICAO (um lugar que a tradicao aponta desde tal seculo).
+
+NENHUMA DATA. Este audio nao da ano pra nada: nem pra Abraao, nem pra Moises, nem pra Davi, nem pro nascimento de Jesus. Nada de "ha tantos mil anos" nem de "no seculo tal antes de Cristo". A unica marca de tempo que pode aparecer e "desde o seculo quatro", quando o roteiro diz de quando e uma tradicao.
+
+NAO INVENTAR. So as citacoes, os lugares e os detalhes que estao neste roteiro. As citacoes entre aspas sao da traducao de Joao Ferreira de Almeida, na edicao de mil novecentos e quatro: dizer cada citacao como esta aqui, sem trocar palavra, e dizer de que livro ela e. NAO completar historia nenhuma com o que "todo mundo sabe".
+
+VIOLENCIA SO NOMEADA. O diluvio, Sodoma, as pragas, Jerico e a cruz aparecem neste audio so pelo nome, sem descrever cena nenhuma. Os episodios contam cada uma, com cuidado.
+
+NUNCA DIZER QUE UM LUGAR NAO EXISTE. O Eden, Node, a torre, Sodoma, o mar da travessia e Tarsis NAO sao "lugares que nao existem" nem "lugares que nao existem na geografia": sao lugares que o texto nomeia e que ninguem sabe onde ficam. Quando falar se um lugar existe, a frase e "ninguem sabe onde fica". Dizer que nao existe e afirmar que a historia nao aconteceu, e isso quebra a regra da serie.
+
+A ABERTURA COMECA PELA IDEIA DA SERIE. NAO abrir o audio com uma frase de efeito sobre os lugares, nem com "e muito doido pensar". A primeira coisa depois do titulo e o que a serie e.
+
+SEM PALAVRA DE DEBOCHE. NAO chamar o texto, a historia ou o caminho de absurdo, doido, loucura, maluco, estranho ou impossivel. Pra quem cre, isso soa como deboche. "Impossivel de marcar no mapa" pode, porque fala do mapa.
+
+NAO PROMETER EPISODIO NEM EXTRA PELO NOME. Pode dizer que cada etapa tem os seus episodios e que ha livros que ficam fora da estrada principal. NAO dizer o nome de extra nenhum.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O MAPA: o objeto da serie inteira. Comeca vazio e ganha um lugar por episodio, com a historia que o texto poe ali, e o caminho que liga um lugar ao outro. E a unica analogia deste audio. Quando falar de um lugar, dizer como ele entra no mapa: ponto, regiao, sem ponto ou pela tradicao.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO
+
+ABERTURA: O QUE E ESTE AUDIO
+
+Dizer a ideia da serie: as historias que a gente conhece soltas, o diluvio, a torre de Babel, Davi e Golias, o filho prodigo, formam um caminho so, que cabe num mapa. E o texto conta cada uma de um jeito que nem sempre e o que a gente lembra.
+
+Dizer a regra: a serie conta como o texto conta. Diz "o texto diz" e para ali. Nao afirma que aconteceu, nao afirma que nao aconteceu. Quem cre e quem nao cre ouvem a mesma coisa.
+
+Dizer a traducao, uma vez so: todas as citacoes sao da traducao de Joao Ferreira de Almeida, a edicao Revista e Corrigida de mil novecentos e quatro, que esta em dominio publico, lida com a ortografia de hoje.
+
+Dizer qual Biblia, SEMPRE com as tres: a desta serie tem sessenta e seis livros, que e a Biblia das igrejas protestantes; a Biblia catolica tem setenta e tres; e a das igrejas ortodoxas tem mais alguns. NAO dizer so a protestante. A ordem da serie e a ordem dos livros dessa Biblia em portugues, do Genesis ao Apocalipse. Na maior parte do caminho essa ordem acompanha a historia. Em alguns pontos o texto volta no tempo, e a serie volta junto, e avisa.
+
+Dizer como funciona o mapa: ele comeca vazio, e cada episodio poe um lugar. Um lugar entra como ponto, quando existe e se sabe onde fica. Como regiao, quando o texto nomeia uma terra e nao um ponto. Ou sem ponto, pontilhado, quando o texto nomeia e ninguem sabe onde fica. E quando o ponto e so provavel, quando tem mais de um candidato, ou quando e a tradicao que aponta o lugar desde algum seculo, a serie diz isso tambem. E dizer que o mapa mostra onde o texto poe a historia, e nao prova nada: nem que aconteceu, nem que nao aconteceu.
+
+Dizer a ultima regra: quando o texto conta a mesma coisa de dois jeitos, a serie conta os dois, sem escolher e sem juntar numa versao so.
+
+ETAPA 1: OS COMECOS (GENESIS, DO CAPITULO UM AO ONZE)
+
+O primeiro versiculo, Genesis capitulo um: "No principio criou Deus os ceus e a terra."
+
+O texto conta a criacao duas vezes. No capitulo um, em sete dias. No capitulo dois, de outro jeito: um jardim, e o homem feito do po da terra. Sao dois relatos, um depois do outro, e a serie conta os dois.
+
+O jardim, Genesis capitulo dois: "E plantou o Senhor Deus um jardim no Eden, da banda do oriente." O texto da uma direcao e quatro rios. Dois o mapa acha: o Tigre e o Eufrates, que existem e correm pelo que hoje e a Turquia, a Siria e o Iraque. Os outros dois, o Pisom e o Giom, ninguem sabe quais sao. Por isso o Eden entra no mapa sem ponto: so os dois rios e a direcao.
+
+O fruto, Genesis capitulo tres: "tomou do seu fruto, e comeu". O texto nao diz que fruta era. A maca veio depois, com a tradicao e a pintura.
+
+Caim e Abel. Caim vai morar, diz o texto, "na terra de Node, da banda do oriente do Eden". A leste de um lugar que nao tem ponto: Node tambem entra sem ponto.
+
+O diluvio, Genesis capitulos seis a nove: Noe e a arca. O texto da duas contas dos animais. No capitulo seis: "dois de cada especie". No capitulo sete, dos animais limpos: "sete e sete, macho e sua femea", e dos que nao sao limpos, dois. A imagem que ficou na cabeca de todo mundo e so a primeira. E a arca repousa, diz o texto, "sobre os montes de Ararate". Montes, no plural: uma regiao de montanhas, nas terras altas do leste da Turquia e da Armenia. Qual monte, o texto nao diz.
+
+A torre, Genesis capitulo onze, na terra de Sinar, que e o sul da Mesopotamia, no Iraque de hoje. "Por isso se chamou o seu nome Babel, porquanto ali confundiu o Senhor a lingua de toda a terra." No hebraico, Babel e o mesmo nome que o texto usa depois pra Babilonia. A torre nao tem ponto: ninguem identificou vestigio nenhum como sendo ela.
+
+A etapa fecha com uma familia saindo de uma cidade chamada Ur. Dizer o resumo da etapa: nos comecos, nenhum lugar vira ponto. O mapa comeca so com dois rios, direcoes e regioes.
+
+ETAPA 2: AS FAMILIAS (GENESIS, DO CAPITULO DOZE AO CINQUENTA)
+
+Quatro geracoes de uma familia, de Ur ao Egito.
+
+O pai de Abraao sai, diz o texto, "de Ur dos caldeus, para ir a terra de Canaa", e para no caminho, em Hara. Ur tem dois candidatos no mapa: Tell el-Muqayyar, no sul do Iraque, e Urfa, no sul da Turquia. Hara e ponto: existe, no sul da Turquia.
+
+Em Hara vem a ordem, Genesis capitulo doze: "Sai-te da tua terra, e da tua parentela, e da casa de teu pai, para a terra que eu te mostrarei."
+
+Sodoma, Genesis capitulo dezenove. Ninguem achou Sodoma. No mapa ela e uma mancha pontilhada em volta do Mar Morto.
+
+O filho, Isaque, e a ordem de oferecer o menino "na terra de Moria", Genesis capitulo vinte e dois. Moria entra sem ponto. Mas o nome volta: bem mais adiante, o livro de Cronicas diz que Salomao construiu o templo em Jerusalem, "no monte de Moria". O texto nao diz com todas as letras que e o mesmo lugar. O nome volta, e a serie diz so isso.
+
+Jaco: o prato de lentilhas, a bencao tomada do irmao Esau, a escada em Betel, e a luta ate o amanhecer que da a ele o nome Israel. Betel entra como provavel.
+
+Jose: vendido pelos irmaos, vai parar no Egito, e no fim a familia inteira vai morar la, na terra de Gosen, que entra como regiao: o delta do Nilo, do lado de leste.
+
+ETAPA 3: DO EGITO A TERRA (DE EXODO A RUTE)
+
+Moises: o menino no cesto no rio Nilo, a fuga, e a sarca que queima e nao se consome.
+
+As pragas e a saida do Egito. E o mar. O texto hebraico chama de yam suf; a traducao diz Mar Vermelho. Onde o texto poe a travessia, ninguem sabe: os candidatos vao dos lagos perto de Suez ate o golfo de Acaba. O mar entra pontilhado.
+
+O Sinai, onde o texto poe os mandamentos e o bezerro de ouro. Os mandamentos aparecem duas vezes no texto, em Exodo capitulo vinte e em Deuteronomio capitulo cinco. Qual monte e o Sinai e disputado. A tradicao crista aponta o Jebel Musa, no sul da peninsula do Sinai, desde o seculo quatro. Entra pela tradicao, com os outros candidatos.
+
+Quarenta anos no deserto, e o fim da Tora, Deuteronomio capitulo trinta e quatro: "subiu Moises das campinas de Moabe ao monte Nebo". Moises ve a terra do alto e nao entra. O Nebo e provavel, na Jordania. E o proprio texto avisa, sobre o tumulo de Moises: "ninguem tem sabido ate hoje a sua sepultura".
+
+Jerico. Jerico e ponto: existe e se sabe onde fica, perto do rio Jordao. Dizer aqui, com essas palavras, que saber onde fica um lugar nao prova a historia que o texto poe nele. O mapa so marca o lugar.
+
+Os juizes: Debora, Gideao, e Sansao, cuja historia termina em Gaza. O livro dos Juizes fecha com esta frase, capitulo vinte e um: "Naqueles dias nao havia rei em Israel: porem cada um fazia o que parecia reto aos seus olhos." Citar e seguir, sem comentar a frase (nada de "terra sem lei").
+
+Rute, que comeca, diz o texto, "nos dias em que os juizes julgavam", e vai dar em Belem. Belem entra no mapa aqui. E volta mais duas vezes.
+
+ETAPA 4: REIS E PROFETAS (DE PRIMEIRO SAMUEL A ESTER, DEPOIS DANIEL E JONAS)
+
+Samuel, em Silo, e o povo que pede um rei. O primeiro e Saul.
+
+Davi: escolhido em Belem, que volta ao mapa, e a funda contra Golias, no vale de Ela. Depois, rei em Jerusalem.
+
+Salomao, e o templo em Jerusalem, "no monte de Moria". E o mesmo nome da terra aonde Abraao levou o filho. No mapa, o nome volta, agora com ponto, em Jerusalem. O texto nao diz mais do que isso, e a serie tambem nao.
+
+O reino se divide em dois. Elias no monte Carmelo.
+
+A queda. O reino do norte e levado pela Assiria. ATENCAO: Assiria, com A. NAO dizer Siria, que e outro povo. Depois Jerusalem e destruida, e o povo e levado pra Babilonia. Babilonia, que no hebraico tem o mesmo nome de Babel, volta ao mapa.
+
+A volta, e Susa. O livro de Neemias comeca, diz o texto, "em Susa, a fortaleza" (ATENCAO: essa frase e do livro de NEEMIAS, e nao de Ester), na corte do rei da Persia, e a historia de Ester tambem se passa em Susa. Susa existe, no sudoeste do Ira. O texto nao diz em que ponto da volta a historia de Ester se encaixa, e a serie nao encaixa.
+
+E aqui o texto volta no tempo. Dizer isso claramente. Na Biblia em portugues, depois de Ester vem Jo, os Salmos, Proverbios, Eclesiastes, Cantares e os livros dos profetas. Sao livros de poema, de ditos e de profecia, e ficam fora da estrada principal da serie. Dentro dos profetas estao duas historias que muita gente conhece, e o mapa volta pra buscar as duas. Daniel, de volta a Babilonia, com a fornalha e a cova dos leoes. E Jonas.
+
+Jonas. O proprio texto poe Jonas no tempo dos reis, la atras: o segundo livro dos Reis fala de um Jonas filho de Amitai, e e com esse mesmo nome, Jonas filho de Amitai, que o livro de Jonas abre. O texto conta que Jonas e mandado a Ninive e foge pro lado contrario, pra Tarsis. Tarsis entra sem ponto: os candidatos vao do sul da Espanha a ilha da Sardenha. Ninive e ponto: fica em frente a Mossul, no Iraque. E o texto diz, Jonas capitulo um: "Preparou pois o Senhor um grande peixe, que tragasse a Jonas". Grande peixe. Na mesma traducao, quando Jesus lembra dessa historia no evangelho de Mateus, capitulo doze, a palavra que aparece e "baleia". Dois livros, duas palavras. A serie diz as duas e para ali, sem dizer se e ou nao e o mesmo animal.
+
+ETAPA 5: JESUS (OS QUATRO EVANGELHOS)
+
+Aqui a ordem muda de jeito. Os quatro evangelhos, Mateus, Marcos, Lucas e Joao, contam a mesma vida, um ao lado do outro. A etapa passa uma vez por essa vida, e cada historia diz de qual evangelho vem.
+
+O nascimento. So dois evangelhos contam, Mateus e Lucas, e cada um conta outra coisa. Mateus, capitulo dois: "eis que uns magos vieram do oriente a Jerusalem". Uns magos. O texto nao diz quantos eram e nao diz que eram reis. Tres sao os presentes: ouro, incenso e mirra. Lucas, capitulo dois, nao tem magos: tem os pastores, e Maria, que, diz o texto, "deitou-o numa manjedoura, porque nao havia lugar para eles na estalagem". Nazare entra no mapa, e Belem aparece pela terceira vez.
+
+O rio Jordao, com Joao Batista e o batismo. O rio entra como o Tigre e o Eufrates: a linha de um rio que existe. O lugar exato onde o texto poe o batismo e disputado, entre uma margem e a outra. Dizer "onde o texto poe o batismo", e nao "onde foi o batismo".
+
+A Galileia, que e regiao: dentro dela, Cafarnaum, que e ponto, o mar da Galileia, que existe e se sabe onde fica, e os milagres que os evangelhos contam ali. NAO dizer que a Galileia e ponto.
+
+As parabolas, que sao historias contadas dentro da historia. A do bom samaritano comeca assim, Lucas capitulo dez: "Descia um homem de Jerusalem para Jerico". Jerusalem e Jerico ja estao no mapa, e o caminho entre as duas e o lugar que a parabola nomeia. O filho prodigo nao tem lugar nenhum.
+
+A ultima semana, em Jerusalem: a ceia, o Getsemani, Judas, o julgamento e Pilatos. So Mateus conta que Pilatos, diz o texto, "lavou as maos diante da multidao". E em Joao, a expulsao dos vendedores do templo vem no comeco do livro; nos outros tres, vem no fim. O Getsemani entra pela tradicao, desde o seculo quatro.
+
+A cruz e o tumulo. O Golgota entra pela tradicao: desde o seculo quatro, ele e apontado na Igreja do Santo Sepulcro, em Jerusalem. E quem vai ao tumulo e quem esta la muda de um evangelho pro outro. Em Marcos, um jovem. Em Mateus, um anjo. Em Lucas, dois homens. Em Joao, dois anjos. A serie diz cada um. Depois, Emaus, onde Lucas conta um encontro no caminho: Emaus e disputado, tem quatro candidatos.
+
+ETAPA 6: OS PRIMEIROS (DE ATOS AO APOCALIPSE)
+
+Pentecostes, em Jerusalem. O texto faz uma lista dos povos que estavam la, e o mapa acende de uma vez uma porcao de terras.
+
+A estrada de Damasco. Saulo, que depois e chamado de Paulo. O texto diz, Atos capitulo nove: "caindo em terra, ouviu uma voz". Caindo em terra. O texto nao fala em cavalo. O cavalo veio da pintura.
+
+Antioquia, Atos capitulo onze: "em Antioquia foram os discipulos, pela primeira vez, chamados cristaos". Antioquia e ponto: e Antakya, no sul da Turquia.
+
+As viagens de Paulo: Filipos, Tessalonica, Atenas, Corinto, Efeso. Todas existem, e o mapa marca todas.
+
+O naufragio, em Malta, pela tradicao. E depois, Atos capitulo vinte e oito: "logo que chegamos a Roma". O livro de Atos termina com Paulo em Roma e nao diz o que aconteceu com ele depois.
+
+Na ordem da Biblia, depois de Atos vem vinte e uma cartas, a igrejas e a pessoas. Quase nenhuma conta historia, e elas ficam fora da estrada principal. NAO dizer quando as cartas foram escritas, nem "escritas depois": a data em que cada livro foi escrito nao e assunto desta serie.
+
+O Apocalipse, capitulo um: "estava na ilha chamada Patmos". Patmos e ponto: uma ilha grega. O livro manda cartas a sete igrejas, em sete cidades que o texto nomeia. E termina com uma cidade que desce do ceu, capitulo vinte e um: "a santa cidade, a nova Jerusalem, que de Deus descia do ceu". E a unica cidade do livro que o mapa nao tem como marcar.
+
+---
+
+ENCERRAMENTO
+
+O mapa cheio: comecou com dois rios e uma direcao, e termina numa ilha grega, passando por Ur, pelo Egito, por Jerusalem, por Babilonia e por Roma. Dizer que alguns lugares voltaram varias vezes: Belem tres vezes, Babel e Babilonia com o mesmo nome, e Jerusalem em quase todas as etapas.
+
+Onde essas historias aparecem fora do mapa: nas palavras do portugues. "Uma babel", pra confusao de lingua. "Trocar por um prato de lentilhas". "Davi contra Golias", pra briga desigual. "O bom samaritano", "o filho prodigo", "lavar as maos", "o beijo de Judas". E "apocalipse", que virou palavra pra fim do mundo.
+
+Repetir a regra: a serie conta como o texto conta. Diz "o texto diz" e para ali.
+
+Gancho: o primeiro episodio volta ao comeco do Genesis, onde o texto conta a criacao duas vezes, e o mapa ainda esta vazio.

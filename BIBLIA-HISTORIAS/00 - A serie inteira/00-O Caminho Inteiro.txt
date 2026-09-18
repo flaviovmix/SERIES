@@ -1,0 +1,29 @@
+Inicie dizendo: O que a Biblia conta - O Caminho Inteiro
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Caminho Inteiro.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio.
+
+Este e o piloto da serie O que a Biblia conta: o caminho inteiro, do jardim ao Apocalipse, num audio so, sem pagina e sem tela.
+
+FOCO: as seis etapas da serie, na ordem dos livros da Biblia em portugues, e em cada uma os lugares que entram no mapa, dizendo se cada lugar entra como ponto, como regiao, sem ponto ou pela tradicao. A regra da serie, dita no comeco e no fim: CONTAR COMO O TEXTO CONTA, dizendo "o texto diz" e parando ali, sem afirmar que aconteceu e sem afirmar que nao aconteceu.
+
+NAO se aprofundar em nenhuma historia: este audio e o mapa, e cada etapa desce nas dela. NAO dar data nenhuma. NAO inventar citacao: dizer so as que estao no roteiro, palavra por palavra. NAO usar mito, lenda, fabula, de fato aconteceu, milagre verdadeiro nem a Palavra nos ensina. Na voz de quem apresenta, dizer Jesus, e nao Cristo, e NAO tratar povo nenhum como vilao. NAO descrever cena de violencia. NAO pedir pra apertar nada nem falar de tela. NUNCA dizer que um lugar nao existe: dizer que ninguem sabe onde fica. Comecar pela ideia da serie, sem frase de efeito. NAO chamar nada de absurdo, doido ou estranho. O reino do norte cai pela Assiria, e nao pela Siria. NAO dizer quando as cartas foram escritas.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste audio e o mapa.
+
+Use tambem o Overview.txt como contexto curto.

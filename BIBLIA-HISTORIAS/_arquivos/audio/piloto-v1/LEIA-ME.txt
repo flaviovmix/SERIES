@@ -1,0 +1,11 @@
+Primeira versao do audio do piloto, gerada em 18/09/2026 (16:16), NAO usada.
+
+Motivo, conferido na transcricao (_transcricao.txt) e reouvido com o modelo medium:
+- 00:15, logo na abertura: "Quase nenhum dos lugares onde o mundo comeca ali no texto
+  existe de verdade na geografia." Afirma que os lugares nao existem, e a regra da serie
+  (D3) e dizer que ninguem sabe onde ficam.
+- 09:54: "A Siria leva o povo do norte". O texto (2 Reis 17) diz Assiria.
+- 12:07: chama a Galileia de ponto; e regiao (o ponto e Cafarnaum).
+- 14:03: "as varias cartas escritas depois". O roteiro dizia so que vem depois de Atos no
+  livro; quando foram escritas e assunto da serie irma.
+Notebook: ver _notebook-url.txt nesta pasta.

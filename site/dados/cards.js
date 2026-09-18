@@ -1099,6 +1099,251 @@ module.exports = {
     },
   },
 
+  /* ---------- O que a Biblia conta (serie 10) ---------- */
+
+  /* As artes sao gravuras de Gustave Doré para a Biblia de 1866, do Wikimedia Commons, em
+     dominio publico (lista e fonte de cada uma em BIBLIA-HISTORIAS/_arquivos/gravuras/).
+     E a D14 do plano da serie: cena biblica e arte antiga com autor e data, e nenhuma
+     mostra Deus. O `periodo` e o trecho da Biblia que a etapa cobre. */
+  'biblia-historias/etapas': {
+    pagina: 'biblia-historias.html',
+    tipo: 'etapas',
+    serie: '10',
+    grade: 'grade',
+    cards: {
+      '01': {
+        imagem: 'img/biblia-historias-etapa-01.webp',
+        descricao: `A luz rompendo as nuvens, no primeiro dia`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Gênesis 1 a 11`,
+        frase: `O mapa começa com lugares que ninguém localiza.`,
+        resumo: `Os dois relatos da criação, o jardim e o fruto, Caim e Abel, o dilúvio e a torre. Dos quatro rios do Éden o mapa acha dois, e nenhum lugar desta etapa vira ponto.`,
+        /* a etapa tem pagina e nenhum episodio no ar: contagem e botao vem daqui */
+        contagem: `4 episódios`,
+        botao: `Ver a etapa`,
+      },
+      '02': {
+        imagem: 'img/biblia-historias-etapa-02.webp',
+        descricao: `Abraão a caminho de Canaã, com os rebanhos`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Gênesis 12 a 50`,
+        frase: `Quatro gerações, de Ur ao Egito.`,
+        resumo: `Abraão sai de Ur, Sodoma, o monte de Moriá, a escada de Jacó e José vendido pelos irmãos. O mapa ganha o caminho inteiro de uma família.`,
+        contagem: `5 episódios`,
+      },
+      '03': {
+        imagem: 'img/biblia-historias-etapa-03.webp',
+        descricao: `O povo atravessando o Jordão`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Êxodo a Rute`,
+        frase: `O mar e o monte que ninguém fecha no mapa.`,
+        resumo: `O menino no cesto, as pragas, a travessia, o Sinai, os quarenta anos, Jericó, os juízes e Rute, que chega a Belém. O texto dá o nome do mar e do monte; onde eles ficam, ninguém fecha.`,
+        contagem: `7 episódios`,
+      },
+      '04': {
+        imagem: 'img/biblia-historias-etapa-04.webp',
+        descricao: `Daniel na cova dos leões`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `1 Samuel a Ester, Daniel e Jonas`,
+        frase: `O reino, a queda e a volta.`,
+        resumo: `Samuel, Davi e Golias, Salomão e o templo, Elias, a queda de Jerusalém, a volta, Ester, Daniel e Jonas. Na ordem do texto, Daniel e Jonas vêm depois de Ester, e o mapa volta no tempo pra buscar os dois.`,
+        contagem: `9 episódios`,
+      },
+      '05': {
+        imagem: 'img/biblia-historias-etapa-05.webp',
+        descricao: `Jesus curando os doentes`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `os quatro evangelhos`,
+        frase: `Quatro livros contando a mesma vida, cada um do seu jeito.`,
+        resumo: `O nascimento, o Jordão, a Galileia, as parábolas, a última semana e o túmulo. Cada história diz de qual evangelho vem, e onde eles contam diferente, a série diz o que cada um traz.`,
+        contagem: `6 episódios`,
+      },
+      '06': {
+        imagem: 'img/biblia-historias-etapa-06.webp',
+        descricao: `Paulo preso, falando à multidão em Jerusalém`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Atos ao Apocalipse`,
+        frase: `De Jerusalém a Roma, e de Roma a uma ilha.`,
+        resumo: `Pentecostes, a estrada de Damasco, as viagens de Paulo, o naufrágio e o Apocalipse, escrito em Patmos. O mapa termina cheio, e a última cidade do livro é a única que ele não tem como marcar.`,
+        contagem: `5 episódios`,
+      },
+    },
+    /* o card dos extras fecha a grade, como no Universo. A contagem e o botao saem da MENU */
+    extras: {
+      imagem: 'img/biblia-historias-extras.webp',
+      descricao: `Baruque escrevendo o que Jeremias dita`,
+      credito: `gravura de Gustave Doré, 1866`,
+      periodo: `fora da estrada &middot; lista aberta`,
+      frase: `O que aprofunda sem travar o caminho.`,
+      resumo: `O que o texto não diz e a tradição pôs, as leis, os Salmos, Jó, os profetas, os livros que só algumas Bíblias têm, os evangelhos lado a lado e as cartas. Cada extra diz depois de qual episódio vale ouvir, e a lista cresce com o tempo.`,
+    },
+  },
+
+  /* A pagina dos extras: os 15 do plano da serie, todos em producao e ainda sem arte (o
+     molde poe "Arte provisória"). O `periodo` e o "ouvir depois de" do plano (DE3: a
+     lista e aberta e o audio principal nao cita extra pelo nome) */
+  'biblia-historias-extras/todos': {
+    pagina: 'extras/biblia-historias.html',
+    tipo: 'extras',
+    serie: '10',
+    grade: 'grade',
+    cards: {
+      '01': {
+        periodo: `ouvir depois do piloto`,
+        frase: `Três reis, uma maçã e uma baleia que o texto não traz.`,
+        resumo: `O que o texto diz, o que a tradição pôs em cima, e quem pôs primeiro: os magos que viraram três reis com nome, o fruto que virou maçã, o grande peixe que virou baleia, os nomes dos ladrões, Madalena e o cavalo de Paulo.`,
+        contagem: `extra 1 de 15`,
+        selo: 'em produção',
+      },
+      '02': {
+        periodo: `ouvir depois de Os começos, episódio 02`,
+        frase: `Novecentos e sessenta e nove anos.`,
+        resumo: `As listas de Gênesis 5 e 10: as idades que o texto dá a cada geração, Matusalém, e a tabela dos povos que saem dos filhos de Noé.`,
+        contagem: `extra 2 de 15`,
+        selo: 'em produção',
+      },
+      '03': {
+        periodo: `ouvir depois de As famílias, episódio 05`,
+        frase: `O capítulo que interrompe José.`,
+        resumo: `No meio da história de José, o texto para e conta outra, da família de Judá. O que acontece ali, e por que o nome de Tamar volta na primeira página do Novo Testamento.`,
+        contagem: `extra 3 de 15`,
+        selo: 'em produção',
+      },
+      '04': {
+        periodo: `ouvir depois de Do Egito à terra, episódio 03`,
+        frase: `A parte da Torá que não conta história.`,
+        resumo: `Levítico e as leis de Êxodo, Números e Deuteronômio: o puro e o impuro, os sacrifícios, o sábado e o ano do jubileu, contados como o texto conta.`,
+        contagem: `extra 4 de 15`,
+        selo: 'em produção',
+      },
+      '05': {
+        periodo: `ouvir depois de Reis e profetas, episódio 05`,
+        frase: `O discípulo que fica com o manto.`,
+        resumo: `O manto de Elias, Naamã se lavando sete vezes no Jordão, o machado que boia, a viúva e o azeite, e os meninos e os ursos, contados no nível do texto.`,
+        contagem: `extra 5 de 15`,
+        selo: 'em produção',
+      },
+      '06': {
+        periodo: `ouvir depois de Reis e profetas, episódio 06`,
+        frase: `A queda vista de dentro da cidade.`,
+        resumo: `O rolo que o rei queima pedaço por pedaço, o profeta jogado na cisterna, e Jerusalém cercada, contada de dentro, como o livro de Jeremias conta.`,
+        contagem: `extra 6 de 15`,
+        selo: 'em produção',
+      },
+      '07': {
+        periodo: `ouvir depois de Reis e profetas, episódio 07`,
+        frase: `O homem que perde tudo.`,
+        resumo: `A conversa no céu, as perdas, os três amigos que vêm consolar e acabam discutindo, e a voz que responde do meio da tempestade. Na Bíblia em português, Jó vem logo depois de Ester.`,
+        contagem: `extra 7 de 15`,
+        selo: 'em produção',
+      },
+      '08': {
+        periodo: `ouvir depois de Reis e profetas, episódio 07`,
+        frase: `Cento e cinquenta poemas.`,
+        resumo: `O livro de cantos: quem o texto diz que escreveu cada um, os que todo mundo conhece, como o 23, e os que pedem vingança, que também estão lá.`,
+        contagem: `extra 8 de 15`,
+        selo: 'em produção',
+      },
+      '09': {
+        periodo: `ouvir depois de Reis e profetas, episódio 07`,
+        frase: `Os ditos, o "tudo é vaidade" e o poema de amor.`,
+        resumo: `Os três livros que o texto liga a Salomão: os provérbios, o Eclesiastes, que diz que tudo é vaidade, e o Cântico dos Cânticos, um poema de amor entre dois amantes.`,
+        contagem: `extra 9 de 15`,
+        selo: 'em produção',
+      },
+      '10': {
+        periodo: `ouvir depois de Reis e profetas, episódio 07`,
+        frase: `Livros de discurso, não de história.`,
+        resumo: `Isaías, Jeremias, Ezequiel e os doze profetas menores: o que é um livro de profeta, em que época o texto põe cada um, e por que eles vêm depois de Ester na Bíblia em português.`,
+        contagem: `extra 10 de 15`,
+        selo: 'em produção',
+      },
+      '11': {
+        periodo: `ouvir depois de Reis e profetas, episódio 09`,
+        frase: `Tobias, Judite e os Macabeus.`,
+        resumo: `Os livros que estão na Bíblia católica e na ortodoxa e não estão na protestante, e os acréscimos de Ester e Daniel. As histórias deles, e em quais Bíblias cada um aparece.`,
+        contagem: `extra 11 de 15`,
+        selo: 'em produção',
+      },
+      '12': {
+        periodo: `ouvir depois de Reis e profetas, episódio 09`,
+        frase: `Os séculos que a Bíblia protestante pula.`,
+        resumo: `Do fim da história de Neemias ao nascimento de Jesus: os persas, Alexandre, os reis gregos, a revolta dos Macabeus, a chegada de Roma e Herodes, com fonte de fora do texto.`,
+        contagem: `extra 12 de 15`,
+        selo: 'em produção',
+      },
+      '13': {
+        periodo: `ouvir depois de Jesus, episódio 06`,
+        frase: `Onde eles concordam e onde cada um conta outra coisa.`,
+        resumo: `Uma tabela com as histórias da vida de Jesus e o evangelho que traz cada uma: o que só Mateus conta, o que só João conta, e onde os quatro contam a mesma coisa de jeitos diferentes.`,
+        contagem: `extra 13 de 15`,
+        selo: 'em produção',
+      },
+      '14': {
+        periodo: `ouvir depois de Os primeiros, episódio 02`,
+        frase: `A primeira casa de quem não era judeu.`,
+        resumo: `Pedro em Jope, o lençol que desce do céu com os animais, a casa de Cornélio, o centurião de Cesareia, e a discussão em Jerusalém sobre quem podia entrar.`,
+        contagem: `extra 14 de 15`,
+        selo: 'em produção',
+      },
+      '15': {
+        periodo: `ouvir depois de Os primeiros, episódio 04`,
+        frase: `Vinte e uma cartas, e quase nenhuma história.`,
+        resumo: `Quem o texto diz que escreveu cada carta, pra quem e de onde, e as frases que saíram delas e ficaram, como o capítulo 13 de 1 Coríntios, que se lê em casamento.`,
+        contagem: `extra 15 de 15`,
+        selo: 'em produção',
+      },
+    },
+  },
+
+  /* A pagina da etapa Os começos: os quatro episodios, todos em producao. O `periodo` e o
+     trecho de Genesis do episodio; as artes sao recortes das mesmas gravuras de Doré */
+  'biblia-historias-01/episodios': {
+    pagina: 'etapas/biblia-historias-01.html',
+    tipo: 'episodios',
+    serie: '10',
+    etapa: '01',
+    grade: 'grade',
+    cards: {
+      '01': {
+        imagem: 'img/biblia-historias-01-ep-01.webp',
+        descricao: `As águas e a luz, no primeiro dia`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Gênesis 1 e 2`,
+        frase: `O texto conta a criação duas vezes.`,
+        resumo: `Os sete dias, e depois o jardim com o homem feito do pó. São dois relatos, de dois jeitos, e a série conta os dois na ordem, sem juntar. Dos quatro rios do Éden, o mapa acha dois.`,
+        contagem: `episódio 1 de 4`,
+      },
+      '02': {
+        imagem: 'img/biblia-historias-01-ep-02.webp',
+        descricao: `Adão e Eva saindo do jardim`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Gênesis 3 e 4`,
+        frase: `O texto não diz que era maçã.`,
+        resumo: `A serpente, o fruto, a saída do jardim, Caim e Abel e a marca de Caim. O mapa ganha a terra de Node, "a leste do Éden", sem ponto.`,
+        contagem: `episódio 2 de 4`,
+      },
+      '03': {
+        imagem: 'img/biblia-historias-01-ep-03.webp',
+        descricao: `A arca parada no alto do monte`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Gênesis 6 a 9`,
+        frase: `Um casal de cada, ou sete casais?`,
+        resumo: `Noé, a arca, o corvo, a pomba e o arco no céu. O texto dá duas contas dos animais, e a série diz as duas. O mapa ganha os montes de Ararate, como região.`,
+        contagem: `episódio 3 de 4`,
+      },
+      '04': {
+        imagem: 'img/biblia-historias-01-ep-04.webp',
+        descricao: `A torre de Babel`,
+        credito: `gravura de Gustave Doré, 1866`,
+        periodo: `Gênesis 11`,
+        frase: `Babel e Babilônia são o mesmo nome.`,
+        resumo: `A torre, a língua que se confunde e as pessoas que se espalham. No fim, a família de Terá sai de Ur, e é ali que a próxima etapa começa.`,
+        contagem: `episódio 4 de 4`,
+      },
+    },
+  },
+
   /* A foto leva pra serie e nao amplia (decisao 9), entao aqui nao ha credito. O rotulo
      ("11 etapas", "Em preparação") e o botao ou selo saem da MENU; o icone e o <symbol>
      do sprite da propria home (ico-<icone>). */
@@ -1153,6 +1398,15 @@ module.exports = {
         credito: `ilustração`,
         icone: 'planeta',
         resumo: `Os 13,797 bilhões de anos do universo comprimidos <em>num ano só</em>: o que aconteceu em cada dia, do primeiro instante à escrita, que cabe nos últimos doze segundos. E, em cada marca, <em>como é que alguém sabe aquela data</em>.`,
+      },
+      /* a capa nao veio do Flow: e o mapa de Ortelius, dominio publico (README em
+         BIBLIA-HISTORIAS/_arquivos/capa-serie/) */
+      '10': {
+        imagem: 'img/serie-biblia-historias.webp',
+        descricao: `A viagem de Abraão, com as cenas da vida dele em volta`,
+        credito: `mapa de Abraham Ortelius, 1590`,
+        icone: 'mapa',
+        resumo: `As histórias que a Bíblia conta, do jardim ao Apocalipse, <em>na ordem em que o texto conta</em>. Um mapa começa vazio e ganha um lugar por episódio, e cada história vem do jeito que o texto conta, sem julgar e sem pregar.`,
       },
     },
   },

@@ -1,0 +1,19 @@
+O QUE A BIBLIA CONTA - O CAMINHO INTEIRO - CONTEXTO
+===================================================
+Documento curto de contexto para uso com NotebookLM.
+
+O que a Biblia conta e uma serie de audio sobre as historias que a Biblia conta, do jardim ao Apocalipse, contadas do jeito que o texto conta, na ordem em que o texto conta, sem julgar e sem pregar. A serie nao afirma que as historias aconteceram e nao afirma que nao aconteceram: diz "o texto diz" e para ali. As citacoes sao da traducao de Joao Ferreira de Almeida, edicao Revista e Corrigida de 1904, em dominio publico. O objeto da serie e um mapa, que comeca vazio e ganha um lugar por episodio: ponto quando o lugar existe e se sabe onde fica, regiao quando o texto nomeia uma terra, sem ponto quando ninguem sabe onde fica, e "pela tradicao" quando e a tradicao que aponta o lugar. Quando o ponto e so provavel ou tem mais de um candidato, a serie diz isso.
+
+Este audio e o piloto: o caminho inteiro de uma vez, lugar por lugar, sem se aprofundar em nenhuma historia. Ao final o ouvinte tem o mapa da serie e as regras que atravessam tudo: contar como o texto conta, e quando o texto conta a mesma coisa de dois jeitos, dizer os dois.
+
+A serie tem seis etapas, na ordem dos livros:
+1. Os comecos: Genesis, capitulos 1 a 11.
+2. As familias: Genesis, capitulos 12 a 50.
+3. Do Egito a terra: de Exodo a Rute.
+4. Reis e profetas: de 1 Samuel a Ester, e depois Daniel e Jonas.
+5. Jesus: os quatro evangelhos.
+6. Os primeiros: de Atos ao Apocalipse.
+
+Por que importa: muita gente conhece essas historias soltas, de ouvir falar, e muita coisa que todo mundo lembra o texto nao diz. Seguir o texto na ordem mostra que elas formam um caminho so, e que o que o texto diz e o que a tradicao acrescentou sao coisas diferentes.
+
+Use este contexto apenas como apoio.

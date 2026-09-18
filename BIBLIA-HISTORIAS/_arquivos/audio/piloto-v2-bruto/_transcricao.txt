@@ -1,0 +1,369 @@
+# Transcricao automatica (faster-whisper small) - 14.6 min
+# Fonte: Toda a Bíblia do Gênesis ao Apocalipse.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] o que a Bíblia conta o caminho inteiro.
+[00:03] Este é o piloto da série.
+[00:04] Finalmente, né?
+[00:05] Pois é.
+[00:06] O plano aqui é bem direto, tá?
+[00:08] A gente vai cobrir o caminho inteiro das histórias da Bíblia, saindo lá do jardim
+[00:13] e indo direto até o Apocalipse.
+[00:15] Tudo no áudio só.
+[00:16] Isso.
+[00:17] Num ergulho só.
+[00:18] E olha, um aviso muito prático para quem está ouvindo a gente agora.
+[00:22] Este áudio não tem página que vira,
+[00:24] não precisa apertar nenhum botão
+[00:26] e não tem tela para olhar.
+[00:28] Foi feito para ouvir direto mesmo.
+[00:30] Sim, a ideia é que a pessoa coloque o fone, sabe?
+[00:33] E faça essa viagem de uma vez.
+[00:36] Mas antes de dar o primeiro passo,
+[00:38] a gente precisa colocar na mesa a regra de ouro do programa.
+[00:41] A regra principal, certo?
+[00:43] Exato.
+[00:43] A regra é muito simples.
+[00:45] A série conta como o texto conta.
+[00:48] A gente diz, tipo, o texto diz e para ali.
+[00:50] Para bem ali mesmo.
+[00:52] É.
+[00:52] A série não afirma que aconteceu e não afirma que não aconteceu.
+[00:57] Quem crê e quem não crê vão ouvir a mesma coisa aqui.
+[01:00] Sem ironia e claro, sem sermão.
+[01:03] Sem tentar da lição, né?
+[01:04] A moral já está no texto.
+[01:06] E para manter essa clareza, todas as citações vêm de uma fonte só.
+[01:10] A gente usa a tradução de João Ferreira de Almeida,
+[01:12] na edição revista e corrigida de 1904.
+[01:16] Que é um texto que já está em domínio público.
+[01:18] E sobre divisão dos livros,
+[01:19] é sempre bom lembrar que a Bíblia das Igrejas Protestantes tem 66 livros.
+[01:24] A Católica tem 73.
+[01:26] Isso.
+[01:27] E as igrejas ortodoxas tem mais alguns.
+[01:29] A ordem que a gente vai seguir aqui,
+[01:31] é a da Bíblia Protestante em Português, tá?
+[01:33] Com essa fundação pronta, a gente tem que responder uma pergunta bem prática.
+[01:37] Como a gente vai navegar por 66 livros de um jeito lógico?
+[01:42] Sem se perdendo meio do caminho, né?
+[01:43] Pois é.
+[01:44] A nossa única ferramenta aqui é um mapa.
+[01:47] Pensa no mapa que começa totalmente vazio.
+[01:51] Totalmente em branco.
+[01:52] Isso.
+[01:53] E cada lugar que a história visita entra nesse mapa de um jeito bem específico.
+[01:58] Tem quatro jeitos.
+[01:59] Certo. O primeiro é quando o lugar entra como ponto.
+[02:03] Isso é quando ele existe hoje e se sabe exatamente onde fica.
+[02:07] Exato.
+[02:07] Ganha um pontinho no mapa.
+[02:10] O segundo jeito é quando a escala é maior, sabe?
+[02:12] Ele entra como região.
+[02:14] Quando o texto nomeia uma terra inteira e não uma cidade só.
+[02:18] Tá. E o terceiro?
+[02:19] O terceiro é quando o lugar entra sem ponto ou pontilhado.
+[02:23] Isso acontece quando o texto nomeia o lugar, mas hoje ninguém sabe onde fica de verdade.
+[02:28] A gente tem um nome, mas falta coordenada para marcar, entendi?
+[02:31] Uhum.
+[02:32] E o quarto jeito é entrar pela tradição.
+[02:34] É quando, tipo, um lugar é apontado desde algum século antigo,
+[02:39] mas não tem um concesso fechado ou da arqueologia ou geografia.
+[02:42] E aqui entra uma observação muito importante sobre o nosso mapa, viu?
+[02:46] Ah, sim, manda lá.
+[02:47] Colocar um ponto no mapa mostra só onde o texto põe a história.
+[02:51] Saber onde fica Jericó, por exemplo, marca o lugar de forma exata, claro.
+[02:56] Mas isso não prova se a história aconteceu ali ou não.
+[02:58] Exato.
+[02:59] O mapa é sobre o que o texto conta.
+[03:02] E o mesmo vale para o contrário, tá?
+[03:04] Um lugar que ninguém acha e fica sem ponto não desmente a história.
+[03:08] Ele só, bom, fica sem coordenada.
+[03:10] Faz todo sentido.
+[03:11] E tem mais uma regra de navegação.
+[03:13] A regra dupla.
+[03:15] Como funciona?
+[03:16] Quando o texto conta a mesma coisa de dois jeitos, a série conta os dois.
+[03:20] A gente não escolhe uma versão para ficar mais fácil.
+[03:23] A gente conta como o texto conta.
+[03:25] Perfeito.
+[03:26] Então, o mapa aberto totalmente vazio e a gente entra em Gênesis, do capítulo 1 ao 11.
+[03:32] Por onde esse mapa começa a ganhar forma?
+[03:34] Começa lá no mesmíssimo primeiro versículo.
+[03:37] Gênesis 1.
+[03:39] No princípio criou Deus, o Céus e a Terra.
+[03:42] E olha só, logo de cara a gente já aplica a regra dupla.
+[03:47] Porque o texto conta a criação duas vezes, né?
+[03:51] No capítulo 1, a criação acontece em sete dias, vai dia após dia.
+[03:57] Depois muda.
+[03:58] Isso.
+[03:59] No capítulo 2, é contada de outro jeito.
+[04:02] Tem um jardim e o homem é feito do pó da terra.
+[04:06] Como a gente segue o texto, a série mantém os dois relatos lado a lado.
+[04:10] É, o pessoal que compilava os textos preferia guardar as versões que existiam do que simplesmente
+[04:15] apagar uma delas.
+[04:16] E sobre esse jardim do capítulo 2, o texto diz que o Senhor Deus plantou um jardim no
+[04:22] Eden da banda do oriente.
+[04:24] A banda do oriente.
+[04:25] Da uma direção.
+[04:26] É.
+[04:27] E fala de quatro rios, né?
+[04:28] Dois deles o mapa acha na hora.
+[04:29] O Tigre e o Efrates.
+[04:31] Eles existem.
+[04:32] Mas os outros dois, o Pison e o Jion, ninguém sabe quais são.
+[04:35] O que cria uma situação muito louca logo na largada.
+[04:39] O lugar mais famoso do começo do livro entra no mapa sem ponto.
+[04:43] Porque a gente tem a direção, tem dois rios reais, mas os outros somem.
+[04:48] O Eden fica sem coordenada.
+[04:50] É tipo um fantasma no mapa.
+[04:52] Pois é.
+[04:53] E aí o texto chega no momento do fruto, no capítulo 3.
+[04:57] A frase exata é, tomou do seu fruto e comeu.
+[05:00] E não fala de maçã, viu gente?
+[05:02] A maçã veio muito depois com a pintura e a arte.
+[05:05] O texto original é só fruto.
+[05:07] Bem mais aberto e logo depois vem Caim e Abel.
+[05:10] E o texto relata que Caim vai morar na terra de Noddy, a leste do Eden.
+[05:15] Mas peraí, se ninguém sabe onde fica o Eden direito, também não sabe onde fica Noddy, certo?
+[05:20] Exatamente.
+[05:21] Entra no mapa sem ponto também.
+[05:23] A gente avança e chega no dilúvio, conoé e a arca.
+[05:27] E aqui aparece a nossa regra dupla de novo.
+[05:30] Por causa dos animais, a maioria das pessoas lembra de um jeito só.
+[05:34] Mas no capítulo 6, o texto fala em dois de cada espécie.
+[05:38] Só que no capítulo 7, fala de 7 e 7, maxo e sua fêmea, para os animais limpos.
+[05:44] O texto guarda as duas contas.
+[05:46] E quando a arca pousa, é sobre os montes de ararate, no plural, certo?
+[05:50] Plural.
+[05:51] Então, montes de ararate entram no mapa como região.
+[05:55] Uma área grande de montanhas, pegando partes da atual Turquia e Armênia.
+[05:59] Não é um pico exato.
+[06:01] E para fechar esse começo, tem a torre, na terra de Sinar.
+[06:05] O texto diz, por isso se chamou seu nome Babel.
+[06:08] Por quanto ali, confundiu o Senhor, a língua de toda a terra.
+[06:12] E um detalhe do hebraico é que Babel é o mesmo nome usado depois para a babilônia.
+[06:17] Mas a torre em si entra sem ponto, né?
+[06:19] Sem ponto, ninguém sabe onde fica uma ruína que seja a torre.
+[06:23] Resumindo, lemos 11 capítulos e não tem nenhum ponto exato ainda.
+[06:27] Só direções e regiões.
+[06:29] Mas aí a escala muda.
+[06:31] O texto foca numa família só.
+[06:33] O pai de Abraão sai de Ur dos Caldeus para ir à terra de Canaão.
+[06:37] Ur tem dois candidatos no mapa hoje, né?
+[06:40] E eles não chegam em Canaão logo de cara.
+[06:43] Param em Arã.
+[06:44] E Arã finalmente acende um ponto, fica no sul da atual Turquia.
+[06:48] É lá que vem o chamado de Abraão.
+[06:50] Saite da tua terra para a terra que eu te mostrarei.
+[06:54] A família viaja.
+[06:55] E o texto relata Sodoma mais para frente.
+[06:58] Sodoma entra como pontilhado.
+[07:00] Ninguém achou a cidade.
+[07:02] Ela fica perto do mar morto.
+[07:03] Então vira uma mancha ali na região.
+[07:05] Aí a linha segue para o neto Jacob.
+[07:08] O texto relata o prato de lentilhas.
+[07:10] A benção que ele toma de Isaú.
+[07:12] E a escada que ele vê em Betel.
+[07:14] Betel entra como provável.
+[07:16] E tem a luta onde ele recebe o nome de Israel.
+[07:19] O fim da fafase da família se dá com José.
+[07:22] Vendido pelos irmãos.
+[07:24] Vai para o Egito.
+[07:25] E a família acaba indo para lá também.
+[07:27] Para a terra de Gozem.
+[07:28] Gozem entra como região.
+[07:30] Lá no delta do rio Nilo.
+[07:32] Dando um salto de tempo, o povo cresce e a gente entra em Esudo.
+[07:36] Moisés no rio Nilo.
+[07:38] A fuga.
+[07:39] A sarsa que queima sem se consumir.
+[07:42] O texto relata as pragas e a saída.
+[07:44] A fuga leva o povo para o mar.
+[07:47] E aqui tem o termo hebraico yamsuf.
+[07:50] Que foi traduzido como mar vermelho.
+[07:52] Mas entra pontilhado.
+[07:53] É, porque os candidatos de onde essa travessia rolou
+[07:56] variam desde Ladcime Suéza até lá embaixo no Golfo de Ácaba.
+[08:00] O ponto exato oscila.
+[08:02] E depois eles chegam ao Sinai.
+[08:05] Cenário dos mandamentos.
+[08:07] Que, seguindo a nossa regra dupla, são contados duas vezes, tá?
+[08:10] Em Esudo XX e Deutronômio V.
+[08:13] O monte Sinai em si entra pela tradição.
+[08:16] A tradição aponta para o sul da península do Sinai desde o século IV.
+[08:20] E sobre a morte de Moisés.
+[08:22] O texto diz
+[08:23] Subiu Moisés das Campinas de Moab ao monte Nebo.
+[08:27] Nebo entra como provável.
+[08:30] Mas a sepultura, o próprio texto diz que ninguém tem sabido até hoje.
+[08:34] Apesar exatamente onde fica no mapa hoje.
+[08:36] Mas, reforçando, né?
+[08:37] A Chargericó não prova a história.
+[08:40] Só fixa o cenário.
+[08:42] Com certeza.
+[08:43] Depois vem o Juízes.
+[08:44] Débora, Gideão, Sansão em Gaza.
+[08:47] Gaza é ponto.
+[08:48] O livro do Juízes termina com aquela frase pesada.
+[08:51] Naqueles dias não havia rei em Israel.
+[08:54] Porém, cada um fazia o que parecia reto aos seus olhos.
+[08:58] E logo depois já emenda a história de Ruth, que acontece nesses dias.
+[09:01] E vai dar lá em Belém.
+[09:03] Belém entra aqui como ponto.
+[09:05] E volta bastante, viu?
+[09:06] Volta quando o povo pede um rei.
+[09:08] Samuel vê o início com Saúl.
+[09:10] E depois, Davi, que é escolhida em Belém.
+[09:13] O texto narra a funda contra agolias no Vale de Elá.
+[09:16] E Davi vira rei em Jerusalém.
+[09:18] Aí vem Salomão, constrói o templo.
+[09:21] E o livro diz que foi no Monte de Moriá.
+[09:23] É o mesmo nome da terra para onde Abraão foi levado com Isaac lá atrás.
+[09:28] E agora, Moriá ganha ponto em Jerusalém.
+[09:31] O tempo passa.
+[09:32] O reino se divide.
+[09:34] Tem Elias no Monte Carmelo.
+[09:36] O reino do Norte cai pela Síria.
+[09:38] Pela Síria, com A.
+[09:40] E o Sul cai para quem?
+[09:42] Para a Babilônia.
+[09:43] Jerusalém é destruída.
+[09:45] E Babilônia, que a gente comentou que a mesma palavra de Babel
+[09:48] volta para o mapa com muita força.
+[09:50] Eles são levados para lá.
+[09:51] Mas o texto narra o retorno depois.
+[09:54] Em Nemias, começa em Suzan, a Fortaleza.
+[09:57] E Suzan é ponto exato no Irã de hoje.
+[10:00] Esther também acontece lá.
+[10:02] Mas o texto não crava o momento exato da história de Esther na volta.
+[10:06] Então a gente só acompanha.
+[10:07] Chegando aqui, a ordem dos livros em português
+[10:09] dá um passo para trás no tempo.
+[10:11] Com os profetas e os poemas.
+[10:13] Que ficam meio fora da estrada principal da narrativa.
+[10:16] Porque são visões e poesias.
+[10:18] Mas tem duas histórias nos profetas que a gente precisa marcar.
+[10:21] Daniel na Babilônia.
+[10:23] Com a Fornalha e a Cova dos Leões.
+[10:25] E Jonas.
+[10:26] Jonas tem uma geografia muito louca.
+[10:28] O próprio texto bota ele no Tempo dos Reis.
+[10:31] E ele recebe a ordem de ir para Nínive.
+[10:33] Que é ponto no atual Iraque.
+[10:35] Mas ele foge para o lado totalmente oposto.
+[10:38] Vai para Tarsis.
+[10:39] E Tarsis entra sem ponto.
+[10:41] Sabe ser na Espanha, na Sardenha, enfim.
+[10:43] E aí tem a parte no mar.
+[10:45] O texto original de Jonas diz
+[10:47] preparou pois o Senhor um grande peixe.
+[10:49] Que tragasse a Jonas.
+[10:51] Grande peixe.
+[10:52] Mas Jesus, em Mateus 12, cita a história usando a palavra Baleia.
+[10:55] Pela mesma tradição.
+[10:57] E a série diz as duas coisas e para ali.
+[10:59] E já que você falou de Mateus
+[11:01] a gente chega nos quatro evangelhos a vida de Jesus.
+[11:04] Quatro livros, a mesma vida.
+[11:06] O nascimento só está em Mateus e Lucas.
+[11:08] Em Mateus chegam os magos do Oriente a Jerusalém.
+[11:11] Não diz quanto zero, nem que eram reis.
+[11:14] Só três presentes.
+[11:16] Em Lucas não tem magos.
+[11:18] Tem pastores.
+[11:19] E Maria deitou ele numa mangedora.
+[11:21] Nazaré entra como ponto.
+[11:24] E Belém volta.
+[11:25] No Batismo, entra o Rio Jordão.
+[11:27] Que é uma linha no mapa.
+[11:29] A margem é disputada.
+[11:31] Depois vem a Galileia, que é região.
+[11:33] E Cafarna 1, que é ponto fixo.
+[11:36] As parábolas entram de um jeito diferente, né?
+[11:39] Sim.
+[11:40] O Bon Samaritano, por exemplo.
+[11:41] Descia um homem de Jerusalém para Jericó.
+[11:44] Usa o caminho real.
+[11:46] Mas o filho pródigo não tem lugar.
+[11:48] Não entra no mapa.
+[11:49] A última semana em Jerusalém,
+[11:51] só Mateus de Esquipilatos lavou as mãos
+[11:53] em João a expulsão dos vendedores é no começo.
+[11:56] Nos outros é no fim.
+[11:57] E o Getsemane e o Golgota entram pela tradição.
+[12:00] A visita ao túmulo é onde os relatos mais andam em paralelo, né?
+[12:04] Totalmente.
+[12:05] Marcos diz um jovem.
+[12:06] Mateus diz um anjo.
+[12:08] Lucas diz dois homens.
+[12:09] E João diz dois anjos.
+[12:11] Tudo como o texto conta.
+[12:12] E aí, depois tem Emmaus,
+[12:14] que entra como ponto disputado.
+[12:16] Tem quatro candidatos hoje.
+[12:18] E a gente passa para os primeiros.
+[12:20] De Atos ao Apocalipse.
+[12:22] Comece em Jerusalém com Pentecostes.
+[12:24] Vários povos na cena,
+[12:26] acendendo um monte de lugares no mapa de uma vez.
+[12:29] E aí, tem Saulo na estrada de Damasco.
+[12:31] Cainha em terra.
+[12:32] Houve uma voz.
+[12:33] E olha, o texto não fala de cavalo em nenhum momento.
+[12:36] Cavalo é a invenção de quadro muito tempo depois.
+[12:39] Ele muda o nome para Paulo.
+[12:41] Vai para Antioquia, ponto na Turquia.
+[12:43] Foi ali que foram chamados de cristãos pela primeira vez.
+[12:46] Ele viaja muito.
+[12:48] Filipe, Tessalônica, Atenas, Corinto.
+[12:51] Tudo ponto.
+[12:52] O Naufragio em Malta entra pela tradição.
+[12:54] E Paulo chega a Roma.
+[12:56] O livro acaba lá, logo que chegamos a Roma.
+[12:58] Sem dizer o fim dele.
+[12:59] E sobram as 21 cartas.
+[13:01] Que ficam fora dessa estrada de movimento.
+[13:04] O que leva direto para o Apocalipse com João na Ilha de Pátumus.
+[13:07] Pátumus é ponto.
+[13:09] E envia cartas a 7 igrejas.
+[13:11] E o mapa todo se encerra citando a Santa Cidade,
+[13:14] a nova Jerusalém que de Deus descia do céu.
+[13:17] A única cidade que não tem como marcar no chão de jeito nenhum, né?
+[13:21] E agora o nosso mapa está lotado.
+[13:23] Lotado.
+[13:24] Começou com dois rios, termina numa ilha grega.
+[13:27] Passando por Egito, Babilônia, Roma.
+[13:29] Belém voltou várias vezes.
+[13:31] Mas sabe o que é forte?
+[13:33] Tudo isso saiu do mapa e entrou direto no nosso vocabulário, sabe?
+[13:37] Em português.
+[13:38] Demais.
+[13:39] A gente fala, ah, o trânsito tá uma babel.
+[13:41] Ou fulano procou tudo por um prato de lentilhas.
+[13:44] Davi contra agolias para uma luta difícil.
+[13:47] O bom samaritano na rua.
+[13:49] Filho pródigo.
+[13:50] Lavar as mãos, o beijo de Judas e Apocalipse
+[13:53] como sinônimo de fim do mundo, né?
+[13:55] E assim a gente reforça.
+[13:57] Conta como o texto conta.
+[13:59] O texto diz e pronto.
+[14:01] O próximo passo para quem tá ouvindo
+[14:03] é ir para o primeiro episódio da série mesmo.
+[14:05] Voltar lá para o exato começo de Gênesis,
+[14:07] onde o mapa vai estar vazio de novo.
+[14:09] Mas fica uma reflexão, sabe,
+[14:11] depois de encher esse mapa.
+[14:13] A gente tenta colocar essas histórias
+[14:15] no papel caçando o rio e montanha, né?
+[14:17] Tentando achar as coordenadas de tudo.
+[14:19] Isso.
+[14:20] Mas se um texto moldo que a gente fala
+[14:22] milhares de anos depois,
+[14:24] talvez quando a gente procura o Eden
+[14:26] a geografia mais importante da Bíblia
+[14:28] não esteja no chão do Oriente Médio.
+[14:30] Talvez esse mapa todo tenha sido traçado
+[14:32] diretamente sobre a mente de quem escuta.

@@ -281,6 +281,48 @@
             { num: '05', nome: 'Chicxulub' }
         ]
       }
+    },
+    /* a 10 nasceu em 18/09/2026, desligada no series.json. O nome e provisorio (P1 do plano
+       da serie) e a 09 e da serie irma, De onde veio a Biblia, que entra antes desta */
+    {
+      num: '10',
+      nome: 'O que a Bíblia conta',
+      href: 'biblia-historias.html',
+      etapas: [
+        { num: '01', nome: 'Os começos', href: 'etapas/biblia-historias-01.html',
+          episodios: [
+            { num: '01', nome: 'Dois começos' },
+            { num: '02', nome: 'O fruto e o primeiro irmão' },
+            { num: '03', nome: 'O dilúvio' },
+            { num: '04', nome: 'A torre' }
+          ] },
+        { num: '02', nome: 'As famílias' },
+        { num: '03', nome: 'Do Egito à terra' },
+        { num: '04', nome: 'Reis e profetas' },
+        { num: '05', nome: 'Jesus' },
+        { num: '06', nome: 'Os primeiros' }
+      ],
+      extras: {
+        nome: 'Os extras da série',
+        href: 'extras/biblia-historias.html',
+        itens: [
+            { num: '01', nome: 'O que o texto não diz' },
+            { num: '02', nome: 'As genealogias e as idades' },
+            { num: '03', nome: 'Judá e Tamar' },
+            { num: '04', nome: 'As leis' },
+            { num: '05', nome: 'Eliseu' },
+            { num: '06', nome: 'Jeremias no cerco' },
+            { num: '07', nome: 'Jó' },
+            { num: '08', nome: 'Os Salmos' },
+            { num: '09', nome: 'Provérbios, Eclesiastes e Cântico dos Cânticos' },
+            { num: '10', nome: 'Os profetas' },
+            { num: '11', nome: 'Os livros que só algumas Bíblias têm' },
+            { num: '12', nome: 'Entre os dois testamentos' },
+            { num: '13', nome: 'Os quatro evangelhos lado a lado' },
+            { num: '14', nome: 'Pedro e Cornélio' },
+            { num: '15', nome: 'As cartas' }
+        ]
+      }
     }
   ];
 

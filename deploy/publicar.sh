@@ -44,7 +44,7 @@ DONO=1001:1001                 # flaviovmix; sem isso o container deixa arquivo 
 BACKUPS_MANTIDOS=3
 
 # As pastas do repo que contem site. Mexer aqui e a unica forma de publicar uma pasta nova.
-PASTAS_DO_SITE=("site" "Como Reinventar o Computador do Zero" "HARDWARE" "JAVA WEB" "FINANCAS" "UNIVERSO")
+PASTAS_DO_SITE=("site" "Como Reinventar o Computador do Zero" "HARDWARE" "JAVA WEB" "FINANCAS" "UNIVERSO" "BIBLIA-HISTORIAS")
 
 # Dentro delas, o que e material de origem e nao vai pro ar. A regra em uma frase: de
 # _arquivos so sai modelos-3d; plano e PDF nunca saem. (Confere com o que ja estava
