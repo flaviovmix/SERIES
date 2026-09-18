@@ -252,7 +252,11 @@ Esta é a etapa que mais esquece peça. Cada item abaixo já falhou uma vez.
    do `cards.js` ganha o campo `extras` (período, frase, resumo e a arte; a contagem e o
    botão saem da `MENU`), e nasce a página `site/extras/<serie>.html` com um card por extra
    (tipo `extras`, selo `em produção` enquanto não tiver link). Páginas de etapa e de extras
-   usam a mesma largura e a mesma grade de 4 colunas do hub (`wrap wrap--vitrine` + `grade`).
+   usam a mesma largura do hub (`wrap wrap--vitrine`). A de extras segue a grade de 4
+   colunas do hub (`grade`); a de etapa põe os episódios em **3 colunas** (18/09/2026,
+   "colocar em 3 colunas todas as páginas que estão nesse nível"). Quem fixa é o
+   gerador: a grade de episódios não leva o campo `grade` no `cards.js`, e ele recusa
+   quem escrever.
 6. ⚠️ **`PASTAS_DO_SITE` no `deploy/publicar.sh` (linha 47).** O publicador sobe só as
    pastas listadas ali. Série nova fora da lista tem as páginas do `site/` publicadas e a
    pasta da série **404 no ar**, e o script imprime PUBLICADO do mesmo jeito. Entrar na

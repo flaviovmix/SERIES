@@ -238,6 +238,24 @@ const MONTADORES = {
   'destaque-da-etapa': cardDoDestaqueDaEtapa,
 };
 
+/* a grade dos episodios de uma etapa e sempre de tres colunas, em toda serie (18/09,
+   pedido dele: "colocar em 3 colunas todas as paginas que estao nesse nivel"). A classe
+   sai daqui, e o cards.js que tentar outra e recusado; nos outros tipos ela vem do dado */
+const GRADE_FIXA_POR_TIPO = {
+  'episodios': 'grade grade--tres',
+  'episodios-sem-arte': 'grade grade--tres',
+};
+
+function classeDaGrade(dado, marcador) {
+  const fixa = GRADE_FIXA_POR_TIPO[dado.tipo];
+  if (!fixa) {
+    exigir(dado, ['grade'], marcador);
+    return dado.grade;
+  }
+  recusar(dado, ['grade'], marcador, `a grade dos episodios e fixa ("${fixa}"): tira do cards.js`);
+  return fixa;
+}
+
 /* ---------- a entrada ---------- */
 
 function carregarDados() {
@@ -249,7 +267,7 @@ function montarGrade(marcador, dado, menu, ativas) {
   const montador = MONTADORES[dado.tipo];
   if (!montador) throw new Error(`${marcador}: tipo "${dado.tipo}" nao existe (${Object.keys(MONTADORES).join(', ')})`);
   if (!fs.existsSync(path.join(PASTA_DO_SITE, dado.pagina || ''))) throw new Error(`${marcador}: a pagina "${dado.pagina}" nao existe no site/`);
-  const grade = { marcador, pagina: dado.pagina, tipo: dado.tipo, classe: dado.grade, cards: montador(dado, menu, marcador, ativas) };
+  const grade = { marcador, pagina: dado.pagina, tipo: dado.tipo, classe: classeDaGrade(dado, marcador), cards: montador(dado, menu, marcador, ativas) };
   return { ...grade, linhas: linhasDaGrade(grade) };
 }
 

@@ -17,6 +17,11 @@
 /* etapa com poucos episodios: duas colunas, pra nao sobrar buraco na fila */
 .grade--dupla { --colunas: 2; }
 
+/* a pagina de uma etapa: os episodios em tres colunas em toda serie (18/09, pedido
+   dele: "colocar em 3 colunas todas as paginas que estao nesse nivel"); eram duas nas
+   primeiras series e quatro nas novas. Os apertos do fim descem pra duas e uma */
+.grade--tres { --colunas: 3; }
+
 .cap {
   /* o botao do card mora no canto de cima da arte (.cap .cap__botao, mais abaixo) */
   position: relative;

@@ -14,7 +14,8 @@
      tipo     etapas | extras-da-serie | series | episodios | episodios-sem-arte |
               extras | destaque-do-extra | destaque-da-etapa
      serie, etapa, extra   de que galho da MENU saem os cards
-     grade    as classes da <div> da grade
+     grade    as classes da <div> da grade. Nos tipos episodios e episodios-sem-arte nao
+              vai: o gerador fixa tres colunas e recusa quem escrever outra (18/09)
      cards    { 'num da MENU': { ...texto } }, ou card (um so), nos tipos de um card
      extras   so no tipo etapas, opcional: o texto do card que leva aos extras da serie,
               posto no fim da grade das etapas (a contagem e o botao saem da MENU)
@@ -137,7 +138,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '01',
     etapa: '06',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: '../Como Reinventar o Computador do Zero/_REFAZER/06 - A máquina que liga/01 - A planta/img/capa-ilustra.jpg',
@@ -183,7 +183,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '01',
     etapa: '07',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: '../Como Reinventar o Computador do Zero/_REFAZER/07 - O computador encolhe/01 - O transistor/img/transistor-real.jpg',
@@ -220,7 +219,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '01',
     etapa: '08',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: '../Como Reinventar o Computador do Zero/_REFAZER/08 - Da sala pro mundo/01 - O computador chega em casa/img/altair-real.jpg',
@@ -257,7 +255,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '01',
     etapa: '09',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: '../Como Reinventar o Computador do Zero/_REFAZER/09 - A máquina que aprende/01 - A corrida do processador/img/pentium-die-real.jpg',
@@ -303,7 +300,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '01',
     etapa: '10',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: '../Como Reinventar o Computador do Zero/_REFAZER/10 - A rede vira feed/01 - A bolha/img/estrada-real.jpg',
@@ -349,7 +345,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '01',
     etapa: '11',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: '../Como Reinventar o Computador do Zero/_REFAZER/11 - A máquina que conversa/01 - A escala/img/transformer-real.png',
@@ -692,7 +687,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '02',
     etapa: '01',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: 'img/serie-java-web.webp',
@@ -791,7 +785,6 @@ module.exports = {
     tipo: 'episodios-sem-arte',
     serie: '03',
     etapa: '01',
-    grade: 'grade',
     cards: {
       '01': { resumo: `O que é um microcontrolador e o primeiro sinal de vida da caixa d'água: o LED que pisca.` },
       '02': { resumo: `Entrada e saída digital: a entrada que flutua e mente, o resistor que resolve e o relé que dá a ordem.` },
@@ -860,7 +853,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '07',
     etapa: '01',
-    grade: 'grade grade--dupla',
     cards: {
       '01': {
         imagem: '../FINANCAS/01 - O dinheiro do mes/01 - Para onde vai o salario/img/tela-12.webp',
@@ -1052,7 +1044,6 @@ module.exports = {
     etapa: '01',
     /* a mesma grade de 4 colunas do hub, e nao a dupla das outras paginas de etapa
        (pedido dele em 17/09: "mantem o mesmo padrao, nao gostei de dentro ser 2") */
-    grade: 'grade',
     cards: {
       '01': {
         imagem: 'img/universo-01-ep-01.webp',
@@ -1264,7 +1255,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '09',
     etapa: '01',
-    grade: 'grade',
     cards: {
       '01': {
         periodo: `o acervo e o índice`,
@@ -1485,7 +1475,6 @@ module.exports = {
     tipo: 'episodios',
     serie: '10',
     etapa: '01',
-    grade: 'grade',
     cards: {
       '01': {
         imagem: 'img/biblia-historias-01-ep-01.webp',

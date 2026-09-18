@@ -52,5 +52,7 @@ a { color: var(--accent); }
 /* a home das series: 90% da largura da tela, sem ficar mais estreita que uma pagina
    comum em tela menor. Foi 80% (13/09), 68% com dois cards por fileira ("deixa a
    largura da pagina um pouco mais estreita", 13/09) e voltou a alargar com tres por
-   fileira ("tem que pegar 90% da largura da pagina", 15/09) */
-.wrap--series { max-width: max(var(--largura-pagina), 90vw); }
+   fileira ("tem que pegar 90% da largura da pagina", 15/09). Os 90% valem ate a tela
+   de 1080 (1920 de largura); acima dela a home para nos 1728px que tinha ali, senao no
+   4K os cards esticavam ate a borda (18/09, "no 4k nao usar 100%") */
+.wrap--series { max-width: max(var(--largura-pagina), min(90vw, 1728px)); }
