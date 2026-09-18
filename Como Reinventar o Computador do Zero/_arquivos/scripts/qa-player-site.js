@@ -10,7 +10,7 @@ const { chromium } = require(achado);
 
 // sem argumento testa o local; com a URL (ex: https://series.afx.art.br/site/) testa o ar
 const BASE = process.argv[2] || 'file:///C:/src/PROJETOS/SEIRES/site/';
-const PAGINAS = ['hardware.html', 'etapas/hardware-01.html', 'extras/index.html', 'extras/extra-01.html', 'extras/extra-02.html', 'universo.html', 'biblia-historias.html'];
+const PAGINAS = ['hardware.html', 'etapas/hardware-01.html', 'extras/index.html', 'extras/extra-01.html', 'extras/extra-02.html', 'universo.html', 'biblia-livro.html', 'biblia-historias.html'];
 const TAMANHOS = [
   { nome: 'tel384-escuro', width: 384, height: 688, esquema: 'dark' },
   { nome: 'tel360', width: 360, height: 640, esquema: 'light' },

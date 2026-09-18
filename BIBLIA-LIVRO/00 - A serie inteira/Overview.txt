@@ -1,0 +1,18 @@
+DE ONDE VEIO A BIBLIA - A PRATELEIRA INTEIRA - CONTEXTO
+======================================================
+Documento curto de contexto para uso com NotebookLM.
+
+De onde veio a Biblia e uma serie de audio sobre a historia do livro, e nao sobre as historias que o livro conta. A Biblia da mesa de casa e uma biblioteca: textos escritos ao longo de seculos, em hebraico, aramaico e grego, e copiados a mao durante seculos. A serie pergunta quando cada parte foi escrita, qual e a copia mais antiga que existe dela, e como e que alguem sabe cada uma dessas datas.
+
+O objeto da serie e uma prateleira: a Biblia desmontada, com cada texto posto na ordem em que foi escrito. Cada texto leva duas marcas, a da escrita e a da copia mais antiga. Onde a tradicao e os estudiosos criticos dao datas diferentes, as duas entram, cada uma com quem defende. A regra de linguagem e HISTORIA, NUNCA DOUTRINA E NUNCA DESCRENCA: a serie nao diz se o texto e verdade nem se e palavra de Deus.
+
+Este audio e o piloto: a prateleira inteira de uma vez, sem descer em nenhum texto.
+
+A serie tem cinco etapas:
+1. Uma biblioteca na mesa: quantos livros, em que linguas, e o jeito de datar.
+2. O Antigo Testamento: quem escreveu, quando, e o que a arqueologia confirma e nao confirma.
+3. O Novo Testamento: as cartas antes dos evangelhos, e o que a palavra autor queria dizer no seculo um.
+4. Como chegou ate aqui: as copias, as primeiras traducoes, a imprensa e o portugues.
+5. Quem decidiu o que entra: as listas de livros de cada tradicao, e a Biblia da mesa de casa.
+
+Use este contexto apenas como apoio.

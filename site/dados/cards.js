@@ -1099,6 +1099,185 @@ module.exports = {
     },
   },
 
+  /* ---------- De onde veio a Biblia (serie 09) ---------- */
+
+  /* Sem arte ainda: o Flow bateu no limite de uso em 18/09/2026 (P3 e P4 do plano, em
+     BIBLIA-LIVRO/plano/serie/plano-da-serie.md). Os cards das etapas saem so com texto,
+     como os da Financas. O `periodo` e o que a prateleira ganha na etapa. */
+  'biblia-livro/etapas': {
+    pagina: 'biblia-livro.html',
+    tipo: 'etapas',
+    serie: '09',
+    grade: 'grade',
+    cards: {
+      '01': {
+        periodo: `a prateleira vazia`,
+        frase: `Uma biblioteca, não um livro.`,
+        resumo: `Quantos livros tem cada Bíblia, de 24 a 81, em que três línguas, e de onde vem a ordem do sumário. E dois amuletos de prata com uma bênção parecida com a de Números, pra aprender o jeito de datar que a série usa em todo episódio.`,
+        /* a etapa tem pagina e nenhum episodio no ar: contagem e botao vem daqui */
+        contagem: `2 episódios`,
+        botao: `Ver a etapa`,
+      },
+      '02': {
+        periodo: `a Bíblia Hebraica`,
+        frase: `Quem escreveu, quando, e o que a pedra diz.`,
+        resumo: `A Torá segundo a tradição e segundo a crítica, os reis nas inscrições de fora da Bíblia, o que a arqueologia não confirma sobre o Êxodo, o exílio na Babilônia e Daniel, o último a chegar.`,
+        contagem: `5 episódios`,
+      },
+      '03': {
+        periodo: `as cartas antes dos evangelhos`,
+        frase: `Os textos mais antigos são cartas.`,
+        resumo: `A pedra de Delfos que ajuda a datar Paulo em Corinto, qual evangelho veio primeiro, o ano 70 como régua e o que "autor" queria dizer no século I.`,
+        contagem: `4 episódios`,
+      },
+      '04': {
+        periodo: `a cópia mais antiga`,
+        frase: `Mil anos que mudaram de lugar em 1947.`,
+        resumo: `Os rolos do Mar Morto e os códices medievais, os papiros do Novo Testamento, as primeiras traduções, a imprensa e a Bíblia em português, de Almeida em diante.`,
+        contagem: `5 episódios`,
+      },
+      '05': {
+        periodo: `os índices`,
+        frase: `Quatro listas sobre o mesmo acervo.`,
+        resumo: `Como a Bíblia Hebraica e o Novo Testamento fecharam as suas listas, por que as Bíblias de hoje contam 66, 73 ou 81 livros, e de onde veio cada parte da Bíblia que está na mesa.`,
+        contagem: `4 episódios`,
+      },
+    },
+    /* o card dos extras fecha a grade, logo depois da etapa 05. A contagem e o botao saem da MENU */
+    extras: {
+      periodo: `fora da prateleira &middot; lista aberta`,
+      frase: `O que aprofunda sem travar a estrada.`,
+      resumo: `Os Manuscritos do Mar Morto e quem os achou, os códices de Alepo e Sinaítico, o nome de quatro letras, a Septuaginta, Jerônimo, Almeida, as pedras de Tel Dan e de Jericó, e os livros que ficaram de fora. Cada extra diz depois de qual episódio vale ouvir.`,
+    },
+  },
+
+  /* A pagina dos extras: os treze candidatos da secao _EXTRAS do plano, todos em producao.
+     O `periodo` e o "ouvir depois de" do plano (DE3 do processo editorial: a lista e aberta
+     e o audio principal nao cita extra pelo nome) */
+  'biblia-livro-extras/todos': {
+    pagina: 'extras/biblia-livro.html',
+    tipo: 'extras',
+    serie: '09',
+    grade: 'grade',
+    cards: {
+      '01': {
+        periodo: `ouvir depois de Uma biblioteca na mesa, episódio 02`,
+        frase: `Seis jeitos de datar, e o que cada um não consegue.`,
+        resumo: `A forma da letra, o radiocarbono, a camada de terra, a língua que muda, a citação num autor com data e a comparação entre cópias: o que cada método diz e o que ele não diz.`,
+        contagem: `extra 1 de 13`,
+        selo: 'em produção',
+      },
+      '02': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 01`,
+        frase: `Uma caverna, 1947, e quem achou.`,
+        resumo: `O pastor beduíno, os rolos vendidos em duas partes, o anúncio no jornal de 1954, as escavações até 1956 e os fragmentos falsos que apareceram no mercado depois de 2002.`,
+        contagem: `extra 2 de 13`,
+        selo: 'em produção',
+      },
+      '03': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 01`,
+        frase: `Mil anos inteiro, e depois 1947.`,
+        resumo: `O códice que Aharon ben Asher anotou no séc. X, a viagem de Tiberíades a Alepo, o dano de 1947 que levou quase toda a Torá, a saída da Síria em 1958 e as folhas que reapareceram depois.`,
+        contagem: `extra 3 de 13`,
+        selo: 'em produção',
+      },
+      '04': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 01`,
+        frase: `Escrito de um jeito, lido de outro.`,
+        resumo: `O costume de não pronunciar o nome, as quatro consoantes lidas como "Senhor", de onde veio a forma "Jeová" e por que muitas Bíblias escrevem SENHOR em maiúsculas. Sem dizer qual pronúncia é a certa.`,
+        contagem: `extra 4 de 13`,
+        selo: 'em produção',
+      },
+      '05': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 02`,
+        frase: `Uma Bíblia do séc. IV em quatro lugares.`,
+        resumo: `Tischendorf no mosteiro em 1844 e 1859, a venda ao British Museum em 1933, as folhas achadas em 1975, e por que as quatro instituições dizem que parte da história não é totalmente conhecida.`,
+        contagem: `extra 5 de 13`,
+        selo: 'em produção',
+      },
+      '06': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 02`,
+        frase: `A promessa que Erasmo não fez.`,
+        resumo: `Como um trecho de 1 João entrou na terceira edição do Novo Testamento grego de Erasmo, o manuscrito vindo da Inglaterra, e o estudo de 1980 que mostrou que a famosa promessa não está em nenhuma obra dele.`,
+        contagem: `extra 6 de 13`,
+        selo: 'em produção',
+      },
+      '07': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 03`,
+        frase: `Setenta e dois tradutores, e uma história que cresceu.`,
+        resumo: `A Carta de Aristeias, o relato que ganhou milagre com o tempo, Jerônimo chamando a história das celas de mentira, e duas memórias judaicas opostas: uma festa e um dia de jejum.`,
+        contagem: `extra 7 de 13`,
+        selo: 'em produção',
+      },
+      '08': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 03`,
+        frase: `O homem por trás da Vulgata.`,
+        resumo: `Roma, Belém, os prefácios em que ele explica cada escolha, a discussão com Agostinho sobre traduzir do hebraico, e a palavra "vulgata", que ele usava pro texto dos outros.`,
+        contagem: `extra 8 de 13`,
+        selo: 'em produção',
+      },
+      '09': {
+        periodo: `ouvir depois de Uma biblioteca na mesa, episódio 01`,
+        frase: `Quem cortou a Bíblia em pedaços numerados.`,
+        resumo: `Os capítulos atribuídos a Stephen Langton, em Paris, e os versículos numerados por Estienne em 1551 e 1555, com a história de que parte do trabalho foi feita a cavalo, contada pelo filho dele.`,
+        contagem: `extra 9 de 13`,
+        selo: 'em produção',
+      },
+      '10': {
+        periodo: `ouvir depois de Como chegou até aqui, episódio 05`,
+        frase: `A tradução que ele não viu terminar.`,
+        resumo: `O nascimento sem confirmação cabal, a conversão aos 14 anos, Malaca e Batávia, o Novo Testamento de 1681 cheio de erros e a morte em 1691, no meio de Ezequiel.`,
+        contagem: `extra 10 de 13`,
+        selo: 'em produção',
+      },
+      '11': {
+        periodo: `ouvir depois de O Antigo Testamento, episódio 02`,
+        frase: `Uma pedra de piso com um nome.`,
+        resumo: `O fragmento achado em 1993, os pedaços de 1994, a leitura "casa de Davi" e a discussão que ela provocou entre 1994 e 1996.`,
+        contagem: `extra 11 de 13`,
+        selo: 'em produção',
+      },
+      '12': {
+        periodo: `ouvir depois de O Antigo Testamento, episódio 03`,
+        frase: `A mesma muralha, três leituras.`,
+        resumo: `John Garstang nos anos 1930, Kathleen Kenyon nos anos 1950, a discussão de 1990 e o radiocarbono de 1995 sobre quando a cidade caiu.`,
+        contagem: `extra 12 de 13`,
+        selo: 'em produção',
+      },
+      '13': {
+        periodo: `ouvir depois de Quem decidiu o que entra, episódio 02`,
+        frase: `Perto da prateleira, fora do índice.`,
+        resumo: `O Evangelho de Tomé, a Didaqué, o Pastor de Hermas e a Carta de Barnabé, que estão dentro do Códice Sinaítico, e 1 Enoque e Jubileus, que são Escritura na Igreja etíope. Quem usa e quem não usa, sem juízo.`,
+        contagem: `extra 13 de 13`,
+        selo: 'em produção',
+      },
+    },
+  },
+
+  /* A pagina da etapa Uma biblioteca na mesa: os dois episodios, em producao. O `periodo`
+     e o que o episodio poe na prateleira */
+  'biblia-livro-01/episodios': {
+    pagina: 'etapas/biblia-livro-01.html',
+    tipo: 'episodios',
+    serie: '09',
+    etapa: '01',
+    grade: 'grade',
+    cards: {
+      '01': {
+        periodo: `o acervo e o índice`,
+        frase: `Vinte e quatro, sessenta e seis, setenta e três.`,
+        resumo: `Quantos livros tem cada Bíblia, por que 22 e 24 são o mesmo acervo contado de dois jeitos, as três línguas e os trechos em aramaico. O sumário e os números de capítulo e versículo chegaram muito depois dos textos.`,
+        contagem: `episódio 1 de 2`,
+      },
+      '02': {
+        periodo: `as duas marcas`,
+        frase: `A cópia não data o texto.`,
+        resumo: `Dois amuletos de prata achados em Jerusalém em 1979, com uma bênção parecida com a de Números. Como se chegou à data deles, por que ela é disputada, e as duas marcas que todo texto vai levar na prateleira.`,
+        contagem: `episódio 2 de 2`,
+      },
+    },
+  },
+
   /* ---------- O que a Biblia conta (serie 10) ---------- */
 
   /* As artes sao gravuras de Gustave Doré para a Biblia de 1866, do Wikimedia Commons, em
@@ -1398,6 +1577,15 @@ module.exports = {
         credito: `ilustração`,
         icone: 'planeta',
         resumo: `Os 13,797 bilhões de anos do universo comprimidos <em>num ano só</em>: o que aconteceu em cada dia, do primeiro instante à escrita, que cabe nos últimos doze segundos. E, em cada marca, <em>como é que alguém sabe aquela data</em>.`,
+      },
+      /* a capa nao veio do Flow (limite de uso em 18/09/2026): e um trecho do Grande Rolo de
+         Isaias, foto de dominio publico do Commons (README em BIBLIA-LIVRO/_arquivos/capa-serie/) */
+      '09': {
+        imagem: 'img/serie-biblia-livro.webp',
+        descricao: `Um trecho do Grande Rolo de Isaías, achado em Qumran em 1947`,
+        credito: `Grande Rolo de Isaías, c. 125 a.C., foto de domínio público`,
+        icone: 'rolo',
+        resumo: `Como textos escritos ao longo de séculos, em três línguas, viraram <em>a Bíblia da mesa de casa</em>. Uma prateleira ganha um texto por episódio, com a data e <em>como é que alguém sabe aquela data</em>, sem doutrina e sem descrença.`,
       },
       /* a capa nao veio do Flow: e o mapa de Ortelius, dominio publico (README em
          BIBLIA-HISTORIAS/_arquivos/capa-serie/) */

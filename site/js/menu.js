@@ -282,6 +282,44 @@
         ]
       }
     },
+    /* a 09 nasceu em 18/09/2026, desligada no series.json. Nome e posicao sao provisorios
+       (P1 e P2 do plano, BIBLIA-LIVRO/plano/serie/plano-da-serie.md). Ligar e decisao dele,
+       e e o ultimo passo */
+    {
+      num: '09',
+      nome: 'De onde veio a Bíblia',
+      href: 'biblia-livro.html',
+      etapas: [
+        { num: '01', nome: 'Uma biblioteca na mesa', href: 'etapas/biblia-livro-01.html',
+          episodios: [
+            { num: '01', nome: 'Uma biblioteca, não um livro' },
+            { num: '02', nome: 'O pedaço mais antigo' }
+          ] },
+        { num: '02', nome: 'O Antigo Testamento' },
+        { num: '03', nome: 'O Novo Testamento' },
+        { num: '04', nome: 'Como chegou até aqui' },
+        { num: '05', nome: 'Quem decidiu o que entra' }
+      ],
+      extras: {
+        nome: 'Os extras da série',
+        href: 'extras/biblia-livro.html',
+        itens: [
+            { num: '01', nome: 'Como se data um texto' },
+            { num: '02', nome: 'Os Manuscritos do Mar Morto' },
+            { num: '03', nome: 'O Códice de Alepo' },
+            { num: '04', nome: 'O nome de quatro letras' },
+            { num: '05', nome: 'O Códice Sinaítico' },
+            { num: '06', nome: 'O versículo que entrou em 1522' },
+            { num: '07', nome: 'A Septuaginta e os 72' },
+            { num: '08', nome: 'Jerônimo' },
+            { num: '09', nome: 'Capítulos e versículos' },
+            { num: '10', nome: 'João Ferreira de Almeida' },
+            { num: '11', nome: 'A estela de Tel Dan' },
+            { num: '12', nome: 'Jericó e as três escavações' },
+            { num: '13', nome: 'Os livros que ficaram de fora' }
+        ]
+      }
+    },
     /* a 10 nasceu em 18/09/2026, desligada no series.json. O nome e provisorio (P1 do plano
        da serie) e a 09 e da serie irma, De onde veio a Biblia, que entra antes desta */
     {

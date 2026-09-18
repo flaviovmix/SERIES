@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De onde veio a Bíblia</title>
+<meta name="description" content="Como textos escritos ao longo de séculos, em três línguas, viraram a Bíblia da mesa de casa: uma prateleira que ganha um texto por episódio, com a data e o como se sabe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/cabecalho.css">
+<link rel="stylesheet" href="css/secao.css">
+<link rel="stylesheet" href="css/capitulo.css">
+<link rel="stylesheet" href="css/audio.css">
+<link rel="stylesheet" href="css/animacao/lightbox.css">
+</head>
+
+<body>
+
+<div class="wrap wrap--vitrine">
+
+  <header class="head">
+    <p class="eyebrow"><a href="index.html">&larr; Séries</a> &middot; Série em 5 etapas &middot; do rolo à mesa de casa</p>
+    <h1>De onde veio a Bíblia</h1>
+    <!-- o piloto: o 00 da serie, a prateleira inteira num audio so (18/09/2026). A classe
+         audio--faixa (css/cabecalho.css e css/audio.css) leva o player pra uma faixa logo
+         abaixo da barra do topo no desktop; no telefone ele fica aqui, embaixo do titulo.
+         E a v2, com o "Inicie dizendo" lido pelo NotebookLM cortado do comeco; a v1 e as
+         ressalvas das duas ficam na pasta do piloto -->
+    <div class="audio audio--faixa">
+      <audio controls preload="none" src="../BIBLIA-LIVRO/00%20-%20A%20serie%20inteira/Como%20a%20Bíblia%20virou%20um%20livro%20só.m4a">
+        Seu navegador não toca áudio aqui.
+      </audio>
+      <p class="audio__ficha"><span>A prateleira inteira em áudio</span><span>15 min</span></p>
+    </div>
+    <p class="lede">A Bíblia da mesa de casa é uma <strong>biblioteca</strong>: textos escritos ao longo de séculos, em três línguas, e copiados à mão até a imprensa. A série põe cada parte numa prateleira, <strong>na ordem em que foi escrita</strong>, e conta <strong>como é que alguém sabe</strong> onde pôr cada uma.</p>
+    <div class="bars" role="presentation"></div>
+  </header>
+
+  <section>
+    <header class="secao">
+      <p class="secao__contexto">Cinco etapas, do rolo à mesa</p>
+      <h2>Cada episódio põe um texto na prateleira.</h2>
+      <p class="secao__nota">Um objeto só atravessa a série: a prateleira, que começa vazia e ganha texto a cada episódio. Cada texto entra com duas marcas: quando foi escrito, e a cópia mais antiga que existe dele. Onde a tradição e os estudiosos críticos dão datas diferentes, as duas entram, cada uma com o nome de quem defende.</p>
+    </header>
+
+    <!-- cards: biblia-livro/etapas (gerado por gera-cards.js a partir da MENU e do site/dados/cards.js; nao editar a mao) -->
+    <div class="grade">
+
+      <article class="cap">
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">01</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">a prateleira vazia</p>
+          <h3>Uma biblioteca na mesa</h3>
+          <p class="cap__frase">Uma biblioteca, não um livro.</p>
+          <p class="cap__resumo">Quantos livros tem cada Bíblia, de 24 a 81, em que três línguas, e de onde vem a ordem do sumário. E dois amuletos de prata com uma bênção parecida com a de Números, pra aprender o jeito de datar que a série usa em todo episódio.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">2 episódios</span>
+            <a class="cap__botao" href="etapas/biblia-livro-01.html" aria-label="Abrir a etapa 01, Uma biblioteca na mesa">Ver a etapa</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">02</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">a Bíblia Hebraica</p>
+          <h3>O Antigo Testamento</h3>
+          <p class="cap__frase">Quem escreveu, quando, e o que a pedra diz.</p>
+          <p class="cap__resumo">A Torá segundo a tradição e segundo a crítica, os reis nas inscrições de fora da Bíblia, o que a arqueologia não confirma sobre o Êxodo, o exílio na Babilônia e Daniel, o último a chegar.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">5 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">03</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">as cartas antes dos evangelhos</p>
+          <h3>O Novo Testamento</h3>
+          <p class="cap__frase">Os textos mais antigos são cartas.</p>
+          <p class="cap__resumo">A pedra de Delfos que ajuda a datar Paulo em Corinto, qual evangelho veio primeiro, o ano 70 como régua e o que "autor" queria dizer no século I.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">4 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">04</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">a cópia mais antiga</p>
+          <h3>Como chegou até aqui</h3>
+          <p class="cap__frase">Mil anos que mudaram de lugar em 1947.</p>
+          <p class="cap__resumo">Os rolos do Mar Morto e os códices medievais, os papiros do Novo Testamento, as primeiras traduções, a imprensa e a Bíblia em português, de Almeida em diante.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">5 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">05</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">os índices</p>
+          <h3>Quem decidiu o que entra</h3>
+          <p class="cap__frase">Quatro listas sobre o mesmo acervo.</p>
+          <p class="cap__resumo">Como a Bíblia Hebraica e o Novo Testamento fecharam as suas listas, por que as Bíblias de hoje contam 66, 73 ou 81 livros, e de onde veio cada parte da Bíblia que está na mesa.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">4 episódios</span>
+            <span class="cap__selo">em produção</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="cap">
+        <div class="cap__arte" aria-hidden="true"><span class="cap__num">EX</span><span class="cap__tag">Arte provisória</span></div>
+        <div class="cap__corpo">
+          <p class="cap__periodo">fora da prateleira &middot; lista aberta</p>
+          <h3>Os extras da série</h3>
+          <p class="cap__frase">O que aprofunda sem travar a estrada.</p>
+          <p class="cap__resumo">Os Manuscritos do Mar Morto e quem os achou, os códices de Alepo e Sinaítico, o nome de quatro letras, a Septuaginta, Jerônimo, Almeida, as pedras de Tel Dan e de Jericó, e os livros que ficaram de fora. Cada extra diz depois de qual episódio vale ouvir.</p>
+          <div class="cap__pe">
+            <span class="cap__eps">13 extras</span>
+            <a class="cap__botao" href="extras/biblia-livro.html" aria-label="Ver os extras da série">Ver extras</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- /cards -->
+  </section>
+
+  <section>
+    <header class="secao">
+      <p class="secao__contexto">Como a série conta</p>
+      <h2>História, nunca doutrina e nunca descrença.</h2>
+      <p class="secao__nota">A série não diz se o que o texto conta é verdade, nem que é ou não é palavra de Deus. Diz quando cada parte foi escrita e copiada, quem defende cada data e como se chegou a ela. Onde a arqueologia confirma, a série diz que confirma; onde não confirma, diz que não confirma.</p>
+    </header>
+  </section>
+
+</div>
+
+<script src="js/menu.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/animacao/lightbox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+# Transcricao automatica (faster-whisper small) - 25.7 min
+# Fonte: A história material da biblioteca bíblica.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] De onde veio a Bíblia A Pratileira inteira?
+[00:02] É. E a ideia hoje é olhar para isso não como um livro, só.
+[00:07] Isso. A Bíblia que fica ali na mesa de casa não é um volume único, escrito de uma vez.
+[00:12] A gente está lidando com uma biblioteca inteira.
+[00:14] Exatamente. São dezenas de textos diferentes.
+[00:17] Textos que foram escritos ao longo de muitos séculos, em três línguas diferentes.
+[00:22] E copiados à mão, né? Um por um, até a invenção da imprança.
+[00:25] Sim, copiados e recopiados.
+[00:28] Então, a nossa missão, nessa esforação de hoje, é bem claro.
+[00:31] A gente vai mapear quando cada parte dessa biblioteca foi escrita, quando foi copiada
+[00:37] e, principalmente, como é que alguém consegue saber essas datas?
+[00:40] E tem uma regra central para quem está acompanhando a gente.
+[00:44] O nosso foco aqui é, estritamente, a história material do livro.
+[00:48] A jornada do papel, da tinta, do pergaminho.
+[00:51] É, a gente nunca vai entrar no mérito de doutrina, nem de descrença também.
+[00:55] Pois é. O áudio de hoje não vai dizer se o que os textos contam é verdade ou não.
+[01:01] Até porque datas não respondem esse tipo de pergunta.
+[01:04] Com certeza. E para organizar essa quantidade gigante de informação, sem ninguém se perder,
+[01:09] a gente vai usar uma única imagem mental hoje, a prateleira.
+[01:13] Tá, me explica como funciona essa prateleira.
+[01:15] Imagina aquela bíblia da mesa de casa.
+[01:18] Agora imagina ela toda desmontada, sem as capas.
+[01:20] Certo, desmontou tudo.
+[01:22] Isso, aí a gente pega cada texto individual dessa biblioteca
+[01:26] e coloca lado a lado numa prateleira de madeira bem comprida.
+[01:30] A ordem deles ali é exatamente a data em que cada um foi escrito.
+[01:34] Então a bíblia inteira, do jeito que sai da gráfica hoje,
+[01:37] ela fica lá na ponta direita da prateleira, lá no final.
+[01:40] Exato.
+[01:41] E cada um desses textos antigos na nossa prateleira
+[01:45] vai receber duas marcas visíveis.
+[01:48] A primeira marca diz quando o texto foi escrito,
+[01:51] a segunda marca diz de quando é a cópia mais antiga que existe dele hoje.
+[01:57] Tá, mas aí tem um ponto.
+[01:59] A gente sabe que as datas geram muito debate.
+[02:02] Como a gente coloca uma marca na prateleira se os estudiosos discordam do ano?
+[02:06] Aí entra a regra de como a gente organiza isso.
+[02:09] Quando tem disputa, a data nunca é um ponto exato.
+[02:12] Ela entra na prateleira como uma faixa de tempo.
+[02:15] Uma faixa, entendi.
+[02:16] É, a gente vai sempre colocar os dois lados.
+[02:20] A visão mantida pela tradição e a visão dos estudiosos críticos.
+[02:24] A gente apresenta os nomes de quem defende e os anos, sem escolher lado.
+[02:29] Perfeito.
+[02:29] E tem mais uma regra de ouro pra tudo isso.
+[02:32] A cópia não dá todo o texto original.
+[02:34] Explica melhor essa parte.
+[02:36] Se alguém acha uma cópia muito antiga num deserto,
+[02:40] isso só comprova que o texto já existia no momento em que aquela cópia foi feita.
+[02:45] A cópia não diz o ano em que o autor sentou pra escrever a primeira versão.
+[02:50] Bom, antes de colocar o primeiro texto lá na ponta esquerda da prateleira,
+[02:55] a gente precisa entender o tamanho dessa biblioteca.
+[02:58] Quantos livros tem aí?
+[02:59] Então, essa contagem muda bastante, depende de quem responde.
+[03:05] A Bíblia judaica, por exemplo, conta 24 livros.
+[03:08] E os protestantes?
+[03:09] Os protestantes contam 39 livros só na parte do antigo testamento.
+[03:14] Mas olha que detalhe, são os mesmíssimos textos.
+[03:18] Ah, é só o jeito de agrupar.
+[03:19] Sim, os judeus juntam os 12 profetas menores e contam todos eles como sendo um livro só.
+[03:26] No total da biblioteca, protestantes contam 66 livros.
+[03:30] Católicos contam 73.
+[03:33] Tem diferença pra Igreja de Tiup também, né?
+[03:35] Tem.
+[03:35] Eles chegam a 81 livros.
+[03:37] E, historicamente, os números sempre foram esses?
+[03:40] Não, mesmo.
+[03:42] Sabe o historiador judeu, Josepho?
+[03:45] Lá no fim do século 1, ele fala em 22 livros.
+[03:49] E tem o Geronimo também.
+[03:50] É, o Geronimo no ano 391, ele explica que essas listas de 22 e de 24 livros são o mesmo acervo,
+[03:59] só contado de forma diferente de novo.
+[04:01] Ah, e sobre as línguas, a gente falou que são três, certo?
+[04:03] Isso, ebraico, grego e um pouco de aramaico.
+[04:07] O aramaico aparece em partes de Daniel, de Esdras.
+[04:11] Tem um versículo isolado em Jeremias e só duas palavras soltas em Gênesis.
+[04:16] E tem um negócio que a gente olha na página hoje e acha que sempre esteve lá.
+[04:21] Os capítulos e os números dos versículos.
+[04:23] Mas eles não vieram com os autores originais.
+[04:26] De jeito nenhum.
+[04:26] O texto original era direto.
+[04:28] Quem dividiu em capítulos foi um homem chamado Stephen Lynton.
+[04:33] Em Paris, ali, pelo ano 1204 ou 1205.
+[04:37] E os versículos pequenininhos.
+[04:39] Esses vieram com um impressor.
+[04:41] O Robert S. T. N.
+[04:42] Ele numerou o Novo Testamento no ano 1551,
+[04:46] depois fez na Bíblia toda em 1555.
+[04:49] Tá, então a gente tem a estrutura.
+[04:51] Mas para quem está ouvindo, entender como a datação funciona na prática.
+[04:56] Vamos dar um exemplo real.
+[04:57] Como alguém descobre o ano de um texto antigo.
+[05:00] Vamos usar o caso de Kethaf Hinnon.
+[05:02] Foi em 1979.
+[05:04] O arqueólogo Gabriel Barcai comandava uma escavação em Jerusalém.
+[05:09] E eles acharam dois amuletos de prata enrolados.
+[05:12] Pequenininhos.
+[05:13] Quando conseguiram desenrolar, tinha uma benção gravada.
+[05:17] Muito parecida com uma que está no livro de Nummers.
+[05:20] E como eles dataram a prata?
+[05:22] De dois jeitos.
+[05:23] Olhando a forma física das letras desenhadas.
+[05:26] E pelo local exato onde acharam.
+[05:29] Era o fundo de um depósito numa caverna de sepultura.
+[05:33] E qual foi a data que eles chegaram?
+[05:35] Aí que entra a faixa de disputa da prateleira.
+[05:37] O próprio Barcai, em 1992, disse que era do fim do século VII antes de Cristo.
+[05:44] E o outro lado?
+[05:45] O Nadavnáman, publicando em 2011, sugeriu uma data mais recente.
+[05:50] Para ele os amuletos são do começo do período do segundo templo.
+[05:54] E esse exemplo é bom porque mostra a nossa regra de ouro na prática.
+[05:58] Mesmo se a gente aceitar a data mais antiga dessa prata, ela não data o livro de números
+[06:03] inteiro.
+[06:04] Exato.
+[06:05] Ela mostra que aquela benção específica já circulava gravada em amuletos de prata, mas
+[06:10] não prova que o livro todo já estava montado daquele jeito.
+[06:14] Perfeito.
+[06:15] Bom, com as regras ajustadas, vamos botar os textos na prateleira?
+[06:19] A gente começa pela Bíblia Hebraica, o antigo testamento.
+[06:23] E a base disso é a Torá, os cinco primeiros livros.
+[06:27] Como ficam as faixas de datação ali na Torá?
+[06:30] A tradição diz direto que Moisés é o autor.
+[06:33] O Talmud afirma que Moisés escreveu o livro dele, mas tem um debate forte entre os rabinos
+[06:39] antigos sobre os últimos oito versículos.
+[06:42] Porque eles falam da morte do próprio Moisés, né?
+[06:44] Isso.
+[06:45] Um rabino diz que foi Josué, quem escreveu esse final.
+[06:48] Outro rabino diz que foi Moisés mesmo, mas escrevendo com lágrimas.
+[06:53] Hum.
+[06:54] E a crítica acadêmica?
+[06:56] Como eles marcam a Torá?
+[06:57] O Homer, em 2015, fez um resumo dessa história crítica.
+[07:02] Tudo começa lá com o divete, em 1805.
+[07:05] Ele ligou o Deuteronômio a um livro achado no templo no tempo do rei Josias.
+[07:10] Isso daria que data?
+[07:11] Cerca de 620 a.C.
+[07:14] Depois veio o Alhausen, em 1878.
+[07:18] O Gerhard cita isso num estudo de 2018.
+[07:21] O Alhausen organizou o famoso modelo das quatro fontes.
+[07:24] Tá.
+[07:25] E o que seria esse modelo das quatro fontes na prática?
+[07:28] Acharam quatro livros perdidos?
+[07:30] Não, não.
+[07:31] É uma ideia de como o texto atual foi montado.
+[07:34] A teoria diz que grupos diferentes escreveram suas fontes ao longo do tempo.
+[07:38] E redatores posteriores costuraram isso num texto só.
+[07:42] Isso ainda é aceito?
+[07:43] Hoje não tem um consenso absoluto.
+[07:45] Mas estudiosos como Joel Beidan, em 2012, ainda defendem essas quatro fontes.
+[07:51] Resumindo a marca na prateleira, o Oswald, em 2016, aponta que a faixa da crítica
+[07:56] vai do século VIII ou VII a.C. até fechar no fim do século IV a.C.
+[08:03] E os livros históricos de Josué a Reis seguem a mesma lógica de disputa?
+[08:07] Segue.
+[08:08] A tradição aponta nomes como Josué, Samuel e Jeremias.
+[08:13] Mas a crítica vai por outro caminho.
+[08:16] O Paganini, em 2005, cita os estudos do Martin Noff, de 1943.
+[08:22] O que o Noff propôs?
+[08:24] E essa parte inteira de Josué a Reis é uma obra única, escrita por redatores já no
+[08:30] exílio da Babilônia.
+[08:32] Falando em Reis e exílio, isso chama arqueologia para conversa, pedras e monumentos antigos.
+[08:38] Como a gente aplica a nossa regra de A Pedra Confirma, Onde Confirma?
+[08:43] E não confirma onde não tem nada.
+[08:45] O que as pedras confirmam é bem direto.
+[08:48] A Estela de Mernepta, uma placa do Egito, de mais ou menos 1.210 a.C., fala de Israel
+[08:55] em Canã.
+[08:56] Tem aquela de Teodã também?
+[08:58] Tem.
+[08:59] Acharam em 1.193.
+[09:01] Os arqueólogos datam ela entre 840 e 825 a.C., e ela fala da Casa de Davi.
+[09:09] Outro ponto forte são os anais do rei Sena Kiribi, da Síria.
+[09:14] O que diz lá?
+[09:15] Confirma o rei Ezequias e o Cerco de Jerusalém no ano 701 a.C., as histórias batem.
+[09:22] Certo.
+[09:23] E onde a pedra não confirma o texto na prateleira?
+[09:26] O êxodo, a saída do Egito não tem registro fora da Bíblia.
+[09:30] O Bérner apontou isso em 2012, e aí a faixa de opiniões é gigante.
+[09:36] Quem está debatendo isso?
+[09:37] O Kishin em 2003 e o Hoffmeyer em 2015 defendem a honestidade dos autores.
+[09:43] Acham que o texto reflete bem o Egito da época.
+[09:47] O Bietaq também em 2015 vê elementos críveis misturados.
+[09:51] E quem vai pelo meio-terro?
+[09:52] O Deverem em 2003 e o Faust em 2015.
+[09:57] Eles admitem que um grupo pequeno de fato veio do Egito.
+[10:00] Do outro lado, Finkelstein em 2015, diz que eram só memórias vagas que cresceram com
+[10:05] o tempo.
+[10:06] E a arqueologia tem disputa sobre o tamanho do reino de Davi e Salomão também, né?
+[10:10] Muita disputa.
+[10:11] Finkelstein defendeu uma visão menor em 2010, o Garfin copropôs achados de um reino maior
+[10:17] em 2015.
+[10:18] Tá avançando no tempo, a gente chega no exílio na Babilônia.
+[10:22] A crônica Babilônica registra a tomada de Jerusalém em 597 a.C.
+[10:28] Sim, mas a destruição final mesmo em 587 a.C.
+[10:34] essa não tem registro babilônico conhecido.
+[10:36] O Hils, citado pelo Jung em 2004, documenta como essa data de vídeo pessoal.
+[10:42] E como o livro de Isaías se encaixa nesse período conturbado?
+[10:46] Aí tem uma divisão forte, o Hermeson em 2017 explica que a leitura crítica vê os
+[10:52] capítulos do 40 em diante como sendo do período do exílio.
+[10:57] Tipo entre 550 e 540 a.C.
+[11:01] Isso.
+[11:02] Essa separação começou com o Ace Horn em 1783 e o Dama em 1892.
+[11:10] Mas a própria tradição põe textos depois do exílio também.
+[11:13] O Talmud diz que foi a grande assembleia que pôs por escrito Ezequiel, os profetas menores
+[11:19] Daniel e Esther.
+[11:20] Pois é.
+[11:21] E Daniel é um caso clássico de disputa de data.
+[11:24] Sim, lá no século III depois de Cristo, o porfílio já usava a precisão das profecias
+[11:29] de Daniel para dizer que o livro era de uma data tardia, que ele previu o que já tinha
+[11:34] acontecido.
+[11:35] E o Gerônimo respondeu na época, né?
+[11:37] Respondeu.
+[11:38] O Gerônimo disse que foi justamente essa precisão exata que fez o porfílio achar
+[11:43] que era história e não previsão.
+[11:45] Essa disputa é bem antiga.
+[11:47] E continua igual hoje.
+[11:49] Para a tradição, no caso do Gerônimo, é profecia do século VI a.C.
+[11:54] A crítica, como Helmes explica num estudo de 2018, a forma final do livro é de 167 a 164
+[12:02] a.C.
+[12:03] A base deles é o capítulo XI.
+[12:05] É.
+[12:06] A crítica diz que o capítulo XI sabe todos os fatos até pouco antes da morte do rei antigo
+[12:11] e depois perde a precisão.
+[12:13] Daí eles tiram a data.
+[12:14] Bom, a gente sai do antigo testamento e chega no primeiro século, o novo testamento.
+[12:19] A prateleira muda muito aqui.
+[12:21] E o curioso é que, por data descrita, as cartas vêm antes dos evangelhos.
+[12:26] Muita gente se espanta com isso.
+[12:28] A primeira carta de Paulo aos Tessalonicenses é o texto cristão mais antigo que sobreviveu.
+[12:34] A Universidade de Yale ensina isso.
+[12:37] Ele escreveu antes de ser levado ao governador Galho.
+[12:41] E aqui a tradição e a crítica concordam com a data.
+[12:45] Mas a carta não tem ano escrito, como a gente sabe quando Galho governou.
+[12:49] Pedras, de novo.
+[12:50] Acharam uma pedra em Delphos.
+[12:52] É uma carta do Imperador Cláudio do ano 52.
+[12:56] Ela coloca o Galho no cargo na Caia entre os anos 51 e 52.
+[13:02] Isso dá âncora de tempo para Paulo.
+[13:05] É, mas outras cartas têm faixas enormes de disputa.
+[13:08] A de Tiago, por exemplo.
+[13:10] Muito disputada, o John Robinson, em 1976, joga ela lá para o ano 47 ou 48.
+[13:17] O Werner Cummel, em 1963, diz que é por volta do ano 100.
+[13:22] E a ordem dos quatro evangelhos.
+[13:24] Quem entrou primeiro na prateleira?
+[13:26] A tradição, baseada em Ireneu, lá perto do ano 180, diz que foi Mateus.
+[13:32] A crítica aponta para Marcos primeiro.
+[13:34] O Rieck resumiu isso em 2010.
+[13:37] A crítica se apoia muito na ideia da fonte Q.
+[13:40] Fonte Q.
+[13:42] Tem muito comentário sobre ela.
+[13:44] E nunca acharam pergaminho escrito fonte Q, certo?
+[13:46] Nunca.
+[13:47] É uma teoria.
+[13:48] O Vai se propôs em 1838 e o Holtzmann em 1863.
+[13:53] Pra explicar o que, exatamente?
+[13:55] É que Mateus e Lucas têm frases iguaisinhas que não estão em Marcos.
+[13:59] A teoria da fonte Q diz que eles copiaram de um documento perdido.
+[14:04] Mas olha, tem estudiosos sérios que rejeitam a fonte Q totalmente.
+[14:09] O Farrer, em 1955, e o Gudecker, em 2002, dizem que um simplesmente copiou o outro,
+[14:16] sem precisar inventar documento perdido.
+[14:19] No início que divide as datas do Novo Testamento é o ano 70.
+[14:23] A destruição do templo de Jerusalém.
+[14:25] Funciona pros dois lados, né?
+[14:27] Quem vê o anúncio da queda no texto diz que foi escrito depois que já tinha caído.
+[14:32] É.
+[14:32] Mas o lado oposto lembra que o José Fudo comentou um homem anunciando a queda
+[14:37] aos gritos anos antes da guerra.
+[14:39] Como ficam os livros em volta do ano 70?
+[14:42] O Dale Martin, em 2009, coloca Marcos perto do ano 70.
+[14:47] Mateus na década de 80.
+[14:49] Lucas depois do ano 70.
+[14:50] Do lado oposto, o Von Harnack, em 1911, e o Robinson, em 1976,
+[14:56] eles ponham Lucas, Atos e os Evangelhos todos antes do ano 70.
+[15:01] E o de João?
+[15:02] Fica por último em qualquer um dos lados, tem consenso.
+[15:04] E os nomes dos autores nos evangelhos.
+[15:06] Segundo Marcos, essas coisas.
+[15:08] O próprio texto não traz o nome.
+[15:10] O Gary Callen, num trabalho de 2022, explica que esses títulos foram adicionados por inscribas.
+[15:16] E os nomes vêm da tradição de pessoas como Papias e Irineu.
+[15:19] Nas cartas, abriga sobre quem escreveu a pesada, né?
+[15:22] Demais.
+[15:23] Sobre Timote e Tito.
+[15:25] O Porter argumentou em 1995 que não são do Paulo.
+[15:29] O Johnson defendeu em 2001, que são sim.
+[15:33] E a segunda carta de Pedra?
+[15:34] Essa é a mais disputada.
+[15:36] O Rodan Biker, em 2023, publicou um estudo colocando ela para o meio do século 2.
+[15:41] Mas o Mu, em 1996, e o Krueger, em 1999, defendem com firmeza que é de Pedro mesmo.
+[15:48] E tem Hebreus, que o Origins já dizia no século 3 que só Deus sabe quem escreveu.
+[15:53] Pelo menos o Apocalipse Apacífico na prateleira.
+[15:56] A tradição baseada em Irineu e a crítica resumida pelo Martin em 2009 concordam
+[16:02] fim do século 1.
+[16:03] Bom, a gente passou pela primeira marca, de quando foi escrito.
+[16:07] Agora vamos colocar a segunda marca na prateleira, inteira, de quando é a cópia mais antiga.
+[16:14] E o Antigo Testamento tinha um salto temporal assustador nisso até 1947.
+[16:21] Era um vazio documental imenso.
+[16:22] Até 1947, a cópia hebraica completa mais velha era da Idade Média, o Códice de
+[16:29] Leningrado.
+[16:30] Ele é do ano 1008 ou 1009.
+[16:32] Mas não tinham nada mais velho?
+[16:33] Tinda o Códice de Alepo, de por volta de 930, mas ele pneu quase toda a torá no incêndio
+[16:39] justamente em 1947.
+[16:42] E vale dizer que o texto original só tinha consuante.
+[16:45] Foram os maçoretas que criaram as vogais entre os séculos 7 e 10.
+[16:49] Mas aí as coisas mudaram de figura, no mesmo ano do incêndio.
+[16:53] Sim, acharam os rolos do mar morto, nas cavernas de Cumbra.
+[16:58] Foram os 230 manuscritos bíblicos, com datas que vão do século III a.C.
+[17:04] ao século I a.C.
+[17:06] O impacto na prateleira foi gigante.
+[17:08] A marca andou mil anos para trás.
+[17:11] O grande rolo de Isaías, por exemplo, é de cerca de 125 a.C.
+[17:16] E o Museu de Israel nota uma coisa importante.
+[17:19] O rolo antigo concorda no geral com o texto medieval, mas está cheio de pequenas variantes
+[17:24] no meio.
+[17:25] Para um novo testamento, o salto de tempo para a cópia mais antiga é menor?
+[17:30] Bem menor.
+[17:31] Tem o papiro P52, que tem uns versículos do Evangelho de João.
+[17:35] O Instituto de Minster data ele entre os anos 125 e 175.
+[17:41] Antes falava uma data mais velha, não era?
+[17:44] O primeiro editor falou entre 100 e 150.
+[17:47] Hoje a biblioteca que guarda ele joga mais para perto do ano 200.
+[17:52] As cartas de Paulo tem um papiro datado entre 200 e 225.
+[17:57] E um livro completo com o novo testamento todo?
+[18:00] É o Códice Sinaitico.
+[18:02] Ele é do século IV.
+[18:04] E só para dar dimensão do volume de papel velho, o Instituto de Munster listou 5.700
+[18:09] manuscritos gregos até 2023.
+[18:12] Aí chegam as traduções que ajudam a gente a ler hoje.
+[18:15] Tem vários marcos.
+[18:17] Aceptuaginta, que passou para o grego no século III a.C.
+[18:21] Avogata de Gerônimo para o latim.
+[18:24] Ele terminou os evangelhos lá por 383 e o antigo testamento entre 391 e 404.
+[18:30] E a imprensa?
+[18:31] A Bíblia de Gutenberg foi impressa em latim no ano de 1455.
+[18:37] Depois o Erasmus organizou o texto em grego em 1516.
+[18:42] É daí que sai a base para o que foi chamado, lá em 1633, de textos receptos.
+[18:48] Luteiro também foi importante nessa fase, certo?
+[18:50] Muito.
+[18:51] A inovação dele foi traduzir direto do hebraico e do grego para o idioma do povo na rua, para
+[18:56] o alemão, em 1522 e 34.
+[18:59] E como esse texto chegou na língua que a gente fala?
+[19:03] No português.
+[19:04] O João Ferreira de Almeida publicou o novo testamento em Amsterdam no ano de 1681,
+[19:10] mas ele morreu no trabalho em 1691, quando traduziu o capítulo 48 de Ezequiel.
+[19:16] A Bíblia dele inteira, num livro só, demorou.
+[19:19] Só saiu em Londres em 1819, teve também o António Pereira de Figueiredo, ele fez a versão
+[19:27] católica baseada na vulgata.
+[19:30] A parte do antigo testamento foi impressa em 1782.
+[19:35] E hoje em dia a gente tem edições bem modernas.
+[19:38] Sim, como a Almeida revista e corrigida de 1898 e mais recente, a nova Almeida atualizada,
+[19:46] lançada em 2017.
+[19:48] E como essas edições novas lidam com todas essas diferenças achadas nos milhares de papiros
+[19:53] gregos?
+[19:54] A mudança aparece direto nas edições voltadas para acadêmicos.
+[19:59] A edição grega crítica Nestle Allende de 2012 pega parte famosa, tipo o final longo
+[20:07] de Marcos e a história da mulher adulta em João.
+[20:10] E o que eles fazem no texto?
+[20:12] Eles colocam esses trechos fechados entre colchetes duplos de forma bem visível na página, para
+[20:18] mostrar que há debate documental sobre eles.
+[20:21] Chegamos na última grande questão da prateleira.
+[20:24] A gente tem um monte de texto escrito, cópias no deserto, mas quem decidiu o que entra
+[20:29] na biblioteca definitiva e o que fica de fora?
+[20:32] Vamos voltar na Bíblia Braica primeiro.
+[20:34] Lembra das contagens?
+[20:36] José Fú fala de 22 livros, o documento Quarto Aesdras fala de 24.
+[20:41] E teve discussão sobre livros específicos?
+[20:44] Teve.
+[20:45] A Michnaa, que é do começo do século III, registra o debate dos antigos apenas sobre
+[20:49] dois livros, Cântico dos Cânticos e Eclesiastes.
+[20:53] E o famoso concílio de Jâmina?
+[20:55] As pessoas falam que foi lá que fecharam a Bíblia Judaica de vez.
+[20:58] Então, isso é tratado hoje como uma hipótese.
+[21:01] Foi proposta por Heinrich Gratz em 1871, mas o Robert Newman, estudando isso em
+[21:07] 1976, concluiu que não tem nenhuma evidência histórica de que esse concílio sequer existiu
+[21:13] para definir lista de livro.
+[21:14] E no Novo Testamento?
+[21:16] O Marcião, lá no ano 140, usava só Lucas e algumas cartas de Paulo, certo?
+[21:23] Certo.
+[21:24] Ele cortou um monte de coisa.
+[21:25] Como resposta, o Ireneu defendeu os quatro evangelhos lá pelo ano 180.
+[21:31] Depois, o Eusebio, no século IV, fez um trabalho de categorizar as listas para
+[21:36] dar ordem.
+[21:37] E quando surgiu a lista de 27 livros, exatamente como a gente tem hoje?
+[21:40] Ela aparece na Carta Solene de Páscoa de Atanasio, no ano de 367.
+[21:47] Depois essa lista foi consolidada no Sino do Zalido Norte da África, nos anos 393, 397
+[21:55] e 419.
+[21:56] Tá.
+[21:57] E a diferença de contagem?
+[21:59] Porque os protestantes têm 66 e os católicos 73.
+[22:03] Esses 7 livros a mais que a católica usa, eles chegaram via texto grego antigo.
+[22:08] O Gerônimo já separava livros que eram para a leitura dos livros do cano mesmo.
+[22:14] Como eles formalizaram isso no meio da igreja?
+[22:17] O Concilho de Trento, em 1546, definiu a mesma lista de um concilho anguerior, o
+[22:22] de Florença, em 1442, e do Sino dos africanos que a gente citou.
+[22:26] E o outro lado?
+[22:28] O Lutero, na Bíblia dele em 1534, separou esses 7 livros na parte de trás.
+[22:33] Os Anglicanos, em 1571, mandaram ler, mas sem usar para a doutrina.
+[22:38] A confissão de Westminster, em 1646, tirou a autoridade deles de vez.
+[22:43] E como eles sumiram da Bíblia evangélica comum que o pessoal tem?
+[22:48] Motivo financeiro.
+[22:50] Entre 1825 e 1827, a sociedade bíblica britânica simplesmente parou de financiar
+[22:57] a impressão de bíblias que traziam esses 7 livros.
+[22:59] Aí eles foram sumindo das edições protestantes.
+[23:02] E cada grupo dá um nome para eles, né?
+[23:05] É, os católicos chamam de deuterocanônicos.
+[23:08] Os protestantes chamam de apócrifos.
+[23:11] E os ortodoxos usam a expressão, os que podem ser lidos.
+[23:15] Tem uma pergunta que eu preciso fazer direto, porque circula muita lenda sobre isso.
+[23:20] O famoso Concilho de Niceia, lá no ano 325.
+[23:25] O que ele teve a ver com escolher os livros do Novo Testamento?
+[23:29] Absolutamente nada.
+[23:31] Niceia não tratou disso.
+[23:32] A gente pode ler os 20 canones oficiais do Concilho e nenhum deles faz qualquer lista de livros.
+[23:39] Zero.
+[23:40] Chegamos na ponta direita extrema da nossa prateleira.
+[23:43] O objeto físico que a gente abriu na mesa de casa hoje.
+[23:46] E a composição exata que a pessoa tem na mão depende da edição.
+[23:50] Dá um exemplo das brasileiras.
+[23:52] A nova Almeida Atualizada, de 2017,
+[23:55] ela segue o texto base do Códice de Hilenningrado e as edições grecas mais críticas.
+[24:00] Já Almeida Revista e Corrigida segue a base mais antiga,
+[24:03] ligada àquela tradição do texto dos receptos pro Novo Testamento.
+[24:07] Dá pra ver as marcas dessa história toda nas próprias páginas.
+[24:10] Total.
+[24:11] No sumário dos livros, no número do versículo pequenininho, no título que diz, segundo Marcos,
+[24:17] nas notas de Roda Pé, naqueles colchetes isolando dos textos.
+[24:21] Tudo é uma marca da história de como o livro foi montado.
+[24:24] Tem uma marca visual bem no meio da página de algumas edições também.
+[24:29] A palavra Senhor, escrita toda em letras maiúsculas.
+[24:33] É, segundo a sociedade bíblica do Brasil,
+[24:36] essa foi a forma adotada pela Almeida Revista Atualizada de 1959.
+[24:42] Eles usam o Senhor em maiúsculas para traduzir aquele nome de Deus de quatro letras do hebroi contigo.
+[24:47] Certo.
+[24:48] O mapa está montado.
+[24:49] A prateleira inteira da nossa exploração.
+[24:52] Foi um longo caminho, né?
+[24:54] Foi.
+[24:54] E a gente repassou tudo guiado por aquelas três regras centrais.
+[24:59] Primeiro, a copia antiga não data escrita do texto original.
+[25:02] Segundo, onde tem disputa, a data é uma faixa de tempo.
+[25:06] E a terceira regra da pedra, onde a arqueologia confirma, o texto diz que confirma.
+[25:12] Onde não confirma, diz que não tem registro.
+[25:14] E assim fica justo.
+[25:16] É o jeito de olhar para isso, focado só na história do papel e da tinta.
+[25:20] Isso.
+[25:21] Hoje a gente montou a prateleira para entender o tamanho da biblioteca.
+[25:25] Na nossa próxima etapa, o papo vai focar em uma pergunta muito mais específica
+[25:29] e que parece simples, mas dá um debate enorme.
+[25:33] Afinal, quantos livros tem a Bíblia?
+[25:36] A gente já deu uma palinha aqui,
+[25:37] mas a resposta valia bastante dependendo de quem responde.
+[25:41] Até a próxima.

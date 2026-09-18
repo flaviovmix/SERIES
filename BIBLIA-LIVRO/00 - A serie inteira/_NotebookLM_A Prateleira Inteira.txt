@@ -1,0 +1,149 @@
+Inicie dizendo: De onde veio a Biblia - A Prateleira Inteira
+---------------
+
+Este e o piloto da serie De onde veio a Biblia: a historia do livro, e nao das historias que o livro conta. A serie tem cinco etapas, e este audio e o mapa: passa pela prateleira inteira de uma vez, sem descer em nenhum texto. Os episodios das etapas e que descem em cada um.
+
+ESTE AUDIO NAO TEM PAGINA QUE VIRA. Nao pedir pra apertar nada, nao mandar olhar tela, nao falar em botao. E um audio pra ouvir do comeco ao fim.
+
+A REGRA DE LINGUAGEM DA SERIE, que vale pra cada frase do audio: HISTORIA, NUNCA DOUTRINA E NUNCA DESCRENCA.
+- O audio NAO diz se o que a Biblia conta e verdade ou nao, e NAO diz que ela e ou que nao e palavra de Deus.
+- NAO usa ironia, NAO faz piada sobre fe, NAO chama fe de ingenuidade e NAO chama a critica de ataque.
+- NAO usa as palavras mito, lenda ou fabula pra falar de relato biblico. Usa relato, narrativa, o texto conta.
+- NAO usa provou, desmascarou, caiu por terra, nem frases como "o que ninguem te contou" ou "o que a Igreja escondeu". Nada de tom de revelacao.
+- NAO diz que uma Biblia (judaica, catolica, protestante, ortodoxa, etiope) e a certa ou a completa, e NAO diz que alguem arrancou ou acrescentou livros.
+- NAO pronuncia o nome de Deus de quatro letras e NAO discute qual pronuncia e a certa.
+- Quem ouve pode ser crente ou nao ser. Os dois tem que ouvir o audio inteiro sem se sentir enganados, e sem sentir que o audio esta pregando.
+
+POSICAO COM NOME. Onde a tradicao e os estudiosos criticos dao datas diferentes, o audio diz as duas, cada uma com quem defende e o ano, SEM escolher lado. NUNCA dizer "a maioria dos estudiosos", "os especialistas" ou "os cientistas descobriram" sem o nome que o roteiro traz. Se o roteiro nao traz o nome de quem defende, nao inventar nenhum.
+
+DATA EM DISPUTA E FAIXA. Na prateleira, data disputada entra como faixa, com os dois lados, e nunca como ponto.
+
+A PEDRA. Onde a arqueologia confirma alguma coisa, o audio diz "confirma", com a mesma clareza. Onde nao confirma, diz "nao confirma", e NUNCA "provou que nao aconteceu".
+
+NAO RECONTAR HISTORIAS. A serie e sobre o livro. Nenhuma historia biblica e contada neste audio: cada texto aparece so como o texto que esta sendo datado.
+
+NAO INVENTAR NENHUMA DATA, NUMERO OU NOME ALEM DOS QUE ESTAO NESTE ROTEIRO. Em especial, NAO dizer quantos anos a Biblia levou pra ser escrita nem quantos autores ela teve: a serie nao tem esses numeros, porque eles dependem de qual datacao se usa. Se um assunto aparece aqui sem data, ele fica sem data no audio. As datas saem sempre como antes de Cristo e depois de Cristo.
+
+A serie tambem tem extras, que vao sendo acrescentados com o tempo. O audio pode dizer isso uma vez, sem dizer o nome de nenhum extra.
+
+CUIDADOS QUE NAO PODEM FALHAR (seguir a risca, frase por frase):
+- Senaqueribe era rei da ASSIRIA. NAO dizer Siria.
+- Sobre os anais de Senaqueribe, NAO dizer "as historias batem" nem que o relato assirio e o biblico concordam em tudo: o relato assirio termina com Ezequias pagando tributo, e o relato biblico do fim do cerco e diferente. Dizer SO que e diferente: NAO contar como a Biblia narra esse fim e NAO dizer nenhum numero sobre ele.
+- Kitchen e Hoffmeier dizem coisas diferentes: NAO juntar os dois na mesma frase.
+- Primeira aos Tessalonicenses e PROVAVELMENTE o texto cristao mais antigo que sobreviveu. NAO tirar o "provavelmente".
+- Sobre Joao ficar por ultimo, NAO dizer que ha consenso.
+- Stanley Porter REGISTROU o que a maior parte da pesquisa critica pensa sobre as cartas a Timoteo e a Tito, e disse que nao decide a autoria. NAO dizer que Porter argumentou ou defendeu que elas nao sao de Paulo.
+- Sobre o Codice de Alepo, dizer so que ele foi danificado em mil novecentos e quarenta e sete. NAO dizer incendio, fogo, nem como foi o dano.
+- Sobre Marciao, dizer SEMPRE que e o relato de Ireneu, que era adversario dele. NAO dizer como fato que Marciao cortou ou tirou trechos.
+- Lutero pos esses livros numa secao propria, ENTRE o Antigo e o Novo Testamento. NAO dizer que foi no fim, atras ou no final da Biblia.
+- A Sociedade Biblica Britanica tomou uma decisao de principio, depois de uma controversia, e a aplicou no dinheiro: deixou de financiar Biblias com esses livros. NAO dizer que foi "motivo financeiro".
+- O Textus Receptus e uma edicao do seculo dezesseis feita com poucos manuscritos do fim da Idade Media, segundo a propria Sociedade Biblica do Brasil. NAO dizer que e "a base mais antiga", nem que uma edicao e mais fiel ou melhor que a outra.
+- Sobre Niceia, dizer o fato sem tom de desmentido e sem a palavra lenda.
+- Martin Noth falou de Deuteronomio ate Reis, como obra de um autor. NAO dizer Josue a Reis nem "redatores" quando falar de Noth.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A PRATELEIRA: a Biblia da mesa de casa desmontada, e cada parte dela posta numa prateleira, na ordem em que foi escrita. Cada texto entra com duas marcas: quando ele foi escrito, e quando e a copia mais antiga que existe dele. Na ponta direita da prateleira fica a Biblia da mesa de casa. E o objeto da serie inteira, e a unica analogia deste audio.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO
+
+ABERTURA: O QUE E ESTE AUDIO
+
+Dizer o que a serie e: a Biblia que esta na mesa de casa nao e um livro, e uma biblioteca. Dezenas de textos, escritos ao longo de seculos, em tres linguas, e copiados a mao durante seculos, ate a imprensa.
+
+Dizer o que a serie afirma, e que isso vale pra quem cre e pra quem nao cre: da pra saber, com margem, quando cada parte foi escrita e quando foi copiada, e da pra dizer como se sabe. Onde a margem e grande, a serie mostra a margem. Onde ha duas posicoes, mostra as duas, com nome. O que a serie nao faz e dizer se o que o texto conta e verdade: essa pergunta nao se responde com data.
+
+Apresentar a prateleira e as duas marcas de cada texto. E dizer a primeira licao, que vale pra serie inteira: A COPIA NAO DATA O TEXTO. Uma copia antiga so diz que o texto ja existia quando ela foi feita.
+
+Dizer que este audio vai de uma ponta a outra da prateleira, em cinco etapas, e que a ultima ponta e a Biblia da mesa de casa.
+
+ETAPA UM: UMA BIBLIOTECA NA MESA
+
+Quantos livros. A Biblia judaica conta vinte e quatro livros, e os protestantes contam trinta e nove no Antigo Testamento, e sao os mesmos livros, contados de outro jeito: os judeus juntam, por exemplo, os doze profetas menores num livro so. A Biblia protestante tem sessenta e seis livros, a catolica tem setenta e tres, e a da Igreja etiope, oitenta e um. Josefo, historiador judeu do fim do primeiro seculo depois de Cristo, fala em vinte e dois livros, e Jeronimo, por volta do ano trezentos e noventa e um, explica que vinte e dois e vinte e quatro sao o mesmo acervo contado de dois jeitos. Por que as Biblias de hoje contam diferente e assunto da ultima etapa.
+
+Tres linguas: hebraico, grego e um pouco de aramaico. O aramaico aparece em trechos de Daniel e de Esdras, num versiculo de Jeremias e em duas palavras do Genesis.
+
+O sumario e os numeros chegaram muito depois dos textos. Os capitulos que a gente usa sao atribuidos a Stephen Langton, em Paris, por volta de mil duzentos e quatro ou mil duzentos e cinco. Os versiculos numerados sao de Robert Estienne: no Novo Testamento, em mil quinhentos e cinquenta e um, e na Biblia inteira, em mil quinhentos e cinquenta e cinco.
+
+A primeira marca da prateleira serve pra aprender o metodo. Dois amuletos de prata achados em Jerusalem em mil novecentos e setenta e nove, na escavacao de Gabriel Barkay, num lugar chamado Ketef Hinnom. Eles tem gravada uma bencao parecida com a do livro de Numeros. Como se data: pela forma das letras e pelo lugar em que estavam, no fundo de um deposito de uma caverna de sepultura. E a data e disputada: Barkay, em mil novecentos e noventa e dois, pos os amuletos no fim do seculo sete antes de Cristo; Nadav Na'aman, em dois mil e onze, propos o comeco do periodo do Segundo Templo, depois da volta do exilio. A licao: mesmo na data mais antiga, os amuletos nao datam o livro de Numeros. Eles so dizem que aquela bencao ja circulava. E uma bencao gravada em prata, e nao um livro.
+
+ETAPA DOIS: O ANTIGO TESTAMENTO
+
+Aqui a prateleira ganha os livros da Biblia Hebraica, que os cristaos chamam de Antigo Testamento, cada um com a faixa da tradicao e a faixa da critica.
+
+A Tora, os cinco primeiros livros. A tradicao diz Moises. O Talmude tem uma lista de quem escreveu cada livro, e nela Moises escreveu o seu livro. Os proprios rabinos discutem quem escreveu os oito versiculos que contam a morte de Moises: um diz que foi Josue, outro diz que foi o proprio Moises, "com lagrimas". O Talmude nao da ano. A critica, segundo o resumo que Romer fez em dois mil e quinze: em mil oitocentos e cinco, De Wette ligou o Deuteronomio ao livro que, segundo o proprio livro de Reis, foi achado no Templo no tempo do rei Josias, por volta de seiscentos e vinte antes de Cristo; e depois Wellhausen organizou o modelo das quatro fontes, num livro que, segundo Gerhards, em dois mil e dezoito, saiu em mil oitocentos e setenta e oito. E hoje nao ha consenso: o proprio Romer escreve que nenhum modelo novo venceu, e ainda ha quem defenda as quatro fontes, como Joel Baden, em dois mil e doze. A faixa critica, segundo Oswald, em dois mil e dezesseis, vai do seculo oito ou sete antes de Cristo, pras partes mais antigas, ate o fim do seculo quatro antes de Cristo, quando a Tora teria sido fechada.
+
+A historia dos reis, de Josue ate Reis. A tradicao: Josue, Samuel e Jeremias escreveram esses livros. A critica, segundo Paganini, em dois mil e cinco: Martin Noth, em mil novecentos e quarenta e tres, propos que de Deuteronomio ate Reis e uma obra so, de um autor, escrita no exilio; e hoje, ainda segundo Paganini, se supoe com frequencia um nucleo de antes do exilio, revisto no exilio e depois dele. Dizer as duas coisas.
+
+O que a pedra confirma. Uma estela egipcia do farao Merneptah, de por volta de mil duzentos e dez antes de Cristo, fala de um povo chamado Israel em Canaa. A estela de Tel Dan, achada em mil novecentos e noventa e tres e datada entre oitocentos e quarenta e oitocentos e vinte e cinco antes de Cristo, fala da "casa de Davi". E os anais de Senaqueribe, rei da Assiria, nomeiam o rei Ezequias, contam a campanha de setecentos e um antes de Cristo, o cerco de Laquis, e registram que Jerusalem nao foi tomada; o relato assirio termina com Ezequias pagando tributo. Isso a pedra confirma: pessoas, reinos e fatos, vistos de fora da Biblia, cada um do ponto de vista de quem escreveu.
+
+O que a pedra nao confirma. Nenhuma fonte fora da Biblia menciona o exodo, como registra Berner, em dois mil e doze. E, como escreveu Kreuzer em dois mil e dezenove, a arqueologia nao consegue nem identificar nem refutar a origem dos primeiros israelitas. As posicoes, com nome e ano: Kitchen, em dois mil e tres, usa inscricoes e objetos do Oriente Proximo pra defender a honestidade basica dos autores do Antigo Testamento, e Hoffmeier, em dois mil e quinze, chama os egiptologos de volta ao debate com os dados do Egito; Bietak, em dois mil e quinze, ve no relato elementos historicamente criveis; Dever, em dois mil e tres, e Faust, em dois mil e quinze, admitem um grupo pequeno que veio do Egito; e Finkelstein, em dois mil e quinze, diz que a tradicao do exodo nasce de memorias vagas de salvacao do Egito vividas em Canaa, entre os seculos dezesseis e dez antes de Cristo, e cresce ate os escribas sacerdotais de depois do exilio. E o tamanho do reino de Davi e Salomao tambem e disputa entre arqueologos: Finkelstein, em dois mil e dez, de um lado, e Garfinkel, em dois mil e quinze, do outro.
+
+O exilio. A Cronica Babilonica registra a tomada de Jerusalem em quinhentos e noventa e sete antes de Cristo. A destruicao, em quinhentos e oitenta e sete ou quinhentos e oitenta e seis, nao tem registro babilonico, e numa contagem de Jeremy Hughes, citada por Young em dois mil e quatro, onze estudiosos defendem cada um dos dois anos. Segundo Wagner, em dois mil e sete, a pesquisa mais nova ve o exilio como o tempo em que se escreveram as bases de livros importantes, revistas depois, e o alcance disso e disputado. No livro de Isaias, segundo Hermisson, em dois mil e dezessete, e compreensao quase geral da critica que os capitulos a partir do quarenta nao vem do Isaias do seculo oito antes de Cristo: o nucleo dos capitulos quarenta a cinquenta e cinco e de um profeta do exilio, entre quinhentos e cinquenta e quinhentos e quarenta antes de Cristo. Segundo o mesmo Hermisson, Eichhorn ja escrevia em mil setecentos e oitenta e tres que, quanto mais lia os capitulos quarenta a cinquenta e dois, menos eles lhe pareciam de antes do exilio; e Duhm, em mil oitocentos e noventa e dois, separou os capitulos cinquenta e seis a sessenta e seis. A propria tradicao tambem poe livros depois do exilio: o Talmude diz que Ezequiel, os doze profetas menores, Daniel e Ester foram postos por escrito pela Grande Assembleia, depois da volta, e que Isaias foi posto por escrito pelo rei Ezequias e seus colegas.
+
+O ultimo a chegar, na leitura critica. Daniel. Pra tradicao crista antiga, e profecia do proprio Daniel, no seculo seis antes de Cristo, e Jeronimo defendeu essa data; o Talmude, como ficou dito, poe o livro por escrito pela Grande Assembleia. Pra critica, segundo Helms, em dois mil e dezoito, a forma final e de entre cento e sessenta e sete e cento e sessenta e quatro antes de Cristo, porque o capitulo onze conhece em detalhe os fatos ate pouco antes da morte do rei Antioco. Essa leitura nao nasceu agora: Porfirio ja defendia a data tardia no seculo tres depois de Cristo. E Jeronimo respondeu a ele que foi justamente a precisao das profecias que fez Porfirio trata-las como historia.
+
+ETAPA TRES: O NOVO TESTAMENTO
+
+Os textos mais antigos do Novo Testamento sao cartas, e nao evangelhos. A primeira carta aos Tessalonicenses e, segundo o curso de Biblia da Universidade de Yale, provavelmente o texto cristao mais antigo que sobreviveu, escrito por Paulo antes de ele ser levado diante de Galio. Aqui a tradicao e a critica concordam. Como se sabe: o livro de Atos diz que Paulo foi levado diante de Galio, governador da Acaia, e uma pedra achada em Delfos, na Grecia, com uma carta do imperador Claudio do ano cinquenta e dois, poe Galio no cargo entre cinquenta e um e cinquenta e dois. A pedra nao cita Paulo: ela confirma quem governava a regiao. John Robinson, em mil novecentos e setenta e seis, poe a carta de Tiago ainda antes, por volta de quarenta e sete ou quarenta e oito; e, segundo o proprio Robinson, Werner Kummel, em mil novecentos e sessenta e tres, punha Tiago por volta do ano cem.
+
+Qual evangelho veio primeiro. A tradicao antiga, com Ireneu, por volta de cento e oitenta, poe Mateus primeiro. A hipotese que Thomas Hieke, em dois mil e dez, descreve como a mais aceita poe Marcos primeiro e supoe uma segunda fonte, chamada Q, de que nao existe nenhum manuscrito. Ela vem de Christian Weisse, em mil oitocentos e trinta e oito, e de Heinrich Holtzmann, em mil oitocentos e sessenta e tres. E ha quem dispense a fonte Q, como Austin Farrer, em mil novecentos e cinquenta e cinco, e Mark Goodacre, em dois mil e dois.
+
+O ano setenta, quando o Templo de Jerusalem foi destruido, e usado como regua. Dale Martin, professor de Yale, em dois mil e nove, poe Marcos pouco antes ou por volta de setenta, Mateus nos anos oitenta, e Lucas depois de setenta. E Joao fica por ultimo, pra tradicao e pra critica. Do outro lado, Adolf von Harnack, em mil novecentos e onze, mudou de ideia e pos Lucas e Atos antes de setenta, e John Robinson, em mil novecentos e setenta e seis, pos os quatro evangelhos antes de setenta. O argumento serve aos dois lados: quem ve no texto um anuncio detalhado da queda de Jerusalem diz que ele foi escrito depois dela; quem discorda lembra que Josefo registra um homem que anunciou a queda antes da guerra.
+
+O que quer dizer "autor". Os evangelhos nao dizem no texto o nome de quem os escreveu. Os titulos, como "segundo Marcos", foram postos por escribas, como mostrou Garrick Allen em dois mil e vinte e dois. Os nomes vem da tradicao: Papias, na primeira metade do seculo dois, e Ireneu, por volta de cento e oitenta. Algumas cartas tem a autoria disputada. Nas cartas a Timoteo e a Tito, Stanley Porter registrou, em mil novecentos e noventa e cinco, que a maior parte da pesquisa critica nao ve Paulo como autor, e disse que ele mesmo nao decide a questao naquele artigo; e Luke Timothy Johnson, em dois mil e um, defende que sao de Paulo. A segunda carta de Pedro e o caso mais disputado: Kelsie Rodenbiker, em dois mil e vinte e tres, poe em meados do seculo dois ou depois, e Origenes, no seculo tres, ja duvidava dela; do outro lado, segundo um levantamento de Gilmour, de dois mil e um, Douglas Moo, em mil novecentos e noventa e seis, e Michael Kruger, em mil novecentos e noventa e nove, defendem que ela e de Pedro, e Robinson a punha em sessenta e um ou sessenta e dois. Sobre a carta aos Hebreus, Origenes escreveu que quem a escreveu, so Deus sabe. E no Apocalipse a tradicao e a critica concordam: Ireneu poe no fim do reinado do imperador Domiciano, e Dale Martin registra que a maior parte dos estudiosos tambem poe o livro perto do fim do seculo um.
+
+ETAPA QUATRO: COMO CHEGOU ATE AQUI
+
+Agora cada texto ganha a segunda marca: a copia mais antiga que existe dele.
+
+O Antigo Testamento. Ate mil novecentos e quarenta e sete, a copia completa mais antiga em hebraico era da Idade Media. O Codice de Alepo, de por volta de novecentos e trinta depois de Cristo, anotado por Aharon ben Asher, foi danificado em mil novecentos e quarenta e sete e perdeu quase toda a Tora. O Codice de Leningrado, de mil e oito ou mil e nove, esta completo e e a base das edicoes de hoje. Os massoretas, os copistas que puseram as vogais no texto hebraico, trabalharam entre os seculos sete e dez. Em mil novecentos e quarenta e sete, um pastor beduino achou os primeiros rolos numa caverna perto de Qumran, junto ao Mar Morto. Sao cerca de duzentos e trinta manuscritos biblicos, com todos os livros da Biblia Hebraica menos Ester, do seculo tres antes de Cristo ao seculo um depois de Cristo. O Grande Rolo de Isaias e de por volta de cento e vinte e cinco antes de Cristo, e a forma da letra e o radiocarbono concordam. A marca de Isaias andou uns mil anos pra tras. E o que o rolo mostra, segundo o Museu de Israel, e que ele concorda em geral com o texto dos codices medievais, com muitas variantes. Nem "nao mudou uma letra", nem "tudo mudou".
+
+O Novo Testamento. Um dos pedacos mais antigos e o papiro P52, com versiculos de Joao, que o instituto de Munster que cataloga os manuscritos data entre cento e vinte e cinco e cento e setenta e cinco, e cuja data e disputada: o primeiro editor falava entre cem e cento e cinquenta, e a biblioteca que guarda o papiro fala hoje em mais perto de duzentos. As cartas de Paulo tem um papiro de entre duzentos e duzentos e vinte e cinco. O Novo Testamento inteiro mais antigo e o Codice Sinaitico, do seculo quatro. O mesmo instituto contou, em dois mil e vinte e tres, cinco mil e setecentas entradas na lista de manuscritos gregos do Novo Testamento. E o que mudou no caminho aparece nas edicoes: na edicao grega Nestle-Aland de dois mil e doze, o final longo de Marcos e a passagem da mulher adultera, em Joao, vem entre colchetes duplos, e um trecho da primeira carta de Joao sai sem uma frase que Erasmo pos na edicao dele de mil quinhentos e vinte e dois.
+
+As primeiras traducoes. A Septuaginta pos a Lei em grego no seculo tres antes de Cristo, em Alexandria, e e o grego que os autores do Novo Testamento mais citam. A Vulgata vem de Jeronimo: por volta de trezentos e oitenta e tres ele revisou a traducao latina dos evangelhos que ja existia, a pedido do papa Damaso, e entre trezentos e noventa e um e quatrocentos e quatro traduziu o Antigo Testamento do hebraico, por iniciativa dele e de amigos, sem encomenda da Igreja.
+
+A imprensa. A Biblia de Gutenberg e em latim, concluida em Mainz em mil quatrocentos e cinquenta e cinco. Erasmo publica o Novo Testamento grego em mil quinhentos e dezesseis, e o nome Textus Receptus, "o texto recebido", nasce de uma frase de propaganda no prefacio de uma edicao de mil seiscentos e trinta e tres. Lutero traduz das linguas originais pro alemao, o Novo Testamento em mil quinhentos e vinte e dois e a Biblia inteira em mil quinhentos e trinta e quatro. Ja havia Biblias em alemao antes dele: a novidade foi traduzir do hebraico e do grego.
+
+O portugues. Ha trechos traduzidos desde por volta de mil e trezentos. Joao Ferreira de Almeida publicou o Novo Testamento em Amsterda, em mil seiscentos e oitenta e um, numa edicao cheia de erros de impressao, e morreu em mil seiscentos e noventa e um, tendo chegado ao capitulo quarenta e oito de Ezequiel. O Antigo Testamento dele saiu impresso em Batavia, na Asia, em mil setecentos e quarenta e oito e mil setecentos e cinquenta e tres, e a Biblia inteira num volume so, em Londres, em mil oitocentos e dezenove. A Biblia catolica em portugues de Antonio Pereira de Figueiredo foi traduzida da Vulgata, com volumes do Antigo Testamento impressos em mil setecentos e oitenta e dois. A Almeida Revista e Corrigida e de mil oitocentos e noventa e oito, a Sociedade Biblica do Brasil e de mil novecentos e quarenta e oito, e a Nova Almeida Atualizada e de dois mil e dezessete.
+
+ETAPA CINCO: QUEM DECIDIU O QUE ENTRA
+
+A Biblia Hebraica. Josefo conta vinte e dois livros, sem dar os nomes. Um livro judaico antigo, chamado Quarto Esdras, fala em vinte e quatro. A Mishna, redigida no comeco do seculo tres depois de Cristo, registra uma discussao sobre dois livros so: Cantico dos Canticos e Eclesiastes. E o famoso concilio de Jamnia, que teria fechado a Biblia Hebraica, e uma hipotese de Heinrich Graetz, de mil oitocentos e setenta e um. Robert Newman examinou os textos do Talmude em mil novecentos e setenta e seis e concluiu que nao ha evidencia de um concilio assim. O que se discute hoje e quando a lista se estabilizou.
+
+O Novo Testamento. Marciao, por volta de cento e quarenta, usava so o evangelho de Lucas e cartas de Paulo, com trechos tirados, segundo o relato de Ireneu, que era adversario dele. Ireneu, por volta de cento e oitenta, defende que os evangelhos sao quatro. Eusebio, no seculo quatro, separa os livros aceitos, os disputados e os rejeitados. A carta de Pascoa de Atanasio, no Egito, em trezentos e sessenta e sete, traz exatamente os vinte e sete livros de hoje, e os sinodos do norte da Africa, em trezentos e noventa e tres, trezentos e noventa e sete e quatrocentos e dezenove, fazem a lista deles. E o Concilio de Niceia, em trezentos e vinte e cinco, nao tratou disso: nenhum dos vinte canones de Niceia lista livros.
+
+Por que uma Biblia tem sessenta e seis livros e outra tem setenta e tres. Os sete livros a mais da catolica chegaram inteiros em grego. Jeronimo distinguia os livros que a Igreja le dos livros do canon. A mesma lista que o Concilio de Trento definiu em mil quinhentos e quarenta e seis ja estava nos sinodos africanos e no Concilio de Florenca, em mil quatrocentos e quarenta e dois. A Biblia de Lutero, em mil quinhentos e trinta e quatro, imprimiu esses livros numa secao propria, entre o Antigo e o Novo Testamento. Os anglicanos, em mil quinhentos e setenta e um, mandam ler, mas nao usam pra doutrina. A Confissao de Westminster, em mil seiscentos e quarenta e seis, tira a autoridade deles. E eles sumiram das edicoes protestantes comuns por uma regra da Sociedade Biblica Britanica: depois de uma controversia, entre mil oitocentos e vinte e cinco e mil oitocentos e vinte e sete, ela decidiu nao financiar mais Biblias que os traziam. Os ortodoxos tem listas mais longas, que variam entre as Igrejas, e a Igreja etiope tem oitenta e um livros. Cada tradicao usa a sua palavra pra esses livros: os catolicos dizem deuterocanonicos, os protestantes dizem apocrifos e os ortodoxos tem um nome grego que quer dizer "os que podem ser lidos".
+
+---
+
+ENCERRAMENTO
+
+A Biblia da mesa de casa. Ela depende de qual edicao esta na mesa. A Nova Almeida Atualizada, de dois mil e dezessete, foi feita, segundo a Sociedade Biblica do Brasil, sobre o Codice de Leningrado, pela edicao hebraica de Stuttgart, e sobre as edicoes gregas criticas de hoje. A Almeida Revista e Corrigida segue, no Novo Testamento, o Textus Receptus, que a Sociedade Biblica do Brasil descreve como uma edicao do seculo dezesseis feita a partir de poucos manuscritos do fim da Idade Media. Nenhuma das duas e apresentada aqui como melhor que a outra: sao bases diferentes. E nem toda editora diz, na pagina da edicao, de que texto grego ela foi feita.
+
+Recapitular a prateleira de uma ponta a outra: os textos com duas marcas, as faixas onde tradicao e critica divergem, a copia mais antiga debaixo de cada um, as traducoes a direita, as listas de cada tradicao por cima, e a Biblia da mesa na ponta. Repetir as tres regras: a copia nao data o texto; data em disputa e faixa; onde a pedra confirma, confirma, e onde nao confirma, nao confirma.
+
+Dizer onde tudo isso aparece na Biblia da mesa de casa: no sumario, no numero do versiculo, no titulo "segundo Marcos" no alto da pagina, na nota de rodape e nos colchetes, e na palavra SENHOR escrita em letras maiusculas, que, segundo a Sociedade Biblica do Brasil, e o jeito que a Almeida Revista e Atualizada, de mil novecentos e cinquenta e nove, usa pra traduzir o nome de Deus de quatro letras. O audio NAO pronuncia esse nome, NAO diz nenhuma forma dele e NAO explica como ele se le.
+
+Gancho: a primeira etapa e a da biblioteca na mesa, e o primeiro episodio comeca pela pergunta mais simples: quantos livros tem a Biblia, e por que a resposta depende de quem responde.
