@@ -16,6 +16,8 @@
      serie, etapa, extra   de que galho da MENU saem os cards
      grade    as classes da <div> da grade
      cards    { 'num da MENU': { ...texto } }, ou card (um so), nos tipos de um card
+     extras   so no tipo etapas, opcional: o texto do card que leva aos extras da serie,
+              posto no fim da grade das etapas (a contagem e o botao saem da MENU)
 
    O texto e HTML de proposito (pode ter <em> e entidade). Caminhos (imagem, audio) sao
    relativos ao site/, escritos legiveis, com espaco e acento: o gerador codifica.
@@ -892,6 +894,211 @@ module.exports = {
 
   /* ---------- A home: uma card deitado por serie ---------- */
 
+  /* ---------- Universo (serie 08) ---------- */
+
+  /* As seis artes sao reconstituicao gerada no Flow (prompts em
+     UNIVERSO/_arquivos/capa-etapas/prompt/): nao existe foto do comeco do universo nem
+     do cambriano, entao todas levam 'ilustração', como manda a regra de producao da
+     serie. O `periodo` e o que a regua do ano cosmico ganha na etapa, porque o nome da
+     etapa ja e a data do calendario. */
+  'universo/etapas': {
+    pagina: 'universo.html',
+    tipo: 'etapas',
+    serie: '08',
+    grade: 'grade',
+    cards: {
+      '01': {
+        imagem: 'img/universo-etapa-01.webp',
+        descricao: `As primeiras estrelas acendendo no gás escuro`,
+        credito: `ilustração`,
+        periodo: `do primeiro instante à Via Láctea`,
+        frase: `O mês mais cheio fora de dezembro, e o que menos se enxerga.`,
+        resumo: `O que se consegue datar do primeiro instante e o que ninguém sabe, a luz mais velha que dá pra ver, as primeiras estrelas, que até hoje ninguém observou, a galáxia mais distante já medida e o começo da Via Láctea.`,
+        /* contagem e botao saem da MENU: o 1.01 esta no ar, entao o card leva direto pra ele */
+      },
+      '02': {
+        imagem: 'img/universo-etapa-02.webp',
+        descricao: `A galáxia grande desfiando uma vizinha menor`,
+        credito: `ilustração`,
+        periodo: `sete meses quase sem marca`,
+        frase: `O vazio também é assunto.`,
+        resumo: `Mais de seis bilhões de anos em que quase nada acontece por aqui. A Via Láctea engole galáxias vizinhas, as estrelas fabricam os átomos que não existiam no começo, e a mesma régua mostra o que pode acontecer com Andrômeda.`,
+        contagem: `3 episódios`,
+      },
+      '03': {
+        imagem: 'img/universo-etapa-03.webp',
+        descricao: `A Terra recém-formada e a Lua ainda perto`,
+        credito: `ilustração`,
+        periodo: `o Sol, a Terra, a Lua e a vida`,
+        frase: `A data sai da luz e passa para a pedra.`,
+        resumo: `O Sol de madrugada e a Terra à noite, no mesmo 2 de setembro. A Lua, que tem faixa de idade e não data fechada, a vida mais antiga que a ciência aceita e o oxigênio, que chegou como veneno.`,
+        contagem: `4 episódios`,
+      },
+      '04': {
+        imagem: 'img/universo-etapa-04.webp',
+        descricao: `Uma célula envolvendo uma bactéria`,
+        credito: `ilustração`,
+        periodo: `a vida que não se vê`,
+        frase: `Um bilhão e meio de anos quase sem fóssil.`,
+        resumo: `A célula que engoliu outra e ficou com ela, os primeiros seres feitos de muitas células, o fóssil mais antigo que mostra sexo e os seres de Ediacara, que a ciência ainda não sabe onde encaixar.`,
+        contagem: `4 episódios`,
+      },
+      '05': {
+        imagem: 'img/universo-etapa-05.webp',
+        descricao: `Dinossauros no rio, e o asteroide ainda longe`,
+        credito: `ilustração`,
+        periodo: `dos bichos aos dinossauros`,
+        frase: `Duas semanas, e quase todo fóssil que tem nome conhecido.`,
+        resumo: `A explosão cambriana, que levou uns vinte milhões de anos, o peixe sem queixo, a saída da água, a maior extinção de todas, os dinossauros e o asteroide do dia 30. As aves passaram, e são dinossauros vivos.`,
+        contagem: `6 episódios`,
+      },
+      '06': {
+        imagem: 'img/universo-etapa-06.webp',
+        descricao: `A fogueira, as mãos na pedra e a Via Láctea`,
+        credito: `ilustração`,
+        periodo: `o último dia do ano`,
+        frase: `A história escrita cabe em doze segundos.`,
+        resumo: `A linhagem que se separa da dos chimpanzés às sete e meia da noite, o <em>Homo sapiens</em> às onze e quarenta e oito, a agricultura nos últimos trinta segundos e a escrita, inventada quatro vezes, nos últimos doze.`,
+        contagem: `5 episódios`,
+      },
+    },
+    /* o card dos extras fecha a grade, logo depois da etapa 06 (pedido dele em 17/09:
+       "depois coloca o extra"). A contagem e o botao saem da MENU */
+    extras: {
+      imagem: 'img/universo-extras.webp',
+      descricao: `A mesa dos aprofundamentos`,
+      credito: `ilustração`,
+      periodo: `fora da régua &middot; lista aberta`,
+      frase: `O que aprofunda sem travar a estrada.`,
+      resumo: `Quem foi Carl Sagan e de onde veio o calendário, a briga sobre a velocidade da expansão, como se data uma pedra, quem decide a carta do tempo e a cratera de Chicxulub por dentro. Cada extra diz depois de qual episódio vale ouvir, e a lista cresce com o tempo.`,
+    },
+  },
+
+  /* A pagina dos extras do Universo: os cinco candidatos do plano da serie, todos em
+     producao. O `periodo` e o "ouvir depois de" do plano, que e a ligacao do extra com o
+     ponto da serie (DE3 do processo editorial: a lista e aberta e o audio principal nao
+     cita extra pelo nome). Artes do Flow, prompts em UNIVERSO/_arquivos/capa-extras/prompt/ */
+  'universo-extras/todos': {
+    pagina: 'extras/universo.html',
+    tipo: 'extras',
+    serie: '08',
+    grade: 'grade',
+    cards: {
+      '01': {
+        imagem: 'img/universo-extra-01.webp',
+        descricao: `A TV de 1980 com uma galáxia na tela`,
+        credito: `ilustração`,
+        periodo: `ouvir depois do piloto`,
+        frase: `De onde veio o Calendário Cósmico.`,
+        resumo: `O livro de 1977 e a série <em>Cosmos</em>, de 1980. Por que Sagan fez a conta com quinze bilhões de anos, e o que muda em cada data quando a régua passa a ser a de hoje.`,
+        contagem: `extra 1 de 5`,
+        selo: 'em produção',
+      },
+      '02': {
+        imagem: 'img/universo-extra-02.webp',
+        descricao: `Dois instrumentos apontados pro mesmo céu`,
+        credito: `ilustração`,
+        periodo: `ouvir depois de Janeiro, episódio 01`,
+        frase: `Dois jeitos de medir, dois números.`,
+        resumo: `Há mais de dez anos, dois jeitos de medir a expansão do universo dão números diferentes, com três times publicando. E o que isso faria com a idade do universo.`,
+        contagem: `extra 2 de 5`,
+        selo: 'em produção',
+      },
+      '03': {
+        imagem: 'img/universo-extra-03.webp',
+        descricao: `Um grão de zircão na ponta da pinça`,
+        credito: `ilustração`,
+        periodo: `ouvir depois de Setembro e outubro, episódio 01`,
+        frase: `O relógio que mora dentro do mineral.`,
+        resumo: `Decaimento radioativo e meia-vida, e por que um grão de zircão de 4,4 bilhões de anos é confiável.`,
+        contagem: `extra 3 de 5`,
+        selo: 'em produção',
+      },
+      '04': {
+        imagem: 'img/universo-extra-04.webp',
+        descricao: `As camadas de rocha de um cânion`,
+        credito: `ilustração`,
+        periodo: `ouvir depois de 17 a 30 de dezembro, episódio 01`,
+        frase: `Quem decide o nome e a data de cada período.`,
+        resumo: `A carta internacional do tempo geológico: quem decide cada fronteira, e por que a base do Cambriano mudou de 541 para 538,8 milhões de anos.`,
+        contagem: `extra 4 de 5`,
+        selo: 'em produção',
+      },
+      '05': {
+        imagem: 'img/universo-extra-05.webp',
+        descricao: `Testemunhos de perfuração na bancada`,
+        credito: `ilustração`,
+        periodo: `ouvir depois de 17 a 30 de dezembro, episódio 06`,
+        frase: `A cratera por dentro.`,
+        resumo: `Como a cratera foi achada, o que ela tem dentro e o que os testemunhos de perfuração mostraram.`,
+        contagem: `extra 5 de 5`,
+        selo: 'em produção',
+      },
+    },
+  },
+
+  /* A pagina da etapa Janeiro: os cinco episodios, todos em producao. O `periodo` e a
+     data do episodio no ano cosmico (a regua de 13,797 bilhoes, D11 do plano da serie).
+     As artes sao reconstituicao gerada no Flow (prompts em
+     UNIVERSO/_arquivos/capa-episodios/etapa-01/prompt/); quando o episodio nascer, a
+     imagem do card pode passar a ser uma tela da propria animacao. */
+  'universo-01/episodios': {
+    pagina: 'etapas/universo-01.html',
+    tipo: 'episodios',
+    serie: '08',
+    etapa: '01',
+    /* a mesma grade de 4 colunas do hub, e nao a dupla das outras paginas de etapa
+       (pedido dele em 17/09: "mantem o mesmo padrao, nao gostei de dentro ser 2") */
+    grade: 'grade',
+    cards: {
+      '01': {
+        imagem: 'img/universo-01-ep-01.webp',
+        descricao: `O começo quente, sem centro e sem borda`,
+        credito: `ilustração`,
+        periodo: `1º de janeiro, 00:00`,
+        frase: `O que dá pra datar, e o que ninguém sabe.`,
+        resumo: `O que o satélite Planck data de verdade, que é o início da fase quente, e o que ele não data. Por que não foi uma explosão num ponto do espaço. E a inflação, com a NASA dizendo que ninguém sabe o que veio antes dela.`,
+        contagem: `13 min &middot; 7 telas`,
+      },
+      '02': {
+        imagem: 'img/universo-01-ep-02.webp',
+        descricao: `A névoa que clareia e solta a primeira luz`,
+        credito: `ilustração`,
+        periodo: `1º de janeiro, 00:14`,
+        frase: `A luz mais velha que dá pra ver.`,
+        resumo: `O universo fica transparente e a luz corre solta pela primeira vez: é o fundo cósmico de micro-ondas. O que o Planck mede é um desvio para o vermelho, e os "380 mil anos" já são tradução pelo modelo.`,
+        contagem: `episódio 2 de 5`,
+      },
+      '03': {
+        imagem: 'img/universo-01-ep-03.webp',
+        descricao: `Uma estrela gigante sozinha no gás escuro`,
+        credito: `ilustração`,
+        periodo: `3 de janeiro`,
+        frase: `Ninguém viu nenhuma delas.`,
+        resumo: `A idade das trevas e as primeiras estrelas, gigantes feitas só do gás do começo. O incômodo bonito: nenhuma foi observada até hoje, e o melhor candidato está a uns 830 milhões de anos do começo, tarde demais pra ser das primeiras.`,
+        contagem: `episódio 3 de 5`,
+      },
+      '04': {
+        imagem: 'img/universo-01-ep-04.webp',
+        descricao: `Um campo profundo: cada mancha é uma galáxia inteira`,
+        credito: `ilustração`,
+        periodo: `8 de janeiro`,
+        frase: `Um recorde que já caiu duas vezes em dois anos.`,
+        resumo: `A MoM-z14, a galáxia mais distante já medida, uns 280 milhões de anos depois do começo. O que o telescópio mede de verdade é o desvio para o vermelho, não a idade, e por isso nenhum recorde desses é definitivo.`,
+        contagem: `episódio 4 de 5`,
+      },
+      '05': {
+        imagem: 'img/universo-01-ep-05.webp',
+        descricao: `O disco espesso e turbulento de uma galáxia jovem`,
+        credito: `ilustração`,
+        periodo: `22 de janeiro`,
+        frase: `Como se lê a idade de uma estrela.`,
+        resumo: `O disco espesso da nossa galáxia começa a se formar 800 milhões de anos depois do Big Bang, e a conta saiu da idade de 250 mil estrelas, medidas uma a uma.`,
+        contagem: `episódio 5 de 5`,
+      },
+    },
+  },
+
   /* A foto leva pra serie e nao amplia (decisao 9), entao aqui nao ha credito. O rotulo
      ("11 etapas", "Em preparação") e o botao ou selo saem da MENU; o icone e o <symbol>
      do sprite da propria home (ico-<icone>). */
@@ -940,6 +1147,12 @@ module.exports = {
         credito: `ilustração`,
         icone: 'abaco',
         resumo: `Do cofrinho à bolsa: o dinheiro do mês, emprestar, virar sócio, o imposto e a média, até <em>trocar entre dois papéis parecidos</em>. Uma peça por episódio, com uma empresa inventada nas telas.`,
+      },
+      '08': {
+        imagem: 'img/serie-universo.webp',
+        credito: `ilustração`,
+        icone: 'planeta',
+        resumo: `Os 13,797 bilhões de anos do universo comprimidos <em>num ano só</em>: o que aconteceu em cada dia, do primeiro instante à escrita, que cabe nos últimos doze segundos. E, em cada marca, <em>como é que alguém sabe aquela data</em>.`,
       },
     },
   },

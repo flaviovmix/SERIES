@@ -1,0 +1,229 @@
+# Transcricao automatica (faster-whisper small) - 12.5 min
+# Fonte: O Big Bang não foi uma explosão.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O primeiro instante e o que ninguém sabe.
+[00:03] Esse é literalmente o começo da contagem de tudo.
+[00:06] E só pra dar um contexto exato de onde a gente tá pisando hoje no nosso episódio piloto,
+[00:13] a gente já cobriu aquele panorama geral.
+[00:15] Passamos pela régua inteira do ano cósmico de uma vez só, só pra entender o tamanho das coisas.
+[00:22] Exato, foi o voo rápido.
+[00:24] O objetivo lógico a partir de agora é muito mais minucioso.
+[00:27] A gente precisa descer em cada marco temporal de forma bem, bem específica.
+[00:32] Sim, e a missão central hoje é fincar a primeiríssima marca nessa régua do ano cósmico.
+[00:38] A marca do dia primeiro de janeiro a exata meia-noite.
+[00:42] Que é o ponto de partida numérico de tudo que a gente conhece.
+[00:46] Isso, e esse momento corresponde a 13 bilhões 797 milhões de anos atrás.
+[00:54] O mergulho de hoje vai detalhar o que essa marca é na física real.
+[00:59] E, claro, o que ela não é.
+[01:01] A gente vai ver passo a passo como essa data foi calculada
+[01:05] e explorar o que ninguém sabe sobre o que veio antes.
+[01:08] O áudio acompanha a página que vira sozinho enquanto a gente fala.
+[01:12] Se pular uma tela, o áudio pula junto.
+[01:14] Se quiser parar pra mexer numa tela, pause o áudio senão ele vira a tela sozinho.
+[01:19] Embaixo da tela ficam as guias de extras e de filmes e elas podem ganhar coisa nova com o tempo.
+[01:25] Fincar essa primeira estaca de 13 bilhões e tantos milhões exige muito rigor.
+[01:31] Não é só jogar um número, sabe?
+[01:33] Com certeza.
+[01:34] Próxima página.
+[01:35] Então, depois de definir teoricamente esse instante no nosso calendário,
+[01:39] a gente precisa olhar pra física.
+[01:41] Precisa definir o que exatamente aconteceu ali.
+[01:44] E a primeira dúvida surge logo nessa definição, né?
+[01:49] Quando a gente crava 13 bilhões, 797 milhões de anos,
+[01:54] o que a ciência está datando de fato?
+[01:56] Porque existe aquela ideia comum de que haveria um instante zero.
+[02:00] A gente está datando um instante zero?
+[02:02] Então, a resposta curta e direta é não.
+[02:05] Não.
+[02:06] Não. A física lida com dados observáveis.
+[02:10] Então, não é um instante zero e também não é uma singularidade inicial
+[02:15] que os cientistas estão datando.
+[02:17] O que se data de forma muito pragmática é o início do Big Bang Quint.
+[02:22] A colaboração Plunk publicou essa data exata em 2018,
+[02:25] cravando que a fase quente começou a 13 bilhões, 797 milhões de anos,
+[02:31] com uma incerteza de 23 milhões de anos.
+[02:34] Nossa, 23 milhões de anos, como incerteza,
+[02:37] parece uma eternidade pra gente, né?
+[02:39] Mas dentro de todo o tempo do universo,
+[02:42] é uma precisão matemática altíssima.
+[02:44] Mas qual foi a motivação pra buscar esse número?
+[02:47] Como isso começou?
+[02:48] A motivação principal veio de uma observação incontestável
+[02:52] de que o universo se expande fisicamente.
+[02:55] E a lógica é muito natural.
+[02:57] Se todo espaço dá crescendo hoje, a gente pode inverter a fita,
+[03:01] calcular o tempo reverso e perguntar a quanto tempo essa expansão começou.
+[03:05] Só que retroceder esse cálculo não é simples, né?
+[03:08] Precisou de um equipamento incrivelmente robusto,
+[03:12] construído só pra olhar esses sinais bem fracos,
+[03:15] o satellite Plunk, da Agência Espacial Europeia.
+[03:17] Isso! A engenharia desse satélite é impressionante.
+[03:21] Ele foi lançado lá da base de Kourou, na Guiana Francesa,
+[03:24] no dia 14 de maio de 2009.
+[03:27] Foi num foguete Ariane 5, se não me engano, né?
+[03:30] Exato! Num Ariane 5.
+[03:33] E ele dividiu a viagem com outro equipamento, o observatório Herschel.
+[03:37] E ele foi pra bem longe, foi pro ponto de Lagrange 2,
+[03:41] que fica a um milhão e meio de quilômetros da Terra.
+[03:46] Uma região superestável pros instrumentos.
+[03:49] Lá ele ficou medindo o fundo cósmico de microondas.
+[03:53] E o último comando dele foi enviado em 23 de outubro de 2013.
+[03:57] Foram anos lendo a luz primordial.
+[04:00] Mas pra gente ter chegado nesse ponto de lançar um satélite,
+[04:03] tem uma figura humana essencial aí.
+[04:07] O Jorge Lemetre, né?
+[04:08] Ele nasceu em Charleroi, na Bélgica, em 1894.
+[04:12] E ele era padre.
+[04:14] Padre e um matemático brilhante.
+[04:16] Ele estudou em Louvain, depois foi pra Cambridge
+[04:19] e trabalhou com o Arthur Eddington.
+[04:21] E passou por Harvard e defendeu o doutorado no MIT em 1927.
+[04:26] Que é um ano importantíssimo, porque foi em 1927
+[04:30] que ele publicou um artigo dizendo que o universo tem um raio crescente.
+[04:34] Ele colocou a matemática da expansão no papel.
+[04:37] E logo depois, em 1931, ele inverteu a lógica da expansão
+[04:41] e propôs o começo singular, o tal do átomo primitivo.
+[04:44] Isso mesmo.
+[04:46] E ele seguiu como professor em Louvain.
+[04:48] E olha que detalhe interessante.
+[04:50] No fim da vida, ele mergulhou na computação numérica.
+[04:53] Em 1958, ele levou a primeira calculadora eletrônica pra universidade,
+[04:58] Maboros E101.
+[05:00] E ele acabou morrendo lá em Louvain mesmo, no ano de 1966.
+[05:04] Pois é, e entender essa ideia teórica do átomo primitivo do Leméter
+[05:09] nos força a lidar com um problema muito chato de comunicação,
+[05:13] que é o nome popular do evento.
+[05:15] Nossa, o nome Big Ben gera muita confusão em quem tanto entender o que realmente aconteceu, né?
+[05:21] Muita, porque a primeira imagem mental é de uma detonação destrutiva,
+[05:26] um estouro pontual no escuro.
+[05:28] E por que o meio científico afirma que esse termo é tão ruim?
+[05:33] O físico John Mather, que é ganhador do Nobel de Física de 2006
+[05:37] e atua lá no telescópio web,
+[05:40] ele afirma numa página da NASA com todas as letras que Big Ben é um nome enganoso.
+[05:46] Sugere uma explosão com o centro, o que está errado.
+[05:50] A descrição técnica aponta que o evento aconteceu em todo lugar ao mesmo tempo.
+[05:55] É meio difícil visualizar isso, mas foi um processo no tempo e não num ponto do espaço.
+[06:00] Exato, não existe um centro do universo de onde as coisas saíram voando.
+[06:05] E o Mather dá duas provas observacionais claras
+[06:08] para derrubar essa ideia de explosão central.
+[06:10] Quais são?
+[06:11] A primeira é que as galáxias se afastam umas das outras num processo mutuo.
+[06:17] Elas não estão se afastando de um ponto central.
+[06:19] O próprio espaço intergaláctico está em expansão.
+[06:22] E a segunda prova, que é baseada em temperatura,
+[06:25] é que o calor que sobrou do começo preenche o universo por igual,
+[06:29] em absolutamente todas as direções.
+[06:31] Claro, porque se fosse uma explosão no único ponto,
+[06:34] a gente detectaria um centro mais quente e umas bordas mais frias, né?
+[06:38] Isso.
+[06:38] A uniformidade térmica prova que o início foi em toda parte.
+[06:42] E isso estabelece uma regra fundamental da nossa série.
+[06:46] Toda data vem da luz que chega.
+[06:48] Esse modelo todo só existe porque uma luz bem antiga cruzou o espafo
+[06:53] e bateu nos sensores das nossas ondas.
+[06:55] Próxima página.
+[06:56] E com esse evento explicado e a data oficial na mão,
+[06:59] a gente pode organizar esse dado visualmente na nossa interface temporal.
+[07:03] Então, para quem está com a tela da régua do ano cósmico aberta,
+[07:06] a régua tem 12 meses.
+[07:08] Hoje, ela tem só uma marca lá na ponta esquerda,
+[07:11] dia 1º de janeiro, meia noite em ponto.
+[07:14] O cursor começa parado exatamente aí e repito o aviso.
+[07:18] Quem quiser explorar a régua com calma, precisa pausar o áudio,
+[07:22] senão a tela vira sozinha, tá?
+[07:24] E a escala de conversão dessa régua precisa ficar bem clara,
+[07:27] porque é muito extrema.
+[07:28] Um dia nela vale 37 milhões de 800 mil anos.
+[07:33] Um único dia e uma hora vale 1 milhão 575 mil anos.
+[07:38] Exato.
+[07:39] Se você descer para um minuto, são 26 mil 250 anos reais.
+[07:44] É quase incompreensível para a cabeça humana.
+[07:47] E um único segundo nessa marcação vale 437 anos e meio.
+[07:52] E cada episódio nosso pela frente vai colocar uma marca nova nessa régua.
+[07:56] Próxima página.
+[07:57] Ter esse número de 13 bilhões, 697 milhões de anos na régua,
+[08:02] traz um conforto, mas impõe uma dúvida pesada sobre o método de medição.
+[08:07] Sim, porque como extrair uma idade exata com matemática fina de um mapa de microondas?
+[08:14] Não é como ler um relógio direto.
+[08:15] Não, não é direto.
+[08:17] A idade é o número derivado.
+[08:19] A colaboração Planck pega o mapa do fundo cósmico
+[08:22] e ajusta nele um modelo matemático de seis parâmetros.
+[08:25] A idade, na verdade, sai como uma consequência matemática desse ajuste dos parâmetros.
+[08:31] Ah, então a idade não é o dado de entrada, é o resultado.
+[08:35] E é por isso que tem aquela incerteza de 23 milhões de anos.
+[08:38] Isso.
+[08:39] É por causa do ajuste matemático que agências como a NASA e a ESA
+[08:43] simplesmente arredondam esse número para 13,8 bilhões no dia a dia.
+[08:48] Mas para ter certeza de um número derivado, a ciência sempre faz uma checagem independente, né?
+[08:54] Teve o artigo de 2021 encabeçado por Valsim e colegas.
+[08:58] Exatamente.
+[08:59] O grupo do Valsim usou uma abordagem totalmente diferente do fundo de microondas.
+[09:04] Eles mediram a idade das estrelas mais velhas, lá dos aglomerados globulares,
+[09:09] e chegaram a 13 bilhões e 500 milhões de anos.
+[09:13] E o artigo nota que 13,5 bilhões bate super bem com os dados do Planck.
+[09:19] Dá para confiar no modelo.
+[09:20] E falando em dados e na régua, a gente precisa dar o crédito do formato que veio do Carl Sagan, né?
+[09:26] No livro de 1977 e depois na TV em 1980.
+[09:30] E quem olhar os filmes extras ali na guia,
+[09:33] vai ver que o Sagan usava 15 bilhões de anos naquela época.
+[09:37] Era estimativa que eles simam.
+[09:39] O Cosmos de 2014 com o Neil de Grass Tyson também está lá,
+[09:43] mas acaba distorcendo um pouco o formato porque apresenta o calendário direto
+[09:47] sem explicar que é um recurso didático e já joga a régua com o valor arredondado.
+[09:52] É, pularam essa explicação inicial.
+[09:54] Próxima página.
+[09:55] Bom, o Planck mede a fase quente e para exatamente ali.
+[10:00] O que obriga a física a olhar para aquela minúscula fração de segundo
+[10:03] antes do Big Bang quente.
+[10:05] É a grande pergunta, né?
+[10:06] Se o relógio do Planck começa na fase quente,
+[10:09] o que impulsionou o processo antes disso?
+[10:12] Aí entra a inflação.
+[10:13] A documentação da página de 2026 da NASA descreve isso de forma bem técnica.
+[10:18] O universo se expandiu mais rápido que a luz por uma fração de segundo.
+[10:23] Isso é inflação cósmica.
+[10:24] E quando essa inflação acabou?
+[10:26] Quando o surto acelerado parou, a energia passou para matéria e luz.
+[10:30] E é justamente isso que a NASA chama de Big Bang.
+[10:33] Tá, a explicação faz sentido.
+[10:36] Mas a resposta honesta, que todo mundo quer saber.
+[10:38] O que veio antes da inflação ou que alimentou essa expansão rápida.
+[10:43] Os cientistas não têm certeza de absolutamente nada disso.
+[10:47] Ninguém sabe.
+[10:48] A ciência não preencha a salacuna com palpites.
+[10:51] E é por isso que o Planck não data nenhuma singularidade.
+[10:54] A gente para onde a luz e os dados param.
+[10:57] Mas só para dar um vislumbre, logo em seguida,
+[10:59] aos 14 minutos do dia 1º de janeiro, o universo esfria e fica transparente.
+[11:05] A luz passa a correr solta.
+[11:07] Mas a gente não vai entrar nisso agora, claro.
+[11:09] Próxima página.
+[11:10] Então, recapitulando tudo o que vimos, a Régua ganhou a sua primeira marca,
+[11:14] dia 1º de janeiro, meia-noite, 13,797 milhões de anos atrás.
+[11:19] Isso.
+[11:20] E a gente viu que não foi uma explosão num ponto.
+[11:23] E nem um instante zero, né?
+[11:25] E a data, como a gente falou,
+[11:27] a deriva da luz processada por um modelo de parâmetros
+[11:30] e bate direitinho com a idade das estrelas mais velhas.
+[11:34] E claro, ninguém tem ideia do que veio antes da inflação cósmica.
+[11:38] E tem uma regra física do nosso cotidiano que explica
+[11:41] como a gente faz essa viagem toda no tempo.
+[11:44] Toda luz que chega aos nossos olhos vem obrigatoriamente do passado.
+[11:48] É, a luz do sol mesmo, ela leva 8 minutos para chegar na gente.
+[11:52] Exato.
+[11:53] E quanto mais distante alguma coisa está,
+[11:55] mais velha é a luz que chega para os telescópios.
+[11:59] O fundo cósmico de microondas é simplesmente o limite absoluto
+[12:03] da luz mais velha visível.
+[12:04] É onde a visão para.
+[12:06] Então, a gente avisa claramente que a linha do tempo do nosso projeto parou hoje,
+[12:11] na meia-noite do 1º de janeiro.
+[12:13] Mas deixa a semente plantada para o nosso próximo encontro, né?
+[12:17] 14 minutos depois dessa meia-noite o universo fica transparente pela primeira vez.
+[12:22] No próximo episódio, a gente vai investigar essa primeira luz
+[12:25] e o que o modelo do plan que realmente consegue ler nela.
+[12:28] Até a próxima, pessoal.
+[12:30] Um abraço. Até lá.

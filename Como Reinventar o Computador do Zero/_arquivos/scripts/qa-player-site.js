@@ -10,7 +10,7 @@ const { chromium } = require(achado);
 
 // sem argumento testa o local; com a URL (ex: https://series.afx.art.br/site/) testa o ar
 const BASE = process.argv[2] || 'file:///C:/src/PROJETOS/SEIRES/site/';
-const PAGINAS = ['hardware.html', 'etapas/hardware-01.html', 'extras/index.html', 'extras/extra-01.html', 'extras/extra-02.html'];
+const PAGINAS = ['hardware.html', 'etapas/hardware-01.html', 'extras/index.html', 'extras/extra-01.html', 'extras/extra-02.html', 'universo.html'];
 const TAMANHOS = [
   { nome: 'tel384-escuro', width: 384, height: 688, esquema: 'dark' },
   { nome: 'tel360', width: 360, height: 640, esquema: 'light' },
@@ -41,9 +41,12 @@ const saida = process.env.QA_OUT || require("os").tmpdir();   // capturas na pas
           const estouros = [...player.querySelectorAll('.audio__velocidade, .audio__salto, .audio__play, .audio__tempo, .audio__trilha')]
             .filter((el) => { const b = el.getBoundingClientRect(); return b.left < p.left - 0.5 || b.right > p.right + 0.5; })
             .map((el) => el.className);
-          // o play no centro do cartao (tolerancia de 3px)
+          // o play no centro do cartao (tolerancia de 3px). Na variante em faixa
+          // (.audio--faixa, 17/09/2026) o player vira uma linha so no desktop e o play
+          // fica na esquerda de proposito: la o centro nao e regra
           const play = player.querySelector('.audio__play').getBoundingClientRect();
-          const desvio = Math.round((play.left + play.width / 2) - (p.left + p.width / 2));
+          const emFaixa = caixa.classList.contains('audio--faixa') && getComputedStyle(player).flexDirection === 'row';
+          const desvio = emFaixa ? 0 : Math.round((play.left + play.width / 2) - (p.left + p.width / 2));
           // nada encavalado na fileira: velocidade | transporte | tempo
           const vel = player.querySelector('.audio__velocidade').getBoundingClientRect();
           const tra = player.querySelector('.audio__transporte').getBoundingClientRect();

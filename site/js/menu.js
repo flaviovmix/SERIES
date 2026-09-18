@@ -241,6 +241,42 @@
         { num: '05', nome: 'A régua da média' },
         { num: '06', nome: 'Trocar entre parecidos' }
       ]
+    },
+    {
+      num: '08',
+      nome: 'Universo',
+      href: 'universo.html',
+      etapas: [
+        { num: '01', nome: 'Janeiro', href: 'etapas/universo-01.html',
+          episodios: [
+            { num: '01', nome: 'O primeiro instante e o que ninguém sabe',
+              href: '../UNIVERSO/01 - Janeiro/01 - O primeiro instante e o que ninguem sabe/animacao.html',
+              filmes: [
+                { titulo: 'Cosmos: A Personal Voyage, episódio 1, The Shores of the Cosmic Ocean', ano: 1980, tipo: 'documentário (série de TV)', nota: 'É onde Carl Sagan apresenta o Calendário Cósmico na TV, o formato desta série. A régua dele era de quinze bilhões de anos: nenhuma data do calendário dele bate com a de hoje.', onde: 'Internet Archive (coleção Cosmos: A Personal Voyage, KCET); Brasil: não confirmei' },
+                { titulo: 'Cosmos: A Spacetime Odyssey, episódio 1, Standing Up in the Milky Way', ano: 2014, tipo: 'documentário (série de TV)', nota: 'Neil deGrasse Tyson caminha sobre o Calendário Cósmico. Usa a régua de 13,8 bilhões arredondada e apresenta o calendário sem dizer que é recurso didático.', onde: 'Apple TV (EUA); Brasil: não confirmei' }
+              ] },
+            { num: '02', nome: 'A primeira luz' },
+            { num: '03', nome: 'As primeiras estrelas' },
+            { num: '04', nome: 'A galáxia mais distante' },
+            { num: '05', nome: 'A Via Láctea começa' }
+          ] },
+        { num: '02', nome: 'De fevereiro a agosto' },
+        { num: '03', nome: 'Setembro e outubro' },
+        { num: '04', nome: 'Novembro e a primeira quinzena de dezembro' },
+        { num: '05', nome: 'De 17 a 30 de dezembro' },
+        { num: '06', nome: '31 de dezembro' }
+      ],
+      extras: {
+        nome: 'Extras do Universo',
+        href: 'extras/universo.html',
+        itens: [
+            { num: '01', nome: 'Quem foi Carl Sagan' },
+            { num: '02', nome: 'A tensão de Hubble' },
+            { num: '03', nome: 'Como se data uma pedra' },
+            { num: '04', nome: 'A carta do tempo' },
+            { num: '05', nome: 'Chicxulub' }
+        ]
+      }
     }
   ];
 

@@ -1,0 +1,124 @@
+/* regua: a régua do ano cósmico, o objeto da série Universo (D2 do plano).
+   É o widget da tela 4 do 1.01, e volta em todo episódio com uma marca a mais.
+   O painel em volta (.painel, .legenda, .painel__total, .botoes) é da base
+   (site/css/animacao/painel.css); aqui mora só a régua em si. Depende de regua.js. */
+
+.regua {
+  --regua-altura: 46px;
+  --regua-marca: var(--accent, #d9a441);
+  position: relative;
+  margin: 18px 0 8px;
+  padding-top: 26px;
+}
+
+/* a linha dos doze meses: uma célula por mês, com a letra do mês em cima */
+.regua__meses {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: var(--regua-altura);
+  border: 1px solid var(--line, rgba(255,255,255,.25));
+  border-radius: 8px;
+  /* sem overflow: hidden, senão a letra do mês, que fica acima da caixa, some */
+}
+.regua__mes {
+  position: relative;
+  border-right: 1px solid var(--line, rgba(255,255,255,.18));
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-soft, #b7bdc9);
+}
+.regua__mes:last-child { border-right: none; }
+.regua__mes span {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* os meses cheios do calendário (janeiro e dezembro) ficam um tom mais claros */
+.regua__mes--cheio { background: color-mix(in srgb, var(--regua-marca) 10%, transparent); }
+
+/* a marca: um traço vertical na régua, com a bolinha em cima. A primeira marca do
+   episódio fica acesa; as outras só existem em episódios futuros */
+.regua__marca {
+  position: absolute;
+  top: 26px;
+  bottom: 0;
+  width: 3px;
+  margin-left: -1px;
+  background: var(--regua-marca);
+  border-radius: 2px;
+  pointer-events: none;
+}
+.regua__marca::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--regua-marca);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--regua-marca) 30%, transparent);
+}
+
+/* o cursor: um range nativo por cima da régua, invisível, só o polegar aparece */
+.regua__cursor {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
+  height: var(--regua-altura);
+  margin: 0;
+  background: transparent;
+  cursor: ew-resize;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.regua__cursor:focus-visible { outline: 2px solid var(--regua-marca); outline-offset: 4px; border-radius: 8px; }
+.regua__cursor::-webkit-slider-runnable-track { height: var(--regua-altura); background: transparent; }
+.regua__cursor::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: var(--regua-altura);
+  border-radius: 6px;
+  background: var(--ink, #f2f4f8);
+  border: 2px solid var(--ground, #0f1a2e);
+  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+.regua__cursor::-moz-range-track { height: var(--regua-altura); background: transparent; }
+.regua__cursor::-moz-range-thumb {
+  width: 18px;
+  height: var(--regua-altura);
+  border-radius: 6px;
+  background: var(--ink, #f2f4f8);
+  border: 2px solid var(--ground, #0f1a2e);
+}
+
+/* a leitura: a data do calendário em cima, os anos embaixo */
+.regua__leitura {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin-top: 10px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 13px;
+  color: var(--ink-soft, #b7bdc9);
+}
+.regua__leitura b { color: var(--ink, #f2f4f8); font-weight: 600; }
+
+/* a conversão fixa, embaixo de tudo: o que um dia, uma hora, um minuto e um segundo valem */
+.regua__conversao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 6px 14px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line, rgba(255,255,255,.25));
+  font-size: 13px;
+  color: var(--ink-soft, #b7bdc9);
+}
+.regua__conversao b { display: block; color: var(--ink, #f2f4f8); font-weight: 600; }

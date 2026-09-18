@@ -1,0 +1,195 @@
+# Transcricao automatica (faster-whisper small) - 14.2 min
+# Fonte: A história do universo em um ano.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] O universo, o ano cósmico inteiro, bom, é a história documentada por escrito de tudo
+[00:06] que a humanidade já fez, cabem apenas 12 segundos finais de um ano.
+[00:12] Nossa, 12 segundos é quase nada na escala das coisas, né?
+[00:16] Pois é, isso deixa 364 dias, 23 horas 59 minutos e 48 segundos de história.
+[00:25] A ciência precisou aprender a ler todo esse tempo, bem antes das palavras existirem.
+[00:30] É muito tempo, e quase tudo o que a gente sabe sobre o universo chegou até nós como um nos.
+[00:35] Exato, este áudio é o piloto e o mapa de uma série completa.
+[00:40] A proposta aqui é aprender a ler o que essa luz traz para a gente.
+[00:44] Ela entrega a distância, a temperatura, a composição e a idade das coisas.
+[00:49] E tudo isso vai ser apresentado de ponta a ponta num único áudio contínuo.
+[00:54] Para organizar isso visualmente, a gente vai usar o calendário cósmico.
+[00:58] É super importante dar o crédito exato sobre isso.
+[01:02] É um recurso didático criado por Carl Sagan, num livro de 1977 e na série Cosmos, de 1980.
+[01:11] Mas não é uma escala científica formal, sabe?
+[01:14] É um jeito visual de enxergar o tempo.
+[01:16] O Sagan usou 15 bilhões de anos naquela época, só que a nossa régua hoje é outra.
+[01:21] Por isso, nenhuma data do calendário original se repete aqui.
+[01:25] Tá, e qual é a régua atual para esta análise?
+[01:28] A gente sabe que o universo tem 13,797 milhões de anos.
+[01:33] Como alguém chega nesse número exato?
+[01:35] Ah, esse número foi publicado pela colaboração Planck em 2018.
+[01:40] E ele não foi medido direto com o relógio, claro.
+[01:42] Ele sai de um modelo com seis parâmetros ajustado ao fundo cósmico de micro-undas.
+[01:47] As agências costumam arredondar para 13,8 bilhões, né?
+[01:51] Sim, mas usar o número cheio faz a conta fechar redonda para o calendário.
+[01:56] Tipo, um dia vale 37 milhões e 800 mil anos.
+[02:01] Caramba?
+[02:01] Pois é.
+[02:02] Uma hora vale 1,575 mil anos.
+[02:06] Um minuto vale 26,250 anos.
+[02:10] E um segundo vale 437,5 anos.
+[02:14] E olha, essa é a única analogia permitida no áudio inteiro.
+[02:17] Fechado, regra é regra.
+[02:18] E a regra principal do áudio é que toda marca do calendário vem acompanhada de como alguém
+[02:24] sabe aquela data.
+[02:26] Isso mesmo.
+[02:27] A gente precisa saber qual é o mensageiro.
+[02:29] E toda data em disputa entra como uma faixa de tempo com os dois lados nomeados.
+[02:34] Nunca entra como um ponto fixo.
+[02:36] Então, a gente começa por janeiro e a luz.
+[02:39] É, para mapear o começo de tudo, a ciência depende exclusivamente da luz.
+[02:45] Primeiro de janeiro, meia-noite, o início do Big Bang quente.
+[02:49] Isso significa um instante zero ou uma explosão em um ponto específico.
+[02:54] Nenhuma das duas coisas.
+[02:55] O plan que data apenas o início da expansão.
+[02:59] Ninguém sabe o que veio antes.
+[03:00] A própria NASA em 2026 escreve que os cientistas não têm certeza do que precedeu a inflação.
+[03:06] Então, não foi uma explosão em um lugar só?
+[03:09] Não, foi o espaço inteiro, quente e denso em todo lugar ao mesmo tempo.
+[03:13] Bom, zero hora e 14 minutos do dia primeiro.
+[03:17] O universo fica transparente e a luz corre solta.
+[03:21] É o fundo cósmico de microondas, certo?
+[03:24] Mas como eles acharam esses 14 minutos?
+[03:27] O pessoal da colaboração Planck médio desviu para o vermelho dessa luz.
+[03:32] É um número perto de 1090.
+[03:34] Sabe aqueles 380 mil anos que se costumou vir por aí?
+[03:37] Sei, é bem comum.
+[03:39] Eles são só a tradução desse número pelo modelo matemático.
+[03:42] Entendi.
+[03:43] E depois de ciclarão, a primeira semana é descrita pela NASA como uns 200 milhões
+[03:49] de anos de escuridão, sem estrelas.
+[03:52] Isso.
+[03:53] As primeiras estrelas gigantes feitas de gás aparecem no dia 3 de janeiro.
+[03:58] Só que tem um detalhe chato aí.
+[04:01] Nenhuma delas foi observada até hoje, né?
+[04:03] É verdade.
+[04:04] O melhor candidato para ser uma dessas estrelas foi publicado em outubro de 2025.
+[04:10] Mas ele cai só em 22 de janeiro.
+[04:13] O que é tarde demais.
+[04:14] E a própria equipe fez ressalvas.
+[04:16] E no dia 8 de janeiro entra a galáxia mais distante já medida.
+[04:21] A Moms Ators, publicada em 2026.
+[04:25] Mas de novo, o telescópio médio desvio para o vermelho, não a idade direta.
+[04:30] O recorde caiu duas vezes em dois anos, logo não é um número definitivo.
+[04:35] Tá, e avançando para 22 de janeiro, o disco espesso da Via Láctea começa a se formar.
+[04:41] Como a gente sabe isso da nossa galáxia?
+[04:43] Chiang e Hicks, em 2022, mediram a idade de cerca de 250 mil estrelas, uma a uma.
+[04:52] Eles fizeram isso pela luz delas.
+[04:54] Trabalho absurdo.
+[04:56] Depois dessa formação da galáxia, a régua passa por um buraco enorme no calendário.
+[05:01] Sim, de fevereiro a agosto, há um grande vazio.
+[05:05] São 7 meses do calendário, mais de 6 bilhões de anos, quase 100 marcas locais.
+[05:11] Mas é aí que a régua da faixa entra na prática de um jeito legal.
+[05:15] A gente tem um momento em que a Via Láctea engoliu a galáxia vizinha Gaia Encelados.
+[05:20] E tem muita disputa nisso. Há três datas propostas.
+[05:24] Realme e colegas em 2018 falaram em uns 10 bilhões de anos atrás.
+[05:29] Belucuro e colegas no mesmo ano mediram entre 8 e 11 bilhões.
+[05:34] E o projeto Cronogau, em 2025, apontou uns 11 bilhões.
+[05:38] Isso dá uma faixa que vai de meados de março ao começo de junho, né?
+[05:42] Exatamente. Tudo medido pela luz das estrelas, que guarda o movimento e a composição delas.
+[05:47] E o futuro tem aquela famosa colisão futura com Andrômeda.
+[05:52] Então, Saoala e colegas mediram isso em 2020.
+[05:57] A chance de não haver fusão nos próximos 10 bilhões de anos é de perto de 50%.
+[06:03] E a chance de colisão frontal em 4 ou 5 bilhões de anos é de uns 2%.
+[06:09] 50 e 50 significa que a gente não sabe no fim das contas.
+[06:12] É, não dá pra afirmar lada. E a partir de setembro a régua muda.
+[06:16] É de setembro ou outubro que ocorre a transição da luz pra pedra.
+[06:20] A luz deixa de ser o mensageiro principal e a ciência passa a ler o passado nas pedras e nos isótopos.
+[06:27] Isso mesmo. A gente chega em 2 de setembro de madrugada.
+[06:31] É a data dos grãos mais antigos do sistema solar.
+[06:34] Mas ninguém datou o sol, certo?
+[06:36] Não, dataram meteoritos. Conel, Bizarro e colegas em 2012 dataram inclusões de meteorito em 4,567 milhões de anos.
+[06:47] E no mesmo dia, 2 de setembro, às 9 da noite, vem a Terra.
+[06:52] A idade é 4,540 milhões de anos, segundo o serviço geológico dos Estados Unidos.
+[06:59] Essa diferença de 17 horas no calendário é o tempo de formação do planeta.
+[07:05] Depois entra a Lua, numa faixa de 3 a 7 de setembro.
+[07:10] A idade vai de 4 bilhões e 350 milhões a 4 bilhões e 110 milhões de anos.
+[07:17] Tem uma atualização nisso de dezembro de 2024, com NIMO, Klein e Morbidele.
+[07:23] Eles propõem que o número mais baixo é uma refusão por maré e não o nascimento real da Lua.
+[07:29] Passando para 2 de outubro, a coisa mais antica viva a seita sem disputa.
+[07:34] Estromatólitos de Strelipul, Austrália, com 3 bilhões e 430 milhões de anos, por Olwood e colegas em 2006.
+[07:43] E a série dá um piso a seito para isso, mas tem vários candidatos, como o caso da Groelande, de 3 bilhões e 700 milhões de anos.
+[07:51] Da equipe do Nutsmen em 2016.
+[07:53] Isso foi contestado, né?
+[07:54] Foi sim, contestado pela própria Olwood em 2018.
+[07:58] E no dia 31 de outubro, o oxigênio se acumula, ele funcionou como veneno para a vida da época.
+[08:04] E essa data é ultra faixa, certo? Do fim de outubro é o dia 31.
+[08:07] Isso. O mensageiro aqui são os isótopos de enxofre nas rochas.
+[08:11] Lua e colegas em 2016 cravam 2 bilhões e 330 milhões.
+[08:17] Gumsley e colegas em 2017 colocam a faixa entre 2 bilhões e 460 milhões e 2 bilhões e 426 milhões.
+[08:25] E o filipote em 2018 aponta que o sinal nem é sincronizado, né?
+[08:29] Exato. Entrando em novembro e na primeira quinzena de dezembro, temos a vida que não se vê.
+[08:34] Com o oxigênio no ar, a vida evolui, mas por 45 dias ela é microscópica e quase não deixa fósseis.
+[08:41] 18 de novembro é o ser multicellular mais antigo aceito de janeiro de 2024.
+[08:48] Tem 1 bilhão 635 milhões de anos.
+[08:52] Tem um candidato do Gabão em 6 de novembro, mas a própria condição de ser fóssil é muito questionada.
+[08:57] 4 de dezembro é o banjil morfa, uma alga vermelha.
+[09:02] É o fóssil mais antigo com reprodução sexuada, mas vale alertar que não é o primeiro ser que reproduziu assim.
+[09:09] Não, é só o registro mais antigo, mostrando a diferença.
+[09:13] A idade foi corrigida em 2018 para 1 bilhão e 47 milhões de anos.
+[09:18] O mensageiro foram os isótopos de rênio e ósimo na rocha.
+[09:21] 16 de dezembro, a biota de Ediacara, fósseis de corpo mole no Canadá com 574 milhões de anos.
+[09:31] E a ciência não sabe onde encaixar a maioria deles.
+[09:34] A Dickinson teve confirmação química de que era animal por causa de colesterol desretidos na rocha, numa pesquisa de 2018.
+[09:41] Entrando de 17 a 30 de dezembro, a gente tem a fase dos bichos.
+[09:47] O registro fóssil explode e ganha nomes conhecidos.
+[09:51] 17 de dezembro, 6 da tarde.
+[09:54] A base do Cambriano, 538 milhões e 800 mil anos, com incerteza de 600 mil,
+[10:00] segundo a Carta Internacional do Tempo, de junho de 2026.
+[10:03] A explosão Cambriana levou uns 20 milhões de anos, segundo Patterson, em 2019.
+[10:09] E do outro lado da disputa, o Ervin, em 2011, usou o relógio molecular
+[10:13] para dizer que os grandes grupos divergiram dezenas de milhões de anos antes disso aparecer nos fósseis.
+[10:19] De 19 a 21 de dezembro, ocorre a saída da água.
+[10:24] Plantas primeiro, com esporos na Argentina de 473 milhões.
+[10:30] Bichos depois, na Escócia, com 425 milhões.
+[10:34] E sabe que pegadas na Polônia foram 18 milhões de anos mais velhas
+[10:39] que o esqueleto de tetrapode mais antigo, né? Fóssil é sempre fragmentado.
+[10:43] 25 de dezembro, o pior dia e o começo de uma nova era.
+[10:49] De manhã, o fim do Permiano.
+[10:52] O Burges, em 2014, mediu que a extinção durou 60 mil anos.
+[10:57] E o tamanho é disputado.
+[10:58] Parte fala em mais de 90% das espécies e o Stunley, em 2016, mediu 81%.
+[11:05] À noite, no mesmo dia, cinzas na Argentina datam os primeiros dinossauros em 231 milhões de anos.
+[11:13] E há... os mamíferos vieram só depois dos dinossauros?
+[11:17] Não registro nega isso.
+[11:18] O Brasilodon, do Rio Grande do Sul, tem 225 milhões de anos.
+[11:23] Ele cai logo em 26 de dezembro.
+[11:25] A condição de mamífero está em disputa, mas camiaram quase juntos.
+[11:29] 30 de dezembro, 6 da manhã.
+[11:32] O impacto de Chicxulubi.
+[11:34] 66 milhões e 38 mil anos.
+[11:37] O reino, em 2013, mostrou que o impacto e a extinção são sincrônicos dentro de 32 mil anos.
+[11:45] E os vulcões do DECA entram na discussão, segundo a revista Science, em 2019.
+[11:50] Olha, as aves passaram porque o filtro foi o chão.
+[11:54] Aves de árvore morreram e as outras aves são dinossauros vivos.
+[11:59] A era inteira dos dinossauros ocupa quatro dias e nove horas na régua.
+[12:04] E aí, o 31 de dezembro é o último dia.
+[12:06] É, sem os dinossauros não avionos, a régua avança.
+[12:10] A genética e o gelo assumem como mensageiros.
+[12:13] Entre 7 e 8 da noite, a separação da linhagem humana e dos chimpasés.
+[12:18] Humanas e chinconsés descendem de um ancestral comum.
+[12:22] É bom sempre reforçar.
+[12:24] A data é faixa, 7 a 8 milhões de anos pelo Langra Graber, em 2012, ou 6 a 7 milhões pelos Midsonian.
+[12:33] Mensageiro aqui é a genética.
+[12:36] 10 e 14 da noite, o gênero Omo, mandíbula netiópia, de 2 milhões e 800 mil anos, de 2015.
+[12:44] E 11 e 48 da noite, o Omo Sapiens, com Gebel e Hold no Marrocos, de 2017, dando 315 mil anos.
+[12:53] A espécie inteira ocupa 12 minutos na régua.
+[12:56] Os últimos 30 segundos formam o Holoceno, começa há 11.700 anos, definido por uma mudança no gelo da Groelândia.
+[13:04] Agricultura vem depois, mas tem pão na Jordânia de 14.400 anos, bem antes disso.
+[13:10] E os últimos 12 segundos são a escrita, inventada 4 vezes, e a mais antiga entra numa faixa entre 3.400 e 3.200 a.C.
+[13:20] Para recapitular a regra e a régua, um ano inteiro, onde um dia vale 37.800.000 anos, e um segundo vale 437.5 anos.
+[13:32] E os mensageiros mudam, né?
+[13:34] Janeiro é luz, Setembro é pedra isotopo, e dezembro é fóssil, gelo e genética.
+[13:41] Datas em disputas sempre como faixa.
+[13:44] E lembrar que o calendário é recurso do Calseigan.
+[13:46] A história escrita inteira cabe em 12 segundos.
+[13:50] Isso mostra o tamanho irreal do que a ciência conseguiu ler sobre os outros 364 dias.
+[13:57] É verdade.
+[13:58] O primeiro episódio detalhado da série começa logo na meia-noite do 1º de janeiro,
+[14:03] focando exatamente no que ninguém sabe sobre aquele instante inicial.
+[14:07] Fica o convite para entender o primeiro passo dessa jornada.

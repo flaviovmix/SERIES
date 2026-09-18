@@ -229,6 +229,63 @@
   color: var(--ink-faint);
 }
 
+/* ---- a variante em faixa: o player numa linha só, sem cara de cartão ---- */
+
+/* Liga com .audio--faixa na mesma <div class="audio">. É o player do cabeçalho do hub
+   no desktop (17/09/2026): o lugar dele no grid do .head mora no cabecalho.css, aqui
+   mora só o desenho. O js/audio.js monta o mesmo player; os controles viram itens da
+   mesma linha com `display: contents`, e a marcha abre a linha ("leva o 1x pro começo").
+   No telefone a variante não faz nada: vale o player de cartão de sempre. */
+@media (min-width: 861px) {
+  .audio--faixa {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .audio--faixa .audio__player {
+    width: min(44rem, 100%);
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .audio--faixa .audio__controles { display: contents; }
+  .audio--faixa .audio__velocidade { order: 1; min-width: 40px; font-size: .9rem; }
+  .audio--faixa .audio__transporte { order: 2; gap: 2px; }
+  .audio--faixa .audio__trilha { order: 3; flex: 1; min-width: 80px; }
+  .audio--faixa .audio__tempo { order: 4; }
+
+  /* os botões no tamanho do tocador fino das animações */
+  .audio--faixa .audio__salto { width: 34px; height: 34px; }
+  .audio--faixa .audio__salto b { font-size: .6rem; }
+  .audio--faixa .audio__play { width: 36px; height: 36px; margin-inline: 2px; }
+  .audio--faixa .audio__play svg { width: 16px; height: 16px; }
+
+  /* a ficha fica embaixo do player, na mesma borda esquerda da marcha */
+  .audio--faixa .audio__ficha { margin: 0; }
+
+  /* o aviso de erro desce pra baixo da faixa, sem empurrar os controles */
+  .audio--faixa .audio__erro {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    margin: 4px 0 0;
+    padding: 8px 12px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+}
+
 /* ---- apertos, no fim da folha de propósito: container query não soma especificidade ---- */
 
 /* card estreito (grade de 3 ou 4 colunas) e telefone: os saltos e o play cedem

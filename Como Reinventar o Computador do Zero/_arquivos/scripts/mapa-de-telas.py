@@ -30,8 +30,11 @@ import glob
 import unicodedata
 
 FFMPEG = r"C:\Users\ASUS\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1.2-full_build\bin\ffmpeg.exe"
-# o modelo pequeno as vezes parte a palavra ("a perte") ou troca a vogal
-GATILHO = re.compile(r"[aà]\s?pert[ea]\s+o\s+pr[oó]ximo", re.IGNORECASE)
+# o modelo pequeno as vezes parte a palavra ("a perte") ou troca a vogal.
+# Duas formas do marcador: "aperte o proximo" (episodios ate 16/09/2026) e "proxima
+# pagina" (DE6 do processo editorial, 17/09/2026). So "proximo" nao serve: cortaria em
+# "no proximo episodio".
+GATILHO = re.compile(r"[aà]\s?pert[ea]\s+o\s+pr[oó]ximo|pr[oó]xima\s+p[aá]gina", re.IGNORECASE)
 JANELA_CONFERE = 45  # segundos reouvidos por trecho no --confere
 
 

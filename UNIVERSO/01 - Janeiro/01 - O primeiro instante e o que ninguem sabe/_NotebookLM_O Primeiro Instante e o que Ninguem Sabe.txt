@@ -1,0 +1,127 @@
+Inicie dizendo: O Primeiro Instante e o que Ninguem Sabe
+---------------
+
+Este e o primeiro episodio da etapa JANEIRO, a primeira etapa da serie Universo. Antes dele existe o piloto, que contou o ano cosmico inteiro de uma vez. Agora a serie desce em cada marco, e este episodio comeca pelo primeiro: a meia-noite do primeiro de janeiro, e o que ninguem sabe sobre o que veio antes.
+
+ESTE EPISODIO COBRE UM INSTANTE SO: primeiro de janeiro, meia-noite em ponto, no calendario cosmico, que e o instante de treze bilhoes, setecentos e noventa e sete milhoes de anos atras. Dizer isso em voz alta na abertura, e no encerramento dizer onde o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 7 telas (animacao.html) que VIRA SOZINHA enquanto o audio toca, e que leva o audio junto quando alguem pula a tela na mao. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores diz claramente o marcador: "Proxima pagina". NAO e instrucao pro ouvinte: e o marcador que corta o audio em telas. Dizer exatamente essas duas palavras, e nao "aperte", nem "vamos pra proxima", nem "proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O lembrete e UMA FALA SO, de UM apresentador, curto e padronizado, e diz so isto, nesta ordem: que o audio acompanha a pagina e que a pagina vira sozinha; que pular a tela na mao leva o audio junto; que quem quiser parar pra mexer numa tela pause o audio, senao ele vira a tela sem a pessoa; e que embaixo da tela ficam as guias de extras e de filmes, que podem ganhar coisa nova com o tempo. Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se voce pular uma tela, o audio pula junto. Se quiser parar pra mexer numa tela, pausa o audio, senao ele vira a tela sem voce. Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova com o tempo." Um apresentador, e acabou. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz pergunta sobre isso.
+  NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina, NAO chamar a animacao de legal, bacana ou interativa, NAO dizer o nome de nenhum extra nem do que ele trata, e NAO dizer o marcador como exemplo.
+- Na tela interativa (a tela 4), avisar que tem um cursor na tela pra arrastar pela regua, e repetir a frase da pausa: quem quiser explorar a regua com calma pausa o audio, senao a tela vira.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+A TRILHA CONTA A HISTORIA; O MECANISMO POR DENTRO E EXTRA. O que aprofunda sem ser necessario pra seguir (a vida inteira do Lemaitre, o que a inflacao explica, como um mapa de manchas vira uma idade) NAO cabe aqui. O audio NAO chama nenhum extra pelo nome: so o lembrete da abertura diz que as guias existem.
+
+FILMES. Os dois Cosmos entram na tela 5, em uma ou duas frases cada, dizendo que sao documentarios e o que distorcem. Nada alem dos dois.
+
+REGRA DURA DAS TELAS. Este episodio tem 7 telas. O audio TEM que dizer o marcador "Proxima pagina" exatamente 6 vezes, uma no fim de cada tela, na ordem, e nenhuma no fim da ultima. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem o marcador. Quem esta ouvindo com a pagina aberta so vira a tela quando o marcador acontece: se faltar um, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. O Lemaitre ganha a ficha curta na tela 2, com o que esta no roteiro e nada alem: onde nasceu, onde estudou, o que publicou, o que fazia no fim da vida e o ano da morte. Sobre a morte, o ANO E SO ISSO: NAO dizer de que morreu, NAO dizer o motivo, NAO dizer se foi doenca, acidente ou idade, e NAO dizer que nao se sabe a causa. NAO inventar familia, pai, infancia nem frase dele.
+
+NUMERO COM FONTE. Toda data e todo numero saem com quem publicou e o ano, QUANDO O ROTEIRO TROUXER O NOME. Se o roteiro nao trouxer o nome, dizer so o dado, e NUNCA inventar um autor. Onde o roteiro diz "ninguem sabe", o audio diz "ninguem sabe", sem preencher com palpite. Quando o roteiro disser que um numero e derivado de modelo, o audio diz isso tambem. NAO INVENTAR NENHUMA DATA ALEM DAS QUE ESTAO NESTE ROTEIRO.
+
+TRADUCAO DE ESCALA SO DE MARCA COLETIVA. NAO dizer quanto tempo a vida de uma pessoa duraria na regua.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A REGUA DO ANO COSMICO: a idade do universo espremida num ano de doze meses, com um dia valendo trinta e sete milhoes e oitocentos mil anos e um segundo valendo quatrocentos e trinta e sete anos e meio. E o objeto da serie inteira, e a unica analogia deste episodio.
+Fora essa, sem analogias. Explicar direto. Em especial, NAO usar balao, pao com passas, bomba, fogos ou qualquer imagem pra explicar a expansao: dizer direto o que Mather diz.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: O PRIMEIRO INSTANTE E O QUE NINGUEM SABE)
+
+Retomar em uma frase: o piloto contou o ano cosmico inteiro; a partir de agora a serie desce em cada marco, comecando pelo primeiro.
+
+Dizer o que este episodio faz: poe a primeira marca na regua do ano cosmico, na meia-noite do primeiro de janeiro, que e o instante de treze bilhoes, setecentos e noventa e sete milhoes de anos atras; conta o que essa marca e, o que ela nao e, como e que alguem sabe a data, e o que ninguem sabe sobre o antes.
+
+O lembrete da pagina, como manda a regra da conducao la em cima: UMA fala, de UM apresentador, e o outro nao comenta.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 2 (A FICHA: O INSTANTE, O SATELITE E O PADRE)
+
+A ficha do instante. O que se data: o inicio do big bang quente. Nao e um instante zero, nao e uma singularidade: a colaboracao Planck chama o parametro dela de "tempo desde o inicio do big bang quente", e e isso que ela data. A data: treze bilhoes, setecentos e noventa e sete milhoes de anos, com incerteza de vinte e tres milhoes, publicada pela colaboracao Planck em dois mil e dezoito. A motivacao: por que alguem quis por um numero no comeco de tudo. Porque, desde que se descobriu que o universo se expande, a pergunta "ha quanto tempo isso comecou" virou uma pergunta com resposta possivel.
+
+A ficha do equipamento: o satelite Planck, da Agencia Espacial Europeia. Lancado de Kourou, na Guiana Francesa, em catorze de maio de dois mil e nove, num foguete Ariane cinco, junto com outro observatorio, o Herschel. Ficou no ponto de Lagrange dois, a um milhao e meio de quilometros da Terra, medindo o fundo cosmico de micro-ondas e as pequenas variacoes dele. O ultimo comando foi enviado em vinte e tres de outubro de dois mil e treze.
+
+A ficha humana: Georges Lemaitre. Nasceu em Charleroi, na Belgica, em mil oitocentos e noventa e quatro; a cidade se chama Charleroi ate hoje. Era padre. Estudou em Louvain, passou por Cambridge com Arthur Eddington, pelo observatorio de Harvard e pelo MIT, onde defendeu o doutorado em mil novecentos e vinte e sete. Nesse mesmo ano publicou o artigo em que o universo tem raio crescente, ou seja, se expande. Em mil novecentos e trinta e um propos um comeco singular pro universo em expansao, a ideia do atomo primitivo. Foi professor da Universidade Catolica de Louvain. No fim da vida, se dedicou cada vez mais a computacao numerica: em mil novecentos e cinquenta e oito levou pra universidade a primeira calculadora eletronica dela, um Burroughs E cento e um. Morreu em mil novecentos e sessenta e seis, em Louvain.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 3 (NAO FOI UMA EXPLOSAO NUM PONTO)
+
+O nome engana. John Mather, que ganhou o Nobel de Fisica de dois mil e seis pela medida da radiacao que sobrou do comeco, e que e o cientista senior do telescopio Webb, escreve numa pagina da NASA que "Big Bang" e um nome muito enganoso pro universo em expansao que a gente ve.
+
+O que ele diz no lugar: o Big Bang aconteceu em todo lugar ao mesmo tempo, e foi um processo acontecendo no tempo, nao um ponto no tempo. E o universo nao tem centro. Nao houve um lugar onde aquilo explodiu e de onde as coisas sairam voando.
+
+Como se sabe, com as duas razoes de Mather: primeiro, a gente ve as galaxias se afastando umas das outras, e nao de um ponto central. Segundo, a gente ve o calor que sobrou do comeco, e esse calor preenche o universo por igual, em todas as direcoes. As duas coisas sao luz chegando. E a primeira vez que a serie mostra a regra dela: a data vem da luz.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 4 (A REGUA DO ANO COSMICO, TELA INTERATIVA)
+
+Apresentar o objeto da serie: a regua do ano cosmico. Uma linha de doze meses, de primeiro de janeiro a trinta e um de dezembro. Neste episodio ela esta vazia, com uma marca so, na ponta esquerda: primeiro de janeiro, meia-noite, o inicio do big bang quente. E assim que a tela comeca, com o cursor parado nessa primeira marca.
+
+Avisar: tem um cursor na tela pra arrastar pela regua. Onde ele parar, a pagina mostra a data do calendario e quantos anos atras aquilo e. E repetir a frase da pausa: quem quiser explorar a regua com calma pausa o audio, senao a tela vira.
+
+Dizer a conversao, que fica escrita embaixo da regua: um dia do calendario vale trinta e sete milhoes e oitocentos mil anos; uma hora, um milhao, quinhentos e setenta e cinco mil anos; um minuto, vinte e seis mil duzentos e cinquenta anos; um segundo, quatrocentos e trinta e sete anos e meio. E dizer que cada episodio da serie vai por uma marca nova nessa mesma regua, e que no fim ela vai estar inteira.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 5 (COMO SE SABE A IDADE)
+
+A idade nao foi medida direto. Ela e derivada. A colaboracao Planck ajusta um modelo com seis parametros ao mapa do fundo cosmico de micro-ondas, e a idade sai como consequencia desse ajuste, junto com outras coisas. E por isso que o numero vem com incerteza, e por isso que a serie diz "derivado de modelo" quando fala dele. As agencias, como a NASA e a ESA, arredondam pra treze virgula oito bilhoes e nao publicam a incerteza.
+
+Existe um jeito independente de conferir, sem usar o fundo cosmico: a idade das estrelas mais velhas dos aglomerados globulares. Valcin e colegas, em dois mil e vinte e um, chegaram a treze bilhoes e quinhentos milhoes de anos por esse caminho, e o proprio artigo diz que concorda bem com o Planck. Dois caminhos diferentes, o mesmo tamanho.
+
+E existe outro jeito de medir a velocidade da expansao, por estrelas proximas, que da um numero diferente do que o fundo cosmico da. E uma briga em aberto. Ela nao cabe aqui: fica pra um aprofundamento.
+
+Aqui entra o credito do formato. O Calendario Cosmico e um recurso didatico criado por Carl Sagan, num livro de mil novecentos e setenta e sete e na serie de TV Cosmos, de mil novecentos e oitenta. Nao e escala cientifica, e um jeito de enxergar o tempo. Sagan fez a conta dele com quinze bilhoes de anos, e por isso nenhuma data do calendario dele vale nesta serie.
+
+Filmes: o primeiro episodio de Cosmos, de mil novecentos e oitenta, e um documentario, e e onde Sagan mostra o calendario na TV; o que envelheceu nele e a regua de quinze bilhoes. E o primeiro episodio de Cosmos, a versao de dois mil e catorze com Neil deGrasse Tyson, tambem documentario, em que ele caminha sobre o calendario; o que distorce e que apresenta o calendario sem dizer que e um recurso didatico, e usa a regua arredondada.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 6 (O QUE NINGUEM SABE)
+
+A inflacao. A NASA descreve, na pagina de dois mil e vinte e seis, que o universo se expandiu mais rapido que a velocidade da luz por uma fracao de segundo, num periodo chamado inflacao cosmica, e que quando a inflacao parou, a energia que a movia passou pra materia e pra luz. E isso que a NASA chama de big bang.
+
+E o que veio antes disso? A NASA escreve, na mesma pagina: os cientistas nao tem certeza do que veio antes da inflacao, nem do que a alimentou. Ninguem sabe. A serie diz isso com todas as letras, e nao preenche com palpite. O Planck nao data nenhuma singularidade: data o inicio da fase quente, e para ali.
+
+E o que vem logo depois: o universo esfria, e a certa altura fica transparente. A luz corre solta pela primeira vez, e essa luz ainda esta chegando: e a mais velha que da pra ver. Isso acontece aos catorze minutos do primeiro de janeiro, e e o assunto do proximo episodio. Nao entrar nele aqui.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 7 (ENCERRAMENTO)
+
+Recapitular: a regua ganhou a primeira marca, primeiro de janeiro, meia-noite, o inicio do big bang quente, treze bilhoes, setecentos e noventa e sete milhoes de anos atras. O que a marca nao e: uma explosao num ponto, e um instante zero que alguem conheca. Como se sabe a data: pela luz que sobrou do comeco, lida por um modelo, e conferida pela idade das estrelas mais velhas. E o que ninguem sabe: o que veio antes da inflacao.
+
+Onde isso aparece fora da tela: toda luz que chega ate voce e do passado. A luz do Sol, que esta a uns cento e cinquenta milhoes de quilometros, leva uns oito minutos pra chegar. Quanto mais longe a coisa, mais velha e a luz que chega dela. E o fundo cosmico de micro-ondas e o limite: a luz mais velha que existe pra ver.
+
+Dizer onde o episodio parou: na meia-noite do primeiro de janeiro.
+
+Gancho: catorze minutos depois da meia-noite, o universo fica transparente. O proximo episodio e sobre essa primeira luz, e sobre o que o Planck mede nela de verdade.

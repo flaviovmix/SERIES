@@ -1,0 +1,7 @@
+Titulo: A história do universo em um ano
+Notebook: 00-O Ano Cosmico Inteiro
+
+Descricao:
+A série Universo - O Ano Cósmico Inteiro utiliza o recurso didático do Calendário Cósmico, popularizado por Carl Sagan, para organizar os 13,797 bilhões de anos do cosmos em um único ano de doze meses. Os textos detalham um roteiro técnico para um episódio piloto que percorre os principais marcos históricos, desde o Big Bang em janeiro até a invenção da escrita nos segundos finais de dezembro. O diferencial do projeto é o rigor metodológico, em que cada data apresentada deve ser acompanhada pela explicação de como a ciência obteve essa informação, seja através da luz, de isótopos ou de fósseis. Quando não há consenso científico sobre um evento, a produção adota o conceito de faixa temporal em vez de um ponto fixo, nomeando as diferentes correntes de estudo. As diretrizes de produção priorizam uma linguagem casual e direta, evitando termos dramáticos ou analogias que não estejam previstas no material original. Por fim, a série serve como um mapa cronológico que separa o que já está consolidado na ciência das descobertas que ainda permanecem em disputa.
+
+Link: https://notebook.google.com/notebook/6807716c-55ce-4b1f-a537-34907c515ce7

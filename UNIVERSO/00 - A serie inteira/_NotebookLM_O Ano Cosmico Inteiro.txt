@@ -1,0 +1,137 @@
+Inicie dizendo: Universo - O Ano Cosmico Inteiro
+---------------
+
+Este e o piloto da serie Universo: o ano cosmico inteiro, de ponta a ponta, num audio so. A serie tem seis etapas, e cada uma pega um pedaco deste ano. Este audio e o mapa: passa por cada marco de uma vez, sem se aprofundar em nenhum. Os episodios das etapas e que descem em cada um.
+
+ESTE AUDIO NAO TEM PAGINA QUE VIRA. Nao pedir pra apertar nada, nao mandar olhar tela, nao falar em botao. E um audio pra ouvir do comeco ao fim, no carro ou na caminhada.
+
+A REGRA DA SERIE, dita em voz alta logo no comeco e repetida no fim: toda marca do calendario vem com COMO E QUE ALGUEM SABE aquela data. Quase sempre a resposta e luz. Quando nao e luz, e pedra ou isotopo, que e a mesma ideia com outro mensageiro. E quando a data esta em disputa, ela entra como FAIXA, com os dois lados nomeados, e nunca como ponto.
+
+TRADUCAO DE ESCALA SO DE MARCA COLETIVA. Pode dizer quanto tempo a era dos dinossauros ocupa no calendario, quanto a historia escrita ocupa, quanto o Homo sapiens inteiro ocupa. NAO dizer quanto tempo a vida de uma pessoa duraria na regua, nem nada parecido. Isso e regra do dono da serie.
+
+NUMERO COM FONTE. Toda data e todo numero saem com quem publicou e o ano, QUANDO O ROTEIRO TROUXER O NOME. Se o roteiro nao trouxer o nome de quem publicou, dizer so o ano ou so o dado, e NUNCA inventar um autor. Onde o roteiro diz "ninguem sabe", o audio diz "ninguem sabe", sem preencher com palpite. Quando o roteiro disser que um numero e derivado de modelo, o audio diz isso tambem.
+
+NAO INVENTAR NENHUMA DATA ALEM DAS QUE ESTAO NESTE ROTEIRO. Se um assunto aparecer sem data aqui, ele fica sem data no audio.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A REGUA DO ANO COSMICO: os treze bilhoes, setecentos e noventa e sete milhoes de anos do universo espremidos num ano de doze meses. E o objeto da serie inteira, e a unica analogia deste audio. Quando falar de um marco, dizer a data no calendario e, se couber, o que aquela data vale em anos de verdade.
+Fora essa, sem analogias. Explicar direto.
+
+---
+
+ROTEIRO DO EPISODIO
+
+ABERTURA: O QUE E ESTE AUDIO
+
+Dizer o que a serie e: quase tudo o que a gente sabe do universo chegou aqui como luz, e a serie ensina a ler o que a luz traz, distancia, temperatura, do que a coisa e feita e de quando ela e.
+
+Dizer o formato: o Calendario Cosmico, que espreme a idade inteira do universo num ano so. E dar o credito: o Calendario Cosmico e um recurso didatico criado por Carl Sagan, num livro de mil novecentos e setenta e sete e na serie Cosmos, de mil novecentos e oitenta. NAO e escala cientifica, e um jeito de enxergar o tempo. Sagan fez a conta dele com quinze bilhoes de anos. Aqui a regua e outra, e por isso nenhuma data do calendario dele se repete neste audio.
+
+Dizer a regua desta serie: treze bilhoes, setecentos e noventa e sete milhoes de anos, o numero publicado pela colaboracao Planck em dois mil e dezoito. E dizer de onde ele vem: NAO foi medido direto. Ele sai de um modelo com seis parametros ajustado ao fundo cosmico de micro-ondas, e a idade e uma consequencia desse ajuste. As agencias arredondam pra treze virgula oito bilhoes, mas a conta desta serie usa o numero cheio, porque com ele tudo fecha redondo: um dia do calendario vale trinta e sete milhoes e oitocentos mil anos, uma hora vale um milhao, quinhentos e setenta e cinco mil anos, um minuto vale vinte e seis mil duzentos e cinquenta anos, e um segundo vale quatrocentos e trinta e sete anos e meio.
+
+Dizer a regra da serie: toda marca vem com o como e que alguem sabe. E avisar que data em disputa entra como faixa.
+
+JANEIRO: A LUZ
+
+Primeiro de janeiro, meia-noite em ponto. O que o Planck data e o inicio do big bang quente, e so isso. A colaboracao nao data nenhum instante zero, nenhuma singularidade. O que veio antes, ninguem sabe: a propria NASA escreve, em dois mil e vinte e seis, que os cientistas nao tem certeza do que veio antes da inflacao nem do que alimentou ela. E uma coisa que a serie diz com todas as letras: nao foi uma explosao num ponto do espaco. Foi o espaco inteiro, quente e denso, em todo lugar ao mesmo tempo.
+
+Primeiro de janeiro, zero hora e catorze minutos. O universo fica transparente e a luz corre solta pela primeira vez. Essa luz ainda esta chegando, e o nome dela e fundo cosmico de micro-ondas. Como se sabe a data: o Planck mede o desvio para o vermelho dessa luz, um numero perto de mil e noventa. Os "trezentos e oitenta mil anos" que todo mundo repete sao a traducao desse numero pelo modelo, nao uma medida. E a luz mais velha que da pra ver.
+
+Depois disso, escuridao. A NASA descreve uns duzentos milhoes de anos em que o universo ficou escuro, sem estrela nenhuma. No calendario isso e a primeira semana de janeiro.
+
+Tres de janeiro: as primeiras estrelas, pelo modelo. Gigantes feitas so do gas do comeco. E aqui entra um incomodo bonito: nenhuma delas foi observada ate hoje. Nenhuma. O melhor candidato, publicado em outubro de dois mil e vinte e cinco, aparece so em vinte e dois de janeiro do calendario, tarde demais pra ser das primeiras, e com ressalvas dos proprios autores.
+
+Oito de janeiro: a galaxia mais distante que ja se mediu, chamada MoM-z14, publicada em dois mil e vinte e seis. O que o telescopio mede nela e o desvio para o vermelho, nao a idade. E o recorde de galaxia mais distante caiu duas vezes em dois anos, entao ninguem deve tratar esse como definitivo.
+
+Vinte e dois de janeiro: a nossa galaxia comeca. O disco espesso da Via Lactea comeca a se formar uns oitocentos milhoes de anos depois do inicio. Como se sabe: Xiang e Rix, em dois mil e vinte e dois, mediram a idade de cerca de duzentas e cinquenta mil estrelas, uma a uma, pela luz delas.
+
+DE FEVEREIRO A AGOSTO: O VAZIO
+
+Sete meses do calendario. Mais de seis bilhoes de anos. E quase nada pra marcar por aqui. A serie tem uma etapa so pra explicar por que o vazio tambem e assunto.
+
+Uma marca cabe, e ela serve pra mostrar a regra da faixa. A Via Lactea engoliu uma galaxia vizinha, a Gaia-Enceladus. Ha tres datas publicadas pra essa fusao: uns dez bilhoes de anos atras, segundo Helmi e colegas em dois mil e dezoito; entre oito e onze bilhoes, segundo Belokurov e colegas no mesmo ano; e uns onze bilhoes, segundo o projeto ChronoGal em dois mil e vinte e cinco. Na regua, isso vai de meados de marco ao comeco de junho. Entao a marca no calendario e uma faixa, e nao um ponto. Como se sabe: pela luz das estrelas, que guarda o movimento e a composicao delas.
+
+E a regua tambem corre pra frente. Muita gente ouviu que a Via Lactea vai colidir com Andromeda. Em dois mil e vinte e cinco, Sawala e colegas publicaram que a chance de NAO haver fusao nos proximos dez bilhoes de anos e de perto de cinquenta por cento, e a chance de colisao frontal nos proximos quatro ou cinco bilhoes e de uns dois por cento. Cinquenta e cinquenta nao e "nao vai colidir": e nao se sabe.
+
+SETEMBRO E OUTUBRO: DA LUZ PRA PEDRA
+
+Dois de setembro. E aqui a datacao muda de mensageiro: sai a luz, entra o isotopo.
+
+De madrugada, por volta das quatro da manha do calendario: os graos mais antigos do sistema solar. Ninguem datou o Sol. O que Connelly, Bizzarro e colegas dataram, em dois mil e doze, foram inclusoes de meteorito: quatro bilhoes, quinhentos e sessenta e sete milhoes de anos, com incerteza de menos de um milhao.
+
+Na noite do mesmo dia, por volta das nove da noite: a Terra. Quatro bilhoes e quinhentos e quarenta milhoes de anos, segundo o Servico Geologico dos Estados Unidos, com incerteza menor que um por cento. A diferenca entre as duas datas, dezessete horas do calendario, e o tempo que a Terra levou pra se formar.
+
+A Lua entra como faixa: a idade publicada vai de quatro bilhoes e trezentos e cinquenta milhoes a quatro bilhoes e quinhentos e dez milhoes de anos. No calendario, de tres a sete de setembro. Nimmo, Kleine e Morbidelli, em dezembro de dois mil e vinte e quatro, propoem que o numero mais baixo e uma refusao por mare, e nao o nascimento.
+
+Dois de outubro: a coisa mais antiga que esta viva, no caso que a ciencia aceita sem disputa. Estromatolitos de Strelley Pool, na Australia, com tres bilhoes e quatrocentos e trinta milhoes de anos, publicados por Allwood e colegas em dois mil e seis. Existem candidatos mais antigos, e todos estao em disputa: o caso da Groenlandia, de tres bilhoes e setecentos milhoes, foi publicado por Nutman e colegas em dois mil e dezesseis e contestado em dois mil e dezoito por Allwood, a mesma pesquisadora do Strelley Pool, na mesma revista. Por isso a serie nao da uma data unica pra origem da vida: da um piso aceito e uma fila de candidatos.
+
+Trinta e um de outubro: o ar que quase matou tudo. O oxigenio comeca a se acumular na atmosfera, e pra quase toda a vida daquela epoca ele era veneno. A data e outra faixa: Luo e colegas, em dois mil e dezesseis, cravam dois bilhoes e trezentos e trinta milhoes de anos; Gumsley e colegas, em dois mil e dezessete, poem entre dois bilhoes e quatrocentos e sessenta milhoes e dois bilhoes e quatrocentos e vinte e seis milhoes; e Philippot e colegas, em dois mil e dezoito, dizem que o sinal nem e sincronizado entre os continentes. Na regua, do fim de outubro ao dia trinta e um. E a fotossintese que produz esse oxigenio ja existia centenas de milhoes de anos antes. Como se sabe: pelos isotopos de enxofre guardados nas rochas.
+
+NOVEMBRO E A PRIMEIRA QUINZENA DE DEZEMBRO: A VIDA QUE NAO SE VE
+
+Quarenta e cinco dias do calendario, cerca de um bilhao e setecentos milhoes de anos de vida microscopica, que inventa quase tudo o que veio depois e deixa quase nenhum fossil.
+
+Dezoito de novembro: o ser feito de muitas celulas mais antigo que a ciencia aceita, publicado em janeiro de dois mil e vinte e quatro, com um bilhao, seiscentos e trinta e cinco milhoes de anos. Os proprios autores escrevem que nao sabem direito a que grupo ele pertence. Ha um caso mais antigo, do Gabao, com dois bilhoes e cem milhoes de anos, que cairia em seis de novembro, mas ate a condicao de fossil dele e questionada.
+
+Quatro de dezembro: o fossil mais antigo que mostra reproducao sexuada, uma alga vermelha chamada Bangiomorpha, com esporos e gametas diferentes. A idade dela foi corrigida em dois mil e dezoito: de um bilhao e duzentos milhoes pra um bilhao e quarenta e sete milhoes de anos. Como se sabe: isotopos de renio e osmio na rocha. E ela nao e "o primeiro ser que fez sexo": e o registro mais antigo que mostra a diferenca.
+
+Dezesseis de dezembro: os seres que nao se encaixam. A biota de Ediacara, com fosseis de corpo mole que a ciencia ainda nao consegue por em nenhum grupo atual. Os mais antigos datados sao de Mistaken Point, no Canada, com quinhentos e setenta e quatro milhoes de anos. So um grupo, o da Dickinsonia, tem confirmacao quimica de que era animal, por colesteroides, publicada em dois mil e dezoito.
+
+DE DEZESSETE A TRINTA DE DEZEMBRO: OS BICHOS
+
+Duas semanas do calendario, e quase todo o registro fossil que as pessoas conhecem pelo nome.
+
+Dezessete de dezembro, seis da tarde: a base do Cambriano. A carta internacional do tempo, na versao de junho de dois mil e vinte e seis, poe ela em quinhentos e trinta e oito milhoes e oitocentos mil anos, com incerteza de seiscentos mil. Era quinhentos e quarenta e um ate pouco tempo atras. A tal explosao cambriana levou uns vinte milhoes de anos, segundo Paterson e colegas em dois mil e dezenove, e quando o registro fossil tipico comeca ela ja tinha em grande parte terminado. Do outro lado, Erwin e colegas, em dois mil e onze, pelo relogio molecular, dizem que os grandes grupos divergiram dezenas de milhoes de anos antes do primeiro fossil. E disputa.
+
+Dezoito de dezembro: os primeiros vertebrados, de Chengjiang, na China, com uns quinhentos e dezoito milhoes de anos. Sem mandibula. A mandibula chega so em vinte de dezembro, uns oitenta milhoes de anos depois.
+
+Dezenove a vinte e um de dezembro: a saida da agua. As plantas primeiro, com esporos de quatrocentos e setenta e tres milhoes de anos na Argentina. Depois os bichos: o animal terrestre mais antigo datado tem quatrocentos e vinte e cinco milhoes de anos, na Escocia. E ha pegadas de tetrapode, na Polonia, dezoito milhoes de anos mais velhas que o esqueleto mais antigo que se conhece.
+
+Vinte e cinco de dezembro, de manha: o pior dia. O fim do Permiano. Burgess, Bowring e Shen mediram em dois mil e catorze que a extincao durou sessenta mil anos, com incerteza de quarenta e oito mil. O tamanho dela e disputa: mais de noventa por cento das especies marinhas, num lado; cerca de oitenta e um por cento, segundo Stanley em dois mil e dezesseis, que diz que os numeros altos misturavam duas extincoes.
+
+Vinte e cinco de dezembro, a noite: os primeiros dinossauros, no mesmo dia da maior extincao. Cinzas de Ischigualasto, na Argentina, datadas em duzentos e trinta e um milhoes de anos. E eles demoraram milhoes de anos pra dominar de fato. E os primeiros mamiferos nao vieram depois deles: o Brasilodon, do Rio Grande do Sul, tem duzentos e vinte e cinco milhoes de anos, cai em vinte e seis de dezembro, e a condicao de mamifero dele esta em disputa formal.
+
+Trinta de dezembro, seis da manha: Chicxulub. O impacto tem sessenta e seis milhoes e trinta e oito mil anos, e Renne e colegas mostraram em dois mil e treze que impacto e extincao sao sincronicos dentro de trinta e dois mil anos. Setenta e seis por cento das especies foram embora. O que se discute, no mesmo numero da revista Science em dois mil e dezenove, e o papel dos vulcoes do Deccan, antes ou depois do impacto. E as aves passaram: nao porque voavam, e sim porque o filtro foi o chao, as que viviam em arvore morreram com as florestas. As aves sao dinossauros vivos. Os que acabaram foram os nao-avianos.
+
+Toda a era dos dinossauros, de vinte e cinco a trinta de dezembro, ocupa quatro dias e nove horas do calendario.
+
+TRINTA E UM DE DEZEMBRO: O ULTIMO DIA
+
+Entre sete e oito da noite: a linhagem humana se separa da dos chimpanzes. Nao descendemos deles: a gente e eles descendemos de um ancestral comum. A data e faixa: pelo menos sete a oito milhoes de anos, segundo Langergraber e colegas em dois mil e doze; seis a sete milhoes, segundo o Smithsonian. Como se sabe: pela genetica, que mede diferencas e as converte em tempo usando o tempo de geracao.
+
+Dez e catorze da noite: o genero Homo, numa mandibula da Etiopia de dois milhoes e oitocentos mil anos, publicada em dois mil e quinze.
+
+Onze e quarenta e oito da noite: o Homo sapiens. Jebel Irhoud, no Marrocos, trezentos e quinze mil anos, com incerteza de trinta e quatro mil, publicado em dois mil e dezessete. Isso quase dobrou a estimativa que se tinha antes. A nossa especie inteira ocupa uns doze minutos do calendario.
+
+Os ultimos trinta segundos: o Holoceno comeca, ha onze mil e setecentos anos, e a base dele e definida numa mudanca de uns tres anos no gelo da Groenlandia. Nao foi o fim da era do gelo: a gente esta num intervalo quente dela. A agricultura comeca nesses segundos, em lugares diferentes, com plantas diferentes. E o pao veio antes: ha pao de catorze mil e quatrocentos anos na Jordania, pelo menos quatro mil anos antes da agricultura.
+
+Os ultimos doze segundos: a escrita. Inventada quatro vezes, em lugares diferentes, e a mais antiga numa faixa entre tres mil e quatrocentos e tres mil e duzentos antes de Cristo. Toda a historia escrita cabe em doze segundos do calendario. E isso nao e motivo pra achar a humanidade pequena: e motivo pra entender o tamanho do que a gente conseguiu ler nos outros trezentos e sessenta e quatro dias.
+
+---
+
+ENCERRAMENTO
+
+Recapitular a regua: um ano, um dia vale trinta e sete milhoes e oitocentos mil anos, um segundo vale quatrocentos e trinta e sete anos e meio. Recapitular o fio: em janeiro a data vem da luz; em setembro ela passa pra pedra e pro isotopo; em dezembro vem do fossil, do gelo e da genetica. E lembrar que toda data em disputa entrou como faixa.
+
+Repetir o credito: o calendario e recurso didatico de Carl Sagan, com a regua de hoje.
+
+Gancho: a primeira etapa da serie e janeiro, e o primeiro episodio dela comeca no primeiro instante, na meia-noite do primeiro de janeiro, e no que ninguem sabe sobre ele.

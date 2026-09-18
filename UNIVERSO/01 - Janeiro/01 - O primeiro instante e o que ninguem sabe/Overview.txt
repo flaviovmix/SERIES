@@ -1,0 +1,18 @@
+UNIVERSO - JANEIRO - O PRIMEIRO INSTANTE E O QUE NINGUEM SABE - CONTEXTO
+========================================================================
+Documento curto de contexto para uso com NotebookLM.
+
+Universo e uma serie de audio sobre como a gente sabe o que sabe do universo. Quase tudo chegou aqui como luz. O formato e o Calendario Cosmico, recurso didatico criado por Carl Sagan em 1977: a idade inteira do universo espremida num ano de doze meses. A regua desta serie e de 13,797 bilhoes de anos (Planck 2018): um dia vale 37,8 milhoes de anos e um segundo vale 437 anos e meio. Toda marca do calendario vem com o como e que alguem sabe aquela data.
+
+Este e o primeiro episodio da primeira etapa, Janeiro. Ele poe a primeira marca na regua: primeiro de janeiro, meia-noite, o inicio do big bang quente. O ouvinte sai sabendo o que essa marca e (o inicio da fase quente, nao um instante zero), o que ela nao foi (uma explosao num ponto do espaco), como a idade foi obtida (derivada do fundo cosmico de micro-ondas por um modelo de seis parametros, e conferida pela idade das estrelas mais velhas) e o que ninguem sabe (o que veio antes da inflacao).
+
+Os episodios da etapa Janeiro:
+1. O primeiro instante e o que ninguem sabe (este).
+2. A primeira luz.
+3. As primeiras estrelas.
+4. A galaxia mais distante.
+5. A Via Lactea comeca.
+
+Por que importa: e o marco de onde todos os outros sao contados, e o unico em que a resposta honesta sobre o antes e "ninguem sabe".
+
+Use este contexto apenas como apoio.

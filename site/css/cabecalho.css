@@ -87,6 +87,35 @@
   .head:has(> .audio) .bars { grid-row: 4; }
 }
 
+/* a variante .audio--faixa (17/09/2026, montagens dele no hub do Universo): no largo o
+   player sai de baixo do titulo e vira uma FAIXA fina logo abaixo da barra do topo, na
+   coluna da esquerda, acima da linha de contexto. E o mesmo lugar que o tocador das
+   animacoes ganhou em 11/09 ("eu so quero ele aqui"). A chamada sobe junto: ocupa a
+   coluna da direita desde a fileira da faixa ate o titulo, encostada e alinhada pela
+   borda direita. No estreito nada muda: o audio segue embaixo do titulo, na ordem do HTML.
+   O desenho do player em linha mora no audio.css. Este bloco vem DEPOIS do de cima de
+   proposito: as regras empatam em especificidade com as de la e ganham por ordem. */
+@media (min-width: 861px) {
+  /* a faixa encosta na barra: o respiro de cima da pagina passa a ser o dela */
+  .wrap:has(.audio--faixa) { padding-top: 0; }
+
+  .head > .audio--faixa {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 0 clamp(8px, 1.6vw, 20px);
+    padding-block: 6px;
+  }
+  .head:has(> .audio--faixa) .eyebrow { grid-row: 2; }
+  .head:has(> .audio--faixa) h1 { grid-row: 3; }
+  .head:has(> .audio--faixa) .lede {
+    grid-row: 1 / 4;
+    justify-self: end;
+    max-width: 34rem;
+    text-align: right;
+  }
+  .head:has(> .audio--faixa) .bars { grid-row: 4; }
+}
+
 /* no estreito nao cabem duas colunas: tudo empilha na ordem em que esta escrito no HTML */
 @media (max-width: 860px) {
   .head {

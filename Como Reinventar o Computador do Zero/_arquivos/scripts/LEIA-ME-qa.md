@@ -15,6 +15,13 @@ disco. Na raiz do repo:
 python -m http.server 8777 --bind 127.0.0.1
 ```
 
+⚠️ **O `http.server` do Python não atende Range (206)**, e sem Range o `<audio>` não
+consegue pular pro marcador: na animação com áudio, o tocador devolve a página pra tela 1
+a cada virada e o "chegou na última tela" reprova em qualquer navegador (visto em 18/09/2026
+no Universo 1.01 e na Finanças 1.01, que está no ar e funciona). Pra testar animação com
+áudio, ou abrir por `file://` (como o `qa-pagina-com-audio.js` faz), ou servir com um
+servidor que atenda Range (o nginx do ar atende). Página sem áudio testa bem no Python.
+
 ⚠️ **Playwright, não patchright.** O patchright roda `page.evaluate` num mundo isolado
 e o gancho `window.__<maquina>` aparece como `undefined` — parece bug do modelo e não
 é. Os scripts já apontam pro Playwright do cache do npx.

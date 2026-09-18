@@ -1,0 +1,31 @@
+Inicie dizendo: O Primeiro Instante e o que Ninguem Sabe
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Primeiro Instante e o que Ninguem Sabe.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o primeiro episodio da etapa Janeiro, a primeira etapa da serie Universo. O piloto ja contou o ano cosmico inteiro; este episodio desce no primeiro marco.
+
+FOCO: a primeira marca da regua do ano cosmico, na meia-noite do primeiro de janeiro (treze bilhoes, setecentos e noventa e sete milhoes de anos atras, Planck 2018): o que se data (o inicio do big bang quente), o que nao foi (uma explosao num ponto), como se sabe a idade (derivada do fundo cosmico por um modelo, conferida pelas estrelas mais velhas) e o que ninguem sabe (o que veio antes da inflacao).
+
+NAO explicar o fundo cosmico de micro-ondas em detalhe: e o proximo episodio. NAO nomear nenhum extra. NAO inventar data nem autor que nao estejam no roteiro. NAO traduzir a vida de uma pessoa pra escala do calendario.
+
+A pagina que acompanha o audio tem 7 telas. No fim de cada tela, menos a ultima, um apresentador diz o marcador "Proxima pagina", exatamente essas duas palavras, 6 vezes no total. O lembrete da pagina na abertura e uma fala so, de um apresentador, e o outro nao comenta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste episodio e a regua do ano cosmico.
+
+Use tambem o Overview.txt como contexto curto.

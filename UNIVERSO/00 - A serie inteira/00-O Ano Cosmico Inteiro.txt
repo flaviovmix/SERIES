@@ -1,0 +1,29 @@
+Inicie dizendo: Universo - O Ano Cosmico Inteiro
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_O Ano Cosmico Inteiro.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio.
+
+Este e o piloto da serie Universo: o ano cosmico inteiro, de ponta a ponta, num audio so, sem pagina e sem tela.
+
+FOCO: o Calendario Cosmico com a regua de treze bilhoes, setecentos e noventa e sete milhoes de anos, marco a marco de primeiro de janeiro a trinta e um de dezembro, e em cada marco COMO E QUE ALGUEM SABE aquela data. Data em disputa e faixa, nunca ponto.
+
+NAO se aprofundar em nenhum marco: este audio e o mapa, e cada etapa da serie desce nos dela. NAO inventar data que nao esteja no roteiro, e NAO inventar nome de autor: quem publicou so aparece quando o roteiro trouxer o nome. NAO traduzir a vida de uma pessoa pra escala do calendario. NAO pedir pra apertar nada nem falar de tela.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste audio e a regua do ano cosmico.
+
+Use tambem o Overview.txt como contexto curto.

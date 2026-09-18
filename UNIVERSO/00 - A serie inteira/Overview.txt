@@ -1,0 +1,19 @@
+UNIVERSO - O ANO COSMICO INTEIRO - CONTEXTO
+===========================================
+Documento curto de contexto para uso com NotebookLM.
+
+Universo e uma serie de audio sobre como a gente sabe o que sabe do universo. Quase tudo chegou aqui como luz, e a serie ensina a ler o que a luz traz: distancia, temperatura, do que a coisa e feita e de quando ela e. O formato e o Calendario Cosmico, recurso didatico criado por Carl Sagan em 1977, em que a idade inteira do universo e espremida num ano de doze meses. Sagan usou quinze bilhoes de anos; esta serie usa a regua de hoje, 13,797 bilhoes de anos (Planck 2018), em que um dia vale 37,8 milhoes de anos e um segundo vale 437 anos e meio.
+
+Este audio e o piloto: o ano inteiro, de primeiro de janeiro a trinta e um de dezembro, marco a marco, sem se aprofundar em nenhum. Ao final o ouvinte tem o mapa da serie e sabe a regra que atravessa tudo: toda marca vem com o como e que alguem sabe aquela data (luz, pedra, isotopo, fossil, gelo ou genetica), e toda data em disputa entra como faixa, com os dois lados nomeados.
+
+A serie tem seis etapas, cada uma com um pedaco do ano:
+1. Janeiro: do primeiro instante a Via Lactea.
+2. De fevereiro a agosto: os sete meses em que quase nada acontece por aqui.
+3. Setembro e outubro: o Sol, a Terra, a Lua, a vida e o oxigenio.
+4. Novembro e a primeira quinzena de dezembro: a vida microscopica.
+5. De 17 a 30 de dezembro: os bichos, a saida da agua, as extincoes e os dinossauros.
+6. 31 de dezembro: o ultimo dia, e a historia escrita nos ultimos doze segundos.
+
+Por que importa: o calendario e um jeito de enxergar o tempo, e a regua muda o que cada data significa. Saber como cada data foi medida e o que separa o que a ciencia fechou do que ainda esta em disputa.
+
+Use este contexto apenas como apoio.

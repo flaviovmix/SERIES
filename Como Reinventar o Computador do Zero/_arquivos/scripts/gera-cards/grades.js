@@ -88,9 +88,11 @@ function peDaEtapa(etapa, texto, onde) {
   return { contagem: acao.contagem || texto.contagem, botao: { href: acao.href, rotulo: acao.rotulo || texto.botao, aria: acao.aria } };
 }
 
+/* o hub pode fechar a grade das etapas com o card dos extras da serie: e o campo `extras`
+   do dado, opcional (17/09, pedido dele no hub do Universo: "depois coloca o extra") */
 function cardsDasEtapas(dado, menu, marcador) {
   const serie = arvore.acharSerie(menu, dado.serie);
-  return casarComMenu(serie.etapas, dado.cards, marcador).map(({ item: etapa, texto }) => {
+  const etapas = casarComMenu(serie.etapas, dado.cards, marcador).map(({ item: etapa, texto }) => {
     const onde = `${marcador}, etapa ${etapa.num}`;
     exigir(texto, ['periodo', 'frase', 'resumo'], onde);
     return {
@@ -99,19 +101,25 @@ function cardsDasEtapas(dado, menu, marcador) {
       ...peDaEtapa(etapa, texto, onde),
     };
   });
+  return dado.extras ? [...etapas, cardQueLevaAosExtras(serie, dado.extras, `${marcador}, extras`)] : etapas;
+}
+
+/* o card que leva pros extras da serie: a contagem e o destino saem da MENU. E o mesmo
+   na grade propria (tipo extras-da-serie) e no fim da grade das etapas */
+function cardQueLevaAosExtras(serie, texto, onde) {
+  if (!serie.extras) throw new Error(`${onde}: a serie ${serie.num} nao tem extras na MENU`);
+  exigir(texto, ['periodo', 'frase', 'resumo'], onde);
+  recusar(texto, ['contagem', 'botao', 'selo'], onde, 'a contagem e o destino dos extras saem da MENU');
+  return {
+    num: 'EX', titulo: serie.extras.nome, ...textoDoCard(texto),
+    ...arteDoDado(texto, `Extras · ${serie.nome}`, `dos extras de ${serie.nome}`),
+    contagem: `${serie.extras.itens.length} extras`,
+    botao: { href: serie.extras.href, rotulo: 'Ver extras', aria: 'Ver os extras da série' },
+  };
 }
 
 function cardDosExtrasDaSerie(dado, menu, marcador) {
-  const serie = arvore.acharSerie(menu, dado.serie);
-  if (!serie.extras) throw new Error(`${marcador}: a serie ${serie.num} nao tem extras na MENU`);
-  exigir(dado.card, ['periodo', 'frase', 'resumo'], marcador);
-  recusar(dado.card, ['contagem', 'botao', 'selo'], marcador, 'a contagem e o destino dos extras saem da MENU');
-  return [{
-    num: 'EX', titulo: serie.extras.nome, ...textoDoCard(dado.card),
-    ...arteDoDado(dado.card, `Extras · ${serie.nome}`, `dos extras de ${serie.nome}`),
-    contagem: `${serie.extras.itens.length} extras`,
-    botao: { href: serie.extras.href, rotulo: 'Ver extras', aria: 'Ver os extras da série' },
-  }];
+  return [cardQueLevaAosExtras(arvore.acharSerie(menu, dado.serie), dado.card, marcador)];
 }
 
 /* a capa amplia com lupa quando tem credito, como qualquer card (decisao 9, mudada em
