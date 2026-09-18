@@ -95,9 +95,12 @@ guardar_backup() {
   local carimbo existentes
   carimbo=$(date +%Y%m%d-%H%M%S)
   existentes=$(mktemp)
-  # so o que ja existe no ar: o tar reclamaria dos arquivos novos deste commit
+  # so o que ja existe no ar: o tar reclamaria dos arquivos novos deste commit.
+  # Com if, e nao com "&&": se o ULTIMO arquivo da lista for novo, o "&&" deixa o laco
+  # com status 1, o subshell devolve 1 e o set -e mata o deploy sem dizer nada (foi assim
+  # que o site/universo.html, ultimo em ordem alfabetica, travou o deploy em 18/09/2026)
   ( cd "$AR" && arquivos_publicados | while IFS= read -r arquivo; do
-      [ -f "$arquivo" ] && printf '%s\n' "$arquivo"
+      if [ -f "$arquivo" ]; then printf '%s\n' "$arquivo"; fi
     done ) > "$existentes"
   if [ ! -s "$existentes" ]; then
     echo "==> nada pra guardar: e o primeiro deploy destas pastas"
