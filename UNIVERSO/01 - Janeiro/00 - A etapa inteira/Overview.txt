@@ -1,0 +1,16 @@
+UNIVERSO - JANEIRO INTEIRO - CONTEXTO
+=====================================
+Documento curto de contexto para uso com NotebookLM.
+
+Universo e uma serie de audio sobre como a gente sabe o que sabe do universo. Quase tudo chegou aqui como luz. O formato e o Calendario Cosmico, recurso didatico criado por Carl Sagan em 1977: a idade inteira do universo espremida num ano de doze meses. A regua desta serie e de 13,797 bilhoes de anos (Planck 2018): um dia vale 37,8 milhoes de anos. Toda marca do calendario vem com o como e que alguem sabe aquela data, e quando ninguem sabe, a regua mostra uma faixa.
+
+Este e o audio da primeira etapa inteira, Janeiro, sem pagina que acompanha. Ele junta as cinco marcas do mes:
+1. 1 de janeiro, 00:00: o inicio do big bang quente.
+2. 1 de janeiro, 00:14: a primeira luz.
+3. De 3 a 8 de janeiro: as primeiras estrelas, que ninguem viu.
+4. 8 de janeiro: a MoM-z14, a galaxia mais distante ja confirmada.
+5. 22 de janeiro: o comeco do disco espesso da Via Lactea.
+
+Por que importa: e o mes em que quase tudo o que se sabe vem de medir o quanto a luz esticou.
+
+Use este contexto apenas como apoio.

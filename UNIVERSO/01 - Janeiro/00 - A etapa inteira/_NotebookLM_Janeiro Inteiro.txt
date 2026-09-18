@@ -1,0 +1,111 @@
+Inicie dizendo: Universo - Janeiro Inteiro
+---------------
+
+Este e o audio da etapa JANEIRO inteira, a primeira etapa da serie Universo, num audio so. A etapa tem cinco episodios; este audio junta os cinco de uma vez, sem se aprofundar em nenhum, pra quem quer o mes inteiro de ponta a ponta.
+
+ESTE AUDIO NAO TEM PAGINA QUE VIRA. Nao pedir pra apertar nada, nao mandar olhar tela, nao falar em botao, nao dizer "proxima pagina". E um audio pra ouvir do comeco ao fim, no carro ou na caminhada.
+
+A REGRA DA SERIE, dita em voz alta logo no comeco e repetida no fim: toda marca do calendario vem com COMO E QUE ALGUEM SABE aquela data. E quando ninguem sabe a data, ela entra como FAIXA, e nao como ponto.
+
+O QUE SE MEDE E O QUE SE TRADUZ. Em janeiro, quase tudo o que se mede e o quanto a luz esticou no caminho, um numero chamado z. Os anos sao traducao desse numero por um modelo. O audio diz isso toda vez que falar de anos de uma coisa muito distante.
+
+TRADUCAO DE ESCALA SO DE MARCA COLETIVA. NAO dizer quanto tempo a vida de uma pessoa duraria na regua, nem nada parecido.
+
+NUMERO COM FONTE. Toda data e todo numero saem com quem publicou e o ano, QUANDO O ROTEIRO TROUXER O NOME. Se o roteiro nao trouxer o nome, dizer so o dado, e NUNCA inventar um autor. Onde o roteiro diz "ninguem sabe", o audio diz "ninguem sabe", sem preencher com palpite. NAO INVENTAR NENHUMA DATA ALEM DAS QUE ESTAO NESTE ROTEIRO.
+
+O AUDIO NAO CHAMA NENHUM EXTRA PELO NOME e nao fala de extras.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A REGUA DO ANO COSMICO: os treze bilhoes, setecentos e noventa e sete milhoes de anos do universo espremidos num ano de doze meses, com um dia valendo trinta e sete milhoes e oitocentos mil anos. E o objeto da serie inteira, e a unica analogia deste audio.
+Fora essa, sem analogias. Explicar direto. Em especial, NAO usar neblina, nevoa, cortina, impressao digital, capsula do tempo, fossil, arqueologia, panqueca, balao, bomba, fogos, calor invisivel, sirene ou qualquer outra imagem pra explicar nada deste audio.
+
+---
+
+ROTEIRO DO EPISODIO
+
+ABERTURA: O QUE E ESTE AUDIO
+
+Retomar em uma frase: o audio da serie inteira ja passou pelo ano todo por cima; aqui o zoom fica so em janeiro, com as cinco marcas.
+
+Dizer o que e: janeiro inteiro do calendario cosmico, num audio so. A serie espreme a idade do universo num ano de doze meses, e janeiro e o mes mais cheio fora de dezembro, e o que menos se enxerga.
+
+A regua: treze bilhoes, setecentos e noventa e sete milhoes de anos, o numero publicado pela colaboracao Planck em dois mil e dezoito, com incerteza de vinte e tres milhoes. Esse numero nao foi medido direto: sai de um modelo com seis parametros ajustado ao fundo cosmico de micro-ondas. Um dia do calendario vale trinta e sete milhoes e oitocentos mil anos; uma hora, um milhao, quinhentos e setenta e cinco mil; um minuto, vinte e seis mil duzentos e cinquenta anos.
+
+O credito: o Calendario Cosmico e um recurso didatico de Carl Sagan, de um livro de mil novecentos e setenta e sete e da serie Cosmos, de mil novecentos e oitenta. Nao e escala cientifica, e a regua dele era de quinze bilhoes de anos.
+
+A regra da serie: toda marca vem com o como e que alguem sabe. E janeiro tem cinco marcas.
+
+PRIMEIRA MARCA: PRIMEIRO DE JANEIRO, MEIA-NOITE
+
+O que se data e o inicio do big bang quente. O Planck nao data nenhum instante zero, nenhuma singularidade: data o comeco da fase quente, e para ali. O satelite Planck, da Agencia Espacial Europeia, foi lancado em catorze de maio de dois mil e nove e recebeu o ultimo comando em vinte e tres de outubro de dois mil e treze.
+
+O que nao foi: uma explosao num ponto. John Mather, da NASA, Nobel de Fisica de dois mil e seis, escreve que "Big Bang" e um nome enganoso: aconteceu em todo lugar ao mesmo tempo, e o universo nao tem centro.
+
+O que ninguem sabe: o que veio antes. A NASA escreve, em dois mil e vinte e seis, que os cientistas nao tem certeza do que veio antes da inflacao, nem do que a alimentou.
+
+SEGUNDA MARCA: PRIMEIRO DE JANEIRO, MEIA-NOITE E CATORZE
+
+O universo fica transparente e a luz passa a andar livre. Essa luz ainda chega, de todas as direcoes: e o fundo cosmico de micro-ondas, a luz mais velha que da pra ver.
+
+Como foi achada: em mil novecentos e sessenta e quatro, Arno Penzias e Robert Wilson, dos Laboratorios Bell, em Holmdel, nos Estados Unidos, nao conseguiam tirar um chiado de uma antena. Vinha do ceu inteiro, de dia e de noite. Chegaram a tirar uns pombos que moravam na antena, e o chiado ficou. Ganharam metade do Nobel de Fisica de mil novecentos e setenta e oito, e o comunicado do premio dizia que outras interpretacoes eram possiveis.
+
+Como se sabe o que ela e: em mil novecentos e oitenta e nove a NASA lancou o satelite COBE, que em nove minutos de observacao registrou o formato dessa luz, um corpo negro perfeito, a forma que so depende da temperatura de quem emitiu. A luz saiu a uns tres mil graus, segundo a Agencia Espacial Europeia, e chega hoje a dois virgula setecentos e vinte e cinco graus acima do zero absoluto, segundo Fixsen, em dois mil e nove. Ela esticou cerca de mil e noventa e uma vezes, que e o z mais um.
+
+O que se publica e o que se traduz: o Planck publica o z dessa luz com incerteza, mil e oitenta e nove virgula noventa e dois, mais ou menos zero virgula vinte e cinco, tirado do mesmo ajuste aos dados. Os trezentos e oitenta mil anos que todo mundo repete sao mais uma conversao por cima desse z, e nenhuma fonte publica incerteza neles. A propria Agencia Espacial Europeia escreve trezentos e oitenta mil num texto e trezentos e setenta mil noutro. No calendario, os dois dao meia-noite e catorze.
+
+E isso aparece fora dos telescopios: segundo a Agencia Espacial Europeia, essa luz e responsavel por uma pequena fracao do chiado das TVs analogicas fora do ar.
+
+TERCEIRA MARCA: DE TRES A OITO DE JANEIRO, UMA FAIXA
+
+Depois da primeira luz, o universo ficou escuro. A NASA fala em uns duzentos milhoes de anos de escuro, e e numero de modelo.
+
+As primeiras estrelas acabaram com esse escuro, e ninguem nunca viu nenhuma delas. A NASA escreve que nao se sabe exatamente quando elas acenderam: foi depois da primeira luz e antes das galaxias mais velhas que se conhecem, que pelo modelo sao de menos de trezentos milhoes de anos depois do inicio. Glover e Klessen, numa revisao de dois mil e vinte e cinco, poem o comeco em z perto de trinta, e esse z, pelo modelo, da uns cem milhoes de anos. Na regua, e uma faixa, de tres a oito de janeiro. Faixa, porque ninguem sabe o dia.
+
+O melhor candidato ja achado e uma galaxia muito fraca chamada LAP1-B, apresentada por Nakajima e colegas em dois mil e vinte e cinco. E candidata, nao confirmacao, e a luz dela, pela traducao do modelo, e de oitocentos milhoes de anos depois do inicio: atrasada pra ser das primeiras.
+
+E a quimica que as primeiras deixaram aparece numa estrela da segunda geracao, a PicII-503, anunciada em dois mil e vinte e seis pelo NOIRLab, um laboratorio de astronomia.
+
+QUARTA MARCA: OITO DE JANEIRO, PERTO DO MEIO-DIA
+
+Em oito de janeiro ja existe galaxia. A mais distante ja confirmada e a MoM-z14. Naidu e colegas, num artigo revisado em janeiro de dois mil e vinte e seis, mediram o z dela: catorze virgula quarenta e quatro. Pelo modelo, uns duzentos e oitenta milhoes de anos depois do inicio.
+
+O que o telescopio James Webb mede nao e a idade: e o z. Ele le a luz do hidrogenio, que sai ultravioleta, com cento e vinte e um virgula seis nanometros, segundo a NASA, e no caso da MoM-z14 chega com uns mil oitocentos e setenta e sete nanometros, infravermelha.
+
+Candidata vem da imagem; confirmada vem do espectro. Arrabal Haro e colegas publicaram na revista Nature, em dois mil e vinte e tres, o caso de uma candidata que parecia ter z perto de dezesseis e tinha quatro virgula nove.
+
+E o recorde caiu duas vezes em dois anos: z de treze virgula dois em dezembro de dois mil e vinte e dois, catorze virgula trinta e dois em maio de dois mil e vinte e quatro, catorze virgula quarenta e quatro em junho de dois mil e vinte e cinco. Nenhum recorde desses e definitivo.
+
+QUINTA MARCA: VINTE E DOIS DE JANEIRO
+
+Comeca a se formar o disco espesso da Via Lactea, o disco mais velho da nossa galaxia. Xiang e Rix, na revista Nature, em dois mil e vinte e dois: treze bilhoes de anos atras, so oito decimos de bilhao de anos depois do inicio. O resumo do artigo nao publica margem de erro pra esse numero.
+
+Como se sabe: pela idade das estrelas subgigantes, que se le pela temperatura e pelo brilho. Eles determinaram a idade de umas duzentas e cinquenta mil, com as distancias do satelite Gaia e os espectros do levantamento LAMOST, da China. E outro grupo, Nepal e colegas, em dois mil e vinte e quatro, concluiu que o disco fino tambem se forma com menos de um bilhao de anos depois do inicio.
+
+E isso da pra ver: a NASA explica que a faixa leitosa que atravessa o ceu, num lugar escuro, e o disco da nossa galaxia visto de dentro.
+
+ENCERRAMENTO
+
+Recapitular as cinco marcas, cada uma com uma frase do como se sabe: o comeco da fase quente, com a idade derivada de um modelo; a primeira luz, com o z publicado pelo Planck; as primeiras estrelas, numa faixa, porque ninguem viu; a galaxia mais distante ja confirmada, com o z medido pelo espectro; e o disco espesso da nossa galaxia, lido em estrelas subgigantes.
+
+Repetir a regra: toda marca com o como se sabe, e faixa quando ninguem sabe.
+
+Onde o audio parou: em vinte e dois de janeiro. O resto do ano ainda esta pela frente, e a proxima etapa cobre de fevereiro a agosto, sete meses com pouca coisa pra marcar por aqui.

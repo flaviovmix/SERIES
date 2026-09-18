@@ -11,6 +11,7 @@
 - **O 1.03 está pronto (18/09/2026):** `01 - Janeiro/03 - As primeiras estrelas/`, 8 telas, trio aprovado na segunda rodada, o áudio **"As estrelas que acabaram com o escuro" (9:52)**. A régua ganhou a **primeira faixa** (3 a 8 de janeiro, D14) e o ponto da LAP1-B em 22 de janeiro. Sem ficha humana, de propósito. Todas as imagens são reais ou concepção artística declarada; o Flow nem entrou. ⚠️ Ressalvas no `_telas.md`: a "impressão digital" (analogia proibida) aos 09:25, a estrela PicII-503 sem o nome no fecho, e um "só" que o verificador tinha tirado. Regravar ou deixar é decisão dele.
 - **O 1.04 está pronto (18/09/2026):** `01 - Janeiro/04 - A galaxia mais distante/`, 8 telas, trio aprovado na segunda rodada, o áudio **"A confirmação da galáxia recordista MoM-z14" (11:53)**. Widget novo, `ondecai.js`: onde a luz do hidrogênio (121,6 nm) cai conforme o z, com o olho, o controle remoto e o NIRSpec na mesma faixa, e a tradução em anos separada e marcada. A régua ganhou os três últimos recordes e lupa no dia 8. ⚠️ Ressalvas no `_telas.md`: o nome MoM-z14 lido de três jeitos pela voz, um "puro calor invisível" na abertura e um "o z multiplica" impreciso. Regravar ou deixar é decisão dele.
 - **O 1.05 está pronto (18/09/2026):** `01 - Janeiro/05 - A Via Lactea comeca/`, 7 telas, trio aprovado na segunda rodada, o áudio **"O nascimento do disco da Via Láctea" (9:02)**. A régua de janeiro fecha com as cinco marcas, e cada uma mostra o como se sabe quando o cursor para nela (D13). Sem widget novo: a régua é a mesma peça, com a linha do como se sabe. ⚠️ Ressalvas no `_telas.md`: "o z medido pelo satélite Planck" aos 07:03 (P11: é publicado, derivado do ajuste; veio do roteiro), um "a gente tem um consenso" aos 06:12 e o nome MoM-z14 tropeçado de novo. Regravar ou deixar é decisão dele.
+- **O 00 de Janeiro está no ar (18/09/2026):** `01 - Janeiro/00 - A etapa inteira/`, trio aprovado na segunda rodada, o áudio **"Janeiro no Calendário Cósmico" (12:22)**, só de ouvir, no player da `site/etapas/universo-01.html` (saiu o PROVISORIO). Janeiro inteiro publicado. ⚠️ Ressalvas no `_telas.md`: o "z medido" do Planck aos 04:40 (P11), "a prova real vem da química" e a faixa das primeiras estrelas "conhecida pela química" no fecho (a faixa é modelo e galáxias velhas), o "código de barras" (analogia fora da lista), um fecho inventado que diz que qualquer data confirmada pode cair amanhã, e o "infravermelho longo" (é próximo). É o que tem mais ressalva da etapa; regravar ou deixar é decisão dele.
 - **Margem de baixo e cards largos no telefone (18/09/2026, pedido dele pelo print do 1.02):** na base comum (`site/css/animacao/telas.css` e `pranchas.css`), vale pra toda animação de toda série: 88px embaixo de cada tela no telefone (a alça do tocador não cobre mais o último card) e os cards de texto e do fechamento na largura da imagem.
 - **A régua virou peça movida por dados (18/09/2026):** o `regua.js` e o `regua.css` são os mesmos arquivos do 1.02 ao 1.05; as marcas, as faixas, a lupa (ano, janeiro, um dia, uma hora) e o degrau de cada rótulo vêm do bloco JSON da página. P10 abaixo: juntar num lugar só.
 - **Conversor de desvio pra anos:** `_arquivos/scripts/idade-no-desvio.py` faz a conta do ΛCDM com os parâmetros do Planck 2018 (dá 13,79 bilhões pra hoje e 372 mil anos pro z\* da primeira luz). É tradução pelo modelo, e a pesquisa de cada episódio diz isso quando usa.
@@ -60,7 +61,7 @@ A pergunta única: **se todo o tempo do universo coubesse num ano, o que acontec
 
 | # | Etapa | O que a régua ganha | Eps | Status |
 |---|---|---|---|---|
-| 1 | **Janeiro** | do primeiro instante à Via Láctea, as cinco marcas até 22 de janeiro | 5 | 🟠 |
+| 1 | **Janeiro** | do primeiro instante à Via Láctea, as cinco marcas até 22 de janeiro | 5 | 🟢 |
 | 2 | **De fevereiro a agosto** | os sete meses em que nada acontece por aqui | 3 | 🔴 |
 | 3 | **Setembro e outubro** | o Sol, a Terra, a Lua, a vida e o oxigênio | 4 | 🔴 |
 | 4 | **Novembro e a primeira quinzena de dezembro** | a célula complexa, o sexo e os seres que não se encaixam | 4 | 🔴 |
@@ -68,7 +69,7 @@ A pergunta única: **se todo o tempo do universo coubesse num ano, o que acontec
 | 6 | **31 de dezembro** | o último dia, e a história escrita nos últimos 12 segundos | 5 | 🔴 |
 
 Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
-**Placar:** 5 publicados · 22 pela frente (fora os 7 episódios `00` e os extras; o `00` da série está no ar).
+**Placar:** 5 publicados · 22 pela frente (fora os 7 episódios `00` e os extras; no ar, o `00` da série e o de Janeiro).
 
 ---
 

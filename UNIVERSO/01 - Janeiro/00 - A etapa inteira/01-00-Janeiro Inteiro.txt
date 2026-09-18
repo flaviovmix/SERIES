@@ -1,0 +1,29 @@
+Inicie dizendo: Universo - Janeiro Inteiro
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Janeiro Inteiro.txt enviado como fonte.
+Esse arquivo contem o roteiro completo deste audio.
+
+Este e o audio da etapa Janeiro inteira, a primeira etapa da serie Universo: as cinco marcas de janeiro no calendario cosmico, num audio so, sem pagina que vira.
+
+FOCO: as cinco marcas de janeiro, cada uma com o como e que alguem sabe aquela data. Meia-noite do primeiro de janeiro, o inicio do big bang quente, com a idade derivada de um modelo. Meia-noite e catorze, a primeira luz, com o z publicado pelo Planck e os trezentos e oitenta mil anos como traducao. De tres a oito de janeiro, a faixa das primeiras estrelas, que ninguem viu. Oito de janeiro, a MoM-z14, a galaxia mais distante ja confirmada, e um recorde que caiu duas vezes. Vinte e dois de janeiro, o comeco do disco espesso da Via Lactea, lido em estrelas subgigantes.
+
+NAO falar em pagina, tela, botao nem "proxima pagina". NAO chamar extra pelo nome. NAO inventar data nem autor que nao estejam no roteiro. NAO traduzir a vida de uma pessoa pra escala do calendario. NAO dizer que alguem viu uma primeira estrela, NAO dizer que o Planck mediu trezentos e oitenta mil anos, NAO dizer que foi uma explosao.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste audio e a regua do ano cosmico.
+
+Use tambem o Overview.txt como contexto curto.

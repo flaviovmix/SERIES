@@ -1,0 +1,146 @@
+# Transcricao automatica (faster-whisper small) - 12.4 min
+# Fonte: Janeiro no Calendário Cósmico.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] universo janeiro inteiro. Bom, essa é uma investigação em áudio sobre a primeira
+[00:05] etapa da série universo. Isso aí, e o nosso foco hoje é passar pelo mês de
+[00:11] janeiro inteiro no calendário cósmico. Tudo isso em um áudio único do começo
+[00:16] ao fim. Exato. E para quem nos ouve tem uma base, a gente precisa introduzir o
+[00:20] recurso didático que vai guiar toda essa etapa. Tá famosa régua do
+[00:24] calendário cósmico, né? Sim, a régua do calendário cósmico que foi
+[00:28] criada pelo Carl Sagan lá num livro de 1977. E depois ficou super conhecida na
+[00:34] série Cosmos de 1980. Com certeza. E a ideia dessa régua é bem simples.
+[00:39] Ela exprime a idade inteira do universo dentro de um ano de 12 meses. Mas os
+[00:45] números dessa régua são bem específicos hoje em dia. São sim. O tamanho total da
+[00:50] régua é de 13 bilhões 797 milhões de anos. E da onde vem esse número exato?
+[00:57] Ainda a colaboração Planck num trabalho de 2018. E detalhe, tem uma
+[01:03] incerteza aí de 23 milhões de anos. Para mais ou para menos? Isso. E esse número
+[01:08] todo é derivado de um modelo com seis parâmetros. Não é uma leitura direta de
+[01:13] um relógio, sabe? Entendi. E quando a gente coloca esses quase 14 bilhões de
+[01:18] anos num calendário de 12 meses, os recortes de tempo ficam muito
+[01:23] precisos. Ficam mesmo. Só para ter uma noção, um dia nessa régua vale 37
+[01:30] milhões e 800 mil anos. Uma hora vale 1.575 mil anos. E um minuto
+[01:37] equivale a 26.250 anos. É muito tempo exprimido. E a gente tem uma regra
+[01:43] principal para este áudio, para quem está acompanhando. Verdade, a regra de
+[01:47] ouro. Toda marca de data no calendário vem obrigatoriamente acompanhada de
+[01:52] como é que alguém sabe aquele número. Não dá para jogar uma data no ar sem
+[01:57] explicar a ferramenta ou método. E quando ninguém sabe a data exata, a marca vira uma
+[02:02] faixa na régua, não um ponto cravado. Exatamente. E tem uma coisa técnica que
+[02:07] guia quase tudo que se mede neste mês. O famoso Z, né? Isso, o Z. Basicamente, os
+[02:12] instrumentos leem o quanto a luz esticou no caminho até chegar aqui. Esse é o
+[02:17] número Z. E os anos que a gente fala são apenas uma tradução desse
+[02:21] número Z feita por um modelo. Perfeito. Então, com a régua pronta, a gente vai
+[02:25] para a primeira marca. Meia noite do primeiro de janeiro. O início do Big Bang
+[02:29] Quent. E aqui tem um ponto importante. O satélite Planck, da Agência Espacial
+[02:32] Europeia, que operou de 2009 a 2013, não data um instante zero, né?
+[02:37] Oh, não, não data. O que se data como o brilho é o começo da fase quente. Aquele
+[02:42] instante zero mesmo? Ninguém sabe. A própria NASA escreve num texto de
+[02:46] 2026 que ninguém sabe o que veio antes. Exato. E tem um problema aí com essa
+[02:51] ideia de Big Bang. É, o termo engana muito. A imagem popular é sempre uma
+[02:54] explosão gigante no espaço escuro. Pois é. Mas o John Mather, da NASA, que ganhou
+[02:59] o Nobel de Física de 2006, explica bem isso. O que ele diz? Ele diz que o nome
+[03:04] Big Bang é bem enganoso. Porque não foi uma explosão num ponto específico que
+[03:09] espalhou as coisas. Aconteceu em todo lugar ao mesmo tempo. Isso. O espaço
+[03:14] todo expandiu junto. E o universo simplesmente não tem centro. Tá, então o
+[03:19] espaço inteiro aquece e começa a crescer. E a gente avança um pouco na régua.
+[03:23] 14 minutos. Meia noite e 14 na nossa régua. A primeira luz. Sim. O universo
+[03:28] é frio o suficiente. Fica transparente e a luz passa a andar livremente. E a
+[03:33] descoberta dessa luz tem uma história muito boa. Muito boa. O Arnopensias e
+[03:38] o Robert Wilson acharam essa luz lá em 1964.
+[03:42] Eles estavam tentando tirar um chiado de mantena nos laboratórios Bell, né?
+[03:46] Exato. Um chiado que não sumia por nada. Eles revisaram tudo e chegaram até a
+[03:51] tirar uns pombos que estavam morando na antena. Limparam a sujeira dos pombos e o
+[03:56] barulho continuou? Continuou. Porque não era defeito. Era o eco do começo do
+[04:00] universo. Eles ganharam metade do Nobel de 1978 por causa disso. E depois os
+[04:06] instrumentos melhoraram para ler essa luz. Muito. O Sateli Ticobi, da NASA,
+[04:10] em 1989, provou uma coisa incrível em apenas 9 minutos de observação. Que a
+[04:17] luz tem o formato de um corpo negro perfeito. Exatamente. A luz saiu de lá no
+[04:22] começo a uns 3 mil graus de temperatura. E o espaço expondiu tanto que ela
+[04:26] esfriou? Sim. Ela chega hoje medindo 2,725 graus acima do zero absoluto,
+[04:34] segundo dados do Fixend 2009. E aqui entra aquela nossa regra de separar o
+[04:39] mede do que se traduz, né? Bem lembrado. Porque o satélite Planck publicou o Z
+[04:44] medido dessa luz. Isso. O número que eles leram foi um Z de 1089,92, mais ou
+[04:51] menos 0,25. E aqueles famosos 380 mil anos que todo mundo lê nas notícias. Isso é
+[04:57] só uma conversão feita em cima desse Z que foi nudido. É tão flexível que a
+[05:02] própria agência espacial europeia usa 380 mil anos num texto e 370 mil no
+[05:07] texto. Verdade. Mas a nossa régua de 1 ano, esses dois valores caem no mesmo minuto.
+[05:13] Meia noite 14. E um detalhe muito bom dessa luz. Qual? Ela causa a parte daquele
+[05:19] chiado de TVs analógicas fora do ar. Ah sim, a estática na tela. Uma parte daquilo é a
+[05:25] luz do início, batendo na antena da TV. Bom, a partir dessa luz que viaja
+[05:30] livremente, o universo entra numa transição lógica. Os modelos da NASA chamam
+[05:34] de período escuro. Um tempo que durou uns 200 milhões de anos e a gente chega na
+[05:40] nossa próxima marca. A faixa das primeiras estrelas foram elas que acabaram com esse
+[05:45] escuro. E no nosso calendário cósmico, isso dá uma faixa entre 3 e 8 de janeiro.
+[05:50] Uma faixa larga de vários dias. Porque ninguém sabe o dia exato. E na verdade,
+[05:55] ninguém nunca viu uma dessas primeiras estrelas. Nunca. Ninguém tem uma
+[05:59] imagem delas. Então, como a gente busca algo que nunca viu? Por duas
+[06:04] primeiros pelos modelos. O Glover e o Claessan, numa revisão de 2025, colocam o
+[06:11] começo dessas estrelas num Z perto de 30. E o que isso dá em anos? Dão 100 milhões de
+[06:16] anos depois do início. Pelo modelo. Mas e as provas físicas? Então, a melhor
+[06:21] candidada que a gente tem em imagem hoje é a galáxia LAP1B. A apresentada
+[06:27] pelo Nakajima e uns colegas em 2025. Isso. Mas tem um problema com ela.
+[06:31] Ela é de 800 milhões de anos depois do início. Ou seja, tá bem atrasada para ter
+[06:38] as estrelas originais. Exato. A prova real mesmo dessas primeiras estrelas não vêm
+[06:42] da luz. Vêm da química. Da química deixada por elas. Sim. O Noir Lab anunciou no
+[06:48] comecinho de 2026 a descoberta da estrela Pixie 503. Uma estrela de segunda geração, certo?
+[06:55] Exato. Ela carrega dentro dela exatamente a química, o material que foi deixado
+[07:00] por aquelas primeiras estrelas que já morreram. Tá, e com o fim desse escuro a gente avança
+[07:05] mais um pouco? Vamos lá para perto do meio-dia do dia 8 de
+[07:08] janeiro na nossa régua. Aqui a gente já tem galáxias inteiras formadas. Sim. E a gente
+[07:14] marcar a galáxia mais distante já confirmada até agora. A Monsi 14. O Naidui e os
+[07:20] colegas num artigo que foi revisado em janeiro de 2026 mediram o Z da Monsi 14.
+[07:26] E de o 14,44. Exato. O que traduzindo pelo modelo dá uns 280 milhões de anos depois do
+[07:35] começo da fase quente. Mas o telescópio James Webb não mede essa idade em anos, né?
+[07:40] Não, de forma alguma. Ele simplesmente lê a luz do hidrogênio, o Z daquela luz.
+[07:46] Como funciona essa leitura? Exatamente. A luz sai de lá da galáxia como ultravioleta.
+[07:51] O comprimento da onda é bem curto. 121,6 nanômetros. Mas aí o espaço expande no
+[07:58] caminho. O espaço cresce. Aonde estica? Então a luz chega aqui na terra infravermelha
+[08:04] longa, com 1.877 nanômetros. E o telescópio lê essa diferença. Lê a luz
+[08:10] esticada. Mas esse recorde de galáxia mais distante caiu duas vezes nos últimos
+[08:15] tempos de forma bem rápida. Caiu sim. Tem uma diferença crucial aí entre
+[08:20] comprar uma coisa e confirmar essa coisa, né? Total diferença. Uma candidata
+[08:25] recorde vem de uma imagem. A confirmação só vem do espectro. E por que a imagem pode
+[08:31] enganar? O caso publicado pelo Arrabao Haro na revista Nature em 2023 mostra
+[08:36] bem isso. O que aconteceu nesse caso? Eles viram uma candidata na imagem que
+[08:41] parecia ter um Z perto de 16. Nossa, muito longe. Parecia. Mas quando eles
+[08:47] fizeram o espectro de luz, o código de barras detalhado, o espectro mostrou que o Z
+[08:53] era 4,9. Uma diferença gigante. Enorme. A poeira mudou a cor na imagem. O recorde
+[09:00] verdadeiro só vale com o espectro. E como ficaram os recordes verdadeiros? Caiu
+[09:06] de 13,2 em 2022 para 14,32 em 2024. Até chegar nesse atual de 14,44 em
+[09:16] 2025. Nenhum recorde é definitivo nessa área. Bom, a gente sai dessa galáxia super
+[09:22] distante e volta para nossa casa cósmica. Direto para o dia 22 de janeiro no
+[09:27] calendário. O começo da formação do disco espesso da nossa Via Láctea. Sim, o
+[09:33] Chiang e o Hitter Mix publicaram na revista Nature em 2022. E eles colocaram a data
+[09:39] disso em 13 bilhões de anos. Isso mesmo. Apenas 8 décimos de bilhão de
+[09:44] tempo depois do início. E um detalhe é que o resumo do artigo não publica nem
+[09:49] margem de erro para isso. É uma data muito forte no estudo deles. Mas como se mede a
+[09:54] idade da nossa própria galáxia estando presos do lado de dentro dela? A gente
+[09:59] não consegue tirar uma foto de fora. Eles leem as estrelas. Especificamente a
+[10:04] idade é lida pela temperatura e pelo brilho das estrelas subgigantes. E como
+[10:09] funciona essa leitura? Os pesquisadores mediram umas 250 mil dessas
+[10:14] cruzando duas bases de dados. Quais bases? Usaram as distâncias lidas pelo
+[10:18] satélite Gaia e somaram com os espectros coletados pelo levantamento Lamost, lá da
+[10:25] China. E o disco espesso não é a única parte que se forma rápido? Não. O Nepal e
+[10:30] colegas concluíram em 2024 que o disco fino também se forma com menos de 1
+[10:35] bilhão de anos. Esse disco fino é o disco da nossa galáxia que vemos como
+[10:40] aquela faixa leitosa no seu noturno, né? Exato. Aquela mancha clara no escuro. Então
+[10:45] com essa marca do dia 22 a gente completou o nosso mês. Vamos recapitular essas
+[10:50] cinco marcas? Vamos. Meia noite do primeiro de janeiro com o começo da fase
+[10:55] quente derivada de um modelo. Meia noite 14 com a primeira luz e o número Z
+[11:01] publicado pelo Planck. Aí temos a faixa de três a oito de janeiro das
+[11:06] primeiras estrelas que ninguém viu conhecidas pela química. Depois o dia
+[11:11] oito com a galáxia mais distante confirmada apenas pelo Z lido no espectro. E o dia 22
+[11:17] com o disco espesso da nossa galáxia lido a partir das estrelas subgigantes. É
+[11:22] sempre bom reforçar regra para quem ouve. Toda marca no calendário tem que
+[11:27] vir com a prova de como se sabe a data. E vira uma faixa na régua quando
+[11:31] ninguém sabe a data exata. O áudio para exatamente aqui no dia 22 de janeiro.
+[11:37] Ainda tem um ano inteiro pela frente. Pois é. A próxima etapa da série vai ter que
+[11:41] cobrir de fevereiro até agosto. São sete meses longos e com pouca coisa para
+[11:45] marcar. Mas antes de encerrar, os dados que a gente discutiu deixam uma provocação
+[11:51] clara para quem está ouvindo, não é? Uma reflexão bem direta. Pense no
+[11:55] seguinte. O telescópio lê apenas a luz do hibrogênio esticada. Ele não
+[11:59] lê um relógio direto no espaço. E a gente acabou de ver que a diferença entre
+[12:03] uma imagem e um espectro muda uma idade completamente.
+[12:07] Exatamente. A poeira engana, a cor engana. Então qualquer data que a gente chama de
+[12:12] confirmada hoje pode ser reescrita logo amanhã. Basta um novo instrumento se
+[12:18] apontado para o céu escuro e ler uma luz de um jeito mais sensível.
