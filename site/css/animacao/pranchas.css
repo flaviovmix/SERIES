@@ -303,6 +303,13 @@
   .lado-arte { width: 100%; order: -1; }
   .lado-arte img { max-height: min(30vh, 240px); }
   .mundo .nome { font-size: 20px; }
+  /* os cards de texto e os do fechamento ocupam a largura da imagem (18/09/2026, pedido
+     dele no 1.02 do Universo: "no celular deve pegar uma largura maior como a imagem, e
+     isso deve se manter para todas as paginas"). Antes cada card parava nos 270px do
+     desktop e ficava estreito no meio da tela, com a imagem larga logo acima */
+  .ficha { width: 100%; max-width: none; align-self: stretch; }
+  .ficha .item { flex: 1 1 100%; max-width: none; min-width: 0; }
+  .mundo { max-width: none; }
 }
 
 /* tela baixa */

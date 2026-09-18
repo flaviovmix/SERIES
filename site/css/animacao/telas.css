@@ -525,3 +525,14 @@ a.fim__filme-onde { color: var(--accent); }
   .fim__filme-nota { font-size: 12px; }
   .fim__acoes { margin-top: 12px; }
 }
+
+/* ---- margem de baixo no telefone (18/09/2026, pedido dele: "coloca uma margem
+   inferior em todas as paginas"). A tela rolava ate o ultimo card encostar no fim, e a
+   alca do tocador (46px, a 16px da borda, tocador.css) ficava por cima dele. Uma regra
+   so, aqui na base: vale pra toda animacao de toda serie, as de antes e as de depois.
+   88px = a alca inteira (62px) mais uma folga. "main >" pra ganhar do padding que as
+   regras de telefone e de tela baixa dao a .step, e do episodio que ponha o seu.
+   Por ultimo na folha de proposito. ---- */
+@media (max-width: 820px) {
+  main > .step { padding-bottom: 88px; }
+}
