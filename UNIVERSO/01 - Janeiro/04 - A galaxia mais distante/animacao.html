@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A galáxia mais distante — Universo 1.04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 1.04 da serie UNIVERSO. Nasceu do _molde-animacao.html.
+     As 8 telas seguem a _planta.md e o _telas.md, que saiu do audio: o audio manda, a
+     pagina serve. O que e deste episodio: onde a luz do hidrogenio cai conforme o z
+     (ondecai.css/ondecai.js, tela 4) e a regua do ano cosmico com os recordes
+     (regua.css/regua.js, os mesmos do 1.02; as marcas vem do bloco JSON da tela 7),
+     carregados por ultimo. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="ondecai.css">
+<link rel="stylesheet" href="regua.css">
+</head>
+<body>
+
+<header class="topo"></header>
+
+<main>
+
+  <!-- 1 (00:00) capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">universo · janeiro · episódio 1.04</div>
+      <h1 class="reveal">A galáxia mais distante</h1>
+      <p class="lede reveal">Em 8 de janeiro já existe galáxia. A mais distante já confirmada é a MoM-z14, e o que o telescópio mede nela não é a idade: é quanto a luz esticou. Um recorde que já caiu duas vezes.</p>
+      <div class="capa-como reveal">
+        <p><b>No episódio anterior:</b> a faixa das primeiras estrelas, de 3 a 8 de janeiro.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/tela-01.webp" alt="Um céu escuro cheio de pequenas galáxias de várias cores e formas espalhadas pelo quadro inteiro">
+      <figcaption>ilustração · um campo profundo: cada mancha é uma galáxia inteira</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 (01:37) a ficha: a galaxia e o espectrografo -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a ficha do instante</div>
+      <h2 class="reveal">O que se mede, e com o quê</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que se mede</div><div class="texto">O z da <b>MoM-z14</b>: <b>14,44 ± 0,02</b> (Naidu e colegas, janeiro de 2026).</div></div>
+        <div class="item reveal"><div class="rotulo">a data, traduzida</div><div class="texto">Uns <b>280 milhões de anos</b> depois do início, pelo modelo. Na régua, <b>8 de janeiro</b>, perto do meio-dia.</div></div>
+        <div class="item reveal"><div class="rotulo">o instrumento</div><div class="texto"><b>NIRSpec</b>, espectrógrafo da Agência Espacial Europeia que fica no Webb: de 0,6 a 5,3 micrômetros, mais de 100 objetos ao mesmo tempo, 248 mil portinhas.</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="Espectros de teste do NIRSpec, antes do lançamento: cada faixa horizontal é a luz de um objeto aberta em cores · imagem: NASA's James Webb Space Telescope, 2018, CC BY 2.0">
+        <span class="selo">🔍 ampliar</span>
+        <img src="img/tela-02.webp" alt="Dois quadrados pretos cheios de faixas horizontais alaranjadas e brancas, com riscos escuros verticais: espectros de teste">
+        <figcaption>espectros de teste do NIRSpec, 2018 · NASA's James Webb Space Telescope, CC BY 2.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 (03:14) o que o telescopio mede -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">NASA · Naidu e colegas · ESA</div>
+      <h2 class="reveal">O que o telescópio mede</h2>
+      <p class="lede reveal">Não é a idade nem a distância: é o <b>z</b>, quanto a luz foi esticada pela expansão do universo.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">como se lê</div><div class="texto">O hidrogênio mexe com uma luz ultravioleta de <b>121,6 nanômetros</b>. No espectro da MoM-z14, a luz abaixo dela some de uma vez, e mais cinco linhas confirmam.</div></div>
+        <div class="item"><div class="rotulo">e os anos</div><div class="texto">São tradução do modelo. A ESA escreve que, tão longe, falar em "anos atrás" fica complicado.</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A MoM-z14 no campo COSMOS, vista pelo NIRCam do Webb, com o destaque ampliado · imagem: NASA, ESA, CSA, STScI, R. Naidu (MIT), processamento J. DePasquale (STScI), CC BY 4.0">
+      <img src="img/tela-03.webp" alt="Um céu escuro cheio de galáxias pequenas e estrelas com pontas, e um quadro ampliado à direita mostrando uma mancha amarelada pequena rotulada MoM-z14">
+      <figcaption>imagem real · a MoM-z14 no campo COSMOS · NASA, ESA, CSA, STScI, R. Naidu, CC BY 4.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 4 (04:47) onde a luz cai, interativa -->
+  <section class="step" data-imagem="desenho">
+    <div class="kicker reveal">mexa enquanto ouve · pause o áudio se quiser explorar</div>
+    <h2 class="reveal">Onde a luz cai</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legOndecai">A luz do hidrogênio como sai: 121,6 nm, ultravioleta. Arraste o z.</div>
+      <div class="painel__miolo" id="mioloOndecai"></div>
+      <div class="painel__total">
+        <span class="num" id="totalOndecai">1,00 vezes</span>
+        <span class="meta">quanto a luz esticou (1 + z)</span>
+      </div>
+      <div class="botoes">
+        <button class="btn-mini" id="ondecaiVolta">a luz como sai</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 (06:09) candidata e confirmada -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Oesch, na ESA · Arrabal Haro e colegas, Nature, 2023</div>
+      <h2 class="reveal">Candidata e confirmada</h2>
+      <p class="lede reveal">Pela imagem dá pra estimar: a MoM-z14 some nos filtros de comprimento de onda mais curto e só aparece a partir de uns 2 micrômetros. Mas <b>quem confirma é o espectro</b>.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">o falso z 16</div><div class="texto">Uma candidata parecia ter z perto de 16. O espectro deu <b>4,9</b>: poeira e linhas de emissão imitavam as cores de algo muito mais longe.</div></div>
+        <div class="item"><div class="rotulo">na régua, pela conta do modelo</div><div class="texto">A diferença entre <b>7 de janeiro</b> e <b>1º de fevereiro</b>.</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A MoM-z14 em sete filtros do NIRCam, do comprimento de onda mais curto (F090W) ao mais longo (F444W): nada nos três primeiros, uma mancha a partir de 2 micrômetros · figura 1 de Naidu e colegas, 2026, CC BY 4.0">
+      <img src="img/tela-05.webp" alt="Sete quadradinhos azulados lado a lado: nos três primeiros só ruído, e do quarto em diante uma mancha escura no centro">
+      <figcaption>figura do artigo · a MoM-z14 em sete filtros · Naidu e colegas, CC BY 4.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 6 (07:52) o recorde que caiu duas vezes -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Curtis-Lake e colegas · NASA · ESA</div>
+      <h2 class="reveal">O recorde que caiu duas vezes</h2>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">dezembro de 2022</div><div class="texto"><b>JADES-GS-z13-0</b>, z = 13,2, confirmada pelo espectro.</div></div>
+        <div class="item"><div class="rotulo">maio de 2024</div><div class="texto"><b>JADES-GS-z14-0</b>, z = 14,32, depois de quase dez horas de espectrógrafo.</div></div>
+        <div class="item"><div class="rotulo">junho de 2025</div><div class="texto"><b>MoM-z14</b>, z = 14,44. Nenhum recorde desses é definitivo.</div></div>
+      </div>
+      <p class="lede reveal">E a surpresa: galáxias brilhantes tão cedo são <b>cem vezes</b> mais numerosas do que os estudos de antes do Webb previam.</p>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A JADES-GS-z14-0 no campo JADES, com o destaque ampliado: a candidata ficava colada em outra galáxia · imagem: NASA, ESA, CSA, STScI, B. Robertson (UC Santa Cruz), B. Johnson (CfA), S. Tacchella (Cambridge), P. Cargile (CfA), domínio público">
+      <img src="img/tela-06.webp" alt="Um céu escuro com galáxias de várias cores e um quadro ampliado mostrando uma mancha avermelhada pequena ao lado de outra galáxia">
+      <figcaption>imagem real · a JADES-GS-z14-0, recordista de maio de 2024 · NASA, ESA, CSA, STScI</figcaption>
+    </figure>
+  </section>
+
+  <!-- 7 (09:07) a regua com os recordes, interativa -->
+  <section class="step" data-imagem="desenho">
+    <div class="kicker reveal">mexa enquanto ouve · pause o áudio se quiser explorar</div>
+    <h2 class="reveal">A régua com os recordes</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legRegua">Só janeiro: a faixa das primeiras estrelas e os três últimos recordes.</div>
+      <div class="painel__miolo" id="mioloRegua"></div>
+      <div class="painel__total">
+        <span class="num" id="totalRegua">8 de janeiro</span>
+        <span class="meta">onde o cursor está</span>
+      </div>
+      <!-- o que e deste episodio na regua: as marcas (em anos depois do inicio, pela conta
+           do _arquivos/scripts/idade-no-desvio.py), os trechos da lupa e onde a tela comeca.
+           O regua.js e o mesmo em todo episodio -->
+      <script type="application/json" id="configRegua">
+        {
+          "marcas": [
+            { "anosDepois": 0, "nome": "00:00", "nivel": 0 },
+            { "anosDepois": 100000000, "anosDepoisAte": 300000000, "nome": "3 a 8 · primeiras estrelas", "nivel": 1 },
+            { "anosDepois": 283000000, "nome": "MoM-z14", "nivel": 2 },
+            { "anosDepois": 286000000, "nome": "JADES-GS-z14-0", "nivel": 0 },
+            { "anosDepois": 321000000, "nome": "JADES-GS-z13-0", "nivel": 1 }
+          ],
+          "trechos": {
+            "ano": { "legenda": "O ano inteiro: a corrida do recorde é um fiapo no começo de janeiro." },
+            "janeiro": { "legenda": "Só janeiro: a faixa das primeiras estrelas e os três últimos recordes." },
+            "dia": { "legenda": "Só o dia 8: os dois últimos recordes, com umas duas horas entre eles.", "dia": 8 }
+          },
+          "comeca": { "trecho": "janeiro", "naMarca": 2 }
+        }
+      </script>
+      <div class="botoes">
+        <button class="btn-mini" data-lupa="ano">o ano inteiro</button>
+        <button class="btn-mini" data-lupa="janeiro">só janeiro</button>
+        <button class="btn-mini" data-lupa="dia">só o dia 8</button>
+        <button class="btn-mini" id="reguaVolta">voltar à MoM-z14</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 (10:19) fecho -->
+  <section class="step step--mundo step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">onde isso aparece fora da tela</div>
+      <h2 class="reveal">O controle remoto da TV</h2>
+      <div class="mundo">
+        <div class="item reveal">
+          <div class="nome">Infravermelho</div>
+          <div class="desc">O controle usa uns 940 nanômetros: o olho não vê, e algumas câmeras de celular veem (NASA).</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">A MoM-z14</div>
+          <div class="desc">A luz do hidrogênio dela sai a 121,6 nm e chega com uns 1.877 nm: o dobro do controle.</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">A régua</div>
+          <div class="desc">Ganhou os recordes, em 8 e 9 de janeiro. O próximo pode cair amanhã.</div>
+        </div>
+      </div>
+      <p class="lede reveal"><b>No próximo episódio:</b> 22 de janeiro, a nossa galáxia começa. E como é que alguém lê a idade de uma estrela.</p>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A luz infravermelha de um controle remoto, invisível pro olho, aparece roxa na câmera · foto: nlitement, 2006, CC BY-SA 3.0">
+      <img src="img/tela-08.webp" alt="A ponta de um controle remoto segurada na mão, com um pontinho de luz roxa aceso no meio da janela escura">
+      <figcaption>foto real · a luz do controle remoto vista por uma câmera · nlitement, CC BY-SA 3.0</figcaption>
+    </figure>
+  </section>
+
+</main>
+
+<div class="tocador">
+  <audio preload="metadata" src="A confirmação da galáxia recordista MoM-z14.m4a" data-duracao="713"></audio>
+  <img class="tocador__capa" src="../../../site/img/serie-universo.webp" alt="">
+  <div class="tocador__id">
+    <div class="tocador__titulo">A confirmação da galáxia recordista MoM-z14</div>
+  </div>
+  <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="713" aria-valuenow="0">
+    <div class="tocador__cheio"></div>
+    <div class="tocador__marcas"></div>
+  </div>
+  <div class="tocador__controles">
+    <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+    <div class="tocador__transporte">
+      <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+      <button class="tocador__play" aria-label="tocar">▶</button>
+      <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">11:53</span></div>
+  </div>
+</div>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
+</footer>
+
+<script src="../../../site/js/menu.js"></script>
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="ondecai.js"></script>
+<script src="regua.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

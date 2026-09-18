@@ -1,0 +1,144 @@
+/* ondecai: onde a luz do hidrogênio cai, conforme o z (tela 4 do 1.04).
+   A faixa de comprimentos de onda (em escala logarítmica), as regiões do olho e do
+   NIRSpec, o traço do controle remoto, o ponto que anda, o cursor e a leitura. O painel
+   em volta é da base (site/css/animacao/painel.css). Depende de ondecai.js. */
+
+.ondecai__faixa {
+  position: relative;
+  height: 64px;
+  margin: 34px 0 6px;
+  border-radius: 8px;
+  border: 1px solid var(--line, rgba(255,255,255,.25));
+  /* do violeta do ultravioleta ao vermelho-escuro do infravermelho: só pra orientar o olho */
+  background: linear-gradient(90deg, #2a1f4d 0%, #2a1f4d 30%, #1d2640 45%, #3a1f1f 60%, #2b1414 100%);
+}
+
+/* as regiões: um retângulo translúcido com o nome em cima */
+.ondecai__regiao {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+.ondecai__regiao span {
+  position: absolute;
+  top: -22px;
+  left: 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.ondecai__regiao--olho {
+  background: linear-gradient(90deg, rgba(140,90,255,.55), rgba(80,160,255,.55), rgba(90,220,120,.55), rgba(255,220,80,.55), rgba(255,90,70,.55));
+  border-color: #f2f4f8;
+}
+.ondecai__regiao--olho span { color: #f2f4f8; }
+.ondecai__regiao--nirspec {
+  top: 38px;
+  background: color-mix(in srgb, var(--accent, #d9a441) 25%, transparent);
+  border-color: var(--accent, #d9a441);
+}
+.ondecai__regiao--nirspec span { top: auto; bottom: -20px; color: var(--accent, #d9a441); }
+
+/* o controle remoto: um traço fino com o nome embaixo */
+.ondecai__remoto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ff6b6b;
+}
+/* o nome do controle remoto fica em cima: embaixo encavalaria no do NIRSpec */
+.ondecai__remoto span {
+  position: absolute;
+  top: -22px;
+  left: 6px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: #ff9b9b;
+  white-space: nowrap;
+}
+
+/* o ponto que anda: onde a luz do hidrogênio chega */
+.ondecai__ponto {
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  margin: -9px 0 0 -9px;
+  border-radius: 50%;
+  background: var(--ink, #f2f4f8);
+  box-shadow: 0 0 0 4px rgba(255,255,255,.25), 0 0 16px rgba(255,255,255,.6);
+  transition: left .15s;
+}
+
+.ondecai__escala {
+  display: flex;
+  justify-content: space-between;
+  margin: 26px 0 10px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--ink-soft, #b7bdc9);
+}
+
+.ondecai__cursor {
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  background: transparent;
+  cursor: ew-resize;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.ondecai__cursor:focus-visible { outline: 2px solid var(--accent, #d9a441); outline-offset: 4px; border-radius: 8px; }
+.ondecai__cursor::-webkit-slider-runnable-track { height: 8px; border-radius: 99px; background: var(--line, rgba(255,255,255,.25)); }
+.ondecai__cursor::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: var(--ink, #f2f4f8);
+  border: 2px solid var(--ground, #0f1a2e);
+}
+.ondecai__cursor::-moz-range-track { height: 8px; border-radius: 99px; background: var(--line, rgba(255,255,255,.25)); }
+.ondecai__cursor::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ink, #f2f4f8);
+  border: 2px solid var(--ground, #0f1a2e);
+}
+
+.ondecai__leitura {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px 20px;
+  margin-top: 14px;
+}
+.ondecai__leitura b {
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink, #f2f4f8);
+}
+.ondecai__leitura span { font-size: 13px; color: var(--ink-soft, #b7bdc9); }
+
+/* a tradução fica separada e mais apagada: não é o que se mede */
+.ondecai__traducao {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line, rgba(255,255,255,.25));
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--ink-soft, #b7bdc9);
+}
+.ondecai__traducao b { color: var(--ink-soft, #b7bdc9); font-weight: 600; }
+.ondecai__atalhos { margin-top: 12px; }
+
+@media (max-width: 700px) {
+  .ondecai__regiao span, .ondecai__remoto span { font-size: 9.5px; }
+  .ondecai__leitura b { font-size: 16px; }
+}

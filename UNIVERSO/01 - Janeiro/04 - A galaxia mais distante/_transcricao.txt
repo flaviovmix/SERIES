@@ -1,0 +1,183 @@
+# Transcricao automatica (faster-whisper small) - 11.9 min
+# Fonte: A confirmação da galáxia recordista MoM-z14.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] a galáxia mais distante, iniciando mais uma conversa aqui sobre os nossos dados de base.
+[00:05] E hoje, o assunto é sobre captar uma luz que viajou por tanto tempo,
+[00:10] mais tanto tempo, que o próprio espaço acabou esticando o formato dela
+[00:15] até virar puro calor invisível.
+[00:17] É, o nosso alvo hoje é exatamente esse limite extrema da observação científica.
+[00:22] E, bom, para quem vem acompanhando a nossa régua do ano cósmico,
+[00:26] a gente terminou a etapa anterior cobrindo aquela faixa das primeiras estrelas, né?
+[00:30] Aquela faixa que vai do dia 3 ao dia 8 de janeiro do calendário, certo?
+[00:35] Isso mesmo. E a conclusão ali foi bem clara, porque no dia 8 de janeiro, a gente já tem galáxia formada.
+[00:41] Com certeza. O foco da nossa conversa agora é justamente detalhar uma dessas galáxias, a Monze 14.
+[00:49] Ela é a galáxia mais distante que já foi confirmada.
+[00:53] E a ideia aqui é esclarecer o que o telescópio realmente mede quando aponta para ela, sabe?
+[00:58] Porque tem uma diferença gigante, entre uma galáxia ser apenas uma candidata promissora e ser uma confirmada.
+[01:05] Nossa, uma diferença imensa! E a gente também vai passar limpo a história de um recorde que já caiu duas vezes em muito pouco tempo.
+[01:14] Na nossa régua do ano cósmico, toda essa discussão fica localizada ali perto do meio-dia do dia 8 de janeiro.
+[01:20] O áudio acompanha a página que vira sozinha. Quem pular uma tela na mão, leva o áudio junto.
+[01:26] Quem quiser parar para mexer em uma tela precisa pausar o áudio, senão a página vira sozinha.
+[01:31] Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova com o tempo.
+[01:37] Próxima página.
+[01:38] Então, abrindo agora a ficha técnica da Monze 14.
+[01:41] Bom, os números publicados sobre ela vieram da equipe do pesquisador Naído, num artigo de janeiro de 2026.
+[01:49] E o dado central, ali medido pelo telescópio, é o número Z.
+[01:53] O famoso Z. E qual foi a leitura?
+[01:56] O telescópio mediu o Z da galáxia como 14,44.
+[02:01] E a incerteza dessa leitura é minúscula, fica na casa de dois centésimos só.
+[02:07] Mas a gente sempre precisa de uma tradução para entender o que isso significa no tempo, né?
+[02:12] Pelo modelo matemático, esses Zs se traduz em uns 280 milhões de anos depois do início do universo.
+[02:19] Exato. Que na nossa régua cósmica cai no dia 8 de janeiro perto do meio-dia.
+[02:25] Mas bate aquela dúvida clássica.
+[02:27] Por que focar num número decimal esquisito como o Z e não fala logo a idade da galáxia?
+[02:33] O telescópio tem achado muita galáxia brilhante e cedo demais, e isso é um mistério.
+[02:39] Para conseguir ler o Z com essa precisão toda, eles usam um equipamento bem específico.
+[02:44] O espectrógrafo, né?
+[02:45] Isso, o espectrógrafo Neerspec da Agência Espacial Europeia, que fica dentro do telescópio James Webb.
+[02:51] A NASA detalhe, é que ele consegue ver uma luz numa faixa de 0,6 a 5,3 micrômetros.
+[02:59] E o mecanismo dele tem uma grade com 248 mil portinhas minúsculas.
+[03:04] Nossa, muita porta!
+[03:06] E elas abrem e fecham sozinhos pelo que entendi para poder focar o olhar.
+[03:11] Assim dá para olhar mais de 100 objetos de uma vez no céu.
+[03:14] Próxima página.
+[03:15] Mas aqui entra um ponto crucial sobre o equipamento.
+[03:17] É, a gente precisa ser bem categórico nisso.
+[03:21] O telescópio não mede a idade e não mede a distância.
+[03:25] O que ele mede de verdade é o Z.
+[03:28] E o Z, pela explicação da NASA, é literalmente a medida de quanto a luz esticou por causa da expansão do universo.
+[03:35] Certo.
+[03:35] Exatamente.
+[03:36] O universo expande e a luz estica junto.
+[03:39] Mas para saber o quanto a listicou, eles precisam ler a assinatura do hidrogênio.
+[03:44] O hidrogênio absorve e devolve a luz ultravioleta, chamada Leimann-Alpha,
+[03:49] que tem exatos 121,6 nanômicas de comprimento.
+[03:54] Esse é o tamanho original da luz quando ela sai de lá.
+[03:57] E como o equipamento enxerga a mudança?
+[03:59] Quando a equipe analisa o espectro da MOMO Z14,
+[04:02] eles percebem que a luz abaixo desse limite do hidrogênio simplesmente some de uma vez.
+[04:07] Cria uma quebra muito clara no gráfico.
+[04:10] E junto com isso, aparecem mais cinco linhas de emissão do ultravioleta.
+[04:14] E todas esticam na mesma proporção.
+[04:16] Aham.
+[04:17] Todas esticam pelo mesmo tanto.
+[04:19] É assim que o artigo confirmou o Z de 14,44.
+[04:24] Então, falarem 280 milhões de anos,
+[04:27] é só uma tradução feita por um modelo matemático baseada nesse Z.
+[04:32] Sim, é uma estimativa.
+[04:34] A própria agência espacial europeia comenta que olhar tão longe deixa tudo complicado.
+[04:39] Os atermos como distância ou anos atrás
+[04:42] acaba não sendo o ideal quando o universo está se esticando todo no caminho.
+[04:47] Próxima página.
+[04:48] Agora a tela fica interativa.
+[04:51] Tem um cursor ali que permite mudar o valor do Z de 0 até 16.
+[04:55] Só dando aquele aviso quem quiser mexer no cursor com calma
+[04:59] precisa pausar o áudio se não a tela vira.
+[05:01] Bom, essa tela ilustra bem a jornada da luz.
+[05:05] A luz Leimann-Alfa sai como ultravioleta com 121,6 nanômetros,
+[05:11] que é invisível para o olho humano.
+[05:13] A NASA explica que o nosso olho só enxerga de 380 a 700 nanômetros.
+[05:18] E aí a matemática entra em cena.
+[05:20] Na Monton Z14, o Z multiplica o comprimento da onda
+[05:24] e a luz chega aqui esticada 15,44 vezes.
+[05:28] Ela bate lá em uns 1.877 nanômetros.
+[05:32] É muito escheramento.
+[05:34] A luz sai ultravioleta lá atrás, viaja e chega aqui totalmente em infravermelha.
+[05:39] E foi exatamente por isso que o web foi construído para enxergar luz no infravermelho.
+[05:44] E o visual da tela mostra esse caminho certinho.
+[05:47] A luz passa pelo símbolo do olho, passa pelo controle remoto e chega no espectrografo.
+[05:52] Embaixo aparece a tradução em anos, bem separada, sempre lembrando que é uma tradução.
+[05:57] E ainda tem os botões dos últimos recordes e de uma candidata falsa de Z16.
+[06:02] Tudo começa com um cursor no Z igual a zero.
+[06:04] Repetindo, aviso rápido.
+[06:06] Se quiser puxar o cursor para ver a onda esticando, pause o áudio.
+[06:09] Próxima página.
+[06:10] Agora a gente toca num nervo importante da sornomia.
+[06:14] A diferença entre uma galáxia candidata e uma confirmada.
+[06:18] Ah, essa diferença é crucial.
+[06:21] É basicamente a diferença entre analisar uma imagem e ler um espectro.
+[06:26] Pela imagem a gente só consegue fazer estimativas.
+[06:29] Tipo a própria Monzo um 24.
+[06:31] Pelas imagens curtas ela nem aparece, né?
+[06:33] Pois é, ela some totalmente nos filtros de luz mais curtos e só começa a aparecer nas fotos acima de dois micrômetros.
+[06:40] O Pascal West, lá da Universidade de Genebra, disse para a agência espacial europeia que a estimativa pela imagem é ótima.
+[06:47] Mas é o espectro que confirma o que aquilo é exatamente e de quando é aquela luz.
+[06:52] Teve aquele caso famoso de confusão de um falso recorde em 2023.
+[06:56] Foi um artigo do arrabal Azearona revista Nature.
+[06:59] Nossa, esse caso serve de exemplo sempre.
+[07:02] Era uma candidata que parecia muito ter um Z de 16.
+[07:06] Mas quando o espectrographo leu os dados, o Z verdadeiro dela era só 4,9.
+[07:11] Um tombo e tanto.
+[07:13] E o que causou o engano?
+[07:14] Foi poera espacial e algumas linhas de emissão que imitaram perfeitamente a cor de algo que estaria super distante.
+[07:22] E pelo modelo, uma confusão dessas não é pouca coisa.
+[07:25] Errauzir assim equivale a errar feio a data no nosso calendário?
+[07:29] É como achar que estava no dia 7 de janeiro e descobrir que já era 1º de fevereiro.
+[07:33] Exato!
+[07:34] E por causa de tombos assim, as equipes abraçaram o ceticismo.
+[07:39] Teve uma outra equipe que até contou para a NASA que eles desconfiaram muito da própria descoberta
+[07:44] porque a candidata era brilhante demais e estava ali meio perto de outra galáxia.
+[07:49] Exigiram confirmação do espectro antes de bater o martelo.
+[07:52] Próxima página.
+[07:53] E falando em records, a gente tem uma linha do tempo aqui com o recorde que caiu várias vezes.
+[07:57] A história toda começa a ficar mais intensa lá em dezembro de 2022.
+[08:01] O que rolou nessa data?
+[08:02] O Kurt Sleek e a equipe dele confirmaram a Jades GS Z13-0 com um Z de 13,2.
+[08:11] E o peso disso aqui, antes daquele momento, nenhuma galáxia acima de Z10 tinha confirmação pelo web.
+[08:17] E aí vieram as quedas de recorde.
+[08:19] Em maio de 2024, a NASA anunciou a Jades GS Z14-0.
+[08:25] O Z saltou para 14,32, mas só depois de quase 10 horas de leitura com o espectrógrafo.
+[08:32] 10 horas apontado para uma coisa só.
+[08:34] E logo depois, em junho de 2025, chegou a MOM Z14 com 14,44.
+[08:41] Pois é, o limite foi empurrado mais uma vez.
+[08:43] Se a gente parar para pensar que o recorde caiu duas vezes no espaço de uns dois anos,
+[08:48] faz todo sentido a série nunca tratar o recorde como algo definitivo.
+[08:52] E além das quedas de recorde, teve uma surpresa geral.
+[08:56] A agência espacial europeia notou que essas galáxias brilhantes de mais tão cedo no calendário são bem comuns.
+[09:01] Elas são umas 100 vezes mais numerosas do que os estudos previam antes do web subir.
+[09:07] Próxima página.
+[09:08] A régua cósmica aparece de novo na tela interativa.
+[09:11] A faixa das primeiras estrelas ainda está lá, de 3 a 8 de janeiro.
+[09:15] Mas agora a gente ganha 3 pontos piscando, que são os últimos 3 donos do recorde.
+[09:20] E como é que fica isso traduzido para o nosso modelo de calendário?
+[09:23] A Jade Gesse Z13-0 vai cair ali no dia 9 de janeiro pelo meio-dia.
+[09:28] A Jade Gesse Z14 recua para o dia 8 de janeiro, umas duas da tarde.
+[09:32] E a MOM Z14 trava no dia 8 de janeiro pelo meio-dia.
+[09:36] Então a corrida toda pelo recorde andou de ré um dia inteiro no calendário, né?
+[09:41] Sim, andou um dia inteiro.
+[09:43] Mas o detalhe curioso é que o salto final do penúltimo recorde para o último
+[09:48] alterou a data em apenas umas duas horas no relógio.
+[09:51] Isso equivale a uns 3 milhões de anos em tempo real.
+[09:54] Na tela dá para brincar com isso.
+[09:56] Tem três botões de zoom, um para o ano inteiro, um focado só no mês de janeiro
+[10:00] e um focado exclusivamente no dia 8 para ver a separação bem fina desses últimos recordes.
+[10:06] Aham, e o cursor ali em cima exibe a data e os anos para quem for mexendo.
+[10:11] E já começa direto na MOM Z14 em janeiro.
+[10:13] Só para não perder o hábito, quem quiser explorar as datas precisa pausar o áudio,
+[10:17] senão a tela vira para a próxima.
+[10:19] Próxima página.
+[10:20] Chegando no nosso fechamento da discussão de hoje,
+[10:23] a gente tem a régua atualizada com pontos cravados nos dias 8 e 9 de janeiro.
+[10:28] O que precisa ficar claro é que o que se mede de verdade é a luz do hidrogênio esticada.
+[10:34] O número Z.
+[10:35] E os anos no modelo são apenas a tradução de tudo isso.
+[10:39] Sim, e que candidata e confirmada são coisas totalmente diferentes.
+[10:43] O recorde só se consolida com o espectro, e mesmo assim ele muda bem rápido.
+[10:48] Você tinha comentado sobre um jeito simples de imaginar essa luz esticada no dia a dia.
+[10:53] Ah, sim, o infravermelho.
+[10:56] Para a gente materializar isso, a NASA usa o exemplo do controle remoto de uma TV.
+[11:00] Ele usa luz infravermelho de uns 940 nanômetros, é invisível para o olho,
+[11:05] mas certas câmeras de celular enxergam a luz piscar na ponta dele.
+[11:09] O sinal está lá, o celular capta, mas a gente não vê.
+[11:12] É mesmo a lógica e com a galáxia.
+[11:14] A luz do hidrogênio da Monze 14 chega no equipamento com o dobro desse comprimento do controle remoto.
+[11:20] Então, o web foi feito literalmente para captar isso.
+[11:24] Então, a gente marca o nosso ponto de parada dessa etapa na régua cósmica no dia 8 de janeiro.
+[11:29] Ali perto do meio-dia.
+[11:31] Mas a evolução da nossa régua segue rápido.
+[11:33] A conta do modelo aponta que, ainda em janeiro,
+[11:36] mais precisamente no dia 22, o disco mais velho da nossa galáxia começa a se formar.
+[11:42] Então, na sequência, a gente vai cobrir esse início da Via Láctea
+[11:45] e entender como a ciência consegue ler de fato a idade de uma estrela.
+[11:50] Fica a questão sobre quais histórias o nosso quintal ainda guarda.

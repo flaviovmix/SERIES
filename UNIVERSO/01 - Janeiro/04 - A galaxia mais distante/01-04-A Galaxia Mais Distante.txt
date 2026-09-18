@@ -1,0 +1,31 @@
+Inicie dizendo: A Galaxia Mais Distante
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Galaxia Mais Distante.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o quarto episodio da etapa Janeiro, a primeira etapa da serie Universo. O episodio anterior pos na regua a faixa das primeiras estrelas, de tres a oito de janeiro; este poe o ponto da galaxia mais distante ja confirmada, em oito de janeiro.
+
+FOCO: a galaxia MoM-z14 e o que o telescopio mede nela de verdade: o z, catorze virgula quarenta e quatro, lido pela luz do hidrogenio que saiu ultravioleta e chegou infravermelha (os anos, uns duzentos e oitenta milhoes, sao traducao do modelo). A diferenca entre candidata, que vem da imagem, e confirmada, que vem do espectro, com o caso do falso z dezesseis que era quatro virgula nove. E o recorde que caiu duas vezes em dois anos: treze virgula dois, catorze virgula trinta e dois, catorze virgula quarenta e quatro. Na regua, os tres recordes em oito e nove de janeiro.
+
+NAO dizer que o telescopio mede a idade ou a distancia. NAO dizer que o recorde e definitivo. NAO chamar candidata de confirmada. NAO nomear nenhum extra. NAO inventar data nem autor que nao estejam no roteiro. NAO traduzir a vida de uma pessoa pra escala do calendario.
+
+A pagina que acompanha o audio tem 8 telas. No fim de cada tela, menos a ultima, um apresentador diz o marcador "Proxima pagina", exatamente essas duas palavras, 7 vezes no total. O lembrete da pagina na abertura e uma fala so, de um apresentador, e o outro nao comenta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste episodio e a regua do ano cosmico.
+
+Use tambem o Overview.txt como contexto curto.

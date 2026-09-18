@@ -62,6 +62,8 @@
       ate: marca.anosDepoisAte === undefined ? null : marca.anosDepoisAte / ANOS_POR_DIA,
       nome: marca.nome,
       nivel: marca.nivel === undefined ? indice % 2 : marca.nivel,
+      /* "como se sabe": a linha que aparece embaixo da leitura quando o cursor está na marca */
+      sabe: marca.sabe || '',
     }));
     const trechos = {};
     for (const [nome, trecho] of Object.entries(config.trechos)) {
@@ -143,6 +145,7 @@
         <span>anos atrás: <b class="regua__anos"></b></span>
         <span>depois do início: <b class="regua__depois"></b></span>
       </div>
+      <p class="regua__sabe" hidden></p>
       <div class="regua__conversao">
         <div><b>1 dia</b> 37.800.000 anos</div>
         <div><b>1 hora</b> 1.575.000 anos</div>
@@ -160,6 +163,7 @@
       data: miolo.querySelector('.regua__data'),
       anos: miolo.querySelector('.regua__anos'),
       depois: miolo.querySelector('.regua__depois'),
+      sabe: miolo.querySelector('.regua__sabe'),
     };
     let nomeDoTrecho = config.comeca.trecho;
 
@@ -173,6 +177,20 @@
       return marcaPerto ? marcaPerto.dia : dia;
     }
 
+    /* a marca em que o cursor está: ponto exato (depois do ímã do diaDoCursor) ou dentro
+       de uma faixa. Ponto ganha de faixa, porque o ponto é mais específico */
+    function marcaNoCursor(diaDoAno) {
+      const comSabe = config.marcas.filter((marca) => marca.sabe);
+      return comSabe.find((marca) => marca.ate === null && marca.dia === diaDoAno)
+        || comSabe.find((marca) => marca.ate !== null && diaDoAno >= marca.dia && diaDoAno <= marca.ate);
+    }
+
+    function pintaComoSeSabe(diaDoAno) {
+      const marca = marcaNoCursor(diaDoAno);
+      leitura.sabe.hidden = !marca;
+      leitura.sabe.textContent = marca ? `${marca.nome}: ${marca.sabe}` : '';
+    }
+
     function pinta() {
       const diaDoAno = diaDoCursor();
       const data = dataDoCalendario(diaDoAno, nomeDoTrecho === 'hora');
@@ -180,6 +198,7 @@
       leitura.anos.textContent = anosEscritos(IDADE_EM_ANOS - diaDoAno * ANOS_POR_DIA);
       leitura.depois.textContent = diaDoAno === 0 ? 'o início' : anosEscritos(diaDoAno * ANOS_POR_DIA);
       total.textContent = data;
+      pintaComoSeSabe(diaDoAno);
     }
 
     function mostra(nome, diaDoAno) {

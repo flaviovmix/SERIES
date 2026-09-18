@@ -1,0 +1,131 @@
+Inicie dizendo: A Galaxia Mais Distante
+---------------
+
+Este e o quarto episodio da etapa JANEIRO, a primeira etapa da serie Universo. O episodio anterior, As primeiras estrelas, pos na regua do ano cosmico uma faixa, de tres a oito de janeiro, porque ninguem sabe o dia em que a primeira estrela acendeu, e terminou dizendo que em oito de janeiro ja existe galaxia. Este episodio e sobre a galaxia mais distante ja confirmada, e sobre o que o telescopio mede de verdade quando alguem diz "a mais distante".
+
+ESTE EPISODIO COBRE UM PONTO DO CALENDARIO COSMICO: oito de janeiro, perto do meio-dia, a luz da galaxia MoM-z14. Dizer isso em voz alta na abertura, e no encerramento dizer onde o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que VIRA SOZINHA enquanto o audio toca, e que leva o audio junto quando alguem pula a tela na mao. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores diz claramente o marcador: "Proxima pagina". NAO e instrucao pro ouvinte: e o marcador que corta o audio em telas. Dizer exatamente essas duas palavras, e nao "aperte", nem "vamos pra proxima", nem "proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O lembrete e UMA FALA SO, de UM apresentador, curto e padronizado, e diz so isto, nesta ordem: que o audio acompanha a pagina e que a pagina vira sozinha; que pular a tela na mao leva o audio junto; que quem quiser parar pra mexer numa tela pause o audio, senao ele vira a tela sem a pessoa; e que embaixo da tela ficam as guias de extras e de filmes, que podem ganhar coisa nova com o tempo. Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se voce pular uma tela, o audio pula junto. Se quiser parar pra mexer numa tela, pausa o audio, senao ele vira a tela sem voce. Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova com o tempo." Um apresentador, e acabou. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz pergunta sobre isso.
+  NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina, NAO chamar a animacao de legal, bacana ou interativa, NAO dizer o nome de nenhum extra nem do que ele trata, e NAO dizer o marcador como exemplo.
+- Nas duas telas interativas (a tela 4 e a tela 7), avisar o que tem na tela pra mexer e repetir a frase da pausa: quem quiser mexer com calma pausa o audio, senao a tela vira.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+A TRILHA CONTA A HISTORIA; O MECANISMO POR DENTRO E EXTRA. O que aprofunda sem ser necessario pra seguir (como se le um espectro por dentro, por que existem tantas galaxias brilhantes tao cedo, a pista que o Hubble deu antes do Webb) NAO cabe aqui. O audio NAO chama nenhum extra pelo nome: so o lembrete da abertura diz que as guias existem.
+
+FILMES. Este episodio nao cita nenhum filme.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que dizer o marcador "Proxima pagina" exatamente 7 vezes, uma no fim de cada tela, na ordem, e nenhuma no fim da ultima. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem o marcador. Quem esta ouvindo com a pagina aberta so vira a tela quando o marcador acontece: se faltar um, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+O QUE SE MEDE E O QUE SE TRADUZ. O telescopio mede o z, que diz quanto a luz esticou. NAO dizer que o telescopio mede a idade ou a distancia da galaxia. Os anos sao traducao do z por um modelo. O recorde NAO e definitivo: dizer que ele ja caiu duas vezes.
+
+NUMERO COM FONTE. Toda data e todo numero saem com quem publicou e o ano, QUANDO O ROTEIRO TROUXER O NOME. Se o roteiro nao trouxer o nome, dizer so o dado, e NUNCA inventar um autor. NAO INVENTAR NENHUMA DATA ALEM DAS QUE ESTAO NESTE ROTEIRO.
+
+SEM FICHA HUMANA NESTE EPISODIO. As pessoas aparecem so pelo artigo que publicaram ou pela frase que a Agencia Espacial Europeia publicou. NAO inventar onde nasceram, onde estudaram nem outra frase de nenhuma delas.
+
+TRADUCAO DE ESCALA SO DE MARCA COLETIVA. NAO dizer quanto tempo a vida de uma pessoa duraria na regua.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A REGUA DO ANO COSMICO: a idade do universo espremida num ano de doze meses, com um dia valendo trinta e sete milhoes e oitocentos mil anos e uma hora valendo um milhao, quinhentos e setenta e cinco mil anos. E o objeto da serie inteira, e a unica analogia deste episodio.
+Fora essa, sem analogias. Explicar direto. Em especial, NAO usar sirene de ambulancia, som de carro passando, elastico, fossil, arqueologia, impressao digital ou codigo de barras pra explicar o z ou o espectro.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A GALAXIA MAIS DISTANTE)
+
+Retomar em uma frase: o episodio anterior pos na regua a faixa das primeiras estrelas, de tres a oito de janeiro, que ninguem nunca viu.
+
+Dizer o que este episodio faz: em oito de janeiro ja existe galaxia. A mais distante ja confirmada se chama MoM-z14. O episodio conta o que o telescopio mede de verdade nela, a diferenca entre candidata e confirmada, e a historia de um recorde que ja caiu duas vezes. E poe na regua o ponto dela, perto do meio-dia de oito de janeiro.
+
+O lembrete da pagina, como manda a regra da conducao la em cima: UMA fala, de UM apresentador, e o outro nao comenta.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 2 (A FICHA: A GALAXIA E O ESPECTROGRAFO)
+
+A ficha do instante. O que se data: a luz que saiu da galaxia MoM-z14. O que se mede: o z dela, catorze virgula quarenta e quatro, com incerteza de dois centesimos, publicado por Naidu e colegas num artigo revisado em janeiro de dois mil e vinte e seis. A data traduzida: o artigo diz que isso e apenas duzentos e oitenta milhoes de anos depois do inicio. Na regua, oito de janeiro, perto do meio-dia. A motivacao: saber quao cedo as galaxias comecaram, e entender por que o telescopio esta achando tantas galaxias brilhantes tao cedo.
+
+A ficha do equipamento: o NIRSpec, espectrografo da Agencia Espacial Europeia que fica no telescopio James Webb. Segundo a NASA, ele enxerga de zero virgula seis a cinco virgula tres micrometros, e consegue olhar mais de cem objetos ao mesmo tempo, com uma grade de duzentas e quarenta e oito mil portinhas que abrem e fecham.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 3 (O QUE O TELESCOPIO MEDE)
+
+O que o telescopio mede nao e a idade nem a distancia. E o z. A NASA explica que o z e uma medida de quanto a luz de uma galaxia foi esticada pela expansao do universo.
+
+Como se le isso na luz. O hidrogenio absorve e devolve uma luz ultravioleta bem especifica, chamada Lyman alfa, com cento e vinte e um virgula seis nanometros de comprimento de onda, segundo a NASA. No espectro da MoM-z14, a luz abaixo desse ponto some de uma vez, uma quebra bem marcada, e ainda aparecem mais cinco linhas de emissao do ultravioleta, todas esticadas pelo mesmo tanto. Foi assim que o artigo confirmou o z.
+
+E os anos? Sao traducao do z por um modelo. A propria Agencia Espacial Europeia escreve que, olhando tao longe, falar em distancia e em "anos atras" fica complicado.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 4 (ONDE A LUZ CAI, TELA INTERATIVA)
+
+A luz Lyman alfa sai com cento e vinte e um virgula seis nanometros, ultravioleta, que o olho nao ve. O olho humano, segundo a NASA, enxerga de trezentos e oitenta a setecentos nanometros. Com o z da MoM-z14, essa luz chega esticada quinze virgula quarenta e quatro vezes, com uns mil oitocentos e setenta e sete nanometros. Saiu ultravioleta e chegou infravermelha. E por isso que o Webb foi feito pra enxergar infravermelho.
+
+Avisar: tem um cursor na tela pra mudar o z, de zero a dezesseis. A tela mostra onde a luz do hidrogenio cai, numa faixa que tem o ultravioleta, o que o olho ve, o controle remoto da TV e o que o espectrografo enxerga. Embaixo, separado, aparece a traducao em anos pelo modelo, e a tela avisa que e traducao. Tem botoes pros tres ultimos recordes e pra candidata que parecia ter z dezesseis. A tela comeca em z igual a zero, a luz do jeito que sai. E repetir a frase da pausa: quem quiser mexer no cursor com calma pausa o audio, senao a tela vira.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 5 (CANDIDATA E CONFIRMADA)
+
+Tem dois jeitos de achar uma galaxia assim. Pela imagem, da pra estimar: a MoM-z14 some nas fotos dos filtros de comprimento de onda mais curto e so aparece a partir de uns dois micrometros. Mas isso e estimativa. Pascal Oesch, da Universidade de Genebra, disse a Agencia Espacial Europeia que da pra estimar a distancia pelas imagens, mas que e muito importante confirmar com o espectro, pra saber exatamente o que se esta vendo, e quando.
+
+Por que tanto cuidado: Arrabal Haro e colegas publicaram na revista Nature, em dois mil e vinte e tres, o caso de uma candidata que pelas imagens parecia ter z perto de dezesseis. O espectro mostrou que o z dela era quatro virgula nove. Uma mistura de poeira e de linhas de emissao imitava as cores de uma coisa muito mais distante. Na regua, pela conta do modelo, a diferenca entre sete de janeiro e primeiro de fevereiro.
+
+E a equipe de outra galaxia recordista contou a NASA que desconfiou da candidata dela por ser brilhante demais, e por estar perto de outra galaxia. E a confirmacao veio do espectro.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 6 (O RECORDE QUE CAIU DUAS VEZES)
+
+Em dezembro de dois mil e vinte e dois, Curtis-Lake e colegas confirmaram pelo espectro a JADES-GS-z13-0, com z de treze virgula dois. Antes disso, nenhuma das candidatas do Webb acima de z dez tinha sido confirmada.
+
+Em maio de dois mil e vinte e quatro, a NASA anunciou a JADES-GS-z14-0, com z de catorze virgula trinta e dois, depois de quase dez horas de espectrografo em janeiro daquele ano. Caiu o recorde.
+
+E em junho de dois mil e vinte e cinco, segundo a NASA, a MoM-z14 foi confirmada com z de catorze virgula quarenta e quatro. Caiu de novo. Duas vezes em dois anos. Por isso a serie nunca diz que um recorde desses e definitivo.
+
+E a surpresa que vem junto: segundo a Agencia Espacial Europeia, galaxias brilhantes assim, tao cedo, sao cem vezes mais numerosas do que os estudos de antes do Webb previam.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 7 (A REGUA COM OS RECORDES, TELA INTERATIVA)
+
+A regua volta com a faixa das primeiras estrelas, de tres a oito de janeiro, e ganha tres pontos: os tres ultimos donos do recorde. Pela conta do modelo, a JADES-GS-z13-0 cai em nove de janeiro, perto do meio-dia. A JADES-GS-z14-0 cai em oito de janeiro, perto das duas da tarde. E a MoM-z14, em oito de janeiro, perto do meio-dia. A corrida inteira do recorde anda um dia no calendario, e o ultimo passo foi de umas duas horas, que sao uns tres milhoes de anos.
+
+Avisar: tem tres botoes de zoom, o ano inteiro, so janeiro, e so o dia oito, onde os dois ultimos recordes se separam. O cursor mostra a data, os anos atras e os anos depois do inicio. A tela comeca em janeiro, com o cursor na MoM-z14. E repetir a frase da pausa: quem quiser explorar a regua com calma pausa o audio, senao a tela vira.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: a regua ganhou os pontos do recorde, em oito e nove de janeiro. O que se mede na galaxia e o z, pela luz do hidrogenio esticada; os anos sao traducao. Candidata so vira confirmada com espectro. E o recorde ja caiu duas vezes, entao pode cair de novo.
+
+Onde isso aparece fora da tela: o controle remoto da TV. A NASA explica que ele usa infravermelho, uns novecentos e quarenta nanometros, que o olho nao ve, mas que algumas cameras de celular conseguem ver. A luz do hidrogenio da MoM-z14 chega com o dobro desse comprimento de onda.
+
+Dizer onde o episodio parou: em oito de janeiro, perto do meio-dia.
+
+Gancho: em vinte e dois de janeiro, pela conta do modelo, comeca a se formar o disco mais velho da nossa galaxia. O proximo episodio e sobre o comeco da Via Lactea, e sobre como e que alguem le a idade de uma estrela.

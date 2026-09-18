@@ -149,6 +149,18 @@
 }
 .regua__leitura b { color: var(--ink, #f2f4f8); font-weight: 600; }
 
+/* o "como se sabe" da marca em que o cursor está (só aparece quando a página dá o texto) */
+.regua__sabe {
+  margin: 10px 0 0;
+  padding: 8px 12px;
+  border-left: 3px solid var(--regua-marca, var(--accent, #d9a441));
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--accent, #d9a441) 10%, transparent);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink, #f2f4f8);
+}
+
 /* a conversão fixa, embaixo de tudo: o que um dia, uma hora, um minuto e um segundo valem */
 .regua__conversao {
   display: grid;

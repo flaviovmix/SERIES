@@ -1084,8 +1084,8 @@ module.exports = {
         credito: `ilustração`,
         periodo: `8 de janeiro`,
         frase: `Um recorde que já caiu duas vezes em dois anos.`,
-        resumo: `A MoM-z14, a galáxia mais distante já medida, uns 280 milhões de anos depois do começo. O que o telescópio mede de verdade é o desvio para o vermelho, não a idade, e por isso nenhum recorde desses é definitivo.`,
-        contagem: `episódio 4 de 5`,
+        resumo: `A MoM-z14, a galáxia mais distante já confirmada, uns 280 milhões de anos depois do começo pelo modelo. O que o telescópio mede de verdade é o desvio para o vermelho, não a idade. E o recorde já caiu duas vezes: nenhum é definitivo.`,
+        contagem: `12 min &middot; 8 telas`,
       },
       '05': {
         imagem: 'img/universo-01-ep-05.webp',
