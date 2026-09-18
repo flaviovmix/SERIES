@@ -1,0 +1,238 @@
+# Transcricao automatica (faster-whisper small) - 13.5 min
+# Fonte: O motor dos juros sobre juros.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] Finanças, juros sobre juros.
+[00:02] Bom, a gente continua hoje o segundo encontro da nossa série, né, que vai desde o dinheiro
+[00:07] do mês até chegar na bolsa.
+[00:09] Isso aí.
+[00:11] Lembrando que no nosso episódio anterior, a sobra do mês ganhou um lugar só pra ela,
+[00:16] separada ali na frente, no famoso cofrinho.
+[00:18] Exato.
+[00:19] Só que tem um desafio muito prático que aparece agora.
+[00:22] Qual?
+[00:23] Aquela sobra, se fica parada lá dentro do cofrinho, ela continua exatamente do
+[00:27] mesmo tamanho.
+[00:28] Não cresce sozinha.
+[00:29] É.
+[00:30] Não sai do lugar.
+[00:31] Então o foco da nossa análise hoje é revelar o motor que atua sobre esse dinheiro.
+[00:35] O motor matemático, sabe, que faz a dívida crescer sozinha e que pela
+[00:39] mesmíssima regra faz o dinheiro guardado também crescer com o passar do tempo.
+[00:44] E antes de olhar pra dentro dessa engrenagem, fica o nosso aviso padrão de
+[00:49] formato.
+[00:50] Toda cifra citada aqui vem com a data e a fonte original.
+[00:53] Uhum, com certeza.
+[00:54] E toda taxa vai vir com a unidade junto, seja ao mês ou ao ano.
+[00:59] Sem essa unidade, o número simplesmente não entra na conversa.
+[01:03] Tá certo.
+[01:04] O áudio acompanha a página que vira sozinha enquanto a gente fala.
+[01:08] Se você pular uma tela, o áudio pula junto.
+[01:11] Se quiser parar pra mexer numa tela, pausa o áudio, senão ele vira a tela sem você.
+[01:16] Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova
+[01:21] com o tempo.
+[01:22] Próxima página.
+[01:23] Pra entender como esse motor arranca de verdade, a gente tem que ir direto
+[01:27] na definição do caderno de educação financeira do Banco Central.
+[01:31] Aquela versão de 2026, certo?
+[01:34] Essa mesma.
+[01:35] Eles definem juros de um jeito muito visual.
+[01:37] Juro é o valor do aluguel do dinheiro no tempo.
+[01:40] Nossa, a imagem do aluguel deixa tudo mais claro.
+[01:44] Porque tipo, quem usa uma casa ou um carro de terceiros paga por esse tempo de uso.
+[01:49] Exato.
+[01:50] E com o dinheiro é mesma lógica.
+[01:51] Quem usa o dinheiro de outra pessoa ou de um banco, paga um aluguel.
+[01:56] E por outro lado, quem deixa o dinheiro guardado com alguém, recebe.
+[02:00] É o mesmíssimo mecanismo.
+[02:01] Sim.
+[02:02] E toda a conta de juros sempre vai pedir três ingredientes na receita.
+[02:07] Quais são?
+[02:08] O valor de partida, a taxa e claro o tempo.
+[02:11] Sem esses três, não tem cálculo.
+[02:13] E a gente nota rápido que dos três o tempo é o que carrega o maior peso.
+[02:18] Mas tem um ponto central do Banco Central aí.
+[02:21] Qual?
+[02:22] Esse motor serve pros dois lados.
+[02:24] A regra opera igualzinho nas aplicações e também nas dívidas.
+[02:28] A matemática não escolhe um lado.
+[02:30] Próxima página.
+[02:31] Agora a gente entra nas duas contas.
+[02:33] Sabendo que é o aluguel, tem que entender como ele é cobrado.
+[02:37] E a gente tem os juros simples e os compostos.
+[02:40] Nos juros simples, o valor cobrado cai só em cima do valor de partida.
+[02:45] E a conta morre ali.
+[02:46] O saldo novo não entra no cálculo seguinte.
+[02:48] É, o composto já é diferente.
+[02:51] O juro do primeiro mês entra no saldo da conta.
+[02:54] Aí no segundo mês, esse montante inteiro passa a render também.
+[02:58] É exatamente por isso que o Banco Central apelida os compostos de juros sobre juros.
+[03:04] E pra quem tá ouvindo processar bem isso, vamos pegar o exemplo prático do caderno do Banco Central.
+[03:10] Imagina mil reais a 5% ao mês, num prazo de seis meses.
+[03:15] Vamos rodar o cálculo simples primeiro pra ter a base.
+[03:18] Tá, na conta simples, 5% de mil reais dá uns 50 reais.
+[03:22] Como é simples, são 50 no primeiro mês, 50 no segundo, tudo igual.
+[03:27] No fim dos seis meses, o valor chega em 1.300 reais.
+[03:31] Agora, na regra do mundo composto, que é onde a economia real vive, a história muda.
+[03:37] O primeiro mês dá os mesmos 50 reais e o saldo vai para 1.050 reais.
+[03:42] Só que a grande virada acontece bem aí na passagem pro segundo mês.
+[03:46] Aquele 5% de taxa ignoram os mil reais iniciais.
+[03:50] Exato. Caí inteiro sobre os 1.050 reais de agora.
+[03:55] Isso aí, o que dá um saldo de 1.102 reais e 50 centavos.
+[04:00] A diferença de 2 reais e 50 centavos parece pouca, mas ela já é o juro puro caindo sobre o juro do mês anterior.
+[04:08] E o motor não para, né?
+[04:10] No fim dos seis meses, o valor total bate em 1.340 reais e 10 centavos.
+[04:16] E detalhe, a conta simples quase nem existe no mercado brasileiro.
+[04:20] Tudo roda no formato composto.
+[04:22] Sim, e tem um motivo histórico para o termo juros sobre juros carregar uma fama de proibido.
+[04:28] Uma lei de 1933 proibia essa cobrança no país.
+[04:32] Ah, sim.
+[04:33] Só que no ano 2000, uma medida provisória liberou essa cobrança para os bancos com tanto que estivesse em contrato.
+[04:40] O Supremo Tribunal Federal, depois de muito debate, confirmou essa regra como constitucional no ano de 2024.
+[04:48] Próxima página.
+[04:49] Quem está com a tela aberta consegue ver essas duas contas saindo dos mesmos mil reais.
+[04:54] A reta mostra os juros simples e a curva mostra os compostos.
+[04:58] Tem os controles de taxa e prazo na tela também.
+[05:01] E fico com o aviso.
+[05:02] Quem quiser mexer com calma, pause o áudio agora, senão a página vira sozinha daqui a pouco.
+[05:08] Olhando para os seis meses a 5% ao mês, a reta e a curva andam bem juntas até.
+[05:13] Mas se a gente joga a taxa média do rotativo do cartão aí, a curva se afasta da reta de um jeito muito agressivo.
+[05:20] Tem um outro cenário na tela que mostra bem o peso do tempo.
+[05:24] Se a gente colocar um prazo muito longo, tipo 30 anos, e inventar uma taxa bem baixa de 1% ao mês...
+[05:31] O que acontece?
+[05:32] Na linha reta, depois de 30 anos, os mil reais viram 4.600 reais.
+[05:38] Mas na curva dos juros compostos, bate em quase 36 mil reais.
+[05:43] É o tempo puro sendo motor.
+[05:45] E o tempo inspira muita história, sabe?
+[05:48] O desenho animado Futurama, de 1999, tem aquele episódio onde o Fry dorme por mil anos.
+[05:54] Ah, eu lembro.
+[05:55] Ele tinha deixado 93 centavos no banco a 2,25% ao ano.
+[06:00] Quando ele acorda mil anos depois, a conta tem mais de 4 bilhões de dólares.
+[06:05] A matemática da série está perfeitamente correta.
+[06:07] O cálculo bate redondo, mas a distorção da realidade aí é gigante.
+[06:13] A ficção simplesmente ignora que os preços das coisas também subiriam nesses mil anos.
+[06:18] Verdade.
+[06:18] Os preços iriam pra cima junto.
+[06:20] A conta na tela funciona, mas ela esconde que o poder de compra daquele dinheiro sofreria bastante no mundo real.
+[06:27] Próxima página.
+[06:28] Sabe, olhar pra essas curvas traz a gente pro erro de interpretação mais comum sobre taxa.
+[06:34] Aquela mania de pegar a taxa do mês e só multiplicar por 12 pra achar do ano.
+[06:38] Fazer isso é usar juros simples no mundo que só opera em juros compostos.
+[06:42] Exatamente.
+[06:44] Se a gente pegar matemática real 1% ao mês por 12 meses dá 12,68% ao ano, não 12 redondinho.
+[06:52] A diferença parece boba, mas traz os dados reais do Banco Central pra ver.
+[06:57] Em julho de 2026, a taxa média cobrada no rotativo do cartão foi de 15,02% ao mês.
+[07:04] Nossa.
+[07:05] E o próprio Banco Central publica essa mesmíssima taxa como 436,15% ao ano.
+[07:12] O tamanho do erro mental fica óbvio aí.
+[07:15] Porque quem lê 15% e multiplica por 12 de cabeça chega em 180% ao ano.
+[07:21] Erro o custo por mais do dobro da realidade.
+[07:23] E isso mascara completamente a dívida.
+[07:27] E a cultura pop entra de novo pra confundir.
+[07:29] O documentário A Ascensão do Dinheiro, do ano de 2008, mostra o historiador Nao Ferguson
+[07:35] falando de uma agiota que cobrava 25% por semana.
+[07:40] Ele joga no ar que isso equivale a 11 milhões por cento ao ano.
+[07:45] Matematicamente até seria, mas a distorção é irreal.
+[07:49] Ninguém no mundo mantém uma dívida assim por 52 semanas direto e sem pagar nada.
+[07:54] O creador iria cobrar bem antes.
+[07:56] Com certeza.
+[07:57] Sem contar que a gente está falando de um agiota, não de um banco que opera regras de mercado.
+[08:02] Por isso, a regra que fica cravada aqui é clara.
+[08:04] Taxa nenhuma faz sentido sem dizer a unidade.
+[08:07] Se é ao mês ou ao ano.
+[08:09] Próxima página.
+[08:10] E já que falamos da dívida, vamos olhar para o motor trabalhando contra.
+[08:14] Usando as taxas médias publicadas pelo Banco Central em dados preliminares referentes
+[08:19] a julho de 2026.
+[08:21] Tudo ao ano, tá?
+[08:22] Mandos números.
+[08:23] O rotativo do cartão bateu em 436,15% ao ano.
+[08:29] O parcelado do cartão 189,28%.
+[08:34] O cheque especial 137,30%.
+[08:39] E o crédito pessoal sem desconto em folha ficou em 110,95% ao ano.
+[08:45] Traduzindo isso de forma bem fria, sem tom de sermão ou de culpa,
+[08:50] dívida é uma conta matemática.
+[08:53] Se uma dívida rodar só na taxa média do rotativo,
+[08:57] ela dobra de tamanho em menos de cinco meses.
+[09:00] E por causa dessa velocidade toda, o mercado tem regras e travas de proteção.
+[09:05] Desde abril de 2017, o Conselho Monetário Nacional mandou que o saldo
+[09:09] só fica no rotativo até a fatura seguinte.
+[09:12] Depois disso ele tem que ir para um parcelamento, né?
+[09:14] Onde são melhor.
+[09:15] Isso mesmo.
+[09:16] E tem outra regra pesada.
+[09:18] Desde 3 de janeiro de 2024, graças a uma lei de 2023
+[09:24] que o Conselho Monetário Nacional regulamentou, tem um teto de acúmulo para dívida.
+[09:28] Como funciona?
+[09:29] A soma de juros e encargos no rotativo e no parcelamento
+[09:33] não pode passar do valor original da dívida.
+[09:36] Se a conta era de R$ 100, ela vira no máximo R$ 200.
+[09:39] E aqui a gente tem que frisar muito bem.
+[09:41] Isso não é um teto limitando a taxa em si.
+[09:45] A taxa continua lá na casa dos 400%.
+[09:48] O teto limita o total acumulado que a pessoa vai pagar no fim das contas.
+[09:53] Bem lembrado, o cheque especial também tem sua trava.
+[09:56] Desde 6 de janeiro de 2020, outra regra do Conselho
+[10:00] limitou o cheque especial a 8% ao mês.
+[10:04] A média em julho de 2026, segundo o Banco Central,
+[10:07] estava em 7,47% já encostando no teto.
+[10:11] Próxima página.
+[10:12] Mas vamos olhar para o motor operando a favor agora, com o dinheiro guardado.
+[10:17] Retomando o caderno do Banco Central com o exemplo da Helena e da Marta.
+[10:21] As duas poupam os mesmos R$ 150 por mês a 0,5% ao mês.
+[10:26] A diferença toda está na linha do tempo.
+[10:28] A Helena aguarda dos 20 aos 30 anos de idade,
+[10:32] aí ela para de colocar dinheiro e só deixa o valor render até os 60 anos.
+[10:37] E quanto ela tirou do bolso?
+[10:38] O total tirado do bolso dela foi R$ 18 mil naqueles 10 anos.
+[10:43] Já a Marta só começa a guardar aos 30 anos.
+[10:47] Mas ela vai colocando o dinheiro até os 60 anos, o tempo todo.
+[10:51] Então ela tirou do próprio bolso R$ 54 mil no total.
+[10:55] E aos 60 anos, as duas chegam perto do mesmo valor final.
+[10:59] A Helena atinge R$ 148 mil e R$ 800.
+[11:03] A Marta chega em cerca de R$ 150 mil e R$ 700.
+[11:07] O cruzamento desses números mostra tudo.
+[11:10] Elas chegaram basicamente no mesmo lugar,
+[11:13] mas a Helena usou só um terço do esforço financeiro.
+[11:16] É o poder do tempo longo.
+[11:18] Sim, o motor do cofrinho é o tempo somado com juro.
+[11:22] A taxa ajuda, mas o tempo pesa mais.
+[11:25] Onde aplicar e como agir vai ser assunto lá para frente.
+[11:28] Mas tem uma última ficção que é bom citar.
+[11:31] Ah, o curta-metragem Filhos da Mama.
+[11:33] Foi lançado pelo Banco Central em 2015.
+[11:36] O irmão financiou um carro para o pagar em 5 anos
+[11:39] e o outro guarda o valor da prestação para comprar a vista lá no final.
+[11:42] A distorção aí é muito clara.
+[11:44] É uma fábula financeira com moral pronta.
+[11:47] Esconde um pequeno detalhe da rotina prática.
+[11:50] O irmão que poupou precisou ficar 5 anos andando à pé.
+[11:54] Pois é.
+[11:54] A matemática dos juros compostos funciona,
+[11:57] mas a vida real exige muita concessão no processo.
+[12:00] Próxima página.
+[12:01] Fechando a nossa análise, vamos repassar os pontos cruciais.
+[12:05] O juro é o aluguel do dinheiro no tempo.
+[12:08] Na conta composta, a taxa incide sempre no saldo novo do mês.
+[12:14] A taxa mensal não se multiplica por 12 para a chara anual, de jeito nenhum.
+[12:19] E o tempo tem um peso maior da balança,
+[12:21] tanto para fazer a dívida disparar quanto para o dinheiro guardado render.
+[12:25] E na vida real a gente acha isso bem fácil.
+[12:27] Onde, por exemplo?
+[12:28] Na fatura do cartão tem regra do Banco Central de julho de 2024,
+[12:33] que obriga a mostrar a taxa ao mês, ao ano
+[12:36] e ao custo efetivo total do financiamento.
+[12:39] Mostra até o valor exato do encargo se rolar apenas aquele pagamento obrigatório.
+[12:43] E nos empréstimos, em geral?
+[12:45] Aí o foco tem que ser procurar o custo efetivo total.
+[12:48] Essa taxa é anual e já junta os juros, as tarifas e os impostos todos.
+[12:53] E, claro, quem quiser testar tudo isso usa a calculadora do cidadão.
+[12:57] Excelente! Uma ferramenta gratuita do Banco Central que já resolve a conta composta.
+[13:02] Bom, só que tem um ponto para a gente amarrar essa análise e pensar no nosso próximo encontro.
+[13:07] Diga lá.
+[13:08] O dinheiro guardado nesse cofrinho pode crescer muito e números absolutos, né?
+[13:13] Mas, ainda assim, compra menos coisas amanhã.
+[13:16] Perde fôlego.
+[13:17] Pois é, isso acontece porque o preço das coisas não fica parado.
+[13:22] O preço de tudo que a gente consome também tem um motor e ele anda sozinho.
+[13:26] Mas isso já é assunto para a próxima etapa da nossa série.

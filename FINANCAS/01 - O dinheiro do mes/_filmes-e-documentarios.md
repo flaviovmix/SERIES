@@ -81,3 +81,89 @@ internet, mas são alegoria: fora.
 - **Longa documental brasileiro sobre dívida das famílias**: procurei por "documentário dívida
   famílias Brasil", "superendividamento documentário", "filme orçamento doméstico" e não
   existe nenhum além do curta do Idec e dos programas de TV acima.
+
+## 1.02: Juros sobre juros 🟠 conferido em 18/09/2026
+
+⚠️ **Não existe documentário brasileiro sobre juros compostos, nem sobre o juro do cartão
+crescendo sozinho.** O que existe no Brasil com cara de obra é um curta de ficção de 5 minutos do
+Banco Central (2015). A conta mais bem feita do lote está num desenho americano (*Futurama*,
+1999); a dívida que cresce por juro sobre juro está num documentário britânico (*A Ascensão do
+Dinheiro*, 2008) e numa série da Netflix (*Na Rota do Dinheiro Sujo*, 2018).
+
+⚠️ **Título de Portugal no JustWatch Brasil, de novo** (como o "Criada" do *Maid*). Três obras deste
+lote aparecem lá com o nome português: *Sem Tempo* (no Brasil, *O Preço do Amanhã*), *Dinheiro Sujo*
+(no Brasil, *Na Rota do Dinheiro Sujo*) e *Resumindo: O Dinheiro* (no Brasil, *Explicando...
+Dinheiro*). **A linha do 1.01 ficou com o título de Portugal**: a página da Netflix Brasil e o
+AdoroCinema dizem *Explicando... Dinheiro*; *Resumindo: O Dinheiro* é o da Netflix Portugal.
+Corrigir lá e na tela "Pra ver" do 1.01 (não mexi).
+
+### Os que servem
+
+| Obra | Tipo | Por que serve | O que distorce | Onde | Fonte |
+|---|---|---|---|---|---|
+| **Futurama**, T1E6 **"A Minha Fortuna São os Meus Amigos"** ("A Fishful of Dollars", 27/04/1999), direção de Ron Hughart e Gregg Vanzo, roteiro de Patric M. Verrone, EUA, 21 min | episódio de série (animação, comédia) | Fry acorda no ano 3000 e descobre que os **93 centavos** que deixou no banco em 1999, a **2,25% ao ano por mil anos**, viraram **US$ 4,3 bilhões**. A conta está certa (Vice): refiz, 0,93 × 1,0225^1000 dá US$ 4.283.508.449,71; em juros simples, os mesmos 93 centavos dariam **US$ 21,86**. **É simples contra composto e o peso do tempo numa cena só, num desenho que o público conhece** | mil anos, ninguém vive isso; banco que dura mil anos; ignora inflação: descontados 2% ao ano, o poder de compra seria de uns US$ 11 (Vice); dólar; é gag, e no fim do episódio os filhos da Mãe esvaziam a conta dele. ⚠️ Em Portugal o episódio se chama "Um Punhado de Dólares" | Disney+ (assinatura, 14 temporadas, JustWatch em 18/09/2026); Apple TV Brasil lista o episódio com áudio em português | [Wikipedia](https://en.wikipedia.org/wiki/A_Fishful_of_Dollars), [IMDb](https://www.imdb.com/title/tt0584425/), [Apple TV BR](https://tv.apple.com/br/episode/a-minha-fortuna-sao-os-meus-amigos/umc.cmc.6uv9y5nmmjpaxg6482l85w0ph?showId=umc.cmc.l1gxucmkpno29c5bum47oxsp), [Vice, 16/05/2018](https://www.vice.com/en/article/futurama-taught-me-everything-i-know-about-compound-interest/), [JustWatch BR](https://br.justwatch.com/br/serie/futurama) |
+| **Filhos da Mama**, ep. 4 da série **"Eu e meu dinheiro"** (09/03/2015), Banco Central do Brasil (com a TV Unisinos, segundo a Unisinos), Brasil, 5 min | curta de ficção (institucional) | gêmeos: Gabriel financia um carro popular em cinco anos ("prestação baixinha, cabe no bolso") e, na última parcela, já quer financiar outro; Rafael guarda por mês o mesmo valor e compra à vista um carro melhor ("apenas poupei mensalmente o que você pagou durante os cinco anos"). A ficha do BC lista como temas "juros e encargos embutidos no financiamento" e "poder dos juros no tempo (posição poupadora)". **É o mesmo motor dos dois lados, brasileiro, grátis e curto** | fábula de governo com moral pronta (quem poupa ganha); pela ficha, a conta fica no diálogo, e não conferi se aparece número na tela; esconde o custo de Rafael passar cinco anos sem carro (a própria ficha diz "não há nem certo nem errado"); financiamento de carro, não cartão; 2015 | YouTube do Banco Central, grátis: [vídeo](https://www.youtube.com/watch?v=HQ2HZdJNhm8) (no ar em 18/09/2026); versões com legenda e com audiodescrição na [página do TJSC](https://www.tjsc.jus.br/web/servidor/programa-educacao-financeira/eu-e-meu-dinheiro) | [ficha de atividade do BC](https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Fichas_de_Atividades_para_trabalhar_os_videos_da_Serie_Eu_e_Meu_Dinheiro/Ficha-Atividade-EP-4.pdf), [Unisinos, 12/03/2015](https://www.unisinos.br/noticias/nova-serie-sobre-educacao-financeira-na-tv-unisinos/), [TJSC](https://www.tjsc.jus.br/web/servidor/programa-educacao-financeira/eu-e-meu-dinheiro) |
+| **The Ascent of Money** / **A Ascensão do Dinheiro**, ep. 1 **"Dreams of Avarice"** / **"Sonhos de Avareza"** (2008), apresentação de Niall Ferguson, direção de Adrian Pennink, Channel 4 e PBS, Reino Unido, 6 episódios (o 1º com 47 min) | série documental | num bairro pobre de Glasgow, o agiota empresta £10 pra receber £12,50 na semana seguinte, e o episódio faz a conta: "25% por semana, que ao ano dá 11 milhões por cento". Conferi: 1,25 elevado a 52 dá 10,9 milhões por cento; em juros simples seriam 1.300% ao ano. **A dívida que cresce por juro sobre juro, com o número dito em voz alta.** O mesmo episódio passa por Fibonacci e o cálculo de juros (serve também ao extra *Juros sobre juros tem história*). Emmy Internacional de documentário, 2009 | o "11 milhões por cento" é retórica: empréstimo de uma semana anualizado, ninguém rola a mesma dívida 52 semanas seguidas; agiota ilegal, não cartão nem banco; Reino Unido de 2008; Ferguson é entusiasta das finanças (o Guardian, sobre o livro: "panorama reverente", com "pouca investigação dos perdedores") | ⚠️ a conferir: não achei serviço no Brasil; há cópias dubladas em português no YouTube e no Internet Archive, sem licença confirmada | [Wikipedia](https://en.wikipedia.org/wiki/The_Ascent_of_Money), [Wikipédia pt](https://pt.wikipedia.org/wiki/The_Ascent_of_Money), [transcrição do ep. 1](https://scrapsfromtheloft.com/movies/ascent-of-money-episode-1-dreams-of-avarice/), [IMDb ep. 1](https://www.imdb.com/title/tt14681052/), [PBS](https://www.pbs.org/wnet/ascentofmoney/) |
+| **Becoming Warren Buffett** / **Como Ser Warren Buffett** (2017), Peter W. Kunhardt (o AdoroCinema credita também Brian Oakes), HBO, EUA, 90 min | documentário | Buffett, com vídeos caseiros e a família, conta que descobriu cedo os juros compostos ("com o tempo, fazem coisas extraordinárias") e resume: o que mais pesa pra ganhar dinheiro é o tempo; não precisa ser especialmente esperto, precisa ser paciente. **É o lado bom do motor contado por quem viveu dele a vida inteira** | retrato feito com acesso à família e elogioso (crítica citada no Rotten Tomatoes: "um grande documentário precisa de alguma tensão"; resenha do My Money Blog: raso perto da biografia *The Snowball*, passa de leve pelo custo na família); viés de sobrevivente no grau máximo; os juros dele são retorno de ações e de empresas compradas, não poupança; filho de corretor de ações que virou deputado (Howard Buffett); EUA. ⚠️ As falas vêm das anotações de Nick Gray: conferir a frase exata no filme antes de citar | HBO Max Brasil (assinatura, direto ou pelo canal na Amazon), JustWatch em 18/09/2026 | [Wikipedia](https://en.wikipedia.org/wiki/Becoming_Warren_Buffett), [AdoroCinema](https://www.adorocinema.com/filmes/filme-254095/), [HBO Max BR](https://www.hbomax.com/br/pt/movies/como-ser-warren-buffett/ba67620c-448a-4922-93e6-f397bf98fdb8), [JustWatch BR](https://br.justwatch.com/br/filme/becoming-warren-buffett), [notas de Nick Gray](https://nickgray.net/warren-buffett-doc/), [Rotten Tomatoes](https://www.rottentomatoes.com/m/becoming_warren_buffett), [My Money Blog](https://www.mymoneyblog.com/becoming-warren-buffett-review.html), [Wikipedia (Howard Buffett)](https://en.wikipedia.org/wiki/Howard_Buffett) |
+| **Dirty Money** / **Na Rota do Dinheiro Sujo**, T1E2 **"Payday"** / **"Indústria do consignado"** (26/01/2018), direção de Jesse Moss, produção executiva de Alex Gibney, Netflix, EUA, 68 min | série documental | Scott Tucker, piloto de corrida, montou um império de empréstimo de curto prazo (payday loan) com juros de até 700% ao ano, pra pelo menos 4,5 milhões de americanos; o cliente pagava todo mês e a dívida não descia, porque o débito era taxa de renovação e não abatia o principal. No processo, um empréstimo de US$ 500 anunciado com encargo de US$ 150 cobrava US$ 1.425. **A dívida que cresce sozinha, com vítima ao telefone** | ⚠️ o título brasileiro do episódio engana: payday loan não é consignado (aqui, consignado é o crédito descontado direto do salário ou do benefício, outro produto); o mecanismo é taxa de renovação, mais do que juro composto; história policial, com muito tempo nas corridas do Tucker (resenha da accessHealth); EUA; o exemplo dos US$ 500 é do processo (NBC, 2016), não sei se aparece no episódio | Netflix Brasil (assinatura, com e sem anúncios), página conferida em 18/09/2026 | [Wikipedia (série)](https://en.wikipedia.org/wiki/Dirty_Money_(2018_TV_series)), [IMDb ep.](https://www.imdb.com/title/tt7909178/), [Wikipedia (Scott Tucker)](https://en.wikipedia.org/wiki/Scott_Tucker_(businessman)), [NBC News, 04/10/2016](https://www.nbcnews.com/business/business-news/payday-loan-group-slapped-record-1-3b-fine-700-percent-n659271), [accessHealth](https://accesshealthnews.net/indifferent-empires-payday-loans-in-netflixs-dirty-money/), [Netflix BR](https://www.netflix.com/br/title/80118100), [JustWatch BR](https://br.justwatch.com/br/serie/dinheiro-sujo) |
+| **Explicando... Dinheiro** (no 1.01 como *Resumindo: O Dinheiro*), ep. 2 **"Cartões de crédito"** e ep. 5 **"Aposentadoria"** (2021), Vox pra Netflix, 23 min cada | série documental | ver a linha do 1.01. **Aqui serve melhor que lá**: o ep. 2 é o motor do lado da dívida (resenha do BookJelly: quanto mais se adia pagar a fatura inteira, mais ela incha, "de um jeito sorrateiro"); o ep. 5 é o lado do tempo ("como a aposentadoria é cara, é importante começar a poupar cedo", mesma resenha; a sinopse da Netflix BR fala em mais de US$ 1 milhão pra classe média se aposentar nos EUA) | o do 1.01 (EUA, 401k, narração de celebridade); o juro americano é outro bicho: no Brasil o rotativo teve média de 442% ao ano em 2023 e, desde 01/2024, juros e encargos não podem passar do valor da dívida original (Idec); não conferi se o ep. 5 põe a conta dos juros compostos na tela (o exemplo de US$ 2.381 contra US$ 555 por mês que circula junto é de um blog, não do episódio) | Netflix Brasil (assinatura, com e sem anúncios), página conferida em 18/09/2026 | [Netflix BR](https://www.netflix.com/br/title/81345769), [AdoroCinema](https://www.adorocinema.com/series/serie-29066/), [Netflix PT (título de Portugal)](https://www.netflix.com/pt/title/81345769), [BookJelly](https://bookjelly.com/documentary-review-money-explained/), [Idec](https://idec.org.br/dicas-e-direitos/teto-de-juros-do-cartao-de-credito-conheca-mudancas-nos-limites-do-rotativo) |
+
+### Escolhidos pro 1.02 (4)
+
+1. **Futurama, "A Minha Fortuna São os Meus Amigos"**: é a conta do episódio. Entra no áudio no botão
+   que troca simples por composto e no controle de anos: "93 centavos, 2,25% ao ano, mil anos: no
+   composto, US$ 4,3 bilhões; no simples, US$ 21,86". A ressalva da inflação (uns US$ 11 de poder de
+   compra) cabe numa frase e já aponta pro 1.03. Na Disney+.
+2. **Filhos da Mama (Banco Central)**: o único brasileiro, grátis, 5 minutos. Entra no áudio na virada
+   "o mesmo motor": um irmão paga o juro por cinco anos, o outro guarda a mesma prestação e o juro
+   passa a trabalhar pra ele. Tela "Pra ver" com o link do YouTube.
+3. **A Ascensão do Dinheiro, ep. 1**: só no áudio, na curva da dívida: o agiota de Glasgow e os "25%
+   por semana que dão 11 milhões por cento ao ano" (1.300% se fosse simples), com a ressalva de que
+   é anualização de efeito. Não vai pra tela "Pra ver" enquanto não houver onde ver no Brasil; lá, no
+   lugar dele, entra o ep. "Cartões de crédito" de *Explicando... Dinheiro* (Netflix).
+4. **Como Ser Warren Buffett**: fecha o episódio no tempo, com a fala dele sobre paciência (conferir a
+   frase exata no filme antes). A ressalva (sobrevivente, filho de corretor, retrato elogioso) cabe
+   numa frase. Na HBO Max.
+
+Reserva: **Na Rota do Dinheiro Sujo, "Indústria do consignado"**, se o episódio quiser um caso real de
+dívida que não desce (Netflix); se entrar, avisar que o título brasileiro chama de consignado o que
+não é.
+
+### Conferidos, uso menor (ficam na tela "Pra ver" só se sobrar espaço)
+
+| Obra | Tipo | Por que serve | O que distorce | Onde | Fonte |
+|---|---|---|---|---|---|
+| **In Time** / **O Preço do Amanhã** (2011), Andrew Niccol, EUA, 101 min | ficção (distopia) | o tempo de vida é a moeda: relógio no braço, as lojas de empréstimo de tempo do magnata Weis com taxa que sobe, a mãe de Will que paga um empréstimo de dois dias com dois dias de trabalho e morre sem tempo pra passagem do ônibus. "Tempo é dinheiro" ao pé da letra; a coluna do Professor Mira no Bora Investir (B3) usa o filme pra falar de juros compostos | alegoria: no filme o tempo é o dinheiro, não o que multiplica o dinheiro, que é o que o episódio diz; filme de perseguição; 36% no Rotten Tomatoes ("premissa intrigante" soterrada por "narrativa pesada e óbvia"); a economia do filme não fecha (blog chewxy: inflação num sistema em que a moeda some). ⚠️ O JustWatch Brasil chama de "Sem Tempo", título de Portugal | ⚠️ a conferir: o JustWatch BR (18/09/2026) lista Prime Video e os canais Telecine e Universal+ na Amazon; o AdoroCinema lista Telecine, Disney+ e Universal+ | [Wikipedia](https://en.wikipedia.org/wiki/In_Time), [AdoroCinema](https://www.adorocinema.com/filmes/filme-180314/), [AdoroCinema, onde ver](https://www.adorocinema.com/filmes/filme-180314/vod/), [JustWatch BR](https://br.justwatch.com/br/filme/o-preco-do-amanha), [Bora Investir, 04/06/2025](https://borainvestir.b3.com.br/colunistas/professor-mira/o-preco-do-amanha-tempo-e-dinheiro/), [chewxy](https://blog.chewxy.com/2011/11/05/the-economics-of-andrew-niccols-in-time/) |
+| **Get Smart With Money** / **A Arte de Economizar** (2022) | documentário | ver a linha do 1.01. Aqui: segundo resenha (FinMasters), Ro$$ Mac apresenta o S&P 500 ao jogador Teez e mostra o poder dos juros compostos | o do 1.01, e mais: o composto é índice de bolsa americana, não poupança; é influenciador vendendo a marca; não vi a cena, só a resenha | Netflix Brasil (ver 1.01) | [FinMasters](https://finmasters.com/get-smart-with-money-review/), [Nucleus](https://nucleusfinancial.com/illuminate/blog/netflixs-get-smart-money-review) |
+| **Maxed Out** (2006) | documentário | ver a linha do 1.01. Aqui: o lucro vem das multas por atraso, das tarifas de estouro de limite e dos juros "estratosféricos" (Scurlock, em 2007). **Não serve melhor aqui que lá**: o assunto é o negócio da cobrança, não a conta do juro sobre juro | o do 1.01 | ⚠️ a conferir (ver 1.01) | [Harvard Law School, 14/03/2007](https://hls.harvard.edu/today/documentary-about-credit-card-debt-shown-at-hls), [Rotten Tomatoes](https://www.rottentomatoes.com/m/maxed_out) |
+
+### Procurei e não serve
+
+*Payback* (2012, Jennifer Baichwal, a partir do livro de Margaret Atwood): dívida como ideia (rixa de
+sangue na Albânia, lavoura de tomate na Flórida), sem juro composto e sem versão em português (só
+inglês e francês, no NFB): fora. *A Felicidade Não Se Compra* (1946, Frank Capra): é corrida
+bancária e casa financiada contra o aluguel do Potter; juro sobre juro não aparece; guardar pra um
+episódio sobre banco e crédito. *Caminhos da Reportagem*, "O relógio financeiro da longevidade" (TV
+Brasil, 10/08/2026): aposentadoria baixa, desigualdade e golpe contra idoso, sem juros compostos:
+fora. "Introdução aos juros compostos" (Khan Academy em português): é aula com exercício, não obra,
+e a série não traz material de estudo: fora. "Juros Compostos: O Milagre FINANCEIRO que te Deixa RICO
+Sem Fazer ESFORÇO!" (canal Manual do Conhecimento, 28/05/2025): promessa de enriquecer sem esforço, o
+contrário do episódio: fora. Porta dos Fundos: procurei esquete sobre juros ou rotativo e só achei
+um sobre o mercado em geral (TikTok, 01/04/2024): fora.
+
+### Não confirmado
+
+- **Agenda Econômica, "Juros altos e facilidade de uso do cartão de crédito são os vilões do
+  endividamento familiar"** (TV Senado, 14/04/2026, 27 min): entrevista com a planejadora financeira
+  Alessandra Casamayor; a [página](https://www12.senado.leg.br/tv/programas/agenda-economica/2026/04/juros-altos-e-facilidade-de-uso-do-cartao-de-credito-sao-os-viloes-do-endividamento-familiar)
+  não tem player nem explica o rotativo. Não conferi se mostra a conta.
+- **Buffett e a lenda do arroz no tabuleiro**: aparece num resumo de resenha (Dollars and Sense), mas
+  a página bloqueou a leitura. Não usar sem ver o filme.
+- **A Ascensão do Dinheiro no Brasil**: a dublagem existe (cópias com o título "A Ascensão do
+  Dinheiro [Dublado]"), mas não achei qual canal exibiu nem quem tem a licença.
+- **Nota pro roteiro**: a frase "juros compostos são a força mais poderosa do universo", atribuída a
+  Einstein, é provavelmente inventada (o próprio texto do Vice, 2018, diz isso). Não usar no áudio.
+- **Obra brasileira sobre juros**: procurei por "documentário brasileiro juros compostos",
+  "Caminhos da Reportagem juros/endividamento", "TV Brasil juros do cartão", "Profissão Repórter
+  endividados cartão", "Idec vídeo juros rotativo" e "filme brasileiro agiota dívida juros". Fora o
+  curta do Banco Central, não existe; o Idec tem guia escrito sobre o rotativo, não vídeo.

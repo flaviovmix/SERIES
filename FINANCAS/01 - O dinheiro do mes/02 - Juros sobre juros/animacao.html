@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juros sobre juros · Finanças 1.02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 1.02 da serie FINANCAS. Nasceu do _molde-animacao.html.
+     As 8 telas seguem a _planta.md e o _telas.md, que sai do audio: o audio manda, a pagina serve.
+     O unico pedaco proprio e o widget da tela 4 (curvas.css e curvas.js); o resto usa as
+     classes da base. Todo numero vem do _pesquisa.md desta pasta. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="curvas.css">
+</head>
+<body>
+
+<header class="topo"></header>
+
+<main>
+
+  <!-- 1 (00:00) capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">finanças · episódio 1.02</div>
+      <h1 class="reveal">Juros sobre juros</h1>
+      <p class="lede reveal">A sobra do mês ganhou um lugar próprio, o cofrinho. Só que, parada, ela fica do mesmo tamanho. Este episódio abre o motor que faz a dívida do cartão crescer sozinha e o dinheiro guardado crescer com o tempo.</p>
+      <div class="capa-como reveal">
+        <p><b>O que ele mostra:</b> o que é juro, a conta simples e a composta, por que a taxa ao mês não se multiplica por doze, e o mesmo motor trabalhando contra, na dívida, e a favor, com o tempo. Todo número vem com data e fonte, e toda taxa com a unidade: ao mês ou ao ano.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/tela-01.webp" alt="Um cofrinho de porquinho parado sobre uma mesa de vidro, com uma pilha pequena de moedas na frente e uma engrenagem de latão deitada ao lado">
+      <figcaption>ilustração · o cofrinho parado, e a engrenagem que o episódio anterior deixou na mesa</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 (01:22) o aluguel do dinheiro -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Caderno de Educação Financeira do Banco Central, versão 2026</div>
+      <h2 class="reveal">O aluguel do dinheiro</h2>
+      <blockquote class="reveal">"vamos tratar os juros como sendo o valor do aluguel do dinheiro no tempo."</blockquote>
+      <p class="lede reveal">Quem usa o dinheiro de outra pessoa ou de um banco paga esse aluguel. Quem deixa o dinheiro com alguém recebe.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">ingrediente 1</div><div class="texto"><b>o valor de partida</b></div></div>
+        <div class="item"><div class="rotulo">ingrediente 2</div><div class="texto"><b>a taxa</b>, sempre com a unidade</div></div>
+        <div class="item"><div class="rotulo">ingrediente 3</div><div class="texto"><b>o tempo</b>, o que mais pesa</div></div>
+      </div>
+      <blockquote class="reveal">"os juros compostos fazem com que o dinheiro cresça exponencialmente ao longo do tempo. Lembre-se de que isso vale para aplicações, mas também para dívidas."</blockquote>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-02.webp" alt="Uma chave de casa amarrada a uma moeda por um barbante, sobre uma folha de papel em branco, com três moedas enfileiradas ao lado">
+      <figcaption>ilustração · o juro é o aluguel do dinheiro</figcaption>
+    </figure>
+  </section>
+
+  <!-- 3 (02:30) as duas contas -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">o exemplo do Caderno do Banco Central</div>
+      <h2 class="reveal">As duas contas</h2>
+      <p class="lede reveal">R$ 1.000,00 a 5% ao mês, por seis meses. Nos <b>juros simples</b>, o juro é sempre sobre o valor de partida. Nos <b>compostos</b>, o juro de cada mês entra no saldo e passa a render juro também: o caderno chama de <b>"juros sobre juros"</b>.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">juros simples</div><div class="texto">R$ 50,00 por mês, todo mês.<br>No fim: <b>R$ 1.300,00</b></div></div>
+        <div class="item"><div class="rotulo">juros compostos</div><div class="texto">R$ 1.050,00 · R$ 1.102,50 · R$ 1.157,63 · R$ 1.215,51 · R$ 1.276,28<br>No fim: <b>R$ 1.340,10</b></div></div>
+      </div>
+      <p class="lede reveal">No primeiro mês as duas contas são iguais. A diferença nasce no segundo: os R$ 2,50 a mais são o juro sobre o juro do primeiro mês.</p>
+      <p class="lede reveal"><b>Já foi proibido?</b> Uma lei de 1933 proibia "contar juros dos juros". Para banco, a conta composta todo mês é permitida desde 2000, por medida provisória, se estiver no contrato, e em 2024 o Supremo Tribunal Federal confirmou que a regra é constitucional.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-03.webp" alt="Duas fileiras de pilhas de moedas saindo da mesma pilha curta: a de trás sobe em degraus iguais, a da frente em degraus cada vez maiores e termina mais alta">
+      <figcaption>ilustração · degraus iguais atrás, degraus que crescem na frente</figcaption>
+    </figure>
+  </section>
+
+  <!-- 4 (04:48) as duas curvas, interativa -->
+  <section class="step" data-imagem="desenho">
+    <div class="kicker reveal">mexa enquanto ouve · pause o áudio se quiser explorar</div>
+    <h2 class="reveal">As duas curvas</h2>
+    <div class="painel painel--lado painel--curvas reveal">
+      <div class="legenda" id="legCurvas">Os mesmos R$ 1.000,00 nas duas contas. O vão pintado entre a reta e a curva é o juro sobre juro.</div>
+      <div class="painel__total">
+        <span class="num" id="totalCurvas">R$ 0</span>
+        <span class="meta">de juro sobre juro</span>
+      </div>
+      <div class="painel__miolo curvas" id="mioloCurvas">
+        <svg class="curvas__grafico" viewBox="0 0 600 240" role="img" aria-label="Gráfico com a reta dos juros simples e a curva dos juros compostos saindo dos mesmos mil reais">
+          <line class="curvas__eixo" x1="10" y1="226" x2="590" y2="226"/>
+          <polygon class="curvas__vao"/>
+          <g class="curvas__teto">
+            <line x1="10" x2="590"/>
+            <text x="16">teto do cartão: o dobro da dívida original</text>
+          </g>
+          <polyline class="curvas__simples"/>
+          <polyline class="curvas__composto"/>
+        </svg>
+        <div class="curvas__controles">
+          <label class="curvas__controle">
+            <span>taxa</span><b class="curvas__taxa-valor"></b>
+            <input class="curvas__taxa" type="range" min="0.5" max="16" step="0.01" value="5">
+          </label>
+          <label class="curvas__controle">
+            <span>prazo</span><b class="curvas__prazo-valor"></b>
+            <input class="curvas__prazo" type="range" min="1" max="360" step="1" value="6">
+          </label>
+        </div>
+        <div class="curvas__leitura">
+          <div class="curvas__conta curvas__conta--simples"><span>juros simples</span><b class="curvas__valor-simples"></b></div>
+          <div class="curvas__conta curvas__conta--composto"><span>juros compostos</span><b class="curvas__valor-composto"></b></div>
+        </div>
+        <p class="curvas__ano"></p>
+        <p class="curvas__nota"></p>
+      </div>
+      <div class="botoes" role="group" aria-label="pontos de partida">
+        <button class="btn-mini" type="button" data-partida="banco">exemplo do Banco Central</button>
+        <button class="btn-mini" type="button" data-partida="rotativo">taxa média do rotativo</button>
+        <button class="btn-mini" type="button" data-partida="tempo">o tempo longo</button>
+      </div>
+    </div>
+    <p class="lede reveal">No desenho <b>Futurama</b> (1999), 93 centavos a 2,25% ao ano viram 4,3 bilhões de dólares em mil anos; nos simples, 21 dólares e 86 centavos. A conta ignora que os preços também sobem.</p>
+  </section>
+
+  <!-- 5 (06:27) ao mes nao e ao ano -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">a taxa só faz sentido com a unidade</div>
+      <h2 class="reveal">Ao mês não é ao ano</h2>
+      <p class="lede reveal">Multiplicar a taxa do mês por doze é conta de juros simples. O juro cobrado é composto.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">1% ao mês</div><div class="texto"><b>12,68% ao ano</b>, e não 12%</div></div>
+        <div class="item"><div class="rotulo">rotativo, julho de 2026</div><div class="texto"><b>15,02% ao mês</b> é o mesmo que <b>436,15% ao ano</b>, e não 180% (Banco Central)</div></div>
+        <div class="item"><div class="rotulo">25% por semana</div><div class="texto"><b>11 milhões por cento ao ano</b>, no documentário; 1.300% ao ano se fosse simples</div></div>
+      </div>
+      <p class="lede reveal">O terceiro exemplo é do agiota de Glasgow no primeiro episódio de <b>A Ascensão do Dinheiro</b> (2008). É conta de efeito: ninguém carrega a mesma dívida 52 semanas seguidas, e é agiota, não banco.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-05.webp" alt="Um maço de folhas em branco aberto em leque sobre a mesa, ao lado de uma única folha solta">
+      <figcaption>ilustração · doze meses não são uma folha multiplicada por doze</figcaption>
+    </figure>
+  </section>
+
+  <!-- 6 (08:09) o motor contra: a divida -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Banco Central · taxas médias de julho de 2026, dado preliminar</div>
+      <h2 class="reveal">O motor contra: a dívida</h2>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">rotativo do cartão</div><div class="texto"><b>436,15% ao ano</b></div></div>
+        <div class="item"><div class="rotulo">parcelado do cartão</div><div class="texto"><b>189,28% ao ano</b></div></div>
+        <div class="item"><div class="rotulo">cheque especial</div><div class="texto"><b>137,30% ao ano</b></div></div>
+        <div class="item"><div class="rotulo">pessoal não consignado</div><div class="texto"><b>110,95% ao ano</b></div></div>
+      </div>
+      <p class="lede reveal">São médias do mercado, não a taxa de um banco. Na conta pura, uma dívida que só crescesse à taxa média do rotativo dobraria em menos de cinco meses.</p>
+      <p class="lede reveal"><b>As travas.</b> Desde abril de 2017, por regra do Conselho Monetário Nacional, o saldo só fica no rotativo até a fatura seguinte. Desde 3 de janeiro de 2024, por uma lei de 2023, juros e encargos do rotativo e do parcelamento da fatura não podem passar do valor original da dívida: quem devia R$ 100 chega no máximo a R$ 200. É teto do total acumulado, não da taxa. E o cheque especial tem teto de 8% ao mês desde 6 de janeiro de 2020; a média de julho de 2026 estava em 7,47% ao mês.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-06.webp" alt="Um cartão branco sem nada escrito na frente e, atrás, uma coluna de moedas subindo, travada por um aparador de livros de latão">
+      <figcaption>ilustração · a dívida que sobe e a trava que a regra pôs</figcaption>
+    </figure>
+  </section>
+
+  <!-- 7 (10:11) o motor a favor: o tempo pesa mais -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">o exemplo do Caderno do Banco Central</div>
+      <h2 class="reveal">O motor a favor: o tempo pesa mais</h2>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">Helena</div><div class="texto">R$ 150 por mês dos 20 aos 30 anos, e deixa render até os 60. Tira do bolso <b>R$ 18 mil</b>. Aos 60: <b>R$ 148.786,58</b></div></div>
+        <div class="item"><div class="rotulo">Marta</div><div class="texto">R$ 150 por mês dos 30 aos 60 anos. Tira do bolso <b>R$ 54 mil</b>. Aos 60: <b>R$ 150.677,26</b></div></div>
+      </div>
+      <p class="lede reveal">As duas a 0,5% ao mês. Chegam perto do mesmo lugar, e Helena tirou do bolso um terço do que Marta tirou. O caderno resume: a chave é o poder dos juros compostos ao longo do tempo.</p>
+      <p class="lede reveal">O cofrinho, parado, fica do mesmo tamanho. O que faz ele crescer é tempo com juro; onde deixar esse dinheiro é a etapa seguinte da série. Para ver: <b>Filhos da Mama</b>, curta de cinco minutos do Banco Central (2015), grátis na internet. É fábula com moral pronta, e esconde que o irmão que guarda fica cinco anos sem carro.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-07.webp" alt="Dois cofrinhos iguais lado a lado: na frente do primeiro, uma pilha alta de moedas; na frente do segundo, uma pilha baixa e moedas soltas esperando">
+      <figcaption>ilustração · mesmo cofrinho, começos diferentes</figcaption>
+    </figure>
+  </section>
+
+  <!-- 8 (12:00) fecho -->
+  <section class="step step--mundo step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">onde isso aparece fora da tela</div>
+      <h2 class="reveal">O mesmo motor, dos dois lados</h2>
+      <div class="mundo">
+        <div class="item reveal">
+          <div class="nome">Na fatura do cartão</div>
+          <div class="desc">Desde julho de 2024: a taxa ao mês, ao ano e o Custo Efetivo Total de cada opção de financiamento, da mais barata para a mais cara, e o encargo se pagar só o obrigatório.</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">No contrato</div>
+          <div class="desc">O Custo Efetivo Total: anual, junta juro, tarifa e imposto numa taxa só. É o número para comparar.</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">Na Calculadora do Cidadão</div>
+          <div class="desc">Do Banco Central, grátis na internet. Faz a conta composta.</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">No cofrinho</div>
+          <div class="desc">Parado, fica do mesmo tamanho. O tempo pesa mais que a taxa.</div>
+        </div>
+      </div>
+      <p class="lede reveal"><b>No próximo episódio:</b> o dinheiro pode crescer em número e, mesmo assim, comprar menos, porque o preço das coisas também anda sozinho.</p>
+    </div>
+    <figure class="lado-arte reveal">
+      <img src="img/tela-08.webp" alt="Os objetos do episódio em fila sobre a mesa de vidro: a chave amarrada à moeda, duas pilhas de moedas, a engrenagem de latão e o cofrinho, com uma etiqueta de preço em branco amarrada nele">
+      <figcaption>ilustração · o motor dos dois lados, e a etiqueta do próximo episódio</figcaption>
+    </figure>
+  </section>
+
+</main>
+
+<div class="tocador">
+  <audio preload="metadata" src="O motor dos juros sobre juros.m4a" data-duracao="810"></audio>
+  <img class="tocador__capa" src="../../../site/img/serie-financas.webp" alt="">
+  <div class="tocador__id">
+    <div class="tocador__titulo">O motor dos juros sobre juros</div>
+  </div>
+  <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="810" aria-valuenow="0">
+    <div class="tocador__cheio"></div>
+    <div class="tocador__marcas"></div>
+  </div>
+  <div class="tocador__controles">
+    <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+    <div class="tocador__transporte">
+      <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+      <button class="tocador__play" aria-label="tocar">▶</button>
+      <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">13:30</span></div>
+  </div>
+</div>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
+</footer>
+
+<script src="../../../site/js/menu.js"></script>
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="curvas.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

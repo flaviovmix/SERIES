@@ -1,0 +1,103 @@
+/* curvas: as duas contas lado a lado, o widget da tela 4 do 1.02.
+   O painel em volta (.painel, .legenda, .painel__total, .botoes, .btn-mini) é da
+   base (site/css/animacao/painel.css); aqui mora só o que é das curvas: os pontos
+   de partida, o gráfico, os dois controles e a leitura. Depende de curvas.js. */
+
+.curvas {
+  --curvas-composto: var(--accent);
+  --curvas-simples: var(--ink-faint);
+  --curvas-teto: var(--flag);
+}
+
+/* o painel é o de lado da base (total à esquerda, pontos de partida à direita);
+   as laterais alargam pra caber "R$ 31.349,64" e "exemplo do Banco Central" */
+.painel--curvas { grid-template-columns: 190px 1fr 230px; }
+.painel--curvas .painel__total .num { font-size: 26px; white-space: normal; }
+
+/* o gráfico: a reta, a curva e o vão pintado entre as duas */
+.curvas__grafico {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 22vh;
+}
+.curvas__eixo { stroke: var(--line); stroke-width: 1.5; }
+.curvas__vao { fill: var(--curvas-composto); fill-opacity: .14; stroke: none; }
+.curvas__simples,
+.curvas__composto {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.curvas__simples { stroke: var(--curvas-simples); stroke-dasharray: 2 6; }
+.curvas__composto { stroke: var(--curvas-composto); }
+
+/* o teto do cartão: só aparece no ponto de partida do rotativo */
+.curvas__teto { display: none; }
+.curvas__teto--visivel { display: inline; }
+.curvas__teto line { stroke: var(--curvas-teto); stroke-width: 2; stroke-dasharray: 8 6; }
+.curvas__teto text {
+  fill: var(--curvas-teto);
+  font-family: var(--fonte-mono);
+  font-size: 13px;
+}
+
+/* os dois controles: taxa ao mês e prazo, cada um com o valor escrito ao lado */
+.curvas__controles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 24px;
+  margin-top: 12px;
+}
+.curvas__controle {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 2px 12px;
+  font-family: var(--fonte-mono);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.curvas__controle input { grid-column: 1 / -1; width: 100%; accent-color: var(--curvas-composto); }
+.curvas__controle b { justify-self: end; color: var(--ink); font-weight: 600; }
+
+/* a leitura: o valor final de cada conta, com a cor da linha dela */
+.curvas__leitura {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 24px;
+  margin-top: 12px;
+  font-family: var(--fonte-mono);
+  font-size: 14px;
+}
+/* rótulo em cima e valor embaixo: "R$ 35.949,64" não quebra no meio */
+.curvas__conta { display: flex; flex-direction: column; gap: 2px; color: var(--ink-soft); }
+.curvas__conta b { color: var(--ink); font-weight: 600; }
+.curvas__conta--simples span::before,
+.curvas__conta--composto span::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-top: 3px dotted var(--curvas-simples);
+}
+.curvas__conta--composto span::before { border-top: 3px solid var(--curvas-composto); }
+
+/* as duas frases de baixo: a taxa convertida pra ao ano e a nota do ponto de partida */
+.curvas__ano,
+.curvas__nota {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+.curvas__ano { color: var(--ink); }
+
+@media (max-width: 720px) {
+  .curvas__controles,
+  .curvas__leitura { grid-template-columns: 1fr; }
+  .curvas__ano,
+  .curvas__nota { font-size: 13px; }
+}

@@ -1,0 +1,7 @@
+Titulo: O motor dos juros sobre juros
+Notebook: 01-02-Juros sobre Juros
+
+Descricao:
+A série Finanças apresenta seu segundo episódio, focado no funcionamento dos juros compostos e no impacto do tempo sobre o dinheiro. O conteúdo utiliza o aluguel do dinheiro como analogia central para explicar como as taxas crescem tanto em dívidas quanto em economias. Através de exemplos práticos do Banco Central, as fontes demonstram a diferença entre juros simples e compostos, destacando que pequenas taxas mensais se tornam valores anuais elevados. O material também detalha as regras e travas aplicadas ao cartão de crédito e ao cheque especial para proteger o consumidor. Além disso, a série enfatiza a educação financeira em vez de recomendações, utilizando uma animação interativa para guiar o espectador. O objetivo final é mostrar que o tempo é o fator mais determinante para o crescimento do capital acumulado no cofrinho.
+
+Link: https://notebook.google.com/notebook/6168e5e3-5715-491e-adf2-17de8174511f

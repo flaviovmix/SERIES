@@ -1,0 +1,26 @@
+FINANCAS - O DINHEIRO DO MES - JUROS SOBRE JUROS - CONTEXTO
+===========================================================
+Documento curto de contexto para uso com NotebookLM.
+
+Financas e uma serie de audio que vai do dinheiro do mes ate a bolsa, degrau por degrau. A linha de apoio da serie e "do cofrinho a bolsa". A serie e educacao financeira, nunca recomendacao: nenhum episodio diz o que comprar, onde investir, que banco usar ou quanto rende.
+
+Este e o segundo episodio da primeira etapa, O dinheiro do mes. O primeiro terminou com a sobra do mes separada na frente, num lugar proprio, o cofrinho. Este mostra o motor que faz a divida crescer sozinha e o dinheiro guardado crescer com o tempo: os juros compostos.
+
+O ouvinte sai sabendo:
+- o que e juro, nas palavras do Caderno de Educacao Financeira do Banco Central (versao de dois mil e vinte e seis): o aluguel do dinheiro no tempo;
+- a diferenca entre juros simples e compostos, pelo exemplo do proprio caderno: mil reais a cinco por cento ao mes por seis meses dao mil e trezentos reais nos simples e mil trezentos e quarenta reais e dez centavos nos compostos;
+- por que taxa ao mes nao se multiplica por doze: a taxa media do rotativo do cartao em julho de dois mil e vinte e seis foi de quinze virgula zero dois por cento ao mes, que e a mesma coisa que quatrocentos e trinta e seis virgula quinze por cento ao ano (Banco Central);
+- as travas que as regras puseram no cartao e no cheque especial (duas do Conselho Monetario Nacional e uma de lei), cada uma com a data;
+- e que, dos tres ingredientes da conta (valor, taxa e tempo), o tempo e o que mais pesa.
+
+Os episodios da etapa O dinheiro do mes:
+1. Para onde vai o salario.
+2. Juros sobre juros (este).
+3. O preco que anda sozinho.
+4. A reserva antes de tudo.
+
+Por que importa: o mesmo motor aparece na fatura do cartao, no cheque especial e no dinheiro guardado. Quem entende a conta le a fatura de outro jeito.
+
+O episodio e acompanhado de uma pagina que vira sozinha com o audio.
+
+Use este contexto apenas como apoio.

@@ -1,0 +1,47 @@
+Inicie dizendo: Financas - Juros sobre Juros
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_Juros sobre Juros.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o segundo episodio da serie FINANCAS, que vai do dinheiro do mes ate a bolsa. O episodio anterior terminou com a sobra do mes separada na frente, no cofrinho; este episodio pega dali.
+
+FOCO: o motor dos juros compostos. O que e juro (o aluguel do dinheiro no tempo, nas palavras do Caderno do Banco Central), a conta simples contra a composta, por que taxa ao mes nao se multiplica por doze, o motor trabalhando contra na divida do cartao e do cheque especial (com as taxas medias de julho de dois mil e vinte e seis e as travas das regras, cada uma dita com quem criou) e a favor com o tempo.
+
+NAO FALAR DE INVESTIMENTO: nada de acao, bolsa, corretora, renda fixa, produto ou banco com nome. Taxa de dinheiro guardado e inventada ou e a do exemplo do caderno.
+
+E EDUCACAO, NUNCA RECOMENDACAO: nao dizer onde pegar credito, que banco usar, onde guardar dinheiro nem quanto rende. Sem orientacao juridica.
+
+TODA TAXA COM A UNIDADE, ao mes ou ao ano, e TODA CIFRA COM DATA E FONTE, com os anos por extenso e devagar.
+
+CUIDADOS QUE NAO PODEM ESCAPAR:
+- O teto do cartao limita o TOTAL de juros e encargos ao valor original da divida (cem reais viram no maximo duzentos), no rotativo e no parcelamento da fatura, desde tres de janeiro de dois mil e vinte e quatro. NAO e teto de taxa.
+- As taxas sao medias do mercado publicadas pelo Banco Central, de julho de dois mil e vinte e seis. Nenhum banco pelo nome.
+- NAO dizer que juros sobre juros e ilegal hoje. NAO falar de pagamento minimo da fatura.
+- O Supremo confirmou a regra em dois mil e vinte e quatro, nao em dois mil e quinze.
+- Helena e Marta sao do exemplo do caderno, com os numeros do caderno.
+- NAO usar a frase atribuida a Einstein nem a regra do setenta e dois.
+
+A pagina que acompanha o audio tem 8 telas. No fim de cada tela, menos a ultima, um apresentador diz o marcador "Proxima pagina", exatamente essas duas palavras, 7 vezes no total. O lembrete da pagina na abertura e uma fala so, de um apresentador, e o outro nao comenta. NAO nomear nenhum extra.
+
+TOM: sem sermao, sem culpa e sem tom de coach. Divida e uma conta que ja foi feita, nao falha de ninguem.
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO PRA ENTREGAR.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario, genial, genialidade.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "e ai que mora o perigo", "bola de neve", "o segredo dos ricos", "o dinheiro trabalhando pra voce enquanto voce dorme".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_Juros sobre Juros.txt (o cofrinho, o aluguel do dinheiro e o motor). NAO invente analogias novas.
+
+Use tambem o Overview.txt como contexto curto.

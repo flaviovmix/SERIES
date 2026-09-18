@@ -872,10 +872,13 @@ module.exports = {
         contagem: `15 min &middot; 12 telas`,
       },
       '02': {
+        imagem: '../FINANCAS/01 - O dinheiro do mes/02 - Juros sobre juros/img/tela-01.webp',
+        descricao: `O cofrinho parado e a engrenagem`,
+        credito: `ilustração`,
         periodo: `o motor do tempo`,
-        frase: `O mesmo motor na dívida e na aplicação.`,
-        resumo: `Juros simples e compostos, e por que o tempo é a variável que mais pesa dos dois lados.`,
-        contagem: `em produção`,
+        frase: `O mesmo motor na dívida e no dinheiro guardado.`,
+        resumo: `Juro é o aluguel do dinheiro no tempo. A conta simples contra a composta, pelo exemplo do Banco Central. Por que a taxa ao mês não se multiplica por doze. O rotativo do cartão e o cheque especial com as travas da regra, e o tempo pesando mais que a taxa.`,
+        contagem: `13 min &middot; 8 telas`,
       },
       '03': {
         periodo: `o preço que anda`,

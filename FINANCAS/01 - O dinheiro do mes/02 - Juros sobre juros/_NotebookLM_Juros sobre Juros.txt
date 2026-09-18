@@ -1,0 +1,180 @@
+Inicie dizendo: Financas - Juros sobre Juros
+---------------
+
+Este e o SEGUNDO episodio da serie FINANCAS, que vai do dinheiro do mes ate a bolsa. O episodio anterior mostrou para onde vai o salario e terminou com a sobra do mes separada na frente, num lugar proprio: o cofrinho. Este episodio pega dali.
+
+ESTE EPISODIO NAO FALA DE INVESTIMENTO. Nada de acao, bolsa, corretora, renda fixa, produto, aplicacao com nome, banco com nome ou rendimento de produto. Onde o roteiro fala de dinheiro guardado rendendo, a taxa e inventada e redonda, ou e a do exemplo do Caderno do Banco Central. Onde deixar o dinheiro e a etapa seguinte da serie, e isso so e dito, nao explicado.
+
+E EDUCACAO, NUNCA RECOMENDACAO. Em nenhum momento dizer onde pegar credito, que banco cobra menos, que produto contratar, onde guardar dinheiro ou quanto uma coisa rende. Nada de "voce deve", "faca isso hoje". A serie mostra a conta e quem decide e quem ouve. Nada de orientacao juridica: nada de "da pra processar o banco" ou "isso e ilegal".
+
+TODA CIFRA VEM COM A DATA E COM A FONTE, dita em voz alta e em poucas palavras: "segundo o Banco Central, em julho de dois mil e vinte e seis". Os anos vao ditos por extenso e sem pressa. TODA TAXA VEM COM A UNIDADE: "ao mes" ou "ao ano". Taxa sem unidade nao entra. Esse e o assunto do episodio.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas que VIRA SOZINHA enquanto o audio toca, e que leva o audio junto quando alguem pula a tela na mao. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores diz claramente o marcador: "Proxima pagina". NAO e instrucao pro ouvinte: e o marcador que corta o audio em telas. Dizer exatamente essas duas palavras, e nao "aperte", nem "vamos pra proxima", nem "proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O lembrete e UMA FALA SO, de UM apresentador, curto e padronizado, e diz so isto, nesta ordem: que o audio acompanha a pagina e que a pagina vira sozinha; que pular a tela na mao leva o audio junto; que quem quiser parar pra mexer numa tela pause o audio, senao ele vira a tela sem a pessoa; e que embaixo da tela ficam as guias de extras e de filmes, que podem ganhar coisa nova com o tempo. Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se voce pular uma tela, o audio pula junto. Se quiser parar pra mexer numa tela, pausa o audio, senao ele vira a tela sem voce. Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova com o tempo." Um apresentador, e acabou. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz pergunta sobre isso.
+  NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina, NAO chamar a animacao de legal, bacana ou interativa, NAO dizer o nome de nenhum extra nem do que ele trata, e NAO dizer o marcador como exemplo.
+- Na tela que se mexe (a tela 4), avisar que tem controles na tela, e repetir a frase da pausa: quem quiser mexer com calma pausa o audio, senao a tela vira.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que dizer o marcador "Proxima pagina" exatamente 7 vezes, uma no fim de cada tela, na ordem, e nenhuma no fim da ultima. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem o marcador. Quem esta ouvindo com a pagina aberta so vira a tela quando o marcador acontece: se faltar um, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+A TRILHA CONTA O MOTOR; O APROFUNDAMENTO E EXTRA. Quem inventou a conta dos juros compostos, a historia inteira da lei sobre juros no Brasil, a regra de cabeca pra saber quando uma coisa dobra e o que entra dentro do custo efetivo total NAO cabem aqui. O audio NAO chama nenhum extra pelo nome: so o lembrete da abertura diz que as guias existem.
+
+FILMES. Tres obras entram no audio, cada uma em poucas frases, dizendo o que ela e e o que distorce: o episodio de Futurama na tela 4, o documentario A Ascensao do Dinheiro na tela 5 e o curta Filhos da Mama, do Banco Central, na tela 7. Nada alem das tres.
+
+TOM. Sem sermao e sem culpa. Quem tem divida no cartao nao e tratado como quem errou: divida e uma conta que ja foi feita. Nada de tom de coach, nada de frase de motivacao, nada de "o segredo dos ricos".
+
+NAO E AULA DE CURSO NENHUM e NAO TEM EXERCICIO PRA ENTREGAR. Nada de "tarefa", "modulo", "aula numero tal", "o material pede", tabela pra preencher e prazo.
+
+CUIDADOS DE PRECISAO (cada um ja custou correcao em algum lugar):
+- A unidade sempre: quinze virgula zero dois por cento ao mes e quatrocentos e trinta e seis virgula quinze por cento ao ano sao A MESMA TAXA, a do rotativo em julho de dois mil e vinte e seis. Nunca dizer uma sem a unidade, e nunca dizer que o rotativo e cento e oitenta por cento ao ano.
+- As taxas do cartao, do cheque especial e do credito pessoal sao MEDIAS DO MERCADO, publicadas pelo Banco Central, do mes de julho de dois mil e vinte e seis. Nao sao a taxa de um banco. Nenhum banco e citado pelo nome.
+- O teto do cartao NAO E TETO DE TAXA. Ele limita o TOTAL de juros e encargos acumulados ao valor original da divida: quem devia cem reais chega no maximo a dever duzentos. Vale no rotativo e no parcelamento da fatura, pra operacoes desde tres de janeiro de dois mil e vinte e quatro. NAO dizer "os juros do cartao agora sao de no maximo cem por cento". NAO dizer que nenhuma divida de cartao passa do dobro.
+- NAO falar de pagamento minimo da fatura nem de percentual minimo.
+- NAO dizer que juros sobre juros e ilegal ou proibido hoje. A frase certa esta na tela 3.
+- O Supremo confirmou que a regra e constitucional em dois mil e vinte e quatro. NAO dizer que foi em dois mil e quinze.
+- O exemplo de Helena e Marta e do Caderno do Banco Central, com os numeros do caderno. NAO refazer a conta no ar, NAO trocar os valores, NAO inventar outro detalhe da vida delas.
+- NAO usar a frase atribuida a Einstein sobre juros compostos serem a forca mais poderosa do universo. NAO usar a regra do setenta e dois.
+- O cofrinho nao vira produto nem aplicacao. Onde deixar o dinheiro e a etapa seguinte da serie.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario, genial, genialidade.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo", "e ai que mora o perigo", "bola de neve", "o segredo dos ricos", "o dinheiro trabalhando pra voce enquanto voce dorme".
+
+---------------
+
+Use SOMENTE as analogias descritas aqui. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- O cofrinho: e o objeto que atravessa a serie inteira. Nasceu no episodio anterior como a sobra do mes separada na frente. Aqui ele descobre que, parado, fica do mesmo tamanho. Nao e personagem, nao fala, nao tem nome.
+- O aluguel do dinheiro: e a imagem que o proprio Caderno do Banco Central usa pra explicar o que e juro, e deve ser atribuida a ele. Quem usa dinheiro dos outros paga o aluguel; quem deixa o dinheiro com alguem recebe.
+- O motor: o mesmo motor que faz a divida crescer faz o dinheiro guardado crescer. E a imagem com que o episodio anterior terminou, e ela volta aqui. O motor e a conta dos juros compostos, e so isso.
+Fora essas tres, explicar direto. Em especial, NAO usar bola de neve, arvore, semente, fermento, avalanche ou qualquer outra imagem pra explicar juros compostos.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: JUROS SOBRE JUROS)
+
+Retomar em uma frase: no episodio anterior, a sobra do mes ganhou um lugar proprio, separada na frente, e esse lugar e o cofrinho. So que tem um problema: a sobra parada fica do mesmo tamanho. E existe um motor que faz a divida do cartao crescer sozinha e faz o dinheiro guardado crescer com o tempo. Este episodio abre esse motor.
+
+Dizer o que este episodio faz, em poucas palavras: o que e juro, as duas contas que existem (a simples e a composta), por que uma taxa ao mes nao e a mesma coisa que uma taxa ao ano, o motor trabalhando contra, na divida, e o motor trabalhando a favor, com o tempo.
+
+Avisar que todo numero vem com a data e com a fonte, e que toda taxa vem com a unidade, ao mes ou ao ano.
+
+O lembrete da pagina, como manda a regra da conducao la em cima: UMA fala, de UM apresentador, e o outro nao comenta.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 2 (O ALUGUEL DO DINHEIRO)
+
+Dar a definicao do jeito que o Caderno de Educacao Financeira do Banco Central, na versao de dois mil e vinte e seis, escreve: juro e o valor do aluguel do dinheiro no tempo. Quem usa o dinheiro de outra pessoa ou de um banco paga esse aluguel. Quem deixa o dinheiro com alguem recebe.
+
+Dizer os tres ingredientes de toda conta de juro, um de cada vez: o valor de partida, a taxa e o tempo. Nao existe conta de juro sem os tres. E avisar desde ja que, dos tres, o tempo e o que mais pesa, e que o episodio vai mostrar isso.
+
+Dizer a frase que o episodio inteiro prova: o mesmo motor serve pros dois lados. E o Banco Central escreve isso com todas as letras no caderno: os juros compostos fazem o dinheiro crescer ao longo do tempo, e isso vale pras aplicacoes, mas tambem pras dividas.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 3 (AS DUAS CONTAS)
+
+Juros simples: o juro e calculado so sobre o valor de partida, todo mes o mesmo tanto. Juros compostos: a cada mes, o juro entra no saldo e passa, ele tambem, a render juro. O proprio caderno do Banco Central da o apelido: os juros compostos sao os chamados juros sobre juros.
+
+Dar o exemplo do caderno, devagar, mes a mes, porque ele e o coracao do episodio: mil reais, a cinco por cento ao mes, por seis meses.
+Nos simples, sao cinquenta reais por mes, todo mes, e no fim dos seis meses a divida e de mil e trezentos reais.
+Nos compostos, o primeiro mes e igual: mil e cinquenta. No segundo mes, os cinco por cento ja caem sobre mil e cinquenta, e a divida vai pra mil cento e dois reais e cinquenta centavos. Esses dois reais e cinquenta a mais sao o juro sobre o juro do primeiro mes. Depois vem mil cento e cinquenta e sete reais e sessenta e tres centavos, mil duzentos e quinze reais e cinquenta e um centavos, e mil duzentos e setenta e seis reais e vinte e oito centavos. No fim dos seis meses, a divida e de mil trezentos e quarenta reais e dez centavos.
+Dizer o ponto: no primeiro mes as duas contas sao iguais. A diferenca nasce no segundo mes, e depois so cresce.
+
+Dizer que, segundo o proprio caderno, os juros simples praticamente nao existem em emprestimo e aplicacao: o que se usa quase sempre e o composto.
+
+Uma frase de lei, e so uma, sem virar aula de direito: o nome juros sobre juros tem cara de coisa proibida, e ja foi. Uma lei de mil novecentos e trinta e tres proibia contar juros dos juros. Pra banco, a conta de juros compostos todo mes e permitida desde dois mil, por uma medida provisoria, desde que esteja no contrato, e em dois mil e vinte e quatro o Supremo Tribunal Federal confirmou que essa regra e constitucional.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 4 (AS DUAS CURVAS, TELA COM CONTROLES)
+
+Avisar: a tela tem as duas contas desenhadas lado a lado, saindo dos mesmos mil reais. Uma linha reta, que e a dos juros simples, e uma curva, que e a dos compostos. Tem controle de taxa ao mes e de prazo, e tres botoes de partida. E repetir a frase da pausa: quem quiser mexer com calma pausa o audio, senao a tela vira.
+
+Descrever como a tela comeca: no exemplo do Banco Central, cinco por cento ao mes por seis meses. As duas linhas estao quase juntas: mil e trezentos reais de um lado, mil trezentos e quarenta reais e dez centavos do outro. Em seis meses, o juro sobre juro ainda e pouco.
+
+Dizer o que os outros dois botoes mostram, sem adiantar o assunto das proximas telas: um usa os mesmos seis meses com a taxa media do rotativo do cartao, e ai a curva se afasta da reta rapido. O outro usa uma taxa inventada e baixa, de um por cento ao mes, por trinta anos: a reta chega em quatro mil e seiscentos reais, e a curva, em quase trinta e seis mil. A taxa e pequena. O que muda tudo e o tempo.
+
+Dizer que embaixo a tela mostra a taxa escolhida convertida pra ao ano, e que isso e o assunto da proxima tela.
+
+O filme, em poucas frases: num episodio do desenho animado Futurama, de mil novecentos e noventa e nove, o personagem Fry acorda mil anos no futuro e descobre que os noventa e tres centavos que ele tinha deixado no banco, a dois virgula vinte e cinco por cento ao ano, viraram quatro bilhoes e trezentos milhoes de dolares. A conta dos compostos esta certa; nos simples, os mesmos noventa e tres centavos dariam vinte e um dolares e oitenta e seis centavos. O que distorce: sao mil anos, e a conta ignora que os precos tambem sobem nesse tempo todo.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 5 (AO MES NAO E AO ANO)
+
+Explicar o erro mais comum com taxa: multiplicar a taxa do mes por doze. Isso e conta de juros simples, e o mundo cobra em compostos.
+
+Dar os dois exemplos, com a unidade dita sempre:
+Um por cento ao mes, em doze meses de juros compostos, da doze virgula sessenta e oito por cento ao ano, e nao doze por cento ao ano.
+A taxa media do rotativo do cartao, em julho de dois mil e vinte e seis, segundo o Banco Central, foi de quinze virgula zero dois por cento ao mes. O proprio Banco Central publica a mesma taxa como quatrocentos e trinta e seis virgula quinze por cento ao ano. Quem multiplica por doze chega em cento e oitenta por cento ao ano, e erra por mais do dobro.
+
+O filme, em poucas frases: no primeiro episodio da serie documental A Ascensao do Dinheiro, de dois mil e oito, o historiador Niall Ferguson mostra um agiota num bairro pobre de Glasgow cobrando vinte e cinco por cento por semana, e o episodio transforma isso em onze milhoes por cento ao ano; se fosse conta simples, seriam mil e trezentos por cento ao ano. O que distorce: ninguem carrega a mesma divida cinquenta e duas semanas seguidas, e e agiota, nao banco.
+
+Fechar com a regra que vale dai pra frente: taxa so faz sentido com a unidade junto, ao mes ou ao ano.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 6 (O MOTOR CONTRA: A DIVIDA)
+
+Dar as taxas medias de julho de dois mil e vinte e seis, segundo o Banco Central, dizendo que sao medias do mercado, nao a taxa de um banco, e todas ao ano: o rotativo do cartao, quatrocentos e trinta e seis virgula quinze por cento ao ano; o parcelado do cartao, cento e oitenta e nove virgula vinte e oito por cento ao ano; o cheque especial, cento e trinta e sete virgula trinta por cento ao ano; e o credito pessoal sem desconto em folha, cento e dez virgula noventa e cinco por cento ao ano. Dizer tambem que o dado de julho e preliminar e pode ser revisto pelo Banco Central.
+
+Dizer a conta, como conta e nao como fonte: se uma divida so crescesse na taxa media do rotativo, ela dobraria em menos de cinco meses.
+
+Dizer que existem travas, cada uma com a data e com quem criou. Duas sao regras do Conselho Monetario Nacional, o orgao do governo que regula o credito, e uma veio de lei. Nao chamar tudo de lei:
+Por uma regra do Conselho Monetario Nacional, desde abril de dois mil e dezessete, o saldo da fatura so pode ficar no rotativo ate a fatura seguinte. Depois disso, tem que virar parcelamento, em condicao melhor que a do rotativo.
+Por uma lei de dois mil e vinte e tres, regulamentada pelo Conselho Monetario Nacional, desde tres de janeiro de dois mil e vinte e quatro os juros e encargos do rotativo e do parcelamento da fatura, somados, nao podem passar do valor original da divida. O exemplo e do proprio Banco Central: quem devia cem reais chega no maximo a dever duzentos. Explicar com cuidado: isso nao e um teto na taxa, que continua nos quatrocentos e poucos por cento ao ano. E um teto no total acumulado.
+Por outra regra do Conselho Monetario Nacional, o cheque especial tem teto de oito por cento ao mes desde seis de janeiro de dois mil e vinte, e a media de julho de dois mil e vinte e seis, segundo o Banco Central, estava em sete virgula quarenta e sete por cento ao mes, perto do teto.
+
+Fechar sem moralizar: a divida no cartao e o motor trabalhando contra, e quem esta nela nao fez nada de estranho. O episodio so quer que o tamanho dessa conta apareca antes, e nao depois.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 7 (O MOTOR A FAVOR: O TEMPO PESA MAIS)
+
+Dar o exemplo do Caderno do Banco Central com os numeros do caderno, sem refazer a conta, dizendo que Helena e Marta sao personagens do exemplo:
+Helena guarda cento e cinquenta reais por mes dos vinte aos trinta anos, para de guardar e deixa render ate os sessenta. Ela tirou do bolso dezoito mil reais.
+Marta guarda os mesmos cento e cinquenta reais por mes, so que dos trinta aos sessenta. Ela tirou do bolso cinquenta e quatro mil.
+As duas a meio por cento ao mes. Aos sessenta anos, segundo o caderno, Helena tem perto de cento e quarenta e oito mil e oitocentos reais, e Marta, perto de cento e cinquenta mil e setecentos. Chegam perto do mesmo lugar, e Helena tirou do bolso um terco do que Marta tirou. A frase do caderno e que a chave e o poder dos juros compostos ao longo do tempo.
+
+Voltar pro cofrinho: a sobra separada na frente, parada, fica do mesmo tamanho. O que faz ela crescer e tempo com juro, e o mesmo motor que pesa contra na divida pesa a favor aqui. Onde deixar esse dinheiro e a etapa seguinte da serie, e nao e assunto deste episodio.
+
+O filme, em poucas frases: Filhos da Mama, um curta de cinco minutos do Banco Central, de dois mil e quinze, gratis na internet, em que um irmao gemeo financia um carro por cinco anos e o outro guarda todo mes o mesmo valor da prestacao e compra a vista. O que distorce: e fabula com moral pronta, e esconde que o irmao que guarda passa cinco anos sem carro.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular em poucas frases: juro e o aluguel do dinheiro no tempo. O composto e juro sobre juro, e a diferenca pro simples nasce no segundo mes. Taxa ao mes nao se multiplica por doze. E o mesmo motor puxa a divida e o dinheiro guardado, com o tempo pesando mais do que a taxa.
+
+Dizer onde isso aparece fora da tela:
+Na fatura do cartao: por uma regra do Banco Central, desde julho de dois mil e vinte e quatro, ela tem que mostrar a taxa ao mes, a taxa ao ano e o Custo Efetivo Total de cada opcao de financiamento, da mais barata pra mais cara, e quanto de encargo vem no mes seguinte se a pessoa pagar so o obrigatorio.
+No contrato de emprestimo: o Custo Efetivo Total, que e anual e junta juro, tarifa e imposto numa taxa so. E o numero pra comparar.
+E na Calculadora do Cidadao, do Banco Central, gratis na internet, que faz a conta composta.
+
+Nao dar conselho de credito nem de investimento.
+
+Gancho pro proximo episodio, sem entregar a resposta: o dinheiro pode crescer em numero e, mesmo assim, comprar menos, porque o preco das coisas tambem anda sozinho. O proximo episodio e sobre isso.
+
+---
+
+ENCERRAMENTO
+
+Fechar dizendo que a serie segue no proximo episodio.

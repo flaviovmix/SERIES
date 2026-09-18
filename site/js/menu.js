@@ -231,7 +231,14 @@
           episodios: [
             { num: '01', nome: 'Para onde vai o salário',
               href: '../FINANCAS/01 - O dinheiro do mes/01 - Para onde vai o salario/animacao.html' },
-            { num: '02', nome: 'Juros sobre juros' },
+            { num: '02', nome: 'Juros sobre juros',
+              href: '../FINANCAS/01 - O dinheiro do mes/02 - Juros sobre juros/animacao.html',
+              filmes: [
+                { titulo: 'Futurama, episódio "A Minha Fortuna São os Meus Amigos"', ano: 1999, tipo: 'animação (episódio de série)', nota: 'Os 93 centavos que Fry deixou no banco, a 2,25% ao ano por mil anos, viram 4,3 bilhões de dólares; nos juros simples seriam 21 dólares e 86 centavos. É piada: mil anos, banco eterno, e a conta ignora que os preços também sobem.', onde: 'Disney+ (assinatura)' },
+                { titulo: 'Filhos da Mama, da série Eu e Meu Dinheiro, do Banco Central', ano: 2015, tipo: 'curta de ficção, 5 minutos', nota: 'Um gêmeo financia o carro por cinco anos; o outro guarda todo mês o valor da prestação e compra à vista. É fábula com moral pronta, e esconde que o irmão que guarda fica cinco anos sem carro.', onde: 'YouTube do Banco Central, grátis', href: 'https://www.youtube.com/watch?v=HQ2HZdJNhm8' },
+                { titulo: 'A Ascensão do Dinheiro, episódio 1, Sonhos de Avareza', ano: 2008, tipo: 'documentário (série de TV)', nota: 'Niall Ferguson e o agiota de Glasgow a 25% por semana, que o episódio anualiza em 11 milhões por cento. É conta de efeito, e é agiota, não banco; Ferguson é entusiasta das finanças.', onde: 'não confirmei onde ver no Brasil' },
+                { titulo: 'Explicando... Dinheiro, episódio Cartões de crédito', ano: 2021, tipo: 'documentário (série)', nota: 'A máquina do cartão americano: quanto mais se adia pagar a fatura inteira, mais ela incha. Os juros e as regras são os de lá, não os daqui.', onde: 'Netflix (assinatura)' }
+              ] },
             { num: '03', nome: 'O preço que anda sozinho' },
             { num: '04', nome: 'A reserva antes de tudo' }
           ] },
