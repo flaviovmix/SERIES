@@ -1073,10 +1073,10 @@ module.exports = {
         imagem: 'img/universo-01-ep-03.webp',
         descricao: `Uma estrela gigante sozinha no gás escuro`,
         credito: `ilustração`,
-        periodo: `3 de janeiro`,
+        periodo: `3 a 8 de janeiro`,
         frase: `Ninguém viu nenhuma delas.`,
-        resumo: `A idade das trevas e as primeiras estrelas, gigantes feitas só do gás do começo. O incômodo bonito: nenhuma foi observada até hoje, e o melhor candidato está a uns 830 milhões de anos do começo, tarde demais pra ser das primeiras.`,
-        contagem: `episódio 3 de 5`,
+        resumo: `A idade das trevas e as primeiras estrelas, feitas só de hidrogênio e hélio. Nenhuma foi observada até hoje, e o melhor candidato é luz de 800 milhões de anos depois do começo: tarde demais pra ser das primeiras. Na régua, a primeira faixa.`,
+        contagem: `10 min &middot; 8 telas`,
       },
       '04': {
         imagem: 'img/universo-01-ep-04.webp',

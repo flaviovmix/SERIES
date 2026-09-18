@@ -1,0 +1,127 @@
+Inicie dizendo: As Primeiras Estrelas
+---------------
+
+Este e o terceiro episodio da etapa JANEIRO, a primeira etapa da serie Universo. O episodio anterior, A primeira luz, pos a segunda marca na regua do ano cosmico, na meia-noite e catorze do primeiro de janeiro, quando o universo ficou transparente, e terminou dizendo que depois dessa luz vem o escuro. Este episodio e sobre as estrelas que acabaram com esse escuro, e que ninguem nunca viu.
+
+ESTE EPISODIO COBRE UMA FAIXA, NAO UM PONTO: de tres a oito de janeiro, no calendario cosmico. Ninguem sabe o dia exato em que a primeira estrela acendeu, e a serie diz a faixa. Dizer isso em voz alta na abertura, e no encerramento dizer onde o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que VIRA SOZINHA enquanto o audio toca, e que leva o audio junto quando alguem pula a tela na mao. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores diz claramente o marcador: "Proxima pagina". NAO e instrucao pro ouvinte: e o marcador que corta o audio em telas. Dizer exatamente essas duas palavras, e nao "aperte", nem "vamos pra proxima", nem "proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O lembrete e UMA FALA SO, de UM apresentador, curto e padronizado, e diz so isto, nesta ordem: que o audio acompanha a pagina e que a pagina vira sozinha; que pular a tela na mao leva o audio junto; que quem quiser parar pra mexer numa tela pause o audio, senao ele vira a tela sem a pessoa; e que embaixo da tela ficam as guias de extras e de filmes, que podem ganhar coisa nova com o tempo. Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se voce pular uma tela, o audio pula junto. Se quiser parar pra mexer numa tela, pausa o audio, senao ele vira a tela sem voce. Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova com o tempo." Um apresentador, e acabou. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz pergunta sobre isso.
+  NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina, NAO chamar a animacao de legal, bacana ou interativa, NAO dizer o nome de nenhum extra nem do que ele trata, e NAO dizer o marcador como exemplo.
+- Na tela interativa (a tela 7), avisar o que tem na tela pra mexer e repetir a frase da pausa: quem quiser mexer com calma pausa o audio, senao a tela vira.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+A TRILHA CONTA A HISTORIA; O MECANISMO POR DENTRO E EXTRA. O que aprofunda sem ser necessario pra seguir (como funciona uma lente gravitacional, como se estuda a quimica de estrelas antigas da vizinhanca, o que foi a reionizacao por dentro, o telescopio James Webb peca por peca) NAO cabe aqui. O audio NAO chama nenhum extra pelo nome: so o lembrete da abertura diz que as guias existem.
+
+FILMES. Este episodio nao cita nenhum filme.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que dizer o marcador "Proxima pagina" exatamente 7 vezes, uma no fim de cada tela, na ordem, e nenhuma no fim da ultima. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem o marcador. Quem esta ouvindo com a pagina aberta so vira a tela quando o marcador acontece: se faltar um, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+NINGUEM VIU. Nenhuma estrela da primeira geracao foi observada. O audio NAO pode dizer que o telescopio James Webb viu as primeiras estrelas, NAO pode dizer que a LAP1-B e uma primeira estrela, e NAO pode dizer que ela foi confirmada. LAP1-B e CANDIDATA. A estrela PicII-503 e de SEGUNDA geracao, nao da primeira.
+
+NUMERO COM FONTE. Toda data e todo numero saem com quem publicou e o ano, QUANDO O ROTEIRO TROUXER O NOME. Se o roteiro nao trouxer o nome, dizer so o dado, e NUNCA inventar um autor. Quando o roteiro disser que um numero e modelo, o audio diz "pelo modelo". NAO INVENTAR NENHUMA DATA ALEM DAS QUE ESTAO NESTE ROTEIRO.
+
+SEM FICHA HUMANA NESTE EPISODIO. As pessoas aparecem so pelo artigo que publicaram (sobrenome, colegas e ano). NAO inventar onde nasceram, onde estudaram nem frase de nenhuma delas.
+
+TRADUCAO DE ESCALA SO DE MARCA COLETIVA. NAO dizer quanto tempo a vida de uma pessoa duraria na regua.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A REGUA DO ANO COSMICO: a idade do universo espremida num ano de doze meses, com um dia valendo trinta e sete milhoes e oitocentos mil anos. E o objeto da serie inteira, e a unica analogia deste episodio.
+Fora essa, sem analogias. Explicar direto. Em especial, NAO usar capsula do tempo, fossil, arqueologia, detetive, impressao digital, neblina, cortina ou apagao pra explicar nada deste episodio.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: AS PRIMEIRAS ESTRELAS)
+
+Retomar em uma frase: o episodio anterior pos a segunda marca na regua, na meia-noite e catorze do primeiro de janeiro, quando a luz passou a correr solta.
+
+Dizer o que este episodio faz: depois dessa luz, o universo ficou escuro, sem nenhuma estrela. As primeiras estrelas acabaram com esse escuro, e ninguem nunca viu nenhuma delas. O episodio conta quando elas podem ter acendido, o que a teoria espera delas, por que ninguem viu, qual e o melhor candidato, e poe na regua uma coisa nova: uma faixa, e nao um ponto, de tres a oito de janeiro.
+
+O lembrete da pagina, como manda a regra da conducao la em cima: UMA fala, de UM apresentador, e o outro nao comenta.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 2 (A FICHA: O INSTANTE QUE NINGUEM SABE E O TELESCOPIO)
+
+A ficha do instante. O que se data: a hora em que a primeira estrela acendeu. A data: ninguem sabe. A NASA escreve, numa pagina de dois mil e vinte e seis, que nao se sabe exatamente quando as primeiras estrelas comecaram a brilhar, mas que elas vieram depois da primeira luz, a dos trezentos e oitenta mil anos, e antes das galaxias mais velhas que se conhecem, menos de trezentos milhoes de anos depois do inicio. E o modelo diz onde a faixa comeca: Glover e Klessen, numa revisao de dois mil e vinte e cinco, escrevem que as primeiras estrelas comecaram a se formar em z perto de trinta. Esse z, passado pelo modelo do universo, da uns cem milhoes de anos depois do inicio. Na regua, isso da de tres a oito de janeiro. A motivacao: foram elas que acabaram com o escuro, e foram elas que fizeram os primeiros elementos mais pesados que o hidrogenio e o helio.
+
+A ficha do equipamento: o telescopio espacial James Webb, da NASA, da Agencia Espacial Europeia e da Agencia Espacial Canadense. Lancado em vinte e cinco de dezembro de dois mil e vinte e um, num foguete Ariane cinco, da Guiana Francesa. Chegou ao ponto de Lagrange dois, a um milhao e meio de quilometros da Terra, em vinte e quatro de janeiro de dois mil e vinte e dois. Ele enxerga infravermelho, e a NASA diz que foi feito assim justamente pra ver a luz das primeiras galaxias, que chega esticada ate o infravermelho.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 3 (A IDADE DAS TREVAS)
+
+Depois da primeira luz, o universo ficou escuro. A NASA explica que ele voltou a ficar opaco pros comprimentos de onda mais curtos, porque os atomos de hidrogenio absorviam essa luz. A NASA chama esse periodo de idade das trevas: o tempo entre o universo ficar transparente e as primeiras estrelas nascerem. Numa pagina, a NASA escreve que o universo ficou escuro pelos duzentos milhoes de anos seguintes. Esse numero e de modelo, e cabe dentro da faixa.
+
+Como o escuro acabou: segundo a NASA, a luz ultravioleta das primeiras estrelas quebrou o hidrogenio neutro que enchia o universo, separando os eletrons dos nucleos. Isso deu inicio a uma era chamada reionizacao, e foi o fim da idade das trevas.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 4 (O QUE A TEORIA ESPERA DELAS)
+
+Elas nasceram de um gas que so tinha hidrogenio e helio, os elementos simples do comeco. Glover e Klessen escrevem que elas se formavam em aglomerados pequenos, e que o gas esfriava por causa do hidrogenio molecular. Dentro delas foram feitos os primeiros elementos mais pesados que o helio, como o carbono e o ferro, e quando elas explodiam, espalhavam esses elementos pro gas em volta, e dai saia a geracao seguinte de estrelas. Quem descreve isso assim e um comunicado de marco de dois mil e vinte e seis do NOIRLab, um laboratorio de astronomia.
+
+E o que a teoria nao sabe. Uma revisao de dois mil e vinte e seis, de Venditti e mais vinte e oito colegas, diz que a distribuicao de massa delas, onde exatamente nasciam, e o efeito que tinham em volta continuam muito incertos.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 5 (POR QUE NINGUEM VIU)
+
+A mesma revisao diz que ver essas estrelas e dificil porque elas viviam pouco e eram fracas. E estao longe demais: a luz delas saiu tao cedo que chega esticada ate o infravermelho. E por isso que o James Webb foi feito pra enxergar infravermelho. Antes dele, segundo a NASA, o Hubble tinha enxergado ate uns quinhentos milhoes de anos depois do inicio.
+
+E a aposta dos teoricos: Glover e Klessen escrevem que ver uma dessas estrelas direto e dificil, mas que a chance de ver pelo menos algumas explosoes delas, as supernovas, na proxima decada, e melhor.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 6 (O MELHOR CANDIDATO)
+
+Em dois mil e vinte e cinco, Nakajima e colegas apresentaram, com o James Webb, uma galaxia muito fraca chamada LAP1-B. A luz dela chegou ampliada por um aglomerado de galaxias na frente, chamado MACS J zero quatro dezesseis. O z dela e seis virgula seiscentos e vinte e cinco, que os autores traduzem como oitocentos milhoes de anos depois do inicio. O oxigenio dela e de uns quatro milesimos do oxigenio do Sol, perto de um duzentos e quarenta avos, e os autores dizem que e a galaxia formando estrelas quimicamente mais primitiva ja achada. As estrelas dela, somadas, tem menos de tres mil e trezentas vezes a massa do Sol. O trabalho foi aceito pela revista Nature.
+
+Visbal, Hazlett e Bryan, tambem em dois mil e vinte e cinco, escreveram que ela e o primeiro objeto que bate com tres previsoes da teoria pras primeiras estrelas.
+
+Mas e candidata, nao confirmacao. E tem o incomodo: a luz dela e de oitocentos milhoes de anos depois do inicio, e os proprios Visbal e colegas escrevem que a maioria dos sistemas assim se formou muito antes. O melhor candidato ja achado esta atrasado.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 7 (A REGUA DO ANO COSMICO, TELA INTERATIVA)
+
+A regua volta, e ganha uma coisa que ainda nao tinha: uma faixa. As duas marcas do primeiro de janeiro continuam la, a meia-noite e a meia-noite e catorze. E agora tem uma faixa de tres a oito de janeiro, que e onde as primeiras estrelas podem ter acendido. E faixa porque ninguem sabe o dia: se virasse ponto, a regua ia afirmar uma coisa que ninguem mediu.
+
+E tem mais um ponto, de fora da faixa, pra comparar: a luz da LAP1-B, em vinte e dois de janeiro. Duas semanas de calendario depois do fim da faixa.
+
+Avisar: tem dois botoes na tela, um que mostra o ano inteiro e outro que mostra so janeiro. O cursor mostra a data do calendario, quantos anos atras aquilo e e quantos anos depois do inicio. A tela comeca so em janeiro, com o cursor no comeco da faixa. E repetir a frase da pausa: quem quiser explorar a regua com calma pausa o audio, senao a tela vira.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: a regua ganhou a primeira faixa, de tres a oito de janeiro, porque ninguem sabe o dia em que a primeira estrela acendeu. O comeco da faixa e modelo; o fim e o que ja se viu, porque antes dos trezentos milhoes de anos ja existia galaxia. Ninguem viu uma estrela da primeira geracao, e o melhor candidato e de oitocentos milhoes de anos depois do inicio.
+
+Onde isso aparece fora da tela: em marco de dois mil e vinte e seis, o NOIRLab anunciou uma estrela chamada PicII-503, numa galaxia ana muito fraca chamada Pictor II. Pictor II gira em volta da Grande Nuvem de Magalhaes, que gira em volta da Via Lactea. Essa estrela tem menos de um quarenta milesimo do ferro do Sol, e carbono demais pra tao pouco ferro. Ela nao e das primeiras: e da segunda geracao. Mas a quimica dela e a que as primeiras deixaram. O estudo foi liderado por Anirudh Chiti, de Stanford.
+
+Dizer onde o episodio parou: na faixa que termina em oito de janeiro.
+
+Gancho: em oito de janeiro ja existe galaxia. O proximo episodio e sobre a galaxia mais distante ja confirmada, e sobre um recorde que caiu duas vezes em dois anos.

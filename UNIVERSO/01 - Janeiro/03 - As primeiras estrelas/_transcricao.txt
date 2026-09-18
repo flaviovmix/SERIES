@@ -1,0 +1,208 @@
+# Transcricao automatica (faster-whisper small) - 9.9 min
+# Fonte: As estrelas que acabaram com o escuro.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] As primeiras estrelas.
+[00:01] É, a gente entra num território bem escuro agora, né?
+[00:04] Sim, literalmente.
+[00:06] Então, esse é o terceiro mergulho profundo da etapa janeiro, a primeira parte da série Universo.
+[00:11] Uhum.
+[00:12] E para começar bem, a gente precisa retomar exatamente de onde paramos na nossa régua.
+[00:17] Isso. A gente colocou a segunda marca na régua do ano cósmico.
+[00:21] Ela caiu bem à meia-noite, 14, do primeiro de janeiro.
+[00:24] Que foi quando a luz passou a correr solta, né?
+[00:27] Exato.
+[00:28] Mas o detalhe é que depois dessa primeira luz, o universo simplesmente ficou escuro.
+[00:33] Um breu total. Pois é.
+[00:34] E o nosso objetivo aqui é falar sobre as estrelas que acabaram com esse escuro.
+[00:39] E que ninguém nunca viu.
+[00:40] Nossa!
+[00:41] Sim, a gente vai cobrir quando elas podem ter acendido e o que a teoria espera delas.
+[00:46] E por que ninguém viu, além de falar do melhor candidato atual, claro?
+[00:51] Isso tudo coloca uma faixa de tempo na nossa régua.
+[00:54] Não um ponto exato.
+[00:56] A faixa vai de três a oito de janeiro.
+[00:58] É uma mudança bem visual na régua.
+[01:01] O áudio acompanha a página, que vira sozinha enquanto a gente fala.
+[01:05] Pular a tela na mão, leva o áudio junto.
+[01:08] Quem quiser parar para mexer numa tela, pausa o áudio, senão ele vira a tela sozinho.
+[01:13] Embaixo da tela ficam as guias de extras e de filmes,
+[01:16] e elas podem ganhar coisa nova com o tempo.
+[01:19] Próxima página.
+[01:20] Então, sobre essa dificuldade toda, ninguém sabe o dia exato em que a primeira estrela acendeu.
+[01:26] É, não tem uma data.
+[01:28] É muito difícil dataar essas estrelas iniciais.
+[01:31] A NASA publicou algo sobre isso em 2026, não foi?
+[01:33] Isso.
+[01:34] Eles dizem que elas vieram depois da primeira luz, aos 380 mil anos,
+[01:39] e vieram antes das galáxias mais velhas conhecidas,
+[01:43] que têm menos de 300 milhões de anos.
+[01:45] Mas pera aí, como a gente consegue definir o início dessa janela de tempo
+[01:49] se a gente não tem a data exata?
+[01:52] A gente usa um modelo de Glover e Klassen.
+[01:54] É de uma revisão de 2025.
+[01:56] Ah, o que o modelo deles diz?
+[01:58] Diz que a formação começou em um Z perto de 30.
+[02:02] Pelo modelo, isso dá uns 100 milhões de anos depois do início.
+[02:05] Entendi.
+[02:06] Na nossa récua do ano cósmico, isso é o quê?
+[02:09] Criar a faixa de 3 a 8 de janeiro.
+[02:11] Exatamente.
+[02:12] E a importância delas é enorme, sabe?
+[02:15] Elas acabaram com o escuro e fizeram os primeiros elementos mais pesados
+[02:18] que o hidrogênio e o hélio.
+[02:20] E a ferramenta principal para buscar isso é o telescópio espacial James Webb,
+[02:24] das agências espaciais NASA, ESA e CSA.
+[02:28] Lançado bem no dia de Natal, né?
+[02:30] Isso mesmo.
+[02:31] Em 25 de dezembro de 2021,
+[02:34] num foguete Ariane 5, lá da Guiana Francesa,
+[02:37] ele chegou ao ponto de Lagrange 2 a 1,5 milhão de quilômetros da Terra,
+[02:42] em 24 de janeiro de 2022.
+[02:45] E tem um motivo para usar o Webb.
+[02:48] Ele enxerga a infravermelho.
+[02:50] A NASA diz que ele foi feito assim justamente
+[02:53] para ver a luz das primeiras galáxias,
+[02:55] que chega esticada até o infravermelho.
+[02:57] Próxima página.
+[02:58] Só que tem uma questão lógica aí.
+[03:00] Se a luz corria solta no dia 1 de janeiro,
+[03:03] por que o universo ficou escuro
+[03:05] a ponto de precisar das estrelas para iluminar tudo de novo?
+[03:08] Boa pergunta.
+[03:10] A NASA tem um conceito para isso.
+[03:12] A NASA explica que o universo voltou a ficar opaco
+[03:15] para os comprimentos de onda mais curtos,
+[03:17] porque os átomos de hidrogênio absorviam essa luz.
+[03:20] Tipo uma barreira de hidrogênio.
+[03:22] A NASA chama esse período entre o universo ficar transparente
+[03:26] e as primeiras estrelas nascerem de idade das trevas.
+[03:30] E o modelo da NASA também dá um número.
+[03:32] O universo ficou escuro pelos 200 milhões de anos seguintes.
+[03:36] O que cabe perfeitamente dentro da nossa faixa de janeiro.
+[03:40] Mas qual foi o mecanismo físico que encerrou esse período?
+[03:43] Como que o escuro acabou?
+[03:45] A NASA diz que a luz ultravioleta das primeiras estrelas
+[03:48] quebrou o hidrogênio neutro.
+[03:50] Ah, quebrando os átomos?
+[03:52] Isso. Ela separou os elétrons dos núcleos.
+[03:55] Isso deu início à era chamada reunização,
+[03:58] e assim marcou o fundo a idade das trevas.
+[04:00] Próxima página.
+[04:01] Agora, pensando na composição dessas estrelas, é meio doido, né?
+[04:05] É.
+[04:05] Como elas conseguiram quebrar o hidrogênio e fazer elementos pesados
+[04:09] se nasceram de um gás que só tinha hidrogênio e hélio?
+[04:12] Glover e Klesson explicam que elas se formavam
+[04:15] em aglomerados pequenos,
+[04:17] e o gás esfriava por causa do hidrogênio molecular.
+[04:20] Ah, o resfriamento era diferente, então?
+[04:23] Isso.
+[04:24] E um comunicado de março de 2026 do Noel Lab
+[04:28] diz que dentro dessas estrelas foram feitos elementos mais pesados,
+[04:32] como o carbono e o ferro.
+[04:34] E aí, quando elas explodiu,
+[04:35] espalhavam esses elementos para o gás em volta,
+[04:38] gerando a geração seguinte.
+[04:40] Exato.
+[04:41] Mas a gente também precisa falar do que a teoria não sabe.
+[04:44] O que ainda falta entender?
+[04:46] Vendite e mais 28 colegas publicaram uma revisão em 2026,
+[04:51] a distribuição de massa delas onde exatamente nasciam
+[04:55] e o efeito exato no ambiente em volta continuou muito incertos.
+[04:59] Próxima página.
+[05:00] Então vem o questionamento mais óbvio.
+[05:02] Se elas foram vitais para encerrar as trevas
+[05:05] e semear elementos pesados, porque não vimos nenhuma até hoje.
+[05:09] É uma frustração da área.
+[05:11] Mas a revisão de vendite explica.
+[05:13] Elas viviam pouco e eram fracas.
+[05:15] Além de estarem longe demais, sabe,
+[05:17] a luz saiu tão cedo que chega insticada até o infravermelho.
+[05:22] É por isso que o James Webb foi construído.
+[05:24] O Hubble, segundo a NASA,
+[05:26] tinha enxergado apenas até uns 500 milhões de anos depois do início.
+[05:30] É, o Webb vai mais longe.
+[05:32] E os teóricos, tipo Glover e Klesson,
+[05:34] dizem que ver uma dessas estrelas direto é difícil.
+[05:38] Mas tem alguma esperança?
+[05:39] Sim, eles falam que há uma chance melhor de ver
+[05:42] pelo menos algumas explosões delas,
+[05:44] as supernovas, na próxima década.
+[05:46] Próxima página.
+[05:47] É por causa dessa dificuldade toda que a gente olha
+[05:50] com tanto carinho para nossa melhor pista atual.
+[05:53] Que é o candidato LAP1B, né?
+[05:56] Isso, é um achado de 2025 de Nakajima e colegas.
+[06:00] Eles usaram o Webb e foi aceito pela revista Nature.
+[06:03] Mas o que é exatamente?
+[06:05] É uma galáxia muito fraca chamada LAP1B.
+[06:09] A luz dela só chegou até nós,
+[06:11] porque foi ampliada por um aglomerado de galáxias na frente,
+[06:15] chamado MAXJ0416.
+[06:19] Tem os dados numéricos bem claros dela.
+[06:21] O Z dela é 6,625.
+[06:23] Aham.
+[06:24] E isso se traduz em 800 milhões de anos depois do início.
+[06:29] E a química também impressiona.
+[06:30] O oxigênio é de uns 4 milésimos do oxigênio do Sol.
+[06:34] Fica perto de um 240 avos.
+[06:36] É a galáxia formando estrelas quimicamente mais primitivas já achada.
+[06:41] E todas as suas estrelas somadas têm menos de 3.300 vezes a massa do Sol.
+[06:47] É bem pequena.
+[06:48] Visbal, Roslett e Brian também num trabalho de 2025 falaram dela.
+[06:53] O que eles concluíram?
+[06:54] Eles dizem que a LAP1B é o primeiro objeto que bate com três previsões da teoria
+[06:59] para as primeiras estrelas.
+[07:00] Mas tem um grande problema nessa descoberta, não tem?
+[07:03] Tem.
+[07:04] É apenas uma candidata.
+[07:05] E existe um incômodo temporal grave.
+[07:08] Porque a luz dela é de 800 milhões de anos depois do início.
+[07:12] É um tempão.
+[07:13] Sim, os próprios Visbal e colegas escrevem que a maioria desses sistemas se formou muito antes.
+[07:19] O melhor candidato está, na verdade, muito atrasado.
+[07:22] Próxima página.
+[07:23] Bom, a gente convida a voltar para a régua do ano cósmico agora.
+[07:27] Ela ganha uma atualização visual.
+[07:29] É, as duas marcas do primeiro de janeiro continuam lá.
+[07:32] À meia-noite e à meia-noite e quatorze.
+[07:35] Mas agora existe uma faixa de três a oito de janeiro.
+[07:38] E o motivo físico de ser uma faixa e não um ponto é que ninguém sabe o dia, não é?
+[07:42] Isso.
+[07:43] Se virar esse ponto, a régua ia afirmar algo que ninguém mediu.
+[07:46] E a gente incluiu o posicionamento da candidata LAP1B na régua.
+[07:51] Ela cai em vinte e dois de janeiro.
+[07:52] Nossa, duas semanas de calendário depois do fim da faixa.
+[07:57] É, isso ilustra visualmente o atraso que a gente acabou de discutir.
+[08:01] Na tela há dois botões.
+[08:03] Um que mostra o ano inteiro e outro que mostra só janeiro.
+[08:08] O cursor mostra data, quantos anos atrás aquilo é e quantos anos depois do início.
+[08:13] Fica bem fácil de navegar.
+[08:15] A tela começa em janeiro com o cursor no começo da faixa.
+[08:18] Quem quiser explorar a régua com calma, pausa o áudio, senão a tela vira.
+[08:22] Próxima página.
+[08:23] Recapitulando o que a gente viu.
+[08:25] A régua ganhou uma faixa de três a oito de janeiro.
+[08:29] Porque não se sabe o dia em que a primeira estrela acendeu.
+[08:32] O começo da faixa vem de modelo.
+[08:34] E o fim vem da observação de que antes dos 300 milhões de anos já existia um Galáxias.
+[08:40] E ninguém nunca viu uma estrela de primeira geração.
+[08:43] É, e o melhor candidato está lá nos 800 milhões de anos.
+[08:47] Mas tem uma informação concreta de fora da tela principal para fechar a discussão de hoje.
+[08:52] O que é?
+[08:52] Numa Galáxia, a Nã muito fraca, chamada Pictor 2.
+[08:56] Que gira em volta da grande nuvem de Magaliãs, né?
+[09:00] Isso, que por sua vez gira em volta da Via Láctea.
+[09:03] E o estudo, liderado pelo Anirude Sheet de Stanford, detalha a química dela.
+[09:09] E o que tem de especial nessa química?
+[09:11] Ela tem menos de um 40 milésimo do ferro do sol e muito carbono para tão pouco ferro.
+[09:17] Interessante, mas vale reforçar, essa estrela não é das primeiras.
+[09:21] Exatamente, para não ter confusão.
+[09:23] Ela é da segunda geração.
+[09:25] Mas a química que vemos nela é exatamente o material que as primeiras estrelas deixaram para trás.
+[09:30] É como se fosse a impressão digital delas no gás?
+[09:33] Perfeito. O nosso ponto de parada cronológico do mergulho profundo de hoje é a faixa que termina em 8 de janeiro.
+[09:40] E em 8 de janeiro já existe Galáxia.
+[09:43] O próximo mergulho profundo vai explorar a Galáxia mais distante já confirmada
+[09:48] e a história de um recorde que caiu duas vezes em dois anos.

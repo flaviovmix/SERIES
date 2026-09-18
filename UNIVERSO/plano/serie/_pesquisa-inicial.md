@@ -187,7 +187,7 @@ Nada abaixo entra no áudio.
 - NÃO dizer que o Big Bang foi uma explosão num ponto do espaço.
 - NÃO dizer que o Planck mediu "380 mil anos". Ele mediu z\* = 1089,92 ± 0,25, e os anos são tradução pelo modelo.
 - NÃO dizer que o James Webb viu as primeiras estrelas: nenhuma estrela de população III foi observada.
-- NÃO dizer que a galáxia mais distante é a JADES-GS-z14-0: desde maio de 2025 é a MoM-z14. E NÃO dizer que esse recorde é definitivo, porque caiu duas vezes em dois anos.
+- NÃO dizer que a galáxia mais distante é a JADES-GS-z14-0: desde junho de 2025 é a MoM-z14 (a NASA diz junho, na página do Webb atualizada em 16/07/2026; o artigo apareceu em maio). E NÃO dizer que esse recorde é definitivo, porque caiu duas vezes em dois anos.
 - NÃO dar uma data única para a fusão com a Gaia-Enceladus: há 10, há 8 a 11 e há 11 bilhões, em três artigos diferentes. E NÃO dizer que foi a primeira fusão grande: há evidência de uma 1,8 bilhão de anos anterior.
 - NÃO dizer que a Via Láctea vai colidir com Andrômeda em 4,5 bilhões de anos. Desde 02/06/2025 são **50 e 50 em 10 bilhões de anos**, com cerca de 2% de chance de colisão frontal em 4 a 5 bilhões. E NÃO dizer que "está provado que não vai colidir": 50 e 50 não é negativa.
 

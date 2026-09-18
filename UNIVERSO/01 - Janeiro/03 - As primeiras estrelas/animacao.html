@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As primeiras estrelas — Universo 1.03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 1.03 da serie UNIVERSO. Nasceu do _molde-animacao.html.
+     As 8 telas seguem a _planta.md e o _telas.md, que saiu do audio: o audio manda, a
+     pagina serve. O que e deste episodio: a regua do ano cosmico com a primeira faixa
+     (regua.css/regua.js, os mesmos arquivos do 1.02; as marcas vem do bloco JSON da
+     tela 7), carregada por ultimo. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="regua.css">
+</head>
+<body>
+
+<header class="topo"></header>
+
+<main>
+
+  <!-- 1 (00:00) capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">universo · janeiro · episódio 1.03</div>
+      <h1 class="reveal">As primeiras estrelas</h1>
+      <p class="lede reveal">Depois da primeira luz, o universo ficou escuro. As estrelas que acabaram com esse escuro ninguém nunca viu, e a régua ganha a primeira faixa: de 3 a 8 de janeiro.</p>
+      <div class="capa-como reveal">
+        <p><b>No episódio anterior:</b> a primeira luz, às 00:14 do 1º de janeiro.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/tela-01.webp" alt="Uma estrela muito brilhante e azulada sozinha no meio de uma nuvem escura de gás, abrindo uma bolha iluminada em volta dela">
+      <figcaption>ilustração · uma estrela gigante sozinha no gás escuro</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 (01:19) a ficha: o instante que ninguem sabe e o telescopio -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a ficha do instante</div>
+      <h2 class="reveal">Quando a primeira acendeu</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">a data</div><div class="texto"><b>Ninguém sabe.</b> Depois da primeira luz e antes das galáxias mais velhas, com menos de 300 milhões de anos (NASA, 2026).</div></div>
+        <div class="item reveal"><div class="rotulo">onde a faixa começa</div><div class="texto">Em z perto de 30 (Glover e Klessen, 2025): uns <b>100 milhões de anos</b>, pelo modelo. Na régua, de <b>3 a 8 de janeiro</b>.</div></div>
+        <div class="item reveal"><div class="rotulo">o telescópio</div><div class="texto"><b>James Webb</b>, da NASA, ESA e CSA: lançado em 25/12/2021 num Ariane 5; no L2, a 1,5 milhão de km, desde 24/01/2022. Enxerga infravermelho.</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O espelho principal do James Webb pela metade, sendo montado no Centro Goddard da NASA, em dezembro de 2015 · foto: Chris Gunn, NASA, domínio público">
+        <span class="selo">🔍 ampliar</span>
+        <img src="img/tela-02.webp" alt="Vista de cima de uma sala limpa: no meio, o espelho do telescópio James Webb com metade dos segmentos hexagonais montados, cercado de grades amarelas">
+        <figcaption>o espelho do Webb sendo montado, 2015 · foto: Chris Gunn, NASA, domínio público</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 (02:57) a idade das trevas -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">NASA</div>
+      <h2 class="reveal">A idade das trevas</h2>
+      <p class="lede reveal">Depois da primeira luz, o universo ficou opaco de novo pros comprimentos de onda curtos: os átomos de hidrogênio absorviam essa luz.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">quanto durou</div><div class="texto">A NASA fala em <b>200 milhões de anos</b> de escuro. É número de modelo, e cabe dentro da faixa.</div></div>
+        <div class="item"><div class="rotulo">como acabou</div><div class="texto">A luz ultravioleta das primeiras estrelas quebrou o hidrogênio neutro: começo da <b>reionização</b>.</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A história do universo desenhada como um sino que se abre: a primeira luz à esquerda, o trecho escuro logo depois, e as estrelas e galáxias acendendo pra direita · ilustração: NASA/WMAP Science Team, domínio público">
+      <img src="img/tela-03.webp" alt="Um funil de grade que se alarga da esquerda pra direita: na boca estreita, um mapa manchado; logo depois, uma faixa escura; e depois pontos de luz e galáxias que vão enchendo o funil">
+      <figcaption>ilustração · a história do universo, com a faixa escura logo depois da primeira luz · NASA/WMAP</figcaption>
+    </figure>
+  </section>
+
+  <!-- 4 (04:00) o que a teoria espera delas -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Glover e Klessen, 2025 · NOIRLab, 2026</div>
+      <h2 class="reveal">O que a teoria espera delas</h2>
+      <p class="lede reveal">Nascidas de um gás que só tinha <b>hidrogênio e hélio</b>, em aglomerados pequenos. Dentro delas saíram os primeiros elementos mais pesados, como <b>carbono e ferro</b>, espalhados quando elas explodiram.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">o que não se sabe</div><div class="texto">A massa delas, onde exatamente nasciam e o efeito que tinham em volta continuam <b>muito incertos</b> (Venditti e mais 28 colegas, 2026).</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="Concepção artística de estrelas de população III uns 100 milhões de anos depois do início: ninguém viu nenhuma, isto é desenho · imagem: NOIRLab/NSF/AURA/J. da Silva/Spaceengine, CC BY 4.0">
+      <img src="img/tela-04.webp" alt="Desenho de uma estrela muito brilhante no centro, envolta num anel de gás iluminado, sobre um céu cheio de estrelas">
+      <figcaption>concepção artística · ninguém viu nenhuma · NOIRLab/NSF/AURA/J. da Silva/Spaceengine, CC BY 4.0</figcaption>
+    </figure>
+  </section>
+
+  <!-- 5 (04:59) por que ninguem viu -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Venditti e colegas, 2026 · NASA</div>
+      <h2 class="reveal">Por que ninguém viu</h2>
+      <p class="lede reveal">Viviam pouco, eram fracas e estão longe demais: a luz delas chega <b>esticada até o infravermelho</b>. É por isso que o James Webb foi feito pra enxergar infravermelho.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">antes do Webb</div><div class="texto">O Hubble enxergou até uns <b>500 milhões de anos</b> depois do início.</div></div>
+        <div class="item"><div class="rotulo">a aposta</div><div class="texto">Ver pelo menos algumas <b>explosões</b> delas, as supernovas, na próxima década (Glover e Klessen).</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="O primeiro campo profundo do James Webb (2022), em volta do aglomerado SMACS 0723 · imagem: NASA, ESA, CSA e STScI, domínio público">
+      <img src="img/tela-05.webp" alt="Um céu escuro cheio de galáxias de várias cores, algumas esticadas em arcos, e poucas estrelas com pontas de luz">
+      <figcaption>imagem real · o primeiro campo profundo do Webb · NASA, ESA, CSA e STScI</figcaption>
+    </figure>
+  </section>
+
+  <!-- 6 (05:46) o melhor candidato -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Nakajima e colegas · Visbal, Hazlett e Bryan, 2025</div>
+      <h2 class="reveal">O melhor candidato chegou atrasado</h2>
+      <p class="lede reveal">A <b>LAP1-B</b>, uma galáxia muito fraca vista pelo Webb, com a luz ampliada pelo aglomerado MACS J0416: oxigênio de uns <b>1/240 do Sol</b>, a quimicamente mais primitiva já achada.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">de quando é a luz</div><div class="texto">z = 6,625: <b>800 milhões de anos</b> depois do início, segundo os autores.</div></div>
+        <div class="item"><div class="rotulo">o que ela é</div><div class="texto"><b>Candidata</b>: o primeiro objeto que bate com três previsões da teoria. E a maioria dos sistemas assim nasceu muito antes.</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="O aglomerado de galáxias MACS J0416, em luz visível do Hubble e infravermelho do Webb: é a lente que ampliou a LAP1-B · imagem: NASA, ESA, CSA, STScI, J. Diego, J. D'Silva, A. Koekemoer, J. Summers, R. Windhorst, H. Yan, domínio público">
+      <img src="img/tela-06.webp" alt="Um aglomerado de galáxias douradas no centro, cercado de galáxias menores azuis e vermelhas, algumas deformadas em arcos finos">
+      <figcaption>imagem real · o aglomerado MACS J0416, a lente · NASA, ESA, CSA, STScI</figcaption>
+    </figure>
+  </section>
+
+  <!-- 7 (07:22) a regua com a primeira faixa, interativa -->
+  <section class="step" data-imagem="desenho">
+    <div class="kicker reveal">mexa enquanto ouve · pause o áudio se quiser explorar</div>
+    <h2 class="reveal">A régua ganha uma faixa</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legRegua">Só janeiro: a faixa das primeiras estrelas, de 3 a 8, e a luz da LAP1-B, em 22.</div>
+      <div class="painel__miolo" id="mioloRegua"></div>
+      <div class="painel__total">
+        <span class="num" id="totalRegua">3 de janeiro</span>
+        <span class="meta">onde o cursor está</span>
+      </div>
+      <!-- o que e deste episodio na regua: as marcas (em anos depois do inicio), os
+           trechos da lupa e onde a tela comeca. O regua.js e o mesmo em todo episodio -->
+      <script type="application/json" id="configRegua">
+        {
+          "marcas": [
+            { "anosDepois": 0, "nome": "00:00", "nivel": 0 },
+            { "anosDepois": 380000, "nome": "00:14", "nivel": 1 },
+            { "anosDepois": 100000000, "anosDepoisAte": 300000000, "nome": "3 a 8 · primeiras estrelas", "nivel": 2 },
+            { "anosDepois": 800000000, "nome": "22 · LAP1-B", "nivel": 0 }
+          ],
+          "trechos": {
+            "ano": { "legenda": "O ano inteiro: janeiro é um fiapo na ponta esquerda." },
+            "janeiro": { "legenda": "Só janeiro: a faixa das primeiras estrelas, de 3 a 8, e a luz da LAP1-B, em 22." }
+          },
+          "comeca": { "trecho": "janeiro", "naMarca": 2 }
+        }
+      </script>
+      <div class="botoes">
+        <button class="btn-mini" data-lupa="ano">o ano inteiro</button>
+        <button class="btn-mini" data-lupa="janeiro">só janeiro</button>
+        <button class="btn-mini" id="reguaVolta">voltar ao começo da faixa</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 (08:22) fecho -->
+  <section class="step step--mundo step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">onde isso aparece fora da tela</div>
+      <h2 class="reveal">A química que elas deixaram</h2>
+      <div class="mundo">
+        <div class="item reveal">
+          <div class="nome">A estrela PicII-503</div>
+          <div class="desc">Na galáxia anã Pictor II, que gira em volta da Grande Nuvem de Magalhães. Menos de 1/40.000 do ferro do Sol (NOIRLab, março de 2026).</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">Segunda geração</div>
+          <div class="desc">Ela não é das primeiras: guarda a química que as primeiras deixaram.</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">A régua</div>
+          <div class="desc">Ganhou a primeira faixa: de 3 a 8 de janeiro, porque ninguém sabe o dia.</div>
+        </div>
+      </div>
+      <p class="lede reveal"><b>No próximo episódio:</b> em 8 de janeiro já existe galáxia. A mais distante já confirmada, e um recorde que caiu duas vezes em dois anos.</p>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A galáxia anã ultrafraca Pictor II, com alguns milhares de estrelas e mais de dez bilhões de anos · imagem: CTIO/NOIRLab/DOE/NSF/AURA, processamento T. A. Rector, M. Zamani e D. de Martin, CC BY 4.0">
+      <img src="img/tela-08.webp" alt="Um campo de estrelas de várias cores sobre o fundo escuro, com galáxias pequenas e distantes espalhadas">
+      <figcaption>imagem real · a galáxia anã Pictor II · CTIO/NOIRLab/DOE/NSF/AURA, CC BY 4.0</figcaption>
+    </figure>
+  </section>
+
+</main>
+
+<div class="tocador">
+  <audio preload="metadata" src="As estrelas que acabaram com o escuro.m4a" data-duracao="592"></audio>
+  <img class="tocador__capa" src="../../../site/img/serie-universo.webp" alt="">
+  <div class="tocador__id">
+    <div class="tocador__titulo">As estrelas que acabaram com o escuro</div>
+  </div>
+  <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="592" aria-valuenow="0">
+    <div class="tocador__cheio"></div>
+    <div class="tocador__marcas"></div>
+  </div>
+  <div class="tocador__controles">
+    <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+    <div class="tocador__transporte">
+      <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+      <button class="tocador__play" aria-label="tocar">▶</button>
+      <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">9:52</span></div>
+  </div>
+</div>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
+</footer>
+
+<script src="../../../site/js/menu.js"></script>
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="regua.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

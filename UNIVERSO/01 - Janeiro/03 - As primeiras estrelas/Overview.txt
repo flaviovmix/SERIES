@@ -1,0 +1,18 @@
+UNIVERSO - JANEIRO - AS PRIMEIRAS ESTRELAS - CONTEXTO
+======================================================
+Documento curto de contexto para uso com NotebookLM.
+
+Universo e uma serie de audio sobre como a gente sabe o que sabe do universo. Quase tudo chegou aqui como luz. O formato e o Calendario Cosmico, recurso didatico criado por Carl Sagan em 1977: a idade inteira do universo espremida num ano de doze meses. A regua desta serie e de 13,797 bilhoes de anos (Planck 2018): um dia vale 37,8 milhoes de anos. Toda marca do calendario vem com o como e que alguem sabe aquela data. E quando ninguem sabe a data, a regua mostra uma faixa, e nao um ponto.
+
+Este e o terceiro episodio da primeira etapa, Janeiro. Ele poe a primeira faixa na regua: de 3 a 8 de janeiro, onde as primeiras estrelas podem ter acendido. O ouvinte sai sabendo por que e faixa (a NASA diz que nao se sabe quando; o modelo poe o comeco perto de 100 milhoes de anos, e antes de 300 milhoes ja havia galaxias), o que foi a idade das trevas e como acabou, o que a teoria espera dessas estrelas, por que ninguem nunca viu nenhuma, e qual e o melhor candidato (a LAP1-B, de 800 milhoes de anos depois do inicio, candidata e atrasada).
+
+Os episodios da etapa Janeiro:
+1. O primeiro instante e o que ninguem sabe.
+2. A primeira luz.
+3. As primeiras estrelas (este).
+4. A galaxia mais distante.
+5. A Via Lactea comeca.
+
+Por que importa: foram as primeiras estrelas que acabaram com o escuro e fizeram os primeiros elementos mais pesados que o hidrogenio e o helio.
+
+Use este contexto apenas como apoio.

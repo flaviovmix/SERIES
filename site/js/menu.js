@@ -257,7 +257,8 @@
               ] },
             { num: '02', nome: 'A primeira luz',
               href: '../UNIVERSO/01 - Janeiro/02 - A primeira luz/animacao.html' },
-            { num: '03', nome: 'As primeiras estrelas' },
+            { num: '03', nome: 'As primeiras estrelas',
+              href: '../UNIVERSO/01 - Janeiro/03 - As primeiras estrelas/animacao.html' },
             { num: '04', nome: 'A galáxia mais distante' },
             { num: '05', nome: 'A Via Láctea começa' }
           ] },

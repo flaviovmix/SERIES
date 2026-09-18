@@ -1,0 +1,31 @@
+Inicie dizendo: As Primeiras Estrelas
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_As Primeiras Estrelas.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o terceiro episodio da etapa Janeiro, a primeira etapa da serie Universo. O episodio anterior pos a segunda marca da regua na meia-noite e catorze do primeiro de janeiro, a primeira luz; este poe a primeira faixa.
+
+FOCO: as primeiras estrelas, que ninguem nunca viu. Quando elas podem ter acendido (ninguem sabe o dia: a NASA diz que foi depois da primeira luz e antes das galaxias mais velhas, e o modelo de Glover e Klessen poe o comeco em z perto de trinta), o que foi a idade das trevas e como ela acabou, o que a teoria espera delas e o que ainda nao sabe, por que ninguem viu, e o melhor candidato, a LAP1-B, cuja luz chegou ampliada por um aglomerado de galaxias e e de oitocentos milhoes de anos depois do inicio: atrasada. Na regua, a primeira faixa: de tres a oito de janeiro.
+
+NAO dizer que o James Webb viu as primeiras estrelas. NAO dizer que a LAP1-B foi confirmada: e candidata. NAO dizer que a PicII-503 e das primeiras: e da segunda geracao. NAO dar um dia exato pras primeiras estrelas. NAO nomear nenhum extra. NAO inventar data nem autor que nao estejam no roteiro. NAO traduzir a vida de uma pessoa pra escala do calendario.
+
+A pagina que acompanha o audio tem 8 telas. No fim de cada tela, menos a ultima, um apresentador diz o marcador "Proxima pagina", exatamente essas duas palavras, 7 vezes no total. O lembrete da pagina na abertura e uma fala so, de um apresentador, e o outro nao comenta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste episodio e a regua do ano cosmico.
+
+Use tambem o Overview.txt como contexto curto.
