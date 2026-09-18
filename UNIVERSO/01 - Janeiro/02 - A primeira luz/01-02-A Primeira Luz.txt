@@ -1,0 +1,31 @@
+Inicie dizendo: A Primeira Luz
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Primeira Luz.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o segundo episodio da etapa Janeiro, a primeira etapa da serie Universo. O episodio anterior pos a primeira marca da regua na meia-noite do primeiro de janeiro; este poe a segunda, catorze minutos depois.
+
+FOCO: a luz mais velha que da pra ver, o fundo cosmico de micro-ondas, no instante em que o universo ficou transparente (meia-noite e catorze do primeiro de janeiro no calendario cosmico): como ela foi achada por acaso numa antena em Holmdel (Penzias e Wilson, mil novecentos e sessenta e quatro), o que ela e (a luz que saiu a uns tres mil graus, com espectro de corpo negro medido pelo COBE), por que chega como micro-ondas (o comprimento de onda esticou cerca de mil e noventa e uma vezes), e o que dela e medido (o z do Planck, com incerteza) e o que e traducao do modelo (os trezentos e oitenta mil anos, que nenhuma fonte publica com incerteza).
+
+NAO dizer que a descoberta provou o Big Bang, NAO chamar o Big Bang de explosao, NAO dizer que o Planck mediu trezentos e oitenta mil anos. NAO nomear nenhum extra. NAO inventar data nem autor que nao estejam no roteiro. NAO traduzir a vida de uma pessoa pra escala do calendario.
+
+A pagina que acompanha o audio tem 8 telas. No fim de cada tela, menos a ultima, um apresentador diz o marcador "Proxima pagina", exatamente essas duas palavras, 7 vezes no total. O lembrete da pagina na abertura e uma fala so, de um apresentador, e o outro nao comenta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste episodio e a regua do ano cosmico.
+
+Use tambem o Overview.txt como contexto curto.

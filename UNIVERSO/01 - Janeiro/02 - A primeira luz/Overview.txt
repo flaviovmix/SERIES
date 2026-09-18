@@ -1,0 +1,18 @@
+UNIVERSO - JANEIRO - A PRIMEIRA LUZ - CONTEXTO
+==============================================
+Documento curto de contexto para uso com NotebookLM.
+
+Universo e uma serie de audio sobre como a gente sabe o que sabe do universo. Quase tudo chegou aqui como luz. O formato e o Calendario Cosmico, recurso didatico criado por Carl Sagan em 1977: a idade inteira do universo espremida num ano de doze meses. A regua desta serie e de 13,797 bilhoes de anos (Planck 2018): um minuto vale 26.250 anos. Toda marca do calendario vem com o como e que alguem sabe aquela data.
+
+Este e o segundo episodio da primeira etapa, Janeiro. Ele poe a segunda marca na regua: primeiro de janeiro, meia-noite e catorze, o instante em que o universo ficou transparente. O ouvinte sai sabendo como essa luz foi achada (Penzias e Wilson, numa antena da Bell em Holmdel, em 1964), o que ela e (a luz que saiu a uns 3000 graus, com o espectro de corpo negro que o COBE mediu), por que chega como micro-ondas (esticou cerca de 1091 vezes) e a diferenca entre o que se mede nela (o z do Planck, com incerteza) e o que e traducao do modelo (os cerca de 380 mil anos).
+
+Os episodios da etapa Janeiro:
+1. O primeiro instante e o que ninguem sabe.
+2. A primeira luz (este).
+3. As primeiras estrelas.
+4. A galaxia mais distante.
+5. A Via Lactea comeca.
+
+Por que importa: e a luz mais velha que da pra ver, e boa parte do que se sabe sobre o comeco foi lido nela.
+
+Use este contexto apenas como apoio.

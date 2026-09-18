@@ -1,13 +1,15 @@
 # Série: Universo
 
-**Estado (17/09/2026):** nasceu hoje. Existem o plano e a pesquisa inicial, nada mais.
+**Estado (18/09/2026, 07h):** **NO AR e LIGADA** desde o commit `25155a1` (+ `02f4d86`, um conserto do deploy): home, hub com o piloto, Janeiro, extras e o 1.01 em `series.afx.art.br`. Ele mandou "pode publicar e até ativar logo a série". A 08 foi ligada direto no `series.json` do servidor (o que o painel escreve), antes do deploy, porque o gerador recusa série da MENU sem estado.
 - **Etapa 0 fechada:** as oito perguntas de abertura respondidas por ele, com duas decisões trocadas no meio da conversa (o objeto e a divisão).
 - **Etapa 1 fechada:** `_pesquisa-inicial.md` com quatro eixos levantados em fonte primária, o que não fechou e a lista do que a série não pode dizer.
 - **Etapa 2 (este arquivo) fechada hoje**, com a régua e a divisão decididas **por delegação dele** ("eu não vou bater o olho"), marcadas como tal nas D11 e D12.
 - **No site, só local e sem commit (17/09/2026, à tarde):** o hub `site/universo.html` com os 6 cards de etapa e as artes, a série 08 na `MENU` do `menu.js`, no `cards.js` e no `series.json` (desligada, D7), o ícone `planeta` na home e a linha no `PASTAS_DO_SITE` do `deploy/publicar.sh`. A página da etapa 01, `site/etapas/universo-01.html`, com os 5 cards de episódio e a arte de cada um (originais e prompts em `UNIVERSO/_arquivos/capa-episodios/etapa-01/`). O card dos Extras fecha a grade do hub, logo depois da etapa 06, e leva pra `site/extras/universo.html`, com os 5 candidatos da seção `_EXTRAS` em cards (artes em `UNIVERSO/_arquivos/capa-extras/`). O hub e a página de Janeiro têm o player do `00` marcado PROVISORIO no HTML: o áudio não existe, e o bloco não sobe mudo. Ainda sem pasta de episódio, e as etapas 02 a 06 sem página.
 - **O piloto existe (18/09/2026):** `00 - A serie inteira/` com pesquisa, trio aprovado pelo verificador (duas rodadas) e o áudio "A história do universo em um ano" (14:10), ligado no player do hub. Falta ele ouvir. ⚠️ Duas ressalvas confirmadas na reescuta (`_telas.md` do piloto): "Sawala em 2020" (é 2025) aos 05:52 e a faixa da Lua "até 4,11 bilhões" (é 4,51) aos 07:10. Regravar ou deixar é decisão dele.
 - **O 1.01 está pronto, só local (18/09/2026):** `01 - Janeiro/01 - O primeiro instante e o que ninguem sabe/` com `_pesquisa.md`, `_filmes-e-documentarios.md`, `_planta.md` (7 telas), trio aprovado pelo verificador (duas rodadas), o áudio **"O Big Bang não foi uma explosão" (12:31)**, `_telas.md` com os cortes, `animacao.html` com o widget da régua (`regua.css`/`regua.js`), 3 fotos reais do Commons, `episodio.js` com os 6 marcadores, o episódio com `href` e `filmes` na `MENU` e os cards regerados. QA da página (7 telas, imagens, estouro, telefone) e do player limpos. ⚠️ O áudio disse o marcador 6 vezes em vez de 7 (emendou a ficha com o "não foi explosão"): o corte da tela 3 foi feito à mão em 05:04, pelo instante em que o assunto vira (registrado no `_telas.md`). ⚠️ Uma ressalva confirmada na reescuta: aos 07:57 o áudio diz "13 bilhões, 697 milhões" (é 797; o próprio áudio diz certo na abertura e no fecho). Regravar ou deixar é decisão dele. ⚠️ O Flow bateu no limite de uso e 3 ilustrações planejadas (telas 3, 6 e 7) ficaram no `ilustracoes.md`; entraram no lugar o campo profundo do Hubble (real) e duas artes já existentes da série. Falta ele ouvir com a página aberta.
-- Os outros 26 episódios não têm pesquisa própria, planta, trio nem áudio.
+- **O 1.02 está pronto (18/09/2026, de manhã):** `01 - Janeiro/02 - A primeira luz/` com pesquisa, planta de 8 telas, trio aprovado pelo verificador (duas rodadas), o áudio **"A luz mais antiga do universo" (12:33)**, `_telas.md` e a animação com dois widgets: o esticão da luz (`esticao.js`, a luz saindo a 2973 K e chegando a 2,725 K, 1091 vezes mais esticada) e a régua com lupa (`regua.js`, agora movida só por dados: as marcas e os trechos vêm de um bloco JSON na página, e o arquivo é o mesmo em todo episódio). Todas as imagens são reais (Commons), menos a capa; o Flow nem entrou. QA da página limpo. ⚠️ Cinco ressalvas confirmadas na reescuta (`_telas.md`): "2,75 graus" aos 06:42 (é 2,725); "o comitê nunca chamou o Big Bang de explosão" aos 04:40 (o comunicado de 1978 chama); "neblina" aos 05:15 (analogia proibida); "1091 vezes, que é o z" aos 07:05 (é 1 + z); e um fecho inventado. Regravar ou deixar é decisão dele.
+- **Conversor de desvio pra anos:** `_arquivos/scripts/idade-no-desvio.py` faz a conta do ΛCDM com os parâmetros do Planck 2018 (dá 13,79 bilhões pra hoje e 372 mil anos pro z\* da primeira luz). É tradução pelo modelo, e a pesquisa de cada episódio diz isso quando usa.
+- Os outros 25 episódios não têm pesquisa própria, planta, trio nem áudio.
 
 **Formato:** episódios NotebookLM via `/criar-podcast` (trio por episódio), cada um com a sua `animacao.html` no molde das outras séries e pelo menos uma tela que se mexe com dado que não muda sozinho. Cada etapa tem o episódio `00` só de áudio, e o `00` da série inteira é o piloto: o ano cósmico de ponta a ponta.
 **Fonte:** pesquisa pública com fonte primária, consolidada em [`_pesquisa-inicial.md`](_pesquisa-inicial.md). Cada episódio ainda faz o seu `_pesquisa.md`.
@@ -61,7 +63,7 @@ A pergunta única: **se todo o tempo do universo coubesse num ano, o que acontec
 | 6 | **31 de dezembro** | o último dia, e a história escrita nos últimos 12 segundos | 5 | 🔴 |
 
 Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
-**Placar:** 0 publicados · 27 pela frente (fora os 7 episódios `00` e os extras).
+**Placar:** 2 publicados · 25 pela frente (fora os 7 episódios `00` e os extras; o `00` da série está no ar).
 
 ---
 
@@ -71,8 +73,8 @@ Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
 
 | Pasta | Episódio | O que cobre | Status |
 |---|---|---|---|
-| `01` | **O primeiro instante e o que ninguém sabe** | 1º de janeiro, 00:00. O que o Planck data de verdade ("o início do big bang quente") e o que ele não data. Por que não foi uma explosão num ponto. A inflação, e a frase da NASA de que ninguém sabe o que veio antes dela | 🟠 |
-| `02` | **A primeira luz** | 1º de janeiro, 00:14. A recombinação e o fundo cósmico de micro-ondas: a luz mais velha que dá pra ver. O que o Planck mede (z\* = 1089,92 ± 0,25) e por que "380 mil anos" já é tradução | 🔴 |
+| `01` | **O primeiro instante e o que ninguém sabe** | 1º de janeiro, 00:00. O que o Planck data de verdade ("o início do big bang quente") e o que ele não data. Por que não foi uma explosão num ponto. A inflação, e a frase da NASA de que ninguém sabe o que veio antes dela | 🟢 |
+| `02` | **A primeira luz** | 1º de janeiro, 00:14. A recombinação e o fundo cósmico de micro-ondas: a luz mais velha que dá pra ver. O que o Planck mede (z\* = 1089,92 ± 0,25) e por que "380 mil anos" já é tradução | 🟢 |
 | `03` | **As primeiras estrelas** | 3 de janeiro. A idade das trevas, a população III, e o incômodo bonito: **nenhuma delas foi observada**. O melhor candidato está em z = 6,6, ou seja 800 milhões de anos tarde demais | 🔴 |
 | `04` | **A galáxia mais distante** | 8 de janeiro. MoM-z14, o recorde que já caiu duas vezes em dois anos, e o que o telescópio mede de verdade (desvio para o vermelho, não idade) | 🔴 |
 | `05` | **A Via Láctea começa** | 22 de janeiro. O disco espesso começando 800 milhões de anos depois do Big Bang, medido em 250 mil estrelas. Como se lê a idade de uma estrela | 🔴 |
@@ -165,6 +167,7 @@ Candidatos levantados na pesquisa. Cada um desce num assunto que travaria o epis
 | `03` | **Como se data uma pedra** | decaimento radioativo, meia-vida, e por que um zircão de 4,4 bilhões de anos é confiável | etapa 3, ep 01 | 🔴 |
 | `04` | **A carta do tempo** | a carta da IUGS/ICS: quem decide o nome e a data de cada período, e por que a base do Cambriano mudou de 541 para 538,8 | etapa 5, ep 01 | 🔴 |
 | `05` | **Chicxulub** | a cratera: como foi achada, o que ela tem dentro, e o que os testemunhos de perfuração mostraram | etapa 5, ep 06 | 🔴 |
+| `06` | **O que é uma singularidade** | pedido dele em 18/09/2026, depois do 1.01: o que a palavra quer dizer na física, por que o Planck data o início da fase quente e para ali, e por que "instante zero" não é o que a teoria descreve. Candidato 102 da lista geral | etapa 1, ep 01 | 🔴 |
 
 ## Ouvir antes, das outras séries
 

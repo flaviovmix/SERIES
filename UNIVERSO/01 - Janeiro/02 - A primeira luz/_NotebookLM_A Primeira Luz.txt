@@ -1,0 +1,135 @@
+Inicie dizendo: A Primeira Luz
+---------------
+
+Este e o segundo episodio da etapa JANEIRO, a primeira etapa da serie Universo. O episodio anterior, O primeiro instante e o que ninguem sabe, pos a primeira marca na regua do ano cosmico, na meia-noite do primeiro de janeiro, e terminou dizendo que ninguem sabe o que veio antes. Este episodio pega a primeira coisa que da pra ver de verdade: a luz mais velha que existe.
+
+ESTE EPISODIO COBRE UM INSTANTE SO: primeiro de janeiro, meia-noite e catorze minutos, no calendario cosmico, o instante em que o universo ficou transparente. Dizer isso em voz alta na abertura, e no encerramento dizer onde o episodio parou, pro proximo pegar dali.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 8 telas (animacao.html) que VIRA SOZINHA enquanto o audio toca, e que leva o audio junto quando alguem pula a tela na mao. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores diz claramente o marcador: "Proxima pagina". NAO e instrucao pro ouvinte: e o marcador que corta o audio em telas. Dizer exatamente essas duas palavras, e nao "aperte", nem "vamos pra proxima", nem "proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O lembrete e UMA FALA SO, de UM apresentador, curto e padronizado, e diz so isto, nesta ordem: que o audio acompanha a pagina e que a pagina vira sozinha; que pular a tela na mao leva o audio junto; que quem quiser parar pra mexer numa tela pause o audio, senao ele vira a tela sem a pessoa; e que embaixo da tela ficam as guias de extras e de filmes, que podem ganhar coisa nova com o tempo. Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se voce pular uma tela, o audio pula junto. Se quiser parar pra mexer numa tela, pausa o audio, senao ele vira a tela sem voce. Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova com o tempo." Um apresentador, e acabou. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz pergunta sobre isso.
+  NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina, NAO chamar a animacao de legal, bacana ou interativa, NAO dizer o nome de nenhum extra nem do que ele trata, e NAO dizer o marcador como exemplo.
+- Nas duas telas interativas (a tela 5 e a tela 7), avisar o que tem na tela pra mexer e repetir a frase da pausa: quem quiser mexer com calma pausa o audio, senao a tela vira.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+A TRILHA CONTA A HISTORIA; O MECANISMO POR DENTRO E EXTRA. O que aprofunda sem ser necessario pra seguir (a historia inteira da antena e do telefonema com Princeton, o que e um corpo negro por dentro, os tres satelites um por um, como as manchas viram galaxias) NAO cabe aqui. O audio NAO chama nenhum extra pelo nome: so o lembrete da abertura diz que as guias existem.
+
+FILMES. Este episodio nao cita nenhum filme.
+
+REGRA DURA DAS TELAS. Este episodio tem 8 telas. O audio TEM que dizer o marcador "Proxima pagina" exatamente 7 vezes, uma no fim de cada tela, na ordem, e nenhuma no fim da ultima. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem o marcador. Quem esta ouvindo com a pagina aberta so vira a tela quando o marcador acontece: se faltar um, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+FICHA HUMANA. Penzias e Wilson ganham a ficha curta na tela 2, com o que esta no roteiro e nada alem: onde nasceram, em que ano, onde trabalhavam, e, do Penzias, o ano da morte. Sobre a morte, o ANO E SO ISSO: NAO dizer de que morreu, NAO dizer o motivo, NAO dizer se foi doenca, acidente ou idade, e NAO dizer que nao se sabe a causa. Do Wilson, NAO dizer "hoje" nem "atualmente", e NAO dizer se esta vivo ou morto. NAO inventar familia, pai, infancia, escola nem frase de nenhum dos dois.
+
+NUMERO COM FONTE. Toda data e todo numero saem com quem publicou e o ano, QUANDO O ROTEIRO TROUXER O NOME. Se o roteiro nao trouxer o nome, dizer so o dado, e NUNCA inventar um autor. Quando o roteiro disser que um numero e medido, o audio diz "medido"; quando disser que e traduzido pelo modelo, o audio diz isso. NAO INVENTAR NENHUMA DATA ALEM DAS QUE ESTAO NESTE ROTEIRO.
+
+NAO DIZER QUE PROVOU. A descoberta deu apoio forte a ideia do Big Bang. NAO dizer que ela "provou" o Big Bang, e NAO chamar o Big Bang de explosao.
+
+TRADUCAO DE ESCALA SO DE MARCA COLETIVA. NAO dizer quanto tempo a vida de uma pessoa duraria na regua.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A REGUA DO ANO COSMICO: a idade do universo espremida num ano de doze meses, com um minuto valendo vinte e seis mil duzentos e cinquenta anos. E o objeto da serie inteira, e a unica analogia deste episodio.
+Fora essa, sem analogias. Explicar direto. Em especial, NAO usar neblina, nevoa, cortina, vidro embacado, sopa ou qualquer imagem pra explicar por que o universo era opaco, e NAO usar balao, elastico ou massa de pao pra explicar a luz esticando: dizer direto que o comprimento de onda da luz aumentou junto com o universo.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A PRIMEIRA LUZ)
+
+Retomar em uma frase: o episodio anterior pos a primeira marca na regua, na meia-noite do primeiro de janeiro, e terminou no que ninguem sabe.
+
+Dizer o que este episodio faz: poe a segunda marca na regua, catorze minutos depois da meia-noite, no instante em que o universo ficou transparente e a luz passou a correr solta. E essa luz ainda esta chegando: e a mais velha que da pra ver. O episodio conta como ela foi achada, o que ela e, e o que dela e medido e o que e traduzido.
+
+O lembrete da pagina, como manda a regra da conducao la em cima: UMA fala, de UM apresentador, e o outro nao comenta.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 2 (A FICHA: O INSTANTE E OS DOIS DA ANTENA)
+
+A ficha do instante. O que se data: o momento em que a luz passou a andar livre pelo universo. O que se mede: um numero chamado z, que diz quanto essa luz esticou no caminho ate aqui. A colaboracao Planck mediu esse z em mil e oitenta e nove virgula noventa e dois, com incerteza de zero virgula vinte e cinco, em dois mil e dezoito. A data em anos: cerca de trezentos e oitenta mil anos depois do inicio, mas esse numero ja e traducao, feita por um modelo. No calendario, meia-noite e catorze do primeiro de janeiro. A motivacao: por que alguem procuraria essa luz? Porque, se ela existe, e a imagem mais antiga que a luz consegue trazer.
+
+As fichas humanas, curtas. Arno Penzias nasceu em Munique, na Alemanha, em mil novecentos e trinta e tres; Munique tem o mesmo nome ate hoje. Robert Wilson nasceu em Houston, no Texas, em mil novecentos e trinta e seis. Os dois trabalhavam nos Laboratorios Bell, em Holmdel, Nova Jersey, nos Estados Unidos. Penzias morreu em dois mil e vinte e quatro.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 3 (O CHIADO QUE NAO SAIA)
+
+Em mil novecentos e sessenta e quatro, Penzias e Wilson estavam usando uma antena em forma de corneta, em Holmdel. Ela tinha sido feita pra captar ondas de radio muito fracas, refletidas nos satelites-balao Echo e, depois, no Telstar. Como o sinal era fraco demais, era preciso tirar qualquer interferencia.
+
+E sobrou um chiado que nao saia. Vinha de todas as partes do ceu, de dia e de noite, num comprimento de onda de sete centimetros, e com a mesma intensidade em todas as direcoes. Eles testaram o equipamento de todo jeito, e chegaram a tirar uns pombos que tinham feito ninho dentro da antena, junto com a sujeira deles. O chiado continuou. Por testes cuidadosos, mostraram que ele vinha de fora.
+
+Os dois nao propuseram de onde vinha aquilo. So que, ali perto, na Universidade de Princeton, Robert Dicke, Jim Peebles e David Wilkinson estavam procurando justamente uma radiacao que teria sobrado do comeco do universo, e o que a antena achou batia com o que eles esperavam. A ideia ja vinha dos anos mil novecentos e quarenta, de uma teoria do fisico americano Gamow e colegas sobre a formacao dos elementos, e tinha ficado esquecida, porque se achava que um sinal tao fraco seria impossivel de captar.
+
+Penzias e Wilson dividiram metade do Nobel de Fisica de mil novecentos e setenta e oito, pela descoberta da radiacao cosmica de fundo em micro-ondas. E o comunicado do premio tomava cuidado: dizia que era razoavel suspeitar que aquilo fosse a radiacao que sobrou do comeco, e que outras interpretacoes eram possiveis. Foi um apoio forte a ideia do Big Bang, nao uma prova fechada.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 4 (O QUE E ESSA LUZ)
+
+Antes desse instante, a luz nao conseguia andar livre pelo universo. Segundo a Agencia Espacial Europeia, quando o universo esfriou abaixo de dez mil graus acima do zero absoluto, os atomos comecaram a se formar, e quando ele chegou a uns tres mil graus, a luz passou a viajar livre. E essa luz que ainda chega, de todas as direcoes.
+
+Como e que alguem sabe que ela e a sobra de um universo quente? Pelo formato dela. Em dezoito de novembro de mil novecentos e oitenta e nove, a NASA lancou o satelite COBE. Com nove minutos de observacao, ele registrou o espectro dessa luz, que e o jeito como ela se distribui pelos comprimentos de onda, e o espectro era um corpo negro perfeito: a forma que so depende da temperatura de quem emitiu. Quando a curva foi mostrada num congresso de astronomia, o publico aplaudiu de pe.
+
+Mais de mil pessoas trabalharam no COBE. John Mather coordenou o projeto e respondeu pelo experimento do corpo negro; George Smoot respondeu pela medida das pequenas variacoes de temperatura. Os dois ganharam o Nobel de Fisica de dois mil e seis.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 5 (O ESTICAO DA LUZ, TELA INTERATIVA)
+
+A luz saiu a uns tres mil graus. Hoje ela chega a dois virgula setecentos e vinte e cinco graus acima do zero absoluto, medido com incerteza de pouco mais de meio milesimo de grau, segundo Fixsen, em dois mil e nove. O que aconteceu no meio: o universo cresceu, e o comprimento de onda da luz cresceu junto. A razao entre o comprimento de onda de agora e o de antes diz quanto o universo cresceu desde entao. Com o z do Planck, a luz esticou cerca de mil e noventa e uma vezes.
+
+E por isso que ela chega como micro-ondas. O comprimento de onda mais forte dela era de cerca de um milesimo de milimetro, e hoje e de cerca de um milimetro.
+
+Avisar: tem um cursor na tela pra arrastar. Ele leva a luz da hora em que ela saiu ate hoje, e a tela mostra quantas vezes ela ja esticou, a temperatura, e o comprimento de onda mais forte. A tela comeca na hora em que a luz saiu, sem ter esticado nada, a uns tres mil graus. E repetir a frase da pausa: quem quiser arrastar com calma pausa o audio, senao a tela vira.
+
+O ponto da tela: o que chega aqui e luz esticada e fria.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 6 (O QUE O PLANCK MEDE E O QUE E TRADUCAO)
+
+O que a luz traz e o z, mil e oitenta e nove virgula noventa e dois, mais ou menos zero virgula vinte e cinco. Os trezentos e oitenta mil anos nao sao medidos: saem quando se passa o z por um modelo do universo, e nenhuma fonte publica incerteza nesse numero. Tanto que a propria Agencia Espacial Europeia escreve trezentos e oitenta mil anos numa pagina, e trezentos e setenta mil na legenda do mapa do Planck. No calendario os dois dao meia-noite e catorze, mas a serie diz sempre o que e medida e o que e traducao.
+
+E o mapa na tela tem manchas. Sao diferencas de temperatura de um centesimo de milesimo de grau, de uma direcao do ceu pra outra. O time de Smoot publicou as primeiras, feitas pelo COBE, em mil novecentos e noventa e dois. Essas pequenas diferencas mostram onde a materia comecou a se juntar, e sem isso nao teria galaxia nem estrela.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 7 (A REGUA DO ANO COSMICO, TELA INTERATIVA)
+
+A regua do ano cosmico volta, agora com duas marcas: a meia-noite do primeiro de janeiro, do episodio anterior, e a meia-noite e catorze, deste. Na regua do ano inteiro, as duas viram um traco so: catorze minutos num ano de doze meses nao aparecem.
+
+Avisar: tem dois botoes na tela que dao zoom, um no primeiro de janeiro inteiro e outro na primeira hora dele, e e ai que as duas marcas se separam. O cursor continua mostrando a data do calendario e quantos anos atras aquilo e. A tela comeca na regua do ano inteiro, com o cursor na marca nova. E repetir a frase da pausa: quem quiser explorar a regua com calma pausa o audio, senao a tela vira.
+
+A conta: um minuto do calendario vale vinte e seis mil duzentos e cinquenta anos, entao os trezentos e oitenta mil anos dao catorze minutos e pouco.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 8 (ENCERRAMENTO)
+
+Recapitular: a regua ganhou a segunda marca, meia-noite e catorze do primeiro de janeiro, o instante em que o universo ficou transparente. Quem achou a luz foram dois radioastronomos tentando tirar um chiado de uma antena, em mil novecentos e sessenta e quatro. O que se mede nela e o quanto ela esticou e a temperatura; os anos sao traducao do modelo.
+
+Onde isso aparece fora da tela: a Agencia Espacial Europeia escreve que essa luz e responsavel por uma pequena fracao do chiado das TVs analogicas, aquele que aparecia num canal fora do ar. Um pedaco daquele chiado e a luz mais velha que existe pra ver.
+
+Dizer onde o episodio parou: na meia-noite e catorze do primeiro de janeiro.
+
+Gancho: depois dessa luz, o universo fica escuro por um bom tempo, sem nenhuma estrela acesa. As primeiras estrelas vieram depois, e ninguem nunca viu nenhuma delas. O proximo episodio e sobre elas.

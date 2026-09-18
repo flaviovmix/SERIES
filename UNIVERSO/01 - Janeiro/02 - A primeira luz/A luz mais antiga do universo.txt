@@ -1,0 +1,7 @@
+Titulo: A luz mais antiga do universo
+Notebook: 01-02-A Primeira Luz
+
+Descricao:
+A série de áudio Universo utiliza a analogia do Calendário Cósmico de Carl Sagan para narrar a história do cosmos, comprimindo 13,8 bilhões de anos em um único ano. Os documentos descrevem o segundo episódio da etapa de Janeiro, focado no momento em que o universo se tornou transparente e a primeira luz pôde viajar livremente. Situado aos quatorze minutos do dia primeiro de janeiro, o conteúdo detalha a descoberta acidental da radiação cósmica de fundo por Penzias e Wilson em 1964. O roteiro orienta uma produção com suporte visual interativo, diferenciando rigorosamente os dados medidos, como o desvio para o vermelho, das interpretações teóricas de tempo. A narrativa explica como essa luz antiga se transformou em micro-ondas devido à expansão do espaço e destaca sua importância como o registro mais remoto da estrutura do universo. O material serve de guia técnico para os apresentadores, estabelecendo regras de linguagem simples e comandos específicos para a sincronia entre áudio e animação.
+
+Link: https://notebook.google.com/notebook/0313a0ef-c784-4153-a470-cd62aa1efbae

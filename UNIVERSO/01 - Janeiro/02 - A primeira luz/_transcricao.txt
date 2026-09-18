@@ -1,0 +1,265 @@
+# Transcricao automatica (faster-whisper small) - 12.6 min
+# Fonte: A luz mais antiga do universo.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A primeira luz.
+[00:01] É, chegou a hora.
+[00:02] Pois é. Só para a gente retomar rapidinho em uma frase que aconteceu antes,
+[00:06] a nossa exploração anterior colocou a primeira marca na régua na meia-noite do 1º de janeiro
+[00:11] e terminou naquilo que ninguém sabe.
+[00:15] Exatamente. Aquele terreno desconhecido inicial.
+[00:18] Sim. E o nosso objetivo de hoje é colocar a segunda marca na régua
+[00:23] exatos 14 minutos depois da meia-noite.
+[00:26] Aham, os famosos 14 minutos.
+[00:28] Isso. Que é o instante em que o universo ficou transparente, sabe?
+[00:33] E a luz passou a correr solta por aí.
+[00:36] E essa é a luz mais velha que dá para ver.
+[00:39] Então, a nossa exploração hoje vai detalhar como ela foi achada,
+[00:44] o que ela é de verdade, o que a gente mede nos aparelhos
+[00:48] e o que é traduzido por modelos.
+[00:50] O áudio acompanha a página que vira sozinha enquanto a gente fala.
+[00:54] Se pular uma tela, o áudio pula junto.
+[00:56] Se quiser parar para mexer numa tela, pause o áudio,
+[00:58] senão ele vira a tela sem a pessoa.
+[01:01] Embaixo da tela ficam as guias de extras e de filmes
+[01:04] e elas podem ganhar coisa nova com o tempo.
+[01:07] Próxima página.
+[01:08] Bom, para quem está acompanhando, entender essa data exige saber primeiro
+[01:12] a diferença entre o que é lido nos aparelhos
+[01:15] e o que é um cálculo de um modelo matemático.
+[01:17] Tá. E o que exatamente a gente está datando neste momento?
+[01:20] Tipo, qual é o evento?
+[01:21] Então, o momento datado é quando a luz
+[01:24] passou a andar livre pelo universo.
+[01:26] Só que o que se mede de verdade lá nos telescópios
+[01:29] é um número chamado Z.
+[01:31] A letra Z mesmo.
+[01:32] Isso, o Z minúsculo.
+[01:34] Esse Z diz o quanto a luz esticou no caminho inteiro até chegar aqui.
+[01:38] A colaboração Planck, num trabalho de 2018,
+[01:41] mediu esse Z em 1089,92.
+[01:45] E com uma incerteza bem pequena, de 0,25.
+[01:48] Certo. Então, esse Z é a medida física real, o dado bruto.
+[01:53] Exato. Já a data em anos,
+[01:55] que muita gente ouve falar como sendo cerca de 380 mil anos depois do início,
+[02:00] é, na verdade, uma tradução.
+[02:02] Uma tradução feita por um modelo matemático, né?
+[02:04] Uh-huh. Puramente o modelo.
+[02:06] Na régua do nosso calendário cósmico,
+[02:09] essa tradução dá a meia-noite e 14 do primeiro de janeiro.
+[02:13] E a grande motivação para buscar tudo isso
+[02:15] é que se trata simplesmente da imagem mais antiga
+[02:17] que a luz consegue trazer para a gente.
+[02:19] Nossa, muito legal!
+[02:21] E tem os dados de quem achou isso.
+[02:23] Arnold Pensias, nascido em Munique, na Alemanha, em 1933
+[02:28] e que faleceu agora em 2024.
+[02:31] E o Robert Wilson, que nasceu em Houston, no Texas, em 1936.
+[02:37] Os dois trabalhavam nos laboratórios Bell,
+[02:40] lá em Homedale, Nova Jersey. Próxima página.
+[02:43] O que é muito louco nessa história toda
+[02:45] é pensar como duas pessoas em Nova Jersey
+[02:48] acabaram achando a imagem mais antiga do universo por puro acaso.
+[02:53] É, foi totalmente sem querer.
+[02:55] A história começa em 1964.
+[02:58] O Pensias e o Wilson usavam uma antena gigantesca
+[03:02] em forma de corneta, lá em Homedale,
+[03:04] para captar ondas de rádio muito fracas.
+[03:07] Eles queriam ler o sinal do satélites Balão Eco e do Telstar, né?
+[03:11] Isso.
+[03:12] E por causa disso, como o sinal era muito fraco,
+[03:15] eles precisavam limpar qualquer interferência da antena,
+[03:18] qualquer chiado.
+[03:19] E eles levaram isso ao extremo.
+[03:22] Sim, eles foram até o ponto de tirar os pombos que ficavam na antena,
+[03:27] limpar toda a sujeira deles, raspar tudo mesmo,
+[03:30] achando que o problema era esse.
+[03:32] Mas, por incrível que pareça, sobrou um chiado.
+[03:36] Um chiado muito específico, né?
+[03:37] Exato. O chiado vinha de todas as partes do céu,
+[03:41] não importava para onde apontassem.
+[03:44] E era o mesmo, de dia e de noite,
+[03:46] sempre num comprimento de onda de 7 centímetros
+[03:49] e sempre com a mesma intensidade.
+[03:51] O mais curioso é que eles não faziam ideia do que era aquilo.
+[03:54] Só que ali perto, na Universidade de Princeton,
+[03:57] tinha um grupo já focado nisso.
+[03:59] O Robert Dicke, o Jim Peebles e o David Wilkinson.
+[04:03] Eles já buscavam ativamente uma radiação
+[04:05] que teria sobrado do começo do universo.
+[04:07] Sério? Eles já estavam caçando esse sinal?
+[04:09] Aham.
+[04:10] O chiado de 7 centímetros batia certinho
+[04:13] com a teoria que o físico Gamel e os colegas dele
+[04:15] tinham proposto lá nos anos 40 e que tinha ficado esquecida.
+[04:19] Nossa, coincidência às duas coisas acontecerem tão perto.
+[04:23] E aí, o Pensias e o Wilson acabaram ganhando
+[04:26] metade do Nobel de Física em 1978.
+[04:31] Mas vale notar o cuidado que eles tiveram
+[04:34] no comunicado desse prêmio.
+[04:36] Muito cuidado.
+[04:37] O comitê disse que era razoável suspeitar
+[04:40] que fosse a radiação inicial
+[04:42] e que a descoberta deu um apoio forte à ideia do Big Bang.
+[04:45] Mas não foi uma prova fechada, sabe?
+[04:47] E em nenhum momento, eles chamaram o Big Bang de explosão ou algo do tipo.
+[04:51] Próxima página.
+[04:53] Mas, pensando aqui, o chiado existia e estava lá.
+[04:57] Mas o que garantia que ele era realmente a sobra de um universo quente?
+[05:02] Como eles podiam ter tanta certeza?
+[05:04] Então, para entender isso, a gente precisa olhar para como essa luz se soltou.
+[05:08] Segundo a Agência Espacial Europeia, o universo foi esfriando.
+[05:12] Quando ele esfriou abaixo de 10 mil graus acima do zero absoluto,
+[05:16] os átomos começaram a se formar de verdade.
+[05:19] E antes disso, era tudo meio que uma neblina densa, né?
+[05:22] Exato. A luz não passada.
+[05:25] Mas aí, ao chegar mais perto da marca de 3 mil graus, a coisa mudou.
+[05:30] A luz finalmente passou a viajar livre pelo espaço.
+[05:33] Tá, mas para saber se o chiado vinha mesmo de um universo quente,
+[05:36] a ciência tinha que medir o formato dessa luz.
+[05:39] Sim, e foi aí que entrou a missão espacial.
+[05:42] Em 18 de novembro de 1989, a NASA lançou o satellite COBE.
+[05:47] E foi rápido, né?
+[05:48] Muito.
+[05:49] Com só 9 minutos de observação,
+[05:52] os instrumentos do COBE registraram o espectro da luz.
+[05:55] Ou seja, como ela se distribui.
+[05:57] E o detalhe que eu acho que todo mundo precisa saber
+[06:00] é que o espectro formou o gráfico de um corpo negro perfeito.
+[06:04] Exatamente.
+[06:04] E a forma de um corpo negro perfeito depende só da temperatura de quem emitiu a luz.
+[06:10] Quando mostraram essa curva superperfeitinha num congresso,
+[06:13] o público até aplaudiu de pé.
+[06:15] Foi um momento histórico para a física.
+[06:17] Mais de mil pessoas trabalharam nesse satellite COBE.
+[06:21] Mas o destaque maior ficou para o John Mather e para o George Smoot.
+[06:25] O trabalho deles foi tão decisivo que eles ganharam um Nobel de Física de 2006.
+[06:30] Próxima página.
+[06:31] Bom, a gente acabou de falar que a luz saiu a 3 mil graus.
+[06:35] Só que tem um conflito aparente aí.
+[06:37] Se ela saiu no ambiente de 3 mil graus,
+[06:39] por que ela chega até nós hoje tão fria e na forma de microondas?
+[06:44] A resposta para isso é o esticão.
+[06:46] Hoje, essa mesma luz chega aqui a 2,75 graus acima do zero absoluto.
+[06:53] Muito frio.
+[06:54] Congelante.
+[06:56] E isso é medido com uma incerteza de pouco mais de 0,5 milésimo de grau.
+[07:01] Num estudo famoso do pesquisador Fixen de 2009.
+[07:04] A questão é que o universo cresceu nesse tempo todo.
+[07:07] E o comprimento da luz cresceu junto.
+[07:10] Ela esticou mesmo, fisicamente?
+[07:12] Sim.
+[07:13] Ela esticou cerca de 1,091 vezes,
+[07:16] que é justamente aquele número Z medido pelo Planck que a gente comentou antes.
+[07:21] Com isso, o comprimento de onda mais forte,
+[07:23] que era de mais ou menos 1 milésimo de milímetro lá no começo,
+[07:27] passou para cerca de 1 milímetro hoje.
+[07:29] Entendi.
+[07:30] E só para dar um recado para quem acompanha a tela interativa agora,
+[07:33] tem um cursor ali para arrastar.
+[07:35] Ele mostra certinho a luz desde quando saiu lá atrás,
+[07:38] sem ter esticado, a 3 mil graus, até o estado de hoje.
+[07:42] Dá para ver a temperatura caindo e o comprimento de onda subindo juntos.
+[07:46] E ficou o aviso.
+[07:47] Quem quiser arrastar o cursor com calma para ver essas mudanças,
+[07:50] pausa o áudio agora,
+[07:51] senão a tela vira sozinha enquanto a gente fala.
+[07:53] Próxima página.
+[07:54] Já que a gente falou bastante sobre o Z e o esticão,
+[07:58] é bom esclarecer como a ciência lida com as variações dos números de anos
+[08:02] quando o assunto é esse momento do universo.
+[08:04] Sim, porque confunde muita gente.
+[08:06] O Z é uma medida da máquina, né?
+[08:08] Exato.
+[08:09] O Z tem uma medição exata no telescópio com incerteza calculada.
+[08:14] Já aqueles 380 mil anos vêm puramente de modelos matemáticos.
+[08:19] E o interessante é que nem uma fonte pública de dados
+[08:23] dá incerteza para esse número de anos.
+[08:25] A própria agência espacial europeia acaba variando as informações.
+[08:29] Eles escrevem 380 mil numa página de texto
+[08:33] e 370 mil anos na legenda oficial do mapa do Planck.
+[08:37] Pois é.
+[08:38] Mas no fim das contas,
+[08:39] os dois cálculos caem na meia-noite 14 do calendário.
+[08:42] E falando no mapa, vale a pena dar uma olhada
+[08:44] nas manchas que estão na tela.
+[08:46] Aham, esse mapa todo manchado.
+[08:48] As primeiras dessas manchas foram publicadas pelo time do Smooth
+[08:52] lá com Coby em 1992.
+[08:55] Isso e elas representam diferenças de temperatura no céu
+[08:58] que são minúsculas.
+[08:59] Coisa de um centésimo de milésimo de grau de um ponto para o outro.
+[09:03] Quase nada, né?
+[09:05] Mas por que isso importa tanto?
+[09:07] Porque essas manchinhas mínimas
+[09:09] mostram exatamente onde a matéria começou a se juntar no espaço.
+[09:13] Sem essa diferença sutil de temperatura e densidade,
+[09:16] nada teria se aglomerado.
+[09:18] E isso foi essencial para formar as galáxias e as estrelas
+[09:21] bem mais para frente.
+[09:23] Próxima página.
+[09:24] Bom, depois de ver todas essas medidas e mapas,
+[09:27] a gente traz a informação de volta para a escala
+[09:29] que baliza a série toda,
+[09:31] que é a nossa régua do ano cósmico.
+[09:33] A régua é a tela interativa de agora.
+[09:36] E nela a gente tem as duas marcas agora.
+[09:39] A meia-noite do primeiro de janeiro lá no cantinho
+[09:42] e a nova marca de meia-noite e 14.
+[09:45] O problema é que na visão do ano inteiro,
+[09:47] elas viram praticamente um traço só.
+[09:50] Porque um espaço de 14 minutos
+[09:52] não aparece de jeito nenhum em 12 meses comprimidos na tela.
+[09:56] Mas a matemática da régua ajuda a entender.
+[09:59] Um minuto do nosso calendário vale 26.250 anos.
+[10:03] Então a conta fecha direitinho.
+[10:05] Ah, logo os 380 mil anos do modelo matemático
+[10:09] dão pouco mais de 14 minutos nessa proporção.
+[10:12] Exato.
+[10:13] E sobre a tela interrativa de agora,
+[10:15] tem dois botões ali que dão zoom para arrumar a visualização.
+[10:19] Um botão mostra o dia primeiro de janeiro inteiro
+[10:22] e o outro mostra só a primeira hora do dia.
+[10:26] Nesses zuns mais fechados, as marcas se separam
+[10:29] e dá para ver o intervalo entre elas.
+[10:31] O cursor em cima mostra a data e os anos atrás também.
+[10:36] E o aviso de novo, quem quiser explorar as medidas
+[10:38] e o zoom com calma, pausa o áudio,
+[10:41] senão a tela vira para a conclusão.
+[10:43] Próxima página.
+[10:44] Só para a gente amarrar os pontos principais
+[10:46] e fazer um resumo de hoje.
+[10:48] A régua ganhou a nossa segunda marca na meia noite e 14.
+[10:53] E essa luz de um universo que finalmente ficou transparente
+[10:56] foi achada por dois rádio-astrônomos
+[10:59] limpando um chiado de uma antena em 1964.
+[11:02] Sim, a gente detalhou que o que medimos hoje
+[11:05] é o esticão e a temperatura atual dela.
+[11:08] E os anos são uma tradução direta do modelo matemático.
+[11:12] Mas tem um detalhe do dia a dia muito legal sobre isso.
+[11:15] A agência espacial europeia diz que essa luz antiga
+[11:18] é responsável por uma pequena fração
+[11:20] do chiado daquelas TVs analógicas antigas.
+[11:22] Aquele chuvisco de canal fora do ar.
+[11:25] Isso mesmo.
+[11:26] Parte daquele chuvisco na tela da TV de tubo
+[11:28] é literalmente a luz mais velha que existe batendo na antena.
+[11:32] Nossa, isso é muito curioso de se pensar.
+[11:35] E bom, o nosso conteúdo hoje parou exatamente
+[11:38] na meia noite e 14 do primeiro de janeiro.
+[11:41] Sim, a gente fica por aqui no calendário hoje.
+[11:44] Mas o que vem depois é que o universo fica escuro por muito tempo.
+[11:49] Um período muito longo mesmo, sem nenhuma estrela.
+[11:53] As primeiras estrelas vieram só depois.
+[11:55] E o detalhe é que ninguém nunca viu nenhuma delas.
+[11:59] E a próxima exploração vai ser focada justamente nessas estrelas.
+[12:03] E para fechar, eu acho que vale deixar um pensamento
+[12:06] não mencionado antes, mas que vem das nossas fontes.
+[12:10] É só imaginar que nós hoje
+[12:12] estamos constantemente mergulhados nessa luz antiga e esticada.
+[12:17] A gente toma banho desse chiado todo dia.
+[12:20] E boa parte do que nós definimos como o início do nosso universo
+[12:23] é um resultado direto da tradução humana
+[12:26] de sinais quase imperceptíveis
+[12:28] que viajam pelo espaço desde aquela época
+[12:31] até os nossos telescópios e antenas.

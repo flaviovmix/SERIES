@@ -1,0 +1,98 @@
+/* esticao: a luz esticando da hora em que saiu até hoje (tela 5 do 1.02).
+   A onda desenhada, o cursor com as duas pontas (a saída e hoje) e a leitura da
+   temperatura e do comprimento de onda. O painel em volta é da base
+   (site/css/animacao/painel.css). Depende de esticao.js. */
+
+.esticao__onda {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin: 4px 0 2px;
+}
+.esticao__linha {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.esticao__aviso {
+  margin: 0 0 14px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-align: center;
+  color: var(--ink-soft, #b7bdc9);
+}
+
+/* o cursor: range nativo com trilho visível, do âmbar da saída ao azul de hoje */
+.esticao__cursor {
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  background: transparent;
+  cursor: ew-resize;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.esticao__cursor:focus-visible { outline: 2px solid var(--accent, #d9a441); outline-offset: 4px; border-radius: 8px; }
+.esticao__cursor::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, hsl(32 85% 62%), hsl(210 85% 62%));
+}
+.esticao__cursor::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: var(--ink, #f2f4f8);
+  border: 2px solid var(--ground, #0f1a2e);
+  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+.esticao__cursor::-moz-range-track {
+  height: 8px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, hsl(32 85% 62%), hsl(210 85% 62%));
+}
+.esticao__cursor::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ink, #f2f4f8);
+  border: 2px solid var(--ground, #0f1a2e);
+}
+
+.esticao__pontas {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--ink-soft, #b7bdc9);
+}
+
+/* a leitura: dois números grandes lado a lado, com o nome embaixo */
+.esticao__leitura {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px 20px;
+  margin-top: 16px;
+}
+.esticao__leitura b {
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink, #f2f4f8);
+}
+.esticao__leitura span {
+  font-size: 13px;
+  color: var(--ink-soft, #b7bdc9);
+}
+
+@media (max-width: 700px) {
+  .esticao__onda { height: 84px; }
+  .esticao__leitura b { font-size: 16px; }
+}

@@ -1062,12 +1062,12 @@ module.exports = {
       },
       '02': {
         imagem: 'img/universo-01-ep-02.webp',
-        descricao: `A névoa que clareia e solta a primeira luz`,
+        descricao: `O gás quente que clareia e solta a primeira luz`,
         credito: `ilustração`,
         periodo: `1º de janeiro, 00:14`,
         frase: `A luz mais velha que dá pra ver.`,
         resumo: `O universo fica transparente e a luz corre solta pela primeira vez: é o fundo cósmico de micro-ondas. O que o Planck mede é um desvio para o vermelho, e os "380 mil anos" já são tradução pelo modelo.`,
-        contagem: `episódio 2 de 5`,
+        contagem: `13 min &middot; 8 telas`,
       },
       '03': {
         imagem: 'img/universo-01-ep-03.webp',

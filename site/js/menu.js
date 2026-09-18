@@ -255,7 +255,8 @@
                 { titulo: 'Cosmos: A Personal Voyage, episódio 1, The Shores of the Cosmic Ocean', ano: 1980, tipo: 'documentário (série de TV)', nota: 'É onde Carl Sagan apresenta o Calendário Cósmico na TV, o formato desta série. A régua dele era de quinze bilhões de anos: nenhuma data do calendário dele bate com a de hoje.', onde: 'Internet Archive (coleção Cosmos: A Personal Voyage, KCET); Brasil: não confirmei' },
                 { titulo: 'Cosmos: A Spacetime Odyssey, episódio 1, Standing Up in the Milky Way', ano: 2014, tipo: 'documentário (série de TV)', nota: 'Neil deGrasse Tyson caminha sobre o Calendário Cósmico. Usa a régua de 13,8 bilhões arredondada e apresenta o calendário sem dizer que é recurso didático.', onde: 'Apple TV (EUA); Brasil: não confirmei' }
               ] },
-            { num: '02', nome: 'A primeira luz' },
+            { num: '02', nome: 'A primeira luz',
+              href: '../UNIVERSO/01 - Janeiro/02 - A primeira luz/animacao.html' },
             { num: '03', nome: 'As primeiras estrelas' },
             { num: '04', nome: 'A galáxia mais distante' },
             { num: '05', nome: 'A Via Láctea começa' }
