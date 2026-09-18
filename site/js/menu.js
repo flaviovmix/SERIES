@@ -261,7 +261,8 @@
               href: '../UNIVERSO/01 - Janeiro/03 - As primeiras estrelas/animacao.html' },
             { num: '04', nome: 'A galáxia mais distante',
               href: '../UNIVERSO/01 - Janeiro/04 - A galaxia mais distante/animacao.html' },
-            { num: '05', nome: 'A Via Láctea começa' }
+            { num: '05', nome: 'A Via Láctea começa',
+              href: '../UNIVERSO/01 - Janeiro/05 - A Via Lactea comeca/animacao.html' }
           ] },
         { num: '02', nome: 'De fevereiro a agosto' },
         { num: '03', nome: 'Setembro e outubro' },

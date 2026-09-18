@@ -32,7 +32,7 @@ Levantada em 17/09/2026. Base: [`_pesquisa-inicial.md`](../../plano/serie/_pesqu
 | Inflação | NASA: "Around 13.8 billion years ago, the universe expanded faster than the speed of light for a fraction of a second, a period called cosmic inflation." | https://science.nasa.gov/universe/overview/ (12/08/2026) | sim |
 | O que veio antes | NASA: "Scientists aren't sure what came before inflation or what powered it." | mesma página | sim |
 | O que a NASA chama de big bang | NASA: "When cosmic inflation stopped, the energy driving it transferred to matter and light – the big bang." | mesma página | sim |
-| A luz mais velha | NASA: aos "380,000 years after the big bang" o universo esfriou o bastante pra núcleos capturarem elétrons (recombinação); o brilho que sobrou "is called the cosmic microwave background. It is the oldest light we can observe in the universe." ⚠️ Os 380 mil anos são tradução pelo modelo: o Planck mede z* = 1089,92 ± 0,25. **Este episódio só aponta; o 1.02 desce nisso** | mesma página; tabela do Planck | sim |
+| A luz mais velha | NASA: aos "380,000 years after the big bang" o universo esfriou o bastante pra núcleos capturarem elétrons (recombinação); o brilho que sobrou "is called the cosmic microwave background. It is the oldest light we can observe in the universe." ⚠️ Os 380 mil anos são tradução pelo modelo: o Planck publica z* = 1089,92 ± 0,25, também derivado do ajuste (P11 do plano). **Este episódio só aponta; o 1.02 desce nisso** | mesma página; tabela do Planck | sim |
 
 ## O satélite Planck (ficha do equipamento) **[novo]**
 

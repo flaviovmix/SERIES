@@ -10,10 +10,11 @@
 - **O 1.02 está pronto (18/09/2026, de manhã):** `01 - Janeiro/02 - A primeira luz/` com pesquisa, planta de 8 telas, trio aprovado pelo verificador (duas rodadas), o áudio **"A luz mais antiga do universo" (12:33)**, `_telas.md` e a animação com dois widgets: o esticão da luz (`esticao.js`, a luz saindo a 2973 K e chegando a 2,725 K, 1091 vezes mais esticada) e a régua com lupa (`regua.js`, agora movida só por dados: as marcas e os trechos vêm de um bloco JSON na página, e o arquivo é o mesmo em todo episódio). Todas as imagens são reais (Commons), menos a capa; o Flow nem entrou. QA da página limpo. ⚠️ Cinco ressalvas confirmadas na reescuta (`_telas.md`): "2,75 graus" aos 06:42 (é 2,725); "o comitê nunca chamou o Big Bang de explosão" aos 04:40 (o comunicado de 1978 chama); "neblina" aos 05:15 (analogia proibida); "1091 vezes, que é o z" aos 07:05 (é 1 + z); e um fecho inventado. Regravar ou deixar é decisão dele.
 - **O 1.03 está pronto (18/09/2026):** `01 - Janeiro/03 - As primeiras estrelas/`, 8 telas, trio aprovado na segunda rodada, o áudio **"As estrelas que acabaram com o escuro" (9:52)**. A régua ganhou a **primeira faixa** (3 a 8 de janeiro, D14) e o ponto da LAP1-B em 22 de janeiro. Sem ficha humana, de propósito. Todas as imagens são reais ou concepção artística declarada; o Flow nem entrou. ⚠️ Ressalvas no `_telas.md`: a "impressão digital" (analogia proibida) aos 09:25, a estrela PicII-503 sem o nome no fecho, e um "só" que o verificador tinha tirado. Regravar ou deixar é decisão dele.
 - **O 1.04 está pronto (18/09/2026):** `01 - Janeiro/04 - A galaxia mais distante/`, 8 telas, trio aprovado na segunda rodada, o áudio **"A confirmação da galáxia recordista MoM-z14" (11:53)**. Widget novo, `ondecai.js`: onde a luz do hidrogênio (121,6 nm) cai conforme o z, com o olho, o controle remoto e o NIRSpec na mesma faixa, e a tradução em anos separada e marcada. A régua ganhou os três últimos recordes e lupa no dia 8. ⚠️ Ressalvas no `_telas.md`: o nome MoM-z14 lido de três jeitos pela voz, um "puro calor invisível" na abertura e um "o z multiplica" impreciso. Regravar ou deixar é decisão dele.
+- **O 1.05 está pronto (18/09/2026):** `01 - Janeiro/05 - A Via Lactea comeca/`, 7 telas, trio aprovado na segunda rodada, o áudio **"O nascimento do disco da Via Láctea" (9:02)**. A régua de janeiro fecha com as cinco marcas, e cada uma mostra o como se sabe quando o cursor para nela (D13). Sem widget novo: a régua é a mesma peça, com a linha do como se sabe. ⚠️ Ressalvas no `_telas.md`: "o z medido pelo satélite Planck" aos 07:03 (P11: é publicado, derivado do ajuste; veio do roteiro), um "a gente tem um consenso" aos 06:12 e o nome MoM-z14 tropeçado de novo. Regravar ou deixar é decisão dele.
 - **Margem de baixo e cards largos no telefone (18/09/2026, pedido dele pelo print do 1.02):** na base comum (`site/css/animacao/telas.css` e `pranchas.css`), vale pra toda animação de toda série: 88px embaixo de cada tela no telefone (a alça do tocador não cobre mais o último card) e os cards de texto e do fechamento na largura da imagem.
-- **A régua virou peça movida por dados (18/09/2026):** o `regua.js` e o `regua.css` são os mesmos arquivos no 1.02, no 1.03 e no 1.04; as marcas, as faixas, a lupa (ano, janeiro, um dia, uma hora) e o degrau de cada rótulo vêm do bloco JSON da página. P10 abaixo: juntar num lugar só.
+- **A régua virou peça movida por dados (18/09/2026):** o `regua.js` e o `regua.css` são os mesmos arquivos do 1.02 ao 1.05; as marcas, as faixas, a lupa (ano, janeiro, um dia, uma hora) e o degrau de cada rótulo vêm do bloco JSON da página. P10 abaixo: juntar num lugar só.
 - **Conversor de desvio pra anos:** `_arquivos/scripts/idade-no-desvio.py` faz a conta do ΛCDM com os parâmetros do Planck 2018 (dá 13,79 bilhões pra hoje e 372 mil anos pro z\* da primeira luz). É tradução pelo modelo, e a pesquisa de cada episódio diz isso quando usa.
-- Os outros 25 episódios não têm pesquisa própria, planta, trio nem áudio.
+- Os outros 22 episódios não têm pesquisa própria, planta, trio nem áudio.
 
 **Formato:** episódios NotebookLM via `/criar-podcast` (trio por episódio), cada um com a sua `animacao.html` no molde das outras séries e pelo menos uma tela que se mexe com dado que não muda sozinho. Cada etapa tem o episódio `00` só de áudio, e o `00` da série inteira é o piloto: o ano cósmico de ponta a ponta.
 **Fonte:** pesquisa pública com fonte primária, consolidada em [`_pesquisa-inicial.md`](_pesquisa-inicial.md). Cada episódio ainda faz o seu `_pesquisa.md`.
@@ -59,7 +60,7 @@ A pergunta única: **se todo o tempo do universo coubesse num ano, o que acontec
 
 | # | Etapa | O que a régua ganha | Eps | Status |
 |---|---|---|---|---|
-| 1 | **Janeiro** | do primeiro instante à Via Láctea, tudo na primeira quinzena | 5 | 🟠 |
+| 1 | **Janeiro** | do primeiro instante à Via Láctea, as cinco marcas até 22 de janeiro | 5 | 🟠 |
 | 2 | **De fevereiro a agosto** | os sete meses em que nada acontece por aqui | 3 | 🔴 |
 | 3 | **Setembro e outubro** | o Sol, a Terra, a Lua, a vida e o oxigênio | 4 | 🔴 |
 | 4 | **Novembro e a primeira quinzena de dezembro** | a célula complexa, o sexo e os seres que não se encaixam | 4 | 🔴 |
@@ -67,7 +68,7 @@ A pergunta única: **se todo o tempo do universo coubesse num ano, o que acontec
 | 6 | **31 de dezembro** | o último dia, e a história escrita nos últimos 12 segundos | 5 | 🔴 |
 
 Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
-**Placar:** 4 publicados · 23 pela frente (fora os 7 episódios `00` e os extras; o `00` da série está no ar).
+**Placar:** 5 publicados · 22 pela frente (fora os 7 episódios `00` e os extras; o `00` da série está no ar).
 
 ---
 
@@ -78,10 +79,10 @@ Status: 🔴 não iniciado · 🟠 parcial · 🟢 tudo publicado
 | Pasta | Episódio | O que cobre | Status |
 |---|---|---|---|
 | `01` | **O primeiro instante e o que ninguém sabe** | 1º de janeiro, 00:00. O que o Planck data de verdade ("o início do big bang quente") e o que ele não data. Por que não foi uma explosão num ponto. A inflação, e a frase da NASA de que ninguém sabe o que veio antes dela | 🟢 |
-| `02` | **A primeira luz** | 1º de janeiro, 00:14. A recombinação e o fundo cósmico de micro-ondas: a luz mais velha que dá pra ver. O que o Planck mede (z\* = 1089,92 ± 0,25) e por que "380 mil anos" já é tradução | 🟢 |
+| `02` | **A primeira luz** | 1º de janeiro, 00:14. A recombinação e o fundo cósmico de micro-ondas: a luz mais velha que dá pra ver. O que o Planck publica (z\* = 1089,92 ± 0,25, derivado do ajuste) e por que "380 mil anos" já é tradução | 🟢 |
 | `03` | **As primeiras estrelas** | 3 a 8 de janeiro (faixa). A idade das trevas, a população III, e o incômodo bonito: **nenhuma delas foi observada**. O melhor candidato está em z = 6,6, ou seja 800 milhões de anos tarde demais | 🟢 |
 | `04` | **A galáxia mais distante** | 8 de janeiro. MoM-z14, o recorde que já caiu duas vezes em dois anos, e o que o telescópio mede de verdade (desvio para o vermelho, não idade) | 🟢 |
-| `05` | **A Via Láctea começa** | 22 de janeiro. O disco espesso começando 800 milhões de anos depois do Big Bang, medido em 250 mil estrelas. Como se lê a idade de uma estrela | 🔴 |
+| `05` | **A Via Láctea começa** | 22 de janeiro. O disco espesso começando 800 milhões de anos depois do início, com a idade lida em 250 mil estrelas subgigantes. Como se lê a idade de uma estrela | 🟢 |
 
 **Fecha quando:** a régua tem as cinco marcas de janeiro e cada uma diz de onde veio.
 **Aparece em:** o chiado da TV antiga, que é o fundo cósmico de micro-ondas chegando na antena.
@@ -219,4 +220,5 @@ A conferir quando as etapas virarem roteiro. *Do Ábaco à IA* tem extras de bin
 - **P7.** **O `_COMO-FAZER.md` desta série.** Enquanto não existe, vale o da Hardware.
 - **P8.** **Os dois episódios sem pesquisa.** O 2.02 (de onde vieram os átomos) e o 4.01 (a célula que engoliu outra) não têm nada no `_pesquisa-inicial.md`. Pedem levantamento próprio antes de virar planta.
 - **P10.** **A régua num lugar só.** Hoje o `regua.js` e o `regua.css` são cópias idênticas em cada pasta de episódio (o 1.01 ainda tem a versão antiga, sem lupa). Recomendação: mover pra uma pasta da série (`UNIVERSO/_regua/`) e cada `animacao.html` carregar de lá; é a regra do terceiro clone. Espera o OK dele; mexe só em caminho, não em comportamento.
+- **P11.** **O z\* do Planck é derivado, não medido.** Conferido em 18/09/2026 na tabela oficial do Planck: o z\* = 1089,92 está na lista de parâmetros derivados do ajuste, como a idade. A série tinha escrito "[OBS]" e "o Planck mede" na pesquisa inicial, e os áudios do piloto, do 1.02 e do 1.05 dizem "mediu". Já corrigido: a pesquisa inicial, a pesquisa do 1.02, as páginas do 1.02 e do 1.05 e o card do 1.02 ("publica", "do ajuste aos dados"), e o 00 de Janeiro nasce certo. Fica nos áudios como ressalva; regravar é decisão dele. A diferença que a série ensina continua de pé: o z vem com incerteza publicada, os anos não.
 - **P9.** **Qual extra das outras séries entra como "ouvir antes".** Os de binário, hertz e eletroímã não servem aqui.

@@ -6,7 +6,7 @@ Levantada em 18/09/2026. Base: [`_pesquisa-inicial.md`](../../plano/serie/_pesqu
 
 | Assunto | Fato | Fonte | Primária |
 |---|---|---|---|
-| O que o Planck mede | **[OBS]** O desvio para o vermelho do último espalhamento: **z\* = 1089,92 ± 0,25** (Planck 2018, TT,TE,EE+lowE+lensing) | https://arxiv.org/pdf/1807.06209v4 e a tabela oficial https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf | sim |
+| O que o Planck mede | **[OBS+MODELO]** ⚠️ Conferido em 18/09/2026 na tabela oficial: o z\* é parâmetro derivado do ajuste, como a idade; o áudio (gravado antes) diz "mediu". O desvio para o vermelho do último espalhamento: **z\* = 1089,92 ± 0,25** (Planck 2018, TT,TE,EE+lowE+lensing) | https://arxiv.org/pdf/1807.06209v4 e a tabela oficial https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf | sim |
 | O que o z quer dizer | "With the expansion of the Universe, the wavelength of the light emitted (CMB) has increased. The ratio by which the wavelength has increased tells us about the factor by which the Universe has expanded" (ESA, sem data na página). Com z\* = 1089,92, o fator é 1 + z = **1090,92** | https://www.esa.int/Science_Exploration/Space_Science/Planck/Why_the_microwave | sim; o fator é conta |
 | Os anos | **[OBS+MODELO]** "Recombination was complete about 380 000 after the Big Bang, when the Universe cooled to 3000K" (ESA, mesma página; a palavra "years" falta no original). A legenda da ESA para o mapa do Planck diz "when the universe was **370,000** years old". Nenhuma das duas traz incerteza: **os anos são tradução do z pelo modelo**, e nenhuma fonte primária publica incerteza nesse número (`_pesquisa-inicial.md`) | ESA "Why the microwave"; legenda de "Cosmic Microwave Background (CMB)", ESA and the Planck Collaboration, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Cosmic_Microwave_Background_(CMB).jpeg | sim |
 | No calendário | 380 mil anos depois do início = **1º de janeiro, 00:14** (e 370 mil também cai em 00:14). A régua de 13,797 bilhões: 1 minuto = 26.250 anos | `../../_arquivos/scripts/calendario-cosmico.py depois 380000` | cálculo |
@@ -76,7 +76,7 @@ Nenhum confirmado nesta rodada (ver `_filmes-e-documentarios.md`).
 
 ## Alertas que valem neste episódio (da pesquisa inicial e desta)
 
-- NÃO dizer que o Planck mediu "380 mil anos": ele mediu z\* = 1089,92 ± 0,25. Os anos são tradução pelo modelo, sem incerteza publicada.
+- NÃO dizer que o Planck mediu "380 mil anos": ele publica z\* = 1089,92 ± 0,25, derivado do ajuste (P11 do plano). Os anos são tradução pelo modelo, sem incerteza publicada.
 - NÃO dizer que o Big Bang foi uma explosão num ponto. O comunicado do Nobel de 1978 usa "cosmic explosion" e "15 billion years": é texto da época, e nada dele entra.
 - NÃO dizer que a descoberta "provou" o Big Bang (a página da Bell Labs diz "proving"): o comunicado do Nobel de 1978 diz que era razoável suspeitar que fosse a radiação fóssil e que "other interpretations are possible". Dizer "apoio forte".
 - NÃO dizer "1% do chiado da TV": a fonte primária diz "uma pequena fração".

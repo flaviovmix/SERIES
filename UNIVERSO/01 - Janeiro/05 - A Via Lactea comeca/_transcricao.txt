@@ -1,0 +1,210 @@
+# Transcricao automatica (faster-whisper small) - 9.0 min
+# Fonte: O nascimento do disco da Via Láctea.m4a
+# ATENCAO: modelo pequeno erra nome proprio. Conferir com --confere antes de acusar erro no audio.
+
+[00:00] A Via Láctea começa.
+[00:01] Bom, no nosso encontro anterior, a gente botou na régua a galáxia mais distante já confirmada,
+[00:08] a Mombus E14, lá no dia 8 de janeiro, né?
+[00:11] Isso, e a gente pontuou que esse recorde não é definitivo.
+[00:14] Exato. Não é definitivo.
+[00:16] E hoje, este é o quinto e último mergulho da etapa janeiro da nossa série Universo.
+[00:21] O foco de hoje é o dia 22 de janeiro na régua do ano cósmico,
+[00:25] que marca o começo da formação do disco mais velho da nossa própria galáxia.
+[00:30] E quem acompanha a gente vai descobrir como alguém consegue ler a idade de uma estrela,
+[00:36] detalhar o que um estudo de 250 mil estrelas encontrou
+[00:40] e, bom, fechar todas as cinco marcas de janeiro na régua, né?
+[00:44] Isso aí.
+[00:45] O áudio acompanha a página que vira sozinha enquanto a gente fala.
+[00:49] Se você pular uma tela, o áudio pula junto.
+[00:52] Se você quiser parar para mexer numa tela, pausa o áudio,
+[00:55] senão ele vira a tela sem você.
+[00:57] Embaixo da tela ficam as guias de extras e de filmes,
+[01:00] e elas podem ganhar coisa nova com o tempo.
+[01:03] Próxima página.
+[01:04] Então, o que a gente tem na ficha desse instante de hoje?
+[01:08] Bom, o que está sendo datado aqui é o começo da formação do disco espesso da Via Láctea.
+[01:15] Tá, o disco espesso.
+[01:16] É, e é bom deixar claro para quem está ouvindo,
+[01:19] o que a gente está falando do disco mais velho, tá?
+[01:22] Não é a galáxia inteira nascendo nesse dia.
+[01:25] A data é de 13 bilhões de anos atrás.
+[01:28] Nossa, 13 bilhões?
+[01:30] Isso dá apenas 8 décimos de bilhão de anos depois do início.
+[01:36] Bem no comecinho mesmo.
+[01:38] E a fonte disso é um artigo do Xande e do Higgs,
+[01:41] lá do Instituto Max Planck de Astronomia.
+[01:44] Eles publicaram isso na revista Nature em 2022.
+[01:48] E um detalhe, o resumo do artigo dele, sabe,
+[01:50] não publica margem de erro para esse número.
+[01:52] Certo.
+[01:53] E colocando isso na nossa régua, dono cósmico,
+[01:56] onde um dia vale 37 milhões e 800 mil anos,
+[02:01] isso cai bem na madrugada do dia 22 de janeiro.
+[02:05] Exato.
+[02:06] E a motivação de estudar isso é bem óbvio, né?
+[02:08] É, a nossa casa.
+[02:09] Pois é.
+[02:10] Saber quando o disco começou a se formar
+[02:12] é saber de quando é a galáxia onde a gente mora.
+[02:14] E sobre a ferramenta que eles usaram,
+[02:16] o que tem na ficha técnica?
+[02:18] Ah, foi o Satellit Gaia da Agência Espacial Europeia.
+[02:21] Ele foi lançado em 19 de dezembro de 2013
+[02:24] e trabalhou no ponto de Lagrange II.
+[02:26] E ele encerrou as observações científicas bem recentemente,
+[02:30] em 15 de janeiro de 2025.
+[02:33] Fez um trabalho gigante, né?
+[02:35] Ele fez mais de três trilhões de observações
+[02:38] de dois bilhões de estrelas e outros objetos.
+[02:41] Próxima página.
+[02:42] Mas me tira uma dúvida lógica aqui.
+[02:46] A idade de uma estrela não vem escrita nela.
+[02:49] Como que os cientistas descobrem isso?
+[02:51] Esse é um problema prático grande.
+[02:53] Mas, segundo o comunicado da sociedade Max Planck
+[02:56] de março de 2022,
+[02:58] existe um tipo específico de estrela
+[03:01] onde dá para ler e dá de direto.
+[03:03] Que tipo?
+[03:04] As subgigantes.
+[03:05] A idade delas é lida diretamente
+[03:07] pela temperatura da superfície e pelo brilho.
+[03:09] Sabe?
+[03:10] Só que tem um obstáculo prático aí, né?
+[03:12] Porque essas estrelas subgigantes são muito raras.
+[03:15] Muito.
+[03:16] Apenas um poucos por cento das estrelas da galáxia
+[03:19] tão nessa fase curta da vida.
+[03:21] E como o Xi'an e o Rich resolveram isso, então?
+[03:24] Eles precisaram olhar para muita estrela, muito mesmo.
+[03:27] Eles conseguiram determinar a idade
+[03:29] de uma duzentas e cinquenta mil estrelas subgigantes.
+[03:33] Nossa, é bastante.
+[03:35] Sim.
+[03:36] E para fazer isso, eles juntaram dois grandes levantamentos.
+[03:39] Está, explica esse casamento de dados para quem acompanha a gente.
+[03:42] O Gaia, com os dados de dezembro de 2020,
+[03:46] deu a posição e a distância de quase um bilhão e meio de estrelas, né?
+[03:50] Isso.
+[03:51] E o outro foi o Lamust, da China,
+[03:53] com dados de 2021.
+[03:56] Esse deu mais de nove milhões de espectros,
+[03:59] revelando a temperatura e a composição química.
+[04:02] Ah, então é bom reforçar um ponto super crucial aqui.
+[04:06] O Gaia não mediu a idade.
+[04:08] Não, de jeito nenhum.
+[04:10] A idade saiu da combinação dos dados do Gaia com os dados do Lamust.
+[04:15] Sem juntar os dois, não tinha como saber.
+[04:18] Próxima página.
+[04:19] E bom, detalhando o que eles acharam,
+[04:22] as estrelas da Via Láctea se separaram em duas partes,
+[04:26] divididas bem na marca dos oito bilhões de anos.
+[04:30] Como assim duas partes?
+[04:31] Existe uma fase antiga,
+[04:33] quando se formaram o alo de estrelas em volta do disco
+[04:37] e o próprio disco-espesso
+[04:39] e uma fase mais tranquila e mais nova que o disco fino.
+[04:42] Tá.
+[04:43] E o cronograma desse disco-espesso,
+[04:45] ele começou a se formar 13 bilhões de anos atrás, né?
+[04:47] Exato.
+[04:48] O que?
+[04:49] Um é 2 bilhões de anos antes do alo de dentro
+[04:53] terminar de se juntar.
+[04:55] Isso mesmo.
+[04:56] E Shang e Hicks apontam
+[04:58] que a maioria das estrelas desse disco-espesso
+[05:01] nasceu 11 bilhões de anos atrás.
+[05:04] É um pico de formação.
+[05:06] No momento em que uma galáxia satélite menor
+[05:09] se fundiu com a nossa.
+[05:11] E fica o aviso,
+[05:12] essa fusão é exatamente o assunto da nossa próxima etapa da série, tá?
+[05:16] Bem lembrado.
+[05:17] E olha, nos 5 a 6 bilhões de anos seguintes a essa fusão,
+[05:22] a galáxia ficou 10 vezes mais rica em elementos pesados.
+[05:26] E sobre as medidas físicas,
+[05:28] o comunicado da Max Planck repassa os números de tamanho, né?
+[05:31] O disco-espesso é achatado com 100 mil anos-luz de largura
+[05:36] e 6 mil anos-luz de espessura.
+[05:39] Sim.
+[05:40] Já o disco-fino, que é mais novo, tem uns 2 mil anos-luz de espessura só.
+[05:44] Próxima página.
+[05:45] Mas tem um segundo estudo que entra nessa história, né?
+[05:48] Outro grupo de pesquisadores, usando uma mostra diferente,
+[05:52] chegou no resultado na mesma direção.
+[05:54] O estudo do Nepal, do Chiapini Collegas,
+[05:57] que saiu na revista Astronomy and Astrophysics,
+[06:00] agora em 2024.
+[06:01] E o que tem nos dados desse novo estudo?
+[06:03] Eles olharam umas 200 mil estrelas do Gaia.
+[06:06] Eles descobriram que entre as estrelas pobres em elementos pesados
+[06:12] que andam em órbita do disco-fino,
+[06:14] mais da metade tem mais de 13 bilhões de anos.
+[06:18] Ou seja, eles concluíram que o disco-fino
+[06:20] também se forma com menos de 1 bilhão de anos depois do início.
+[06:24] Isso.
+[06:25] Isso é uns 4 a 5 bilhões de anos antes do que a gente estimava.
+[06:29] Caramba!
+[06:30] E amarrando esses dois pontos, a gente tem um consenso, né?
+[06:33] São dois grupos, com duas amostras diferentes, apontando na mesma direção.
+[06:37] Sim.
+[06:38] De que o disco da nossa galáxia começou cedo.
+[06:41] Na régua do ano cósmico, dizer menos de 1 bilhão de anos
+[06:45] significa que isso aconteceu até o dia 27 de janeiro.
+[06:48] Próxima página.
+[06:49] Bom, agora a nossa régua de janeiro
+[06:51] está finalmente completa com as suas 5 marcas.
+[06:54] Vamos estar em 5?
+[06:57] Primeira marca, meia-noite do 1 de janeiro.
+[07:00] O início do Big Bang Quente,
+[07:03] com a idade derivada do fundo cósmico por um modelo.
+[07:07] Meia-noite 14, a primeira luz, como Z medido pelo satellite Planck.
+[07:12] A faixa de 3 a 8 de janeiro, as primeiras estrelas,
+[07:16] que ninguém viu com o começo dado por um modelo
+[07:19] e o fim pelas galáxias mais velhas.
+[07:21] Oito de janeiro, a mão Z 14,
+[07:24] com o Z medido pelo espectro do telescópio Web.
+[07:28] E 22 de janeiro, o disco espesso da Via Láctea,
+[07:31] com a idade lida em estrelas subgigantes.
+[07:34] E gente, um aviso sobre o uso da tela atual
+[07:37] para quem está com ela aberta.
+[07:38] Tem um cursor na tela, tá?
+[07:40] Quando o cursor para numa marca,
+[07:42] a tela mostra como se sabe aquela data.
+[07:44] Há dois botões, o ano inteiro e só janeiro.
+[07:47] E a tela começa em janeiro
+[07:49] com o cursor posicionado em 22.
+[07:51] E quem quiser passear pelas marcas com calma
+[07:53] precisa pausar o áudio, senão a tela vira sozinha, tá?
+[07:56] Próxima página.
+[07:58] Recapitulando rápido, janeiro inteiro.
+[08:00] O começo da fase quente que ninguém viu por dentro.
+[08:03] A primeira luz que ainda chega.
+[08:06] As primeiras estrelas que ninguém viu.
+[08:08] A galáxia mais distante já confirmada,
+[08:11] cujo recorde pode cair.
+[08:13] E o começo do disco da nossa galáxia
+[08:15] lido em 250 mil estrelas.
+[08:19] É muita coisa.
+[08:21] E trazendo isso para o visual de quem está ouvindo,
+[08:23] a NASA ensina que aquela faixa leitosa
+[08:25] que a gente vê atravessando o céu,
+[08:27] num lugar bem escuro,
+[08:28] é na verdade o disco de estrelas
+[08:30] da nossa galáxia viste de dentro.
+[08:32] Nossa, sim.
+[08:33] E é essa visão que mostra que a galáxia
+[08:35] é basicamente achatada.
+[08:37] E é exatamente daí que vem o nome Via Láctea.
+[08:40] Então, o nosso mergulho para na régua
+[08:42] em 22 de janeiro.
+[08:44] E a etapa janeiro da série Universo
+[08:46] termina aqui.
+[08:48] Mas ficou aviso para quem está acompanhando.
+[08:50] A próxima etapa cobre de fevereiro a agosto.
+[08:52] Sete meses.
+[08:54] É sete meses do calendário,
+[08:56] com pouca coisa para marcar por aqui.
+[08:58] E o primeiro episódio da próxima etapa
+[09:00] é sobre a galáxia que come as vizinhas.

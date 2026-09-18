@@ -45,6 +45,7 @@ Esperando ele (DE2: o que aprofunda sem ser necessário pra seguir vira extra). 
 | **Lemaître, o padre que esticou o universo** | pessoa | a vida dele, o artigo de 1927 que ninguém leu na hora, o átomo primitivo de 1931 e a conversa com Einstein | fonte primária já levantada (UCLouvain) |
 | **O que a inflação explica** | conceito | por que os cosmólogos inventaram a inflação, o que ela resolve e o que ela não resolve | a pesquisar (Guth, 1981) |
 | **Como se lê a idade num mapa de manchas** | conceito | o que são os seis parâmetros do Planck e como um mapa de manchas vira uma idade | a pesquisar |
+| **O que é uma singularidade** | conceito | **pedido dele em 18/09/2026, depois de ouvir o episódio.** O que a palavra quer dizer na física, por que o Planck data o início da fase quente e para ali, e por que "instante zero" não é o que a teoria descreve. Extra `06` do plano da série, candidato 102 da lista geral | a pesquisar (Penrose e Hawking, os teoremas dos anos 1960) |
 
 ## Alertas herdados da pesquisa (valem pro trio)
 

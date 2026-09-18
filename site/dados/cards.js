@@ -1037,7 +1037,7 @@ module.exports = {
     },
   },
 
-  /* A pagina da etapa Janeiro: os cinco episodios, todos em producao. O `periodo` e a
+  /* A pagina da etapa Janeiro: os cinco episodios, todos no ar desde 18/09. O `periodo` e a
      data do episodio no ano cosmico (a regua de 13,797 bilhoes, D11 do plano da serie).
      As artes sao reconstituicao gerada no Flow (prompts em
      UNIVERSO/_arquivos/capa-episodios/etapa-01/prompt/); quando o episodio nascer, a
@@ -1066,7 +1066,7 @@ module.exports = {
         credito: `ilustração`,
         periodo: `1º de janeiro, 00:14`,
         frase: `A luz mais velha que dá pra ver.`,
-        resumo: `O universo fica transparente e a luz corre solta pela primeira vez: é o fundo cósmico de micro-ondas. O que o Planck mede é um desvio para o vermelho, e os "380 mil anos" já são tradução pelo modelo.`,
+        resumo: `O universo fica transparente e a luz corre solta pela primeira vez: é o fundo cósmico de micro-ondas. O Planck publica um desvio para o vermelho, e os "380 mil anos" já são mais uma conversão pelo modelo.`,
         contagem: `13 min &middot; 8 telas`,
       },
       '03': {
@@ -1093,8 +1093,8 @@ module.exports = {
         credito: `ilustração`,
         periodo: `22 de janeiro`,
         frase: `Como se lê a idade de uma estrela.`,
-        resumo: `O disco espesso da nossa galáxia começa a se formar 800 milhões de anos depois do Big Bang, e a conta saiu da idade de 250 mil estrelas, medidas uma a uma.`,
-        contagem: `episódio 5 de 5`,
+        resumo: `O disco mais velho da nossa galáxia começa a se formar uns 800 milhões de anos depois do começo. A idade saiu de 250 mil estrelas subgigantes, e não do Gaia sozinho. E janeiro fecha na régua com as cinco marcas e o como se sabe de cada uma.`,
+        contagem: `9 min &middot; 7 telas`,
       },
     },
   },

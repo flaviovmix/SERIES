@@ -76,7 +76,7 @@ Fórmula, com **T** = anos antes do presente: `dias corridos desde 1º de janeir
 |---|---|---|---|
 | O "instante zero" | **[MODELO]** A tabela do Planck define o parâmetro como "Time since the start of the hot big bang". A colaboração **não data uma singularidade**, data o início da fase quente | https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf | sim |
 | O que não se sabe | NASA, 12/08/2026: "Scientists aren't sure what came before inflation or what powered it" | https://science.nasa.gov/universe/overview/ | sim |
-| Recombinação | **[OBS]** O Planck mede o desvio para o vermelho do último espalhamento, z\* = 1089,92 ± 0,25. Os "380 mil anos" são a conversão disso para anos dentro do ΛCDM, e nenhuma fonte primária publica incerteza nesse número | tabela do Planck e https://www.esa.int/Science_Exploration/Space_Science/Planck/Why_the_microwave | sim |
+| Recombinação | **[OBS+MODELO]** O Planck publica o desvio para o vermelho do último espalhamento, z\* = 1089,92 ± 0,25. ⚠️ Conferido em 18/09/2026 na tabela oficial: o z\* está na lista de parâmetros derivados do ajuste, como a idade (a série tinha escrito [OBS] e "mede"). Os "380 mil anos" são a conversão disso para anos dentro do ΛCDM, e nenhuma fonte primária publica incerteza nesse número | tabela do Planck e https://www.esa.int/Science_Exploration/Space_Science/Planck/Why_the_microwave | sim |
 | Idade das trevas | **[MODELO]** NASA: "For the next 200 million years the universe remained dark" | https://science.nasa.gov/universe/overview/ | sim |
 | Primeiras estrelas | **[MODELO]** Glover e Klessen (revisão de 18/09/2025): a população III começa a se formar em z ~ 30. A NASA (16/07/2026) escreve que não se sabe exatamente quando elas acenderam. **Nenhuma estrela de população III foi observada** | https://arxiv.org/abs/2509.14799 e https://science.nasa.gov/mission/webb/early-universe/ | sim |
 | Melhor candidato a população III | **[OBS+MODELO]** LAP1-B, em z = 6,6 (cerca de 830 milhões de anos depois do Big Bang), publicado em 27/10/2025: primeiro objeto compatível com três previsões teóricas, com ressalvas dos autores | https://iopscience.iop.org/article/10.3847/2041-8213/ae122f | sim |
@@ -185,7 +185,7 @@ Nada abaixo entra no áudio.
 
 - NÃO dizer que a ciência sabe o que houve no instante zero. O Planck data o início do big bang **quente**, e a NASA escreve que não se sabe o que veio antes da inflação.
 - NÃO dizer que o Big Bang foi uma explosão num ponto do espaço.
-- NÃO dizer que o Planck mediu "380 mil anos". Ele mediu z\* = 1089,92 ± 0,25, e os anos são tradução pelo modelo.
+- NÃO dizer que o Planck mediu "380 mil anos". Ele publica z\* = 1089,92 ± 0,25, também derivado do ajuste (18/09/2026: dizer "publica", não "mediu"), e os anos são mais uma conversão por cima dele.
 - NÃO dizer que o James Webb viu as primeiras estrelas: nenhuma estrela de população III foi observada.
 - NÃO dizer que a galáxia mais distante é a JADES-GS-z14-0: desde junho de 2025 é a MoM-z14 (a NASA diz junho, na página do Webb atualizada em 16/07/2026; o artigo apareceu em maio). E NÃO dizer que esse recorde é definitivo, porque caiu duas vezes em dois anos.
 - NÃO dar uma data única para a fusão com a Gaia-Enceladus: há 10, há 8 a 11 e há 11 bilhões, em três artigos diferentes. E NÃO dizer que foi a primeira fusão grande: há evidência de uma 1,8 bilhão de anos anterior.

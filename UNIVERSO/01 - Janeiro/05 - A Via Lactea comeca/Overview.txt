@@ -1,0 +1,18 @@
+UNIVERSO - JANEIRO - A VIA LACTEA COMECA - CONTEXTO
+====================================================
+Documento curto de contexto para uso com NotebookLM.
+
+Universo e uma serie de audio sobre como a gente sabe o que sabe do universo. Quase tudo chegou aqui como luz. O formato e o Calendario Cosmico, recurso didatico criado por Carl Sagan em 1977: a idade inteira do universo espremida num ano de doze meses. A regua desta serie e de 13,797 bilhoes de anos (Planck 2018): um dia vale 37,8 milhoes de anos. Toda marca do calendario vem com o como e que alguem sabe aquela data.
+
+Este e o quinto e ultimo episodio da primeira etapa, Janeiro. Ele poe a ultima marca de janeiro na regua: 22 de janeiro, o comeco da formacao do disco espesso da Via Lactea, 13 bilhoes de anos atras. O ouvinte sai sabendo como se le a idade de uma estrela (as subgigantes, pela temperatura e pelo brilho), o que um estudo de 250 mil estrelas achou, que outro grupo chegou na mesma direcao, e janeiro inteiro na regua, cada marca com o seu como se sabe.
+
+Os episodios da etapa Janeiro:
+1. O primeiro instante e o que ninguem sabe.
+2. A primeira luz.
+3. As primeiras estrelas.
+4. A galaxia mais distante.
+5. A Via Lactea comeca (este).
+
+Por que importa: e a nossa propria galaxia, e fecha a primeira etapa da serie.
+
+Use este contexto apenas como apoio.

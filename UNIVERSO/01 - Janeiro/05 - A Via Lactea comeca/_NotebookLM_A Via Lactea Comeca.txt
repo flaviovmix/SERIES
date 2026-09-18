@@ -1,0 +1,117 @@
+Inicie dizendo: A Via Lactea Comeca
+---------------
+
+Este e o quinto e ultimo episodio da etapa JANEIRO, a primeira etapa da serie Universo. O episodio anterior, A galaxia mais distante, pos na regua do ano cosmico o ponto da galaxia MoM-z14, em oito de janeiro, e terminou dizendo que em vinte e dois de janeiro comeca a se formar o disco mais velho da nossa galaxia. Este episodio e sobre esse comeco, sobre como e que alguem le a idade de uma estrela, e fecha janeiro inteiro na regua.
+
+ESTE EPISODIO COBRE UM PONTO DO CALENDARIO COSMICO: vinte e dois de janeiro, de madrugada, quando comeca a se formar o disco espesso da Via Lactea. Dizer isso em voz alta na abertura, e no encerramento dizer onde o episodio parou e onde a etapa parou.
+
+ESTE EPISODIO TEM UMA ANIMACAO QUE ACOMPANHA O AUDIO. E uma pagina com 7 telas (animacao.html) que VIRA SOZINHA enquanto o audio toca, e que leva o audio junto quando alguem pula a tela na mao. O roteiro abaixo esta dividido POR TELA. Regras da conducao:
+
+- No fim de cada tela, um dos apresentadores diz claramente o marcador: "Proxima pagina". NAO e instrucao pro ouvinte: e o marcador que corta o audio em telas. Dizer exatamente essas duas palavras, e nao "aperte", nem "vamos pra proxima", nem "proximo".
+- Logo na abertura, LEMBRAR (nao explicar) que a pagina existe. O lembrete e UMA FALA SO, de UM apresentador, curto e padronizado, e diz so isto, nesta ordem: que o audio acompanha a pagina e que a pagina vira sozinha; que pular a tela na mao leva o audio junto; que quem quiser parar pra mexer numa tela pause o audio, senao ele vira a tela sem a pessoa; e que embaixo da tela ficam as guias de extras e de filmes, que podem ganhar coisa nova com o tempo. Feitio da coisa: "O audio acompanha a pagina, que vira sozinha enquanto a gente fala. Se voce pular uma tela, o audio pula junto. Se quiser parar pra mexer numa tela, pausa o audio, senao ele vira a tela sem voce. Embaixo da tela ficam as guias de extras e de filmes, e elas podem ganhar coisa nova com o tempo." Um apresentador, e acabou. O OUTRO APRESENTADOR NAO COMENTA, nao concorda, nao completa e nao faz pergunta sobre isso.
+  NAO dizer quantas telas sao, NAO explicar o que e um botao, NAO ensinar a usar a pagina, NAO chamar a animacao de legal, bacana ou interativa, NAO dizer o nome de nenhum extra nem do que ele trata, e NAO dizer o marcador como exemplo.
+- Na tela interativa (a tela 6), avisar o que tem na tela pra mexer e repetir a frase da pausa: quem quiser mexer com calma pausa o audio, senao a tela vira.
+- Nao descrever pixels nem posicao dos botoes; a tela se explica sozinha. O audio conduz o conteudo.
+
+A TRILHA CONTA A HISTORIA; O MECANISMO POR DENTRO E EXTRA. O que aprofunda sem ser necessario pra seguir (como funciona o diagrama que liga o brilho e a cor de uma estrela, como o satelite Gaia mede distancias, por que a galaxia tem dois discos) NAO cabe aqui. O audio NAO chama nenhum extra pelo nome: so o lembrete da abertura diz que as guias existem.
+
+FILMES. Este episodio nao cita nenhum filme.
+
+REGRA DURA DAS TELAS. Este episodio tem 7 telas. O audio TEM que dizer o marcador "Proxima pagina" exatamente 6 vezes, uma no fim de cada tela, na ordem, e nenhuma no fim da ultima. NAO juntar o conteudo de duas telas num bloco so, NAO adiantar o assunto da tela seguinte, e NAO seguir adiante sem o marcador. Quem esta ouvindo com a pagina aberta so vira a tela quando o marcador acontece: se faltar um, a pessoa fica olhando a tela errada pelo resto do episodio.
+
+O QUE COMECA EM VINTE E DOIS DE JANEIRO. O que comeca ali e a formacao do disco espesso, o disco mais velho da galaxia. NAO dizer que a Via Lactea inteira nasceu nesse dia. NAO dar margem de erro pros treze bilhoes: o artigo nao publica. NAO dizer que o satelite Gaia mediu a idade das estrelas: ele mediu posicao e distancia, e a idade saiu da combinacao com a temperatura e o brilho.
+
+NUMERO COM FONTE. Toda data e todo numero saem com quem publicou e o ano, QUANDO O ROTEIRO TROUXER O NOME. Se o roteiro nao trouxer o nome, dizer so o dado, e NUNCA inventar um autor. NAO INVENTAR NENHUMA DATA ALEM DAS QUE ESTAO NESTE ROTEIRO.
+
+SEM FICHA HUMANA NESTE EPISODIO. Os autores aparecem so pelo artigo que publicaram. NAO inventar onde nasceram, onde estudaram nem frase de nenhum deles.
+
+TRADUCAO DE ESCALA SO DE MARCA COLETIVA. NAO dizer quanto tempo a vida de uma pessoa duraria na regua.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas.
+
+---
+
+ANALOGIAS AUTORIZADAS PARA ESTE EPISODIO
+
+- A REGUA DO ANO COSMICO: a idade do universo espremida num ano de doze meses, com um dia valendo trinta e sete milhoes e oitocentos mil anos. E o objeto da serie inteira, e a unica analogia deste episodio.
+Fora essa, sem analogias. Explicar direto. Em especial, NAO usar panqueca, pizza, prato, disco de vinil, adolescencia, infancia, bebe, fossil, arqueologia, relogio ou certidao de nascimento pra explicar a galaxia ou a idade das estrelas.
+
+---
+
+ROTEIRO DO EPISODIO (POR TELA DA ANIMACAO)
+
+TELA 1 (CAPA: A VIA LACTEA COMECA)
+
+Retomar em uma frase: o episodio anterior pos na regua a galaxia mais distante ja confirmada, a MoM-z14, em oito de janeiro, e lembrou que esse recorde nao e definitivo.
+
+Dizer o que este episodio faz: em vinte e dois de janeiro comeca a se formar o disco mais velho da nossa propria galaxia. O episodio conta como e que alguem le a idade de uma estrela, o que um estudo de duzentas e cinquenta mil estrelas achou, e fecha janeiro inteiro na regua, com as cinco marcas.
+
+O lembrete da pagina, como manda a regra da conducao la em cima: UMA fala, de UM apresentador, e o outro nao comenta.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 2 (A FICHA: O INSTANTE E O SATELITE)
+
+A ficha do instante. O que se data: o comeco da formacao do disco espesso, que e o disco mais velho da Via Lactea. A data: treze bilhoes de anos atras, so oito decimos de bilhao de anos depois do inicio, segundo Xiang e Rix, do Instituto Max Planck de Astronomia, num artigo da revista Nature de dois mil e vinte e dois. O resumo do artigo nao publica margem de erro pra esse numero. Na regua, vinte e dois de janeiro, de madrugada. A motivacao: e a nossa propria galaxia. Saber quando ela comecou a virar um disco e saber de quando e a galaxia onde a gente mora.
+
+A ficha do equipamento: o satelite Gaia, da Agencia Espacial Europeia. Lancado em dezenove de dezembro de dois mil e treze, trabalhou no ponto de Lagrange dois e terminou as observacoes cientificas em quinze de janeiro de dois mil e vinte e cinco. Segundo a agencia, fez mais de tres trilhoes de observacoes de dois bilhoes de estrelas e outros objetos.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 3 (COMO SE LE A IDADE DE UMA ESTRELA)
+
+A idade de uma estrela nao vem escrita nela. Mas tem um tipo de estrela em que da pra ler a idade direto: as subgigantes. O comunicado da Sociedade Max Planck, de marco de dois mil e vinte e dois, explica que nelas a idade se le pela temperatura da superficie e pelo brilho. O problema: elas sao raras. So uns poucos por cento das estrelas da galaxia estao nessa fase curta da vida.
+
+Por isso foi preciso olhar muita estrela. Xiang e Rix determinaram a idade de umas duzentas e cinquenta mil. Juntaram dois levantamentos: o Gaia, que no lancamento de dados de dezembro de dois mil e vinte deu a posicao e a distancia de quase um bilhao e meio de estrelas; e o LAMOST, da China, que no lancamento de dados de dois mil e vinte e um deu mais de nove milhoes de espectros, com a temperatura e a composicao quimica. O Gaia nao mediu idade: a idade saiu da combinacao dos dois.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 4 (O QUE ACHARAM)
+
+As estrelas se separaram em duas partes, divididas nos oito bilhoes de anos. Uma fase antiga, quando se formaram o halo, que e o conjunto de estrelas em volta do disco da galaxia, e o disco espesso. E uma fase mais tranquila e mais nova, a do disco.
+
+O disco espesso comecou a se formar treze bilhoes de anos atras, dois bilhoes de anos antes de o halo de dentro terminar de se juntar. Segundo Xiang e Rix, a maioria das estrelas dele nasceu onze bilhoes de anos atras, quando uma galaxia satelite, menor, se fundiu com a nossa. Essa fusao e assunto da proxima etapa. E nos cinco a seis bilhoes de anos seguintes, a galaxia ficou dez vezes mais rica em elementos pesados.
+
+O tamanho, segundo o comunicado da Max Planck: o disco espesso e achatado, com uns cem mil anos-luz de largura e seis mil anos-luz de espessura. O disco fino, que e mais novo, tem uns dois mil anos-luz de espessura.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 5 (O DISCO FINO TAMBEM CEDO)
+
+Outro grupo, com outra amostra, chegou num resultado na mesma direcao. Nepal, Chiappini e colegas, num artigo de dois mil e vinte e quatro na revista Astronomy and Astrophysics, olharam umas duzentas mil estrelas do Gaia. Entre as estrelas pobres em elementos pesados que andam em orbita de disco fino, mais da metade tem mais de treze bilhoes de anos. Eles concluiram que o disco fino tambem se forma com menos de um bilhao de anos depois do inicio, uns quatro a cinco bilhoes de anos antes do que se estimava.
+
+Dois grupos, duas amostras, e a mesma direcao: o disco da nossa galaxia comecou cedo. Na regua, menos de um bilhao de anos quer dizer ate vinte e sete de janeiro.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 6 (JANEIRO INTEIRO NA REGUA, TELA INTERATIVA)
+
+A regua de janeiro esta completa, com cinco marcas. Meia-noite do primeiro de janeiro, o inicio do big bang quente, com a idade derivada do fundo cosmico por um modelo. Meia-noite e catorze, a primeira luz, com o z medido pelo satelite Planck. A faixa de tres a oito de janeiro, as primeiras estrelas, que ninguem viu, com o comeco dado por um modelo e o fim pelas galaxias mais velhas. Oito de janeiro, a MoM-z14, com o z medido pelo espectro do Webb. E vinte e dois de janeiro, o disco espesso da Via Lactea, com a idade lida em estrelas subgigantes.
+
+Avisar: tem um cursor na tela, e quando ele para numa marca, a tela mostra como se sabe aquela data. Tem dois botoes, o ano inteiro e so janeiro. A tela comeca em janeiro, com o cursor em vinte e dois. E repetir a frase da pausa: quem quiser passear pelas marcas com calma pausa o audio, senao a tela vira.
+
+Dizer o marcador: Proxima pagina.
+
+TELA 7 (ENCERRAMENTO)
+
+Recapitular janeiro inteiro, uma frase por marca: o comeco da fase quente, que ninguem viu por dentro; a primeira luz, que ainda chega; as primeiras estrelas, que ninguem viu; a galaxia mais distante ja confirmada, cujo recorde pode cair; e o comeco do disco da nossa galaxia, lido em duzentas e cinquenta mil estrelas.
+
+Onde isso aparece fora da tela: a NASA explica que a faixa leitosa que atravessa o ceu, num lugar escuro, e o disco de estrelas da nossa galaxia visto de dentro, e que ela mostra que a galaxia e basicamente achatada. E dai que vem o nome Via Lactea.
+
+Dizer onde o episodio parou: em vinte e dois de janeiro. E a etapa janeiro termina aqui.
+
+Gancho: a proxima etapa cobre de fevereiro a agosto, sete meses do calendario com pouca coisa pra marcar por aqui. O primeiro episodio dela e sobre a galaxia que come as vizinhas.

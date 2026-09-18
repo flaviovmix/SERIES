@@ -16,7 +16,7 @@ A seção "Alertas" da pesquisa inicial vale inteira. As que mais pegam no pilot
 |---|---|---|---|---|
 | Início do big bang quente | 13,797 bilhões | 1º de janeiro, 00:00 | derivado do fundo cósmico de micro-ondas pelo modelo; o Planck **não** data uma singularidade, data o início da fase quente | Planck 2018 VI, Tabela 2; tabela do Planck Legacy Archive ("Time since the start of the hot big bang") |
 | O que veio antes | | | ninguém sabe: "Scientists aren't sure what came before inflation or what powered it" | NASA, https://science.nasa.gov/universe/overview/ (12/08/2026) |
-| Fundo cósmico de micro-ondas | 380 mil anos depois (tradução) | 1º de janeiro, 00:14 | luz: o Planck mede o desvio para o vermelho do último espalhamento, z* = 1089,92 ± 0,25; os anos são conversão pelo modelo | tabela do Planck; ESA "Why the microwave" |
+| Fundo cósmico de micro-ondas | 380 mil anos depois (tradução) | 1º de janeiro, 00:14 | luz: o Planck publica o desvio para o vermelho do último espalhamento, z* = 1089,92 ± 0,25, derivado do ajuste (P11 do plano); os anos são mais uma conversão | tabela do Planck; ESA "Why the microwave" |
 | Idade das trevas | ~200 milhões de anos | janeiro | modelo: "For the next 200 million years the universe remained dark" | NASA, universe/overview |
 | Primeiras estrelas (população III) | z ~ 30, modelo | 3 de janeiro | modelo; **nenhuma observada**; a NASA escreve que não se sabe exatamente quando acenderam | Glover e Klessen (18/09/2025), https://arxiv.org/abs/2509.14799; NASA Webb early-universe |
 | Melhor candidato a população III | z = 6,6, ~830 milhões de anos depois | 22 de janeiro | luz (espectro), com ressalvas dos autores | LAP1-B, https://iopscience.iop.org/article/10.3847/2041-8213/ae122f (27/10/2025) |

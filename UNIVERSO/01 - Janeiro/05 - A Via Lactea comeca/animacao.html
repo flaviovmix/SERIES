@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Via Láctea começa — Universo 1.05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Episodio 1.05 da serie UNIVERSO, o ultimo de janeiro. Nasceu do _molde-animacao.html.
+     As 7 telas seguem a _planta.md e o _telas.md, que saiu do audio: o audio manda, a
+     pagina serve. O que e deste episodio: janeiro inteiro na regua do ano cosmico, com o
+     como se sabe de cada marca (regua.css/regua.js, os mesmos do 1.02; as marcas vem do
+     bloco JSON da tela 6), carregada por ultimo. -->
+<link rel="stylesheet" href="../../../site/css/tokens.css">
+<link rel="stylesheet" href="../../../site/css/base.css">
+<link rel="stylesheet" href="../../../site/css/menu.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tokens.css">
+<link rel="stylesheet" href="../../../site/css/animacao/telas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/cabecalho.css">
+<link rel="stylesheet" href="../../../site/css/animacao/tocador.css">
+<link rel="stylesheet" href="../../../site/css/animacao/pranchas.css">
+<link rel="stylesheet" href="../../../site/css/animacao/painel.css">
+<link rel="stylesheet" href="../../../site/css/animacao/lightbox.css">
+<link rel="stylesheet" href="regua.css">
+</head>
+<body>
+
+<header class="topo"></header>
+
+<main>
+
+  <!-- 1 (00:00) capa -->
+  <section class="step step--capa">
+    <div class="capa-texto">
+      <div class="kicker reveal">universo · janeiro · episódio 1.05</div>
+      <h1 class="reveal">A Via Láctea começa</h1>
+      <p class="lede reveal">Em 22 de janeiro começa a se formar o disco mais velho da nossa galáxia. Como é que alguém lê a idade de uma estrela, e janeiro inteiro na régua, cada marca com o seu como se sabe.</p>
+      <div class="capa-como reveal">
+        <p><b>No episódio anterior:</b> a MoM-z14, a galáxia mais distante já confirmada, em 8 de janeiro.</p>
+      </div>
+    </div>
+    <figure class="capa-modelo reveal">
+      <img src="img/tela-01.webp" alt="Uma galáxia jovem vista quase de perfil, com um disco grosso e turbulento de gás e estrelas brilhando em âmbar e azul">
+      <figcaption>ilustração · o disco espesso de uma galáxia jovem, quase de perfil</figcaption>
+    </figure>
+  </section>
+
+  <!-- 2 (01:03) a ficha: o instante e o satelite -->
+  <section class="step step--ficha">
+    <div class="ficha-coluna">
+      <div class="kicker reveal">a ficha do instante</div>
+      <h2 class="reveal">Quando a galáxia começou a virar disco</h2>
+      <div class="ficha">
+        <div class="item reveal"><div class="rotulo">o que se data</div><div class="texto">O começo da formação do <b>disco espesso</b>, o disco mais velho da Via Láctea.</div></div>
+        <div class="item reveal"><div class="rotulo">a data</div><div class="texto"><b>13 bilhões de anos</b> atrás, 0,8 bilhão depois do início (Xiang e Rix, Nature, 2022; sem margem de erro no resumo). Na régua, <b>22 de janeiro</b>.</div></div>
+        <div class="item reveal"><div class="rotulo">o satélite</div><div class="texto"><b>Gaia</b>, da Agência Espacial Europeia: lançado em 19/12/2013, no L2, observou até 15/01/2025. Mais de 3 trilhões de observações de 2 bilhões de estrelas.</div></div>
+      </div>
+    </div>
+    <div class="retratos">
+      <figure class="retrato retrato-l clicavel reveal" data-abre="foto" data-legenda="O satélite Gaia, concepção artística, contra a Via Láctea · imagem: ESA/ATG medialab, fundo ESO/S. Brunier, CC BY 4.0">
+        <span class="selo">🔍 ampliar</span>
+        <img src="img/tela-02.webp" alt="Desenho do satélite Gaia, com o escudo solar redondo embaixo, no espaço diante da faixa de estrelas da Via Láctea">
+        <figcaption>o satélite Gaia, concepção artística · ESA/ATG medialab, fundo ESO/S. Brunier, CC BY 4.0</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 (02:41) como se le a idade de uma estrela -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Sociedade Max Planck, março de 2022</div>
+      <h2 class="reveal">Como se lê a idade de uma estrela</h2>
+      <p class="lede reveal">Nas <b>subgigantes</b>, a idade se lê pela temperatura da superfície e pelo brilho. O problema: só uns poucos por cento das estrelas estão nessa fase curta.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">quantas</div><div class="texto">Umas <b>250 mil</b> estrelas com a idade determinada.</div></div>
+        <div class="item"><div class="rotulo">com o quê</div><div class="texto">O <b>Gaia</b> (posição e distância de quase 1,5 bilhão de estrelas) e o <b>LAMOST</b>, da China (mais de 9 milhões de espectros). O Gaia não mede idade: ela sai da combinação.</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="O diagrama de Hertzsprung-Russell do Gaia: mais de quatro milhões de estrelas por cor e por brilho · imagem: ESA/Gaia/DPAC, CC BY-SA 3.0 IGO">
+      <img src="img/tela-03.webp" alt="Um gráfico em pé com uma nuvem vermelha de milhões de pontos: uma faixa diagonal larga, um braço que sobe à direita e uma faixa menor embaixo à esquerda">
+      <figcaption>gráfico real · o diagrama de brilho por cor do Gaia · ESA/Gaia/DPAC, CC BY-SA 3.0 IGO</figcaption>
+    </figure>
+  </section>
+
+  <!-- 4 (04:18) o que acharam -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Xiang e Rix, Nature, 2022</div>
+      <h2 class="reveal">O que acharam</h2>
+      <p class="lede reveal">Duas fases, divididas nos <b>8 bilhões de anos</b>: uma antiga, do halo de estrelas em volta do disco e do disco espesso, e uma mais tranquila, do disco.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">o começo</div><div class="texto">O disco espesso começa há <b>13 bilhões</b> de anos, dois bilhões antes de o halo de dentro terminar de se juntar.</div></div>
+        <div class="item"><div class="rotulo">o pico</div><div class="texto">Segundo eles, a maioria das estrelas dele nasceu há <b>11 bilhões</b>, quando uma galáxia satélite se fundiu com a nossa.</div></div>
+        <div class="item"><div class="rotulo">o tamanho</div><div class="texto">Uns <b>100 mil</b> anos-luz de largura e 6 mil de espessura. O disco fino, mais novo, uns 2 mil.</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A Via Láctea vista de lado, desenhada com os dados do Gaia · imagem: ESA, concepção artística baseada nos dados do Gaia, CC BY-SA 3.0 IGO">
+      <img src="img/tela-04.webp" alt="Uma galáxia vista exatamente de lado: um disco fino e comprido com uma faixa escura de poeira no meio e um bojo brilhante no centro">
+      <figcaption>concepção artística com os dados do Gaia · a Via Láctea de lado · ESA, CC BY-SA 3.0 IGO</figcaption>
+    </figure>
+  </section>
+
+  <!-- 5 (05:44) o disco fino tambem cedo -->
+  <section class="step step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">Nepal, Chiappini e colegas, 2024</div>
+      <h2 class="reveal">O disco fino também cedo</h2>
+      <p class="lede reveal">Outro grupo, com umas 200 mil estrelas do Gaia: das estrelas pobres em metal em órbita de disco fino, <b>mais da metade tem mais de 13 bilhões de anos</b>.</p>
+      <div class="ficha reveal">
+        <div class="item"><div class="rotulo">a conclusão</div><div class="texto">O disco fino se forma com <b>menos de um bilhão de anos</b> depois do início, uns 4 a 5 bilhões antes do que se estimava.</div></div>
+        <div class="item"><div class="rotulo">na régua</div><div class="texto">Até <b>27 de janeiro</b>. Dois grupos, duas amostras, a mesma direção.</div></div>
+      </div>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="A Via Láctea vista de cima, desenhada com os dados do Gaia · imagem: ESA, concepção artística baseada nos dados do Gaia, CC BY-SA 3.0 IGO">
+      <img src="img/tela-05.webp" alt="Uma galáxia espiral vista de cima, com a barra brilhante no centro e braços de estrelas azuladas e poeira em volta">
+      <figcaption>concepção artística com os dados do Gaia · a Via Láctea de cima · ESA, CC BY-SA 3.0 IGO</figcaption>
+    </figure>
+  </section>
+
+  <!-- 6 (06:48) janeiro inteiro na regua, interativa -->
+  <section class="step" data-imagem="desenho">
+    <div class="kicker reveal">mexa enquanto ouve · pause o áudio se quiser explorar</div>
+    <h2 class="reveal">Janeiro inteiro na régua</h2>
+    <div class="painel reveal">
+      <div class="legenda" id="legRegua">Só janeiro: as cinco marcas. Pare o cursor numa delas pra ver como se sabe.</div>
+      <div class="painel__miolo" id="mioloRegua"></div>
+      <div class="painel__total">
+        <span class="num" id="totalRegua">22 de janeiro</span>
+        <span class="meta">onde o cursor está</span>
+      </div>
+      <!-- o que e deste episodio na regua: as marcas de janeiro (em anos depois do
+           inicio), o como se sabe de cada uma, os trechos da lupa e onde a tela comeca.
+           O regua.js e o mesmo em todo episodio -->
+      <script type="application/json" id="configRegua">
+        {
+          "marcas": [
+            { "anosDepois": 0, "nome": "00:00", "nivel": 0,
+              "sabe": "o início do big bang quente. A idade é derivada do fundo cósmico de micro-ondas por um modelo (Planck, 2018)." },
+            { "anosDepois": 380000, "nome": "00:14", "nivel": 1,
+              "sabe": "a primeira luz. O Planck publica quanto ela esticou (z = 1089,92 ± 0,25), do ajuste aos dados; os anos são mais uma conversão." },
+            { "anosDepois": 100000000, "anosDepoisAte": 300000000, "nome": "3 a 8 · primeiras estrelas", "nivel": 2,
+              "sabe": "ninguém viu nenhuma. O começo da faixa é modelo (z perto de 30); o fim, as galáxias mais velhas que se conhecem." },
+            { "anosDepois": 283000000, "nome": "8 · MoM-z14", "nivel": 0,
+              "sabe": "a galáxia mais distante já confirmada. O z = 14,44 foi medido pelo espectro do Webb; os anos são tradução." },
+            { "anosDepois": 800000000, "nome": "22 · disco espesso", "nivel": 1,
+              "sabe": "o começo do disco mais velho da Via Láctea. A idade foi lida em 250 mil estrelas subgigantes (Xiang e Rix, 2022)." }
+          ],
+          "trechos": {
+            "ano": { "legenda": "O ano inteiro: janeiro inteiro é o primeiro doze avos da régua, e ainda faltam onze meses." },
+            "janeiro": { "legenda": "Só janeiro: as cinco marcas. Pare o cursor numa delas pra ver como se sabe." }
+          },
+          "comeca": { "trecho": "janeiro", "naMarca": 4 }
+        }
+      </script>
+      <div class="botoes">
+        <button class="btn-mini" data-lupa="ano">o ano inteiro</button>
+        <button class="btn-mini" data-lupa="janeiro">só janeiro</button>
+        <button class="btn-mini" id="reguaVolta">voltar a 22 de janeiro</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 (07:56) fecho -->
+  <section class="step step--mundo step--lado">
+    <div class="lado-texto">
+      <div class="kicker reveal">onde isso aparece fora da tela</div>
+      <h2 class="reveal">A faixa leitosa no céu</h2>
+      <div class="mundo">
+        <div class="item reveal">
+          <div class="nome">O disco visto de dentro</div>
+          <div class="desc">Num lugar escuro, a faixa que atravessa o céu é o disco de estrelas da nossa galáxia, visto de dentro. Por isso ela é achatada, e por isso o nome (NASA).</div>
+        </div>
+        <div class="item reveal">
+          <div class="nome">Janeiro fechado</div>
+          <div class="desc">O começo quente, a primeira luz, as primeiras estrelas, a galáxia mais distante e o disco da nossa. Cada marca com o seu como se sabe.</div>
+        </div>
+      </div>
+      <p class="lede reveal"><b>Na próxima etapa:</b> de fevereiro a agosto, sete meses com pouca coisa pra marcar por aqui. E a galáxia que come as vizinhas.</p>
+    </div>
+    <figure class="lado-arte clicavel reveal" data-abre="foto" data-legenda="O céu inteiro em 360 graus: a faixa da Via Láctea no meio e, embaixo à direita, as duas Nuvens de Magalhães · foto: ESO/S. Brunier, 2009, CC BY 4.0">
+      <img src="img/tela-07.webp" alt="Uma faixa de estrelas e poeira escura atravessando o céu negro de ponta a ponta, com duas manchas claras pequenas embaixo à direita">
+      <figcaption>foto real · a Via Láctea no céu inteiro · ESO/S. Brunier, CC BY 4.0</figcaption>
+    </figure>
+  </section>
+
+</main>
+
+<div class="tocador">
+  <audio preload="metadata" src="O nascimento do disco da Via Láctea.m4a" data-duracao="542"></audio>
+  <img class="tocador__capa" src="../../../site/img/serie-universo.webp" alt="">
+  <div class="tocador__id">
+    <div class="tocador__titulo">A Via Láctea começa</div>
+  </div>
+  <div class="tocador__barra" tabindex="0" role="slider" aria-label="posição do áudio" aria-valuemin="0" aria-valuemax="542" aria-valuenow="0">
+    <div class="tocador__cheio"></div>
+    <div class="tocador__marcas"></div>
+  </div>
+  <div class="tocador__controles">
+    <button class="tocador__velocidade" aria-label="velocidade 1x, toque pra trocar">1x</button>
+    <div class="tocador__transporte">
+      <button class="tocador__salto" data-salto="-10" aria-label="voltar 10 segundos">↺<b>10</b></button>
+      <button class="tocador__play" aria-label="tocar">▶</button>
+      <button class="tocador__salto" data-salto="30" aria-label="avançar 30 segundos">↻<b>30</b></button>
+    </div>
+    <div class="tocador__tempo"><span class="tocador__atual">0:00</span> / <span class="tocador__total">9:02</span></div>
+  </div>
+</div>
+
+<footer class="navegacao">
+  <button class="nav-btn ghost navegacao__anterior">Anterior</button>
+  <div class="navegacao__meio">
+    <div class="bolinhas" role="group" aria-label="telas"></div>
+    <div class="contador"></div>
+  </div>
+  <button class="nav-btn navegacao__proximo">Próximo</button>
+</footer>
+
+<script src="../../../site/js/menu.js"></script>
+<script src="../../../site/js/animacao/telas.js"></script>
+<script src="../../../site/js/animacao/lightbox.js"></script>
+<script src="../../../site/js/animacao/tocador.js"></script>
+<script src="regua.js"></script>
+<script src="episodio.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+Inicie dizendo: A Via Lactea Comeca
+---------------
+
+Siga exatamente as instrucoes do arquivo _NotebookLM_A Via Lactea Comeca.txt enviado como fonte.
+Esse arquivo contem o roteiro completo do episodio, dividido por tela.
+
+Este e o quinto e ultimo episodio da etapa Janeiro, a primeira etapa da serie Universo. O episodio anterior pos na regua a galaxia mais distante ja confirmada, em oito de janeiro; este poe a ultima marca de janeiro, em vinte e dois, e fecha a etapa.
+
+FOCO: o comeco da formacao do disco espesso da Via Lactea, treze bilhoes de anos atras, oito decimos de bilhao depois do inicio (Xiang e Rix, Nature, dois mil e vinte e dois, sem margem de erro no resumo). Como se le a idade de uma estrela: as subgigantes, pela temperatura e pelo brilho, duzentas e cinquenta mil delas, com o Gaia e o LAMOST. O que o estudo achou (o halo de estrelas e o disco espesso na fase antiga), e o segundo estudo que vai na mesma direcao (Nepal e colegas, dois mil e vinte e quatro, o disco fino tambem com menos de um bilhao de anos). E janeiro inteiro na regua, com o como se sabe de cada marca.
+
+NAO dizer que a Via Lactea inteira nasceu em vinte e dois de janeiro: o que comeca ali e o disco espesso. NAO dar margem de erro pros treze bilhoes. NAO dizer que o Gaia mediu a idade das estrelas. NAO nomear nenhum extra. NAO inventar data nem autor que nao estejam no roteiro. NAO traduzir a vida de uma pessoa pra escala do calendario.
+
+A pagina que acompanha o audio tem 7 telas. No fim de cada tela, menos a ultima, um apresentador diz o marcador "Proxima pagina", exatamente essas duas palavras, 6 vezes no total. O lembrete da pagina na abertura e uma fala so, de um apresentador, e o outro nao comenta.
+
+---------------
+
+Use linguagem SIMPLES e CASUAL, como se estivesse explicando pra um amigo. NAO use palavras rebuscadas, dramaticas ou literarias.
+
+Palavras PROIBIDAS: majestoso, avassalador, inexoravel, magnanimo, colossal, monumental, fascinante, extraordinario.
+
+---------------
+
+NAO use frases de efeito vazias. Va direto ao ponto. NAO use travessao (em-dash).
+
+Frases PROIBIDAS: "o que e fascinante aqui", "vamos desempacotar isso", "isso levanta uma questao importante", "e aqui que fica realmente interessante", "a genialidade por tras disso", "a sofisticacao dessa etapa", "advogado do diabo".
+
+---------------
+
+Use SOMENTE as analogias descritas no _NotebookLM_*.txt. NAO invente analogias novas. A unica analogia deste episodio e a regua do ano cosmico.
+
+Use tambem o Overview.txt como contexto curto.

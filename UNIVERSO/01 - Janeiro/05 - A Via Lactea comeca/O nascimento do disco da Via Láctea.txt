@@ -1,0 +1,7 @@
+Titulo: O nascimento do disco da Via Láctea
+Notebook: 01-05-A Via Lactea Comeca
+
+Descricao:
+Os documentos detalham o quinto episódio da série de áudio Universo, que utiliza o Calendário Cósmico de Carl Sagan para situar eventos astronômicos ao longo de um ano fictício. Este capítulo foca no dia 22 de janeiro, data que marca o início da formação do disco espesso da Via Láctea, ocorrida há aproximadamente 13 bilhões de anos. O conteúdo explica como cientistas determinam a idade de estrelas subgigantes através de sua temperatura e brilho, utilizando dados combinados dos projetos Gaia e LAMOST. A fonte descreve o funcionamento de uma animação sincronizada ao áudio, estabelecendo regras para a narração e o uso de analogias simples. Ao final, o material recapitula os marcos científicos de todo o mês de janeiro, encerrando a primeira etapa da jornada cronológica sobre as origens do cosmos.
+
+Link: https://notebook.google.com/notebook/d221010d-874d-43fe-94ce-dfc0f8e99094

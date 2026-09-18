@@ -14,7 +14,7 @@
 | 3 | conteudo | a descoberta: a antena de Holmdel, feita pros satélites Echo e Telstar; o chiado que não saía, do céu inteiro, de dia e de noite, e os pombos tirados da corneta; os dois não propuseram origem; em Princeton, ali perto, Dicke, Peebles e Wilkinson procuravam exatamente isso, e a previsão vinha dos anos 1940, de Gamow e colegas; o Nobel de 1978, que ainda dizia "outras interpretações são possíveis" |
 | 4 | conteudo | o que é essa luz: antes o universo era opaco; abaixo de dez mil graus os íons começam a virar átomo, e aos três mil graus a luz corre solta. O COBE (NASA, 18/11/1989): nove minutos de observação e o espectro de corpo negro perfeito, aplaudido de pé; o Nobel de 2006 pra Mather e Smoot |
 | 5 | interativa | **o esticão da luz**: um cursor que leva a luz da hora em que ela saiu até hoje. A tela mostra o quanto ela já esticou (de 1 a 1090,92 vezes), a temperatura (de 2973 a 2,725 graus acima do zero absoluto) e o comprimento de onda mais forte (de 0,001 mm a 1,06 mm). Começa na hora em que a luz saiu, que é o estado que o áudio descreve. Nada muda sozinho |
-| 6 | conteudo | o que o Planck mede e o que é tradução: o z vem com incerteza (± 0,25); os "380 mil anos" não são medidos, saem do modelo e nenhuma fonte publica incerteza neles, e a própria ESA escreve 380 mil numa página e 370 mil na legenda do mapa. As manchas do mapa: diferenças de um centésimo de milésimo de grau (Smoot, publicadas em 1992), que mostram onde a matéria começou a se juntar |
+| 6 | conteudo | o que o Planck publica e o que é tradução: o z vem com incerteza (± 0,25); os "380 mil anos" não são medidos, saem do modelo e nenhuma fonte publica incerteza neles, e a própria ESA escreve 380 mil numa página e 370 mil na legenda do mapa. As manchas do mapa: diferenças de um centésimo de milésimo de grau (Smoot, publicadas em 1992), que mostram onde a matéria começou a se juntar |
 | 7 | interativa | **a régua do ano cósmico, com lupa**: as duas marcas de janeiro (00:00 e 00:14) na régua do ano inteiro, onde elas se confundem num traço só, e dois botões que dão zoom no 1º de janeiro e na primeira hora dele, onde as duas se separam. O cursor lê data e anos atrás, como no episódio anterior. Começa no ano inteiro, com o cursor na marca nova |
 | 8 | fecho | recapitula: a segunda marca, o que se mede e o que se traduz. Onde isso aparece fora da tela: uma pequena fração do chiado da TV analógica fora do ar (ESA, 2013). Onde o episódio parou (00:14). Gancho pro 1.03: depois dessa luz o universo fica escuro, e as primeiras estrelas ninguém viu |
 
@@ -53,7 +53,7 @@ Esperando ele (DE2: o que aprofunda sem ser necessário pra seguir vira extra).
 
 ## Alertas herdados da pesquisa (valem pro trio)
 
-1. O Planck mede z\*, não anos; os anos são tradução sem incerteza publicada.
+1. O Planck publica z\* (derivado do ajuste, P11 do plano), não anos; os anos são tradução sem incerteza publicada.
 2. Não foi explosão; nada do "15 bilhões" nem da "cosmic explosion" do comunicado de 1978.
 3. A descoberta deu apoio forte, não "provou".
 4. "Uma pequena fração" do chiado, não "1%".
